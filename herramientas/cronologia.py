@@ -30,11 +30,27 @@ SUPUESTOS = [
           "nota": "Jacob tiene 130 ante Faraón; José tenía 30 al presentarse ante Faraón, pasan 7 años de abundancia "
                   "y 2 de hambre hasta que llega Jacob. Génesis no da la edad de Jacob al nacer José."}],
      "defecto": "jose91"},
+    {"id": "e430", "pregunta": "¿Qué abarcan los 430 años de Ex 12:40?",
+     "opciones": [
+         {"id": "egipto", "texto": "Solo la estancia en Egipto (lectura del TM)", "refs": ["Ex 12:40", "Gn 47:9"],
+          "nota": "El TM (RV1909) dice que los hijos de Israel «habitaron en Egipto» 430 años: se cuentan desde que "
+                  "Jacob, de 130 años, entra en Egipto (Gn 47:9)."},
+         {"id": "canaan", "texto": "Canaán y Egipto (lectura de la LXX)", "refs": ["Ex 12:40", "Gn 12:4"],
+          "nota": "La LXX (Brenton) dice explícitamente «in the land of Egypt and the land of Chanaan»: se cuentan "
+                  "desde que Abram, de 75 años, sale de Harán y entra en Canaán (Gn 12:4-5; se toma el mismo año)."}],
+     "defecto": "egipto"},
 ]
+# Citas literales del supuesto e430 (se rellenan y verifican contra el texto en construir()).
+CITAS_430 = {"TM": ("Ex 12:40", "rv1909", "habitaron en Egipto"),
+             "LXX": ("Ex 12:40", "brenton", "the land of Egypt and the land of Chanaan")}
 NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta: en la LXX su generación (130 años) se suma "
          "en la cadena; en el TM no existe. No es un supuesto: es propio de cada tradición.",
          "Convención del cálculo: una edad N al ocurrir algo se cuenta como N años después del nacimiento.",
-         "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas."]
+         "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas.",
+         "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años "
+         "de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7."]
+# Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
+F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
 E = lambda persona, tipo, ref=None, signo=1, texto="": {"edad": (persona, tipo, ref), "signo": signo, "texto": texto}
 # Cifra escrita en el versículo que no es una edad: (ref, {trad: (cita, numeral)})
@@ -153,8 +169,43 @@ def definir(nombre):
            [E("Joseph_1", "en_evento", "Gn 41:46", texto="José tenía {v} años")])
     evento("ev-muerte-jacob", "Muere Jacob", "muerte", "Gn 47:28", ["Jacob_1"], J, [E("Jacob_1", "total", texto="Jacob vivió {v} años")])
     evento("ev-muerte-jose", "Muere José", "muerte", "Gn 50:26", ["Joseph_1"], JO, [E("Joseph_1", "total", texto="José vivió {v} años")])
+    # Éxodo: la salida se enlaza con Génesis por los 430 años de Ex 12:40 (supuesto «e430»).
+    C430 = C("Ex 12:40", {"TM": ("cuatrocientos treinta años", "cuatrocientos treinta"),
+                          "LXX": ("four hundred and thirty years", "four hundred and thirty")},
+             texto="{v} años de Ex 12:40")
+    ev.append(dict(id="ev-salida-egipto", titulo="Salida de Egipto", tipo="evento", ref="Ex 12:41",
+                   personas=["Moses_1", "Aaron_1"], depende_de=A,
+                   variantes=[({"e430": "egipto"}, [
+                       E("Abram_1", "en_evento", "Gn 21:5", texto="Abraham tenía {v} años cuando le nació Isaac"),
+                       E("Isaac_1", "en_evento", "Gn 25:26", texto="Isaac tenía {v} años cuando nació Jacob"),
+                       E("Jacob_1", "en_evento", "Gn 47:9", texto="Jacob tenía {v} años al entrar en Egipto"),
+                       dict(C430, texto="los hijos de Israel habitaron en Egipto {v} años (Ex 12:40, solo Egipto)")]),
+                       ({"e430": "canaan"}, [
+                           E("Abram_1", "en_evento", "Gn 12:4", texto="Abram tenía {v} años al salir de Harán hacia Canaán"),
+                           dict(C430, texto="{v} años en Canaán y en Egipto (Ex 12:40 según la LXX)")])],
+                   nota="Ex 12:41: «pasados cuatrocientos treinta años, en el mismo día salieron». El punto de partida "
+                        "de los 430 años depende del supuesto «e430»."))
+    S = "ev-salida-egipto"
+    evento("ev-nac-moises", "Nace Moisés", "nacimiento", "Ex 2:2", ["Moses_1"], S,
+           [E("Moses_1", "en_evento", "Ex 7:7", signo=-1, texto="Moisés tenía {v} años cuando hablaron a Faraón")],
+           "Cálculo hacia atrás desde Ex 7:7; supone que Moisés y Aarón hablan a Faraón el mismo año de la salida "
+           "(las plagas y la salida se narran seguidas, sin cifra de tiempo).")
+    nac["Moses_1"] = "ev-nac-moises"
+    evento("ev-nac-aaron", "Nace Aarón", "nacimiento", "Ex 7:7", ["Aaron_1"], S,
+           [E("Aaron_1", "en_evento", "Ex 7:7", signo=-1, texto="Aarón tenía {v} años cuando hablaron a Faraón")],
+           "Mismo supuesto que el nacimiento de Moisés.")
+    nac["Aaron_1"] = "ev-nac-aaron"
+    evento("ev-ante-faraon", "Moisés y Aarón hablan a Faraón", "evento", "Ex 7:7", ["Moses_1", "Aaron_1"], "ev-nac-moises",
+           [E("Moses_1", "en_evento", "Ex 7:7", texto="Moisés tenía {v} años")])
+    evento("ev-llegada-sinai", "Israel llega al desierto de Sinaí", "evento", "Ex 19:1", ["Moses_1"], S, [],
+           "«Al mes tercero de la salida» (Ex 19:1): mismo año del cálculo que la salida.")
+    evento("ev-tabernaculo", "Se erige el tabernáculo", "evento", "Ex 40:17", ["Moses_1"], S,
+           [C("Ex 40:17", {"TM": ("en el segundo año", "segundo"), "LXX": ("in the second year", "second")},
+              texto="«el segundo año» ({v}) desde la salida"),
+            F(1, "Ex 40:17", signo=-1, texto="el primer año es el de la salida: se resta {v}")],
+           "Ex 40:17: el día primero del primer mes del segundo año (la LXX añade «after their going forth out of Egypt»).")
     # Muertes de Gn 5 y 11
-    for p in [x[0] for x in GN5] + ["Noah_1", "Shem_1", "Arpachshad_1", "Cainan_1", "Shelah_1"] + [x[0] for x in GN11] + ["Terah_1"]:
+    for p in dict.fromkeys([x[0] for x in GN5] + ["Noah_1", "Shem_1", "Arpachshad_1", "Cainan_1", "Shelah_1"] + [x[0] for x in GN11] + ["Terah_1"]):
         if p == "Enoch_2":
             evento("ev-fin-enoc", "Enoc desaparece («le llevó Dios»)", "evento", "Gn 5:24", [p], nac[p],
                    [E(p, "total", texto="Los días de Enoc fueron {v} años")])
@@ -172,6 +223,18 @@ HITOS = [
     ("Jacob sirve a Labán y se casa con Lea y Raquel", "Gn 29:15-30"), ("La lucha de Jacob en Peniel", "Gn 32:24-32"),
     ("Encuentro de Jacob y Esaú", "Gn 33:1-17"), ("Dina y Siquem", "Gn 34:1-31"), ("Muerte de Raquel", "Gn 35:16-20"),
     ("Judá y Tamar", "Gn 38:1-30"), ("Bendiciones de Jacob a sus hijos", "Gn 49:1-28"),
+]
+NOTA_HITO_GN = "Génesis no da edad ni año: va solo en el orden del relato."
+NOTA_SIN_NAC = ("El texto da la edad total ({v}), pero ni su año de nacimiento ni la edad del padre al engendrarlo: "
+                "no hay base para fecharla.")
+HITOS_EX = [
+    ("Muere Leví", "Ex 6:16", NOTA_SIN_NAC.format(v="Ex 6:16")),
+    ("Muere Coat", "Ex 6:18", NOTA_SIN_NAC.format(v="Ex 6:18")),
+    ("Muere Amram", "Ex 6:20", NOTA_SIN_NAC.format(v="Ex 6:20")),
+    ("Moisés huye a Madián", "Ex 2:11-15", "Éxodo no dice qué edad tenía Moisés."),
+    ("La zarza ardiente en Horeb", "Ex 3:1-6", "Éxodo no da el año; Ex 7:7 da la edad de Moisés algo después."),
+    ("El paso del mar Bermejo", "Ex 14:21-31", "Ocurre poco después de la salida; el texto no da cifra de tiempo."),
+    ("El becerro de oro", "Ex 32:1-6", "Entre la llegada al Sinaí y la erección del tabernáculo; sin cifra de año."),
 ]
 
 
@@ -199,8 +262,19 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
         if cita not in verso or num not in cita:
             errores.append(f"Constante no literal en {ref} ({trad}): {cita!r}")
             return None
-        frase = num.replace("first", "one").replace("second", "two")
+        frase = num.replace("first", "one").replace("second", "two").replace("segundo", "dos")
         return numeral(frase, "es" if trad == "TM" else "en")
+
+    # Citas del supuesto e430, verificadas contra el texto.
+    for s in SUPUESTOS:
+        if s["id"] != "e430":
+            continue
+        s["citas"] = {}
+        for trad, (ref, fuente, clave) in CITAS_430.items():
+            verso = textos[trad].get(parse_gn(ref), "")
+            if clave not in verso:
+                errores.append(f"Supuesto e430: «{clave}» no está en {ref} ({trad})")
+            s["citas"][trad] = {"ref": ref, "fuente": fuente, "texto": verso, "clave": clave}
 
     ev, nac = definir(nombre)
     por_id = {e["id"]: e for e in ev}
@@ -213,8 +287,9 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
             vistos.add(x["id"]); x = por_id.get(x["depende_de"])
             if x is None:
                 errores.append(f"depende_de inexistente en {e['id']}"); break
-    combos = [dict(tradicion=t, tare=a, sem=b, jose="jose91") for t in TRADS for a in ("tare70", "tare130") for b in ("sem2", "noe500")]
-    cid = lambda c: f"{c['tradicion']}|{c['tare']}|{c['sem']}"
+    combos = [dict(tradicion=t, tare=a, sem=b, jose="jose91", e430=x) for t in TRADS for a in ("tare70", "tare130")
+              for b in ("sem2", "noe500") for x in ("egipto", "canaan")]
+    cid = lambda c: f"{c['tradicion']}|{c['tare']}|{c['sem']}|{c['e430']}"
 
     def pasos_de(e, c):
         if "variantes" not in e:
@@ -227,6 +302,8 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
     def valor_paso(p, trad):
         if "edad" in p:
             return edad(*p["edad"], trad)
+        if "fija" in p:
+            return p["fija"]
         return constante(*p["constante"], trad)
 
     memo = {}
@@ -258,6 +335,9 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
                 persona, tipo, ref = p["edad"]
                 d["ref"] = ref or next((e["ref"] for e in idx.get((persona, tipo, trad), [])), None)
                 d["edad"] = {"persona": persona, "tipo": tipo} | ({"ref": ref} if ref else {})
+            elif "fija" in p:
+                d["ref"] = p["ref"]
+                d["convencion"] = True
             else:
                 d["ref"] = p["constante"][0]
                 d["cifra_texto"] = {t: p["constante"][1][t][0] for t in TRADS}
@@ -288,7 +368,7 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
             if a is not None and b is not None and dil is not None and a <= dil <= b:
                 lst.append((p, b - dil))
         vivos[cid(c)] = lst
-    for c in ("TM|tare70|sem2", "LXX|tare70|sem2"):
+    for c in ("TM|tare70|sem2|egipto", "LXX|tare70|sem2|egipto"):
         mat = dict(vivos[c]).get("Methuselah_1")
         if mat is not None:
             tr = c.split("|")[0]
@@ -304,9 +384,10 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
                 if a is not None and b is not None and b - a != t:
                     errores.append(f"Muerte ≠ nacimiento + total: {p} {cid(c)}")
     cron = {"unidad": "años desde la creación de Adán (cálculo)", "supuestos": SUPUESTOS, "notas": NOTAS,
-            "combinaciones": [{"id": cid(c), "tradicion": c["tradicion"], "supuestos": {"tare": c["tare"], "sem": c["sem"], "jose": c["jose"]}}
+            "combinaciones": [{"id": cid(c), "tradicion": c["tradicion"],
+                               "supuestos": {"tare": c["tare"], "sem": c["sem"], "jose": c["jose"], "e430": c["e430"]}}
                               for c in combos],
             "eventos": eventos,
-            "hitos_sin_fecha": [{"titulo": t, "ref": r, "nota": "Génesis no da edad ni año: va solo en el orden del relato."}
-                                for t, r in HITOS]}
+            "hitos_sin_fecha": [{"titulo": t, "ref": r, "nota": NOTA_HITO_GN} for t, r in HITOS]
+                               + [{"titulo": t, "ref": r, "nota": n} for t, r, n in HITOS_EX]}
     return cron, vivos, usadas

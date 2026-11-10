@@ -2,7 +2,7 @@
 Uso: python iconos/generar_iconos.py  — el dibujo queda dentro de la zona segura de iconos 'maskable'."""
 import os, struct, zlib
 
-FONDO, PAPEL, LINEA, HILO = (29, 39, 44), (236, 235, 228), (154, 163, 166), (192, 71, 59)
+FONDO, PAPEL, LINEA, HILO = (28, 40, 110), (240, 242, 238), (150, 160, 196), (206, 64, 86)  # lapislázuli, caliza, carmín
 
 
 def pixel(x, y):  # coordenadas normalizadas 0..1

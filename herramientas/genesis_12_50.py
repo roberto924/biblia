@@ -264,9 +264,26 @@ FORMAS_LUGAR_EXCLUIDAS = {"Adullamita", "Ammonitas", "Caphtorim", "Caldeos", "Da
                           "Gerar@a816ed9", "Parán@a738bf1", "Elazar"}
 
 # Persona que BibleData no separa: en su PersonVerse, la Ada de Gn 36 figura como Adah_1 (mujer de Lamec).
-PV_REASIGNAR = [("Adah_1", 36, "Adah_2")]
-PERSONAS_NUEVAS = {"Adah_2": ("Ada", "f", "Ada", "Mujer de Esaú (Gn 36:2). BibleData no la registra como persona "
-                              "propia (su índice de versículos la confunde con Ada, mujer de Lamec); aquí se separa.")}
+# Esposas de Esaú: NO se armonizan. Cada nombre se registra como lo da el texto (Gn 26:34; 28:9; 36:2-3);
+# BibleData identifica Judit = Aholibama, Basemat (hija de Elón) = Ada y Mahalat = Basemath (hija de Ismael):
+# eso queda solo en `nota`. Sus filas de Gn 36 se reasignan a personas propias.
+PV_REASIGNAR = [("Adah_1", 36, "Adah_2"), ("Judith_1", 36, "Oholibamah_esposa"), ("Mahalath_1", 36, "Basemath_2")]
+# Relaciones de BibleData con ref en ese capítulo: (persona, cap, persona nueva).
+REL_REASIGNAR = [("Judith_1", 36, "Oholibamah_esposa"), ("Mahalath_1", 36, "Basemath_2"), ("Basemath_1", 36, "Adah_2")]
+_ID_TRAD = " La identificación tradicional ({}) no está en el texto: no se fusionan."
+PERSONAS_NUEVAS = {
+    "Adah_2": ("Ada", "f", "Ada", "Mujer de Esaú, hija de Elón heteo (Gn 36:2). BibleData no la registra como persona "
+                                  "propia (su índice de versículos la confunde con Ada, mujer de Lamec); aquí se separa."
+               + _ID_TRAD.format("BibleData la trata como la Basemat hija de Elón de Gn 26:34")),
+    "Oholibamah_esposa": ("Aholibama", "f", "Aholibama",
+                          "Mujer de Esaú, «hija de Ana, hija de Zibeón el Heveo» (Gn 36:2; 36:14, 25)."
+                          + _ID_TRAD.format("con Judit hija de Beeri, Gn 26:34") +
+                          " Distinta del jefe Aholibama de Gn 36:41."),
+    "Basemath_2": ("Basemat", "f", "Basemath",
+                   "Mujer de Esaú, «hija de Ismael, hermana de Navaioth» (Gn 36:3)."
+                   + _ID_TRAD.format("con Mahalat hija de Ismael, Gn 28:9") +
+                   " Distinta de Basemat hija de Elón (Gn 26:34)."),
+}
 # Matrimonios que el texto dice: (a, b, ref, cita literal RV1909, nota)
 MATRIMONIOS = [
     ("Abram_1", "Sarai_1", (11, 29), "el nombre de la mujer de Abram fué Sarai", ""),
@@ -274,15 +291,16 @@ MATRIMONIOS = [
     ("Lot_1", "Wife of Lot_1", (19, 26), "la mujer de Lot", ""),
     ("Isaac_1", "Rebekah_1", (24, 67), "tomó á Rebeca por mujer", ""),
     ("Esau_1", "Judith_1", (26, 34), "tomó por mujer á Judith hija de Beeri Hetheo",
-     "En Gn 36:2 las mujeres de Esaú tienen otros nombres y padres (Ada hija de Elón, Aholibama hija de Ana, "
-     "Basemath hija de Ismael). Se sigue a BibleData, que identifica a Judit con Aholibama y a Mahalat con la "
-     "Basemath de Gn 36:3; el texto no lo dice."),
+     "Gn 36:2-3 da otra lista de mujeres de Esaú (Ada hija de Elón, Aholibama hija de Ana, Basemath hija de "
+     "Ismael); el texto no dice cuál corresponde a cuál y no se armoniza."),
     ("Esau_1", "Basemath_1", (26, 34), "y á Basemat hija de Elón Hetheo",
-     "En Gn 36:3 «Basemath» es hija de Ismael (BibleData la identifica con Mahalat); esta es la hija de Elón."),
-    ("Esau_1", "Mahalath_1", (28, 9), "tomó para sí por mujer á Mahaleth",
-     "En Gn 36:3 la hija de Ismael se llama Basemath; BibleData las trata como una sola persona."),
+     "Hija de Elón según Gn 26:34; la «Basemath» de Gn 36:3 es hija de Ismael y va aparte."),
+    ("Esau_1", "Mahalath_1", (28, 9), "tomó para sí por mujer á Mahaleth", ""),
     ("Esau_1", "Adah_2", (36, 2), "á Ada, hija de Elón Hetheo",
      "En Gn 26:34 la hija de Elón se llama Basemat; el texto no dice si es la misma mujer y no se armoniza."),
+    ("Esau_1", "Oholibamah_esposa", (36, 2), "á Aholibama, hija de Ana, hija de Zibeón el Heveo",
+     "No se registra un padre: el texto dice «hija de Ana» sin precisar qué Ana es."),
+    ("Esau_1", "Basemath_2", (36, 3), "Y á Basemath, hija de Ismael", ""),
     ("Jacob_1", "Leah_1", (29, 23), "tomó á Lea su hija, y se la trajo: y él entró á ella", ""),
     ("Jacob_1", "Rachel_1", (29, 28), "le dió á Rachêl su hija por mujer", ""),
     ("Er_1", "Tamar_1", (38, 6), "Judá tomó mujer para su primogénito Er, la cual se llamaba Thamar", ""),
@@ -299,7 +317,18 @@ SIN_NOMBRE_EXTRA += [
 RELACIONES_EXTRA = [  # (de, a, tipo, ref, cita, nota)
     ("Elon_1", "Adah_2", "padre", (36, 2), "Ada, hija de Elón", ""),
     ("Adah_2", "Eliphaz_1", "madre", (36, 10), "Eliphaz, hijo de Ada", ""),
+    ("Ishmael_1", "Basemath_2", "padre", (36, 3), "Basemath, hija de Ismael", ""),
+    ("Basemath_2", "Reuel_1", "madre", (36, 4), "Basemath parió á Reuel", ""),
+    ("Oholibamah_esposa", "Jeush_1", "madre", (36, 5), "Aholibama parió á Jeús", ""),
+    ("Oholibamah_esposa", "Jalam_1", "madre", (36, 5), "Aholibama parió á Jeús, y á Jaalam", ""),
+    ("Oholibamah_esposa", "Korah_1", "madre", (36, 5), "Aholibama parió á Jeús, y á Jaalam, y á Cora", ""),
 ]
+_NOTA_ESAU = "Mujer de Esaú. Identificación tradicional (BibleData): {}. El texto no lo dice: no se fusionan."
+NOTAS_ESPOSAS_ESAU = {
+    "Judith_1": _NOTA_ESAU.format("la misma que Aholibama hija de Ana (Gn 36:2)"),
+    "Basemath_1": _NOTA_ESAU.format("la misma que Ada hija de Elón (Gn 36:2)"),
+    "Mahalath_1": _NOTA_ESAU.format("la misma que Basemath hija de Ismael (Gn 36:3)"),
+}
 # Pares padre–madre sin matrimonio en el texto: nota que se pone en las relaciones del hijo.
 SIN_PAREJA_NOTA = {
     ("Judah_1", "Tamar_1"): "El texto no presenta a Judá y Tamar como matrimonio (Gn 38:15-18, 26).",
@@ -345,3 +374,5 @@ NOTAS_PERSONA.update({
     "Timna_2": "Jefe de Edom (Gn 36:40); BibleData lo distingue de Timna, concubina de Elifaz.",
     "Oholibamah_1": "Jefe de Edom (Gn 36:41); BibleData lo distingue de Aholibama, mujer de Esaú.",
 })
+NOTAS_PERSONA.update(NOTAS_ESPOSAS_ESAU)
+MODERNO2.update({"Oholibamah_esposa": "Aholibama", "Basemath_2": "Basemat"})

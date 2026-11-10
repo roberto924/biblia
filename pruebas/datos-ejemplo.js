@@ -176,4 +176,31 @@
     ],
     capitulos, pasajes, menciones, menciones_lugar, lugares, personas, relaciones, edades
   };
+
+  // Ampliación con un libro más (Éxodo), como en datos/biblia.js. Aparte para no alterar las pruebas de Génesis:
+  // las pruebas de varios libros la aplican sobre una copia; la app la aplica con ?ejemplo.
+  // Aquí `capitulos[].libro` trae el id ("Ex"); en Génesis, el nombre: la app acepta ambos.
+  g.BIBLIA_EJEMPLO_EXODO = function (D) {
+    D.libros = [{ id: 'Gn', nombre: 'Génesis', capitulos: 50 }, { id: 'Ex', nombre: 'Éxodo', capitulos: 40 }];
+    const caps = [
+      { libro: 'Ex', cap: 2, versiculos: [{ n: 10, texto: 'Y como creció el niño, ella lo trajo á la hija de Faraón, la cual lo prohijó, y púsole por nombre Moisés.' }] },
+      { libro: 'Ex', cap: 6, versiculos: [{ n: 20, texto: 'Y Amram tomó por mujer á Jochêbed su tía, la cual le parió á Aarón y á Moisés.' }] },
+      { libro: 'Ex', cap: 7, versiculos: [{ n: 7, texto: 'Y era Moisés de edad de ochenta años, y Aarón de edad de ochenta y tres, cuando hablaron á Faraón.' }] }
+    ];
+    D.capitulos = D.capitulos.concat(caps);
+    D.personas = D.personas.concat([
+      P('Amram_1', 'Amram', 'm', ['Ex 6:20']), P('Jochebed_1', 'Jocabed', 'f', ['Ex 6:20']),
+      P('Moses_1', 'Moisés', 'm', ['Ex 2:10', 'Ex 6:20', 'Ex 7:7']), P('Aaron_1', 'Aarón', 'm', ['Ex 6:20', 'Ex 7:7'])
+    ]);
+    D.relaciones = D.relaciones.concat([R('Amram_1', 'Jochebed_1', 'Ex 6:20', 'explicito', 'conyuge'),
+      R('Amram_1', 'Moses_1', 'Ex 6:20'), R('Amram_1', 'Aaron_1', 'Ex 6:20'), R('Jochebed_1', 'Moses_1', 'Ex 6:20', 'explicito', 'madre'), R('Jochebed_1', 'Aaron_1', 'Ex 6:20', 'explicito', 'madre')]);
+    const ev = (persona, valor, ref) => ({ persona, tipo: 'en_evento', evento: 'cuando hablaron a Faraón', tradicion: 'TM', valor, ref, certeza: 'texto', fuente: 'rv1909', cita: '' });
+    D.edades = D.edades.concat([ev('Moses_1', 80, 'Ex 7:7'), ev('Aaron_1', 83, 'Ex 7:7')]);
+    D.lugares = D.lugares.concat([L('egipto', 'Egipto', 'region', ['Ex 2:10'], { lat: 30.0, lon: 31.2, identificacion: 'Egipto', confianza: 'alta', puntuacion_openbible: 1000 })]);
+    D.pasajes = D.pasajes.concat([
+      { id: 'ex-01', libro: 'Ex', seccion: 'Israel en Egipto (Ex 1–7)', inicio: 'Ex 2:10', fin: 'Ex 6:20', titulo: 'Nace Moisés', titulo_origen: 'editorial', resumen: 'Ejemplo de Éxodo.' },
+      { id: 'ex-02', libro: 'Ex', inicio: 'Ex 7:7', fin: 'Ex 7:7', titulo: 'Moisés y Aarón ante Faraón', titulo_origen: 'editorial', resumen: '' }
+    ]);
+    return D;
+  };
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -9,16 +9,69 @@ const Nucleo = (() => {
   const norm = s => String(s == null ? '' : s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
   const num = v => (v === null || v === undefined || v === '' || !Number.isFinite(+v)) ? null : +v;
 
+  /* ---- Libros: orden canónico (para comparar refs de varios libros) y nombres ---- */
+  const CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal', 'Pr', 'Ec', 'Cnt',
+    'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal',
+    'Mt', 'Mr', 'Lc', 'Jn', 'Hch', 'Ro', '1Co', '2Co', 'Ga', 'Ef', 'Fil', 'Col', '1Ts', '2Ts', '1Ti', '2Ti', 'Tit', 'Flm', 'He', 'Stg', '1P', '2P', '1Jn', '2Jn', '3Jn', 'Jud', 'Ap'];
+  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut' };
+  const ordLibro = new Map(), idPorOrd = new Map(), idCanon = new Map();
+  CANON.forEach((id, i) => { ordLibro.set(norm(id), i + 1); idPorOrd.set(i + 1, id); idCanon.set(norm(id), id); });
+  Object.entries(NOMBRES_LIBRO).forEach(([id, n]) => idCanon.set(norm(n), id));
+  // Id de libro con su grafía canónica ("éx" → "Ex"); un id desconocido se registra en orden de aparición.
+  function libroCanon(x) {
+    const k = norm(x).replace(/\s+/g, '').replace(/\.$/, '');
+    if (!k) return 'Gn';
+    if (idCanon.has(k)) return idCanon.get(k);
+    const id = String(x).trim();
+    if (!ordLibro.has(k)) { const o = 100 + ordLibro.size; ordLibro.set(k, o); idPorOrd.set(o, id); idCanon.set(k, id); }
+    return idCanon.get(k);
+  }
+  const ordDe = id => ordLibro.get(norm(libroCanon(id)));
+
+  // "Ex 7:7" → { libro: 'Ex', cap: 7, v: 7 }. Sin libro (datos antiguos) se entiende Génesis.
   function parseRef(ref) {
-    const m = /(\d+)\s*:\s*(\d+)/.exec(ref || '');
-    if (m) return { cap: +m[1], v: +m[2] };
-    const c = /(\d+)\s*$/.exec(ref || '');
-    return c ? { cap: +c[1], v: null } : null;
+    const s = String(ref == null ? '' : ref);
+    const b = /([1-3]?\s?[A-Za-zÀ-ÿ]+)\.?\s*(\d+)(?:\s*:\s*(\d+))?/.exec(s);
+    if (b) {
+      const k = norm(b[1]).replace(/\s+/g, '');
+      if (idCanon.has(k)) return { libro: idCanon.get(k), cap: +b[2], v: b[3] ? +b[3] : null };
+    }
+    const m = /(\d+)\s*:\s*(\d+)/.exec(s);
+    if (m) return { libro: 'Gn', cap: +m[1], v: +m[2] };
+    const c = /(\d+)\s*$/.exec(s);
+    return c ? { libro: 'Gn', cap: +c[1], v: null } : null;
   }
 
-  // Clave numérica comparable de un versículo: Gn 4:1 → 4001
-  function clave(ref) { const r = parseRef(ref); return r && r.v ? r.cap * 1000 + r.v : null; }
-  const refTxt = (cap, v) => `Gn ${cap}:${v}`;
+  // Clave numérica comparable de un versículo: Gn 4:1 → 1004001, Ex 7:7 → 2007007
+  function clave(ref) { const r = parseRef(ref); return r && r.v ? ordDe(r.libro) * 1e6 + r.cap * 1000 + r.v : null; }
+  const refTxt = (cap, v, libro) => `${libro || 'Gn'} ${cap}:${v}`;
+  const refDeClave = k => refTxt(Math.floor(k / 1000) % 1000, k % 1000, idPorOrd.get(Math.floor(k / 1e6)));
+  // Id del libro de un capítulo: `libro` puede traer el id ("Ex") o el nombre ("Éxodo").
+  function libroIdDe(d, x) {
+    if (x == null || x === '') return 'Gn';
+    const k = norm(x), L = (d && Array.isArray(d.libros)) ? d.libros : [];
+    const l = L.find(l => l && (norm(l.id) === k || norm(l.nombre) === k));
+    return libroCanon(l ? l.id : x);
+  }
+  // Libros presentes: `libros` de los datos si viene; si no, derivados de `capitulos`.
+  const libros = d => memo(d || {}, 'libros', () => {
+    d = d || {};
+    const caps = d.capitulos || [], porId = new Map();
+    caps.forEach(c => {
+      const id = libroIdDe(d, c.libro);
+      if (!porId.has(id)) porId.set(id, { id, nombre: c.libro && norm(c.libro) !== norm(id) ? String(c.libro) : (NOMBRES_LIBRO[id] || id), capitulos: 0, presentes: 0 });
+      const b = porId.get(id); b.capitulos = Math.max(b.capitulos, +c.cap || 0); b.presentes++;
+    });
+    if (Array.isArray(d.libros) && d.libros.length) {
+      return d.libros.filter(l => l && l.id).map(l => {
+        const id = libroCanon(l.id), b = porId.get(id);
+        return { id, nombre: l.nombre || (b && b.nombre) || NOMBRES_LIBRO[id] || id, capitulos: +l.capitulos || (b ? b.capitulos : 0), presentes: b ? b.presentes : 0 };
+      }).sort((a, b) => ordDe(a.id) - ordDe(b.id));
+    }
+    return [...porId.values()].sort((a, b) => ordDe(a.id) - ordDe(b.id));
+  });
+  const nombreLibro = (d, id) => { const c = libroCanon(id), l = libros(d).find(x => x.id === c); return l ? l.nombre : (NOMBRES_LIBRO[c] || c); };
+  const libroDe = p => { const r = p && parseRef(p.inicio); return r ? r.libro : 'Gn'; };
 
   function claseCerteza(c) {
     if (c === 'explicito' || c === 'texto') return 'texto';
@@ -28,6 +81,9 @@ const Nucleo = (() => {
 
   function indexar(d) {
     d = d || {};
+    // Registra los libros de los datos antes de calcular claves (un id fuera del canon también vale).
+    (d.libros || []).forEach(l => { if (l && l.id) libroCanon(l.id); });
+    (d.capitulos || []).forEach(c => libroIdDe(d, c && c.libro));
     const personas = new Map(), hijos = new Map(), padres = new Map(), conyuges = new Map(), edades = new Map();
     const add = (m, k, v) => { if (!m.has(k)) m.set(k, []); m.get(k).push(v); };
     (d.personas || []).forEach(p => { if (p && p.id) personas.set(p.id, p); });
@@ -393,11 +449,11 @@ const Nucleo = (() => {
     return [...m.values()];
   }
 
-  function personasEnCapitulo(d, cap) {
-    const out = [];
+  function personasEnCapitulo(d, cap, libro) {
+    const out = [], lb = libroCanon(libro || 'Gn');
     for (const p of indice(d).personas.values()) {
       const refs = [...new Set([].concat(p.refs || [], p.primera_ref ? [p.primera_ref] : []))];
-      const vs = refs.map(parseRef).filter(r => r && r.cap === cap).map(r => r.v || 0);
+      const vs = refs.map(parseRef).filter(r => r && r.cap === cap && r.libro === lb).map(r => r.v || 0);
       if (vs.length) out.push({ id: p.id, persona: p, versos: [...new Set(vs)].sort((a, b) => a - b) });
     }
     return out.sort((a, b) => a.versos[0] - b.versos[0]);
@@ -419,25 +475,32 @@ const Nucleo = (() => {
   const pasajes = d => memo(d || {}, 'pasajes', () => pasajesCalc(d || {}));
   function pasajesCalc(d) {
     if (Array.isArray(d.pasajes) && d.pasajes.length) return d.pasajes.filter(p => p && p.id && clave(p.inicio) && clave(p.fin));
-    return (d.capitulos || []).map(c => {
-      const vs = c.versiculos || [];
-      return { id: 'cap-' + c.cap, inicio: refTxt(c.cap, vs.length ? vs[0].n : 1), fin: refTxt(c.cap, vs.length ? vs[vs.length - 1].n : 1),
-        titulo: `${c.libro || 'Génesis'} ${c.cap}`, titulo_origen: 'capitulo', resumen: '' };
-    });
+    return (d.capitulos || []).map(c => ({ c, lb: libroIdDe(d, c.libro) }))
+      .sort((x, y) => ordDe(x.lb) - ordDe(y.lb) || x.c.cap - y.c.cap)
+      .map(({ c, lb }) => {
+        const vs = c.versiculos || [];
+        return { id: lb === 'Gn' ? 'cap-' + c.cap : `cap-${lb}-${c.cap}`, inicio: refTxt(c.cap, vs.length ? vs[0].n : 1, lb), fin: refTxt(c.cap, vs.length ? vs[vs.length - 1].n : 1, lb),
+          titulo: `${c.libro && norm(c.libro) !== norm(lb) ? c.libro : nombreLibro(d, lb)} ${c.cap}`, titulo_origen: 'capitulo', resumen: '' };
+      });
   }
-  // Plan agrupado por `seccion` (editorial) con su progreso. Un pasaje sin sección hereda la del anterior.
-  // Si ningún pasaje trae sección, devuelve un único grupo con titulo null.
-  function seccionesPlan(d, leidos, sigId) {
-    const L = new Set(leidos || []), out = [], porT = new Map();
-    let previa = '';
-    pasajes(d).forEach((p, i) => {
+  // Plan agrupado por `seccion` (editorial) con su progreso. Un pasaje sin sección hereda la del anterior
+  // del mismo libro. Si ningún pasaje trae sección, devuelve un único grupo con titulo null.
+  // Con `libro`, solo los pasajes de ese libro (numerados desde 1 dentro del libro).
+  function seccionesPlan(d, leidos, sigId, libro) {
+    const L = new Set(leidos || []), out = [], porT = new Map(), lb = libro ? libroCanon(libro) : null;
+    let previa = '', libPrev = null;
+    pasajes(d).filter(p => !lb || libroDe(p) === lb).forEach((p, i) => {
+      const lp = libroDe(p);
+      if (lp !== libPrev) { previa = ''; libPrev = lp; }
       const t = (typeof p.seccion === 'string' && p.seccion.trim()) || previa;
       previa = t;
-      if (!porT.has(t)) {
-        const g = { id: 'sec-' + (norm(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || out.length + 1), titulo: t || null, pasajes: [], total: 0, leidos: 0, siguiente: false };
-        porT.set(t, g); out.push(g);
+      const kt = lp + '|' + t;
+      if (!porT.has(kt)) {
+        const base = norm(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        const g = { id: 'sec-' + (lp === 'Gn' ? '' : norm(lp) + '-') + (base || out.length + 1), libro: lp, titulo: t || null, pasajes: [], total: 0, leidos: 0, siguiente: false };
+        porT.set(kt, g); out.push(g);
       }
-      const g = porT.get(t), le = L.has(p.id);
+      const g = porT.get(kt), le = L.has(p.id);
       g.pasajes.push({ pasaje: p, n: i + 1, leido: le });
       g.total++; if (le) g.leidos++; if (p.id === sigId) g.siguiente = true;
     });
@@ -448,12 +511,19 @@ const Nucleo = (() => {
     return out;
   }
   // Alcance de los datos ("Génesis 1–50"), calculado de los capítulos presentes.
+  // Con varios libros: "Génesis 1–50 y Éxodo 1–40".
   function alcance(d) {
-    const cs = ((d && d.capitulos) || []).map(c => +c.cap).filter(Number.isFinite);
-    const libro = (cs.length && d.capitulos[0].libro) || 'Génesis';
-    if (!cs.length) return { libro, desde: null, hasta: null, texto: libro, corto: 'Gn' };
-    const a = Math.min(...cs), b = Math.max(...cs), r = a === b ? `${a}` : `${a}–${b}`;
-    return { libro, desde: a, hasta: b, texto: `${libro} ${r}`, corto: `Gn ${r}` };
+    const caps = ((d && d.capitulos) || []).filter(c => Number.isFinite(+c.cap));
+    if (!caps.length) return { libro: 'Génesis', desde: null, hasta: null, texto: 'Génesis', corto: 'Gn', libros: [] };
+    const partes = libros(d).map(l => {
+      const cs = caps.filter(c => libroIdDe(d, c.libro) === l.id).map(c => +c.cap);
+      if (!cs.length) return null;
+      const a = Math.min(...cs), b = Math.max(...cs), r = a === b ? `${a}` : `${a}–${b}`;
+      return { id: l.id, libro: l.nombre, desde: a, hasta: b, texto: `${l.nombre} ${r}`, corto: `${l.id} ${r}` };
+    }).filter(Boolean);
+    const unir = xs => xs.length < 2 ? xs.join('') : xs.slice(0, -1).join(', ') + ' y ' + xs[xs.length - 1];
+    const p0 = partes[0];
+    return { libro: p0.libro, desde: p0.desde, hasta: p0.hasta, texto: unir(partes.map(x => x.texto)), corto: unir(partes.map(x => x.corto)), libros: partes };
   }
   function pasajeDe(d, ref) {
     const k = clave(ref);
@@ -467,7 +537,10 @@ const Nucleo = (() => {
   }
   const todosLosVersiculos = d => memo(d || {}, 'versiculos', () => {
     const out = [];
-    for (const c of ((d && d.capitulos) || [])) for (const v of (c.versiculos || [])) out.push({ cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n), clave: c.cap * 1000 + v.n });
+    for (const c of ((d && d.capitulos) || [])) {
+      const lb = libroIdDe(d, c.libro), o = ordDe(lb) * 1e6;
+      for (const v of (c.versiculos || [])) out.push({ libro: lb, cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n, lb), clave: o + c.cap * 1000 + v.n });
+    }
     return out.sort((x, y) => x.clave - y.clave);
   });
 
@@ -548,7 +621,7 @@ const Nucleo = (() => {
     const lugs = [];
     orden.forEach(k => (I.lugaresPorRef.get(k) || []).forEach(id => { if (!lugs.includes(id) && I.lugares.has(id)) lugs.push(id); }));
     return { personas: ids.map(id => ({ id, contexto: contextoPersona(d, id) })), vinculos, edades: edadesV,
-      eventos: edadesEnEvento(d, orden.map(k => refTxt(Math.floor(k / 1000), k % 1000))),
+      eventos: edadesEnEvento(d, orden.map(refDeClave)),
       sinNombre: ids.filter(id => (I.personas.get(id) || {}).sin_nombre), lugares: lugs };
   }
   // ¿Tiene el versículo vínculos, edades, alusiones sin nombre o lugares? (marca al margen; solo índices)
@@ -645,7 +718,7 @@ const Nucleo = (() => {
   function anoDiluvio(d, trad) {
     const filas = anosDesdeAdan(d, trad);
     for (const e of ((d && d.edades) || [])) {
-      if (!e || clave(e.ref) !== 7006 || (e.tradicion && e.tradicion !== trad) || num(e.valor) === null) continue;
+      if (!e || clave(e.ref) !== clave('Gn 7:6') || (e.tradicion && e.tradicion !== trad) || num(e.valor) === null) continue;
       const f = filas.find(x => x.id === e.persona);
       if (f && f.nacimiento !== null) return { ano: f.nacimiento + num(e.valor), persona: e.persona, valor: num(e.valor), ref: e.ref, cita: e.cita || '' };
     }
@@ -791,7 +864,8 @@ const Nucleo = (() => {
     indice, persona, hijosDe, encontrar, idAdan, idAbraham, idJacob,
     construirArbol, construirBosque, sinParentesco, enPantallaArbol, mapaArbol, nodoArbol, rutaArbol, arbolInicial, hijosPorMadre, uniones, madreSupuesta, vida, atajosLinea, lineaPrincipal,
     alcanzables, contarMujeres, sinNombre, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
-    lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, vidas, edadesEnEvento, edadesEnEventoPorPersona, personasEnCapitulo, buscar };
+    lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, vidas, edadesEnEvento, edadesEnEventoPorPersona, personasEnCapitulo, buscar,
+    libros, nombreLibro, libroDe, libroIdDe, refDeClave };
 })();
 
 globalThis.BibliaNucleo = Nucleo;
@@ -815,7 +889,9 @@ if (typeof document !== 'undefined') (function () {
     vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1 };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
-  const refHTML = ref => { const r = N.parseRef(ref); return r ? `<a class="ref" href="#leer/${r.cap}${r.v ? '/' + r.v : ''}">${esc(ref)}</a>` : esc(ref); };
+  // Enlace a un versículo: #leer/Ex/7/7 (los enlaces antiguos #leer/7/7 se leen como Génesis).
+  const hrefRef = r => `#leer/${encodeURIComponent(r.libro || 'Gn')}/${r.cap}${r.v ? '/' + r.v : ''}`;
+  const refHTML = ref => { const r = N.parseRef(ref); return r ? `<a class="ref" href="${hrefRef(r)}">${esc(ref)}</a>` : esc(ref); };
   // pre: a quién se refiere (padre, madre…), escrito dentro de la insignia; quien: solo en el título.
   const insignia = (cert, ref, pre, quien) => { const k = N.claseCerteza(cert); return `<span class="insignia ${k}" title="${quien || pre ? esc(quien || pre[0].toUpperCase() + pre.slice(1)) + ': ' : ''}${CERT_DESC[k]}">${pre ? `<span class="ins-pre">${esc(pre)}</span>` : ''}${CERT_TXT[k]}${ref ? ' · ' + refHTML(ref) : ''}</span>`; };
   const btnPersona = id => {
@@ -827,7 +903,11 @@ if (typeof document !== 'undefined') (function () {
   const fuenteNombre = id => { const f = (D.fuentes || []).find(x => x.id === id); return f ? f.nombre : (id || 'sin fuente'); };
   const etiquetaTrad = id => { const t = [...N.tradicionesDe(D, id)]; return t.length === 1 ? `<span class="etiqueta">solo ${esc(t[0])}</span>` : ''; };
   const pasajesLeidos = () => new Set(store.get('biblia.pasajesLeidos', []));
-  const rango = p => { const a = N.parseRef(p.inicio), b = N.parseRef(p.fin); return a.cap === b.cap ? `Gn ${a.cap}:${a.v}–${b.v}` : `Gn ${a.cap}:${a.v}–${b.cap}:${b.v}`; };
+  const rango = p => {
+    const a = N.parseRef(p.inicio), b = N.parseRef(p.fin);
+    if (a.libro !== b.libro) return `${a.libro} ${a.cap}:${a.v} – ${b.libro} ${b.cap}:${b.v}`;
+    return a.cap === b.cap ? (a.v === b.v ? `${a.libro} ${a.cap}:${a.v}` : `${a.libro} ${a.cap}:${a.v}–${b.v}`) : `${a.libro} ${a.cap}:${a.v}–${b.cap}:${b.v}`;
+  };
   const ESTADO_TXT = { leido: 'Leído', 'en-curso': 'En curso', pendiente: 'Pendiente' };
   const ICONO = {
     leido: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>',
@@ -839,9 +919,12 @@ if (typeof document !== 'undefined') (function () {
   function vistaLeer(args) {
     const ps = N.pasajes(D);
     if (args[0] === 'p') return vistaPasaje(ps.find(x => x.id === args[1]), args[2] || null);
-    if (args[0]) {
-      const cap = +args[0], v = +args[1] || null;
-      const p = N.pasajeDe(D, `Gn ${cap}:${v || 1}`) || ps.find(x => N.parseRef(x.inicio).cap === cap);
+    // #leer/Ex (plan de ese libro), #leer/Ex/7/7 (versículo) y los enlaces antiguos #leer/7/7 (Génesis).
+    let a = args.filter(x => x !== ''), lbRuta = null;
+    if (a[0] && !/^\d+$/.test(a[0])) { lbRuta = N.libroIdDe(D, a[0]); a = a.slice(1); }
+    if (a[0]) {
+      const lb = lbRuta || 'Gn', cap = +a[0], v = +a[1] || null;
+      const p = N.pasajeDe(D, `${lb} ${cap}:${v || 1}`) || ps.find(x => { const r = N.parseRef(x.inicio); return r.libro === lb && r.cap === cap; });
       return vistaPasaje(p, v ? `${cap}:${v}` : null);
     }
     const L = pasajesLeidos(), pos = store.get('biblia.pos', null);
@@ -850,6 +933,17 @@ if (typeof document !== 'undefined') (function () {
     const sig = (actual && !L.has(actual.id) ? actual : null) || ps.find(p => !L.has(p.id)) || actual || ps[0];
     const enSig = actual && sig && actual.id === sig.id && pos.v;
     const editorial = ps.some(p => p.titulo_origen === 'editorial');
+    // Libros con pasajes; con más de uno, el plan muestra un selector y solo el libro elegido.
+    const LB = N.libros(D).map(l => { const pl = ps.filter(p => N.libroDe(p) === l.id); return Object.assign({}, l, { pasajes: pl.length, leidos: pl.filter(p => L.has(p.id)).length }); }).filter(l => l.pasajes);
+    const varios = LB.length > 1;
+    if (lbRuta && LB.some(l => l.id === lbRuta)) { estado.libro = lbRuta; store.set('biblia.libro', lbRuta); }
+    const elegido = [estado.libro, store.get('biblia.libro', null), sig && N.libroDe(sig)].find(id => id && LB.some(l => l.id === id)) || (LB[0] && LB[0].id);
+    estado.libro = elegido;
+    const libroSel = LB.find(l => l.id === elegido);
+    const selector = varios ? `<nav class="libros" aria-label="Libros">${LB.map(l => `<a class="libro-btn" href="#leer/${esc(l.id)}"${l.id === elegido ? ' aria-current="true"' : ''}>
+        <span class="libro-nombre">${esc(l.nombre)}</span>
+        <span class="libro-meta">${l.capitulos ? `${l.capitulos} capítulos, ` : ''}${l.leidos} de ${l.pasajes} pasajes</span>
+        <span class="libro-prog" aria-hidden="true"><span style="width:${Math.round(100 * l.leidos / l.pasajes)}%"></span></span></a>`).join('')}</nav>` : '';
     const itemPasaje = (p, num) => {
       const est = L.has(p.id) ? 'leido' : actual && actual.id === p.id ? 'en-curso' : 'pendiente';
       return `<li class="pasaje ${est}"><a href="#leer/p/${esc(p.id)}"><span class="pasaje-num" aria-hidden="true">${num}</span>
@@ -857,10 +951,11 @@ if (typeof document !== 'undefined') (function () {
           ${p.resumen ? `<span class="pasaje-resumen">${esc(p.resumen)}</span>` : ''}</span>
           <span class="estado ${est}">${ICONO[est]}${ESTADO_TXT[est]}</span></a></li>`;
     };
-    const secs = N.seccionesPlan(D, [...L], sig && sig.id);
+    const secs = N.seccionesPlan(D, [...L], sig && sig.id, varios ? elegido : undefined);
+    const totalSel = secs.reduce((s, g) => s + g.total, 0);
     const plan = secs.length === 1 && !secs[0].titulo
       ? `<ol class="pasajes">${secs[0].pasajes.map(x => itemPasaje(x.pasaje, x.n)).join('')}</ol>`
-      : `<p class="meta">${secs.length} secciones · ${ps.length} pasajes. Pulsa una sección para abrirla o cerrarla.</p>
+      : `<p class="meta">${secs.length} ${secs.length === 1 ? 'sección' : 'secciones'}, ${totalSel} pasajes. Pulsa una sección para abrirla o cerrarla.</p>
         <div class="secciones">${secs.map(g => {
           const abierta = estado.secAbiertas.has(g.id) ? estado.secAbiertas.get(g.id) : g.siguiente;
           return `<details class="seccion-plan ${g.estado}" data-sec="${esc(g.id)}"${abierta ? ' open' : ''}>
@@ -869,24 +964,28 @@ if (typeof document !== 'undefined') (function () {
               <span class="sec-prog"><progress max="${g.total}" value="${g.leidos}" aria-label="Progreso de la sección"></progress><span>${g.leidos}/${g.total}</span></span></summary>
             <ol class="pasajes">${g.pasajes.map(x => itemPasaje(x.pasaje, x.n)).join('')}</ol></details>`;
         }).join('')}</div>`;
-    return `<section class="portada" aria-labelledby="t-portada">
+    return `<div class="inicio"><section class="portada" aria-labelledby="t-portada">
+        <p class="portada-alcance">${esc(N.alcance(D).texto)}</p>
         <h1 id="t-portada" tabindex="-1">${pos ? 'Continúa donde lo dejaste' : 'Empieza a leer'}</h1>
         ${sig ? `<a class="continuar" href="#leer/p/${esc(sig.id)}${enSig ? '/' + esc(pos.v) : ''}">
-          <span class="continuar-rango">${rango(sig)}${enSig ? `, versículo ${esc(pos.v.split(':')[1])}` : ''}</span>
+          <span class="continuar-rango">${varios ? esc(N.nombreLibro(D, N.libroDe(sig))) + ', ' : ''}${rango(sig)}${enSig ? `, versículo ${esc(pos.v.split(':')[1])}` : ''}</span>
           <span class="continuar-titulo">${esc(sig.titulo)}</span>
           ${sig.resumen ? `<span class="continuar-resumen">${esc(sig.resumen)}</span>` : ''}
-          <span class="continuar-accion">${pos ? 'Seguir leyendo' : 'Abrir el primer pasaje'}</span></a>` : '<p>No hay texto en los datos.</p>'}
-        <div class="progreso"><progress max="${ps.length || 1}" value="${n}" aria-label="Progreso de lectura"></progress><span>${n} de ${ps.length} pasajes leídos</span></div>
+          <span class="continuar-accion">${pos ? 'Seguir leyendo' : 'Abrir el primer pasaje'}<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4l6 6-6 6"/></svg></span></a>` : '<p>No hay texto en los datos.</p>'}
+        <div class="progreso"><progress max="${ps.length || 1}" value="${n}" aria-label="Progreso de lectura"></progress><span>${n} de ${ps.length} pasajes leídos${varios ? ' en total' : ''}</span></div>
       </section>
-      <h2 class="titulo-seccion">Plan de lectura</h2>
+      <div class="plan">
+      <h2 class="titulo-seccion">Plan de lectura${varios && libroSel ? `<span class="sr">: ${esc(libroSel.nombre)}</span>` : ''}</h2>
+      ${selector}
       ${plan}
-      ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}`;
+      ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}</div></div>`;
   }
 
   /* ---------- Leer: pasaje con acompañante ---------- */
   function vistaPasaje(p, activo) {
     if (!p) return `<h1 tabindex="-1">Pasaje no encontrado</h1><p class="vacio-txt">Ese pasaje no está en los datos, que cubren ${esc(N.alcance(D).texto)}.</p><p><a class="boton" href="#leer">Ver el plan de lectura</a></p>`;
     const ps = N.pasajes(D), i = ps.findIndex(x => x.id === p.id), prev = ps[i - 1], next = ps[i + 1];
+    const lb = N.libroDe(p), psL = ps.filter(x => N.libroDe(x) === lb), iL = psL.findIndex(x => x.id === p.id);
     const vs = N.versiculosDe(D, p);
     estado.pasaje = p;
     estado.activo = activo && vs.some(v => `${v.cap}:${v.n}` === activo) ? activo : null;
@@ -908,8 +1007,9 @@ if (typeof document !== 'undefined') (function () {
     }).join('');
     const nuevos = N.primerasApariciones(D, p);
     return `<div class="pasaje-vista"><article class="lectura">
-      <header class="cab-pasaje"><a class="volver" href="#leer"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
-        <p class="pasaje-rango">${rango(p)} · pasaje ${i + 1} de ${ps.length}</p>
+      <header class="cab-pasaje"><a class="volver" href="#leer/${esc(lb)}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
+        <p class="pasaje-libro">${esc(N.nombreLibro(D, lb))}</p>
+        <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
         <h1 tabindex="-1">${esc(p.titulo)}</h1>
         ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}</header>
       <div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
@@ -940,10 +1040,11 @@ if (typeof document !== 'undefined') (function () {
   function acompHTML() {
     const p = estado.pasaje;
     if (!p) return '';
-    const refs = estado.activo ? [`Gn ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref);
+    const lb = N.libroDe(p);
+    const refs = estado.activo ? [`${lb} ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref);
     const A = N.acompanante(D, refs);
     const n = A.vinculos.length + A.edades.length + A.eventos.length + A.sinNombre.length + A.lugares.length;
-    const ambito = estado.activo ? `Gn ${estado.activo}` : 'Todo el pasaje';
+    const ambito = estado.activo ? `${lb} ${estado.activo}` : 'Todo el pasaje';
     const sec = (t, cuerpo, icono) => `<section class="acomp-sec"><h3>${icono}${t}</h3>${cuerpo}</section>`;
     const I = (d) => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}"/></svg>`;
     let html = '';
@@ -972,7 +1073,7 @@ if (typeof document !== 'undefined') (function () {
         const a = N.anioEvento(D, ev.id, combo), dsp = N.despuesDe(D, ev.id, combo);
         return `<li><span class="edad-quien"><strong>${esc(ev.titulo || ev.id)}</strong> · ${refHTML(ev.ref)}</span>
           <span class="anio-calc">${a === null ? 'Sin año en esta combinación' : `Año ${a} desde Adán (${tr})`}</span> ${insignia('calculo')}
-          ${dsp ? `<span class="contexto">${anios(dsp.anios)} después de «${esc(dsp.titulo)}»</span>` : ''}
+          ${dsp ? `<span class="contexto">${relTxt(dsp)}</span>` : ''}
           <a class="enlace-arbol" href="#tiempo/linea/${encodeURIComponent(ev.id)}">Ver en la línea de tiempo</a></li>`;
       }).join('')}</ul>`;
       else {
@@ -1303,6 +1404,7 @@ if (typeof document !== 'undefined') (function () {
   const icoEv = ev => N.esDiluvio(ev) ? ICO_EV.diluvio : ICO_EV[ev.tipo] || ICO_EV.evento;
   const anioTxt = a => a === null || a === undefined ? 'sin año' : `año ${a}`;
   const anios = n => `${n} ${Math.abs(n) === 1 ? 'año' : 'años'}`;
+  const relTxt = d => `${anios(Math.abs(d.anios))} ${d.anios < 0 ? 'antes' : 'después'} de «${esc(d.titulo)}»`;
   // "años desde la creación de Adán" sin el "(cálculo)" final: la insignia ya lo dice.
   const unidadTxt = C => String(C.unidad || '').replace(/\s*\(c[áa]lculo\)\s*$/i, '') || 'años desde la creación de Adán';
 
@@ -1347,7 +1449,7 @@ if (typeof document !== 'undefined') (function () {
         <ul>${g.hitos.map(h => `<li><span class="tl-tit">${esc(h.hito.titulo)}</span> <span class="meta">${refHTML(h.hito.ref)}</span>${h.hito.nota ? `<span class="nota">${esc(h.hito.nota)}</span>` : ''}</li>`).join('')}</ul></div>` : '';
       return `<section class="tl-sec"><h2>${esc(g.titulo || 'Sucesos')}</h2>${items ? `<ol class="tl">${items}</ol>` : ''}${hitos}</section>`;
     }).join('');
-    return `<p class="aviso-calculo"><strong>Génesis no da fechas.</strong> Cada año es un ${insignia('calculo')}: ${esc(unidadTxt(C))}, encadenando edades del texto${comparar ? '; se ordena por el TM' : ''}. Pulsa un suceso para ver cómo se calcula.</p>
+    return `<p class="aviso-calculo"><strong>El texto bíblico no da fechas de calendario.</strong> Cada año es un ${insignia('calculo')}: ${esc(unidadTxt(C))}, encadenando edades del texto${comparar ? '; se ordena por el TM' : ''}. Pulsa un suceso para ver cómo se calcula.</p>
       <p class="leyenda-tl meta"><span>${ICO_EV.nacimiento}Nacimiento</span><span>${ICO_EV.muerte}Muerte</span><span>${ICO_EV.evento}Suceso</span><span>${ICO_EV.diluvio}Diluvio</span><span>${ICO_EV.hito}Sin dato de tiempo (fuera del eje)</span></p>
       ${secs || '<p class="vacio-txt">La cronología no trae sucesos.</p>'}`;
   }
@@ -1359,7 +1461,7 @@ if (typeof document !== 'undefined') (function () {
       const combo = N.combinacion(D, tr, e), a = N.anioEvento(D, id, combo), cad = N.cadenaEvento(D, id, combo), dsp = N.despuesDe(D, id, combo), vivos = N.vivosEn(D, a, combo);
       return `<section class="bloque bloque-calc"><h3>${TRAD_TXT[tr]}</h3>
         <p class="cifra calc">${a === null ? 'Sin año en esta combinación' : 'Año ' + a}</p>
-        <p>${insignia('calculo')}${dsp ? ` ${anios(dsp.anios)} después de «${esc(dsp.titulo)}»` : ''}</p>
+        <p>${insignia('calculo')}${dsp ? ` ${relTxt(dsp)}` : ''}</p>
         <details class="plegable"><summary>Cómo se calcula (${cad.length} ${cad.length === 1 ? 'paso' : 'pasos'} desde Adán)</summary>
           <ol class="cadena">${cad.map(b => `<li><strong>${esc(b.titulo)}</strong>${b.ref ? ' · ' + refHTML(b.ref) : ''}
             ${b.pasos.length ? `<ul>${b.pasos.map(p => `<li>${esc(p.texto || '')}${p.ref ? ' · ' + refHTML(p.ref) : ''}</li>`).join('')}</ul>` : ''}
@@ -1376,7 +1478,7 @@ if (typeof document !== 'undefined') (function () {
       ${sup ? `<p class="meta">Supuestos usados (se cambian en Tiempo):</p><ul class="vinculos">${sup}</ul>` : ''}
       ${ev.nota ? `<p class="nota">${esc(ev.nota)}</p>` : ''}
       <p><a class="boton secundario" href="#tiempo/linea/${encodeURIComponent(id)}">Ver en la línea de tiempo</a></p>
-      <p class="meta">Génesis no da fechas: este año es un cálculo de la app a partir de las edades del texto.</p>`);
+      <p class="meta">El texto bíblico no da fechas de calendario: este año es un cálculo de la app a partir de las edades del texto.</p>`);
   }
   function vidasHTML() {
     const C = N.crono(D);
@@ -1455,7 +1557,7 @@ if (typeof document !== 'undefined') (function () {
       <section><h2>TM y LXX</h2><p><strong>TM — Texto Masorético:</strong> texto hebreo transmitido por los masoretas; base de la mayoría de las Biblias en español (como la Reina-Valera).</p>
         <p><strong>LXX — Septuaginta:</strong> traducción griega antigua del Antiguo Testamento. En Génesis 5 y 11 da a menudo cifras distintas (suele sumar 100 años a la edad al engendrar) e incluye a un Cainán en Gn 11 que el TM no menciona.</p></section>
       ${(C => C ? `<section><h2>Tiempo y cronología</h2>
-        <p>Génesis no da fechas. La app sitúa los sucesos en <strong>${esc(unidadTxt(C))}</strong>, encadenando edades que el texto sí da (por ejemplo, la edad de cada padre al engendrar). Por eso <strong>todo año es ${insignia('calculo')}</strong>: no está escrito así en el texto, y cada suceso muestra la cadena de pasos y sus versículos.</p>
+        <p>El texto bíblico no da fechas de calendario. La app sitúa los sucesos en <strong>${esc(unidadTxt(C))}</strong>, encadenando edades que el texto sí da (por ejemplo, la edad de cada padre al engendrar). Por eso <strong>todo año es ${insignia('calculo')}</strong>: no está escrito así en el texto, y cada suceso muestra la cadena de pasos y sus versículos.</p>
         <p>No se dan fechas antes de Cristo: convertir estos años exigiría supuestos ajenos al texto. El TM y la LXX dan edades distintas, así que los años cambian según la tradición.</p>
         ${C.supuestos.length ? `<h3>Supuestos</h3><p>Donde el texto admite más de una lectura, puedes elegir en Tiempo; la elección se guarda en este dispositivo.</p><dl class="etiquetas">${C.supuestos.map(s => `<dt>${esc(s.pregunta || s.id)}</dt><dd><ul>${s.opciones.map(o => `<li>${esc(o.texto || o.id)}${o.id === s.defecto ? ' <span class="etiqueta">por defecto</span>' : ''}${(o.refs || []).length ? ' · ' + o.refs.map(refHTML).join(', ') : ''}${o.nota ? `<br><span class="meta">${esc(o.nota)}</span>` : ''}</li>`).join('')}</ul></dd>`).join('')}</dl>` : ''}
         <p>Los sucesos sin dato de tiempo en el texto (como ${C.hitos.length ? '«' + esc(C.hitos[0].titulo) + '»' : 'la torre de Babel'}) se muestran en orden de lectura, sin año.</p></section>` : '')(N.crono(D))}
@@ -1513,7 +1615,7 @@ if (typeof document !== 'undefined') (function () {
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
       ${p.rol ? `<p class="rol">${esc(p.rol)}</p>` : ''}
       <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${p.primera_ref ? ' · aparece en ' + refHTML(p.primera_ref) : ''} ${etiquetaTrad(id)}</p>
-      <p class="acciones-ficha">${(r => r ? `<a class="boton" href="#leer/${N.parseRef(r).cap}/${N.parseRef(r).v}">Leer donde aparece</a>` : '')([p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
+      <p class="acciones-ficha">${(r => r ? `<a class="boton" href="${hrefRef(N.parseRef(r))}">Leer donde aparece</a>` : '')([p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
         ${N.enPantallaArbol(D, id) ? `<a class="boton secundario" href="#arbol/${encodeURIComponent(id)}">Ver en el árbol</a>` : ''}</p>
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
@@ -1722,7 +1824,10 @@ if (typeof document !== 'undefined') (function () {
     const caps = D.capitulos || [], ps = N.pasajes(D);
     const f = estado.mapaFiltro;
     let ids = todos.map(l => l.id);
-    if (f.startsWith('cap-')) { const cap = +f.slice(4), c = caps.find(x => x.cap === cap); ids = c ? N.lugaresDeRefs(D, (c.versiculos || []).map(v => `Gn ${cap}:${v.n}`)) : []; }
+    if (f.startsWith('cap-')) {
+      const [lb, cs] = f.slice(4).split('-'), cap = +cs, c = caps.find(x => x.cap === cap && N.libroIdDe(D, x.libro) === lb);
+      ids = c ? N.lugaresDeRefs(D, (c.versiculos || []).map(v => `${lb} ${cap}:${v.n}`)) : [];
+    }
     else if (f.startsWith('p-')) ids = N.lugaresDePasaje(D, ps.find(p => p.id === f.slice(2)));
     const ubic = ids.filter(id => { const c = N.confianzaLugar(N.lugar(D, id)); return c !== 'desconocida' && estado.mapaConf.has(c); });
     const desc = ids.filter(id => N.confianzaLugar(N.lugar(D, id)) === 'desconocida');
@@ -1732,7 +1837,7 @@ if (typeof document !== 'undefined') (function () {
       <div class="herr mapa-filtros">
         <div class="campo"><label for="f-ambito">Pasaje o capítulo</label><select id="f-ambito">${opt('', 'Todo ' + N.alcance(D).texto)}
           ${(D.pasajes || []).length ? N.seccionesPlan(D, [], null).map(g => `<optgroup label="${esc(g.titulo ? 'Pasajes · ' + g.titulo : 'Pasajes')}">${g.pasajes.map(x => opt('p-' + x.pasaje.id, x.pasaje.titulo)).join('')}</optgroup>`).join('') : ''}
-          <optgroup label="Capítulos">${caps.map(c => opt('cap-' + c.cap, `${c.libro || 'Génesis'} ${c.cap}`)).join('')}</optgroup></select></div>
+          ${N.libros(D).map(l => { const cs = caps.filter(c => N.libroIdDe(D, c.libro) === l.id).sort((a, b) => a.cap - b.cap); return cs.length ? `<optgroup label="Capítulos · ${esc(l.nombre)}">${cs.map(c => opt(`cap-${l.id}-${c.cap}`, `${l.nombre} ${c.cap}`)).join('')}</optgroup>` : ''; }).join('')}</select></div>
         <div class="campo"><label for="buscar-lugar">Buscar lugar</label><input id="buscar-lugar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.mapaQ)}"></div>
         <fieldset class="conf-filtro"><legend>Confianza</legend>${['alta', 'media', 'baja'].map(c => `<label><input type="checkbox" data-conf="${c}" ${estado.mapaConf.has(c) ? 'checked' : ''}><span>${icoConf(c)}${c[0].toUpperCase() + c.slice(1)}</span></label>`).join('')}</fieldset>
       </div>
@@ -1754,7 +1859,7 @@ if (typeof document !== 'undefined') (function () {
   const PESTANA = { edades: 'tiempo' }; // rutas antiguas
   let primera = true;
   function render(foco) {
-    if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/genesis.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
+    if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/biblia.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
     const { vista, args } = ruta();
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
@@ -1871,7 +1976,7 @@ if (typeof document !== 'undefined') (function () {
   if (!D && /[?&]ejemplo/.test(location.search)) {
     const s = document.createElement('script');
     s.src = 'pruebas/datos-ejemplo.js';
-    s.onload = () => { D = window.BIBLIA_DATOS || null; MAPA = window.BIBLIA_MAPA || null; iniciar(); };
+    s.onload = () => { D = window.BIBLIA_DATOS || null; if (D && window.BIBLIA_EJEMPLO_EXODO) D = window.BIBLIA_EJEMPLO_EXODO(D); MAPA = window.BIBLIA_MAPA || null; iniciar(); };
     s.onerror = iniciar;
     document.head.appendChild(s);
   } else iniciar();

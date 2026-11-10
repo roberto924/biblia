@@ -381,7 +381,7 @@ prueba('personas en un capítulo y búsqueda sin acentos', () => {
   const c5 = j(N.personasEnCapitulo(D, 5)).map(p => p.id);
   assert.ok(c5.includes('Adam_1') && c5.includes('Noah_1') && !c5.includes('Cain_1'));
   assert.equal(N.buscar(D, 'adan')[0].id, 'Adam_1');
-  assert.deepEqual(j(N.parseRef('Gn 11:12')), { cap: 11, v: 12 });
+  assert.deepEqual(j(N.parseRef('Gn 11:12')), { libro: 'Gn', cap: 11, v: 12 });
 });
 prueba('tolerancia: datos vacíos o incompletos no rompen', () => {
   const V = { personas: [], relaciones: [{ de: 'X_1', a: 'Y_1', tipo: 'padre' }, { de: null }], edades: [{ persona: 'Y_1', tipo: 'total', tradicion: 'TM', valor: '' }] };
@@ -391,9 +391,47 @@ prueba('tolerancia: datos vacíos o incompletos no rompen', () => {
   assert.deepEqual(j(N.construirBosque({})), []);
 });
 
-const real = path.join(aqui, '..', 'datos', 'genesis.js');
+// Datos reales: datos/biblia.js (varios libros) si existe; si no, datos/genesis.js.
+const real = [path.join(aqui, '..', 'datos', 'biblia.js'), path.join(aqui, '..', 'datos', 'genesis.js')].find(existsSync) || path.join(aqui, '..', 'datos', 'biblia.js');
+console.log('Varios libros (ejemplo con Éxodo)');
+{
+  const CX = cargar(path.join(aqui, 'datos-ejemplo.js'), path.join(aqui, '..', 'app.js'));
+  const NX = CX.BibliaNucleo, DX = CX.BIBLIA_EJEMPLO_EXODO(CX.BIBLIA_DATOS);
+  prueba('refs con libro: lectura, orden y clave reversible', () => {
+    assert.deepEqual(j(NX.parseRef('Ex 7:7')), { libro: 'Ex', cap: 7, v: 7 });
+    assert.equal(NX.parseRef('Éxodo 7:7').libro, 'Ex'); assert.equal(NX.parseRef('éx 7').libro, 'Ex');
+    assert.equal(NX.parseRef('4:1').libro, 'Gn', 'sin libro se entiende Génesis');
+    assert.equal(NX.parseRef('LXX Gn 11:12').cap, 11);
+    assert.ok(NX.clave('Ex 1:1') > NX.clave('Gn 50:26'));
+    assert.notEqual(NX.clave('Ex 7:7'), NX.clave('Gn 7:7'));
+    assert.equal(NX.refDeClave(NX.clave('Ex 7:7')), 'Ex 7:7');
+  });
+  prueba('libros de los datos o derivados de los capítulos', () => {
+    assert.deepEqual(j(NX.libros(DX)).map(l => [l.id, l.nombre, l.capitulos]), [['Gn', 'Génesis', 50], ['Ex', 'Éxodo', 40]]);
+    const sinL = Object.assign({}, DX); delete sinL.libros;
+    assert.deepEqual(j(NX.libros(sinL)).map(l => [l.id, l.nombre]), [['Gn', 'Génesis'], ['Ex', 'Éxodo']]);
+    assert.equal(NX.nombreLibro(sinL, 'Ex'), 'Éxodo');
+    assert.equal(NX.alcance(DX).texto, 'Génesis 4–30 y Éxodo 2–7'); assert.equal(NX.alcance(DX).corto, 'Gn 4–30 y Ex 2–7');
+    assert.deepEqual(j(NX.libros({})), []);
+  });
+  prueba('pasajes, versículos y plan por libro sin mezclar capítulos iguales', () => {
+    assert.equal(NX.pasajeDe(DX, 'Ex 7:7').id, 'ex-02'); assert.equal(NX.pasajeDe(DX, 'Gn 7:6').id, 'ej-02');
+    assert.deepEqual(j(NX.versiculosDe(DX, NX.pasajeDe(DX, 'Ex 7:7'))).map(v => v.ref), ['Ex 7:7']);
+    assert.deepEqual(j(NX.versiculosDe(DX, NX.pasajeDe(DX, 'Gn 5:1'))).map(v => v.ref), ['Gn 5:1', 'Gn 5:3', 'Gn 7:6']);
+    const ex = j(NX.seccionesPlan(DX, ['ex-01'], 'ex-02', 'Ex'));
+    assert.deepEqual(ex.map(g => [g.titulo, g.total, g.leidos, g.libro]), [['Israel en Egipto (Ex 1–7)', 2, 1, 'Ex']]);
+    assert.equal(ex[0].pasajes[0].n, 1, 'se numera dentro del libro');
+    assert.equal(NX.seccionesPlan(DX, [], null, 'Gn').length, 3);
+    assert.equal(NX.edadesEnEvento(DX, ['Ex 7:7']).length >= 1, true);
+    assert.equal(NX.tieneApoyo(DX, 'Ex 7:7'), true);
+    assert.deepEqual(j(NX.personasEnCapitulo(DX, 7, 'Ex')).map(p => p.id).sort(), ['Aaron_1', 'Moses_1']);
+    const sin = { capitulos: [{ libro: 'Éxodo', cap: 1, versiculos: [{ n: 1, texto: 'x' }] }, { libro: 'Génesis', cap: 1, versiculos: [{ n: 1, texto: 'y' }] }] };
+    assert.deepEqual(j(NX.pasajes(sin)).map(p => [p.id, p.inicio, p.titulo]), [['cap-1', 'Gn 1:1', 'Génesis 1'], ['cap-Ex-1', 'Ex 1:1', 'Éxodo 1']]);
+  });
+}
+
 if (existsSync(real)) {
-  console.log('Datos reales (datos/genesis.js)');
+  console.log(`Datos reales (${path.basename(real)})`);
   const C2 = cargar(real, path.join(aqui, '..', 'app.js'));
   const N2 = C2.BibliaNucleo, D2 = C2.BIBLIA_DATOS;
   prueba('estructura básica y funciones sin excepciones', () => {
@@ -462,7 +500,7 @@ if (existsSync(real)) {
     const dil = C.eventos.find(N2.esDiluvio);
     console.log(`     cronología: ${C.eventos.length} sucesos (${conAnio} con año en ${combos[0]}), ${C.supuestos.length} supuestos, ${C.hitos.length} hitos sin fecha; diluvio ${dil ? 'TM ' + N2.anioEvento(D2, dil.id, combos[0]) + ' / LXX ' + N2.anioEvento(D2, dil.id, combos[1]) : 'no encontrado'}; ${(performance.now() - t0).toFixed(0)} ms`);
   });
-} else console.log('(datos/genesis.js aún no existe: se omiten las pruebas con datos reales)');
+} else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

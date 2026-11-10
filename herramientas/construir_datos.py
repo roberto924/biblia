@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Construye datos/genesis.js (Génesis 1–11) a partir de fuentes abiertas.
+"""Construye datos/biblia.js (Génesis 1–50 y Éxodo 1–40) a partir de fuentes abiertas.
 
 Uso:  python herramientas/construir_datos.py [--sin-red]
 
 - Descarga (con caché en herramientas/cache/) RV1909, Brenton (LXX inglesa) y BibleData.
-- Genera datos/genesis.js con  window.BIBLIA_DATOS = {...};
+- Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py)
 - Verifica citas, cifras, sumas, relaciones y nombres. Sale con código 1 si falla
   una verificación obligatoria (las sumas que no cuadran y los nombres no hallados
   se listan como advertencias).
@@ -28,11 +28,13 @@ import lugares_mapa as lm  # noqa: E402
 import nombres_auto as na  # noqa: E402
 import cronologia as cr  # noqa: E402
 import genesis_12_50 as g2  # noqa: E402
+import exodo  # noqa: E402
 
 MAXCAP = 50
 RAIZ = Path(__file__).resolve().parent.parent
 CACHE = RAIZ / "herramientas" / "cache"
-SALIDA = RAIZ / "datos" / "genesis.js"
+SALIDA = RAIZ / "datos" / "biblia.js"
+LIBROS = [{"id": "Gn", "nombre": "Génesis", "capitulos": 50}, {"id": "Ex", "nombre": "Éxodo", "capitulos": 40}]
 
 BD = "https://raw.githubusercontent.com/BradyStephenson/bible-data/HEAD/"
 FUENTES = [
@@ -220,15 +222,15 @@ def obtener(clave, sin_red):
     return ruta
 
 
-def leer_vpl(ruta_zip):
-    """Devuelve {(cap, vers): texto} de Génesis 1–11."""
+def leer_vpl(ruta_zip, libro="GEN", maxcap=MAXCAP):
+    """Devuelve {(cap, vers): texto} del libro pedido (código VPL: GEN, EXO)."""
     with zipfile.ZipFile(ruta_zip) as z:
         nombre = next(n for n in z.namelist() if n.endswith("_vpl.txt"))
         texto = z.read(nombre).decode("utf-8-sig")
     v = {}
     for linea in texto.splitlines():
-        m = re.match(r"GEN (\d+):(\d+) (.*)", linea)
-        if m and int(m.group(1)) <= MAXCAP:
+        m = re.match(libro + r" (\d+):(\d+) (.*)", linea)
+        if m and int(m.group(1)) <= maxcap:
             v[(int(m.group(1)), int(m.group(2)))] = m.group(3).strip()
     return v
 
@@ -373,7 +375,7 @@ def main():
         vs = sorted(v for (cc, v) in rv if cc == c)
         if vs != list(range(1, len(vs) + 1)):
             errores.append(f"Gn {c}: numeración de versículos no continua")
-        capitulos.append({"libro": "Génesis", "cap": c,
+        capitulos.append({"libro": "Gn", "cap": c,
                           "versiculos": [{"n": v, "texto": rv[(c, v)]} for v in vs]})
 
     # Relaciones de BibleData en Génesis
@@ -385,7 +387,12 @@ def main():
         if not ref:
             continue
         p1, t, p2 = r["person_id_1"], r["relationship_type"].strip().lower(), r["person_id_2"]
-        sexo2 = per.get(p2, {}).get("sex", "")
+        reasignada = False
+        for viejo, cap, nuevo_id in g2.REL_REASIGNAR:  # esposas de Esaú: no se armonizan (Gn 36)
+            if ref[0] == cap and viejo in (p1, p2):
+                p1, p2 = (nuevo_id if p1 == viejo else p1), (nuevo_id if p2 == viejo else p2)
+                reasignada = True
+        sexo2 = per.get(p2, {}).get("sex", "") or ("female" if p2 in g2.PERSONAS_NUEVAS else "")
         if t == "father":
             de, a, tipo = p1, p2, "padre"
         elif t == "mother":
@@ -399,7 +406,7 @@ def main():
             continue
         cert = "explicito" if r["relationship_category"].strip() == "explicit" else "inferido"
         nuevo = {"de": de, "a": a, "tipo": tipo, "ref": gn(ref), "certeza": cert,
-                 "fuente": "bibledata", "nota": r["relationship_notes"].strip()}
+                 "fuente": "bibledata", "nota": "" if reasignada else r["relationship_notes"].strip()}
         k = (de, a, tipo)
         viejo = candidatas.get(k)
         rank = lambda x: (x["certeza"] != "explicito", parse_gn(x["ref"]))
@@ -731,7 +738,7 @@ def main():
             errores.append(f"Pasaje {ini}–{fin}: hueco, solape o desorden (se esperaba {gn(orden[min(esperado, len(orden)-1)])})")
         else:
             esperado = pos[b] + 1
-        pasajes.append({"id": f"gn-{i:02d}", "inicio": ini, "fin": fin, "titulo": titulo,
+        pasajes.append({"id": f"gn-{i:02d}", "libro": "Gn", "inicio": ini, "fin": fin, "titulo": titulo,
                         "titulo_origen": "editorial", "resumen": resumen, "seccion": seccion})
         tam_pasaje.append(pos.get(b, 0) - pos.get(a, 0) + 1)
     if esperado != len(orden):
@@ -879,19 +886,38 @@ def main():
         if not p.get("rol"):
             errores.append(f"Persona sin relación ni rol: {p['id']}")
 
+    # ------------------------------------------------------------ Éxodo 1–40 (herramientas/exodo.py)
+    rv_ex = leer_vpl(obtener("rv", sin_red), "EXO", 40)
+    br_ex = leer_vpl(obtener("br", sin_red), "EXO", 40)
+    pv_ex = [r for r in leer_csv(obtener("pv", sin_red)) if re.match(r"EXO \d+:\d+$", r["reference_id"].strip())]
+    n_rel_gn, n_per_gn, n_ed_gn = len(relaciones), len(personas), len(edades)
+    EXO = exodo.construir(dict(rv=rv_ex, br=br_ex, rels=rels, pv_filas=pv_ex, per=per, personas=personas,
+                               relaciones=relaciones, edades=edades, sin_acentos=sin_acentos,
+                               numeral=numeral_a_numero, ES=ES, EN=EN, errores=errores, avisos=avisos))
+    capitulos += EXO["capitulos"]
+    pasajes += EXO["pasajes"]
+    menciones_gn = menciones
+    menciones = menciones + EXO["menciones"]
+    personas.sort(key=lambda p: (exodo.clave_ref(p["refs"][0]) if p["refs"] else (9, 0, 0), p["id"]))
+    vistos_id = Counter(p["id"] for p in personas)
+    errores.extend(f"Persona duplicada: {k}" for k, n in vistos_id.items() if n > 1)
+    vistos_r = Counter((x["de"], x["a"], x["tipo"]) for x in relaciones)
+    errores.extend(f"Relación duplicada entre libros: {k}" for k, n in vistos_r.items() if n > 1)
+
     # ------------------------------------------------------------ cronología relativa
     nombre_de = {p["id"]: p["nombre"] for p in personas}
-    rango_pasaje = [(pos[parse_gn(p["inicio"])], pos[parse_gn(p["fin"])], p["id"]) for p in pasajes]
+    texto_ref = {"TM": {**{gn(k): v for k, v in rv.items()}, **{exodo.ex(k): v for k, v in rv_ex.items()}},
+                 "LXX": {**{gn(k): v for k, v in br.items()}, **{exodo.ex(k): v for k, v in br_ex.items()}}}
+    rango_pasaje = [(exodo.clave_ref(p["inicio"]), exodo.clave_ref(p["fin"]), p["id"]) for p in pasajes]
 
     def pasaje_de(ref):
-        if not ref:
+        if not ref or not re.match(r"(Gn|Ex) \d+:\d+", ref):
             return None
-        m = re.match(r"Gn (\d+):(\d+)", ref)
-        i = pos.get((int(m.group(1)), int(m.group(2))))
-        return next((pid for a0, b0, pid in rango_pasaje if i is not None and a0 <= i <= b0), None)
+        k = exodo.clave_ref(ref)
+        return next((pid for a0, b0, pid in rango_pasaje if a0 <= k <= b0), None)
 
     cronologia, vivos_diluvio, edades_usadas = cr.construir(
-        edades, lambda q: nombre_de.get(q, q), {"TM": rv, "LXX": br}, numeral_a_numero, parse_gn, pasaje_de, errores)
+        edades, lambda q: nombre_de.get(q, q), texto_ref, numeral_a_numero, lambda s: s, pasaje_de, errores)
     for h in cronologia["hitos_sin_fecha"]:
         h["pasaje"] = pasaje_de(h["ref"])
     EV = {e["id"]: e for e in cronologia["eventos"]}
@@ -899,11 +925,26 @@ def main():
         for c, v in e["anios"].items():
             if v is None and c.startswith("TM") and "cainan11" not in e["id"]:
                 errores.append(f"Evento sin año en TM: {e['id']} {c}")
+    if len(cronologia["combinaciones"]) != 16:
+        errores.append(f"Cronología: {len(cronologia['combinaciones'])} combinaciones (se esperaban 16)")
+    ids_ev = Counter(e["id"] for e in cronologia["eventos"])
+    errores.extend(f"Evento con id repetido: {k}" for k, n in ids_ev.items() if n > 1)
+    for eid in ("ev-salida-egipto", "ev-nac-moises", "ev-nac-aaron", "ev-llegada-sinai", "ev-tabernaculo"):
+        if eid not in ids_ev:
+            errores.append(f"Cronología: falta {eid}")
+    for h in ("Ex 6:16", "Ex 6:18", "Ex 6:20"):
+        if not any(x["ref"] == h for x in cronologia["hitos_sin_fecha"]):
+            errores.append(f"Cronología: falta el hito sin fecha {h}")
             if v is None and c.startswith("LXX"):
                 errores.append(f"Evento sin año en LXX: {e['id']} {c}")
-    for eid, comb, esperado in (("ev-diluvio", "TM|tare70|sem2", 1656), ("ev-diluvio", "LXX|tare70|sem2", 2242),
-                                ("ev-nac-abram", "TM|tare70|sem2", 1948), ("ev-nac-abram", "TM|tare130|sem2", 2008)):
-        if EV[eid]["anios"][comb] != esperado:
+    for eid, comb, esperado in (("ev-diluvio", "TM|tare70|sem2|egipto", 1656), ("ev-diluvio", "LXX|tare70|sem2|egipto", 2242),
+                                ("ev-nac-abram", "TM|tare70|sem2|egipto", 1948), ("ev-nac-abram", "TM|tare130|sem2|egipto", 2008),
+                                ("ev-nac-isaac", "TM|tare70|sem2|egipto", 2048),
+                                ("ev-salida-egipto", "TM|tare70|sem2|egipto", 2668),
+                                ("ev-salida-egipto", "TM|tare130|sem2|canaan", 2513)):
+        if eid not in EV:
+            errores.append(f"Cronología: falta el evento {eid}"); continue
+        if EV[eid]["anios"].get(comb) != esperado:
             errores.append(f"Cronología: {eid} {comb} = {EV[eid]['anios'][comb]}, se esperaba {esperado}")
     claves_edad = {(e["persona"], e["tipo"]) for e in edades}
     for persona, tipo, ref in edades_usadas:
@@ -916,7 +957,13 @@ def main():
         ARCHIVOS[k] = (url, nombre)
         rutas[k] = obtener(k, sin_red)
     lugares, menciones_lugar, amb_lugar, desc_lugar, lineas_ob, lug_sin_forma, lug_sin_moderno = lm.construir_lugares(
-        rv, menciones, rutas, errores, avisos)
+        rv, menciones_gn, rutas, errores, avisos)
+    for m in menciones_lugar:
+        if m["ref"].startswith("Ex "):
+            errores.append(f"Mención de Génesis con ref de Éxodo: {m}")
+    lug_ex, men_lug_ex, info_lug_ex = exodo.construir_lugares(rv_ex, EXO["menciones"], rutas, lugares, errores, avisos, sin_acentos)
+    lugares += lug_ex
+    menciones_lugar += men_lug_ex
     mapa = lm.construir_mapa(lugares, rutas)
     x0, y0, x1, y1 = mapa["bbox"]
     for l in lugares:
@@ -935,9 +982,17 @@ def main():
         errores.append(f"mapa-base.js ocupa {tam_mapa} bytes (objetivo < 300 KB)")
 
     datos = {"generado": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-             "fuentes": FUENTES + lm.FUENTES, "capitulos": capitulos, "personas": personas,
+             "fuentes": FUENTES + lm.FUENTES, "libros": LIBROS, "capitulos": capitulos, "personas": personas,
              "relaciones": relaciones, "edades": edades, "pasajes": pasajes, "menciones": menciones,
              "lugares": lugares, "menciones_lugar": menciones_lugar, "cronologia": cronologia}
+    hechos = exodo.comprobar(datos, errores)
+    for lb in LIBROS:
+        n = sum(1 for c in capitulos if c["libro"] == lb["id"])
+        if n != lb["capitulos"]:
+            errores.append(f"{lb['id']}: {n} capítulos (se esperaban {lb['capitulos']})")
+    ids_p = Counter(p["id"] for p in pasajes)
+    errores.extend(f"Pasaje con id repetido: {k}" for k, n in ids_p.items() if n > 1)
+    errores.extend(f"Pasaje sin libro: {p['id']}" for p in pasajes if p.get("libro") not in ("Gn", "Ex"))
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text("window.BIBLIA_DATOS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n",
                       encoding="utf-8")
@@ -948,8 +1003,8 @@ def main():
     # ------------------------------------------------------------ resumen   5
     cert = Counter(x["certeza"] for x in relaciones)
     porte = Counter((e["tradicion"], e["certeza"]) for e in edades)
-    print("=== RESUMEN genesis.js ===")
-    print(f"Versículos: {sum(len(c['versiculos']) for c in capitulos)} (Gn 1–{MAXCAP})")
+    print("=== RESUMEN biblia.js (totales de Génesis + Éxodo salvo donde se indica) ===")
+    print(f"Versículos: {sum(len(c['versiculos']) for c in capitulos)} (Gn 1–{MAXCAP} y Ex 1–40)")
     fem = lambda sn: sum(1 for p in personas if p["sexo"] == "f" and p["sin_nombre"] == sn)
     print(f"Personas: {len(personas)} (con nombre {sum(1 for p in personas if not p['sin_nombre'])}, "
           f"sin nombre {sum(1 for p in personas if p['sin_nombre'])}; mujeres con nombre {fem(False)}, "
@@ -958,7 +1013,7 @@ def main():
           f"descartadas por tipo no genealógico: {dict(descartadas)}")
     tam = tam_pasaje
     print(f"Pasajes por sección: {dict(Counter(p['seccion'] for p in pasajes))}")
-    print(f"Pasajes: {len(pasajes)} (versículos {sum(tam)}, mín {min(tam)}, máx {max(tam)}; "
+    print(f"Pasajes: {len(pasajes)} (Génesis: versículos {sum(tam)}, mín {min(tam)}, máx {max(tam)}; "
           f"fuera de 8–20: {[p['id'] + ':' + str(n) for p, n in zip(pasajes, tam) if not 8 <= n <= 20]})")
     print(f"Menciones: {len(menciones)} en {len({m['ref'] for m in menciones})} versículos; "
           f"personas con nombre mencionadas: {len({m['persona'] for m in menciones})}")
@@ -1026,15 +1081,47 @@ def main():
           f"{len(cronologia['hitos_sin_fecha'])} hitos sin fecha")
     print("  Año (supuestos por defecto)          TM    LXX")
     for eid in ("ev-diluvio", "ev-nac-abram", "ev-nac-isaac", "ev-nac-esau-jacob", "ev-jacob-egipto", "ev-muerte-jose"):
-        print(f"  {EV[eid]['titulo'][:34]:34} {EV[eid]['anios']['TM|tare70|sem2']:>5} {EV[eid]['anios']['LXX|tare70|sem2']:>5}")
-    print(f"  Nace Abram con tare130: TM {EV['ev-nac-abram']['anios']['TM|tare130|sem2']}; con noe500: TM "
-          f"{EV['ev-nac-abram']['anios']['TM|tare70|noe500']}")
-    j = EV["ev-jacob-egipto"]["anios"]["TM|tare70|sem2"] - EV["ev-nac-jose"]["anios"]["TM|tare70|sem2"]
+        print(f"  {EV[eid]['titulo'][:34]:34} {EV[eid]['anios']['TM|tare70|sem2|egipto']:>5} {EV[eid]['anios']['LXX|tare70|sem2|egipto']:>5}")
+    print(f"  Nace Abram con tare130: TM {EV['ev-nac-abram']['anios']['TM|tare130|sem2|egipto']}; con noe500: TM "
+          f"{EV['ev-nac-abram']['anios']['TM|tare70|noe500|egipto']}")
+    j = EV["ev-jacob-egipto"]["anios"]["TM|tare70|sem2|egipto"] - EV["ev-nac-jose"]["anios"]["TM|tare70|sem2|egipto"]
     print(f"  Edad de Jacob al nacer José (cálculo): {130 - j}")
-    for c in ("TM|tare70|sem2", "LXX|tare70|sem2"):
+    for c in ("TM|tare70|sem2|egipto", "LXX|tare70|sem2|egipto"):
         print(f"  Vivos al comenzar el diluvio ({c}): " + ", ".join(
             f"{nombre_de.get(p, p)} (muere {d} años después)" for p, d in vivos_diluvio[c]))
-    print(f"Tamaño: genesis.js {SALIDA.stat().st_size / 1024:.0f} KB; mapa-base.js {tam_mapa / 1024:.1f} KB")
+    print(f"Tamaño: biblia.js {SALIDA.stat().st_size / 1024:.0f} KB; mapa-base.js {tam_mapa / 1024:.1f} KB")
+    print("=== POR LIBRO ===")
+    for lb in LIBROS:
+        L = lb["id"] + " "
+        en = lambda refs: any(r.startswith(L) for r in refs)
+        print(f"{lb['nombre']}: capítulos {sum(1 for c in capitulos if c['libro'] == lb['id'])}, versículos "
+              f"{sum(len(c['versiculos']) for c in capitulos if c['libro'] == lb['id'])}, pasajes "
+              f"{sum(1 for x in pasajes if x['libro'] == lb['id'])}, personas con refs en el libro "
+              f"{sum(1 for x in personas if en(x['refs']))}, relaciones {sum(1 for x in relaciones if x['ref'].startswith(L))}, "
+              f"edades {sum(1 for x in edades if x['ref'].startswith(L))}, menciones {sum(1 for x in menciones if x['ref'].startswith(L))}, "
+              f"lugares con refs {sum(1 for x in lugares if en(x['refs']))}, menciones de lugar "
+              f"{sum(1 for x in menciones_lugar if x['ref'].startswith(L))}")
+    compartidas = [x["nombre"] for x in personas if en(x["refs"]) and any(r.startswith("Gn ") for r in x["refs"])]
+    print(f"Personas compartidas Gn+Ex ({len(compartidas)}): {', '.join(compartidas)}")
+    print(f"Éxodo: personas nuevas {len(EXO['nuevas'])} (mujeres {sum(1 for x in EXO['nuevas'] if x['sexo'] == 'f')}, "
+          f"sin nombre {sum(1 for x in EXO['nuevas'] if x['sin_nombre'])}); relaciones subidas a explícito por el texto "
+          f"{EXO['subidas']}; descartadas {EXO['descartadas']}; pasajes fuera de 8–20 versículos: "
+          f"{[x['id'] + ':' + str(n) for x, n in zip(EXO['pasajes'], EXO['tam_pasaje']) if not 8 <= n <= 20]}")
+    print(f"Éxodo: menciones ambiguas descartadas ({len(EXO['ambiguos'])}): {EXO['ambiguos'][:10]}")
+    print(f"Éxodo: nombre presente pero persona no situada: {dict(EXO['no_situados'].most_common(10))}")
+    print(f"Éxodo: lugares OpenBible sin forma en RV1909: {info_lug_ex['sin_forma']}; versículos descartados "
+          f"{len(info_lug_ex['descartadas'])}: {info_lug_ex['descartadas'][:12]}")
+    print("Edades de Éxodo (TM / LXX):")
+    for e in EXO["edades"]:
+        print(f"  {e['tradicion']:3} {e['persona']:10} {e['tipo']:9} {e['ref']:8} {e['valor']:>4} «{e['cita']}»")
+    print("Años (cálculo) de Éxodo:")
+    for c in ("TM|tare70|sem2|egipto", "TM|tare70|sem2|canaan", "TM|tare130|sem2|egipto", "TM|tare130|sem2|canaan",
+              "LXX|tare70|sem2|egipto", "LXX|tare70|sem2|canaan"):
+        print(f"  {c:24} " + ", ".join(f"{k.replace('ev-', '')} {EV[k]['anios'][c]}" for k in
+                                         ("ev-jacob-egipto", "ev-salida-egipto", "ev-nac-moises", "ev-nac-aaron", "ev-llegada-sinai", "ev-tabernaculo")))
+    print("Hechos obligatorios:")
+    for h in hechos:
+        print("  " + h)
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")
     for a in avisos:
