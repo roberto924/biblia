@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-10T06:34:33+00:00",
+ "generado": "2026-11-10T06:48:29+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -18,6 +18,19 @@ window.BIBLIA_DATOS = {
    "nombre": "BibleData (Brady Stephenson): Person, PersonLabel y PersonRelationship",
    "licencia": "CC BY 4.0",
    "url": "https://github.com/BradyStephenson/bible-data"
+  },
+  {
+   "id": "openbible",
+   "nombre": "OpenBible.info, Bible Geocoding Data",
+   "licencia": "CC BY 4.0",
+   "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+   "atribucion": "Ubicaciones: OpenBible.info Bible Geocoding Data, CC BY 4.0. Se usan sus identificaciones y puntuaciones; nombres y niveles de confianza adaptados."
+  },
+  {
+   "id": "naturalearth",
+   "nombre": "Natural Earth (tierra, ríos y lagos 1:50m)",
+   "licencia": "Dominio público",
+   "url": "https://www.naturalearthdata.com/"
   }
  ],
  "capitulos": [
@@ -7793,6 +7806,1293 @@ window.BIBLIA_DATOS = {
    "persona": "Terah_1",
    "inicio": 60,
    "fin": 65
+  }
+ ],
+ "lugares": [
+  {
+   "id": "eden",
+   "nombre": "Edén",
+   "nombre_rv1909": "Edén",
+   "formas_rv1909": [
+    "Edén"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Gn 2:8",
+    "Gn 2:10",
+    "Gn 2:15",
+    "Gn 3:23",
+    "Gn 3:24",
+    "Gn 4:16"
+   ],
+   "ubicacion": null,
+   "alternativas": [
+    {
+     "identificacion": "Armenia",
+     "lat": 40.3833,
+     "lon": 44.95,
+     "puntuacion_openbible": 178
+    },
+    {
+     "identificacion": "Babylon",
+     "lat": 32.5433,
+     "lon": 44.4222,
+     "puntuacion_openbible": 131
+    },
+    {
+     "identificacion": "Tell el Muqayyar",
+     "lat": 30.9622,
+     "lon": 46.1044,
+     "puntuacion_openbible": 100
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af3daeb/eden-1",
+   "nota": "Geografía del relato del Edén: el texto no permite ubicarlo y no hay consenso. Las propuestas recogidas por OpenBible van en «alternativas»."
+  },
+  {
+   "id": "pison",
+   "nombre": "Pisón",
+   "nombre_rv1909": "Pisón",
+   "formas_rv1909": [
+    "Pisón"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Gn 2:11"
+   ],
+   "ubicacion": null,
+   "alternativas": [
+    {
+     "identificacion": "Wadi Baysh",
+     "lat": 17.1197,
+     "lon": 42.4164,
+     "puntuacion_openbible": 145
+    },
+    {
+     "identificacion": "Persian Gulf",
+     "lat": 26.0,
+     "lon": 52.0,
+     "puntuacion_openbible": 110
+    },
+    {
+     "identificacion": "Wadi Bishah",
+     "lat": 17.7658,
+     "lon": 42.9525,
+     "puntuacion_openbible": 86
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a19b076/pishon",
+   "nota": "Geografía del relato del Edén: el texto no permite ubicarlo y no hay consenso. Las propuestas recogidas por OpenBible van en «alternativas»."
+  },
+  {
+   "id": "havila",
+   "nombre": "Havila",
+   "nombre_rv1909": "Havilah",
+   "formas_rv1909": [
+    "Havilah"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 2:11"
+   ],
+   "ubicacion": null,
+   "alternativas": [
+    {
+     "identificacion": "Babylon",
+     "lat": 32.5433,
+     "lon": 44.4222,
+     "puntuacion_openbible": 328
+    },
+    {
+     "identificacion": "Arabian Peninsula",
+     "lat": 23.0,
+     "lon": 46.0,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Sanaa",
+     "lat": 15.3551,
+     "lon": 44.2145,
+     "puntuacion_openbible": -49
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad7e819/havilah-1",
+   "nota": "Geografía del relato del Edén: el texto no permite ubicarlo y no hay consenso. Las propuestas recogidas por OpenBible van en «alternativas». Distinta de las personas Havila de Gn 10."
+  },
+  {
+   "id": "gihon",
+   "nombre": "Gihón",
+   "nombre_rv1909": "Gihón",
+   "formas_rv1909": [
+    "Gihón"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Gn 2:13"
+   ],
+   "ubicacion": null,
+   "alternativas": [
+    {
+     "identificacion": "Nile River",
+     "lat": 31.4653,
+     "lon": 30.3667,
+     "puntuacion_openbible": 193
+    },
+    {
+     "identificacion": "Gihon Spring",
+     "lat": 31.7729,
+     "lon": 35.2364,
+     "puntuacion_openbible": 138
+    },
+    {
+     "identificacion": "Karkheh River",
+     "lat": 31.7823,
+     "lon": 47.8694,
+     "puntuacion_openbible": 60
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a71d79b/gihon-1",
+   "nota": "Geografía del relato del Edén: el texto no permite ubicarlo y no hay consenso. Las propuestas recogidas por OpenBible van en «alternativas»."
+  },
+  {
+   "id": "cus",
+   "nombre": "Cus",
+   "nombre_rv1909": "Etiopía",
+   "formas_rv1909": [
+    "Etiopía"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 2:13"
+   ],
+   "ubicacion": null,
+   "alternativas": [
+    {
+     "identificacion": "Babylon",
+     "lat": 32.5433,
+     "lon": 44.4222,
+     "puntuacion_openbible": 510
+    },
+    {
+     "identificacion": "Meroe",
+     "lat": 16.9351,
+     "lon": 33.7507,
+     "puntuacion_openbible": 277
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a74ee0d/cush-2",
+   "nota": "La RV1909 traduce «Etiopía»; el hebreo dice Cus. Geografía del relato del Edén: el texto no permite ubicarlo y no hay consenso. Las propuestas recogidas por OpenBible van en «alternativas»."
+  },
+  {
+   "id": "tigris",
+   "nombre": "Tigris",
+   "nombre_rv1909": "Hiddekel",
+   "formas_rv1909": [
+    "Hiddekel"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Gn 2:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Tigris River",
+    "lat": 31.0043,
+    "lon": 47.4421,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a38ebfd/tigris",
+   "nota": "La RV1909 conserva el nombre hebreo Hiddekel, que se identifica con el Tigris."
+  },
+  {
+   "id": "eufrates",
+   "nombre": "Éufrates",
+   "nombre_rv1909": "Eufrates",
+   "formas_rv1909": [
+    "Eufrates"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Gn 2:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Euphrates River",
+    "lat": 31.0043,
+    "lon": 47.442,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a62dec4/euphrates",
+   "nota": ""
+  },
+  {
+   "id": "asiria",
+   "nombre": "Asiria",
+   "nombre_rv1909": "Asiria",
+   "formas_rv1909": [
+    "Asiria",
+    "Assur"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 2:14",
+    "Gn 10:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Nineveh",
+    "lat": 36.3594,
+    "lon": 43.1528,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3d1321/assyria",
+   "nota": "En Gn 10:11 «salió Assur» puede leerse como la persona o como la tierra; aquí se sigue a OpenBible, que lo da como lugar (Asiria). Punto representativo: Nínive."
+  },
+  {
+   "id": "nod",
+   "nombre": "Nod",
+   "nombre_rv1909": "Nod",
+   "formas_rv1909": [
+    "Nod"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 4:16"
+   ],
+   "ubicacion": null,
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1ad8e1/nod",
+   "nota": "El texto solo dice «al oriente de Edén»; OpenBible no da identificación."
+  },
+  {
+   "id": "ararat",
+   "nombre": "Ararat",
+   "nombre_rv1909": "Armenia",
+   "formas_rv1909": [
+    "Armenia"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 8:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Urartu",
+    "lat": 39.7028,
+    "lon": 44.3004,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab89be9/ararat",
+   "nota": "La RV1909 dice «montes de Armenia»; el hebreo dice Ararat (región de Urartu)."
+  },
+  {
+   "id": "babel",
+   "nombre": "Babel",
+   "nombre_rv1909": "Babel",
+   "formas_rv1909": [
+    "Babel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:10",
+    "Gn 11:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Babylon",
+    "lat": 32.5433,
+    "lon": 44.4222,
+    "puntuacion_openbible": 810,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab8fdbc/babel",
+   "nota": ""
+  },
+  {
+   "id": "erec",
+   "nombre": "Erec",
+   "nombre_rv1909": "Erech",
+   "formas_rv1909": [
+    "Erech"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Uruk",
+    "lat": 31.3222,
+    "lon": 45.6361,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5db1a6/erech",
+   "nota": ""
+  },
+  {
+   "id": "acad",
+   "nombre": "Acad",
+   "nombre_rv1909": "Accad",
+   "formas_rv1909": [
+    "Accad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Sheshubar",
+    "lat": 33.0256,
+    "lon": 44.3919,
+    "puntuacion_openbible": 241,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell ed Der",
+     "lat": 33.0998,
+     "lon": 44.2983,
+     "puntuacion_openbible": 134
+    },
+    {
+     "identificacion": "Babylon",
+     "lat": 32.5433,
+     "lon": 44.4222,
+     "puntuacion_openbible": 106
+    },
+    {
+     "identificacion": "Tell Muhammad",
+     "lat": 33.3006,
+     "lon": 44.4682,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8b7a6b/accad",
+   "nota": ""
+  },
+  {
+   "id": "calne",
+   "nombre": "Calne",
+   "nombre_rv1909": "Calneh",
+   "formas_rv1909": [
+    "Calneh"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Nippur",
+    "lat": 32.1261,
+    "lon": 45.2308,
+    "puntuacion_openbible": 168,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Hursagkalamma",
+     "lat": 32.5402,
+     "lon": 44.6043,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Chatal Huyuk",
+     "lat": 36.2977,
+     "lon": 36.5454,
+     "puntuacion_openbible": -2
+    },
+    {
+     "identificacion": "Kullan Köy",
+     "lat": 36.2926,
+     "lon": 37.2055,
+     "puntuacion_openbible": -35
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aee80af/calneh-1",
+   "nota": ""
+  },
+  {
+   "id": "sinar",
+   "nombre": "Sinar",
+   "nombre_rv1909": "Shinar",
+   "formas_rv1909": [
+    "Shinar"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 10:10",
+    "Gn 11:2"
+   ],
+   "ubicacion": {
+    "identificacion": "Babylon",
+    "lat": 32.5433,
+    "lon": 44.4222,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af725b1/shinar",
+   "nota": "Punto representativo: Babilonia."
+  },
+  {
+   "id": "ninive",
+   "nombre": "Nínive",
+   "nombre_rv1909": "Nínive",
+   "formas_rv1909": [
+    "Nínive"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:11",
+    "Gn 10:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Nineveh",
+    "lat": 36.3594,
+    "lon": 43.1528,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a70fd5d/nineveh",
+   "nota": ""
+  },
+  {
+   "id": "rehobot",
+   "nombre": "Rehobot-Ir",
+   "nombre_rv1909": "Rehoboth",
+   "formas_rv1909": [
+    "Rehoboth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Nineveh",
+    "lat": 36.3594,
+    "lon": 43.1528,
+    "puntuacion_openbible": 519,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Nimrud",
+     "lat": 36.0981,
+     "lon": 43.3289,
+     "puntuacion_openbible": 54
+    },
+    {
+     "identificacion": "Assur",
+     "lat": 35.4567,
+     "lon": 43.2625,
+     "puntuacion_openbible": 38
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a260ff1/rehoboth-ir",
+   "nota": ""
+  },
+  {
+   "id": "cala",
+   "nombre": "Cala",
+   "nombre_rv1909": "Calah",
+   "formas_rv1909": [
+    "Calah"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:11",
+    "Gn 10:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Nimrud",
+    "lat": 36.0981,
+    "lon": 43.3289,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae1f807/calah",
+   "nota": ""
+  },
+  {
+   "id": "resen",
+   "nombre": "Resén",
+   "nombre_rv1909": "Ressen",
+   "formas_rv1909": [
+    "Ressen"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Qaryat as Salamiyah",
+    "lat": 36.1437,
+    "lon": 43.3145,
+    "puntuacion_openbible": 176,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Hamam al Alil",
+     "lat": 36.1581,
+     "lon": 43.2594,
+     "puntuacion_openbible": 89
+    },
+    {
+     "identificacion": "Resh Eni",
+     "lat": 36.5667,
+     "lon": 43.2349,
+     "puntuacion_openbible": -2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abd8ada/resen",
+   "nota": ""
+  },
+  {
+   "id": "sidon",
+   "nombre": "Sidón",
+   "nombre_rv1909": "Sidón",
+   "formas_rv1909": [
+    "Sidón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Sandikli archaeological site in Sidon",
+    "lat": 33.561,
+    "lon": 35.3719,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a98e4d7/sidon",
+   "nota": "En Gn 10:15 Sidón es una persona (hijo de Canaán); en Gn 10:19, la ciudad."
+  },
+  {
+   "id": "gerar",
+   "nombre": "Gerar",
+   "nombre_rv1909": "Gerar",
+   "formas_rv1909": [
+    "Gerar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Haror",
+    "lat": 31.3821,
+    "lon": 34.6065,
+    "puntuacion_openbible": 694,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell esh Sharia",
+     "lat": 31.3912,
+     "lon": 34.6816,
+     "puntuacion_openbible": 35
+    },
+    {
+     "identificacion": "Tell Tuweiyil",
+     "lat": 31.1839,
+     "lon": 34.567,
+     "puntuacion_openbible": 12
+    },
+    {
+     "identificacion": "Tell Jemmeh",
+     "lat": 31.3872,
+     "lon": 34.4451,
+     "puntuacion_openbible": -86
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3f5814/gerar",
+   "nota": ""
+  },
+  {
+   "id": "gaza",
+   "nombre": "Gaza",
+   "nombre_rv1909": "Gaza",
+   "formas_rv1909": [
+    "Gaza"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Harube",
+    "lat": 31.504,
+    "lon": 34.4644,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa8edd2/gaza",
+   "nota": ""
+  },
+  {
+   "id": "sodoma",
+   "nombre": "Sodoma",
+   "nombre_rv1909": "Sodoma",
+   "formas_rv1909": [
+    "Sodoma"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "south of the Lisan",
+    "lat": 31.2085,
+    "lon": 35.4492,
+    "puntuacion_openbible": 250,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Bab edh Dhra",
+     "lat": 31.2487,
+     "lon": 35.523,
+     "puntuacion_openbible": 135
+    },
+    {
+     "identificacion": "north of the Dead Sea",
+     "lat": 31.795,
+     "lon": 35.5953,
+     "puntuacion_openbible": 115
+    },
+    {
+     "identificacion": "Tall el Hammam",
+     "lat": 31.8402,
+     "lon": 35.6737,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0aa664/sodom",
+   "nota": ""
+  },
+  {
+   "id": "gomorra",
+   "nombre": "Gomorra",
+   "nombre_rv1909": "Gomorra",
+   "formas_rv1909": [
+    "Gomorra"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "south of the Lisan",
+    "lat": 31.2085,
+    "lon": 35.4492,
+    "puntuacion_openbible": 236,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Numeira",
+     "lat": 31.1298,
+     "lon": 35.5294,
+     "puntuacion_openbible": 129
+    },
+    {
+     "identificacion": "north of the Dead Sea",
+     "lat": 31.795,
+     "lon": 35.5953,
+     "puntuacion_openbible": 108
+    },
+    {
+     "identificacion": "Tall Kafrayn",
+     "lat": 31.8505,
+     "lon": 35.653,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa572e2/gomorrah",
+   "nota": ""
+  },
+  {
+   "id": "adma",
+   "nombre": "Adma",
+   "nombre_rv1909": "Adma",
+   "formas_rv1909": [
+    "Adma"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "south of the Lisan",
+    "lat": 31.2085,
+    "lon": 35.4492,
+    "puntuacion_openbible": 318,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Nimrin",
+     "lat": 31.9009,
+     "lon": 35.6245,
+     "puntuacion_openbible": 48
+    },
+    {
+     "identificacion": "Khanazir",
+     "lat": 30.8777,
+     "lon": 35.4371,
+     "puntuacion_openbible": 46
+    },
+    {
+     "identificacion": "Tell ed Damiyeh",
+     "lat": 32.1039,
+     "lon": 35.5468,
+     "puntuacion_openbible": 44
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a41a054/admah",
+   "nota": ""
+  },
+  {
+   "id": "zeboim",
+   "nombre": "Zeboim",
+   "nombre_rv1909": "Zeboim",
+   "formas_rv1909": [
+    "Zeboim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "south of the Lisan",
+    "lat": 31.2085,
+    "lon": 35.4492,
+    "puntuacion_openbible": 343,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Feifa",
+     "lat": 30.9396,
+     "lon": 35.4588,
+     "puntuacion_openbible": 66
+    },
+    {
+     "identificacion": "north of the Dead Sea",
+     "lat": 31.795,
+     "lon": 35.5953,
+     "puntuacion_openbible": 29
+    },
+    {
+     "identificacion": "Tall Mustah",
+     "lat": 31.9046,
+     "lon": 35.6385,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abfbfb9/zeboiim",
+   "nota": ""
+  },
+  {
+   "id": "lasa",
+   "nombre": "Lasa",
+   "nombre_rv1909": "Lasa",
+   "formas_rv1909": [
+    "Lasa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Callirrhoe",
+    "lat": 31.597,
+    "lon": 35.5593,
+    "puntuacion_openbible": 335,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Al Safi",
+     "lat": 31.0369,
+     "lon": 35.4877,
+     "puntuacion_openbible": 8
+    },
+    {
+     "identificacion": "south of the Lisan",
+     "lat": 31.2085,
+     "lon": 35.4492,
+     "puntuacion_openbible": 3
+    },
+    {
+     "identificacion": "Hama",
+     "lat": 35.1365,
+     "lon": 36.75,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adaef13/lasha",
+   "nota": ""
+  },
+  {
+   "id": "mesa",
+   "nombre": "Mesa",
+   "nombre_rv1909": "Mesa",
+   "formas_rv1909": [
+    "Mesa"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 10:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Massa",
+    "lat": 29.6109,
+    "lon": 41.552,
+    "puntuacion_openbible": 246,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Mocha",
+     "lat": 13.3167,
+     "lon": 43.25,
+     "puntuacion_openbible": 141
+    },
+    {
+     "identificacion": "Mesene",
+     "lat": 30.8947,
+     "lon": 47.578,
+     "puntuacion_openbible": 82
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6b4fb2/mesha",
+   "nota": ""
+  },
+  {
+   "id": "sefar",
+   "nombre": "Sefar",
+   "nombre_rv1909": "Sephar",
+   "formas_rv1909": [
+    "Sephar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 10:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Zafar",
+    "lat": 14.2139,
+    "lon": 44.4029,
+    "puntuacion_openbible": 335,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Al Baleed",
+     "lat": 17.0062,
+     "lon": 54.1309,
+     "puntuacion_openbible": 240
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3cae2c/sephar",
+   "nota": ""
+  },
+  {
+   "id": "ur",
+   "nombre": "Ur de los Caldeos",
+   "nombre_rv1909": "Ur de los Caldeos",
+   "formas_rv1909": [
+    "Ur de los Caldeos"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 11:28",
+    "Gn 11:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Muqayyar",
+    "lat": 30.9622,
+    "lon": 46.1044,
+    "puntuacion_openbible": 703,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Urfa",
+     "lat": 37.1478,
+     "lon": 38.7844,
+     "puntuacion_openbible": 53
+    },
+    {
+     "identificacion": "Bayburt",
+     "lat": 40.2546,
+     "lon": 40.226,
+     "puntuacion_openbible": 22
+    },
+    {
+     "identificacion": "Urartu",
+     "lat": 39.7028,
+     "lon": 44.3004,
+     "puntuacion_openbible": 12
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6cf75c/ur-1",
+   "nota": "OpenBible registra aparte «Caldea» (región) en los mismos versículos."
+  },
+  {
+   "id": "haran",
+   "nombre": "Harán",
+   "nombre_rv1909": "Harán",
+   "formas_rv1909": [
+    "Harán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Gn 11:31",
+    "Gn 11:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Harran",
+    "lat": 36.8644,
+    "lon": 39.0328,
+    "puntuacion_openbible": 922,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6d9af3/haran",
+   "nota": "En Gn 11:31 el primer «Harán» es la persona (hijo de Taré); el segundo, la ciudad."
+  },
+  {
+   "id": "canaan",
+   "nombre": "Canaán",
+   "nombre_rv1909": "Canaán",
+   "formas_rv1909": [
+    "Canaán"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Gn 11:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Canaan",
+    "lat": 32.7667,
+    "lon": 35.3333,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a581f0c/canaan",
+   "nota": "En Gn 9–10 Canaán es la persona (hijo de Cam); como tierra aparece en Gn 11:31."
+  }
+ ],
+ "menciones_lugar": [
+  {
+   "ref": "Gn 2:8",
+   "lugar": "eden",
+   "inicio": 42,
+   "fin": 46
+  },
+  {
+   "ref": "Gn 2:10",
+   "lugar": "eden",
+   "inicio": 11,
+   "fin": 15
+  },
+  {
+   "ref": "Gn 2:11",
+   "lugar": "pison",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 2:11",
+   "lugar": "havila",
+   "inicio": 68,
+   "fin": 75
+  },
+  {
+   "ref": "Gn 2:13",
+   "lugar": "gihon",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Gn 2:13",
+   "lugar": "cus",
+   "inicio": 75,
+   "fin": 82
+  },
+  {
+   "ref": "Gn 2:14",
+   "lugar": "tigris",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 2:14",
+   "lugar": "asiria",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Gn 2:14",
+   "lugar": "eufrates",
+   "inicio": 99,
+   "fin": 107
+  },
+  {
+   "ref": "Gn 2:15",
+   "lugar": "eden",
+   "inicio": 61,
+   "fin": 65
+  },
+  {
+   "ref": "Gn 3:23",
+   "lugar": "eden",
+   "inicio": 30,
+   "fin": 34
+  },
+  {
+   "ref": "Gn 3:24",
+   "lugar": "eden",
+   "inicio": 61,
+   "fin": 65
+  },
+  {
+   "ref": "Gn 4:16",
+   "lugar": "nod",
+   "inicio": 57,
+   "fin": 60
+  },
+  {
+   "ref": "Gn 4:16",
+   "lugar": "eden",
+   "inicio": 76,
+   "fin": 80
+  },
+  {
+   "ref": "Gn 8:4",
+   "lugar": "ararat",
+   "inicio": 83,
+   "fin": 90
+  },
+  {
+   "ref": "Gn 10:10",
+   "lugar": "babel",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Gn 10:10",
+   "lugar": "erec",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 10:10",
+   "lugar": "acad",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Gn 10:10",
+   "lugar": "calne",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "Gn 10:10",
+   "lugar": "sinar",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Gn 10:11",
+   "lugar": "asiria",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Gn 10:11",
+   "lugar": "ninive",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Gn 10:11",
+   "lugar": "rehobot",
+   "inicio": 55,
+   "fin": 63
+  },
+  {
+   "ref": "Gn 10:11",
+   "lugar": "cala",
+   "inicio": 69,
+   "fin": 74
+  },
+  {
+   "ref": "Gn 10:12",
+   "lugar": "resen",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 10:12",
+   "lugar": "ninive",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Gn 10:12",
+   "lugar": "cala",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "sidon",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "gerar",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "gaza",
+   "inicio": 69,
+   "fin": 73
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "sodoma",
+   "inicio": 91,
+   "fin": 97
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "gomorra",
+   "inicio": 100,
+   "fin": 107
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "adma",
+   "inicio": 109,
+   "fin": 113
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "zeboim",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "Gn 10:19",
+   "lugar": "lasa",
+   "inicio": 130,
+   "fin": 134
+  },
+  {
+   "ref": "Gn 10:30",
+   "lugar": "mesa",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "Gn 10:30",
+   "lugar": "sefar",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Gn 11:2",
+   "lugar": "sinar",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Gn 11:9",
+   "lugar": "babel",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 11:28",
+   "lugar": "ur",
+   "inicio": 73,
+   "fin": 90
+  },
+  {
+   "ref": "Gn 11:31",
+   "lugar": "ur",
+   "inicio": 135,
+   "fin": 152
+  },
+  {
+   "ref": "Gn 11:31",
+   "lugar": "canaan",
+   "inicio": 177,
+   "fin": 183
+  },
+  {
+   "ref": "Gn 11:31",
+   "lugar": "haran",
+   "inicio": 202,
+   "fin": 207
+  },
+  {
+   "ref": "Gn 11:32",
+   "lugar": "haran",
+   "inicio": 69,
+   "fin": 74
   }
  ]
 };

@@ -52,7 +52,14 @@ const Nucleo = (() => {
       const k = m && m.persona ? clave(m.ref) : null; if (k === null) return;
       add(menciones, k, m); marcar(m.persona, m.ref);
     });
-    return { datos: d, personas, hijos, padres, conyuges, edades, menciones, porRef, primera };
+    const lugares = new Map(), lugaresPorRef = new Map(), mencionesLugar = new Map();
+    const marcarL = (id, ref) => { const k = clave(ref); if (k === null || !id) return; if (!lugaresPorRef.has(k)) lugaresPorRef.set(k, new Set()); lugaresPorRef.get(k).add(id); };
+    (d.lugares || []).forEach(l => { if (l && l.id) { lugares.set(l.id, l); (l.refs || []).forEach(r => marcarL(l.id, r)); } });
+    (d.menciones_lugar || []).forEach(m => {
+      const k = m && m.lugar ? clave(m.ref) : null; if (k === null) return;
+      add(mencionesLugar, k, m); marcarL(m.lugar, m.ref);
+    });
+    return { datos: d, personas, hijos, padres, conyuges, edades, menciones, porRef, primera, lugares, lugaresPorRef, mencionesLugar };
   }
 
   const cache = new WeakMap();
@@ -274,32 +281,37 @@ const Nucleo = (() => {
     return out.sort((x, y) => x.clave - y.clave);
   }
 
-  // Si no hay `menciones`, se buscan los nombres de las personas con ese versículo en sus refs.
-  function mencionesPorNombre(d, ref, texto) {
-    const I = indice(d), out = [];
-    for (const id of (I.porRef.get(clave(ref)) || [])) {
-      const p = I.personas.get(id);
-      if (!p || p.sin_nombre) continue;
+  // Menciones de personas (tipo 'persona') o lugares ('lugar') en un versículo: las de los datos si son
+  // válidas; si no hay, se buscan los nombres de quienes tienen ese versículo en sus refs.
+  function mencionesDe(d, ref, texto, tipo) {
+    const I = indice(d), k = clave(ref);
+    const valida = m => Number.isInteger(m.inicio) && Number.isInteger(m.fin) && m.inicio >= 0 && m.fin > m.inicio && m.fin <= texto.length;
+    const datos = ((tipo === 'lugar' ? I.mencionesLugar : I.menciones).get(k) || []).filter(valida);
+    // Quien ya tiene mención en los datos no se busca por nombre; el resto, sí.
+    const out = datos.map(m => ({ [tipo]: m[tipo], inicio: m.inicio, fin: m.fin })), cubiertos = new Set(datos.map(m => m[tipo]));
+    const fuente = tipo === 'lugar' ? I.lugares : I.personas;
+    for (const id of ((tipo === 'lugar' ? I.lugaresPorRef : I.porRef).get(k) || [])) {
+      const p = fuente.get(id);
+      if (!p || p.sin_nombre || cubiertos.has(id)) continue;
       for (const nom of new Set([p.nombre, p.nombre_rv1909].filter(Boolean))) {
         const re = new RegExp('(^|[^\\p{L}])(' + nom.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\p{L}])', 'gu');
         let m;
-        while ((m = re.exec(texto))) { const i = m.index + m[1].length; out.push({ persona: id, inicio: i, fin: i + m[2].length }); }
+        while ((m = re.exec(texto))) { const i = m.index + m[1].length; out.push({ [tipo]: id, inicio: i, fin: i + m[2].length }); }
       }
     }
     return out;
   }
-  // Trozos [{texto, persona?}] de un versículo; ignora menciones fuera de rango o solapadas.
+  // Trozos [{texto, persona?|lugar?}] de un versículo; ignora menciones fuera de rango o solapadas.
   function segmentar(d, ref, texto) {
     texto = String(texto || '');
-    let ms = (indice(d).menciones.get(clave(ref)) || []).filter(m => Number.isInteger(m.inicio) && Number.isInteger(m.fin) && m.inicio >= 0 && m.fin > m.inicio && m.fin <= texto.length);
-    if (!ms.length) ms = mencionesPorNombre(d, ref, texto);
-    ms = ms.slice().sort((a, b) => a.inicio - b.inicio || b.fin - a.fin);
+    const ms = mencionesDe(d, ref, texto, 'persona').concat(mencionesDe(d, ref, texto, 'lugar'))
+      .sort((a, b) => a.inicio - b.inicio || b.fin - a.fin);
     const out = [];
     let pos = 0;
     for (const m of ms) {
       if (m.inicio < pos) continue;
       if (m.inicio > pos) out.push({ texto: texto.slice(pos, m.inicio) });
-      out.push({ texto: texto.slice(m.inicio, m.fin), persona: m.persona });
+      out.push(m.lugar ? { texto: texto.slice(m.inicio, m.fin), lugar: m.lugar } : { texto: texto.slice(m.inicio, m.fin), persona: m.persona });
       pos = m.fin;
     }
     if (pos < texto.length) out.push({ texto: texto.slice(pos) });
@@ -341,11 +353,64 @@ const Nucleo = (() => {
     });
     const edadesV = [...grupos.values()].map(g => Object.assign(g, {
       difiere: !!(g.TM && g.LXX && g.TM.valor !== g.LXX.valor), solo: g.TM && !g.LXX ? 'TM' : !g.TM && g.LXX ? 'LXX' : null }));
+    const lugs = [];
+    [...ks].sort((a, b) => a - b).forEach(k => (I.lugaresPorRef.get(k) || []).forEach(id => { if (!lugs.includes(id) && I.lugares.has(id)) lugs.push(id); }));
     return { personas: ids.map(id => ({ id, contexto: contextoPersona(d, id) })), vinculos, edades: edadesV,
-      sinNombre: ids.filter(id => (I.personas.get(id) || {}).sin_nombre) };
+      sinNombre: ids.filter(id => (I.personas.get(id) || {}).sin_nombre), lugares: lugs };
   }
-  // ¿Tiene el versículo vínculos, edades o alusiones sin nombre? (marca al margen)
-  const tieneApoyo = (d, ref) => { const A = acompanante(d, [ref]); return A.vinculos.length + A.edades.length + A.sinNombre.length > 0; };
+  // ¿Tiene el versículo vínculos, edades, alusiones sin nombre o lugares? (marca al margen)
+  const tieneApoyo = (d, ref) => { const A = acompanante(d, [ref]); return A.vinculos.length + A.edades.length + A.sinNombre.length + A.lugares.length > 0; };
+
+  /* ---- Lugares y mapa ---- */
+  const lugar = (d, id) => indice(d).lugares.get(id) || null;
+  const lugaresDeRefs = (d, refs) => acompanante(d, refs).lugares;
+  const lugaresDePasaje = (d, p) => lugaresDeRefs(d, versiculosDe(d, p).map(v => v.ref));
+  // 'alta' | 'media' | 'baja' | 'desconocida' (sin coordenadas válidas)
+  function confianzaLugar(l) {
+    const u = l && l.ubicacion;
+    if (!u || u.lat === null || u.lon === null || u.lat === undefined || u.lon === undefined || !Number.isFinite(+u.lat) || !Number.isFinite(+u.lon)) return 'desconocida';
+    return ['alta', 'media', 'baja'].includes(u.confianza) ? u.confianza : 'baja';
+  }
+  // Equirectangular con corrección por la latitud media del recuadro.
+  function proyeccion(bbox) {
+    const b = Array.isArray(bbox) && bbox.length === 4 && bbox.every(Number.isFinite) ? bbox : [25, 20, 60, 45];
+    const latMedia = (b[1] + b[3]) / 2;
+    return { bbox: b, latMedia, k: Math.cos(latMedia * Math.PI / 180) };
+  }
+  const proyectar = (P, lon, lat) => [lon * P.k, -lat];
+  const desproyectar = (P, x, y) => [x / P.k, -y];
+  // Rectángulo {x,y,w,h} (coordenadas proyectadas) que contiene los puntos [lon,lat] con margen y tamaño mínimo (grados).
+  function encuadre(P, puntos, opc) {
+    opc = opc || {};
+    const margen = opc.margen === undefined ? 0.15 : opc.margen, minimo = opc.minimo === undefined ? 2 : opc.minimo;
+    let pts = (puntos || []).filter(p => p && Number.isFinite(p[0]) && Number.isFinite(p[1]));
+    if (!pts.length) pts = [[P.bbox[0], P.bbox[1]], [P.bbox[2], P.bbox[3]]];
+    const xy = pts.map(p => proyectar(P, p[0], p[1]));
+    const xs = xy.map(p => p[0]), ys = xy.map(p => p[1]);
+    let x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+    const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+    let w = Math.max(x1 - x0, minimo * P.k), h = Math.max(y1 - y0, minimo);
+    w *= 1 + 2 * margen; h *= 1 + 2 * margen;
+    return { x: cx - w / 2, y: cy - h / 2, w, h };
+  }
+  // Coloca etiquetas sin solaparse entre sí ni con los marcadores; las que no caben se omiten.
+  function colocarEtiquetas(items, ancho, alto) {
+    const puestos = items.map(it => ({ x: it.x - 6, y: it.y - 6, w: 12, h: 12, id: it.id })), out = [];
+    const choca = (r, id) => puestos.some(p => p.id !== id && r.x < p.x + p.w && p.x < r.x + r.w && r.y < p.y + p.h && p.y < r.y + r.h);
+    items.slice().sort((a, b) => (b.prioridad || 0) - (a.prioridad || 0)).forEach(it => {
+      const w = String(it.texto).length * 6.6 + 4, h = 14, g = 9;
+      const ops = [{ x: it.x + g, y: it.y - h / 2, anc: 'start' }, { x: it.x - g - w, y: it.y - h / 2, anc: 'end' },
+        { x: it.x - w / 2, y: it.y - g - h, anc: 'middle' }, { x: it.x - w / 2, y: it.y + g, anc: 'middle' }];
+      for (const o of ops) {
+        const r = { x: o.x, y: o.y, w, h };
+        if (r.x < 0 || r.y < 0 || r.x + w > ancho || r.y + h > alto || choca(r, it.id)) continue;
+        puestos.push(Object.assign({ id: '#' + it.id }, r));
+        out.push({ id: it.id, texto: it.texto, x: o.anc === 'start' ? o.x : o.anc === 'end' ? o.x + w : o.x + w / 2, y: o.y + h - 3, anc: o.anc, caja: r });
+        return;
+      }
+    });
+    return out;
+  }
 
   // Personas cuya primera aparición en los datos cae dentro del pasaje.
   function primerasApariciones(d, pasaje) {
@@ -369,7 +434,8 @@ const Nucleo = (() => {
   }
 
   return { TRADS, TIPOS, norm, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
-    acompanante, tieneApoyo, primerasApariciones, miniArbol, anoDiluvio, indice, persona, hijosDe, encontrar, idAdan, idAbraham,
+    acompanante, tieneApoyo, primerasApariciones, miniArbol, anoDiluvio,
+    lugar, lugaresDeRefs, lugaresDePasaje, confianzaLugar, proyeccion, proyectar, desproyectar, encuadre, colocarEtiquetas, indice, persona, hijosDe, encontrar, idAdan, idAbraham,
     construirArbol, construirBosque, alcanzables, contarMujeres, sinNombre, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
     lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, personasEnCapitulo, buscar };
 })();
@@ -390,7 +456,7 @@ if (typeof document !== 'undefined') (function () {
   const TIPO_TXT = { al_engendrar: 'Al engendrar', restantes: 'Años restantes', total: 'Total' };
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
-  const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, plegados: new Set(), q: '' };
+  const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, plegados: new Set(), q: '' };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   const refHTML = ref => { const r = N.parseRef(ref); return r ? `<a class="ref" href="#leer/${r.cap}${r.v ? '/' + r.v : ''}">${esc(ref)}</a>` : esc(ref); };
@@ -463,6 +529,7 @@ if (typeof document !== 'undefined') (function () {
       capPrev = v.cap;
       const segs = N.segmentar(D, v.ref, v.texto);
       const partes = segs.map((s, si) => {
+        if (s.lugar) return `<button type="button" class="mencion-lugar" data-lugar="${esc(s.lugar)}">${esc(s.texto)}</button>`;
         if (s.persona) { const per = N.persona(D, s.persona) || {}; return `<button type="button" class="mencion${per.sexo === 'f' ? ' mujer' : ''}" data-persona="${esc(s.persona)}">${esc(s.texto)}</button>`; }
         if (j === 0 && si === 0 && s.texto) { const t = s.texto.trimStart(), c = Array.from(t)[0] || ''; return `<span class="capitular" aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c)}</span>${esc(t.slice(c.length))}`; }
         return esc(s.texto);
@@ -495,12 +562,16 @@ if (typeof document !== 'undefined') (function () {
     if (!p) return '';
     const refs = estado.activo ? [`Gn ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref);
     const A = N.acompanante(D, refs);
-    const n = A.vinculos.length + A.edades.length + A.sinNombre.length;
+    const n = A.vinculos.length + A.edades.length + A.sinNombre.length + A.lugares.length;
     const ambito = estado.activo ? `Gn ${estado.activo}` : 'Todo el pasaje';
     const sec = (t, cuerpo, icono) => `<section class="acomp-sec"><h3>${icono}${t}</h3>${cuerpo}</section>`;
     const I = (d) => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}"/></svg>`;
     let html = '';
     if (A.personas.length) html += sec('Quién aparece', `<ul class="quien">${A.personas.map(x => `<li>${btnPersona(x.id)}${x.contexto ? `<span class="contexto">${esc(x.contexto)}</span>` : ''}</li>`).join('')}</ul>`, I('M10 9a3 3 0 100-6 3 3 0 000 6zM4 17c0-3.3 2.7-5 6-5s6 1.7 6 5'));
+    if (A.lugares.length) {
+      const ub = A.lugares.filter(id => N.confianzaLugar(N.lugar(D, id)) !== 'desconocida');
+      html += sec('Dónde ocurre', `${ub.length ? mapaHTML(ub, { mini: true }) : ''}<ul class="lugares-lista">${A.lugares.map(id => { const l = N.lugar(D, id) || {}, c = N.confianzaLugar(l); return `<li>${btnLugar(id)}<span class="contexto">${c === 'desconocida' ? 'Ubicación desconocida' + (l.nota ? ': ' + esc(l.nota) : '') : esc((l.ubicacion && l.ubicacion.identificacion) || '') + '. ' + CONF_TXT[c]}</span></li>`; }).join('')}</ul>`, I('M10 17s5-4.6 5-8.5a5 5 0 10-10 0C5 12.4 10 17 10 17zM10 10.2a1.7 1.7 0 100-3.4 1.7 1.7 0 000 3.4'));
+    }
     if (A.vinculos.length) html += sec('Vínculos que establece', `<ul class="vinculos">${A.vinculos.map(r => `<li><span>${TIPO_REL(r)}</span>${insignia(r.certeza, r.ref)}${citaHTML(r)}</li>`).join('')}</ul>`, I('M7 7a3 3 0 014 0l2 2a3 3 0 010 4M13 13a3 3 0 01-4 0l-2-2a3 3 0 010-4'));
     if (A.edades.length) html += sec('Edades', `<ul class="edades-acomp">${A.edades.map(e => {
       const val = tr => { const x = e[tr]; if (!x) return `<span class="vacio">${tr}: sin dato</span>`; const lbl = `<span class="trad">${tr}</span><strong>${x.valor}</strong>`; return N.TIPOS.includes(e.tipo) ? `<button type="button" class="celda-acomp" data-edad="${esc(e.persona)}|${e.tipo}|${tr}">${lbl}</button>` : `<span class="celda-acomp">${lbl}</span>`; };
@@ -527,7 +598,7 @@ if (typeof document !== 'undefined') (function () {
   function activar(k) {
     estado.activo = k && k !== estado.activo ? k : null;
     document.querySelectorAll('.vers').forEach(el => { const on = el.dataset.v === estado.activo; el.classList.toggle('activo', on); el.querySelector('.vn').setAttribute('aria-pressed', on); });
-    const a = $('#acompanante'); if (a) a.innerHTML = acompHTML();
+    const a = $('#acompanante'); if (a) { a.innerHTML = acompHTML(); montarMapas(a); }
     store.set('biblia.pos', { pasaje: estado.pasaje.id, v: estado.activo });
     try { history.replaceState(null, '', `#leer/p/${estado.pasaje.id}${estado.activo ? '/' + estado.activo : ''}`); } catch (e) { /* file:// */ }
   }
@@ -634,6 +705,18 @@ if (typeof document !== 'undefined') (function () {
         <dt>${insignia('calculo')}</dt><dd>Cifra obtenida por operación aritmética a partir del texto (sumas de edades, años desde Adán). No está escrita como tal.</dd></dl></section>
       <section><h2>TM y LXX</h2><p><strong>TM — Texto Masorético:</strong> texto hebreo transmitido por los masoretas; base de la mayoría de las Biblias en español (como la Reina-Valera).</p>
         <p><strong>LXX — Septuaginta:</strong> traducción griega antigua del Antiguo Testamento. En Génesis 5 y 11 da a menudo cifras distintas (suele sumar 100 años a la edad al engendrar) e incluye a un Cainán en Gn 11 que el TM no menciona.</p></section>
+      <section><h2>Lugares y mapa</h2>
+        <p>El <strong>nombre</strong> de cada lugar es texto bíblico. Su <strong>ubicación</strong> es una identificación moderna propuesta por la investigación y puede discutirse.</p>
+        <ul class="fuentes">
+          <li><strong>OpenBible.info, Bible Geocoding Data</strong>: identificaciones modernas, puntuaciones y alternativas.<br>Licencia: CC BY 4.0. Atribución: OpenBible.info.<br><a href="https://www.openbible.info/geo/" target="_blank" rel="noopener">https://www.openbible.info/geo/</a></li>
+          <li><strong>${esc((MAPA && MAPA.fuente) || 'Natural Earth')}</strong>: costas, ríos y lagos del mapa base.<br>Licencia: dominio público. Hecho con Natural Earth.<br><a href="${esc((MAPA && MAPA.url) || 'https://www.naturalearthdata.com/')}" target="_blank" rel="noopener">${esc((MAPA && MAPA.url) || 'https://www.naturalearthdata.com/')}</a></li>
+        </ul>
+        <dl class="etiquetas">
+          <dt>${icoConf('alta')} Confianza alta</dt><dd>La identificación moderna es ampliamente aceptada.</dd>
+          <dt>${icoConf('media')} Confianza media</dt><dd>Identificación probable; hay propuestas alternativas, que se ven como marcadores huecos al seleccionar el lugar.</dd>
+          <dt>${icoConf('baja')} Confianza baja</dt><dd>Identificación incierta o discutida; tómala como hipótesis.</dd>
+          <dt>${icoConf('desconocida')} Ubicación desconocida</dt><dd>No hay identificación fiable (por ejemplo, Edén o Nod). Se dice, pero no se dibuja.</dd>
+        </dl></section>
       <p class="meta">Datos generados: ${esc(fecha || 'sin fecha')}</p>`;
   }
 
@@ -696,15 +779,207 @@ if (typeof document !== 'undefined') (function () {
     abrirDetalle(`${nombre(id)} · años desde Adán (${trad})`, `<p>${insignia('calculo')}</p><p>Nacimiento ≈ año <strong>${f.nacimiento}</strong> desde Adán, sumando:</p>${suma}${muerte}<p class="meta">Cálculo de esta app, no texto bíblico.</p>`);
   }
 
+  /* ---------- Lugares y mapa ---------- */
+  let MAPA = window.BIBLIA_MAPA || null;
+  const CONF_TXT = { alta: 'Confianza alta', media: 'Confianza media', baja: 'Confianza baja', desconocida: 'Ubicación desconocida' };
+  const CONF_DESC = {
+    alta: 'la identificación moderna es ampliamente aceptada.',
+    media: 'identificación probable; hay propuestas alternativas.',
+    baja: 'identificación incierta o discutida; tómala como hipótesis.'
+  };
+  const TIPO_LUGAR = { ciudad: 'Ciudad', region: 'Región', rio: 'Río', monte: 'Monte', otro: 'Lugar' };
+  const nombreLugar = id => { const l = N.lugar(D, id); return l ? (l.nombre || id) : id; };
+  function formaConf(conf, r) {
+    if (conf === 'alta') return `<circle r="${r}" class="f-alta"/>`;
+    if (conf === 'media') return `<rect x="${-r * .8}" y="${-r * .8}" width="${r * 1.6}" height="${r * 1.6}" transform="rotate(45)" class="f-media"/>`;
+    if (conf === 'baja') return `<path d="M0 ${-r * 1.15}L${r * 1.05} ${r * .75}H${-r * 1.05}Z" class="f-baja"/>`;
+    if (conf === 'alt') return `<circle r="${r * .85}" class="f-alt"/>`;
+    return `<circle r="${r * .9}" class="f-desc"/><path d="M-2.2 -1.6a2.2 2.2 0 1 1 2.2 2.6v1" class="f-desc-q"/>`;
+  }
+  const icoConf = conf => `<svg class="ico-conf" viewBox="-7 -7 14 14" aria-hidden="true">${formaConf(conf, 5)}</svg>`;
+  const btnLugar = id => { const c = N.confianzaLugar(N.lugar(D, id)); return `<button type="button" class="lugar-btn conf-${c}" data-lugar="${esc(id)}">${icoConf(c)}${esc(nombreLugar(id))}</button>`; };
+  const leyendaConf = () => `<p class="leyenda-mapa">${['alta', 'media', 'baja'].map(c => `<span>${icoConf(c)}${CONF_TXT[c].replace('Confianza ', '')}</span>`).join('')}<span>${icoConf('alt')}alternativa</span></p>`;
+  const mapaHTML = (ids, opc) => `<div class="mapa${opc && opc.mini ? ' mini' : ''}" data-mapa="${esc(JSON.stringify({ ids, sel: (opc && opc.sel) || null, mini: !!(opc && opc.mini) }))}"></div>`;
+  function montarMapas(raiz) { if (raiz) raiz.querySelectorAll('.mapa[data-mapa]:not([data-montado])').forEach(el => { try { crearMapa(el, JSON.parse(el.dataset.mapa)); } catch (e) { el.textContent = 'No se pudo dibujar el mapa.'; } }); }
+
+  function crearMapa(el, cfg) {
+    el.dataset.montado = '1';
+    const P = N.proyeccion(MAPA && MAPA.bbox);
+    const ubicados = cfg.ids.map(id => N.lugar(D, id)).filter(l => N.confianzaLugar(l) !== 'desconocida');
+    const coord = l => [+l.ubicacion.lon, +l.ubicacion.lat];
+    let sel = cfg.sel, W = 320, H = 220;
+    const v = { cx: 0, cy: 0, s: 1 };
+    const pth = (ring, cerrar) => (ring || []).length ? 'M' + ring.map(p => N.proyectar(P, p[0], p[1]).map(n => n.toFixed(3)).join(' ')).join('L') + (cerrar ? 'Z' : '') : '';
+    let base = '<rect class="mar" x="-2000" y="-2000" width="4000" height="4000"/>';
+    if (MAPA) {
+      base += (MAPA.costas || []).map(r => `<path class="tierra" d="${pth(r, true)}"/>`).join('');
+      base += (MAPA.lagos || []).map(r => `<path class="lago" d="${pth(r, true)}"/>`).join('');
+      base += (MAPA.rios || []).map(r => `<path class="rio" d="${pth(r.puntos, false)}"/>`).join('');
+    }
+    const b = P.bbox; let ret = '';
+    for (let lon = Math.ceil(b[0] / 5) * 5; lon <= b[2]; lon += 5) ret += `<path class="reticula" d="${pth([[lon, b[1]], [lon, b[3]]])}"/>`;
+    for (let lat = Math.ceil(b[1] / 5) * 5; lat <= b[3]; lat += 5) ret += `<path class="reticula" d="${pth([[b[0], lat], [b[2], lat]])}"/>`;
+    el.innerHTML = `<div class="mapa-lienzo"><svg tabindex="0" role="application" aria-roledescription="mapa" aria-label="Mapa con ${ubicados.length} ${ubicados.length === 1 ? 'lugar' : 'lugares'}. Flechas para mover, más y menos para acercar.">
+        <g class="base">${base}${ret}</g><g class="capa"></g></svg>
+        <div class="mapa-ctrl"><button type="button" data-z="1" aria-label="Acercar">+</button><button type="button" data-z="-1" aria-label="Alejar">−</button>
+        <button type="button" data-z="0" aria-label="Encuadrar los lugares"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"/></svg></button></div>
+        ${MAPA ? '' : '<p class="mapa-aviso">Mapa base no disponible: solo se muestra la retícula.</p>'}</div>
+      ${leyendaConf()}<div class="mapa-info" aria-live="polite"></div>`;
+    const svg = el.querySelector('svg'), gBase = el.querySelector('.base'), capa = el.querySelector('.capa'), info = el.querySelector('.mapa-info');
+    const aPant = (lon, lat) => { const [x, y] = N.proyectar(P, lon, lat); return [(x - v.cx) * v.s + W / 2, (y - v.cy) * v.s + H / 2]; };
+    const full = N.encuadre(P, [], { margen: 0 });
+    const sMin = () => Math.min(W / full.w, H / full.h) * 0.6, sMax = () => Math.min(W, H) / 0.25;
+    let pend = false;
+    const pedir = () => { if (!pend) { pend = true; requestAnimationFrame(() => { pend = false; dibujar(); }); } };
+    function dibujar() {
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      gBase.setAttribute('transform', `matrix(${v.s} 0 0 ${v.s} ${W / 2 - v.cx * v.s} ${H / 2 - v.cy * v.s})`);
+      let html = '';
+      const lsel = sel && N.lugar(D, sel);
+      if (lsel && N.confianzaLugar(lsel) !== 'desconocida') {
+        const [x0, y0] = aPant(...coord(lsel));
+        (lsel.alternativas || []).filter(a => Number.isFinite(+a.lat) && Number.isFinite(+a.lon)).forEach(a => {
+          const [x, y] = aPant(+a.lon, +a.lat);
+          html += `<line class="alt-linea" x1="${x0}" y1="${y0}" x2="${x}" y2="${y}"/><g class="marcador alt" transform="translate(${x} ${y})"><title>Alternativa: ${esc(a.identificacion || '')}</title>${formaConf('alt', 6)}</g>`;
+        });
+      }
+      const items = ubicados.map(l => { const [x, y] = aPant(...coord(l)); const c = N.confianzaLugar(l); return { id: l.id, x, y, c, texto: l.nombre || l.id, prioridad: (l.id === sel ? 10 : 0) + { alta: 3, media: 2, baja: 1 }[c] }; });
+      items.forEach(it => { html += `<g class="marcador conf-${it.c}${it.id === sel ? ' sel' : ''}" transform="translate(${it.x.toFixed(1)} ${it.y.toFixed(1)})" data-lugar-mapa="${esc(it.id)}" tabindex="0" role="button" aria-label="${esc(it.texto)}, ${CONF_TXT[it.c].toLowerCase()}"><circle r="16" class="toque"/>${formaConf(it.c, it.id === sel ? 8 : 6)}</g>`; });
+      N.colocarEtiquetas(items, W, H).forEach(e => { html += `<text class="etq${e.id === sel ? ' sel' : ''}" x="${e.x.toFixed(1)}" y="${e.y.toFixed(1)}" text-anchor="${e.anc}">${esc(e.texto)}</text>`; });
+      capa.innerHTML = html;
+    }
+    function encuadrar() {
+      const pts = ubicados.map(coord);
+      const lsel = sel && N.lugar(D, sel);
+      if (lsel) (lsel.alternativas || []).forEach(a => { if (Number.isFinite(+a.lat) && Number.isFinite(+a.lon)) pts.push([+a.lon, +a.lat]); });
+      const r = N.encuadre(P, pts, { minimo: cfg.mini ? 4 : 3 });
+      v.s = Math.min(W / r.w, H / r.h); v.cx = r.x + r.w / 2; v.cy = r.y + r.h / 2;
+      dibujar();
+    }
+    function zoomEn(px, py, f) {
+      const s = Math.min(sMax(), Math.max(sMin(), v.s * f));
+      const wx = v.cx + (px - W / 2) / v.s, wy = v.cy + (py - H / 2) / v.s;
+      v.s = s; v.cx = wx - (px - W / 2) / s; v.cy = wy - (py - H / 2) / s;
+      pedir();
+    }
+    function seleccionar(id) {
+      sel = id; dibujar();
+      const l = N.lugar(D, id);
+      info.innerHTML = l ? `<p><strong>${esc(l.nombre)}</strong>: ${esc((l.ubicacion && l.ubicacion.identificacion) || '')} <span class="meta">(${CONF_TXT[N.confianzaLugar(l)].toLowerCase()}${(l.alternativas || []).length ? `, ${l.alternativas.length} alternativa${l.alternativas.length > 1 ? 's' : ''}` : ''})</span>
+        <button type="button" class="boton mini-boton secundario" data-lugar="${esc(id)}">Ver ficha</button></p>` : '';
+    }
+    // Arrastre, pellizco y rueda
+    const punteros = new Map(); let previo = null, recorrido = 0;
+    const pos = e => { const r = svg.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+    const estadoP = () => { const ps = [...punteros.values()]; if (ps.length < 2) return { n: ps.length, c: ps[0], d: 0 }; const [a, c] = ps; return { n: 2, c: [(a[0] + c[0]) / 2, (a[1] + c[1]) / 2], d: Math.hypot(a[0] - c[0], a[1] - c[1]) }; };
+    svg.addEventListener('pointerdown', e => { punteros.set(e.pointerId, pos(e)); previo = estadoP(); if (punteros.size === 1) recorrido = 0; });
+    svg.addEventListener('pointermove', e => {
+      if (!punteros.has(e.pointerId)) return;
+      punteros.set(e.pointerId, pos(e));
+      const ahora = estadoP();
+      if (previo && ahora.n === previo.n && ahora.c) {
+        const dx = ahora.c[0] - previo.c[0], dy = ahora.c[1] - previo.c[1];
+        recorrido += Math.abs(dx) + Math.abs(dy);
+        if (recorrido > 6 && !svg.hasPointerCapture(e.pointerId)) { try { svg.setPointerCapture(e.pointerId); } catch (er) { /* */ } }
+        v.cx -= dx / v.s; v.cy -= dy / v.s;
+        if (ahora.n === 2 && previo.d > 0) zoomEn(ahora.c[0], ahora.c[1], ahora.d / previo.d);
+        pedir();
+      }
+      previo = ahora;
+    });
+    const soltar = e => { punteros.delete(e.pointerId); previo = punteros.size ? estadoP() : null; };
+    svg.addEventListener('pointerup', soltar); svg.addEventListener('pointercancel', soltar);
+    svg.addEventListener('wheel', e => { e.preventDefault(); const [x, y] = pos(e); zoomEn(x, y, Math.exp(-e.deltaY * 0.0015)); }, { passive: false });
+    svg.addEventListener('click', e => { if (recorrido > 6) return; const m = e.target.closest('[data-lugar-mapa]'); if (m) seleccionar(m.dataset.lugarMapa); });
+    svg.addEventListener('keydown', e => {
+      const m = e.target.closest && e.target.closest('[data-lugar-mapa]');
+      if (m && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); seleccionar(m.dataset.lugarMapa); return; }
+      const paso = 40 / v.s, k = { ArrowLeft: [-paso, 0], ArrowRight: [paso, 0], ArrowUp: [0, -paso], ArrowDown: [0, paso] }[e.key];
+      if (k) { e.preventDefault(); v.cx += k[0]; v.cy += k[1]; pedir(); }
+      else if (e.key === '+' || e.key === '=') zoomEn(W / 2, H / 2, 1.4);
+      else if (e.key === '-') zoomEn(W / 2, H / 2, 1 / 1.4);
+    });
+    el.querySelector('.mapa-ctrl').addEventListener('click', e => {
+      const bt = e.target.closest('[data-z]'); if (!bt) return;
+      const z = +bt.dataset.z; if (z === 0) encuadrar(); else zoomEn(W / 2, H / 2, z > 0 ? 1.5 : 1 / 1.5);
+    });
+    const medir = () => { const r = svg.getBoundingClientRect(); if (r.width > 10 && r.height > 10) { W = r.width; H = r.height; return true; } return false; };
+    let listo = false;
+    const alCambiar = () => { const w0 = W, h0 = H; if (!medir()) return; if (!listo) { listo = true; encuadrar(); } else if (w0 !== W || h0 !== H) dibujar(); };
+    if (window.ResizeObserver) new ResizeObserver(alCambiar).observe(svg);
+    alCambiar(); if (!listo) { listo = true; encuadrar(); }
+    if (sel) seleccionar(sel);
+  }
+
+  function abrirLugar(id) {
+    const l = N.lugar(D, id); if (!l) return;
+    const c = N.confianzaLugar(l), u = l.ubicacion || {};
+    const alts = (l.alternativas || []).filter(a => a && a.identificacion);
+    const refs = [...new Set(l.refs || [])];
+    const fuente = l.fuente === 'openbible' ? 'OpenBible.info, Bible Geocoding Data' : fuenteNombre(l.fuente);
+    fichaDlg.querySelector('h2').textContent = l.nombre || id;
+    fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
+      <p class="meta">${esc(TIPO_LUGAR[l.tipo] || 'Lugar')}${l.nombre_rv1909 && l.nombre_rv1909 !== l.nombre ? `. En la RV1909: «${esc(l.nombre_rv1909)}»` : ''}</p>
+      <section class="bloque bloque-texto"><h3>El texto dice</h3>
+        ${refs.length ? `<p class="meta">El nombre aparece en:</p><ul class="refs">${refs.map(r => `<li>${refHTML(r)}</li>`).join('')}</ul>` : '<p class="meta">Sin versículos registrados.</p>'}</section>
+      <section class="bloque bloque-moderno"><h3>Identificación moderna</h3>
+        ${c === 'desconocida' ? `<p class="desconocida">${icoConf('desconocida')} Ubicación desconocida.</p><p class="meta">No se dibuja en el mapa.</p>`
+          : `<p class="ident">${icoConf(c)} <strong>${esc(u.identificacion || 'Sin nombre moderno')}</strong></p>
+             <p><strong>${CONF_TXT[c]}</strong>: ${CONF_DESC[c]}</p>
+             ${u.puntuacion_openbible !== undefined && u.puntuacion_openbible !== null ? `<p class="meta">Puntuación de OpenBible: ${esc(u.puntuacion_openbible)}</p>` : ''}
+             <p class="meta">${(+u.lat).toFixed(2)}° N, ${(+u.lon).toFixed(2)}° E</p>
+             ${mapaHTML([id], { mini: true, sel: id })}`}
+        ${alts.length ? `<h4>Otras identificaciones propuestas</h4><ul class="alternativas">${alts.map(a => `<li>${esc(a.identificacion)}${a.puntuacion_openbible !== undefined && a.puntuacion_openbible !== null ? ` <span class="meta">(puntuación ${esc(a.puntuacion_openbible)})</span>` : ''}</li>`).join('')}</ul>` : ''}
+        <p class="meta">Fuente: ${l.url_fuente ? `<a href="${esc(l.url_fuente)}" target="_blank" rel="noopener">${esc(fuente)}</a>` : esc(fuente)}</p>
+        ${c !== 'desconocida' ? `<p><a class="boton secundario" href="#mapa/${encodeURIComponent(id)}">Ver en el mapa</a></p>` : ''}</section>
+      ${l.nota ? `<h3>Nota</h3><p class="nota">${esc(l.nota)}</p>` : ''}`;
+    mostrar(fichaDlg);
+    fichaDlg.querySelector('.dialogo-cuerpo').scrollTop = 0;
+    montarMapas(fichaDlg);
+  }
+
+  function vistaMapa(args) {
+    const todos = D.lugares || [];
+    if (args && args[0]) estado.mapaSel = args[0];
+    const caps = D.capitulos || [], ps = N.pasajes(D);
+    const f = estado.mapaFiltro;
+    let ids = todos.map(l => l.id);
+    if (f.startsWith('cap-')) { const cap = +f.slice(4), c = caps.find(x => x.cap === cap); ids = c ? N.lugaresDeRefs(D, (c.versiculos || []).map(v => `Gn ${cap}:${v.n}`)) : []; }
+    else if (f.startsWith('p-')) ids = N.lugaresDePasaje(D, ps.find(p => p.id === f.slice(2)));
+    const ubic = ids.filter(id => { const c = N.confianzaLugar(N.lugar(D, id)); return c !== 'desconocida' && estado.mapaConf.has(c); });
+    const desc = ids.filter(id => N.confianzaLugar(N.lugar(D, id)) === 'desconocida');
+    const opt = (v, t) => `<option value="${esc(v)}"${f === v ? ' selected' : ''}>${esc(t)}</option>`;
+    return `<h1 tabindex="-1">Mapa de los lugares</h1>
+      <p class="sub">El nombre de cada lugar es texto bíblico; su ubicación es una identificación moderna con un grado de confianza. Lo que no se puede ubicar no se dibuja.</p>
+      <div class="herr mapa-filtros">
+        <div class="campo"><label for="f-ambito">Pasaje o capítulo</label><select id="f-ambito">${opt('', 'Todo Génesis 1–11')}
+          <optgroup label="Capítulos">${caps.map(c => opt('cap-' + c.cap, `${c.libro || 'Génesis'} ${c.cap}`)).join('')}</optgroup>
+          ${(D.pasajes || []).length ? `<optgroup label="Pasajes">${ps.map(p => opt('p-' + p.id, p.titulo)).join('')}</optgroup>` : ''}</select></div>
+        <div class="campo"><label for="buscar-lugar">Buscar lugar</label><input id="buscar-lugar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.mapaQ)}"></div>
+        <fieldset class="conf-filtro"><legend>Confianza</legend>${['alta', 'media', 'baja'].map(c => `<label><input type="checkbox" data-conf="${c}" ${estado.mapaConf.has(c) ? 'checked' : ''}><span>${icoConf(c)}${c[0].toUpperCase() + c.slice(1)}</span></label>`).join('')}</fieldset>
+      </div>
+      <ul class="resultados" id="res-lugar" aria-live="polite">${resultadosLugar()}</ul>
+      ${todos.length ? mapaHTML(ubic, { sel: ubic.includes(estado.mapaSel) ? estado.mapaSel : null }) : '<p class="vacio-txt">Los datos todavía no traen lugares. Cuando se publiquen, aparecerán aquí.</p>'}
+      ${todos.length ? `<h2>En el mapa (${ubic.length})</h2>${ubic.length ? `<ul class="chips">${ubic.map(id => `<li>${btnLugar(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Ningún lugar ubicado con este filtro.</p>'}
+      <h2>Sin ubicación conocida (${desc.length})</h2>${desc.length ? `<ul class="lugares-lista">${desc.map(id => { const l = N.lugar(D, id); return `<li>${btnLugar(id)}<span class="contexto">Ubicación desconocida${l.nota ? ': ' + esc(l.nota) : ''}</span></li>`; }).join('')}</ul>` : '<p class="vacio-txt">Todos los lugares de este filtro tienen ubicación.</p>'}` : ''}`;
+  }
+  function resultadosLugar() {
+    const q = N.norm(estado.mapaQ);
+    if (!q) return '';
+    const r = (D.lugares || []).filter(l => N.norm(l.nombre).includes(q) || N.norm(l.nombre_rv1909).includes(q)).slice(0, 20);
+    return r.length ? r.map(l => `<li>${btnLugar(l.id)}</li>`).join('') : '<li class="meta">Sin resultados.</li>';
+  }
+
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
-  const VISTAS = { leer: vistaLeer, arbol: vistaArbol, edades: vistaEdades, fuentes: vistaFuentes };
+  const VISTAS = { leer: vistaLeer, arbol: vistaArbol, edades: vistaEdades, mapa: vistaMapa, fuentes: vistaFuentes };
   let primera = true;
   function render(foco) {
     if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/genesis.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
     const { vista, args } = ruta();
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
+    montarMapas(main);
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
     const marcado = main.querySelector('.vers.activo, .fila.foco');
@@ -721,6 +996,7 @@ if (typeof document !== 'undefined') (function () {
     const t = e.target;
     if (t instanceof HTMLDialogElement && t.open) { cerrar(t); return; }
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
+    const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
     const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
     const ca = t.closest('[data-calc]'); if (ca) { const [trad, id] = ca.dataset.calc.split('|'); detalleCalc(trad, id); return; }
@@ -736,9 +1012,12 @@ if (typeof document !== 'undefined') (function () {
   });
   document.addEventListener('change', e => {
     const t = e.target;
-    if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
+    if (t.id === 'f-ambito') { estado.mapaFiltro = t.value; rerender('#f-ambito'); }
+    else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
+    else if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
   });
   document.addEventListener('input', e => {
+    if (e.target.id === 'buscar-lugar') { estado.mapaQ = e.target.value; const r = $('#res-lugar'); if (r) r.innerHTML = resultadosLugar(); }
     if (e.target.id === 'buscar') { estado.q = e.target.value; const r = $('#resultados'); if (r) r.innerHTML = resultadosHTML(); }
   });
 
@@ -763,7 +1042,7 @@ if (typeof document !== 'undefined') (function () {
   if (!D && /[?&]ejemplo/.test(location.search)) {
     const s = document.createElement('script');
     s.src = 'pruebas/datos-ejemplo.js';
-    s.onload = () => { D = window.BIBLIA_DATOS || null; iniciar(); };
+    s.onload = () => { D = window.BIBLIA_DATOS || null; MAPA = window.BIBLIA_MAPA || null; iniciar(); };
     s.onerror = iniciar;
     document.head.appendChild(s);
   } else iniciar();

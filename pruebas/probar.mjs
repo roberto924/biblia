@@ -85,7 +85,63 @@ prueba('contenido del acompañante para un ref', () => {
   assert.deepEqual(j(N.acompanante(D, ['Gn 4:17']).sinNombre), ['CainWife_1']);
   assert.equal(N.tieneApoyo(D, 'Gn 4:1'), true);
   assert.equal(N.tieneApoyo(D, 'Gn 5:1'), false);
-  assert.deepEqual(j(N.acompanante({}, ['Gn 1:1'])), { personas: [], vinculos: [], edades: [], sinNombre: [] });
+  assert.deepEqual(j(N.acompanante({}, ['Gn 1:1'])), { personas: [], vinculos: [], edades: [], sinNombre: [], lugares: [] });
+});
+console.log('Lugares y mapa');
+prueba('proyección ida y vuelta', () => {
+  const P = N.proyeccion(ctx.BIBLIA_MAPA.bbox);
+  assert.equal(P.latMedia, 32.5);
+  for (const [lon, lat] of [[46.1, 30.96], [30, 24], [52, 41]]) {
+    const [x, y] = N.proyectar(P, lon, lat), [lo, la] = N.desproyectar(P, x, y);
+    assert.ok(Math.abs(lo - lon) < 1e-9 && Math.abs(la - lat) < 1e-9);
+  }
+  const [xa] = N.proyectar(P, 40, 30), [xb] = N.proyectar(P, 41, 30);
+  assert.ok(Math.abs((xb - xa) - Math.cos(32.5 * Math.PI / 180)) < 1e-9, 'un grado de longitud se acorta por cos(lat media)');
+  assert.equal(N.proyeccion(null).bbox.length, 4);
+});
+prueba('encuadre de un conjunto de puntos', () => {
+  const P = N.proyeccion([30, 24, 52, 41]);
+  const pts = [[46.1, 30.96], [39.03, 36.86]];
+  const r = N.encuadre(P, pts, { margen: 0.1, minimo: 0 });
+  pts.forEach(([lon, lat]) => { const [x, y] = N.proyectar(P, lon, lat); assert.ok(x > r.x && x < r.x + r.w && y > r.y && y < r.y + r.h); });
+  assert.ok(Math.abs(r.h - (36.86 - 30.96) * 1.2) < 1e-9);
+  const uno = N.encuadre(P, [[44, 33]], { margen: 0, minimo: 3 });
+  assert.equal(uno.h, 3); assert.ok(Math.abs(uno.y + uno.h / 2 + 33) < 1e-9);
+  const vacio = N.encuadre(P, [], { margen: 0 });
+  assert.ok(Math.abs(vacio.h - 17) < 1e-9, 'sin puntos encuadra el bbox');
+});
+prueba('lugares de un ref y de un pasaje; confianza', () => {
+  assert.deepEqual(j(N.lugaresDeRefs(D, ['Gn 4:16'])).sort(), ['eden', 'nod']);
+  assert.deepEqual(j(N.lugaresDePasaje(D, N.pasajeDe(D, 'Gn 11:31'))).sort(), ['canaan', 'haran', 'ur']);
+  assert.deepEqual(j(N.lugaresDePasaje(D, N.pasajeDe(D, 'Gn 5:1'))), []);
+  assert.equal(N.confianzaLugar(N.lugar(D, 'ur')), 'alta');
+  assert.equal(N.confianzaLugar(N.lugar(D, 'eden')), 'desconocida');
+  assert.equal(N.confianzaLugar(N.lugar(D, 'roto')), 'desconocida');
+  assert.equal(N.tieneApoyo(D, 'Gn 8:4'), true);
+});
+prueba('segmentación con personas y lugares mezclados sin solape', () => {
+  const t = 'Y salió Caín de delante de Jehová, y habitó en tierra de Nod, al oriente de Edén.';
+  const s = j(N.segmentar(D, 'Gn 4:16', t));
+  assert.equal(s.map(x => x.texto).join(''), t);
+  assert.deepEqual(s.filter(x => x.persona || x.lugar).map(x => x.persona ? 'p:' + x.texto : 'l:' + x.texto), ['p:Caín', 'l:Nod', 'l:Edén']);
+  const t2 = 'Y salieron con ellos de Ur de los Caldeos, para ir á la tierra de Canaán: y vinieron hasta Harán.';
+  const s2 = j(N.segmentar(D, 'Gn 11:31', t2));
+  assert.equal(s2.map(x => x.texto).join(''), t2);
+  assert.deepEqual(s2.filter(x => x.lugar).map(x => x.lugar), ['ur', 'canaan', 'haran']);
+  // menciones solapadas: gana la que empieza antes (o la más larga)
+  const Dx = { personas: [{ id: 'A', nombre: 'Ur' }], lugares: [{ id: 'u', nombre: 'Ur de los Caldeos' }],
+    menciones: [{ ref: 'Gn 1:1', persona: 'A', inicio: 0, fin: 2 }], menciones_lugar: [{ ref: 'Gn 1:1', lugar: 'u', inicio: 0, fin: 17 }] };
+  assert.deepEqual(j(N.segmentar(Dx, 'Gn 1:1', 'Ur de los Caldeos y más')), [{ texto: 'Ur de los Caldeos', lugar: 'u' }, { texto: ' y más' }]);
+});
+prueba('etiquetas del mapa sin solaparse', () => {
+  const items = [{ id: 'a', x: 100, y: 100, texto: 'Babel', prioridad: 3 }, { id: 'b', x: 104, y: 102, texto: 'Borsippa', prioridad: 1 }, { id: 'c', x: 300, y: 50, texto: 'Harán', prioridad: 2 }, { id: 'd', x: 5, y: 5, texto: 'Muy al borde' }];
+  const e = j(N.colocarEtiquetas(items, 400, 300));
+  for (let i = 0; i < e.length; i++) for (let k = i + 1; k < e.length; k++) {
+    const a = e[i].caja, b = e[k].caja;
+    assert.ok(!(a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.h && b.y < a.y + a.h), `${e[i].id} y ${e[k].id} se solapan`);
+  }
+  e.forEach(x => assert.ok(x.caja.x >= 0 && x.caja.x + x.caja.w <= 400));
+  assert.ok(e.some(x => x.id === 'a') && e.some(x => x.id === 'c'));
 });
 prueba('primeras apariciones por pasaje', () => {
   const p1 = j(N.primerasApariciones(D, N.pasajeDe(D, 'Gn 4:1')));
@@ -196,6 +252,8 @@ if (existsSync(real)) {
       if (s.some(x => x.persona)) conPersona++;
       N2.acompanante(D2, [v.ref]);
     }));
+    const lu = D2.lugares || [];
+    console.log(`     lugares ${lu.length} (sin ubicación ${lu.filter(l => N2.confianzaLugar(l) === 'desconocida').length}), menciones de lugar ${(D2.menciones_lugar || []).length}`);
     console.log(`     pasajes ${ps.length} (${(D2.pasajes || []).length ? 'de los datos' : 'por capítulo'}), versículos ${vs}, con nombres resaltados ${conPersona}, menciones ${(D2.menciones || []).length}`);
     assert.ok(vs > 0);
   });

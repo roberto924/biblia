@@ -65,26 +65,52 @@
     { libro: 'Génesis', cap: 4, versiculos: [
       { n: 1, texto: 'Y conoció Adam a su mujer Eva, la cual concibió y parió a Caín.' },
       { n: 2, texto: 'Y después parió a su hermano Abel.' },
+      { n: 16, texto: 'Y salió Caín de delante de Jehová, y habitó en tierra de Nod, al oriente de Edén.' },
       { n: 17, texto: 'Y conoció Caín a su mujer, la cual concibió y parió a Enoc.' },
       { n: 19, texto: 'Y tomó para sí Lamech dos mujeres; el nombre de la una fue Ada, y el nombre de la otra Zila.' },
       { n: 20, texto: 'Y Ada parió a Jabal.' },
       { n: 22, texto: 'Y Zila también parió a Tubal-caín; y la hermana de Tubal-caín fue Naama.' }] },
     { libro: 'Génesis', cap: 5, versiculos: [{ n: 1, texto: 'Este es el libro de las generaciones de Adam (texto de ejemplo).' }, { n: 3, texto: 'Y vivió Adam ciento y treinta años, y engendró un hijo… (ejemplo)' }] },
     { libro: 'Génesis', cap: 7, versiculos: [{ n: 6, texto: 'Y era Noé de seiscientos años cuando el diluvio de las aguas fue sobre la tierra.' }] },
-    { libro: 'Génesis', cap: 11, versiculos: [{ n: 10, texto: 'Estas son las generaciones de Sem (texto de ejemplo).' }, { n: 12, texto: 'Y Arphaxad vivió treinta y cinco años… (ejemplo)' }] }
+    { libro: 'Génesis', cap: 11, versiculos: [{ n: 10, texto: 'Estas son las generaciones de Sem (texto de ejemplo).' }, { n: 12, texto: 'Y Arphaxad vivió treinta y cinco años… (ejemplo)' },
+      { n: 31, texto: 'Y salieron con ellos de Ur de los Caldeos, para ir á la tierra de Canaán: y vinieron hasta Harán.' }] },
+    { libro: 'Génesis', cap: 8, versiculos: [{ n: 4, texto: 'Y reposó el arca sobre los montes de Ararat.' }] }
   ];
+  capitulos.sort((a, b) => a.cap - b.cap);
   const textoDe = ref => { const [c, v] = ref.slice(3).split(':').map(Number); return capitulos.find(x => x.cap === c).versiculos.find(x => x.n === v).texto; };
   const M = (ref, persona, palabra) => { const i = textoDe(ref).indexOf(palabra); return { ref, persona, inicio: i, fin: i + palabra.length }; };
   const menciones = [
     M('Gn 4:1', 'Adam_1', 'Adam'), M('Gn 4:1', 'Eve_1', 'Eva'), M('Gn 4:1', 'Cain_1', 'Caín'),
     M('Gn 4:17', 'Cain_1', 'Caín'), M('Gn 4:17', 'Enoch_1', 'Enoc'),
     M('Gn 4:19', 'Lamech_1', 'Lamech'), M('Gn 4:19', 'Adah_1', 'Ada'), M('Gn 4:19', 'Zillah_1', 'Zila'),
-    { ref: 'Gn 4:20', persona: 'Jabal_1', inicio: 50, fin: 60 } // fuera de rango: se ignora
+    { ref: 'Gn 4:20', persona: 'Jabal_1', inicio: 50, fin: 60 }, // fuera de rango: se ignora
+    M('Gn 4:16', 'Cain_1', 'Caín')
   ];
+  const ML = (ref, lugar, palabra) => { const i = textoDe(ref).indexOf(palabra); return { ref, lugar, inicio: i, fin: i + palabra.length }; };
+  const menciones_lugar = [ML('Gn 4:16', 'nod', 'Nod'), ML('Gn 11:31', 'ur', 'Ur de los Caldeos'), ML('Gn 11:31', 'haran', 'Harán')]; // Edén y Canaán: por nombre
+  const L = (id, nombre, tipo, refs, ubicacion, extra) => Object.assign({ id, nombre, nombre_rv1909: nombre, tipo, refs, ubicacion, alternativas: [], fuente: 'openbible', url_fuente: 'https://www.openbible.info/geo/', nota: '' }, extra || {});
+  const lugares = [
+    L('eden', 'Edén', 'region', ['Gn 2:8', 'Gn 4:16'], null, { nota: 'Sin identificación geográfica fiable.' }),
+    L('nod', 'Nod', 'region', ['Gn 4:16'], null),
+    L('ararat', 'Ararat', 'monte', ['Gn 8:4'], { lat: 39.70, lon: 44.30, identificacion: 'Región de Urartu (Armenia, Turquía, Irán)', confianza: 'baja', puntuacion_openbible: 120 }),
+    L('ur', 'Ur de los Caldeos', 'ciudad', ['Gn 11:28', 'Gn 11:31'], { lat: 30.96, lon: 46.10, identificacion: 'Tell el-Muqayyar (Irak)', confianza: 'alta', puntuacion_openbible: 900 },
+      { alternativas: [{ identificacion: 'Urfa (Turquía)', lat: 37.16, lon: 38.79, puntuacion_openbible: 80 }] }),
+    L('haran', 'Harán', 'ciudad', ['Gn 11:31'], { lat: 36.86, lon: 39.03, identificacion: 'Harran (Turquía)', confianza: 'alta', puntuacion_openbible: 950 }),
+    L('canaan', 'Canaán', 'region', ['Gn 11:31'], { lat: 31.9, lon: 35.2, identificacion: 'Levante meridional', confianza: 'media', puntuacion_openbible: 500 }),
+    L('roto', 'Lugar sin coordenadas válidas', 'otro', [], { lat: 'x', lon: null, identificacion: '?', confianza: 'alta' })
+  ];
+  g.BIBLIA_MAPA = {
+    bbox: [30, 24, 52, 41],
+    costas: [[[30, 41], [52, 41], [52, 30], [50, 29.6], [48.6, 30.1], [48, 29], [50, 26.5], [52, 25.5], [52, 24], [38.5, 24], [35, 28], [34.6, 31.6], [35.8, 34.2], [36, 36.6], [33, 36.2], [30, 36.6], [30, 41]]],
+    rios: [{ nombre: 'Éufrates', puntos: [[38.5, 38.6], [38.3, 36.6], [40.4, 35.1], [43, 33.6], [44.4, 32.1], [46.4, 31.1], [47.8, 30.6]] },
+      { nombre: 'Tigris', puntos: [[40.4, 38.1], [42.5, 37.1], [43.2, 36.3], [44.4, 33.3], [45.8, 32.4], [47.4, 31]] }],
+    lagos: [[[42.4, 38.6], [43.3, 38.95], [43.6, 38.5], [42.9, 38.3]]],
+    fuente: 'Natural Earth (ejemplo simplificado)', url: 'https://www.naturalearthdata.com/'
+  };
   const pasajes = [
     { id: 'ej-01', inicio: 'Gn 4:1', fin: 'Gn 4:22', titulo: 'Caín, Abel y la familia de Lamec', titulo_origen: 'editorial', resumen: 'Resumen de ejemplo.' },
     { id: 'ej-02', inicio: 'Gn 5:1', fin: 'Gn 7:6', titulo: 'De Adán a Noé', titulo_origen: 'editorial', resumen: '' },
-    { id: 'ej-03', inicio: 'Gn 11:10', fin: 'Gn 11:12', titulo: 'Descendientes de Sem', titulo_origen: 'editorial', resumen: '' }
+    { id: 'ej-03', inicio: 'Gn 11:10', fin: 'Gn 11:31', titulo: 'Descendientes de Sem', titulo_origen: 'editorial', resumen: '' }
   ];
 
   g.BIBLIA_DATOS = {
@@ -93,6 +119,6 @@
       { id: 'rv1909', nombre: 'Reina-Valera 1909', licencia: 'Dominio público', url: 'https://example.org/rv1909' },
       { id: 'brenton', nombre: 'Brenton LXX (1851)', licencia: 'Dominio público', url: 'https://example.org/brenton' }
     ],
-    capitulos, pasajes, menciones, personas, relaciones, edades
+    capitulos, pasajes, menciones, menciones_lugar, lugares, personas, relaciones, edades
   };
 })(typeof window !== 'undefined' ? window : globalThis);

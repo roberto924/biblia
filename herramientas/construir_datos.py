@@ -22,6 +22,9 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # para importar lugares_mapa con python -I
+import lugares_mapa as lm  # noqa: E402
+
 RAIZ = Path(__file__).resolve().parent.parent
 CACHE = RAIZ / "herramientas" / "cache"
 SALIDA = RAIZ / "datos" / "genesis.js"
@@ -645,9 +648,34 @@ def main():
             errores.append(f"Menciones solapadas en {x['ref']}")
         ultimo[x["ref"]] = x["fin"]
 
+    # ------------------------------------------------------------ lugares y mapa
+    rutas = {}
+    for k, (url, nombre) in lm.ARCHIVOS.items():
+        ARCHIVOS[k] = (url, nombre)
+        rutas[k] = obtener(k, sin_red)
+    lugares, menciones_lugar, amb_lugar, desc_lugar, lineas_ob = lm.construir_lugares(
+        rv, menciones, rutas, errores, avisos)
+    mapa = lm.construir_mapa(lugares, rutas)
+    x0, y0, x1, y1 = mapa["bbox"]
+    for l in lugares:
+        u = l["ubicacion"]
+        if u and not (x0 <= u["lon"] <= x1 and y0 <= u["lat"] <= y1):
+            errores.append(f"Lugar fuera del bbox: {l['id']}")
+    nombres_rios = {r["nombre"] for r in mapa["rios"]}
+    for rio in ("Tigris", "Éufrates", "Nilo"):
+        if rio not in nombres_rios:
+            errores.append(f"Falta el río {rio} en el mapa")
+    MAPA = SALIDA.parent / "mapa-base.js"
+    MAPA.write_text("window.BIBLIA_MAPA = " + json.dumps(mapa, ensure_ascii=False, separators=(",", ":")) + ";\n",
+                    encoding="utf-8")
+    tam_mapa = MAPA.stat().st_size
+    if tam_mapa >= 250_000:
+        errores.append(f"mapa-base.js ocupa {tam_mapa} bytes (objetivo < 250 KB)")
+
     datos = {"generado": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-             "fuentes": FUENTES, "capitulos": capitulos, "personas": personas,
-             "relaciones": relaciones, "edades": edades, "pasajes": pasajes, "menciones": menciones}
+             "fuentes": FUENTES + lm.FUENTES, "capitulos": capitulos, "personas": personas,
+             "relaciones": relaciones, "edades": edades, "pasajes": pasajes, "menciones": menciones,
+             "lugares": lugares, "menciones_lugar": menciones_lugar}
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text("window.BIBLIA_DATOS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n",
                       encoding="utf-8")
@@ -672,6 +700,22 @@ def main():
     for a in ambiguos:
         print("  - " + a)
     print(f"Nombre presente pero persona no situada en ese versículo (no se marca): {dict(no_situados)}")
+    conf = Counter(l["ubicacion"]["confianza"] for l in lugares if l["ubicacion"])
+    print(f"Lugares: {len(lugares)}; ubicados {sum(conf.values())} (alta {conf['alta']}, media {conf['media']}, "
+          f"baja {conf['baja']}); sin ubicación {sum(1 for l in lugares if not l['ubicacion'])}: "
+          f"{[l['nombre'] for l in lugares if not l['ubicacion']]}")
+    print(f"Menciones de lugar: {len(menciones_lugar)} en {len({m['ref'] for m in menciones_lugar})} versículos")
+    print(f"Nombres de lugar sin asignar ({len(amb_lugar)}):")
+    for a in amb_lugar:
+        print("  - " + a)
+    print(f"Versículos de OpenBible descartados por no traer el nombre en RV1909 ({len(desc_lugar)}):")
+    for a in desc_lugar:
+        print("  - " + a)
+    print("Contraste con el JSON original de OpenBible:")
+    for a in lineas_ob:
+        print("  - " + a)
+    print(f"Mapa base: bbox {mapa['bbox']}, {len(mapa['costas'])} anillos de costa, {len(mapa['rios'])} tramos de río "
+          f"({sorted(nombres_rios)}), {len(mapa['lagos'])} lagos; {tam_mapa / 1024:.1f} KB")
     print(f"Mujeres con nombre: {sum(1 for p in personas if p['sexo'] == 'f' and not p['sin_nombre'])}; "
           f"mujeres sin nombre: {sum(1 for p in personas if p['sexo'] == 'f' and p['sin_nombre'])}; "
           f"grupos «otros hijos e hijas»: {sum(1 for p in personas if p['id'].startswith('Otros_hijos_'))}")
