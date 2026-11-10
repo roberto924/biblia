@@ -44,9 +44,88 @@ prueba('madre por hijo (Lamec: Ada y Zila)', () => {
 });
 prueba('ninguna mujer queda fuera del árbol renderizable', () => {
   const s = N.alcanzables(D);
-  const fuera = D.personas.filter(p => p.sexo === 'f' && !s.has(p.id)).map(p => p.id);
+  const fuera = D.personas.filter(p => p.sexo === 'f' && !s.has(p.id) && !N.sinParentesco(D).includes(p.id)).map(p => p.id);
   assert.deepEqual(j(fuera), []);
-  assert.deepEqual(j(N.contarMujeres(D)), { conNombre: 4, sinNombre: 2 });
+  assert.deepEqual(j(N.contarMujeres(D)), { conNombre: 10, sinNombre: 2 });
+  assert.deepEqual(j(D.personas.filter(p => p.sexo === 'f' && !N.enPantallaArbol(D, p.id)).map(p => p.id)), []);
+});
+prueba('personas sin parentesco: sección propia en orden de aparición, con rol', () => {
+  assert.deepEqual(j(N.sinParentesco(D)), ['Melchizedek_1', 'Deborah_1']);
+  assert.equal(N.persona(D, 'Melchizedek_1').rol, 'rey de Salem');
+  assert.equal(N.rutaArbol(D, 'Deborah_1'), null); assert.equal(N.enPantallaArbol(D, 'Deborah_1'), true);
+  assert.equal(N.buscar(D, 'melqui')[0].id, 'Melchizedek_1');
+  assert.ok(!N.sinParentesco(D).includes('Adam_1'));
+});
+console.log('Escala Génesis 1–50');
+prueba('plan agrupado por sección con progreso (y sin secciones, un grupo)', () => {
+  const s = j(N.seccionesPlan(D, ['ej-01'], 'ej-02'));
+  assert.deepEqual(s.map(g => [g.titulo, g.total, g.leidos]), [['Los orígenes (Gn 4–7)', 2, 1], ['De Sem a Abram (Gn 11)', 1, 0], ['Abraham, Isaac y Jacob (Gn 12–30)', 2, 0]]);
+  assert.equal(s[0].siguiente, true); assert.equal(s[0].estado, 'en-curso'); assert.equal(s[2].estado, 'pendiente');
+  assert.deepEqual(s[2].pasajes.map(x => x.n), [4, 5], 'numeración global; ej-05 hereda la sección');
+  assert.equal(s[0].inicio, 'Gn 4:1'); assert.equal(s[0].fin, 'Gn 7:6');
+  assert.equal(new Set(s.map(g => g.id)).size, 3);
+  assert.equal(N.seccionesPlan(D, ['ej-03'], null)[1].estado, 'leido');
+  const sin = j(N.seccionesPlan({ capitulos: [{ cap: 1, versiculos: [{ n: 1, texto: 'x' }] }] }, [], null));
+  assert.equal(sin.length, 1); assert.equal(sin[0].titulo, null);
+});
+prueba('alcance calculado de los datos', () => {
+  assert.equal(N.alcance(D).texto, 'Génesis 4–30'); assert.equal(N.alcance(D).corto, 'Gn 4–30');
+  assert.equal(N.alcance({}).texto, 'Génesis');
+  assert.equal(N.alcance({ capitulos: [{ libro: 'Génesis', cap: 3 }] }).texto, 'Génesis 3');
+});
+prueba('hijos agrupados por madre con la nota del vínculo (Jacob, Lamec)', () => {
+  const g = j(N.hijosPorMadre(D, N.nodoArbol(D, 'Jacob_1')));
+  assert.deepEqual(g.map(x => [x.madre, x.hijos.map(h => h.id)]), [['Leah_1', ['Reuben_1', 'Dinah_1']], ['Bilhah_1', ['Dan_1']], ['Zilpah_1', ['Gad_1']], ['Rachel_1', ['Joseph_1']]]);
+  assert.equal(g[1].vinculo.nota, 'sierva'); assert.equal(g[2].vinculo.nota, 'concubina'); assert.equal(g[0].vinculo.otro, 'Leah_1');
+  const l = j(N.hijosPorMadre(D, N.nodoArbol(D, 'Lamech_1')));
+  assert.deepEqual(l.map(x => [x.madre, x.hijos.map(h => h.id)]), [['Adah_1', ['Jabal_1']], ['Zillah_1', ['TubalCain_1']], [null, ['Naamah_1']]]);
+  const n = j(N.hijosPorMadre(D, N.nodoArbol(D, 'Noah_1')));
+  assert.equal(n.length, 1); assert.equal(n[0].madre, null);
+  assert.ok(!N.nodoArbol(D, 'Leah_1'), 'Lea no es raíz ni nodo: sus hijos cuelgan de Jacob');
+});
+prueba('edades en_evento por ref y por persona; no entran en la tabla', () => {
+  const e = j(N.edadesEnEvento(D, ['Gn 12:4']));
+  assert.equal(e.length, 1);
+  assert.deepEqual([e[0].persona, e[0].evento, e[0].TM.valor, e[0].LXX.valor, e[0].difiere], ['Abraham_1', 'al salir de Harán', 75, 75, false]);
+  assert.equal(j(N.acompanante(D, ['Gn 12:4'])).eventos.length, 1);
+  assert.equal(j(N.acompanante(D, ['Gn 12:4'])).edades.length, 0);
+  assert.equal(N.tieneApoyo(D, 'Gn 12:4'), true);
+  const pp = j(N.edadesEnEventoPorPersona(D));
+  assert.deepEqual(pp.map(x => [x.persona, x.items.map(i => i.ref)]), [['Abraham_1', ['Gn 12:4', 'Gn 21:5']], ['Isaac_1', ['Gn 25:26']]]);
+  assert.equal(pp[0].items[1].solo, 'TM');
+  assert.ok(!j(N.ordenPatriarcas(D)).includes('Isaac_1'));
+  const Dx = { edades: [{ persona: 'A', tipo: 'en_evento', evento: 'x', tradicion: 'TM', valor: 75, ref: 'Gn 12:4' }, { persona: 'A', tipo: 'en_evento', evento: 'x', tradicion: 'LXX', valor: 80, ref: 'Gn 12:5' }] };
+  assert.equal(N.edadesEnEvento(Dx)[0].difiere, true);
+  assert.equal(N.edadesEnEvento(Dx)[0].ref, 'Gn 12:4');
+});
+prueba('árbol plegado al inicio y ruta para llegar a una persona', () => {
+  const ini = N.arbolInicial(D, 2);
+  assert.ok(ini.has('Adam_1') && ini.has('Seth_1') && ini.has('Cain_1'));
+  assert.ok(!ini.has('Enosh_1') && !ini.has('Jacob_1'));
+  const r = j(N.rutaArbol(D, 'Joseph_1'));
+  assert.equal(r.ruta[0], 'Adam_1'); assert.deepEqual(r.ruta.slice(-4), ['Abraham_1', 'Isaac_1', 'Jacob_1', 'Joseph_1']); assert.equal(r.como, 'nodo');
+  assert.deepEqual(j(N.rutaArbol(D, 'Bilhah_1')), Object.assign(j(N.rutaArbol(D, 'Jacob_1')), { id: 'Bilhah_1', como: 'conyuge' }));
+  assert.equal(N.rutaArbol(D, 'Nadie'), null);
+  const at = j(N.atajosLinea(D));
+  assert.deepEqual(at.map(a => a.id), ['adan-abraham', 'abraham-jacob']);
+  assert.deepEqual(at[1].ruta, ['Abraham_1', 'Isaac_1', 'Jacob_1']); assert.ok(at[1].extra.includes('Joseph_1'));
+  assert.ok(N.lineaPrincipal(D).has('Jacob_1') && N.lineaPrincipal(D).has('Adam_1'));
+  assert.deepEqual(j(N.atajosLinea({ personas: [{ id: 'X', nombre: 'X' }] })), []);
+});
+prueba('vidas: quien no tiene la cadena completa se omite y se cuenta', () => {
+  assert.deepEqual(j(N.vidas(D, 'TM').omitidas), []);
+  const Dx = Object.assign({}, D, { edades: D.edades.concat([{ persona: 'Jacob_1', tipo: 'total', tradicion: 'TM', valor: 147, ref: 'Gn 47:28' }]) });
+  const v = j(N.vidas(Dx, 'TM'));
+  assert.deepEqual(v.omitidas, ['Jacob_1']); assert.ok(!v.filas.some(f => f.id === 'Jacob_1'));
+});
+prueba('etiquetas por prioridad según zoom; nombres alternativos', () => {
+  const items = [{ id: 'a', x: 100, y: 100, texto: 'Babel', prioridad: 3 }, { id: 'c', x: 300, y: 50, texto: 'Harán', prioridad: 9 }];
+  assert.deepEqual(j(N.colocarEtiquetas(items, 400, 300, 1)).map(e => e.id), ['c']);
+  assert.equal(N.etiquetasPorZoom(1, 100), 12); assert.equal(N.etiquetasPorZoom(2, 100), 48); assert.equal(N.etiquetasPorZoom(1, 5), 5);
+  assert.ok(N.prioridadLugar(N.lugar(D, 'ur')) > N.prioridadLugar(N.lugar(D, 'haran')));
+  const Dx = { personas: [{ id: 'Abraham_1', nombre: 'Abram', otros_nombres: ['Abraham'], refs: ['Gn 17:5'] }] };
+  assert.equal(N.buscar(Dx, 'abraham')[0].id, 'Abraham_1');
+  assert.deepEqual(j(N.segmentar(Dx, 'Gn 17:5', 'Y será tu nombre Abraham.')).filter(x => x.persona).map(x => x.texto), ['Abraham']);
 });
 console.log('Lectura acompañada');
 prueba('pasaje de un ref (también cruzando capítulo) y respaldo por capítulos', () => {
@@ -85,7 +164,7 @@ prueba('contenido del acompañante para un ref', () => {
   assert.deepEqual(j(N.acompanante(D, ['Gn 4:17']).sinNombre), ['CainWife_1']);
   assert.equal(N.tieneApoyo(D, 'Gn 4:1'), true);
   assert.equal(N.tieneApoyo(D, 'Gn 5:1'), false);
-  assert.deepEqual(j(N.acompanante({}, ['Gn 1:1'])), { personas: [], vinculos: [], edades: [], sinNombre: [], lugares: [] });
+  assert.deepEqual(j(N.acompanante({}, ['Gn 1:1'])), { personas: [], vinculos: [], edades: [], eventos: [], sinNombre: [], lugares: [] });
 });
 console.log('Lugares y mapa');
 prueba('proyección ida y vuelta', () => {
@@ -239,8 +318,11 @@ if (existsSync(real)) {
   });
   prueba('ninguna mujer de los datos reales queda fuera del árbol', () => {
     const s = N2.alcanzables(D2), m = N2.contarMujeres(D2);
-    console.log(`     mujeres: ${m.conNombre} con nombre, ${m.sinNombre} sin nombre`);
-    assert.deepEqual(j((D2.personas || []).filter(p => p.sexo === 'f' && !s.has(p.id)).map(p => p.id)), []);
+    // En la pantalla Árbol: como nodo, cónyuge, madre o en la sección "sin parentesco registrado".
+    const sp = N2.sinParentesco(D2);
+    console.log(`     mujeres: ${m.conNombre} con nombre, ${m.sinNombre} sin nombre; personas sin parentesco ${sp.length} (con rol ${sp.filter(id => N2.persona(D2, id).rol).length})`);
+    assert.deepEqual(j((D2.personas || []).filter(p => p.sexo === 'f' && !s.has(p.id) && !sp.includes(p.id)).map(p => p.id)), []);
+    assert.deepEqual(j((D2.personas || []).filter(p => !N2.enPantallaArbol(D2, p.id)).map(p => p.id)), [], 'toda persona está en la pantalla Árbol');
   });
   prueba('lectura acompañada sobre los datos reales', () => {
     const ps = N2.pasajes(D2);
@@ -256,6 +338,29 @@ if (existsSync(real)) {
     console.log(`     lugares ${lu.length} (sin ubicación ${lu.filter(l => N2.confianzaLugar(l) === 'desconocida').length}), menciones de lugar ${(D2.menciones_lugar || []).length}`);
     console.log(`     pasajes ${ps.length} (${(D2.pasajes || []).length ? 'de los datos' : 'por capítulo'}), versículos ${vs}, con nombres resaltados ${conPersona}, menciones ${(D2.menciones || []).length}`);
     assert.ok(vs > 0);
+  });
+  prueba('escala: secciones, edades en_evento, atajos, árbol y tiempos', () => {
+    // Datos frescos: el índice se construye dentro de la medición.
+    const C3 = cargar(real, path.join(aqui, '..', 'app.js')), N3 = C3.BibliaNucleo, D3 = C3.BIBLIA_DATOS;
+    const t0 = performance.now();
+    N3.indice(D3); const tIdx = performance.now() - t0;
+    const t1 = performance.now();
+    const secs = N3.seccionesPlan(D3, [], null);
+    const ini = N3.arbolInicial(D3, 2), at = N3.atajosLinea(D3), ev = N3.edadesEnEvento(D3);
+    N3.ordenPatriarcas(D3); ['TM', 'LXX'].forEach(t => N3.vidas(D3, t));
+    const tTab = performance.now() - t1;
+    const t2 = performance.now();
+    N3.pasajes(D3).forEach(p => { const vs = N3.versiculosDe(D3, p); N3.acompanante(D3, vs.map(v => v.ref)); vs.forEach(v => N3.tieneApoyo(D3, v.ref)); });
+    const tPas = (performance.now() - t2) / Math.max(1, N3.pasajes(D3).length);
+    const M = N3.mapaArbol(D3);
+    const sinRuta = (D3.personas || []).filter(p => !N3.rutaArbol(D3, p.id)).length;
+    const jac = N3.idJacob(D3), gj = jac && N3.nodoArbol(D3, jac) ? N3.hijosPorMadre(D3, N3.nodoArbol(D3, jac)) : [];
+    console.log(`     secciones ${secs.length}${secs[0] && secs[0].titulo ? '' : ' (los pasajes aún no traen sección)'}, edades en_evento ${ev.length}, atajos ${at.map(a => a.id).join(', ') || 'ninguno'}`);
+    console.log(`     árbol: ${M.nodos.size} nodos, ${ini.size} desplegados al inicio, ${sinRuta} personas sin lugar en el árbol${jac ? `, hijos de Jacob en ${gj.length} grupo(s)` : ''}`);
+    console.log(`     tiempos: índice ${tIdx.toFixed(0)} ms, primeras pestañas ${tTab.toFixed(0)} ms, acompañante por pasaje ${tPas.toFixed(1)} ms`);
+    assert.ok(secs.length >= 1 && secs.reduce((s, g) => s + g.total, 0) === N3.pasajes(D3).length);
+    assert.ok(tIdx + tTab < 1500, 'abrir la app no debe bloquear');
+    assert.ok(tPas < 100, 'un pasaje con su acompañante se calcula en menos de 100 ms');
   });
 } else console.log('(datos/genesis.js aún no existe: se omiten las pruebas con datos reales)');
 

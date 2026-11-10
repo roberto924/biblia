@@ -1,4 +1,4 @@
-# Datos de Génesis 1–11 (`genesis.js`)
+# Datos de Génesis 1–50 (`genesis.js`)
 
 Generado por `herramientas/construir_datos.py`; no editar a mano. Define `window.BIBLIA_DATOS` (capítulos, personas, relaciones, edades, pasajes, menciones, lugares) y `mapa-base.js` define `window.BIBLIA_MAPA`.
 
@@ -20,6 +20,7 @@ Generado por `herramientas/construir_datos.py`; no editar a mano. Define `window
 - `primera_ref` = la primera referencia de esa persona (en sus relaciones o edades) cuyo versículo contiene su nombre; no siempre es la primera mención absoluta.
 
 **Limitaciones**
+- Gn 12–50: las formas RV1909 de personas y lugares se detectan por script (parecido con la etiqueta inglesa de BibleData/OpenBible en cada versículo; ajustes a mano en `herramientas/genesis_12_50.py`), igual que la grafía actual. `edades` añade `tipo: "en_evento"` con `evento`. `pasajes` lleva `seccion` (6 secciones editoriales). Las concubinas y siervas van como `conyuge`, con una nota sobre cómo las llama el texto. Jucam (Gn 36:27) solo está en la LXX.
 - Brenton traduce un texto griego concreto (básicamente el Códice Vaticano); otros manuscritos y ediciones de la LXX (p. ej. Rahlfs) dan cifras distintas en algunos casos (Matusalén, Lamec).
 - El Pentateuco Samaritano NO está incluido: no hay fuente abierta verificada para sus cifras y no se inventan.
 - BibleData trata como personas a pueblos de Gn 10 (Ludim, Jebuseo…); van marcados con una nota. Elisa en Gn 10:2 solo está en la LXX.

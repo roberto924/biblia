@@ -1,7 +1,7 @@
 ﻿{
   "name": "Biblia · Compañero de lectura",
   "short_name": "Biblia",
-  "description": "Lee Génesis 1–11 paso a paso, con las personas, vínculos y edades de cada versículo y su fuente.",
+  "description": "Lee el Génesis paso a paso, con las personas, vínculos, edades y lugares de cada versículo y su fuente.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",

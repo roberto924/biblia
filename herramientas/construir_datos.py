@@ -25,6 +25,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # para importar lugares_mapa con python -I
 import lugares_mapa as lm  # noqa: E402
 
+import nombres_auto as na  # noqa: E402
+import genesis_12_50 as g2  # noqa: E402
+
+MAXCAP = 50
 RAIZ = Path(__file__).resolve().parent.parent
 CACHE = RAIZ / "herramientas" / "cache"
 SALIDA = RAIZ / "datos" / "genesis.js"
@@ -75,7 +79,7 @@ NOMBRES = {
     "Ophir_1": "Ophir", "Havilah_2": "Havila", "Jobab_1": "Jobad", "Reu_1": "Reu", "Serug_1": "Serug",
     "Nahor_1": "Nachôr", "Terah_1": "Thare", "Abram_1": "Abram", "Nahor_2": "Nachôr",
     "Haran_1": "Harán", "Lot_1": "Lot", "Sarai_1": "Sarai", "Milcah_1": "Milca", "Iscah_1": "Isca",
-    "Cainan_1": "Cainán",
+    "Cainan_1": "Cainán", "Jucam_1": "Jucam",
 }
 # Grafía española actual de uso común (tipo RVR1960/NVI) para cada persona.
 MODERNO = {
@@ -112,6 +116,7 @@ SOLO_LXX = {
     "Cainan_1": ("Cainan", "Solo en la Septuaginta (Gn 11:12-13) y en Lucas 3:36; no está en el texto masorético."),
     "Elishah_2": ("Elisa", "Solo en la Septuaginta (Gn 10:2), según BibleData; no está en el texto masorético."),
 }
+SOLO_LXX["Jucam_1"] = ("Jucam", "Solo en la Septuaginta (Gn 36:27), según BibleData; no está en el texto masorético.")
 GENTILICIO = "El texto nombra un pueblo (gentilicio o plural); BibleData lo trata como antepasado epónimo."
 
 # Edades: persona -> {tradicion: [(tipo, ref, indice_de_cifra_en_el_versiculo), ...]}
@@ -222,7 +227,7 @@ def leer_vpl(ruta_zip):
     v = {}
     for linea in texto.splitlines():
         m = re.match(r"GEN (\d+):(\d+) (.*)", linea)
-        if m and int(m.group(1)) <= 11:
+        if m and int(m.group(1)) <= MAXCAP:
             v[(int(m.group(1)), int(m.group(2)))] = m.group(3).strip()
     return v
 
@@ -322,19 +327,55 @@ def main():
     per = {r["person_id"]: r for r in leer_csv(obtener("per", sin_red))}
     obtener("lab", sin_red)  # se guarda en caché como referencia (etiquetas/nombres alternativos)
 
+    def ref_gen(s):
+        m = re.match(r"GEN (\d+):(\d+)$", s.strip())
+        return (int(m.group(1)), int(m.group(2))) if m and int(m.group(1)) <= MAXCAP else None
+
+    # Formas RV1909 de cada persona: tabla fija (Gn 1–11), forzadas, o detectadas en sus versículos.
+    def cargar_pv():
+        filas = []
+        for r in leer_csv(obtener("pv", sin_red)):
+            ref = ref_gen(r["reference_id"])
+            if not ref:
+                continue
+            for viejo, cap, nuevo in g2.PV_REASIGNAR:
+                if r["person_id"] == viejo and ref[0] == cap:
+                    r = dict(r, person_id=nuevo)
+            filas.append(r)
+        return filas
+    pv_filas = cargar_pv()
+    auto = defaultdict(Counter)
+    for r in pv_filas:
+        p = r["person_id"]
+        if p in g2.EXCLUIR_PERSONAS or p in g2.SIN_NOMBRE_BD or p in NOMBRES or p in g2.FORMAS_FORZADAS:
+            continue
+        f, _ = na.mejor_forma(r["person_label"], rv.get(ref_gen(r["reference_id"]), ""))
+        if f and f not in g2.FORMAS_EXCLUIDAS and not f.isupper():
+            auto[p][f] += 1
+    FORMAS = {p: [n] for p, n in NOMBRES.items()}
+    FORMAS.update({p: [w for w, _ in c.most_common()] for p, c in auto.items()})
+    FORMAS.update(g2.FORMAS_FORZADAS)
+    FORMAS.update({p: [v[2]] for p, v in g2.PERSONAS_NUEVAS.items()})
+    for p, fs in FORMAS.items():
+        vistos_f, limpio = set(), []
+        for f in fs:
+            if sin_acentos(f) not in vistos_f:
+                vistos_f.add(sin_acentos(f)); limpio.append(f)
+        FORMAS[p] = limpio
+
+    def forma_busqueda(p):
+        return [SOLO_LXX[p][0]] if p in SOLO_LXX else FORMAS.get(p, [])
+
     # Capítulos
     capitulos = []
-    for c in range(1, 12):
+    for c in range(1, MAXCAP + 1):
         vs = sorted(v for (cc, v) in rv if cc == c)
         if vs != list(range(1, len(vs) + 1)):
             errores.append(f"Gn {c}: numeración de versículos no continua")
         capitulos.append({"libro": "Génesis", "cap": c,
                           "versiculos": [{"n": v, "texto": rv[(c, v)]} for v in vs]})
 
-    # Relaciones de BibleData en Gn 1–11
-    def ref_gen(s):
-        m = re.match(r"GEN (\d+):(\d+)$", s.strip())
-        return (int(m.group(1)), int(m.group(2))) if m and int(m.group(1)) <= 11 else None
+    # Relaciones de BibleData en Génesis
 
     candidatas = {}  # (de, a, tipo) -> dict
     descartadas = Counter()
@@ -350,7 +391,7 @@ def main():
             de, a, tipo = p1, p2, "madre"
         elif t in ("son", "daughter"):
             de, a, tipo = p2, p1, ("madre" if sexo2 == "female" else "padre")
-        elif t in ("husband", "wife"):
+        elif t in ("husband", "wife", "concubine", "concubinator"):
             de, a = sorted((p1, p2)); tipo = "conyuge"
         else:
             descartadas[t] += 1
@@ -386,22 +427,31 @@ def main():
                     # TM decide para los hijos del texto masorético; LXX solo para los solo-LXX.
                     if x["de"] != p or x["tipo"] != "padre" or (x["a"] in SOLO_LXX) != (trad == "LXX"):
                         continue
-                    hijo = SOLO_LXX[x["a"]][0] if x["a"] in SOLO_LXX else NOMBRES[x["a"]]
-                    if nombra(verso, hijo) and re.search(r"engendr|begot", verso):
+                    if any(nombra(verso, h) for h in forma_busqueda(x["a"])) and re.search(r"engendr|begot", verso):
                         subidas += x["certeza"] != "explicito"
                         x.update(certeza="explicito", ref=gn(ref), fuente=fuente,
                                  nota="Confirmada por la edad al engendrar en este versículo.")
+    # (c) edad «al nacer …» escrita en el versículo: el padre de los hijos nombrados en él pasa a explícito.
+    for p, tipo, ref, *_resto, evento in g2.EDADES_EVENTO:
+        if not evento.startswith("al nacer"):
+            continue
+        verso = rv.get(ref, "")
+        for x in candidatas.values():
+            if x["de"] == p and x["tipo"] == "padre" and any(nombra(verso, h) for h in forma_busqueda(x["a"])):
+                subidas += x["certeza"] != "explicito"
+                x.update(certeza="explicito", ref=gn(ref), fuente="rv1909",
+                         nota="Confirmada por la edad del padre al nacer el hijo, escrita en este versículo.")
     # Comprobación: toda relación con fuente de texto nombra al hijo en su versículo.
     for x in candidatas.values():
         if x["fuente"] in ("rv1909", "brenton"):
             textos = rv if x["fuente"] == "rv1909" else br
-            hijo = SOLO_LXX[x["a"]][0] if x["a"] in SOLO_LXX else NOMBRES[x["a"]]
-            if not nombra(textos.get(parse_gn(x["ref"]), ""), hijo):
-                errores.append(f"Hijo «{hijo}» no está en {x['ref']} ({x['fuente']})")
+            if x["tipo"] != "conyuge" and not x.get("cita") and not any(
+                    nombra(textos.get(parse_gn(x["ref"]), ""), h) for h in forma_busqueda(x["a"])):
+                errores.append(f"Hijo «{x['a']}» no está en {x['ref']} ({x['fuente']})")
     for x in candidatas.values():
         if x["certeza"] == "inferido" and x["tipo"] in ("padre", "madre"):
             verso = rv.get(parse_gn(x["ref"]), "")
-            if (nombra(verso, NOMBRES[x["de"]]) and nombra(verso, NOMBRES[x["a"]])
+            if (any(nombra(verso, f) for f in forma_busqueda(x["de"])) and any(nombra(verso, f) for f in forma_busqueda(x["a"]))
                     and re.search(r"engendr|pari[oó]", sin_acentos(verso))):
                 subidas += 1
                 x.update(certeza="explicito", fuente="rv1909",
@@ -434,6 +484,63 @@ def main():
                 anadir_sn(f"Otros_hijos_{p}", f"Otros hijos e hijas de {MODERNO[p]}", "?",
                           "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
                           [(p, f"Otros_hijos_{p}", "padre", ref, "explicito", cita_hh)])
+    # Gn 12–50: personas sin nombre añadidas y las que BibleData ya trae sin nombre.
+    for pid, nombre, sexo, nota, rels_sn in g2.SIN_NOMBRE_EXTRA:
+        anadir_sn(pid, nombre, sexo, nota, rels_sn)
+    for pid, (nombre, sexo) in g2.SIN_NOMBRE_BD.items():
+        sin_nombre[pid] = (nombre, sexo, "El texto no da su nombre.")
+    # Concubinas y siervas dadas «por mujer»: cónyuge, con nota de cómo las llama el texto.
+    refs_pv = defaultdict(set)
+    for r in pv_filas:
+        refs_pv[r["person_id"]].add(ref_gen(r["reference_id"]))
+    trato_mujer = {}
+    for varon, mujer, ref, cita in g2.CONYUGES_EXTRA:
+        de, a = sorted((varon, mujer))
+        vistos_t = []
+        for t in g2.TRATO_MUJER:
+            for r in sorted(refs_pv[mujer] | {ref}):
+                v = rv.get(r, "")
+                if t in v and any(nombra(v, f) for f in forma_busqueda(mujer)):
+                    vistos_t.append(f"«{t}» (Gn {r[0]}:{r[1]})"); break
+        nota = "El texto la llama " + ", ".join(vistos_t) + "." if vistos_t else ""
+        trato_mujer[mujer] = nota
+        previo = candidatas.get((de, a, "conyuge"), {})
+        candidatas[(de, a, "conyuge")] = {"de": de, "a": a, "tipo": "conyuge", "ref": gn(ref),
+                                          "certeza": "explicito", "fuente": "rv1909",
+                                          "nota": nota + (" " + previo["nota"] if previo.get("nota") else ""),
+                                          "cita": cita}
+    # Auditoría de matrimonios: cada uno con versículo y cita literal.
+    for k in [k for k in candidatas if k[2] == "conyuge" and (k[0], k[1]) in g2.QUITAR_CONYUGE]:
+        del candidatas[k]
+    matrimonios_nuevos = 0
+    for x1, x2, ref, cita, nota in g2.MATRIMONIOS:
+        de, a = sorted((x1, x2))
+        previo = candidatas.get((de, a, "conyuge"))
+        matrimonios_nuevos += previo is None
+        nota_previa = previo["nota"] if previo and previo["fuente"] == "rv1909" else ""
+        candidatas[(de, a, "conyuge")] = {"de": de, "a": a, "tipo": "conyuge", "ref": gn(ref), "certeza": "explicito",
+                                          "fuente": "rv1909", "nota": (nota + " " + nota_previa).strip(), "cita": cita}
+    for de, a, tipo, ref, cita, nota in g2.RELACIONES_EXTRA:
+        candidatas[(de, a, tipo)] = {"de": de, "a": a, "tipo": tipo, "ref": gn(ref), "certeza": "explicito",
+                                     "fuente": "rv1909", "nota": nota, "cita": cita}
+    # Hijos de Jacob: madre y versículo de nacimiento (Gn 29–30, 35).
+    comprobacion_jacob = []
+    for hijo, madre, ref in g2.HIJOS_JACOB:
+        v = rv.get(ref, "")
+        if not any(nombra(v, f) for f in forma_busqueda(hijo)):
+            errores.append(f"{hijo} no aparece en {gn(ref)}")
+        previo = candidatas.get((madre, hijo, "madre"))
+        candidatas[(madre, hijo, "madre")] = {"de": madre, "a": hijo, "tipo": "madre", "ref": gn(ref),
+                                              "certeza": "explicito", "fuente": "rv1909",
+                                              "nota": "Versículo del nacimiento." if not previo else previo["nota"]}
+        padre = candidatas.get(("Jacob_1", hijo, "padre"))
+        if not padre:
+            errores.append(f"Falta Jacob padre de {hijo}")
+        otras = [x["de"] for x in candidatas.values() if x["a"] == hijo and x["tipo"] == "madre" and x["de"] != madre]
+        if otras:
+            errores.append(f"{hijo} tiene otra madre: {otras}")
+        comprobacion_jacob.append(f"{hijo}: madre {madre} ({gn(ref)}), padre Jacob "
+                                  f"({padre['ref'] if padre else 'FALTA'})")
     for x in candidatas.values():
         if x.get("cita") and x["cita"] not in rv.get(parse_gn(x["ref"]), ""):
             errores.append(f"Cita de relación no literal: {x['de']}→{x['a']} {x['ref']} {x['cita']!r}")
@@ -441,7 +548,8 @@ def main():
     for hija in ("Milcah_1", "Iscah_1"):
         if candidatas.get(("Haran_1", hija, "padre"), {}).get("ref") != "Gn 11:29":
             errores.append(f"Falta Harán padre de {hija} en Gn 11:29")
-    if any(x["a"] == "Sarai_1" and x["tipo"] in ("padre", "madre") for x in candidatas.values()):
+    if any(x["a"] == "Sarai_1" and x["tipo"] in ("padre", "madre") and parse_gn(x["ref"])[0] <= 11
+           for x in candidatas.values()):
         errores.append("Sarai no debería tener progenitor en Gn 1–11")
     relaciones = sorted(candidatas.values(), key=lambda x: (parse_gn(x["ref"]), x["de"], x["a"]))
 
@@ -453,42 +561,71 @@ def main():
         for trad, items in trads.items():
             for _, ref, _ in items:
                 refs[p].add(ref)
+    for p, _, ref, *_ in g2.EDADES_EVENTO:
+        refs[p].add(ref)
+    for p, rs in refs_pv.items():
+        if p not in g2.EXCLUIR_PERSONAS:
+            refs[p] |= rs
     for p in list(refs):
-        if p not in NOMBRES and p not in sin_nombre:
-            errores.append(f"Persona sin nombre español en NOMBRES: {p}")
-    personas, fallos_nombre = [], []
+        if p in g2.EXCLUIR_PERSONAS:
+            del refs[p]
+        elif not FORMAS.get(p) and p not in sin_nombre and p not in SOLO_LXX:
+            errores.append(f"Persona sin forma RV1909: {p}")
+    personas, fallos_nombre, sin_moderno = [], [], []
     for p in sorted(refs, key=lambda q: (min(refs[q]), q)):
         lista = sorted(refs[p])
         if p in sin_nombre:
             nombre, sexo, nota = sin_nombre[p]
-            personas.append({"id": p, "nombre": nombre, "nombre_rv1909": None, "sin_nombre": True,
+            rol = g2.ROLES.get(p, ("",))[0]
+            if p in g2.ROLES and g2.ROLES[p][2] not in rv.get(g2.ROLES[p][1], ""):
+                errores.append(f"Rol de {p}: cita no literal")
+            personas.append({"id": p, "nombre": nombre, "nombre_rv1909": None, "formas_rv1909": [], "rol": rol,
+                             "sin_nombre": True,
                              "sexo": sexo, "primera_ref": gn(lista[0]), "refs": [gn(r) for r in lista],
                              "nota": nota, "ref_mencion": gn(lista[0])})
             continue
-        nombre = NOMBRES.get(p, p)
-        if p in SOLO_LXX:
-            fuente_v, buscado = br, SOLO_LXX[p][0]
-        else:
-            fuente_v, buscado = rv, nombre
-        pat = re.compile(r"(?<!\w)%s(?!\w)" % re.escape(sin_acentos(buscado)))
-        con_nombre = [r for r in lista if pat.search(sin_acentos(fuente_v.get(r, "")))]
+        formas = forma_busqueda(p)
+        if not formas:
+            continue  # ya registrado como error
+        nombre = formas[0]
+        fuente_v = br if p in SOLO_LXX else rv
+        pats = [re.compile(r"(?<!\w)%s(?!\w)" % re.escape(sin_acentos(f))) for f in formas]
+        con_nombre = [r for r in lista if any(pt.search(sin_acentos(fuente_v.get(r, ""))) for pt in pats)]
         primera = con_nombre[0] if con_nombre else lista[0]
         if not con_nombre:
-            fallos_nombre.append(f"{p} «{buscado}» no aparece en {gn(primera)}")
+            fallos_nombre.append(f"{p} «{nombre}» no aparece en {gn(primera)}")
         sexo = {"male": "m", "female": "f"}.get(per.get(p, {}).get("sex", ""), "?")
+        if p in g2.PERSONAS_NUEVAS:
+            sexo = g2.PERSONAS_NUEVAS[p][1]
         nota = SOLO_LXX[p][1] if p in SOLO_LXX else ""
-        if re.search(r"(im|eo)$", nombre) and p not in ("Dodanim_1", "Kittim_1", "Mizraim_1"):
+        if p in g2.PERSONAS_NUEVAS:
+            nota = g2.PERSONAS_NUEVAS[p][3]
+        if p in g2.NOTAS_PERSONA:
+            nota = (nota + " " + g2.NOTAS_PERSONA[p]).strip()
+        if (re.search(r"(im|eo)$", nombre) and p not in ("Dodanim_1", "Kittim_1", "Mizraim_1")
+                and lista[0][0] == 10):
             nota = GENTILICIO
         if p == "Kenan_1":
             nota = "Distinto del Cainán hijo de Arfaxad que solo aparece en la Septuaginta (Gn 11:12-13)."
-        moderno = MODERNO.get(p)
+        if p in g2.NOTAS_NOMBRE:
+            nota = (g2.NOTAS_NOMBRE[p] + " " + nota).strip()
+        if p in trato_mujer and trato_mujer[p]:
+            nota = (nota + " " + trato_mujer[p]).strip()
+        moderno = {"Abram_1": "Abraham", "Sarai_1": "Sara", "Adah_2": "Ada"}.get(p) or MODERNO.get(p) or g2.MODERNO2.get(p)
         if not moderno:
-            errores.append(f"Persona sin grafía actual en MODERNO: {p}")
+            sin_moderno.append(nombre)
             moderno = nombre
         forma_rv = None if p in SOLO_LXX else nombre
         if forma_rv and forma_rv != moderno:
-            nota = f"En la Reina-Valera 1909: {forma_rv}." + (" " + nota if nota else "")
-        personas.append({"id": p, "nombre": moderno, "nombre_rv1909": forma_rv, "sin_nombre": False,
+            nota = f"En la Reina-Valera 1909: {'/'.join(formas)}." + (" " + nota if nota else "")
+        rol = ""
+        if p in g2.ROLES:
+            rol, rref, rcita = g2.ROLES[p]
+            if rcita not in rv.get(rref, ""):
+                errores.append(f"Rol de {p}: «{rcita}» no está en {gn(rref)}")
+            primera = rref
+        personas.append({"id": p, "nombre": moderno, "nombre_rv1909": forma_rv, "rol": rol,
+                         "formas_rv1909": [] if p in SOLO_LXX else formas, "sin_nombre": False,
                          "sexo": sexo,
                          "primera_ref": gn(primera), "refs": [gn(r) for r in lista], "nota": nota})
     ids = {x["id"] for x in personas}
@@ -528,6 +665,21 @@ def main():
                                "valor": tipos["total"]["valor"] - tipos[base]["valor"],
                                "ref": tipos["total"]["ref"], "certeza": "calculo", "fuente": fuente,
                                "cita": "", "nota": "No escrito en el texto: total menos edad al engendrar."})
+
+    # Edades escritas en Gn 12–50 (TM desde RV1909, LXX desde Brenton).
+    for p, tipo, ref, i_tm, i_lxx, evento in g2.EDADES_EVENTO:
+        for trad, textos, idioma, fuente, idx in (("TM", rv, "es", "rv1909", i_tm), ("LXX", br, "en", "brenton", i_lxx)):
+            hallados = cifras(textos.get(ref, ""), idioma)
+            if idx >= len(hallados):
+                (errores if trad == "TM" else avisos).append(f"{p} {trad} {gn(ref)}: no hay cifra n.º {idx}")
+                continue
+            cita = hallados[idx]
+            e = {"persona": p, "tipo": tipo, "tradicion": trad,
+                 "valor": numeral_a_numero(re.sub(r"\s+(años|years)$", "", cita, flags=re.I), idioma),
+                 "ref": gn(ref), "certeza": "texto", "fuente": fuente, "cita": cita, "nota": ""}
+            if tipo == "en_evento":
+                e["evento"] = evento
+            edades.append(e)
 
     # ------------------------------------------------------------ verificación
     textos_de = {"rv1909": rv, "brenton": br}
@@ -571,21 +723,22 @@ def main():
     orden = sorted(rv)
     pos = {k: i for i, k in enumerate(orden)}
     esperado = 0
-    for i, (ini, fin, titulo, resumen) in enumerate(PASAJES, 1):
+    todos_pasajes = [p + (g2.SECCION_1,) for p in PASAJES] + g2.PASAJES2
+    for i, (ini, fin, titulo, resumen, seccion) in enumerate(todos_pasajes, 1):
         a, b = parse_gn(ini), parse_gn(fin)
         if a not in pos or b not in pos or pos[a] != esperado or pos[b] < pos[a]:
             errores.append(f"Pasaje {ini}–{fin}: hueco, solape o desorden (se esperaba {gn(orden[min(esperado, len(orden)-1)])})")
         else:
             esperado = pos[b] + 1
         pasajes.append({"id": f"gn-{i:02d}", "inicio": ini, "fin": fin, "titulo": titulo,
-                        "titulo_origen": "editorial", "resumen": resumen})
+                        "titulo_origen": "editorial", "resumen": resumen, "seccion": seccion})
         tam_pasaje.append(pos.get(b, 0) - pos.get(a, 0) + 1)
     if esperado != len(orden):
         errores.append(f"Los pasajes no cubren hasta {gn(orden[-1])}")
 
     # ------------------------------------------------------------ menciones
     pv = defaultdict(dict)  # ref -> {persona: n.º de apariciones según BibleData}
-    for r in leer_csv(obtener("pv", sin_red)):
+    for r in cargar_pv():
         ref = ref_gen(r["reference_id"])
         if ref:
             try:
@@ -595,8 +748,8 @@ def main():
             pv[ref][r["person_id"]] = pv[ref].get(r["person_id"], 0) + n
     por_forma = defaultdict(list)
     for p in personas:
-        if p["nombre_rv1909"]:
-            por_forma[sin_acentos(p["nombre_rv1909"])].append(p["id"])
+        for f in p["formas_rv1909"]:
+            por_forma[sin_acentos(f)].append(p["id"])
     sitio = {p["id"]: {parse_gn(r) for r in p["refs"]} for p in personas}
     formas = sorted(por_forma, key=len, reverse=True)  # largas primero (Tubal-Caín antes que Tubal/Caín)
 
@@ -613,7 +766,7 @@ def main():
         ocupado = [False] * len(texto)
         for forma in formas:
             hallados = [m for m in re.finditer(r"(?<!\w)%s(?!\w)" % re.escape(forma), norm)
-                        if not any(ocupado[m.start():m.end()])]
+                        if not any(ocupado[m.start():m.end()]) and texto[m.start()].isupper()]
             if not hallados:
                 continue
             cands = [q for q in por_forma[forma] if q in pv[ref] or ref in sitio[q]]
@@ -637,23 +790,100 @@ def main():
                                   "inicio": u16(texto, m.start()), "fin": u16(texto, m.end())})
     menciones.sort(key=lambda x: (parse_gn(x["ref"]), x["inicio"]))
     # verificación de menciones
-    forma_de = {p["id"]: p["nombre_rv1909"] for p in personas}
+    forma_de = {p["id"]: {sin_acentos(f) for f in p["formas_rv1909"]} for p in personas}
     ultimo = {}
     for x in menciones:
         t = rv[parse_gn(x["ref"])]
         b = t.encode("utf-16-le")[2 * x["inicio"]:2 * x["fin"]].decode("utf-16-le")
-        if sin_acentos(b) != sin_acentos(forma_de[x["persona"]]):
+        if sin_acentos(b) not in forma_de[x["persona"]]:
             errores.append(f"Mención no coincide {x}: {b!r}")
         if x["ref"] in ultimo and x["inicio"] < ultimo[x["ref"]]:
             errores.append(f"Menciones solapadas en {x['ref']}")
         ultimo[x["ref"]] = x["fin"]
+
+    # ------------------------------------------------------------ listas «hijos de X» (Gn 36 y 46:8-27)
+    sexo_de = {p["id"]: p["sexo"] for p in personas}
+    tiene = {(x["de"], x["a"]) for x in relaciones if x["tipo"] in ("padre", "madre")}
+    progenitor_tipo = defaultdict(set)
+    for x in relaciones:
+        if x["tipo"] in ("padre", "madre"):
+            progenitor_tipo[(x["a"], x["tipo"])].add(x["de"])
+    men_por_ref = defaultdict(list)
+    for m in menciones:
+        men_por_ref[m["ref"]].append(m)
+    listas_dif, padres_nuevos = [], 0
+    for ref in [r for r in orden if r[0] == 36 or (r[0] == 46 and 8 <= r[1] <= 27)]:
+        texto, R = rv[ref], gn(ref)
+        for h in re.finditer(r"hijos de ", texto):
+            ms = sorted(men_por_ref[R], key=lambda m: m["inicio"])
+            padre_m = next((m for m in ms if h.end() <= m["inicio"] <= h.end() + 1), None)
+            if not padre_m:
+                continue
+            resto = texto[padre_m["fin"]:]
+            fin_seg = len(texto)
+            for corte in (re.search(r"[.;]", resto), re.search(r"hijos de ", resto)):
+                if corte:
+                    fin_seg = min(fin_seg, padre_m["fin"] + corte.start())
+            cab = re.match(r"(,[^:.;]*)?(\s+fueron)?\s*:?", resto)
+            if not re.match(r"(,[^:.;]*)?:|\s+fueron", resto):
+                continue  # no es una lista («Estos son los hijos de Lea, los cuales parió…»)
+            ini_seg = padre_m["fin"] + cab.end()
+            hijos = [m for m in ms if ini_seg <= m["inicio"] < fin_seg and m["persona"] != padre_m["persona"]
+                     and not re.search(r"((hij[oa]|mujer|hermana|padre) de|á)\s+$", texto[:m["inicio"]])]
+            tipo = "madre" if sexo_de.get(padre_m["persona"]) == "f" else "padre"
+            for m in hijos:
+                if (padre_m["persona"], m["persona"]) in tiene:
+                    continue
+                otros = progenitor_tipo[(m["persona"], tipo)]
+                if otros:
+                    listas_dif.append(f"{R}: {m['persona']} en la lista de {padre_m['persona']}, pero su {tipo} registrado es {sorted(otros)} (no se cambia)")
+                    continue
+                cita = texto[h.start():padre_m["fin"]]
+                nueva = {"de": padre_m["persona"], "a": m["persona"], "tipo": tipo, "ref": R, "certeza": "explicito",
+                         "fuente": "rv1909", "nota": "Añadida desde la lista del versículo.", "cita": cita}
+                relaciones.append(nueva); tiene.add((nueva["de"], nueva["a"]))
+                progenitor_tipo[(m["persona"], tipo)].add(nueva["de"])
+                padres_nuevos += 1
+                listas_dif.append(f"{R}: {m['persona']} añadido como hijo de {padre_m['persona']} («{cita}»)")
+    # ------------------------------------------------------------ padres sin vínculo conyugal
+    conyuges = {tuple(sorted((x["de"], x["a"]))) for x in relaciones if x["tipo"] == "conyuge"}
+    padres_de = defaultdict(lambda: {"padre": set(), "madre": set()})
+    for x in relaciones:
+        if x["tipo"] in ("padre", "madre"):
+            padres_de[x["a"]][x["tipo"]].add(x["de"])
+    sin_vinculo = defaultdict(list)
+    for hijo, pm in padres_de.items():
+        for pa in pm["padre"]:
+            for ma in pm["madre"]:
+                if tuple(sorted((pa, ma))) not in conyuges:
+                    sin_vinculo[(pa, ma)].append(hijo)
+    for (pa, ma), hijos in sin_vinculo.items():
+        nota = g2.SIN_PAREJA_NOTA.get((pa, ma))
+        if not nota:
+            errores.append(f"Padres sin vínculo conyugal y sin explicación: {pa} + {ma} → {hijos}")
+            continue
+        for x in relaciones:
+            if x["a"] in hijos and x["de"] in (pa, ma) and nota not in x["nota"]:
+                x["nota"] = (x["nota"] + " " + nota).strip()
+    relaciones.sort(key=lambda x: (parse_gn(x["ref"]), x["de"], x["a"]))
+    for x in relaciones:
+        if x.get("cita") and x["cita"] not in rv.get(parse_gn(x["ref"]), ""):
+            errores.append(f"Cita de relación no literal: {x['de']}→{x['a']} {x['ref']} {x['cita']!r}")
+        for q in (x["de"], x["a"]):
+            if q not in sexo_de:
+                errores.append(f"Relación a persona inexistente: {q}")
+    con_rel = {q for x in relaciones for q in (x["de"], x["a"])}
+    sueltas = [p for p in personas if p["id"] not in con_rel]
+    for p in sueltas:
+        if not p.get("rol"):
+            errores.append(f"Persona sin relación ni rol: {p['id']}")
 
     # ------------------------------------------------------------ lugares y mapa
     rutas = {}
     for k, (url, nombre) in lm.ARCHIVOS.items():
         ARCHIVOS[k] = (url, nombre)
         rutas[k] = obtener(k, sin_red)
-    lugares, menciones_lugar, amb_lugar, desc_lugar, lineas_ob = lm.construir_lugares(
+    lugares, menciones_lugar, amb_lugar, desc_lugar, lineas_ob, lug_sin_forma, lug_sin_moderno = lm.construir_lugares(
         rv, menciones, rutas, errores, avisos)
     mapa = lm.construir_mapa(lugares, rutas)
     x0, y0, x1, y1 = mapa["bbox"]
@@ -669,8 +899,8 @@ def main():
     MAPA.write_text("window.BIBLIA_MAPA = " + json.dumps(mapa, ensure_ascii=False, separators=(",", ":")) + ";\n",
                     encoding="utf-8")
     tam_mapa = MAPA.stat().st_size
-    if tam_mapa >= 250_000:
-        errores.append(f"mapa-base.js ocupa {tam_mapa} bytes (objetivo < 250 KB)")
+    if tam_mapa >= 300_000:
+        errores.append(f"mapa-base.js ocupa {tam_mapa} bytes (objetivo < 300 KB)")
 
     datos = {"generado": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
              "fuentes": FUENTES + lm.FUENTES, "capitulos": capitulos, "personas": personas,
@@ -687,30 +917,44 @@ def main():
     cert = Counter(x["certeza"] for x in relaciones)
     porte = Counter((e["tradicion"], e["certeza"]) for e in edades)
     print("=== RESUMEN genesis.js ===")
-    print(f"Versículos: {sum(len(c['versiculos']) for c in capitulos)} (Gn 1–11)")
-    print(f"Personas: {len(personas)}")
+    print(f"Versículos: {sum(len(c['versiculos']) for c in capitulos)} (Gn 1–{MAXCAP})")
+    fem = lambda sn: sum(1 for p in personas if p["sexo"] == "f" and p["sin_nombre"] == sn)
+    print(f"Personas: {len(personas)} (con nombre {sum(1 for p in personas if not p['sin_nombre'])}, "
+          f"sin nombre {sum(1 for p in personas if p['sin_nombre'])}; mujeres con nombre {fem(False)}, "
+          f"mujeres sin nombre {fem(True)})")
     print(f"Relaciones: {len(relaciones)} (explícitas {cert['explicito']}, inferidas {cert['inferido']}); "
           f"descartadas por tipo no genealógico: {dict(descartadas)}")
     tam = tam_pasaje
+    print(f"Pasajes por sección: {dict(Counter(p['seccion'] for p in pasajes))}")
     print(f"Pasajes: {len(pasajes)} (versículos {sum(tam)}, mín {min(tam)}, máx {max(tam)}; "
           f"fuera de 8–20: {[p['id'] + ':' + str(n) for p, n in zip(pasajes, tam) if not 8 <= n <= 20]})")
     print(f"Menciones: {len(menciones)} en {len({m['ref'] for m in menciones})} versículos; "
           f"personas con nombre mencionadas: {len({m['persona'] for m in menciones})}")
     print(f"Ambiguas descartadas ({len(ambiguos)}):")
-    for a in ambiguos:
+    for a in ambiguos[:25]:
         print("  - " + a)
-    print(f"Nombre presente pero persona no situada en ese versículo (no se marca): {dict(no_situados)}")
+    if len(ambiguos) > 25:
+        print(f"  … y {len(ambiguos) - 25} más")
+    print(f"Nombre presente pero persona no situada en ese versículo (no se marca): "
+          f"{sum(no_situados.values())} apariciones; más frecuentes {dict(no_situados.most_common(12))}")
+    print(f"Personas sin grafía moderna segura (se deja la RV1909) ({len(sin_moderno)}): {', '.join(sorted(sin_moderno))}")
     conf = Counter(l["ubicacion"]["confianza"] for l in lugares if l["ubicacion"])
     print(f"Lugares: {len(lugares)}; ubicados {sum(conf.values())} (alta {conf['alta']}, media {conf['media']}, "
           f"baja {conf['baja']}); sin ubicación {sum(1 for l in lugares if not l['ubicacion'])}: "
           f"{[l['nombre'] for l in lugares if not l['ubicacion']]}")
     print(f"Menciones de lugar: {len(menciones_lugar)} en {len({m['ref'] for m in menciones_lugar})} versículos")
     print(f"Nombres de lugar sin asignar ({len(amb_lugar)}):")
-    for a in amb_lugar:
+    for a in amb_lugar[:15]:
         print("  - " + a)
+    if len(amb_lugar) > 15:
+        print(f"  … y {len(amb_lugar) - 15} más")
+    print(f"Lugares de OpenBible sin forma hallada en RV1909 (no incluidos) ({len(lug_sin_forma)}): {', '.join(lug_sin_forma)}")
+    print(f"Lugares sin grafía moderna segura ({len(lug_sin_moderno)}): {', '.join(lug_sin_moderno)}")
     print(f"Versículos de OpenBible descartados por no traer el nombre en RV1909 ({len(desc_lugar)}):")
-    for a in desc_lugar:
+    for a in desc_lugar[:15]:
         print("  - " + a)
+    if len(desc_lugar) > 15:
+        print(f"  … y {len(desc_lugar) - 15} más")
     print("Contraste con el JSON original de OpenBible:")
     for a in lineas_ob:
         print("  - " + a)
@@ -722,7 +966,31 @@ def main():
     print(f"Relaciones subidas de inferido a explícito por el texto: {subidas}; "
           f"por fuente: {dict(Counter(x['fuente'] for x in relaciones))}")
     for trad in ("TM", "LXX"):
-        print(f"Edades {trad}: texto {porte[(trad, 'texto')]}, cálculo {porte[(trad, 'calculo')]}")
+        print(f"Edades {trad}: texto {porte[(trad, 'texto')]}, cálculo {porte[(trad, 'calculo')]}; por tipo "
+              f"{dict(Counter(e['tipo'] for e in edades if e['tradicion'] == trad))}")
+    print("Comprobación hijos de Jacob:")
+    for a in comprobacion_jacob:
+        print("  - " + a)
+    r2526 = [f"{x['de']}→{x['a']} {x['tipo']} {x['ref']} {x['certeza']}" for x in relaciones
+             if x["a"] in ("Esau_1", "Jacob_1") and x["tipo"] in ("padre", "madre")]
+    e2526 = [f"{e['tradicion']} {e['valor']} «{e['cita']}» ({e.get('evento', '')})" for e in edades
+             if e["persona"] == "Isaac_1" and e["ref"] == "Gn 25:26"]
+    print(f"Gn 25:26 — relaciones: {r2526}; edad de Isaac: {e2526}")
+    for need in ("Isaac_1→Esau_1 padre", "Isaac_1→Jacob_1 padre", "Rebekah_1→Esau_1 madre", "Rebekah_1→Jacob_1 madre"):
+        if not any(r.startswith(need) for r in r2526):
+            errores.append(f"Falta {need}")
+    if not any(e.startswith("TM 60") for e in e2526):
+        errores.append("Falta la edad 60 de Isaac en Gn 25:26")
+    print(f"Matrimonios: {sum(1 for x in relaciones if x['tipo'] == 'conyuge')} (añadidos en esta auditoría {matrimonios_nuevos}); "
+          f"relaciones padre/madre añadidas desde listas: {padres_nuevos}")
+    print(f"Listas «hijos de X» (Gn 36, 46:8-27) frente a relaciones ({len(listas_dif)}):")
+    for a in listas_dif:
+        print("  - " + a)
+    print("Padres sin vínculo conyugal registrado:")
+    for (pa, ma), hijos in sorted(sin_vinculo.items()):
+        print(f"  - {pa} + {ma} → {hijos}: {g2.SIN_PAREJA_NOTA.get((pa, ma), 'SIN EXPLICAR')}")
+    print(f"Personas sin relación ({len(sueltas)}): " + "; ".join(f"{p['nombre']} ({p['rol']}, {p['primera_ref']})" for p in sueltas))
+    print(f"Tamaño: genesis.js {SALIDA.stat().st_size / 1024:.0f} KB; mapa-base.js {tam_mapa / 1024:.1f} KB")
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")
     for a in avisos:

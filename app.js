@@ -32,13 +32,16 @@ const Nucleo = (() => {
     const add = (m, k, v) => { if (!m.has(k)) m.set(k, []); m.get(k).push(v); };
     (d.personas || []).forEach(p => { if (p && p.id) personas.set(p.id, p); });
     const asegurar = id => { if (!personas.has(id)) personas.set(id, { id, nombre: String(id).replace(/_\d+$/, ''), sexo: '?', refs: [] }); };
+    // Relaciones y edades por versículo: el acompañante no recorre las listas completas en cada render.
+    const relPorRef = new Map(), edadesPorRef = new Map();
     (d.relaciones || []).forEach(r => {
       if (!r || !r.de || !r.a || r.de === r.a) return;
       asegurar(r.de); asegurar(r.a);
+      const k = clave(r.ref); if (k !== null) add(relPorRef, k, r);
       if (r.tipo === 'padre' || r.tipo === 'madre') { add(hijos, r.de, r); add(padres, r.a, r); }
       else if (r.tipo === 'conyuge') { add(conyuges, r.de, Object.assign({}, r, { otro: r.a })); add(conyuges, r.a, Object.assign({}, r, { otro: r.de })); }
     });
-    (d.edades || []).forEach(e => { if (e && e.persona) add(edades, e.persona, e); });
+    (d.edades || []).forEach(e => { if (e && e.persona) { add(edades, e.persona, e); const k = clave(e.ref); if (k !== null) add(edadesPorRef, k, e); } });
     // Índices por versículo: quién aparece (refs, primera_ref, ref_mencion, menciones) y primera aparición.
     const menciones = new Map(), porRef = new Map(), primera = new Map();
     const marcar = (id, ref) => {
@@ -59,7 +62,8 @@ const Nucleo = (() => {
       const k = m && m.lugar ? clave(m.ref) : null; if (k === null) return;
       add(mencionesLugar, k, m); marcarL(m.lugar, m.ref);
     });
-    return { datos: d, personas, hijos, padres, conyuges, edades, menciones, porRef, primera, lugares, lugaresPorRef, mencionesLugar };
+    return { datos: d, personas, hijos, padres, conyuges, edades, menciones, porRef, primera, lugares, lugaresPorRef, mencionesLugar,
+      relPorRef, edadesPorRef, memo: new Map() };
   }
 
   const cache = new WeakMap();
@@ -67,7 +71,17 @@ const Nucleo = (() => {
     if (d && typeof d === 'object') { if (!cache.has(d)) cache.set(d, indexar(d)); return cache.get(d); }
     return indexar(d);
   }
+  // Resultado calculado una vez por conjunto de datos (los datos no cambian durante la sesión).
+  function memo(d, k, fn) {
+    if (!d || typeof d !== 'object') return fn();
+    const m = indice(d).memo;
+    if (!m.has(k)) m.set(k, fn());
+    return m.get(k);
+  }
   const persona = (d, id) => indice(d).personas.get(id) || null;
+  // Todos los nombres de un registro (p. ej. Abram/Abraham en un solo registro).
+  const lista = v => Array.isArray(v) ? v : v ? [v] : [];
+  const nombresDe = p => p ? [...new Set([p.nombre, p.nombre_rv1909].concat(lista(p.formas_rv1909), lista(p.otros_nombres), lista(p.nombres), lista(p.alias)).filter(x => typeof x === 'string' && x.trim()))] : [];
 
   function hijosDe(d, id) {
     const vistos = new Set();
@@ -96,6 +110,8 @@ const Nucleo = (() => {
       const hs = hijosDe(d, id).slice().sort((a, b) => (sinNombre(d, a.a) ? 1 : 0) - (sinNombre(d, b.a) ? 1 : 0));
       for (const r of hs) {
         if (visit.has(r.a)) continue;
+        // Quien tiene padre conocido cuelga del padre, no de la madre (Lea → Rubén va bajo Jacob, no bajo Labán).
+        if (r.tipo === 'madre' && (I.padres.get(r.a) || []).some(x => x.tipo === 'padre' && x.de !== id)) continue;
         visit.add(r.a);
         n.hijos.push(rec(r.a, (I.padres.get(r.a) || []).filter(x => x.de === id), id));
       }
@@ -120,8 +136,9 @@ const Nucleo = (() => {
     return out;
   }
 
-  // Bosque: Adán primero, luego otras raíces (sin padres conocidos) no alcanzadas.
-  function construirBosque(d) {
+  // Bosque: Adán primero, luego otras raíces (sin padres conocidos) no alcanzadas. Se calcula una vez.
+  const construirBosque = d => memo(d, 'bosque', () => bosque(d));
+  function bosque(d) {
     const I = indice(d), visit = new Set(), raices = [];
     const a = idAdan(d);
     if (a) raices.push(construirArbol(d, a, visit));
@@ -135,19 +152,87 @@ const Nucleo = (() => {
       const t = construirArbol(d, p.id, visit);
       if (t) raices.push(t);
     }
+    // Parejas sin padres ni hijos conocidos (Potifar y su esposa): también tienen sitio, como rama propia.
+    const visibles = alcanzables(d, raices.filter(Boolean));
+    const parejas = [...I.personas.values()].filter(p => I.conyuges.has(p.id) && !visibles.has(p.id))
+      .sort((x, y) => (x.sexo === 'm' ? 0 : 1) - (y.sexo === 'm' ? 0 : 1));
+    for (const p of parejas) {
+      if (visibles.has(p.id)) continue;
+      const t = construirArbol(d, p.id, visit);
+      if (t) { raices.push(t); visibles.add(p.id); t.conyuges.forEach(c => visibles.add(c.otro)); }
+    }
     return raices.filter(Boolean);
+  }
+
+  // Posición de cada persona en el bosque: nodo (padre, generación) o dónde aparece como cónyuge/madre.
+  function mapaArbol(d) {
+    return memo(d, 'mapaArbol', () => {
+      const nodos = new Map(), aparece = new Map();
+      construirBosque(d).forEach((raiz, ri) => (function r(n, padre, prof) {
+        nodos.set(n.id, { n, padre, prof, raiz: ri });
+        n.conyuges.forEach(c => { if (!aparece.has(c.otro)) aparece.set(c.otro, { nodo: n.id, como: 'conyuge' }); });
+        n.madres.forEach(m => { if (!aparece.has(m.de)) aparece.set(m.de, { nodo: n.id, como: 'madre' }); });
+        n.hijos.forEach(h => r(h, n.id, prof + 1));
+      })(raiz, null, 0));
+      return { nodos, aparece };
+    });
+  }
+  const nodoArbol = (d, id) => { const x = mapaArbol(d).nodos.get(id); return x ? x.n : null; };
+  // Ruta raíz→nodo para llegar a una persona; si no es nodo, al nodo donde aparece como cónyuge o madre.
+  function rutaArbol(d, id) {
+    const M = mapaArbol(d);
+    let nodo = id, como = 'nodo';
+    if (!M.nodos.has(id)) { const a = M.aparece.get(id); if (!a) return null; nodo = a.nodo; como = a.como; }
+    const ruta = [];
+    for (let x = nodo; x !== null && x !== undefined; x = M.nodos.get(x).padre) ruta.unshift(x);
+    return { id, nodo, como, ruta };
+  }
+  // Personas sin ningún parentesco registrado (Melquisedec, Faraón…): sección propia del Árbol, en orden de aparición.
+  function sinParentesco(d) {
+    return memo(d, 'sinPar', () => {
+      const I = indice(d);
+      return [...I.personas.values()].filter(p => !I.padres.has(p.id) && !I.hijos.has(p.id) && !I.conyuges.has(p.id))
+        .sort((a, b) => (I.primera.get(a.id) || 1e9) - (I.primera.get(b.id) || 1e9)).map(p => p.id);
+    });
+  }
+  // ¿Se ve la persona en la pantalla Árbol? (nodo, cónyuge, madre o sección sin parentesco)
+  const enPantallaArbol = (d, id) => !!rutaArbol(d, id) || sinParentesco(d).includes(id);
+  // Nodos desplegados al abrir el árbol: los `niveles` primeros de la primera raíz.
+  function arbolInicial(d, niveles) {
+    niveles = niveles === undefined ? 2 : niveles;
+    const s = new Set(), b = construirBosque(d);
+    if (b[0]) (function r(n, prof) { if (prof < niveles && n.hijos.length) { s.add(n.id); n.hijos.forEach(h => r(h, prof + 1)); } })(b[0], 0);
+    return s;
+  }
+  // Hijos de un nodo agrupados por madre cuando hay varias cónyuges o varias madres (Jacob: Lea, Raquel, Bilha, Zilpa).
+  // [{madre, vinculo (relación cónyuge con su nota), hijos}]; un solo grupo con madre null si no hace falta agrupar.
+  function hijosPorMadre(d, n) {
+    const I = indice(d), hs = (n && n.hijos) || [], cony = (n && n.conyuges) || [];
+    const madreDe = h => { const m = (I.padres.get(h.id) || []).find(x => x.tipo === 'madre' && x.de !== n.id); return m ? m.de : null; };
+    const madres = unicos(hs.map(madreDe).filter(Boolean));
+    if (!(cony.length > 1 || madres.length > 1)) return [{ madre: null, vinculo: null, hijos: hs }];
+    // Orden: el del primer hijo de cada madre (orden de los datos, que sigue el relato).
+    const orden = madres;
+    const grupos = orden.map(m => ({ madre: m, vinculo: cony.find(c => c.otro === m) || null, hijos: hs.filter(h => madreDe(h) === m) }));
+    const sin = hs.filter(h => !madreDe(h));
+    if (sin.length) grupos.push({ madre: null, vinculo: null, hijos: sin });
+    return grupos;
   }
 
   function rutas(d, desde, hasta, limite) {
     limite = limite || 500;
     const out = [];
     if (!desde || !hasta) return out;
+    // Solo se baja por quienes pueden llegar a `hasta` (sus ascendientes): evita recorrer todo el árbol.
+    const I = indice(d), anc = new Set([hasta]), cola = [hasta];
+    while (cola.length) { const x = cola.pop(); for (const r of (I.padres.get(x) || [])) if (!anc.has(r.de)) { anc.add(r.de); cola.push(r.de); } }
+    if (!anc.has(desde)) return out;
     const camino = [desde], vis = new Set([desde]);
     (function dfs(id) {
       if (out.length >= limite) return;
       if (id === hasta) { out.push(camino.slice()); return; }
       for (const r of hijosDe(d, id)) {
-        if (vis.has(r.a)) continue;
+        if (vis.has(r.a) || !anc.has(r.a)) continue;
         vis.add(r.a); camino.push(r.a);
         dfs(r.a);
         camino.pop(); vis.delete(r.a);
@@ -167,6 +252,7 @@ const Nucleo = (() => {
   // Línea Adán→Abraham propia de una tradición: excluye personas que solo existen en la otra
   // y prefiere la ruta con más personas con edades en esa tradición (luego la más corta).
   function lineaPorTradicion(d, trad, desde, hasta) {
+    if (!desde && !hasta) return memo(d, 'linea|' + trad, () => { const a = idAdan(d), b = idAbraham(d); return a && b ? lineaPorTradicion(d, trad, a, b) : []; });
     desde = desde || idAdan(d); hasta = hasta || idAbraham(d);
     const todas = rutas(d, desde, hasta);
     if (!todas.length) return [];
@@ -187,7 +273,23 @@ const Nucleo = (() => {
     return res;
   }
 
-  const lineaAdanAbraham = d => fusionarOrden(lineaPorTradicion(d, 'LXX'), lineaPorTradicion(d, 'TM'));
+  const lineaAdanAbraham = d => memo(d, 'lineaAA', () => fusionarOrden(lineaPorTradicion(d, 'LXX'), lineaPorTradicion(d, 'TM')));
+  const idJacob = d => encontrar(d, ['Jacob_1', 'Israel_1', 'Jacob', 'Israel']);
+  // Atajos de línea calculados de los datos; solo los que existen: Adán → Abraham y Abraham → hijos de Jacob.
+  function atajosLinea(d) {
+    return memo(d, 'atajos', () => {
+      const out = [], adan = idAdan(d), abr = idAbraham(d), jac = idJacob(d);
+      const l1 = adan && abr ? lineaAdanAbraham(d) : [];
+      if (l1.length) out.push({ id: 'adan-abraham', desde: adan, hasta: abr, ruta: l1, extra: [] });
+      if (abr && jac) {
+        const r = rutas(d, abr, jac, 50).sort((a, b) => a.length - b.length)[0];
+        if (r) out.push({ id: 'abraham-jacob', desde: abr, hasta: jac, ruta: r, extra: hijosDe(d, jac).map(x => x.a), hijosDeFinal: true });
+      }
+      return out;
+    });
+  }
+  // Ids de la línea principal (unión de los atajos), para destacarla en el árbol.
+  const lineaPrincipal = d => memo(d, 'lineaP', () => new Set(atajosLinea(d).flatMap(a => a.ruta)));
 
   // Edad de una persona; si falta el total (o restantes) y se puede deducir, se marca derivado/cálculo.
   function edad(d, id, tipo, trad) {
@@ -227,10 +329,42 @@ const Nucleo = (() => {
 
   function ordenPatriarcas(d) {
     const I = indice(d);
-    const con = id => (I.edades.get(id) || []).length > 0;
+    // Solo quienes tienen edades de la tabla (al engendrar, restantes, total); las "en_evento" van aparte.
+    const con = id => (I.edades.get(id) || []).some(e => TIPOS.includes(e.tipo));
     const orden = lineaAdanAbraham(d).filter(con);
-    for (const id of I.edades.keys()) if (!orden.includes(id) && I.personas.has(id)) orden.push(id);
+    for (const id of I.edades.keys()) if (!orden.includes(id) && I.personas.has(id) && con(id)) orden.push(id);
     return orden;
+  }
+  // Barras de vidas: filas con nacimiento calculable y, aparte, quienes tienen edades pero no la cadena completa.
+  function vidas(d, trad) {
+    const filas = anosDesdeAdan(d, trad).filter(f => f.nacimiento !== null), en = new Set(filas.map(f => f.id)), I = indice(d);
+    const omitidas = ordenPatriarcas(d).filter(id => !en.has(id) && (I.edades.get(id) || []).some(e => e.tradicion === trad && TIPOS.includes(e.tipo)));
+    return { filas, omitidas };
+  }
+  // Edades "en un momento del relato" (tipo en_evento), TM y LXX juntas, en orden de versículo.
+  // Con refs, solo las de esos versículos.
+  function edadesEnEvento(d, refs) {
+    const I = indice(d);
+    let fuente;
+    if (refs) { fuente = []; [...new Set([].concat(refs).map(clave).filter(k => k !== null))].sort((a, b) => a - b).forEach(k => (I.edadesPorRef.get(k) || []).forEach(e => fuente.push(e))); }
+    else fuente = (d && d.edades) || [];
+    const g = new Map();
+    fuente.forEach(e => {
+      if (!e || e.tipo !== 'en_evento' || !e.persona || num(e.valor) === null) return;
+      const k0 = clave(e.ref), key = e.persona + '|' + (e.evento ? norm(e.evento) : '@' + k0);
+      if (!g.has(key)) g.set(key, { persona: e.persona, tipo: 'en_evento', evento: e.evento || '', ref: e.ref, clave: k0, TM: null, LXX: null });
+      const x = g.get(key);
+      if (k0 !== null && (x.clave === null || k0 < x.clave)) { x.clave = k0; x.ref = e.ref; }
+      x[e.tradicion === 'LXX' ? 'LXX' : 'TM'] = Object.assign({}, e, { valor: num(e.valor) });
+    });
+    return [...g.values()].map(x => Object.assign(x, { difiere: !!(x.TM && x.LXX && x.TM.valor !== x.LXX.valor), solo: x.TM && !x.LXX ? 'TM' : !x.TM && x.LXX ? 'LXX' : null }))
+      .sort((a, b) => (a.clave || 0) - (b.clave || 0));
+  }
+  // Las mismas, agrupadas por persona (en orden de su primera edad en el relato).
+  function edadesEnEventoPorPersona(d) {
+    const m = new Map();
+    edadesEnEvento(d).forEach(x => { if (!m.has(x.persona)) m.set(x.persona, { persona: x.persona, items: [] }); m.get(x.persona).items.push(x); });
+    return [...m.values()];
   }
 
   function personasEnCapitulo(d, cap) {
@@ -248,16 +382,16 @@ const Nucleo = (() => {
     if (!n) return [];
     const res = [];
     for (const p of indice(d).personas.values()) {
-      const nom = norm(p.nombre), id = norm(p.id);
-      if (nom.includes(n) || id.includes(n)) res.push({ p, rango: nom.startsWith(n) ? 0 : 1 });
+      const noms = nombresDe(p).map(norm), id = norm(p.id);
+      if (noms.some(x => x.includes(n)) || id.includes(n)) res.push({ p, rango: noms.some(x => x.startsWith(n)) ? 0 : 1 });
     }
     return res.sort((a, b) => a.rango - b.rango || norm(a.p.nombre).localeCompare(norm(b.p.nombre))).slice(0, max || 20).map(x => x.p);
   }
 
   /* ---- Lectura acompañada ---- */
   // Pasajes de los datos; si no hay, uno por capítulo.
-  function pasajes(d) {
-    d = d || {};
+  const pasajes = d => memo(d || {}, 'pasajes', () => pasajesCalc(d || {}));
+  function pasajesCalc(d) {
     if (Array.isArray(d.pasajes) && d.pasajes.length) return d.pasajes.filter(p => p && p.id && clave(p.inicio) && clave(p.fin));
     return (d.capitulos || []).map(c => {
       const vs = c.versiculos || [];
@@ -265,24 +399,55 @@ const Nucleo = (() => {
         titulo: `${c.libro || 'Génesis'} ${c.cap}`, titulo_origen: 'capitulo', resumen: '' };
     });
   }
+  // Plan agrupado por `seccion` (editorial) con su progreso. Un pasaje sin sección hereda la del anterior.
+  // Si ningún pasaje trae sección, devuelve un único grupo con titulo null.
+  function seccionesPlan(d, leidos, sigId) {
+    const L = new Set(leidos || []), out = [], porT = new Map();
+    let previa = '';
+    pasajes(d).forEach((p, i) => {
+      const t = (typeof p.seccion === 'string' && p.seccion.trim()) || previa;
+      previa = t;
+      if (!porT.has(t)) {
+        const g = { id: 'sec-' + (norm(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || out.length + 1), titulo: t || null, pasajes: [], total: 0, leidos: 0, siguiente: false };
+        porT.set(t, g); out.push(g);
+      }
+      const g = porT.get(t), le = L.has(p.id);
+      g.pasajes.push({ pasaje: p, n: i + 1, leido: le });
+      g.total++; if (le) g.leidos++; if (p.id === sigId) g.siguiente = true;
+    });
+    out.forEach(g => {
+      g.estado = g.leidos === g.total ? 'leido' : (g.leidos || g.siguiente) ? 'en-curso' : 'pendiente';
+      g.inicio = g.pasajes[0].pasaje.inicio; g.fin = g.pasajes[g.pasajes.length - 1].pasaje.fin;
+    });
+    return out;
+  }
+  // Alcance de los datos ("Génesis 1–50"), calculado de los capítulos presentes.
+  function alcance(d) {
+    const cs = ((d && d.capitulos) || []).map(c => +c.cap).filter(Number.isFinite);
+    const libro = (cs.length && d.capitulos[0].libro) || 'Génesis';
+    if (!cs.length) return { libro, desde: null, hasta: null, texto: libro, corto: 'Gn' };
+    const a = Math.min(...cs), b = Math.max(...cs), r = a === b ? `${a}` : `${a}–${b}`;
+    return { libro, desde: a, hasta: b, texto: `${libro} ${r}`, corto: `Gn ${r}` };
+  }
   function pasajeDe(d, ref) {
     const k = clave(ref);
     if (k === null) return null;
     return pasajes(d).find(p => clave(p.inicio) <= k && k <= clave(p.fin)) || null;
   }
   function versiculosDe(d, pasaje) {
-    const out = [];
-    if (!pasaje) return out;
+    if (!pasaje) return [];
     const a = clave(pasaje.inicio), b = clave(pasaje.fin);
-    for (const c of ((d && d.capitulos) || [])) for (const v of (c.versiculos || [])) {
-      const k = c.cap * 1000 + v.n;
-      if (k >= a && k <= b) out.push({ cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n), clave: k });
-    }
-    return out.sort((x, y) => x.clave - y.clave);
+    return todosLosVersiculos(d).filter(v => v.clave >= a && v.clave <= b);
   }
+  const todosLosVersiculos = d => memo(d || {}, 'versiculos', () => {
+    const out = [];
+    for (const c of ((d && d.capitulos) || [])) for (const v of (c.versiculos || [])) out.push({ cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n), clave: c.cap * 1000 + v.n });
+    return out.sort((x, y) => x.clave - y.clave);
+  });
 
   // Menciones de personas (tipo 'persona') o lugares ('lugar') en un versículo: las de los datos si son
   // válidas; si no hay, se buscan los nombres de quienes tienen ese versículo en sus refs.
+  const reNombre = new Map();
   function mencionesDe(d, ref, texto, tipo) {
     const I = indice(d), k = clave(ref);
     const valida = m => Number.isInteger(m.inicio) && Number.isInteger(m.fin) && m.inicio >= 0 && m.fin > m.inicio && m.fin <= texto.length;
@@ -293,8 +458,9 @@ const Nucleo = (() => {
     for (const id of ((tipo === 'lugar' ? I.lugaresPorRef : I.porRef).get(k) || [])) {
       const p = fuente.get(id);
       if (!p || p.sin_nombre || cubiertos.has(id)) continue;
-      for (const nom of new Set([p.nombre, p.nombre_rv1909].filter(Boolean))) {
-        const re = new RegExp('(^|[^\\p{L}])(' + nom.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\p{L}])', 'gu');
+      for (const nom of (tipo === 'lugar' ? [...new Set([p.nombre, p.nombre_rv1909].filter(Boolean))] : nombresDe(p))) {
+        if (!reNombre.has(nom)) reNombre.set(nom, new RegExp('(^|[^\\p{L}])(' + nom.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\p{L}])', 'gu'));
+        const re = reNombre.get(nom); re.lastIndex = 0;
         let m;
         while ((m = re.exec(texto))) { const i = m.index + m[1].length; out.push({ [tipo]: id, inicio: i, fin: i + m[2].length }); }
       }
@@ -337,16 +503,16 @@ const Nucleo = (() => {
   function acompanante(d, refs) {
     d = d || {};
     const I = indice(d), ks = new Set([].concat(refs || []).map(clave).filter(k => k !== null));
-    const enSet = r => ks.has(clave(r));
-    const ids = [];
-    [...ks].sort((a, b) => a - b).forEach(k => (I.porRef.get(k) || []).forEach(id => { if (!ids.includes(id)) ids.push(id); }));
+    const orden = [...ks].sort((a, b) => a - b);
+    const ids = [], idsV = new Set();
+    orden.forEach(k => (I.porRef.get(k) || []).forEach(id => { if (!idsV.has(id)) { idsV.add(id); ids.push(id); } }));
     const vistos = new Set();
-    const vinculos = (d.relaciones || []).filter(r => r && r.de && r.a && enSet(r.ref)).filter(r => {
+    const vinculos = orden.flatMap(k => I.relPorRef.get(k) || []).filter(r => {
       const k = r.tipo + '|' + (r.tipo === 'conyuge' ? [r.de, r.a].sort().join('+') : r.de + '>' + r.a);
       return !vistos.has(k) && vistos.add(k);
     });
     const grupos = new Map();
-    (d.edades || []).filter(e => e && e.persona && enSet(e.ref) && num(e.valor) !== null).forEach(e => {
+    orden.flatMap(k => I.edadesPorRef.get(k) || []).filter(e => e.tipo !== 'en_evento' && num(e.valor) !== null).forEach(e => {
       const k = e.persona + '|' + e.tipo;
       if (!grupos.has(k)) grupos.set(k, { persona: e.persona, tipo: e.tipo, ref: e.ref, TM: null, LXX: null });
       if (e.tradicion === 'TM' || e.tradicion === 'LXX') grupos.get(k)[e.tradicion] = Object.assign({}, e, { valor: num(e.valor) });
@@ -354,16 +520,36 @@ const Nucleo = (() => {
     const edadesV = [...grupos.values()].map(g => Object.assign(g, {
       difiere: !!(g.TM && g.LXX && g.TM.valor !== g.LXX.valor), solo: g.TM && !g.LXX ? 'TM' : !g.TM && g.LXX ? 'LXX' : null }));
     const lugs = [];
-    [...ks].sort((a, b) => a - b).forEach(k => (I.lugaresPorRef.get(k) || []).forEach(id => { if (!lugs.includes(id) && I.lugares.has(id)) lugs.push(id); }));
+    orden.forEach(k => (I.lugaresPorRef.get(k) || []).forEach(id => { if (!lugs.includes(id) && I.lugares.has(id)) lugs.push(id); }));
     return { personas: ids.map(id => ({ id, contexto: contextoPersona(d, id) })), vinculos, edades: edadesV,
+      eventos: edadesEnEvento(d, orden.map(k => refTxt(Math.floor(k / 1000), k % 1000))),
       sinNombre: ids.filter(id => (I.personas.get(id) || {}).sin_nombre), lugares: lugs };
   }
-  // ¿Tiene el versículo vínculos, edades, alusiones sin nombre o lugares? (marca al margen)
-  const tieneApoyo = (d, ref) => { const A = acompanante(d, [ref]); return A.vinculos.length + A.edades.length + A.sinNombre.length + A.lugares.length > 0; };
+  // ¿Tiene el versículo vínculos, edades, alusiones sin nombre o lugares? (marca al margen; solo índices)
+  function tieneApoyo(d, ref) {
+    const I = indice(d), k = clave(ref);
+    if (k === null) return false;
+    if ((I.relPorRef.get(k) || []).length) return true;
+    if ((I.edadesPorRef.get(k) || []).some(e => num(e.valor) !== null)) return true;
+    for (const id of (I.lugaresPorRef.get(k) || [])) if (I.lugares.has(id)) return true;
+    for (const id of (I.porRef.get(k) || [])) if ((I.personas.get(id) || {}).sin_nombre) return true;
+    return false;
+  }
+  // Personas del acompañante separadas: las que aparecen por primera vez en el pasaje y el resto.
+  function quienAparece(d, pasaje, ids) {
+    const I = indice(d), a = pasaje ? clave(pasaje.inicio) : null, b = pasaje ? clave(pasaje.fin) : null;
+    const esNueva = id => { const k = I.primera.get(id); return a !== null && k !== undefined && k >= a && k <= b; };
+    return { nuevas: ids.filter(esNueva), resto: ids.filter(id => !esNueva(id)) };
+  }
 
   /* ---- Lugares y mapa ---- */
   const lugar = (d, id) => indice(d).lugares.get(id) || null;
-  const lugaresDeRefs = (d, refs) => acompanante(d, refs).lugares;
+  function lugaresDeRefs(d, refs) {
+    const I = indice(d), out = [], vistos = new Set();
+    [...new Set([].concat(refs || []).map(clave).filter(k => k !== null))].sort((a, b) => a - b)
+      .forEach(k => (I.lugaresPorRef.get(k) || []).forEach(id => { if (!vistos.has(id) && I.lugares.has(id)) { vistos.add(id); out.push(id); } }));
+    return out;
+  }
   const lugaresDePasaje = (d, p) => lugaresDeRefs(d, versiculosDe(d, p).map(v => v.ref));
   // 'alta' | 'media' | 'baja' | 'desconocida' (sin coordenadas válidas)
   function confianzaLugar(l) {
@@ -394,10 +580,13 @@ const Nucleo = (() => {
     return { x: cx - w / 2, y: cy - h / 2, w, h };
   }
   // Coloca etiquetas sin solaparse entre sí ni con los marcadores; las que no caben se omiten.
-  function colocarEtiquetas(items, ancho, alto) {
+  // Por prioridad (mayor primero); `max` limita cuántas se colocan (el mapa lo sube al acercar).
+  function colocarEtiquetas(items, ancho, alto, max) {
     const puestos = items.map(it => ({ x: it.x - 6, y: it.y - 6, w: 12, h: 12, id: it.id })), out = [];
+    const tope = Number.isFinite(max) ? max : Infinity;
     const choca = (r, id) => puestos.some(p => p.id !== id && r.x < p.x + p.w && p.x < r.x + r.w && r.y < p.y + p.h && p.y < r.y + r.h);
-    items.slice().sort((a, b) => (b.prioridad || 0) - (a.prioridad || 0)).forEach(it => {
+    for (const it of items.slice().sort((a, b) => (b.prioridad || 0) - (a.prioridad || 0))) {
+      if (out.length >= tope) break;
       const w = String(it.texto).length * 6.6 + 4, h = 14, g = 9;
       const ops = [{ x: it.x + g, y: it.y - h / 2, anc: 'start' }, { x: it.x - g - w, y: it.y - h / 2, anc: 'end' },
         { x: it.x - w / 2, y: it.y - g - h, anc: 'middle' }, { x: it.x - w / 2, y: it.y + g, anc: 'middle' }];
@@ -406,11 +595,15 @@ const Nucleo = (() => {
         if (r.x < 0 || r.y < 0 || r.x + w > ancho || r.y + h > alto || choca(r, it.id)) continue;
         puestos.push(Object.assign({ id: '#' + it.id }, r));
         out.push({ id: it.id, texto: it.texto, x: o.anc === 'start' ? o.x : o.anc === 'end' ? o.x + w : o.x + w / 2, y: o.y + h - 3, anc: o.anc, caja: r });
-        return;
+        break;
       }
-    });
+    }
     return out;
   }
+  // Cuántas etiquetas caben según el acercamiento (z = escala actual / escala al encuadrar).
+  const etiquetasPorZoom = (z, total) => Math.min(total, Math.max(8, Math.round(12 * Math.max(1, z) * Math.max(1, z))));
+  // Importancia de un lugar para su etiqueta: veces que se nombra (refs) y confianza.
+  const prioridadLugar = l => Math.min(99, ((l && l.refs) || []).length) * 10 + ({ alta: 3, media: 2, baja: 1 }[confianzaLugar(l)] || 0);
 
   // Personas cuya primera aparición en los datos cae dentro del pasaje.
   function primerasApariciones(d, pasaje) {
@@ -434,10 +627,12 @@ const Nucleo = (() => {
   }
 
   return { TRADS, TIPOS, norm, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
-    acompanante, tieneApoyo, primerasApariciones, miniArbol, anoDiluvio,
-    lugar, lugaresDeRefs, lugaresDePasaje, confianzaLugar, proyeccion, proyectar, desproyectar, encuadre, colocarEtiquetas, indice, persona, hijosDe, encontrar, idAdan, idAbraham,
-    construirArbol, construirBosque, alcanzables, contarMujeres, sinNombre, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
-    lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, personasEnCapitulo, buscar };
+    acompanante, tieneApoyo, quienAparece, primerasApariciones, miniArbol, anoDiluvio, seccionesPlan, alcance, nombresDe,
+    lugar, lugaresDeRefs, lugaresDePasaje, confianzaLugar, proyeccion, proyectar, desproyectar, encuadre, colocarEtiquetas, etiquetasPorZoom, prioridadLugar,
+    indice, persona, hijosDe, encontrar, idAdan, idAbraham, idJacob,
+    construirArbol, construirBosque, sinParentesco, enPantallaArbol, mapaArbol, nodoArbol, rutaArbol, arbolInicial, hijosPorMadre, atajosLinea, lineaPrincipal,
+    alcanzables, contarMujeres, sinNombre, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
+    lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, vidas, edadesEnEvento, edadesEnEventoPorPersona, personasEnCapitulo, buscar };
 })();
 
 globalThis.BibliaNucleo = Nucleo;
@@ -456,7 +651,8 @@ if (typeof document !== 'undefined') (function () {
   const TIPO_TXT = { al_engendrar: 'Al engendrar', restantes: 'Años restantes', total: 'Total' };
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
-  const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, plegados: new Set(), q: '' };
+  const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, focoHash: undefined, aviso: '',
+    mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map() };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   const refHTML = ref => { const r = N.parseRef(ref); return r ? `<a class="ref" href="#leer/${r.cap}${r.v ? '/' + r.v : ''}">${esc(ref)}</a>` : esc(ref); };
@@ -493,6 +689,25 @@ if (typeof document !== 'undefined') (function () {
     const sig = (actual && !L.has(actual.id) ? actual : null) || ps.find(p => !L.has(p.id)) || actual || ps[0];
     const enSig = actual && sig && actual.id === sig.id && pos.v;
     const editorial = ps.some(p => p.titulo_origen === 'editorial');
+    const itemPasaje = (p, num) => {
+      const est = L.has(p.id) ? 'leido' : actual && actual.id === p.id ? 'en-curso' : 'pendiente';
+      return `<li class="pasaje ${est}"><a href="#leer/p/${esc(p.id)}"><span class="pasaje-num" aria-hidden="true">${num}</span>
+          <span class="pasaje-cuerpo"><span class="pasaje-titulo">${esc(p.titulo)}</span><span class="pasaje-rango">${rango(p)}</span>
+          ${p.resumen ? `<span class="pasaje-resumen">${esc(p.resumen)}</span>` : ''}</span>
+          <span class="estado ${est}">${ICONO[est]}${ESTADO_TXT[est]}</span></a></li>`;
+    };
+    const secs = N.seccionesPlan(D, [...L], sig && sig.id);
+    const plan = secs.length === 1 && !secs[0].titulo
+      ? `<ol class="pasajes">${secs[0].pasajes.map(x => itemPasaje(x.pasaje, x.n)).join('')}</ol>`
+      : `<p class="meta">${secs.length} secciones · ${ps.length} pasajes. Pulsa una sección para abrirla o cerrarla.</p>
+        <div class="secciones">${secs.map(g => {
+          const abierta = estado.secAbiertas.has(g.id) ? estado.secAbiertas.get(g.id) : g.siguiente;
+          return `<details class="seccion-plan ${g.estado}" data-sec="${esc(g.id)}"${abierta ? ' open' : ''}>
+            <summary><span class="sec-cab"><span class="sec-titulo">${esc(g.titulo || 'Pasajes')}</span>
+              <span class="sec-meta">${g.siguiente ? '<span class="sec-aqui">Aquí sigues</span> · ' : ''}${g.total} ${g.total === 1 ? 'pasaje' : 'pasajes'} · ${rango({ inicio: g.inicio, fin: g.fin })}</span></span>
+              <span class="sec-prog"><progress max="${g.total}" value="${g.leidos}" aria-label="Progreso de la sección"></progress><span>${g.leidos}/${g.total}</span></span></summary>
+            <ol class="pasajes">${g.pasajes.map(x => itemPasaje(x.pasaje, x.n)).join('')}</ol></details>`;
+        }).join('')}</div>`;
     return `<section class="portada" aria-labelledby="t-portada">
         <h1 id="t-portada" tabindex="-1">${pos ? 'Continúa donde lo dejaste' : 'Empieza a leer'}</h1>
         ${sig ? `<a class="continuar" href="#leer/p/${esc(sig.id)}${enSig ? '/' + esc(pos.v) : ''}">
@@ -503,19 +718,13 @@ if (typeof document !== 'undefined') (function () {
         <div class="progreso"><progress max="${ps.length || 1}" value="${n}" aria-label="Progreso de lectura"></progress><span>${n} de ${ps.length} pasajes leídos</span></div>
       </section>
       <h2 class="titulo-seccion">Plan de lectura</h2>
-      <ol class="pasajes">${ps.map((p, i) => {
-        const est = L.has(p.id) ? 'leido' : actual && actual.id === p.id ? 'en-curso' : 'pendiente';
-        return `<li class="pasaje ${est}"><a href="#leer/p/${esc(p.id)}"><span class="pasaje-num" aria-hidden="true">${i + 1}</span>
-          <span class="pasaje-cuerpo"><span class="pasaje-titulo">${esc(p.titulo)}</span><span class="pasaje-rango">${rango(p)}</span>
-          ${p.resumen ? `<span class="pasaje-resumen">${esc(p.resumen)}</span>` : ''}</span>
-          <span class="estado ${est}">${ICONO[est]}${ESTADO_TXT[est]}</span></a></li>`;
-      }).join('')}</ol>
-      ${editorial ? '<p class="meta">Los títulos y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>' : ''}`;
+      ${plan}
+      ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}`;
   }
 
   /* ---------- Leer: pasaje con acompañante ---------- */
   function vistaPasaje(p, activo) {
-    if (!p) return `<h1 tabindex="-1">Pasaje no encontrado</h1><p class="vacio-txt">Ese pasaje no está en este piloto, que cubre Génesis 1–11.</p><p><a class="boton" href="#leer">Ver el plan de lectura</a></p>`;
+    if (!p) return `<h1 tabindex="-1">Pasaje no encontrado</h1><p class="vacio-txt">Ese pasaje no está en los datos, que cubren ${esc(N.alcance(D).texto)}.</p><p><a class="boton" href="#leer">Ver el plan de lectura</a></p>`;
     const ps = N.pasajes(D), i = ps.findIndex(x => x.id === p.id), prev = ps[i - 1], next = ps[i + 1];
     const vs = N.versiculosDe(D, p);
     estado.pasaje = p;
@@ -555,19 +764,39 @@ if (typeof document !== 'undefined') (function () {
       <aside class="acompanante${estado.hoja ? ' abierta' : ''}" id="acompanante" aria-label="Acompañante de lectura">${acompHTML()}</aside></div>`;
   }
 
-  const TIPO_REL = r => r.tipo === 'conyuge' ? `${esc(nombre(r.de))} y ${esc(nombre(r.a))}: cónyuges`
+  // Nota del vínculo tal como viene en los datos («sierva», «concubina»…), sin reinterpretarla.
+  const notaVinculo = r => r && r.nota ? `<span class="nota-vinculo">${esc(r.nota)}</span>` : '';
+  const TIPO_REL = r => r.tipo === 'conyuge' ? `${esc(nombre(r.de))} y ${esc(nombre(r.a))}: cónyuges${notaVinculo(r)}`
     : `${esc(nombre(r.de))} es ${r.tipo === 'madre' ? 'madre' : 'padre'} de ${esc(nombre(r.a))}`;
+  // "Abram tenía 75 años al salir de Harán" (+ LXX si difiere).
+  function eventoHTML(x) {
+    const base = x.TM || x.LXX;
+    return `<li${x.difiere ? ' class="difiere"' : ''}><span class="edad-quien">${esc(nombre(x.persona))} tenía <strong>${base.valor}</strong> años${x.evento ? ' ' + esc(x.evento) : ''}${x.solo === 'LXX' ? ' (según la LXX)' : ''}</span>
+      ${insignia(base.certeza || 'texto', x.ref)}${base.cita ? ` <span class="cita-corta">«${esc(base.cita)}»</span>` : ''}
+      ${x.difiere ? `<p class="difiere-txt">En la Septuaginta: ${x.LXX.valor}${x.LXX.ref && x.LXX.ref !== x.TM.ref ? ' (' + refHTML(x.LXX.ref) + ')' : ''}</p>` : ''}</li>`;
+  }
+  const QUIEN_MAX = 8; // a partir de aquí "Quién aparece" se agrupa
   function acompHTML() {
     const p = estado.pasaje;
     if (!p) return '';
     const refs = estado.activo ? [`Gn ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref);
     const A = N.acompanante(D, refs);
-    const n = A.vinculos.length + A.edades.length + A.sinNombre.length + A.lugares.length;
+    const n = A.vinculos.length + A.edades.length + A.eventos.length + A.sinNombre.length + A.lugares.length;
     const ambito = estado.activo ? `Gn ${estado.activo}` : 'Todo el pasaje';
     const sec = (t, cuerpo, icono) => `<section class="acomp-sec"><h3>${icono}${t}</h3>${cuerpo}</section>`;
     const I = (d) => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}"/></svg>`;
     let html = '';
-    if (A.personas.length) html += sec('Quién aparece', `<ul class="quien">${A.personas.map(x => `<li>${btnPersona(x.id)}${x.contexto ? `<span class="contexto">${esc(x.contexto)}</span>` : ''}</li>`).join('')}</ul>`, I('M10 9a3 3 0 100-6 3 3 0 000 6zM4 17c0-3.3 2.7-5 6-5s6 1.7 6 5'));
+    if (A.personas.length) {
+      // Sin parentesco, se muestra su papel en el relato (`rol`, p. ej. "rey de Salem") si los datos lo traen.
+      const li = x => { const c = x.contexto || (N.persona(D, x.id) || {}).rol || ''; return `<li>${btnPersona(x.id)}${c ? `<span class="contexto">${esc(c)}</span>` : ''}</li>`; };
+      let cuerpo;
+      if (A.personas.length > QUIEN_MAX) {
+        const porId = new Map(A.personas.map(x => [x.id, x])), Q = N.quienAparece(D, p, A.personas.map(x => x.id));
+        cuerpo = (Q.nuevas.length ? `<p class="meta">Nuevas en este pasaje (${Q.nuevas.length})</p><ul class="quien">${Q.nuevas.map(id => li(porId.get(id))).join('')}</ul>` : '')
+          + (Q.resto.length ? `<details class="plegable"><summary>Ya aparecidas antes (${Q.resto.length})</summary><ul class="quien">${Q.resto.map(id => li(porId.get(id))).join('')}</ul></details>` : '');
+      } else cuerpo = `<ul class="quien">${A.personas.map(li).join('')}</ul>`;
+      html += sec(`Quién aparece${A.personas.length > QUIEN_MAX ? ` (${A.personas.length})` : ''}`, cuerpo, I('M10 9a3 3 0 100-6 3 3 0 000 6zM4 17c0-3.3 2.7-5 6-5s6 1.7 6 5'));
+    }
     if (A.lugares.length) {
       const ub = A.lugares.filter(id => N.confianzaLugar(N.lugar(D, id)) !== 'desconocida');
       html += sec('Dónde ocurre', `${ub.length ? mapaHTML(ub, { mini: true }) : ''}<ul class="lugares-lista">${A.lugares.map(id => { const l = N.lugar(D, id) || {}, c = N.confianzaLugar(l); return `<li>${btnLugar(id)}<span class="contexto">${c === 'desconocida' ? 'Ubicación desconocida' + (l.nota ? ': ' + esc(l.nota) : '') : esc((l.ubicacion && l.ubicacion.identificacion) || '') + '. ' + CONF_TXT[c]}</span></li>`; }).join('')}</ul>`, I('M10 17s5-4.6 5-8.5a5 5 0 10-10 0C5 12.4 10 17 10 17zM10 10.2a1.7 1.7 0 100-3.4 1.7 1.7 0 000 3.4'));
@@ -578,6 +807,7 @@ if (typeof document !== 'undefined') (function () {
       return `<li${e.difiere || e.solo ? ' class="difiere"' : ''}><span class="edad-quien">${esc(nombre(e.persona))}, ${esc(TIPO_TXT[e.tipo] || e.tipo.replace(/_/g, ' '))}</span><span class="par">${val('TM')}${val('LXX')}</span>
         ${e.difiere ? `<p class="difiere-txt">En la Septuaginta: ${e.LXX.valor}${e.LXX.ref && e.LXX.ref !== e.TM.ref ? ' (' + refHTML(e.LXX.ref) + ')' : ''}</p>` : e.solo ? `<p class="difiere-txt">Solo ${e.solo} da este dato.</p>` : ''}</li>`;
     }).join('')}</ul>`, I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2'));
+    if (A.eventos.length) html += sec('Edad en este momento', `<ul class="edades-acomp">${A.eventos.map(eventoHTML).join('')}</ul>`, I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2'));
     if (A.sinNombre.length) html += sec('Sin nombre', A.sinNombre.map(id => `<p class="sin-nombre-aviso">El texto alude a alguien sin dar su nombre: ${btnPersona(id)}</p>`).join(''), I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6.5v4M10 13.5v.5'));
     const centrales = A.personas.map(x => x.id).filter(id => { const m = N.miniArbol(D, id); return !(N.persona(D, id) || {}).sin_nombre && (m.padres.length || m.hijos.length); }).slice(0, estado.activo ? 2 : 3);
     if (centrales.length) html += sec('Dónde va en el árbol', centrales.map(id => {
@@ -604,51 +834,131 @@ if (typeof document !== 'undefined') (function () {
   }
 
   /* ---------- Árbol ---------- */
+  // Árbol perezoso: solo se generan las filas de las ramas desplegadas (estado.abiertos); al desplegar o
+  // plegar se insertan o quitan filas en el DOM sin volver a pintar la vista.
+  const tituloAtajo = a => `${nombre(a.desde)} → ${a.hijosDeFinal ? 'hijos de ' : ''}${nombre(a.hasta)}`;
+  function abrirHasta(id) {
+    const u = N.rutaArbol(D, id); if (!u) return null;
+    if (!estado.abiertos) estado.abiertos = N.arbolInicial(D, 2);
+    u.ruta.slice(0, -1).forEach(x => estado.abiertos.add(x));
+    estado.foco = u.nodo;
+    estado.aviso = u.como === 'conyuge' ? `${nombre(id)} aparece como cónyuge de ${nombre(u.nodo)}.` : u.como === 'madre' ? `${nombre(id)} aparece como madre de ${nombre(u.nodo)}.` : '';
+    return u;
+  }
   function vistaArbol(args) {
-    estado.foco = args && args[0] ? args[0] : null;
-    if (estado.foco) { estado.lineaSolo = false; estado.plegados.clear(); }
+    if (!estado.abiertos) estado.abiertos = N.arbolInicial(D, 2);
+    const h = args && args[0] ? args[0] : null;
+    if (h !== estado.focoHash) { estado.focoHash = h; estado.foco = null; estado.aviso = ''; if (h) { estado.lineaSolo = false; if (!abrirHasta(h) && N.sinParentesco(D).includes(h)) { estado.sinParAbierta = true; estado.foco = h; estado.aviso = `${nombre(h)} no tiene parentesco registrado en el texto: está en la lista del final.`; } } }
+    const atajos = N.atajosLinea(D);
+    const lp = atajos.length ? [atajos[0].desde].concat(atajos.map(a => a.hasta)).map(nombre).join(' → ') : '';
     return `<h1 tabindex="-1">Árbol genealógico</h1>
       <p class="sub">Cada vínculo indica si <span class="insignia texto">Texto</span> lo dice explícitamente o es <span class="insignia inferido">Inferido</span>, con su versículo.</p>
-      <p class="leyenda-arbol meta"><span class="ley hombre">Hombre</span><span class="ley mujer">Mujer</span><span class="ley sin-nombre">Sin nombre en el texto</span><span class="ley linea">Línea de Adán a Abraham</span></p>
+      <p class="leyenda-arbol meta"><span class="ley hombre">Hombre</span><span class="ley mujer">Mujer</span><span class="ley sin-nombre">Sin nombre en el texto</span>${lp ? `<span class="ley linea">Línea principal (${esc(lp)})</span>` : ''}</p>
       <div class="herr">
         <div class="campo"><label for="buscar">Buscar persona</label><input id="buscar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.q)}"></div>
-        <button type="button" class="boton" id="btn-linea" aria-pressed="${estado.lineaSolo}">${estado.lineaSolo ? 'Mostrar todo el árbol' : 'Línea de Adán a Abraham'}</button>
-        ${estado.lineaSolo ? '' : '<button type="button" class="boton secundario" id="btn-plegar">Plegar todo</button><button type="button" class="boton secundario" id="btn-desplegar">Desplegar todo</button>'}
       </div>
       <ul class="resultados" id="resultados" aria-live="polite">${resultadosHTML()}</ul>
+      ${atajos.length ? `<div class="herr atajos" role="group" aria-label="Ver solo una línea"><span class="atajos-txt meta">Ver solo la línea:</span>${atajos.map(a => `<button type="button" class="boton${estado.lineaSolo === a.id ? '' : ' secundario'}" data-atajo="${esc(a.id)}" aria-pressed="${estado.lineaSolo === a.id}">${esc(tituloAtajo(a))}</button>`).join('')}
+        ${estado.lineaSolo ? '<button type="button" class="boton secundario" id="btn-todo">Mostrar todo el árbol</button>' : ''}</div>` : ''}
+      ${estado.lineaSolo ? '' : '<div class="herr"><button type="button" class="boton secundario" id="btn-plegar">Plegar todo</button><button type="button" class="boton secundario" id="btn-desplegar">Desplegar todo</button></div>'}
       ${(m => `<p><button type="button" class="boton secundario" id="btn-mujeres" aria-pressed="${estado.mujeres}">Mujeres: ${m.conNombre} con nombre, ${m.sinNombre} sin nombre</button></p>`)(N.contarMujeres(D))}
+      <p class="meta" id="arbol-aviso" aria-live="polite">${esc(estado.aviso) || (estado.lineaSolo ? '' : `${N.indice(D).personas.size} personas. Las ramas empiezan plegadas: despliégalas con ▸ o busca un nombre para ir a él.`)}</p>
       <div id="arbol"${estado.mujeres ? ' class="resaltar-mujeres"' : ''}>${arbolHTML()}</div>`;
   }
   function resultadosHTML() {
     if (!estado.q) return '';
     const r = N.buscar(D, estado.q, 20);
-    return r.length ? r.map(p => `<li>${btnPersona(p.id)}${p.primera_ref ? ' <span class="meta">' + esc(p.primera_ref) + '</span>' : ''}</li>`).join('') : '<li class="meta">Sin resultados.</li>';
+    return r.length ? r.map(p => `<li><button type="button" class="persona-btn${p.sexo === 'f' ? ' mujer' : p.sexo === 'm' ? ' hombre' : ' indef'}" data-ir-arbol="${esc(p.id)}" aria-label="Ir a ${esc(p.nombre || p.id)} en el árbol">${esc(p.nombre || p.id)}${p.primera_ref ? ` <span class="meta">${esc(p.primera_ref)}</span>` : ''}</button></li>`).join('') : '<li class="meta">Sin resultados.</li>';
+  }
+  // Lleva a una persona: despliega sus ascendientes, pinta y la centra.
+  function irArbol(id) {
+    const u = abrirHasta(id);
+    if (!u) {
+      if (!N.sinParentesco(D).includes(id)) { abrirFicha(id); return; }
+      // Sin parentesco: abre su sección y la señala.
+      estado.lineaSolo = false; estado.sinParAbierta = true; estado.foco = id; estado.focoHash = id;
+      estado.aviso = `${nombre(id)} no tiene parentesco registrado en el texto: está en la lista del final.`;
+      try { history.replaceState(null, '', `#arbol/${encodeURIComponent(id)}`); } catch (e) { /* file:// */ }
+      rerender();
+      const li = main.querySelector('.foco-sp');
+      if (li) { li.scrollIntoView({ block: 'center' }); const b = li.querySelector('.persona-btn'); if (b) b.focus({ preventScroll: true }); }
+      return;
+    }
+    estado.lineaSolo = false; estado.focoHash = id;
+    try { history.replaceState(null, '', `#arbol/${encodeURIComponent(id)}`); } catch (e) { /* file:// */ }
+    rerender();
+    const f = main.querySelector('.fila.foco');
+    if (f) { f.scrollIntoView({ block: 'center' }); const b = f.querySelector('.persona-btn'); if (b) b.focus({ preventScroll: true }); }
+  }
+  // Una fila. opc: {agrupado (los hijos van bajo "Madre: …", así que no se repite), solo (vista de línea: sin plegar), gen}
+  function filaHTML(n, prof, opc) {
+    opc = opc || {};
+    const linea = N.lineaPrincipal(D), abierto = opc.solo || estado.abiertos.has(n.id), nh = opc.solo ? 0 : n.hijos.length;
+    const gen = opc.gen !== undefined ? opc.gen : prof;
+    return `<li class="fila${linea.has(n.id) ? ' en-linea' : ''}${estado.foco === n.id ? ' foco' : ''}" data-fila="${esc(n.id)}" data-prof="${prof}"${opc.agrupado ? ' data-agrupado="1"' : ''} style="--n:${Math.min(prof, 14)}">
+        <span class="gen" title="Generación ${gen + 1}">${gen + 1}</span>
+        ${nh ? `<button type="button" class="plegar" data-plegar="${esc(n.id)}" aria-expanded="${abierto}" aria-label="${abierto ? 'Plegar' : 'Desplegar'} descendencia de ${esc(nombre(n.id))} (${nh})">${abierto ? '▾' : '▸'}</button>` : '<span class="plegar vacio" aria-hidden="true"></span>'}
+        <span class="fila-cont">${btnPersona(n.id)}${etiquetaTrad(n.id)}${n.vinculos.map(r => insignia(r.certeza, r.ref)).join('')}${nh && !abierto ? `<span class="meta">(${nh} ${nh === 1 ? 'hijo' : 'hijos'})</span>` : ''}
+        ${opc.agrupado ? '' : n.madres.map(r => `<span class="sublinea madre">madre: ${btnPersona(r.de)}${insignia(r.certeza, r.ref)}</span>`).join('')}
+        ${n.conyuges.map(r => `<span class="sublinea cony"><span aria-label="cónyuge">⚭</span> ${btnPersona(r.otro)}${notaVinculo(r)}${insignia(r.certeza, r.ref)}</span>`).join('')}</span></li>`;
+  }
+  const grupoHTML = (g, prof) => `<li class="grupo-madre" data-prof="${prof}" style="--n:${Math.min(prof, 14)}"><span class="grupo-txt">${g.madre
+    ? `Madre: ${btnPersona(g.madre)}${notaVinculo(g.vinculo)}` : 'Madre no indicada en los datos'} <span class="meta">(${g.hijos.length})</span></span></li>`;
+  // Filas de los hijos (y sus ramas abiertas), agrupados por madre si hace falta.
+  function hijosHTML(n, prof) {
+    const gs = N.hijosPorMadre(D, n), agrupar = gs.length > 1 || !!gs[0].madre;
+    return gs.map(g => (agrupar ? grupoHTML(g, prof + 1) : '') + g.hijos.map(h => bloqueHTML(h, prof + 1, agrupar)).join('')).join('');
+  }
+  const bloqueHTML = (n, prof, agrupado) => filaHTML(n, prof, { agrupado }) + (n.hijos.length && estado.abiertos.has(n.id) ? hijosHTML(n, prof) : '');
+  // Nodo para una persona de la línea aunque no sea nodo del bosque (p. ej. si la ruta pasa por una madre).
+  function nodoLinea(id, padreId) {
+    const n = N.nodoArbol(D, id), I = N.indice(D);
+    const vinculos = (I.padres.get(id) || []).filter(x => x.de === padreId);
+    return n ? Object.assign({}, n, { vinculos: padreId ? vinculos : n.vinculos }) : { id, vinculos, hijos: [], conyuges: (I.conyuges.get(id) || []).filter((r, i, a) => a.findIndex(x => x.otro === r.otro) === i), madres: [] };
+  }
+  function lineaHTML(at) {
+    const M = N.mapaArbol(D), gen = (id, i) => { const x = M.nodos.get(id); return x ? x.prof : i; };
+    let html = at.ruta.map((id, i) => filaHTML(nodoLinea(id, at.ruta[i - 1]), i, { solo: true, gen: gen(id, i) })).join('');
+    if (at.extra.length) {
+      const fin = at.ruta[at.ruta.length - 1], nf = N.nodoArbol(D, fin), prof = at.ruta.length, g0 = gen(fin, prof - 1) + 1;
+      const gs = nf ? N.hijosPorMadre(D, nf) : [{ madre: null, hijos: at.extra.map(id => nodoLinea(id, fin)) }];
+      const agrupar = gs.length > 1 || !!gs[0].madre;
+      html += gs.map(g => (agrupar ? grupoHTML(g, prof) : '') + g.hijos.map(h => filaHTML(h, prof, { solo: true, agrupado: agrupar, gen: g0 })).join('')).join('');
+    }
+    return `<ul class="arbol" aria-label="Línea ${esc(tituloAtajo(at))}">${html}</ul>`;
   }
   function arbolHTML() {
     const bosque = N.construirBosque(D);
     if (!bosque.length) return '<p>No hay relaciones en los datos.</p>';
-    const linea = new Set(N.lineaAdanAbraham(D));
-    const filtro = estado.lineaSolo ? linea : null;
-    const filas = [];
-    const rec = (n, prof) => {
-      if (filtro && !filtro.has(n.id)) return;
-      const hijos = filtro ? n.hijos.filter(h => filtro.has(h.id)) : n.hijos;
-      const pleg = !filtro && estado.plegados.has(n.id);
-      filas.push(`<li class="fila${linea.has(n.id) ? ' en-linea' : ''}${estado.foco === n.id ? ' foco' : ''}" data-fila="${esc(n.id)}" style="--n:${Math.min(prof, 14)}">
-        <span class="gen" title="Generación ${prof + 1}">${prof + 1}</span>
-        ${hijos.length ? `<button type="button" class="plegar" data-plegar="${esc(n.id)}" aria-expanded="${!pleg}" aria-label="${pleg ? 'Desplegar' : 'Plegar'} descendencia de ${esc(nombre(n.id))}">${pleg ? '▸' : '▾'}</button>` : '<span class="plegar vacio" aria-hidden="true"></span>'}
-        <span class="fila-cont">${btnPersona(n.id)}${etiquetaTrad(n.id)}${n.vinculos.map(r => insignia(r.certeza, r.ref)).join('')}${pleg ? `<span class="meta">(${hijos.length} hijos)</span>` : ''}
-        ${n.madres.map(r => `<span class="sublinea madre">madre: ${btnPersona(r.de)}${insignia(r.certeza, r.ref)}</span>`).join('')}
-        ${n.conyuges.map(r => `<span class="sublinea cony"><span aria-label="cónyuge">⚭</span> ${btnPersona(r.otro)}${insignia(r.certeza, r.ref)}</span>`).join('')}</span></li>`);
-      if (!pleg) hijos.forEach(h => rec(h, prof + 1));
-    };
-    const partes = [];
-    (filtro ? bosque.slice(0, 1) : bosque).forEach((raiz, i) => {
-      filas.length = 0; rec(raiz, 0);
-      partes.push(`${i === 1 ? '<h2>Otras ramas</h2>' : ''}<ul class="arbol" aria-label="Descendencia de ${esc(nombre(raiz.id))}">${filas.join('')}</ul>`);
-    });
-    if (filtro && !linea.size) return '<p>No se encontró una línea de Adán a Abraham en los datos.</p>';
-    return partes.join('');
+    if (estado.lineaSolo) {
+      const at = N.atajosLinea(D).find(a => a.id === estado.lineaSolo);
+      if (at) return lineaHTML(at);
+      estado.lineaSolo = false;
+    }
+    const otras = bosque.slice(1);
+    return `<ul class="arbol" aria-label="Descendencia de ${esc(nombre(bosque[0].id))}">${bloqueHTML(bosque[0], 0)}</ul>
+      ${otras.length ? `<h2>Otras ramas (${otras.length})</h2><p class="meta">Familias sin enlace conocido con la rama principal.</p><ul class="arbol" aria-label="Otras ramas">${otras.map(r => bloqueHTML(r, 0)).join('')}</ul>` : ''}
+      ${sinParHTML()}`;
+  }
+  // Personas sin parentesco registrado: sección plegable al final, cada una abre su ficha.
+  function sinParHTML() {
+    const ids = N.sinParentesco(D);
+    if (!ids.length) return '';
+    return `<details class="plegable sin-parentesco" id="sin-parentesco"${estado.sinParAbierta ? ' open' : ''}>
+      <summary>Personas sin parentesco registrado en el texto (${ids.length})</summary>
+      <ul class="quien">${ids.map(id => { const p = N.persona(D, id) || {}; return `<li class="${estado.foco === id ? 'foco-sp' : ''}" data-sp="${esc(id)}">${btnPersona(id)}${p.rol ? `<span class="contexto">${esc(p.rol)}</span>` : ''}${p.primera_ref ? `<span class="meta">${refHTML(p.primera_ref)}</span>` : ''}</li>`; }).join('')}</ul></details>`;
+  }
+  // Despliega o pliega una rama en el DOM, sin repintar el resto.
+  function alternarRama(id) {
+    const fila = main.querySelector(`.fila[data-fila="${CSS.escape(id)}"]`), n = N.nodoArbol(D, id);
+    if (!fila || !n) return;
+    const prof = +fila.dataset.prof, abrir = !estado.abiertos.has(id);
+    if (abrir) estado.abiertos.add(id); else estado.abiertos.delete(id);
+    let s = fila.nextElementSibling;
+    while (s && +s.dataset.prof > prof) { const x = s.nextElementSibling; s.remove(); s = x; }
+    fila.insertAdjacentHTML('afterend', filaHTML(n, prof, { agrupado: fila.dataset.agrupado === '1' }) + (abrir ? hijosHTML(n, prof) : ''));
+    const nueva = fila.nextElementSibling; fila.remove();
+    const b = nueva && nueva.querySelector('[data-plegar]'); if (b) b.focus();
   }
 
   /* ---------- Edades ---------- */
@@ -669,15 +979,24 @@ if (typeof document !== 'undefined') (function () {
     return `<h1 tabindex="-1">Edades de los patriarcas</h1>
       <fieldset class="segmentos"><legend>Tradición</legend>${['TM', 'LXX', 'ambas'].map(t => `<label><input type="radio" name="trad" value="${t}" ${estado.trad === t ? 'checked' : ''}><span>${t === 'ambas' ? 'Ambas' : t}</span></label>`).join('')}</fieldset>
       <p class="leyenda"><span class="muestra difiere"></span> TM y LXX difieren (o solo una da el dato) · <span class="marca-calc">*</span> cálculo (no está escrito; se deduce) · pulsa una cifra para ver versículo, cita y fuente.</p>
-      ${orden.length ? `<div class="tabla-envoltura" tabindex="0" role="region" aria-label="Tabla de edades"><table class="edades"><thead>${cab}</thead><tbody>${filas}</tbody></table></div>` : '<p>No hay edades en los datos.</p>'}
+      ${orden.length ? `<div class="tabla-envoltura" tabindex="0" role="region" aria-label="Tabla de edades"><table class="edades"><thead>${cab}</thead><tbody>${filas}</tbody></table></div>` : '<p>No hay edades de patriarcas en los datos.</p>'}
+      ${eventosHTML()}
       <section class="vidas" aria-labelledby="vidas-t"><h2 id="vidas-t">Vidas solapadas <span class="insignia calculo">Cálculo</span></h2>
         <p class="aviso-calculo"><strong>Esto es un CÁLCULO, no lo dice el texto.</strong> Los “años desde Adán” se obtienen sumando las edades al engendrar de la línea Adán → Abraham en la tradición elegida. Supone que cada edad corresponde al hijo siguiente de la línea (p. ej. Gn 5:32 da 500 años a Noé para sus tres hijos), por lo que es una aproximación.</p>
         ${trads.map(barrasHTML).join('')}
       </section>`;
   }
+  function eventosHTML() {
+    const gs = N.edadesEnEventoPorPersona(D);
+    return `<section class="eventos" aria-labelledby="ev-t"><h2 id="ev-t">Edades en momentos del relato</h2>
+      ${gs.length ? `<p class="meta">Edad que el texto da a una persona en un momento concreto, en orden de versículo. Si la Septuaginta da otra cifra, se indica.</p>
+        <ul class="eventos-lista">${gs.map(g => `<li><h3>${btnPersona(g.persona)}</h3><ul class="edades-acomp">${g.items.map(eventoHTML).join('')}</ul></li>`).join('')}</ul>`
+        : '<p class="vacio-txt">Los datos todavía no traen edades en momentos del relato.</p>'}</section>`;
+  }
   function barrasHTML(trad) {
-    const filas = N.anosDesdeAdan(D, trad).filter(f => f.nacimiento !== null);
-    if (!filas.length) return `<p>Sin datos suficientes para ${trad}.</p>`;
+    const { filas, omitidas } = N.vidas(D, trad);
+    const aviso = omitidas.length ? `<p class="meta omitidas">Se ${omitidas.length === 1 ? 'omite' : 'omiten'} ${omitidas.length} ${omitidas.length === 1 ? 'persona' : 'personas'} con edades pero sin la cadena completa desde Adán, así que no se pueden situar: ${omitidas.map(id => esc(nombre(id))).join(', ')}.</p>` : '';
+    if (!filas.length) return `<p>Sin datos suficientes para ${trad}.</p>${aviso}`;
     const max = Math.max(1, ...filas.map(f => f.muerte !== null ? f.muerte : f.nacimiento));
     const paso = max > 3000 ? 500 : max > 1200 ? 250 : 100;
     const marcas = []; for (let a = 0; a <= max; a += paso) marcas.push(a);
@@ -689,7 +1008,7 @@ if (typeof document !== 'undefined') (function () {
       <ol class="barras">${filas.map(f => `<li><button type="button" class="barra-fila" data-calc="${trad}|${esc(f.id)}">
         <span class="barra-nombre">${esc(nombre(f.id))}</span><span class="barra-anos">${f.nacimiento}–${f.muerte !== null ? f.muerte : '?'}</span>
         <span class="pista" aria-hidden="true">${marcaDil}<span class="barra${f.muerte === null ? ' abierta' : ''}" style="left:${pct(f.nacimiento)};width:${f.muerte !== null ? pct(f.muerte - f.nacimiento) : '4px'}"></span></span></button></li>`).join('')}</ol>
-      <div class="eje" aria-hidden="true">${marcas.map(a => `<span style="left:${pct(a)}">${a}</span>`).join('')}</div>`;
+      <div class="eje" aria-hidden="true">${marcas.map(a => `<span style="left:${pct(a)}">${a}</span>`).join('')}</div>${aviso}`;
   }
 
   /* ---------- Fuentes ---------- */
@@ -738,12 +1057,16 @@ if (typeof document !== 'undefined') (function () {
     });
     const tieneEdades = N.TIPOS.some(t => N.TRADS.some(tr => N.edad(D, id, t, tr)));
     const dif = N.diferencias(D, id);
-    const edades = tieneEdades ? `<table class="edades mini"><thead><tr><th scope="col"></th><th scope="col">TM</th><th scope="col">LXX</th></tr></thead><tbody>${N.TIPOS.map(t => `<tr><th scope="row">${TIPO_TXT[t]}</th>${N.TRADS.map(tr => celda(id, t, tr, dif[t])).join('')}</tr>`).join('')}</tbody></table>` : '<p class="meta">Sin edades registradas.</p>';
+    const evs = N.edadesEnEvento(D).filter(x => x.persona === id);
+    const edades = (tieneEdades ? `<table class="edades mini"><thead><tr><th scope="col"></th><th scope="col">TM</th><th scope="col">LXX</th></tr></thead><tbody>${N.TIPOS.map(t => `<tr><th scope="row">${TIPO_TXT[t]}</th>${N.TRADS.map(tr => celda(id, t, tr, dif[t])).join('')}</tr>`).join('')}</tbody></table>` : '')
+      + (evs.length ? `<ul class="edades-acomp">${evs.map(eventoHTML).join('')}</ul>` : '') || '<p class="meta">Sin edades registradas.</p>';
     const refs = [...new Set([].concat(p.primera_ref ? [p.primera_ref] : [], p.refs || []))];
     fichaDlg.querySelector('h2').textContent = p.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
+      ${p.rol ? `<p class="rol">${esc(p.rol)}</p>` : ''}
       <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${p.primera_ref ? ' · aparece en ' + refHTML(p.primera_ref) : ''} ${etiquetaTrad(id)}</p>
-      ${(r => r ? `<p><a class="boton" href="#leer/${N.parseRef(r).cap}/${N.parseRef(r).v}">Leer donde aparece</a></p>` : '')([p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
+      <p class="acciones-ficha">${(r => r ? `<a class="boton" href="#leer/${N.parseRef(r).cap}/${N.parseRef(r).v}">Leer donde aparece</a>` : '')([p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
+        ${N.enPantallaArbol(D, id) ? `<a class="boton secundario" href="#arbol/${encodeURIComponent(id)}">Ver en el árbol</a>` : ''}</p>
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
       <h3>Hijos</h3>${lista(hijos, 'No constan.')}
@@ -807,6 +1130,7 @@ if (typeof document !== 'undefined') (function () {
     const P = N.proyeccion(MAPA && MAPA.bbox);
     const ubicados = cfg.ids.map(id => N.lugar(D, id)).filter(l => N.confianzaLugar(l) !== 'desconocida');
     const coord = l => [+l.ubicacion.lon, +l.ubicacion.lat];
+    const conf = ubicados.map(l => N.confianzaLugar(l)), prio = ubicados.map(l => N.prioridadLugar(l));
     let sel = cfg.sel, W = 320, H = 220;
     const v = { cx: 0, cy: 0, s: 1 };
     const pth = (ring, cerrar) => (ring || []).length ? 'M' + ring.map(p => N.proyectar(P, p[0], p[1]).map(n => n.toFixed(3)).join(' ')).join('L') + (cerrar ? 'Z' : '') : '';
@@ -843,9 +1167,15 @@ if (typeof document !== 'undefined') (function () {
           html += `<line class="alt-linea" x1="${x0}" y1="${y0}" x2="${x}" y2="${y}"/><g class="marcador alt" transform="translate(${x} ${y})"><title>Alternativa: ${esc(a.identificacion || '')}</title>${formaConf('alt', 6)}</g>`;
         });
       }
-      const items = ubicados.map(l => { const [x, y] = aPant(...coord(l)); const c = N.confianzaLugar(l); return { id: l.id, x, y, c, texto: l.nombre || l.id, prioridad: (l.id === sel ? 10 : 0) + { alta: 3, media: 2, baja: 1 }[c] }; });
+      // Solo lo que cae en pantalla; etiquetas por importancia, más cuanto más se acerca.
+      const items = [];
+      ubicados.forEach((l, i) => {
+        const [x, y] = aPant(...coord(l));
+        if (x < -20 || y < -20 || x > W + 20 || y > H + 20) return;
+        items.push({ id: l.id, x, y, c: conf[i], texto: l.nombre || l.id, prioridad: (l.id === sel ? 1e4 : 0) + prio[i] });
+      });
       items.forEach(it => { html += `<g class="marcador conf-${it.c}${it.id === sel ? ' sel' : ''}" transform="translate(${it.x.toFixed(1)} ${it.y.toFixed(1)})" data-lugar-mapa="${esc(it.id)}" tabindex="0" role="button" aria-label="${esc(it.texto)}, ${CONF_TXT[it.c].toLowerCase()}"><circle r="16" class="toque"/>${formaConf(it.c, it.id === sel ? 8 : 6)}</g>`; });
-      N.colocarEtiquetas(items, W, H).forEach(e => { html += `<text class="etq${e.id === sel ? ' sel' : ''}" x="${e.x.toFixed(1)}" y="${e.y.toFixed(1)}" text-anchor="${e.anc}">${esc(e.texto)}</text>`; });
+      N.colocarEtiquetas(items, W, H, cfg.mini ? Infinity : N.etiquetasPorZoom(v.s / (v.s0 || v.s), items.length)).forEach(e => { html += `<text class="etq${e.id === sel ? ' sel' : ''}" x="${e.x.toFixed(1)}" y="${e.y.toFixed(1)}" text-anchor="${e.anc}">${esc(e.texto)}</text>`; });
       capa.innerHTML = html;
     }
     function encuadrar() {
@@ -853,7 +1183,7 @@ if (typeof document !== 'undefined') (function () {
       const lsel = sel && N.lugar(D, sel);
       if (lsel) (lsel.alternativas || []).forEach(a => { if (Number.isFinite(+a.lat) && Number.isFinite(+a.lon)) pts.push([+a.lon, +a.lat]); });
       const r = N.encuadre(P, pts, { minimo: cfg.mini ? 4 : 3 });
-      v.s = Math.min(W / r.w, H / r.h); v.cx = r.x + r.w / 2; v.cy = r.y + r.h / 2;
+      v.s = Math.min(W / r.w, H / r.h); v.cx = r.x + r.w / 2; v.cy = r.y + r.h / 2; v.s0 = v.s;
       dibujar();
     }
     function zoomEn(px, py, f) {
@@ -952,9 +1282,9 @@ if (typeof document !== 'undefined') (function () {
     return `<h1 tabindex="-1">Mapa de los lugares</h1>
       <p class="sub">El nombre de cada lugar es texto bíblico; su ubicación es una identificación moderna con un grado de confianza. Lo que no se puede ubicar no se dibuja.</p>
       <div class="herr mapa-filtros">
-        <div class="campo"><label for="f-ambito">Pasaje o capítulo</label><select id="f-ambito">${opt('', 'Todo Génesis 1–11')}
-          <optgroup label="Capítulos">${caps.map(c => opt('cap-' + c.cap, `${c.libro || 'Génesis'} ${c.cap}`)).join('')}</optgroup>
-          ${(D.pasajes || []).length ? `<optgroup label="Pasajes">${ps.map(p => opt('p-' + p.id, p.titulo)).join('')}</optgroup>` : ''}</select></div>
+        <div class="campo"><label for="f-ambito">Pasaje o capítulo</label><select id="f-ambito">${opt('', 'Todo ' + N.alcance(D).texto)}
+          ${(D.pasajes || []).length ? N.seccionesPlan(D, [], null).map(g => `<optgroup label="${esc(g.titulo ? 'Pasajes · ' + g.titulo : 'Pasajes')}">${g.pasajes.map(x => opt('p-' + x.pasaje.id, x.pasaje.titulo)).join('')}</optgroup>`).join('') : ''}
+          <optgroup label="Capítulos">${caps.map(c => opt('cap-' + c.cap, `${c.libro || 'Génesis'} ${c.cap}`)).join('')}</optgroup></select></div>
         <div class="campo"><label for="buscar-lugar">Buscar lugar</label><input id="buscar-lugar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.mapaQ)}"></div>
         <fieldset class="conf-filtro"><legend>Confianza</legend>${['alta', 'media', 'baja'].map(c => `<label><input type="checkbox" data-conf="${c}" ${estado.mapaConf.has(c) ? 'checked' : ''}><span>${icoConf(c)}${c[0].toUpperCase() + c.slice(1)}</span></label>`).join('')}</fieldset>
       </div>
@@ -982,7 +1312,7 @@ if (typeof document !== 'undefined') (function () {
     montarMapas(main);
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
-    const marcado = main.querySelector('.vers.activo, .fila.foco');
+    const marcado = main.querySelector('.vers.activo, .fila.foco, .foco-sp');
     if (marcado && foco !== false) { marcado.scrollIntoView({ block: 'center' }); }
     else if (foco !== false && !primera) { window.scrollTo(0, 0); }
     if (foco !== false && !primera) { const h = main.querySelector('h1'); if (h) h.focus({ preventScroll: true }); }
@@ -990,25 +1320,36 @@ if (typeof document !== 'undefined') (function () {
   }
   function rerender(selectorFoco) { const y = window.scrollY; render(false); window.scrollTo(0, y); if (selectorFoco) { const el = main.querySelector(selectorFoco); if (el) el.focus(); } }
 
-  window.addEventListener('hashchange', () => { cerrar(detDlg); cerrar(fichaDlg); render(); });
+  window.addEventListener('hashchange', () => { cerrar(detDlg); cerrar(fichaDlg); estado.focoHash = undefined; render(); });
+  // Secciones del plan: se recuerda en la sesión cuáles abrió o cerró la persona.
+  document.addEventListener('toggle', e => {
+    const s = e.target; if (!s || !s.dataset) return;
+    if (s.dataset.sec) estado.secAbiertas.set(s.dataset.sec, s.open);
+    if (s.id === 'sin-parentesco') estado.sinParAbierta = s.open;
+  }, true);
+  document.addEventListener('keydown', e => {
+    if (e.target && e.target.id === 'buscar' && e.key === 'Enter') { const r = N.buscar(D, estado.q, 1)[0]; if (r) { e.preventDefault(); irArbol(r.id); } }
+  });
 
   document.addEventListener('click', e => {
     const t = e.target;
     if (t instanceof HTMLDialogElement && t.open) { cerrar(t); return; }
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
+    const ia = t.closest('[data-ir-arbol]'); if (ia) { irArbol(ia.dataset.irArbol); return; }
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
     const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
     const ca = t.closest('[data-calc]'); if (ca) { const [trad, id] = ca.dataset.calc.split('|'); detalleCalc(trad, id); return; }
-    const pl = t.closest('[data-plegar]'); if (pl) { const id = pl.dataset.plegar; estado.plegados.has(id) ? estado.plegados.delete(id) : estado.plegados.add(id); rerender(`[data-plegar="${CSS.escape(id)}"]`); return; }
+    const pl = t.closest('[data-plegar]'); if (pl) { alternarRama(pl.dataset.plegar); return; }
+    const at = t.closest('[data-atajo]'); if (at) { estado.lineaSolo = estado.lineaSolo === at.dataset.atajo ? false : at.dataset.atajo; estado.aviso = ''; rerender(`[data-atajo="${CSS.escape(at.dataset.atajo)}"]`); return; }
     const ac = t.closest('[data-activar]'); if (ac) { activar(ac.dataset.activar); return; }
     if (t.closest('[data-hoja]')) { estado.hoja = !estado.hoja; const a = $('#acompanante'); if (a) { a.classList.toggle('abierta', estado.hoja); a.querySelector('[data-hoja]').setAttribute('aria-expanded', estado.hoja); } return; }
     const ls = t.closest('[data-leido-seguir]'); if (ls) { const L = pasajesLeidos(); L.add(ls.dataset.leidoSeguir); store.set('biblia.pasajesLeidos', [...L]); const ps = N.pasajes(D), i = ps.findIndex(x => x.id === ls.dataset.leidoSeguir); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer'; return; }
     const ve = t.closest('.vers'); if (ve && !t.closest('button, a')) { activar(ve.dataset.v); return; }
     if (t.closest('#btn-mujeres')) { estado.mujeres = !estado.mujeres; rerender('#btn-mujeres'); return; }
-    if (t.closest('#btn-linea')) { estado.lineaSolo = !estado.lineaSolo; rerender('#btn-linea'); return; }
-    if (t.closest('#btn-plegar')) { N.construirBosque(D).forEach(function r(n) { if (n.hijos.length) estado.plegados.add(n.id); n.hijos.forEach(r); }); rerender('#btn-plegar'); return; }
-    if (t.closest('#btn-desplegar')) { estado.plegados.clear(); rerender('#btn-desplegar'); return; }
+    if (t.closest('#btn-todo')) { estado.lineaSolo = false; rerender('[data-atajo]'); return; }
+    if (t.closest('#btn-plegar')) { estado.abiertos = new Set(); rerender('#btn-plegar'); return; }
+    if (t.closest('#btn-desplegar')) { estado.abiertos = new Set([...N.mapaArbol(D).nodos.values()].filter(x => x.n.hijos.length).map(x => x.n.id)); rerender('#btn-desplegar'); return; }
   });
   document.addEventListener('change', e => {
     const t = e.target;
@@ -1038,7 +1379,10 @@ if (typeof document !== 'undefined') (function () {
     navigator.serviceWorker.addEventListener('controllerchange', () => { if (pedido) { pedido = false; location.reload(); } });
   }
 
-  function iniciar() { render(false); registrarSW(); }
+  function iniciar() {
+    const ml = document.querySelector('.marca-libro'); if (ml && D) ml.textContent = N.alcance(D).texto; // alcance de los datos, no fijo
+    render(false); registrarSW();
+  }
   if (!D && /[?&]ejemplo/.test(location.search)) {
     const s = document.createElement('script');
     s.src = 'pruebas/datos-ejemplo.js';

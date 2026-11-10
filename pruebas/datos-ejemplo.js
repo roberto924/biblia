@@ -9,7 +9,14 @@
     P('Jared_1', 'Jared', 'm', ['Gn 5:15']), P('Enoch_2', 'Enoc', 'm', ['Gn 5:18']), P('Methuselah_1', 'Matusalén', 'm', ['Gn 5:21']),
     P('Lamech_2', 'Lamec', 'm', ['Gn 5:25']), P('Noah_1', 'Noé', 'm', ['Gn 5:29']), P('Shem_1', 'Sem', 'm', ['Gn 5:32', 'Gn 11:10']),
     P('Arphaxad_1', 'Arfaxad', 'm', ['Gn 10:22', 'Gn 11:10']), P('Cainan_2', 'Cainán', 'm', ['Gn 11:12'], 'Solo en la Septuaginta (LXX Gn 11:12-13).'),
-    P('Shelah_1', 'Sala', 'm', ['Gn 11:12']), P('Abraham_1', 'Abram', 'm', ['Gn 11:26']),
+    P('Shelah_1', 'Sala', 'm', ['Gn 11:12']), P('Abraham_1', 'Abram', 'm', ['Gn 11:26', 'Gn 12:4'], 'Abram; Dios le cambia el nombre a Abraham (Gn 17:5). Un solo registro.'),
+    // Patriarcas (Gn 12–30) abreviados: Jacob con cuatro mujeres para agrupar hijos por madre
+    P('Isaac_1', 'Isaac', 'm', ['Gn 21:3', 'Gn 25:26']), P('Jacob_1', 'Jacob', 'm', ['Gn 25:26', 'Gn 29:32'], 'Llamado también Israel (Gn 32:28). Un solo registro.'),
+    P('Leah_1', 'Lea', 'f', ['Gn 29:32']), P('Rachel_1', 'Raquel', 'f', ['Gn 30:24']), P('Bilhah_1', 'Bilha', 'f', ['Gn 30:4']), P('Zilpah_1', 'Zilpa', 'f', ['Gn 30:4']),
+    P('Reuben_1', 'Rubén', 'm', ['Gn 29:32']), P('Dinah_1', 'Dina', 'f', ['Gn 30:24']), P('Joseph_1', 'José', 'm', ['Gn 30:24']),
+    P('Dan_1', 'Dan', 'm', ['Gn 30:4']), P('Gad_1', 'Gad', 'm', ['Gn 30:4']),
+    // Sin ningún parentesco registrado: van a su propia sección del Árbol
+    Object.assign(P('Melchizedek_1', 'Melquisedec', 'm', ['Gn 14:18']), { rol: 'rey de Salem' }), P('Deborah_1', 'Débora', 'f', ['Gn 35:8']),
     // Línea de Caín abreviada en el ejemplo (Enoc→Lamec omite generaciones) y mujeres
     P('Enoch_1', 'Enoc', 'm', ['Gn 4:17']), P('Lamech_1', 'Lamec', 'm', ['Gn 4:18'], 'Ejemplo abreviado.'),
     P('Adah_1', 'Ada', 'f', ['Gn 4:19']), P('Zillah_1', 'Zila', 'f', ['Gn 4:19']),
@@ -36,7 +43,16 @@
     R('Lamech_1', 'TubalCain_1', 'Gn 4:22'), R('Zillah_1', 'TubalCain_1', 'Gn 4:22', 'explicito', 'madre'),
     R('Lamech_1', 'Naamah_1', 'Gn 4:22'),
     R('Noah_1', 'NoahWife_1', 'Gn 7:7', 'explicito', 'conyuge'),
-    R('Cain_1', 'CainWife_1', 'Gn 4:17', 'explicito', 'conyuge')
+    R('Cain_1', 'CainWife_1', 'Gn 4:17', 'explicito', 'conyuge'),
+    R('Abraham_1', 'Isaac_1', 'Gn 21:3'), R('Isaac_1', 'Jacob_1', 'Gn 25:26'),
+    R('Jacob_1', 'Leah_1', 'Gn 29:32', 'explicito', 'conyuge'), R('Jacob_1', 'Rachel_1', 'Gn 30:24', 'explicito', 'conyuge'),
+    Object.assign(R('Jacob_1', 'Bilhah_1', 'Gn 30:4', 'explicito', 'conyuge'), { nota: 'sierva' }),
+    Object.assign(R('Jacob_1', 'Zilpah_1', 'Gn 30:4', 'explicito', 'conyuge'), { nota: 'concubina' }),
+    R('Jacob_1', 'Reuben_1', 'Gn 29:32'), R('Leah_1', 'Reuben_1', 'Gn 29:32', 'explicito', 'madre'),
+    R('Jacob_1', 'Dan_1', 'Gn 30:4'), R('Bilhah_1', 'Dan_1', 'Gn 30:4', 'explicito', 'madre'),
+    R('Jacob_1', 'Gad_1', 'Gn 30:4'), R('Zilpah_1', 'Gad_1', 'Gn 30:4', 'explicito', 'madre'),
+    R('Jacob_1', 'Dinah_1', 'Gn 30:24'), R('Leah_1', 'Dinah_1', 'Gn 30:24', 'inferido', 'madre'),
+    R('Jacob_1', 'Joseph_1', 'Gn 30:24'), R('Rachel_1', 'Joseph_1', 'Gn 30:24', 'explicito', 'madre')
   ];
   const edades = [];
   const E = (persona, trad, eng, rest, tot, ref) => {
@@ -60,6 +76,11 @@
   E('Cainan_2', 'LXX', 130, 330, null, 'Gn 11:13');
   E('Shelah_1', 'TM', 30, 403, null, 'Gn 11:14'); E('Shelah_1', 'LXX', 130, 330, null, 'Gn 11:14');
   ['TM', 'LXX'].forEach(t => edades.push({ persona: 'Noah_1', tipo: 'al_diluvio', tradicion: t, valor: 600, ref: 'Gn 7:6', certeza: 'texto', fuente: t === 'TM' ? 'rv1909' : 'brenton', cita: 'Y era Noé de seiscientos años' }));
+  // Edades en un momento del relato (tipo en_evento)
+  const EV = (persona, trad, valor, evento, ref) => edades.push({ persona, tipo: 'en_evento', evento, tradicion: trad, valor, ref, certeza: 'texto', fuente: trad === 'TM' ? 'rv1909' : 'brenton', cita: '' });
+  EV('Abraham_1', 'TM', 75, 'al salir de Harán', 'Gn 12:4'); EV('Abraham_1', 'LXX', 75, 'al salir de Harán', 'Gn 12:4');
+  EV('Abraham_1', 'TM', 100, 'cuando nació Isaac', 'Gn 21:5');
+  EV('Isaac_1', 'TM', 60, 'cuando nacieron Esaú y Jacob', 'Gn 25:26');
 
   const capitulos = [
     { libro: 'Génesis', cap: 4, versiculos: [
@@ -74,7 +95,12 @@
     { libro: 'Génesis', cap: 7, versiculos: [{ n: 6, texto: 'Y era Noé de seiscientos años cuando el diluvio de las aguas fue sobre la tierra.' }] },
     { libro: 'Génesis', cap: 11, versiculos: [{ n: 10, texto: 'Estas son las generaciones de Sem (texto de ejemplo).' }, { n: 12, texto: 'Y Arphaxad vivió treinta y cinco años… (ejemplo)' },
       { n: 31, texto: 'Y salieron con ellos de Ur de los Caldeos, para ir á la tierra de Canaán: y vinieron hasta Harán.' }] },
-    { libro: 'Génesis', cap: 8, versiculos: [{ n: 4, texto: 'Y reposó el arca sobre los montes de Ararat.' }] }
+    { libro: 'Génesis', cap: 8, versiculos: [{ n: 4, texto: 'Y reposó el arca sobre los montes de Ararat.' }] },
+    { libro: 'Génesis', cap: 12, versiculos: [{ n: 4, texto: 'Y fuése Abram, como Jehová le dijo; y era Abram de edad de setenta y cinco años cuando salió de Harán.' }] },
+    { libro: 'Génesis', cap: 21, versiculos: [{ n: 3, texto: 'Y llamó Abraham el nombre de su hijo Isaac (ejemplo).' }, { n: 5, texto: 'Y era Abraham de cien años cuando le nació Isaac su hijo.' }] },
+    { libro: 'Génesis', cap: 25, versiculos: [{ n: 26, texto: 'Y fué llamado su nombre Jacob; y era Isaac de edad de sesenta años (ejemplo).' }] },
+    { libro: 'Génesis', cap: 29, versiculos: [{ n: 32, texto: 'Y concibió Lea, y parió un hijo, y llamó su nombre Rubén.' }] },
+    { libro: 'Génesis', cap: 30, versiculos: [{ n: 4, texto: 'Así le dió á Bilha su sierva por mujer; y Jacob entró á ella (ejemplo con Dan y Gad).' }, { n: 24, texto: 'Y llamó su nombre José (ejemplo).' }] }
   ];
   capitulos.sort((a, b) => a.cap - b.cap);
   const textoDe = ref => { const [c, v] = ref.slice(3).split(':').map(Number); return capitulos.find(x => x.cap === c).versiculos.find(x => x.n === v).texto; };
@@ -108,9 +134,11 @@
     fuente: 'Natural Earth (ejemplo simplificado)', url: 'https://www.naturalearthdata.com/'
   };
   const pasajes = [
-    { id: 'ej-01', inicio: 'Gn 4:1', fin: 'Gn 4:22', titulo: 'Caín, Abel y la familia de Lamec', titulo_origen: 'editorial', resumen: 'Resumen de ejemplo.' },
-    { id: 'ej-02', inicio: 'Gn 5:1', fin: 'Gn 7:6', titulo: 'De Adán a Noé', titulo_origen: 'editorial', resumen: '' },
-    { id: 'ej-03', inicio: 'Gn 11:10', fin: 'Gn 11:31', titulo: 'Descendientes de Sem', titulo_origen: 'editorial', resumen: '' }
+    { id: 'ej-01', seccion: 'Los orígenes (Gn 4–7)', inicio: 'Gn 4:1', fin: 'Gn 4:22', titulo: 'Caín, Abel y la familia de Lamec', titulo_origen: 'editorial', resumen: 'Resumen de ejemplo.' },
+    { id: 'ej-02', seccion: 'Los orígenes (Gn 4–7)', inicio: 'Gn 5:1', fin: 'Gn 7:6', titulo: 'De Adán a Noé', titulo_origen: 'editorial', resumen: '' },
+    { id: 'ej-03', seccion: 'De Sem a Abram (Gn 11)', inicio: 'Gn 11:10', fin: 'Gn 11:31', titulo: 'Descendientes de Sem', titulo_origen: 'editorial', resumen: '' },
+    { id: 'ej-04', seccion: 'Abraham, Isaac y Jacob (Gn 12–30)', inicio: 'Gn 12:4', fin: 'Gn 21:5', titulo: 'Abram sale de Harán', titulo_origen: 'editorial', resumen: '' },
+    { id: 'ej-05', inicio: 'Gn 25:26', fin: 'Gn 30:24', titulo: 'Los hijos de Jacob', titulo_origen: 'editorial', resumen: 'Sin sección: hereda la anterior.' }
   ];
 
   g.BIBLIA_DATOS = {

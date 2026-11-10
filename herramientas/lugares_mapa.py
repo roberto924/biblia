@@ -8,6 +8,9 @@ import json
 import re
 import unicodedata
 
+import genesis_12_50 as g2
+import nombres_auto as na
+
 OB = "https://raw.githubusercontent.com/openbibleinfo/Bible-Geocoding-Data/main/"
 NE = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/"
 ARCHIVOS = {
@@ -107,13 +110,48 @@ def _leer_jsonl(ruta, ids):
     with open(ruta, encoding="utf-8") as f:
         for n, linea in enumerate(f, 1):
             d = json.loads(linea)
-            if d["id"] in ids:
+            if ids is None and any(v["usx"].startswith("GEN ") for v in d.get("verses", [])):
+                out[d["id"]] = (n, d)
+            elif ids is not None and d["id"] in ids:
                 out[d["id"]] = (n, d)
     return out
 
 
+def _slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", sin_acentos(s)).strip("-")
+
+
+def lugares_auto(anc, rv, usados):
+    """Lugares de OpenBible en Génesis no configurados a mano: forma RV1909 detectada en cada versículo."""
+    out, sin_forma, ids = [], [], {l[0] for l in LUGARES}
+    for obid, (_, d) in sorted(anc.items(), key=lambda x: x[1][0]):
+        if obid in usados:
+            continue
+        vs = [tuple(map(int, v["usx"][4:].split(":"))) for v in d.get("verses", []) if v["usx"].startswith("GEN ")]
+        if not vs:
+            continue
+        nombres_en = d.get("translation_name_counts") or {d["friendly_id"]: 1}
+        ingles = max(nombres_en.items(), key=lambda x: x[1])[0]
+        cuenta = {}
+        for r in vs:
+            f, _ = na.mejor_forma(ingles, rv.get(r, ""))
+            if f and f not in g2.FORMAS_LUGAR_EXCLUIDAS and f"{f}@{obid}" not in g2.FORMAS_LUGAR_EXCLUIDAS:
+                cuenta[f] = cuenta.get(f, 0) + 1
+        if not cuenta:
+            sin_forma.append(d["friendly_id"]); continue
+        formas = sorted(cuenta, key=lambda f: -cuenta[f])
+        nombre, tipo = g2.LUGARES2.get(obid, (formas[0], "otro"))
+        lid = _slug(nombre)
+        while lid in ids:
+            lid += "-2"
+        ids.add(lid)
+        out.append((lid, nombre, formas, obid, tipo, True, g2.NOTAS_LUGAR2.get(obid, ""),
+                    obid in g2.LUGARES2))
+    return out, sin_forma
+
+
 def construir_lugares(rv, menciones_personas, rutas, errores, avisos):
-    anc = _leer_jsonl(rutas["ob_ancient"], {l[3] for l in LUGARES})
+    anc = _leer_jsonl(rutas["ob_ancient"], None)
     mod_ids = set()
     for _, d in anc.values():
         mod_ids |= set(d.get("modern_associations", {}))
@@ -123,12 +161,14 @@ def construir_lugares(rv, menciones_personas, rutas, errores, avisos):
         ocupado.setdefault(m["ref"], []).append((m["inicio"], m["fin"]))
 
     lugares, menciones, descartadas = [], [], []
-    for lid, nombre, formas, obid, tipo, ubicar, nota in LUGARES:
+    auto, sin_forma = lugares_auto(anc, rv, {l[3] for l in LUGARES})
+    sin_moderno = [a[1] for a in auto if not a[7]]
+    for lid, nombre, formas, obid, tipo, ubicar, nota in [l[:7] for l in LUGARES + auto]:
         if obid not in anc:
             errores.append(f"OpenBible no tiene {obid} ({nombre})"); continue
         _, d = anc[obid]
         ob_refs = sorted({tuple(map(int, v["usx"][4:].split(":"))) for v in d.get("verses", [])
-                          if re.match(r"GEN ([1-9]|1[01]):", v["usx"])})
+                          if v["usx"].startswith("GEN ")})
         pats = [re.compile(r"(?<!\w)%s(?!\w)" % re.escape(sin_acentos(f))) for f in formas]
         refs = []
         for r in ob_refs:
@@ -164,6 +204,8 @@ def construir_lugares(rv, menciones_personas, rutas, errores, avisos):
             norm = "".join(n if len(n := sin_acentos(ch)) == 1 else ch.lower() for ch in texto)
             for p in pats:
                 for m in p.finditer(norm):
+                    if not texto[m.start()].isupper():
+                        continue  # «luz», «harán»: palabra común, no topónimo
                     a, b = u16(texto, m.start()), u16(texto, m.end())
                     if any(a < f and i < b for i, f in ocupado.get(gn(r), [])):
                         continue  # ya es mención de persona o de otro lugar
@@ -179,6 +221,8 @@ def construir_lugares(rv, menciones_personas, rutas, errores, avisos):
             norm = "".join(n if len(n := sin_acentos(ch)) == 1 else ch.lower() for ch in texto)
             for p in pats:
                 for m in p.finditer(norm):
+                    if not texto[m.start()].isupper():
+                        continue  # «luz», «harán»: palabra común, no topónimo
                     a, b = u16(texto, m.start()), u16(texto, m.end())
                     if not any(a < f and i < b for i, f in ocupado.get(gn(r), [])):
                         ambiguos.append(f"{gn(r)} «{texto[m.start():m.end()]}» sin asignar (ni persona ni lugar de OpenBible)")
@@ -214,7 +258,7 @@ def construir_lugares(rv, menciones_personas, rutas, errores, avisos):
         lineas.append(f'{lid}: ob_ancient.jsonl línea {n} "friendly_id":"{d["friendly_id"]}" → '
                       f'"{mid}" "name":"{ma["name"]}" "score":{ma["score"]}; ob_modern.jsonl línea {nm} '
                       f'"lonlat":"{dm["lonlat"]}" → {"OK" if ok else "DIFIERE"}')
-    return lugares, menciones, ambiguos, descartadas, lineas
+    return lugares, menciones, ambiguos, descartadas, lineas, sin_forma, sin_moderno
 
 
 # ---------------------------------------------------------------- mapa base
