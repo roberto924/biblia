@@ -2,7 +2,7 @@
 
 Aplicación web instalable (celular y PC) que acompaña la lectura de la Biblia con árbol genealógico, edades y plan de lectura. Cada dato muestra su versículo y su fuente, y distingue lo que dice el texto de lo inferido o calculado.
 
-**Piloto actual:** Génesis 1–11.
+**Alcance actual:** Génesis completo (capítulos 1–50): lectura por pasajes con acompañante, árbol, edades y mapa de lugares.
 
 ## Usarla
 
@@ -19,5 +19,7 @@ Abrir https://roberto924.github.io/biblia/ y elegir «Instalar» o «Agregar a p
 - Texto: Reina-Valera 1909, dominio público (eBible.org).
 - Septuaginta: traducción de Brenton (1851), dominio público (eBible.org).
 - Parentescos: BibleData, Brady Stephenson, CC BY 4.0, https://github.com/BradyStephenson/bible-data (modificados; ver `datos/LEEME.md`).
+- Ubicación de lugares: OpenBible.info Bible Geocoding, CC BY 4.0, https://www.openbible.info/geo/.
+- Mapa base: Natural Earth, dominio público.
 
 El estudio previo del proyecto está en `ESTUDIO.md`.
