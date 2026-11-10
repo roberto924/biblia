@@ -49,6 +49,64 @@ prueba('ninguna mujer queda fuera del árbol renderizable', () => {
   assert.deepEqual(j(N.contarMujeres(D)), { conNombre: 10, sinNombre: 2 });
   assert.deepEqual(j(D.personas.filter(p => p.sexo === 'f' && !N.enPantallaArbol(D, p.id)).map(p => p.id)), []);
 });
+console.log('Línea de tiempo (cálculo)');
+prueba('combinación y año de un evento por tradición y supuesto', () => {
+  assert.deepEqual(j(N.elecciones(D, {})), { tare: 'tare70' });
+  assert.deepEqual(j(N.elecciones(D, { tare: 'nada' })), { tare: 'tare70' });
+  assert.equal(N.combinacion(D, 'TM', {}), 'TM|tare70');
+  assert.equal(N.combinacion(D, 'LXX', { tare: 'tare130' }), 'LXX|tare130');
+  assert.equal(N.anioEvento(D, 'ev-nac-set', 'TM|tare70'), 130); assert.equal(N.anioEvento(D, 'ev-nac-set', 'LXX|tare70'), 230);
+  assert.equal(N.anioEvento(D, 'ev-nac-abram', 'TM|tare130'), 2008);
+  assert.equal(N.anioEvento(D, 'ev-sale-haran', 'LXX|tare130'), null);
+  assert.equal(N.anioEvento(D, 'nada', 'TM|tare70'), null);
+  assert.equal(N.crono({}), null); assert.equal(N.combinacion({}, 'TM', {}), null);
+});
+prueba('cadena de pasos desde Adán con subtotales', () => {
+  const c = j(N.cadenaEvento(D, 'ev-diluvio', 'TM|tare70'));
+  assert.deepEqual(c.map(x => [x.evento, x.anio]), [['ev-adan', 0], ['ev-nac-set', 130], ['ev-nac-enos', 235], ['ev-nac-noe', 1056], ['ev-diluvio', 1656]]);
+  assert.equal(c[4].pasos[0].ref, 'Gn 7:6');
+  assert.deepEqual(j(N.cadenaEvento(D, 'ev-diluvio', 'LXX|tare70')).map(x => x.anio).at(-1), 2242);
+  const Dc = { cronologia: { eventos: [{ id: 'a', depende_de: 'b', anios: {} }, { id: 'b', depende_de: 'a', anios: {} }] } };
+  assert.equal(N.cadenaEvento(Dc, 'a', 'TM').length, 2, 'un ciclo no cuelga');
+});
+prueba('quién vivía en un año', () => {
+  const v = j(N.vivosEn(D, 900, 'TM|tare70'));
+  assert.deepEqual(v.map(x => [x.persona, x.edad]), [['Adam_1', 900], ['Seth_1', 770]]);
+  assert.deepEqual(j(N.vivosEn(D, 1000, 'TM|tare70')).map(x => x.persona), ['Seth_1']);
+  assert.deepEqual(j(N.vivosEn(D, 1700, 'TM|tare70')).map(x => x.persona), ['Noah_1']);
+  assert.deepEqual(j(N.vivosEn(D, null, 'TM|tare70')), []);
+  const vida = N.vidasCrono(D, 'LXX|tare70').get('Noah_1');
+  assert.equal(vida.nacimiento, 1642); assert.equal(vida.muerte, 2592);
+});
+prueba('eventos de un ref y de un pasaje; vecinos fechados de un pasaje sin eventos', () => {
+  assert.deepEqual(j(N.eventosDeRefs(D, ['Gn 7:6'])).map(e => e.id), ['ev-diluvio']);
+  assert.deepEqual(j(N.eventosDePasaje(D, N.pasajeDe(D, 'Gn 5:1'))).map(e => e.id), ['ev-adan', 'ev-nac-set', 'ev-muere-adan', 'ev-nac-enos', 'ev-muere-set', 'ev-nac-noe', 'ev-diluvio']);
+  const p1 = N.pasajeDe(D, 'Gn 4:1');
+  assert.deepEqual(j(N.eventosDePasaje(D, p1)), []);
+  const v = j(N.vecinosFechados(D, p1.inicio, p1.fin, 'TM|tare70'));
+  assert.equal(v.anterior, null); assert.equal(v.siguiente.evento, 'ev-adan');
+  const v2 = j(N.vecinosFechados(D, 'Gn 8:4', 'Gn 8:4', 'TM|tare70'));
+  assert.equal(v2.anterior.evento, 'ev-diluvio'); assert.equal(v2.siguiente.evento, 'ev-muere-noe');
+  assert.deepEqual(j(N.despuesDe(D, 'ev-diluvio', 'TM|tare70')), { evento: 'ev-nac-noe', titulo: 'Nace Noé', anios: 600 });
+  assert.equal(N.despuesDe(D, 'ev-adan', 'TM|tare70'), null);
+});
+prueba('comparación TM/LXX y línea de tiempo por secciones con hitos sin fecha', () => {
+  assert.deepEqual(j(N.compararEvento(D, 'ev-diluvio', {})), { TM: 1656, LXX: 2242, dif: 586 });
+  assert.equal(N.compararEvento(D, 'ev-sale-haran', { tare: 'tare130' }).dif, null);
+  const L = j(N.lineaDeTiempo(D, 'TM|tare70'));
+  assert.equal(L[0].titulo, 'Los orígenes (Gn 4–7)');
+  // El eje solo lleva sucesos con año; los hitos sin fecha van aparte, en orden de lectura.
+  assert.deepEqual(L[0].items.map(x => x.evento.id), ['ev-adan', 'ev-nac-set', 'ev-nac-enos', 'ev-muere-adan', 'ev-muere-set', 'ev-nac-noe', 'ev-diluvio']);
+  assert.ok(L.every(g => g.items.every(x => x.tipo === 'evento')));
+  assert.deepEqual(L[0].hitos.map(h => h.hito.ref), ['Gn 4:8', 'Gn 6:1']);
+  assert.ok(N.esDiluvio(L[0].items.at(-1).evento));
+  const Lx = j(N.lineaDeTiempo(D, 'LXX|tare130'));
+  const gA = Lx.find(g => g.items.some(x => x.evento && x.evento.id === 'ev-sale-haran'));
+  assert.equal(gA.titulo, 'Abraham, Isaac y Jacob (Gn 12–30)');
+  assert.equal(gA.items.at(-1).evento.id, 'ev-sale-haran', 'sin año en esta combinación: al final');
+  assert.equal(Lx.at(-1).titulo, 'Otros', 'eventos fuera de los pasajes, al final');
+  assert.deepEqual(j(N.lineaDeTiempo({}, 'TM')), []);
+});
 prueba('personas sin parentesco: sección propia en orden de aparición, con rol', () => {
   assert.deepEqual(j(N.sinParentesco(D)), ['Melchizedek_1', 'Deborah_1']);
   assert.equal(N.persona(D, 'Melchizedek_1').rol, 'rey de Salem');
@@ -361,6 +419,17 @@ if (existsSync(real)) {
     assert.ok(secs.length >= 1 && secs.reduce((s, g) => s + g.total, 0) === N3.pasajes(D3).length);
     assert.ok(tIdx + tTab < 1500, 'abrir la app no debe bloquear');
     assert.ok(tPas < 100, 'un pasaje con su acompañante se calcula en menos de 100 ms');
+  });
+  prueba('cronología real: línea, cadenas y vecinos sin excepciones', () => {
+    const C = N2.crono(D2);
+    if (!C) { console.log('     (los datos aún no traen cronologia: se omite)'); return; }
+    const e = N2.elecciones(D2, {}), combos = ['TM', 'LXX'].map(t => N2.combinacion(D2, t, e));
+    const t0 = performance.now();
+    combos.forEach(c => { N2.lineaDeTiempo(D2, c); C.eventos.forEach(ev => { const cad = N2.cadenaEvento(D2, ev.id, c); assert.equal(cad.at(-1).evento, ev.id); N2.vivosEn(D2, N2.anioEvento(D2, ev.id, c), c); }); });
+    N2.pasajes(D2).forEach(p => { if (!N2.eventosDePasaje(D2, p).length) N2.vecinosFechados(D2, p.inicio, p.fin, combos[0]); });
+    const conAnio = C.eventos.filter(ev => N2.anioEvento(D2, ev.id, combos[0]) !== null).length;
+    const dil = C.eventos.find(N2.esDiluvio);
+    console.log(`     cronología: ${C.eventos.length} sucesos (${conAnio} con año en ${combos[0]}), ${C.supuestos.length} supuestos, ${C.hitos.length} hitos sin fecha; diluvio ${dil ? 'TM ' + N2.anioEvento(D2, dil.id, combos[0]) + ' / LXX ' + N2.anioEvento(D2, dil.id, combos[1]) : 'no encontrado'}; ${(performance.now() - t0).toFixed(0)} ms`);
   });
 } else console.log('(datos/genesis.js aún no existe: se omiten las pruebas con datos reales)');
 

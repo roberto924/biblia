@@ -20,6 +20,7 @@ Generado por `herramientas/construir_datos.py`; no editar a mano. Define `window
 - `primera_ref` = la primera referencia de esa persona (en sus relaciones o edades) cuyo versículo contiene su nombre; no siempre es la primera mención absoluta.
 
 **Limitaciones**
+- `cronologia`: Génesis no da fechas. Cada año («años desde la creación de Adán») es un cálculo que sigue `depende_de` y suma las edades de `edades` paso a paso. Va por tradición (TM/LXX) y por supuestos (Taré 70/130; Sem/Arfaxad «dos años después del diluvio» o Noé 500; José, cálculo de varios pasos). El script comprueba TM diluvio 1656, LXX 2242 y Abram 1948/2008. Sin fechas a. C.; los `hitos_sin_fecha` van solo en el orden del relato.
 - Gn 12–50: las formas RV1909 de personas y lugares se detectan por script (parecido con la etiqueta inglesa de BibleData/OpenBible en cada versículo; ajustes a mano en `herramientas/genesis_12_50.py`), igual que la grafía actual. `edades` añade `tipo: "en_evento"` con `evento`. `pasajes` lleva `seccion` (6 secciones editoriales). Las concubinas y siervas van como `conyuge`, con una nota sobre cómo las llama el texto. Jucam (Gn 36:27) solo está en la LXX.
 - Brenton traduce un texto griego concreto (básicamente el Códice Vaticano); otros manuscritos y ediciones de la LXX (p. ej. Rahlfs) dan cifras distintas en algunos casos (Matusalén, Lamec).
 - El Pentateuco Samaritano NO está incluido: no hay fuente abierta verificada para sus cifras y no se inventan.

@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))  # para importar lugare
 import lugares_mapa as lm  # noqa: E402
 
 import nombres_auto as na  # noqa: E402
+import cronologia as cr  # noqa: E402
 import genesis_12_50 as g2  # noqa: E402
 
 MAXCAP = 50
@@ -878,6 +879,37 @@ def main():
         if not p.get("rol"):
             errores.append(f"Persona sin relación ni rol: {p['id']}")
 
+    # ------------------------------------------------------------ cronología relativa
+    nombre_de = {p["id"]: p["nombre"] for p in personas}
+    rango_pasaje = [(pos[parse_gn(p["inicio"])], pos[parse_gn(p["fin"])], p["id"]) for p in pasajes]
+
+    def pasaje_de(ref):
+        if not ref:
+            return None
+        m = re.match(r"Gn (\d+):(\d+)", ref)
+        i = pos.get((int(m.group(1)), int(m.group(2))))
+        return next((pid for a0, b0, pid in rango_pasaje if i is not None and a0 <= i <= b0), None)
+
+    cronologia, vivos_diluvio, edades_usadas = cr.construir(
+        edades, lambda q: nombre_de.get(q, q), {"TM": rv, "LXX": br}, numeral_a_numero, parse_gn, pasaje_de, errores)
+    for h in cronologia["hitos_sin_fecha"]:
+        h["pasaje"] = pasaje_de(h["ref"])
+    EV = {e["id"]: e for e in cronologia["eventos"]}
+    for e in cronologia["eventos"]:
+        for c, v in e["anios"].items():
+            if v is None and c.startswith("TM") and "cainan11" not in e["id"]:
+                errores.append(f"Evento sin año en TM: {e['id']} {c}")
+            if v is None and c.startswith("LXX"):
+                errores.append(f"Evento sin año en LXX: {e['id']} {c}")
+    for eid, comb, esperado in (("ev-diluvio", "TM|tare70|sem2", 1656), ("ev-diluvio", "LXX|tare70|sem2", 2242),
+                                ("ev-nac-abram", "TM|tare70|sem2", 1948), ("ev-nac-abram", "TM|tare130|sem2", 2008)):
+        if EV[eid]["anios"][comb] != esperado:
+            errores.append(f"Cronología: {eid} {comb} = {EV[eid]['anios'][comb]}, se esperaba {esperado}")
+    claves_edad = {(e["persona"], e["tipo"]) for e in edades}
+    for persona, tipo, ref in edades_usadas:
+        if (persona, tipo) not in claves_edad:
+            errores.append(f"Edad usada inexistente: {persona} {tipo} {ref}")
+
     # ------------------------------------------------------------ lugares y mapa
     rutas = {}
     for k, (url, nombre) in lm.ARCHIVOS.items():
@@ -905,7 +937,7 @@ def main():
     datos = {"generado": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
              "fuentes": FUENTES + lm.FUENTES, "capitulos": capitulos, "personas": personas,
              "relaciones": relaciones, "edades": edades, "pasajes": pasajes, "menciones": menciones,
-             "lugares": lugares, "menciones_lugar": menciones_lugar}
+             "lugares": lugares, "menciones_lugar": menciones_lugar, "cronologia": cronologia}
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text("window.BIBLIA_DATOS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n",
                       encoding="utf-8")
@@ -990,6 +1022,18 @@ def main():
     for (pa, ma), hijos in sorted(sin_vinculo.items()):
         print(f"  - {pa} + {ma} → {hijos}: {g2.SIN_PAREJA_NOTA.get((pa, ma), 'SIN EXPLICAR')}")
     print(f"Personas sin relación ({len(sueltas)}): " + "; ".join(f"{p['nombre']} ({p['rol']}, {p['primera_ref']})" for p in sueltas))
+    print(f"Cronología: {len(cronologia['eventos'])} eventos, {len(cronologia['combinaciones'])} combinaciones, "
+          f"{len(cronologia['hitos_sin_fecha'])} hitos sin fecha")
+    print("  Año (supuestos por defecto)          TM    LXX")
+    for eid in ("ev-diluvio", "ev-nac-abram", "ev-nac-isaac", "ev-nac-esau-jacob", "ev-jacob-egipto", "ev-muerte-jose"):
+        print(f"  {EV[eid]['titulo'][:34]:34} {EV[eid]['anios']['TM|tare70|sem2']:>5} {EV[eid]['anios']['LXX|tare70|sem2']:>5}")
+    print(f"  Nace Abram con tare130: TM {EV['ev-nac-abram']['anios']['TM|tare130|sem2']}; con noe500: TM "
+          f"{EV['ev-nac-abram']['anios']['TM|tare70|noe500']}")
+    j = EV["ev-jacob-egipto"]["anios"]["TM|tare70|sem2"] - EV["ev-nac-jose"]["anios"]["TM|tare70|sem2"]
+    print(f"  Edad de Jacob al nacer José (cálculo): {130 - j}")
+    for c in ("TM|tare70|sem2", "LXX|tare70|sem2"):
+        print(f"  Vivos al comenzar el diluvio ({c}): " + ", ".join(
+            f"{nombre_de.get(p, p)} (muere {d} años después)" for p, d in vivos_diluvio[c]))
     print(f"Tamaño: genesis.js {SALIDA.stat().st_size / 1024:.0f} KB; mapa-base.js {tam_mapa / 1024:.1f} KB")
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")

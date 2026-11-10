@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-10T07:22:39+00:00",
+ "generado": "2026-11-10T07:55:55+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -37499,5 +37499,2561 @@ window.BIBLIA_DATOS = {
    "inicio": 88,
    "fin": 94
   }
- ]
+ ],
+ "cronologia": {
+  "unidad": "años desde la creación de Adán (cálculo)",
+  "supuestos": [
+   {
+    "id": "tare",
+    "pregunta": "¿Qué edad tenía Taré al nacer Abram?",
+    "opciones": [
+     {
+      "id": "tare70",
+      "texto": "70 años (lectura directa de Gn 11:26)",
+      "refs": [
+       "Gn 11:26"
+      ],
+      "nota": "Gn 11:26 dice que Taré vivió setenta años y engendró a Abram, Nacor y Harán; se toma a Abram como nacido entonces."
+     },
+     {
+      "id": "tare130",
+      "texto": "130 años (Abram sale de Harán a los 75, tras morir Taré a los 205)",
+      "refs": [
+       "Gn 11:32",
+       "Gn 12:4"
+      ],
+      "nota": "Supone que Abram salió de Harán después de morir Taré; se apoya además en Hechos 7:4, fuera de Génesis."
+     }
+    ],
+    "defecto": "tare70"
+   },
+   {
+    "id": "sem",
+    "pregunta": "¿Cómo se enlaza Sem con el diluvio?",
+    "opciones": [
+     {
+      "id": "sem2",
+      "texto": "Arfaxad nace «dos años después del diluvio» (Gn 11:10)",
+      "refs": [
+       "Gn 11:10",
+       "Gn 7:6"
+      ],
+      "nota": "Sem tenía 100 años al engendrar a Arfaxad; con ello Sem nace cuando Noé tiene 502."
+     },
+     {
+      "id": "noe500",
+      "texto": "Sem nace cuando Noé tiene 500 años (Gn 5:32)",
+      "refs": [
+       "Gn 5:32",
+       "Gn 11:10"
+      ],
+      "nota": "Gn 5:32 nombra a los tres hijos a la vez; tomarlo como edad de Noé al nacer Sem deja a Arfaxad naciendo el año del diluvio."
+     }
+    ],
+    "defecto": "sem2"
+   },
+   {
+    "id": "jose",
+    "pregunta": "¿Qué edad tenía Jacob al nacer José?",
+    "opciones": [
+     {
+      "id": "jose91",
+      "texto": "91 años: cálculo de varios pasos (130 − 30 − 7 − 2)",
+      "refs": [
+       "Gn 47:9",
+       "Gn 41:46",
+       "Gn 41:47",
+       "Gn 45:6"
+      ],
+      "nota": "Jacob tiene 130 ante Faraón; José tenía 30 al presentarse ante Faraón, pasan 7 años de abundancia y 2 de hambre hasta que llega Jacob. Génesis no da la edad de Jacob al nacer José."
+     }
+    ],
+    "defecto": "jose91"
+   }
+  ],
+  "notas": [
+   "Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta: en la LXX su generación (130 años) se suma en la cadena; en el TM no existe. No es un supuesto: es propio de cada tradición.",
+   "Convención del cálculo: una edad N al ocurrir algo se cuenta como N años después del nacimiento.",
+   "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas."
+  ],
+  "combinaciones": [
+   {
+    "id": "TM|tare70|sem2",
+    "tradicion": "TM",
+    "supuestos": {
+     "tare": "tare70",
+     "sem": "sem2",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "TM|tare70|noe500",
+    "tradicion": "TM",
+    "supuestos": {
+     "tare": "tare70",
+     "sem": "noe500",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "TM|tare130|sem2",
+    "tradicion": "TM",
+    "supuestos": {
+     "tare": "tare130",
+     "sem": "sem2",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "TM|tare130|noe500",
+    "tradicion": "TM",
+    "supuestos": {
+     "tare": "tare130",
+     "sem": "noe500",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "LXX|tare70|sem2",
+    "tradicion": "LXX",
+    "supuestos": {
+     "tare": "tare70",
+     "sem": "sem2",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "LXX|tare70|noe500",
+    "tradicion": "LXX",
+    "supuestos": {
+     "tare": "tare70",
+     "sem": "noe500",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "LXX|tare130|sem2",
+    "tradicion": "LXX",
+    "supuestos": {
+     "tare": "tare130",
+     "sem": "sem2",
+     "jose": "jose91"
+    }
+   },
+   {
+    "id": "LXX|tare130|noe500",
+    "tradicion": "LXX",
+    "supuestos": {
+     "tare": "tare130",
+     "sem": "noe500",
+     "jose": "jose91"
+    }
+   }
+  ],
+  "eventos": [
+   {
+    "id": "ev-adan",
+    "titulo": "Creación de Adán (año 0 del cálculo)",
+    "tipo": "nacimiento",
+    "ref": "Gn 1:27",
+    "pasaje": "gn-02",
+    "personas": [
+     "Adam_1"
+    ],
+    "depende_de": null,
+    "pasos": [],
+    "anios": {
+     "TM|tare70|sem2": 0,
+     "TM|tare70|noe500": 0,
+     "TM|tare130|sem2": 0,
+     "TM|tare130|noe500": 0,
+     "LXX|tare70|sem2": 0,
+     "LXX|tare70|noe500": 0,
+     "LXX|tare130|sem2": 0,
+     "LXX|tare130|noe500": 0
+    },
+    "certeza": "calculo",
+    "nota": "Punto de partida del cálculo."
+   },
+   {
+    "id": "ev-nac-set",
+    "titulo": "Nace Set",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:3",
+    "pasaje": "gn-10",
+    "personas": [
+     "Seth_1"
+    ],
+    "depende_de": "ev-adan",
+    "pasos": [
+     {
+      "texto": "Adán tenía 130 años al engendrar a Set",
+      "signo": 1,
+      "ref": "Gn 5:3",
+      "edad": {
+       "persona": "Adam_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 130,
+     "TM|tare70|noe500": 130,
+     "TM|tare130|sem2": 130,
+     "TM|tare130|noe500": 130,
+     "LXX|tare70|sem2": 230,
+     "LXX|tare70|noe500": 230,
+     "LXX|tare130|sem2": 230,
+     "LXX|tare130|noe500": 230
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-enos",
+    "titulo": "Nace Enós",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:6",
+    "pasaje": "gn-10",
+    "personas": [
+     "Enosh_1"
+    ],
+    "depende_de": "ev-nac-set",
+    "pasos": [
+     {
+      "texto": "Set tenía 105 años al engendrar a Enós",
+      "signo": 1,
+      "ref": "Gn 5:6",
+      "edad": {
+       "persona": "Seth_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 235,
+     "TM|tare70|noe500": 235,
+     "TM|tare130|sem2": 235,
+     "TM|tare130|noe500": 235,
+     "LXX|tare70|sem2": 435,
+     "LXX|tare70|noe500": 435,
+     "LXX|tare130|sem2": 435,
+     "LXX|tare130|noe500": 435
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-cainan5",
+    "titulo": "Nace Cainán",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:9",
+    "pasaje": "gn-10",
+    "personas": [
+     "Kenan_1"
+    ],
+    "depende_de": "ev-nac-enos",
+    "pasos": [
+     {
+      "texto": "Enós tenía 90 años al engendrar a Cainán",
+      "signo": 1,
+      "ref": "Gn 5:9",
+      "edad": {
+       "persona": "Enosh_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 325,
+     "TM|tare70|noe500": 325,
+     "TM|tare130|sem2": 325,
+     "TM|tare130|noe500": 325,
+     "LXX|tare70|sem2": 625,
+     "LXX|tare70|noe500": 625,
+     "LXX|tare130|sem2": 625,
+     "LXX|tare130|noe500": 625
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-mahalaleel",
+    "titulo": "Nace Mahalaleel",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:12",
+    "pasaje": "gn-11",
+    "personas": [
+     "Mahalalel_1"
+    ],
+    "depende_de": "ev-nac-cainan5",
+    "pasos": [
+     {
+      "texto": "Cainán tenía 70 años al engendrar a Mahalaleel",
+      "signo": 1,
+      "ref": "Gn 5:12",
+      "edad": {
+       "persona": "Kenan_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 395,
+     "TM|tare70|noe500": 395,
+     "TM|tare130|sem2": 395,
+     "TM|tare130|noe500": 395,
+     "LXX|tare70|sem2": 795,
+     "LXX|tare70|noe500": 795,
+     "LXX|tare130|sem2": 795,
+     "LXX|tare130|noe500": 795
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-jared",
+    "titulo": "Nace Jared",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:15",
+    "pasaje": "gn-11",
+    "personas": [
+     "Jared_1"
+    ],
+    "depende_de": "ev-nac-mahalaleel",
+    "pasos": [
+     {
+      "texto": "Mahalaleel tenía 65 años al engendrar a Jared",
+      "signo": 1,
+      "ref": "Gn 5:15",
+      "edad": {
+       "persona": "Mahalalel_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 460,
+     "TM|tare70|noe500": 460,
+     "TM|tare130|sem2": 460,
+     "TM|tare130|noe500": 460,
+     "LXX|tare70|sem2": 960,
+     "LXX|tare70|noe500": 960,
+     "LXX|tare130|sem2": 960,
+     "LXX|tare130|noe500": 960
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-enoc",
+    "titulo": "Nace Enoc",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:18",
+    "pasaje": "gn-11",
+    "personas": [
+     "Enoch_2"
+    ],
+    "depende_de": "ev-nac-jared",
+    "pasos": [
+     {
+      "texto": "Jared tenía 162 años al engendrar a Enoc",
+      "signo": 1,
+      "ref": "Gn 5:18",
+      "edad": {
+       "persona": "Jared_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 622,
+     "TM|tare70|noe500": 622,
+     "TM|tare130|sem2": 622,
+     "TM|tare130|noe500": 622,
+     "LXX|tare70|sem2": 1122,
+     "LXX|tare70|noe500": 1122,
+     "LXX|tare130|sem2": 1122,
+     "LXX|tare130|noe500": 1122
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-matusalen",
+    "titulo": "Nace Matusalén",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:21",
+    "pasaje": "gn-12",
+    "personas": [
+     "Methuselah_1"
+    ],
+    "depende_de": "ev-nac-enoc",
+    "pasos": [
+     {
+      "texto": "Enoc tenía 65 años al engendrar a Matusalén",
+      "signo": 1,
+      "ref": "Gn 5:21",
+      "edad": {
+       "persona": "Enoch_2",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 687,
+     "TM|tare70|noe500": 687,
+     "TM|tare130|sem2": 687,
+     "TM|tare130|noe500": 687,
+     "LXX|tare70|sem2": 1287,
+     "LXX|tare70|noe500": 1287,
+     "LXX|tare130|sem2": 1287,
+     "LXX|tare130|noe500": 1287
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-lamec",
+    "titulo": "Nace Lamec",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:25",
+    "pasaje": "gn-12",
+    "personas": [
+     "Lamech_2"
+    ],
+    "depende_de": "ev-nac-matusalen",
+    "pasos": [
+     {
+      "texto": "Matusalén tenía 187 años al engendrar a Lamec",
+      "signo": 1,
+      "ref": "Gn 5:25",
+      "edad": {
+       "persona": "Methuselah_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 874,
+     "TM|tare70|noe500": 874,
+     "TM|tare130|sem2": 874,
+     "TM|tare130|noe500": 874,
+     "LXX|tare70|sem2": 1454,
+     "LXX|tare70|noe500": 1454,
+     "LXX|tare130|sem2": 1454,
+     "LXX|tare130|noe500": 1454
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-noe",
+    "titulo": "Nace Noé",
+    "tipo": "nacimiento",
+    "ref": "Gn 5:28",
+    "pasaje": "gn-12",
+    "personas": [
+     "Noah_1"
+    ],
+    "depende_de": "ev-nac-lamec",
+    "pasos": [
+     {
+      "texto": "Lamec tenía 182 años al engendrar a Noé",
+      "signo": 1,
+      "ref": "Gn 5:28",
+      "edad": {
+       "persona": "Lamech_2",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1056,
+     "TM|tare70|noe500": 1056,
+     "TM|tare130|sem2": 1056,
+     "TM|tare130|noe500": 1056,
+     "LXX|tare70|sem2": 1642,
+     "LXX|tare70|noe500": 1642,
+     "LXX|tare130|sem2": 1642,
+     "LXX|tare130|noe500": 1642
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-diluvio",
+    "titulo": "Comienza el diluvio",
+    "tipo": "evento",
+    "ref": "Gn 7:6",
+    "pasaje": "gn-15",
+    "personas": [
+     "Noah_1"
+    ],
+    "depende_de": "ev-nac-noe",
+    "pasos": [
+     {
+      "texto": "Noé tenía 600 años cuando llegó el diluvio",
+      "signo": 1,
+      "ref": "Gn 7:6",
+      "edad": {
+       "persona": "Noah_1",
+       "tipo": "al_diluvio"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1656,
+     "TM|tare70|noe500": 1656,
+     "TM|tare130|sem2": 1656,
+     "TM|tare130|noe500": 1656,
+     "LXX|tare70|sem2": 2242,
+     "LXX|tare70|noe500": 2242,
+     "LXX|tare130|sem2": 2242,
+     "LXX|tare130|noe500": 2242
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-fin-diluvio",
+    "titulo": "Las aguas se secan (fin del diluvio)",
+    "tipo": "evento",
+    "ref": "Gn 8:13",
+    "pasaje": "gn-17",
+    "personas": [
+     "Noah_1"
+    ],
+    "depende_de": "ev-nac-noe",
+    "pasos": [
+     {
+      "texto": "«Año 601» de la vida de Noé",
+      "signo": 1,
+      "ref": "Gn 8:13",
+      "cifra_texto": {
+       "TM": "año seiscientos y uno",
+       "LXX": "six hundred and first year"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1657,
+     "TM|tare70|noe500": 1657,
+     "TM|tare130|sem2": 1657,
+     "TM|tare130|noe500": 1657,
+     "LXX|tare70|sem2": 2243,
+     "LXX|tare70|noe500": 2243,
+     "LXX|tare130|sem2": 2243,
+     "LXX|tare130|noe500": 2243
+    },
+    "certeza": "calculo",
+    "nota": "Se cuenta el «año 601» como 601 años desde su nacimiento, igual que las demás edades."
+   },
+   {
+    "id": "ev-nac-sem",
+    "titulo": "Nace Sem",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:10",
+    "pasaje": "gn-25",
+    "personas": [
+     "Shem_1"
+    ],
+    "depende_de": "ev-nac-noe",
+    "pasos": [
+     {
+      "texto": "Noé tenía 600 años al llegar el diluvio",
+      "signo": 1,
+      "ref": "Gn 7:6",
+      "edad": {
+       "persona": "Noah_1",
+       "tipo": "al_diluvio"
+      }
+     },
+     {
+      "texto": "Arfaxad nace 2 años después del diluvio",
+      "signo": 1,
+      "ref": "Gn 11:10",
+      "cifra_texto": {
+       "TM": "dos años después del diluvio",
+       "LXX": "the second year after the flood"
+      }
+     },
+     {
+      "texto": "Sem tenía 100 años al engendrar a Arfaxad",
+      "signo": -1,
+      "ref": "Gn 11:10",
+      "edad": {
+       "persona": "Shem_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1558,
+     "TM|tare70|noe500": 1556,
+     "TM|tare130|sem2": 1558,
+     "TM|tare130|noe500": 1556,
+     "LXX|tare70|sem2": 2144,
+     "LXX|tare70|noe500": 2142,
+     "LXX|tare130|sem2": 2144,
+     "LXX|tare130|noe500": 2142
+    },
+    "certeza": "calculo",
+    "nota": "",
+    "variantes": [
+     {
+      "cuando": {
+       "sem": "sem2"
+      },
+      "pasos": [
+       {
+        "texto": "Noé tenía 600 años al llegar el diluvio",
+        "signo": 1,
+        "ref": "Gn 7:6",
+        "edad": {
+         "persona": "Noah_1",
+         "tipo": "al_diluvio"
+        }
+       },
+       {
+        "texto": "Arfaxad nace 2 años después del diluvio",
+        "signo": 1,
+        "ref": "Gn 11:10",
+        "cifra_texto": {
+         "TM": "dos años después del diluvio",
+         "LXX": "the second year after the flood"
+        }
+       },
+       {
+        "texto": "Sem tenía 100 años al engendrar a Arfaxad",
+        "signo": -1,
+        "ref": "Gn 11:10",
+        "edad": {
+         "persona": "Shem_1",
+         "tipo": "al_engendrar"
+        }
+       }
+      ]
+     },
+     {
+      "cuando": {
+       "sem": "noe500"
+      },
+      "pasos": [
+       {
+        "texto": "Noé tenía 500 años al engendrar a Sem, Cam y Jafet",
+        "signo": 1,
+        "ref": "Gn 5:32",
+        "edad": {
+         "persona": "Noah_1",
+         "tipo": "al_engendrar"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ev-nac-arfaxad",
+    "titulo": "Nace Arfaxad",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:10",
+    "pasaje": "gn-25",
+    "personas": [
+     "Arpachshad_1"
+    ],
+    "depende_de": "ev-nac-sem",
+    "pasos": [
+     {
+      "texto": "Sem tenía 100 años al engendrar a Arfaxad",
+      "signo": 1,
+      "ref": "Gn 11:10",
+      "edad": {
+       "persona": "Shem_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1658,
+     "TM|tare70|noe500": 1656,
+     "TM|tare130|sem2": 1658,
+     "TM|tare130|noe500": 1656,
+     "LXX|tare70|sem2": 2244,
+     "LXX|tare70|noe500": 2242,
+     "LXX|tare130|sem2": 2244,
+     "LXX|tare130|noe500": 2242
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-cainan11",
+    "titulo": "Nace Cainán, hijo de Arfaxad (solo LXX)",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:12",
+    "pasaje": "gn-25",
+    "personas": [
+     "Cainan_1"
+    ],
+    "depende_de": "ev-nac-arfaxad",
+    "pasos": [],
+    "anios": {
+     "TM|tare70|sem2": null,
+     "TM|tare70|noe500": null,
+     "TM|tare130|sem2": null,
+     "TM|tare130|noe500": null,
+     "LXX|tare70|sem2": 2379,
+     "LXX|tare70|noe500": 2377,
+     "LXX|tare130|sem2": 2379,
+     "LXX|tare130|noe500": 2377
+    },
+    "certeza": "calculo",
+    "nota": "",
+    "variantes": [
+     {
+      "cuando": {
+       "tradicion": "TM"
+      },
+      "pasos": null
+     },
+     {
+      "cuando": {
+       "tradicion": "LXX"
+      },
+      "pasos": [
+       {
+        "texto": "Arfaxad tenía 135 años al engendrar a Cainán",
+        "signo": 1,
+        "ref": "Gn 11:12",
+        "edad": {
+         "persona": "Arpachshad_1",
+         "tipo": "al_engendrar"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ev-nac-sala",
+    "titulo": "Nace Sala",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:12",
+    "pasaje": "gn-25",
+    "personas": [
+     "Shelah_1"
+    ],
+    "depende_de": "ev-nac-arfaxad",
+    "pasos": [
+     {
+      "texto": "Arfaxad tenía 35 años al engendrar a Sala",
+      "signo": 1,
+      "ref": "Gn 11:12",
+      "edad": {
+       "persona": "Arpachshad_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1693,
+     "TM|tare70|noe500": 1691,
+     "TM|tare130|sem2": 1693,
+     "TM|tare130|noe500": 1691,
+     "LXX|tare70|sem2": 2509,
+     "LXX|tare70|noe500": 2507,
+     "LXX|tare130|sem2": 2509,
+     "LXX|tare130|noe500": 2507
+    },
+    "certeza": "calculo",
+    "nota": "",
+    "variantes": [
+     {
+      "cuando": {
+       "tradicion": "TM"
+      },
+      "pasos": [
+       {
+        "texto": "Arfaxad tenía 35 años al engendrar a Sala",
+        "signo": 1,
+        "ref": "Gn 11:12",
+        "edad": {
+         "persona": "Arpachshad_1",
+         "tipo": "al_engendrar"
+        }
+       }
+      ]
+     },
+     {
+      "cuando": {
+       "tradicion": "LXX"
+      },
+      "pasos": [
+       {
+        "texto": "Arfaxad tenía 135 años al engendrar a Cainán",
+        "signo": 1,
+        "ref": "Gn 11:12",
+        "edad": {
+         "persona": "Arpachshad_1",
+         "tipo": "al_engendrar"
+        }
+       },
+       {
+        "texto": "Cainán tenía 130 años al engendrar a Sala",
+        "signo": 1,
+        "ref": "Gn 11:13",
+        "edad": {
+         "persona": "Cainan_1",
+         "tipo": "al_engendrar"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ev-nac-heber",
+    "titulo": "Nace Heber",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:14",
+    "pasaje": "gn-25",
+    "personas": [
+     "Eber_1"
+    ],
+    "depende_de": "ev-nac-sala",
+    "pasos": [
+     {
+      "texto": "Sala tenía 30 años al engendrar a Heber",
+      "signo": 1,
+      "ref": "Gn 11:14",
+      "edad": {
+       "persona": "Shelah_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1723,
+     "TM|tare70|noe500": 1721,
+     "TM|tare130|sem2": 1723,
+     "TM|tare130|noe500": 1721,
+     "LXX|tare70|sem2": 2639,
+     "LXX|tare70|noe500": 2637,
+     "LXX|tare130|sem2": 2639,
+     "LXX|tare130|noe500": 2637
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-peleg",
+    "titulo": "Nace Péleg",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:16",
+    "pasaje": "gn-25",
+    "personas": [
+     "Peleg_1"
+    ],
+    "depende_de": "ev-nac-heber",
+    "pasos": [
+     {
+      "texto": "Heber tenía 34 años al engendrar a Péleg",
+      "signo": 1,
+      "ref": "Gn 11:16",
+      "edad": {
+       "persona": "Eber_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1757,
+     "TM|tare70|noe500": 1755,
+     "TM|tare130|sem2": 1757,
+     "TM|tare130|noe500": 1755,
+     "LXX|tare70|sem2": 2773,
+     "LXX|tare70|noe500": 2771,
+     "LXX|tare130|sem2": 2773,
+     "LXX|tare130|noe500": 2771
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-reu",
+    "titulo": "Nace Reu",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:18",
+    "pasaje": "gn-25",
+    "personas": [
+     "Reu_1"
+    ],
+    "depende_de": "ev-nac-peleg",
+    "pasos": [
+     {
+      "texto": "Péleg tenía 30 años al engendrar a Reu",
+      "signo": 1,
+      "ref": "Gn 11:18",
+      "edad": {
+       "persona": "Peleg_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1787,
+     "TM|tare70|noe500": 1785,
+     "TM|tare130|sem2": 1787,
+     "TM|tare130|noe500": 1785,
+     "LXX|tare70|sem2": 2903,
+     "LXX|tare70|noe500": 2901,
+     "LXX|tare130|sem2": 2903,
+     "LXX|tare130|noe500": 2901
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-serug",
+    "titulo": "Nace Serug",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:20",
+    "pasaje": "gn-25",
+    "personas": [
+     "Serug_1"
+    ],
+    "depende_de": "ev-nac-reu",
+    "pasos": [
+     {
+      "texto": "Reu tenía 32 años al engendrar a Serug",
+      "signo": 1,
+      "ref": "Gn 11:20",
+      "edad": {
+       "persona": "Reu_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1819,
+     "TM|tare70|noe500": 1817,
+     "TM|tare130|sem2": 1819,
+     "TM|tare130|noe500": 1817,
+     "LXX|tare70|sem2": 3035,
+     "LXX|tare70|noe500": 3033,
+     "LXX|tare130|sem2": 3035,
+     "LXX|tare130|noe500": 3033
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-nacor",
+    "titulo": "Nace Nacor",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:22",
+    "pasaje": "gn-25",
+    "personas": [
+     "Nahor_1"
+    ],
+    "depende_de": "ev-nac-serug",
+    "pasos": [
+     {
+      "texto": "Serug tenía 30 años al engendrar a Nacor",
+      "signo": 1,
+      "ref": "Gn 11:22",
+      "edad": {
+       "persona": "Serug_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1849,
+     "TM|tare70|noe500": 1847,
+     "TM|tare130|sem2": 1849,
+     "TM|tare130|noe500": 1847,
+     "LXX|tare70|sem2": 3165,
+     "LXX|tare70|noe500": 3163,
+     "LXX|tare130|sem2": 3165,
+     "LXX|tare130|noe500": 3163
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-tare",
+    "titulo": "Nace Taré",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:24",
+    "pasaje": "gn-25",
+    "personas": [
+     "Terah_1"
+    ],
+    "depende_de": "ev-nac-nacor",
+    "pasos": [
+     {
+      "texto": "Nacor tenía 29 años al engendrar a Taré",
+      "signo": 1,
+      "ref": "Gn 11:24",
+      "edad": {
+       "persona": "Nahor_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1878,
+     "TM|tare70|noe500": 1876,
+     "TM|tare130|sem2": 1878,
+     "TM|tare130|noe500": 1876,
+     "LXX|tare70|sem2": 3344,
+     "LXX|tare70|noe500": 3342,
+     "LXX|tare130|sem2": 3344,
+     "LXX|tare130|noe500": 3342
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-abram",
+    "titulo": "Nace Abram",
+    "tipo": "nacimiento",
+    "ref": "Gn 11:26",
+    "pasaje": "gn-25",
+    "personas": [
+     "Abram_1"
+    ],
+    "depende_de": "ev-nac-tare",
+    "pasos": [
+     {
+      "texto": "Taré tenía 70 años al engendrar a Abram (lectura directa)",
+      "signo": 1,
+      "ref": "Gn 11:26",
+      "edad": {
+       "persona": "Terah_1",
+       "tipo": "al_engendrar"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1948,
+     "TM|tare70|noe500": 1946,
+     "TM|tare130|sem2": 2008,
+     "TM|tare130|noe500": 2006,
+     "LXX|tare70|sem2": 3414,
+     "LXX|tare70|noe500": 3412,
+     "LXX|tare130|sem2": 3474,
+     "LXX|tare130|noe500": 3472
+    },
+    "certeza": "calculo",
+    "nota": "",
+    "variantes": [
+     {
+      "cuando": {
+       "tare": "tare70"
+      },
+      "pasos": [
+       {
+        "texto": "Taré tenía 70 años al engendrar a Abram (lectura directa)",
+        "signo": 1,
+        "ref": "Gn 11:26",
+        "edad": {
+         "persona": "Terah_1",
+         "tipo": "al_engendrar"
+        }
+       }
+      ]
+     },
+     {
+      "cuando": {
+       "tare": "tare130"
+      },
+      "pasos": [
+       {
+        "texto": "Taré murió a los 205 años en Harán",
+        "signo": 1,
+        "ref": "Gn 11:32",
+        "edad": {
+         "persona": "Terah_1",
+         "tipo": "total"
+        }
+       },
+       {
+        "texto": "Abram tenía 75 años al salir de Harán, tras la muerte de Taré",
+        "signo": -1,
+        "ref": "Gn 12:4",
+        "edad": {
+         "persona": "Abram_1",
+         "tipo": "en_evento",
+         "ref": "Gn 12:4"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ev-nac-sara",
+    "titulo": "Nace Sarai (Sara)",
+    "tipo": "nacimiento",
+    "ref": "Gn 17:17",
+    "pasaje": "gn-35",
+    "personas": [
+     "Sarai_1"
+    ],
+    "depende_de": "ev-nac-abram",
+    "pasos": [
+     {
+      "texto": "Abraham dice tener 100 años",
+      "signo": 1,
+      "ref": "Gn 17:17",
+      "edad": {
+       "persona": "Abram_1",
+       "tipo": "en_evento",
+       "ref": "Gn 17:17"
+      }
+     },
+     {
+      "texto": "y Sara 90 (Gn 17:17)",
+      "signo": -1,
+      "ref": "Gn 17:17",
+      "edad": {
+       "persona": "Sarai_1",
+       "tipo": "en_evento",
+       "ref": "Gn 17:17"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1958,
+     "TM|tare70|noe500": 1956,
+     "TM|tare130|sem2": 2018,
+     "TM|tare130|noe500": 2016,
+     "LXX|tare70|sem2": 3424,
+     "LXX|tare70|noe500": 3422,
+     "LXX|tare130|sem2": 3484,
+     "LXX|tare130|noe500": 3482
+    },
+    "certeza": "calculo",
+    "nota": "Supone que las dos edades de Gn 17:17 son del mismo momento."
+   },
+   {
+    "id": "ev-salida-haran",
+    "titulo": "Abram sale de Harán",
+    "tipo": "evento",
+    "ref": "Gn 12:4",
+    "pasaje": "gn-27",
+    "personas": [
+     "Abram_1",
+     "Lot_1"
+    ],
+    "depende_de": "ev-nac-abram",
+    "pasos": [
+     {
+      "texto": "Abram tenía 75 años cuando salió de Harán",
+      "signo": 1,
+      "ref": "Gn 12:4",
+      "edad": {
+       "persona": "Abram_1",
+       "tipo": "en_evento",
+       "ref": "Gn 12:4"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2023,
+     "TM|tare70|noe500": 2021,
+     "TM|tare130|sem2": 2083,
+     "TM|tare130|noe500": 2081,
+     "LXX|tare70|sem2": 3489,
+     "LXX|tare70|noe500": 3487,
+     "LXX|tare130|sem2": 3549,
+     "LXX|tare130|noe500": 3547
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-ismael",
+    "titulo": "Nace Ismael",
+    "tipo": "nacimiento",
+    "ref": "Gn 16:16",
+    "pasaje": "gn-33",
+    "personas": [
+     "Ishmael_1",
+     "Hagar_1"
+    ],
+    "depende_de": "ev-nac-abram",
+    "pasos": [
+     {
+      "texto": "Abram tenía 86 años cuando Agar dio a luz a Ismael",
+      "signo": 1,
+      "ref": "Gn 16:16",
+      "edad": {
+       "persona": "Abram_1",
+       "tipo": "en_evento",
+       "ref": "Gn 16:16"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2034,
+     "TM|tare70|noe500": 2032,
+     "TM|tare130|sem2": 2094,
+     "TM|tare130|noe500": 2092,
+     "LXX|tare70|sem2": 3500,
+     "LXX|tare70|noe500": 3498,
+     "LXX|tare130|sem2": 3560,
+     "LXX|tare130|noe500": 3558
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-pacto-circuncision",
+    "titulo": "Dios se aparece a Abram; pacto y circuncisión",
+    "tipo": "evento",
+    "ref": "Gn 17:1",
+    "pasaje": "gn-34",
+    "personas": [
+     "Abram_1",
+     "Ishmael_1"
+    ],
+    "depende_de": "ev-nac-abram",
+    "pasos": [
+     {
+      "texto": "Abram tenía 99 años cuando se le apareció Jehová",
+      "signo": 1,
+      "ref": "Gn 17:1",
+      "edad": {
+       "persona": "Abram_1",
+       "tipo": "en_evento",
+       "ref": "Gn 17:1"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2047,
+     "TM|tare70|noe500": 2045,
+     "TM|tare130|sem2": 2107,
+     "TM|tare130|noe500": 2105,
+     "LXX|tare70|sem2": 3513,
+     "LXX|tare70|noe500": 3511,
+     "LXX|tare130|sem2": 3573,
+     "LXX|tare130|noe500": 3571
+    },
+    "certeza": "calculo",
+    "nota": "Gn 17:24-25: Abraham, de 99 años, e Ismael, de 13, son circuncidados."
+   },
+   {
+    "id": "ev-nac-isaac",
+    "titulo": "Nace Isaac",
+    "tipo": "nacimiento",
+    "ref": "Gn 21:5",
+    "pasaje": "gn-42",
+    "personas": [
+     "Isaac_1",
+     "Sarai_1"
+    ],
+    "depende_de": "ev-nac-abram",
+    "pasos": [
+     {
+      "texto": "Abraham tenía 100 años cuando le nació Isaac",
+      "signo": 1,
+      "ref": "Gn 21:5",
+      "edad": {
+       "persona": "Abram_1",
+       "tipo": "en_evento",
+       "ref": "Gn 21:5"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2048,
+     "TM|tare70|noe500": 2046,
+     "TM|tare130|sem2": 2108,
+     "TM|tare130|noe500": 2106,
+     "LXX|tare70|sem2": 3514,
+     "LXX|tare70|noe500": 3512,
+     "LXX|tare130|sem2": 3574,
+     "LXX|tare130|noe500": 3572
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-sara",
+    "titulo": "Muere Sara",
+    "tipo": "muerte",
+    "ref": "Gn 23:1",
+    "pasaje": "gn-47",
+    "personas": [
+     "Sarai_1"
+    ],
+    "depende_de": "ev-nac-sara",
+    "pasos": [
+     {
+      "texto": "Sara vivió 127 años",
+      "signo": 1,
+      "ref": "Gn 23:1",
+      "edad": {
+       "persona": "Sarai_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2085,
+     "TM|tare70|noe500": 2083,
+     "TM|tare130|sem2": 2145,
+     "TM|tare130|noe500": 2143,
+     "LXX|tare70|sem2": 3551,
+     "LXX|tare70|noe500": 3549,
+     "LXX|tare130|sem2": 3611,
+     "LXX|tare130|noe500": 3609
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-boda-isaac",
+    "titulo": "Isaac toma por mujer a Rebeca",
+    "tipo": "evento",
+    "ref": "Gn 25:20",
+    "pasaje": "gn-53",
+    "personas": [
+     "Isaac_1",
+     "Rebekah_1"
+    ],
+    "depende_de": "ev-nac-isaac",
+    "pasos": [
+     {
+      "texto": "Isaac tenía 40 años cuando tomó por mujer a Rebeca",
+      "signo": 1,
+      "ref": "Gn 25:20",
+      "edad": {
+       "persona": "Isaac_1",
+       "tipo": "en_evento",
+       "ref": "Gn 25:20"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2088,
+     "TM|tare70|noe500": 2086,
+     "TM|tare130|sem2": 2148,
+     "TM|tare130|noe500": 2146,
+     "LXX|tare70|sem2": 3554,
+     "LXX|tare70|noe500": 3552,
+     "LXX|tare130|sem2": 3614,
+     "LXX|tare130|noe500": 3612
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-esau-jacob",
+    "titulo": "Nacen Esaú y Jacob",
+    "tipo": "nacimiento",
+    "ref": "Gn 25:26",
+    "pasaje": "gn-53",
+    "personas": [
+     "Esau_1",
+     "Jacob_1",
+     "Rebekah_1"
+    ],
+    "depende_de": "ev-nac-isaac",
+    "pasos": [
+     {
+      "texto": "Isaac tenía 60 años cuando Rebeca los dio a luz",
+      "signo": 1,
+      "ref": "Gn 25:26",
+      "edad": {
+       "persona": "Isaac_1",
+       "tipo": "en_evento",
+       "ref": "Gn 25:26"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2108,
+     "TM|tare70|noe500": 2106,
+     "TM|tare130|sem2": 2168,
+     "TM|tare130|noe500": 2166,
+     "LXX|tare70|sem2": 3574,
+     "LXX|tare70|noe500": 3572,
+     "LXX|tare130|sem2": 3634,
+     "LXX|tare130|noe500": 3632
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-abraham",
+    "titulo": "Muere Abraham",
+    "tipo": "muerte",
+    "ref": "Gn 25:7",
+    "pasaje": "gn-52",
+    "personas": [
+     "Abram_1"
+    ],
+    "depende_de": "ev-nac-abram",
+    "pasos": [
+     {
+      "texto": "Abraham vivió 175 años",
+      "signo": 1,
+      "ref": "Gn 25:7",
+      "edad": {
+       "persona": "Abram_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2123,
+     "TM|tare70|noe500": 2121,
+     "TM|tare130|sem2": 2183,
+     "TM|tare130|noe500": 2181,
+     "LXX|tare70|sem2": 3589,
+     "LXX|tare70|noe500": 3587,
+     "LXX|tare130|sem2": 3649,
+     "LXX|tare130|noe500": 3647
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-boda-esau",
+    "titulo": "Esaú toma por mujeres a Judit y Basemat",
+    "tipo": "evento",
+    "ref": "Gn 26:34",
+    "pasaje": "gn-55",
+    "personas": [
+     "Esau_1"
+    ],
+    "depende_de": "ev-nac-esau-jacob",
+    "pasos": [
+     {
+      "texto": "Esaú tenía 40 años",
+      "signo": 1,
+      "ref": "Gn 26:34",
+      "edad": {
+       "persona": "Esau_1",
+       "tipo": "en_evento",
+       "ref": "Gn 26:34"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2148,
+     "TM|tare70|noe500": 2146,
+     "TM|tare130|sem2": 2208,
+     "TM|tare130|noe500": 2206,
+     "LXX|tare70|sem2": 3614,
+     "LXX|tare70|noe500": 3612,
+     "LXX|tare130|sem2": 3674,
+     "LXX|tare130|noe500": 3672
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-ismael",
+    "titulo": "Muere Ismael",
+    "tipo": "muerte",
+    "ref": "Gn 25:17",
+    "pasaje": "gn-52",
+    "personas": [
+     "Ishmael_1"
+    ],
+    "depende_de": "ev-nac-ismael",
+    "pasos": [
+     {
+      "texto": "Ismael vivió 137 años",
+      "signo": 1,
+      "ref": "Gn 25:17",
+      "edad": {
+       "persona": "Ishmael_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2171,
+     "TM|tare70|noe500": 2169,
+     "TM|tare130|sem2": 2231,
+     "TM|tare130|noe500": 2229,
+     "LXX|tare70|sem2": 3637,
+     "LXX|tare70|noe500": 3635,
+     "LXX|tare130|sem2": 3697,
+     "LXX|tare130|noe500": 3695
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-isaac",
+    "titulo": "Muere Isaac",
+    "tipo": "muerte",
+    "ref": "Gn 35:28",
+    "pasaje": "gn-75",
+    "personas": [
+     "Isaac_1"
+    ],
+    "depende_de": "ev-nac-isaac",
+    "pasos": [
+     {
+      "texto": "Isaac vivió 180 años",
+      "signo": 1,
+      "ref": "Gn 35:28",
+      "edad": {
+       "persona": "Isaac_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2228,
+     "TM|tare70|noe500": 2226,
+     "TM|tare130|sem2": 2288,
+     "TM|tare130|noe500": 2286,
+     "LXX|tare70|sem2": 3694,
+     "LXX|tare70|noe500": 3692,
+     "LXX|tare130|sem2": 3754,
+     "LXX|tare130|noe500": 3752
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-jacob-egipto",
+    "titulo": "Jacob entra en Egipto y se presenta ante Faraón",
+    "tipo": "evento",
+    "ref": "Gn 47:9",
+    "pasaje": "gn-102",
+    "personas": [
+     "Jacob_1"
+    ],
+    "depende_de": "ev-nac-esau-jacob",
+    "pasos": [
+     {
+      "texto": "Jacob dice a Faraón que tiene 130 años",
+      "signo": 1,
+      "ref": "Gn 47:9",
+      "edad": {
+       "persona": "Jacob_1",
+       "tipo": "en_evento",
+       "ref": "Gn 47:9"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2238,
+     "TM|tare70|noe500": 2236,
+     "TM|tare130|sem2": 2298,
+     "TM|tare130|noe500": 2296,
+     "LXX|tare70|sem2": 3704,
+     "LXX|tare70|noe500": 3702,
+     "LXX|tare130|sem2": 3764,
+     "LXX|tare130|noe500": 3762
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-nac-jose",
+    "titulo": "Nace José",
+    "tipo": "nacimiento",
+    "ref": "Gn 30:24",
+    "pasaje": "gn-64",
+    "personas": [
+     "Joseph_1",
+     "Rachel_1"
+    ],
+    "depende_de": "ev-jacob-egipto",
+    "pasos": [
+     {
+      "texto": "José tenía 30 años al presentarse ante Faraón",
+      "signo": -1,
+      "ref": "Gn 41:46",
+      "edad": {
+       "persona": "Joseph_1",
+       "tipo": "en_evento",
+       "ref": "Gn 41:46"
+      }
+     },
+     {
+      "texto": "pasan 7 años de abundancia",
+      "signo": -1,
+      "ref": "Gn 41:47",
+      "cifra_texto": {
+       "TM": "aquellos siete años de hartura",
+       "LXX": "the seven years of plenty"
+      }
+     },
+     {
+      "texto": "y 2 de hambre hasta la llegada de Jacob",
+      "signo": -1,
+      "ref": "Gn 45:6",
+      "cifra_texto": {
+       "TM": "dos años de hambre",
+       "LXX": "this second year there is famine"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2199,
+     "TM|tare70|noe500": 2197,
+     "TM|tare130|sem2": 2259,
+     "TM|tare130|noe500": 2257,
+     "LXX|tare70|sem2": 3665,
+     "LXX|tare70|noe500": 3663,
+     "LXX|tare130|sem2": 3725,
+     "LXX|tare130|noe500": 3723
+    },
+    "certeza": "calculo",
+    "nota": "Cálculo de varios pasos (supuesto «jose»): Jacob tendría unos 91 años al nacer José."
+   },
+   {
+    "id": "ev-jose-17",
+    "titulo": "José, de 17 años, apacienta las ovejas; es vendido",
+    "tipo": "evento",
+    "ref": "Gn 37:2",
+    "pasaje": "gn-79",
+    "personas": [
+     "Joseph_1"
+    ],
+    "depende_de": "ev-nac-jose",
+    "pasos": [
+     {
+      "texto": "José tenía 17 años",
+      "signo": 1,
+      "ref": "Gn 37:2",
+      "edad": {
+       "persona": "Joseph_1",
+       "tipo": "en_evento",
+       "ref": "Gn 37:2"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2216,
+     "TM|tare70|noe500": 2214,
+     "TM|tare130|sem2": 2276,
+     "TM|tare130|noe500": 2274,
+     "LXX|tare70|sem2": 3682,
+     "LXX|tare70|noe500": 3680,
+     "LXX|tare130|sem2": 3742,
+     "LXX|tare130|noe500": 3740
+    },
+    "certeza": "calculo",
+    "nota": "Gn 37 no dice cuánto tiempo pasa entre Gn 37:2 y la venta."
+   },
+   {
+    "id": "ev-jose-faraon",
+    "titulo": "José se presenta ante Faraón",
+    "tipo": "evento",
+    "ref": "Gn 41:46",
+    "pasaje": "gn-90",
+    "personas": [
+     "Joseph_1"
+    ],
+    "depende_de": "ev-nac-jose",
+    "pasos": [
+     {
+      "texto": "José tenía 30 años",
+      "signo": 1,
+      "ref": "Gn 41:46",
+      "edad": {
+       "persona": "Joseph_1",
+       "tipo": "en_evento",
+       "ref": "Gn 41:46"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2229,
+     "TM|tare70|noe500": 2227,
+     "TM|tare130|sem2": 2289,
+     "TM|tare130|noe500": 2287,
+     "LXX|tare70|sem2": 3695,
+     "LXX|tare70|noe500": 3693,
+     "LXX|tare130|sem2": 3755,
+     "LXX|tare130|noe500": 3753
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-jacob",
+    "titulo": "Muere Jacob",
+    "tipo": "muerte",
+    "ref": "Gn 47:28",
+    "pasaje": "gn-104",
+    "personas": [
+     "Jacob_1"
+    ],
+    "depende_de": "ev-nac-esau-jacob",
+    "pasos": [
+     {
+      "texto": "Jacob vivió 147 años",
+      "signo": 1,
+      "ref": "Gn 47:28",
+      "edad": {
+       "persona": "Jacob_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2255,
+     "TM|tare70|noe500": 2253,
+     "TM|tare130|sem2": 2315,
+     "TM|tare130|noe500": 2313,
+     "LXX|tare70|sem2": 3721,
+     "LXX|tare70|noe500": 3719,
+     "LXX|tare130|sem2": 3781,
+     "LXX|tare130|noe500": 3779
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-jose",
+    "titulo": "Muere José",
+    "tipo": "muerte",
+    "ref": "Gn 50:26",
+    "pasaje": "gn-109",
+    "personas": [
+     "Joseph_1"
+    ],
+    "depende_de": "ev-nac-jose",
+    "pasos": [
+     {
+      "texto": "José vivió 110 años",
+      "signo": 1,
+      "ref": "Gn 50:22",
+      "edad": {
+       "persona": "Joseph_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2309,
+     "TM|tare70|noe500": 2307,
+     "TM|tare130|sem2": 2369,
+     "TM|tare130|noe500": 2367,
+     "LXX|tare70|sem2": 3775,
+     "LXX|tare70|noe500": 3773,
+     "LXX|tare130|sem2": 3835,
+     "LXX|tare130|noe500": 3833
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-adan",
+    "titulo": "Muere Adán",
+    "tipo": "muerte",
+    "ref": "Gn 5:5",
+    "pasaje": "gn-10",
+    "personas": [
+     "Adam_1"
+    ],
+    "depende_de": "ev-adan",
+    "pasos": [
+     {
+      "texto": "Adán vivió 930 años",
+      "signo": 1,
+      "ref": "Gn 5:5",
+      "edad": {
+       "persona": "Adam_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 930,
+     "TM|tare70|noe500": 930,
+     "TM|tare130|sem2": 930,
+     "TM|tare130|noe500": 930,
+     "LXX|tare70|sem2": 930,
+     "LXX|tare70|noe500": 930,
+     "LXX|tare130|sem2": 930,
+     "LXX|tare130|noe500": 930
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-set",
+    "titulo": "Muere Set",
+    "tipo": "muerte",
+    "ref": "Gn 5:8",
+    "pasaje": "gn-10",
+    "personas": [
+     "Seth_1"
+    ],
+    "depende_de": "ev-nac-set",
+    "pasos": [
+     {
+      "texto": "Set vivió 912 años",
+      "signo": 1,
+      "ref": "Gn 5:8",
+      "edad": {
+       "persona": "Seth_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1042,
+     "TM|tare70|noe500": 1042,
+     "TM|tare130|sem2": 1042,
+     "TM|tare130|noe500": 1042,
+     "LXX|tare70|sem2": 1142,
+     "LXX|tare70|noe500": 1142,
+     "LXX|tare130|sem2": 1142,
+     "LXX|tare130|noe500": 1142
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-enos",
+    "titulo": "Muere Enós",
+    "tipo": "muerte",
+    "ref": "Gn 5:11",
+    "pasaje": "gn-10",
+    "personas": [
+     "Enosh_1"
+    ],
+    "depende_de": "ev-nac-enos",
+    "pasos": [
+     {
+      "texto": "Enós vivió 905 años",
+      "signo": 1,
+      "ref": "Gn 5:11",
+      "edad": {
+       "persona": "Enosh_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1140,
+     "TM|tare70|noe500": 1140,
+     "TM|tare130|sem2": 1140,
+     "TM|tare130|noe500": 1140,
+     "LXX|tare70|sem2": 1340,
+     "LXX|tare70|noe500": 1340,
+     "LXX|tare130|sem2": 1340,
+     "LXX|tare130|noe500": 1340
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-cainan5",
+    "titulo": "Muere Cainán",
+    "tipo": "muerte",
+    "ref": "Gn 5:14",
+    "pasaje": "gn-11",
+    "personas": [
+     "Kenan_1"
+    ],
+    "depende_de": "ev-nac-cainan5",
+    "pasos": [
+     {
+      "texto": "Cainán vivió 910 años",
+      "signo": 1,
+      "ref": "Gn 5:14",
+      "edad": {
+       "persona": "Kenan_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1235,
+     "TM|tare70|noe500": 1235,
+     "TM|tare130|sem2": 1235,
+     "TM|tare130|noe500": 1235,
+     "LXX|tare70|sem2": 1535,
+     "LXX|tare70|noe500": 1535,
+     "LXX|tare130|sem2": 1535,
+     "LXX|tare130|noe500": 1535
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-mahalaleel",
+    "titulo": "Muere Mahalaleel",
+    "tipo": "muerte",
+    "ref": "Gn 5:17",
+    "pasaje": "gn-11",
+    "personas": [
+     "Mahalalel_1"
+    ],
+    "depende_de": "ev-nac-mahalaleel",
+    "pasos": [
+     {
+      "texto": "Mahalaleel vivió 895 años",
+      "signo": 1,
+      "ref": "Gn 5:17",
+      "edad": {
+       "persona": "Mahalalel_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1290,
+     "TM|tare70|noe500": 1290,
+     "TM|tare130|sem2": 1290,
+     "TM|tare130|noe500": 1290,
+     "LXX|tare70|sem2": 1690,
+     "LXX|tare70|noe500": 1690,
+     "LXX|tare130|sem2": 1690,
+     "LXX|tare130|noe500": 1690
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-jared",
+    "titulo": "Muere Jared",
+    "tipo": "muerte",
+    "ref": "Gn 5:20",
+    "pasaje": "gn-11",
+    "personas": [
+     "Jared_1"
+    ],
+    "depende_de": "ev-nac-jared",
+    "pasos": [
+     {
+      "texto": "Jared vivió 962 años",
+      "signo": 1,
+      "ref": "Gn 5:20",
+      "edad": {
+       "persona": "Jared_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1422,
+     "TM|tare70|noe500": 1422,
+     "TM|tare130|sem2": 1422,
+     "TM|tare130|noe500": 1422,
+     "LXX|tare70|sem2": 1922,
+     "LXX|tare70|noe500": 1922,
+     "LXX|tare130|sem2": 1922,
+     "LXX|tare130|noe500": 1922
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-fin-enoc",
+    "titulo": "Enoc desaparece («le llevó Dios»)",
+    "tipo": "evento",
+    "ref": "Gn 5:24",
+    "pasaje": "gn-12",
+    "personas": [
+     "Enoch_2"
+    ],
+    "depende_de": "ev-nac-enoc",
+    "pasos": [
+     {
+      "texto": "Los días de Enoc fueron 365 años",
+      "signo": 1,
+      "ref": "Gn 5:23",
+      "edad": {
+       "persona": "Enoch_2",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 987,
+     "TM|tare70|noe500": 987,
+     "TM|tare130|sem2": 987,
+     "TM|tare130|noe500": 987,
+     "LXX|tare70|sem2": 1487,
+     "LXX|tare70|noe500": 1487,
+     "LXX|tare130|sem2": 1487,
+     "LXX|tare130|noe500": 1487
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-matusalen",
+    "titulo": "Muere Matusalén",
+    "tipo": "muerte",
+    "ref": "Gn 5:27",
+    "pasaje": "gn-12",
+    "personas": [
+     "Methuselah_1"
+    ],
+    "depende_de": "ev-nac-matusalen",
+    "pasos": [
+     {
+      "texto": "Matusalén vivió 969 años",
+      "signo": 1,
+      "ref": "Gn 5:27",
+      "edad": {
+       "persona": "Methuselah_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1656,
+     "TM|tare70|noe500": 1656,
+     "TM|tare130|sem2": 1656,
+     "TM|tare130|noe500": 1656,
+     "LXX|tare70|sem2": 2256,
+     "LXX|tare70|noe500": 2256,
+     "LXX|tare130|sem2": 2256,
+     "LXX|tare130|noe500": 2256
+    },
+    "certeza": "calculo",
+    "nota": " TM: el cálculo da su muerte 0 años después del comienzo del diluvio (el mismo año); es resultado del cálculo, no se corrige. LXX: el cálculo da su muerte 14 años después del comienzo del diluvio; es resultado del cálculo, no se corrige."
+   },
+   {
+    "id": "ev-muerte-lamec",
+    "titulo": "Muere Lamec",
+    "tipo": "muerte",
+    "ref": "Gn 5:31",
+    "pasaje": "gn-12",
+    "personas": [
+     "Lamech_2"
+    ],
+    "depende_de": "ev-nac-lamec",
+    "pasos": [
+     {
+      "texto": "Lamec vivió 777 años",
+      "signo": 1,
+      "ref": "Gn 5:31",
+      "edad": {
+       "persona": "Lamech_2",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1651,
+     "TM|tare70|noe500": 1651,
+     "TM|tare130|sem2": 1651,
+     "TM|tare130|noe500": 1651,
+     "LXX|tare70|sem2": 2207,
+     "LXX|tare70|noe500": 2207,
+     "LXX|tare130|sem2": 2207,
+     "LXX|tare130|noe500": 2207
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-noe",
+    "titulo": "Muere Noé",
+    "tipo": "muerte",
+    "ref": "Gn 9:29",
+    "pasaje": "gn-20",
+    "personas": [
+     "Noah_1"
+    ],
+    "depende_de": "ev-nac-noe",
+    "pasos": [
+     {
+      "texto": "Noé vivió 950 años",
+      "signo": 1,
+      "ref": "Gn 9:29",
+      "edad": {
+       "persona": "Noah_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2006,
+     "TM|tare70|noe500": 2006,
+     "TM|tare130|sem2": 2006,
+     "TM|tare130|noe500": 2006,
+     "LXX|tare70|sem2": 2592,
+     "LXX|tare70|noe500": 2592,
+     "LXX|tare130|sem2": 2592,
+     "LXX|tare130|noe500": 2592
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-sem",
+    "titulo": "Muere Sem",
+    "tipo": "muerte",
+    "ref": "Gn 11:10-11:11",
+    "pasaje": "gn-25",
+    "personas": [
+     "Shem_1"
+    ],
+    "depende_de": "ev-nac-sem",
+    "pasos": [
+     {
+      "texto": "Sem vivió 600 años",
+      "signo": 1,
+      "ref": "Gn 11:10-11:11",
+      "edad": {
+       "persona": "Shem_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2158,
+     "TM|tare70|noe500": 2156,
+     "TM|tare130|sem2": 2158,
+     "TM|tare130|noe500": 2156,
+     "LXX|tare70|sem2": 2744,
+     "LXX|tare70|noe500": 2742,
+     "LXX|tare130|sem2": 2744,
+     "LXX|tare130|noe500": 2742
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-arfaxad",
+    "titulo": "Muere Arfaxad",
+    "tipo": "muerte",
+    "ref": "Gn 11:12-11:13",
+    "pasaje": "gn-25",
+    "personas": [
+     "Arpachshad_1"
+    ],
+    "depende_de": "ev-nac-arfaxad",
+    "pasos": [
+     {
+      "texto": "Arfaxad vivió 438 años",
+      "signo": 1,
+      "ref": "Gn 11:12-11:13",
+      "edad": {
+       "persona": "Arpachshad_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2096,
+     "TM|tare70|noe500": 2094,
+     "TM|tare130|sem2": 2096,
+     "TM|tare130|noe500": 2094,
+     "LXX|tare70|sem2": 2779,
+     "LXX|tare70|noe500": 2777,
+     "LXX|tare130|sem2": 2779,
+     "LXX|tare130|noe500": 2777
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-cainan11",
+    "titulo": "Muere Cainán",
+    "tipo": "muerte",
+    "ref": null,
+    "pasaje": null,
+    "personas": [
+     "Cainan_1"
+    ],
+    "depende_de": "ev-nac-cainan11",
+    "pasos": [
+     {
+      "texto": "Cainán vivió ? años",
+      "signo": 1,
+      "ref": null,
+      "edad": {
+       "persona": "Cainan_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": null,
+     "TM|tare70|noe500": null,
+     "TM|tare130|sem2": null,
+     "TM|tare130|noe500": null,
+     "LXX|tare70|sem2": 2839,
+     "LXX|tare70|noe500": 2837,
+     "LXX|tare130|sem2": 2839,
+     "LXX|tare130|noe500": 2837
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-sala",
+    "titulo": "Muere Sala",
+    "tipo": "muerte",
+    "ref": "Gn 11:14-11:15",
+    "pasaje": "gn-25",
+    "personas": [
+     "Shelah_1"
+    ],
+    "depende_de": "ev-nac-sala",
+    "pasos": [
+     {
+      "texto": "Sala vivió 433 años",
+      "signo": 1,
+      "ref": "Gn 11:14-11:15",
+      "edad": {
+       "persona": "Shelah_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2126,
+     "TM|tare70|noe500": 2124,
+     "TM|tare130|sem2": 2126,
+     "TM|tare130|noe500": 2124,
+     "LXX|tare70|sem2": 2969,
+     "LXX|tare70|noe500": 2967,
+     "LXX|tare130|sem2": 2969,
+     "LXX|tare130|noe500": 2967
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-sala",
+    "titulo": "Muere Sala",
+    "tipo": "muerte",
+    "ref": "Gn 11:14-11:15",
+    "pasaje": "gn-25",
+    "personas": [
+     "Shelah_1"
+    ],
+    "depende_de": "ev-nac-sala",
+    "pasos": [
+     {
+      "texto": "Sala vivió 433 años",
+      "signo": 1,
+      "ref": "Gn 11:14-11:15",
+      "edad": {
+       "persona": "Shelah_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2126,
+     "TM|tare70|noe500": 2124,
+     "TM|tare130|sem2": 2126,
+     "TM|tare130|noe500": 2124,
+     "LXX|tare70|sem2": 2969,
+     "LXX|tare70|noe500": 2967,
+     "LXX|tare130|sem2": 2969,
+     "LXX|tare130|noe500": 2967
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-heber",
+    "titulo": "Muere Heber",
+    "tipo": "muerte",
+    "ref": "Gn 11:16-11:17",
+    "pasaje": "gn-25",
+    "personas": [
+     "Eber_1"
+    ],
+    "depende_de": "ev-nac-heber",
+    "pasos": [
+     {
+      "texto": "Heber vivió 464 años",
+      "signo": 1,
+      "ref": "Gn 11:16-11:17",
+      "edad": {
+       "persona": "Eber_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2187,
+     "TM|tare70|noe500": 2185,
+     "TM|tare130|sem2": 2187,
+     "TM|tare130|noe500": 2185,
+     "LXX|tare70|sem2": 3043,
+     "LXX|tare70|noe500": 3041,
+     "LXX|tare130|sem2": 3043,
+     "LXX|tare130|noe500": 3041
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-peleg",
+    "titulo": "Muere Péleg",
+    "tipo": "muerte",
+    "ref": "Gn 11:18-11:19",
+    "pasaje": "gn-25",
+    "personas": [
+     "Peleg_1"
+    ],
+    "depende_de": "ev-nac-peleg",
+    "pasos": [
+     {
+      "texto": "Péleg vivió 239 años",
+      "signo": 1,
+      "ref": "Gn 11:18-11:19",
+      "edad": {
+       "persona": "Peleg_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1996,
+     "TM|tare70|noe500": 1994,
+     "TM|tare130|sem2": 1996,
+     "TM|tare130|noe500": 1994,
+     "LXX|tare70|sem2": 3112,
+     "LXX|tare70|noe500": 3110,
+     "LXX|tare130|sem2": 3112,
+     "LXX|tare130|noe500": 3110
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-reu",
+    "titulo": "Muere Reu",
+    "tipo": "muerte",
+    "ref": "Gn 11:20-11:21",
+    "pasaje": "gn-25",
+    "personas": [
+     "Reu_1"
+    ],
+    "depende_de": "ev-nac-reu",
+    "pasos": [
+     {
+      "texto": "Reu vivió 239 años",
+      "signo": 1,
+      "ref": "Gn 11:20-11:21",
+      "edad": {
+       "persona": "Reu_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2026,
+     "TM|tare70|noe500": 2024,
+     "TM|tare130|sem2": 2026,
+     "TM|tare130|noe500": 2024,
+     "LXX|tare70|sem2": 3242,
+     "LXX|tare70|noe500": 3240,
+     "LXX|tare130|sem2": 3242,
+     "LXX|tare130|noe500": 3240
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-serug",
+    "titulo": "Muere Serug",
+    "tipo": "muerte",
+    "ref": "Gn 11:22-11:23",
+    "pasaje": "gn-25",
+    "personas": [
+     "Serug_1"
+    ],
+    "depende_de": "ev-nac-serug",
+    "pasos": [
+     {
+      "texto": "Serug vivió 230 años",
+      "signo": 1,
+      "ref": "Gn 11:22-11:23",
+      "edad": {
+       "persona": "Serug_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2049,
+     "TM|tare70|noe500": 2047,
+     "TM|tare130|sem2": 2049,
+     "TM|tare130|noe500": 2047,
+     "LXX|tare70|sem2": 3365,
+     "LXX|tare70|noe500": 3363,
+     "LXX|tare130|sem2": 3365,
+     "LXX|tare130|noe500": 3363
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-nacor",
+    "titulo": "Muere Nacor",
+    "tipo": "muerte",
+    "ref": "Gn 11:24-11:25",
+    "pasaje": "gn-25",
+    "personas": [
+     "Nahor_1"
+    ],
+    "depende_de": "ev-nac-nacor",
+    "pasos": [
+     {
+      "texto": "Nacor vivió 148 años",
+      "signo": 1,
+      "ref": "Gn 11:24-11:25",
+      "edad": {
+       "persona": "Nahor_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 1997,
+     "TM|tare70|noe500": 1995,
+     "TM|tare130|sem2": 1997,
+     "TM|tare130|noe500": 1995,
+     "LXX|tare70|sem2": 3469,
+     "LXX|tare70|noe500": 3467,
+     "LXX|tare130|sem2": 3469,
+     "LXX|tare130|noe500": 3467
+    },
+    "certeza": "calculo",
+    "nota": ""
+   },
+   {
+    "id": "ev-muerte-tare",
+    "titulo": "Muere Taré",
+    "tipo": "muerte",
+    "ref": "Gn 11:32",
+    "pasaje": "gn-26",
+    "personas": [
+     "Terah_1"
+    ],
+    "depende_de": "ev-nac-tare",
+    "pasos": [
+     {
+      "texto": "Taré vivió 205 años",
+      "signo": 1,
+      "ref": "Gn 11:32",
+      "edad": {
+       "persona": "Terah_1",
+       "tipo": "total"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2": 2083,
+     "TM|tare70|noe500": 2081,
+     "TM|tare130|sem2": 2083,
+     "TM|tare130|noe500": 2081,
+     "LXX|tare70|sem2": 3549,
+     "LXX|tare70|noe500": 3547,
+     "LXX|tare130|sem2": 3549,
+     "LXX|tare130|noe500": 3547
+    },
+    "certeza": "calculo",
+    "nota": ""
+   }
+  ],
+  "hitos_sin_fecha": [
+   {
+    "titulo": "Caín mata a Abel",
+    "ref": "Gn 4:8",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-07"
+   },
+   {
+    "titulo": "La torre de Babel",
+    "ref": "Gn 11:1-9",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-24"
+   },
+   {
+    "titulo": "Abram y Lot se separan",
+    "ref": "Gn 13:5-12",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-29"
+   },
+   {
+    "titulo": "La guerra de los reyes y Melquisedec",
+    "ref": "Gn 14:1-24",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-30"
+   },
+   {
+    "titulo": "Destrucción de Sodoma y Gomorra",
+    "ref": "Gn 19:24-25",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-39"
+   },
+   {
+    "titulo": "La prueba de Abraham en Moriah",
+    "ref": "Gn 22:1-19",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-45"
+   },
+   {
+    "titulo": "El sueño de Jacob en Betel",
+    "ref": "Gn 28:10-22",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-60"
+   },
+   {
+    "titulo": "Jacob sirve a Labán y se casa con Lea y Raquel",
+    "ref": "Gn 29:15-30",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-62"
+   },
+   {
+    "titulo": "La lucha de Jacob en Peniel",
+    "ref": "Gn 32:24-32",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-70"
+   },
+   {
+    "titulo": "Encuentro de Jacob y Esaú",
+    "ref": "Gn 33:1-17",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-71"
+   },
+   {
+    "titulo": "Dina y Siquem",
+    "ref": "Gn 34:1-31",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-72"
+   },
+   {
+    "titulo": "Muerte de Raquel",
+    "ref": "Gn 35:16-20",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-75"
+   },
+   {
+    "titulo": "Judá y Tamar",
+    "ref": "Gn 38:1-30",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-82"
+   },
+   {
+    "titulo": "Bendiciones de Jacob a sus hijos",
+    "ref": "Gn 49:1-28",
+    "nota": "Génesis no da edad ni año: va solo en el orden del relato.",
+    "pasaje": "gn-106"
+   }
+  ]
+ }
 };

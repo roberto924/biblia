@@ -141,7 +141,34 @@
     { id: 'ej-05', inicio: 'Gn 25:26', fin: 'Gn 30:24', titulo: 'Los hijos de Jacob', titulo_origen: 'editorial', resumen: 'Sin sección: hereda la anterior.' }
   ];
 
+  // Cronología de ejemplo (cifras reales de TM/LXX para Adán→Noé; la cadena Enós→Noé y Sem→Abram está abreviada).
+  const combos = ['TM|tare70', 'TM|tare130', 'LXX|tare70', 'LXX|tare130'];
+  const A = (tm, lxx, tm130, lxx130) => ({ 'TM|tare70': tm, 'LXX|tare70': lxx, 'TM|tare130': tm130 === undefined ? tm : tm130, 'LXX|tare130': lxx130 === undefined ? lxx : lxx130 });
+  const EVT = (id, titulo, tipo, ref, personas, depende_de, pasos, anios) => ({ id, titulo, tipo, ref, personas, depende_de, pasos, anios, certeza: 'calculo', nota: '' });
+  const paso = (texto, ref, persona, tipo) => ({ texto, ref, edad: persona ? { persona, tipo: tipo || 'al_engendrar' } : null });
+  const cronologia = {
+    unidad: 'años desde la creación de Adán (cálculo)',
+    supuestos: [{ id: 'tare', pregunta: '¿Qué edad tenía Taré al nacer Abram?', defecto: 'tare70',
+      opciones: [{ id: 'tare70', texto: '70 (lectura directa de Gn 11:26)', refs: ['Gn 11:26'], nota: '' },
+        { id: 'tare130', texto: '130 (Taré muere a los 205 en Harán y Abram sale con 75)', refs: ['Gn 11:32', 'Gn 12:4'], nota: '' }] }],
+    combinaciones: combos.map(id => ({ id, tradicion: id.split('|')[0], supuestos: { tare: id.split('|')[1] } })),
+    eventos: [
+      EVT('ev-adan', 'Creación de Adán', 'nacimiento', 'Gn 5:1', ['Adam_1'], null, [paso('Origen de la cuenta: año 0', 'Gn 5:1')], A(0, 0)),
+      EVT('ev-nac-set', 'Nace Set', 'nacimiento', 'Gn 5:3', ['Seth_1'], 'ev-adan', [paso('Adán tenía 130 años (LXX 230) al engendrar a Set', 'Gn 5:3', 'Adam_1')], A(130, 230)),
+      EVT('ev-muere-adan', 'Muere Adán', 'muerte', 'Gn 5:5', ['Adam_1'], 'ev-adan', [paso('Adán vivió 930 años', 'Gn 5:5', 'Adam_1', 'total')], A(930, 930)),
+      EVT('ev-nac-enos', 'Nace Enós', 'nacimiento', 'Gn 5:6', ['Enosh_1'], 'ev-nac-set', [paso('Set tenía 105 años (LXX 205) al engendrar a Enós', 'Gn 5:6', 'Seth_1')], A(235, 435)),
+      EVT('ev-muere-set', 'Muere Set', 'muerte', 'Gn 5:8', ['Seth_1'], 'ev-nac-set', [paso('Set vivió 912 años', 'Gn 5:8', 'Seth_1', 'total')], A(1042, 1142)),
+      EVT('ev-nac-noe', 'Nace Noé', 'nacimiento', 'Gn 5:29', ['Noah_1'], 'ev-nac-enos', [paso('Suma de las edades al engendrar de Enós a Lamec (abreviado en el ejemplo)', 'Gn 5:28')], A(1056, 1642)),
+      EVT('ev-diluvio', 'El diluvio', 'evento', 'Gn 7:6', ['Noah_1'], 'ev-nac-noe', [paso('Noé tenía 600 años cuando vino el diluvio', 'Gn 7:6', 'Noah_1', 'al_diluvio')], A(1656, 2242)),
+      EVT('ev-muere-noe', 'Muere Noé', 'muerte', 'Gn 9:29', ['Noah_1'], 'ev-nac-noe', [paso('Noé vivió 950 años', 'Gn 9:29', 'Noah_1', 'total')], A(2006, 2592)),
+      EVT('ev-nac-abram', 'Nace Abram', 'nacimiento', 'Gn 11:26', ['Abraham_1'], 'ev-diluvio', [paso('De Sem a Taré (abreviado en el ejemplo)', 'Gn 11:10'), paso('Taré tenía 70 años al engendrar a Abram (o 130, según el supuesto)', 'Gn 11:26')], A(1948, 3312, 2008, 3372)),
+      EVT('ev-sale-haran', 'Abram sale de Harán', 'evento', 'Gn 12:4', ['Abraham_1'], 'ev-nac-abram', [paso('Abram tenía 75 años al salir de Harán', 'Gn 12:4', 'Abraham_1', 'en_evento')], A(2023, 3387, 2083, null))
+    ],
+    hitos_sin_fecha: [{ titulo: 'Caín mata a Abel', ref: 'Gn 4:8', nota: '' }, { titulo: 'Los hijos de Dios y las hijas de los hombres', ref: 'Gn 6:1', nota: '' }]
+  };
+
   g.BIBLIA_DATOS = {
+    cronologia,
     generado: '2026-11-10T00:00:00Z',
     fuentes: [
       { id: 'rv1909', nombre: 'Reina-Valera 1909', licencia: 'Dominio público', url: 'https://example.org/rv1909' },

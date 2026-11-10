@@ -408,3 +408,52 @@ select { font: inherit; min-height: 44px; width: 100%; padding: .4rem .6rem; bor
 .sin-parentesco li { padding: .15rem .3rem; border-radius: .5rem; }
 .sin-parentesco li.foco-sp { box-shadow: inset 0 0 0 2px var(--rubrica); }
 .rol { margin: 0 0 .3rem; font-family: var(--serif); font-size: 1.05rem; font-style: italic; }
+
+/* ---------- Tiempo: subvistas, supuestos y línea de tiempo (todo año es cálculo) ---------- */
+.subvistas { display: flex; flex-wrap: wrap; gap: .25rem; margin: .5rem 0 .25rem; border-bottom: 1px solid var(--linea); }
+.subvistas a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .8rem; color: var(--suave); text-decoration: none; font-weight: 600; border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.subvistas a[aria-current="page"] { color: var(--tinta); border-bottom-color: var(--rubrica); }
+.supuestos { display: grid; gap: .5rem; margin: 0 0 1rem; max-width: 44rem; }
+.supuesto { border: 1px solid var(--linea); border-radius: .8rem; padding: .35rem .8rem .55rem; background: var(--hoja); margin: 0; }
+.supuesto legend { font-weight: 600; font-size: .95rem; padding: 0 .3rem; }
+.opcion { display: flex; align-items: flex-start; gap: .55rem; min-height: 44px; padding: .45rem .2rem; cursor: pointer; }
+.opcion input { width: 1.15rem; height: 1.15rem; margin: .15rem 0 0; flex: none; accent-color: var(--c-calculo); }
+.anio-calc, .tl-anio { color: var(--c-calculo); font-weight: 700; font-variant-numeric: tabular-nums; }
+.cifra.calc { color: var(--c-calculo); }
+.leyenda-tl { display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
+.leyenda-tl span { display: inline-flex; align-items: center; gap: .3rem; }
+.leyenda-tl svg, .tl-ico svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.tl-sec { max-width: 44rem; }
+.tl-sec h2 { margin-top: 1.75rem; }
+.tl { list-style: none; margin: 0; padding: 0 0 0 1.4rem; position: relative; }
+.tl::before { content: ""; position: absolute; left: .55rem; top: .3rem; bottom: .3rem; width: 2px; background: color-mix(in srgb, var(--c-calculo) 45%, var(--linea)); }
+.tl-ev, .tl-hito { position: relative; margin: .3rem 0; }
+.tl-ico { position: absolute; left: -1.4rem; top: .8rem; display: grid; place-items: center; width: 1.25rem; height: 1.25rem; border-radius: 50%; background: var(--papel); color: var(--c-calculo); }
+.tl-ev.tipo-muerte .tl-ico { color: var(--suave); }
+.tl-hito .tl-ico { color: var(--suave); }
+.tl-btn { display: flex; width: 100%; min-height: 44px; text-align: left; padding: .5rem .75rem; border: 1px solid var(--linea); border-radius: .7rem; background: var(--hoja); color: var(--tinta); cursor: pointer; transition: background var(--t); }
+.tl-btn:hover { background: var(--hoja2); }
+.tl-cuerpo { display: flex; flex-direction: column; gap: .05rem; min-width: 0; }
+.tl-tit { font-family: var(--serif); font-size: 1.08rem; line-height: 1.25; }
+.tl-ref, .tl-dif { font-size: .8rem; color: var(--suave); }
+.tl-dif { color: var(--rubrica); font-weight: 600; }
+.tl-ev.diluvio .tl-btn { border: 2px solid var(--lapis); background: var(--lapis-tinte); }
+.tl-ev.diluvio .tl-ico { color: var(--lapis); }
+.tl-ev.foco .tl-btn { box-shadow: 0 0 0 2px var(--rubrica); }
+.tl-hito .tl-cuerpo { padding: .45rem .75rem; border: 1px dashed var(--linea); border-radius: .7rem; }
+.tl-hito .tl-tit { font-style: italic; color: var(--suave); }
+.tl-salto { font-size: .74rem; color: var(--c-calculo); padding: .05rem 0 .05rem .75rem; font-variant-numeric: tabular-nums; }
+.bloque-calc { border: 1px solid color-mix(in srgb, var(--c-calculo) 45%, var(--linea)); }
+.cadena { padding-left: 1.2rem; margin: .4rem 0; display: grid; gap: .5rem; }
+.cadena ul { margin: .2rem 0; padding-left: 1rem; font-size: .92rem; }
+.subtotal { display: inline-block; color: var(--c-calculo); font-weight: 700; font-variant-numeric: tabular-nums; }
+.cuando { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.cuando li { display: flex; flex-wrap: wrap; align-items: center; gap: .2rem .5rem; padding: .5rem .6rem; border-radius: .6rem; background: var(--papel); }
+.cuando .edad-quien, .cuando .contexto { flex-basis: 100%; }
+.supuestos-caja { max-width: 44rem; margin: 0 0 1rem; }
+.opcion { line-height: 1.4; }
+.tl-sin-tiempo { margin: 1rem 0 0; padding: .4rem .9rem .7rem; border: 1px dashed var(--linea); border-radius: .8rem; background: var(--papel); }
+.tl-sin-tiempo h3 { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem; font-size: .95rem; margin: .4rem 0 .3rem; color: var(--suave); }
+.tl-sin-tiempo h3 svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.tl-sin-tiempo ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
+.tl-sin-tiempo .tl-tit { font-style: italic; }

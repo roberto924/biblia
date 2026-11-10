@@ -626,7 +626,137 @@ const Nucleo = (() => {
     return null;
   }
 
-  return { TRADS, TIPOS, norm, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
+  /* ---- Cronología: todo año es CÁLCULO (años desde la creación de Adán) ---- */
+  function crono(d) {
+    return memo(d || {}, 'crono', () => {
+      const c = d && d.cronologia;
+      if (!c || !Array.isArray(c.eventos)) return null;
+      const eventos = c.eventos.filter(e => e && e.id);
+      return { unidad: c.unidad || 'años desde la creación de Adán (cálculo)', eventos, porId: new Map(eventos.map(e => [e.id, e])),
+        supuestos: (c.supuestos || []).filter(s => s && s.id && Array.isArray(s.opciones) && s.opciones.length),
+        combinaciones: (c.combinaciones || []).filter(Boolean), hitos: (c.hitos_sin_fecha || []).filter(h => h && h.titulo) };
+    });
+  }
+  // Elección de cada supuesto: la guardada si es válida; si no, la opción por defecto.
+  function elecciones(d, guardadas) {
+    const C = crono(d), out = {};
+    if (C) C.supuestos.forEach(s => {
+      const g = guardadas && guardadas[s.id], ok = id => s.opciones.some(o => o.id === id);
+      out[s.id] = ok(g) ? g : ok(s.defecto) ? s.defecto : s.opciones[0].id;
+    });
+    return out;
+  }
+  // Id de la combinación (tradición + supuestos) con la que se leen los `anios` de cada evento.
+  function combinacion(d, trad, eleg) {
+    const C = crono(d); if (!C) return null;
+    const e = elecciones(d, eleg);
+    const c = C.combinaciones.find(x => x.tradicion === trad && C.supuestos.every(s => (x.supuestos || {})[s.id] === e[s.id]));
+    return c && c.id ? c.id : [trad].concat(C.supuestos.map(s => e[s.id])).join('|');
+  }
+  const anioEvento = (d, id, combo) => { const C = crono(d), e = C && C.porId.get(id); return e && e.anios ? num(e.anios[combo]) : null; };
+  // Cadena completa desde el origen siguiendo `depende_de`: [{evento, titulo, ref, anio (subtotal), pasos}].
+  function cadenaEvento(d, id, combo) {
+    const C = crono(d), out = [], vis = new Set();
+    if (!C) return out;
+    for (let e = C.porId.get(id); e && !vis.has(e.id); e = e.depende_de ? C.porId.get(e.depende_de) : null) {
+      vis.add(e.id);
+      out.unshift({ evento: e.id, titulo: e.titulo || e.id, ref: e.ref || '', anio: anioEvento(d, e.id, combo), pasos: (e.pasos || []).filter(Boolean) });
+    }
+    return out;
+  }
+  // Nacimiento y muerte (años desde Adán) por persona en una combinación.
+  function vidasCrono(d, combo) {
+    return memo(d || {}, 'vidasC|' + combo, () => {
+      const C = crono(d), m = new Map();
+      if (C) C.eventos.forEach(e => {
+        if (e.tipo !== 'nacimiento' && e.tipo !== 'muerte') return;
+        const a = anioEvento(d, e.id, combo);
+        (e.personas || []).forEach(id => {
+          if (!m.has(id)) m.set(id, { persona: id, nacimiento: null, muerte: null, evNac: null, evMuerte: null });
+          const x = m.get(id);
+          if (e.tipo === 'nacimiento') { x.nacimiento = a; x.evNac = e.id; } else { x.muerte = a; x.evMuerte = e.id; }
+        });
+      });
+      return m;
+    });
+  }
+  // Quién vivía en un año: nacimiento ≤ año ≤ muerte (ambos conocidos), con su edad entonces.
+  function vivosEn(d, anio, combo) {
+    if (anio === null || anio === undefined) return [];
+    const out = [];
+    for (const x of vidasCrono(d, combo).values())
+      if (x.nacimiento !== null && x.muerte !== null && x.nacimiento <= anio && anio <= x.muerte) out.push(Object.assign({ edad: anio - x.nacimiento }, x));
+    return out.sort((a, b) => a.nacimiento - b.nacimiento);
+  }
+  // Contemporáneos: vidas que se solapan con la de `id`; primero la línea principal, luego el solape más largo.
+  function contemporaneos(d, id, combo, max) {
+    const m = vidasCrono(d, combo), x = m.get(id);
+    if (!x || x.nacimiento === null) return [];
+    const fin = x.muerte === null ? x.nacimiento : x.muerte, lp = lineaPrincipal(d), out = [];
+    for (const y of m.values()) {
+      if (y.persona === id || y.nacimiento === null || y.muerte === null) continue;
+      const solape = Math.min(fin, y.muerte) - Math.max(x.nacimiento, y.nacimiento);
+      if (solape >= 0) out.push({ persona: y.persona, solape, linea: lp.has(y.persona) });
+    }
+    return out.sort((a, b) => (b.linea - a.linea) || b.solape - a.solape).slice(0, max || 8);
+  }
+  const porVersiculo = (a, b) => (clave(a.ref) || 0) - (clave(b.ref) || 0);
+  function eventosDeRefs(d, refs) {
+    const C = crono(d), ks = new Set([].concat(refs || []).map(clave).filter(k => k !== null));
+    return C ? C.eventos.filter(e => ks.has(clave(e.ref))).sort(porVersiculo) : [];
+  }
+  function eventosDePasaje(d, p) {
+    const C = crono(d); if (!C || !p) return [];
+    const a = clave(p.inicio), b = clave(p.fin);
+    return C.eventos.filter(e => { const k = clave(e.ref); return k !== null && k >= a && k <= b; }).sort(porVersiculo);
+  }
+  // Eventos fechados antes y después de un tramo, por ORDEN DE LECTURA (no es un dato del texto).
+  function vecinosFechados(d, desde, hasta, combo) {
+    const C = crono(d), a = clave(desde), b = clave(hasta === undefined ? desde : hasta);
+    let anterior = null, siguiente = null;
+    if (C && a !== null && b !== null) C.eventos.forEach(e => {
+      const k = clave(e.ref), y = anioEvento(d, e.id, combo);
+      if (k === null || y === null) return;
+      const x = { evento: e.id, titulo: e.titulo || e.id, ref: e.ref, anio: y, k };
+      if (k < a && (!anterior || k > anterior.k || (k === anterior.k && y > anterior.anio))) anterior = x;
+      if (k > b && (!siguiente || k < siguiente.k || (k === siguiente.k && y < siguiente.anio))) siguiente = x;
+    });
+    return { anterior, siguiente };
+  }
+  // "N años después de <evento del que depende>".
+  function despuesDe(d, id, combo) {
+    const C = crono(d), e = C && C.porId.get(id), p = e && e.depende_de && C.porId.get(e.depende_de);
+    if (!p) return null;
+    const a = anioEvento(d, id, combo), b = anioEvento(d, p.id, combo);
+    return a === null || b === null ? null : { evento: p.id, titulo: p.titulo || p.id, anios: a - b };
+  }
+  function compararEvento(d, id, eleg) {
+    const TM = anioEvento(d, id, combinacion(d, 'TM', eleg)), LXX = anioEvento(d, id, combinacion(d, 'LXX', eleg));
+    return { TM, LXX, dif: TM !== null && LXX !== null ? LXX - TM : null };
+  }
+  const esDiluvio = e => !!e && /diluvio/i.test((e.id || '') + ' ' + (e.titulo || ''));
+  // Línea de tiempo por secciones de lectura: eventos por año (los sin año al final) y, aparte, los hitos sin fecha.
+  function lineaDeTiempo(d, combo) {
+    const C = crono(d); if (!C) return [];
+    const secs = seccionesPlan(d, [], null), dePasaje = new Map(), grupos = new Map();
+    secs.forEach(g => { grupos.set(g.id, { id: g.id, titulo: g.titulo, eventos: [], hitos: [] }); g.pasajes.forEach(x => dePasaje.set(x.pasaje.id, g.id)); });
+    const grupo = ref => { const p = pasajeDe(d, ref), id = (p && dePasaje.get(p.id)) || 'otros'; if (!grupos.has(id)) grupos.set(id, { id, titulo: 'Otros', eventos: [], hitos: [] }); return grupos.get(id); };
+    // Sin versículo propio (p. ej. un dato solo de la LXX): se sitúa con el suceso del que depende.
+    const refDe = e => { for (let x = e, n = 0; x && n < 50; x = x.depende_de && C.porId.get(x.depende_de), n++) if (clave(x.ref) !== null) return x.ref; return null; };
+    C.eventos.forEach(e => { const r = refDe(e); grupo(r).eventos.push({ tipo: 'evento', evento: e, anio: anioEvento(d, e.id, combo), k: clave(r) || 0 }); });
+    C.hitos.forEach(h => grupo(h.ref).hitos.push({ tipo: 'hito', hito: h, k: clave(h.ref) || 0 }));
+    const out = [];
+    for (const g of grupos.values()) {
+      if (!g.eventos.length && !g.hitos.length) continue;
+      // Los hitos sin fecha NO entran en el eje (sugerirían un año que el texto no da): van aparte, en orden de lectura.
+      const items = g.eventos.sort((a, b) => (a.anio === null ? Infinity : a.anio) - (b.anio === null ? Infinity : b.anio) || a.k - b.k);
+      out.push({ id: g.id, titulo: g.titulo, items, hitos: g.hitos.sort((a, b) => a.k - b.k) });
+    }
+    return out;
+  }
+
+  return { TRADS, TIPOS, norm, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+    vecinosFechados, despuesDe, contemporaneos, compararEvento, esDiluvio, lineaDeTiempo, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
     acompanante, tieneApoyo, quienAparece, primerasApariciones, miniArbol, anoDiluvio, seccionesPlan, alcance, nombresDe,
     lugar, lugaresDeRefs, lugaresDePasaje, confianzaLugar, proyeccion, proyectar, desproyectar, encuadre, colocarEtiquetas, etiquetasPorZoom, prioridadLugar,
     indice, persona, hijosDe, encontrar, idAdan, idAbraham, idJacob,
@@ -801,6 +931,27 @@ if (typeof document !== 'undefined') (function () {
       const ub = A.lugares.filter(id => N.confianzaLugar(N.lugar(D, id)) !== 'desconocida');
       html += sec('Dónde ocurre', `${ub.length ? mapaHTML(ub, { mini: true }) : ''}<ul class="lugares-lista">${A.lugares.map(id => { const l = N.lugar(D, id) || {}, c = N.confianzaLugar(l); return `<li>${btnLugar(id)}<span class="contexto">${c === 'desconocida' ? 'Ubicación desconocida' + (l.nota ? ': ' + esc(l.nota) : '') : esc((l.ubicacion && l.ubicacion.identificacion) || '') + '. ' + CONF_TXT[c]}</span></li>`; }).join('')}</ul>`, I('M10 17s5-4.6 5-8.5a5 5 0 10-10 0C5 12.4 10 17 10 17zM10 10.2a1.7 1.7 0 100-3.4 1.7 1.7 0 000 3.4'));
     }
+    if (N.crono(D)) {
+      // Año (cálculo) de los sucesos de este versículo o pasaje; si no hay, entre qué sucesos fechados queda por orden de lectura.
+      const tr = tradSimple(), combo = comboDe(tr);
+      const evs = estado.activo ? N.eventosDeRefs(D, refs) : N.eventosDePasaje(D, p);
+      const enlace = (x, t) => `<a href="#tiempo/linea/${encodeURIComponent(x)}">${t}</a>`;
+      let cuerpo;
+      if (evs.length) cuerpo = `<ul class="cuando">${evs.map(ev => {
+        const a = N.anioEvento(D, ev.id, combo), dsp = N.despuesDe(D, ev.id, combo);
+        return `<li><span class="edad-quien"><strong>${esc(ev.titulo || ev.id)}</strong> · ${refHTML(ev.ref)}</span>
+          <span class="anio-calc">${a === null ? 'Sin año en esta combinación' : `Año ${a} desde Adán (${tr})`}</span> ${insignia('calculo')}
+          ${dsp ? `<span class="contexto">${anios(dsp.anios)} después de «${esc(dsp.titulo)}»</span>` : ''}
+          <a class="enlace-arbol" href="#tiempo/linea/${encodeURIComponent(ev.id)}">Ver en la línea de tiempo</a></li>`;
+      }).join('')}</ul>`;
+      else {
+        const r = estado.activo ? [refs[0], refs[0]] : [p.inicio, p.fin], v = N.vecinosFechados(D, r[0], r[1], combo);
+        const t = x => `${enlace(x.evento, '«' + esc(x.titulo) + '»')} (año ${x.anio}, ${refHTML(x.ref)})`;
+        const donde = v.anterior && v.siguiente ? `entre ${t(v.anterior)} y ${t(v.siguiente)}` : v.anterior ? `después de ${t(v.anterior)}` : v.siguiente ? `antes de ${t(v.siguiente)}` : '';
+        cuerpo = `<p class="contexto">${estado.activo ? 'Este versículo' : 'Este pasaje'} no trae datos de tiempo.${donde ? ` Por el orden de lectura queda ${donde}. Es el orden del relato, no un dato del texto.` : ''}</p>`;
+      }
+      html += sec('Cuándo ocurre', cuerpo, I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2'));
+    }
     if (A.vinculos.length) html += sec('Vínculos que establece', `<ul class="vinculos">${A.vinculos.map(r => `<li><span>${TIPO_REL(r)}</span>${insignia(r.certeza, r.ref)}${citaHTML(r)}</li>`).join('')}</ul>`, I('M7 7a3 3 0 014 0l2 2a3 3 0 010 4M13 13a3 3 0 01-4 0l-2-2a3 3 0 010-4'));
     if (A.edades.length) html += sec('Edades', `<ul class="edades-acomp">${A.edades.map(e => {
       const val = tr => { const x = e[tr]; if (!x) return `<span class="vacio">${tr}: sin dato</span>`; const lbl = `<span class="trad">${tr}</span><strong>${x.valor}</strong>`; return N.TIPOS.includes(e.tipo) ? `<button type="button" class="celda-acomp" data-edad="${esc(e.persona)}|${e.tipo}|${tr}">${lbl}</button>` : `<span class="celda-acomp">${lbl}</span>`; };
@@ -968,23 +1119,135 @@ if (typeof document !== 'undefined') (function () {
     if (!e) return `<td${cls}><span class="vacio" aria-label="sin dato">—</span></td>`;
     return `<td${cls}><button type="button" class="celda${e.derivado ? ' calculo' : ''}" data-edad="${esc(id)}|${tipo}|${trad}" aria-label="${esc(nombre(id))}, ${TIPO_TXT[tipo]} ${trad}: ${e.valor}${e.derivado ? ' (cálculo)' : ''}">${e.valor}${e.derivado ? '<span class="marca-calc" aria-hidden="true">*</span>' : ''}</button></td>`;
   }
-  function vistaEdades() {
-    const trads = estado.trad === 'ambas' ? ['TM', 'LXX'] : [estado.trad];
-    const orden = N.ordenPatriarcas(D);
-    const ambas = trads.length === 2;
+  /* ---------- Tiempo: línea de tiempo, vidas solapadas y tabla de edades ---------- */
+  // Génesis no da fechas: todo año es CÁLCULO (años desde la creación de Adán) y se presenta como tal.
+  const trads = () => estado.trad === 'ambas' ? ['TM', 'LXX'] : [estado.trad === 'LXX' ? 'LXX' : 'TM'];
+  const tradSimple = () => estado.trad === 'LXX' ? 'LXX' : 'TM'; // "comparar" → TM donde solo cabe una
+  const eleg = () => N.elecciones(D, store.get('biblia.supuestos', {}));
+  const comboDe = tr => N.combinacion(D, tr, eleg());
+  const TRAD_TXT = { TM: 'Texto Masorético (TM)', LXX: 'Septuaginta (LXX)' };
+  const TIPO_EV = { nacimiento: 'Nacimiento', muerte: 'Muerte', evento: 'Suceso' };
+  const ICO_EV = {
+    nacimiento: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="5.5"/><path d="M10 7v6M7 10h6"/></svg>',
+    muerte: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3.5v13M6 7.5h8"/></svg>',
+    evento: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3.5l6.5 6.5-6.5 6.5L3.5 10z"/></svg>',
+    diluvio: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 8c2.5-2 5-2 7.5 0s5 2 7.5 0M2.5 13c2.5-2 5-2 7.5 0s5 2 7.5 0"/></svg>',
+    hito: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="5" stroke-dasharray="2 2.2"/></svg>'
+  };
+  const icoEv = ev => N.esDiluvio(ev) ? ICO_EV.diluvio : ICO_EV[ev.tipo] || ICO_EV.evento;
+  const anioTxt = a => a === null || a === undefined ? 'sin año' : `año ${a}`;
+  const anios = n => `${n} ${Math.abs(n) === 1 ? 'año' : 'años'}`;
+  // "años desde la creación de Adán" sin el "(cálculo)" final: la insignia ya lo dice.
+  const unidadTxt = C => String(C.unidad || '').replace(/\s*\(c[áa]lculo\)\s*$/i, '') || 'años desde la creación de Adán';
+
+  function vistaTiempo(args) {
+    let sub = args && args[0];
+    if (!['linea', 'vidas', 'tabla'].includes(sub)) sub = 'linea';
+    estado.focoEv = sub === 'linea' && args[1] ? args[1] : null;
+    const pest = [['linea', 'Línea de tiempo'], ['vidas', 'Vidas solapadas'], ['tabla', 'Tabla de edades']];
+    return `<h1 tabindex="-1">Tiempo</h1>
+      <nav class="subvistas" aria-label="Vistas de Tiempo">${pest.map(([id, t]) => `<a href="#tiempo/${id}"${sub === id ? ' aria-current="page"' : ''}>${t}</a>`).join('')}</nav>
+      ${controlesTiempo(sub !== 'tabla')}
+      ${sub === 'linea' ? lineaTiempoHTML() : sub === 'vidas' ? vidasHTML() : tablaHTML()}`;
+  }
+  // Tradición (TM / LXX / comparar) y un selector por supuesto; la elección se guarda.
+  function controlesTiempo(conSupuestos) {
+    const C = N.crono(D), e = eleg();
+    return `<fieldset class="segmentos"><legend>Tradición</legend>${[['TM', 'TM'], ['LXX', 'LXX'], ['ambas', 'Comparar']].map(([v, t]) => `<label><input type="radio" name="trad" value="${v}" ${estado.trad === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
+      ${conSupuestos && C && C.supuestos.length ? `<details class="plegable supuestos-caja" id="supuestos"${estado.supAbiertos ? ' open' : ''}>
+        <summary>Supuestos del cálculo (${C.supuestos.length}) · ${C.supuestos.filter(s => e[s.id] !== s.defecto).length ? 'hay cambios' : 'por defecto'}</summary>
+        <div class="supuestos">${C.supuestos.map(s => `<fieldset class="supuesto"><legend>${esc(s.pregunta || s.id)}</legend>
+        ${s.opciones.map(o => `<label class="opcion"><input type="radio" name="sup-${esc(s.id)}" data-sup="${esc(s.id)}" value="${esc(o.id)}" ${e[s.id] === o.id ? 'checked' : ''}><span>${esc(o.texto || o.id)}${(o.refs || []).length ? ` <span class="meta">${o.refs.map(refHTML).join(', ')}</span>` : ''}</span></label>`).join('')}</fieldset>`).join('')}</div></details>` : ''}`;
+  }
+  function lineaTiempoHTML() {
+    const C = N.crono(D);
+    if (!C) return '<p class="vacio-txt">Los datos todavía no traen la cronología. Cuando lleguen, aquí verás la línea de tiempo; mientras, mira la tabla de edades.</p>';
+    const comparar = estado.trad === 'ambas', e = eleg(), combo = N.combinacion(D, comparar ? 'TM' : tradSimple(), e);
+    const L = N.lineaDeTiempo(D, combo);
+    const secs = L.map(g => {
+      let prev = null;
+      const items = g.items.map(it => {
+        const ev = it.evento, a = it.anio, c = comparar ? N.compararEvento(D, ev.id, e) : null;
+        const salto = prev !== null && a !== null && a > prev ? `<li class="tl-salto" aria-hidden="true">+${anios(a - prev)}</li>` : '';
+        if (a !== null) prev = a;
+        const anio = c ? `<span class="tl-anio">TM ${anioTxt(c.TM)} · LXX ${anioTxt(c.LXX)}</span>${c.dif ? `<span class="tl-dif">diferencia ${c.dif > 0 ? '+' : ''}${c.dif}</span>` : ''}`
+          : `<span class="tl-anio">${a === null ? 'Sin año en esta combinación' : 'Año ' + a}</span>`;
+        return `${salto}<li class="tl-ev tipo-${esc(ev.tipo || 'evento')}${N.esDiluvio(ev) ? ' diluvio' : ''}${estado.focoEv === ev.id ? ' foco' : ''}" id="ev-${esc(ev.id)}">
+          <button type="button" class="tl-btn" data-ev="${esc(ev.id)}"><span class="tl-ico">${icoEv(ev)}</span>
+          <span class="tl-cuerpo">${anio}<span class="tl-tit">${esc(ev.titulo || ev.id)}</span><span class="tl-ref">${esc(TIPO_EV[ev.tipo] || 'Suceso')} · ${esc(ev.ref || '')}</span></span></button></li>`;
+      }).join('');
+      const hitos = g.hitos.length ? `<div class="tl-sin-tiempo"><h3>${ICO_EV.hito}Hechos de esta sección sin dato de tiempo <span class="meta">(en orden de lectura)</span></h3>
+        <ul>${g.hitos.map(h => `<li><span class="tl-tit">${esc(h.hito.titulo)}</span> <span class="meta">${refHTML(h.hito.ref)}</span>${h.hito.nota ? `<span class="nota">${esc(h.hito.nota)}</span>` : ''}</li>`).join('')}</ul></div>` : '';
+      return `<section class="tl-sec"><h2>${esc(g.titulo || 'Sucesos')}</h2>${items ? `<ol class="tl">${items}</ol>` : ''}${hitos}</section>`;
+    }).join('');
+    return `<p class="aviso-calculo"><strong>Génesis no da fechas.</strong> Cada año es un ${insignia('calculo')}: ${esc(unidadTxt(C))}, encadenando edades del texto${comparar ? '; se ordena por el TM' : ''}. Pulsa un suceso para ver cómo se calcula.</p>
+      <p class="leyenda-tl meta"><span>${ICO_EV.nacimiento}Nacimiento</span><span>${ICO_EV.muerte}Muerte</span><span>${ICO_EV.evento}Suceso</span><span>${ICO_EV.diluvio}Diluvio</span><span>${ICO_EV.hito}Sin dato de tiempo (fuera del eje)</span></p>
+      ${secs || '<p class="vacio-txt">La cronología no trae sucesos.</p>'}`;
+  }
+  // Tarjeta de un suceso: año(s), cadena de pasos desde Adán (plegada), supuestos y quién vivía entonces.
+  function abrirEvento(id) {
+    const C = N.crono(D), ev = C && C.porId.get(id); if (!ev) return;
+    const e = eleg(), comparar = estado.trad === 'ambas';
+    const bloque = tr => {
+      const combo = N.combinacion(D, tr, e), a = N.anioEvento(D, id, combo), cad = N.cadenaEvento(D, id, combo), dsp = N.despuesDe(D, id, combo), vivos = N.vivosEn(D, a, combo);
+      return `<section class="bloque bloque-calc"><h3>${TRAD_TXT[tr]}</h3>
+        <p class="cifra calc">${a === null ? 'Sin año en esta combinación' : 'Año ' + a}</p>
+        <p>${insignia('calculo')}${dsp ? ` ${anios(dsp.anios)} después de «${esc(dsp.titulo)}»` : ''}</p>
+        <details class="plegable"><summary>Cómo se calcula (${cad.length} ${cad.length === 1 ? 'paso' : 'pasos'} desde Adán)</summary>
+          <ol class="cadena">${cad.map(b => `<li><strong>${esc(b.titulo)}</strong>${b.ref ? ' · ' + refHTML(b.ref) : ''}
+            ${b.pasos.length ? `<ul>${b.pasos.map(p => `<li>${esc(p.texto || '')}${p.ref ? ' · ' + refHTML(p.ref) : ''}</li>`).join('')}</ul>` : ''}
+            <span class="subtotal">= ${anioTxt(b.anio)}</span></li>`).join('')}</ol></details>
+        <h4>Quién vivía entonces ${insignia('calculo')}</h4>
+        ${vivos.length ? `<ul class="chips">${vivos.map(v => `<li>${btnPersona(v.persona)}<span class="meta"> ${anios(v.edad)}</span></li>`).join('')}</ul>` : '<p class="meta">Nadie con nacimiento y muerte calculables en ese año.</p>'}</section>`;
+    };
+    const c = comparar ? N.compararEvento(D, id, e) : null;
+    const sup = C.supuestos.map(s => { const o = s.opciones.find(x => x.id === e[s.id]) || {}; return `<li>${esc(s.pregunta || s.id)}: <strong>${esc(o.texto || o.id)}</strong></li>`; }).join('');
+    abrirDetalle(ev.titulo || id, `<p class="meta">${esc(TIPO_EV[ev.tipo] || 'Suceso')} · ${refHTML(ev.ref)}</p>
+      ${(ev.personas || []).length ? `<ul class="chips">${ev.personas.map(p => `<li>${btnPersona(p)}</li>`).join('')}</ul>` : ''}
+      ${c && c.dif !== null ? `<p class="difiere-txt">Entre TM y LXX hay ${anios(Math.abs(c.dif))} de diferencia.</p>` : ''}
+      ${(comparar ? ['TM', 'LXX'] : [tradSimple()]).map(bloque).join('')}
+      ${sup ? `<p class="meta">Supuestos usados (se cambian en Tiempo):</p><ul class="vinculos">${sup}</ul>` : ''}
+      ${ev.nota ? `<p class="nota">${esc(ev.nota)}</p>` : ''}
+      <p><a class="boton secundario" href="#tiempo/linea/${encodeURIComponent(id)}">Ver en la línea de tiempo</a></p>
+      <p class="meta">Génesis no da fechas: este año es un cálculo de la app a partir de las edades del texto.</p>`);
+  }
+  function vidasHTML() {
+    const C = N.crono(D);
+    return `<section class="vidas" aria-labelledby="vidas-t"><h2 id="vidas-t">Vidas solapadas ${insignia('calculo')}</h2>
+      <p class="aviso-calculo"><strong>Esto es un CÁLCULO, no lo dice el texto.</strong> ${C
+        ? `Nacimiento y muerte en ${esc(unidadTxt(C))}, según la cronología con la tradición y los supuestos elegidos. Pulsa una vida para ver cómo se calcula su nacimiento.`
+        : 'Los “años desde Adán” se obtienen sumando las edades al engendrar de la línea Adán → Abraham en la tradición elegida. Supone que cada edad corresponde al hijo siguiente de la línea (p. ej. Gn 5:32 da 500 años a Noé para sus tres hijos), por lo que es una aproximación.'}</p>
+      ${trads().map(C ? barrasCronoHTML : barrasHTML).join('')}</section>`;
+  }
+  function barrasCronoHTML(trad) {
+    const C = N.crono(D), combo = comboDe(trad), m = N.vidasCrono(D, combo);
+    const filas = [...m.values()].filter(x => x.nacimiento !== null).sort((a, b) => a.nacimiento - b.nacimiento);
+    const omit = [...m.values()].filter(x => x.nacimiento === null);
+    const aviso = omit.length ? `<p class="meta omitidas">Sin nacimiento calculable en esta combinación (se omiten): ${omit.map(x => esc(nombre(x.persona))).join(', ')}.</p>` : '';
+    if (!filas.length) return `<h3>${TRAD_TXT[trad]}</h3><p>Sin datos suficientes.</p>${aviso}`;
+    const max = Math.max(1, ...filas.map(f => f.muerte !== null ? f.muerte : f.nacimiento));
+    const paso = max > 3000 ? 500 : max > 1200 ? 250 : 100;
+    const marcas = []; for (let a = 0; a <= max; a += paso) marcas.push(a);
+    const pct = x => (x / max * 100).toFixed(2) + '%';
+    const evD = C.eventos.find(N.esDiluvio), dil = evD ? N.anioEvento(D, evD.id, combo) : null;
+    const marcaDil = dil !== null && dil <= max ? `<span class="diluvio-marca" style="left:${pct(dil)}"></span>` : '';
+    return `<h3>${TRAD_TXT[trad]}</h3>
+      ${dil !== null ? `<p class="leyenda"><span class="muestra-diluvio" aria-hidden="true"></span> Diluvio ≈ año ${dil} desde Adán ${insignia('calculo')} (${refHTML(evD.ref)}).</p>` : ''}
+      <ol class="barras">${filas.map(f => `<li><button type="button" class="barra-fila" data-ev="${esc(f.evNac)}">
+        <span class="barra-nombre">${esc(nombre(f.persona))}</span><span class="barra-anos">${f.nacimiento}–${f.muerte !== null ? f.muerte : '?'}</span>
+        <span class="pista" aria-hidden="true">${marcaDil}<span class="barra${f.muerte === null ? ' abierta' : ''}" style="left:${pct(f.nacimiento)};width:${f.muerte !== null ? pct(f.muerte - f.nacimiento) : '4px'}"></span></span></button></li>`).join('')}</ol>
+      <div class="eje" aria-hidden="true">${marcas.map(a => `<span style="left:${pct(a)}">${a}</span>`).join('')}</div>${aviso}`;
+  }
+  function tablaHTML() {
+    const ts = trads(), orden = N.ordenPatriarcas(D), ambas = ts.length === 2;
     const cab = ambas
       ? `<tr><th rowspan="2" scope="col">Persona</th>${N.TIPOS.map(t => `<th colspan="2" scope="colgroup">${TIPO_TXT[t]}</th>`).join('')}</tr><tr>${N.TIPOS.map(() => '<th scope="col">TM</th><th scope="col">LXX</th>').join('')}</tr>`
       : `<tr><th scope="col">Persona</th>${N.TIPOS.map(t => `<th scope="col">${TIPO_TXT[t]}</th>`).join('')}</tr>`;
-    const filas = orden.map(id => { const dif = N.diferencias(D, id); return `<tr><th scope="row">${btnPersona(id)}${etiquetaTrad(id)}</th>${N.TIPOS.map(t => trads.map(tr => celda(id, t, tr, dif[t])).join('')).join('')}</tr>`; }).join('');
-    return `<h1 tabindex="-1">Edades de los patriarcas</h1>
-      <fieldset class="segmentos"><legend>Tradición</legend>${['TM', 'LXX', 'ambas'].map(t => `<label><input type="radio" name="trad" value="${t}" ${estado.trad === t ? 'checked' : ''}><span>${t === 'ambas' ? 'Ambas' : t}</span></label>`).join('')}</fieldset>
+    const filas = orden.map(id => { const dif = N.diferencias(D, id); return `<tr><th scope="row">${btnPersona(id)}${etiquetaTrad(id)}</th>${N.TIPOS.map(t => ts.map(tr => celda(id, t, tr, dif[t])).join('')).join('')}</tr>`; }).join('');
+    return `<h2>Edades de los patriarcas</h2>
       <p class="leyenda"><span class="muestra difiere"></span> TM y LXX difieren (o solo una da el dato) · <span class="marca-calc">*</span> cálculo (no está escrito; se deduce) · pulsa una cifra para ver versículo, cita y fuente.</p>
       ${orden.length ? `<div class="tabla-envoltura" tabindex="0" role="region" aria-label="Tabla de edades"><table class="edades"><thead>${cab}</thead><tbody>${filas}</tbody></table></div>` : '<p>No hay edades de patriarcas en los datos.</p>'}
-      ${eventosHTML()}
-      <section class="vidas" aria-labelledby="vidas-t"><h2 id="vidas-t">Vidas solapadas <span class="insignia calculo">Cálculo</span></h2>
-        <p class="aviso-calculo"><strong>Esto es un CÁLCULO, no lo dice el texto.</strong> Los “años desde Adán” se obtienen sumando las edades al engendrar de la línea Adán → Abraham en la tradición elegida. Supone que cada edad corresponde al hijo siguiente de la línea (p. ej. Gn 5:32 da 500 años a Noé para sus tres hijos), por lo que es una aproximación.</p>
-        ${trads.map(barrasHTML).join('')}
-      </section>`;
+      ${eventosHTML()}`;
   }
   function eventosHTML() {
     const gs = N.edadesEnEventoPorPersona(D);
@@ -1024,6 +1287,11 @@ if (typeof document !== 'undefined') (function () {
         <dt>${insignia('calculo')}</dt><dd>Cifra obtenida por operación aritmética a partir del texto (sumas de edades, años desde Adán). No está escrita como tal.</dd></dl></section>
       <section><h2>TM y LXX</h2><p><strong>TM — Texto Masorético:</strong> texto hebreo transmitido por los masoretas; base de la mayoría de las Biblias en español (como la Reina-Valera).</p>
         <p><strong>LXX — Septuaginta:</strong> traducción griega antigua del Antiguo Testamento. En Génesis 5 y 11 da a menudo cifras distintas (suele sumar 100 años a la edad al engendrar) e incluye a un Cainán en Gn 11 que el TM no menciona.</p></section>
+      ${(C => C ? `<section><h2>Tiempo y cronología</h2>
+        <p>Génesis no da fechas. La app sitúa los sucesos en <strong>${esc(unidadTxt(C))}</strong>, encadenando edades que el texto sí da (por ejemplo, la edad de cada padre al engendrar). Por eso <strong>todo año es ${insignia('calculo')}</strong>: no está escrito así en el texto, y cada suceso muestra la cadena de pasos y sus versículos.</p>
+        <p>No se dan fechas antes de Cristo: convertir estos años exigiría supuestos ajenos al texto. El TM y la LXX dan edades distintas, así que los años cambian según la tradición.</p>
+        ${C.supuestos.length ? `<h3>Supuestos</h3><p>Donde el texto admite más de una lectura, puedes elegir en Tiempo; la elección se guarda en este dispositivo.</p><dl class="etiquetas">${C.supuestos.map(s => `<dt>${esc(s.pregunta || s.id)}</dt><dd><ul>${s.opciones.map(o => `<li>${esc(o.texto || o.id)}${o.id === s.defecto ? ' <span class="etiqueta">por defecto</span>' : ''}${(o.refs || []).length ? ' · ' + o.refs.map(refHTML).join(', ') : ''}${o.nota ? `<br><span class="meta">${esc(o.nota)}</span>` : ''}</li>`).join('')}</ul></dd>`).join('')}</dl>` : ''}
+        <p>Los sucesos sin dato de tiempo en el texto (como ${C.hitos.length ? '«' + esc(C.hitos[0].titulo) + '»' : 'la torre de Babel'}) se muestran en orden de lectura, sin año.</p></section>` : '')(N.crono(D))}
       <section><h2>Lugares y mapa</h2>
         <p>El <strong>nombre</strong> de cada lugar es texto bíblico. Su <strong>ubicación</strong> es una identificación moderna propuesta por la investigación y puede discutirse.</p>
         <ul class="fuentes">
@@ -1060,6 +1328,19 @@ if (typeof document !== 'undefined') (function () {
     const evs = N.edadesEnEvento(D).filter(x => x.persona === id);
     const edades = (tieneEdades ? `<table class="edades mini"><thead><tr><th scope="col"></th><th scope="col">TM</th><th scope="col">LXX</th></tr></thead><tbody>${N.TIPOS.map(t => `<tr><th scope="row">${TIPO_TXT[t]}</th>${N.TRADS.map(tr => celda(id, t, tr, dif[t])).join('')}</tr>`).join('')}</tbody></table>` : '')
       + (evs.length ? `<ul class="edades-acomp">${evs.map(eventoHTML).join('')}</ul>` : '') || '<p class="meta">Sin edades registradas.</p>';
+    // En el tiempo: nacimiento y muerte en años desde Adán (cálculo) con la combinación elegida en Tiempo.
+    let tiempo = '';
+    if (N.crono(D)) {
+      const tr = tradSimple(), combo = comboDe(tr), x = N.vidasCrono(D, combo).get(id);
+      if (x && (x.nacimiento !== null || x.muerte !== null)) {
+        const cel = (a, ev) => a === null ? '<span class="meta">sin dato</span>' : `<button type="button" class="celda-acomp" data-ev="${esc(ev)}"><strong>${a}</strong></button>`;
+        const cont = N.contemporaneos(D, id, combo, 8);
+        tiempo = `<h3>En el tiempo ${insignia('calculo')}</h3>
+          <div class="par"><span>Nace<br>${cel(x.nacimiento, x.evNac)}</span><span>Muere<br>${cel(x.muerte, x.evMuerte)}</span></div>
+          <p class="meta">Años desde la creación de Adán (${tr}, con los supuestos elegidos en Tiempo). Pulsa una cifra para ver el cálculo.</p>
+          ${cont.length ? `<p class="meta">Contemporáneos destacados:</p><ul class="chips">${cont.map(c => `<li>${btnPersona(c.persona)}</li>`).join('')}</ul>` : ''}`;
+      }
+    }
     const refs = [...new Set([].concat(p.primera_ref ? [p.primera_ref] : [], p.refs || []))];
     fichaDlg.querySelector('h2').textContent = p.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
@@ -1070,7 +1351,7 @@ if (typeof document !== 'undefined') (function () {
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
       <h3>Hijos</h3>${lista(hijos, 'No constan.')}
-      <h3>Edades</h3>${edades}
+      <h3>Edades</h3>${edades}${tiempo}
       ${p.nota ? `<h3>Notas</h3><p class="nota">${esc(p.nota)}</p>` : ''}
       <h3>Versículos</h3>${refs.length ? `<ul class="refs">${refs.map(r => `<li>${refHTML(r)}</li>`).join('')}</ul>` : '<p class="meta">Sin referencias.</p>'}`;
     mostrar(fichaDlg);
@@ -1302,7 +1583,8 @@ if (typeof document !== 'undefined') (function () {
 
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
-  const VISTAS = { leer: vistaLeer, arbol: vistaArbol, edades: vistaEdades, mapa: vistaMapa, fuentes: vistaFuentes };
+  const VISTAS = { leer: vistaLeer, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes };
+  const PESTANA = { edades: 'tiempo' }; // rutas antiguas
   let primera = true;
   function render(foco) {
     if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/genesis.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
@@ -1310,9 +1592,9 @@ if (typeof document !== 'undefined') (function () {
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
     montarMapas(main);
-    document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? PESTANA[vista] || vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
-    const marcado = main.querySelector('.vers.activo, .fila.foco, .foco-sp');
+    const marcado = main.querySelector('.vers.activo, .fila.foco, .foco-sp, .tl-ev.foco');
     if (marcado && foco !== false) { marcado.scrollIntoView({ block: 'center' }); }
     else if (foco !== false && !primera) { window.scrollTo(0, 0); }
     if (foco !== false && !primera) { const h = main.querySelector('h1'); if (h) h.focus({ preventScroll: true }); }
@@ -1326,6 +1608,7 @@ if (typeof document !== 'undefined') (function () {
     const s = e.target; if (!s || !s.dataset) return;
     if (s.dataset.sec) estado.secAbiertas.set(s.dataset.sec, s.open);
     if (s.id === 'sin-parentesco') estado.sinParAbierta = s.open;
+    if (s.id === 'supuestos') estado.supAbiertos = s.open;
   }, true);
   document.addEventListener('keydown', e => {
     if (e.target && e.target.id === 'buscar' && e.key === 'Enter') { const r = N.buscar(D, estado.q, 1)[0]; if (r) { e.preventDefault(); irArbol(r.id); } }
@@ -1339,6 +1622,7 @@ if (typeof document !== 'undefined') (function () {
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
     const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
+    const evb = t.closest('[data-ev]'); if (evb) { abrirEvento(evb.dataset.ev); return; }
     const ca = t.closest('[data-calc]'); if (ca) { const [trad, id] = ca.dataset.calc.split('|'); detalleCalc(trad, id); return; }
     const pl = t.closest('[data-plegar]'); if (pl) { alternarRama(pl.dataset.plegar); return; }
     const at = t.closest('[data-atajo]'); if (at) { estado.lineaSolo = estado.lineaSolo === at.dataset.atajo ? false : at.dataset.atajo; estado.aviso = ''; rerender(`[data-atajo="${CSS.escape(at.dataset.atajo)}"]`); return; }
@@ -1355,6 +1639,7 @@ if (typeof document !== 'undefined') (function () {
     const t = e.target;
     if (t.id === 'f-ambito') { estado.mapaFiltro = t.value; rerender('#f-ambito'); }
     else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
+    else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
   });
   document.addEventListener('input', e => {
