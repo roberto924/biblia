@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Biblia · Compañero de lectura</title>
-<meta name="description" content="Lee Génesis 1–11 con genealogías, edades y fuentes de cada dato.">
-<meta name="theme-color" content="#f8f3ea" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1815" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Lee Génesis 1–11 paso a paso, con las personas, vínculos y edades de cada versículo y su fuente.">
+<meta name="theme-color" content="#ecebe4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14181b" media="(prefers-color-scheme: dark)">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="iconos/icono.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="iconos/icono-192.png">
@@ -15,26 +15,31 @@
 <body>
 <a class="saltar" href="#principal">Saltar al contenido</a>
 <div class="marco">
+  <header class="cabecera">
+    <a class="marca" href="#leer" aria-label="Compañero de lectura, inicio">
+      <svg class="marca-icono" viewBox="0 0 40 40" aria-hidden="true"><path class="hoja-l" d="M5 10c5-2 10-2 15 1v22c-5-3-10-3-15-1z"/><path class="hoja-r" d="M35 10c-5-2-10-2-15 1v22c5-3 10-3 15-1z"/><path class="hilo" d="M20 11v25"/><circle class="nudo" cx="20" cy="36" r="2"/></svg>
+      <span class="marca-texto"><span class="marca-nombre">Compañero de lectura</span><span class="marca-libro">Génesis 1–11</span></span>
+    </a>
+  </header>
   <nav class="nav-principal" aria-label="Secciones">
-    <p class="marca-app" aria-hidden="true">Compañero de lectura</p>
-    <a href="#leer" data-vista="leer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5c3-1 6-1 9 1 3-2 6-2 9-1v14c-3-1-6-1-9 1-3-2-6-2-9-1z M12 6v14"/></svg><span>Leer</span></a>
-    <a href="#arbol" data-vista="arbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v6M12 9H6v5M12 9h6v5M6 14v4M18 14v4M12 9v9"/><circle cx="12" cy="3.5" r="1.5"/><circle cx="6" cy="19" r="1.5"/><circle cx="12" cy="19" r="1.5"/><circle cx="18" cy="19" r="1.5"/></svg><span>Árbol</span></a>
-    <a href="#edades" data-vista="edades"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M4 12h16M4 18h7"/></svg><span>Edades</span></a>
-    <a href="#fuentes" data-vista="fuentes"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>Fuentes</span></a>
+    <a href="#leer" data-vista="leer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.2 6-1.2 9 .8 3-2 6-2 9-.8v13c-3-1.2-6-1.2-9 .8-3-2-6-2-9-.8z"/><path d="M12 6.3v13.4"/></svg><span>Leer</span></a>
+    <a href="#arbol" data-vista="arbol"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M12 6.5v4M12 10.5c-4 0-6 1-6 4M12 10.5c4 0 6 1 6 4M12 10.5v4"/><circle cx="6" cy="17" r="2"/><circle cx="12" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg><span>Árbol</span></a>
+    <a href="#edades" data-vista="edades"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h9M7 12h13M5 18h7"/><path d="M4 3v18" opacity=".5"/></svg><span>Edades</span></a>
+    <a href="#fuentes" data-vista="fuentes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M9 10h6M9 14h6M9 18h3"/></svg><span>Fuentes</span></a>
   </nav>
   <main id="principal" tabindex="-1"><p>Cargando…</p></main>
 </div>
 
 <dialog id="ficha" aria-labelledby="ficha-titulo">
-  <div class="dialogo-cab"><h2 id="ficha-titulo">Persona</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar ficha">×</button></div>
+  <div class="dialogo-cab"><h2 id="ficha-titulo">Persona</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar ficha"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
   <div class="dialogo-cuerpo"></div>
 </dialog>
 <dialog id="detalle" aria-labelledby="detalle-titulo">
-  <div class="dialogo-cab"><h2 id="detalle-titulo">Detalle</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar detalle">×</button></div>
+  <div class="dialogo-cab"><h2 id="detalle-titulo">Detalle</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar detalle"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
   <div class="dialogo-cuerpo"></div>
 </dialog>
 
-<div id="aviso" class="aviso" role="status" hidden>Hay una versión nueva — <button type="button" id="actualizar" class="boton">Actualizar</button></div>
+<div id="aviso" class="aviso" role="status" hidden>Hay una versión nueva <button type="button" id="actualizar" class="boton">Actualizar</button></div>
 
 <script src="datos/genesis.js"></script>
 <script src="app.js"></script>

@@ -16,6 +16,10 @@ const Nucleo = (() => {
     return c ? { cap: +c[1], v: null } : null;
   }
 
+  // Clave numérica comparable de un versículo: Gn 4:1 → 4001
+  function clave(ref) { const r = parseRef(ref); return r && r.v ? r.cap * 1000 + r.v : null; }
+  const refTxt = (cap, v) => `Gn ${cap}:${v}`;
+
   function claseCerteza(c) {
     if (c === 'explicito' || c === 'texto') return 'texto';
     if (c === 'calculo') return 'calculo';
@@ -35,7 +39,20 @@ const Nucleo = (() => {
       else if (r.tipo === 'conyuge') { add(conyuges, r.de, Object.assign({}, r, { otro: r.a })); add(conyuges, r.a, Object.assign({}, r, { otro: r.de })); }
     });
     (d.edades || []).forEach(e => { if (e && e.persona) add(edades, e.persona, e); });
-    return { datos: d, personas, hijos, padres, conyuges, edades };
+    // Índices por versículo: quién aparece (refs, primera_ref, ref_mencion, menciones) y primera aparición.
+    const menciones = new Map(), porRef = new Map(), primera = new Map();
+    const marcar = (id, ref) => {
+      const k = clave(ref); if (k === null || !id) return;
+      if (!porRef.has(k)) porRef.set(k, new Set());
+      porRef.get(k).add(id);
+      if (!primera.has(id) || k < primera.get(id)) primera.set(id, k);
+    };
+    (d.personas || []).forEach(p => { if (p && p.id) [].concat(p.refs || [], p.primera_ref || [], p.ref_mencion || []).forEach(r => marcar(p.id, r)); });
+    (d.menciones || []).forEach(m => {
+      const k = m && m.persona ? clave(m.ref) : null; if (k === null) return;
+      add(menciones, k, m); marcar(m.persona, m.ref);
+    });
+    return { datos: d, personas, hijos, padres, conyuges, edades, menciones, porRef, primera };
   }
 
   const cache = new WeakMap();
@@ -65,16 +82,35 @@ const Nucleo = (() => {
     if (!raiz || visit.has(raiz)) return null;
     visit.add(raiz);
     const I = indice(d);
-    const rec = (id, vinculos) => {
-      const n = { id, vinculos, hijos: [] };
-      for (const r of hijosDe(d, id)) {
+    const rec = (id, vinculos, padreId) => {
+      const n = { id, vinculos, hijos: [],
+        conyuges: (I.conyuges.get(id) || []).filter((r, i, a) => a.findIndex(x => x.otro === r.otro) === i),
+        madres: (I.padres.get(id) || []).filter(x => x.tipo === 'madre' && x.de !== padreId) };
+      const hs = hijosDe(d, id).slice().sort((a, b) => (sinNombre(d, a.a) ? 1 : 0) - (sinNombre(d, b.a) ? 1 : 0));
+      for (const r of hs) {
         if (visit.has(r.a)) continue;
         visit.add(r.a);
-        n.hijos.push(rec(r.a, (I.padres.get(r.a) || []).filter(x => x.de === id)));
+        n.hijos.push(rec(r.a, (I.padres.get(r.a) || []).filter(x => x.de === id), id));
       }
       return n;
     };
-    return rec(raiz, []);
+    return rec(raiz, [], null);
+  }
+  const sinNombre = (d, id) => { const p = persona(d, id); return !!(p && p.sin_nombre); };
+
+  // Ids visibles en el árbol: como nodo, como cónyuge de un nodo o como madre de un nodo.
+  function alcanzables(d, bosque) {
+    const s = new Set();
+    (bosque || construirBosque(d)).forEach(function r(n) {
+      s.add(n.id); n.conyuges.forEach(c => s.add(c.otro)); n.madres.forEach(m => s.add(m.de)); n.hijos.forEach(r);
+    });
+    return s;
+  }
+
+  function contarMujeres(d) {
+    const out = { conNombre: 0, sinNombre: 0 };
+    for (const p of indice(d).personas.values()) if (p.sexo === 'f') p.sin_nombre ? out.sinNombre++ : out.conNombre++;
+    return out;
   }
 
   // Bosque: Adán primero, luego otras raíces (sin padres conocidos) no alcanzadas.
@@ -83,11 +119,12 @@ const Nucleo = (() => {
     const a = idAdan(d);
     if (a) raices.push(construirArbol(d, a, visit));
     const cands = [...I.personas.values()].filter(p => !(I.padres.get(p.id) || []).length && hijosDe(d, p.id).length);
-    cands.sort((x, y) => (I.conyuges.has(x.id) ? 1 : 0) - (I.conyuges.has(y.id) ? 1 : 0));
+    // Primero quienes no son madres ni cónyuges, para que las madres/esposas queden como etiqueta y no como raíz.
+    const esMadre = id => hijosDe(d, id).every(r => r.tipo === 'madre');
+    cands.sort((x, y) => ((I.conyuges.has(x.id) || esMadre(x.id)) ? 1 : 0) - ((I.conyuges.has(y.id) || esMadre(y.id)) ? 1 : 0));
     for (const p of cands) {
       if (visit.has(p.id)) continue;
-      const cony = I.conyuges.get(p.id) || [];
-      if (cony.some(c => visit.has(c.otro)) && hijosDe(d, p.id).every(h => visit.has(h.a))) continue;
+      if (hijosDe(d, p.id).every(h => visit.has(h.a))) continue;
       const t = construirArbol(d, p.id, visit);
       if (t) raices.push(t);
     }
@@ -210,8 +247,130 @@ const Nucleo = (() => {
     return res.sort((a, b) => a.rango - b.rango || norm(a.p.nombre).localeCompare(norm(b.p.nombre))).slice(0, max || 20).map(x => x.p);
   }
 
-  return { TRADS, TIPOS, norm, parseRef, claseCerteza, indice, persona, hijosDe, encontrar, idAdan, idAbraham,
-    construirArbol, construirBosque, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
+  /* ---- Lectura acompañada ---- */
+  // Pasajes de los datos; si no hay, uno por capítulo.
+  function pasajes(d) {
+    d = d || {};
+    if (Array.isArray(d.pasajes) && d.pasajes.length) return d.pasajes.filter(p => p && p.id && clave(p.inicio) && clave(p.fin));
+    return (d.capitulos || []).map(c => {
+      const vs = c.versiculos || [];
+      return { id: 'cap-' + c.cap, inicio: refTxt(c.cap, vs.length ? vs[0].n : 1), fin: refTxt(c.cap, vs.length ? vs[vs.length - 1].n : 1),
+        titulo: `${c.libro || 'Génesis'} ${c.cap}`, titulo_origen: 'capitulo', resumen: '' };
+    });
+  }
+  function pasajeDe(d, ref) {
+    const k = clave(ref);
+    if (k === null) return null;
+    return pasajes(d).find(p => clave(p.inicio) <= k && k <= clave(p.fin)) || null;
+  }
+  function versiculosDe(d, pasaje) {
+    const out = [];
+    if (!pasaje) return out;
+    const a = clave(pasaje.inicio), b = clave(pasaje.fin);
+    for (const c of ((d && d.capitulos) || [])) for (const v of (c.versiculos || [])) {
+      const k = c.cap * 1000 + v.n;
+      if (k >= a && k <= b) out.push({ cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n), clave: k });
+    }
+    return out.sort((x, y) => x.clave - y.clave);
+  }
+
+  // Si no hay `menciones`, se buscan los nombres de las personas con ese versículo en sus refs.
+  function mencionesPorNombre(d, ref, texto) {
+    const I = indice(d), out = [];
+    for (const id of (I.porRef.get(clave(ref)) || [])) {
+      const p = I.personas.get(id);
+      if (!p || p.sin_nombre) continue;
+      for (const nom of new Set([p.nombre, p.nombre_rv1909].filter(Boolean))) {
+        const re = new RegExp('(^|[^\\p{L}])(' + nom.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')(?![\\p{L}])', 'gu');
+        let m;
+        while ((m = re.exec(texto))) { const i = m.index + m[1].length; out.push({ persona: id, inicio: i, fin: i + m[2].length }); }
+      }
+    }
+    return out;
+  }
+  // Trozos [{texto, persona?}] de un versículo; ignora menciones fuera de rango o solapadas.
+  function segmentar(d, ref, texto) {
+    texto = String(texto || '');
+    let ms = (indice(d).menciones.get(clave(ref)) || []).filter(m => Number.isInteger(m.inicio) && Number.isInteger(m.fin) && m.inicio >= 0 && m.fin > m.inicio && m.fin <= texto.length);
+    if (!ms.length) ms = mencionesPorNombre(d, ref, texto);
+    ms = ms.slice().sort((a, b) => a.inicio - b.inicio || b.fin - a.fin);
+    const out = [];
+    let pos = 0;
+    for (const m of ms) {
+      if (m.inicio < pos) continue;
+      if (m.inicio > pos) out.push({ texto: texto.slice(pos, m.inicio) });
+      out.push({ texto: texto.slice(m.inicio, m.fin), persona: m.persona });
+      pos = m.fin;
+    }
+    if (pos < texto.length) out.push({ texto: texto.slice(pos) });
+    return out;
+  }
+
+  const unir = xs => xs.length < 2 ? (xs[0] || '') : xs.slice(0, -1).join(', ') + ' y ' + xs[xs.length - 1];
+  const unicos = xs => xs.filter((x, i) => xs.indexOf(x) === i);
+  // "hijo de Adán y Eva; esposo de …", calculado de las relaciones.
+  function contextoPersona(d, id) {
+    const I = indice(d), p = I.personas.get(id);
+    if (!p) return '';
+    const nom = x => (I.personas.get(x) || {}).nombre || x;
+    const partes = [];
+    const pad = unicos((I.padres.get(id) || []).map(r => r.de));
+    if (pad.length) partes.push(`${p.sexo === 'f' ? 'hija' : p.sexo === 'm' ? 'hijo' : p.sin_nombre ? 'descendencia' : 'hijo o hija'} de ${unir(pad.map(nom))}`);
+    const cs = unicos((I.conyuges.get(id) || []).map(r => r.otro));
+    if (cs.length) partes.push(`${p.sexo === 'f' ? 'esposa' : p.sexo === 'm' ? 'esposo' : 'cónyuge'} de ${unir(cs.map(nom))}`);
+    return partes.join('; ');
+  }
+
+  // Contenido del acompañante para uno o varios versículos.
+  function acompanante(d, refs) {
+    d = d || {};
+    const I = indice(d), ks = new Set([].concat(refs || []).map(clave).filter(k => k !== null));
+    const enSet = r => ks.has(clave(r));
+    const ids = [];
+    [...ks].sort((a, b) => a - b).forEach(k => (I.porRef.get(k) || []).forEach(id => { if (!ids.includes(id)) ids.push(id); }));
+    const vistos = new Set();
+    const vinculos = (d.relaciones || []).filter(r => r && r.de && r.a && enSet(r.ref)).filter(r => {
+      const k = r.tipo + '|' + (r.tipo === 'conyuge' ? [r.de, r.a].sort().join('+') : r.de + '>' + r.a);
+      return !vistos.has(k) && vistos.add(k);
+    });
+    const grupos = new Map();
+    (d.edades || []).filter(e => e && e.persona && enSet(e.ref) && num(e.valor) !== null).forEach(e => {
+      const k = e.persona + '|' + e.tipo;
+      if (!grupos.has(k)) grupos.set(k, { persona: e.persona, tipo: e.tipo, ref: e.ref, TM: null, LXX: null });
+      if (e.tradicion === 'TM' || e.tradicion === 'LXX') grupos.get(k)[e.tradicion] = Object.assign({}, e, { valor: num(e.valor) });
+    });
+    const edadesV = [...grupos.values()].map(g => Object.assign(g, {
+      difiere: !!(g.TM && g.LXX && g.TM.valor !== g.LXX.valor), solo: g.TM && !g.LXX ? 'TM' : !g.TM && g.LXX ? 'LXX' : null }));
+    return { personas: ids.map(id => ({ id, contexto: contextoPersona(d, id) })), vinculos, edades: edadesV,
+      sinNombre: ids.filter(id => (I.personas.get(id) || {}).sin_nombre) };
+  }
+  // ¿Tiene el versículo vínculos, edades o alusiones sin nombre? (marca al margen)
+  const tieneApoyo = (d, ref) => { const A = acompanante(d, [ref]); return A.vinculos.length + A.edades.length + A.sinNombre.length > 0; };
+
+  // Personas cuya primera aparición en los datos cae dentro del pasaje.
+  function primerasApariciones(d, pasaje) {
+    if (!pasaje) return [];
+    const a = clave(pasaje.inicio), b = clave(pasaje.fin);
+    return [...indice(d).primera.entries()].filter(([, k]) => k >= a && k <= b).sort((x, y) => x[1] - y[1]).map(([id]) => id);
+  }
+  function miniArbol(d, id) {
+    const I = indice(d);
+    return { id, padres: unicos((I.padres.get(id) || []).map(r => r.de)), conyuges: unicos((I.conyuges.get(id) || []).map(r => r.otro)), hijos: hijosDe(d, id).map(r => r.a) };
+  }
+  // Año del diluvio desde Adán (CÁLCULO): nacimiento de quien tiene edad con ref Gn 7:6 + esa edad.
+  function anoDiluvio(d, trad) {
+    const filas = anosDesdeAdan(d, trad);
+    for (const e of ((d && d.edades) || [])) {
+      if (!e || clave(e.ref) !== 7006 || (e.tradicion && e.tradicion !== trad) || num(e.valor) === null) continue;
+      const f = filas.find(x => x.id === e.persona);
+      if (f && f.nacimiento !== null) return { ano: f.nacimiento + num(e.valor), persona: e.persona, valor: num(e.valor), ref: e.ref, cita: e.cita || '' };
+    }
+    return null;
+  }
+
+  return { TRADS, TIPOS, norm, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
+    acompanante, tieneApoyo, primerasApariciones, miniArbol, anoDiluvio, indice, persona, hijosDe, encontrar, idAdan, idAbraham,
+    construirArbol, construirBosque, alcanzables, contarMujeres, sinNombre, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
     lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, personasEnCapitulo, buscar };
 })();
 
@@ -231,60 +390,163 @@ if (typeof document !== 'undefined') (function () {
   const TIPO_TXT = { al_engendrar: 'Al engendrar', restantes: 'Años restantes', total: 'Total' };
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
-  const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, plegados: new Set(), q: '' };
+  const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, plegados: new Set(), q: '' };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   const refHTML = ref => { const r = N.parseRef(ref); return r ? `<a class="ref" href="#leer/${r.cap}${r.v ? '/' + r.v : ''}">${esc(ref)}</a>` : esc(ref); };
   const insignia = (cert, ref) => { const k = N.claseCerteza(cert); return `<span class="insignia ${k}" title="${CERT_DESC[k]}">${CERT_TXT[k]}${ref ? ' · ' + refHTML(ref) : ''}</span>`; };
-  const btnPersona = id => `<button type="button" class="persona-btn" data-persona="${esc(id)}">${esc(nombre(id))}</button>`;
+  const btnPersona = id => {
+    const p = N.persona(D, id) || {};
+    const cls = (p.sexo === 'f' ? ' mujer' : p.sexo === 'm' ? ' hombre' : ' indef') + (p.sin_nombre ? ' sin-nombre' : '');
+    return `<button type="button" class="persona-btn${cls}" data-persona="${esc(id)}">${esc(nombre(id))}${p.sin_nombre ? '<span class="marca-sn">sin nombre en el texto</span>' : ''}</button>`;
+  };
+  const citaHTML = r => r && r.cita ? `<blockquote>${esc(r.cita)}</blockquote>` : '';
   const fuenteNombre = id => { const f = (D.fuentes || []).find(x => x.id === id); return f ? f.nombre : (id || 'sin fuente'); };
   const etiquetaTrad = id => { const t = [...N.tradicionesDe(D, id)]; return t.length === 1 ? `<span class="etiqueta">solo ${esc(t[0])}</span>` : ''; };
-  const leidos = () => new Set(store.get('biblia.leidos', []));
+  const pasajesLeidos = () => new Set(store.get('biblia.pasajesLeidos', []));
+  const rango = p => { const a = N.parseRef(p.inicio), b = N.parseRef(p.fin); return a.cap === b.cap ? `Gn ${a.cap}:${a.v}–${b.v}` : `Gn ${a.cap}:${a.v}–${b.cap}:${b.v}`; };
+  const ESTADO_TXT = { leido: 'Leído', 'en-curso': 'En curso', pendiente: 'Pendiente' };
+  const ICONO = {
+    leido: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>',
+    'en-curso': '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 4v12l10-6z"/></svg>',
+    pendiente: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="5"/></svg>'
+  };
 
-  /* ---------- Leer ---------- */
+  /* ---------- Leer: inicio ---------- */
   function vistaLeer(args) {
-    const caps = D.capitulos || [];
-    if (args[0]) return vistaCapitulo(+args[0], +args[1] || null);
-    const L = leidos(), n = caps.filter(c => L.has(c.cap)).length;
-    return `<h1 tabindex="-1">Plan de lectura</h1>
-      <p class="sub">${esc((caps[0] && caps[0].libro) || 'Génesis')} ${caps.length ? caps[0].cap + '–' + caps[caps.length - 1].cap : ''}: un capítulo por sesión.</p>
-      <div class="progreso"><progress max="${caps.length || 1}" value="${n}" aria-label="Progreso de lectura"></progress><span>${n} de ${caps.length} capítulos leídos</span></div>
-      <ol class="plan">${caps.map(c => `<li class="${L.has(c.cap) ? 'leido' : ''}">
-        <a href="#leer/${c.cap}"><span class="plan-titulo">${esc(c.libro)} ${c.cap}</span><span class="meta">${(c.versiculos || []).length} versículos</span></a>
-        <label class="marca"><input type="checkbox" data-leido="${c.cap}" ${L.has(c.cap) ? 'checked' : ''}><span class="sr">Marcar ${esc(c.libro)} ${c.cap} como leído</span></label></li>`).join('')}</ol>`;
+    const ps = N.pasajes(D);
+    if (args[0] === 'p') return vistaPasaje(ps.find(x => x.id === args[1]), args[2] || null);
+    if (args[0]) {
+      const cap = +args[0], v = +args[1] || null;
+      const p = N.pasajeDe(D, `Gn ${cap}:${v || 1}`) || ps.find(x => N.parseRef(x.inicio).cap === cap);
+      return vistaPasaje(p, v ? `${cap}:${v}` : null);
+    }
+    const L = pasajesLeidos(), pos = store.get('biblia.pos', null);
+    const actual = pos && ps.find(x => x.id === pos.pasaje);
+    const n = ps.filter(p => L.has(p.id)).length;
+    const sig = (actual && !L.has(actual.id) ? actual : null) || ps.find(p => !L.has(p.id)) || actual || ps[0];
+    const enSig = actual && sig && actual.id === sig.id && pos.v;
+    const editorial = ps.some(p => p.titulo_origen === 'editorial');
+    return `<section class="portada" aria-labelledby="t-portada">
+        <h1 id="t-portada" tabindex="-1">${pos ? 'Continúa donde lo dejaste' : 'Empieza a leer'}</h1>
+        ${sig ? `<a class="continuar" href="#leer/p/${esc(sig.id)}${enSig ? '/' + esc(pos.v) : ''}">
+          <span class="continuar-rango">${rango(sig)}${enSig ? `, versículo ${esc(pos.v.split(':')[1])}` : ''}</span>
+          <span class="continuar-titulo">${esc(sig.titulo)}</span>
+          ${sig.resumen ? `<span class="continuar-resumen">${esc(sig.resumen)}</span>` : ''}
+          <span class="continuar-accion">${pos ? 'Seguir leyendo' : 'Abrir el primer pasaje'}</span></a>` : '<p>No hay texto en los datos.</p>'}
+        <div class="progreso"><progress max="${ps.length || 1}" value="${n}" aria-label="Progreso de lectura"></progress><span>${n} de ${ps.length} pasajes leídos</span></div>
+      </section>
+      <h2 class="titulo-seccion">Plan de lectura</h2>
+      <ol class="pasajes">${ps.map((p, i) => {
+        const est = L.has(p.id) ? 'leido' : actual && actual.id === p.id ? 'en-curso' : 'pendiente';
+        return `<li class="pasaje ${est}"><a href="#leer/p/${esc(p.id)}"><span class="pasaje-num" aria-hidden="true">${i + 1}</span>
+          <span class="pasaje-cuerpo"><span class="pasaje-titulo">${esc(p.titulo)}</span><span class="pasaje-rango">${rango(p)}</span>
+          ${p.resumen ? `<span class="pasaje-resumen">${esc(p.resumen)}</span>` : ''}</span>
+          <span class="estado ${est}">${ICONO[est]}${ESTADO_TXT[est]}</span></a></li>`;
+      }).join('')}</ol>
+      ${editorial ? '<p class="meta">Los títulos y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>' : ''}`;
   }
 
-  function vistaCapitulo(cap, v) {
-    const caps = D.capitulos || [];
-    const i = caps.findIndex(c => c.cap === cap), c = caps[i];
-    if (!c) return `<h1 tabindex="-1">Génesis ${esc(cap)}</h1><p>Este capítulo no está en el piloto (Génesis 1–11).</p><p><a href="#leer">← Volver al plan</a></p>`;
-    const leido = leidos().has(cap);
-    const pers = N.personasEnCapitulo(D, cap);
-    const fuente = c.fuente || ((D.fuentes || []).find(f => /rv/i.test(f.id)) || {}).id;
-    const prev = caps[i - 1], next = caps[i + 1];
-    return `<div class="capitulo"><article class="lectura">
-      <header class="cab-cap"><a class="volver" href="#leer">← Plan</a><h1 tabindex="-1">${esc(c.libro)} ${cap}</h1>
-        <button type="button" class="boton" data-toggle-leido="${cap}" aria-pressed="${leido}">${leido ? '✓ Leído' : 'Marcar como leído'}</button></header>
-      <div class="biblia">${(c.versiculos || []).map(x => `<span class="vers" id="v${cap}-${x.n}"><sup class="vn">${esc(x.n)}</sup>${esc(x.texto)} </span>`).join('')}</div>
+  /* ---------- Leer: pasaje con acompañante ---------- */
+  function vistaPasaje(p, activo) {
+    if (!p) return `<h1 tabindex="-1">Pasaje no encontrado</h1><p class="vacio-txt">Ese pasaje no está en este piloto, que cubre Génesis 1–11.</p><p><a class="boton" href="#leer">Ver el plan de lectura</a></p>`;
+    const ps = N.pasajes(D), i = ps.findIndex(x => x.id === p.id), prev = ps[i - 1], next = ps[i + 1];
+    const vs = N.versiculosDe(D, p);
+    estado.pasaje = p;
+    estado.activo = activo && vs.some(v => `${v.cap}:${v.n}` === activo) ? activo : null;
+    store.set('biblia.pos', { pasaje: p.id, v: estado.activo });
+    const fuente = ((D.fuentes || []).find(f => /rv/i.test(f.id)) || {}).id;
+    let capPrev = null;
+    const texto = vs.map((v, j) => {
+      const k = `${v.cap}:${v.n}`, ap = N.tieneApoyo(D, v.ref);
+      const cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : '';
+      capPrev = v.cap;
+      const segs = N.segmentar(D, v.ref, v.texto);
+      const partes = segs.map((s, si) => {
+        if (s.persona) { const per = N.persona(D, s.persona) || {}; return `<button type="button" class="mencion${per.sexo === 'f' ? ' mujer' : ''}" data-persona="${esc(s.persona)}">${esc(s.texto)}</button>`; }
+        if (j === 0 && si === 0 && s.texto) { const t = s.texto.trimStart(), c = Array.from(t)[0] || ''; return `<span class="capitular" aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c)}</span>${esc(t.slice(c.length))}`; }
+        return esc(s.texto);
+      }).join('');
+      return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${partes} </span>`;
+    }).join('');
+    const nuevos = N.primerasApariciones(D, p);
+    return `<div class="pasaje-vista"><article class="lectura">
+      <header class="cab-pasaje"><a class="volver" href="#leer"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
+        <p class="pasaje-rango">${rango(p)} · pasaje ${i + 1} de ${ps.length}</p>
+        <h1 tabindex="-1">${esc(p.titulo)}</h1>
+        ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}</header>
+      <div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
+      <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.</p>
       ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}
-      <nav class="pasos-cap" aria-label="Capítulos">${prev ? `<a class="boton" href="#leer/${prev.cap}">← ${esc(prev.libro)} ${prev.cap}</a>` : '<span></span>'}${next ? `<a class="boton" href="#leer/${next.cap}">${esc(next.libro)} ${next.cap} →</a>` : ''}</nav>
-    </article>
-    <aside class="en-cap" aria-labelledby="pc"><h2 id="pc">Personas en este capítulo</h2>
-      ${pers.length ? `<ul class="chips">${pers.map(p => `<li>${btnPersona(p.id)}<span class="meta">v. ${p.versos.filter(Boolean).join(', ')}</span></li>`).join('')}</ul>` : '<p class="meta">Ninguna registrada.</p>'}
-    </aside></div>`;
+      <section class="nuevo" aria-labelledby="t-nuevo"><h2 id="t-nuevo">Lo nuevo en este pasaje</h2>
+        ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section>
+      <nav class="pasos-pasaje" aria-label="Pasajes">
+        ${prev ? `<a class="boton secundario" href="#leer/p/${esc(prev.id)}" title="${esc(prev.titulo)}">Anterior</a>` : '<span></span>'}
+        <button type="button" class="boton" data-leido-seguir="${esc(p.id)}">${next ? 'Marcar como leído y seguir' : 'Marcar como leído'}</button>
+        ${next ? `<a class="boton secundario" href="#leer/p/${esc(next.id)}" title="${esc(next.titulo)}">Siguiente</a>` : '<span></span>'}
+      </nav></article>
+      <aside class="acompanante${estado.hoja ? ' abierta' : ''}" id="acompanante" aria-label="Acompañante de lectura">${acompHTML()}</aside></div>`;
+  }
+
+  const TIPO_REL = r => r.tipo === 'conyuge' ? `${esc(nombre(r.de))} y ${esc(nombre(r.a))}: cónyuges`
+    : `${esc(nombre(r.de))} es ${r.tipo === 'madre' ? 'madre' : 'padre'} de ${esc(nombre(r.a))}`;
+  function acompHTML() {
+    const p = estado.pasaje;
+    if (!p) return '';
+    const refs = estado.activo ? [`Gn ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref);
+    const A = N.acompanante(D, refs);
+    const n = A.vinculos.length + A.edades.length + A.sinNombre.length;
+    const ambito = estado.activo ? `Gn ${estado.activo}` : 'Todo el pasaje';
+    const sec = (t, cuerpo, icono) => `<section class="acomp-sec"><h3>${icono}${t}</h3>${cuerpo}</section>`;
+    const I = (d) => `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="${d}"/></svg>`;
+    let html = '';
+    if (A.personas.length) html += sec('Quién aparece', `<ul class="quien">${A.personas.map(x => `<li>${btnPersona(x.id)}${x.contexto ? `<span class="contexto">${esc(x.contexto)}</span>` : ''}</li>`).join('')}</ul>`, I('M10 9a3 3 0 100-6 3 3 0 000 6zM4 17c0-3.3 2.7-5 6-5s6 1.7 6 5'));
+    if (A.vinculos.length) html += sec('Vínculos que establece', `<ul class="vinculos">${A.vinculos.map(r => `<li><span>${TIPO_REL(r)}</span>${insignia(r.certeza, r.ref)}${citaHTML(r)}</li>`).join('')}</ul>`, I('M7 7a3 3 0 014 0l2 2a3 3 0 010 4M13 13a3 3 0 01-4 0l-2-2a3 3 0 010-4'));
+    if (A.edades.length) html += sec('Edades', `<ul class="edades-acomp">${A.edades.map(e => {
+      const val = tr => { const x = e[tr]; if (!x) return `<span class="vacio">${tr}: sin dato</span>`; const lbl = `<span class="trad">${tr}</span><strong>${x.valor}</strong>`; return N.TIPOS.includes(e.tipo) ? `<button type="button" class="celda-acomp" data-edad="${esc(e.persona)}|${e.tipo}|${tr}">${lbl}</button>` : `<span class="celda-acomp">${lbl}</span>`; };
+      return `<li${e.difiere || e.solo ? ' class="difiere"' : ''}><span class="edad-quien">${esc(nombre(e.persona))}, ${esc(TIPO_TXT[e.tipo] || e.tipo.replace(/_/g, ' '))}</span><span class="par">${val('TM')}${val('LXX')}</span>
+        ${e.difiere ? `<p class="difiere-txt">En la Septuaginta: ${e.LXX.valor}${e.LXX.ref && e.LXX.ref !== e.TM.ref ? ' (' + refHTML(e.LXX.ref) + ')' : ''}</p>` : e.solo ? `<p class="difiere-txt">Solo ${e.solo} da este dato.</p>` : ''}</li>`;
+    }).join('')}</ul>`, I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2'));
+    if (A.sinNombre.length) html += sec('Sin nombre', A.sinNombre.map(id => `<p class="sin-nombre-aviso">El texto alude a alguien sin dar su nombre: ${btnPersona(id)}</p>`).join(''), I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6.5v4M10 13.5v.5'));
+    const centrales = A.personas.map(x => x.id).filter(id => { const m = N.miniArbol(D, id); return !(N.persona(D, id) || {}).sin_nombre && (m.padres.length || m.hijos.length); }).slice(0, estado.activo ? 2 : 3);
+    if (centrales.length) html += sec('Dónde va en el árbol', centrales.map(id => {
+      const m = N.miniArbol(D, id), mas = m.hijos.length - 5;
+      return `<div class="mini"><div class="mini-gen">${m.padres.map(btnPersona).join('') || '<span class="meta">Padres no constan</span>'}</div>
+        <div class="mini-gen centro">${btnPersona(id)}${m.conyuges.map(c => `<span class="cony-mini">⚭</span>${btnPersona(c)}`).join('')}</div>
+        <div class="mini-gen">${m.hijos.slice(0, 5).map(btnPersona).join('') || '<span class="meta">Sin hijos registrados</span>'}${mas > 0 ? `<span class="meta">y ${mas} más</span>` : ''}</div>
+        <a class="enlace-arbol" href="#arbol/${encodeURIComponent(id)}">Ver a ${esc(nombre(id))} en el árbol completo</a></div>`;
+    }).join(''), I('M10 3v5M10 8H5v4M10 8h5v4M10 8v9'));
+    if (!html) html = `<p class="vacio-txt">${estado.activo ? 'Este versículo no tiene personas, vínculos ni edades en los datos. Pulsa otro número o vuelve a todo el pasaje.' : 'Este pasaje no tiene personas, vínculos ni edades en los datos.'}</p>`;
+    return `<div class="acomp-cab">
+        <button type="button" class="acomp-asa" data-hoja aria-expanded="${!!estado.hoja}" aria-controls="acomp-cuerpo">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4h12v9H8l-4 3z"/></svg>
+          <span class="acomp-titulo">Acompañante</span><span class="acomp-ambito">${esc(ambito)}${n ? ` · ${n} ${n === 1 ? 'dato' : 'datos'}` : ''}</span></button>
+        ${estado.activo ? '<button type="button" class="boton mini-boton secundario" data-activar="">Todo el pasaje</button>' : ''}</div>
+      <div class="acomp-cuerpo" id="acomp-cuerpo">${html}</div>`;
+  }
+  function activar(k) {
+    estado.activo = k && k !== estado.activo ? k : null;
+    document.querySelectorAll('.vers').forEach(el => { const on = el.dataset.v === estado.activo; el.classList.toggle('activo', on); el.querySelector('.vn').setAttribute('aria-pressed', on); });
+    const a = $('#acompanante'); if (a) a.innerHTML = acompHTML();
+    store.set('biblia.pos', { pasaje: estado.pasaje.id, v: estado.activo });
+    try { history.replaceState(null, '', `#leer/p/${estado.pasaje.id}${estado.activo ? '/' + estado.activo : ''}`); } catch (e) { /* file:// */ }
   }
 
   /* ---------- Árbol ---------- */
-  function vistaArbol() {
+  function vistaArbol(args) {
+    estado.foco = args && args[0] ? args[0] : null;
+    if (estado.foco) { estado.lineaSolo = false; estado.plegados.clear(); }
     return `<h1 tabindex="-1">Árbol genealógico</h1>
       <p class="sub">Cada vínculo indica si <span class="insignia texto">Texto</span> lo dice explícitamente o es <span class="insignia inferido">Inferido</span>, con su versículo.</p>
+      <p class="leyenda-arbol meta"><span class="ley hombre">Hombre</span><span class="ley mujer">Mujer</span><span class="ley sin-nombre">Sin nombre en el texto</span><span class="ley linea">Línea de Adán a Abraham</span></p>
       <div class="herr">
         <div class="campo"><label for="buscar">Buscar persona</label><input id="buscar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.q)}"></div>
         <button type="button" class="boton" id="btn-linea" aria-pressed="${estado.lineaSolo}">${estado.lineaSolo ? 'Mostrar todo el árbol' : 'Línea de Adán a Abraham'}</button>
         ${estado.lineaSolo ? '' : '<button type="button" class="boton secundario" id="btn-plegar">Plegar todo</button><button type="button" class="boton secundario" id="btn-desplegar">Desplegar todo</button>'}
       </div>
       <ul class="resultados" id="resultados" aria-live="polite">${resultadosHTML()}</ul>
-      <div id="arbol">${arbolHTML()}</div>`;
+      ${(m => `<p><button type="button" class="boton secundario" id="btn-mujeres" aria-pressed="${estado.mujeres}">Mujeres: ${m.conNombre} con nombre, ${m.sinNombre} sin nombre</button></p>`)(N.contarMujeres(D))}
+      <div id="arbol"${estado.mujeres ? ' class="resaltar-mujeres"' : ''}>${arbolHTML()}</div>`;
   }
   function resultadosHTML() {
     if (!estado.q) return '';
@@ -301,10 +563,12 @@ if (typeof document !== 'undefined') (function () {
       if (filtro && !filtro.has(n.id)) return;
       const hijos = filtro ? n.hijos.filter(h => filtro.has(h.id)) : n.hijos;
       const pleg = !filtro && estado.plegados.has(n.id);
-      filas.push(`<li class="fila${linea.has(n.id) ? ' en-linea' : ''}" style="--n:${Math.min(prof, 14)}">
+      filas.push(`<li class="fila${linea.has(n.id) ? ' en-linea' : ''}${estado.foco === n.id ? ' foco' : ''}" data-fila="${esc(n.id)}" style="--n:${Math.min(prof, 14)}">
         <span class="gen" title="Generación ${prof + 1}">${prof + 1}</span>
         ${hijos.length ? `<button type="button" class="plegar" data-plegar="${esc(n.id)}" aria-expanded="${!pleg}" aria-label="${pleg ? 'Desplegar' : 'Plegar'} descendencia de ${esc(nombre(n.id))}">${pleg ? '▸' : '▾'}</button>` : '<span class="plegar vacio" aria-hidden="true"></span>'}
-        <span class="fila-cont">${btnPersona(n.id)}${etiquetaTrad(n.id)}${n.vinculos.map(r => insignia(r.certeza, r.ref)).join('')}${pleg ? `<span class="meta">(${hijos.length} hijos)</span>` : ''}</span></li>`);
+        <span class="fila-cont">${btnPersona(n.id)}${etiquetaTrad(n.id)}${n.vinculos.map(r => insignia(r.certeza, r.ref)).join('')}${pleg ? `<span class="meta">(${hijos.length} hijos)</span>` : ''}
+        ${n.madres.map(r => `<span class="sublinea madre">madre: ${btnPersona(r.de)}${insignia(r.certeza, r.ref)}</span>`).join('')}
+        ${n.conyuges.map(r => `<span class="sublinea cony"><span aria-label="cónyuge">⚭</span> ${btnPersona(r.otro)}${insignia(r.certeza, r.ref)}</span>`).join('')}</span></li>`);
       if (!pleg) hijos.forEach(h => rec(h, prof + 1));
     };
     const partes = [];
@@ -347,10 +611,13 @@ if (typeof document !== 'undefined') (function () {
     const paso = max > 3000 ? 500 : max > 1200 ? 250 : 100;
     const marcas = []; for (let a = 0; a <= max; a += paso) marcas.push(a);
     const pct = x => (x / max * 100).toFixed(2) + '%';
+    const dil = N.anoDiluvio(D, trad);
+    const marcaDil = dil && dil.ano <= max ? `<span class="diluvio-marca" style="left:${pct(dil.ano)}"></span>` : '';
     return `<h3>${trad === 'TM' ? 'Texto Masorético (TM)' : 'Septuaginta (LXX)'}</h3>
+      ${dil ? `<p class="leyenda"><span class="muestra-diluvio" aria-hidden="true"></span> Diluvio ≈ año ${dil.ano} desde Adán ${insignia('calculo')}: ${esc(nombre(dil.persona))} tenía ${dil.valor} años (${refHTML(dil.ref)}).</p>` : ''}
       <ol class="barras">${filas.map(f => `<li><button type="button" class="barra-fila" data-calc="${trad}|${esc(f.id)}">
         <span class="barra-nombre">${esc(nombre(f.id))}</span><span class="barra-anos">${f.nacimiento}–${f.muerte !== null ? f.muerte : '?'}</span>
-        <span class="pista" aria-hidden="true"><span class="barra${f.muerte === null ? ' abierta' : ''}" style="left:${pct(f.nacimiento)};width:${f.muerte !== null ? pct(f.muerte - f.nacimiento) : '4px'}"></span></span></button></li>`).join('')}</ol>
+        <span class="pista" aria-hidden="true">${marcaDil}<span class="barra${f.muerte === null ? ' abierta' : ''}" style="left:${pct(f.nacimiento)};width:${f.muerte !== null ? pct(f.muerte - f.nacimiento) : '4px'}"></span></span></button></li>`).join('')}</ol>
       <div class="eje" aria-hidden="true">${marcas.map(a => `<span style="left:${pct(a)}">${a}</span>`).join('')}</div>`;
   }
 
@@ -379,9 +646,13 @@ if (typeof document !== 'undefined') (function () {
   function abrirFicha(id) {
     const p = N.persona(D, id); if (!p) return;
     const I = N.indice(D);
-    const padres = (I.padres.get(id) || []).map(r => `<li>${btnPersona(r.de)} <span class="meta">${r.tipo}</span> ${insignia(r.certeza, r.ref)}${r.nota ? `<p class="nota">${esc(r.nota)}</p>` : ''}</li>`);
-    const cony = (I.conyuges.get(id) || []).map(r => `<li>${btnPersona(r.otro)} ${insignia(r.certeza, r.ref)}${r.nota ? `<p class="nota">${esc(r.nota)}</p>` : ''}</li>`);
-    const hijos = N.hijosDe(D, id).map(r => `<li>${btnPersona(r.a)} ${insignia(r.certeza, r.ref)}${r.nota ? `<p class="nota">${esc(r.nota)}</p>` : ''}</li>`);
+    const extra = r => `${citaHTML(r)}${r.nota ? `<p class="nota">${esc(r.nota)}</p>` : ''}`;
+    const padres = (I.padres.get(id) || []).map(r => `<li>${btnPersona(r.de)} <span class="meta">${r.tipo}</span> ${insignia(r.certeza, r.ref)}${extra(r)}</li>`);
+    const cony = (I.conyuges.get(id) || []).map(r => `<li>${btnPersona(r.otro)} ${insignia(r.certeza, r.ref)}${extra(r)}</li>`);
+    const hijos = N.hijosDe(D, id).map(r => {
+      const madre = r.tipo !== 'madre' ? (I.padres.get(r.a) || []).find(x => x.tipo === 'madre') : null;
+      return `<li>${btnPersona(r.a)} ${insignia(r.certeza, r.ref)}${madre ? `<span class="meta">madre: ${esc(nombre(madre.de))}</span>` : ''}${extra(r)}</li>`;
+    });
     const tieneEdades = N.TIPOS.some(t => N.TRADS.some(tr => N.edad(D, id, t, tr)));
     const dif = N.diferencias(D, id);
     const edades = tieneEdades ? `<table class="edades mini"><thead><tr><th scope="col"></th><th scope="col">TM</th><th scope="col">LXX</th></tr></thead><tbody>${N.TIPOS.map(t => `<tr><th scope="row">${TIPO_TXT[t]}</th>${N.TRADS.map(tr => celda(id, t, tr, dif[t])).join('')}</tr>`).join('')}</tbody></table>` : '<p class="meta">Sin edades registradas.</p>';
@@ -389,6 +660,7 @@ if (typeof document !== 'undefined') (function () {
     fichaDlg.querySelector('h2').textContent = p.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
       <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${p.primera_ref ? ' · aparece en ' + refHTML(p.primera_ref) : ''} ${etiquetaTrad(id)}</p>
+      ${(r => r ? `<p><a class="boton" href="#leer/${N.parseRef(r).cap}/${N.parseRef(r).v}">Leer donde aparece</a></p>` : '')([p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
       <h3>Hijos</h3>${lista(hijos, 'No constan.')}
@@ -435,10 +707,9 @@ if (typeof document !== 'undefined') (function () {
     main.innerHTML = fn(args);
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
-    if (vista === 'leer' && args[1]) {
-      const el = document.getElementById(`v${+args[0]}-${+args[1]}`);
-      if (el) { el.classList.add('destacado'); el.scrollIntoView({ block: 'center' }); }
-    } else if (foco !== false && !primera) { window.scrollTo(0, 0); }
+    const marcado = main.querySelector('.vers.activo, .fila.foco');
+    if (marcado && foco !== false) { marcado.scrollIntoView({ block: 'center' }); }
+    else if (foco !== false && !primera) { window.scrollTo(0, 0); }
     if (foco !== false && !primera) { const h = main.querySelector('h1'); if (h) h.focus({ preventScroll: true }); }
     primera = false;
   }
@@ -454,20 +725,22 @@ if (typeof document !== 'undefined') (function () {
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
     const ca = t.closest('[data-calc]'); if (ca) { const [trad, id] = ca.dataset.calc.split('|'); detalleCalc(trad, id); return; }
     const pl = t.closest('[data-plegar]'); if (pl) { const id = pl.dataset.plegar; estado.plegados.has(id) ? estado.plegados.delete(id) : estado.plegados.add(id); rerender(`[data-plegar="${CSS.escape(id)}"]`); return; }
-    const tl = t.closest('[data-toggle-leido]'); if (tl) { toggleLeido(+tl.dataset.toggleLeido); rerender('[data-toggle-leido]'); return; }
+    const ac = t.closest('[data-activar]'); if (ac) { activar(ac.dataset.activar); return; }
+    if (t.closest('[data-hoja]')) { estado.hoja = !estado.hoja; const a = $('#acompanante'); if (a) { a.classList.toggle('abierta', estado.hoja); a.querySelector('[data-hoja]').setAttribute('aria-expanded', estado.hoja); } return; }
+    const ls = t.closest('[data-leido-seguir]'); if (ls) { const L = pasajesLeidos(); L.add(ls.dataset.leidoSeguir); store.set('biblia.pasajesLeidos', [...L]); const ps = N.pasajes(D), i = ps.findIndex(x => x.id === ls.dataset.leidoSeguir); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer'; return; }
+    const ve = t.closest('.vers'); if (ve && !t.closest('button, a')) { activar(ve.dataset.v); return; }
+    if (t.closest('#btn-mujeres')) { estado.mujeres = !estado.mujeres; rerender('#btn-mujeres'); return; }
     if (t.closest('#btn-linea')) { estado.lineaSolo = !estado.lineaSolo; rerender('#btn-linea'); return; }
     if (t.closest('#btn-plegar')) { N.construirBosque(D).forEach(function r(n) { if (n.hijos.length) estado.plegados.add(n.id); n.hijos.forEach(r); }); rerender('#btn-plegar'); return; }
     if (t.closest('#btn-desplegar')) { estado.plegados.clear(); rerender('#btn-desplegar'); return; }
   });
   document.addEventListener('change', e => {
     const t = e.target;
-    if (t.dataset && t.dataset.leido) { toggleLeido(+t.dataset.leido); rerender(`[data-leido="${t.dataset.leido}"]`); }
-    else if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
+    if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
   });
   document.addEventListener('input', e => {
     if (e.target.id === 'buscar') { estado.q = e.target.value; const r = $('#resultados'); if (r) r.innerHTML = resultadosHTML(); }
   });
-  function toggleLeido(cap) { const L = leidos(); L.has(cap) ? L.delete(cap) : L.add(cap); store.set('biblia.leidos', [...L]); }
 
   /* ---------- Service worker y aviso de versión ---------- */
   function registrarSW() {

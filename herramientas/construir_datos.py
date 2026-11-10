@@ -41,6 +41,7 @@ ARCHIVOS = {
     "rel": (BD + "BibleData-PersonRelationship.csv", "BibleData-PersonRelationship.csv"),
     "per": (BD + "BibleData-Person.csv", "BibleData-Person.csv"),
     "lab": (BD + "BibleData-PersonLabel.csv", "BibleData-PersonLabel.csv"),
+    "pv": (BD + "BibleData-PersonVerse.csv", "BibleData-PersonVerse.csv"),
 }
 
 # Nombre tal como aparece en RV1909 (o en Brenton→español para los solo-LXX).
@@ -137,6 +138,61 @@ NOTA_EDAD = {
     ("Noah_1", "al_diluvio"): "Edad de Noé al llegar el diluvio.",
     ("Shem_1", "al_engendrar"): "El texto lo sitúa «dos años después del diluvio».",
 }
+# Unidades de lectura (títulos y resúmenes editoriales, solo describen lo que dice el texto).
+PASAJES = [
+    ("Gn 1:1", "Gn 1:19", "La creación: días primero a cuarto",
+     "Dios crea la luz, el firmamento, la tierra seca con las plantas y las lumbreras del cielo."),
+    ("Gn 1:20", "Gn 2:3", "La creación: días quinto a séptimo",
+     "Dios crea los animales del mar, del aire y de la tierra, y al ser humano; el séptimo día reposa."),
+    ("Gn 2:4", "Gn 2:17", "El hombre en el huerto de Edén",
+     "Dios forma al hombre del polvo, planta un huerto en Edén y le prohíbe comer del árbol de la ciencia del bien y del mal."),
+    ("Gn 2:18", "Gn 2:25", "La formación de la mujer",
+     "El hombre pone nombre a los animales y Dios forma a la mujer de su costilla."),
+    ("Gn 3:1", "Gn 3:13", "La serpiente y el fruto prohibido",
+     "La serpiente habla con la mujer, ella y el hombre comen del árbol y Dios les pregunta qué han hecho."),
+    ("Gn 3:14", "Gn 3:24", "Las sentencias y la salida del huerto",
+     "Dios se dirige a la serpiente, a la mujer y al hombre, y los saca del huerto de Edén."),
+    ("Gn 4:1", "Gn 4:8", "Caín y Abel",
+     "Nacen Caín y Abel, ambos presentan ofrendas y Caín mata a su hermano."),
+    ("Gn 4:9", "Gn 4:16", "Caín errante",
+     "Dios pregunta a Caín por Abel, lo maldice y Caín se va a la tierra de Nod."),
+    ("Gn 4:17", "Gn 4:26", "Los descendientes de Caín y el nacimiento de Set",
+     "Se enumeran los descendientes de Caín hasta los hijos de Lamec, y nacen Set y Enós."),
+    ("Gn 5:1", "Gn 5:11", "De Adán a Enós",
+     "Comienza la lista de generaciones de Adán con las edades de Adán, Set y Enós."),
+    ("Gn 5:12", "Gn 5:20", "De Cainán a Jared",
+     "Sigue la lista con las edades de Cainán, Mahalaleel y Jared."),
+    ("Gn 5:21", "Gn 5:32", "De Enoc a Noé",
+     "La lista llega a Enoc, Matusalén, Lamec y Noé y a los tres hijos de Noé."),
+    ("Gn 6:1", "Gn 6:8", "La maldad de los hombres",
+     "Los hijos de Dios toman mujeres de las hijas de los hombres y Dios decide raer al hombre, pero Noé halla gracia."),
+    ("Gn 6:9", "Gn 6:22", "La orden de construir el arca",
+     "Dios anuncia a Noé el diluvio y le da las medidas del arca y lo que debe meter en ella."),
+    ("Gn 7:1", "Gn 7:16", "La entrada en el arca",
+     "Noé, su familia y los animales entran en el arca y comienza el diluvio."),
+    ("Gn 7:17", "Gn 8:5", "Las aguas crecen y decrecen",
+     "Las aguas cubren los montes y mueren los seres vivos; después Dios se acuerda de Noé y las aguas bajan."),
+    ("Gn 8:6", "Gn 8:19", "Las aves y la salida del arca",
+     "Noé suelta un cuervo y una paloma y, cuando la tierra se seca, sale del arca con todos."),
+    ("Gn 8:20", "Gn 9:7", "El altar de Noé y la bendición",
+     "Noé ofrece holocaustos, Dios promete no volver a maldecir la tierra y bendice a Noé y a sus hijos."),
+    ("Gn 9:8", "Gn 9:17", "El pacto y el arco en las nubes",
+     "Dios establece un pacto con Noé y con los seres vivos, y pone el arco en las nubes como señal."),
+    ("Gn 9:18", "Gn 9:29", "Noé y sus hijos después del diluvio",
+     "Noé planta una viña y se embriaga; Cam ve su desnudez, Noé maldice a Canaán y muere a los 950 años."),
+    ("Gn 10:1", "Gn 10:12", "Los hijos de Jafet y de Cam",
+     "Se enumeran los descendientes de Jafet y los de Cam por Cus, entre ellos Nimrod."),
+    ("Gn 10:13", "Gn 10:20", "Los descendientes de Mizraim y de Canaán",
+     "Siguen los descendientes de Cam por Mizraim y Canaán y el territorio de los cananeos."),
+    ("Gn 10:21", "Gn 10:32", "Los hijos de Sem",
+     "Se enumeran los descendientes de Sem, incluidos Heber, Péleg y los hijos de Joctán."),
+    ("Gn 11:1", "Gn 11:9", "La torre de Babel",
+     "Los hombres edifican una ciudad y una torre, y Dios confunde su lengua y los esparce."),
+    ("Gn 11:10", "Gn 11:26", "De Sem a Taré",
+     "Lista de generaciones de Sem hasta Taré con la edad de cada uno al engendrar y los años que vivió después."),
+    ("Gn 11:27", "Gn 11:32", "La familia de Taré",
+     "Se presentan los hijos de Taré, Sarai y Milca, y Taré sale de Ur con los suyos hasta Harán, donde muere."),
+]
 CAINAN_REL = [("Arpachshad_1", "Cainan_1", (11, 12)), ("Cainan_1", "Shelah_1", (11, 13))]
 
 
@@ -348,6 +404,42 @@ def main():
                 x.update(certeza="explicito", fuente="rv1909",
                          nota=(x["nota"] + " " if x["nota"] else "") +
                          "BibleData la marca inferida; el versículo nombra a ambos.")
+    # Personas que el texto menciona sin nombre (RV1909), con su relación y cita literal.
+    sin_nombre = {}  # id -> (nombre, sexo, nota)
+    def anadir_sn(pid, nombre, sexo, nota, rels_sn):
+        sin_nombre[pid] = (nombre, sexo, nota)
+        for de, a, tipo, ref, cert, cita in rels_sn:
+            if tipo == "conyuge":
+                de, a = sorted((de, a))
+            candidatas[(de, a, tipo)] = {"de": de, "a": a, "tipo": tipo, "ref": gn(ref), "certeza": cert,
+                                         "fuente": "rv1909", "nota": "", "cita": cita}
+    anadir_sn("Esposa_de_Cain", "Esposa de Caín", "f", "", [
+        ("Cain_1", "Esposa_de_Cain", "conyuge", (4, 17), "explicito", "conoció Caín á su mujer"),
+        ("Esposa_de_Cain", "Enoch_1", "madre", (4, 17), "explicito", "la cual concibió y parió á Henoch")])
+    anadir_sn("Esposa_de_Noe", "Esposa de Noé", "f", "", [
+        ("Noah_1", "Esposa_de_Noe", "conyuge", (7, 13), "explicito", "la mujer de Noé")]
+        + [("Esposa_de_Noe", h, "madre", (7, 13), "inferido", "") for h in ("Shem_1", "Ham_1", "Japheth_1")])
+    for h, nom in (("Shem_1", "Sem"), ("Ham_1", "Cam"), ("Japheth_1", "Jafet")):
+        anadir_sn(f"Esposa_de_{nom}", f"Esposa de {nom}", "f",
+                  "El versículo solo dice «las tres mujeres de sus hijos»; no nombra a ninguna ni dice "
+                  "cuál es de quién: se asigna una a cada hijo.",
+                  [(h, f"Esposa_de_{nom}", "conyuge", (7, 13), "explicito", "las tres mujeres de sus hijos")])
+    cita_hh = "engendró hijos é hijas"
+    for p, trads in EDADES.items():
+        for tipo, ref, _ in trads.get("TM", []):
+            if tipo == "restantes" and cita_hh in rv.get(ref, ""):
+                anadir_sn(f"Otros_hijos_{p}", f"Otros hijos e hijas de {MODERNO[p]}", "?",
+                          "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+                          [(p, f"Otros_hijos_{p}", "padre", ref, "explicito", cita_hh)])
+    for x in candidatas.values():
+        if x.get("cita") and x["cita"] not in rv.get(parse_gn(x["ref"]), ""):
+            errores.append(f"Cita de relación no literal: {x['de']}→{x['a']} {x['ref']} {x['cita']!r}")
+    # Comprobaciones pedidas sobre Milca, Isca y Sarai
+    for hija in ("Milcah_1", "Iscah_1"):
+        if candidatas.get(("Haran_1", hija, "padre"), {}).get("ref") != "Gn 11:29":
+            errores.append(f"Falta Harán padre de {hija} en Gn 11:29")
+    if any(x["a"] == "Sarai_1" and x["tipo"] in ("padre", "madre") for x in candidatas.values()):
+        errores.append("Sarai no debería tener progenitor en Gn 1–11")
     relaciones = sorted(candidatas.values(), key=lambda x: (parse_gn(x["ref"]), x["de"], x["a"]))
 
     # Personas
@@ -359,12 +451,18 @@ def main():
             for _, ref, _ in items:
                 refs[p].add(ref)
     for p in list(refs):
-        if p not in NOMBRES:
+        if p not in NOMBRES and p not in sin_nombre:
             errores.append(f"Persona sin nombre español en NOMBRES: {p}")
     personas, fallos_nombre = [], []
     for p in sorted(refs, key=lambda q: (min(refs[q]), q)):
-        nombre = NOMBRES.get(p, p)
         lista = sorted(refs[p])
+        if p in sin_nombre:
+            nombre, sexo, nota = sin_nombre[p]
+            personas.append({"id": p, "nombre": nombre, "nombre_rv1909": None, "sin_nombre": True,
+                             "sexo": sexo, "primera_ref": gn(lista[0]), "refs": [gn(r) for r in lista],
+                             "nota": nota, "ref_mencion": gn(lista[0])})
+            continue
+        nombre = NOMBRES.get(p, p)
         if p in SOLO_LXX:
             fuente_v, buscado = br, SOLO_LXX[p][0]
         else:
@@ -387,7 +485,8 @@ def main():
         forma_rv = None if p in SOLO_LXX else nombre
         if forma_rv and forma_rv != moderno:
             nota = f"En la Reina-Valera 1909: {forma_rv}." + (" " + nota if nota else "")
-        personas.append({"id": p, "nombre": moderno, "nombre_rv1909": forma_rv, "sexo": sexo,
+        personas.append({"id": p, "nombre": moderno, "nombre_rv1909": forma_rv, "sin_nombre": False,
+                         "sexo": sexo,
                          "primera_ref": gn(primera), "refs": [gn(r) for r in lista], "nota": nota})
     ids = {x["id"] for x in personas}
     for x in relaciones:
@@ -464,9 +563,91 @@ def main():
         vistos.add(k)
     avisos.extend("Nombre no hallado: " + f for f in fallos_nombre)          # 4
 
+    # ------------------------------------------------------------ pasajes
+    pasajes, tam_pasaje = [], []
+    orden = sorted(rv)
+    pos = {k: i for i, k in enumerate(orden)}
+    esperado = 0
+    for i, (ini, fin, titulo, resumen) in enumerate(PASAJES, 1):
+        a, b = parse_gn(ini), parse_gn(fin)
+        if a not in pos or b not in pos or pos[a] != esperado or pos[b] < pos[a]:
+            errores.append(f"Pasaje {ini}–{fin}: hueco, solape o desorden (se esperaba {gn(orden[min(esperado, len(orden)-1)])})")
+        else:
+            esperado = pos[b] + 1
+        pasajes.append({"id": f"gn-{i:02d}", "inicio": ini, "fin": fin, "titulo": titulo,
+                        "titulo_origen": "editorial", "resumen": resumen})
+        tam_pasaje.append(pos.get(b, 0) - pos.get(a, 0) + 1)
+    if esperado != len(orden):
+        errores.append(f"Los pasajes no cubren hasta {gn(orden[-1])}")
+
+    # ------------------------------------------------------------ menciones
+    pv = defaultdict(dict)  # ref -> {persona: n.º de apariciones según BibleData}
+    for r in leer_csv(obtener("pv", sin_red)):
+        ref = ref_gen(r["reference_id"])
+        if ref:
+            try:
+                n = int(r["person_label_count"] or 1)
+            except ValueError:
+                n = 1
+            pv[ref][r["person_id"]] = pv[ref].get(r["person_id"], 0) + n
+    por_forma = defaultdict(list)
+    for p in personas:
+        if p["nombre_rv1909"]:
+            por_forma[sin_acentos(p["nombre_rv1909"])].append(p["id"])
+    sitio = {p["id"]: {parse_gn(r) for r in p["refs"]} for p in personas}
+    formas = sorted(por_forma, key=len, reverse=True)  # largas primero (Tubal-Caín antes que Tubal/Caín)
+
+    def u16(s, i):
+        return len(s[:i].encode("utf-16-le")) // 2
+
+    menciones, ambiguos, no_situados = [], [], Counter()
+    for ref in orden:
+        texto = rv[ref]
+        # normalización carácter a carácter para que los índices coincidan con el original
+        norm = "".join(n if len(n := sin_acentos(ch)) == 1 else ch.lower() for ch in texto)
+        if len(norm) != len(texto):
+            errores.append(f"Normalización altera longitud en {gn(ref)}"); continue
+        ocupado = [False] * len(texto)
+        for forma in formas:
+            hallados = [m for m in re.finditer(r"(?<!\w)%s(?!\w)" % re.escape(forma), norm)
+                        if not any(ocupado[m.start():m.end()])]
+            if not hallados:
+                continue
+            cands = [q for q in por_forma[forma] if q in pv[ref] or ref in sitio[q]]
+            if not cands:
+                no_situados[forma] += len(hallados); continue
+            # Uso como lugar («en Harán», «hasta Harán», «tierra de Canaán»): no es mención de persona.
+            lugar = [m for m in hallados if forma in ("haran", "canaan") and re.search(r"(?<!\w)(en|hasta|tierra de)\s+$", norm[:m.start()])]
+            if lugar:
+                no_situados[forma + " (lugar)"] += len(lugar)
+                hallados = [m for m in hallados if m not in lugar]
+            if not hallados:
+                continue
+            if len(cands) > 1:
+                ambiguos.append(f"{gn(ref)} «{texto[hallados[0].start():hallados[0].end()]}» "
+                                f"×{len(hallados)} candidatos {cands}")
+                continue
+            for m in hallados:
+                for j in range(m.start(), m.end()):
+                    ocupado[j] = True
+                menciones.append({"ref": gn(ref), "persona": cands[0],
+                                  "inicio": u16(texto, m.start()), "fin": u16(texto, m.end())})
+    menciones.sort(key=lambda x: (parse_gn(x["ref"]), x["inicio"]))
+    # verificación de menciones
+    forma_de = {p["id"]: p["nombre_rv1909"] for p in personas}
+    ultimo = {}
+    for x in menciones:
+        t = rv[parse_gn(x["ref"])]
+        b = t.encode("utf-16-le")[2 * x["inicio"]:2 * x["fin"]].decode("utf-16-le")
+        if sin_acentos(b) != sin_acentos(forma_de[x["persona"]]):
+            errores.append(f"Mención no coincide {x}: {b!r}")
+        if x["ref"] in ultimo and x["inicio"] < ultimo[x["ref"]]:
+            errores.append(f"Menciones solapadas en {x['ref']}")
+        ultimo[x["ref"]] = x["fin"]
+
     datos = {"generado": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
              "fuentes": FUENTES, "capitulos": capitulos, "personas": personas,
-             "relaciones": relaciones, "edades": edades}
+             "relaciones": relaciones, "edades": edades, "pasajes": pasajes, "menciones": menciones}
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text("window.BIBLIA_DATOS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n",
                       encoding="utf-8")
@@ -482,6 +663,18 @@ def main():
     print(f"Personas: {len(personas)}")
     print(f"Relaciones: {len(relaciones)} (explícitas {cert['explicito']}, inferidas {cert['inferido']}); "
           f"descartadas por tipo no genealógico: {dict(descartadas)}")
+    tam = tam_pasaje
+    print(f"Pasajes: {len(pasajes)} (versículos {sum(tam)}, mín {min(tam)}, máx {max(tam)}; "
+          f"fuera de 8–20: {[p['id'] + ':' + str(n) for p, n in zip(pasajes, tam) if not 8 <= n <= 20]})")
+    print(f"Menciones: {len(menciones)} en {len({m['ref'] for m in menciones})} versículos; "
+          f"personas con nombre mencionadas: {len({m['persona'] for m in menciones})}")
+    print(f"Ambiguas descartadas ({len(ambiguos)}):")
+    for a in ambiguos:
+        print("  - " + a)
+    print(f"Nombre presente pero persona no situada en ese versículo (no se marca): {dict(no_situados)}")
+    print(f"Mujeres con nombre: {sum(1 for p in personas if p['sexo'] == 'f' and not p['sin_nombre'])}; "
+          f"mujeres sin nombre: {sum(1 for p in personas if p['sexo'] == 'f' and p['sin_nombre'])}; "
+          f"grupos «otros hijos e hijas»: {sum(1 for p in personas if p['id'].startswith('Otros_hijos_'))}")
     print(f"Relaciones subidas de inferido a explícito por el texto: {subidas}; "
           f"por fuente: {dict(Counter(x['fuente'] for x in relaciones))}")
     for trad in ("TM", "LXX"):

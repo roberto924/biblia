@@ -2,7 +2,7 @@
 Uso: python iconos/generar_iconos.py  — el dibujo queda dentro de la zona segura de iconos 'maskable'."""
 import os, struct, zlib
 
-FONDO, PAPEL, LINEA = (138, 75, 34), (248, 243, 234), (201, 162, 126)
+FONDO, PAPEL, LINEA, HILO = (29, 39, 44), (236, 235, 228), (154, 163, 166), (192, 71, 59)
 
 
 def pixel(x, y):  # coordenadas normalizadas 0..1
@@ -12,8 +12,8 @@ def pixel(x, y):  # coordenadas normalizadas 0..1
         curva = 0.035 * (1 - d / 0.31)
         arriba, abajo = 0.30 + curva, 0.72 + curva
         if arriba <= y <= abajo:
-            if d < 0.01:
-                return FONDO
+            if d < 0.012:
+                return HILO
             # renglones
             for r in (0.40, 0.48, 0.56):
                 if abs(y - (r + curva)) < 0.01 and 0.08 < d < 0.24:

@@ -24,8 +24,81 @@ prueba('el árbol parte de Adán y contiene a cada persona una sola vez', () => 
   assert.equal(b[0].id, 'Adam_1');
   const ids = []; (function r(n) { ids.push(n.id); n.hijos.forEach(r); })(b[0]);
   assert.equal(new Set(ids).size, ids.length);
-  assert.deepEqual(j(b[0].hijos.map(h => h.id)), ['Cain_1', 'Abel_1', 'Seth_1']);
-  assert.ok(!b.some(t => t.id === 'Eve_1'), 'Eva (cónyuge) no debe ser otra raíz');
+  assert.deepEqual(j(b[0].hijos.map(h => h.id)), ['Cain_1', 'Abel_1', 'Seth_1', 'AdamOtros_1']); // grupo sin nombre al final
+  assert.equal(b.length, 1, 'esposas y madres no son raíces sueltas');
+});
+const nodo = (b, id) => { let f = null; b.forEach(function r(n) { if (n.id === id) f = n; n.hijos.forEach(r); }); return f; };
+prueba('cónyuges en los nodos del árbol', () => {
+  const b = N.construirBosque(D);
+  assert.deepEqual(j(nodo(b, 'Adam_1').conyuges.map(c => c.otro)), ['Eve_1']);
+  assert.deepEqual(j(nodo(b, 'Lamech_1').conyuges.map(c => c.otro)), ['Adah_1', 'Zillah_1']);
+  assert.equal(nodo(b, 'Lamech_1').conyuges[0].cita, 'Y tomó para sí Lamech dos mujeres');
+  assert.deepEqual(j(nodo(b, 'Noah_1').conyuges.map(c => c.otro)), ['NoahWife_1']);
+});
+prueba('madre por hijo (Lamec: Ada y Zila)', () => {
+  const b = N.construirBosque(D);
+  assert.deepEqual(j(nodo(b, 'Cain_1').madres.map(m => [m.de, m.ref])), [['Eve_1', 'Gn 4:1']]);
+  assert.equal(nodo(b, 'Jabal_1').madres[0].de, 'Adah_1');
+  assert.equal(nodo(b, 'TubalCain_1').madres[0].de, 'Zillah_1');
+  assert.equal(nodo(b, 'Naamah_1').madres.length, 0);
+});
+prueba('ninguna mujer queda fuera del árbol renderizable', () => {
+  const s = N.alcanzables(D);
+  const fuera = D.personas.filter(p => p.sexo === 'f' && !s.has(p.id)).map(p => p.id);
+  assert.deepEqual(j(fuera), []);
+  assert.deepEqual(j(N.contarMujeres(D)), { conNombre: 4, sinNombre: 2 });
+});
+console.log('Lectura acompañada');
+prueba('pasaje de un ref (también cruzando capítulo) y respaldo por capítulos', () => {
+  assert.equal(N.pasajeDe(D, 'Gn 4:19').id, 'ej-01');
+  assert.equal(N.pasajeDe(D, 'Gn 6:1').id, 'ej-02');
+  assert.equal(N.pasajeDe(D, 'Gn 9:1'), null);
+  assert.deepEqual(j(N.versiculosDe(D, N.pasajeDe(D, 'Gn 5:1')).map(v => v.ref)), ['Gn 5:1', 'Gn 5:3', 'Gn 7:6']);
+  const sin = { capitulos: [{ libro: 'Génesis', cap: 1, versiculos: [{ n: 1, texto: 'x' }, { n: 2, texto: 'y' }] }] };
+  assert.deepEqual(j(N.pasajes(sin)[0]), { id: 'cap-1', inicio: 'Gn 1:1', fin: 'Gn 1:2', titulo: 'Génesis 1', titulo_origen: 'capitulo', resumen: '' });
+  assert.equal(N.pasajeDe(sin, 'Gn 1:2').id, 'cap-1');
+});
+prueba('segmentación de un versículo con menciones', () => {
+  const t = D.capitulos[0].versiculos[0].texto;
+  const s = j(N.segmentar(D, 'Gn 4:1', t));
+  assert.equal(s.map(x => x.texto).join(''), t);
+  assert.deepEqual(s.filter(x => x.persona).map(x => [x.persona, x.texto]), [['Adam_1', 'Adam'], ['Eve_1', 'Eva'], ['Cain_1', 'Caín']]);
+  const abel = j(N.segmentar(D, 'Gn 4:2', 'Y después parió a su hermano Abel.')); // sin menciones: por nombre
+  assert.deepEqual(abel.filter(x => x.persona), [{ texto: 'Abel', persona: 'Abel_1' }]);
+  const jabal = j(N.segmentar(D, 'Gn 4:20', 'Y Ada parió a Jabal.')); // mención fuera de rango ignorada
+  assert.ok(jabal.some(x => x.persona === 'Jabal_1' && x.texto === 'Jabal'));
+  assert.deepEqual(j(N.segmentar(D, 'Gn 9:9', '')), []);
+});
+prueba('contexto de una persona calculado de las relaciones', () => {
+  assert.equal(N.contextoPersona(D, 'Cain_1'), 'hijo de Adán y Eva; esposo de Esposa de Caín');
+  assert.equal(N.contextoPersona(D, 'Jabal_1'), 'hijo de Lamec y Ada');
+  assert.equal(N.contextoPersona(D, 'Adah_1'), 'esposa de Lamec');
+  assert.equal(N.contextoPersona(D, 'Nadie'), '');
+});
+prueba('contenido del acompañante para un ref', () => {
+  const a = j(N.acompanante(D, ['Gn 4:19']));
+  ['Lamech_1', 'Adah_1', 'Zillah_1'].forEach(id => assert.ok(a.personas.some(p => p.id === id), id));
+  assert.equal(a.vinculos.length, 2);
+  assert.equal(a.vinculos[0].cita, 'Y tomó para sí Lamech dos mujeres');
+  const e = j(N.acompanante(D, 'Gn 5:3')).edades.find(x => x.persona === 'Adam_1' && x.tipo === 'al_engendrar');
+  assert.equal(e.TM.valor, 130); assert.equal(e.LXX.valor, 230); assert.equal(e.difiere, true);
+  assert.deepEqual(j(N.acompanante(D, ['Gn 4:17']).sinNombre), ['CainWife_1']);
+  assert.equal(N.tieneApoyo(D, 'Gn 4:1'), true);
+  assert.equal(N.tieneApoyo(D, 'Gn 5:1'), false);
+  assert.deepEqual(j(N.acompanante({}, ['Gn 1:1'])), { personas: [], vinculos: [], edades: [], sinNombre: [] });
+});
+prueba('primeras apariciones por pasaje', () => {
+  const p1 = j(N.primerasApariciones(D, N.pasajeDe(D, 'Gn 4:1')));
+  ['Cain_1', 'Abel_1', 'CainWife_1', 'Adah_1', 'Naamah_1'].forEach(id => assert.ok(p1.includes(id), id));
+  assert.ok(!p1.includes('Eve_1') && !p1.includes('Adam_1'));
+  assert.equal(p1[0], 'Cain_1');
+  const p2 = j(N.primerasApariciones(D, N.pasajeDe(D, 'Gn 5:1')));
+  assert.ok(p2.includes('Kenan_1') && !p2.includes('Seth_1'));
+});
+prueba('año del diluvio desde Adán por tradición (cálculo)', () => {
+  assert.equal(N.anoDiluvio(D, 'TM').ano, 1656);
+  assert.equal(N.anoDiluvio(D, 'LXX').ano, 2242);
+  assert.equal(N.anoDiluvio({}, 'TM'), null);
 });
 prueba('cada vínculo del árbol conserva certeza y versículo', () => {
   const abel = N.construirBosque(D)[0].hijos.find(h => h.id === 'Abel_1');
@@ -44,7 +117,7 @@ prueba('ruta LXX incluye a Cainán entre Arfaxad y Sala', () => {
 });
 prueba('línea combinada = LXX con nodos TM fusionados', () => {
   const r = j(N.lineaAdanAbraham(D));
-  assert.equal(r.length, 18 - 3); // todos menos Eva, Caín y Abel (incluye a Cainán)
+  assert.equal(r.length, 15); // Adán…Abram con Cainán
   assert.ok(r.includes('Cainan_2'));
 });
 prueba('años acumulados desde Adán por tradición', () => {
@@ -107,6 +180,24 @@ if (existsSync(real)) {
     assert.ok(tm.length > 0, 'hay línea Adán→Abraham');
     N2.ordenPatriarcas(D2).forEach(id => N2.diferencias(D2, id));
     ['TM', 'LXX'].forEach(t => N2.anosDesdeAdan(D2, t));
+  });
+  prueba('ninguna mujer de los datos reales queda fuera del árbol', () => {
+    const s = N2.alcanzables(D2), m = N2.contarMujeres(D2);
+    console.log(`     mujeres: ${m.conNombre} con nombre, ${m.sinNombre} sin nombre`);
+    assert.deepEqual(j((D2.personas || []).filter(p => p.sexo === 'f' && !s.has(p.id)).map(p => p.id)), []);
+  });
+  prueba('lectura acompañada sobre los datos reales', () => {
+    const ps = N2.pasajes(D2);
+    let vs = 0, conPersona = 0;
+    ps.forEach(p => N2.versiculosDe(D2, p).forEach(v => {
+      vs++;
+      const s = N2.segmentar(D2, v.ref, v.texto);
+      assert.equal(s.map(x => x.texto).join(''), v.texto, v.ref);
+      if (s.some(x => x.persona)) conPersona++;
+      N2.acompanante(D2, [v.ref]);
+    }));
+    console.log(`     pasajes ${ps.length} (${(D2.pasajes || []).length ? 'de los datos' : 'por capítulo'}), versículos ${vs}, con nombres resaltados ${conPersona}, menciones ${(D2.menciones || []).length}`);
+    assert.ok(vs > 0);
   });
 } else console.log('(datos/genesis.js aún no existe: se omiten las pruebas con datos reales)');
 

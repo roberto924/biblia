@@ -1,13 +1,13 @@
-{
+﻿{
   "name": "Biblia · Compañero de lectura",
   "short_name": "Biblia",
-  "description": "Lee Génesis 1–11 con genealogías, edades y la fuente de cada dato.",
+  "description": "Lee Génesis 1–11 paso a paso, con las personas, vínculos y edades de cada versículo y su fuente.",
   "lang": "es",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f8f3ea",
-  "theme_color": "#8a4b22",
+  "background_color": "#ecebe4",
+  "theme_color": "#1d272c",
   "icons": [
     { "src": "iconos/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },

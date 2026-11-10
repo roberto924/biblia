@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-10T06:19:57+00:00",
+ "generado": "2026-11-10T06:34:33+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -1289,6 +1289,7 @@ window.BIBLIA_DATOS = {
    "id": "Adam_1",
    "nombre": "Adán",
    "nombre_rv1909": "Adam",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 2:25",
    "refs": [
@@ -1305,6 +1306,7 @@ window.BIBLIA_DATOS = {
    "id": "Eve_1",
    "nombre": "Eva",
    "nombre_rv1909": "Eva",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 4:1",
    "refs": [
@@ -1319,6 +1321,7 @@ window.BIBLIA_DATOS = {
    "id": "Cain_1",
    "nombre": "Caín",
    "nombre_rv1909": "Caín",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:1",
    "refs": [
@@ -1331,6 +1334,7 @@ window.BIBLIA_DATOS = {
    "id": "Abel_1",
    "nombre": "Abel",
    "nombre_rv1909": "Abel",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:2",
    "refs": [
@@ -1342,6 +1346,7 @@ window.BIBLIA_DATOS = {
    "id": "Enoch_1",
    "nombre": "Enoc",
    "nombre_rv1909": "Henoch",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:17",
    "refs": [
@@ -1351,9 +1356,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Henoch."
   },
   {
+   "id": "Esposa_de_Cain",
+   "nombre": "Esposa de Caín",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "f",
+   "primera_ref": "Gn 4:17",
+   "refs": [
+    "Gn 4:17"
+   ],
+   "nota": "",
+   "ref_mencion": "Gn 4:17"
+  },
+  {
    "id": "Irad_1",
    "nombre": "Irad",
    "nombre_rv1909": "Irad",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:18",
    "refs": [
@@ -1365,6 +1384,7 @@ window.BIBLIA_DATOS = {
    "id": "Lamech_1",
    "nombre": "Lamec",
    "nombre_rv1909": "Lamech",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:18",
    "refs": [
@@ -1380,6 +1400,7 @@ window.BIBLIA_DATOS = {
    "id": "Mehujael_1",
    "nombre": "Mehujael",
    "nombre_rv1909": "Mehujael",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:18",
    "refs": [
@@ -1391,6 +1412,7 @@ window.BIBLIA_DATOS = {
    "id": "Methushael_1",
    "nombre": "Metusael",
    "nombre_rv1909": "Methusael",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:18",
    "refs": [
@@ -1402,6 +1424,7 @@ window.BIBLIA_DATOS = {
    "id": "Adah_1",
    "nombre": "Ada",
    "nombre_rv1909": "Ada",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 4:19",
    "refs": [
@@ -1415,6 +1438,7 @@ window.BIBLIA_DATOS = {
    "id": "Zillah_1",
    "nombre": "Zila",
    "nombre_rv1909": "Zilla",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 4:19",
    "refs": [
@@ -1427,6 +1451,7 @@ window.BIBLIA_DATOS = {
    "id": "Jabal_1",
    "nombre": "Jabal",
    "nombre_rv1909": "Jabal",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:20",
    "refs": [
@@ -1438,6 +1463,7 @@ window.BIBLIA_DATOS = {
    "id": "Jubal_1",
    "nombre": "Jubal",
    "nombre_rv1909": "Jubal",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:21",
    "refs": [
@@ -1449,6 +1475,7 @@ window.BIBLIA_DATOS = {
    "id": "Naamah_1",
    "nombre": "Naama",
    "nombre_rv1909": "Naama",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 4:22",
    "refs": [
@@ -1460,6 +1487,7 @@ window.BIBLIA_DATOS = {
    "id": "Tubal-cain_1",
    "nombre": "Tubal-Caín",
    "nombre_rv1909": "Tubal-Caín",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:22",
    "refs": [
@@ -1471,6 +1499,7 @@ window.BIBLIA_DATOS = {
    "id": "Seth_1",
    "nombre": "Set",
    "nombre_rv1909": "Seth",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 4:25",
    "refs": [
@@ -1483,9 +1512,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Seth."
   },
   {
+   "id": "Otros_hijos_Adam_1",
+   "nombre": "Otros hijos e hijas de Adán",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:4",
+   "refs": [
+    "Gn 5:4"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:4"
+  },
+  {
    "id": "Enosh_1",
    "nombre": "Enós",
    "nombre_rv1909": "Enós",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:6",
    "refs": [
@@ -1497,9 +1540,23 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Seth_1",
+   "nombre": "Otros hijos e hijas de Set",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:7",
+   "refs": [
+    "Gn 5:7"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:7"
+  },
+  {
    "id": "Kenan_1",
    "nombre": "Cainán",
    "nombre_rv1909": "Cainán",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:9",
    "refs": [
@@ -1511,9 +1568,23 @@ window.BIBLIA_DATOS = {
    "nota": "Distinto del Cainán hijo de Arfaxad que solo aparece en la Septuaginta (Gn 11:12-13)."
   },
   {
+   "id": "Otros_hijos_Enosh_1",
+   "nombre": "Otros hijos e hijas de Enós",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:10",
+   "refs": [
+    "Gn 5:10"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:10"
+  },
+  {
    "id": "Mahalalel_1",
    "nombre": "Mahalaleel",
    "nombre_rv1909": "Mahalaleel",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:12",
    "refs": [
@@ -1525,9 +1596,23 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Kenan_1",
+   "nombre": "Otros hijos e hijas de Cainán",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:13",
+   "refs": [
+    "Gn 5:13"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:13"
+  },
+  {
    "id": "Jared_1",
    "nombre": "Jared",
    "nombre_rv1909": "Jared",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:15",
    "refs": [
@@ -1539,9 +1624,23 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Mahalalel_1",
+   "nombre": "Otros hijos e hijas de Mahalaleel",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:16",
+   "refs": [
+    "Gn 5:16"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:16"
+  },
+  {
    "id": "Enoch_2",
    "nombre": "Enoc",
    "nombre_rv1909": "Henoch",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:18",
    "refs": [
@@ -1553,9 +1652,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Henoch."
   },
   {
+   "id": "Otros_hijos_Jared_1",
+   "nombre": "Otros hijos e hijas de Jared",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:19",
+   "refs": [
+    "Gn 5:19"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:19"
+  },
+  {
    "id": "Methuselah_1",
    "nombre": "Matusalén",
    "nombre_rv1909": "Mathusalam",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:21",
    "refs": [
@@ -1567,9 +1680,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Mathusalam."
   },
   {
+   "id": "Otros_hijos_Enoch_2",
+   "nombre": "Otros hijos e hijas de Enoc",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:22",
+   "refs": [
+    "Gn 5:22"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:22"
+  },
+  {
    "id": "Lamech_2",
    "nombre": "Lamec",
    "nombre_rv1909": "Lamech",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:25",
    "refs": [
@@ -1581,28 +1708,58 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Lamech."
   },
   {
+   "id": "Otros_hijos_Methuselah_1",
+   "nombre": "Otros hijos e hijas de Matusalén",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:26",
+   "refs": [
+    "Gn 5:26"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:26"
+  },
+  {
    "id": "Noah_1",
    "nombre": "Noé",
    "nombre_rv1909": "Noé",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:32",
    "refs": [
     "Gn 5:28",
     "Gn 5:32",
     "Gn 7:6",
+    "Gn 7:13",
     "Gn 9:28",
     "Gn 9:29"
    ],
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Lamech_2",
+   "nombre": "Otros hijos e hijas de Lamec",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 5:30",
+   "refs": [
+    "Gn 5:30"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 5:30"
+  },
+  {
    "id": "Ham_1",
    "nombre": "Cam",
    "nombre_rv1909": "Châm",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:32",
    "refs": [
     "Gn 5:32",
+    "Gn 7:13",
     "Gn 9:18",
     "Gn 10:6"
    ],
@@ -1612,10 +1769,12 @@ window.BIBLIA_DATOS = {
    "id": "Japheth_1",
    "nombre": "Jafet",
    "nombre_rv1909": "Japhet",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:32",
    "refs": [
     "Gn 5:32",
+    "Gn 7:13",
     "Gn 10:2"
    ],
    "nota": "En la Reina-Valera 1909: Japhet."
@@ -1624,10 +1783,12 @@ window.BIBLIA_DATOS = {
    "id": "Shem_1",
    "nombre": "Sem",
    "nombre_rv1909": "Sem",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 5:32",
    "refs": [
     "Gn 5:32",
+    "Gn 7:13",
     "Gn 10:22",
     "Gn 11:10",
     "Gn 11:11"
@@ -1635,9 +1796,62 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Esposa_de_Cam",
+   "nombre": "Esposa de Cam",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "f",
+   "primera_ref": "Gn 7:13",
+   "refs": [
+    "Gn 7:13"
+   ],
+   "nota": "El versículo solo dice «las tres mujeres de sus hijos»; no nombra a ninguna ni dice cuál es de quién: se asigna una a cada hijo.",
+   "ref_mencion": "Gn 7:13"
+  },
+  {
+   "id": "Esposa_de_Jafet",
+   "nombre": "Esposa de Jafet",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "f",
+   "primera_ref": "Gn 7:13",
+   "refs": [
+    "Gn 7:13"
+   ],
+   "nota": "El versículo solo dice «las tres mujeres de sus hijos»; no nombra a ninguna ni dice cuál es de quién: se asigna una a cada hijo.",
+   "ref_mencion": "Gn 7:13"
+  },
+  {
+   "id": "Esposa_de_Noe",
+   "nombre": "Esposa de Noé",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "f",
+   "primera_ref": "Gn 7:13",
+   "refs": [
+    "Gn 7:13"
+   ],
+   "nota": "",
+   "ref_mencion": "Gn 7:13"
+  },
+  {
+   "id": "Esposa_de_Sem",
+   "nombre": "Esposa de Sem",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "f",
+   "primera_ref": "Gn 7:13",
+   "refs": [
+    "Gn 7:13"
+   ],
+   "nota": "El versículo solo dice «las tres mujeres de sus hijos»; no nombra a ninguna ni dice cuál es de quién: se asigna una a cada hijo.",
+   "ref_mencion": "Gn 7:13"
+  },
+  {
    "id": "Canaan_1",
    "nombre": "Canaán",
    "nombre_rv1909": "Canaán",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 9:18",
    "refs": [
@@ -1653,6 +1867,7 @@ window.BIBLIA_DATOS = {
    "id": "Elishah_2",
    "nombre": "Elisa",
    "nombre_rv1909": null,
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1664,6 +1879,7 @@ window.BIBLIA_DATOS = {
    "id": "Gomer_1",
    "nombre": "Gomer",
    "nombre_rv1909": "Gomer",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1676,6 +1892,7 @@ window.BIBLIA_DATOS = {
    "id": "Javan_1",
    "nombre": "Javán",
    "nombre_rv1909": "Javán",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1688,6 +1905,7 @@ window.BIBLIA_DATOS = {
    "id": "Madai_1",
    "nombre": "Madai",
    "nombre_rv1909": "Madai",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1699,6 +1917,7 @@ window.BIBLIA_DATOS = {
    "id": "Magog_1",
    "nombre": "Magog",
    "nombre_rv1909": "Magog",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1710,6 +1929,7 @@ window.BIBLIA_DATOS = {
    "id": "Meshech_1",
    "nombre": "Mesec",
    "nombre_rv1909": "Meshech",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1721,6 +1941,7 @@ window.BIBLIA_DATOS = {
    "id": "Tiras_1",
    "nombre": "Tiras",
    "nombre_rv1909": "Tiras",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1732,6 +1953,7 @@ window.BIBLIA_DATOS = {
    "id": "Tubal_1",
    "nombre": "Tubal",
    "nombre_rv1909": "Tubal",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:2",
    "refs": [
@@ -1743,6 +1965,7 @@ window.BIBLIA_DATOS = {
    "id": "Ashkenaz_1",
    "nombre": "Askenaz",
    "nombre_rv1909": "Ashkenaz",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:3",
    "refs": [
@@ -1754,6 +1977,7 @@ window.BIBLIA_DATOS = {
    "id": "Riphath_1",
    "nombre": "Rifat",
    "nombre_rv1909": "Riphat",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:3",
    "refs": [
@@ -1765,6 +1989,7 @@ window.BIBLIA_DATOS = {
    "id": "Togarmah_1",
    "nombre": "Togarma",
    "nombre_rv1909": "Togorma",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:3",
    "refs": [
@@ -1776,6 +2001,7 @@ window.BIBLIA_DATOS = {
    "id": "Dodanim_1",
    "nombre": "Dodanim",
    "nombre_rv1909": "Dodanim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:4",
    "refs": [
@@ -1787,6 +2013,7 @@ window.BIBLIA_DATOS = {
    "id": "Elishah_1",
    "nombre": "Elisa",
    "nombre_rv1909": "Elisa",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:4",
    "refs": [
@@ -1798,6 +2025,7 @@ window.BIBLIA_DATOS = {
    "id": "Kittim_1",
    "nombre": "Quitim",
    "nombre_rv1909": "Kittim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:4",
    "refs": [
@@ -1809,6 +2037,7 @@ window.BIBLIA_DATOS = {
    "id": "Tarshish_1",
    "nombre": "Tarsis",
    "nombre_rv1909": "Tarsis",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:4",
    "refs": [
@@ -1820,6 +2049,7 @@ window.BIBLIA_DATOS = {
    "id": "Cush_1",
    "nombre": "Cus",
    "nombre_rv1909": "Cush",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:6",
    "refs": [
@@ -1833,6 +2063,7 @@ window.BIBLIA_DATOS = {
    "id": "Mizraim_1",
    "nombre": "Mizraim",
    "nombre_rv1909": "Mizraim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:6",
    "refs": [
@@ -1846,6 +2077,7 @@ window.BIBLIA_DATOS = {
    "id": "Put_1",
    "nombre": "Fut",
    "nombre_rv1909": "Phut",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:6",
    "refs": [
@@ -1857,6 +2089,7 @@ window.BIBLIA_DATOS = {
    "id": "Dedan_1",
    "nombre": "Dedán",
    "nombre_rv1909": "Dedán",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1868,6 +2101,7 @@ window.BIBLIA_DATOS = {
    "id": "Havilah_1",
    "nombre": "Havila",
    "nombre_rv1909": "Havila",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1879,6 +2113,7 @@ window.BIBLIA_DATOS = {
    "id": "Raamah_1",
    "nombre": "Raama",
    "nombre_rv1909": "Raama",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1890,6 +2125,7 @@ window.BIBLIA_DATOS = {
    "id": "Sabtah_1",
    "nombre": "Sabta",
    "nombre_rv1909": "Sabta",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1901,6 +2137,7 @@ window.BIBLIA_DATOS = {
    "id": "Sabteca_1",
    "nombre": "Sabteca",
    "nombre_rv1909": "Sabtecha",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1912,6 +2149,7 @@ window.BIBLIA_DATOS = {
    "id": "Seba_1",
    "nombre": "Seba",
    "nombre_rv1909": "Seba",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1923,6 +2161,7 @@ window.BIBLIA_DATOS = {
    "id": "Sheba_1",
    "nombre": "Sabá",
    "nombre_rv1909": "Sheba",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:7",
    "refs": [
@@ -1934,6 +2173,7 @@ window.BIBLIA_DATOS = {
    "id": "Nimrod_1",
    "nombre": "Nimrod",
    "nombre_rv1909": "Nimrod",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:8",
    "refs": [
@@ -1945,6 +2185,7 @@ window.BIBLIA_DATOS = {
    "id": "Anam_1",
    "nombre": "Anamim",
    "nombre_rv1909": "Anamim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:13",
    "refs": [
@@ -1956,6 +2197,7 @@ window.BIBLIA_DATOS = {
    "id": "Lehab_1",
    "nombre": "Lehabim",
    "nombre_rv1909": "Lehabim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:13",
    "refs": [
@@ -1967,6 +2209,7 @@ window.BIBLIA_DATOS = {
    "id": "Lud_1",
    "nombre": "Ludim",
    "nombre_rv1909": "Ludim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:13",
    "refs": [
@@ -1978,6 +2221,7 @@ window.BIBLIA_DATOS = {
    "id": "Naphtuh_1",
    "nombre": "Naftuhim",
    "nombre_rv1909": "Naphtuhim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:13",
    "refs": [
@@ -1989,6 +2233,7 @@ window.BIBLIA_DATOS = {
    "id": "Caphtor_1",
    "nombre": "Caftorim",
    "nombre_rv1909": "Caphtorim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:14",
    "refs": [
@@ -2000,6 +2245,7 @@ window.BIBLIA_DATOS = {
    "id": "Casluh_1",
    "nombre": "Casluhim",
    "nombre_rv1909": "Casluim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:14",
    "refs": [
@@ -2011,6 +2257,7 @@ window.BIBLIA_DATOS = {
    "id": "Pathrus_1",
    "nombre": "Patrusim",
    "nombre_rv1909": "Pathrusim",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:14",
    "refs": [
@@ -2022,6 +2269,7 @@ window.BIBLIA_DATOS = {
    "id": "Heth_1",
    "nombre": "Het",
    "nombre_rv1909": "Heth",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:15",
    "refs": [
@@ -2033,6 +2281,7 @@ window.BIBLIA_DATOS = {
    "id": "Sidon_1",
    "nombre": "Sidón",
    "nombre_rv1909": "Sidón",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:15",
    "refs": [
@@ -2044,6 +2293,7 @@ window.BIBLIA_DATOS = {
    "id": "Amor_1",
    "nombre": "Amorreo",
    "nombre_rv1909": "Amorrheo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:16",
    "refs": [
@@ -2055,6 +2305,7 @@ window.BIBLIA_DATOS = {
    "id": "Girgash_1",
    "nombre": "Gergeseo",
    "nombre_rv1909": "Gergeseo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:16",
    "refs": [
@@ -2066,6 +2317,7 @@ window.BIBLIA_DATOS = {
    "id": "Jebus_1",
    "nombre": "Jebuseo",
    "nombre_rv1909": "Jebuseo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:16",
    "refs": [
@@ -2077,6 +2329,7 @@ window.BIBLIA_DATOS = {
    "id": "Ark_1",
    "nombre": "Araceo",
    "nombre_rv1909": "Araceo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:17",
    "refs": [
@@ -2088,6 +2341,7 @@ window.BIBLIA_DATOS = {
    "id": "Hivi_1",
    "nombre": "Heveo",
    "nombre_rv1909": "Heveo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:17",
    "refs": [
@@ -2099,6 +2353,7 @@ window.BIBLIA_DATOS = {
    "id": "Sini_1",
    "nombre": "Sineo",
    "nombre_rv1909": "Sineo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:17",
    "refs": [
@@ -2110,6 +2365,7 @@ window.BIBLIA_DATOS = {
    "id": "Arvad_1",
    "nombre": "Arvadeo",
    "nombre_rv1909": "Aradio",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:18",
    "refs": [
@@ -2121,6 +2377,7 @@ window.BIBLIA_DATOS = {
    "id": "Hamath_1",
    "nombre": "Hamateo",
    "nombre_rv1909": "Amatheo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:18",
    "refs": [
@@ -2132,6 +2389,7 @@ window.BIBLIA_DATOS = {
    "id": "Zemar_1",
    "nombre": "Zemareo",
    "nombre_rv1909": "Samareo",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:18",
    "refs": [
@@ -2143,6 +2401,7 @@ window.BIBLIA_DATOS = {
    "id": "Aram_1",
    "nombre": "Aram",
    "nombre_rv1909": "Aram",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:22",
    "refs": [
@@ -2155,6 +2414,7 @@ window.BIBLIA_DATOS = {
    "id": "Asshur_1",
    "nombre": "Asur",
    "nombre_rv1909": "Assur",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:22",
    "refs": [
@@ -2166,6 +2426,7 @@ window.BIBLIA_DATOS = {
    "id": "Elam_1",
    "nombre": "Elam",
    "nombre_rv1909": "Elam",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:22",
    "refs": [
@@ -2177,6 +2438,7 @@ window.BIBLIA_DATOS = {
    "id": "Lud_2",
    "nombre": "Lud",
    "nombre_rv1909": "Lud",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:22",
    "refs": [
@@ -2188,6 +2450,7 @@ window.BIBLIA_DATOS = {
    "id": "Gether_1",
    "nombre": "Geter",
    "nombre_rv1909": "Gether",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:23",
    "refs": [
@@ -2199,6 +2462,7 @@ window.BIBLIA_DATOS = {
    "id": "Hul_1",
    "nombre": "Hul",
    "nombre_rv1909": "Hul",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:23",
    "refs": [
@@ -2210,6 +2474,7 @@ window.BIBLIA_DATOS = {
    "id": "Mash_1",
    "nombre": "Mas",
    "nombre_rv1909": "Mas",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:23",
    "refs": [
@@ -2221,6 +2486,7 @@ window.BIBLIA_DATOS = {
    "id": "Uz_1",
    "nombre": "Uz",
    "nombre_rv1909": "Uz",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:23",
    "refs": [
@@ -2232,6 +2498,7 @@ window.BIBLIA_DATOS = {
    "id": "Eber_1",
    "nombre": "Heber",
    "nombre_rv1909": "Heber",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:25",
    "refs": [
@@ -2246,6 +2513,7 @@ window.BIBLIA_DATOS = {
    "id": "Joktan_1",
    "nombre": "Joctán",
    "nombre_rv1909": "Joctán",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:25",
    "refs": [
@@ -2261,6 +2529,7 @@ window.BIBLIA_DATOS = {
    "id": "Almodad_1",
    "nombre": "Almodad",
    "nombre_rv1909": "Almodad",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:26",
    "refs": [
@@ -2272,6 +2541,7 @@ window.BIBLIA_DATOS = {
    "id": "Hazarmaveth_1",
    "nombre": "Hazar-mavet",
    "nombre_rv1909": "Hazarmaveth",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:26",
    "refs": [
@@ -2283,6 +2553,7 @@ window.BIBLIA_DATOS = {
    "id": "Jerah_1",
    "nombre": "Jera",
    "nombre_rv1909": "Jera",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:26",
    "refs": [
@@ -2294,6 +2565,7 @@ window.BIBLIA_DATOS = {
    "id": "Sheleph_1",
    "nombre": "Selef",
    "nombre_rv1909": "Sheleph",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:26",
    "refs": [
@@ -2305,6 +2577,7 @@ window.BIBLIA_DATOS = {
    "id": "Diklah_1",
    "nombre": "Dicla",
    "nombre_rv1909": "Dicla",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:27",
    "refs": [
@@ -2316,6 +2589,7 @@ window.BIBLIA_DATOS = {
    "id": "Hadoram_1",
    "nombre": "Hadoram",
    "nombre_rv1909": "Hadoram",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:27",
    "refs": [
@@ -2327,6 +2601,7 @@ window.BIBLIA_DATOS = {
    "id": "Uzal_1",
    "nombre": "Uzal",
    "nombre_rv1909": "Uzal",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:27",
    "refs": [
@@ -2338,6 +2613,7 @@ window.BIBLIA_DATOS = {
    "id": "Abimael_1",
    "nombre": "Abimael",
    "nombre_rv1909": "Abimael",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:28",
    "refs": [
@@ -2349,6 +2625,7 @@ window.BIBLIA_DATOS = {
    "id": "Obal_1",
    "nombre": "Obal",
    "nombre_rv1909": "Obal",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:28",
    "refs": [
@@ -2360,6 +2637,7 @@ window.BIBLIA_DATOS = {
    "id": "Sheba_2",
    "nombre": "Sabá",
    "nombre_rv1909": "Seba",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:28",
    "refs": [
@@ -2371,6 +2649,7 @@ window.BIBLIA_DATOS = {
    "id": "Havilah_2",
    "nombre": "Havila",
    "nombre_rv1909": "Havila",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:29",
    "refs": [
@@ -2382,6 +2661,7 @@ window.BIBLIA_DATOS = {
    "id": "Jobab_1",
    "nombre": "Jobab",
    "nombre_rv1909": "Jobad",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:29",
    "refs": [
@@ -2393,6 +2673,7 @@ window.BIBLIA_DATOS = {
    "id": "Ophir_1",
    "nombre": "Ofir",
    "nombre_rv1909": "Ophir",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 10:29",
    "refs": [
@@ -2404,6 +2685,7 @@ window.BIBLIA_DATOS = {
    "id": "Arpachshad_1",
    "nombre": "Arfaxad",
    "nombre_rv1909": "Arphaxad",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:10",
    "refs": [
@@ -2414,9 +2696,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Arphaxad."
   },
   {
+   "id": "Otros_hijos_Shem_1",
+   "nombre": "Otros hijos e hijas de Sem",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:11",
+   "refs": [
+    "Gn 11:11"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:11"
+  },
+  {
    "id": "Cainan_1",
    "nombre": "Cainán",
    "nombre_rv1909": null,
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:12",
    "refs": [
@@ -2429,6 +2725,7 @@ window.BIBLIA_DATOS = {
    "id": "Shelah_1",
    "nombre": "Sala",
    "nombre_rv1909": "Sala",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:12",
    "refs": [
@@ -2440,9 +2737,36 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Arpachshad_1",
+   "nombre": "Otros hijos e hijas de Arfaxad",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:13",
+   "refs": [
+    "Gn 11:13"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:13"
+  },
+  {
+   "id": "Otros_hijos_Shelah_1",
+   "nombre": "Otros hijos e hijas de Sala",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:15",
+   "refs": [
+    "Gn 11:15"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:15"
+  },
+  {
    "id": "Peleg_1",
    "nombre": "Péleg",
    "nombre_rv1909": "Peleg",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:16",
    "refs": [
@@ -2453,9 +2777,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Peleg."
   },
   {
+   "id": "Otros_hijos_Eber_1",
+   "nombre": "Otros hijos e hijas de Heber",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:17",
+   "refs": [
+    "Gn 11:17"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:17"
+  },
+  {
    "id": "Reu_1",
    "nombre": "Reu",
    "nombre_rv1909": "Reu",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:18",
    "refs": [
@@ -2466,9 +2804,23 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Peleg_1",
+   "nombre": "Otros hijos e hijas de Péleg",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:19",
+   "refs": [
+    "Gn 11:19"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:19"
+  },
+  {
    "id": "Serug_1",
    "nombre": "Serug",
    "nombre_rv1909": "Serug",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:20",
    "refs": [
@@ -2479,9 +2831,23 @@ window.BIBLIA_DATOS = {
    "nota": ""
   },
   {
+   "id": "Otros_hijos_Reu_1",
+   "nombre": "Otros hijos e hijas de Reu",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:21",
+   "refs": [
+    "Gn 11:21"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:21"
+  },
+  {
    "id": "Nahor_1",
    "nombre": "Nacor",
    "nombre_rv1909": "Nachôr",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:22",
    "refs": [
@@ -2492,9 +2858,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Nachôr."
   },
   {
+   "id": "Otros_hijos_Serug_1",
+   "nombre": "Otros hijos e hijas de Serug",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:23",
+   "refs": [
+    "Gn 11:23"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:23"
+  },
+  {
    "id": "Terah_1",
    "nombre": "Taré",
    "nombre_rv1909": "Thare",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:24",
    "refs": [
@@ -2505,9 +2885,23 @@ window.BIBLIA_DATOS = {
    "nota": "En la Reina-Valera 1909: Thare."
   },
   {
+   "id": "Otros_hijos_Nahor_1",
+   "nombre": "Otros hijos e hijas de Nacor",
+   "nombre_rv1909": null,
+   "sin_nombre": true,
+   "sexo": "?",
+   "primera_ref": "Gn 11:25",
+   "refs": [
+    "Gn 11:25"
+   ],
+   "nota": "Grupo sin nombre: el texto solo dice que engendró hijos e hijas.",
+   "ref_mencion": "Gn 11:25"
+  },
+  {
    "id": "Abram_1",
    "nombre": "Abram",
    "nombre_rv1909": "Abram",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:26",
    "refs": [
@@ -2520,6 +2914,7 @@ window.BIBLIA_DATOS = {
    "id": "Haran_1",
    "nombre": "Harán",
    "nombre_rv1909": "Harán",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:26",
    "refs": [
@@ -2533,6 +2928,7 @@ window.BIBLIA_DATOS = {
    "id": "Nahor_2",
    "nombre": "Nacor",
    "nombre_rv1909": "Nachôr",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:26",
    "refs": [
@@ -2545,6 +2941,7 @@ window.BIBLIA_DATOS = {
    "id": "Lot_1",
    "nombre": "Lot",
    "nombre_rv1909": "Lot",
+   "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 11:27",
    "refs": [
@@ -2556,6 +2953,7 @@ window.BIBLIA_DATOS = {
    "id": "Iscah_1",
    "nombre": "Isca",
    "nombre_rv1909": "Isca",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 11:29",
    "refs": [
@@ -2567,6 +2965,7 @@ window.BIBLIA_DATOS = {
    "id": "Milcah_1",
    "nombre": "Milca",
    "nombre_rv1909": "Milca",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 11:29",
    "refs": [
@@ -2578,6 +2977,7 @@ window.BIBLIA_DATOS = {
    "id": "Sarai_1",
    "nombre": "Sarai",
    "nombre_rv1909": "Sarai",
+   "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Gn 11:29",
    "refs": [
@@ -2640,6 +3040,26 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "bibledata",
    "nota": ""
+  },
+  {
+   "de": "Cain_1",
+   "a": "Esposa_de_Cain",
+   "tipo": "conyuge",
+   "ref": "Gn 4:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "conoció Caín á su mujer"
+  },
+  {
+   "de": "Esposa_de_Cain",
+   "a": "Enoch_1",
+   "tipo": "madre",
+   "ref": "Gn 4:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "la cual concibió y parió á Henoch"
   },
   {
    "de": "Enoch_1",
@@ -2786,6 +3206,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Adam_1",
+   "a": "Otros_hijos_Adam_1",
+   "tipo": "padre",
+   "ref": "Gn 5:4",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Seth_1",
    "a": "Enosh_1",
    "tipo": "padre",
@@ -2793,6 +3223,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Seth_1",
+   "a": "Otros_hijos_Seth_1",
+   "tipo": "padre",
+   "ref": "Gn 5:7",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Enosh_1",
@@ -2804,6 +3244,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Enosh_1",
+   "a": "Otros_hijos_Enosh_1",
+   "tipo": "padre",
+   "ref": "Gn 5:10",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Kenan_1",
    "a": "Mahalalel_1",
    "tipo": "padre",
@@ -2811,6 +3261,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Kenan_1",
+   "a": "Otros_hijos_Kenan_1",
+   "tipo": "padre",
+   "ref": "Gn 5:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Mahalalel_1",
@@ -2822,6 +3282,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Mahalalel_1",
+   "a": "Otros_hijos_Mahalalel_1",
+   "tipo": "padre",
+   "ref": "Gn 5:16",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Jared_1",
    "a": "Enoch_2",
    "tipo": "padre",
@@ -2829,6 +3299,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Jared_1",
+   "a": "Otros_hijos_Jared_1",
+   "tipo": "padre",
+   "ref": "Gn 5:19",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Enoch_2",
@@ -2840,6 +3320,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Enoch_2",
+   "a": "Otros_hijos_Enoch_2",
+   "tipo": "padre",
+   "ref": "Gn 5:22",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Methuselah_1",
    "a": "Lamech_2",
    "tipo": "padre",
@@ -2849,6 +3339,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Methuselah_1",
+   "a": "Otros_hijos_Methuselah_1",
+   "tipo": "padre",
+   "ref": "Gn 5:26",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Lamech_2",
    "a": "Noah_1",
    "tipo": "padre",
@@ -2856,6 +3356,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "bibledata",
    "nota": ""
+  },
+  {
+   "de": "Lamech_2",
+   "a": "Otros_hijos_Lamech_2",
+   "tipo": "padre",
+   "ref": "Gn 5:30",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Noah_1",
@@ -2883,6 +3393,76 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Esposa_de_Cam",
+   "a": "Ham_1",
+   "tipo": "conyuge",
+   "ref": "Gn 7:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "las tres mujeres de sus hijos"
+  },
+  {
+   "de": "Esposa_de_Jafet",
+   "a": "Japheth_1",
+   "tipo": "conyuge",
+   "ref": "Gn 7:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "las tres mujeres de sus hijos"
+  },
+  {
+   "de": "Esposa_de_Noe",
+   "a": "Ham_1",
+   "tipo": "madre",
+   "ref": "Gn 7:13",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": ""
+  },
+  {
+   "de": "Esposa_de_Noe",
+   "a": "Japheth_1",
+   "tipo": "madre",
+   "ref": "Gn 7:13",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": ""
+  },
+  {
+   "de": "Esposa_de_Noe",
+   "a": "Noah_1",
+   "tipo": "conyuge",
+   "ref": "Gn 7:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "la mujer de Noé"
+  },
+  {
+   "de": "Esposa_de_Noe",
+   "a": "Shem_1",
+   "tipo": "madre",
+   "ref": "Gn 7:13",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": ""
+  },
+  {
+   "de": "Esposa_de_Sem",
+   "a": "Shem_1",
+   "tipo": "conyuge",
+   "ref": "Gn 7:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "las tres mujeres de sus hijos"
   },
   {
    "de": "Ham_1",
@@ -3497,6 +4077,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Shem_1",
+   "a": "Otros_hijos_Shem_1",
+   "tipo": "padre",
+   "ref": "Gn 11:11",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Arpachshad_1",
    "a": "Cainan_1",
    "tipo": "padre",
@@ -3513,6 +4103,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Arpachshad_1",
+   "a": "Otros_hijos_Arpachshad_1",
+   "tipo": "padre",
+   "ref": "Gn 11:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Cainan_1",
@@ -3533,6 +4133,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Shelah_1",
+   "a": "Otros_hijos_Shelah_1",
+   "tipo": "padre",
+   "ref": "Gn 11:15",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Eber_1",
    "a": "Peleg_1",
    "tipo": "padre",
@@ -3540,6 +4150,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Eber_1",
+   "a": "Otros_hijos_Eber_1",
+   "tipo": "padre",
+   "ref": "Gn 11:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Peleg_1",
@@ -3551,6 +4171,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Peleg_1",
+   "a": "Otros_hijos_Peleg_1",
+   "tipo": "padre",
+   "ref": "Gn 11:19",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Reu_1",
    "a": "Serug_1",
    "tipo": "padre",
@@ -3558,6 +4188,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Reu_1",
+   "a": "Otros_hijos_Reu_1",
+   "tipo": "padre",
+   "ref": "Gn 11:21",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Serug_1",
@@ -3569,6 +4209,16 @@ window.BIBLIA_DATOS = {
    "nota": "Confirmada por la edad al engendrar en este versículo."
   },
   {
+   "de": "Serug_1",
+   "a": "Otros_hijos_Serug_1",
+   "tipo": "padre",
+   "ref": "Gn 11:23",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
+  },
+  {
    "de": "Nahor_1",
    "a": "Terah_1",
    "tipo": "padre",
@@ -3576,6 +4226,16 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "rv1909",
    "nota": "Confirmada por la edad al engendrar en este versículo."
+  },
+  {
+   "de": "Nahor_1",
+   "a": "Otros_hijos_Nahor_1",
+   "tipo": "padre",
+   "ref": "Gn 11:25",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "engendró hijos é hijas"
   },
   {
    "de": "Terah_1",
@@ -4959,6 +5619,2180 @@ window.BIBLIA_DATOS = {
    "fuente": "brenton",
    "cita": "",
    "nota": "No escrito en el texto: total menos edad al engendrar."
+  }
+ ],
+ "pasajes": [
+  {
+   "id": "gn-01",
+   "inicio": "Gn 1:1",
+   "fin": "Gn 1:19",
+   "titulo": "La creación: días primero a cuarto",
+   "titulo_origen": "editorial",
+   "resumen": "Dios crea la luz, el firmamento, la tierra seca con las plantas y las lumbreras del cielo."
+  },
+  {
+   "id": "gn-02",
+   "inicio": "Gn 1:20",
+   "fin": "Gn 2:3",
+   "titulo": "La creación: días quinto a séptimo",
+   "titulo_origen": "editorial",
+   "resumen": "Dios crea los animales del mar, del aire y de la tierra, y al ser humano; el séptimo día reposa."
+  },
+  {
+   "id": "gn-03",
+   "inicio": "Gn 2:4",
+   "fin": "Gn 2:17",
+   "titulo": "El hombre en el huerto de Edén",
+   "titulo_origen": "editorial",
+   "resumen": "Dios forma al hombre del polvo, planta un huerto en Edén y le prohíbe comer del árbol de la ciencia del bien y del mal."
+  },
+  {
+   "id": "gn-04",
+   "inicio": "Gn 2:18",
+   "fin": "Gn 2:25",
+   "titulo": "La formación de la mujer",
+   "titulo_origen": "editorial",
+   "resumen": "El hombre pone nombre a los animales y Dios forma a la mujer de su costilla."
+  },
+  {
+   "id": "gn-05",
+   "inicio": "Gn 3:1",
+   "fin": "Gn 3:13",
+   "titulo": "La serpiente y el fruto prohibido",
+   "titulo_origen": "editorial",
+   "resumen": "La serpiente habla con la mujer, ella y el hombre comen del árbol y Dios les pregunta qué han hecho."
+  },
+  {
+   "id": "gn-06",
+   "inicio": "Gn 3:14",
+   "fin": "Gn 3:24",
+   "titulo": "Las sentencias y la salida del huerto",
+   "titulo_origen": "editorial",
+   "resumen": "Dios se dirige a la serpiente, a la mujer y al hombre, y los saca del huerto de Edén."
+  },
+  {
+   "id": "gn-07",
+   "inicio": "Gn 4:1",
+   "fin": "Gn 4:8",
+   "titulo": "Caín y Abel",
+   "titulo_origen": "editorial",
+   "resumen": "Nacen Caín y Abel, ambos presentan ofrendas y Caín mata a su hermano."
+  },
+  {
+   "id": "gn-08",
+   "inicio": "Gn 4:9",
+   "fin": "Gn 4:16",
+   "titulo": "Caín errante",
+   "titulo_origen": "editorial",
+   "resumen": "Dios pregunta a Caín por Abel, lo maldice y Caín se va a la tierra de Nod."
+  },
+  {
+   "id": "gn-09",
+   "inicio": "Gn 4:17",
+   "fin": "Gn 4:26",
+   "titulo": "Los descendientes de Caín y el nacimiento de Set",
+   "titulo_origen": "editorial",
+   "resumen": "Se enumeran los descendientes de Caín hasta los hijos de Lamec, y nacen Set y Enós."
+  },
+  {
+   "id": "gn-10",
+   "inicio": "Gn 5:1",
+   "fin": "Gn 5:11",
+   "titulo": "De Adán a Enós",
+   "titulo_origen": "editorial",
+   "resumen": "Comienza la lista de generaciones de Adán con las edades de Adán, Set y Enós."
+  },
+  {
+   "id": "gn-11",
+   "inicio": "Gn 5:12",
+   "fin": "Gn 5:20",
+   "titulo": "De Cainán a Jared",
+   "titulo_origen": "editorial",
+   "resumen": "Sigue la lista con las edades de Cainán, Mahalaleel y Jared."
+  },
+  {
+   "id": "gn-12",
+   "inicio": "Gn 5:21",
+   "fin": "Gn 5:32",
+   "titulo": "De Enoc a Noé",
+   "titulo_origen": "editorial",
+   "resumen": "La lista llega a Enoc, Matusalén, Lamec y Noé y a los tres hijos de Noé."
+  },
+  {
+   "id": "gn-13",
+   "inicio": "Gn 6:1",
+   "fin": "Gn 6:8",
+   "titulo": "La maldad de los hombres",
+   "titulo_origen": "editorial",
+   "resumen": "Los hijos de Dios toman mujeres de las hijas de los hombres y Dios decide raer al hombre, pero Noé halla gracia."
+  },
+  {
+   "id": "gn-14",
+   "inicio": "Gn 6:9",
+   "fin": "Gn 6:22",
+   "titulo": "La orden de construir el arca",
+   "titulo_origen": "editorial",
+   "resumen": "Dios anuncia a Noé el diluvio y le da las medidas del arca y lo que debe meter en ella."
+  },
+  {
+   "id": "gn-15",
+   "inicio": "Gn 7:1",
+   "fin": "Gn 7:16",
+   "titulo": "La entrada en el arca",
+   "titulo_origen": "editorial",
+   "resumen": "Noé, su familia y los animales entran en el arca y comienza el diluvio."
+  },
+  {
+   "id": "gn-16",
+   "inicio": "Gn 7:17",
+   "fin": "Gn 8:5",
+   "titulo": "Las aguas crecen y decrecen",
+   "titulo_origen": "editorial",
+   "resumen": "Las aguas cubren los montes y mueren los seres vivos; después Dios se acuerda de Noé y las aguas bajan."
+  },
+  {
+   "id": "gn-17",
+   "inicio": "Gn 8:6",
+   "fin": "Gn 8:19",
+   "titulo": "Las aves y la salida del arca",
+   "titulo_origen": "editorial",
+   "resumen": "Noé suelta un cuervo y una paloma y, cuando la tierra se seca, sale del arca con todos."
+  },
+  {
+   "id": "gn-18",
+   "inicio": "Gn 8:20",
+   "fin": "Gn 9:7",
+   "titulo": "El altar de Noé y la bendición",
+   "titulo_origen": "editorial",
+   "resumen": "Noé ofrece holocaustos, Dios promete no volver a maldecir la tierra y bendice a Noé y a sus hijos."
+  },
+  {
+   "id": "gn-19",
+   "inicio": "Gn 9:8",
+   "fin": "Gn 9:17",
+   "titulo": "El pacto y el arco en las nubes",
+   "titulo_origen": "editorial",
+   "resumen": "Dios establece un pacto con Noé y con los seres vivos, y pone el arco en las nubes como señal."
+  },
+  {
+   "id": "gn-20",
+   "inicio": "Gn 9:18",
+   "fin": "Gn 9:29",
+   "titulo": "Noé y sus hijos después del diluvio",
+   "titulo_origen": "editorial",
+   "resumen": "Noé planta una viña y se embriaga; Cam ve su desnudez, Noé maldice a Canaán y muere a los 950 años."
+  },
+  {
+   "id": "gn-21",
+   "inicio": "Gn 10:1",
+   "fin": "Gn 10:12",
+   "titulo": "Los hijos de Jafet y de Cam",
+   "titulo_origen": "editorial",
+   "resumen": "Se enumeran los descendientes de Jafet y los de Cam por Cus, entre ellos Nimrod."
+  },
+  {
+   "id": "gn-22",
+   "inicio": "Gn 10:13",
+   "fin": "Gn 10:20",
+   "titulo": "Los descendientes de Mizraim y de Canaán",
+   "titulo_origen": "editorial",
+   "resumen": "Siguen los descendientes de Cam por Mizraim y Canaán y el territorio de los cananeos."
+  },
+  {
+   "id": "gn-23",
+   "inicio": "Gn 10:21",
+   "fin": "Gn 10:32",
+   "titulo": "Los hijos de Sem",
+   "titulo_origen": "editorial",
+   "resumen": "Se enumeran los descendientes de Sem, incluidos Heber, Péleg y los hijos de Joctán."
+  },
+  {
+   "id": "gn-24",
+   "inicio": "Gn 11:1",
+   "fin": "Gn 11:9",
+   "titulo": "La torre de Babel",
+   "titulo_origen": "editorial",
+   "resumen": "Los hombres edifican una ciudad y una torre, y Dios confunde su lengua y los esparce."
+  },
+  {
+   "id": "gn-25",
+   "inicio": "Gn 11:10",
+   "fin": "Gn 11:26",
+   "titulo": "De Sem a Taré",
+   "titulo_origen": "editorial",
+   "resumen": "Lista de generaciones de Sem hasta Taré con la edad de cada uno al engendrar y los años que vivió después."
+  },
+  {
+   "id": "gn-26",
+   "inicio": "Gn 11:27",
+   "fin": "Gn 11:32",
+   "titulo": "La familia de Taré",
+   "titulo_origen": "editorial",
+   "resumen": "Se presentan los hijos de Taré, Sarai y Milca, y Taré sale de Ur con los suyos hasta Harán, donde muere."
+  }
+ ],
+ "menciones": [
+  {
+   "ref": "Gn 2:20",
+   "persona": "Adam_1",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 2:20",
+   "persona": "Adam_1",
+   "inicio": 90,
+   "fin": 94
+  },
+  {
+   "ref": "Gn 2:25",
+   "persona": "Adam_1",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "Gn 3:20",
+   "persona": "Eve_1",
+   "inicio": 41,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 4:1",
+   "persona": "Adam_1",
+   "inicio": 10,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 4:1",
+   "persona": "Eve_1",
+   "inicio": 26,
+   "fin": 29
+  },
+  {
+   "ref": "Gn 4:1",
+   "persona": "Cain_1",
+   "inicio": 58,
+   "fin": 62
+  },
+  {
+   "ref": "Gn 4:2",
+   "persona": "Abel_1",
+   "inicio": 29,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 4:2",
+   "persona": "Abel_1",
+   "inicio": 41,
+   "fin": 45
+  },
+  {
+   "ref": "Gn 4:2",
+   "persona": "Cain_1",
+   "inicio": 66,
+   "fin": 70
+  },
+  {
+   "ref": "Gn 4:3",
+   "persona": "Cain_1",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Gn 4:4",
+   "persona": "Abel_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Gn 4:4",
+   "persona": "Abel_1",
+   "inicio": 100,
+   "fin": 104
+  },
+  {
+   "ref": "Gn 4:5",
+   "persona": "Cain_1",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 4:5",
+   "persona": "Cain_1",
+   "inicio": 60,
+   "fin": 64
+  },
+  {
+   "ref": "Gn 4:6",
+   "persona": "Cain_1",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 4:8",
+   "persona": "Cain_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 4:8",
+   "persona": "Abel_1",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "Gn 4:8",
+   "persona": "Cain_1",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "Gn 4:8",
+   "persona": "Abel_1",
+   "inicio": 109,
+   "fin": 113
+  },
+  {
+   "ref": "Gn 4:9",
+   "persona": "Cain_1",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Gn 4:9",
+   "persona": "Abel_1",
+   "inicio": 34,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 4:13",
+   "persona": "Cain_1",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 4:15",
+   "persona": "Cain_1",
+   "inicio": 57,
+   "fin": 61
+  },
+  {
+   "ref": "Gn 4:15",
+   "persona": "Cain_1",
+   "inicio": 121,
+   "fin": 125
+  },
+  {
+   "ref": "Gn 4:16",
+   "persona": "Cain_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 4:17",
+   "persona": "Cain_1",
+   "inicio": 10,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 4:17",
+   "persona": "Enoch_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Gn 4:17",
+   "persona": "Enoch_1",
+   "inicio": 138,
+   "fin": 144
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Enoch_1",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Irad_1",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Irad_1",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Mehujael_1",
+   "inicio": 41,
+   "fin": 49
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Mehujael_1",
+   "inicio": 53,
+   "fin": 61
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Methushael_1",
+   "inicio": 73,
+   "fin": 82
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Methushael_1",
+   "inicio": 86,
+   "fin": 95
+  },
+  {
+   "ref": "Gn 4:18",
+   "persona": "Lamech_1",
+   "inicio": 107,
+   "fin": 113
+  },
+  {
+   "ref": "Gn 4:19",
+   "persona": "Lamech_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 4:19",
+   "persona": "Adah_1",
+   "inicio": 59,
+   "fin": 62
+  },
+  {
+   "ref": "Gn 4:19",
+   "persona": "Zillah_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "Gn 4:20",
+   "persona": "Adah_1",
+   "inicio": 2,
+   "fin": 5
+  },
+  {
+   "ref": "Gn 4:20",
+   "persona": "Jabal_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Gn 4:21",
+   "persona": "Jubal_1",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Gn 4:22",
+   "persona": "Zillah_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Gn 4:22",
+   "persona": "Tubal-cain_1",
+   "inicio": 24,
+   "fin": 34
+  },
+  {
+   "ref": "Gn 4:22",
+   "persona": "Tubal-cain_1",
+   "inicio": 98,
+   "fin": 108
+  },
+  {
+   "ref": "Gn 4:22",
+   "persona": "Naamah_1",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "Gn 4:23",
+   "persona": "Lamech_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 4:23",
+   "persona": "Adah_1",
+   "inicio": 29,
+   "fin": 32
+  },
+  {
+   "ref": "Gn 4:23",
+   "persona": "Zillah_1",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Gn 4:23",
+   "persona": "Lamech_1",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Gn 4:24",
+   "persona": "Cain_1",
+   "inicio": 28,
+   "fin": 32
+  },
+  {
+   "ref": "Gn 4:24",
+   "persona": "Lamech_1",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Gn 4:25",
+   "persona": "Adam_1",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "Gn 4:25",
+   "persona": "Seth_1",
+   "inicio": 77,
+   "fin": 81
+  },
+  {
+   "ref": "Gn 4:25",
+   "persona": "Abel_1",
+   "inicio": 152,
+   "fin": 156
+  },
+  {
+   "ref": "Gn 4:25",
+   "persona": "Cain_1",
+   "inicio": 171,
+   "fin": 175
+  },
+  {
+   "ref": "Gn 4:26",
+   "persona": "Seth_1",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "Gn 4:26",
+   "persona": "Enosh_1",
+   "inicio": 53,
+   "fin": 57
+  },
+  {
+   "ref": "Gn 5:1",
+   "persona": "Adam_1",
+   "inicio": 40,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 5:3",
+   "persona": "Adam_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 5:3",
+   "persona": "Seth_1",
+   "inicio": 113,
+   "fin": 117
+  },
+  {
+   "ref": "Gn 5:4",
+   "persona": "Adam_1",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Gn 5:4",
+   "persona": "Seth_1",
+   "inicio": 50,
+   "fin": 54
+  },
+  {
+   "ref": "Gn 5:5",
+   "persona": "Adam_1",
+   "inicio": 34,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 5:6",
+   "persona": "Seth_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 5:6",
+   "persona": "Enosh_1",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 5:7",
+   "persona": "Seth_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 5:7",
+   "persona": "Enosh_1",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Gn 5:8",
+   "persona": "Seth_1",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Gn 5:9",
+   "persona": "Enosh_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 5:9",
+   "persona": "Kenan_1",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Gn 5:10",
+   "persona": "Enosh_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 5:10",
+   "persona": "Kenan_1",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 5:11",
+   "persona": "Enosh_1",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Gn 5:12",
+   "persona": "Kenan_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 5:12",
+   "persona": "Mahalalel_1",
+   "inicio": 42,
+   "fin": 52
+  },
+  {
+   "ref": "Gn 5:13",
+   "persona": "Kenan_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 5:13",
+   "persona": "Mahalalel_1",
+   "inicio": 39,
+   "fin": 49
+  },
+  {
+   "ref": "Gn 5:14",
+   "persona": "Kenan_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 5:15",
+   "persona": "Mahalalel_1",
+   "inicio": 8,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 5:15",
+   "persona": "Jared_1",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "Gn 5:16",
+   "persona": "Mahalalel_1",
+   "inicio": 8,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 5:16",
+   "persona": "Jared_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Gn 5:17",
+   "persona": "Mahalalel_1",
+   "inicio": 27,
+   "fin": 37
+  },
+  {
+   "ref": "Gn 5:18",
+   "persona": "Jared_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 5:18",
+   "persona": "Enoch_2",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Gn 5:19",
+   "persona": "Jared_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 5:19",
+   "persona": "Enoch_2",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 5:20",
+   "persona": "Jared_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Gn 5:21",
+   "persona": "Enoch_2",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 5:21",
+   "persona": "Methuselah_1",
+   "inicio": 50,
+   "fin": 60
+  },
+  {
+   "ref": "Gn 5:22",
+   "persona": "Enoch_2",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Gn 5:22",
+   "persona": "Methuselah_1",
+   "inicio": 49,
+   "fin": 59
+  },
+  {
+   "ref": "Gn 5:23",
+   "persona": "Enoch_2",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 5:24",
+   "persona": "Enoch_2",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Gn 5:25",
+   "persona": "Methuselah_1",
+   "inicio": 8,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 5:25",
+   "persona": "Lamech_2",
+   "inicio": 61,
+   "fin": 67
+  },
+  {
+   "ref": "Gn 5:26",
+   "persona": "Methuselah_1",
+   "inicio": 8,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 5:26",
+   "persona": "Lamech_2",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Gn 5:27",
+   "persona": "Methuselah_1",
+   "inicio": 32,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 5:28",
+   "persona": "Lamech_2",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 5:29",
+   "persona": "Noah_1",
+   "inicio": 18,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 5:30",
+   "persona": "Lamech_2",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 5:30",
+   "persona": "Noah_1",
+   "inicio": 39,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 5:31",
+   "persona": "Lamech_2",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 5:32",
+   "persona": "Noah_1",
+   "inicio": 9,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 5:32",
+   "persona": "Shem_1",
+   "inicio": 44,
+   "fin": 47
+  },
+  {
+   "ref": "Gn 5:32",
+   "persona": "Ham_1",
+   "inicio": 49,
+   "fin": 53
+  },
+  {
+   "ref": "Gn 5:32",
+   "persona": "Japheth_1",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Gn 6:8",
+   "persona": "Noah_1",
+   "inicio": 7,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 6:9",
+   "persona": "Noah_1",
+   "inicio": 30,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 6:9",
+   "persona": "Noah_1",
+   "inicio": 35,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 6:9",
+   "persona": "Noah_1",
+   "inicio": 103,
+   "fin": 106
+  },
+  {
+   "ref": "Gn 6:10",
+   "persona": "Noah_1",
+   "inicio": 11,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 6:10",
+   "persona": "Shem_1",
+   "inicio": 29,
+   "fin": 32
+  },
+  {
+   "ref": "Gn 6:10",
+   "persona": "Ham_1",
+   "inicio": 36,
+   "fin": 40
+  },
+  {
+   "ref": "Gn 6:10",
+   "persona": "Japheth_1",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Gn 6:13",
+   "persona": "Noah_1",
+   "inicio": 14,
+   "fin": 17
+  },
+  {
+   "ref": "Gn 6:22",
+   "persona": "Noah_1",
+   "inicio": 13,
+   "fin": 16
+  },
+  {
+   "ref": "Gn 7:1",
+   "persona": "Noah_1",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "Gn 7:5",
+   "persona": "Noah_1",
+   "inicio": 7,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 7:6",
+   "persona": "Noah_1",
+   "inicio": 9,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 7:7",
+   "persona": "Noah_1",
+   "inicio": 7,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 7:9",
+   "persona": "Noah_1",
+   "inicio": 25,
+   "fin": 28
+  },
+  {
+   "ref": "Gn 7:9",
+   "persona": "Noah_1",
+   "inicio": 75,
+   "fin": 78
+  },
+  {
+   "ref": "Gn 7:11",
+   "persona": "Noah_1",
+   "inicio": 33,
+   "fin": 36
+  },
+  {
+   "ref": "Gn 7:13",
+   "persona": "Noah_1",
+   "inicio": 24,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 7:13",
+   "persona": "Shem_1",
+   "inicio": 31,
+   "fin": 34
+  },
+  {
+   "ref": "Gn 7:13",
+   "persona": "Ham_1",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Gn 7:13",
+   "persona": "Japheth_1",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Gn 7:13",
+   "persona": "Noah_1",
+   "inicio": 61,
+   "fin": 64
+  },
+  {
+   "ref": "Gn 7:13",
+   "persona": "Noah_1",
+   "inicio": 78,
+   "fin": 81
+  },
+  {
+   "ref": "Gn 7:15",
+   "persona": "Noah_1",
+   "inicio": 13,
+   "fin": 16
+  },
+  {
+   "ref": "Gn 7:23",
+   "persona": "Noah_1",
+   "inicio": 189,
+   "fin": 192
+  },
+  {
+   "ref": "Gn 8:1",
+   "persona": "Noah_1",
+   "inicio": 19,
+   "fin": 22
+  },
+  {
+   "ref": "Gn 8:6",
+   "persona": "Noah_1",
+   "inicio": 47,
+   "fin": 50
+  },
+  {
+   "ref": "Gn 8:11",
+   "persona": "Noah_1",
+   "inicio": 117,
+   "fin": 120
+  },
+  {
+   "ref": "Gn 8:13",
+   "persona": "Noah_1",
+   "inicio": 46,
+   "fin": 49
+  },
+  {
+   "ref": "Gn 8:13",
+   "persona": "Noah_1",
+   "inicio": 142,
+   "fin": 145
+  },
+  {
+   "ref": "Gn 8:15",
+   "persona": "Noah_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 8:18",
+   "persona": "Noah_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 8:20",
+   "persona": "Noah_1",
+   "inicio": 10,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 9:1",
+   "persona": "Noah_1",
+   "inicio": 17,
+   "fin": 20
+  },
+  {
+   "ref": "Gn 9:8",
+   "persona": "Noah_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 9:17",
+   "persona": "Noah_1",
+   "inicio": 19,
+   "fin": 22
+  },
+  {
+   "ref": "Gn 9:18",
+   "persona": "Noah_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 9:18",
+   "persona": "Shem_1",
+   "inicio": 48,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 9:18",
+   "persona": "Ham_1",
+   "inicio": 53,
+   "fin": 57
+  },
+  {
+   "ref": "Gn 9:18",
+   "persona": "Japheth_1",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Gn 9:18",
+   "persona": "Ham_1",
+   "inicio": 70,
+   "fin": 74
+  },
+  {
+   "ref": "Gn 9:18",
+   "persona": "Canaan_1",
+   "inicio": 90,
+   "fin": 96
+  },
+  {
+   "ref": "Gn 9:19",
+   "persona": "Noah_1",
+   "inicio": 28,
+   "fin": 31
+  },
+  {
+   "ref": "Gn 9:20",
+   "persona": "Noah_1",
+   "inicio": 10,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 9:22",
+   "persona": "Ham_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Gn 9:22",
+   "persona": "Canaan_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Gn 9:23",
+   "persona": "Shem_1",
+   "inicio": 9,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 9:23",
+   "persona": "Japheth_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 9:24",
+   "persona": "Noah_1",
+   "inicio": 11,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 9:25",
+   "persona": "Canaan_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Gn 9:26",
+   "persona": "Canaan_1",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Gn 9:27",
+   "persona": "Japheth_1",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Gn 9:27",
+   "persona": "Shem_1",
+   "inicio": 54,
+   "fin": 57
+  },
+  {
+   "ref": "Gn 9:27",
+   "persona": "Canaan_1",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Gn 9:28",
+   "persona": "Noah_1",
+   "inicio": 8,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 9:29",
+   "persona": "Noah_1",
+   "inicio": 27,
+   "fin": 30
+  },
+  {
+   "ref": "Gn 10:1",
+   "persona": "Noah_1",
+   "inicio": 43,
+   "fin": 46
+  },
+  {
+   "ref": "Gn 10:1",
+   "persona": "Shem_1",
+   "inicio": 48,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 10:1",
+   "persona": "Ham_1",
+   "inicio": 53,
+   "fin": 57
+  },
+  {
+   "ref": "Gn 10:1",
+   "persona": "Japheth_1",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Japheth_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Gomer_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Magog_1",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Madai_1",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Javan_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Tubal_1",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Meshech_1",
+   "inicio": 66,
+   "fin": 73
+  },
+  {
+   "ref": "Gn 10:2",
+   "persona": "Tiras_1",
+   "inicio": 77,
+   "fin": 82
+  },
+  {
+   "ref": "Gn 10:3",
+   "persona": "Gomer_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Gn 10:3",
+   "persona": "Ashkenaz_1",
+   "inicio": 22,
+   "fin": 30
+  },
+  {
+   "ref": "Gn 10:3",
+   "persona": "Riphath_1",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Gn 10:3",
+   "persona": "Togarmah_1",
+   "inicio": 44,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 10:4",
+   "persona": "Javan_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Gn 10:4",
+   "persona": "Elishah_1",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 10:4",
+   "persona": "Tarshish_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "Gn 10:4",
+   "persona": "Kittim_1",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Gn 10:4",
+   "persona": "Dodanim_1",
+   "inicio": 49,
+   "fin": 56
+  },
+  {
+   "ref": "Gn 10:6",
+   "persona": "Ham_1",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "Gn 10:6",
+   "persona": "Cush_1",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "Gn 10:6",
+   "persona": "Mizraim_1",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "Gn 10:6",
+   "persona": "Put_1",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 10:6",
+   "persona": "Canaan_1",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Cush_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Seba_1",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Havilah_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Sabtah_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Raamah_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Sabteca_1",
+   "inicio": 55,
+   "fin": 63
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Raamah_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Sheba_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "Gn 10:7",
+   "persona": "Dedan_1",
+   "inicio": 95,
+   "fin": 100
+  },
+  {
+   "ref": "Gn 10:8",
+   "persona": "Cush_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Gn 10:8",
+   "persona": "Nimrod_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Gn 10:9",
+   "persona": "Nimrod_1",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "Gn 10:13",
+   "persona": "Mizraim_1",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Gn 10:13",
+   "persona": "Lud_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Gn 10:13",
+   "persona": "Anam_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 10:13",
+   "persona": "Lehab_1",
+   "inicio": 44,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 10:13",
+   "persona": "Naphtuh_1",
+   "inicio": 57,
+   "fin": 66
+  },
+  {
+   "ref": "Gn 10:14",
+   "persona": "Pathrus_1",
+   "inicio": 4,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 10:14",
+   "persona": "Casluh_1",
+   "inicio": 19,
+   "fin": 26
+  },
+  {
+   "ref": "Gn 10:14",
+   "persona": "Caphtor_1",
+   "inicio": 65,
+   "fin": 74
+  },
+  {
+   "ref": "Gn 10:15",
+   "persona": "Canaan_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Gn 10:15",
+   "persona": "Sidon_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Gn 10:15",
+   "persona": "Heth_1",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 10:16",
+   "persona": "Jebus_1",
+   "inicio": 5,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 10:16",
+   "persona": "Amor_1",
+   "inicio": 19,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 10:16",
+   "persona": "Girgash_1",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 10:17",
+   "persona": "Hivi_1",
+   "inicio": 5,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 10:17",
+   "persona": "Ark_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Gn 10:17",
+   "persona": "Sini_1",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Gn 10:18",
+   "persona": "Arvad_1",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 10:18",
+   "persona": "Zemar_1",
+   "inicio": 18,
+   "fin": 25
+  },
+  {
+   "ref": "Gn 10:18",
+   "persona": "Hamath_1",
+   "inicio": 32,
+   "fin": 39
+  },
+  {
+   "ref": "Gn 10:20",
+   "persona": "Ham_1",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 10:21",
+   "persona": "Shem_1",
+   "inicio": 28,
+   "fin": 31
+  },
+  {
+   "ref": "Gn 10:21",
+   "persona": "Eber_1",
+   "inicio": 61,
+   "fin": 66
+  },
+  {
+   "ref": "Gn 10:21",
+   "persona": "Japheth_1",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "Gn 10:22",
+   "persona": "Shem_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Gn 10:22",
+   "persona": "Elam_1",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Gn 10:22",
+   "persona": "Asshur_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 10:22",
+   "persona": "Arpachshad_1",
+   "inicio": 37,
+   "fin": 45
+  },
+  {
+   "ref": "Gn 10:22",
+   "persona": "Lud_2",
+   "inicio": 49,
+   "fin": 52
+  },
+  {
+   "ref": "Gn 10:22",
+   "persona": "Aram_1",
+   "inicio": 56,
+   "fin": 60
+  },
+  {
+   "ref": "Gn 10:23",
+   "persona": "Aram_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Gn 10:23",
+   "persona": "Uz_1",
+   "inicio": 21,
+   "fin": 23
+  },
+  {
+   "ref": "Gn 10:23",
+   "persona": "Hul_1",
+   "inicio": 27,
+   "fin": 30
+  },
+  {
+   "ref": "Gn 10:23",
+   "persona": "Gether_1",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Gn 10:23",
+   "persona": "Mash_1",
+   "inicio": 44,
+   "fin": 47
+  },
+  {
+   "ref": "Gn 10:24",
+   "persona": "Arpachshad_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 10:24",
+   "persona": "Shelah_1",
+   "inicio": 22,
+   "fin": 26
+  },
+  {
+   "ref": "Gn 10:24",
+   "persona": "Shelah_1",
+   "inicio": 30,
+   "fin": 34
+  },
+  {
+   "ref": "Gn 10:24",
+   "persona": "Eber_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 10:25",
+   "persona": "Eber_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Gn 10:25",
+   "persona": "Peleg_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Gn 10:25",
+   "persona": "Joktan_1",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "Gn 10:26",
+   "persona": "Joktan_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Gn 10:26",
+   "persona": "Almodad_1",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "Gn 10:26",
+   "persona": "Sheleph_1",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "Gn 10:26",
+   "persona": "Hazarmaveth_1",
+   "inicio": 44,
+   "fin": 55
+  },
+  {
+   "ref": "Gn 10:26",
+   "persona": "Jerah_1",
+   "inicio": 61,
+   "fin": 65
+  },
+  {
+   "ref": "Gn 10:27",
+   "persona": "Hadoram_1",
+   "inicio": 4,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 10:27",
+   "persona": "Uzal_1",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 10:27",
+   "persona": "Diklah_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Gn 10:28",
+   "persona": "Obal_1",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "Gn 10:28",
+   "persona": "Abimael_1",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 10:28",
+   "persona": "Sheba_2",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Gn 10:29",
+   "persona": "Ophir_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Gn 10:29",
+   "persona": "Havilah_2",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Gn 10:29",
+   "persona": "Jobab_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Gn 10:29",
+   "persona": "Joktan_1",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Gn 10:31",
+   "persona": "Shem_1",
+   "inicio": 26,
+   "fin": 29
+  },
+  {
+   "ref": "Gn 10:32",
+   "persona": "Noah_1",
+   "inicio": 26,
+   "fin": 29
+  },
+  {
+   "ref": "Gn 11:10",
+   "persona": "Shem_1",
+   "inicio": 30,
+   "fin": 33
+  },
+  {
+   "ref": "Gn 11:10",
+   "persona": "Shem_1",
+   "inicio": 35,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 11:10",
+   "persona": "Arpachshad_1",
+   "inicio": 73,
+   "fin": 81
+  },
+  {
+   "ref": "Gn 11:11",
+   "persona": "Shem_1",
+   "inicio": 8,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 11:11",
+   "persona": "Arpachshad_1",
+   "inicio": 36,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 11:12",
+   "persona": "Arpachshad_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Gn 11:12",
+   "persona": "Shelah_1",
+   "inicio": 52,
+   "fin": 56
+  },
+  {
+   "ref": "Gn 11:13",
+   "persona": "Arpachshad_1",
+   "inicio": 8,
+   "fin": 16
+  },
+  {
+   "ref": "Gn 11:13",
+   "persona": "Shelah_1",
+   "inicio": 41,
+   "fin": 45
+  },
+  {
+   "ref": "Gn 11:14",
+   "persona": "Shelah_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 11:14",
+   "persona": "Eber_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Gn 11:15",
+   "persona": "Shelah_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 11:15",
+   "persona": "Eber_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 11:16",
+   "persona": "Eber_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:16",
+   "persona": "Peleg_1",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Gn 11:17",
+   "persona": "Eber_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:17",
+   "persona": "Peleg_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Gn 11:18",
+   "persona": "Peleg_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:18",
+   "persona": "Reu_1",
+   "inicio": 41,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 11:19",
+   "persona": "Peleg_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:19",
+   "persona": "Reu_1",
+   "inicio": 38,
+   "fin": 41
+  },
+  {
+   "ref": "Gn 11:20",
+   "persona": "Reu_1",
+   "inicio": 2,
+   "fin": 5
+  },
+  {
+   "ref": "Gn 11:20",
+   "persona": "Serug_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Gn 11:21",
+   "persona": "Reu_1",
+   "inicio": 8,
+   "fin": 11
+  },
+  {
+   "ref": "Gn 11:21",
+   "persona": "Serug_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Gn 11:22",
+   "persona": "Serug_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:22",
+   "persona": "Nahor_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Gn 11:23",
+   "persona": "Serug_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:23",
+   "persona": "Nahor_1",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 11:24",
+   "persona": "Nahor_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 11:24",
+   "persona": "Terah_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 11:25",
+   "persona": "Nahor_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Gn 11:25",
+   "persona": "Terah_1",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Gn 11:26",
+   "persona": "Terah_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:26",
+   "persona": "Abram_1",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "Gn 11:26",
+   "persona": "Nahor_2",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Gn 11:26",
+   "persona": "Haran_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Terah_1",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Terah_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Abram_1",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Nahor_2",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Haran_1",
+   "inicio": 77,
+   "fin": 82
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Haran_1",
+   "inicio": 86,
+   "fin": 91
+  },
+  {
+   "ref": "Gn 11:27",
+   "persona": "Lot_1",
+   "inicio": 103,
+   "fin": 106
+  },
+  {
+   "ref": "Gn 11:28",
+   "persona": "Haran_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Gn 11:28",
+   "persona": "Terah_1",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Abram_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Nahor_2",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Abram_1",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Sarai_1",
+   "inicio": 77,
+   "fin": 82
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Nahor_2",
+   "inicio": 111,
+   "fin": 117
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Milcah_1",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Haran_1",
+   "inicio": 134,
+   "fin": 139
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Milcah_1",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "Gn 11:29",
+   "persona": "Iscah_1",
+   "inicio": 161,
+   "fin": 165
+  },
+  {
+   "ref": "Gn 11:30",
+   "persona": "Sarai_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Gn 11:31",
+   "persona": "Terah_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Gn 11:31",
+   "persona": "Abram_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Gn 11:31",
+   "persona": "Lot_1",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Gn 11:31",
+   "persona": "Haran_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Gn 11:31",
+   "persona": "Sarai_1",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Gn 11:31",
+   "persona": "Abram_1",
+   "inicio": 99,
+   "fin": 104
+  },
+  {
+   "ref": "Gn 11:32",
+   "persona": "Terah_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Gn 11:32",
+   "persona": "Terah_1",
+   "inicio": 60,
+   "fin": 65
   }
  ]
 };
