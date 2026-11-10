@@ -141,6 +141,37 @@ prueba('hijos agrupados por madre con la nota del vínculo (Jacob, Lamec)', () =
   assert.equal(n.length, 1); assert.equal(n[0].madre, null);
   assert.ok(!N.nodoArbol(D, 'Leah_1'), 'Lea no es raíz ni nodo: sus hijos cuelgan de Jacob');
 });
+prueba('uniones: una pareja por rama, con sus hijos (Adán, Jacob, Lamec, Noé)', () => {
+  const u = id => j(N.uniones(D, N.nodoArbol(D, id))).map(x => [x.pareja, !!x.vinculo, x.hijos.map(h => h.id)]);
+  // En los datos de ejemplo Eva solo es madre registrada de Caín: el resto va en rama aparte, sin madre supuesta.
+  assert.deepEqual(u('Adam_1'), [['Eve_1', true, ['Cain_1']], [null, false, ['Abel_1', 'Seth_1', 'AdamOtros_1']]]);
+  assert.equal(N.madreSupuesta(D, 'AdamOtros_1'), null);
+  assert.deepEqual(u('Jacob_1').map(x => x[0]), ['Leah_1', 'Bilhah_1', 'Zilpah_1', 'Rachel_1']);
+  assert.deepEqual(u('Lamech_1'), [['Adah_1', true, ['Jabal_1']], ['Zillah_1', true, ['TubalCain_1']], [null, false, ['Naamah_1']]]);
+  // Única esposa y ningún hijo con madre escrita: cuelgan de ella, marcada como madre SUPUESTA (inferido).
+  assert.deepEqual(u('Noah_1'), [['NoahWife_1', true, ['Shem_1']]]);
+  assert.equal(j(N.uniones(D, N.nodoArbol(D, 'Noah_1')))[0].supuesta, true);
+  assert.equal(N.madreSupuesta(D, 'Shem_1'), 'NoahWife_1'); assert.equal(N.madreSupuesta(D, 'Cain_1'), null);
+  // Madre sin matrimonio registrado: es pareja de la rama pero sin vínculo de cónyuge.
+  const Dm = { personas: [{ id: 'P', sexo: 'm' }, { id: 'M', sexo: 'f' }, { id: 'H', sexo: 'm' }, { id: 'H2', sexo: 'm' }], relaciones: [{ de: 'P', a: 'H', tipo: 'padre', ref: 'Gn 1:1' }, { de: 'M', a: 'H', tipo: 'madre', ref: 'Gn 1:1' }] };
+  assert.deepEqual(j(N.uniones(Dm, N.nodoArbol(Dm, 'P'))).map(x => [x.pareja, x.vinculo, x.hijos.map(h => h.id)]), [['M', null, ['H']]]);
+  // Si esa madre (sin matrimonio, o madre solo de uno) no es madre de los demás, los demás no se le atribuyen (Simeón y la cananea).
+  const Dm2 = Object.assign({}, Dm, { relaciones: Dm.relaciones.concat([{ de: 'P', a: 'H2', tipo: 'padre', ref: 'Gn 1:2' }]) });
+  assert.deepEqual(j(N.uniones(Dm2, N.nodoArbol(Dm2, 'P'))).map(x => [x.pareja, x.hijos.map(h => h.id)]), [['M', ['H']], [null, ['H2']]]);
+  assert.deepEqual(j(N.uniones(Dm, { hijos: [], conyuges: [] })), []);
+});
+prueba('vida: años vividos (texto o cálculo) y años desde Adán (cálculo)', () => {
+  const v = j(N.vida(D, 'Adam_1', 'TM', N.combinacion(D, 'TM', {})));
+  assert.deepEqual([v.total.valor, v.total.certeza, v.total.derivado, v.nacimiento, v.muerte], [930, 'texto', false, 0, 930]);
+  const s = j(N.vida(D, 'Seth_1', 'LXX', null));
+  assert.deepEqual([s.total.valor, s.total.derivado, s.nacimiento], [912, true, null]);
+  assert.equal(j(N.vida(D, 'Eve_1', 'TM', null)).total, null);
+  // La madre que figura en el evento de nacimiento de su hijo no "nace" ese año.
+  const Dn = { personas: [{ id: 'S', sexo: 'f' }, { id: 'I', sexo: 'm' }], relaciones: [{ de: 'S', a: 'I', tipo: 'madre', ref: 'Gn 21:2' }],
+    cronologia: { eventos: [{ id: 'ns', tipo: 'nacimiento', personas: ['S'], anios: { c: 10 } }, { id: 'ni', tipo: 'nacimiento', personas: ['I', 'S'], anios: { c: 100 } }] } };
+  assert.equal(N.vidasCrono(Dn, 'c').get('S').nacimiento, 10);
+  assert.equal(N.vidasCrono(Dn, 'c').get('I').nacimiento, 100);
+});
 prueba('edades en_evento por ref y por persona; no entran en la tabla', () => {
   const e = j(N.edadesEnEvento(D, ['Gn 12:4']));
   assert.equal(e.length, 1);

@@ -218,6 +218,32 @@ const Nucleo = (() => {
     if (sin.length) grupos.push({ madre: null, vinculo: null, hijos: sin });
     return grupos;
   }
+  // Parejas de un nodo, cada una con sus hijos: [{pareja, vinculo (relación cónyuge o null si el texto no registra
+  // matrimonio), hijos}]. Primero las parejas con hijos (orden del primer hijo), luego las cónyuges sin hijos; los hijos
+  // sin madre indicada van en un grupo {pareja: null}. Excepción: si hay una sola esposa (cónyuge) y ningún hijo tiene
+  // madre escrita (Noé, Sem…), cuelgan de ella con `supuesta: true`: es INFERIDO que sea la madre, no lo dice el texto.
+  function uniones(d, n) {
+    const I = indice(d), hs = (n && n.hijos) || [], cony = (n && n.conyuges) || [];
+    const madreDe = h => { const m = (I.padres.get(h.id) || []).find(x => x.tipo === 'madre' && x.de !== n.id); return m ? m.de : null; };
+    const out = [], de = id => { let u = out.find(x => x.pareja === id); if (!u) { u = { pareja: id, vinculo: cony.find(c => c.otro === id) || null, hijos: [] }; out.push(u); } return u; };
+    const sin = [];
+    hs.forEach(h => { const m = madreDe(h); if (m) de(m).hijos.push(h); else sin.push(h); });
+    cony.forEach(c => de(c.otro));
+    if (out.length === 1 && out[0].vinculo && !out[0].hijos.length && sin.length) Object.assign(out[0], { hijos: sin, supuesta: true });
+    else if (sin.length) out.push({ pareja: null, vinculo: null, hijos: sin });
+    return out;
+  }
+  // Madre supuesta de un hijo (única esposa de su padre, el texto no la nombra como madre) o null.
+  function madreSupuesta(d, id) {
+    const x = mapaArbol(d).nodos.get(id), p = x && x.padre !== null && x.padre !== undefined ? nodoArbol(d, x.padre) : null;
+    const u = p && uniones(d, p).find(u => u.supuesta && u.hijos.some(h => h.id === id));
+    return u ? u.pareja : null;
+  }
+  // Años vividos (edad total: texto o cálculo) y nacimiento/muerte en años desde Adán (siempre cálculo) para una tradición.
+  function vida(d, id, trad, combo) {
+    const total = edad(d, id, 'total', trad), x = combo ? vidasCrono(d, combo).get(id) : null;
+    return { total, nacimiento: x ? x.nacimiento : null, muerte: x ? x.muerte : null, evNac: x ? x.evNac : null, evMuerte: x ? x.evMuerte : null };
+  }
 
   function rutas(d, desde, hasta, limite) {
     limite = limite || 500;
@@ -667,11 +693,14 @@ const Nucleo = (() => {
   // Nacimiento y muerte (años desde Adán) por persona en una combinación.
   function vidasCrono(d, combo) {
     return memo(d || {}, 'vidasC|' + combo, () => {
-      const C = crono(d), m = new Map();
+      const C = crono(d), m = new Map(), I = indice(d);
+      // En un nacimiento también figuran los padres (Sara en "Nace Isaac"): no nacen ese año.
+      const esProgenitor = (id, ps) => (I.hijos.get(id) || []).some(r => r.a !== id && ps.includes(r.a));
       if (C) C.eventos.forEach(e => {
         if (e.tipo !== 'nacimiento' && e.tipo !== 'muerte') return;
-        const a = anioEvento(d, e.id, combo);
-        (e.personas || []).forEach(id => {
+        const a = anioEvento(d, e.id, combo), ps = e.personas || [];
+        ps.forEach(id => {
+          if (e.tipo === 'nacimiento' && esProgenitor(id, ps)) return;
           if (!m.has(id)) m.set(id, { persona: id, nacimiento: null, muerte: null, evNac: null, evMuerte: null });
           const x = m.get(id);
           if (e.tipo === 'nacimiento') { x.nacimiento = a; x.evNac = e.id; } else { x.muerte = a; x.evMuerte = e.id; }
@@ -760,7 +789,7 @@ const Nucleo = (() => {
     acompanante, tieneApoyo, quienAparece, primerasApariciones, miniArbol, anoDiluvio, seccionesPlan, alcance, nombresDe,
     lugar, lugaresDeRefs, lugaresDePasaje, confianzaLugar, proyeccion, proyectar, desproyectar, encuadre, colocarEtiquetas, etiquetasPorZoom, prioridadLugar,
     indice, persona, hijosDe, encontrar, idAdan, idAbraham, idJacob,
-    construirArbol, construirBosque, sinParentesco, enPantallaArbol, mapaArbol, nodoArbol, rutaArbol, arbolInicial, hijosPorMadre, atajosLinea, lineaPrincipal,
+    construirArbol, construirBosque, sinParentesco, enPantallaArbol, mapaArbol, nodoArbol, rutaArbol, arbolInicial, hijosPorMadre, uniones, madreSupuesta, vida, atajosLinea, lineaPrincipal,
     alcanzables, contarMujeres, sinNombre, rutas, tradicionesDe, presenteEn, lineaPorTradicion, fusionarOrden,
     lineaAdanAbraham, edad, diferencias, anosDesdeAdan, ordenPatriarcas, vidas, edadesEnEvento, edadesEnEventoPorPersona, personasEnCapitulo, buscar };
 })();
@@ -782,11 +811,13 @@ if (typeof document !== 'undefined') (function () {
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
   const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, focoHash: undefined, aviso: '',
-    mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map() };
+    mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map(),
+    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1 };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   const refHTML = ref => { const r = N.parseRef(ref); return r ? `<a class="ref" href="#leer/${r.cap}${r.v ? '/' + r.v : ''}">${esc(ref)}</a>` : esc(ref); };
-  const insignia = (cert, ref) => { const k = N.claseCerteza(cert); return `<span class="insignia ${k}" title="${CERT_DESC[k]}">${CERT_TXT[k]}${ref ? ' · ' + refHTML(ref) : ''}</span>`; };
+  // pre: a quién se refiere (padre, madre…), escrito dentro de la insignia; quien: solo en el título.
+  const insignia = (cert, ref, pre, quien) => { const k = N.claseCerteza(cert); return `<span class="insignia ${k}" title="${quien || pre ? esc(quien || pre[0].toUpperCase() + pre.slice(1)) + ': ' : ''}${CERT_DESC[k]}">${pre ? `<span class="ins-pre">${esc(pre)}</span>` : ''}${CERT_TXT[k]}${ref ? ' · ' + refHTML(ref) : ''}</span>`; };
   const btnPersona = id => {
     const p = N.persona(D, id) || {};
     const cls = (p.sexo === 'f' ? ' mujer' : p.sexo === 'm' ? ' hombre' : ' indef') + (p.sin_nombre ? ' sin-nombre' : '');
@@ -1002,9 +1033,15 @@ if (typeof document !== 'undefined') (function () {
     if (h !== estado.focoHash) { estado.focoHash = h; estado.foco = null; estado.aviso = ''; if (h) { estado.lineaSolo = false; if (!abrirHasta(h) && N.sinParentesco(D).includes(h)) { estado.sinParAbierta = true; estado.foco = h; estado.aviso = `${nombre(h)} no tiene parentesco registrado en el texto: está en la lista del final.`; } } }
     const atajos = N.atajosLinea(D);
     const lp = atajos.length ? [atajos[0].desde].concat(atajos.map(a => a.hasta)).map(nombre).join(' → ') : '';
+    const g = estado.vistaArbol === 'grafico';
     return `<h1 tabindex="-1">Árbol genealógico</h1>
-      <p class="sub">Cada vínculo indica si <span class="insignia texto">Texto</span> lo dice explícitamente o es <span class="insignia inferido">Inferido</span>, con su versículo.</p>
-      <p class="leyenda-arbol meta"><span class="ley hombre">Hombre</span><span class="ley mujer">Mujer</span><span class="ley sin-nombre">Sin nombre en el texto</span>${lp ? `<span class="ley linea">Línea principal (${esc(lp)})</span>` : ''}</p>
+      <p class="sub">Cada vínculo indica si <span class="insignia texto">Texto</span> lo dice explícitamente o es <span class="insignia inferido">Inferido</span>, con su versículo. Los años son <span class="insignia texto">Texto</span> si el versículo da la edad total y <span class="insignia calculo">Cálculo</span> si sale de sumar cifras; «año 0 → 930» cuenta desde la creación de Adán y siempre es cálculo.</p>
+      <p class="leyenda-arbol meta"><span class="ley hombre">Hombre</span><span class="ley mujer">Mujer</span><span class="ley sin-nombre">Sin nombre en el texto</span><span class="ley-txt"><b>⚭</b> matrimonio</span><span class="ley-txt"><b>+</b> madre de sus hijos sin matrimonio registrado</span>${lp ? `<span class="ley linea">Línea principal (${esc(lp)})</span>` : ''}</p>
+      <div class="herr herr-arbol">
+        <fieldset class="segmentos"><legend>Vista</legend>${[['lista', 'Lista'], ['grafico', 'Árbol']].map(([v, t]) => `<label><input type="radio" name="vista-arbol" value="${v}" ${estado.vistaArbol === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
+        ${segTrad()}
+        ${g ? `<div class="ga-zoom" role="group" aria-label="Tamaño del árbol"><button type="button" class="boton secundario" data-zoom="-1" aria-label="Alejar">−</button><span class="meta" id="ga-zoom-txt">${Math.round(estado.gaZoom * 100)} %</span><button type="button" class="boton secundario" data-zoom="1" aria-label="Acercar">+</button></div>` : ''}
+      </div>
       <div class="herr">
         <div class="campo"><label for="buscar">Buscar persona</label><input id="buscar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.q)}"></div>
       </div>
@@ -1038,29 +1075,62 @@ if (typeof document !== 'undefined') (function () {
     estado.lineaSolo = false; estado.focoHash = id;
     try { history.replaceState(null, '', `#arbol/${encodeURIComponent(id)}`); } catch (e) { /* file:// */ }
     rerender();
-    const f = main.querySelector('.fila.foco');
-    if (f) { f.scrollIntoView({ block: 'center' }); const b = f.querySelector('.persona-btn'); if (b) b.focus({ preventScroll: true }); }
+    const f = main.querySelector('.fila.foco, .ga-fam.foco');
+    if (f) { f.scrollIntoView({ block: 'center', inline: 'center' }); const b = f.querySelector('.persona-btn'); if (b) b.focus({ preventScroll: true }); }
   }
-  // Una fila. opc: {agrupado (los hijos van bajo "Madre: …", así que no se repite), solo (vista de línea: sin plegar), gen}
+  // Vínculo con los padres: una sola insignia si padre y madre comparten certeza y versículo; si no, una por cada uno.
+  const SUPUESTA = 'Madre supuesta: es la única esposa registrada de su padre, pero el texto no dice que sea su madre';
+  function vinculosHTML(n) {
+    const v = n.vinculos || [], m = n.madres || [], k = r => N.claseCerteza(r.certeza) + '|' + r.ref;
+    if (!m.length) return v.map(r => insignia(r.certeza, r.ref, r.tipo)).join('') + (N.madreSupuesta(D, n.id) ? insignia('inferido', '', 'madre', SUPUESTA) : '');
+    if (v.length && v.concat(m).every(r => k(r) === k(v[0]))) return insignia(v[0].certeza, v[0].ref, 'padres', 'Padre y madre');
+    return v.map(r => insignia(r.certeza, r.ref, r.tipo)).join('') + m.map(r => insignia(r.certeza, r.ref, 'madre')).join('');
+  }
+  // Años vividos (verde si lo dice el texto, violeta si es cálculo) y de qué año a qué año desde Adán (siempre cálculo).
+  // En "Comparar" se muestran TM y LXX solo si difieren.
+  function vidaHTML(id) {
+    const C = N.crono(D), ts = trads();
+    let vs = ts.map(tr => ({ tr, v: N.vida(D, id, tr, C ? comboDe(tr) : null) })).filter(x => x.v.total || x.v.nacimiento !== null);
+    if (!vs.length) return '';
+    const firma = x => [x.v.total && x.v.total.valor, x.v.nacimiento, x.v.muerte].join('|');
+    if (vs.length > 1 && firma(vs[0]) === firma(vs[1])) vs = [vs[0]];
+    const pre = tr => ts.length > 1 && vs.length > 1 ? `<span class="ins-pre">${tr}</span>` : '';
+    return `<span class="vida">${vs.map(({ tr, v }) => {
+      const t = v.total, ct = t ? (t.derivado ? 'calculo' : N.claseCerteza(t.certeza)) : '';
+      const tot = t ? `<button type="button" class="insignia dato-vida ${ct}" data-edad="${esc(id)}|total|${tr}" title="Años que vivió (${tr}): ${ct === 'texto' ? 'lo dice el texto, ' + esc(t.ref) : 'cálculo a partir del texto'}" aria-label="${esc(nombre(id))} vivió ${t.valor} años (${tr}, ${CERT_TXT[ct].toLowerCase()})">${pre(tr)}${t.valor} años</button>` : '';
+      const ran = v.nacimiento !== null ? `<button type="button" class="insignia dato-vida calculo" data-ev="${esc(v.evNac)}" title="Años contados desde la creación de Adán (${tr}). Cálculo con los supuestos elegidos en Tiempo." aria-label="Nace en el año ${v.nacimiento}${v.muerte !== null ? ' y muere en el ' + v.muerte : ''} desde Adán (${tr}, cálculo)">${pre(tr)}${v.muerte !== null ? `año ${v.nacimiento} → ${v.muerte}` : `nace año ${v.nacimiento}`}</button>` : '';
+      return tot + ran;
+    }).join('')}</span>`;
+  }
+  // La otra persona de una pareja, en la misma línea: ⚭ si el texto registra el matrimonio; "+" si solo es madre de sus hijos.
+  const lazoHTML = u => u.vinculo ? '<span class="lazo" title="Cónyuges" aria-label="cónyuge:">⚭</span>' : '<span class="lazo sin-matr" title="Madre de sus hijos; el texto no registra matrimonio" aria-label="con:">+</span>';
+  const parejaHTML = u => `<span class="pareja${u.vinculo ? '' : ' sin-matr'}"><span class="par-nombre">${lazoHTML(u)}${btnPersona(u.pareja)}</span>${vidaHTML(u.pareja)}${notaVinculo(u.vinculo)}${u.vinculo ? insignia(u.vinculo.certeza, u.vinculo.ref) : ''}</span>`;
+  // Una fila: la persona y, en la misma línea, su pareja o parejas. opc: {solo (vista de línea: sin plegar), gen}
   function filaHTML(n, prof, opc) {
     opc = opc || {};
     const linea = N.lineaPrincipal(D), abierto = opc.solo || estado.abiertos.has(n.id), nh = opc.solo ? 0 : n.hijos.length;
     const gen = opc.gen !== undefined ? opc.gen : prof;
-    return `<li class="fila${linea.has(n.id) ? ' en-linea' : ''}${estado.foco === n.id ? ' foco' : ''}" data-fila="${esc(n.id)}" data-prof="${prof}"${opc.agrupado ? ' data-agrupado="1"' : ''} style="--n:${Math.min(prof, 14)}">
+    const us = N.uniones(D, n), parejas = us.filter(u => u.pareja);
+    // Con varias parejas y las ramas a la vista, cada rama lleva los datos de su pareja; aquí basta el nombre.
+    // Las que no tienen rama visible (sin hijos, fila plegada o línea sola) muestran aquí su versículo, nota y años.
+    const conRama = u => !opc.solo && abierto && us.length > 1 && u.hijos.length;
+    return `<li class="fila${linea.has(n.id) ? ' en-linea' : ''}${estado.foco === n.id ? ' foco' : ''}" data-fila="${esc(n.id)}" data-prof="${prof}" style="--n:${Math.min(prof, 10)}">
         <span class="gen" title="Generación ${gen + 1}">${gen + 1}</span>
         ${nh ? `<button type="button" class="plegar" data-plegar="${esc(n.id)}" aria-expanded="${abierto}" aria-label="${abierto ? 'Plegar' : 'Desplegar'} descendencia de ${esc(nombre(n.id))} (${nh})">${abierto ? '▾' : '▸'}</button>` : '<span class="plegar vacio" aria-hidden="true"></span>'}
-        <span class="fila-cont">${btnPersona(n.id)}${etiquetaTrad(n.id)}${n.vinculos.map(r => insignia(r.certeza, r.ref)).join('')}${nh && !abierto ? `<span class="meta">(${nh} ${nh === 1 ? 'hijo' : 'hijos'})</span>` : ''}
-        ${opc.agrupado ? '' : n.madres.map(r => `<span class="sublinea madre">madre: ${btnPersona(r.de)}${insignia(r.certeza, r.ref)}</span>`).join('')}
-        ${n.conyuges.map(r => `<span class="sublinea cony"><span aria-label="cónyuge">⚭</span> ${btnPersona(r.otro)}${notaVinculo(r)}${insignia(r.certeza, r.ref)}</span>`).join('')}</span></li>`;
+        <span class="fila-cont"><span class="pareja principal">${btnPersona(n.id)}${vidaHTML(n.id)}${etiquetaTrad(n.id)}</span>${parejas.length > 1
+          ? `<span class="parejas-varias">${parejas.map(u => conRama(u) ? `<span class="pareja"><span class="par-nombre">${lazoHTML(u)}${btnPersona(u.pareja)}</span></span>` : parejaHTML(u)).join('')}</span>` : parejas.map(parejaHTML).join('')}${(v => v ? `<span class="vinc-padres">${v}</span>` : '')(vinculosHTML(n))}${nh && !abierto ? `<span class="meta">(${nh} ${nh === 1 ? 'hijo' : 'hijos'})</span>` : ''}</span></li>`;
   }
-  const grupoHTML = (g, prof) => `<li class="grupo-madre" data-prof="${prof}" style="--n:${Math.min(prof, 14)}"><span class="grupo-txt">${g.madre
-    ? `Madre: ${btnPersona(g.madre)}${notaVinculo(g.vinculo)}` : 'Madre no indicada en los datos'} <span class="meta">(${g.hijos.length})</span></span></li>`;
-  // Filas de los hijos (y sus ramas abiertas), agrupados por madre si hace falta.
-  function hijosHTML(n, prof) {
-    const gs = N.hijosPorMadre(D, n), agrupar = gs.length > 1 || !!gs[0].madre;
-    return gs.map(g => (agrupar ? grupoHTML(g, prof + 1) : '') + g.hijos.map(h => bloqueHTML(h, prof + 1, agrupar)).join('')).join('');
+  // Con varias parejas, los hijos de cada una van en su propia rama.
+  const ramaHTML = (u, n, prof) => `<li class="grupo-madre" data-prof="${prof}" style="--n:${Math.min(prof, 10)}"><span class="grupo-txt">${u.pareja
+    ? `Hijos de ${esc(nombre(n.id))} ${u.vinculo ? 'y' : 'con'} ${btnPersona(u.pareja)}${vidaHTML(u.pareja)}${u.vinculo ? insignia(u.vinculo.certeza, u.vinculo.ref, '', 'Matrimonio') : ''}${notaVinculo(u.vinculo)}` : `Hijos de ${esc(nombre(n.id))}: madre no indicada en el texto`} <span class="meta">(${u.hijos.length})</span></span></li>`;
+  // Filas de los hijos (y sus ramas abiertas), una rama por pareja cuando hay más de una.
+  function hijosHTML(n, prof, fila) {
+    fila = fila || (h => bloqueHTML(h, prof + 1));
+    const us = N.uniones(D, n);
+    if (us.length < 2) return n.hijos.map(fila).join('');
+    return us.filter(u => u.hijos.length).map(u => ramaHTML(u, n, prof + 1) + u.hijos.map(fila).join('')).join('');
   }
-  const bloqueHTML = (n, prof, agrupado) => filaHTML(n, prof, { agrupado }) + (n.hijos.length && estado.abiertos.has(n.id) ? hijosHTML(n, prof) : '');
+  const bloqueHTML = (n, prof) => filaHTML(n, prof) + (n.hijos.length && estado.abiertos.has(n.id) ? hijosHTML(n, prof) : '');
   // Nodo para una persona de la línea aunque no sea nodo del bosque (p. ej. si la ruta pasa por una madre).
   function nodoLinea(id, padreId) {
     const n = N.nodoArbol(D, id), I = N.indice(D);
@@ -1071,25 +1141,121 @@ if (typeof document !== 'undefined') (function () {
     const M = N.mapaArbol(D), gen = (id, i) => { const x = M.nodos.get(id); return x ? x.prof : i; };
     let html = at.ruta.map((id, i) => filaHTML(nodoLinea(id, at.ruta[i - 1]), i, { solo: true, gen: gen(id, i) })).join('');
     if (at.extra.length) {
-      const fin = at.ruta[at.ruta.length - 1], nf = N.nodoArbol(D, fin), prof = at.ruta.length, g0 = gen(fin, prof - 1) + 1;
-      const gs = nf ? N.hijosPorMadre(D, nf) : [{ madre: null, hijos: at.extra.map(id => nodoLinea(id, fin)) }];
-      const agrupar = gs.length > 1 || !!gs[0].madre;
-      html += gs.map(g => (agrupar ? grupoHTML(g, prof) : '') + g.hijos.map(h => filaHTML(h, prof, { solo: true, agrupado: agrupar, gen: g0 })).join('')).join('');
+      const fin = at.ruta[at.ruta.length - 1], nf = N.nodoArbol(D, fin), prof = at.ruta.length - 1, g0 = gen(fin, prof) + 1;
+      const fila = h => filaHTML(h, prof + 1, { solo: true, gen: g0 });
+      html += nf ? hijosHTML(nf, prof, fila) : at.extra.map(id => fila(nodoLinea(id, fin))).join('');
     }
     return `<ul class="arbol" aria-label="Línea ${esc(tituloAtajo(at))}">${html}</ul>`;
   }
   function arbolHTML() {
     const bosque = N.construirBosque(D);
     if (!bosque.length) return '<p>No hay relaciones en los datos.</p>';
+    const g = estado.vistaArbol === 'grafico';
     if (estado.lineaSolo) {
       const at = N.atajosLinea(D).find(a => a.id === estado.lineaSolo);
-      if (at) return lineaHTML(at);
+      if (at) return g ? lienzoHTML(gaLinea(at), `Línea ${tituloAtajo(at)}`) : lineaHTML(at);
       estado.lineaSolo = false;
     }
     const otras = bosque.slice(1);
+    if (g) return `${lienzoHTML(gaNodo(bosque[0]), `Descendencia de ${nombre(bosque[0].id)}`)}
+      ${otras.length ? `<h2>Otras ramas (${otras.length})</h2><p class="meta">Familias sin enlace conocido con la rama principal.</p>${lienzoHTML(otras.map(r => gaNodo(r)).join(''), 'Otras ramas', true)}` : ''}
+      ${sinParHTML()}`;
     return `<ul class="arbol" aria-label="Descendencia de ${esc(nombre(bosque[0].id))}">${bloqueHTML(bosque[0], 0)}</ul>
       ${otras.length ? `<h2>Otras ramas (${otras.length})</h2><p class="meta">Familias sin enlace conocido con la rama principal.</p><ul class="arbol" aria-label="Otras ramas">${otras.map(r => bloqueHTML(r, 0)).join('')}</ul>` : ''}
       ${sinParHTML()}`;
+  }
+
+  /* ---- Vista gráfica: árbol genealógico de arriba abajo (pareja en una fila, hijos debajo) ---- */
+  const gaTarjeta = (id, extra, cls, boton) => `<div class="ga-tarjeta${cls || ''}">${btnPersona(id)}${vidaHTML(id)}${extra || ''}${boton || ''}</div>`;
+  // Certeza del vínculo con sus padres, para colorear la línea que llega a la tarjeta: inferido si alguno lo es.
+  const certNodo = n => { const rs = (n.vinculos || []).concat(n.madres || []); return !rs.length ? '' : rs.some(r => N.claseCerteza(r.certeza) === 'inferido') || N.madreSupuesta(D, n.id) ? 'inferido' : 'texto'; };
+  // Un nodo con su pareja y sus hijos. opc: {solo (línea: sin plegar), sig (HTML del siguiente de la línea), forzar (abierto, hijos sin plegar)}
+  // Las líneas no son CSS: las dibuja conectoresGA() desde el ⚭ de cada pareja hasta la tarjeta de cada hijo.
+  function gaNodo(n, opc) {
+    opc = opc || {};
+    const linea = N.lineaPrincipal(D), us = N.uniones(D, n), parejas = us.filter(u => u.pareja);
+    const nh = opc.solo || opc.forzar ? 0 : n.hijos.length, abierto = opc.solo || opc.forzar || estado.abiertos.has(n.id);
+    // El botón de plegar va bajo el ⚭ si hay una sola pareja (de ahí baja la descendencia); si no, bajo la persona.
+    const btn = nh ? `<button type="button" class="ga-plegar" data-ga-plegar="${esc(n.id)}" aria-expanded="${abierto}" aria-label="${abierto ? 'Plegar' : 'Desplegar'} descendencia de ${esc(nombre(n.id))} (${nh})">${abierto ? '▾ plegar' : `▸ ${nh} ${nh === 1 ? 'hijo' : 'hijos'}`}</button>` : '';
+    const enLazo = parejas.length === 1;
+    const lazo = u => u.vinculo ? `<span class="lazo" data-pareja="${esc(u.pareja)}" title="Cónyuges"><span aria-label="cónyuge:">⚭</span>${enLazo ? btn : ''}</span>`
+      : `<span class="lazo sin-matr" data-pareja="${esc(u.pareja)}" title="Madre de sus hijos; el texto no registra matrimonio"><span aria-label="con:">+</span>${enLazo ? btn : ''}</span>`;
+    const fam = `<div class="ga-fam${linea.has(n.id) ? ' en-linea' : ''}${estado.foco === n.id ? ' foco' : ''}${btn ? ' con-boton' : ''}" data-ga="${esc(n.id)}" data-cert="${certNodo(n)}" data-madre="${esc(((n.madres || [])[0] || {}).de || '')}">
+      ${gaTarjeta(n.id, etiquetaTrad(n.id) + vinculosHTML(n), ' principal', enLazo ? '' : btn)}
+      ${parejas.map(u => `${lazo(u)}${gaTarjeta(u.pareja, notaVinculo(u.vinculo) + (u.vinculo ? insignia(u.vinculo.certeza, u.vinculo.ref, '', 'Matrimonio') : ''))}`).join('')}</div>`;
+    let sub = '';
+    if (opc.solo && !opc.forzar) sub = opc.sig ? `<ul>${opc.sig}</ul>` : '';
+    else if (abierto && n.hijos.length) {
+      const hijo = h => gaNodo(h, opc.forzar ? { solo: true } : null);
+      sub = us.length < 2 ? `<ul>${n.hijos.map(hijo).join('')}</ul>`
+        : `<ul>${us.filter(u => u.hijos.length).map(u => `<li class="ga-rama"${u.pareja ? ` data-pareja="${esc(u.pareja)}"` : ''}><div class="ga-rama-txt">${u.pareja ? `hijos con ${esc(nombre(u.pareja))}` : 'madre no indicada'}</div><ul>${u.hijos.map(hijo).join('')}</ul></li>`).join('')}</ul>`;
+    }
+    return `<li>${fam}${sub}</li>`;
+  }
+  // Dibuja las líneas del árbol gráfico en un SVG bajo las tarjetas, en coordenadas del contenido del lienzo
+  // (no dependen del desplazamiento ni del zoom). Tronco neutro desde la pareja; el último tramo de cada hijo,
+  // con el color de la certeza de su vínculo (Texto continuo, Inferido discontinuo).
+  function conectoresGA(l) {
+    const cont = l.querySelector('.ga-contenido'); if (!cont) return;
+    let svg = l.querySelector(':scope > svg.ga-lineas');
+    if (!svg) { svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.setAttribute('class', 'ga-lineas'); svg.setAttribute('aria-hidden', 'true'); l.prepend(svg); }
+    const lr = l.getBoundingClientRect(), sl = l.scrollLeft, st = l.scrollTop, z = estado.gaZoom;
+    const pt = (el, fx, fy) => { const r = el.getBoundingClientRect(); return { x: Math.round(r.left - lr.left + sl + r.width * fx) + .5, y: Math.round(r.top - lr.top + st + r.height * fy) }; };
+    const d = { base: '', texto: '', inferido: '' };
+    const tramo = (s, hijos, escalon) => {
+      if (!s || !hijos.length) return;
+      const tops = hijos.map(h => pt(h.el, .5, 0)), mid = Math.min(...tops.map(t => t.y)) - Math.round((10 + (escalon || 0) * 7) * z);
+      const xs = tops.map(t => t.x).concat(s.x);
+      d.base += `M${s.x} ${s.y}V${mid}M${Math.min(...xs)} ${mid}H${Math.max(...xs)}`;
+      tops.forEach((t, i) => { const k = hijos[i].cert === 'texto' || hijos[i].cert === 'inferido' ? hijos[i].cert : 'base'; d[k] += `M${t.x} ${mid}V${t.y}`; });
+    };
+    const hijosDe = ul => [...ul.children].map(c => { const f = c.querySelector(':scope > .ga-fam'); return f && { el: f.querySelector(':scope > .ga-tarjeta.principal'), cert: f.dataset.cert, madre: f.dataset.madre }; }).filter(Boolean);
+    l.querySelectorAll('.ga-fam').forEach(f => {
+      const ul = f.parentElement.querySelector(':scope > ul'); if (!ul) return;
+      const principal = pt(f.querySelector(':scope > .ga-tarjeta.principal'), .5, 1);
+      // Una pareja: desde el ⚭ (entre los dos). Varias: desde la tarjeta de esa madre, porque un ⚭ entre dos esposas confundiría.
+      const varias = f.querySelectorAll(':scope > .lazo').length > 1;
+      const desde = id => { const z0 = id && f.querySelector(`:scope > .lazo[data-pareja="${CSS.escape(id)}"]`); return !z0 ? principal : pt(varias ? z0.nextElementSibling : z0, .5, 1); };
+      const ramas = [...ul.children].filter(x => x.classList.contains('ga-rama'));
+      if (!ramas.length) {
+        // Sin ramas: de la única pareja; con varias (línea sola), del ⚭ de la madre de cada hijo.
+        const lz = f.querySelectorAll(':scope > .lazo'), grupos = new Map();
+        hijosDe(ul).forEach(h => { const k = lz.length === 1 ? lz[0].dataset.pareja : (h.madre || ''); if (!grupos.has(k)) grupos.set(k, []); grupos.get(k).push(h); });
+        [...grupos].forEach(([k, hs], i) => tramo(desde(k), hs, i));
+        return;
+      }
+      ramas.forEach((r, i) => {
+        const lab = r.querySelector(':scope > .ga-rama-txt'), sub = r.querySelector(':scope > ul');
+        tramo(desde(r.dataset.pareja), [{ el: lab, cert: '' }], i);
+        if (sub) tramo(pt(lab, .5, 1), hijosDe(sub));
+      });
+    });
+    svg.style.width = svg.style.height = '0';
+    svg.style.width = l.scrollWidth + 'px'; svg.style.height = l.scrollHeight + 'px';
+    svg.innerHTML = ['base', 'texto', 'inferido'].map(k => d[k] ? `<path class="ga-l-${k}" d="${d[k]}"/>` : '').join('');
+  }
+  const conectoresTodos = () => main.querySelectorAll('.ga-lienzo').forEach(conectoresGA);
+  // Línea sola: una cadena de arriba abajo; al final, si toca, todos los hijos (p. ej. los de Jacob).
+  function gaLinea(at) {
+    const r = at.ruta;
+    let html = '';
+    for (let i = r.length - 1; i >= 0; i--) {
+      const n = nodoLinea(r[i], r[i - 1]);
+      html = i === r.length - 1 ? gaNodo(n, at.extra.length ? { forzar: true } : { solo: true }) : gaNodo(n, { solo: true, sig: html });
+    }
+    return html;
+  }
+  const lienzoHTML = (lis, etiqueta, bosque) => `<div class="ga-lienzo" tabindex="0" aria-label="${esc(etiqueta)}: árbol gráfico, desplázate para recorrerlo"><div class="ga-contenido" style="zoom:${estado.gaZoom}"><ul class="ga${bosque ? ' ga-bosque' : ''}">${lis}</ul></div></div>`;
+  // Despliega o pliega una rama del árbol gráfico manteniendo el nodo en el mismo sitio de la pantalla.
+  function alternarGA(id) {
+    const sel = `.ga-fam[data-ga="${CSS.escape(id)}"]`, a = main.querySelector(sel), r0 = a && a.getBoundingClientRect();
+    if (estado.abiertos.has(id)) estado.abiertos.delete(id); else estado.abiertos.add(id);
+    const pos = [...main.querySelectorAll('.ga-lienzo')].map(l => [l.scrollLeft, l.scrollTop]);
+    rerender();
+    main.querySelectorAll('.ga-lienzo').forEach((l, i) => { if (pos[i]) { l.scrollLeft = pos[i][0]; l.scrollTop = pos[i][1]; } });
+    const b = main.querySelector(sel);
+    if (b && r0) { const r1 = b.getBoundingClientRect(), l = b.closest('.ga-lienzo'); l.scrollLeft += r1.left - r0.left; l.scrollTop += r1.top - r0.top; }
+    const p = main.querySelector(`[data-ga-plegar="${CSS.escape(id)}"]`); if (p) p.focus({ preventScroll: true });
   }
   // Personas sin parentesco registrado: sección plegable al final, cada una abre su ficha.
   function sinParHTML() {
@@ -1151,9 +1317,10 @@ if (typeof document !== 'undefined') (function () {
       ${sub === 'linea' ? lineaTiempoHTML() : sub === 'vidas' ? vidasHTML() : tablaHTML()}`;
   }
   // Tradición (TM / LXX / comparar) y un selector por supuesto; la elección se guarda.
+  const segTrad = () => `<fieldset class="segmentos"><legend>Tradición</legend>${[['TM', 'TM'], ['LXX', 'LXX'], ['ambas', 'Comparar']].map(([v, t]) => `<label><input type="radio" name="trad" value="${v}" ${estado.trad === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>`;
   function controlesTiempo(conSupuestos) {
     const C = N.crono(D), e = eleg();
-    return `<fieldset class="segmentos"><legend>Tradición</legend>${[['TM', 'TM'], ['LXX', 'LXX'], ['ambas', 'Comparar']].map(([v, t]) => `<label><input type="radio" name="trad" value="${v}" ${estado.trad === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
+    return `${segTrad()}
       ${conSupuestos && C && C.supuestos.length ? `<details class="plegable supuestos-caja" id="supuestos"${estado.supAbiertos ? ' open' : ''}>
         <summary>Supuestos del cálculo (${C.supuestos.length}) · ${C.supuestos.filter(s => e[s.id] !== s.defecto).length ? 'hay cambios' : 'por defecto'}</summary>
         <div class="supuestos">${C.supuestos.map(s => `<fieldset class="supuesto"><legend>${esc(s.pregunta || s.id)}</legend>
@@ -1592,11 +1759,15 @@ if (typeof document !== 'undefined') (function () {
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
     montarMapas(main);
+    conectoresTodos();
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? PESTANA[vista] || vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
-    const marcado = main.querySelector('.vers.activo, .fila.foco, .foco-sp, .tl-ev.foco');
-    if (marcado && foco !== false) { marcado.scrollIntoView({ block: 'center' }); }
-    else if (foco !== false && !primera) { window.scrollTo(0, 0); }
+    const marcado = main.querySelector('.vers.activo, .fila.foco, .ga-fam.foco, .foco-sp, .tl-ev.foco');
+    if (marcado && foco !== false) { marcado.scrollIntoView({ block: 'center', inline: 'center' }); }
+    else {
+      if (foco !== false || primera) centrarLienzos();
+      if (foco !== false && !primera) window.scrollTo(0, 0);
+    }
     if (foco !== false && !primera) { const h = main.querySelector('h1'); if (h) h.focus({ preventScroll: true }); }
     primera = false;
   }
@@ -1625,13 +1796,15 @@ if (typeof document !== 'undefined') (function () {
     const evb = t.closest('[data-ev]'); if (evb) { abrirEvento(evb.dataset.ev); return; }
     const ca = t.closest('[data-calc]'); if (ca) { const [trad, id] = ca.dataset.calc.split('|'); detalleCalc(trad, id); return; }
     const pl = t.closest('[data-plegar]'); if (pl) { alternarRama(pl.dataset.plegar); return; }
-    const at = t.closest('[data-atajo]'); if (at) { estado.lineaSolo = estado.lineaSolo === at.dataset.atajo ? false : at.dataset.atajo; estado.aviso = ''; rerender(`[data-atajo="${CSS.escape(at.dataset.atajo)}"]`); return; }
+    const gp = t.closest('[data-ga-plegar]'); if (gp) { alternarGA(gp.dataset.gaPlegar); return; }
+    const zm = t.closest('[data-zoom]'); if (zm) { zoomGA(+zm.dataset.zoom); return; }
+    const at = t.closest('[data-atajo]'); if (at) { estado.lineaSolo = estado.lineaSolo === at.dataset.atajo ? false : at.dataset.atajo; estado.aviso = ''; rerender(`[data-atajo="${CSS.escape(at.dataset.atajo)}"]`); centrarLienzos(); return; }
     const ac = t.closest('[data-activar]'); if (ac) { activar(ac.dataset.activar); return; }
     if (t.closest('[data-hoja]')) { estado.hoja = !estado.hoja; const a = $('#acompanante'); if (a) { a.classList.toggle('abierta', estado.hoja); a.querySelector('[data-hoja]').setAttribute('aria-expanded', estado.hoja); } return; }
     const ls = t.closest('[data-leido-seguir]'); if (ls) { const L = pasajesLeidos(); L.add(ls.dataset.leidoSeguir); store.set('biblia.pasajesLeidos', [...L]); const ps = N.pasajes(D), i = ps.findIndex(x => x.id === ls.dataset.leidoSeguir); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer'; return; }
     const ve = t.closest('.vers'); if (ve && !t.closest('button, a')) { activar(ve.dataset.v); return; }
     if (t.closest('#btn-mujeres')) { estado.mujeres = !estado.mujeres; rerender('#btn-mujeres'); return; }
-    if (t.closest('#btn-todo')) { estado.lineaSolo = false; rerender('[data-atajo]'); return; }
+    if (t.closest('#btn-todo')) { estado.lineaSolo = false; rerender('[data-atajo]'); centrarLienzos(); return; }
     if (t.closest('#btn-plegar')) { estado.abiertos = new Set(); rerender('#btn-plegar'); return; }
     if (t.closest('#btn-desplegar')) { estado.abiertos = new Set([...N.mapaArbol(D).nodos.values()].filter(x => x.n.hijos.length).map(x => x.n.id)); rerender('#btn-desplegar'); return; }
   });
@@ -1641,7 +1814,34 @@ if (typeof document !== 'undefined') (function () {
     else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
     else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
+    else if (t.name === 'vista-arbol') { estado.vistaArbol = t.value; store.set('biblia.vistaArbol', t.value); rerender(`input[name="vista-arbol"][value="${t.value}"]`); if (estado.vistaArbol === 'grafico') centrarLienzos(); }
   });
+  // Árbol gráfico: tamaño (se aplica sin repintar), centrado inicial y arrastre con el ratón para recorrerlo.
+  function zoomGA(paso) {
+    estado.gaZoom = Math.min(1.5, Math.max(0.4, Math.round((estado.gaZoom + paso * 0.1) * 10) / 10));
+    main.querySelectorAll('.ga-contenido').forEach(c => { c.style.zoom = estado.gaZoom; });
+    conectoresTodos();
+    const z = $('#ga-zoom-txt'); if (z) z.textContent = Math.round(estado.gaZoom * 100) + ' %';
+  }
+  let tRes = 0;
+  window.addEventListener('resize', () => { clearTimeout(tRes); tRes = setTimeout(conectoresTodos, 120); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(conectoresTodos);
+  function centrarLienzos() {
+    main.querySelectorAll('.ga-lienzo').forEach(l => {
+      const f = l.querySelector('.ga > li > .ga-fam'); if (!f) return;
+      const rl = l.getBoundingClientRect(), rf = f.getBoundingClientRect();
+      l.scrollLeft += (rf.left + rf.width / 2) - (rl.left + rl.width / 2);
+    });
+  }
+  let arrastre = null;
+  document.addEventListener('pointerdown', e => {
+    const l = e.target.closest && e.target.closest('.ga-lienzo');
+    if (!l || e.pointerType !== 'mouse' || e.button !== 0 || e.target.closest('button, a, input')) return;
+    arrastre = { l, x: e.clientX, y: e.clientY, sl: l.scrollLeft, st: l.scrollTop }; l.classList.add('arrastrando'); try { l.setPointerCapture(e.pointerId); } catch (x) { /* sin captura */ }
+  });
+  document.addEventListener('pointermove', e => { if (arrastre) { arrastre.l.scrollLeft = arrastre.sl - (e.clientX - arrastre.x); arrastre.l.scrollTop = arrastre.st - (e.clientY - arrastre.y); } });
+  const soltar = () => { if (arrastre) { arrastre.l.classList.remove('arrastrando'); arrastre = null; } };
+  document.addEventListener('pointerup', soltar); document.addEventListener('pointercancel', soltar);
   document.addEventListener('input', e => {
     if (e.target.id === 'buscar-lugar') { estado.mapaQ = e.target.value; const r = $('#res-lugar'); if (r) r.innerHTML = resultadosLugar(); }
     if (e.target.id === 'buscar') { estado.q = e.target.value; const r = $('#resultados'); if (r) r.innerHTML = resultadosHTML(); }

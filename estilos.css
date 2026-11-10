@@ -457,3 +457,62 @@ select { font: inherit; min-height: 44px; width: 100%; padding: .4rem .6rem; bor
 .tl-sin-tiempo h3 svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.6; }
 .tl-sin-tiempo ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
 .tl-sin-tiempo .tl-tit { font-style: italic; }
+
+/* ---------- Árbol: pareja en la misma línea y datos de vida ---------- */
+.ins-pre { font-size: .66rem; text-transform: uppercase; letter-spacing: .04em; font-weight: 700; opacity: .85; margin-right: .2rem; }
+.pareja { display: inline-flex; flex-wrap: wrap; align-items: center; min-width: 0; }
+.fila-cont > .pareja + .pareja { margin-left: .15rem; }
+.lazo { flex: none; padding: 0 .3rem; font-size: 1.1rem; font-weight: 700; line-height: 1; color: var(--suave); }
+.lazo.sin-matr { font-weight: 400; }
+.vida { display: inline-flex; flex-wrap: wrap; align-items: center; }
+.dato-vida { cursor: pointer; font-weight: 600; font-variant-numeric: tabular-nums; }
+.dato-vida:hover { background: color-mix(in srgb, currentColor 20%, transparent); }
+.ley-txt b { color: var(--tinta); }
+.herr-arbol { align-items: center; margin-bottom: 0; }
+.herr-arbol .segmentos { margin: 0; }
+.ga-zoom { display: flex; align-items: center; gap: .4rem; }
+.ga-zoom .boton { min-width: 44px; padding: .4rem .6rem; font-size: 1.1rem; }
+
+/* ---------- Árbol gráfico: de arriba abajo, pareja lado a lado, hijos debajo ---------- */
+.ga-lienzo { position: relative; --ga-linea: color-mix(in srgb, var(--suave) 55%, var(--linea)); --ga-alto: 1.3rem;
+  overflow: auto; max-height: min(78vh, 62rem); background: var(--hoja); border: 1px solid var(--linea); border-radius: .9rem; box-shadow: var(--sombra); cursor: grab; overscroll-behavior: contain; }
+.ga-lienzo.arrastrando { cursor: grabbing; user-select: none; }
+.ga-contenido { width: max-content; min-width: 100%; padding: 1rem 1.5rem 2rem; }
+.ga, .ga ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: flex-start; }
+.ga ul { padding-top: 1.6rem; }
+.ga li { display: flex; flex-direction: column; align-items: center; padding: 0 .35rem; }
+.ga-rama > ul { padding-top: 1.4rem; }
+.ga-bosque { gap: 2.5rem; align-items: flex-start; }
+.ga-fam { display: flex; align-items: stretch; border-radius: .8rem; }
+.ga-fam.foco { outline: 3px solid var(--rubrica); outline-offset: 4px; }
+.ga-fam .lazo { display: flex; align-items: center; justify-content: center; min-width: 1.7rem; padding: 0 .1rem; }
+.ga-tarjeta { min-width: 10rem; max-width: 14rem; display: flex; flex-direction: column; align-items: center; gap: .1rem; padding: .3rem .3rem .4rem; text-align: center; background: var(--papel); border: 1.5px solid var(--linea); border-radius: .7rem; }
+.ga-tarjeta .persona-btn { border: 0; background: none; min-height: 40px; padding: .2rem .4rem; font-weight: 600; justify-content: center; text-align: center; }
+.ga-tarjeta:has(.persona-btn.sin-nombre) { border-style: dashed; }
+.ga-tarjeta .persona-btn.sin-nombre { font-weight: 400; }
+.ga-tarjeta .vida { justify-content: center; }
+.ga-tarjeta .insignia { font-size: .7rem; margin: .1rem .15rem; white-space: nowrap; overflow-wrap: normal; }
+.ga-tarjeta .nota-vinculo { margin: .1rem 0; }
+.ga-fam.en-linea .ga-tarjeta.principal { border-color: var(--lapis); background: var(--lapis-tinte); }
+.resaltar-mujeres .ga-tarjeta:has(.persona-btn.mujer) { background: var(--difiere); border-color: var(--c-inferido); border-width: 2px; }
+.ga-plegar { position: absolute; z-index: 2; top: calc(100% + .45rem); left: 50%; transform: translateX(-50%); white-space: nowrap; min-height: 36px; padding: .2rem .75rem; border: 1px solid var(--linea); border-radius: 999px; background: var(--hoja); color: var(--lapis); font: inherit; font-size: .8rem; cursor: pointer; }
+.ga-plegar:hover { background: var(--lapis-tinte); }
+.ga-rama > .ga-rama-txt { padding: .15rem .65rem; border: 1px dashed var(--ga-linea); border-radius: 999px; background: var(--hoja); font-size: .78rem; color: var(--suave); white-space: nowrap; }
+@media (max-width: 599px) { .ga-tarjeta { min-width: 8.5rem; } .ga-contenido { padding: .75rem .75rem 1.5rem; } .ga-lienzo { max-height: 70vh; } }
+.parejas-varias { display: inline-flex; flex-wrap: wrap; align-items: center; }
+.grupo-txt .insignia { white-space: normal; }
+/* Árbol: más ancho y etiquetas más juntas para que cada pareja quepa en su línea. */
+main:has(.herr-arbol) { max-width: 100rem; }
+.fila .insignia, .grupo-txt .insignia { margin: .1rem .15rem; }
+.fila .persona-btn { padding: .25rem .65rem .25rem .55rem; }
+.fila-cont > .pareja + .pareja, .fila-cont > .pareja + .parejas-varias { margin-left: .35rem; }
+.vinc-padres { display: inline-flex; flex-wrap: wrap; align-items: center; margin-left: .35rem; padding-left: .35rem; border-left: 1px solid var(--linea); }
+.ga-contenido { position: relative; z-index: 1; }
+.ga-lineas { position: absolute; top: 0; left: 0; z-index: 0; pointer-events: none; overflow: visible; }
+.ga-lineas path { fill: none; stroke-width: 2; }
+.ga-lineas .ga-l-base { stroke: var(--ga-linea); }
+.ga-lineas .ga-l-texto { stroke: var(--c-texto); }
+.ga-lineas .ga-l-inferido { stroke: var(--c-inferido); stroke-dasharray: 5 4; }
+.ga-tarjeta.principal, .ga-fam .lazo { position: relative; }
+.ga-fam.con-boton { margin-bottom: 2.9rem; }
+.par-nombre { display: inline-flex; flex-wrap: nowrap; align-items: center; max-width: 100%; }
