@@ -559,5 +559,66 @@ if (existsSync(real)) {
   });
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
+// ---- Textos originales: alineación, testigos, variantes, voz y video (con pruebas/originales-ejemplo.js) ----
+{
+  const cx = cargar(path.join(aqui, 'originales-ejemplo.js'), path.join(aqui, '..', 'app.js'));
+  const NO = cx.BibliaNucleo, O = cx.BIBLIA_ORIGINALES, G = cx.BIBLIA_GRIEGO;
+  console.log('Textos originales (ejemplo)');
+  prueba('rangos de testigos: libro, capítulo, versículos y entre libros', () => {
+    const k = r => NO.clave(r);
+    assert.deepEqual(j(NO.rangoClaves('Ex 1:1-Ex 1:22')), { a: k('Ex 1:1'), b: k('Ex 1:22') });
+    assert.deepEqual(j(NO.rangoClaves('Ex 1:1-22')), { a: k('Ex 1:1'), b: k('Ex 1:22') });
+    assert.deepEqual(j(NO.rangoClaves('Gn 1:1-2:3')), { a: k('Gn 1:1'), b: k('Gn 2:3') });
+    assert.equal(NO.rangoClaves('Gn 1').a, k('Gn 1:1')); assert.ok(NO.rangoClaves('Gn 1').b < k('Gn 2:1'));
+    const ex = NO.rangoClaves('Ex'); assert.ok(ex.a <= k('Ex 1:1') && ex.b >= k('Ex 40:38') && ex.a > k('Gn 50:26'));
+    assert.equal(NO.rangoClaves(''), null);
+  });
+  prueba('testigos que contienen el pasaje (filtro por rango)', () => {
+    const ids = refs => j(NO.testigosDe(O, refs)).map(t => t.id);
+    assert.deepEqual(ids(['Ex 1:1', 'Ex 1:5']), ['leningrado', '4q13', 'samaritano']);
+    assert.deepEqual(ids(['Ex 1:7', 'Ex 1:9']), ['leningrado', 'samaritano'], '4Q13 del ejemplo llega solo hasta Ex 1:6');
+    assert.deepEqual(ids(['Ex 1:6', 'Ex 1:9']), ['leningrado', '4q13', 'samaritano'], 'basta con que se solapen');
+    assert.deepEqual(ids(['Gn 1:1']), ['leningrado', 'samaritano']);
+    assert.deepEqual(ids([]), []); assert.deepEqual(j(NO.testigosDe({}, ['Gn 1:1'])), []);
+  });
+  prueba('variantes por pasaje', () => {
+    assert.deepEqual(j(NO.variantesDe(O, ['Ex 1:1', 'Ex 1:5', 'Ex 1:6'])).map(v => v.ref), ['Ex 1:5']);
+    assert.equal(NO.variantesDe(O, ['Ex 1:1', 'Ex 1:4']).length, 0);
+    assert.equal(NO.variantesDe(O, ['Gn 1:5']).length, 0, 'mismo capítulo y versículo en otro libro no cuenta');
+  });
+  prueba('alineación por versículo con numeración hebrea distinta', () => {
+    assert.equal(NO.numeracionHebrea('Gn 31:55', 'Gn 32:1'), '32:1');
+    assert.equal(NO.numeracionHebrea('Gn 1:1', 'Gn 1:1'), null); assert.equal(NO.numeracionHebrea('Gn 1:1', undefined), null);
+    assert.equal(NO.numeracionHebrea('Ml 4:1', 'Mal 3:19'), 'Mal 3:19', 'otro libro: se muestra completo');
+    const d = { capitulos: [{ libro: 'Gn', cap: 31, versiculos: [{ n: 54, texto: 'a' }, { n: 55, texto: 'Y levantóse Labán' }] }] };
+    const f = j(NO.alinearOriginales(d, { inicio: 'Gn 31:54', fin: 'Gn 31:55' }, O, G));
+    assert.deepEqual(f.map(x => x.ref), ['Gn 31:54', 'Gn 31:55']);
+    assert.equal(f[0].he, null, 'sin texto hebreo en los datos: no se inventa');
+    assert.equal(f[1].heNum, '32:1'); assert.ok(f[1].he.startsWith('וַיַּשְׁכֵּם')); assert.equal(f[1].rv, 'Y levantóse Labán');
+    const e = j(NO.alinearOriginales({ capitulos: [{ libro: 'Ex', cap: 1, versiculos: [{ n: 5, texto: 'x' }] }] }, { inicio: 'Ex 1:5', fin: 'Ex 1:5' }, O, G))[0];
+    assert.equal(e.heNum, null); assert.ok(e.gr.includes('πέντε καὶ ἑβδομήκοντα'));
+    assert.deepEqual(j(NO.alinearOriginales(d, { inicio: 'Gn 31:55', fin: 'Gn 31:55' }, null, null)).map(x => [x.he, x.gr]), [[null, null]]);
+  });
+  prueba('texto para la voz: sin cantilación (hebreo) y monotónico (griego)', () => {
+    const h = NO.textoParaVoz(O.hebreo['Gn 1:1'].t, 'he');
+    assert.ok(!/[֑-֯]/.test(h) && h.includes('בְּרֵאשִׁית') && h.endsWith('.'));
+    assert.equal(NO.textoParaVoz('עַל־פְּנֵי {פ}', 'he'), 'עַל פְּנֵי');
+    const gr = NO.textoParaVoz('Ἐν ἀρχῇ ἐποίησεν ὁ θεὸς', 'el');
+    assert.equal(gr, 'Εν αρχή εποίησεν ο θεός'.normalize('NFC'));
+  });
+  prueba('elección de voz por idioma (he/iw, región, local)', () => {
+    const vs = [{ name: 'A', lang: 'es-MX', localService: false }, { name: 'B', lang: 'es-ES', localService: true }, { name: 'C', lang: 'iw-IL', localService: true }, { name: 'D', lang: 'el_GR' }];
+    assert.equal(NO.vozPara(vs, 'es').name, 'B'); assert.equal(NO.vozPara(vs, 'es', 'MX').name, 'A');
+    assert.equal(NO.vozPara(vs, 'he', 'IL').name, 'C'); assert.equal(NO.vozPara(vs, 'el', 'GR').name, 'D');
+    assert.equal(NO.vozPara(vs, 'la'), null); assert.equal(NO.vozPara(null, 'es'), null);
+  });
+  prueba('videos del libro con id de YouTube válido; escritura del texto', () => {
+    assert.deepEqual(j(NO.videosDeLibro(O, 'Éxodo')).map(v => v.libro), ['Ex']);
+    assert.equal(NO.videosDeLibro(O, 'Gn').length, 0);
+    assert.equal(NO.videosDeLibro({ videos: [{ libro: 'Ex', youtube_id: 'x"><script' }] }, 'Ex').length, 0);
+    assert.equal(NO.escritura('שִׁבְעִים'), 'he'); assert.equal(NO.escritura('πέντε'), 'grc'); assert.equal(NO.escritura('setenta'), null);
+  });
+}
+
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

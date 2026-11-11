@@ -1030,7 +1030,74 @@ const Nucleo = (() => {
     ].filter(x => letra || x.id !== 'smith');
   }
 
-  return { TRADS, TIPOS, norm, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+  /* ---- Textos originales (datos/originales.js y datos/griego-swete.js, cargados bajo demanda) ---- */
+  // "Ex 1:1-Ex 1:22", "Ex 1:1-22", "Gn 1:1-2:3", "Gn 1" (capítulo) o "Ex" (libro) → { a, b } en claves de versículo.
+  function rangoClaves(s) {
+    const [x, y] = String(s == null ? '' : s).split(/\s*[-–—]\s*/);
+    if (!x || !x.trim()) return null;
+    const solo = /^\s*([1-3]?\s?[A-Za-zÀ-ÿ]+)\.?\s*$/.exec(x);
+    if (solo && !y) { const o = ordDe(libroCanon(solo[1])); return o ? { a: o * 1e6 + 1001, b: o * 1e6 + 999999 } : null; }
+    const A = parseRef(x); if (!A) return null;
+    const o = ordDe(A.libro);
+    let B;
+    if (!y) B = { libro: A.libro, cap: A.cap, v: A.v };
+    else if (/[A-Za-zÀ-ÿ]/.test(y)) B = parseRef(y);
+    else if (y.includes(':')) { const m = /(\d+)\s*:\s*(\d+)/.exec(y); B = m && { libro: A.libro, cap: +m[1], v: +m[2] }; }
+    else B = A.v ? { libro: A.libro, cap: A.cap, v: +y } : { libro: A.libro, cap: +y, v: null };
+    if (!B || !ordDe(B.libro)) return null;
+    const a = o * 1e6 + A.cap * 1000 + (A.v || 1), b = ordDe(B.libro) * 1e6 + B.cap * 1000 + (B.v || 999);
+    return a <= b ? { a, b } : { a: b, b: a };
+  }
+  // Extremos (claves) de una lista de refs de versículo.
+  const extremos = refs => { const ks = (refs || []).map(clave).filter(k => k !== null); return ks.length ? { a: Math.min(...ks), b: Math.max(...ks) } : null; };
+  // Testigos (códices, rollos…) que contienen alguna parte de los versículos dados, en el orden de los datos.
+  function testigosDe(O, refs) {
+    const r = extremos(refs); if (!r) return [];
+    return ((O && O.testigos) || []).filter(t => (t.contiene || []).some(s => { const c = rangoClaves(s); return c && c.a <= r.b && r.a <= c.b; }));
+  }
+  // Variantes cuyo versículo (o rango) cae en los versículos dados.
+  function variantesDe(O, refs) {
+    const ks = new Set((refs || []).map(clave).filter(k => k !== null));
+    return ((O && O.variantes) || []).filter(v => { const c = rangoClaves(v.ref); if (!c) return false; for (const k of ks) if (k >= c.a && k <= c.b) return true; return false; });
+  }
+  // Ref de la numeración hebrea solo cuando difiere de la de la RV ("Gn 31:55" → "Gn 32:1"); null si coincide o falta.
+  function numeracionHebrea(ref, r) {
+    if (!r) return null;
+    const a = parseRef(ref), b = parseRef(r);
+    if (!a || !b || (a.libro === b.libro && a.cap === b.cap && a.v === b.v)) return null;
+    return a.libro === b.libro ? `${b.cap}:${b.v}` : `${b.libro} ${b.cap}:${b.v}`;
+  }
+  // Filas alineadas por versículo de la RV: { ref, cap, n, rv, he, heNum, gr }. Lo que falta queda en null.
+  function alinearOriginales(d, pasaje, O, G) {
+    const H = (O && O.hebreo) || {}, T = (G && G.texto) || {};
+    return versiculosDe(d, pasaje).map(v => {
+      const h = H[v.ref];
+      return { ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he: (h && h.t) || null, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr: T[v.ref] || null };
+    });
+  }
+  const videosDeLibro = (O, libro) => ((O && O.videos) || []).filter(v => libroCanon(v.libro) === libroCanon(libro) && esIdYoutube(v.youtube_id));
+  const esIdYoutube = id => /^[A-Za-z0-9_-]{11}$/.test(String(id || ''));
+  // Escritura de un texto original, para lang/dir: hebreo, griego o ninguno.
+  const escritura = t => /[֐-׿]/.test(t || '') ? 'he' : /[Ͱ-Ͽἀ-῿]/.test(t || '') ? 'grc' : null;
+
+  // Texto para la voz sintética: sin acentos de cantilación ni marcas de párrafo (hebreo); griego politónico → monotónico.
+  function textoParaVoz(t, idioma) {
+    let s = String(t == null ? '' : t);
+    if (idioma === 'he') s = s.replace(/[{\[(]\s*[פס]\s*[}\])]/g, ' ').replace(/[֑-ֽ֯׀ׅׄ]/g, '').replace(/־/g, ' ').replace(/׃/g, '.').replace(/[/\\|]/g, ' ');
+    else if (idioma === 'el') s = s.normalize('NFD').replace(/[̓̔ͅ]/g, '').replace(/[̀͂]/g, '́').replace(/́+/g, '́').normalize('NFC');
+    return s.replace(/\s+/g, ' ').trim();
+  }
+  // Voz del sistema para un idioma ('es', 'he', 'el'); prefiere la región indicada y las voces locales. null si no hay.
+  function vozPara(voces, idioma, region) {
+    const base = idioma === 'he' ? ['he', 'iw'] : [idioma];
+    const vs = (voces || []).filter(v => base.includes(String(v.lang || '').toLowerCase().replace('_', '-').split('-')[0]));
+    if (!vs.length) return null;
+    const pref = region ? `${idioma}-${region}`.toLowerCase() : '';
+    const punt = v => (pref && String(v.lang).toLowerCase().replace('_', '-') === pref ? 2 : 0) + (v.localService ? 1 : 0) + (v.default ? .5 : 0);
+    return vs.slice().sort((a, b) => punt(b) - punt(a))[0];
+  }
+
+  return { TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
     vecinosFechados, despuesDe, contemporaneos, compararEvento, esDiluvio, lineaDeTiempo, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
@@ -1061,7 +1128,8 @@ if (typeof document !== 'undefined') (function () {
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
   const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, focoHash: undefined, aviso: '',
     mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map(),
-    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1, colLibro: '', colSexo: '' };
+    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1, colLibro: '', colSexo: '',
+    comparar: store.get('biblia.comparar', false) === true, escuchar: false, videoPedido: null, hablarTrasCarga: null };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   // Enlace a un versículo: #leer/Ex/7/7 (los enlaces antiguos #leer/7/7 se leen como Génesis).
@@ -1152,6 +1220,7 @@ if (typeof document !== 'undefined') (function () {
       <div class="plan">
       <h2 class="titulo-seccion">Plan de lectura${varios && libroSel ? `<span class="sr">: ${esc(libroSel.nombre)}</span>` : ''}</h2>
       ${selector}
+      ${elegido ? videoLibroHTML(elegido) : ''}
       ${plan}
       ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}</div></div>`;
   }
@@ -1178,7 +1247,7 @@ if (typeof document !== 'undefined') (function () {
         if (j === 0 && si === 0 && s.texto) { const t = s.texto.trimStart(), c = Array.from(t)[0] || ''; return `<span class="capitular" aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c)}</span>${esc(t.slice(c.length))}`; }
         return esc(s.texto);
       }).join('');
-      return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${partes} </span>`;
+      return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${marcaVariante(v.ref, v.n)}${partes} </span>`;
     }).join('');
     const nuevos = N.primerasApariciones(D, p);
     return `<div class="pasaje-vista"><article class="lectura">
@@ -1187,9 +1256,10 @@ if (typeof document !== 'undefined') (function () {
         <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
         <h1 tabindex="-1">${esc(p.titulo)}</h1>
         ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}</header>
-      <div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
-      <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.</p>
-      ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}
+      ${herramientasPasajeHTML()}
+      ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
+      <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.${ORIG.o && N.variantesDe(ORIG.o, vs.map(v => v.ref)).length ? ' «var.» señala una variante entre manuscritos.' : ''}</p>
+      ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}`}
       <section class="nuevo" aria-labelledby="t-nuevo"><h2 id="t-nuevo">Lo nuevo en este pasaje</h2>
         ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section>
       <nav class="pasos-pasaje" aria-label="Pasajes">
@@ -1283,6 +1353,7 @@ if (typeof document !== 'undefined') (function () {
         <p class="meta">${tr}, con los supuestos elegidos en Tiempo.</p></section>`;
     }
     if (!html) html = `<p class="vacio-txt">${estado.activo ? 'Este versículo no tiene personas, vínculos ni edades en los datos. Pulsa otro número o vuelve a todo el pasaje.' : 'Este pasaje no tiene personas, vínculos ni edades en los datos.'}</p>`;
+    html += sec('De dónde sale este texto', origenAcompHTML(refs), I('M6 3h6l3 3v11H6zM12 3v3h3M8.5 10h4M8.5 13h4'));
     return `<div class="acomp-cab">
         <button type="button" class="acomp-asa" data-hoja aria-expanded="${!!estado.hoja}" aria-controls="acomp-cuerpo">
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4h12v9H8l-4 3z"/></svg>
@@ -1296,6 +1367,279 @@ if (typeof document !== 'undefined') (function () {
     const a = $('#acompanante'); if (a) { a.innerHTML = acompHTML(); montarMapas(a); }
     store.set('biblia.pos', { pasaje: estado.pasaje.id, v: estado.activo });
     try { history.replaceState(null, '', `#leer/p/${estado.pasaje.id}${estado.activo ? '/' + estado.activo : ''}`); } catch (e) { /* file:// */ }
+    const rv = $('#rep-verso'); if (rv) rv.outerHTML = repVersoHTML();
+  }
+
+  /* ---------- Textos originales: carga bajo demanda ---------- */
+  // datos/originales.js (hebreo, testigos, variantes, videos) y datos/griego-swete.js se inyectan solo cuando
+  // la persona abre la comparación, el audio en lengua original, «De dónde sale este texto», Fuentes o un video.
+  const EJEMPLO = /[?&]ejemplo/.test(location.search);
+  const ORIG = { o: null, g: null, est: { o: '', g: '' }, foco: null };
+  const scripts = new Map();
+  function cargarScript(src) {
+    if (!scripts.has(src)) scripts.set(src, new Promise((ok, mal) => {
+      const s = document.createElement('script'); s.src = src; s.onload = ok;
+      s.onerror = () => { scripts.delete(src); s.remove(); mal(new Error(src)); };
+      document.head.appendChild(s);
+    }));
+    return scripts.get(src);
+  }
+  function cargarOriginales(que, foco) {
+    const qs = que === 'ambos' ? ['o', 'g'] : [que];
+    const pend = qs.filter(q => ORIG.est[q] !== 'ok' && ORIG.est[q] !== 'cargando');
+    if (!pend.length) return;
+    if (foco) ORIG.foco = foco;
+    pend.forEach(q => {
+      ORIG.est[q] = 'cargando';
+      const src = EJEMPLO ? 'pruebas/originales-ejemplo.js' : q === 'o' ? 'datos/originales.js' : 'datos/griego-swete.js';
+      cargarScript(src).then(() => {
+        const v = q === 'o' ? window.BIBLIA_ORIGINALES : window.BIBLIA_GRIEGO;
+        ORIG[q] = v || null; ORIG.est[q] = v ? 'ok' : 'error';
+      }, () => { ORIG.est[q] = 'error'; }).then(() => {
+        if (ORIG.est.o === 'cargando' || ORIG.est.g === 'cargando') return;
+        const f = ORIG.foco; ORIG.foco = null;
+        rerender(f);
+        const h = estado.hablarTrasCarga; estado.hablarTrasCarga = null;
+        if (h) hablar(h.id, h.ks);
+      });
+    });
+    const el = main.querySelector('[data-estado-carga]'); if (el) el.textContent = 'Cargando los textos originales…';
+  }
+  const haySinCargar = q => ORIG.est[q] === '' || ORIG.est[q] === 'error';
+  const NO_DISP = { o: 'Los textos hebreos, manuscritos y variantes aún no están en los datos (datos/originales.js).', g: 'El texto griego aún no está en los datos (datos/griego-swete.js).' };
+  const estadoCarga = q => ORIG.est[q] === 'cargando' ? '<p class="meta" data-estado-carga>Cargando…</p>' : ORIG.est[q] === 'error' ? `<p class="vacio-txt">${NO_DISP[q]} <button type="button" class="enlace-boton" data-reintentar="${q}">Reintentar</button></p>` : '';
+  // Fuente hebrea con buen soporte de vocales y acentos (Noto Serif Hebrew, licencia OFL), pedida solo al ver hebreo.
+  let fuenteHeb = false;
+  function pedirFuenteHebrea() {
+    if (fuenteHeb) return; fuenteHeb = true;
+    const l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = 'https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@400;600&display=swap';
+    document.head.appendChild(l);
+  }
+  const fuenteHebreo = () => { const f = ((ORIG.o && ORIG.o.fuentes) || []).find(x => /lening|wlc|masor|hebr|tanach/i.test(`${x.id} ${x.nombre}`)); return f ? f.nombre : 'Códice de Leningrado'; };
+  const fuenteGriego = () => (ORIG.g && ORIG.g.fuente) || 'Swete 1930';
+  const urlSegura = u => /^https:\/\//i.test(String(u || '')) ? String(u) : '';
+  const extLink = (u, t) => urlSegura(u) ? `<a href="${esc(urlSegura(u))}" target="_blank" rel="noopener noreferrer">${esc(t)}</a> <span class="etiqueta externa">Fuente externa</span>` : '';
+  // Atributos lang/dir de un texto original según su escritura.
+  const attrsOrig = t => { const s = N.escritura(t); return s === 'he' ? ' lang="he" dir="rtl"' : s === 'grc' ? ' lang="grc"' : ''; };
+
+  /* ---------- Comparar lado a lado ---------- */
+  const COLS = {
+    rv: { t: 'Español', idioma: 'es', fuente: () => { const f = ((D.fuentes || []).find(x => /rv/i.test(x.id)) || {}).id; return f ? fuenteNombre(f) : 'Reina-Valera 1909'; } },
+    he: { t: 'Hebreo', idioma: 'he', fuente: fuenteHebreo },
+    gr: { t: 'Griego (LXX)', idioma: 'el', fuente: fuenteGriego }
+  };
+  const estrecho = () => window.matchMedia && window.matchMedia('(max-width: 699px)').matches;
+  // Columnas elegidas, en orden de activación; en teléfono caben dos (las dos últimas elegidas).
+  function columnas() {
+    let c = (store.get('biblia.cols', ['gr', 'rv', 'he']) || []).filter(x => COLS[x]);
+    if (!c.length) c = ['rv', 'he'];
+    if (estrecho() && c.length > 2) c = c.slice(-2);
+    return c;
+  }
+  function alternarColumna(id, on) {
+    let c = columnas().filter(x => x !== id);
+    if (on) c.push(id);
+    if (!c.length) c = [id]; // siempre queda una
+    if (estrecho() && c.length > 2) c = c.slice(-2);
+    store.set('biblia.cols', c);
+  }
+  function herramientasPasajeHTML() {
+    return `<div class="herr-pasaje">
+      <fieldset class="segmentos modo"><legend class="sr">Modo de lectura</legend>${[['leer', 'Leer'], ['comparar', 'Comparar']].map(([v, t]) => `<label><input type="radio" name="modo-pasaje" value="${v}" ${(estado.comparar ? 'comparar' : 'leer') === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
+      <button type="button" class="boton secundario btn-escuchar" data-escuchar aria-expanded="${!!estado.escuchar}" aria-controls="reproductor"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5M16 5a7 7 0 010 10"/></svg>Escuchar</button>
+    </div>${estado.escuchar ? reproductorHTML() : ''}`;
+  }
+  function compararHTML(p) {
+    const orden = ['rv', 'he', 'gr'], sel = columnas(), vis = orden.filter(c => sel.includes(c));
+    const filas = N.alinearOriginales(D, p, ORIG.o, ORIG.g);
+    const cargando = vis.some(c => (c === 'he' && ORIG.est.o !== 'ok') || (c === 'gr' && ORIG.est.g !== 'ok'));
+    const elegir = `<fieldset class="cmp-cols"><legend>Columnas${estrecho() ? ' <span class="meta">(dos en pantallas estrechas)</span>' : ''}</legend>${orden.map(c => `<label class="chip-check"><input type="checkbox" data-col="${c}" ${vis.includes(c) ? 'checked' : ''}><span>${COLS[c].t}</span></label>`).join('')}</fieldset>`;
+    const cab = vis.map(c => `<div class="cmp-cab"><span class="cmp-col-t">${esc(COLS[c].t)}</span><span class="cmp-fuente">${esc(COLS[c].fuente())}</span>${c === 'he' ? estadoCarga('o') : c === 'gr' ? estadoCarga('g') : ''}</div>`).join('');
+    const vars = new Set(ORIG.o ? filas.filter(f => N.variantesDe(ORIG.o, [f.ref]).length).map(f => f.ref) : []);
+    let capPrev = null;
+    const cuerpo = filas.map((f, j) => {
+      const k = `${f.cap}:${f.n}`;
+      const marca = f.cap !== capPrev && j ? `<div class="cmp-capitulo">Capítulo ${f.cap}</div>` : ''; capPrev = f.cap;
+      const celda = c => {
+        const t = c === 'rv' ? f.rv : c === 'he' ? f.he : f.gr;
+        const pend = (c === 'he' && ORIG.est.o === 'cargando') || (c === 'gr' && ORIG.est.g === 'cargando');
+        const attrs = c === 'he' ? ' lang="he" dir="rtl"' : c === 'gr' ? ' lang="grc"' : '';
+        const num = c === 'he' && f.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">Heb. ${esc(f.heNum)}</span>` : '';
+        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${esc(t)}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : 'Sin texto en los datos'}</p>`}</div>`;
+      };
+      return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>`;
+    }).join('');
+    return `<section class="comparar" aria-label="Comparar textos lado a lado" style="--cols:${vis.length}">${elegir}
+      <div class="cmp-tabla" role="group" aria-busy="${cargando}"><div class="cmp-fila cmp-cabecera"><div class="cmp-num" aria-hidden="true"></div>${cab}</div>${cuerpo || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
+      <p class="meta">Versos alineados según la numeración de la Reina-Valera; «Heb.» indica el número en la Biblia hebrea cuando difiere. El hebreo y el griego vienen de fuentes externas, con su licencia en <a href="#fuentes">Fuentes</a>.</p></section>`;
+  }
+
+  /* ---------- Variantes y testigos ---------- */
+  const TIPO_TESTIGO = { codice: 'Códice', rollo: 'Rollo', pentateuco_samaritano: 'Pentateuco samaritano' };
+  const TESTIGO_CONOCIDO = { lxx: 'Septuaginta (LXX)', tm: 'Texto Masorético (TM)', sp: 'Pentateuco samaritano' };
+  const nombreTestigo = id => { const t = ((ORIG.o && ORIG.o.testigos) || []).find(x => x.id === id); return t ? t.nombre : (TESTIGO_CONOCIDO[String(id).toLowerCase()] || id); };
+  function marcaVariante(ref, n) {
+    if (!ORIG.o || !N.variantesDe(ORIG.o, [ref]).length) return '';
+    return `<button type="button" class="marca-var" data-variante="${esc(ref)}" title="Variante entre manuscritos: ver las lecturas" aria-label="Variante entre manuscritos en el versículo ${n}">var.</button>`;
+  }
+  function varianteHTML(v) {
+    return `<article class="variante"><p class="var-cab"><strong>${refHTML(v.ref)}</strong>${v.tema ? ` · ${esc(v.tema)}` : ''}</p>
+      <div class="lecturas">${(v.lecturas || []).map(l => `<div class="lectura-var">
+        <p class="lv-testigos">${(l.testigos || []).map(t => `<span class="etiqueta">${esc(nombreTestigo(t))}</span>`).join(' ')}</p>
+        ${l.texto_original ? `<p class="lv-orig"${attrsOrig(l.texto_original)}>${esc(l.texto_original)}</p>` : ''}
+        ${l.traduccion_es ? `<p class="lv-trad">«${esc(l.traduccion_es)}»</p>` : ''}</div>`).join('')}</div>
+      ${v.nota ? `<p class="meta">${esc(v.nota)}</p>` : ''}
+      <p class="meta">Fuente: ${esc(v.fuente || 'sin indicar')} ${extLink(v.url_fuente, 'Ver la fuente')}</p></article>`;
+  }
+  function testigoHTML(t) {
+    const datos = [t.idioma, t.fecha ? `${t.fecha}${t.fecha_certeza ? ` (${t.fecha_certeza})` : ''}` : '', t.institucion].filter(Boolean).map(esc).join(' · ');
+    return `<li class="testigo"><span class="testigo-cab"><strong>${esc(t.nombre || t.id)}</strong><span class="etiqueta">${esc(TIPO_TESTIGO[t.tipo] || t.tipo || 'Testigo')}</span></span>
+      ${datos ? `<span class="meta">${datos}</span>` : ''}${t.nota ? `<span class="meta">${esc(t.nota)}</span>` : ''}
+      ${urlSegura(t.url) ? `<span>${extLink(t.url, 'Ver el manuscrito')}</span>` : ''}</li>`;
+  }
+  const QUE_ES = `<details class="plegable"><summary>Qué son el TM, la LXX y Qumrán</summary><dl class="que-es">
+      <dt>TM · Texto Masorético</dt><dd>El texto hebreo que copiaron los masoretas, escribas judíos que le añadieron vocales y acentos. El Códice de Leningrado es su manuscrito completo más usado hoy. La Reina-Valera traduce un texto hebreo de esta tradición.</dd>
+      <dt>LXX · Septuaginta</dt><dd>Traducción griega antigua de las Escrituras hebreas. A veces refleja un texto hebreo distinto del masorético; el Nuevo Testamento la cita a menudo.</dd>
+      <dt>Qumrán · Rollos del Mar Muerto</dt><dd>Manuscritos hallados en cuevas junto al mar Muerto, entre ellos copias de libros bíblicos más antiguas que los códices medievales. Unas veces coinciden con el TM y otras con la LXX o con el Pentateuco samaritano: por eso ayudan a ver de dónde sale cada lectura.</dd>
+      <dt>Pentateuco samaritano</dt><dd>Los cinco libros de Moisés en hebreo, tal como los transmitió la comunidad samaritana, con su propia escritura.</dd></dl>
+      <p class="meta">Las fechas de cada manuscrito vienen de sus fuentes, con su grado de certeza.</p></details>`;
+  function origenAcompHTML(refs) {
+    if (ORIG.est.o !== 'ok') return `<p class="contexto">Qué manuscritos antiguos contienen ${estado.activo ? 'este versículo' : 'este pasaje'} y dónde difieren entre sí.</p>
+      ${ORIG.est.o === 'cargando' ? '<p class="meta" data-estado-carga>Cargando…</p>' : ORIG.est.o === 'error' ? `<p class="vacio-txt">${NO_DISP.o} <button type="button" class="enlace-boton" data-reintentar="o">Reintentar</button></p>` : '<button type="button" class="boton mini-boton secundario" data-cargar-origen>Ver manuscritos y variantes</button>'}${QUE_ES}`;
+    const ts = N.testigosDe(ORIG.o, refs), vs = N.variantesDe(ORIG.o, refs);
+    return `${vs.length ? `<p class="meta">${vs.length === 1 ? 'Una variante' : vs.length + ' variantes'} entre manuscritos:</p>${vs.map(varianteHTML).join('')}` : `<p class="contexto">Los datos no registran variantes en ${estado.activo ? 'este versículo' : 'este pasaje'}.</p>`}
+      ${ts.length ? `<p class="meta">Manuscritos que contienen ${estado.activo ? 'este versículo' : 'parte de este pasaje'}:</p><ul class="testigos">${ts.map(testigoHTML).join('')}</ul>` : '<p class="vacio-txt">Ningún manuscrito de los datos cubre este pasaje.</p>'}${QUE_ES}`;
+  }
+  function abrirVariante(ref) {
+    const vs = ORIG.o ? N.variantesDe(ORIG.o, [ref]) : [];
+    if (vs.length) abrirDetalle(`Variante en ${ref}`, vs.map(varianteHTML).join('') + '<p class="meta">Lecturas lado a lado, cada una con los manuscritos que la traen.</p>');
+  }
+
+  /* ---------- Escuchar (voz sintética del dispositivo) ---------- */
+  const IDIOMAS = { es: { t: 'Español', lang: 'es-ES', region: 'ES', nombre: 'español' }, he: { t: 'Hebreo', lang: 'he-IL', region: 'IL', nombre: 'hebreo' }, el: { t: 'Griego', lang: 'el-GR', region: 'GR', nombre: 'griego' } };
+  const SINTESIS = typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
+  const habla = { gen: 0, cola: [], i: 0, idioma: store.get('biblia.vozIdioma', 'es'), vel: +store.get('biblia.vozVel', 1) || 1, k: null, estado: 'parado' };
+  if (!IDIOMAS[habla.idioma]) habla.idioma = 'es';
+  const voces = () => { try { return SINTESIS ? speechSynthesis.getVoices() : []; } catch (e) { return []; } };
+  const vozDe = id => N.vozPara(voces(), id, IDIOMAS[id].region);
+  if (SINTESIS) try { speechSynthesis.addEventListener('voiceschanged', () => { const el = $('#rep-voz'); if (el) el.innerHTML = vozEstadoHTML(); }); } catch (e) { /* sin evento */ }
+  function textoDe(id, ref) {
+    if (id === 'he') { const h = ORIG.o && ORIG.o.hebreo && ORIG.o.hebreo[ref]; return h ? h.t : ''; }
+    if (id === 'el') return (ORIG.g && ORIG.g.texto && ORIG.g.texto[ref]) || '';
+    const v = N.versiculosDe(D, { inicio: ref, fin: ref })[0]; return v ? v.texto : '';
+  }
+  function marcarSonando(k) {
+    habla.k = k;
+    document.querySelectorAll('.sonando').forEach(el => el.classList.remove('sonando'));
+    if (!k) return;
+    document.querySelectorAll(`[data-v="${CSS.escape(k)}"]`).forEach(el => el.classList.add('sonando'));
+    const el = document.querySelector(`.vers[data-v="${CSS.escape(k)}"], .cmp-fila[data-v="${CSS.escape(k)}"]`);
+    if (el) { const r = el.getBoundingClientRect(); if (r.top < 80 || r.bottom > window.innerHeight - 140) el.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+  }
+  function pintarRep() {
+    const el = $('#rep-ctrl'); if (el) el.innerHTML = repCtrlHTML();
+    const r = main.querySelector(`input[name="voz-idioma"][value="${habla.idioma}"]`);
+    if (r && !r.checked) { r.checked = true; const v = $('#rep-voz'); if (v) v.innerHTML = vozEstadoHTML(); }
+  }
+  function parar() {
+    habla.gen++; habla.cola = []; habla.estado = 'parado';
+    if (SINTESIS) try { speechSynthesis.cancel(); } catch (e) { /* nada */ }
+    marcarSonando(null); pintarRep();
+  }
+  function hablar(id, ks) {
+    if (!SINTESIS || !estado.pasaje) return;
+    const lb = N.libroDe(estado.pasaje);
+    const cola = ks.map(k => ({ k, t: N.textoParaVoz(textoDe(id, `${lb} ${k}`), id) })).filter(x => x.t);
+    parar();
+    if (!cola.length) { const e = $('#rep-voz'); if (e) e.innerHTML = `<span class="vacio">No hay texto en ${IDIOMAS[id].nombre} para ${ks.length === 1 ? 'este versículo' : 'este pasaje'} en los datos.</span>`; return; }
+    Object.assign(habla, { cola, i: 0, idioma: id, estado: 'sonando' });
+    const gen = habla.gen;
+    const sig = () => {
+      if (gen !== habla.gen) return;
+      if (habla.i >= habla.cola.length) { habla.estado = 'parado'; marcarSonando(null); pintarRep(); return; }
+      const x = habla.cola[habla.i], u = new SpeechSynthesisUtterance(x.t), v = vozDe(id);
+      u.lang = v ? v.lang : IDIOMAS[id].lang; if (v) u.voice = v; u.rate = habla.vel;
+      u.onend = () => { if (gen === habla.gen) { habla.i++; sig(); } };
+      u.onerror = ev => { if (gen === habla.gen && ev.error !== 'interrupted' && ev.error !== 'canceled') { habla.i++; sig(); } };
+      marcarSonando(x.k);
+      speechSynthesis.speak(u);
+    };
+    sig(); pintarRep();
+  }
+  function pausar() {
+    if (!SINTESIS) return;
+    if (habla.estado === 'sonando') { speechSynthesis.pause(); habla.estado = 'pausa'; }
+    else if (habla.estado === 'pausa') { speechSynthesis.resume(); habla.estado = 'sonando'; }
+    pintarRep();
+  }
+  const versosPasaje = () => estado.pasaje ? N.versiculosDe(D, estado.pasaje).map(v => `${v.cap}:${v.n}`) : [];
+  // Pide los textos que necesita un idioma y, si ya están, empieza a hablar.
+  function escucharEn(id, ks, foco) {
+    const q = id === 'he' ? 'o' : id === 'el' ? 'g' : null;
+    if (q && ORIG.est[q] !== 'ok') { habla.idioma = id; estado.hablarTrasCarga = { id, ks }; cargarOriginales(q, foco); return; }
+    hablar(id, ks);
+  }
+  function vozEstadoHTML() {
+    if (!SINTESIS) return '<span class="vacio">Este navegador no tiene síntesis de voz.</span>';
+    const id = habla.idioma, v = vozDe(id);
+    if (v) return `Voz: ${esc(v.name)} <span class="meta">(${esc(v.lang)})</span>`;
+    if (!voces().length) return '<span class="meta">Buscando las voces del dispositivo…</span>';
+    return `<span class="vacio">No hay voz de ${IDIOMAS[id].nombre} en este dispositivo.</span>
+      <details class="plegable"><summary>Cómo instalar una voz de ${IDIOMAS[id].nombre}</summary><ul class="instalar-voz">
+        <li><strong>Windows:</strong> Configuración › Hora e idioma › Voz › Agregar voces; elige ${IDIOMAS[id].t.toLowerCase()} y reinicia el navegador. Microsoft Edge ofrece además voces en línea de varios idiomas.</li>
+        <li><strong>Android:</strong> Ajustes › Sistema › Idiomas › Salida de texto a voz › motor de Google (ajustes) › Instalar datos de voz › ${IDIOMAS[id].t.toLowerCase()}.</li>
+        <li><strong>iPhone y iPad:</strong> Ajustes › Accesibilidad › Contenido leído › Voces › ${IDIOMAS[id].t.toLowerCase()} y descarga una voz.</li>
+      </ul><p class="meta">Los menús cambian según la versión del sistema.</p></details>`;
+  }
+  const repVersoHTML = () => `<button type="button" class="boton mini-boton secundario" id="rep-verso" data-rep="verso"${estado.activo ? '' : ' hidden'}>Solo el versículo ${esc(estado.activo ? estado.activo.split(':')[1] : '')}</button>`;
+  function repCtrlHTML() {
+    const s = habla.estado;
+    return `<button type="button" class="boton mini-boton" data-rep="${s === 'parado' ? 'pasaje' : 'pausa'}">${s === 'sonando' ? 'Pausa' : s === 'pausa' ? 'Reanudar' : 'Escuchar el pasaje'}</button>
+      ${repVersoHTML()}
+      <button type="button" class="boton mini-boton secundario" data-rep="parar"${s === 'parado' ? ' disabled' : ''}>Detener</button>`;
+  }
+  function reproductorHTML() {
+    return `<section class="reproductor" id="reproductor" aria-label="Escuchar el pasaje">
+      <p class="voz-aviso"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3a7 7 0 100 14 7 7 0 000-14zM10 6.5v4M10 13.5v.5"/></svg>Voz sintética del dispositivo · pronunciación moderna, no la antigua</p>
+      <fieldset class="segmentos"><legend class="sr">Idioma</legend>${Object.entries(IDIOMAS).map(([v, x]) => `<label><input type="radio" name="voz-idioma" value="${v}" ${habla.idioma === v ? 'checked' : ''}><span>${x.t}</span></label>`).join('')}</fieldset>
+      <div class="rep-ctrl" id="rep-ctrl">${repCtrlHTML()}</div>
+      <label class="rep-vel">Velocidad <input type="range" id="rep-vel" min="0.5" max="1.5" step="0.1" value="${habla.vel}"><output id="rep-vel-txt">${habla.vel.toFixed(1).replace('.', ',')}×</output></label>
+      <div class="rep-voz" id="rep-voz" aria-live="polite">${vozEstadoHTML()}</div>
+      <p class="meta">${habla.idioma === 'he' ? `Texto: ${esc(fuenteHebreo())}.` : habla.idioma === 'el' ? `Texto: ${esc(fuenteGriego())}.` : 'Texto: Reina-Valera 1909.'} Se oye el versículo resaltado.</p></section>`;
+  }
+
+  /* ---------- Video del libro (fachada: no se carga nada de YouTube hasta pulsar) ---------- */
+  const iframeVideo = v => `<div class="video-marco"><iframe src="https://www.youtube-nocookie.com/embed/${esc(v.youtube_id)}?autoplay=1&amp;rel=0" title="${esc(v.titulo || 'Video')}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
+  function videoLibroHTML(lb) {
+    const nom = N.nombreLibro(D, lb);
+    const pie = v => `<p class="video-pie"><strong>${esc(v.titulo || 'Video')}</strong>${v.rango ? ` <span class="meta">· ${esc(v.rango)}</span>` : ''}<br>
+      <span class="video-rotulo">Video de ${esc(v.fuente || 'Proyecto Biblia')} · <span class="etiqueta externa">Fuente externa</span></span>${urlSegura(v.url) ? ` <a href="${esc(urlSegura(v.url))}" target="_blank" rel="noopener noreferrer">Ver la fuente</a>` : ''}</p>`;
+    if (ORIG.est.o === 'ok') {
+      const v = N.videosDeLibro(ORIG.o, lb)[0];
+      if (!v) return estado.videoPedido === lb ? `<p class="meta video-libro">No hay video de ${esc(nom)} en los datos.</p>` : '';
+      const cuerpo = estado.videoPedido === lb ? iframeVideo(v)
+        : `<button type="button" class="video-fachada" data-video="${esc(v.youtube_id)}" aria-label="Reproducir el video: ${esc(v.titulo || nom)}"><img src="https://i.ytimg.com/vi/${esc(v.youtube_id)}/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="video-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 5v10l8-5z"/></svg></span></button>`;
+      return `<section class="video-libro" aria-label="Video sobre ${esc(nom)}">${cuerpo}${pie(v)}</section>`;
+    }
+    return `<section class="video-libro" aria-label="Video sobre ${esc(nom)}"><button type="button" class="video-fachada vacia" data-video-cargar="${esc(lb)}">
+        <span class="video-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 5v10l8-5z"/></svg></span><span class="video-invita">De qué trata ${esc(nom)}: ver el video</span></button>
+      ${ORIG.est.o === 'cargando' ? '<p class="meta" data-estado-carga>Cargando…</p>' : ORIG.est.o === 'error' ? `<p class="vacio-txt">${NO_DISP.o}</p>` : '<p class="video-pie"><span class="video-rotulo">Video de Proyecto Biblia · <span class="etiqueta externa">Fuente externa</span></span> <span class="meta">Se carga desde YouTube al pulsar.</span></p>'}</section>`;
+  }
+
+  /* ---------- Fuentes: textos originales ---------- */
+  function fuentesOriginalesHTML() {
+    const O = ORIG.o, G = ORIG.g;
+    const lista = [...((O && O.fuentes) || []), ...(G ? [{ id: 'griego', nombre: G.fuente, licencia: G.licencia, url: G.url }] : [])];
+    const gpl = G && /gpl/i.test(G.licencia || '');
+    return `<section><h2>De dónde sale el texto</h2>
+      <p>La app muestra junto a la Reina-Valera el texto hebreo y el griego de la Septuaginta, y los manuscritos antiguos que contienen cada pasaje, con enlace a su institución. Las imágenes de los manuscritos no se copian: se enlazan.</p>
+      ${QUE_ES.replace('<details class="plegable">', '<details class="plegable" open>')}
+      ${estadoCarga('o')}${estadoCarga('g')}
+      ${lista.length ? `<ul class="fuentes">${lista.map(f => `<li><strong>${esc(f.nombre || f.id)}</strong><br>Licencia: ${esc(f.licencia || 'sin indicar')}${urlSegura(f.url) ? `<br>${extLink(f.url, f.url)}` : ''}</li>`).join('')}</ul>` : ''}
+      ${gpl ? `<p class="aviso-licencia"><strong>Aviso de licencia del texto griego:</strong> ${esc(G.fuente)} se distribuye con licencia GNU GPL versión 3 (GPL-3.0). Puedes copiarlo, modificarlo y redistribuirlo bajo esa misma licencia, conservando este aviso; se ofrece sin ninguna garantía. Texto de la licencia: <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer">gnu.org/licenses/gpl-3.0</a> <span class="etiqueta externa">Fuente externa</span></p>` : ''}
+      ${O && (O.testigos || []).length ? `<h3>Manuscritos</h3><ul class="testigos">${O.testigos.map(testigoHTML).join('')}</ul>` : ''}
+      <h3>Voz</h3><p>El audio usa la voz sintética del dispositivo: pronunciación moderna, no la antigua. Los videos se cargan desde YouTube (youtube-nocookie.com) solo al pulsarlos.</p></section>`;
   }
 
   /* ---------- Árbol ---------- */
@@ -1738,6 +2082,7 @@ if (typeof document !== 'undefined') (function () {
         <dt>${insignia('calculo')}</dt><dd>Cifra obtenida por operación aritmética a partir del texto (sumas de edades, años desde Adán). No está escrita como tal.</dd></dl></section>
       <section><h2>TM y LXX</h2><p><strong>TM — Texto Masorético:</strong> texto hebreo transmitido por los masoretas; base de la mayoría de las Biblias en español (como la Reina-Valera).</p>
         <p><strong>LXX — Septuaginta:</strong> traducción griega antigua del Antiguo Testamento. En Génesis 5 y 11 da a menudo cifras distintas (suele sumar 100 años a la edad al engendrar) e incluye a un Cainán en Gn 11 que el TM no menciona.</p></section>
+      ${fuentesOriginalesHTML()}
       ${(C => C ? `<section><h2>Tiempo y cronología</h2>
         <p>El texto bíblico no da fechas de calendario. La app sitúa los sucesos en <strong>${esc(unidadTxt(C))}</strong>, encadenando edades que el texto sí da (por ejemplo, la edad de cada padre al engendrar). Por eso <strong>todo año es ${insignia('calculo')}</strong>: no está escrito así en el texto, y cada suceso muestra la cadena de pasos y sus versículos.</p>
         <p>No se dan fechas antes de Cristo: convertir estos años exigiría supuestos ajenos al texto. El TM y la LXX dan edades distintas, así que los años cambian según la tradición.</p>
@@ -2140,6 +2485,7 @@ if (typeof document !== 'undefined') (function () {
     const { vista, args } = ruta();
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
+    trasPintar(vista);
     montarMapas(main);
     conectoresTodos();
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? PESTANA[vista] || vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
@@ -2153,9 +2499,21 @@ if (typeof document !== 'undefined') (function () {
     if (foco !== false && !primera) { const h = main.querySelector('h1'); if (h) h.focus({ preventScroll: true }); }
     primera = false;
   }
+  // Carga bajo demanda lo que pide la vista recién pintada (Fuentes, o la comparación si quedó elegida).
+  function trasPintar(vista) {
+    if (vista === 'fuentes') { if (ORIG.est.o === '') cargarOriginales('o'); if (ORIG.est.g === '') cargarOriginales('g'); }
+    const cmp = main.querySelector('.comparar');
+    if (cmp) {
+      const c = columnas();
+      if (c.includes('he') && ORIG.est.o === '') cargarOriginales('o');
+      if (c.includes('gr') && ORIG.est.g === '') cargarOriginales('g');
+    }
+    if (ORIG.est.o === 'ok' && (cmp || main.querySelector('.lv-orig[lang="he"]'))) pedirFuenteHebrea();
+  }
   function rerender(selectorFoco) { const y = window.scrollY; render(false); window.scrollTo(0, y); if (selectorFoco) { const el = main.querySelector(selectorFoco); if (el) el.focus(); } }
 
-  window.addEventListener('hashchange', () => { cerrar(detDlg); cerrar(fichaDlg); estado.focoHash = undefined; render(); });
+  if (window.matchMedia) { const mq = window.matchMedia('(max-width: 699px)'); if (mq.addEventListener) mq.addEventListener('change', () => { if (main.querySelector('.comparar')) rerender(); }); }
+  window.addEventListener('hashchange', () => { parar(); cerrar(detDlg); cerrar(fichaDlg); estado.focoHash = undefined; render(); });
   // Secciones del plan: se recuerda en la sesión cuáles abrió o cerró la persona.
   document.addEventListener('toggle', e => {
     const s = e.target; if (!s || !s.dataset) return;
@@ -2172,6 +2530,26 @@ if (typeof document !== 'undefined') (function () {
     if (t instanceof HTMLDialogElement && t.open) { cerrar(t); return; }
     const cn = t.closest('[data-cerrar-nuevas]'); if (cn) { ocultarNuevas(); if (cn.tagName !== 'A') return; }
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
+    const va = t.closest('[data-variante]'); if (va) { abrirVariante(va.dataset.variante); return; }
+    if (t.closest('[data-escuchar]')) {
+      estado.escuchar = !estado.escuchar; if (!estado.escuchar) parar();
+      const b = main.querySelector('[data-escuchar]'), r = $('#reproductor');
+      if (b) { b.setAttribute('aria-expanded', estado.escuchar); if (r) r.remove(); if (estado.escuchar) b.closest('.herr-pasaje').insertAdjacentHTML('afterend', reproductorHTML()); }
+      return;
+    }
+    const rp = t.closest('[data-rep]'); if (rp) {
+      const a = rp.dataset.rep;
+      if (a === 'pasaje') escucharEn(habla.idioma, versosPasaje(), '[data-rep]');
+      else if (a === 'verso' && estado.activo) escucharEn(habla.idioma, [estado.activo], '[data-rep]');
+      else if (a === 'pausa') pausar();
+      else if (a === 'parar') parar();
+      return;
+    }
+    const hb = t.closest('[data-hablar]'); if (hb) { const [id, k] = hb.dataset.hablar.split('|'); habla.idioma = id; if (habla.k === k && habla.estado !== 'parado') parar(); else escucharEn(id, [k]); return; }
+    if (t.closest('[data-cargar-origen]')) { cargarOriginales('o'); return; }
+    const rt = t.closest('[data-reintentar]'); if (rt) { cargarOriginales(rt.dataset.reintentar); return; }
+    const vc = t.closest('[data-video-cargar]'); if (vc) { estado.videoPedido = vc.dataset.videoCargar; cargarOriginales('o'); return; }
+    const vd = t.closest('[data-video]'); if (vd) { const v = ORIG.o && N.videosDeLibro(ORIG.o, estado.libro).find(x => x.youtube_id === vd.dataset.video); if (v) { estado.videoPedido = estado.libro; vd.outerHTML = iframeVideo(v); } return; }
     const cu = t.closest('[data-curio]'); if (cu) { detalleCurio(cu.dataset.curio); return; }
     const ia = t.closest('[data-ir-arbol]'); if (ia) { irArbol(ia.dataset.irArbol); return; }
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
@@ -2204,6 +2582,13 @@ if (typeof document !== 'undefined') (function () {
     else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
     else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'col-libro' || t.name === 'col-sexo') { estado[t.name === 'col-libro' ? 'colLibro' : 'colSexo'] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
+    else if (t.name === 'modo-pasaje') { estado.comparar = t.value === 'comparar'; store.set('biblia.comparar', estado.comparar); rerender(`input[name="modo-pasaje"][value="${t.value}"]`); }
+    else if (t.dataset && t.dataset.col) { alternarColumna(t.dataset.col, t.checked); rerender(`input[data-col="${t.dataset.col}"]`); }
+    else if (t.name === 'voz-idioma') {
+      parar(); habla.idioma = t.value; store.set('biblia.vozIdioma', t.value);
+      const r = $('#reproductor'); if (r) { r.outerHTML = reproductorHTML(); const i = main.querySelector(`input[name="voz-idioma"][value="${t.value}"]`); if (i) i.focus(); }
+      if (t.value !== 'es') cargarOriginales(t.value === 'he' ? 'o' : 'g', `input[name="voz-idioma"][value="${t.value}"]`);
+    }
     else if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
     else if (t.name === 'vista-arbol') { estado.vistaArbol = t.value; store.set('biblia.vistaArbol', t.value); rerender(`input[name="vista-arbol"][value="${t.value}"]`); if (estado.vistaArbol === 'grafico') centrarLienzos(); }
   });
@@ -2234,6 +2619,7 @@ if (typeof document !== 'undefined') (function () {
   const soltar = () => { if (arrastre) { arrastre.l.classList.remove('arrastrando'); arrastre = null; } };
   document.addEventListener('pointerup', soltar); document.addEventListener('pointercancel', soltar);
   document.addEventListener('input', e => {
+    if (e.target.id === 'rep-vel') { habla.vel = +e.target.value || 1; store.set('biblia.vozVel', habla.vel); const o = $('#rep-vel-txt'); if (o) o.textContent = habla.vel.toFixed(1).replace('.', ',') + '×'; }
     if (e.target.id === 'buscar-lugar') { estado.mapaQ = e.target.value; const r = $('#res-lugar'); if (r) r.innerHTML = resultadosLugar(); }
     if (e.target.id === 'buscar') { estado.q = e.target.value; const r = $('#resultados'); if (r) r.innerHTML = resultadosHTML(); }
   });
