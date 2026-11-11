@@ -20,6 +20,7 @@
       <svg class="marca-icono" viewBox="0 0 40 40" aria-hidden="true"><rect class="tesela" x="0" y="0" width="40" height="40" rx="10"/><path class="hoja-l" d="M7 12c4-1.6 8.5-1.6 13 .8v17.5c-4.5-2.3-9-2.3-13-.8z"/><path class="hoja-r" d="M33 12c-4-1.6-8.5-1.6-13 .8v17.5c4.5-2.3 9-2.3 13-.8z"/><path class="hilo" d="M20 13v20"/><circle class="nudo" cx="20" cy="33.5" r="1.8"/></svg>
       <span class="marca-texto"><span class="marca-nombre">Compañero de lectura</span><span class="marca-libro">Biblia</span></span>
     </a>
+    <button type="button" class="perfil-btn" id="perfil-btn" aria-haspopup="dialog" aria-controls="perfiles">Perfil</button>
   </header>
   <nav class="nav-principal" aria-label="Secciones">
     <a href="#leer" data-vista="leer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.2 6-1.2 9 .8 3-2 6-2 9-.8v13c-3-1.2-6-1.2-9 .8-3-2-6-2-9-.8z"/><path d="M12 6.3v13.4"/></svg><span>Leer</span></a>
@@ -53,6 +54,12 @@
   <div class="visor-pie" id="visor-pie"></div>
 </dialog>
 
+<dialog id="perfiles" class="dlg-perfiles" aria-labelledby="perfiles-titulo">
+  <div class="dialogo-cab"><h2 id="perfiles-titulo">Perfiles</h2><button type="button" class="cerrar" data-cerrar aria-label="Cerrar perfiles"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+  <div class="dialogo-cuerpo"></div>
+</dialog>
+<dialog id="pin" class="dlg-pin" aria-labelledby="pin-titulo"></dialog>
+
 <div id="nuevas" class="nuevas" role="status" aria-live="polite" hidden></div>
 <div id="aviso" class="aviso" role="status" hidden>Hay una versión nueva <button type="button" id="actualizar" class="boton">Actualizar</button></div>
 
@@ -60,6 +67,7 @@
 <script src="datos/mapa-base.js"></script>
 <script src="datos/recursos.js"></script>
 <script src="datos/recorridos.js"></script>
+<script src="datos/contenido.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -765,5 +765,101 @@ console.log('\nRecorridos (pruebas/recorridos-ejemplo.js)');
   }
 }
 
+// ---- Perfiles locales y contenido fuerte (pruebas/contenido-ejemplo.js) ----
+{
+  const cx = cargar(path.join(aqui, 'contenido-ejemplo.js'), path.join(aqui, '..', 'app.js'));
+  const P = cx.BibliaNucleo, C = cx.BIBLIA_CONTENIDO;
+  console.log('\nPerfiles y contenido (ejemplo)');
+  const nino = { id: 'p2', tipo: 'nino' }, adulto = { id: 'p1', tipo: 'adulto', avisar: false }, avisa = { id: 'p3', tipo: 'adulto', avisar: true };
+  prueba('claves por perfil: cada perfil tiene su espacio y no se pisan', () => {
+    assert.equal(P.clavePerfil('p1', 'biblia.pasajesLeidos'), 'biblia.p.p1.pasajesLeidos');
+    assert.equal(P.clavePerfil('p2', 'biblia.pasajesLeidos'), 'biblia.p.p2.pasajesLeidos');
+    assert.equal(P.clavePerfil('p2', 'notas'), 'biblia.p.p2.notas', 'claves futuras sin prefijo también');
+    assert.ok(P.esClaveLegada('biblia.pos') && !P.esClaveLegada('biblia.perfiles') && !P.esClaveLegada('biblia.p.p1.pos') && !P.esClaveLegada('otra.app'));
+    const ks = ['biblia.p.p1.pos', 'biblia.p.p1.trad', 'biblia.p.p12.pos', 'biblia.p.p2.pos', 'biblia.perfiles'];
+    assert.deepEqual(j(P.clavesDePerfil(ks, 'p1')), ['biblia.p.p1.pos', 'biblia.p.p1.trad'], 'p1 no arrastra las de p12');
+  });
+  prueba('migración: los datos de antes pasan al primer perfil (adulto) sin perder nada', () => {
+    const m = P.migrarPerfiles(['biblia.pos', 'biblia.pasajesLeidos', 'biblia.supuestos', 'otra.cosa'], null);
+    assert.equal(m.nuevo, true);
+    assert.equal(m.registro.lista.length, 1);
+    assert.equal(m.registro.lista[0].tipo, 'adulto');
+    assert.equal(m.registro.activo, m.registro.lista[0].id);
+    assert.equal(m.registro.pin, null);
+    assert.deepEqual(j(m.mover), [['biblia.pos', 'biblia.p.p1.pos'], ['biblia.pasajesLeidos', 'biblia.p.p1.pasajesLeidos'], ['biblia.supuestos', 'biblia.p.p1.supuestos']]);
+    const r = { v: 1, activo: 'p2', pin: 'sha256:x', lista: [{ id: 'p1', nombre: 'Ana', tipo: 'adulto' }, { id: 'p2', nombre: 'Leo', tipo: 'nino', color: 'ocre' }] };
+    const m2 = P.migrarPerfiles(['biblia.pos'], r);
+    assert.equal(m2.nuevo, false); assert.equal(m2.mover.length, 0, 'con registro no se mueve nada');
+    assert.equal(m2.registro.activo, 'p2'); assert.equal(m2.registro.lista[1].inicial, 'L');
+    assert.equal(P.normalizarRegistro({ lista: [] }), null);
+    assert.equal(P.normalizarRegistro({ activo: 'p9', lista: [{ id: 'p1', nombre: 'A' }] }).activo, 'p1', 'activo inexistente → el primero');
+  });
+  prueba('nuevo perfil: id libre, tipo y color válidos, inicial del nombre', () => {
+    const p = P.nuevoPerfil([{ id: 'p1' }, { id: 'p2' }], { nombre: '  ñandú ', tipo: 'nino', color: 'verdin' });
+    assert.equal(p.id, 'p3'); assert.equal(p.nombre, 'ñandú'); assert.equal(p.tipo, 'nino'); assert.equal(p.color, 'verdin'); assert.equal(p.inicial, 'Ñ');
+    const q = P.nuevoPerfil([{ id: 'p2' }], { nombre: '', tipo: 'x', color: 'neón' });
+    assert.equal(q.id, 'p3'); assert.equal(q.tipo, 'adulto'); assert.ok(P.COLORES_PERFIL.includes(q.color)); assert.equal(q.nombre, 'Adulto');
+  });
+  prueba('PIN: de niño a adulto se pide; de adulto a niño o sin PIN, no', () => {
+    const r = { pin: 'h', lista: [{ id: 'p1', tipo: 'adulto' }, { id: 'p2', tipo: 'nino' }, { id: 'p3', tipo: 'nino' }] };
+    assert.equal(P.cambioPidePin(r, 'p2', 'p1'), true);
+    assert.equal(P.cambioPidePin(r, 'p1', 'p2'), false);
+    assert.equal(P.cambioPidePin(r, 'p2', 'p3'), false);
+    assert.equal(P.cambioPidePin(Object.assign({}, r, { pin: null }), 'p2', 'p1'), false);
+    assert.ok(P.pinValido('0427') && !P.pinValido('427') && !P.pinValido('12a4') && !P.pinValido('12345'));
+  });
+  prueba('decisión por versículo: niño pliega lo alto y anota lo medio; adulto lo ve todo (o con aviso si lo pide)', () => {
+    const d = (perf, ref) => P.accionVerso(C, perf, ref).accion;
+    assert.equal(d(nino, 'Gn 4:8'), 'plegar'); assert.equal(d(nino, 'Gn 19:4'), 'plegar'); assert.equal(d(nino, 'Gn 19:11'), 'plegar');
+    assert.equal(d(nino, 'Gn 19:12'), 'mostrar'); assert.equal(d(nino, 'Gn 19:3'), 'mostrar');
+    assert.equal(d(nino, 'Ex 2:12'), 'nota'); assert.equal(d(nino, 'Gn 4:7'), 'mostrar');
+    assert.equal(d(adulto, 'Gn 19:5'), 'mostrar'); assert.equal(d(adulto, 'Ex 2:12'), 'mostrar');
+    assert.equal(d(avisa, 'Gn 19:5'), 'aviso'); assert.equal(d(avisa, 'Ex 2:12'), 'nota');
+    assert.equal(P.decisionVerso(nino, null), 'mostrar');
+    assert.equal(P.marcaDe(C, 'Gn 19:7').categoria, 'sexual');
+    assert.equal(P.marcaDe({ marcas: [{ desde: 'Gn 1:1', hasta: 'Gn 1:3', nivel: 'medio' }, { desde: 'Gn 1:2', hasta: 'Gn 1:2', nivel: 'alto' }] }, 'Gn 1:2').nivel, 'alto', 'gana la marca más fuerte');
+    assert.equal(P.marcasContenido({ marcas: [{ desde: 'xx', nivel: 'alto' }, { desde: 'Gn 1:1', nivel: 'bajo' }] }).length, 0, 'marcas ilegibles o de nivel desconocido se ignoran');
+  });
+  prueba('tramos: los versículos plegados seguidos van juntos y conservan sus números', () => {
+    const refs = ['Gn 19:3', 'Gn 19:4', 'Gn 19:5', 'Gn 19:11', 'Gn 19:12'];
+    const t = P.tramosContenido(C, nino, refs);
+    assert.deepEqual(j(t.map(x => [x.accion, x.refs])), [['mostrar', ['Gn 19:3']], ['plegar', ['Gn 19:4', 'Gn 19:5', 'Gn 19:11']], ['mostrar', ['Gn 19:12']]]);
+    assert.equal(P.tramosContenido(C, adulto, refs).length, 1);
+  });
+  prueba('recursos: el niño no ve imágenes sensibles ni de una parte plegada; el adulto, todo', () => {
+    const k = r => P.clave(r);
+    const cain = { id: 'c', tipo: 'arte', sensible: true, rangos: [[k('Gn 4:8'), k('Gn 4:8')]] };
+    const sodoma = { id: 's', tipo: 'arte', sensible: false, rangos: [[k('Gn 19:1'), k('Gn 19:11')]] };
+    const huida = { id: 'h', tipo: 'arte', sensible: false, rangos: [[k('Gn 19:15'), k('Gn 19:26')]] };
+    const audio = { id: 'a', tipo: 'audio', sensible: false, rangos: [[k('Gn 1:1'), k('Gn 50:26')]], institucion: 'LibriVox' };
+    const pb = { id: 'v', tipo: 'video', institucion: 'Proyecto Biblia', url_fuente: 'https://bibleproject.com/es/videos/genesis-1-11/', rangos: [[k('Gn 1:1'), k('Gn 11:32')]] };
+    const otro = { id: 'o', tipo: 'video', institucion: 'Otro canal', url_fuente: 'https://example.org/v', rangos: [[k('Gn 1:1'), k('Gn 11:32')]] };
+    const ks19 = ['Gn 19:1', 'Gn 19:4', 'Gn 19:15', 'Gn 19:20'].map(k);
+    for (const f of [cain, sodoma, huida, audio, pb, otro]) assert.equal(P.recursoPermitido(f, adulto, C, ks19), true, 'adulto: ' + f.id);
+    assert.equal(P.recursoPermitido(cain, nino, C), false, 'sensible');
+    assert.equal(P.recursoPermitido(sodoma, nino, C, ks19), false, 'toca la parte plegada');
+    assert.equal(P.recursoPermitido(huida, nino, C, ks19), true, 'otra escena del capítulo');
+    assert.equal(P.recursoPermitido(audio, nino, C, ks19), true, 'audio de todo el libro (su enlace pide PIN aparte)');
+    assert.equal(P.recursoPermitido(pb, nino, C), true, 'Proyecto Biblia');
+    assert.equal(P.recursoPermitido(otro, nino, C), false, 'otros videos no');
+    assert.equal(P.recursoPermitido(sodoma, nino, C), false, 'sin claves: cualquier solape con lo plegado');
+  });
+  prueba('curiosidades y enlaces: ocultas al niño si su ref cae en lo plegado; Proyecto Biblia sin PIN', () => {
+    assert.equal(P.curiosidadPermitida({ refs: ['Gn 5:3', 'Gn 4:8'] }, nino, C), false);
+    assert.equal(P.curiosidadPermitida({ refs: ['Gn 5:3', 'Ex 2:12'] }, nino, C), true, 'lo medio no se oculta');
+    assert.equal(P.curiosidadPermitida({ refs: ['Gn 4:8'] }, adulto, C), true);
+    assert.ok(P.enlaceLibre('https://bibleproject.com/es/videos/genesis-1-11/'));
+    assert.ok(!P.enlaceLibre('https://es.wikipedia.org/wiki/Abel') && !P.enlaceLibre('https://evil.com/?bibleproject.com/es/'));
+  });
+  const real = path.join(aqui, '..', 'datos', 'contenido.js');
+  if (existsSync(real)) prueba('datos/contenido.js: contrato (refs legibles, nivel y categoría válidos, origen editorial)', () => {
+    const cr = cargar(real, path.join(aqui, '..', 'app.js')), CR = cr.BIBLIA_CONTENIDO;
+    assert.ok(CR && Array.isArray(CR.marcas) && CR.marcas.length);
+    assert.match(String(CR.origen || ''), /editorial/i);
+    assert.equal(cr.BibliaNucleo.marcasContenido(CR).length, CR.marcas.length, 'todas las marcas se leen');
+    for (const m of CR.marcas) { assert.ok(['alto', 'medio'].includes(m.nivel), m.desde); assert.ok(['sexual', 'violencia', 'crueldad'].includes(m.categoria), m.desde); }
+  });
+}
+
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

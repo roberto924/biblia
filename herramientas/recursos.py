@@ -201,6 +201,8 @@ def main():
         modo = 'imagen' if imagen else ('incrustable' if uso == 'incrustable' and yt else 'enlace')
         caps = {(CANON[ka // 1_000_000 - 1], c) for ka, kb in rangos for c in range((ka // 1000) % 1000, (kb // 1000) % 1000 + 1)}
         sensible = bool(imagen) and tipo != 'mapa_antiguo' and (fid in SENSIBLE_IDS or bool(caps & SENSIBLE_CAPS))
+        if imagen and isinstance(a.get('sensible'), bool):  # la auditoría (mirando la imagen) manda
+            sensible = a['sensible']
         relacion = 'contexto' if tipo == 'arqueologia' and fid.startswith(CONTEXTO_PREFIJOS) else 'pasaje'
         salida.append({
             'id': fid, 'tipo': tipo, 'titulo': f['titulo'].strip(), 'descripcion': f.get('descripcion') or '',

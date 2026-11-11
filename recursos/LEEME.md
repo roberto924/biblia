@@ -6,11 +6,11 @@ Las 13 secciones de lectura del plan (6 de Génesis y 7 de Éxodo) tienen al men
 
 ## Totales
 
-99 fichas en `catalogo.json`. 64 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó: aunque LibriVox lo declara descargable, aquí solo queda el enlace. El texto reunido para ChatGPT es `PARA-CHATGPT.md`, en esta misma carpeta.
+119 fichas en `catalogo.json`. 84 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó: aunque LibriVox lo declara descargable, aquí solo queda el enlace. El texto reunido para ChatGPT es `PARA-CHATGPT.md`, en esta misma carpeta.
 
 | Tipo | Fichas |
 | --- | ---: |
-| Arte | 50 |
+| Arte | 70 |
 | Arqueología | 15 |
 | Mapas antiguos | 14 |
 | Video | 10 |
@@ -21,18 +21,19 @@ Referencias (una ficha puede citar más de un libro): Génesis 48, Éxodo 48, Sa
 
 | Uso | Fichas |
 | --- | ---: |
-| Descargable (64 imágenes locales y 5 audios de LibriVox, sin archivo de audio guardado) | 69 |
+| Descargable (84 imágenes locales y 5 audios de LibriVox, sin archivo de audio guardado) | 89 |
 | Solo enlace | 24 |
 | Incrustable (YouTube respondió al oEmbed con título y canal «Proyecto Biblia») | 6 |
 
 | Licencia | Fichas |
 | --- | ---: |
-| Dominio público | 63 |
+| Dominio público | 67 |
 | Desconocida | 16 |
 | Derechos reservados | 11 |
+| CC BY-SA 4.0 | 18 |
 | CC0 | 4 |
-| CC BY-SA 4.0 | 3 |
 | CC BY-SA 3.0 | 2 |
+| CC BY 4.0 | 1 |
 
 No hay descargas con NC, ND o derechos reservados. Las fichas del British Museum quedan en licencia desconocida: su página general habla de CC BY-NC-SA para parte del contenido, pero la ficha del objeto no muestra esa licencia.
 
@@ -48,6 +49,7 @@ No hay descargas con NC, ND o derechos reservados. Las fichas del British Museum
 ## Huecos
 
 - No existe una «estela de la Tabla de las Naciones». En su lugar: el mapa babilónico del mundo (British Museum) y el prisma Weld-Blundell de la lista real sumeria (Ashmolean, AN1923.444, imagen con derechos reservados).
+- No hay lámina de dominio público o CC localizada, con el versículo en el pie, para estos capítulos: Génesis 5, 6, 10, 13, 14, 17, 20, 26, 30, 31, 35, 36, 42, 43 y 48; Éxodo 1, 11, 21–24, 26, 28, 29, 33, 34, 36 y 38. Varios son listas, leyes o instrucciones sin una escena que Doré o Tissot dibujaran en las series revisadas.
 - No se halló una ficha de museo, con licencia abierta, de un ladrillo de adobe con paja identificado como de los trabajadores del relato. El ladrillo EA6020 del Rameseo lleva cartucho de Ramsés II y desgrasante vegetal; queda solo enlace.
 - No se encontró una producción de «salmos actuados» con página oficial y licencia clara.
 - No hay un video comprobado por cada salmo. Hay resumen del libro, «cómo leer los Salmos», el Salmo 8 (solo enlace) y el Salmo 148 (incrustable), más la lectura completa de LibriVox (Salmos 1–150).

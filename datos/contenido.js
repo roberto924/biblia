@@ -1,0 +1,280 @@
+window.BIBLIA_CONTENIDO = {
+ "generado": "2026-11-11T14:01:30+00:00",
+ "origen": "clasificación editorial del proyecto, no del texto bíblico",
+ "criterio": "Clasificación editorial del proyecto para el perfil niño (7-12 años, leyendo con la familia): se pliega (alto) lo sexual explícito o insinuado con detalle, la violación, el incesto, la matanza descrita y el infanticidio; se anota (medio) lo breve o legal. No se marcan menciones sin detalle ni muerte natural. El texto nunca se borra.",
+ "marcas": [
+  {
+   "desde": "Gn 4:8",
+   "hasta": "Gn 4:8",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Caín mata a su hermano Abel, sin descripción gráfica."
+  },
+  {
+   "desde": "Gn 9:20",
+   "hasta": "Gn 9:27",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Noé ebrio y desnudo en su tienda; su hijo lo ve y se sigue una maldición."
+  },
+  {
+   "desde": "Gn 12:14",
+   "hasta": "Gn 12:20",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "El faraón toma a Sarai para su casa porque era hermosa; Dios lo impide con plagas."
+  },
+  {
+   "desde": "Gn 16:2",
+   "hasta": "Gn 16:4",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Sarai da su sierva Agar a Abram como concubina para tener hijos."
+  },
+  {
+   "desde": "Gn 19:4",
+   "hasta": "Gn 19:11",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Los hombres de Sodoma exigen abusar de los visitantes y Lot ofrece a sus hijas."
+  },
+  {
+   "desde": "Gn 19:24",
+   "hasta": "Gn 19:25",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Fuego y azufre destruyen Sodoma, Gomorra y sus habitantes."
+  },
+  {
+   "desde": "Gn 19:30",
+   "hasta": "Gn 19:38",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Las hijas de Lot embriagan a su padre y se acuestan con él (incesto)."
+  },
+  {
+   "desde": "Gn 22:9",
+   "hasta": "Gn 22:10",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Abraham ata a Isaac y alza el cuchillo para sacrificarlo, hasta que el ángel lo detiene."
+  },
+  {
+   "desde": "Gn 29:21",
+   "hasta": "Gn 29:25",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Labán engaña a Jacob y le da a Lea en lugar de Raquel la noche de bodas."
+  },
+  {
+   "desde": "Gn 30:3",
+   "hasta": "Gn 30:5",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Raquel da su sierva Bilha a Jacob para tener hijos por ella."
+  },
+  {
+   "desde": "Gn 30:9",
+   "hasta": "Gn 30:10",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Lea da su sierva Zilpa a Jacob como concubina."
+  },
+  {
+   "desde": "Gn 30:15",
+   "hasta": "Gn 30:16",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Raquel y Lea pactan que Jacob duerma con Lea a cambio de unas mandrágoras."
+  },
+  {
+   "desde": "Gn 34:2",
+   "hasta": "Gn 34:2",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Siquem toma por la fuerza a Dina (violación)."
+  },
+  {
+   "desde": "Gn 34:25",
+   "hasta": "Gn 34:29",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Simeón y Leví matan a los hombres de Siquem y la ciudad es saqueada."
+  },
+  {
+   "desde": "Gn 35:22",
+   "hasta": "Gn 35:22",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Rubén se acuesta con la concubina de su padre."
+  },
+  {
+   "desde": "Gn 38:8",
+   "hasta": "Gn 38:10",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Onán evita dar descendencia a su hermano difunto y muere."
+  },
+  {
+   "desde": "Gn 38:14",
+   "hasta": "Gn 38:18",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Tamar se disfraza de prostituta y Judá se acerca a ella."
+  },
+  {
+   "desde": "Gn 38:24",
+   "hasta": "Gn 38:24",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Se ordena quemar a Tamar por su supuesta infidelidad."
+  },
+  {
+   "desde": "Gn 39:7",
+   "hasta": "Gn 39:18",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "La mujer de Potifar insiste en acostarse con José y luego lo acusa en falso."
+  },
+  {
+   "desde": "Gn 40:19",
+   "hasta": "Gn 40:22",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "El faraón manda colgar al jefe de los panaderos."
+  },
+  {
+   "desde": "Gn 49:4",
+   "hasta": "Gn 49:4",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Reproche a Rubén por haber subido al lecho de su padre."
+  },
+  {
+   "desde": "Gn 49:5",
+   "hasta": "Gn 49:7",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Reproche a Simeón y Leví por su furor homicida."
+  },
+  {
+   "desde": "Ex 1:16",
+   "hasta": "Ex 1:16",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "El faraón ordena matar a los niños varones hebreos al nacer."
+  },
+  {
+   "desde": "Ex 1:22",
+   "hasta": "Ex 1:22",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "El faraón ordena arrojar al río a todo niño hebreo."
+  },
+  {
+   "desde": "Ex 2:12",
+   "hasta": "Ex 2:12",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Moisés mata a un egipcio y lo esconde en la arena."
+  },
+  {
+   "desde": "Ex 4:24",
+   "hasta": "Ex 4:26",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Episodio del camino: se busca la muerte de Moisés y se circuncida al hijo."
+  },
+  {
+   "desde": "Ex 5:14",
+   "hasta": "Ex 5:14",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Los capataces hebreos son azotados por los cuadrilleros de Egipto."
+  },
+  {
+   "desde": "Ex 12:29",
+   "hasta": "Ex 12:30",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Muerte de todos los primogénitos de Egipto en una noche."
+  },
+  {
+   "desde": "Ex 14:27",
+   "hasta": "Ex 14:28",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Las aguas cubren y ahogan al ejército egipcio."
+  },
+  {
+   "desde": "Ex 17:13",
+   "hasta": "Ex 17:13",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Josué derrota a Amalec a filo de espada."
+  },
+  {
+   "desde": "Ex 19:12",
+   "hasta": "Ex 19:13",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Quien toque el monte Sinaí será apedreado o asaeteado."
+  },
+  {
+   "desde": "Ex 21:12",
+   "hasta": "Ex 21:17",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Leyes con pena de muerte para el homicida, quien hiere o maldice a sus padres y quien secuestra a una persona."
+  },
+  {
+   "desde": "Ex 21:20",
+   "hasta": "Ex 21:27",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Leyes de castigos por golpes e heridas, incluidos siervos (ojo por ojo)."
+  },
+  {
+   "desde": "Ex 22:16",
+   "hasta": "Ex 22:16",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley sobre quien seduce a una joven y se acuesta con ella."
+  },
+  {
+   "desde": "Ex 22:18",
+   "hasta": "Ex 22:18",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Ley que ordena no dejar con vida a la hechicera."
+  },
+  {
+   "desde": "Ex 22:19",
+   "hasta": "Ex 22:19",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley que prohíbe y castiga la relación con animales."
+  },
+  {
+   "desde": "Ex 22:20",
+   "hasta": "Ex 22:20",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Ley que castiga con la muerte sacrificar a otros dioses."
+  },
+  {
+   "desde": "Ex 32:27",
+   "hasta": "Ex 32:28",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Por orden de Moisés caen unos tres mil hombres a espada."
+  },
+  {
+   "desde": "Ex 32:35",
+   "hasta": "Ex 32:35",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Dios hiere al pueblo por haber hecho el becerro de oro."
+  }
+ ]
+};

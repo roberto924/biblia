@@ -12,7 +12,7 @@ La app acompaña la lectura de Génesis 1–50 y Éxodo 1–40 (texto Reina-Vale
 - La fecha del éxodo (siglo XV a. C., siglo XIII a. C., o relato no histórico en esos términos) es un **debate**. No es un dato.
 - Génesis y Éxodo no dan fechas a. C. El «año del mundo» de la app es un cálculo interno, no una fecha absoluta.
 
-Hay 99 fichas y 64 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El audio de LibriVox no se descargó: solo está el enlace. No hay descargas con licencia NC, ND o derechos reservados.
+Hay 119 fichas y 84 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El audio de LibriVox no se descargó: solo está el enlace. No hay descargas con licencia NC, ND o derechos reservados.
 
 ## Imágenes en esta carpeta
 
@@ -22,6 +22,7 @@ Hay 99 fichas y 64 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El
 - `dore-ex-10-plaga-tinieblas.jpg`
 - `dore-ex-12-muerte-primogenitos.jpg`
 - `dore-ex-14-egipcios-ahogados.jpg`
+- `dore-ex-17-moises-hiere-la-roca.jpg`
 - `dore-ex-19-entrega-ley-sinai.jpg`
 - `dore-ex-2-hallazgo-moises.jpg`
 - `dore-ex-20-moises-baja-sinai.jpg`
@@ -31,9 +32,11 @@ Hay 99 fichas y 64 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El
 - `dore-gn-1-creacion-luz.jpg`
 - `dore-gn-11-torre-babel.jpg`
 - `dore-gn-18-tres-visitantes.jpg`
+- `dore-gn-19-lot-huye-sodoma.jpg`
 - `dore-gn-2-creacion-eva.jpg`
 - `dore-gn-21-agar-ismael.jpg`
 - `dore-gn-23-entierro-sara.jpg`
+- `dore-gn-24-eliezer-rebeca.jpg`
 - `dore-gn-27-isaac-bendice-jacob.jpg`
 - `dore-gn-28-sueno-jacob.jpg`
 - `dore-gn-29-jacob-raquel.jpg`
@@ -47,6 +50,7 @@ Hay 99 fichas y 64 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El
 - `dore-gn-46-jacob-va-a-egipto.jpg`
 - `dore-gn-7-diluvio.jpg`
 - `dore-gn-8-paloma-del-arca.jpg`
+- `dore-gn-9-noe-maldice-cam.jpg`
 - `estela-merneptah-foto-commons-bivins.jpg`
 - `figures-de-la-bible-1728-erecion-tabernaculo.jpg`
 - `holman-1890-mesa-arca-candelabro.jpg`
@@ -62,8 +66,12 @@ Hay 99 fichas y 64 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El
 - `tabernaculo-sketchup-fink-2009.jpg`
 - `timna-replica-arca-foto-ori229.jpg`
 - `tissot-ex-12-pascua.jpg`
+- `tissot-ex-13-columna-de-nube.jpg`
 - `tissot-ex-14-aguas-divididas.jpg`
+- `tissot-ex-15-cantico-de-miriam.jpg`
 - `tissot-ex-16-recogida-mana.jpg`
+- `tissot-ex-17-agua-de-la-roca.jpg`
+- `tissot-ex-18-jetro-y-moises.jpg`
 - `tissot-ex-20-nube-sinai.jpg`
 - `tissot-ex-25-arca-alianza.jpg`
 - `tissot-ex-25-menora.jpg`
@@ -73,11 +81,23 @@ Hay 99 fichas y 64 imágenes JPG (máximo 1600 px por lado, menos de 400 KB). El
 - `tissot-ex-32-becerro-oro.jpg`
 - `tissot-ex-35-besalel-orfebre.jpg`
 - `tissot-ex-39-vestiduras-sumo-sacerdote.jpg`
+- `tissot-ex-4-vara-serpiente.jpg`
 - `tissot-ex-40-tabernaculo-altar.jpg`
+- `tissot-ex-6-dios-habla-a-moises.jpg`
+- `tissot-ex-7-agua-en-sangre.jpg`
+- `tissot-ex-8-plaga-de-moscas.jpg`
 - `tissot-gn-12-caravana-abram.jpg`
+- `tissot-gn-15-abram-aves.jpg`
+- `tissot-gn-16-sarai-agar.jpg`
 - `tissot-gn-25-plato-lentejas.jpg`
+- `tissot-gn-34-dina.jpg`
 - `tissot-gn-37-suenos-jose.jpg`
+- `tissot-gn-38-tamar-juda.jpg`
+- `tissot-gn-39-mujer-potifar.jpg`
+- `tissot-gn-40-suenos-carcel.jpg`
+- `tissot-gn-44-copa-en-el-saco.jpg`
 - `tissot-gn-47-jacob-ante-faraon.jpg`
+- `tissot-gn-49-ultimos-momentos-jacob.jpg`
 - `tissot-gn-50-cuerpo-jacob-canaan.jpg`
 - `zigurat-ur-foto-alli-khalil-2024.jpg`
 
@@ -1937,4 +1957,364 @@ Tablilla cuneiforme del siglo XIV a. C. El rey de Asiria escribe al faraón. Es 
 - **Página de la obra:** https://www.metmuseum.org/art/collection/search/544695
 - **Archivo en línea:** https://images.metmuseum.org/CRDImages/eg/web-large/24.2.11_EGDP021806.jpg
 - **Archivo local:** recursos/imagenes/amarna-asur-ubalit-met-24-2-11.jpg
+
+### 100. Noé maldice a Canaán
+
+Grabado de Gustave Doré: Noé, al despertar, se dirige a sus hijos. Interpretación artística, no una imagen del suceso.
+
+- **Tipo:** arte
+- **Referencias:** Gn 9:24-27
+- **Autor:** Gustave Doré
+- **Fecha:** 1866
+- **Institución:** Wikimedia Commons
+- **Licencia:** Dominio público
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** Gustave Doré. Public domain. Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:009.Noah_Curses_Ham_and_Canaan.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/009.Noah_Curses_Ham_and_Canaan.jpg/1280px-009.Noah_Curses_Ham_and_Canaan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/dore-gn-9-noe-maldice-cam.jpg
+
+### 101. Lot huye mientras arden Sodoma y Gomorra
+
+Grabado de Gustave Doré de la huida de Lot. Interpretación artística, no una imagen del suceso.
+
+- **Tipo:** arte
+- **Referencias:** Gn 19:15-26
+- **Autor:** Gustave Doré
+- **Fecha:** 1866
+- **Institución:** Wikimedia Commons
+- **Licencia:** Dominio público
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** Gustave Doré. Public domain. Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:013.Lot_Flees_as_Sodom_and_Gomorrah_Burn.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/013.Lot_Flees_as_Sodom_and_Gomorrah_Burn.jpg/1280px-013.Lot_Flees_as_Sodom_and_Gomorrah_Burn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/dore-gn-19-lot-huye-sodoma.jpg
+
+### 102. Eliezer y Rebeca en el pozo
+
+Grabado de Gustave Doré: el siervo de Abraham encuentra a Rebeca. Interpretación artística, no una imagen del suceso.
+
+- **Tipo:** arte
+- **Referencias:** Gn 24:15-20
+- **Autor:** Gustave Doré
+- **Fecha:** 1866
+- **Institución:** Wikimedia Commons
+- **Licencia:** Dominio público
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** Gustave Doré. Public domain. Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:018.Eliezer_and_Rebekah_at_the_Well.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/018.Eliezer_and_Rebekah_at_the_Well.jpg/1280px-018.Eliezer_and_Rebekah_at_the_Well.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/dore-gn-24-eliezer-rebeca.jpg
+
+### 103. Moisés golpea la roca en Horeb
+
+Grabado de Gustave Doré. El título de la lámina dice Horeb, que es el lugar de Éxodo 17. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 17:6
+- **Autor:** Gustave Doré
+- **Fecha:** 1866
+- **Institución:** Wikimedia Commons
+- **Licencia:** Dominio público
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** Gustave Doré. Public domain. Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:041.Moses_Strikes_the_Rock_at_Horeb.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/041.Moses_Strikes_the_Rock_at_Horeb.jpg/1280px-041.Moses_Strikes_the_Rock_at_Horeb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/dore-ex-17-moises-hiere-la-roca.jpg
+
+### 104. Abram ahuyenta las aves de la ofrenda
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 15:11. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 15:11
+- **Autor:** James Tissot
+- **Fecha:** 2018-12-11
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:Abram_chasse_les_oiseaux_de_proie_(Genesis_15_11)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst..jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Abram_chasse_les_oiseaux_de_proie_%28Genesis_15_11%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst..jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-15-abram-aves.jpg
+
+### 105. Disputa de Sarai y Agar
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 16:6. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 16:6
+- **Autor:** James Tissot
+- **Fecha:** 2018-12-11
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:Dispute_de_Sara%C3%AF_et_d%27Agar_(Genesis_16_6)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst..jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Dispute_de_Sara%C3%AF_et_d%27Agar_%28Genesis_16_6%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst..jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-16-sarai-agar.jpg
+
+### 106. El rapto de Dina
+
+Dibujo de James Tissot del rapto de Dina. El pie cita Génesis 34:2. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 34:2
+- **Autor:** James Tissot
+- **Fecha:** 2018-12-11
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:056.3_402_Enl%C3%A8vement_de_Dinah,_fille_de_Lia_(Genesis_34_2)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/056.3_402_Enl%C3%A8vement_de_Dinah%2C_fille_de_Lia_%28Genesis_34_2%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-34-dina.jpg
+
+### 107. Judá y Tamar se encuentran
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 38:18. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 38:18
+- **Autor:** James Tissot
+- **Fecha:** 2018-12-11
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:062.3_402_Thamar_et_Juda_se_rencontrent_(Genesis_38_18)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/062.3_402_Thamar_et_Juda_se_rencontrent_%28Genesis_38_18%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-38-tamar-juda.jpg
+
+### 108. José y la mujer de Potifar
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 39:7. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 39:7
+- **Autor:** James Tissot
+- **Fecha:** 2018-12-11
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:065.3_402_Joseph_et_la_Femme_de_Putiphar_(Genesis_39_7)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/065.3_402_Joseph_et_la_Femme_de_Putiphar_%28Genesis_39_7%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-39-mujer-potifar.jpg
+
+### 109. José explica los sueños en la cárcel
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 40:8. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 40:8
+- **Autor:** James Tissot
+- **Fecha:** 2018-12-11
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:067.3_402_Joseph_explique_des_songes_dans_le_prison_(Genesis_40_8)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/067.3_402_Joseph_explique_des_songes_dans_le_prison_%28Genesis_40_8%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-40-suenos-carcel.jpg
+
+### 110. Hallan la copa en el saco de Benjamín
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 44:12. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 44:12
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:La_coupe_retrouv%C3%A9e_(Genesis_44_12)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/La_coupe_retrouv%C3%A9e_%28Genesis_44_12%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-44-copa-en-el-saco.jpg
+
+### 111. Los últimos momentos de Jacob
+
+Dibujo de James Tissot. El pie de la lámina cita Génesis 49:1, la bendición de los hijos. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Gn 49:1
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:Les_derniers_moments_de_Jacob_(Genesis_49_1)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Les_derniers_moments_de_Jacob_%28Genesis_49_1%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-gn-49-ultimos-momentos-jacob.jpg
+
+### 112. La vara de Moisés hecha serpiente
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 4:3. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 4:3
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:La_verge_de_Mo%C3%AFse_chang%C3%A9e_en_serpent_(Exodus_4_3)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/La_verge_de_Mo%C3%AFse_chang%C3%A9e_en_serpent_%28Exodus_4_3%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-4-vara-serpiente.jpg
+
+### 113. Dios habla con Moisés
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 6:1. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 6:1
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:Dieu_rassure_Mo%C3%AFse_(Exodus_6_1)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Dieu_rassure_Mo%C3%AFse_%28Exodus_6_1%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-6-dios-habla-a-moises.jpg
+
+### 114. El agua convertida en sangre
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 7:20. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 7:20
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:L%27eau_chang%C3%A9e_en_sang_(Exodus_7_20)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/L%27eau_chang%C3%A9e_en_sang_%28Exodus_7_20%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-7-agua-en-sangre.jpg
+
+### 115. La plaga de las moscas
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 8:24. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 8:24
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:La_plaie_des_mouches_(Exodus_8_24)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/La_plaie_des_mouches_%28Exodus_8_24%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-8-plaga-de-moscas.jpg
+
+### 116. La columna de nube y de fuego
+
+Dibujo de James Tissot de la salida. El pie cita Éxodo 13:22. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 13:21-22
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:L%27Exode_(Exodus_13_22)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/L%27Exode_%28Exodus_13_22%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-L%27Exode_%28Exodus_13_22%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-13-columna-de-nube.jpg
+
+### 117. El cántico de Miriam
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 15:20. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 15:20-21
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:Les_chants_d%27all%C3%A9gresse_(Exodus_15_20)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Les_chants_d%27all%C3%A9gresse_%28Exodus_15_20%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-15-cantico-de-miriam.jpg
+
+### 118. Agua que sale de la roca
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 17:6. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 17:6
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:L%27eau_sortant_du_rocher_(Exodus_17_6)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/L%27eau_sortant_du_rocher_%28Exodus_17_6%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-17-agua-de-la-roca.jpg
+
+### 119. Jetro y Moisés
+
+Dibujo de James Tissot. El pie de la lámina cita Éxodo 18:7. Interpretación artística.
+
+- **Tipo:** arte
+- **Referencias:** Ex 18:7
+- **Autor:** James Tissot
+- **Fecha:** 1904
+- **Institución:** Wikimedia Commons
+- **Licencia:** CC BY-SA 4.0
+- **Uso:** descargable
+- **Certeza:** arte (interpretación)
+- **Por qué esa certeza:** Lámina del s. XIX: visualiza el relato, no documenta el suceso.
+- **Atribución:** James Tissot (dibujo). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.
+- **Página de la obra:** https://commons.wikimedia.org/wiki/File:J%C3%A9thro_et_Mo%C3%AFse_(Exodus_18_7)%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg
+- **Archivo en línea:** https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/J%C3%A9thro_et_Mo%C3%AFse_%28Exodus_18_7%29%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+- **Archivo local:** recursos/imagenes/tissot-ex-18-jetro-y-moises.jpg
 

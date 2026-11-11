@@ -1196,7 +1196,100 @@ const Nucleo = (() => {
   const duracionTramo = km => Math.round(Math.min(4200, Math.max(900, 520 + 420 * Math.sqrt(Math.max(0, +km || 0) / 10))));
   const pausaEtapa = e => Math.round(Math.min(6500, Math.max(2200, 1500 + 34 * String((e && e.cita) || '').length)));
 
-  return { listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
+  /* ---- Perfiles locales (sin cuentas): cada uno guarda lo suyo bajo biblia.p.<id>.* ---- */
+  const PREF = 'biblia.', CLAVE_PERFILES = 'biblia.perfiles';
+  const COLORES_PERFIL = ['lapis', 'verdin', 'ocre', 'murice', 'carmin', 'mar'];
+  const TIPOS_PERFIL = ['adulto', 'nino'];
+  const subclave = k => { const s = String(k); return s.startsWith(PREF) ? s.slice(PREF.length) : s; };
+  const clavePerfil = (id, k) => `${PREF}p.${id}.${subclave(k)}`;
+  // Claves de antes de los perfiles (biblia.pos, biblia.pasajesLeidos…): ni el registro ni las ya separadas por perfil.
+  const esClaveLegada = k => typeof k === 'string' && k.startsWith(PREF) && k !== CLAVE_PERFILES && !k.startsWith(PREF + 'p.');
+  const clavesDePerfil = (claves, id) => (claves || []).filter(k => typeof k === 'string' && k.startsWith(`${PREF}p.${id}.`));
+  const inicialDe = nombre => (Array.from(String(nombre || '').trim())[0] || '?').toLocaleUpperCase('es');
+  function nuevoPerfil(lista, datos) {
+    const usados = new Set((lista || []).map(p => p.id));
+    let n = (lista || []).length + 1; while (usados.has('p' + n)) n++;
+    const x = datos || {}, nombre = String(x.nombre || '').trim().slice(0, 24) || (x.tipo === 'nino' ? 'Niño' : 'Adulto');
+    return { id: 'p' + n, nombre, tipo: TIPOS_PERFIL.includes(x.tipo) ? x.tipo : 'adulto', color: COLORES_PERFIL.includes(x.color) ? x.color : COLORES_PERFIL[(n - 1) % COLORES_PERFIL.length],
+      inicial: x.inicial ? inicialDe(x.inicial) : inicialDe(nombre), avisar: x.avisar === true };
+  }
+  // Registro válido o null: { v, activo, lista: [perfil], pin: hash|null }.
+  function normalizarRegistro(r) {
+    if (!r || typeof r !== 'object' || !Array.isArray(r.lista)) return null;
+    const lista = r.lista.filter(p => p && typeof p.id === 'string' && /^p\d+$/.test(p.id))
+      .map(p => Object.assign(nuevoPerfil([], p), { id: p.id }));
+    if (!lista.length) return null;
+    return { v: 1, activo: lista.some(p => p.id === r.activo) ? r.activo : lista[0].id, lista, pin: typeof r.pin === 'string' && r.pin ? r.pin : null };
+  }
+  // Primer arranque con perfiles: los datos que ya hubiera pasan al primer perfil (adulto); nada se pierde.
+  function migrarPerfiles(claves, registro) {
+    const r = normalizarRegistro(registro);
+    if (r) return { registro: r, mover: [], nuevo: false };
+    const p = nuevoPerfil([], { nombre: 'Adulto', tipo: 'adulto', color: 'lapis' });
+    return { registro: { v: 1, activo: p.id, lista: [p], pin: null }, mover: (claves || []).filter(esClaveLegada).map(k => [k, clavePerfil(p.id, k)]), nuevo: true };
+  }
+  const perfilDe = (r, id) => ((r && r.lista) || []).find(p => p.id === id) || null;
+  // Pasar de un perfil niño a uno adulto pide el PIN (si hay PIN definido).
+  const cambioPidePin = (r, desde, hacia) => { const a = perfilDe(r, desde), b = perfilDe(r, hacia); return !!(r && r.pin && b && b.tipo === 'adulto' && (!a || a.tipo === 'nino')); };
+  const pinValido = s => /^\d{4}$/.test(String(s == null ? '' : s));
+
+  /* ---- Contenido fuerte (datos/contenido.js): clasificación editorial del proyecto, no del texto bíblico ---- */
+  const NIVEL_CONT = { medio: 1, alto: 2 };
+  const cacheCont = new WeakMap();
+  const marcasContenido = C => {
+    if (!C || typeof C !== 'object') return [];
+    if (!cacheCont.has(C)) cacheCont.set(C, (C.marcas || []).map(m => {
+      const a = m && clave(m.desde), b = m && clave(m.hasta || m.desde);
+      return a !== null && b !== null && NIVEL_CONT[m.nivel] ? Object.assign({}, m, { a: Math.min(a, b), b: Math.max(a, b) }) : null;
+    }).filter(Boolean));
+    return cacheCont.get(C);
+  };
+  // La marca más fuerte que cubre un versículo (ref o clave), o null.
+  function marcaDe(C, ref) {
+    const k = typeof ref === 'number' ? ref : clave(ref);
+    if (k === null || k === undefined) return null;
+    return marcasContenido(C).filter(m => k >= m.a && k <= m.b).sort((x, y) => NIVEL_CONT[y.nivel] - NIVEL_CONT[x.nivel] || x.a - y.a)[0] || null;
+  }
+  const esNino = perfil => !!perfil && perfil.tipo === 'nino';
+  // Qué hacer con un versículo marcado: 'plegar' | 'nota' | 'aviso' | 'mostrar'.
+  function decisionVerso(perfil, marca) {
+    if (!marca || !NIVEL_CONT[marca.nivel]) return 'mostrar';
+    if (esNino(perfil)) return marca.nivel === 'alto' ? 'plegar' : 'nota';
+    if (perfil && perfil.avisar) return marca.nivel === 'alto' ? 'aviso' : 'nota';
+    return 'mostrar';
+  }
+  const accionVerso = (C, perfil, ref) => { const marca = marcaDe(C, ref); return { accion: decisionVerso(perfil, marca), marca }; };
+  const esAlto = (C, k) => { const m = marcaDe(C, k); return !!m && m.nivel === 'alto'; };
+  const VISUALES = ['arte', 'reconstruccion', 'ilustracion', 'arqueologia', 'mapa_antiguo'];
+  // Recurso visible para el perfil: el niño no ve imágenes `sensible` ni imágenes u objetos de una parte plegada
+  // (dentro de `claves`, los versículos que se están viendo; sin claves, cualquier solape con una parte plegada).
+  function recursoPermitido(f, perfil, C, claves) {
+    if (!f) return false;
+    if (!esNino(perfil)) return true;
+    if (f.sensible) return false;
+    if (f.tipo === 'video') return /proyecto biblia|bibleproject/i.test(`${f.institucion || ''} ${f.url_fuente || ''}`); // solo los de Proyecto Biblia
+    if (!VISUALES.includes(f.tipo)) return true; // videos y audio: enlaces o fachadas; lo externo pide PIN aparte
+    const rs = f.rangos || [];
+    if (claves && claves.length) return !claves.some(k => rs.some(([a, b]) => k >= a && k <= b) && esAlto(C, k));
+    return !rs.some(([a, b]) => marcasContenido(C).some(m => m.nivel === 'alto' && m.a <= b && a <= m.b));
+  }
+  // Curiosidad o «¿Sabías que…?» oculta al niño si alguna de sus refs cae en una parte plegada.
+  const curiosidadPermitida = (c, perfil, C) => !esNino(perfil) || !((c && c.refs) || []).some(r => esAlto(C, clave(r)));
+  // Enlaces externos que el niño puede abrir sin PIN: solo los videos de Proyecto Biblia.
+  const enlaceLibre = u => /^https:\/\/(www\.)?bibleproject\.com\/es\//i.test(String(u || ''));
+  // Agrupa versículos seguidos con la misma acción y la misma marca (para plegar un tramo de una vez).
+  function tramosContenido(C, perfil, refs) {
+    const out = [];
+    (refs || []).forEach(ref => {
+      const x = accionVerso(C, perfil, ref), u = out[out.length - 1];
+      if (u && u.accion === x.accion && (x.accion === 'mostrar' || u.marca === x.marca)) u.refs.push(ref); else out.push({ accion: x.accion, marca: x.marca, refs: [ref] });
+    });
+    return out;
+  }
+
+  return { CLAVE_PERFILES, COLORES_PERFIL, clavePerfil, esClaveLegada, clavesDePerfil, nuevoPerfil, normalizarRegistro, migrarPerfiles, perfilDe, cambioPidePin, pinValido, inicialDe,
+    marcasContenido, marcaDe, decisionVerso, accionVerso, recursoPermitido, curiosidadPermitida, enlaceLibre, tramosContenido,
+    listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
     TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona, lugaresDePersona, descendientes,
@@ -1221,10 +1314,42 @@ if (typeof document !== 'undefined') (function () {
   const $ = s => document.querySelector(s);
   const main = $('#principal');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const store = {
-    get(k, def) { try { const v = localStorage.getItem(k); return v == null ? def : JSON.parse(v); } catch (e) { return def; } },
-    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* sin almacenamiento */ } }
+  /* ---------- Perfiles locales: cada perfil guarda su progreso, colección y preferencias aparte ---------- */
+  const LS = {
+    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } },
+    del(k) { try { localStorage.removeItem(k); } catch (e) { /* nada */ } },
+    claves() { try { return Object.keys(localStorage); } catch (e) { return []; } }
   };
+  const leerJSON = k => { const v = LS.get(k); if (v == null) return null; try { return JSON.parse(v); } catch (e) { return null; } };
+  const PERF = (() => {
+    const m = N.migrarPerfiles(LS.claves(), leerJSON(N.CLAVE_PERFILES));
+    let nuevo = false;
+    if (m.nuevo) {
+      m.mover.forEach(([de, a]) => { const v = LS.get(de); if (v != null && LS.set(a, v)) LS.del(de); });
+      nuevo = LS.set(N.CLAVE_PERFILES, JSON.stringify(m.registro)); // sin almacenamiento no se insiste en la bienvenida
+    }
+    return { r: m.registro, nuevo };
+  })();
+  const guardarPerfiles = () => LS.set(N.CLAVE_PERFILES, JSON.stringify(PERF.r));
+  const perfil = () => N.perfilDe(PERF.r, PERF.r.activo) || PERF.r.lista[0];
+  const esNinoActivo = () => perfil().tipo === 'nino';
+  const store = {
+    get(k, def) { const v = LS.get(N.clavePerfil(PERF.r.activo, k)); if (v == null) return def; try { return JSON.parse(v); } catch (e) { return def; } },
+    set(k, v) { LS.set(N.clavePerfil(PERF.r.activo, k), JSON.stringify(v)); }
+  };
+  /* ---------- Contenido fuerte (datos/contenido.js; con ?ejemplo, pruebas/contenido-ejemplo.js) ---------- */
+  const CONT = () => window.BIBLIA_CONTENIDO || null;
+  const ROTULO_CONT = 'Clasificación editorial del proyecto, no del texto bíblico.';
+  const desplegados = new Set(); // tramos mostrados con el PIN en esta sesión (por su «desde»)
+  function accionDe(ref) {
+    const x = N.accionVerso(CONT(), perfil(), ref);
+    return x.accion === 'plegar' && desplegados.has(x.marca.desde) ? { accion: 'desplegado', marca: x.marca } : x;
+  }
+  const plegadoRef = ref => !!ref && accionDe(ref).accion === 'plegar';
+  const NOTA_CONT = { violencia: 'Aquí se narra un hecho violento.', crueldad: 'Aquí se narra un hecho cruel.', sexual: 'Aquí se alude a un tema de personas adultas.' };
+  const CAT_CONT = { violencia: 'violencia', crueldad: 'crueldad', sexual: 'contenido sexual' };
+  const permitidos = (fs, claves) => (fs || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), claves));
   const TIPO_TXT = { al_engendrar: 'Al engendrar', restantes: 'Años restantes', total: 'Total' };
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
@@ -1244,7 +1369,7 @@ if (typeof document !== 'undefined') (function () {
     const cls = (p.sexo === 'f' ? ' mujer' : p.sexo === 'm' ? ' hombre' : ' indef') + (p.sin_nombre ? ' sin-nombre' : '');
     return `<button type="button" class="persona-btn${cls}" data-persona="${esc(id)}">${esc(nombre(id))}${p.sin_nombre ? '<span class="marca-sn">sin nombre en el texto</span>' : ''}</button>`;
   };
-  const citaHTML = r => r && r.cita ? `<blockquote>${esc(r.cita)}</blockquote>` : '';
+  const citaHTML = r => r && r.cita && !plegadoRef(r.ref) ? `<blockquote>${esc(r.cita)}</blockquote>` : '';
   const fuenteNombre = id => { const f = (D.fuentes || []).find(x => x.id === id); return f ? f.nombre : (id || 'sin fuente'); };
   const etiquetaTrad = id => { const t = [...N.tradicionesDe(D, id)]; return t.length === 1 ? `<span class="etiqueta">solo ${esc(t[0])}</span>` : ''; };
   const pasajesLeidos = () => new Set(store.get('biblia.pasajesLeidos', []));
@@ -1334,11 +1459,11 @@ if (typeof document !== 'undefined') (function () {
     const lb = N.libroDe(p), psL = ps.filter(x => N.libroDe(x) === lb), iL = psL.findIndex(x => x.id === p.id);
     const vs = N.versiculosDe(D, p);
     estado.pasaje = p;
-    estado.activo = activo && vs.some(v => `${v.cap}:${v.n}` === activo) ? activo : null;
+    estado.activo = activo && vs.some(v => `${v.cap}:${v.n}` === activo && !plegadoRef(v.ref)) ? activo : null;
     store.set('biblia.pos', { pasaje: p.id, v: estado.activo });
     const fuente = ((D.fuentes || []).find(f => /rv/i.test(f.id)) || {}).id;
     let capPrev = null;
-    const texto = vs.map((v, j) => {
+    const texto = tramosVersos(vs, (v, j) => {
       const k = `${v.cap}:${v.n}`, ap = N.tieneApoyo(D, v.ref);
       const cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : '';
       capPrev = v.cap;
@@ -1350,7 +1475,7 @@ if (typeof document !== 'undefined') (function () {
         return esc(s.texto);
       }).join('');
       return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${marcaVariante(v.ref, v.n)}${partes} </span>`;
-    }).join('');
+    }, (vsP, j) => { const v = vsP[0], cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : ''; capPrev = vsP[vsP.length - 1].cap; return cab; });
     const nuevos = N.primerasApariciones(D, p);
     return `<div class="pasaje-vista"><article class="lectura">
       <header class="cab-pasaje"><a class="volver" href="#leer/${esc(lb)}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
@@ -1373,6 +1498,36 @@ if (typeof document !== 'undefined') (function () {
       <aside class="acompanante${estado.hoja ? ' abierta' : ''}" id="acompanante" aria-label="Acompañante de lectura">${acompHTML()}</aside></div>`;
   }
 
+  /* ---------- Contenido fuerte en la lectura: plegado (niño), nota (medio) o aviso (adulto que lo pide) ---------- */
+  const ICO_CONT = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3a7 7 0 100 14 7 7 0 000-14zM10 6.5v4M10 13.5v.5"/></svg>';
+  const rangoVs = vs => { const a = vs[0], b = vs[vs.length - 1]; return a.cap === b.cap ? (a.n === b.n ? `Versículo ${a.n}` : `Versículos ${a.n} a ${b.n}`) : `Versículos ${a.cap}:${a.n} a ${b.cap}:${b.n}`; };
+  const rotuloCont = () => `<span class="cont-rotulo">${ROTULO_CONT}</span>`;
+  const plegadoHTML = (vs, m) => `<span class="cont-bloque cont-plegado" role="note"><span class="cont-cab">${ICO_CONT}<strong>Esta parte es para leerla con un adulto</strong></span>
+      <span class="cont-meta">${rangoVs(vs)}. El texto sigue aquí, solo está plegado.</span>
+      <span class="cont-acc"><button type="button" class="boton mini-boton secundario" data-mostrar-cont="${esc(m.desde)}">Mostrar</button></span>${rotuloCont()}</span>`;
+  const avisoContHTML = m => `<span class="cont-bloque cont-aviso" role="note"><span class="cont-cab">${ICO_CONT}<strong>Aviso: contenido fuerte</strong><span class="etiqueta">${esc(CAT_CONT[m.categoria] || m.categoria || '')}</span></span>
+      ${m.motivo ? `<span class="cont-meta">${esc(m.motivo)}</span>` : ''}${rotuloCont()}</span>`;
+  const notaContHTML = m => `<span class="cont-nota" role="note">${ICO_CONT}<span>${esc(NOTA_CONT[m.categoria] || 'Aquí hay un pasaje delicado.')} ${rotuloCont()}</span></span>`;
+  const desplegadoHTML = m => `<span class="cont-bloque cont-desplegado" role="note"><span class="cont-meta">Parte mostrada con el PIN de un adulto.</span>
+      <span class="cont-acc"><button type="button" class="enlace-boton" data-plegar-cont="${esc(m.desde)}">Volver a plegar</button></span>${rotuloCont()}</span>`;
+  // Versículos agrupados según lo que el perfil hace con cada marca; el texto nunca se altera y los números se conservan.
+  function tramosVersos(vs, verso, cabPlegado) {
+    const xs = vs.map(v => accionDe(v.ref));
+    let out = '', i = 0;
+    while (i < vs.length) {
+      let j = i; while (j + 1 < vs.length && xs[j + 1].accion === xs[i].accion && (xs[i].accion === 'mostrar' || xs[j + 1].marca === xs[i].marca)) j++;
+      const g = vs.slice(i, j + 1), x = xs[i], ini = i;
+      if (x.accion === 'plegar') out += cabPlegado(g, ini) + plegadoHTML(g, x.marca);
+      else {
+        const cuerpo = g.map((v, t) => verso(v, ini + t)).join('');
+        out += x.accion === 'aviso' ? avisoContHTML(x.marca) + cuerpo : x.accion === 'desplegado' ? desplegadoHTML(x.marca) + cuerpo
+          : x.accion === 'nota' ? cuerpo + notaContHTML(x.marca) : cuerpo;
+      }
+      i = j + 1;
+    }
+    return out;
+  }
+
   // Nota del vínculo tal como viene en los datos («sierva», «concubina»…), sin reinterpretarla.
   const notaVinculo = r => r && r.nota ? `<span class="nota-vinculo">${esc(r.nota)}</span>` : '';
   const TIPO_REL = r => r.tipo === 'conyuge' ? `${esc(nombre(r.de))} y ${esc(nombre(r.a))}: cónyuges${notaVinculo(r)}`
@@ -1381,7 +1536,7 @@ if (typeof document !== 'undefined') (function () {
   function eventoHTML(x) {
     const base = x.TM || x.LXX;
     return `<li${x.difiere ? ' class="difiere"' : ''}><span class="edad-quien">${esc(nombre(x.persona))} tenía <strong>${base.valor}</strong> años${x.evento ? ' ' + esc(x.evento) : ''}${x.solo === 'LXX' ? ' (según la LXX)' : ''}</span>
-      ${insignia(base.certeza || 'texto', x.ref)}${base.cita ? ` <span class="cita-corta">«${esc(base.cita)}»</span>` : ''}
+      ${insignia(base.certeza || 'texto', x.ref)}${base.cita && !plegadoRef(x.ref) ? ` <span class="cita-corta">«${esc(base.cita)}»</span>` : ''}
       ${x.difiere ? `<p class="difiere-txt">En la Septuaginta: ${x.LXX.valor}${x.LXX.ref && x.LXX.ref !== x.TM.ref ? ' (' + refHTML(x.LXX.ref) + ')' : ''}</p>` : ''}</li>`;
   }
   const QUIEN_MAX = 8; // a partir de aquí "Quién aparece" se agrupa
@@ -1389,7 +1544,7 @@ if (typeof document !== 'undefined') (function () {
     const p = estado.pasaje;
     if (!p) return '';
     const lb = N.libroDe(p);
-    const refs = estado.activo ? [`${lb} ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref);
+    const refs = estado.activo ? [`${lb} ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref).filter(r => !plegadoRef(r)); // lo plegado no alimenta el acompañante
     const A = N.acompanante(D, refs);
     const n = A.vinculos.length + A.edades.length + A.eventos.length + A.sinNombre.length + A.lugares.length;
     const ambito = estado.activo ? `${lb} ${estado.activo}` : 'Todo el pasaje';
@@ -1451,7 +1606,7 @@ if (typeof document !== 'undefined') (function () {
     }).join(''), I('M10 3v5M10 8H5v4M10 8h5v4M10 8v9'));
     // «¿Sabías que…?» (cálculo) del pasaje: como mucho dos, elegidas en el núcleo sin repetir las del pasaje anterior.
     if (N.crono(D) && !estado.activo) {
-      const tr = tradSimple(), cs = N.sabiasQue(D, comboDe(tr)).get(p.id) || [];
+      const tr = tradSimple(), cs = (N.sabiasQue(D, comboDe(tr)).get(p.id) || []).filter(c => N.curiosidadPermitida(c, perfil(), CONT()));
       if (cs.length) html += `<section class="acomp-sec sabias"><h3>${I('M10 3.5a4.5 4.5 0 00-2.6 8.2c.5.4.8 1 .8 1.6v.7h3.6v-.7c0-.6.3-1.2.8-1.6A4.5 4.5 0 0010 3.5zM8.3 16.5h3.4')}¿Sabías que…?</h3>
         <ul class="sabias-lista">${cs.map(c => `<li><p>${esc(c.texto)}.</p><span class="sabias-pie">${insignia('calculo')}<button type="button" class="enlace-boton" data-curio="${esc(c.id)}">Ver el cálculo</button></span></li>`).join('')}</ul>
         <p class="meta">${tr}, con los supuestos elegidos en Tiempo.</p></section>`;
@@ -1563,9 +1718,18 @@ if (typeof document !== 'undefined') (function () {
     const cab = vis.map(c => `<div class="cmp-cab"><span class="cmp-col-t">${esc(COLS[c].t)}</span><span class="cmp-fuente">${esc(COLS[c].fuente())}</span>${c === 'he' ? estadoCarga('o') : c === 'gr' ? estadoCarga('g') : ''}</div>`).join('');
     const vars = new Set(ORIG.o ? filas.filter(f => N.variantesDe(ORIG.o, [f.ref]).length).map(f => f.ref) : []);
     let capPrev = null;
+    const accs = filas.map(f => accionDe(f.ref));
     const cuerpo = filas.map((f, j) => {
-      const k = `${f.cap}:${f.n}`;
-      const marca = f.cap !== capPrev && j ? `<div class="cmp-capitulo">Capítulo ${f.cap}</div>` : ''; capPrev = f.cap;
+      const k = `${f.cap}:${f.n}`, x = accs[j];
+      if (x.accion === 'plegar') { // una sola fila plegada por tramo, con sus números
+        if (j && accs[j - 1].accion === 'plegar' && accs[j - 1].marca === x.marca) return '';
+        const g = filas.filter((y, i) => i >= j && accs[i].marca === x.marca).map(y => ({ cap: y.cap, n: y.n }));
+        const marca = f.cap !== capPrev && j ? `<div class="cmp-capitulo">Capítulo ${f.cap}</div>` : ''; capPrev = g[g.length - 1].cap;
+        return `${marca}<div class="cmp-fila cmp-plegada"><div class="cmp-num">${g.length > 1 ? `${f.n}–${g[g.length - 1].n}` : f.n}</div><div class="cmp-celda">${plegadoHTML(g, x.marca)}</div></div>`;
+      }
+      const marca = (f.cap !== capPrev && j ? `<div class="cmp-capitulo">Capítulo ${f.cap}</div>` : '') + (x.accion === 'aviso' && !(j && accs[j - 1].marca === x.marca) ? `<div class="cmp-aviso">${avisoContHTML(x.marca)}</div>` : '')
+        + (x.accion === 'desplegado' && !(j && accs[j - 1].marca === x.marca) ? `<div class="cmp-aviso">${desplegadoHTML(x.marca)}</div>` : ''); capPrev = f.cap;
+      const nota = x.accion === 'nota' && !(filas[j + 1] && accs[j + 1].marca === x.marca) ? `<div class="cmp-aviso">${notaContHTML(x.marca)}</div>` : '';
       const celda = c => {
         const t = c === 'rv' ? f.rv : c === 'he' ? f.he : f.gr;
         const pend = (c === 'he' && ORIG.est.o === 'cargando') || (c === 'gr' && ORIG.est.g === 'cargando');
@@ -1573,7 +1737,7 @@ if (typeof document !== 'undefined') (function () {
         const num = c === 'he' && f.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">Heb. ${esc(f.heNum)}</span>` : '';
         return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${esc(t)}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : 'Sin texto en los datos'}</p>`}</div>`;
       };
-      return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>`;
+      return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>${nota}`;
     }).join('');
     return `<section class="comparar" aria-label="Comparar textos lado a lado" style="--cols:${vis.length}">${elegir}
       <div class="cmp-tabla" role="group" aria-busy="${cargando}"><div class="cmp-fila cmp-cabecera"><div class="cmp-num" aria-hidden="true"></div>${cab}</div>${cuerpo || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
@@ -1655,7 +1819,8 @@ if (typeof document !== 'undefined') (function () {
   function hablar(id, ks) {
     if (!SINTESIS || !estado.pasaje) return;
     const lb = N.libroDe(estado.pasaje);
-    const cola = ks.map(k => ({ k, t: N.textoParaVoz(textoDe(id, `${lb} ${k}`), id) })).filter(x => x.t);
+    // Lo plegado para el perfil no se lee en voz alta.
+    const cola = ks.filter(k => !plegadoRef(`${lb} ${k}`)).map(k => ({ k, t: N.textoParaVoz(textoDe(id, `${lb} ${k}`), id) })).filter(x => x.t);
     parar();
     if (!cola.length) { const e = $('#rep-voz'); if (e) e.innerHTML = `<span class="vacio">No hay texto en ${IDIOMAS[id].nombre} para ${ks.length === 1 ? 'este versículo' : 'este pasaje'} en los datos.</span>`; return; }
     Object.assign(habla, { cola, i: 0, idioma: id, estado: 'sonando' });
@@ -1751,7 +1916,7 @@ if (typeof document !== 'undefined') (function () {
   const altRec = f => `${f.titulo}. ${f.descripcion || ''}`.trim();
   const imgRec = (f, cls) => `<img class="${cls}" src="${esc(f.imagen)}" alt="${esc(altRec(f))}" loading="lazy" decoding="async"${f.ancho && f.alto ? ` width="${f.ancho}" height="${f.alto}"` : ''}>`;
   const ICO_AMPLIAR = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 3h5v5M8 17H3v-5M17 3l-6 6M3 17l6-6"/></svg>';
-  const imagenesPasaje = p => p ? N.imagenesDe(R, N.versiculosDe(D, p).map(v => v.clave)) : [];
+  const imagenesPasaje = p => { if (!p) return []; const ks = N.versiculosDe(D, p).map(v => v.clave); return permitidos(N.imagenesDe(R, ks), ks); };
   // Imagen principal del pasaje: solo si alguna obra se solapa con él; si hay varias, carrusel discreto.
   function imagenPasajeHTML(p) {
     const imgs = imagenesPasaje(p);
@@ -1801,7 +1966,9 @@ if (typeof document !== 'undefined') (function () {
     if (!R) return '';
     const ks = refs.map(N.clave), A = N.relacionadosDe(R, ks, imagenesPasaje(p).map(f => f.id));
     let html = '';
-    const objs = A.objetos.concat(A.imagenes);
+    const ksP = N.versiculosDe(D, p).map(v => v.clave); // el permiso se mira en todo el pasaje, como en el carrusel
+    const objs = permitidos(A.objetos.concat(A.imagenes), ksP);
+    A.medios = permitidos(A.medios, ksP);
     if (objs.length) html += sec('Imágenes y objetos', `<ul class="rec-lista">${objs.map(recItemHTML).join('')}</ul>`, I('M3 5h14v10H3zM3 13l4-4 3 3 2-2 5 5'));
     if (A.medios.length) html += sec('Videos y audio', `<ul class="rec-lista medios">${A.medios.map(medioHTML).join('')}</ul>`, I('M7 5v10l8-5z'));
     return html;
@@ -1818,7 +1985,7 @@ if (typeof document !== 'undefined') (function () {
   }
   const TIPO_REC_TXT = { arte: 'Arte', reconstruccion: 'Reconstrucciones modernas', ilustracion: 'Ilustraciones modernas', arqueologia: 'Objetos históricos', mapa_antiguo: 'Mapas antiguos', video: 'Videos', audio: 'Audio' };
   function creditosHTML() {
-    const fs = N.recursos(R);
+    const fs = permitidos(N.recursos(R));
     if (!fs.length) return '';
     const exc = (R.excluidas || []).length;
     return `<section><h2>Imágenes, objetos, mapas y medios</h2>
@@ -1831,7 +1998,7 @@ if (typeof document !== 'undefined') (function () {
   /* ---------- Visor a pantalla completa con zoom ---------- */
   const visorDlg = $('#visor'), VISOR = { z: 1, f: null };
   function abrirVisor(id) {
-    const f = recPorId(id); if (!f || !f.imagen || !visorDlg) return;
+    const f = recPorId(id); if (!f || !f.imagen || !visorDlg || (esNinoActivo() && f.sensible)) return;
     VISOR.f = f; VISOR.z = 1;
     visorDlg.querySelector('#visor-titulo').textContent = f.titulo;
     visorDlg.querySelector('#visor-lienzo').innerHTML = `<img src="${esc(f.imagen)}" alt="${esc(altRec(f))}" draggable="false"${f.ancho && f.alto ? ` width="${f.ancho}" height="${f.alto}"` : ''}>`;
@@ -2368,7 +2535,7 @@ if (typeof document !== 'undefined') (function () {
     let tiempo = '', curios = '';
     if (N.crono(D)) {
       const tr = tradSimple(), combo = comboDe(tr), x = N.vidasCrono(D, combo).get(id);
-      const cs = N.curiosidadesDe(D, id, combo);
+      const cs = N.curiosidadesDe(D, id, combo).filter(c => N.curiosidadPermitida(c, perfil(), CONT()));
       const liC = c => `<li class="curio"><p>${esc(c.texto)}.</p><details class="plegable"><summary>Pasos y versículos</summary>${pasosCurio(c)}</details></li>`;
       if (cs.length) curios = `<h3>Curiosidades ${insignia('calculo')}</h3><ul class="curios">${cs.slice(0, 3).map(liC).join('')}</ul>
         ${cs.length > 3 ? `<details class="plegable"><summary>Ver ${cs.length - 3} más</summary><ul class="curios">${cs.slice(3).map(liC).join('')}</ul></details>` : ''}
@@ -3079,6 +3246,182 @@ if (typeof document !== 'undefined') (function () {
     el.addEventListener('focusin', () => clearTimeout(tNuevas)); el.addEventListener('focusout', e => { if (!el.hidden && !el.contains(e.relatedTarget)) programarNuevas(); });
   })($('#nuevas'));
 
+  /* ---------- Perfiles: botón de la cabecera, selector, edición y PIN de adulto ---------- */
+  const perfilesDlg = $('#perfiles'), pinDlg = $('#pin');
+  const TIPO_PERFIL_TXT = { adulto: 'Adulto', nino: 'Niño' };
+  const COLOR_TXT = { lapis: 'Azul', verdin: 'Verde', ocre: 'Ocre', murice: 'Morado', carmin: 'Rojo', mar: 'Turquesa' };
+  const AVISO_PIN = 'Es un control parental sencillo: evita cambios por descuido, pero no es seguridad real. Todo se guarda solo en este navegador.';
+  const OLVIDE_PIN = `<details class="plegable"><summary>Olvidé el PIN</summary><p class="meta">El PIN no se puede recuperar: solo se guarda una huella cifrada (SHA-256). Para restablecerlo hay que borrar los datos de este sitio en el navegador (Configuración › Privacidad › Cookies y datos de sitios › este sitio › Borrar). <strong>Se borran también los perfiles y el progreso de todos.</strong> Al volver a abrir la app empiezas de cero.</p></details>`;
+  const avatarHTML = (p, cls) => `<span class="avatar av-${esc(p.color)}${cls ? ' ' + cls : ''}" aria-hidden="true">${esc(p.inicial)}</span>`;
+  function pintarBotonPerfil() {
+    const b = $('#perfil-btn'), p = perfil(); if (!b) return;
+    b.innerHTML = `${avatarHTML(p)}<span class="perfil-txt"><span class="perfil-nombre">${esc(p.nombre)}</span><span class="perfil-tipo">${TIPO_PERFIL_TXT[p.tipo]}</span></span>`;
+    b.setAttribute('aria-label', `Perfil: ${p.nombre}, ${TIPO_PERFIL_TXT[p.tipo].toLowerCase()}. Cambiar de perfil`);
+    document.documentElement.classList.toggle('perfil-nino', p.tipo === 'nino');
+  }
+  async function hashPin(pin) {
+    const txt = 'biblia-pin|' + pin;
+    try {
+      const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(txt));
+      return 'sha256:' + Array.from(new Uint8Array(b), x => x.toString(16).padStart(2, '0')).join('');
+    } catch (e) { // sin SubtleCrypto (página sin https): huella simple, igual de «no segura»
+      let h = 2166136261; for (const c of txt) { h ^= c.codePointAt(0); h = Math.imul(h, 16777619) >>> 0; } return 'fnv:' + h.toString(16);
+    }
+  }
+  // Pide (o define, con opc.definir) el PIN de adulto. Resuelve true si es correcto; sin PIN definido no pide nada.
+  let pinResolver = null;
+  function pedirPin(opc) {
+    const o = opc || {};
+    if (!o.definir && !PERF.r.pin) return Promise.resolve(true);
+    if (!pinDlg) return Promise.resolve(false);
+    if (pinResolver) pinResolver(false);
+    pinDlg.innerHTML = `<div class="dialogo-cab"><h2 id="pin-titulo">${esc(o.titulo || (o.definir ? 'Define el PIN de adulto' : 'PIN de adulto'))}</h2><button type="button" class="cerrar" data-cerrar aria-label="Cancelar"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+      <form class="dialogo-cuerpo pin-form" id="pin-form" novalidate>
+        <p>${esc(o.texto || (o.definir ? 'Elige 4 cifras. Se pedirán para pasar a un perfil de adulto, crear, editar o borrar perfiles y mostrar lo plegado.' : 'Escribe las 4 cifras del PIN.'))}</p>
+        <label class="campo">PIN de 4 cifras<input id="pin-1" autofocus type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="${o.definir ? 'new-password' : 'off'}" required></label>
+        ${o.definir ? '<label class="campo">Repite el PIN<input id="pin-2" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="new-password" required></label>' : ''}
+        <p class="form-error" id="pin-error" role="alert"></p>
+        <div class="form-acc"><button type="submit" class="boton">${o.definir ? 'Guardar el PIN' : 'Aceptar'}</button><button type="button" class="boton secundario" data-cerrar>Cancelar</button></div>
+        <p class="meta">${AVISO_PIN}</p>${o.definir ? '' : OLVIDE_PIN}</form>`;
+    return new Promise(res => {
+      pinResolver = v => { pinResolver = null; res(v); };
+      pinDlg.onclose = () => { if (pinResolver) pinResolver(false); };
+      const f = pinDlg.querySelector('#pin-form'), err = pinDlg.querySelector('#pin-error');
+      let ocupado = false;
+      f.onsubmit = async ev => {
+        ev.preventDefault();
+        if (ocupado || !pinResolver) return; // doble envío o pedido ya resuelto
+        ocupado = true;
+        try { await enviar(); } finally { ocupado = false; }
+      };
+      const enviar = async () => {
+        const a = f.querySelector('#pin-1').value.trim(), b2 = f.querySelector('#pin-2');
+        if (!N.pinValido(a)) { err.textContent = 'El PIN son 4 cifras.'; return; }
+        if (o.definir) {
+          if (b2.value.trim() !== a) { err.textContent = 'Los dos PIN no coinciden.'; return; }
+          PERF.r.pin = await hashPin(a); guardarPerfiles();
+        } else if (await hashPin(a) !== PERF.r.pin) { err.textContent = 'PIN incorrecto.'; f.querySelector('#pin-1').select(); return; }
+        const r = pinResolver; pinResolver = null;
+        if (!r) return; // se canceló mientras se calculaba la huella
+        if (o.enlace) { // el enlace se abre con un toque de la persona (los navegadores bloquean ventanas abiertas por código)
+          let dom = ''; try { dom = new URL(o.enlace).hostname; } catch (e) { /* nada */ }
+          f.innerHTML = `<p>Enlace externo${dom ? ` a <strong>${esc(dom)}</strong>` : ''}:</p><p><a class="boton" data-libre href="${esc(o.enlace)}" target="_blank" rel="noopener noreferrer">Abrir el enlace</a> <span class="etiqueta externa">Fuente externa</span></p><div class="form-acc"><button type="button" class="boton secundario" data-cerrar>Cerrar</button></div>`;
+          r(true); return;
+        }
+        cerrar(pinDlg); r(true);
+      };
+      mostrar(pinDlg);
+      setTimeout(() => { const i = pinDlg.querySelector('#pin-1'); if (i) i.focus(); }, 30);
+    });
+  }
+  const modoPerfiles = { modo: 'lista', id: null };
+  function perfilesListaHTML() {
+    const act = perfil(), C = CONT();
+    return `<p class="meta">Quién lee ahora. Cada perfil guarda en este dispositivo su propio progreso, colección y preferencias.</p>
+      <ul class="perfiles-lista">${PERF.r.lista.map(p => `<li class="perfil-fila${p.id === act.id ? ' actual' : ''}">
+        <button type="button" class="perfil-elegir" data-perfil-elegir="${esc(p.id)}"${p.id === act.id ? ' aria-current="true"' : ''}>${avatarHTML(p)}<span class="perfil-fila-txt"><strong>${esc(p.nombre)}</strong><span class="meta">${TIPO_PERFIL_TXT[p.tipo]}${p.id === act.id ? ' · leyendo ahora' : ''}${N.cambioPidePin(PERF.r, act.id, p.id) ? ' · pide PIN' : ''}</span></span></button>
+        <button type="button" class="boton mini-boton secundario" data-perfil-editar="${esc(p.id)}" aria-label="Editar el perfil ${esc(p.nombre)}">Editar</button></li>`).join('')}</ul>
+      <p><button type="button" class="boton secundario" data-perfil-nuevo>Añadir perfil</button></p>
+      ${act.tipo === 'adulto' ? `<label class="chk"><input type="checkbox" id="perfil-avisar"${act.avisar ? ' checked' : ''}><span>Avisar antes de contenido fuerte</span></label>
+        <p class="meta">En este perfil se ve todo. Con esta opción aparece un aviso antes de los pasajes marcados, sin plegarlos.</p>` : ''}
+      <section class="perfil-sec"><h3>Perfil de niño</h3>
+        <p class="meta">Pliega los pasajes marcados como fuertes («Esta parte es para leerla con un adulto»), anota los delicados, oculta imágenes cruentas y pide el PIN para abrir enlaces externos. Los videos de Proyecto Biblia siguen disponibles.</p>
+        ${C && C.criterio ? `<details class="plegable"><summary>Qué se marca y con qué criterio</summary><p class="meta">${esc(C.criterio)}</p><p class="meta">${ROTULO_CONT}</p></details>` : `<p class="meta">${ROTULO_CONT}</p>`}</section>
+      <section class="perfil-sec"><h3>PIN de adulto</h3>
+        <p class="meta">${PERF.r.pin ? 'Definido.' : 'Sin definir: se pide al crear el primer perfil de niño.'} ${AVISO_PIN}</p>
+        <button type="button" class="boton mini-boton secundario" data-pin-cambiar>${PERF.r.pin ? 'Cambiar el PIN' : 'Definir un PIN'}</button>${PERF.r.pin ? OLVIDE_PIN : ''}</section>`;
+  }
+  function perfilFormHTML(p, bienvenida) {
+    const x = p || { nombre: '', tipo: 'adulto', color: N.COLORES_PERFIL[PERF.r.lista.length % N.COLORES_PERFIL.length], inicial: '' };
+    const borrar = p && !bienvenida && PERF.r.lista.length > 1 && p.id !== PERF.r.activo;
+    return `${bienvenida ? '<p>Crea el perfil de quien va a leer. Si ya habías leído aquí, tu progreso pasa a este primer perfil. Después puedes añadir más (por ejemplo, uno de niño) desde el botón de perfil.</p>' : ''}
+      <form class="perfil-form" id="perfil-form" novalidate>
+        <label class="campo">Nombre<input name="nombre" maxlength="24" required value="${esc(x.nombre)}" autocomplete="off"></label>
+        <fieldset class="segmentos"><legend>Tipo de perfil</legend>${['adulto', 'nino'].map(t => `<label><input type="radio" name="tipo" value="${t}"${x.tipo === t ? ' checked' : ''}><span>${TIPO_PERFIL_TXT[t]}</span></label>`).join('')}</fieldset>
+        <p class="meta">Niño: lectura filtrada y apta para niños. Adulto: se muestra todo el texto y todos los recursos.</p>
+        <fieldset class="colores"><legend>Color</legend>${N.COLORES_PERFIL.map(c => `<label class="color-op"><input type="radio" name="color" value="${c}"${x.color === c ? ' checked' : ''}><span class="avatar av-${c}" aria-hidden="true">${esc(x.inicial || '?')}</span><span class="sr">${COLOR_TXT[c]}</span></label>`).join('')}</fieldset>
+        <label class="campo campo-corto">Inicial<input name="inicial" maxlength="2" value="${esc(x.inicial || '')}" autocomplete="off" placeholder="Auto"></label>
+        <p class="form-error" id="perfil-error" role="alert"></p>
+        <div class="form-acc"><button type="submit" class="boton">${bienvenida ? 'Empezar a leer' : 'Guardar'}</button>
+          ${bienvenida ? '' : '<button type="button" class="boton secundario" data-perfil-volver>Volver</button>'}
+          ${borrar ? `<button type="button" class="boton secundario peligro" data-perfil-borrar="${esc(p.id)}">Borrar perfil</button>` : ''}</div></form>`;
+  }
+  function pintarPerfiles() {
+    if (!perfilesDlg) return;
+    const { modo, id } = modoPerfiles, p = id ? N.perfilDe(PERF.r, id) : null;
+    perfilesDlg.querySelector('#perfiles-titulo').textContent = modo === 'bienvenida' ? '¿Quién va a leer?' : modo === 'editar' ? (p ? `Editar: ${p.nombre}` : 'Nuevo perfil') : 'Perfiles';
+    perfilesDlg.querySelector('.dialogo-cuerpo').innerHTML = modo === 'lista' ? perfilesListaHTML() : perfilFormHTML(p, modo === 'bienvenida');
+  }
+  function abrirPerfiles(modo, id) { modoPerfiles.modo = modo || 'lista'; modoPerfiles.id = id || null; pintarPerfiles(); mostrar(perfilesDlg); }
+  async function elegirPerfil(id) {
+    if (id === PERF.r.activo) { cerrar(perfilesDlg); return; }
+    const p = N.perfilDe(PERF.r, id); if (!p) return;
+    if (N.cambioPidePin(PERF.r, PERF.r.activo, id) && !(await pedirPin({ titulo: `Pasar a ${p.nombre}`, texto: 'Es un perfil de adulto: escribe el PIN.' }))) return;
+    PERF.r.activo = id; guardarPerfiles(); parar();
+    location.reload(); // cada perfil arranca con sus propias preferencias
+  }
+  async function editarPerfil(id) { if (await pedirPin({ titulo: id ? 'Editar perfil' : 'Añadir perfil', texto: 'Para crear, editar o borrar perfiles hace falta el PIN de adulto.' })) abrirPerfiles('editar', id); }
+  async function guardarPerfil(form) {
+    const err = form.querySelector('#perfil-error'), fd = new FormData(form);
+    const datos = { nombre: String(fd.get('nombre') || '').trim(), tipo: fd.get('tipo'), color: fd.get('color'), inicial: String(fd.get('inicial') || '').trim() };
+    if (!datos.nombre) { err.textContent = 'Escribe un nombre.'; form.querySelector('[name="nombre"]').focus(); return; }
+    if (datos.tipo === 'nino' && !PERF.r.pin && !(await pedirPin({ definir: true, texto: 'Un perfil de niño necesita un PIN de adulto: elige 4 cifras. Se pedirán para pasar a un perfil de adulto, gestionar perfiles, mostrar lo plegado o abrir enlaces externos.' }))) {
+      err.textContent = 'Sin PIN no se puede crear un perfil de niño.'; return;
+    }
+    const previo = modoPerfiles.id ? N.perfilDe(PERF.r, modoPerfiles.id) : null;
+    const nuevo = N.nuevoPerfil(previo ? PERF.r.lista.filter(x => x.id !== previo.id) : PERF.r.lista, Object.assign({ avisar: previo ? previo.avisar : false }, datos));
+    if (previo) Object.assign(previo, nuevo, { id: previo.id }); else PERF.r.lista.push(nuevo);
+    guardarPerfiles(); pintarBotonPerfil();
+    if (modoPerfiles.modo === 'bienvenida' || (previo && previo.id === PERF.r.activo)) { cerrar(perfilesDlg); rerender(); return; }
+    abrirPerfiles('lista');
+  }
+  function borrarPerfil(id) {
+    const p = N.perfilDe(PERF.r, id); if (!p || id === PERF.r.activo || PERF.r.lista.length < 2) return;
+    if (!confirm(`¿Borrar el perfil «${p.nombre}»? Se borran para siempre su progreso, su colección y sus preferencias en este dispositivo.`)) return;
+    N.clavesDePerfil(LS.claves(), id).forEach(LS.del);
+    PERF.r.lista = PERF.r.lista.filter(x => x.id !== id); guardarPerfiles();
+    abrirPerfiles('lista');
+  }
+  async function cambiarPin() {
+    if (PERF.r.pin && !(await pedirPin({ titulo: 'Cambiar el PIN', texto: 'Primero, el PIN actual.' }))) return;
+    if (await pedirPin({ definir: true })) pintarPerfiles();
+  }
+  // Perfil niño: los enlaces externos (salvo Proyecto Biblia) piden el PIN antes de abrirse.
+  document.addEventListener('click', e => {
+    const a = e.target.closest && e.target.closest('a[href]');
+    if (!a || !esNinoActivo() || a.hasAttribute('data-libre')) return;
+    let u; try { u = new URL(a.href, location.href); } catch (er) { return; }
+    if (!/^https?:$/.test(u.protocol) || u.origin === location.origin || N.enlaceLibre(u.href)) return;
+    e.preventDefault(); e.stopPropagation();
+    pedirPin({ titulo: 'Enlace externo', texto: 'Este enlace sale de la app. Un adulto puede abrirlo con su PIN.', enlace: u.href });
+  }, true);
+  document.addEventListener('click', e => {
+    const t = e.target; if (!t.closest) return;
+    if (t.closest('#perfil-btn')) { abrirPerfiles('lista'); return; }
+    const el = t.closest('[data-perfil-elegir]'); if (el) { elegirPerfil(el.dataset.perfilElegir); return; }
+    const ed = t.closest('[data-perfil-editar]'); if (ed) { editarPerfil(ed.dataset.perfilEditar); return; }
+    if (t.closest('[data-perfil-nuevo]')) { editarPerfil(null); return; }
+    if (t.closest('[data-perfil-volver]')) { abrirPerfiles('lista'); return; }
+    const bo = t.closest('[data-perfil-borrar]'); if (bo) { borrarPerfil(bo.dataset.perfilBorrar); return; }
+    if (t.closest('[data-pin-cambiar]')) { cambiarPin(); return; }
+    const mc = t.closest('[data-mostrar-cont]'); if (mc) {
+      const desde = mc.dataset.mostrarCont;
+      pedirPin({ titulo: 'Mostrar esta parte', texto: 'Esta parte es para leerla con un adulto. Escribe el PIN para mostrarla.' }).then(ok => { if (ok) { desplegados.add(desde); rerender(); } });
+      return;
+    }
+    const pc = t.closest('[data-plegar-cont]'); if (pc) { desplegados.delete(pc.dataset.plegarCont); rerender(); }
+  });
+  document.addEventListener('submit', e => { if (e.target.id === 'perfil-form') { e.preventDefault(); guardarPerfil(e.target); } });
+  document.addEventListener('change', e => {
+    if (e.target.id === 'perfil-avisar') { const p = perfil(); p.avisar = e.target.checked; guardarPerfiles(); rerender(); }
+  });
+  document.addEventListener('input', e => { // la inicial de las muestras de color sigue al nombre
+    const f = e.target.closest && e.target.closest('#perfil-form'); if (!f || (e.target.name !== 'nombre' && e.target.name !== 'inicial')) return;
+    const ini = N.inicialDe(f.querySelector('[name="inicial"]').value.trim() || f.querySelector('[name="nombre"]').value);
+    f.querySelectorAll('.color-op .avatar').forEach(s => { s.textContent = ini; });
+  });
+  window.addEventListener('storage', e => { if (e.key === N.CLAVE_PERFILES) location.reload(); }); // otra pestaña cambió de perfil
+
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
   const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes };
@@ -3251,9 +3594,11 @@ if (typeof document !== 'undefined') (function () {
 
   function iniciar() {
     const ml = document.querySelector('.marca-libro'); if (ml && D) ml.textContent = N.alcance(D).texto; // alcance de los datos, no fijo
+    pintarBotonPerfil();
     render(false); registrarSW();
+    if (PERF.nuevo) abrirPerfiles('bienvenida', PERF.r.lista[0].id);
   }
-  const arrancar = () => {
+  const arrancar0 = () => {
     if (!D && EJEMPLO) {
       const s = document.createElement('script');
       s.src = 'pruebas/datos-ejemplo.js';
@@ -3262,6 +3607,8 @@ if (typeof document !== 'undefined') (function () {
       document.head.appendChild(s);
     } else iniciar();
   };
+  // Con ?ejemplo, las marcas de contenido de prueba (pruebas/contenido-ejemplo.js) sustituyen a datos/contenido.js.
+  const arrancar = () => EJEMPLO ? cargarScript('pruebas/contenido-ejemplo.js').then(arrancar0, arrancar0) : arrancar0();
   // Recorridos de prueba (EJEMPLO) con ?ejemplo mientras no exista datos/recorridos.js.
   if (EJEMPLO && !RC) cargarScript('pruebas/recorridos-ejemplo.js').then(() => { RC = window.BIBLIA_RECORRIDOS || null; }, () => {}).then(arrancar);
   else arrancar();
