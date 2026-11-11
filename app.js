@@ -1382,7 +1382,90 @@ const Nucleo = (() => {
     return recursos(R).filter(f => (f.tipo === 'reconstruccion' || f.tipo === 'arte') && f.rangos.some(([a, b]) => cruza(rs, a, b)));
   }
 
-  return { TB_GRUPOS, tbPiezas, tbPieza, tbZona, tbCodos, tbRect, tbCodo, codosAMetros, rangosDe, tbMontaje, tbColocadas, tbPiezasDeRango, tbPiezasDePasaje, tbPiezasDeRefs,
+  /* ---- Notas y subrayados del lector (por perfil, en biblia.p.<id>.notas). Son del usuario, no datos de la app. ---- */
+  const NOTAS_COLORES = ['amarillo', 'verde', 'azul', 'rosa'];
+  const NOTA_MAX = 4000;
+  // «Ex 3:14», «éx 3:14», «Éxodo 3:14» → «Ex 3:14»; cualquier otra cosa → null (sin el «Génesis por defecto» de parseRef).
+  function refNota(ref) {
+    const m = /^\s*([1-3]?\s?[A-Za-zÀ-ÿ]+)\.?\s+(\d{1,3})\s*:\s*(\d{1,3})\s*$/.exec(String(ref == null ? '' : ref));
+    if (!m) return null;
+    const k = norm(m[1]).replace(/\s+/g, '');
+    if (!idCanon.has(k) || !ordLibro.has(norm(idCanon.get(k)))) return null;
+    const cap = +m[2], v = +m[3];
+    return cap > 0 && v > 0 ? refTxt(cap, v, idCanon.get(k)) : null;
+  }
+  // Una entrada válida o null: color conocido y/o nota con texto; `t` (ISO) se conserva si es una fecha.
+  function entradaNota(e) {
+    if (!e || typeof e !== 'object') return null;
+    const color = NOTAS_COLORES.includes(e.color) ? e.color : null;
+    const nota = typeof e.nota === 'string' ? e.nota.replace(/\r\n?/g, '\n').trim().slice(0, NOTA_MAX) : '';
+    if (!color && !nota) return null;
+    const out = {}; if (color) out.color = color; if (nota) out.nota = nota;
+    out.t = typeof e.t === 'string' && !isNaN(Date.parse(e.t)) ? e.t : '';
+    return out;
+  }
+  // Objeto guardado → { v: 1, versos: { ref: entrada } } limpio (refs canónicas, entradas vacías fuera).
+  function normalizarNotas(o) {
+    const versos = {};
+    const src = o && typeof o === 'object' && o.versos && typeof o.versos === 'object' && !Array.isArray(o.versos) ? o.versos : {};
+    Object.keys(src).forEach(r => { const ref = refNota(r), e = entradaNota(src[r]); if (ref && e && (!versos[ref] || (e.t || '') > (versos[ref].t || ''))) versos[ref] = e; });
+    return { v: 1, versos };
+  }
+  // Pone o quita color/nota de un versículo (cambios: { color?, nota? }, null o '' quita). Sin color ni nota, el versículo sale.
+  function ponerNota(o, ref, cambios, t) {
+    const N0 = normalizarNotas(o), r = refNota(ref);
+    if (!r) return N0;
+    const prev = N0.versos[r] || {}, c = cambios || {};
+    const e = entradaNota({ color: 'color' in c ? c.color : prev.color, nota: 'nota' in c ? c.nota : prev.nota, t: t || new Date().toISOString() });
+    if (e) N0.versos[r] = e; else delete N0.versos[r];
+    return N0;
+  }
+  const quitarNota = (o, ref) => { const N0 = normalizarNotas(o), r = refNota(ref); if (r) delete N0.versos[r]; return N0; };
+  const notaDe = (o, ref) => { const r = refNota(ref); return (r && normalizarNotas(o).versos[r]) || null; };
+  // Lista en orden canónico (libro, capítulo, versículo). Filtros: { color, conNota, q } (q busca en el texto de las notas).
+  function listarNotas(o, f) {
+    const F = f || {}, q = norm(F.q || '');
+    return Object.entries(normalizarNotas(o).versos).map(([ref, e]) => Object.assign({ ref, clave: clave(ref) }, e))
+      .filter(x => (!F.color || x.color === F.color) && (!F.conNota || !!x.nota) && (!q || norm(x.nota || '').includes(q)))
+      .sort((a, b) => a.clave - b.clave);
+  }
+  // Fusión de una importación: por versículo gana la entrada más reciente (`t`); empate o sin fecha, se queda la actual.
+  function fusionarNotas(actual, entrante) {
+    const A = normalizarNotas(actual), B = normalizarNotas(entrante);
+    let anadidos = 0, actualizados = 0, iguales = 0;
+    Object.entries(B.versos).forEach(([ref, e]) => {
+      const a = A.versos[ref];
+      if (!a) { A.versos[ref] = e; anadidos++; return; }
+      if ((e.t || '') > (a.t || '') && (e.color !== a.color || e.nota !== a.nota)) { A.versos[ref] = e; actualizados++; } else iguales++;
+    });
+    return { notas: A, anadidos, actualizados, iguales };
+  }
+  // Texto de un archivo importado → { ok, notas, total, descartados } o { ok: false, error } (mensaje para la persona).
+  function validarNotas(texto) {
+    let o;
+    try { o = JSON.parse(String(texto == null ? '' : texto).replace(/^﻿/, '')); } catch (e) { return { ok: false, error: 'El archivo no es JSON válido.' }; }
+    if (!o || typeof o !== 'object' || Array.isArray(o)) return { ok: false, error: 'El archivo no tiene el formato de notas de esta app.' };
+    if (o.app !== undefined && o.app !== 'biblia-notas') return { ok: false, error: 'El archivo es de otra aplicación.' };
+    if (o.v !== 1) return { ok: false, error: 'Versión de archivo desconocida (se esperaba v: 1).' };
+    if (!o.versos || typeof o.versos !== 'object' || Array.isArray(o.versos)) return { ok: false, error: 'El archivo no trae la lista «versos».' };
+    const notas = normalizarNotas(o), total = Object.keys(notas.versos).length, descartados = Object.keys(o.versos).length - total;
+    if (!total && descartados) return { ok: false, error: 'Ninguna entrada del archivo es válida (referencia, color o nota).' };
+    return { ok: true, notas, total, descartados: Math.max(0, descartados) };
+  }
+  // Archivo de exportación (lo que validarNotas acepta de vuelta).
+  const exportarNotas = (o, extra) => Object.assign({ app: 'biblia-notas', v: 1 }, extra || {}, { versos: normalizarNotas(o).versos });
+  // «Éxodo 3:14 (RV 1909)» y la cita completa con el texto.
+  const refLegible = (d, ref, sigla) => { const r = refNota(ref); if (!r) return ''; const p = parseRef(r); return `${nombreLibro(d, p.libro)} ${p.cap}:${p.v}${sigla === '' ? '' : ` (${sigla || 'RV 1909'})`}`; };
+  const citaVerso = (d, ref, texto, sigla) => { const t = String(texto || '').trim(), r = refLegible(d, ref, sigla); return t ? `«${t}» ${r}` : r; };
+  const textoVerso = (d, ref) => { const k = clave(refNota(ref)); const v = k === null ? null : todosLosVersiculos(d).find(x => x.clave === k); return v ? v.texto : ''; };
+  // Toda la lista como texto plano (para copiar): referencia, color, texto del versículo y «Tu nota».
+  const textoNotas = (d, lista, sigla) => (lista || []).map(x => [
+    `${refLegible(d, x.ref, sigla)}${x.color ? ` · subrayado ${x.color}` : ''}`,
+    textoVerso(d, x.ref) ? `«${textoVerso(d, x.ref)}»` : '',
+    x.nota ? `Tu nota: ${x.nota}` : ''].filter(Boolean).join('\n')).join('\n\n');
+
+  return { NOTAS_COLORES, refNota, normalizarNotas, ponerNota, quitarNota, notaDe, listarNotas, fusionarNotas, validarNotas, exportarNotas, refLegible, citaVerso, textoVerso, textoNotas,
+    TB_GRUPOS, tbPiezas, tbPieza, tbZona, tbCodos, tbRect, tbCodo, codosAMetros, rangosDe, tbMontaje, tbColocadas, tbPiezasDeRango, tbPiezasDePasaje, tbPiezasDeRefs,
     tbCapitulo, tbEnPasaje, tbVisiblesLeido, tbHuella, tbDisposicion, tbRecursos,
     CLAVE_PERFILES, COLORES_PERFIL, clavePerfil, esClaveLegada, clavesDePerfil, nuevoPerfil, normalizarRegistro, migrarPerfiles, perfilDe, cambioPidePin, pinValido, inicialDe,
     marcasContenido, marcaDe, decisionVerso, accionVerso, recursoPermitido, curiosidadPermitida, enlaceLibre, tramosContenido,
@@ -1561,8 +1644,9 @@ if (typeof document !== 'undefined') (function () {
     store.set('biblia.pos', { pasaje: p.id, v: estado.activo });
     const fuente = ((D.fuentes || []).find(f => /rv/i.test(f.id)) || {}).id;
     let capPrev = null;
+    const NT = notasGuardadas().versos;
     const texto = tramosVersos(vs, (v, j) => {
-      const k = `${v.cap}:${v.n}`, ap = N.tieneApoyo(D, v.ref);
+      const k = `${v.cap}:${v.n}`, ap = N.tieneApoyo(D, v.ref), nt = NT[v.ref] || null;
       const cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : '';
       capPrev = v.cap;
       const segs = N.segmentar(D, v.ref, v.texto);
@@ -1572,7 +1656,7 @@ if (typeof document !== 'undefined') (function () {
         if (j === 0 && si === 0 && s.texto) { const t = s.texto.trimStart(), c = Array.from(t)[0] || ''; return `<span class="capitular" aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c)}</span>${esc(t.slice(c.length))}`; }
         return esc(s.texto);
       }).join('');
-      return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${marcaVariante(v.ref, v.n)}${partes} </span>`;
+      return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}${nbClases(nt)}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${nbSrHTML(nt)}${marcaVariante(v.ref, v.n)}${partes}${nbIndHTML(nt, k, v.n)} </span>`;
     }, (vsP, j) => { const v = vsP[0], cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : ''; capPrev = vsP[vsP.length - 1].cap; return cab; });
     const nuevos = N.primerasApariciones(D, p);
     return `<div class="pasaje-vista"><article class="lectura">
@@ -1727,7 +1811,168 @@ if (typeof document !== 'undefined') (function () {
     store.set('biblia.pos', { pasaje: estado.pasaje.id, v: estado.activo });
     try { history.replaceState(null, '', `#leer/p/${estado.pasaje.id}${estado.activo ? '/' + estado.activo : ''}`); } catch (e) { /* file:// */ }
     const rv = $('#rep-verso'); if (rv) rv.outerHTML = repVersoHTML();
+    const b = ponerBarraNotas(); if (b) b.scrollIntoView({ block: 'nearest' });
   }
+
+  /* ---------- Notas y subrayados del lector (por perfil). Son del usuario: siempre «Tu nota», sin insignias de certeza. ---------- */
+  const NB_NOMBRE = { amarillo: 'amarillo', verde: 'verde', azul: 'azul', rosa: 'rosa' };
+  const ICO_NOTA = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 3.5h7l3 3v10H5z"/><path d="M7.5 9h5M7.5 12h5M7.5 15h3"/></svg>';
+  let nbEditar = null, nbDeshacer = null; // ref cuya nota se está escribiendo; última entrada quitada (para deshacer)
+  const nbF = { color: '', conNota: false, q: '' }; // filtros de «Mis notas»
+  const notasGuardadas = () => N.normalizarNotas(store.get('notas', null));
+  const guardarNotas = o => LS.set(N.clavePerfil(PERF.r.activo, 'notas'), JSON.stringify(N.normalizarNotas(o)));
+  const nbClases = e => (e && e.color ? ` nb-sub nb-${e.color}` : '') + (e && e.nota ? ' nb-con-nota' : '');
+  const nbSrHTML = e => e && e.color ? `<span class="sr nb-sr">Subrayado ${NB_NOMBRE[e.color]}.</span>` : '';
+  const nbIndHTML = (e, k, n) => e && e.nota ? `<button type="button" class="nb-ind" data-nb-abrir="${esc(k)}" aria-label="Tu nota del versículo ${esc(n)}" title="Tu nota">${ICO_NOTA}</button>` : '';
+  const notaUsuarioHTML = t => `<div class="nb-nota"><span class="nb-rotulo">Tu nota</span><p>${esc(t)}</p></div>`;
+  const refActiva = () => estado.pasaje && estado.activo ? `${N.libroDe(estado.pasaje)} ${estado.activo}` : null;
+  function barraNotasHTML(ref) {
+    const e = N.notaDe(notasGuardadas(), ref), legible = N.refLegible(D, ref, ''), editando = nbEditar === ref;
+    const colores = N.NOTAS_COLORES.map(c => `<button type="button" class="nb-color nb-c-${c}" data-nb-color="${c}" aria-pressed="${!!e && e.color === c}" aria-label="Subrayar en ${NB_NOMBRE[c]}" title="${NB_NOMBRE[c][0].toUpperCase() + NB_NOMBRE[c].slice(1)}"></button>`).join('');
+    return `<div class="nb-barra" role="group" aria-label="Subrayado y nota de ${esc(legible)}" data-nb="${esc(ref)}">
+      <div class="nb-fila"><span class="nb-colores" role="group" aria-label="Subrayar">${colores}</span>
+        <button type="button" class="boton mini-boton secundario" data-nb-nota aria-expanded="${editando}">${ICO_NOTA}${e && e.nota ? 'Editar nota' : 'Nota'}</button>
+        <button type="button" class="boton mini-boton secundario" data-nb-copiar>Copiar cita</button>
+        ${e ? '<button type="button" class="boton mini-boton secundario" data-nb-quitar>Quitar</button>' : ''}</div>
+      ${editando ? `<form class="nb-editor" data-nb-form><label class="nb-rotulo" for="nb-texto">Tu nota</label>
+          <textarea id="nb-texto" rows="3" maxlength="4000">${esc(e && e.nota || '')}</textarea>
+          <span class="nb-editor-acc"><button type="submit" class="boton mini-boton">Guardar</button><button type="button" class="boton mini-boton secundario" data-nb-cancelar>Cancelar</button></span></form>`
+        : e && e.nota ? notaUsuarioHTML(e.nota) : ''}
+      <p class="nb-estado meta" role="status" aria-live="polite"></p></div>`;
+  }
+  // Barra bajo el versículo activo (fuera de él: no lo tapa y no interfiere con su clic). Devuelve la barra o null.
+  function ponerBarraNotas(foco, msg) {
+    main.querySelectorAll('.nb-barra').forEach(b => b.remove());
+    const ve = main.querySelector('.biblia .vers.activo'), ref = refActiva();
+    if (!ve || !ref) { nbEditar = null; return null; }
+    if (nbEditar !== ref) nbEditar = null;
+    ve.insertAdjacentHTML('afterend', barraNotasHTML(ref));
+    const b = ve.nextElementSibling;
+    if (foco) { const el = b.querySelector(foco); if (el) el.focus(); }
+    if (msg) setTimeout(() => { const s = b.isConnected && b.querySelector('.nb-estado'); if (s) s.innerHTML = msg; }, 40);
+    return b;
+  }
+  // Clases e indicador del versículo tras un cambio, sin repintar el pasaje.
+  function refrescarVerso(ref) {
+    const r = N.parseRef(ref), ve = main.querySelector(`.vers[data-v="${r.cap}:${r.v}"]`); if (!ve) return;
+    const e = N.notaDe(notasGuardadas(), ref);
+    [...ve.classList].filter(c => c.startsWith('nb-')).forEach(c => ve.classList.remove(c));
+    nbClases(e).trim().split(/\s+/).filter(Boolean).forEach(c => ve.classList.add(c));
+    ve.querySelectorAll('.nb-sr, .nb-ind').forEach(x => x.remove());
+    const vn = ve.querySelector('.vn'); if (vn) vn.insertAdjacentHTML('afterend', nbSrHTML(e));
+    ve.insertAdjacentHTML('beforeend', nbIndHTML(e, `${r.cap}:${r.v}`, r.v));
+  }
+  function cambiarNota(ref, cambios, foco, msg) {
+    if (!guardarNotas(N.ponerNota(notasGuardadas(), ref, cambios))) msg = 'No se pudo guardar: el almacenamiento del navegador no está disponible.';
+    refrescarVerso(ref); ponerBarraNotas(foco, msg);
+  }
+  async function copiarTexto(t) {
+    try { await navigator.clipboard.writeText(t); return true; } catch (e) {
+      const ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;top:0;opacity:0';
+      document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (er) { /* nada */ } ta.remove(); return ok;
+    }
+  }
+  const nbEstadoVista = msg => { const s = $('#nb-estado-copia'); if (s) s.innerHTML = msg; };
+  function listaNotasHTML() {
+    const todas = N.listarNotas(notasGuardadas());
+    if (!todas.length) return `<div class="nb-vacio"><p class="vacio-txt">Aún no tienes subrayados ni notas en este perfil.</p>
+      <p>Mientras lees un pasaje, pulsa el número de un versículo (o el versículo): aparece una barra para subrayarlo en un color, escribir tu nota o copiar la cita. Todo lo que marques se reúne aquí, en el orden de la Biblia.</p>
+      <p><a class="boton" href="#leer">Ir a leer</a></p></div>`;
+    const xs = N.listarNotas(notasGuardadas(), nbF);
+    if (!xs.length) return `<p class="vacio-txt">Ninguna de tus ${todas.length} marcas coincide con el filtro.</p>`;
+    return `<p class="meta" aria-live="polite">${xs.length === todas.length ? `${xs.length} ${xs.length === 1 ? 'versículo' : 'versículos'}` : `${xs.length} de ${todas.length}`}</p>
+      <ol class="nb-lista">${xs.map(x => {
+        const r = N.parseRef(x.ref), txt = N.textoVerso(D, x.ref);
+        const cuerpo = plegadoRef(x.ref) ? '<span class="meta">Texto plegado para este perfil.</span>' : txt ? `<span class="${x.color ? `nb-sub nb-${x.color}` : ''}">${esc(txt)}</span>` : '<span class="meta">Este versículo no está en los datos cargados.</span>';
+        return `<li class="nb-item${x.color ? ` nb-borde-${x.color}` : ''}"><div class="nb-item-cab"><a class="nb-ir" href="#leer/${esc(r.libro)}/${r.cap}/${r.v}">${esc(N.refLegible(D, x.ref, ''))}</a>
+          ${x.color ? `<span class="nb-chip"><span class="nb-punto nb-c-${x.color}" aria-hidden="true"></span>Subrayado ${NB_NOMBRE[x.color]}</span>` : ''}</div>
+          <p class="nb-texto">${cuerpo}</p>${x.nota ? notaUsuarioHTML(x.nota) : ''}</li>`;
+      }).join('')}</ol>`;
+  }
+  function vistaNotas() {
+    const hay = N.listarNotas(notasGuardadas()).length;
+    const filtros = hay ? `<div class="nb-filtros">
+        <span class="nb-f-colores" role="group" aria-label="Filtrar por color"><button type="button" class="boton mini-boton secundario" data-nb-filtro="" aria-pressed="${!nbF.color}">Todos</button>${N.NOTAS_COLORES.map(c => `<button type="button" class="boton mini-boton secundario" data-nb-filtro="${c}" aria-pressed="${nbF.color === c}"><span class="nb-punto nb-c-${c}" aria-hidden="true"></span>${NB_NOMBRE[c][0].toUpperCase() + NB_NOMBRE[c].slice(1)}</button>`).join('')}</span>
+        <label class="nb-check"><input type="checkbox" id="nb-connota"${nbF.conNota ? ' checked' : ''}> Solo con nota</label>
+        <label class="nb-buscar"><span class="sr">Buscar en el texto de tus notas</span><input type="search" id="nb-q" placeholder="Buscar en tus notas" value="${esc(nbF.q)}" autocomplete="off"></label></div>` : '';
+    return `<div class="nb-vista"><h1 tabindex="-1">Mis notas</h1>
+      <p class="sub">Tus subrayados y notas de lectura. Son tuyos, no datos de la app: se guardan en este dispositivo, solo para el perfil «${esc(perfil().nombre)}».</p>
+      ${filtros}<div id="nb-lista">${listaNotasHTML()}</div>
+      <section class="nb-copia" aria-labelledby="t-nb-copia"><h2 id="t-nb-copia">Exportar e importar</h2>
+        <p class="meta">Guarda una copia o pásala a otro dispositivo o perfil. Al importar se juntan con las que ya tienes; si un versículo está en ambas, se queda la versión más reciente.</p>
+        <div class="nb-acciones"><button type="button" class="boton secundario" data-nb-exportar${hay ? '' : ' disabled'}>Exportar (JSON)</button>
+          <button type="button" class="boton secundario" data-nb-copiar-todo${hay ? '' : ' disabled'}>Copiar como texto</button>
+          <label class="boton secundario nb-importar">Importar JSON<input type="file" id="nb-archivo" class="sr" accept=".json,application/json"></label></div>
+        <p class="nb-estado" id="nb-estado-copia" role="status" aria-live="polite"></p></section></div>`;
+  }
+  function refrescarListaNotas() {
+    const l = $('#nb-lista'); if (l) l.innerHTML = listaNotasHTML();
+    document.querySelectorAll('[data-nb-filtro]').forEach(b => b.setAttribute('aria-pressed', b.dataset.nbFiltro === nbF.color));
+  }
+  function exportarNotasArchivo() {
+    const p = perfil(), hoy = new Date().toISOString();
+    const datos = N.exportarNotas(notasGuardadas(), { perfil: p.nombre, exportado: hoy });
+    const url = URL.createObjectURL(new Blob([JSON.stringify(datos, null, 2)], { type: 'application/json' }));
+    const a = document.createElement('a'), nombreArch = N.norm(p.nombre).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'perfil';
+    a.href = url; a.download = `biblia-notas-${nombreArch}-${hoy.slice(0, 10)}.json`; a.hidden = true;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
+    const n = Object.keys(datos.versos).length;
+    nbEstadoVista(`Archivo generado con ${n} ${n === 1 ? 'versículo' : 'versículos'} (${esc(a.download)}).`);
+  }
+  function importarNotasArchivo(input) {
+    const f = input.files && input.files[0]; if (!f) return;
+    const fin = msg => { input.value = ''; nbEstadoVista(msg); };
+    if (f.size > 2e6) { fin(`No se importó «${esc(f.name)}»: es demasiado grande para ser un archivo de notas.`); return; }
+    f.text().then(txt => {
+      const v = N.validarNotas(txt);
+      if (!v.ok) { fin(`No se importó «${esc(f.name)}»: ${esc(v.error)}`); return; }
+      const r = N.fusionarNotas(notasGuardadas(), v.notas);
+      if (!guardarNotas(r.notas)) { fin('No se pudo guardar: el almacenamiento del navegador no está disponible.'); return; }
+      const msg = `Importado «${esc(f.name)}»: ${r.anadidos} ${r.anadidos === 1 ? 'añadido' : 'añadidos'}, ${r.actualizados} ${r.actualizados === 1 ? 'actualizado' : 'actualizados'}, ${r.iguales} sin cambios${v.descartados ? `; ${v.descartados} ${v.descartados === 1 ? 'entrada no válida descartada' : 'entradas no válidas descartadas'}` : ''}.`;
+      rerender(); nbEstadoVista(msg);
+    }, () => fin(`No se pudo leer «${esc(f.name)}».`));
+  }
+  document.addEventListener('click', e => {
+    const t = e.target; if (!t.closest) return;
+    const ab = t.closest('[data-nb-abrir]'); if (ab) { if (estado.activo !== ab.dataset.nbAbrir) activar(ab.dataset.nbAbrir); const b = ponerBarraNotas('.nb-nota, [data-nb-nota]'); if (b) b.scrollIntoView({ block: 'nearest' }); return; }
+    const barra = t.closest('.nb-barra');
+    if (barra) {
+      const ref = barra.dataset.nb, prev = N.notaDe(notasGuardadas(), ref);
+      const co = t.closest('[data-nb-color]'); if (co) { const c = co.dataset.nbColor, quita = prev && prev.color === c; cambiarNota(ref, { color: quita ? null : c }, `[data-nb-color="${c}"]`, quita ? 'Subrayado quitado.' : `Subrayado en ${NB_NOMBRE[c]}.`); return; }
+      if (t.closest('[data-nb-nota]')) { nbEditar = nbEditar === ref ? null : ref; ponerBarraNotas(nbEditar ? '#nb-texto' : '[data-nb-nota]'); return; }
+      if (t.closest('[data-nb-cancelar]')) { nbEditar = null; ponerBarraNotas('[data-nb-nota]'); return; }
+      if (t.closest('[data-nb-copiar]')) {
+        const st = barra.querySelector('.nb-estado');
+        copiarTexto(N.citaVerso(D, ref, N.textoVerso(D, ref))).then(ok => { if (st) st.textContent = ok ? `Cita copiada: ${N.refLegible(D, ref)}.` : 'No se pudo copiar en este navegador.'; });
+        return;
+      }
+      if (t.closest('[data-nb-quitar]')) { nbDeshacer = prev ? { ref, e: prev } : null; nbEditar = null; guardarNotas(N.quitarNota(notasGuardadas(), ref)); refrescarVerso(ref); ponerBarraNotas('[data-nb-nota]', 'Subrayado y nota quitados. <button type="button" class="enlace-boton" data-nb-deshacer>Deshacer</button>'); return; }
+      if (t.closest('[data-nb-deshacer]') && nbDeshacer && nbDeshacer.ref === ref) { const d = nbDeshacer; nbDeshacer = null; cambiarNota(ref, { color: d.e.color || null, nota: d.e.nota || null }, '[data-nb-nota]', 'Recuperado.'); return; }
+      return;
+    }
+    const fi = t.closest('[data-nb-filtro]'); if (fi) { nbF.color = fi.dataset.nbFiltro; refrescarListaNotas(); return; }
+    if (t.closest('[data-nb-exportar]')) { exportarNotasArchivo(); return; }
+    if (t.closest('[data-nb-copiar-todo]')) { copiarTexto(N.textoNotas(D, N.listarNotas(notasGuardadas(), nbF))).then(ok => nbEstadoVista(ok ? 'Notas copiadas como texto (las que muestra el filtro).' : 'No se pudo copiar en este navegador.')); }
+  });
+  document.addEventListener('submit', e => {
+    const f = e.target.closest && e.target.closest('[data-nb-form]'); if (!f) return;
+    e.preventDefault();
+    const ref = f.closest('.nb-barra').dataset.nb, txt = f.querySelector('#nb-texto').value;
+    nbEditar = null; cambiarNota(ref, { nota: txt }, '[data-nb-nota]', txt.trim() ? 'Nota guardada.' : 'Nota vacía: no se guarda.');
+  });
+  document.addEventListener('change', e => {
+    if (e.target.id === 'nb-connota') { nbF.conNota = e.target.checked; refrescarListaNotas(); }
+    else if (e.target.id === 'nb-archivo') importarNotasArchivo(e.target);
+  });
+  document.addEventListener('input', e => { if (e.target.id === 'nb-q') { nbF.q = e.target.value; refrescarListaNotas(); } });
+  document.addEventListener('keydown', e => {
+    const barra = e.target.closest && e.target.closest('.nb-barra'); if (!barra) return;
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey) && e.target.id === 'nb-texto') { e.preventDefault(); e.target.form.requestSubmit(); return; }
+    if (e.key !== 'Escape') return;
+    e.preventDefault();
+    if (nbEditar) { nbEditar = null; ponerBarraNotas('[data-nb-nota]'); return; }
+    const k = estado.activo; activar(k); const vn = main.querySelector(`.vers[data-v="${k}"] .vn`); if (vn) vn.focus();
+  });
 
   /* ---------- Textos originales: carga bajo demanda ---------- */
   // datos/originales.js (hebreo, testigos, variantes, videos) y datos/griego-swete.js se inyectan solo cuando
@@ -1817,7 +2062,7 @@ if (typeof document !== 'undefined') (function () {
     const cab = vis.map(c => `<div class="cmp-cab"><span class="cmp-col-t">${esc(COLS[c].t)}</span><span class="cmp-fuente">${esc(COLS[c].fuente())}</span>${c === 'he' ? estadoCarga('o') : c === 'gr' ? estadoCarga('g') : ''}</div>`).join('');
     const vars = new Set(ORIG.o ? filas.filter(f => N.variantesDe(ORIG.o, [f.ref]).length).map(f => f.ref) : []);
     let capPrev = null;
-    const accs = filas.map(f => accionDe(f.ref));
+    const accs = filas.map(f => accionDe(f.ref)), NTc = notasGuardadas().versos;
     const cuerpo = filas.map((f, j) => {
       const k = `${f.cap}:${f.n}`, x = accs[j];
       if (x.accion === 'plegar') { // una sola fila plegada por tramo, con sus números
@@ -1834,7 +2079,8 @@ if (typeof document !== 'undefined') (function () {
         const pend = (c === 'he' && ORIG.est.o === 'cargando') || (c === 'gr' && ORIG.est.g === 'cargando');
         const attrs = c === 'he' ? ' lang="he" dir="rtl"' : c === 'gr' ? ' lang="grc"' : '';
         const num = c === 'he' && f.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">Heb. ${esc(f.heNum)}</span>` : '';
-        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${esc(t)}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : 'Sin texto en los datos'}</p>`}</div>`;
+        const nt = c === 'rv' ? NTc[f.ref] : null; // subrayado del lector (Tu nota se ve y edita en la lectura normal)
+        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : 'Sin texto en los datos'}</p>`}</div>`;
       };
       return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>${nota}`;
     }).join('');
@@ -3972,7 +4218,7 @@ if (typeof document !== 'undefined') (function () {
 
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
-  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes, tabernaculo: vistaTabernaculo };
+  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes, tabernaculo: vistaTabernaculo, notas: vistaNotas };
   const PESTANA = { edades: 'tiempo', tabernaculo: 'leer' }; // rutas antiguas
   let primera = true;
   function render(foco) {
@@ -3986,7 +4232,10 @@ if (typeof document !== 'undefined') (function () {
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? PESTANA[vista] || vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
     const marcado = main.querySelector('.vers.activo, .fila.foco, .ga-fam.foco, .foco-sp, .tl-ev.foco');
-    if (marcado && foco !== false) { marcado.scrollIntoView({ block: 'center', inline: 'center' }); }
+    if (marcado && foco !== false) {
+      marcado.scrollIntoView({ block: 'center', inline: 'center' });
+      const nb = main.querySelector('.nb-barra'); if (nb) requestAnimationFrame(() => nb.scrollIntoView({ block: 'nearest' })); // que la barra no quede bajo el acompañante
+    }
     else {
       if (foco !== false || primera) centrarLienzos();
       if (foco !== false && !primera) window.scrollTo(0, 0);
@@ -3996,6 +4245,7 @@ if (typeof document !== 'undefined') (function () {
   }
   // Carga bajo demanda lo que pide la vista recién pintada (Fuentes, o la comparación si quedó elegida).
   function trasPintar(vista) {
+    ponerBarraNotas();
     if (vista === 'fuentes') { if (ORIG.est.o === '') cargarOriginales('o'); if (ORIG.est.g === '') cargarOriginales('g'); }
     const cmp = main.querySelector('.comparar');
     if (cmp) {

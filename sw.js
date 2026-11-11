@@ -1,5 +1,5 @@
 /* Service worker: red primero, caché de respaldo. Cambia VERSION al publicar para que aparezca el aviso de actualización. */
-const VERSION = '2026-11-11.6';
+const VERSION = '2026-11-11.7';
 const CACHE = 'biblia-' + VERSION;
 const CARCASA = ['./', 'index.html', 'app.js', 'estilos.css', 'manifest.webmanifest', 'datos/biblia.js', 'datos/mapa-base.js', 'datos/recursos.js', 'datos/recorridos.js', 'datos/tabernaculo.js', 'datos/contenido.js',
   'iconos/icono.svg', 'iconos/icono-192.png', 'iconos/icono-512.png'];

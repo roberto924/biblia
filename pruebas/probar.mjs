@@ -923,5 +923,83 @@ console.log('\nTabernáculo (pruebas/tabernaculo-ejemplo.js)');
   });
 }
 
+console.log('Notas y subrayados');
+{
+  const DN = { libros: [{ id: 'Gn', nombre: 'Génesis' }, { id: 'Ex', nombre: 'Éxodo' }],
+    capitulos: [{ libro: 'Gn', cap: 50, versiculos: [{ n: 26, texto: 'Y murió José de edad de ciento diez años.' }] },
+      { libro: 'Ex', cap: 1, versiculos: [{ n: 1, texto: 'Estos son los nombres de los hijos de Israel.' }] },
+      { libro: 'Ex', cap: 3, versiculos: [{ n: 14, texto: 'Y respondió Dios á Moisés: YO SOY EL QUE SOY.' }] }] };
+  prueba('refs de notas: canónicas o rechazadas (sin Génesis por defecto)', () => {
+    assert.equal(N.refNota('Ex 3:14'), 'Ex 3:14');
+    assert.equal(N.refNota('éx 3:14'), 'Ex 3:14');
+    assert.equal(N.refNota('Éxodo 3:14'), 'Ex 3:14');
+    assert.equal(N.refNota('3:14'), null);
+    assert.equal(N.refNota('Ex 3'), null);
+    assert.equal(N.refNota('Xyz 3:14'), null);
+    assert.equal(N.refNota('Ex 0:1'), null);
+  });
+  prueba('poner y quitar: un versículo sin color ni nota desaparece', () => {
+    let o = N.ponerNota(null, 'Ex 3:14', { color: 'amarillo' }, '2026-11-11T10:00:00Z');
+    assert.deepEqual(j(o), { v: 1, versos: { 'Ex 3:14': { color: 'amarillo', t: '2026-11-11T10:00:00Z' } } });
+    o = N.ponerNota(o, 'Ex 3:14', { nota: '  prueba\r\nsegunda ' }, '2026-11-11T11:00:00Z');
+    assert.deepEqual(j(o.versos['Ex 3:14']), { color: 'amarillo', nota: 'prueba\nsegunda', t: '2026-11-11T11:00:00Z' });
+    o = N.ponerNota(o, 'Ex 3:14', { color: null }, '2026-11-11T12:00:00Z');
+    assert.deepEqual(j(o.versos['Ex 3:14']), { nota: 'prueba\nsegunda', t: '2026-11-11T12:00:00Z' }, 'quitar el color conserva la nota');
+    o = N.ponerNota(o, 'Ex 3:14', { nota: '   ' }, '2026-11-11T13:00:00Z');
+    assert.deepEqual(j(o.versos), {}, 'sin color ni nota: fuera');
+    o = N.ponerNota(o, 'Ex 3:14', { color: 'morado' });
+    assert.deepEqual(j(o.versos), {}, 'color desconocido: no se guarda');
+    o = N.quitarNota(N.ponerNota(null, 'Gn 1:1', { color: 'verde', nota: 'x' }, '2026-01-01T00:00:00Z'), 'Gn 1:1');
+    assert.deepEqual(j(o), { v: 1, versos: {} });
+  });
+  prueba('normalizar lo guardado: entradas rotas fuera, refs canónicas', () => {
+    const o = N.normalizarNotas({ v: 1, versos: { 'éx 3:14': { color: 'azul', t: 'ayer' }, '3:1': { color: 'azul' }, 'Gn 1:1': { color: 'rojo' }, 'Gn 2:1': 5 } });
+    assert.deepEqual(j(o), { v: 1, versos: { 'Ex 3:14': { color: 'azul', t: '' } } });
+    assert.deepEqual(j(N.normalizarNotas('basura')), { v: 1, versos: {} });
+  });
+  prueba('lista en orden canónico (Gn 50:26 antes de Ex 1:1) con filtros', () => {
+    const o = { v: 1, versos: { 'Ex 3:14': { color: 'amarillo', nota: 'Nombre de Dios', t: '2026-11-11T00:00:00Z' }, 'Ex 1:1': { color: 'verde', t: '2026-11-11T00:00:00Z' },
+      'Gn 50:26': { nota: 'José muere', t: '2026-11-11T00:00:00Z' }, 'Gn 3:15': { color: 'amarillo', t: '2026-11-11T00:00:00Z' } } };
+    assert.deepEqual(j(N.listarNotas(o).map(x => x.ref)), ['Gn 3:15', 'Gn 50:26', 'Ex 1:1', 'Ex 3:14']);
+    assert.deepEqual(j(N.listarNotas(o, { color: 'amarillo' }).map(x => x.ref)), ['Gn 3:15', 'Ex 3:14']);
+    assert.deepEqual(j(N.listarNotas(o, { conNota: true }).map(x => x.ref)), ['Gn 50:26', 'Ex 3:14']);
+    assert.deepEqual(j(N.listarNotas(o, { q: 'jose' }).map(x => x.ref)), ['Gn 50:26'], 'búsqueda sin tildes ni mayúsculas');
+    assert.deepEqual(j(N.listarNotas(o, { q: 'Moisés' })), []);
+  });
+  prueba('fusionar una importación: gana lo más reciente por versículo, con conteos', () => {
+    const actual = { v: 1, versos: { 'Ex 3:14': { color: 'amarillo', nota: 'vieja', t: '2026-11-01T00:00:00Z' }, 'Gn 1:1': { color: 'verde', t: '2026-11-10T00:00:00Z' }, 'Gn 2:1': { color: 'azul', t: '2026-11-05T00:00:00Z' } } };
+    const entra = { v: 1, versos: { 'Ex 3:14': { color: 'rosa', nota: 'nueva', t: '2026-11-11T00:00:00Z' }, 'Gn 1:1': { color: 'azul', t: '2026-11-09T00:00:00Z' },
+      'Gn 2:1': { color: 'azul', t: '2026-11-05T00:00:00Z' }, 'Ex 1:1': { nota: 'añadida', t: '2026-11-11T00:00:00Z' } } };
+    const r = N.fusionarNotas(actual, entra);
+    assert.deepEqual([r.anadidos, r.actualizados, r.iguales], [1, 1, 2]);
+    assert.equal(r.notas.versos['Ex 3:14'].nota, 'nueva', 'la entrante es más reciente');
+    assert.equal(r.notas.versos['Gn 1:1'].color, 'verde', 'la actual es más reciente');
+    assert.equal(r.notas.versos['Ex 1:1'].nota, 'añadida');
+    assert.equal(actual.versos['Ex 3:14'].nota, 'vieja', 'no muta la entrada');
+  });
+  prueba('validar un JSON importado: inválidos rechazados con motivo; exportación de ida y vuelta', () => {
+    assert.equal(N.validarNotas('{no es json').ok, false);
+    assert.match(N.validarNotas('{no es json').error, /JSON/);
+    assert.equal(N.validarNotas('[1,2]').ok, false);
+    assert.equal(N.validarNotas('{"v":2,"versos":{}}').ok, false);
+    assert.equal(N.validarNotas('{"app":"otra","v":1,"versos":{}}').ok, false);
+    assert.equal(N.validarNotas('{"v":1}').ok, false);
+    assert.equal(N.validarNotas('{"v":1,"versos":{"zz":{"color":"amarillo"}}}').ok, false, 'ninguna entrada válida');
+    const exp = N.exportarNotas({ v: 1, versos: { 'Ex 3:14': { color: 'amarillo', nota: 'prueba', t: '2026-11-11T00:00:00Z' } } }, { perfil: 'Ana' });
+    const v = N.validarNotas('﻿' + JSON.stringify(exp));
+    assert.ok(v.ok); assert.equal(v.total, 1); assert.equal(v.descartados, 0);
+    assert.deepEqual(j(v.notas.versos['Ex 3:14']), { color: 'amarillo', nota: 'prueba', t: '2026-11-11T00:00:00Z' });
+    const m = N.validarNotas('{"v":1,"versos":{"Ex 3:14":{"color":"verde"},"malo":{"color":"verde"}}}');
+    assert.ok(m.ok); assert.equal(m.total, 1); assert.equal(m.descartados, 1);
+  });
+  prueba('cita del versículo y texto para copiar', () => {
+    assert.equal(N.refLegible(DN, 'Ex 3:14'), 'Éxodo 3:14 (RV 1909)');
+    assert.equal(N.textoVerso(DN, 'Ex 3:14'), 'Y respondió Dios á Moisés: YO SOY EL QUE SOY.');
+    assert.equal(N.citaVerso(DN, 'Ex 3:14', N.textoVerso(DN, 'Ex 3:14')), '«Y respondió Dios á Moisés: YO SOY EL QUE SOY.» Éxodo 3:14 (RV 1909)');
+    const lista = N.listarNotas({ v: 1, versos: { 'Ex 1:1': { color: 'verde', t: '' }, 'Gn 50:26': { nota: 'José', t: '' } } });
+    assert.equal(N.textoNotas(DN, lista), 'Génesis 50:26 (RV 1909)\n«Y murió José de edad de ciento diez años.»\nTu nota: José\n\nÉxodo 1:1 (RV 1909) · subrayado verde\n«Estos son los nombres de los hijos de Israel.»');
+  });
+}
+
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);
