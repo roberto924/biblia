@@ -682,5 +682,88 @@ console.log('Recursos (imágenes, objetos, medios)');
   }
 }
 
+console.log('\nRecorridos (pruebas/recorridos-ejemplo.js)');
+{
+  const CX = cargar(path.join(aqui, 'recorridos-ejemplo.js'), path.join(aqui, '..', 'app.js'));
+  const NR = CX.BibliaNucleo, RC = CX.BIBLIA_RECORRIDOS;
+  const ex = NR.recorrido(RC, 'exodo');
+  prueba('etapas en el orden de `orden`, aunque los datos vengan desordenados', () => {
+    assert.deepEqual(j(NR.etapasOrdenadas(ex).map(e => e.orden)), [1, 2, 3, 4, 5, 6]);
+    const rev = Object.assign({}, ex, { etapas: ex.etapas.slice().reverse() });
+    assert.deepEqual(j(NR.etapasOrdenadas(rev).map(e => e.nombre)), j(NR.etapasOrdenadas(ex).map(e => e.nombre)));
+    assert.equal(NR.recorrido(RC, 'no-existe'), null);
+  });
+  prueba('etapa activa para una ref: Ex 14 resalta Pi-hahirot y el cruce del mar', () => {
+    const refs = Array.from({ length: 31 }, (_, i) => `Ex 14:${i + 1}`);
+    const a = NR.etapaActiva(ex, refs, null);
+    assert.deepEqual(j(a.aqui.map(i => NR.etapasOrdenadas(ex)[i].nombre)), ['Pi-hahirot', 'Cruce del mar']);
+    assert.equal(NR.etapasOrdenadas(ex)[a.actual].nombre, 'Cruce del mar', 'sin versículo marcado: la última del pasaje');
+    assert.equal(NR.etapasOrdenadas(ex)[NR.etapaActiva(ex, refs, 'Ex 14:2').actual].nombre, 'Pi-hahirot', 'el versículo marcado manda');
+    assert.equal(NR.etapaActiva(ex, ['Gn 1:1', 'Ex 3:1'], null), null);
+    assert.equal(NR.recorridosDeRefs(RC, ['Ex 15:23']).length, 1);
+  });
+  prueba('ubicación por hipótesis; la por defecto solo si FALTA la clave; clave sin coordenadas = sin propuesta', () => {
+    const E = NR.etapasOrdenadas(ex);
+    assert.equal(NR.hipotesisDefecto(ex).id, 'sur');
+    const pi = NR.ubicacionEtapa(ex, E[2], 'norte');
+    assert.equal(pi.hipotesis, 'norte'); assert.equal(pi.heredada, false); assert.equal(pi.lat, 31.05);
+    const ram = NR.ubicacionEtapa(ex, E[0], 'norte'); // «norte» no trae la clave: hereda la de «sur»
+    assert.equal(ram.hipotesis, 'sur'); assert.equal(ram.heredada, true); assert.equal(ram.confianza, 'alta');
+    assert.equal(NR.sinPropuesta(ex, E[0], 'norte'), false);
+    assert.equal(NR.ubicacionEtapa(ex, E[1], 'norte'), null, 'Sucot: «norte» trae la clave sin coordenadas, no hereda');
+    assert.equal(NR.sinPropuesta(ex, E[1], 'norte'), true);
+    assert.equal(NR.ubicacionEtapa(ex, E[1], 'sur').lat, 30.55);
+    assert.equal(NR.ubicacionEtapa(ex, E[0], 'sur').heredada, false);
+    assert.equal(NR.ubicacionEtapa(ex, { ubicaciones: {} }, 'sur'), null);
+    assert.equal(NR.ubicacionEtapa(ex, { ubicaciones: { sur: { lat: null, lon: 3 } } }, 'sur'), null, 'sin coordenadas no se ubica');
+  });
+  prueba('tramo que salta una etapa sin propuesta: une anterior y siguiente, marcado sinPropuesta', () => {
+    const T = NR.tramosRecorrido(ex, 'norte');
+    assert.deepEqual(j(T.map(t => [t.de, t.a, t.sinPropuesta])), [[0, 2, true], [2, 3, false], [3, 4, false], [4, 5, false]]);
+    assert.ok(NR.tramosRecorrido(ex, 'sur').every(t => !t.sinPropuesta));
+  });
+  prueba('tramos inciertos: los que tocan una etapa de confianza baja', () => {
+    const T = NR.tramosRecorrido(ex, 'sur');
+    assert.equal(T.length, 5);
+    assert.deepEqual(j(T.map(t => t.incierto)), [false, true, true, true, false]);
+    assert.deepEqual(j(T.map(t => t.confianza)), ['media', 'baja', 'baja', 'baja', 'media']);
+    assert.ok(T.every(t => t.km > 0));
+    const sinUbic = Object.assign({}, ex, { etapas: ex.etapas.map(e => e.orden === 2 ? Object.assign({}, e, { ubicaciones: {} }) : e) });
+    assert.deepEqual(j(NR.tramosRecorrido(sinUbic, 'sur').slice(0, 1).map(t => [t.de, t.a])), [[0, 2]], 'una etapa sin ubicación se salta');
+  });
+  prueba('ritmo: más distancia, viaje más largo (con tope); parada según la cita', () => {
+    assert.ok(NR.duracionTramo(10) < NR.duracionTramo(100) && NR.duracionTramo(100) < NR.duracionTramo(400));
+    assert.equal(NR.duracionTramo(0), 900); assert.equal(NR.duracionTramo(1e5), 4200);
+    assert.ok(NR.pausaEtapa({ cita: 'corta' }) < NR.pausaEtapa({ cita: 'x'.repeat(120) }));
+    assert.ok(Math.abs(NR.distanciaKm([31, 30], [32, 30]) - 96.3) < 1);
+  });
+  const recReal = path.join(aqui, '..', 'datos', 'recorridos.js');
+  if (existsSync(recReal)) {
+    const CR = cargar(recReal, path.join(aqui, '..', 'app.js'));
+    const N4 = CR.BibliaNucleo, R4 = CR.BIBLIA_RECORRIDOS;
+    prueba('datos/recorridos.js: contrato (refs legibles, una hipótesis por defecto con fuente) y Ex 14 en el éxodo', () => {
+      const L = N4.listaRecorridos(R4);
+      assert.ok(L.length >= 1);
+      for (const r of L) {
+        assert.ok(N4.hipotesisDefecto(r), r.id + ': sin hipótesis');
+        for (const h of r.hipotesis) assert.ok(h.fuente, `${r.id}/${h.id}: hipótesis sin fuente`);
+        for (const e of r.etapas) assert.ok(N4.rangoClaves(e.ref), `${r.id}: ref ilegible ${e.ref}`);
+      }
+      const exr = N4.recorrido(R4, 'exodo');
+      if (exr) {
+        const a = N4.etapaActiva(exr, Array.from({ length: 31 }, (_, i) => `Ex 14:${i + 1}`), null);
+        assert.ok(a, 'Ex 14 no toca ninguna etapa del éxodo');
+        const E4 = N4.etapasOrdenadas(exr);
+        assert.ok(a.aqui.some(i => /hahirot/i.test(E4[i].nombre)) && /mar/i.test(E4[a.actual].nombre), 'Ex 14: Pi-hahirot y el cruce del mar');
+        // Una hipótesis con la clave sin coordenadas no hereda la ubicación por defecto.
+        for (const h of exr.hipotesis) for (const e of E4) {
+          const u = e.ubicaciones && e.ubicaciones[h.id];
+          if (u && (u.lat === null || u.lon === null)) { assert.equal(N4.ubicacionEtapa(exr, e, h.id), null, `${h.id}/${e.nombre}`); assert.ok(N4.sinPropuesta(exr, e, h.id)); }
+        }
+      }
+    });
+  }
+}
+
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

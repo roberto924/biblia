@@ -860,3 +860,119 @@ dialog.visor[open] { display: flex; }
 .visor-lienzo.arrastrando { cursor: grabbing; }
 .visor-pie { padding: .5rem 1rem calc(.7rem + env(safe-area-inset-bottom)); border-top: 1px solid var(--linea-suave); max-height: 30dvh; overflow: auto; }
 .visor-pie .rec-pie { margin: 0; }
+
+/* ---------- Recorridos: relato animado (texto = etapas y citas; ubicación = hipótesis, fuente externa) ---------- */
+.rc-ejemplo { display: inline-block; margin: .2rem 0 .6rem; padding: .35rem .8rem; border: 1.5px dashed var(--rubrica); border-radius: var(--r-ctrl); color: var(--rubrica); font-weight: 600; font-size: .88rem; }
+.rc-recs { margin-top: .1rem; }
+.rc-completo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; margin-top: .4rem; }
+.rc-mapa { margin: 0; }
+.rc-mapa .mapa-lienzo { height: clamp(17rem, 54vh, 27rem); }
+.rc-sello { position: absolute; left: .6rem; top: .6rem; margin: 0; max-width: calc(100% - 5.5rem); padding: .3rem .65rem; font-size: .8rem; line-height: 1.3; color: var(--suave); background: var(--vidrio); border: 1px solid var(--linea); border-radius: .55rem; backdrop-filter: blur(4px); }
+.rc-sello strong { color: var(--tinta); }
+.rc-lienzo.cambia .rc-sello { animation: rc-sello .9s ease; }
+@keyframes rc-sello { 30% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--lapis) 30%, transparent); border-color: var(--lapis); } }
+.rc-region { font: 600 10px var(--sans); letter-spacing: .24em; text-transform: uppercase; fill: var(--suave); opacity: .55; pointer-events: none; }
+.rc-region.mar { font: italic 500 12px var(--serif); letter-spacing: .06em; text-transform: none; fill: var(--m-rio); opacity: .9; }
+.rc-fantasma { fill: none; stroke: var(--lapis); stroke-opacity: .28; stroke-width: 1.6; stroke-dasharray: 1 5; stroke-linecap: round; }
+.rc-tr path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.rc-tr .linea { stroke: var(--lapis); stroke-width: 3.2; }
+.rc-tr.incierto .linea { stroke-dasharray: 7 6; stroke-opacity: .9; }
+.rc-tr .halo { stroke: var(--lapis); stroke-width: 12; stroke-opacity: .13; filter: blur(2px); }
+.rc-tr.sin-propuesta .linea { stroke-width: 1.8; stroke-dasharray: 1.5 6; stroke-opacity: .5; }
+.rc-tr.sin-propuesta .halo { display: none; }
+.etq.etq-sp { font-size: 10.5px; font-weight: 500; font-style: italic; fill: var(--suave); }
+.rc-cabeza .punto { fill: var(--rubrica); stroke: var(--hoja); stroke-width: 2; }
+.rc-cabeza .onda { fill: var(--rubrica); opacity: 0; transform-box: fill-box; transform-origin: center; }
+.rc-cabeza.viajando .onda { animation: rc-onda 1.3s ease-out infinite; }
+@keyframes rc-onda { from { opacity: .35; transform: scale(.5); } to { opacity: 0; transform: scale(1.9); } }
+.rc-marca { cursor: pointer; }
+.rc-marca .toque { fill: transparent; stroke: none; }
+.rc-marca .rc-forma { opacity: 0; transform: scale(.2); transform-box: fill-box; transform-origin: center; transition: transform .5s cubic-bezier(.3, 1.6, .5, 1), opacity .35s ease; }
+.rc-marca.pasada .rc-forma { opacity: .5; transform: scale(.82); }
+.rc-marca.actual .rc-forma { opacity: 1; transform: scale(1.4); }
+.rc-marca.futura { pointer-events: none; }
+.rc-marca .rc-halo { fill: color-mix(in srgb, var(--lugar) 16%, transparent); stroke: var(--lugar); stroke-width: 1; stroke-dasharray: 2 3; animation: rc-respira 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes rc-respira { 50% { transform: scale(1.25); opacity: .55; } }
+.rc-marca:focus-visible .toque, .rc-marca.actual .toque { fill: color-mix(in srgb, var(--lugar) 20%, transparent); }
+.rc-mini .rc-marca { cursor: default; }
+.rc-mini .rc-marca.futura .rc-forma { opacity: .3; transform: scale(.65); }
+.rc-mini .rc-marca.aqui .rc-forma { opacity: 1; transform: scale(1.25); }
+.rc-mini .rc-marca.actual .rc-forma { transform: scale(1.55); }
+.rc-mando { display: flex; align-items: center; gap: .4rem; margin-top: .6rem; }
+.rc-mando svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.rc-mando .rell { fill: currentColor; stroke: none; }
+.rc-play, .rc-paso { flex: none; display: grid; place-items: center; border-radius: 50%; cursor: pointer; }
+.rc-play { width: 52px; height: 52px; border: 0; background: var(--lapis); color: var(--sobre-lapis); box-shadow: var(--sombra); transition: transform var(--t), filter var(--t); }
+.rc-play:hover { filter: brightness(1.08); }
+.rc-play:active { transform: scale(.95); }
+.rc-play.activo { background: var(--lapis-hondo); color: #fff; }
+.rc-paso { width: 44px; height: 44px; border: 1px solid var(--linea); background: var(--hoja); color: var(--tinta); }
+.rc-paso:hover { background: var(--hoja2); }
+.rc-barra { flex: 1; min-width: 0; min-height: 44px; display: flex; align-items: center; padding: 0 .6rem; cursor: pointer; touch-action: none; border-radius: var(--r-ctrl); }
+.rc-barra:focus-visible { outline: 3px solid var(--lapis); outline-offset: 1px; }
+.rc-pista { position: relative; flex: 1; height: 4px; border-radius: 999px; background: var(--linea); }
+.rc-lleno { position: absolute; left: 0; top: 0; bottom: 0; border-radius: inherit; background: var(--lapis); }
+.rc-punto { position: absolute; top: 50%; width: 9px; height: 9px; border-radius: 50%; transform: translate(-50%, -50%); background: var(--hoja); border: 2px solid var(--lugar); box-sizing: border-box; }
+.rc-punto.c-alta { background: var(--lugar); }
+.rc-punto.c-baja { border-style: dotted; }
+.rc-punto.c-desc, .rc-punto.c-sinprop { border-color: var(--suave); border-style: dotted; opacity: .7; }
+.rc-cursor { position: absolute; top: 50%; width: 18px; height: 18px; border-radius: 50%; transform: translate(-50%, -50%); background: var(--lapis); border: 3px solid var(--hoja); box-shadow: 0 0 0 1px var(--lapis), var(--sombra); pointer-events: none; }
+.rc-mando2 { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .2rem .8rem; }
+.rc-mando2 .rc-estado { margin: .2rem 0 0; }
+.rc-vel { margin: .3rem 0 0; }
+.rc-vel span { min-width: 3.2rem; padding: 0 .6rem; }
+.rc-tarjeta { background: var(--hoja); border: 1px solid var(--linea); border-radius: var(--r-panel); padding: .9rem 1.1rem 1rem; box-shadow: var(--sombra); align-self: start; }
+.rc-tarjeta.entra { animation: rc-entra .5s cubic-bezier(.2, .7, .3, 1); }
+@keyframes rc-entra { from { opacity: 0; transform: translateY(8px); } }
+.rc-cuenta { margin: 0; font-size: .78rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--suave); }
+.rc-camino { color: var(--rubrica); }
+.rc-nombre { margin: .15rem 0 .5rem; font-family: var(--serif); font-size: 1.55rem; line-height: 1.2; }
+.rc-cita { margin: .4rem 0; }
+.rc-ref { margin: .2rem 0 .4rem; }
+.rc-ref .insignia { margin-left: 0; }
+.rc-tiempo p { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; margin: .4rem 0 0; }
+.rc-tiempo svg { width: 1.15rem; height: 1.15rem; flex: none; fill: none; stroke: var(--c-calculo); stroke-width: 1.8; stroke-linecap: round; }
+.rc-pasos { margin: 0; padding-left: 1.2rem; font-size: .9rem; display: grid; gap: .35rem; }
+.rc-pasos q { display: block; font-family: var(--serif); font-style: italic; color: var(--suave); }
+.rc-pasos .convencion { color: var(--suave); }
+.rc-donde { margin-top: .8rem; padding-top: .7rem; border-top: 1px solid var(--linea-suave); }
+.rc-donde h3 { margin: 0 0 .35rem; font-size: .95rem; display: flex; flex-wrap: wrap; align-items: center; gap: .2rem; }
+.rc-donde p { margin: .25rem 0; }
+.rc-donde .ident { display: flex; align-items: center; gap: .4rem; }
+.rc-donde .desconocida { display: flex; align-items: center; gap: .4rem; font-style: italic; color: var(--suave); }
+.rc-hip h2 { margin: .4rem 0 .2rem; font-size: 1.15rem; }
+.rc-hips { margin: .5rem 0; }
+.rc-hips span { flex-direction: column; justify-content: center; line-height: 1.15; padding: .3rem .9rem; text-align: center; }
+.rc-min { display: block; font-size: .7rem; font-weight: 600; color: var(--c-inferido); }
+.etiqueta.minoritaria { background: color-mix(in srgb, var(--c-inferido) 12%, var(--hoja)); color: var(--c-inferido); }
+.rc-hip-desc { padding: .6rem .9rem; border-left: 3px solid var(--c-inferido); background: var(--papel); border-radius: 0 var(--r-ctrl) var(--r-ctrl) 0; }
+.rc-hip-desc p { margin: .25rem 0; }
+.ico-tramo { width: 1.75rem; height: .65rem; flex: none; }
+.ico-tramo path { fill: none; stroke: var(--lapis); stroke-width: 2.6; stroke-linecap: round; }
+.ico-tramo.incierto path:not(.halo) { stroke-dasharray: 4 3; }
+.ico-tramo .halo { stroke-width: 8; stroke-opacity: .18; }
+.ico-tramo.sin-propuesta path { stroke-width: 1.8; stroke-dasharray: 1 3.5; stroke-opacity: .6; }
+.rc-lista { padding-left: 1.6rem; margin: 0; }
+.rc-lista button { min-height: 36px; }
+.rc-fuentes { list-style: none; padding: 0; display: grid; gap: .35rem; font-size: .9rem; }
+.rc-personas { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; }
+.rc-mini { margin: .2rem 0 .6rem; }
+.rc-mini .mapa { margin: 0 0 .4rem; }
+.rc-mini .mapa-lienzo { height: 12.5rem; }
+.rc-mini .rc-lienzo svg { cursor: default; }
+.rc-mini-txt { margin: .2rem 0; }
+.rc-mini p { margin: .25rem 0; }
+@media (min-width: 1000px) {
+  main:has(.rc-completo) { max-width: 92rem; }
+  .rc-completo { grid-template-columns: minmax(0, 1fr) minmax(19rem, 23rem); column-gap: 1.4rem; }
+  .rc-escena { grid-column: 1; grid-row: 1; }
+  .rc-tarjeta { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; }
+  .rc-hip, .rc-pie { grid-column: 1; }
+  .rc-mapa .mapa-lienzo { height: min(68vh, 42rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rc-marca .rc-forma { transition: none; }
+  .rc-cabeza .onda, .rc-marca .rc-halo { animation: none; }
+}
+.rc-recs { display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+.rc-recs a { white-space: nowrap; flex: none; }

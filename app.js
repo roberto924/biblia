@@ -1137,7 +1137,67 @@ const Nucleo = (() => {
     return 'Fuente externa';
   }
 
-  return { recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
+  /* ---- Recorridos (datos/recorridos.js): etapas del relato y su ubicación según cada hipótesis ---- */
+  // El nombre, el orden, la cita y la ref de cada etapa son texto bíblico; su ubicación es una hipótesis moderna (fuente externa).
+  const listaRecorridos = RC => ((RC && RC.recorridos) || []).filter(r => r && r.id && Array.isArray(r.etapas) && r.etapas.length);
+  const recorrido = (RC, id) => listaRecorridos(RC).find(r => r.id === id) || null;
+  // Etapas por `orden` (las que no lo traen quedan en su posición de los datos).
+  const etapasOrdenadas = rec => ((rec && rec.etapas) || []).filter(Boolean).map((e, i) => ({ e, i, o: Number.isFinite(+e.orden) && e.orden !== null ? +e.orden : i }))
+    .sort((a, b) => (a.o - b.o) || (a.i - b.i)).map(x => x.e);
+  const hipotesisDefecto = rec => { const hs = ((rec && rec.hipotesis) || []).filter(h => h && h.id); return hs.find(h => h.defecto) || hs[0] || null; };
+  const coordValida = u => !!u && u.lat !== null && u.lon !== null && u.lat !== undefined && u.lon !== undefined && u.lat !== '' && u.lon !== '' && Number.isFinite(+u.lat) && Number.isFinite(+u.lon);
+  // Ubicación de una etapa según la hipótesis. Si la clave de esa hipótesis FALTA en `ubicaciones`, vale la de la hipótesis
+  // por defecto (`heredada`). Si la clave está pero sin coordenadas, esa hipótesis no propone lugar: null (ver sinPropuesta).
+  const tieneClave = (o, k) => !!o && !!k && Object.prototype.hasOwnProperty.call(o, k) && o[k] !== undefined;
+  function ubicacionEtapa(rec, etapa, hipId) {
+    const U = (etapa && etapa.ubicaciones) || {}, def = hipotesisDefecto(rec);
+    const sale = (u, h, heredada) => Object.assign({}, u, { lat: +u.lat, lon: +u.lon, confianza: ['alta', 'media', 'baja'].includes(u.confianza) ? u.confianza : 'baja', hipotesis: h, heredada });
+    if (tieneClave(U, hipId)) return coordValida(U[hipId]) ? sale(U[hipId], hipId, false) : null;
+    if (def && coordValida(U[def.id])) return sale(U[def.id], def.id, !!hipId && hipId !== def.id);
+    return null;
+  }
+  // La hipótesis trae la etapa pero sin coordenadas: no propone ubicación para ella.
+  const sinPropuesta = (rec, etapa, hipId) => { const U = (etapa && etapa.ubicaciones) || {}, h = tieneClave(U, hipId) ? hipId : (hipotesisDefecto(rec) || {}).id; return tieneClave(U, h) && !coordValida(U[h]); };
+  // Índices (sobre etapasOrdenadas) de las etapas cuya ref cae en alguno de los versículos dados.
+  function etapasDeRefs(rec, refs) {
+    const ks = [...new Set([].concat(refs || []).map(clave).filter(k => k !== null))];
+    if (!ks.length) return [];
+    return etapasOrdenadas(rec).map((e, i) => ({ c: rangoClaves(e.ref), i })).filter(x => x.c && ks.some(k => k >= x.c.a && k <= x.c.b)).map(x => x.i);
+  }
+  // Etapa activa al leer: la del versículo marcado si es una etapa; si no, la última del pasaje. null si el pasaje no toca el recorrido.
+  function etapaActiva(rec, refsPasaje, refActivo) {
+    const aqui = etapasDeRefs(rec, refsPasaje);
+    if (!aqui.length) return null;
+    const enActivo = refActivo ? etapasDeRefs(rec, [refActivo]) : [];
+    return { actual: enActivo.length ? enActivo[enActivo.length - 1] : aqui[aqui.length - 1], aqui };
+  }
+  const recorridosDeRefs = (RC, refs, refActivo) => listaRecorridos(RC).map(rec => ({ rec, a: etapaActiva(rec, refs, refActivo) })).filter(x => x.a).map(x => ({ rec: x.rec, actual: x.a.actual, aqui: x.a.aqui }));
+  function distanciaKm(a, b) { // [lon, lat] → km (haversine)
+    const r = Math.PI / 180, dLat = (b[1] - a[1]) * r, dLon = (b[0] - a[0]) * r;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(dLon / 2) ** 2;
+    return 2 * 6371 * Math.asin(Math.min(1, Math.sqrt(h)));
+  }
+  // Tramos entre etapas ubicadas consecutivas. Un tramo es incierto si toca una etapa de confianza baja;
+  // `sinPropuesta` si salta etapas que esa hipótesis no sitúa (se dibuja tenue, como unión sin propuesta).
+  function tramosRecorrido(rec, hipId) {
+    const out = []; let prev = null, saltadas = false;
+    etapasOrdenadas(rec).forEach((e, i) => {
+      const u = ubicacionEtapa(rec, e, hipId);
+      if (!u) { if (sinPropuesta(rec, e, hipId)) saltadas = true; return; }
+      if (prev) {
+        const cs = [prev.u.confianza, u.confianza], desde = [prev.u.lon, prev.u.lat], hasta = [u.lon, u.lat];
+        out.push({ de: prev.i, a: i, desde, hasta, incierto: cs.includes('baja'), sinPropuesta: saltadas, confianza: cs.includes('baja') ? 'baja' : cs.includes('media') ? 'media' : 'alta', km: distanciaKm(desde, hasta) });
+      }
+      prev = { i, u }; saltadas = false;
+    });
+    return out;
+  }
+  // Ritmo del relato: el viaje dura más cuanto más lejos (no lineal) y la parada, según lo que hay que leer.
+  const duracionTramo = km => Math.round(Math.min(4200, Math.max(900, 520 + 420 * Math.sqrt(Math.max(0, +km || 0) / 10))));
+  const pausaEtapa = e => Math.round(Math.min(6500, Math.max(2200, 1500 + 34 * String((e && e.cita) || '').length)));
+
+  return { listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
+    recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
     TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
@@ -1351,6 +1411,7 @@ if (typeof document !== 'undefined') (function () {
       const ub = A.lugares.filter(id => N.confianzaLugar(N.lugar(D, id)) !== 'desconocida');
       html += sec('Dónde ocurre', `${ub.length ? mapaHTML(ub, { mini: true }) : ''}<ul class="lugares-lista">${A.lugares.map(id => { const l = N.lugar(D, id) || {}, c = N.confianzaLugar(l); return `<li>${btnLugar(id)}<span class="contexto">${c === 'desconocida' ? 'Ubicación desconocida' + (l.nota ? ': ' + esc(l.nota) : '') : esc((l.ubicacion && l.ubicacion.identificacion) || '') + '. ' + CONF_TXT[c]}</span></li>`; }).join('')}</ul>`, I('M10 17s5-4.6 5-8.5a5 5 0 10-10 0C5 12.4 10 17 10 17zM10 10.2a1.7 1.7 0 100-3.4 1.7 1.7 0 000 3.4'));
     }
+    html += enCaminoHTML(p, sec, I);
     if (N.crono(D)) {
       // Año (cálculo) de los sucesos de este versículo o pasaje; si no hay, entre qué sucesos fechados queda por orden de lectura.
       const tr = tradSimple(), combo = comboDe(tr);
@@ -2402,16 +2463,13 @@ if (typeof document !== 'undefined') (function () {
   const btnLugar = id => { const c = N.confianzaLugar(N.lugar(D, id)); return `<button type="button" class="lugar-btn conf-${c}" data-lugar="${esc(id)}">${icoConf(c)}${esc(nombreLugar(id))}</button>`; };
   const leyendaConf = () => `<p class="leyenda-mapa">${['alta', 'media', 'baja'].map(c => `<span>${icoConf(c)}${CONF_TXT[c].replace('Confianza ', '')}</span>`).join('')}<span>${icoConf('alt')}alternativa</span></p>`;
   const mapaHTML = (ids, opc) => `<div class="mapa${opc && opc.mini ? ' mini' : ''}" data-mapa="${esc(JSON.stringify({ ids, sel: (opc && opc.sel) || null, mini: !!(opc && opc.mini) }))}"></div>`;
-  function montarMapas(raiz) { if (raiz) raiz.querySelectorAll('.mapa[data-mapa]:not([data-montado])').forEach(el => { try { crearMapa(el, JSON.parse(el.dataset.mapa)); } catch (e) { el.textContent = 'No se pudo dibujar el mapa.'; } }); }
-
-  function crearMapa(el, cfg) {
-    el.dataset.montado = '1';
-    const P = N.proyeccion(MAPA && MAPA.bbox);
-    const ubicados = cfg.ids.map(id => N.lugar(D, id)).filter(l => N.confianzaLugar(l) !== 'desconocida');
-    const coord = l => [+l.ubicacion.lon, +l.ubicacion.lat];
-    const conf = ubicados.map(l => N.confianzaLugar(l)), prio = ubicados.map(l => N.prioridadLugar(l));
-    let sel = cfg.sel, W = 320, H = 220;
-    const v = { cx: 0, cy: 0, s: 1 };
+  function montarMapas(raiz) {
+    if (!raiz) return;
+    raiz.querySelectorAll('.mapa[data-mapa]:not([data-montado])').forEach(el => { try { crearMapa(el, JSON.parse(el.dataset.mapa)); } catch (e) { el.textContent = 'No se pudo dibujar el mapa.'; } });
+    raiz.querySelectorAll('.rc[data-rc]:not([data-montado])').forEach(el => { try { crearRecorrido(el, JSON.parse(el.dataset.rc)); } catch (e) { const l = el.querySelector('.rc-lienzo'); if (l) l.textContent = 'No se pudo dibujar el recorrido.'; console.error(e); } });
+  }
+  // Costas, lagos, ríos (Natural Earth) y retícula de 5°, en coordenadas proyectadas.
+  function baseMapaSVG(P) {
     const pth = (ring, cerrar) => (ring || []).length ? 'M' + ring.map(p => N.proyectar(P, p[0], p[1]).map(n => n.toFixed(3)).join(' ')).join('L') + (cerrar ? 'Z' : '') : '';
     let base = '<rect class="mar" x="-2000" y="-2000" width="4000" height="4000"/>';
     if (MAPA) {
@@ -2422,8 +2480,19 @@ if (typeof document !== 'undefined') (function () {
     const b = P.bbox; let ret = '';
     for (let lon = Math.ceil(b[0] / 5) * 5; lon <= b[2]; lon += 5) ret += `<path class="reticula" d="${pth([[lon, b[1]], [lon, b[3]]])}"/>`;
     for (let lat = Math.ceil(b[1] / 5) * 5; lat <= b[3]; lat += 5) ret += `<path class="reticula" d="${pth([[b[0], lat], [b[2], lat]])}"/>`;
+    return base + ret;
+  }
+
+  function crearMapa(el, cfg) {
+    el.dataset.montado = '1';
+    const P = N.proyeccion(MAPA && MAPA.bbox);
+    const ubicados = cfg.ids.map(id => N.lugar(D, id)).filter(l => N.confianzaLugar(l) !== 'desconocida');
+    const coord = l => [+l.ubicacion.lon, +l.ubicacion.lat];
+    const conf = ubicados.map(l => N.confianzaLugar(l)), prio = ubicados.map(l => N.prioridadLugar(l));
+    let sel = cfg.sel, W = 320, H = 220;
+    const v = { cx: 0, cy: 0, s: 1 };
     el.innerHTML = `<div class="mapa-lienzo"><svg tabindex="0" role="application" aria-roledescription="mapa" aria-label="Mapa con ${ubicados.length} ${ubicados.length === 1 ? 'lugar' : 'lugares'}. Flechas para mover, más y menos para acercar.">
-        <g class="base">${base}${ret}</g><g class="capa"></g></svg>
+        <g class="base">${baseMapaSVG(P)}</g><g class="capa"></g></svg>
         <div class="mapa-ctrl"><button type="button" data-z="1" aria-label="Acercar">+</button><button type="button" data-z="-1" aria-label="Alejar">−</button>
         <button type="button" data-z="0" aria-label="Encuadrar los lugares"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"/></svg></button></div>
         ${MAPA ? '' : '<p class="mapa-aviso">Mapa base no disponible: solo se muestra la retícula.</p>'}</div>
@@ -2548,6 +2617,7 @@ if (typeof document !== 'undefined') (function () {
   }
 
   function vistaMapa(args) {
+    if (args && args[0] === 'recorridos') return vistaRecorridos(args.slice(1));
     const todos = D.lugares || [];
     if (args && args[0]) estado.mapaSel = args[0];
     const caps = D.capitulos || [], ps = N.pasajes(D);
@@ -2562,6 +2632,7 @@ if (typeof document !== 'undefined') (function () {
     const desc = ids.filter(id => N.confianzaLugar(N.lugar(D, id)) === 'desconocida');
     const opt = (v, t) => `<option value="${esc(v)}"${f === v ? ' selected' : ''}>${esc(t)}</option>`;
     return `<h1 tabindex="-1">Mapa de los lugares</h1>
+      ${subvistasMapa('lugares')}
       <p class="sub">El nombre de cada lugar es texto bíblico; su ubicación es una identificación moderna con un grado de confianza. Lo que no se puede ubicar no se dibuja.</p>
       <div class="herr mapa-filtros">
         <div class="campo"><label for="f-ambito">Pasaje o capítulo</label><select id="f-ambito">${opt('', 'Todo ' + N.alcance(D).texto)}
@@ -2581,6 +2652,359 @@ if (typeof document !== 'undefined') (function () {
     if (!q) return '';
     const r = (D.lugares || []).filter(l => N.norm(l.nombre).includes(q) || N.norm(l.nombre_rv1909).includes(q)).slice(0, 20);
     return r.length ? r.map(l => `<li>${btnLugar(l.id)}</li>`).join('') : '<li class="meta">Sin resultados.</li>';
+  }
+
+  /* ---------- Recorridos (datos/recorridos.js): el relato animado sobre el mapa ---------- */
+  // Texto: nombre, orden, cita y ref de cada etapa. Fuente externa: dónde estaba cada lugar (una hipótesis, nunca un hecho).
+  let RC = window.BIBLIA_RECORRIDOS || null;
+  const estadoRC = { hip: {}, vel: [0.5, 1, 2].includes(store.get('biblia.rcVel', 1)) ? store.get('biblia.rcVel', 1) : 1 };
+  const movReducido = () => !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  // Rótulos de regiones y mares para situarse: posición aproximada, sin fronteras (no son datos del texto).
+  const ROTULOS = [['Egipto', 30.2, 27.3], ['Sinaí', 33.85, 29.5], ['Madián', 36.5, 27.9], ['Canaán', 35.25, 32.4], ['Edom', 35.6, 30.25], ['Moab', 35.95, 31.4],
+    ['Mesopotamia', 43.4, 34.2], ['Mar Mediterráneo', 31.3, 33.2, 'mar'], ['Mar Rojo', 36.2, 25.2, 'mar']];
+  const subvistasMapa = act => `<nav class="subvistas" aria-label="Vistas del mapa"><a href="#mapa"${act === 'lugares' ? ' aria-current="page"' : ''}>Lugares</a><a href="#mapa/recorridos"${act === 'recorridos' ? ' aria-current="page"' : ''}>Recorridos</a></nav>`;
+  const hipDe = rec => { const h = estadoRC.hip[rec.id]; return (rec.hipotesis || []).some(x => x && x.id === h) ? h : (N.hipotesisDefecto(rec) || {}).id || null; };
+  const hipPorId = (rec, id) => (rec.hipotesis || []).find(h => h && h.id === id) || null;
+  const enlaceExt = (txt, url) => url && /^https?:\/\//.test(url) ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(txt)}</a>` : esc(txt);
+  const hrefEtapa = (rec, e) => `#mapa/recorridos/${encodeURIComponent(rec.id)}/${encodeURIComponent(e.orden)}`;
+  const ICO_PLAY = '<svg viewBox="0 0 20 20" aria-hidden="true"><path class="rell" d="M6 4l10 6-10 6z"/></svg>';
+  const ICO_PAUSA = '<svg viewBox="0 0 20 20" aria-hidden="true"><path class="rell" d="M5.5 4h3v12h-3zM11.5 4h3v12h-3z"/></svg>';
+  const ICO_OTRA = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10a5.5 5.5 0 109-4.2M13.5 2.5v3.6H9.9"/></svg>';
+
+  function hipotesisHTML(rec, hid) {
+    const h = hipPorId(rec, hid); if (!h) return '';
+    return `<p><strong>${esc(h.nombre || h.id)}</strong>${h.defecto ? ' <span class="etiqueta">por defecto</span>' : ''}${h.minoritaria ? ' <span class="etiqueta minoritaria">minoritaria</span>' : ''}</p>
+      ${h.descripcion ? `<p>${esc(h.descripcion)}</p>` : ''}
+      <p class="meta"><span class="etiqueta externa">Fuente externa</span> ${h.fuente ? enlaceExt(h.fuente, h.url) : 'sin fuente indicada'}</p>`;
+  }
+  function tarjetaEtapaHTML(rec, i, hid, enCamino) {
+    const E = N.etapasOrdenadas(rec), e = E[i]; if (!e) return '';
+    const u = N.ubicacionEtapa(rec, e, hid), h = hipPorId(rec, hid), def = N.hipotesisDefecto(rec);
+    const tm = e.tiempo, lg = e.lugar && D && N.lugar(D, e.lugar);
+    const tiempo = tm && tm.texto ? `<div class="rc-tiempo"><p><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2"/></svg><strong>${esc(tm.texto)}</strong>
+        ${tm.certeza === 'texto' || tm.certeza === 'calculo' ? insignia(tm.certeza) : '<span class="meta">(certeza no indicada)</span>'}</p>
+        ${(tm.pasos || []).length ? `<details class="plegable"><summary>${tm.certeza === 'calculo' ? 'Cómo se calcula' : 'De dónde sale'}</summary><ol class="rc-pasos">${tm.pasos.map(p => `<li${p.convencion ? ' class="convencion"' : ''}>${p.convencion ? '<span class="etiqueta">convención</span> ' : ''}${esc(p.texto || '')}${p.ref ? ' · ' + refHTML(p.ref) : ''}${p.cita ? `<q>${esc(p.cita)}</q>` : ''}</li>`).join('')}</ol></details>` : ''}</div>` : '';
+    const donde = u ? `<p class="ident">${icoConf(u.confianza)} <strong>${esc(u.identificacion || 'Sin nombre moderno')}</strong></p>
+        <p class="meta"><strong>${CONF_TXT[u.confianza]}</strong>: ${CONF_DESC[u.confianza]}${u.puntuacion_openbible !== undefined && u.puntuacion_openbible !== null ? ` Puntuación de OpenBible: ${esc(u.puntuacion_openbible)}.` : ''}</p>
+        <p class="meta">Según la hipótesis «${esc((h && h.nombre) || hid)}»${u.heredada ? `, que aquí no propone otro sitio: se usa el de «${esc((def && def.nombre) || u.hipotesis)}»` : ''}. ${u.fuente ? 'Fuente: ' + enlaceExt(u.fuente, u.url) : ''}</p>`
+      : N.sinPropuesta(rec, e, hid) ? `<p class="desconocida">${icoConf('desconocida')} Esta hipótesis no propone ubicación para esta etapa.</p><p class="meta">No se dibuja: el trazo une las etapas conocidas anterior y siguiente con una línea tenue.</p>`
+      : `<p class="desconocida">${icoConf('desconocida')} Ninguna hipótesis sitúa esta etapa: no se dibuja.</p>`;
+    return `<p class="rc-cuenta">Etapa ${i + 1} de ${E.length}${enCamino ? ' · <span class="rc-camino">en camino</span>' : ''}</p>
+      <h2 class="rc-nombre">${esc(e.nombre || e.lugar || 'Etapa')}</h2>
+      ${e.cita ? `<blockquote class="rc-cita">${esc(e.cita)}</blockquote>` : ''}
+      <p class="rc-ref">${insignia('texto', e.ref)}</p>
+      ${tiempo}
+      <section class="rc-donde"><h3>Dónde pudo estar <span class="etiqueta externa">Fuente externa</span></h3>${donde}
+        ${lg ? `<button type="button" class="enlace-boton" data-lugar="${esc(e.lugar)}">Ficha del lugar</button>` : ''}</section>
+      ${e.nota ? `<p class="nota">${esc(e.nota)}</p>` : ''}`;
+  }
+
+  function vistaRecorridos(args) {
+    const L = N.listaRecorridos(RC);
+    const cab = `<h1 tabindex="-1">Recorridos</h1>${subvistasMapa('recorridos')}`;
+    if (!L.length) return cab + '<p class="vacio-txt">Los datos de los recorridos (datos/recorridos.js) todavía no están. Cuando lleguen, aquí verás el relato animado del Éxodo, de Abraham y de Jacob.</p>';
+    const rec = N.recorrido(RC, args[0]) || L[0], E = N.etapasOrdenadas(rec), hid = hipDe(rec);
+    let idx = 0; if (args[1] !== undefined) { const k = E.findIndex(e => String(e.orden) === args[1]); if (k >= 0) idx = k; }
+    const hs = (rec.hipotesis || []).filter(h => h && h.id);
+    const personas = (rec.personas || []).filter(id => N.persona(D, id));
+    const dots = E.map((e, i) => { const u = N.ubicacionEtapa(rec, e, hid); return `<span class="rc-punto c-${u ? u.confianza : N.sinPropuesta(rec, e, hid) ? 'sinprop' : 'desc'}" style="left:${E.length > 1 ? (i / (E.length - 1) * 100).toFixed(2) : 50}%"></span>`; }).join('');
+    const vel = v => `<label><input type="radio" name="rc-vel" value="${v}" ${estadoRC.vel === v ? 'checked' : ''}><span>${String(v).replace('.', ',')}×</span></label>`;
+    return `${cab}
+      <p class="sub">El nombre, el orden y la cita de cada etapa son <strong>texto</strong> bíblico. Dónde estaba cada lugar es una <strong>hipótesis moderna</strong> con su confianza: cambia de hipótesis y mira cómo se mueve la ruta.</p>
+      ${RC.ejemplo ? '<p class="rc-ejemplo">EJEMPLO: datos de prueba con coordenadas aproximadas. No es una identificación real.</p>' : ''}
+      ${L.length > 1 ? `<nav class="subvistas rc-recs" aria-label="Recorrido">${L.map(r => `<a href="#mapa/recorridos/${encodeURIComponent(r.id)}"${r.id === rec.id ? ' aria-current="page"' : ''}>${esc(r.titulo || r.id)}</a>`).join('')}</nav>` : ''}
+      <div class="rc rc-completo" data-rc="${esc(JSON.stringify({ rec: rec.id, idx }))}">
+        <div class="rc-escena">
+          <div class="mapa rc-mapa"><div class="mapa-lienzo rc-lienzo">
+            <div class="mapa-ctrl"><button type="button" data-z="1" aria-label="Acercar">+</button><button type="button" data-z="-1" aria-label="Alejar">−</button>
+              <button type="button" data-z="0" aria-label="Ver el recorrido entero"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"/></svg></button></div>
+            <p class="rc-sello">Hipótesis: <strong>${esc((hipPorId(rec, hid) || {}).nombre || hid || '')}</strong></p>
+            ${MAPA ? '' : '<p class="mapa-aviso">Mapa base no disponible: solo se muestra la retícula.</p>'}</div></div>
+          <div class="rc-mando">
+            <button type="button" class="rc-play" data-rc-play aria-label="Reproducir el relato">${ICO_PLAY}</button>
+            <button type="button" class="rc-paso" data-rc-paso="-1" aria-label="Etapa anterior"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5"/></svg></button>
+            <div class="rc-barra" role="slider" tabindex="0" aria-label="Etapa del recorrido" aria-valuemin="1" aria-valuemax="${E.length}" aria-valuenow="${idx + 1}">
+              <div class="rc-pista"><span class="rc-lleno"></span>${dots}<span class="rc-cursor"></span></div></div>
+            <button type="button" class="rc-paso" data-rc-paso="1" aria-label="Etapa siguiente"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4.5L13 10l-5.5 5.5"/></svg></button>
+          </div>
+          <div class="rc-mando2"><p class="rc-estado meta" aria-hidden="true"></p>
+            <fieldset class="segmentos rc-vel"><legend class="sr">Velocidad del relato</legend>${[0.5, 1, 2].map(vel).join('')}</fieldset></div>
+        </div>
+        <article class="rc-tarjeta" aria-live="polite">${tarjetaEtapaHTML(rec, idx, hid, false)}</article>
+        <section class="rc-hip" aria-labelledby="t-rc-hip">
+          <h2 id="t-rc-hip">Hipótesis sobre el trazado</h2>
+          <p class="meta">Ninguna es un hecho: son propuestas modernas sobre dónde estaban los lugares que el texto nombra.</p>
+          ${hs.length > 1 ? `<fieldset class="segmentos rc-hips"><legend class="sr">Hipótesis</legend>${hs.map(h => `<label><input type="radio" name="rc-hip" value="${esc(h.id)}" ${h.id === hid ? 'checked' : ''}><span>${esc(h.nombre || h.id)}${h.minoritaria && !/minoritaria/i.test(h.nombre || '') ? '<small class="rc-min">minoritaria</small>' : ''}</span></label>`).join('')}</fieldset>` : ''}
+          <div class="rc-hip-desc">${hipotesisHTML(rec, hid)}</div>
+        </section>
+        <div class="rc-pie">
+          <p class="leyenda-mapa">${['alta', 'media', 'baja'].map(c => `<span>${icoConf(c)}${CONF_TXT[c].replace('Confianza ', '')}</span>`).join('')}
+            <span><svg class="ico-tramo" viewBox="0 0 28 10" aria-hidden="true"><path d="M2 5h24"/></svg>Tramo</span>
+            <span><svg class="ico-tramo incierto" viewBox="0 0 28 10" aria-hidden="true"><path class="halo" d="M2 5h24"/><path d="M2 5h24"/></svg>Tramo incierto (toca una etapa de confianza baja)</span>
+            <span><svg class="ico-tramo sin-propuesta" viewBox="0 0 28 10" aria-hidden="true"><path d="M2 5h24"/></svg>Tramo sin propuesta en esta hipótesis</span></p>
+          <p class="meta">Regiones y mares: rótulos orientativos de posición aproximada, sin fronteras. Mapa base: Natural Earth.</p>
+          ${rec.resumen ? `<p>${esc(rec.resumen)}</p>` : ''}
+          ${personas.length ? `<p class="rc-personas"><span class="meta">Quién va:</span> ${personas.map(btnPersona).join(' ')}</p>` : ''}
+          <details class="plegable"><summary>Todas las etapas (${E.length})</summary><ol class="rc-lista">${E.map((e, i) => `<li><button type="button" class="enlace-boton" data-rc-ir="${i}">${esc(e.nombre || 'Etapa')}</button> <span class="meta">${esc(e.ref || '')}</span></li>`).join('')}</ol></details>
+          ${(RC.fuentes || []).length ? `<details class="plegable"><summary>Fuentes de las ubicaciones</summary><ul class="rc-fuentes">${RC.fuentes.map(f => `<li><span class="etiqueta externa">Fuente externa</span> ${enlaceExt(f.nombre || f.id || '', f.url)}${f.licencia ? ` <span class="meta">(${esc(f.licencia)})</span>` : ''}</li>`).join('')}</ul></details>` : ''}
+        </div>
+      </div>`;
+  }
+
+  // Motor del recorrido (vista completa y mini mapa del acompañante): cámara que sigue al grupo, ruta que se dibuja,
+  // marcadores que aparecen al llegar y transformación animada al cambiar de hipótesis.
+  function crearRecorrido(raiz, cfg) {
+    raiz.dataset.montado = '1';
+    const rec = N.recorrido(RC, cfg.rec), lienzo = raiz.querySelector('.rc-lienzo');
+    if (!rec || !lienzo) return;
+    const mini = !!cfg.mini, E = N.etapasOrdenadas(rec), n = E.length, aqui = new Set(cfg.aqui || []);
+    const P = N.proyeccion(MAPA && MAPA.bbox);
+    lienzo.insertAdjacentHTML('afterbegin', `<svg ${mini ? `role="img" aria-label="${esc(`Mapa del recorrido ${rec.titulo || rec.id}: etapa ${(cfg.idx || 0) + 1} de ${n} resaltada y las anteriores trazadas`)}"` : 'tabindex="0" role="application" aria-roledescription="mapa" aria-label="Mapa del recorrido. Flechas para mover, más y menos para acercar."'}>
+      <g class="base">${baseMapaSVG(P)}</g><g class="rc-rot" aria-hidden="true"></g><g class="rc-ruta" aria-hidden="true"></g><g class="rc-marcas"></g>
+      <g class="rc-cabeza" aria-hidden="true"><circle class="onda" r="10"/><circle class="punto" r="4.5"/></g><g class="rc-etq" aria-hidden="true"></g></svg>`);
+    const svg = lienzo.querySelector('svg'), gBase = svg.querySelector('.base'), gRot = svg.querySelector('.rc-rot'), gRuta = svg.querySelector('.rc-ruta'),
+      gMarcas = svg.querySelector('.rc-marcas'), gCab = svg.querySelector('.rc-cabeza'), gEtq = svg.querySelector('.rc-etq');
+    const tarjeta = raiz.querySelector('.rc-tarjeta'), barra = raiz.querySelector('.rc-barra'), lleno = raiz.querySelector('.rc-lleno'), cursor = raiz.querySelector('.rc-cursor'),
+      btnPlay = raiz.querySelector('[data-rc-play]'), estadoTxt = raiz.querySelector('.rc-estado');
+    let W = 320, H = 220, hip = mini ? hipDe(rec) : hipDe(rec);
+    const v = { cx: 0, cy: 0, s: 1 }, obj = { cx: 0, cy: 0, s: 1 };
+    const ubic = h => E.map(e => { const u = N.ubicacionEtapa(rec, e, h); return u ? { lon: u.lon, lat: u.lat, c: u.confianza } : null; });
+    let U = ubic(hip), T = N.tramosRecorrido(rec, hip), morph = null, tramosDOM = [], marcasDOM = [];
+    const pos = { idx: Math.max(0, Math.min(n - 1, cfg.idx || 0)), t: 1 };
+    let fase = 'quieto', jugando = false, tFase = 0, durFase = 0, libre = false, terminado = false, ultimo = 0, raf = 0;
+    const suave = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+
+    function lugarDe(i) {
+      const b = U[i]; if (!morph) return b;
+      const a = morph.de[i], k = suave(morph.k);
+      if (a && b) return { lon: a.lon + (b.lon - a.lon) * k, lat: a.lat + (b.lat - a.lat) * k, c: b.c };
+      return b || a;
+    }
+    const tramoHacia = i => T.find(t => t.a === i) || null;
+    const ultimoUbicado = i => { for (let k = i; k >= 0; k--) if (lugarDe(k)) return k; return -1; };
+    function construir() {
+      gRuta.innerHTML = '<path class="rc-fantasma"/>' + T.map(t => `<g class="rc-tr conf-${t.confianza}${t.incierto ? ' incierto' : ''}${t.sinPropuesta ? ' sin-propuesta' : ''}">${t.incierto ? '<path class="halo"/>' : ''}<path class="linea"/></g>`).join('');
+      tramosDOM = [...gRuta.querySelectorAll('.rc-tr')].map((g, k) => ({ t: T[k], ps: [...g.querySelectorAll('path')] }));
+      gMarcas.innerHTML = E.map((e, i) => { const l = U[i] || (morph && morph.de[i]); if (!l) return ''; const c = (U[i] || l).c;
+        return `<g class="rc-marca conf-${c}" data-rc-etapa="${i}"${mini ? '' : ` tabindex="-1" role="button" aria-label="${esc(`${e.nombre}, ${CONF_TXT[c].toLowerCase()}`)}"`}><g class="rc-forma">${c === 'baja' ? '<circle class="rc-halo" r="13"/>' : ''}<circle class="toque" r="16"/>${formaConf(c, 6)}</g></g>`; }).join('');
+      marcasDOM = [...gMarcas.querySelectorAll('.rc-marca')].map(g => ({ i: +g.dataset.rcEtapa, g }));
+    }
+    const aPant = (lon, lat) => { const [x, y] = N.proyectar(P, lon, lat); return [(x - v.cx) * v.s + W / 2, (y - v.cy) * v.s + H / 2]; };
+    const f1 = p => p[0].toFixed(1) + ' ' + p[1].toFixed(1);
+    function pintar() {
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      gBase.setAttribute('transform', `matrix(${v.s} 0 0 ${v.s} ${W / 2 - v.cx * v.s} ${H / 2 - v.cy * v.s})`);
+      const S = E.map((e, i) => { const l = lugarDe(i); return l ? aPant(l.lon, l.lat) : null; });
+      const vis = S.filter(Boolean);
+      gRuta.firstChild.setAttribute('d', vis.length > 1 ? 'M' + vis.map(f1).join('L') : '');
+      let cabeza = null; const items = [];
+      tramosDOM.forEach(({ t, ps }) => {
+        const p0 = S[t.de], p1 = S[t.a], f = t.a < pos.idx ? 1 : t.a === pos.idx ? pos.t : 0;
+        let d = '';
+        if (p0 && p1 && f > 0) { const q = [p0[0] + (p1[0] - p0[0]) * f, p0[1] + (p1[1] - p0[1]) * f]; d = `M${f1(p0)}L${f1(q)}`; if (t.a === pos.idx && f < 1) cabeza = q; }
+        ps.forEach(p => p.setAttribute('d', d));
+        if (d && t.sinPropuesta && !mini && p0 && p1) items.push({ id: 'sp' + t.a, x: (p0[0] + p1[0]) / 2, y: (p0[1] + p1[1]) / 2, texto: 'sin propuesta', prioridad: 50, sp: true });
+      });
+      if (!cabeza) { const k = ultimoUbicado(pos.idx); if (k >= 0 && S[k]) cabeza = S[k]; }
+      if (cabeza && !mini && (fase === 'viaje' || ultimoUbicado(pos.idx) !== pos.idx)) { gCab.setAttribute('transform', `translate(${f1(cabeza)})`); gCab.classList.toggle('viajando', fase === 'viaje'); gCab.style.display = ''; } else gCab.style.display = 'none';
+      marcasDOM.forEach(({ i, g }) => {
+        const p = S[i]; if (!p) { g.style.display = 'none'; return; }
+        g.style.display = ''; g.setAttribute('transform', `translate(${f1(p)})`);
+        const est = i < pos.idx ? 'pasada' : i === pos.idx && pos.t >= 1 ? 'actual' : 'futura';
+        if (g.dataset.est !== est) { g.dataset.est = est; g.setAttribute('class', `rc-marca conf-${(U[i] || {}).c || 'baja'} ${est}${aqui.has(i) ? ' aqui' : ''}`); }
+        if (est !== 'futura' || aqui.has(i)) items.push({ id: String(i), x: p[0], y: p[1], texto: E[i].nombre || '', prioridad: est === 'actual' ? 1e4 : aqui.has(i) ? 5e3 : i === 0 ? 3e3 : 100 + i });
+      });
+      gEtq.innerHTML = N.colocarEtiquetas(items, W, H, mini ? 4 : 7).map(e => `<text class="etq${e.id === String(pos.idx) ? ' sel' : ''}${e.id.startsWith('sp') ? ' etq-sp' : ''}" x="${e.x.toFixed(1)}" y="${e.y.toFixed(1)}" text-anchor="${e.anc}">${esc(e.texto)}</text>`).join('');
+      gRot.innerHTML = ROTULOS.map(([t, lon, lat, tipo]) => { const [x, y] = aPant(lon, lat); return x < -60 || y < -20 || x > W + 60 || y > H + 20 ? '' : `<text class="rc-region${tipo === 'mar' ? ' mar' : ''}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="middle">${esc(t)}</text>`; }).join('');
+      if (lleno) {
+        const tr = tramoHacia(pos.idx), fr = n > 1 ? (pos.t < 1 && tr ? tr.de + (pos.idx - tr.de) * pos.t : pos.idx) / (n - 1) : 1;
+        lleno.style.width = (fr * 100).toFixed(2) + '%'; cursor.style.left = (fr * 100).toFixed(2) + '%';
+      }
+    }
+    // Cámara: encuadra puntos [lon,lat]; `minimo` en grados.
+    function mirar(pts, minimo, margen) {
+      const r = N.encuadre(P, pts.filter(Boolean).map(l => [l.lon, l.lat]), { minimo, margen });
+      obj.s = Math.min(W / r.w, H / r.h); obj.cx = r.x + r.w / 2; obj.cy = r.y + r.h / 2;
+    }
+    const todo = () => E.map((e, i) => lugarDe(i)).filter(Boolean);
+    function enfocar() {
+      libre = false;
+      if (mini) { const vistos = E.map((e, i) => i <= pos.idx + 1 || aqui.has(i) ? lugarDe(i) : null).filter(Boolean); mirar(vistos.length ? vistos : todo(), 3, .15); return; }
+      const tr = tramoHacia(pos.idx);
+      if (fase === 'intro' || fase === 'fin' || terminado || pos.idx < 0) { mirar(todo(), 3, .1); return; }
+      if (fase === 'viaje' && tr) { mirar([lugarDe(tr.de), lugarDe(tr.a)], 1.4, .35); return; }
+      const k = ultimoUbicado(pos.idx); if (k < 0) { mirar(todo(), 3, .1); return; }
+      const t2 = tramoHacia(k), km = t2 ? t2.km : 150;
+      mirar(t2 ? [lugarDe(t2.de), lugarDe(k)] : [lugarDe(k)], Math.min(4, Math.max(1.3, km / 111 * 1.1)), .3);
+    }
+    const quieta = () => Math.abs(v.cx - obj.cx) * v.s < .3 && Math.abs(v.cy - obj.cy) * v.s < .3 && Math.abs(Math.log(v.s / obj.s)) < .002;
+    // requestAnimationFrame, con un temporizador de respaldo por si el navegador no pinta (vistas incrustadas u ocultas).
+    let rto = 0;
+    function pedir() {
+      if (raf) return;
+      raf = requestAnimationFrame(t => { clearTimeout(rto); tick(t); });
+      rto = setTimeout(() => { if (raf) { cancelAnimationFrame(raf); tick(performance.now()); } }, 100);
+    }
+    function tick(ahora) {
+      raf = 0;
+      if (!svg.isConnected) return;
+      const dt = ultimo ? Math.min(120, Math.max(0, ahora - ultimo)) : 16; ultimo = ahora;
+      const red = movReducido();
+      if (morph) { morph.k = red ? 1 : Math.min(1, morph.k + dt / 1100); if (morph.k >= 1) { const sobra = morph.de.some((a, i) => a && !U[i]); morph = null; if (sobra) construir(); } if (!libre) enfocar(); }
+      if (fase === 'viaje') {
+        tFase += dt * (jugando ? estadoRC.vel : 1.6);
+        pos.t = red || !durFase ? 1 : suave(Math.min(1, tFase / durFase));
+        if (pos.t >= 1) llegar();
+      } else if (jugando && (fase === 'pausa' || fase === 'intro')) {
+        tFase += dt * estadoRC.vel;
+        if (tFase >= durFase) { if (fase === 'intro') llegar(); else if (pos.idx < n - 1) partir(pos.idx + 1); else terminar(); }
+      }
+      if (!libre) {
+        const k = red ? 1 : 1 - Math.exp(-dt / (fase === 'viaje' ? 520 : 380));
+        v.cx += (obj.cx - v.cx) * k; v.cy += (obj.cy - v.cy) * k; v.s = Math.exp(Math.log(v.s) + (Math.log(obj.s) - Math.log(v.s)) * k);
+      }
+      pintar();
+      if (jugando || morph || fase === 'viaje' || (!libre && !quieta())) pedir(); else ultimo = 0;
+    }
+    function tarjetaA(i, enCamino) {
+      if (tarjeta) {
+        tarjeta.innerHTML = tarjetaEtapaHTML(rec, i, hip, enCamino);
+        if (!enCamino) { tarjeta.classList.remove('entra'); void tarjeta.offsetWidth; tarjeta.classList.add('entra'); }
+      }
+      if (barra) { barra.setAttribute('aria-valuenow', i + 1); barra.setAttribute('aria-valuetext', `Etapa ${i + 1} de ${n}: ${E[i].nombre || ''}`); }
+      if (estadoTxt) estadoTxt.textContent = `${i + 1} / ${n} · ${E[i].nombre || ''}`;
+    }
+    function partir(i) {
+      pos.idx = i; terminado = false;
+      const tr = tramoHacia(i);
+      if (!tr || movReducido()) { pos.t = 1; llegar(); return; }
+      fase = 'viaje'; tFase = 0; pos.t = 0; durFase = N.duracionTramo(tr.km) * (jugando ? 1 : .55);
+      tarjetaA(i, true); enfocar(); pedir();
+    }
+    function llegar() {
+      pos.t = 1; tarjetaA(pos.idx, false);
+      if (jugando) { fase = 'pausa'; tFase = 0; durFase = N.pausaEtapa(E[pos.idx]); } else { fase = 'quieto'; anotar(); }
+      enfocar(); pedir();
+    }
+    function terminar() { jugando = false; terminado = true; fase = 'fin'; enfocar(); fase = 'quieto'; libre = false; botones(); anotar(); pedir(); }
+    function ir(i, animar) {
+      i = Math.max(0, Math.min(n - 1, i));
+      if (animar && i === pos.idx + 1 && fase !== 'viaje') { partir(i); return; }
+      pos.idx = i; pos.t = 1; terminado = false; fase = jugando ? 'pausa' : 'quieto'; tFase = 0; durFase = N.pausaEtapa(E[i]);
+      tarjetaA(i, false); if (!jugando) anotar(); enfocar(); pedir();
+    }
+    function anotar() { if (!mini) try { history.replaceState(null, '', hrefEtapa(rec, E[pos.idx])); } catch (e) { /* file:// */ } }
+    function botones() {
+      if (!btnPlay) return;
+      btnPlay.innerHTML = jugando ? ICO_PAUSA : terminado ? ICO_OTRA : ICO_PLAY;
+      btnPlay.setAttribute('aria-label', jugando ? 'Pausar el relato' : terminado ? 'Volver a empezar el relato' : 'Reproducir el relato');
+      btnPlay.classList.toggle('activo', jugando);
+    }
+    function alternar() {
+      if (jugando) { jugando = false; const f = fase; if (f === 'pausa' || f === 'intro') { fase = 'quieto'; if (f === 'intro') llegar(); } anotar(); botones(); pedir(); return; }
+      jugando = true; botones();
+      if (terminado || (pos.idx === n - 1 && fase === 'quieto')) { pos.idx = 0; pos.t = 1; terminado = false; }
+      if (pos.idx === 0 && fase !== 'viaje') { fase = 'intro'; tFase = 0; durFase = 1500; tarjetaA(0, false); enfocar(); }
+      else if (fase !== 'viaje') { fase = 'pausa'; tFase = 0; durFase = 600; }
+      pedir();
+    }
+    function cambiarHip(h) {
+      if (h === hip) return;
+      const de = E.map((e, i) => lugarDe(i));
+      hip = h; estadoRC.hip[rec.id] = h; U = ubic(h); T = N.tramosRecorrido(rec, h);
+      morph = movReducido() ? null : { de, k: 0 };
+      construir(); if (!libre) enfocar();
+      const hh = hipPorId(rec, h), sello = raiz.querySelector('.rc-sello strong'), desc = raiz.querySelector('.rc-hip-desc');
+      if (sello) sello.textContent = (hh && hh.nombre) || h;
+      if (desc) desc.innerHTML = hipotesisHTML(rec, h);
+      raiz.querySelectorAll('.rc-punto').forEach((p, i) => { const u = N.ubicacionEtapa(rec, E[i], h); p.className = `rc-punto c-${u ? u.confianza : N.sinPropuesta(rec, E[i], h) ? 'sinprop' : 'desc'}`; });
+      if (tarjeta) tarjeta.innerHTML = tarjetaEtapaHTML(rec, pos.idx, h, fase === 'viaje');
+      lienzo.classList.remove('cambia'); void lienzo.offsetWidth; lienzo.classList.add('cambia');
+      pedir();
+    }
+    construir();
+
+    if (!mini) {
+      // Arrastre, pellizco y rueda: la cámara deja de seguir al grupo hasta la próxima etapa.
+      const punteros = new Map(); let previo = null, recorrido = 0;
+      const posP = e => { const r = svg.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+      const estP = () => { const ps = [...punteros.values()]; if (ps.length < 2) return { n: ps.length, c: ps[0], d: 0 }; const [a, c] = ps; return { n: 2, c: [(a[0] + c[0]) / 2, (a[1] + c[1]) / 2], d: Math.hypot(a[0] - c[0], a[1] - c[1]) }; };
+      const zoomEn = (px, py, f) => {
+        const s = Math.min(Math.min(W, H) / .2, Math.max(.5, v.s * f)), wx = v.cx + (px - W / 2) / v.s, wy = v.cy + (py - H / 2) / v.s;
+        v.s = s; v.cx = wx - (px - W / 2) / s; v.cy = wy - (py - H / 2) / s; libre = true; pedir();
+      };
+      svg.addEventListener('pointerdown', e => { punteros.set(e.pointerId, posP(e)); previo = estP(); if (punteros.size === 1) recorrido = 0; });
+      svg.addEventListener('pointermove', e => {
+        if (!punteros.has(e.pointerId)) return;
+        punteros.set(e.pointerId, posP(e)); const ahora = estP();
+        if (previo && ahora.n === previo.n && ahora.c) {
+          const dx = ahora.c[0] - previo.c[0], dy = ahora.c[1] - previo.c[1]; recorrido += Math.abs(dx) + Math.abs(dy);
+          if (recorrido > 6) { if (!svg.hasPointerCapture(e.pointerId)) try { svg.setPointerCapture(e.pointerId); } catch (er) { /* */ } v.cx -= dx / v.s; v.cy -= dy / v.s; libre = true; pedir(); }
+          if (ahora.n === 2 && previo.d > 0) zoomEn(ahora.c[0], ahora.c[1], ahora.d / previo.d);
+        }
+        previo = ahora;
+      });
+      const soltar = e => { punteros.delete(e.pointerId); previo = punteros.size ? estP() : null; };
+      svg.addEventListener('pointerup', soltar); svg.addEventListener('pointercancel', soltar);
+      svg.addEventListener('wheel', e => { e.preventDefault(); const [x, y] = posP(e); zoomEn(x, y, Math.exp(-e.deltaY * 0.0015)); }, { passive: false });
+      svg.addEventListener('click', e => { if (recorrido > 6) return; const m = e.target.closest('[data-rc-etapa]'); if (m) ir(+m.dataset.rcEtapa); });
+      svg.addEventListener('keydown', e => {
+        const paso = 40 / v.s, k = { ArrowLeft: [-paso, 0], ArrowRight: [paso, 0], ArrowUp: [0, -paso], ArrowDown: [0, paso] }[e.key];
+        if (k) { e.preventDefault(); v.cx += k[0]; v.cy += k[1]; libre = true; pedir(); }
+        else if (e.key === '+' || e.key === '=') zoomEn(W / 2, H / 2, 1.4);
+        else if (e.key === '-') zoomEn(W / 2, H / 2, 1 / 1.4);
+      });
+      const ctrl = lienzo.querySelector('.mapa-ctrl');
+      if (ctrl) ctrl.addEventListener('click', e => { const bt = e.target.closest('[data-z]'); if (!bt) return; const z = +bt.dataset.z; if (z === 0) { mirar(todo(), 3, .1); libre = false; pedir(); } else zoomEn(W / 2, H / 2, z > 0 ? 1.5 : 1 / 1.5); });
+      // Barra de progreso: pulsar o arrastrar elige etapa; flechas, Inicio y Fin con el teclado.
+      if (barra) {
+        const idxDe = e => { const r = barra.querySelector('.rc-pista').getBoundingClientRect(); return Math.round(Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * (n - 1)); };
+        let arr = false;
+        barra.addEventListener('pointerdown', e => { arr = true; try { barra.setPointerCapture(e.pointerId); } catch (er) { /* */ } const i = idxDe(e); if (i !== pos.idx) ir(i); });
+        barra.addEventListener('pointermove', e => { if (arr) { const i = idxDe(e); if (i !== pos.idx) ir(i); } });
+        const fin = () => { arr = false; }; barra.addEventListener('pointerup', fin); barra.addEventListener('pointercancel', fin);
+        barra.addEventListener('keydown', e => {
+          const d = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1 }[e.key];
+          if (d) { e.preventDefault(); ir(pos.idx + d, d > 0); } else if (e.key === 'Home') { e.preventDefault(); ir(0); } else if (e.key === 'End') { e.preventDefault(); ir(n - 1); }
+        });
+      }
+      raiz.addEventListener('click', e => {
+        if (e.target.closest('[data-rc-play]')) { alternar(); return; }
+        const p = e.target.closest('[data-rc-paso]'); if (p) { const d = +p.dataset.rcPaso; ir(pos.idx + d, d > 0); return; }
+        const g = e.target.closest('[data-rc-ir]'); if (g) { ir(+g.dataset.rcIr); lienzo.scrollIntoView({ block: 'nearest', behavior: movReducido() ? 'auto' : 'smooth' }); }
+      });
+      raiz.addEventListener('change', e => {
+        const t = e.target;
+        if (t.name === 'rc-hip') cambiarHip(t.value);
+        else if (t.name === 'rc-vel') { estadoRC.vel = +t.value || 1; store.set('biblia.rcVel', estadoRC.vel); }
+      });
+      const alOcultar = () => { if (!svg.isConnected) { document.removeEventListener('visibilitychange', alOcultar); return; } if (document.hidden && jugando) alternar(); };
+      document.addEventListener('visibilitychange', alOcultar);
+    }
+    const medir = () => { const r = svg.getBoundingClientRect(); if (r.width > 10 && r.height > 10) { W = r.width; H = r.height; return true; } return false; };
+    let listo = false;
+    const alCambiar = () => { if (!medir()) return; const prim = !listo; listo = true; enfocar(); if (prim) { v.cx = obj.cx; v.cy = obj.cy; v.s = obj.s; } pintar(); pedir(); };
+    if (window.ResizeObserver) new ResizeObserver(alCambiar).observe(svg);
+    alCambiar(); if (!listo) { listo = true; enfocar(); v.cx = obj.cx; v.cy = obj.cy; v.s = obj.s; pintar(); }
+    tarjetaA(pos.idx, false); if (tarjeta) tarjeta.classList.remove('entra');
+    botones();
+  }
+
+  // Acompañante: «En el camino» cuando el pasaje toca una etapa de un recorrido.
+  function enCaminoHTML(p, sec, I) {
+    if (!N.listaRecorridos(RC).length || !p) return '';
+    const lb = N.libroDe(p), refs = N.versiculosDe(D, p).map(v => v.ref);
+    const rs = N.recorridosDeRefs(RC, refs, estado.activo ? `${lb} ${estado.activo}` : null);
+    if (!rs.length) return '';
+    return sec('En el camino', rs.map(x => {
+      const E = N.etapasOrdenadas(x.rec), e = E[x.actual], h = hipPorId(x.rec, hipDe(x.rec));
+      return `<div class="rc rc-mini" data-rc="${esc(JSON.stringify({ rec: x.rec.id, idx: x.actual, aqui: x.aqui, mini: true }))}">
+        <div class="mapa mini"><div class="mapa-lienzo rc-lienzo"></div></div>
+        <p class="rc-mini-txt"><strong>${esc(x.rec.titulo || x.rec.id)}</strong> · etapa ${x.actual + 1} de ${E.length}: <strong>${esc(e.nombre || '')}</strong></p>
+        ${x.aqui.length > 1 ? `<p class="meta">En este pasaje: ${x.aqui.map(i => `<a href="${hrefEtapa(x.rec, E[i])}">${esc(E[i].nombre || '')}</a> (${esc(E[i].ref || '')})`).join(' · ')}</p>` : ''}
+        <p class="meta">Trazado según la hipótesis «${esc((h && h.nombre) || '')}» <span class="etiqueta externa">Fuente externa</span>: no es un hecho.</p>
+        <p><a class="boton secundario" href="${hrefEtapa(x.rec, e)}">Ver el recorrido completo</a></p></div>`;
+    }).join(''), I('M4 16c2.5 0 3-3 6-4s3-5 6-6M3 16h2M15 5h2'));
   }
 
   /* ---------- Personajes: colección, ficha y curiosidades ---------- */
@@ -2829,11 +3253,16 @@ if (typeof document !== 'undefined') (function () {
     const ml = document.querySelector('.marca-libro'); if (ml && D) ml.textContent = N.alcance(D).texto; // alcance de los datos, no fijo
     render(false); registrarSW();
   }
-  if (!D && /[?&]ejemplo/.test(location.search)) {
-    const s = document.createElement('script');
-    s.src = 'pruebas/datos-ejemplo.js';
-    s.onload = () => { D = window.BIBLIA_DATOS || null; if (D && window.BIBLIA_EJEMPLO_EXODO) D = window.BIBLIA_EJEMPLO_EXODO(D); MAPA = window.BIBLIA_MAPA || null; iniciar(); };
-    s.onerror = iniciar;
-    document.head.appendChild(s);
-  } else iniciar();
+  const arrancar = () => {
+    if (!D && EJEMPLO) {
+      const s = document.createElement('script');
+      s.src = 'pruebas/datos-ejemplo.js';
+      s.onload = () => { D = window.BIBLIA_DATOS || null; if (D && window.BIBLIA_EJEMPLO_EXODO) D = window.BIBLIA_EJEMPLO_EXODO(D); MAPA = window.BIBLIA_MAPA || null; iniciar(); };
+      s.onerror = iniciar;
+      document.head.appendChild(s);
+    } else iniciar();
+  };
+  // Recorridos de prueba (EJEMPLO) con ?ejemplo mientras no exista datos/recorridos.js.
+  if (EJEMPLO && !RC) cargarScript('pruebas/recorridos-ejemplo.js').then(() => { RC = window.BIBLIA_RECORRIDOS || null; }, () => {}).then(arrancar);
+  else arrancar();
 })();
