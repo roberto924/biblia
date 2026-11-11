@@ -590,3 +590,115 @@ main:has(.herr-arbol) { max-width: 100rem; }
 .ga-tarjeta.principal, .ga-fam .lazo { position: relative; }
 .ga-fam.con-boton { margin-bottom: 2.9rem; }
 .par-nombre { display: inline-flex; flex-wrap: nowrap; align-items: center; max-width: 100%; }
+
+/* ---------- Personajes: colección, ficha y curiosidades ---------- */
+.r-rara { --rz: var(--rubrica); }
+.r-poco-comun { --rz: var(--lugar); }
+.r-comun { --rz: var(--suave); }
+.r-protagonista { --rz: var(--lapis); }
+.rareza-muestra { display: inline-flex; align-items: center; gap: .3rem; font-size: .74rem; font-weight: 600; letter-spacing: .01em; padding: .08rem .5rem; border-radius: 999px;
+  color: var(--rz, var(--suave)); background: color-mix(in srgb, var(--rz, var(--suave)) 11%, var(--hoja)); border: 1px solid color-mix(in srgb, var(--rz, var(--suave)) 30%, transparent); white-space: nowrap; }
+.enlace-boton { border: 0; background: none; padding: 0 .2rem; min-height: 44px; color: var(--lapis); font-size: .88rem; font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.etiqueta.externa { background: color-mix(in srgb, var(--c-inferido) 12%, var(--hoja)); color: var(--c-inferido); font-weight: 600; }
+
+.colec-resumen { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; margin: 1rem 0 .5rem; padding: .85rem 1.1rem; background: var(--hoja); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); }
+.colec-resumen p { margin: 0; }
+.colec-cuenta { font-family: var(--serif); font-size: 1.15rem; color: var(--suave); }
+.colec-cuenta strong { font-size: 2rem; color: var(--tinta); font-variant-numeric: lining-nums; margin-right: .15rem; }
+.colec-resumen progress { flex: 1 1 8rem; min-width: 6rem; height: .55rem; accent-color: var(--lapis); }
+.colec-filtros { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: .75rem 0 .25rem; }
+.colec-filtros .segmentos span { min-width: 0; padding: 0 .8rem; }
+.rarezas { list-style: none; padding: 0; margin: .25rem 0 .75rem; display: grid; gap: .4rem; }
+.colec-vacia { padding: .8rem 1rem; border-left: 3px solid var(--lapis); background: var(--lapis-tinte); border-radius: 0 var(--r-ctrl) var(--r-ctrl) 0; }
+
+.fichas-col { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(6.4rem, 1fr)); gap: .55rem; }
+@media (min-width: 600px) { .fichas-col { grid-template-columns: repeat(auto-fill, minmax(8.75rem, 1fr)); gap: .7rem; } }
+.fichas-col > li { display: flex; }
+.ficha-col { flex: 1; width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; margin: 0; padding: 0 0 .7rem; overflow: hidden; text-align: left;
+  border: 1px solid var(--linea); border-top: 3px solid var(--rz, var(--linea)); border-radius: var(--r-tarjeta); background: var(--hoja); box-shadow: var(--sombra); cursor: pointer;
+  transition: transform var(--t), box-shadow var(--t), border-color var(--t); }
+button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-alta); }
+.ficha-col > :not(.ficha-retrato) { margin: 0 .75rem; }
+@media (max-width: 599px) {
+  .ficha-col { padding-bottom: .55rem; gap: .25rem; }
+  .ficha-col > :not(.ficha-retrato) { margin: 0 .5rem; }
+  .ficha-col .ficha-retrato { aspect-ratio: 2 / 1; }
+  .ficha-col .ficha-inicial { width: 2.2rem; height: 2.2rem; font-size: 1.3rem; border-radius: .55rem; }
+  .ficha-col .ficha-nombre { font-size: .98rem; }
+  .ficha-col .rareza-muestra { font-size: .66rem; padding: .05rem .4rem; }
+  .ficha-col .silueta { width: 2rem; height: 2.4rem; }
+  .ficha-col.bloqueada .ficha-nombre { font-size: .85rem; }
+}
+.ficha-retrato { align-self: stretch; display: grid; place-items: center; aspect-ratio: 5 / 3; margin-bottom: .2rem;
+  background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--rz, var(--lapis)) 22%, transparent), transparent 65%), color-mix(in srgb, var(--rz, var(--lapis)) 9%, var(--hoja2)); }
+.ficha-inicial { display: grid; place-items: center; width: 2.9rem; height: 2.9rem; border-radius: .7rem; font-family: var(--serif); font-size: 1.7rem; font-weight: 600; line-height: 1;
+  color: #fff; background: linear-gradient(145deg, color-mix(in srgb, var(--rz, var(--lapis)) 80%, #fff), color-mix(in srgb, var(--rz, var(--lapis)) 85%, #000));
+  box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / .22), 0 2px 6px -2px rgb(22 27 46 / .45); }
+@media (prefers-color-scheme: dark) { .ficha-inicial { color: #f4f5fb; background: linear-gradient(145deg, color-mix(in srgb, var(--rz, var(--lapis)) 62%, #1c2350), color-mix(in srgb, var(--rz, var(--lapis)) 38%, #0d1122)); } }
+.ficha-col.mujer .ficha-inicial { border-radius: 50% 50% .7rem .7rem; }
+.ficha-nombre { font-family: var(--serif); font-size: 1.08rem; font-weight: 600; line-height: 1.2; }
+.ficha-pie { font-size: .78rem; color: var(--suave); }
+.ficha-col.bloqueada { cursor: default; box-shadow: none; border-style: dashed; border-top-width: 1px; background: transparent; }
+.ficha-col.bloqueada .ficha-retrato { background: var(--hoja2); }
+.ficha-col.bloqueada .ficha-nombre { font-style: italic; font-weight: 400; color: var(--suave); font-size: .95rem; }
+.silueta { width: 2.6rem; height: 3.1rem; fill: color-mix(in srgb, var(--suave) 35%, var(--hoja2)); stroke: none; }
+
+/* Ficha (diálogo) */
+.ficha-cab { display: grid; grid-template-columns: 5.25rem 1fr; gap: .9rem; align-items: start; margin: .6rem 0 .4rem; }
+.ficha-datos > :first-child { margin-top: 0; }
+.ficha-datos p { margin: 0 0 .3rem; }
+.retrato { margin: 0; display: flex; flex-direction: column; align-items: center; gap: .25rem; }
+.retrato img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r-ctrl); border: 1px solid var(--linea); }
+.retrato.vacio { aspect-ratio: 3 / 4; width: 100%; justify-content: center; border: 1.5px dashed var(--linea); border-radius: var(--r-ctrl); background: var(--papel); }
+.retrato.vacio .silueta { width: 2.3rem; height: 2.8rem; }
+.retrato figcaption { font-size: .68rem; color: var(--suave); text-align: center; line-height: 1.2; }
+.grafia { font-size: .92rem; }
+.ficha-datos a.ref { min-height: 0; }
+.externos .etiqueta { margin-left: 0; }
+.ficha-estado { font-size: .88rem; color: var(--suave); display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; }
+.ficha-estado.en-col { color: var(--c-texto); font-weight: 600; }
+.curios { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.curio { padding: .55rem .9rem .2rem; border-left: 4px dotted var(--c-calculo); background: color-mix(in srgb, var(--c-calculo) 7%, var(--hoja)); border-radius: 0 var(--r-ctrl) var(--r-ctrl) 0; }
+.curio > p, .curio-txt { margin: 0; font-family: var(--serif); font-size: 1.04rem; }
+.curio-txt { font-size: 1.15rem; }
+.pasos-curio { margin: .2rem 0 .5rem; padding-left: 1.3rem; font-size: .9rem; display: grid; gap: .1rem; }
+.pasos-curio a.ref { min-height: 32px; }
+.pasajes-persona { list-style: none; padding: 0; margin: 0; display: grid; gap: .1rem; }
+.pasajes-persona li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .6rem; border-bottom: 1px solid var(--linea-suave); }
+.pasajes-persona a { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 .5rem; min-height: 44px; padding: .35rem 0; text-decoration: none; }
+.pasajes-persona a:hover .pp-titulo { text-decoration: underline; }
+.pp-rango { font-size: .82rem; color: var(--suave); font-variant-numeric: tabular-nums; }
+.pp-titulo { font-family: var(--serif); color: var(--tinta); }
+.externos { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
+.externos li { display: flex; flex-wrap: wrap; align-items: center; gap: .1rem .35rem; }
+.externos a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+.externos .meta { flex-basis: 100%; margin-top: -.5rem; font-size: .82rem; }
+
+/* «¿Sabías que…?» en el acompañante */
+.sabias h3 svg { color: var(--c-calculo); background: color-mix(in srgb, var(--c-calculo) 10%, var(--hoja)); }
+.sabias-lista { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
+.sabias-lista li { padding: .5rem .8rem .1rem; border-left: 3px dotted var(--c-calculo); background: color-mix(in srgb, var(--c-calculo) 6%, var(--hoja)); border-radius: 0 var(--r-ctrl) var(--r-ctrl) 0; }
+.sabias-lista p { margin: 0; font-family: var(--serif); }
+.sabias-pie { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .6rem; }
+
+/* Aviso «Nuevo en tu colección» */
+.nuevas { position: fixed; z-index: 45; top: calc(.5rem + env(safe-area-inset-top)); left: .5rem; right: .5rem; margin: 0 auto; max-width: 26rem;
+  padding: .6rem .6rem .7rem 1rem; background: var(--hoja); border: 1px solid var(--linea); border-top: 3px solid var(--lapis); border-radius: var(--r-tarjeta); box-shadow: var(--sombra-alta); }
+.nuevas[hidden] { display: none; }
+.nuevas-cab { display: flex; align-items: flex-start; gap: .5rem; }
+.nuevas-titulo { flex: 1; margin: .35rem 0 0; font-family: var(--serif); font-size: 1.12rem; font-weight: 600; line-height: 1.2; }
+.nuevas-cuenta { display: block; font-family: var(--sans); font-size: .8rem; font-weight: 400; color: var(--suave); margin-top: .15rem; }
+.nuevas-fichas { list-style: none; padding: 0; margin: .45rem 0 .3rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+.nueva-ficha { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; padding: .25rem .7rem .25rem .3rem; border: 1px solid var(--linea); border-left: 3px solid var(--rz, var(--lapis)); border-radius: var(--r-ctrl); background: var(--papel); cursor: pointer; text-align: left; }
+.nueva-ficha:hover { border-color: var(--lapis); }
+.nueva-ficha .ficha-inicial { width: 2rem; height: 2rem; font-size: 1.15rem; border-radius: .5rem; }
+.nueva-nombre { font-family: var(--serif); font-weight: 600; }
+.nueva-ficha .rareza-muestra { font-size: .68rem; }
+.nuevas-resto { display: flex; align-items: center; min-height: 44px; padding: 0 .4rem; color: var(--suave); font-size: .9rem; }
+.nuevas-ver { display: inline-flex; align-items: center; min-height: 36px; font-size: .9rem; font-weight: 600; }
+@media (min-width: 900px) { .nuevas { top: 1rem; left: calc(var(--lateral) + 1rem); right: auto; width: 24rem; } } /* sobre el texto, no sobre el acompañante */
+.nuevas.entra { animation: nuevas-entra .32s cubic-bezier(.2, .7, .3, 1); }
+.nuevas.entra .nuevas-fichas > li { animation: ficha-entra .38s cubic-bezier(.2, .7, .3, 1) both; animation-delay: calc(.12s + var(--i, 0) * 80ms); }
+@keyframes nuevas-entra { from { opacity: 0; transform: translateY(-12px); } }
+@keyframes ficha-entra { from { opacity: 0; transform: translateY(6px) scale(.96); } }
+@media (max-width: 400px) { .nav-principal a span { font-size: .68rem; letter-spacing: -.01em; } }

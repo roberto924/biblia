@@ -857,7 +857,182 @@ const Nucleo = (() => {
     return out;
   }
 
+  /* ---- Personajes: colección, ficha ampliada y curiosidades (todo derivado de los datos) ---- */
+  // Coleccionables: personas con nombre que aparecen en algún versículo, en orden de primera aparición.
+  const coleccionables = d => memo(d || {}, 'colec', () => {
+    const I = indice(d);
+    return ((d && d.personas) || []).filter(p => p && p.id && !p.sin_nombre && I.primera.has(p.id)).map(p => p.id)
+      .sort((a, b) => I.primera.get(a) - I.primera.get(b));
+  });
+  // Claves de los versículos en que aparece cada persona según los datos (refs y menciones).
+  const versosPersona = d => memo(d || {}, 'versosP', () => {
+    const m = new Map();
+    for (const [k, s] of indice(d).porRef) for (const id of s) { if (!m.has(id)) m.set(id, []); m.get(id).push(k); }
+    m.forEach(ks => ks.sort((a, b) => a - b));
+    return m;
+  });
+  // Rareza: solo cuántos versículos de los datos la nombran (no mide importancia).
+  const RAREZAS = [{ id: 'rara', nombre: 'Rara', min: 1, max: 1 }, { id: 'poco-comun', nombre: 'Poco común', min: 2, max: 9 },
+    { id: 'comun', nombre: 'Común', min: 10, max: 29 }, { id: 'protagonista', nombre: 'Protagonista', min: 30, max: Infinity }];
+  function rareza(d, id) {
+    const n = (versosPersona(d).get(id) || []).length;
+    return Object.assign({ versiculos: n }, RAREZAS.find(x => n >= x.min && n <= x.max) || RAREZAS[0]);
+  }
+  // Personas coleccionables que aparecen en un pasaje (orden de primera aparición).
+  function personasDePasaje(d, p) {
+    if (!p) return [];
+    return memo(d || {}, 'pdp|' + p.inicio + '|' + p.fin, () => {
+      const a = clave(p.inicio), b = clave(p.fin), V = versosPersona(d);
+      return coleccionables(d).filter(id => (V.get(id) || []).some(k => k >= a && k <= b));
+    });
+  }
+  // Colección: personas de los pasajes leídos.
+  function coleccion(d, leidos) {
+    const L = new Set(leidos || []), out = new Set();
+    pasajes(d).forEach(p => { if (L.has(p.id)) personasDePasaje(d, p).forEach(id => out.add(id)); });
+    return out;
+  }
+  // Las que entran al marcar `pasajeId` como leído, dado lo ya leído.
+  function nuevasAlLeer(d, leidos, pasajeId) {
+    const p = pasajes(d).find(x => x.id === pasajeId); if (!p) return [];
+    const antes = coleccion(d, [].concat(leidos || []).filter(x => x !== pasajeId));
+    return personasDePasaje(d, p).filter(id => !antes.has(id));
+  }
+  const libroDeClave = k => idPorOrd.get(Math.floor(k / 1e6));
+  // Fichas de la colección: sin desbloquear solo se da el capítulo de la primera aparición.
+  function fichasColeccion(d, leidos) {
+    const obt = coleccion(d, leidos), I = indice(d), V = versosPersona(d);
+    return coleccionables(d).map(id => {
+      const k = I.primera.get(id), p = I.personas.get(id) || {};
+      return { id, desbloqueada: obt.has(id), primera: refDeClave(k), primeraCap: `${libroDeClave(k)} ${Math.floor(k / 1000) % 1000}`,
+        libros: unicos((V.get(id) || []).map(libroDeClave)), sexo: p.sexo === 'f' || p.sexo === 'm' ? p.sexo : '?', rareza: rareza(d, id) };
+    });
+  }
+  // Pasajes en que aparece una persona, con cuántos versículos suyos tiene cada uno.
+  function pasajesDePersona(d, id) {
+    const ks = versosPersona(d).get(id) || [];
+    return pasajes(d).map(p => { const a = clave(p.inicio), b = clave(p.fin); return { pasaje: p, versiculos: ks.filter(k => k >= a && k <= b).length }; }).filter(x => x.versiculos);
+  }
+  // Lugares nombrados en los mismos versículos que la persona (coincidencia en el texto, no un vínculo afirmado).
+  function lugaresDePersona(d, id, max) {
+    const I = indice(d), cuenta = new Map();
+    (versosPersona(d).get(id) || []).forEach(k => (I.lugaresPorRef.get(k) || []).forEach(l => { if (I.lugares.has(l)) cuenta.set(l, (cuenta.get(l) || 0) + 1); }));
+    return [...cuenta.entries()].sort((a, b) => b[1] - a[1]).slice(0, max || 12).map(([lugar, veces]) => ({ lugar, veces }));
+  }
+  // Descendientes con su número de generaciones y el camino desde `id`.
+  function descendientes(d, id) {
+    return memo(d || {}, 'desc|' + id, () => {
+      const I = indice(d), m = new Map(), cola = [[id, 0, [id]]];
+      while (cola.length) {
+        const [x, g, cam] = cola.shift();
+        (I.hijos.get(x) || []).forEach(r => { if (r.a !== id && !m.has(r.a)) { m.set(r.a, { gen: g + 1, camino: cam.concat(r.a) }); cola.push([r.a, g + 1, cam.concat(r.a)]); } });
+      }
+      return m;
+    });
+  }
+  const tradDeCombo = (d, combo) => { const C = crono(d), c = C && C.combinaciones.find(x => x.id === combo); return (c && c.tradicion) || String(combo || '').split('|')[0] || 'TM'; };
+  // Curiosidades (CÁLCULO) para una combinación de tradición y supuestos. Cada una: {id, tipo, personas,
+  // protagonistas, texto, valor, pasos [{texto, ref}], refs}. Solo salen de los datos; nada se redacta a mano.
+  function curiosidades(d, combo) {
+    return memo(d || {}, 'curio|' + combo, () => {
+      const C = crono(d); if (!C) return [];
+      const I = indice(d), m = vidasCrono(d, combo), trad = tradDeCombo(d, combo), out = [];
+      const nom = id => (I.personas.get(id) || {}).nombre || id;
+      const ev = id => C.porId.get(id) || {};
+      const completas = [...m.values()].filter(x => x.nacimiento !== null && x.muerte !== null);
+      const pNac = x => ({ texto: `${nom(x.persona)} nace en el año ${x.nacimiento}`, ref: ev(x.evNac).ref || '' });
+      const pMuerte = x => ({ texto: `${nom(x.persona)} muere en el año ${x.muerte}`, ref: ev(x.evMuerte).ref || '' });
+      const refsDe = pasos => unicos(pasos.map(p => p.ref).filter(r => clave(r) !== null));
+      const an = n => `${n} ${n === 1 ? 'año' : 'años'}`;
+      const lp = lineaPrincipal(d), enLinea = completas.filter(x => lp.has(x.persona));
+      // 1. Vidas a la vez: con quien nace más tarde de la línea principal y aún coincide (no hijos ni nietos).
+      enLinea.forEach(x => {
+        const D = descendientes(d, x.persona);
+        const y = enLinea.filter(y => y.nacimiento > x.nacimiento && Math.min(x.muerte, y.muerte) - y.nacimiento > 0 && !((D.get(y.persona) || {}).gen <= 2))
+          .sort((a, b) => b.nacimiento - a.nacimiento)[0];
+        if (!y) return;
+        const fin = Math.min(x.muerte, y.muerte), n = fin - y.nacimiento;
+        const pasos = [pNac(x), pMuerte(x), pNac(y), pMuerte(y), { texto: `A la vez: desde ${y.nacimiento} hasta ${fin} = ${an(n)}`, ref: '' }];
+        out.push({ id: `solape|${x.persona}|${y.persona}`, tipo: 'solape', personas: [x.persona, y.persona], protagonistas: [x.persona, y.persona], valor: n,
+          texto: `${nom(x.persona)} y ${nom(y.persona)} vivieron a la vez ${an(n)}`, pasos, refs: refsDe(pasos) });
+      });
+      // 2. Muere el mismo año que un suceso fechado en el que no participa.
+      completas.forEach(x => {
+        C.eventos.filter(e => e.tipo !== 'nacimiento' && e.tipo !== 'muerte' && !(e.personas || []).includes(x.persona) && anioEvento(d, e.id, combo) === x.muerte).forEach(e => {
+          const pasos = [pNac(x)].concat((ev(x.evMuerte).pasos || []).map(s => ({ texto: s.texto, ref: s.ref || '' })), [pMuerte(x), { texto: `«${e.titulo || e.id}»: año ${x.muerte}`, ref: e.ref || '' }]);
+          out.push({ id: `muerte-evento|${x.persona}|${e.id}`, tipo: 'muerte-evento', personas: [x.persona], protagonistas: [x.persona], valor: x.muerte,
+            texto: `${nom(x.persona)} muere en el año ${x.muerte}, el mismo año que «${e.titulo || e.id}»`, pasos, refs: refsDe(pasos) });
+        });
+      });
+      // 3. El más longevo de quienes tienen edad total en un mismo capítulo (una genealogía), sin empate.
+      const grupos = new Map();
+      coleccionables(d).forEach(id => {
+        const e = edad(d, id, 'total', trad), r = e && parseRef(e.ref);
+        if (!e || !r) return;
+        const g = `${r.libro} ${r.cap}`;
+        if (!grupos.has(g)) grupos.set(g, []);
+        grupos.get(g).push({ id, valor: e.valor, ref: e.ref, derivado: e.derivado });
+      });
+      grupos.forEach((xs, g) => {
+        if (xs.length < 3) return;
+        const max = Math.max(...xs.map(x => x.valor)), top = xs.filter(x => x.valor === max);
+        if (top.length !== 1) return;
+        const pasos = xs.slice().sort((a, b) => b.valor - a.valor).map(x => ({ texto: `${nom(x.id)}: ${x.valor} años${x.derivado ? ' (suma de sus dos edades)' : ''}`, ref: x.ref }));
+        out.push({ id: `longevo|${g}|${top[0].id}`, tipo: 'longevo', personas: xs.map(x => x.id), protagonistas: [top[0].id], valor: max,
+          texto: `${nom(top[0].id)} es quien más vive de los ${xs.length} cuya edad total da ${g} (${trad}): ${max} años`, pasos, refs: refsDe(pasos) });
+      });
+      // 4. Sobrevive a descendientes suyos (con vida completa en el cálculo).
+      completas.forEach(x => {
+        const D = descendientes(d, x.persona);
+        const ys = completas.filter(y => D.has(y.persona) && y.muerte < x.muerte)
+          .sort((a, b) => D.get(b.persona).gen - D.get(a.persona).gen || lp.has(b.persona) - lp.has(a.persona) || b.nacimiento - a.nacimiento);
+        if (!ys.length) return;
+        const y = ys[0], cam = D.get(y.persona).camino.map(nom).join(' → ');
+        const pasos = [pMuerte(x)].concat(ys.slice().sort((a, b) => a.muerte - b.muerte).map(pMuerte), [{ texto: `Descendencia: ${cam} (${D.get(y.persona).gen} generaciones)`, ref: '' }]);
+        out.push({ id: `sobrevive|${x.persona}`, tipo: 'sobrevive', personas: [x.persona].concat(ys.map(z => z.persona)), protagonistas: [x.persona, y.persona], valor: ys.length,
+          texto: `${nom(x.persona)} sobrevive a ${ys.length === 1 ? `su descendiente ${nom(y.persona)}` : `${ys.length} de sus descendientes, entre ellos ${nom(y.persona)}`}: ${nom(y.persona)} muere en el año ${y.muerte} y ${nom(x.persona)} en el ${x.muerte}`,
+          pasos, refs: refsDe(pasos) });
+      });
+      return out;
+    });
+  }
+  // De una persona: primero aquellas de las que es protagonista principal, luego por tipo.
+  const curiosidadesDe = (d, id, combo) => curiosidades(d, combo).filter(c => c.personas.includes(id)).map((c, i) => ({ c, i,
+    k: (c.protagonistas[0] === id ? 0 : c.protagonistas.includes(id) ? 10 : 20) + PRIO_CURIO[c.tipo] }))
+    .sort((a, b) => a.k - b.k || a.i - b.i).map(x => x.c);
+  // «¿Sabías que…?» por pasaje (máx. `max`): alguno de sus protagonistas aparece en el pasaje y todos ya han
+  // aparecido; primero las que tienen un versículo en el pasaje y las aún no mostradas; nunca la misma que en el pasaje anterior.
+  const PRIO_CURIO = { 'muerte-evento': 0, longevo: 1, sobrevive: 2, solape: 3 };
+  function sabiasQue(d, combo, max) {
+    return memo(d || {}, 'sabias|' + combo + '|' + (max || 2), () => {
+      const cs = curiosidades(d, combo), I = indice(d), res = new Map(), vistas = new Set();
+      let prev = new Set();
+      pasajes(d).forEach(p => {
+        const a = clave(p.inicio), b = clave(p.fin), aqui = new Set(personasDePasaje(d, p));
+        const elegidas = cs.filter(c => !prev.has(c.id) && c.protagonistas.some(id => aqui.has(id)) && c.protagonistas.every(id => (I.primera.get(id) || Infinity) <= b))
+          .map(c => ({ c, s: (c.refs.some(r => { const k = clave(r); return k >= a && k <= b; }) ? 2 : 0) + (vistas.has(c.id) ? 0 : 1) }))
+          .filter(x => x.s > 0).sort((x, y) => y.s - x.s || PRIO_CURIO[x.c.tipo] - PRIO_CURIO[y.c.tipo]).slice(0, max || 2).map(x => x.c);
+        elegidas.forEach(c => vistas.add(c.id));
+        res.set(p.id, elegidas);
+        prev = new Set(elegidas.map(c => c.id));
+      });
+      return res;
+    });
+  }
+  // Enlaces para profundizar (FUENTE EXTERNA): búsquedas estables; no se copia su contenido.
+  function enlacesExternos(d, id) {
+    const p = persona(d, id); if (!p || p.sin_nombre) return [];
+    const en = String(id).replace(/_\d+$/, '').replace(/_/g, ' '), letra = norm(en).charAt(0);
+    return [
+      { id: 'wikipedia', titulo: 'Wikipedia en español', detalle: `búsqueda «${p.nombre} personaje bíblico»`, url: 'https://es.wikipedia.org/w/index.php?search=' + encodeURIComponent(`${p.nombre} personaje bíblico`) },
+      { id: 'easton', titulo: "Easton's Bible Dictionary (1897, dominio público)", detalle: `en inglés, vía Wikisource; búsqueda «${en}»`, url: 'https://en.wikisource.org/w/index.php?search=' + encodeURIComponent(en) + '&prefix=' + encodeURIComponent("Easton's Bible Dictionary (1897)/") },
+      { id: 'smith', titulo: "Smith's Bible Dictionary (dominio público)", detalle: `en inglés, vía Bible Study Tools; índice de la letra ${letra.toUpperCase()}`, url: 'https://www.biblestudytools.com/dictionaries/smiths-bible-dictionary/?letter=' + encodeURIComponent(letra) }
+    ].filter(x => letra || x.id !== 'smith');
+  }
+
   return { TRADS, TIPOS, norm, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+    coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona, lugaresDePersona, descendientes,
+    curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
     vecinosFechados, despuesDe, contemporaneos, compararEvento, esDiluvio, lineaDeTiempo, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
     acompanante, tieneApoyo, quienAparece, primerasApariciones, miniArbol, anoDiluvio, seccionesPlan, alcance, nombresDe,
     lugar, lugaresDeRefs, lugaresDePasaje, confianzaLugar, proyeccion, proyectar, desproyectar, encuadre, colocarEtiquetas, etiquetasPorZoom, prioridadLugar,
@@ -886,7 +1061,7 @@ if (typeof document !== 'undefined') (function () {
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
   const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, focoHash: undefined, aviso: '',
     mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map(),
-    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1 };
+    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1, colLibro: '', colSexo: '' };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   // Enlace a un versículo: #leer/Ex/7/7 (los enlaces antiguos #leer/7/7 se leen como Génesis).
@@ -1100,6 +1275,13 @@ if (typeof document !== 'undefined') (function () {
         <div class="mini-gen">${m.hijos.slice(0, 5).map(btnPersona).join('') || '<span class="meta">Sin hijos registrados</span>'}${mas > 0 ? `<span class="meta">y ${mas} más</span>` : ''}</div>
         <a class="enlace-arbol" href="#arbol/${encodeURIComponent(id)}">Ver a ${esc(nombre(id))} en el árbol completo</a></div>`;
     }).join(''), I('M10 3v5M10 8H5v4M10 8h5v4M10 8v9'));
+    // «¿Sabías que…?» (cálculo) del pasaje: como mucho dos, elegidas en el núcleo sin repetir las del pasaje anterior.
+    if (N.crono(D) && !estado.activo) {
+      const tr = tradSimple(), cs = N.sabiasQue(D, comboDe(tr)).get(p.id) || [];
+      if (cs.length) html += `<section class="acomp-sec sabias"><h3>${I('M10 3.5a4.5 4.5 0 00-2.6 8.2c.5.4.8 1 .8 1.6v.7h3.6v-.7c0-.6.3-1.2.8-1.6A4.5 4.5 0 0010 3.5zM8.3 16.5h3.4')}¿Sabías que…?</h3>
+        <ul class="sabias-lista">${cs.map(c => `<li><p>${esc(c.texto)}.</p><span class="sabias-pie">${insignia('calculo')}<button type="button" class="enlace-boton" data-curio="${esc(c.id)}">Ver el cálculo</button></span></li>`).join('')}</ul>
+        <p class="meta">${tr}, con los supuestos elegidos en Tiempo.</p></section>`;
+    }
     if (!html) html = `<p class="vacio-txt">${estado.activo ? 'Este versículo no tiene personas, vínculos ni edades en los datos. Pulsa otro número o vuelve a todo el pasaje.' : 'Este pasaje no tiene personas, vínculos ni edades en los datos.'}</p>`;
     return `<div class="acomp-cab">
         <button type="button" class="acomp-asa" data-hoja aria-expanded="${!!estado.hoja}" aria-controls="acomp-cuerpo">
@@ -1598,9 +1780,14 @@ if (typeof document !== 'undefined') (function () {
     const edades = (tieneEdades ? `<table class="edades mini"><thead><tr><th scope="col"></th><th scope="col">TM</th><th scope="col">LXX</th></tr></thead><tbody>${N.TIPOS.map(t => `<tr><th scope="row">${TIPO_TXT[t]}</th>${N.TRADS.map(tr => celda(id, t, tr, dif[t])).join('')}</tr>`).join('')}</tbody></table>` : '')
       + (evs.length ? `<ul class="edades-acomp">${evs.map(eventoHTML).join('')}</ul>` : '') || '<p class="meta">Sin edades registradas.</p>';
     // En el tiempo: nacimiento y muerte en años desde Adán (cálculo) con la combinación elegida en Tiempo.
-    let tiempo = '';
+    let tiempo = '', curios = '';
     if (N.crono(D)) {
       const tr = tradSimple(), combo = comboDe(tr), x = N.vidasCrono(D, combo).get(id);
+      const cs = N.curiosidadesDe(D, id, combo);
+      const liC = c => `<li class="curio"><p>${esc(c.texto)}.</p><details class="plegable"><summary>Pasos y versículos</summary>${pasosCurio(c)}</details></li>`;
+      if (cs.length) curios = `<h3>Curiosidades ${insignia('calculo')}</h3><ul class="curios">${cs.slice(0, 3).map(liC).join('')}</ul>
+        ${cs.length > 3 ? `<details class="plegable"><summary>Ver ${cs.length - 3} más</summary><ul class="curios">${cs.slice(3).map(liC).join('')}</ul></details>` : ''}
+        <p class="meta">Calculadas por esta app con ${esc(TRAD_TXT[tr])} y los supuestos elegidos en Tiempo; los años son «años desde la creación de Adán».</p>`;
       if (x && (x.nacimiento !== null || x.muerte !== null)) {
         const cel = (a, ev) => a === null ? '<span class="meta">sin dato</span>' : `<button type="button" class="celda-acomp" data-ev="${esc(ev)}"><strong>${a}</strong></button>`;
         const cont = N.contemporaneos(D, id, combo, 8);
@@ -1611,18 +1798,36 @@ if (typeof document !== 'undefined') (function () {
       }
     }
     const refs = [...new Set([].concat(p.primera_ref ? [p.primera_ref] : [], p.refs || []))];
+    // Grafía de la RV1909 si difiere del nombre mostrado.
+    const formas = [...new Set([].concat(p.formas_rv1909 || [], p.nombre_rv1909 || []).filter(Boolean))];
+    const grafia = formas.some(f => N.norm(f) !== N.norm(p.nombre)) ? formas.join(', ') : '';
+    const notaGrafia = grafia && /^En la Reina-Valera 1909:/.test(p.nota || '');
+    const k1 = N.indice(D).primera.get(id), primera = k1 ? N.refDeClave(k1) : p.primera_ref;
+    const enCol = !p.sin_nombre && N.coleccion(D, [...pasajesLeidos()]).has(id), rz = N.rareza(D, id);
+    const pas = N.pasajesDePersona(D, id);
+    const pasLi = x => `<li><a href="#leer/p/${esc(x.pasaje.id)}"><span class="pp-rango">${rango(x.pasaje)}</span><span class="pp-titulo">${esc(x.pasaje.titulo)}</span></a><span class="meta">${x.versiculos} ${x.versiculos === 1 ? 'versículo' : 'versículos'}</span></li>`;
+    const lugs = N.lugaresDePersona(D, id, 10), ext = N.enlacesExternos(D, id);
     fichaDlg.querySelector('h2').textContent = p.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
-      ${p.rol ? `<p class="rol">${esc(p.rol)}</p>` : ''}
-      <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${p.primera_ref ? ' · aparece en ' + refHTML(p.primera_ref) : ''} ${etiquetaTrad(id)}</p>
-      <p class="acciones-ficha">${(r => r ? `<a class="boton" href="${hrefRef(N.parseRef(r))}">Leer donde aparece</a>` : '')([p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
+      <div class="ficha-cab">${retratoHTML(p)}<div class="ficha-datos">
+        ${p.rol ? `<p class="rol">${esc(p.rol)}</p>` : ''}
+        ${grafia ? `<p class="grafia">En la Reina-Valera 1909: <strong>${esc(grafia)}</strong></p>` : ''}
+        <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${primera ? ' · primera aparición: ' + refHTML(primera) : ''} ${etiquetaTrad(id)}</p>
+        ${p.sin_nombre ? '' : `<p class="ficha-estado${enCol ? ' en-col' : ''}">${enCol ? 'En tu colección' : 'Aún no está en tu colección'} · <span class="rareza-muestra r-${rz.id}">${esc(rz.nombre)}</span> <span class="meta">${rz.versiculos} ${rz.versiculos === 1 ? 'versículo' : 'versículos'}</span></p>`}
+      </div></div>
+      <p class="acciones-ficha">${(r => r ? `<a class="boton" href="${hrefRef(N.parseRef(r))}">Leer donde aparece</a>` : '')([primera, p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
         ${N.enPantallaArbol(D, id) ? `<a class="boton secundario" href="#arbol/${encodeURIComponent(id)}">Ver en el árbol</a>` : ''}</p>
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
       <h3>Hijos</h3>${lista(hijos, 'No constan.')}
-      <h3>Edades</h3>${edades}${tiempo}
-      ${p.nota ? `<h3>Notas</h3><p class="nota">${esc(p.nota)}</p>` : ''}
-      <h3>Versículos</h3>${refs.length ? `<ul class="refs">${refs.map(r => `<li>${refHTML(r)}</li>`).join('')}</ul>` : '<p class="meta">Sin referencias.</p>'}`;
+      <h3>Edades</h3>${edades}${tiempo}${curios}
+      ${pas.length ? `<h3>Pasajes donde aparece (${pas.length})</h3><ul class="pasajes-persona">${pas.slice(0, 5).map(pasLi).join('')}</ul>
+        ${pas.length > 5 ? `<details class="plegable"><summary>Ver los otros ${pas.length - 5}</summary><ul class="pasajes-persona">${pas.slice(5).map(pasLi).join('')}</ul></details>` : ''}` : ''}
+      ${lugs.length ? `<h3>Lugares</h3><p class="meta">Nombrados en los mismos versículos que ${esc(p.nombre || id)}: coincidencia en el texto, no un vínculo afirmado.</p><ul class="chips">${lugs.map(x => `<li>${btnLugar(x.lugar)}</li>`).join('')}</ul>` : ''}
+      ${p.nota && !notaGrafia ? `<h3>Notas</h3><p class="nota">${esc(p.nota)}</p>` : ''}
+      ${refs.length ? `<details class="plegable"><summary>Versículos de los datos (${refs.length})</summary><ul class="refs">${refs.map(r => `<li>${refHTML(r)}</li>`).join('')}</ul></details>` : ''}
+      ${ext.length ? `<h3>Profundizar</h3><p class="meta">Enlaces a sitios ajenos a esta app (se abren aparte); su contenido no se copia aquí.</p>
+        <ul class="externos">${ext.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.titulo)}</a> <span class="etiqueta externa">Fuente externa</span><span class="meta">${esc(x.detalle)}</span></li>`).join('')}</ul>` : ''}`;
     mostrar(fichaDlg);
     fichaDlg.querySelector('.dialogo-cuerpo').scrollTop = 0;
   }
@@ -1853,9 +2058,81 @@ if (typeof document !== 'undefined') (function () {
     return r.length ? r.map(l => `<li>${btnLugar(l.id)}</li>`).join('') : '<li class="meta">Sin resultados.</li>';
   }
 
+  /* ---------- Personajes: colección, ficha y curiosidades ---------- */
+  const SILUETA = '<svg class="silueta" viewBox="0 0 40 48" aria-hidden="true"><circle cx="20" cy="15" r="8.5"/><path d="M4 47c0-10.5 7-18 16-18s16 7.5 16 18z"/></svg>';
+  const inicial = id => Array.from(String(nombre(id)))[0] || '?';
+  // Hueco para el retrato: si algún día lo hay, siempre rotulado (Arte con autor y fecha, o Ilustración moderna).
+  function retratoHTML(p) {
+    const r = p && p.retrato;
+    if (r && r.url && (r.tipo === 'arte' || r.tipo === 'ilustracion'))
+      return `<figure class="retrato"><img src="${esc(r.url)}" alt="${esc(r.alt || 'Retrato de ' + (p.nombre || ''))}" loading="lazy">
+        <figcaption><span class="etiqueta img-${r.tipo}">${r.tipo === 'arte' ? 'Arte' : 'Ilustración moderna'}</span> ${esc([r.autor, r.fecha].filter(Boolean).join(', '))}</figcaption></figure>`;
+    return `<figure class="retrato vacio" title="Si se añade un retrato, irá rotulado como Arte (artista y fecha) o Ilustración moderna">${SILUETA}<figcaption>Sin retrato</figcaption></figure>`;
+  }
+  const pasosCurio = c => `<ol class="pasos-curio">${c.pasos.map(s => `<li>${esc(s.texto)}${s.ref ? ` · ${refHTML(s.ref)}` : ''}</li>`).join('')}</ol>`;
+  function detalleCurio(id) {
+    const tr = tradSimple(), c = N.curiosidades(D, comboDe(tr)).find(x => x.id === id); if (!c) return;
+    abrirDetalle('¿Sabías que…?', `<p>${insignia('calculo')}</p><p class="curio-txt">${esc(c.texto)}.</p><h3>Pasos</h3>${pasosCurio(c)}
+      <p class="meta">Cálculo de esta app con ${esc(TRAD_TXT[tr])} y los supuestos elegidos en Tiempo (años desde la creación de Adán). No es texto bíblico.</p>
+      <ul class="chips">${c.protagonistas.map(x => `<li>${btnPersona(x)}</li>`).join('')}</ul>`);
+  }
+  const rangoRareza = r => r.max === Infinity ? `${r.min} o más versículos` : r.min === r.max ? `${r.min} versículo` : `${r.min}–${r.max} versículos`;
+  function fichaColHTML(f) {
+    if (!f.desbloqueada) return `<li class="ficha-col bloqueada"><span class="ficha-retrato">${SILUETA}</span><span class="ficha-nombre"><span aria-hidden="true">Sin descubrir</span><span class="sr">Personaje sin descubrir,</span></span><span class="ficha-pie">Aparece en ${esc(f.primeraCap).replace(' ', '&nbsp;')}</span></li>`;
+    return `<li><button type="button" class="ficha-col r-${f.rareza.id}${f.sexo === 'f' ? ' mujer' : ''}" data-persona="${esc(f.id)}">
+      <span class="ficha-retrato"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(f.id))}</span></span>
+      <span class="ficha-nombre">${esc(nombre(f.id))}</span><span class="rareza-muestra r-${f.rareza.id}">${esc(f.rareza.nombre)}</span>
+      <span class="ficha-pie">${esc(f.primera)}</span></button></li>`;
+  }
+  function vistaPersonajes() {
+    const F = N.fichasColeccion(D, [...pasajesLeidos()]), obt = F.filter(f => f.desbloqueada).length;
+    const LB = N.libros(D).filter(l => F.some(f => f.libros.includes(l.id)));
+    const lib = LB.some(l => l.id === estado.colLibro) ? estado.colLibro : '';
+    const sx = estado.colSexo === 'f' || estado.colSexo === 'm' ? estado.colSexo : '';
+    const enLibro = F.filter(f => !lib || f.libros.includes(lib)), obtL = enLibro.filter(f => f.desbloqueada).length;
+    const vis = enLibro.filter(f => !sx || (f.desbloqueada && f.sexo === sx));
+    const sinDesc = sx ? enLibro.filter(f => !f.desbloqueada).length : 0;
+    const seg = (leyenda, name, actual, ops) => `<fieldset class="segmentos"><legend>${leyenda}</legend>${ops.map(([v, t]) => `<label><input type="radio" name="${name}" value="${esc(v)}" ${actual === v ? 'checked' : ''}><span>${esc(t)}</span></label>`).join('')}</fieldset>`;
+    const nomLib = lib ? (LB.find(l => l.id === lib) || {}).nombre : '';
+    return `<h1 tabindex="-1">Personajes</h1>
+      <p class="sub">Cada persona con nombre entra en tu colección cuando marcas como leído un pasaje donde aparece. Ábrela para ver su ficha.</p>
+      <div class="colec-resumen"><p class="colec-cuenta"><strong>${obt}</strong> de ${F.length}</p>
+        <progress max="${F.length || 1}" value="${obt}" aria-label="Personajes obtenidos"></progress>
+        ${lib ? `<p class="meta">En ${esc(nomLib)}: ${obtL} de ${enLibro.length}</p>` : ''}</div>
+      <div class="colec-filtros">${LB.length > 1 ? seg('Libro', 'col-libro', lib, [['', 'Todos']].concat(LB.map(l => [l.id, l.nombre]))) : ''}
+        ${seg('Mostrar', 'col-sexo', sx, [['', 'Todos'], ['f', 'Mujeres'], ['m', 'Hombres']])}</div>
+      <details class="plegable"><summary>Qué significa la rareza</summary>
+        <p class="meta">Sale solo de los datos: en cuántos versículos de ${esc(N.alcance(D).texto)} aparece la persona. No mide su importancia.</p>
+        <ul class="rarezas">${N.RAREZAS.map(r => `<li><span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span> ${rangoRareza(r)} <span class="meta">· ${F.filter(f => f.rareza.id === r.id).length} personas</span></li>`).join('')}</ul></details>
+      ${obt ? '' : `<p class="colec-vacia">Todavía no tienes fichas. <a href="#leer">Empieza a leer</a> y marca un pasaje como leído.</p>`}
+      ${sx && sinDesc ? `<p class="meta">Las ${sinDesc} fichas sin descubrir no se filtran por mujeres u hombres, para no adelantar nada.</p>` : ''}
+      ${vis.length ? `<ul class="fichas-col">${vis.map(fichaColHTML).join('')}</ul>` : '<p class="vacio-txt">Aún no tienes fichas con este filtro.</p>'}`;
+  }
+  // Aviso «Nuevo en tu colección» tras marcar un pasaje como leído. Muchas fichas: se resumen.
+  let tNuevas = 0;
+  const ocultarNuevas = () => { clearTimeout(tNuevas); const el = $('#nuevas'); if (el) { el.hidden = true; el.classList.remove('entra'); } };
+  const programarNuevas = () => { clearTimeout(tNuevas); tNuevas = setTimeout(ocultarNuevas, 9000); };
+  function mostrarNuevas(ids) {
+    const el = $('#nuevas'); if (!el || !ids.length) return;
+    const total = N.coleccionables(D).length, obt = N.coleccion(D, [...pasajesLeidos()]).size;
+    const vis = ids.length > 4 ? ids.slice(0, 3) : ids, resto = ids.length - vis.length;
+    el.innerHTML = `<div class="nuevas-cab"><p class="nuevas-titulo">Nuevo en tu colección<span class="nuevas-cuenta">${ids.length === 1 ? '1 personaje' : ids.length + ' personajes'} · llevas ${obt} de ${total}</span></p>
+        <button type="button" class="cerrar" data-cerrar-nuevas aria-label="Cerrar aviso"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+      <ul class="nuevas-fichas">${vis.map((id, i) => { const r = N.rareza(D, id); return `<li style="--i:${i}"><button type="button" class="nueva-ficha r-${r.id}" data-persona="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(id))}</span><span class="nueva-nombre">${esc(nombre(id))}</span><span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span></button></li>`; }).join('')}
+        ${resto ? `<li class="nuevas-resto" style="--i:${vis.length}">y ${resto} más</li>` : ''}</ul>
+      <a class="nuevas-ver" href="#personajes" data-cerrar-nuevas>Ver la colección</a>`;
+    el.hidden = false; el.classList.remove('entra'); void el.offsetWidth; el.classList.add('entra');
+    programarNuevas();
+  }
+  // Mientras se mira o se recorre con el teclado, el aviso no se cierra solo.
+  (el => { if (!el) return;
+    el.addEventListener('pointerenter', () => clearTimeout(tNuevas)); el.addEventListener('pointerleave', () => { if (!el.hidden) programarNuevas(); });
+    el.addEventListener('focusin', () => clearTimeout(tNuevas)); el.addEventListener('focusout', e => { if (!el.hidden && !el.contains(e.relatedTarget)) programarNuevas(); });
+  })($('#nuevas'));
+
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
-  const VISTAS = { leer: vistaLeer, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes };
+  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes };
   const PESTANA = { edades: 'tiempo' }; // rutas antiguas
   let primera = true;
   function render(foco) {
@@ -1893,10 +2170,12 @@ if (typeof document !== 'undefined') (function () {
   document.addEventListener('click', e => {
     const t = e.target;
     if (t instanceof HTMLDialogElement && t.open) { cerrar(t); return; }
+    const cn = t.closest('[data-cerrar-nuevas]'); if (cn) { ocultarNuevas(); if (cn.tagName !== 'A') return; }
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
+    const cu = t.closest('[data-curio]'); if (cu) { detalleCurio(cu.dataset.curio); return; }
     const ia = t.closest('[data-ir-arbol]'); if (ia) { irArbol(ia.dataset.irArbol); return; }
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
-    const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
+    const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); if (p.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
     const evb = t.closest('[data-ev]'); if (evb) { abrirEvento(evb.dataset.ev); return; }
     const ca = t.closest('[data-calc]'); if (ca) { const [trad, id] = ca.dataset.calc.split('|'); detalleCalc(trad, id); return; }
@@ -1906,7 +2185,13 @@ if (typeof document !== 'undefined') (function () {
     const at = t.closest('[data-atajo]'); if (at) { estado.lineaSolo = estado.lineaSolo === at.dataset.atajo ? false : at.dataset.atajo; estado.aviso = ''; rerender(`[data-atajo="${CSS.escape(at.dataset.atajo)}"]`); centrarLienzos(); return; }
     const ac = t.closest('[data-activar]'); if (ac) { activar(ac.dataset.activar); return; }
     if (t.closest('[data-hoja]')) { estado.hoja = !estado.hoja; const a = $('#acompanante'); if (a) { a.classList.toggle('abierta', estado.hoja); a.querySelector('[data-hoja]').setAttribute('aria-expanded', estado.hoja); } return; }
-    const ls = t.closest('[data-leido-seguir]'); if (ls) { const L = pasajesLeidos(); L.add(ls.dataset.leidoSeguir); store.set('biblia.pasajesLeidos', [...L]); const ps = N.pasajes(D), i = ps.findIndex(x => x.id === ls.dataset.leidoSeguir); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer'; return; }
+    const ls = t.closest('[data-leido-seguir]'); if (ls) {
+      const L = pasajesLeidos(), pid = ls.dataset.leidoSeguir, nuevas = L.has(pid) ? [] : N.nuevasAlLeer(D, [...L], pid);
+      L.add(pid); store.set('biblia.pasajesLeidos', [...L]);
+      const ps = N.pasajes(D), i = ps.findIndex(x => x.id === pid); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer';
+      if (nuevas.length) mostrarNuevas(nuevas);
+      return;
+    }
     const ve = t.closest('.vers'); if (ve && !t.closest('button, a')) { activar(ve.dataset.v); return; }
     if (t.closest('#btn-mujeres')) { estado.mujeres = !estado.mujeres; rerender('#btn-mujeres'); return; }
     if (t.closest('#btn-todo')) { estado.lineaSolo = false; rerender('[data-atajo]'); centrarLienzos(); return; }
@@ -1918,6 +2203,7 @@ if (typeof document !== 'undefined') (function () {
     if (t.id === 'f-ambito') { estado.mapaFiltro = t.value; rerender('#f-ambito'); }
     else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
     else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
+    else if (t.name === 'col-libro' || t.name === 'col-sexo') { estado[t.name === 'col-libro' ? 'colLibro' : 'colSexo'] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'trad') { estado.trad = t.value; store.set('biblia.trad', t.value); rerender(`input[name="trad"][value="${t.value}"]`); }
     else if (t.name === 'vista-arbol') { estado.vistaArbol = t.value; store.set('biblia.vistaArbol', t.value); rerender(`input[name="vista-arbol"][value="${t.value}"]`); if (estado.vistaArbol === 'grafico') centrarLienzos(); }
   });

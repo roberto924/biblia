@@ -500,6 +500,63 @@ if (existsSync(real)) {
     const dil = C.eventos.find(N2.esDiluvio);
     console.log(`     cronología: ${C.eventos.length} sucesos (${conAnio} con año en ${combos[0]}), ${C.supuestos.length} supuestos, ${C.hitos.length} hitos sin fecha; diluvio ${dil ? 'TM ' + N2.anioEvento(D2, dil.id, combos[0]) + ' / LXX ' + N2.anioEvento(D2, dil.id, combos[1]) : 'no encontrado'}; ${(performance.now() - t0).toFixed(0)} ms`);
   });
+  console.log('Personajes (colección y curiosidades, datos reales)');
+  prueba('desbloqueo: leer Gn 5 incluye a Set y Enós; lo ya obtenido no se repite', () => {
+    const gn5 = N2.pasajes(D2).filter(p => N2.parseRef(p.inicio).libro === 'Gn' && (N2.parseRef(p.inicio).cap === 5 || N2.parseRef(p.fin).cap === 5)).map(p => p.id);
+    assert.ok(gn5.length >= 1);
+    const col = N2.coleccion(D2, gn5);
+    assert.ok(col.has('Seth_1') && col.has('Enosh_1'), 'Set y Enós');
+    assert.ok(!col.has('Abram_1'), 'Abraham no aparece en Gn 5');
+    const nuevas = j(N2.nuevasAlLeer(D2, [], gn5[0]));
+    assert.ok(nuevas.includes('Seth_1') && nuevas.includes('Enosh_1'));
+    const p4 = N2.pasajeDe(D2, 'Gn 4:26').id;
+    assert.ok(!N2.nuevasAlLeer(D2, [p4], gn5[0]).includes('Enosh_1'), 'Enós ya se obtuvo en Gn 4');
+    const f = j(N2.fichasColeccion(D2, gn5));
+    assert.equal(f.length, N2.coleccionables(D2).length);
+    assert.ok(f.every(x => !N2.persona(D2, x.id).sin_nombre), 'las alusiones sin nombre no son fichas');
+    const set = f.find(x => x.id === 'Seth_1'); assert.equal(set.desbloqueada, true); assert.equal(set.primeraCap, 'Gn 4');
+    assert.equal(f.find(x => x.id === 'Abram_1').desbloqueada, false);
+    assert.equal(N2.rareza(D2, 'Abram_1').id, 'protagonista');
+    assert.ok(N2.pasajesDePersona(D2, 'Seth_1').some(x => x.pasaje.id === gn5[0]));
+    console.log(`     coleccionables ${f.length}; rareza: ${N2.RAREZAS.map(r => `${r.nombre} ${f.filter(x => x.rareza.id === r.id).length}`).join(', ')}`);
+  });
+  prueba('curiosidades (cálculo): Noé y Abraham 58 años; Matusalén muere en 1656 (TM, Taré 70)', () => {
+    const tm = N2.combinacion(D2, 'TM', { tare: 'tare70' }), cs = j(N2.curiosidades(D2, tm));
+    const sol = cs.find(c => c.id === 'solape|Noah_1|Abram_1');
+    assert.ok(sol, 'existe el solape Noé–Abraham'); assert.equal(sol.valor, 58);
+    assert.ok(sol.pasos.length >= 4 && sol.refs.length >= 2, 'con pasos y versículos');
+    const mat = cs.find(c => c.tipo === 'muerte-evento' && c.personas[0] === 'Methuselah_1');
+    assert.ok(mat && mat.valor === 1656 && /diluvio/i.test(mat.texto));
+    assert.equal(N2.vidasCrono(D2, tm).get('Methuselah_1').muerte, 1656);
+    assert.ok(cs.some(c => c.tipo === 'longevo' && c.protagonistas[0] === 'Methuselah_1' && c.valor === 969));
+    assert.ok(cs.some(c => c.tipo === 'sobrevive' && c.personas[0] === 'Shem_1' && c.personas.includes('Abram_1')), 'Sem sobrevive a Abraham');
+    // Con la LXX el diluvio y la muerte de Matusalén no coinciden: la curiosidad no aparece.
+    const lxx = j(N2.curiosidades(D2, N2.combinacion(D2, 'LXX', {})));
+    assert.ok(!lxx.some(c => c.tipo === 'muerte-evento' && c.personas[0] === 'Methuselah_1'));
+    assert.ok(N2.curiosidadesDe(D2, 'Noah_1', tm).some(c => c.id === 'solape|Noah_1|Abram_1'));
+  });
+  prueba('«¿Sabías que…?»: máx. 2 por pasaje, nunca la misma en pasajes seguidos', () => {
+    const tm = N2.combinacion(D2, 'TM', {}), S = N2.sabiasQue(D2, tm), ps = N2.pasajes(D2);
+    let prev = [];
+    ps.forEach(p => {
+      const ids = S.get(p.id).map(c => c.id);
+      assert.ok(ids.length <= 2);
+      assert.ok(!ids.some(id => prev.includes(id)), p.id);
+      prev = ids;
+    });
+    const gn12 = S.get(N2.pasajeDe(D2, 'Gn 5:27').id).map(c => c.tipo);
+    assert.ok(gn12.includes('muerte-evento'), 'Matusalén y el diluvio, donde muere');
+  });
+  prueba('profundizar: enlaces externos con búsqueda estable', () => {
+    const e = j(N2.enlacesExternos(D2, 'Methuselah_1'));
+    assert.deepEqual(e.map(x => x.id), ['wikipedia', 'easton', 'smith']);
+    assert.ok(e[0].url.startsWith('https://es.wikipedia.org/w/index.php?search=') && e[0].url.includes(encodeURIComponent('Matusalén personaje bíblico')));
+    assert.ok(e[1].url.includes('Methuselah') && e[1].url.includes('prefix='));
+    assert.ok(e[2].url.endsWith('?letter=m'));
+    // Tolerancia: datos vacíos no rompen las funciones de personajes.
+    assert.deepEqual(j(N2.curiosidades({}, 'TM')), []); assert.deepEqual(j(N2.fichasColeccion({}, [])), []);
+    assert.deepEqual(j(N2.nuevasAlLeer({}, [], 'x')), []); assert.equal(N2.sabiasQue({}, 'TM').size, 0);
+  });
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
