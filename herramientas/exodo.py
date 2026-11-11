@@ -7,12 +7,16 @@ Solo biblioteca estándar.
 """
 import json
 import re
+import sys
 from collections import Counter, defaultdict
 
 import lugares_mapa as lm
 import nombres_auto as na
 
 LIBRO = "Ex"
+NOMBRE = "Éxodo"
+USX = "EXO"  # código del libro en BibleData/OpenBible/VPL
+CAPITULOS = 40
 EXCLUIR = {"YHVH_1", "NA", "the angel of the LORD_1",
            "Amalek_1"}  # en Éxodo «Amalec» es el pueblo (va como lugar/pueblo de OpenBible), no el nieto de Esaú
 # Jacob: en Éxodo «Israel» casi siempre es el pueblo; solo se toman las filas de BibleData con la etiqueta «Jacob».
@@ -266,7 +270,13 @@ def parse_ex(s):
     return (int(m.group(1)), int(m.group(2)))
 
 
-ORDEN_LIBRO = {"Gn": 0, "Ex": 1}
+ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2}
+
+
+def parse_ref(s):
+    """«Lv 10:1» -> (10, 1), para cualquier libro."""
+    m = re.match(r"\w+ (\d+):(\d+)$", s)
+    return (int(m.group(1)), int(m.group(2)))
 
 
 def clave_ref(s):
@@ -286,9 +296,32 @@ def _numeral_regex(ES, EN):
             "en": re.compile(r"\b(?:(?:a|an)\s+)?%s(?:(?:\s+and\s+|\s+|-)%s)*(?:\s+years)?\b" % (n_en, n_en), re.I)}
 
 
-def construir(cx):
+def construir(cx, cfg=None):
     """cx: rv, br (Éxodo, {(c, v): texto}), rels, pv_filas, per, personas, relaciones, edades (de Génesis,
-    se amplían), sin_acentos, numeral, ES, EN, errores, avisos. Devuelve un dict con lo propio de Éxodo."""
+    se amplían), sin_acentos, numeral, ES, EN, errores, avisos. Devuelve un dict con lo propio del libro.
+    cfg: módulo con la configuración del libro (por defecto este, Éxodo; Levítico usa herramientas/levitico.py)."""
+    cfg = cfg or sys.modules[__name__]
+    L, NOMBRE, USX, CAPS = cfg.LIBRO, cfg.NOMBRE, cfg.USX, cfg.CAPITULOS
+    EXCLUIR = cfg.EXCLUIR
+    SOLO_ETIQUETA = cfg.SOLO_ETIQUETA
+    FORMA_NO_MENCION = cfg.FORMA_NO_MENCION
+    PV_DESCARTAR = cfg.PV_DESCARTAR
+    FORMAS_FORZADAS = cfg.FORMAS_FORZADAS
+    MODERNO = cfg.MODERNO
+    NOTAS = cfg.NOTAS
+    IDENTIDAD = cfg.IDENTIDAD
+    NOTAS_VERIFICAR = cfg.NOTAS_VERIFICAR
+    ROLES = cfg.ROLES
+    SIN_NOMBRE = cfg.SIN_NOMBRE
+    RELACIONES = cfg.RELACIONES
+    NOTAS_REL = cfg.NOTAS_REL
+    REPITE_GN = cfg.REPITE_GN
+    EDADES = cfg.EDADES
+    PASAJES = cfg.PASAJES
+    NOTAS_EXISTENTES = getattr(cfg, "NOTAS_EXISTENTES", {})  # nota que se añade a una persona ya existente
+    REFS_EXTRA = getattr(cfg, "REFS_EXTRA", {})  # refs que el texto da a una persona sin nombrarla
+    ex = lambda r: f"{L} {r[0]}:{r[1]}"  # noqa: E731
+    parse_ex = parse_ref
     rv, br, sa = cx["rv"], cx["br"], cx["sin_acentos"]
     errores, avisos, per = cx["errores"], cx["avisos"], cx["per"]
     personas, relaciones, edades = cx["personas"], cx["relaciones"], cx["edades"]
@@ -300,11 +333,11 @@ def construir(cx):
 
     # ------------------------------------------------ capítulos
     capitulos = []
-    for c in range(1, 41):
+    for c in range(1, CAPS + 1):
         vs = sorted(v for (cc, v) in rv if cc == c)
         if not vs or vs != list(range(1, len(vs) + 1)):
-            errores.append(f"Ex {c}: numeración de versículos no continua o vacía")
-        capitulos.append({"libro": LIBRO, "cap": c, "versiculos": [{"n": v, "texto": rv[(c, v)]} for v in vs]})
+            errores.append(f"{L} {c}: numeración de versículos no continua o vacía")
+        capitulos.append({"libro": L, "cap": c, "versiculos": [{"n": v, "texto": rv[(c, v)]} for v in vs]})
 
     # ------------------------------------------------ personas de BibleData en Éxodo
     valido = lambda p: re.match(r".+_\d+$", p) and p not in EXCLUIR
@@ -315,7 +348,7 @@ def construir(cx):
             continue
         ref = tuple(map(int, r["reference_id"][4:].split(":")))
         if (p, ref) in PV_DESCARTAR:
-            avisos.append(f"Éxodo: se descarta {p} en {ex(ref)}: {PV_DESCARTAR[(p, ref)]}")
+            avisos.append(f"{NOMBRE}: se descarta {p} en {ex(ref)}: {PV_DESCARTAR[(p, ref)]}")
             continue
         refs_pv[p].add(ref)
         try:
@@ -341,7 +374,7 @@ def construir(cx):
     cand, descartadas = {}, Counter()
     for r in cx["rels"]:
         refs = [x.strip() for x in r["reference_id"].split(",")]
-        exo = [x for x in refs if x.startswith("EXO ")]
+        exo = [x for x in refs if x.startswith(USX + " ")]
         if not exo:
             continue
         ref = tuple(map(int, exo[0][4:].split(":")))
@@ -401,7 +434,7 @@ def construir(cx):
     for de, a, tipo, ref, cita in REPITE_GN:
         g = next((x for x in relaciones if (x["de"], x["a"], x["tipo"]) == (de, a, tipo)), None)
         if not g:
-            errores.append(f"Falta en Génesis la relación {de}→{a} que repite {ex(ref)}")
+            errores.append(f"Falta en los libros anteriores la relación {de}→{a} que repite {ex(ref)}")
             continue
         if cita not in rv.get(ref, ""):
             errores.append(f"Cita no literal {ex(ref)}: {cita!r}")
@@ -454,6 +487,8 @@ def construir(cx):
         refs[e["persona"]].add(parse_ex(e["ref"]))
     for p, (_, rref, _) in ROLES.items():
         refs[p].add(rref)
+    for p, rs in REFS_EXTRA.items():
+        refs[p] |= set(rs)
     for trad, ref, frag in NOTAS_VERIFICAR:
         if frag not in textos[trad].get(ref, ""):
             errores.append(f"Nota sin base: «{frag}» no está en {ex(ref)} ({trad})")
@@ -469,8 +504,10 @@ def construir(cx):
             nuevas_f = [f for f in fs if f not in g["formas_rv1909"]]
             if nuevas_f and not g["sin_nombre"]:
                 g["formas_rv1909"] = fs
-                g["nota"] = (g["nota"] + " " + f"En Éxodo la RV1909 escribe también «{'/'.join(nuevas_f)}».").strip()
+                g["nota"] = (g["nota"] + " " + f"En {NOMBRE} la RV1909 escribe también «{'/'.join(nuevas_f)}».").strip()
             g["refs"] = sorted(set(g["refs"]) | {ex(r) for r in lista}, key=clave_ref)
+            if p in NOTAS_EXISTENTES and NOTAS_EXISTENTES[p] not in g["nota"]:
+                g["nota"] = (g["nota"] + " " + NOTAS_EXISTENTES[p]).strip()
             ampliadas.append(p)
             continue
         if p in sin_nombre:
@@ -482,14 +519,14 @@ def construir(cx):
             continue
         fs = formas_de(p)
         if not fs:
-            errores.append(f"Persona de Éxodo sin forma RV1909: {p}")
+            errores.append(f"Persona de {NOMBRE} sin forma RV1909: {p}")
             continue
         con_nombre = [r for r in lista if any(nombra(rv.get(r, ""), f) for f in fs)]
         if not con_nombre:
             fallos_nombre.append(f"{p} «{fs[0]}»")
         moderno = MODERNO.get(p)
         if not moderno:
-            errores.append(f"Persona de Éxodo sin grafía moderna: {p} ({fs[0]})")
+            errores.append(f"Persona de {NOMBRE} sin grafía moderna: {p} ({fs[0]})")
             moderno = fs[0]
         nota = NOTAS.get(p, "")
         if fs[0] != moderno:
@@ -508,7 +545,7 @@ def construir(cx):
     for x in rel_ex:
         for q in (x["de"], x["a"]):
             if q not in P:
-                errores.append(f"Relación de Éxodo a persona inexistente: {q}")
+                errores.append(f"Relación de {NOMBRE} a persona inexistente: {q}")
     relaciones.extend(rel_ex)
     # padres sin vínculo conyugal (Éxodo)
     conyuges = {tuple(sorted((x["de"], x["a"]))) for x in relaciones if x["tipo"] == "conyuge"}
@@ -520,11 +557,11 @@ def construir(cx):
         for pa in d["padre"]:
             for ma in d["madre"]:
                 if tuple(sorted((pa, ma))) not in conyuges:
-                    errores.append(f"Éxodo: padres sin vínculo conyugal: {pa} + {ma} → {hijo}")
+                    errores.append(f"{NOMBRE}: padres sin vínculo conyugal: {pa} + {ma} → {hijo}")
     con_rel = {q for x in relaciones for q in (x["de"], x["a"])}
     for p in nuevas:
         if p["id"] not in con_rel and not p["rol"]:
-            errores.append(f"Persona de Éxodo sin relación ni rol: {p['id']}")
+            errores.append(f"Persona de {NOMBRE} sin relación ni rol: {p['id']}")
 
     # ------------------------------------------------ pasajes
     orden = sorted(rv)
@@ -533,14 +570,14 @@ def construir(cx):
     for i, (ini, fin, titulo, resumen, seccion) in enumerate(PASAJES, 1):
         a, b = tuple(map(int, ini.split(":"))), tuple(map(int, fin.split(":")))
         if a not in pos or b not in pos or pos[a] != esperado or pos[b] < pos[a]:
-            errores.append(f"Pasaje Ex {ini}–{fin}: hueco, solape o desorden")
+            errores.append(f"Pasaje {L} {ini}–{fin}: hueco, solape o desorden")
         else:
             esperado = pos[b] + 1
-        pasajes.append({"id": f"ex-{i:02d}", "libro": LIBRO, "inicio": ex(a), "fin": ex(b), "titulo": titulo,
+        pasajes.append({"id": f"{L.lower()}-{i:02d}", "libro": L, "inicio": ex(a), "fin": ex(b), "titulo": titulo,
                         "titulo_origen": "editorial", "resumen": resumen, "seccion": seccion})
         tam.append(pos.get(b, 0) - pos.get(a, 0) + 1)
     if esperado != len(orden):
-        errores.append(f"Los pasajes de Éxodo no cubren hasta {ex(orden[-1])}")
+        errores.append(f"Los pasajes de {NOMBRE} no cubren hasta {ex(orden[-1])}")
 
     # ------------------------------------------------ menciones de personas
     por_forma = defaultdict(list)
@@ -548,7 +585,7 @@ def construir(cx):
         for f in p["formas_rv1909"]:
             if (p["id"], sa(f)) not in FORMA_NO_MENCION:
                 por_forma[sa(f)].append(p["id"])
-    sitio = {p["id"]: {r for r in p["refs"] if r.startswith("Ex ")} for p in personas}
+    sitio = {p["id"]: {r for r in p["refs"] if r.startswith(L + " ")} for p in personas}
     formas = sorted(por_forma, key=len, reverse=True)
     menciones, ambiguos, no_situados = [], [], Counter()
     for ref in orden:
@@ -578,12 +615,12 @@ def construir(cx):
         t = rv[parse_ex(x["ref"])]
         b = t.encode("utf-16-le")[2 * x["inicio"]:2 * x["fin"]].decode("utf-16-le")
         if sa(b) not in forma_de[x["persona"]]:
-            errores.append(f"Mención de Éxodo no coincide {x}: {b!r}")
+            errores.append(f"Mención de {NOMBRE} no coincide {x}: {b!r}")
     for p in nuevas:
         if not p["sin_nombre"] and not any(m["persona"] == p["id"] for m in menciones):
-            avisos.append(f"Persona de Éxodo sin menciones en el texto: {p['id']}")
+            avisos.append(f"Persona de {NOMBRE} sin menciones en el texto: {p['id']}")
     if fallos_nombre:
-        avisos.append("Éxodo, nombre no hallado en ninguna ref: " + ", ".join(fallos_nombre))
+        avisos.append(f"{NOMBRE}, nombre no hallado en ninguna ref: " + ", ".join(fallos_nombre))
 
     return {"capitulos": capitulos, "pasajes": pasajes, "menciones": menciones, "relaciones": rel_ex,
             "edades": ed_ex, "nuevas": nuevas, "ampliadas": ampliadas, "ambiguos": ambiguos,
@@ -591,14 +628,24 @@ def construir(cx):
 
 
 # ---------------------------------------------------------------- lugares
-def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos, sa):
-    """Amplía los lugares de Génesis con refs de Éxodo y añade los propios. Devuelve (nuevos, menciones, info)."""
+def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos, sa, cfg=None):
+    """Amplía los lugares de los libros anteriores con refs de este libro y añade los propios.
+    cfg: módulo del libro (por defecto Éxodo). Devuelve (nuevos, menciones, info)."""
+    cfg = cfg or sys.modules[__name__]
+    L, NOMBRE, USX, LUGARES = cfg.LIBRO, cfg.NOMBRE, cfg.USX, cfg.LUGARES
+    EXCLUIR_LUGAR = getattr(cfg, "EXCLUIR_LUGAR", {})  # obid -> motivo (aviso)
+    PRECEDIDO = getattr(cfg, "PRECEDIDO", {})  # obid -> texto que debe preceder al nombre
+    ex = lambda r: f"{L} {r[0]}:{r[1]}"  # noqa: E731
+    parse_ex = parse_ref
     anc = {}
     with open(rutas["ob_ancient"], encoding="utf-8") as f:
         for n, linea in enumerate(f, 1):
             d = json.loads(linea)
-            if any(v["usx"].startswith("EXO ") for v in d.get("verses", [])):
+            if any(v["usx"].startswith(USX + " ") for v in d.get("verses", [])):
                 anc[d["id"]] = (n, d)
+    for obid, motivo in EXCLUIR_LUGAR.items():
+        if anc.pop(obid, None):
+            avisos.append(f"{NOMBRE}: no se incluye el lugar de OpenBible {obid}: {motivo}")
     mod_ids = set()
     for _, d in anc.values():
         mod_ids |= set(d.get("modern_associations", {}))
@@ -614,7 +661,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
         if obid not in anc:
             errores.append(f"OpenBible no tiene {obid}"); continue
         _, d = anc[obid]
-        vs = sorted({tuple(map(int, v["usx"][4:].split(":"))) for v in d["verses"] if v["usx"].startswith("EXO ")})
+        vs = sorted({tuple(map(int, v["usx"][4:].split(":"))) for v in d["verses"] if v["usx"].startswith(USX + " ")})
         conf = LUGARES.get(obid)
         if conf and conf[2]:
             formas = conf[2]
@@ -644,6 +691,8 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
                 for m in pat.finditer(norm):
                     if not all(texto[m.start() + k].isupper() for k in mayus):
                         continue
+                    if obid in PRECEDIDO and not norm[:m.start()].endswith(sa(PRECEDIDO[obid])):
+                        continue
                     a, b = _u16(texto, m.start()), _u16(texto, m.end())
                     R = ex(r)
                     if any(a < f2 and i2 < b for i2, f2 in ocupado[R]):
@@ -657,7 +706,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
                 descartadas.append(f"{d['friendly_id']} {ex(r)}")
         if not refs:
             if conf:
-                errores.append(f"Lugar de Éxodo {conf[1]}: ningún versículo contiene «{'/'.join(formas)}»")
+                errores.append(f"Lugar de {NOMBRE} {conf[1]}: ningún versículo contiene «{'/'.join(formas)}»")
             else:
                 sin_forma.append(d["friendly_id"])
             continue
@@ -668,7 +717,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
             lid = l["id"]
         else:
             if not conf:
-                errores.append(f"Lugar de OpenBible en Éxodo sin configurar: {obid} {d['friendly_id']} «{formas[0]}»")
+                errores.append(f"Lugar de OpenBible en {NOMBRE} sin configurar: {obid} {d['friendly_id']} «{formas[0]}»")
                 continue
             lid, nombre, _, tipo, nota, baja = conf
             if lid in ids:
@@ -705,7 +754,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
         t = rv[parse_ex(m["ref"])]
         frag = t.encode("utf-16-le")[2 * m["inicio"]:2 * m["fin"]].decode("utf-16-le")
         if sa(frag) not in {sa(f) for f in todos[m["lugar"]]["formas_rv1909"]}:
-            errores.append(f"Mención de lugar (Éxodo) no coincide: {m} {frag!r}")
+            errores.append(f"Mención de lugar ({NOMBRE}) no coincide: {m} {frag!r}")
     return nuevos, menciones, {"sin_forma": sin_forma, "descartadas": descartadas}
 
 

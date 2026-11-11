@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Construye datos/biblia.js (Génesis 1–50 y Éxodo 1–40) a partir de fuentes abiertas.
+"""Construye datos/biblia.js (Génesis 1–50, Éxodo 1–40 y Levítico 1–27) a partir de fuentes abiertas.
 
 Uso:  python herramientas/construir_datos.py [--sin-red]
 
 - Descarga (con caché en herramientas/cache/) RV1909, Brenton (LXX inglesa) y BibleData.
-- Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py)
+- Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py; Levítico: herramientas/levitico.py)
 - Verifica citas, cifras, sumas, relaciones y nombres. Sale con código 1 si falla
   una verificación obligatoria (las sumas que no cuadran y los nombres no hallados
   se listan como advertencias).
@@ -29,12 +29,14 @@ import nombres_auto as na  # noqa: E402
 import cronologia as cr  # noqa: E402
 import genesis_12_50 as g2  # noqa: E402
 import exodo  # noqa: E402
+import levitico  # noqa: E402
 
 MAXCAP = 50
 RAIZ = Path(__file__).resolve().parent.parent
 CACHE = RAIZ / "herramientas" / "cache"
 SALIDA = RAIZ / "datos" / "biblia.js"
-LIBROS = [{"id": "Gn", "nombre": "Génesis", "capitulos": 50}, {"id": "Ex", "nombre": "Éxodo", "capitulos": 40}]
+LIBROS = [{"id": "Gn", "nombre": "Génesis", "capitulos": 50}, {"id": "Ex", "nombre": "Éxodo", "capitulos": 40},
+          {"id": "Lv", "nombre": "Levítico", "capitulos": 27}]
 
 BD = "https://raw.githubusercontent.com/BradyStephenson/bible-data/HEAD/"
 FUENTES = [
@@ -898,6 +900,17 @@ def main():
     pasajes += EXO["pasajes"]
     menciones_gn = menciones
     menciones = menciones + EXO["menciones"]
+
+    # ------------------------------------------------------------ Levítico 1–27 (herramientas/levitico.py)
+    rv_lv = leer_vpl(obtener("rv", sin_red), "LEV", 27)
+    br_lv = leer_vpl(obtener("br", sin_red), "LEV", 27)
+    pv_lv = [r for r in leer_csv(obtener("pv", sin_red)) if re.match(r"LEV \d+:\d+$", r["reference_id"].strip())]
+    LEV = levitico.construir(dict(rv=rv_lv, br=br_lv, rels=rels, pv_filas=pv_lv, per=per, personas=personas,
+                                  relaciones=relaciones, edades=edades, sin_acentos=sin_acentos,
+                                  numeral=numeral_a_numero, ES=ES, EN=EN, errores=errores, avisos=avisos))
+    capitulos += LEV["capitulos"]
+    pasajes += LEV["pasajes"]
+    menciones = menciones + LEV["menciones"]
     personas.sort(key=lambda p: (exodo.clave_ref(p["refs"][0]) if p["refs"] else (9, 0, 0), p["id"]))
     vistos_id = Counter(p["id"] for p in personas)
     errores.extend(f"Persona duplicada: {k}" for k, n in vistos_id.items() if n > 1)
@@ -906,12 +919,15 @@ def main():
 
     # ------------------------------------------------------------ cronología relativa
     nombre_de = {p["id"]: p["nombre"] for p in personas}
-    texto_ref = {"TM": {**{gn(k): v for k, v in rv.items()}, **{exodo.ex(k): v for k, v in rv_ex.items()}},
-                 "LXX": {**{gn(k): v for k, v in br.items()}, **{exodo.ex(k): v for k, v in br_ex.items()}}}
+    lv = lambda k: f"Lv {k[0]}:{k[1]}"  # noqa: E731
+    texto_ref = {"TM": {**{gn(k): v for k, v in rv.items()}, **{exodo.ex(k): v for k, v in rv_ex.items()},
+                        **{lv(k): v for k, v in rv_lv.items()}},
+                 "LXX": {**{gn(k): v for k, v in br.items()}, **{exodo.ex(k): v for k, v in br_ex.items()},
+                         **{lv(k): v for k, v in br_lv.items()}}}
     rango_pasaje = [(exodo.clave_ref(p["inicio"]), exodo.clave_ref(p["fin"]), p["id"]) for p in pasajes]
 
     def pasaje_de(ref):
-        if not ref or not re.match(r"(Gn|Ex) \d+:\d+", ref):
+        if not ref or not re.match(r"(Gn|Ex|Lv) \d+:\d+", ref):
             return None
         k = exodo.clave_ref(ref)
         return next((pid for a0, b0, pid in rango_pasaje if a0 <= k <= b0), None)
@@ -964,6 +980,10 @@ def main():
     lug_ex, men_lug_ex, info_lug_ex = exodo.construir_lugares(rv_ex, EXO["menciones"], rutas, lugares, errores, avisos, sin_acentos)
     lugares += lug_ex
     menciones_lugar += men_lug_ex
+    lug_lv, men_lug_lv, info_lug_lv = levitico.construir_lugares(rv_lv, LEV["menciones"], rutas, lugares, errores, avisos,
+                                                                sin_acentos)
+    lugares += lug_lv
+    menciones_lugar += men_lug_lv
     mapa = lm.construir_mapa(lugares, rutas)
     x0, y0, x1, y1 = mapa["bbox"]
     for l in lugares:
@@ -986,13 +1006,14 @@ def main():
              "relaciones": relaciones, "edades": edades, "pasajes": pasajes, "menciones": menciones,
              "lugares": lugares, "menciones_lugar": menciones_lugar, "cronologia": cronologia}
     hechos = exodo.comprobar(datos, errores)
+    hechos_lv = levitico.comprobar(datos, errores)
     for lb in LIBROS:
         n = sum(1 for c in capitulos if c["libro"] == lb["id"])
         if n != lb["capitulos"]:
             errores.append(f"{lb['id']}: {n} capítulos (se esperaban {lb['capitulos']})")
     ids_p = Counter(p["id"] for p in pasajes)
     errores.extend(f"Pasaje con id repetido: {k}" for k, n in ids_p.items() if n > 1)
-    errores.extend(f"Pasaje sin libro: {p['id']}" for p in pasajes if p.get("libro") not in ("Gn", "Ex"))
+    errores.extend(f"Pasaje sin libro: {p['id']}" for p in pasajes if p.get("libro") not in [lb["id"] for lb in LIBROS])
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text("window.BIBLIA_DATOS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n",
                       encoding="utf-8")
@@ -1121,6 +1142,17 @@ def main():
                                          ("ev-jacob-egipto", "ev-salida-egipto", "ev-nac-moises", "ev-nac-aaron", "ev-llegada-sinai", "ev-tabernaculo")))
     print("Hechos obligatorios:")
     for h in hechos:
+        print("  " + h)
+    print(f"Levítico: personas nuevas {[x['nombre'] for x in LEV['nuevas']]}; ampliadas {len(LEV['ampliadas'])}; "
+          f"pasajes {len(LEV['pasajes'])} (fuera de 8–20 versículos: "
+          f"{[x['id'] + ':' + str(n) for x, n in zip(LEV['pasajes'], LEV['tam_pasaje']) if not 8 <= n <= 20]}); "
+          f"secciones {dict(Counter(x['seccion'] for x in LEV['pasajes']))}")
+    print(f"Levítico: menciones ambiguas descartadas ({len(LEV['ambiguos'])}): {LEV['ambiguos'][:10]}; no situadas "
+          f"{dict(LEV['no_situados'].most_common(10))}; relaciones BibleData descartadas {LEV['descartadas']}")
+    print(f"Levítico: lugares nuevos {[x['id'] for x in lug_lv]}; OpenBible sin forma en RV1909 {info_lug_lv['sin_forma']}; "
+          f"versículos descartados {info_lug_lv['descartadas']}")
+    print("Hechos obligatorios de Levítico:")
+    for h in hechos_lv:
         print("  " + h)
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")

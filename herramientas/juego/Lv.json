@@ -1,0 +1,2703 @@
+{
+ "libro": "Lv",
+ "genealogias": [],
+ "historias": [
+  {
+   "id": "ofrendas",
+   "titulo": "Las leyes de las ofrendas",
+   "inicio": "Lv 1:1",
+   "fin": "Lv 7:38",
+   "principales": []
+  },
+  {
+   "id": "consagracion-y-nadab-abiu",
+   "titulo": "Consagración de Aarón y sus hijos; muerte de Nadab y Abiú",
+   "inicio": "Lv 8:1",
+   "fin": "Lv 10:20",
+   "principales": [
+    "Moses_1",
+    "Aaron_1",
+    "Nadab_1",
+    "Abihu_1",
+    "Eleazar_1",
+    "Ithamar_1"
+   ]
+  },
+  {
+   "id": "puro-e-impuro",
+   "titulo": "Animales limpios e inmundos, parto, lepra y flujos",
+   "inicio": "Lv 11:1",
+   "fin": "Lv 15:33",
+   "principales": []
+  },
+  {
+   "id": "dia-de-la-expiacion",
+   "titulo": "El día de la expiación",
+   "inicio": "Lv 16:1",
+   "fin": "Lv 16:34",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "santidad",
+   "titulo": "Santidad del pueblo y de los sacerdotes, fiestas y lámparas",
+   "inicio": "Lv 17:1",
+   "fin": "Lv 24:9",
+   "principales": []
+  },
+  {
+   "id": "el-blasfemo",
+   "titulo": "El blasfemo y su castigo",
+   "inicio": "Lv 24:10",
+   "fin": "Lv 24:23",
+   "principales": [
+    "Moses_1",
+    "Hijo_de_Selomit"
+   ]
+  },
+  {
+   "id": "sabatico-y-jubileo",
+   "titulo": "El año sabático y el jubileo",
+   "inicio": "Lv 25:1",
+   "fin": "Lv 25:55",
+   "principales": []
+  },
+  {
+   "id": "bendiciones-y-maldiciones",
+   "titulo": "Bendiciones y maldiciones",
+   "inicio": "Lv 26:1",
+   "fin": "Lv 26:46",
+   "principales": []
+  },
+  {
+   "id": "votos-y-diezmos",
+   "titulo": "Votos, primogénitos y diezmos",
+   "inicio": "Lv 27:1",
+   "fin": "Lv 27:34",
+   "principales": []
+  }
+ ],
+ "personajes": {
+  "Moses_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 1:1",
+     "fin": "Lv 1:1"
+    },
+    {
+     "inicio": "Lv 4:1",
+     "fin": "Lv 4:1"
+    },
+    {
+     "inicio": "Lv 5:14",
+     "fin": "Lv 5:14"
+    },
+    {
+     "inicio": "Lv 6:1",
+     "fin": "Lv 6:1"
+    },
+    {
+     "inicio": "Lv 6:8",
+     "fin": "Lv 6:8"
+    },
+    {
+     "inicio": "Lv 6:19",
+     "fin": "Lv 6:19"
+    },
+    {
+     "inicio": "Lv 6:24",
+     "fin": "Lv 6:24"
+    },
+    {
+     "inicio": "Lv 7:22",
+     "fin": "Lv 7:22"
+    },
+    {
+     "inicio": "Lv 7:28",
+     "fin": "Lv 7:28"
+    },
+    {
+     "inicio": "Lv 7:38",
+     "fin": "Lv 7:38"
+    },
+    {
+     "inicio": "Lv 8:1",
+     "fin": "Lv 9:24"
+    },
+    {
+     "inicio": "Lv 10:3",
+     "fin": "Lv 10:7"
+    },
+    {
+     "inicio": "Lv 10:12",
+     "fin": "Lv 10:20"
+    },
+    {
+     "inicio": "Lv 11:1",
+     "fin": "Lv 11:1"
+    },
+    {
+     "inicio": "Lv 12:1",
+     "fin": "Lv 12:1"
+    },
+    {
+     "inicio": "Lv 13:1",
+     "fin": "Lv 13:1"
+    },
+    {
+     "inicio": "Lv 14:1",
+     "fin": "Lv 14:1"
+    },
+    {
+     "inicio": "Lv 14:33",
+     "fin": "Lv 14:33"
+    },
+    {
+     "inicio": "Lv 15:1",
+     "fin": "Lv 15:1"
+    },
+    {
+     "inicio": "Lv 16:1",
+     "fin": "Lv 16:2"
+    },
+    {
+     "inicio": "Lv 16:34",
+     "fin": "Lv 16:34"
+    },
+    {
+     "inicio": "Lv 17:1",
+     "fin": "Lv 17:1"
+    },
+    {
+     "inicio": "Lv 18:1",
+     "fin": "Lv 18:1"
+    },
+    {
+     "inicio": "Lv 19:1",
+     "fin": "Lv 19:1"
+    },
+    {
+     "inicio": "Lv 20:1",
+     "fin": "Lv 20:1"
+    },
+    {
+     "inicio": "Lv 21:1",
+     "fin": "Lv 21:1"
+    },
+    {
+     "inicio": "Lv 21:16",
+     "fin": "Lv 21:16"
+    },
+    {
+     "inicio": "Lv 21:24",
+     "fin": "Lv 21:24"
+    },
+    {
+     "inicio": "Lv 22:1",
+     "fin": "Lv 22:1"
+    },
+    {
+     "inicio": "Lv 22:17",
+     "fin": "Lv 22:17"
+    },
+    {
+     "inicio": "Lv 22:26",
+     "fin": "Lv 22:26"
+    },
+    {
+     "inicio": "Lv 23:1",
+     "fin": "Lv 23:1"
+    },
+    {
+     "inicio": "Lv 23:9",
+     "fin": "Lv 23:9"
+    },
+    {
+     "inicio": "Lv 23:23",
+     "fin": "Lv 23:23"
+    },
+    {
+     "inicio": "Lv 23:26",
+     "fin": "Lv 23:26"
+    },
+    {
+     "inicio": "Lv 23:33",
+     "fin": "Lv 23:33"
+    },
+    {
+     "inicio": "Lv 23:44",
+     "fin": "Lv 23:44"
+    },
+    {
+     "inicio": "Lv 24:1",
+     "fin": "Lv 24:1"
+    },
+    {
+     "inicio": "Lv 24:11",
+     "fin": "Lv 24:11"
+    },
+    {
+     "inicio": "Lv 24:13",
+     "fin": "Lv 24:13"
+    },
+    {
+     "inicio": "Lv 24:23",
+     "fin": "Lv 24:23"
+    },
+    {
+     "inicio": "Lv 25:1",
+     "fin": "Lv 25:1"
+    },
+    {
+     "inicio": "Lv 26:46",
+     "fin": "Lv 26:46"
+    },
+    {
+     "inicio": "Lv 27:1",
+     "fin": "Lv 27:1"
+    },
+    {
+     "inicio": "Lv 27:34",
+     "fin": "Lv 27:34"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mediador de Levítico: Jehová le habla desde el tabernáculo y en el Sinaí, él consagra a Aarón y a sus hijos y dirige el castigo del blasfemo.",
+   "datos": [
+    {
+     "texto": "Jehová lo llamó y le habló desde el tabernáculo del testimonio",
+     "certeza": "texto",
+     "ref": "Lv 1:1",
+     "cita": "LLAMÓ Jehová á Moisés, y habló con él desde el tabernáculo del testimonio"
+    },
+    {
+     "texto": "La ley de las ofrendas le fue dada en el monte Sinaí",
+     "certeza": "texto",
+     "ref": "Lv 7:38",
+     "cita": "La cual intimó Jehová á Moisés, en el monte de Sinaí"
+    },
+    {
+     "texto": "Hizo llegar a Aarón y a sus hijos y los lavó con agua",
+     "certeza": "texto",
+     "ref": "Lv 8:6",
+     "cita": "Moisés hizo llegar á Aarón y á sus hijos, y lavólos con agua"
+    },
+    {
+     "texto": "Derramó el aceite de la unción sobre la cabeza de Aarón y lo ungió",
+     "certeza": "texto",
+     "ref": "Lv 8:12",
+     "cita": "Y derramó del aceite de la unción sobre la cabeza de Aarón, y ungiólo para santificarlo"
+    },
+    {
+     "texto": "Del carnero de las consagraciones le tocó el pecho",
+     "certeza": "texto",
+     "ref": "Lv 8:29",
+     "cita": "aquélla fué la parte de Moisés"
+    },
+    {
+     "texto": "Entró con Aarón en el tabernáculo y ambos bendijeron al pueblo",
+     "certeza": "texto",
+     "ref": "Lv 9:23",
+     "cita": "entraron Moisés y Aarón en el tabernáculo del testimonio; y salieron, y bendijeron al pueblo"
+    },
+    {
+     "texto": "Llamó a Misael y a Elzafán para sacar a «vuestros hermanos» (Nadab y Abiú, por el contexto) de delante del santuario",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "llamó Moisés á Misael, y á Elzaphán"
+    },
+    {
+     "texto": "Ordenó a Aarón, Eleazar e Itamar no descubrir sus cabezas ni rasgar sus vestidos",
+     "certeza": "texto",
+     "ref": "Lv 10:6",
+     "cita": "No descubráis vuestras cabezas, ni rasguéis vuestros vestidos"
+    },
+    {
+     "texto": "Se enojó contra Eleazar e Itamar porque el macho cabrío de la expiación fue quemado",
+     "certeza": "texto",
+     "ref": "Lv 10:16",
+     "cita": "enojóse contra Eleazar"
+    },
+    {
+     "texto": "Se dio por satisfecho con la respuesta de Aarón",
+     "certeza": "texto",
+     "ref": "Lv 10:20",
+     "cita": "dióse por satisfecho"
+    },
+    {
+     "texto": "Hizo lo que Jehová le mandó sobre el día de la expiación",
+     "certeza": "texto",
+     "ref": "Lv 16:34",
+     "cita": "Y Moisés lo hizo como Jehová le mandó"
+    },
+    {
+     "texto": "Le llevaron al hijo de la israelita que había pronunciado el Nombre y maldecido",
+     "certeza": "texto",
+     "ref": "Lv 24:11",
+     "cita": "entonces le llevaron á Moisés"
+    },
+    {
+     "texto": "Habló a los hijos de Israel y ellos sacaron al blasfemo fuera del real",
+     "certeza": "texto",
+     "ref": "Lv 24:23",
+     "cita": "Y habló Moisés á los hijos de Israel, y ellos sacaron al blasfemo fuera del real"
+    },
+    {
+     "texto": "Los decretos, derechos y leyes se dieron por su mano en el monte Sinaí",
+     "certeza": "texto",
+     "ref": "Lv 26:46",
+     "cita": "en el monte de Sinaí por mano de Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 6:9",
+     "fin": "Lv 6:9"
+    },
+    {
+     "inicio": "Lv 6:25",
+     "fin": "Lv 6:25"
+    },
+    {
+     "inicio": "Lv 8:1",
+     "fin": "Lv 10:20"
+    },
+    {
+     "inicio": "Lv 11:1",
+     "fin": "Lv 11:1"
+    },
+    {
+     "inicio": "Lv 13:1",
+     "fin": "Lv 13:2"
+    },
+    {
+     "inicio": "Lv 14:33",
+     "fin": "Lv 14:33"
+    },
+    {
+     "inicio": "Lv 15:1",
+     "fin": "Lv 15:1"
+    },
+    {
+     "inicio": "Lv 16:1",
+     "fin": "Lv 16:3"
+    },
+    {
+     "inicio": "Lv 16:6",
+     "fin": "Lv 16:6"
+    },
+    {
+     "inicio": "Lv 16:8",
+     "fin": "Lv 16:9"
+    },
+    {
+     "inicio": "Lv 16:11",
+     "fin": "Lv 16:11"
+    },
+    {
+     "inicio": "Lv 16:21",
+     "fin": "Lv 16:21"
+    },
+    {
+     "inicio": "Lv 16:23",
+     "fin": "Lv 16:23"
+    },
+    {
+     "inicio": "Lv 17:2",
+     "fin": "Lv 17:2"
+    },
+    {
+     "inicio": "Lv 21:17",
+     "fin": "Lv 21:17"
+    },
+    {
+     "inicio": "Lv 21:24",
+     "fin": "Lv 21:24"
+    },
+    {
+     "inicio": "Lv 22:2",
+     "fin": "Lv 22:2"
+    },
+    {
+     "inicio": "Lv 22:18",
+     "fin": "Lv 22:18"
+    },
+    {
+     "inicio": "Lv 24:3",
+     "fin": "Lv 24:3"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Sumo sacerdote: en Levítico es vestido, ungido y consagrado, ofrece los primeros sacrificios, pierde a sus dos hijos mayores en un solo día y recibe las normas del día de la expiación.",
+   "datos": [
+    {
+     "texto": "Moisés le puso la túnica, el cinto, el manto y el efod",
+     "certeza": "texto",
+     "ref": "Lv 8:7",
+     "cita": "puso sobre él la túnica, y ciñólo con el cinto; vistióle después el manto, y puso sobre él el ephod"
+    },
+    {
+     "texto": "Él y sus hijos pusieron las manos sobre la cabeza del becerro de la expiación",
+     "certeza": "texto",
+     "ref": "Lv 8:14",
+     "cita": "Aarón y sus hijos pusieron sus manos sobre la cabeza del becerro de la expiación"
+    },
+    {
+     "texto": "Debía permanecer siete días en la puerta del tabernáculo hasta cumplirse su consagración",
+     "certeza": "texto",
+     "ref": "Lv 8:33",
+     "cita": "De la puerta del tabernáculo del testimonio no saldréis en siete días"
+    },
+    {
+     "texto": "Degolló su becerro de la expiación en el altar",
+     "certeza": "texto",
+     "ref": "Lv 9:8",
+     "cita": "degolló su becerro de la expiación que era por él"
+    },
+    {
+     "texto": "Alzó las manos hacia el pueblo y lo bendijo",
+     "certeza": "texto",
+     "ref": "Lv 9:22",
+     "cita": "alzó Aarón sus manos hacia el pueblo y bendíjolos"
+    },
+    {
+     "texto": "Calló ante las palabras de Moisés tras la muerte de sus hijos",
+     "certeza": "texto",
+     "ref": "Lv 10:3",
+     "cita": "Y Aarón calló"
+    },
+    {
+     "texto": "Se le ordenó no beber vino ni sidra, él y sus hijos, al entrar en el tabernáculo",
+     "certeza": "texto",
+     "ref": "Lv 10:9",
+     "cita": "no beberéis vino ni sidra, cuando hubiereis de entrar en el tabernáculo del testimonio"
+    },
+    {
+     "texto": "Respondió a Moisés que ese día habían ofrecido su expiación y su holocausto, pero le habían acontecido «estas cosas»",
+     "certeza": "texto",
+     "ref": "Lv 10:19",
+     "cita": "me han acontecido estas cosas"
+    },
+    {
+     "texto": "Se le dijo que no entrara en todo tiempo al santuario, tras el velo, para no morir",
+     "certeza": "texto",
+     "ref": "Lv 16:2",
+     "cita": "que no en todo tiempo entre en el santuario del velo adentro"
+    },
+    {
+     "texto": "Echaría suertes sobre los dos machos cabríos: uno por Jehová y otro por Azazel",
+     "certeza": "texto",
+     "ref": "Lv 16:8",
+     "cita": "echará suertes Aarón sobre los dos machos de cabrío"
+    },
+    {
+     "texto": "Pondría ambas manos sobre la cabeza del macho cabrío vivo y confesaría los pecados de Israel",
+     "certeza": "texto",
+     "ref": "Lv 16:21",
+     "cita": "pondrá Aarón ambas manos suyas sobre la cabeza del macho cabrío vivo"
+    },
+    {
+     "texto": "Debía arreglar las lámparas de la tarde a la mañana delante de Jehová",
+     "certeza": "texto",
+     "ref": "Lv 24:3",
+     "cita": "las aderezará Aarón desde la tarde hasta la mañana delante de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Nadab_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 8:2",
+     "fin": "Lv 8:2"
+    },
+    {
+     "inicio": "Lv 8:6",
+     "fin": "Lv 8:6"
+    },
+    {
+     "inicio": "Lv 8:13",
+     "fin": "Lv 8:14"
+    },
+    {
+     "inicio": "Lv 8:18",
+     "fin": "Lv 8:18"
+    },
+    {
+     "inicio": "Lv 8:22",
+     "fin": "Lv 8:22"
+    },
+    {
+     "inicio": "Lv 8:24",
+     "fin": "Lv 8:24"
+    },
+    {
+     "inicio": "Lv 8:27",
+     "fin": "Lv 8:27"
+    },
+    {
+     "inicio": "Lv 8:30",
+     "fin": "Lv 8:31"
+    },
+    {
+     "inicio": "Lv 8:35",
+     "fin": "Lv 8:36"
+    },
+    {
+     "inicio": "Lv 9:1",
+     "fin": "Lv 9:1"
+    },
+    {
+     "inicio": "Lv 9:9",
+     "fin": "Lv 9:9"
+    },
+    {
+     "inicio": "Lv 9:12",
+     "fin": "Lv 9:12"
+    },
+    {
+     "inicio": "Lv 9:18",
+     "fin": "Lv 9:18"
+    },
+    {
+     "inicio": "Lv 10:1",
+     "fin": "Lv 10:5"
+    }
+   ],
+   "menciones_posteriores": [
+    "Lv 16:1"
+   ],
+   "resumen": "Hijo de Aarón; consagrado sacerdote en Levítico 8 y muerto con su hermano Abiú al ofrecer «fuego extraño» (Lv 10).",
+   "datos": [
+    {
+     "texto": "Estaba entre «sus hijos», a quienes Moisés tomó con Aarón para consagrarlos (aquí el texto no los nombra; ver Ex 6:23 y 28:1)",
+     "certeza": "inferido",
+     "ref": "Lv 8:2",
+     "cita": "Toma á Aarón y á sus hijos con él"
+    },
+    {
+     "texto": "Tomó su incensario, puso fuego y perfume y ofreció delante de Jehová fuego extraño",
+     "certeza": "texto",
+     "ref": "Lv 10:1",
+     "cita": "Nadab y Abiú, tomaron cada uno su incensario, y pusieron fuego en ellos, sobre el cual pusieron perfume"
+    },
+    {
+     "texto": "Ese fuego extraño no se lo había mandado Jehová",
+     "certeza": "texto",
+     "ref": "Lv 10:1",
+     "cita": "fuego extraño, que él nunca les mandó"
+    },
+    {
+     "texto": "Salió fuego de delante de Jehová que lo quemó, y murió delante de Jehová",
+     "certeza": "texto",
+     "ref": "Lv 10:2",
+     "cita": "salió fuego de delante de Jehová que los quemó, y murieron delante de Jehová"
+    },
+    {
+     "texto": "Fue sacado con su túnica fuera del campo (lo hicieron Misael y Elzafán)",
+     "certeza": "texto",
+     "ref": "Lv 10:5",
+     "cita": "sacáronlos con sus túnicas fuera del campo"
+    },
+    {
+     "texto": "Levítico 16 recuerda su muerte sin nombrarlo: «los dos hijos de Aarón»",
+     "certeza": "inferido",
+     "ref": "Lv 16:1",
+     "cita": "después que murieron los dos hijos de Aarón, cuando se llegaron delante de Jehová, y murieron"
+    }
+   ],
+   "externo": []
+  },
+  "Abihu_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 8:2",
+     "fin": "Lv 8:2"
+    },
+    {
+     "inicio": "Lv 8:6",
+     "fin": "Lv 8:6"
+    },
+    {
+     "inicio": "Lv 8:13",
+     "fin": "Lv 8:14"
+    },
+    {
+     "inicio": "Lv 8:18",
+     "fin": "Lv 8:18"
+    },
+    {
+     "inicio": "Lv 8:22",
+     "fin": "Lv 8:22"
+    },
+    {
+     "inicio": "Lv 8:24",
+     "fin": "Lv 8:24"
+    },
+    {
+     "inicio": "Lv 8:27",
+     "fin": "Lv 8:27"
+    },
+    {
+     "inicio": "Lv 8:30",
+     "fin": "Lv 8:31"
+    },
+    {
+     "inicio": "Lv 8:35",
+     "fin": "Lv 8:36"
+    },
+    {
+     "inicio": "Lv 9:1",
+     "fin": "Lv 9:1"
+    },
+    {
+     "inicio": "Lv 9:9",
+     "fin": "Lv 9:9"
+    },
+    {
+     "inicio": "Lv 9:12",
+     "fin": "Lv 9:12"
+    },
+    {
+     "inicio": "Lv 9:18",
+     "fin": "Lv 9:18"
+    },
+    {
+     "inicio": "Lv 10:1",
+     "fin": "Lv 10:5"
+    }
+   ],
+   "menciones_posteriores": [
+    "Lv 16:1"
+   ],
+   "resumen": "Hijo de Aarón; consagrado sacerdote en Levítico 8 y muerto con su hermano Nadab al ofrecer «fuego extraño» (Lv 10).",
+   "datos": [
+    {
+     "texto": "Estaba entre «sus hijos», a quienes Moisés tomó con Aarón para consagrarlos (aquí el texto no los nombra; ver Ex 6:23 y 28:1)",
+     "certeza": "inferido",
+     "ref": "Lv 8:2",
+     "cita": "Toma á Aarón y á sus hijos con él"
+    },
+    {
+     "texto": "Tomó su incensario, puso fuego y perfume y ofreció delante de Jehová fuego extraño",
+     "certeza": "texto",
+     "ref": "Lv 10:1",
+     "cita": "Nadab y Abiú, tomaron cada uno su incensario, y pusieron fuego en ellos, sobre el cual pusieron perfume"
+    },
+    {
+     "texto": "Ese fuego extraño no se lo había mandado Jehová",
+     "certeza": "texto",
+     "ref": "Lv 10:1",
+     "cita": "fuego extraño, que él nunca les mandó"
+    },
+    {
+     "texto": "Salió fuego de delante de Jehová que lo quemó, y murió delante de Jehová",
+     "certeza": "texto",
+     "ref": "Lv 10:2",
+     "cita": "salió fuego de delante de Jehová que los quemó, y murieron delante de Jehová"
+    },
+    {
+     "texto": "Fue sacado con su túnica fuera del campo (lo hicieron Misael y Elzafán)",
+     "certeza": "texto",
+     "ref": "Lv 10:5",
+     "cita": "sacáronlos con sus túnicas fuera del campo"
+    },
+    {
+     "texto": "Levítico 16 recuerda su muerte sin nombrarlo: «los dos hijos de Aarón»",
+     "certeza": "inferido",
+     "ref": "Lv 16:1",
+     "cita": "después que murieron los dos hijos de Aarón, cuando se llegaron delante de Jehová, y murieron"
+    }
+   ],
+   "externo": []
+  },
+  "Eleazar_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 8:2",
+     "fin": "Lv 8:2"
+    },
+    {
+     "inicio": "Lv 8:6",
+     "fin": "Lv 8:6"
+    },
+    {
+     "inicio": "Lv 8:13",
+     "fin": "Lv 8:14"
+    },
+    {
+     "inicio": "Lv 8:18",
+     "fin": "Lv 8:18"
+    },
+    {
+     "inicio": "Lv 8:22",
+     "fin": "Lv 8:22"
+    },
+    {
+     "inicio": "Lv 8:24",
+     "fin": "Lv 8:24"
+    },
+    {
+     "inicio": "Lv 8:27",
+     "fin": "Lv 8:27"
+    },
+    {
+     "inicio": "Lv 8:30",
+     "fin": "Lv 8:31"
+    },
+    {
+     "inicio": "Lv 8:35",
+     "fin": "Lv 8:36"
+    },
+    {
+     "inicio": "Lv 9:1",
+     "fin": "Lv 9:1"
+    },
+    {
+     "inicio": "Lv 9:9",
+     "fin": "Lv 9:9"
+    },
+    {
+     "inicio": "Lv 9:12",
+     "fin": "Lv 9:12"
+    },
+    {
+     "inicio": "Lv 9:18",
+     "fin": "Lv 9:18"
+    },
+    {
+     "inicio": "Lv 10:6",
+     "fin": "Lv 10:7"
+    },
+    {
+     "inicio": "Lv 10:12",
+     "fin": "Lv 10:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón; tras la muerte de Nadab y Abiú queda con Itamar como sacerdote y recibe las instrucciones de Moisés.",
+   "datos": [
+    {
+     "texto": "Estaba entre «sus hijos», a quienes Moisés tomó con Aarón para consagrarlos (aquí el texto no los nombra; ver Ex 6:23 y 28:1)",
+     "certeza": "inferido",
+     "ref": "Lv 8:2",
+     "cita": "Toma á Aarón y á sus hijos con él"
+    },
+    {
+     "texto": "Moisés le ordenó, con su padre e Itamar, no descubrir su cabeza ni rasgar sus vestidos para no morir",
+     "certeza": "texto",
+     "ref": "Lv 10:6",
+     "cita": "No descubráis vuestras cabezas, ni rasguéis vuestros vestidos, porque no muráis"
+    },
+    {
+     "texto": "Ellos hicieron conforme a lo dicho por Moisés",
+     "certeza": "texto",
+     "ref": "Lv 10:7",
+     "cita": "Y ellos hicieron conforme al dicho de Moisés"
+    },
+    {
+     "texto": "Los dos hermanos que habían muerto ya no estaban: Moisés habla a los hijos que «habían quedado»",
+     "certeza": "inferido",
+     "ref": "Lv 10:12",
+     "cita": "sus hijos que habían quedado"
+    },
+    {
+     "texto": "Moisés se enojó con él e Itamar porque el macho cabrío de la expiación fue hallado quemado",
+     "certeza": "texto",
+     "ref": "Lv 10:16",
+     "cita": "enojóse contra Eleazar"
+    }
+   ],
+   "externo": []
+  },
+  "Ithamar_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 8:2",
+     "fin": "Lv 8:2"
+    },
+    {
+     "inicio": "Lv 8:6",
+     "fin": "Lv 8:6"
+    },
+    {
+     "inicio": "Lv 8:13",
+     "fin": "Lv 8:14"
+    },
+    {
+     "inicio": "Lv 8:18",
+     "fin": "Lv 8:18"
+    },
+    {
+     "inicio": "Lv 8:22",
+     "fin": "Lv 8:22"
+    },
+    {
+     "inicio": "Lv 8:24",
+     "fin": "Lv 8:24"
+    },
+    {
+     "inicio": "Lv 8:27",
+     "fin": "Lv 8:27"
+    },
+    {
+     "inicio": "Lv 8:30",
+     "fin": "Lv 8:31"
+    },
+    {
+     "inicio": "Lv 8:35",
+     "fin": "Lv 8:36"
+    },
+    {
+     "inicio": "Lv 9:1",
+     "fin": "Lv 9:1"
+    },
+    {
+     "inicio": "Lv 9:9",
+     "fin": "Lv 9:9"
+    },
+    {
+     "inicio": "Lv 9:12",
+     "fin": "Lv 9:12"
+    },
+    {
+     "inicio": "Lv 9:18",
+     "fin": "Lv 9:18"
+    },
+    {
+     "inicio": "Lv 10:6",
+     "fin": "Lv 10:7"
+    },
+    {
+     "inicio": "Lv 10:12",
+     "fin": "Lv 10:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón; tras la muerte de Nadab y Abiú queda con Eleazar como sacerdote y recibe las instrucciones de Moisés.",
+   "datos": [
+    {
+     "texto": "Estaba entre «sus hijos», a quienes Moisés tomó con Aarón para consagrarlos (aquí el texto no los nombra; ver Ex 6:23 y 28:1)",
+     "certeza": "inferido",
+     "ref": "Lv 8:2",
+     "cita": "Toma á Aarón y á sus hijos con él"
+    },
+    {
+     "texto": "Moisés le ordenó, con su padre y Eleazar, no descubrir su cabeza ni rasgar sus vestidos para no morir",
+     "certeza": "texto",
+     "ref": "Lv 10:6",
+     "cita": "No descubráis vuestras cabezas, ni rasguéis vuestros vestidos, porque no muráis"
+    },
+    {
+     "texto": "Ellos hicieron conforme a lo dicho por Moisés",
+     "certeza": "texto",
+     "ref": "Lv 10:7",
+     "cita": "Y ellos hicieron conforme al dicho de Moisés"
+    },
+    {
+     "texto": "Los dos hermanos que habían muerto ya no estaban: Moisés habla a los hijos que «habían quedado»",
+     "certeza": "inferido",
+     "ref": "Lv 10:12",
+     "cita": "sus hijos que habían quedado"
+    },
+    {
+     "texto": "Moisés se enojó con él y con Eleazar porque el macho cabrío de la expiación fue hallado quemado",
+     "certeza": "texto",
+     "ref": "Lv 10:16",
+     "cita": "é Ithamar, los hijos de Aarón que habían quedado"
+    }
+   ],
+   "externo": []
+  },
+  "Mishael_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 10:4",
+     "fin": "Lv 10:5"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Uziel, tío de Aarón; con Elzafán saca a Nadab y Abiú, con sus túnicas, fuera del campo por orden de Moisés.",
+   "datos": [
+    {
+     "texto": "Moisés lo llamó, con Elzafán, «hijos de Uziel, tío de Aarón»",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "hijos de Uzziel, tío de Aarón"
+    },
+    {
+     "texto": "Moisés les mandó sacar a sus hermanos de delante del santuario, fuera del campo",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "sacad á vuestros hermanos de delante del santuario fuera del campo"
+    },
+    {
+     "texto": "Los sacaron con sus túnicas fuera del campo, como dijo Moisés",
+     "certeza": "texto",
+     "ref": "Lv 10:5",
+     "cita": "sacáronlos con sus túnicas fuera del campo, como dijo Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "Elzaphan_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 10:4",
+     "fin": "Lv 10:5"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Uziel, tío de Aarón; con Misael saca a Nadab y Abiú, con sus túnicas, fuera del campo por orden de Moisés.",
+   "datos": [
+    {
+     "texto": "Moisés lo llamó, con Misael, «hijos de Uziel, tío de Aarón»",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "hijos de Uzziel, tío de Aarón"
+    },
+    {
+     "texto": "Moisés les mandó sacar a sus hermanos de delante del santuario, fuera del campo",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "sacad á vuestros hermanos de delante del santuario fuera del campo"
+    },
+    {
+     "texto": "Los sacaron con sus túnicas fuera del campo, como dijo Moisés",
+     "certeza": "texto",
+     "ref": "Lv 10:5",
+     "cita": "sacáronlos con sus túnicas fuera del campo, como dijo Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "Shelomith_1": {
+   "apariciones": [
+    {
+     "inicio": "Lv 24:11",
+     "fin": "Lv 24:11"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Israelita de la tribu de Dan, hija de Dibri y madre del hombre que blasfemó el Nombre (Lv 24:11).",
+   "datos": [
+    {
+     "texto": "Era una mujer israelita, y su hijo era hijo de un egipcio",
+     "certeza": "texto",
+     "ref": "Lv 24:10",
+     "cita": "el hijo de una mujer Israelita, el cual era hijo de un Egipcio"
+    },
+    {
+     "texto": "Se llamaba Selomit, hija de Dibri, de la tribu de Dan",
+     "certeza": "texto",
+     "ref": "Lv 24:11",
+     "cita": "su madre se llamaba Selomith, hija de Dribi, de la tribu de Dan"
+    },
+    {
+     "texto": "El texto solo la nombra al presentar a su hijo: no dice dónde estaba durante el juicio ni qué fue de ella",
+     "certeza": "inferido",
+     "ref": "Lv 24:11",
+     "cita": "su madre se llamaba Selomith"
+    }
+   ],
+   "externo": []
+  },
+  "Hijo_de_Selomit": {
+   "apariciones": [
+    {
+     "inicio": "Lv 24:10",
+     "fin": "Lv 24:14"
+    },
+    {
+     "inicio": "Lv 24:23",
+     "fin": "Lv 24:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de una israelita y de un egipcio; riñó en el campamento, pronunció el Nombre y maldijo, y fue sacado fuera del real y apedreado por mandato de Jehová (Lv 24).",
+   "datos": [
+    {
+     "texto": "Su padre era egipcio y su madre israelita; salió entre los hijos de Israel y riñó en el real con un hombre de Israel",
+     "certeza": "texto",
+     "ref": "Lv 24:10",
+     "cita": "el hijo de la Israelita y un hombre de Israel riñeron en el real"
+    },
+    {
+     "texto": "Pronunció el Nombre y maldijo",
+     "certeza": "texto",
+     "ref": "Lv 24:11",
+     "cita": "pronunció el Nombre, y maldijo"
+    },
+    {
+     "texto": "Lo pusieron en la cárcel hasta que Jehová declarase qué hacer",
+     "certeza": "texto",
+     "ref": "Lv 24:12",
+     "cita": "hasta que les fuese declarado por palabra de Jehová"
+    },
+    {
+     "texto": "Jehová mandó sacarlo fuera del real; quienes lo oyeron pondrían las manos sobre su cabeza y toda la congregación lo apedrearía",
+     "certeza": "texto",
+     "ref": "Lv 24:14",
+     "cita": "Saca al blasfemo fuera del real, y todos los que le oyeron pongan sus manos sobre la cabeza de él, y apedréelo toda la congregación"
+    },
+    {
+     "texto": "Lo sacaron fuera del real y lo apedrearon, como Jehová había mandado a Moisés",
+     "certeza": "texto",
+     "ref": "Lv 24:23",
+     "cita": "sacaron al blasfemo fuera del real, y apedreáronlo con piedras"
+    },
+    {
+     "texto": "El texto no da su nombre propio: se le llama «el hijo de la israelita» y «el blasfemo»",
+     "certeza": "inferido",
+     "ref": "Lv 24:10",
+     "cita": "el hijo de una mujer Israelita"
+    }
+   ],
+   "externo": []
+  },
+  "Dibri_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Lv 24:11"
+   ],
+   "resumen": "Padre de Selomit, abuelo del blasfemo; solo se le nombra en Lv 24:11.",
+   "datos": [
+    {
+     "texto": "Es el padre de Selomit",
+     "certeza": "texto",
+     "ref": "Lv 24:11",
+     "cita": "hija de Dribi"
+    }
+   ],
+   "externo": []
+  },
+  "Dan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Lv 24:11"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "La madre del blasfemo era de la tribu de Dan",
+     "certeza": "texto",
+     "ref": "Lv 24:11",
+     "cita": "de la tribu de Dan"
+    }
+   ],
+   "externo": []
+  },
+  "Uzziel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Lv 10:4"
+   ],
+   "resumen": "Tío de Aarón y padre de Misael y Elzafán (Lv 10:4).",
+   "datos": [
+    {
+     "texto": "Era tío de Aarón; sus hijos fueron Misael y Elzafán",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "hijos de Uzziel, tío de Aarón"
+    }
+   ],
+   "externo": []
+  },
+  "Abram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Lv 26:42"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová dice que se acordará de su pacto con Abraham",
+     "certeza": "texto",
+     "ref": "Lv 26:42",
+     "cita": "también de mi pacto con Abraham me acordaré"
+    }
+   ],
+   "externo": []
+  },
+  "Isaac_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Lv 26:42"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová dice que se acordará de su pacto con Isaac",
+     "certeza": "texto",
+     "ref": "Lv 26:42",
+     "cita": "de mi pacto con Isaac"
+    }
+   ],
+   "externo": []
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Lv 26:42"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová dice que se acordará de su pacto con Jacob",
+     "certeza": "texto",
+     "ref": "Lv 26:42",
+     "cita": "Y yo me acordaré de mi pacto con Jacob"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "altar-del-holocausto": {
+   "nombre": "Altar del holocausto",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Lv 1:5",
+     "fin": "Lv 1:17"
+    },
+    {
+     "inicio": "Lv 6:9",
+     "fin": "Lv 6:13"
+    },
+    {
+     "inicio": "Lv 8:11",
+     "fin": "Lv 8:30"
+    },
+    {
+     "inicio": "Lv 9:7",
+     "fin": "Lv 9:24"
+    },
+    {
+     "inicio": "Lv 16:18",
+     "fin": "Lv 16:19"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "altar-holocausto",
+   "resumen": "Altar a la puerta del tabernáculo donde se queman las ofrendas; en Levítico recibe la sangre, el sebo y el fuego que no debe apagarse.",
+   "datos": [
+    {
+     "texto": "Está a la puerta del tabernáculo del testimonio",
+     "certeza": "texto",
+     "ref": "Lv 1:5",
+     "cita": "el cual está á la puerta del tabernáculo del testimonio"
+    },
+    {
+     "texto": "El fuego debía arder continuamente en el altar y no apagarse",
+     "certeza": "texto",
+     "ref": "Lv 6:13",
+     "cita": "El fuego ha de arder continuamente en el altar; no se apagará"
+    },
+    {
+     "texto": "Moisés roció aceite de la unción sobre el altar siete veces y lo ungió con todos sus vasos",
+     "certeza": "texto",
+     "ref": "Lv 8:11",
+     "cita": "roció de él sobre el altar siete veces"
+    },
+    {
+     "texto": "Moisés puso con su dedo sangre sobre los cuernos del altar",
+     "certeza": "texto",
+     "ref": "Lv 8:15",
+     "cita": "puso con su dedo sobre los cuernos del altar alrededor"
+    },
+    {
+     "texto": "El fuego salido de delante de Jehová consumió sobre el altar el holocausto y los sebos",
+     "certeza": "texto",
+     "ref": "Lv 9:24",
+     "cita": "consumió el holocausto y los sebos sobre el altar"
+    },
+    {
+     "texto": "El día de la expiación se pondría sangre del becerro y del macho cabrío sobre sus cuernos",
+     "certeza": "texto",
+     "ref": "Lv 16:18",
+     "cita": "sobre los cuernos del altar alrededor"
+    }
+   ],
+   "externo": []
+  },
+  "fuego-del-altar": {
+   "nombre": "Fuego del altar y fuego de delante de Jehová",
+   "tipo": "fuego sagrado",
+   "apariciones": [
+    {
+     "inicio": "Lv 6:12",
+     "fin": "Lv 6:13"
+    },
+    {
+     "inicio": "Lv 9:24",
+     "fin": "Lv 9:24"
+    },
+    {
+     "inicio": "Lv 10:2",
+     "fin": "Lv 10:2"
+    },
+    {
+     "inicio": "Lv 16:12",
+     "fin": "Lv 16:12"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Nadab_1",
+    "Abihu_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "El fuego que ardía en el altar y no debía apagarse, el que salió de delante de Jehová y consumió el holocausto (Lv 9:24) y el que quemó a Nadab y Abiú (Lv 10:2).",
+   "datos": [
+    {
+     "texto": "Cada mañana el sacerdote ponía leña sobre el fuego del altar",
+     "certeza": "texto",
+     "ref": "Lv 6:12",
+     "cita": "el sacerdote pondrá en él leña cada mañana"
+    },
+    {
+     "texto": "Salió fuego de delante de Jehová y consumió el holocausto; el pueblo alabó y cayó sobre sus rostros",
+     "certeza": "texto",
+     "ref": "Lv 9:24",
+     "cita": "viéndolo todo el pueblo, alabaron, y cayeron sobre sus rostros"
+    },
+    {
+     "texto": "Salió fuego de delante de Jehová que quemó a Nadab y Abiú",
+     "certeza": "texto",
+     "ref": "Lv 10:2",
+     "cita": "salió fuego de delante de Jehová que los quemó"
+    },
+    {
+     "texto": "El día de la expiación el incensario se llenaría de brasas «del altar de delante de Jehová»",
+     "certeza": "texto",
+     "ref": "Lv 16:12",
+     "cita": "brasas de fuego, del altar de delante de Jehová"
+    },
+    {
+     "texto": "El texto llama «fuego extraño» al que ofrecieron Nadab y Abiú, sin decir de dónde lo tomaron",
+     "certeza": "inferido",
+     "ref": "Lv 10:1",
+     "cita": "fuego extraño, que él nunca les mandó"
+    }
+   ],
+   "externo": []
+  },
+  "incensarios": {
+   "nombre": "Incensarios",
+   "tipo": "utensilio",
+   "apariciones": [
+    {
+     "inicio": "Lv 10:1",
+     "fin": "Lv 10:1"
+    },
+    {
+     "inicio": "Lv 16:12",
+     "fin": "Lv 16:13"
+    }
+   ],
+   "personas": [
+    "Nadab_1",
+    "Abihu_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Recipientes para quemar perfume: los de Nadab y Abiú (Lv 10:1) y el incensario del sumo sacerdote el día de la expiación (Lv 16:12).",
+   "datos": [
+    {
+     "texto": "Nadab y Abiú tomaron cada uno su incensario, pusieron fuego y perfume y ofrecieron fuego extraño",
+     "certeza": "texto",
+     "ref": "Lv 10:1",
+     "cita": "tomaron cada uno su incensario, y pusieron fuego en ellos, sobre el cual pusieron perfume"
+    },
+    {
+     "texto": "El incensario del día de la expiación se llenaría de brasas del altar, con los puños llenos de perfume aromático molido",
+     "certeza": "texto",
+     "ref": "Lv 16:12",
+     "cita": "tomará el incensario lleno de brasas de fuego"
+    },
+    {
+     "texto": "La nube del perfume cubriría la cubierta que está sobre el testimonio",
+     "certeza": "texto",
+     "ref": "Lv 16:13",
+     "cita": "la nube del perfume cubrirá la cubierta que está sobre el testimonio"
+    },
+    {
+     "texto": "El texto no dice de qué material eran los incensarios",
+     "certeza": "inferido",
+     "ref": "Lv 10:1",
+     "cita": "cada uno su incensario"
+    }
+   ],
+   "externo": []
+  },
+  "dos-machos-cabrios": {
+   "nombre": "Los dos machos cabríos (uno por Jehová, otro por Azazel)",
+   "tipo": "animal de ritual",
+   "apariciones": [
+    {
+     "inicio": "Lv 16:5",
+     "fin": "Lv 16:10"
+    },
+    {
+     "inicio": "Lv 16:15",
+     "fin": "Lv 16:15"
+    },
+    {
+     "inicio": "Lv 16:20",
+     "fin": "Lv 16:22"
+    },
+    {
+     "inicio": "Lv 16:26",
+     "fin": "Lv 16:27"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Dos machos de cabrío tomados de la congregación el día de la expiación: uno se ofrece en expiación y sobre el otro se echa la suerte por Azazel y se envía vivo al desierto.",
+   "datos": [
+    {
+     "texto": "Se tomarían de la congregación de Israel dos machos de cabrío para expiación",
+     "certeza": "texto",
+     "ref": "Lv 16:5",
+     "cita": "tomará dos machos de cabrío para expiación"
+    },
+    {
+     "texto": "Aarón echaría suertes: una por Jehová y otra por Azazel",
+     "certeza": "texto",
+     "ref": "Lv 16:8",
+     "cita": "la una suerte por Jehová, y la otra suerte por Azazel"
+    },
+    {
+     "texto": "El macho sobre el que cayera la suerte por Jehová se ofrecería en expiación",
+     "certeza": "texto",
+     "ref": "Lv 16:9",
+     "cita": "ofrecerálo en expiación"
+    },
+    {
+     "texto": "El de Azazel se presentaría vivo y se enviaría al desierto",
+     "certeza": "texto",
+     "ref": "Lv 16:10",
+     "cita": "lo presentará vivo delante de Jehová"
+    },
+    {
+     "texto": "Aarón confesaría sobre él todas las iniquidades de los hijos de Israel, poniendo ambas manos sobre su cabeza",
+     "certeza": "texto",
+     "ref": "Lv 16:21",
+     "cita": "confesará sobre él todas las iniquidades de los hijos de Israel"
+    },
+    {
+     "texto": "Llevaría sobre sí las iniquidades a tierra inhabitada y se le dejaría ir por el desierto",
+     "certeza": "texto",
+     "ref": "Lv 16:22",
+     "cita": "llevará sobre sí todas las iniquidades de ellos á tierra inhabitada"
+    },
+    {
+     "texto": "El texto no explica qué es «Azazel» (nombre de lugar, de ser o de otra cosa); solo dice que se envía el macho vivo «a Azazel al desierto»",
+     "certeza": "inferido",
+     "ref": "Lv 16:8",
+     "cita": "la otra suerte por Azazel"
+    }
+   ],
+   "externo": []
+  },
+  "vestiduras-sagradas": {
+   "nombre": "Vestiduras sagradas del sumo sacerdote",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:7",
+     "fin": "Lv 8:9"
+    },
+    {
+     "inicio": "Lv 8:13",
+     "fin": "Lv 8:13"
+    },
+    {
+     "inicio": "Lv 8:30",
+     "fin": "Lv 8:30"
+    },
+    {
+     "inicio": "Lv 16:4",
+     "fin": "Lv 16:4"
+    },
+    {
+     "inicio": "Lv 16:23",
+     "fin": "Lv 16:24"
+    },
+    {
+     "inicio": "Lv 16:32",
+     "fin": "Lv 16:32"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Piezas con que Moisés viste a Aarón en la consagración; el día de la expiación se cambian por vestimentas de lino.",
+   "datos": [
+    {
+     "texto": "Moisés puso sobre Aarón la túnica, el cinto, el manto y el efod",
+     "certeza": "texto",
+     "ref": "Lv 8:7",
+     "cita": "puso sobre él la túnica, y ciñólo con el cinto; vistióle después el manto, y puso sobre él el ephod"
+    },
+    {
+     "texto": "A los hijos de Aarón les vistió túnicas y cintos y les ajustó tiaras",
+     "certeza": "texto",
+     "ref": "Lv 8:13",
+     "cita": "vistióles las túnicas, y ciñólos con cintos, y ajustóles los chapeos"
+    },
+    {
+     "texto": "Moisés roció aceite y sangre sobre Aarón, sus vestiduras, sus hijos y las vestiduras de sus hijos",
+     "certeza": "texto",
+     "ref": "Lv 8:30",
+     "cita": "santificó á Aarón, y sus vestiduras"
+    },
+    {
+     "texto": "El día de la expiación Aarón se vestiría túnica santa de lino, paños de lino, cinto de lino y mitra de lino",
+     "certeza": "texto",
+     "ref": "Lv 16:4",
+     "cita": "La túnica santa de lino se vestirá"
+    },
+    {
+     "texto": "Después de entrar al santuario se quitaría las vestimentas de lino y las dejaría allí",
+     "certeza": "texto",
+     "ref": "Lv 16:23",
+     "cita": "se desnudará las vestimentas de lino"
+    }
+   ],
+   "externo": []
+  },
+  "racional-del-juicio": {
+   "nombre": "Racional del juicio",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:8",
+     "fin": "Lv 8:8"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Pectoral que Moisés puso sobre Aarón en su consagración; en él puso el Urim y Tumim.",
+   "datos": [
+    {
+     "texto": "Moisés puso sobre Aarón el racional",
+     "certeza": "texto",
+     "ref": "Lv 8:8",
+     "cita": "Púsole luego encima el racional"
+    }
+   ],
+   "externo": []
+  },
+  "urim-y-tumim": {
+   "nombre": "Urim y Tumim",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:8",
+     "fin": "Lv 8:8"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Objetos que Moisés puso en el racional de Aarón. Levítico no dice qué eran ni cómo se usaban.",
+   "datos": [
+    {
+     "texto": "Moisés puso el Urim y el Tumim en el racional",
+     "certeza": "texto",
+     "ref": "Lv 8:8",
+     "cita": "en él puso el Urim y Thummim"
+    },
+    {
+     "texto": "Lv 8 no describe su forma ni su uso",
+     "certeza": "inferido",
+     "ref": "Lv 8:8",
+     "cita": "en él puso el Urim y Thummim"
+    }
+   ],
+   "externo": []
+  },
+  "placa-de-santidad": {
+   "nombre": "Plancha de oro «Santidad a Jehová»",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:9",
+     "fin": "Lv 8:9"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Plancha de oro, «la diadema santa», puesta sobre la mitra de Aarón, en su frente.",
+   "datos": [
+    {
+     "texto": "Moisés puso sobre la mitra, en la frente de Aarón, la plancha de oro, la diadema santa",
+     "certeza": "texto",
+     "ref": "Lv 8:9",
+     "cita": "sobre la mitra en su frente delantero puso la plancha de oro, la diadema santa"
+    }
+   ],
+   "externo": []
+  },
+  "aceite-de-la-uncion": {
+   "nombre": "Aceite de la santa unción",
+   "tipo": "sustancia sagrada",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:2",
+     "fin": "Lv 8:2"
+    },
+    {
+     "inicio": "Lv 8:10",
+     "fin": "Lv 8:12"
+    },
+    {
+     "inicio": "Lv 8:30",
+     "fin": "Lv 8:30"
+    },
+    {
+     "inicio": "Lv 10:7",
+     "fin": "Lv 10:7"
+    },
+    {
+     "inicio": "Lv 21:10",
+     "fin": "Lv 21:10"
+    },
+    {
+     "inicio": "Lv 21:12",
+     "fin": "Lv 21:12"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Aceite con el que Moisés ungió el tabernáculo, el altar, a Aarón y a sus hijos; los santifica y los obliga a permanecer en su consagración.",
+   "datos": [
+    {
+     "texto": "Moisés ungió con él el tabernáculo y todas las cosas que estaban en él, y las santificó",
+     "certeza": "texto",
+     "ref": "Lv 8:10",
+     "cita": "tomó Moisés el aceite de la unción, y ungió el tabernáculo, y todas las cosas que estaban en él"
+    },
+    {
+     "texto": "Lo derramó sobre la cabeza de Aarón para santificarlo",
+     "certeza": "texto",
+     "ref": "Lv 8:12",
+     "cita": "derramó del aceite de la unción sobre la cabeza de Aarón"
+    },
+    {
+     "texto": "Con el aceite y la sangre del altar roció a Aarón, sus hijos y sus vestiduras",
+     "certeza": "texto",
+     "ref": "Lv 8:30",
+     "cita": "tomó Moisés del aceite de la unción, y de la sangre que estaba sobre el altar"
+    },
+    {
+     "texto": "Moisés prohibió a los hijos de Aarón salir de la puerta del tabernáculo «por cuanto el aceite de la unción de Jehová está sobre vosotros»",
+     "certeza": "texto",
+     "ref": "Lv 10:7",
+     "cita": "el aceite de la unción de Jehová está sobre vosotros"
+    },
+    {
+     "texto": "Al sumo sacerdote le obliga a no salir del santuario ni contaminarlo",
+     "certeza": "texto",
+     "ref": "Lv 21:12",
+     "cita": "porque la corona del aceite de la unción de su Dios está sobre él"
+    }
+   ],
+   "externo": []
+  },
+  "carnero-de-las-consagraciones": {
+   "nombre": "Carnero de las consagraciones",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:22",
+     "fin": "Lv 8:29"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Nadab_1",
+    "Abihu_1",
+    "Eleazar_1",
+    "Ithamar_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "El segundo carnero de la consagración: su sangre se pone en la oreja, el pulgar de la mano y el del pie derechos de Aarón y de sus hijos.",
+   "datos": [
+    {
+     "texto": "Se le llama «el carnero de las consagraciones»",
+     "certeza": "texto",
+     "ref": "Lv 8:22",
+     "cita": "el carnero de las consagraciones"
+    },
+    {
+     "texto": "Moisés puso sangre sobre la oreja derecha, el pulgar de la mano derecha y el pulgar del pie derecho de Aarón",
+     "certeza": "texto",
+     "ref": "Lv 8:23",
+     "cita": "puso sobre la ternilla de la oreja derecha de Aarón, y sobre el dedo pulgar de su mano derecha, y sobre el dedo pulgar de su pie derecho"
+    },
+    {
+     "texto": "Hizo lo mismo con los hijos de Aarón",
+     "certeza": "texto",
+     "ref": "Lv 8:24",
+     "cita": "Hizo llegar luego los hijos de Aarón"
+    },
+    {
+     "texto": "Puso en las manos de Aarón y de sus hijos el sebo, la espaldilla y las tortas, y lo hizo mecer ante Jehová",
+     "certeza": "texto",
+     "ref": "Lv 8:27",
+     "cita": "Y púsolo todo en las manos de Aarón, y en las manos de sus hijos"
+    },
+    {
+     "texto": "El pecho mecido fue la parte de Moisés",
+     "certeza": "texto",
+     "ref": "Lv 8:29",
+     "cita": "aquélla fué la parte de Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "panes-de-la-proposicion": {
+   "nombre": "Doce tortas sobre la mesa (panes de la proposición)",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Lv 24:5",
+     "fin": "Lv 24:9"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Doce tortas de flor de harina, en dos órdenes de seis sobre la mesa limpia, que se renuevan cada sábado y que comen Aarón y sus hijos en el lugar santo.",
+   "datos": [
+    {
+     "texto": "Se cocerían doce tortas de flor de harina, cada una de dos décimas",
+     "certeza": "texto",
+     "ref": "Lv 24:5",
+     "cita": "cocerás de ella doce tortas: cada torta será de dos décimas"
+    },
+    {
+     "texto": "Se pondrían en dos órdenes, seis en cada orden, sobre la mesa limpia delante de Jehová",
+     "certeza": "texto",
+     "ref": "Lv 24:6",
+     "cita": "seis en cada orden, sobre la mesa limpia delante de Jehová"
+    },
+    {
+     "texto": "Sobre cada orden se pondría incienso limpio",
+     "certeza": "texto",
+     "ref": "Lv 24:7",
+     "cita": "incienso limpio"
+    },
+    {
+     "texto": "Se renovaría cada sábado, como pacto sempiterno de los hijos de Israel",
+     "certeza": "texto",
+     "ref": "Lv 24:8",
+     "cita": "Cada día de sábado lo pondrá de continuo en orden delante de Jehová"
+    },
+    {
+     "texto": "Serían de Aarón y de sus hijos, que las comerían en el lugar santo",
+     "certeza": "texto",
+     "ref": "Lv 24:9",
+     "cita": "los cuales lo comerán en el lugar santo"
+    },
+    {
+     "texto": "El texto las llama «tortas» y «pan»; el nombre «panes de la proposición» es el de Ex 25:30",
+     "certeza": "inferido",
+     "ref": "Lv 24:5",
+     "cita": "doce tortas"
+    }
+   ],
+   "externo": []
+  },
+  "aceite-de-las-lamparas": {
+   "nombre": "Aceite de las lámparas y candelero",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Lv 24:2",
+     "fin": "Lv 24:4"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Aceite de olivas claro y molido que los hijos de Israel traían para que las lámparas ardieran de continuo; Aarón las arreglaba delante de Jehová.",
+   "datos": [
+    {
+     "texto": "Los hijos de Israel debían traer aceite de olivas claro, molido, para que las lámparas ardieran de continuo",
+     "certeza": "texto",
+     "ref": "Lv 24:2",
+     "cita": "aceite de olivas claro, molido, para la luminaria"
+    },
+    {
+     "texto": "Aarón las arreglaría desde la tarde hasta la mañana, fuera del velo del testimonio",
+     "certeza": "texto",
+     "ref": "Lv 24:3",
+     "cita": "Fuera del velo del testimonio, en el tabernáculo del testimonio, las aderezará Aarón"
+    },
+    {
+     "texto": "Las lámparas se ponían en orden sobre el candelero limpio delante de Jehová",
+     "certeza": "texto",
+     "ref": "Lv 24:4",
+     "cita": "Sobre el candelero limpio pondrá siempre en orden las lámparas delante de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "propiciatorio": {
+   "nombre": "Cubierta del arca con dos querubines",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "Lv 16:2",
+     "fin": "Lv 16:2"
+    },
+    {
+     "inicio": "Lv 16:13",
+     "fin": "Lv 16:15"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "propiciatorio",
+   "resumen": "La «cubierta» que está sobre el arca del testimonio; Jehová aparece en la nube sobre ella y el día de la expiación se rocía con sangre.",
+   "datos": [
+    {
+     "texto": "Jehová dice que aparecerá en la nube sobre la cubierta",
+     "certeza": "texto",
+     "ref": "Lv 16:2",
+     "cita": "yo apareceré en la nube sobre la cubierta"
+    },
+    {
+     "texto": "La nube del perfume cubriría la cubierta para que Aarón no muriera",
+     "certeza": "texto",
+     "ref": "Lv 16:13",
+     "cita": "la nube del perfume cubrirá la cubierta que está sobre el testimonio, y no morirá"
+    },
+    {
+     "texto": "Aarón rociaría con su dedo sangre del becerro hacia la cubierta, al lado oriental, y siete veces delante de ella",
+     "certeza": "texto",
+     "ref": "Lv 16:14",
+     "cita": "hacia la cubierta esparcirá siete veces de aquella sangre con su dedo"
+    },
+    {
+     "texto": "También rociaría la sangre del macho cabrío del pueblo sobre y delante de la cubierta",
+     "certeza": "texto",
+     "ref": "Lv 16:15",
+     "cita": "esparcirá sobre la cubierta y delante de la cubierta"
+    }
+   ],
+   "externo": []
+  },
+  "trompeta-del-jubileo": {
+   "nombre": "Trompeta del jubileo",
+   "tipo": "instrumento",
+   "apariciones": [
+    {
+     "inicio": "Lv 25:9",
+     "fin": "Lv 25:9"
+    }
+   ],
+   "personas": [],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Trompeta que se hace sonar el día diez del mes séptimo, día de la expiación, por toda la tierra para inaugurar el año del jubileo.",
+   "datos": [
+    {
+     "texto": "Se haría pasar la trompeta de jubilación en el mes séptimo, a los diez del mes, el día de la expiación, por toda la tierra",
+     "certeza": "texto",
+     "ref": "Lv 25:9",
+     "cita": "harás pasar la trompeta de jubilación en el mes séptimo á los diez del mes"
+    },
+    {
+     "texto": "El texto no describe el instrumento (material, forma o cuántas trompetas)",
+     "certeza": "inferido",
+     "ref": "Lv 25:9",
+     "cita": "la trompeta de jubilación"
+    }
+   ],
+   "externo": []
+  },
+  "avecillas-e-hisopo": {
+   "nombre": "Avecillas, cedro, grana e hisopo",
+   "tipo": "utensilios de purificación",
+   "apariciones": [
+    {
+     "inicio": "Lv 14:4",
+     "fin": "Lv 14:7"
+    },
+    {
+     "inicio": "Lv 14:49",
+     "fin": "Lv 14:53"
+    }
+   ],
+   "personas": [],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Dos avecillas vivas, madera de cedro, grana e hisopo usados en la purificación del leproso curado y de la casa con plaga.",
+   "datos": [
+    {
+     "texto": "El sacerdote mandaría tomar dos avecillas vivas y limpias, palo de cedro, grana e hisopo",
+     "certeza": "texto",
+     "ref": "Lv 14:4",
+     "cita": "dos avecillas vivas, limpias, y palo de cedro, y grana, é hisopo"
+    },
+    {
+     "texto": "Una avecilla se mataría en un vaso de barro sobre aguas vivas",
+     "certeza": "texto",
+     "ref": "Lv 14:5",
+     "cita": "matar la una avecilla en un vaso de barro sobre aguas vivas"
+    },
+    {
+     "texto": "Mojarían los demás elementos con la avecilla viva en la sangre de la muerta sobre las aguas vivas",
+     "certeza": "texto",
+     "ref": "Lv 14:6",
+     "cita": "en la sangre de la avecilla muerta sobre las aguas vivas"
+    },
+    {
+     "texto": "Rociaría siete veces sobre el que se purifica y soltaría la avecilla viva sobre el campo",
+     "certeza": "texto",
+     "ref": "Lv 14:7",
+     "cita": "soltará la avecilla viva sobre la haz del campo"
+    },
+    {
+     "texto": "Con los mismos elementos se rociaría siete veces la casa con plaga",
+     "certeza": "texto",
+     "ref": "Lv 14:51",
+     "cita": "rociará la casa siete veces"
+    }
+   ],
+   "externo": []
+  },
+  "omer-de-las-primicias": {
+   "nombre": "Omer de las primicias",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:10",
+     "fin": "Lv 23:14"
+    }
+   ],
+   "personas": [],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Un omer de los primeros frutos de la siega que el sacerdote mece delante de Jehová el día siguiente al sábado; hasta entonces no se come pan nuevo.",
+   "datos": [
+    {
+     "texto": "Se traería al sacerdote un omer de las primicias de la siega",
+     "certeza": "texto",
+     "ref": "Lv 23:10",
+     "cita": "traeréis al sacerdote un omer por primicia de los primeros frutos de vuestra siega"
+    },
+    {
+     "texto": "El sacerdote lo mecería delante de Jehová el día siguiente al sábado",
+     "certeza": "texto",
+     "ref": "Lv 23:11",
+     "cita": "el siguiente día del sábado lo mecerá el sacerdote"
+    },
+    {
+     "texto": "Ese día se ofrecería un cordero de un año sin defecto en holocausto",
+     "certeza": "texto",
+     "ref": "Lv 23:12",
+     "cita": "un cordero de un año, sin defecto, en holocausto"
+    },
+    {
+     "texto": "Hasta ese día no se comería pan, ni grano tostado, ni espiga fresca",
+     "certeza": "texto",
+     "ref": "Lv 23:14",
+     "cita": "no comeréis pan, ni grano tostado, ni espiga fresca"
+    }
+   ],
+   "externo": []
+  },
+  "dos-panes-mecidos": {
+   "nombre": "Dos panes de las primicias",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:15",
+     "fin": "Lv 23:21"
+    }
+   ],
+   "personas": [],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Dos panes con levadura, de dos décimas de flor de harina, que se mecen a los cincuenta días como primicias.",
+   "datos": [
+    {
+     "texto": "Se contarían cincuenta días hasta el día siguiente al séptimo sábado y se ofrecería un nuevo presente",
+     "certeza": "texto",
+     "ref": "Lv 23:16",
+     "cita": "contaréis cincuenta días"
+    },
+    {
+     "texto": "Traerían de sus habitaciones dos panes de dos décimas de flor de harina, cocidos con levadura",
+     "certeza": "texto",
+     "ref": "Lv 23:17",
+     "cita": "dos panes para ofrenda mecida, que serán de dos décimas de flor de harina, cocidos con levadura"
+    },
+    {
+     "texto": "Con el pan se ofrecerían siete corderos, un becerro y dos carneros",
+     "certeza": "texto",
+     "ref": "Lv 23:18",
+     "cita": "siete corderos de un año sin defecto, y un becerro de la vacada y dos carneros"
+    }
+   ],
+   "externo": []
+  },
+  "ramos-de-las-cabanas": {
+   "nombre": "Ramos y cabañas de la fiesta",
+   "tipo": "fiesta",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:40",
+     "fin": "Lv 23:43"
+    }
+   ],
+   "personas": [],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Ramos de árboles con los que se hace fiesta siete días y cabañas en las que habita todo natural de Israel.",
+   "datos": [
+    {
+     "texto": "El primer día tomarían gajos con fruto de árbol hermoso, ramos de palmas, ramas de árboles espesos y sauces de los arroyos",
+     "certeza": "texto",
+     "ref": "Lv 23:40",
+     "cita": "gajos con fruto de árbol hermoso, ramos de palmas, y ramas de árboles espesos, y sauces de los arroyos"
+    },
+    {
+     "texto": "Todo natural de Israel habitaría en cabañas siete días",
+     "certeza": "texto",
+     "ref": "Lv 23:42",
+     "cita": "En cabañas habitaréis siete días"
+    },
+    {
+     "texto": "El motivo: que sepan los descendientes que Jehová hizo habitar en cabañas a los hijos de Israel al sacarlos de Egipto",
+     "certeza": "texto",
+     "ref": "Lv 23:43",
+     "cita": "en cabañas hice yo habitar á los hijos de Israel"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "consagracion-a-la-puerta-del-tabernaculo": {
+   "nombre": "Consagración de Aarón y sus hijos a la puerta del tabernáculo",
+   "apariciones": [
+    {
+     "inicio": "Lv 8:1",
+     "fin": "Lv 8:36"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Nadab_1",
+    "Abihu_1",
+    "Eleazar_1",
+    "Ithamar_1"
+   ],
+   "objetos": [
+    "vestiduras-sagradas",
+    "racional-del-juicio",
+    "urim-y-tumim",
+    "placa-de-santidad",
+    "aceite-de-la-uncion",
+    "altar-del-holocausto",
+    "carnero-de-las-consagraciones"
+   ],
+   "resumen": "Moisés reúne a la congregación a la puerta del tabernáculo, lava, viste y unge a Aarón y a sus hijos y los consagra durante siete días con sacrificios.",
+   "datos": [
+    {
+     "texto": "Jehová mandó reunir a toda la congregación a la puerta del tabernáculo del testimonio",
+     "certeza": "texto",
+     "ref": "Lv 8:3",
+     "cita": "reune toda la congregación á la puerta del tabernáculo del testimonio"
+    },
+    {
+     "texto": "La congregación se juntó a la puerta",
+     "certeza": "texto",
+     "ref": "Lv 8:4",
+     "cita": "juntóse la congregación á la puerta del tabernáculo del testimonio"
+    },
+    {
+     "texto": "Moisés lavó con agua a Aarón y a sus hijos",
+     "certeza": "texto",
+     "ref": "Lv 8:6",
+     "cita": "lavólos con agua"
+    },
+    {
+     "texto": "Aarón y sus hijos no saldrían de la puerta del tabernáculo en siete días, hasta cumplirse su consagración",
+     "certeza": "texto",
+     "ref": "Lv 8:33",
+     "cita": "no saldréis en siete días"
+    },
+    {
+     "texto": "Aarón y sus hijos hicieron todo lo que Jehová mandó por medio de Moisés",
+     "certeza": "texto",
+     "ref": "Lv 8:36",
+     "cita": "hicieron todas las cosas que mandó Jehová por medio de Moisés"
+    },
+    {
+     "texto": "El texto no dice dónde estaba el tabernáculo dentro del campamento; solo habla de su «puerta»",
+     "certeza": "inferido",
+     "ref": "Lv 8:3",
+     "cita": "á la puerta del tabernáculo del testimonio"
+    }
+   ],
+   "externo": [],
+   "lugar": "desierto-de-sinai"
+  },
+  "fuego-de-jehova-sobre-el-altar": {
+   "nombre": "El día octavo: la gloria de Jehová y el fuego sobre el altar",
+   "apariciones": [
+    {
+     "inicio": "Lv 9:1",
+     "fin": "Lv 9:24"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Nadab_1",
+    "Abihu_1",
+    "Eleazar_1",
+    "Ithamar_1"
+   ],
+   "objetos": [
+    "altar-del-holocausto",
+    "fuego-del-altar"
+   ],
+   "resumen": "Al octavo día Aarón ofrece por sí y por el pueblo; Moisés y Aarón bendicen y la gloria de Jehová aparece con fuego que consume el holocausto.",
+   "datos": [
+    {
+     "texto": "Moisés llamó a Aarón, a sus hijos y a los ancianos de Israel el día octavo",
+     "certeza": "texto",
+     "ref": "Lv 9:1",
+     "cita": "que Moisés llamó á Aarón y á sus hijos, y á los ancianos de Israel"
+    },
+    {
+     "texto": "Moisés anunció que Jehová se aparecería ese día",
+     "certeza": "texto",
+     "ref": "Lv 9:4",
+     "cita": "porque Jehová se aparecerá hoy á vosotros"
+    },
+    {
+     "texto": "Aarón alzó sus manos hacia el pueblo y lo bendijo",
+     "certeza": "texto",
+     "ref": "Lv 9:22",
+     "cita": "alzó Aarón sus manos hacia el pueblo"
+    },
+    {
+     "texto": "La gloria de Jehová se apareció a todo el pueblo",
+     "certeza": "texto",
+     "ref": "Lv 9:23",
+     "cita": "la gloria de Jehová se apareció á todo el pueblo"
+    },
+    {
+     "texto": "Salió fuego de delante de Jehová y consumió el holocausto y los sebos; el pueblo alabó y cayó sobre sus rostros",
+     "certeza": "texto",
+     "ref": "Lv 9:24",
+     "cita": "Y salió fuego de delante de Jehová, y consumió el holocausto y los sebos sobre el altar"
+    }
+   ],
+   "externo": [],
+   "lugar": "desierto-de-sinai"
+  },
+  "muerte-de-nadab-y-abiu": {
+   "nombre": "Muerte de Nadab y Abiú ante Jehová",
+   "apariciones": [
+    {
+     "inicio": "Lv 10:1",
+     "fin": "Lv 10:7"
+    }
+   ],
+   "personas": [
+    "Nadab_1",
+    "Abihu_1",
+    "Moses_1",
+    "Aaron_1",
+    "Mishael_1",
+    "Elzaphan_1",
+    "Eleazar_1",
+    "Ithamar_1"
+   ],
+   "objetos": [
+    "incensarios",
+    "fuego-del-altar",
+    "aceite-de-la-uncion"
+   ],
+   "resumen": "Nadab y Abiú ofrecen fuego extraño con sus incensarios; sale fuego de delante de Jehová y los mata. Moisés manda sacar los cuerpos y prohíbe el duelo a sus familiares. Contenido violento: el texto lo cuenta sin detalles.",
+   "datos": [
+    {
+     "texto": "Ofrecieron fuego extraño que Jehová nunca les mandó",
+     "certeza": "texto",
+     "ref": "Lv 10:1",
+     "cita": "fuego extraño, que él nunca les mandó"
+    },
+    {
+     "texto": "Salió fuego de delante de Jehová que los quemó y murieron delante de Jehová",
+     "certeza": "texto",
+     "ref": "Lv 10:2",
+     "cita": "salió fuego de delante de Jehová que los quemó, y murieron delante de Jehová"
+    },
+    {
+     "texto": "Moisés recordó a Aarón lo dicho por Jehová: «En mis allegados me santificaré»; Aarón calló",
+     "certeza": "texto",
+     "ref": "Lv 10:3",
+     "cita": "En mis allegados me santificaré, y en presencia de todo el pueblo seré glorificado"
+    },
+    {
+     "texto": "Moisés llamó a Misael y a Elzafán, hijos de Uziel, para sacar a sus hermanos fuera del campo",
+     "certeza": "texto",
+     "ref": "Lv 10:4",
+     "cita": "Llegaos y sacad á vuestros hermanos de delante del santuario fuera del campo"
+    },
+    {
+     "texto": "Moisés prohibió a Aarón, Eleazar e Itamar descubrir sus cabezas y rasgar sus vestidos, y dijo que Israel lamentaría el incendio",
+     "certeza": "texto",
+     "ref": "Lv 10:6",
+     "cita": "vuestros hermanos, toda la casa de Israel, lamentarán el incendio que Jehová ha hecho"
+    },
+    {
+     "texto": "No debían salir de la puerta del tabernáculo y ellos obedecieron",
+     "certeza": "texto",
+     "ref": "Lv 10:7",
+     "cita": "Y ellos hicieron conforme al dicho de Moisés"
+    }
+   ],
+   "externo": [],
+   "lugar": "desierto-de-sinai"
+  },
+  "dia-de-la-expiacion": {
+   "nombre": "El día de la expiación",
+   "apariciones": [
+    {
+     "inicio": "Lv 16:1",
+     "fin": "Lv 16:34"
+    },
+    {
+     "inicio": "Lv 23:26",
+     "fin": "Lv 23:32"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "objetos": [
+    "dos-machos-cabrios",
+    "incensarios",
+    "propiciatorio",
+    "vestiduras-sagradas",
+    "fuego-del-altar",
+    "altar-del-holocausto"
+   ],
+   "resumen": "Una vez al año, el décimo día del mes séptimo, el sumo sacerdote entra tras el velo con sangre e incienso, expía el santuario y envía el macho cabrío vivo al desierto; el pueblo aflige su alma y no trabaja.",
+   "datos": [
+    {
+     "texto": "La instrucción llegó después de la muerte de los dos hijos de Aarón",
+     "certeza": "texto",
+     "ref": "Lv 16:1",
+     "cita": "después que murieron los dos hijos de Aarón"
+    },
+    {
+     "texto": "Es en el mes séptimo, a los diez del mes; se afligirían las almas y no se haría ninguna obra",
+     "certeza": "texto",
+     "ref": "Lv 16:29",
+     "cita": "En el mes séptimo, á los diez del mes, afligiréis vuestras almas, y ninguna obra haréis"
+    },
+    {
+     "texto": "Ese día se les reconciliaría para limpiarlos de todos sus pecados",
+     "certeza": "texto",
+     "ref": "Lv 16:30",
+     "cita": "en este día se os reconciliará para limpiaros"
+    },
+    {
+     "texto": "Es estatuto perpetuo: expiar a los hijos de Israel de todos sus pecados una vez en el año",
+     "certeza": "texto",
+     "ref": "Lv 16:34",
+     "cita": "una vez en el año"
+    },
+    {
+     "texto": "Se llama «el día de las expiaciones», con santa convocación",
+     "certeza": "texto",
+     "ref": "Lv 23:27",
+     "cita": "será el día de las expiaciones"
+    },
+    {
+     "texto": "El sábado de reposo comienza a los nueve del mes en la tarde y dura de tarde a tarde",
+     "certeza": "texto",
+     "ref": "Lv 23:32",
+     "cita": "de tarde á tarde holgaréis vuestro sábado"
+    }
+   ],
+   "externo": []
+  },
+  "sabado-semanal": {
+   "nombre": "El sábado de Jehová (Lv 23:1-3)",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:1",
+     "fin": "Lv 23:3"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Las solemnidades de Jehová empiezan por el sábado: seis días de trabajo y el séptimo, reposo y santa convocación.",
+   "datos": [
+    {
+     "texto": "Seis días se trabajaría y el séptimo sería sábado de reposo, convocación santa",
+     "certeza": "texto",
+     "ref": "Lv 23:3",
+     "cita": "Seis días se trabajará, y el séptimo día sábado de reposo será, convocación santa"
+    }
+   ],
+   "externo": []
+  },
+  "pascua-y-panes-sin-levadura": {
+   "nombre": "Pascua y fiesta de los panes sin levadura",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:4",
+     "fin": "Lv 23:8"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Pascua el día catorce del primer mes, entre las dos tardes; desde el quince, siete días de panes sin levadura.",
+   "datos": [
+    {
+     "texto": "La Pascua de Jehová sería en el mes primero, a los catorce del mes, entre las dos tardes",
+     "certeza": "texto",
+     "ref": "Lv 23:5",
+     "cita": "En el mes primero, á los catorce del mes, entre las dos tardes, pascua es de Jehová"
+    },
+    {
+     "texto": "El día quince comenzaría la solemnidad de los ázimos, siete días",
+     "certeza": "texto",
+     "ref": "Lv 23:6",
+     "cita": "siete días comeréis ázimos"
+    },
+    {
+     "texto": "El primer día habría santa convocación y ninguna obra servil",
+     "certeza": "texto",
+     "ref": "Lv 23:7",
+     "cita": "ninguna obra servil haréis"
+    }
+   ],
+   "externo": []
+  },
+  "primicias-y-el-omer": {
+   "nombre": "La ofrenda de las primicias (el omer)",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:9",
+     "fin": "Lv 23:14"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "omer-de-las-primicias"
+   ],
+   "resumen": "Cuando entren en la tierra, llevarán al sacerdote un omer de los primeros frutos de la siega; hasta ese día no comerán pan nuevo.",
+   "datos": [
+    {
+     "texto": "La orden vale para cuando hayan entrado en la tierra que Jehová les da",
+     "certeza": "texto",
+     "ref": "Lv 23:10",
+     "cita": "Cuando hubiereis entrado en la tierra que yo os doy"
+    },
+    {
+     "texto": "Es estatuto perpetuo, en todas sus habitaciones",
+     "certeza": "texto",
+     "ref": "Lv 23:14",
+     "cita": "estatuto perpetuo es por vuestras edades"
+    }
+   ],
+   "externo": []
+  },
+  "los-cincuenta-dias": {
+   "nombre": "Los cincuenta días: el nuevo presente",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:15",
+     "fin": "Lv 23:22"
+    }
+   ],
+   "personas": [],
+   "objetos": [
+    "dos-panes-mecidos"
+   ],
+   "resumen": "Siete semanas completas desde el omer, cincuenta días, y entonces un nuevo presente con dos panes de primicias.",
+   "datos": [
+    {
+     "texto": "Se contarían siete semanas cumplidas desde el día siguiente al sábado en que ofrecieron el omer",
+     "certeza": "texto",
+     "ref": "Lv 23:15",
+     "cita": "siete semanas cumplidas serán"
+    },
+    {
+     "texto": "Al llegar al día siguiente del séptimo sábado, cincuenta días, ofrecerían nuevo presente a Jehová",
+     "certeza": "texto",
+     "ref": "Lv 23:16",
+     "cita": "contaréis cincuenta días; entonces ofreceréis nuevo presente á Jehová"
+    },
+    {
+     "texto": "Al segar no recogerían el rincón del campo: lo dejarían al pobre y al extranjero",
+     "certeza": "texto",
+     "ref": "Lv 23:22",
+     "cita": "para el pobre, y para el extranjero la dejarás"
+    }
+   ],
+   "externo": []
+  },
+  "son-de-trompetas": {
+   "nombre": "La conmemoración al son de trompetas",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:23",
+     "fin": "Lv 23:25"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "El primer día del mes séptimo: sábado, conmemoración al son de trompetas y santa convocación.",
+   "datos": [
+    {
+     "texto": "Sería en el mes séptimo, al primero del mes, una conmemoración al son de trompetas",
+     "certeza": "texto",
+     "ref": "Lv 23:24",
+     "cita": "una conmemoración al son de trompetas"
+    }
+   ],
+   "externo": []
+  },
+  "fiesta-de-las-cabanas": {
+   "nombre": "La solemnidad de las cabañas",
+   "apariciones": [
+    {
+     "inicio": "Lv 23:33",
+     "fin": "Lv 23:44"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "ramos-de-las-cabanas"
+   ],
+   "resumen": "Desde el día quince del mes séptimo, siete días de fiesta viviendo en cabañas, con santa convocación el primer y el octavo día.",
+   "datos": [
+    {
+     "texto": "Sería a los quince días del mes séptimo, por siete días",
+     "certeza": "texto",
+     "ref": "Lv 23:34",
+     "cita": "A los quince días de este mes séptimo será la solemnidad de las cabañas á Jehová por siete días"
+    },
+    {
+     "texto": "El octavo día habría santa convocación",
+     "certeza": "texto",
+     "ref": "Lv 23:36",
+     "cita": "el octavo día tendréis santa convocación"
+    },
+    {
+     "texto": "Es estatuto perpetuo, cada año, en el mes séptimo",
+     "certeza": "texto",
+     "ref": "Lv 23:41",
+     "cita": "en el mes séptimo la haréis"
+    }
+   ],
+   "externo": []
+  },
+  "ano-sabatico": {
+   "nombre": "El año sabático de la tierra",
+   "apariciones": [
+    {
+     "inicio": "Lv 25:1",
+     "fin": "Lv 25:7"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Cada séptimo año la tierra descansa: no se siembra ni se poda, y lo que nace solo es para todos, hasta los animales.",
+   "datos": [
+    {
+     "texto": "Seis años se sembraría la tierra y se podaría la viña",
+     "certeza": "texto",
+     "ref": "Lv 25:3",
+     "cita": "Seis años sembrarás tu tierra"
+    },
+    {
+     "texto": "El séptimo año la tierra tendría sábado de holganza para Jehová",
+     "certeza": "texto",
+     "ref": "Lv 25:4",
+     "cita": "el séptimo año la tierra tendrá sábado de holganza"
+    },
+    {
+     "texto": "Lo que naciera de suyo sería alimento para el dueño, siervos, jornalero, extranjero",
+     "certeza": "texto",
+     "ref": "Lv 25:6",
+     "cita": "para comer á ti, y á tu siervo"
+    }
+   ],
+   "externo": []
+  },
+  "anio-del-jubileo": {
+   "nombre": "El año del jubileo",
+   "apariciones": [
+    {
+     "inicio": "Lv 25:8",
+     "fin": "Lv 25:17"
+    }
+   ],
+   "personas": [],
+   "objetos": [
+    "trompeta-del-jubileo"
+   ],
+   "resumen": "Después de siete semanas de años (49), el año cincuenta se proclama libertad y cada uno vuelve a su posesión y a su familia; las compraventas se calculan por los años que quedan hasta el jubileo.",
+   "datos": [
+    {
+     "texto": "Se contarían siete semanas de años, cuarenta y nueve años",
+     "certeza": "texto",
+     "ref": "Lv 25:8",
+     "cita": "vendrán á serte cuarenta y nueve años"
+    },
+    {
+     "texto": "Se santificaría el año cincuenta y se pregonaría libertad en la tierra a todos sus moradores",
+     "certeza": "texto",
+     "ref": "Lv 25:10",
+     "cita": "pregonaréis libertad en la tierra á todos sus moradores"
+    },
+    {
+     "texto": "Cada uno volvería a su posesión y a su familia",
+     "certeza": "texto",
+     "ref": "Lv 25:10",
+     "cita": "volveréis cada uno á su posesión, y cada cual volverá á su familia"
+    },
+    {
+     "texto": "Se compraría al prójimo según el número de los años después del jubileo",
+     "certeza": "texto",
+     "ref": "Lv 25:15",
+     "cita": "Conforme al número de los años después del jubileo comprarás"
+    },
+    {
+     "texto": "Con más años, más precio; con menos, menos precio",
+     "certeza": "texto",
+     "ref": "Lv 25:16",
+     "cita": "Conforme á la multitud de los años aumentarás el precio"
+    }
+   ],
+   "externo": []
+  },
+  "lapidacion-fuera-del-campamento": {
+   "nombre": "El blasfemo y su sentencia fuera del real",
+   "apariciones": [
+    {
+     "inicio": "Lv 24:10",
+     "fin": "Lv 24:14"
+    },
+    {
+     "inicio": "Lv 24:23",
+     "fin": "Lv 24:23"
+    }
+   ],
+   "personas": [
+    "Hijo_de_Selomit",
+    "Shelomith_1",
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Un hombre pronuncia el Nombre y maldice en el real; lo guardan hasta que Jehová declara qué hacer y, por mandato suyo, la congregación lo saca fuera del real y lo apedrea. Contenido violento: el texto lo cuenta en pocas palabras.",
+   "datos": [
+    {
+     "texto": "Lo pusieron en custodia hasta que Jehová declarase qué hacer",
+     "certeza": "texto",
+     "ref": "Lv 24:12",
+     "cita": "hasta que les fuese declarado por palabra de Jehová"
+    },
+    {
+     "texto": "Jehová mandó sacarlo fuera del real; los que lo oyeron pondrían las manos sobre su cabeza y toda la congregación lo apedrearía",
+     "certeza": "texto",
+     "ref": "Lv 24:14",
+     "cita": "Saca al blasfemo fuera del real"
+    },
+    {
+     "texto": "La misma pena valía para el extranjero y para el natural",
+     "certeza": "texto",
+     "ref": "Lv 24:16",
+     "cita": "así el extranjero como el natural"
+    },
+    {
+     "texto": "Un mismo derecho regiría para el extranjero y para el natural",
+     "certeza": "texto",
+     "ref": "Lv 24:22",
+     "cita": "Un mismo derecho tendréis"
+    },
+    {
+     "texto": "Lo sacaron fuera del real y lo apedrearon, como Jehová había mandado a Moisés",
+     "certeza": "texto",
+     "ref": "Lv 24:23",
+     "cita": "sacaron al blasfemo fuera del real"
+    }
+   ],
+   "externo": []
+  },
+  "purificacion-del-leproso": {
+   "nombre": "El leproso fuera del campamento y su purificación",
+   "apariciones": [
+    {
+     "inicio": "Lv 13:45",
+     "fin": "Lv 13:46"
+    },
+    {
+     "inicio": "Lv 14:2",
+     "fin": "Lv 14:7"
+    },
+    {
+     "inicio": "Lv 14:10",
+     "fin": "Lv 14:12"
+    },
+    {
+     "inicio": "Lv 14:33",
+     "fin": "Lv 14:34"
+    }
+   ],
+   "personas": [],
+   "objetos": [
+    "avecillas-e-hisopo"
+   ],
+   "resumen": "Quien tenía llaga de lepra vivía solo fuera del real; si sanaba, el sacerdote salía a verlo y se hacía el rito de las avecillas y, al octavo día, las ofrendas.",
+   "datos": [
+    {
+     "texto": "Habitaría solo; fuera del real sería su morada mientras tuviera la llaga",
+     "certeza": "texto",
+     "ref": "Lv 13:46",
+     "cita": "habitará solo; fuera del real será su morada"
+    },
+    {
+     "texto": "El sacerdote saldría fuera del real a examinar la llaga",
+     "certeza": "texto",
+     "ref": "Lv 14:3",
+     "cita": "saldrá fuera del real"
+    },
+    {
+     "texto": "El día octavo se tomarían dos corderos sin defecto, una cordera de un año, flor de harina y un log de aceite",
+     "certeza": "texto",
+     "ref": "Lv 14:10",
+     "cita": "tomará dos corderos sin defecto"
+    },
+    {
+     "texto": "Levítico aplica la «plaga de lepra» también a una casa (y en 13:47 a los vestidos): no se limita a la piel",
+     "certeza": "texto",
+     "ref": "Lv 14:34",
+     "cita": "plaga de lepra en alguna casa"
+    }
+   ],
+   "externo": []
+  },
+  "monte-sinai": {
+   "nombre": "Monte Sinaí",
+   "apariciones": [
+    {
+     "inicio": "Lv 7:38",
+     "fin": "Lv 7:38"
+    },
+    {
+     "inicio": "Lv 25:1",
+     "fin": "Lv 25:1"
+    },
+    {
+     "inicio": "Lv 26:46",
+     "fin": "Lv 26:46"
+    },
+    {
+     "inicio": "Lv 27:34",
+     "fin": "Lv 27:34"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Monte donde Dios desciende en fuego y humo, da las diez palabras y las tablas y renueva la alianza. En Levítico Dios da allí las leyes que Moisés transmite.",
+   "datos": [
+    {
+     "texto": "Jehová habló a Moisés en el monte Sinaí",
+     "certeza": "texto",
+     "ref": "Lv 25:1",
+     "cita": "Y JEHOVÁ habló á Moisés en el monte de Sinaí"
+    },
+    {
+     "texto": "Los decretos, derechos y leyes fueron establecidos entre Jehová e Israel en el monte Sinaí por mano de Moisés",
+     "certeza": "texto",
+     "ref": "Lv 26:46",
+     "cita": "decretos, derechos y leyes que estableció Jehová entre sí y los hijos de Israel en el monte de Sinaí"
+    },
+    {
+     "texto": "Estos mandamientos se dieron a Moisés para los hijos de Israel en el monte Sinaí",
+     "certeza": "texto",
+     "ref": "Lv 27:34",
+     "cita": "en el monte de Sinaí"
+    }
+   ],
+   "externo": [],
+   "lugar": "sinai"
+  }
+ }
+}

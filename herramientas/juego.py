@@ -48,6 +48,12 @@ HECHOS = {
         "objeto_en": [("Ex 4:2", "vara de Moisés")],
         "principal": [(MOISES, "Ex", None)],
     },
+    "Lv": {
+        "aparece": [("Nadab_1", "Lv 10:1"), ("Abihu_1", "Lv 10:1"), ("Shelomith_1", "Lv 24:11")],
+        "objeto_en": [("Lv 16:8", "macho cabrío de Azazel"), ("Lv 8:8", "Urim y Tumim")],
+        "escenario_lugar": ["sinai"],
+        "principal": [("Aaron_1", "Lv", None), ("Nadab_1", "Lv", "Lv 10")],
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

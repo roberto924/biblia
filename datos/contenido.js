@@ -1,5 +1,5 @@
 window.BIBLIA_CONTENIDO = {
- "generado": "2026-11-11T14:01:30+00:00",
+ "generado": "2026-11-11T19:48:11+00:00",
  "origen": "clasificación editorial del proyecto, no del texto bíblico",
  "criterio": "Clasificación editorial del proyecto para el perfil niño (7-12 años, leyendo con la familia): se pliega (alto) lo sexual explícito o insinuado con detalle, la violación, el incesto, la matanza descrita y el infanticidio; se anota (medio) lo breve o legal. No se marcan menciones sin detalle ni muerte natural. El texto nunca se borra.",
  "marcas": [
@@ -275,6 +275,118 @@ window.BIBLIA_CONTENIDO = {
    "categoria": "violencia",
    "nivel": "medio",
    "motivo": "Dios hiere al pueblo por haber hecho el becerro de oro."
+  },
+  {
+   "desde": "Lv 10:1",
+   "hasta": "Lv 10:2",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Fuego salido de delante de Jehová consume a Nadab y Abiú, hijos de Aarón, por ofrecer fuego extraño."
+  },
+  {
+   "desde": "Lv 15:16",
+   "hasta": "Lv 15:18",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley sobre la impureza por derramamiento de semen y por la unión de hombre y mujer."
+  },
+  {
+   "desde": "Lv 15:24",
+   "hasta": "Lv 15:24",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley sobre quien se acuesta con una mujer durante su menstruación."
+  },
+  {
+   "desde": "Lv 18:6",
+   "hasta": "Lv 18:20",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Leyes que prohíben las uniones con parientes (incesto) y otras uniones; texto legal."
+  },
+  {
+   "desde": "Lv 18:21",
+   "hasta": "Lv 18:21",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Prohibición de entregar a los hijos para hacerlos pasar por el fuego a Moloc."
+  },
+  {
+   "desde": "Lv 18:22",
+   "hasta": "Lv 18:23",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Prohibición de las relaciones entre varones y con animales."
+  },
+  {
+   "desde": "Lv 19:20",
+   "hasta": "Lv 19:22",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley sobre quien se acuesta con una sierva desposada con otro."
+  },
+  {
+   "desde": "Lv 19:29",
+   "hasta": "Lv 19:29",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Prohibición de prostituir a la propia hija."
+  },
+  {
+   "desde": "Lv 20:1",
+   "hasta": "Lv 20:5",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Pena de muerte por apedreamiento para quien entrega a sus hijos a Moloc."
+  },
+  {
+   "desde": "Lv 20:9",
+   "hasta": "Lv 20:9",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Pena de muerte para quien maldice a su padre o a su madre."
+  },
+  {
+   "desde": "Lv 20:10",
+   "hasta": "Lv 20:21",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Penas, incluida la muerte, por adulterio, incesto y otras uniones prohibidas."
+  },
+  {
+   "desde": "Lv 20:27",
+   "hasta": "Lv 20:27",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Pena de muerte por apedreamiento para el adivino."
+  },
+  {
+   "desde": "Lv 21:9",
+   "hasta": "Lv 21:9",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "La hija del sacerdote que se prostituye será quemada al fuego."
+  },
+  {
+   "desde": "Lv 24:10",
+   "hasta": "Lv 24:23",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Un hombre blasfema el Nombre y es apedreado; ley del talión (ojo por ojo)."
+  },
+  {
+   "desde": "Lv 26:29",
+   "hasta": "Lv 26:29",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Entre los castigos anunciados: comerán la carne de sus propios hijos e hijas."
+  },
+  {
+   "desde": "Lv 27:29",
+   "hasta": "Lv 27:29",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "La persona dada por anatema no será rescatada: ha de morir."
   }
  ]
 };

@@ -631,6 +631,39 @@ if (existsSync(real)) {
     assert.deepEqual(j(N2.curiosidades({}, 'TM')), []); assert.deepEqual(j(N2.fichasColeccion({}, [])), []);
     assert.deepEqual(j(N2.nuevasAlLeer({}, [], 'x')), []); assert.equal(N2.sabiasQue({}, 'TM').size, 0);
   });
+  if ((D2.libros || []).some(l => l.id === 'Lv')) {
+    prueba('Levítico: selector de libro y plan por secciones', () => {
+      assert.deepEqual(j(N2.libros(D2)).map(l => l.id), ['Gn', 'Ex', 'Lv']);
+      assert.equal(N2.nombreLibro(D2, 'Lv'), 'Levítico');
+      assert.equal(N2.parseRef('Levítico 24:11').libro, 'Lv');
+      assert.ok(N2.clave('Lv 1:1') > N2.clave('Ex 40:38'));
+      const s = j(N2.seccionesPlan(D2, ['lv-01'], 'lv-02', 'Lv'));
+      assert.equal(s.length, 6); assert.ok(s.every(g => g.libro === 'Lv'));
+      assert.equal(s.reduce((n, g) => n + g.total, 0), D2.pasajes.filter(p => p.libro === 'Lv').length);
+      assert.equal(s[0].pasajes[0].n, 1, 'se numera dentro del libro'); assert.equal(s[0].leidos, 1);
+    });
+    prueba('Levítico: lector (pasajes sin huecos, nombres resaltados)', () => {
+      const ps = N2.pasajes(D2).filter(p => N2.libroDe(p) === 'Lv');
+      const vs = ps.flatMap(p => j(N2.versiculosDe(D2, p)).map(v => v.ref));
+      assert.equal(vs.length, 859); assert.equal(new Set(vs).size, 859);
+      assert.equal(vs[0], 'Lv 1:1'); assert.equal(vs[vs.length - 1], 'Lv 27:34');
+      assert.equal(N2.pasajeDe(D2, 'Lv 24:11').titulo, 'El blasfemo');
+      const ids = j(N2.personasEnCapitulo(D2, 10, 'Lv')).map(p => p.id);
+      ['Nadab_1', 'Abihu_1', 'Mishael_1', 'Elzaphan_1', 'Uzziel_1'].forEach(id => assert.ok(ids.includes(id), id));
+      const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, 'Lv 24:11'))).find(x => x.ref === 'Lv 24:11');
+      const seg = j(N2.segmentar(D2, v.ref, v.texto));
+      assert.deepEqual(seg.filter(x => x.persona).map(x => [x.texto, x.persona]),
+        [['Moisés', 'Moses_1'], ['Selomith', 'Shelomith_1'], ['Dribi', 'Dibri_1'], ['Dan', 'Dan_1']]);
+    });
+    const rc = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc)) prueba('Levítico: marcas de contenido (Nadab y Abiú, el blasfemo)', () => {
+      const cr = cargar(rc, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO, nino = { tipo: 'nino' };
+      assert.equal(NC.marcaDe(CR, 'Lv 10:1').categoria, 'violencia');
+      assert.equal(NC.accionVerso(CR, nino, 'Lv 24:16').accion, 'nota');
+      assert.equal(NC.marcaDe(CR, 'Lv 10:3'), null);
+      assert.equal(NC.marcaDe(CR, 'Lv 1:5'), null, 'los sacrificios no se marcan (misma escala que Éxodo)');
+    });
+  }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 // ---- Textos originales: alineación, testigos, variantes, voz y video (con pruebas/originales-ejemplo.js) ----
@@ -692,6 +725,37 @@ if (existsSync(real)) {
     assert.equal(NO.videosDeLibro({ videos: [{ libro: 'Ex', youtube_id: 'x"><script' }] }, 'Ex').length, 0);
     assert.equal(NO.escritura('שִׁבְעִים'), 'he'); assert.equal(NO.escritura('πέντε'), 'grc'); assert.equal(NO.escritura('setenta'), null);
   });
+}
+
+// ---- Textos originales reales: Levítico (datos/originales.js y datos/griego-swete.js) ----
+{
+  const ro = path.join(aqui, '..', 'datos', 'originales.js'), rg = path.join(aqui, '..', 'datos', 'griego-swete.js');
+  if (existsSync(real) && existsSync(ro) && existsSync(rg)) {
+    const cx = cargar(real, ro, rg, path.join(aqui, '..', 'app.js'));
+    const NO = cx.BibliaNucleo, D = cx.BIBLIA_DATOS, O = cx.BIBLIA_ORIGINALES, G = cx.BIBLIA_GRIEGO;
+    if ((D.libros || []).some(l => l.id === 'Lv')) {
+      console.log('Textos originales reales (Levítico)');
+      prueba('Levítico: todo versículo con hebreo y griego; TM 5:20-26 = RV 6:1-7 y Lv 6 corrido', () => {
+        const f = j(NO.alinearOriginales(D, { inicio: 'Lv 1:1', fin: 'Lv 27:34' }, O, G));
+        assert.equal(f.length, 859);
+        assert.ok(f.every(x => x.he && x.gr), 'ningún versículo de Lv sin hebreo ni griego');
+        const por = Object.fromEntries(f.map(x => [x.ref, x]));
+        assert.equal(por['Lv 6:1'].heNum, '5:20'); assert.equal(por['Lv 6:7'].heNum, '5:26');
+        assert.equal(por['Lv 6:8'].heNum, '6:1'); assert.equal(por['Lv 5:19'].heNum, null); assert.equal(por['Lv 7:1'].heNum, null);
+        assert.ok(por['Lv 16:8'].gr.includes('ἀποπομπαίῳ') && NO.escritura(por['Lv 16:8'].he) === 'he');
+      });
+      prueba('Levítico: testigos por pasaje y video del libro', () => {
+        const ids = refs => j(NO.testigosDe(O, refs)).map(t => t.id);
+        const a = ids(['Lv 16:8']);
+        assert.ok(['leningrado', 'vaticano', 'alejandrino'].every(x => a.includes(x)) && !a.includes('alepo') && !a.includes('sinaitico'));
+        assert.ok(ids(['Lv 21:1']).includes('sinaitico'), 'el Sinaítico conserva Lv 20:27-22:30');
+        assert.ok(ids(['Lv 26:14']).includes('4Q249j') && ids(['Lv 8:12']).includes('6Q2'));
+        assert.ok(!ids(['Ex 40:38']).includes('4Q156'), 'el targum sin contenido calculado no se atribuye a ningún pasaje');
+        const v = j(NO.videosDeLibro(O, 'Levítico'));
+        assert.equal(v[0].youtube_id, 'vKT8eo3hAMw'); assert.ok(v.every(x => x.libro === 'Lv'));
+      });
+    }
+  }
 }
 
 console.log('Recursos (imágenes, objetos, medios)');
