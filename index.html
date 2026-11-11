@@ -41,11 +41,24 @@
   <div class="dialogo-cuerpo"></div>
 </dialog>
 
+<dialog id="visor" class="visor" aria-labelledby="visor-titulo">
+  <div class="dialogo-cab visor-cab"><h2 id="visor-titulo">Imagen</h2>
+    <div class="visor-zoom" role="group" aria-label="Zoom">
+      <button type="button" class="boton mini-boton secundario" data-vzoom="-1" aria-label="Alejar"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10"/></svg></button>
+      <output id="visor-pct" aria-live="polite">100 %</output>
+      <button type="button" class="boton mini-boton secundario" data-vzoom="1" aria-label="Acercar"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10M10 5v10"/></svg></button>
+      <button type="button" class="boton mini-boton secundario" data-vzoom="0">Ajustar</button></div>
+    <button type="button" class="cerrar" data-cerrar aria-label="Cerrar visor"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+  <div class="visor-lienzo" id="visor-lienzo"></div>
+  <div class="visor-pie" id="visor-pie"></div>
+</dialog>
+
 <div id="nuevas" class="nuevas" role="status" aria-live="polite" hidden></div>
 <div id="aviso" class="aviso" role="status" hidden>Hay una versión nueva <button type="button" id="actualizar" class="boton">Actualizar</button></div>
 
 <script src="datos/biblia.js"></script>
 <script src="datos/mapa-base.js"></script>
+<script src="datos/recursos.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

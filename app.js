@@ -1097,7 +1097,48 @@ const Nucleo = (() => {
     return vs.slice().sort((a, b) => punt(b) - punt(a))[0];
   }
 
-  return { TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+  /* ---- Recursos (datos/recursos.js): arte, objetos, mapas antiguos, videos y audio ---- */
+  // Solo lo que se puede mostrar: con licencia, atribución y fuente, no rechazado y sin imagen si la licencia no lo permite.
+  const LIC_RESTRINGIDA = /^(desconocida|derechos reservados)$/i;
+  const recursoValido = f => !!(f && f.id && f.titulo && f.licencia && f.atribucion && /^https?:\/\//.test(f.url_fuente || '')
+    && f.auditoria !== 'RECHAZAR' && !(f.imagen && LIC_RESTRINGIDA.test(f.licencia)) && Array.isArray(f.rangos));
+  const cacheRec = new WeakMap();
+  const recursos = R => {
+    if (!R || typeof R !== 'object') return [];
+    if (!cacheRec.has(R)) cacheRec.set(R, (R.fichas || []).filter(recursoValido));
+    return cacheRec.get(R);
+  };
+  // Versículos (claves) del conjunto que caen dentro de los rangos de la ficha.
+  const solape = (f, ks) => ks.reduce((n, k) => n + (f.rangos.some(([a, b]) => k >= a && k <= b) ? 1 : 0), 0);
+  const amplitud = f => f.rangos.reduce((n, [a, b]) => n + (b - a), 0);
+  // Fichas que tocan esos versículos, de mayor a menor solapamiento; a igualdad, la más concreta y luego el orden del catálogo.
+  function recursosDe(R, claves, tipos) {
+    const ks = [...new Set((claves || []).filter(k => k !== null && k !== undefined))];
+    if (!ks.length) return [];
+    return recursos(R).map((f, i) => ({ f, i, n: tipos && !tipos.includes(f.tipo) ? 0 : solape(f, ks) })).filter(x => x.n > 0)
+      .sort((x, y) => y.n - x.n || amplitud(x.f) - amplitud(y.f) || x.i - y.i).map(x => x.f);
+  }
+  // Imagen del pasaje: solo arte, reconstrucción o ilustración con imagen local; la primera es la principal.
+  const imagenesDe = (R, claves) => recursosDe(R, claves, ['arte', 'reconstruccion', 'ilustracion']).filter(f => f.imagen);
+  // Acompañante: objetos y otras imágenes (sin las ya mostradas arriba) y videos o audio.
+  function relacionadosDe(R, claves, excluir) {
+    const fuera = new Set(excluir || []), r = recursosDe(R, claves, ['arqueologia', 'arte', 'reconstruccion', 'ilustracion']).filter(f => !fuera.has(f.id));
+    return { objetos: r.filter(f => f.tipo === 'arqueologia'), imagenes: r.filter(f => f.tipo !== 'arqueologia'), medios: recursosDe(R, claves, ['video', 'audio']) };
+  }
+  const mapasAntiguos = R => recursos(R).filter(f => f.tipo === 'mapa_antiguo');
+  // Rótulo de certeza según el tipo (principio del proyecto: registro histórico ≠ arte ≠ ilustración ≠ reconstrucción).
+  function rotuloRecurso(f) {
+    if (!f) return '';
+    if (f.tipo === 'arte') return 'Arte · interpretación';
+    if (f.tipo === 'reconstruccion') return 'Reconstrucción moderna';
+    if (f.tipo === 'ilustracion') return 'Ilustración moderna';
+    if (f.tipo === 'mapa_antiguo') return 'Mapa antiguo';
+    if (f.tipo === 'arqueologia') return f.relacion === 'contexto' ? 'Contexto de la época' : 'Objeto histórico';
+    return 'Fuente externa';
+  }
+
+  return { recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
+    TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
     vecinosFechados, despuesDe, contemporaneos, compararEvento, esDiluvio, lineaDeTiempo, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
@@ -1116,6 +1157,7 @@ globalThis.BibliaNucleo = Nucleo;
 if (typeof document !== 'undefined') (function () {
   const N = Nucleo;
   let D = window.BIBLIA_DATOS || null;
+  const R = window.BIBLIA_RECURSOS || null; // imágenes, objetos, mapas antiguos y medios (herramientas/recursos.py)
   const $ = s => document.querySelector(s);
   const main = $('#principal');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -1256,6 +1298,7 @@ if (typeof document !== 'undefined') (function () {
         <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
         <h1 tabindex="-1">${esc(p.titulo)}</h1>
         ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}</header>
+      ${imagenPasajeHTML(p)}
       ${herramientasPasajeHTML()}
       ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
       <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.${ORIG.o && N.variantesDe(ORIG.o, vs.map(v => v.ref)).length ? ' «var.» señala una variante entre manuscritos.' : ''}</p>
@@ -1353,6 +1396,7 @@ if (typeof document !== 'undefined') (function () {
         <p class="meta">${tr}, con los supuestos elegidos en Tiempo.</p></section>`;
     }
     if (!html) html = `<p class="vacio-txt">${estado.activo ? 'Este versículo no tiene personas, vínculos ni edades en los datos. Pulsa otro número o vuelve a todo el pasaje.' : 'Este pasaje no tiene personas, vínculos ni edades en los datos.'}</p>`;
+    html += recursosAcompHTML(p, refs, sec, I);
     html += sec('De dónde sale este texto', origenAcompHTML(refs), I('M6 3h6l3 3v11H6zM12 3v3h3M8.5 10h4M8.5 13h4'));
     return `<div class="acomp-cab">
         <button type="button" class="acomp-asa" data-hoja aria-expanded="${!!estado.hoja}" aria-controls="acomp-cuerpo">
@@ -1625,6 +1669,140 @@ if (typeof document !== 'undefined') (function () {
     return `<section class="video-libro" aria-label="Video sobre ${esc(nom)}"><button type="button" class="video-fachada vacia" data-video-cargar="${esc(lb)}">
         <span class="video-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 5v10l8-5z"/></svg></span><span class="video-invita">De qué trata ${esc(nom)}: ver el video</span></button>
       ${ORIG.est.o === 'cargando' ? '<p class="meta" data-estado-carga>Cargando…</p>' : ORIG.est.o === 'error' ? `<p class="vacio-txt">${NO_DISP.o}</p>` : '<p class="video-pie"><span class="video-rotulo">Video de Proyecto Biblia · <span class="etiqueta externa">Fuente externa</span></span> <span class="meta">Se carga desde YouTube al pulsar.</span></p>'}</section>`;
+  }
+
+  /* ---------- Imágenes, objetos, mapas antiguos, videos y audio (datos/recursos.js, ~100 KB: se carga al arrancar) ---------- */
+  // Las imágenes vienen de recursos/imagenes/ y se piden con loading="lazy" solo cuando se ven.
+  const urlRec = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '';
+  const linkRec = (u, t) => urlRec(u) ? `<a href="${esc(urlRec(u))}" target="_blank" rel="noopener noreferrer">${t}</a>` : '';
+  const recPorId = id => N.recursos(R).find(f => f.id === id) || null;
+  const rotuloRec = f => `<span class="etiqueta rec-rotulo rec-${esc(f.tipo)}${f.relacion === 'contexto' ? ' rec-contexto' : ''}">${esc(N.rotuloRecurso(f))}</span>`
+    + (/debatida/i.test(f.certeza || '') ? ' <span class="etiqueta rec-debatida">relación debatida</span>' : '');
+  const autorFecha = f => [f.autor, f.fecha].filter(Boolean).map(esc).join(', ');
+  const licRec = f => { const l = String(f.licencia || ''); return esc(/^desconocida$/i.test(l) ? 'Licencia desconocida' : l.charAt(0).toUpperCase() + l.slice(1)); };
+  // Pie: tipo rotulado · autor, fecha · licencia · institución · Fuente, y la atribución exacta (lo exige CC BY-SA).
+  function pieRec(f, conTitulo) {
+    const partes = [autorFecha(f), licRec(f), esc(f.institucion)].filter(Boolean);
+    return `${conTitulo ? `<strong class="rec-titulo">${esc(f.titulo)}</strong>` : ''}
+      <span class="rec-datos">${rotuloRec(f)} ${partes.join(' · ')}${urlRec(f.url_fuente) ? ' · ' + linkRec(f.url_fuente, 'Fuente') : ''}</span>
+      <span class="rec-atrib">${esc(f.atribucion)}</span>`;
+  }
+  const altRec = f => `${f.titulo}. ${f.descripcion || ''}`.trim();
+  const imgRec = (f, cls) => `<img class="${cls}" src="${esc(f.imagen)}" alt="${esc(altRec(f))}" loading="lazy" decoding="async"${f.ancho && f.alto ? ` width="${f.ancho}" height="${f.alto}"` : ''}>`;
+  const ICO_AMPLIAR = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 3h5v5M8 17H3v-5M17 3l-6 6M3 17l6-6"/></svg>';
+  const imagenesPasaje = p => p ? N.imagenesDe(R, N.versiculosDe(D, p).map(v => v.clave)) : [];
+  // Imagen principal del pasaje: solo si alguna obra se solapa con él; si hay varias, carrusel discreto.
+  function imagenPasajeHTML(p) {
+    const imgs = imagenesPasaje(p);
+    if (!imgs.length) return '';
+    if (!estado.recIdx || estado.recIdx.id !== p.id) estado.recIdx = { id: p.id, i: 0 };
+    const i = Math.min(estado.recIdx.i, imgs.length - 1), f = imgs[i];
+    return `<figure class="rec-principal" id="rec-principal">
+      <button type="button" class="rec-marco" data-visor="${esc(f.id)}" aria-label="Ampliar: ${esc(f.titulo)}">${imgRec(f, 'rec-img')}<span class="rec-ampliar">${ICO_AMPLIAR}</span></button>
+      <figcaption class="rec-pie">${pieRec(f, true)}</figcaption>
+      ${imgs.length > 1 ? `<div class="rec-carrusel" role="group" aria-label="Imágenes del pasaje">
+        <button type="button" class="rec-paso" data-rec-paso="-1" aria-label="Imagen anterior"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>
+        <span class="rec-cuenta" aria-live="polite">${i + 1} de ${imgs.length}</span>
+        <button type="button" class="rec-paso" data-rec-paso="1" aria-label="Imagen siguiente"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button></div>` : ''}
+    </figure>`;
+  }
+  function pasoImagen(d) {
+    const imgs = imagenesPasaje(estado.pasaje), el = $('#rec-principal');
+    if (!el || imgs.length < 2) return;
+    estado.recIdx = { id: estado.pasaje.id, i: (estado.recIdx.i + d + imgs.length) % imgs.length };
+    el.outerHTML = imagenPasajeHTML(estado.pasaje);
+    const b = main.querySelector(`[data-rec-paso="${d}"]`); if (b) b.focus();
+  }
+  // Ficha compacta de un recurso (acompañante, galería de mapas).
+  function recItemHTML(f) {
+    const mini = f.imagen ? `<button type="button" class="rec-mini" data-visor="${esc(f.id)}" aria-label="Ampliar: ${esc(f.titulo)}">${imgRec(f, '')}</button>` : '';
+    const nota = f.nota_certeza ? `<span class="rec-nota">${esc(f.nota_certeza)}</span>` : '';
+    return `<li class="rec-item${f.imagen ? '' : ' sin-imagen'}">${mini}<div class="rec-cuerpo"><strong class="rec-titulo">${esc(f.titulo)}</strong>
+      <span class="rec-datos">${rotuloRec(f)} ${[autorFecha(f), esc(f.institucion)].filter(Boolean).join(' · ')}</span>${nota}
+      <span class="rec-datos">${licRec(f)}${urlRec(f.url_fuente) ? ' · ' + linkRec(f.url_fuente, f.imagen ? 'Fuente' : 'Ver en la fuente') : ''}${f.imagen ? '' : ' <span class="etiqueta externa">Fuente externa</span>'}</span>
+      <span class="rec-atrib">${esc(f.atribucion)}</span></div></li>`;
+  }
+  function medioHTML(f) {
+    const verbo = f.tipo === 'audio' ? 'Escuchar' : 'Ver';
+    const det = [f.autor, f.idioma === 'es' ? 'en español' : f.idioma === 'en' ? 'en inglés' : f.idioma, f.duracion].filter(Boolean).map(esc).join(' · ');
+    const cuerpo = f.modo === 'incrustable' && N.esIdYoutube(f.youtube)
+      ? (estado.recVideo === f.id ? iframeVideo({ youtube_id: f.youtube, titulo: f.titulo })
+        : `<button type="button" class="video-fachada" data-rec-video="${esc(f.id)}" aria-label="Reproducir el video: ${esc(f.titulo)}"><img src="https://i.ytimg.com/vi/${esc(f.youtube)}/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="video-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 5v10l8-5z"/></svg></span></button>`)
+      : '';
+    return `<li class="rec-medio">${cuerpo}<strong class="rec-titulo">${esc(f.titulo)}</strong>
+      <span class="rec-datos"><span class="etiqueta externa">Fuente externa</span> ${f.tipo === 'audio' ? 'Audio' : 'Video'}${det ? ' · ' + det : ''}</span>
+      ${f.nota_certeza ? `<span class="rec-nota">${esc(f.nota_certeza)}</span>` : ''}
+      <span class="rec-datos">${licRec(f)} · ${linkRec(f.url_fuente, `${verbo} en ${esc(f.institucion.split(' (')[0] || 'la fuente')}`)}</span>
+      <span class="rec-atrib">${esc(f.atribucion)}</span></li>`;
+  }
+  // Acompañante: lo relacionado con el versículo o el pasaje, sin repetir las imágenes del carrusel.
+  function recursosAcompHTML(p, refs, sec, I) {
+    if (!R) return '';
+    const ks = refs.map(N.clave), A = N.relacionadosDe(R, ks, imagenesPasaje(p).map(f => f.id));
+    let html = '';
+    const objs = A.objetos.concat(A.imagenes);
+    if (objs.length) html += sec('Imágenes y objetos', `<ul class="rec-lista">${objs.map(recItemHTML).join('')}</ul>`, I('M3 5h14v10H3zM3 13l4-4 3 3 2-2 5 5'));
+    if (A.medios.length) html += sec('Videos y audio', `<ul class="rec-lista medios">${A.medios.map(medioHTML).join('')}</ul>`, I('M7 5v10l8-5z'));
+    return html;
+  }
+  function mapasAntiguosHTML() {
+    const ms = N.mapasAntiguos(R);
+    if (!ms.length) return '';
+    const con = ms.filter(f => f.imagen), sin = ms.filter(f => !f.imagen);
+    return `<section class="mapas-antiguos" aria-labelledby="t-mapas-antiguos"><h2 id="t-mapas-antiguos">Mapas antiguos</h2>
+      <p class="sub">Mapas impresos entre los siglos XVI y XIX: registran cómo se dibujaba entonces la geografía del relato, no cómo era en tiempos bíblicos. Pulsa uno para verlo ampliado.</p>
+      ${con.length ? `<ul class="rec-galeria">${con.map(f => `<li><button type="button" class="rec-marco" data-visor="${esc(f.id)}" aria-label="Ampliar: ${esc(f.titulo)}">${imgRec(f, 'rec-img')}</button>
+        <p class="rec-pie">${pieRec(f, true)}</p></li>`).join('')}</ul>` : ''}
+      ${sin.length ? `<h3>Solo enlace (${sin.length})</h3><p class="meta">Sin imagen con licencia que permita copiarla: se enlaza a la institución que la conserva.</p><ul class="rec-lista">${sin.map(recItemHTML).join('')}</ul>` : ''}</section>`;
+  }
+  const TIPO_REC_TXT = { arte: 'Arte', reconstruccion: 'Reconstrucciones modernas', ilustracion: 'Ilustraciones modernas', arqueologia: 'Objetos históricos', mapa_antiguo: 'Mapas antiguos', video: 'Videos', audio: 'Audio' };
+  function creditosHTML() {
+    const fs = N.recursos(R);
+    if (!fs.length) return '';
+    const exc = (R.excluidas || []).length;
+    return `<section><h2>Imágenes, objetos, mapas y medios</h2>
+      <p>Cada imagen va rotulada: <strong>Arte · interpretación</strong> (la visión de un artista, con su fecha), <strong>Objeto histórico</strong> o <strong>Contexto de la época</strong> (registro con su museo), <strong>Mapa antiguo</strong>, <strong>Reconstrucción moderna</strong> o <strong>Ilustración moderna</strong>. Videos y audio son <span class="etiqueta externa">Fuente externa</span>. Lo que no tiene licencia abierta solo se enlaza.</p>
+      <p class="meta">${R.auditado ? 'Catálogo revisado: cada imagen se comparó con su pasaje.' : 'Catálogo sin auditar todavía.'}${exc ? ` ${exc} ${exc === 1 ? 'ficha no se muestra' : 'fichas no se muestran'} (rechazada en la revisión o sin licencia que lo permita).` : ''}</p>
+      ${Object.keys(TIPO_REC_TXT).map(t => { const xs = fs.filter(f => f.tipo === t); return xs.length ? `<h3>${TIPO_REC_TXT[t]} (${xs.length})</h3><ul class="fuentes creditos">${xs.map(f => `<li><strong>${esc(f.titulo)}</strong>${f.refs.length ? ` <span class="meta">· ${esc(f.refs.join(', '))}</span>` : ''}<br>${esc(f.atribucion)}<br><span class="meta">Licencia: ${esc(f.licencia)}${f.institucion ? ' · ' + esc(f.institucion) : ''}</span>${urlRec(f.url_fuente) ? ' · ' + linkRec(f.url_fuente, 'Fuente') : ''}</li>`).join('')}</ul>` : ''; }).join('')}
+    </section>`;
+  }
+
+  /* ---------- Visor a pantalla completa con zoom ---------- */
+  const visorDlg = $('#visor'), VISOR = { z: 1, f: null };
+  function abrirVisor(id) {
+    const f = recPorId(id); if (!f || !f.imagen || !visorDlg) return;
+    VISOR.f = f; VISOR.z = 1;
+    visorDlg.querySelector('#visor-titulo').textContent = f.titulo;
+    visorDlg.querySelector('#visor-lienzo').innerHTML = `<img src="${esc(f.imagen)}" alt="${esc(altRec(f))}" draggable="false"${f.ancho && f.alto ? ` width="${f.ancho}" height="${f.alto}"` : ''}>`;
+    visorDlg.querySelector('#visor-pie').innerHTML = `<p class="rec-pie">${pieRec(f, false)}${f.nota_certeza ? `<span class="rec-nota">${esc(f.nota_certeza)}</span>` : ''}</p>`;
+    mostrar(visorDlg);
+    zoomVisor(0);
+  }
+  // z = 1: la imagen cabe entera; cada paso multiplica por 1,5 (máx. 6×), manteniendo el centro de la vista.
+  function zoomVisor(paso, cx, cy) {
+    const lz = visorDlg.querySelector('#visor-lienzo'), img = lz.querySelector('img'), f = VISOR.f;
+    if (!img || !f) return;
+    const nw = f.ancho || img.naturalWidth || 1, nh = f.alto || img.naturalHeight || 1;
+    const ajuste = Math.min(lz.clientWidth / nw, lz.clientHeight / nh);
+    const antes = img.offsetWidth || nw * ajuste;
+    const px = cx === undefined ? lz.clientWidth / 2 : cx, py = cy === undefined ? lz.clientHeight / 2 : cy;
+    const rx = (lz.scrollLeft + px) / (img.offsetWidth || 1), ry = (lz.scrollTop + py) / (img.offsetHeight || 1);
+    VISOR.z = paso === 0 ? 1 : Math.min(6, Math.max(1, VISOR.z * (paso > 0 ? 1.5 : 1 / 1.5)));
+    img.style.width = Math.round(nw * ajuste * VISOR.z) + 'px'; img.style.height = Math.round(nh * ajuste * VISOR.z) + 'px';
+    lz.classList.toggle('ampliado', VISOR.z > 1);
+    if (paso !== 0 && antes) { lz.scrollLeft = rx * img.offsetWidth - px; lz.scrollTop = ry * img.offsetHeight - py; }
+    const o = visorDlg.querySelector('#visor-pct'); if (o) o.textContent = Math.round(VISOR.z * 100) + ' %';
+  }
+  if (visorDlg) {
+    visorDlg.addEventListener('wheel', e => { const lz = e.target.closest('#visor-lienzo'); if (!lz) return; e.preventDefault(); const r = lz.getBoundingClientRect(); zoomVisor(e.deltaY < 0 ? 1 : -1, e.clientX - r.left, e.clientY - r.top); }, { passive: false });
+    visorDlg.addEventListener('dblclick', e => { const lz = e.target.closest('#visor-lienzo'); if (!lz) return; const r = lz.getBoundingClientRect(); if (VISOR.z > 1) zoomVisor(0); else { zoomVisor(1, e.clientX - r.left, e.clientY - r.top); zoomVisor(1, e.clientX - r.left, e.clientY - r.top); } });
+    let arr = null;
+    visorDlg.addEventListener('pointerdown', e => { const lz = e.target.closest('#visor-lienzo'); if (!lz || e.pointerType !== 'mouse' || e.button !== 0 || VISOR.z <= 1) return; e.preventDefault(); arr = { lz, x: e.clientX, y: e.clientY, sl: lz.scrollLeft, st: lz.scrollTop }; lz.classList.add('arrastrando'); });
+    visorDlg.addEventListener('pointermove', e => { if (arr) { arr.lz.scrollLeft = arr.sl - (e.clientX - arr.x); arr.lz.scrollTop = arr.st - (e.clientY - arr.y); } });
+    const fin = () => { if (arr) { arr.lz.classList.remove('arrastrando'); arr = null; } };
+    visorDlg.addEventListener('pointerup', fin); visorDlg.addEventListener('pointercancel', fin);
+    visorDlg.addEventListener('close', () => { visorDlg.querySelector('#visor-lienzo').innerHTML = ''; VISOR.f = null; });
+    window.addEventListener('resize', () => { if (visorDlg.open && VISOR.f) zoomVisor(0); });
   }
 
   /* ---------- Fuentes: textos originales ---------- */
@@ -2100,6 +2278,7 @@ if (typeof document !== 'undefined') (function () {
           <dt>${icoConf('baja')} Confianza baja</dt><dd>Identificación incierta o discutida; tómala como hipótesis.</dd>
           <dt>${icoConf('desconocida')} Ubicación desconocida</dt><dd>No hay identificación fiable (por ejemplo, Edén o Nod). Se dice, pero no se dibuja.</dd>
         </dl></section>
+      ${creditosHTML()}
       <p class="meta">Datos generados: ${esc(fecha || 'sin fecha')}</p>`;
   }
 
@@ -2394,7 +2573,8 @@ if (typeof document !== 'undefined') (function () {
       <ul class="resultados" id="res-lugar" aria-live="polite">${resultadosLugar()}</ul>
       ${todos.length ? mapaHTML(ubic, { sel: ubic.includes(estado.mapaSel) ? estado.mapaSel : null }) : '<p class="vacio-txt">Los datos todavía no traen lugares. Cuando se publiquen, aparecerán aquí.</p>'}
       ${todos.length ? `<h2>En el mapa (${ubic.length})</h2>${ubic.length ? `<ul class="chips">${ubic.map(id => `<li>${btnLugar(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Ningún lugar ubicado con este filtro.</p>'}
-      <h2>Sin ubicación conocida (${desc.length})</h2>${desc.length ? `<ul class="lugares-lista">${desc.map(id => { const l = N.lugar(D, id); return `<li>${btnLugar(id)}<span class="contexto">Ubicación desconocida${l.nota ? ': ' + esc(l.nota) : ''}</span></li>`; }).join('')}</ul>` : '<p class="vacio-txt">Todos los lugares de este filtro tienen ubicación.</p>'}` : ''}`;
+      <h2>Sin ubicación conocida (${desc.length})</h2>${desc.length ? `<ul class="lugares-lista">${desc.map(id => { const l = N.lugar(D, id); return `<li>${btnLugar(id)}<span class="contexto">Ubicación desconocida${l.nota ? ': ' + esc(l.nota) : ''}</span></li>`; }).join('')}</ul>` : '<p class="vacio-txt">Todos los lugares de este filtro tienen ubicación.</p>'}` : ''}
+      ${mapasAntiguosHTML()}`;
   }
   function resultadosLugar() {
     const q = N.norm(estado.mapaQ);
@@ -2513,7 +2693,7 @@ if (typeof document !== 'undefined') (function () {
   function rerender(selectorFoco) { const y = window.scrollY; render(false); window.scrollTo(0, y); if (selectorFoco) { const el = main.querySelector(selectorFoco); if (el) el.focus(); } }
 
   if (window.matchMedia) { const mq = window.matchMedia('(max-width: 699px)'); if (mq.addEventListener) mq.addEventListener('change', () => { if (main.querySelector('.comparar')) rerender(); }); }
-  window.addEventListener('hashchange', () => { parar(); cerrar(detDlg); cerrar(fichaDlg); estado.focoHash = undefined; render(); });
+  window.addEventListener('hashchange', () => { parar(); cerrar(detDlg); cerrar(fichaDlg); if (visorDlg) cerrar(visorDlg); estado.focoHash = undefined; render(); });
   // Secciones del plan: se recuerda en la sesión cuáles abrió o cerró la persona.
   document.addEventListener('toggle', e => {
     const s = e.target; if (!s || !s.dataset) return;
@@ -2530,6 +2710,10 @@ if (typeof document !== 'undefined') (function () {
     if (t instanceof HTMLDialogElement && t.open) { cerrar(t); return; }
     const cn = t.closest('[data-cerrar-nuevas]'); if (cn) { ocultarNuevas(); if (cn.tagName !== 'A') return; }
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
+    const vi = t.closest('[data-visor]'); if (vi) { abrirVisor(vi.dataset.visor); return; }
+    const vz = t.closest('[data-vzoom]'); if (vz) { zoomVisor(+vz.dataset.vzoom); return; }
+    const rpa = t.closest('[data-rec-paso]'); if (rpa) { pasoImagen(+rpa.dataset.recPaso); return; }
+    const rv = t.closest('[data-rec-video]'); if (rv) { const f = recPorId(rv.dataset.recVideo); if (f && N.esIdYoutube(f.youtube)) { estado.recVideo = f.id; rv.outerHTML = iframeVideo({ youtube_id: f.youtube, titulo: f.titulo }); } return; }
     const va = t.closest('[data-variante]'); if (va) { abrirVariante(va.dataset.variante); return; }
     if (t.closest('[data-escuchar]')) {
       estado.escuchar = !estado.escuchar; if (!estado.escuchar) parar();

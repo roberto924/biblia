@@ -1,0 +1,420 @@
+{
+ "revisado": "2026-11-11",
+ "fichas": {
+  "dore-gn-1-creacion-luz": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-3-expulsion-eden": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-7-diluvio": {
+   "veredicto": "OK",
+   "motivo": "Escena cruenta (personas ahogándose): filtrar en perfil niño."
+  },
+  "dore-gn-11-torre-babel": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "tissot-gn-12-caravana-abram": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-18-tres-visitantes": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-21-agar-ismael": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "schnorr-gn-22-sacrificio-isaac": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-23-entierro-sara": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "tissot-gn-25-plato-lentejas": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado con paspartú; legible pero conviene recortar."
+  },
+  "dore-gn-27-isaac-bendice-jacob": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-28-sueno-jacob": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-29-jacob-raquel": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-32-lucha-penuel": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-33-encuentro-esau": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "tissot-gn-37-suenos-jose": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-37-jose-vendido": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-41-jose-sueno-faraon": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-45-jose-se-da-a-conocer": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-46-jacob-va-a-egipto": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "tissot-gn-47-jacob-ante-faraon": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado con paspartú; legible, conviene recortar."
+  },
+  "tissot-gn-50-cuerpo-jacob-canaan": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado con paspartú, trazo tenue; legible (cortejo y bueyes)."
+  },
+  "dore-ex-2-hallazgo-moises": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "tissot-ex-3-zarza-ardiente": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado con paspartú; legible, conviene recortar."
+  },
+  "dore-ex-5-moises-aaron-faraon": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "Ex 7:8-13"
+   ],
+   "motivo": "La imagen muestra la vara de Aarón convertida en serpiente ante los sabios; eso es Ex 7:8-13, no la petición de Ex 5:1-5 (no hay serpiente allí)."
+  },
+  "dore-ex-9-plaga-ganado": {
+   "veredicto": "OK",
+   "motivo": "Contiene muertes de animales y personas: filtrar en perfil niño."
+  },
+  "dore-ex-10-plaga-tinieblas": {
+   "veredicto": "OK",
+   "motivo": "Contiene muertes/personas postradas: filtrar en perfil niño."
+  },
+  "dore-ex-12-muerte-primogenitos": {
+   "veredicto": "OK",
+   "motivo": "Muerte de niños: perfil adulto."
+  },
+  "tissot-ex-12-pascua": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado; legible."
+  },
+  "dore-ex-14-egipcios-ahogados": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "tissot-ex-14-aguas-divididas": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado; legible."
+  },
+  "tissot-ex-16-recogida-mana": {
+   "veredicto": "OK",
+   "motivo": "Boceto a tinta fotografiado; legible."
+  },
+  "dore-ex-19-entrega-ley-sinai": {
+   "veredicto": "OK",
+   "motivo": "Escena coherente (pueblo postrado ante el Sinaí)."
+  },
+  "dore-ex-20-moises-baja-sinai": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "Ex 34:29-35"
+   ],
+   "motivo": "Moisés con rayos de luz en la frente baja con las tablas: es Ex 34:29-35 (cf. Ex 32:15-16); Ex 20:1-17 es el texto de la ley, no la escena de bajar."
+  },
+  "tissot-ex-20-nube-sinai": {
+   "veredicto": "OK",
+   "motivo": "Boceto con línea azul de archivo; legible."
+  },
+  "tissot-ex-25-arca-alianza": {
+   "veredicto": "OK",
+   "motivo": "Boceto con línea azul de archivo; legible."
+  },
+  "tissot-ex-25-menora": {
+   "veredicto": "OK",
+   "motivo": "Boceto pequeño con número de archivo; legible."
+  },
+  "tissot-ex-27-altar-holocaustos": {
+   "veredicto": "OK",
+   "motivo": "Boceto; muestra cuernos, varas y rejilla (Ex 27:1-8)."
+  },
+  "tissot-ex-30-altar-incienso": {
+   "veredicto": "OK",
+   "motivo": "Boceto; muestra cuernos y varas."
+  },
+  "tissot-ex-32-becerro-oro": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-ex-32-moises-rompe-tablas": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "schnorr-ex-32-becerro-oro": {
+   "veredicto": "OK",
+   "motivo": "Escena de matanza (Ex 32:26-28): perfil adulto."
+  },
+  "tissot-ex-40-tabernaculo-altar": {
+   "veredicto": "RECHAZAR",
+   "motivo": "Boceto a lápiz casi ilegible, con anotaciones manuscritas en francés; no se distingue tabernáculo ni altar."
+  },
+  "tissot-ex-39-vestiduras-sumo-sacerdote": {
+   "veredicto": "OK",
+   "motivo": "Boceto del sumo sacerdote con pectoral y efod."
+  },
+  "tissot-ex-35-besalel-orfebre": {
+   "veredicto": "OK",
+   "motivo": "Boceto de artesano junto a un yunque; identificación como Bezalel por el título del autor."
+  },
+  "estela-merneptah-je31408-gem": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "Ex 1:1-7"
+   ],
+   "motivo": "Menciona a «Israel» ya como pueblo en Canaán; no ilustra la opresión de Ex 1:8-14. Solo contexto externo (nombre «Israel», Ex 1:1)."
+  },
+  "estela-merneptah-foto-commons-bivins": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "Ex 1:1-7"
+   ],
+   "motivo": "Foto real de la estela; no ilustra Ex 1:8-14 (esclavitud), solo documenta el nombre «Israel» (Ex 1:1). Rotular como fuente externa, no como imagen del pasaje."
+  },
+  "amarna-ea288-jerusalen-vat1643-berlin": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "amarna-ea252-siquem-labayu-bm-e29844": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "amarna-ea245-meguido-biridiya-bm-e29855": {
+   "veredicto": "OK",
+   "motivo": "Vínculo con Gn 10:15-19 solo de contexto cananeo; débil. Solo enlace."
+  },
+  "amarna-abi-milku-tiro-met-24-2-12": {
+   "veredicto": "OK",
+   "motivo": "Registro histórico; vínculo con Gn 10:15-19 solo de contexto (Sidón/cananeos). Licencia CC0 verificada en la API del Met."
+  },
+  "ladrillo-ramses-ii-ramesseum-bm-ea6020": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "ladrillo-ramses-tell-maskhuta-maa-1937-450": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "rejmira-tt100-ladrilleros-met-30-4-77": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "gilgamesh-tablilla-xi-diluvio-bm-k3375": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-babilonico-mundo-bm-92687": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "prisma-weld-blundell-lista-reyes-sumerios-an1923-444": {
+   "veredicto": "OK",
+   "motivo": "Solo enlace (Derechos reservados), sin imagen local: correcto. Vínculo con Gn 5/10 de contexto."
+  },
+  "zigurat-ur-foto-alli-khalil-2024": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "Gn 11:28-31",
+    "Gn 15:7"
+   ],
+   "motivo": "Es el zigurat de Ur, no la torre de Babel (Gn 11:1-9); la Biblia menciona «Ur de los caldeos» en Gn 11:28-31 y 15:7."
+  },
+  "beni-hasan-jnumhotep-aamu-met-33-8-17": {
+   "veredicto": "OK",
+   "motivo": "Facsímil de asiáticos (aamu) llegando a Egipto: contexto de Gn 12:10-20 y 37:25-28; no muestra esas escenas ni a personajes bíblicos. Rotular como contexto."
+  },
+  "tabernaculo-timna-replica-sitio-oficial": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "timna-replica-arca-foto-ori229": {
+   "veredicto": "OK",
+   "motivo": "Réplica moderna con tablas, vara y vasija (maná): cuadra con Ex 25:16; rotular reconstrucción."
+  },
+  "tabernaculo-maqueta-bijbels-museum-haklai": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "Nm 10:1-10"
+   ],
+   "motivo": "Muestra sacerdotes con trompetas, címbalos y rollos, no el Tabernáculo ni sus piezas (Ex 25-27, 36-38); encaja con las trompetas de Nm 10:1-10 (identificación inferida)."
+  },
+  "tabernaculo-sketchup-fink-2009": {
+   "veredicto": "OK",
+   "motivo": "Reconstrucción digital con supuestos propios; rotular como reconstrucción moderna."
+  },
+  "holman-1890-mesa-arca-candelabro": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "figures-de-la-bible-1728-erecion-tabernaculo": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "mapa-mercator-palestina-exodo-1537": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "mapa-duval-aegyptus-antiqua-s17": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "mapa-liebaux-viaje-israelitas-s17": {
+   "veredicto": "OK",
+   "motivo": "Mapa coherente (Egipto, Sinaí, Cades, Jordán)."
+  },
+  "mapa-goeree-canaan-josue-s17-18": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "mapa-fontana-monte-sinai-1569": {
+   "veredicto": "OK",
+   "motivo": "Grabado coherente con el Sinaí (campamento, monte)."
+  },
+  "mapa-ziegler-arabiae-petraeae-s16": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "mapa-loc-bowen-tierra-santa-1752": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-loc-homann-ivdaea-1748": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-loc-delisle-egipto-nubia-1707": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-loc-barjoseph-exodo-1840": {
+   "veredicto": "OK",
+   "motivo": "Solo enlace; licencia 'desconocida' y la página del LoC devolvió 403 al comprobarla."
+  },
+  "mapa-loc-bowles-canaan-1760": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-bne-lopez-tierra-santa-1774": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-gallica-justo-terre-sainte-1621": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "mapa-rumsey-brown-israelitas-canaan": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "audio-librivox-salmos-reina-valera-es": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "audio-librivox-psalms-kjv-en": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "audio-librivox-genesis-rv-v2-es": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "audio-librivox-exodo-rv-es": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "audio-librivox-genesis-exodus-levitico-kjv-en": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "audio-biblia-dramatizada-ntv-genesis-es": {
+   "veredicto": "OK",
+   "motivo": "Solo enlace; licencia desconocida (texto NTV con derechos): no incrustar ni descargar."
+  },
+  "video-bp-genesis-1-11": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-genesis-12-50": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-exodo-1-18": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-exodo-19-40": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-exodo-parte-2-pacto-sinai": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-genesis-1-comentario-visual": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-salmos-resumen": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-como-leer-salmos": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-salmo-8": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "video-bp-salmo-148": {
+   "veredicto": "OK",
+   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+  },
+  "dore-gn-2-creacion-eva": {
+   "veredicto": "OK",
+   "motivo": "Imagen/ficha coherente con las refs."
+  },
+  "dore-gn-4-cain-mata-abel": {
+   "veredicto": "OK",
+   "motivo": "Escena de homicidio: perfil adulto."
+  },
+  "dore-gn-8-paloma-del-arca": {
+   "veredicto": "OK",
+   "motivo": "Escena con cadáveres: filtrar en perfil niño."
+  },
+  "amarna-asur-ubalit-met-24-2-11": {
+   "veredicto": "OK",
+   "motivo": "Vínculo con Gn 10:22 (Asur) solo de contexto; la tablilla se ve coherente."
+  }
+ }
+}

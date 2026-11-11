@@ -805,3 +805,58 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 .video-rotulo { color: var(--suave); font-size: .86rem; }
 .video-rotulo .etiqueta { margin-left: 0; }
 @media (prefers-reduced-motion: reduce) { .video-play, .cmp-fila { transition: none; } }
+
+/* ---------- Imágenes, objetos, mapas antiguos y medios (datos/recursos.js) ----------
+   Rótulo siempre visible: Arte (lapislázuli) · Reconstrucción / Ilustración moderna (ocre) · Objeto histórico / Mapa antiguo (verdín) · Contexto (gris). */
+.rec-principal { margin: 0 0 1.4rem; max-width: 46rem; }
+.rec-marco { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--linea); border-radius: var(--r-tarjeta); overflow: hidden; background: var(--hoja2); cursor: zoom-in; color: inherit; }
+.rec-img { display: block; width: 100%; height: auto; max-height: min(28rem, 52vh); object-fit: contain; }
+.rec-ampliar { position: absolute; right: .55rem; bottom: .55rem; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: rgb(15 18 40 / .7); color: #fff; opacity: .85; transition: opacity var(--t); }
+.rec-ampliar svg { width: 1.05rem; height: 1.05rem; stroke-width: 2; }
+.rec-marco:hover .rec-ampliar { opacity: 1; }
+.rec-pie { display: flex; flex-direction: column; gap: .15rem; margin: .5rem 0 0; font-size: .86rem; line-height: 1.4; color: var(--suave); }
+.rec-titulo { font-family: var(--serif); font-size: 1.02rem; font-weight: 600; color: var(--tinta); line-height: 1.25; }
+.rec-datos { display: block; }
+.rec-datos .etiqueta, .rec-pie .etiqueta { margin-left: 0; }
+.rec-atrib { display: block; font-size: .8rem; font-style: italic; color: var(--suave); }
+.rec-nota { display: block; font-size: .84rem; color: var(--tinta); margin-top: .1rem; }
+.rec-rotulo { font-weight: 600; }
+.rec-rotulo.rec-arte { background: var(--lapis-tinte); color: var(--lapis); }
+.rec-rotulo.rec-reconstruccion, .rec-rotulo.rec-ilustracion { background: color-mix(in srgb, var(--c-inferido) 14%, var(--hoja)); color: var(--c-inferido); }
+.rec-rotulo.rec-arqueologia, .rec-rotulo.rec-mapa_antiguo { background: color-mix(in srgb, var(--c-texto) 13%, var(--hoja)); color: var(--c-texto); }
+.rec-rotulo.rec-contexto { background: var(--hoja2); color: var(--suave); }
+.rec-debatida { background: var(--difiere); color: var(--tinta); }
+.rec-carrusel { display: flex; align-items: center; justify-content: center; gap: .5rem; margin-top: .35rem; }
+.rec-paso { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--linea); border-radius: 50%; background: var(--hoja); color: var(--lapis); cursor: pointer; }
+.rec-paso:hover { background: var(--lapis-tinte); }
+.rec-paso svg { width: 1.1rem; height: 1.1rem; stroke-width: 2; }
+.rec-cuenta { min-width: 4.5rem; text-align: center; font-size: .85rem; color: var(--suave); font-variant-numeric: tabular-nums; }
+.rec-lista { list-style: none; padding: 0; margin: 0; display: grid; gap: .85rem; }
+.rec-item { display: grid; grid-template-columns: 4.75rem minmax(0, 1fr); gap: .7rem; align-items: start; font-size: .86rem; line-height: 1.4; color: var(--suave); }
+.rec-item.sin-imagen { grid-template-columns: minmax(0, 1fr); }
+.rec-cuerpo { display: flex; flex-direction: column; gap: .12rem; min-width: 0; }
+.rec-mini { width: 4.75rem; height: 4.75rem; padding: 0; border: 1px solid var(--linea); border-radius: .55rem; overflow: hidden; background: var(--hoja2); cursor: zoom-in; }
+.rec-mini img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.rec-medio { display: flex; flex-direction: column; gap: .15rem; font-size: .86rem; line-height: 1.4; color: var(--suave); }
+.rec-medio .video-fachada { margin-bottom: .35rem; }
+.mapas-antiguos { margin-top: 2rem; }
+.rec-galeria { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 1.1rem; }
+.rec-galeria .rec-marco { aspect-ratio: 4 / 3; }
+.rec-galeria .rec-img { width: 100%; height: 100%; max-height: none; object-fit: cover; }
+.creditos li { font-size: .92rem; }
+
+/* Visor a pantalla completa */
+dialog.visor { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; border: 0; border-radius: 0; background: var(--papel); }
+dialog.visor[open] { display: flex; }
+.visor-cab { flex-wrap: wrap; padding-left: 1rem; }
+.visor-cab h2 { font-size: 1.15rem; min-width: 8rem; }
+.visor-zoom { display: flex; align-items: center; gap: .3rem; }
+.visor-zoom .mini-boton { min-width: 44px; min-height: 44px; padding: .3rem .6rem; }
+.visor-zoom .mini-boton svg { width: 1rem; height: 1rem; stroke-width: 2; }
+#visor-pct { min-width: 3.4rem; text-align: center; font-size: .85rem; color: var(--suave); font-variant-numeric: tabular-nums; }
+.visor-lienzo { flex: 1; min-height: 0; overflow: auto; display: flex; background: var(--hoja2); overscroll-behavior: contain; }
+.visor-lienzo img { display: block; margin: auto; max-width: none; flex: none; user-select: none; -webkit-user-select: none; }
+.visor-lienzo.ampliado { cursor: grab; }
+.visor-lienzo.arrastrando { cursor: grabbing; }
+.visor-pie { padding: .5rem 1rem calc(.7rem + env(safe-area-inset-bottom)); border-top: 1px solid var(--linea-suave); max-height: 30dvh; overflow: auto; }
+.visor-pie .rec-pie { margin: 0; }

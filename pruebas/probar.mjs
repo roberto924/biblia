@@ -620,5 +620,67 @@ if (existsSync(real)) {
   });
 }
 
+console.log('Recursos (imágenes, objetos, medios)');
+{
+  const NR = cargar(path.join(aqui, '..', 'app.js')).BibliaNucleo;
+  const k = (c, v, lb = 1) => lb * 1e6 + c * 1000 + v;
+  const ficha = (id, tipo, rangos, extra) => Object.assign({ id, tipo, titulo: id, licencia: 'Dominio público', atribucion: 'Autor. Dominio público.', url_fuente: 'https://commons.wikimedia.org/x', imagen: 'recursos/imagenes/' + id + '.jpg', rangos, auditoria: 'OK' }, extra);
+  const R = { fichas: [
+    ficha('amplia', 'arte', [[k(1, 1), k(1, 31)]]),
+    ficha('luz', 'arte', [[k(1, 3), k(1, 5)]]),
+    ficha('dia2', 'arte', [[k(1, 6), k(1, 8)]]),
+    ficha('maqueta', 'reconstruccion', [[k(1, 3), k(1, 4)]]),
+    ficha('objeto', 'arqueologia', [[k(1, 3), k(1, 3)]], { relacion: 'contexto' }),
+    ficha('video', 'video', [[k(1, 1), k(11, 32)]], { imagen: null }),
+    ficha('rechazada', 'arte', [[k(1, 1), k(1, 31)]], { auditoria: 'RECHAZAR' }),
+    ficha('sin-licencia', 'arte', [[k(1, 1), k(1, 31)]], { licencia: 'desconocida' }),
+    ficha('sin-atrib', 'arte', [[k(1, 1), k(1, 31)]], { atribucion: '' }),
+    ficha('salmo', 'arte', [])
+  ] };
+  prueba('imagen del pasaje: la de mayor solapamiento, luego la más concreta', () => {
+    const ks = [3, 4, 5].map(v => k(1, v));
+    assert.deepEqual(j(NR.imagenesDe(R, ks).map(f => f.id)), ['luz', 'amplia', 'maqueta'], 'luz y amplia cubren 3 versículos; luz es más concreta');
+    assert.deepEqual(j(NR.imagenesDe(R, [k(1, 7)]).map(f => f.id)), ['dia2', 'amplia']);
+    assert.equal(NR.imagenesDe(R, [k(2, 1)]).length, 0, 'sin solapamiento no hay imagen (ni hueco)');
+    assert.equal(NR.imagenesDe(R, []).length, 0);
+    assert.equal(NR.imagenesDe(null, ks).length, 0);
+    assert.equal(NR.imagenesDe(R, [k(1, 3, 2)]).length, 0, 'mismo capítulo y versículo de otro libro no cuenta');
+  });
+  prueba('excluidas no aparecen (rechazada, licencia desconocida con imagen, sin atribución)', () => {
+    const ids = j(NR.recursos(R).map(f => f.id));
+    for (const x of ['rechazada', 'sin-licencia', 'sin-atrib']) assert.ok(!ids.includes(x), x);
+    assert.ok(NR.recursoValido(ficha('enlace', 'arqueologia', [], { imagen: null, licencia: 'desconocida' })), 'licencia desconocida solo como enlace');
+    const todas = j(NR.recursosDe(R, [k(1, 3)]).map(f => f.id));
+    assert.ok(!todas.some(x => ['rechazada', 'sin-licencia', 'sin-atrib', 'salmo'].includes(x)));
+  });
+  prueba('acompañante: objetos y medios, sin repetir el carrusel; rótulos', () => {
+    const A = NR.relacionadosDe(R, [k(1, 3)], ['luz', 'amplia', 'maqueta']);
+    assert.deepEqual(j(A.objetos.map(f => f.id)), ['objeto']); assert.equal(A.imagenes.length, 0);
+    assert.deepEqual(j(A.medios.map(f => f.id)), ['video']);
+    assert.equal(NR.rotuloRecurso(R.fichas[0]), 'Arte · interpretación');
+    assert.equal(NR.rotuloRecurso(R.fichas[3]), 'Reconstrucción moderna');
+    assert.equal(NR.rotuloRecurso({ tipo: 'ilustracion' }), 'Ilustración moderna');
+    assert.equal(NR.rotuloRecurso(R.fichas[4]), 'Contexto de la época');
+    assert.equal(NR.rotuloRecurso({ tipo: 'arqueologia' }), 'Objeto histórico');
+  });
+  const recReal = path.join(aqui, '..', 'datos', 'recursos.js');
+  if (existsSync(real) && existsSync(recReal)) {
+    const CR = cargar(real, recReal, path.join(aqui, '..', 'app.js'));
+    const N3 = CR.BibliaNucleo, D3 = CR.BIBLIA_DATOS, R3 = CR.BIBLIA_RECURSOS;
+    prueba('datos/recursos.js: Gn 1:3-5 muestra «La creación de la luz» de Doré; ninguna excluida ni sin licencia', () => {
+      const p = N3.pasajeDe(D3, 'Gn 1:3');
+      const imgs = N3.imagenesDe(R3, N3.versiculosDe(D3, p).map(v => v.clave));
+      assert.equal(imgs[0].id, 'dore-gn-1-creacion-luz'); assert.equal(imgs[0].titulo, 'La creación de la luz');
+      const ex = new Set((R3.excluidas || []).map(x => x.id)), vis = N3.recursos(R3);
+      assert.ok(ex.has('tissot-ex-40-tabernaculo-altar') && !vis.some(f => f.id === 'tissot-ex-40-tabernaculo-altar'), 'la rechazada no se muestra');
+      assert.equal(vis.length, R3.fichas.length, 'todas las fichas generadas pasan el filtro');
+      for (const f of vis) {
+        assert.ok(!ex.has(f.id) && f.auditoria !== 'RECHAZAR', f.id);
+        if (f.imagen) assert.ok(!/desconocida|reservados/i.test(f.licencia) && existsSync(path.join(aqui, '..', f.imagen)), f.id);
+      }
+    });
+  }
+}
+
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);
