@@ -861,5 +861,67 @@ console.log('\nRecorridos (pruebas/recorridos-ejemplo.js)');
   });
 }
 
+// ---- Tabernáculo (pruebas/tabernaculo-ejemplo.js y, si existe, datos/tabernaculo.js) ----
+console.log('\nTabernáculo (pruebas/tabernaculo-ejemplo.js)');
+{
+  const cx = cargar(path.join(aqui, 'tabernaculo-ejemplo.js'), path.join(aqui, '..', 'app.js')), NT = cx.BibliaNucleo, T = cx.BIBLIA_TABERNACULO;
+  const ps = [{ id: 'a', inicio: 'Ex 25:1', fin: 'Ex 25:22' }, { id: 'b', inicio: 'Ex 25:23', fin: 'Ex 25:40' }, { id: 'c', inicio: 'Ex 26:15', fin: 'Ex 26:37' }, { id: 'd', inicio: 'Ex 27:1', fin: 'Ex 27:21' }, { id: 'e', inicio: 'Ex 40:17', fin: 'Ex 40:38' }];
+  prueba('codos → metros según el codo elegido (cálculo, al centímetro)', () => {
+    assert.equal(NT.codosAMetros(2.5, 44.5), 1.11);
+    assert.equal(NT.codosAMetros(2.5, 52.5), 1.31);
+    assert.equal(NT.codosAMetros(100, 44.5), 44.5);
+    assert.equal(NT.codosAMetros(null, 44.5), null);
+    assert.equal(NT.tbCodo(T).id, 'comun', 'sin elección, el codo por defecto');
+    assert.equal(NT.tbCodo(T, 'real').cm, 52.5);
+    assert.equal(NT.tbCodo(T, 'inexistente').id, 'comun');
+  });
+  prueba('orden de montaje según `orden` y piezas colocadas sin repetir', () => {
+    const t2 = JSON.parse(JSON.stringify(T)); t2.montaje = t2.montaje.slice().reverse().concat([{ orden: 2.5, pieza: 'arca', ref: 'Ex 40:21' }, { orden: 9, pieza: 'no-existe', ref: 'Ex 40:1' }]);
+    assert.deepEqual(j(NT.tbMontaje(t2).map(m => m.pieza)), ['tablas', 'arca', 'arca', 'velo', 'mesa', 'candelabro', 'altar-bronce', 'cortinas-atrio']);
+    assert.deepEqual(j(NT.tbColocadas(t2, 3)), ['tablas', 'arca']);
+    assert.deepEqual(j(NT.tbColocadas(t2, 0)), []);
+  });
+  prueba('según voy leyendo: solo piezas con todos los pasajes de su instrucción leídos', () => {
+    assert.deepEqual(j(NT.tbVisiblesLeido(T, ps, [])), []);
+    assert.deepEqual(j(NT.tbVisiblesLeido(T, ps, ['a'])), ['arca']);
+    assert.deepEqual(j(NT.tbVisiblesLeido(T, ps, ['a', 'b', 'd'])), ['arca', 'mesa', 'candelabro', 'altar-bronce', 'cortinas-atrio']);
+    const parte = [{ id: 'x', inicio: 'Ex 25:10', fin: 'Ex 25:15' }, { id: 'y', inicio: 'Ex 25:16', fin: 'Ex 25:22' }];
+    assert.deepEqual(j(NT.tbVisiblesLeido(T, parte, ['x'])), [], 'instrucción repartida en dos pasajes: hace falta leer ambos');
+    assert.deepEqual(j(NT.tbVisiblesLeido(T, parte, ['x', 'y'])), ['arca']);
+  });
+  prueba('piezas por pasaje (instrucción, construcción o paso del montaje) y capítulos del acompañante', () => {
+    assert.deepEqual(j(NT.tbPiezasDePasaje(T, ps[1]).map(p => p.id)), ['mesa', 'candelabro']);
+    assert.deepEqual(j(NT.tbPiezasDePasaje(T, { inicio: 'Ex 37:1', fin: 'Ex 37:16' }).map(p => p.id)), ['arca', 'mesa']);
+    assert.deepEqual(j(NT.tbPiezasDePasaje(T, ps[4]).map(p => p.id)), ['arca', 'mesa', 'candelabro', 'altar-bronce', 'tablas', 'velo', 'cortinas-atrio'].sort((a, b) => T.piezas.findIndex(p => p.id === a) - T.piezas.findIndex(p => p.id === b)));
+    assert.deepEqual(j(NT.tbPiezasDeRefs(T, ['Ex 40:22']).map(p => p.id)), ['mesa']);
+    assert.deepEqual(j(NT.tbPiezasDePasaje(T, { inicio: 'Ex 33:1', fin: 'Ex 33:23' })), []);
+    assert.ok(NT.tbEnPasaje({ inicio: 'Ex 25:1', fin: 'Ex 25:22' }) && NT.tbEnPasaje({ inicio: 'Ex 40:17', fin: 'Ex 40:38' }));
+    assert.ok(!NT.tbEnPasaje({ inicio: 'Ex 32:1', fin: 'Ex 32:35' }) && !NT.tbEnPasaje({ inicio: 'Gn 25:1', fin: 'Gn 25:6' }));
+  });
+  prueba('plano: huellas (rectángulo girado, punto sin medidas, contorno) y zonas', () => {
+    assert.deepEqual(j(NT.tbHuella(NT.tbPieza(T, 'mesa')).esquinas), [[37, 27.5], [39, 27.5], [39, 28.5], [37, 28.5]]);
+    assert.ok(NT.tbHuella(NT.tbPieza(T, 'candelabro')).punto, 'sin medidas: punto');
+    const g = NT.tbHuella({ plano: { x: 10, y: 10, rot: 90 }, medidas: { largo: { codos: 4 }, ancho: { codos: 2 } } });
+    assert.deepEqual(j(g.esquinas), [[11, 8], [11, 12], [9, 12], [9, 8]], 'rot 90: el largo va de sur a norte');
+    const c = NT.tbHuella({ plano: { x: 35, y: 25, rect: { x0: 20, y0: 20, x1: 50, y1: 30 } }, medidas: {} });
+    assert.ok(c.contorno && c.rect.x1 === 50);
+    const Z = NT.tbDisposicion(T);
+    assert.deepEqual(j(Z.map(z => [z.id, z.x0, z.x1, z.certeza])), [['atrio', 0, 100, 'texto'], ['santisimo', 20, 30, 'tradicion'], ['santo', 30, 50, 'tradicion']]);
+    const t2 = JSON.parse(JSON.stringify(T)); t2.zonas.forEach((z, i) => { z.plano = [{ x0: 0, y0: 0, x1: 100, y1: 50, certeza: 'texto' }, { x0: 30, y0: 20, x1: 50, y1: 30, certeza: 'inferido' }, { x0: 20, y0: 20, x1: 30, y1: 30, certeza: 'inferido' }][i]; });
+    assert.deepEqual(j(NT.tbDisposicion(t2).map(z => [z.id, z.x0, z.certeza])), [['atrio', 0, 'texto'], ['santo', 30, 'inferido'], ['santisimo', 20, 'inferido']], 'con plano en las zonas, se usa tal cual');
+  });
+  const real = path.join(aqui, '..', 'datos', 'tabernaculo.js');
+  if (existsSync(real)) prueba('datos/tabernaculo.js: contrato (piezas, montaje, codos y citas legibles)', () => {
+    const cr = cargar(real, path.join(aqui, '..', 'app.js')), NR = cr.BibliaNucleo, TR = cr.BIBLIA_TABERNACULO;
+    const P = NR.tbPiezas(TR);
+    assert.ok(P.length && P.length === TR.piezas.length, 'toda pieza tiene id y nombre');
+    assert.ok(NR.tbCodo(TR) && TR.codos.every(c => +c.cm > 0));
+    for (const p of P) { assert.ok(NR.TB_GRUPOS.includes(p.grupo), p.id); assert.ok(NR.rangosDe(p.instruccion).length, p.id + ': instrucción legible'); assert.ok(NR.tbHuella(p), p.id + ': posición en el plano'); }
+    assert.equal(NR.tbMontaje(TR).length, TR.montaje.length, 'todos los pasos nombran una pieza que existe');
+    assert.ok(TR.montaje.every(m => NR.parseRef(m.ref)), 'refs del montaje legibles');
+    assert.ok(NR.tbDisposicion(TR).some(z => z.id === 'atrio'));
+  });
+}
+
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

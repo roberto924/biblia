@@ -1287,7 +1287,104 @@ const Nucleo = (() => {
     return out;
   }
 
-  return { CLAVE_PERFILES, COLORES_PERFIL, clavePerfil, esClaveLegada, clavesDePerfil, nuevoPerfil, normalizarRegistro, migrarPerfiles, perfilDe, cambioPidePin, pinValido, inicialDe,
+  /* ---- Tabernáculo (datos/tabernaculo.js): medidas en codos con su cita, plano en codos y montaje de Éx 40 ---- */
+  // Plano: origen en la esquina suroeste del atrio, x hacia el oriente, y hacia el norte (en codos).
+  const TB_GRUPOS = ['atrio', 'estructura', 'cortinas', 'mobiliario'];
+  const tbPiezas = T => ((T && T.piezas) || []).filter(p => p && p.id && p.nombre);
+  const tbPieza = (T, id) => tbPiezas(T).find(p => p.id === id) || null;
+  const tbZona = (T, id) => ((T && T.zonas) || []).find(z => z && z.id === id) || null;
+  const tbCodos = x => x && x.codos !== null && x.codos !== undefined && x.codos !== '' && Number.isFinite(+x.codos) ? +x.codos : null;
+  // Codo elegido (por id), si no el marcado por defecto, si no el primero.
+  function tbCodo(T, id) {
+    const cs = ((T && T.codos) || []).filter(c => c && c.id && Number.isFinite(+c.cm) && +c.cm > 0);
+    return cs.find(c => c.id === id) || cs.find(c => c.defecto) || cs[0] || null;
+  }
+  // Codos → metros (Cálculo), redondeado al centímetro.
+  const codosAMetros = (codos, cm) => codos === null || codos === undefined || codos === '' || !Number.isFinite(+codos) || !Number.isFinite(+cm) ? null : Math.round(+codos * +cm) / 100;
+  // «Ex 25:10-22» o «Ex 25:10-22; Ex 37:1-9» → rangos de claves.
+  const rangosDe = s => String(s || '').split(/\s*;\s*/).map(rangoClaves).filter(Boolean);
+  const cruza = (rs, a, b) => rs.some(r => r.a <= b && a <= r.b);
+  const rangoPasaje = p => p && p.inicio ? rangoClaves(`${p.inicio}-${p.fin || p.inicio}`) : null;
+  // Pasos del montaje en su orden (solo los que nombran una pieza que existe).
+  function tbMontaje(T) {
+    const ids = new Set(tbPiezas(T).map(p => p.id));
+    return ((T && T.montaje) || []).filter(m => m && ids.has(m.pieza)).map((m, i) => ({ m, i, o: Number.isFinite(+m.orden) && m.orden !== null ? +m.orden : i }))
+      .sort((x, y) => x.o - y.o || x.i - y.i).map(x => x.m);
+  }
+  // Piezas ya colocadas tras los n primeros pasos, sin repetir.
+  const tbColocadas = (T, n) => [...new Set(tbMontaje(T).slice(0, Math.max(0, n)).map(m => m.pieza))];
+  // Piezas cuya instrucción o construcción (o su paso del montaje) cae en el rango de claves [a, b].
+  function tbPiezasDeRango(T, a, b) {
+    if (!Number.isFinite(a) || !Number.isFinite(b)) return [];
+    const mont = new Set(tbMontaje(T).filter(m => { const k = clave(m.ref); return k !== null && k >= a && k <= b; }).map(m => m.pieza));
+    return tbPiezas(T).filter(p => mont.has(p.id) || cruza(rangosDe(p.instruccion), a, b) || cruza(rangosDe(p.construccion), a, b));
+  }
+  const tbPiezasDePasaje = (T, p) => { const r = rangoPasaje(p); return r ? tbPiezasDeRango(T, r.a, r.b) : []; };
+  const tbPiezasDeRefs = (T, refs) => { const e = extremos(refs); return e ? tbPiezasDeRango(T, e.a, e.b) : []; };
+  // Éx 25–31 (instrucciones) y 35–40 (construcción y montaje): donde el acompañante ofrece «En el tabernáculo».
+  const tbCapitulo = ref => { const r = parseRef(ref); return !!r && libroCanon(r.libro) === 'Ex' && ((r.cap >= 25 && r.cap <= 31) || (r.cap >= 35 && r.cap <= 40)); };
+  const tbEnPasaje = p => !!p && [p.inicio, p.fin].some(tbCapitulo);
+  // «Según voy leyendo»: piezas cuyos pasajes de instrucción están TODOS marcados como leídos (y hay al menos uno).
+  function tbVisiblesLeido(T, pasajes, leidos) {
+    const L = new Set(leidos || []), ps = (pasajes || []).map(p => ({ id: p.id, r: rangoPasaje(p) })).filter(x => x.r);
+    return tbPiezas(T).filter(p => {
+      const ri = rangosDe(p.instruccion); if (!ri.length) return false;
+      const toca = ps.filter(x => cruza(ri, x.r.a, x.r.b));
+      return toca.length > 0 && toca.every(x => L.has(x.id));
+    }).map(p => p.id);
+  }
+  // Huella de una pieza en el plano: rectángulo (largo a lo largo de x si rot = 0), línea (sin ancho) o punto (sin medidas).
+  function tbHuella(p) {
+    const pl = p && p.plano; if (!pl || !Number.isFinite(+pl.x) || !Number.isFinite(+pl.y) || pl.x === null || pl.y === null) return null;
+    const m = p.medidas || {}, l = tbCodos(m.largo), an = tbCodos(m.ancho), alto = tbCodos(m.alto), x = +pl.x, y = +pl.y;
+    // Piezas que forman un contorno (tablas, cortinas, cortinas del atrio): su rectángulo `plano.rect`.
+    const rc = tbRect(pl.rect);
+    if (rc) return { x, y, contorno: true, rect: rc, alto, esquinas: [[rc.x0, rc.y0], [rc.x1, rc.y0], [rc.x1, rc.y1], [rc.x0, rc.y1]] };
+    if (l === null && an === null) return { x, y, punto: true, alto: null, esquinas: [[x, y], [x, y], [x, y], [x, y]] };
+    const L = l !== null ? l : an, A = an !== null ? an : 0, t = (+pl.rot || 0) * Math.PI / 180, c = Math.cos(t), s = Math.sin(t);
+    const esquinas = [[-L / 2, -A / 2], [L / 2, -A / 2], [L / 2, A / 2], [-L / 2, A / 2]].map(([u, v]) => [x + u * c - v * s, y + u * s + v * c].map(n => Math.round(n * 1e6) / 1e6));
+    return { x, y, punto: false, linea: an === null || l === null, alto, esquinas };
+  }
+  // Rectángulos de las zonas. El atrio va en el origen (dato del contrato). Santo y santísimo: con `plano` (centro) si lo traen;
+  // si no, el santísimo se centra en sus piezas (Inferido) y el santo va pegado al oriente (el velo los separa, Ex 26:33);
+  // sin piezas, la disposición habitual de las reconstrucciones (Tradición).
+  const tbRect = r => r && ['x0', 'y0', 'x1', 'y1'].every(k => r[k] !== null && r[k] !== undefined && r[k] !== '' && Number.isFinite(+r[k])) ? { x0: Math.min(+r.x0, +r.x1), y0: Math.min(+r.y0, +r.y1), x1: Math.max(+r.x0, +r.x1), y1: Math.max(+r.y0, +r.y1) } : null;
+  function tbDisposicion(T) {
+    // Zonas que traen su rectángulo en `plano` (x0, y0, x1, y1): se usan tal cual, con su certeza.
+    const zs = ((T && T.zonas) || []).filter(z => z && z.id);
+    if (zs.length && zs.every(z => tbRect(z.plano))) return zs.map(z => Object.assign({ id: z.id, nombre: z.nombre || z.id, alto: tbCodos(z.alto), certeza: z.plano.certeza || 'inferido', origen: 'datos', nota: z.plano.nota || '' }, tbRect(z.plano)));
+    const out = [], at = tbZona(T, 'atrio');
+    const AL = tbCodos(at && at.largo), AA = tbCodos(at && at.ancho);
+    if (at && AL !== null && AA !== null) out.push({ id: 'atrio', nombre: at.nombre || 'Atrio', x0: 0, y0: 0, x1: AL, y1: AA, alto: tbCodos(at.alto), certeza: 'texto', origen: 'contrato' });
+    const sm = tbZona(T, 'santisimo'), sa = tbZona(T, 'santo');
+    const dim = z => z && tbCodos(z.largo) !== null && tbCodos(z.ancho) !== null ? { L: tbCodos(z.largo), A: tbCodos(z.ancho) } : null;
+    const dSm = dim(sm), dSa = dim(sa);
+    const centroDe = id => {
+      const ps = tbPiezas(T).filter(p => p.zona && p.zona.id === id && p.grupo === 'mobiliario' && tbHuella(p));
+      if (!ps.length) return null;
+      const peor = ps.some(p => (p.plano || {}).certeza === 'tradicion') ? 'tradicion' : 'inferido';
+      return { x: ps.reduce((s, p) => s + +p.plano.x, 0) / ps.length, y: ps.reduce((s, p) => s + +p.plano.y, 0) / ps.length, certeza: peor, origen: 'piezas' };
+    };
+    const conPlano = z => z && z.plano && Number.isFinite(+z.plano.x) && Number.isFinite(+z.plano.y) ? { x: +z.plano.x, y: +z.plano.y, certeza: z.plano.certeza || 'inferido', origen: 'datos', nota: z.plano.nota } : null;
+    const rect = (z, d, c) => ({ id: z.id, nombre: z.nombre || z.id, x0: c.x - d.L / 2, y0: c.y - d.A / 2, x1: c.x + d.L / 2, y1: c.y + d.A / 2, alto: tbCodos(z.alto), certeza: c.certeza, origen: c.origen, nota: c.nota || '' });
+    let cSm = dSm && (conPlano(sm) || centroDe('santisimo')), cSa = dSa && conPlano(sa);
+    if (dSm && !cSm && AL !== null && AA !== null) cSm = { x: AL / 4, y: AA / 2, certeza: 'tradicion', origen: 'habitual' };
+    if (dSa && !cSa && cSm && dSm) cSa = { x: cSm.x + dSm.L / 2 + dSa.L / 2, y: cSm.y, certeza: cSm.certeza, origen: cSm.origen === 'datos' ? 'contiguo' : cSm.origen };
+    if (dSa && !cSa) cSa = centroDe('santo') || (AL !== null && AA !== null ? { x: AL / 4 + 10, y: AA / 2, certeza: 'tradicion', origen: 'habitual' } : null);
+    if (dSm && cSm) out.push(rect(sm, dSm, cSm));
+    if (dSa && cSa) out.push(rect(sa, dSa, cSa));
+    return out;
+  }
+  // Reconstrucciones y arte (datos/recursos.js) que tocan la instrucción o la construcción de la pieza.
+  function tbRecursos(R, p) {
+    const rs = rangosDe(p && p.instruccion).concat(rangosDe(p && p.construccion));
+    if (!rs.length) return [];
+    return recursos(R).filter(f => (f.tipo === 'reconstruccion' || f.tipo === 'arte') && f.rangos.some(([a, b]) => cruza(rs, a, b)));
+  }
+
+  return { TB_GRUPOS, tbPiezas, tbPieza, tbZona, tbCodos, tbRect, tbCodo, codosAMetros, rangosDe, tbMontaje, tbColocadas, tbPiezasDeRango, tbPiezasDePasaje, tbPiezasDeRefs,
+    tbCapitulo, tbEnPasaje, tbVisiblesLeido, tbHuella, tbDisposicion, tbRecursos,
+    CLAVE_PERFILES, COLORES_PERFIL, clavePerfil, esClaveLegada, clavesDePerfil, nuevoPerfil, normalizarRegistro, migrarPerfiles, perfilDe, cambioPidePin, pinValido, inicialDe,
     marcasContenido, marcaDe, decisionVerso, accionVerso, recursoPermitido, curiosidadPermitida, enlaceLibre, tramosContenido,
     listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
@@ -1448,6 +1545,7 @@ if (typeof document !== 'undefined') (function () {
       <h2 class="titulo-seccion">Plan de lectura${varios && libroSel ? `<span class="sr">: ${esc(libroSel.nombre)}</span>` : ''}</h2>
       ${selector}
       ${elegido ? videoLibroHTML(elegido) : ''}
+      ${elegido === 'Ex' ? entradaTBHTML() : ''}
       ${plan}
       ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}</div></div>`;
   }
@@ -1567,6 +1665,7 @@ if (typeof document !== 'undefined') (function () {
       html += sec('Dónde ocurre', `${ub.length ? mapaHTML(ub, { mini: true }) : ''}<ul class="lugares-lista">${A.lugares.map(id => { const l = N.lugar(D, id) || {}, c = N.confianzaLugar(l); return `<li>${btnLugar(id)}<span class="contexto">${c === 'desconocida' ? 'Ubicación desconocida' + (l.nota ? ': ' + esc(l.nota) : '') : esc((l.ubicacion && l.ubicacion.identificacion) || '') + '. ' + CONF_TXT[c]}</span></li>`; }).join('')}</ul>`, I('M10 17s5-4.6 5-8.5a5 5 0 10-10 0C5 12.4 10 17 10 17zM10 10.2a1.7 1.7 0 100-3.4 1.7 1.7 0 000 3.4'));
     }
     html += enCaminoHTML(p, sec, I);
+    html += tabernaculoAcompHTML(p, refs, sec, I);
     if (N.crono(D)) {
       // Año (cálculo) de los sucesos de este versículo o pasaje; si no hay, entre qué sucesos fechados queda por orden de lectura.
       const tr = tradSimple(), combo = comboDe(tr);
@@ -2633,6 +2732,7 @@ if (typeof document !== 'undefined') (function () {
   function montarMapas(raiz) {
     if (!raiz) return;
     raiz.querySelectorAll('.mapa[data-mapa]:not([data-montado])').forEach(el => { try { crearMapa(el, JSON.parse(el.dataset.mapa)); } catch (e) { el.textContent = 'No se pudo dibujar el mapa.'; } });
+    montarTB(raiz);
     raiz.querySelectorAll('.rc[data-rc]:not([data-montado])').forEach(el => { try { crearRecorrido(el, JSON.parse(el.dataset.rc)); } catch (e) { const l = el.querySelector('.rc-lienzo'); if (l) l.textContent = 'No se pudo dibujar el recorrido.'; console.error(e); } });
   }
   // Costas, lagos, ríos (Natural Earth) y retícula de 5°, en coordenadas proyectadas.
@@ -3174,6 +3274,454 @@ if (typeof document !== 'undefined') (function () {
     }).join(''), I('M4 16c2.5 0 3-3 6-4s3-5 6-6M3 16h2M15 5h2'));
   }
 
+  /* ---------- Tabernáculo (datos/tabernaculo.js): plano a escala, relieve isométrico y montaje de Éx 40 ---------- */
+  // Medidas: codos con su cita (Texto/Inferido/Cálculo); metros siempre como Cálculo según el codo elegido.
+  // Posición en el plano: Texto (trazo continuo), Inferida (discontinuo) o Tradición (punteado), dicho en la tarjeta.
+  let TB = window.BIBLIA_TABERNACULO || null;
+  const TB_CAPA_TXT = { atrio: 'Atrio', estructura: 'Estructura', cortinas: 'Cortinas', mobiliario: 'Mobiliario' };
+  const TB_POS_TXT = { texto: 'Texto', inferido: 'Inferida', tradicion: 'Tradición' };
+  const TB_POS_DESC = { texto: 'el texto dice dónde va.', inferido: 'el texto no da el punto exacto; se deduce de lo que sí dice.', tradicion: 'el texto no la da; se sigue la disposición habitual de las reconstrucciones.' };
+  const TB_POS_TRAZO = { texto: 'trazo continuo', inferido: 'trazo discontinuo', tradicion: 'trazo punteado' };
+  const certPos = c => c === 'texto' || c === 'tradicion' ? c : 'inferido';
+  const estadoTB = { sel: null, modo: 'todo', capas: null };
+  let TBM = null; // motor de la vista completa montada
+  const numES = (n, d) => Number(n).toLocaleString('es-ES', { maximumFractionDigits: d === undefined ? 2 : d });
+  const codoTB = () => N.tbCodo(TB, store.get('biblia.codo', null));
+  const capasTB = () => { if (!estadoTB.capas) { const g = store.get('biblia.tbCapas', null); estadoTB.capas = new Set(Array.isArray(g) ? g.filter(x => N.TB_GRUPOS.includes(x)) : N.TB_GRUPOS); } return estadoTB.capas; };
+  const vistaTBGuardada = () => store.get('biblia.tbVista', 'plano') === 'relieve' ? 'relieve' : 'plano';
+  // «Ex 25:10-22; Ex 37:1-9» → enlaces a Leer (al primer versículo de cada tramo).
+  const refRangoHTML = s => String(s || '').split(/\s*;\s*/).filter(Boolean).map(x => { const r = N.parseRef(x.split(/\s*[-–]\s*/)[0]); return r ? `<a class="ref" href="${hrefRef(r)}">${esc(x)}</a>` : esc(x); }).join('; ');
+  const hrefTB = id => `#tabernaculo${id ? '/' + encodeURIComponent(id) : ''}`;
+  const ICO_TB = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 15.5h15M4 15.5V8.5h12v7M4 8.5l6-4 6 4M8.5 15.5v-4h3v4"/></svg>';
+
+  /* Escena: primitivas en codos (x oriente, y norte, z alto) que el pintor proyecta en plano (k = 0) o relieve (k = 1). */
+  const TB_C = Math.cos(Math.PI / 6), TB_S = 0.5;
+  const proyTB = (x, y, z, k) => [x + ((x + y) * TB_C - x) * k, -y + ((x - y) * TB_S - (z || 0) + y) * k];
+  const rectTB = r => [[r.x0, r.y0], [r.x1, r.y0], [r.x1, r.y1], [r.x0, r.y1]];
+  function escenaTB(op) {
+    const Z = N.tbDisposicion(TB), at = Z.find(z => z.id === 'atrio'), dentro = Z.filter(z => z.id !== 'atrio');
+    const piezas = N.tbPiezas(TB), capas = op.capas, ver = id => !op.visibles || op.visibles.has(id);
+    const S ={ suelo: [], cuerpos: [], techo: [], puntos: [], etq: [], at, dentro, extra: [] };
+    if (at) S.suelo.push({ pts: rectTB(at), cls: 'tb-z tb-z-atrio', cert: 'texto', etq: at.nombre, c: [(at.x0 + at.x1) / 2, at.y0 + 3] });
+    dentro.forEach(z => S.suelo.push({ pts: rectTB(z), cls: 'tb-z tb-z-' + z.id, cert: certPos(z.certeza), etq: z.nombre, c: [(z.x0 + z.x1) / 2, (z.y0 + z.y1) / 2] }));
+    const u = dentro.length ? { x0: Math.min(...dentro.map(z => z.x0)), y0: Math.min(...dentro.map(z => z.y0)), x1: Math.max(...dentro.map(z => z.x1)), y1: Math.max(...dentro.map(z => z.y1)) } : null;
+    const hT = dentro.reduce((m, z) => Math.max(m, z.alto || 0), 0);
+    const pared = (a, b, h, cls, cert, id, sinAlto) => S.cuerpos.push({ pared: [a, b], h, cls, cert, id, sinAlto, d: (a[0] + b[0]) / 2 - (a[1] + b[1]) / 2 });
+    // Contornos (`plano.rect`): la estructura levanta paredes al sur, norte y occidente (la entrada queda al oriente);
+    // las cortinas cubren el rectángulo; el atrio lo cierra por los cuatro lados. Piezas que comparten contorno se dibujan una vez.
+    const hechos = new Set(), ord = new Map(N.tbMontaje(TB).map((m, i) => [m.pieza, i]));
+    const piezasOrd = piezas.slice().sort((a, b) => (a.grupo === 'mobiliario') - (b.grupo === 'mobiliario') || (ord.has(a.id) ? ord.get(a.id) : 999) - (ord.has(b.id) ? ord.get(b.id) : 999));
+    piezasOrd.forEach(p => {
+      if (!ver(p.id) || !capas.has(p.grupo)) return;
+      const hu = N.tbHuella(p); if (!hu) return;
+      const cert = certPos(p.plano.certeza), cls = `tb-p tb-g-${p.grupo}`;
+      if (hu.contorno) {
+        const r = hu.rect, q = rectTB(r), clave = p.grupo + '|' + [r.x0, r.y0, r.x1, r.y1].join(',');
+        if (hechos.has(clave)) return; hechos.add(clave);
+        if (p.grupo === 'cortinas') S.techo.push({ id: p.id, pts: q, z: hT, cls: cls + ' tb-techo', cert });
+        else if (p.grupo === 'atrio') { const h = hu.alto !== null ? hu.alto : (at && at.alto) || 0; [[q[3], q[2]], [q[0], q[3]], [q[1], q[2]], [q[0], q[1]]].forEach(([a, b]) => pared(a, b, h, cls, cert, p.id)); }
+        else [[q[3], q[2]], [q[0], q[3]], [q[0], q[1]]].forEach(([a, b]) => pared(a, b, hT, cls, cert, p.id));
+        return;
+      }
+      // Sin medidas pero con orientación y dentro del tabernáculo (velo, cortina de la entrada): línea de lado a lado, plana.
+      if (hu.punto && u && p.plano.rot !== undefined && p.plano.rot !== null && hu.x >= u.x0 && hu.x <= u.x1 && hu.y >= u.y0 && hu.y <= u.y1) {
+        const v = Math.round(+p.plano.rot) % 180 === 90;
+        pared(v ? [hu.x, u.y0] : [u.x0, hu.y], v ? [hu.x, u.y1] : [u.x1, hu.y], 0, cls + ' tb-linea', cert, p.id, true);
+        return;
+      }
+      // Pieza plana sobre otra con alto en el mismo punto (el propiciatorio, encima del arca): se apoya en ella.
+      const base = hu.alto === null ? piezas.filter(o => o.id !== p.id && o.plano && +o.plano.x === hu.x && +o.plano.y === hu.y).reduce((m, o) => { const h2 = N.tbHuella(o); return h2 && !h2.contorno && h2.alto ? Math.max(m, h2.alto) : m; }, 0) : 0;
+      if (hu.punto) S.puntos.push({ id: p.id, x: hu.x, y: hu.y, z0: base, cls, cert });
+      else S.cuerpos.push({ id: p.id, esq: hu.esquinas, h: hu.alto || 0, z0: base, sinAlto: hu.alto === null, cls, cert, d: hu.x - hu.y + 0.01 + base * 0.001 });
+    });
+    if (op.humana && op.codo) {
+      const h = 170 / op.codo.cm, r = 25 / op.codo.cm, sp = op.sel && N.tbHuella(N.tbPieza(TB, op.sel));
+      const x = sp ? Math.max(...sp.esquinas.map(c => c[0])) + 1.2 : at ? at.x1 - 5 : 0, y = sp ? sp.y - 1.2 : at ? at.y1 / 2 - 14 : 0;
+      S.cuerpos.push({ humana: true, x, y, h, r, d: x - y });
+    }
+    if (at) S.extra.push({ flecha: [[at.x1 + 4, (at.y0 + at.y1) / 2], [at.x1 + 16, (at.y0 + at.y1) / 2]], rotulo: [at.x1 + 30, (at.y0 + at.y1) / 2] });
+    S.cuerpos.sort((a, b) => a.d - b.d);
+    return S;
+  }
+  // Caja que encierra la escena proyectada (para encuadrar la cámara).
+  function cajaTB(S, k, soloId) {
+    const pts = [];
+    const add = (x, y, z) => pts.push(proyTB(x, y, z, k));
+    if (soloId) {
+      const hu = N.tbHuella(N.tbPieza(TB, soloId)); if (!hu) return null;
+      hu.esquinas.forEach(c => { add(c[0], c[1], 0); add(c[0], c[1], hu.alto || 0); });
+      const m = 9; // contexto alrededor de la pieza (codos)
+      add(hu.x - m, hu.y - m, 0); add(hu.x + m, hu.y + m, 0); add(hu.x - m, hu.y + m, 0); add(hu.x + m, hu.y - m, 0);
+    } else {
+      S.suelo.forEach(s => s.pts.forEach(c => add(c[0], c[1], 0)));
+      S.cuerpos.forEach(b => { if (b.pared) b.pared.forEach(c => { add(c[0], c[1], 0); add(c[0], c[1], b.h); }); else if (b.esq) b.esq.forEach(c => add(c[0], c[1], b.h)); });
+      S.techo.forEach(t => t.pts.forEach(c => add(c[0], c[1], t.z)));
+      S.puntos.forEach(p => add(p.x, p.y, 0));
+      S.extra.forEach(e => e.flecha.concat([e.rotulo]).forEach(c => add(c[0], c[1], 0)));
+    }
+    if (!pts.length) return null;
+    const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+    return { x0: Math.min(...xs), y0: Math.min(...ys), x1: Math.max(...xs), y1: Math.max(...ys) };
+  }
+  const encuadreTB = (c, W, H, margen) => { if (!c) return { cx: 0, cy: 0, s: 1 }; const m = margen === undefined ? 28 : margen; return { cx: (c.x0 + c.x1) / 2, cy: (c.y0 + c.y1) / 2, s: Math.max(0.05, Math.min((W - 2 * m) / Math.max(1, c.x1 - c.x0), (H - 2 * m) / Math.max(1, c.y1 - c.y0))) }; };
+  // Pinta la escena en coordenadas de pantalla (los textos conservan su tamaño a cualquier zoom).
+  function svgTB(S, op) {
+    const { k, cam, W, H } = op;
+    const P = (x, y, z) => { const q = proyTB(x, y, z, k); return [(q[0] - cam.cx) * cam.s + W / 2, (q[1] - cam.cy) * cam.s + H / 2]; };
+    const pts = l => l.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+    const ap = op.aparicion || new Map(), resaltar = op.resaltar || null;
+    const estadoP = id => (id === op.sel ? ' sel' : '') + (resaltar ? (resaltar.has(id) ? ' resaltada' : ' atenuada') : '');
+    let out = '<g class="tb-suelo">';
+    S.suelo.forEach(s => { out += `<polygon class="${s.cls} cert-${s.cert}" points="${pts(s.pts.map(c => P(c[0], c[1], 0)))}"/>`; });
+    out += '</g><g class="tb-cuerpos">';
+    S.cuerpos.forEach(b => {
+      if (b.humana) {
+        const pie = P(b.x, b.y, 0), cab = P(b.x, b.y, b.h * 0.9), rr = Math.max(2.5, b.r * cam.s);
+        out += k < 0.02 ? `<g class="tb-humana"><circle cx="${pie[0].toFixed(1)}" cy="${pie[1].toFixed(1)}" r="${Math.max(3, rr * 1.4).toFixed(1)}"/></g>`
+          : `<g class="tb-humana"><path d="M${pie[0].toFixed(1)} ${pie[1].toFixed(1)}L${cab[0].toFixed(1)} ${(cab[1] + rr).toFixed(1)}"/><circle cx="${cab[0].toFixed(1)}" cy="${cab[1].toFixed(1)}" r="${rr.toFixed(1)}"/></g>`;
+        return;
+      }
+      if (b.pared) {
+        const [a, c] = b.pared, t0 = ap.get(b.id), t = t0 === undefined ? 1 : Math.min(1, Math.max(0, t0)), e = 1 - Math.pow(1 - t, 3), hh = b.h * e;
+        out += `<g class="${b.cls} tb-pared cert-${b.cert}${b.id ? estadoP(b.id) : ''}"${b.id ? ` data-tb-pieza="${esc(b.id)}"` : ''}${t < 1 ? ` style="opacity:${e.toFixed(2)}"` : ''}>${b.h > 0 ? `<polygon class="cara" points="${pts([P(a[0], a[1], 0), P(c[0], c[1], 0), P(c[0], c[1], hh), P(a[0], a[1], hh)])}"/>` : ''}<path class="pie" d="M${pts([P(a[0], a[1], 0), P(c[0], c[1], 0)]).replace(' ', 'L')}"/></g>`;
+        return;
+      }
+      const t0 = ap.get(b.id), t = t0 === undefined ? 1 : Math.min(1, Math.max(0, t0)), e = 1 - Math.pow(1 - t, 3), dz = (1 - e) * 14 + (b.z0 || 0);
+      let g = `<g class="${b.cls} cert-${b.cert}${estadoP(b.id)}${b.sinAlto ? ' sin-alto' : ''}" data-tb-pieza="${esc(b.id)}"${t < 1 ? ` style="opacity:${e.toFixed(2)}"` : ''}>`;
+      if (b.h > 0 && k > 0.001) b.esq.forEach((a, i) => {
+        const c = b.esq[(i + 1) % 4], dx = c[0] - a[0], dy = c[1] - a[1]; if (dx + dy <= 1e-9) return;
+        g += `<polygon class="${Math.abs(dx) >= Math.abs(dy) ? 'cs' : 'ce'}" points="${pts([P(a[0], a[1], dz), P(c[0], c[1], dz), P(c[0], c[1], b.h + dz), P(a[0], a[1], b.h + dz)])}"/>`;
+      });
+      g += `<polygon class="tapa" points="${pts(b.esq.map(c => P(c[0], c[1], b.h + dz)))}"/>`;
+      if (t < 1) { const m = P((b.esq[0][0] + b.esq[2][0]) / 2, (b.esq[0][1] + b.esq[2][1]) / 2, 0); g += `<circle class="tb-onda" cx="${m[0].toFixed(1)}" cy="${m[1].toFixed(1)}" r="${(8 + 34 * e).toFixed(1)}" style="opacity:${(1 - e).toFixed(2)}"/>`; }
+      out += g + '</g>';
+    });
+    out += '</g><g class="tb-techos">';
+    S.techo.forEach(tc => {
+      const t0 = ap.get(tc.id), t = t0 === undefined ? 1 : Math.min(1, Math.max(0, t0)), e = 1 - Math.pow(1 - t, 3);
+      out += `<g class="${tc.cls} cert-${tc.cert}${estadoP(tc.id)}" data-tb-pieza="${esc(tc.id)}"${t < 1 ? ` style="opacity:${e.toFixed(2)}"` : ''}><polygon class="tapa" points="${pts(tc.pts.map(c => P(c[0], c[1], tc.z + (1 - e) * 8)))}"/></g>`;
+    });
+    out += '</g><g class="tb-puntos">';
+    S.puntos.forEach(p => {
+      const q = P(p.x, p.y, p.z0 || 0), t0 = ap.get(p.id), t = t0 === undefined ? 1 : Math.min(1, t0);
+      out += `<g class="${p.cls} tb-punto cert-${p.cert}${estadoP(p.id)}" data-tb-pieza="${esc(p.id)}"${t < 1 ? ` style="opacity:${t.toFixed(2)}"` : ''}><circle class="toque" cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="14"/><circle class="tapa" cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="5.5"/></g>`;
+    });
+    out += '</g>';
+    S.extra.forEach(x => {
+      const a = P(x.flecha[0][0], x.flecha[0][1], 0), b = P(x.flecha[1][0], x.flecha[1][1], 0), dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1, ux = dx / l, uy = dy / l;
+      const h1 = [b[0] - ux * 9 - uy * 5, b[1] - uy * 9 + ux * 5], h2 = [b[0] - ux * 9 + uy * 5, b[1] - uy * 9 - ux * 5];
+      out += `<g class="tb-oriente" aria-hidden="true"><path d="M${a[0].toFixed(1)} ${a[1].toFixed(1)}L${b[0].toFixed(1)} ${b[1].toFixed(1)}"/><polygon points="${pts([b, h1, h2])}"/>
+        <text x="${(b[0] + ux * 6).toFixed(1)}" y="${(b[1] + uy * 6 + 4).toFixed(1)}" text-anchor="${ux > 0.3 ? 'start' : 'middle'}">${op.mini ? 'E' : 'Oriente'}</text></g>`;
+    });
+    // Rótulos: zonas, piezas (las grandes y la elegida primero), «alto no indicado» en relieve y la figura humana.
+    const items = [];
+    if (!op.mini || resaltar) {
+      const vistos = new Set();
+      S.cuerpos.concat(S.puntos, S.techo).forEach(b => {
+        if (!b.id || vistos.has(b.id) || (resaltar && !resaltar.has(b.id))) return;
+        if ((b.pared && !b.sinAlto || b.pts) && b.id !== op.sel) return; // contornos: solo rotulados al elegirlos
+        vistos.add(b.id);
+        const p = N.tbPieza(TB, b.id), q = b.esq ? P((b.esq[0][0] + b.esq[2][0]) / 2, (b.esq[0][1] + b.esq[2][1]) / 2, b.h + (b.z0 || 0))
+          : b.pared ? P((b.pared[0][0] + b.pared[1][0]) / 2, (b.pared[0][1] + b.pared[1][1]) / 2, b.h) : b.pts ? P((b.pts[0][0] + b.pts[2][0]) / 2, (b.pts[0][1] + b.pts[2][1]) / 2, b.z) : P(b.x, b.y, b.z0 || 0);
+        const sinAlto = k > 0.5 && (b.sinAlto || b.x !== undefined);
+        items.push({ id: b.id, x: q[0], y: q[1], texto: p.nombre + (sinAlto && (b.id === op.sel || resaltar || p.grupo === 'mobiliario') ? ' (alto no indicado en el texto)' : ''), prioridad: (b.id === op.sel ? 100 : 0) + (p.grupo === 'mobiliario' ? 20 : 0) + (resaltar ? 10 : 0) });
+      });
+    }
+    if (!op.mini) S.suelo.forEach((s, i) => { const q = P(s.c[0], s.c[1], 0); items.push({ id: 'z' + i, x: q[0], y: q[1], texto: s.etq, prioridad: 5, zona: true }); });
+    const etqs = N.colocarEtiquetas(items, W, H, op.mini ? 6 : 24), porId = new Map(items.map(i => [i.id, i]));
+    out += '<g class="tb-etiquetas" aria-hidden="true">' + etqs.map(e => `<text class="${porId.get(e.id).zona ? 'tb-etq-zona' : 'tb-etq'}${e.id === op.sel ? ' sel' : ''}" x="${e.x.toFixed(1)}" y="${e.y.toFixed(1)}" text-anchor="${e.anc}">${esc(e.texto)}</text>`).join('');
+    const hum = S.cuerpos.find(b => b.humana);
+    if (hum && !op.mini) { const q = P(hum.x, hum.y, k > 0.5 ? hum.h : 0); const izq = q[0] + 270 > W; out += `<text class="tb-etq-humana" x="${(q[0] + (izq ? -8 : 8)).toFixed(1)}" y="${(q[1] - 6).toFixed(1)}" text-anchor="${izq ? 'end' : 'start'}">figura de referencia de 1,70 m (ilustrativa)</text>`; }
+    return out + '</g>';
+  }
+  // Mini plano estático (acompañante): planta con las piezas del pasaje resaltadas.
+  function miniPlanoTB(ids) {
+    const W = 320, H = 170, op = { capas: new Set(N.TB_GRUPOS), visibles: null, humana: false };
+    const S = escenaTB(op), dentro = S.dentro, hs = ids.map(id => N.tbHuella(N.tbPieza(TB, id))).filter(Boolean);
+    // Si todo lo resaltado cae dentro del tabernáculo, el encuadre se acerca a él; si no, todo el atrio.
+    const u = dentro.length && { x0: Math.min(...dentro.map(z => z.x0)) - 4, y0: Math.min(...dentro.map(z => z.y0)) - 4, x1: Math.max(...dentro.map(z => z.x1)) + 4, y1: Math.max(...dentro.map(z => z.y1)) + 4 };
+    const cerca = u && hs.length && hs.every(h => h.esquinas.every(c => c[0] >= u.x0 && c[0] <= u.x1 && c[1] >= u.y0 && c[1] <= u.y1));
+    const cam = encuadreTB(cerca ? { x0: u.x0, y0: -u.y1, x1: u.x1, y1: -u.y0 } : cajaTB(S, 0), W, H, 12);
+    return `<svg class="tb-svg tb-mini-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc('Plano del tabernáculo con ' + ids.map(id => (N.tbPieza(TB, id) || {}).nombre).join(', ') + ' resaltado')}">${svgTB(S, { k: 0, cam, W, H, mini: true, resaltar: new Set(ids) })}</svg>`;
+  }
+
+  // Insignia con «Tradición» además de Texto, Inferido y Cálculo.
+  const insigniaTB = (c, ref) => c === 'tradicion' ? `<span class="insignia inferido tradicion" title="Tradición: lectura de una fuente externa, no está escrito">Tradición${ref ? ' · ' + refHTML(ref) : ''}</span>` : insignia(c || 'inferido', ref);
+  const calcTB = id => { const c = id && (TB.calculos || []).find(x => x && x.id === id); return c ? `<button type="button" class="enlace-boton tb-ver-calc" data-tb-calc="${esc(id)}">Ver el cálculo</button>` : ''; };
+  const fuenteExtTB = (f, url) => f ? `<span class="tb-fuente"><span class="etiqueta externa">Fuente externa</span> ${enlaceExt(String(f).replace(/^Fuente externa:\s*/i, ''), url)}</span>` : '';
+  // Una medida: codos con su certeza y cita, de dónde sale si no es del texto, y su equivalencia en metros (Cálculo).
+  function medidaTB(etq, m, codo, faltaTxt) {
+    const c = N.tbCodos(m);
+    if (c === null) return `<div class="tb-med"><dt>${etq}</dt><dd><span class="vacio">${faltaTxt || 'No indicado en el texto'}</span></dd></div>`;
+    const mts = codo ? N.codosAMetros(c, codo.cm) : null;
+    return `<div class="tb-med"><dt>${etq}</dt><dd><span class="tb-cifra"><strong>${numES(c)} ${c === 1 ? 'codo' : 'codos'}</strong>${insigniaTB(m.certeza, m.ref)}</span>
+      ${m.cita ? `<q class="tb-cita">${esc(m.cita)}</q>` : ''}${fuenteExtTB(m.fuente, m.url)}${calcTB(m.calculo)}
+      ${m.nota ? `<span class="nota">${esc(m.nota)}</span>` : ''}
+      ${mts !== null ? `<span class="tb-metros">≈ <strong>${numES(mts)} m</strong>${insignia('calculo')}<span class="meta">${numES(c)} × ${numES(codo.cm, 1)} cm (${esc(codo.nombre || codo.id)})</span></span>` : ''}</dd></div>`;
+  }
+  const citaRefTB = (x, cert) => x ? `${x.ref || cert ? insigniaTB(cert || x.certeza || 'texto', x.ref) : ''}${x.cita ? `<q class="tb-cita">${esc(x.cita)}</q>` : ''}${fuenteExtTB(x.fuente, x.url)}${calcTB(x.calculo)}` : '';
+  const codoNotaHTML = codo => codo ? `${esc(codo.nombre || codo.id)} = ${numES(codo.cm, 1)} cm. ${fuenteExtTB(codo.fuente || 'sin fuente indicada', codo.url)}${codo.cita_fuente ? ` <q class="tb-cita">${esc(codo.cita_fuente)}</q>` : ''}${codo.nota ? ` <details class="plegable tb-codo-nota"><summary>Sobre este valor</summary><p class="nota">${esc(codo.nota)}</p></details>` : ''}` : '';
+  function tarjetaTB(id) {
+    const codo = codoTB(), p = id && N.tbPieza(TB, id);
+    if (!p) {
+      const Z = (TB.zonas || []).filter(z => z && z.id);
+      const o = TB.orientacion;
+      return `<div class="tb-tarjeta-cab"><p class="tb-grupo">Para empezar</p><h2>Toca una pieza</h2></div>
+        <p class="meta">Cada pieza dice sus medidas en codos con su cita y su equivalencia en metros según el codo elegido.</p>
+        ${o ? `<section class="tb-sec"><h3>Orientación</h3><p>${esc(o.texto || '')}</p>${citaRefTB(o, 'texto')}${(o.otras || []).length ? `<ul class="tb-lista">${o.otras.map(x => `<li>${esc(x.texto || '')}${citaRefTB(x, 'texto')}</li>`).join('')}</ul>` : ''}</section>` : ''}
+        ${Z.length ? `<section class="tb-sec"><h3>Zonas</h3>${Z.map(z => `<h4>${esc(z.nombre || z.id)}</h4><dl class="tb-medidas">${medidaTB('Largo', z.largo, codo)}${medidaTB('Ancho', z.ancho, codo)}${z.alto ? medidaTB('Alto', z.alto, codo) : ''}</dl>${z.nota ? `<p class="nota">${esc(z.nota)}</p>` : ''}`).join('')}</section>` : ''}`;
+    }
+    const m = p.medidas || {}, hu = N.tbHuella(p), cert = certPos((p.plano || {}).certeza), z = p.zona || {}, zn = z.id && N.tbZona(TB, z.id);
+    const pasos = N.tbMontaje(TB).filter(x => x.pieza === p.id);
+    const imgs = R ? permitidos(N.tbRecursos(R, p)) : [];
+    const ninguna = ['largo', 'ancho', 'alto'].every(k => N.tbCodos(m[k]) === null);
+    return `<div class="tb-tarjeta-cab"><p class="tb-grupo">${esc(TB_CAPA_TXT[p.grupo] || p.grupo || '')}${zn ? ' · ' + esc(zn.nombre || zn.id) : ''}</p><h2 id="tb-nombre">${esc(p.nombre)}</h2>
+        <button type="button" class="cerrar" data-tb-cerrar aria-label="Cerrar la tarjeta"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+      ${(p.plano && p.plano.relacion || []).length ? `<section class="tb-sec"><h3>Dónde la pone el texto</h3><ul class="tb-lista">${p.plano.relacion.map(x => `<li><strong>${esc(x.texto || '')}</strong>${citaRefTB(x, 'texto')}</li>`).join('')}</ul></section>` : ''}
+      ${hu ? `<p class="tb-pos pos-${cert}"><span class="tb-trazo" aria-hidden="true"></span><span><strong>${cert === 'texto' ? 'Posición en el plano: Texto' : `Coordenada del plano: ${TB_POS_TXT[cert]}`}</strong> (${TB_POS_TRAZO[cert]}): ${TB_POS_DESC[cert]}${p.plano.nota ? ' ' + esc(p.plano.nota) : ''}</span></p>` : '<p class="tb-pos pos-tradicion"><span>Sin posición en el plano: no se dibuja.</span></p>'}
+      <section class="tb-sec"><h3>Medidas</h3>
+        ${ninguna ? '<p class="vacio-txt">El texto no da sus medidas: se marca como un punto en el plano.</p>' : `<dl class="tb-medidas">${medidaTB('Largo', m.largo, codo)}${medidaTB('Ancho', m.ancho, codo)}${medidaTB('Alto', m.alto, codo, hu && hu.contorno ? 'No indicado para esta pieza: en el relieve toma el alto de su zona' : 'No indicado en el texto: en el relieve se dibuja plana')}</dl>`}
+        ${p.cantidad && p.cantidad.valor !== undefined && p.cantidad.valor !== null ? `<p class="tb-cant"><strong>Cantidad: ${esc(p.cantidad.valor)}</strong>${citaRefTB(p.cantidad, p.cantidad.certeza || 'texto')}</p>` : ''}</section>
+      ${(p.materiales || []).length ? `<section class="tb-sec"><h3>Materiales</h3><ul class="tb-lista">${p.materiales.map(x => `<li><strong>${esc(x.nombre)}</strong>${citaRefTB(x, x.certeza || 'texto')}</li>`).join('')}</ul></section>` : ''}
+      ${p.funcion && p.funcion.texto ? `<section class="tb-sec"><h3>Función</h3><p>${esc(p.funcion.texto)}</p>${citaRefTB(p.funcion, p.funcion.certeza || 'texto')}</section>` : ''}
+      ${zn ? `<section class="tb-sec"><h3>Dónde va</h3><p><strong>${esc(zn.nombre || zn.id)}</strong>${insigniaTB(z.certeza, z.ref)}</p>${z.cita ? `<q class="tb-cita">${esc(z.cita)}</q>` : ''}${z.nota ? `<p class="nota">${esc(z.nota)}</p>` : ''}</section>` : ''}
+      <section class="tb-sec"><h3>En el texto</h3><ul class="tb-refs">
+        ${p.instruccion ? `<li><span class="meta">Instrucción</span> ${refRangoHTML(p.instruccion)}</li>` : ''}
+        ${p.construccion ? `<li><span class="meta">Construcción</span> ${refRangoHTML(p.construccion)}</li>` : ''}
+        ${pasos.map(x => `<li><span class="meta">Montaje</span> ${insigniaTB(x.certeza || 'texto', x.ref)}${x.cita ? ` <q class="tb-cita">${esc(x.cita)}</q>` : ''}${x.certeza && x.certeza !== 'texto' ? ` <span class="nota">Identificación inferida${x.nota ? ': ' + esc(x.nota) : ''}</span>` : ''}</li>`).join('')}</ul></section>
+      ${p.nota ? `<p class="nota">${esc(p.nota)}</p>` : ''}
+      ${imgs.length ? `<section class="tb-sec"><h3>Cómo se ha imaginado</h3><p class="meta">No son datos del texto: reconstrucciones modernas y obras de arte, cada una con su autor.</p><ul class="rec-lista">${imgs.map(recItemHTML).join('')}</ul></section>` : ''}`;
+  }
+  function calculosTBHTML() {
+    const cs = (TB.calculos || []).filter(c => c && (c.texto || c.resultado !== undefined));
+    if (!cs.length) return '';
+    const paso = x => `<li${x.supuesto ? ' class="convencion"' : ''}>${x.supuesto ? '<span class="etiqueta">supuesto</span> ' : ''}${esc(x.texto || '')}${x.valor !== undefined && x.valor !== null ? ` <strong>= ${esc(typeof x.valor === 'number' ? numES(x.valor) : x.valor)}</strong>` : ''}${x.ref ? ' · ' + refHTML(x.ref) : ''}${x.cita ? `<q>${esc(x.cita)}</q>` : ''}${fuenteExtTB(x.fuente, x.url)}${calcTB(x.calculo)}${x.nota ? ` <span class="nota">${esc(x.nota)}</span>` : ''}</li>`;
+    return `<section class="tb-calculos" aria-labelledby="t-tb-calc"><h2 id="t-tb-calc">Cálculos (${cs.length})</h2><p class="meta">Cifras que el texto no da de una vez: salen de varios versículos, paso a paso. Algunas dependen de una lectura tradicional o de un supuesto, y lo dicen.</p>
+      ${cs.map(c => `<details class="plegable tb-calc" id="tb-calc-${esc(c.id || '')}"><summary><span>${esc(c.texto || '')}${c.resultado !== undefined && c.resultado !== null && !String(c.texto || '').includes('=') ? `: <strong>${esc(typeof c.resultado === 'number' ? numES(c.resultado) : c.resultado)}</strong>` : ''}</span>${insigniaTB(c.certeza || 'calculo')}</summary>
+        ${c.operacion ? `<p class="tb-op"><span class="meta">Operación:</span> <code>${esc(String(c.operacion).replace(/\*/g, ' × ').replace(/\//g, ' ÷ ').replace(/\+/g, ' + ').replace(/\s+/g, ' '))}</code>${c.resultado !== undefined && c.resultado !== null ? ` = <strong>${esc(typeof c.resultado === 'number' ? numES(c.resultado) : c.resultado)}</strong>` : ''}</p>` : ''}
+        <ol class="rc-pasos">${(c.pasos || []).map(paso).join('')}</ol>${c.nota ? `<p class="nota">${esc(c.nota)}</p>` : ''}</details>`).join('')}</section>`;
+  }
+  // «Según voy leyendo»: piezas visibles y las que faltan, con el pasaje que las trae.
+  const visiblesLeidoTB = () => new Set(N.tbVisiblesLeido(TB, N.pasajes(D), [...pasajesLeidos()]));
+  function leidoTBHTML() {
+    if (estadoTB.modo !== 'leido') return '';
+    const vis = visiblesLeidoTB(), ps = N.tbPiezas(TB).filter(p => p.instruccion), faltan = ps.filter(p => !vis.has(p.id));
+    return `<p>Ves <strong>${vis.size} de ${ps.length}</strong> piezas: las que tienen leídos (marcados en Leer) todos los pasajes de su instrucción.</p>
+      ${faltan.length ? `<details class="plegable"><summary>Faltan ${faltan.length}</summary><ul class="tb-faltan">${faltan.map(p => `<li>${esc(p.nombre)} · ${refRangoHTML(p.instruccion)}</li>`).join('')}</ul></details>` : '<p class="meta">Ya las has leído todas.</p>'}`;
+  }
+
+  function vistaTabernaculo(args) {
+    const cab = `<p class="tb-volver"><a class="volver" href="#leer/Ex"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Éxodo</a></p><h1 tabindex="-1">El tabernáculo</h1>`;
+    if (!TB || !N.tbPiezas(TB).length) return cab + '<p class="vacio-txt">Los datos del tabernáculo (datos/tabernaculo.js) todavía no están. Cuando lleguen, aquí verás el plano a escala, el relieve y el montaje de Éxodo 40.</p>';
+    const sel = args[0] && N.tbPieza(TB, args[0]) ? args[0] : null;
+    estadoTB.sel = sel;
+    const codo = codoTB(), cs = (TB.codos || []).filter(c => c && c.id && +c.cm > 0), capas = capasTB(), vista = vistaTBGuardada(), M = N.tbMontaje(TB);
+    const o = TB.orientacion;
+    const porGrupo = N.TB_GRUPOS.map(g => [g, N.tbPiezas(TB).filter(p => p.grupo === g)]).filter(x => x[1].length);
+    return `${cab}
+      <p class="sub">Medidas y lugares según Éxodo 25–40. Cada cifra dice de dónde sale: <strong>Texto</strong> (con su cita), <strong>Inferido</strong> o <strong>Cálculo</strong>. Los metros son siempre un cálculo según el codo que elijas.</p>
+      ${TB.ejemplo ? '<p class="rc-ejemplo">EJEMPLO: datos de prueba. Las posiciones no son una reconstrucción real.</p>' : ''}
+      <div class="tb" data-tb>
+        <div class="tb-escena">
+          <div class="tb-barra">
+            <fieldset class="segmentos tb-vista"><legend class="sr">Vista</legend>
+              <label><input type="radio" name="tb-vista" value="plano" ${vista === 'plano' ? 'checked' : ''}><span>Plano</span></label>
+              <label><input type="radio" name="tb-vista" value="relieve" ${vista === 'relieve' ? 'checked' : ''}><span>Relieve</span></label></fieldset>
+            ${cs.length ? `<fieldset class="segmentos tb-codo"><legend class="sr">Codo para pasar a metros</legend>${cs.map(c => `<label><input type="radio" name="tb-codo" value="${esc(c.id)}" ${codo && codo.id === c.id ? 'checked' : ''}><span>${esc(c.nombre || c.id)} <small>${numES(c.cm, 1)} cm</small></span></label>`).join('')}</fieldset>` : ''}
+          </div>
+          ${codo ? `<p class="meta tb-codo-fuente">${codoNotaHTML(codo)}</p>` : ''}
+          <div class="tb-lienzo">
+            <svg class="tb-svg" role="group" aria-label="Plano del tabernáculo. Las piezas se pueden elegir también en la lista de debajo."></svg>
+            <div class="mapa-ctrl"><button type="button" data-tb-z="1" aria-label="Acercar">+</button><button type="button" data-tb-z="-1" aria-label="Alejar">−</button>
+              <button type="button" data-tb-z="0" aria-label="Ver el conjunto"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7V3h4M13 3h4v4M17 13v4h-4M7 17H3v-4"/></svg></button></div>
+            <div class="tb-montaje" aria-live="polite" hidden></div>
+          </div>
+          ${o ? `<p class="tb-orient meta"><span class="tb-orient-flecha" aria-hidden="true">→</span> Oriente: ${esc(o.texto || '')} ${insignia('texto', o.ref)}${o.cita ? `<q class="tb-cita">${esc(o.cita)}</q>` : ''}</p>` : ''}
+          <div class="tb-mando">
+            ${M.length ? `<button type="button" class="boton" data-tb-armar>${ICO_PLAY}Armar según Éx 40</button>` : ''}
+            <fieldset class="segmentos tb-modo"><legend class="sr">Qué piezas se ven</legend>
+              <label><input type="radio" name="tb-modo" value="todo" ${estadoTB.modo === 'todo' ? 'checked' : ''}><span>Todas</span></label>
+              <label><input type="radio" name="tb-modo" value="leido" ${estadoTB.modo === 'leido' ? 'checked' : ''}><span>Según voy leyendo</span></label></fieldset>
+          </div>
+          <div class="tb-leido" aria-live="polite">${leidoTBHTML()}</div>
+          <fieldset class="tb-capas"><legend>Capas</legend>
+            ${N.TB_GRUPOS.map(g => `<label class="tb-capa tb-g-${g}"><input type="checkbox" data-tb-capa="${g}" ${capas.has(g) ? 'checked' : ''}><span class="tb-capa-muestra" aria-hidden="true"></span>${TB_CAPA_TXT[g]}</label>`).join('')}
+            <label class="tb-capa"><input type="checkbox" id="tb-humana" ${store.get('biblia.tbHumana', false) === true ? 'checked' : ''}>Figura de referencia de 1,70 m (ilustrativa)</label></fieldset>
+          <p class="leyenda-mapa tb-leyenda">${['texto', 'inferido', 'tradicion'].map(c => `<span><svg class="tb-ico-trazo pos-${c}" viewBox="0 0 28 10" aria-hidden="true"><path d="M2 5h24"/></svg>Posición: ${TB_POS_TXT[c]}</span>`).join('')}</p>
+          <nav class="tb-piezas" aria-label="Piezas">${porGrupo.map(([g, ps]) => `<div class="tb-piezas-grupo"><span class="meta">${TB_CAPA_TXT[g]}</span><ul class="chips">${ps.map(p => `<li><button type="button" class="chip-tb${p.id === sel ? ' sel' : ''}" data-tb-pieza="${esc(p.id)}" aria-pressed="${p.id === sel}">${esc(p.nombre)}</button></li>`).join('')}</ul></div>`).join('')}</nav>
+        </div>
+        <article class="tb-tarjeta${sel ? ' con-pieza' : ''}" aria-live="polite" aria-labelledby="tb-nombre">${tarjetaTB(sel)}</article>
+        ${calculosTBHTML()}
+        ${(TB.fuentes || []).length ? `<details class="plegable tb-fuentes"><summary>Fuentes</summary><ul class="rc-fuentes">${TB.fuentes.map(f => `<li><span class="etiqueta externa">Fuente externa</span> ${enlaceExt(f.nombre || f.id || '', f.url)}</li>`).join('')}</ul></details>` : ''}
+      </div>`;
+  }
+
+  // Motor de la vista completa: transición plano ↔ relieve, cámara, selección y montaje.
+  function crearTabernaculo(raiz) {
+    raiz.dataset.montado = '1';
+    const lienzo = raiz.querySelector('.tb-lienzo'), svg = lienzo.querySelector('svg'), panelM = raiz.querySelector('.tb-montaje');
+    const M = N.tbMontaje(TB), DUR_AP = 700;
+    let W = 640, H = 420, raf = 0, anim = null, libre = false;
+    const E = { k: vistaTBGuardada() === 'relieve' ? 1 : 0, cam: null, ap: new Map() };
+    const mont = { activo: false, i: -1, jugando: false, timer: 0, fin: false };
+    const suave = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+    const opciones = () => ({ capas: capasTB(), sel: estadoTB.sel, humana: store.get('biblia.tbHumana', false) === true, codo: codoTB(),
+      visibles: mont.activo && !mont.fin ? new Set(N.tbColocadas(TB, mont.i + 1)) : estadoTB.modo === 'leido' ? visiblesLeidoTB() : null });
+    const objetivo = (k, id) => { const S = escenaTB(Object.assign(opciones(), { visibles: null })); return encuadreTB(cajaTB(S, k, id), W, H, id ? 18 : 28); };
+    function medir() { const r = lienzo.getBoundingClientRect(); W = Math.max(200, Math.round(r.width)); H = Math.max(180, Math.round(r.height)); }
+    function pintar(ahora) {
+      if (!E.cam) E.cam = objetivo(E.k);
+      const ap = new Map(); E.ap.forEach((t0, id) => { const t = (ahora - t0) / DUR_AP; if (t < 1) ap.set(id, t); });
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.innerHTML = svgTB(escenaTB(opciones()), Object.assign(opciones(), { k: E.k, cam: E.cam, W, H, aparicion: ap }));
+      svg.classList.toggle('relieve', E.k > 0.5);
+      return ap.size > 0;
+    }
+    function cuadro(ahora) {
+      raf = 0;
+      if (!raiz.isConnected) { clearTimeout(mont.timer); return; }
+      let seguir = false;
+      if (anim) {
+        const t = Math.min(1, (ahora - anim.t0) / anim.dur), e = suave(t), a = anim;
+        E.k = a.k0 + (a.k1 - a.k0) * e;
+        E.cam = { cx: a.c0.cx + (a.c1.cx - a.c0.cx) * e, cy: a.c0.cy + (a.c1.cy - a.c0.cy) * e, s: a.c0.s * Math.pow(a.c1.s / a.c0.s, e) };
+        if (t < 1) seguir = true; else anim = null;
+      }
+      if (pintar(ahora)) seguir = true;
+      if (seguir) raf = requestAnimationFrame(cuadro);
+    }
+    const pedir = () => { if (!raf) raf = requestAnimationFrame(cuadro); };
+    const ya = () => { if (anim) pedir(); else if (pintar(performance.now())) pedir(); }; // sin transición pendiente se pinta en el acto
+    // Lleva k y la cámara a su destino (sin animación si se pide movimiento reducido).
+    function ir(k1, c1, dur) {
+      if (!E.cam) E.cam = objetivo(E.k);
+      if (movReducido() || !dur) { anim = null; E.k = k1; E.cam = c1; ya(); return; }
+      anim = { t0: performance.now(), dur, k0: E.k, k1, c0: E.cam, c1 }; pedir();
+    }
+    const kVista = () => vistaTBGuardada() === 'relieve' ? 1 : 0;
+    const encuadrar = dur => { libre = false; ir(E.k, objetivo(anim ? anim.k1 : E.k, null), dur); };
+    function seleccionar(id, enfocar) {
+      estadoTB.sel = id && N.tbPieza(TB, id) ? id : null;
+      const t = raiz.querySelector('.tb-tarjeta');
+      if (t) { t.innerHTML = tarjetaTB(estadoTB.sel); t.classList.toggle('con-pieza', !!estadoTB.sel); }
+      raiz.querySelectorAll('.chip-tb').forEach(b => { const on = b.dataset.tbPieza === estadoTB.sel; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', on); });
+      try { history.replaceState(null, '', hrefTB(estadoTB.sel)); } catch (e) { /* file:// */ }
+      if (enfocar && estadoTB.sel && N.tbHuella(N.tbPieza(TB, estadoTB.sel))) {
+        const c = objetivo(E.k, estadoTB.sel);
+        // Móvil: la tarjeta sube como hoja inferior; el plano se coloca arriba y la pieza en la parte que queda visible.
+        if (t && getComputedStyle(t).position === 'fixed') {
+          try { lienzo.scrollIntoView({ block: 'start', behavior: 'auto' }); } catch (e) { /* sin opciones */ }
+          const lt = lienzo.getBoundingClientRect().top, hoja = t.getBoundingClientRect().top, y = Math.max(50, Math.min(H / 2, (hoja - lt) / 2));
+          c.cy += (H / 2 - y) / c.s;
+        }
+        libre = true; ir(E.k, c, 800);
+      } else ya();
+    }
+    function vista(v) { store.set('biblia.tbVista', v); const k1 = v === 'relieve' ? 1 : 0; const foco = libre && estadoTB.sel ? estadoTB.sel : null; ir(k1, objetivo(k1, foco), 1100); }
+    function zoom(f) {
+      if (!E.cam) E.cam = objetivo(E.k);
+      if (!f) { encuadrar(500); return; }
+      libre = true; ir(E.k, Object.assign({}, E.cam, { s: Math.min(60, Math.max(0.5, E.cam.s * (f > 0 ? 1.45 : 1 / 1.45))) }), 280);
+    }
+    // Montaje (Éx 40): una pieza por paso, con su cita; el ritmo depende de lo largo de la cita.
+    const durPaso = m => Math.min(8000, Math.max(2600, 1500 + 48 * String(m.cita || '').length));
+    function panelMontaje() {
+      if (!mont.activo) { panelM.hidden = true; panelM.innerHTML = ''; return; }
+      panelM.hidden = false;
+      const m = M[mont.i], p = m && N.tbPieza(TB, m.pieza), red = movReducido();
+      panelM.innerHTML = mont.fin
+        ? `<p class="tb-m-cuenta">Montaje completo · ${M.length} pasos</p><p>${refHTML(M[M.length - 1].ref)}${M[M.length - 1].cita ? ` <q class="tb-cita">${esc(M[M.length - 1].cita)}</q>` : ''}</p>
+          <div class="tb-m-botones"><button type="button" class="boton secundario mini-boton" data-tb-m="otra">${ICO_OTRA}Otra vez</button><button type="button" class="boton secundario mini-boton" data-tb-m="salir">Cerrar</button></div>`
+        : `<p class="tb-m-cuenta">Paso ${mont.i + 1} de ${M.length}${p ? ` · <strong>${esc(p.nombre)}</strong>` : ''}</p>
+          ${m.cita ? `<blockquote class="rc-cita">${esc(m.cita)}</blockquote>` : ''}<p class="rc-ref">${insigniaTB(m.certeza || 'texto', m.ref)}${m.certeza && m.certeza !== 'texto' ? ` <span class="nota">Identificación inferida${m.nota ? ': ' + esc(m.nota) : ''}</span>` : ''}</p>
+          <div class="tb-m-barra" aria-hidden="true"><span style="width:${((mont.i + 1) / M.length * 100).toFixed(1)}%"></span></div>
+          <div class="tb-m-botones">
+            <button type="button" class="boton secundario mini-boton" data-tb-m="-1" aria-label="Paso anterior"${mont.i ? '' : ' disabled'}><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5L7 10l5.5 5.5"/></svg></button>
+            ${red ? '' : `<button type="button" class="boton secundario mini-boton" data-tb-m="pausa" aria-label="${mont.jugando ? 'Pausar' : 'Seguir'}">${mont.jugando ? ICO_PAUSA : ICO_PLAY}</button>`}
+            <button type="button" class="boton secundario mini-boton" data-tb-m="1" aria-label="Paso siguiente"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4.5L13 10l-5.5 5.5"/></svg></button>
+            <button type="button" class="boton secundario mini-boton" data-tb-m="salir">Salir</button></div>
+          ${red ? '<p class="meta">Movimiento reducido: avanza con «siguiente».</p>' : ''}`;
+    }
+    function paso(i) {
+      clearTimeout(mont.timer);
+      if (i >= M.length) { mont.fin = true; mont.jugando = false; panelMontaje(); encuadrar(1200); return; }
+      mont.i = Math.max(0, i); mont.fin = false;
+      const m = M[mont.i];
+      if (!movReducido() && !N.tbColocadas(TB, mont.i).includes(m.pieza)) E.ap.set(m.pieza, performance.now());
+      if (window.matchMedia && window.matchMedia('(min-width: 900px)').matches) { estadoTB.sel = null; seleccionar(m.pieza, false); }
+      panelMontaje();
+      const c = objetivo(E.k, N.tbHuella(N.tbPieza(TB, m.pieza)) ? m.pieza : null), hp = panelM.hidden ? 0 : panelM.offsetHeight;
+      if (hp && hp < H * 0.6) c.cy += (hp / 2 + 6) / c.s; // la cita tapa la parte de abajo: la pieza queda encima
+      libre = true; ir(E.k, c, 900);
+      if (mont.jugando && !movReducido()) mont.timer = setTimeout(() => paso(mont.i + 1), durPaso(m));
+    }
+    function armar() { try { lienzo.scrollIntoView({ block: 'center', behavior: movReducido() ? 'auto' : 'smooth' }); } catch (e) { /* sin opciones */ } mont.activo = true; mont.fin = false; mont.jugando = !movReducido(); E.ap.clear(); paso(0); }
+    function salir() { clearTimeout(mont.timer); mont.activo = false; mont.jugando = false; mont.fin = false; panelMontaje(); encuadrar(700); }
+    function accionMontaje(a) {
+      if (a === 'salir') salir();
+      else if (a === 'otra') armar();
+      else if (a === 'pausa') { mont.jugando = !mont.jugando; if (mont.jugando) paso(mont.i + 1); else { clearTimeout(mont.timer); panelMontaje(); } }
+      else { mont.jugando = false; paso(mont.i + +a); }
+    }
+    // Arrastre para mover la cámara (ratón, lápiz o dedo).
+    let arr = null;
+    svg.addEventListener('pointerdown', e => { if (e.button !== 0 || e.target.closest('[data-tb-pieza]')) return; arr = { x: e.clientX, y: e.clientY, c: Object.assign({}, E.cam), mov: false }; try { svg.setPointerCapture(e.pointerId); } catch (x) { /* sin captura */ } });
+    svg.addEventListener('pointermove', e => {
+      if (!arr) return; const dx = e.clientX - arr.x, dy = e.clientY - arr.y;
+      if (!arr.mov && Math.hypot(dx, dy) < 4) return;
+      arr.mov = true; libre = true; anim = null; E.cam = { cx: arr.c.cx - dx / arr.c.s, cy: arr.c.cy - dy / arr.c.s, s: arr.c.s }; ya();
+    });
+    const soltarTB = () => { arr = null; };
+    svg.addEventListener('pointerup', soltarTB); svg.addEventListener('pointercancel', soltarTB);
+    svg.addEventListener('keydown', e => { const g = e.target.closest && e.target.closest('[data-tb-pieza]'); if (g && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); seleccionar(g.dataset.tbPieza, true); } });
+    if (window.ResizeObserver) new ResizeObserver(() => { const w = W, h = H; medir(); if (w !== W || h !== H) { if (!libre) E.cam = objetivo(E.k, null); ya(); } }).observe(lienzo);
+    medir();
+    E.cam = estadoTB.sel ? objetivo(E.k, estadoTB.sel) : objetivo(E.k);
+    if (estadoTB.sel) libre = true;
+    pintar(performance.now());
+    return { seleccionar, vista, zoom, armar, accionMontaje, repintar: () => { if (!libre) E.cam = objetivo(E.k); ya(); }, raiz, estaMontando: () => mont.activo };
+  }
+  function montarTB(raiz) {
+    raiz.querySelectorAll('.tb[data-tb]:not([data-montado])').forEach(el => { try { TBM = crearTabernaculo(el); } catch (e) { const l = el.querySelector('.tb-lienzo'); if (l) l.textContent = 'No se pudo dibujar el tabernáculo.'; console.error(e); } });
+  }
+  const tbVivo = () => TBM && TBM.raiz.isConnected ? TBM : null;
+  document.addEventListener('click', e => {
+    const t = e.target; if (!t.closest) return;
+    const m = tbVivo(); if (!m) return;
+    const pz = t.closest('[data-tb-pieza]'); if (pz && m.raiz.contains(pz)) { m.seleccionar(pz.dataset.tbPieza, true); const c = m.raiz.querySelector('.tb-tarjeta'); if (c && window.matchMedia && window.matchMedia('(min-width: 900px)').matches) c.scrollTop = 0; return; }
+    if (t.closest('[data-tb-cerrar]')) { m.seleccionar(null, false); return; }
+    const vc = t.closest('[data-tb-calc]'); if (vc) { const d = document.getElementById('tb-calc-' + vc.dataset.tbCalc); if (d) { d.open = true; d.scrollIntoView({ block: 'start', behavior: movReducido() ? 'auto' : 'smooth' }); const sm = d.querySelector('summary'); if (sm) sm.focus({ preventScroll: true }); } return; }
+    const z = t.closest('[data-tb-z]'); if (z) { m.zoom(+z.dataset.tbZ); return; }
+    if (t.closest('[data-tb-armar]')) { m.armar(); return; }
+    const mm = t.closest('[data-tb-m]'); if (mm) { m.accionMontaje(mm.dataset.tbM); }
+  });
+  document.addEventListener('change', e => {
+    const t = e.target, m = tbVivo(); if (!m || !m.raiz.contains(t)) return;
+    if (t.name === 'tb-vista') m.vista(t.value);
+    else if (t.name === 'tb-codo') {
+      store.set('biblia.codo', t.value);
+      const c = m.raiz.querySelector('.tb-tarjeta'); if (c) c.innerHTML = tarjetaTB(estadoTB.sel);
+      const f = m.raiz.querySelector('.tb-codo-fuente'), codo = codoTB(); if (f && codo) f.innerHTML = codoNotaHTML(codo);
+      m.repintar();
+    }
+    else if (t.name === 'tb-modo') { estadoTB.modo = t.value === 'leido' ? 'leido' : 'todo'; const l = m.raiz.querySelector('.tb-leido'); if (l) l.innerHTML = leidoTBHTML(); m.repintar(); }
+    else if (t.dataset.tbCapa) { const cs = capasTB(); if (t.checked) cs.add(t.dataset.tbCapa); else cs.delete(t.dataset.tbCapa); store.set('biblia.tbCapas', [...cs]); m.repintar(); }
+    else if (t.id === 'tb-humana') { store.set('biblia.tbHumana', t.checked); m.repintar(); }
+  });
+  // Leer (plan de Éxodo): acceso a la vista.
+  const entradaTBHTML = () => TB && N.tbPiezas(TB).length ? `<a class="tb-entrada" href="#tabernaculo">${ICO_TB}<span><strong>El tabernáculo, a escala</strong><span class="meta">Plano y relieve con las medidas de Éxodo 25–40 y su montaje según Éxodo 40.</span></span></a>` : '';
+  // Acompañante (Éx 25–31 y 35–40): mini plano con las piezas del pasaje o del versículo.
+  function tabernaculoAcompHTML(p, refs, sec, I) {
+    if (!TB || !N.tbEnPasaje(p)) return '';
+    const ps = estado.activo ? N.tbPiezasDeRefs(TB, refs) : N.tbPiezasDePasaje(TB, p);
+    if (!ps.length) return '';
+    const ids = ps.map(x => x.id), dib = ids.filter(id => N.tbHuella(N.tbPieza(TB, id)));
+    return sec('En el tabernáculo', `<div class="tb-acomp">${dib.length ? `<a class="tb-mini" href="${hrefTB(dib[0])}" aria-label="Abrir el tabernáculo en ${esc(N.tbPieza(TB, dib[0]).nombre)}">${miniPlanoTB(dib)}</a>` : ''}
+      <ul class="chips">${ps.map(x => `<li><a class="chip-tb" href="${hrefTB(x.id)}">${esc(x.nombre)}</a></li>`).join('')}</ul>
+      ${TB.ejemplo ? '<p class="meta">EJEMPLO: datos de prueba.</p>' : ''}
+      <p><a class="boton secundario" href="${hrefTB(ids[0])}">Ver ${esc(ps[0].nombre)} en el tabernáculo</a></p></div>`, I('M2.5 15.5h15M4 15.5V8.5h12v7M4 8.5l6-4 6 4M8.5 15.5v-4h3v4'));
+  }
+
   /* ---------- Personajes: colección, ficha y curiosidades ---------- */
   const SILUETA = '<svg class="silueta" viewBox="0 0 40 48" aria-hidden="true"><circle cx="20" cy="15" r="8.5"/><path d="M4 47c0-10.5 7-18 16-18s16 7.5 16 18z"/></svg>';
   const inicial = id => Array.from(String(nombre(id)))[0] || '?';
@@ -3424,8 +3972,8 @@ if (typeof document !== 'undefined') (function () {
 
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
-  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes };
-  const PESTANA = { edades: 'tiempo' }; // rutas antiguas
+  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes, tabernaculo: vistaTabernaculo };
+  const PESTANA = { edades: 'tiempo', tabernaculo: 'leer' }; // rutas antiguas
   let primera = true;
   function render(foco) {
     if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/biblia.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
@@ -3610,6 +4158,9 @@ if (typeof document !== 'undefined') (function () {
   // Con ?ejemplo, las marcas de contenido de prueba (pruebas/contenido-ejemplo.js) sustituyen a datos/contenido.js.
   const arrancar = () => EJEMPLO ? cargarScript('pruebas/contenido-ejemplo.js').then(arrancar0, arrancar0) : arrancar0();
   // Recorridos de prueba (EJEMPLO) con ?ejemplo mientras no exista datos/recorridos.js.
-  if (EJEMPLO && !RC) cargarScript('pruebas/recorridos-ejemplo.js').then(() => { RC = window.BIBLIA_RECORRIDOS || null; }, () => {}).then(arrancar);
-  else arrancar();
+  // Tabernáculo de prueba (EJEMPLO) con ?ejemplo o ?tabernaculo-ejemplo mientras no exista datos/tabernaculo.js.
+  const tbEjemplo = () => (EJEMPLO || /[?&]tabernaculo-ejemplo/.test(location.search)) && !TB
+    ? cargarScript('pruebas/tabernaculo-ejemplo.js').then(() => { TB = window.BIBLIA_TABERNACULO || null; }, () => {}) : Promise.resolve();
+  if (EJEMPLO && !RC) cargarScript('pruebas/recorridos-ejemplo.js').then(() => { RC = window.BIBLIA_RECORRIDOS || null; }, () => {}).then(tbEjemplo).then(arrancar);
+  else tbEjemplo().then(arrancar);
 })();
