@@ -270,7 +270,7 @@ def parse_ex(s):
     return (int(m.group(1)), int(m.group(2)))
 
 
-ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2}
+ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3}
 
 
 def parse_ref(s):
@@ -320,6 +320,8 @@ def construir(cx, cfg=None):
     PASAJES = cfg.PASAJES
     NOTAS_EXISTENTES = getattr(cfg, "NOTAS_EXISTENTES", {})  # nota que se añade a una persona ya existente
     REFS_EXTRA = getattr(cfg, "REFS_EXTRA", {})  # refs que el texto da a una persona sin nombrarla
+    REL_DESCARTAR = getattr(cfg, "REL_DESCARTAR", {})  # (de, a, tipo) de BibleData que no se usan -> motivo
+    remap = getattr(cfg, "REMAP_REF", lambda r: r)  # versificación de BibleData/OpenBible (inglesa) -> RV1909
     ex = lambda r: f"{L} {r[0]}:{r[1]}"  # noqa: E731
     parse_ex = parse_ref
     rv, br, sa = cx["rv"], cx["br"], cx["sin_acentos"]
@@ -346,7 +348,7 @@ def construir(cx, cfg=None):
         p = r["person_id"]
         if not valido(p) or (p in SOLO_ETIQUETA and r["person_label"] not in SOLO_ETIQUETA[p]):
             continue
-        ref = tuple(map(int, r["reference_id"][4:].split(":")))
+        ref = remap(tuple(map(int, r["reference_id"][4:].split(":"))))
         if (p, ref) in PV_DESCARTAR:
             avisos.append(f"{NOMBRE}: se descarta {p} en {ex(ref)}: {PV_DESCARTAR[(p, ref)]}")
             continue
@@ -377,7 +379,7 @@ def construir(cx, cfg=None):
         exo = [x for x in refs if x.startswith(USX + " ")]
         if not exo:
             continue
-        ref = tuple(map(int, exo[0][4:].split(":")))
+        ref = remap(tuple(map(int, exo[0][4:].split(":"))))
         p1, t, p2 = r["person_id_1"], r["relationship_type"].strip().lower(), r["person_id_2"]
         if not (valido(p1) and valido(p2)):
             continue
@@ -396,6 +398,11 @@ def construir(cx, cfg=None):
         k = (de, a, tipo)
         if k in claves_gn:
             continue
+        if k in REL_DESCARTAR:
+            if k not in cand:
+                avisos.append(f"{NOMBRE}: se descarta la relación de BibleData {de}→{a} {tipo}: {REL_DESCARTAR[k]}")
+            cand[k] = None
+            continue
         nuevo = {"de": de, "a": a, "tipo": tipo, "ref": ex(ref),
                  "certeza": "explicito" if r["relationship_category"].strip() == "explicit" else "inferido",
                  "fuente": "bibledata", "nota": r["relationship_notes"].strip()}
@@ -405,6 +412,7 @@ def construir(cx, cfg=None):
             if viejo and not nuevo["nota"]:
                 nuevo["nota"] = viejo["nota"]
             cand[k] = nuevo
+    cand = {k: x for k, x in cand.items() if x is not None}
     subidas = 0
     for x in cand.values():
         if x["certeza"] == "inferido" and x["tipo"] in ("padre", "madre"):
@@ -508,6 +516,8 @@ def construir(cx, cfg=None):
             g["refs"] = sorted(set(g["refs"]) | {ex(r) for r in lista}, key=clave_ref)
             if p in NOTAS_EXISTENTES and NOTAS_EXISTENTES[p] not in g["nota"]:
                 g["nota"] = (g["nota"] + " " + NOTAS_EXISTENTES[p]).strip()
+            if p in IDENTIDAD and "identidad" not in g:  # identificación que aparece en este libro
+                g["identidad"] = IDENTIDAD[p]
             ampliadas.append(p)
             continue
         if p in sin_nombre:
@@ -635,6 +645,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
     L, NOMBRE, USX, LUGARES = cfg.LIBRO, cfg.NOMBRE, cfg.USX, cfg.LUGARES
     EXCLUIR_LUGAR = getattr(cfg, "EXCLUIR_LUGAR", {})  # obid -> motivo (aviso)
     PRECEDIDO = getattr(cfg, "PRECEDIDO", {})  # obid -> texto que debe preceder al nombre
+    remap = getattr(cfg, "REMAP_REF", lambda r: r)  # versificación de OpenBible (inglesa) -> RV1909
     ex = lambda r: f"{L} {r[0]}:{r[1]}"  # noqa: E731
     parse_ex = parse_ref
     anc = {}
@@ -661,7 +672,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
         if obid not in anc:
             errores.append(f"OpenBible no tiene {obid}"); continue
         _, d = anc[obid]
-        vs = sorted({tuple(map(int, v["usx"][4:].split(":"))) for v in d["verses"] if v["usx"].startswith(USX + " ")})
+        vs = sorted({remap(tuple(map(int, v["usx"][4:].split(":")))) for v in d["verses"] if v["usx"].startswith(USX + " ")})
         conf = LUGARES.get(obid)
         if conf and conf[2]:
             formas = conf[2]
@@ -781,8 +792,11 @@ def comprobar(datos, errores):
     rel("Amram_1", "Jochebed_1", "conyuge", ["Ex 6:20"])
     for h in ("Aaron_1", "Moses_1"):
         rel("Amram_1", h, "padre", ["Ex 6:20"]); rel("Jochebed_1", h, "madre", ["Ex 6:20"])
-    rel("Amram_1", "Miriam_1", "padre", ["Ex 15:20"], "inferido")
-    rel("Jochebed_1", "Miriam_1", "madre", ["Ex 15:20"], "inferido")
+    # Éxodo solo la llama «hermana de Aarón» (inferida); si ya está Números, Nm 26:59 lo dice (explícita).
+    ref_m, cert_m = (("Nm 26:59", "explicito") if any(c["libro"] == "Nm" for c in datos["capitulos"])
+                     else ("Ex 15:20", "inferido"))
+    rel("Amram_1", "Miriam_1", "padre", [ref_m], cert_m)
+    rel("Jochebed_1", "Miriam_1", "madre", [ref_m], cert_m)
     rel("Moses_1", "Zipporah_1", "conyuge", ["Ex 2:21"])
     rel("Moses_1", "Gershom_1", "padre", ["Ex 2:22"]); rel("Zipporah_1", "Gershom_1", "madre", ["Ex 2:22"])
     rel("Moses_1", "Eliezer_2", "padre", ["Ex 18:4"]); rel("Zipporah_1", "Eliezer_2", "madre", ["Ex 18:4"])

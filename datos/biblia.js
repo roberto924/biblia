@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-11T19:48:47+00:00",
+ "generado": "2026-11-11T20:44:22+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -48,6 +48,11 @@ window.BIBLIA_DATOS = {
    "id": "Lv",
    "nombre": "Levítico",
    "capitulos": 27
+  },
+  {
+   "id": "Nm",
+   "nombre": "Números",
+   "capitulos": 36
   }
  ],
  "capitulos": [
@@ -15172,6 +15177,5376 @@ window.BIBLIA_DATOS = {
      "texto": "Estos son los mandamientos que ordenó Jehová á Moisés, para los hijos de Israel, en el monte de Sinaí."
     }
    ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 1,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés en el desierto de Sinaí, en el tabernáculo del testimonio, en el primero del mes segundo, en el segundo año de su salida de la tierra de Egipto, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Tomad el encabezamiento de toda la congregación de los hijos de Israel por sus familias, por las casas de sus padres, con la cuenta de los nombres, todos los varones por sus cabezas:"
+    },
+    {
+     "n": 3,
+     "texto": "De veinte años arriba, todos los que pueden salir á la guerra en Israel, los contaréis tú y Aarón por sus cuadrillas."
+    },
+    {
+     "n": 4,
+     "texto": "Y estará con vosotros un varón de cada tribu, cada uno cabeza de la casa de sus padres."
+    },
+    {
+     "n": 5,
+     "texto": "Y estos son los nombres de los varones que estarán con vosotros: De la tribu de Rubén, Elisur hijo de Sedeur."
+    },
+    {
+     "n": 6,
+     "texto": "De Simeón, Selumiel hijo de Zurisaddai."
+    },
+    {
+     "n": 7,
+     "texto": "De Judá, Naasón hijo de Aminadab."
+    },
+    {
+     "n": 8,
+     "texto": "De Issachâr, Nathanael hijo de Suar."
+    },
+    {
+     "n": 9,
+     "texto": "De Zabulón, Eliab hijo de Helón."
+    },
+    {
+     "n": 10,
+     "texto": "De los hijos de José: de Ephraim, Elisama hijo de Ammiud; de Manasés, Gamaliel hijo de Pedasur."
+    },
+    {
+     "n": 11,
+     "texto": "De Benjamín, Abidán hijo de Gedeón."
+    },
+    {
+     "n": 12,
+     "texto": "De Dan, Ahiezer hijo de Ammisaddai."
+    },
+    {
+     "n": 13,
+     "texto": "De Aser, Phegiel hijo de Ocrán."
+    },
+    {
+     "n": 14,
+     "texto": "De Gad, Eliasaph hijo de Dehuel."
+    },
+    {
+     "n": 15,
+     "texto": "De Nephtalí, Ahira hijo de Enán."
+    },
+    {
+     "n": 16,
+     "texto": "Estos eran los nombrados de la congregación, príncipes de las tribus de sus padres, capitanes de los millares de Israel."
+    },
+    {
+     "n": 17,
+     "texto": "Tomó pues Moisés y Aarón á estos varones que fueron declarados por sus nombres:"
+    },
+    {
+     "n": 18,
+     "texto": "Y juntaron toda la congregación en el primero del mes segundo, y fueron reunidos sus linajes, por las casas de sus padres, según la cuenta de los nombres, de veinte años arriba, por sus cabezas,"
+    },
+    {
+     "n": 19,
+     "texto": "Como Jehová lo había mandado á Moisés; y contólos en el desierto de Sinaí."
+    },
+    {
+     "n": 20,
+     "texto": "Y los hijos de Rubén, primogénito de Israel, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres por sus cabezas, todos los varones de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 21,
+     "texto": "Los contados de ellos, de la tribu de Rubén, fueron cuarenta y seis mil y quinientos."
+    },
+    {
+     "n": 22,
+     "texto": "De los hijos de Simeón, por sus generaciones, por sus familias, por las casas de sus padres, los contados de ellos conforme á la cuenta de los nombres por sus cabezas, todos los varones de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 23,
+     "texto": "Los contados de ellos, de la tribu de Simeón, cincuenta y nueve mil y trescientos."
+    },
+    {
+     "n": 24,
+     "texto": "De los hijos de Gad, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 25,
+     "texto": "Los contados de ellos, de la tribu de Gad, cuarenta y cinco mil seiscientos y cincuenta."
+    },
+    {
+     "n": 26,
+     "texto": "De los hijos de Judá, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 27,
+     "texto": "Los contados de ellos, de la tribu de Judá, setenta y cuatro mil y seiscientos."
+    },
+    {
+     "n": 28,
+     "texto": "De los hijos de Issachâr, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 29,
+     "texto": "Los contados de ellos, de la tribu de Issachâr, cincuenta y cuatro mil y cuatrocientos."
+    },
+    {
+     "n": 30,
+     "texto": "De los hijos de Zabulón, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de sus nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 31,
+     "texto": "Los contados de ellos, de la tribu de Zabulón, cincuenta y siete mil y cuatrocientos."
+    },
+    {
+     "n": 32,
+     "texto": "De los hijos de José: de los hijos de Ephraim, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 33,
+     "texto": "Los contados de ellos, de la tribu de Ephraim, cuarenta mil y quinientos."
+    },
+    {
+     "n": 34,
+     "texto": "De los hijos de Manasés, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 35,
+     "texto": "Los contados de ellos, de la tribu de Manasés, treinta y dos mil y doscientos."
+    },
+    {
+     "n": 36,
+     "texto": "De los hijos de Benjamín, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 37,
+     "texto": "Los contados de ellos, de la tribu de Benjamín, treinta y cinco mil y cuatrocientos."
+    },
+    {
+     "n": 38,
+     "texto": "De los hijos de Dan, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 39,
+     "texto": "Los contados de ellos, de la tribu de Dan, sesenta y dos mil y setecientos."
+    },
+    {
+     "n": 40,
+     "texto": "De los hijos de Aser, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 41,
+     "texto": "Los contados de ellos, de la tribu de Aser, cuarenta y un mil y quinientos."
+    },
+    {
+     "n": 42,
+     "texto": "De los hijos de Nephtalí, por sus generaciones, por sus familias, por las casas de sus padres, conforme á la cuenta de los nombres, de veinte años arriba, todos los que podían salir á la guerra;"
+    },
+    {
+     "n": 43,
+     "texto": "Los contados de ellos, de la tribu de Nephtalí, cincuenta y tres mil y cuatrocientos."
+    },
+    {
+     "n": 44,
+     "texto": "Estos fueron los contados, los cuales contaron Moisés y Aarón, con los príncipes de Israel, que eran doce, uno por cada casa de sus padres."
+    },
+    {
+     "n": 45,
+     "texto": "Y fueron todos los contados de los hijos de Israel por las casas de sus padres, de veinte años arriba, todos los que podían salir á la guerra en Israel;"
+    },
+    {
+     "n": 46,
+     "texto": "Fueron todos los contados seiscientos tres mil quinientos y cincuenta."
+    },
+    {
+     "n": 47,
+     "texto": "Pero los Levitas no fueron contados entre ellos según la tribu de sus padres."
+    },
+    {
+     "n": 48,
+     "texto": "Porque habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 49,
+     "texto": "Solamente no contarás la tribu de Leví, ni tomarás la cuenta de ellos entre los hijos de Israel:"
+    },
+    {
+     "n": 50,
+     "texto": "Mas tú pondrás á los Levitas en el tabernáculo del testimonio, y sobre todos sus vasos, y sobre todas las cosas que le pertenecen: ellos llevarán el tabernáculo y todos sus vasos, y ellos servirán en él, y asentarán sus tiendas alrededor del tabernáculo."
+    },
+    {
+     "n": 51,
+     "texto": "Y cuando el tabernáculo partiere, los Levitas lo desarmarán; y cuando el tabernáculo parare, los Levitas lo armarán: y el extraño que se llegare, morirá."
+    },
+    {
+     "n": 52,
+     "texto": "Y los hijos de Israel asentarán sus tiendas cada uno en su escuadrón, y cada uno junto á su bandera, por sus cuadrillas;"
+    },
+    {
+     "n": 53,
+     "texto": "Mas los Levitas asentarán las suyas alrededor del tabernáculo del testimonio, y no habrá ira sobre la congregación de los hijos de Israel: y los Levitas tendrán la guarda del tabernáculo del testimonio."
+    },
+    {
+     "n": 54,
+     "texto": "E hicieron los hijos de Israel conforme á todas las cosas que mandó Jehová á Moisés; así lo hicieron."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 2,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés y á Aarón, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Los hijos de Israel acamparán cada uno junto á su bandera, según las enseñas de las casas de sus padres; alrededor del tabernáculo del testimonio acamparán."
+    },
+    {
+     "n": 3,
+     "texto": "Estos acamparán al levante, al oriente: la bandera del ejército de Judá, por sus escuadrones; y el jefe de los hijos de Judá, Naasón hijo de Aminadab:"
+    },
+    {
+     "n": 4,
+     "texto": "Su hueste, con los contados de ellos, setenta y cuatro mil y seiscientos."
+    },
+    {
+     "n": 5,
+     "texto": "Junto á él acamparán los de la tribu de Issachâr: y el jefe de los hijos de Issachâr, Nathanael hijo de Suar;"
+    },
+    {
+     "n": 6,
+     "texto": "Y su hueste, con sus contados, cincuenta y cuatro mil y cuatrocientos:"
+    },
+    {
+     "n": 7,
+     "texto": "[Y] la tribu de Zabulón: y el jefe de los hijos de Zabulón, Eliab hijo de Helón;"
+    },
+    {
+     "n": 8,
+     "texto": "Y su hueste, con sus contados, cincuenta y siete mil y cuatrocientos."
+    },
+    {
+     "n": 9,
+     "texto": "Todos los contados en el ejército de Judá, ciento ochenta y seis mil y cuatrocientos, por sus escuadrones, irán delante."
+    },
+    {
+     "n": 10,
+     "texto": "La bandera del ejército de Rubén al mediodía, por sus escuadrones: y el jefe de los hijos de Rubén, Elisur hijo de Sedeur;"
+    },
+    {
+     "n": 11,
+     "texto": "Y su hueste, sus contados, cuarenta y seis mil y quinientos."
+    },
+    {
+     "n": 12,
+     "texto": "Y acamparán junto á él los de la tribu de Simeón: y el jefe de los hijos de Simeón, Selumiel hijo de Zurisaddai;"
+    },
+    {
+     "n": 13,
+     "texto": "Y su hueste, con los contados de ellos, cincuenta y nueve mil y trescientos:"
+    },
+    {
+     "n": 14,
+     "texto": "Y la tribu de Gad: y el jefe de los hijos de Gad, Eliasaph hijo de Rehuel;"
+    },
+    {
+     "n": 15,
+     "texto": "Y su hueste, con los contados de ellos, cuarenta y cinco mil seiscientos y cincuenta."
+    },
+    {
+     "n": 16,
+     "texto": "Todos los contados en el ejército de Rubén, ciento cincuenta y un mil cuatrocientos y cincuenta, por sus escuadrones, irán los segundos."
+    },
+    {
+     "n": 17,
+     "texto": "Luego irá el tabernáculo del testimonio, el campo de los Levitas en medio de los ejércitos: de la manera que asientan el campo, así caminarán, cada uno en su lugar, junto á sus banderas."
+    },
+    {
+     "n": 18,
+     "texto": "La bandera del ejército de Ephraim por sus escuadrones, al occidente: y el jefe de los hijos de Ephraim, Elisama hijo de Ammiud;"
+    },
+    {
+     "n": 19,
+     "texto": "Y su hueste, con los contados de ellos, cuarenta mil y quinientos."
+    },
+    {
+     "n": 20,
+     "texto": "Junto á él estará la tribu de Manasés; y el jefe de los hijos de Manasés, Gamaliel hijo de Pedasur;"
+    },
+    {
+     "n": 21,
+     "texto": "Y su hueste, con los contados de ellos, treinta y dos mil y doscientos:"
+    },
+    {
+     "n": 22,
+     "texto": "Y la tribu de Benjamín: y el jefe de los hijos de Benjamín, Abidán hijo de Gedeón;"
+    },
+    {
+     "n": 23,
+     "texto": "Y su hueste, con los contados de ellos, treinta y cinco mil y cuatrocientos."
+    },
+    {
+     "n": 24,
+     "texto": "Todos los contados en el ejército de Ephraim, ciento ocho mil y ciento, por sus escuadrones, irán los terceros."
+    },
+    {
+     "n": 25,
+     "texto": "La bandera del ejército de Dan estará al aquilón, por sus escuadrones: y el jefe de los hijos de Dan, Ahiezer hijo de Amisaddai;"
+    },
+    {
+     "n": 26,
+     "texto": "Y su hueste, con los contados de ellos, sesenta y dos mil y setecientos."
+    },
+    {
+     "n": 27,
+     "texto": "Junto á él acamparán los de la tribu de Aser: y el jefe de los hijos de Aser, Phegiel hijo de Ocrán;"
+    },
+    {
+     "n": 28,
+     "texto": "Y su hueste, con los contados de ellos, cuarenta y un mil y quinientos:"
+    },
+    {
+     "n": 29,
+     "texto": "Y la tribu de Nephtalí: y el jefe de los hijos de Nephtalí, Ahira hijo de Enán;"
+    },
+    {
+     "n": 30,
+     "texto": "Y su hueste, con los contados de ellos, cincuenta y tres mil y cuatrocientos."
+    },
+    {
+     "n": 31,
+     "texto": "Todos los contados en el ejército de Dan, ciento cincuenta y siete mil y seiscientos: irán los postreros tras sus banderas."
+    },
+    {
+     "n": 32,
+     "texto": "Estos son los contados de los hijos de Israel, por las casas de sus padres: todos los contados por ejércitos, por sus escuadrones, seiscientos tres mil quinientos y cincuenta."
+    },
+    {
+     "n": 33,
+     "texto": "Mas los Levitas no fueron contados entre los hijos de Israel; como Jehová lo mandó á Moisés."
+    },
+    {
+     "n": 34,
+     "texto": "E hicieron los hijos de Israel conforme á todas las cosas que Jehová mandó á Moisés; así asentaron el campo por sus banderas, y así marcharon cada uno por sus familias, según las casas de sus padres."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 3,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ESTAS son las generaciones de Aarón y de Moisés, desde que Jehová habló á Moisés en el monte de Sinaí."
+    },
+    {
+     "n": 2,
+     "texto": "Y estos son los nombres de los hijos de Aarón: Nadab el primogénito, y Abiú, Eleazar, é Ithamar."
+    },
+    {
+     "n": 3,
+     "texto": "Estos son los nombres de los hijos de Aarón, sacerdotes ungidos; cuyas manos él hinchió para administrar el sacerdocio."
+    },
+    {
+     "n": 4,
+     "texto": "Mas Nadab y Abiú murieron delante de Jehová, cuando ofrecieron fuego extraño delante de Jehová, en el desierto de Sinaí: y no tuvieron hijos: y Eleazar é Ithamar ejercieron el sacerdocio delante de Aarón su padre."
+    },
+    {
+     "n": 5,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 6,
+     "texto": "Haz llegar á la tribu de Leví, y hazla estar delante del sacerdote Aarón, para que le ministren;"
+    },
+    {
+     "n": 7,
+     "texto": "Y desempeñen su cargo, y el cargo de toda la congregación delante del tabernáculo del testimonio, para servir en el ministerio del tabernáculo;"
+    },
+    {
+     "n": 8,
+     "texto": "Y guarden todas las alhajas del tabernáculo del testimonio, y lo encargado [á ellos] de los hijos de Israel, y ministren en el servicio del tabernáculo."
+    },
+    {
+     "n": 9,
+     "texto": "Y darás los Levitas á Aarón y á sus hijos: le son enteramente dados de entre los hijos de Israel."
+    },
+    {
+     "n": 10,
+     "texto": "Y constituirás á Aarón y á sus hijos, para que ejerzan su sacerdocio: y el extraño que se llegare, morirá."
+    },
+    {
+     "n": 11,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 12,
+     "texto": "Y he aquí yo he tomado los Levitas de entre los hijos de Israel en lugar de todos los primogénitos que abren la matriz entre los hijos de Israel; serán pues míos los Levitas:"
+    },
+    {
+     "n": 13,
+     "texto": "Porque mío es todo primogénito; desde el día que yo maté todos los primogénitos en la tierra de Egipto, yo santifiqué á mí todos los primogénitos en Israel, así de hombres como de animales: míos serán: Yo Jehová."
+    },
+    {
+     "n": 14,
+     "texto": "Y Jehová habló á Moisés en el desierto de Sinaí, diciendo:"
+    },
+    {
+     "n": 15,
+     "texto": "Cuenta los hijos de Leví por las casas de sus padres, por sus familias: contarás todos los varones de un mes arriba."
+    },
+    {
+     "n": 16,
+     "texto": "Y Moisés los contó conforme á la palabra de Jehová, como le fué mandado."
+    },
+    {
+     "n": 17,
+     "texto": "Y los hijos de Leví fueron estos por sus nombres: Gersón, y Coath, y Merari."
+    },
+    {
+     "n": 18,
+     "texto": "Y los nombres de los hijos de Gersón, por sus familias, estos: Libni, y Simei."
+    },
+    {
+     "n": 19,
+     "texto": "Y los hijos de Coath, por sus familias: Amram, é Izhar, y Hebrón, y Uzziel."
+    },
+    {
+     "n": 20,
+     "texto": "Y los hijos de Merari, por sus familias: Mahali, y Musi. Estas, las familias de Leví, por las casas de sus padres."
+    },
+    {
+     "n": 21,
+     "texto": "De Gersón, la familia de Libni y la de Simei: estas son las familias de Gersón."
+    },
+    {
+     "n": 22,
+     "texto": "Los contados de ellos conforme á la cuenta de todos los varones de un mes arriba, los contados de ellos, siete mil y quinientos."
+    },
+    {
+     "n": 23,
+     "texto": "Las familias de Gersón asentarán sus tiendas á espaldas del tabernáculo, al occidente;"
+    },
+    {
+     "n": 24,
+     "texto": "Y el jefe de la casa del padre de los Gersonitas, Eliasaph hijo de Lael."
+    },
+    {
+     "n": 25,
+     "texto": "A cargo de los hijos de Gersón, en el tabernáculo del testimonio, estará el tabernáculo, y la tienda, y su cubierta, y el pabellón de la puerta del tabernáculo del testimonio,"
+    },
+    {
+     "n": 26,
+     "texto": "Y las cortinas del atrio, y el pabellón de la puerta del atrio, que está junto al tabernáculo y junto al altar alrededor; asimismo sus cuerdas para todo su servicio."
+    },
+    {
+     "n": 27,
+     "texto": "Y de Coath, la familia Amramítica, y la familia Izeharítica, y la familia Hebronítica, y la familia Ozielítica: estas son las familias Coathitas."
+    },
+    {
+     "n": 28,
+     "texto": "Por la cuenta de todos los varones de un mes arriba, eran ocho mil y seiscientos, que tenían la guarda del santuario."
+    },
+    {
+     "n": 29,
+     "texto": "Las familias de los hijos de Coath acamparán al lado del tabernáculo, al mediodía;"
+    },
+    {
+     "n": 30,
+     "texto": "Y el jefe de la casa del padre de las familias de Coath, Elisaphán hijo de Uzziel."
+    },
+    {
+     "n": 31,
+     "texto": "Y á cargo de ellos estará el arca, y la mesa, y el candelero, y los altares, y los vasos del santuario con que ministran, y el velo, con todo su servicio."
+    },
+    {
+     "n": 32,
+     "texto": "Y el principal de los jefes de los Levitas será Eleazar, hijo de Aarón el sacerdote, prepósito de los que tienen la guarda del santuario."
+    },
+    {
+     "n": 33,
+     "texto": "De Merari, la familia Mahalítica, y la familia Musítica: estas son las familias de Merari."
+    },
+    {
+     "n": 34,
+     "texto": "Y los contados de ellos conforme á la cuenta de todos los varones de un mes arriba, fueron seis mil y doscientos."
+    },
+    {
+     "n": 35,
+     "texto": "Y el jefe de la casa del padre de las familias de Merari, Suriel hijo de Abihail: acamparán al lado del tabernáculo, al aquilón."
+    },
+    {
+     "n": 36,
+     "texto": "Y á cargo de los hijos de Merari estará la custodia de las tablas del tabernáculo, y sus barras, y sus columnas, y sus basas, y todos sus enseres, con todo su servicio:"
+    },
+    {
+     "n": 37,
+     "texto": "Y las columnas en derredor del atrio, y sus basas, y sus estacas, y sus cuerdas."
+    },
+    {
+     "n": 38,
+     "texto": "Y los que acamparán delante del tabernáculo al oriente, delante del tabernáculo del testimonio al levante, serán Moisés, y Aarón y sus hijos, teniendo la guarda del santuario en lugar de los hijos de Israel: y el extraño que se acercare, morirá."
+    },
+    {
+     "n": 39,
+     "texto": "Todos los contados de los Levitas, que Moisés y Aarón conforme á la palabra de Jehová contaron por sus familias, todos los varones de un mes arriba, fueron veinte y dos mil."
+    },
+    {
+     "n": 40,
+     "texto": "Y Jehová dijo á Moisés: Cuenta todos los primogénitos varones de los hijos de Israel de un mes arriba, y toma la cuenta de los nombres de ellos."
+    },
+    {
+     "n": 41,
+     "texto": "Y tomarás los Levitas para mí, yo Jehová, en lugar de todos los primogénitos de los hijos de Israel: y los animales de los Levitas en lugar de todos los primogénitos de los animales de los hijos de Israel."
+    },
+    {
+     "n": 42,
+     "texto": "Y contó Moisés, como Jehová le mandó, todos los primogénitos de los hijos de Israel."
+    },
+    {
+     "n": 43,
+     "texto": "Y todos los primogénitos varones, conforme á la cuenta de los nombres, de un mes arriba, los contados de ellos fueron veinte y dos mil doscientos setenta y tres."
+    },
+    {
+     "n": 44,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 45,
+     "texto": "Toma los Levitas en lugar de todos los primogénitos de los hijos de Israel, y los animales de los Levitas en lugar de sus animales; y los Levitas serán míos: Yo Jehová."
+    },
+    {
+     "n": 46,
+     "texto": "Y por los rescates de los doscientos y setenta y tres, que sobrepujan á los Levitas los primogénitos de los hijos de Israel,"
+    },
+    {
+     "n": 47,
+     "texto": "Tomarás cinco siclos por cabeza; conforme al siclo del santuario tomarás: el siclo tiene veinte óbolos:"
+    },
+    {
+     "n": 48,
+     "texto": "Y darás á Aarón y á sus hijos el dinero por los rescates de los que de ellos sobran."
+    },
+    {
+     "n": 49,
+     "texto": "Tomó, pues, Moisés el dinero del rescate de los que resultaron de más de los redimidos por los Levitas:"
+    },
+    {
+     "n": 50,
+     "texto": "Y recibió de los primogénitos de los hijos de Israel en dinero, mil trescientos sesenta y cinco [siclos], conforme al siclo del santuario."
+    },
+    {
+     "n": 51,
+     "texto": "Y Moisés dió el dinero de los rescates á Aarón y á sus hijos, conforme al dicho de Jehová, según que Jehová había mandado á Moisés."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 4,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés y á Aarón, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Toma la cuenta de los hijos de Coath de entre los hijos de Leví, por sus familias, por las casas de sus padres,"
+    },
+    {
+     "n": 3,
+     "texto": "De edad de treinta años arriba hasta cincuenta años, todos los que entran en compañía, para hacer servicio en el tabernáculo del testimonio."
+    },
+    {
+     "n": 4,
+     "texto": "Este será el oficio de los hijos de Coath en el tabernáculo del testimonio, en el lugar santísimo:"
+    },
+    {
+     "n": 5,
+     "texto": "Cuando se hubiere de mudar el campo, vendrán Aarón y sus hijos, y desarmarán el velo de la tienda, y cubrirán con él el arca del testimonio:"
+    },
+    {
+     "n": 6,
+     "texto": "Y pondrán sobre ella la cubierta de pieles de tejones, y extenderán encima el paño todo de cárdeno, y le pondrán sus varas."
+    },
+    {
+     "n": 7,
+     "texto": "Y sobre la mesa de la proposición extenderán el paño cárdeno, y pondrán sobre ella las escudillas, y las cucharas, y las copas, y los tazones para libar: y el pan continuo estará sobre ella."
+    },
+    {
+     "n": 8,
+     "texto": "Y extenderán sobre ella el paño de carmesí colorado, y lo cubrirán con la cubierta de pieles de tejones; y le pondrán sus varas."
+    },
+    {
+     "n": 9,
+     "texto": "Y tomarán un paño cárdeno, y cubrirán el candelero de la luminaria; y sus candilejas, y sus despabiladeras, y sus platillos, y todos sus vasos del aceite con que se sirve;"
+    },
+    {
+     "n": 10,
+     "texto": "Y lo pondrán con todos sus vasos en una cubierta de pieles de tejones, y lo colocarán sobre unas parihuelas."
+    },
+    {
+     "n": 11,
+     "texto": "Y sobre el altar de oro extenderán el paño cárdeno, y le cubrirán con la cubierta de pieles de tejones, y le pondrán sus varales."
+    },
+    {
+     "n": 12,
+     "texto": "Y tomarán todos los vasos del servicio, de que hacen uso en el santuario, y los pondrán en un paño cárdeno, y los cubrirán con una cubierta de pieles de tejones, y los colocarán sobre unas parihuelas."
+    },
+    {
+     "n": 13,
+     "texto": "Y quitarán la ceniza del altar, y extenderán sobre él un paño de púrpura:"
+    },
+    {
+     "n": 14,
+     "texto": "Y pondrán sobre él todos sus instrumentos de que se sirve: las paletas, los garfios, los braseros, y los tazones, todos los vasos del altar; y extenderán sobre él la cubierta de pieles de tejones, y le pondrán además las varas."
+    },
+    {
+     "n": 15,
+     "texto": "Y en acabando Aarón y sus hijos de cubrir el santuario y todos los vasos del santuario, cuando el campo se hubiere de mudar, vendrán después de ello los hijos de Coath para conducir: mas no tocarán cosa santa, que morirán. Estas serán las cargas de los hijos de Coath en el tabernáculo del testimonio."
+    },
+    {
+     "n": 16,
+     "texto": "Empero al cargo de Eleazar, hijo de Aarón el sacerdote, estará el aceite de la luminaria, y el perfume aromático, y el presente continuo, y el aceite de la unción; el cargo de todo el tabernáculo, y de todo lo que está en él, en el santuario, y en sus vasos."
+    },
+    {
+     "n": 17,
+     "texto": "Y habló Jehová á Moisés y á Aarón, diciendo:"
+    },
+    {
+     "n": 18,
+     "texto": "No cortaréis la tribu de las familias de Coath de entre los Levitas;"
+    },
+    {
+     "n": 19,
+     "texto": "Mas esto haréis con ellos, para que vivan, y no mueran cuando llegaren al lugar santísimo: Aarón y sus hijos vendrán y los pondrán á cada uno en su oficio, y en su cargo."
+    },
+    {
+     "n": 20,
+     "texto": "No entrarán para ver, cuando cubrieren las cosas santas; que morirán."
+    },
+    {
+     "n": 21,
+     "texto": "Y habló Jehová á Moisés diciendo:"
+    },
+    {
+     "n": 22,
+     "texto": "Toma también la cuenta de los hijos de Gersón por las casas de sus padres, por sus familias."
+    },
+    {
+     "n": 23,
+     "texto": "De edad de treinta años arriba hasta cincuenta años los contarás; todos los que entran en compañía, para hacer servicio en el tabernáculo del testimonio."
+    },
+    {
+     "n": 24,
+     "texto": "Este será el oficio de las familias de Gersón, para ministrar y para llevar:"
+    },
+    {
+     "n": 25,
+     "texto": "Llevarán las cortinas del tabernáculo, y el tabernáculo del testimonio, su cubierta, y la cubierta de pieles de tejones que está sobre él encima, y el pabellón de la puerta del tabernáculo del testimonio,"
+    },
+    {
+     "n": 26,
+     "texto": "Y las cortinas del atrio, y el pabellón de la puerta del atrio, que está cerca del tabernáculo y cerca del altar alrededor, y sus cuerdas, y todos los instrumentos de su servicio, y todo lo que será hecho para ellos: así servirán."
+    },
+    {
+     "n": 27,
+     "texto": "Según la orden de Aarón y de sus hijos será todo el ministerio de los hijos de Gersón en todos sus cargos, y en todo su servicio: y les encomendaréis en guarda todos sus cargos."
+    },
+    {
+     "n": 28,
+     "texto": "Este es el servicio de las familias de los hijos de Gersón en el tabernáculo del testimonio: y el cargo de ellos estará bajo la mano de Ithamar, hijo de Aarón el sacerdote."
+    },
+    {
+     "n": 29,
+     "texto": "Contarás los hijos de Merari por sus familias, por las casas de sus padres."
+    },
+    {
+     "n": 30,
+     "texto": "Desde el de edad de treinta años arriba hasta el de cincuenta años, los contarás; todos los que entran en compañía, para hacer servicio en el tabernáculo del testimonio."
+    },
+    {
+     "n": 31,
+     "texto": "Y este será el deber de su cargo para todo su servicio en el tabernáculo del testimonio: las tablas del tabernáculo, y sus barras, y sus columnas, y sus basas,"
+    },
+    {
+     "n": 32,
+     "texto": "Y las columnas del atrio alrededor, y sus basas, y sus estacas, y sus cuerdas con todos sus instrumentos, y todo su servicio; y contaréis por sus nombres todos los vasos de la guarda de su cargo."
+    },
+    {
+     "n": 33,
+     "texto": "Este será el servicio de las familias de los hijos de Merari para todo su ministerio en el tabernáculo del testimonio, bajo la mano de Ithamar, hijo de Aarón el sacerdote."
+    },
+    {
+     "n": 34,
+     "texto": "Moisés, pues, y Aarón, y los jefes de la congregación, contaron los hijos de Coath por sus familias, y por las casas de sus padres,"
+    },
+    {
+     "n": 35,
+     "texto": "Desde el de edad de treinta años arriba hasta el de edad de cincuenta años; todos los que entran en compañía, para ministrar en el tabernáculo del testimonio."
+    },
+    {
+     "n": 36,
+     "texto": "Y fueron los contados de ellos por sus familias, dos mil setecientos y cincuenta."
+    },
+    {
+     "n": 37,
+     "texto": "Estos fueron los contados de las familias de Coath, todos los que ministran en el tabernáculo del testimonio, los cuales contaron Moisés y Aarón, como lo mandó Jehová por mano de Moisés."
+    },
+    {
+     "n": 38,
+     "texto": "Y los contados de los hijos de Gersón, por sus familias, y por las casas de sus padres,"
+    },
+    {
+     "n": 39,
+     "texto": "Desde el de edad de treinta años arriba hasta el de edad de cincuenta años, todos los que entran en compañía, para ministrar en el tabernáculo del testimonio;"
+    },
+    {
+     "n": 40,
+     "texto": "Los contados de ellos por sus familias, por las casas de sus padres, fueron dos mil seiscientos y treinta."
+    },
+    {
+     "n": 41,
+     "texto": "Estos son los contados de las familias de los hijos de Gersón, todos los que ministran en el tabernáculo del testimonio, los cuales contaron Moisés y Aarón por mandato de Jehová."
+    },
+    {
+     "n": 42,
+     "texto": "Y los contados de las familias de los hijos de Merari, por sus familias, por las casas de sus padres,"
+    },
+    {
+     "n": 43,
+     "texto": "Desde el de edad de treinta años arriba hasta el de edad de cincuenta años, todos los que entran en compañía, para ministrar en el tabernáculo del testimonio:"
+    },
+    {
+     "n": 44,
+     "texto": "Los contados de ellos, por sus familias, fueron tres mil y doscientos."
+    },
+    {
+     "n": 45,
+     "texto": "Estos fueron los contados de las familias de los hijos de Merari, los cuales contaron Moisés y Aarón, según lo mandó Jehová por mano de Moisés."
+    },
+    {
+     "n": 46,
+     "texto": "Todos los contados de los Levitas, que Moisés y Aarón y los jefes de Israel contaron por sus familias, y por las casas de sus padres,"
+    },
+    {
+     "n": 47,
+     "texto": "Desde el de edad de treinta años arriba hasta el de edad de cincuenta años, todos los que entraban para ministrar en el servicio, y tener cargo de obra en el tabernáculo del testimonio;"
+    },
+    {
+     "n": 48,
+     "texto": "Los contados de ellos fueron ocho mil quinientos y ochenta,"
+    },
+    {
+     "n": 49,
+     "texto": "Como lo mandó Jehová por mano de Moisés fueron contados, cada uno según su oficio, y según su cargo; los cuales contó él, como le fué mandado."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 5,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ habló á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Manda á los hijos de Israel que echen del campo á todo leproso, y á todos los que padecen flujo de semen, y á todo contaminado sobre muerto:"
+    },
+    {
+     "n": 3,
+     "texto": "Así hombres como mujeres echaréis, fuera del campo los echaréis; porque no contaminen el campo de aquellos entre los cuales yo habito."
+    },
+    {
+     "n": 4,
+     "texto": "E hiciéronlo así los hijos de Israel, que los echaron fuera del campo: como Jehová dijo á Moisés, así lo hicieron los hijos de Israel."
+    },
+    {
+     "n": 5,
+     "texto": "Además habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 6,
+     "texto": "Habla á los hijos de Israel: El hombre ó la mujer que cometiere alguno de todos los pecados de los hombres, haciendo prevaricación contra Jehová, y delinquiere aquella persona;"
+    },
+    {
+     "n": 7,
+     "texto": "Confesarán su pecado que cometieron, y compensarán su ofensa enteramente, y añadirán su quinto sobre ello, y lo darán á aquel contra quien pecaron."
+    },
+    {
+     "n": 8,
+     "texto": "Y si aquel hombre no tuviere pariente al cual sea resarcida la ofensa, daráse la indemnización del agravio á Jehová, al sacerdote, á más del carnero de las expiaciones, con el cual hará expiación por él."
+    },
+    {
+     "n": 9,
+     "texto": "Y toda ofrenda de todas las cosas santas que los hijos de Israel presentaren al sacerdote, suya será."
+    },
+    {
+     "n": 10,
+     "texto": "Y lo santificado de cualquiera será suyo: asimismo lo que cualquiera diere al sacerdote, suyo será."
+    },
+    {
+     "n": 11,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 12,
+     "texto": "Habla á los hijos de Israel, y diles: Cuando la mujer de alguno se desmandare, é hiciere traición contra él,"
+    },
+    {
+     "n": 13,
+     "texto": "Que alguno se hubiere echado con ella en carnal ayuntamiento, y su marido no lo hubiese visto por haberse ella contaminado ocultamente, ni hubiere testigo contra ella, ni ella hubiere sido cogida en el acto;"
+    },
+    {
+     "n": 14,
+     "texto": "Si viniere sobre él espíritu de celo, y tuviere celos de su mujer, habiéndose ella contaminado; ó viniere sobre él espíritu de celo, y tuviere celos de su mujer, no habiéndose ella contaminado;"
+    },
+    {
+     "n": 15,
+     "texto": "Entonces el marido traerá su mujer al sacerdote, y traerá su ofrenda con ella, la décima de un epha de harina de cebada; no echará sobre ella aceite, ni pondrá sobre ella incienso: porque es presente de celos, presente de recordación, que trae en memoria pecado."
+    },
+    {
+     "n": 16,
+     "texto": "Y el sacerdote la hará acercar, y la hará poner delante de Jehová."
+    },
+    {
+     "n": 17,
+     "texto": "Luego tomará el sacerdote del agua santa en un vaso de barro: tomará también el sacerdote del polvo que hubiere en el suelo del tabernáculo, y echarálo en el agua."
+    },
+    {
+     "n": 18,
+     "texto": "Y hará el sacerdote estar en pie á la mujer delante de Jehová, y descubrirá la cabeza de la mujer, y pondrá sobre sus manos el presente de la recordación, que es el presente de celos: y el sacerdote tendrá en la mano las aguas amargas que acarrean maldición."
+    },
+    {
+     "n": 19,
+     "texto": "Y el sacerdote la conjurará, y le dirá: Si ninguno hubiere dormido contigo, y si no te has apartado de tu marido á inmundicia, libre seas de estas aguas amargas que traen maldición:"
+    },
+    {
+     "n": 20,
+     "texto": "Mas si te has descarriado de tu marido, y te has amancillado, y alguno hubiere tenido coito contigo, fuera de tu marido:"
+    },
+    {
+     "n": 21,
+     "texto": "(El sacerdote conjurará á la mujer con juramento de maldición, y dirá á la mujer): Jehová te dé en maldición y en conjuración en medio de tu pueblo, haciendo Jehová á tu muslo que caiga, y á tu vientre que se te hinche;"
+    },
+    {
+     "n": 22,
+     "texto": "Y estas aguas que dan maldición entren en tus entrañas, y hagan hinchar tu vientre y caer tu muslo. Y la mujer dirá: Amén, amén."
+    },
+    {
+     "n": 23,
+     "texto": "Y el sacerdote escribirá estas maldiciones en un libro, y las borrará con las aguas amargas:"
+    },
+    {
+     "n": 24,
+     "texto": "Y dará á beber á la mujer las aguas amargas que traen maldición; y las aguas que obran maldición entrarán en ella por amargas."
+    },
+    {
+     "n": 25,
+     "texto": "Después tomará el sacerdote de la mano de la mujer el presente de los celos, y mecerálo delante de Jehová, y lo ofrecerá delante del altar:"
+    },
+    {
+     "n": 26,
+     "texto": "Y tomará el sacerdote un puñado del presente, en memoria de ella, y lo quemará sobre el altar, y después dará á beber las aguas á la mujer."
+    },
+    {
+     "n": 27,
+     "texto": "Darále pues á beber las aguas; y será, que si fuere inmunda y hubiere hecho traición contra su marido, las aguas que obran maldición entrarán en ella en amargura, y su vientre se hinchará, y caerá su muslo; y la mujer será por maldición en medio de su pueblo."
+    },
+    {
+     "n": 28,
+     "texto": "Mas si la mujer no fuere inmunda, sino que estuviere limpia, ella será libre, y será fecunda."
+    },
+    {
+     "n": 29,
+     "texto": "Esta es la ley de los celos, cuando la mujer hiciere traición á su marido, y se amancillare;"
+    },
+    {
+     "n": 30,
+     "texto": "O del marido, sobre el cual pasare espíritu de celo, y tuviere celos de su mujer: presentarála entonces delante de Jehová, y el sacerdote ejecutará en ella toda esta ley."
+    },
+    {
+     "n": 31,
+     "texto": "Y aquel varón será libre de iniquidad, y la mujer llevará su pecado."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 6,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Habla á los hijos de Israel, y diles: El hombre, ó la mujer, cuando se apartare haciendo voto de Nazareo, para dedicarse á Jehová,"
+    },
+    {
+     "n": 3,
+     "texto": "Se abstendrá de vino y de sidra; vinagre de vino, ni vinagre de sidra no beberá, ni beberá algún licor de uvas, ni tampoco comerá uvas frescas ni secas."
+    },
+    {
+     "n": 4,
+     "texto": "Todo el tiempo de su nazareato, de todo lo que se hace de vid de vino, desde los granillos hasta el hollejo, no comerá."
+    },
+    {
+     "n": 5,
+     "texto": "Todo el tiempo del voto de su nazareato no pasará navaja sobre su cabeza, hasta que sean cumplidos los días de su apartamiento á Jehová: santo será; dejará crecer las guedejas del cabello de su cabeza."
+    },
+    {
+     "n": 6,
+     "texto": "Todo el tiempo que se apartare á Jehová, no entrará á persona muerta."
+    },
+    {
+     "n": 7,
+     "texto": "Por su padre, ni por su madre, por su hermano, ni por su hermana, no se contaminará con ellos cuando murieren; porque consagración de su Dios tiene sobre su cabeza."
+    },
+    {
+     "n": 8,
+     "texto": "Todo el tiempo de su nazareato, será santo á Jehová."
+    },
+    {
+     "n": 9,
+     "texto": "Y si alguno muriere muy de repente junto á él, contaminará la cabeza de su nazareato; por tanto el día de su purificación raerá su cabeza; al séptimo día la raerá."
+    },
+    {
+     "n": 10,
+     "texto": "Y el día octavo traerá dos tórtolas ó dos palominos al sacerdote, á la puerta del tabernáculo del testimonio;"
+    },
+    {
+     "n": 11,
+     "texto": "Y el sacerdote hará el uno en expiación, y el otro en holocausto: y expiarálo de lo que pecó sobre el muerto, y santificará su cabeza en aquel día."
+    },
+    {
+     "n": 12,
+     "texto": "Y consagrará á Jehová los días de su nazareato, y traerá un cordero de un año en expiación por la culpa; y los días primeros serán anulados, por cuanto fué contaminado su nazareato."
+    },
+    {
+     "n": 13,
+     "texto": "Esta es, pues, la ley del Nazareo el día que se cumpliere el tiempo de su nazareato: Vendrá á la puerta del tabernáculo del testimonio;"
+    },
+    {
+     "n": 14,
+     "texto": "Y ofrecerá su ofrenda á Jehová, un cordero de un año sin tacha en holocausto, y una cordera de un año sin defecto en expiación, y un carnero sin defecto por sacrificio de paces:"
+    },
+    {
+     "n": 15,
+     "texto": "Además un canastillo de cenceñas, tortas de flor de harina amasadas con aceite, y hojaldres cenceñas untadas con aceite, y su presente, y sus libaciones."
+    },
+    {
+     "n": 16,
+     "texto": "Y el sacerdote lo ofrecerá delante de Jehová, y hará su expiación y su holocausto:"
+    },
+    {
+     "n": 17,
+     "texto": "Y ofrecerá el carnero en sacrificio de paces á Jehová, con el canastillo de las cenceñas; ofrecerá asimismo el sacerdote su presente, y sus libaciones."
+    },
+    {
+     "n": 18,
+     "texto": "Entonces el Nazareo raerá á la puerta del tabernáculo del testimonio la cabeza de su nazareato, y tomará los cabellos de la cabeza de su nazareato, y los pondrá sobre el fuego que está debajo del sacrificio de las paces."
+    },
+    {
+     "n": 19,
+     "texto": "Después tomará el sacerdote la espaldilla cocida del carnero, y una torta sin levadura del canastillo, y una hojaldre sin levadura, y pondrálas sobre las manos del Nazareo, después que fuere raído su nazareato:"
+    },
+    {
+     "n": 20,
+     "texto": "Y el sacerdote mecerá aquello, ofrenda agitada delante de Jehová; lo cual será cosa santa del sacerdote, á más del pecho mecido y de la espaldilla separada: y después podrá beber vino el Nazareo."
+    },
+    {
+     "n": 21,
+     "texto": "Esta es la ley del Nazareo que hiciere voto de su ofrenda á Jehová por su nazareato, á más de lo que su mano alcanzare: según el voto que hiciere, así hará, conforme á la ley de su nazareato."
+    },
+    {
+     "n": 22,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 23,
+     "texto": "Habla á Aarón y á sus hijos, y diles: Así bendeciréis á los hijos de Israel, diciéndoles:"
+    },
+    {
+     "n": 24,
+     "texto": "Jehová te bendiga, y te guarde:"
+    },
+    {
+     "n": 25,
+     "texto": "Haga resplandecer Jehová su rostro sobre ti, y haya de ti misericordia:"
+    },
+    {
+     "n": 26,
+     "texto": "Jehová alce á ti su rostro, y ponga en ti paz."
+    },
+    {
+     "n": 27,
+     "texto": "Y pondrán mi nombre sobre los hijos de Israel, y yo los bendeciré."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 7,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ, que cuando Moisés hubo acabado de levantar el tabernáculo, y ungídolo y santificádolo, con todos sus vasos; y asimismo ungido y santificado el altar, con todos sus vasos;"
+    },
+    {
+     "n": 2,
+     "texto": "Entonces los príncipes de Israel, las cabezas de las casas de sus padres, los cuales eran los príncipes de las tribus, que estaban sobre los contados, ofrecieron;"
+    },
+    {
+     "n": 3,
+     "texto": "Y trajeron sus ofrendas delante de Jehová, seis carros cubiertos, y doce bueyes; por cada dos príncipes un carro, y cada uno un buey; lo cual ofrecieron delante del tabernáculo."
+    },
+    {
+     "n": 4,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 5,
+     "texto": "Tómalo de ellos, y será para el servicio del tabernáculo del testimonio: y lo darás á los Levitas, á cada uno conforme á su ministerio."
+    },
+    {
+     "n": 6,
+     "texto": "Entonces Moisés recibió los carros y los bueyes, y diólos á los Levitas."
+    },
+    {
+     "n": 7,
+     "texto": "Dos carros y cuatro bueyes, dió á los hijos de Gersón, conforme á su ministerio;"
+    },
+    {
+     "n": 8,
+     "texto": "Y á los hijos de Merari dió los cuatro carros y ocho bueyes, conforme á su ministerio, bajo la mano de Ithamar, hijo de Aarón el sacerdote."
+    },
+    {
+     "n": 9,
+     "texto": "Y á los hijos de Coath no dió; porque llevaban sobre sí en los hombros el servicio del santuario."
+    },
+    {
+     "n": 10,
+     "texto": "Y ofrecieron los príncipes á la dedicación del altar el día que fué ungido, ofrecieron los príncipes su ofrenda delante del altar."
+    },
+    {
+     "n": 11,
+     "texto": "Y Jehová dijo á Moisés: Ofrecerán su ofrenda, un príncipe un día, y otro príncipe otro día, á la dedicación del altar."
+    },
+    {
+     "n": 12,
+     "texto": "Y el que ofreció su ofrenda el primer día fué Naasón hijo de Aminadab, de la tribu de Judá."
+    },
+    {
+     "n": 13,
+     "texto": "Y fué su ofrenda un plato de plata de peso de ciento y treinta [siclos], y un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 14,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 15,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 16,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 17,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Naasón, hijo de Aminadab."
+    },
+    {
+     "n": 18,
+     "texto": "El segundo día ofreció Nathanael hijo de Suar, príncipe de Issachâr."
+    },
+    {
+     "n": 19,
+     "texto": "Ofreció por su ofrenda un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 20,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 21,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 22,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 23,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Nathanael, hijo de Suar."
+    },
+    {
+     "n": 24,
+     "texto": "El tercer día, Eliab hijo de Helón, príncipe de los hijos de Zabulón:"
+    },
+    {
+     "n": 25,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 26,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 27,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 28,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 29,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Eliab, hijo de Helón."
+    },
+    {
+     "n": 30,
+     "texto": "El cuarto día, Elisur hijo de Sedeur, príncipe de los hijos de Rubén:"
+    },
+    {
+     "n": 31,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 32,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 33,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 34,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 35,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Elisur, hijo de Sedeur."
+    },
+    {
+     "n": 36,
+     "texto": "El quinto día, Selumiel hijo de Zurisaddai, príncipe de los hijos de Simeón:"
+    },
+    {
+     "n": 37,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 38,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 39,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 40,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 41,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Selumiel, hijo de Zurisaddai."
+    },
+    {
+     "n": 42,
+     "texto": "El sexto día, Eliasaph hijo de Dehuel, príncipe de los hijos de Gad:"
+    },
+    {
+     "n": 43,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 44,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 45,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 46,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 47,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Eliasaph, hijo de Dehuel."
+    },
+    {
+     "n": 48,
+     "texto": "El séptimo día, el príncipe de los hijos de Ephraim, Elisama hijo de Ammiud:"
+    },
+    {
+     "n": 49,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 50,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 51,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 52,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 53,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Elisama, hijo de Ammiud."
+    },
+    {
+     "n": 54,
+     "texto": "El octavo día, el príncipe de los hijos de Manasés, Gamaliel hijo de Pedasur:"
+    },
+    {
+     "n": 55,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 56,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 57,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 58,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 59,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Gamaliel, hijo de Pedasur."
+    },
+    {
+     "n": 60,
+     "texto": "El noveno día, el príncipe de los hijos de Benjamín, Abidán hijo de Gedeón:"
+    },
+    {
+     "n": 61,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 62,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 63,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 64,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 65,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Abidán, hijo de Gedeón."
+    },
+    {
+     "n": 66,
+     "texto": "El décimo día, el príncipe de los hijos de Dan, Ahiezer hijo de Ammisaddai:"
+    },
+    {
+     "n": 67,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 68,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 69,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 70,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 71,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Ahiezer, hijo de Ammisaddai."
+    },
+    {
+     "n": 72,
+     "texto": "El undécimo día, el príncipe de los hijos de Aser, Pagiel hijo de Ocrán:"
+    },
+    {
+     "n": 73,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 74,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 75,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 76,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 77,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Pagiel, hijo de Ocrán."
+    },
+    {
+     "n": 78,
+     "texto": "El duodécimo día, el príncipe de los hijos de Nephtalí, Ahira hijo de Enán:"
+    },
+    {
+     "n": 79,
+     "texto": "Y su ofrenda, un plato de plata de ciento y treinta [siclos] de peso, un jarro de plata de setenta siclos, al siclo del santuario; ambos llenos de flor de harina amasada con aceite para presente;"
+    },
+    {
+     "n": 80,
+     "texto": "Una cuchara de oro de diez [siclos], llena de perfume;"
+    },
+    {
+     "n": 81,
+     "texto": "Un becerro, un carnero, un cordero de un año para holocausto;"
+    },
+    {
+     "n": 82,
+     "texto": "Un macho cabrío para expiación;"
+    },
+    {
+     "n": 83,
+     "texto": "Y para sacrificio de paces, dos bueyes, cinco carneros, cinco machos de cabrío, cinco corderos de un año. Esta fué la ofrenda de Ahira, hijo de Enán."
+    },
+    {
+     "n": 84,
+     "texto": "Esta fué la dedicación del altar, el día que fué ungido, por los príncipes de Israel: doce platos de plata, doce jarros de plata, doce cucharas de oro."
+    },
+    {
+     "n": 85,
+     "texto": "Cada plato de ciento y treinta [siclos], cada jarro de setenta: toda la plata de los vasos, dos mil y cuatrocientos [siclos], al siclo del santuario."
+    },
+    {
+     "n": 86,
+     "texto": "Las doce cucharas de oro llenas de perfume, de diez [siclos] cada cuchara, al siclo del santuario: todo el oro de las cucharas, ciento y veinte [siclos]."
+    },
+    {
+     "n": 87,
+     "texto": "Todos los bueyes para holocausto, doce becerros; doce los carneros, doce los corderos de un año, con su presente: y doce los machos de cabrío, para expiación."
+    },
+    {
+     "n": 88,
+     "texto": "Y todos los bueyes del sacrificio de las paces veinte y cuatro novillos, sesenta los carneros, sesenta los machos de cabrío, sesenta los corderos de un año. Esta fué la dedicación del altar, después que fué ungido."
+    },
+    {
+     "n": 89,
+     "texto": "Y cuando entraba Moisés en el tabernáculo del testimonio, para hablar con El, oía la Voz que le hablaba de encima de la cubierta que estaba sobre el arca del testimonio, de entre los dos querubines: y hablaba con él."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 8,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Habla á Aarón, y dile: Cuando encendieres las lámparas, las siete lámparas alumbrarán frente á frente del candelero."
+    },
+    {
+     "n": 3,
+     "texto": "Y Aarón lo hizo así; que encendió enfrente del candelero sus lámparas, como Jehová lo mandó á Moisés."
+    },
+    {
+     "n": 4,
+     "texto": "Y esta era la hechura del candelero: de oro labrado á martillo; desde su pie hasta sus flores era labrado á martillo: conforme al modelo que Jehová mostró á Moisés, así hizo el candelero."
+    },
+    {
+     "n": 5,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 6,
+     "texto": "Toma á los Levitas de entre los hijos de Israel, y expíalos."
+    },
+    {
+     "n": 7,
+     "texto": "Y así les harás para expiarlos: rocía sobre ellos el agua de la expiación, y haz pasar la navaja sobre toda su carne, y lavarán sus vestidos, y serán expiados."
+    },
+    {
+     "n": 8,
+     "texto": "Luego tomarán un novillo, con su presente de flor de harina amasada con aceite; y tomarás otro novillo para expiación."
+    },
+    {
+     "n": 9,
+     "texto": "Y harás llegar los Levitas delante del tabernáculo del testimonio, y juntarás toda la congregación de los hijos de Israel;"
+    },
+    {
+     "n": 10,
+     "texto": "Y cuando habrás hecho llegar los Levitas delante de Jehová, pondrán los hijos de Israel sus manos sobre los Levitas;"
+    },
+    {
+     "n": 11,
+     "texto": "Y ofrecerá Aarón los Levitas delante de Jehová en ofrenda de los hijos de Israel, y servirán en el ministerio de Jehová."
+    },
+    {
+     "n": 12,
+     "texto": "Y los Levitas pondrán sus manos sobre las cabezas de los novillos: y ofrecerás el uno por expiación, y el otro en holocausto á Jehová, para expiar los Levitas."
+    },
+    {
+     "n": 13,
+     "texto": "Y harás presentar los Levitas delante de Aarón, y delante de sus hijos, y los ofrecerás en ofrenda á Jehová."
+    },
+    {
+     "n": 14,
+     "texto": "Así apartarás los Levitas de entre los hijos de Israel; y serán míos los Levitas."
+    },
+    {
+     "n": 15,
+     "texto": "Y después de eso vendrán los Levitas á ministrar en el tabernáculo del testimonio: los expiarás pues, y los ofrecerás en ofrenda."
+    },
+    {
+     "n": 16,
+     "texto": "Porque enteramente me son á mí dados los Levitas de entre los hijos de Israel, en lugar de todo aquel que abre matriz; helos tomado para mí en lugar de los primogénitos de todos los hijos de Israel."
+    },
+    {
+     "n": 17,
+     "texto": "Porque mío es todo primogénito en los hijos de Israel, así de hombres como de animales; desde el día que yo herí todo primogénito en la tierra de Egipto, los santifiqué para mí."
+    },
+    {
+     "n": 18,
+     "texto": "Y he tomado los Levitas en lugar de todos los primogénitos en los hijos de Israel."
+    },
+    {
+     "n": 19,
+     "texto": "Y yo he dado en don los Levitas á Aarón y á sus hijos de entre los hijos de Israel, para que sirvan el ministerio de los hijos de Israel en el tabernáculo del testimonio, y reconcilien á los hijos de Israel; porque no haya plaga en los hijos de Israel, llegando los hijos de Israel al santuario."
+    },
+    {
+     "n": 20,
+     "texto": "Y Moisés, y Aarón, y toda la congregación de los hijos de Israel, hicieron de los Levitas conforme á todas las cosas que mandó Jehová á Moisés acerca de los Levitas; así hicieron de ellos los hijos de Israel."
+    },
+    {
+     "n": 21,
+     "texto": "Y los Levitas se purificaron, y lavaron sus vestidos; y Aarón los ofreció en ofrenda delante de Jehová, é hizo Aarón expiación por ellos para purificarlos."
+    },
+    {
+     "n": 22,
+     "texto": "Y así vinieron después los Levitas para servir en su ministerio en el tabernáculo del testimonio, delante de Aarón y delante de sus hijos: de la manera que mandó Jehová á Moisés acerca de los Levitas, así hicieron con ellos."
+    },
+    {
+     "n": 23,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 24,
+     "texto": "Esto cuanto á los Levitas: de veinte y cinco años arriba entrarán á hacer su oficio en el servicio del tabernáculo del testimonio:"
+    },
+    {
+     "n": 25,
+     "texto": "Mas desde los cincuenta años volverán del oficio de su ministerio, y nunca más servirán:"
+    },
+    {
+     "n": 26,
+     "texto": "Pero servirán con sus hermanos en el tabernáculo del testimonio, para hacer la guarda, bien que no servirán en el ministerio. Así harás de los Levitas cuanto á sus oficios."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 9,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés en el desierto de Sinaí, en el segundo año de su salida de la tierra de Egipto, en el mes primero, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Los hijos de Israel harán la pascua á su tiempo."
+    },
+    {
+     "n": 3,
+     "texto": "El décimocuarto día de este mes, entre las dos tardes, la haréis á su tiempo: conforme á todos sus ritos, y conforme á todas sus leyes la haréis."
+    },
+    {
+     "n": 4,
+     "texto": "Y habló Moisés á los hijos de Israel, para que hiciesen la pascua."
+    },
+    {
+     "n": 5,
+     "texto": "E hicieron la pascua en el [mes] primero, á los catorce días del mes, entre las dos tardes, en el desierto de Sinaí: conforme á todas las cosas que mandó Jehová á Moisés, así hicieron los hijos de Israel."
+    },
+    {
+     "n": 6,
+     "texto": "Y hubo algunos que estaban inmundos á causa de muerto, y no pudieron hacer la pascua aquel día; y llegaron delante de Moisés y delante de Aarón aquel día;"
+    },
+    {
+     "n": 7,
+     "texto": "Y dijéronle aquellos hombres: Nosotros somos inmundos por causa de muerto; ¿por qué seremos impedidos de ofrecer ofrenda á Jehová á su tiempo entre los hijos de Israel?"
+    },
+    {
+     "n": 8,
+     "texto": "Y Moisés les respondió: Esperad, y oiré qué mandará Jehová acerca de vosotros."
+    },
+    {
+     "n": 9,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 10,
+     "texto": "Habla á los hijos de Israel, diciendo: Cualquiera de vosotros ó de vuestras generaciones, que fuere inmundo por causa de muerto ó estuviere de viaje lejos, hará pascua á Jehová:"
+    },
+    {
+     "n": 11,
+     "texto": "En el mes segundo, á los catorce días del mes, entre las dos tardes, la harán: con cenceñas y hierbas amargas la comerán;"
+    },
+    {
+     "n": 12,
+     "texto": "No dejarán de él para la mañana, ni quebrarán hueso en él: conforme á todos los ritos de la pascua la harán."
+    },
+    {
+     "n": 13,
+     "texto": "Mas el que estuviere limpio, y no estuviere de viaje, si dejare de hacer la pascua, la tal persona será cortada de sus pueblos: por cuanto no ofreció á su tiempo la ofrenda de Jehová, el tal hombre llevará su pecado."
+    },
+    {
+     "n": 14,
+     "texto": "Y si morare con vosotros peregrino, é hiciere la pascua á Jehová, conforme al rito de la pascua y conforme á sus leyes así la hará: un mismo rito tendréis, así el peregrino como el natural de la tierra."
+    },
+    {
+     "n": 15,
+     "texto": "Y el día que el tabernáculo fué levantado, la nube cubrió el tabernáculo sobre la tienda del testimonio; y á la tarde había sobre el tabernáculo como una apariencia de fuego, hasta la mañana."
+    },
+    {
+     "n": 16,
+     "texto": "Así era continuamente: la nube lo cubría, y de noche la apariencia de fuego."
+    },
+    {
+     "n": 17,
+     "texto": "Y según que se alzaba la nube del tabernáculo, los hijos de Israel se partían: y en el lugar donde la nube paraba, allí alojaban los hijos de Israel."
+    },
+    {
+     "n": 18,
+     "texto": "Al mandato de Jehová los hijos de Israel se partían: y al mandato de Jehová asentaban el campo: todos los días que la nube estaba sobre el tabernáculo, ellos estaban quedos."
+    },
+    {
+     "n": 19,
+     "texto": "Y cuando la nube se detenía sobre el tabernáculo muchos días, entonces los hijos de Israel guardaban la ordenanza de Jehová y no partían."
+    },
+    {
+     "n": 20,
+     "texto": "Y cuando sucedía que la nube estaba sobre el tabernáculo pocos días, al dicho de Jehová alojaban, y al dicho de Jehová partían."
+    },
+    {
+     "n": 21,
+     "texto": "Y cuando era que la nube se detenía desde la tarde hasta la mañana, cuando á la mañana la nube se levantaba, ellos partían: ó [si había estado] el día, y á la noche la nube se levantaba, entonces partían."
+    },
+    {
+     "n": 22,
+     "texto": "O si dos días, ó un mes, ó un año, mientras la nube se detenía sobre el tabernáculo quedándose sobre él, los hijos de Israel se estaban acampados, y no movían: mas cuando ella se alzaba, ellos movían."
+    },
+    {
+     "n": 23,
+     "texto": "Al dicho de Jehová asentaban, y al dicho de Jehová partían, guardando la ordenanza de Jehová, como lo había Jehová dicho por medio de Moisés."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 10,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ habló á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Hazte dos trompetas de plata; de obra de martillo las harás, las cuales te servirán para convocar la congregación, y para hacer mover el campo."
+    },
+    {
+     "n": 3,
+     "texto": "Y cuando las tocaren, toda la congregación se juntará á ti á la puerta del tabernáculo del testimonio."
+    },
+    {
+     "n": 4,
+     "texto": "Mas cuando tocaren [sólo] la una, entonces se congregarán á ti los príncipes, las cabezas de los millares de Israel."
+    },
+    {
+     "n": 5,
+     "texto": "Y cuando tocareis alarma, entonces moverán el campo de los que están alojados al oriente."
+    },
+    {
+     "n": 6,
+     "texto": "Y cuando tocareis alarma la segunda vez, entonces moverán el campo de los que están alojados al mediodía: alarma tocarán á sus partidas."
+    },
+    {
+     "n": 7,
+     "texto": "Empero cuando hubiereis de juntar la congregación, tocaréis, mas no con sonido de alarma."
+    },
+    {
+     "n": 8,
+     "texto": "Y los hijos de Aarón, los sacerdotes, tocarán las trompetas; y las tendréis por estatuto perpetuo por vuestras generaciones."
+    },
+    {
+     "n": 9,
+     "texto": "Y cuando viniereis á la guerra en vuestra tierra contra el enemigo que os molestare, tocaréis alarma con las trompetas: y seréis en memoria delante de Jehová vuestro Dios, y seréis salvos de vuestros enemigos."
+    },
+    {
+     "n": 10,
+     "texto": "Y en el día de vuestra alegría, y en vuestras solemnidades, y en los principios de vuestros meses, tocaréis las trompetas sobre vuestros holocaustos, y sobre los sacrificios de vuestras paces, y os serán por memoria delante de vuestro Dios: Yo Jehová vuestro Dios."
+    },
+    {
+     "n": 11,
+     "texto": "Y fué en el año segundo, en el mes segundo, á los veinte del mes, que la nube se alzó del tabernáculo del testimonio."
+    },
+    {
+     "n": 12,
+     "texto": "Y movieron los hijos de Israel por sus partidas del desierto de Sinaí; y paró la nube en el desierto de Parán."
+    },
+    {
+     "n": 13,
+     "texto": "Y movieron la primera vez al dicho de Jehová por mano de Moisés."
+    },
+    {
+     "n": 14,
+     "texto": "Y la bandera del campo de los hijos de Judá comenzó á marchar primero, por sus escuadrones: y Naasón, hijo de Aminadab, era sobre su ejército."
+    },
+    {
+     "n": 15,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Issachâr, Nathanael hijo de Suar."
+    },
+    {
+     "n": 16,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Zabulón, Eliab hijo de Helón."
+    },
+    {
+     "n": 17,
+     "texto": "Y después que estaba ya desarmado el tabernáculo, movieron los hijos de Gersón y los hijos de Merari, que lo llevaban."
+    },
+    {
+     "n": 18,
+     "texto": "Luego comenzó á marchar la bandera del campo de Rubén por sus escuadrones: y Elisur, hijo de Sedeur, era sobre su ejército."
+    },
+    {
+     "n": 19,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Simeón, Selumiel hijo de Zurisaddai."
+    },
+    {
+     "n": 20,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Gad, Eliasaph hijo de Dehuel."
+    },
+    {
+     "n": 21,
+     "texto": "Luego comenzaron á marchar los Coathitas llevando el santuario; y entre tanto que ellos llegaban, [los otros] acondicionaron el tabernáculo."
+    },
+    {
+     "n": 22,
+     "texto": "Después comenzó á marchar la bandera del campo de los hijos de Ephraim por sus escuadrones: y Elisama, hijo de Ammiud, era sobre su ejército."
+    },
+    {
+     "n": 23,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Manasés, Gamaliel hijo de Pedasur."
+    },
+    {
+     "n": 24,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Benjamín, Abidán hijo de Gedeón."
+    },
+    {
+     "n": 25,
+     "texto": "Luego comenzó á marchar la bandera del campo de los hijos de Dan por sus escuadrones, recogiendo todos los campos: y Ahiezer, hijo de Ammisaddai, era sobre su ejército."
+    },
+    {
+     "n": 26,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Aser, Pagiel hijo de Ocrán."
+    },
+    {
+     "n": 27,
+     "texto": "Y sobre el ejército de la tribu de los hijos de Nephtalí, Ahira hijo de Enán."
+    },
+    {
+     "n": 28,
+     "texto": "Estas son las partidas de los hijos de Israel por sus ejércitos, cuando se movían."
+    },
+    {
+     "n": 29,
+     "texto": "Entonces dijo Moisés á Hobab, hijo de Ragüel Madianita, su suegro: Nosotros nos partimos para el lugar del cual Jehová ha dicho: Yo os lo daré. Ven con nosotros, y te haremos bien: porque Jehová ha hablado bien respecto á Israel."
+    },
+    {
+     "n": 30,
+     "texto": "Y él le respondió: Yo no iré, sino que me marcharé á mi tierra y á mi parentela."
+    },
+    {
+     "n": 31,
+     "texto": "Y él le dijo: Ruégote que no nos dejes; porque tú sabes nuestros alojamientos en el desierto, y nos serás en lugar de ojos."
+    },
+    {
+     "n": 32,
+     "texto": "Y será, que si vinieres con nosotros, cuando tuviéremos el bien que Jehová nos ha de hacer, nosotros te haremos bien."
+    },
+    {
+     "n": 33,
+     "texto": "Así partieron del monte de Jehová camino de tres días; y el arca de la alianza de Jehová fué delante de ellos camino de tres días, buscándoles lugar de descanso."
+    },
+    {
+     "n": 34,
+     "texto": "Y la nube de Jehová [iba] sobre ellos de día, desde que partieron del campo."
+    },
+    {
+     "n": 35,
+     "texto": "Y fué, que en moviendo el arca, Moisés decía: Levántate, Jehová, y sean disipados tus enemigos, y huyan de tu presencia los que te aborrecen."
+    },
+    {
+     "n": 36,
+     "texto": "Y cuando ella asentaba, decía: Vuelve, Jehová, á los millares de millares de Israel."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 11,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ que el pueblo se quejó á oídos de Jehová: y oyólo Jehová, y enardecióse su furor, y encendióse en ellos fuego de Jehová y consumió el un cabo del campo."
+    },
+    {
+     "n": 2,
+     "texto": "Entonces el pueblo dió voces á Moisés, y Moisés oró á Jehová, y soterróse el fuego."
+    },
+    {
+     "n": 3,
+     "texto": "Y llamó á aquel lugar Taberah; porque el fuego de Jehová se encendió en ellos."
+    },
+    {
+     "n": 4,
+     "texto": "Y el vulgo que había en medio tuvo un vivo deseo, y volvieron, y aun lloraron los hijos de Israel, y dijeron: ¡Quién nos diera á comer carne!"
+    },
+    {
+     "n": 5,
+     "texto": "Nos acordamos del pescado que comíamos en Egipto de balde, de los cohombros, y de los melones, y de los puerros, y de las cebollas, y de los ajos:"
+    },
+    {
+     "n": 6,
+     "texto": "Y ahora nuestra alma se seca; que nada sino maná [ven] nuestros ojos."
+    },
+    {
+     "n": 7,
+     "texto": "Y era el maná como semilla de culantro, y su color como color de bdelio."
+    },
+    {
+     "n": 8,
+     "texto": "Derramábase el pueblo, y recogían, y molían en molinos, ó majaban en morteros, y lo cocían en caldera, ó hacían de él tortas: y su sabor era como sabor de aceite nuevo."
+    },
+    {
+     "n": 9,
+     "texto": "Y cuando descendía el rocío sobre el real de noche, el maná descendía de sobre él."
+    },
+    {
+     "n": 10,
+     "texto": "Y oyó Moisés al pueblo, que lloraba por sus familias, cada uno á la puerta de su tienda: y el furor de Jehová se encendió en gran manera; también pareció mal á Moisés."
+    },
+    {
+     "n": 11,
+     "texto": "Y dijo Moisés á Jehová: ¿Por qué has hecho mal á tu siervo? ¿y por qué no he hallado gracia en tus ojos, que has puesto la carga de todo este pueblo sobre mí?"
+    },
+    {
+     "n": 12,
+     "texto": "¿Concebí yo á todo este pueblo? ¿engendrélo yo, para que me digas: Llévalo en tu seno, como lleva la que cría al que mama, á la tierra de la cual juraste á sus padres?"
+    },
+    {
+     "n": 13,
+     "texto": "¿De dónde tengo yo carne para dar á todo este pueblo? porque lloran á mí, diciendo: Danos carne que comamos."
+    },
+    {
+     "n": 14,
+     "texto": "No puedo yo solo soportar á todo este pueblo, que me es pesado en demasía."
+    },
+    {
+     "n": 15,
+     "texto": "Y si así lo haces tú conmigo, yo te ruego que me des muerte, si he hallado gracia en tus ojos; y que yo no vea mi mal."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces Jehová dijo á Moisés: Júntame setenta varones de los ancianos de Israel, que tú sabes que son ancianos del pueblo y sus principales; y tráelos á la puerta del tabernáculo del testimonio, y esperen allí contigo."
+    },
+    {
+     "n": 17,
+     "texto": "Y yo descenderé y hablaré allí contigo; y tomaré del espíritu que está en ti, y pondré en ellos; y llevarán contigo la carga del pueblo, y no la llevarás tú solo."
+    },
+    {
+     "n": 18,
+     "texto": "Empero dirás al pueblo: Santificaos para mañana, y comeréis carne: pues que habéis llorado en oídos de Jehová, diciendo: ¡Quién nos diera á comer carne! ¡cierto mejor nos iba en Egipto! Jehová, pues, os dará carne, y comeréis."
+    },
+    {
+     "n": 19,
+     "texto": "No comeréis un día, ni dos días, ni cinco días, ni diez días, ni veinte días;"
+    },
+    {
+     "n": 20,
+     "texto": "Sino hasta un mes de tiempo, hasta que os salga por las narices, y os sea en aborrecimiento: por cuanto menospreciasteis á Jehová que está en medio de vosotros, y llorasteis delante de él, diciendo: ¿Para qué salimos acá de Egipto?"
+    },
+    {
+     "n": 21,
+     "texto": "Entonces dijo Moisés: Seiscientos mil de á pie es el pueblo en medio del cual yo estoy; y tú dices: Les daré carne, y comerán el tiempo de un mes."
+    },
+    {
+     "n": 22,
+     "texto": "¿Se han de degollar para ellos ovejas y bueyes que les basten? ¿ó se juntarán para ellos todos los peces de la mar para que tengan abasto?"
+    },
+    {
+     "n": 23,
+     "texto": "Entonces Jehová respondió á Moisés: ¿Hase acortado la mano de Jehová? ahora verás si te sucede mi dicho, ó no."
+    },
+    {
+     "n": 24,
+     "texto": "Y salió Moisés, y dijo al pueblo las palabras de Jehová: y juntó los setenta varones de los ancianos del pueblo, é hízolos estar alrededor del tabernáculo."
+    },
+    {
+     "n": 25,
+     "texto": "Entonces Jehová descendió en la nube, y hablóle; y tomó del espíritu que estaba en él, y púsolo en los setenta varones ancianos; y fué que, cuando posó sobre ellos el espíritu, profetizaron, y no cesaron."
+    },
+    {
+     "n": 26,
+     "texto": "Y habían quedado en el campo dos varones, llamado el uno Eldad y el otro Medad, sobre los cuales también reposó el espíritu: estaban estos entre los escritos, mas no habían salido al tabernáculo; y profetizaron en el campo."
+    },
+    {
+     "n": 27,
+     "texto": "Y corrió un mozo, y dió aviso á Moisés, y dijo: Eldad y Medad profetizan en el campo."
+    },
+    {
+     "n": 28,
+     "texto": "Entonces respondió Josué hijo de Nun, ministro de Moisés, [uno] de sus mancebos, y dijo: Señor mío Moisés, impídelos."
+    },
+    {
+     "n": 29,
+     "texto": "Y Moisés le respondió: ¿Tienes tú celos por mí? mas ojalá que todo el pueblo de Jehová fuesen profetas, que Jehová pusiera su espíritu sobre ellos."
+    },
+    {
+     "n": 30,
+     "texto": "Y recogióse Moisés al campo, él y los ancianos de Israel."
+    },
+    {
+     "n": 31,
+     "texto": "Y salió un viento de Jehová, y trajo codornices de la mar, y dejólas sobre el real, un día de camino de la una parte, y un día de camino de la otra, en derredor del campo, y casi dos codos sobre la haz de la tierra."
+    },
+    {
+     "n": 32,
+     "texto": "Entonces el pueblo estuvo levantado todo aquel día, y toda la noche, y todo el día siguiente, y recogiéronse codornices: el que menos, recogió diez montones; y las tendieron para sí á lo largo en derredor del campo."
+    },
+    {
+     "n": 33,
+     "texto": "Aun estaba la carne entre los dientes de ellos, antes que fuese mascada, cuando el furor de Jehová se encendió en el pueblo, é hirió Jehová al pueblo con una muy grande plaga."
+    },
+    {
+     "n": 34,
+     "texto": "Y llamó el nombre de aquel lugar Kibroth-hattaavah, por cuanto allí sepultaron al pueblo codicioso."
+    },
+    {
+     "n": 35,
+     "texto": "De Kibroth-hattaavah movió el pueblo á Haseroth, y pararon en Haseroth."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 12,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLARON María y Aarón contra Moisés á causa de la mujer Ethiope que había tomado: porque él había tomado mujer Ethiope."
+    },
+    {
+     "n": 2,
+     "texto": "Y dijeron: ¿Solamente por Moisés ha hablado Jehová? ¿no ha hablado también por nosotros? Y oyólo Jehová."
+    },
+    {
+     "n": 3,
+     "texto": "Y aquel varón Moisés era muy manso, más que todos los hombres que había sobre la tierra."
+    },
+    {
+     "n": 4,
+     "texto": "Y luego dijo Jehová á Moisés, y á Aarón, y á María: Salid vosotros tres al tabernáculo del testimonio. Y salieron ellos tres."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces Jehová descendió en la columna de la nube, y púsose á la puerta del tabernáculo, y llamó á Aarón y á María; y salieron ellos ambos."
+    },
+    {
+     "n": 6,
+     "texto": "Y él les dijo: Oid ahora mis palabras: si tuviereis profeta de Jehová, le apareceré en visión, en sueños hablaré con él."
+    },
+    {
+     "n": 7,
+     "texto": "No así á mi siervo Moisés, que es fiel en toda mi casa:"
+    },
+    {
+     "n": 8,
+     "texto": "Boca á boca hablaré con él, y á las claras, y no por figuras; y verá la apariencia de Jehová: ¿por qué pues no tuvisteis temor de hablar contra mi siervo Moisés?"
+    },
+    {
+     "n": 9,
+     "texto": "Entonces el furor de Jehová se encendió en ellos; y fuése."
+    },
+    {
+     "n": 10,
+     "texto": "Y la nube se apartó del tabernáculo: y he aquí que María era leprosa como la nieve; y miró Aarón á María, y he aquí que estaba leprosa."
+    },
+    {
+     "n": 11,
+     "texto": "Y dijo Aarón á Moisés: ¡Ah! señor mío, no pongas ahora sobre nosotros pecado; porque locamente lo hemos hecho, y hemos pecado."
+    },
+    {
+     "n": 12,
+     "texto": "No sea ella ahora como el que sale muerto del vientre de su madre, consumida la mitad de su carne."
+    },
+    {
+     "n": 13,
+     "texto": "Entonces Moisés clamó á Jehová, diciendo: Ruégote, oh Dios, que la sanes ahora."
+    },
+    {
+     "n": 14,
+     "texto": "Respondió Jehová á Moisés: Pues si su padre hubiera escupido en su cara, ¿no se avergonzaría por siete días?: sea echada fuera del real por siete días, y después se reunirá."
+    },
+    {
+     "n": 15,
+     "texto": "Así María fué echada del real siete días; y el pueblo no pasó adelante hasta que se [le] reunió María."
+    },
+    {
+     "n": 16,
+     "texto": "",
+     "nota": "La RV1909 no tiene este versículo aparte: numera el capítulo de otra forma y su texto está en Nm 13:1."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 13,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y DESPUÉS movió el pueblo de Haseroth, y asentaron el campo en el desierto de Parán."
+    },
+    {
+     "n": 2,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 3,
+     "texto": "Envía tú hombres que reconozcan la tierra de Canaán, la cual yo doy á los hijos de Israel: de cada tribu de sus padres enviaréis un varón, cada uno príncipe entre ellos."
+    },
+    {
+     "n": 4,
+     "texto": "Y Moisés los envió desde el desierto de Parán, conforme á la palabra de Jehová: y todos aquellos varones eran príncipes de los hijos de Israel."
+    },
+    {
+     "n": 5,
+     "texto": "Los nombres de los cuales son éstos: De la tribu de Rubén, Sammua hijo de Zaccur."
+    },
+    {
+     "n": 6,
+     "texto": "De la tribu de Simeón, Saphat hijo de Hurí."
+    },
+    {
+     "n": 7,
+     "texto": "De la tribu de Judá, Caleb hijo de Jephone."
+    },
+    {
+     "n": 8,
+     "texto": "De la tribu de Issachâr, Igal hijo de Joseph."
+    },
+    {
+     "n": 9,
+     "texto": "De la tribu de Ephraim, Oseas hijo de Nun."
+    },
+    {
+     "n": 10,
+     "texto": "De la tribu de Benjamín, Palti hijo de Raphu."
+    },
+    {
+     "n": 11,
+     "texto": "De la tribu de Zabulón, Gaddiel hijo de Sodi."
+    },
+    {
+     "n": 12,
+     "texto": "De la tribu de José, de la tribu de Manasés, Gaddi hijo de Susi."
+    },
+    {
+     "n": 13,
+     "texto": "De la tribu de Dan, Ammiel hijo de Gemalli."
+    },
+    {
+     "n": 14,
+     "texto": "De la tribu de Aser, Sethur hijo de Michâel."
+    },
+    {
+     "n": 15,
+     "texto": "De la tribu de Nephtalí, Nahabí hijo de Vapsi."
+    },
+    {
+     "n": 16,
+     "texto": "De la tribu de Gad, Geuel hijo de Machî."
+    },
+    {
+     "n": 17,
+     "texto": "Estos son los nombres de los varones que Moisés envió á reconocer la tierra: y á Oseas hijo de Nun, le puso Moisés el nombre de Josué."
+    },
+    {
+     "n": 18,
+     "texto": "Enviólos, pues, Moisés á reconocer la tierra de Canaán, diciéndoles: Subid por aquí, por el mediodía, y subid al monte:"
+    },
+    {
+     "n": 19,
+     "texto": "Y observad la tierra qué tal es; y el pueblo que la habita, si es fuerte ó débil, si poco ó numeroso;"
+    },
+    {
+     "n": 20,
+     "texto": "Qué tal la tierra habitada, si es buena ó mala; y qué tales son las ciudades habitadas, si de tiendas ó de fortalezas;"
+    },
+    {
+     "n": 21,
+     "texto": "Y cuál sea el terreno, si es pingüe ó flaco, si en él hay ó no árboles: y esforzaos, y coged del fruto del país. Y el tiempo era el tiempo de las primeras uvas."
+    },
+    {
+     "n": 22,
+     "texto": "Y ellos subieron, y reconocieron la tierra desde el desierto de Zin hasta Rehob, entrando en Emath."
+    },
+    {
+     "n": 23,
+     "texto": "Y subieron por el mediodía, y vinieron hasta Hebrón: y allí estaban Aimán, y Sesai, y Talmai, hijos de Anac. Hebrón fué edificada siete años antes de Zoán, la de Egipto."
+    },
+    {
+     "n": 24,
+     "texto": "Y llegaron hasta el arroyo de Escol, y de allí cortaron un sarmiento con un racimo de uvas, el cual trajeron dos en un palo, y de las granadas y de los higos."
+    },
+    {
+     "n": 25,
+     "texto": "Y llamóse aquel lugar Nahal-escol, por el racimo que cortaron de allí los hijos de Israel."
+    },
+    {
+     "n": 26,
+     "texto": "Y volvieron de reconocer la tierra al cabo de cuarenta días."
+    },
+    {
+     "n": 27,
+     "texto": "Y anduvieron y vinieron á Moisés y á Aarón, y á toda la congregación de los hijos de Israel, en el desierto de Parán, en Cades, y diéronles la respuesta, y á toda la congregación, y les mostraron el fruto de la tierra."
+    },
+    {
+     "n": 28,
+     "texto": "Y le contaron, y dijeron: Nosotros llegamos á la tierra á la cual nos enviaste, la que ciertamente fluye leche y miel; y este es el fruto de ella."
+    },
+    {
+     "n": 29,
+     "texto": "Mas el pueblo que habita aquella tierra es fuerte, y las ciudades muy grandes y fuertes; y también vimos allí los hijos de Anac."
+    },
+    {
+     "n": 30,
+     "texto": "Amalec habita la tierra del mediodía; y el Hetheo, y el Jebuseo, y el Amorrheo, habitan en el monte; y el Cananeo habita junto á la mar, y á la ribera del Jordán."
+    },
+    {
+     "n": 31,
+     "texto": "Entonces Caleb hizo callar el pueblo delante de Moisés, y dijo: Subamos luego, y poseámosla; que más podremos que ella."
+    },
+    {
+     "n": 32,
+     "texto": "Mas los varones que subieron con él, dijeron: No podremos subir contra aquel pueblo; porque es más fuerte que nosotros."
+    },
+    {
+     "n": 33,
+     "texto": "Y vituperaron entre los hijos de Israel la tierra que habían reconocido, diciendo: La tierra por donde pasamos para reconocerla, es tierra que traga á sus moradores; y todo el pueblo que vimos en medio de ella, son hombres de grande estatura. También vimos allí gigantes, hijos de Anac, [raza] de los gigantes: y éramos nosotros, á nuestro parecer, como langostas; y así les parecíamos á ellos."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 14,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ENTONCES toda la congregación alzaron [grita], y dieron voces: y el pueblo lloró aquella noche."
+    },
+    {
+     "n": 2,
+     "texto": "Y quejáronse contra Moisés y contra Aarón todos los hijos de Israel; y díjoles toda la multitud: ¡Ojalá muriéramos en la tierra de Egipto; ó en este desierto ojalá muriéramos!"
+    },
+    {
+     "n": 3,
+     "texto": "¿Y por qué nos trae Jehová á esta tierra para caer á cuchillo, y que nuestras mujeres y nuestros chiquitos sean por presa? ¿no nos sería mejor volvernos á Egipto?"
+    },
+    {
+     "n": 4,
+     "texto": "Y decían el uno al otro: Hagamos un capitán, y volvámonos á Egipto."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces Moisés y Aarón cayeron sobre sus rostros delante de toda la multitud de la congregación de los hijos de Israel."
+    },
+    {
+     "n": 6,
+     "texto": "Y Josué hijo de Nun, y Caleb hijo de Jephone, que eran de los que habían reconocido la tierra, rompieron sus vestidos;"
+    },
+    {
+     "n": 7,
+     "texto": "Y hablaron á toda la congregación de los hijos de Israel, diciendo: La tierra por donde pasamos para reconocerla, es tierra en gran manera buena."
+    },
+    {
+     "n": 8,
+     "texto": "Si Jehová se agradare de nosotros, [él] nos meterá en esta tierra, y nos la entregará; tierra que fluye leche y miel."
+    },
+    {
+     "n": 9,
+     "texto": "Por tanto, no seáis rebeldes contra Jehová, ni temáis al pueblo de aquesta tierra, porque nuestro pan son: su amparo se ha apartado de ellos, y con nosotros está Jehová: no los temáis."
+    },
+    {
+     "n": 10,
+     "texto": "Entonces toda la multitud habló de apedrearlos con piedras. Mas la gloria de Jehová se mostró en el tabernáculo del testimonio á todos los hijos de Israel."
+    },
+    {
+     "n": 11,
+     "texto": "Y Jehová dijo á Moisés: ¿Hasta cuándo me ha de irritar este pueblo? ¿hasta cuándo no me ha de creer con todas las señales que he hecho en medio de ellos?"
+    },
+    {
+     "n": 12,
+     "texto": "Yo le heriré de mortandad, y lo destruiré, y á ti te pondré sobre gente grande y más fuerte que ellos."
+    },
+    {
+     "n": 13,
+     "texto": "Y Moisés respondió á Jehová: Oiránlo luego los Egipcios, porque de en medio de ellos sacaste á este pueblo con tu fortaleza:"
+    },
+    {
+     "n": 14,
+     "texto": "Y lo dirán á los habitadores de esta tierra; [los cuales] han oído que tú, oh Jehová, estabas en medio de este pueblo, que ojo á ojo aparecías tú, oh Jehová, y que tu nube estaba sobre ellos, y que de día ibas delante de ellos en columna de nube, y de noche en columna de fuego:"
+    },
+    {
+     "n": 15,
+     "texto": "Y que has hecho morir á este pueblo como á un hombre: y las gentes que hubieren oído tu fama hablarán, diciendo:"
+    },
+    {
+     "n": 16,
+     "texto": "Porque no pudo Jehová meter este pueblo en la tierra de la cual les había jurado, los mató en el desierto."
+    },
+    {
+     "n": 17,
+     "texto": "Ahora, pues, yo te ruego que sea magnificada la fortaleza del Señor, como lo hablaste, diciendo:"
+    },
+    {
+     "n": 18,
+     "texto": "Jehová, tardo de ira y grande en misericordia, que perdona la iniquidad y la rebelión, y absolviendo no absolverá al [culpado]; que visita la maldad de los padres sobre los hijos hasta los terceros y hasta los cuartos."
+    },
+    {
+     "n": 19,
+     "texto": "Perdona ahora la iniquidad de este pueblo según la grandeza de tu misericordia, y como has perdonado á este pueblo desde Egipto hasta aquí."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces Jehová dijo: yo lo he perdonado conforme á tu dicho:"
+    },
+    {
+     "n": 21,
+     "texto": "Mas, ciertamente vivo yo y mi gloria hinche toda la tierra,"
+    },
+    {
+     "n": 22,
+     "texto": "Que todos los que vieron mi gloria y mis señales que he hecho en Egipto y en el desierto, y me han tentado ya diez veces, y no han oído mi voz,"
+    },
+    {
+     "n": 23,
+     "texto": "No verán la tierra de la cual juré á sus padres: no, ninguno de los que me han irritado la verá."
+    },
+    {
+     "n": 24,
+     "texto": "Empero mi siervo Caleb, por cuanto hubo en él otro espíritu, y cumplió de ir en pos de mí, yo le meteré en la tierra donde entró, y su simiente la recibirá en heredad."
+    },
+    {
+     "n": 25,
+     "texto": "Ahora bien, el Amalecita y el Cananeo habitan en el valle; volveos mañana, y partíos al desierto, camino del mar Bermejo."
+    },
+    {
+     "n": 26,
+     "texto": "Y Jehová habló á Moisés y á Aarón, diciendo:"
+    },
+    {
+     "n": 27,
+     "texto": "¿Hasta cuándo oiré esta depravada multitud que murmura contra mí, las querellas de los hijos de Israel, que de mí se quejan?"
+    },
+    {
+     "n": 28,
+     "texto": "Diles: Vivo yo, dice Jehová, que según habéis hablado á mis oídos, así haré yo con vosotros:"
+    },
+    {
+     "n": 29,
+     "texto": "En este desierto caerán vuestros cuerpos; todos vuestros contados según toda vuestra cuenta, de veinte años arriba, los cuales habéis murmurado contra mí;"
+    },
+    {
+     "n": 30,
+     "texto": "Vosotros á la verdad no entraréis en la tierra, por la cual alcé mi mano de haceros habitar en ella; exceptuando á Caleb hijo de Jephone, y á Josué hijo de Nun."
+    },
+    {
+     "n": 31,
+     "texto": "Mas vuestros chiquitos, de los cuales dijisteis que serían por presa, yo los introduciré, y ellos conocerán la tierra que vosotros despreciasteis."
+    },
+    {
+     "n": 32,
+     "texto": "Y en cuanto á vosotros, vuestros cuerpos caerán en este desierto."
+    },
+    {
+     "n": 33,
+     "texto": "Y vuestros hijos andarán pastoreando en el desierto cuarenta años, y ellos llevarán vuestras fornicaciones, hasta que vuestros cuerpos sean consumidos en el desierto."
+    },
+    {
+     "n": 34,
+     "texto": "Conforme al número de los días, [de los] cuarenta días en que reconocisteis la tierra, llevaréis vuestras iniquidades cuarenta años, un año por cada día; y conoceréis mi castigo."
+    },
+    {
+     "n": 35,
+     "texto": "Yo Jehová he hablado; así haré á toda esta multitud perversa que se ha juntado contra mí; en este desierto serán consumidos, y ahí morirán."
+    },
+    {
+     "n": 36,
+     "texto": "Y los varones que Moisés envió á reconocer la tierra, y vueltos habían hecho murmurar contra él á toda la congregación, desacreditando aquel país,"
+    },
+    {
+     "n": 37,
+     "texto": "Aquellos varones que habían hablado mal de la tierra, murieron de plaga delante de Jehová."
+    },
+    {
+     "n": 38,
+     "texto": "Mas Josué hijo de Nun, y Caleb hijo de Jephone, quedaron con vida de entre aquellos hombres que habían ido á reconocer la tierra."
+    },
+    {
+     "n": 39,
+     "texto": "Y Moisés dijo estas cosas á todos los hijos de Israel, y el pueblo se enlutó mucho."
+    },
+    {
+     "n": 40,
+     "texto": "Y levantáronse por la mañana, y subieron á la cumbre del monte, diciendo: Henos aquí para subir al lugar del cual ha hablado Jehová; porque hemos pecado."
+    },
+    {
+     "n": 41,
+     "texto": "Y dijo Moisés: ¿Por qué quebrantáis el dicho de Jehová? Esto tampoco os sucederá bien."
+    },
+    {
+     "n": 42,
+     "texto": "No subáis, porque Jehová no está en medio de vosotros, no seáis heridos delante de vuestros enemigos."
+    },
+    {
+     "n": 43,
+     "texto": "Porque el Amalecita y el Cananeo están allí delante de vosotros, y caeréis á cuchillo: pues por cuanto os habéis retraído de seguir á Jehová, por eso no será Jehová con vosotros."
+    },
+    {
+     "n": 44,
+     "texto": "Sin embargo, se obstinaron en subir á la cima del monte: mas el arca de la alianza de Jehová, y Moisés, no se apartaron de en medio del campo."
+    },
+    {
+     "n": 45,
+     "texto": "Y descendieron el Amalecita y el Cananeo, que habitaban en aquel monte, é hiriéronlos y derrotáronlos, [persiguiéndolos] hasta Horma."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 15,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ habló á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Habla á los hijos de Israel, y diles: Cuando hubiereis entrado en la tierra de vuestras habitaciones, que yo os doy,"
+    },
+    {
+     "n": 3,
+     "texto": "E hiciereis ofrenda encendida á Jehová, holocausto, ó sacrificio, por especial voto, ó de vuestra voluntad, ó para hacer en vuestras solemnidades olor suave á Jehová, de vacas ó de ovejas;"
+    },
+    {
+     "n": 4,
+     "texto": "Entonces el que ofreciere su ofrenda á Jehová, traerá por presente una décima [de un epha] de flor de harina, amasada con la cuarta parte de un hin de aceite;"
+    },
+    {
+     "n": 5,
+     "texto": "Y de vino para la libación ofrecerás la cuarta parte de un hin, además del holocausto ó del sacrificio, por cada un cordero."
+    },
+    {
+     "n": 6,
+     "texto": "Y por [cada] carnero harás presente de dos décimas de flor de harina, amasada con el tercio de un hin de aceite:"
+    },
+    {
+     "n": 7,
+     "texto": "Y de vino para la libación ofrecerás el tercio de un hin, en olor suave á Jehová."
+    },
+    {
+     "n": 8,
+     "texto": "Y cuando ofreciereis novillo en holocausto ó sacrificio, por especial voto, ó de paces á Jehová,"
+    },
+    {
+     "n": 9,
+     "texto": "Ofrecerás con el novillo un presente de tres décimas de flor de harina, amasada con la mitad de un hin de aceite:"
+    },
+    {
+     "n": 10,
+     "texto": "Y de vino para la libación ofrecerás la mitad de un hin, en ofrenda encendida de olor suave á Jehová."
+    },
+    {
+     "n": 11,
+     "texto": "Así se hará con cada un buey, ó carnero, ó cordero, lo mismo de ovejas que de cabras."
+    },
+    {
+     "n": 12,
+     "texto": "Conforme al número así haréis con cada uno según el número de ellos."
+    },
+    {
+     "n": 13,
+     "texto": "Todo natural hará estas cosas así, para ofrecer ofrenda encendida de olor suave á Jehová."
+    },
+    {
+     "n": 14,
+     "texto": "Y cuando habitare con vosotros extranjero, ó cualquiera que estuviere entre vosotros por vuestras edades, si hiciere ofrenda encendida de olor suave á Jehová, como vosotros hiciereis, así hará él."
+    },
+    {
+     "n": 15,
+     "texto": "Un mismo estatuto tendréis, vosotros de la congregación y el extranjero que [con vosotros] mora; estatuto que será perpetuo por vuestras edades: como vosotros, así será el peregrino delante de Jehová."
+    },
+    {
+     "n": 16,
+     "texto": "Una misma ley y un mismo derecho tendréis, vosotros y el peregrino que con vosotros mora."
+    },
+    {
+     "n": 17,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 18,
+     "texto": "Habla á los hijos de Israel, y diles: Cuando hubiereis entrado en la tierra á la cual yo os llevo,"
+    },
+    {
+     "n": 19,
+     "texto": "Será que cuando comenzareis á comer del pan de la tierra, ofreceréis ofrenda á Jehová."
+    },
+    {
+     "n": 20,
+     "texto": "De lo primero que amasareis, ofreceréis una torta en ofrenda; como la ofrenda de la era, así la ofreceréis."
+    },
+    {
+     "n": 21,
+     "texto": "De las primicias de vuestras masas daréis á Jehová ofrenda por vuestras generaciones."
+    },
+    {
+     "n": 22,
+     "texto": "Y cuando errareis, y no hiciereis todos estos mandamientos que Jehová ha dicho á Moisés,"
+    },
+    {
+     "n": 23,
+     "texto": "Todas las cosas que Jehová os ha mandado por la mano de Moisés, desde el día que Jehová [lo] mandó, y en adelante por vuestras edades,"
+    },
+    {
+     "n": 24,
+     "texto": "Será que, si [el pecado] fué hecho por yerro con ignorancia de la congregación, toda la congregación ofrecerá un novillo por holocausto, en olor suave á Jehová, con su presente y su libación, conforme á la ley; y un macho cabrío en expiación."
+    },
+    {
+     "n": 25,
+     "texto": "Y el sacerdote hará expiación por toda la congregación de los hijos de Israel; y les será perdonado, porque yerro es: y ellos traerán sus ofrendas, ofrenda encendida á Jehová, y sus expiaciones delante de Jehová, por sus yerros:"
+    },
+    {
+     "n": 26,
+     "texto": "Y será perdonado á toda la congregación de los hijos de Israel, y al extranjero que peregrina entre ellos, por cuanto es yerro de todo el pueblo."
+    },
+    {
+     "n": 27,
+     "texto": "Y si una persona pecare por yerro, ofrecerá una cabra de un año por expiación."
+    },
+    {
+     "n": 28,
+     "texto": "Y el sacerdote hará expiación por la persona que habrá pecado por yerro, cuando pecare por yerro delante de Jehová, la reconciliará, y le será perdonado."
+    },
+    {
+     "n": 29,
+     "texto": "El natural entre los hijos de Israel, y el peregrino que habitare entre ellos, una misma ley tendréis para el que hiciere [algo] por yerro."
+    },
+    {
+     "n": 30,
+     "texto": "Mas la persona que hiciere algo con altiva mano, así el natural como el extranjero, á Jehová injurió; y la tal persona será cortada de en medio de su pueblo."
+    },
+    {
+     "n": 31,
+     "texto": "Por cuanto tuvo en poco la palabra de Jehová, y dió por nulo su mandamiento, enteramente será cortada la tal persona: su iniquidad será sobre ella."
+    },
+    {
+     "n": 32,
+     "texto": "Y estando los hijos de Israel en el desierto, hallaron un hombre que recogía leña en día de sábado."
+    },
+    {
+     "n": 33,
+     "texto": "Y los que le hallaron recogiendo leña trajéronle á Moisés y á Aarón, y á toda la congregación:"
+    },
+    {
+     "n": 34,
+     "texto": "Y pusiéronlo en la cárcel, por que no estaba declarado qué le habían de hacer."
+    },
+    {
+     "n": 35,
+     "texto": "Y Jehová dijo á Moisés: Irremisiblemente muera aquel hombre; apedréelo con piedras toda la congregación fuera del campo."
+    },
+    {
+     "n": 36,
+     "texto": "Entonces lo sacó la congregación fuera del campo, y apedreáronlo con piedras, y murió; como Jehová mandó á Moisés."
+    },
+    {
+     "n": 37,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 38,
+     "texto": "Habla á los hijos de Israel, y diles que se hagan pezuelos (franjas) en los remates de sus vestidos, por sus generaciones; y pongan en cada pezuelo de los remates un cordón de cárdeno:"
+    },
+    {
+     "n": 39,
+     "texto": "Y serviros ha de pezuelo, para que cuando lo viereis, os acordéis de todos los mandamientos de Jehová, para ponerlos por obra; y no miréis en pos de vuestro corazón y de vuestros ojos, en pos de los cuales fornicáis:"
+    },
+    {
+     "n": 40,
+     "texto": "Para que os acordéis, y hagáis todos mis mandamientos, y seáis santos á vuestro Dios."
+    },
+    {
+     "n": 41,
+     "texto": "Yo Jehová vuestro Dios, que os saqué de la tierra de Egipto, para ser vuestro Dios: Yo Jehová vuestro Dios."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 16,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y CORÉ, hijo de Ishar, hijo de Coath, hijo de Leví; y Dathán y Abiram, hijos de Eliab; y Hon, hijo de Peleth, de los hijos de Rubén, tomaron [gente],"
+    },
+    {
+     "n": 2,
+     "texto": "Y levantáronse contra Moisés con doscientos y cincuenta varones de los hijos de Israel, príncipes de la congregación, de los del consejo, varones de nombre;"
+    },
+    {
+     "n": 3,
+     "texto": "Y se juntaron contra Moisés y Aarón, y les dijeron: Básteos, porque toda la congregación, todos ellos son santos, y en medio de ellos está Jehová: ¿por qué, pues, os levantáis vosotros sobre la congregación de Jehová?"
+    },
+    {
+     "n": 4,
+     "texto": "Y como lo oyó Moisés, echóse sobre su rostro;"
+    },
+    {
+     "n": 5,
+     "texto": "Y habló á Coré y á todo su séquito, diciendo: Mañana mostrará Jehová quién es suyo, y al santo harálo llegar á sí; y al que él escogiere, él lo allegará á sí."
+    },
+    {
+     "n": 6,
+     "texto": "Haced esto: tomaos incensarios, Coré y todo su séquito:"
+    },
+    {
+     "n": 7,
+     "texto": "Y poned fuego en ellos, y poned en ellos sahumerio delante de Jehová mañana; y será que el varón á quien Jehová escogiere, aquél [será] el santo: básteos [esto], hijos de Leví."
+    },
+    {
+     "n": 8,
+     "texto": "Dijo más Moisés á Coré: Oid ahora, hijos de Leví:"
+    },
+    {
+     "n": 9,
+     "texto": "¿Os es poco que el Dios de Israel os haya apartado de la congregación de Israel, haciéndoos allegar á sí para que ministraseis en el servicio del tabernáculo de Jehová, y estuvieseis delante de la congregación para ministrarles?"
+    },
+    {
+     "n": 10,
+     "texto": "¿Y que te hizo acercar á ti, y á todos tus hermanos los hijos de Leví contigo; para que procuréis también el sacerdocio?"
+    },
+    {
+     "n": 11,
+     "texto": "Por tanto, tú y todo tu séquito sois los que os juntáis contra Jehová: pues Aarón, ¿qué es para que contra él murmuréis?"
+    },
+    {
+     "n": 12,
+     "texto": "Y envió Moisés á llamar á Dathán y Abiram, hijos de Eliab; mas ellos respondieron: No iremos allá:"
+    },
+    {
+     "n": 13,
+     "texto": "¿Es poco que nos hayas hecho venir de una tierra que destila leche y miel, para hacernos morir en el desierto, sino que también te enseñorees de nosotros imperiosamente?"
+    },
+    {
+     "n": 14,
+     "texto": "Ni tampoco nos has metido tú en tierra que fluya leche y miel, ni nos has dado heredades de tierras y viñas: ¿has de arrancar los ojos de estos hombres? No subiremos."
+    },
+    {
+     "n": 15,
+     "texto": "Entonces Moisés se enojó en gran manera, y dijo á Jehová: No mires á su presente: ni aun un asno he tomado de ellos, ni á ninguno de ellos he hecho mal."
+    },
+    {
+     "n": 16,
+     "texto": "Después dijo Moisés á Coré: Tú y todo tu séquito, poneos mañana delante de Jehová; tú, y ellos, y Aarón:"
+    },
+    {
+     "n": 17,
+     "texto": "Y tomad cada uno su incensario, y poned sahumerio en ellos, y allegad delante de Jehová cada uno su incensario: doscientos y cincuenta incensarios: tú también, y Aarón, cada uno con su incensario."
+    },
+    {
+     "n": 18,
+     "texto": "Y tomaron cada uno su incensario, y pusieron en ellos fuego, y echaron en ellos sahumerio, y pusiéronse á la puerta del tabernáculo del testimonio con Moisés y Aarón."
+    },
+    {
+     "n": 19,
+     "texto": "Ya Coré había hecho juntar contra ellos toda la congregación á la puerta del tabernáculo del testimonio: entonces la gloria de Jehová apareció á toda la congregación."
+    },
+    {
+     "n": 20,
+     "texto": "Y Jehová habló á Moisés y á Aarón, diciendo:"
+    },
+    {
+     "n": 21,
+     "texto": "Apartaos de entre esta congregación, y consumirlos he en un momento."
+    },
+    {
+     "n": 22,
+     "texto": "Y ellos se echaron sobre sus rostros, y dijeron: Dios, Dios de los espíritus de toda carne, ¿no es un hombre el que pecó? ¿y airarte has tú contra toda la congregación?"
+    },
+    {
+     "n": 23,
+     "texto": "Entonces Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 24,
+     "texto": "Habla á la congregación, diciendo: Apartaos de en derredor de la tienda de Coré, Dathán, y Abiram."
+    },
+    {
+     "n": 25,
+     "texto": "Y Moisés se levantó, y fué á Dathán y á Abiram; y los ancianos de Israel fueron en pos de él."
+    },
+    {
+     "n": 26,
+     "texto": "Y él habló á la congregación, diciendo: Apartaos ahora de las tiendas de estos impíos hombres, y no toquéis ninguna cosa suya, por que no perezcáis en todos sus pecados."
+    },
+    {
+     "n": 27,
+     "texto": "Y apartáronse de las tiendas de Coré, de Dathán, y de Abiram en derredor: y Dathán y Abiram salieron y pusiéronse á las puertas de sus tiendas, con sus mujeres, y sus hijos, y sus chiquitos."
+    },
+    {
+     "n": 28,
+     "texto": "Y dijo Moisés: En esto conoceréis que Jehová me ha enviado para que hiciese todas estas cosas; que no de mi corazón [las hice]."
+    },
+    {
+     "n": 29,
+     "texto": "Si como mueren todos los hombres murieren éstos, ó si fueren ellos visitados á la manera de todos los hombres, Jehová no me envió."
+    },
+    {
+     "n": 30,
+     "texto": "Mas si Jehová hiciere una nueva cosa, y la tierra abriere su boca, y los tragare con todas sus cosas, y descendieren vivos al abismo, entonces conoceréis que estos hombres irritaron á Jehová."
+    },
+    {
+     "n": 31,
+     "texto": "Y aconteció, que en acabando él de hablar todas estas palabras, rompióse la tierra que estaba debajo de ellos:"
+    },
+    {
+     "n": 32,
+     "texto": "Y abrió la tierra su boca, y tragólos á ellos, y á sus casas, y á todos los hombres de Coré, y á toda su hacienda."
+    },
+    {
+     "n": 33,
+     "texto": "Y ellos, con todo lo que tenían, descendieron vivos al abismo, y cubriólos la tierra, y perecieron de en medio de la congregación."
+    },
+    {
+     "n": 34,
+     "texto": "Y todo Israel, los que estaban en derredor de ellos, huyeron al grito de ellos; porque decían: No nos trague también la tierra."
+    },
+    {
+     "n": 35,
+     "texto": "Y salió fuego de Jehová, y consumió los doscientos y cincuenta hombres que ofrecían el sahumerio."
+    },
+    {
+     "n": 36,
+     "texto": "Entonces Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 37,
+     "texto": "Di á Eleazar, hijo de Aarón sacerdote, que tome los incensarios de en medio del incendio, y derrame más allá el fuego; porque son santificados:"
+    },
+    {
+     "n": 38,
+     "texto": "Los incensarios de estos pecadores contra sus almas: y harán de ellos planchas extendidas para cubrir el altar: por cuanto ofrecieron con ellos delante de Jehová, son santificados; y serán por señal á los hijos de Israel."
+    },
+    {
+     "n": 39,
+     "texto": "Y el sacerdote Eleazar tomó los incensarios de metal con que los quemados habían ofrecido; y extendiéronlos para cubrir el altar,"
+    },
+    {
+     "n": 40,
+     "texto": "En recuerdo á los hijos de Israel que ningún extraño que no sea de la simiente de Aarón, llegue á ofrecer sahumerio delante de Jehová, porque no sea como Coré, y como su séquito; según se lo dijo Jehová por mano de Moisés."
+    },
+    {
+     "n": 41,
+     "texto": "El día siguiente toda la congregación de los hijos de Israel murmuró contra Moisés y Aarón, diciendo: Vosotros habéis muerto al pueblo de Jehová."
+    },
+    {
+     "n": 42,
+     "texto": "Y aconteció que, como se juntó la congregación contra Moisés y Aarón, miraron hacia el tabernáculo del testimonio, y he aquí la nube lo había cubierto, y apareció la gloria de Jehová."
+    },
+    {
+     "n": 43,
+     "texto": "Y vinieron Moisés y Aarón delante del tabernáculo del testimonio."
+    },
+    {
+     "n": 44,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 45,
+     "texto": "Apartaos de en medio de esta congregación, y consumirélos en un momento. Y ellos se echaron sobre sus rostros."
+    },
+    {
+     "n": 46,
+     "texto": "Y dijo Moisés á Aarón: Toma el incensario, y pon en él fuego del altar, y sobre él pon perfume, y ve presto á la congregación, y haz expiación por ellos; porque el furor ha salido de delante de la faz de Jehová: la mortandad ha comenzado."
+    },
+    {
+     "n": 47,
+     "texto": "Entonces tomó Aarón [el incensario], como Moisés dijo, y corrió en medio de la congregación: y he aquí que la mortandad había comenzado en el pueblo: y él puso perfume, é hizo expiación por el pueblo."
+    },
+    {
+     "n": 48,
+     "texto": "Y púsose entre los muertos y los vivos; y cesó la mortandad."
+    },
+    {
+     "n": 49,
+     "texto": "Y los que murieron en aquella mortandad fueron catorce mil y setecientos, sin los muertos por el negocio de Coré."
+    },
+    {
+     "n": 50,
+     "texto": "Después se volvió Aarón á Moisés á la puerta del tabernáculo del testimonio, cuando la mortandad había cesado."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 17,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Habla á los hijos de Israel, y toma de ellos una vara por cada casa de los padres, de todos los príncipes de ellos, doce varas conforme á las casas de sus padres; y escribirás el nombre de cada uno sobre su vara."
+    },
+    {
+     "n": 3,
+     "texto": "Y escribirás el nombre de Aarón sobre la vara de Leví; porque cada cabeza de familia de sus padres tendrá una vara."
+    },
+    {
+     "n": 4,
+     "texto": "Y las pondrás en el tabernáculo del testimonio delante del testimonio, donde yo me declararé á vosotros."
+    },
+    {
+     "n": 5,
+     "texto": "Y será, que el varón que yo escogiere, su vara florecerá: y haré cesar de sobre mí las quejas de los hijos de Israel, con que murmuran contra vosotros."
+    },
+    {
+     "n": 6,
+     "texto": "Y Moisés habló á los hijos de Israel, y todos los príncipes de ellos le dieron varas; cada príncipe por las casas de sus padres una vara, [en todas] doce varas; y la vara de Aarón estaba entre las varas de ellos."
+    },
+    {
+     "n": 7,
+     "texto": "Y Moisés puso las varas delante de Jehová en el tabernáculo del testimonio."
+    },
+    {
+     "n": 8,
+     "texto": "Y aconteció que el día siguiente vino Moisés al tabernáculo del testimonio; y he aquí que la vara de Aarón de la casa de Leví había brotado, y echado flores, y arrojado renuevos, y producido almendras."
+    },
+    {
+     "n": 9,
+     "texto": "Entonces sacó Moisés todas las varas de delante de Jehová á todos los hijos de Israel; y ellos lo vieron, y tomaron cada uno su vara."
+    },
+    {
+     "n": 10,
+     "texto": "Y Jehová dijo á Moisés: Vuelve la vara de Aarón delante del testimonio, para que se guarde por señal á los hijos rebeldes; y harás cesar sus quejas de sobre mí, porque no mueran."
+    },
+    {
+     "n": 11,
+     "texto": "E hízolo Moisés: como le mandó Jehová, así hizo."
+    },
+    {
+     "n": 12,
+     "texto": "Entonces los hijos de Israel hablaron á Moisés, diciendo: He aquí nosotros somos muertos, perdidos somos, todos nosotros somos perdidos."
+    },
+    {
+     "n": 13,
+     "texto": "Cualquiera que se llegare, el que se acercare al tabernáculo de Jehová morirá: ¿acabaremos de perecer todos?"
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 18,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ dijo á Aarón: Tú y tus hijos, y la casa de tu padre contigo, llevaréis el pecado del santuario: y tú y tus hijos contigo llevaréis el pecado de vuestro sacerdocio."
+    },
+    {
+     "n": 2,
+     "texto": "Y á tus hermanos también, la tribu de Leví, la tribu de tu padre, hazlos llegar á ti, y júntense contigo, y servirte han; y tú y tus hijos contigo [serviréis] delante del tabernáculo del testimonio."
+    },
+    {
+     "n": 3,
+     "texto": "Y guardarán lo que tú ordenares, y el cargo de todo el tabernáculo: mas no llegarán á los vasos santos ni al altar, porque no mueran ellos y vosotros."
+    },
+    {
+     "n": 4,
+     "texto": "Se juntarán, pues, contigo, y tendrán el cargo del tabernáculo del testimonio en todo el servicio del tabernáculo; ningún extraño se ha de llegar á vosotros."
+    },
+    {
+     "n": 5,
+     "texto": "Y tendréis la guarda del santuario, y la guarda del altar, para que no sea más la ira sobre los hijos de Israel."
+    },
+    {
+     "n": 6,
+     "texto": "Porque he aquí yo he tomado á vuestros hermanos los Levitas de entre los hijos de Israel, dados á vosotros en don de Jehová, para que sirvan en el ministerio del tabernáculo del testimonio."
+    },
+    {
+     "n": 7,
+     "texto": "Mas tú y tus hijos contigo guardaréis vuestro sacerdocio en todo negocio del altar, y del velo adentro, y ministraréis. Yo os he dado en don el servicio de vuestro sacerdocio; y el extraño que se llegare, morirá."
+    },
+    {
+     "n": 8,
+     "texto": "Dijo más Jehová á Aarón: He aquí yo te he dado también la guarda de mis ofrendas: todas las cosas consagradas de los hijos de Israel te he dado por razón de la unción, y á tus hijos, por estatuto perpetuo."
+    },
+    {
+     "n": 9,
+     "texto": "Esto será tuyo de la ofrenda de las cosas santas [reservadas] del fuego: toda ofrenda de ellos, todo presente suyo, y toda expiación por el pecado de ellos, y toda expiación por la culpa de ellos, que me han de presentar, será cosa muy santa para ti y para tus hijos."
+    },
+    {
+     "n": 10,
+     "texto": "En el santuario la comerás; todo varón comerá de ella: cosa santa será para ti."
+    },
+    {
+     "n": 11,
+     "texto": "Esto también será tuyo: la ofrenda elevada de sus dones, y todas las ofrendas agitadas de los hijos de Israel, he dado á ti, y á tus hijos y á tus hijas contigo, por estatuto perpetuo: todo limpio en tu casa comerá de ellas."
+    },
+    {
+     "n": 12,
+     "texto": "De aceite, y de mosto, y de trigo, todo lo más escogido, las primicias de ello, que presentarán á Jehová, á ti las he dado."
+    },
+    {
+     "n": 13,
+     "texto": "Las primicias de todas las cosas de la tierra de ellos, las cuales traerán á Jehová, serán tuyas: todo limpio en tu casa comerá de ellas."
+    },
+    {
+     "n": 14,
+     "texto": "Todo lo consagrado por voto en Israel será tuyo."
+    },
+    {
+     "n": 15,
+     "texto": "Todo lo que abriere matriz en toda carne que ofrecerán á Jehová, así de hombres como de animales, será tuyo: mas has de hacer redimir el primogénito del hombre: también harás redimir el primogénito de animal inmundo."
+    },
+    {
+     "n": 16,
+     "texto": "Y de un mes harás efectuar el rescate de ellos, conforme á tu estimación, por precio de cinco siclos, al siclo del santuario, [que] es de veinte óbolos."
+    },
+    {
+     "n": 17,
+     "texto": "Mas el primogénito de vaca, y el primogénito de oveja, y el primogénito de cabra, no redimirás; santificados son: la sangre de ellos rociarás sobre el altar, y quemarás la grosura de ellos, ofrenda encendida en olor suave á Jehová."
+    },
+    {
+     "n": 18,
+     "texto": "Y la carne de ellos será tuya: como el pecho de la mecedura y como la espaldilla derecha, será tuya."
+    },
+    {
+     "n": 19,
+     "texto": "Todas las ofrendas elevadas de las cosas santas, que los hijos de Israel ofrecieren á Jehová, helas dado para ti, y para tus hijos y para tus hijas contigo, por estatuto perpetuo: pacto de sal perpetuo es delante de Jehová para ti y para tu simiente contigo."
+    },
+    {
+     "n": 20,
+     "texto": "Y Jehová dijo á Aarón: De la tierra de ellos no tendrás heredad, ni entre ellos tendrás parte: Yo soy tu parte y tu heredad en medio de los hijos de Israel."
+    },
+    {
+     "n": 21,
+     "texto": "Y he aquí yo he dado á los hijos de Leví todos los diezmos en Israel por heredad, por su ministerio, por cuanto ellos sirven en el ministerio del tabernáculo del testimonio."
+    },
+    {
+     "n": 22,
+     "texto": "Y no llegarán más los hijos de Israel al tabernáculo del testimonio, porque no lleven pecado, por el cual mueran."
+    },
+    {
+     "n": 23,
+     "texto": "Mas los Levitas harán el servicio del tabernáculo del testimonio, y ellos llevarán su iniquidad: estatuto perpetuo por vuestras edades; y no poseerán heredad entre los hijos de Israel."
+    },
+    {
+     "n": 24,
+     "texto": "Porque á los Levitas he dado por heredad los diezmos de los hijos de Israel, que ofrecerán á Jehová en ofrenda: por lo cual les he dicho: Entre los hijos de Israel no poseerán heredad."
+    },
+    {
+     "n": 25,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 26,
+     "texto": "Así hablarás á los Levitas, y les dirás: Cuando tomareis de los hijos de Israel los diezmos que os he dado de ellos por vuestra heredad, vosotros presentaréis de ellos en ofrenda mecida á Jehová el diezmo de los diezmos."
+    },
+    {
+     "n": 27,
+     "texto": "Y se os contará vuestra ofrenda como grano de la era, y como acopio del lagar."
+    },
+    {
+     "n": 28,
+     "texto": "Así ofreceréis también vosotros ofrenda á Jehová de todos vuestros diezmos que hubiereis recibido de los hijos de Israel; y daréis de ellos la ofrenda de Jehová á Aarón el sacerdote."
+    },
+    {
+     "n": 29,
+     "texto": "De todos vuestros dones ofreceréis toda ofrenda á Jehová; de todo lo mejor de ellos [ofreceréis] la porción que ha de ser consagrada."
+    },
+    {
+     "n": 30,
+     "texto": "Y les dirás: Cuando ofreciereis lo mejor de ellos, será contado á los Levitas por fruto de la era, y como fruto del lagar."
+    },
+    {
+     "n": 31,
+     "texto": "Y lo comeréis en cualquier lugar, vosotros y vuestra familia: pues es vuestra remuneración por vuestro ministerio en el tabernáculo del testimonio."
+    },
+    {
+     "n": 32,
+     "texto": "Y cuando vosotros hubiereis ofrecido de ello lo mejor suyo, no llevaréis por ello pecado: y no habéis de contaminar las cosas santas de los hijos de Israel, y no moriréis."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 19,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ habló á Moisés y á Aarón, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Esta es la ordenanza de la ley que Jehová ha prescrito, diciendo: Di á los hijos de Israel que te traigan una vaca bermeja, perfecta, en la cual no haya falta, sobre la cual no se haya puesto yugo:"
+    },
+    {
+     "n": 3,
+     "texto": "Y la daréis á Eleazar el sacerdote, y él la sacará fuera del campo, y harála degollar en su presencia."
+    },
+    {
+     "n": 4,
+     "texto": "Y tomará Eleazar el sacerdote de su sangre con su dedo, y rociará hacia la delantera del tabernáculo del testimonio con la sangre de ella siete veces;"
+    },
+    {
+     "n": 5,
+     "texto": "Y hará quemar la vaca ante sus ojos: su cuero y su carne y su sangre, con su estiércol, hará quemar."
+    },
+    {
+     "n": 6,
+     "texto": "Luego tomará el sacerdote palo de cedro, é hisopo, y escarlata, y lo echará en medio del fuego en que arde la vaca."
+    },
+    {
+     "n": 7,
+     "texto": "El sacerdote lavará luego sus vestidos, lavará también su carne con agua, y después entrará en el real; y será inmundo el sacerdote hasta la tarde."
+    },
+    {
+     "n": 8,
+     "texto": "Asimismo el que la quemó, lavará sus vestidos en agua, también lavará en agua su carne, y será inmundo hasta la tarde."
+    },
+    {
+     "n": 9,
+     "texto": "Y un hombre limpio recogerá las cenizas de la vaca, y las pondrá fuera del campo en lugar limpio, y las guardará la congregación de los hijos de Israel para el agua de separación: es una expiación."
+    },
+    {
+     "n": 10,
+     "texto": "Y el que recogió las cenizas de la vaca, lavará sus vestidos, y será inmundo hasta la tarde: y será á los hijos de Israel, y al extranjero que peregrina entre ellos, por estatuto perpetuo."
+    },
+    {
+     "n": 11,
+     "texto": "El que tocare muerto de cualquiera persona humana, siete días será inmundo:"
+    },
+    {
+     "n": 12,
+     "texto": "Este se purificará al tercer día con aquesta [agua], y al séptimo día será limpio; y si al tercer día no se purificare, no será limpio al séptimo día."
+    },
+    {
+     "n": 13,
+     "texto": "Cualquiera que tocare en muerto, en persona de hombre que estuviere muerto, y no se purificare, el tabernáculo de Jehová contaminó; y aquella persona será cortada de Israel: por cuanto el agua de la separación no fué rociada sobre él, inmundo será; y su inmundicia será sobre él."
+    },
+    {
+     "n": 14,
+     "texto": "Esta es la ley para cuando alguno muriere en la tienda: cualquiera que entrare en la tienda y todo el que estuviere en ella, será inmundo siete días."
+    },
+    {
+     "n": 15,
+     "texto": "Y todo vaso abierto, sobre el cual no hubiere tapadera bien ajustada, será inmundo."
+    },
+    {
+     "n": 16,
+     "texto": "Y cualquiera que tocare en muerto á cuchillo sobre la haz del campo, ó en muerto, ó en hueso humano, ó en sepulcro, siete días será inmundo."
+    },
+    {
+     "n": 17,
+     "texto": "Y para el inmundo tomarán de la ceniza de la quemada vaca de la expiación, y echarán sobre ella agua viva en un vaso:"
+    },
+    {
+     "n": 18,
+     "texto": "Y un hombre limpio tomará hisopo, y mojarálo en el agua, y rociará sobre la tienda, y sobre todos los muebles, y sobre las personas que allí estuvieren, y sobre aquel que hubiere tocado el hueso, ó el matado, ó el muerto, ó el sepulcro:"
+    },
+    {
+     "n": 19,
+     "texto": "Y el limpio rociará sobre el inmundo al tercero y al séptimo día: y cuando lo habrá purificado al día séptimo, él lavará luego sus vestidos, y á sí mismo se lavará con agua, y será limpio á la tarde."
+    },
+    {
+     "n": 20,
+     "texto": "Y el que fuere inmundo, y no se purificare, la tal persona será cortada de entre la congregación, por cuanto contaminó el tabernáculo de Jehová: no fué rociada sobre él el agua de separación: es inmundo."
+    },
+    {
+     "n": 21,
+     "texto": "Y les será por estatuto perpetuo: también el que rociare el agua de la separación lavará sus vestidos; y el que tocare el agua de la separación, será inmundo hasta la tarde."
+    },
+    {
+     "n": 22,
+     "texto": "Y todo lo que el inmundo tocare, será inmundo: y la persona que lo tocare, será inmunda hasta la tarde."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 20,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LLEGARON los hijos de Israel, toda la congregación, al desierto de Zin, en el mes primero, y asentó el pueblo en Cades; y allí murió María, y fué allí sepultada."
+    },
+    {
+     "n": 2,
+     "texto": "Y como no hubiese agua para la congregación, juntáronse contra Moisés y Aarón."
+    },
+    {
+     "n": 3,
+     "texto": "Y regañó el pueblo con Moisés, y hablaron diciendo: ¡Ojalá que nosotros hubiéramos muerto cuando perecieron nuestros hermanos delante de Jehová!"
+    },
+    {
+     "n": 4,
+     "texto": "¿Y por qué hiciste venir la congregación de Jehová á este desierto, para que muramos aquí nosotros y nuestras bestias?"
+    },
+    {
+     "n": 5,
+     "texto": "¿Y por qué nos has hecho subir de Egipto, para traernos á este mal lugar? No es lugar de sementera, de higueras, de viñas, ni granadas: ni aun de agua para beber."
+    },
+    {
+     "n": 6,
+     "texto": "Y fuéronse Moisés y Aarón de delante de la congregación á la puerta del tabernáculo del testimonio, y echáronse sobre sus rostros; y la gloria de Jehová apareció sobre ellos."
+    },
+    {
+     "n": 7,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 8,
+     "texto": "Toma la vara, y reune la congregación, tú y Aarón tu hermano, y hablad á la peña en ojos de ellos; y ella dará su agua, y les sacarás aguas de la peña, y darás de beber á la congregación, y á sus bestias."
+    },
+    {
+     "n": 9,
+     "texto": "Entonces Moisés tomó la vara de delante de Jehová, como él le mandó."
+    },
+    {
+     "n": 10,
+     "texto": "Y juntaron Moisés y Aarón la congregación delante de la peña, y díjoles: Oid ahora, rebeldes: ¿os hemos de hacer salir aguas de esta peña?"
+    },
+    {
+     "n": 11,
+     "texto": "Entonces alzó Moisés su mano, é hirió la peña con su vara dos veces: y salieron muchas aguas, y bebió la congregación, y sus bestias."
+    },
+    {
+     "n": 12,
+     "texto": "Y Jehová dijo á Moisés y á Aarón: Por cuanto no creísteis en mí, para santificarme en ojos de los hijos de Israel, por tanto, no meteréis esta congregación en la tierra que les he dado."
+    },
+    {
+     "n": 13,
+     "texto": "Estas son las aguas de la rencilla, por las cuales contendieron los hijos de Israel con Jehová, y él se santificó en ellos."
+    },
+    {
+     "n": 14,
+     "texto": "Y envió Moisés embajadores al rey de Edom desde Cades: Así dice Israel tu hermano: Tú has sabido todo el trabajo que nos ha venido:"
+    },
+    {
+     "n": 15,
+     "texto": "Cómo nuestros padres descendieron á Egipto, y estuvimos en Egipto largo tiempo, y los Egipcios nos maltrataron, y á nuestros padres;"
+    },
+    {
+     "n": 16,
+     "texto": "Y clamamos á Jehová, el cual oyó nuestra voz, y envió ángel, y sacónos de Egipto; y he aquí estamos en Cades, ciudad al extremo de tus confines:"
+    },
+    {
+     "n": 17,
+     "texto": "Rogámoste que pasemos por tu tierra; no pasaremos por labranza, ni por viña, ni beberemos agua de pozos: por el camino real iremos, sin apartarnos á la diestra ni á la siniestra, hasta que hayamos pasado tu término."
+    },
+    {
+     "n": 18,
+     "texto": "Y Edom le respondió: No pasarás por mi [país], de otra manera saldré contra ti armado."
+    },
+    {
+     "n": 19,
+     "texto": "Y los hijos de Israel dijeron: Por el camino seguido iremos; y si bebiéremos tus aguas yo y mis ganados, daré el precio de ellas: ciertamente sin [hacer] otra cosa, pasaré de seguida."
+    },
+    {
+     "n": 20,
+     "texto": "Y él respondió: No pasarás. Y salió Edom contra él con mucho pueblo, y mano fuerte."
+    },
+    {
+     "n": 21,
+     "texto": "No quiso, pues, Edom dejar pasar á Israel por su término, y apartóse Israel de él."
+    },
+    {
+     "n": 22,
+     "texto": "Y partidos de Cades los hijos de Israel, toda aquella congregación, vinieron al monte de Hor."
+    },
+    {
+     "n": 23,
+     "texto": "Y Jehová habló á Moisés y Aarón en el monte de Hor, en los confines de la tierra de Edom, diciendo:"
+    },
+    {
+     "n": 24,
+     "texto": "Aarón será reunido á sus pueblos; pues no entrará en la tierra que yo di á los hijos de Israel, por cuanto fuisteis rebeldes á mi mandamiento en las aguas de la rencilla."
+    },
+    {
+     "n": 25,
+     "texto": "Toma á Aarón y á Eleazar su hijo, y hazlos subir al monte de Hor;"
+    },
+    {
+     "n": 26,
+     "texto": "Y haz desnudar á Aarón sus vestidos, y viste de ellos á Eleazar su hijo; porque Aarón será reunido [á sus pueblos], y allí morirá."
+    },
+    {
+     "n": 27,
+     "texto": "Y Moisés hizo como Jehová le mandó: y subieron al monte de Hor á ojos de toda la congregación."
+    },
+    {
+     "n": 28,
+     "texto": "Y Moisés hizo desnudar á Aarón de sus vestidos y vistiólos á Eleazar su hijo: y Aarón murió allí en la cumbre del monte: y Moisés y Eleazar descendieron del monte."
+    },
+    {
+     "n": 29,
+     "texto": "Y viendo toda la congregación que Aarón era muerto, hiciéronle duelo por treinta días todas las familias de Israel."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 21,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y OYENDO el Cananeo, el rey de Arad, el cual habitaba al mediodía, que venía Israel por el camino de los centinelas, peleó con Israel, y tomó de él presa."
+    },
+    {
+     "n": 2,
+     "texto": "Entonces Israel hizo voto á Jehová, y dijo: Si en efecto entregares á este pueblo en mi mano, yo destruiré sus ciudades."
+    },
+    {
+     "n": 3,
+     "texto": "Y Jehová escuchó la voz de Israel, y entregó al Cananeo, y destruyólos á ellos y á sus ciudades; y llamó el nombre de aquel lugar Horma."
+    },
+    {
+     "n": 4,
+     "texto": "Y partieron del monte de Hor, camino del mar Bermejo, para rodear la tierra de Edom; y abatióse el ánimo del pueblo por el camino."
+    },
+    {
+     "n": 5,
+     "texto": "Y habló el pueblo contra Dios y Moisés: ¿Por qué nos hiciste subir de Egipto para que muramos en este desierto? que ni hay pan, ni agua, y nuestra alma tiene fastidio de este pan tan liviano."
+    },
+    {
+     "n": 6,
+     "texto": "Y Jehová envió entre el pueblo serpientes ardientes, que mordían al pueblo: y murió mucho pueblo de Israel."
+    },
+    {
+     "n": 7,
+     "texto": "Entonces el pueblo vino á Moisés, y dijeron: Pecado hemos por haber hablado contra Jehová, y contra ti: ruega á Jehová que quite de nosotros estas serpientes. Y Moisés oró por el pueblo."
+    },
+    {
+     "n": 8,
+     "texto": "Y Jehová dijo á Moisés: Hazte una serpiente ardiente, y ponla sobre la bandera: y será que cualquiera que fuere mordido y mirare á ella, vivirá."
+    },
+    {
+     "n": 9,
+     "texto": "Y Moisés hizo una serpiente de metal, y púsola sobre la bandera: y fué, que cuando alguna serpiente mordía á alguno, miraba á la serpiente de metal, y vivía."
+    },
+    {
+     "n": 10,
+     "texto": "Y partieron los hijos de Israel, y asentaron campo en Oboth."
+    },
+    {
+     "n": 11,
+     "texto": "Y partidos de Oboth, asentaron en Ije-abarim, en el desierto que está delante de Moab, al nacimiento del sol."
+    },
+    {
+     "n": 12,
+     "texto": "Partidos de allí, asentaron en la arroyada de Zared."
+    },
+    {
+     "n": 13,
+     "texto": "De allí movieron, y asentaron de la otra parte de Arnón, que está en el desierto, [y] que sale del término del Amorrheo; porque Arnón es término de Moab, entre Moab y el Amorrheo."
+    },
+    {
+     "n": 14,
+     "texto": "Por tanto se dice en el libro de las batallas de Jehová: Lo que hizo en el mar Bermejo, y en los arroyos de Arnón:"
+    },
+    {
+     "n": 15,
+     "texto": "Y á la corriente de los arroyos que va á parar en Ar, y descansa en el término de Moab."
+    },
+    {
+     "n": 16,
+     "texto": "Y de allí [vinieron] á Beer: este es el pozo del cual Jehová dijo á Moisés: Junta el pueblo, y les daré agua."
+    },
+    {
+     "n": 17,
+     "texto": "Entonces cantó Israel esta canción: Sube, oh pozo; á él cantad:"
+    },
+    {
+     "n": 18,
+     "texto": "Pozo, el cual cavaron los señores; caváronlo los príncipes del pueblo, y el legislador, con sus bordones. Y del desierto [vinieron] á Mathana:"
+    },
+    {
+     "n": 19,
+     "texto": "Y de Mathana á Nahaliel: y de Nahaliel á Bamoth:"
+    },
+    {
+     "n": 20,
+     "texto": "Y de Bamoth al valle que está en los campos de Moab, y á la cumbre de Pisga, que mira á Jesimón."
+    },
+    {
+     "n": 21,
+     "texto": "Y envió Israel embajadores á Sehón, rey de los Amorrheos, diciendo:"
+    },
+    {
+     "n": 22,
+     "texto": "Pasaré por tu tierra: no nos apartaremos por los labrados, ni por las viñas; no beberemos las aguas de los pozos: por el camino real iremos, hasta que pasemos tu término."
+    },
+    {
+     "n": 23,
+     "texto": "Mas Sehón no dejó pasar á Israel por su término: antes juntó Sehón todo su pueblo, y salió contra Israel en el desierto: y vino á Jahaz, y peleó contra Israel."
+    },
+    {
+     "n": 24,
+     "texto": "E hirióle Israel á filo de espada, y tomó su tierra desde Arnón hasta Jaboc, hasta los hijos de Ammón: porque el término de los hijos de Ammón era fuerte."
+    },
+    {
+     "n": 25,
+     "texto": "Y tomó Israel todas estas ciudades: y habitó Israel en todas las ciudades del Amorrheo, en Hesbón y en todas sus aldeas."
+    },
+    {
+     "n": 26,
+     "texto": "Porque Hesbón era la ciudad de Sehón, rey de los Amorrheos; el cual había tenido guerra antes con el rey de Moab, y tomado de su poder toda su tierra hasta Arnón."
+    },
+    {
+     "n": 27,
+     "texto": "Por tanto, dicen los proverbistas: Venid á Hesbón, edifíquese y repárese la ciudad de Sehón:"
+    },
+    {
+     "n": 28,
+     "texto": "Que fuego salió de Hesbón, y llama de la ciudad de Sehón, y consumió á Ar de Moab, á los señores de los altos de Arnón."
+    },
+    {
+     "n": 29,
+     "texto": "¡Ay de ti, Moab! Perecido has, pueblo de Chêmos: puso sus hijos en huída, y sus hijas en cautividad, por Sehón rey de los Amorrheos."
+    },
+    {
+     "n": 30,
+     "texto": "Mas devastamos el reino de ellos; pereció Hesbón hasta Dibón, y destruimos hasta Nopha y Medeba."
+    },
+    {
+     "n": 31,
+     "texto": "Así habitó Israel en la tierra del Amorrheo."
+    },
+    {
+     "n": 32,
+     "texto": "Y envió Moisés á reconocer á Jazer; y tomaron sus aldeas, y echaron al Amorrheo que estaba allí."
+    },
+    {
+     "n": 33,
+     "texto": "Y volvieron, y subieron camino de Basán, y salió contra ellos Og rey de Basán, él y todo su pueblo, para pelear en Edrei."
+    },
+    {
+     "n": 34,
+     "texto": "Entonces Jehová dijo á Moisés: No le tengas miedo, que en tu mano lo he dado, á él y á todo su pueblo, y á su tierra; y harás de él como hiciste de Sehón, rey de los Amorrheos, que habitaba en Hesbón."
+    },
+    {
+     "n": 35,
+     "texto": "E hirieron á él, y á sus hijos, y á toda su gente, sin que le quedara uno, y poseyeron su tierra."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 22,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y MOVIERON los hijos de Israel, y asentaron en los campos de Moab, de esta parte del Jordán de Jericó."
+    },
+    {
+     "n": 2,
+     "texto": "Y vió Balac, hijo de Zippor, todo lo que Israel había hecho al Amorrheo."
+    },
+    {
+     "n": 3,
+     "texto": "Y Moab temió mucho á causa del pueblo que era mucho; y angustióse Moab á causa de los hijos de Israel."
+    },
+    {
+     "n": 4,
+     "texto": "Y dijo Moab á los ancianos de Madián: Ahora lamerá esta gente todos nuestros contornos, como lame el buey la grama del campo. Y Balac, hijo de Zippor, era entonces rey de Moab."
+    },
+    {
+     "n": 5,
+     "texto": "Por tanto envió mensajeros á Balaam hijo de Beor, á Pethor, que está junto al río en la tierra de los hijos de su pueblo, para que lo llamasen, diciendo: Un pueblo ha salido de Egipto, y he aquí cubre la haz de la tierra, y habita delante de mí:"
+    },
+    {
+     "n": 6,
+     "texto": "Ven pues ahora, te ruego, maldíceme este pueblo, porque es más fuerte que yo: quizá podré yo herirlo, y echarlo de la tierra: que yo sé que el que tú bendijeres, será bendito, y el que tú maldijeres, será maldito."
+    },
+    {
+     "n": 7,
+     "texto": "Y fueron los ancianos de Moab, y los ancianos de Madián, con las dádivas de adivinación en su mano, y llegaron á Balaam, y le dijeron las palabras de Balac."
+    },
+    {
+     "n": 8,
+     "texto": "Y él les dijo: Reposad aquí esta noche, y yo os referiré las palabras, como Jehová me hablare. Así los príncipes de Moab se quedaron con Balaam."
+    },
+    {
+     "n": 9,
+     "texto": "Y vino Dios á Balaam, y díjole: ¿Qué varones son estos [que están] contigo?"
+    },
+    {
+     "n": 10,
+     "texto": "Y Balaam respondió á Dios: Balac hijo de Zippor, rey de Moab, ha enviado á mí [diciendo]:"
+    },
+    {
+     "n": 11,
+     "texto": "He aquí este pueblo que ha salido de Egipto, cubre la haz de la tierra: ven pues ahora, y maldícemelo; quizá podré pelear con él, y echarlo."
+    },
+    {
+     "n": 12,
+     "texto": "Entonces dijo Dios á Balaam: No vayas con ellos, ni maldigas al pueblo; porque es bendito."
+    },
+    {
+     "n": 13,
+     "texto": "Así Balaam se levantó por la mañana, y dijo á los príncipes de Balac: Volveos á vuestra tierra, porque Jehová no me quiere dejar ir con vosotros."
+    },
+    {
+     "n": 14,
+     "texto": "Y los príncipes de Moab se levantaron, y vinieron á Balac, y dijeron: Balaam no quiso venir con nosotros."
+    },
+    {
+     "n": 15,
+     "texto": "Y tornó Balac á enviar otra vez más príncipes, y más honorables que los [otros]."
+    },
+    {
+     "n": 16,
+     "texto": "Los cuales vinieron á Balaam, y dijéronle: Así dice Balac, hijo de Zippor: Ruégote que no dejes de venir á mí:"
+    },
+    {
+     "n": 17,
+     "texto": "Porque sin duda te honraré mucho, y haré todo lo que me dijeres: ven pues ahora, maldíceme á este pueblo."
+    },
+    {
+     "n": 18,
+     "texto": "Y Balaam respondió, y dijo á los siervos de Balac: Aunque Balac me diese su casa llena de plata y oro, no puedo traspasar la palabra de Jehová mi Dios, para hacer cosa chica ni grande."
+    },
+    {
+     "n": 19,
+     "texto": "Ruégoos por tanto ahora, que reposéis aquí esta noche, para que yo sepa qué me vuelve á decir Jehová."
+    },
+    {
+     "n": 20,
+     "texto": "Y vino Dios á Balaam de noche, y díjole: Si vinieren á llamarte hombres, levántate y ve con ellos: empero harás lo que yo te dijere."
+    },
+    {
+     "n": 21,
+     "texto": "Así Balaam se levantó por la mañana, y cinchó su asna, y fué con los príncipes de Moab."
+    },
+    {
+     "n": 22,
+     "texto": "Y el furor de Dios se encendió porque él iba; y el ángel de Jehová se puso en el camino por adversario suyo. Iba, pues, él montado sobre su asna, y con él dos mozos suyos."
+    },
+    {
+     "n": 23,
+     "texto": "Y el asna vió al ángel de Jehová, que estaba en el camino con su espada desnuda en su mano; y apartóse el asna del camino, é iba por el campo. Entonces hirió Balaam al asna para hacerla volver al camino."
+    },
+    {
+     "n": 24,
+     "texto": "Mas el ángel de Jehová se puso en una senda de viñas [que tenía] pared de una parte y pared de otra."
+    },
+    {
+     "n": 25,
+     "texto": "Y viendo el asna al ángel de Jehová, pegóse á la pared, y apretó contra la pared el pie de Balaam: y él volvió á herirla."
+    },
+    {
+     "n": 26,
+     "texto": "Y el ángel de Jehová pasó más allá, y púsose en una angostura, donde no había camino para apartarse ni á diestra ni á siniestra."
+    },
+    {
+     "n": 27,
+     "texto": "Y viendo el asna al ángel de Jehová, echóse debajo de Balaam: y enojóse Balaam, é hirió al asna con el palo."
+    },
+    {
+     "n": 28,
+     "texto": "Entonces Jehová abrió la boca al asna, la cual dijo á Balaam: ¿Qué te he hecho, que me has herido estas tres veces?"
+    },
+    {
+     "n": 29,
+     "texto": "Y Balaam respondió al asna: Porque te has burlado de mí: ¡ojalá tuviera espada en mi mano, que ahora te mataría!"
+    },
+    {
+     "n": 30,
+     "texto": "Y el asna dijo á Balaam: ¿No soy yo tu asna? sobre mí has cabalgado desde que tú me tienes hasta este día; ¿he acostumbrado á hacerlo así contigo? Y él respondió: No."
+    },
+    {
+     "n": 31,
+     "texto": "Entonces Jehová abrió los ojos á Balaam, y vió al ángel de Jehová que estaba en el camino, y [tenía] su espada desnuda en su mano. Y [Balaam] hizo reverencia, é inclinóse sobre su rostro."
+    },
+    {
+     "n": 32,
+     "texto": "Y el ángel de Jehová le dijo: ¿Por qué has herido tu asna estas tres veces? he aquí yo he salido para contrarrestarte, porque tu camino es perverso delante de mí:"
+    },
+    {
+     "n": 33,
+     "texto": "El asna me ha visto, y hase apartado luego de delante de mí estas tres veces: y si de mí no se hubiera apartado, yo también ahora te mataría á ti, y á ella dejaría viva."
+    },
+    {
+     "n": 34,
+     "texto": "Entonces Balaam dijo al ángel de Jehová: He pecado, que no sabía que tú te ponías delante de mí en el camino: mas ahora, si te parece mal, yo me volveré."
+    },
+    {
+     "n": 35,
+     "texto": "Y el ángel de Jehová dijo á Balaam: Ve con esos hombres: empero la palabra que yo te dijere, esa hablarás. Así Balaam fué con los príncipes de Balac."
+    },
+    {
+     "n": 36,
+     "texto": "Y oyendo Balac que Balaam venía, salió á recibirlo á la ciudad de Moab, que está junto al término de Arnón, que es el cabo de los confines."
+    },
+    {
+     "n": 37,
+     "texto": "Y Balac dijo á Balaam: ¿No envié yo á ti á llamarte? ¿por qué no has venido á mí? ¿no puedo yo honrarte?"
+    },
+    {
+     "n": 38,
+     "texto": "Y Balaam respondió á Balac: He aquí yo he venido á ti: mas ¿podré ahora hablar alguna cosa? La palabra que Dios pusiere en mi boca, esa hablaré."
+    },
+    {
+     "n": 39,
+     "texto": "Y fué Balaam con Balac, y vinieron á la ciudad de Husoth."
+    },
+    {
+     "n": 40,
+     "texto": "Y Balac hizo matar bueyes y ovejas, y envió á Balaam, y á los príncipes que estaban con él."
+    },
+    {
+     "n": 41,
+     "texto": "Y el día siguiente Balac tomó á Balaam, é hízolo subir á los altos de Baal, y desde allí vió la extremidad del pueblo."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 23,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y BALAAM dijo á Balac: Edifícame aquí siete altares, y prepárame aquí siete becerros y siete carneros."
+    },
+    {
+     "n": 2,
+     "texto": "Y Balac hizo como le dijo Balaam: y ofrecieron Balac y Balaam un becerro y un carnero en cada altar."
+    },
+    {
+     "n": 3,
+     "texto": "Y Balaam dijo á Balac: Ponte junto á tu holocausto, y yo iré: quizá Jehová me vendrá al encuentro, y cualquiera cosa que me mostrare, te la noticiaré. Y así se fué solo."
+    },
+    {
+     "n": 4,
+     "texto": "Y vino Dios al encuentro de Balaam, y [éste] le dijo: Siete altares he ordenado, y en cada altar he ofrecido un becerro y un carnero."
+    },
+    {
+     "n": 5,
+     "texto": "Y Jehová puso palabra en la boca de Balaam, y díjole: Vuelve á Balac, y has de hablar así."
+    },
+    {
+     "n": 6,
+     "texto": "Y volvió á él, y he aquí estaba él junto á su holocausto, él y todos los príncipes de Moab."
+    },
+    {
+     "n": 7,
+     "texto": "Y él tomó su parábola, y dijo: De Aram me trajo Balac, rey de Moab, de los montes del oriente: ven, maldíceme á Jacob; y ven, execra á Israel."
+    },
+    {
+     "n": 8,
+     "texto": "¿Por qué maldeciré yo al que Dios no maldijo? ¿y por qué he de execrar al que Jehová no ha execrado?"
+    },
+    {
+     "n": 9,
+     "texto": "Porque de la cumbre de las peñas lo veré, y desde los collados lo miraré: he aquí un pueblo que habitará confiado, y no será contado entre las gentes."
+    },
+    {
+     "n": 10,
+     "texto": "¿Quién contará el polvo de Jacob, o el número de la cuarta parte de Israel? Muera mi persona de la muerte de los rectos, y mi postrimería sea como la suya."
+    },
+    {
+     "n": 11,
+     "texto": "Entonces Balac dijo á Balaam: ¿Qué me has hecho? hete tomado para que maldigas á mis enemigos, y he aquí has proferido bendiciones."
+    },
+    {
+     "n": 12,
+     "texto": "Y él respondió, y dijo: ¿No observaré yo lo que Jehová pusiere en mi boca para decirlo?"
+    },
+    {
+     "n": 13,
+     "texto": "Y dijo Balac: Ruégote que vengas conmigo á otro lugar desde el cual lo veas; su extremidad solamente verás, que no lo verás todo; y desde allí me lo maldecirás."
+    },
+    {
+     "n": 14,
+     "texto": "Y llevólo al campo de Sophim, á la cumbre de Pisga, y edificó siete altares, y ofreció un becerro y un carnero en cada altar."
+    },
+    {
+     "n": 15,
+     "texto": "Entonces él dijo á Balac: Ponte aquí junto á tu holocausto, y yo iré á encontrar [á Dios] allí."
+    },
+    {
+     "n": 16,
+     "texto": "Y Jehová salió al encuentro de Balaam, y puso palabra en su boca, y díjole: Vuelve á Balac, y así has de decir."
+    },
+    {
+     "n": 17,
+     "texto": "Y vino á él, y he aquí que él estaba junto á su holocausto, y con él los príncipes de Moab: y díjole Balac: ¿Qué ha dicho Jehová?"
+    },
+    {
+     "n": 18,
+     "texto": "Entonces él tomó su parábola, y dijo: Balac, levántate y oye; escucha mis palabras, hijo de Zippor:"
+    },
+    {
+     "n": 19,
+     "texto": "Dios no es hombre, para que mienta; ni hijo de hombre para que se arrepienta: el dijo, ¿y no hará?; habló, ¿y no lo ejecutará?"
+    },
+    {
+     "n": 20,
+     "texto": "He aquí, yo he tomado bendición: y él bendijo, y no podré revocarla."
+    },
+    {
+     "n": 21,
+     "texto": "No ha notado iniquidad en Jacob, ni ha visto perversidad en Israel: Jehová su Dios es con él, y júbilo de rey en él."
+    },
+    {
+     "n": 22,
+     "texto": "Dios los ha sacado de Egipto; tiene fuerzas como de unicornio."
+    },
+    {
+     "n": 23,
+     "texto": "Porque en Jacob no hay agüero, ni adivinación en Israel: como ahora, será dicho de Jacob y de Israel: ¡Lo que ha hecho Dios!"
+    },
+    {
+     "n": 24,
+     "texto": "He aquí el pueblo, que como león se levantará, y como león se erguirá: no se echará hasta que coma la presa, y beba la sangre de los muertos."
+    },
+    {
+     "n": 25,
+     "texto": "Entonces Balac dijo á Balaam: Ya que no lo maldices, ni tampoco lo bendigas."
+    },
+    {
+     "n": 26,
+     "texto": "Y Balaam respondió, y dijo á Balac: ¿No te he dicho que todo lo que Jehová me dijere, aquello tengo de hacer?"
+    },
+    {
+     "n": 27,
+     "texto": "Y dijo Balac á Balaam: Ruégote que vengas, te llevaré á otro lugar; por ventura parecerá bien á Dios que desde allí me lo maldigas."
+    },
+    {
+     "n": 28,
+     "texto": "Y Balac llevó á Balaam á la cumbre de Peor, que mira hacia Jesimón."
+    },
+    {
+     "n": 29,
+     "texto": "Entonces Balaam dijo á Balac: Edifícame aquí siete altares, y prepárame aquí siete becerros y siete carneros."
+    },
+    {
+     "n": 30,
+     "texto": "Y Balac hizo como Balaam [le] dijo; y ofreció un becerro y un carnero en cada altar."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 24,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y COMO vió Balaam que parecía bien á Jehová que él bendijese á Israel, no fué, como la primera y segunda vez, á encuentro de agüeros, sino que puso su rostro hacia el desierto;"
+    },
+    {
+     "n": 2,
+     "texto": "Y alzando sus ojos, vió á Israel alojado por sus tribus; y el espíritu de Dios vino sobre él."
+    },
+    {
+     "n": 3,
+     "texto": "Entonces tomó su parábola, y dijo: Dijo Balaam hijo de Beor, y dijo el varón de ojos abiertos:"
+    },
+    {
+     "n": 4,
+     "texto": "Dijo el que oyó los dichos de Dios, el que vió la visión del Omnipotente; caído, mas abiertos los ojos:"
+    },
+    {
+     "n": 5,
+     "texto": "¡Cuán hermosas son tus tiendas, oh Jacob, tus habitaciones, oh Israel!"
+    },
+    {
+     "n": 6,
+     "texto": "Como arroyos están extendidas, como huertos junto al río, como lináloes plantados por Jehová, como cedros junto á las aguas."
+    },
+    {
+     "n": 7,
+     "texto": "De sus manos destilarán aguas, y su simiente será en muchas aguas: y ensalzarse ha su rey más que Agag, y su reino será ensalzado."
+    },
+    {
+     "n": 8,
+     "texto": "Dios lo sacó de Egipto; tiene fuerzas como de unicornio: comerá á las gentes sus enemigas, y desmenuzará sus huesos, y asaeteará con sus saetas."
+    },
+    {
+     "n": 9,
+     "texto": "Se encorvará para echarse como león, y como leona; ¿quién lo despertará? Benditos los que te bendijeren, y malditos los que te maldijeren."
+    },
+    {
+     "n": 10,
+     "texto": "Entonces se encendió la ira de Balac contra Balaam, y batiendo sus palmas le dijo: Para maldecir á mis enemigos te he llamado, y he aquí los has resueltamente bendecido ya tres veces."
+    },
+    {
+     "n": 11,
+     "texto": "Húyete, por tanto, ahora á tu lugar: yo dije que te honraría, mas he aquí que Jehová te ha privado de honra."
+    },
+    {
+     "n": 12,
+     "texto": "Y Balaam le respondió: ¿No lo declaré yo también á tus mensajeros que me enviaste, diciendo:"
+    },
+    {
+     "n": 13,
+     "texto": "Si Balac me diese su casa llena de plata y oro, yo no podré traspasar el dicho de Jehová para hacer cosa buena ni mala de mi arbitrio; [mas] lo que Jehová hablare, eso diré yo?"
+    },
+    {
+     "n": 14,
+     "texto": "He aquí yo me voy ahora á mi pueblo: por tanto, ven, te indicaré lo que este pueblo ha de hacer á tu pueblo en los postrimeros días."
+    },
+    {
+     "n": 15,
+     "texto": "Y tomó su parábola, y dijo: Dijo Balaam hijo de Beor, dijo el varón de ojos abiertos:"
+    },
+    {
+     "n": 16,
+     "texto": "Dijo el que oyó los dichos de Jehová, y el que sabe la ciencia del Altísimo, el que vió la visión del Omnipotente; caído, mas abiertos los ojos:"
+    },
+    {
+     "n": 17,
+     "texto": "Verélo, mas no ahora: lo miraré, mas no de cerca: saldrá ESTRELLA de Jacob, y levantaráse cetro de Israel, y herirá los cantones de Moab, y destruirá á todos los hijos de Seth."
+    },
+    {
+     "n": 18,
+     "texto": "Y será tomada Edom, será también tomada Seir por sus enemigos, e Israel se portará varonilmente."
+    },
+    {
+     "n": 19,
+     "texto": "Y el de Jacob se enseñoreará, y destruirá de la ciudad lo que quedare."
+    },
+    {
+     "n": 20,
+     "texto": "Y viendo á Amalec, tomó su parábola, y dijo: Amalec, cabeza de gentes; mas su postrimería perecerá para siempre."
+    },
+    {
+     "n": 21,
+     "texto": "Y viendo al Cineo, tomó su parábola, y dijo: Fuerte es tu habitación, pon en la peña tu nido:"
+    },
+    {
+     "n": 22,
+     "texto": "Que el Cineo será echado, cuando Assur te llevará cautivo."
+    },
+    {
+     "n": 23,
+     "texto": "Todavía tomó su parábola, y dijo: ¡Ay! ¿quién vivirá cuando hiciere Dios estas cosas?"
+    },
+    {
+     "n": 24,
+     "texto": "Y [vendrán] navíos de la costa de Cittim, y afligirán á Assur, afligirán también á Eber: mas él también perecerá para siempre."
+    },
+    {
+     "n": 25,
+     "texto": "Entonces se levantó Balaam, y se fué, y volvióse á su lugar: y también Balac se fué por su camino."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 25,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y REPOSÓ Israel en Sittim, y el pueblo empezó á fornicar con las hijas de Moab:"
+    },
+    {
+     "n": 2,
+     "texto": "Las cuales llamaron al pueblo á los sacrificios de sus dioses: y el pueblo comió, é inclinóse á sus dioses."
+    },
+    {
+     "n": 3,
+     "texto": "Y allegóse el pueblo á Baal-peor; y el furor de Jehová se encendió contra Israel."
+    },
+    {
+     "n": 4,
+     "texto": "Y Jehová dijo á Moisés: Toma todos los príncipes del pueblo, y ahórcalos á Jehová delante del sol; y la ira del furor de Jehová se apartará de Israel."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces Moisés dijo á los jueces de Israel: Matad cada uno á aquellos de los suyos que se han allegado á Baal-peor."
+    },
+    {
+     "n": 6,
+     "texto": "Y he aquí un varón de los hijos de Israel vino y trajo una Madianita á sus hermanos, á ojos de Moisés y de toda la congregación de los hijos de Israel, llorando ellos á la puerta del tabernáculo del testimonio."
+    },
+    {
+     "n": 7,
+     "texto": "Y viólo Phinees, hijo de Eleazar, hijo de Aarón el sacerdote, y levantóse de en medio de la congregación, y tomó una lanza en su mano:"
+    },
+    {
+     "n": 8,
+     "texto": "Y fué tras el varón de Israel á la tienda, y alanceólos á ambos, al varón de Israel, y á la mujer por su vientre. Y cesó la mortandad de los hijos de Israel."
+    },
+    {
+     "n": 9,
+     "texto": "Y murieron de aquella mortandad veinte y cuatro mil."
+    },
+    {
+     "n": 10,
+     "texto": "Entonces Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 11,
+     "texto": "Phinees, hijo de Eleazar, hijo de Aarón el sacerdote, ha hecho tornar mi furor de los hijos de Israel, llevado de celo entre ellos: por lo cual yo no he consumido en mi celo á los hijos de Israel."
+    },
+    {
+     "n": 12,
+     "texto": "Por tanto di[les]: He aquí yo establezco mi pacto de paz con él;"
+    },
+    {
+     "n": 13,
+     "texto": "Y tendrá él, y su simiente después de él, el pacto del sacerdocio perpetuo; por cuanto tuvo celo por su Dios, é hizo expiación por los hijos de Israel."
+    },
+    {
+     "n": 14,
+     "texto": "Y el nombre del varón muerto, que fué muerto con la Madianita, era Zimri hijo de Salu, jefe de una familia de la tribu de Simeón."
+    },
+    {
+     "n": 15,
+     "texto": "Y el nombre de la mujer Madianita muerta, era Cozbi, hija de Zur, príncipe de pueblos, padre de familia en Madián."
+    },
+    {
+     "n": 16,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 17,
+     "texto": "Hostilizaréis á los Madianitas, y los heriréis:"
+    },
+    {
+     "n": 18,
+     "texto": "Por cuanto ellos os afligieron á vosotros con sus ardides, con que os han engañado en el negocio de Peor, y en el negocio de Cozbi, hija del príncipe de Madián, su hermana, la cual fué muerta el día de la mortandad por causa de Peor."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 26,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ después de la mortandad, que Jehová habló á Moisés, y á Eleazar hijo del sacerdote Aarón, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Tomad la suma de toda la congregación de los hijos de Israel, de veinte años arriba, por las casas de sus padres, todos los que puedan salir á la guerra en Israel."
+    },
+    {
+     "n": 3,
+     "texto": "Y Moisés y Eleazar el sacerdote hablaron con ellos en los campos de Moab, junto al Jordán de Jericó, diciendo:"
+    },
+    {
+     "n": 4,
+     "texto": "Contaréis el pueblo de veinte años arriba, como mandó Jehová á Moisés y á los hijos de Israel, que habían salido de tierra de Egipto."
+    },
+    {
+     "n": 5,
+     "texto": "Rubén primogénito de Israel: los hijos de Rubén: Hanoc, del cual era la familia de los Hanochîtas; de Phallú, la familia de los Phalluitas;"
+    },
+    {
+     "n": 6,
+     "texto": "De Hesrón, la familia de los Hesronitas; de Carmi, la familia de los Carmitas."
+    },
+    {
+     "n": 7,
+     "texto": "Estas son las familias de los Rubenitas: y sus contados fueron cuarenta y tres mil setecientos y treinta."
+    },
+    {
+     "n": 8,
+     "texto": "Y los hijos de Phallú: Eliab."
+    },
+    {
+     "n": 9,
+     "texto": "Y los hijos de Eliab: Nemuel, y Dathán, y Abiram. Estos Dathán y Abiram fueron los del consejo de la congregación, que hicieron el motín contra Moisés y Aarón con la compañía de Coré, cuando se amotinaron contra Jehová;"
+    },
+    {
+     "n": 10,
+     "texto": "Que la tierra abrió su boca y tragó á ellos y á Coré, cuando aquella compañía murió, cuando consumió el fuego doscientos y cincuenta varones, los cuales fueron por señal."
+    },
+    {
+     "n": 11,
+     "texto": "Mas los hijos de Coré no murieron."
+    },
+    {
+     "n": 12,
+     "texto": "Los hijos de Simeón por sus familias: de Nemuel, la familia de los Nemuelitas; de Jamín, la familia de los Jaminitas; de Jachîn, la familia de los Jachînitas;"
+    },
+    {
+     "n": 13,
+     "texto": "De Zera, la familia de los Zeraitas; de Saul, la familia de los Saulitas."
+    },
+    {
+     "n": 14,
+     "texto": "Estas son las familias de los Simeonitas, veinte y dos mil y doscientos."
+    },
+    {
+     "n": 15,
+     "texto": "Los hijos de Gad por sus familias: de Zephón, la familia de los Zephonitas; de Aggi, la familia de los Aggitas; de Suni, la familia de los Sunitas;"
+    },
+    {
+     "n": 16,
+     "texto": "De Ozni, la familia de los Oznitas; de Eri, la familia de los Eritas;"
+    },
+    {
+     "n": 17,
+     "texto": "De Aroz, la familia de los Aroditas; de Areli, la familia de los Arelitas."
+    },
+    {
+     "n": 18,
+     "texto": "Estas son las familias de Gad, por sus contados, cuarenta mil y quinientos."
+    },
+    {
+     "n": 19,
+     "texto": "Los hijos de Judá: Er y Onán; y Er y Onán murieron en la tierra de Canaán."
+    },
+    {
+     "n": 20,
+     "texto": "Y fueron los hijos de Judá por sus familias: de Sela, la familia de los Selaitas; de Phares, la familia de los Pharesitas; de Zera, la familia de los Zeraitas."
+    },
+    {
+     "n": 21,
+     "texto": "Y fueron los hijos de Phares: de Hesrón, la familia de los Hesronitas; de Hamul, la familia de los Hamulitas."
+    },
+    {
+     "n": 22,
+     "texto": "Estas son las familias de Judá, por sus contados, setenta y seis mil y quinientos."
+    },
+    {
+     "n": 23,
+     "texto": "Los hijos de Issachâr por sus familias: de Thola, la familia de los Tholaitas; de Puá la familia de los Puanitas;"
+    },
+    {
+     "n": 24,
+     "texto": "De Jasub, la familia de los Jasubitas; de Simron, la familia de los Simronitas."
+    },
+    {
+     "n": 25,
+     "texto": "Estas son las familias de Issachâr, por sus contados, sesenta y cuatro mil y trescientos."
+    },
+    {
+     "n": 26,
+     "texto": "Los hijos de Zabulón por sus familias: de Sered, la familia de los Sereditas; de Elón, la familia de los Elonitas; de Jalel, la familia de los Jalelitas."
+    },
+    {
+     "n": 27,
+     "texto": "Estas son las familias de los Zabulonitas, por sus contados, sesenta mil y quinientos."
+    },
+    {
+     "n": 28,
+     "texto": "Los hijos de José por sus familias: Manasés y Ephraim."
+    },
+    {
+     "n": 29,
+     "texto": "Los hijos de Manasés: de Machîr, la familia de los Machîritas; y Machîr engendró á Galaad; de Galaad, la familia de los Galaaditas."
+    },
+    {
+     "n": 30,
+     "texto": "Estos son los hijos de Galaad: de Jezer, la familia de los Jezeritas; de Helec, la familia de los Helecitas;"
+    },
+    {
+     "n": 31,
+     "texto": "De Asriel, la familia de los Asrielitas: de Sechêm, la familia de los Sechêmitas;"
+    },
+    {
+     "n": 32,
+     "texto": "De Semida, la familia de los Semidaitas; de Hepher, la familia de los Hepheritas."
+    },
+    {
+     "n": 33,
+     "texto": "Y Salphaad, hijo de Hepher, no tuvo hijos sino hijas: y los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa."
+    },
+    {
+     "n": 34,
+     "texto": "Estas son las familias de Manasés; y sus contados, cincuenta y dos mil y setecientos."
+    },
+    {
+     "n": 35,
+     "texto": "Estos son los hijos de Ephraim por sus familias: de Suthala, la familia de los Suthalaitas; de Bechêr, la familia de los Bechêritas; de Tahan, la familia de los Tahanitas."
+    },
+    {
+     "n": 36,
+     "texto": "Y estos son los hijos de Suthala: de Herán, la familia de los Heranitas."
+    },
+    {
+     "n": 37,
+     "texto": "Estas son las familias de los hijos de Ephraim, por sus contados, treinta y dos mil y quinientos. Estos son los hijos de José por sus familias."
+    },
+    {
+     "n": 38,
+     "texto": "Los hijos de Benjamín por sus familias: de Bela, la familia de los Belaitas; de Asbel, la familia de los Asbelitas; de Achîram, la familia de los Achîramitas;"
+    },
+    {
+     "n": 39,
+     "texto": "De Supham, la familia de los Suphamitas; de Hupham, la familia de los Huphamitas."
+    },
+    {
+     "n": 40,
+     "texto": "Y los hijos de Bela fueron Ard y Naamán: [de Ard], la familia de los Arditas; de Naamán, la familia de los Naamanitas."
+    },
+    {
+     "n": 41,
+     "texto": "Estos son los hijos de Benjamín por sus familias; y sus contados, cuarenta y cinco mil y seiscientos."
+    },
+    {
+     "n": 42,
+     "texto": "Estos son los hijos de Dan por sus familias: de Suham, la familia de los Suhamitas. Estas son las familias de Dan por sus familias."
+    },
+    {
+     "n": 43,
+     "texto": "Todas las familias de los Suhamitas, por sus contados, sesenta y cuatro mil y cuatrocientos."
+    },
+    {
+     "n": 44,
+     "texto": "Los hijos de Aser por sus familias: de Imna, la familia de los Imnaitas; de Issui, la familia de los Issuitas; de Beria, la familia de los Beriaitas."
+    },
+    {
+     "n": 45,
+     "texto": "Los hijos de Beria: de Heber, la familia de los Heberitas; de Malchîel, la familia de los Malchîelitas."
+    },
+    {
+     "n": 46,
+     "texto": "Y el nombre de la hija de Aser fué Sera."
+    },
+    {
+     "n": 47,
+     "texto": "Estas son las familias de los hijos de Aser, por sus contados, cincuenta y tres mil y cuatrocientos."
+    },
+    {
+     "n": 48,
+     "texto": "Los hijos de Nephtalí por sus familias: de Jahzeel, la familia de los Jahzeelitas; de Guni, la familia de los Gunitas;"
+    },
+    {
+     "n": 49,
+     "texto": "De Jeser, la familia de los Jeseritas; de Sillem, la familia de los Sillemitas."
+    },
+    {
+     "n": 50,
+     "texto": "Estas son las familias de Nephtalí por sus familias; y sus contados, cuarenta y cinco mil y cuatrocientos."
+    },
+    {
+     "n": 51,
+     "texto": "Estos son los contados de los hijos de Israel, seiscientos y un mil setecientos y treinta."
+    },
+    {
+     "n": 52,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 53,
+     "texto": "A estos se repartirá la tierra en heredad, por la cuenta de los nombres."
+    },
+    {
+     "n": 54,
+     "texto": "A los más darás mayor heredad, y á los menos menor; y á cada uno se le dará su heredad conforme á sus contados."
+    },
+    {
+     "n": 55,
+     "texto": "Empero la tierra será repartida por suerte; y por los nombres de las tribus de sus padres heredarán."
+    },
+    {
+     "n": 56,
+     "texto": "Conforme á la suerte será repartida su heredad entre el grande y el pequeño."
+    },
+    {
+     "n": 57,
+     "texto": "Y los contados de los Levitas por sus familias son estos: de Gersón, la familia de los Gersonitas; de Coath, la familia de los Coathitas; de Merari, la familia de los Meraritas."
+    },
+    {
+     "n": 58,
+     "texto": "Estas son las familias de los Levitas: la familia de los Libnitas, la familia de los Hebronitas, la familia de los Mahalitas, la familia de los Musitas, la familia de los Coritas. Y Coath engendró á Amram."
+    },
+    {
+     "n": 59,
+     "texto": "Y la mujer de Amram se llamó Jochâbed, hija de Leví, la cual nació á Leví en Egipto: ésta parió de Amram á Aarón y á Moisés, y á María su hermana."
+    },
+    {
+     "n": 60,
+     "texto": "Y á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar."
+    },
+    {
+     "n": 61,
+     "texto": "Mas Nadab y Abiú murieron, cuando ofrecieron fuego extraño delante de Jehová."
+    },
+    {
+     "n": 62,
+     "texto": "Y los contados de los Levitas fueron veinte y tres mil, todos varones de un mes arriba: porque no fueron contados entre los hijos de Israel, por cuanto no les había de ser dada heredad entre los hijos de Israel."
+    },
+    {
+     "n": 63,
+     "texto": "Estos son los contados por Moisés y Eleazar el sacerdote, los cuales contaron los hijos de Israel en los campos de Moab, junto al Jordán de Jericó."
+    },
+    {
+     "n": 64,
+     "texto": "Y entre estos ninguno hubo de los contados por Moisés y Aarón el sacerdote, los cuales contaron á los hijos de Israel en el desierto de Sinaí."
+    },
+    {
+     "n": 65,
+     "texto": "Porque Jehová les dijo: Han de morir en el desierto: y no quedó varón de ellos, sino Caleb hijo de Jephone, y Josué hijo de Nun."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 27,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LAS hijas de Salphaad, hijo de Hepher, hijo de Galaad, hijo de Machîr, hijo de Manasés, de las familias de Manasés, hijo de José, los nombres de las cuales eran Maala, y Noa, y Hogla, y Milca, y Tirsa, llegaron;"
+    },
+    {
+     "n": 2,
+     "texto": "Y presentáronse delante de Moisés, y delante del sacerdote Eleazar, y delante de los príncipes, y de toda la congregación, á la puerta del tabernáculo del testimonio, y dijeron:"
+    },
+    {
+     "n": 3,
+     "texto": "Nuestro padre murió en el desierto, el cual no estuvo en la junta que se reunió contra Jehová en la compañía de Coré: sino que en su pecado murió, y no tuvo hijos."
+    },
+    {
+     "n": 4,
+     "texto": "¿Por qué será quitado el nombre de nuestro padre de entre su familia, por no haber tenido hijo? Danos heredad entre los hermanos de nuestro padre."
+    },
+    {
+     "n": 5,
+     "texto": "Y Moisés llevó su causa delante de Jehová."
+    },
+    {
+     "n": 6,
+     "texto": "Y Jehová respondió á Moisés, diciendo:"
+    },
+    {
+     "n": 7,
+     "texto": "Bien dicen las hijas de Salphaad: has de darles posesión de heredad entre los hermanos de su padre; y traspasarás la heredad de su padre á ellas."
+    },
+    {
+     "n": 8,
+     "texto": "Y á los hijos de Israel hablarás, diciendo: Cuando alguno muriere sin hijos, traspasaréis su herencia á su hija:"
+    },
+    {
+     "n": 9,
+     "texto": "Y si no tuviere hija, daréis su herencia á sus hermanos:"
+    },
+    {
+     "n": 10,
+     "texto": "Y si no tuviere hermanos, daréis su herencia á los hermanos de su padre."
+    },
+    {
+     "n": 11,
+     "texto": "Y si su padre no tuviere hermanos, daréis su herencia á su pariente más cercano de su linaje, el cual la poseerá: y será á los hijos de Israel por estatuto de derecho, como Jehová mandó á Moisés."
+    },
+    {
+     "n": 12,
+     "texto": "Y Jehová dijo á Moisés: Sube á este monte Abarim, y verás la tierra que he dado á los hijos de Israel."
+    },
+    {
+     "n": 13,
+     "texto": "Y después que la habrás visto, tú también serás reunido á tus pueblos, como fué reunido tu hermano Aarón:"
+    },
+    {
+     "n": 14,
+     "texto": "Pues fuisteis rebeldes á mi dicho en el desierto de Zin, en la rencilla de la congregación, para santificarme en las aguas á ojos de ellos. Estas son las aguas de la rencilla de Cades en el desierto de Zin."
+    },
+    {
+     "n": 15,
+     "texto": "Entonces respondió Moisés á Jehová, diciendo:"
+    },
+    {
+     "n": 16,
+     "texto": "Ponga Jehová, Dios de los espíritus de toda carne, varón sobre la congregación,"
+    },
+    {
+     "n": 17,
+     "texto": "Que salga delante de ellos, y que entre delante de ellos, que los saque y los introduzca; porque la congregación de Jehová no sea como ovejas sin pastor."
+    },
+    {
+     "n": 18,
+     "texto": "Y Jehová dijo á Moisés: Toma á Josué hijo de Nun, varón en el cual hay espíritu, y pondrás tu mano sobre él;"
+    },
+    {
+     "n": 19,
+     "texto": "Y ponerlo has delante de Eleazar el sacerdote, y delante de toda la congregación; y le darás órdenes en presencia de ellos."
+    },
+    {
+     "n": 20,
+     "texto": "Y pondrás de tu dignidad sobre él, para que toda la congregación de los hijos de Israel [le] obedezcan."
+    },
+    {
+     "n": 21,
+     "texto": "Y él estará delante de Eleazar el sacerdote, y á él preguntará por el juicio del Urim delante de Jehová: por el dicho de él saldrán, y por el dicho de él entrarán, él, y todos los hijos de Israel con él, y toda la congregación."
+    },
+    {
+     "n": 22,
+     "texto": "Y Moisés hizo como Jehová le había mandado; que tomó á Josué, y le puso delante de Eleazar el sacerdote, y de toda la congregación:"
+    },
+    {
+     "n": 23,
+     "texto": "Y puso sobre él sus manos, y dióle órdenes, como Jehová había mandado por mano de Moisés."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 28,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Manda á los hijos de Israel, y diles: Mi ofrenda, mi pan con mis ofrendas encendidas en olor á mí agradable, guardaréis, ofreciéndomelo á su tiempo."
+    },
+    {
+     "n": 3,
+     "texto": "Y les dirás: Esta es la ofrenda encendida que ofreceréis á Jehová: dos corderos sin tacha de un año, cada un día, [será] el holocausto continuo."
+    },
+    {
+     "n": 4,
+     "texto": "El un cordero ofrecerás por la mañana, y el otro cordero ofrecerás entre las dos tardes:"
+    },
+    {
+     "n": 5,
+     "texto": "Y la décima de un epha de flor de harina, amasada con una cuarta de un hin de aceite molido, en presente."
+    },
+    {
+     "n": 6,
+     "texto": "Es holocausto continuo, que fué hecho en el monte de Sinaí en olor de suavidad, ofrenda encendida á Jehová."
+    },
+    {
+     "n": 7,
+     "texto": "Y su libación, la cuarta de un hin con cada cordero: derramarás libación de superior vino á Jehová en el santuario."
+    },
+    {
+     "n": 8,
+     "texto": "Y ofrecerás el segundo cordero entre las dos tardes: conforme á la ofrenda de la mañana, y conforme á su libación ofrecerás, ofrenda encendida en olor de suavidad á Jehová."
+    },
+    {
+     "n": 9,
+     "texto": "Mas el día del sábado dos corderos de un año sin defecto, y dos décimas de flor de harina amasada con aceite, por presente, con su libación:"
+    },
+    {
+     "n": 10,
+     "texto": "Es el holocausto del sábado en cada sábado, además del holocausto continuo, y su libación."
+    },
+    {
+     "n": 11,
+     "texto": "Y en los principios de vuestros meses ofreceréis en holocausto á Jehová dos becerros de la vacada, y un carnero, y siete corderos de un año sin defecto;"
+    },
+    {
+     "n": 12,
+     "texto": "Y tres décimas de flor de harina amasada con aceite, por presente con cada becerro; y dos décimas de flor de harina amasada con aceite, por presente con cada carnero;"
+    },
+    {
+     "n": 13,
+     "texto": "Y una décima de flor de harina amasada con aceite, en ofrenda por presente con cada cordero: holocausto de olor suave, ofrenda encendida á Jehová."
+    },
+    {
+     "n": 14,
+     "texto": "Y sus libaciones de vino, medio hin con cada becerro, y el tercio de un hin con cada carnero, y la cuarta de un hin con cada cordero. Este es el holocausto de cada mes por todos los meses del año."
+    },
+    {
+     "n": 15,
+     "texto": "Y un macho cabrío en expiación se ofrecerá á Jehová, además del holocausto continuo con su libación."
+    },
+    {
+     "n": 16,
+     "texto": "Mas en el mes primero, á los catorce del mes será la pascua de Jehová."
+    },
+    {
+     "n": 17,
+     "texto": "Y á los quince días de aqueste mes, la solemnidad: por siete días se comerán ázimos."
+    },
+    {
+     "n": 18,
+     "texto": "El primer día, santa convocación; ninguna obra servil haréis:"
+    },
+    {
+     "n": 19,
+     "texto": "Y ofreceréis por ofrenda encendida en holocausto á Jehová dos becerros de la vacada, y un carnero, y siete corderos de un año: sin defecto los tomaréis:"
+    },
+    {
+     "n": 20,
+     "texto": "Y su presente de harina amasada con aceite: tres décimas con cada becerro, y dos décimas con cada carnero ofreceréis;"
+    },
+    {
+     "n": 21,
+     "texto": "Con cada uno de los siete corderos ofreceréis una décima;"
+    },
+    {
+     "n": 22,
+     "texto": "Y un macho cabrío por expiación, para reconciliaros."
+    },
+    {
+     "n": 23,
+     "texto": "Esto ofreceréis además del holocausto de la mañana, que es el holocausto continuo."
+    },
+    {
+     "n": 24,
+     "texto": "Conforme á esto ofreceréis cada uno de los siete días, vianda y ofrenda encendida en olor de suavidad á Jehová; ofrecerse ha, además del holocausto continuo, con su libación."
+    },
+    {
+     "n": 25,
+     "texto": "Y el séptimo día tendréis santa convocación: ninguna obra servil haréis."
+    },
+    {
+     "n": 26,
+     "texto": "Además el día de las primicias, cuando ofreciereis presente nuevo á Jehová en vuestras semanas, tendréis santa convocación: ninguna obra servil haréis:"
+    },
+    {
+     "n": 27,
+     "texto": "Y ofreceréis en holocausto, en olor de suavidad á Jehová, dos becerros de la vacada, un carnero, siete corderos de un año:"
+    },
+    {
+     "n": 28,
+     "texto": "Y el presente de ellos, flor de harina amasada con aceite, tres décimas con cada becerro, dos décimas con cada carnero,"
+    },
+    {
+     "n": 29,
+     "texto": "Con cada uno de los siete corderos una décima;"
+    },
+    {
+     "n": 30,
+     "texto": "Un macho cabrío, para hacer expiación por vosotros."
+    },
+    {
+     "n": 31,
+     "texto": "Los ofreceréis, además del holocausto continuo con sus presentes, y sus libaciones: sin defecto los tomaréis."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 29,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y EL séptimo mes, al primero del mes tendréis santa convocación: ninguna obra servil haréis; os será día de sonar las trompetas."
+    },
+    {
+     "n": 2,
+     "texto": "Y ofreceréis holocausto por olor de suavidad á Jehová, un becerro de la vacada, un carnero, siete corderos de un año sin defecto;"
+    },
+    {
+     "n": 3,
+     "texto": "Y el presente de ellos, de flor de harina amasada con aceite, tres décimas con cada becerro, dos décimas con cada carnero,"
+    },
+    {
+     "n": 4,
+     "texto": "Y con cada uno de los siete corderos, una décima;"
+    },
+    {
+     "n": 5,
+     "texto": "Y un macho cabrío por expiación, para reconciliaros:"
+    },
+    {
+     "n": 6,
+     "texto": "Además del holocausto del mes, y su presente, y el holocausto continuo y su presente, y sus libaciones, conforme á su ley, por ofrenda encendida á Jehová en olor de suavidad."
+    },
+    {
+     "n": 7,
+     "texto": "Y en el diez de este mes séptimo tendréis santa convocación, y afligiréis vuestras almas: ninguna obra haréis:"
+    },
+    {
+     "n": 8,
+     "texto": "Y ofreceréis en holocausto á Jehová por olor de suavidad, un becerro de la vacada, un carnero, siete corderos de un año; sin defecto los tomaréis:"
+    },
+    {
+     "n": 9,
+     "texto": "Y sus presentes, flor de harina amasada con aceite, tres décimas con cada becerro, dos décimas con cada carnero,"
+    },
+    {
+     "n": 10,
+     "texto": "Y con cada uno de los siete corderos, una décima;"
+    },
+    {
+     "n": 11,
+     "texto": "Un macho cabrío por expiación: además de la ofrenda de las expiaciones por el pecado, y del holocausto continuo, y de sus presentes, y de sus libaciones."
+    },
+    {
+     "n": 12,
+     "texto": "También á los quince días del mes séptimo tendréis santa convocación; ninguna obra servil haréis, y celebraréis solemnidad á Jehová por siete días;"
+    },
+    {
+     "n": 13,
+     "texto": "Y ofreceréis en holocausto, en ofrenda encendida á Jehová en olor de suavidad, trece becerros de la vacada, dos carneros, catorce corderos de un año: han de ser sin defecto;"
+    },
+    {
+     "n": 14,
+     "texto": "Y los presentes de ellos, de flor de harina amasada con aceite, tres décimas con cada uno de los trece becerros, dos décimas con cada uno de los dos carneros,"
+    },
+    {
+     "n": 15,
+     "texto": "Y con cada uno de los catorce corderos, una décima;"
+    },
+    {
+     "n": 16,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, su presente y su libación."
+    },
+    {
+     "n": 17,
+     "texto": "Y el segundo día, doce becerros de la vacada, dos carneros, catorce corderos de un año sin defecto;"
+    },
+    {
+     "n": 18,
+     "texto": "Y sus presentes y sus libaciones con los becerros, con los carneros, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 19,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, y su presente y su libación."
+    },
+    {
+     "n": 20,
+     "texto": "Y el día tercero, once becerros, dos carneros, catorce corderos de un año sin defecto;"
+    },
+    {
+     "n": 21,
+     "texto": "Y sus presentes y sus libaciones con los becerros, con los carneros, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 22,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, y su presente y su libación."
+    },
+    {
+     "n": 23,
+     "texto": "Y el cuarto día, diez becerros, dos carneros, catorce corderos de un año sin defecto;"
+    },
+    {
+     "n": 24,
+     "texto": "Sus presentes y sus libaciones con los becerros, con los carneros, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 25,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, su presente y su libación."
+    },
+    {
+     "n": 26,
+     "texto": "Y el quinto día, nueve becerros, dos carneros, catorce corderos de un año sin defecto;"
+    },
+    {
+     "n": 27,
+     "texto": "Y sus presentes y sus libaciones con los becerros, con los carneros, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 28,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, su presente y su libación."
+    },
+    {
+     "n": 29,
+     "texto": "Y el sexto día, ocho becerros, dos carneros, catorce corderos de un año sin defecto;"
+    },
+    {
+     "n": 30,
+     "texto": "Y sus presentes y sus libaciones con los becerros, con los carneros, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 31,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, su presente y sus libaciones."
+    },
+    {
+     "n": 32,
+     "texto": "Y el séptimo día, siete becerros, dos carneros, catorce corderos de un año sin defecto;"
+    },
+    {
+     "n": 33,
+     "texto": "Y sus presentes y sus libaciones con los becerros, con los carneros, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 34,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, con su presente y su libación."
+    },
+    {
+     "n": 35,
+     "texto": "El octavo día tendréis solemnidad: ninguna obra servil haréis:"
+    },
+    {
+     "n": 36,
+     "texto": "Y ofreceréis en holocausto, en ofrenda encendida de olor suave á Jehová, un novillo, un carnero, siete corderos de un año sin defecto;"
+    },
+    {
+     "n": 37,
+     "texto": "Sus presentes y sus libaciones con el novillo, con el carnero, y con los corderos, según el número de ellos, conforme á la ley;"
+    },
+    {
+     "n": 38,
+     "texto": "Y un macho cabrío por expiación: además del holocausto continuo, con su presente y su libación."
+    },
+    {
+     "n": 39,
+     "texto": "Estas cosas ofreceréis á Jehová en vuestras solemnidades, además de vuestros votos, y de vuestras ofrendas libres, para vuestros holocaustos, y para vuestros presentes, y para vuestras libaciones, y para vuestras paces."
+    },
+    {
+     "n": 40,
+     "texto": "",
+     "nota": "La RV1909 no tiene este versículo aparte: numera el capítulo de otra forma y su texto está en Nm 30:1."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 30,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y MOISÉS dijo á los hijos de Israel, conforme á todo lo que Jehová le había mandado."
+    },
+    {
+     "n": 2,
+     "texto": "Y habló Moisés á los príncipes de las tribus de los hijos de Israel, diciendo: Esto es lo que Jehová ha mandado."
+    },
+    {
+     "n": 3,
+     "texto": "Cuando alguno hiciere voto á Jehová, ó hiciere juramento ligando su alma con obligación, no violará su palabra: hará conforme á todo lo que salió de su boca."
+    },
+    {
+     "n": 4,
+     "texto": "Mas la mujer, cuando hiciere voto á Jehová, y se ligare con obligación en casa de su padre, en su mocedad;"
+    },
+    {
+     "n": 5,
+     "texto": "Si su padre oyere su voto, y la obligación con que ligó su alma, y su padre callare á ello, todos los votos de ella serán firmes, y toda obligación con que hubiere ligado su alma, firme será."
+    },
+    {
+     "n": 6,
+     "texto": "Mas si su padre le vedare el día que oyere todos sus votos y sus obligaciones, con que ella hubiere ligado su alma, no serán firmes; y Jehová la perdonará, por cuanto su padre le vedó."
+    },
+    {
+     "n": 7,
+     "texto": "Empero si fuere casada, é hiciere votos, ó pronunciare de sus labios cosa con que obligue su alma;"
+    },
+    {
+     "n": 8,
+     "texto": "Si su marido lo oyere, y cuando lo oyere callare á ello, los votos de ella serán firmes, y la obligación con que ligó su alma, firme será."
+    },
+    {
+     "n": 9,
+     "texto": "Pero si cuando su marido lo oyó, le vedó, entonces el voto que ella hizo, y lo que pronunció de sus labios con que ligó su alma, será nulo; y Jehová lo perdonará."
+    },
+    {
+     "n": 10,
+     "texto": "Mas todo voto de viuda, ó repudiada, con que ligare su alma, será firme."
+    },
+    {
+     "n": 11,
+     "texto": "Y si hubiere hecho voto en casa de su marido, y hubiere ligado su alma con obligación de juramento,"
+    },
+    {
+     "n": 12,
+     "texto": "Si su marido oyó, y calló á ello, y no le vedó; entonces todos sus votos serán firmes, y toda obligación con que hubiere ligado su alma, firme será."
+    },
+    {
+     "n": 13,
+     "texto": "Mas si su marido los anuló el día que los oyó; todo lo que salió de sus labios cuanto á sus votos, y cuanto á la obligación de su alma, será nulo; su marido los anuló, y Jehová la perdonará."
+    },
+    {
+     "n": 14,
+     "texto": "Todo voto, ó todo juramento obligándose á afligir el alma, su marido lo confirmará, ó su marido lo anulará."
+    },
+    {
+     "n": 15,
+     "texto": "Empero si su marido callare á ello de día en día, entonces confirmó todos sus votos, y todas las obligaciones que están sobre ella: confirmólas, por cuanto calló á ello el día que lo oyó."
+    },
+    {
+     "n": 16,
+     "texto": "Mas si las anulare después de haberlas oído, entonces él llevará el pecado de ella. Estas son las ordenanzas que Jehová mandó á Moisés entre el varón y su mujer, entre el padre y su hija, durante su mocedad en casa de su padre."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 31,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ habló á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Haz la venganza de los hijos de Israel sobre los Madianitas; después serás recogido á tus pueblos."
+    },
+    {
+     "n": 3,
+     "texto": "Entonces Moisés habló al pueblo, diciendo: Armaos algunos de vosotros para la guerra, é irán contra Madián, y harán la venganza de Jehová en Madián."
+    },
+    {
+     "n": 4,
+     "texto": "Mil de cada tribu de todas las tribus de los hijos de Israel, enviaréis á la guerra."
+    },
+    {
+     "n": 5,
+     "texto": "Así fueron dados de los millares de Israel, mil por cada tribu, doce mil á punto de guerra."
+    },
+    {
+     "n": 6,
+     "texto": "Y Moisés los envió á la guerra: mil de cada tribu envió: y Phinees, hijo de Eleazar sacerdote, [fué] á la guerra con los santos instrumentos, con las trompetas en su mano para tocar."
+    },
+    {
+     "n": 7,
+     "texto": "Y pelearon contra Madián, como Jehová lo mandó á Moisés, y mataron á todo varón."
+    },
+    {
+     "n": 8,
+     "texto": "Mataron también, entre los muertos de ellos, á los reyes de Madián: Evi, y Recem, y Zur, y Hur, y Reba, cinco reyes de Madián: á Balaam también, hijo de Beor, mataron á cuchillo."
+    },
+    {
+     "n": 9,
+     "texto": "Y llevaron cautivas los hijos de Israel las mujeres de los Madianitas, y sus chiquitos y todas sus bestias, y todos sus ganados; y arrebataron toda su hacienda."
+    },
+    {
+     "n": 10,
+     "texto": "Y abrasaron con fuego todas sus ciudades, aldeas y castillos."
+    },
+    {
+     "n": 11,
+     "texto": "Y tomaron todo el despojo, y toda la presa, así de hombres como de bestias."
+    },
+    {
+     "n": 12,
+     "texto": "Y trajeron á Moisés, y á Eleazar el sacerdote, y á la congregación de los hijos de Israel, los cautivos y la presa y los despojos, al campo en los llanos de Moab, que están junto al Jordán de Jericó."
+    },
+    {
+     "n": 13,
+     "texto": "Y salieron Moisés y Eleazar el sacerdote, y todos los príncipes de la congregación, á recibirlos fuera del campo."
+    },
+    {
+     "n": 14,
+     "texto": "Y enojóse Moisés contra los capitanes del ejército, [contra] los tribunos y centuriones que volvían de la guerra;"
+    },
+    {
+     "n": 15,
+     "texto": "Y díjoles Moisés: ¿Todas las mujeres habéis reservado?"
+    },
+    {
+     "n": 16,
+     "texto": "He aquí ellas fueron á los hijos de Israel, por consejo de Balaam, para causar prevaricación contra Jehová en el negocio de Peor; por lo que hubo mortandad en la congregación de Jehová."
+    },
+    {
+     "n": 17,
+     "texto": "Matad pues ahora todos los varones entre los niños: matad también toda mujer que haya conocido varón carnalmente."
+    },
+    {
+     "n": 18,
+     "texto": "Y todas las niñas entre las mujeres, que no hayan conocido ayuntamiento de varón, os reservaréis vivas."
+    },
+    {
+     "n": 19,
+     "texto": "Y vosotros quedaos fuera del campo siete días: y todos los que hubieren matado persona, y cualquiera que hubiere tocado muerto, os purificaréis al tercero y al séptimo día, vosotros y vuestros cautivos."
+    },
+    {
+     "n": 20,
+     "texto": "Asimismo purificaréis todo vestido, y toda prenda de pieles, y toda obra de pelos de cabra, y todo vaso de madera."
+    },
+    {
+     "n": 21,
+     "texto": "Y Eleazar el sacerdote dijo á los hombres de guerra que venían de la guerra: Esta es la ordenanza de la ley que Jehová ha mandado á Moisés:"
+    },
+    {
+     "n": 22,
+     "texto": "Ciertamente el oro, y la plata, metal, hierro, estaño, y plomo,"
+    },
+    {
+     "n": 23,
+     "texto": "Todo lo que resiste el fuego, por fuego [lo] haréis pasar, y será limpio, bien que en las aguas de purificación habrá de purificarse: mas haréis pasar por agua todo lo que no aguanta el fuego."
+    },
+    {
+     "n": 24,
+     "texto": "Además lavaréis vuestros vestidos el séptimo día, y así seréis limpios; y después entraréis en el campo."
+    },
+    {
+     "n": 25,
+     "texto": "Y Jehová habló á Moisés, diciendo:"
+    },
+    {
+     "n": 26,
+     "texto": "Toma la cuenta de la presa que se ha hecho, así de las personas como de las bestias, tú y el sacerdote Eleazar, y las cabezas de los padres de la congregación:"
+    },
+    {
+     "n": 27,
+     "texto": "Y partirás por mitad la presa entre los que pelearon, los que salieron á la guerra, y toda la congregación."
+    },
+    {
+     "n": 28,
+     "texto": "Y apartarás para Jehová el tributo de los hombres de guerra, que salieron á la guerra: de quinientos uno, así de las personas como de los bueyes, de los asnos, y de las ovejas:"
+    },
+    {
+     "n": 29,
+     "texto": "De la mitad de ellos lo tomarás; y darás á Eleazar el sacerdote la ofrenda de Jehová."
+    },
+    {
+     "n": 30,
+     "texto": "Y de la mitad perteneciente á los hijos de Israel tomarás uno de cincuenta, de las personas, de los bueyes, de los asnos, y de las ovejas, de todo animal; y los darás á los Levitas, que tienen la guarda del tabernáculo de Jehová."
+    },
+    {
+     "n": 31,
+     "texto": "E hicieron Moisés y Eleazar el sacerdote como Jehová mandó á Moisés."
+    },
+    {
+     "n": 32,
+     "texto": "Y fué la presa, el resto de la presa que tomaron los hombres de guerra, seiscientas y setenta y cinco mil ovejas,"
+    },
+    {
+     "n": 33,
+     "texto": "Y setenta y dos mil bueyes,"
+    },
+    {
+     "n": 34,
+     "texto": "Y setenta y un mil asnos;"
+    },
+    {
+     "n": 35,
+     "texto": "Y en cuanto á personas, de mujeres que no habían conocido ayuntamiento de varón, en todas treinta y dos mil."
+    },
+    {
+     "n": 36,
+     "texto": "Y la mitad, la parte de los que habían salido á la guerra, fué el número de trescientas treinta y siete mil y quinientas ovejas."
+    },
+    {
+     "n": 37,
+     "texto": "Y el tributo para Jehová de las ovejas, fué seiscientas setenta y cinco."
+    },
+    {
+     "n": 38,
+     "texto": "Y de los bueyes, treinta y seis mil: y de ellos el tributo para Jehová, setenta y dos."
+    },
+    {
+     "n": 39,
+     "texto": "Y de los asnos, treinta mil y quinientos: y de ellos el tributo para Jehová, setenta y uno."
+    },
+    {
+     "n": 40,
+     "texto": "Y de las personas, diez y seis mil: y de ellas el tributo para Jehová, treinta y dos personas."
+    },
+    {
+     "n": 41,
+     "texto": "Y dió Moisés el tributo, por elevada ofrenda á Jehová, á Eleazar el sacerdote, como Jehová lo mandó á Moisés."
+    },
+    {
+     "n": 42,
+     "texto": "Y de la mitad para los hijos de Israel, que apartó Moisés de los hombres que habían ido á la guerra;"
+    },
+    {
+     "n": 43,
+     "texto": "(La mitad para la congregación fué: de las ovejas, trescientas treinta y siete mil y quinientas;"
+    },
+    {
+     "n": 44,
+     "texto": "Y de los bueyes, treinta y seis mil;"
+    },
+    {
+     "n": 45,
+     "texto": "Y de los asnos, treinta mil y quinientos;"
+    },
+    {
+     "n": 46,
+     "texto": "Y de las personas, diez y seis mil:)"
+    },
+    {
+     "n": 47,
+     "texto": "De la mitad, pues, para los hijos de Israel tomó Moisés uno de cada cincuenta, así de las personas como de los animales, y diólos á los Levitas, que tenían la guarda del tabernáculo de Jehová; como Jehová lo había mandado á Moisés."
+    },
+    {
+     "n": 48,
+     "texto": "Y llegaron á Moisés los jefes de los millares de aquel ejército, los tribunos y centuriones;"
+    },
+    {
+     "n": 49,
+     "texto": "Y dijeron á Moisés: Tus siervos han tomado razón de los hombres de guerra que están en nuestro poder, y ninguno ha faltado de nosotros."
+    },
+    {
+     "n": 50,
+     "texto": "Por lo cual hemos ofrecido á Jehová ofrenda, cada uno de lo que ha hallado, vasos de oro, brazaletes, manillas, anillos, zarcillos, y cadenas, para hacer expiación por nuestras almas delante de Jehová."
+    },
+    {
+     "n": 51,
+     "texto": "Y Moisés y el sacerdote Eleazar recibieron el oro de ellos, alhajas, todas elaboradas."
+    },
+    {
+     "n": 52,
+     "texto": "Y todo el oro de la ofrenda que ofrecieron á Jehová de los tribunos y centuriones, fué diez y seis mil setecientos y cincuenta siclos."
+    },
+    {
+     "n": 53,
+     "texto": "Los hombres del ejército habían pillado cada uno para sí."
+    },
+    {
+     "n": 54,
+     "texto": "Recibieron, pues, Moisés y el sacerdote Eleazar, el oro de los tribunos y centuriones, y trajéronlo al tabernáculo del testimonio, por memoria de los hijos de Israel delante de Jehová."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 32,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LOS hijos de Rubén y los hijos de Gad tenían una muy grande muchedumbre de ganado; los cuales viendo la tierra de Jazer y de Galaad, parecióles el país lugar de ganado."
+    },
+    {
+     "n": 2,
+     "texto": "Y vinieron los hijos de Gad y los hijos de Rubén, y hablaron á Moisés, y á Eleazar el sacerdote, y á los príncipes de la congregación, diciendo:"
+    },
+    {
+     "n": 3,
+     "texto": "Ataroth, y Dibón, y Jazer, y Nimra, y Hesbón, y Eleale, y Sabán, y Nebo, y Beón,"
+    },
+    {
+     "n": 4,
+     "texto": "La tierra que Jehová hirió delante de la congregación de Israel, es tierra de ganado, y tus siervos tienen ganado."
+    },
+    {
+     "n": 5,
+     "texto": "Por tanto, dijeron, si hallamos gracia en tus ojos, dése esta tierra á tus siervos en heredad, y no nos hagas pasar el Jordán."
+    },
+    {
+     "n": 6,
+     "texto": "Y respondió Moisés á los hijos de Gad y á los hijos de Rubén: ¿Vendrán vuestros hermanos á la guerra, y vosotros os quedaréis aquí?"
+    },
+    {
+     "n": 7,
+     "texto": "¿Y por qué prevenís el ánimo de los hijos de Israel, para que no pasen á la tierra que les ha dado Jehová?"
+    },
+    {
+     "n": 8,
+     "texto": "Así hicieron vuestros padres, cuando los envié desde Cades-barnea para que viesen la tierra."
+    },
+    {
+     "n": 9,
+     "texto": "Que subieron hasta la arroyada de Escol, y después que vieron la tierra, preocuparon el ánimo de los hijos de Israel, para que no viniesen á la tierra que Jehová les había dado."
+    },
+    {
+     "n": 10,
+     "texto": "Y el furor de Jehová se encendió entonces, y juró diciendo:"
+    },
+    {
+     "n": 11,
+     "texto": "Que no verán los varones que subieron de Egipto de veinte años arriba, la tierra por la cual juré á Abraham, Isaac, y Jacob, por cuanto no fueron perfectos en pos de mí;"
+    },
+    {
+     "n": 12,
+     "texto": "Excepto Caleb, hijo de Jephone Cenezeo, y Josué hijo de Nun, que fueron perfectos en pos de Jehová."
+    },
+    {
+     "n": 13,
+     "texto": "Y el furor de Jehová se encendió en Israel, é hízolos andar errantes cuarenta años por el desierto, hasta que fué acabada toda aquella generación, que había hecho mal delante de Jehová."
+    },
+    {
+     "n": 14,
+     "texto": "Y he aquí vosotros habéis sucedido en lugar de vuestros padres, prole de hombres pecadores, para añadir aún á la ira de Jehová contra Israel."
+    },
+    {
+     "n": 15,
+     "texto": "Si os volviereis de en pos de él, él volverá otra vez á dejaros en el desierto, y destruiréis á todo este pueblo."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces ellos se llegaron á él y dijeron: Edificaremos aquí majadas para nuestro ganado, y ciudades para nuestros niños;"
+    },
+    {
+     "n": 17,
+     "texto": "Y nosotros nos armaremos, é iremos con diligencia delante de los hijos de Israel, hasta que los metamos en su lugar: y nuestros niños quedarán en ciudades fuertes á causa de los moradores del país."
+    },
+    {
+     "n": 18,
+     "texto": "No volveremos á nuestras casas hasta que los hijos de Israel posean cada uno su heredad."
+    },
+    {
+     "n": 19,
+     "texto": "Porque no tomaremos heredad con ellos al otro lado del Jordán ni adelante, por cuanto tendremos ya nuestra heredad de estotra parte del Jordán al oriente."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces les respondió Moisés: Si lo hiciereis así, si os apercibiereis para ir delante de Jehová á la guerra,"
+    },
+    {
+     "n": 21,
+     "texto": "Y pasareis todos vosotros armados el Jordán delante de Jehová, hasta que haya echado á sus enemigos de delante de sí,"
+    },
+    {
+     "n": 22,
+     "texto": "Y sea el país sojuzgado delante de Jehová; luego volveréis, y seréis libres de culpa para con Jehová, y para con Israel; y esta tierra será vuestra en heredad delante de Jehová."
+    },
+    {
+     "n": 23,
+     "texto": "Mas si así no lo hiciereis, he aquí habréis pecado á Jehová; y sabed que os alcanzará vuestro pecado."
+    },
+    {
+     "n": 24,
+     "texto": "Edificaos ciudades para vuestros niños, y majadas para vuestras ovejas, y haced lo que ha salido de vuestra boca."
+    },
+    {
+     "n": 25,
+     "texto": "Y hablaron los hijos de Gad y los hijos de Rubén á Moisés, diciendo: Tus siervos harán como mi señor ha mandado."
+    },
+    {
+     "n": 26,
+     "texto": "Nuestros niños, nuestras mujeres, nuestros ganados, y todas nuestras bestias, estarán ahí en las ciudades de Galaad;"
+    },
+    {
+     "n": 27,
+     "texto": "Y tus siervos, armados todos de guerra, pasarán delante de Jehová á la guerra, de la manera que mi señor dice."
+    },
+    {
+     "n": 28,
+     "texto": "Entonces los encomendó Moisés á Eleazar el sacerdote, y á Josué hijo de Nun, y á los príncipes de los padres de las tribus de los hijos de Israel."
+    },
+    {
+     "n": 29,
+     "texto": "Y díjoles Moisés: Si los hijos de Gad y los hijos de Rubén, pasaren con vosotros el Jordán, armados todos de guerra delante de Jehová, luego que el país fuere sojuzgado delante de vosotros, les daréis la tierra de Galaad en posesión:"
+    },
+    {
+     "n": 30,
+     "texto": "Mas si no pasaren armados con vosotros, entonces tendrán posesión entre vosotros en la tierra de Canaán."
+    },
+    {
+     "n": 31,
+     "texto": "Y los hijos de Gad y los hijos de Rubén respondieron, diciendo: Haremos lo que Jehová ha dicho á tus siervos."
+    },
+    {
+     "n": 32,
+     "texto": "Nosotros pasaremos armados delante de Jehová á la tierra de Canaán, y la posesión de nuestra heredad será de esta parte del Jordán."
+    },
+    {
+     "n": 33,
+     "texto": "Así les dió Moisés á los hijos de Gad y á los hijos de Rubén, y á la media tribu de Manasés hijo de José, el reino de Sehón rey Amorrheo, y el reino de Og rey de Basán, la tierra con sus ciudades y términos, las ciudades del país alrededor."
+    },
+    {
+     "n": 34,
+     "texto": "Y los hijos de Gad edificaron á Dibón, y á Ataroth, y á Aroer,"
+    },
+    {
+     "n": 35,
+     "texto": "Y á Atroth-sophan, y á Jazer, y á Jogbaa,"
+    },
+    {
+     "n": 36,
+     "texto": "Y á Beth-nimra, y á Betharán: ciudades fuertes, y también majadas para ovejas."
+    },
+    {
+     "n": 37,
+     "texto": "Y los hijos de Rubén edificaron á Hesbón, y á Eleale, y á Kiriathaim,"
+    },
+    {
+     "n": 38,
+     "texto": "Y á Nebo, y á Baal-meón, (mudados los nombres), y á Sibma: y pusieron nombres á las ciudades que edificaron."
+    },
+    {
+     "n": 39,
+     "texto": "Y los hijos de Machîr hijo de Manasés fueron á Galaad, y tomáronla, y echaron al Amorrheo que estaba en ella."
+    },
+    {
+     "n": 40,
+     "texto": "Y Moisés dió Galaad á Machîr hijo de Manasés, el cual habitó en ella."
+    },
+    {
+     "n": 41,
+     "texto": "También Jair hijo de Manasés fué y tomó sus aldeas, y púsoles por nombre Havoth-jair."
+    },
+    {
+     "n": 42,
+     "texto": "Asimismo Noba fué y tomó á Kenath y sus aldeas, y llamóle Noba, conforme á su nombre."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 33,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTAS son las estancias de los hijos de Israel, los cuales salieron de la tierra de Egipto por sus escuadrones, bajo la conducta de Moisés y Aarón."
+    },
+    {
+     "n": 2,
+     "texto": "Y Moisés escribió sus salidas conforme á sus jornadas por mandato de Jehová. Estas, pues, son sus estancias con arreglo á sus partidas."
+    },
+    {
+     "n": 3,
+     "texto": "De Rameses partieron en el mes primero, á los quince días del mes primero: el segundo día de la pascua salieron los hijos de Israel con mano alta, á ojos de todos los Egipcios."
+    },
+    {
+     "n": 4,
+     "texto": "[Estaban] enterrando los Egipcios los que Jehová había muerto de ellos, á todo primogénito; habiendo Jehová hecho también juicios en sus dioses."
+    },
+    {
+     "n": 5,
+     "texto": "Partieron, pues, los hijos de Israel de Rameses, y asentaron campo en Succoth."
+    },
+    {
+     "n": 6,
+     "texto": "Y partiendo de Succoth, asentaron en Etham, que está al cabo del desierto."
+    },
+    {
+     "n": 7,
+     "texto": "Y partiendo de Etham, volvieron sobre Pi-hahiroth, que está delante de Baalsephon, y asentaron delante de Migdol."
+    },
+    {
+     "n": 8,
+     "texto": "Y partiendo de Pi-hahiroth, pasaron por medio de la mar al desierto, y anduvieron camino de tres días por el desierto de Etham, y asentaron en Mara."
+    },
+    {
+     "n": 9,
+     "texto": "Y partiendo de Mara, vinieron á Elim, donde había doce fuentes de aguas, y setenta palmeras; y asentaron allí."
+    },
+    {
+     "n": 10,
+     "texto": "Y partidos de Elim, asentaron junto al mar Bermejo."
+    },
+    {
+     "n": 11,
+     "texto": "Y partidos del mar Bermejo, asentaron en el desierto de Sin."
+    },
+    {
+     "n": 12,
+     "texto": "Y partidos del desierto de Sin, asentaron en Dophca."
+    },
+    {
+     "n": 13,
+     "texto": "Y partidos de Dophca, asentaron en Alús."
+    },
+    {
+     "n": 14,
+     "texto": "Y partidos de Alús, asentaron en Rephidim, donde el pueblo no tuvo aguas para beber."
+    },
+    {
+     "n": 15,
+     "texto": "Y partidos de Rephidim, asentaron en el desierto de Sinaí."
+    },
+    {
+     "n": 16,
+     "texto": "Y partidos del desierto de Sinaí, asentaron en Kibroth-hataava."
+    },
+    {
+     "n": 17,
+     "texto": "Y partidos de Kibroth-hataava, asentaron en Haseroth."
+    },
+    {
+     "n": 18,
+     "texto": "Y partidos de Haseroth, asentaron en Ritma."
+    },
+    {
+     "n": 19,
+     "texto": "Y partidos de Ritma, asentaron en Rimmón-peres."
+    },
+    {
+     "n": 20,
+     "texto": "Y partidos de Rimmón-peres, asentaron en Libna."
+    },
+    {
+     "n": 21,
+     "texto": "Y partidos de Libna, asentaron en Rissa."
+    },
+    {
+     "n": 22,
+     "texto": "Y partidos de Rissa, asentaron en Ceelatha."
+    },
+    {
+     "n": 23,
+     "texto": "Y partidos de Ceelatha, asentaron en el monte de Sepher."
+    },
+    {
+     "n": 24,
+     "texto": "Y partidos del monte de Sepher, asentaron en Harada."
+    },
+    {
+     "n": 25,
+     "texto": "Y partidos de Harada, asentaron en Maceloth."
+    },
+    {
+     "n": 26,
+     "texto": "Y partidos de Maceloth, asentaron en Tahath."
+    },
+    {
+     "n": 27,
+     "texto": "Y partidos de Tahath, asentaron en Tara."
+    },
+    {
+     "n": 28,
+     "texto": "Y partidos de Tara, asentaron en Mithca."
+    },
+    {
+     "n": 29,
+     "texto": "Y partidos de Mithca, asentaron en Hasmona."
+    },
+    {
+     "n": 30,
+     "texto": "Y partidos de Hasmona, asentaron en Moseroth."
+    },
+    {
+     "n": 31,
+     "texto": "Y partidos de Moseroth, asentaron en Bene-jaacán."
+    },
+    {
+     "n": 32,
+     "texto": "Y partidos de Bene-jaacán, asentaron en el monte de Gidgad."
+    },
+    {
+     "n": 33,
+     "texto": "Y partidos del monte de Gidgad, asentaron en Jotbatha."
+    },
+    {
+     "n": 34,
+     "texto": "Y partidos de Jotbatha, asentaron en Abrona."
+    },
+    {
+     "n": 35,
+     "texto": "Y partidos de Abrona, asentaron en Esion-geber."
+    },
+    {
+     "n": 36,
+     "texto": "Y partidos de Esion-geber, asentaron en el desierto de Zin, que es Cades."
+    },
+    {
+     "n": 37,
+     "texto": "Y partidos de Cades, asentaron en el monte de Hor, en la extremidad del país de Edom."
+    },
+    {
+     "n": 38,
+     "texto": "Y subió Aarón el sacerdote al monte de Hor, conforme al dicho de Jehová, y allí murió á los cuarenta años de la salida de los hijos de Israel de la tierra de Egipto, en el mes quinto, en el primero del mes."
+    },
+    {
+     "n": 39,
+     "texto": "Y era Aarón de edad de ciento y veinte y tres años, cuando murió en el monte de Hor."
+    },
+    {
+     "n": 40,
+     "texto": "Y el Cananeo, rey de Arad, que habitaba al mediodía en la tierra de Canaán, oyó como habían venido los hijos de Israel."
+    },
+    {
+     "n": 41,
+     "texto": "Y partidos del monte de Hor, asentaron en Salmona."
+    },
+    {
+     "n": 42,
+     "texto": "Y partidos de Salmona, asentaron en Phunón."
+    },
+    {
+     "n": 43,
+     "texto": "Y partidos de Phunón, asentaron en Oboth."
+    },
+    {
+     "n": 44,
+     "texto": "Y partidos de Oboth, asentaron en Ije-abarim; en el término de Moab."
+    },
+    {
+     "n": 45,
+     "texto": "Y partidos de Ije-abarim, asentaron en Dibon-gad."
+    },
+    {
+     "n": 46,
+     "texto": "Y partidos de Dibon-gad, asentaron en Almon-diblathaim."
+    },
+    {
+     "n": 47,
+     "texto": "Y partidos de Almon-diblathaim, asentaron en los montes de Abarim, delante de Nebo."
+    },
+    {
+     "n": 48,
+     "texto": "Y partidos de los montes de Abarim, asentaron en los campos de Moab, junto al Jordán de Jericó."
+    },
+    {
+     "n": 49,
+     "texto": "Finalmente asentaron junto al Jordán, desde Beth-jesimoth hasta Abel-sitim, en los campos de Moab."
+    },
+    {
+     "n": 50,
+     "texto": "Y habló Jehová á Moisés en los campos de Moab junto al Jordán de Jericó, diciendo:"
+    },
+    {
+     "n": 51,
+     "texto": "Habla á los hijos de Israel, y diles: Cuando hubiereis pasado el Jordán á la tierra de Canaán,"
+    },
+    {
+     "n": 52,
+     "texto": "Echaréis á todos los moradores del país de delante de vosotros, y destruiréis todas sus pinturas, y todas sus imágenes de fundición, y arruinaréis todos sus altos;"
+    },
+    {
+     "n": 53,
+     "texto": "Y echaréis [los moradores de] la tierra, y habitaréis en ella; porque yo os la he dado para que la poseáis."
+    },
+    {
+     "n": 54,
+     "texto": "Y heredaréis la tierra por suertes por vuestras familias: á los muchos daréis mucho por su heredad, y á los pocos daréis menos por heredad suya: donde le saliere la suerte, allí la tendrá cada uno: por las tribus de vuestros padres heredaréis."
+    },
+    {
+     "n": 55,
+     "texto": "Y si no echareis los moradores del país de delante de vosotros, sucederá que los que dejareis de ellos serán por aguijones en vuestros ojos, y por espinas en vuestros costados, y afligiros han sobre la tierra en que vosotros habitareis."
+    },
+    {
+     "n": 56,
+     "texto": "Será además, que haré á vosotros como yo pensé hacerles á ellos."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 34,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ habló á Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Manda á los hijos de Israel, y diles: Cuando hubiereis entrado en la tierra de Canaán, es á saber, la tierra que os ha de caer en heredad, la tierra de Canaán según sus términos;"
+    },
+    {
+     "n": 3,
+     "texto": "Tendréis el lado del mediodía desde el desierto de Zin hasta los términos de Edom; y os será el término del mediodía al extremo del mar salado hacia el oriente:"
+    },
+    {
+     "n": 4,
+     "texto": "Y este término os irá rodeando desde el mediodía hasta la subida de Acrabbim, y pasará hasta Zin; y sus salidas serán del mediodía á Cades-barnea; y saldrá á Hasar-addar, y pasará hasta Asmón;"
+    },
+    {
+     "n": 5,
+     "texto": "Y rodeará este término, desde Asmón hasta el torrente de Egipto, y sus remates serán al occidente."
+    },
+    {
+     "n": 6,
+     "texto": "Y el término occidental os será la gran mar: este término os será el término occidental."
+    },
+    {
+     "n": 7,
+     "texto": "Y el término del norte será este: desde la gran mar os señalaréis el monte de Hor;"
+    },
+    {
+     "n": 8,
+     "texto": "Del monte de Hor señalaréis á la entrada de Hamath, y serán las salidas de aquel término á Sedad;"
+    },
+    {
+     "n": 9,
+     "texto": "Y saldrá este término á Ziphón, y serán sus remates en Hasar-enán: este os será el término del norte."
+    },
+    {
+     "n": 10,
+     "texto": "Y por término al oriente os señalaréis desde Hasar-enán hasta Sepham;"
+    },
+    {
+     "n": 11,
+     "texto": "Y bajará este término desde Sepham á Ribla, al oriente de Ain: y descenderá el término, y llegará á la costa de la mar de Cinnereth al oriente;"
+    },
+    {
+     "n": 12,
+     "texto": "Después descenderá este término al Jordán, y serán sus salidas al mar Salado: esta será vuestra tierra: por sus términos alrededor."
+    },
+    {
+     "n": 13,
+     "texto": "Y mandó Moisés á los hijos de Israel, diciendo: Esta es la tierra que heredaréis por suerte, la cual mandó Jehová que diese á las nueve tribus, y á la media tribu:"
+    },
+    {
+     "n": 14,
+     "texto": "Porque la tribu de los hijos de Rubén según las casas de sus padres, y la tribu de los hijos de Gad según las casas de sus padres, y la media tribu de Manasés, han tomado su herencia:"
+    },
+    {
+     "n": 15,
+     "texto": "Dos tribus y media tomaron su heredad de esta parte del Jordán de Jericó al oriente, al nacimiento del sol."
+    },
+    {
+     "n": 16,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 17,
+     "texto": "Estos son los nombres de los varones que os aposesionarán la tierra: Eleazar el sacerdote, y Josué hijo de Nun."
+    },
+    {
+     "n": 18,
+     "texto": "Tomaréis también de cada tribu un príncipe, para dar la posesión de la tierra."
+    },
+    {
+     "n": 19,
+     "texto": "Y estos son los nombres de los varones: De la tribu de Judá, Caleb hijo de Jephone."
+    },
+    {
+     "n": 20,
+     "texto": "Y de la tribu de los hijos de Simeón, Samuel hijo de Ammiud."
+    },
+    {
+     "n": 21,
+     "texto": "De la tribu de Benjamín, Elidad hijo de Chislón."
+    },
+    {
+     "n": 22,
+     "texto": "Y de la tribu de los hijos de Dan, el príncipe Bucci hijo de Jogli."
+    },
+    {
+     "n": 23,
+     "texto": "De los hijos de José: de la tribu de los hijos de Manasés, el príncipe Haniel hijo de Ephod."
+    },
+    {
+     "n": 24,
+     "texto": "Y de la tribu de los hijos de Ephraim, el príncipe Chêmuel hijo de Siphtán."
+    },
+    {
+     "n": 25,
+     "texto": "Y de la tribu de los hijos de Zabulón, el príncipe Elisaphán hijo de Pharnach."
+    },
+    {
+     "n": 26,
+     "texto": "Y de la tribu de los hijos de Issachâr, el príncipe Paltiel hijo de Azan."
+    },
+    {
+     "n": 27,
+     "texto": "Y de la tribu de los hijos de Aser, el príncipe Ahiud hijo de Selomi."
+    },
+    {
+     "n": 28,
+     "texto": "Y de la tribu de los hijos de Nephtalí, el príncipe Pedael hijo de Ammiud."
+    },
+    {
+     "n": 29,
+     "texto": "Estos son á los que mandó Jehová que hiciesen la partición de la herencia á los hijos de Israel en la tierra de Canaán."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 35,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Moisés en los campos de Moab, junto al Jordán de Jericó, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Manda á los hijos de Israel, que den á los Levitas de la posesión de su heredad ciudades en que habiten: también daréis á los Levitas los ejidos de esas ciudades alrededor de ellas."
+    },
+    {
+     "n": 3,
+     "texto": "Y tendrán ellos las ciudades para habitar, y los ejidos de ellas serán para sus animales, y para sus ganados, y para todas sus bestias."
+    },
+    {
+     "n": 4,
+     "texto": "Y los ejidos de las ciudades que daréis á los Levitas, serán mil codos alrededor, desde el muro de la ciudad para afuera."
+    },
+    {
+     "n": 5,
+     "texto": "Luego mediréis fuera de la ciudad á la parte del oriente dos mil codos, y á la parte del mediodía dos mil codos, y á la parte del occidente dos mil codos, y á la parte del norte dos mil codos, y la ciudad en medio: esto tendrán por los ejidos de las ciudades."
+    },
+    {
+     "n": 6,
+     "texto": "Y de las ciudades que daréis á los Levitas, seis ciudades serán de acogimiento, las cuales daréis para que el homicida se acoja allá: y además de éstas daréis cuarenta y dos ciudades."
+    },
+    {
+     "n": 7,
+     "texto": "Todas las ciudades que daréis á los Levitas serán cuarenta y ocho ciudades; ellas con sus ejidos."
+    },
+    {
+     "n": 8,
+     "texto": "Y las ciudades que diereis de la heredad de los hijos de Israel, del [que] mucho tomaréis mucho, y del [que] poco tomaréis poco: cada uno dará de sus ciudades á los Levitas según la posesión que heredará."
+    },
+    {
+     "n": 9,
+     "texto": "Y habló Jehová á Moisés, diciendo:"
+    },
+    {
+     "n": 10,
+     "texto": "Habla á los hijos de Israel, y diles: Cuando hubiereis pasado el Jordán á la tierra de Canaán,"
+    },
+    {
+     "n": 11,
+     "texto": "Os señalaréis ciudades, ciudades de acogimiento tendréis, donde huya el homicida que hiriere á alguno de muerte por yerro."
+    },
+    {
+     "n": 12,
+     "texto": "Y os serán aquellas ciudades por acogimiento del pariente, y no morirá el homicida hasta que esté á juicio delante de la congregación."
+    },
+    {
+     "n": 13,
+     "texto": "De las ciudades, pues, que daréis, tendréis seis ciudades de acogimiento."
+    },
+    {
+     "n": 14,
+     "texto": "Tres ciudades daréis de esta parte del Jordán, y tres ciudades daréis en la tierra de Canaán; las cuales serán ciudades de acogimiento."
+    },
+    {
+     "n": 15,
+     "texto": "Estas seis ciudades serán para acogimiento á los hijos de Israel, y al peregrino, y al que morare entre ellos, para que huya allá cualquiera que hiriere de muerte á otro por yerro."
+    },
+    {
+     "n": 16,
+     "texto": "Y si con instrumento de hierro lo hiriere y muriere, homicida es; el homicida morirá:"
+    },
+    {
+     "n": 17,
+     "texto": "Y si con piedra de mano, de que pueda morir, lo hiriere, y muriere, homicida es; el homicida morirá."
+    },
+    {
+     "n": 18,
+     "texto": "Y si con instrumento de palo de mano, de que pueda morir, lo hiriere, y muriere, homicida es; el homicida morirá."
+    },
+    {
+     "n": 19,
+     "texto": "El pariente del muerto, él matará al homicida: cuando lo encontrare, él le matará."
+    },
+    {
+     "n": 20,
+     "texto": "Y si por odio lo empujó, ó echó sobre él [alguna cosa] por asechanzas, y muere;"
+    },
+    {
+     "n": 21,
+     "texto": "O por enemistad lo hirió con su mano, y murió: el heridor morirá; es homicida; el pariente del muerto matará al homicida, cuando lo encontrare."
+    },
+    {
+     "n": 22,
+     "texto": "Mas si casualmente lo empujó sin enemistades, ó echó sobre él cualquier instrumento sin asechanzas,"
+    },
+    {
+     "n": 23,
+     "texto": "O bien, sin verlo, hizo caer sobre él alguna piedra, de que pudo morir, y muriere, y él no era su enemigo, ni procuraba su mal;"
+    },
+    {
+     "n": 24,
+     "texto": "Entonces la congregación juzgará entre el heridor y el pariente del muerto conforme á estas leyes:"
+    },
+    {
+     "n": 25,
+     "texto": "Y la congregación librará al homicida de mano del pariente del muerto, y la congregación lo hará volver á su ciudad de acogimiento, á la cual se había acogido; y morará en ella hasta que muera el gran sacerdote, el cual fué ungido con el aceite santo."
+    },
+    {
+     "n": 26,
+     "texto": "Y si el homicida saliere fuera del término de su ciudad de refugio, á la cual se acogió,"
+    },
+    {
+     "n": 27,
+     "texto": "Y el pariente del muerto le hallare fuera del término de la ciudad de su acogida, y el pariente del muerto al homicida matare, no se le culpará [por ello]:"
+    },
+    {
+     "n": 28,
+     "texto": "Pues en su ciudad de refugio deberá [aquél] habitar hasta que muera el gran sacerdote: y después que muriere el gran sacerdote, el homicida volverá á la tierra de su posesión."
+    },
+    {
+     "n": 29,
+     "texto": "Y estas cosas os serán por ordenanza de derecho por vuestras edades, en todas vuestras habitaciones."
+    },
+    {
+     "n": 30,
+     "texto": "Cualquiera que hiriere á alguno, por dicho de testigos, morirá el homicida: mas un solo testigo no hará fe contra alguna persona para que muera."
+    },
+    {
+     "n": 31,
+     "texto": "Y no tomaréis precio por la vida del homicida; porque está condenado á muerte: mas indefectiblemente morirá."
+    },
+    {
+     "n": 32,
+     "texto": "Ni tampoco tomaréis precio del que huyó á su ciudad de refugio, para que vuelva á vivir en su tierra, hasta que muera el sacerdote."
+    },
+    {
+     "n": 33,
+     "texto": "Y no contaminaréis la tierra donde estuviereis: porque esta sangre amancillará la tierra: y la tierra no será expiada de la sangre que fué derramada en ella, sino por la sangre del que la derramó."
+    },
+    {
+     "n": 34,
+     "texto": "No contaminéis, pues, la tierra donde habitáis, en medio de la cual yo habito; porque yo Jehová habito en medio de los hijos de Israel."
+    }
+   ]
+  },
+  {
+   "libro": "Nm",
+   "cap": 36,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LLEGARON los príncipes de los padres de la familia de Galaad, hijo de Machîr, hijo de Manasés, de las familias de los hijos de José; y hablaron delante de Moisés, y de los príncipes, cabezas de padres de los hijos de Israel,"
+    },
+    {
+     "n": 2,
+     "texto": "Y dijeron: Jehová mandó á mi señor que por suerte diese la tierra á los hijos de Israel en posesión: también ha mandado Jehová á mi señor, que dé la posesión de Salphaad nuestro hermano á sus hijas;"
+    },
+    {
+     "n": 3,
+     "texto": "Las cuales, si se casaren con algunos de los hijos de las [otras] tribus de los hijos de Israel, la herencia de ellas será así desfalcada de la herencia de nuestros padres, y será añadida á la herencia de la tribu á que serán [unidas]: y será quitada de la suerte de nuestra heredad."
+    },
+    {
+     "n": 4,
+     "texto": "Y cuando viniere el jubileo de los hijos de Israel, la heredad de ellas será añadida á la heredad de la tribu de sus maridos; y así la heredad de ellas será quitada de la heredad de la tribu de nuestros padres."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces Moisés mandó á los hijos de Israel por dicho de Jehová, diciendo: La tribu de los hijos de José habla rectamente."
+    },
+    {
+     "n": 6,
+     "texto": "Esto es lo que ha mandado Jehová acerca de las hijas de Salphaad, diciendo: Cásense como á ellas les pluguiere, empero en la familia de la tribu de su padre se casarán;"
+    },
+    {
+     "n": 7,
+     "texto": "Para que la heredad de los hijos de Israel no sea traspasada de tribu en tribu; porque cada uno de los hijos de Israel se allegará á la heredad de la tribu de sus padres."
+    },
+    {
+     "n": 8,
+     "texto": "Y cualquiera hija que poseyere heredad de las tribus de los hijos de Israel, con alguno de la familia de la tribu de su padre se casará, para que los hijos de Israel posean cada uno la heredad de sus padres,"
+    },
+    {
+     "n": 9,
+     "texto": "Y no ande la heredad rodando de una tribu á otra: mas cada una de las tribus de los hijos de Israel se llegue á su heredad."
+    },
+    {
+     "n": 10,
+     "texto": "Como Jehová mandó á Moisés, así hicieron las hijas de Salphaad."
+    },
+    {
+     "n": 11,
+     "texto": "Y [así] Maala, y Tirsa, y Hogla, y Milchâ, y Noa, hijas de Salphaad, se casaron con hijos de sus tíos:"
+    },
+    {
+     "n": 12,
+     "texto": "De la familia de los hijos de Manasés, hijo de José, fueron mujeres; y la heredad de ellas quedó en la tribu de la familia de su padre."
+    },
+    {
+     "n": 13,
+     "texto": "Estos son los mandamientos y los estatutos que mandó Jehová por mano de Moisés á los hijos de Israel en los campos de Moab, junto al Jordán de Jericó."
+    }
+   ]
   }
  ],
  "personas": [
@@ -17544,7 +22919,8 @@ window.BIBLIA_DATOS = {
     "Ex 6:8",
     "Ex 32:13",
     "Ex 33:1",
-    "Lv 26:42"
+    "Lv 26:42",
+    "Nm 32:11"
    ],
    "nota": "En la Reina-Valera 1909: Abram/Abraham. Se llama Abram hasta Gn 17:5, donde Dios le cambia el nombre por Abraham."
   },
@@ -18147,7 +23523,8 @@ window.BIBLIA_DATOS = {
     "Ex 6:8",
     "Ex 32:13",
     "Ex 33:1",
-    "Lv 26:42"
+    "Lv 26:42",
+    "Nm 32:11"
    ],
    "nota": ""
   },
@@ -19468,7 +24845,8 @@ window.BIBLIA_DATOS = {
     "Ex 19:3",
     "Ex 32:13",
     "Ex 33:1",
-    "Lv 26:42"
+    "Lv 26:42",
+    "Nm 32:11"
    ],
    "nota": "En Gn 32:28 recibe el nombre de Israel; el texto sigue usando ambos."
   },
@@ -19759,7 +25137,26 @@ window.BIBLIA_DATOS = {
     "Gn 48:5",
     "Gn 49:3",
     "Ex 1:2",
-    "Ex 6:14"
+    "Ex 6:14",
+    "Nm 1:5",
+    "Nm 1:20",
+    "Nm 1:21",
+    "Nm 2:10",
+    "Nm 2:16",
+    "Nm 7:30",
+    "Nm 10:18",
+    "Nm 13:5",
+    "Nm 16:1",
+    "Nm 26:5",
+    "Nm 32:1",
+    "Nm 32:2",
+    "Nm 32:6",
+    "Nm 32:25",
+    "Nm 32:29",
+    "Nm 32:31",
+    "Nm 32:33",
+    "Nm 32:37",
+    "Nm 34:14"
    ],
    "nota": ""
   },
@@ -19786,7 +25183,16 @@ window.BIBLIA_DATOS = {
     "Gn 48:5",
     "Gn 49:5",
     "Ex 1:2",
-    "Ex 6:15"
+    "Ex 6:15",
+    "Nm 1:6",
+    "Nm 1:22",
+    "Nm 1:23",
+    "Nm 2:12",
+    "Nm 7:36",
+    "Nm 10:19",
+    "Nm 13:6",
+    "Nm 26:12",
+    "Nm 34:20"
    ],
    "nota": ""
   },
@@ -19796,7 +25202,8 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Leví",
    "rol": "",
    "formas_rv1909": [
-    "Leví"
+    "Leví",
+    "Levitas"
    ],
    "sin_nombre": false,
    "sexo": "m",
@@ -19812,9 +25219,24 @@ window.BIBLIA_DATOS = {
     "Ex 2:1",
     "Ex 6:16",
     "Ex 32:26",
-    "Ex 32:28"
+    "Ex 32:28",
+    "Nm 1:49",
+    "Nm 3:6",
+    "Nm 3:15",
+    "Nm 3:17",
+    "Nm 4:2",
+    "Nm 16:1",
+    "Nm 16:7",
+    "Nm 16:8",
+    "Nm 16:10",
+    "Nm 17:3",
+    "Nm 17:8",
+    "Nm 18:2",
+    "Nm 18:21",
+    "Nm 26:58",
+    "Nm 26:59"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Levitas»."
   },
   {
    "id": "Judah_1",
@@ -19862,7 +25284,18 @@ window.BIBLIA_DATOS = {
     "Ex 1:2",
     "Ex 31:2",
     "Ex 35:30",
-    "Ex 38:22"
+    "Ex 38:22",
+    "Nm 1:7",
+    "Nm 1:26",
+    "Nm 1:27",
+    "Nm 2:3",
+    "Nm 2:9",
+    "Nm 7:12",
+    "Nm 10:14",
+    "Nm 13:7",
+    "Nm 26:19",
+    "Nm 26:20",
+    "Nm 34:19"
    ],
    "nota": ""
   },
@@ -19888,7 +25321,17 @@ window.BIBLIA_DATOS = {
     "Ex 31:6",
     "Ex 35:34",
     "Ex 38:23",
-    "Lv 24:11"
+    "Lv 24:11",
+    "Nm 1:12",
+    "Nm 1:38",
+    "Nm 1:39",
+    "Nm 2:25",
+    "Nm 2:31",
+    "Nm 7:66",
+    "Nm 10:25",
+    "Nm 13:13",
+    "Nm 26:42",
+    "Nm 34:22"
    ],
    "nota": ""
   },
@@ -19909,7 +25352,17 @@ window.BIBLIA_DATOS = {
     "Gn 35:25",
     "Gn 46:24",
     "Gn 49:21",
-    "Ex 1:4"
+    "Ex 1:4",
+    "Nm 1:15",
+    "Nm 1:42",
+    "Nm 1:43",
+    "Nm 2:29",
+    "Nm 7:78",
+    "Nm 10:27",
+    "Nm 13:15",
+    "Nm 26:48",
+    "Nm 26:50",
+    "Nm 34:28"
    ],
    "nota": "En la Reina-Valera 1909: Nephtalí."
   },
@@ -19930,7 +25383,24 @@ window.BIBLIA_DATOS = {
     "Gn 35:26",
     "Gn 46:16",
     "Gn 49:19",
-    "Ex 1:4"
+    "Ex 1:4",
+    "Nm 1:14",
+    "Nm 1:24",
+    "Nm 1:25",
+    "Nm 2:14",
+    "Nm 7:42",
+    "Nm 10:20",
+    "Nm 13:16",
+    "Nm 26:15",
+    "Nm 32:1",
+    "Nm 32:2",
+    "Nm 32:6",
+    "Nm 32:25",
+    "Nm 32:29",
+    "Nm 32:31",
+    "Nm 32:33",
+    "Nm 32:34",
+    "Nm 34:14"
    ],
    "nota": ""
   },
@@ -19951,7 +25421,18 @@ window.BIBLIA_DATOS = {
     "Gn 35:26",
     "Gn 46:17",
     "Gn 49:20",
-    "Ex 1:4"
+    "Ex 1:4",
+    "Nm 1:13",
+    "Nm 1:40",
+    "Nm 1:41",
+    "Nm 2:27",
+    "Nm 7:72",
+    "Nm 10:26",
+    "Nm 13:14",
+    "Nm 26:44",
+    "Nm 26:46",
+    "Nm 26:47",
+    "Nm 34:27"
    ],
    "nota": ""
   },
@@ -19971,7 +25452,15 @@ window.BIBLIA_DATOS = {
     "Gn 35:23",
     "Gn 46:13",
     "Gn 49:14",
-    "Ex 1:3"
+    "Ex 1:3",
+    "Nm 1:8",
+    "Nm 1:28",
+    "Nm 1:29",
+    "Nm 2:5",
+    "Nm 10:15",
+    "Nm 13:8",
+    "Nm 26:23",
+    "Nm 34:26"
    ],
    "nota": "En la Reina-Valera 1909: Issachâr."
   },
@@ -19992,7 +25481,16 @@ window.BIBLIA_DATOS = {
     "Gn 35:23",
     "Gn 46:14",
     "Gn 49:13",
-    "Ex 1:3"
+    "Ex 1:3",
+    "Nm 1:9",
+    "Nm 1:30",
+    "Nm 1:31",
+    "Nm 2:7",
+    "Nm 7:24",
+    "Nm 10:16",
+    "Nm 13:11",
+    "Nm 26:26",
+    "Nm 34:25"
    ],
    "nota": ""
   },
@@ -20175,7 +25673,18 @@ window.BIBLIA_DATOS = {
     "Ex 1:5",
     "Ex 1:6",
     "Ex 1:8",
-    "Ex 13:19"
+    "Ex 13:19",
+    "Nm 1:10",
+    "Nm 1:32",
+    "Nm 13:12",
+    "Nm 26:28",
+    "Nm 26:37",
+    "Nm 27:1",
+    "Nm 32:33",
+    "Nm 34:23",
+    "Nm 36:1",
+    "Nm 36:5",
+    "Nm 36:12"
    ],
    "nota": "Faraón le da el nombre Zaphnath-paaneah (Gn 41:45)."
   },
@@ -20294,7 +25803,17 @@ window.BIBLIA_DATOS = {
     "Gn 46:19",
     "Gn 46:21",
     "Gn 49:27",
-    "Ex 1:3"
+    "Ex 1:3",
+    "Nm 1:11",
+    "Nm 1:36",
+    "Nm 1:37",
+    "Nm 2:22",
+    "Nm 7:60",
+    "Nm 10:24",
+    "Nm 13:10",
+    "Nm 26:38",
+    "Nm 26:41",
+    "Nm 34:21"
    ],
    "nota": "Su madre lo llamó Benoni; su padre, Benjamín (Gn 35:18)."
   },
@@ -21665,7 +27184,8 @@ window.BIBLIA_DATOS = {
     "Gn 38:3",
     "Gn 38:6",
     "Gn 38:7",
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:19"
    ],
    "nota": ""
   },
@@ -21684,7 +27204,8 @@ window.BIBLIA_DATOS = {
     "Gn 38:4",
     "Gn 38:8",
     "Gn 38:9",
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:19"
    ],
    "nota": ""
   },
@@ -21704,7 +27225,8 @@ window.BIBLIA_DATOS = {
     "Gn 38:11",
     "Gn 38:14",
     "Gn 38:26",
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:20"
    ],
    "nota": ""
   },
@@ -21743,7 +27265,9 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 38:29",
    "refs": [
     "Gn 38:29",
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:20",
+    "Nm 26:21"
    ],
    "nota": "En la Reina-Valera 1909: Phares."
   },
@@ -21753,16 +27277,18 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Zara",
    "rol": "",
    "formas_rv1909": [
-    "Zara"
+    "Zara",
+    "Zera"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 38:30",
    "refs": [
     "Gn 38:30",
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:20"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Zera»."
   },
   {
    "id": "Esposa_de_Potifar",
@@ -21837,7 +27363,26 @@ window.BIBLIA_DATOS = {
     "Gn 48:14",
     "Gn 48:17",
     "Gn 48:20",
-    "Gn 50:23"
+    "Gn 50:23",
+    "Nm 1:10",
+    "Nm 1:34",
+    "Nm 1:35",
+    "Nm 2:20",
+    "Nm 7:54",
+    "Nm 10:23",
+    "Nm 13:12",
+    "Nm 26:28",
+    "Nm 26:29",
+    "Nm 26:34",
+    "Nm 27:1",
+    "Nm 32:33",
+    "Nm 32:39",
+    "Nm 32:40",
+    "Nm 32:41",
+    "Nm 34:14",
+    "Nm 34:23",
+    "Nm 36:1",
+    "Nm 36:12"
    ],
    "nota": ""
   },
@@ -21862,7 +27407,19 @@ window.BIBLIA_DATOS = {
     "Gn 48:14",
     "Gn 48:17",
     "Gn 48:20",
-    "Gn 50:23"
+    "Gn 50:23",
+    "Nm 1:10",
+    "Nm 1:32",
+    "Nm 1:33",
+    "Nm 2:18",
+    "Nm 2:24",
+    "Nm 7:48",
+    "Nm 10:22",
+    "Nm 13:9",
+    "Nm 26:28",
+    "Nm 26:35",
+    "Nm 26:37",
+    "Nm 34:24"
    ],
    "nota": "En la Reina-Valera 1909: Ephraim."
   },
@@ -21879,7 +27436,8 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 46:9",
    "refs": [
     "Gn 46:9",
-    "Ex 6:14"
+    "Ex 6:14",
+    "Nm 26:6"
    ],
    "nota": ""
   },
@@ -21889,16 +27447,18 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Hanoch",
    "rol": "",
    "formas_rv1909": [
-    "Hanoch"
+    "Hanoch",
+    "Hanoc"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:9",
    "refs": [
     "Gn 46:9",
-    "Ex 6:14"
+    "Ex 6:14",
+    "Nm 26:5"
    ],
-   "nota": "En la Reina-Valera 1909: Hanoch."
+   "nota": "En la Reina-Valera 1909: Hanoch. En Números la RV1909 escribe también «Hanoc»."
   },
   {
    "id": "Hezron_1",
@@ -21906,16 +27466,18 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Hezrón",
    "rol": "",
    "formas_rv1909": [
-    "Hezrón"
+    "Hezrón",
+    "Hesrón"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:9",
    "refs": [
     "Gn 46:9",
-    "Ex 6:14"
+    "Ex 6:14",
+    "Nm 26:6"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Hesrón»."
   },
   {
    "id": "Pallu_1",
@@ -21930,7 +27492,9 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 46:9",
    "refs": [
     "Gn 46:9",
-    "Ex 6:14"
+    "Ex 6:14",
+    "Nm 26:5",
+    "Nm 26:8"
    ],
    "nota": "En la Reina-Valera 1909: Phallu."
   },
@@ -21947,7 +27511,8 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 46:10",
    "refs": [
     "Gn 46:10",
-    "Ex 6:15"
+    "Ex 6:15",
+    "Nm 26:12"
    ],
    "nota": "En la Reina-Valera 1909: Jachîn."
   },
@@ -21964,7 +27529,8 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 46:10",
    "refs": [
     "Gn 46:10",
-    "Ex 6:15"
+    "Ex 6:15",
+    "Nm 26:12"
    ],
    "nota": ""
   },
@@ -21974,16 +27540,18 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jemuel",
    "rol": "",
    "formas_rv1909": [
-    "Jemuel"
+    "Jemuel",
+    "Nemuel"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:10",
    "refs": [
     "Gn 46:10",
-    "Ex 6:15"
+    "Ex 6:15",
+    "Nm 26:12"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Nemuel». Nm 26:12 lo llama «Nemuel»; la identificación con Jemuel (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "La_cananea",
@@ -22030,7 +27598,8 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 46:10",
    "refs": [
     "Gn 46:10",
-    "Ex 6:15"
+    "Ex 6:15",
+    "Nm 26:13"
    ],
    "nota": ""
   },
@@ -22041,16 +27610,18 @@ window.BIBLIA_DATOS = {
    "rol": "",
    "formas_rv1909": [
     "Zohar",
-    "Zoar"
+    "Zoar",
+    "Zera"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:10",
    "refs": [
     "Gn 46:10",
-    "Ex 6:15"
+    "Ex 6:15",
+    "Nm 26:13"
    ],
-   "nota": "En Éxodo la RV1909 escribe también «Zoar»."
+   "nota": "En Éxodo la RV1909 escribe también «Zoar». En Números la RV1909 escribe también «Zera». Nm 26:13 lo llama «Zera»; la identificación con Zohar (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Gershon_1",
@@ -22066,7 +27637,16 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 46:11",
     "Ex 6:16",
-    "Ex 6:17"
+    "Ex 6:17",
+    "Nm 3:17",
+    "Nm 3:18",
+    "Nm 3:25",
+    "Nm 4:22",
+    "Nm 4:38",
+    "Nm 4:41",
+    "Nm 7:7",
+    "Nm 10:17",
+    "Nm 26:57"
    ],
    "nota": ""
   },
@@ -22084,7 +27664,18 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 46:11",
     "Ex 6:16",
-    "Ex 6:18"
+    "Ex 6:18",
+    "Nm 3:17",
+    "Nm 3:19",
+    "Nm 3:27",
+    "Nm 3:29",
+    "Nm 4:2",
+    "Nm 4:4",
+    "Nm 4:15",
+    "Nm 7:9",
+    "Nm 16:1",
+    "Nm 26:57",
+    "Nm 26:58"
    ],
    "nota": "En la Reina-Valera 1909: Coath."
   },
@@ -22102,7 +27693,19 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 46:11",
     "Ex 6:16",
-    "Ex 6:19"
+    "Ex 6:19",
+    "Nm 3:17",
+    "Nm 3:20",
+    "Nm 3:33",
+    "Nm 3:35",
+    "Nm 3:36",
+    "Nm 4:29",
+    "Nm 4:33",
+    "Nm 4:42",
+    "Nm 4:45",
+    "Nm 7:8",
+    "Nm 10:17",
+    "Nm 26:57"
    ],
    "nota": ""
   },
@@ -22118,7 +27721,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:12",
    "refs": [
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:21"
    ],
    "nota": ""
   },
@@ -22128,15 +27732,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Hezrón",
    "rol": "",
    "formas_rv1909": [
-    "Hezrón"
+    "Hezrón",
+    "Hesrón"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:12",
    "refs": [
-    "Gn 46:12"
+    "Gn 46:12",
+    "Nm 26:21"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Hesrón»."
   },
   {
    "id": "Iob_1",
@@ -22144,15 +27750,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Job",
    "rol": "",
    "formas_rv1909": [
-    "Job"
+    "Job",
+    "Jasub"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:13",
    "refs": [
-    "Gn 46:13"
+    "Gn 46:13",
+    "Nm 26:24"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Jasub». Nm 26:24 lo llama «Jasub»; la identificación con Job (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Puvvah_1",
@@ -22160,15 +27768,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Phua",
    "rol": "",
    "formas_rv1909": [
-    "Phua"
+    "Phua",
+    "Puá"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:13",
    "refs": [
-    "Gn 46:13"
+    "Gn 46:13",
+    "Nm 26:23"
    ],
-   "nota": "En la Reina-Valera 1909: Phua."
+   "nota": "En la Reina-Valera 1909: Phua. En Números la RV1909 escribe también «Puá»."
   },
   {
    "id": "Shimron_1",
@@ -22182,7 +27792,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:13",
    "refs": [
-    "Gn 46:13"
+    "Gn 46:13",
+    "Nm 26:24"
    ],
    "nota": ""
   },
@@ -22198,7 +27809,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:13",
    "refs": [
-    "Gn 46:13"
+    "Gn 46:13",
+    "Nm 26:23"
    ],
    "nota": "En la Reina-Valera 1909: Thola."
   },
@@ -22214,7 +27826,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:14",
    "refs": [
-    "Gn 46:14"
+    "Gn 46:14",
+    "Nm 26:26"
    ],
    "nota": ""
   },
@@ -22224,15 +27837,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jahleel",
    "rol": "",
    "formas_rv1909": [
-    "Jahleel"
+    "Jahleel",
+    "Jalel"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:14",
    "refs": [
-    "Gn 46:14"
+    "Gn 46:14",
+    "Nm 26:26"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Jalel»."
   },
   {
    "id": "Sered_1",
@@ -22246,7 +27861,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:14",
    "refs": [
-    "Gn 46:14"
+    "Gn 46:14",
+    "Nm 26:26"
    ],
    "nota": ""
   },
@@ -22262,7 +27878,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:17"
    ],
    "nota": ""
   },
@@ -22272,15 +27889,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Arodi",
    "rol": "",
    "formas_rv1909": [
-    "Arodi"
+    "Arodi",
+    "Aroditas"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:17"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Aroditas»."
   },
   {
    "id": "Eri_1",
@@ -22288,15 +27907,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Heri",
    "rol": "",
    "formas_rv1909": [
-    "Heri"
+    "Heri",
+    "Eri"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:16"
    ],
-   "nota": "En la Reina-Valera 1909: Heri."
+   "nota": "En la Reina-Valera 1909: Heri. En Números la RV1909 escribe también «Eri»."
   },
   {
    "id": "Ezbon_1",
@@ -22304,15 +27925,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Ezbón",
    "rol": "",
    "formas_rv1909": [
-    "Ezbón"
+    "Ezbón",
+    "Ozni"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:16"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Ozni». Nm 26:16 lo llama «Ozni»; la identificación con Ezbón (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Haggi_1",
@@ -22326,7 +27949,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:15"
    ],
    "nota": "En la Reina-Valera 1909: Aggi."
   },
@@ -22342,7 +27966,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:15"
    ],
    "nota": ""
   },
@@ -22352,15 +27977,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Ziphión",
    "rol": "",
    "formas_rv1909": [
-    "Ziphión"
+    "Ziphión",
+    "Zephón"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:16",
    "refs": [
-    "Gn 46:16"
+    "Gn 46:16",
+    "Nm 26:15"
    ],
-   "nota": "En la Reina-Valera 1909: Ziphión."
+   "nota": "En la Reina-Valera 1909: Ziphión. En Números la RV1909 escribe también «Zephón». Nm 26:15 lo llama «Zephón»; la identificación con Zifión (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Beriah_1",
@@ -22374,7 +28001,9 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:17",
    "refs": [
-    "Gn 46:17"
+    "Gn 46:17",
+    "Nm 26:44",
+    "Nm 26:45"
    ],
    "nota": "En la Reina-Valera 1909: Beria."
   },
@@ -22390,7 +28019,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:17",
    "refs": [
-    "Gn 46:17"
+    "Gn 46:17",
+    "Nm 26:45"
    ],
    "nota": ""
   },
@@ -22400,15 +28030,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jimna",
    "rol": "",
    "formas_rv1909": [
-    "Jimna"
+    "Jimna",
+    "Imna"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:17",
    "refs": [
-    "Gn 46:17"
+    "Gn 46:17",
+    "Nm 26:44"
    ],
-   "nota": "En la Reina-Valera 1909: Jimna."
+   "nota": "En la Reina-Valera 1909: Jimna. En Números la RV1909 escribe también «Imna»."
   },
   {
    "id": "Ishvah_1",
@@ -22432,15 +28064,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Isui",
    "rol": "",
    "formas_rv1909": [
-    "Isui"
+    "Isui",
+    "Issui"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:17",
    "refs": [
-    "Gn 46:17"
+    "Gn 46:17",
+    "Nm 26:44"
    ],
-   "nota": "En la Reina-Valera 1909: Isui."
+   "nota": "En la Reina-Valera 1909: Isui. En Números la RV1909 escribe también «Issui». Nm 26:44 lo llama «Issui» (BibleData asigna ese versículo a Isúa; el nombre hebreo, Yishví, es el de Isúi)."
   },
   {
    "id": "Malchiel_1",
@@ -22454,7 +28088,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:17",
    "refs": [
-    "Gn 46:17"
+    "Gn 46:17",
+    "Nm 26:45"
    ],
    "nota": "En la Reina-Valera 1909: Malchîel."
   },
@@ -22470,7 +28105,8 @@ window.BIBLIA_DATOS = {
    "sexo": "f",
    "primera_ref": "Gn 46:17",
    "refs": [
-    "Gn 46:17"
+    "Gn 46:17",
+    "Nm 26:46"
    ],
    "nota": ""
   },
@@ -22486,9 +28122,10 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:40"
    ],
-   "nota": "Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis."
+   "nota": "Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis. Nm 26:40 lo cuenta entre los «hijos de Bela» (hijo de Benjamín); Gn 46:21, entre los hijos de Benjamín."
   },
   {
    "id": "Ashbel_1",
@@ -22502,7 +28139,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:38"
    ],
    "nota": ""
   },
@@ -22534,7 +28172,9 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:38",
+    "Nm 26:40"
    ],
    "nota": ""
   },
@@ -22544,15 +28184,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Ehi",
    "rol": "",
    "formas_rv1909": [
-    "Ehi"
+    "Ehi",
+    "Achîram"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:38"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Achîram». Nm 26:38 lo llama «Achîram»; la identificación con Ehi (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Gera_1",
@@ -22576,15 +28218,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Huppim",
    "rol": "",
    "formas_rv1909": [
-    "Huppim"
+    "Huppim",
+    "Hupham"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:39"
    ],
-   "nota": "En la Reina-Valera 1909: Huppim. Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis."
+   "nota": "En la Reina-Valera 1909: Huppim. Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis. En Números la RV1909 escribe también «Hupham». Nm 26:39 lo llama «Hupham»; la identificación con Hupim (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Muppim_1",
@@ -22592,15 +28236,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Muppim",
    "rol": "",
    "formas_rv1909": [
-    "Muppim"
+    "Muppim",
+    "Supham"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:39"
    ],
-   "nota": "En la Reina-Valera 1909: Muppim. Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis."
+   "nota": "En la Reina-Valera 1909: Muppim. Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis. En Números la RV1909 escribe también «Supham». Nm 26:39 lo llama «Supham»; la identificación con Mupim (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Naaman_1",
@@ -22614,9 +28260,10 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:21",
    "refs": [
-    "Gn 46:21"
+    "Gn 46:21",
+    "Nm 26:40"
    ],
-   "nota": "Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis."
+   "nota": "Gn 46:21 lo cuenta entre los hijos de Benjamín; otras listas bíblicas (Nm 26:38-40; 1 Cr 7:6-12; 8:1-5) dan la familia de Benjamín de otra manera. Aquí se sigue a Génesis. Nm 26:40 lo cuenta entre los «hijos de Bela» (hijo de Benjamín); Gn 46:21, entre los hijos de Benjamín."
   },
   {
    "id": "Rosh_1",
@@ -22640,15 +28287,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Husim",
    "rol": "",
    "formas_rv1909": [
-    "Husim"
+    "Husim",
+    "Suham"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:23",
    "refs": [
-    "Gn 46:23"
+    "Gn 46:23",
+    "Nm 26:42"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Suham». Nm 26:42 lo llama «Suham»; la identificación con Husim (Gn 46) es de BibleData (inferida por la lista de familias)."
   },
   {
    "id": "Guni_1",
@@ -22662,7 +28311,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:24",
    "refs": [
-    "Gn 46:24"
+    "Gn 46:24",
+    "Nm 26:48"
    ],
    "nota": ""
   },
@@ -22678,7 +28328,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 46:24",
    "refs": [
-    "Gn 46:24"
+    "Gn 46:24",
+    "Nm 26:48"
    ],
    "nota": ""
   },
@@ -22688,15 +28339,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jezer",
    "rol": "",
    "formas_rv1909": [
-    "Jezer"
+    "Jezer",
+    "Jeser"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:24",
    "refs": [
-    "Gn 46:24"
+    "Gn 46:24",
+    "Nm 26:49"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Jeser»."
   },
   {
    "id": "Shillem_1",
@@ -22704,15 +28357,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Shillem",
    "rol": "",
    "formas_rv1909": [
-    "Shillem"
+    "Shillem",
+    "Sillem"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Gn 46:24",
    "refs": [
-    "Gn 46:24"
+    "Gn 46:24",
+    "Nm 26:49"
    ],
-   "nota": "En la Reina-Valera 1909: Shillem."
+   "nota": "En la Reina-Valera 1909: Shillem. En Números la RV1909 escribe también «Sillem»."
   },
   {
    "id": "Machir_1",
@@ -22726,7 +28381,12 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Gn 50:23",
    "refs": [
-    "Gn 50:23"
+    "Gn 50:23",
+    "Nm 26:29",
+    "Nm 27:1",
+    "Nm 32:39",
+    "Nm 32:40",
+    "Nm 36:1"
    ],
    "nota": "En la Reina-Valera 1909: Machîr."
   },
@@ -23163,7 +28823,223 @@ window.BIBLIA_DATOS = {
     "Lv 25:1",
     "Lv 26:46",
     "Lv 27:1",
-    "Lv 27:34"
+    "Lv 27:34",
+    "Nm 1:2",
+    "Nm 1:17",
+    "Nm 1:19",
+    "Nm 1:44",
+    "Nm 1:48",
+    "Nm 1:54",
+    "Nm 2:1",
+    "Nm 2:33",
+    "Nm 2:34",
+    "Nm 3:1",
+    "Nm 3:5",
+    "Nm 3:11",
+    "Nm 3:14",
+    "Nm 3:16",
+    "Nm 3:38",
+    "Nm 3:39",
+    "Nm 3:40",
+    "Nm 3:42",
+    "Nm 3:44",
+    "Nm 3:49",
+    "Nm 3:51",
+    "Nm 4:1",
+    "Nm 4:17",
+    "Nm 4:21",
+    "Nm 4:34",
+    "Nm 4:37",
+    "Nm 4:41",
+    "Nm 4:45",
+    "Nm 4:46",
+    "Nm 4:49",
+    "Nm 5:1",
+    "Nm 5:4",
+    "Nm 5:5",
+    "Nm 5:11",
+    "Nm 6:1",
+    "Nm 6:22",
+    "Nm 7:1",
+    "Nm 7:4",
+    "Nm 7:6",
+    "Nm 7:11",
+    "Nm 7:89",
+    "Nm 8:1",
+    "Nm 8:3",
+    "Nm 8:4",
+    "Nm 8:5",
+    "Nm 8:20",
+    "Nm 8:22",
+    "Nm 8:23",
+    "Nm 9:1",
+    "Nm 9:4",
+    "Nm 9:5",
+    "Nm 9:6",
+    "Nm 9:8",
+    "Nm 9:9",
+    "Nm 9:23",
+    "Nm 10:1",
+    "Nm 10:13",
+    "Nm 10:29",
+    "Nm 10:35",
+    "Nm 11:2",
+    "Nm 11:10",
+    "Nm 11:11",
+    "Nm 11:16",
+    "Nm 11:21",
+    "Nm 11:23",
+    "Nm 11:24",
+    "Nm 11:27",
+    "Nm 11:28",
+    "Nm 11:29",
+    "Nm 11:30",
+    "Nm 12:1",
+    "Nm 12:2",
+    "Nm 12:3",
+    "Nm 12:4",
+    "Nm 12:7",
+    "Nm 12:8",
+    "Nm 12:11",
+    "Nm 12:13",
+    "Nm 12:14",
+    "Nm 13:2",
+    "Nm 13:4",
+    "Nm 13:17",
+    "Nm 13:18",
+    "Nm 13:27",
+    "Nm 13:31",
+    "Nm 14:2",
+    "Nm 14:5",
+    "Nm 14:11",
+    "Nm 14:13",
+    "Nm 14:26",
+    "Nm 14:36",
+    "Nm 14:39",
+    "Nm 14:41",
+    "Nm 14:44",
+    "Nm 15:1",
+    "Nm 15:17",
+    "Nm 15:22",
+    "Nm 15:23",
+    "Nm 15:33",
+    "Nm 15:35",
+    "Nm 15:36",
+    "Nm 15:37",
+    "Nm 16:2",
+    "Nm 16:3",
+    "Nm 16:4",
+    "Nm 16:8",
+    "Nm 16:12",
+    "Nm 16:15",
+    "Nm 16:16",
+    "Nm 16:18",
+    "Nm 16:20",
+    "Nm 16:23",
+    "Nm 16:25",
+    "Nm 16:28",
+    "Nm 16:36",
+    "Nm 16:40",
+    "Nm 16:41",
+    "Nm 16:42",
+    "Nm 16:43",
+    "Nm 16:44",
+    "Nm 16:46",
+    "Nm 16:47",
+    "Nm 16:50",
+    "Nm 17:1",
+    "Nm 17:6",
+    "Nm 17:7",
+    "Nm 17:8",
+    "Nm 17:9",
+    "Nm 17:10",
+    "Nm 17:11",
+    "Nm 17:12",
+    "Nm 18:25",
+    "Nm 19:1",
+    "Nm 20:2",
+    "Nm 20:3",
+    "Nm 20:6",
+    "Nm 20:7",
+    "Nm 20:9",
+    "Nm 20:10",
+    "Nm 20:11",
+    "Nm 20:12",
+    "Nm 20:14",
+    "Nm 20:23",
+    "Nm 20:27",
+    "Nm 20:28",
+    "Nm 21:5",
+    "Nm 21:7",
+    "Nm 21:8",
+    "Nm 21:9",
+    "Nm 21:16",
+    "Nm 21:32",
+    "Nm 21:34",
+    "Nm 25:4",
+    "Nm 25:5",
+    "Nm 25:6",
+    "Nm 25:10",
+    "Nm 25:16",
+    "Nm 26:1",
+    "Nm 26:3",
+    "Nm 26:4",
+    "Nm 26:9",
+    "Nm 26:52",
+    "Nm 26:59",
+    "Nm 26:63",
+    "Nm 26:64",
+    "Nm 27:2",
+    "Nm 27:5",
+    "Nm 27:6",
+    "Nm 27:11",
+    "Nm 27:12",
+    "Nm 27:15",
+    "Nm 27:18",
+    "Nm 27:22",
+    "Nm 27:23",
+    "Nm 28:1",
+    "Nm 30:1",
+    "Nm 30:2",
+    "Nm 30:16",
+    "Nm 31:1",
+    "Nm 31:3",
+    "Nm 31:6",
+    "Nm 31:7",
+    "Nm 31:12",
+    "Nm 31:13",
+    "Nm 31:14",
+    "Nm 31:15",
+    "Nm 31:21",
+    "Nm 31:25",
+    "Nm 31:31",
+    "Nm 31:41",
+    "Nm 31:42",
+    "Nm 31:47",
+    "Nm 31:48",
+    "Nm 31:49",
+    "Nm 31:51",
+    "Nm 31:54",
+    "Nm 32:2",
+    "Nm 32:6",
+    "Nm 32:20",
+    "Nm 32:25",
+    "Nm 32:28",
+    "Nm 32:29",
+    "Nm 32:33",
+    "Nm 32:40",
+    "Nm 33:1",
+    "Nm 33:2",
+    "Nm 33:50",
+    "Nm 34:1",
+    "Nm 34:13",
+    "Nm 34:16",
+    "Nm 35:1",
+    "Nm 35:9",
+    "Nm 36:1",
+    "Nm 36:5",
+    "Nm 36:10",
+    "Nm 36:13"
    ],
    "nota": ""
   },
@@ -23191,7 +29067,8 @@ window.BIBLIA_DATOS = {
     "Ex 18:6",
     "Ex 18:9",
     "Ex 18:10",
-    "Ex 18:12"
+    "Ex 18:12",
+    "Nm 10:29"
    ],
    "nota": "En la Reina-Valera 1909: Ragüel/Jethro. El texto lo llama Ragüel (Reuel) en Ex 2:18 y Jetro desde Ex 3:1; en ambos casos es el sacerdote de Madián y suegro de Moisés (Ex 2:16-21; 3:1; 18:1). Se trata como una sola persona siguiendo a BibleData: la identificación es inferida, el texto no dice que sean el mismo. Distinto de Reuel, hijo de Esaú (Gn 36:4).",
    "identidad": {
@@ -23555,9 +29432,104 @@ window.BIBLIA_DATOS = {
     "Lv 22:4",
     "Lv 22:18",
     "Lv 24:3",
-    "Lv 24:9"
+    "Lv 24:9",
+    "Nm 1:3",
+    "Nm 1:17",
+    "Nm 1:44",
+    "Nm 2:1",
+    "Nm 3:1",
+    "Nm 3:2",
+    "Nm 3:3",
+    "Nm 3:4",
+    "Nm 3:6",
+    "Nm 3:9",
+    "Nm 3:10",
+    "Nm 3:32",
+    "Nm 3:38",
+    "Nm 3:39",
+    "Nm 3:48",
+    "Nm 3:51",
+    "Nm 4:1",
+    "Nm 4:5",
+    "Nm 4:15",
+    "Nm 4:16",
+    "Nm 4:17",
+    "Nm 4:19",
+    "Nm 4:27",
+    "Nm 4:28",
+    "Nm 4:34",
+    "Nm 4:37",
+    "Nm 4:41",
+    "Nm 4:45",
+    "Nm 4:46",
+    "Nm 6:22",
+    "Nm 8:2",
+    "Nm 8:3",
+    "Nm 8:11",
+    "Nm 8:13",
+    "Nm 8:19",
+    "Nm 8:20",
+    "Nm 8:21",
+    "Nm 8:22",
+    "Nm 9:6",
+    "Nm 10:8",
+    "Nm 12:1",
+    "Nm 12:4",
+    "Nm 12:5",
+    "Nm 12:10",
+    "Nm 12:11",
+    "Nm 13:27",
+    "Nm 14:2",
+    "Nm 14:5",
+    "Nm 14:26",
+    "Nm 15:33",
+    "Nm 16:3",
+    "Nm 16:11",
+    "Nm 16:16",
+    "Nm 16:17",
+    "Nm 16:18",
+    "Nm 16:20",
+    "Nm 16:37",
+    "Nm 16:40",
+    "Nm 16:41",
+    "Nm 16:42",
+    "Nm 16:43",
+    "Nm 16:46",
+    "Nm 16:47",
+    "Nm 16:50",
+    "Nm 17:3",
+    "Nm 17:6",
+    "Nm 17:8",
+    "Nm 17:10",
+    "Nm 18:1",
+    "Nm 18:8",
+    "Nm 18:20",
+    "Nm 18:28",
+    "Nm 19:1",
+    "Nm 20:2",
+    "Nm 20:6",
+    "Nm 20:8",
+    "Nm 20:10",
+    "Nm 20:12",
+    "Nm 20:23",
+    "Nm 20:24",
+    "Nm 20:25",
+    "Nm 20:26",
+    "Nm 20:28",
+    "Nm 20:29",
+    "Nm 25:7",
+    "Nm 25:11",
+    "Nm 26:1",
+    "Nm 26:9",
+    "Nm 26:59",
+    "Nm 26:60",
+    "Nm 26:64",
+    "Nm 27:13",
+    "Nm 33:1",
+    "Nm 33:38",
+    "Nm 33:39"
    ],
-   "nota": ""
+   "nota": "Muere en la cumbre del monte de Hor (Nm 20:25-28; 33:38), a los 123 años (Nm 33:39); Eleazar recibe sus vestiduras."
   },
   {
    "id": "Libni_1",
@@ -23571,7 +29543,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:17",
    "refs": [
-    "Ex 6:17"
+    "Ex 6:17",
+    "Nm 3:18"
    ],
    "nota": ""
   },
@@ -23581,15 +29554,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Shimi",
    "rol": "",
    "formas_rv1909": [
-    "Shimi"
+    "Shimi",
+    "Simei"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Ex 6:17",
    "refs": [
-    "Ex 6:17"
+    "Ex 6:17",
+    "Nm 3:18"
    ],
-   "nota": "En la Reina-Valera 1909: Shimi."
+   "nota": "En la Reina-Valera 1909: Shimi. En Números la RV1909 escribe también «Simei»."
   },
   {
    "id": "Amram_1",
@@ -23605,7 +29580,10 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Ex 6:18",
     "Ex 6:20",
-    "Ex 15:20"
+    "Ex 15:20",
+    "Nm 3:19",
+    "Nm 26:58",
+    "Nm 26:59"
    ],
    "nota": ""
   },
@@ -23621,7 +29599,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:18",
    "refs": [
-    "Ex 6:18"
+    "Ex 6:18",
+    "Nm 3:19"
    ],
    "nota": ""
   },
@@ -23631,16 +29610,19 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Izhar",
    "rol": "",
    "formas_rv1909": [
-    "Izhar"
+    "Izhar",
+    "Ishar"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Ex 6:18",
    "refs": [
     "Ex 6:18",
-    "Ex 6:21"
+    "Ex 6:21",
+    "Nm 3:19",
+    "Nm 16:1"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Ishar»."
   },
   {
    "id": "Uzziel_1",
@@ -23656,7 +29638,9 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Ex 6:18",
     "Ex 6:22",
-    "Lv 10:4"
+    "Lv 10:4",
+    "Nm 3:19",
+    "Nm 3:30"
    ],
    "nota": "En la Reina-Valera 1909: Uzziel. Lv 10:4 lo llama «tío de Aarón» (es hermano de Amram: ambos hijos de Coat, Ex 6:18)."
   },
@@ -23672,7 +29656,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:19",
    "refs": [
-    "Ex 6:19"
+    "Ex 6:19",
+    "Nm 3:20"
    ],
    "nota": "En la Reina-Valera 1909: Mahali."
   },
@@ -23688,7 +29673,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:19",
    "refs": [
-    "Ex 6:19"
+    "Ex 6:19",
+    "Nm 3:20"
    ],
    "nota": ""
   },
@@ -23698,16 +29684,18 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jochêbed",
    "rol": "",
    "formas_rv1909": [
-    "Jochêbed"
+    "Jochêbed",
+    "Jochâbed"
    ],
    "sin_nombre": false,
    "sexo": "f",
    "primera_ref": "Ex 6:20",
    "refs": [
     "Ex 6:20",
-    "Ex 15:20"
+    "Ex 15:20",
+    "Nm 26:59"
    ],
-   "nota": "En la Reina-Valera 1909: Jochêbed. Ex 6:20: la RV1909 dice «su tía»; la LXX (Brenton) dice «the daughter of his father's brother». BibleData la hace hermana de Coat (relación entre hermanos: no se registra)."
+   "nota": "En la Reina-Valera 1909: Jochêbed. Ex 6:20: la RV1909 dice «su tía»; la LXX (Brenton) dice «the daughter of his father's brother». BibleData la hace hermana de Coat (relación entre hermanos: no se registra). En Números la RV1909 escribe también «Jochâbed». Nm 26:59: «Jochâbed, hija de Leví, la cual nació á Leví en Egipto»."
   },
   {
    "id": "Korah_3",
@@ -23715,16 +29703,32 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Cora",
    "rol": "",
    "formas_rv1909": [
-    "Cora"
+    "Cora",
+    "Coré"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Ex 6:21",
    "refs": [
     "Ex 6:21",
-    "Ex 6:24"
+    "Ex 6:24",
+    "Nm 16:1",
+    "Nm 16:5",
+    "Nm 16:6",
+    "Nm 16:8",
+    "Nm 16:16",
+    "Nm 16:19",
+    "Nm 16:24",
+    "Nm 16:27",
+    "Nm 16:32",
+    "Nm 16:40",
+    "Nm 16:49",
+    "Nm 26:9",
+    "Nm 26:10",
+    "Nm 26:11",
+    "Nm 27:3"
    ],
-   "nota": "En la Reina-Valera 1909: Cora. Hijo de Izhar (Ex 6:21); distinto de Coré, hijo de Esaú (Gn 36:5)."
+   "nota": "En la Reina-Valera 1909: Cora. Hijo de Izhar (Ex 6:21); distinto de Coré, hijo de Esaú (Gn 36:5). En Números la RV1909 escribe también «Coré». Encabeza la rebelión contra Moisés y Aarón (Nm 16:1-35); Nm 26:11: «los hijos de Coré no murieron». Distinto de Coré, hijo de Esaú (Gn 36:5)."
   },
   {
    "id": "Nepheg_1",
@@ -23764,16 +29768,18 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Elzaphán",
    "rol": "",
    "formas_rv1909": [
-    "Elzaphán"
+    "Elzaphán",
+    "Elisaphán"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Ex 6:22",
    "refs": [
     "Ex 6:22",
-    "Lv 10:4"
+    "Lv 10:4",
+    "Nm 3:30"
    ],
-   "nota": "En la Reina-Valera 1909: Elzaphán. Lv 10:4-5: Moisés lo llama para sacar a Nadab y Abiú («vuestros hermanos») fuera del campamento."
+   "nota": "En la Reina-Valera 1909: Elzaphán. Lv 10:4-5: Moisés lo llama para sacar a Nadab y Abiú («vuestros hermanos») fuera del campamento. En Números la RV1909 escribe también «Elisaphán»."
   },
   {
    "id": "Mishael_1",
@@ -23824,7 +29830,11 @@ window.BIBLIA_DATOS = {
     "Ex 24:1",
     "Ex 24:9",
     "Ex 28:1",
-    "Lv 10:1"
+    "Lv 10:1",
+    "Nm 3:2",
+    "Nm 3:4",
+    "Nm 26:60",
+    "Nm 26:61"
    ],
    "nota": "Lv 10:1-2: ofrece con Nadab «fuego extraño» y ambos mueren por fuego salido de delante de Jehová."
   },
@@ -23840,7 +29850,12 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:23",
    "refs": [
-    "Ex 6:23"
+    "Ex 6:23",
+    "Nm 1:7",
+    "Nm 2:3",
+    "Nm 7:12",
+    "Nm 7:17",
+    "Nm 10:14"
    ],
    "nota": ""
   },
@@ -23861,9 +29876,43 @@ window.BIBLIA_DATOS = {
     "Ex 28:1",
     "Lv 10:6",
     "Lv 10:12",
-    "Lv 10:16"
+    "Lv 10:16",
+    "Nm 3:2",
+    "Nm 3:4",
+    "Nm 3:32",
+    "Nm 4:16",
+    "Nm 16:37",
+    "Nm 16:39",
+    "Nm 19:3",
+    "Nm 19:4",
+    "Nm 20:25",
+    "Nm 20:26",
+    "Nm 20:28",
+    "Nm 25:7",
+    "Nm 25:11",
+    "Nm 26:1",
+    "Nm 26:3",
+    "Nm 26:60",
+    "Nm 26:63",
+    "Nm 27:2",
+    "Nm 27:19",
+    "Nm 27:21",
+    "Nm 27:22",
+    "Nm 31:6",
+    "Nm 31:12",
+    "Nm 31:13",
+    "Nm 31:21",
+    "Nm 31:26",
+    "Nm 31:29",
+    "Nm 31:31",
+    "Nm 31:41",
+    "Nm 31:51",
+    "Nm 31:54",
+    "Nm 32:2",
+    "Nm 32:28",
+    "Nm 34:17"
    ],
-   "nota": ""
+   "nota": "Sucede a Aarón como sacerdote: Moisés le pone las vestiduras de su padre en el monte Hor (Nm 20:28)."
   },
   {
    "id": "Elisheba_1",
@@ -23898,7 +29947,11 @@ window.BIBLIA_DATOS = {
     "Ex 38:21",
     "Lv 10:6",
     "Lv 10:12",
-    "Lv 10:16"
+    "Lv 10:16",
+    "Nm 3:2",
+    "Nm 3:4",
+    "Nm 4:28",
+    "Nm 26:60"
    ],
    "nota": "En la Reina-Valera 1909: Ithamar."
   },
@@ -23918,7 +29971,11 @@ window.BIBLIA_DATOS = {
     "Ex 24:1",
     "Ex 24:9",
     "Ex 28:1",
-    "Lv 10:1"
+    "Lv 10:1",
+    "Nm 3:2",
+    "Nm 3:4",
+    "Nm 26:60",
+    "Nm 26:61"
    ],
    "nota": "Lv 10:1-2: ofrece con Abiú «fuego extraño» y ambos mueren por fuego salido de delante de Jehová."
   },
@@ -23934,7 +29991,12 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:23",
    "refs": [
-    "Ex 6:23"
+    "Ex 6:23",
+    "Nm 1:7",
+    "Nm 2:3",
+    "Nm 7:12",
+    "Nm 7:17",
+    "Nm 10:14"
    ],
    "nota": ""
   },
@@ -24013,9 +30075,12 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 6:25",
    "refs": [
-    "Ex 6:25"
+    "Ex 6:25",
+    "Nm 25:7",
+    "Nm 25:11",
+    "Nm 31:6"
    ],
-   "nota": "En la Reina-Valera 1909: Phinees."
+   "nota": "En la Reina-Valera 1909: Phinees. Nm 25:7-13: atraviesa a Zimri y a Cozbi y detiene la mortandad; Dios le da «pacto del sacerdocio perpetuo»."
   },
   {
    "id": "Putiel_1",
@@ -24046,9 +30111,16 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Ex 15:20",
    "refs": [
     "Ex 15:20",
-    "Ex 15:21"
+    "Ex 15:21",
+    "Nm 12:1",
+    "Nm 12:4",
+    "Nm 12:5",
+    "Nm 12:10",
+    "Nm 12:15",
+    "Nm 20:1",
+    "Nm 26:59"
    ],
-   "nota": "En la Reina-Valera 1909: María. Ex 15:20 la llama «hermana de Aarón»; el texto masorético de Éxodo no nombra a sus padres: su filiación (Amram y Jocabed) es inferida. La LXX (Brenton) en Ex 6:20 añade «and Mariam their sister». La «hermana» de Moisés de Ex 2:4-8 no tiene nombre y no se identifica con ella."
+   "nota": "En la Reina-Valera 1909: María. Ex 15:20 la llama «hermana de Aarón»; el texto masorético de Éxodo no nombra a sus padres: su filiación (Amram y Jocabed) es inferida. La LXX (Brenton) en Ex 6:20 añade «and Mariam their sister». La «hermana» de Moisés de Ex 2:4-8 no tiene nombre y no se identifica con ella. Muere y es sepultada en Cades, en el desierto de Zin (Nm 20:1). Nm 26:59 sí nombra a sus padres: «parió de Amram á Aarón y á Moisés, y á María su hermana»."
   },
   {
    "id": "Joshua_1",
@@ -24056,7 +30128,8 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Josué",
    "rol": "ayudante de Moisés; pelea contra Amalec",
    "formas_rv1909": [
-    "Josué"
+    "Josué",
+    "Oseas"
    ],
    "sin_nombre": false,
    "sexo": "m",
@@ -24068,9 +30141,34 @@ window.BIBLIA_DATOS = {
     "Ex 17:14",
     "Ex 24:13",
     "Ex 32:17",
-    "Ex 33:11"
+    "Ex 33:11",
+    "Nm 11:28",
+    "Nm 13:9",
+    "Nm 13:17",
+    "Nm 14:6",
+    "Nm 14:30",
+    "Nm 14:38",
+    "Nm 26:65",
+    "Nm 27:18",
+    "Nm 27:22",
+    "Nm 32:12",
+    "Nm 32:28",
+    "Nm 34:17"
    ],
-   "nota": ""
+   "nota": "En Números la RV1909 escribe también «Oseas». Nm 13:17 (RV1909): «á Oseas hijo de Nun, le puso Moisés el nombre de Josué».",
+   "identidad": {
+    "certeza": "texto",
+    "refs": [
+     "Nm 13:9",
+     "Nm 13:17"
+    ],
+    "nombres_rv1909": [
+     "Oseas",
+     "Josué"
+    ],
+    "fuente": "rv1909",
+    "nota": "Nm 13:17 (13:16 en la numeración inglesa): «á Oseas hijo de Nun, le puso Moisés el nombre de Josué»."
+   }
   },
   {
    "id": "Hur_1",
@@ -24207,7 +30305,18 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Ex 33:11",
    "refs": [
-    "Ex 33:11"
+    "Ex 33:11",
+    "Nm 11:28",
+    "Nm 13:9",
+    "Nm 13:17",
+    "Nm 14:6",
+    "Nm 14:30",
+    "Nm 14:38",
+    "Nm 26:65",
+    "Nm 27:18",
+    "Nm 32:12",
+    "Nm 32:28",
+    "Nm 34:17"
    ],
    "nota": ""
   },
@@ -24260,6 +30369,2075 @@ window.BIBLIA_DATOS = {
     "Lv 24:11"
    ],
    "nota": "En la Reina-Valera 1909: Selomith. Lv 24:11: «su madre se llamaba Selomith, hija de Dribi, de la tribu de Dan». Madre del hijo que blasfema el Nombre (Lv 24:10-11)."
+  },
+  {
+   "id": "Elizur_1",
+   "nombre": "Elisur",
+   "nombre_rv1909": "Elisur",
+   "rol": "",
+   "formas_rv1909": [
+    "Elisur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:5",
+   "refs": [
+    "Nm 1:5",
+    "Nm 2:10",
+    "Nm 7:30",
+    "Nm 7:35",
+    "Nm 10:18"
+   ],
+   "nota": "Jefe de la tribu de Rubén en el censo del Sinaí (Nm 1:5; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Shedeur_1",
+   "nombre": "Sedeur",
+   "nombre_rv1909": "Sedeur",
+   "rol": "",
+   "formas_rv1909": [
+    "Sedeur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:5",
+   "refs": [
+    "Nm 1:5",
+    "Nm 2:10",
+    "Nm 7:30",
+    "Nm 7:35",
+    "Nm 10:18"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Shelumiel_1",
+   "nombre": "Selumiel",
+   "nombre_rv1909": "Selumiel",
+   "rol": "",
+   "formas_rv1909": [
+    "Selumiel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:6",
+   "refs": [
+    "Nm 1:6",
+    "Nm 2:12",
+    "Nm 7:36",
+    "Nm 7:41",
+    "Nm 10:19"
+   ],
+   "nota": "Jefe de la tribu de Simeón en el censo del Sinaí (Nm 1:6; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Zurishaddai_1",
+   "nombre": "Zurisadai",
+   "nombre_rv1909": "Zurisaddai",
+   "rol": "",
+   "formas_rv1909": [
+    "Zurisaddai"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:6",
+   "refs": [
+    "Nm 1:6",
+    "Nm 2:12",
+    "Nm 7:36",
+    "Nm 7:41",
+    "Nm 10:19"
+   ],
+   "nota": "En la Reina-Valera 1909: Zurisaddai."
+  },
+  {
+   "id": "Nethanel_1",
+   "nombre": "Natanael",
+   "nombre_rv1909": "Nathanael",
+   "rol": "",
+   "formas_rv1909": [
+    "Nathanael"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:8",
+   "refs": [
+    "Nm 1:8",
+    "Nm 2:5",
+    "Nm 7:18",
+    "Nm 7:23",
+    "Nm 10:15"
+   ],
+   "nota": "En la Reina-Valera 1909: Nathanael. Jefe de la tribu de Isacar en el censo del Sinaí (Nm 1:8; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Zuar_1",
+   "nombre": "Zuar",
+   "nombre_rv1909": "Suar",
+   "rol": "",
+   "formas_rv1909": [
+    "Suar"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:8",
+   "refs": [
+    "Nm 1:8",
+    "Nm 2:5",
+    "Nm 7:18",
+    "Nm 7:23",
+    "Nm 10:15"
+   ],
+   "nota": "En la Reina-Valera 1909: Suar."
+  },
+  {
+   "id": "Eliab_1",
+   "nombre": "Eliab",
+   "nombre_rv1909": "Eliab",
+   "rol": "",
+   "formas_rv1909": [
+    "Eliab"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:9",
+   "refs": [
+    "Nm 1:9",
+    "Nm 2:7",
+    "Nm 7:24",
+    "Nm 7:29",
+    "Nm 10:16"
+   ],
+   "nota": "Jefe de la tribu de Zabulón (Nm 1:9). Distinto de Eliab, padre de Datán y Abiram (Nm 16:1), de la tribu de Rubén."
+  },
+  {
+   "id": "Helon_1",
+   "nombre": "Helón",
+   "nombre_rv1909": "Helón",
+   "rol": "",
+   "formas_rv1909": [
+    "Helón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:9",
+   "refs": [
+    "Nm 1:9",
+    "Nm 2:7",
+    "Nm 7:24",
+    "Nm 7:29",
+    "Nm 10:16"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ammihud_1",
+   "nombre": "Amiud",
+   "nombre_rv1909": "Ammiud",
+   "rol": "",
+   "formas_rv1909": [
+    "Ammiud"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:10",
+   "refs": [
+    "Nm 1:10",
+    "Nm 2:18",
+    "Nm 7:48",
+    "Nm 7:53",
+    "Nm 10:22"
+   ],
+   "nota": "En la Reina-Valera 1909: Ammiud. Padre de Elisama, de Efraín (Nm 1:10). BibleData distingue otros dos Amiud en Nm 34:20 y 34:28."
+  },
+  {
+   "id": "Elishama_1",
+   "nombre": "Elisama",
+   "nombre_rv1909": "Elisama",
+   "rol": "",
+   "formas_rv1909": [
+    "Elisama"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:10",
+   "refs": [
+    "Nm 1:10",
+    "Nm 2:18",
+    "Nm 7:48",
+    "Nm 7:53",
+    "Nm 10:22"
+   ],
+   "nota": "Jefe de la tribu de Efraín en el censo del Sinaí (Nm 1:10; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Gamaliel_1",
+   "nombre": "Gamaliel",
+   "nombre_rv1909": "Gamaliel",
+   "rol": "",
+   "formas_rv1909": [
+    "Gamaliel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:10",
+   "refs": [
+    "Nm 1:10",
+    "Nm 2:20",
+    "Nm 7:54",
+    "Nm 7:59",
+    "Nm 10:23"
+   ],
+   "nota": "Jefe de la tribu de Manasés en el censo del Sinaí (Nm 1:10; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Pedahzur_1",
+   "nombre": "Pedasur",
+   "nombre_rv1909": "Pedasur",
+   "rol": "",
+   "formas_rv1909": [
+    "Pedasur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:10",
+   "refs": [
+    "Nm 1:10",
+    "Nm 2:20",
+    "Nm 7:54",
+    "Nm 7:59",
+    "Nm 10:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Abidan_1",
+   "nombre": "Abidán",
+   "nombre_rv1909": "Abidán",
+   "rol": "",
+   "formas_rv1909": [
+    "Abidán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:11",
+   "refs": [
+    "Nm 1:11",
+    "Nm 2:22",
+    "Nm 7:60",
+    "Nm 7:65",
+    "Nm 10:24"
+   ],
+   "nota": "Jefe de la tribu de Benjamín en el censo del Sinaí (Nm 1:11; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Gideoni_1",
+   "nombre": "Gedeoni",
+   "nombre_rv1909": "Gedeón",
+   "rol": "",
+   "formas_rv1909": [
+    "Gedeón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:11",
+   "refs": [
+    "Nm 1:11",
+    "Nm 2:22",
+    "Nm 7:60",
+    "Nm 7:65",
+    "Nm 10:24"
+   ],
+   "nota": "En la Reina-Valera 1909: Gedeón. La RV1909 escribe «Gedeón» (Nm 1:11); en hebreo es Gidoní, distinto del juez Gedeón."
+  },
+  {
+   "id": "Ahiezer_1",
+   "nombre": "Ahiezer",
+   "nombre_rv1909": "Ahiezer",
+   "rol": "",
+   "formas_rv1909": [
+    "Ahiezer"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:12",
+   "refs": [
+    "Nm 1:12",
+    "Nm 2:25",
+    "Nm 7:66",
+    "Nm 7:71",
+    "Nm 10:25"
+   ],
+   "nota": "Jefe de la tribu de Dan en el censo del Sinaí (Nm 1:12; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Ammishaddai_1",
+   "nombre": "Amisadai",
+   "nombre_rv1909": "Ammisaddai",
+   "rol": "",
+   "formas_rv1909": [
+    "Ammisaddai",
+    "Amisaddai"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:12",
+   "refs": [
+    "Nm 1:12",
+    "Nm 2:25",
+    "Nm 7:66",
+    "Nm 7:71",
+    "Nm 10:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Ammisaddai/Amisaddai."
+  },
+  {
+   "id": "Ochran_1",
+   "nombre": "Ocrán",
+   "nombre_rv1909": "Ocrán",
+   "rol": "",
+   "formas_rv1909": [
+    "Ocrán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:13",
+   "refs": [
+    "Nm 1:13",
+    "Nm 2:27",
+    "Nm 7:72",
+    "Nm 7:77",
+    "Nm 10:26"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Pagiel_1",
+   "nombre": "Pagiel",
+   "nombre_rv1909": "Pagiel",
+   "rol": "",
+   "formas_rv1909": [
+    "Pagiel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 7:72",
+   "refs": [
+    "Nm 1:13",
+    "Nm 2:27",
+    "Nm 7:72",
+    "Nm 7:77",
+    "Nm 10:26"
+   ],
+   "nota": "Jefe de la tribu de Aser en el censo del Sinaí (Nm 1:13; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Deuel_1",
+   "nombre": "Deuel",
+   "nombre_rv1909": "Dehuel",
+   "rol": "",
+   "formas_rv1909": [
+    "Dehuel",
+    "Rehuel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:14",
+   "refs": [
+    "Nm 1:14",
+    "Nm 2:14",
+    "Nm 7:42",
+    "Nm 7:47",
+    "Nm 10:20"
+   ],
+   "nota": "En la Reina-Valera 1909: Dehuel/Rehuel. La RV1909 escribe «Dehuel» (Nm 1:14; 7:42…) y «Rehuel» (Nm 2:14), como el hebreo. Distinto de Ragüel, suegro de Moisés."
+  },
+  {
+   "id": "Eliasaph_1",
+   "nombre": "Eliasaf",
+   "nombre_rv1909": "Eliasaph",
+   "rol": "",
+   "formas_rv1909": [
+    "Eliasaph"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:14",
+   "refs": [
+    "Nm 1:14",
+    "Nm 2:14",
+    "Nm 7:42",
+    "Nm 7:47",
+    "Nm 10:20"
+   ],
+   "nota": "En la Reina-Valera 1909: Eliasaph. Jefe de la tribu de Gad (Nm 1:14). Distinto de Eliasaf hijo de Lael, jefe de los gersonitas (Nm 3:24)."
+  },
+  {
+   "id": "Ahira_1",
+   "nombre": "Ahira",
+   "nombre_rv1909": "Ahira",
+   "rol": "",
+   "formas_rv1909": [
+    "Ahira"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:15",
+   "refs": [
+    "Nm 1:15",
+    "Nm 2:29",
+    "Nm 7:78",
+    "Nm 7:83",
+    "Nm 10:27"
+   ],
+   "nota": "Jefe de la tribu de Neftalí en el censo del Sinaí (Nm 1:15; también Nm 2, 7 y 10)."
+  },
+  {
+   "id": "Enan_1",
+   "nombre": "Enán",
+   "nombre_rv1909": "Enán",
+   "rol": "",
+   "formas_rv1909": [
+    "Enán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 1:15",
+   "refs": [
+    "Nm 1:15",
+    "Nm 2:29",
+    "Nm 7:78",
+    "Nm 7:83",
+    "Nm 10:27"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Eliasaph_2",
+   "nombre": "Eliasaf",
+   "nombre_rv1909": "Eliasaph",
+   "rol": "",
+   "formas_rv1909": [
+    "Eliasaph"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 3:24",
+   "refs": [
+    "Nm 3:24"
+   ],
+   "nota": "En la Reina-Valera 1909: Eliasaph. Jefe de los gersonitas (Nm 3:24). Distinto de Eliasaf hijo de Deuel, jefe de Gad (Nm 1:14)."
+  },
+  {
+   "id": "Lael_1",
+   "nombre": "Lael",
+   "nombre_rv1909": "Lael",
+   "rol": "",
+   "formas_rv1909": [
+    "Lael"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 3:24",
+   "refs": [
+    "Nm 3:24"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Abihail_1",
+   "nombre": "Abihail",
+   "nombre_rv1909": "Abihail",
+   "rol": "",
+   "formas_rv1909": [
+    "Abihail"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 3:35",
+   "refs": [
+    "Nm 3:35"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zuriel_1",
+   "nombre": "Zuriel",
+   "nombre_rv1909": "Suriel",
+   "rol": "",
+   "formas_rv1909": [
+    "Suriel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 3:35",
+   "refs": [
+    "Nm 3:35"
+   ],
+   "nota": "En la Reina-Valera 1909: Suriel."
+  },
+  {
+   "id": "Hobab_1",
+   "nombre": "Hobab",
+   "nombre_rv1909": "Hobab",
+   "rol": "",
+   "formas_rv1909": [
+    "Hobab"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 10:29",
+   "refs": [
+    "Nm 10:29"
+   ],
+   "nota": "Nm 10:29: «Hobab, hijo de Ragüel Madianita, su suegro»; la frase no deja claro si «su suegro» es Hobab o Ragüel."
+  },
+  {
+   "id": "Eldad_1",
+   "nombre": "Eldad",
+   "nombre_rv1909": "Eldad",
+   "rol": "profetiza en el campamento",
+   "formas_rv1909": [
+    "Eldad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 11:26",
+   "refs": [
+    "Nm 11:26",
+    "Nm 11:27"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Medad_1",
+   "nombre": "Medad",
+   "nombre_rv1909": "Medad",
+   "rol": "profetiza en el campamento",
+   "formas_rv1909": [
+    "Medad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 11:26",
+   "refs": [
+    "Nm 11:26",
+    "Nm 11:27"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Shammua_1",
+   "nombre": "Samúa",
+   "nombre_rv1909": "Sammua",
+   "rol": "",
+   "formas_rv1909": [
+    "Sammua"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:5",
+   "refs": [
+    "Nm 13:5"
+   ],
+   "nota": "En la Reina-Valera 1909: Sammua."
+  },
+  {
+   "id": "Zaccur_1",
+   "nombre": "Zacur",
+   "nombre_rv1909": "Zaccur",
+   "rol": "",
+   "formas_rv1909": [
+    "Zaccur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:5",
+   "refs": [
+    "Nm 13:5"
+   ],
+   "nota": "En la Reina-Valera 1909: Zaccur."
+  },
+  {
+   "id": "Hori_2",
+   "nombre": "Horí",
+   "nombre_rv1909": "Hurí",
+   "rol": "",
+   "formas_rv1909": [
+    "Hurí"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:6",
+   "refs": [
+    "Nm 13:6"
+   ],
+   "nota": "En la Reina-Valera 1909: Hurí."
+  },
+  {
+   "id": "Shaphat_1",
+   "nombre": "Safat",
+   "nombre_rv1909": "Saphat",
+   "rol": "",
+   "formas_rv1909": [
+    "Saphat"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:6",
+   "refs": [
+    "Nm 13:6"
+   ],
+   "nota": "En la Reina-Valera 1909: Saphat."
+  },
+  {
+   "id": "Caleb_1",
+   "nombre": "Caleb",
+   "nombre_rv1909": "Caleb",
+   "rol": "enviado a reconocer la tierra, de la tribu de Judá",
+   "formas_rv1909": [
+    "Caleb"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:7",
+   "refs": [
+    "Nm 13:7",
+    "Nm 13:31",
+    "Nm 14:6",
+    "Nm 14:24",
+    "Nm 14:30",
+    "Nm 14:38",
+    "Nm 26:65",
+    "Nm 32:12",
+    "Nm 34:19"
+   ],
+   "nota": "Uno de los doce enviados a reconocer la tierra; Nm 32:12 lo llama «Caleb, hijo de Jephone Cenezeo»."
+  },
+  {
+   "id": "Jephunneh_1",
+   "nombre": "Jefone",
+   "nombre_rv1909": "Jephone",
+   "rol": "",
+   "formas_rv1909": [
+    "Jephone"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:7",
+   "refs": [
+    "Nm 13:7",
+    "Nm 14:6",
+    "Nm 14:30",
+    "Nm 14:38",
+    "Nm 26:65",
+    "Nm 32:12",
+    "Nm 34:19"
+   ],
+   "nota": "En la Reina-Valera 1909: Jephone."
+  },
+  {
+   "id": "Igal_1",
+   "nombre": "Igal",
+   "nombre_rv1909": "Igal",
+   "rol": "",
+   "formas_rv1909": [
+    "Igal"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:8",
+   "refs": [
+    "Nm 13:8"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Joseph_2",
+   "nombre": "José",
+   "nombre_rv1909": "Joseph",
+   "rol": "",
+   "formas_rv1909": [
+    "Joseph"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:8",
+   "refs": [
+    "Nm 13:8"
+   ],
+   "nota": "En la Reina-Valera 1909: Joseph. Padre de Igal, de la tribu de Isacar (Nm 13:8 en la RV1909). Distinto de José, hijo de Jacob."
+  },
+  {
+   "id": "Palti_1",
+   "nombre": "Palti",
+   "nombre_rv1909": "Palti",
+   "rol": "",
+   "formas_rv1909": [
+    "Palti"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:10",
+   "refs": [
+    "Nm 13:10"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Raphu_1",
+   "nombre": "Rafú",
+   "nombre_rv1909": "Raphu",
+   "rol": "",
+   "formas_rv1909": [
+    "Raphu"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:10",
+   "refs": [
+    "Nm 13:10"
+   ],
+   "nota": "En la Reina-Valera 1909: Raphu."
+  },
+  {
+   "id": "Gaddiel_1",
+   "nombre": "Gadiel",
+   "nombre_rv1909": "Gaddiel",
+   "rol": "",
+   "formas_rv1909": [
+    "Gaddiel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:11",
+   "refs": [
+    "Nm 13:11"
+   ],
+   "nota": "En la Reina-Valera 1909: Gaddiel."
+  },
+  {
+   "id": "Sodi_1",
+   "nombre": "Sodi",
+   "nombre_rv1909": "Sodi",
+   "rol": "",
+   "formas_rv1909": [
+    "Sodi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:11",
+   "refs": [
+    "Nm 13:11"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Gaddi_1",
+   "nombre": "Gadi",
+   "nombre_rv1909": "Gaddi",
+   "rol": "",
+   "formas_rv1909": [
+    "Gaddi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:12",
+   "refs": [
+    "Nm 13:12"
+   ],
+   "nota": "En la Reina-Valera 1909: Gaddi."
+  },
+  {
+   "id": "Susi_1",
+   "nombre": "Susi",
+   "nombre_rv1909": "Susi",
+   "rol": "",
+   "formas_rv1909": [
+    "Susi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:12",
+   "refs": [
+    "Nm 13:12"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ammiel_1",
+   "nombre": "Amiel",
+   "nombre_rv1909": "Ammiel",
+   "rol": "",
+   "formas_rv1909": [
+    "Ammiel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:13",
+   "refs": [
+    "Nm 13:13"
+   ],
+   "nota": "En la Reina-Valera 1909: Ammiel."
+  },
+  {
+   "id": "Gemalli_1",
+   "nombre": "Gemali",
+   "nombre_rv1909": "Gemalli",
+   "rol": "",
+   "formas_rv1909": [
+    "Gemalli"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:13",
+   "refs": [
+    "Nm 13:13"
+   ],
+   "nota": "En la Reina-Valera 1909: Gemalli."
+  },
+  {
+   "id": "Michael_1",
+   "nombre": "Micael",
+   "nombre_rv1909": "Michâel",
+   "rol": "",
+   "formas_rv1909": [
+    "Michâel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:14",
+   "refs": [
+    "Nm 13:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Michâel."
+  },
+  {
+   "id": "Sethur_1",
+   "nombre": "Setur",
+   "nombre_rv1909": "Sethur",
+   "rol": "",
+   "formas_rv1909": [
+    "Sethur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:14",
+   "refs": [
+    "Nm 13:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Sethur."
+  },
+  {
+   "id": "Nahbi_1",
+   "nombre": "Nahbi",
+   "nombre_rv1909": "Nahabí",
+   "rol": "",
+   "formas_rv1909": [
+    "Nahabí"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:15",
+   "refs": [
+    "Nm 13:15"
+   ],
+   "nota": "En la Reina-Valera 1909: Nahabí."
+  },
+  {
+   "id": "Vophsi_1",
+   "nombre": "Vapsi",
+   "nombre_rv1909": "Vapsi",
+   "rol": "",
+   "formas_rv1909": [
+    "Vapsi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:15",
+   "refs": [
+    "Nm 13:15"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Geuel_1",
+   "nombre": "Geuel",
+   "nombre_rv1909": "Geuel",
+   "rol": "",
+   "formas_rv1909": [
+    "Geuel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:16",
+   "refs": [
+    "Nm 13:16"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Machi_1",
+   "nombre": "Maqui",
+   "nombre_rv1909": "Machî",
+   "rol": "",
+   "formas_rv1909": [
+    "Machî"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:16",
+   "refs": [
+    "Nm 13:16"
+   ],
+   "nota": "En la Reina-Valera 1909: Machî."
+  },
+  {
+   "id": "Ahiman_1",
+   "nombre": "Ahimán",
+   "nombre_rv1909": "Aimán",
+   "rol": "",
+   "formas_rv1909": [
+    "Aimán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:23",
+   "refs": [
+    "Nm 13:23"
+   ],
+   "nota": "En la Reina-Valera 1909: Aimán."
+  },
+  {
+   "id": "Anak_1",
+   "nombre": "Anac",
+   "nombre_rv1909": "Anac",
+   "rol": "",
+   "formas_rv1909": [
+    "Anac"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:23",
+   "refs": [
+    "Nm 13:23",
+    "Nm 13:29",
+    "Nm 13:33"
+   ],
+   "nota": "Antepasado de los «gigantes, hijos de Anac» (Nm 13:33 en la RV1909)."
+  },
+  {
+   "id": "Sheshai_1",
+   "nombre": "Sesai",
+   "nombre_rv1909": "Sesai",
+   "rol": "",
+   "formas_rv1909": [
+    "Sesai"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:23",
+   "refs": [
+    "Nm 13:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Talmai_1",
+   "nombre": "Talmai",
+   "nombre_rv1909": "Talmai",
+   "rol": "",
+   "formas_rv1909": [
+    "Talmai"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 13:23",
+   "refs": [
+    "Nm 13:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Abiram_1",
+   "nombre": "Abiram",
+   "nombre_rv1909": "Abiram",
+   "rol": "se rebela contra Moisés con Coré",
+   "formas_rv1909": [
+    "Abiram"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 16:1",
+   "refs": [
+    "Nm 16:1",
+    "Nm 16:12",
+    "Nm 16:24",
+    "Nm 16:25",
+    "Nm 16:27",
+    "Nm 26:9"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Dathan_1",
+   "nombre": "Datán",
+   "nombre_rv1909": "Dathán",
+   "rol": "se rebela contra Moisés con Coré",
+   "formas_rv1909": [
+    "Dathán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 16:1",
+   "refs": [
+    "Nm 16:1",
+    "Nm 16:12",
+    "Nm 16:24",
+    "Nm 16:25",
+    "Nm 16:27",
+    "Nm 26:9"
+   ],
+   "nota": "En la Reina-Valera 1909: Dathán."
+  },
+  {
+   "id": "Eliab_2",
+   "nombre": "Eliab",
+   "nombre_rv1909": "Eliab",
+   "rol": "",
+   "formas_rv1909": [
+    "Eliab"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 16:1",
+   "refs": [
+    "Nm 16:1",
+    "Nm 16:12",
+    "Nm 26:8",
+    "Nm 26:9"
+   ],
+   "nota": "De la tribu de Rubén, padre de Datán y Abiram (Nm 16:1). Distinto de Eliab, jefe de Zabulón (Nm 1:9)."
+  },
+  {
+   "id": "On_1",
+   "nombre": "On",
+   "nombre_rv1909": "Hon",
+   "rol": "",
+   "formas_rv1909": [
+    "Hon"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 16:1",
+   "refs": [
+    "Nm 16:1"
+   ],
+   "nota": "En la Reina-Valera 1909: Hon."
+  },
+  {
+   "id": "Peleth_1",
+   "nombre": "Pelet",
+   "nombre_rv1909": "Peleth",
+   "rol": "",
+   "formas_rv1909": [
+    "Peleth"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 16:1",
+   "refs": [
+    "Nm 16:1"
+   ],
+   "nota": "En la Reina-Valera 1909: Peleth."
+  },
+  {
+   "id": "Sihon_1",
+   "nombre": "Sehón",
+   "nombre_rv1909": "Sehón",
+   "rol": "rey de los amorreos",
+   "formas_rv1909": [
+    "Sehón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 21:21",
+   "refs": [
+    "Nm 21:21",
+    "Nm 21:23",
+    "Nm 21:26",
+    "Nm 21:27",
+    "Nm 21:28",
+    "Nm 21:29",
+    "Nm 21:34",
+    "Nm 32:33"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Og_1",
+   "nombre": "Og",
+   "nombre_rv1909": "Og",
+   "rol": "rey de Basán",
+   "formas_rv1909": [
+    "Og"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 21:33",
+   "refs": [
+    "Nm 21:33",
+    "Nm 32:33"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Balak_1",
+   "nombre": "Balac",
+   "nombre_rv1909": "Balac",
+   "rol": "rey de Moab",
+   "formas_rv1909": [
+    "Balac"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 22:2",
+   "refs": [
+    "Nm 22:2",
+    "Nm 22:4",
+    "Nm 22:7",
+    "Nm 22:10",
+    "Nm 22:13",
+    "Nm 22:14",
+    "Nm 22:15",
+    "Nm 22:16",
+    "Nm 22:18",
+    "Nm 22:36",
+    "Nm 22:37",
+    "Nm 22:38",
+    "Nm 22:39",
+    "Nm 22:40",
+    "Nm 22:41",
+    "Nm 23:1",
+    "Nm 23:2",
+    "Nm 23:3",
+    "Nm 23:5",
+    "Nm 23:7",
+    "Nm 23:11",
+    "Nm 23:13",
+    "Nm 23:15",
+    "Nm 23:16",
+    "Nm 23:17",
+    "Nm 23:18",
+    "Nm 23:25",
+    "Nm 23:26",
+    "Nm 23:27",
+    "Nm 23:28",
+    "Nm 23:29",
+    "Nm 23:30",
+    "Nm 24:10",
+    "Nm 24:12",
+    "Nm 24:13",
+    "Nm 24:25"
+   ],
+   "nota": "Nm 22:4: «Balac, hijo de Zippor, era entonces rey de Moab»."
+  },
+  {
+   "id": "Zippor_1",
+   "nombre": "Zipor",
+   "nombre_rv1909": "Zippor",
+   "rol": "",
+   "formas_rv1909": [
+    "Zippor"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 22:2",
+   "refs": [
+    "Nm 22:2",
+    "Nm 22:4",
+    "Nm 22:10",
+    "Nm 22:16",
+    "Nm 23:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Zippor."
+  },
+  {
+   "id": "Balaam_1",
+   "nombre": "Balaam",
+   "nombre_rv1909": "Balaam",
+   "rol": "adivino llamado por Balac para maldecir a Israel",
+   "formas_rv1909": [
+    "Balaam"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 22:5",
+   "refs": [
+    "Nm 22:5",
+    "Nm 22:7",
+    "Nm 22:8",
+    "Nm 22:9",
+    "Nm 22:10",
+    "Nm 22:12",
+    "Nm 22:13",
+    "Nm 22:14",
+    "Nm 22:16",
+    "Nm 22:18",
+    "Nm 22:20",
+    "Nm 22:21",
+    "Nm 22:23",
+    "Nm 22:25",
+    "Nm 22:27",
+    "Nm 22:28",
+    "Nm 22:29",
+    "Nm 22:30",
+    "Nm 22:31",
+    "Nm 22:34",
+    "Nm 22:35",
+    "Nm 22:36",
+    "Nm 22:37",
+    "Nm 22:38",
+    "Nm 22:39",
+    "Nm 22:40",
+    "Nm 22:41",
+    "Nm 23:1",
+    "Nm 23:2",
+    "Nm 23:3",
+    "Nm 23:4",
+    "Nm 23:5",
+    "Nm 23:11",
+    "Nm 23:16",
+    "Nm 23:25",
+    "Nm 23:26",
+    "Nm 23:27",
+    "Nm 23:28",
+    "Nm 23:29",
+    "Nm 23:30",
+    "Nm 24:1",
+    "Nm 24:2",
+    "Nm 24:3",
+    "Nm 24:10",
+    "Nm 24:12",
+    "Nm 24:15",
+    "Nm 24:25",
+    "Nm 31:8",
+    "Nm 31:16"
+   ],
+   "nota": "Nm 22:5: Balac lo manda llamar «á Pethor, que está junto al río». Muere a espada en la guerra contra Madián (Nm 31:8)."
+  },
+  {
+   "id": "Beor_2",
+   "nombre": "Beor",
+   "nombre_rv1909": "Beor",
+   "rol": "",
+   "formas_rv1909": [
+    "Beor"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 22:5",
+   "refs": [
+    "Nm 22:5",
+    "Nm 24:3",
+    "Nm 24:15",
+    "Nm 31:8"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Agag_1",
+   "nombre": "Agag",
+   "nombre_rv1909": "Agag",
+   "rol": "rey nombrado en el oráculo de Balaam",
+   "formas_rv1909": [
+    "Agag"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 24:7",
+   "refs": [
+    "Nm 24:7"
+   ],
+   "nota": "Solo se nombra en el oráculo de Balaam (Nm 24:7) como rey con quien se compara al de Israel."
+  },
+  {
+   "id": "Salu_1",
+   "nombre": "Salu",
+   "nombre_rv1909": "Salu",
+   "rol": "",
+   "formas_rv1909": [
+    "Salu"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 25:14",
+   "refs": [
+    "Nm 25:14"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zimri_1",
+   "nombre": "Zimri",
+   "nombre_rv1909": "Zimri",
+   "rol": "israelita muerto por Finees",
+   "formas_rv1909": [
+    "Zimri"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 25:14",
+   "refs": [
+    "Nm 25:14"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Cozbi_1",
+   "nombre": "Cozbi",
+   "nombre_rv1909": "Cozbi",
+   "rol": "madianita muerta por Finees",
+   "formas_rv1909": [
+    "Cozbi"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Nm 25:15",
+   "refs": [
+    "Nm 25:15",
+    "Nm 25:18"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zur_1",
+   "nombre": "Zur",
+   "nombre_rv1909": "Zur",
+   "rol": "",
+   "formas_rv1909": [
+    "Zur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 25:15",
+   "refs": [
+    "Nm 25:15"
+   ],
+   "nota": "Nm 25:15: «Zur, príncipe de pueblos, padre de familia en Madián». BibleData lo distingue de Zur, uno de los cinco reyes de Madián (Nm 31:8); podrían ser el mismo, pero el texto no lo dice."
+  },
+  {
+   "id": "Nemuel_1",
+   "nombre": "Nemuel",
+   "nombre_rv1909": "Nemuel",
+   "rol": "",
+   "formas_rv1909": [
+    "Nemuel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:9",
+   "refs": [
+    "Nm 26:9"
+   ],
+   "nota": "Hijo de Eliab, de Rubén (Nm 26:9). Distinto de Jemuel, hijo de Simeón, al que Nm 26:12 también llama «Nemuel»."
+  },
+  {
+   "id": "Gilead_1",
+   "nombre": "Galaad",
+   "nombre_rv1909": "Galaad",
+   "rol": "",
+   "formas_rv1909": [
+    "Galaad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:29",
+   "refs": [
+    "Nm 26:29",
+    "Nm 26:30",
+    "Nm 26:31",
+    "Nm 26:32",
+    "Nm 27:1",
+    "Nm 36:1"
+   ],
+   "nota": "Hijo de Maquir (Nm 26:29). «Galaad» es también la región al oriente del Jordán (Nm 32)."
+  },
+  {
+   "id": "Helek_1",
+   "nombre": "Helec",
+   "nombre_rv1909": "Helec",
+   "rol": "",
+   "formas_rv1909": [
+    "Helec"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:30",
+   "refs": [
+    "Nm 26:30"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Iezer_1",
+   "nombre": "Jezer",
+   "nombre_rv1909": "Jezer",
+   "rol": "",
+   "formas_rv1909": [
+    "Jezer"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:30",
+   "refs": [
+    "Nm 26:30"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Asriel_1",
+   "nombre": "Asriel",
+   "nombre_rv1909": "Asriel",
+   "rol": "",
+   "formas_rv1909": [
+    "Asriel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:31",
+   "refs": [
+    "Nm 26:31"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Shechem_2",
+   "nombre": "Siquem",
+   "nombre_rv1909": "Sechêm",
+   "rol": "",
+   "formas_rv1909": [
+    "Sechêm"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:31",
+   "refs": [
+    "Nm 26:31"
+   ],
+   "nota": "En la Reina-Valera 1909: Sechêm. Hijo de Galaad, de Manasés (Nm 26:31). Distinto de Siquem, hijo de Hamor (Gn 34)."
+  },
+  {
+   "id": "Hepher_1",
+   "nombre": "Hefer",
+   "nombre_rv1909": "Hepher",
+   "rol": "",
+   "formas_rv1909": [
+    "Hepher"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:32",
+   "refs": [
+    "Nm 26:32",
+    "Nm 26:33",
+    "Nm 27:1"
+   ],
+   "nota": "En la Reina-Valera 1909: Hepher."
+  },
+  {
+   "id": "Shemida_1",
+   "nombre": "Semida",
+   "nombre_rv1909": "Semida",
+   "rol": "",
+   "formas_rv1909": [
+    "Semida"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:32",
+   "refs": [
+    "Nm 26:32"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Hoglah_1",
+   "nombre": "Hogla",
+   "nombre_rv1909": "Hogla",
+   "rol": "",
+   "formas_rv1909": [
+    "Hogla"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Nm 26:33",
+   "refs": [
+    "Nm 26:33",
+    "Nm 27:1",
+    "Nm 36:11"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Mahlah_1",
+   "nombre": "Maala",
+   "nombre_rv1909": "Maala",
+   "rol": "",
+   "formas_rv1909": [
+    "Maala"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Nm 26:33",
+   "refs": [
+    "Nm 26:33",
+    "Nm 27:1",
+    "Nm 36:11"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Milcah_2",
+   "nombre": "Milca",
+   "nombre_rv1909": "Milca",
+   "rol": "",
+   "formas_rv1909": [
+    "Milca",
+    "Milchâ"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Nm 26:33",
+   "refs": [
+    "Nm 26:33",
+    "Nm 27:1",
+    "Nm 36:11"
+   ],
+   "nota": "Hija de Zelofehad (Nm 26:33; 27:1). Distinta de Milca, mujer de Nacor (Gn 11:29)."
+  },
+  {
+   "id": "Noah_2",
+   "nombre": "Noa",
+   "nombre_rv1909": "Noa",
+   "rol": "",
+   "formas_rv1909": [
+    "Noa"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Nm 26:33",
+   "refs": [
+    "Nm 26:33",
+    "Nm 27:1",
+    "Nm 36:11"
+   ],
+   "nota": "Hija de Zelofehad (Nm 26:33). La RV1909 escribe «Noa»; distinta de Noé."
+  },
+  {
+   "id": "Tirzah_1",
+   "nombre": "Tirsa",
+   "nombre_rv1909": "Tirsa",
+   "rol": "",
+   "formas_rv1909": [
+    "Tirsa"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Nm 26:33",
+   "refs": [
+    "Nm 26:33",
+    "Nm 27:1",
+    "Nm 36:11"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zelophehad_1",
+   "nombre": "Zelofehad",
+   "nombre_rv1909": "Salphaad",
+   "rol": "",
+   "formas_rv1909": [
+    "Salphaad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:33",
+   "refs": [
+    "Nm 26:33",
+    "Nm 27:1",
+    "Nm 27:7",
+    "Nm 36:2",
+    "Nm 36:6",
+    "Nm 36:10",
+    "Nm 36:11"
+   ],
+   "nota": "En la Reina-Valera 1909: Salphaad."
+  },
+  {
+   "id": "Becher_2",
+   "nombre": "Bequer",
+   "nombre_rv1909": "Bechêr",
+   "rol": "",
+   "formas_rv1909": [
+    "Bechêr"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:35",
+   "refs": [
+    "Nm 26:35"
+   ],
+   "nota": "En la Reina-Valera 1909: Bechêr. De la tribu de Efraín (Nm 26:35). Distinto de Bequer, hijo de Benjamín (Gn 46:21)."
+  },
+  {
+   "id": "Shuthelah_1",
+   "nombre": "Sutela",
+   "nombre_rv1909": "Suthala",
+   "rol": "",
+   "formas_rv1909": [
+    "Suthala"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:35",
+   "refs": [
+    "Nm 26:35",
+    "Nm 26:36"
+   ],
+   "nota": "En la Reina-Valera 1909: Suthala."
+  },
+  {
+   "id": "Tahan_1",
+   "nombre": "Tahán",
+   "nombre_rv1909": "Tahan",
+   "rol": "",
+   "formas_rv1909": [
+    "Tahan"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:35",
+   "refs": [
+    "Nm 26:35"
+   ],
+   "nota": "En la Reina-Valera 1909: Tahan."
+  },
+  {
+   "id": "Eran_1",
+   "nombre": "Erán",
+   "nombre_rv1909": "Herán",
+   "rol": "",
+   "formas_rv1909": [
+    "Herán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 26:36",
+   "refs": [
+    "Nm 26:36"
+   ],
+   "nota": "En la Reina-Valera 1909: Herán."
+  },
+  {
+   "id": "Evi_1",
+   "nombre": "Evi",
+   "nombre_rv1909": "Evi",
+   "rol": "rey de Madián",
+   "formas_rv1909": [
+    "Evi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 31:8",
+   "refs": [
+    "Nm 31:8"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Hur_2",
+   "nombre": "Hur",
+   "nombre_rv1909": "Hur",
+   "rol": "rey de Madián",
+   "formas_rv1909": [
+    "Hur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 31:8",
+   "refs": [
+    "Nm 31:8"
+   ],
+   "nota": "Uno de los cinco reyes de Madián (Nm 31:8). Distinto de Hur, que acompaña a Moisés en Éxodo (Ex 17:10)."
+  },
+  {
+   "id": "Reba_1",
+   "nombre": "Reba",
+   "nombre_rv1909": "Reba",
+   "rol": "rey de Madián",
+   "formas_rv1909": [
+    "Reba"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 31:8",
+   "refs": [
+    "Nm 31:8"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Rekem_1",
+   "nombre": "Requem",
+   "nombre_rv1909": "Recem",
+   "rol": "rey de Madián",
+   "formas_rv1909": [
+    "Recem"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 31:8",
+   "refs": [
+    "Nm 31:8"
+   ],
+   "nota": "En la Reina-Valera 1909: Recem."
+  },
+  {
+   "id": "Zur_2",
+   "nombre": "Zur",
+   "nombre_rv1909": "Zur",
+   "rol": "rey de Madián",
+   "formas_rv1909": [
+    "Zur"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 31:8",
+   "refs": [
+    "Nm 31:8"
+   ],
+   "nota": "Uno de los cinco reyes de Madián muertos en la guerra (Nm 31:8). BibleData lo distingue de Zur, padre de Cozbi (Nm 25:15); podrían ser el mismo, pero el texto no lo dice."
+  },
+  {
+   "id": "Jair_1",
+   "nombre": "Jair",
+   "nombre_rv1909": "Jair",
+   "rol": "toma las aldeas de Galaad (Havot-jair)",
+   "formas_rv1909": [
+    "Jair"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 32:41",
+   "refs": [
+    "Nm 32:41"
+   ],
+   "nota": "Nm 32:41: «Jair hijo de Manasés» (descendiente de Manasés; el texto no da su padre)."
+  },
+  {
+   "id": "Nobah_1",
+   "nombre": "Noba",
+   "nombre_rv1909": "Noba",
+   "rol": "toma Kenat y le pone su nombre",
+   "formas_rv1909": [
+    "Noba"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 32:42",
+   "refs": [
+    "Nm 32:42"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ammihud_2",
+   "nombre": "Amiud",
+   "nombre_rv1909": "Ammiud",
+   "rol": "",
+   "formas_rv1909": [
+    "Ammiud"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:20",
+   "refs": [
+    "Nm 34:20"
+   ],
+   "nota": "En la Reina-Valera 1909: Ammiud. Padre de Samuel, de Simeón (Nm 34:20). Distinto de los Amiud de Nm 1:10 y Nm 34:28."
+  },
+  {
+   "id": "Samuel_1",
+   "nombre": "Samuel",
+   "nombre_rv1909": "Samuel",
+   "rol": "",
+   "formas_rv1909": [
+    "Samuel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:20",
+   "refs": [
+    "Nm 34:20"
+   ],
+   "nota": "Jefe de Simeón para el reparto de la tierra (Nm 34:20). No es el profeta Samuel."
+  },
+  {
+   "id": "Chislon_1",
+   "nombre": "Quislón",
+   "nombre_rv1909": "Chislón",
+   "rol": "",
+   "formas_rv1909": [
+    "Chislón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:21",
+   "refs": [
+    "Nm 34:21"
+   ],
+   "nota": "En la Reina-Valera 1909: Chislón."
+  },
+  {
+   "id": "Elidad_1",
+   "nombre": "Elidad",
+   "nombre_rv1909": "Elidad",
+   "rol": "",
+   "formas_rv1909": [
+    "Elidad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:21",
+   "refs": [
+    "Nm 34:21"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Bukki_1",
+   "nombre": "Buqui",
+   "nombre_rv1909": "Bucci",
+   "rol": "",
+   "formas_rv1909": [
+    "Bucci"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:22",
+   "refs": [
+    "Nm 34:22"
+   ],
+   "nota": "En la Reina-Valera 1909: Bucci."
+  },
+  {
+   "id": "Jogli_1",
+   "nombre": "Jogli",
+   "nombre_rv1909": "Jogli",
+   "rol": "",
+   "formas_rv1909": [
+    "Jogli"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:22",
+   "refs": [
+    "Nm 34:22"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ephod_1",
+   "nombre": "Efod",
+   "nombre_rv1909": "Ephod",
+   "rol": "",
+   "formas_rv1909": [
+    "Ephod"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:23",
+   "refs": [
+    "Nm 34:23"
+   ],
+   "nota": "En la Reina-Valera 1909: Ephod."
+  },
+  {
+   "id": "Hanniel_1",
+   "nombre": "Haniel",
+   "nombre_rv1909": "Haniel",
+   "rol": "",
+   "formas_rv1909": [
+    "Haniel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:23",
+   "refs": [
+    "Nm 34:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Kemuel_2",
+   "nombre": "Kemuel",
+   "nombre_rv1909": "Chêmuel",
+   "rol": "",
+   "formas_rv1909": [
+    "Chêmuel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:24",
+   "refs": [
+    "Nm 34:24"
+   ],
+   "nota": "En la Reina-Valera 1909: Chêmuel. Jefe de Efraín para el reparto de la tierra (Nm 34:24). Distinto de Kemuel, hijo de Nacor (Gn 22:21)."
+  },
+  {
+   "id": "Shiphtan_1",
+   "nombre": "Siftán",
+   "nombre_rv1909": "Siphtán",
+   "rol": "",
+   "formas_rv1909": [
+    "Siphtán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:24",
+   "refs": [
+    "Nm 34:24"
+   ],
+   "nota": "En la Reina-Valera 1909: Siphtán."
+  },
+  {
+   "id": "Elizaphan_1",
+   "nombre": "Elizafán",
+   "nombre_rv1909": "Elisaphán",
+   "rol": "",
+   "formas_rv1909": [
+    "Elisaphán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:25",
+   "refs": [
+    "Nm 34:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Elisaphán. Jefe de Zabulón para el reparto (Nm 34:25). Distinto de Elzafán hijo de Uziel (Ex 6:22; Nm 3:30), aunque la RV1909 escribe igual «Elisaphán»."
+  },
+  {
+   "id": "Parnach_1",
+   "nombre": "Parnac",
+   "nombre_rv1909": "Pharnach",
+   "rol": "",
+   "formas_rv1909": [
+    "Pharnach"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:25",
+   "refs": [
+    "Nm 34:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Pharnach."
+  },
+  {
+   "id": "Azzan_1",
+   "nombre": "Azán",
+   "nombre_rv1909": "Azan",
+   "rol": "",
+   "formas_rv1909": [
+    "Azan"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:26",
+   "refs": [
+    "Nm 34:26"
+   ],
+   "nota": "En la Reina-Valera 1909: Azan."
+  },
+  {
+   "id": "Paltiel_1",
+   "nombre": "Paltiel",
+   "nombre_rv1909": "Paltiel",
+   "rol": "",
+   "formas_rv1909": [
+    "Paltiel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:26",
+   "refs": [
+    "Nm 34:26"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ahihud_1",
+   "nombre": "Ahiud",
+   "nombre_rv1909": "Ahiud",
+   "rol": "",
+   "formas_rv1909": [
+    "Ahiud"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:27",
+   "refs": [
+    "Nm 34:27"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Shelomi_1",
+   "nombre": "Selomi",
+   "nombre_rv1909": "Selomi",
+   "rol": "",
+   "formas_rv1909": [
+    "Selomi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:27",
+   "refs": [
+    "Nm 34:27"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ammihud_3",
+   "nombre": "Amiud",
+   "nombre_rv1909": "Ammiud",
+   "rol": "",
+   "formas_rv1909": [
+    "Ammiud"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:28",
+   "refs": [
+    "Nm 34:28"
+   ],
+   "nota": "En la Reina-Valera 1909: Ammiud. Padre de Pedael, de Neftalí (Nm 34:28). Distinto de los Amiud de Nm 1:10 y Nm 34:20."
+  },
+  {
+   "id": "Pedahel_1",
+   "nombre": "Pedael",
+   "nombre_rv1909": "Pedael",
+   "rol": "",
+   "formas_rv1909": [
+    "Pedael"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Nm 34:28",
+   "refs": [
+    "Nm 34:28"
+   ],
+   "nota": ""
   }
  ],
  "relaciones": [
@@ -27957,7 +36135,7 @@ window.BIBLIA_DATOS = {
    "ref": "Gn 50:23",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Nm 32:40: «Machîr hijo de Manasés»."
   },
   {
    "de": "Pharaoh_3",
@@ -28034,7 +36212,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:18",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Nm 26:58: «Coath engendró á Amram».",
    "cita": "los hijos de Coath: Amram"
   },
   {
@@ -28053,7 +36231,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:18",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Nm 16:1: «hijo de Ishar, hijo de Coath»."
   },
   {
    "de": "Kohath_1",
@@ -28089,7 +36267,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:20",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Nm 26:59: «parió de Amram á Aarón».",
    "cita": "Amram tomó por mujer á Jochêbed su tía; la cual le parió á Aarón"
   },
   {
@@ -28109,7 +36287,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:20",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Nm 26:59: «parió de Amram á Aarón y á Moisés».",
    "cita": "la cual le parió á Aarón y á Moisés"
   },
   {
@@ -28119,7 +36297,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:20",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Nm 26:59: «ésta parió de Amram á Aarón».",
    "cita": "Jochêbed su tía; la cual le parió á Aarón"
   },
   {
@@ -28129,7 +36307,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:20",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Nm 26:59: «ésta parió de Amram á Aarón y á Moisés».",
    "cita": "la cual le parió á Aarón y á Moisés"
   },
   {
@@ -28139,7 +36317,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:21",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Nm 16:1: «CORÉ, hijo de Ishar»."
   },
   {
    "de": "Izhar_1",
@@ -28193,7 +36371,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:1: «hijos de Aarón, Nadab y Abiú».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:1: «hijos de Aarón, Nadab y Abiú». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar».",
    "cita": "tomóse Aarón por mujer á Elisabeth"
   },
   {
@@ -28203,7 +36381,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar».",
    "cita": "tomóse Aarón por mujer á Elisabeth"
   },
   {
@@ -28223,7 +36401,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar».",
    "cita": "tomóse Aarón por mujer á Elisabeth"
   },
   {
@@ -28233,7 +36411,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:1: «hijos de Aarón, Nadab y Abiú».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:1: «hijos de Aarón, Nadab y Abiú». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar».",
    "cita": "tomóse Aarón por mujer á Elisabeth"
   },
   {
@@ -28338,7 +36516,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:25",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos.",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Nm 25:7: «Phinees, hijo de Eleazar».",
    "cita": "Eleazar, hijo de Aarón, tomó para sí mujer de las hijas de Phutiel, la cual le parió á Phinees"
   },
   {
@@ -28365,19 +36543,21 @@ window.BIBLIA_DATOS = {
    "de": "Amram_1",
    "a": "Miriam_1",
    "tipo": "padre",
-   "ref": "Ex 15:20",
-   "certeza": "inferido",
-   "fuente": "bibledata",
-   "nota": "Inferida: Éxodo solo la llama «hermana de Aarón» (Ex 15:20); la LXX de Ex 6:20 añade «and Mariam their sister»."
+   "ref": "Nm 26:59",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Éxodo solo la llama «hermana de Aarón» (Ex 15:20; antes: Ex 15:20, inferido); Nm 26:59 nombra a sus padres.",
+   "cita": "parió de Amram á Aarón y á Moisés, y á María su hermana"
   },
   {
    "de": "Jochebed_1",
    "a": "Miriam_1",
    "tipo": "madre",
-   "ref": "Ex 15:20",
-   "certeza": "inferido",
-   "fuente": "bibledata",
-   "nota": "Inferida: Éxodo solo la llama «hermana de Aarón» (Ex 15:20); la LXX de Ex 6:20 añade «and Mariam their sister»."
+   "ref": "Nm 26:59",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Éxodo solo la llama «hermana de Aarón» (Ex 15:20; antes: Ex 15:20, inferido); Nm 26:59 nombra a sus padres.",
+   "cita": "ésta parió de Amram á Aarón y á Moisés, y á María su hermana"
   },
   {
    "de": "Moses_1",
@@ -28433,7 +36613,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 33:11",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Nm 13:9: «Oseas hijo de Nun»."
   },
   {
    "de": "Dibri_1",
@@ -28454,6 +36634,600 @@ window.BIBLIA_DATOS = {
    "fuente": "rv1909",
    "nota": "",
    "cita": "su madre se llamaba Selomith"
+  },
+  {
+   "de": "Shedeur_1",
+   "a": "Elizur_1",
+   "tipo": "padre",
+   "ref": "Nm 1:5",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Zurishaddai_1",
+   "a": "Shelumiel_1",
+   "tipo": "padre",
+   "ref": "Nm 1:6",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Zuar_1",
+   "a": "Nethanel_1",
+   "tipo": "padre",
+   "ref": "Nm 1:8",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Helon_1",
+   "a": "Eliab_1",
+   "tipo": "padre",
+   "ref": "Nm 1:9",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Ammihud_1",
+   "a": "Elishama_1",
+   "tipo": "padre",
+   "ref": "Nm 1:10",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Pedahzur_1",
+   "a": "Gamaliel_1",
+   "tipo": "padre",
+   "ref": "Nm 1:10",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gideoni_1",
+   "a": "Abidan_1",
+   "tipo": "padre",
+   "ref": "Nm 1:11",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Ammishaddai_1",
+   "a": "Ahiezer_1",
+   "tipo": "padre",
+   "ref": "Nm 1:12",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Ochran_1",
+   "a": "Pagiel_1",
+   "tipo": "padre",
+   "ref": "Nm 1:13",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Deuel_1",
+   "a": "Eliasaph_1",
+   "tipo": "padre",
+   "ref": "Nm 1:14",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Enan_1",
+   "a": "Ahira_1",
+   "tipo": "padre",
+   "ref": "Nm 1:15",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Lael_1",
+   "a": "Eliasaph_2",
+   "tipo": "padre",
+   "ref": "Nm 3:24",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Abihail_1",
+   "a": "Zuriel_1",
+   "tipo": "padre",
+   "ref": "Nm 3:35",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Reuel_2",
+   "a": "Hobab_1",
+   "tipo": "padre",
+   "ref": "Nm 10:29",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Zaccur_1",
+   "a": "Shammua_1",
+   "tipo": "padre",
+   "ref": "Nm 13:5",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Hori_2",
+   "a": "Shaphat_1",
+   "tipo": "padre",
+   "ref": "Nm 13:6",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Jephunneh_1",
+   "a": "Caleb_1",
+   "tipo": "padre",
+   "ref": "Nm 13:7",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Nm 13:6 en la numeración inglesa.",
+   "cita": "Caleb hijo de Jephone"
+  },
+  {
+   "de": "Joseph_2",
+   "a": "Igal_1",
+   "tipo": "padre",
+   "ref": "Nm 13:8",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Raphu_1",
+   "a": "Palti_1",
+   "tipo": "padre",
+   "ref": "Nm 13:10",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Sodi_1",
+   "a": "Gaddiel_1",
+   "tipo": "padre",
+   "ref": "Nm 13:11",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Susi_1",
+   "a": "Gaddi_1",
+   "tipo": "padre",
+   "ref": "Nm 13:12",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gemalli_1",
+   "a": "Ammiel_1",
+   "tipo": "padre",
+   "ref": "Nm 13:13",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Michael_1",
+   "a": "Sethur_1",
+   "tipo": "padre",
+   "ref": "Nm 13:14",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Vophsi_1",
+   "a": "Nahbi_1",
+   "tipo": "padre",
+   "ref": "Nm 13:15",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Machi_1",
+   "a": "Geuel_1",
+   "tipo": "padre",
+   "ref": "Nm 13:16",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Anak_1",
+   "a": "Ahiman_1",
+   "tipo": "padre",
+   "ref": "Nm 13:23",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": "«Hijos de Anac» (Nm 13:23 en la RV1909) puede indicar descendencia: Nm 13:33 llama así a todo el pueblo de gigantes."
+  },
+  {
+   "de": "Anak_1",
+   "a": "Sheshai_1",
+   "tipo": "padre",
+   "ref": "Nm 13:23",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": "«Hijos de Anac» (Nm 13:23 en la RV1909) puede indicar descendencia: Nm 13:33 llama así a todo el pueblo de gigantes."
+  },
+  {
+   "de": "Anak_1",
+   "a": "Talmai_1",
+   "tipo": "padre",
+   "ref": "Nm 13:23",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": "«Hijos de Anac» (Nm 13:23 en la RV1909) puede indicar descendencia: Nm 13:33 llama así a todo el pueblo de gigantes."
+  },
+  {
+   "de": "Eliab_2",
+   "a": "Abiram_1",
+   "tipo": "padre",
+   "ref": "Nm 16:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 26:9.",
+   "cita": "Dathán y Abiram, hijos de Eliab"
+  },
+  {
+   "de": "Eliab_2",
+   "a": "Dathan_1",
+   "tipo": "padre",
+   "ref": "Nm 16:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 26:9.",
+   "cita": "Dathán y Abiram, hijos de Eliab"
+  },
+  {
+   "de": "Peleth_1",
+   "a": "On_1",
+   "tipo": "padre",
+   "ref": "Nm 16:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Hon, hijo de Peleth"
+  },
+  {
+   "de": "Zippor_1",
+   "a": "Balak_1",
+   "tipo": "padre",
+   "ref": "Nm 22:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Balac, hijo de Zippor"
+  },
+  {
+   "de": "Beor_2",
+   "a": "Balaam_1",
+   "tipo": "padre",
+   "ref": "Nm 22:5",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 31:8.",
+   "cita": "Balaam hijo de Beor"
+  },
+  {
+   "de": "Salu_1",
+   "a": "Zimri_1",
+   "tipo": "padre",
+   "ref": "Nm 25:14",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Zimri hijo de Salu"
+  },
+  {
+   "de": "Zur_1",
+   "a": "Cozbi_1",
+   "tipo": "padre",
+   "ref": "Nm 25:15",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 25:18: «Cozbi, hija del príncipe de Madián».",
+   "cita": "Cozbi, hija de Zur"
+  },
+  {
+   "de": "Pallu_1",
+   "a": "Eliab_2",
+   "tipo": "padre",
+   "ref": "Nm 26:8",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "los hijos de Phallú: Eliab"
+  },
+  {
+   "de": "Eliab_2",
+   "a": "Nemuel_1",
+   "tipo": "padre",
+   "ref": "Nm 26:9",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "los hijos de Eliab: Nemuel"
+  },
+  {
+   "de": "Machir_1",
+   "a": "Gilead_1",
+   "tipo": "padre",
+   "ref": "Nm 26:29",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Machîr engendró á Galaad"
+  },
+  {
+   "de": "Gilead_1",
+   "a": "Helek_1",
+   "tipo": "padre",
+   "ref": "Nm 26:30",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gilead_1",
+   "a": "Iezer_1",
+   "tipo": "padre",
+   "ref": "Nm 26:30",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gilead_1",
+   "a": "Asriel_1",
+   "tipo": "padre",
+   "ref": "Nm 26:31",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gilead_1",
+   "a": "Shechem_2",
+   "tipo": "padre",
+   "ref": "Nm 26:31",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gilead_1",
+   "a": "Hepher_1",
+   "tipo": "padre",
+   "ref": "Nm 26:32",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Gilead_1",
+   "a": "Shemida_1",
+   "tipo": "padre",
+   "ref": "Nm 26:32",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Hepher_1",
+   "a": "Zelophehad_1",
+   "tipo": "padre",
+   "ref": "Nm 26:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 27:1.",
+   "cita": "Salphaad, hijo de Hepher"
+  },
+  {
+   "de": "Zelophehad_1",
+   "a": "Hoglah_1",
+   "tipo": "padre",
+   "ref": "Nm 26:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 27:1 y 36:11.",
+   "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
+  },
+  {
+   "de": "Zelophehad_1",
+   "a": "Mahlah_1",
+   "tipo": "padre",
+   "ref": "Nm 26:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 27:1 y 36:11.",
+   "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
+  },
+  {
+   "de": "Zelophehad_1",
+   "a": "Milcah_2",
+   "tipo": "padre",
+   "ref": "Nm 26:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 27:1 y 36:11.",
+   "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
+  },
+  {
+   "de": "Zelophehad_1",
+   "a": "Noah_2",
+   "tipo": "padre",
+   "ref": "Nm 26:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 27:1 y 36:11.",
+   "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
+  },
+  {
+   "de": "Zelophehad_1",
+   "a": "Tirzah_1",
+   "tipo": "padre",
+   "ref": "Nm 26:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También Nm 27:1 y 36:11.",
+   "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
+  },
+  {
+   "de": "Ephraim_1",
+   "a": "Becher_2",
+   "tipo": "padre",
+   "ref": "Nm 26:35",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": "Nm 26:35 los da como «hijos de Ephraim por sus familias» (puede indicar descendencia)."
+  },
+  {
+   "de": "Ephraim_1",
+   "a": "Shuthelah_1",
+   "tipo": "padre",
+   "ref": "Nm 26:35",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": "Nm 26:35 los da como «hijos de Ephraim por sus familias» (puede indicar descendencia)."
+  },
+  {
+   "de": "Ephraim_1",
+   "a": "Tahan_1",
+   "tipo": "padre",
+   "ref": "Nm 26:35",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": "Nm 26:35 los da como «hijos de Ephraim por sus familias» (puede indicar descendencia)."
+  },
+  {
+   "de": "Shuthelah_1",
+   "a": "Eran_1",
+   "tipo": "padre",
+   "ref": "Nm 26:36",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Levi_1",
+   "a": "Jochebed_1",
+   "tipo": "padre",
+   "ref": "Nm 26:59",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Nm 26:59: «la cual nació á Leví en Egipto».",
+   "cita": "Jochâbed, hija de Leví"
+  },
+  {
+   "de": "Ammihud_2",
+   "a": "Samuel_1",
+   "tipo": "padre",
+   "ref": "Nm 34:20",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Chislon_1",
+   "a": "Elidad_1",
+   "tipo": "padre",
+   "ref": "Nm 34:21",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Jogli_1",
+   "a": "Bukki_1",
+   "tipo": "padre",
+   "ref": "Nm 34:22",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Ephod_1",
+   "a": "Hanniel_1",
+   "tipo": "padre",
+   "ref": "Nm 34:23",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Shiphtan_1",
+   "a": "Kemuel_2",
+   "tipo": "padre",
+   "ref": "Nm 34:24",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Parnach_1",
+   "a": "Elizaphan_1",
+   "tipo": "padre",
+   "ref": "Nm 34:25",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Azzan_1",
+   "a": "Paltiel_1",
+   "tipo": "padre",
+   "ref": "Nm 34:26",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Shelomi_1",
+   "a": "Ahihud_1",
+   "tipo": "padre",
+   "ref": "Nm 34:27",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
+  },
+  {
+   "de": "Ammihud_3",
+   "a": "Pedahel_1",
+   "tipo": "padre",
+   "ref": "Nm 34:28",
+   "certeza": "explicito",
+   "fuente": "bibledata",
+   "nota": ""
   }
  ],
  "edades": [
@@ -30371,6 +39145,28 @@ window.BIBLIA_DATOS = {
    "fuente": "brenton",
    "cita": "a hundred and thirty-two years",
    "nota": "El TM (RV1909) da 137 («ciento treinta y siete años»)."
+  },
+  {
+   "persona": "Aaron_1",
+   "tipo": "total",
+   "tradicion": "TM",
+   "valor": 123,
+   "ref": "Nm 33:39",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "ciento y veinte y tres años",
+   "nota": ""
+  },
+  {
+   "persona": "Aaron_1",
+   "tipo": "total",
+   "tradicion": "LXX",
+   "valor": 123,
+   "ref": "Nm 33:39",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "a hundred and twenty-three years",
+   "nota": ""
   }
  ],
  "pasajes": [
@@ -32893,6 +41689,926 @@ window.BIBLIA_DATOS = {
    "titulo_origen": "editorial",
    "resumen": "Estimación de las tierras; los primogénitos, lo consagrado por anatema y el diezmo son de Jehová.",
    "seccion": "Votos y cosas consagradas (Lv 27)"
+  },
+  {
+   "id": "nm-01",
+   "libro": "Nm",
+   "inicio": "Nm 1:1",
+   "fin": "Nm 1:16",
+   "titulo": "El censo: los jefes de cada tribu",
+   "titulo_origen": "editorial",
+   "resumen": "En el segundo año de la salida, Dios manda contar a los varones de veinte años arriba; se nombra un jefe por tribu.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-02",
+   "libro": "Nm",
+   "inicio": "Nm 1:17",
+   "fin": "Nm 1:33",
+   "titulo": "El censo de Rubén a Efraín",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés y Aarón cuentan a los hombres de guerra de Rubén, Simeón, Gad, Judá, Isacar, Zabulón y Efraín.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-03",
+   "libro": "Nm",
+   "inicio": "Nm 1:34",
+   "fin": "Nm 1:46",
+   "titulo": "El censo de Manasés a Neftalí; el total",
+   "titulo_origen": "editorial",
+   "resumen": "Se cuentan Manasés, Benjamín, Dan, Aser y Neftalí; en total 603.550 hombres.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-04",
+   "libro": "Nm",
+   "inicio": "Nm 1:47",
+   "fin": "Nm 1:54",
+   "titulo": "Los levitas no se cuentan",
+   "titulo_origen": "editorial",
+   "resumen": "Los levitas quedan al cuidado del tabernáculo y acampan alrededor de él.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-05",
+   "libro": "Nm",
+   "inicio": "Nm 2:1",
+   "fin": "Nm 2:16",
+   "titulo": "El campamento: oriente y mediodía",
+   "titulo_origen": "editorial",
+   "resumen": "Cada tribu acampa bajo su bandera; Judá, Isacar y Zabulón al oriente; Rubén, Simeón y Gad al mediodía.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-06",
+   "libro": "Nm",
+   "inicio": "Nm 2:17",
+   "fin": "Nm 2:34",
+   "titulo": "El tabernáculo en medio; occidente y norte",
+   "titulo_origen": "editorial",
+   "resumen": "El tabernáculo marcha en medio; Efraín, Manasés y Benjamín al occidente; Dan, Aser y Neftalí al norte.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-07",
+   "libro": "Nm",
+   "inicio": "Nm 3:1",
+   "fin": "Nm 3:13",
+   "titulo": "Los sacerdotes y los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "Los hijos de Aarón; los levitas son dados a Aarón y tomados en lugar de los primogénitos.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-08",
+   "libro": "Nm",
+   "inicio": "Nm 3:14",
+   "fin": "Nm 3:26",
+   "titulo": "Censo de los levitas: los gersonitas",
+   "titulo_origen": "editorial",
+   "resumen": "Se cuentan los levitas desde un mes arriba; los gersonitas acampan al occidente y cuidan las cortinas.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-09",
+   "libro": "Nm",
+   "inicio": "Nm 3:27",
+   "fin": "Nm 3:39",
+   "titulo": "Los coatitas y los meraritas",
+   "titulo_origen": "editorial",
+   "resumen": "Los coatitas guardan el santuario; los meraritas, las tablas y basas; Moisés y Aarón acampan al oriente.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-10",
+   "libro": "Nm",
+   "inicio": "Nm 3:40",
+   "fin": "Nm 3:51",
+   "titulo": "El rescate de los primogénitos",
+   "titulo_origen": "editorial",
+   "resumen": "Se cuentan los primogénitos; los que exceden a los levitas se rescatan a cinco siclos cada uno.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-11",
+   "libro": "Nm",
+   "inicio": "Nm 4:1",
+   "fin": "Nm 4:20",
+   "titulo": "El cargo de los coatitas",
+   "titulo_origen": "editorial",
+   "resumen": "Aarón y sus hijos cubren los objetos santos; los coatitas los llevan sin tocarlos.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-12",
+   "libro": "Nm",
+   "inicio": "Nm 4:21",
+   "fin": "Nm 4:33",
+   "titulo": "El cargo de los gersonitas y los meraritas",
+   "titulo_origen": "editorial",
+   "resumen": "Los gersonitas llevan las cortinas y cubiertas; los meraritas, las tablas, columnas y basas.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-13",
+   "libro": "Nm",
+   "inicio": "Nm 4:34",
+   "fin": "Nm 4:49",
+   "titulo": "Los levitas contados para el servicio",
+   "titulo_origen": "editorial",
+   "resumen": "Se cuentan los levitas de treinta a cincuenta años que sirven en el tabernáculo.",
+   "seccion": "Censo y orden del campamento (Nm 1–4)"
+  },
+  {
+   "id": "nm-14",
+   "libro": "Nm",
+   "inicio": "Nm 5:1",
+   "fin": "Nm 5:10",
+   "titulo": "Pureza del campamento y restitución",
+   "titulo_origen": "editorial",
+   "resumen": "Los inmundos salen del campamento; quien daña a otro confiesa y restituye con un quinto más.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-15",
+   "libro": "Nm",
+   "inicio": "Nm 5:11",
+   "fin": "Nm 5:31",
+   "titulo": "La ley de los celos",
+   "titulo_origen": "editorial",
+   "resumen": "Rito ante el sacerdote cuando un marido sospecha que su mujer le ha sido infiel.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-16",
+   "libro": "Nm",
+   "inicio": "Nm 6:1",
+   "fin": "Nm 6:21",
+   "titulo": "El voto de nazareo",
+   "titulo_origen": "editorial",
+   "resumen": "Quien se aparta para Jehová no bebe vino, no se corta el cabello ni se acerca a un muerto.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-17",
+   "libro": "Nm",
+   "inicio": "Nm 6:22",
+   "fin": "Nm 6:27",
+   "titulo": "La bendición sacerdotal",
+   "titulo_origen": "editorial",
+   "resumen": "«Jehová te bendiga, y te guarde»: así bendecirán Aarón y sus hijos a Israel.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-18",
+   "libro": "Nm",
+   "inicio": "Nm 7:1",
+   "fin": "Nm 7:11",
+   "titulo": "Las ofrendas de los príncipes: los carros",
+   "titulo_origen": "editorial",
+   "resumen": "Al ungir el tabernáculo, los príncipes traen carros y bueyes; cada uno ofrecerá en su día.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-19",
+   "libro": "Nm",
+   "inicio": "Nm 7:12",
+   "fin": "Nm 7:29",
+   "titulo": "Ofrendas de los días primero a tercero",
+   "titulo_origen": "editorial",
+   "resumen": "Naasón (Judá), Natanael (Isacar) y Eliab (Zabulón) traen la misma ofrenda.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-20",
+   "libro": "Nm",
+   "inicio": "Nm 7:30",
+   "fin": "Nm 7:47",
+   "titulo": "Ofrendas de los días cuarto a sexto",
+   "titulo_origen": "editorial",
+   "resumen": "Elisur (Rubén), Selumiel (Simeón) y Eliasaf (Gad) traen la misma ofrenda.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-21",
+   "libro": "Nm",
+   "inicio": "Nm 7:48",
+   "fin": "Nm 7:65",
+   "titulo": "Ofrendas de los días séptimo a noveno",
+   "titulo_origen": "editorial",
+   "resumen": "Elisama (Efraín), Gamaliel (Manasés) y Abidán (Benjamín) traen la misma ofrenda.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-22",
+   "libro": "Nm",
+   "inicio": "Nm 7:66",
+   "fin": "Nm 7:89",
+   "titulo": "Ofrendas de los días décimo a duodécimo; la voz",
+   "titulo_origen": "editorial",
+   "resumen": "Ahiezer (Dan), Pagiel (Aser) y Ahira (Neftalí); suma de las ofrendas; Moisés oye la voz desde el propiciatorio.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-23",
+   "libro": "Nm",
+   "inicio": "Nm 8:1",
+   "fin": "Nm 8:13",
+   "titulo": "Las lámparas y la purificación de los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "Aarón enciende las siete lámparas; los levitas son purificados y presentados como ofrenda.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-24",
+   "libro": "Nm",
+   "inicio": "Nm 8:14",
+   "fin": "Nm 8:26",
+   "titulo": "Los levitas en lugar de los primogénitos",
+   "titulo_origen": "editorial",
+   "resumen": "Los levitas son de Dios en lugar de los primogénitos; sirven de veinticinco a cincuenta años.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-25",
+   "libro": "Nm",
+   "inicio": "Nm 9:1",
+   "fin": "Nm 9:14",
+   "titulo": "La Pascua en el desierto",
+   "titulo_origen": "editorial",
+   "resumen": "Israel celebra la Pascua en el Sinaí; quien estaba inmundo la celebra el mes segundo.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-26",
+   "libro": "Nm",
+   "inicio": "Nm 9:15",
+   "fin": "Nm 9:23",
+   "titulo": "La nube sobre el tabernáculo",
+   "titulo_origen": "editorial",
+   "resumen": "Cuando la nube se alza, el pueblo parte; cuando se detiene, acampa.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-27",
+   "libro": "Nm",
+   "inicio": "Nm 10:1",
+   "fin": "Nm 10:10",
+   "titulo": "Las trompetas de plata",
+   "titulo_origen": "editorial",
+   "resumen": "Dos trompetas de plata para convocar, para partir, para la guerra y para las fiestas.",
+   "seccion": "Leyes y preparativos en el Sinaí (Nm 5:1–10:10)"
+  },
+  {
+   "id": "nm-28",
+   "libro": "Nm",
+   "inicio": "Nm 10:11",
+   "fin": "Nm 10:28",
+   "titulo": "Partida del Sinaí",
+   "titulo_origen": "editorial",
+   "resumen": "El año segundo, mes segundo, día veinte, la nube se alza; las tribus parten en su orden.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-29",
+   "libro": "Nm",
+   "inicio": "Nm 10:29",
+   "fin": "Nm 10:36",
+   "titulo": "Hobab y el arca delante",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés pide a Hobab que los guíe; el arca va delante tres días de camino.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-30",
+   "libro": "Nm",
+   "inicio": "Nm 11:1",
+   "fin": "Nm 11:15",
+   "titulo": "Tabera y la queja por la carne",
+   "titulo_origen": "editorial",
+   "resumen": "El fuego arde en Tabera; el pueblo pide carne y Moisés dice que no puede llevarlo solo.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-31",
+   "libro": "Nm",
+   "inicio": "Nm 11:16",
+   "fin": "Nm 11:35",
+   "titulo": "Los setenta ancianos y las codornices",
+   "titulo_origen": "editorial",
+   "resumen": "El espíritu reposa sobre setenta ancianos, también sobre Eldad y Medad; llegan codornices y una plaga en Kibrot-hataava.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-32",
+   "libro": "Nm",
+   "inicio": "Nm 12:1",
+   "fin": "Nm 13:1",
+   "titulo": "María y Aarón murmuran contra Moisés",
+   "titulo_origen": "editorial",
+   "resumen": "Hablan contra Moisés por su mujer cusita; María queda leprosa siete días fuera del campamento.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-33",
+   "libro": "Nm",
+   "inicio": "Nm 13:2",
+   "fin": "Nm 13:21",
+   "titulo": "Los doce enviados a reconocer la tierra",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés envía a un jefe de cada tribu a Canaán; a Oseas hijo de Nun lo llama Josué.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-34",
+   "libro": "Nm",
+   "inicio": "Nm 13:22",
+   "fin": "Nm 13:33",
+   "titulo": "El informe de los enviados",
+   "titulo_origen": "editorial",
+   "resumen": "Traen un racimo del valle de Escol; Caleb anima a subir, los demás dicen que no podrán.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-35",
+   "libro": "Nm",
+   "inicio": "Nm 14:1",
+   "fin": "Nm 14:10",
+   "titulo": "El pueblo se rebela",
+   "titulo_origen": "editorial",
+   "resumen": "El pueblo llora y quiere volver a Egipto; Josué y Caleb defienden que la tierra es buena.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-36",
+   "libro": "Nm",
+   "inicio": "Nm 14:11",
+   "fin": "Nm 14:25",
+   "titulo": "Moisés intercede",
+   "titulo_origen": "editorial",
+   "resumen": "Dios quiere destruir al pueblo; Moisés intercede y Dios perdona, pero no verán la tierra.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-37",
+   "libro": "Nm",
+   "inicio": "Nm 14:26",
+   "fin": "Nm 14:38",
+   "titulo": "Cuarenta años en el desierto",
+   "titulo_origen": "editorial",
+   "resumen": "Los de veinte años arriba morirán en el desierto, salvo Caleb y Josué; los diez enviados mueren.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-38",
+   "libro": "Nm",
+   "inicio": "Nm 14:39",
+   "fin": "Nm 14:45",
+   "titulo": "Derrota en Horma",
+   "titulo_origen": "editorial",
+   "resumen": "El pueblo sube sin Moisés ni el arca y es derrotado por amalecitas y cananeos.",
+   "seccion": "Del Sinaí a Cades (Nm 10:11–14:45)"
+  },
+  {
+   "id": "nm-39",
+   "libro": "Nm",
+   "inicio": "Nm 15:1",
+   "fin": "Nm 15:21",
+   "titulo": "Ofrendas al entrar en la tierra",
+   "titulo_origen": "editorial",
+   "resumen": "Presente y libación con cada sacrificio; una misma ley para el natural y el extranjero.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-40",
+   "libro": "Nm",
+   "inicio": "Nm 15:22",
+   "fin": "Nm 15:31",
+   "titulo": "Pecados por yerro y con soberbia",
+   "titulo_origen": "editorial",
+   "resumen": "Expiación por los pecados por yerro; quien peca con altivez será cortado.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-41",
+   "libro": "Nm",
+   "inicio": "Nm 15:32",
+   "fin": "Nm 15:41",
+   "titulo": "El que recogía leña en sábado; los pendones",
+   "titulo_origen": "editorial",
+   "resumen": "Un hombre recoge leña en sábado y es apedreado; flecos en los bordes de los vestidos.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-42",
+   "libro": "Nm",
+   "inicio": "Nm 16:1",
+   "fin": "Nm 16:19",
+   "titulo": "Coré, Datán y Abiram",
+   "titulo_origen": "editorial",
+   "resumen": "Coré, levita, y los rubenitas Datán y Abiram se levantan contra Moisés y Aarón con doscientos cincuenta príncipes.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-43",
+   "libro": "Nm",
+   "inicio": "Nm 16:20",
+   "fin": "Nm 16:35",
+   "titulo": "La tierra se abre",
+   "titulo_origen": "editorial",
+   "resumen": "La tierra traga a Coré, Datán y Abiram con sus casas; un fuego consume a los doscientos cincuenta.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-44",
+   "libro": "Nm",
+   "inicio": "Nm 16:36",
+   "fin": "Nm 16:50",
+   "titulo": "Los incensarios y la mortandad detenida",
+   "titulo_origen": "editorial",
+   "resumen": "Los incensarios cubren el altar; el pueblo murmura y Aarón detiene la mortandad con el incienso.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-45",
+   "libro": "Nm",
+   "inicio": "Nm 17:1",
+   "fin": "Nm 17:13",
+   "titulo": "La vara de Aarón florece",
+   "titulo_origen": "editorial",
+   "resumen": "De las doce varas, la de Aarón echa flores y almendras; se guarda delante del testimonio.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-46",
+   "libro": "Nm",
+   "inicio": "Nm 18:1",
+   "fin": "Nm 18:20",
+   "titulo": "Cargo y porción de los sacerdotes",
+   "titulo_origen": "editorial",
+   "resumen": "Aarón y sus hijos guardan el santuario; las ofrendas y primicias son su porción; Jehová es su heredad.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-47",
+   "libro": "Nm",
+   "inicio": "Nm 18:21",
+   "fin": "Nm 18:32",
+   "titulo": "El diezmo de los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "Los levitas reciben el diezmo de Israel y dan a su vez el diezmo de ese diezmo.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-48",
+   "libro": "Nm",
+   "inicio": "Nm 19:1",
+   "fin": "Nm 19:10",
+   "titulo": "La vaca alazana",
+   "titulo_origen": "editorial",
+   "resumen": "Se quema una vaca alazana fuera del campamento y sus cenizas se guardan para el agua de purificación.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-49",
+   "libro": "Nm",
+   "inicio": "Nm 19:11",
+   "fin": "Nm 19:22",
+   "titulo": "La purificación por contacto con un muerto",
+   "titulo_origen": "editorial",
+   "resumen": "Quien toca un muerto queda inmundo siete días y se purifica con el agua de la expiación.",
+   "seccion": "Leyes y rebeliones en el desierto (Nm 15–19)"
+  },
+  {
+   "id": "nm-50",
+   "libro": "Nm",
+   "inicio": "Nm 20:1",
+   "fin": "Nm 20:13",
+   "titulo": "Muerte de María; las aguas de la rencilla",
+   "titulo_origen": "editorial",
+   "resumen": "María muere en Cades; Moisés golpea la peña y sale agua, pero no entrará en la tierra.",
+   "seccion": "Hacia Moab (Nm 20–21)"
+  },
+  {
+   "id": "nm-51",
+   "libro": "Nm",
+   "inicio": "Nm 20:14",
+   "fin": "Nm 20:21",
+   "titulo": "Edom niega el paso",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés pide pasar por Edom por el camino real; Edom sale armado e Israel se desvía.",
+   "seccion": "Hacia Moab (Nm 20–21)"
+  },
+  {
+   "id": "nm-52",
+   "libro": "Nm",
+   "inicio": "Nm 20:22",
+   "fin": "Nm 20:29",
+   "titulo": "Muerte de Aarón en el monte Hor",
+   "titulo_origen": "editorial",
+   "resumen": "Aarón sube al monte Hor, Eleazar recibe sus vestiduras y Aarón muere; el pueblo lo llora treinta días.",
+   "seccion": "Hacia Moab (Nm 20–21)"
+  },
+  {
+   "id": "nm-53",
+   "libro": "Nm",
+   "inicio": "Nm 21:1",
+   "fin": "Nm 21:9",
+   "titulo": "Horma y la serpiente de bronce",
+   "titulo_origen": "editorial",
+   "resumen": "Israel vence al rey de Arad; el pueblo murmura, vienen serpientes y Moisés hace una serpiente de bronce.",
+   "seccion": "Hacia Moab (Nm 20–21)"
+  },
+  {
+   "id": "nm-54",
+   "libro": "Nm",
+   "inicio": "Nm 21:10",
+   "fin": "Nm 21:20",
+   "titulo": "Hacia el Arnón; el pozo",
+   "titulo_origen": "editorial",
+   "resumen": "Etapas hasta el Arnón; en Beer Dios da agua y el pueblo canta al pozo.",
+   "seccion": "Hacia Moab (Nm 20–21)"
+  },
+  {
+   "id": "nm-55",
+   "libro": "Nm",
+   "inicio": "Nm 21:21",
+   "fin": "Nm 21:35",
+   "titulo": "Victorias sobre Sehón y Og",
+   "titulo_origen": "editorial",
+   "resumen": "Sehón, rey de los amorreos, niega el paso y es vencido; también Og, rey de Basán.",
+   "seccion": "Hacia Moab (Nm 20–21)"
+  },
+  {
+   "id": "nm-56",
+   "libro": "Nm",
+   "inicio": "Nm 22:1",
+   "fin": "Nm 22:20",
+   "titulo": "Balac llama a Balaam",
+   "titulo_origen": "editorial",
+   "resumen": "Balac, rey de Moab, manda llamar a Balaam para maldecir a Israel; Dios le dice que no los maldiga.",
+   "seccion": "Balac y Balaam (Nm 22–24)"
+  },
+  {
+   "id": "nm-57",
+   "libro": "Nm",
+   "inicio": "Nm 22:21",
+   "fin": "Nm 22:35",
+   "titulo": "La asna de Balaam",
+   "titulo_origen": "editorial",
+   "resumen": "El ángel de Jehová se pone en el camino; la asna lo ve y habla; Balaam solo dirá lo que Dios le diga.",
+   "seccion": "Balac y Balaam (Nm 22–24)"
+  },
+  {
+   "id": "nm-58",
+   "libro": "Nm",
+   "inicio": "Nm 22:36",
+   "fin": "Nm 23:12",
+   "titulo": "El primer oráculo",
+   "titulo_origen": "editorial",
+   "resumen": "Balac lleva a Balaam a los altos de Baal; en lugar de maldecir, Balaam bendice a Israel.",
+   "seccion": "Balac y Balaam (Nm 22–24)"
+  },
+  {
+   "id": "nm-59",
+   "libro": "Nm",
+   "inicio": "Nm 23:13",
+   "fin": "Nm 23:30",
+   "titulo": "El segundo oráculo",
+   "titulo_origen": "editorial",
+   "resumen": "Desde el Pisga, Balaam vuelve a bendecir: «Dios no es hombre para que mienta»; Balac lo lleva a Peor.",
+   "seccion": "Balac y Balaam (Nm 22–24)"
+  },
+  {
+   "id": "nm-60",
+   "libro": "Nm",
+   "inicio": "Nm 24:1",
+   "fin": "Nm 24:13",
+   "titulo": "El tercer oráculo",
+   "titulo_origen": "editorial",
+   "resumen": "El espíritu de Dios viene sobre Balaam y bendice las tiendas de Jacob; Balac se enoja.",
+   "seccion": "Balac y Balaam (Nm 22–24)"
+  },
+  {
+   "id": "nm-61",
+   "libro": "Nm",
+   "inicio": "Nm 24:14",
+   "fin": "Nm 24:25",
+   "titulo": "Los últimos oráculos",
+   "titulo_origen": "editorial",
+   "resumen": "Balaam anuncia una estrella de Jacob y habla de Moab, Edom, Amalec y los ceneos; cada uno vuelve a su lugar.",
+   "seccion": "Balac y Balaam (Nm 22–24)"
+  },
+  {
+   "id": "nm-62",
+   "libro": "Nm",
+   "inicio": "Nm 25:1",
+   "fin": "Nm 25:9",
+   "titulo": "Baal-peor",
+   "titulo_origen": "editorial",
+   "resumen": "En Sitim el pueblo se une a las moabitas y a Baal-peor; Finees mata a un israelita y a una madianita y cesa la mortandad.",
+   "seccion": "Baal-peor y el segundo censo (Nm 25–26)"
+  },
+  {
+   "id": "nm-63",
+   "libro": "Nm",
+   "inicio": "Nm 25:10",
+   "fin": "Nm 25:18",
+   "titulo": "Pacto con Finees; Zimri y Cozbi",
+   "titulo_origen": "editorial",
+   "resumen": "Dios da a Finees pacto de sacerdocio perpetuo; se nombra a los muertos y se ordena herir a Madián.",
+   "seccion": "Baal-peor y el segundo censo (Nm 25–26)"
+  },
+  {
+   "id": "nm-64",
+   "libro": "Nm",
+   "inicio": "Nm 26:1",
+   "fin": "Nm 26:18",
+   "titulo": "Segundo censo: Rubén, Simeón y Gad",
+   "titulo_origen": "editorial",
+   "resumen": "Tras la mortandad se cuenta otra vez al pueblo en los campos de Moab; familias de Rubén, Simeón y Gad.",
+   "seccion": "Baal-peor y el segundo censo (Nm 25–26)"
+  },
+  {
+   "id": "nm-65",
+   "libro": "Nm",
+   "inicio": "Nm 26:19",
+   "fin": "Nm 26:37",
+   "titulo": "Judá, Isacar, Zabulón, Manasés y Efraín",
+   "titulo_origen": "editorial",
+   "resumen": "Familias de Judá, Isacar, Zabulón, Manasés —con las hijas de Zelofehad— y Efraín.",
+   "seccion": "Baal-peor y el segundo censo (Nm 25–26)"
+  },
+  {
+   "id": "nm-66",
+   "libro": "Nm",
+   "inicio": "Nm 26:38",
+   "fin": "Nm 26:51",
+   "titulo": "Benjamín, Dan, Aser y Neftalí; el total",
+   "titulo_origen": "editorial",
+   "resumen": "Familias de Benjamín, Dan, Aser y Neftalí; en total 601.730 hombres.",
+   "seccion": "Baal-peor y el segundo censo (Nm 25–26)"
+  },
+  {
+   "id": "nm-67",
+   "libro": "Nm",
+   "inicio": "Nm 26:52",
+   "fin": "Nm 26:65",
+   "titulo": "El reparto y los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "La tierra se repartirá por suertes; censo de los levitas; ninguno de los del Sinaí queda, salvo Caleb y Josué.",
+   "seccion": "Baal-peor y el segundo censo (Nm 25–26)"
+  },
+  {
+   "id": "nm-68",
+   "libro": "Nm",
+   "inicio": "Nm 27:1",
+   "fin": "Nm 27:11",
+   "titulo": "Las hijas de Zelofehad",
+   "titulo_origen": "editorial",
+   "resumen": "Maala, Noa, Hogla, Milca y Tirsa piden la herencia de su padre; Dios les da la razón.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-69",
+   "libro": "Nm",
+   "inicio": "Nm 27:12",
+   "fin": "Nm 27:23",
+   "titulo": "Josué, sucesor de Moisés",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés ve la tierra desde Abarim; Dios elige a Josué y Moisés le impone las manos.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-70",
+   "libro": "Nm",
+   "inicio": "Nm 28:1",
+   "fin": "Nm 28:15",
+   "titulo": "Ofrendas diarias, del sábado y de cada mes",
+   "titulo_origen": "editorial",
+   "resumen": "El holocausto continuo, el del sábado y el del principio de cada mes.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-71",
+   "libro": "Nm",
+   "inicio": "Nm 28:16",
+   "fin": "Nm 28:31",
+   "titulo": "La Pascua y la fiesta de las semanas",
+   "titulo_origen": "editorial",
+   "resumen": "Ofrendas de los panes sin levadura y del día de las primicias.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-72",
+   "libro": "Nm",
+   "inicio": "Nm 29:1",
+   "fin": "Nm 29:11",
+   "titulo": "Las trompetas y el día de la expiación",
+   "titulo_origen": "editorial",
+   "resumen": "Ofrendas del día primero y del día diez del mes séptimo.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-73",
+   "libro": "Nm",
+   "inicio": "Nm 29:12",
+   "fin": "Nm 29:28",
+   "titulo": "La fiesta de las cabañas (días primero a sexto)",
+   "titulo_origen": "editorial",
+   "resumen": "Desde el día quince del mes séptimo, ofrendas que van disminuyendo de trece a ocho becerros.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-74",
+   "libro": "Nm",
+   "inicio": "Nm 29:29",
+   "fin": "Nm 29:40",
+   "titulo": "La fiesta de las cabañas (último día)",
+   "titulo_origen": "editorial",
+   "resumen": "Séptimo y octavo día de la fiesta; resumen de las ofrendas.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-75",
+   "libro": "Nm",
+   "inicio": "Nm 30:1",
+   "fin": "Nm 30:16",
+   "titulo": "Los votos",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés transmite las leyes de los votos: del varón, de la hija en casa de su padre y de la mujer casada.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-76",
+   "libro": "Nm",
+   "inicio": "Nm 31:1",
+   "fin": "Nm 31:12",
+   "titulo": "Guerra contra Madián",
+   "titulo_origen": "editorial",
+   "resumen": "Mil hombres por tribu, con Finees, pelean contra Madián; mueren los cinco reyes y Balaam.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-77",
+   "libro": "Nm",
+   "inicio": "Nm 31:13",
+   "fin": "Nm 31:24",
+   "titulo": "Moisés se enoja; la purificación",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés se enoja con los capitanes por las cautivas; purificación de personas y objetos.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-78",
+   "libro": "Nm",
+   "inicio": "Nm 31:25",
+   "fin": "Nm 31:41",
+   "titulo": "El reparto del botín",
+   "titulo_origen": "editorial",
+   "resumen": "El botín se divide entre los que pelearon y la congregación, con un tributo para Jehová.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-79",
+   "libro": "Nm",
+   "inicio": "Nm 31:42",
+   "fin": "Nm 31:54",
+   "titulo": "La parte de la congregación y la ofrenda de oro",
+   "titulo_origen": "editorial",
+   "resumen": "Los capitanes, que no han perdido a ninguno, ofrecen el oro a Jehová como memoria.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-80",
+   "libro": "Nm",
+   "inicio": "Nm 32:1",
+   "fin": "Nm 32:15",
+   "titulo": "Rubén y Gad piden Galaad",
+   "titulo_origen": "editorial",
+   "resumen": "Rubén y Gad, con mucho ganado, piden quedarse al oriente del Jordán; Moisés les recuerda Cades-barnea.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-81",
+   "libro": "Nm",
+   "inicio": "Nm 32:16",
+   "fin": "Nm 32:32",
+   "titulo": "El compromiso de Rubén y Gad",
+   "titulo_origen": "editorial",
+   "resumen": "Pasarán armados delante de Israel hasta que todos tengan su heredad; Moisés acepta.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-82",
+   "libro": "Nm",
+   "inicio": "Nm 32:33",
+   "fin": "Nm 32:42",
+   "titulo": "Las ciudades de Galaad y Basán",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés da a Gad, Rubén y media tribu de Manasés el reino de Sehón y el de Og; reedifican ciudades.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-83",
+   "libro": "Nm",
+   "inicio": "Nm 33:1",
+   "fin": "Nm 33:15",
+   "titulo": "Las jornadas: de Ramesés al Sinaí",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés escribe las salidas de Israel: de Ramesés por el mar hasta el desierto de Sinaí.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-84",
+   "libro": "Nm",
+   "inicio": "Nm 33:16",
+   "fin": "Nm 33:37",
+   "titulo": "Las jornadas: del Sinaí al monte Hor",
+   "titulo_origen": "editorial",
+   "resumen": "Del Sinaí, por Kibrot-hataava, Haserot y Ezión-geber, hasta Cades y el monte Hor.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-85",
+   "libro": "Nm",
+   "inicio": "Nm 33:38",
+   "fin": "Nm 33:49",
+   "titulo": "Muerte de Aarón; hasta los campos de Moab",
+   "titulo_origen": "editorial",
+   "resumen": "Aarón muere en el monte Hor a los 123 años; Israel llega a los campos de Moab, junto al Jordán.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-86",
+   "libro": "Nm",
+   "inicio": "Nm 33:50",
+   "fin": "Nm 33:56",
+   "titulo": "Orden de echar a los moradores",
+   "titulo_origen": "editorial",
+   "resumen": "Al pasar el Jordán echarán a los moradores, destruirán sus imágenes y repartirán la tierra.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-87",
+   "libro": "Nm",
+   "inicio": "Nm 34:1",
+   "fin": "Nm 34:15",
+   "titulo": "Los límites de la tierra",
+   "titulo_origen": "editorial",
+   "resumen": "Límites de Canaán al sur, al oeste, al norte y al este.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-88",
+   "libro": "Nm",
+   "inicio": "Nm 34:16",
+   "fin": "Nm 34:29",
+   "titulo": "Los que repartirán la tierra",
+   "titulo_origen": "editorial",
+   "resumen": "Eleazar, Josué y un príncipe por tribu repartirán la heredad.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-89",
+   "libro": "Nm",
+   "inicio": "Nm 35:1",
+   "fin": "Nm 35:8",
+   "titulo": "Las ciudades de los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "Cuarenta y ocho ciudades con sus ejidos para los levitas.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-90",
+   "libro": "Nm",
+   "inicio": "Nm 35:9",
+   "fin": "Nm 35:21",
+   "titulo": "Las ciudades de refugio; el homicida",
+   "titulo_origen": "editorial",
+   "resumen": "Seis ciudades de refugio; quien mata con instrumento o por enemistad es homicida y morirá.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-91",
+   "libro": "Nm",
+   "inicio": "Nm 35:22",
+   "fin": "Nm 35:34",
+   "titulo": "El que mata sin intención",
+   "titulo_origen": "editorial",
+   "resumen": "El homicida sin intención queda en la ciudad de refugio hasta la muerte del sumo sacerdote.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "nm-92",
+   "libro": "Nm",
+   "inicio": "Nm 36:1",
+   "fin": "Nm 36:13",
+   "titulo": "La herencia de las hijas casadas",
+   "titulo_origen": "editorial",
+   "resumen": "Las hijas de Zelofehad se casan dentro de su tribu para que la heredad no pase a otra.",
+   "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
   }
  ],
  "menciones": [
@@ -49785,6 +59501,6606 @@ window.BIBLIA_DATOS = {
    "persona": "Moses_1",
    "inicio": 47,
    "fin": 53
+  },
+  {
+   "ref": "Nm 1:3",
+   "persona": "Aaron_1",
+   "inicio": 92,
+   "fin": 97
+  },
+  {
+   "ref": "Nm 1:5",
+   "persona": "Reuben_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 1:5",
+   "persona": "Elizur_1",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "Nm 1:5",
+   "persona": "Shedeur_1",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "Nm 1:6",
+   "persona": "Simeon_1",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 1:6",
+   "persona": "Shelumiel_1",
+   "inicio": 11,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 1:6",
+   "persona": "Zurishaddai_1",
+   "inicio": 28,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 1:7",
+   "persona": "Judah_1",
+   "inicio": 3,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 1:7",
+   "persona": "Nahshon_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 1:7",
+   "persona": "Amminadab_1",
+   "inicio": 24,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 1:8",
+   "persona": "Issachar_1",
+   "inicio": 3,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 1:8",
+   "persona": "Nethanel_1",
+   "inicio": 13,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 1:8",
+   "persona": "Zuar_1",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 1:9",
+   "persona": "Zebulun_1",
+   "inicio": 3,
+   "fin": 10
+  },
+  {
+   "ref": "Nm 1:9",
+   "persona": "Eliab_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 1:9",
+   "persona": "Helon_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Joseph_1",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Ephraim_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Elishama_1",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Ammihud_1",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Manasseh_1",
+   "inicio": 61,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Gamaliel_1",
+   "inicio": 70,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 1:10",
+   "persona": "Pedahzur_1",
+   "inicio": 87,
+   "fin": 94
+  },
+  {
+   "ref": "Nm 1:11",
+   "persona": "Benjamin_1",
+   "inicio": 3,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 1:11",
+   "persona": "Abidan_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 1:11",
+   "persona": "Gideoni_1",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 1:12",
+   "persona": "Dan_1",
+   "inicio": 3,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 1:12",
+   "persona": "Ahiezer_1",
+   "inicio": 8,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 1:12",
+   "persona": "Ammishaddai_1",
+   "inicio": 24,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 1:13",
+   "persona": "Asher_1",
+   "inicio": 3,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 1:13",
+   "persona": "Ochran_1",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 1:14",
+   "persona": "Gad_1",
+   "inicio": 3,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 1:14",
+   "persona": "Eliasaph_1",
+   "inicio": 8,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 1:14",
+   "persona": "Deuel_1",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 1:15",
+   "persona": "Naphtali_1",
+   "inicio": 3,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 1:15",
+   "persona": "Ahira_1",
+   "inicio": 13,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 1:15",
+   "persona": "Enan_1",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 1:17",
+   "persona": "Moses_1",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 1:17",
+   "persona": "Aaron_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 1:19",
+   "persona": "Moses_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 1:20",
+   "persona": "Reuben_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 1:21",
+   "persona": "Reuben_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 1:22",
+   "persona": "Simeon_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 1:23",
+   "persona": "Simeon_1",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 1:24",
+   "persona": "Gad_1",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 1:25",
+   "persona": "Gad_1",
+   "inicio": 38,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 1:26",
+   "persona": "Judah_1",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 1:27",
+   "persona": "Judah_1",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 1:28",
+   "persona": "Issachar_1",
+   "inicio": 16,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 1:29",
+   "persona": "Issachar_1",
+   "inicio": 38,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 1:30",
+   "persona": "Zebulun_1",
+   "inicio": 16,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 1:31",
+   "persona": "Zebulun_1",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 1:32",
+   "persona": "Joseph_1",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 1:32",
+   "persona": "Ephraim_1",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 1:33",
+   "persona": "Ephraim_1",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 1:34",
+   "persona": "Manasseh_1",
+   "inicio": 16,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 1:35",
+   "persona": "Manasseh_1",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 1:36",
+   "persona": "Benjamin_1",
+   "inicio": 16,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 1:37",
+   "persona": "Benjamin_1",
+   "inicio": 38,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 1:38",
+   "persona": "Dan_1",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 1:39",
+   "persona": "Dan_1",
+   "inicio": 38,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 1:40",
+   "persona": "Asher_1",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 1:41",
+   "persona": "Asher_1",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 1:42",
+   "persona": "Naphtali_1",
+   "inicio": 16,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 1:43",
+   "persona": "Naphtali_1",
+   "inicio": 38,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 1:44",
+   "persona": "Moses_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 1:44",
+   "persona": "Aaron_1",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 1:48",
+   "persona": "Moses_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 1:49",
+   "persona": "Levi_1",
+   "inicio": 34,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 1:54",
+   "persona": "Moses_1",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 2:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 2:1",
+   "persona": "Aaron_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 2:3",
+   "persona": "Judah_1",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 2:3",
+   "persona": "Judah_1",
+   "inicio": 120,
+   "fin": 124
+  },
+  {
+   "ref": "Nm 2:3",
+   "persona": "Nahshon_1",
+   "inicio": 126,
+   "fin": 132
+  },
+  {
+   "ref": "Nm 2:3",
+   "persona": "Amminadab_1",
+   "inicio": 141,
+   "fin": 149
+  },
+  {
+   "ref": "Nm 2:5",
+   "persona": "Issachar_1",
+   "inicio": 40,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 2:5",
+   "persona": "Issachar_1",
+   "inicio": 76,
+   "fin": 84
+  },
+  {
+   "ref": "Nm 2:5",
+   "persona": "Nethanel_1",
+   "inicio": 86,
+   "fin": 95
+  },
+  {
+   "ref": "Nm 2:5",
+   "persona": "Zuar_1",
+   "inicio": 104,
+   "fin": 108
+  },
+  {
+   "ref": "Nm 2:7",
+   "persona": "Zebulun_1",
+   "inicio": 16,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 2:7",
+   "persona": "Zebulun_1",
+   "inicio": 51,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 2:7",
+   "persona": "Eliab_1",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 2:7",
+   "persona": "Helon_1",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Nm 2:9",
+   "persona": "Judah_1",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 2:10",
+   "persona": "Reuben_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 2:10",
+   "persona": "Reuben_1",
+   "inicio": 93,
+   "fin": 98
+  },
+  {
+   "ref": "Nm 2:10",
+   "persona": "Elizur_1",
+   "inicio": 100,
+   "fin": 106
+  },
+  {
+   "ref": "Nm 2:10",
+   "persona": "Shedeur_1",
+   "inicio": 115,
+   "fin": 121
+  },
+  {
+   "ref": "Nm 2:12",
+   "persona": "Simeon_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 2:12",
+   "persona": "Simeon_1",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 2:12",
+   "persona": "Shelumiel_1",
+   "inicio": 84,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 2:12",
+   "persona": "Zurishaddai_1",
+   "inicio": 101,
+   "fin": 111
+  },
+  {
+   "ref": "Nm 2:14",
+   "persona": "Gad_1",
+   "inicio": 14,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 2:14",
+   "persona": "Gad_1",
+   "inicio": 45,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 2:14",
+   "persona": "Eliasaph_1",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 2:14",
+   "persona": "Deuel_1",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 2:16",
+   "persona": "Reuben_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 2:18",
+   "persona": "Ephraim_1",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 2:18",
+   "persona": "Ephraim_1",
+   "inicio": 96,
+   "fin": 103
+  },
+  {
+   "ref": "Nm 2:18",
+   "persona": "Elishama_1",
+   "inicio": 105,
+   "fin": 112
+  },
+  {
+   "ref": "Nm 2:18",
+   "persona": "Ammihud_1",
+   "inicio": 121,
+   "fin": 127
+  },
+  {
+   "ref": "Nm 2:20",
+   "persona": "Manasseh_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 2:20",
+   "persona": "Manasseh_1",
+   "inicio": 65,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 2:20",
+   "persona": "Gamaliel_1",
+   "inicio": 74,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 2:20",
+   "persona": "Pedahzur_1",
+   "inicio": 91,
+   "fin": 98
+  },
+  {
+   "ref": "Nm 2:22",
+   "persona": "Benjamin_1",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 2:22",
+   "persona": "Benjamin_1",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 2:22",
+   "persona": "Abidan_1",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 2:22",
+   "persona": "Gideoni_1",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 2:24",
+   "persona": "Ephraim_1",
+   "inicio": 37,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 2:25",
+   "persona": "Dan_1",
+   "inicio": 27,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 2:25",
+   "persona": "Dan_1",
+   "inicio": 97,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 2:25",
+   "persona": "Ahiezer_1",
+   "inicio": 102,
+   "fin": 109
+  },
+  {
+   "ref": "Nm 2:25",
+   "persona": "Ammishaddai_1",
+   "inicio": 118,
+   "fin": 127
+  },
+  {
+   "ref": "Nm 2:27",
+   "persona": "Asher_1",
+   "inicio": 40,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 2:27",
+   "persona": "Asher_1",
+   "inicio": 72,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 2:27",
+   "persona": "Ochran_1",
+   "inicio": 94,
+   "fin": 99
+  },
+  {
+   "ref": "Nm 2:29",
+   "persona": "Naphtali_1",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 2:29",
+   "persona": "Naphtali_1",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 2:29",
+   "persona": "Ahira_1",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 2:29",
+   "persona": "Enan_1",
+   "inicio": 74,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 2:31",
+   "persona": "Dan_1",
+   "inicio": 37,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 2:33",
+   "persona": "Moses_1",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 2:34",
+   "persona": "Moses_1",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 3:1",
+   "persona": "Aaron_1",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 3:1",
+   "persona": "Moses_1",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 3:1",
+   "persona": "Moses_1",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 3:2",
+   "persona": "Aaron_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 3:2",
+   "persona": "Nadab_1",
+   "inicio": 47,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 3:2",
+   "persona": "Abihu_1",
+   "inicio": 71,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 3:2",
+   "persona": "Eleazar_1",
+   "inicio": 77,
+   "fin": 84
+  },
+  {
+   "ref": "Nm 3:2",
+   "persona": "Ithamar_1",
+   "inicio": 88,
+   "fin": 95
+  },
+  {
+   "ref": "Nm 3:3",
+   "persona": "Aaron_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 3:4",
+   "persona": "Nadab_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 3:4",
+   "persona": "Abihu_1",
+   "inicio": 12,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 3:4",
+   "persona": "Eleazar_1",
+   "inicio": 144,
+   "fin": 151
+  },
+  {
+   "ref": "Nm 3:4",
+   "persona": "Ithamar_1",
+   "inicio": 154,
+   "fin": 161
+  },
+  {
+   "ref": "Nm 3:4",
+   "persona": "Aaron_1",
+   "inicio": 198,
+   "fin": 203
+  },
+  {
+   "ref": "Nm 3:5",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 3:6",
+   "persona": "Levi_1",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 3:6",
+   "persona": "Aaron_1",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 3:9",
+   "persona": "Aaron_1",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 3:10",
+   "persona": "Aaron_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 3:11",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 3:14",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 3:15",
+   "persona": "Levi_1",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 3:16",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 3:17",
+   "persona": "Levi_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 3:17",
+   "persona": "Gershon_1",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 3:17",
+   "persona": "Kohath_1",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 3:17",
+   "persona": "Merari_1",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 3:18",
+   "persona": "Gershon_1",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 3:18",
+   "persona": "Libni_1",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 3:18",
+   "persona": "Shimei_1",
+   "inicio": 72,
+   "fin": 77
+  },
+  {
+   "ref": "Nm 3:19",
+   "persona": "Kohath_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 3:19",
+   "persona": "Amram_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 3:19",
+   "persona": "Izhar_1",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 3:19",
+   "persona": "Hebron_1",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 3:19",
+   "persona": "Uzziel_1",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 3:20",
+   "persona": "Merari_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 3:20",
+   "persona": "Mahli_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 3:20",
+   "persona": "Mushi_1",
+   "inicio": 51,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 3:24",
+   "persona": "Eliasaph_2",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 3:24",
+   "persona": "Lael_1",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 3:25",
+   "persona": "Gershon_1",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 3:27",
+   "persona": "Kohath_1",
+   "inicio": 5,
+   "fin": 10
+  },
+  {
+   "ref": "Nm 3:29",
+   "persona": "Kohath_1",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 3:30",
+   "persona": "Elzaphan_1",
+   "inicio": 57,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 3:30",
+   "persona": "Uzziel_1",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 3:32",
+   "persona": "Eleazar_1",
+   "inicio": 48,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 3:32",
+   "persona": "Aaron_1",
+   "inicio": 65,
+   "fin": 70
+  },
+  {
+   "ref": "Nm 3:33",
+   "persona": "Merari_1",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 3:33",
+   "persona": "Merari_1",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Nm 3:35",
+   "persona": "Merari_1",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 3:35",
+   "persona": "Zuriel_1",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 3:35",
+   "persona": "Abihail_1",
+   "inicio": 73,
+   "fin": 80
+  },
+  {
+   "ref": "Nm 3:36",
+   "persona": "Merari_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 3:38",
+   "persona": "Moses_1",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "Nm 3:38",
+   "persona": "Aaron_1",
+   "inicio": 123,
+   "fin": 128
+  },
+  {
+   "ref": "Nm 3:39",
+   "persona": "Moses_1",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 3:39",
+   "persona": "Aaron_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 3:40",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 3:42",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 3:44",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 3:48",
+   "persona": "Aaron_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 3:49",
+   "persona": "Moses_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 3:51",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 3:51",
+   "persona": "Aaron_1",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 3:51",
+   "persona": "Moses_1",
+   "inicio": 124,
+   "fin": 130
+  },
+  {
+   "ref": "Nm 4:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 4:1",
+   "persona": "Aaron_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 4:2",
+   "persona": "Kohath_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 4:2",
+   "persona": "Levi_1",
+   "inicio": 59,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 4:4",
+   "persona": "Kohath_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 4:5",
+   "persona": "Aaron_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 4:15",
+   "persona": "Aaron_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 4:15",
+   "persona": "Kohath_1",
+   "inicio": 162,
+   "fin": 167
+  },
+  {
+   "ref": "Nm 4:15",
+   "persona": "Kohath_1",
+   "inicio": 262,
+   "fin": 267
+  },
+  {
+   "ref": "Nm 4:16",
+   "persona": "Eleazar_1",
+   "inicio": 19,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 4:16",
+   "persona": "Aaron_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 4:17",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 4:17",
+   "persona": "Aaron_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 4:19",
+   "persona": "Aaron_1",
+   "inicio": 91,
+   "fin": 96
+  },
+  {
+   "ref": "Nm 4:21",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 4:22",
+   "persona": "Gershon_1",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 4:27",
+   "persona": "Aaron_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 4:28",
+   "persona": "Ithamar_1",
+   "inicio": 136,
+   "fin": 143
+  },
+  {
+   "ref": "Nm 4:28",
+   "persona": "Aaron_1",
+   "inicio": 153,
+   "fin": 158
+  },
+  {
+   "ref": "Nm 4:29",
+   "persona": "Merari_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 4:33",
+   "persona": "Merari_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 4:34",
+   "persona": "Moses_1",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 4:34",
+   "persona": "Aaron_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 4:37",
+   "persona": "Moses_1",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "Nm 4:37",
+   "persona": "Aaron_1",
+   "inicio": 139,
+   "fin": 144
+  },
+  {
+   "ref": "Nm 4:37",
+   "persona": "Moses_1",
+   "inicio": 179,
+   "fin": 185
+  },
+  {
+   "ref": "Nm 4:38",
+   "persona": "Gershon_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 4:41",
+   "persona": "Gershon_1",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 4:41",
+   "persona": "Moses_1",
+   "inicio": 141,
+   "fin": 147
+  },
+  {
+   "ref": "Nm 4:41",
+   "persona": "Aaron_1",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "Nm 4:42",
+   "persona": "Merari_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 4:45",
+   "persona": "Merari_1",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 4:45",
+   "persona": "Moses_1",
+   "inicio": 86,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 4:45",
+   "persona": "Aaron_1",
+   "inicio": 95,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 4:45",
+   "persona": "Moses_1",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "Nm 4:46",
+   "persona": "Moses_1",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 4:46",
+   "persona": "Aaron_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 4:49",
+   "persona": "Moses_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 5:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 5:4",
+   "persona": "Moses_1",
+   "inicio": 90,
+   "fin": 96
+  },
+  {
+   "ref": "Nm 5:5",
+   "persona": "Moses_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 5:11",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 6:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 6:22",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 7:1",
+   "persona": "Moses_1",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 7:4",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 7:6",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 7:7",
+   "persona": "Gershon_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 7:8",
+   "persona": "Merari_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 7:9",
+   "persona": "Kohath_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 7:11",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 7:12",
+   "persona": "Nahshon_1",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 7:12",
+   "persona": "Amminadab_1",
+   "inicio": 61,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 7:12",
+   "persona": "Judah_1",
+   "inicio": 86,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 7:17",
+   "persona": "Nahshon_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 7:17",
+   "persona": "Amminadab_1",
+   "inicio": 145,
+   "fin": 153
+  },
+  {
+   "ref": "Nm 7:18",
+   "persona": "Nethanel_1",
+   "inicio": 23,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 7:18",
+   "persona": "Zuar_1",
+   "inicio": 41,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 7:23",
+   "persona": "Nethanel_1",
+   "inicio": 129,
+   "fin": 138
+  },
+  {
+   "ref": "Nm 7:23",
+   "persona": "Zuar_1",
+   "inicio": 148,
+   "fin": 152
+  },
+  {
+   "ref": "Nm 7:24",
+   "persona": "Eliab_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 7:24",
+   "persona": "Helon_1",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 7:24",
+   "persona": "Zebulun_1",
+   "inicio": 61,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 7:29",
+   "persona": "Eliab_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Nm 7:29",
+   "persona": "Helon_1",
+   "inicio": 144,
+   "fin": 149
+  },
+  {
+   "ref": "Nm 7:30",
+   "persona": "Elizur_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 7:30",
+   "persona": "Shedeur_1",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 7:30",
+   "persona": "Reuben_1",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 7:35",
+   "persona": "Elizur_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 7:35",
+   "persona": "Shedeur_1",
+   "inicio": 145,
+   "fin": 151
+  },
+  {
+   "ref": "Nm 7:36",
+   "persona": "Shelumiel_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 7:36",
+   "persona": "Zurishaddai_1",
+   "inicio": 32,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 7:36",
+   "persona": "Simeon_1",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 7:41",
+   "persona": "Shelumiel_1",
+   "inicio": 129,
+   "fin": 137
+  },
+  {
+   "ref": "Nm 7:41",
+   "persona": "Zurishaddai_1",
+   "inicio": 147,
+   "fin": 157
+  },
+  {
+   "ref": "Nm 7:42",
+   "persona": "Eliasaph_1",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 7:42",
+   "persona": "Deuel_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 7:42",
+   "persona": "Gad_1",
+   "inicio": 64,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 7:47",
+   "persona": "Eliasaph_1",
+   "inicio": 129,
+   "fin": 137
+  },
+  {
+   "ref": "Nm 7:47",
+   "persona": "Deuel_1",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "Nm 7:48",
+   "persona": "Ephraim_1",
+   "inicio": 44,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 7:48",
+   "persona": "Elishama_1",
+   "inicio": 53,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 7:48",
+   "persona": "Ammihud_1",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 7:53",
+   "persona": "Elishama_1",
+   "inicio": 129,
+   "fin": 136
+  },
+  {
+   "ref": "Nm 7:53",
+   "persona": "Ammihud_1",
+   "inicio": 146,
+   "fin": 152
+  },
+  {
+   "ref": "Nm 7:54",
+   "persona": "Manasseh_1",
+   "inicio": 43,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 7:54",
+   "persona": "Gamaliel_1",
+   "inicio": 52,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 7:54",
+   "persona": "Pedahzur_1",
+   "inicio": 69,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 7:59",
+   "persona": "Gamaliel_1",
+   "inicio": 129,
+   "fin": 137
+  },
+  {
+   "ref": "Nm 7:59",
+   "persona": "Pedahzur_1",
+   "inicio": 147,
+   "fin": 154
+  },
+  {
+   "ref": "Nm 7:60",
+   "persona": "Benjamin_1",
+   "inicio": 43,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 7:60",
+   "persona": "Abidan_1",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 7:60",
+   "persona": "Gideoni_1",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 7:65",
+   "persona": "Abidan_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 7:65",
+   "persona": "Gideoni_1",
+   "inicio": 145,
+   "fin": 151
+  },
+  {
+   "ref": "Nm 7:66",
+   "persona": "Dan_1",
+   "inicio": 43,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 7:66",
+   "persona": "Ahiezer_1",
+   "inicio": 48,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 7:66",
+   "persona": "Ammishaddai_1",
+   "inicio": 64,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 7:71",
+   "persona": "Ahiezer_1",
+   "inicio": 129,
+   "fin": 136
+  },
+  {
+   "ref": "Nm 7:71",
+   "persona": "Ammishaddai_1",
+   "inicio": 146,
+   "fin": 156
+  },
+  {
+   "ref": "Nm 7:72",
+   "persona": "Asher_1",
+   "inicio": 45,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 7:72",
+   "persona": "Pagiel_1",
+   "inicio": 51,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 7:72",
+   "persona": "Ochran_1",
+   "inicio": 66,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 7:77",
+   "persona": "Pagiel_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 7:77",
+   "persona": "Ochran_1",
+   "inicio": 145,
+   "fin": 150
+  },
+  {
+   "ref": "Nm 7:78",
+   "persona": "Naphtali_1",
+   "inicio": 46,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 7:78",
+   "persona": "Ahira_1",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 7:78",
+   "persona": "Enan_1",
+   "inicio": 70,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 7:83",
+   "persona": "Ahira_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Nm 7:83",
+   "persona": "Enan_1",
+   "inicio": 144,
+   "fin": 148
+  },
+  {
+   "ref": "Nm 7:89",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 8:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 8:2",
+   "persona": "Aaron_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 8:3",
+   "persona": "Aaron_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 8:3",
+   "persona": "Moses_1",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 8:4",
+   "persona": "Moses_1",
+   "inicio": 157,
+   "fin": 163
+  },
+  {
+   "ref": "Nm 8:5",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 8:11",
+   "persona": "Aaron_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 8:13",
+   "persona": "Aaron_1",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 8:19",
+   "persona": "Aaron_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 8:20",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 8:20",
+   "persona": "Aaron_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 8:20",
+   "persona": "Moses_1",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "Nm 8:21",
+   "persona": "Aaron_1",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 8:21",
+   "persona": "Aaron_1",
+   "inicio": 111,
+   "fin": 116
+  },
+  {
+   "ref": "Nm 8:22",
+   "persona": "Aaron_1",
+   "inicio": 109,
+   "fin": 114
+  },
+  {
+   "ref": "Nm 8:22",
+   "persona": "Moses_1",
+   "inicio": 171,
+   "fin": 177
+  },
+  {
+   "ref": "Nm 8:23",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 9:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 9:4",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 9:5",
+   "persona": "Moses_1",
+   "inicio": 163,
+   "fin": 169
+  },
+  {
+   "ref": "Nm 9:6",
+   "persona": "Moses_1",
+   "inicio": 118,
+   "fin": 124
+  },
+  {
+   "ref": "Nm 9:6",
+   "persona": "Aaron_1",
+   "inicio": 138,
+   "fin": 143
+  },
+  {
+   "ref": "Nm 9:8",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 9:9",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 9:23",
+   "persona": "Moses_1",
+   "inicio": 134,
+   "fin": 140
+  },
+  {
+   "ref": "Nm 10:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 10:8",
+   "persona": "Aaron_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 10:13",
+   "persona": "Moses_1",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 10:14",
+   "persona": "Judah_1",
+   "inicio": 39,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 10:14",
+   "persona": "Nahshon_1",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 10:14",
+   "persona": "Amminadab_1",
+   "inicio": 110,
+   "fin": 118
+  },
+  {
+   "ref": "Nm 10:15",
+   "persona": "Issachar_1",
+   "inicio": 48,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 10:15",
+   "persona": "Nethanel_1",
+   "inicio": 58,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 10:15",
+   "persona": "Zuar_1",
+   "inicio": 76,
+   "fin": 80
+  },
+  {
+   "ref": "Nm 10:16",
+   "persona": "Zebulun_1",
+   "inicio": 48,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 10:16",
+   "persona": "Eliab_1",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 10:16",
+   "persona": "Helon_1",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 10:17",
+   "persona": "Gershon_1",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 10:17",
+   "persona": "Merari_1",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 10:18",
+   "persona": "Reuben_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 10:18",
+   "persona": "Elizur_1",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 10:18",
+   "persona": "Shedeur_1",
+   "inicio": 93,
+   "fin": 99
+  },
+  {
+   "ref": "Nm 10:19",
+   "persona": "Simeon_1",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 10:19",
+   "persona": "Shelumiel_1",
+   "inicio": 56,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 10:19",
+   "persona": "Zurishaddai_1",
+   "inicio": 73,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 10:20",
+   "persona": "Gad_1",
+   "inicio": 48,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 10:20",
+   "persona": "Eliasaph_1",
+   "inicio": 53,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 10:20",
+   "persona": "Deuel_1",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 10:22",
+   "persona": "Ephraim_1",
+   "inicio": 63,
+   "fin": 70
+  },
+  {
+   "ref": "Nm 10:22",
+   "persona": "Elishama_1",
+   "inicio": 94,
+   "fin": 101
+  },
+  {
+   "ref": "Nm 10:22",
+   "persona": "Ammihud_1",
+   "inicio": 111,
+   "fin": 117
+  },
+  {
+   "ref": "Nm 10:23",
+   "persona": "Manasseh_1",
+   "inicio": 48,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 10:23",
+   "persona": "Gamaliel_1",
+   "inicio": 57,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 10:23",
+   "persona": "Pedahzur_1",
+   "inicio": 74,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 10:24",
+   "persona": "Benjamin_1",
+   "inicio": 48,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 10:24",
+   "persona": "Abidan_1",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 10:24",
+   "persona": "Gideoni_1",
+   "inicio": 73,
+   "fin": 79
+  },
+  {
+   "ref": "Nm 10:25",
+   "persona": "Dan_1",
+   "inicio": 61,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 10:25",
+   "persona": "Ahiezer_1",
+   "inicio": 117,
+   "fin": 124
+  },
+  {
+   "ref": "Nm 10:25",
+   "persona": "Ammishaddai_1",
+   "inicio": 134,
+   "fin": 144
+  },
+  {
+   "ref": "Nm 10:26",
+   "persona": "Asher_1",
+   "inicio": 48,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 10:26",
+   "persona": "Pagiel_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 10:26",
+   "persona": "Ochran_1",
+   "inicio": 69,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 10:27",
+   "persona": "Naphtali_1",
+   "inicio": 48,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 10:27",
+   "persona": "Ahira_1",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 10:27",
+   "persona": "Enan_1",
+   "inicio": 72,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 10:29",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 10:29",
+   "persona": "Hobab_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 10:29",
+   "persona": "Reuel_2",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 10:35",
+   "persona": "Moses_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 11:2",
+   "persona": "Moses_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 11:2",
+   "persona": "Moses_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 11:10",
+   "persona": "Moses_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 11:10",
+   "persona": "Moses_1",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "Nm 11:11",
+   "persona": "Moses_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 11:16",
+   "persona": "Moses_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 11:21",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 11:23",
+   "persona": "Moses_1",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 11:24",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 11:26",
+   "persona": "Eldad_1",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 11:26",
+   "persona": "Medad_1",
+   "inicio": 73,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 11:27",
+   "persona": "Moses_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 11:27",
+   "persona": "Eldad_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 11:27",
+   "persona": "Medad_1",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 11:28",
+   "persona": "Joshua_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 11:28",
+   "persona": "Nun_1",
+   "inicio": 33,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 11:28",
+   "persona": "Moses_1",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 11:28",
+   "persona": "Moses_1",
+   "inicio": 99,
+   "fin": 105
+  },
+  {
+   "ref": "Nm 11:29",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 11:30",
+   "persona": "Moses_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 12:1",
+   "persona": "Miriam_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 12:1",
+   "persona": "Aaron_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 12:1",
+   "persona": "Moses_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 12:2",
+   "persona": "Moses_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 12:3",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 12:4",
+   "persona": "Moses_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 12:4",
+   "persona": "Aaron_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 12:4",
+   "persona": "Miriam_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 12:5",
+   "persona": "Aaron_1",
+   "inicio": 100,
+   "fin": 105
+  },
+  {
+   "ref": "Nm 12:5",
+   "persona": "Miriam_1",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Nm 12:7",
+   "persona": "Moses_1",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 12:8",
+   "persona": "Moses_1",
+   "inicio": 154,
+   "fin": 160
+  },
+  {
+   "ref": "Nm 12:10",
+   "persona": "Miriam_1",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 12:10",
+   "persona": "Aaron_1",
+   "inicio": 91,
+   "fin": 96
+  },
+  {
+   "ref": "Nm 12:10",
+   "persona": "Miriam_1",
+   "inicio": 99,
+   "fin": 104
+  },
+  {
+   "ref": "Nm 12:11",
+   "persona": "Aaron_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 12:11",
+   "persona": "Moses_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 12:13",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 12:14",
+   "persona": "Moses_1",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 12:15",
+   "persona": "Miriam_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 12:15",
+   "persona": "Miriam_1",
+   "inicio": 96,
+   "fin": 101
+  },
+  {
+   "ref": "Nm 13:2",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 13:4",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 13:5",
+   "persona": "Reuben_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 13:5",
+   "persona": "Shammua_1",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 13:5",
+   "persona": "Zaccur_1",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "Nm 13:6",
+   "persona": "Simeon_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 13:6",
+   "persona": "Shaphat_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 13:6",
+   "persona": "Hori_2",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 13:7",
+   "persona": "Judah_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 13:7",
+   "persona": "Caleb_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 13:7",
+   "persona": "Jephunneh_1",
+   "inicio": 35,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 13:8",
+   "persona": "Issachar_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 13:8",
+   "persona": "Igal_1",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 13:8",
+   "persona": "Joseph_2",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 13:9",
+   "persona": "Ephraim_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 13:9",
+   "persona": "Joshua_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 13:9",
+   "persona": "Nun_1",
+   "inicio": 38,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 13:10",
+   "persona": "Benjamin_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 13:10",
+   "persona": "Palti_1",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 13:10",
+   "persona": "Raphu_1",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 13:11",
+   "persona": "Zebulun_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 13:11",
+   "persona": "Gaddiel_1",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 13:11",
+   "persona": "Sodi_1",
+   "inicio": 40,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 13:12",
+   "persona": "Joseph_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 13:12",
+   "persona": "Manasseh_1",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 13:12",
+   "persona": "Gaddi_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 13:12",
+   "persona": "Susi_1",
+   "inicio": 59,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 13:13",
+   "persona": "Dan_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 13:13",
+   "persona": "Ammiel_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 13:13",
+   "persona": "Gemalli_1",
+   "inicio": 35,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 13:14",
+   "persona": "Asher_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 13:14",
+   "persona": "Sethur_1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 13:14",
+   "persona": "Michael_1",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 13:15",
+   "persona": "Naphtali_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 13:15",
+   "persona": "Nahbi_1",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 13:15",
+   "persona": "Vophsi_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 13:16",
+   "persona": "Gad_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 13:16",
+   "persona": "Geuel_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 13:16",
+   "persona": "Machi_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 13:17",
+   "persona": "Moses_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 13:17",
+   "persona": "Joshua_1",
+   "inicio": 81,
+   "fin": 86
+  },
+  {
+   "ref": "Nm 13:17",
+   "persona": "Nun_1",
+   "inicio": 95,
+   "fin": 98
+  },
+  {
+   "ref": "Nm 13:17",
+   "persona": "Moses_1",
+   "inicio": 108,
+   "fin": 114
+  },
+  {
+   "ref": "Nm 13:17",
+   "persona": "Joshua_1",
+   "inicio": 128,
+   "fin": 133
+  },
+  {
+   "ref": "Nm 13:18",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 13:23",
+   "persona": "Ahiman_1",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 13:23",
+   "persona": "Sheshai_1",
+   "inicio": 77,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 13:23",
+   "persona": "Talmai_1",
+   "inicio": 86,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 13:23",
+   "persona": "Anak_1",
+   "inicio": 103,
+   "fin": 107
+  },
+  {
+   "ref": "Nm 13:27",
+   "persona": "Moses_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 13:27",
+   "persona": "Aaron_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 13:29",
+   "persona": "Anak_1",
+   "inicio": 123,
+   "fin": 127
+  },
+  {
+   "ref": "Nm 13:31",
+   "persona": "Caleb_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 13:31",
+   "persona": "Moses_1",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 13:33",
+   "persona": "Anak_1",
+   "inicio": 281,
+   "fin": 285
+  },
+  {
+   "ref": "Nm 14:2",
+   "persona": "Moses_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 14:2",
+   "persona": "Aaron_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 14:5",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 14:5",
+   "persona": "Aaron_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 14:6",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 14:6",
+   "persona": "Nun_1",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 14:6",
+   "persona": "Caleb_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 14:6",
+   "persona": "Jephunneh_1",
+   "inicio": 37,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 14:11",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 14:13",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 14:24",
+   "persona": "Caleb_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 14:26",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 14:26",
+   "persona": "Aaron_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 14:30",
+   "persona": "Caleb_1",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "Nm 14:30",
+   "persona": "Jephunneh_1",
+   "inicio": 129,
+   "fin": 136
+  },
+  {
+   "ref": "Nm 14:30",
+   "persona": "Joshua_1",
+   "inicio": 142,
+   "fin": 147
+  },
+  {
+   "ref": "Nm 14:30",
+   "persona": "Nun_1",
+   "inicio": 156,
+   "fin": 159
+  },
+  {
+   "ref": "Nm 14:36",
+   "persona": "Moses_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 14:38",
+   "persona": "Joshua_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 14:38",
+   "persona": "Nun_1",
+   "inicio": 18,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 14:38",
+   "persona": "Caleb_1",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 14:38",
+   "persona": "Jephunneh_1",
+   "inicio": 39,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 14:39",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 14:41",
+   "persona": "Moses_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 14:44",
+   "persona": "Moses_1",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Nm 15:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 15:17",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 15:22",
+   "persona": "Moses_1",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Nm 15:23",
+   "persona": "Moses_1",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 15:33",
+   "persona": "Moses_1",
+   "inicio": 51,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 15:33",
+   "persona": "Aaron_1",
+   "inicio": 62,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 15:35",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 15:36",
+   "persona": "Moses_1",
+   "inicio": 107,
+   "fin": 113
+  },
+  {
+   "ref": "Nm 15:37",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Korah_3",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Izhar_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Kohath_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Levi_1",
+   "inicio": 46,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Dathan_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Abiram_1",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Eliab_2",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "On_1",
+   "inicio": 89,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Peleth_1",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "Nm 16:1",
+   "persona": "Reuben_1",
+   "inicio": 126,
+   "fin": 131
+  },
+  {
+   "ref": "Nm 16:2",
+   "persona": "Moses_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 16:3",
+   "persona": "Moses_1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 16:3",
+   "persona": "Aaron_1",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 16:4",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 16:5",
+   "persona": "Korah_3",
+   "inicio": 10,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 16:6",
+   "persona": "Korah_3",
+   "inicio": 32,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 16:7",
+   "persona": "Levi_1",
+   "inicio": 171,
+   "fin": 175
+  },
+  {
+   "ref": "Nm 16:8",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 16:8",
+   "persona": "Korah_3",
+   "inicio": 18,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 16:8",
+   "persona": "Levi_1",
+   "inicio": 44,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 16:10",
+   "persona": "Levi_1",
+   "inicio": 65,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 16:11",
+   "persona": "Aaron_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 16:12",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 16:12",
+   "persona": "Dathan_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 16:12",
+   "persona": "Abiram_1",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 16:12",
+   "persona": "Eliab_2",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 16:15",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 16:16",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 16:16",
+   "persona": "Korah_3",
+   "inicio": 22,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 16:16",
+   "persona": "Aaron_1",
+   "inicio": 98,
+   "fin": 103
+  },
+  {
+   "ref": "Nm 16:17",
+   "persona": "Aaron_1",
+   "inicio": 162,
+   "fin": 167
+  },
+  {
+   "ref": "Nm 16:18",
+   "persona": "Moses_1",
+   "inicio": 151,
+   "fin": 157
+  },
+  {
+   "ref": "Nm 16:18",
+   "persona": "Aaron_1",
+   "inicio": 160,
+   "fin": 165
+  },
+  {
+   "ref": "Nm 16:19",
+   "persona": "Korah_3",
+   "inicio": 3,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 16:20",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 16:20",
+   "persona": "Aaron_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 16:23",
+   "persona": "Moses_1",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 16:24",
+   "persona": "Korah_3",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "Nm 16:24",
+   "persona": "Dathan_1",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Nm 16:24",
+   "persona": "Abiram_1",
+   "inicio": 91,
+   "fin": 97
+  },
+  {
+   "ref": "Nm 16:25",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 16:25",
+   "persona": "Dathan_1",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 16:25",
+   "persona": "Abiram_1",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 16:27",
+   "persona": "Korah_3",
+   "inicio": 32,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 16:27",
+   "persona": "Dathan_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 16:27",
+   "persona": "Abiram_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 16:27",
+   "persona": "Dathan_1",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 16:27",
+   "persona": "Abiram_1",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 16:28",
+   "persona": "Moses_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 16:32",
+   "persona": "Korah_3",
+   "inicio": 87,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 16:36",
+   "persona": "Moses_1",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 16:37",
+   "persona": "Eleazar_1",
+   "inicio": 5,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 16:37",
+   "persona": "Aaron_1",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 16:39",
+   "persona": "Eleazar_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 16:40",
+   "persona": "Aaron_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Nm 16:40",
+   "persona": "Korah_3",
+   "inicio": 154,
+   "fin": 158
+  },
+  {
+   "ref": "Nm 16:40",
+   "persona": "Moses_1",
+   "inicio": 215,
+   "fin": 221
+  },
+  {
+   "ref": "Nm 16:41",
+   "persona": "Moses_1",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 16:41",
+   "persona": "Aaron_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 16:42",
+   "persona": "Moses_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 16:42",
+   "persona": "Aaron_1",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 16:43",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 16:43",
+   "persona": "Aaron_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 16:44",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 16:46",
+   "persona": "Moses_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 16:46",
+   "persona": "Aaron_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 16:47",
+   "persona": "Aaron_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 16:47",
+   "persona": "Moses_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 16:49",
+   "persona": "Korah_3",
+   "inicio": 108,
+   "fin": 112
+  },
+  {
+   "ref": "Nm 16:50",
+   "persona": "Aaron_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 16:50",
+   "persona": "Moses_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 17:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 17:3",
+   "persona": "Aaron_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 17:3",
+   "persona": "Levi_1",
+   "inicio": 49,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 17:6",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 17:6",
+   "persona": "Aaron_1",
+   "inicio": 174,
+   "fin": 179
+  },
+  {
+   "ref": "Nm 17:7",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 17:8",
+   "persona": "Moses_1",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 17:8",
+   "persona": "Aaron_1",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "Nm 17:8",
+   "persona": "Levi_1",
+   "inicio": 121,
+   "fin": 125
+  },
+  {
+   "ref": "Nm 17:9",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 17:10",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 17:10",
+   "persona": "Aaron_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 17:11",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 17:12",
+   "persona": "Moses_1",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 18:1",
+   "persona": "Aaron_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 18:2",
+   "persona": "Levi_1",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 18:8",
+   "persona": "Aaron_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 18:20",
+   "persona": "Aaron_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 18:21",
+   "persona": "Levi_1",
+   "inicio": 36,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 18:25",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 18:28",
+   "persona": "Aaron_1",
+   "inicio": 163,
+   "fin": 168
+  },
+  {
+   "ref": "Nm 19:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 19:1",
+   "persona": "Aaron_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 19:3",
+   "persona": "Eleazar_1",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 19:4",
+   "persona": "Eleazar_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 20:1",
+   "persona": "Miriam_1",
+   "inicio": 135,
+   "fin": 140
+  },
+  {
+   "ref": "Nm 20:2",
+   "persona": "Moses_1",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 20:2",
+   "persona": "Aaron_1",
+   "inicio": 72,
+   "fin": 77
+  },
+  {
+   "ref": "Nm 20:3",
+   "persona": "Moses_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 20:6",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 20:6",
+   "persona": "Aaron_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 20:7",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 20:8",
+   "persona": "Aaron_1",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 20:9",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 20:10",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 20:10",
+   "persona": "Aaron_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 20:11",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 20:12",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 20:12",
+   "persona": "Aaron_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 20:14",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 20:23",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 20:23",
+   "persona": "Aaron_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 20:24",
+   "persona": "Aaron_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Nm 20:25",
+   "persona": "Aaron_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 20:25",
+   "persona": "Eleazar_1",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 20:26",
+   "persona": "Aaron_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 20:26",
+   "persona": "Eleazar_1",
+   "inicio": 56,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 20:26",
+   "persona": "Aaron_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 20:27",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 20:28",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 20:28",
+   "persona": "Aaron_1",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 20:28",
+   "persona": "Eleazar_1",
+   "inicio": 61,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 20:28",
+   "persona": "Aaron_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 20:28",
+   "persona": "Moses_1",
+   "inicio": 123,
+   "fin": 129
+  },
+  {
+   "ref": "Nm 20:28",
+   "persona": "Eleazar_1",
+   "inicio": 132,
+   "fin": 139
+  },
+  {
+   "ref": "Nm 20:29",
+   "persona": "Aaron_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 21:5",
+   "persona": "Moses_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 21:7",
+   "persona": "Moses_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 21:7",
+   "persona": "Moses_1",
+   "inicio": 161,
+   "fin": 167
+  },
+  {
+   "ref": "Nm 21:8",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 21:9",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 21:16",
+   "persona": "Moses_1",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 21:21",
+   "persona": "Sihon_1",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 21:23",
+   "persona": "Sihon_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 21:23",
+   "persona": "Sihon_1",
+   "inicio": 61,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 21:26",
+   "persona": "Sihon_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 21:27",
+   "persona": "Sihon_1",
+   "inicio": 86,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 21:28",
+   "persona": "Sihon_1",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 21:29",
+   "persona": "Sihon_1",
+   "inicio": 105,
+   "fin": 110
+  },
+  {
+   "ref": "Nm 21:32",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 21:33",
+   "persona": "Og_1",
+   "inicio": 62,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 21:34",
+   "persona": "Moses_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 21:34",
+   "persona": "Sihon_1",
+   "inicio": 148,
+   "fin": 153
+  },
+  {
+   "ref": "Nm 22:2",
+   "persona": "Balak_1",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 22:2",
+   "persona": "Zippor_1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 22:4",
+   "persona": "Balak_1",
+   "inicio": 128,
+   "fin": 133
+  },
+  {
+   "ref": "Nm 22:4",
+   "persona": "Zippor_1",
+   "inicio": 143,
+   "fin": 149
+  },
+  {
+   "ref": "Nm 22:5",
+   "persona": "Balaam_1",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 22:5",
+   "persona": "Beor_2",
+   "inicio": 44,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 22:7",
+   "persona": "Balaam_1",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "Nm 22:7",
+   "persona": "Balak_1",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "Nm 22:8",
+   "persona": "Balaam_1",
+   "inicio": 137,
+   "fin": 143
+  },
+  {
+   "ref": "Nm 22:9",
+   "persona": "Balaam_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 22:10",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 22:10",
+   "persona": "Balak_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 22:10",
+   "persona": "Zippor_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 22:12",
+   "persona": "Balaam_1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 22:13",
+   "persona": "Balaam_1",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Nm 22:13",
+   "persona": "Balak_1",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 22:14",
+   "persona": "Balak_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 22:14",
+   "persona": "Balaam_1",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 22:15",
+   "persona": "Balak_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 22:16",
+   "persona": "Balaam_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 22:16",
+   "persona": "Balak_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 22:16",
+   "persona": "Zippor_1",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 22:18",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 22:18",
+   "persona": "Balak_1",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 22:18",
+   "persona": "Balak_1",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 22:20",
+   "persona": "Balaam_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 22:21",
+   "persona": "Balaam_1",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Nm 22:23",
+   "persona": "Balaam_1",
+   "inicio": 158,
+   "fin": 164
+  },
+  {
+   "ref": "Nm 22:25",
+   "persona": "Balaam_1",
+   "inicio": 91,
+   "fin": 97
+  },
+  {
+   "ref": "Nm 22:27",
+   "persona": "Balaam_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 22:27",
+   "persona": "Balaam_1",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 22:28",
+   "persona": "Balaam_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 22:29",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 22:30",
+   "persona": "Balaam_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 22:31",
+   "persona": "Balaam_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 22:31",
+   "persona": "Balaam_1",
+   "inicio": 134,
+   "fin": 140
+  },
+  {
+   "ref": "Nm 22:34",
+   "persona": "Balaam_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 22:35",
+   "persona": "Balaam_1",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 22:35",
+   "persona": "Balaam_1",
+   "inicio": 111,
+   "fin": 117
+  },
+  {
+   "ref": "Nm 22:36",
+   "persona": "Balak_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 22:36",
+   "persona": "Balaam_1",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 22:37",
+   "persona": "Balak_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 22:37",
+   "persona": "Balaam_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 22:38",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 22:38",
+   "persona": "Balak_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 22:39",
+   "persona": "Balaam_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 22:39",
+   "persona": "Balak_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 22:40",
+   "persona": "Balak_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 22:40",
+   "persona": "Balaam_1",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 22:41",
+   "persona": "Balak_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 22:41",
+   "persona": "Balaam_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 23:1",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 23:1",
+   "persona": "Balak_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 23:2",
+   "persona": "Balak_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 23:2",
+   "persona": "Balaam_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 23:2",
+   "persona": "Balak_1",
+   "inicio": 47,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 23:2",
+   "persona": "Balaam_1",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 23:3",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 23:3",
+   "persona": "Balak_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 23:4",
+   "persona": "Balaam_1",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 23:5",
+   "persona": "Balaam_1",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 23:5",
+   "persona": "Balak_1",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 23:7",
+   "persona": "Balak_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 23:11",
+   "persona": "Balak_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 23:11",
+   "persona": "Balaam_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 23:13",
+   "persona": "Balak_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 23:15",
+   "persona": "Balak_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 23:16",
+   "persona": "Balaam_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 23:16",
+   "persona": "Balak_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 23:17",
+   "persona": "Balak_1",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "Nm 23:18",
+   "persona": "Balak_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 23:18",
+   "persona": "Zippor_1",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "Nm 23:25",
+   "persona": "Balak_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 23:25",
+   "persona": "Balaam_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 23:26",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 23:26",
+   "persona": "Balak_1",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 23:27",
+   "persona": "Balak_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 23:27",
+   "persona": "Balaam_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 23:28",
+   "persona": "Balak_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 23:28",
+   "persona": "Balaam_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 23:29",
+   "persona": "Balaam_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 23:29",
+   "persona": "Balak_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 23:30",
+   "persona": "Balak_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 23:30",
+   "persona": "Balaam_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 24:1",
+   "persona": "Balaam_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 24:3",
+   "persona": "Balaam_1",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 24:3",
+   "persona": "Beor_2",
+   "inicio": 55,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 24:7",
+   "persona": "Agag_1",
+   "inicio": 98,
+   "fin": 102
+  },
+  {
+   "ref": "Nm 24:10",
+   "persona": "Balak_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 24:10",
+   "persona": "Balaam_1",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 24:12",
+   "persona": "Balaam_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 24:13",
+   "persona": "Balak_1",
+   "inicio": 3,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 24:15",
+   "persona": "Balaam_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 24:15",
+   "persona": "Beor_2",
+   "inicio": 48,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 24:25",
+   "persona": "Balaam_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 24:25",
+   "persona": "Balak_1",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 25:4",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 25:5",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 25:6",
+   "persona": "Moses_1",
+   "inicio": 95,
+   "fin": 101
+  },
+  {
+   "ref": "Nm 25:7",
+   "persona": "Phinehas_1",
+   "inicio": 8,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 25:7",
+   "persona": "Eleazar_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 25:7",
+   "persona": "Aaron_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 25:10",
+   "persona": "Moses_1",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 25:11",
+   "persona": "Phinehas_1",
+   "inicio": 0,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 25:11",
+   "persona": "Eleazar_1",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 25:11",
+   "persona": "Aaron_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 25:14",
+   "persona": "Zimri_1",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 25:14",
+   "persona": "Salu_1",
+   "inicio": 81,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 25:15",
+   "persona": "Cozbi_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 25:15",
+   "persona": "Zur_1",
+   "inicio": 61,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 25:16",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 25:18",
+   "persona": "Cozbi_1",
+   "inicio": 125,
+   "fin": 130
+  },
+  {
+   "ref": "Nm 26:1",
+   "persona": "Moses_1",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 26:1",
+   "persona": "Eleazar_1",
+   "inicio": 68,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 26:1",
+   "persona": "Aaron_1",
+   "inicio": 95,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 26:3",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 26:3",
+   "persona": "Eleazar_1",
+   "inicio": 11,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 26:4",
+   "persona": "Moses_1",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 26:5",
+   "persona": "Reuben_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Nm 26:5",
+   "persona": "Reuben_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 26:5",
+   "persona": "Hanoch_2",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 26:5",
+   "persona": "Pallu_1",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "Nm 26:6",
+   "persona": "Hezron_1",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 26:6",
+   "persona": "Carmi_1",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 26:8",
+   "persona": "Pallu_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 26:8",
+   "persona": "Eliab_2",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Eliab_2",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Nemuel_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Dathan_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Abiram_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Dathan_1",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Abiram_1",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Moses_1",
+   "inicio": 144,
+   "fin": 150
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Aaron_1",
+   "inicio": 153,
+   "fin": 158
+  },
+  {
+   "ref": "Nm 26:9",
+   "persona": "Korah_3",
+   "inicio": 178,
+   "fin": 182
+  },
+  {
+   "ref": "Nm 26:10",
+   "persona": "Korah_3",
+   "inicio": 48,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 26:11",
+   "persona": "Korah_3",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 26:12",
+   "persona": "Simeon_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 26:12",
+   "persona": "Jemuel_1",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 26:12",
+   "persona": "Jamin_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Nm 26:12",
+   "persona": "Jachin_1",
+   "inicio": 121,
+   "fin": 127
+  },
+  {
+   "ref": "Nm 26:13",
+   "persona": "Zohar_2",
+   "inicio": 3,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 26:13",
+   "persona": "Shaul_2",
+   "inicio": 40,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 26:15",
+   "persona": "Gad_1",
+   "inicio": 13,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 26:15",
+   "persona": "Ziphion_1",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 26:15",
+   "persona": "Haggi_1",
+   "inicio": 79,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 26:15",
+   "persona": "Shuni_1",
+   "inicio": 115,
+   "fin": 119
+  },
+  {
+   "ref": "Nm 26:16",
+   "persona": "Ezbon_1",
+   "inicio": 3,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 26:16",
+   "persona": "Eri_1",
+   "inicio": 39,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 26:17",
+   "persona": "Arodi_1",
+   "inicio": 27,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 26:17",
+   "persona": "Areli_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 26:19",
+   "persona": "Judah_1",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 26:19",
+   "persona": "Er_1",
+   "inicio": 19,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 26:19",
+   "persona": "Onan_1",
+   "inicio": 24,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 26:19",
+   "persona": "Er_1",
+   "inicio": 32,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 26:19",
+   "persona": "Onan_1",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 26:20",
+   "persona": "Judah_1",
+   "inicio": 22,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 26:20",
+   "persona": "Shelah_2",
+   "inicio": 48,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 26:20",
+   "persona": "Perez_1",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 26:20",
+   "persona": "Zerah_3",
+   "inicio": 126,
+   "fin": 130
+  },
+  {
+   "ref": "Nm 26:21",
+   "persona": "Perez_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 26:21",
+   "persona": "Hezron_2",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 26:21",
+   "persona": "Hamul_1",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Nm 26:23",
+   "persona": "Issachar_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 26:23",
+   "persona": "Tola_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 26:23",
+   "persona": "Puvvah_1",
+   "inicio": 82,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 26:24",
+   "persona": "Iob_1",
+   "inicio": 3,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 26:24",
+   "persona": "Shimron_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 26:26",
+   "persona": "Zebulun_1",
+   "inicio": 13,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 26:26",
+   "persona": "Sered_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 26:26",
+   "persona": "Elon_2",
+   "inicio": 81,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 26:26",
+   "persona": "Jahleel_1",
+   "inicio": 118,
+   "fin": 123
+  },
+  {
+   "ref": "Nm 26:28",
+   "persona": "Joseph_1",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 26:28",
+   "persona": "Manasseh_1",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 26:28",
+   "persona": "Ephraim_1",
+   "inicio": 46,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 26:29",
+   "persona": "Manasseh_1",
+   "inicio": 13,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 26:29",
+   "persona": "Machir_1",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 26:29",
+   "persona": "Machir_1",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 26:29",
+   "persona": "Gilead_1",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Nm 26:29",
+   "persona": "Gilead_1",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "Nm 26:30",
+   "persona": "Gilead_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 26:30",
+   "persona": "Iezer_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 26:30",
+   "persona": "Helek_1",
+   "inicio": 73,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 26:31",
+   "persona": "Asriel_1",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 26:31",
+   "persona": "Shechem_2",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 26:32",
+   "persona": "Shemida_1",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 26:32",
+   "persona": "Hepher_1",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Zelophehad_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Hepher_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Zelophehad_1",
+   "inicio": 84,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Mahlah_1",
+   "inicio": 100,
+   "fin": 105
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Noah_2",
+   "inicio": 109,
+   "fin": 112
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Hoglah_1",
+   "inicio": 116,
+   "fin": 121
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Milcah_2",
+   "inicio": 125,
+   "fin": 130
+  },
+  {
+   "ref": "Nm 26:33",
+   "persona": "Tirzah_1",
+   "inicio": 134,
+   "fin": 139
+  },
+  {
+   "ref": "Nm 26:34",
+   "persona": "Manasseh_1",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 26:35",
+   "persona": "Ephraim_1",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 26:35",
+   "persona": "Shuthelah_1",
+   "inicio": 52,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 26:35",
+   "persona": "Becher_2",
+   "inicio": 95,
+   "fin": 101
+  },
+  {
+   "ref": "Nm 26:35",
+   "persona": "Tahan_1",
+   "inicio": 136,
+   "fin": 141
+  },
+  {
+   "ref": "Nm 26:36",
+   "persona": "Shuthelah_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 26:36",
+   "persona": "Eran_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 26:37",
+   "persona": "Ephraim_1",
+   "inicio": 39,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 26:37",
+   "persona": "Joseph_1",
+   "inicio": 121,
+   "fin": 125
+  },
+  {
+   "ref": "Nm 26:38",
+   "persona": "Benjamin_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 26:38",
+   "persona": "Bela_2",
+   "inicio": 43,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 26:38",
+   "persona": "Ashbel_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 26:38",
+   "persona": "Ehi_1",
+   "inicio": 119,
+   "fin": 126
+  },
+  {
+   "ref": "Nm 26:39",
+   "persona": "Muppim_1",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 26:39",
+   "persona": "Huppim_1",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 26:40",
+   "persona": "Bela_2",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 26:40",
+   "persona": "Ard_1",
+   "inicio": 27,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 26:40",
+   "persona": "Naaman_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 26:40",
+   "persona": "Ard_1",
+   "inicio": 45,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 26:40",
+   "persona": "Naaman_1",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Nm 26:41",
+   "persona": "Benjamin_1",
+   "inicio": 23,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 26:42",
+   "persona": "Dan_1",
+   "inicio": 23,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 26:42",
+   "persona": "Hushim_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 26:42",
+   "persona": "Dan_1",
+   "inicio": 110,
+   "fin": 113
+  },
+  {
+   "ref": "Nm 26:44",
+   "persona": "Asher_1",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 26:44",
+   "persona": "Imnah_1",
+   "inicio": 39,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 26:44",
+   "persona": "Ishvi_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 26:44",
+   "persona": "Beriah_1",
+   "inicio": 114,
+   "fin": 119
+  },
+  {
+   "ref": "Nm 26:45",
+   "persona": "Beriah_1",
+   "inicio": 13,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 26:45",
+   "persona": "Heber_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 26:45",
+   "persona": "Malchiel_1",
+   "inicio": 62,
+   "fin": 70
+  },
+  {
+   "ref": "Nm 26:46",
+   "persona": "Asher_1",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 26:46",
+   "persona": "Serah_1",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 26:47",
+   "persona": "Asher_1",
+   "inicio": 39,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 26:48",
+   "persona": "Naphtali_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 26:48",
+   "persona": "Jahzeel_1",
+   "inicio": 43,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 26:48",
+   "persona": "Guni_1",
+   "inicio": 86,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 26:49",
+   "persona": "Jezer_1",
+   "inicio": 3,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 26:49",
+   "persona": "Shillem_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 26:50",
+   "persona": "Naphtali_1",
+   "inicio": 26,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 26:52",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 26:57",
+   "persona": "Gershon_1",
+   "inicio": 61,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 26:57",
+   "persona": "Kohath_1",
+   "inicio": 102,
+   "fin": 107
+  },
+  {
+   "ref": "Nm 26:57",
+   "persona": "Merari_1",
+   "inicio": 141,
+   "fin": 147
+  },
+  {
+   "ref": "Nm 26:58",
+   "persona": "Levi_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 26:58",
+   "persona": "Kohath_1",
+   "inicio": 182,
+   "fin": 187
+  },
+  {
+   "ref": "Nm 26:58",
+   "persona": "Amram_1",
+   "inicio": 199,
+   "fin": 204
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Amram_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Jochebed_1",
+   "inicio": 29,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Levi_1",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Levi_1",
+   "inicio": 69,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Amram_1",
+   "inicio": 99,
+   "fin": 104
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Aaron_1",
+   "inicio": 107,
+   "fin": 112
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Moses_1",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "Nm 26:59",
+   "persona": "Miriam_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Nm 26:60",
+   "persona": "Aaron_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 26:60",
+   "persona": "Nadab_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 26:60",
+   "persona": "Abihu_1",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 26:60",
+   "persona": "Eleazar_1",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 26:60",
+   "persona": "Ithamar_1",
+   "inicio": 43,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 26:61",
+   "persona": "Nadab_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 26:61",
+   "persona": "Abihu_1",
+   "inicio": 12,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 26:63",
+   "persona": "Moses_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 26:63",
+   "persona": "Eleazar_1",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 26:64",
+   "persona": "Moses_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 26:64",
+   "persona": "Aaron_1",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 26:65",
+   "persona": "Caleb_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 26:65",
+   "persona": "Jephunneh_1",
+   "inicio": 99,
+   "fin": 106
+  },
+  {
+   "ref": "Nm 26:65",
+   "persona": "Joshua_1",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Nm 26:65",
+   "persona": "Nun_1",
+   "inicio": 124,
+   "fin": 127
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Zelophehad_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Hepher_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Gilead_1",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Machir_1",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Manasseh_1",
+   "inicio": 81,
+   "fin": 88
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Manasseh_1",
+   "inicio": 109,
+   "fin": 116
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Joseph_1",
+   "inicio": 126,
+   "fin": 130
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Mahlah_1",
+   "inicio": 163,
+   "fin": 168
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Noah_2",
+   "inicio": 172,
+   "fin": 175
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Hoglah_1",
+   "inicio": 179,
+   "fin": 184
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Milcah_2",
+   "inicio": 188,
+   "fin": 193
+  },
+  {
+   "ref": "Nm 27:1",
+   "persona": "Tirzah_1",
+   "inicio": 197,
+   "fin": 202
+  },
+  {
+   "ref": "Nm 27:2",
+   "persona": "Moses_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 27:2",
+   "persona": "Eleazar_1",
+   "inicio": 59,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 27:3",
+   "persona": "Korah_3",
+   "inicio": 112,
+   "fin": 116
+  },
+  {
+   "ref": "Nm 27:5",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 27:6",
+   "persona": "Moses_1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 27:7",
+   "persona": "Zelophehad_1",
+   "inicio": 24,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 27:11",
+   "persona": "Moses_1",
+   "inicio": 188,
+   "fin": 194
+  },
+  {
+   "ref": "Nm 27:12",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 27:13",
+   "persona": "Aaron_1",
+   "inicio": 99,
+   "fin": 104
+  },
+  {
+   "ref": "Nm 27:15",
+   "persona": "Moses_1",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 27:18",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 27:18",
+   "persona": "Joshua_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 27:18",
+   "persona": "Nun_1",
+   "inicio": 45,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 27:19",
+   "persona": "Eleazar_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 27:21",
+   "persona": "Eleazar_1",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 27:22",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 27:22",
+   "persona": "Joshua_1",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 27:22",
+   "persona": "Eleazar_1",
+   "inicio": 83,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 27:23",
+   "persona": "Moses_1",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "Nm 28:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 30:1",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 30:2",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 30:16",
+   "persona": "Moses_1",
+   "inicio": 128,
+   "fin": 134
+  },
+  {
+   "ref": "Nm 31:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 31:3",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 31:6",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 31:6",
+   "persona": "Phinehas_1",
+   "inicio": 59,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 31:6",
+   "persona": "Eleazar_1",
+   "inicio": 76,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 31:7",
+   "persona": "Moses_1",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Evi_1",
+   "inicio": 68,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Rekem_1",
+   "inicio": 75,
+   "fin": 80
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Zur_2",
+   "inicio": 84,
+   "fin": 87
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Hur_2",
+   "inicio": 91,
+   "fin": 94
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Reba_1",
+   "inicio": 98,
+   "fin": 102
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Balaam_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 31:8",
+   "persona": "Beor_2",
+   "inicio": 153,
+   "fin": 157
+  },
+  {
+   "ref": "Nm 31:12",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 31:12",
+   "persona": "Eleazar_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 31:13",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 31:13",
+   "persona": "Eleazar_1",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 31:14",
+   "persona": "Moses_1",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 31:15",
+   "persona": "Moses_1",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 31:16",
+   "persona": "Balaam_1",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 31:21",
+   "persona": "Eleazar_1",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Nm 31:21",
+   "persona": "Moses_1",
+   "inicio": 132,
+   "fin": 138
+  },
+  {
+   "ref": "Nm 31:25",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 31:26",
+   "persona": "Eleazar_1",
+   "inicio": 103,
+   "fin": 110
+  },
+  {
+   "ref": "Nm 31:29",
+   "persona": "Eleazar_1",
+   "inicio": 43,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 31:31",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 31:31",
+   "persona": "Eleazar_1",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 31:31",
+   "persona": "Moses_1",
+   "inicio": 61,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 31:41",
+   "persona": "Moses_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 31:41",
+   "persona": "Eleazar_1",
+   "inicio": 57,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 31:41",
+   "persona": "Moses_1",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "Nm 31:42",
+   "persona": "Moses_1",
+   "inicio": 51,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 31:47",
+   "persona": "Moses_1",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 31:47",
+   "persona": "Moses_1",
+   "inicio": 224,
+   "fin": 230
+  },
+  {
+   "ref": "Nm 31:48",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 31:49",
+   "persona": "Moses_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 31:51",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 31:51",
+   "persona": "Eleazar_1",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 31:54",
+   "persona": "Moses_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 31:54",
+   "persona": "Eleazar_1",
+   "inicio": 40,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 32:1",
+   "persona": "Reuben_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 32:1",
+   "persona": "Gad_1",
+   "inicio": 36,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 32:2",
+   "persona": "Gad_1",
+   "inicio": 24,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 32:2",
+   "persona": "Reuben_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 32:2",
+   "persona": "Moses_1",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 32:2",
+   "persona": "Eleazar_1",
+   "inicio": 75,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 32:6",
+   "persona": "Moses_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 32:6",
+   "persona": "Gad_1",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 32:6",
+   "persona": "Reuben_1",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 32:11",
+   "persona": "Abram_1",
+   "inicio": 100,
+   "fin": 107
+  },
+  {
+   "ref": "Nm 32:11",
+   "persona": "Isaac_1",
+   "inicio": 109,
+   "fin": 114
+  },
+  {
+   "ref": "Nm 32:11",
+   "persona": "Jacob_1",
+   "inicio": 118,
+   "fin": 123
+  },
+  {
+   "ref": "Nm 32:12",
+   "persona": "Caleb_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 32:12",
+   "persona": "Jephunneh_1",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 32:12",
+   "persona": "Joshua_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 32:12",
+   "persona": "Nun_1",
+   "inicio": 56,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 32:20",
+   "persona": "Moses_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 32:25",
+   "persona": "Gad_1",
+   "inicio": 24,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 32:25",
+   "persona": "Reuben_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 32:25",
+   "persona": "Moses_1",
+   "inicio": 51,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 32:28",
+   "persona": "Moses_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 32:28",
+   "persona": "Eleazar_1",
+   "inicio": 32,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 32:28",
+   "persona": "Joshua_1",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 32:28",
+   "persona": "Nun_1",
+   "inicio": 72,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 32:29",
+   "persona": "Moses_1",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 32:29",
+   "persona": "Gad_1",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 32:29",
+   "persona": "Reuben_1",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 32:31",
+   "persona": "Gad_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 32:31",
+   "persona": "Reuben_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Moses_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Gad_1",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Reuben_1",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Manasseh_1",
+   "inicio": 84,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Joseph_1",
+   "inicio": 100,
+   "fin": 104
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Sihon_1",
+   "inicio": 118,
+   "fin": 123
+  },
+  {
+   "ref": "Nm 32:33",
+   "persona": "Og_1",
+   "inicio": 152,
+   "fin": 154
+  },
+  {
+   "ref": "Nm 32:34",
+   "persona": "Gad_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 32:37",
+   "persona": "Reuben_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 32:39",
+   "persona": "Machir_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 32:39",
+   "persona": "Manasseh_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 32:40",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 32:40",
+   "persona": "Machir_1",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 32:40",
+   "persona": "Manasseh_1",
+   "inicio": 37,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 32:41",
+   "persona": "Jair_1",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 32:41",
+   "persona": "Manasseh_1",
+   "inicio": 21,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 32:42",
+   "persona": "Nobah_1",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 32:42",
+   "persona": "Nobah_1",
+   "inicio": 58,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 33:1",
+   "persona": "Moses_1",
+   "inicio": 132,
+   "fin": 138
+  },
+  {
+   "ref": "Nm 33:1",
+   "persona": "Aaron_1",
+   "inicio": 141,
+   "fin": 146
+  },
+  {
+   "ref": "Nm 33:2",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 33:38",
+   "persona": "Aaron_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 33:39",
+   "persona": "Aaron_1",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 33:50",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 34:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 34:13",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 34:14",
+   "persona": "Reuben_1",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 34:14",
+   "persona": "Gad_1",
+   "inicio": 96,
+   "fin": 99
+  },
+  {
+   "ref": "Nm 34:14",
+   "persona": "Manasseh_1",
+   "inicio": 151,
+   "fin": 158
+  },
+  {
+   "ref": "Nm 34:16",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 34:17",
+   "persona": "Eleazar_1",
+   "inicio": 69,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 34:17",
+   "persona": "Joshua_1",
+   "inicio": 93,
+   "fin": 98
+  },
+  {
+   "ref": "Nm 34:17",
+   "persona": "Nun_1",
+   "inicio": 107,
+   "fin": 110
+  },
+  {
+   "ref": "Nm 34:19",
+   "persona": "Judah_1",
+   "inicio": 55,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 34:19",
+   "persona": "Caleb_1",
+   "inicio": 61,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 34:19",
+   "persona": "Jephunneh_1",
+   "inicio": 75,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 34:20",
+   "persona": "Simeon_1",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 34:20",
+   "persona": "Samuel_1",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 34:20",
+   "persona": "Ammihud_2",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 34:21",
+   "persona": "Benjamin_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 34:21",
+   "persona": "Elidad_1",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 34:21",
+   "persona": "Chislon_1",
+   "inicio": 40,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 34:22",
+   "persona": "Dan_1",
+   "inicio": 30,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 34:22",
+   "persona": "Bukki_1",
+   "inicio": 47,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 34:22",
+   "persona": "Jogli_1",
+   "inicio": 61,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 34:23",
+   "persona": "Joseph_1",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 34:23",
+   "persona": "Manasseh_1",
+   "inicio": 50,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 34:23",
+   "persona": "Hanniel_1",
+   "inicio": 71,
+   "fin": 77
+  },
+  {
+   "ref": "Nm 34:23",
+   "persona": "Ephod_1",
+   "inicio": 86,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 34:24",
+   "persona": "Ephraim_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 34:24",
+   "persona": "Kemuel_2",
+   "inicio": 51,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 34:24",
+   "persona": "Shiphtan_1",
+   "inicio": 67,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 34:25",
+   "persona": "Zebulun_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 34:25",
+   "persona": "Elizaphan_1",
+   "inicio": 51,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 34:25",
+   "persona": "Parnach_1",
+   "inicio": 69,
+   "fin": 77
+  },
+  {
+   "ref": "Nm 34:26",
+   "persona": "Issachar_1",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 34:26",
+   "persona": "Paltiel_1",
+   "inicio": 52,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 34:26",
+   "persona": "Azzan_1",
+   "inicio": 68,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 34:27",
+   "persona": "Asher_1",
+   "inicio": 30,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 34:27",
+   "persona": "Ahihud_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 34:27",
+   "persona": "Shelomi_1",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 34:28",
+   "persona": "Naphtali_1",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 34:28",
+   "persona": "Pedahel_1",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 34:28",
+   "persona": "Ammihud_3",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 35:1",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 35:9",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 36:1",
+   "persona": "Gilead_1",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 36:1",
+   "persona": "Machir_1",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 36:1",
+   "persona": "Manasseh_1",
+   "inicio": 88,
+   "fin": 95
+  },
+  {
+   "ref": "Nm 36:1",
+   "persona": "Joseph_1",
+   "inicio": 129,
+   "fin": 133
+  },
+  {
+   "ref": "Nm 36:1",
+   "persona": "Moses_1",
+   "inicio": 157,
+   "fin": 163
+  },
+  {
+   "ref": "Nm 36:2",
+   "persona": "Zelophehad_1",
+   "inicio": 161,
+   "fin": 169
+  },
+  {
+   "ref": "Nm 36:5",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 36:5",
+   "persona": "Joseph_1",
+   "inicio": 100,
+   "fin": 104
+  },
+  {
+   "ref": "Nm 36:6",
+   "persona": "Zelophehad_1",
+   "inicio": 56,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 36:10",
+   "persona": "Moses_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 36:10",
+   "persona": "Zelophehad_1",
+   "inicio": 54,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 36:11",
+   "persona": "Mahlah_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 36:11",
+   "persona": "Tirzah_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 36:11",
+   "persona": "Hoglah_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Nm 36:11",
+   "persona": "Milcah_2",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 36:11",
+   "persona": "Noah_2",
+   "inicio": 45,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 36:11",
+   "persona": "Zelophehad_1",
+   "inicio": 59,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 36:12",
+   "persona": "Manasseh_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 36:12",
+   "persona": "Joseph_1",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 36:13",
+   "persona": "Moses_1",
+   "inicio": 72,
+   "fin": 78
   }
  ],
  "lugares": [
@@ -50884,7 +67200,18 @@ window.BIBLIA_DATOS = {
     "Ex 16:35",
     "Lv 14:34",
     "Lv 18:3",
-    "Lv 25:38"
+    "Lv 25:38",
+    "Nm 13:3",
+    "Nm 13:18",
+    "Nm 26:19",
+    "Nm 32:30",
+    "Nm 32:32",
+    "Nm 33:40",
+    "Nm 33:51",
+    "Nm 34:2",
+    "Nm 34:29",
+    "Nm 35:10",
+    "Nm 35:14"
    ],
    "ubicacion": {
     "identificacion": "Canaan",
@@ -51438,7 +67765,16 @@ window.BIBLIA_DATOS = {
     "Gn 36:31",
     "Gn 36:32",
     "Gn 36:43",
-    "Ex 15:15"
+    "Ex 15:15",
+    "Nm 20:14",
+    "Nm 20:18",
+    "Nm 20:20",
+    "Nm 20:21",
+    "Nm 20:23",
+    "Nm 21:4",
+    "Nm 24:18",
+    "Nm 33:37",
+    "Nm 34:3"
    ],
    "ubicacion": {
     "identificacion": "Buseira",
@@ -51656,7 +67992,34 @@ window.BIBLIA_DATOS = {
     "Lv 25:42",
     "Lv 25:55",
     "Lv 26:13",
-    "Lv 26:45"
+    "Lv 26:45",
+    "Nm 1:1",
+    "Nm 3:13",
+    "Nm 8:17",
+    "Nm 9:1",
+    "Nm 11:5",
+    "Nm 11:18",
+    "Nm 11:20",
+    "Nm 13:23",
+    "Nm 14:2",
+    "Nm 14:3",
+    "Nm 14:4",
+    "Nm 14:19",
+    "Nm 14:22",
+    "Nm 15:41",
+    "Nm 20:5",
+    "Nm 20:15",
+    "Nm 20:16",
+    "Nm 21:5",
+    "Nm 22:5",
+    "Nm 22:11",
+    "Nm 23:22",
+    "Nm 24:8",
+    "Nm 26:4",
+    "Nm 26:59",
+    "Nm 32:11",
+    "Nm 33:1",
+    "Nm 33:38"
    ],
    "ubicacion": {
     "identificacion": "Ain Shams",
@@ -51838,7 +68201,12 @@ window.BIBLIA_DATOS = {
     "Gn 31:21",
     "Gn 31:23",
     "Gn 31:25",
-    "Gn 37:25"
+    "Gn 37:25",
+    "Nm 32:1",
+    "Nm 32:26",
+    "Nm 32:29",
+    "Nm 32:39",
+    "Nm 32:40"
    ],
    "ubicacion": {
     "identificacion": "Tell edh Dhahab esh Sherqiyeh",
@@ -52004,7 +68372,8 @@ window.BIBLIA_DATOS = {
     "Gn 13:18",
     "Gn 23:2",
     "Gn 23:19",
-    "Gn 35:27"
+    "Gn 35:27",
+    "Nm 13:23"
    ],
    "ubicacion": {
     "identificacion": "Tel Rumeida",
@@ -52088,7 +68457,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "rio",
    "refs": [
-    "Gn 32:22"
+    "Gn 32:22",
+    "Nm 21:24"
    ],
    "ubicacion": {
     "identificacion": "Zarqa River",
@@ -52113,7 +68483,27 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 32:10",
     "Gn 50:10",
-    "Gn 50:11"
+    "Gn 50:11",
+    "Nm 13:30",
+    "Nm 22:1",
+    "Nm 26:3",
+    "Nm 26:63",
+    "Nm 31:12",
+    "Nm 32:5",
+    "Nm 32:19",
+    "Nm 32:21",
+    "Nm 32:29",
+    "Nm 32:32",
+    "Nm 33:48",
+    "Nm 33:49",
+    "Nm 33:50",
+    "Nm 33:51",
+    "Nm 34:12",
+    "Nm 34:15",
+    "Nm 35:1",
+    "Nm 35:10",
+    "Nm 35:14",
+    "Nm 36:13"
    ],
    "ubicacion": {
     "identificacion": "Jordan River",
@@ -52132,13 +68522,24 @@ window.BIBLIA_DATOS = {
    "nombre": "Cades",
    "nombre_rv1909": "Cades",
    "formas_rv1909": [
-    "Cades"
+    "Cades",
+    "Cades-barnea"
    ],
    "tipo": "ciudad",
    "refs": [
     "Gn 14:7",
     "Gn 16:14",
-    "Gn 20:1"
+    "Gn 20:1",
+    "Nm 13:27",
+    "Nm 20:1",
+    "Nm 20:14",
+    "Nm 20:16",
+    "Nm 20:22",
+    "Nm 27:14",
+    "Nm 32:8",
+    "Nm 33:36",
+    "Nm 33:37",
+    "Nm 34:4"
    ],
    "ubicacion": {
     "identificacion": "Ain el Qudeirat",
@@ -52390,7 +68791,8 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Midián",
    "formas_rv1909": [
     "Midián",
-    "Madián"
+    "Madián",
+    "Madianitas"
    ],
    "tipo": "region",
    "refs": [
@@ -52399,7 +68801,15 @@ window.BIBLIA_DATOS = {
     "Ex 2:16",
     "Ex 3:1",
     "Ex 4:19",
-    "Ex 18:1"
+    "Ex 18:1",
+    "Nm 22:4",
+    "Nm 22:7",
+    "Nm 25:15",
+    "Nm 25:18",
+    "Nm 31:3",
+    "Nm 31:7",
+    "Nm 31:8",
+    "Nm 31:9"
    ],
    "ubicacion": {
     "identificacion": "Al Bad",
@@ -52423,7 +68833,27 @@ window.BIBLIA_DATOS = {
    "tipo": "region",
    "refs": [
     "Gn 36:35",
-    "Ex 15:15"
+    "Ex 15:15",
+    "Nm 21:11",
+    "Nm 21:13",
+    "Nm 21:15",
+    "Nm 21:20",
+    "Nm 21:26",
+    "Nm 21:28",
+    "Nm 21:29",
+    "Nm 22:3",
+    "Nm 22:4",
+    "Nm 22:7",
+    "Nm 22:8",
+    "Nm 22:10",
+    "Nm 22:14",
+    "Nm 22:21",
+    "Nm 23:6",
+    "Nm 23:7",
+    "Nm 23:17",
+    "Nm 24:17",
+    "Nm 25:1",
+    "Nm 33:44"
    ],
    "ubicacion": {
     "identificacion": "Kerak",
@@ -52517,7 +68947,8 @@ window.BIBLIA_DATOS = {
     "Gn 33:16",
     "Gn 36:8",
     "Gn 36:9",
-    "Gn 36:30"
+    "Gn 36:30",
+    "Nm 24:18"
    ],
    "ubicacion": {
     "identificacion": "Jebel esh Shera",
@@ -52610,7 +69041,11 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "region",
    "refs": [
-    "Gn 21:21"
+    "Gn 21:21",
+    "Nm 10:12",
+    "Nm 13:1",
+    "Nm 13:4",
+    "Nm 13:27"
    ],
    "ubicacion": {
     "identificacion": "Paran",
@@ -52709,7 +69144,9 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 47:11",
     "Ex 1:11",
-    "Ex 12:37"
+    "Ex 12:37",
+    "Nm 33:3",
+    "Nm 33:5"
    ],
    "ubicacion": {
     "identificacion": "Qantir",
@@ -53172,7 +69609,9 @@ window.BIBLIA_DATOS = {
    "tipo": "campamento",
    "refs": [
     "Ex 12:37",
-    "Ex 13:20"
+    "Ex 13:20",
+    "Nm 33:5",
+    "Nm 33:6"
    ],
    "ubicacion": {
     "identificacion": "Tell el Maskhuta",
@@ -53214,7 +69653,10 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "campamento",
    "refs": [
-    "Ex 13:20"
+    "Ex 13:20",
+    "Nm 33:6",
+    "Nm 33:7",
+    "Nm 33:8"
    ],
    "ubicacion": {
     "identificacion": "Tell Abu Sefeh",
@@ -53252,12 +69694,15 @@ window.BIBLIA_DATOS = {
    "nombre": "Pi-hahirot",
    "nombre_rv1909": "Pihahiroth",
    "formas_rv1909": [
-    "Pihahiroth"
+    "Pihahiroth",
+    "Pi-hahiroth"
    ],
    "tipo": "campamento",
    "refs": [
     "Ex 14:2",
-    "Ex 14:9"
+    "Ex 14:9",
+    "Nm 33:7",
+    "Nm 33:8"
    ],
    "ubicacion": {
     "identificacion": "plain near Jabal Jinayfah",
@@ -53295,12 +69740,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Baal-zefón",
    "nombre_rv1909": "Baalzephón",
    "formas_rv1909": [
-    "Baalzephón"
+    "Baalzephón",
+    "Baalsephon"
    ],
    "tipo": "campamento",
    "refs": [
     "Ex 14:2",
-    "Ex 14:9"
+    "Ex 14:9",
+    "Nm 33:7"
    ],
    "ubicacion": {
     "identificacion": "Tell Defenneh",
@@ -53342,7 +69789,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "campamento",
    "refs": [
-    "Ex 14:2"
+    "Ex 14:2",
+    "Nm 33:7"
    ],
    "ubicacion": {
     "identificacion": "Tell el Herr",
@@ -53428,7 +69876,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "mar",
    "refs": [
-    "Ex 10:19"
+    "Ex 10:19",
+    "Nm 33:10",
+    "Nm 33:11"
    ],
    "ubicacion": {
     "identificacion": "Gulf of Suez",
@@ -53493,7 +69943,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "fuente",
    "refs": [
-    "Ex 15:23"
+    "Ex 15:23",
+    "Nm 33:8",
+    "Nm 33:9"
    ],
    "ubicacion": {
     "identificacion": "Ain Hawarah",
@@ -53536,7 +69988,9 @@ window.BIBLIA_DATOS = {
    "tipo": "campamento",
    "refs": [
     "Ex 15:27",
-    "Ex 16:1"
+    "Ex 16:1",
+    "Nm 33:9",
+    "Nm 33:10"
    ],
    "ubicacion": {
     "identificacion": "Wadi Gharandal",
@@ -53579,7 +70033,9 @@ window.BIBLIA_DATOS = {
    "tipo": "region",
    "refs": [
     "Ex 16:1",
-    "Ex 17:1"
+    "Ex 17:1",
+    "Nm 33:11",
+    "Nm 33:12"
    ],
    "ubicacion": {
     "identificacion": "Debbet er Ramleh",
@@ -53617,7 +70073,9 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Ex 17:1",
     "Ex 17:8",
-    "Ex 19:2"
+    "Ex 19:2",
+    "Nm 33:14",
+    "Nm 33:15"
    ],
    "ubicacion": {
     "identificacion": "Wadi Rufaiyil",
@@ -53749,7 +70207,9 @@ window.BIBLIA_DATOS = {
     "Ex 17:11",
     "Ex 17:13",
     "Ex 17:14",
-    "Ex 17:16"
+    "Ex 17:16",
+    "Nm 13:30",
+    "Nm 24:20"
    ],
    "ubicacion": {
     "identificacion": "Ain el Qudeirat",
@@ -53774,7 +70234,17 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Ex 19:1",
     "Ex 19:2",
-    "Lv 7:38"
+    "Lv 7:38",
+    "Nm 1:1",
+    "Nm 1:19",
+    "Nm 3:4",
+    "Nm 3:14",
+    "Nm 9:1",
+    "Nm 9:5",
+    "Nm 10:12",
+    "Nm 26:64",
+    "Nm 33:15",
+    "Nm 33:16"
    ],
    "ubicacion": {
     "identificacion": "Jebel Musa",
@@ -53830,7 +70300,9 @@ window.BIBLIA_DATOS = {
     "Lv 7:38",
     "Lv 25:1",
     "Lv 26:46",
-    "Lv 27:34"
+    "Lv 27:34",
+    "Nm 3:1",
+    "Nm 28:6"
    ],
    "ubicacion": {
     "identificacion": "Jebel Musa",
@@ -53906,6 +70378,3445 @@ window.BIBLIA_DATOS = {
    "fuente": "openbible",
    "url_fuente": "https://www.openbible.info/geo/ancient/a9bb03e/mount-horeb",
    "nota": "«Monte de Dios» (Ex 3:1). No hay consenso sobre la ubicación del monte Sinaí/Horeb: OpenBible propone varias identificaciones (Jebel Musa, Har Karkom…). Se fija confianza baja aunque la puntuación de OpenBible sea 465."
+  },
+  {
+   "id": "campos-de-moab",
+   "nombre": "Campos de Moab",
+   "nombre_rv1909": "campos de Moab",
+   "formas_rv1909": [
+    "campos de Moab"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 22:1",
+    "Nm 26:3",
+    "Nm 26:63",
+    "Nm 33:48",
+    "Nm 33:49",
+    "Nm 33:50",
+    "Nm 35:1",
+    "Nm 36:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall el Hammam",
+    "lat": 31.8402,
+    "lon": 35.6737,
+    "puntuacion_openbible": 671,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aca767b/moab-2",
+   "nota": "Llanura al oriente del Jordán, frente a Jericó, donde acampa Israel (Nm 22:1)."
+  },
+  {
+   "id": "ir-moab",
+   "nombre": "Ir-moab (ciudad de Moab)",
+   "nombre_rv1909": "ciudad de Moab",
+   "formas_rv1909": [
+    "ciudad de Moab"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 22:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Misna",
+    "lat": 31.2809,
+    "lon": 35.7595,
+    "puntuacion_openbible": 248,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet al Balua",
+     "lat": 31.3599,
+     "lon": 35.7828,
+     "puntuacion_openbible": 180
+    },
+    {
+     "identificacion": "Rabba",
+     "lat": 31.27,
+     "lon": 35.7383,
+     "puntuacion_openbible": 85
+    },
+    {
+     "identificacion": "Khirbet el Medeineh",
+     "lat": 31.2812,
+     "lon": 35.8717,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6c0a5f/ir-moab",
+   "nota": "La RV1909 traduce el nombre: «la ciudad de Moab»."
+  },
+  {
+   "id": "camino-mar-rojo",
+   "nombre": "Camino del mar Rojo",
+   "nombre_rv1909": "camino del mar Bermejo",
+   "formas_rv1909": [
+    "camino del mar Bermejo"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Nm 14:25",
+    "Nm 21:4"
+   ],
+   "ubicacion": {
+    "identificacion": "road between the Dead Sea and the Gulf of Aqaba",
+    "lat": 29.7272,
+    "lon": 34.9983,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a55c970/way-of-the-red-sea",
+   "nota": "Ruta (Nm 14:25; 21:4)."
+  },
+  {
+   "id": "camino-real",
+   "nombre": "Camino real",
+   "nombre_rv1909": "camino real",
+   "formas_rv1909": [
+    "camino real"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Nm 20:17",
+    "Nm 21:22"
+   ],
+   "ubicacion": {
+    "identificacion": "King’s Highway",
+    "lat": 31.9547,
+    "lon": 35.9343,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a057d59/kings-highway",
+   "nota": "Ruta por la que Israel pide pasar por Edom (Nm 20:17) y por la tierra de Sehón (Nm 21:22)."
+  },
+  {
+   "id": "torrente-de-egipto",
+   "nombre": "Torrente de Egipto",
+   "nombre_rv1909": "torrente de Egipto",
+   "formas_rv1909": [
+    "torrente de Egipto"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Nm 34:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi al Arish",
+    "lat": 31.1457,
+    "lon": 33.8065,
+    "puntuacion_openbible": 610,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Nahal HaBesor",
+     "lat": 31.4642,
+     "lon": 34.3757,
+     "puntuacion_openbible": 115
+    },
+    {
+     "identificacion": "Pelusiac branch of the Nile",
+     "lat": 31.0425,
+     "lon": 32.5461,
+     "puntuacion_openbible": 4
+    },
+    {
+     "identificacion": "Nile River",
+     "lat": 31.4653,
+     "lon": 30.3667,
+     "puntuacion_openbible": 1
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7a59b4/brook-of-egypt",
+   "nota": "Límite sur de la tierra (Nm 34:5)."
+  },
+  {
+   "id": "mar-grande",
+   "nombre": "Mar Grande (Mediterráneo)",
+   "nombre_rv1909": "gran mar",
+   "formas_rv1909": [
+    "gran mar"
+   ],
+   "tipo": "mar",
+   "refs": [
+    "Nm 34:6",
+    "Nm 34:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Mediterranean Sea",
+    "lat": 31.8048,
+    "lon": 34.1703,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa805fb/great-sea",
+   "nota": "Límite occidental de la tierra (Nm 34:6)."
+  },
+  {
+   "id": "mar-salado",
+   "nombre": "Mar Salado (mar Muerto)",
+   "nombre_rv1909": "mar salado",
+   "formas_rv1909": [
+    "mar salado"
+   ],
+   "tipo": "mar",
+   "refs": [
+    "Nm 34:3",
+    "Nm 34:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Dead Sea",
+    "lat": 31.5,
+    "lon": 35.5,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abed304/salt-sea",
+   "nota": ""
+  },
+  {
+   "id": "mar-de-cineret",
+   "nombre": "Mar de Cineret (mar de Galilea)",
+   "nombre_rv1909": "mar de Cinnereth",
+   "formas_rv1909": [
+    "mar de Cinnereth"
+   ],
+   "tipo": "mar",
+   "refs": [
+    "Nm 34:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Sea of Galilee",
+    "lat": 32.8189,
+    "lon": 35.59,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a562fcc/sea-of-galilee",
+   "nota": ""
+  },
+  {
+   "id": "meriba-cades",
+   "nombre": "Meriba de Cades",
+   "nombre_rv1909": "aguas de la rencilla",
+   "formas_rv1909": [
+    "aguas de la rencilla"
+   ],
+   "tipo": "fuente",
+   "refs": [
+    "Nm 20:13",
+    "Nm 20:24",
+    "Nm 27:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain el Qudeirat",
+    "lat": 30.6483,
+    "lon": 34.4222,
+    "puntuacion_openbible": 864,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Qedeis",
+     "lat": 30.5834,
+     "lon": 34.4841,
+     "puntuacion_openbible": -91
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a505743/meribah-1",
+   "nota": "La RV1909 traduce el nombre: «aguas de la rencilla». Distinta de Meriba de Refidim (Ex 17:7)."
+  },
+  {
+   "id": "monte-hor",
+   "nombre": "Monte Hor",
+   "nombre_rv1909": "Hor",
+   "formas_rv1909": [
+    "Hor"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Nm 20:22",
+    "Nm 20:23",
+    "Nm 20:25",
+    "Nm 20:27",
+    "Nm 21:4",
+    "Nm 33:37",
+    "Nm 33:38",
+    "Nm 33:39",
+    "Nm 33:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Har Zin",
+    "lat": 30.8321,
+    "lon": 35.0569,
+    "puntuacion_openbible": 336,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Imaret el Khureisheh",
+     "lat": 30.7652,
+     "lon": 34.5291,
+     "puntuacion_openbible": 114
+    },
+    {
+     "identificacion": "Jebel es Sabha",
+     "lat": 30.747,
+     "lon": 34.4389,
+     "puntuacion_openbible": 15
+    },
+    {
+     "identificacion": "Jebel el Hamrah",
+     "lat": 30.6831,
+     "lon": 34.5626,
+     "puntuacion_openbible": -2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad8027f/mount-hor-1",
+   "nota": "Donde muere Aarón, «en los confines de la tierra de Edom» (Nm 20:23)."
+  },
+  {
+   "id": "monte-hor-norte",
+   "nombre": "Monte Hor (límite norte)",
+   "nombre_rv1909": "Hor",
+   "formas_rv1909": [
+    "Hor"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Nm 34:7",
+    "Nm 34:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Hermon",
+    "lat": 33.4,
+    "lon": 35.85,
+    "puntuacion_openbible": 288,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Jebel Akkar",
+     "lat": 34.4167,
+     "lon": 36.2167,
+     "puntuacion_openbible": 171
+    },
+    {
+     "identificacion": "Ras Shaqqa",
+     "lat": 34.3075,
+     "lon": 35.6917,
+     "puntuacion_openbible": 84
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a62fa2d/mount-hor-2",
+   "nota": "Límite norte de la tierra (Nm 34:7-8); distinto del monte Hor donde muere Aarón."
+  },
+  {
+   "id": "monte-sefer",
+   "nombre": "Monte Sefer",
+   "nombre_rv1909": "Sepher",
+   "formas_rv1909": [
+    "Sepher"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:23",
+    "Nm 33:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Lussan",
+    "lat": 30.5066,
+    "lon": 34.3036,
+    "puntuacion_openbible": 172,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Jebel Aradeh",
+     "lat": 28.9864,
+     "lon": 34.4732,
+     "puntuacion_openbible": 77
+    },
+    {
+     "identificacion": "Jebel Araif en Nakah",
+     "lat": 30.3592,
+     "lon": 34.4425,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a39fe14/mount-shepher",
+   "nota": ""
+  },
+  {
+   "id": "hor-gidgad",
+   "nombre": "Hor-gidgad",
+   "nombre_rv1909": "Gidgad",
+   "formas_rv1909": [
+    "Gidgad"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:32",
+    "Nm 33:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Khadakhid",
+    "lat": 30.1142,
+    "lon": 34.7115,
+    "puntuacion_openbible": 317,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Et Taba",
+     "lat": 29.8588,
+     "lon": 35.0965,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "En Orahot",
+     "lat": 30.7567,
+     "lon": 35.0075,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5e36e6/hor-haggidgad",
+   "nota": "La RV1909 dice «monte de Gidgad»."
+  },
+  {
+   "id": "bamot-baal",
+   "nombre": "Bamot-baal",
+   "nombre_rv1909": "altos de Baal",
+   "formas_rv1909": [
+    "altos de Baal"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Nm 22:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Quweiqiyeh",
+    "lat": 31.7318,
+    "lon": 35.7409,
+    "puntuacion_openbible": 430,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Libb",
+     "lat": 31.6063,
+     "lon": 35.7613,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Jebel Ataruz",
+     "lat": 31.5913,
+     "lon": 35.6874,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a577c27/bamoth-baal",
+   "nota": "La RV1909 traduce el nombre: «los altos de Baal»."
+  },
+  {
+   "id": "quiriat-huzot",
+   "nombre": "Quiriat-huzot",
+   "nombre_rv1909": "Husoth",
+   "formas_rv1909": [
+    "Husoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 22:39"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall Dhiban",
+    "lat": 31.5022,
+    "lon": 35.7766,
+    "puntuacion_openbible": 215,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "El Keryeh",
+     "lat": 31.5275,
+     "lon": 35.8671,
+     "puntuacion_openbible": 105
+    },
+    {
+     "identificacion": "Khirbet el Quweiqiyeh",
+     "lat": 31.7318,
+     "lon": 35.7409,
+     "puntuacion_openbible": 74
+    },
+    {
+     "identificacion": "Khirbet al Mukhayyat",
+     "lat": 31.7491,
+     "lon": 35.7439,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aeb19d6/kiriath-huzoth",
+   "nota": "La RV1909 dice «la ciudad de Husoth»."
+  },
+  {
+   "id": "lebo-hamat",
+   "nombre": "Lebo-hamat (entrada de Hamat)",
+   "nombre_rv1909": "Emath",
+   "formas_rv1909": [
+    "Emath",
+    "Hamath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 13:22",
+    "Nm 34:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Labweh",
+    "lat": 34.1949,
+    "lon": 36.3496,
+    "puntuacion_openbible": 738,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rableh",
+     "lat": 34.4595,
+     "lon": 36.5726,
+     "puntuacion_openbible": 39
+    },
+    {
+     "identificacion": "Labau",
+     "lat": 33.4825,
+     "lon": 35.7239,
+     "puntuacion_openbible": 16
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5eb047/lebo-hamath",
+   "nota": "La RV1909 dice «entrando en Emath» (Nm 13:22) y «la entrada de Hamath» (Nm 34:8)."
+  },
+  {
+   "id": "valle-de-escol",
+   "nombre": "Valle de Escol",
+   "nombre_rv1909": "Escol",
+   "formas_rv1909": [
+    "Escol",
+    "Nahal-escol"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Nm 13:24",
+    "Nm 13:25",
+    "Nm 32:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Rumeida",
+    "lat": 31.5251,
+    "lon": 35.1022,
+    "puntuacion_openbible": 590,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Burj el Haska",
+     "lat": 31.5645,
+     "lon": 35.0909,
+     "puntuacion_openbible": 98
+    },
+    {
+     "identificacion": "Ain Eshkali",
+     "lat": 31.5643,
+     "lon": 35.1244,
+     "puntuacion_openbible": 85
+    },
+    {
+     "identificacion": "Ain Sebta",
+     "lat": 31.536,
+     "lon": 35.0856,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a38ecff/valley-of-eshcol",
+   "nota": ""
+  },
+  {
+   "id": "arroyo-de-zered",
+   "nombre": "Arroyo de Zered",
+   "nombre_rv1909": "Zared",
+   "formas_rv1909": [
+    "Zared"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Nm 21:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi al Hasa",
+    "lat": 31.027,
+    "lon": 35.4853,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaa2177/valley-of-zered",
+   "nota": "La RV1909 escribe «arroyada de Zared»."
+  },
+  {
+   "id": "amon",
+   "nombre": "Amón",
+   "nombre_rv1909": "Ammón",
+   "formas_rv1909": [
+    "Ammón"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 21:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Amman",
+    "lat": 31.9547,
+    "lon": 35.9343,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6046fa/ammon",
+   "nota": "En Números «los hijos de Ammón» es el pueblo amonita; OpenBible lo registra como región."
+  },
+  {
+   "id": "abarim",
+   "nombre": "Montes de Abarim",
+   "nombre_rv1909": "Abarim",
+   "formas_rv1909": [
+    "Abarim"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Nm 27:12",
+    "Nm 33:47",
+    "Nm 33:48"
+   ],
+   "ubicacion": {
+    "identificacion": "Abarim",
+    "lat": 31.7539,
+    "lon": 35.7152,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa8275b/abarim",
+   "nota": ""
+  },
+  {
+   "id": "abel-sitim",
+   "nombre": "Abel-sitim",
+   "nombre_rv1909": "Abel-sitim",
+   "formas_rv1909": [
+    "Abel-sitim"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:49"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall el Hammam",
+    "lat": 31.8402,
+    "lon": 35.6737,
+    "puntuacion_openbible": 511,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Kafrayn",
+     "lat": 31.8505,
+     "lon": 35.653,
+     "puntuacion_openbible": 112
+    },
+    {
+     "identificacion": "Tell Matabi",
+     "lat": 31.8416,
+     "lon": 35.684,
+     "puntuacion_openbible": -4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a51d1fa/abel-shittim",
+   "nota": ""
+  },
+  {
+   "id": "abrona",
+   "nombre": "Abrona",
+   "nombre_rv1909": "Abrona",
+   "formas_rv1909": [
+    "Abrona"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:34",
+    "Nm 33:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Ein Evrona",
+    "lat": 29.6729,
+    "lon": 35.0139,
+    "puntuacion_openbible": 210,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Aqaba",
+     "lat": 29.5307,
+     "lon": 35.0,
+     "puntuacion_openbible": 141
+    },
+    {
+     "identificacion": "Eilat",
+     "lat": 29.5715,
+     "lon": 34.9635,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Qa’an Naqb",
+     "lat": 29.6131,
+     "lon": 34.8498,
+     "puntuacion_openbible": 37
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7560c2/abronah",
+   "nota": ""
+  },
+  {
+   "id": "ain",
+   "nombre": "Aín",
+   "nombre_rv1909": "Ain",
+   "formas_rv1909": [
+    "Ain"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Ayun",
+    "lat": 32.7186,
+    "lon": 35.6679,
+    "puntuacion_openbible": 342,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Dufnah",
+     "lat": 33.2387,
+     "lon": 35.6366,
+     "puntuacion_openbible": 192
+    },
+    {
+     "identificacion": "Ain ez Zarqa",
+     "lat": 34.3522,
+     "lon": 36.3731,
+     "puntuacion_openbible": 57
+    },
+    {
+     "identificacion": "Banias",
+     "lat": 33.2461,
+     "lon": 35.6933,
+     "puntuacion_openbible": 42
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a89511f/ain-1",
+   "nota": ""
+  },
+  {
+   "id": "acrabim",
+   "nombre": "Subida de Acrabim",
+   "nombre_rv1909": "Acrabbim",
+   "formas_rv1909": [
+    "Acrabbim"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Nm 34:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Ma’ale Akrabbim",
+    "lat": 30.9066,
+    "lon": 35.1313,
+    "puntuacion_openbible": 727,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Jebel Umm al Aqarib",
+     "lat": 31.1942,
+     "lon": 35.5767,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a39267b/akrabbim",
+   "nota": ""
+  },
+  {
+   "id": "almon-diblataim",
+   "nombre": "Almón-diblataim",
+   "nombre_rv1909": "Almon-diblathaim",
+   "formas_rv1909": [
+    "Almon-diblathaim"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:46",
+    "Nm 33:47"
+   ],
+   "ubicacion": {
+    "identificacion": "Duleilat esh Sharqiyeh",
+    "lat": 31.6387,
+    "lon": 35.8266,
+    "puntuacion_openbible": 182,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Qureiye",
+     "lat": 31.7089,
+     "lon": 35.6943,
+     "puntuacion_openbible": 69
+    },
+    {
+     "identificacion": "Khirbet Libb",
+     "lat": 31.6063,
+     "lon": 35.7613,
+     "puntuacion_openbible": 57
+    },
+    {
+     "identificacion": "Duleilat el Gharbiyeh",
+     "lat": 31.6192,
+     "lon": 35.7936,
+     "puntuacion_openbible": 52
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aeb052c/almon-diblathaim",
+   "nota": ""
+  },
+  {
+   "id": "alus",
+   "nombre": "Alús",
+   "nombre_rv1909": "Alús",
+   "formas_rv1909": [
+    "Alús"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:13",
+    "Nm 33:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi el Esh",
+    "lat": 28.7703,
+    "lon": 33.7675,
+    "puntuacion_openbible": 302,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a32397f/alush",
+   "nota": ""
+  },
+  {
+   "id": "ar",
+   "nombre": "Ar",
+   "nombre_rv1909": "Ar",
+   "formas_rv1909": [
+    "Ar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:15",
+    "Nm 21:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet al Balua",
+    "lat": 31.3599,
+    "lon": 35.7828,
+    "puntuacion_openbible": 359,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Misna",
+     "lat": 31.2809,
+     "lon": 35.7595,
+     "puntuacion_openbible": 261
+    },
+    {
+     "identificacion": "Rabba",
+     "lat": 31.27,
+     "lon": 35.7383,
+     "puntuacion_openbible": 123
+    },
+    {
+     "identificacion": "Khirbet el Medeineh",
+     "lat": 31.2812,
+     "lon": 35.8717,
+     "puntuacion_openbible": 13
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a38ad07/ar",
+   "nota": ""
+  },
+  {
+   "id": "arad",
+   "nombre": "Arad",
+   "nombre_rv1909": "Arad",
+   "formas_rv1909": [
+    "Arad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:1",
+    "Nm 33:40"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Arad",
+    "lat": 31.2808,
+    "lon": 35.125,
+    "puntuacion_openbible": 370,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 236
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": 23
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abc358b/arad-1",
+   "nota": ""
+  },
+  {
+   "id": "aram",
+   "nombre": "Aram",
+   "nombre_rv1909": "Aram",
+   "formas_rv1909": [
+    "Aram"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 23:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Damascus",
+    "lat": 33.5111,
+    "lon": 36.3064,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3e66cd/aram",
+   "nota": ""
+  },
+  {
+   "id": "arnon",
+   "nombre": "Arnón",
+   "nombre_rv1909": "Arnón",
+   "formas_rv1909": [
+    "Arnón"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Nm 21:13",
+    "Nm 21:14",
+    "Nm 21:24",
+    "Nm 21:26",
+    "Nm 21:28",
+    "Nm 22:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Mujib",
+    "lat": 31.4658,
+    "lon": 35.5733,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4cc324/arnon",
+   "nota": ""
+  },
+  {
+   "id": "aroer",
+   "nombre": "Aroer",
+   "nombre_rv1909": "Aroer",
+   "formas_rv1909": [
+    "Aroer"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Arair",
+    "lat": 31.4708,
+    "lon": 35.8194,
+    "puntuacion_openbible": 872,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae46f2e/aroer-1",
+   "nota": ""
+  },
+  {
+   "id": "asur",
+   "nombre": "Asur",
+   "nombre_rv1909": "Assur",
+   "formas_rv1909": [
+    "Assur"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 24:22",
+    "Nm 24:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Assur",
+    "lat": 35.4567,
+    "lon": 43.2625,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a874951/asshur",
+   "nota": "En los oráculos de Balaam (Nm 24:22, 24). OpenBible lo identifica con la ciudad de Asur."
+  },
+  {
+   "id": "atarot",
+   "nombre": "Atarot",
+   "nombre_rv1909": "Ataroth",
+   "formas_rv1909": [
+    "Ataroth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:3",
+    "Nm 32:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Ataruz",
+    "lat": 31.5753,
+    "lon": 35.6659,
+    "puntuacion_openbible": 778,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abc9a1d/ataroth-1",
+   "nota": ""
+  },
+  {
+   "id": "atrot-sofan",
+   "nombre": "Atrot-sofán",
+   "nombre_rv1909": "Atroth-sophan",
+   "formas_rv1909": [
+    "Atroth-sophan"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Rujm Ataruz",
+    "lat": 31.5913,
+    "lon": 35.6874,
+    "puntuacion_openbible": 363,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ataruz",
+     "lat": 31.5753,
+     "lon": 35.6659,
+     "puntuacion_openbible": 95
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afdb74b/atroth-shophan",
+   "nota": ""
+  },
+  {
+   "id": "azmon",
+   "nombre": "Azmón",
+   "nombre_rv1909": "Asmón",
+   "formas_rv1909": [
+    "Asmón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:4",
+    "Nm 34:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain Muweileh",
+    "lat": 30.6875,
+    "lon": 34.3333,
+    "puntuacion_openbible": 545,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain Qoseimeh",
+     "lat": 30.6667,
+     "lon": 34.3667,
+     "puntuacion_openbible": 54
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8f6a28/azmon",
+   "nota": ""
+  },
+  {
+   "id": "baal-meon",
+   "nombre": "Baal-meón",
+   "nombre_rv1909": "Baal-meón",
+   "formas_rv1909": [
+    "Baal-meón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Ma‘in",
+    "lat": 31.6795,
+    "lon": 35.7353,
+    "puntuacion_openbible": 797,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a76f7b7/baal-meon",
+   "nota": ""
+  },
+  {
+   "id": "bamot",
+   "nombre": "Bamot",
+   "nombre_rv1909": "Bamoth",
+   "formas_rv1909": [
+    "Bamoth"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 21:19",
+    "Nm 21:20"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Quweiqiyeh",
+    "lat": 31.7318,
+    "lon": 35.7409,
+    "puntuacion_openbible": 430,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Libb",
+     "lat": 31.6063,
+     "lon": 35.7613,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Jebel Ataruz",
+     "lat": 31.5913,
+     "lon": 35.6874,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1db553/bamoth",
+   "nota": ""
+  },
+  {
+   "id": "basan",
+   "nombre": "Basán",
+   "nombre_rv1909": "Basán",
+   "formas_rv1909": [
+    "Basán"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 21:33",
+    "Nm 32:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Saham al Jawlan",
+    "lat": 32.7811,
+    "lon": 35.9347,
+    "puntuacion_openbible": 680,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa7a40a/bashan",
+   "nota": ""
+  },
+  {
+   "id": "beer",
+   "nombre": "Beer",
+   "nombre_rv1909": "Beer",
+   "formas_rv1909": [
+    "Beer"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 21:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi eth Themed",
+    "lat": 31.5719,
+    "lon": 35.8933,
+    "puntuacion_openbible": 248,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a656cb6/beer-1",
+   "nota": "«El pozo» donde Dios da agua al pueblo (Nm 21:16)."
+  },
+  {
+   "id": "bene-jaacan",
+   "nombre": "Bene-jaacán",
+   "nombre_rv1909": "Bene-jaacán",
+   "formas_rv1909": [
+    "Bene-jaacán"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:31",
+    "Nm 33:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Birein",
+    "lat": 30.7918,
+    "lon": 34.4725,
+    "puntuacion_openbible": 385,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0fe2be/bene-jaakan",
+   "nota": ""
+  },
+  {
+   "id": "beon",
+   "nombre": "Beón",
+   "nombre_rv1909": "Beón",
+   "formas_rv1909": [
+    "Beón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Ma‘in",
+    "lat": 31.6795,
+    "lon": 35.7353,
+    "puntuacion_openbible": 797,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a882ef5/beon",
+   "nota": ""
+  },
+  {
+   "id": "bet-haran",
+   "nombre": "Bet-arán",
+   "nombre_rv1909": "Betharán",
+   "formas_rv1909": [
+    "Betharán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall Iktanu",
+    "lat": 31.8193,
+    "lon": 35.6719,
+    "puntuacion_openbible": 589,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall er Rama",
+     "lat": 31.8256,
+     "lon": 35.6444,
+     "puntuacion_openbible": 196
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4590cd/beth-haram",
+   "nota": ""
+  },
+  {
+   "id": "bet-jesimot",
+   "nombre": "Bet-jesimot",
+   "nombre_rv1909": "Beth-jesimoth",
+   "formas_rv1909": [
+    "Beth-jesimoth"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:49"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Azeimeh",
+    "lat": 31.7826,
+    "lon": 35.6213,
+    "puntuacion_openbible": 799,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Suweimeh",
+     "lat": 31.7935,
+     "lon": 35.5633,
+     "puntuacion_openbible": 23
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a30f37b/beth-jeshimoth",
+   "nota": ""
+  },
+  {
+   "id": "bet-nimra",
+   "nombre": "Bet-nimra",
+   "nombre_rv1909": "Beth-nimra",
+   "formas_rv1909": [
+    "Beth-nimra"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall Bleibel",
+    "lat": 31.9091,
+    "lon": 35.6387,
+    "puntuacion_openbible": 578,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Nimrin",
+     "lat": 31.9009,
+     "lon": 35.6245,
+     "puntuacion_openbible": 290
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af66b89/beth-nimrah",
+   "nota": ""
+  },
+  {
+   "id": "dibon",
+   "nombre": "Dibón",
+   "nombre_rv1909": "Dibón",
+   "formas_rv1909": [
+    "Dibón",
+    "Dibon-gad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:30",
+    "Nm 32:3",
+    "Nm 32:34",
+    "Nm 33:45",
+    "Nm 33:46"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall Dhiban",
+    "lat": 31.5022,
+    "lon": 35.7766,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0d784a/dibon-1",
+   "nota": "Nm 33:45-46 la llama «Dibon-gad» en el itinerario."
+  },
+  {
+   "id": "dofca",
+   "nombre": "Dofca",
+   "nombre_rv1909": "Dophca",
+   "formas_rv1909": [
+    "Dophca"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:12",
+    "Nm 33:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Serabit el Khadim",
+    "lat": 29.0367,
+    "lon": 33.4594,
+    "puntuacion_openbible": 441,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a070c7b/dophkah",
+   "nota": ""
+  },
+  {
+   "id": "edrei",
+   "nombre": "Edrei",
+   "nombre_rv1909": "Edrei",
+   "formas_rv1909": [
+    "Edrei"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Daraa",
+    "lat": 32.6253,
+    "lon": 36.1061,
+    "puntuacion_openbible": 821,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaa6f7a/edrei-1",
+   "nota": ""
+  },
+  {
+   "id": "eleale",
+   "nombre": "Eleale",
+   "nombre_rv1909": "Eleale",
+   "formas_rv1909": [
+    "Eleale"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:3",
+    "Nm 32:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Al ‘Al",
+    "lat": 31.8193,
+    "lon": 35.8283,
+    "puntuacion_openbible": 774,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5ccd34/elealeh",
+   "nota": ""
+  },
+  {
+   "id": "ezion-geber",
+   "nombre": "Ezión-geber",
+   "nombre_rv1909": "Esion-geber",
+   "formas_rv1909": [
+    "Esion-geber"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:35",
+    "Nm 33:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Jezirat Faraun",
+    "lat": 29.4628,
+    "lon": 34.8601,
+    "puntuacion_openbible": 360,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell el Kheleifeh",
+     "lat": 29.5472,
+     "lon": 34.9803,
+     "puntuacion_openbible": 239
+    },
+    {
+     "identificacion": "Aqaba",
+     "lat": 29.5307,
+     "lon": 35.0,
+     "puntuacion_openbible": 14
+    },
+    {
+     "identificacion": "Eilat",
+     "lat": 29.5715,
+     "lon": 34.9635,
+     "puntuacion_openbible": 1
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8e53d5/ezion-geber",
+   "nota": ""
+  },
+  {
+   "id": "harada",
+   "nombre": "Harada",
+   "nombre_rv1909": "Harada",
+   "formas_rv1909": [
+    "Harada"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:24",
+    "Nm 33:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Lussan",
+    "lat": 30.5066,
+    "lon": 34.3036,
+    "puntuacion_openbible": 176,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Jebel Aradeh",
+     "lat": 28.9864,
+     "lon": 34.4732,
+     "puntuacion_openbible": 79
+    },
+    {
+     "identificacion": "Jebel Araif en Nakah",
+     "lat": 30.3592,
+     "lon": 34.4425,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a73af5f/haradah",
+   "nota": ""
+  },
+  {
+   "id": "hasmona",
+   "nombre": "Hasmona",
+   "nombre_rv1909": "Hasmona",
+   "formas_rv1909": [
+    "Hasmona"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:29",
+    "Nm 33:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Qoseimeh",
+    "lat": 30.6689,
+    "lon": 34.3667,
+    "puntuacion_openbible": 121,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain Muweileh",
+     "lat": 30.6875,
+     "lon": 34.3333,
+     "puntuacion_openbible": 78
+    },
+    {
+     "identificacion": "Tell es Saqati",
+     "lat": 31.3099,
+     "lon": 34.9078,
+     "puntuacion_openbible": 71
+    },
+    {
+     "identificacion": "Har Zin",
+     "lat": 30.8321,
+     "lon": 35.0569,
+     "puntuacion_openbible": 55
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaa8a88/hashmonah",
+   "nota": ""
+  },
+  {
+   "id": "havot-jair",
+   "nombre": "Havot-jair",
+   "nombre_rv1909": "Havoth-jair",
+   "formas_rv1909": [
+    "Havoth-jair"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 32:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Qamm",
+    "lat": 32.5876,
+    "lon": 35.7256,
+    "puntuacion_openbible": 167,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a26c8f2/havvoth-jair",
+   "nota": "Nombre que Jair da a las aldeas que toma (Nm 32:41)."
+  },
+  {
+   "id": "hasar-adar",
+   "nombre": "Hasar-adar",
+   "nombre_rv1909": "Hasar-addar",
+   "formas_rv1909": [
+    "Hasar-addar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Ein Qedeis",
+    "lat": 30.5834,
+    "lon": 34.4841,
+    "puntuacion_openbible": 453,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 72
+    },
+    {
+     "identificacion": "Mesudat Ein Qedeis",
+     "lat": 30.5946,
+     "lon": 34.5142,
+     "puntuacion_openbible": 64
+    },
+    {
+     "identificacion": "Har Avnon",
+     "lat": 30.9744,
+     "lon": 34.9714,
+     "puntuacion_openbible": -1
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3f301c/hazar-addar",
+   "nota": ""
+  },
+  {
+   "id": "hasar-enan",
+   "nombre": "Hasar-enán",
+   "nombre_rv1909": "Hasar-enán",
+   "formas_rv1909": [
+    "Hasar-enán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:9",
+    "Nm 34:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Qaryatayn",
+    "lat": 34.2294,
+    "lon": 37.2406,
+    "puntuacion_openbible": 576,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Hader",
+     "lat": 33.2794,
+     "lon": 35.8303,
+     "puntuacion_openbible": 149
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1ce1b7/hazar-enan",
+   "nota": ""
+  },
+  {
+   "id": "haserot",
+   "nombre": "Haserot",
+   "nombre_rv1909": "Haseroth",
+   "formas_rv1909": [
+    "Haseroth"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 11:35",
+    "Nm 13:1",
+    "Nm 33:17",
+    "Nm 33:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain el Khadra",
+    "lat": 28.8969,
+    "lon": 34.4217,
+    "puntuacion_openbible": 481,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi al Aghaydira",
+     "lat": 30.0918,
+     "lon": 33.3801,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1b6474/hazeroth",
+   "nota": ""
+  },
+  {
+   "id": "hesbon",
+   "nombre": "Hesbón",
+   "nombre_rv1909": "Hesbón",
+   "formas_rv1909": [
+    "Hesbón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:25",
+    "Nm 21:26",
+    "Nm 21:27",
+    "Nm 21:28",
+    "Nm 21:30",
+    "Nm 21:34",
+    "Nm 32:3",
+    "Nm 32:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Hesban",
+    "lat": 31.8008,
+    "lon": 35.8091,
+    "puntuacion_openbible": 433,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Jalul",
+     "lat": 31.7166,
+     "lon": 35.8568,
+     "puntuacion_openbible": 134
+    },
+    {
+     "identificacion": "Tall al Umayri",
+     "lat": 31.8686,
+     "lon": 35.8881,
+     "puntuacion_openbible": 41
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abf2fc1/heshbon",
+   "nota": "Ciudad de Sehón, rey de los amorreos (Nm 21:26)."
+  },
+  {
+   "id": "horma",
+   "nombre": "Horma",
+   "nombre_rv1909": "Horma",
+   "formas_rv1909": [
+    "Horma"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 14:45",
+    "Nm 21:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Masos",
+    "lat": 31.2123,
+    "lon": 34.9583,
+    "puntuacion_openbible": 449,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 141
+    },
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 96
+    },
+    {
+     "identificacion": "Tell esh Sharia",
+     "lat": 31.3912,
+     "lon": 34.6816,
+     "puntuacion_openbible": 82
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ada25df/hormah",
+   "nota": ""
+  },
+  {
+   "id": "ije-abarim",
+   "nombre": "Ije-abarim",
+   "nombre_rv1909": "Ije-abarim",
+   "formas_rv1909": [
+    "Ije-abarim"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 21:11",
+    "Nm 33:44",
+    "Nm 33:45"
+   ],
+   "ubicacion": {
+    "identificacion": "Medeineh",
+    "lat": 30.956,
+    "lon": 35.7795,
+    "puntuacion_openbible": 403,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Muhayy",
+     "lat": 30.9899,
+     "lon": 35.8613,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Abarim",
+     "lat": 31.7539,
+     "lon": 35.7152,
+     "puntuacion_openbible": 27
+    },
+    {
+     "identificacion": "Khirbet Ai",
+     "lat": 31.1342,
+     "lon": 35.64,
+     "puntuacion_openbible": -29
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0574da/iye-abarim",
+   "nota": ""
+  },
+  {
+   "id": "jahaza",
+   "nombre": "Jahaza",
+   "nombre_rv1909": "Jahaz",
+   "formas_rv1909": [
+    "Jahaz"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Medeiyineh",
+    "lat": 31.5883,
+    "lon": 35.9079,
+    "puntuacion_openbible": 444,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Libb",
+     "lat": 31.6063,
+     "lon": 35.7613,
+     "puntuacion_openbible": 99
+    },
+    {
+     "identificacion": "Er Remeil",
+     "lat": 31.5757,
+     "lon": 35.8744,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Khirbet Iskander",
+     "lat": 31.5568,
+     "lon": 35.7715,
+     "puntuacion_openbible": 44
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad9b1cd/jahaz",
+   "nota": ""
+  },
+  {
+   "id": "jazer",
+   "nombre": "Jazer",
+   "nombre_rv1909": "Jazer",
+   "formas_rv1909": [
+    "Jazer"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:32",
+    "Nm 32:1",
+    "Nm 32:3",
+    "Nm 32:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Sara",
+    "lat": 31.9445,
+    "lon": 35.8301,
+    "puntuacion_openbible": 281,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Jazzir",
+     "lat": 32.0064,
+     "lon": 35.735,
+     "puntuacion_openbible": 248
+    },
+    {
+     "identificacion": "Khirbet es Sireh",
+     "lat": 31.9569,
+     "lon": 35.8147,
+     "puntuacion_openbible": 16
+    },
+    {
+     "identificacion": "Tell el Areme",
+     "lat": 31.9056,
+     "lon": 35.7959,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a095b6e/jazer",
+   "nota": ""
+  },
+  {
+   "id": "jerico",
+   "nombre": "Jericó",
+   "nombre_rv1909": "Jericó",
+   "formas_rv1909": [
+    "Jericó"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 22:1",
+    "Nm 26:3",
+    "Nm 26:63",
+    "Nm 31:12",
+    "Nm 33:48",
+    "Nm 33:50",
+    "Nm 34:15",
+    "Nm 35:1",
+    "Nm 36:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Sultan",
+    "lat": 31.8717,
+    "lon": 35.4446,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a231f80/jericho-1",
+   "nota": ""
+  },
+  {
+   "id": "jesimon",
+   "nombre": "Jesimón",
+   "nombre_rv1909": "Jesimón",
+   "formas_rv1909": [
+    "Jesimón"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 21:20",
+    "Nm 23:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Zahrat al Kula",
+    "lat": 31.4703,
+    "lon": 35.2228,
+    "puntuacion_openbible": 463,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad41f6e/jeshimon",
+   "nota": ""
+  },
+  {
+   "id": "jogbeha",
+   "nombre": "Jogbeha",
+   "nombre_rv1909": "Jogbaa",
+   "formas_rv1909": [
+    "Jogbaa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Jubeiha",
+    "lat": 32.0135,
+    "lon": 35.8558,
+    "puntuacion_openbible": 656,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Safut",
+     "lat": 32.0326,
+     "lon": 35.8377,
+     "puntuacion_openbible": 80
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acf6e00/jogbehah",
+   "nota": ""
+  },
+  {
+   "id": "jotbata",
+   "nombre": "Jotbata",
+   "nombre_rv1909": "Jotbatha",
+   "formas_rv1909": [
+    "Jotbatha"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:33",
+    "Nm 33:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Taba",
+    "lat": 29.4925,
+    "lon": 34.8969,
+    "puntuacion_openbible": 352,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Yotvata",
+     "lat": 29.8792,
+     "lon": 35.0436,
+     "puntuacion_openbible": 114
+    },
+    {
+     "identificacion": "Et Taba",
+     "lat": 29.8588,
+     "lon": 35.0965,
+     "puntuacion_openbible": 71
+    },
+    {
+     "identificacion": "Ein Weibeh",
+     "lat": 30.6167,
+     "lon": 35.19,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7384d7/jotbathah",
+   "nota": ""
+  },
+  {
+   "id": "ceelata",
+   "nombre": "Ceelata",
+   "nombre_rv1909": "Ceelatha",
+   "formas_rv1909": [
+    "Ceelatha"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:22",
+    "Nm 33:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Kuntillet Ajrud",
+    "lat": 30.1931,
+    "lon": 34.4211,
+    "puntuacion_openbible": 80,
+    "confianza": "baja"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a32d25a/kehelathah",
+   "nota": ""
+  },
+  {
+   "id": "kenat",
+   "nombre": "Kenat",
+   "nombre_rv1909": "Kenath",
+   "formas_rv1909": [
+    "Kenath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:42"
+   ],
+   "ubicacion": {
+    "identificacion": "Qanawat",
+    "lat": 32.7562,
+    "lon": 36.619,
+    "puntuacion_openbible": 798,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Krak Canatha",
+     "lat": 32.6861,
+     "lon": 36.3486,
+     "puntuacion_openbible": 37
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4f650b/kenath",
+   "nota": ""
+  },
+  {
+   "id": "kibrot-hataava",
+   "nombre": "Kibrot-hataava",
+   "nombre_rv1909": "Kibroth-hattaavah",
+   "formas_rv1909": [
+    "Kibroth-hattaavah",
+    "Kibroth-hataava"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 11:34",
+    "Nm 11:35",
+    "Nm 33:16",
+    "Nm 33:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Erweis el Ebeirig",
+    "lat": 28.7887,
+    "lon": 34.2754,
+    "puntuacion_openbible": 405,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi Sa’l",
+     "lat": 28.7067,
+     "lon": 34.0419,
+     "puntuacion_openbible": 58
+    },
+    {
+     "identificacion": "Wadi al Aghaydira",
+     "lat": 30.0918,
+     "lon": 33.3801,
+     "puntuacion_openbible": 34
+    },
+    {
+     "identificacion": "Wadi Sudr",
+     "lat": 29.6363,
+     "lon": 32.8059,
+     "puntuacion_openbible": 34
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae7836a/kibroth-hattaavah",
+   "nota": "«Sepulcros de la codicia» (Nm 11:34)."
+  },
+  {
+   "id": "quiriataim",
+   "nombre": "Quiriataim",
+   "nombre_rv1909": "Kiriathaim",
+   "formas_rv1909": [
+    "Kiriathaim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet al Mukhayyat",
+    "lat": 31.7491,
+    "lon": 35.7439,
+    "puntuacion_openbible": 306,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Qureiye",
+     "lat": 31.7089,
+     "lon": 35.6943,
+     "puntuacion_openbible": 124
+    },
+    {
+     "identificacion": "Al Qurayyat",
+     "lat": 31.5406,
+     "lon": 35.6861,
+     "puntuacion_openbible": 84
+    },
+    {
+     "identificacion": "Tall Jalul",
+     "lat": 31.7166,
+     "lon": 35.8568,
+     "puntuacion_openbible": 34
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad54201/kiriathaim-1",
+   "nota": ""
+  },
+  {
+   "id": "quitim",
+   "nombre": "Quitim",
+   "nombre_rv1909": "Cittim",
+   "formas_rv1909": [
+    "Cittim"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 24:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Cyprus",
+    "lat": 35.0,
+    "lon": 33.0,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aeb46a8/kittim",
+   "nota": "En el último oráculo de Balaam (Nm 24:24)."
+  },
+  {
+   "id": "libna",
+   "nombre": "Libna",
+   "nombre_rv1909": "Libna",
+   "formas_rv1909": [
+    "Libna"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:20",
+    "Nm 33:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi el Beidha",
+    "lat": 29.9932,
+    "lon": 34.704,
+    "puntuacion_openbible": 129,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Abu Seleimeh",
+     "lat": 31.2319,
+     "lon": 34.1067,
+     "puntuacion_openbible": 18
+    },
+    {
+     "identificacion": "Sheikh ez Zuweid",
+     "lat": 31.2119,
+     "lon": 34.1106,
+     "puntuacion_openbible": 6
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3e94bd/libnah-2",
+   "nota": ""
+  },
+  {
+   "id": "macelot",
+   "nombre": "Macelot",
+   "nombre_rv1909": "Maceloth",
+   "formas_rv1909": [
+    "Maceloth"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:25",
+    "Nm 33:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Kuntillet Ajrud",
+    "lat": 30.1931,
+    "lon": 34.4211,
+    "puntuacion_openbible": 145,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac1fbba/makheloth",
+   "nota": ""
+  },
+  {
+   "id": "matana",
+   "nombre": "Matana",
+   "nombre_rv1909": "Mathana",
+   "formas_rv1909": [
+    "Mathana"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 21:18",
+    "Nm 21:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Medeiyineh",
+    "lat": 31.5883,
+    "lon": 35.9079,
+    "puntuacion_openbible": 548,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rabba",
+     "lat": 31.27,
+     "lon": 35.7383,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Misna",
+     "lat": 31.2809,
+     "lon": 35.7595,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Kerak",
+     "lat": 31.1806,
+     "lon": 35.7014,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a033373/mattanah",
+   "nota": ""
+  },
+  {
+   "id": "medeba",
+   "nombre": "Medeba",
+   "nombre_rv1909": "Medeba",
+   "formas_rv1909": [
+    "Medeba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Madaba",
+    "lat": 31.7161,
+    "lon": 35.7955,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af4f21c/medeba",
+   "nota": ""
+  },
+  {
+   "id": "mitca",
+   "nombre": "Mitca",
+   "nombre_rv1909": "Mithca",
+   "formas_rv1909": [
+    "Mithca"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:28",
+    "Nm 33:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Umm Hashim",
+    "lat": 30.6406,
+    "lon": 34.4111,
+    "puntuacion_openbible": 126,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Beer Sheva",
+     "lat": 31.2447,
+     "lon": 34.8408,
+     "puntuacion_openbible": 115
+    },
+    {
+     "identificacion": "Ain Muweileh",
+     "lat": 30.6875,
+     "lon": 34.3333,
+     "puntuacion_openbible": 58
+    },
+    {
+     "identificacion": "Har Zin",
+     "lat": 30.8321,
+     "lon": 35.0569,
+     "puntuacion_openbible": 48
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa5f658/mithkah",
+   "nota": ""
+  },
+  {
+   "id": "moserot",
+   "nombre": "Moserot",
+   "nombre_rv1909": "Moseroth",
+   "formas_rv1909": [
+    "Moseroth"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:30",
+    "Nm 33:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Har Zin",
+    "lat": 30.8321,
+    "lon": 35.0569,
+    "puntuacion_openbible": 192,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Imaret el Khureisheh",
+     "lat": 30.7652,
+     "lon": 34.5291,
+     "puntuacion_openbible": 65
+    },
+    {
+     "identificacion": "Birein",
+     "lat": 30.7918,
+     "lon": 34.4725,
+     "puntuacion_openbible": 39
+    },
+    {
+     "identificacion": "Jebel es Sabha",
+     "lat": 30.747,
+     "lon": 34.4389,
+     "puntuacion_openbible": 9
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a88331e/moseroth",
+   "nota": ""
+  },
+  {
+   "id": "nahaliel",
+   "nombre": "Nahaliel",
+   "nombre_rv1909": "Nahaliel",
+   "formas_rv1909": [
+    "Nahaliel"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 21:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Zerqa Main",
+    "lat": 31.6181,
+    "lon": 35.5672,
+    "puntuacion_openbible": 339,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi al Wala",
+     "lat": 31.5559,
+     "lon": 35.7572,
+     "puntuacion_openbible": 280
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8dafd6/nahaliel",
+   "nota": ""
+  },
+  {
+   "id": "nebo",
+   "nombre": "Nebo",
+   "nombre_rv1909": "Nebo",
+   "formas_rv1909": [
+    "Nebo"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:3",
+    "Nm 32:38",
+    "Nm 33:47"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet al Mukhayyat",
+    "lat": 31.7491,
+    "lon": 35.7439,
+    "puntuacion_openbible": 566,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ayun Musa",
+     "lat": 31.777,
+     "lon": 35.7385,
+     "puntuacion_openbible": 227
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab5bd29/nebo-1",
+   "nota": ""
+  },
+  {
+   "id": "nimra",
+   "nombre": "Nimra",
+   "nombre_rv1909": "Nimra",
+   "formas_rv1909": [
+    "Nimra"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall Bleibel",
+    "lat": 31.9091,
+    "lon": 35.6387,
+    "puntuacion_openbible": 578,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Nimrin",
+     "lat": 31.9009,
+     "lon": 35.6245,
+     "puntuacion_openbible": 290
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a314731/nimrah",
+   "nota": ""
+  },
+  {
+   "id": "nofa",
+   "nombre": "Nofa",
+   "nombre_rv1909": "Nopha",
+   "formas_rv1909": [
+    "Nopha"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 21:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Kerak",
+    "lat": 31.1806,
+    "lon": 35.7014,
+    "puntuacion_openbible": 349,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qanawat",
+     "lat": 32.7562,
+     "lon": 36.619,
+     "puntuacion_openbible": 171
+    },
+    {
+     "identificacion": "Krak Canatha",
+     "lat": 32.6861,
+     "lon": 36.3486,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aed6b0e/nophah",
+   "nota": ""
+  },
+  {
+   "id": "obot",
+   "nombre": "Obot",
+   "nombre_rv1909": "Oboth",
+   "formas_rv1909": [
+    "Oboth"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 21:10",
+    "Nm 21:11",
+    "Nm 33:43",
+    "Nm 33:44"
+   ],
+   "ubicacion": {
+    "identificacion": "Ein Weibeh",
+    "lat": 30.6167,
+    "lon": 35.19,
+    "puntuacion_openbible": 361,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Gharandal",
+     "lat": 30.7151,
+     "lon": 35.6551,
+     "puntuacion_openbible": 16
+    },
+    {
+     "identificacion": "Telah",
+     "lat": 30.8299,
+     "lon": 35.4108,
+     "puntuacion_openbible": -5
+    },
+    {
+     "identificacion": "En Hazeva",
+     "lat": 30.8087,
+     "lon": 35.2459,
+     "puntuacion_openbible": -22
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0ef1e1/oboth",
+   "nota": ""
+  },
+  {
+   "id": "peor",
+   "nombre": "Peor",
+   "nombre_rv1909": "Peor",
+   "formas_rv1909": [
+    "Peor"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Nm 23:28",
+    "Nm 25:18",
+    "Nm 31:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Ayun Musa",
+    "lat": 31.777,
+    "lon": 35.7385,
+    "puntuacion_openbible": 245,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Muhatta",
+     "lat": 31.7985,
+     "lon": 35.7224,
+     "puntuacion_openbible": 233
+    },
+    {
+     "identificacion": "Tall Iktanu",
+     "lat": 31.8193,
+     "lon": 35.6719,
+     "puntuacion_openbible": -3
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9ef72b/peor",
+   "nota": ""
+  },
+  {
+   "id": "petor",
+   "nombre": "Petor",
+   "nombre_rv1909": "Pethor",
+   "formas_rv1909": [
+    "Pethor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 22:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Til Barsip",
+    "lat": 36.7014,
+    "lon": 38.0865,
+    "puntuacion_openbible": 408,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Aushariye",
+     "lat": 36.6599,
+     "lon": 38.0754,
+     "puntuacion_openbible": 36
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa9e754/pethor",
+   "nota": "Ciudad de Balaam, «junto al río» (Nm 22:5)."
+  },
+  {
+   "id": "pisga",
+   "nombre": "Pisga",
+   "nombre_rv1909": "Pisga",
+   "formas_rv1909": [
+    "Pisga"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Nm 21:20",
+    "Nm 23:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Rujm Siyaghah",
+    "lat": 31.7678,
+    "lon": 35.7256,
+    "puntuacion_openbible": 453,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Jabal al Naba",
+     "lat": 31.7667,
+     "lon": 35.75,
+     "puntuacion_openbible": 73
+    },
+    {
+     "identificacion": "Abarim",
+     "lat": 31.7539,
+     "lon": 35.7152,
+     "puntuacion_openbible": 47
+    },
+    {
+     "identificacion": "Jebel Osha",
+     "lat": 32.0715,
+     "lon": 35.7086,
+     "puntuacion_openbible": 7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afd9259/pisgah",
+   "nota": ""
+  },
+  {
+   "id": "punon",
+   "nombre": "Punón",
+   "nombre_rv1909": "Phunón",
+   "formas_rv1909": [
+    "Phunón"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:42",
+    "Nm 33:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Faynan",
+    "lat": 30.6277,
+    "lon": 35.4936,
+    "puntuacion_openbible": 755,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9ecc26/punon",
+   "nota": ""
+  },
+  {
+   "id": "rehob",
+   "nombre": "Rehob",
+   "nombre_rv1909": "Rehob",
+   "formas_rv1909": [
+    "Rehob"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 13:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Beqaa Valley",
+    "lat": 34.0089,
+    "lon": 36.1453,
+    "puntuacion_openbible": 182,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Banias",
+     "lat": 33.2461,
+     "lon": 35.6933,
+     "puntuacion_openbible": 132
+    },
+    {
+     "identificacion": "upper Huleh Valley",
+     "lat": 33.249,
+     "lon": 35.652,
+     "puntuacion_openbible": 93
+    },
+    {
+     "identificacion": "Hunin",
+     "lat": 33.2211,
+     "lon": 35.5444,
+     "puntuacion_openbible": 33
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae4cd38/rehob-1",
+   "nota": ""
+  },
+  {
+   "id": "ribla",
+   "nombre": "Ribla",
+   "nombre_rv1909": "Ribla",
+   "formas_rv1909": [
+    "Ribla"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Arbin",
+    "lat": 33.5369,
+    "lon": 36.3661,
+    "puntuacion_openbible": 38,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Irbid",
+     "lat": 32.5587,
+     "lon": 35.8476,
+     "puntuacion_openbible": 25
+    },
+    {
+     "identificacion": "Hermel",
+     "lat": 34.3967,
+     "lon": 36.3871,
+     "puntuacion_openbible": -3
+    },
+    {
+     "identificacion": "Rableh",
+     "lat": 34.4595,
+     "lon": 36.5726,
+     "puntuacion_openbible": -396
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac95bd8/riblah-2",
+   "nota": ""
+  },
+  {
+   "id": "rimon-peres",
+   "nombre": "Rimón-peres",
+   "nombre_rv1909": "Rimmón-peres",
+   "formas_rv1909": [
+    "Rimmón-peres"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:19",
+    "Nm 33:20"
+   ],
+   "ubicacion": {
+    "identificacion": "Naqb al Biyar",
+    "lat": 29.5402,
+    "lon": 34.6543,
+    "puntuacion_openbible": 144,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi er Rummun",
+     "lat": 30.5786,
+     "lon": 34.8178,
+     "puntuacion_openbible": 126
+    },
+    {
+     "identificacion": "Khirbet Umm er Rammamin",
+     "lat": 31.3712,
+     "lon": 34.8649,
+     "puntuacion_openbible": 32
+    },
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac79b33/rimmon-perez",
+   "nota": ""
+  },
+  {
+   "id": "risa",
+   "nombre": "Risa",
+   "nombre_rv1909": "Rissa",
+   "formas_rv1909": [
+    "Rissa"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:21",
+    "Nm 33:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Sharma",
+    "lat": 28.026,
+    "lon": 35.248,
+    "puntuacion_openbible": 469,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Kuntilet el Jerafi",
+     "lat": 30.003,
+     "lon": 34.6819,
+     "puntuacion_openbible": 197
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af04ad9/rissah",
+   "nota": ""
+  },
+  {
+   "id": "ritma",
+   "nombre": "Ritma",
+   "nombre_rv1909": "Ritma",
+   "formas_rv1909": [
+    "Ritma"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:18",
+    "Nm 33:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Ratamah",
+    "lat": 29.0337,
+    "lon": 34.1255,
+    "puntuacion_openbible": 235,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi Abu Retemat",
+     "lat": 30.5994,
+     "lon": 34.3603,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Wadi er Retame",
+     "lat": 27.8619,
+     "lon": 36.2283,
+     "puntuacion_openbible": 56
+    },
+    {
+     "identificacion": "Ain Rathmah",
+     "lat": 29.7406,
+     "lon": 33.0303,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2e73ba/rithmah",
+   "nota": ""
+  },
+  {
+   "id": "sefam",
+   "nombre": "Sefam",
+   "nombre_rv1909": "Sepham",
+   "formas_rv1909": [
+    "Sepham"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:10",
+    "Nm 34:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Hermel",
+    "lat": 34.3967,
+    "lon": 36.3871,
+    "puntuacion_openbible": 38,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Arbin",
+     "lat": 33.5369,
+     "lon": 36.3661,
+     "puntuacion_openbible": 25
+    },
+    {
+     "identificacion": "Tall Irbid",
+     "lat": 32.5587,
+     "lon": 35.8476,
+     "puntuacion_openbible": -2
+    },
+    {
+     "identificacion": "Rableh",
+     "lat": 34.4595,
+     "lon": 36.5726,
+     "puntuacion_openbible": -395
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9ba60c/shepham",
+   "nota": ""
+  },
+  {
+   "id": "sitim",
+   "nombre": "Sitim",
+   "nombre_rv1909": "Sittim",
+   "formas_rv1909": [
+    "Sittim"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 25:1"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall el Hammam",
+    "lat": 31.8402,
+    "lon": 35.6737,
+    "puntuacion_openbible": 671,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Kafrayn",
+     "lat": 31.8505,
+     "lon": 35.653,
+     "puntuacion_openbible": 147
+    },
+    {
+     "identificacion": "Tell Matabi",
+     "lat": 31.8416,
+     "lon": 35.684,
+     "puntuacion_openbible": -6
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af64fb3/shittim",
+   "nota": ""
+  },
+  {
+   "id": "sibma",
+   "nombre": "Sibma",
+   "nombre_rv1909": "Sibma",
+   "formas_rv1909": [
+    "Sibma"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 32:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Qarn al Qubish",
+    "lat": 31.7824,
+    "lon": 35.7613,
+    "puntuacion_openbible": 479,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ayun Musa",
+     "lat": 31.777,
+     "lon": 35.7385,
+     "puntuacion_openbible": 114
+    },
+    {
+     "identificacion": "Ma‘in",
+     "lat": 31.6795,
+     "lon": 35.7353,
+     "puntuacion_openbible": 59
+    },
+    {
+     "identificacion": "Sumia",
+     "lat": 31.8169,
+     "lon": 35.7714,
+     "puntuacion_openbible": -12
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa10f27/sibmah",
+   "nota": ""
+  },
+  {
+   "id": "tabera",
+   "nombre": "Tabera",
+   "nombre_rv1909": "Taberah",
+   "formas_rv1909": [
+    "Taberah"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 11:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Erweis el Ebeirig",
+    "lat": 28.7887,
+    "lon": 34.2754,
+    "puntuacion_openbible": 104,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi Sa’l",
+     "lat": 28.7067,
+     "lon": 34.0419,
+     "puntuacion_openbible": 15
+    },
+    {
+     "identificacion": "Wadi al Aghaydira",
+     "lat": 30.0918,
+     "lon": 33.3801,
+     "puntuacion_openbible": 9
+    },
+    {
+     "identificacion": "Wadi Sudr",
+     "lat": 29.6363,
+     "lon": 32.8059,
+     "puntuacion_openbible": 9
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a028191/taberah",
+   "nota": "«Incendio» (Nm 11:3)."
+  },
+  {
+   "id": "tahat",
+   "nombre": "Tahat",
+   "nombre_rv1909": "Tahath",
+   "formas_rv1909": [
+    "Tahath"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:26",
+    "Nm 33:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Umm Hashim",
+    "lat": 30.6406,
+    "lon": 34.4111,
+    "puntuacion_openbible": 91,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Beer Sheva",
+     "lat": 31.2447,
+     "lon": 34.8408,
+     "puntuacion_openbible": 83
+    },
+    {
+     "identificacion": "Ain Muweileh",
+     "lat": 30.6875,
+     "lon": 34.3333,
+     "puntuacion_openbible": 42
+    },
+    {
+     "identificacion": "Har Zin",
+     "lat": 30.8321,
+     "lon": 35.0569,
+     "puntuacion_openbible": 35
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abe40d1/tahath",
+   "nota": ""
+  },
+  {
+   "id": "tare",
+   "nombre": "Tare",
+   "nombre_rv1909": "Tara",
+   "formas_rv1909": [
+    "Tara"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:27",
+    "Nm 33:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Umm Hashim",
+    "lat": 30.6406,
+    "lon": 34.4111,
+    "puntuacion_openbible": 126,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Beer Sheva",
+     "lat": 31.2447,
+     "lon": 34.8408,
+     "puntuacion_openbible": 115
+    },
+    {
+     "identificacion": "Ain Muweileh",
+     "lat": 30.6875,
+     "lon": 34.3333,
+     "puntuacion_openbible": 58
+    },
+    {
+     "identificacion": "Har Zin",
+     "lat": 30.8321,
+     "lon": 35.0569,
+     "puntuacion_openbible": 48
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a944b90/terah",
+   "nota": ""
+  },
+  {
+   "id": "salmona",
+   "nombre": "Salmona",
+   "nombre_rv1909": "Salmona",
+   "formas_rv1909": [
+    "Salmona"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Nm 33:41",
+    "Nm 33:42"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi es Salmaneh",
+    "lat": 30.8122,
+    "lon": 35.3734,
+    "puntuacion_openbible": 329,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rujm Talat az Zalma",
+     "lat": 30.4136,
+     "lon": 35.5677,
+     "puntuacion_openbible": 152
+    },
+    {
+     "identificacion": "Wadi Umran",
+     "lat": 29.5426,
+     "lon": 35.1318,
+     "puntuacion_openbible": 10
+    },
+    {
+     "identificacion": "Bir Madhkur",
+     "lat": 30.3946,
+     "lon": 35.3427,
+     "puntuacion_openbible": -74
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1c6a50/zalmonah",
+   "nota": ""
+  },
+  {
+   "id": "zedad",
+   "nombre": "Zedad",
+   "nombre_rv1909": "Sedad",
+   "formas_rv1909": [
+    "Sedad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Sadad",
+    "lat": 34.3135,
+    "lon": 36.9242,
+    "puntuacion_openbible": 689,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Serada",
+     "lat": 33.2889,
+     "lon": 35.5943,
+     "puntuacion_openbible": 94
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aab92ca/zedad",
+   "nota": ""
+  },
+  {
+   "id": "desierto-de-zin",
+   "nombre": "Desierto de Zin",
+   "nombre_rv1909": "Zin",
+   "formas_rv1909": [
+    "Zin"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Nm 13:22",
+    "Nm 20:1",
+    "Nm 27:14",
+    "Nm 33:36",
+    "Nm 34:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Zin Desert",
+    "lat": 30.971,
+    "lon": 35.325,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0b5c50/zin-1",
+   "nota": "Distinto del desierto de Sin (Ex 16:1)."
+  },
+  {
+   "id": "zin",
+   "nombre": "Zin (límite sur)",
+   "nombre_rv1909": "Zin",
+   "formas_rv1909": [
+    "Zin"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Nm 34:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Zin Desert",
+    "lat": 30.971,
+    "lon": 35.325,
+    "puntuacion_openbible": 880,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a190097/zin-2",
+   "nota": "Punto del límite sur de la tierra (Nm 34:4)."
+  },
+  {
+   "id": "zifron",
+   "nombre": "Zifrón",
+   "nombre_rv1909": "Ziphón",
+   "formas_rv1909": [
+    "Ziphón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 34:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Huwwarin",
+    "lat": 34.2667,
+    "lon": 37.0667,
+    "puntuacion_openbible": 378,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Zifran",
+     "lat": 33.8719,
+     "lon": 36.8146,
+     "puntuacion_openbible": 52
+    },
+    {
+     "identificacion": "Al Zaafaraniyah",
+     "lat": 34.8953,
+     "lon": 36.7781,
+     "puntuacion_openbible": 42
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adf05b8/ziphron",
+   "nota": ""
+  },
+  {
+   "id": "zoan",
+   "nombre": "Zoán",
+   "nombre_rv1909": "Zoán",
+   "formas_rv1909": [
+    "Zoán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Nm 13:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Tanis",
+    "lat": 30.9769,
+    "lon": 31.88,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac31fee/zoan",
+   "nota": "«Zoán, la de Egipto» (Nm 13:23)."
+  },
+  {
+   "id": "zofim",
+   "nombre": "Campo de Zofim",
+   "nombre_rv1909": "Sophim",
+   "formas_rv1909": [
+    "Sophim"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Nm 23:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Tila as Safa",
+    "lat": 31.7711,
+    "lon": 35.7339,
+    "puntuacion_openbible": 473,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rujm Siyaghah",
+     "lat": 31.7678,
+     "lon": 35.7256,
+     "puntuacion_openbible": 201
+    },
+    {
+     "identificacion": "Jabal al Naba",
+     "lat": 31.7667,
+     "lon": 35.75,
+     "puntuacion_openbible": 32
+    },
+    {
+     "identificacion": "Abarim",
+     "lat": 31.7539,
+     "lon": 35.7152,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae7f7b5/zophim",
+   "nota": ""
   }
  ],
  "menciones_lugar": [
@@ -57316,6 +77227,2292 @@ window.BIBLIA_DATOS = {
    "lugar": "sinai",
    "inicio": 96,
    "fin": 101
+  },
+  {
+   "ref": "Nm 1:1",
+   "lugar": "desierto-de-sinai",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 1:1",
+   "lugar": "egipto",
+   "inicio": 161,
+   "fin": 167
+  },
+  {
+   "ref": "Nm 1:19",
+   "lugar": "desierto-de-sinai",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 3:1",
+   "lugar": "sinai",
+   "inicio": 98,
+   "fin": 103
+  },
+  {
+   "ref": "Nm 3:4",
+   "lugar": "desierto-de-sinai",
+   "inicio": 114,
+   "fin": 119
+  },
+  {
+   "ref": "Nm 3:13",
+   "lugar": "egipto",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Nm 3:14",
+   "lugar": "desierto-de-sinai",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 8:17",
+   "lugar": "egipto",
+   "inicio": 146,
+   "fin": 152
+  },
+  {
+   "ref": "Nm 9:1",
+   "lugar": "desierto-de-sinai",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 9:1",
+   "lugar": "egipto",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Nm 9:5",
+   "lugar": "desierto-de-sinai",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Nm 10:12",
+   "lugar": "desierto-de-sinai",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 10:12",
+   "lugar": "paran",
+   "inicio": 104,
+   "fin": 109
+  },
+  {
+   "ref": "Nm 11:3",
+   "lugar": "tabera",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 11:5",
+   "lugar": "egipto",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 11:18",
+   "lugar": "egipto",
+   "inicio": 178,
+   "fin": 184
+  },
+  {
+   "ref": "Nm 11:20",
+   "lugar": "egipto",
+   "inicio": 224,
+   "fin": 230
+  },
+  {
+   "ref": "Nm 11:34",
+   "lugar": "kibrot-hataava",
+   "inicio": 33,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 11:35",
+   "lugar": "kibrot-hataava",
+   "inicio": 3,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 11:35",
+   "lugar": "haserot",
+   "inicio": 39,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 11:35",
+   "lugar": "haserot",
+   "inicio": 62,
+   "fin": 70
+  },
+  {
+   "ref": "Nm 13:1",
+   "lugar": "haserot",
+   "inicio": 29,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 13:1",
+   "lugar": "paran",
+   "inicio": 78,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 13:3",
+   "lugar": "canaan",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 13:4",
+   "lugar": "paran",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 13:18",
+   "lugar": "canaan",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 13:22",
+   "lugar": "desierto-de-zin",
+   "inicio": 64,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 13:22",
+   "lugar": "rehob",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Nm 13:22",
+   "lugar": "lebo-hamat",
+   "inicio": 93,
+   "fin": 98
+  },
+  {
+   "ref": "Nm 13:23",
+   "lugar": "hebron",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 13:23",
+   "lugar": "hebron",
+   "inicio": 109,
+   "fin": 115
+  },
+  {
+   "ref": "Nm 13:23",
+   "lugar": "zoan",
+   "inicio": 150,
+   "fin": 154
+  },
+  {
+   "ref": "Nm 13:23",
+   "lugar": "egipto",
+   "inicio": 162,
+   "fin": 168
+  },
+  {
+   "ref": "Nm 13:24",
+   "lugar": "valle-de-escol",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 13:25",
+   "lugar": "valle-de-escol",
+   "inicio": 22,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 13:27",
+   "lugar": "paran",
+   "inicio": 111,
+   "fin": 116
+  },
+  {
+   "ref": "Nm 13:27",
+   "lugar": "cades",
+   "inicio": 121,
+   "fin": 126
+  },
+  {
+   "ref": "Nm 13:30",
+   "lugar": "amalec",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 13:30",
+   "lugar": "jordan",
+   "inicio": 155,
+   "fin": 161
+  },
+  {
+   "ref": "Nm 14:2",
+   "lugar": "egipto",
+   "inicio": 131,
+   "fin": 137
+  },
+  {
+   "ref": "Nm 14:3",
+   "lugar": "egipto",
+   "inicio": 155,
+   "fin": 161
+  },
+  {
+   "ref": "Nm 14:4",
+   "lugar": "egipto",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 14:19",
+   "lugar": "egipto",
+   "inicio": 121,
+   "fin": 127
+  },
+  {
+   "ref": "Nm 14:22",
+   "lugar": "egipto",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 14:25",
+   "lugar": "camino-mar-rojo",
+   "inicio": 98,
+   "fin": 120
+  },
+  {
+   "ref": "Nm 14:45",
+   "lugar": "horma",
+   "inicio": 127,
+   "fin": 132
+  },
+  {
+   "ref": "Nm 15:41",
+   "lugar": "egipto",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 20:1",
+   "lugar": "desierto-de-zin",
+   "inicio": 69,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 20:1",
+   "lugar": "cades",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "Nm 20:5",
+   "lugar": "egipto",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 20:13",
+   "lugar": "meriba-cades",
+   "inicio": 14,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 20:14",
+   "lugar": "edom",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 20:14",
+   "lugar": "cades",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 20:15",
+   "lugar": "egipto",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 20:15",
+   "lugar": "egipto",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 20:16",
+   "lugar": "egipto",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "Nm 20:16",
+   "lugar": "cades",
+   "inicio": 103,
+   "fin": 108
+  },
+  {
+   "ref": "Nm 20:17",
+   "lugar": "camino-real",
+   "inicio": 112,
+   "fin": 123
+  },
+  {
+   "ref": "Nm 20:18",
+   "lugar": "edom",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 20:20",
+   "lugar": "edom",
+   "inicio": 36,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 20:21",
+   "lugar": "edom",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 20:22",
+   "lugar": "cades",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 20:22",
+   "lugar": "monte-hor",
+   "inicio": 89,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 20:23",
+   "lugar": "monte-hor",
+   "inicio": 47,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 20:23",
+   "lugar": "edom",
+   "inicio": 84,
+   "fin": 88
+  },
+  {
+   "ref": "Nm 20:24",
+   "lugar": "meriba-cades",
+   "inicio": 149,
+   "fin": 169
+  },
+  {
+   "ref": "Nm 20:25",
+   "lugar": "monte-hor",
+   "inicio": 61,
+   "fin": 64
+  },
+  {
+   "ref": "Nm 20:27",
+   "lugar": "monte-hor",
+   "inicio": 59,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 21:1",
+   "lugar": "arad",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 21:3",
+   "lugar": "horma",
+   "inicio": 130,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 21:4",
+   "lugar": "monte-hor",
+   "inicio": 25,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 21:4",
+   "lugar": "camino-mar-rojo",
+   "inicio": 30,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 21:4",
+   "lugar": "edom",
+   "inicio": 79,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 21:5",
+   "lugar": "egipto",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 21:10",
+   "lugar": "obot",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 21:11",
+   "lugar": "obot",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 21:11",
+   "lugar": "ije-abarim",
+   "inicio": 34,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 21:11",
+   "lugar": "moab",
+   "inicio": 81,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 21:12",
+   "lugar": "arroyo-de-zered",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 21:13",
+   "lugar": "arnon",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 21:13",
+   "lugar": "arnon",
+   "inicio": 128,
+   "fin": 133
+  },
+  {
+   "ref": "Nm 21:13",
+   "lugar": "moab",
+   "inicio": 148,
+   "fin": 152
+  },
+  {
+   "ref": "Nm 21:13",
+   "lugar": "moab",
+   "inicio": 160,
+   "fin": 164
+  },
+  {
+   "ref": "Nm 21:14",
+   "lugar": "arnon",
+   "inicio": 108,
+   "fin": 113
+  },
+  {
+   "ref": "Nm 21:15",
+   "lugar": "ar",
+   "inicio": 50,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 21:15",
+   "lugar": "moab",
+   "inicio": 82,
+   "fin": 86
+  },
+  {
+   "ref": "Nm 21:16",
+   "lugar": "beer",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 21:18",
+   "lugar": "matana",
+   "inicio": 134,
+   "fin": 141
+  },
+  {
+   "ref": "Nm 21:19",
+   "lugar": "matana",
+   "inicio": 5,
+   "fin": 12
+  },
+  {
+   "ref": "Nm 21:19",
+   "lugar": "nahaliel",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 21:19",
+   "lugar": "nahaliel",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 21:19",
+   "lugar": "bamot",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 21:20",
+   "lugar": "bamot",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 21:20",
+   "lugar": "moab",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 21:20",
+   "lugar": "pisga",
+   "inicio": 70,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 21:20",
+   "lugar": "jesimon",
+   "inicio": 88,
+   "fin": 95
+  },
+  {
+   "ref": "Nm 21:22",
+   "lugar": "camino-real",
+   "inicio": 121,
+   "fin": 132
+  },
+  {
+   "ref": "Nm 21:23",
+   "lugar": "jahaza",
+   "inicio": 130,
+   "fin": 135
+  },
+  {
+   "ref": "Nm 21:24",
+   "lugar": "arnon",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 21:24",
+   "lugar": "jaboc",
+   "inicio": 70,
+   "fin": 75
+  },
+  {
+   "ref": "Nm 21:24",
+   "lugar": "amon",
+   "inicio": 96,
+   "fin": 101
+  },
+  {
+   "ref": "Nm 21:24",
+   "lugar": "amon",
+   "inicio": 137,
+   "fin": 142
+  },
+  {
+   "ref": "Nm 21:25",
+   "lugar": "hesbon",
+   "inicio": 91,
+   "fin": 97
+  },
+  {
+   "ref": "Nm 21:26",
+   "lugar": "hesbon",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Nm 21:26",
+   "lugar": "moab",
+   "inicio": 108,
+   "fin": 112
+  },
+  {
+   "ref": "Nm 21:26",
+   "lugar": "arnon",
+   "inicio": 156,
+   "fin": 161
+  },
+  {
+   "ref": "Nm 21:27",
+   "lugar": "hesbon",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 21:28",
+   "lugar": "hesbon",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 21:28",
+   "lugar": "ar",
+   "inicio": 71,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 21:28",
+   "lugar": "moab",
+   "inicio": 77,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 21:28",
+   "lugar": "arnon",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "Nm 21:29",
+   "lugar": "moab",
+   "inicio": 11,
+   "fin": 15
+  },
+  {
+   "ref": "Nm 21:30",
+   "lugar": "hesbon",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 21:30",
+   "lugar": "dibon",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 21:30",
+   "lugar": "nofa",
+   "inicio": 81,
+   "fin": 86
+  },
+  {
+   "ref": "Nm 21:30",
+   "lugar": "medeba",
+   "inicio": 89,
+   "fin": 95
+  },
+  {
+   "ref": "Nm 21:32",
+   "lugar": "jazer",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 21:33",
+   "lugar": "basan",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 21:33",
+   "lugar": "basan",
+   "inicio": 72,
+   "fin": 77
+  },
+  {
+   "ref": "Nm 21:33",
+   "lugar": "edrei",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "Nm 21:34",
+   "lugar": "hesbon",
+   "inicio": 193,
+   "fin": 199
+  },
+  {
+   "ref": "Nm 22:1",
+   "lugar": "campos-de-moab",
+   "inicio": 51,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 22:1",
+   "lugar": "jordan",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Nm 22:1",
+   "lugar": "jerico",
+   "inicio": 95,
+   "fin": 101
+  },
+  {
+   "ref": "Nm 22:3",
+   "lugar": "moab",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Nm 22:3",
+   "lugar": "moab",
+   "inicio": 66,
+   "fin": 70
+  },
+  {
+   "ref": "Nm 22:4",
+   "lugar": "moab",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "Nm 22:4",
+   "lugar": "madian",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 22:4",
+   "lugar": "moab",
+   "inicio": 171,
+   "fin": 175
+  },
+  {
+   "ref": "Nm 22:5",
+   "lugar": "petor",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 22:5",
+   "lugar": "egipto",
+   "inicio": 177,
+   "fin": 183
+  },
+  {
+   "ref": "Nm 22:7",
+   "lugar": "moab",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 22:7",
+   "lugar": "madian",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 22:8",
+   "lugar": "moab",
+   "inicio": 116,
+   "fin": 120
+  },
+  {
+   "ref": "Nm 22:10",
+   "lugar": "moab",
+   "inicio": 56,
+   "fin": 60
+  },
+  {
+   "ref": "Nm 22:11",
+   "lugar": "egipto",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 22:14",
+   "lugar": "moab",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 22:21",
+   "lugar": "moab",
+   "inicio": 82,
+   "fin": 86
+  },
+  {
+   "ref": "Nm 22:36",
+   "lugar": "ir-moab",
+   "inicio": 56,
+   "fin": 70
+  },
+  {
+   "ref": "Nm 22:36",
+   "lugar": "arnon",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "Nm 22:39",
+   "lugar": "quiriat-huzot",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "Nm 22:41",
+   "lugar": "bamot-baal",
+   "inicio": 61,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 23:6",
+   "lugar": "moab",
+   "inicio": 86,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 23:7",
+   "lugar": "aram",
+   "inicio": 34,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 23:7",
+   "lugar": "moab",
+   "inicio": 62,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 23:14",
+   "lugar": "zofim",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 23:14",
+   "lugar": "pisga",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 23:17",
+   "lugar": "moab",
+   "inicio": 86,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 23:22",
+   "lugar": "egipto",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 23:28",
+   "lugar": "peor",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 23:28",
+   "lugar": "jesimon",
+   "inicio": 59,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 24:8",
+   "lugar": "egipto",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 24:17",
+   "lugar": "moab",
+   "inicio": 132,
+   "fin": 136
+  },
+  {
+   "ref": "Nm 24:18",
+   "lugar": "edom",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 24:18",
+   "lugar": "seir",
+   "inicio": 40,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 24:20",
+   "lugar": "amalec",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 24:20",
+   "lugar": "amalec",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 24:22",
+   "lugar": "asur",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Nm 24:24",
+   "lugar": "quitim",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 24:24",
+   "lugar": "asur",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 25:1",
+   "lugar": "sitim",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 25:1",
+   "lugar": "moab",
+   "inicio": 74,
+   "fin": 78
+  },
+  {
+   "ref": "Nm 25:15",
+   "lugar": "madian",
+   "inicio": 107,
+   "fin": 113
+  },
+  {
+   "ref": "Nm 25:18",
+   "lugar": "peor",
+   "inicio": 100,
+   "fin": 104
+  },
+  {
+   "ref": "Nm 25:18",
+   "lugar": "madian",
+   "inicio": 153,
+   "fin": 159
+  },
+  {
+   "ref": "Nm 25:18",
+   "lugar": "peor",
+   "inicio": 228,
+   "fin": 232
+  },
+  {
+   "ref": "Nm 26:3",
+   "lugar": "campos-de-moab",
+   "inicio": 58,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 26:3",
+   "lugar": "jordan",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Nm 26:3",
+   "lugar": "jerico",
+   "inicio": 93,
+   "fin": 99
+  },
+  {
+   "ref": "Nm 26:4",
+   "lugar": "egipto",
+   "inicio": 126,
+   "fin": 132
+  },
+  {
+   "ref": "Nm 26:19",
+   "lugar": "canaan",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Nm 26:59",
+   "lugar": "egipto",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 26:63",
+   "lugar": "campos-de-moab",
+   "inicio": 105,
+   "fin": 119
+  },
+  {
+   "ref": "Nm 26:63",
+   "lugar": "jordan",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "Nm 26:63",
+   "lugar": "jerico",
+   "inicio": 140,
+   "fin": 146
+  },
+  {
+   "ref": "Nm 26:64",
+   "lugar": "desierto-de-sinai",
+   "inicio": 136,
+   "fin": 141
+  },
+  {
+   "ref": "Nm 27:12",
+   "lugar": "abarim",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 27:14",
+   "lugar": "desierto-de-zin",
+   "inicio": 52,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 27:14",
+   "lugar": "meriba-cades",
+   "inicio": 154,
+   "fin": 174
+  },
+  {
+   "ref": "Nm 27:14",
+   "lugar": "cades",
+   "inicio": 178,
+   "fin": 183
+  },
+  {
+   "ref": "Nm 27:14",
+   "lugar": "desierto-de-zin",
+   "inicio": 202,
+   "fin": 205
+  },
+  {
+   "ref": "Nm 28:6",
+   "lugar": "sinai",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 31:3",
+   "lugar": "madian",
+   "inicio": 100,
+   "fin": 106
+  },
+  {
+   "ref": "Nm 31:3",
+   "lugar": "madian",
+   "inicio": 141,
+   "fin": 147
+  },
+  {
+   "ref": "Nm 31:7",
+   "lugar": "madian",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 31:8",
+   "lugar": "madian",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 31:8",
+   "lugar": "madian",
+   "inicio": 119,
+   "fin": 125
+  },
+  {
+   "ref": "Nm 31:9",
+   "lugar": "madian",
+   "inicio": 59,
+   "fin": 69
+  },
+  {
+   "ref": "Nm 31:12",
+   "lugar": "jordan",
+   "inicio": 182,
+   "fin": 188
+  },
+  {
+   "ref": "Nm 31:12",
+   "lugar": "jerico",
+   "inicio": 192,
+   "fin": 198
+  },
+  {
+   "ref": "Nm 31:16",
+   "lugar": "peor",
+   "inicio": 124,
+   "fin": 128
+  },
+  {
+   "ref": "Nm 32:1",
+   "lugar": "jazer",
+   "inicio": 116,
+   "fin": 121
+  },
+  {
+   "ref": "Nm 32:1",
+   "lugar": "galaad",
+   "inicio": 127,
+   "fin": 133
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "atarot",
+   "inicio": 0,
+   "fin": 7
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "dibon",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "jazer",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "nimra",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "hesbon",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "eleale",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "nebo",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 32:3",
+   "lugar": "beon",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "Nm 32:5",
+   "lugar": "jordan",
+   "inicio": 119,
+   "fin": 125
+  },
+  {
+   "ref": "Nm 32:8",
+   "lugar": "cades",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 32:9",
+   "lugar": "valle-de-escol",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 32:11",
+   "lugar": "egipto",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 32:19",
+   "lugar": "jordan",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 32:19",
+   "lugar": "jordan",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "Nm 32:21",
+   "lugar": "jordan",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 32:26",
+   "lugar": "galaad",
+   "inicio": 109,
+   "fin": 115
+  },
+  {
+   "ref": "Nm 32:29",
+   "lugar": "jordan",
+   "inicio": 84,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 32:29",
+   "lugar": "galaad",
+   "inicio": 214,
+   "fin": 220
+  },
+  {
+   "ref": "Nm 32:30",
+   "lugar": "canaan",
+   "inicio": 97,
+   "fin": 103
+  },
+  {
+   "ref": "Nm 32:32",
+   "lugar": "canaan",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Nm 32:32",
+   "lugar": "jordan",
+   "inicio": 124,
+   "fin": 130
+  },
+  {
+   "ref": "Nm 32:33",
+   "lugar": "basan",
+   "inicio": 162,
+   "fin": 167
+  },
+  {
+   "ref": "Nm 32:34",
+   "lugar": "dibon",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Nm 32:34",
+   "lugar": "atarot",
+   "inicio": 43,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 32:34",
+   "lugar": "aroer",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 32:35",
+   "lugar": "atrot-sofan",
+   "inicio": 4,
+   "fin": 17
+  },
+  {
+   "ref": "Nm 32:35",
+   "lugar": "jazer",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 32:35",
+   "lugar": "jogbeha",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 32:36",
+   "lugar": "bet-nimra",
+   "inicio": 4,
+   "fin": 14
+  },
+  {
+   "ref": "Nm 32:36",
+   "lugar": "bet-haran",
+   "inicio": 20,
+   "fin": 28
+  },
+  {
+   "ref": "Nm 32:37",
+   "lugar": "hesbon",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 32:37",
+   "lugar": "eleale",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 32:37",
+   "lugar": "quiriataim",
+   "inicio": 58,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 32:38",
+   "lugar": "nebo",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "Nm 32:38",
+   "lugar": "baal-meon",
+   "inicio": 14,
+   "fin": 23
+  },
+  {
+   "ref": "Nm 32:38",
+   "lugar": "sibma",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 32:39",
+   "lugar": "galaad",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 32:40",
+   "lugar": "galaad",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 32:41",
+   "lugar": "havot-jair",
+   "inicio": 73,
+   "fin": 84
+  },
+  {
+   "ref": "Nm 32:42",
+   "lugar": "kenat",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Nm 33:1",
+   "lugar": "egipto",
+   "inicio": 84,
+   "fin": 90
+  },
+  {
+   "ref": "Nm 33:3",
+   "lugar": "rameses",
+   "inicio": 3,
+   "fin": 10
+  },
+  {
+   "ref": "Nm 33:5",
+   "lugar": "rameses",
+   "inicio": 40,
+   "fin": 47
+  },
+  {
+   "ref": "Nm 33:5",
+   "lugar": "sucot-egipto",
+   "inicio": 70,
+   "fin": 77
+  },
+  {
+   "ref": "Nm 33:6",
+   "lugar": "sucot-egipto",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:6",
+   "lugar": "etam",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 33:7",
+   "lugar": "etam",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:7",
+   "lugar": "pi-hahirot",
+   "inicio": 38,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 33:7",
+   "lugar": "baal-zefon",
+   "inicio": 71,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 33:7",
+   "lugar": "migdol",
+   "inicio": 106,
+   "fin": 112
+  },
+  {
+   "ref": "Nm 33:8",
+   "lugar": "pi-hahirot",
+   "inicio": 15,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 33:8",
+   "lugar": "etam",
+   "inicio": 121,
+   "fin": 126
+  },
+  {
+   "ref": "Nm 33:8",
+   "lugar": "mara",
+   "inicio": 143,
+   "fin": 147
+  },
+  {
+   "ref": "Nm 33:9",
+   "lugar": "mara",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:9",
+   "lugar": "elim",
+   "inicio": 32,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 33:10",
+   "lugar": "elim",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 33:10",
+   "lugar": "mar-rojo-plaga",
+   "inicio": 39,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 33:11",
+   "lugar": "mar-rojo-plaga",
+   "inicio": 15,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 33:11",
+   "lugar": "desierto-de-sin",
+   "inicio": 56,
+   "fin": 59
+  },
+  {
+   "ref": "Nm 33:12",
+   "lugar": "desierto-de-sin",
+   "inicio": 27,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 33:12",
+   "lugar": "dofca",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 33:13",
+   "lugar": "dofca",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:13",
+   "lugar": "alus",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 33:14",
+   "lugar": "alus",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 33:14",
+   "lugar": "refidim",
+   "inicio": 33,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 33:15",
+   "lugar": "refidim",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:15",
+   "lugar": "desierto-de-sinai",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 33:16",
+   "lugar": "desierto-de-sinai",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Nm 33:16",
+   "lugar": "kibrot-hataava",
+   "inicio": 47,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 33:17",
+   "lugar": "kibrot-hataava",
+   "inicio": 14,
+   "fin": 29
+  },
+  {
+   "ref": "Nm 33:17",
+   "lugar": "haserot",
+   "inicio": 44,
+   "fin": 52
+  },
+  {
+   "ref": "Nm 33:18",
+   "lugar": "haserot",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:18",
+   "lugar": "ritma",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 33:19",
+   "lugar": "ritma",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:19",
+   "lugar": "rimon-peres",
+   "inicio": 34,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 33:20",
+   "lugar": "rimon-peres",
+   "inicio": 14,
+   "fin": 26
+  },
+  {
+   "ref": "Nm 33:20",
+   "lugar": "libna",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 33:21",
+   "lugar": "libna",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:21",
+   "lugar": "risa",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 33:22",
+   "lugar": "risa",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:22",
+   "lugar": "ceelata",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 33:23",
+   "lugar": "ceelata",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:23",
+   "lugar": "monte-sefer",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 33:24",
+   "lugar": "monte-sefer",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 33:24",
+   "lugar": "harada",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 33:25",
+   "lugar": "harada",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:25",
+   "lugar": "macelot",
+   "inicio": 35,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 33:26",
+   "lugar": "macelot",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:26",
+   "lugar": "tahat",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 33:27",
+   "lugar": "tahat",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:27",
+   "lugar": "tare",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 33:28",
+   "lugar": "tare",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "Nm 33:28",
+   "lugar": "mitca",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Nm 33:29",
+   "lugar": "mitca",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:29",
+   "lugar": "hasmona",
+   "inicio": 35,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 33:30",
+   "lugar": "hasmona",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 33:30",
+   "lugar": "moserot",
+   "inicio": 36,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 33:31",
+   "lugar": "moserot",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:31",
+   "lugar": "bene-jaacan",
+   "inicio": 37,
+   "fin": 48
+  },
+  {
+   "ref": "Nm 33:32",
+   "lugar": "bene-jaacan",
+   "inicio": 14,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 33:32",
+   "lugar": "hor-gidgad",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 33:33",
+   "lugar": "hor-gidgad",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 33:33",
+   "lugar": "jotbata",
+   "inicio": 45,
+   "fin": 53
+  },
+  {
+   "ref": "Nm 33:34",
+   "lugar": "jotbata",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "Nm 33:34",
+   "lugar": "abrona",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 33:35",
+   "lugar": "abrona",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:35",
+   "lugar": "ezion-geber",
+   "inicio": 35,
+   "fin": 46
+  },
+  {
+   "ref": "Nm 33:36",
+   "lugar": "ezion-geber",
+   "inicio": 14,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 33:36",
+   "lugar": "desierto-de-zin",
+   "inicio": 55,
+   "fin": 58
+  },
+  {
+   "ref": "Nm 33:36",
+   "lugar": "cades",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 33:37",
+   "lugar": "cades",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:37",
+   "lugar": "monte-hor",
+   "inicio": 46,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 33:37",
+   "lugar": "edom",
+   "inicio": 80,
+   "fin": 84
+  },
+  {
+   "ref": "Nm 33:38",
+   "lugar": "monte-hor",
+   "inicio": 39,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 33:38",
+   "lugar": "egipto",
+   "inicio": 158,
+   "fin": 164
+  },
+  {
+   "ref": "Nm 33:39",
+   "lugar": "monte-hor",
+   "inicio": 80,
+   "fin": 83
+  },
+  {
+   "ref": "Nm 33:40",
+   "lugar": "arad",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Nm 33:40",
+   "lugar": "canaan",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 33:41",
+   "lugar": "monte-hor",
+   "inicio": 24,
+   "fin": 27
+  },
+  {
+   "ref": "Nm 33:41",
+   "lugar": "salmona",
+   "inicio": 42,
+   "fin": 49
+  },
+  {
+   "ref": "Nm 33:42",
+   "lugar": "salmona",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "Nm 33:42",
+   "lugar": "punon",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 33:43",
+   "lugar": "punon",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Nm 33:43",
+   "lugar": "obot",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Nm 33:44",
+   "lugar": "obot",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:44",
+   "lugar": "ije-abarim",
+   "inicio": 34,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 33:44",
+   "lugar": "moab",
+   "inicio": 63,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 33:45",
+   "lugar": "ije-abarim",
+   "inicio": 14,
+   "fin": 24
+  },
+  {
+   "ref": "Nm 33:45",
+   "lugar": "dibon",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Nm 33:46",
+   "lugar": "dibon",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Nm 33:46",
+   "lugar": "almon-diblataim",
+   "inicio": 38,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 33:47",
+   "lugar": "almon-diblataim",
+   "inicio": 14,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 33:47",
+   "lugar": "abarim",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 33:47",
+   "lugar": "nebo",
+   "inicio": 78,
+   "fin": 82
+  },
+  {
+   "ref": "Nm 33:48",
+   "lugar": "abarim",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 33:48",
+   "lugar": "campos-de-moab",
+   "inicio": 53,
+   "fin": 67
+  },
+  {
+   "ref": "Nm 33:48",
+   "lugar": "jordan",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "Nm 33:48",
+   "lugar": "jerico",
+   "inicio": 88,
+   "fin": 94
+  },
+  {
+   "ref": "Nm 33:49",
+   "lugar": "jordan",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Nm 33:49",
+   "lugar": "bet-jesimot",
+   "inicio": 44,
+   "fin": 57
+  },
+  {
+   "ref": "Nm 33:49",
+   "lugar": "abel-sitim",
+   "inicio": 64,
+   "fin": 74
+  },
+  {
+   "ref": "Nm 33:49",
+   "lugar": "campos-de-moab",
+   "inicio": 83,
+   "fin": 97
+  },
+  {
+   "ref": "Nm 33:50",
+   "lugar": "campos-de-moab",
+   "inicio": 31,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 33:50",
+   "lugar": "jordan",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 33:50",
+   "lugar": "jerico",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 33:51",
+   "lugar": "jordan",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 33:51",
+   "lugar": "canaan",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "Nm 34:2",
+   "lugar": "canaan",
+   "inicio": 79,
+   "fin": 85
+  },
+  {
+   "ref": "Nm 34:2",
+   "lugar": "canaan",
+   "inicio": 152,
+   "fin": 158
+  },
+  {
+   "ref": "Nm 34:3",
+   "lugar": "desierto-de-zin",
+   "inicio": 51,
+   "fin": 54
+  },
+  {
+   "ref": "Nm 34:3",
+   "lugar": "edom",
+   "inicio": 77,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 34:3",
+   "lugar": "mar-salado",
+   "inicio": 132,
+   "fin": 142
+  },
+  {
+   "ref": "Nm 34:4",
+   "lugar": "acrabim",
+   "inicio": 68,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 34:4",
+   "lugar": "zin",
+   "inicio": 93,
+   "fin": 96
+  },
+  {
+   "ref": "Nm 34:4",
+   "lugar": "cades",
+   "inicio": 133,
+   "fin": 138
+  },
+  {
+   "ref": "Nm 34:4",
+   "lugar": "hasar-adar",
+   "inicio": 158,
+   "fin": 169
+  },
+  {
+   "ref": "Nm 34:4",
+   "lugar": "azmon",
+   "inicio": 186,
+   "fin": 191
+  },
+  {
+   "ref": "Nm 34:5",
+   "lugar": "azmon",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Nm 34:5",
+   "lugar": "torrente-de-egipto",
+   "inicio": 45,
+   "fin": 63
+  },
+  {
+   "ref": "Nm 34:6",
+   "lugar": "mar-grande",
+   "inicio": 35,
+   "fin": 43
+  },
+  {
+   "ref": "Nm 34:7",
+   "lugar": "mar-grande",
+   "inicio": 43,
+   "fin": 51
+  },
+  {
+   "ref": "Nm 34:7",
+   "lugar": "monte-hor-norte",
+   "inicio": 78,
+   "fin": 81
+  },
+  {
+   "ref": "Nm 34:8",
+   "lugar": "monte-hor-norte",
+   "inicio": 13,
+   "fin": 16
+  },
+  {
+   "ref": "Nm 34:8",
+   "lugar": "lebo-hamat",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Nm 34:8",
+   "lugar": "zedad",
+   "inicio": 91,
+   "fin": 96
+  },
+  {
+   "ref": "Nm 34:9",
+   "lugar": "zifron",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Nm 34:9",
+   "lugar": "hasar-enan",
+   "inicio": 55,
+   "fin": 65
+  },
+  {
+   "ref": "Nm 34:10",
+   "lugar": "hasar-enan",
+   "inicio": 45,
+   "fin": 55
+  },
+  {
+   "ref": "Nm 34:10",
+   "lugar": "sefam",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Nm 34:11",
+   "lugar": "sefam",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Nm 34:11",
+   "lugar": "ribla",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Nm 34:11",
+   "lugar": "ain",
+   "inicio": 58,
+   "fin": 61
+  },
+  {
+   "ref": "Nm 34:11",
+   "lugar": "mar-de-cineret",
+   "inicio": 115,
+   "fin": 131
+  },
+  {
+   "ref": "Nm 34:12",
+   "lugar": "jordan",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Nm 34:12",
+   "lugar": "mar-salado",
+   "inicio": 66,
+   "fin": 76
+  },
+  {
+   "ref": "Nm 34:15",
+   "lugar": "jordan",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 34:15",
+   "lugar": "jerico",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 34:29",
+   "lugar": "canaan",
+   "inicio": 112,
+   "fin": 118
+  },
+  {
+   "ref": "Nm 35:1",
+   "lugar": "campos-de-moab",
+   "inicio": 31,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 35:1",
+   "lugar": "jordan",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Nm 35:1",
+   "lugar": "jerico",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "Nm 35:10",
+   "lugar": "jordan",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Nm 35:10",
+   "lugar": "canaan",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "Nm 35:14",
+   "lugar": "jordan",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Nm 35:14",
+   "lugar": "canaan",
+   "inicio": 86,
+   "fin": 92
+  },
+  {
+   "ref": "Nm 36:13",
+   "lugar": "campos-de-moab",
+   "inicio": 108,
+   "fin": 122
+  },
+  {
+   "ref": "Nm 36:13",
+   "lugar": "jordan",
+   "inicio": 133,
+   "fin": 139
+  },
+  {
+   "ref": "Nm 36:13",
+   "lugar": "jerico",
+   "inicio": 143,
+   "fin": 149
   }
  ],
  "cronologia": {
@@ -57432,7 +79629,8 @@ window.BIBLIA_DATOS = {
    "Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta: en la LXX su generación (130 años) se suma en la cadena; en el TM no existe. No es un supuesto: es propio de cada tradición.",
    "Convención del cálculo: una edad N al ocurrir algo se cuenta como N años después del nacimiento.",
    "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas.",
-   "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7."
+   "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7.",
+   "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como un año después de la salida, igual que Ex 40:17."
   ],
   "combinaciones": [
    {
@@ -59886,6 +82084,233 @@ window.BIBLIA_DATOS = {
     "nota": "Ex 40:17: el día primero del primer mes del segundo año (la LXX añade «after their going forth out of Egypt»)."
    },
    {
+    "id": "ev-censo-sinai",
+    "titulo": "Censo en el desierto de Sinaí",
+    "tipo": "evento",
+    "ref": "Nm 1:1",
+    "pasaje": "nm-01",
+    "personas": [
+     "Moses_1",
+     "Aaron_1"
+    ],
+    "depende_de": "ev-salida-egipto",
+    "pasos": [
+     {
+      "texto": "«el segundo año» (2) de la salida",
+      "signo": 1,
+      "ref": "Nm 1:1",
+      "cifra_texto": {
+       "TM": "en el segundo año",
+       "LXX": "in the second year"
+      }
+     },
+     {
+      "texto": "el primer año es el de la salida: se resta 1",
+      "signo": -1,
+      "ref": "Nm 1:1",
+      "convencion": true
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2669,
+     "TM|tare70|sem2|canaan": 2454,
+     "TM|tare70|noe500|egipto": 2667,
+     "TM|tare70|noe500|canaan": 2452,
+     "TM|tare130|sem2|egipto": 2729,
+     "TM|tare130|sem2|canaan": 2514,
+     "TM|tare130|noe500|egipto": 2727,
+     "TM|tare130|noe500|canaan": 2512,
+     "LXX|tare70|sem2|egipto": 4135,
+     "LXX|tare70|sem2|canaan": 3920,
+     "LXX|tare70|noe500|egipto": 4133,
+     "LXX|tare70|noe500|canaan": 3918,
+     "LXX|tare130|sem2|egipto": 4195,
+     "LXX|tare130|sem2|canaan": 3980,
+     "LXX|tare130|noe500|egipto": 4193,
+     "LXX|tare130|noe500|canaan": 3978
+    },
+    "certeza": "calculo",
+    "nota": "Nm 1:1: el día primero del mes segundo, en el segundo año de la salida."
+   },
+   {
+    "id": "ev-pascua-sinai",
+    "titulo": "Pascua en el desierto de Sinaí",
+    "tipo": "evento",
+    "ref": "Nm 9:1",
+    "pasaje": "nm-25",
+    "personas": [
+     "Moses_1"
+    ],
+    "depende_de": "ev-salida-egipto",
+    "pasos": [
+     {
+      "texto": "«el segundo año» (2) de la salida",
+      "signo": 1,
+      "ref": "Nm 9:1",
+      "cifra_texto": {
+       "TM": "en el segundo año",
+       "LXX": "in the second year"
+      }
+     },
+     {
+      "texto": "el primer año es el de la salida: se resta 1",
+      "signo": -1,
+      "ref": "Nm 9:1",
+      "convencion": true
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2669,
+     "TM|tare70|sem2|canaan": 2454,
+     "TM|tare70|noe500|egipto": 2667,
+     "TM|tare70|noe500|canaan": 2452,
+     "TM|tare130|sem2|egipto": 2729,
+     "TM|tare130|sem2|canaan": 2514,
+     "TM|tare130|noe500|egipto": 2727,
+     "TM|tare130|noe500|canaan": 2512,
+     "LXX|tare70|sem2|egipto": 4135,
+     "LXX|tare70|sem2|canaan": 3920,
+     "LXX|tare70|noe500|egipto": 4133,
+     "LXX|tare70|noe500|canaan": 3918,
+     "LXX|tare130|sem2|egipto": 4195,
+     "LXX|tare130|sem2|canaan": 3980,
+     "LXX|tare130|noe500|egipto": 4193,
+     "LXX|tare130|noe500|canaan": 3978
+    },
+    "certeza": "calculo",
+    "nota": "Nm 9:1-5: en el mes primero del segundo año, el día catorce."
+   },
+   {
+    "id": "ev-salida-sinai",
+    "titulo": "Israel parte del Sinaí",
+    "tipo": "evento",
+    "ref": "Nm 10:11",
+    "pasaje": "nm-28",
+    "personas": [
+     "Moses_1"
+    ],
+    "depende_de": "ev-salida-egipto",
+    "pasos": [
+     {
+      "texto": "«el segundo año» (2) de la salida",
+      "signo": 1,
+      "ref": "Nm 10:11",
+      "cifra_texto": {
+       "TM": "en el año segundo",
+       "LXX": "in the second year"
+      }
+     },
+     {
+      "texto": "el primer año es el de la salida: se resta 1",
+      "signo": -1,
+      "ref": "Nm 10:11",
+      "convencion": true
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2669,
+     "TM|tare70|sem2|canaan": 2454,
+     "TM|tare70|noe500|egipto": 2667,
+     "TM|tare70|noe500|canaan": 2452,
+     "TM|tare130|sem2|egipto": 2729,
+     "TM|tare130|sem2|canaan": 2514,
+     "TM|tare130|noe500|egipto": 2727,
+     "TM|tare130|noe500|canaan": 2512,
+     "LXX|tare70|sem2|egipto": 4135,
+     "LXX|tare70|sem2|canaan": 3920,
+     "LXX|tare70|noe500|egipto": 4133,
+     "LXX|tare70|noe500|canaan": 3918,
+     "LXX|tare130|sem2|egipto": 4195,
+     "LXX|tare130|sem2|canaan": 3980,
+     "LXX|tare130|noe500|egipto": 4193,
+     "LXX|tare130|noe500|canaan": 3978
+    },
+    "certeza": "calculo",
+    "nota": "Nm 10:11: el día veinte del mes segundo del año segundo."
+   },
+   {
+    "id": "ev-muerte-aaron",
+    "titulo": "Muere Aarón en el monte Hor",
+    "tipo": "muerte",
+    "ref": "Nm 33:38",
+    "pasaje": "nm-85",
+    "personas": [
+     "Aaron_1"
+    ],
+    "depende_de": "ev-salida-egipto",
+    "pasos": [
+     {
+      "texto": "la RV1909 dice que murió «á los cuarenta años de la salida» (40)",
+      "signo": 1,
+      "ref": "Nm 33:38",
+      "cifra_texto": {
+       "TM": "á los cuarenta años de la salida",
+       "LXX": "in the fortieth year"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2708,
+     "TM|tare70|sem2|canaan": 2493,
+     "TM|tare70|noe500|egipto": 2706,
+     "TM|tare70|noe500|canaan": 2491,
+     "TM|tare130|sem2|egipto": 2768,
+     "TM|tare130|sem2|canaan": 2553,
+     "TM|tare130|noe500|egipto": 2766,
+     "TM|tare130|noe500|canaan": 2551,
+     "LXX|tare70|sem2|egipto": 4173,
+     "LXX|tare70|sem2|canaan": 3958,
+     "LXX|tare70|noe500|egipto": 4171,
+     "LXX|tare70|noe500|canaan": 3956,
+     "LXX|tare130|sem2|egipto": 4233,
+     "LXX|tare130|sem2|canaan": 4018,
+     "LXX|tare130|noe500|egipto": 4231,
+     "LXX|tare130|noe500|canaan": 4016
+    },
+    "certeza": "calculo",
+    "nota": "Nm 33:38: en el mes quinto, el día primero. TM (RV1909): «á los cuarenta años de la salida»: 83 años en Ex 7:7 + 40 = 123, lo que dice Nm 33:39. LXX: «in the fortieth year» da 39 años desde la salida y 83 + 39 = 122; la diferencia de un año cabe en lo que el cálculo no cuenta (Ex 7:7 ocurre antes de la salida y Aarón muere en el mes quinto).",
+    "variantes": [
+     {
+      "cuando": {
+       "tradicion": "TM"
+      },
+      "pasos": [
+       {
+        "texto": "la RV1909 dice que murió «á los cuarenta años de la salida» (40)",
+        "signo": 1,
+        "ref": "Nm 33:38",
+        "cifra_texto": {
+         "TM": "á los cuarenta años de la salida",
+         "LXX": "in the fortieth year"
+        }
+       }
+      ]
+     },
+     {
+      "cuando": {
+       "tradicion": "LXX"
+      },
+      "pasos": [
+       {
+        "texto": "la LXX dice «in the fortieth year» (año 40 desde la salida)",
+        "signo": 1,
+        "ref": "Nm 33:38",
+        "cifra_texto": {
+         "TM": "á los cuarenta años de la salida",
+         "LXX": "in the fortieth year"
+        }
+       },
+       {
+        "texto": "el primer año es el de la salida: se resta 1",
+        "signo": -1,
+        "ref": "Nm 33:38",
+        "convencion": true
+       }
+      ]
+     }
+    ]
+   },
+   {
     "id": "ev-muerte-adan",
     "titulo": "Muere Adán",
     "tipo": "muerte",
@@ -60852,6 +83277,36 @@ window.BIBLIA_DATOS = {
     "ref": "Ex 32:1-6",
     "nota": "Entre la llegada al Sinaí y la erección del tabernáculo; sin cifra de año.",
     "pasaje": "ex-63"
+   },
+   {
+    "titulo": "Muere María (Miriam) en Cades",
+    "ref": "Nm 20:1",
+    "nota": "El texto da «el mes primero» pero no el año.",
+    "pasaje": "nm-50"
+   },
+   {
+    "titulo": "Los doce enviados reconocen la tierra",
+    "ref": "Nm 13:2-33",
+    "nota": "Números no da el año; Nm 13:26 (RV1909) dice que volvieron «al cabo de cuarenta días».",
+    "pasaje": "nm-33"
+   },
+   {
+    "titulo": "La rebelión de Coré, Datán y Abiram",
+    "ref": "Nm 16:1-35",
+    "nota": "Números no da el año.",
+    "pasaje": "nm-42"
+   },
+   {
+    "titulo": "La serpiente de bronce",
+    "ref": "Nm 21:4-9",
+    "nota": "Números no da el año; Nm 21:4 la sitúa después de partir del monte Hor.",
+    "pasaje": "nm-53"
+   },
+   {
+    "titulo": "Balac y Balaam",
+    "ref": "Nm 22:1-24:25",
+    "nota": "Números no da el año.",
+    "pasaje": "nm-56"
    }
   ]
  }

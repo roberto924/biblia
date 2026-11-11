@@ -48,7 +48,9 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "Convención del cálculo: una edad N al ocurrir algo se cuenta como N años después del nacimiento.",
          "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas.",
          "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años "
-         "de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7."]
+         "de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7.",
+         "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como "
+         "un año después de la salida, igual que Ex 40:17."]
 # Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
 F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
@@ -204,6 +206,28 @@ def definir(nombre):
               texto="«el segundo año» ({v}) desde la salida"),
             F(1, "Ex 40:17", signo=-1, texto="el primer año es el de la salida: se resta {v}")],
            "Ex 40:17: el día primero del primer mes del segundo año (la LXX añade «after their going forth out of Egypt»).")
+    # Números: fechas relativas a la salida (Nm 1:1; 9:1; 10:11; 33:38). Mismo convenio que Ex 40:17.
+    SEG = lambda ref, tm: [C(ref, {"TM": (tm, "segundo"), "LXX": ("in the second year", "second")},
+                             texto="«el segundo año» ({v}) de la salida"),
+                           F(1, ref, signo=-1, texto="el primer año es el de la salida: se resta {v}")]
+    evento("ev-censo-sinai", "Censo en el desierto de Sinaí", "evento", "Nm 1:1", ["Moses_1", "Aaron_1"], S,
+           SEG("Nm 1:1", "en el segundo año"), "Nm 1:1: el día primero del mes segundo, en el segundo año de la salida.")
+    evento("ev-pascua-sinai", "Pascua en el desierto de Sinaí", "evento", "Nm 9:1", ["Moses_1"], S,
+           SEG("Nm 9:1", "en el segundo año"), "Nm 9:1-5: en el mes primero del segundo año, el día catorce.")
+    evento("ev-salida-sinai", "Israel parte del Sinaí", "evento", "Nm 10:11", ["Moses_1"], S,
+           SEG("Nm 10:11", "en el año segundo"), "Nm 10:11: el día veinte del mes segundo del año segundo.")
+    C3338 = {"TM": ("á los cuarenta años de la salida", "cuarenta"), "LXX": ("in the fortieth year", "fortieth")}
+    ev.append(dict(id="ev-muerte-aaron", titulo="Muere Aarón en el monte Hor", tipo="muerte", ref="Nm 33:38",
+                   personas=["Aaron_1"], depende_de=S, margen_total=1,
+                   variantes=[({"tradicion": "TM"}, [
+                       C("Nm 33:38", C3338, texto="la RV1909 dice que murió «á los cuarenta años de la salida» ({v})")]),
+                       ({"tradicion": "LXX"}, [
+                           C("Nm 33:38", C3338, texto="la LXX dice «in the fortieth year» (año {v} desde la salida)"),
+                           F(1, "Nm 33:38", signo=-1, texto="el primer año es el de la salida: se resta {v}")])],
+                   nota=("Nm 33:38: en el mes quinto, el día primero. TM (RV1909): «á los cuarenta años de la salida»: "
+                         "83 años en Ex 7:7 + 40 = 123, lo que dice Nm 33:39. LXX: «in the fortieth year» da 39 años "
+                         "desde la salida y 83 + 39 = 122; la diferencia de un año cabe en lo que el cálculo no cuenta "
+                         "(Ex 7:7 ocurre antes de la salida y Aarón muere en el mes quinto).")))
     # Muertes de Gn 5 y 11
     for p in dict.fromkeys([x[0] for x in GN5] + ["Noah_1", "Shem_1", "Arpachshad_1", "Cainan_1", "Shelah_1"] + [x[0] for x in GN11] + ["Terah_1"]):
         if p == "Enoch_2":
@@ -236,6 +260,14 @@ HITOS_EX = [
     ("El paso del mar Bermejo", "Ex 14:21-31", "Ocurre poco después de la salida; el texto no da cifra de tiempo."),
     ("El becerro de oro", "Ex 32:1-6", "Entre la llegada al Sinaí y la erección del tabernáculo; sin cifra de año."),
 ]
+HITOS_NM = [
+    ("Muere María (Miriam) en Cades", "Nm 20:1", "El texto da «el mes primero» pero no el año."),
+    ("Los doce enviados reconocen la tierra", "Nm 13:2-33",
+     "Números no da el año; Nm 13:26 (RV1909) dice que volvieron «al cabo de cuarenta días»."),
+    ("La rebelión de Coré, Datán y Abiram", "Nm 16:1-35", "Números no da el año."),
+    ("La serpiente de bronce", "Nm 21:4-9", "Números no da el año; Nm 21:4 la sitúa después de partir del monte Hor."),
+    ("Balac y Balaam", "Nm 22:1-24:25", "Números no da el año."),
+]
 
 
 def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
@@ -262,7 +294,7 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
         if cita not in verso or num not in cita:
             errores.append(f"Constante no literal en {ref} ({trad}): {cita!r}")
             return None
-        frase = num.replace("first", "one").replace("second", "two").replace("segundo", "dos")
+        frase = num.replace("first", "one").replace("second", "two").replace("segundo", "dos").replace("fortieth", "forty")
         return numeral(frase, "es" if trad == "TM" else "en")
 
     # Citas del supuesto e430, verificadas contra el texto.
@@ -381,7 +413,8 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
             for c in combos:
                 a, b = E_[nac[p]]["anios"][cid(c)], d["anios"][cid(c)]
                 t = edad(p, "total", None, c["tradicion"])
-                if a is not None and b is not None and b - a != t:
+                margen = por_id[d["id"]].get("margen_total", 0)  # año que el cálculo no distingue (nota del evento)
+                if a is not None and b is not None and t is not None and not 0 <= t - (b - a) <= margen:
                     errores.append(f"Muerte ≠ nacimiento + total: {p} {cid(c)}")
     cron = {"unidad": "años desde la creación de Adán (cálculo)", "supuestos": SUPUESTOS, "notas": NOTAS,
             "combinaciones": [{"id": cid(c), "tradicion": c["tradicion"],
@@ -389,5 +422,5 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
                               for c in combos],
             "eventos": eventos,
             "hitos_sin_fecha": [{"titulo": t, "ref": r, "nota": NOTA_HITO_GN} for t, r in HITOS]
-                               + [{"titulo": t, "ref": r, "nota": n} for t, r, n in HITOS_EX]}
+                               + [{"titulo": t, "ref": r, "nota": n} for t, r, n in HITOS_EX + HITOS_NM]}
     return cron, vivos, usadas

@@ -54,6 +54,13 @@ HECHOS = {
         "escenario_lugar": ["sinai"],
         "principal": [("Aaron_1", "Lv", None), ("Nadab_1", "Lv", "Lv 10")],
     },
+    "Nm": {
+        "genealogia": [("Nm 1:5", "Nm 1:16"), ("Nm 13:4", "Nm 13:16"), ("Nm 26:5", "Nm 26:62"), ("Nm 34:19", "Nm 34:28")],
+        "aparece": [("Korah_3", "Nm 16:1"), ("Balaam_1", "Nm 22:7")],
+        "objeto_en": [("Nm 21:9", "serpiente de bronce")],
+        "escenario_lugar": ["monte-hor"],
+        "principal": [("Balaam_1", "Nm", None), ("Phinehas_1", "Nm", "Nm 25")],
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

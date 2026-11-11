@@ -27,7 +27,6 @@
     "Shiphrah_1",
     "Puah_1",
     "Jochebed_1",
-    "Miriam_1",
     "Hija_de_Faraon"
    ]
   },
@@ -735,28 +734,18 @@
   "Miriam_1": {
    "apariciones": [
     {
-     "inicio": "Ex 2:4",
-     "fin": "Ex 2:8"
-    },
-    {
      "inicio": "Ex 15:20",
      "fin": "Ex 15:21"
     }
    ],
    "menciones_posteriores": [],
-   "resumen": "Hermana de Aarón y de Moisés; vigiló la cesta junto al río y dirigió el canto de las mujeres tras el mar Rojo.",
+   "resumen": "Profetisa, hermana de Aarón y de Moisés; dirigió el canto de las mujeres tras el mar Bermejo.",
    "datos": [
     {
-     "texto": "La «hermana» que vigila al niño en Ex 2:4 es Miriam; el texto no la nombra hasta Ex 15:20",
+     "texto": "La tradición la identifica con la hermana sin nombre que vigila al niño Moisés; el texto no lo dice, por eso esa escena no cuenta como aparición suya",
      "certeza": "inferido",
      "ref": "Ex 2:4",
      "cita": "Y paróse una hermana suya á lo lejos"
-    },
-    {
-     "texto": "Ofreció llamar a una nodriza hebrea",
-     "certeza": "texto",
-     "ref": "Ex 2:7",
-     "cita": "¿Iré á llamarte un ama de las Hebreas"
     },
     {
      "texto": "Es llamada profetisa y hermana de Aarón (RV1909: «María»)",

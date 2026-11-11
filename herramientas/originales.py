@@ -1,4 +1,4 @@
-"""Fase 7b: textos originales y testigos de Génesis, Éxodo y Levítico.
+"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico y Números.
 
 Genera:
   datos/originales.js          window.BIBLIA_ORIGINALES (hebreo WLC, testigos, variantes, videos)
@@ -37,6 +37,7 @@ ARCHIVOS = {
     "oshb_gen": (GH + "openscriptures/morphhb/master/wlc/Gen.xml", "oshb_Gen.xml"),
     "oshb_exo": (GH + "openscriptures/morphhb/master/wlc/Exod.xml", "oshb_Exod.xml"),
     "oshb_lev": (GH + "openscriptures/morphhb/master/wlc/Lev.xml", "oshb_Lev.xml"),
+    "oshb_num": (GH + "openscriptures/morphhb/master/wlc/Num.xml", "oshb_Num.xml"),
     "tvtms": (TVTMS_URL, "tvtms.txt"),
     "swete_vers": (GH + "eliranwong/LXX-Swete-1930/master/00-Swete_versification.csv",
                    "swete_00-Swete_versification.csv"),
@@ -47,10 +48,11 @@ ARCHIVOS = {
 for _f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full"):
     ARCHIVOS["dss_" + _f] = (GH + "ETCBC/dss/master/tf/2.0/%s.tf" % _f, "dss_%s.tf" % _f)
 
-LIBROS = ("Gn", "Ex", "Lv")
-LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev"}          # códigos TVTMS / Swete
-OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv"}
-DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv"}            # códigos de libro en ETCBC/dss
+LIBROS = ("Gn", "Ex", "Lv", "Nm")
+LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num"}          # códigos TVTMS / Swete
+OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm"}
+DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm"}            # códigos de libro en ETCBC/dss
+OSIS_RE = "Gen|Exo|Lev|Num"                                   # libros TVTMS / Swete que se leen
 FALLOS = []
 ROLLOS_PRESENTES = set()          # nombres de rollo que aparecen en ETCBC/dss (lo llena leer_dss)
 
@@ -158,12 +160,12 @@ def leer_swete(ruta_vers, ruta_pal):
     fin_ot = None
     sel = []
     for n, (i, r) in enumerate(inicios):
-        m = re.match(r"(Gen|Exo|Lev)\.(\d+):(\d+)$", r)
+        m = re.match(r"(%s)\.(\d+):(\d+)$" % OSIS_RE, r)
         if m:
             sig = inicios[n + 1][0] if n + 1 < len(inicios) else None
             sel.append(((OSIS_LIBRO[m[1]], int(m[2]), int(m[3])), i, sig))
             fin_ot = sig
-        elif r.startswith(("Gen.", "Exo.", "Lev.")):
+        elif r.startswith(tuple(x + "." for x in OSIS_RE.split("|"))):
             fallo(f"Swete: etiqueta no reconocida {r}")
     palabras = {}
     with open(ruta_pal, encoding="utf-8") as f:
@@ -228,7 +230,7 @@ def parse_refs(token):
     base = re.sub(r"\[.*?\]", "", token).strip()
     if not base or base.startswith("Absent") or base == "Empty" or "Empty" in anot:
         return None, None, anot or base
-    m = re.match(r"(Gen|Exo|Lev)\.(.*)$", base)
+    m = re.match(r"(%s)\.(.*)$" % OSIS_RE, base)
     if not m:
         return None, None, "no reconocido: " + token
     lib = OSIS_LIBRO[m[1]]
@@ -262,7 +264,7 @@ def parse_refs(token):
 
 def evaluar_test(expr, trad):
     expr = expr.strip()
-    m = re.match(r"(Gen|Exo|Lev)\.(\d+):(\d+)(?:\.(\d+))?=(Last|Exist|NotExist)$", expr, re.I)
+    m = re.match(r"(%s)\.(\d+):(\d+)(?:\.(\d+))?=(Last|Exist|NotExist)$" % OSIS_RE, expr, re.I)
     if m:
         lib, c, v, s, que = OSIS_LIBRO[m[1]], int(m[2]), int(m[3]), m[4], m[5].lower()
         if que == "last":
@@ -271,13 +273,22 @@ def evaluar_test(expr, trad):
         if e is None:
             return True
         return e if que == "exist" else not e
-    m = re.match(r"(Gen|Exo|Lev)\.(\d+):(\d+)([<>])(Gen|Exo|Lev)\.(\d+):(\d+)$", expr)
-    if m:
-        a = trad.largo(OSIS_LIBRO[m[1]], int(m[2]), int(m[3]))
-        b = trad.largo(OSIS_LIBRO[m[5]], int(m[6]), int(m[7]))
+    un = r"(?:%s)\.\d+:\d+" % OSIS_RE
+    m = re.match(r"(%s(?:\+%s)*)([<>])(%s(?:\+%s)*)$" % (un, un, un, un), expr)
+    if m:                                              # largos de versículos (o sumas: «Num.1:32+Num.1:33>…»)
+        def suma(lado):
+            tot = 0
+            for p in lado.split("+"):
+                q = re.match(r"(\w+)\.(\d+):(\d+)$", p)
+                x = trad.largo(OSIS_LIBRO[q[1]], int(q[2]), int(q[3]))
+                if x is None:
+                    return None
+                tot += x
+            return tot
+        a, b = suma(m[1]), suma(m[3])
         if a is None or b is None:
             return True
-        return a < b if m[4] == "<" else a > b
+        return a < b if m[2] == "<" else a > b
     raise ValueError("TEST no reconocido: " + expr)
 
 
@@ -292,7 +303,7 @@ def leer_bloques_tvtms(ruta):
         cols = l.split("\t")
         if l.startswith("$"):
             b = None
-            if re.match(r"\$(Gen|Exo|Lev)\.", l):
+            if re.match(r"\$(%s)\." % OSIS_RE, l):
                 b = {"cab": [c.strip() for c in cols], "tests": [], "filas": []}
                 bloques.append(b)
             continue
@@ -330,6 +341,9 @@ def construir_mapa(bloques, nombre_col, trad_destino, trad_rv, orden_rv, estrict
         if forzada:
             col = cab.index(forzada[0])
         aproximada = False
+        if col is None and nombre_col != "Hebrew" and columna_valida(b, 1, trad_destino):
+            # ninguna columna griega cumple sus TEST pero la edición cumple los de la KJV: sigue ese orden (Nm 6:24-27 y 10:34-36 en Swete)
+            col = 1
         if col is None and not estricto:
             # ninguna columna cumple todos los TEST: se acepta la primera que cumple los de «=Last»
             col = next((n for n in cands if columna_valida(b, n, SoloUltimo(trad_destino))), None)
@@ -384,6 +398,48 @@ def construir_mapa(bloques, nombre_col, trad_destino, trad_rv, orden_rv, estrict
         if k not in cubiertos and k not in mapa:
             mapa[k] = [k]
     return mapa, notas
+
+
+# La RV1909 de eBible no sigue a la KJV (columna «English KJV» del TVTMS) en Nm 12:16–13:33 ni en Nm 29:40–30:16:
+# RV -> versículos KJV. Comprobado por contenido (anclas hebreas y griegas): RV 13:1 «movió el pueblo de Haseroth» = KJV y TM 12:16;
+# RV 13:33 reúne KJV 13:32-33; RV 30:1 «Y Moisés dijo» = KJV 29:40 = TM 30:1; RV 30:16 reúne KJV 30:15-16.
+def _rv_propia():
+    m = {("Nm", 12, 16): [], ("Nm", 13, 1): [("Nm", 12, 16)], ("Nm", 13, 33): [("Nm", 13, 32), ("Nm", 13, 33)],
+         ("Nm", 29, 40): [], ("Nm", 30, 1): [("Nm", 29, 40)], ("Nm", 30, 16): [("Nm", 30, 15), ("Nm", 30, 16)]}
+    for v in range(2, 33):
+        m[("Nm", 13, v)] = [("Nm", 13, v - 1)]
+    for v in range(2, 16):
+        m[("Nm", 30, v)] = [("Nm", 30, v - 1)]
+    return m
+
+
+RV_PROPIA = _rv_propia()
+NOTA_RV_PROPIA = {
+    13: ("La RV1909 (eBible) numera Nm 13 de otra forma que el TM y la KJV: su 13:1 es el 12:16 de ambos (su 12:16 queda vacío) "
+         "y su 13:33 reúne los versículos 13:32-33. Correspondencia propia sobre el TVTMS, comprobada por contenido."),
+    30: ("La RV1909 (eBible) numera Nm 30 como el TM (su 29:40 queda vacío), pero su 30:16 reúne los versículos 30:16-17 del TM "
+         "(30:15-16 de la KJV). Correspondencia propia sobre el TVTMS, comprobada por contenido."),
+}
+
+
+def aplicar_rv_propia(mapa, notas):
+    """Pasa el mapa (calculado como si la RV fuese la KJV) a la numeración propia de la RV en RV_PROPIA."""
+    base_m, base_n = dict(mapa), dict(notas)
+    for rv, kjvs in RV_PROPIA.items():
+        mapa.pop(rv, None)
+        notas.pop(rv, None)
+        if not kjvs:
+            continue                                   # versículo vacío en la RV: sin original
+        ds, faltan = [], [k for k in kjvs if k not in base_m]
+        for k in kjvs:
+            ds += base_m.get(k, [])
+        nota = NOTA_RV_PROPIA[rv[1] if rv[1] in NOTA_RV_PROPIA else rv[1] + 1]
+        if faltan:
+            notas[rv] = nota + " " + " ".join(base_n.get(k, "") for k in faltan)
+            continue
+        mapa[rv] = ds
+        extra = " ".join(base_n[k] for k in kjvs if k in base_n)
+        notas[rv] = nota + (" " + extra if extra else "")
 
 
 # ------------------------------------------------------------------ Rollos (ETCBC/dss, Abegg)
@@ -495,7 +551,7 @@ FUENTES = [
 CODICES = [
     {"id": "leningrado", "nombre": "Códice de Leningrado (Firkovich B 19 A)", "tipo": "codice", "idioma": "hebreo",
      "fecha": "1008 (o 1009) d. C.", "fecha_certeza": "colofón",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13"],
      "institucion": "Biblioteca Nacional de Rusia, San Petersburgo",
      "url": "https://archive.org/details/Leningrad_Codex", "uso": "solo_enlace",
      "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace.",
@@ -505,28 +561,28 @@ CODICES = [
      "contiene": [],
      "institucion": "Museo de Israel (Santuario del Libro), Jerusalén",
      "url": "https://www.aleppocodex.org/", "uso": "solo_enlace",
-     "nota": "NO conserva Génesis, Éxodo ni Levítico: le falta todo el Pentateuco hasta Dt 28:17. Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué los versículos exactos, por eso «contiene» va vacío.",
+     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué los versículos exactos, por eso «contiene» va vacío.",
      "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11"},
     {"id": "vaticano", "nombre": "Códice Vaticano (Vat. gr. 1209)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 300–350 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34"],
+     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13"],
      "institucion": "Biblioteca Apostólica Vaticana",
      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209", "uso": "solo_enlace",
-     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo y Levítico presentes). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma.",
+     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico y Números presentes). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma.",
      "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11"},
     {"id": "sinaitico", "nombre": "Códice Sinaítico", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 325–360 d. C.", "fecha_certeza": "datación paleográfica",
      "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30"],
      "institucion": "British Library, Biblioteca Universitaria de Leipzig, Monasterio de Santa Catalina y Biblioteca Nacional de Rusia (repartido)",
      "url": "https://codexsinaiticus.org/", "uso": "solo_enlace",
-     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas.",
+     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene». No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas.",
      "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11"},
     {"id": "alejandrino", "nombre": "Códice Alejandrino (Royal MS 1 D V–VIII)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 400–440 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13"],
      "institucion": "British Library, Londres",
      "url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_V", "uso": "solo_enlace",
-     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo y Levítico presentes; la fuente no los nombra). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I.",
+     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico y Números presentes; la fuente no los nombra ni cita daños en Números). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I.",
      "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11"},
     {"id": "samaritano-cul-add1846", "nombre": "Pentateuco Samaritano, Cambridge University Library Add. 1846", "tipo": "pentateuco_samaritano",
      "idioma": "hebreo (escritura samaritana)",
@@ -534,7 +590,7 @@ CODICES = [
      "contiene": [],
      "institucion": "Cambridge University Library",
      "url": "https://cudl.lib.cam.ac.uk/view/MS-ADD-01846", "uso": "solo_enlace",
-     "nota": "Considerado el manuscrito conservado más antiguo del Pentateuco Samaritano. Lleva una nota de un escriba que cuenta cómo se salvó de un incendio en 1201. La ficha de Cambridge Digital Library devolvió 403 a la consulta automática: no confirmé el contenido por versículos (tampoco el de Levítico), por eso «contiene» va vacío.",
+     "nota": "Considerado el manuscrito conservado más antiguo del Pentateuco Samaritano. Lleva una nota de un escriba que cuenta cómo se salvó de un incendio en 1201. La ficha de Cambridge Digital Library devolvió 403 a la consulta automática: no confirmé el contenido por versículos (tampoco el de Levítico ni el de Números), por eso «contiene» va vacío.",
      "fuente": "Catálogo de Cambridge University Library (vía buscador, 2026-11-11); no abierto directamente"},
 ]
 
@@ -587,6 +643,13 @@ ROLLOS = [
     (["6Q2"], "6QpaleoLev", "6Q2-1", "Early Hellenistic", "Baillet 1962, DJD 3: 106", "paleohebrea"),
     (["11Q1"], "11QpaleoLev-a", "11Q1-1", "Herodian", "Tigchelaar 1997, RevQ 18: 325-330; Freedman y Mathews 1985, The Paleo-Hebrew Leviticus Scroll; Puech 1989, RB 96", "paleohebrea"),
     (["11Q2"], "11QLev-b", "11Q2-1", "Herodian", "García Martínez, Tigchelaar y van der Woude 1998, DJD 23: 1-9", "cuadrada"),
+    # Números (fichas de la Leon Levy leídas el 2026-11-11: campos «copy», «period», «script_type» y «official_publications»)
+    (["2Q6"], "2QNum-a", "2Q6-1", "Herodian", "Baillet 1962, DJD 3: 57-58", "cuadrada"),
+    (["2Q7"], "2QNum-b", "2Q7-1", "Herodian", "Baillet 1962, DJD 3: 58-59", "cuadrada"),
+    (["2Q8"], "2QNum-c", "2Q8-1", "Herodian", "Baillet 1962, DJD 3: 59", "cuadrada"),
+    (["2Q9"], "2QNum-d(?)", "2Q9-1", "Hellenistic-Roman", "Baillet 1962, DJD 3: 59-60", "cuadrada"),
+    (["2Q29"], "2Q29", "2Q29-1", "Hellenistic-Roman", "Baillet 1962, DJD 3: 92", "cuadrada"),
+    (["4Q27"], "4QNum-b", "4Q27-1", "Herodian", "Jastram 1994, DJD 12: 205-267", "cuadrada"),
     (["4Q156"], "4QtgLev", "4Q156-1", "Hasmonean", "Milik 1977, DJD 6: 86-89; Beyer 1984, Die aramäischen Texte: 278-280", "cuadrada"),
 ]
 # Rollos sin ficha propia en la Leon Levy o con datos especiales (idioma, contenido no calculable, notas).
@@ -597,8 +660,9 @@ ROLLO_EXTRA = {
     "4Q156": {"idioma": "arameo (targum)", "sin_calculo": True,
               "nota": "Targum (traducción aramea) de Levítico. Está en los datos de Abegg (ETCBC/dss), pero sin referencia de libro, capítulo y versículo, "
                       "así que no se calcula qué versículos contiene: «contiene» va vacío. La fecha es la etiqueta paleográfica de la Leon Levy Library, no una fecha numérica."},
-    "1Q3": {"nota": " Según su nombre en la Leon Levy (paleoLev-Num) contiene también Números, fuera de los libros de esta app."},
-    "4Q23": {"nota": " Según su nombre en la Leon Levy (Lev-Num) contiene también Números, fuera de los libros de esta app."},
+    "2Q9": {"nota": " La Leon Levy lo titula «2Q Numbers(?)» (copia «d»): la identificación con Números es dudosa en la propia ficha."},
+    "2Q29": {"nota": " La Leon Levy lo cataloga como «2Q Unidentified» (sin libro ni copia); que contenga Nm 23 es la asignación de los datos de Abegg (inferido). "
+                     "Por eso la sigla es solo el número."},
 }
 
 # Bloques del TVTMS donde la columna elegida por los TEST no encaja con el contenido de Swete.
@@ -617,6 +681,10 @@ ANCLAS_GRIEGO = {
     # Levítico (Swete numera Lv 7:1-10 RV como 6:31-40 y Lv 7:11-38 RV como 7:1-28)
     ("Lv", 7, 1): ("culpa", "πλημμελίας"), ("Lv", 7, 11): ("paces", "σωτηρίου"), ("Lv", 7, 38): ("Sinaí", "Σεινά"),
     ("Lv", 11, 7): ("puerco", "ὗν"), ("Lv", 16, 8): ("Azazel", "ἀποπομπαίῳ"), ("Lv", 19, 18): ("amarás á tu prójimo", "ἀγαπήσεις τὸν πλησίον"),
+    # Números (Swete numera RV 1:24-37 en otro orden, 13:1 = KJV 12:16 y reparte 13:33 y 30:16 en dos versículos)
+    ("Nm", 1, 24): ("Gad", "Γὰδ"), ("Nm", 6, 24): ("Jehová te bendiga", "Εὐλογήσαι σε Κύριος"), ("Nm", 10, 35): ("Levántate", "Ἐξεγέρθητι"),
+    ("Nm", 13, 1): ("Haseroth", "Ἁσηρώθ"), ("Nm", 13, 33): ("gigantes", "γίγαντας"), ("Nm", 21, 9): ("serpiente de metal", "ὄφιν χαλκοῦν"),
+    ("Nm", 22, 28): ("asna", "ὄνου"), ("Nm", 30, 16): ("ordenanzas", "δικαιώματα"),
 }
 
 # Anclas de contenido del hebreo (consonantes): RV -> (palabra en la RV, palabra en el hebreo asignado)
@@ -624,6 +692,12 @@ ANCLAS_HEBREO = {
     ("Lv", 6, 2): ("prójimo", "בעמיתו"),         # TM 5:21
     ("Lv", 6, 9): ("holocausto", "העלה"),        # TM 6:2
     ("Lv", 16, 8): ("Azazel", "לעזאזל"),
+    ("Nm", 13, 1): ("Haseroth", "מחצרות"),       # TM 12:16
+    ("Nm", 13, 33): ("gigantes", "הנפילים"),     # TM 13:32-33
+    ("Nm", 16, 48): ("mortandad", "המגפה"),      # TM 17:13
+    ("Nm", 17, 8): ("almendras", "שקדים"),       # TM 17:23
+    ("Nm", 26, 1): ("mortandad", "המגפה"),       # TM 25:19-26:1
+    ("Nm", 30, 16): ("ordenanzas", "החקים"),     # TM 30:16-17
 }
 
 # RV -> (Swete, palabra que debe estar en el griego, palabra que debe estar en la RV)
@@ -642,6 +716,8 @@ VIDEOS = [
     ("Ex", "13zKQAlBHpg", "El tema principal del libro de Éxodo • parte 2 • Serie de la Torá • (episodio 4)", "Ex 1:1-Ex 40:38", "libro entero (tema)"),
     ("Lv", "vKT8eo3hAMw", "Resumen del libro de Levítico: un panorama completo animado", "Lv 1:1-Lv 27:34", "inferido"),
     ("Lv", "xkIZrB0PXg8", "¿Estás evitando el libro de Levítico? • Lo analizamos para ti (Serie de la Torá Ep.5)", "Lv 1:1-Lv 27:34", "libro entero (tema)"),
+    ("Nm", "dtfbSxNecMk", "Resumen del libro de Números: un panorama completo animado", "Nm 1:1-Nm 36:13", "inferido"),
+    ("Nm", "IhW7gXB3o8I", "El tema principal del libro de Números • Serie de la Torá • (episodio 6)", "Nm 1:1-Nm 36:13", "libro entero (tema)"),
 ]
 VIDEOS_DESCARTADOS = {"y2pED55wMM4": "Errata del informe de fuentes: oEmbed responde 404. El ID correcto del resumen de Éxodo (parte 1) es y9pED55wMM4."}
 
@@ -691,32 +767,48 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8")
     orden_rv, texto_rv = leer_rv()
     indice = {k: n for n, k in enumerate(orden_rv)}
-    conteo_rv = {lib: sum(1 for k in orden_rv if k[0] == lib) for lib in LIBROS}
+    conteo_rv = {lib: sum(1 for k in orden_rv if k[0] == lib and texto_rv[k]) for lib in LIBROS}   # sin los versículos vacíos
+    vacios_rv = [k for k in orden_rv if not texto_rv[k]]
 
     heb = {}
     heb.update(leer_oshb(obtener("oshb_gen", sin_red), "Gn"))
     heb.update(leer_oshb(obtener("oshb_exo", sin_red), "Ex"))
     heb.update(leer_oshb(obtener("oshb_lev", sin_red), "Lv"))
+    heb.update(leer_oshb(obtener("oshb_num", sin_red), "Nm"))
     gr = leer_swete(obtener("swete_vers", sin_red), obtener("swete_pal", sin_red))
     bloques = leer_bloques_tvtms(obtener("tvtms", sin_red))
     t_rv, t_heb, t_gr = Tradicion(texto_rv), Tradicion(heb), Tradicion(gr)
 
     # ---- hebreo: mapa RV -> TM
     mapa_h, notas_h = construir_mapa(bloques, "Hebrew", t_heb, t_rv, orden_rv, estricto=True)
+    aplicar_rv_propia(mapa_h, notas_h)
+    if sorted(vacios_rv) != sorted(k for k, v in RV_PROPIA.items() if not v):
+        fallo(f"versículos vacíos de la RV inesperados: {[ref(*k) for k in vacios_rv]}")
     hebreo, sin_hebreo = {}, {}
     usados_h = {}
     for k in orden_rv:
         ds = mapa_h.get(k)
-        if not ds or len(ds) != 1 or ds[0] not in heb:
+        if not texto_rv[k]:                              # versículo vacío en la RV (su texto está en otro): sin hebreo
+            if ds:
+                fallo(f"versículo vacío {ref(*k)} con hebreo asignado")
+            continue
+        if not ds or not all(d in heb for d in ds):
             sin_hebreo[ref(*k)] = notas_h.get(k, "sin correspondencia en el TVTMS")
             continue
-        d = ds[0]
-        if d in usados_h:
-            fallo(f"hebreo {ref(*d)} asignado a {ref(*usados_h[d])} y a {ref(*k)}")
-        usados_h[d] = k
-        e = {"t": heb[d]}
-        if d != k:
-            e["r"] = ref(*d)
+        for d in ds:
+            if d in usados_h:
+                fallo(f"hebreo {ref(*d)} asignado a {ref(*usados_h[d])} y a {ref(*k)}")
+            usados_h[d] = k
+        e = {"t": " ".join(heb[d] for d in ds)}
+        if ds != [k]:
+            if len(ds) > 1:                              # varios versículos hebreos seguidos en uno de la RV
+                orden_h = sorted(heb)
+                if any(orden_h.index(b) != orden_h.index(a) + 1 for a, b in zip(ds, ds[1:])):
+                    fallo(f"{ref(*k)}: versículos hebreos no seguidos {ds}")
+                a, z = ds[0], ds[-1]
+                e["r"] = f"{a[0]} {a[1]}:{a[2]}-" + (f"{z[2]}" if z[1] == a[1] else f"{z[1]}:{z[2]}")
+            else:
+                e["r"] = ref(*ds[0])
         hebreo[ref(*k)] = e
     sobrantes_h = [ref(*d) for d in heb if d not in usados_h]
     if sobrantes_h:
@@ -728,6 +820,7 @@ def main():
 
     # ---- griego: mapa RV -> Swete
     mapa_g, notas_g = construir_mapa(bloques, "Greek", t_gr, t_rv, orden_rv, estricto=False)
+    aplicar_rv_propia(mapa_g, notas_g)
     for k, (d, pal_gr, pal_rv) in CORRECCIONES_GRIEGO.items():
         if pal_gr in gr.get(d, "") and pal_rv in texto_rv[k] and k not in mapa_g:
             mapa_g[k] = [d]
@@ -740,6 +833,10 @@ def main():
     usos_g = {}
     for k in orden_rv:
         ds = mapa_g.get(k)
+        if not texto_rv[k]:                              # versículo vacío en la RV: ni griego ni «sin_texto»
+            if ds:
+                fallo(f"versículo vacío {ref(*k)} con griego asignado")
+            continue
         if not ds or not all(d in gr for d in ds):
             sin_griego[ref(*k)] = notas_g.get(k) or "la edición de Swete no tiene este versículo con esa numeración"
             continue
@@ -947,9 +1044,16 @@ def main():
     for rv_r, he_r in (("Gn 31:55", "Gn 32:1"), ("Ex 8:1", "Ex 7:26"), ("Ex 8:4", "Ex 7:29"), ("Ex 22:1", "Ex 21:37"),
                        ("Gn 32:1", "Gn 32:2"), ("Ex 8:5", "Ex 8:1"), ("Ex 22:2", "Ex 22:1"),
                        ("Lv 6:1", "Lv 5:20"), ("Lv 6:7", "Lv 5:26"), ("Lv 6:8", "Lv 6:1"), ("Lv 6:30", "Lv 6:23"),
-                       ("Lv 5:19", None), ("Lv 7:1", None)):
+                       ("Lv 5:19", None), ("Lv 7:1", None),
+                       ("Nm 12:15", None), ("Nm 13:1", "Nm 12:16"), ("Nm 13:2", "Nm 13:1"), ("Nm 13:32", "Nm 13:31"), ("Nm 13:33", "Nm 13:32-33"),
+                       ("Nm 16:35", None), ("Nm 16:36", "Nm 17:1"), ("Nm 16:50", "Nm 17:15"), ("Nm 17:1", "Nm 17:16"), ("Nm 17:13", "Nm 17:28"),
+                       ("Nm 25:18", None), ("Nm 26:1", "Nm 25:19-26:1"), ("Nm 26:2", None), ("Nm 29:39", None), ("Nm 30:1", None),
+                       ("Nm 30:15", None), ("Nm 30:16", "Nm 30:16-17")):
         if renum_h.get(rv_r) != he_r:
             fallo(f"numeración: RV {rv_r} debería ser hebreo {he_r}, es {renum_h.get(rv_r)}")
+    for r in ("Nm 12:16", "Nm 29:40"):                      # vacíos en la RV: ni hebreo ni griego ni «sin_texto»
+        if r in hebreo or r in griego or r in sin_griego:
+            fallo(f"{r} (vacío en la RV) no debería tener original")
     for k, (p_rv, p_he) in ANCLAS_HEBREO.items():
         if p_rv not in texto_rv[k] or p_he not in consonantes(hebreo.get(ref(*k), {}).get("t", "")).split():
             fallo(f"ancla hebrea {ref(*k)}: se esperaba «{p_rv}» en la RV y «{p_he}» en el hebreo")
@@ -998,7 +1102,7 @@ def main():
                    "y lo suple con otro uncial (sobre todo el Alejandrino) donde falta, como en Gn 1:1–46:28."),
         "licencia": "GPL-3.0 (texto de Swete 1930 en dominio público; digitalización GPL)",
         "url": "https://github.com/eliranwong/LXX-Swete-1930",
-        "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40 y Lv 7 difiere de la RV: "
+        "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7 y Nm 1, 13 y 30 difiere de la RV: "
                  "la correspondencia se toma del TVTMS (STEPBible, CC BY 4.0), eligiendo en cada bloque la columna griega cuyos TEST cumple esta edición. "
                  "«ref_griega» da la referencia de Swete cuando difiere; «sin_texto» lista los versículos RV sin equivalente completo en la LXX, con el motivo."),
         "texto": griego,
@@ -1013,7 +1117,7 @@ def main():
     t2 = escribir_js(DATOS / "griego-swete.js", cab_g, "BIBLIA_GRIEGO", griego_obj)
     lic = obtener("swete_lic", sin_red).read_text(encoding="utf-8")
     (DATOS / "LICENCIA-griego-swete.txt").write_text(
-        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo y Levítico)\n\n"
+        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico y Números)\n\n"
         "Texto: H. B. Swete, The Old Testament in Greek according to the Septuagint, Cambridge University Press (ed. 1930). Dominio público.\n"
         "Digitalización: LXX-Swete-1930, Eliran Wong (https://github.com/eliranwong/LXX-Swete-1930), licencia GNU GPL-3.0.\n"
         "Modificaciones: palabras unidas por versículo y claves pasadas a la numeración de la RV1909 con el TVTMS (STEPBible, CC BY 4.0).\n"

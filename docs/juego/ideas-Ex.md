@@ -6,7 +6,7 @@ Las historias son las de `herramientas/juego/Ex.json`. Donde una historia es lar
 
 ## 1. Opresión en Egipto y nacimiento de Moisés (Ex 1:1–2:10)
 - **Parteras en la sombra** (decisiones, Ex 1:15-21). Juegas con Sifra y Fúa: llegan mensajeros del rey y debes elegir qué responder a cada visita sin que el «nivel de sospecha» llegue al tope, mientras los niños a tu cargo siguen a salvo. Personajes: Sifra, Fúa, Faraón. Escenario: palacio de Faraón.
-- **Río abajo** (destreza, Ex 2:3-10). Guías la arquilla de juncos esquivando remolinos y cañas mientras Miriam camina por la orilla vigilando; la partida termina cuando la cesta llega al carrizal. Objeto: arquilla de juncos. Personajes: Jocabed, Miriam, hija de Faraón.
+- **Río abajo** (destreza, Ex 2:3-10). Guías la arquilla de juncos esquivando remolinos y cañas mientras la hermana del niño (sin nombre en el texto; la tradición dice Miriam) camina por la orilla vigilando; la partida termina cuando la cesta llega al carrizal. Objeto: arquilla de juncos. Personajes: Jocabed, hija de Faraón.
 
 ## 2. Moisés en Egipto (Ex 2:11–15:21)
 - **El pozo de Madián** (reacción, Ex 2:16-17). Rechazas a los pastores que empujan, mientras llenas las pilas de las siete hijas antes de que se acabe el tiempo. Escenario: Madián y el pozo.

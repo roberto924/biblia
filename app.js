@@ -539,7 +539,7 @@ const Nucleo = (() => {
     const out = [];
     for (const c of ((d && d.capitulos) || [])) {
       const lb = libroIdDe(d, c.libro), o = ordDe(lb) * 1e6;
-      for (const v of (c.versiculos || [])) out.push({ libro: lb, cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n, lb), clave: o + c.cap * 1000 + v.n });
+      for (const v of (c.versiculos || [])) out.push(Object.assign({ libro: lb, cap: c.cap, n: v.n, texto: v.texto || '', ref: refTxt(c.cap, v.n, lb), clave: o + c.cap * 1000 + v.n }, !v.texto && v.nota ? { nota: v.nota } : {}));
     }
     return out.sort((x, y) => x.clave - y.clave);
   });
@@ -1182,9 +1182,12 @@ const Nucleo = (() => {
     return ((O && O.variantes) || []).filter(v => { const c = rangoClaves(v.ref); if (!c) return false; for (const k of ks) if (k >= c.a && k <= c.b) return true; return false; });
   }
   // Ref de la numeración hebrea solo cuando difiere de la de la RV ("Gn 31:55" → "Gn 32:1"); null si coincide o falta.
+  // Si a un versículo RV le corresponden varios hebreos, r es un tramo ("Nm 13:32-33" → "13:32–33"; "Nm 25:19-26:1" → "25:19–26:1").
   function numeracionHebrea(ref, r) {
     if (!r) return null;
     const a = parseRef(ref), b = parseRef(r);
+    const tramo = /:\s*\d+\s*-\s*\d/.test(String(r)) ? String(r).replace(/^[^\d]*(?=\d+\s*:)/, '').replace(/\s*-\s*/, '–') : null;
+    if (tramo && a && b && a.libro === b.libro) return tramo;
     if (!a || !b || (a.libro === b.libro && a.cap === b.cap && a.v === b.v)) return null;
     return a.libro === b.libro ? `${b.cap}:${b.v}` : `${b.libro} ${b.cap}:${b.v}`;
   }
@@ -1193,7 +1196,7 @@ const Nucleo = (() => {
     const H = (O && O.hebreo) || {}, T = (G && G.texto) || {};
     return versiculosDe(d, pasaje).map(v => {
       const h = H[v.ref];
-      return { ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he: (h && h.t) || null, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr: T[v.ref] || null };
+      return Object.assign({ ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he: (h && h.t) || null, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr: T[v.ref] || null }, v.nota ? { nota: v.nota } : {});
     });
   }
   const videosDeLibro = (O, libro) => ((O && O.videos) || []).filter(v => libroCanon(v.libro) === libroCanon(libro) && esIdYoutube(v.youtube_id));
@@ -1780,7 +1783,7 @@ if (typeof document !== 'undefined') (function () {
       const cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : '';
       capPrev = v.cap;
       const segs = N.segmentar(D, v.ref, v.texto);
-      const partes = segs.map((s, si) => {
+      const partes = !v.texto && v.nota ? `<span class="meta">${esc(v.nota)}</span>` : segs.map((s, si) => {
         if (s.lugar) return `<button type="button" class="mencion-lugar" data-lugar="${esc(s.lugar)}">${esc(s.texto)}</button>`;
         if (s.persona) { const per = N.persona(D, s.persona) || {}; return `<button type="button" class="mencion${per.sexo === 'f' ? ' mujer' : ''}" data-persona="${esc(s.persona)}">${esc(s.texto)}</button>`; }
         if (j === 0 && si === 0 && s.texto) { const t = s.texto.trimStart(), c = Array.from(t)[0] || ''; return `<span class="capitular" aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c)}</span>${esc(t.slice(c.length))}`; }
@@ -2210,7 +2213,7 @@ if (typeof document !== 'undefined') (function () {
         const attrs = c === 'he' ? ' lang="he" dir="rtl"' : c === 'gr' ? ' lang="grc"' : '';
         const num = c === 'he' && f.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">Heb. ${esc(f.heNum)}</span>` : '';
         const nt = c === 'rv' ? NTc[f.ref] : null; // subrayado del lector (Tu nota se ve y edita en la lectura normal)
-        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : 'Sin texto en los datos'}</p>`}</div>`;
+        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : c === 'rv' && f.nota ? esc(f.nota) : 'Sin texto en los datos'}</p>`}</div>`;
       };
       return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>${nota}`;
     }).join('');

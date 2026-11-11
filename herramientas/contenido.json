@@ -385,6 +385,139 @@
    "categoria": "crueldad",
    "nivel": "medio",
    "motivo": "La persona dada por anatema no será rescatada: ha de morir."
+  },
+  {
+   "desde": "Nm 5:11",
+   "hasta": "Nm 5:31",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley de los celos: rito cuando un marido sospecha que su mujer se ha acostado con otro."
+  },
+  {
+   "desde": "Nm 11:33",
+   "hasta": "Nm 11:33",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehová hiere al pueblo con una plaga muy grande mientras comen las codornices."
+  },
+  {
+   "desde": "Nm 14:37",
+   "hasta": "Nm 14:37",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Los enviados que hablaron mal de la tierra mueren de plaga."
+  },
+  {
+   "desde": "Nm 14:45",
+   "hasta": "Nm 14:45",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Amalecitas y cananeos hieren y derrotan a los israelitas hasta Horma."
+  },
+  {
+   "desde": "Nm 15:32",
+   "hasta": "Nm 15:36",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "El hombre que recogía leña en sábado es apedreado fuera del campamento."
+  },
+  {
+   "desde": "Nm 16:31",
+   "hasta": "Nm 16:35",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "La tierra se abre y traga a Coré, Datán y Abiram con sus casas; un fuego consume a doscientos cincuenta hombres."
+  },
+  {
+   "desde": "Nm 16:46",
+   "hasta": "Nm 16:49",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Mortandad en el pueblo: mueren catorce mil setecientos."
+  },
+  {
+   "desde": "Nm 21:3",
+   "hasta": "Nm 21:3",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Israel destruye a los cananeos y sus ciudades (Horma)."
+  },
+  {
+   "desde": "Nm 21:6",
+   "hasta": "Nm 21:6",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Serpientes ardientes muerden al pueblo y muere mucha gente."
+  },
+  {
+   "desde": "Nm 21:24",
+   "hasta": "Nm 21:24",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Israel hiere a Sehón a filo de espada."
+  },
+  {
+   "desde": "Nm 21:35",
+   "hasta": "Nm 21:35",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Israel hiere a Og, a sus hijos y a toda su gente sin que quede uno."
+  },
+  {
+   "desde": "Nm 25:1",
+   "hasta": "Nm 25:3",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "El pueblo fornica con las hijas de Moab y se une a Baal-peor."
+  },
+  {
+   "desde": "Nm 25:4",
+   "hasta": "Nm 25:5",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Orden de ahorcar a los príncipes del pueblo y de matar a los que se unieron a Baal-peor."
+  },
+  {
+   "desde": "Nm 25:6",
+   "hasta": "Nm 25:9",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Finees atraviesa con una lanza a un israelita y a una madianita en la tienda; mueren veinticuatro mil en la mortandad."
+  },
+  {
+   "desde": "Nm 31:7",
+   "hasta": "Nm 31:11",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Guerra contra Madián: matan a los varones y a los cinco reyes, queman las ciudades y toman cautivos."
+  },
+  {
+   "desde": "Nm 31:15",
+   "hasta": "Nm 31:18",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Moisés manda matar a los niños varones y a las mujeres cautivas, y reservar vivas a las muchachas."
+  },
+  {
+   "desde": "Nm 31:35",
+   "hasta": "Nm 31:35",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Entre el botín se cuentan treinta y dos mil muchachas cautivas."
+  },
+  {
+   "desde": "Nm 35:16",
+   "hasta": "Nm 35:21",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Leyes sobre el homicida: será muerto; el vengador de la sangre lo matará."
+  },
+  {
+   "desde": "Nm 35:30",
+   "hasta": "Nm 35:31",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "El homicida morirá por dicho de testigos; no se acepta rescate por su vida."
   }
  ]
 }

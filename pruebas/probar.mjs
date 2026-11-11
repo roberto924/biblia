@@ -633,7 +633,7 @@ if (existsSync(real)) {
   });
   if ((D2.libros || []).some(l => l.id === 'Lv')) {
     prueba('Levítico: selector de libro y plan por secciones', () => {
-      assert.deepEqual(j(N2.libros(D2)).map(l => l.id), ['Gn', 'Ex', 'Lv']);
+      assert.deepEqual(j(N2.libros(D2)).map(l => l.id).slice(0, 3), ['Gn', 'Ex', 'Lv']);
       assert.equal(N2.nombreLibro(D2, 'Lv'), 'Levítico');
       assert.equal(N2.parseRef('Levítico 24:11').libro, 'Lv');
       assert.ok(N2.clave('Lv 1:1') > N2.clave('Ex 40:38'));
@@ -662,6 +662,50 @@ if (existsSync(real)) {
       assert.equal(NC.accionVerso(CR, nino, 'Lv 24:16').accion, 'nota');
       assert.equal(NC.marcaDe(CR, 'Lv 10:3'), null);
       assert.equal(NC.marcaDe(CR, 'Lv 1:5'), null, 'los sacrificios no se marcan (misma escala que Éxodo)');
+    });
+  }
+  if ((D2.libros || []).some(l => l.id === 'Nm')) {
+    prueba('Números: selector, plan por 8 secciones y lector sin huecos (versículos vacíos con nota)', () => {
+      assert.deepEqual(j(N2.libros(D2)).map(l => l.id).slice(0, 4), ['Gn', 'Ex', 'Lv', 'Nm']);
+      assert.equal(N2.nombreLibro(D2, 'Nm'), 'Números');
+      assert.equal(N2.parseRef('Números 13:17').libro, 'Nm');
+      assert.ok(N2.clave('Nm 1:1') > N2.clave('Lv 27:34'));
+      const s = j(N2.seccionesPlan(D2, ['nm-01'], 'nm-02', 'Nm'));
+      assert.equal(s.length, 8); assert.ok(s.every(g => g.libro === 'Nm'));
+      assert.equal(s.reduce((n, g) => n + g.total, 0), D2.pasajes.filter(p => p.libro === 'Nm').length);
+      const vs = N2.pasajes(D2).filter(p => N2.libroDe(p) === 'Nm').flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 1288); assert.equal(new Set(vs.map(v => v.ref)).size, 1288);
+      assert.equal(vs[0].ref, 'Nm 1:1'); assert.equal(vs[vs.length - 1].ref, 'Nm 36:13');
+      const v = vs.find(x => x.ref === 'Nm 12:16');
+      assert.equal(v.texto, ''); assert.ok(/Nm 13:1/.test(v.nota), 'el versículo vacío dice dónde está su texto');
+      assert.equal(vs.find(x => x.ref === 'Nm 12:15').nota, undefined);
+    });
+    prueba('Números: homónimos en el lector (Coré, Eliab, Milca, Hur, Josué = Oseas)', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => x.ref === r); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona).map(x => [x.texto, x.persona]); };
+      const s161 = seg('Nm 16:1');
+      assert.deepEqual(s161.slice(0, 4), [['CORÉ', 'Korah_3'], ['Ishar', 'Izhar_1'], ['Coath', 'Kohath_1'], ['Leví', 'Levi_1']]);
+      assert.ok(s161.some(x => x[0] === 'Eliab' && x[1] === 'Eliab_2'), 'Eliab de Rubén, no el de Zabulón');
+      assert.ok(seg('Nm 27:1').some(x => x[0] === 'Milca' && x[1] === 'Milcah_2'), 'Milca hija de Zelofehad');
+      assert.ok(seg('Nm 31:8').some(x => x[0] === 'Hur' && x[1] === 'Hur_2'), 'Hur rey de Madián');
+      assert.ok(seg('Nm 13:17').some(x => x[0] === 'Oseas' && x[1] === 'Joshua_1'));
+    });
+    prueba('Números: mapa (Cades, monte Hor) y tiempo (muerte de Aarón, 123 años)', () => {
+      const ls = j(N2.lugaresDePasaje(D2, N2.pasajeDe(D2, 'Nm 20:22')));
+      assert.ok(ls.includes('monte-hor'), 'monte Hor en el pasaje de la muerte de Aarón');
+      assert.ok(j(N2.lugaresDeRefs(D2, ['Nm 20:1'])).includes('cades'));
+      assert.ok(['alta', 'media', 'baja'].includes(N2.confianzaLugar(N2.lugar(D2, 'monte-hor'))));
+      const tm = 'TM|tare70|sem2|egipto';
+      assert.equal(N2.anioEvento(D2, 'ev-muerte-aaron', tm) - N2.anioEvento(D2, 'ev-nac-aaron', tm), 123);
+      assert.equal(N2.anioEvento(D2, 'ev-censo-sinai', tm) - N2.anioEvento(D2, 'ev-salida-egipto', tm), 1);
+      assert.ok(j(N2.eventosDePasaje(D2, N2.pasajeDe(D2, 'Nm 33:38'))).some(e => e.id === 'ev-muerte-aaron'));
+    });
+    const rc2 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc2)) prueba('Números: marcas de contenido (Madián alta, Coré medio)', () => {
+      const cr = cargar(rc2, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      assert.equal(NC.marcaDe(CR, 'Nm 31:17').nivel, 'alto');
+      assert.equal(NC.marcaDe(CR, 'Nm 16:32').categoria, 'violencia'); assert.equal(NC.marcaDe(CR, 'Nm 16:32').nivel, 'medio');
+      assert.equal(NC.marcaDe(CR, 'Nm 5:20').categoria, 'sexual');
+      assert.equal(NC.marcaDe(CR, 'Nm 6:24'), null);
     });
   }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
@@ -753,6 +797,29 @@ if (existsSync(real)) {
         assert.ok(!ids(['Ex 40:38']).includes('4Q156'), 'el targum sin contenido calculado no se atribuye a ningún pasaje');
         const v = j(NO.videosDeLibro(O, 'Levítico'));
         assert.equal(v[0].youtube_id, 'vKT8eo3hAMw'); assert.ok(v.every(x => x.libro === 'Lv'));
+      });
+    }
+    if ((D.libros || []).some(l => l.id === 'Nm')) {
+      console.log('Textos originales reales (Números)');
+      prueba('Números: hebreo y griego en todo versículo con texto; numeración propia de la RV en Nm 13, 16-17, 26 y 30', () => {
+        const f = j(NO.alinearOriginales(D, { inicio: 'Nm 1:1', fin: 'Nm 36:13' }, O, G));
+        assert.equal(f.length, 1288);
+        const vacios = f.filter(x => !x.rv).map(x => x.ref);
+        assert.deepEqual(vacios, ['Nm 12:16', 'Nm 29:40']);
+        assert.ok(f.filter(x => x.rv).every(x => x.he && x.gr), 'ningún versículo con texto sin hebreo ni griego');
+        const por = Object.fromEntries(f.map(x => [x.ref, x]));
+        assert.ok(!por['Nm 12:16'].he && !por['Nm 12:16'].gr && /Nm 13:1/.test(por['Nm 12:16'].nota), 'el vacío no recibe hebreo duplicado y conserva su nota');
+        assert.equal(por['Nm 13:1'].heNum, '12:16'); assert.equal(por['Nm 13:33'].heNum, '13:32–33');
+        assert.equal(por['Nm 16:36'].heNum, '17:1'); assert.equal(por['Nm 17:13'].heNum, '17:28');
+        assert.equal(por['Nm 26:1'].heNum, '25:19–26:1'); assert.equal(por['Nm 30:16'].heNum, '30:16–17'); assert.equal(por['Nm 30:1'].heNum, null);
+        assert.ok(por['Nm 21:9'].gr.includes('ὄφιν χαλκοῦν') && por['Nm 6:24'].gr.includes('Εὐλογήσαι'));
+      });
+      prueba('Números: testigos (Qumrán y códices) y videos del libro', () => {
+        const ids = refs => j(NO.testigosDe(O, refs)).map(t => t.id);
+        const a = ids(['Nm 7:88']);
+        assert.ok(['leningrado', 'vaticano', 'alejandrino', '2Q8'].every(x => a.includes(x)) && !a.includes('alepo') && !a.includes('sinaitico'));
+        assert.ok(ids(['Nm 13:8']).includes('4Q27') && ids(['Nm 23:6']).includes('2Q29'));
+        assert.deepEqual(j(NO.videosDeLibro(O, 'Números')).map(v => v.youtube_id), ['dtfbSxNecMk', 'IhW7gXB3o8I']);
       });
     }
   }

@@ -1,0 +1,6021 @@
+{
+ "libro": "Nm",
+ "genealogias": [
+  {
+   "id": "nm-jefes-de-tribu",
+   "inicio": "Nm 1:5",
+   "fin": "Nm 1:16",
+   "titulo": "Los jefes de las tribus que ayudan en el censo",
+   "cita": "Elisur hijo de Sedeur"
+  },
+  {
+   "id": "nm-censo-del-sinai",
+   "inicio": "Nm 1:20",
+   "fin": "Nm 1:43",
+   "titulo": "Los contados de cada tribu en el Sinaí",
+   "cita": "Rubén"
+  },
+  {
+   "id": "nm-generaciones-de-aaron",
+   "inicio": "Nm 3:1",
+   "fin": "Nm 3:4",
+   "titulo": "Las generaciones de Aarón y de Moisés",
+   "cita": "generaciones de Aarón y de Moisés"
+  },
+  {
+   "id": "nm-familias-de-levi",
+   "inicio": "Nm 3:17",
+   "fin": "Nm 3:37",
+   "titulo": "Las familias levíticas y sus jefes",
+   "cita": "Gersón, y Coath, y Merari"
+  },
+  {
+   "id": "nm-los-doce-enviados",
+   "inicio": "Nm 13:4",
+   "fin": "Nm 13:16",
+   "titulo": "Los nombres de los doce enviados a reconocer la tierra",
+   "cita": "todos aquellos varones eran príncipes de los hijos de Israel"
+  },
+  {
+   "id": "nm-clanes-segundo-censo",
+   "inicio": "Nm 26:5",
+   "fin": "Nm 26:62",
+   "titulo": "Los clanes del segundo censo en los campos de Moab",
+   "cita": "Rubén primogénito de Israel"
+  },
+  {
+   "id": "nm-jefes-del-reparto",
+   "inicio": "Nm 34:16",
+   "fin": "Nm 34:29",
+   "titulo": "Los jefes que repartirán la tierra",
+   "cita": "Y habló Jehová á Moisés"
+  }
+ ],
+ "historias": [
+  {
+   "id": "censo-y-campamento",
+   "titulo": "El censo del Sinaí y el campamento por tribus",
+   "inicio": "Nm 1:1",
+   "fin": "Nm 2:34",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "levitas-y-su-servicio",
+   "titulo": "Los levitas y su servicio",
+   "inicio": "Nm 3:1",
+   "fin": "Nm 4:49",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "pureza-celos-y-nazareo",
+   "titulo": "Leyes de pureza, celos y nazareo; la bendición sacerdotal",
+   "inicio": "Nm 5:1",
+   "fin": "Nm 6:27",
+   "principales": []
+  },
+  {
+   "id": "dedicacion-del-altar",
+   "titulo": "La dedicación del altar y las ofrendas de los jefes",
+   "inicio": "Nm 7:1",
+   "fin": "Nm 7:89",
+   "principales": [
+    "Moses_1",
+    "Nahshon_1",
+    "Nethanel_1",
+    "Eliab_1",
+    "Elizur_1",
+    "Shelumiel_1",
+    "Eliasaph_1",
+    "Elishama_1",
+    "Gamaliel_1",
+    "Abidan_1",
+    "Ahiezer_1",
+    "Pagiel_1",
+    "Ahira_1"
+   ]
+  },
+  {
+   "id": "lamparas-levitas-pascua",
+   "titulo": "Las lámparas, la consagración de los levitas y la segunda Pascua",
+   "inicio": "Nm 8:1",
+   "fin": "Nm 9:14",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "nube-y-trompetas",
+   "titulo": "La nube, las trompetas y la partida del Sinaí",
+   "inicio": "Nm 9:15",
+   "fin": "Nm 10:36",
+   "principales": [
+    "Moses_1",
+    "Hobab_1"
+   ]
+  },
+  {
+   "id": "taberah-y-codornices",
+   "titulo": "Taberá, las codornices y los setenta ancianos",
+   "inicio": "Nm 11:1",
+   "fin": "Nm 11:35",
+   "principales": [
+    "Moses_1",
+    "Eldad_1",
+    "Medad_1"
+   ]
+  },
+  {
+   "id": "maria-y-aaron-contra-moises",
+   "titulo": "María y Aarón hablan contra Moisés",
+   "inicio": "Nm 12:1",
+   "fin": "Nm 12:16",
+   "principales": [
+    "Miriam_1",
+    "Aaron_1",
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "los-doce-enviados",
+   "titulo": "Los doce enviados y la rebelión en Cades",
+   "inicio": "Nm 13:1",
+   "fin": "Nm 14:45",
+   "principales": [
+    "Moses_1",
+    "Aaron_1",
+    "Joshua_1",
+    "Caleb_1",
+    "Shammua_1",
+    "Shaphat_1",
+    "Igal_1",
+    "Palti_1",
+    "Gaddiel_1",
+    "Gaddi_1",
+    "Ammiel_1",
+    "Sethur_1",
+    "Nahbi_1",
+    "Geuel_1"
+   ]
+  },
+  {
+   "id": "franjas-y-sabado",
+   "titulo": "Ofrendas, el leñador del sábado y las franjas",
+   "inicio": "Nm 15:1",
+   "fin": "Nm 15:41",
+   "principales": []
+  },
+  {
+   "id": "core-datan-abiram",
+   "titulo": "La rebelión de Coré, Datán y Abiram",
+   "inicio": "Nm 16:1",
+   "fin": "Nm 16:50",
+   "principales": [
+    "Korah_3",
+    "Dathan_1",
+    "Abiram_1",
+    "Moses_1",
+    "Aaron_1",
+    "Eleazar_1"
+   ]
+  },
+  {
+   "id": "vara-de-aaron",
+   "titulo": "La vara de Aarón y los deberes de sacerdotes y levitas",
+   "inicio": "Nm 17:1",
+   "fin": "Nm 18:32",
+   "principales": [
+    "Aaron_1",
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "vaca-alazana",
+   "titulo": "La vaca alazana y el agua de la purificación",
+   "inicio": "Nm 19:1",
+   "fin": "Nm 19:22",
+   "principales": [
+    "Eleazar_1"
+   ]
+  },
+  {
+   "id": "meriba-y-monte-hor",
+   "titulo": "Meriba, la muerte de María y de Aarón",
+   "inicio": "Nm 20:1",
+   "fin": "Nm 20:29",
+   "principales": [
+    "Moses_1",
+    "Aaron_1",
+    "Eleazar_1"
+   ]
+  },
+  {
+   "id": "serpiente-de-bronce",
+   "titulo": "Arad, la serpiente de bronce y la marcha a Moab",
+   "inicio": "Nm 21:1",
+   "fin": "Nm 21:20",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "sehon-y-og",
+   "titulo": "Las victorias sobre Sehón y Og",
+   "inicio": "Nm 21:21",
+   "fin": "Nm 21:35",
+   "principales": [
+    "Moses_1",
+    "Sihon_1",
+    "Og_1"
+   ]
+  },
+  {
+   "id": "balaam-y-balac",
+   "titulo": "Balaam y Balac",
+   "inicio": "Nm 22:1",
+   "fin": "Nm 24:25",
+   "principales": [
+    "Balaam_1",
+    "Balak_1"
+   ]
+  },
+  {
+   "id": "baal-peor-y-finees",
+   "titulo": "Baal-peor y Finees",
+   "inicio": "Nm 25:1",
+   "fin": "Nm 25:18",
+   "principales": [
+    "Phinehas_1",
+    "Zimri_1",
+    "Cozbi_1",
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "segundo-censo",
+   "titulo": "El segundo censo en los campos de Moab",
+   "inicio": "Nm 26:1",
+   "fin": "Nm 26:65",
+   "principales": []
+  },
+  {
+   "id": "hijas-de-zelofehad",
+   "titulo": "Las hijas de Zelofehad piden herencia",
+   "inicio": "Nm 27:1",
+   "fin": "Nm 27:11",
+   "principales": [
+    "Mahlah_1",
+    "Noah_2",
+    "Hoglah_1",
+    "Milcah_2",
+    "Tirzah_1"
+   ]
+  },
+  {
+   "id": "josue-sucesor",
+   "titulo": "Josué, sucesor de Moisés",
+   "inicio": "Nm 27:12",
+   "fin": "Nm 27:23",
+   "principales": [
+    "Moses_1",
+    "Joshua_1",
+    "Eleazar_1"
+   ]
+  },
+  {
+   "id": "ofrendas-fiestas-votos",
+   "titulo": "Ofrendas, fiestas y votos",
+   "inicio": "Nm 28:1",
+   "fin": "Nm 30:16",
+   "principales": []
+  },
+  {
+   "id": "guerra-contra-madian",
+   "titulo": "La guerra contra Madián y el botín",
+   "inicio": "Nm 31:1",
+   "fin": "Nm 31:54",
+   "principales": [
+    "Moses_1",
+    "Eleazar_1",
+    "Phinehas_1"
+   ]
+  },
+  {
+   "id": "rubenitas-y-gaditas",
+   "titulo": "Rubén, Gad y media tribu de Manasés se quedan al este del Jordán",
+   "inicio": "Nm 32:1",
+   "fin": "Nm 32:42",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "estancias-y-reparto",
+   "titulo": "Las estancias, las fronteras, las ciudades de los levitas y las de refugio",
+   "inicio": "Nm 33:1",
+   "fin": "Nm 35:34",
+   "principales": []
+  },
+  {
+   "id": "herencia-y-matrimonio",
+   "titulo": "La herencia de las hijas de Zelofehad y su matrimonio",
+   "inicio": "Nm 36:1",
+   "fin": "Nm 36:13",
+   "principales": [
+    "Mahlah_1",
+    "Noah_2",
+    "Hoglah_1",
+    "Milcah_2",
+    "Tirzah_1"
+   ]
+  }
+ ],
+ "personajes": {
+  "Moses_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 1:1",
+     "fin": "Nm 1:4"
+    },
+    {
+     "inicio": "Nm 1:17",
+     "fin": "Nm 1:19"
+    },
+    {
+     "inicio": "Nm 1:44",
+     "fin": "Nm 2:34"
+    },
+    {
+     "inicio": "Nm 3:5",
+     "fin": "Nm 3:16"
+    },
+    {
+     "inicio": "Nm 3:38",
+     "fin": "Nm 13:3"
+    },
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 21:35"
+    },
+    {
+     "inicio": "Nm 25:1",
+     "fin": "Nm 26:4"
+    },
+    {
+     "inicio": "Nm 26:63",
+     "fin": "Nm 34:15"
+    },
+    {
+     "inicio": "Nm 35:1",
+     "fin": "Nm 36:13"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Conduce al pueblo en el Sinaí, en el desierto y en los campos de Moab; intercede por Israel, golpea la peña en Cades, hace la serpiente de bronce, nombra a Josué y ve la tierra desde lejos.",
+   "datos": [
+    {
+     "texto": "Jehová le habla en el desierto de Sinaí, en el tabernáculo, y manda el censo",
+     "certeza": "texto",
+     "ref": "Nm 1:1",
+     "cita": "Jehová á Moisés en el desierto de Sinaí"
+    },
+    {
+     "texto": "El censo de Moisés y Aarón suma 603.550 hombres de guerra",
+     "certeza": "texto",
+     "ref": "Nm 1:46",
+     "cita": "seiscientos tres mil quinientos y cincuenta"
+    },
+    {
+     "texto": "Al entrar en el tabernáculo oía la Voz que le hablaba desde la cubierta del arca",
+     "certeza": "texto",
+     "ref": "Nm 7:89",
+     "cita": "oía la Voz que le hablaba"
+    },
+    {
+     "texto": "Recibe la orden de hacer dos trompetas de plata",
+     "certeza": "texto",
+     "ref": "Nm 10:2",
+     "cita": "Hazte dos trompetas de plata"
+    },
+    {
+     "texto": "Al moverse el arca decía: «Levántate, Jehová»",
+     "certeza": "texto",
+     "ref": "Nm 10:35",
+     "cita": "Levántate, Jehová, y sean disipados tus enemigos"
+    },
+    {
+     "texto": "Agobiado por el pueblo, pide a Jehová que le dé muerte",
+     "certeza": "texto",
+     "ref": "Nm 11:15",
+     "cita": "yo te ruego que me des muerte"
+    },
+    {
+     "texto": "Responde a Josué: ojalá todo el pueblo fuese profeta",
+     "certeza": "texto",
+     "ref": "Nm 11:29",
+     "cita": "ojalá que todo el pueblo de Jehová fuesen profetas"
+    },
+    {
+     "texto": "El texto lo llama el hombre más manso de la tierra",
+     "certeza": "texto",
+     "ref": "Nm 12:3",
+     "cita": "muy manso, más que todos los hombres que había sobre la tierra"
+    },
+    {
+     "texto": "Jehová habla con él boca a boca",
+     "certeza": "texto",
+     "ref": "Nm 12:8",
+     "cita": "Boca á boca hablaré con él"
+    },
+    {
+     "texto": "Ruega a Dios que sane a María",
+     "certeza": "texto",
+     "ref": "Nm 12:13",
+     "cita": "que la sanes ahora"
+    },
+    {
+     "texto": "Le pone a Oseas el nombre de Josué",
+     "certeza": "texto",
+     "ref": "Nm 13:17",
+     "cita": "le puso Moisés el nombre de Josué"
+    },
+    {
+     "texto": "Intercede para que Jehová perdone al pueblo",
+     "certeza": "texto",
+     "ref": "Nm 14:19",
+     "cita": "Perdona ahora la iniquidad de este pueblo"
+    },
+    {
+     "texto": "Ante la rebelión de Coré se echa sobre su rostro",
+     "certeza": "texto",
+     "ref": "Nm 16:4",
+     "cita": "echóse sobre su rostro"
+    },
+    {
+     "texto": "Golpea la peña dos veces con su vara y sale agua",
+     "certeza": "texto",
+     "ref": "Nm 20:11",
+     "cita": "hirió la peña con su vara dos veces"
+    },
+    {
+     "texto": "Jehová le dice que no meterá a la congregación en la tierra",
+     "certeza": "texto",
+     "ref": "Nm 20:12",
+     "cita": "no meteréis esta congregación en la tierra que les he dado"
+    },
+    {
+     "texto": "Desnuda a Aarón de sus vestidos y viste a Eleazar",
+     "certeza": "texto",
+     "ref": "Nm 20:28",
+     "cita": "Moisés hizo desnudar á Aarón de sus vestidos"
+    },
+    {
+     "texto": "Hace una serpiente de metal y la pone sobre la bandera",
+     "certeza": "texto",
+     "ref": "Nm 21:9",
+     "cita": "Moisés hizo una serpiente de metal"
+    },
+    {
+     "texto": "Jehová le manda subir al monte Abarim para ver la tierra",
+     "certeza": "texto",
+     "ref": "Nm 27:12",
+     "cita": "Sube á este monte Abarim, y verás la tierra"
+    },
+    {
+     "texto": "Pone las manos sobre Josué y le da órdenes",
+     "certeza": "texto",
+     "ref": "Nm 27:23",
+     "cita": "puso sobre él sus manos, y dióle órdenes"
+    },
+    {
+     "texto": "Se le dice que después de la venganza de Madián será recogido a sus pueblos",
+     "certeza": "texto",
+     "ref": "Nm 31:2",
+     "cita": "después serás recogido á tus pueblos"
+    },
+    {
+     "texto": "Escribió las salidas del pueblo según sus jornadas",
+     "certeza": "texto",
+     "ref": "Nm 33:2",
+     "cita": "Moisés escribió sus salidas conforme á sus jornadas"
+    }
+   ],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 1:3",
+     "fin": "Nm 1:3"
+    },
+    {
+     "inicio": "Nm 1:17",
+     "fin": "Nm 1:19"
+    },
+    {
+     "inicio": "Nm 1:44",
+     "fin": "Nm 1:44"
+    },
+    {
+     "inicio": "Nm 2:1",
+     "fin": "Nm 2:1"
+    },
+    {
+     "inicio": "Nm 3:5",
+     "fin": "Nm 3:10"
+    },
+    {
+     "inicio": "Nm 3:38",
+     "fin": "Nm 3:39"
+    },
+    {
+     "inicio": "Nm 3:48",
+     "fin": "Nm 4:5"
+    },
+    {
+     "inicio": "Nm 4:15",
+     "fin": "Nm 4:15"
+    },
+    {
+     "inicio": "Nm 4:19",
+     "fin": "Nm 4:19"
+    },
+    {
+     "inicio": "Nm 4:34",
+     "fin": "Nm 4:34"
+    },
+    {
+     "inicio": "Nm 4:37",
+     "fin": "Nm 4:37"
+    },
+    {
+     "inicio": "Nm 4:41",
+     "fin": "Nm 4:41"
+    },
+    {
+     "inicio": "Nm 4:45",
+     "fin": "Nm 4:46"
+    },
+    {
+     "inicio": "Nm 6:22",
+     "fin": "Nm 6:27"
+    },
+    {
+     "inicio": "Nm 8:2",
+     "fin": "Nm 8:4"
+    },
+    {
+     "inicio": "Nm 8:11",
+     "fin": "Nm 8:22"
+    },
+    {
+     "inicio": "Nm 9:6",
+     "fin": "Nm 9:6"
+    },
+    {
+     "inicio": "Nm 12:1",
+     "fin": "Nm 12:15"
+    },
+    {
+     "inicio": "Nm 13:26",
+     "fin": "Nm 13:27"
+    },
+    {
+     "inicio": "Nm 14:2",
+     "fin": "Nm 14:2"
+    },
+    {
+     "inicio": "Nm 14:5",
+     "fin": "Nm 14:5"
+    },
+    {
+     "inicio": "Nm 14:26",
+     "fin": "Nm 14:26"
+    },
+    {
+     "inicio": "Nm 15:33",
+     "fin": "Nm 15:33"
+    },
+    {
+     "inicio": "Nm 16:3",
+     "fin": "Nm 16:3"
+    },
+    {
+     "inicio": "Nm 16:11",
+     "fin": "Nm 16:11"
+    },
+    {
+     "inicio": "Nm 16:16",
+     "fin": "Nm 16:22"
+    },
+    {
+     "inicio": "Nm 16:40",
+     "fin": "Nm 19:1"
+    },
+    {
+     "inicio": "Nm 20:1",
+     "fin": "Nm 20:29"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hermano de Moisés y sumo sacerdote: bendice al pueblo, enciende las lámparas, detiene la mortandad con el incensario, recibe la vara que florece y muere en el monte Hor.",
+   "datos": [
+    {
+     "texto": "Los hijos de Aarón son sacerdotes ungidos",
+     "certeza": "texto",
+     "ref": "Nm 3:3",
+     "cita": "sacerdotes ungidos"
+    },
+    {
+     "texto": "Debe bendecir a Israel con la fórmula «Jehová te bendiga, y te guarde»",
+     "certeza": "texto",
+     "ref": "Nm 6:23",
+     "cita": "Así bendeciréis á los hijos de Israel"
+    },
+    {
+     "texto": "Enciende las lámparas frente al candelero",
+     "certeza": "texto",
+     "ref": "Nm 8:3",
+     "cita": "Aarón lo hizo así; que encendió enfrente del candelero sus lámparas"
+    },
+    {
+     "texto": "Junto con María habla contra Moisés",
+     "certeza": "texto",
+     "ref": "Nm 12:1",
+     "cita": "María y Aarón contra Moisés"
+    },
+    {
+     "texto": "Reconoce el pecado y pide a Moisés que no lo ponga sobre ellos",
+     "certeza": "texto",
+     "ref": "Nm 12:11",
+     "cita": "locamente lo hemos hecho, y hemos pecado"
+    },
+    {
+     "texto": "Toma el incensario y corre en medio de la congregación para hacer expiación",
+     "certeza": "texto",
+     "ref": "Nm 16:47",
+     "cita": "hizo expiación por el pueblo"
+    },
+    {
+     "texto": "Se pone entre los muertos y los vivos y cesa la mortandad",
+     "certeza": "texto",
+     "ref": "Nm 16:48",
+     "cita": "púsose entre los muertos y los vivos; y cesó la mortandad"
+    },
+    {
+     "texto": "Su vara de la casa de Leví brota, florece y da almendras",
+     "certeza": "texto",
+     "ref": "Nm 17:8",
+     "cita": "la vara de Aarón de la casa de Leví había brotado"
+    },
+    {
+     "texto": "No tendrá heredad en la tierra: Jehová es su parte",
+     "certeza": "texto",
+     "ref": "Nm 18:20",
+     "cita": "De la tierra de ellos no tendrás heredad"
+    },
+    {
+     "texto": "Por la rebeldía en las aguas de la rencilla será reunido a sus pueblos",
+     "certeza": "texto",
+     "ref": "Nm 20:24",
+     "cita": "Aarón será reunido á sus pueblos"
+    },
+    {
+     "texto": "Muere en la cumbre del monte Hor",
+     "certeza": "texto",
+     "ref": "Nm 20:28",
+     "cita": "Aarón murió allí en la cumbre del monte"
+    },
+    {
+     "texto": "Toda la congregación lo llora treinta días",
+     "certeza": "texto",
+     "ref": "Nm 20:29",
+     "cita": "hiciéronle duelo por treinta días"
+    },
+    {
+     "texto": "Tenía 123 años cuando murió en el monte Hor",
+     "certeza": "texto",
+     "ref": "Nm 33:39",
+     "cita": "Y era Aarón de edad de ciento y veinte y tres años"
+    }
+   ],
+   "externo": []
+  },
+  "Eleazar_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 4:16",
+     "fin": "Nm 4:16"
+    },
+    {
+     "inicio": "Nm 16:37",
+     "fin": "Nm 16:39"
+    },
+    {
+     "inicio": "Nm 19:3",
+     "fin": "Nm 19:4"
+    },
+    {
+     "inicio": "Nm 20:25",
+     "fin": "Nm 20:28"
+    },
+    {
+     "inicio": "Nm 26:1",
+     "fin": "Nm 26:4"
+    },
+    {
+     "inicio": "Nm 26:63",
+     "fin": "Nm 26:63"
+    },
+    {
+     "inicio": "Nm 27:2",
+     "fin": "Nm 27:2"
+    },
+    {
+     "inicio": "Nm 27:19",
+     "fin": "Nm 27:23"
+    },
+    {
+     "inicio": "Nm 31:12",
+     "fin": "Nm 31:13"
+    },
+    {
+     "inicio": "Nm 31:21",
+     "fin": "Nm 31:31"
+    },
+    {
+     "inicio": "Nm 31:41",
+     "fin": "Nm 31:41"
+    },
+    {
+     "inicio": "Nm 31:51",
+     "fin": "Nm 31:54"
+    },
+    {
+     "inicio": "Nm 32:2",
+     "fin": "Nm 32:2"
+    },
+    {
+     "inicio": "Nm 32:28",
+     "fin": "Nm 32:28"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón: toma los incensarios de Coré, quema la vaca alazana, hereda el sacerdocio en el monte Hor y asiste a Moisés y a Josué en los censos, el botín y el reparto.",
+   "datos": [
+    {
+     "texto": "Es el principal de los jefes de los levitas",
+     "certeza": "texto",
+     "ref": "Nm 3:32",
+     "cita": "principal de los jefes de los Levitas será Eleazar"
+    },
+    {
+     "texto": "Tiene a su cargo el aceite de la luminaria y el perfume",
+     "certeza": "texto",
+     "ref": "Nm 4:16",
+     "cita": "el aceite de la luminaria"
+    },
+    {
+     "texto": "Jehová le manda tomar los incensarios del incendio",
+     "certeza": "texto",
+     "ref": "Nm 16:37",
+     "cita": "Di á Eleazar, hijo de Aarón sacerdote"
+    },
+    {
+     "texto": "Extiende los incensarios de metal para cubrir el altar",
+     "certeza": "texto",
+     "ref": "Nm 16:39",
+     "cita": "extendiéronlos para cubrir el altar"
+    },
+    {
+     "texto": "Se le entrega la vaca bermeja para sacarla del campo",
+     "certeza": "texto",
+     "ref": "Nm 19:3",
+     "cita": "la daréis á Eleazar el sacerdote"
+    },
+    {
+     "texto": "Es vestido con las vestiduras de Aarón",
+     "certeza": "texto",
+     "ref": "Nm 20:28",
+     "cita": "vistiólos á Eleazar su hijo"
+    },
+    {
+     "texto": "Con Moisés habla a los contados en los campos de Moab",
+     "certeza": "texto",
+     "ref": "Nm 26:3",
+     "cita": "Moisés y Eleazar el sacerdote hablaron con ellos"
+    },
+    {
+     "texto": "Josué preguntará por él el juicio del Urim",
+     "certeza": "texto",
+     "ref": "Nm 27:21",
+     "cita": "preguntará por el juicio del Urim"
+    },
+    {
+     "texto": "Declara a los guerreros la ordenanza de la purificación del botín",
+     "certeza": "texto",
+     "ref": "Nm 31:21",
+     "cita": "Eleazar el sacerdote dijo á los hombres de guerra"
+    }
+   ],
+   "externo": []
+  },
+  "Ithamar_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 4:28",
+     "fin": "Nm 4:28"
+    },
+    {
+     "inicio": "Nm 4:33",
+     "fin": "Nm 4:33"
+    },
+    {
+     "inicio": "Nm 7:8",
+     "fin": "Nm 7:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón: supervisa el servicio de los gersonitas y meraritas.",
+   "datos": [
+    {
+     "texto": "El cargo de los gersonitas estará bajo su mano",
+     "certeza": "texto",
+     "ref": "Nm 4:28",
+     "cita": "bajo la mano de Ithamar"
+    },
+    {
+     "texto": "Los carros de los meraritas van bajo su mano",
+     "certeza": "texto",
+     "ref": "Nm 7:8",
+     "cita": "bajo la mano de Ithamar"
+    }
+   ],
+   "externo": []
+  },
+  "Joshua_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 11:28",
+     "fin": "Nm 11:29"
+    },
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:6",
+     "fin": "Nm 14:10"
+    },
+    {
+     "inicio": "Nm 14:38",
+     "fin": "Nm 14:38"
+    },
+    {
+     "inicio": "Nm 27:18",
+     "fin": "Nm 27:23"
+    },
+    {
+     "inicio": "Nm 32:28",
+     "fin": "Nm 32:28"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 14:30"
+    },
+    {
+     "ref": "Nm 26:65"
+    },
+    {
+     "ref": "Nm 32:12"
+    }
+   ],
+   "resumen": "Ministro de Moisés; uno de los doce enviados, con Caleb pide entrar a la tierra y es el elegido para suceder a Moisés.",
+   "datos": [
+    {
+     "texto": "Es «ministro de Moisés» y le pide impedir a Eldad y Medad",
+     "certeza": "texto",
+     "ref": "Nm 11:28",
+     "cita": "Josué hijo de Nun, ministro de Moisés"
+    },
+    {
+     "texto": "Se llamaba Oseas; Moisés le puso el nombre de Josué",
+     "certeza": "texto",
+     "ref": "Nm 13:17",
+     "cita": "le puso Moisés el nombre de Josué"
+    },
+    {
+     "texto": "Con Caleb rompe sus vestidos ante la congregación",
+     "certeza": "texto",
+     "ref": "Nm 14:6",
+     "cita": "rompieron sus vestidos"
+    },
+    {
+     "texto": "Jehová lo exceptúa, con Caleb, de no entrar a la tierra",
+     "certeza": "texto",
+     "ref": "Nm 14:30",
+     "cita": "exceptuando á Caleb hijo de Jephone, y á Josué hijo de Nun"
+    },
+    {
+     "texto": "Jehová lo llama «varón en el cual hay espíritu»",
+     "certeza": "texto",
+     "ref": "Nm 27:18",
+     "cita": "varón en el cual hay espíritu"
+    },
+    {
+     "texto": "Moisés pone sobre él las manos y le da órdenes",
+     "certeza": "texto",
+     "ref": "Nm 27:23",
+     "cita": "puso sobre él sus manos, y dióle órdenes"
+    },
+    {
+     "texto": "Moisés lo encomienda con Eleazar a las tribus",
+     "certeza": "texto",
+     "ref": "Nm 32:28",
+     "cita": "los encomendó Moisés á Eleazar el sacerdote, y á Josué hijo de Nun"
+    }
+   ],
+   "externo": []
+  },
+  "Caleb_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:6",
+     "fin": "Nm 14:10"
+    },
+    {
+     "inicio": "Nm 14:38",
+     "fin": "Nm 14:38"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 14:24"
+    },
+    {
+     "ref": "Nm 14:30"
+    },
+    {
+     "ref": "Nm 26:65"
+    },
+    {
+     "ref": "Nm 32:12"
+    },
+    {
+     "ref": "Nm 34:19"
+    }
+   ],
+   "resumen": "Enviado de Judá que con Josué anima a entrar en la tierra; Jehová lo llama «mi siervo» y le promete la tierra donde entró.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Judá",
+     "certeza": "texto",
+     "ref": "Nm 13:7",
+     "cita": "Caleb hijo de Jephone"
+    },
+    {
+     "texto": "Hace callar al pueblo: «Subamos luego, y poseámosla»",
+     "certeza": "texto",
+     "ref": "Nm 13:31",
+     "cita": "Subamos luego, y poseámosla"
+    },
+    {
+     "texto": "Jehová: «mi siervo Caleb», con «otro espíritu», entrará en la tierra",
+     "certeza": "texto",
+     "ref": "Nm 14:24",
+     "cita": "mi siervo Caleb, por cuanto hubo en él otro espíritu"
+    },
+    {
+     "texto": "Queda con vida, con Josué, entre los que reconocieron la tierra",
+     "certeza": "texto",
+     "ref": "Nm 14:38",
+     "cita": "quedaron con vida de entre aquellos hombres"
+    },
+    {
+     "texto": "Se le llama «Caleb, hijo de Jephone Cenezeo»",
+     "certeza": "texto",
+     "ref": "Nm 32:12",
+     "cita": "Caleb, hijo de Jephone Cenezeo"
+    }
+   ],
+   "externo": []
+  },
+  "Miriam_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 12:1",
+     "fin": "Nm 12:15"
+    },
+    {
+     "inicio": "Nm 20:1",
+     "fin": "Nm 20:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hermana de Moisés y Aarón; habla contra Moisés, queda leprosa siete días fuera del real y muere en Cades.",
+   "datos": [
+    {
+     "texto": "Habla contra Moisés por la mujer etíope que había tomado",
+     "certeza": "texto",
+     "ref": "Nm 12:1",
+     "cita": "á causa de la mujer Ethiope que había tomado"
+    },
+    {
+     "texto": "Queda leprosa como la nieve",
+     "certeza": "texto",
+     "ref": "Nm 12:10",
+     "cita": "María era leprosa como la nieve"
+    },
+    {
+     "texto": "Es echada fuera del real siete días",
+     "certeza": "texto",
+     "ref": "Nm 12:14",
+     "cita": "sea echada fuera del real por siete días"
+    },
+    {
+     "texto": "El pueblo no avanza hasta que ella se reúne",
+     "certeza": "texto",
+     "ref": "Nm 12:15",
+     "cita": "el pueblo no pasó adelante"
+    },
+    {
+     "texto": "Muere y es sepultada en Cades",
+     "certeza": "texto",
+     "ref": "Nm 20:1",
+     "cita": "allí murió María, y fué allí sepultada"
+    },
+    {
+     "texto": "Es hija de Amram y Jocabed, hermana de Aarón y Moisés",
+     "certeza": "texto",
+     "ref": "Nm 26:59",
+     "cita": "á María su hermana"
+    }
+   ],
+   "externo": []
+  },
+  "Korah_3": {
+   "apariciones": [
+    {
+     "inicio": "Nm 16:1",
+     "fin": "Nm 16:11"
+    },
+    {
+     "inicio": "Nm 16:16",
+     "fin": "Nm 16:19"
+    },
+    {
+     "inicio": "Nm 16:24",
+     "fin": "Nm 16:27"
+    },
+    {
+     "inicio": "Nm 16:32",
+     "fin": "Nm 16:33"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 26:9"
+    },
+    {
+     "ref": "Nm 26:10"
+    },
+    {
+     "ref": "Nm 26:11"
+    },
+    {
+     "ref": "Nm 27:3"
+    }
+   ],
+   "resumen": "Levita de la casa de Coat que, con Datán, Abiram y 250 príncipes, se levanta contra Moisés y Aarón y es tragado por la tierra.",
+   "datos": [
+    {
+     "texto": "Es hijo de Izhar, nieto de Coat, bisnieto de Leví",
+     "certeza": "texto",
+     "ref": "Nm 16:1",
+     "cita": "hijo de Ishar, hijo de Coath, hijo de Leví"
+    },
+    {
+     "texto": "Dice que toda la congregación es santa",
+     "certeza": "texto",
+     "ref": "Nm 16:3",
+     "cita": "toda la congregación, todos ellos son santos"
+    },
+    {
+     "texto": "Moisés le reprocha que procure también el sacerdocio",
+     "certeza": "texto",
+     "ref": "Nm 16:10",
+     "cita": "para que procuréis también el sacerdocio"
+    },
+    {
+     "texto": "Reúne a la congregación a la puerta del tabernáculo",
+     "certeza": "texto",
+     "ref": "Nm 16:19",
+     "cita": "Coré había hecho juntar contra ellos toda la congregación"
+    },
+    {
+     "texto": "La tierra se traga a Datán, Abiram, sus casas y a «todos los hombres de Coré»",
+     "certeza": "texto",
+     "ref": "Nm 16:32",
+     "cita": "á todos los hombres de Coré"
+    },
+    {
+     "texto": "Nm 26:10 dice que la tierra tragó a Datán, Abiram «y á Coré»",
+     "certeza": "texto",
+     "ref": "Nm 26:10",
+     "cita": "tragó á ellos y á Coré"
+    },
+    {
+     "texto": "Sus hijos no murieron",
+     "certeza": "texto",
+     "ref": "Nm 26:11",
+     "cita": "Mas los hijos de Coré no murieron"
+    }
+   ],
+   "externo": []
+  },
+  "Dathan_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 16:1",
+     "fin": "Nm 16:3"
+    },
+    {
+     "inicio": "Nm 16:12",
+     "fin": "Nm 16:15"
+    },
+    {
+     "inicio": "Nm 16:24",
+     "fin": "Nm 16:34"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 26:9"
+    }
+   ],
+   "resumen": "Rubenita que se niega a presentarse ante Moisés y es tragado por la tierra con Coré.",
+   "datos": [
+    {
+     "texto": "Es hijo de Eliab, de la tribu de Rubén",
+     "certeza": "texto",
+     "ref": "Nm 16:1",
+     "cita": "Dathán y Abiram, hijos de Eliab"
+    },
+    {
+     "texto": "Se niega a ir ante Moisés",
+     "certeza": "texto",
+     "ref": "Nm 16:12",
+     "cita": "No iremos allá"
+    },
+    {
+     "texto": "Acusa a Moisés de sacarlos de una tierra de leche y miel",
+     "certeza": "texto",
+     "ref": "Nm 16:13",
+     "cita": "¿Es poco que nos hayas hecho venir de una tierra que destila leche y miel"
+    },
+    {
+     "texto": "Sale a la puerta de su tienda con mujeres, hijos y chiquitos",
+     "certeza": "texto",
+     "ref": "Nm 16:27",
+     "cita": "Dathán y Abiram salieron y pusiéronse á las puertas de sus tiendas"
+    }
+   ],
+   "externo": []
+  },
+  "Abiram_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 16:1",
+     "fin": "Nm 16:3"
+    },
+    {
+     "inicio": "Nm 16:12",
+     "fin": "Nm 16:15"
+    },
+    {
+     "inicio": "Nm 16:24",
+     "fin": "Nm 16:34"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 26:9"
+    }
+   ],
+   "resumen": "Rubenita, hermano de Datán, que se niega a ir ante Moisés y es tragado por la tierra.",
+   "datos": [
+    {
+     "texto": "Es hijo de Eliab, de la tribu de Rubén",
+     "certeza": "texto",
+     "ref": "Nm 16:1",
+     "cita": "Dathán y Abiram, hijos de Eliab"
+    },
+    {
+     "texto": "Dice que Moisés no los ha metido en tierra que fluya leche y miel",
+     "certeza": "texto",
+     "ref": "Nm 16:14",
+     "cita": "Ni tampoco nos has metido tú en tierra que fluya leche y miel"
+    },
+    {
+     "texto": "La tierra los traga a ellos y a sus casas",
+     "certeza": "texto",
+     "ref": "Nm 16:32",
+     "cita": "abrió la tierra su boca, y tragólos á ellos, y á sus casas"
+    }
+   ],
+   "externo": []
+  },
+  "Balaam_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 22:7",
+     "fin": "Nm 24:25"
+    },
+    {
+     "inicio": "Nm 31:8",
+     "fin": "Nm 31:8"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 31:16"
+    }
+   ],
+   "resumen": "Adivino de Petor, hijo de Beor, llamado por Balac para maldecir a Israel; solo puede decir lo que Jehová pone en su boca y bendice tres veces; muere en la guerra contra Madián.",
+   "datos": [
+    {
+     "texto": "Balac lo manda llamar a Petor, junto al río",
+     "certeza": "texto",
+     "ref": "Nm 22:5",
+     "cita": "Balaam hijo de Beor, á Pethor, que está junto al río"
+    },
+    {
+     "texto": "Dios le dice que no vaya ni maldiga al pueblo, porque es bendito",
+     "certeza": "texto",
+     "ref": "Nm 22:12",
+     "cita": "No vayas con ellos, ni maldigas al pueblo; porque es bendito"
+    },
+    {
+     "texto": "Aunque Balac le diese su casa llena de plata y oro no traspasaría la palabra de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 22:18",
+     "cita": "no puedo traspasar la palabra de Jehová mi Dios"
+    },
+    {
+     "texto": "Cincha su asna y va con los príncipes de Moab",
+     "certeza": "texto",
+     "ref": "Nm 22:21",
+     "cita": "cinchó su asna"
+    },
+    {
+     "texto": "Jehová abre la boca del asna y esta le habla",
+     "certeza": "texto",
+     "ref": "Nm 22:28",
+     "cita": "Jehová abrió la boca al asna"
+    },
+    {
+     "texto": "Jehová le abre los ojos y ve al ángel con la espada desnuda",
+     "certeza": "texto",
+     "ref": "Nm 22:31",
+     "cita": "Jehová abrió los ojos á Balaam"
+    },
+    {
+     "texto": "Primer oráculo: no maldice a quien Dios no maldijo",
+     "certeza": "texto",
+     "ref": "Nm 23:8",
+     "cita": "¿Por qué maldeciré yo al que Dios no maldijo?"
+    },
+    {
+     "texto": "Ve a Israel acampado por tribus y viene sobre él el espíritu de Dios",
+     "certeza": "texto",
+     "ref": "Nm 24:2",
+     "cita": "el espíritu de Dios vino sobre él"
+    },
+    {
+     "texto": "Anuncia: «saldrá ESTRELLA de Jacob, y levantaráse cetro de Israel»",
+     "certeza": "texto",
+     "ref": "Nm 24:17",
+     "cita": "saldrá ESTRELLA de Jacob"
+    },
+    {
+     "texto": "Es muerto a cuchillo con los reyes de Madián",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "á Balaam también, hijo de Beor, mataron á cuchillo"
+    },
+    {
+     "texto": "Moisés dice que las mujeres madianitas actuaron «por consejo de Balaam» en el asunto de Peor",
+     "certeza": "texto",
+     "ref": "Nm 31:16",
+     "cita": "por consejo de Balaam"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "La inscripción de Deir Alla (Jordania, hacia 825 a. C., en tinta sobre yeso, dialecto noroccidental) habla de las visiones de «Bal'am, hijo de Be'or, vidente de los dioses»; su retrato difiere del de Números. Se conserva en el Museo Arqueológico de Jordania (Amán).",
+     "fuente": "Wikipedia, «Deir Alla Inscription» (fuente secundaria; abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Deir_Alla_Inscription"
+    }
+   ]
+  },
+  "Balak_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 22:2",
+     "fin": "Nm 22:6"
+    },
+    {
+     "inicio": "Nm 22:14",
+     "fin": "Nm 22:17"
+    },
+    {
+     "inicio": "Nm 22:36",
+     "fin": "Nm 24:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Moab, hijo de Zipor, que teme a Israel, manda llamar a Balaam y lo lleva a tres lugares para que maldiga al pueblo.",
+   "datos": [
+    {
+     "texto": "Ve lo que Israel había hecho al amorreo",
+     "certeza": "texto",
+     "ref": "Nm 22:2",
+     "cita": "vió Balac, hijo de Zippor, todo lo que Israel había hecho al Amorrheo"
+    },
+    {
+     "texto": "Es entonces rey de Moab",
+     "certeza": "texto",
+     "ref": "Nm 22:4",
+     "cita": "Balac, hijo de Zippor, era entonces rey de Moab"
+    },
+    {
+     "texto": "Pide a Balaam que maldiga al pueblo",
+     "certeza": "texto",
+     "ref": "Nm 22:6",
+     "cita": "maldíceme este pueblo"
+    },
+    {
+     "texto": "Sube a Balaam a los altos de Baal",
+     "certeza": "texto",
+     "ref": "Nm 22:41",
+     "cita": "hízolo subir á los altos de Baal"
+    },
+    {
+     "texto": "Lo lleva a otro lugar por si desde allí lo maldice",
+     "certeza": "texto",
+     "ref": "Nm 23:27",
+     "cita": "te llevaré á otro lugar"
+    },
+    {
+     "texto": "Se enciende su ira contra Balaam por las tres bendiciones",
+     "certeza": "texto",
+     "ref": "Nm 24:10",
+     "cita": "se encendió la ira de Balac contra Balaam"
+    },
+    {
+     "texto": "Balac se va por su camino",
+     "certeza": "texto",
+     "ref": "Nm 24:25",
+     "cita": "también Balac se fué por su camino"
+    }
+   ],
+   "externo": []
+  },
+  "Phinehas_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 25:6",
+     "fin": "Nm 25:8"
+    },
+    {
+     "inicio": "Nm 25:11",
+     "fin": "Nm 25:13"
+    },
+    {
+     "inicio": "Nm 31:6",
+     "fin": "Nm 31:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Sacerdote, hijo de Eleazar: con una lanza detiene la mortandad de Baal-peor y recibe el pacto de paz y del sacerdocio perpetuo.",
+   "datos": [
+    {
+     "texto": "Hijo de Eleazar, nieto de Aarón, toma una lanza",
+     "certeza": "texto",
+     "ref": "Nm 25:7",
+     "cita": "tomó una lanza en su mano"
+    },
+    {
+     "texto": "Alancea a Zimri y a la mujer y cesa la mortandad",
+     "certeza": "texto",
+     "ref": "Nm 25:8",
+     "cita": "alanceólos á ambos"
+    },
+    {
+     "texto": "Jehová le da su pacto de paz",
+     "certeza": "texto",
+     "ref": "Nm 25:12",
+     "cita": "yo establezco mi pacto de paz con él"
+    },
+    {
+     "texto": "Él y su descendencia tendrán el pacto del sacerdocio perpetuo",
+     "certeza": "texto",
+     "ref": "Nm 25:13",
+     "cita": "el pacto del sacerdocio perpetuo"
+    },
+    {
+     "texto": "Va a la guerra contra Madián con los santos instrumentos y las trompetas",
+     "certeza": "texto",
+     "ref": "Nm 31:6",
+     "cita": "con las trompetas en su mano para tocar"
+    }
+   ],
+   "externo": []
+  },
+  "Machir_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 32:39",
+     "fin": "Nm 32:40"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 26:29"
+    },
+    {
+     "ref": "Nm 27:1"
+    },
+    {
+     "ref": "Nm 36:1"
+    }
+   ],
+   "resumen": "Hijo de Manasés: su clan toma Galaad y Moisés se la da.",
+   "datos": [
+    {
+     "texto": "Moisés le da Galaad y habita en ella",
+     "certeza": "texto",
+     "ref": "Nm 32:40",
+     "cita": "Moisés dió Galaad á Machîr hijo de Manasés, el cual habitó en ella"
+    }
+   ],
+   "externo": []
+  },
+  "Reuel_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 10:29"
+    }
+   ],
+   "resumen": "Suegro de Moisés (Ragüel/Jetro), nombrado como padre de Hobab.",
+   "datos": [
+    {
+     "texto": "Se le nombra como padre de Hobab",
+     "certeza": "texto",
+     "ref": "Nm 10:29",
+     "cita": "Hobab, hijo de Ragüel Madianita, su suegro"
+    }
+   ],
+   "externo": []
+  },
+  "Abram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 32:11"
+    }
+   ],
+   "resumen": "Patriarca (ver Génesis); en Números solo se recuerda el juramento de la tierra.",
+   "datos": [],
+   "externo": []
+  },
+  "Isaac_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 32:11"
+    }
+   ],
+   "resumen": "Patriarca (ver Génesis); en Números solo se recuerda el juramento de la tierra.",
+   "datos": [],
+   "externo": []
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 32:11"
+    }
+   ],
+   "resumen": "Patriarca (ver Génesis); en Números solo se recuerda el juramento de la tierra.",
+   "datos": [],
+   "externo": []
+  },
+  "Hobab_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 10:29",
+     "fin": "Nm 10:32"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Ragüel el madianita; Moisés le pide que los acompañe y sea sus «ojos» en el desierto.",
+   "datos": [
+    {
+     "texto": "Es «hijo de Ragüel Madianita, su suegro»; el texto no aclara a quién se refiere «su suegro»",
+     "certeza": "texto",
+     "ref": "Nm 10:29",
+     "cita": "Hobab, hijo de Ragüel Madianita, su suegro"
+    },
+    {
+     "texto": "Responde que irá a su tierra y a su parentela",
+     "certeza": "texto",
+     "ref": "Nm 10:30",
+     "cita": "Yo no iré, sino que me marcharé á mi tierra y á mi parentela"
+    },
+    {
+     "texto": "Moisés le pide que sea «en lugar de ojos»",
+     "certeza": "texto",
+     "ref": "Nm 10:31",
+     "cita": "nos serás en lugar de ojos"
+    }
+   ],
+   "externo": []
+  },
+  "Eldad_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 11:26",
+     "fin": "Nm 11:29"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Quedó en el campo con Medad; el espíritu reposó sobre él y profetizó.",
+   "datos": [
+    {
+     "texto": "Reposó sobre él el espíritu y profetizó en el campo",
+     "certeza": "texto",
+     "ref": "Nm 11:26",
+     "cita": "profetizaron en el campo"
+    }
+   ],
+   "externo": []
+  },
+  "Medad_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 11:26",
+     "fin": "Nm 11:29"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Quedó en el campo con Eldad; el espíritu reposó sobre él y profetizó.",
+   "datos": [
+    {
+     "texto": "Llamado el uno Eldad y el otro Medad; profetizaron en el campo",
+     "certeza": "texto",
+     "ref": "Nm 11:26",
+     "cita": "llamado el uno Eldad y el otro Medad"
+    }
+   ],
+   "externo": []
+  },
+  "On_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 16:1",
+     "fin": "Nm 16:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rubenita, hijo de Pelet, que se une a Coré; el relato no vuelve a nombrarlo.",
+   "datos": [
+    {
+     "texto": "Es hijo de Pelet, de los hijos de Rubén",
+     "certeza": "texto",
+     "ref": "Nm 16:1",
+     "cita": "Hon, hijo de Peleth, de los hijos de Rubén"
+    },
+    {
+     "texto": "No se le vuelve a nombrar en el relato (el texto no dice qué le pasó)",
+     "certeza": "inferido",
+     "ref": "Nm 16:35"
+    }
+   ],
+   "externo": []
+  },
+  "Sihon_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 21:21",
+     "fin": "Nm 21:26"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 21:27"
+    },
+    {
+     "ref": "Nm 21:28"
+    },
+    {
+     "ref": "Nm 21:29"
+    },
+    {
+     "ref": "Nm 21:34"
+    },
+    {
+     "ref": "Nm 32:33"
+    }
+   ],
+   "resumen": "Rey amorreo de Hesbón que niega el paso a Israel, sale a pelear en Jahaz y es vencido.",
+   "datos": [
+    {
+     "texto": "No dejó pasar a Israel y salió a pelear",
+     "certeza": "texto",
+     "ref": "Nm 21:23",
+     "cita": "Sehón no dejó pasar á Israel por su término"
+    },
+    {
+     "texto": "Israel lo hiere a filo de espada y toma su tierra de Arnón a Jaboc",
+     "certeza": "texto",
+     "ref": "Nm 21:24",
+     "cita": "tomó su tierra desde Arnón hasta Jaboc"
+    },
+    {
+     "texto": "Hesbón era su ciudad",
+     "certeza": "texto",
+     "ref": "Nm 21:26",
+     "cita": "Hesbón era la ciudad de Sehón"
+    }
+   ],
+   "externo": []
+  },
+  "Og_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 21:33",
+     "fin": "Nm 21:35"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 32:33"
+    }
+   ],
+   "resumen": "Rey de Basán que sale a pelear en Edrei y es vencido con toda su gente.",
+   "datos": [
+    {
+     "texto": "Sale contra Israel en Edrei",
+     "certeza": "texto",
+     "ref": "Nm 21:33",
+     "cita": "salió contra ellos Og rey de Basán"
+    },
+    {
+     "texto": "Israel lo hiere a él, a sus hijos y a toda su gente",
+     "certeza": "texto",
+     "ref": "Nm 21:35",
+     "cita": "sin que le quedara uno"
+    }
+   ],
+   "externo": []
+  },
+  "Zimri_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 25:6",
+     "fin": "Nm 25:8"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 25:14"
+    }
+   ],
+   "resumen": "Israelita de Simeón, hijo de Salu, que trajo una madianita ante Moisés y fue alanceado por Finees.",
+   "datos": [
+    {
+     "texto": "Es Zimri hijo de Salu, jefe de familia de Simeón",
+     "certeza": "texto",
+     "ref": "Nm 25:14",
+     "cita": "Zimri hijo de Salu, jefe de una familia de la tribu de Simeón"
+    },
+    {
+     "texto": "Muere alanceado por Finees",
+     "certeza": "texto",
+     "ref": "Nm 25:8",
+     "cita": "alanceólos á ambos"
+    }
+   ],
+   "externo": []
+  },
+  "Cozbi_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 25:6",
+     "fin": "Nm 25:8"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 25:15"
+    },
+    {
+     "ref": "Nm 25:18"
+    }
+   ],
+   "resumen": "Madianita, hija de Zur, muerta con Zimri.",
+   "datos": [
+    {
+     "texto": "Es hija de Zur, príncipe de pueblos en Madián",
+     "certeza": "texto",
+     "ref": "Nm 25:15",
+     "cita": "Cozbi, hija de Zur"
+    },
+    {
+     "texto": "Se la llama «hija del príncipe de Madián, su hermana»",
+     "certeza": "texto",
+     "ref": "Nm 25:18",
+     "cita": "hija del príncipe de Madián, su hermana"
+    }
+   ],
+   "externo": []
+  },
+  "Evi_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 31:7",
+     "fin": "Nm 31:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los cinco reyes de Madián muertos en la guerra.",
+   "datos": [
+    {
+     "texto": "Es uno de los cinco reyes de Madián muertos",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "Evi, y Recem, y Zur, y Hur, y Reba, cinco reyes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Rekem_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 31:7",
+     "fin": "Nm 31:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los cinco reyes de Madián muertos en la guerra.",
+   "datos": [
+    {
+     "texto": "Es uno de los cinco reyes de Madián muertos",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "Evi, y Recem, y Zur, y Hur, y Reba, cinco reyes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Zur_2": {
+   "apariciones": [
+    {
+     "inicio": "Nm 31:7",
+     "fin": "Nm 31:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los cinco reyes de Madián muertos en la guerra.",
+   "datos": [
+    {
+     "texto": "Es uno de los cinco reyes de Madián muertos",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "Evi, y Recem, y Zur, y Hur, y Reba, cinco reyes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Hur_2": {
+   "apariciones": [
+    {
+     "inicio": "Nm 31:7",
+     "fin": "Nm 31:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los cinco reyes de Madián muertos en la guerra.",
+   "datos": [
+    {
+     "texto": "Es uno de los cinco reyes de Madián muertos",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "Evi, y Recem, y Zur, y Hur, y Reba, cinco reyes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Reba_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 31:7",
+     "fin": "Nm 31:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los cinco reyes de Madián muertos en la guerra.",
+   "datos": [
+    {
+     "texto": "Es uno de los cinco reyes de Madián muertos",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "Evi, y Recem, y Zur, y Hur, y Reba, cinco reyes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Jair_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 32:41",
+     "fin": "Nm 32:41"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Manasés que toma aldeas de Galaad y las llama Havot-jair.",
+   "datos": [
+    {
+     "texto": "Toma sus aldeas y las llama Havoth-jair",
+     "certeza": "texto",
+     "ref": "Nm 32:41",
+     "cita": "Jair hijo de Manasés fué y tomó sus aldeas"
+    }
+   ],
+   "externo": []
+  },
+  "Nobah_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 32:42",
+     "fin": "Nm 32:42"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Toma Kenat y sus aldeas y le pone su nombre.",
+   "datos": [
+    {
+     "texto": "Toma Kenat y la llama Noba",
+     "certeza": "texto",
+     "ref": "Nm 32:42",
+     "cita": "Noba fué y tomó á Kenath y sus aldeas"
+    }
+   ],
+   "externo": []
+  },
+  "Ahiman_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:23",
+     "fin": "Nm 13:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los hijos de Anac que estaban en Hebrón cuando llegaron los enviados.",
+   "datos": [
+    {
+     "texto": "Estaba en Hebrón con sus hermanos, hijos de Anac",
+     "certeza": "texto",
+     "ref": "Nm 13:23",
+     "cita": "Aimán, y Sesai, y Talmai, hijos de Anac"
+    }
+   ],
+   "externo": []
+  },
+  "Sheshai_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:23",
+     "fin": "Nm 13:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los hijos de Anac que estaban en Hebrón cuando llegaron los enviados.",
+   "datos": [
+    {
+     "texto": "Estaba en Hebrón con sus hermanos, hijos de Anac",
+     "certeza": "texto",
+     "ref": "Nm 13:23",
+     "cita": "Aimán, y Sesai, y Talmai, hijos de Anac"
+    }
+   ],
+   "externo": []
+  },
+  "Talmai_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:23",
+     "fin": "Nm 13:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los hijos de Anac que estaban en Hebrón cuando llegaron los enviados.",
+   "datos": [
+    {
+     "texto": "Estaba en Hebrón con sus hermanos, hijos de Anac",
+     "certeza": "texto",
+     "ref": "Nm 13:23",
+     "cita": "Aimán, y Sesai, y Talmai, hijos de Anac"
+    }
+   ],
+   "externo": []
+  },
+  "Mahlah_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 27:1",
+     "fin": "Nm 27:11"
+    },
+    {
+     "inicio": "Nm 36:10",
+     "fin": "Nm 36:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Una de las cinco hijas de Zelofehad (Maala, Noa, Hogla, Milca y Tirsa): reclaman herencia a Moisés y se casan dentro de su tribu.",
+   "datos": [
+    {
+     "texto": "Es una de las cinco hijas de Zelofehad, que se presentan ante Moisés",
+     "certeza": "texto",
+     "ref": "Nm 27:1",
+     "cita": "los nombres de las cuales eran Maala, y Noa, y Hogla, y Milca, y Tirsa"
+    },
+    {
+     "texto": "Piden heredad entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Nm 27:4",
+     "cita": "Danos heredad entre los hermanos de nuestro padre"
+    },
+    {
+     "texto": "Jehová: «Bien dicen las hijas de Salphaad»",
+     "certeza": "texto",
+     "ref": "Nm 27:7",
+     "cita": "Bien dicen las hijas de Salphaad"
+    },
+    {
+     "texto": "Se casan con hijos de sus tíos, en la tribu de su padre",
+     "certeza": "texto",
+     "ref": "Nm 36:11",
+     "cita": "se casaron con hijos de sus tíos"
+    }
+   ],
+   "externo": []
+  },
+  "Noah_2": {
+   "apariciones": [
+    {
+     "inicio": "Nm 27:1",
+     "fin": "Nm 27:11"
+    },
+    {
+     "inicio": "Nm 36:10",
+     "fin": "Nm 36:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Una de las cinco hijas de Zelofehad (Maala, Noa, Hogla, Milca y Tirsa): reclaman herencia a Moisés y se casan dentro de su tribu.",
+   "datos": [
+    {
+     "texto": "Es una de las cinco hijas de Zelofehad, que se presentan ante Moisés",
+     "certeza": "texto",
+     "ref": "Nm 27:1",
+     "cita": "los nombres de las cuales eran Maala, y Noa, y Hogla, y Milca, y Tirsa"
+    },
+    {
+     "texto": "Piden heredad entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Nm 27:4",
+     "cita": "Danos heredad entre los hermanos de nuestro padre"
+    },
+    {
+     "texto": "Jehová: «Bien dicen las hijas de Salphaad»",
+     "certeza": "texto",
+     "ref": "Nm 27:7",
+     "cita": "Bien dicen las hijas de Salphaad"
+    },
+    {
+     "texto": "Se casan con hijos de sus tíos, en la tribu de su padre",
+     "certeza": "texto",
+     "ref": "Nm 36:11",
+     "cita": "se casaron con hijos de sus tíos"
+    }
+   ],
+   "externo": []
+  },
+  "Hoglah_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 27:1",
+     "fin": "Nm 27:11"
+    },
+    {
+     "inicio": "Nm 36:10",
+     "fin": "Nm 36:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Una de las cinco hijas de Zelofehad (Maala, Noa, Hogla, Milca y Tirsa): reclaman herencia a Moisés y se casan dentro de su tribu.",
+   "datos": [
+    {
+     "texto": "Es una de las cinco hijas de Zelofehad, que se presentan ante Moisés",
+     "certeza": "texto",
+     "ref": "Nm 27:1",
+     "cita": "los nombres de las cuales eran Maala, y Noa, y Hogla, y Milca, y Tirsa"
+    },
+    {
+     "texto": "Piden heredad entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Nm 27:4",
+     "cita": "Danos heredad entre los hermanos de nuestro padre"
+    },
+    {
+     "texto": "Jehová: «Bien dicen las hijas de Salphaad»",
+     "certeza": "texto",
+     "ref": "Nm 27:7",
+     "cita": "Bien dicen las hijas de Salphaad"
+    },
+    {
+     "texto": "Se casan con hijos de sus tíos, en la tribu de su padre",
+     "certeza": "texto",
+     "ref": "Nm 36:11",
+     "cita": "se casaron con hijos de sus tíos"
+    }
+   ],
+   "externo": []
+  },
+  "Milcah_2": {
+   "apariciones": [
+    {
+     "inicio": "Nm 27:1",
+     "fin": "Nm 27:11"
+    },
+    {
+     "inicio": "Nm 36:10",
+     "fin": "Nm 36:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Una de las cinco hijas de Zelofehad (Maala, Noa, Hogla, Milca y Tirsa): reclaman herencia a Moisés y se casan dentro de su tribu.",
+   "datos": [
+    {
+     "texto": "Es una de las cinco hijas de Zelofehad, que se presentan ante Moisés",
+     "certeza": "texto",
+     "ref": "Nm 27:1",
+     "cita": "los nombres de las cuales eran Maala, y Noa, y Hogla, y Milca, y Tirsa"
+    },
+    {
+     "texto": "Piden heredad entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Nm 27:4",
+     "cita": "Danos heredad entre los hermanos de nuestro padre"
+    },
+    {
+     "texto": "Jehová: «Bien dicen las hijas de Salphaad»",
+     "certeza": "texto",
+     "ref": "Nm 27:7",
+     "cita": "Bien dicen las hijas de Salphaad"
+    },
+    {
+     "texto": "Se casan con hijos de sus tíos, en la tribu de su padre",
+     "certeza": "texto",
+     "ref": "Nm 36:11",
+     "cita": "se casaron con hijos de sus tíos"
+    }
+   ],
+   "externo": []
+  },
+  "Tirzah_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 27:1",
+     "fin": "Nm 27:11"
+    },
+    {
+     "inicio": "Nm 36:10",
+     "fin": "Nm 36:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Una de las cinco hijas de Zelofehad (Maala, Noa, Hogla, Milca y Tirsa): reclaman herencia a Moisés y se casan dentro de su tribu.",
+   "datos": [
+    {
+     "texto": "Es una de las cinco hijas de Zelofehad, que se presentan ante Moisés",
+     "certeza": "texto",
+     "ref": "Nm 27:1",
+     "cita": "los nombres de las cuales eran Maala, y Noa, y Hogla, y Milca, y Tirsa"
+    },
+    {
+     "texto": "Piden heredad entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Nm 27:4",
+     "cita": "Danos heredad entre los hermanos de nuestro padre"
+    },
+    {
+     "texto": "Jehová: «Bien dicen las hijas de Salphaad»",
+     "certeza": "texto",
+     "ref": "Nm 27:7",
+     "cita": "Bien dicen las hijas de Salphaad"
+    },
+    {
+     "texto": "Se casan con hijos de sus tíos, en la tribu de su padre",
+     "certeza": "texto",
+     "ref": "Nm 36:11",
+     "cita": "se casaron con hijos de sus tíos"
+    }
+   ],
+   "externo": []
+  },
+  "Shammua_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Rubén); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Rubén",
+     "certeza": "texto",
+     "ref": "Nm 13:5",
+     "cita": "Sammua hijo de Zaccur"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Shaphat_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Simeón); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Simeón",
+     "certeza": "texto",
+     "ref": "Nm 13:6",
+     "cita": "Saphat hijo de Hurí"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Igal_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Isacar); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Isacar",
+     "certeza": "texto",
+     "ref": "Nm 13:8",
+     "cita": "Igal hijo de Joseph"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Palti_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Benjamín); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Benjamín",
+     "certeza": "texto",
+     "ref": "Nm 13:10",
+     "cita": "Palti hijo de Raphu"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Gaddiel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Zabulón); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Zabulón",
+     "certeza": "texto",
+     "ref": "Nm 13:11",
+     "cita": "Gaddiel hijo de Sodi"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Gaddi_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Manasés); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Manasés",
+     "certeza": "texto",
+     "ref": "Nm 13:12",
+     "cita": "Gaddi hijo de Susi"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Ammiel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Dan); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Dan",
+     "certeza": "texto",
+     "ref": "Nm 13:13",
+     "cita": "Ammiel hijo de Gemalli"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Sethur_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Aser); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Aser",
+     "certeza": "texto",
+     "ref": "Nm 13:14",
+     "cita": "Sethur hijo de Michâel"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Nahbi_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Neftalí); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Neftalí",
+     "certeza": "texto",
+     "ref": "Nm 13:15",
+     "cita": "Nahabí hijo de Vapsi"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Geuel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:33"
+    },
+    {
+     "inicio": "Nm 14:36",
+     "fin": "Nm 14:37"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Uno de los doce enviados a reconocer Canaán (por Gad); volvió con el informe desfavorable y murió de plaga.",
+   "datos": [
+    {
+     "texto": "Es el enviado de la tribu de Gad",
+     "certeza": "texto",
+     "ref": "Nm 13:16",
+     "cita": "Geuel hijo de Machî"
+    },
+    {
+     "texto": "Los que hablaron mal de la tierra murieron de plaga delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 14:37",
+     "cita": "murieron de plaga delante de Jehová"
+    },
+    {
+     "texto": "Solo Josué y Caleb quedaron con vida entre los enviados: por eso se infiere que él murió de la plaga",
+     "certeza": "inferido",
+     "ref": "Nm 14:38"
+    }
+   ],
+   "externo": []
+  },
+  "Nahshon_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:12",
+     "fin": "Nm 7:17"
+    },
+    {
+     "inicio": "Nm 10:14",
+     "fin": "Nm 10:14"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Judá: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Judá)",
+     "certeza": "texto",
+     "ref": "Nm 7:12",
+     "cita": "Naasón hijo de Aminadab, de la tribu de Judá"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Judá",
+     "certeza": "texto",
+     "ref": "Nm 10:14",
+     "cita": "Naasón, hijo de Aminadab, era sobre su ejército"
+    }
+   ],
+   "externo": []
+  },
+  "Nethanel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:18",
+     "fin": "Nm 7:23"
+    },
+    {
+     "inicio": "Nm 10:15",
+     "fin": "Nm 10:15"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Isacar: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Isacar)",
+     "certeza": "texto",
+     "ref": "Nm 7:18",
+     "cita": "El segundo día ofreció Nathanael hijo de Suar"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Isacar",
+     "certeza": "texto",
+     "ref": "Nm 10:15",
+     "cita": "Nathanael hijo de Suar"
+    }
+   ],
+   "externo": []
+  },
+  "Eliab_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:24",
+     "fin": "Nm 7:29"
+    },
+    {
+     "inicio": "Nm 10:16",
+     "fin": "Nm 10:16"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Zabulón: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Zabulón)",
+     "certeza": "texto",
+     "ref": "Nm 7:24",
+     "cita": "El tercer día, Eliab hijo de Helón"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Zabulón",
+     "certeza": "texto",
+     "ref": "Nm 10:16",
+     "cita": "Eliab hijo de Helón"
+    }
+   ],
+   "externo": []
+  },
+  "Elizur_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:30",
+     "fin": "Nm 7:35"
+    },
+    {
+     "inicio": "Nm 10:18",
+     "fin": "Nm 10:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Rubén: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Rubén)",
+     "certeza": "texto",
+     "ref": "Nm 7:30",
+     "cita": "El cuarto día, Elisur hijo de Sedeur"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Rubén",
+     "certeza": "texto",
+     "ref": "Nm 10:18",
+     "cita": "Elisur, hijo de Sedeur, era sobre su ejército"
+    }
+   ],
+   "externo": []
+  },
+  "Shelumiel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:36",
+     "fin": "Nm 7:41"
+    },
+    {
+     "inicio": "Nm 10:19",
+     "fin": "Nm 10:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Simeón: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Simeón)",
+     "certeza": "texto",
+     "ref": "Nm 7:36",
+     "cita": "El quinto día, Selumiel hijo de Zurisaddai"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Simeón",
+     "certeza": "texto",
+     "ref": "Nm 10:19",
+     "cita": "Selumiel hijo de Zurisaddai"
+    }
+   ],
+   "externo": []
+  },
+  "Eliasaph_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:42",
+     "fin": "Nm 7:47"
+    },
+    {
+     "inicio": "Nm 10:20",
+     "fin": "Nm 10:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Gad: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Gad)",
+     "certeza": "texto",
+     "ref": "Nm 7:42",
+     "cita": "El sexto día, Eliasaph hijo de Dehuel"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Gad",
+     "certeza": "texto",
+     "ref": "Nm 10:20",
+     "cita": "Eliasaph hijo de Dehuel"
+    },
+    {
+     "texto": "En Nm 2:14 la RV1909 escribe el nombre de su padre «Rehuel» (en Nm 1:14, 7:42 y 10:20, «Dehuel»)",
+     "certeza": "texto",
+     "ref": "Nm 2:14",
+     "cita": "Eliasaph hijo de Rehuel"
+    }
+   ],
+   "externo": []
+  },
+  "Elishama_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:48",
+     "fin": "Nm 7:53"
+    },
+    {
+     "inicio": "Nm 10:22",
+     "fin": "Nm 10:22"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Efraín: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Efraín)",
+     "certeza": "texto",
+     "ref": "Nm 7:48",
+     "cita": "El séptimo día, el príncipe de los hijos de Ephraim, Elisama hijo de Ammiud"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Efraín",
+     "certeza": "texto",
+     "ref": "Nm 10:22",
+     "cita": "Elisama, hijo de Ammiud, era sobre su ejército"
+    }
+   ],
+   "externo": []
+  },
+  "Gamaliel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:54",
+     "fin": "Nm 7:59"
+    },
+    {
+     "inicio": "Nm 10:23",
+     "fin": "Nm 10:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Manasés: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Manasés)",
+     "certeza": "texto",
+     "ref": "Nm 7:54",
+     "cita": "El octavo día, el príncipe de los hijos de Manasés, Gamaliel hijo de Pedasur"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Manasés",
+     "certeza": "texto",
+     "ref": "Nm 10:23",
+     "cita": "Gamaliel hijo de Pedasur"
+    }
+   ],
+   "externo": []
+  },
+  "Abidan_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:60",
+     "fin": "Nm 7:65"
+    },
+    {
+     "inicio": "Nm 10:24",
+     "fin": "Nm 10:24"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Benjamín: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Benjamín)",
+     "certeza": "texto",
+     "ref": "Nm 7:60",
+     "cita": "El noveno día, el príncipe de los hijos de Benjamín, Abidán hijo de Gedeón"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Benjamín",
+     "certeza": "texto",
+     "ref": "Nm 10:24",
+     "cita": "Abidán hijo de Gedeón"
+    }
+   ],
+   "externo": []
+  },
+  "Ahiezer_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:66",
+     "fin": "Nm 7:71"
+    },
+    {
+     "inicio": "Nm 10:25",
+     "fin": "Nm 10:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Dan: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Dan)",
+     "certeza": "texto",
+     "ref": "Nm 7:66",
+     "cita": "El décimo día, el príncipe de los hijos de Dan, Ahiezer hijo de Ammisaddai"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Dan",
+     "certeza": "texto",
+     "ref": "Nm 10:25",
+     "cita": "Ahiezer, hijo de Ammisaddai, era sobre su ejército"
+    }
+   ],
+   "externo": []
+  },
+  "Pagiel_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:72",
+     "fin": "Nm 7:77"
+    },
+    {
+     "inicio": "Nm 10:26",
+     "fin": "Nm 10:26"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Aser: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Aser)",
+     "certeza": "texto",
+     "ref": "Nm 7:72",
+     "cita": "El undécimo día, el príncipe de los hijos de Aser, Pagiel hijo de Ocrán"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Aser",
+     "certeza": "texto",
+     "ref": "Nm 10:26",
+     "cita": "Pagiel hijo de Ocrán"
+    },
+    {
+     "texto": "En Nm 1:13 y 2:27 la RV1909 escribe su nombre «Phegiel»",
+     "certeza": "texto",
+     "ref": "Nm 1:13",
+     "cita": "Phegiel hijo de Ocrán"
+    }
+   ],
+   "externo": []
+  },
+  "Ahira_1": {
+   "apariciones": [
+    {
+     "inicio": "Nm 7:78",
+     "fin": "Nm 7:83"
+    },
+    {
+     "inicio": "Nm 10:27",
+     "fin": "Nm 10:27"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la tribu de Neftalí: trae su ofrenda en la dedicación del altar y manda su ejército en la marcha desde el Sinaí.",
+   "datos": [
+    {
+     "texto": "Presenta su ofrenda en su día en la dedicación del altar (príncipe de Neftalí)",
+     "certeza": "texto",
+     "ref": "Nm 7:78",
+     "cita": "El duodécimo día, el príncipe de los hijos de Nephtalí, Ahira hijo de Enán"
+    },
+    {
+     "texto": "En la marcha desde el Sinaí está al frente del ejército de Neftalí",
+     "certeza": "texto",
+     "ref": "Nm 10:27",
+     "cita": "Ahira hijo de Enán"
+    }
+   ],
+   "externo": []
+  },
+  "Shedeur_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:10"
+    },
+    {
+     "ref": "Nm 7:30"
+    },
+    {
+     "ref": "Nm 7:35"
+    },
+    {
+     "ref": "Nm 10:18"
+    }
+   ],
+   "resumen": "Padre de Elisur, jefe de Rubén (Nm 1:5).",
+   "datos": [],
+   "externo": []
+  },
+  "Zurishaddai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:12"
+    },
+    {
+     "ref": "Nm 7:36"
+    },
+    {
+     "ref": "Nm 7:41"
+    },
+    {
+     "ref": "Nm 10:19"
+    }
+   ],
+   "resumen": "Padre de Selumiel, jefe de Simeón (Nm 1:6).",
+   "datos": [],
+   "externo": []
+  },
+  "Zuar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:5"
+    },
+    {
+     "ref": "Nm 7:18"
+    },
+    {
+     "ref": "Nm 7:23"
+    },
+    {
+     "ref": "Nm 10:15"
+    }
+   ],
+   "resumen": "Padre de Natanael, jefe de Isacar (Nm 1:8).",
+   "datos": [],
+   "externo": []
+  },
+  "Helon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:7"
+    },
+    {
+     "ref": "Nm 7:24"
+    },
+    {
+     "ref": "Nm 7:29"
+    },
+    {
+     "ref": "Nm 10:16"
+    }
+   ],
+   "resumen": "Padre de Eliab, jefe de Zabulón (Nm 1:9).",
+   "datos": [],
+   "externo": []
+  },
+  "Ammihud_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:18"
+    },
+    {
+     "ref": "Nm 7:48"
+    },
+    {
+     "ref": "Nm 7:53"
+    },
+    {
+     "ref": "Nm 10:22"
+    }
+   ],
+   "resumen": "Padre de Elisama, jefe de Efraín (Nm 1:10).",
+   "datos": [],
+   "externo": []
+  },
+  "Pedahzur_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:20"
+    },
+    {
+     "ref": "Nm 7:54"
+    },
+    {
+     "ref": "Nm 7:59"
+    },
+    {
+     "ref": "Nm 10:23"
+    }
+   ],
+   "resumen": "Padre de Gamaliel, jefe de Manasés (Nm 1:10).",
+   "datos": [],
+   "externo": []
+  },
+  "Gideoni_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:22"
+    },
+    {
+     "ref": "Nm 7:60"
+    },
+    {
+     "ref": "Nm 7:65"
+    },
+    {
+     "ref": "Nm 10:24"
+    }
+   ],
+   "resumen": "Padre de Abidán, jefe de Benjamín (Nm 1:11).",
+   "datos": [],
+   "externo": []
+  },
+  "Ammishaddai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:25"
+    },
+    {
+     "ref": "Nm 7:66"
+    },
+    {
+     "ref": "Nm 7:71"
+    },
+    {
+     "ref": "Nm 10:25"
+    }
+   ],
+   "resumen": "Padre de Ahiezer, jefe de Dan (Nm 1:12).",
+   "datos": [],
+   "externo": []
+  },
+  "Ochran_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:27"
+    },
+    {
+     "ref": "Nm 7:72"
+    },
+    {
+     "ref": "Nm 7:77"
+    },
+    {
+     "ref": "Nm 10:26"
+    }
+   ],
+   "resumen": "Padre de Pagiel, jefe de Aser (Nm 1:13).",
+   "datos": [],
+   "externo": []
+  },
+  "Deuel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:14"
+    },
+    {
+     "ref": "Nm 7:42"
+    },
+    {
+     "ref": "Nm 7:47"
+    },
+    {
+     "ref": "Nm 10:20"
+    }
+   ],
+   "resumen": "Padre de Eliasaf, jefe de Gad (Nm 1:14; «Rehuel» en Nm 2:14).",
+   "datos": [],
+   "externo": []
+  },
+  "Enan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:29"
+    },
+    {
+     "ref": "Nm 7:78"
+    },
+    {
+     "ref": "Nm 7:83"
+    },
+    {
+     "ref": "Nm 10:27"
+    }
+   ],
+   "resumen": "Padre de Ahira, jefe de Neftalí (Nm 1:15).",
+   "datos": [],
+   "externo": []
+  },
+  "Eliasaph_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la casa de los gersonitas, hijo de Lael (Nm 3:24).",
+   "datos": [],
+   "externo": []
+  },
+  "Lael_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Eliasaf, jefe de los gersonitas (Nm 3:24).",
+   "datos": [],
+   "externo": []
+  },
+  "Abihail_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Suriel, jefe de los meraritas (Nm 3:35).",
+   "datos": [],
+   "externo": []
+  },
+  "Zuriel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de la casa de los meraritas, hijo de Abihail (Nm 3:35).",
+   "datos": [],
+   "externo": []
+  },
+  "Zaccur_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Samúa, enviado de Rubén (Nm 13:5).",
+   "datos": [],
+   "externo": []
+  },
+  "Hori_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Safat, enviado de Simeón (Nm 13:6).",
+   "datos": [],
+   "externo": []
+  },
+  "Jephunneh_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 14:6"
+    },
+    {
+     "ref": "Nm 14:30"
+    },
+    {
+     "ref": "Nm 14:38"
+    },
+    {
+     "ref": "Nm 26:65"
+    },
+    {
+     "ref": "Nm 32:12"
+    }
+   ],
+   "resumen": "Padre de Caleb (Nm 13:7).",
+   "datos": [],
+   "externo": []
+  },
+  "Joseph_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Igal, enviado de Isacar (Nm 13:8); distinto de José hijo de Jacob.",
+   "datos": [],
+   "externo": []
+  },
+  "Raphu_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Palti, enviado de Benjamín (Nm 13:10).",
+   "datos": [],
+   "externo": []
+  },
+  "Sodi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Gadiel, enviado de Zabulón (Nm 13:11).",
+   "datos": [],
+   "externo": []
+  },
+  "Susi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Gadi, enviado de Manasés (Nm 13:12).",
+   "datos": [],
+   "externo": []
+  },
+  "Gemalli_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Amiel, enviado de Dan (Nm 13:13).",
+   "datos": [],
+   "externo": []
+  },
+  "Michael_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Setur, enviado de Aser (Nm 13:14).",
+   "datos": [],
+   "externo": []
+  },
+  "Vophsi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Nahbi, enviado de Neftalí (Nm 13:15).",
+   "datos": [],
+   "externo": []
+  },
+  "Machi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Geuel, enviado de Gad (Nm 13:16).",
+   "datos": [],
+   "externo": []
+  },
+  "Anak_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 13:23"
+    },
+    {
+     "ref": "Nm 13:29"
+    },
+    {
+     "ref": "Nm 13:33"
+    }
+   ],
+   "resumen": "Antepasado de los «hijos de Anac» que vieron los enviados en Hebrón.",
+   "datos": [
+    {
+     "texto": "Los «gigantes» son «hijos de Anac»",
+     "certeza": "texto",
+     "ref": "Nm 13:33",
+     "cita": "hijos de Anac, [raza] de los gigantes"
+    }
+   ],
+   "externo": []
+  },
+  "Peleth_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 16:1"
+    }
+   ],
+   "resumen": "Padre de On, rubenita que se une a Coré (Nm 16:1).",
+   "datos": [],
+   "externo": []
+  },
+  "Eliab_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 16:1"
+    },
+    {
+     "ref": "Nm 16:12"
+    }
+   ],
+   "resumen": "Rubenita, padre de Datán y Abiram (Nm 16:1).",
+   "datos": [],
+   "externo": []
+  },
+  "Nemuel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hermano de Datán y Abiram, hijo de Eliab (Nm 26:9).",
+   "datos": [],
+   "externo": []
+  },
+  "Zippor_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 22:2"
+    },
+    {
+     "ref": "Nm 22:4"
+    },
+    {
+     "ref": "Nm 22:10"
+    },
+    {
+     "ref": "Nm 22:16"
+    },
+    {
+     "ref": "Nm 23:18"
+    }
+   ],
+   "resumen": "Padre de Balac, rey de Moab.",
+   "datos": [
+    {
+     "texto": "Es el padre de Balac",
+     "certeza": "texto",
+     "ref": "Nm 22:2",
+     "cita": "Balac, hijo de Zippor"
+    }
+   ],
+   "externo": []
+  },
+  "Beor_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 22:5"
+    },
+    {
+     "ref": "Nm 24:3"
+    },
+    {
+     "ref": "Nm 24:15"
+    },
+    {
+     "ref": "Nm 31:8"
+    }
+   ],
+   "resumen": "Padre de Balaam.",
+   "datos": [
+    {
+     "texto": "Es el padre de Balaam",
+     "certeza": "texto",
+     "ref": "Nm 22:5",
+     "cita": "Balaam hijo de Beor"
+    }
+   ],
+   "externo": []
+  },
+  "Agag_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 24:7"
+    }
+   ],
+   "resumen": "Rey nombrado en el oráculo de Balaam (Nm 24:7).",
+   "datos": [],
+   "externo": []
+  },
+  "Salu_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 25:14"
+    }
+   ],
+   "resumen": "Padre de Zimri, de la tribu de Simeón (Nm 25:14).",
+   "datos": [],
+   "externo": []
+  },
+  "Zur_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 25:15"
+    }
+   ],
+   "resumen": "Padre de Cozbi, príncipe de pueblos en Madián (Nm 25:15); quizá el mismo que el rey Zur de Nm 31:8, pero el texto no lo dice.",
+   "datos": [],
+   "externo": []
+  },
+  "Gilead_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 27:1"
+    },
+    {
+     "ref": "Nm 36:1"
+    }
+   ],
+   "resumen": "Hijo de Maquir, cabeza del clan de los galaaditas (Nm 26:29).",
+   "datos": [],
+   "externo": []
+  },
+  "Helek_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Galaad, cabeza de los helequitas (Nm 26:30).",
+   "datos": [],
+   "externo": []
+  },
+  "Iezer_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Galaad, cabeza de los jezeritas (Nm 26:30).",
+   "datos": [],
+   "externo": []
+  },
+  "Asriel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Galaad, cabeza de los asrielitas (Nm 26:31).",
+   "datos": [],
+   "externo": []
+  },
+  "Shechem_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Galaad (Nm 26:31); distinto de Siquem hijo de Hamor.",
+   "datos": [],
+   "externo": []
+  },
+  "Hepher_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 27:1"
+    }
+   ],
+   "resumen": "Hijo de Galaad y padre de Zelofehad (Nm 26:32; 27:1).",
+   "datos": [],
+   "externo": []
+  },
+  "Shemida_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Galaad, cabeza de los semidaítas (Nm 26:32).",
+   "datos": [],
+   "externo": []
+  },
+  "Zelophehad_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 27:1"
+    },
+    {
+     "ref": "Nm 27:7"
+    },
+    {
+     "ref": "Nm 36:2"
+    },
+    {
+     "ref": "Nm 36:6"
+    },
+    {
+     "ref": "Nm 36:10"
+    },
+    {
+     "ref": "Nm 36:11"
+    }
+   ],
+   "resumen": "Hijo de Hefer, de Manasés; murió en el desierto sin hijos varones (Nm 26:33; 27:3).",
+   "datos": [
+    {
+     "texto": "Solo tuvo hijas",
+     "certeza": "texto",
+     "ref": "Nm 26:33",
+     "cita": "no tuvo hijos sino hijas"
+    },
+    {
+     "texto": "Murió en el desierto, no en la junta de Coré, sin hijos",
+     "certeza": "texto",
+     "ref": "Nm 27:3",
+     "cita": "murió en el desierto"
+    }
+   ],
+   "externo": []
+  },
+  "Becher_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Efraín, cabeza de los bequeritas (Nm 26:35).",
+   "datos": [],
+   "externo": []
+  },
+  "Shuthelah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Efraín (Nm 26:35-36).",
+   "datos": [],
+   "externo": []
+  },
+  "Tahan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Efraín, cabeza de los tahanitas (Nm 26:35).",
+   "datos": [],
+   "externo": []
+  },
+  "Eran_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Sutela, de Efraín (Nm 26:36).",
+   "datos": [],
+   "externo": []
+  },
+  "Ammihud_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Samuel, jefe de Simeón en el reparto (Nm 34:20).",
+   "datos": [],
+   "externo": []
+  },
+  "Samuel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Simeón para el reparto de la tierra (Nm 34:20); no es el profeta.",
+   "datos": [],
+   "externo": []
+  },
+  "Chislon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Elidad, jefe de Benjamín (Nm 34:21).",
+   "datos": [],
+   "externo": []
+  },
+  "Elidad_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Benjamín para el reparto de la tierra (Nm 34:21).",
+   "datos": [],
+   "externo": []
+  },
+  "Bukki_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Dan para el reparto (Nm 34:22).",
+   "datos": [],
+   "externo": []
+  },
+  "Jogli_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Buqui (Nm 34:22).",
+   "datos": [],
+   "externo": []
+  },
+  "Ephod_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Haniel (Nm 34:23).",
+   "datos": [],
+   "externo": []
+  },
+  "Hanniel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Manasés para el reparto (Nm 34:23).",
+   "datos": [],
+   "externo": []
+  },
+  "Kemuel_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Efraín para el reparto (Nm 34:24).",
+   "datos": [],
+   "externo": []
+  },
+  "Shiphtan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Kemuel (Nm 34:24).",
+   "datos": [],
+   "externo": []
+  },
+  "Elizaphan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Zabulón para el reparto (Nm 34:25).",
+   "datos": [],
+   "externo": []
+  },
+  "Parnach_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Elizafán (Nm 34:25).",
+   "datos": [],
+   "externo": []
+  },
+  "Azzan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Paltiel (Nm 34:26).",
+   "datos": [],
+   "externo": []
+  },
+  "Paltiel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Isacar para el reparto (Nm 34:26).",
+   "datos": [],
+   "externo": []
+  },
+  "Ahihud_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Aser para el reparto (Nm 34:27).",
+   "datos": [],
+   "externo": []
+  },
+  "Shelomi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Ahiud (Nm 34:27).",
+   "datos": [],
+   "externo": []
+  },
+  "Ammihud_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Pedael (Nm 34:28).",
+   "datos": [],
+   "externo": []
+  },
+  "Pedahel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jefe de Neftalí para el reparto (Nm 34:28).",
+   "datos": [],
+   "externo": []
+  },
+  "Gershon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 4:22"
+    },
+    {
+     "ref": "Nm 4:38"
+    },
+    {
+     "ref": "Nm 4:41"
+    },
+    {
+     "ref": "Nm 7:7"
+    },
+    {
+     "ref": "Nm 10:17"
+    }
+   ],
+   "resumen": "Hijo de Leví, cabeza de los gersonitas; en Números se nombra su clan y su servicio.",
+   "datos": [],
+   "externo": []
+  },
+  "Kohath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 4:2"
+    },
+    {
+     "ref": "Nm 4:4"
+    },
+    {
+     "ref": "Nm 4:15"
+    },
+    {
+     "ref": "Nm 7:9"
+    },
+    {
+     "ref": "Nm 16:1"
+    }
+   ],
+   "resumen": "Hijo de Leví, cabeza de los coatitas; en Números se nombra su clan y su servicio.",
+   "datos": [],
+   "externo": []
+  },
+  "Merari_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 4:29"
+    },
+    {
+     "ref": "Nm 4:33"
+    },
+    {
+     "ref": "Nm 4:42"
+    },
+    {
+     "ref": "Nm 4:45"
+    },
+    {
+     "ref": "Nm 7:8"
+    },
+    {
+     "ref": "Nm 10:17"
+    }
+   ],
+   "resumen": "Hijo de Leví, cabeza de los meraritas; en Números se nombra su clan y su servicio.",
+   "datos": [],
+   "externo": []
+  },
+  "Izhar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 16:1"
+    }
+   ],
+   "resumen": "Hijo de Coat, padre de Coré.",
+   "datos": [],
+   "externo": []
+  },
+  "Amminadab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 2:3"
+    },
+    {
+     "ref": "Nm 7:12"
+    },
+    {
+     "ref": "Nm 7:17"
+    },
+    {
+     "ref": "Nm 10:14"
+    }
+   ],
+   "resumen": "Padre de Naasón, jefe de Judá.",
+   "datos": [],
+   "externo": []
+  },
+  "Nun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Nm 11:28"
+    },
+    {
+     "ref": "Nm 13:17"
+    },
+    {
+     "ref": "Nm 14:6"
+    },
+    {
+     "ref": "Nm 14:30"
+    },
+    {
+     "ref": "Nm 14:38"
+    },
+    {
+     "ref": "Nm 26:65"
+    },
+    {
+     "ref": "Nm 27:18"
+    },
+    {
+     "ref": "Nm 32:12"
+    },
+    {
+     "ref": "Nm 32:28"
+    }
+   ],
+   "resumen": "Padre de Josué.",
+   "datos": [],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "trompetas-de-plata": {
+   "nombre": "Dos trompetas de plata",
+   "tipo": "instrumento",
+   "apariciones": [
+    {
+     "inicio": "Nm 10:1",
+     "fin": "Nm 10:10"
+    },
+    {
+     "inicio": "Nm 31:6",
+     "fin": "Nm 31:6"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Phinehas_1"
+   ],
+   "lugares": [],
+   "resumen": "Dos trompetas de plata labradas a martillo para convocar a la congregación y levantar el campamento; las tocan los hijos de Aarón.",
+   "datos": [
+    {
+     "texto": "Se hacen dos de plata, de obra de martillo, para convocar y mover el campo",
+     "certeza": "texto",
+     "ref": "Nm 10:2",
+     "cita": "Hazte dos trompetas de plata"
+    },
+    {
+     "texto": "Un toque de alarma mueve el campo de los alojados al oriente",
+     "certeza": "texto",
+     "ref": "Nm 10:5",
+     "cita": "moverán el campo de los que están alojados al oriente"
+    },
+    {
+     "texto": "Las tocan los hijos de Aarón, por estatuto perpetuo",
+     "certeza": "texto",
+     "ref": "Nm 10:8",
+     "cita": "los hijos de Aarón, los sacerdotes, tocarán las trompetas"
+    },
+    {
+     "texto": "Finees va a la guerra con las trompetas en su mano",
+     "certeza": "texto",
+     "ref": "Nm 31:6",
+     "cita": "con las trompetas en su mano para tocar"
+    }
+   ],
+   "externo": []
+  },
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "Nm 10:33",
+     "fin": "Nm 10:36"
+    },
+    {
+     "inicio": "Nm 14:44",
+     "fin": "Nm 14:44"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "arca",
+   "resumen": "El arca va delante del pueblo tres días buscándole descanso; Moisés habla al levantarla y al posarla.",
+   "datos": [
+    {
+     "texto": "Va delante de ellos camino de tres días",
+     "certeza": "texto",
+     "ref": "Nm 10:33",
+     "cita": "el arca de la alianza de Jehová fué delante de ellos camino de tres días"
+    },
+    {
+     "texto": "Cuando asentaba, Moisés decía: «Vuelve, Jehová»",
+     "certeza": "texto",
+     "ref": "Nm 10:36",
+     "cita": "Vuelve, Jehová, á los millares de millares de Israel"
+    },
+    {
+     "texto": "No se aparta del campo cuando el pueblo sube obstinado al monte",
+     "certeza": "texto",
+     "ref": "Nm 14:44",
+     "cita": "el arca de la alianza de Jehová, y Moisés, no se apartaron de en medio del campo"
+    }
+   ],
+   "externo": []
+  },
+  "columna-de-nube-y-fuego": {
+   "nombre": "Columna de nube y de fuego",
+   "tipo": "señal divina",
+   "apariciones": [
+    {
+     "inicio": "Nm 9:15",
+     "fin": "Nm 9:23"
+    },
+    {
+     "inicio": "Nm 10:11",
+     "fin": "Nm 10:12"
+    },
+    {
+     "inicio": "Nm 10:34",
+     "fin": "Nm 10:34"
+    },
+    {
+     "inicio": "Nm 12:5",
+     "fin": "Nm 12:5"
+    },
+    {
+     "inicio": "Nm 12:10",
+     "fin": "Nm 12:10"
+    },
+    {
+     "inicio": "Nm 14:14",
+     "fin": "Nm 14:14"
+    },
+    {
+     "inicio": "Nm 16:42",
+     "fin": "Nm 16:42"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "La nube cubre el tabernáculo; de noche tiene apariencia de fuego, y el pueblo parte o acampa según ella se alce o pose.",
+   "datos": [
+    {
+     "texto": "El día que se levantó el tabernáculo, la nube lo cubrió; de tarde parecía fuego",
+     "certeza": "texto",
+     "ref": "Nm 9:15",
+     "cita": "la nube cubrió el tabernáculo"
+    },
+    {
+     "texto": "Cuando se alzaba, el pueblo partía; donde paraba, allí acampaban",
+     "certeza": "texto",
+     "ref": "Nm 9:17",
+     "cita": "según que se alzaba la nube del tabernáculo, los hijos de Israel se partían"
+    },
+    {
+     "texto": "La nube paró en el desierto de Parán",
+     "certeza": "texto",
+     "ref": "Nm 10:12",
+     "cita": "paró la nube en el desierto de Parán"
+    }
+   ],
+   "externo": []
+  },
+  "mana": {
+   "nombre": "Maná",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "Nm 11:6",
+     "fin": "Nm 11:9"
+    },
+    {
+     "inicio": "Nm 21:5",
+     "fin": "Nm 21:5"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "El pan del desierto: al pueblo le cansa porque no ve otra cosa; el texto describe cómo se molía, cocía o hacía tortas.",
+   "datos": [
+    {
+     "texto": "Era como semilla de culantro y color de bdelio",
+     "certeza": "texto",
+     "ref": "Nm 11:7",
+     "cita": "como semilla de culantro"
+    },
+    {
+     "texto": "Lo molían o machacaban, lo cocían o hacían tortas; sabor de aceite nuevo",
+     "certeza": "texto",
+     "ref": "Nm 11:8",
+     "cita": "sabor de aceite nuevo"
+    },
+    {
+     "texto": "Descendía con el rocío sobre el real de noche",
+     "certeza": "texto",
+     "ref": "Nm 11:9",
+     "cita": "el maná descendía de sobre él"
+    }
+   ],
+   "externo": []
+  },
+  "codornices-de-kibrot-hataava": {
+   "nombre": "Codornices del viento de Jehová",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "Nm 11:31",
+     "fin": "Nm 11:34"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "kibrot-hataava"
+   ],
+   "resumen": "Un viento trae codornices del mar y las deja alrededor del campo; el pueblo las recoge y una plaga cae sobre los codiciosos.",
+   "datos": [
+    {
+     "texto": "Un viento trajo codornices, casi dos codos sobre la tierra, un día de camino a cada lado",
+     "certeza": "texto",
+     "ref": "Nm 11:31",
+     "cita": "trajo codornices de la mar"
+    },
+    {
+     "texto": "El que menos recogió diez montones",
+     "certeza": "texto",
+     "ref": "Nm 11:32",
+     "cita": "el que menos, recogió diez montones"
+    },
+    {
+     "texto": "Aún con la carne entre los dientes, Jehová hirió al pueblo con una gran plaga",
+     "certeza": "texto",
+     "ref": "Nm 11:33",
+     "cita": "hirió Jehová al pueblo con una muy grande plaga"
+    }
+   ],
+   "externo": []
+  },
+  "racimo-de-escol": {
+   "nombre": "Racimo de uvas de Escol",
+   "tipo": "fruto",
+   "apariciones": [
+    {
+     "inicio": "Nm 13:23",
+     "fin": "Nm 13:26"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "valle-de-escol"
+   ],
+   "resumen": "Racimo cortado en el arroyo de Escol, tan grande que dos lo llevan en un palo, con granadas e higos.",
+   "datos": [
+    {
+     "texto": "Lo trajeron dos en un palo",
+     "certeza": "texto",
+     "ref": "Nm 13:24",
+     "cita": "el cual trajeron dos en un palo"
+    },
+    {
+     "texto": "El lugar se llamó Nahal-escol por el racimo",
+     "certeza": "texto",
+     "ref": "Nm 13:25",
+     "cita": "por el racimo que cortaron de allí"
+    },
+    {
+     "texto": "Volvieron de reconocer la tierra al cabo de cuarenta días",
+     "certeza": "texto",
+     "ref": "Nm 13:26",
+     "cita": "al cabo de cuarenta días"
+    }
+   ],
+   "externo": []
+  },
+  "incensarios-de-core": {
+   "nombre": "Incensarios de Coré y sus 250 hombres",
+   "tipo": "utensilio sagrado",
+   "apariciones": [
+    {
+     "inicio": "Nm 16:6",
+     "fin": "Nm 16:7"
+    },
+    {
+     "inicio": "Nm 16:17",
+     "fin": "Nm 16:18"
+    },
+    {
+     "inicio": "Nm 16:35",
+     "fin": "Nm 16:39"
+    }
+   ],
+   "personas": [
+    "Korah_3",
+    "Moses_1",
+    "Aaron_1",
+    "Eleazar_1"
+   ],
+   "lugares": [],
+   "resumen": "Los 250 incensarios con fuego y sahumerio ofrecidos delante de Jehová; tras el fuego, quedan santificados.",
+   "datos": [
+    {
+     "texto": "Doscientos cincuenta incensarios más los de Coré y Aarón",
+     "certeza": "texto",
+     "ref": "Nm 16:17",
+     "cita": "doscientos y cincuenta incensarios"
+    },
+    {
+     "texto": "Sale fuego de Jehová y consume a los 250 que ofrecían el sahumerio",
+     "certeza": "texto",
+     "ref": "Nm 16:35",
+     "cita": "consumió los doscientos y cincuenta hombres que ofrecían el sahumerio"
+    },
+    {
+     "texto": "Son santificados por haberse ofrecido con ellos delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 16:38",
+     "cita": "son santificados"
+    }
+   ],
+   "externo": []
+  },
+  "planchas-del-altar": {
+   "nombre": "Planchas de metal que cubren el altar",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Nm 16:37",
+     "fin": "Nm 16:40"
+    }
+   ],
+   "personas": [
+    "Eleazar_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "altar-holocausto",
+   "resumen": "Los incensarios de los quemados, extendidos en planchas para cubrir el altar, recuerdo de que ningún extraño ofrezca sahumerio.",
+   "datos": [
+    {
+     "texto": "Eleazar los extiende para cubrir el altar",
+     "certeza": "texto",
+     "ref": "Nm 16:39",
+     "cita": "extendiéronlos para cubrir el altar"
+    },
+    {
+     "texto": "Recuerdo para que ningún extraño que no sea de la simiente de Aarón ofrezca sahumerio",
+     "certeza": "texto",
+     "ref": "Nm 16:40",
+     "cita": "ningún extraño que no sea de la simiente de Aarón"
+    }
+   ],
+   "externo": []
+  },
+  "incensario-de-aaron": {
+   "nombre": "Incensario de la expiación de Aarón",
+   "tipo": "utensilio sagrado",
+   "apariciones": [
+    {
+     "inicio": "Nm 16:46",
+     "fin": "Nm 16:48"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "Con fuego del altar y perfume, Aarón corre entre el pueblo y detiene la mortandad.",
+   "datos": [
+    {
+     "texto": "Moisés le manda poner fuego del altar y perfume",
+     "certeza": "texto",
+     "ref": "Nm 16:46",
+     "cita": "Toma el incensario, y pon en él fuego del altar"
+    },
+    {
+     "texto": "Murieron 14.700, sin los del negocio de Coré",
+     "certeza": "texto",
+     "ref": "Nm 16:49",
+     "cita": "catorce mil y setecientos"
+    }
+   ],
+   "externo": []
+  },
+  "vara-de-aaron": {
+   "nombre": "Vara de Aarón",
+   "tipo": "vara",
+   "apariciones": [
+    {
+     "inicio": "Nm 17:1",
+     "fin": "Nm 17:11"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "Entre doce varas con el nombre de cada casa, solo la de Aarón (casa de Leví) brota, florece y da almendras; se guarda delante del testimonio.",
+   "datos": [
+    {
+     "texto": "El nombre de Aarón va en la vara de Leví",
+     "certeza": "texto",
+     "ref": "Nm 17:3",
+     "cita": "escribirás el nombre de Aarón sobre la vara de Leví"
+    },
+    {
+     "texto": "Al día siguiente había brotado, echado flores y producido almendras",
+     "certeza": "texto",
+     "ref": "Nm 17:8",
+     "cita": "echado flores, y arrojado renuevos, y producido almendras"
+    },
+    {
+     "texto": "Se guarda delante del testimonio como señal a los rebeldes",
+     "certeza": "texto",
+     "ref": "Nm 17:10",
+     "cita": "para que se guarde por señal á los hijos rebeldes"
+    }
+   ],
+   "externo": []
+  },
+  "vaca-alazana": {
+   "nombre": "Vaca bermeja y agua de separación",
+   "tipo": "rito de purificación",
+   "apariciones": [
+    {
+     "inicio": "Nm 19:2",
+     "fin": "Nm 19:19"
+    },
+    {
+     "inicio": "Nm 31:23",
+     "fin": "Nm 31:23"
+    }
+   ],
+   "personas": [
+    "Eleazar_1",
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "resumen": "Una vaca bermeja sin defecto se quema fuera del campo con cedro, hisopo y escarlata; sus cenizas con agua viva purifican al tocado por un muerto.",
+   "datos": [
+    {
+     "texto": "Debe ser bermeja, perfecta, sin yugo",
+     "certeza": "texto",
+     "ref": "Nm 19:2",
+     "cita": "una vaca bermeja, perfecta"
+    },
+    {
+     "texto": "Se echa palo de cedro, hisopo y escarlata al fuego",
+     "certeza": "texto",
+     "ref": "Nm 19:6",
+     "cita": "palo de cedro, é hisopo, y escarlata"
+    },
+    {
+     "texto": "Un hombre limpio recoge las cenizas para el agua de separación",
+     "certeza": "texto",
+     "ref": "Nm 19:9",
+     "cita": "para el agua de separación"
+    }
+   ],
+   "externo": []
+  },
+  "serpiente-de-bronce": {
+   "nombre": "Serpiente de metal sobre la bandera",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:8",
+     "fin": "Nm 21:9"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "camino-mar-rojo"
+   ],
+   "resumen": "Moisés hace una serpiente de metal y la pone sobre una bandera: el mordido que la mira, vive.",
+   "datos": [
+    {
+     "texto": "Jehová manda hacer una serpiente ardiente y ponerla sobre la bandera",
+     "certeza": "texto",
+     "ref": "Nm 21:8",
+     "cita": "Hazte una serpiente ardiente, y ponla sobre la bandera"
+    },
+    {
+     "texto": "Quien era mordido y la miraba, vivía",
+     "certeza": "texto",
+     "ref": "Nm 21:9",
+     "cita": "miraba á la serpiente de metal, y vivía"
+    }
+   ],
+   "externo": []
+  },
+  "asna-de-balaam": {
+   "nombre": "Asna de Balaam",
+   "tipo": "animal",
+   "apariciones": [
+    {
+     "inicio": "Nm 22:21",
+     "fin": "Nm 22:33"
+    }
+   ],
+   "personas": [
+    "Balaam_1"
+   ],
+   "lugares": [],
+   "resumen": "El asna ve al ángel de Jehová con la espada desnuda tres veces, se aparta y habla cuando Jehová abre su boca.",
+   "datos": [
+    {
+     "texto": "Ve al ángel con la espada desnuda y se aparta del camino",
+     "certeza": "texto",
+     "ref": "Nm 22:23",
+     "cita": "vió al ángel de Jehová"
+    },
+    {
+     "texto": "Jehová abre su boca y habla a Balaam",
+     "certeza": "texto",
+     "ref": "Nm 22:28",
+     "cita": "Jehová abrió la boca al asna"
+    },
+    {
+     "texto": "Según el ángel, el asna se apartó tres veces y salvó a Balaam",
+     "certeza": "texto",
+     "ref": "Nm 22:33",
+     "cita": "El asna me ha visto, y hase apartado luego de delante de mí estas tres veces"
+    }
+   ],
+   "externo": []
+  },
+  "siete-altares-de-balaam": {
+   "nombre": "Siete altares de Balaam",
+   "tipo": "altares",
+   "apariciones": [
+    {
+     "inicio": "Nm 23:1",
+     "fin": "Nm 23:4"
+    },
+    {
+     "inicio": "Nm 23:14",
+     "fin": "Nm 23:14"
+    },
+    {
+     "inicio": "Nm 23:29",
+     "fin": "Nm 23:30"
+    }
+   ],
+   "personas": [
+    "Balaam_1",
+    "Balak_1"
+   ],
+   "lugares": [],
+   "resumen": "En cada lugar se levantan siete altares con un becerro y un carnero en cada uno, antes de cada oráculo.",
+   "datos": [
+    {
+     "texto": "Balaam pide siete altares, siete becerros y siete carneros",
+     "certeza": "texto",
+     "ref": "Nm 23:1",
+     "cita": "Edifícame aquí siete altares"
+    },
+    {
+     "texto": "El segundo lugar es la cumbre de Pisga, con siete altares",
+     "certeza": "texto",
+     "ref": "Nm 23:14",
+     "cita": "edificó siete altares"
+    },
+    {
+     "texto": "El tercero, en Peor, repite la ofrenda",
+     "certeza": "texto",
+     "ref": "Nm 23:30",
+     "cita": "ofreció un becerro y un carnero en cada altar"
+    }
+   ],
+   "externo": []
+  },
+  "lanza-de-finees": {
+   "nombre": "Lanza de Finees",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "Nm 25:7",
+     "fin": "Nm 25:8"
+    }
+   ],
+   "personas": [
+    "Phinehas_1"
+   ],
+   "lugares": [],
+   "resumen": "La lanza con que Finees alancea a Zimri y a la madianita, y cesa la mortandad.",
+   "datos": [
+    {
+     "texto": "Finees toma una lanza en su mano",
+     "certeza": "texto",
+     "ref": "Nm 25:7",
+     "cita": "tomó una lanza en su mano"
+    },
+    {
+     "texto": "Murieron veinticuatro mil en la mortandad",
+     "certeza": "texto",
+     "ref": "Nm 25:9",
+     "cita": "murieron de aquella mortandad veinte y cuatro mil"
+    }
+   ],
+   "externo": []
+  },
+  "franjas-de-los-vestidos": {
+   "nombre": "Franjas con cordón de cárdeno",
+   "tipo": "vestido",
+   "apariciones": [
+    {
+     "inicio": "Nm 15:37",
+     "fin": "Nm 15:41"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "Pezuelos en los remates de los vestidos con un cordón de cárdeno para recordar los mandamientos de Jehová.",
+   "datos": [
+    {
+     "texto": "Se hacen franjas en los remates con un cordón de cárdeno",
+     "certeza": "texto",
+     "ref": "Nm 15:38",
+     "cita": "un cordón de cárdeno"
+    },
+    {
+     "texto": "Sirven para acordarse de todos los mandamientos de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 15:39",
+     "cita": "para que cuando lo viereis, os acordéis de todos los mandamientos de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "ofrenda-de-los-jefes": {
+   "nombre": "Carros, bueyes y vasos de los jefes",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Nm 7:1",
+     "fin": "Nm 7:11"
+    },
+    {
+     "inicio": "Nm 7:84",
+     "fin": "Nm 7:88"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Nahshon_1",
+    "Nethanel_1",
+    "Eliab_1",
+    "Elizur_1",
+    "Shelumiel_1",
+    "Eliasaph_1",
+    "Elishama_1",
+    "Gamaliel_1",
+    "Abidan_1",
+    "Ahiezer_1",
+    "Pagiel_1",
+    "Ahira_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "altar-holocausto",
+   "resumen": "Seis carros cubiertos y doce bueyes, más doce platos de plata, doce jarros de plata y doce cucharas de oro, uno por jefe.",
+   "datos": [
+    {
+     "texto": "Seis carros cubiertos y doce bueyes: un carro por cada dos príncipes",
+     "certeza": "texto",
+     "ref": "Nm 7:3",
+     "cita": "seis carros cubiertos, y doce bueyes"
+    },
+    {
+     "texto": "Doce platos de plata, doce jarros de plata y doce cucharas de oro",
+     "certeza": "texto",
+     "ref": "Nm 7:84",
+     "cita": "doce platos de plata, doce jarros de plata, doce cucharas de oro"
+    },
+    {
+     "texto": "Cada plato pesaba ciento treinta siclos y cada jarro setenta",
+     "certeza": "texto",
+     "ref": "Nm 7:85",
+     "cita": "Cada plato de ciento y treinta"
+    }
+   ],
+   "externo": []
+  },
+  "banderas-de-las-tribus": {
+   "nombre": "Banderas de las tribus",
+   "tipo": "estandarte",
+   "apariciones": [
+    {
+     "inicio": "Nm 1:52",
+     "fin": "Nm 1:52"
+    },
+    {
+     "inicio": "Nm 2:2",
+     "fin": "Nm 2:34"
+    },
+    {
+     "inicio": "Nm 10:14",
+     "fin": "Nm 10:14"
+    },
+    {
+     "inicio": "Nm 10:18",
+     "fin": "Nm 10:18"
+    },
+    {
+     "inicio": "Nm 10:22",
+     "fin": "Nm 10:22"
+    },
+    {
+     "inicio": "Nm 10:25",
+     "fin": "Nm 10:25"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "resumen": "Cada tribu acampa junto a su bandera, alrededor del tabernáculo, y marcha en orden.",
+   "datos": [
+    {
+     "texto": "Cada uno acampa junto a su bandera, según las enseñas de las casas de sus padres",
+     "certeza": "texto",
+     "ref": "Nm 2:2",
+     "cita": "cada uno junto á su bandera, según las enseñas de las casas de sus padres"
+    },
+    {
+     "texto": "La bandera de Judá comienza a marchar primero",
+     "certeza": "texto",
+     "ref": "Nm 10:14",
+     "cita": "la bandera del campo de los hijos de Judá comenzó á marchar primero"
+    }
+   ],
+   "externo": []
+  },
+  "candelabro": {
+   "nombre": "Candelabro de oro",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "Nm 8:2",
+     "fin": "Nm 8:4"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "candelabro",
+   "resumen": "Aarón enciende las siete lámparas frente al candelero de oro labrado a martillo, según el modelo mostrado a Moisés.",
+   "datos": [
+    {
+     "texto": "Las siete lámparas alumbran frente al candelero",
+     "certeza": "texto",
+     "ref": "Nm 8:2",
+     "cita": "las siete lámparas alumbrarán frente á frente del candelero"
+    },
+    {
+     "texto": "Es de oro labrado a martillo según el modelo mostrado a Moisés",
+     "certeza": "texto",
+     "ref": "Nm 8:4",
+     "cita": "conforme al modelo que Jehová mostró á Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "urim-y-tumim": {
+   "nombre": "Urim y Tumim",
+   "tipo": "objeto del sacerdocio",
+   "apariciones": [
+    {
+     "inicio": "Nm 27:21",
+     "fin": "Nm 27:21"
+    }
+   ],
+   "personas": [
+    "Eleazar_1",
+    "Joshua_1"
+   ],
+   "lugares": [],
+   "resumen": "Josué consultará por medio de Eleazar el juicio del Urim.",
+   "datos": [
+    {
+     "texto": "Josué preguntará a Eleazar por el juicio del Urim delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 27:21",
+     "cita": "preguntará por el juicio del Urim"
+    }
+   ],
+   "externo": []
+  },
+  "vestiduras-sagradas": {
+   "nombre": "Vestiduras sagradas del sumo sacerdote",
+   "tipo": "vestido sacerdotal",
+   "apariciones": [
+    {
+     "inicio": "Nm 20:26",
+     "fin": "Nm 20:28"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Eleazar_1"
+   ],
+   "lugares": [],
+   "resumen": "En el monte Hor Moisés desnuda a Aarón y viste con sus ropas a Eleazar.",
+   "datos": [
+    {
+     "texto": "Se manda vestir a Eleazar con las vestiduras de Aarón",
+     "certeza": "texto",
+     "ref": "Nm 20:26",
+     "cita": "viste de ellos á Eleazar su hijo"
+    },
+    {
+     "texto": "Moisés lo hace antes de que Aarón muera",
+     "certeza": "texto",
+     "ref": "Nm 20:28",
+     "cita": "vistiólos á Eleazar su hijo"
+    }
+   ],
+   "externo": []
+  },
+  "vara-de-moises": {
+   "nombre": "Vara de Moisés (vara de Dios)",
+   "tipo": "vara",
+   "apariciones": [
+    {
+     "inicio": "Nm 20:8",
+     "fin": "Nm 20:11"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "resumen": "Moisés toma la vara de delante de Jehová y golpea la peña dos veces.",
+   "datos": [
+    {
+     "texto": "Jehová manda tomar la vara y hablar a la peña",
+     "certeza": "texto",
+     "ref": "Nm 20:8",
+     "cita": "Toma la vara"
+    },
+    {
+     "texto": "Golpea la peña dos veces con su vara",
+     "certeza": "texto",
+     "ref": "Nm 20:11",
+     "cita": "hirió la peña con su vara dos veces"
+    }
+   ],
+   "externo": []
+  },
+  "pena-de-meriba": {
+   "nombre": "Peña de las aguas de la rencilla",
+   "tipo": "roca",
+   "apariciones": [
+    {
+     "inicio": "Nm 20:8",
+     "fin": "Nm 20:13"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [
+    "meriba-cades"
+   ],
+   "resumen": "Peña del desierto de Zin: Jehová manda hablarle, Moisés la golpea y sale agua; Jehová dice que no entrarán en la tierra.",
+   "datos": [
+    {
+     "texto": "Se manda hablar a la peña para que dé su agua",
+     "certeza": "texto",
+     "ref": "Nm 20:8",
+     "cita": "hablad á la peña en ojos de ellos"
+    },
+    {
+     "texto": "Se llaman «aguas de la rencilla»",
+     "certeza": "texto",
+     "ref": "Nm 20:13",
+     "cita": "Estas son las aguas de la rencilla"
+    }
+   ],
+   "externo": []
+  },
+  "ofrenda-de-oro-de-los-capitanes": {
+   "nombre": "Oro de los capitanes",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Nm 31:48",
+     "fin": "Nm 31:54"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Eleazar_1"
+   ],
+   "lugares": [],
+   "resumen": "Los jefes del ejército ofrecen oro (vasos, brazaletes, anillos, zarcillos y cadenas) para expiar sus almas: 16.750 siclos.",
+   "datos": [
+    {
+     "texto": "Ofrecen vasos de oro, brazaletes, manillas, anillos, zarcillos y cadenas",
+     "certeza": "texto",
+     "ref": "Nm 31:50",
+     "cita": "vasos de oro, brazaletes, manillas, anillos, zarcillos, y cadenas"
+    },
+    {
+     "texto": "El oro pesó 16.750 siclos",
+     "certeza": "texto",
+     "ref": "Nm 31:52",
+     "cita": "diez y seis mil setecientos y cincuenta siclos"
+    }
+   ],
+   "externo": []
+  },
+  "libro-de-las-batallas": {
+   "nombre": "Libro de las batallas de Jehová",
+   "tipo": "libro",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:14",
+     "fin": "Nm 21:15"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "Libro citado para los arroyos de Arnón: lo único que Números dice de él.",
+   "datos": [
+    {
+     "texto": "Se cita «el libro de las batallas de Jehová»",
+     "certeza": "texto",
+     "ref": "Nm 21:14",
+     "cita": "el libro de las batallas de Jehová"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "censo-del-sinai": {
+   "nombre": "El censo del Sinaí",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Nm 1:1",
+     "fin": "Nm 1:19"
+    },
+    {
+     "inicio": "Nm 1:44",
+     "fin": "Nm 1:54"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Nahshon_1",
+    "Nethanel_1",
+    "Eliab_1",
+    "Elizur_1",
+    "Shelumiel_1",
+    "Eliasaph_1",
+    "Elishama_1",
+    "Gamaliel_1",
+    "Abidan_1",
+    "Ahiezer_1",
+    "Pagiel_1",
+    "Ahira_1"
+   ],
+   "objetos": [],
+   "resumen": "Moisés y Aarón, con un jefe por tribu, cuentan a los hombres de veinte años arriba; los levitas no se cuentan con ellos.",
+   "datos": [
+    {
+     "texto": "Cuentan a todos los de veinte años arriba que pueden salir a la guerra",
+     "certeza": "texto",
+     "ref": "Nm 1:3",
+     "cita": "De veinte años arriba, todos los que pueden salir á la guerra en Israel"
+    },
+    {
+     "texto": "El total es 603.550",
+     "certeza": "texto",
+     "ref": "Nm 1:46",
+     "cita": "seiscientos tres mil quinientos y cincuenta"
+    },
+    {
+     "texto": "La tribu de Leví no se cuenta",
+     "certeza": "texto",
+     "ref": "Nm 1:49",
+     "cita": "no contarás la tribu de Leví"
+    }
+   ],
+   "externo": []
+  },
+  "campamento-por-tribus": {
+   "nombre": "El campamento por tribus",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Nm 2:1",
+     "fin": "Nm 2:34"
+    },
+    {
+     "inicio": "Nm 3:23",
+     "fin": "Nm 3:38"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "banderas-de-las-tribus"
+   ],
+   "resumen": "Las tribus acampan alrededor del tabernáculo bajo sus banderas: Judá al oriente y las demás a sus lados; los levitas rodean el tabernáculo.",
+   "datos": [
+    {
+     "texto": "Judá acampa al levante, al oriente",
+     "certeza": "texto",
+     "ref": "Nm 2:3",
+     "cita": "Estos acamparán al levante, al oriente"
+    },
+    {
+     "texto": "Acampan y marchan cada uno por su bandera",
+     "certeza": "texto",
+     "ref": "Nm 2:34",
+     "cita": "así asentaron el campo por sus banderas"
+    },
+    {
+     "texto": "Moisés, Aarón y sus hijos acampan al oriente, delante del tabernáculo",
+     "certeza": "texto",
+     "ref": "Nm 3:38",
+     "cita": "serán Moisés, y Aarón y sus hijos"
+    }
+   ],
+   "externo": []
+  },
+  "dedicacion-del-altar": {
+   "nombre": "La dedicación del altar",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Nm 7:1",
+     "fin": "Nm 7:89"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Nahshon_1",
+    "Nethanel_1",
+    "Eliab_1",
+    "Elizur_1",
+    "Shelumiel_1",
+    "Eliasaph_1",
+    "Elishama_1",
+    "Gamaliel_1",
+    "Abidan_1",
+    "Ahiezer_1",
+    "Pagiel_1",
+    "Ahira_1"
+   ],
+   "objetos": [
+    "ofrenda-de-los-jefes",
+    "altar-del-holocausto"
+   ],
+   "resumen": "Doce jefes ofrecen, un día cada uno, el mismo plato, jarro y cuchara; Moisés oye la Voz desde la cubierta del arca.",
+   "datos": [
+    {
+     "texto": "Un príncipe cada día",
+     "certeza": "texto",
+     "ref": "Nm 7:11",
+     "cita": "un príncipe un día, y otro príncipe otro día"
+    },
+    {
+     "texto": "Doce platos de plata, doce jarros y doce cucharas de oro",
+     "certeza": "texto",
+     "ref": "Nm 7:84",
+     "cita": "doce platos de plata, doce jarros de plata, doce cucharas de oro"
+    },
+    {
+     "texto": "Moisés oye la Voz entre los dos querubines",
+     "certeza": "texto",
+     "ref": "Nm 7:89",
+     "cita": "de entre los dos querubines"
+    }
+   ],
+   "externo": []
+  },
+  "consagracion-de-los-levitas": {
+   "nombre": "La consagración de los levitas",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Nm 8:5",
+     "fin": "Nm 8:22"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [],
+   "resumen": "Los levitas se expían con agua, navaja y vestidos lavados, y Aarón los presenta como ofrenda delante de Jehová.",
+   "datos": [
+    {
+     "texto": "Se rocía agua de expiación, pasa la navaja y lavan sus vestidos",
+     "certeza": "texto",
+     "ref": "Nm 8:7",
+     "cita": "rocía sobre ellos el agua de la expiación"
+    },
+    {
+     "texto": "Aarón los ofrece y hace expiación por ellos",
+     "certeza": "texto",
+     "ref": "Nm 8:21",
+     "cita": "Aarón los ofreció en ofrenda delante de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "segunda-pascua": {
+   "nombre": "La Pascua del segundo año y la «segunda Pascua»",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Nm 9:1",
+     "fin": "Nm 9:14"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [],
+   "resumen": "Hacen la Pascua el día catorce del mes primero; los inmundos por un muerto piden poder hacerla y Jehová fija una segunda fecha en el mes segundo.",
+   "datos": [
+    {
+     "texto": "La hicieron en el desierto de Sinaí",
+     "certeza": "texto",
+     "ref": "Nm 9:5",
+     "cita": "hicieron la pascua en el [mes] primero"
+    },
+    {
+     "texto": "Los inmundos o de viaje la hacen el mes segundo, el día catorce",
+     "certeza": "texto",
+     "ref": "Nm 9:11",
+     "cita": "En el mes segundo, á los catorce días del mes"
+    }
+   ],
+   "externo": []
+  },
+  "partida-del-sinai": {
+   "nombre": "La partida del Sinaí",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Nm 10:11",
+     "fin": "Nm 10:36"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Hobab_1",
+    "Nahshon_1",
+    "Nethanel_1",
+    "Eliab_1",
+    "Elizur_1",
+    "Shelumiel_1",
+    "Eliasaph_1",
+    "Elishama_1",
+    "Gamaliel_1",
+    "Abidan_1",
+    "Ahiezer_1",
+    "Pagiel_1",
+    "Ahira_1"
+   ],
+   "objetos": [
+    "trompetas-de-plata",
+    "arca-del-testimonio",
+    "columna-de-nube-y-fuego",
+    "banderas-de-las-tribus"
+   ],
+   "resumen": "El año segundo, el día veinte del mes segundo, la nube se alza y el pueblo parte en orden hacia Parán, con el arca al frente.",
+   "datos": [
+    {
+     "texto": "La nube se alzó el día veinte del mes segundo del año segundo",
+     "certeza": "texto",
+     "ref": "Nm 10:11",
+     "cita": "á los veinte del mes, que la nube se alzó"
+    },
+    {
+     "texto": "Judá marcha primero",
+     "certeza": "texto",
+     "ref": "Nm 10:14",
+     "cita": "comenzó á marchar primero"
+    }
+   ],
+   "externo": []
+  },
+  "taberah": {
+   "nombre": "Taberá",
+   "lugar": "tabera",
+   "apariciones": [
+    {
+     "inicio": "Nm 11:1",
+     "fin": "Nm 11:3"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "El pueblo se queja, el fuego de Jehová quema un extremo del campo y se apaga cuando Moisés ora.",
+   "datos": [
+    {
+     "texto": "El fuego de Jehová consumió un cabo del campo",
+     "certeza": "texto",
+     "ref": "Nm 11:1",
+     "cita": "consumió el un cabo del campo"
+    },
+    {
+     "texto": "El lugar se llamó Taberah",
+     "certeza": "texto",
+     "ref": "Nm 11:3",
+     "cita": "Taberah"
+    }
+   ],
+   "externo": []
+  },
+  "kibrot-hataava": {
+   "nombre": "Kibrot-hataava: codornices y setenta ancianos",
+   "lugar": "kibrot-hataava",
+   "apariciones": [
+    {
+     "inicio": "Nm 11:4",
+     "fin": "Nm 11:35"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Eldad_1",
+    "Medad_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "mana",
+    "codornices-de-kibrot-hataava"
+   ],
+   "resumen": "El pueblo pide carne; Jehová pone su espíritu sobre setenta ancianos y envía codornices; muchos mueren y el lugar se llama «sepulcros de la codicia».",
+   "datos": [
+    {
+     "texto": "El espíritu reposa sobre los setenta ancianos y profetizan",
+     "certeza": "texto",
+     "ref": "Nm 11:25",
+     "cita": "tomó del espíritu que estaba en él, y púsolo en los setenta varones ancianos"
+    },
+    {
+     "texto": "El nombre significa que allí sepultaron al pueblo codicioso",
+     "certeza": "texto",
+     "ref": "Nm 11:34",
+     "cita": "allí sepultaron al pueblo codicioso"
+    }
+   ],
+   "externo": []
+  },
+  "maria-leprosa-en-haseroth": {
+   "nombre": "María leprosa fuera del real",
+   "lugar": "haserot",
+   "apariciones": [
+    {
+     "inicio": "Nm 12:1",
+     "fin": "Nm 12:16"
+    }
+   ],
+   "personas": [
+    "Miriam_1",
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "objetos": [
+    "columna-de-nube-y-fuego"
+   ],
+   "resumen": "Jehová llama a los tres a la puerta del tabernáculo; María queda leprosa y es apartada siete días. Que sea en Haseroth se infiere de Nm 11:35 y 13:1.",
+   "datos": [
+    {
+     "texto": "Jehová desciende en la columna de la nube a la puerta del tabernáculo",
+     "certeza": "texto",
+     "ref": "Nm 12:5",
+     "cita": "descendió en la columna de la nube"
+    },
+    {
+     "texto": "El pueblo espera siete días a María",
+     "certeza": "texto",
+     "ref": "Nm 12:15",
+     "cita": "el pueblo no pasó adelante"
+    },
+    {
+     "texto": "El pueblo llegó a Haseroth antes de este episodio y salió de allí en Nm 13:1",
+     "certeza": "inferido",
+     "ref": "Nm 11:35"
+    }
+   ],
+   "externo": []
+  },
+  "reconocimiento-de-canaan": {
+   "nombre": "Los enviados reconocen Canaán",
+   "lugar": "valle-de-escol",
+   "apariciones": [
+    {
+     "inicio": "Nm 13:17",
+     "fin": "Nm 13:26"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Caleb_1",
+    "Moses_1",
+    "Ahiman_1",
+    "Sheshai_1",
+    "Talmai_1",
+    "Shammua_1",
+    "Shaphat_1",
+    "Igal_1",
+    "Palti_1",
+    "Gaddiel_1",
+    "Gaddi_1",
+    "Ammiel_1",
+    "Sethur_1",
+    "Nahbi_1",
+    "Geuel_1"
+   ],
+   "objetos": [
+    "racimo-de-escol"
+   ],
+   "resumen": "Doce príncipes recorren la tierra desde Zin hasta Rehob; en Hebrón están los hijos de Anac y en Escol cortan un racimo.",
+   "datos": [
+    {
+     "texto": "Recorren desde el desierto de Zin hasta Rehob",
+     "certeza": "texto",
+     "ref": "Nm 13:22",
+     "cita": "desde el desierto de Zin hasta Rehob"
+    },
+    {
+     "texto": "Llegan al arroyo de Escol y cortan un racimo",
+     "certeza": "texto",
+     "ref": "Nm 13:24",
+     "cita": "hasta el arroyo de Escol"
+    }
+   ],
+   "externo": []
+  },
+  "informe-en-cades": {
+   "nombre": "El informe de los enviados en Cades",
+   "lugar": "cades",
+   "apariciones": [
+    {
+     "inicio": "Nm 13:26",
+     "fin": "Nm 14:39"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Joshua_1",
+    "Caleb_1",
+    "Shammua_1",
+    "Shaphat_1",
+    "Igal_1",
+    "Palti_1",
+    "Gaddiel_1",
+    "Gaddi_1",
+    "Ammiel_1",
+    "Sethur_1",
+    "Nahbi_1",
+    "Geuel_1"
+   ],
+   "objetos": [
+    "racimo-de-escol"
+   ],
+   "resumen": "Los enviados muestran el fruto; diez desaniman al pueblo, Josué y Caleb piden subir, el pueblo llora y Jehová sentencia cuarenta años.",
+   "datos": [
+    {
+     "texto": "Vuelven a Moisés y Aarón en Cades",
+     "certeza": "texto",
+     "ref": "Nm 13:27",
+     "cita": "en el desierto de Parán, en Cades"
+    },
+    {
+     "texto": "Cuarenta años, uno por cada día del reconocimiento",
+     "certeza": "texto",
+     "ref": "Nm 14:34",
+     "cita": "un año por cada día"
+    },
+    {
+     "texto": "Josué y Caleb rompen sus vestidos",
+     "certeza": "texto",
+     "ref": "Nm 14:6",
+     "cita": "rompieron sus vestidos"
+    }
+   ],
+   "externo": []
+  },
+  "derrota-en-horma": {
+   "nombre": "La derrota al subir al monte",
+   "lugar": "horma",
+   "apariciones": [
+    {
+     "inicio": "Nm 14:40",
+     "fin": "Nm 14:45"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "arca-del-testimonio"
+   ],
+   "resumen": "El pueblo sube a pesar de Moisés; amalecitas y cananeos los derrotan hasta Horma.",
+   "datos": [
+    {
+     "texto": "Se obstinan en subir a la cima",
+     "certeza": "texto",
+     "ref": "Nm 14:44",
+     "cita": "se obstinaron en subir á la cima del monte"
+    },
+    {
+     "texto": "Los hieren y derrotan hasta Horma",
+     "certeza": "texto",
+     "ref": "Nm 14:45",
+     "cita": "derrotáronlos, [persiguiéndolos] hasta Horma"
+    }
+   ],
+   "externo": []
+  },
+  "rebelion-de-core": {
+   "nombre": "La rebelión de Coré",
+   "apariciones": [
+    {
+     "inicio": "Nm 16:1",
+     "fin": "Nm 16:35"
+    }
+   ],
+   "personas": [
+    "Korah_3",
+    "Dathan_1",
+    "Abiram_1",
+    "On_1",
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "incensarios-de-core"
+   ],
+   "resumen": "Coré, Datán, Abiram, On y 250 príncipes se enfrentan a Moisés y Aarón; la tierra se traga a unos y el fuego consume a los de los incensarios.",
+   "datos": [
+    {
+     "texto": "Se levantan con doscientos cincuenta príncipes",
+     "certeza": "texto",
+     "ref": "Nm 16:2",
+     "cita": "con doscientos y cincuenta varones de los hijos de Israel"
+    },
+    {
+     "texto": "La tierra se rompe cuando Moisés acaba de hablar",
+     "certeza": "texto",
+     "ref": "Nm 16:31",
+     "cita": "rompióse la tierra que estaba debajo de ellos"
+    },
+    {
+     "texto": "Sale fuego de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 16:35",
+     "cita": "salió fuego de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "mortandad-detenida": {
+   "nombre": "La mortandad detenida por el incensario",
+   "apariciones": [
+    {
+     "inicio": "Nm 16:41",
+     "fin": "Nm 16:50"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "incensario-de-aaron"
+   ],
+   "resumen": "Al día siguiente el pueblo acusa a Moisés y Aarón; empieza una mortandad que Aarón detiene con el incensario.",
+   "datos": [
+    {
+     "texto": "El pueblo murmura al día siguiente",
+     "certeza": "texto",
+     "ref": "Nm 16:41",
+     "cita": "El día siguiente toda la congregación de los hijos de Israel murmuró"
+    },
+    {
+     "texto": "Cesa la mortandad",
+     "certeza": "texto",
+     "ref": "Nm 16:48",
+     "cita": "y cesó la mortandad"
+    }
+   ],
+   "externo": []
+  },
+  "vara-que-florecio": {
+   "nombre": "La vara que florece",
+   "apariciones": [
+    {
+     "inicio": "Nm 17:1",
+     "fin": "Nm 17:13"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "vara-de-aaron"
+   ],
+   "resumen": "Doce varas, una por casa, se ponen delante del testimonio; solo la de Aarón florece.",
+   "datos": [
+    {
+     "texto": "Doce varas, una por príncipe",
+     "certeza": "texto",
+     "ref": "Nm 17:6",
+     "cita": "doce varas"
+    },
+    {
+     "texto": "La vara se guarda delante del testimonio",
+     "certeza": "texto",
+     "ref": "Nm 17:10",
+     "cita": "Vuelve la vara de Aarón delante del testimonio"
+    }
+   ],
+   "externo": []
+  },
+  "meriba": {
+   "nombre": "Meriba: la peña en Cades",
+   "lugar": "meriba-cades",
+   "apariciones": [
+    {
+     "inicio": "Nm 20:1",
+     "fin": "Nm 20:13"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Miriam_1"
+   ],
+   "objetos": [
+    "vara-de-moises",
+    "pena-de-meriba"
+   ],
+   "resumen": "Sin agua, el pueblo riñe con Moisés; Moisés golpea la peña y Jehová dice que él y Aarón no entrarán.",
+   "datos": [
+    {
+     "texto": "No había agua para la congregación",
+     "certeza": "texto",
+     "ref": "Nm 20:2",
+     "cita": "no hubiese agua para la congregación"
+    },
+    {
+     "texto": "Moisés les dice «rebeldes»",
+     "certeza": "texto",
+     "ref": "Nm 20:10",
+     "cita": "Oid ahora, rebeldes"
+    },
+    {
+     "texto": "Se llaman aguas de la rencilla",
+     "certeza": "texto",
+     "ref": "Nm 20:13",
+     "cita": "aguas de la rencilla"
+    }
+   ],
+   "externo": []
+  },
+  "embajada-a-edom": {
+   "nombre": "La embajada a Edom",
+   "lugar": "edom",
+   "apariciones": [
+    {
+     "inicio": "Nm 20:14",
+     "fin": "Nm 20:21"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Moisés pide paso por el camino real; Edom lo niega y sale con mano fuerte, e Israel se aparta.",
+   "datos": [
+    {
+     "texto": "Prometen ir por el camino real",
+     "certeza": "texto",
+     "ref": "Nm 20:17",
+     "cita": "por el camino real iremos"
+    },
+    {
+     "texto": "Edom no los deja pasar",
+     "certeza": "texto",
+     "ref": "Nm 20:21",
+     "cita": "No quiso, pues, Edom dejar pasar á Israel por su término"
+    }
+   ],
+   "externo": []
+  },
+  "monte-hor": {
+   "nombre": "El monte Hor",
+   "lugar": "monte-hor",
+   "apariciones": [
+    {
+     "inicio": "Nm 20:22",
+     "fin": "Nm 20:29"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Eleazar_1"
+   ],
+   "objetos": [
+    "vestiduras-sagradas"
+   ],
+   "resumen": "Aarón sube al monte con Moisés y Eleazar, pasa su vestimenta a su hijo y muere en la cumbre.",
+   "datos": [
+    {
+     "texto": "Se manda subir a Aarón y Eleazar",
+     "certeza": "texto",
+     "ref": "Nm 20:25",
+     "cita": "hazlos subir al monte de Hor"
+    },
+    {
+     "texto": "Aarón muere en la cumbre",
+     "certeza": "texto",
+     "ref": "Nm 20:28",
+     "cita": "Aarón murió allí en la cumbre del monte"
+    }
+   ],
+   "externo": []
+  },
+  "victoria-en-horma": {
+   "nombre": "La victoria sobre el rey de Arad",
+   "lugar": "horma",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:1",
+     "fin": "Nm 21:3"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "Israel hace voto, Jehová entrega al cananeo y el lugar se llama Horma.",
+   "datos": [
+    {
+     "texto": "Israel hace voto de destruir sus ciudades",
+     "certeza": "texto",
+     "ref": "Nm 21:2",
+     "cita": "yo destruiré sus ciudades"
+    },
+    {
+     "texto": "Se llama Horma",
+     "certeza": "texto",
+     "ref": "Nm 21:3",
+     "cita": "llamó el nombre de aquel lugar Horma"
+    }
+   ],
+   "externo": []
+  },
+  "serpientes-ardientes": {
+   "nombre": "Las serpientes ardientes",
+   "lugar": "camino-mar-rojo",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:4",
+     "fin": "Nm 21:9"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "serpiente-de-bronce"
+   ],
+   "resumen": "El pueblo habla contra Dios y Moisés; vienen serpientes ardientes y la serpiente de metal sana a quien la mira.",
+   "datos": [
+    {
+     "texto": "Jehová envía serpientes ardientes y muere mucho pueblo",
+     "certeza": "texto",
+     "ref": "Nm 21:6",
+     "cita": "Jehová envió entre el pueblo serpientes ardientes"
+    },
+    {
+     "texto": "El pueblo confiesa su pecado y Moisés ora",
+     "certeza": "texto",
+     "ref": "Nm 21:7",
+     "cita": "Pecado hemos por haber hablado contra Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "pozo-de-beer": {
+   "nombre": "El pozo de Beer",
+   "lugar": "beer",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:16",
+     "fin": "Nm 21:18"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Jehová dice a Moisés que junte al pueblo y les dará agua; Israel canta al pozo.",
+   "datos": [
+    {
+     "texto": "Jehová: «Junta el pueblo, y les daré agua»",
+     "certeza": "texto",
+     "ref": "Nm 21:16",
+     "cita": "Junta el pueblo, y les daré agua"
+    },
+    {
+     "texto": "Israel canta «Sube, oh pozo»",
+     "certeza": "texto",
+     "ref": "Nm 21:17",
+     "cita": "Sube, oh pozo"
+    }
+   ],
+   "externo": []
+  },
+  "sehon-en-hesbon": {
+   "nombre": "La victoria sobre Sehón",
+   "lugar": "hesbon",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:21",
+     "fin": "Nm 21:31"
+    }
+   ],
+   "personas": [
+    "Sihon_1",
+    "Moses_1"
+   ],
+   "objetos": [
+    "libro-de-las-batallas"
+   ],
+   "resumen": "Sehón niega el paso y pelea en Jahaz; Israel toma su tierra de Arnón a Jaboc y habita en Hesbón.",
+   "datos": [
+    {
+     "texto": "Israel toma su tierra de Arnón hasta Jaboc",
+     "certeza": "texto",
+     "ref": "Nm 21:24",
+     "cita": "tomó su tierra desde Arnón hasta Jaboc"
+    },
+    {
+     "texto": "Habita en todas las ciudades del amorreo, en Hesbón",
+     "certeza": "texto",
+     "ref": "Nm 21:25",
+     "cita": "habitó Israel en todas las ciudades del Amorrheo"
+    }
+   ],
+   "externo": []
+  },
+  "og-en-edrei": {
+   "nombre": "La victoria sobre Og",
+   "lugar": "edrei",
+   "apariciones": [
+    {
+     "inicio": "Nm 21:32",
+     "fin": "Nm 21:35"
+    }
+   ],
+   "personas": [
+    "Og_1",
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Og sale a pelear en Edrei; Jehová dice a Moisés que no tema y es vencido con toda su gente.",
+   "datos": [
+    {
+     "texto": "Jehová: «No le tengas miedo»",
+     "certeza": "texto",
+     "ref": "Nm 21:34",
+     "cita": "No le tengas miedo"
+    },
+    {
+     "texto": "No le queda ninguno",
+     "certeza": "texto",
+     "ref": "Nm 21:35",
+     "cita": "sin que le quedara uno"
+    }
+   ],
+   "externo": []
+  },
+  "balaam-en-bamot-baal": {
+   "nombre": "Balaam en los altos de Baal",
+   "lugar": "bamot-baal",
+   "apariciones": [
+    {
+     "inicio": "Nm 22:41",
+     "fin": "Nm 23:12"
+    }
+   ],
+   "personas": [
+    "Balaam_1",
+    "Balak_1"
+   ],
+   "objetos": [
+    "siete-altares-de-balaam"
+   ],
+   "resumen": "Balac sube a Balaam a los altos de Baal, desde donde ve la extremidad del pueblo; primer oráculo.",
+   "datos": [
+    {
+     "texto": "Desde allí vio la extremidad del pueblo",
+     "certeza": "texto",
+     "ref": "Nm 22:41",
+     "cita": "desde allí vió la extremidad del pueblo"
+    },
+    {
+     "texto": "El pueblo «habitará confiado»",
+     "certeza": "texto",
+     "ref": "Nm 23:9",
+     "cita": "un pueblo que habitará confiado"
+    }
+   ],
+   "externo": []
+  },
+  "balaam-en-camino": {
+   "nombre": "Balaam y el ángel en el camino",
+   "apariciones": [
+    {
+     "inicio": "Nm 22:21",
+     "fin": "Nm 22:35"
+    }
+   ],
+   "personas": [
+    "Balaam_1"
+   ],
+   "objetos": [
+    "asna-de-balaam"
+   ],
+   "resumen": "El ángel de Jehová se pone tres veces en el camino y el asna se aparta; Balaam la golpea hasta que Jehová abre su boca.",
+   "datos": [
+    {
+     "texto": "El furor de Dios se enciende porque iba",
+     "certeza": "texto",
+     "ref": "Nm 22:22",
+     "cita": "el furor de Dios se encendió porque él iba"
+    },
+    {
+     "texto": "El ángel lo deja ir pero sólo dirá lo que Jehová diga",
+     "certeza": "texto",
+     "ref": "Nm 22:35",
+     "cita": "la palabra que yo te dijere, esa hablarás"
+    }
+   ],
+   "externo": []
+  },
+  "balaam-en-pisga": {
+   "nombre": "Balaam en la cumbre de Pisga",
+   "lugar": "pisga",
+   "apariciones": [
+    {
+     "inicio": "Nm 23:13",
+     "fin": "Nm 23:26"
+    }
+   ],
+   "personas": [
+    "Balaam_1",
+    "Balak_1"
+   ],
+   "objetos": [
+    "siete-altares-de-balaam"
+   ],
+   "resumen": "En el campo de Sophim, en la cumbre de Pisga, segundo oráculo: Dios no miente ni se arrepiente.",
+   "datos": [
+    {
+     "texto": "Balac lo lleva al campo de Sophim, a la cumbre de Pisga",
+     "certeza": "texto",
+     "ref": "Nm 23:14",
+     "cita": "al campo de Sophim, á la cumbre de Pisga"
+    },
+    {
+     "texto": "«Dios no es hombre, para que mienta»",
+     "certeza": "texto",
+     "ref": "Nm 23:19",
+     "cita": "Dios no es hombre, para que mienta"
+    }
+   ],
+   "externo": []
+  },
+  "balaam-en-peor": {
+   "nombre": "Balaam en la cumbre de Peor",
+   "lugar": "peor",
+   "apariciones": [
+    {
+     "inicio": "Nm 23:27",
+     "fin": "Nm 24:25"
+    }
+   ],
+   "personas": [
+    "Balaam_1",
+    "Balak_1"
+   ],
+   "objetos": [
+    "siete-altares-de-balaam"
+   ],
+   "resumen": "Desde Peor, mirando al desierto, Balaam ve a Israel por tribus; tercer oráculo y profecías finales; Balac se enfurece.",
+   "datos": [
+    {
+     "texto": "Ve a Israel alojado por sus tribus",
+     "certeza": "texto",
+     "ref": "Nm 24:2",
+     "cita": "vió á Israel alojado por sus tribus"
+    },
+    {
+     "texto": "Balac se enciende y bate sus palmas",
+     "certeza": "texto",
+     "ref": "Nm 24:10",
+     "cita": "batiendo sus palmas"
+    }
+   ],
+   "externo": []
+  },
+  "baal-peor-en-sitim": {
+   "nombre": "Israel en Sitim: Baal-peor",
+   "lugar": "sitim",
+   "apariciones": [
+    {
+     "inicio": "Nm 25:1",
+     "fin": "Nm 25:5"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "En Sitim el pueblo fornica con las hijas de Moab, come de sus sacrificios y se allega a Baal-peor; Moisés ordena justiciar a los culpables. Contenido sensible.",
+   "datos": [
+    {
+     "texto": "Reposó Israel en Sittim",
+     "certeza": "texto",
+     "ref": "Nm 25:1",
+     "cita": "Israel en Sittim"
+    },
+    {
+     "texto": "Se allegó el pueblo a Baal-peor",
+     "certeza": "texto",
+     "ref": "Nm 25:3",
+     "cita": "allegóse el pueblo á Baal-peor"
+    }
+   ],
+   "externo": []
+  },
+  "la-lanza-de-finees": {
+   "nombre": "La lanza de Finees",
+   "lugar": "sitim",
+   "apariciones": [
+    {
+     "inicio": "Nm 25:6",
+     "fin": "Nm 25:15"
+    }
+   ],
+   "personas": [
+    "Phinehas_1",
+    "Zimri_1",
+    "Cozbi_1",
+    "Moses_1"
+   ],
+   "objetos": [
+    "lanza-de-finees"
+   ],
+   "resumen": "Un israelita trae una madianita a los ojos de Moisés; Finees los alancea; cesa la mortandad y Jehová da a Finees su pacto de paz. Contenido violento.",
+   "datos": [
+    {
+     "texto": "El hecho ocurre a ojos de Moisés y de la congregación, llorando a la puerta del tabernáculo",
+     "certeza": "texto",
+     "ref": "Nm 25:6",
+     "cita": "á ojos de Moisés y de toda la congregación"
+    },
+    {
+     "texto": "Murieron veinticuatro mil",
+     "certeza": "texto",
+     "ref": "Nm 25:9",
+     "cita": "veinte y cuatro mil"
+    }
+   ],
+   "externo": []
+  },
+  "segundo-censo-en-moab": {
+   "nombre": "El segundo censo en los campos de Moab",
+   "lugar": "campos-de-moab",
+   "apariciones": [
+    {
+     "inicio": "Nm 26:1",
+     "fin": "Nm 26:65"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Eleazar_1"
+   ],
+   "objetos": [],
+   "resumen": "Moisés y Eleazar cuentan a Israel junto al Jordán de Jericó: 601.730; ninguno de los del Sinaí, salvo Caleb y Josué.",
+   "datos": [
+    {
+     "texto": "El total es 601.730",
+     "certeza": "texto",
+     "ref": "Nm 26:51",
+     "cita": "seiscientos y un mil setecientos y treinta"
+    },
+    {
+     "texto": "Solo quedaron Caleb y Josué",
+     "certeza": "texto",
+     "ref": "Nm 26:65",
+     "cita": "sino Caleb hijo de Jephone, y Josué hijo de Nun"
+    }
+   ],
+   "externo": []
+  },
+  "hijas-de-zelofehad-ante-moises": {
+   "nombre": "Las hijas de Zelofehad ante Moisés",
+   "apariciones": [
+    {
+     "inicio": "Nm 27:1",
+     "fin": "Nm 27:11"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Eleazar_1",
+    "Mahlah_1",
+    "Noah_2",
+    "Hoglah_1",
+    "Milcah_2",
+    "Tirzah_1"
+   ],
+   "objetos": [],
+   "resumen": "Cinco hermanas piden heredad ante Moisés, Eleazar, los príncipes y la congregación; Jehová da la ley de herencia.",
+   "datos": [
+    {
+     "texto": "Se presentan a la puerta del tabernáculo",
+     "certeza": "texto",
+     "ref": "Nm 27:2",
+     "cita": "á la puerta del tabernáculo del testimonio"
+    },
+    {
+     "texto": "Ley: si muere sin hijos, la herencia pasa a su hija",
+     "certeza": "texto",
+     "ref": "Nm 27:8",
+     "cita": "traspasaréis su herencia á su hija"
+    }
+   ],
+   "externo": []
+  },
+  "monte-abarim": {
+   "nombre": "Moisés ve la tierra desde Abarim",
+   "lugar": "abarim",
+   "apariciones": [
+    {
+     "inicio": "Nm 27:12",
+     "fin": "Nm 27:14"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Jehová le manda subir al monte Abarim para ver la tierra y le recuerda que será reunido a su pueblo.",
+   "datos": [
+    {
+     "texto": "Subir al monte Abarim",
+     "certeza": "texto",
+     "ref": "Nm 27:12",
+     "cita": "Sube á este monte Abarim"
+    },
+    {
+     "texto": "Será reunido a sus pueblos como Aarón",
+     "certeza": "texto",
+     "ref": "Nm 27:13",
+     "cita": "tú también serás reunido á tus pueblos"
+    }
+   ],
+   "externo": []
+  },
+  "nombramiento-de-josue": {
+   "nombre": "El nombramiento de Josué",
+   "apariciones": [
+    {
+     "inicio": "Nm 27:15",
+     "fin": "Nm 27:23"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joshua_1",
+    "Eleazar_1"
+   ],
+   "objetos": [
+    "urim-y-tumim"
+   ],
+   "resumen": "Moisés pide un pastor para el pueblo; Jehová señala a Josué y Moisés le impone las manos ante Eleazar y la congregación.",
+   "datos": [
+    {
+     "texto": "«Como ovejas sin pastor»",
+     "certeza": "texto",
+     "ref": "Nm 27:17",
+     "cita": "como ovejas sin pastor"
+    },
+    {
+     "texto": "Le impone las manos",
+     "certeza": "texto",
+     "ref": "Nm 27:23",
+     "cita": "puso sobre él sus manos"
+    }
+   ],
+   "externo": []
+  },
+  "guerra-contra-madian": {
+   "nombre": "La guerra contra Madián",
+   "lugar": "madian",
+   "apariciones": [
+    {
+     "inicio": "Nm 31:1",
+     "fin": "Nm 31:11"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Phinehas_1",
+    "Balaam_1",
+    "Evi_1",
+    "Rekem_1",
+    "Zur_2",
+    "Hur_2",
+    "Reba_1"
+   ],
+   "objetos": [
+    "trompetas-de-plata"
+   ],
+   "resumen": "Mil por tribu (doce mil) van a la guerra con Finees; mueren los cinco reyes y Balaam. Contenido violento.",
+   "datos": [
+    {
+     "texto": "Mil por cada tribu, doce mil",
+     "certeza": "texto",
+     "ref": "Nm 31:5",
+     "cita": "doce mil á punto de guerra"
+    },
+    {
+     "texto": "Mueren los cinco reyes y Balaam",
+     "certeza": "texto",
+     "ref": "Nm 31:8",
+     "cita": "cinco reyes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "botin-en-los-campos-de-moab": {
+   "nombre": "El botín en los campos de Moab",
+   "lugar": "campos-de-moab",
+   "apariciones": [
+    {
+     "inicio": "Nm 31:12",
+     "fin": "Nm 31:54"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Eleazar_1"
+   ],
+   "objetos": [
+    "ofrenda-de-oro-de-los-capitanes",
+    "vaca-alazana"
+   ],
+   "resumen": "Moisés se enoja con los capitanes, se purifica a los guerreros, se reparte el botín por mitades y los capitanes ofrecen oro. Contenido sensible.",
+   "datos": [
+    {
+     "texto": "Quedan siete días fuera del campo y se purifican al tercero y séptimo día",
+     "certeza": "texto",
+     "ref": "Nm 31:19",
+     "cita": "os purificaréis al tercero y al séptimo día"
+    },
+    {
+     "texto": "El botín se parte por mitad",
+     "certeza": "texto",
+     "ref": "Nm 31:27",
+     "cita": "partirás por mitad la presa"
+    }
+   ],
+   "externo": []
+  },
+  "galaad-para-rubenitas-y-gaditas": {
+   "nombre": "Galaad para Rubén, Gad y Manasés",
+   "lugar": "galaad",
+   "apariciones": [
+    {
+     "inicio": "Nm 32:1",
+     "fin": "Nm 32:42"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Eleazar_1",
+    "Joshua_1",
+    "Machir_1",
+    "Jair_1",
+    "Nobah_1"
+   ],
+   "objetos": [],
+   "resumen": "Rubén y Gad piden las tierras de Jazer y Galaad; Moisés pone la condición de pasar armados con sus hermanos.",
+   "datos": [
+    {
+     "texto": "Piden la tierra y no pasar el Jordán",
+     "certeza": "texto",
+     "ref": "Nm 32:5",
+     "cita": "no nos hagas pasar el Jordán"
+    },
+    {
+     "texto": "Condición: pasar armados delante de Jehová",
+     "certeza": "texto",
+     "ref": "Nm 32:29",
+     "cita": "pasaren con vosotros el Jordán, armados todos de guerra"
+    }
+   ],
+   "externo": []
+  },
+  "limites-de-canaan": {
+   "nombre": "Los límites de Canaán",
+   "lugar": "canaan",
+   "apariciones": [
+    {
+     "inicio": "Nm 34:1",
+     "fin": "Nm 34:15"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Jehová fija los límites de la tierra de Canaán; Moisés reparte por suerte a nueve tribus y media.",
+   "datos": [
+    {
+     "texto": "La tierra de Canaán según sus términos",
+     "certeza": "texto",
+     "ref": "Nm 34:2",
+     "cita": "la tierra de Canaán según sus términos"
+    },
+    {
+     "texto": "Se hereda por suerte entre nueve tribus y media",
+     "certeza": "texto",
+     "ref": "Nm 34:13",
+     "cita": "por suerte"
+    }
+   ],
+   "externo": []
+  },
+  "ciudades-de-refugio": {
+   "nombre": "Las ciudades de los levitas y las de refugio",
+   "lugar": "campos-de-moab",
+   "apariciones": [
+    {
+     "inicio": "Nm 35:1",
+     "fin": "Nm 35:34"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Se dan a los levitas ciudades con ejidos y se señalan seis ciudades de acogimiento para el homicida por yerro.",
+   "datos": [
+    {
+     "texto": "Los ejidos serán mil codos alrededor",
+     "certeza": "texto",
+     "ref": "Nm 35:4",
+     "cita": "serán mil codos alrededor"
+    },
+    {
+     "texto": "Seis ciudades de acogimiento",
+     "certeza": "texto",
+     "ref": "Nm 35:13",
+     "cita": "seis ciudades de acogimiento"
+    }
+   ],
+   "externo": []
+  }
+ }
+}

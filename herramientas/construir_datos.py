@@ -4,7 +4,8 @@
 Uso:  python herramientas/construir_datos.py [--sin-red]
 
 - Descarga (con caché en herramientas/cache/) RV1909, Brenton (LXX inglesa) y BibleData.
-- Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py; Levítico: herramientas/levitico.py)
+- Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py; Levítico: herramientas/levitico.py;
+  Números: herramientas/numeros.py)
 - Verifica citas, cifras, sumas, relaciones y nombres. Sale con código 1 si falla
   una verificación obligatoria (las sumas que no cuadran y los nombres no hallados
   se listan como advertencias).
@@ -30,13 +31,14 @@ import cronologia as cr  # noqa: E402
 import genesis_12_50 as g2  # noqa: E402
 import exodo  # noqa: E402
 import levitico  # noqa: E402
+import numeros  # noqa: E402
 
 MAXCAP = 50
 RAIZ = Path(__file__).resolve().parent.parent
 CACHE = RAIZ / "herramientas" / "cache"
 SALIDA = RAIZ / "datos" / "biblia.js"
 LIBROS = [{"id": "Gn", "nombre": "Génesis", "capitulos": 50}, {"id": "Ex", "nombre": "Éxodo", "capitulos": 40},
-          {"id": "Lv", "nombre": "Levítico", "capitulos": 27}]
+          {"id": "Lv", "nombre": "Levítico", "capitulos": 27}, {"id": "Nm", "nombre": "Números", "capitulos": 36}]
 
 BD = "https://raw.githubusercontent.com/BradyStephenson/bible-data/HEAD/"
 FUENTES = [
@@ -911,6 +913,17 @@ def main():
     capitulos += LEV["capitulos"]
     pasajes += LEV["pasajes"]
     menciones = menciones + LEV["menciones"]
+
+    # ------------------------------------------------------------ Números 1–36 (herramientas/numeros.py)
+    rv_nm = leer_vpl(obtener("rv", sin_red), "NUM", 36)
+    br_nm = leer_vpl(obtener("br", sin_red), "NUM", 36)
+    pv_nm = [r for r in leer_csv(obtener("pv", sin_red)) if re.match(r"NUM \d+:\d+$", r["reference_id"].strip())]
+    NUM = numeros.construir(dict(rv=rv_nm, br=br_nm, rels=rels, pv_filas=pv_nm, per=per, personas=personas,
+                                 relaciones=relaciones, edades=edades, sin_acentos=sin_acentos,
+                                 numeral=numeral_a_numero, ES=ES, EN=EN, errores=errores, avisos=avisos))
+    capitulos += NUM["capitulos"]
+    pasajes += NUM["pasajes"]
+    menciones = menciones + NUM["menciones"]
     personas.sort(key=lambda p: (exodo.clave_ref(p["refs"][0]) if p["refs"] else (9, 0, 0), p["id"]))
     vistos_id = Counter(p["id"] for p in personas)
     errores.extend(f"Persona duplicada: {k}" for k, n in vistos_id.items() if n > 1)
@@ -920,14 +933,15 @@ def main():
     # ------------------------------------------------------------ cronología relativa
     nombre_de = {p["id"]: p["nombre"] for p in personas}
     lv = lambda k: f"Lv {k[0]}:{k[1]}"  # noqa: E731
+    nm = lambda k: f"Nm {k[0]}:{k[1]}"  # noqa: E731
     texto_ref = {"TM": {**{gn(k): v for k, v in rv.items()}, **{exodo.ex(k): v for k, v in rv_ex.items()},
-                        **{lv(k): v for k, v in rv_lv.items()}},
+                        **{lv(k): v for k, v in rv_lv.items()}, **{nm(k): v for k, v in rv_nm.items()}},
                  "LXX": {**{gn(k): v for k, v in br.items()}, **{exodo.ex(k): v for k, v in br_ex.items()},
-                         **{lv(k): v for k, v in br_lv.items()}}}
+                         **{lv(k): v for k, v in br_lv.items()}, **{nm(k): v for k, v in br_nm.items()}}}
     rango_pasaje = [(exodo.clave_ref(p["inicio"]), exodo.clave_ref(p["fin"]), p["id"]) for p in pasajes]
 
     def pasaje_de(ref):
-        if not ref or not re.match(r"(Gn|Ex|Lv) \d+:\d+", ref):
+        if not ref or not re.match(r"(Gn|Ex|Lv|Nm) \d+:\d+", ref):
             return None
         k = exodo.clave_ref(ref)
         return next((pid for a0, b0, pid in rango_pasaje if a0 <= k <= b0), None)
@@ -984,6 +998,10 @@ def main():
                                                                 sin_acentos)
     lugares += lug_lv
     menciones_lugar += men_lug_lv
+    lug_nm, men_lug_nm, info_lug_nm = numeros.construir_lugares(rv_nm, NUM["menciones"], rutas, lugares, errores, avisos,
+                                                               sin_acentos)
+    lugares += lug_nm
+    menciones_lugar += men_lug_nm
     mapa = lm.construir_mapa(lugares, rutas)
     x0, y0, x1, y1 = mapa["bbox"]
     for l in lugares:
@@ -1007,6 +1025,7 @@ def main():
              "lugares": lugares, "menciones_lugar": menciones_lugar, "cronologia": cronologia}
     hechos = exodo.comprobar(datos, errores)
     hechos_lv = levitico.comprobar(datos, errores)
+    hechos_nm = numeros.comprobar(datos, errores)
     for lb in LIBROS:
         n = sum(1 for c in capitulos if c["libro"] == lb["id"])
         if n != lb["capitulos"]:
@@ -1153,6 +1172,18 @@ def main():
           f"versículos descartados {info_lug_lv['descartadas']}")
     print("Hechos obligatorios de Levítico:")
     for h in hechos_lv:
+        print("  " + h)
+    print(f"Números: personas nuevas ({len(NUM['nuevas'])}) {[x['id'] for x in NUM['nuevas']]}; ampliadas {len(NUM['ampliadas'])}; "
+          f"pasajes {len(NUM['pasajes'])} (fuera de 8–20 versículos: "
+          f"{[x['id'] + ':' + str(n) for x, n in zip(NUM['pasajes'], NUM['tam_pasaje']) if not 8 <= n <= 20]}); "
+          f"secciones {dict(Counter(x['seccion'] for x in NUM['pasajes']))}")
+    print(f"Números: menciones ambiguas descartadas ({len(NUM['ambiguos'])}): {NUM['ambiguos'][:15]}; no situadas "
+          f"{dict(NUM['no_situados'].most_common(15))}; relaciones BibleData descartadas {NUM['descartadas']}; "
+          f"subidas a explícito {NUM['subidas']}")
+    print(f"Números: lugares nuevos ({len(lug_nm)}) {[x['id'] for x in lug_nm]}; OpenBible sin forma en RV1909 "
+          f"{info_lug_nm['sin_forma']}; versículos descartados ({len(info_lug_nm['descartadas'])}) {info_lug_nm['descartadas']}")
+    print("Hechos obligatorios de Números:")
+    for h in hechos_nm:
         print("  " + h)
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")
