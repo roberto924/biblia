@@ -643,6 +643,48 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 .ficha-col.bloqueada .ficha-nombre { font-style: italic; font-weight: 400; color: var(--suave); font-size: .95rem; }
 .silueta { width: 2.6rem; height: 3.1rem; fill: color-mix(in srgb, var(--suave) 35%, var(--hoja2)); stroke: none; }
 
+/* Colección: grupos, en curso, objetos y escenarios (catálogo de juego) */
+.colec-grupos { margin: .9rem 0 .2rem; }
+.colec-grupos .segmentos span { min-width: 0; padding: 0 .8rem; }
+.nivel-muestra { display: inline-flex; align-items: center; font-size: .74rem; font-weight: 600; padding: .08rem .5rem; border-radius: 999px; white-space: nowrap;
+  color: var(--lapis); background: var(--lapis-tinte); border: 1px solid color-mix(in srgb, var(--lapis) 30%, transparent); }
+.nivel-muestra.npc { color: var(--suave); background: var(--hoja2); border-color: var(--linea); }
+.ficha-col.en-curso { border-style: dashed; border-top-style: solid; box-shadow: none; }
+.ficha-col.en-curso .ficha-inicial { opacity: .72; }
+.ficha-avance { display: flex; align-items: center; gap: .35rem; font-size: .74rem; color: var(--suave); align-self: stretch; }
+.ficha-avance progress { flex: 1; min-width: 0; height: .4rem; accent-color: var(--lapis); }
+.ficha-tipo { font-size: .76rem; color: var(--suave); }
+.ico-cosa { width: 2.4rem; height: 2.4rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.ficha-col.cosa { --rz: var(--lugar); }
+.silueta-cosa { color: color-mix(in srgb, var(--suave) 45%, var(--hoja2)); }
+.ficha-col.cosa .ficha-retrato { color: var(--rz); }
+.ficha-col.c-escenarios, .retrato.c-escenarios, .cosa-btn.c-escenarios, .nueva-ficha.c-escenarios { --rz: var(--c-texto); }
+.retrato.cosa { color: var(--rz, var(--lugar)); border-style: solid; }
+.nueva-ficha.cosa { --rz: var(--lugar); }
+.nueva-ficha.cosa .ficha-inicial { color: #fff; }
+.nueva-ficha.cosa .ico-cosa { width: 1.3rem; height: 1.3rem; }
+.cosa-btn { display: inline-flex; align-items: center; gap: .35rem; min-height: 44px; padding: .2rem .7rem; border: 1px solid var(--linea); border-left: 3px solid var(--rz, var(--lugar)); border-radius: var(--r-ctrl); background: var(--papel); color: var(--tinta); cursor: pointer; font: inherit; }
+.cosa-btn:hover { border-color: var(--lapis); }
+.cosa-btn .ico-cosa { width: 1.2rem; height: 1.2rem; color: var(--rz, var(--lugar)); }
+.ficha-estado.en-curso { color: var(--tinta); }
+.resumen-juego { font-family: var(--serif); font-size: 1.02rem; margin: .35rem 0 0; }
+.juego-ficha h3 { margin-top: 1.1rem; }
+.datos-juego { list-style: none; padding: 0; margin: .3rem 0; display: grid; gap: .55rem; }
+.datos-juego .dato { padding: .45rem .8rem; border-left: 3px solid var(--linea); background: var(--hoja); border-radius: 0 var(--r-ctrl) var(--r-ctrl) 0; }
+.datos-juego .dato p { margin: 0; }
+.datos-juego .dato-txt { font-weight: 600; }
+.datos-juego .dato-ins { margin-top: .2rem !important; }
+.datos-juego blockquote { margin: .3rem 0 0; }
+.datos-juego .plegado { border-left-style: dashed; }
+.rel-tit { margin: .6rem 0 .2rem; font-size: .85rem; font-weight: 600; color: var(--suave); }
+.juego-imgs { list-style: none; padding: 0; margin: .3rem 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr)); gap: .5rem; }
+.juego-imgs li { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.juego-img { padding: 0; border: 1px solid var(--linea); border-radius: var(--r-ctrl); background: var(--hoja2); cursor: zoom-in; overflow: hidden; }
+.juego-img img { display: block; width: 100%; height: 5.5rem; object-fit: cover; }
+.juego-imgs .etiqueta { margin-left: 0; }
+.pasaje-genealogia { margin: .35rem 0 0; }
+.etiqueta.genealogia { margin-left: 0; font-weight: 600; letter-spacing: .02em; }
+
 /* Ficha (diálogo) */
 .ficha-cab { display: grid; grid-template-columns: 5.25rem 1fr; gap: .9rem; align-items: start; margin: .6rem 0 .4rem; }
 .ficha-datos > :first-child { margin-top: 0; }

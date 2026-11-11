@@ -1,7 +1,7 @@
 /* Service worker: red primero, caché de respaldo. Cambia VERSION al publicar para que aparezca el aviso de actualización. */
-const VERSION = '2026-11-11.7';
+const VERSION = '2026-11-11.8';
 const CACHE = 'biblia-' + VERSION;
-const CARCASA = ['./', 'index.html', 'app.js', 'estilos.css', 'manifest.webmanifest', 'datos/biblia.js', 'datos/mapa-base.js', 'datos/recursos.js', 'datos/recorridos.js', 'datos/tabernaculo.js', 'datos/contenido.js',
+const CARCASA = ['./', 'index.html', 'app.js', 'estilos.css', 'manifest.webmanifest', 'datos/biblia.js', 'datos/mapa-base.js', 'datos/recursos.js', 'datos/recorridos.js', 'datos/tabernaculo.js', 'datos/contenido.js', 'datos/juego.js',
   'iconos/icono.svg', 'iconos/icono-192.png', 'iconos/icono-512.png'];
 // Bajo demanda (no se precargan: app.js los inyecta al abrir Comparar, Escuchar, «De dónde sale este texto», Fuentes o un video).
 // Pasan por la misma estrategia de red primero y quedan en la caché tras la primera visita.

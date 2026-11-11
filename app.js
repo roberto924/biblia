@@ -886,27 +886,148 @@ const Nucleo = (() => {
       return coleccionables(d).filter(id => (V.get(id) || []).some(k => k >= a && k <= b));
     });
   }
-  // Colección: personas de los pasajes leídos.
-  function coleccion(d, leidos) {
+  // Personas nombradas en los pasajes leídos (desbloqueo sin catálogo de juego, y obtención de los NPC).
+  function coleccionBase(d, leidos) {
     const L = new Set(leidos || []), out = new Set();
     pasajes(d).forEach(p => { if (L.has(p.id)) personasDePasaje(d, p).forEach(id => out.add(id)); });
     return out;
   }
+  /* ---- Catálogo de juego (datos/juego.js, `J`): estado de personajes, objetos y escenarios según lo leído ----
+     Personaje: se desbloquea al terminar de leer el capítulo `listo.capitulo` (todos los pasajes que lo cubren);
+     antes, si ya apareció en algo leído, está «en curso». NPC (solo genealogías): al leer su primera mención.
+     Objeto y escenario: al leer el pasaje de su primera aparición. Sin `J`, todo como antes (primera mención). */
+  const juegoValido = J => !!(J && typeof J === 'object' && J.personajes && typeof J.personajes === 'object');
+  const cacheJ = new WeakMap();
+  function memoJ(d, J, k, fn) {
+    if (!cacheJ.has(J)) cacheJ.set(J, new WeakMap());
+    const w = cacheJ.get(J), dd = d && typeof d === 'object' ? d : cacheJ;
+    if (!w.has(dd)) w.set(dd, new Map());
+    const m = w.get(dd); if (!m.has(k)) m.set(k, fn()); return m.get(k);
+  }
+  const rangosAp = aps => (Array.isArray(aps) ? aps : []).map(x => x && x.inicio ? rangoClaves(`${x.inicio}-${x.fin || x.inicio}`) : null).filter(Boolean);
+  const cruzaRangos = (rs, r) => !!r && rs.some(x => x.a <= r.b && r.a <= x.b);
+  // Pasajes (ids, en orden de lectura) que se solapan con los rangos.
+  const pasajesEnRangos = (d, rs) => rs.length ? pasajes(d).filter(p => cruzaRangos(rs, rangoPasaje(p))).map(p => p.id) : [];
+  const capDeRef = ref => { const r = parseRef(ref); return r ? `${r.libro} ${r.cap}` : null; };
+  // Capítulo cuya lectura completa desbloquea: `listo.capitulo`, o el de `listo.ref`, o el de la última aparición.
+  function capituloListo(e) {
+    if (!e) return null;
+    const l = e.listo || {};
+    if (l.capitulo && rangoClaves(l.capitulo)) return String(l.capitulo);
+    if (l.ref && clave(l.ref) !== null) return capDeRef(l.ref);
+    const rs = rangosAp(e.apariciones);
+    return rs.length ? capDeRef(refDeClave(Math.max(...rs.map(r => r.b)))) : null;
+  }
+  function infoPersonaje(d, J, id) {
+    return memoJ(d, J, 'p|' + id, () => {
+      const e = J.personajes[id]; if (!e || typeof e !== 'object') return null;
+      const npc = !!e.npc, cap = npc ? null : capituloListo(e), rc = cap && rangoClaves(cap);
+      return { npc, nivel: npc ? 0 : (Number.isFinite(+e.nivel) && e.nivel !== null ? +e.nivel : null), capitulo: cap,
+        apar: pasajesEnRangos(d, rangosAp(e.apariciones)), capPasajes: rc ? pasajesEnRangos(d, [rc]) : [] };
+    });
+  }
+  function estadoDe(d, J, id, L, menc) {
+    const visto = menc.has(id), inf = juegoValido(J) ? infoPersonaje(d, J, id) : null;
+    if (!inf) return { id, juego: false, estado: visto ? 'obtenido' : 'bloqueado', npc: false, nivel: null, capitulo: null, leidos: 0, total: 0 };
+    const leidos = inf.apar.filter(x => L.has(x)).length;
+    let estado;
+    if (inf.npc) estado = visto ? 'obtenido' : 'bloqueado';
+    else if (!inf.capPasajes.length) estado = visto || leidos ? 'obtenido' : 'bloqueado'; // capítulo fuera de los datos cargados
+    else if (inf.capPasajes.every(x => L.has(x))) estado = 'obtenido';
+    else estado = visto || leidos ? 'en-curso' : 'bloqueado';
+    return { id, juego: true, estado, npc: inf.npc, nivel: inf.nivel, capitulo: inf.capitulo, leidos, total: inf.apar.length };
+  }
+  // Estado de un personaje: { estado: 'obtenido'|'en-curso'|'bloqueado', npc, nivel, capitulo, leidos, total }.
+  const estadoPersonaje = (d, J, id, leidos) => estadoDe(d, J, id, new Set(leidos || []), coleccionBase(d, leidos));
+  // Colección: personas obtenidas (con catálogo de juego, según su regla; sin él, las nombradas en lo leído).
+  function coleccion(d, leidos, J) {
+    const base = coleccionBase(d, leidos);
+    if (!juegoValido(J)) return base;
+    const L = new Set(leidos || []);
+    return new Set(coleccionables(d).filter(id => estadoDe(d, J, id, L, base).estado === 'obtenido'));
+  }
   // Las que entran al marcar `pasajeId` como leído, dado lo ya leído.
-  function nuevasAlLeer(d, leidos, pasajeId) {
+  function nuevasAlLeer(d, leidos, pasajeId, J) {
     const p = pasajes(d).find(x => x.id === pasajeId); if (!p) return [];
-    const antes = coleccion(d, [].concat(leidos || []).filter(x => x !== pasajeId));
-    return personasDePasaje(d, p).filter(id => !antes.has(id));
+    const sin = [].concat(leidos || []).filter(x => x !== pasajeId);
+    const antes = coleccion(d, sin, J);
+    if (!juegoValido(J)) return personasDePasaje(d, p).filter(id => !antes.has(id));
+    const despues = coleccion(d, sin.concat(pasajeId), J);
+    return coleccionables(d).filter(id => despues.has(id) && !antes.has(id));
   }
   const libroDeClave = k => idPorOrd.get(Math.floor(k / 1e6));
+  const capDeClave = k => `${libroDeClave(k)} ${Math.floor(k / 1000) % 1000}`;
   // Fichas de la colección: sin desbloquear solo se da el capítulo de la primera aparición.
-  function fichasColeccion(d, leidos) {
-    const obt = coleccion(d, leidos), I = indice(d), V = versosPersona(d);
+  function fichasColeccion(d, leidos, J) {
+    const base = coleccionBase(d, leidos), L = new Set(leidos || []), I = indice(d), V = versosPersona(d);
     return coleccionables(d).map(id => {
-      const k = I.primera.get(id), p = I.personas.get(id) || {};
-      return { id, desbloqueada: obt.has(id), primera: refDeClave(k), primeraCap: `${libroDeClave(k)} ${Math.floor(k / 1000) % 1000}`,
+      const k = I.primera.get(id), p = I.personas.get(id) || {}, e = estadoDe(d, J, id, L, base);
+      return { id, desbloqueada: e.estado === 'obtenido', estado: e.estado, juego: e.juego, npc: e.npc, nivel: e.nivel, capitulo: e.capitulo, leidos: e.leidos, total: e.total,
+        primera: refDeClave(k), primeraCap: capDeClave(k),
         libros: unicos((V.get(id) || []).map(libroDeClave)), sexo: p.sexo === 'f' || p.sexo === 'm' ? p.sexo : '?', rareza: rareza(d, id) };
     });
+  }
+  const GRUPOS_JUEGO = ['objetos', 'escenarios'];
+  function infoCosa(d, J, grupo, id) {
+    return memoJ(d, J, grupo + '|' + id, () => {
+      const rs = rangosAp(((J[grupo] || {})[id] || {}).apariciones);
+      if (!rs.length) return { primera: null, pasaje: null, apar: [] };
+      const k = Math.min(...rs.map(r => r.a)), p = pasajes(d).find(x => { const r = rangoPasaje(x); return r && k >= r.a && k <= r.b; });
+      return { primera: k, pasaje: p ? p.id : null, apar: pasajesEnRangos(d, rs) };
+    });
+  }
+  // Estado de un objeto o escenario: obtenido al leer el pasaje de su primera aparición.
+  function estadoCosa(d, J, grupo, id, leidos) {
+    if (!juegoValido(J) || !GRUPOS_JUEGO.includes(grupo) || !(J[grupo] || {})[id]) return null;
+    const L = leidos instanceof Set ? leidos : new Set(leidos || []), inf = infoCosa(d, J, grupo, id);
+    return { id, grupo, estado: inf.pasaje && L.has(inf.pasaje) ? 'obtenido' : 'bloqueado', pasaje: inf.pasaje,
+      primera: inf.primera ? refDeClave(inf.primera) : null, primeraCap: inf.primera ? capDeClave(inf.primera) : null,
+      leidos: inf.apar.filter(x => L.has(x)).length, total: inf.apar.length };
+  }
+  // Fichas de objetos o escenarios, en orden de primera aparición (solo las que caen en los pasajes cargados).
+  function fichasCosas(d, J, grupo, leidos) {
+    if (!juegoValido(J) || !GRUPOS_JUEGO.includes(grupo) || !J[grupo] || typeof J[grupo] !== 'object') return [];
+    const L = new Set(leidos || []);
+    return Object.keys(J[grupo]).map(id => {
+      const e = J[grupo][id] || {}, s = estadoCosa(d, J, grupo, id, L);
+      return s && Object.assign(s, { nombre: e.nombre || id, tipo: e.tipo || '', desbloqueada: s.estado === 'obtenido', orden: infoCosa(d, J, grupo, id).primera });
+    }).filter(x => x && x.pasaje).sort((a, b) => a.orden - b.orden);
+  }
+  // Todo lo que entra al marcar `pasajeId` como leído: { personas, objetos, escenarios }.
+  function nuevosAlLeer(d, J, leidos, pasajeId) {
+    const sin = [].concat(leidos || []).filter(x => x !== pasajeId), con = sin.concat(pasajeId);
+    const out = { personas: nuevasAlLeer(d, sin, pasajeId, J) };
+    GRUPOS_JUEGO.forEach(g => { const a = new Set(fichasCosas(d, J, g, sin).filter(x => x.desbloqueada).map(x => x.id)); out[g] = fichasCosas(d, J, g, con).filter(x => x.desbloqueada && !a.has(x.id)).map(x => x.id); });
+    return out;
+  }
+  // Qué puede mostrar una ficha abierta desde cualquier enlace: el contenido del catálogo solo si está obtenida;
+  // si no, como en la colección (capítulo de la primera aparición y, en curso, el avance). null: sin entrada en el catálogo.
+  function vistaFichaJuego(d, J, grupo, id, leidos) {
+    if (!juegoValido(J)) return null;
+    if (grupo === 'personajes') {
+      if (!J.personajes[id]) return null;
+      const e = estadoPersonaje(d, J, id, leidos), k = indice(d).primera.get(id);
+      return Object.assign(e, { visible: e.estado === 'obtenido', primeraCap: k ? capDeClave(k) : null });
+    }
+    const s = estadoCosa(d, J, grupo, id, leidos);
+    return s && Object.assign(s, { visible: s.estado === 'obtenido' });
+  }
+  // Genealogías del catálogo que se solapan con un pasaje (el lector las rotula; nunca cuentan como aparición).
+  function genealogiasDe(J, p) {
+    const r = rangoPasaje(p);
+    if (!r || !J || !Array.isArray(J.genealogias)) return [];
+    return J.genealogias.filter(g => g && g.inicio && cruzaRangos([rangoClaves(`${g.inicio}-${g.fin || g.inicio}`)].filter(Boolean), r));
+  }
+  const esGenealogia = (J, p) => genealogiasDe(J, p).length > 0;
+  // Perfil niño: un dato cuya ref cae en una parte de contenido alto se pliega, como el resto de la app.
+  const datoPlegado = (perfil, C, ref) => esNino(perfil) && clave(ref) !== null && esAlto(C, clave(ref));
+  // Objetos y escenarios del catálogo que nombran a una persona; y escenarios que incluyen un objeto.
+  function relacionadosJuego(J, tipo, id) {
+    if (!juegoValido(J)) return { objetos: [], escenarios: [] };
+    const tiene = (e, campo) => Array.isArray(e && e[campo]) && e[campo].includes(id);
+    const campo = tipo === 'objeto' ? 'objetos' : 'personas';
+    return { objetos: tipo === 'objeto' ? [] : Object.keys(J.objetos || {}).filter(k => tiene(J.objetos[k], campo)),
+      escenarios: Object.keys(J.escenarios || {}).filter(k => tiene(J.escenarios[k], campo)) };
   }
   // Pasajes en que aparece una persona, con cuántos versículos suyos tiene cada uno.
   function pasajesDePersona(d, id) {
@@ -1472,7 +1593,8 @@ const Nucleo = (() => {
     listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
     TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
-    coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona, lugaresDePersona, descendientes,
+    coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona,
+    GRUPOS_JUEGO, juegoValido, estadoPersonaje, vistaFichaJuego, estadoCosa, fichasCosas, nuevosAlLeer, genealogiasDe, esGenealogia, datoPlegado, relacionadosJuego, capituloListo, rangosAp, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
     vecinosFechados, despuesDe, contemporaneos, compararEvento, esDiluvio, lineaDeTiempo, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
     acompanante, tieneApoyo, quienAparece, primerasApariciones, miniArbol, anoDiluvio, seccionesPlan, alcance, nombresDe,
@@ -1491,6 +1613,8 @@ if (typeof document !== 'undefined') (function () {
   const N = Nucleo;
   let D = window.BIBLIA_DATOS || null;
   const R = window.BIBLIA_RECURSOS || null; // imágenes, objetos, mapas antiguos y medios (herramientas/recursos.py)
+  let JG = window.BIBLIA_JUEGO || null; // catálogo de juego (herramientas/juego.py); sin él, la colección es solo de personajes
+  const JUEGO = () => N.juegoValido(JG) ? JG : null;
   const $ = s => document.querySelector(s);
   const main = $('#principal');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -1535,7 +1659,7 @@ if (typeof document !== 'undefined') (function () {
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
   const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, focoHash: undefined, aviso: '',
     mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map(),
-    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1, colLibro: '', colSexo: '',
+    vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1, colLibro: '', colSexo: '', colGrupo: 'personajes', colEstado: '',
     comparar: store.get('biblia.comparar', false) === true, escuchar: false, videoPedido: null, hablarTrasCarga: null };
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
@@ -1634,6 +1758,12 @@ if (typeof document !== 'undefined') (function () {
   }
 
   /* ---------- Leer: pasaje con acompañante ---------- */
+  // Rótulo discreto si el pasaje es (o contiene) una genealogía del catálogo de juego; el texto no cambia.
+  function genealogiaHTML(p) {
+    const gs = N.genealogiasDe(JUEGO(), p); if (!gs.length) return '';
+    const entera = g => N.clave(g.inicio) <= N.clave(p.inicio) && N.clave(g.fin || g.inicio) >= N.clave(p.fin);
+    return `<p class="pasaje-genealogia">${gs.map(g => `<span class="etiqueta genealogia" title="${esc(g.titulo ? g.titulo + '. ' : '')}Quien solo se nombra en una genealogía no cuenta como aparición en la colección.">Genealogía${entera(g) ? '' : ' · ' + esc(rango({ inicio: g.inicio, fin: g.fin || g.inicio }))}</span>`).join('')}</p>`;
+  }
   function vistaPasaje(p, activo) {
     if (!p) return `<h1 tabindex="-1">Pasaje no encontrado</h1><p class="vacio-txt">Ese pasaje no está en los datos, que cubren ${esc(N.alcance(D).texto)}.</p><p><a class="boton" href="#leer">Ver el plan de lectura</a></p>`;
     const ps = N.pasajes(D), i = ps.findIndex(x => x.id === p.id), prev = ps[i - 1], next = ps[i + 1];
@@ -1664,7 +1794,7 @@ if (typeof document !== 'undefined') (function () {
         <p class="pasaje-libro">${esc(N.nombreLibro(D, lb))}</p>
         <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
         <h1 tabindex="-1">${esc(p.titulo)}</h1>
-        ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}</header>
+        ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}${genealogiaHTML(p)}</header>
       ${imagenPasajeHTML(p)}
       ${herramientasPasajeHTML()}
       ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
@@ -2861,6 +2991,79 @@ if (typeof document !== 'undefined') (function () {
   function cerrar(dlg) { if (!dlg.open) return; if (dlg.close) dlg.close(); else dlg.removeAttribute('open'); }
   const lista = (items, vacio) => items.length ? `<ul class="vinculos">${items.join('')}</ul>` : `<p class="meta">${vacio}</p>`;
 
+  /* ---------- Catálogo de juego en las fichas: todo lo que se sabe, apariciones y relacionados ---------- */
+  const capLegible = c => { const r = N.parseRef(c); return r ? `${N.nombreLibro(D, r.libro)} ${r.cap}` : String(c || ''); };
+  const nivelHTML = f => f.npc ? '<span class="nivel-muestra npc" title="Solo aparece en genealogías: personaje no jugable (NPC)">NPC</span> '
+    : f.nivel !== null && f.nivel !== undefined && Number.isFinite(+f.nivel) ? `<span class="nivel-muestra" title="Nivel provisional del catálogo: según cuánto texto hay sobre el personaje">Nivel ${+f.nivel}</span> ` : '';
+  const avanceTxt = f => `${f.total ? `Leído ${f.leidos} de ${f.total} ${f.total === 1 ? 'pasaje' : 'pasajes'} donde aparece · ` : ''}se desbloquea al terminar ${esc(capLegible(f.capitulo))}`;
+  const ICO_COSA = {
+    objetos: '<svg class="ico-cosa" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 17h26v14a3 3 0 01-3 3H10a3 3 0 01-3-3z"/><path d="M5 12h30v5H5z"/><path d="M17 23h6"/></svg>',
+    escenarios: '<svg class="ico-cosa" viewBox="0 0 40 40" aria-hidden="true"><path d="M3 33l11-15 7 9 5-6 11 12z"/><circle cx="29" cy="10" r="3.5"/></svg>'
+  };
+  const GRUPO_TXT = { objetos: 'Objeto', escenarios: 'Escenario' };
+  const datoCosa = g => g === 'objetos' ? 'objeto' : 'escenario';
+  const btnCosa = (g, id) => { const e = ((JUEGO() || {})[g] || {})[id]; return e ? `<button type="button" class="cosa-btn c-${g}" data-${datoCosa(g)}="${esc(id)}">${ICO_COSA[g]}${esc(e.nombre || id)}</button>` : ''; };
+  // Imágenes del catálogo de recursos que tocan las apariciones (las que permite el perfil), como miniaturas ampliables.
+  function imagenesJuegoHTML(aps) {
+    if (!R || !aps.length) return '';
+    const ks = [].concat(...aps.map(x => N.versiculosDe(D, { inicio: x.inicio, fin: x.fin || x.inicio }).map(v => v.clave)));
+    const fs = permitidos(N.imagenesDe(R, ks), ks).slice(0, 4);
+    return fs.length ? `<p class="meta">Imágenes del catálogo de la app que tocan estos versículos (cada una rotulada: arte, reconstrucción o ilustración).</p>
+      <ul class="juego-imgs">${fs.map(f => `<li><button type="button" class="juego-img" data-visor="${esc(f.id)}" aria-label="Ampliar: ${esc(f.titulo)}">${imgRec(f, '')}</button><span class="meta">${rotuloRec(f)}</span></li>`).join('')}</ul>` : '';
+  }
+  // Bloques comunes a las fichas de personaje, objeto y escenario. tipo: 'persona' | 'objetos' | 'escenarios'.
+  function bloquesJuegoHTML(e, tipo, id) {
+    const JJ = JUEGO();
+    const ds = (Array.isArray(e.datos) ? e.datos : []).filter(x => x && x.texto && N.clave(x.ref) !== null);
+    const ex = (Array.isArray(e.externo) ? e.externo : []).filter(x => x && x.texto && x.fuente && /^https:\/\//i.test(x.url || ''));
+    const aps = (Array.isArray(e.apariciones) ? e.apariciones : []).filter(x => x && N.clave(x.inicio) !== null);
+    const mps = (Array.isArray(e.menciones_posteriores) ? e.menciones_posteriores : []).filter(x => x && N.clave(x.ref) !== null);
+    const datoLi = x => plegadoRef(x.ref) ? `<li class="dato plegado"><span class="meta">Dato plegado en este perfil (contenido para personas adultas).</span> ${refHTML(x.ref)}</li>`
+      : `<li class="dato"><p class="dato-txt">${esc(x.texto)}</p><p class="dato-ins">${insignia(x.certeza === 'inferido' ? 'inferido' : 'texto', x.ref)}</p>${x.cita ? `<blockquote>${esc(x.cita)}</blockquote>` : ''}</li>`;
+    const exLi = x => `<li><span class="etiqueta externa">Fuente externa</span> ${esc(x.texto)} <span class="meta">${esc(x.fuente)} · <a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">abrir la fuente</a></span></li>`;
+    const apLi = x => `<li><a class="ref" href="${hrefRef(N.parseRef(x.inicio))}">${esc(rango({ inicio: x.inicio, fin: x.fin || x.inicio }))}</a></li>`;
+    // Relacionados: personas, lugares del mapa, pieza del tabernáculo, objetos y escenarios del catálogo.
+    const rel = [];
+    const personas = (Array.isArray(e.personas) ? e.personas : []).filter(p => N.persona(D, p));
+    if (personas.length) rel.push(`<p class="rel-tit">Personas</p><ul class="chips">${personas.map(p => `<li>${btnPersona(p)}</li>`).join('')}</ul>`);
+    const lugs = [].concat(e.lugar ? [e.lugar] : [], Array.isArray(e.lugares) ? e.lugares : []).filter((l, i, a) => N.lugar(D, l) && a.indexOf(l) === i);
+    if (lugs.length) rel.push(`<p class="rel-tit">Lugares del mapa</p><ul class="chips">${lugs.map(l => `<li>${btnLugar(l)}</li>`).join('')}</ul>`);
+    if (e.tabernaculo && TB && N.tbPieza(TB, e.tabernaculo)) rel.push(`<p class="rel-tit">Tabernáculo</p><p><a class="boton secundario" href="${hrefTB(e.tabernaculo)}">Ver «${esc(N.tbPieza(TB, e.tabernaculo).nombre || e.tabernaculo)}» en el plano</a></p>`);
+    const inv = N.relacionadosJuego(JJ, tipo === 'persona' ? 'persona' : tipo === 'objetos' ? 'objeto' : 'escenario', id);
+    const objs = tipo === 'escenarios' ? (Array.isArray(e.objetos) ? e.objetos : []) : inv.objetos;
+    const escs = tipo === 'escenarios' ? [] : inv.escenarios;
+    const cs = objs.map(o => btnCosa('objetos', o)).concat(escs.map(s => btnCosa('escenarios', s))).filter(Boolean);
+    if (cs.length) rel.push(`<p class="rel-tit">Objetos y escenarios</p><ul class="chips">${cs.map(b => `<li>${b}</li>`).join('')}</ul>`);
+    const imgs = imagenesJuegoHTML(aps);
+    if (imgs) rel.push(`<p class="rel-tit">Imágenes</p>${imgs}`);
+    return `<section class="juego-ficha">
+      ${ds.length ? `<h3>Lo que dice el texto</h3><ul class="datos-juego">${ds.map(datoLi).join('')}</ul>` : ''}
+      ${ex.length ? `<h3>Fuera de la Biblia</h3><p class="meta">Historia, arqueología o tradición: no lo dice el texto bíblico. Enlaces a sitios ajenos a esta app.</p><ul class="externos">${ex.map(exLi).join('')}</ul>` : ''}
+      <h3>Apariciones${aps.length ? ` (${aps.length})` : ''}</h3>
+      ${aps.length ? `<p class="meta">Donde está presente en el relato (aunque no se le nombre); las genealogías no cuentan.</p><ul class="chips apariciones">${aps.map(apLi).join('')}</ul>` : '<p class="meta">Solo se le nombra en genealogías.</p>'}
+      ${mps.length ? `<h3>Menciones posteriores</h3><p class="meta">Otros lo nombran más adelante.</p><ul class="chips">${mps.map(x => `<li>${refHTML(x.ref)}</li>`).join('')}</ul>` : ''}
+      ${rel.length ? `<h3>Relacionados</h3>${rel.join('')}` : ''}
+      <p class="meta">Catálogo de juego del proyecto: resumen y nivel son editoriales; cada dato lleva su versículo.</p></section>`;
+  }
+  // Ficha de objeto o escenario (mismo diálogo que la de personaje).
+  function abrirCosa(g, id) {
+    const JJ = JUEGO(), e = JJ && (JJ[g] || {})[id]; if (!e) return;
+    const s = N.vistaFichaJuego(D, JJ, g, id, [...pasajesLeidos()]) || {}, obt = !!s.visible;
+    const ico = obt ? ICO_COSA[g] : ICO_COSA[g].replace('class="ico-cosa"', 'class="ico-cosa silueta-cosa"');
+    fichaDlg.querySelector('h2').textContent = e.nombre || id;
+    // Sin obtener: silueta, nombre y capítulo de la primera aparición, como en la colección (sin adelantar el contenido).
+    fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
+      <div class="ficha-cab"><figure class="retrato vacio cosa c-${g}${obt ? '' : ' sin-obtener'}">${ico}<figcaption>${obt ? GRUPO_TXT[g] : 'Sin descubrir'}</figcaption></figure><div class="ficha-datos">
+        <p class="rol">${GRUPO_TXT[g]}${obt && e.tipo ? ' · ' + esc(e.tipo) : ''}</p>
+        ${obt && e.resumen ? `<p class="resumen-juego">${esc(e.resumen)}</p>` : ''}
+        <p class="ficha-estado${obt ? ' en-col' : ''}">${obt ? 'En tu colección' : `Aún no está en tu colección${s.primeraCap ? ' · aparece en ' + esc(capLegible(s.primeraCap)) : ''}`}</p>
+        ${obt ? '' : '<p class="meta">Su ficha se verá cuando leas el pasaje donde aparece por primera vez.</p>'}
+      </div></div>
+      ${s.pasaje ? `<p class="acciones-ficha"><a class="boton" href="#leer/p/${esc(s.pasaje)}">Leer donde aparece</a></p>` : ''}
+      ${obt ? bloquesJuegoHTML(e, g, id) : ''}`;
+    mostrar(fichaDlg);
+    fichaDlg.querySelector('.dialogo-cuerpo').scrollTop = 0;
+  }
   function abrirFicha(id) {
     const p = N.persona(D, id); if (!p) return;
     const I = N.indice(D);
@@ -2900,7 +3103,11 @@ if (typeof document !== 'undefined') (function () {
     const grafia = formas.some(f => N.norm(f) !== N.norm(p.nombre)) ? formas.join(', ') : '';
     const notaGrafia = grafia && /^En la Reina-Valera 1909:/.test(p.nota || '');
     const k1 = N.indice(D).primera.get(id), primera = k1 ? N.refDeClave(k1) : p.primera_ref;
-    const enCol = !p.sin_nombre && N.coleccion(D, [...pasajesLeidos()]).has(id), rz = N.rareza(D, id);
+    const JJ = JUEGO(), ej = JJ && JJ.personajes[id], leidosF = [...pasajesLeidos()];
+    const est = !p.sin_nombre && ej ? N.vistaFichaJuego(D, JJ, 'personajes', id, leidosF) : null;
+    const oculto = !!est && !est.visible; // no obtenido: sin el contenido del catálogo (como en la colección)
+    const enCol = !p.sin_nombre && N.coleccion(D, leidosF, JJ).has(id), rz = N.rareza(D, id);
+    const estadoTxt = enCol ? 'En tu colección' : est && est.estado === 'en-curso' ? `En curso · ${avanceTxt(est)}` : est && est.capitulo ? `Aún no está en tu colección · se desbloquea al terminar ${esc(capLegible(est.capitulo))}` : 'Aún no está en tu colección';
     const pas = N.pasajesDePersona(D, id);
     const pasLi = x => `<li><a href="#leer/p/${esc(x.pasaje.id)}"><span class="pp-rango">${rango(x.pasaje)}</span><span class="pp-titulo">${esc(x.pasaje.titulo)}</span></a><span class="meta">${x.versiculos} ${x.versiculos === 1 ? 'versículo' : 'versículos'}</span></li>`;
     const lugs = N.lugaresDePersona(D, id, 10), ext = N.enlacesExternos(D, id);
@@ -2910,10 +3117,13 @@ if (typeof document !== 'undefined') (function () {
         ${p.rol ? `<p class="rol">${esc(p.rol)}</p>` : ''}
         ${grafia ? `<p class="grafia">En la Reina-Valera 1909: <strong>${esc(grafia)}</strong></p>` : ''}
         <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${primera ? ' · primera aparición: ' + refHTML(primera) : ''} ${etiquetaTrad(id)}</p>
-        ${p.sin_nombre ? '' : `<p class="ficha-estado${enCol ? ' en-col' : ''}">${enCol ? 'En tu colección' : 'Aún no está en tu colección'} · <span class="rareza-muestra r-${rz.id}">${esc(rz.nombre)}</span> <span class="meta">${rz.versiculos} ${rz.versiculos === 1 ? 'versículo' : 'versículos'}</span></p>`}
+        ${p.sin_nombre ? '' : `<p class="ficha-estado${enCol ? ' en-col' : est && est.estado === 'en-curso' ? ' en-curso' : ''}">${estadoTxt} · ${est ? nivelHTML(est) : ''}<span class="rareza-muestra r-${rz.id}">${esc(rz.nombre)}</span> <span class="meta">${rz.versiculos} ${rz.versiculos === 1 ? 'versículo' : 'versículos'}</span></p>`}
+        ${ej && ej.resumen && !oculto ? `<p class="resumen-juego">${esc(ej.resumen)}</p>` : ''}
+        ${oculto && est.primeraCap ? `<p class="meta">Aparece en ${esc(capLegible(est.primeraCap))}. Su ficha de la colección se verá cuando la obtengas.</p>` : ''}
       </div></div>
       <p class="acciones-ficha">${(r => r ? `<a class="boton" href="${hrefRef(N.parseRef(r))}">Leer donde aparece</a>` : '')([primera, p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
         ${N.enPantallaArbol(D, id) ? `<a class="boton secundario" href="#arbol/${encodeURIComponent(id)}">Ver en el árbol</a>` : ''}</p>
+      ${ej && !oculto ? bloquesJuegoHTML(ej, 'persona', id) : ''}
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
       <h3>Hijos</h3>${lista(hijos, 'No constan.')}
@@ -3987,34 +4197,71 @@ if (typeof document !== 'undefined') (function () {
       <ul class="chips">${c.protagonistas.map(x => `<li>${btnPersona(x)}</li>`).join('')}</ul>`);
   }
   const rangoRareza = r => r.max === Infinity ? `${r.min} o más versículos` : r.min === r.max ? `${r.min} versículo` : `${r.min}–${r.max} versículos`;
+  const bloqueadaHTML = (f, quien, ico) => `<li class="ficha-col bloqueada"><span class="ficha-retrato">${ico || SILUETA}</span><span class="ficha-nombre"><span aria-hidden="true">Sin descubrir</span><span class="sr">${quien} sin descubrir,</span></span><span class="ficha-pie">Aparece en ${esc(f.primeraCap).replace(' ', '&nbsp;')}</span></li>`;
   function fichaColHTML(f) {
-    if (!f.desbloqueada) return `<li class="ficha-col bloqueada"><span class="ficha-retrato">${SILUETA}</span><span class="ficha-nombre"><span aria-hidden="true">Sin descubrir</span><span class="sr">Personaje sin descubrir,</span></span><span class="ficha-pie">Aparece en ${esc(f.primeraCap).replace(' ', '&nbsp;')}</span></li>`;
-    return `<li><button type="button" class="ficha-col r-${f.rareza.id}${f.sexo === 'f' ? ' mujer' : ''}" data-persona="${esc(f.id)}">
+    if (f.estado === 'bloqueado' || (!f.estado && !f.desbloqueada)) return bloqueadaHTML(f, 'Personaje');
+    const curso = f.estado === 'en-curso';
+    const chip = f.juego ? nivelHTML(f) : `<span class="rareza-muestra r-${f.rareza.id}">${esc(f.rareza.nombre)}</span>`;
+    return `<li><button type="button" class="ficha-col r-${f.rareza.id}${f.sexo === 'f' ? ' mujer' : ''}${curso ? ' en-curso' : ''}" data-persona="${esc(f.id)}">
       <span class="ficha-retrato"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(f.id))}</span></span>
-      <span class="ficha-nombre">${esc(nombre(f.id))}</span><span class="rareza-muestra r-${f.rareza.id}">${esc(f.rareza.nombre)}</span>
-      <span class="ficha-pie">${esc(f.primera)}</span></button></li>`;
+      <span class="ficha-nombre">${esc(nombre(f.id))}</span>${chip}
+      ${curso ? `<span class="ficha-avance"><progress max="${f.total || 1}" value="${f.leidos}" aria-label="Pasajes leídos donde aparece"></progress><span>${f.leidos}/${f.total}</span></span>
+      <span class="ficha-pie">En curso · hasta ${esc(f.capitulo || '').replace(' ', '&nbsp;')}</span>` : `<span class="ficha-pie">${esc(f.primera)}</span>`}</button></li>`;
   }
+  function fichaCosaHTML(f) {
+    if (!f.desbloqueada) return bloqueadaHTML(f, GRUPO_TXT[f.grupo], ICO_COSA[f.grupo].replace('class="ico-cosa"', 'class="ico-cosa silueta-cosa"'));
+    return `<li><button type="button" class="ficha-col cosa c-${f.grupo}" data-${datoCosa(f.grupo)}="${esc(f.id)}">
+      <span class="ficha-retrato">${ICO_COSA[f.grupo]}</span><span class="ficha-nombre">${esc(f.nombre)}</span>
+      ${f.tipo ? `<span class="ficha-tipo">${esc(f.tipo)}</span>` : ''}<span class="ficha-pie">${esc(f.primera)}</span></button></li>`;
+  }
+  const segCol = (leyenda, name, actual, ops) => `<fieldset class="segmentos"><legend>${leyenda}</legend>${ops.map(([v, t]) => `<label><input type="radio" name="${name}" value="${esc(v)}" ${actual === v ? 'checked' : ''}><span>${esc(t)}</span></label>`).join('')}</fieldset>`;
+  // Colección: personajes y, con el catálogo de juego, objetos y escenarios.
   function vistaPersonajes() {
-    const F = N.fichasColeccion(D, [...pasajesLeidos()]), obt = F.filter(f => f.desbloqueada).length;
+    const JJ = JUEGO(), Ls = [...pasajesLeidos()];
+    const F = N.fichasColeccion(D, Ls, JJ);
+    const G = { personajes: F };
+    if (JJ) N.GRUPOS_JUEGO.forEach(g => { G[g] = N.fichasCosas(D, JJ, g, Ls); });
+    const grupo = G[estado.colGrupo] ? estado.colGrupo : 'personajes';
+    const fe = estado.colEstado === 'obtenidos' || (estado.colEstado === 'en-curso' && grupo === 'personajes') ? estado.colEstado : '';
+    const pasaFE = f => !fe || (fe === 'obtenidos' ? f.desbloqueada : f.estado === 'en-curso');
+    const NOM_G = { personajes: 'Personajes', objetos: 'Objetos', escenarios: 'Escenarios' };
+    const obtDe = xs => xs.filter(f => f.desbloqueada).length;
+    const pestanas = JJ ? `<div class="colec-grupos">${segCol('Grupo', 'col-grupo', grupo, Object.keys(G).map(g => [g, `${NOM_G[g]} ${obtDe(G[g])}/${G[g].length}`]))}</div>` : '';
+    const filtroEstado = JJ ? segCol('Estado', 'col-estado', fe, [['', 'Todos'], ['obtenidos', 'Obtenidos']].concat(grupo === 'personajes' ? [['en-curso', 'En curso']] : [])) : '';
+    const sub = JJ ? `<p class="sub">Un personaje se desbloquea al terminar de leer el capítulo donde se cierra la primera historia en la que es protagonista; mientras tanto su ficha está «en curso». Quien solo aparece en genealogías (NPC) entra al leer su primera mención. Objetos y escenarios entran al leer el pasaje donde aparecen por primera vez.</p>`
+      : `<p class="sub">Cada persona con nombre entra en tu colección cuando marcas como leído un pasaje donde aparece. Ábrela para ver su ficha.</p>`;
+    const cab = `<h1 tabindex="-1">Colección</h1>${sub}${pestanas}`;
+    if (grupo !== 'personajes') {
+      const xs = G[grupo], obt = obtDe(xs), vis = xs.filter(pasaFE);
+      return `${cab}
+        <div class="colec-resumen"><p class="colec-cuenta"><strong>${obt}</strong> de ${xs.length}</p>
+          <progress max="${xs.length || 1}" value="${obt}" aria-label="${NOM_G[grupo]} obtenidos"></progress></div>
+        <div class="colec-filtros">${filtroEstado}</div>
+        ${vis.length ? `<ul class="fichas-col">${vis.map(fichaCosaHTML).join('')}</ul>` : '<p class="vacio-txt">Aún no tienes fichas con este filtro.</p>'}`;
+    }
+    const obt = obtDe(F);
     const LB = N.libros(D).filter(l => F.some(f => f.libros.includes(l.id)));
     const lib = LB.some(l => l.id === estado.colLibro) ? estado.colLibro : '';
     const sx = estado.colSexo === 'f' || estado.colSexo === 'm' ? estado.colSexo : '';
-    const enLibro = F.filter(f => !lib || f.libros.includes(lib)), obtL = enLibro.filter(f => f.desbloqueada).length;
-    const vis = enLibro.filter(f => !sx || (f.desbloqueada && f.sexo === sx));
-    const sinDesc = sx ? enLibro.filter(f => !f.desbloqueada).length : 0;
-    const seg = (leyenda, name, actual, ops) => `<fieldset class="segmentos"><legend>${leyenda}</legend>${ops.map(([v, t]) => `<label><input type="radio" name="${name}" value="${esc(v)}" ${actual === v ? 'checked' : ''}><span>${esc(t)}</span></label>`).join('')}</fieldset>`;
+    const enLibro = F.filter(f => !lib || f.libros.includes(lib)), obtL = obtDe(enLibro);
+    const conocida = f => f.desbloqueada || f.estado === 'en-curso';
+    const vis = enLibro.filter(f => (!sx || (conocida(f) && f.sexo === sx)) && pasaFE(f));
+    const sinDesc = sx && !fe ? enLibro.filter(f => !conocida(f)).length : 0;
+    const enCurso = F.filter(f => f.estado === 'en-curso').length;
     const nomLib = lib ? (LB.find(l => l.id === lib) || {}).nombre : '';
-    return `<h1 tabindex="-1">Personajes</h1>
-      <p class="sub">Cada persona con nombre entra en tu colección cuando marcas como leído un pasaje donde aparece. Ábrela para ver su ficha.</p>
+    return `${cab}
       <div class="colec-resumen"><p class="colec-cuenta"><strong>${obt}</strong> de ${F.length}</p>
         <progress max="${F.length || 1}" value="${obt}" aria-label="Personajes obtenidos"></progress>
+        ${JJ && enCurso ? `<p class="meta">${enCurso} en curso</p>` : ''}
         ${lib ? `<p class="meta">En ${esc(nomLib)}: ${obtL} de ${enLibro.length}</p>` : ''}</div>
-      <div class="colec-filtros">${LB.length > 1 ? seg('Libro', 'col-libro', lib, [['', 'Todos']].concat(LB.map(l => [l.id, l.nombre]))) : ''}
-        ${seg('Mostrar', 'col-sexo', sx, [['', 'Todos'], ['f', 'Mujeres'], ['m', 'Hombres']])}</div>
+      <div class="colec-filtros">${LB.length > 1 ? segCol('Libro', 'col-libro', lib, [['', 'Todos']].concat(LB.map(l => [l.id, l.nombre]))) : ''}
+        ${segCol('Mostrar', 'col-sexo', sx, [['', 'Todos'], ['f', 'Mujeres'], ['m', 'Hombres']])}${filtroEstado}</div>
+      ${JJ ? `<details class="plegable"><summary>Qué significa el nivel</summary>
+        <p class="meta">${insignia('calculo')} Nivel provisional del catálogo: 1 + log₂ de los versículos donde el personaje está presente (tope 12). Mide cuánto texto hay sobre él, no su importancia; se recalcula con cada libro. NPC: solo aparece en genealogías.</p></details>` : ''}
       <details class="plegable"><summary>Qué significa la rareza</summary>
         <p class="meta">Sale solo de los datos: en cuántos versículos de ${esc(N.alcance(D).texto)} aparece la persona. No mide su importancia.</p>
         <ul class="rarezas">${N.RAREZAS.map(r => `<li><span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span> ${rangoRareza(r)} <span class="meta">· ${F.filter(f => f.rareza.id === r.id).length} personas</span></li>`).join('')}</ul></details>
-      ${obt ? '' : `<p class="colec-vacia">Todavía no tienes fichas. <a href="#leer">Empieza a leer</a> y marca un pasaje como leído.</p>`}
+      ${obt || enCurso ? '' : `<p class="colec-vacia">Todavía no tienes fichas. <a href="#leer">Empieza a leer</a> y marca un pasaje como leído.</p>`}
       ${sx && sinDesc ? `<p class="meta">Las ${sinDesc} fichas sin descubrir no se filtran por mujeres u hombres, para no adelantar nada.</p>` : ''}
       ${vis.length ? `<ul class="fichas-col">${vis.map(fichaColHTML).join('')}</ul>` : '<p class="vacio-txt">Aún no tienes fichas con este filtro.</p>'}`;
   }
@@ -4022,13 +4269,25 @@ if (typeof document !== 'undefined') (function () {
   let tNuevas = 0;
   const ocultarNuevas = () => { clearTimeout(tNuevas); const el = $('#nuevas'); if (el) { el.hidden = true; el.classList.remove('entra'); } };
   const programarNuevas = () => { clearTimeout(tNuevas); tNuevas = setTimeout(ocultarNuevas, 9000); };
-  function mostrarNuevas(ids) {
-    const el = $('#nuevas'); if (!el || !ids.length) return;
-    const total = N.coleccionables(D).length, obt = N.coleccion(D, [...pasajesLeidos()]).size;
-    const vis = ids.length > 4 ? ids.slice(0, 3) : ids, resto = ids.length - vis.length;
-    el.innerHTML = `<div class="nuevas-cab"><p class="nuevas-titulo">Nuevo en tu colección<span class="nuevas-cuenta">${ids.length === 1 ? '1 personaje' : ids.length + ' personajes'} · llevas ${obt} de ${total}</span></p>
+  // nv: lista de personas, o { personas, objetos, escenarios } (con el catálogo de juego).
+  function mostrarNuevas(nv) {
+    const el = $('#nuevas'); if (!el || !nv) return;
+    const JJ = JUEGO(), Ls = [...pasajesLeidos()];
+    const items = (Array.isArray(nv) ? nv : nv.personas || []).map(id => ['persona', id])
+      .concat(Array.isArray(nv) ? [] : [].concat(...N.GRUPOS_JUEGO.map(g => (nv[g] || []).map(id => [g, id]))));
+    if (!items.length) return;
+    const gs = JJ ? N.GRUPOS_JUEGO.map(g => N.fichasCosas(D, JJ, g, Ls)) : [];
+    const total = N.coleccionables(D).length + gs.reduce((n, xs) => n + xs.length, 0);
+    const obt = N.coleccion(D, Ls, JJ).size + gs.reduce((n, xs) => n + xs.filter(x => x.desbloqueada).length, 0);
+    const soloP = items.every(x => x[0] === 'persona');
+    const vis = items.length > 4 ? items.slice(0, 3) : items, resto = items.length - vis.length;
+    const liP = (id, i) => { const r = N.rareza(D, id), e = JJ && JJ.personajes[id] ? N.estadoPersonaje(D, JJ, id, Ls) : null;
+      return `<li style="--i:${i}"><button type="button" class="nueva-ficha r-${r.id}" data-persona="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(id))}</span><span class="nueva-nombre">${esc(nombre(id))}</span>${e ? nivelHTML(e) : `<span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span>`}</button></li>`; };
+    const liC = (g, id, i) => `<li style="--i:${i}"><button type="button" class="nueva-ficha cosa c-${g}" data-${datoCosa(g)}="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${ICO_COSA[g]}</span><span class="nueva-nombre">${esc(((JJ || {})[g] || {})[id] ? JJ[g][id].nombre || id : id)}</span><span class="rareza-muestra">${GRUPO_TXT[g]}</span></button></li>`;
+    const n = items.length, cuenta = soloP ? (n === 1 ? '1 personaje' : n + ' personajes') : (n === 1 ? '1 ficha' : n + ' fichas');
+    el.innerHTML = `<div class="nuevas-cab"><p class="nuevas-titulo">Nuevo en tu colección<span class="nuevas-cuenta">${cuenta} · llevas ${obt} de ${total}</span></p>
         <button type="button" class="cerrar" data-cerrar-nuevas aria-label="Cerrar aviso"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
-      <ul class="nuevas-fichas">${vis.map((id, i) => { const r = N.rareza(D, id); return `<li style="--i:${i}"><button type="button" class="nueva-ficha r-${r.id}" data-persona="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(id))}</span><span class="nueva-nombre">${esc(nombre(id))}</span><span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span></button></li>`; }).join('')}
+      <ul class="nuevas-fichas">${vis.map(([g, id], i) => g === 'persona' ? liP(id, i) : liC(g, id, i)).join('')}
         ${resto ? `<li class="nuevas-resto" style="--i:${vis.length}">y ${resto} más</li>` : ''}</ul>
       <a class="nuevas-ver" href="#personajes" data-cerrar-nuevas>Ver la colección</a>`;
     el.hidden = false; el.classList.remove('entra'); void el.offsetWidth; el.classList.add('entra');
@@ -4301,6 +4560,7 @@ if (typeof document !== 'undefined') (function () {
     const vd = t.closest('[data-video]'); if (vd) { const v = ORIG.o && N.videosDeLibro(ORIG.o, estado.libro).find(x => x.youtube_id === vd.dataset.video); if (v) { estado.videoPedido = estado.libro; vd.outerHTML = iframeVideo(v); } return; }
     const cu = t.closest('[data-curio]'); if (cu) { detalleCurio(cu.dataset.curio); return; }
     const ia = t.closest('[data-ir-arbol]'); if (ia) { irArbol(ia.dataset.irArbol); return; }
+    const cs = t.closest('[data-objeto], [data-escenario]'); if (cs) { e.preventDefault(); if (cs.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirCosa(cs.dataset.objeto ? 'objetos' : 'escenarios', cs.dataset.objeto || cs.dataset.escenario); return; }
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
     const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); if (p.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
@@ -4313,10 +4573,10 @@ if (typeof document !== 'undefined') (function () {
     const ac = t.closest('[data-activar]'); if (ac) { activar(ac.dataset.activar); return; }
     if (t.closest('[data-hoja]')) { estado.hoja = !estado.hoja; const a = $('#acompanante'); if (a) { a.classList.toggle('abierta', estado.hoja); a.querySelector('[data-hoja]').setAttribute('aria-expanded', estado.hoja); } return; }
     const ls = t.closest('[data-leido-seguir]'); if (ls) {
-      const L = pasajesLeidos(), pid = ls.dataset.leidoSeguir, nuevas = L.has(pid) ? [] : N.nuevasAlLeer(D, [...L], pid);
+      const L = pasajesLeidos(), pid = ls.dataset.leidoSeguir, nuevas = L.has(pid) ? null : N.nuevosAlLeer(D, JUEGO(), [...L], pid);
       L.add(pid); store.set('biblia.pasajesLeidos', [...L]);
       const ps = N.pasajes(D), i = ps.findIndex(x => x.id === pid); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer';
-      if (nuevas.length) mostrarNuevas(nuevas);
+      if (nuevas) mostrarNuevas(nuevas);
       return;
     }
     const ve = t.closest('.vers'); if (ve && !t.closest('button, a')) { activar(ve.dataset.v); return; }
@@ -4330,7 +4590,7 @@ if (typeof document !== 'undefined') (function () {
     if (t.id === 'f-ambito') { estado.mapaFiltro = t.value; rerender('#f-ambito'); }
     else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
     else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
-    else if (t.name === 'col-libro' || t.name === 'col-sexo') { estado[t.name === 'col-libro' ? 'colLibro' : 'colSexo'] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
+    else if (['col-libro', 'col-sexo', 'col-grupo', 'col-estado'].includes(t.name)) { estado[{ 'col-libro': 'colLibro', 'col-sexo': 'colSexo', 'col-grupo': 'colGrupo', 'col-estado': 'colEstado' }[t.name]] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'modo-pasaje') { estado.comparar = t.value === 'comparar'; store.set('biblia.comparar', estado.comparar); rerender(`input[name="modo-pasaje"][value="${t.value}"]`); }
     else if (t.dataset && t.dataset.col) { alternarColumna(t.dataset.col, t.checked); rerender(`input[data-col="${t.dataset.col}"]`); }
     else if (t.name === 'voz-idioma') {
@@ -4411,6 +4671,9 @@ if (typeof document !== 'undefined') (function () {
   // Tabernáculo de prueba (EJEMPLO) con ?ejemplo o ?tabernaculo-ejemplo mientras no exista datos/tabernaculo.js.
   const tbEjemplo = () => (EJEMPLO || /[?&]tabernaculo-ejemplo/.test(location.search)) && !TB
     ? cargarScript('pruebas/tabernaculo-ejemplo.js').then(() => { TB = window.BIBLIA_TABERNACULO || null; }, () => {}) : Promise.resolve();
-  if (EJEMPLO && !RC) cargarScript('pruebas/recorridos-ejemplo.js').then(() => { RC = window.BIBLIA_RECORRIDOS || null; }, () => {}).then(tbEjemplo).then(arrancar);
-  else tbEjemplo().then(arrancar);
+  // Catálogo de juego de prueba (EJEMPLO): con ?ejemplo si falta datos/juego.js; con ?juego-ejemplo, siempre (lo sustituye).
+  const juegoEjemplo = () => /[?&]juego-ejemplo/.test(location.search) || (EJEMPLO && !N.juegoValido(JG))
+    ? cargarScript('pruebas/juego-ejemplo.js').then(() => { JG = window.BIBLIA_JUEGO || null; }, () => {}) : Promise.resolve();
+  if (EJEMPLO && !RC) cargarScript('pruebas/recorridos-ejemplo.js').then(() => { RC = window.BIBLIA_RECORRIDOS || null; }, () => {}).then(tbEjemplo).then(juegoEjemplo).then(arrancar);
+  else tbEjemplo().then(juegoEjemplo).then(arrancar);
 })();

@@ -1,0 +1,44 @@
+{
+ "libro": "Gn",
+ "genealogias": [
+  {"id": "gn-adan-noe", "inicio": "Gn 5:1", "fin": "Gn 5:32", "titulo": "De Adán a Noé", "cita": "el libro de las generaciones de Adam"},
+  {"id": "gn-naciones", "inicio": "Gn 10:1", "fin": "Gn 10:32", "titulo": "Las naciones", "cita": "las generaciones de los hijos de Noé"},
+  {"id": "gn-sem", "inicio": "Gn 11:10", "fin": "Gn 11:26", "titulo": "De Sem a Taré", "cita": "Estas son las generaciones de Sem"},
+  {"id": "gn-ismael", "inicio": "Gn 25:12", "fin": "Gn 25:18", "titulo": "Ismael", "cita": "estas son las generaciones de Ismael"},
+  {"id": "gn-esau", "inicio": "Gn 36:1", "fin": "Gn 36:43", "titulo": "Esaú", "cita": "son las generaciones de Esaú"},
+  {"id": "gn-egipto", "inicio": "Gn 46:8", "fin": "Gn 46:27", "titulo": "Los que entraron en Egipto", "cita": "que entraron en Egipto"}
+ ],
+ "historias": [
+  {"id": "origenes", "titulo": "Los orígenes", "inicio": "Gn 1:1", "fin": "Gn 11:26", "principales": ["Adam_1"]},
+  {"id": "abraham", "titulo": "Abraham", "inicio": "Gn 11:27", "fin": "Gn 25:11", "principales": ["Abram_1"]},
+  {"id": "jacob", "titulo": "Isaac y Jacob", "inicio": "Gn 25:12", "fin": "Gn 36:43", "principales": []},
+  {"id": "jose", "titulo": "José", "inicio": "Gn 37:1", "fin": "Gn 50:26", "principales": []}
+ ],
+ "personajes": {
+  "Adam_1": {
+   "apariciones": [{"inicio": "Gn 2:7", "fin": "Gn 3:24"}, {"inicio": "Gn 4:1", "fin": "Gn 4:1"}, {"inicio": "Gn 4:25", "fin": "Gn 4:25"}],
+   "menciones_posteriores": [],
+   "resumen": "Primer hombre, formado del polvo y puesto en el huerto del Edén.",
+   "datos": [
+    {"texto": "Vivió 930 años", "certeza": "texto", "ref": "Gn 5:5", "cita": "novecientos y treinta años"},
+    {"texto": "Formado del polvo de la tierra", "certeza": "texto", "ref": "Gn 2:7", "cita": "Formó, pues, Jehová Dios al hombre del polvo de la tierra"}
+   ],
+   "externo": [{"texto": "Prueba de fuente externa.", "fuente": "Wikipedia (inglés), «Adam» (secundaria)", "url": "https://en.wikipedia.org/wiki/Adam"}]
+  },
+  "Abram_1": {
+   "apariciones": [{"inicio": "Gn 11:27", "fin": "Gn 25:10"}],
+   "resumen": "Prueba.",
+   "datos": [],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "arca-noe": {"nombre": "Arca de Noé", "tipo": "embarcación", "apariciones": [{"inicio": "Gn 6:14", "fin": "Gn 8:19"}],
+   "personas": ["Noah_1"], "lugares": [], "resumen": "Prueba.",
+   "datos": [{"texto": "De madera de gofer", "certeza": "texto", "ref": "Gn 6:14", "cita": "Hazte un arca de madera de Gopher"}], "externo": []}
+ },
+ "escenarios": {
+  "eden": {"nombre": "Huerto del Edén", "lugar": "eden", "apariciones": [{"inicio": "Gn 2:8", "fin": "Gn 3:24"}],
+   "personas": ["Adam_1", "Eve_1"], "objetos": [], "resumen": "Prueba.", "datos": [], "externo": []}
+ }
+}

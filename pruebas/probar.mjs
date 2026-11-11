@@ -520,6 +520,80 @@ if (existsSync(real)) {
     assert.ok(N2.pasajesDePersona(D2, 'Seth_1').some(x => x.pasaje.id === gn5[0]));
     console.log(`     coleccionables ${f.length}; rareza: ${N2.RAREZAS.map(r => `${r.nombre} ${f.filter(x => x.rareza.id === r.id).length}`).join(', ')}`);
   });
+  // Catálogo de juego (pruebas/juego-ejemplo.js con los datos reales): desbloqueo por capítulo, NPC, objetos y escenarios.
+  const CJ = cargar(real, path.join(aqui, 'juego-ejemplo.js'), path.join(aqui, '..', 'app.js'));
+  const NJ = CJ.BibliaNucleo, DJ = CJ.BIBLIA_DATOS, J = CJ.BIBLIA_JUEGO;
+  const deCap = (cap, lb = 'Gn') => j(NJ.pasajes(DJ).filter(p => { const a = NJ.parseRef(p.inicio), b = NJ.parseRef(p.fin); return a.libro === lb && a.cap <= cap && b.cap >= cap; }).map(p => p.id));
+  prueba('juego: Abraham «en curso» con Gn 24 leído y desbloqueado al leer todo Gn 25', () => {
+    const gn24 = deCap(24), gn25 = deCap(25);
+    assert.deepEqual(gn25, ['gn-52', 'gn-53']);
+    const e = j(NJ.estadoPersonaje(DJ, J, 'Abram_1', gn24));
+    assert.equal(e.estado, 'en-curso'); assert.equal(e.capitulo, 'Gn 25'); assert.equal(e.leidos, 4); assert.ok(e.total > 4); assert.equal(e.nivel, 10);
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Abram_1', gn24.concat('gn-52')).estado, 'en-curso', 'falta la segunda mitad de Gn 25');
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Abram_1', gn24.concat(gn25)).estado, 'obtenido');
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Abram_1', gn25).estado, 'obtenido', 'terminar el capítulo basta');
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Abram_1', []).estado, 'bloqueado');
+    assert.ok(!NJ.coleccion(DJ, gn24, J).has('Abram_1') && NJ.coleccion(DJ, gn24, J).has('Isaac_1'), 'sin entrada en el catálogo: como antes');
+    assert.ok(NJ.coleccion(DJ, gn24, null).has('Abram_1'), 'sin catálogo, primera mención');
+    assert.deepEqual(j(NJ.nuevasAlLeer(DJ, gn24.concat('gn-52'), 'gn-53', J)).includes('Abram_1'), true);
+    assert.ok(!j(NJ.nuevasAlLeer(DJ, [], 'gn-48', J)).includes('Abram_1'));
+    const f = j(NJ.fichasColeccion(DJ, gn24, J)).find(x => x.id === 'Abram_1');
+    assert.equal(f.estado, 'en-curso'); assert.equal(f.desbloqueada, false);
+  });
+  prueba('juego: Adán listo al terminar Gn 3; NPC al leer su primera mención; genealogía sin apariciones', () => {
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Adam_1', ['gn-03']).estado, 'en-curso');
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Adam_1', ['gn-05', 'gn-06']).estado, 'obtenido');
+    const n0 = j(NJ.estadoPersonaje(DJ, J, 'Mahalalel_1', ['gn-10']));
+    assert.equal(n0.estado, 'bloqueado'); assert.equal(n0.npc, true); assert.equal(n0.nivel, 0);
+    assert.equal(NJ.estadoPersonaje(DJ, J, 'Mahalalel_1', ['gn-11']).estado, 'obtenido');
+    assert.ok(NJ.esGenealogia(J, NJ.pasajeDe(DJ, 'Gn 5:1')) && NJ.esGenealogia(J, NJ.pasajeDe(DJ, 'Gn 5:30')));
+    assert.ok(!NJ.esGenealogia(J, NJ.pasajeDe(DJ, 'Gn 6:1')) && !NJ.esGenealogia(null, NJ.pasajeDe(DJ, 'Gn 5:1')));
+    assert.deepEqual(j(NJ.genealogiasDe(J, NJ.pasajeDe(DJ, 'Gn 25:1'))).map(g => g.id), ['gn-25-ismael']);
+  });
+  prueba('juego: objeto obtenido al leer Gn 6 (arca de Noé); escenario Edén; relacionados', () => {
+    const p = NJ.pasajeDe(DJ, 'Gn 6:14').id;
+    assert.equal(NJ.estadoCosa(DJ, J, 'objetos', 'arca-noe', []).estado, 'bloqueado');
+    assert.equal(NJ.estadoCosa(DJ, J, 'objetos', 'arca-noe', [p]).estado, 'obtenido');
+    assert.equal(NJ.estadoCosa(DJ, J, 'objetos', 'arca-noe', []).primeraCap, 'Gn 6');
+    const ob = j(NJ.fichasCosas(DJ, J, 'objetos', [p]));
+    assert.deepEqual(ob.map(x => [x.id, x.desbloqueada]), [['arca-noe', true], ['arca-pacto', false]]);
+    assert.equal(NJ.estadoCosa(DJ, J, 'escenarios', 'eden', ['gn-03']).estado, 'obtenido');
+    const nu = j(NJ.nuevosAlLeer(DJ, J, [], p));
+    assert.deepEqual(nu.objetos, ['arca-noe']); assert.deepEqual(nu.escenarios, []);
+    assert.deepEqual(j(NJ.relacionadosJuego(J, 'persona', 'Adam_1')), { objetos: [], escenarios: ['eden'] });
+    assert.deepEqual(j(NJ.fichasCosas(DJ, null, 'objetos', [p])), []); assert.equal(NJ.estadoCosa(DJ, {}, 'objetos', 'arca-noe', []), null);
+  });
+  prueba('juego: una ficha no obtenida abierta desde un enlace no muestra su contenido', () => {
+    const v0 = j(NJ.vistaFichaJuego(DJ, J, 'objetos', 'arca-pacto', []));
+    assert.equal(v0.visible, false); assert.equal(v0.primeraCap, 'Ex 25');
+    assert.equal(NJ.vistaFichaJuego(DJ, J, 'objetos', 'arca-pacto', [NJ.pasajeDe(DJ, 'Ex 25:10').id]).visible, true);
+    const a = j(NJ.vistaFichaJuego(DJ, J, 'personajes', 'Abram_1', deCap(24)));
+    assert.equal(a.visible, false); assert.equal(a.estado, 'en-curso'); assert.equal(a.leidos, 4); assert.equal(a.primeraCap, 'Gn 11');
+    assert.equal(NJ.vistaFichaJuego(DJ, J, 'personajes', 'Abram_1', deCap(24).concat(deCap(25))).visible, true);
+    assert.equal(NJ.vistaFichaJuego(DJ, J, 'escenarios', 'eden', []).visible, false);
+    assert.equal(NJ.vistaFichaJuego(DJ, J, 'personajes', 'Isaac_1', []), null, 'sin entrada: la ficha como siempre');
+    assert.equal(NJ.vistaFichaJuego(DJ, null, 'objetos', 'arca-noe', []), null);
+  });
+  prueba('juego: perfil niño pliega el dato de una parte marcada como alta; las citas son literales', () => {
+    const C = { marcas: [{ desde: 'Gn 9:20', hasta: 'Gn 9:27', categoria: 'sexual', nivel: 'alto' }] };
+    assert.equal(NJ.datoPlegado({ tipo: 'nino' }, C, 'Gn 9:20'), true);
+    assert.equal(NJ.datoPlegado({ tipo: 'adulto' }, C, 'Gn 9:20'), false);
+    assert.equal(NJ.datoPlegado({ tipo: 'nino' }, C, 'Gn 9:29'), false);
+    const todos = [].concat(...Object.values(J.personajes).map(e => e.datos || []), ...['objetos', 'escenarios'].map(g => [].concat(...Object.values(J[g]).map(e => e.datos || []))));
+    todos.forEach(x => assert.ok(NJ.textoVerso(DJ, x.ref).includes(x.cita), `${x.ref}: «${x.cita}»`));
+  });
+  const realJ = path.join(aqui, '..', 'datos', 'juego.js');
+  if (existsSync(realJ)) prueba('juego real (datos/juego.js): estados sin excepciones y coherentes', () => {
+    const CR = cargar(real, realJ, path.join(aqui, '..', 'app.js')), NR = CR.BibliaNucleo, DR = CR.BIBLIA_DATOS, JR = CR.BIBLIA_JUEGO;
+    assert.ok(NR.juegoValido(JR));
+    const todos = NR.pasajes(DR).map(p => p.id);
+    const f0 = j(NR.fichasColeccion(DR, [], JR)), f1 = j(NR.fichasColeccion(DR, todos, JR));
+    assert.ok(f0.every(x => !x.desbloqueada)); assert.ok(f1.every(x => x.desbloqueada), 'todo leído: todo obtenido');
+    ['objetos', 'escenarios'].forEach(g => assert.ok(j(NR.fichasCosas(DR, JR, g, todos)).every(x => x.desbloqueada), g));
+    const ab = NR.estadoPersonaje(DR, JR, 'Abram_1', deCap(24));
+    assert.ok(['en-curso', 'obtenido'].includes(ab.estado));
+    console.log(`     catálogo real: ${f1.filter(x => x.juego).length} personajes con entrada, ${f1.filter(x => x.npc).length} NPC; objetos ${NR.fichasCosas(DR, JR, 'objetos', []).length}, escenarios ${NR.fichasCosas(DR, JR, 'escenarios', []).length}`);
+  });
   prueba('curiosidades (cálculo): Noé y Abraham 58 años; Matusalén muere en 1656 (TM, Taré 70)', () => {
     const tm = N2.combinacion(D2, 'TM', { tare: 'tare70' }), cs = j(N2.curiosidades(D2, tm));
     const sol = cs.find(c => c.id === 'solape|Noah_1|Abram_1');

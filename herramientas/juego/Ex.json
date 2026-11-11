@@ -1,0 +1,4908 @@
+{
+ "libro": "Ex",
+ "genealogias": [
+  {
+   "id": "ex-1",
+   "inicio": "Ex 1:1",
+   "fin": "Ex 1:5",
+   "titulo": "Los hijos de Israel que entraron en Egipto con Jacob",
+   "cita": "los nombres de los hijos de Israel"
+  },
+  {
+   "id": "ex-6",
+   "inicio": "Ex 6:14",
+   "fin": "Ex 6:25",
+   "titulo": "Cabezas de las familias de Rubén, Simeón y Leví",
+   "cita": "las cabezas de las familias de sus padres"
+  }
+ ],
+ "historias": [
+  {
+   "id": "opresion-en-egipto",
+   "titulo": "Opresión en Egipto y nacimiento de Moisés",
+   "inicio": "Ex 1:1",
+   "fin": "Ex 2:10",
+   "principales": [
+    "Pharaoh_3",
+    "Shiphrah_1",
+    "Puah_1",
+    "Jochebed_1",
+    "Miriam_1",
+    "Hija_de_Faraon"
+   ]
+  },
+  {
+   "id": "moises-en-egipto",
+   "titulo": "Moisés en Egipto: Madián, la zarza, las plagas, la Pascua y el mar Rojo",
+   "inicio": "Ex 2:11",
+   "fin": "Ex 15:21",
+   "principales": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ]
+  },
+  {
+   "id": "desierto-hacia-el-sinai",
+   "titulo": "Del mar Rojo al desierto: Mara, el maná, la roca y Amalec",
+   "inicio": "Ex 15:22",
+   "fin": "Ex 17:16",
+   "principales": [
+    "Moses_1",
+    "Aaron_1",
+    "Joshua_1",
+    "Hur_1"
+   ]
+  },
+  {
+   "id": "jetro-y-los-jueces",
+   "titulo": "Jetro visita a Moisés y los jueces del pueblo",
+   "inicio": "Ex 18:1",
+   "fin": "Ex 18:27",
+   "principales": [
+    "Moses_1",
+    "Reuel_2",
+    "Zipporah_1"
+   ]
+  },
+  {
+   "id": "sinai-y-la-ley",
+   "titulo": "El Sinaí: las diez palabras, las leyes y la alianza",
+   "inicio": "Ex 19:1",
+   "fin": "Ex 24:18",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "instrucciones-del-tabernaculo",
+   "titulo": "Las instrucciones del tabernáculo y del sacerdocio",
+   "inicio": "Ex 25:1",
+   "fin": "Ex 31:18",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "becerro-de-oro",
+   "titulo": "El becerro de oro, la intercesión y las tablas nuevas",
+   "inicio": "Ex 32:1",
+   "fin": "Ex 34:35",
+   "principales": [
+    "Moses_1",
+    "Aaron_1"
+   ]
+  },
+  {
+   "id": "construccion-del-tabernaculo",
+   "titulo": "Construcción y erección del tabernáculo",
+   "inicio": "Ex 35:1",
+   "fin": "Ex 40:38",
+   "principales": [
+    "Moses_1",
+    "Aaron_1",
+    "Bezalel_1",
+    "Oholiab_1"
+   ]
+  }
+ ],
+ "personajes": {
+  "Reuben_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Primogénito de Jacob; en Éxodo solo figura en las listas de Ex 1:2 y Ex 6:14.",
+   "datos": []
+  },
+  "Simeon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en las listas de Ex 1:2 y Ex 6:15.",
+   "datos": []
+  },
+  "Issachar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en la lista de Ex 1:3.",
+   "datos": []
+  },
+  "Zebulun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en la lista de Ex 1:3.",
+   "datos": []
+  },
+  "Benjamin_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en la lista de Ex 1:3.",
+   "datos": []
+  },
+  "Naphtali_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en la lista de Ex 1:4.",
+   "datos": []
+  },
+  "Gad_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en la lista de Ex 1:4.",
+   "datos": []
+  },
+  "Asher_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jacob; en Éxodo solo figura en la lista de Ex 1:4.",
+   "datos": []
+  },
+  "Carmi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Rubén; solo figura en la lista de Ex 6:14.",
+   "datos": []
+  },
+  "Hanoch_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Rubén; solo figura en la lista de Ex 6:14.",
+   "datos": []
+  },
+  "Hezron_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Rubén; solo figura en la lista de Ex 6:14.",
+   "datos": []
+  },
+  "Pallu_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Rubén; solo figura en la lista de Ex 6:14.",
+   "datos": []
+  },
+  "Jachin_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Simeón; solo figura en la lista de Ex 6:15.",
+   "datos": []
+  },
+  "Jamin_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Simeón; solo figura en la lista de Ex 6:15.",
+   "datos": []
+  },
+  "Jemuel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Simeón; solo figura en la lista de Ex 6:15.",
+   "datos": []
+  },
+  "Ohad_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Simeón; solo figura en la lista de Ex 6:15.",
+   "datos": []
+  },
+  "Shaul_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Simeón y de una cananea; solo figura en la lista de Ex 6:15.",
+   "datos": []
+  },
+  "Zohar_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Simeón; solo figura en la lista de Ex 6:15.",
+   "datos": []
+  },
+  "Libni_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Gersón; solo figura en la lista de Ex 6:17.",
+   "datos": []
+  },
+  "Shimei_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Gersón; solo figura en la lista de Ex 6:17.",
+   "datos": []
+  },
+  "Hebron_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Coat; solo figura en la lista de Ex 6:18.",
+   "datos": []
+  },
+  "Mahli_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Merari; solo figura en la lista de Ex 6:19.",
+   "datos": []
+  },
+  "Mushi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Merari; solo figura en la lista de Ex 6:19.",
+   "datos": []
+  },
+  "Nepheg_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Izhar; solo figura en la lista de Ex 6:21.",
+   "datos": []
+  },
+  "Zichri_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Izhar; solo figura en la lista de Ex 6:21.",
+   "datos": []
+  },
+  "Elzaphan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Uziel; solo figura en la lista de Ex 6:22.",
+   "datos": []
+  },
+  "Mishael_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Uziel; solo figura en la lista de Ex 6:22.",
+   "datos": []
+  },
+  "Sithri_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Uziel; solo figura en la lista de Ex 6:22.",
+   "datos": []
+  },
+  "Amminadab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Elisabet, la mujer de Aarón; solo figura en la lista de Ex 6:23.",
+   "datos": []
+  },
+  "Nahshon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hermano de Elisabet, la mujer de Aarón; solo figura en la lista de Ex 6:23.",
+   "datos": []
+  },
+  "Elisheba_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de Aarón y madre de Nadab, Abiú, Eleazar e Itamar; solo figura en la lista de Ex 6:23.",
+   "datos": []
+  },
+  "Abiasaph_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Coré; solo figura en la lista de Ex 6:24.",
+   "datos": []
+  },
+  "Assir_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Coré; solo figura en la lista de Ex 6:24.",
+   "datos": []
+  },
+  "Elkanah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Coré; solo figura en la lista de Ex 6:24.",
+   "datos": []
+  },
+  "Korah_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Izhar y padre de los coritas; en Éxodo solo figura en las listas de Ex 6:21 y 6:24.",
+   "datos": []
+  },
+  "Putiel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Suegro de Eleazar; solo figura en la lista de Ex 6:25.",
+   "datos": []
+  },
+  "Hija_de_Putiel": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de Eleazar y madre de Finees; solo figura en la lista de Ex 6:25.",
+   "datos": []
+  },
+  "Phinehas_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Eleazar; en Éxodo solo figura en la lista de Ex 6:25.",
+   "datos": []
+  },
+  "Levi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 2:1",
+    "Ex 32:26",
+    "Ex 32:28"
+   ],
+   "resumen": "Tercer hijo de Jacob y antepasado de la tribu de Leví, de la que salen Moisés, Aarón y los sacerdotes.",
+   "datos": [
+    {
+     "texto": "Vivió 137 años",
+     "certeza": "texto",
+     "ref": "Ex 6:16",
+     "cita": "los años de la vida de Leví fueron ciento treinta y siete años"
+    },
+    {
+     "texto": "Sus hijos fueron Gersón, Coat y Merari",
+     "certeza": "texto",
+     "ref": "Ex 6:16",
+     "cita": "Gersón, y Coath, y Merari"
+    }
+   ],
+   "externo": []
+  },
+  "Gershon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo mayor de Leví; solo figura en las listas de Ex 6:16-17.",
+   "datos": [
+    {
+     "texto": "Sus hijos fueron Libni y Simei",
+     "certeza": "texto",
+     "ref": "Ex 6:17",
+     "cita": "los hijos de Gersón: Libni, y Shimi"
+    }
+   ]
+  },
+  "Kohath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Leví y abuelo de Moisés y Aarón; solo figura en las listas de Ex 6:16-18.",
+   "datos": [
+    {
+     "texto": "Vivió 133 años",
+     "certeza": "texto",
+     "ref": "Ex 6:18",
+     "cita": "los años de la vida de Coath fueron ciento treinta y tres años"
+    },
+    {
+     "texto": "Sus hijos fueron Amram, Izhar, Hebrón y Uziel",
+     "certeza": "texto",
+     "ref": "Ex 6:18",
+     "cita": "Amram, é Izhar, y Hebrón, y Uzziel"
+    }
+   ]
+  },
+  "Merari_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo menor de Leví; solo figura en las listas de Ex 6:16 y 6:19.",
+   "datos": [
+    {
+     "texto": "Sus hijos fueron Mahli y Musi",
+     "certeza": "texto",
+     "ref": "Ex 6:19",
+     "cita": "Mahali, y Musi"
+    }
+   ]
+  },
+  "Izhar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Coat y padre de Coré, Nefeg y Zicri; solo figura en las listas de Ex 6:18 y 6:21.",
+   "datos": []
+  },
+  "Uzziel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Coat y padre de Misael, Elzafán y Sitri; solo figura en las listas de Ex 6:18 y 6:22.",
+   "datos": []
+  },
+  "Abram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 2:24",
+    "Ex 3:6",
+    "Ex 3:15",
+    "Ex 3:16",
+    "Ex 4:5",
+    "Ex 6:3",
+    "Ex 6:8",
+    "Ex 32:13",
+    "Ex 33:1"
+   ],
+   "resumen": "En Éxodo no actúa: Dios se presenta como «el Dios de Abraham» y recuerda su pacto con él.",
+   "datos": [
+    {
+     "texto": "Dios se acordó de su pacto con Abraham, Isaac y Jacob",
+     "certeza": "texto",
+     "ref": "Ex 2:24",
+     "cita": "acordóse de su pacto con Abraham, Isaac y Jacob"
+    },
+    {
+     "texto": "Dios se presenta como Dios de Abraham, de Isaac y de Jacob",
+     "certeza": "texto",
+     "ref": "Ex 3:6",
+     "cita": "Yo soy el Dios de tu padre, Dios de Abraham, Dios de Isaac, Dios de Jacob"
+    }
+   ]
+  },
+  "Isaac_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 2:24",
+    "Ex 3:6",
+    "Ex 3:15",
+    "Ex 3:16",
+    "Ex 4:5",
+    "Ex 6:3",
+    "Ex 6:8",
+    "Ex 32:13",
+    "Ex 33:1"
+   ],
+   "resumen": "En Éxodo no actúa: se le nombra junto a Abraham y Jacob como destinatario de las promesas.",
+   "datos": [
+    {
+     "texto": "A él, con Abraham y Jacob, Dios juró dar la tierra",
+     "certeza": "texto",
+     "ref": "Ex 33:1",
+     "cita": "á la tierra de la cual juré á Abraham, Isaac, y Jacob"
+    }
+   ]
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 2:24",
+    "Ex 3:6",
+    "Ex 3:15",
+    "Ex 3:16",
+    "Ex 4:5",
+    "Ex 6:3",
+    "Ex 6:8",
+    "Ex 19:3",
+    "Ex 32:13",
+    "Ex 33:1"
+   ],
+   "resumen": "Padre de los doce y de la nación; en Éxodo solo se le nombra (con la «casa de Jacob» como el pueblo) y en la lista de Ex 1:1-5.",
+   "datos": [
+    {
+     "texto": "Los descendientes de Jacob que entraron en Egipto fueron setenta almas",
+     "certeza": "texto",
+     "ref": "Ex 1:5",
+     "cita": "fueron setenta"
+    },
+    {
+     "texto": "Dios llama «casa de Jacob» al pueblo en el Sinaí",
+     "certeza": "texto",
+     "ref": "Ex 19:3",
+     "cita": "Así dirás á la casa de Jacob"
+    }
+   ]
+  },
+  "Joseph_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 1:6",
+    "Ex 1:8",
+    "Ex 13:19"
+   ],
+   "resumen": "En Éxodo ya ha muerto: el nuevo rey «no conocía a José» y Moisés lleva sus huesos al salir de Egipto.",
+   "datos": [
+    {
+     "texto": "Un nuevo rey no conocía a José",
+     "certeza": "texto",
+     "ref": "Ex 1:8",
+     "cita": "un nuevo rey sobre Egipto, que no conocía á José"
+    },
+    {
+     "texto": "Pidió que subieran sus huesos de Egipto",
+     "certeza": "texto",
+     "ref": "Ex 13:19",
+     "cita": "haréis subir mis huesos de aquí con vosotros"
+    }
+   ]
+  },
+  "Judah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 31:2",
+    "Ex 35:30",
+    "Ex 38:22"
+   ],
+   "resumen": "Hijo de Jacob; Bezaleel, el artífice del tabernáculo, es de su tribu.",
+   "datos": [
+    {
+     "texto": "Bezaleel era de la tribu de Judá",
+     "certeza": "texto",
+     "ref": "Ex 31:2",
+     "cita": "de la tribu de Judá"
+    }
+   ]
+  },
+  "Dan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 31:6",
+    "Ex 35:34",
+    "Ex 38:23"
+   ],
+   "resumen": "Hijo de Jacob; Aholiab, ayudante de Bezaleel, es de su tribu.",
+   "datos": [
+    {
+     "texto": "Aholiab era de la tribu de Dan",
+     "certeza": "texto",
+     "ref": "Ex 31:6",
+     "cita": "de la tribu de Dan"
+    }
+   ]
+  },
+  "Pharaoh_3": {
+   "apariciones": [
+    {
+     "inicio": "Ex 1:8",
+     "fin": "Ex 1:22"
+    },
+    {
+     "inicio": "Ex 2:15",
+     "fin": "Ex 2:15"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 2:5",
+    "Ex 2:23"
+   ],
+   "resumen": "El «nuevo rey» que oprimió a Israel, mandó matar a los niños varones y procuró matar a Moisés.",
+   "datos": [
+    {
+     "texto": "Subió al trono un rey que no conocía a José",
+     "certeza": "texto",
+     "ref": "Ex 1:8",
+     "cita": "un nuevo rey sobre Egipto, que no conocía á José"
+    },
+    {
+     "texto": "Temió que Israel, mayor y más fuerte, se uniera a los enemigos",
+     "certeza": "texto",
+     "ref": "Ex 1:10",
+     "cita": "seamos sabios para con él"
+    },
+    {
+     "texto": "Mandó a las parteras matar a todo niño hebreo varón",
+     "certeza": "texto",
+     "ref": "Ex 1:16",
+     "cita": "si fuere hijo, matadlo"
+    },
+    {
+     "texto": "Ordenó a todo su pueblo echar al río a los niños varones",
+     "certeza": "texto",
+     "ref": "Ex 1:22",
+     "cita": "Echad en el río todo hijo que naciere"
+    },
+    {
+     "texto": "Procuró matar a Moisés",
+     "certeza": "texto",
+     "ref": "Ex 2:15",
+     "cita": "procuró matar á Moisés"
+    },
+    {
+     "texto": "Que «el rey de Egipto» que murió es el mismo que oprimía a Israel se deduce de Ex 4:19; el texto no da su nombre",
+     "certeza": "inferido",
+     "ref": "Ex 2:23",
+     "cita": "murió el rey de Egipto"
+    }
+   ]
+  },
+  "Shiphrah_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 1:15",
+     "fin": "Ex 1:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Partera hebrea que, con Fúa, desobedeció al rey y salvó a los niños.",
+   "datos": [
+    {
+     "texto": "Era una de las dos parteras hebreas nombradas",
+     "certeza": "texto",
+     "ref": "Ex 1:15",
+     "cita": "una de las cuales se llamaba Siphra"
+    },
+    {
+     "texto": "Temió a Dios y no mató a los niños",
+     "certeza": "texto",
+     "ref": "Ex 1:17",
+     "cita": "las parteras temieron á Dios"
+    },
+    {
+     "texto": "Dios les hizo casas",
+     "certeza": "texto",
+     "ref": "Ex 1:21",
+     "cita": "él les hizo casas"
+    }
+   ]
+  },
+  "Puah_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 1:15",
+     "fin": "Ex 1:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Partera hebrea que, con Sifra, desobedeció al rey y salvó a los niños.",
+   "datos": [
+    {
+     "texto": "Era la otra partera nombrada",
+     "certeza": "texto",
+     "ref": "Ex 1:15",
+     "cita": "y otra Phúa"
+    },
+    {
+     "texto": "Ambas dijeron al rey que las hebreas daban a luz antes de que llegara la partera",
+     "certeza": "texto",
+     "ref": "Ex 1:19",
+     "cita": "paren antes que la partera venga á ellas"
+    }
+   ]
+  },
+  "Amram_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:1",
+     "fin": "Ex 2:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Levita, padre de Aarón y de Moisés; en Ex 2:1 aparece sin nombre («un varón de la familia de Leví»).",
+   "datos": [
+    {
+     "texto": "El «varón de la familia de Leví» de Ex 2:1 es Amram, porque Ex 6:20 dice que su mujer fue madre de Aarón y Moisés",
+     "certeza": "inferido",
+     "ref": "Ex 2:1",
+     "cita": "varón de la familia de Leví"
+    },
+    {
+     "texto": "Se casó con Jocabed, su tía, y vivió 137 años",
+     "certeza": "texto",
+     "ref": "Ex 6:20",
+     "cita": "Amram tomó por mujer á Jochêbed su tía"
+    }
+   ]
+  },
+  "Jochebed_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:1",
+     "fin": "Ex 2:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Levita, madre de Aarón y de Moisés (y de Miriam, por inferencia); escondió a su bebé y luego lo crió como nodriza pagada por la hija de Faraón.",
+   "datos": [
+    {
+     "texto": "La mujer de Ex 2:1-10 es Jocabed, nombrada solo en Ex 6:20",
+     "certeza": "inferido",
+     "ref": "Ex 2:1",
+     "cita": "tomó por mujer una hija de Leví"
+    },
+    {
+     "texto": "Escondió al niño tres meses",
+     "certeza": "texto",
+     "ref": "Ex 2:2",
+     "cita": "túvole escondido tres meses"
+    },
+    {
+     "texto": "Hizo una arquilla de juncos con pez y betún y puso al niño en ella",
+     "certeza": "texto",
+     "ref": "Ex 2:3",
+     "cita": "tomó una arquilla de juncos, y calafateóla con pez y betún"
+    },
+    {
+     "texto": "La hija de Faraón le pagó por criarlo",
+     "certeza": "texto",
+     "ref": "Ex 2:9",
+     "cita": "yo te lo pagaré. Y la mujer tomó al niño, y criólo"
+    },
+    {
+     "texto": "Era tía de su marido Amram y madre de Aarón y Moisés",
+     "certeza": "texto",
+     "ref": "Ex 6:20",
+     "cita": "la cual le parió á Aarón y á Moisés"
+    }
+   ]
+  },
+  "Miriam_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:4",
+     "fin": "Ex 2:8"
+    },
+    {
+     "inicio": "Ex 15:20",
+     "fin": "Ex 15:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hermana de Aarón y de Moisés; vigiló la cesta junto al río y dirigió el canto de las mujeres tras el mar Rojo.",
+   "datos": [
+    {
+     "texto": "La «hermana» que vigila al niño en Ex 2:4 es Miriam; el texto no la nombra hasta Ex 15:20",
+     "certeza": "inferido",
+     "ref": "Ex 2:4",
+     "cita": "Y paróse una hermana suya á lo lejos"
+    },
+    {
+     "texto": "Ofreció llamar a una nodriza hebrea",
+     "certeza": "texto",
+     "ref": "Ex 2:7",
+     "cita": "¿Iré á llamarte un ama de las Hebreas"
+    },
+    {
+     "texto": "Es llamada profetisa y hermana de Aarón (RV1909: «María»)",
+     "certeza": "texto",
+     "ref": "Ex 15:20",
+     "cita": "María la profetisa, hermana de Aarón"
+    },
+    {
+     "texto": "Tomó un pandero y las mujeres salieron tras ella con panderos y danzas",
+     "certeza": "texto",
+     "ref": "Ex 15:20",
+     "cita": "tomó un pandero en su mano"
+    },
+    {
+     "texto": "Les respondía: «Cantad á Jehová»",
+     "certeza": "texto",
+     "ref": "Ex 15:21",
+     "cita": "Cantad á Jehová; porque en extremo se ha engrandecido"
+    }
+   ]
+  },
+  "Hija_de_Faraon": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:5",
+     "fin": "Ex 2:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Princesa egipcia que salvó al bebé del río, lo adoptó y le puso por nombre Moisés.",
+   "datos": [
+    {
+     "texto": "Bajó a lavarse al río y vio la arquilla",
+     "certeza": "texto",
+     "ref": "Ex 2:5",
+     "cita": "descendió á lavarse al río"
+    },
+    {
+     "texto": "Tuvo compasión del niño y lo reconoció como hebreo",
+     "certeza": "texto",
+     "ref": "Ex 2:6",
+     "cita": "De los niños de los Hebreos es éste"
+    },
+    {
+     "texto": "Adoptó al niño y le puso Moisés, «porque de las aguas lo saqué»",
+     "certeza": "texto",
+     "ref": "Ex 2:10",
+     "cita": "Porque de las aguas lo saqué"
+    }
+   ]
+  },
+  "Moses_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:2",
+     "fin": "Ex 2:22"
+    },
+    {
+     "inicio": "Ex 3:1",
+     "fin": "Ex 4:31"
+    },
+    {
+     "inicio": "Ex 5:1",
+     "fin": "Ex 5:5"
+    },
+    {
+     "inicio": "Ex 5:20",
+     "fin": "Ex 6:13"
+    },
+    {
+     "inicio": "Ex 6:26",
+     "fin": "Ex 40:35"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Libertador y mediador de Israel: salvado de niño del río, criado en la casa de Faraón, llamado en la zarza, conduce la salida de Egipto, recibe la ley en el Sinaí e inaugura el tabernáculo.",
+   "datos": [
+    {
+     "texto": "Escondido tres meses por su madre al nacer",
+     "certeza": "texto",
+     "ref": "Ex 2:2",
+     "cita": "túvole escondido tres meses"
+    },
+    {
+     "texto": "Su nombre se lo puso la hija de Faraón",
+     "certeza": "texto",
+     "ref": "Ex 2:10",
+     "cita": "púsole por nombre Moisés"
+    },
+    {
+     "texto": "Mató a un egipcio que golpeaba a un hebreo y lo escondió en la arena",
+     "certeza": "texto",
+     "ref": "Ex 2:12",
+     "cita": "mató al Egipcio, y escondiólo en la arena"
+    },
+    {
+     "texto": "Huyó de Faraón y vivió en Madián",
+     "certeza": "texto",
+     "ref": "Ex 2:15",
+     "cita": "habitó en la tierra de Madián"
+    },
+    {
+     "texto": "Se casó con Séfora, hija del sacerdote de Madián",
+     "certeza": "texto",
+     "ref": "Ex 2:21",
+     "cita": "él dió á Moisés á su hija Séphora"
+    },
+    {
+     "texto": "Pastoreaba las ovejas de su suegro cuando llegó al monte Horeb",
+     "certeza": "texto",
+     "ref": "Ex 3:1",
+     "cita": "Moisés las ovejas de Jethro su suegro"
+    },
+    {
+     "texto": "Cubrió su rostro ante Dios en la zarza",
+     "certeza": "texto",
+     "ref": "Ex 3:6",
+     "cita": "Moisés cubrió su rostro"
+    },
+    {
+     "texto": "Se excusó por ser «tardo en el habla y torpe de lengua»",
+     "certeza": "texto",
+     "ref": "Ex 4:10",
+     "cita": "soy tardo en el habla y torpe de lengua"
+    },
+    {
+     "texto": "Dios le dio a Aarón como boca",
+     "certeza": "texto",
+     "ref": "Ex 4:16",
+     "cita": "él te será á ti en lugar de boca"
+    },
+    {
+     "texto": "Dios lo constituyó «dios para Faraón»",
+     "certeza": "texto",
+     "ref": "Ex 7:1",
+     "cita": "yo te he constituído dios para Faraón"
+    },
+    {
+     "texto": "Tenía 80 años cuando habló a Faraón",
+     "certeza": "texto",
+     "ref": "Ex 7:7",
+     "cita": "Y era Moisés de edad de ochenta años"
+    },
+    {
+     "texto": "Era muy estimado en Egipto incluso por los siervos de Faraón",
+     "certeza": "texto",
+     "ref": "Ex 11:3",
+     "cita": "Moisés era muy gran varón en la tierra de Egipto"
+    },
+    {
+     "texto": "Llevó consigo los huesos de José",
+     "certeza": "texto",
+     "ref": "Ex 13:19",
+     "cita": "Tomó también consigo Moisés los huesos de José"
+    },
+    {
+     "texto": "Extendió su mano sobre el mar y las aguas se dividieron",
+     "certeza": "texto",
+     "ref": "Ex 14:21",
+     "cita": "extendió Moisés su mano sobre la mar"
+    },
+    {
+     "texto": "Cantó con Israel el cántico del mar",
+     "certeza": "texto",
+     "ref": "Ex 15:1",
+     "cita": "cantó Moisés y los hijos de Israel este cántico"
+    },
+    {
+     "texto": "Hirió la peña en Horeb y salió agua",
+     "certeza": "texto",
+     "ref": "Ex 17:6",
+     "cita": "Y Moisés lo hizo así en presencia de los ancianos de Israel"
+    },
+    {
+     "texto": "Mientras mantenía la mano alzada, Israel prevalecía contra Amalec",
+     "certeza": "texto",
+     "ref": "Ex 17:11",
+     "cita": "cuando alzaba Moisés su mano, Israel prevalecía"
+    },
+    {
+     "texto": "Aceptó el consejo de su suegro y nombró jueces",
+     "certeza": "texto",
+     "ref": "Ex 18:24",
+     "cita": "Y oyó Moisés la voz de su suegro, é hizo todo lo que dijo"
+    },
+    {
+     "texto": "Escribió todas las palabras de Jehová y edificó un altar",
+     "certeza": "texto",
+     "ref": "Ex 24:4",
+     "cita": "Y Moisés escribió todas las palabras de Jehová"
+    },
+    {
+     "texto": "Estuvo cuarenta días y cuarenta noches en el monte",
+     "certeza": "texto",
+     "ref": "Ex 24:18",
+     "cita": "estuvo Moisés en el monte cuarenta días y cuarenta noches"
+    },
+    {
+     "texto": "Rompió las tablas al ver el becerro",
+     "certeza": "texto",
+     "ref": "Ex 32:19",
+     "cita": "arrojó las tablas de sus manos, y quebrólas al pie del monte"
+    },
+    {
+     "texto": "Pidió que Dios lo borrara de su libro si no perdonaba al pueblo",
+     "certeza": "texto",
+     "ref": "Ex 32:32",
+     "cita": "ráeme ahora de tu libro que has escrito"
+    },
+    {
+     "texto": "Dios le hablaba cara a cara",
+     "certeza": "texto",
+     "ref": "Ex 33:11",
+     "cita": "Y hablaba Jehová á Moisés cara á cara"
+    },
+    {
+     "texto": "Su rostro resplandecía sin que él lo supiera; se cubría con un velo",
+     "certeza": "texto",
+     "ref": "Ex 34:29",
+     "cita": "no sabía él que la tez de su rostro resplandecía"
+    },
+    {
+     "texto": "Levantó el tabernáculo el día primero del primer mes",
+     "certeza": "texto",
+     "ref": "Ex 40:18",
+     "cita": "Y Moisés hizo levantar el tabernáculo"
+    },
+    {
+     "texto": "No pudo entrar al tabernáculo porque la nube lo cubría",
+     "certeza": "texto",
+     "ref": "Ex 40:35",
+     "cita": "no podía Moisés entrar en el tabernáculo del testimonio"
+    }
+   ],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 4:27",
+     "fin": "Ex 5:5"
+    },
+    {
+     "inicio": "Ex 5:20",
+     "fin": "Ex 5:21"
+    },
+    {
+     "inicio": "Ex 6:13",
+     "fin": "Ex 6:13"
+    },
+    {
+     "inicio": "Ex 7:6",
+     "fin": "Ex 7:13"
+    },
+    {
+     "inicio": "Ex 7:19",
+     "fin": "Ex 7:20"
+    },
+    {
+     "inicio": "Ex 8:5",
+     "fin": "Ex 8:8"
+    },
+    {
+     "inicio": "Ex 8:12",
+     "fin": "Ex 8:12"
+    },
+    {
+     "inicio": "Ex 8:16",
+     "fin": "Ex 8:17"
+    },
+    {
+     "inicio": "Ex 8:25",
+     "fin": "Ex 8:25"
+    },
+    {
+     "inicio": "Ex 9:8",
+     "fin": "Ex 9:12"
+    },
+    {
+     "inicio": "Ex 9:27",
+     "fin": "Ex 9:27"
+    },
+    {
+     "inicio": "Ex 10:3",
+     "fin": "Ex 10:8"
+    },
+    {
+     "inicio": "Ex 10:16",
+     "fin": "Ex 10:16"
+    },
+    {
+     "inicio": "Ex 11:10",
+     "fin": "Ex 11:10"
+    },
+    {
+     "inicio": "Ex 12:1",
+     "fin": "Ex 12:20"
+    },
+    {
+     "inicio": "Ex 12:28",
+     "fin": "Ex 12:31"
+    },
+    {
+     "inicio": "Ex 12:43",
+     "fin": "Ex 12:50"
+    },
+    {
+     "inicio": "Ex 16:2",
+     "fin": "Ex 16:10"
+    },
+    {
+     "inicio": "Ex 16:33",
+     "fin": "Ex 16:34"
+    },
+    {
+     "inicio": "Ex 17:10",
+     "fin": "Ex 17:12"
+    },
+    {
+     "inicio": "Ex 18:12",
+     "fin": "Ex 18:12"
+    },
+    {
+     "inicio": "Ex 19:24",
+     "fin": "Ex 19:24"
+    },
+    {
+     "inicio": "Ex 24:1",
+     "fin": "Ex 24:11"
+    },
+    {
+     "inicio": "Ex 24:14",
+     "fin": "Ex 24:14"
+    },
+    {
+     "inicio": "Ex 32:1",
+     "fin": "Ex 32:5"
+    },
+    {
+     "inicio": "Ex 32:21",
+     "fin": "Ex 32:25"
+    },
+    {
+     "inicio": "Ex 34:30",
+     "fin": "Ex 34:31"
+    },
+    {
+     "inicio": "Ex 40:12",
+     "fin": "Ex 40:13"
+    },
+    {
+     "inicio": "Ex 40:31",
+     "fin": "Ex 40:31"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 4:14",
+    "Ex 6:26",
+    "Ex 6:27",
+    "Ex 15:20",
+    "Ex 27:21",
+    "Ex 28:1",
+    "Ex 28:2",
+    "Ex 28:4",
+    "Ex 28:12",
+    "Ex 28:29",
+    "Ex 28:30",
+    "Ex 28:35",
+    "Ex 28:38",
+    "Ex 28:41",
+    "Ex 28:43",
+    "Ex 29:4",
+    "Ex 29:9",
+    "Ex 29:44",
+    "Ex 30:7",
+    "Ex 30:8",
+    "Ex 30:10",
+    "Ex 30:19",
+    "Ex 30:30",
+    "Ex 31:10",
+    "Ex 35:19",
+    "Ex 38:21",
+    "Ex 39:1",
+    "Ex 39:27",
+    "Ex 39:41"
+   ],
+   "resumen": "Hermano mayor de Moisés y su portavoz ante Faraón; sus señales abren las plagas, sostiene las manos de Moisés, es consagrado primer sumo sacerdote y forma el becerro de oro.",
+   "datos": [
+    {
+     "texto": "Moisés y Aarón eran hijos de Amram y Jocabed",
+     "certeza": "texto",
+     "ref": "Ex 6:20",
+     "cita": "la cual le parió á Aarón y á Moisés"
+    },
+    {
+     "texto": "Dios lo designó como portavoz de Moisés, levita",
+     "certeza": "texto",
+     "ref": "Ex 4:14",
+     "cita": "¿No conozco yo á tu hermano Aarón, Levita, y que él hablará?"
+    },
+    {
+     "texto": "Fue a encontrar a Moisés al monte de Dios y lo besó",
+     "certeza": "texto",
+     "ref": "Ex 4:27",
+     "cita": "Y él fué, y encontrólo en el monte de Dios, y besóle"
+    },
+    {
+     "texto": "Hizo las señales ante el pueblo",
+     "certeza": "texto",
+     "ref": "Ex 4:30",
+     "cita": "é hizo las señales delante de los ojos del pueblo"
+    },
+    {
+     "texto": "Tenía 83 años cuando hablaron a Faraón",
+     "certeza": "texto",
+     "ref": "Ex 7:7",
+     "cita": "y Aarón de edad de ochenta y tres"
+    },
+    {
+     "texto": "Su vara devoró las varas de los encantadores",
+     "certeza": "texto",
+     "ref": "Ex 7:12",
+     "cita": "la vara de Aarón devoró las varas de ellos"
+    },
+    {
+     "texto": "Extendió su mano sobre las aguas y subieron las ranas",
+     "certeza": "texto",
+     "ref": "Ex 8:6",
+     "cita": "Aarón extendió su mano sobre las aguas de Egipto"
+    },
+    {
+     "texto": "Con Hur sostuvo las manos de Moisés hasta la puesta del sol",
+     "certeza": "texto",
+     "ref": "Ex 17:12",
+     "cita": "Aarón y Hur sustentaban sus manos"
+    },
+    {
+     "texto": "Puso el vaso de maná delante del Testimonio",
+     "certeza": "texto",
+     "ref": "Ex 16:34",
+     "cita": "Y Aarón lo puso delante del Testimonio"
+    },
+    {
+     "texto": "Subió al monte con Nadab, Abiú y setenta ancianos",
+     "certeza": "texto",
+     "ref": "Ex 24:9",
+     "cita": "Y subieron Moisés y Aarón, Nadab y Abiú"
+    },
+    {
+     "texto": "Dios lo escogió, con sus hijos, como sacerdote",
+     "certeza": "texto",
+     "ref": "Ex 28:1",
+     "cita": "allega á ti á Aarón tu hermano"
+    },
+    {
+     "texto": "Llevaría el juicio de Israel sobre su corazón",
+     "certeza": "texto",
+     "ref": "Ex 28:30",
+     "cita": "llevará siempre Aarón el juicio de los hijos de Israel sobre su corazón"
+    },
+    {
+     "texto": "Hizo el becerro de oro con los zarcillos del pueblo",
+     "certeza": "texto",
+     "ref": "Ex 32:4",
+     "cita": "hizo de ello un becerro de fundición"
+    },
+    {
+     "texto": "Ante Moisés se excusó diciendo que el pueblo era inclinado al mal",
+     "certeza": "texto",
+     "ref": "Ex 32:22",
+     "cita": "tú conoces el pueblo, que es inclinado á mal"
+    },
+    {
+     "texto": "Se asustó con el rostro resplandeciente de Moisés",
+     "certeza": "texto",
+     "ref": "Ex 34:30",
+     "cita": "tuvieron miedo de llegarse á él"
+    },
+    {
+     "texto": "Fue lavado, vestido y ungido como sacerdote",
+     "certeza": "texto",
+     "ref": "Ex 40:13",
+     "cita": "harás vestir á Aarón las vestiduras sagradas, y lo ungirás"
+    }
+   ],
+   "externo": []
+  },
+  "Pharaoh_4": {
+   "apariciones": [
+    {
+     "inicio": "Ex 5:1",
+     "fin": "Ex 5:19"
+    },
+    {
+     "inicio": "Ex 7:8",
+     "fin": "Ex 7:13"
+    },
+    {
+     "inicio": "Ex 7:20",
+     "fin": "Ex 7:23"
+    },
+    {
+     "inicio": "Ex 8:8",
+     "fin": "Ex 8:15"
+    },
+    {
+     "inicio": "Ex 8:25",
+     "fin": "Ex 8:32"
+    },
+    {
+     "inicio": "Ex 9:7",
+     "fin": "Ex 9:7"
+    },
+    {
+     "inicio": "Ex 9:10",
+     "fin": "Ex 9:12"
+    },
+    {
+     "inicio": "Ex 9:27",
+     "fin": "Ex 9:35"
+    },
+    {
+     "inicio": "Ex 10:3",
+     "fin": "Ex 10:11"
+    },
+    {
+     "inicio": "Ex 10:16",
+     "fin": "Ex 10:20"
+    },
+    {
+     "inicio": "Ex 10:24",
+     "fin": "Ex 10:29"
+    },
+    {
+     "inicio": "Ex 11:4",
+     "fin": "Ex 11:8"
+    },
+    {
+     "inicio": "Ex 12:29",
+     "fin": "Ex 12:32"
+    },
+    {
+     "inicio": "Ex 14:5",
+     "fin": "Ex 14:10"
+    },
+    {
+     "inicio": "Ex 14:23",
+     "fin": "Ex 14:28"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 3:10",
+    "Ex 3:11",
+    "Ex 3:18",
+    "Ex 3:19",
+    "Ex 4:21",
+    "Ex 4:22",
+    "Ex 5:20",
+    "Ex 5:21",
+    "Ex 5:23",
+    "Ex 6:1",
+    "Ex 6:11",
+    "Ex 6:12",
+    "Ex 6:13",
+    "Ex 6:27",
+    "Ex 6:29",
+    "Ex 6:30",
+    "Ex 7:1",
+    "Ex 7:2",
+    "Ex 7:3",
+    "Ex 7:4",
+    "Ex 7:7",
+    "Ex 7:14",
+    "Ex 7:15",
+    "Ex 8:19",
+    "Ex 8:20",
+    "Ex 9:1",
+    "Ex 9:13",
+    "Ex 9:20",
+    "Ex 10:1",
+    "Ex 10:7",
+    "Ex 11:1",
+    "Ex 11:3",
+    "Ex 13:15",
+    "Ex 13:17",
+    "Ex 14:17",
+    "Ex 14:18",
+    "Ex 15:4",
+    "Ex 15:19",
+    "Ex 18:4",
+    "Ex 18:8",
+    "Ex 18:10"
+   ],
+   "resumen": "Faraón del éxodo: se niega a dejar ir a Israel, ve caer diez plagas, pierde a su primogénito y su ejército perece en el mar.",
+   "datos": [
+    {
+     "texto": "Dijo no conocer a Jehová y no dejar ir a Israel",
+     "certeza": "texto",
+     "ref": "Ex 5:2",
+     "cita": "Yo no conozco á Jehová"
+    },
+    {
+     "texto": "Ordenó que no se diera paja al pueblo para hacer ladrillo",
+     "certeza": "texto",
+     "ref": "Ex 5:7",
+     "cita": "no daréis paja al pueblo para hacer ladrillo"
+    },
+    {
+     "texto": "Llamó a sabios y encantadores, que imitaron algunas señales",
+     "certeza": "texto",
+     "ref": "Ex 7:11",
+     "cita": "llamó también Faraón sabios y encantadores"
+    },
+    {
+     "texto": "Pidió a Moisés y Aarón orar para quitar las ranas",
+     "certeza": "texto",
+     "ref": "Ex 8:8",
+     "cita": "Orad á Jehová que quite las ranas de mí y de mi pueblo"
+    },
+    {
+     "texto": "El texto dice que «agravó su corazón» cuando hubo reposo",
+     "certeza": "texto",
+     "ref": "Ex 8:15",
+     "cita": "agravó su corazón, y no los escuchó"
+    },
+    {
+     "texto": "Dijo «He pecado esta vez» tras el granizo, y luego volvió a pecar",
+     "certeza": "texto",
+     "ref": "Ex 9:27",
+     "cita": "He pecado esta vez"
+    },
+    {
+     "texto": "Solo dejaba ir a los varones, no a niños ni a ganados",
+     "certeza": "texto",
+     "ref": "Ex 10:11",
+     "cita": "id ahora vosotros los varones, y servid á Jehová"
+    },
+    {
+     "texto": "Echó a Moisés de su presencia amenazándolo de muerte",
+     "certeza": "texto",
+     "ref": "Ex 10:28",
+     "cita": "guárdate que no veas más mi rostro"
+    },
+    {
+     "texto": "Su primogénito murió la noche de Pascua",
+     "certeza": "texto",
+     "ref": "Ex 12:29",
+     "cita": "desde el primogénito de Faraón que se sentaba sobre su trono"
+    },
+    {
+     "texto": "Llamó de noche a Moisés y Aarón y dejó ir al pueblo",
+     "certeza": "texto",
+     "ref": "Ex 12:31",
+     "cita": "Salid de en medio de mi pueblo vosotros"
+    },
+    {
+     "texto": "Se arrepintió de haberlos dejado ir y los persiguió",
+     "certeza": "texto",
+     "ref": "Ex 14:5",
+     "cita": "el corazón de Faraón y de sus siervos se volvió contra el pueblo"
+    },
+    {
+     "texto": "Salió tras Israel con seiscientos carros escogidos",
+     "certeza": "texto",
+     "ref": "Ex 14:7",
+     "cita": "tomó seiscientos carros escogidos"
+    },
+    {
+     "texto": "Que Faraón mismo muriera en el mar se deduce de Ex 15:19; Ex 14:28 dice solo que no quedó nadie de su ejército",
+     "certeza": "inferido",
+     "ref": "Ex 14:28",
+     "cita": "todo el ejército de Faraón"
+    },
+    {
+     "texto": "El texto no da el nombre propio de este Faraón, solo el título",
+     "certeza": "inferido",
+     "ref": "Ex 5:1",
+     "cita": "Faraón"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "La estela de Merneptah (hacia 1208 a. C., Museo Egipcio de El Cairo, JE 31408) es la mención egipcia más antigua conocida de «Israel»; no nombra a este Faraón ni habla de una salida de Egipto, y ubicar el éxodo en un reinado concreto es materia debatida. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Merneptah Stele",
+     "url": "https://en.wikipedia.org/wiki/Merneptah_Stele"
+    }
+   ]
+  },
+  "Reuel_2": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:16",
+     "fin": "Ex 2:21"
+    },
+    {
+     "inicio": "Ex 4:18",
+     "fin": "Ex 4:18"
+    },
+    {
+     "inicio": "Ex 18:1",
+     "fin": "Ex 18:27"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 3:1"
+   ],
+   "resumen": "Sacerdote de Madián y suegro de Moisés (Reuel o Jetro); lo acoge en el exilio y, ya libre Israel, le aconseja repartir el juicio del pueblo.",
+   "datos": [
+    {
+     "texto": "Reuel (RV1909: «Ragüel», Ex 2:18) y Jetro (Ex 3:1) designan al mismo suegro de Moisés; el texto no lo afirma con esas palabras",
+     "certeza": "inferido",
+     "ref": "Ex 2:18",
+     "cita": "Y volviendo ellas á Ragüel su padre"
+    },
+    {
+     "texto": "Era sacerdote de Madián y tenía siete hijas",
+     "certeza": "texto",
+     "ref": "Ex 2:16",
+     "cita": "Tenía el sacerdote de Madián siete hijas"
+    },
+    {
+     "texto": "Mandó llamar a Moisés para que comiera pan",
+     "certeza": "texto",
+     "ref": "Ex 2:20",
+     "cita": "llamadle para que coma pan"
+    },
+    {
+     "texto": "Dejó ir a Moisés a Egipto",
+     "certeza": "texto",
+     "ref": "Ex 4:18",
+     "cita": "Ve en paz"
+    },
+    {
+     "texto": "Se alegró y bendijo a Jehová al oír la liberación",
+     "certeza": "texto",
+     "ref": "Ex 18:10",
+     "cita": "Bendito sea Jehová, que os libró de mano de los Egipcios"
+    },
+    {
+     "texto": "Dijo que ahora conocía que Jehová es mayor que todos los dioses",
+     "certeza": "texto",
+     "ref": "Ex 18:11",
+     "cita": "Ahora conozco que Jehová es grande más que todos los dioses"
+    },
+    {
+     "texto": "Ofreció holocaustos y sacrificios y comió con Aarón y los ancianos",
+     "certeza": "texto",
+     "ref": "Ex 18:12",
+     "cita": "tomó Jethro, suegro de Moisés, holocaustos y sacrificios para Dios"
+    },
+    {
+     "texto": "Dijo a Moisés «No haces bien» al juzgar solo",
+     "certeza": "texto",
+     "ref": "Ex 18:17",
+     "cita": "No haces bien"
+    },
+    {
+     "texto": "Aconsejó elegir varones de virtud, temerosos de Dios y de verdad",
+     "certeza": "texto",
+     "ref": "Ex 18:21",
+     "cita": "varones de virtud, temerosos de Dios, varones de verdad"
+    },
+    {
+     "texto": "Volvió a su tierra tras la visita",
+     "certeza": "texto",
+     "ref": "Ex 18:27",
+     "cita": "despidió Moisés á su suegro, y fuése á su tierra"
+    }
+   ],
+   "externo": []
+  },
+  "Zipporah_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:21",
+     "fin": "Ex 2:22"
+    },
+    {
+     "inicio": "Ex 4:20",
+     "fin": "Ex 4:20"
+    },
+    {
+     "inicio": "Ex 4:24",
+     "fin": "Ex 4:26"
+    },
+    {
+     "inicio": "Ex 18:2",
+     "fin": "Ex 18:7"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hija del sacerdote de Madián, mujer de Moisés y madre de Gersón y Eliezer.",
+   "datos": [
+    {
+     "texto": "Moisés la recibió como esposa",
+     "certeza": "texto",
+     "ref": "Ex 2:21",
+     "cita": "él dió á Moisés á su hija Séphora"
+    },
+    {
+     "texto": "Dio a luz a Gersón",
+     "certeza": "texto",
+     "ref": "Ex 2:22",
+     "cita": "La cual le parió un hijo"
+    },
+    {
+     "texto": "En el camino de vuelta a Egipto circuncidó a su hijo con un pedernal",
+     "certeza": "texto",
+     "ref": "Ex 4:25",
+     "cita": "cogió un afilado pedernal, y cortó el prepucio de su hijo"
+    },
+    {
+     "texto": "Moisés la había enviado de vuelta; Jetro la trajo con sus hijos",
+     "certeza": "texto",
+     "ref": "Ex 18:2",
+     "cita": "después que él la envió"
+    }
+   ]
+  },
+  "Gershom_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 2:22",
+     "fin": "Ex 2:22"
+    },
+    {
+     "inicio": "Ex 18:3",
+     "fin": "Ex 18:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Primer hijo de Moisés y Séfora, nacido en Madián.",
+   "datos": [
+    {
+     "texto": "Moisés le puso Gersom por ser «peregrino en tierra ajena»",
+     "certeza": "texto",
+     "ref": "Ex 2:22",
+     "cita": "él le puso por nombre Gersom"
+    }
+   ]
+  },
+  "Eliezer_2": {
+   "apariciones": [
+    {
+     "inicio": "Ex 18:4",
+     "fin": "Ex 18:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Segundo hijo de Moisés y Séfora; su nombre recuerda que Dios lo libró del cuchillo de Faraón.",
+   "datos": [
+    {
+     "texto": "Su nombre significa «El Dios de mi padre me ayudó»",
+     "certeza": "texto",
+     "ref": "Ex 18:4",
+     "cita": "me libró del cuchillo de Faraón"
+    }
+   ]
+  },
+  "Joshua_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 17:9",
+     "fin": "Ex 17:14"
+    },
+    {
+     "inicio": "Ex 24:13",
+     "fin": "Ex 24:13"
+    },
+    {
+     "inicio": "Ex 32:17",
+     "fin": "Ex 32:18"
+    },
+    {
+     "inicio": "Ex 33:11",
+     "fin": "Ex 33:11"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Joven ayudante de Moisés; dirige la batalla contra Amalec y no se aparta de la tienda de reunión.",
+   "datos": [
+    {
+     "texto": "Moisés le ordenó escoger varones y pelear con Amalec",
+     "certeza": "texto",
+     "ref": "Ex 17:9",
+     "cita": "Escógenos varones, y sal, pelea con Amalec"
+    },
+    {
+     "texto": "Venció a Amalec a filo de espada",
+     "certeza": "texto",
+     "ref": "Ex 17:13",
+     "cita": "Josué deshizo á Amalec y á su pueblo á filo de espada"
+    },
+    {
+     "texto": "Dios ordenó que se le dijera que borraría la memoria de Amalec",
+     "certeza": "texto",
+     "ref": "Ex 17:14",
+     "cita": "di á Josué que del todo tengo de raer la memoria de Amalec"
+    },
+    {
+     "texto": "Acompañó a Moisés al monte de Dios como su ministro",
+     "certeza": "texto",
+     "ref": "Ex 24:13",
+     "cita": "Josué su ministro"
+    },
+    {
+     "texto": "Oyó el ruido del campamento y lo tomó por pelea",
+     "certeza": "texto",
+     "ref": "Ex 32:17",
+     "cita": "Alarido de pelea hay en el campo"
+    },
+    {
+     "texto": "Hijo de Nun, joven, no se apartaba del tabernáculo",
+     "certeza": "texto",
+     "ref": "Ex 33:11",
+     "cita": "el joven Josué, su criado, hijo de Nun, nunca se apartaba de en medio del tabernáculo"
+    }
+   ]
+  },
+  "Nun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 33:11"
+   ],
+   "resumen": "Padre de Josué; solo se le nombra como tal.",
+   "datos": []
+  },
+  "Hur_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 17:10",
+     "fin": "Ex 17:12"
+    },
+    {
+     "inicio": "Ex 24:14",
+     "fin": "Ex 24:14"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 31:2",
+    "Ex 35:30",
+    "Ex 38:22"
+   ],
+   "resumen": "Acompañó a Moisés y Aarón en el collado y sostuvo con Aarón sus manos; abuelo de Bezaleel.",
+   "datos": [
+    {
+     "texto": "Con Aarón sostuvo las manos de Moisés",
+     "certeza": "texto",
+     "ref": "Ex 17:12",
+     "cita": "Aarón y Hur sustentaban sus manos"
+    },
+    {
+     "texto": "Quedó con Aarón a cargo de los ancianos mientras Moisés subía",
+     "certeza": "texto",
+     "ref": "Ex 24:14",
+     "cita": "Aarón y Hur están con vosotros"
+    },
+    {
+     "texto": "Bezaleel era nieto suyo, por Uri",
+     "certeza": "texto",
+     "ref": "Ex 31:2",
+     "cita": "hijo de Uri, hijo de Hur"
+    }
+   ]
+  },
+  "Nadab_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 24:1",
+     "fin": "Ex 24:11"
+    },
+    {
+     "inicio": "Ex 28:1",
+     "fin": "Ex 28:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo mayor de Aarón; subió al Sinaí con Moisés y vio al Dios de Israel.",
+   "datos": [
+    {
+     "texto": "Subió al monte con Moisés, Aarón y setenta ancianos",
+     "certeza": "texto",
+     "ref": "Ex 24:9",
+     "cita": "Y subieron Moisés y Aarón, Nadab y Abiú"
+    },
+    {
+     "texto": "Fue designado sacerdote con sus hermanos",
+     "certeza": "texto",
+     "ref": "Ex 28:1",
+     "cita": "Nadab y Abiú, Eleazar é Ithamar, hijos de Aarón"
+    }
+   ]
+  },
+  "Abihu_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 24:1",
+     "fin": "Ex 24:11"
+    },
+    {
+     "inicio": "Ex 28:1",
+     "fin": "Ex 28:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón; subió al Sinaí con Moisés y vio al Dios de Israel.",
+   "datos": [
+    {
+     "texto": "Con Nadab, Aarón y setenta ancianos «vieron al Dios de Israel»",
+     "certeza": "texto",
+     "ref": "Ex 24:10",
+     "cita": "Y vieron al Dios de Israel"
+    },
+    {
+     "texto": "Fue designado sacerdote",
+     "certeza": "texto",
+     "ref": "Ex 28:1",
+     "cita": "Nadab y Abiú, Eleazar é Ithamar, hijos de Aarón"
+    }
+   ]
+  },
+  "Eleazar_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 28:1",
+     "fin": "Ex 28:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón designado sacerdote; en Éxodo no actúa más.",
+   "datos": [
+    {
+     "texto": "Dios lo nombra con sus hermanos sacerdote",
+     "certeza": "texto",
+     "ref": "Ex 28:1",
+     "cita": "Eleazar é Ithamar"
+    }
+   ]
+  },
+  "Ithamar_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 28:1",
+     "fin": "Ex 28:1"
+    },
+    {
+     "inicio": "Ex 38:21",
+     "fin": "Ex 38:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Aarón; dirigió el registro de lo empleado en el tabernáculo.",
+   "datos": [
+    {
+     "texto": "Contó las cuentas del tabernáculo por orden de Moisés",
+     "certeza": "texto",
+     "ref": "Ex 38:21",
+     "cita": "por mano de Ithamar, hijo de Aarón sacerdote"
+    }
+   ]
+  },
+  "Bezalel_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 35:30",
+     "fin": "Ex 36:2"
+    },
+    {
+     "inicio": "Ex 37:1",
+     "fin": "Ex 37:1"
+    },
+    {
+     "inicio": "Ex 38:22",
+     "fin": "Ex 38:23"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 31:2",
+    "Ex 31:3",
+    "Ex 36:8"
+   ],
+   "resumen": "Artífice de la tribu de Judá, nombrado y llenado del espíritu de Dios para hacer el tabernáculo y su mobiliario.",
+   "datos": [
+    {
+     "texto": "Dios lo llamó por su nombre",
+     "certeza": "texto",
+     "ref": "Ex 31:2",
+     "cita": "yo he llamado por su nombre á Bezaleel"
+    },
+    {
+     "texto": "Fue lleno de espíritu de Dios en sabiduría, inteligencia y ciencia",
+     "certeza": "texto",
+     "ref": "Ex 31:3",
+     "cita": "lo he henchido de espíritu de Dios"
+    },
+    {
+     "texto": "Era hijo de Uri, hijo de Hur, de la tribu de Judá",
+     "certeza": "texto",
+     "ref": "Ex 35:30",
+     "cita": "Bezaleel, hijo de Uri, hijo de Hur, de la tribu de Judá"
+    },
+    {
+     "texto": "Hizo el arca de madera de Sittim",
+     "certeza": "texto",
+     "ref": "Ex 37:1",
+     "cita": "también Bezaleel el arca de madera de Sittim"
+    },
+    {
+     "texto": "Hizo todo lo que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Ex 38:22",
+     "cita": "hizo todas las cosas que Jehová mandó á Moisés"
+    }
+   ]
+  },
+  "Oholiab_1": {
+   "apariciones": [
+    {
+     "inicio": "Ex 35:34",
+     "fin": "Ex 35:35"
+    },
+    {
+     "inicio": "Ex 36:1",
+     "fin": "Ex 36:2"
+    },
+    {
+     "inicio": "Ex 38:23",
+     "fin": "Ex 38:23"
+    }
+   ],
+   "menciones_posteriores": [
+    "Ex 31:6"
+   ],
+   "resumen": "Artífice de la tribu de Dan, ayudante de Bezaleel en la obra del tabernáculo.",
+   "datos": [
+    {
+     "texto": "Dios lo puso junto a Bezaleel",
+     "certeza": "texto",
+     "ref": "Ex 31:6",
+     "cita": "yo he puesto con él á Aholiab, hijo de Ahisamac, de la tribu de Dan"
+    },
+    {
+     "texto": "Fue habilitado para enseñar",
+     "certeza": "texto",
+     "ref": "Ex 35:34",
+     "cita": "Y ha puesto en su corazón el que pueda enseñar"
+    },
+    {
+     "texto": "Era artífice, diseñador y recamador",
+     "certeza": "texto",
+     "ref": "Ex 38:23",
+     "cita": "artífice, y diseñador, y recamador"
+    }
+   ]
+  },
+  "Uri_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 31:2",
+    "Ex 35:30",
+    "Ex 38:22"
+   ],
+   "resumen": "Padre de Bezaleel, hijo de Hur; solo se le nombra como tal.",
+   "datos": []
+  },
+  "Ahisamach_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    "Ex 31:6",
+    "Ex 35:34",
+    "Ex 38:23"
+   ],
+   "resumen": "Padre de Aholiab, de la tribu de Dan; solo se le nombra como tal.",
+   "datos": []
+  }
+ },
+ "objetos": {
+  "cesta-de-juncos": {
+   "nombre": "Arquilla de juncos",
+   "tipo": "cuna",
+   "apariciones": [
+    {
+     "inicio": "Ex 2:3",
+     "fin": "Ex 2:6"
+    }
+   ],
+   "personas": [
+    "Jochebed_1",
+    "Moses_1",
+    "Hija_de_Faraon",
+    "Miriam_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Cesta de juncos sellada con pez y betún donde la madre de Moisés lo puso a orillas del río.",
+   "datos": [
+    {
+     "texto": "Era una arquilla de juncos calafateada con pez y betún",
+     "certeza": "texto",
+     "ref": "Ex 2:3",
+     "cita": "tomó una arquilla de juncos, y calafateóla con pez y betún"
+    },
+    {
+     "texto": "Se puso en un carrizal a la orilla del río",
+     "certeza": "texto",
+     "ref": "Ex 2:3",
+     "cita": "púsolo en un carrizal á la orilla del río"
+    },
+    {
+     "texto": "La hija de Faraón la vio y envió a una criada a tomarla",
+     "certeza": "texto",
+     "ref": "Ex 2:5",
+     "cita": "vió ella la arquilla en el carrizal"
+    }
+   ],
+   "externo": []
+  },
+  "zarza-ardiente": {
+   "nombre": "Zarza ardiente",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Ex 3:2",
+     "fin": "Ex 3:4"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "horeb"
+   ],
+   "tabernaculo": null,
+   "resumen": "Zarza en el monte Horeb que ardía sin consumirse, desde la que Dios llamó a Moisés.",
+   "datos": [
+    {
+     "texto": "El Ángel de Jehová apareció en una llama de fuego en medio de la zarza",
+     "certeza": "texto",
+     "ref": "Ex 3:2",
+     "cita": "el Angel de Jehová en una llama de fuego en medio de una zarza"
+    },
+    {
+     "texto": "La zarza ardía y no se consumía",
+     "certeza": "texto",
+     "ref": "Ex 3:2",
+     "cita": "la zarza no se consumía"
+    },
+    {
+     "texto": "Dios pidió a Moisés quitarse el calzado por ser tierra santa",
+     "certeza": "texto",
+     "ref": "Ex 3:5",
+     "cita": "quita tus zapatos de tus pies"
+    }
+   ],
+   "externo": []
+  },
+  "vara-de-moises": {
+   "nombre": "Vara de Moisés (vara de Dios)",
+   "tipo": "herramienta",
+   "apariciones": [
+    {
+     "inicio": "Ex 4:2",
+     "fin": "Ex 4:5"
+    },
+    {
+     "inicio": "Ex 4:17",
+     "fin": "Ex 4:17"
+    },
+    {
+     "inicio": "Ex 4:20",
+     "fin": "Ex 4:20"
+    },
+    {
+     "inicio": "Ex 7:15",
+     "fin": "Ex 7:17"
+    },
+    {
+     "inicio": "Ex 9:23",
+     "fin": "Ex 9:23"
+    },
+    {
+     "inicio": "Ex 10:13",
+     "fin": "Ex 10:13"
+    },
+    {
+     "inicio": "Ex 14:16",
+     "fin": "Ex 14:16"
+    },
+    {
+     "inicio": "Ex 17:5",
+     "fin": "Ex 17:6"
+    },
+    {
+     "inicio": "Ex 17:9",
+     "fin": "Ex 17:9"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Vara de pastor que Moisés echó al suelo ante la zarza y llevó a Egipto como «vara de Dios»; con ella se anuncian plagas, se divide el mar y se hiere la peña.",
+   "datos": [
+    {
+     "texto": "Moisés tenía en la mano una vara",
+     "certeza": "texto",
+     "ref": "Ex 4:2",
+     "cita": "Una vara"
+    },
+    {
+     "texto": "Echada en tierra, se hizo culebra",
+     "certeza": "texto",
+     "ref": "Ex 4:3",
+     "cita": "tornóse una culebra: y Moisés huía de ella"
+    },
+    {
+     "texto": "Moisés la llevó a Egipto como «vara de Dios»",
+     "certeza": "texto",
+     "ref": "Ex 4:20",
+     "cita": "tomó también Moisés la vara de Dios en su mano"
+    },
+    {
+     "texto": "Se le ordenó alzarla para dividir el mar",
+     "certeza": "texto",
+     "ref": "Ex 14:16",
+     "cita": "Y tú alza tu vara"
+    },
+    {
+     "texto": "Con ella había herido el río",
+     "certeza": "texto",
+     "ref": "Ex 17:5",
+     "cita": "con que heriste el río"
+    },
+    {
+     "texto": "La sostendría en el collado durante la batalla con Amalec",
+     "certeza": "texto",
+     "ref": "Ex 17:9",
+     "cita": "la vara de Dios en mi mano"
+    },
+    {
+     "texto": "El texto no dice si la vara de Aarón (Ex 7:9) es la misma que la de Moisés",
+     "certeza": "inferido",
+     "ref": "Ex 7:15",
+     "cita": "la vara que se volvió culebra"
+    }
+   ],
+   "externo": []
+  },
+  "vara-de-aaron": {
+   "nombre": "Vara de Aarón",
+   "tipo": "herramienta",
+   "apariciones": [
+    {
+     "inicio": "Ex 7:9",
+     "fin": "Ex 7:12"
+    },
+    {
+     "inicio": "Ex 7:19",
+     "fin": "Ex 7:20"
+    },
+    {
+     "inicio": "Ex 8:5",
+     "fin": "Ex 8:6"
+    },
+    {
+     "inicio": "Ex 8:16",
+     "fin": "Ex 8:17"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Vara que Aarón echó ante Faraón para hacerla serpiente y con la que extendió la mano sobre las aguas y el polvo.",
+   "datos": [
+    {
+     "texto": "Dios ordenó a Aarón tomar su vara y echarla ante Faraón",
+     "certeza": "texto",
+     "ref": "Ex 7:9",
+     "cita": "Toma tu vara, y échala delante de Faraón, para que se torne culebra"
+    },
+    {
+     "texto": "Su vara devoró las varas de los encantadores",
+     "certeza": "texto",
+     "ref": "Ex 7:12",
+     "cita": "la vara de Aarón devoró las varas de ellos"
+    },
+    {
+     "texto": "Con ella hirió el polvo, que se volvió piojos",
+     "certeza": "texto",
+     "ref": "Ex 8:17",
+     "cita": "Aarón extendió su mano con su vara, é hirió el polvo de la tierra"
+    }
+   ],
+   "externo": []
+  },
+  "ladrillo-y-paja": {
+   "nombre": "Ladrillos y paja",
+   "tipo": "material de trabajo",
+   "apariciones": [
+    {
+     "inicio": "Ex 1:14",
+     "fin": "Ex 1:14"
+    },
+    {
+     "inicio": "Ex 5:6",
+     "fin": "Ex 5:19"
+    }
+   ],
+   "personas": [
+    "Pharaoh_4"
+   ],
+   "lugares": [
+    "rameses",
+    "piton"
+   ],
+   "tabernaculo": null,
+   "resumen": "Los hebreos hacían barro y ladrillo; Faraón dejó de darles la paja y les exigió la misma cantidad.",
+   "datos": [
+    {
+     "texto": "Amargaron su vida en barro y ladrillo y toda labor del campo",
+     "certeza": "texto",
+     "ref": "Ex 1:14",
+     "cita": "en [hacer] barro y ladrillo"
+    },
+    {
+     "texto": "Se dejó de dar paja pero se mantuvo la tarea del ladrillo",
+     "certeza": "texto",
+     "ref": "Ex 5:7",
+     "cita": "no daréis paja al pueblo para hacer ladrillo"
+    },
+    {
+     "texto": "El pueblo recogió rastrojo en lugar de paja por todo Egipto",
+     "certeza": "texto",
+     "ref": "Ex 5:12",
+     "cita": "á coger rastrojo en lugar de paja"
+    },
+    {
+     "texto": "Se azotó a los capataces israelitas por no cumplir la tarea",
+     "certeza": "texto",
+     "ref": "Ex 5:14",
+     "cita": "azotaban á los capataces de los hijos de Israel"
+    }
+   ],
+   "externo": []
+  },
+  "vasos-de-los-egipcios": {
+   "nombre": "Vasos de plata y oro y vestidos de los egipcios",
+   "tipo": "tesoro",
+   "apariciones": [
+    {
+     "inicio": "Ex 3:21",
+     "fin": "Ex 3:22"
+    },
+    {
+     "inicio": "Ex 11:2",
+     "fin": "Ex 11:3"
+    },
+    {
+     "inicio": "Ex 12:35",
+     "fin": "Ex 12:36"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "egipto"
+   ],
+   "tabernaculo": null,
+   "resumen": "Lo que las mujeres israelitas pidieron a sus vecinas egipcias antes de partir.",
+   "datos": [
+    {
+     "texto": "Dios anunció que no saldrían con las manos vacías",
+     "certeza": "texto",
+     "ref": "Ex 3:21",
+     "cita": "no salgáis vacíos"
+    },
+    {
+     "texto": "Pidieron vasos de plata, de oro y vestidos",
+     "certeza": "texto",
+     "ref": "Ex 12:35",
+     "cita": "vasos de plata, y vasos de oro, y vestidos"
+    },
+    {
+     "texto": "Los egipcios se los prestaron y los despojaron",
+     "certeza": "texto",
+     "ref": "Ex 12:36",
+     "cita": "y ellos despojaron á los Egipcios"
+    }
+   ],
+   "externo": []
+  },
+  "sangre-en-los-dinteles": {
+   "nombre": "Sangre en los dinteles",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Ex 12:7",
+     "fin": "Ex 12:7"
+    },
+    {
+     "inicio": "Ex 12:12",
+     "fin": "Ex 12:13"
+    },
+    {
+     "inicio": "Ex 12:22",
+     "fin": "Ex 12:23"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "egipto"
+   ],
+   "tabernaculo": null,
+   "resumen": "Sangre del cordero untada en los postes y el dintel con un manojo de hisopo; señal para que el heridor pasara de largo.",
+   "datos": [
+    {
+     "texto": "Se pondría en los dos postes y en el dintel",
+     "certeza": "texto",
+     "ref": "Ex 12:7",
+     "cita": "pondrán en los dos postes y en el dintel de las casas"
+    },
+    {
+     "texto": "Se aplicaba con un manojo de hisopo",
+     "certeza": "texto",
+     "ref": "Ex 12:22",
+     "cita": "Y tomad un manojo de hisopo"
+    },
+    {
+     "texto": "Dios vería la sangre y pasaría de largo",
+     "certeza": "texto",
+     "ref": "Ex 12:13",
+     "cita": "veré la sangre, y pasaré de vosotros"
+    },
+    {
+     "texto": "Nadie debía salir de casa hasta la mañana",
+     "certeza": "texto",
+     "ref": "Ex 12:22",
+     "cita": "ninguno de vosotros salga de las puertas de su casa hasta la mañana"
+    }
+   ],
+   "externo": []
+  },
+  "cordero-de-la-pascua": {
+   "nombre": "Cordero de la Pascua",
+   "tipo": "alimento ritual",
+   "apariciones": [
+    {
+     "inicio": "Ex 12:3",
+     "fin": "Ex 12:11"
+    },
+    {
+     "inicio": "Ex 12:21",
+     "fin": "Ex 12:21"
+    },
+    {
+     "inicio": "Ex 12:27",
+     "fin": "Ex 12:27"
+    },
+    {
+     "inicio": "Ex 12:43",
+     "fin": "Ex 12:49"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [
+    "egipto"
+   ],
+   "tabernaculo": null,
+   "resumen": "Cordero de un año sin defecto, guardado hasta el día catorce y comido asado, con panes sin levadura y hierbas amargas.",
+   "datos": [
+    {
+     "texto": "Sin defecto, macho de un año",
+     "certeza": "texto",
+     "ref": "Ex 12:5",
+     "cita": "El cordero será sin defecto, macho de un año"
+    },
+    {
+     "texto": "Se guardaba hasta el día catorce del mes",
+     "certeza": "texto",
+     "ref": "Ex 12:6",
+     "cita": "Y habéis de guardarlo hasta el día catorce de este mes"
+    },
+    {
+     "texto": "Se comía asado, con hierbas amargas",
+     "certeza": "texto",
+     "ref": "Ex 12:8",
+     "cita": "con hierbas amargas lo comerán"
+    },
+    {
+     "texto": "No se quebraba hueso suyo",
+     "certeza": "texto",
+     "ref": "Ex 12:46",
+     "cita": "ni quebraréis hueso suyo"
+    },
+    {
+     "texto": "Es «la Pascua de Jehová»",
+     "certeza": "texto",
+     "ref": "Ex 12:11",
+     "cita": "es la Pascua de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "panes-sin-levadura": {
+   "nombre": "Panes sin levadura",
+   "tipo": "alimento ritual",
+   "apariciones": [
+    {
+     "inicio": "Ex 12:8",
+     "fin": "Ex 12:8"
+    },
+    {
+     "inicio": "Ex 12:15",
+     "fin": "Ex 12:20"
+    },
+    {
+     "inicio": "Ex 12:34",
+     "fin": "Ex 12:34"
+    },
+    {
+     "inicio": "Ex 12:39",
+     "fin": "Ex 12:39"
+    },
+    {
+     "inicio": "Ex 13:3",
+     "fin": "Ex 13:7"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Pan hecho sin leudar: lo que comieron aquella noche y lo que Israel guardó siete días cada año en memoria de la salida.",
+   "datos": [
+    {
+     "texto": "Siete días se comerían panes sin levadura",
+     "certeza": "texto",
+     "ref": "Ex 12:15",
+     "cita": "Siete días comeréis panes sin levadura"
+    },
+    {
+     "texto": "Salieron llevando la masa antes de que se leudase",
+     "certeza": "texto",
+     "ref": "Ex 12:34",
+     "cita": "Y llevó el pueblo su masa antes que se leudase"
+    },
+    {
+     "texto": "Cocieron tortas sin levadura de esa masa",
+     "certeza": "texto",
+     "ref": "Ex 12:39",
+     "cita": "cocieron tortas sin levadura de la masa que habían sacado de Egipto"
+    },
+    {
+     "texto": "Salieron en el mes de Abib",
+     "certeza": "texto",
+     "ref": "Ex 13:4",
+     "cita": "Vosotros salís hoy en el mes de Abib"
+    }
+   ],
+   "externo": []
+  },
+  "huesos-de-jose": {
+   "nombre": "Huesos de José",
+   "tipo": "reliquia",
+   "apariciones": [
+    {
+     "inicio": "Ex 13:19",
+     "fin": "Ex 13:19"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joseph_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Los restos de José, que Moisés llevó consigo cumpliendo el juramento hecho a los hijos de Israel.",
+   "datos": [
+    {
+     "texto": "Moisés los tomó consigo",
+     "certeza": "texto",
+     "ref": "Ex 13:19",
+     "cita": "Tomó también consigo Moisés los huesos de José"
+    },
+    {
+     "texto": "José había hecho jurar que los subirían de Egipto",
+     "certeza": "texto",
+     "ref": "Ex 13:19",
+     "cita": "haréis subir mis huesos de aquí con vosotros"
+    }
+   ],
+   "externo": []
+  },
+  "columna-de-nube-y-fuego": {
+   "nombre": "Columna de nube y de fuego",
+   "tipo": "señal de guía",
+   "apariciones": [
+    {
+     "inicio": "Ex 13:21",
+     "fin": "Ex 13:22"
+    },
+    {
+     "inicio": "Ex 14:19",
+     "fin": "Ex 14:20"
+    },
+    {
+     "inicio": "Ex 14:24",
+     "fin": "Ex 14:24"
+    },
+    {
+     "inicio": "Ex 19:9",
+     "fin": "Ex 19:9"
+    },
+    {
+     "inicio": "Ex 33:9",
+     "fin": "Ex 33:10"
+    },
+    {
+     "inicio": "Ex 40:34",
+     "fin": "Ex 40:38"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Nube de día y fuego de noche que guiaba a Israel, se puso entre ellos y los egipcios y descendía a la puerta de la tienda.",
+   "datos": [
+    {
+     "texto": "Iba delante de ellos de día en columna de nube",
+     "certeza": "texto",
+     "ref": "Ex 13:21",
+     "cita": "de día en una columna de nube, para guiarlos por el camino"
+    },
+    {
+     "texto": "Nunca se apartó de delante del pueblo",
+     "certeza": "texto",
+     "ref": "Ex 13:22",
+     "cita": "Nunca se partió de delante del pueblo la columna de nube de día"
+    },
+    {
+     "texto": "En el mar se puso a sus espaldas, entre Israel y Egipto",
+     "certeza": "texto",
+     "ref": "Ex 14:19",
+     "cita": "púsose á sus espaldas"
+    },
+    {
+     "texto": "Cuando la nube se alzaba, Israel se ponía en marcha",
+     "certeza": "texto",
+     "ref": "Ex 40:36",
+     "cita": "Y cuando la nube se alzaba del tabernáculo, los hijos de Israel se movían en todas sus jornadas"
+    }
+   ],
+   "externo": []
+  },
+  "carros-de-faraon": {
+   "nombre": "Carros y caballería de Faraón",
+   "tipo": "ejército",
+   "apariciones": [
+    {
+     "inicio": "Ex 14:6",
+     "fin": "Ex 14:9"
+    },
+    {
+     "inicio": "Ex 14:23",
+     "fin": "Ex 14:28"
+    },
+    {
+     "inicio": "Ex 15:4",
+     "fin": "Ex 15:4"
+    }
+   ],
+   "personas": [
+    "Pharaoh_4"
+   ],
+   "lugares": [
+    "pi-hahirot",
+    "mar-rojo"
+   ],
+   "tabernaculo": null,
+   "resumen": "Seiscientos carros escogidos y todos los de Egipto que persiguieron a Israel hasta el mar.",
+   "datos": [
+    {
+     "texto": "Faraón tomó seiscientos carros escogidos y todos los de Egipto",
+     "certeza": "texto",
+     "ref": "Ex 14:7",
+     "cita": "tomó seiscientos carros escogidos, y todos los carros de Egipto"
+    },
+    {
+     "texto": "A los carros se les quitaron las ruedas",
+     "certeza": "texto",
+     "ref": "Ex 14:25",
+     "cita": "Y quitóles las ruedas de sus carros"
+    },
+    {
+     "texto": "Las aguas cubrieron carros y caballería",
+     "certeza": "texto",
+     "ref": "Ex 14:28",
+     "cita": "cubrieron los carros y la caballería"
+    }
+   ],
+   "externo": []
+  },
+  "pandero-de-miriam": {
+   "nombre": "Pandero de Miriam",
+   "tipo": "instrumento",
+   "apariciones": [
+    {
+     "inicio": "Ex 15:20",
+     "fin": "Ex 15:21"
+    }
+   ],
+   "personas": [
+    "Miriam_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Pandero con el que Miriam dirigió el canto y la danza de las mujeres.",
+   "datos": [
+    {
+     "texto": "Miriam lo tomó en su mano y las mujeres salieron con panderos y danzas",
+     "certeza": "texto",
+     "ref": "Ex 15:20",
+     "cita": "tomó un pandero en su mano, y todas las mujeres salieron en pos de ella con panderos y danzas"
+    }
+   ],
+   "externo": []
+  },
+  "arbol-de-mara": {
+   "nombre": "Árbol de Mara",
+   "tipo": "planta",
+   "apariciones": [
+    {
+     "inicio": "Ex 15:25",
+     "fin": "Ex 15:25"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "mara"
+   ],
+   "tabernaculo": null,
+   "resumen": "Árbol que Dios mostró a Moisés; echado en las aguas amargas, las endulzó.",
+   "datos": [
+    {
+     "texto": "Echado al agua, la endulzó",
+     "certeza": "texto",
+     "ref": "Ex 15:25",
+     "cita": "las aguas se endulzaron"
+    },
+    {
+     "texto": "El texto no dice qué especie de árbol era",
+     "certeza": "inferido",
+     "ref": "Ex 15:25",
+     "cita": "Jehová le mostró un árbol"
+    }
+   ],
+   "externo": []
+  },
+  "mana": {
+   "nombre": "Maná",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "Ex 16:4",
+     "fin": "Ex 16:4"
+    },
+    {
+     "inicio": "Ex 16:13",
+     "fin": "Ex 16:36"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [
+    "desierto-de-sin"
+   ],
+   "tabernaculo": null,
+   "resumen": "Alimento que apareció cada mañana en el desierto durante cuarenta años; se recogía un gomer por persona y el sexto día el doble.",
+   "datos": [
+    {
+     "texto": "Era menudo, redondo, como una helada sobre la tierra",
+     "certeza": "texto",
+     "ref": "Ex 16:14",
+     "cita": "una cosa menuda, redonda, menuda como una helada sobre la tierra"
+    },
+    {
+     "texto": "Sabía como hojuelas con miel",
+     "certeza": "texto",
+     "ref": "Ex 16:31",
+     "cita": "su sabor como de hojuelas con miel"
+    },
+    {
+     "texto": "Lo guardado de un día para otro criaba gusanos, salvo el sexto día",
+     "certeza": "texto",
+     "ref": "Ex 16:20",
+     "cita": "crió gusanos, y pudrióse"
+    },
+    {
+     "texto": "El sexto día recogían doble ración",
+     "certeza": "texto",
+     "ref": "Ex 16:22",
+     "cita": "recogieron doblada comida"
+    },
+    {
+     "texto": "Comieron maná cuarenta años",
+     "certeza": "texto",
+     "ref": "Ex 16:35",
+     "cita": "comieron los hijos de Israel maná cuarenta años"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Hipótesis modernas atribuyen el maná a secreciones cristalizadas de insectos sobre el tamarisco u otras sustancias naturales; son explicaciones propuestas, no consenso. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Manna",
+     "url": "https://en.wikipedia.org/wiki/Manna"
+    }
+   ]
+  },
+  "vaso-de-mana": {
+   "nombre": "Vaso con un gomer de maná",
+   "tipo": "recipiente",
+   "apariciones": [
+    {
+     "inicio": "Ex 16:32",
+     "fin": "Ex 16:36"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Un gomer de maná guardado delante del Testimonio para las generaciones futuras.",
+   "datos": [
+    {
+     "texto": "Moisés mandó a Aarón poner un gomer de maná en un vaso",
+     "certeza": "texto",
+     "ref": "Ex 16:33",
+     "cita": "Toma un vaso, y pon en él un gomer lleno de maná"
+    },
+    {
+     "texto": "Aarón lo puso delante del Testimonio",
+     "certeza": "texto",
+     "ref": "Ex 16:34",
+     "cita": "Y Aarón lo puso delante del Testimonio"
+    },
+    {
+     "texto": "Un gomer es la décima parte de un efa",
+     "certeza": "texto",
+     "ref": "Ex 16:36",
+     "cita": "un gomer es la décima parte del epha"
+    }
+   ],
+   "externo": []
+  },
+  "roca-de-horeb": {
+   "nombre": "Peña de Horeb",
+   "tipo": "lugar-objeto",
+   "apariciones": [
+    {
+     "inicio": "Ex 17:5",
+     "fin": "Ex 17:7"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "horeb",
+    "masah",
+    "meriba"
+   ],
+   "tabernaculo": null,
+   "resumen": "Peña que Moisés hirió con su vara en presencia de los ancianos y de la que salió agua.",
+   "datos": [
+    {
+     "texto": "Dios estaría delante de él sobre la peña",
+     "certeza": "texto",
+     "ref": "Ex 17:6",
+     "cita": "yo estoy delante de ti allí sobre la peña en Horeb"
+    },
+    {
+     "texto": "Al herirla salió agua para el pueblo",
+     "certeza": "texto",
+     "ref": "Ex 17:6",
+     "cita": "herirás la peña, y saldrán de ella aguas"
+    },
+    {
+     "texto": "El lugar se llamó Massah y Meribah",
+     "certeza": "texto",
+     "ref": "Ex 17:7",
+     "cita": "Massah y Meribah"
+    }
+   ],
+   "externo": []
+  },
+  "tablas-de-la-ley": {
+   "nombre": "Tablas del Testimonio",
+   "tipo": "documento",
+   "apariciones": [
+    {
+     "inicio": "Ex 24:12",
+     "fin": "Ex 24:12"
+    },
+    {
+     "inicio": "Ex 31:18",
+     "fin": "Ex 31:18"
+    },
+    {
+     "inicio": "Ex 32:15",
+     "fin": "Ex 32:19"
+    },
+    {
+     "inicio": "Ex 34:1",
+     "fin": "Ex 34:4"
+    },
+    {
+     "inicio": "Ex 34:28",
+     "fin": "Ex 34:29"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "sinai"
+   ],
+   "tabernaculo": null,
+   "resumen": "Dos tablas de piedra escritas por Dios; las primeras se rompieron al pie del monte y se dieron otras iguales.",
+   "datos": [
+    {
+     "texto": "Dios dio a Moisés dos tablas de piedra escritas con el dedo de Dios",
+     "certeza": "texto",
+     "ref": "Ex 31:18",
+     "cita": "dos tablas del testimonio, tablas de piedra escritas con el dedo de Dios"
+    },
+    {
+     "texto": "Estaban escritas por ambos lados",
+     "certeza": "texto",
+     "ref": "Ex 32:15",
+     "cita": "las tablas escritas por ambos lados"
+    },
+    {
+     "texto": "Moisés las arrojó y las quebró",
+     "certeza": "texto",
+     "ref": "Ex 32:19",
+     "cita": "arrojó las tablas de sus manos, y quebrólas al pie del monte"
+    },
+    {
+     "texto": "Moisés alisó dos tablas nuevas «como las primeras»",
+     "certeza": "texto",
+     "ref": "Ex 34:1",
+     "cita": "Alísate dos tablas de piedra como las primeras"
+    },
+    {
+     "texto": "Las palabras de la alianza son «las diez palabras»",
+     "certeza": "texto",
+     "ref": "Ex 34:28",
+     "cita": "las diez palabras"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "El papiro Nash (Cambridge University Library, MS Or.233, hacia 150-100 a. C.) es un testimonio hebreo antiguo del Decálogo y del comienzo del Shemá. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Nash Papyrus",
+     "url": "https://en.wikipedia.org/wiki/Nash_Papyrus"
+    }
+   ]
+  },
+  "libro-de-la-alianza": {
+   "nombre": "Libro de la alianza",
+   "tipo": "documento",
+   "apariciones": [
+    {
+     "inicio": "Ex 24:3",
+     "fin": "Ex 24:8"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "sinai"
+   ],
+   "tabernaculo": null,
+   "resumen": "Libro donde Moisés escribió las palabras de Jehová y que leyó al pueblo antes de sellar la alianza.",
+   "datos": [
+    {
+     "texto": "Moisés escribió todas las palabras de Jehová",
+     "certeza": "texto",
+     "ref": "Ex 24:4",
+     "cita": "Y Moisés escribió todas las palabras de Jehová"
+    },
+    {
+     "texto": "Leyó el libro a oídos del pueblo",
+     "certeza": "texto",
+     "ref": "Ex 24:7",
+     "cita": "Y tomó el libro de la alianza, y leyó á oídos del pueblo"
+    },
+    {
+     "texto": "El pueblo prometió hacer y obedecer",
+     "certeza": "texto",
+     "ref": "Ex 24:7",
+     "cita": "Haremos todas las cosas que Jehová ha dicho, y obedeceremos"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-la-alianza": {
+   "nombre": "Altar y doce columnas al pie del Sinaí",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "Ex 24:4",
+     "fin": "Ex 24:8"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "sinai"
+   ],
+   "tabernaculo": null,
+   "resumen": "Altar con doce columnas, una por tribu, donde se ofrecieron holocaustos y pacíficos al sellar la alianza.",
+   "datos": [
+    {
+     "texto": "Moisés edificó un altar y doce columnas según las doce tribus",
+     "certeza": "texto",
+     "ref": "Ex 24:4",
+     "cita": "edificó un altar al pie del monte, y doce columnas, según las doce tribus de Israel"
+    },
+    {
+     "texto": "La mitad de la sangre se puso en tazones y la otra mitad sobre el altar",
+     "certeza": "texto",
+     "ref": "Ex 24:6",
+     "cita": "tomó la mitad de la sangre, y púsola en tazones"
+    },
+    {
+     "texto": "Roció al pueblo con la «sangre de la alianza»",
+     "certeza": "texto",
+     "ref": "Ex 24:8",
+     "cita": "He aquí la sangre de la alianza que Jehová ha hecho con vosotros"
+    }
+   ],
+   "externo": []
+  },
+  "becerro-de-oro": {
+   "nombre": "Becerro de oro",
+   "tipo": "ídolo",
+   "apariciones": [
+    {
+     "inicio": "Ex 32:1",
+     "fin": "Ex 32:8"
+    },
+    {
+     "inicio": "Ex 32:19",
+     "fin": "Ex 32:24"
+    },
+    {
+     "inicio": "Ex 32:35",
+     "fin": "Ex 32:35"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [
+    "desierto-de-sinai"
+   ],
+   "tabernaculo": null,
+   "resumen": "Becerro fundido con los zarcillos de oro del pueblo mientras Moisés estaba en el monte; Moisés lo quemó, lo molió y lo hizo beber.",
+   "datos": [
+    {
+     "texto": "Aarón pidió los zarcillos de oro de mujeres, hijos e hijas",
+     "certeza": "texto",
+     "ref": "Ex 32:2",
+     "cita": "Apartad los zarcillos de oro"
+    },
+    {
+     "texto": "Lo formó con buril y lo hizo becerro de fundición",
+     "certeza": "texto",
+     "ref": "Ex 32:4",
+     "cita": "hizo de ello un becerro de fundición"
+    },
+    {
+     "texto": "Aarón anunció «Mañana será fiesta á Jehová»",
+     "certeza": "texto",
+     "ref": "Ex 32:5",
+     "cita": "Mañana será fiesta á Jehová"
+    },
+    {
+     "texto": "Aarón dice después que echó el oro al fuego y «salió este becerro»",
+     "certeza": "texto",
+     "ref": "Ex 32:24",
+     "cita": "echélo en el fuego, y salió este becerro"
+    },
+    {
+     "texto": "Moisés lo quemó, lo molió hasta polvo y lo esparció en el agua",
+     "certeza": "texto",
+     "ref": "Ex 32:20",
+     "cita": "moliólo hasta reducirlo á polvo"
+    }
+   ],
+   "externo": []
+  },
+  "velo-de-moises": {
+   "nombre": "Velo de Moisés",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Ex 34:33",
+     "fin": "Ex 34:35"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "sinai"
+   ],
+   "tabernaculo": null,
+   "resumen": "Velo que Moisés se ponía sobre el rostro resplandeciente al hablar con el pueblo.",
+   "datos": [
+    {
+     "texto": "Se ponía el velo tras hablar con el pueblo",
+     "certeza": "texto",
+     "ref": "Ex 34:33",
+     "cita": "puso un velo sobre su rostro"
+    },
+    {
+     "texto": "Se lo quitaba al entrar ante Jehová",
+     "certeza": "texto",
+     "ref": "Ex 34:34",
+     "cita": "quitábase el velo hasta que salía"
+    }
+   ],
+   "externo": []
+  },
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "Ex 25:10",
+     "fin": "Ex 25:22"
+    },
+    {
+     "inicio": "Ex 26:33",
+     "fin": "Ex 26:34"
+    },
+    {
+     "inicio": "Ex 37:1",
+     "fin": "Ex 37:9"
+    },
+    {
+     "inicio": "Ex 40:20",
+     "fin": "Ex 40:21"
+    }
+   ],
+   "personas": [
+    "Bezalel_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "arca",
+   "resumen": "Arca de madera de Sittim cubierta de oro, donde se pondría el Testimonio y desde cuya cubierta Dios hablaría con Moisés.",
+   "datos": [
+    {
+     "texto": "Se haría de madera de Sittim cubierta de oro",
+     "certeza": "texto",
+     "ref": "Ex 25:10",
+     "cita": "Harán también un arca de madera de Sittim"
+    },
+    {
+     "texto": "Dentro se pondría el testimonio",
+     "certeza": "texto",
+     "ref": "Ex 25:16",
+     "cita": "Y pondrás en el arca el testimonio que yo te daré"
+    },
+    {
+     "texto": "Desde la cubierta, entre los querubines, Dios hablaría",
+     "certeza": "texto",
+     "ref": "Ex 25:22",
+     "cita": "hablaré contigo de sobre la cubierta"
+    },
+    {
+     "texto": "Bezaleel la hizo",
+     "certeza": "texto",
+     "ref": "Ex 37:1",
+     "cita": "también Bezaleel el arca"
+    },
+    {
+     "texto": "Moisés la metió en el tabernáculo y la cubrió con el velo",
+     "certeza": "texto",
+     "ref": "Ex 40:21",
+     "cita": "Y metió el arca en el tabernáculo"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Según Wikipedia no hay evidencia arqueológica concluyente del arca ni de su paradero. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Ark of the Covenant",
+     "url": "https://en.wikipedia.org/wiki/Ark_of_the_Covenant"
+    }
+   ]
+  },
+  "propiciatorio": {
+   "nombre": "Cubierta del arca con dos querubines",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "Ex 25:17",
+     "fin": "Ex 25:22"
+    },
+    {
+     "inicio": "Ex 37:6",
+     "fin": "Ex 37:9"
+    }
+   ],
+   "personas": [
+    "Bezalel_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "propiciatorio",
+   "resumen": "Cubierta de oro fino sobre el arca, con dos querubines de oro labrados a martillo cuyas alas la cubren. La RV1909 la llama «cubierta».",
+   "datos": [
+    {
+     "texto": "Dos querubines de oro labrados a martillo en los extremos",
+     "certeza": "texto",
+     "ref": "Ex 25:18",
+     "cita": "dos querubines de oro, labrados á martillo"
+    },
+    {
+     "texto": "Extienden las alas por encima, mirándose",
+     "certeza": "texto",
+     "ref": "Ex 25:20",
+     "cita": "extenderán por encima las alas"
+    }
+   ],
+   "externo": []
+  },
+  "mesa-de-los-panes": {
+   "nombre": "Mesa de los panes de la proposición",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Ex 25:23",
+     "fin": "Ex 25:30"
+    },
+    {
+     "inicio": "Ex 37:10",
+     "fin": "Ex 37:16"
+    },
+    {
+     "inicio": "Ex 40:22",
+     "fin": "Ex 40:23"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "mesa",
+   "resumen": "Mesa de madera de Sittim con oro; sobre ella iba continuamente el pan de la proposición.",
+   "datos": [
+    {
+     "texto": "Sobre la mesa se pondría continuamente el pan de la proposición",
+     "certeza": "texto",
+     "ref": "Ex 25:30",
+     "cita": "pondrás sobre la mesa el pan de la proposición delante de mí continuamente"
+    },
+    {
+     "texto": "Moisés la puso al lado norte, fuera del velo",
+     "certeza": "texto",
+     "ref": "Ex 40:22",
+     "cita": "Y puso la mesa en el tabernáculo del testimonio, al lado septentrional"
+    }
+   ],
+   "externo": []
+  },
+  "candelabro": {
+   "nombre": "Candelabro de oro",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Ex 25:31",
+     "fin": "Ex 25:40"
+    },
+    {
+     "inicio": "Ex 37:17",
+     "fin": "Ex 37:24"
+    },
+    {
+     "inicio": "Ex 40:24",
+     "fin": "Ex 40:25"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "candelabro",
+   "resumen": "Candelero de oro puro labrado a martillo, con seis brazos y siete lámparas, frente a la mesa.",
+   "datos": [
+    {
+     "texto": "Era de oro puro, labrado a martillo",
+     "certeza": "texto",
+     "ref": "Ex 25:31",
+     "cita": "un candelero de oro puro; labrado á martillo se hará el candelero"
+    },
+    {
+     "texto": "Salían seis brazos de sus lados",
+     "certeza": "texto",
+     "ref": "Ex 25:32",
+     "cita": "saldrán seis brazos de sus lados"
+    },
+    {
+     "texto": "Llevaba siete candilejas",
+     "certeza": "texto",
+     "ref": "Ex 25:37",
+     "cita": "siete candilejas"
+    },
+    {
+     "texto": "Se hizo según el modelo mostrado en el monte",
+     "certeza": "texto",
+     "ref": "Ex 25:40",
+     "cita": "conforme á su modelo, que te ha sido mostrado en el monte"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Según Wikipedia, el candelabro del tabernáculo era de oro puro con siete brazos y su diseño fue revelado a Moisés. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Menorah (Temple)",
+     "url": "https://en.wikipedia.org/wiki/Menorah_(Temple)"
+    }
+   ]
+  },
+  "altar-del-incienso": {
+   "nombre": "Altar del incienso",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Ex 30:1",
+     "fin": "Ex 30:10"
+    },
+    {
+     "inicio": "Ex 37:25",
+     "fin": "Ex 37:29"
+    },
+    {
+     "inicio": "Ex 40:26",
+     "fin": "Ex 40:27"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "altar-incienso",
+   "resumen": "Altar de Sittim cubierto de oro delante del velo, donde Aarón quemaba incienso cada mañana y al anochecer.",
+   "datos": [
+    {
+     "texto": "Aarón quemaría incienso cada mañana al arreglar las lámparas",
+     "certeza": "texto",
+     "ref": "Ex 30:7",
+     "cita": "quemará sobre él Aarón sahumerio de aroma cada mañana"
+    },
+    {
+     "texto": "No se ofrecería incienso extraño ni libación",
+     "certeza": "texto",
+     "ref": "Ex 30:9",
+     "cita": "No ofreceréis sobre él sahumerio extraño"
+    },
+    {
+     "texto": "Una vez al año se hacía expiación sobre sus cuernos",
+     "certeza": "texto",
+     "ref": "Ex 30:10",
+     "cita": "una vez en el año hará expiación sobre él"
+    }
+   ],
+   "externo": []
+  },
+  "altar-del-holocausto": {
+   "nombre": "Altar del holocausto",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Ex 27:1",
+     "fin": "Ex 27:8"
+    },
+    {
+     "inicio": "Ex 38:1",
+     "fin": "Ex 38:7"
+    },
+    {
+     "inicio": "Ex 40:6",
+     "fin": "Ex 40:6"
+    },
+    {
+     "inicio": "Ex 40:29",
+     "fin": "Ex 40:29"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "altar-holocausto",
+   "resumen": "Altar hueco de tablas de Sittim cubierto de bronce, con cuernos en las esquinas, a la entrada del tabernáculo.",
+   "datos": [
+    {
+     "texto": "Tenía cuernos en las cuatro esquinas, de la misma pieza",
+     "certeza": "texto",
+     "ref": "Ex 27:2",
+     "cita": "harás sus cuernos á sus cuatro esquinas"
+    },
+    {
+     "texto": "Era hueco, de tablas",
+     "certeza": "texto",
+     "ref": "Ex 27:8",
+     "cita": "De tablas lo harás, hueco"
+    },
+    {
+     "texto": "Moisés ofreció sobre él holocausto y presente",
+     "certeza": "texto",
+     "ref": "Ex 40:29",
+     "cita": "ofreció sobre él holocausto y presente"
+    }
+   ],
+   "externo": []
+  },
+  "fuente-de-bronce": {
+   "nombre": "Fuente de bronce",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Ex 30:17",
+     "fin": "Ex 30:21"
+    },
+    {
+     "inicio": "Ex 38:8",
+     "fin": "Ex 38:8"
+    },
+    {
+     "inicio": "Ex 40:7",
+     "fin": "Ex 40:7"
+    },
+    {
+     "inicio": "Ex 40:30",
+     "fin": "Ex 40:32"
+    }
+   ],
+   "personas": [
+    "Aaron_1",
+    "Moses_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "fuente",
+   "resumen": "Pila con su basa, entre el tabernáculo y el altar, para que los sacerdotes lavaran manos y pies.",
+   "datos": [
+    {
+     "texto": "Era de metal, con su basa, para lavar",
+     "certeza": "texto",
+     "ref": "Ex 30:18",
+     "cita": "una fuente de metal, con su basa de metal, para lavar"
+    },
+    {
+     "texto": "Se hizo de los espejos de las mujeres que velaban a la puerta",
+     "certeza": "texto",
+     "ref": "Ex 38:8",
+     "cita": "de los espejos de las que velaban á la puerta del tabernáculo del testimonio"
+    },
+    {
+     "texto": "Debían lavarse al entrar «y no morirán»",
+     "certeza": "texto",
+     "ref": "Ex 30:20",
+     "cita": "se han de lavar con agua, y no morirán"
+    }
+   ],
+   "externo": []
+  },
+  "velo-del-santuario": {
+   "nombre": "Velo del santuario",
+   "tipo": "mobiliario",
+   "apariciones": [
+    {
+     "inicio": "Ex 26:31",
+     "fin": "Ex 26:33"
+    },
+    {
+     "inicio": "Ex 36:35",
+     "fin": "Ex 36:36"
+    },
+    {
+     "inicio": "Ex 40:3",
+     "fin": "Ex 40:3"
+    },
+    {
+     "inicio": "Ex 40:21",
+     "fin": "Ex 40:21"
+    }
+   ],
+   "personas": [
+    "Bezalel_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "velo",
+   "resumen": "Velo con querubines que separa el lugar santo del santísimo.",
+   "datos": [
+    {
+     "texto": "Hecho de cárdeno, púrpura, carmesí y lino torcido, con querubines",
+     "certeza": "texto",
+     "ref": "Ex 26:31",
+     "cita": "con querubines"
+    },
+    {
+     "texto": "Separa el lugar santo del santísimo",
+     "certeza": "texto",
+     "ref": "Ex 26:33",
+     "cita": "aquel velo os hará separación entre el lugar santo y el santísimo"
+    }
+   ],
+   "externo": []
+  },
+  "cortinas-del-tabernaculo": {
+   "nombre": "Cortinas de lino del tabernáculo",
+   "tipo": "estructura",
+   "apariciones": [
+    {
+     "inicio": "Ex 26:1",
+     "fin": "Ex 26:6"
+    },
+    {
+     "inicio": "Ex 36:8",
+     "fin": "Ex 36:13"
+    }
+   ],
+   "personas": [
+    "Bezalel_1"
+   ],
+   "lugares": [],
+   "tabernaculo": "cortinas-lino",
+   "resumen": "Diez cortinas de lino torcido, cárdeno, púrpura y carmesí con querubines, unidas con corchetes de oro.",
+   "datos": [
+    {
+     "texto": "Diez cortinas de lino torcido con querubines",
+     "certeza": "texto",
+     "ref": "Ex 26:1",
+     "cita": "diez cortinas de lino torcido"
+    },
+    {
+     "texto": "Se unían con cincuenta corchetes de oro",
+     "certeza": "texto",
+     "ref": "Ex 26:6",
+     "cita": "cincuenta corchetes de oro"
+    }
+   ],
+   "externo": []
+  },
+  "aceite-de-la-uncion": {
+   "nombre": "Aceite de la santa unción",
+   "tipo": "sustancia sagrada",
+   "apariciones": [
+    {
+     "inicio": "Ex 30:22",
+     "fin": "Ex 30:33"
+    },
+    {
+     "inicio": "Ex 37:29",
+     "fin": "Ex 37:29"
+    },
+    {
+     "inicio": "Ex 40:9",
+     "fin": "Ex 40:15"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Aceite de mirra, canela, cálamo, casia y oliva con el que se consagraron el tabernáculo, sus utensilios y los sacerdotes.",
+   "datos": [
+    {
+     "texto": "Se hizo de especias y aceite de oliva por «obra de perfumador»",
+     "certeza": "texto",
+     "ref": "Ex 30:25",
+     "cita": "el aceite de la santa unción"
+    },
+    {
+     "texto": "No se podía untar en carne de hombre ni imitar",
+     "certeza": "texto",
+     "ref": "Ex 30:32",
+     "cita": "Sobre carne de hombre no será untado"
+    },
+    {
+     "texto": "Ungiría el tabernáculo y su mobiliario",
+     "certeza": "texto",
+     "ref": "Ex 30:26",
+     "cita": "Con él ungirás el tabernáculo del testimonio"
+    }
+   ],
+   "externo": []
+  },
+  "vestiduras-sagradas": {
+   "nombre": "Vestiduras sagradas del sumo sacerdote",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Ex 28:2",
+     "fin": "Ex 28:5"
+    },
+    {
+     "inicio": "Ex 28:31",
+     "fin": "Ex 28:43"
+    },
+    {
+     "inicio": "Ex 29:5",
+     "fin": "Ex 29:9"
+    },
+    {
+     "inicio": "Ex 39:1",
+     "fin": "Ex 39:1"
+    },
+    {
+     "inicio": "Ex 39:27",
+     "fin": "Ex 39:31"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Racional, efod, manto, túnica labrada, mitra y cinturón «para honra y hermosura»; el manto lleva campanillas y granadas en el borde.",
+   "datos": [
+    {
+     "texto": "Se harían para Aarón «para honra y hermosura»",
+     "certeza": "texto",
+     "ref": "Ex 28:2",
+     "cita": "vestidos sagrados á Aarón tu hermano, para honra y hermosura"
+    },
+    {
+     "texto": "Las piezas son racional, efod, manto, túnica, mitra y cinturón",
+     "certeza": "texto",
+     "ref": "Ex 28:4",
+     "cita": "el racional, y el ephod, y el manto, y la túnica labrada, la mitra, y el cinturón"
+    },
+    {
+     "texto": "Dos piedras de ónice en los hombros llevan los nombres de las tribus",
+     "certeza": "texto",
+     "ref": "Ex 28:12",
+     "cita": "para piedras de memoria á los hijos de Israel"
+    },
+    {
+     "texto": "Las campanillas del manto se oirían al entrar y salir del santuario",
+     "certeza": "texto",
+     "ref": "Ex 28:35",
+     "cita": "oiráse su sonido cuando él entrare en el santuario"
+    }
+   ],
+   "externo": []
+  },
+  "racional-del-juicio": {
+   "nombre": "Racional del juicio",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Ex 28:15",
+     "fin": "Ex 28:30"
+    },
+    {
+     "inicio": "Ex 39:8",
+     "fin": "Ex 39:21"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Pectoral cuadrado con doce piedras en cuatro órdenes, una por tribu, que Aarón llevaría sobre el corazón.",
+   "datos": [
+    {
+     "texto": "Era cuadrado y doble, de un palmo por un palmo",
+     "certeza": "texto",
+     "ref": "Ex 28:16",
+     "cita": "de un palmo de largo y un palmo de ancho"
+    },
+    {
+     "texto": "Tenía cuatro órdenes de piedras",
+     "certeza": "texto",
+     "ref": "Ex 28:17",
+     "cita": "cuatro órdenes de piedras"
+    },
+    {
+     "texto": "Doce piedras, según los nombres de los hijos de Israel",
+     "certeza": "texto",
+     "ref": "Ex 28:21",
+     "cita": "doce según sus nombres"
+    },
+    {
+     "texto": "Aarón lo llevaría sobre su corazón",
+     "certeza": "texto",
+     "ref": "Ex 28:29",
+     "cita": "llevará Aarón los nombres de los hijos de Israel en el racional del juicio sobre su corazón"
+    }
+   ],
+   "externo": []
+  },
+  "urim-y-tumim": {
+   "nombre": "Urim y Tumim",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "Ex 28:30",
+     "fin": "Ex 28:30"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Objetos que se pondrían dentro del racional del juicio, sobre el corazón de Aarón. El texto no explica su forma ni su uso aquí.",
+   "datos": [
+    {
+     "texto": "Se pondrían en el racional del juicio",
+     "certeza": "texto",
+     "ref": "Ex 28:30",
+     "cita": "Y pondrás en el racional del juicio Urim y Thummim"
+    },
+    {
+     "texto": "Estarían sobre el corazón de Aarón cuando entrara ante Jehová",
+     "certeza": "texto",
+     "ref": "Ex 28:30",
+     "cita": "para que estén sobre el corazón de Aarón cuando entrare delante de Jehová"
+    },
+    {
+     "texto": "Ex 28 no describe qué eran ni cómo se consultaban",
+     "certeza": "inferido",
+     "ref": "Ex 28:30",
+     "cita": "Urim y Thummim"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Su naturaleza sigue sin aclarar; se asocian a consultas de respuesta sí/no. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Urim and Thummim",
+     "url": "https://en.wikipedia.org/wiki/Urim_and_Thummim"
+    }
+   ]
+  },
+  "placa-de-santidad": {
+   "nombre": "Plancha de oro «Santidad a Jehová»",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "Ex 28:36",
+     "fin": "Ex 28:38"
+    },
+    {
+     "inicio": "Ex 39:30",
+     "fin": "Ex 39:31"
+    }
+   ],
+   "personas": [
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "tabernaculo": null,
+   "resumen": "Plancha de oro fino con la inscripción «SANTIDAD Á JEHOVÁ», sobre la mitra, en la frente de Aarón.",
+   "datos": [
+    {
+     "texto": "Llevaba grabada la inscripción en grabadura de sello",
+     "certeza": "texto",
+     "ref": "Ex 28:36",
+     "cita": "SANTIDAD Á JEHOVÁ"
+    },
+    {
+     "texto": "Estaría en la frente de Aarón continuamente",
+     "certeza": "texto",
+     "ref": "Ex 28:38",
+     "cita": "sobre su frente estará continuamente"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "palacio-de-faraon": {
+   "nombre": "Corte de Faraón",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 1:8",
+     "fin": "Ex 1:22"
+    },
+    {
+     "inicio": "Ex 5:1",
+     "fin": "Ex 5:19"
+    },
+    {
+     "inicio": "Ex 7:10",
+     "fin": "Ex 7:13"
+    },
+    {
+     "inicio": "Ex 8:8",
+     "fin": "Ex 8:15"
+    },
+    {
+     "inicio": "Ex 8:25",
+     "fin": "Ex 8:32"
+    },
+    {
+     "inicio": "Ex 10:3",
+     "fin": "Ex 10:11"
+    },
+    {
+     "inicio": "Ex 10:24",
+     "fin": "Ex 10:29"
+    },
+    {
+     "inicio": "Ex 12:29",
+     "fin": "Ex 12:32"
+    }
+   ],
+   "personas": [
+    "Pharaoh_3",
+    "Pharaoh_4",
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "vara-de-aaron",
+    "ladrillo-y-paja"
+   ],
+   "resumen": "Donde Faraón decreta la opresión, recibe a Moisés y Aarón y, en la noche de Pascua, los llama para dejar ir al pueblo. El texto no describe el edificio.",
+   "datos": [
+    {
+     "texto": "Faraón se volvió a su casa tras la primera plaga",
+     "certeza": "texto",
+     "ref": "Ex 7:23",
+     "cita": "Y tornando Faraón volvióse á su casa"
+    },
+    {
+     "texto": "El texto no dice dónde tenían lugar las audiencias; la «corte» es una deducción",
+     "certeza": "inferido",
+     "ref": "Ex 5:1",
+     "cita": "entraron Moisés y Aarón á Faraón"
+    }
+   ],
+   "externo": []
+  },
+  "rio-nilo": {
+   "nombre": "El río (Nilo)",
+   "lugar": null,
+   "apariciones": [
+    {
+     "inicio": "Ex 1:22",
+     "fin": "Ex 1:22"
+    },
+    {
+     "inicio": "Ex 2:3",
+     "fin": "Ex 2:10"
+    },
+    {
+     "inicio": "Ex 7:15",
+     "fin": "Ex 7:25"
+    }
+   ],
+   "personas": [
+    "Hija_de_Faraon",
+    "Jochebed_1",
+    "Miriam_1",
+    "Moses_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "cesta-de-juncos",
+    "vara-de-moises"
+   ],
+   "resumen": "El río donde se mandó echar a los niños, donde Moisés fue hallado y cuyas aguas se volvieron sangre.",
+   "datos": [
+    {
+     "texto": "Se ordenó echar al río a los niños varones",
+     "certeza": "texto",
+     "ref": "Ex 1:22",
+     "cita": "Echad en el río todo hijo que naciere"
+    },
+    {
+     "texto": "La arquilla estaba en un carrizal a la orilla",
+     "certeza": "texto",
+     "ref": "Ex 2:3",
+     "cita": "en un carrizal á la orilla del río"
+    },
+    {
+     "texto": "Faraón salía a las aguas por la mañana",
+     "certeza": "texto",
+     "ref": "Ex 7:15",
+     "cita": "él sale á las aguas"
+    },
+    {
+     "texto": "El texto dice «el río»; que sea el Nilo se deduce de ser el río de Egipto",
+     "certeza": "inferido",
+     "ref": "Ex 7:20",
+     "cita": "hirió las aguas que había en el río"
+    }
+   ],
+   "externo": []
+  },
+  "ciudades-de-bastimentos": {
+   "nombre": "Pitón y Ramesés, ciudades de bastimentos",
+   "lugar": "rameses",
+   "apariciones": [
+    {
+     "inicio": "Ex 1:11",
+     "fin": "Ex 1:14"
+    },
+    {
+     "inicio": "Ex 5:6",
+     "fin": "Ex 5:19"
+    }
+   ],
+   "personas": [
+    "Pharaoh_3",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "ladrillo-y-paja"
+   ],
+   "resumen": "Ciudades de depósito que los hebreos edificaron a Faraón con trabajo forzado.",
+   "datos": [
+    {
+     "texto": "Edificaron las ciudades Pitón y Ramesés",
+     "certeza": "texto",
+     "ref": "Ex 1:11",
+     "cita": "edificaron á Faraón las ciudades de los bastimentos, Phithom y Raamses"
+    },
+    {
+     "texto": "Se les puso comisarios de tributos",
+     "certeza": "texto",
+     "ref": "Ex 1:11",
+     "cita": "comisarios de tributos"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Muchos arqueólogos identifican la Ramesés bíblica con Pi-Ramsés (Qantir, siglo XIII a. C.), pero la identificación se discute. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Pi-Ramesses",
+     "url": "https://en.wikipedia.org/wiki/Pi-Ramesses"
+    }
+   ]
+  },
+  "madian-pozo": {
+   "nombre": "Madián y el pozo",
+   "lugar": "madian",
+   "apariciones": [
+    {
+     "inicio": "Ex 2:15",
+     "fin": "Ex 2:22"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Reuel_2",
+    "Zipporah_1",
+    "Gershom_1"
+   ],
+   "objetos": [],
+   "resumen": "Tierra a la que huyó Moisés; junto a un pozo defendió a las siete hijas del sacerdote.",
+   "datos": [
+    {
+     "texto": "Moisés se sentó junto a un pozo",
+     "certeza": "texto",
+     "ref": "Ex 2:15",
+     "cita": "sentóse junto á un pozo"
+    },
+    {
+     "texto": "Defendió a las hijas del sacerdote contra los pastores",
+     "certeza": "texto",
+     "ref": "Ex 2:17",
+     "cita": "Moisés se levantó y defendiólas"
+    },
+    {
+     "texto": "Se quedó a vivir allí y se casó",
+     "certeza": "texto",
+     "ref": "Ex 2:21",
+     "cita": "Moisés acordó en morar con aquel varón"
+    }
+   ],
+   "externo": []
+  },
+  "horeb-zarza": {
+   "nombre": "Horeb y la zarza",
+   "lugar": "horeb",
+   "apariciones": [
+    {
+     "inicio": "Ex 3:1",
+     "fin": "Ex 4:17"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "zarza-ardiente",
+    "vara-de-moises"
+   ],
+   "resumen": "Monte de Dios donde Moisés ve la zarza, oye el nombre de Dios y recibe su misión y sus señales.",
+   "datos": [
+    {
+     "texto": "Moisés llegó a Horeb, «monte de Dios»",
+     "certeza": "texto",
+     "ref": "Ex 3:1",
+     "cita": "vino á Horeb, monte de Dios"
+    },
+    {
+     "texto": "Dios dijo «YO SOY EL QUE SOY»",
+     "certeza": "texto",
+     "ref": "Ex 3:14",
+     "cita": "YO SOY EL QUE SOY"
+    },
+    {
+     "texto": "Señal: servirían a Dios en ese monte",
+     "certeza": "texto",
+     "ref": "Ex 3:12",
+     "cita": "serviréis á Dios sobre este monte"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Una tradición cristiana sitúa la zarza en el monasterio de Santa Catalina, al pie del Jebel Musa; es tradición, no identificación demostrada. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Saint Catherine's Monastery",
+     "url": "https://en.wikipedia.org/wiki/Saint_Catherine%27s_Monastery"
+    }
+   ]
+  },
+  "gosen": {
+   "nombre": "Tierra de Gosén",
+   "lugar": "gosen",
+   "apariciones": [
+    {
+     "inicio": "Ex 8:22",
+     "fin": "Ex 8:22"
+    },
+    {
+     "inicio": "Ex 9:26",
+     "fin": "Ex 9:26"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "Región donde vivían los israelitas y que las plagas de las moscas y el granizo no alcanzaron.",
+   "datos": [
+    {
+     "texto": "Dios la apartó de las moscas",
+     "certeza": "texto",
+     "ref": "Ex 8:22",
+     "cita": "yo apartaré la tierra de Gosén, en la cual mi pueblo habita"
+    },
+    {
+     "texto": "No hubo granizo en Gosén",
+     "certeza": "texto",
+     "ref": "Ex 9:26",
+     "cita": "Solamente en la tierra de Gosén, donde los hijos de Israel estaban, no hubo granizo"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-1-sangre": {
+   "nombre": "Primera plaga: el agua en sangre",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 7:14",
+     "fin": "Ex 7:25"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "vara-de-moises"
+   ],
+   "resumen": "Las aguas de Egipto se vuelven sangre y mueren los peces.",
+   "datos": [
+    {
+     "texto": "Todas las aguas del río se volvieron sangre",
+     "certeza": "texto",
+     "ref": "Ex 7:20",
+     "cita": "todas las aguas que había en el río se convirtieron en sangre"
+    },
+    {
+     "texto": "Murieron los peces",
+     "certeza": "texto",
+     "ref": "Ex 7:21",
+     "cita": "los peces que había en el río murieron"
+    },
+    {
+     "texto": "Los encantadores hicieron lo mismo",
+     "certeza": "texto",
+     "ref": "Ex 7:22",
+     "cita": "Y los encantadores de Egipto hicieron lo mismo"
+    },
+    {
+     "texto": "Cavaron pozos junto al río para beber",
+     "certeza": "texto",
+     "ref": "Ex 7:24",
+     "cita": "hicieron pozos alrededor del río para beber"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-2-ranas": {
+   "nombre": "Segunda plaga: las ranas",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 8:1",
+     "fin": "Ex 8:15"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "vara-de-aaron"
+   ],
+   "resumen": "Las ranas cubren Egipto; Faraón pide a Moisés orar y luego endurece el corazón.",
+   "datos": [
+    {
+     "texto": "Subieron ranas que cubrieron la tierra",
+     "certeza": "texto",
+     "ref": "Ex 8:6",
+     "cita": "subieron ranas que cubrieron la tierra de Egipto"
+    },
+    {
+     "texto": "Los encantadores hicieron venir ranas",
+     "certeza": "texto",
+     "ref": "Ex 8:7",
+     "cita": "é hicieron venir ranas sobre la tierra de Egipto"
+    },
+    {
+     "texto": "Murieron las ranas y las juntaron en montones",
+     "certeza": "texto",
+     "ref": "Ex 8:14",
+     "cita": "Y las juntaron en montones, y apestaban la tierra"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-3-piojos": {
+   "nombre": "Tercera plaga: los piojos",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 8:16",
+     "fin": "Ex 8:19"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "vara-de-aaron"
+   ],
+   "resumen": "El polvo se vuelve piojos; los magos no pueden imitarlo.",
+   "datos": [
+    {
+     "texto": "Todo el polvo se volvió piojos",
+     "certeza": "texto",
+     "ref": "Ex 8:17",
+     "cita": "todo el polvo de la tierra se volvió piojos"
+    },
+    {
+     "texto": "Los encantadores no pudieron",
+     "certeza": "texto",
+     "ref": "Ex 8:18",
+     "cita": "mas no pudieron"
+    },
+    {
+     "texto": "Los magos dijeron «Dedo de Dios es este»",
+     "certeza": "texto",
+     "ref": "Ex 8:19",
+     "cita": "Dedo de Dios es este"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-4-moscas": {
+   "nombre": "Cuarta plaga: las moscas",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 8:20",
+     "fin": "Ex 8:32"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [],
+   "resumen": "Moscas llenan casas egipcias; Gosén queda apartada.",
+   "datos": [
+    {
+     "texto": "Dios apartó Gosén",
+     "certeza": "texto",
+     "ref": "Ex 8:22",
+     "cita": "yo apartaré la tierra de Gosén"
+    },
+    {
+     "texto": "Vinieron moscas molestísimas",
+     "certeza": "texto",
+     "ref": "Ex 8:24",
+     "cita": "toda suerte de moscas molestísimas"
+    },
+    {
+     "texto": "Faraón ofreció dejarlos sacrificar en la tierra",
+     "certeza": "texto",
+     "ref": "Ex 8:25",
+     "cita": "Andad, sacrificad á vuestro Dios en la tierra"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-5-ganado": {
+   "nombre": "Quinta plaga: la mortandad del ganado",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 9:1",
+     "fin": "Ex 9:7"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [],
+   "resumen": "Muere el ganado de Egipto; del de Israel no muere ninguno.",
+   "datos": [
+    {
+     "texto": "Murió todo el ganado de Egipto",
+     "certeza": "texto",
+     "ref": "Ex 9:6",
+     "cita": "murió todo el ganado de Egipto"
+    },
+    {
+     "texto": "Del ganado de Israel no murió uno",
+     "certeza": "texto",
+     "ref": "Ex 9:6",
+     "cita": "del ganado de los hijos de Israel no murió uno"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-6-tumores": {
+   "nombre": "Sexta plaga: sarpullido y tumores",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 9:8",
+     "fin": "Ex 9:12"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [],
+   "resumen": "Ceniza de horno esparcida al cielo provoca tumores en personas y bestias.",
+   "datos": [
+    {
+     "texto": "Moisés esparció la ceniza hacia el cielo",
+     "certeza": "texto",
+     "ref": "Ex 9:10",
+     "cita": "esparcióla Moisés hacia el cielo"
+    },
+    {
+     "texto": "Los magos no podían estar delante de Moisés",
+     "certeza": "texto",
+     "ref": "Ex 9:11",
+     "cita": "Y los magos no podían estar delante de Moisés á causa de los tumores"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-7-granizo": {
+   "nombre": "Séptima plaga: el granizo",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 9:13",
+     "fin": "Ex 9:35"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "vara-de-moises"
+   ],
+   "resumen": "Granizo con fuego sobre Egipto, sin tocar Gosén.",
+   "datos": [
+    {
+     "texto": "Algunos siervos de Faraón recogieron ganado y criados",
+     "certeza": "texto",
+     "ref": "Ex 9:20",
+     "cita": "hizo huir sus criados y su ganado á casa"
+    },
+    {
+     "texto": "Truenos, granizo y fuego sobre la tierra",
+     "certeza": "texto",
+     "ref": "Ex 9:23",
+     "cita": "Jehová hizo tronar y granizar, y el fuego discurría por la tierra"
+    },
+    {
+     "texto": "En Gosén no hubo granizo",
+     "certeza": "texto",
+     "ref": "Ex 9:26",
+     "cita": "no hubo granizo"
+    },
+    {
+     "texto": "Fueron heridos el lino y la cebada, no el trigo ni el centeno",
+     "certeza": "texto",
+     "ref": "Ex 9:31",
+     "cita": "El lino, pues, y la cebada fueron heridos"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-8-langosta": {
+   "nombre": "Octava plaga: la langosta",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 10:1",
+     "fin": "Ex 10:20"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "vara-de-moises"
+   ],
+   "resumen": "Un viento oriental trae langosta que consume lo que dejó el granizo.",
+   "datos": [
+    {
+     "texto": "El viento oriental trajo la langosta",
+     "certeza": "texto",
+     "ref": "Ex 10:13",
+     "cita": "el viento oriental trajo la langosta"
+    },
+    {
+     "texto": "No quedó cosa verde",
+     "certeza": "texto",
+     "ref": "Ex 10:15",
+     "cita": "no quedó cosa verde en árboles ni en hierba del campo"
+    },
+    {
+     "texto": "Un viento occidental la arrojó al mar Bermejo",
+     "certeza": "texto",
+     "ref": "Ex 10:19",
+     "cita": "arrojóla en el mar Bermejo"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-9-tinieblas": {
+   "nombre": "Novena plaga: las tinieblas",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 10:21",
+     "fin": "Ex 10:29"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [],
+   "resumen": "Tres días de tinieblas densas en Egipto; los israelitas tenían luz.",
+   "datos": [
+    {
+     "texto": "Hubo densas tinieblas tres días",
+     "certeza": "texto",
+     "ref": "Ex 10:22",
+     "cita": "hubo densas tinieblas tres días por toda la tierra de Egipto"
+    },
+    {
+     "texto": "Israel tenía luz en sus habitaciones",
+     "certeza": "texto",
+     "ref": "Ex 10:23",
+     "cita": "todos los hijos de Israel tenían luz en sus habitaciones"
+    }
+   ],
+   "externo": []
+  },
+  "plaga-10-primogenitos": {
+   "nombre": "Décima plaga: los primogénitos",
+   "lugar": "egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 11:1",
+     "fin": "Ex 11:10"
+    },
+    {
+     "inicio": "Ex 12:29",
+     "fin": "Ex 12:36"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Pharaoh_4"
+   ],
+   "objetos": [
+    "sangre-en-los-dinteles",
+    "cordero-de-la-pascua"
+   ],
+   "resumen": "Muere todo primogénito de Egipto en la noche de Pascua; Faraón deja ir al pueblo.",
+   "datos": [
+    {
+     "texto": "Moriría todo primogénito, desde el de Faraón hasta el de la sierva",
+     "certeza": "texto",
+     "ref": "Ex 11:5",
+     "cita": "morirá todo primogénito en tierra de Egipto"
+    },
+    {
+     "texto": "Entre los israelitas ni un perro movería su lengua",
+     "certeza": "texto",
+     "ref": "Ex 11:7",
+     "cita": "ni un perro moverá su lengua"
+    },
+    {
+     "texto": "A medianoche Jehová hirió a todo primogénito",
+     "certeza": "texto",
+     "ref": "Ex 12:29",
+     "cita": "á la medianoche Jehová hirió á todo primogénito"
+    },
+    {
+     "texto": "No había casa sin muerto",
+     "certeza": "texto",
+     "ref": "Ex 12:30",
+     "cita": "no había casa donde no hubiese muerto"
+    }
+   ],
+   "externo": []
+  },
+  "ruta-de-salida": {
+   "nombre": "De Ramesés a Sucot y Etam",
+   "lugar": "sucot-egipto",
+   "apariciones": [
+    {
+     "inicio": "Ex 12:37",
+     "fin": "Ex 12:42"
+    },
+    {
+     "inicio": "Ex 13:17",
+     "fin": "Ex 13:22"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "huesos-de-jose",
+    "columna-de-nube-y-fuego",
+    "panes-sin-levadura"
+   ],
+   "resumen": "Primera etapa de la salida: Ramesés, Sucot, Etam, con rodeo para evitar el camino de los filisteos.",
+   "datos": [
+    {
+     "texto": "Partieron de Ramesés a Sucot, unos seiscientos mil hombres a pie",
+     "certeza": "texto",
+     "ref": "Ex 12:37",
+     "cita": "partieron los hijos de Israel de Rameses á Succoth, como seiscientos mil hombres de á pie"
+    },
+    {
+     "texto": "Estuvieron en Egipto cuatrocientos treinta años",
+     "certeza": "texto",
+     "ref": "Ex 12:40",
+     "cita": "fué cuatrocientos treinta años"
+    },
+    {
+     "texto": "Dios no los llevó por el camino de los filisteos",
+     "certeza": "texto",
+     "ref": "Ex 13:17",
+     "cita": "Dios no los llevó por el camino de la tierra de los Filisteos"
+    },
+    {
+     "texto": "Acamparon en Etam, a la entrada del desierto",
+     "certeza": "texto",
+     "ref": "Ex 13:20",
+     "cita": "asentaron campo en Etham, á la entrada del desierto"
+    }
+   ],
+   "externo": []
+  },
+  "mar-rojo-travesia": {
+   "nombre": "El mar Rojo: Pihahirot y la travesía",
+   "lugar": "mar-rojo",
+   "apariciones": [
+    {
+     "inicio": "Ex 14:1",
+     "fin": "Ex 14:31"
+    },
+    {
+     "inicio": "Ex 15:1",
+     "fin": "Ex 15:21"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Pharaoh_4",
+    "Miriam_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "vara-de-moises",
+    "columna-de-nube-y-fuego",
+    "carros-de-faraon",
+    "pandero-de-miriam"
+   ],
+   "resumen": "Campamento junto al mar, entre Migdol y Baal-zefón; las aguas se dividen, Israel pasa en seco y el ejército egipcio se hunde.",
+   "datos": [
+    {
+     "texto": "Acamparon delante de Pihahirot, entre Migdol y el mar",
+     "certeza": "texto",
+     "ref": "Ex 14:2",
+     "cita": "asienten su campo delante de Pihahiroth, entre Migdol y la mar hacia Baalzephón"
+    },
+    {
+     "texto": "Un viento oriental retiró el mar toda la noche",
+     "certeza": "texto",
+     "ref": "Ex 14:21",
+     "cita": "hizo Jehová que la mar se retirase por recio viento oriental toda aquella noche"
+    },
+    {
+     "texto": "Las aguas eran como muro a derecha e izquierda",
+     "certeza": "texto",
+     "ref": "Ex 14:22",
+     "cita": "teniendo las aguas como muro á su diestra y á su siniestra"
+    },
+    {
+     "texto": "No quedó ni uno del ejército egipcio",
+     "certeza": "texto",
+     "ref": "Ex 14:28",
+     "cita": "no quedó de ellos ni uno"
+    },
+    {
+     "texto": "El cántico menciona el «mar Bermejo»",
+     "certeza": "texto",
+     "ref": "Ex 15:4",
+     "cita": "fueron hundidos en el mar Bermejo"
+    }
+   ],
+   "externo": []
+  },
+  "mara": {
+   "nombre": "Mara",
+   "lugar": "mara",
+   "apariciones": [
+    {
+     "inicio": "Ex 15:22",
+     "fin": "Ex 15:26"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "arbol-de-mara"
+   ],
+   "resumen": "Aguas amargas tras tres días sin agua; Moisés las endulzó con un árbol.",
+   "datos": [
+    {
+     "texto": "Anduvieron tres días sin hallar agua",
+     "certeza": "texto",
+     "ref": "Ex 15:22",
+     "cita": "anduvieron tres días por el desierto sin hallar agua"
+    },
+    {
+     "texto": "Las aguas eran amargas y por eso se llamó Mara",
+     "certeza": "texto",
+     "ref": "Ex 15:23",
+     "cita": "por eso le pusieron el nombre de Mara"
+    },
+    {
+     "texto": "Allí Dios les dio estatutos y los probó",
+     "certeza": "texto",
+     "ref": "Ex 15:25",
+     "cita": "Allí les dió estatutos y ordenanzas, y allí los probó"
+    }
+   ],
+   "externo": []
+  },
+  "elim": {
+   "nombre": "Elim",
+   "lugar": "elim",
+   "apariciones": [
+    {
+     "inicio": "Ex 15:27",
+     "fin": "Ex 15:27"
+    },
+    {
+     "inicio": "Ex 16:1",
+     "fin": "Ex 16:1"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "Oasis con doce fuentes y setenta palmas.",
+   "datos": [
+    {
+     "texto": "Había doce fuentes de agua y setenta palmas",
+     "certeza": "texto",
+     "ref": "Ex 15:27",
+     "cita": "doce fuentes de aguas, y setenta palmas"
+    }
+   ],
+   "externo": []
+  },
+  "desierto-de-sin": {
+   "nombre": "Desierto de Sin",
+   "lugar": "desierto-de-sin",
+   "apariciones": [
+    {
+     "inicio": "Ex 16:1",
+     "fin": "Ex 16:36"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "objetos": [
+    "mana",
+    "vaso-de-mana"
+   ],
+   "resumen": "Entre Elim y Sinaí; allí murmura el pueblo y Dios da codornices y maná.",
+   "datos": [
+    {
+     "texto": "Llegaron el día quince del segundo mes tras salir de Egipto",
+     "certeza": "texto",
+     "ref": "Ex 16:1",
+     "cita": "á los quince días del segundo mes después que salieron de la tierra de Egipto"
+    },
+    {
+     "texto": "Por la tarde subieron codornices que cubrieron el real",
+     "certeza": "texto",
+     "ref": "Ex 16:13",
+     "cita": "subieron codornices que cubrieron el real"
+    }
+   ],
+   "externo": []
+  },
+  "refidim-agua-de-la-roca": {
+   "nombre": "Refidim: agua de la roca (Massah y Meribah)",
+   "lugar": "refidim",
+   "apariciones": [
+    {
+     "inicio": "Ex 17:1",
+     "fin": "Ex 17:7"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "roca-de-horeb",
+    "vara-de-moises"
+   ],
+   "resumen": "Sin agua, el pueblo riñe con Moisés; Dios manda herir la peña.",
+   "datos": [
+    {
+     "texto": "No había agua para que el pueblo bebiese",
+     "certeza": "texto",
+     "ref": "Ex 17:1",
+     "cita": "no había agua para que el pueblo bebiese"
+    },
+    {
+     "texto": "Moisés temió ser apedreado",
+     "certeza": "texto",
+     "ref": "Ex 17:4",
+     "cita": "de aquí á un poco me apedrearán"
+    },
+    {
+     "texto": "El lugar se llamó Massah y Meribah",
+     "certeza": "texto",
+     "ref": "Ex 17:7",
+     "cita": "Massah y Meribah"
+    }
+   ],
+   "externo": []
+  },
+  "refidim-batalla-de-amalec": {
+   "nombre": "Refidim: la batalla contra Amalec",
+   "lugar": "refidim",
+   "apariciones": [
+    {
+     "inicio": "Ex 17:8",
+     "fin": "Ex 17:16"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Hur_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "vara-de-moises"
+   ],
+   "resumen": "Josué pelea en el valle mientras Moisés, con Aarón y Hur, mantiene la mano alzada en el collado.",
+   "datos": [
+    {
+     "texto": "Amalec vino y peleó con Israel en Refidim",
+     "certeza": "texto",
+     "ref": "Ex 17:8",
+     "cita": "Y vino Amalec, y peleó con Israel en Rephidim"
+    },
+    {
+     "texto": "Con la mano alzada prevalecía Israel",
+     "certeza": "texto",
+     "ref": "Ex 17:11",
+     "cita": "cuando alzaba Moisés su mano, Israel prevalecía"
+    },
+    {
+     "texto": "Pusieron una piedra bajo Moisés y le sostuvieron las manos",
+     "certeza": "texto",
+     "ref": "Ex 17:12",
+     "cita": "tomaron una piedra, y pusiéronla debajo de él"
+    },
+    {
+     "texto": "Moisés edificó un altar «Jehová-nissi»",
+     "certeza": "texto",
+     "ref": "Ex 17:15",
+     "cita": "llamó su nombre Jehová-nissi"
+    }
+   ],
+   "externo": []
+  },
+  "campamento-de-jetro": {
+   "nombre": "El campamento junto al monte de Dios (Jetro)",
+   "lugar": null,
+   "apariciones": [
+    {
+     "inicio": "Ex 18:1",
+     "fin": "Ex 18:27"
+    }
+   ],
+   "personas": [
+    "Reuel_2",
+    "Moses_1",
+    "Zipporah_1",
+    "Gershom_1",
+    "Eliezer_2",
+    "Aaron_1"
+   ],
+   "objetos": [],
+   "resumen": "Donde Jetro llega con la familia de Moisés y le aconseja repartir los juicios.",
+   "datos": [
+    {
+     "texto": "Moisés estaba acampado junto al monte de Dios",
+     "certeza": "texto",
+     "ref": "Ex 18:5",
+     "cita": "donde tenía el campo junto al monte de Dios"
+    },
+    {
+     "texto": "Se nombraron jefes de mil, cien, cincuenta y diez",
+     "certeza": "texto",
+     "ref": "Ex 18:25",
+     "cita": "caporales sobre mil, sobre ciento, sobre cincuenta, y sobre diez"
+    }
+   ],
+   "externo": []
+  },
+  "monte-sinai": {
+   "nombre": "Monte Sinaí",
+   "lugar": "sinai",
+   "apariciones": [
+    {
+     "inicio": "Ex 19:1",
+     "fin": "Ex 20:26"
+    },
+    {
+     "inicio": "Ex 24:1",
+     "fin": "Ex 24:18"
+    },
+    {
+     "inicio": "Ex 31:18",
+     "fin": "Ex 31:18"
+    },
+    {
+     "inicio": "Ex 34:1",
+     "fin": "Ex 34:5"
+    },
+    {
+     "inicio": "Ex 34:29",
+     "fin": "Ex 34:32"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Nadab_1",
+    "Abihu_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "tablas-de-la-ley",
+    "libro-de-la-alianza",
+    "altar-de-la-alianza",
+    "velo-de-moises"
+   ],
+   "resumen": "Monte donde Dios desciende en fuego y humo, da las diez palabras y las tablas y renueva la alianza.",
+   "datos": [
+    {
+     "texto": "El monte humeaba porque Jehová descendió en fuego",
+     "certeza": "texto",
+     "ref": "Ex 19:18",
+     "cita": "todo el monte de Sinaí humeaba, porque Jehová había descendido sobre él en fuego"
+    },
+    {
+     "texto": "Dios se presenta como quien los sacó de Egipto",
+     "certeza": "texto",
+     "ref": "Ex 20:2",
+     "cita": "Yo soy JEHOVÁ tu Dios, que te saqué de la tierra de Egipto"
+    },
+    {
+     "texto": "Vieron un «embaldosado de zafiro»",
+     "certeza": "texto",
+     "ref": "Ex 24:10",
+     "cita": "como un embaldosado de zafiro"
+    },
+    {
+     "texto": "Moisés estuvo cuarenta días en el monte",
+     "certeza": "texto",
+     "ref": "Ex 24:18",
+     "cita": "cuarenta días y cuarenta noches"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "La tradición identifica el Sinaí con el Jebel Musa; no hay consenso sobre su ubicación. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Saint Catherine's Monastery",
+     "url": "https://en.wikipedia.org/wiki/Saint_Catherine%27s_Monastery"
+    }
+   ]
+  },
+  "campamento-de-israel-en-sinai": {
+   "nombre": "El campamento de Israel en el desierto de Sinaí",
+   "lugar": "desierto-de-sinai",
+   "apariciones": [
+    {
+     "inicio": "Ex 19:1",
+     "fin": "Ex 19:2"
+    },
+    {
+     "inicio": "Ex 19:10",
+     "fin": "Ex 19:17"
+    },
+    {
+     "inicio": "Ex 32:1",
+     "fin": "Ex 32:6"
+    },
+    {
+     "inicio": "Ex 32:17",
+     "fin": "Ex 32:28"
+    },
+    {
+     "inicio": "Ex 33:4",
+     "fin": "Ex 33:8"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "becerro-de-oro"
+   ],
+   "resumen": "Llanura al pie del monte donde acampó Israel; allí se levantó el becerro.",
+   "datos": [
+    {
+     "texto": "Israel acampó delante del monte",
+     "certeza": "texto",
+     "ref": "Ex 19:2",
+     "cita": "acampó allí Israel delante del monte"
+    },
+    {
+     "texto": "Moisés se puso a la puerta del real y llamó a los de Jehová",
+     "certeza": "texto",
+     "ref": "Ex 32:26",
+     "cita": "Púsose Moisés á la puerta del real"
+    },
+    {
+     "texto": "Cayeron unos tres mil hombres",
+     "certeza": "texto",
+     "ref": "Ex 32:28",
+     "cita": "como tres mil hombres"
+    }
+   ],
+   "externo": []
+  },
+  "tienda-de-reunion": {
+   "nombre": "La tienda del testimonio fuera del campo",
+   "lugar": null,
+   "apariciones": [
+    {
+     "inicio": "Ex 33:7",
+     "fin": "Ex 33:11"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "columna-de-nube-y-fuego"
+   ],
+   "resumen": "Tienda que Moisés extendió lejos del campo antes de construirse el tabernáculo; allí Dios hablaba con él.",
+   "datos": [
+    {
+     "texto": "La puso fuera del campo",
+     "certeza": "texto",
+     "ref": "Ex 33:7",
+     "cita": "extendiólo fuera del campo, lejos del campo"
+    },
+    {
+     "texto": "La columna de nube descendía a su puerta",
+     "certeza": "texto",
+     "ref": "Ex 33:9",
+     "cita": "la columna de nube descendía, y poníase á la puerta del tabernáculo"
+    },
+    {
+     "texto": "Dios hablaba cara a cara",
+     "certeza": "texto",
+     "ref": "Ex 33:11",
+     "cita": "cara á cara, como habla cualquiera á su compañero"
+    }
+   ],
+   "externo": []
+  },
+  "tabernaculo": {
+   "nombre": "El tabernáculo",
+   "lugar": null,
+   "apariciones": [
+    {
+     "inicio": "Ex 25:8",
+     "fin": "Ex 31:11"
+    },
+    {
+     "inicio": "Ex 35:1",
+     "fin": "Ex 40:38"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1",
+    "Bezalel_1",
+    "Oholiab_1",
+    "Ithamar_1"
+   ],
+   "objetos": [
+    "arca-del-testimonio",
+    "propiciatorio",
+    "mesa-de-los-panes",
+    "candelabro",
+    "altar-del-incienso",
+    "altar-del-holocausto",
+    "fuente-de-bronce",
+    "velo-del-santuario",
+    "cortinas-del-tabernaculo",
+    "vestiduras-sagradas",
+    "aceite-de-la-uncion"
+   ],
+   "resumen": "Santuario portátil: Dios lo manda construir según el modelo del monte; se erige el primer día del primer mes del segundo año y la gloria llena el tabernáculo.",
+   "datos": [
+    {
+     "texto": "Dios habitaría entre ellos",
+     "certeza": "texto",
+     "ref": "Ex 25:8",
+     "cita": "hacerme han un santuario, y yo habitaré entre ellos"
+    },
+    {
+     "texto": "Fue erigido el primer día del primer mes, segundo año",
+     "certeza": "texto",
+     "ref": "Ex 40:17",
+     "cita": "en el día primero del primer mes, en el segundo año, el tabernáculo fué erigido"
+    },
+    {
+     "texto": "La gloria de Jehová llenó el tabernáculo",
+     "certeza": "texto",
+     "ref": "Ex 40:34",
+     "cita": "la gloria de Jehová hinchió el tabernáculo"
+    },
+    {
+     "texto": "El oro de la ofrenda fue 29 talentos y 730 siclos",
+     "certeza": "texto",
+     "ref": "Ex 38:24",
+     "cita": "veintinueve talentos, y setecientos y treinta siclos"
+    }
+   ],
+   "externo": []
+  }
+ }
+}

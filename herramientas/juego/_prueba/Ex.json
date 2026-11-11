@@ -1,0 +1,35 @@
+{
+ "libro": "Ex",
+ "genealogias": [
+  {"id": "ex-cabezas", "inicio": "Ex 6:14", "fin": "Ex 6:25", "titulo": "Cabezas de familia", "cita": "Estas son las cabezas de las familias de sus padres"}
+ ],
+ "historias": [
+  {"id": "egipto", "titulo": "Moisés en Egipto", "inicio": "Ex 1:1", "fin": "Ex 15:21", "principales": ["Moses_1"]},
+  {"id": "desierto", "titulo": "Hacia el Sinaí", "inicio": "Ex 15:22", "fin": "Ex 18:27", "principales": ["Moses_1"]},
+  {"id": "sinai", "titulo": "El Sinaí", "inicio": "Ex 19:1", "fin": "Ex 40:38", "principales": ["Moses_1"]}
+ ],
+ "personajes": {
+  "Moses_1": {
+   "apariciones": [{"inicio": "Ex 2:2", "fin": "Ex 6:13"}, {"inicio": "Ex 6:26", "fin": "Ex 40:38"}],
+   "resumen": "Prueba.", "datos": [], "externo": []
+  },
+  "Abram_1": {
+   "apariciones": [],
+   "menciones_posteriores": ["Ex 3:6"],
+   "resumen": "",
+   "datos": [{"texto": "Dios se presenta como «Dios de Abraham»", "certeza": "texto", "ref": "Ex 3:6", "cita": "Dios de Abraham"}],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "vara-moises": {"nombre": "Vara de Moisés", "tipo": "herramienta", "apariciones": [{"inicio": "Ex 4:2", "fin": "Ex 4:4"}],
+   "personas": ["Moses_1"], "lugares": [], "resumen": "Prueba.",
+   "datos": [{"texto": "Moisés tiene una vara en la mano", "certeza": "texto", "ref": "Ex 4:2", "cita": "Una vara."}], "externo": []},
+  "arca-testimonio": {"nombre": "Arca del testimonio", "tipo": "mueble sagrado", "tabernaculo": "arca",
+   "apariciones": [{"inicio": "Ex 25:10", "fin": "Ex 25:22"}], "personas": [], "lugares": ["sinai"], "resumen": "Prueba.", "datos": [], "externo": []}
+ },
+ "escenarios": {
+  "monte-sinai": {"nombre": "Monte Sinaí", "lugar": "sinai", "apariciones": [{"inicio": "Ex 19:1", "fin": "Ex 19:25"}],
+   "personas": ["Moses_1"], "objetos": ["vara-moises"], "resumen": "Prueba.", "datos": [], "externo": []}
+ }
+}
