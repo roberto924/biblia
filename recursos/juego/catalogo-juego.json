@@ -1,0 +1,154 @@
+[
+  {
+    "id": "arco-iris-tissot",
+    "tipo": "arte",
+    "titulo": "El sacrificio después del diluvio",
+    "descripcion": "Dibujo de Tissot. El pie impreso dice «sacrificio del arco iris» y cita Génesis 8:20; el arco como señal está en Génesis 9:13-16. Interpretación artística.",
+    "refs": [
+      "Gn 8:20",
+      "Gn 9:13-16"
+    ],
+    "autor": "James Tissot",
+    "fecha_obra": "c. 1896-1902",
+    "institucion": "Wikimedia Commons; acuarelas en The Jewish Museum, Nueva York",
+    "url_fuente": "https://commons.wikimedia.org/wiki/File:Le_sacrifice_de_l%27arc-en-ciel_(Genesis_8_20)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst..jpg",
+    "url_archivo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Le_sacrifice_de_l%27arc-en-ciel_%28Genesis_8_20%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst..jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "archivo_local": "recursos/juego/imagenes/arco-iris-tissot.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "atribucion": "James Tissot (dibujo, c. 1896-1902). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.",
+    "uso": "descargable",
+    "certeza": "arte (interpretación)",
+    "nota_certeza": "Lámina de hacia 1896-1902: visualiza el relato, no es el objeto ni el suceso.",
+    "para": {
+      "clase": "objeto",
+      "nombre": "Arco iris"
+    },
+    "sensible": "no"
+  },
+  {
+    "id": "plaga-granizo-tissot",
+    "tipo": "arte",
+    "titulo": "La plaga del granizo",
+    "descripcion": "Dibujo de Tissot. El pie cita Éxodo 9:23. Interpretación artística de la plaga, no un registro meteorológico.",
+    "refs": [
+      "Ex 9:23-25"
+    ],
+    "autor": "James Tissot",
+    "fecha_obra": "c. 1896-1902",
+    "institucion": "Wikimedia Commons; acuarelas en The Jewish Museum, Nueva York",
+    "url_fuente": "https://commons.wikimedia.org/wiki/File:Le_Seigneur_fit_pleuvoir_la_gr%C3%AAle_(Exodus_9_23)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
+    "url_archivo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Le_Seigneur_fit_pleuvoir_la_gr%C3%AAle_%28Exodus_9_23%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "archivo_local": "recursos/juego/imagenes/plaga-granizo-tissot.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "atribucion": "James Tissot (dibujo, c. 1896-1902). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.",
+    "uso": "descargable",
+    "certeza": "arte (interpretación)",
+    "nota_certeza": "Lámina de hacia 1896-1902: visualiza el relato, no es el objeto ni el suceso.",
+    "para": {
+      "clase": "escenario",
+      "nombre": "Plaga del granizo"
+    },
+    "sensible": "medio"
+  },
+  {
+    "id": "plaga-langosta-tissot",
+    "tipo": "arte",
+    "titulo": "La plaga de la langosta",
+    "descripcion": "Dibujo de Tissot. El pie cita Éxodo 10:13. Interpretación artística.",
+    "refs": [
+      "Ex 10:13-15"
+    ],
+    "autor": "James Tissot",
+    "fecha_obra": "c. 1896-1902",
+    "institucion": "Wikimedia Commons; acuarelas en The Jewish Museum, Nueva York",
+    "url_fuente": "https://commons.wikimedia.org/wiki/File:Les_sauterelles_(Exodus_10_13)_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg",
+    "url_archivo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Les_sauterelles_%28Exodus_10_13%29_%E2%80%A2_invenit_James_Tissot_%E2%80%A2_pinxit_James_Tissot_%E2%80%A2_excudit_Maurice_de_Brunoff_apud_Philip_de_Vere_%E2%80%A2_praesentat_Phillip_Medhurst.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "archivo_local": "recursos/juego/imagenes/plaga-langosta-tissot.jpg",
+    "licencia": "CC BY-SA 4.0",
+    "atribucion": "James Tissot (dibujo, c. 1896-1902). Archivo de Phillip Medhurst, CC BY-SA 4.0, vía Wikimedia Commons.",
+    "uso": "descargable",
+    "certeza": "arte (interpretación)",
+    "nota_certeza": "Lámina de hacia 1896-1902: visualiza el relato, no es el objeto ni el suceso.",
+    "para": {
+      "clase": "escenario",
+      "nombre": "Plaga de la langosta"
+    },
+    "sensible": "no"
+  },
+  {
+    "id": "cesta-palma-met-28-3-24",
+    "tipo": "arqueologia",
+    "titulo": "Cesta egipcia de palma y hierba",
+    "descripcion": "Cesta del Reino Nuevo, de palma y hierba, hallada en Tebas. No es la cesta de juncos de Éxodo 2: el texto dice «gome» (papiro) y esta pieza es otro material y otro siglo.",
+    "refs": [
+      "Ex 2:3"
+    ],
+    "autor": null,
+    "fecha_obra": "ca. 1300–1080 BCE",
+    "institucion": "The Metropolitan Museum of Art",
+    "url_fuente": "https://www.metmuseum.org/art/collection/search/551915",
+    "url_archivo": "https://images.metmuseum.org/CRDImages/eg/web-large/28.3.24_EGDP016264.jpg",
+    "archivo_local": "recursos/juego/imagenes/cesta-palma-met-28-3-24.jpg",
+    "licencia": "CC0",
+    "atribucion": "The Metropolitan Museum of Art, Rogers Fund, 1928, 28.3.24. Open Access CC0.",
+    "uso": "descargable",
+    "certeza": "objeto histórico",
+    "nota_certeza": "Objeto comparable de cestería egipcia. No es la cesta del relato ni está hecha de papiro.",
+    "para": {
+      "clase": "objeto",
+      "nombre": "Cesta de juncos"
+    },
+    "sensible": "no"
+  },
+  {
+    "id": "carro-tebas-met-17-194-2297",
+    "tipo": "arqueologia",
+    "titulo": "Tablilla con escena de carro",
+    "descripcion": "Dibujo sobre fayenza del reinado de Tutmosis IV: un hombre conduce un carro tirado por dos caballos. Muestra un carro egipcio del Reino Nuevo, no los carros del faraón de Éxodo 14.",
+    "refs": [
+      "Ex 14:6-7",
+      "Gn 41:43"
+    ],
+    "autor": null,
+    "fecha_obra": "ca. 1396–1386 BCE",
+    "institucion": "The Metropolitan Museum of Art",
+    "url_fuente": "https://www.metmuseum.org/art/collection/search/548483",
+    "url_archivo": "https://images.metmuseum.org/CRDImages/eg/web-large/DT226544.jpg",
+    "archivo_local": "recursos/juego/imagenes/carro-tebas-met-17-194-2297.jpg",
+    "licencia": "CC0",
+    "atribucion": "The Metropolitan Museum of Art, Gift of J. Pierpont Morgan, 1917, 17.194.2297. Open Access CC0.",
+    "uso": "descargable",
+    "certeza": "objeto histórico",
+    "nota_certeza": "Objeto del Reino Nuevo que documenta el carro en Egipto. No identifica al faraón del relato.",
+    "para": {
+      "clase": "objeto",
+      "nombre": "Carros de Egipto"
+    },
+    "sensible": "no"
+  },
+  {
+    "id": "toro-apis-met-04-2-606",
+    "tipo": "arqueologia",
+    "titulo": "Figurilla de toro Apis",
+    "descripcion": "Figurilla de bronce del Período Tardío que representa al toro Apis de Menfis, con disco solar. Es un toro de culto egipcio muchos siglos posterior al relato. No es el becerro de Éxodo 32.",
+    "refs": [
+      "Ex 32:4"
+    ],
+    "autor": null,
+    "fecha_obra": "664–332 BCE",
+    "institucion": "The Metropolitan Museum of Art",
+    "url_fuente": "https://www.metmuseum.org/art/collection/search/552688",
+    "url_archivo": "https://images.metmuseum.org/CRDImages/eg/web-large/LC-04_2_606_EGDP036912.jpg",
+    "archivo_local": "recursos/juego/imagenes/toro-apis-met-04-2-606.jpg",
+    "licencia": "CC0",
+    "atribucion": "The Metropolitan Museum of Art, Gift of Darius Ogden Mills, 1904, 04.2.606. Open Access CC0.",
+    "uso": "descargable",
+    "certeza": "objeto histórico",
+    "nota_certeza": "Toro sagrado egipcio de época tardía. No es el becerro fabricado en el Sinaí ni un ídolo cananeo del Bronce.",
+    "para": {
+      "clase": "objeto",
+      "nombre": "Becerro de oro"
+    },
+    "sensible": "no"
+  }
+]
