@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Construye datos/biblia.js (Génesis 1–50, Éxodo 1–40, Levítico 1–27, Números 1–36 y Deuteronomio 1–34) a partir de fuentes abiertas.
+"""Construye datos/biblia.js (Génesis 1–50, Éxodo 1–40, Levítico 1–27, Números 1–36, Deuteronomio 1–34 y Josué 1–24) a partir de fuentes abiertas.
 
 Uso:  python herramientas/construir_datos.py [--sin-red]
 
 - Descarga (con caché en herramientas/cache/) RV1909, Brenton (LXX inglesa) y BibleData.
 - Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py; Levítico: herramientas/levitico.py;
-  Números: herramientas/numeros.py; Deuteronomio: herramientas/deuteronomio.py)
+  Números: herramientas/numeros.py; Deuteronomio: herramientas/deuteronomio.py; Josué: herramientas/josue.py)
 - Verifica citas, cifras, sumas, relaciones y nombres. Sale con código 1 si falla
   una verificación obligatoria (las sumas que no cuadran y los nombres no hallados
   se listan como advertencias).
@@ -33,6 +33,7 @@ import exodo  # noqa: E402
 import levitico  # noqa: E402
 import numeros  # noqa: E402
 import deuteronomio  # noqa: E402
+import josue  # noqa: E402
 
 MAXCAP = 50
 RAIZ = Path(__file__).resolve().parent.parent
@@ -40,7 +41,8 @@ CACHE = RAIZ / "herramientas" / "cache"
 SALIDA = RAIZ / "datos" / "biblia.js"
 LIBROS = [{"id": "Gn", "nombre": "Génesis", "capitulos": 50}, {"id": "Ex", "nombre": "Éxodo", "capitulos": 40},
           {"id": "Lv", "nombre": "Levítico", "capitulos": 27}, {"id": "Nm", "nombre": "Números", "capitulos": 36},
-          {"id": "Dt", "nombre": "Deuteronomio", "capitulos": 34}]
+          {"id": "Dt", "nombre": "Deuteronomio", "capitulos": 34},
+          {"id": "Jos", "nombre": "Josué", "capitulos": 24}]
 
 BD = "https://raw.githubusercontent.com/BradyStephenson/bible-data/HEAD/"
 FUENTES = [
@@ -937,6 +939,17 @@ def main():
     capitulos += DEU["capitulos"]
     pasajes += DEU["pasajes"]
     menciones = menciones + DEU["menciones"]
+
+    # ------------------------------------------------------------ Josué 1–24 (herramientas/josue.py)
+    rv_jos = leer_vpl(obtener("rv", sin_red), "JOS", 24)
+    br_jos = josue.br_a_rv(leer_vpl(obtener("br", sin_red), "JOS", 24))  # único punto de versificación de Brenton
+    pv_jos = [r for r in leer_csv(obtener("pv", sin_red)) if re.match(r"JOS \d+:\d+$", r["reference_id"].strip())]
+    JOS = josue.construir(dict(rv=rv_jos, br=br_jos, rels=rels, pv_filas=pv_jos, per=per, personas=personas,
+                               relaciones=relaciones, edades=edades, sin_acentos=sin_acentos,
+                               numeral=numeral_a_numero, ES=ES, EN=EN, errores=errores, avisos=avisos))
+    capitulos += JOS["capitulos"]
+    pasajes += JOS["pasajes"]
+    menciones = menciones + JOS["menciones"]
     personas.sort(key=lambda p: (exodo.clave_ref(p["refs"][0]) if p["refs"] else (9, 0, 0), p["id"]))
     vistos_id = Counter(p["id"] for p in personas)
     errores.extend(f"Persona duplicada: {k}" for k, n in vistos_id.items() if n > 1)
@@ -948,16 +961,17 @@ def main():
     lv = lambda k: f"Lv {k[0]}:{k[1]}"  # noqa: E731
     nm = lambda k: f"Nm {k[0]}:{k[1]}"  # noqa: E731
     dt = lambda k: f"Dt {k[0]}:{k[1]}"  # noqa: E731
+    jos = lambda k: f"Jos {k[0]}:{k[1]}"  # noqa: E731
     texto_ref = {"TM": {**{gn(k): v for k, v in rv.items()}, **{exodo.ex(k): v for k, v in rv_ex.items()},
                         **{lv(k): v for k, v in rv_lv.items()}, **{nm(k): v for k, v in rv_nm.items()},
-                        **{dt(k): v for k, v in rv_dt.items()}},
+                        **{dt(k): v for k, v in rv_dt.items()}, **{jos(k): v for k, v in rv_jos.items()}},
                  "LXX": {**{gn(k): v for k, v in br.items()}, **{exodo.ex(k): v for k, v in br_ex.items()},
                          **{lv(k): v for k, v in br_lv.items()}, **{nm(k): v for k, v in br_nm.items()},
-                         **{dt(k): v for k, v in br_dt.items()}}}
+                         **{dt(k): v for k, v in br_dt.items()}, **{jos(k): v for k, v in br_jos.items()}}}
     rango_pasaje = [(exodo.clave_ref(p["inicio"]), exodo.clave_ref(p["fin"]), p["id"]) for p in pasajes]
 
     def pasaje_de(ref):
-        if not ref or not re.match(r"(Gn|Ex|Lv|Nm|Dt) \d+:\d+", ref):
+        if not ref or not re.match(r"(Gn|Ex|Lv|Nm|Dt|Jos) \d+:\d+", ref):
             return None
         k = exodo.clave_ref(ref)
         return next((pid for a0, b0, pid in rango_pasaje if a0 <= k <= b0), None)
@@ -1022,6 +1036,10 @@ def main():
                                                                      avisos, sin_acentos)
     lugares += lug_dt
     menciones_lugar += men_lug_dt
+    lug_jos, men_lug_jos, info_lug_jos = josue.construir_lugares(rv_jos, JOS["menciones"], rutas, lugares, errores,
+                                                                 avisos, sin_acentos)
+    lugares += lug_jos
+    menciones_lugar += men_lug_jos
     mapa = lm.construir_mapa(lugares, rutas)
     x0, y0, x1, y1 = mapa["bbox"]
     for l in lugares:
@@ -1047,6 +1065,7 @@ def main():
     hechos_lv = levitico.comprobar(datos, errores)
     hechos_nm = numeros.comprobar(datos, errores)
     hechos_dt = deuteronomio.comprobar(datos, errores)
+    hechos_jos = josue.comprobar(datos, errores, numeral_a_numero)
     for lb in LIBROS:
         n = sum(1 for c in capitulos if c["libro"] == lb["id"])
         if n != lb["capitulos"]:
@@ -1216,6 +1235,20 @@ def main():
           f"{info_lug_dt['sin_forma']}; versículos descartados ({len(info_lug_dt['descartadas'])}) {info_lug_dt['descartadas']}")
     print("Hechos obligatorios de Deuteronomio:")
     for h in hechos_dt:
+        print("  " + h)
+    print(f"Josué: personas nuevas ({len(JOS['nuevas'])}) {[x['id'] for x in JOS['nuevas']]}; ampliadas "
+          f"({len(JOS['ampliadas'])}); pasajes {len(JOS['pasajes'])} (fuera de 8–20 versículos: "
+          f"{[x['id'] + ':' + str(n) for x, n in zip(JOS['pasajes'], JOS['tam_pasaje']) if not 8 <= n <= 20]}); "
+          f"secciones {dict(Counter(x['seccion'] for x in JOS['pasajes']))}")
+    print(f"Josué: menciones ambiguas descartadas ({len(JOS['ambiguos'])}): {JOS['ambiguos'][:15]}; no situadas "
+          f"{dict(JOS['no_situados'].most_common(15))}; relaciones BibleData descartadas {JOS['descartadas']}")
+    cj = Counter(l["ubicacion"]["confianza"] if l["ubicacion"] else "sin" for l in lug_jos)
+    print(f"Josué: lugares nuevos {len(lug_jos)} (automáticos {josue.INFO_AUTO.get('auto')}, homónimos con ref "
+          f"{josue.INFO_AUTO.get('homonimos')}; confianza {dict(cj)}); unidos a uno ya registrado {josue.INFO_AUTO.get('unidos')}; "
+          f"OpenBible sin forma en RV1909 ({len(info_lug_jos['sin_forma'])}) {info_lug_jos['sin_forma']}; versículos "
+          f"descartados ({len(info_lug_jos['descartadas'])}) {info_lug_jos['descartadas'][:40]}")
+    print("Hechos obligatorios de Josué:")
+    for h in hechos_jos:
         print("  " + h)
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")

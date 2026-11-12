@@ -1196,9 +1196,16 @@ const Nucleo = (() => {
     const H = (O && O.hebreo) || {}, T = (G && G.texto) || {};
     return versiculosDe(d, pasaje).map(v => {
       const h = H[v.ref];
-      return Object.assign({ ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he: (h && h.t) || null, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr: T[v.ref] || null }, v.nota ? { nota: v.nota } : {});
+      const he = (h && h.t) || null, gr = T[v.ref] || null, falta = sinTextoDe(O, G, v.ref);
+      return Object.assign({ ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr }, v.nota ? { nota: v.nota } : {},
+        !he && falta.he ? { heFalta: falta.he } : {}, !gr && falta.gr ? { grFalta: falta.gr } : {});
     });
   }
+  // Motivo por el que un versículo no tiene texto original (datos: `hebreo_sin_texto` y `sin_texto` del griego), tal cual.
+  const notaFalta = x => typeof x === 'string' ? x : x && typeof x === 'object' ? String(x.nota || x.motivo || '') : '';
+  const sinTextoDe = (O, G, ref) => ({ he: notaFalta(((O && O.hebreo_sin_texto) || {})[ref]) || null, gr: notaFalta(((G && G.sin_texto) || {})[ref]) || null });
+  // Lista de versículos sin hebreo o sin griego, con su motivo: [{ ref, idioma: 'he'|'gr', nota }].
+  const sinTextoOriginal = (O, G, refs) => [].concat(...(refs || []).map(ref => { const f = sinTextoDe(O, G, ref); return [['he', f.he], ['gr', f.gr]].filter(x => x[1]).map(([idioma, nota]) => ({ ref, idioma, nota })); }));
   const videosDeLibro = (O, libro) => ((O && O.videos) || []).filter(v => libroCanon(v.libro) === libroCanon(libro) && esIdYoutube(v.youtube_id));
   const esIdYoutube = id => /^[A-Za-z0-9_-]{11}$/.test(String(id || ''));
   // Escritura de un texto original, para lang/dir: hebreo, griego o ninguno.
@@ -1588,14 +1595,99 @@ const Nucleo = (() => {
     textoVerso(d, x.ref) ? `«${textoVerso(d, x.ref)}»` : '',
     x.nota ? `Tu nota: ${x.nota}` : ''].filter(Boolean).join('\n')).join('\n\n');
 
-  return { NOTAS_COLORES, refNota, normalizarNotas, ponerNota, quitarNota, notaDe, listarNotas, fusionarNotas, validarNotas, exportarNotas, refLegible, citaVerso, textoVerso, textoNotas,
+  /* ---- Lectura en orden: lo accesible y el tiempo mínimo de lectura ----
+     Frontera = primer pasaje sin leer (en el orden de `pasajes`). Accesible = lo leído (aunque se marcara fuera
+     de orden) más todo hasta la frontera incluida. Lo demás no se muestra en ninguna vista. */
+  const conjunto = x => x instanceof Set ? x : new Set(x || []);
+  const frontera = (d, leidos) => { const L = conjunto(leidos); return pasajes(d).find(p => !L.has(p.id)) || null; };
+  // Último versículo de cada capítulo («Ex|7» → clave), para las refs de capítulo entero («Gn 5»).
+  const finCapitulo = d => memo(d || {}, 'finCap', () => {
+    const m = new Map(); todosLosVersiculos(d).forEach(v => m.set(v.libro + '|' + v.cap, v.clave)); return m;
+  });
+  // Objeto de acceso: { frontera, todo, ids, rangos, pasaje(id), clave(k), ref(ref), refs(refs) }.
+  function accesibles(d, leidos) {
+    const L = conjunto(leidos), ps = pasajes(d), f = ps.findIndex(p => !L.has(p.id));
+    const ids = new Set(), rangos = [];
+    ps.forEach((p, i) => {
+      if (f >= 0 && i > f && !L.has(p.id)) return;
+      ids.add(p.id);
+      const a = clave(p.inicio), b = clave(p.fin), u = rangos[rangos.length - 1];
+      if (u && u.i === i - 1) { u.b = Math.max(u.b, b); u.i = i; } else rangos.push({ a, b, i });
+    });
+    const todo = f < 0, fc = finCapitulo(d);
+    const enClave = k => k !== null && k !== undefined && Number.isFinite(k) && (todo || rangos.some(r => k >= r.a && k <= r.b));
+    // Una ref es accesible si lo son su principio y su final (rango «Ex 25:10-22», capítulo «Gn 5» o versículo).
+    const ref = r => {
+      if (todo) return true;
+      if (r === null || r === undefined || r === '') return false;
+      const s = String(r);
+      if (/[-–—]/.test(s)) { const x = rangoClaves(s); if (!x) return false; const fin = x.b % 1000 === 999 ? fc.get(refDeClave(x.b).replace(/:\d+$/, '').replace(' ', '|')) || x.b : x.b; return enClave(x.a) && enClave(fin); }
+      const p = parseRef(s); if (!p) return false;
+      if (p.v) return enClave(clave(s));
+      const k = fc.get(p.libro + '|' + p.cap); return enClave(ordDe(p.libro) * 1e6 + p.cap * 1000 + 1) && enClave(k);
+    };
+    return { frontera: todo ? null : ps[f], todo, ids, rangos: rangos.map(r => ({ a: r.a, b: r.b })),
+      pasaje: id => ids.has(id), clave: enClave, ref, refs: rs => (rs || []).every(ref) };
+  }
+  const acc = (d, A) => A && typeof A.ref === 'function' ? A : accesibles(d, A); // acepta el objeto o la lista de leídos
+  const esAccesible = (d, leidos, pasajeId) => acc(d, leidos).pasaje(pasajeId);
+  // Adónde lleva un enlace a un pasaje: él mismo si es accesible; si no, la frontera (con `bloqueado`).
+  function destinoPasaje(d, leidos, pasajeId) {
+    const A = acc(d, leidos), p = pasajes(d).find(x => x.id === pasajeId) || null;
+    if (!p || A.pasaje(p.id)) return { pasaje: p, bloqueado: false };
+    return { pasaje: A.frontera || p, bloqueado: true, pedido: p };
+  }
+  // Palabras del texto RV que se muestra del pasaje; `omitir(ref)` quita versículos (p. ej. plegados en perfil niño).
+  const contarPalabras = s => (String(s || '').match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu) || []).length;
+  const palabrasPasaje = (d, p, omitir) => versiculosDe(d, p).filter(v => !(omitir && omitir(v.ref))).reduce((s, v) => s + contarPalabras(v.texto), 0);
+  const PPM = { adulto: 250, nino: 150 };
+  const ppmDe = perfil => esNino(perfil) ? PPM.nino : PPM.adulto;
+  // Segundos mínimos con el pasaje abierto antes de poder marcarlo: palabras ÷ ppm (redondeado al segundo, hacia arriba).
+  const segundosMinimos = (palabras, perfil) => Math.ceil(Math.max(0, +palabras || 0) / ppmDe(perfil) * 60);
+  // Cuenta atrás legible: 83 → «1:23».
+  const relojTxt = s => { s = Math.max(0, Math.ceil(+s || 0)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
+  // Tiempos acumulados por pasaje ({ id: segundos }) saneados.
+  const normalizarTiempos = o => { const out = {}; if (o && typeof o === 'object' && !Array.isArray(o)) Object.keys(o).forEach(k => { const v = +o[k]; if (Number.isFinite(v) && v > 0) out[k] = Math.min(v, 864000); }); return out; };
+  // Puede marcarse: ya leído (releer no pide tiempo) o acumuló el mínimo.
+  const puedeMarcar = (yaLeido, acumulado, minimo) => !!yaLeido || (+acumulado || 0) >= (+minimo || 0);
+  // Filtros reutilizables por las vistas (A = objeto de `accesibles`).
+  // Persona accesible: aparece en algún versículo accesible (también en lo leído fuera de orden).
+  const clavesPersona = d => memo(d || {}, 'clavesP', () => {
+    const m = new Map(); for (const [k, ids] of indice(d).porRef) ids.forEach(id => { if (!m.has(id)) m.set(id, []); m.get(id).push(k); });
+    m.forEach(ks => ks.sort((a, b) => a - b)); return m;
+  });
+  const personaAccesible = (d, A, id) => (clavesPersona(d).get(id) || []).some(A.clave);
+  const refsLugar = (d, id) => memo(d || {}, 'refsL|' + id, () => {
+    const l = lugar(d, id), out = [].concat((l && l.refs) || []);
+    for (const [k, ms] of indice(d).mencionesLugar) if (ms.some(m => m.lugar === id)) out.push(refDeClave(k));
+    return out;
+  });
+  const lugarAccesible = (d, A, id) => refsLugar(d, id).some(A.ref);
+  const buscarAccesible = (d, A, q, max) => buscar(d, q, 1e6).filter(p => personaAccesible(d, A, p.id)).slice(0, max || 20);
+  const lugaresAccesibles = (d, A, ids) => (ids || ((d && d.lugares) || []).map(l => l.id)).filter(id => lugarAccesible(d, A, id));
+  const curiosidadAccesible = (A, c) => !!c && A.refs(c.refs || []) && (c.refs || []).length > 0;
+  const edadAccesible = (A, e) => !!e && A.ref(e.ref) && (e.de || []).every(x => A.ref(x.ref));
+  // Línea de tiempo con solo los sucesos e hitos cuya ref es accesible (las secciones vacías desaparecen).
+  const lineaAccesible = (d, combo, A) => lineaDeTiempo(d, combo).map(g => Object.assign({}, g, {
+    items: g.items.filter(it => A.ref(it.evento.ref)), hitos: g.hitos.filter(h => A.ref(h.hito.ref)) })).filter(g => g.items.length || g.hitos.length);
+  // Vida (cálculo) vista desde lo accesible: sin nacimiento accesible no se muestra; sin muerte accesible, queda abierta.
+  function vidaAccesible(d, x, A) {
+    const C = crono(d); if (!x || !C) return null;
+    const ok = id => { const e = id && C.porId.get(id); return !!e && A.ref(e.ref); };
+    if (!ok(x.evNac) || !personaAccesible(d, A, x.persona)) return null;
+    return ok(x.evMuerte) ? x : Object.assign({}, x, { muerte: null, evMuerte: null });
+  }
+
+  return { frontera, accesibles, esAccesible, destinoPasaje, contarPalabras, palabrasPasaje, PPM, ppmDe, segundosMinimos, relojTxt, normalizarTiempos, puedeMarcar,
+    personaAccesible, refsLugar, lugarAccesible, buscarAccesible, lugaresAccesibles, curiosidadAccesible, edadAccesible, lineaAccesible, vidaAccesible,
+    NOTAS_COLORES, refNota, normalizarNotas, ponerNota, quitarNota, notaDe, listarNotas, fusionarNotas, validarNotas, exportarNotas, refLegible, citaVerso, textoVerso, textoNotas,
     TB_GRUPOS, tbPiezas, tbPieza, tbZona, tbCodos, tbRect, tbCodo, codosAMetros, rangosDe, tbMontaje, tbColocadas, tbPiezasDeRango, tbPiezasDePasaje, tbPiezasDeRefs,
     tbCapitulo, tbEnPasaje, tbVisiblesLeido, tbHuella, tbDisposicion, tbRecursos,
     CLAVE_PERFILES, COLORES_PERFIL, clavePerfil, esClaveLegada, clavesDePerfil, nuevoPerfil, normalizarRegistro, migrarPerfiles, perfilDe, cambioPidePin, pinValido, inicialDe,
     marcasContenido, marcaDe, decisionVerso, accionVerso, recursoPermitido, curiosidadPermitida, enlaceLibre, tramosContenido,
     listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
-    TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+    TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, sinTextoDe, sinTextoOriginal, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona,
     GRUPOS_JUEGO, juegoValido, estadoPersonaje, vistaFichaJuego, estadoCosa, fichasCosas, nuevosAlLeer, genealogiasDe, esGenealogia, datoPlegado, relacionadosJuego, capituloListo, rangosAp, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
@@ -1656,7 +1748,10 @@ if (typeof document !== 'undefined') (function () {
   const plegadoRef = ref => !!ref && accionDe(ref).accion === 'plegar';
   const NOTA_CONT = { violencia: 'Aquí se narra un hecho violento.', crueldad: 'Aquí se narra un hecho cruel.', sexual: 'Aquí se alude a un tema de personas adultas.' };
   const CAT_CONT = { violencia: 'violencia', crueldad: 'crueldad', sexual: 'contenido sexual' };
-  const permitidos = (fs, claves) => (fs || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), claves));
+  // Recurso accesible (lectura en orden): todos sus rangos de versículos ya se pueden leer (un video de «Gn 1-11», al llegar a Gn 11).
+  const rangosRec = f => Array.isArray(f.rangos) && f.rangos.length ? f.rangos.filter(r => Array.isArray(r) && r.length === 2) : null;
+  const recOk = f => { const A = ACC(); if (A.todo) return true; const rs = rangosRec(f); return rs ? rs.every(([a, b]) => A.clave(a) && A.clave(b)) : (f.refs || []).length > 0 && f.refs.every(A.ref); };
+  const permitidos = (fs, claves) => (fs || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), claves) && recOk(f));
   const TIPO_TXT = { al_engendrar: 'Al engendrar', restantes: 'Años restantes', total: 'Total' };
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
@@ -1680,6 +1775,67 @@ if (typeof document !== 'undefined') (function () {
   const fuenteNombre = id => { const f = (D.fuentes || []).find(x => x.id === id); return f ? f.nombre : (id || 'sin fuente'); };
   const etiquetaTrad = id => { const t = [...N.tradicionesDe(D, id)]; return t.length === 1 ? `<span class="etiqueta">solo ${esc(t[0])}</span>` : ''; };
   const pasajesLeidos = () => new Set(store.get('biblia.pasajesLeidos', []));
+  /* ---------- Lectura en orden: qué es accesible (núcleo: accesibles) y tiempo mínimo por pasaje ---------- */
+  let accCache = { k: null, A: null };
+  const ACC = () => {
+    const g = store.get('biblia.pasajesLeidos', []), L = Array.isArray(g) ? g : [], k = PERF.r.activo + '|' + L.join(',');
+    if (accCache.k !== k) accCache = { k, A: N.accesibles(D, L) };
+    return accCache.A;
+  };
+  const refOk = ref => ACC().ref(ref);
+  const personaOk = id => N.personaAccesible(D, ACC(), id);
+  const lugarOk = id => N.lugarAccesible(D, ACC(), id);
+  const ICO_CANDADO = '<svg class="ico-candado" viewBox="0 0 20 20" aria-hidden="true"><rect x="4.5" y="9" width="11" height="8" rx="1.5"/><path d="M7 9V6.5a3 3 0 016 0V9"/></svg>';
+  const bloqueadoHTML = txt => `<p class="aviso-bloqueo">${ICO_CANDADO}<span>${txt}</span></p>`;
+  // Tiempo acumulado con el pasaje abierto y la página visible (o sonando «Escuchar»); se guarda por perfil.
+  const LECT = { id: null, acum: 0, min: 0, palabras: 0, leido: false, ult: Date.now(), timer: 0 };
+  let paginaVisible = document.visibilityState !== 'hidden';
+  const tiemposGuardados = () => N.normalizarTiempos(store.get('biblia.tiemposLectura', null));
+  function guardarTiempo() {
+    if (!LECT.id || LECT.leido) return;
+    const t = tiemposGuardados(); t[LECT.id] = Math.floor(LECT.acum); store.set('biblia.tiemposLectura', t);
+  }
+  const cuentaActiva = () => paginaVisible || habla.estado === 'sonando'; // `habla` (Escuchar) se define más abajo; solo se usa al contar
+  function empezarLectura(p) {
+    if (LECT.id !== p.id) { guardarTiempo(); LECT.id = p.id; LECT.acum = tiemposGuardados()[p.id] || 0; }
+    LECT.leido = pasajesLeidos().has(p.id);
+    LECT.palabras = N.palabrasPasaje(D, p, esNinoActivo() ? plegadoRef : null); // lo plegado para el niño no se le muestra
+    LECT.min = N.segundosMinimos(LECT.palabras, perfil()); LECT.ult = Date.now();
+    if (!LECT.timer) LECT.timer = setInterval(tickLectura, 1000);
+  }
+  function tickLectura() {
+    const ahora = Date.now(), dt = Math.min(65, Math.max(0, (ahora - LECT.ult) / 1000)); LECT.ult = ahora;
+    if (!LECT.id) return;
+    if (!main.querySelector(`[data-leido-seguir="${CSS.escape(LECT.id)}"]`)) { guardarTiempo(); LECT.id = null; return; } // salió del pasaje
+    if (LECT.leido || !cuentaActiva()) return;
+    const antes = LECT.acum; LECT.acum += dt;
+    if (Math.floor(LECT.acum / 5) !== Math.floor(antes / 5)) guardarTiempo();
+    pintarMarcar();
+  }
+  document.addEventListener('visibilitychange', () => { tickLectura(); paginaVisible = document.visibilityState !== 'hidden'; LECT.ult = Date.now(); guardarTiempo(); });
+  window.addEventListener('pagehide', () => { tickLectura(); guardarTiempo(); });
+  const listoMarcar = () => N.puedeMarcar(LECT.leido, LECT.acum, LECT.min);
+  const textoMarcar = (hayNext) => hayNext ? 'Marcar como leído y seguir' : 'Marcar como leído';
+  function marcarHTML(p, next) {
+    const listo = listoMarcar();
+    return `<button type="button" class="boton boton-marcar" data-leido-seguir="${esc(p.id)}" data-txt="${esc(textoMarcar(!!next))}"${listo ? '' : ' disabled aria-describedby="regla-lectura"'}>${listo ? textoMarcar(!!next) : `${ICO_RELOJ}Podrás marcarlo en ${N.relojTxt(LECT.min - LECT.acum)}`}</button>`;
+  }
+  const ICO_RELOJ = '<svg class="ico-reloj" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2"/></svg>';
+  function reglaHTML() {
+    const ppm = N.ppmDe(perfil());
+    if (LECT.leido) return '<p class="regla-lectura meta" id="regla-lectura">Ya lo leíste: puedes releerlo sin esperar.</p>';
+    return `<p class="regla-lectura meta" id="regla-lectura">La lectura avanza en orden. Antes de marcar un pasaje hay un tiempo mínimo: sus ${LECT.palabras} palabras a ${ppm} palabras por minuto (${esNinoActivo() ? 'perfil de niño' : 'perfil adulto'}) = ${N.relojTxt(LECT.min)}. Solo cuenta mientras el pasaje está abierto y a la vista, o mientras suena «Escuchar».</p>
+      <p class="sr" id="marcar-aviso" aria-live="polite"></p>`;
+  }
+  function pintarMarcar() {
+    const b = main.querySelector('[data-leido-seguir]'); if (!b || b.dataset.leidoSeguir !== LECT.id) return;
+    if (listoMarcar()) {
+      if (b.disabled) { b.disabled = false; b.removeAttribute('aria-describedby'); b.textContent = b.dataset.txt; const a = $('#marcar-aviso'); if (a) a.textContent = 'Ya puedes marcar el pasaje como leído.'; }
+      return;
+    }
+    const t = `Podrás marcarlo en ${N.relojTxt(LECT.min - LECT.acum)}`;
+    if (b.textContent !== t) b.innerHTML = ICO_RELOJ + t;
+  }
   const rango = p => {
     const a = N.parseRef(p.inicio), b = N.parseRef(p.fin);
     if (a.libro !== b.libro) return `${a.libro} ${a.cap}:${a.v} – ${b.libro} ${b.cap}:${b.v}`;
@@ -1695,34 +1851,40 @@ if (typeof document !== 'undefined') (function () {
   /* ---------- Leer: inicio ---------- */
   function vistaLeer(args) {
     const ps = N.pasajes(D);
-    if (args[0] === 'p') return vistaPasaje(ps.find(x => x.id === args[1]), args[2] || null);
+    if (args[0] === 'p') return pasajeAccesible(ps.find(x => x.id === args[1]), args[2] || null);
     // #leer/Ex (plan de ese libro), #leer/Ex/7/7 (versículo) y los enlaces antiguos #leer/7/7 (Génesis).
     let a = args.filter(x => x !== ''), lbRuta = null;
     if (a[0] && !/^\d+$/.test(a[0])) { lbRuta = N.libroIdDe(D, a[0]); a = a.slice(1); }
     if (a[0]) {
       const lb = lbRuta || 'Gn', cap = +a[0], v = +a[1] || null;
       const p = N.pasajeDe(D, `${lb} ${cap}:${v || 1}`) || ps.find(x => { const r = N.parseRef(x.inicio); return r.libro === lb && r.cap === cap; });
-      return vistaPasaje(p, v ? `${cap}:${v}` : null);
+      return pasajeAccesible(p, v ? `${cap}:${v}` : null);
     }
-    const L = pasajesLeidos(), pos = store.get('biblia.pos', null);
-    const actual = pos && ps.find(x => x.id === pos.pasaje);
+    const L = pasajesLeidos(), pos = store.get('biblia.pos', null), A = ACC();
+    const actual0 = pos && ps.find(x => x.id === pos.pasaje), actual = actual0 && A.pasaje(actual0.id) ? actual0 : null;
     const n = ps.filter(p => L.has(p.id)).length;
-    const sig = (actual && !L.has(actual.id) ? actual : null) || ps.find(p => !L.has(p.id)) || actual || ps[0];
+    // Se sigue en la frontera (primer pasaje sin leer); con todo leído, donde se quedó.
+    const sig = A.frontera || actual || ps[0];
     const enSig = actual && sig && actual.id === sig.id && pos.v;
     const editorial = ps.some(p => p.titulo_origen === 'editorial');
     // Libros con pasajes; con más de uno, el plan muestra un selector y solo el libro elegido.
-    const LB = N.libros(D).map(l => { const pl = ps.filter(p => N.libroDe(p) === l.id); return Object.assign({}, l, { pasajes: pl.length, leidos: pl.filter(p => L.has(p.id)).length }); }).filter(l => l.pasajes);
+    const LB = N.libros(D).map(l => { const pl = ps.filter(p => N.libroDe(p) === l.id); return Object.assign({}, l, { pasajes: pl.length, leidos: pl.filter(p => L.has(p.id)).length, bloqueado: !!pl.length && !A.pasaje(pl[0].id), entero: !!pl.length && pl.every(p => A.pasaje(p.id)) }); }).filter(l => l.pasajes);
     const varios = LB.length > 1;
     if (lbRuta && LB.some(l => l.id === lbRuta)) { estado.libro = lbRuta; store.set('biblia.libro', lbRuta); }
-    const elegido = [estado.libro, store.get('biblia.libro', null), sig && N.libroDe(sig)].find(id => id && LB.some(l => l.id === id)) || (LB[0] && LB[0].id);
+    // Un libro aún bloqueado solo se abre si se pide por enlace (#leer/Ex); si no, el de la frontera.
+    const elegido = [lbRuta, estado.libro, store.get('biblia.libro', null), sig && N.libroDe(sig)].find(id => id && LB.some(l => l.id === id && (id === lbRuta || !l.bloqueado))) || (LB[0] && LB[0].id);
     estado.libro = elegido;
     const libroSel = LB.find(l => l.id === elegido);
-    const selector = varios ? `<nav class="libros" aria-label="Libros">${LB.map(l => `<a class="libro-btn" href="#leer/${esc(l.id)}"${l.id === elegido ? ' aria-current="true"' : ''}>
-        <span class="libro-nombre">${esc(l.nombre)}</span>
+    const selector = varios ? `<nav class="libros" aria-label="Libros">${LB.map(l => `<a class="libro-btn${l.bloqueado ? ' bloqueado' : ''}" href="#leer/${esc(l.id)}"${l.id === elegido ? ' aria-current="true"' : ''}>
+        <span class="libro-nombre">${l.bloqueado ? ICO_CANDADO : ''}${esc(l.nombre)}${l.bloqueado ? '<span class="sr"> (bloqueado)</span>' : ''}</span>
         <span class="libro-meta">${l.capitulos ? `${l.capitulos} capítulos, ` : ''}${l.leidos} de ${l.pasajes} pasajes</span>
         <span class="libro-prog" aria-hidden="true"><span style="width:${Math.round(100 * l.leidos / l.pasajes)}%"></span></span></a>`).join('')}</nav>` : '';
     const itemPasaje = (p, num) => {
-      const est = L.has(p.id) ? 'leido' : actual && actual.id === p.id ? 'en-curso' : 'pendiente';
+      // Bloqueado: sin título ni resumen (no se adelanta nada), solo su referencia y el candado.
+      if (!A.pasaje(p.id)) return `<li class="pasaje bloqueado"><span class="pasaje-fila" aria-label="Pasaje ${num}, ${esc(rango(p))}: bloqueado hasta leer los anteriores"><span class="pasaje-num" aria-hidden="true">${num}</span>
+          <span class="pasaje-cuerpo" aria-hidden="true"><span class="pasaje-titulo">Pasaje bloqueado</span><span class="pasaje-rango">${rango(p)}</span></span>
+          <span class="estado bloqueado" aria-hidden="true">${ICO_CANDADO}Bloqueado</span></span></li>`;
+      const est = L.has(p.id) ? 'leido' : A.frontera && A.frontera.id === p.id ? 'en-curso' : 'pendiente';
       return `<li class="pasaje ${est}"><a href="#leer/p/${esc(p.id)}"><span class="pasaje-num" aria-hidden="true">${num}</span>
           <span class="pasaje-cuerpo"><span class="pasaje-titulo">${esc(p.titulo)}</span><span class="pasaje-rango">${rango(p)}</span>
           ${p.resumen ? `<span class="pasaje-resumen">${esc(p.resumen)}</span>` : ''}</span>
@@ -1754,8 +1916,8 @@ if (typeof document !== 'undefined') (function () {
       <div class="plan">
       <h2 class="titulo-seccion">Plan de lectura${varios && libroSel ? `<span class="sr">: ${esc(libroSel.nombre)}</span>` : ''}</h2>
       ${selector}
-      ${elegido ? videoLibroHTML(elegido) : ''}
-      ${elegido === 'Ex' ? entradaTBHTML() : ''}
+      ${elegido && libroSel && libroSel.entero ? videoLibroHTML(elegido) : elegido && libroSel ? `<p class="meta video-libro-bloq">${ICO_CANDADO} El video sobre ${esc(libroSel.nombre)} resume todo el libro: se podrá ver cuando llegues a su último pasaje.</p>` : ''}
+      ${elegido === 'Ex' && libroSel && !libroSel.bloqueado ? entradaTBHTML() : ''}
       ${plan}
       ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}</div></div>`;
   }
@@ -1767,7 +1929,16 @@ if (typeof document !== 'undefined') (function () {
     const entera = g => N.clave(g.inicio) <= N.clave(p.inicio) && N.clave(g.fin || g.inicio) >= N.clave(p.fin);
     return `<p class="pasaje-genealogia">${gs.map(g => `<span class="etiqueta genealogia" title="${esc(g.titulo ? g.titulo + '. ' : '')}Quien solo se nombra en una genealogía no cuenta como aparición en la colección.">Genealogía${entera(g) ? '' : ' · ' + esc(rango({ inicio: g.inicio, fin: g.fin || g.inicio }))}</span>`).join('')}</p>`;
   }
+  // Enlace a un pasaje (hash, «continúa», referencias): si está bloqueado, se abre la frontera con un aviso.
+  function pasajeAccesible(p, activo) {
+    const r = p ? N.destinoPasaje(D, ACC(), p.id) : { pasaje: null };
+    if (!r.bloqueado) return vistaPasaje(p, activo);
+    try { history.replaceState(null, '', `#leer/p/${r.pasaje.id}`); } catch (e) { /* file:// */ }
+    estado.avisoBloq = { id: r.pasaje.id, html: bloqueadoHTML(`${esc(rango(r.pedido))} todavía está bloqueado: la lectura avanza en orden. Te llevamos al primer pasaje que te falta leer.`) };
+    return vistaPasaje(r.pasaje, null);
+  }
   function vistaPasaje(p, activo) {
+    const aviso = p && estado.avisoBloq && estado.avisoBloq.id === p.id ? estado.avisoBloq.html : ''; // se mantiene al repintar, hasta cambiar de ruta
     if (!p) return `<h1 tabindex="-1">Pasaje no encontrado</h1><p class="vacio-txt">Ese pasaje no está en los datos, que cubren ${esc(N.alcance(D).texto)}.</p><p><a class="boton" href="#leer">Ver el plan de lectura</a></p>`;
     const ps = N.pasajes(D), i = ps.findIndex(x => x.id === p.id), prev = ps[i - 1], next = ps[i + 1];
     const lb = N.libroDe(p), psL = ps.filter(x => N.libroDe(x) === lb), iL = psL.findIndex(x => x.id === p.id);
@@ -1775,6 +1946,8 @@ if (typeof document !== 'undefined') (function () {
     estado.pasaje = p;
     estado.activo = activo && vs.some(v => `${v.cap}:${v.n}` === activo && !plegadoRef(v.ref)) ? activo : null;
     store.set('biblia.pos', { pasaje: p.id, v: estado.activo });
+    empezarLectura(p);
+    const nextOk = next && ACC().pasaje(next.id);
     const fuente = ((D.fuentes || []).find(f => /rv/i.test(f.id)) || {}).id;
     let capPrev = null;
     const NT = notasGuardadas().versos;
@@ -1792,7 +1965,7 @@ if (typeof document !== 'undefined') (function () {
       return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}${nbClases(nt)}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${nbSrHTML(nt)}${marcaVariante(v.ref, v.n)}${partes}${nbIndHTML(nt, k, v.n)} </span>`;
     }, (vsP, j) => { const v = vsP[0], cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : ''; capPrev = vsP[vsP.length - 1].cap; return cab; });
     const nuevos = N.primerasApariciones(D, p);
-    return `<div class="pasaje-vista"><article class="lectura">
+    return `<div class="pasaje-vista"><article class="lectura">${aviso ? `<div role="status">${aviso}</div>` : ''}
       <header class="cab-pasaje"><a class="volver" href="#leer/${esc(lb)}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
         <p class="pasaje-libro">${esc(N.nombreLibro(D, lb))}</p>
         <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
@@ -1807,9 +1980,9 @@ if (typeof document !== 'undefined') (function () {
         ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section>
       <nav class="pasos-pasaje" aria-label="Pasajes">
         ${prev ? `<a class="boton secundario" href="#leer/p/${esc(prev.id)}" title="${esc(prev.titulo)}">Anterior</a>` : '<span></span>'}
-        <button type="button" class="boton" data-leido-seguir="${esc(p.id)}">${next ? 'Marcar como leído y seguir' : 'Marcar como leído'}</button>
-        ${next ? `<a class="boton secundario" href="#leer/p/${esc(next.id)}" title="${esc(next.titulo)}">Siguiente</a>` : '<span></span>'}
-      </nav></article>
+        ${marcarHTML(p, next)}
+        ${nextOk ? `<a class="boton secundario" href="#leer/p/${esc(next.id)}" title="${esc(next.titulo)}">Siguiente</a>` : next ? `<span class="boton secundario siguiente-bloq" aria-disabled="true" title="Se desbloquea al marcar como leído este pasaje">${ICO_CANDADO}Siguiente</span>` : '<span></span>'}
+      </nav>${reglaHTML()}</article>
       <aside class="acompanante${estado.hoja ? ' abierta' : ''}" id="acompanante" aria-label="Acompañante de lectura">${acompHTML()}</aside></div>`;
   }
 
@@ -1897,7 +2070,8 @@ if (typeof document !== 'undefined') (function () {
           <a class="enlace-arbol" href="#tiempo/linea/${encodeURIComponent(ev.id)}">Ver en la línea de tiempo</a></li>`;
       }).join('')}</ul>`;
       else {
-        const r = estado.activo ? [refs[0], refs[0]] : [p.inicio, p.fin], v = N.vecinosFechados(D, r[0], r[1], combo);
+        const r = estado.activo ? [refs[0], refs[0]] : [p.inicio, p.fin], v0 = N.vecinosFechados(D, r[0], r[1], combo);
+        const v = { anterior: v0.anterior && refOk(v0.anterior.ref) ? v0.anterior : null, siguiente: v0.siguiente && refOk(v0.siguiente.ref) ? v0.siguiente : null }; // nada de lo aún no leído
         const t = x => `${enlace(x.evento, '«' + esc(x.titulo) + '»')} (año ${x.anio}, ${refHTML(x.ref)})`;
         const donde = v.anterior && v.siguiente ? `entre ${t(v.anterior)} y ${t(v.siguiente)}` : v.anterior ? `después de ${t(v.anterior)}` : v.siguiente ? `antes de ${t(v.siguiente)}` : '';
         cuerpo = `<p class="contexto">${estado.activo ? 'Este versículo' : 'Este pasaje'} no trae datos de tiempo.${donde ? ` Por el orden de lectura queda ${donde}. Es el orden del relato, no un dato del texto.` : ''}</p>`;
@@ -1912,9 +2086,10 @@ if (typeof document !== 'undefined') (function () {
     }).join('')}</ul>`, I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2'));
     if (A.eventos.length) html += sec('Edad en este momento', `<ul class="edades-acomp">${A.eventos.map(eventoHTML).join('')}</ul>`, I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6v4l3 2'));
     if (A.sinNombre.length) html += sec('Sin nombre', A.sinNombre.map(id => `<p class="sin-nombre-aviso">El texto alude a alguien sin dar su nombre: ${btnPersona(id)}</p>`).join(''), I('M10 3a7 7 0 100 14 7 7 0 000-14zM10 6.5v4M10 13.5v.5'));
-    const centrales = A.personas.map(x => x.id).filter(id => { const m = N.miniArbol(D, id); return !(N.persona(D, id) || {}).sin_nombre && (m.padres.length || m.hijos.length); }).slice(0, estado.activo ? 2 : 3);
+    const miniOk = id => { const m = N.miniArbol(D, id); return Object.assign({}, m, { padres: m.padres.filter(personaOk), hijos: m.hijos.filter(personaOk), conyuges: m.conyuges.filter(personaOk) }); };
+    const centrales = A.personas.map(x => x.id).filter(id => { const m = miniOk(id); return !(N.persona(D, id) || {}).sin_nombre && (m.padres.length || m.hijos.length); }).slice(0, estado.activo ? 2 : 3);
     if (centrales.length) html += sec('Dónde va en el árbol', centrales.map(id => {
-      const m = N.miniArbol(D, id), mas = m.hijos.length - 5;
+      const m = miniOk(id), mas = m.hijos.length - 5;
       return `<div class="mini"><div class="mini-gen">${m.padres.map(btnPersona).join('') || '<span class="meta">Padres no constan</span>'}</div>
         <div class="mini-gen centro">${btnPersona(id)}${m.conyuges.map(c => `<span class="cony-mini">⚭</span>${btnPersona(c)}`).join('')}</div>
         <div class="mini-gen">${m.hijos.slice(0, 5).map(btnPersona).join('') || '<span class="meta">Sin hijos registrados</span>'}${mas > 0 ? `<span class="meta">y ${mas} más</span>` : ''}</div>
@@ -1922,7 +2097,7 @@ if (typeof document !== 'undefined') (function () {
     }).join(''), I('M10 3v5M10 8H5v4M10 8h5v4M10 8v9'));
     // «¿Sabías que…?» (cálculo) del pasaje: como mucho dos, elegidas en el núcleo sin repetir las del pasaje anterior.
     if (N.crono(D) && !estado.activo) {
-      const tr = tradSimple(), cs = (N.sabiasQue(D, comboDe(tr)).get(p.id) || []).filter(c => N.curiosidadPermitida(c, perfil(), CONT()));
+      const tr = tradSimple(), cs = (N.sabiasQue(D, comboDe(tr)).get(p.id) || []).filter(c => N.curiosidadPermitida(c, perfil(), CONT()) && N.curiosidadAccesible(ACC(), c));
       if (cs.length) html += `<section class="acomp-sec sabias"><h3>${I('M10 3.5a4.5 4.5 0 00-2.6 8.2c.5.4.8 1 .8 1.6v.7h3.6v-.7c0-.6.3-1.2.8-1.6A4.5 4.5 0 0010 3.5zM8.3 16.5h3.4')}¿Sabías que…?</h3>
         <ul class="sabias-lista">${cs.map(c => `<li><p>${esc(c.texto)}.</p><span class="sabias-pie">${insignia('calculo')}<button type="button" class="enlace-boton" data-curio="${esc(c.id)}">Ver el cálculo</button></span></li>`).join('')}</ul>
         <p class="meta">${tr}, con los supuestos elegidos en Tiempo.</p></section>`;
@@ -2011,9 +2186,10 @@ if (typeof document !== 'undefined') (function () {
     if (!todas.length) return `<div class="nb-vacio"><p class="vacio-txt">Aún no tienes subrayados ni notas en este perfil.</p>
       <p>Mientras lees un pasaje, pulsa el número de un versículo (o el versículo): aparece una barra para subrayarlo en un color, escribir tu nota o copiar la cita. Todo lo que marques se reúne aquí, en el orden de la Biblia.</p>
       <p><a class="boton" href="#leer">Ir a leer</a></p></div>`;
-    const xs = N.listarNotas(notasGuardadas(), nbF);
-    if (!xs.length) return `<p class="vacio-txt">Ninguna de tus ${todas.length} marcas coincide con el filtro.</p>`;
-    return `<p class="meta" aria-live="polite">${xs.length === todas.length ? `${xs.length} ${xs.length === 1 ? 'versículo' : 'versículos'}` : `${xs.length} de ${todas.length}`}</p>
+    const xs0 = N.listarNotas(notasGuardadas(), nbF), xs = xs0.filter(x => refOk(x.ref)), ocultas = xs0.length - xs.length; // lectura en orden
+    const avisoOcultas = ocultas ? `<p class="meta">${ICO_CANDADO} ${ocultas} ${ocultas === 1 ? 'marca está' : 'marcas están'} en pasajes aún bloqueados: se verán al llegar (siguen guardadas y se exportan).</p>` : '';
+    if (!xs.length) return avisoOcultas + `<p class="vacio-txt">Ninguna de tus ${todas.length} marcas ${ocultas ? 'accesibles ' : ''}coincide con el filtro.</p>`;
+    return `${avisoOcultas}<p class="meta" aria-live="polite">${xs.length === todas.length ? `${xs.length} ${xs.length === 1 ? 'versículo' : 'versículos'}` : `${xs.length} de ${todas.length}`}</p>
       <ol class="nb-lista">${xs.map(x => {
         const r = N.parseRef(x.ref), txt = N.textoVerso(D, x.ref);
         const cuerpo = plegadoRef(x.ref) ? '<span class="meta">Texto plegado para este perfil.</span>' : txt ? `<span class="${x.color ? `nb-sub nb-${x.color}` : ''}">${esc(txt)}</span>` : '<span class="meta">Este versículo no está en los datos cargados.</span>';
@@ -2085,7 +2261,7 @@ if (typeof document !== 'undefined') (function () {
     }
     const fi = t.closest('[data-nb-filtro]'); if (fi) { nbF.color = fi.dataset.nbFiltro; refrescarListaNotas(); return; }
     if (t.closest('[data-nb-exportar]')) { exportarNotasArchivo(); return; }
-    if (t.closest('[data-nb-copiar-todo]')) { copiarTexto(N.textoNotas(D, N.listarNotas(notasGuardadas(), nbF))).then(ok => nbEstadoVista(ok ? 'Notas copiadas como texto (las que muestra el filtro).' : 'No se pudo copiar en este navegador.')); }
+    if (t.closest('[data-nb-copiar-todo]')) { copiarTexto(N.textoNotas(D, N.listarNotas(notasGuardadas(), nbF).filter(x => refOk(x.ref)))).then(ok => nbEstadoVista(ok ? 'Notas copiadas como texto (las que muestra el filtro).' : 'No se pudo copiar en este navegador.')); }
   });
   document.addEventListener('submit', e => {
     const f = e.target.closest && e.target.closest('[data-nb-form]'); if (!f) return;
@@ -2213,7 +2389,7 @@ if (typeof document !== 'undefined') (function () {
         const attrs = c === 'he' ? ' lang="he" dir="rtl"' : c === 'gr' ? ' lang="grc"' : '';
         const num = c === 'he' && f.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">Heb. ${esc(f.heNum)}</span>` : '';
         const nt = c === 'rv' ? NTc[f.ref] : null; // subrayado del lector (Tu nota se ve y edita en la lectura normal)
-        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : c === 'rv' && f.nota ? esc(f.nota) : 'Sin texto en los datos'}</p>`}</div>`;
+        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : c === 'rv' && f.nota ? esc(f.nota) : c === 'he' && f.heFalta ? esc(f.heFalta) : c === 'gr' && f.grFalta ? esc(f.grFalta) : 'Sin texto en los datos'}</p>`}</div>`;
       };
       return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>${nota}`;
     }).join('');
@@ -2255,8 +2431,11 @@ if (typeof document !== 'undefined') (function () {
     if (ORIG.est.o !== 'ok') return `<p class="contexto">Qué manuscritos antiguos contienen ${estado.activo ? 'este versículo' : 'este pasaje'} y dónde difieren entre sí.</p>
       ${ORIG.est.o === 'cargando' ? '<p class="meta" data-estado-carga>Cargando…</p>' : ORIG.est.o === 'error' ? `<p class="vacio-txt">${NO_DISP.o} <button type="button" class="enlace-boton" data-reintentar="o">Reintentar</button></p>` : '<button type="button" class="boton mini-boton secundario" data-cargar-origen>Ver manuscritos y variantes</button>'}${QUE_ES}`;
     const ts = N.testigosDe(ORIG.o, refs), vs = N.variantesDe(ORIG.o, refs);
+    // Versículos sin hebreo o sin griego: una línea por versículo con el motivo de los datos, tal cual.
+    const st = N.sinTextoOriginal(ORIG.o, ORIG.g, refs);
+    const sinTxt = st.length ? `<p class="meta">Sin texto original en ${st.length === 1 ? 'un versículo' : st.length + ' casos'}:</p><ul class="sin-texto-orig">${st.map(x => `<li><strong>${esc(x.ref)} · ${x.idioma === 'he' ? 'hebreo' : 'griego'}</strong>: ${esc(x.nota)}</li>`).join('')}</ul>` : '';
     return `${vs.length ? `<p class="meta">${vs.length === 1 ? 'Una variante' : vs.length + ' variantes'} entre manuscritos:</p>${vs.map(varianteHTML).join('')}` : `<p class="contexto">Los datos no registran variantes en ${estado.activo ? 'este versículo' : 'este pasaje'}.</p>`}
-      ${ts.length ? `<p class="meta">Manuscritos que contienen ${estado.activo ? 'este versículo' : 'parte de este pasaje'}:</p><ul class="testigos">${ts.map(testigoHTML).join('')}</ul>` : '<p class="vacio-txt">Ningún manuscrito de los datos cubre este pasaje.</p>'}${QUE_ES}`;
+      ${ts.length ? `<p class="meta">Manuscritos que contienen ${estado.activo ? 'este versículo' : 'parte de este pasaje'}:</p><ul class="testigos">${ts.map(testigoHTML).join('')}</ul>` : '<p class="vacio-txt">Ningún manuscrito de los datos cubre este pasaje.</p>'}${sinTxt}${QUE_ES}`;
   }
   function abrirVariante(ref) {
     const vs = ORIG.o ? N.variantesDe(ORIG.o, [ref]) : [];
@@ -2452,8 +2631,9 @@ if (typeof document !== 'undefined') (function () {
     return html;
   }
   function mapasAntiguosHTML() {
-    const ms = N.mapasAntiguos(R);
-    if (!ms.length) return '';
+    // Mapas antiguos: cuando su primer tramo de referencia (p. ej. «Ex 12-19») ya es accesible entero.
+    const ms0 = N.mapasAntiguos(R), ms = ms0.filter(f => { const rs = rangosRec(f); return ACC().todo || (rs ? ACC().clave(rs[0][0]) && ACC().clave(rs[0][1]) : recOk(f)); });
+    if (!ms.length) return ms0.length ? `<section class="mapas-antiguos"><h2>Mapas antiguos</h2>${bloqueadoHTML('Los mapas antiguos se irán mostrando cuando llegues a los relatos que dibujan.')}</section>` : '';
     const con = ms.filter(f => f.imagen), sin = ms.filter(f => !f.imagen);
     return `<section class="mapas-antiguos" aria-labelledby="t-mapas-antiguos"><h2 id="t-mapas-antiguos">Mapas antiguos</h2>
       <p class="sub">Mapas impresos entre los siglos XVI y XIX: registran cómo se dibujaba entonces la geografía del relato, no cómo era en tiempos bíblicos. Pulsa uno para verlo ampliado.</p>
@@ -2542,7 +2722,7 @@ if (typeof document !== 'undefined') (function () {
     if (!estado.abiertos) estado.abiertos = N.arbolInicial(D, 2);
     const h = args && args[0] ? args[0] : null;
     if (h !== estado.focoHash) { estado.focoHash = h; estado.foco = null; estado.aviso = ''; if (h) { estado.lineaSolo = false; if (!abrirHasta(h) && N.sinParentesco(D).includes(h)) { estado.sinParAbierta = true; estado.foco = h; estado.aviso = `${nombre(h)} no tiene parentesco registrado en el texto: está en la lista del final.`; } } }
-    const atajos = N.atajosLinea(D);
+    const atajos = N.atajosLinea(D).filter(a => personaOk(a.desde) && personaOk(a.hasta)); // líneas que ya se pueden recorrer leyendo
     const lp = atajos.length ? [atajos[0].desde].concat(atajos.map(a => a.hasta)).map(nombre).join(' → ') : '';
     const g = estado.vistaArbol === 'grafico';
     return `<h1 tabindex="-1">Árbol genealógico</h1>
@@ -2561,12 +2741,12 @@ if (typeof document !== 'undefined') (function () {
         ${estado.lineaSolo ? '<button type="button" class="boton secundario" id="btn-todo">Mostrar todo el árbol</button>' : ''}</div>` : ''}
       ${estado.lineaSolo ? '' : '<div class="herr"><button type="button" class="boton secundario" id="btn-plegar">Plegar todo</button><button type="button" class="boton secundario" id="btn-desplegar">Desplegar todo</button></div>'}
       ${(m => `<p><button type="button" class="boton secundario" id="btn-mujeres" aria-pressed="${estado.mujeres}">Mujeres: ${m.conNombre} con nombre, ${m.sinNombre} sin nombre</button></p>`)(N.contarMujeres(D))}
-      <p class="meta" id="arbol-aviso" aria-live="polite">${esc(estado.aviso) || (estado.lineaSolo ? '' : `${N.indice(D).personas.size} personas. Las ramas empiezan plegadas: despliégalas con ▸ o busca un nombre para ir a él.`)}</p>
+      <p class="meta" id="arbol-aviso" aria-live="polite">${esc(estado.aviso) || (estado.lineaSolo ? '' : `${[...N.indice(D).personas.keys()].filter(personaOk).length} personas hasta donde has leído. Las ramas empiezan plegadas: despliégalas con ▸ o busca un nombre para ir a él.`)}</p>
       <div id="arbol"${estado.mujeres ? ' class="resaltar-mujeres"' : ''}>${arbolHTML()}</div>`;
   }
   function resultadosHTML() {
     if (!estado.q) return '';
-    const r = N.buscar(D, estado.q, 20);
+    const r = N.buscarAccesible(D, ACC(), estado.q, 20); // solo quien ya apareció en lo accesible
     return r.length ? r.map(p => `<li><button type="button" class="persona-btn${p.sexo === 'f' ? ' mujer' : p.sexo === 'm' ? ' hombre' : ' indef'}" data-ir-arbol="${esc(p.id)}" aria-label="Ir a ${esc(p.nombre || p.id)} en el árbol">${esc(p.nombre || p.id)}${p.primera_ref ? ` <span class="meta">${esc(p.primera_ref)}</span>` : ''}</button></li>`).join('') : '<li class="meta">Sin resultados.</li>';
   }
   // Lleva a una persona: despliega sus ascendientes, pinta y la centra.
@@ -2599,9 +2779,15 @@ if (typeof document !== 'undefined') (function () {
   }
   // Años vividos (verde si lo dice el texto, violeta si es cálculo) y de qué año a qué año desde Adán (siempre cálculo).
   // En "Comparar" se muestran TM y LXX solo si difieren.
+  // Vida vista desde lo accesible: años vividos y nacimiento/muerte (cálculo) solo con versículos ya accesibles.
+  function vidaOk(id, tr, combo) {
+    const v = N.vida(D, id, tr, combo), A = ACC();
+    const c = v.nacimiento !== null ? N.vidaAccesible(D, Object.assign({ persona: id }, v), A) : null;
+    return { total: v.total && N.edadAccesible(A, v.total) ? v.total : null, nacimiento: c ? c.nacimiento : null, muerte: c ? c.muerte : null, evNac: c ? c.evNac : null, evMuerte: c ? c.evMuerte : null };
+  }
   function vidaHTML(id) {
     const C = N.crono(D), ts = trads();
-    let vs = ts.map(tr => ({ tr, v: N.vida(D, id, tr, C ? comboDe(tr) : null) })).filter(x => x.v.total || x.v.nacimiento !== null);
+    let vs = ts.map(tr => ({ tr, v: vidaOk(id, tr, C ? comboDe(tr) : null) })).filter(x => x.v.total || x.v.nacimiento !== null);
     if (!vs.length) return '';
     const firma = x => [x.v.total && x.v.total.valor, x.v.nacimiento, x.v.muerte].join('|');
     if (vs.length > 1 && firma(vs[0]) === firma(vs[1])) vs = [vs[0]];
@@ -2621,7 +2807,7 @@ if (typeof document !== 'undefined') (function () {
     opc = opc || {};
     const linea = N.lineaPrincipal(D), abierto = opc.solo || estado.abiertos.has(n.id), nh = opc.solo ? 0 : n.hijos.length;
     const gen = opc.gen !== undefined ? opc.gen : prof;
-    const us = N.uniones(D, n), parejas = us.filter(u => u.pareja);
+    const us = unionesOk(n), parejas = us.filter(u => u.pareja);
     // Con varias parejas y las ramas a la vista, cada rama lleva los datos de su pareja; aquí basta el nombre.
     // Las que no tienen rama visible (sin hijos, fila plegada o línea sola) muestran aquí su versículo, nota y años.
     const conRama = u => !opc.solo && abierto && us.length > 1 && u.hijos.length;
@@ -2637,7 +2823,7 @@ if (typeof document !== 'undefined') (function () {
   // Filas de los hijos (y sus ramas abiertas), una rama por pareja cuando hay más de una.
   function hijosHTML(n, prof, fila) {
     fila = fila || (h => bloqueHTML(h, prof + 1));
-    const us = N.uniones(D, n);
+    const us = unionesOk(n);
     if (us.length < 2) return n.hijos.map(fila).join('');
     return us.filter(u => u.hijos.length).map(u => ramaHTML(u, n, prof + 1) + u.hijos.map(fila).join('')).join('');
   }
@@ -2646,25 +2832,34 @@ if (typeof document !== 'undefined') (function () {
   function nodoLinea(id, padreId) {
     const n = N.nodoArbol(D, id), I = N.indice(D);
     const vinculos = (I.padres.get(id) || []).filter(x => x.de === padreId);
-    return n ? Object.assign({}, n, { vinculos: padreId ? vinculos : n.vinculos }) : { id, vinculos, hijos: [], conyuges: (I.conyuges.get(id) || []).filter((r, i, a) => a.findIndex(x => x.otro === r.otro) === i), madres: [] };
+    return n ? Object.assign(podarArbol(n), { vinculos: padreId ? vinculos : n.vinculos }) : { id, vinculos, hijos: [], conyuges: (I.conyuges.get(id) || []).filter((r, i, a) => a.findIndex(x => x.otro === r.otro) === i), madres: [] };
   }
   function lineaHTML(at) {
     const M = N.mapaArbol(D), gen = (id, i) => { const x = M.nodos.get(id); return x ? x.prof : i; };
     let html = at.ruta.map((id, i) => filaHTML(nodoLinea(id, at.ruta[i - 1]), i, { solo: true, gen: gen(id, i) })).join('');
     if (at.extra.length) {
-      const fin = at.ruta[at.ruta.length - 1], nf = N.nodoArbol(D, fin), prof = at.ruta.length - 1, g0 = gen(fin, prof) + 1;
+      const fin = at.ruta[at.ruta.length - 1], nf0 = N.nodoArbol(D, fin), nf = nf0 && podarArbol(nf0), prof = at.ruta.length - 1, g0 = gen(fin, prof) + 1;
       const fila = h => filaHTML(h, prof + 1, { solo: true, gen: g0 });
       html += nf ? hijosHTML(nf, prof, fila) : at.extra.map(id => fila(nodoLinea(id, fin))).join('');
     }
     return `<ul class="arbol" aria-label="Línea ${esc(tituloAtajo(at))}">${html}</ul>`;
   }
+  // Árbol podado a lo accesible: sin personas (ni parejas) que aún no han aparecido en la lectura.
+  const podarArbol = n => Object.assign({}, n, { hijos: (n.hijos || []).filter(h => personaOk(h.id)).map(podarArbol), conyuges: (n.conyuges || []).filter(c => personaOk(c.otro) && refOk(c.ref)),
+    madres: (n.madres || []).filter(r => personaOk(r.de) && refOk(r.ref)), vinculos: (n.vinculos || []).filter(r => refOk(r.ref)) });
+  // Parejas de un nodo: la madre (o cónyuge) aún no aparecida en lo accesible queda como «madre no indicada».
+  const unionesOk = n => { const us = N.uniones(D, n), out = [];
+    us.forEach(u => { const ok = !u.pareja || personaOk(u.pareja); const x = ok ? u : Object.assign({}, u, { pareja: null, vinculo: null });
+      const sin = !x.pareja && out.find(y => !y.pareja); if (sin) sin.hijos = sin.hijos.concat(x.hijos); else out.push(x); });
+    return out; };
+  const atajoOk = at => at && Object.assign({}, at, { ruta: at.ruta.filter(personaOk), extra: (at.extra || []).filter(personaOk) });
   function arbolHTML() {
-    const bosque = N.construirBosque(D);
-    if (!bosque.length) return '<p>No hay relaciones en los datos.</p>';
+    const bosque = N.construirBosque(D).filter(r => personaOk(r.id)).map(podarArbol);
+    if (!bosque.length) return N.construirBosque(D).length ? bloqueadoHTML('El árbol crece a medida que lees en orden: aún no ha aparecido nadie.') : '<p>No hay relaciones en los datos.</p>';
     const g = estado.vistaArbol === 'grafico';
     if (estado.lineaSolo) {
-      const at = N.atajosLinea(D).find(a => a.id === estado.lineaSolo);
-      if (at) return g ? lienzoHTML(gaLinea(at), `Línea ${tituloAtajo(at)}`) : lineaHTML(at);
+      const at = atajoOk(N.atajosLinea(D).find(a => a.id === estado.lineaSolo));
+      if (at && at.ruta.length) return g ? lienzoHTML(gaLinea(at), `Línea ${tituloAtajo(at)}`) : lineaHTML(at);
       estado.lineaSolo = false;
     }
     const otras = bosque.slice(1);
@@ -2684,7 +2879,7 @@ if (typeof document !== 'undefined') (function () {
   // Las líneas no son CSS: las dibuja conectoresGA() desde el ⚭ de cada pareja hasta la tarjeta de cada hijo.
   function gaNodo(n, opc) {
     opc = opc || {};
-    const linea = N.lineaPrincipal(D), us = N.uniones(D, n), parejas = us.filter(u => u.pareja);
+    const linea = N.lineaPrincipal(D), us = unionesOk(n), parejas = us.filter(u => u.pareja);
     const nh = opc.solo || opc.forzar ? 0 : n.hijos.length, abierto = opc.solo || opc.forzar || estado.abiertos.has(n.id);
     // El botón de plegar va bajo el ⚭ si hay una sola pareja (de ahí baja la descendencia); si no, bajo la persona.
     const btn = nh ? `<button type="button" class="ga-plegar" data-ga-plegar="${esc(n.id)}" aria-expanded="${abierto}" aria-label="${abierto ? 'Plegar' : 'Desplegar'} descendencia de ${esc(nombre(n.id))} (${nh})">${abierto ? '▾ plegar' : `▸ ${nh} ${nh === 1 ? 'hijo' : 'hijos'}`}</button>` : '';
@@ -2770,7 +2965,7 @@ if (typeof document !== 'undefined') (function () {
   }
   // Personas sin parentesco registrado: sección plegable al final, cada una abre su ficha.
   function sinParHTML() {
-    const ids = N.sinParentesco(D);
+    const ids = N.sinParentesco(D).filter(personaOk);
     if (!ids.length) return '';
     return `<details class="plegable sin-parentesco" id="sin-parentesco"${estado.sinParAbierta ? ' open' : ''}>
       <summary>Personas sin parentesco registrado en el texto (${ids.length})</summary>
@@ -2791,7 +2986,7 @@ if (typeof document !== 'undefined') (function () {
 
   /* ---------- Edades ---------- */
   function celda(id, tipo, trad, dif) {
-    const e = N.edad(D, id, tipo, trad);
+    const e0 = N.edad(D, id, tipo, trad), e = e0 && N.edadAccesible(ACC(), e0) ? e0 : null; // edad de un versículo aún no accesible: «—»
     const cls = dif && dif !== 'igual' ? ' class="difiere"' : '';
     if (!e) return `<td${cls}><span class="vacio" aria-label="sin dato">—</span></td>`;
     return `<td${cls}><button type="button" class="celda${e.derivado ? ' calculo' : ''}" data-edad="${esc(id)}|${tipo}|${trad}" aria-label="${esc(nombre(id))}, ${TIPO_TXT[tipo]} ${trad}: ${e.valor}${e.derivado ? ' (cálculo)' : ''}">${e.valor}${e.derivado ? '<span class="marca-calc" aria-hidden="true">*</span>' : ''}</button></td>`;
@@ -2842,7 +3037,7 @@ if (typeof document !== 'undefined') (function () {
     const C = N.crono(D);
     if (!C) return '<p class="vacio-txt">Los datos todavía no traen la cronología. Cuando lleguen, aquí verás la línea de tiempo; mientras, mira la tabla de edades.</p>';
     const comparar = estado.trad === 'ambas', e = eleg(), combo = N.combinacion(D, comparar ? 'TM' : tradSimple(), e);
-    const L = N.lineaDeTiempo(D, combo);
+    const L = N.lineaAccesible(D, combo, ACC()); // solo sucesos e hitos ya accesibles
     const secs = L.map(g => {
       let prev = null;
       const items = g.items.map(it => {
@@ -2861,14 +3056,16 @@ if (typeof document !== 'undefined') (function () {
     }).join('');
     return `<p class="aviso-calculo"><strong>El texto bíblico no da fechas de calendario.</strong> Cada año es un ${insignia('calculo')}: ${esc(unidadTxt(C))}, encadenando edades del texto${comparar ? '; se ordena por el TM' : ''}. Pulsa un suceso para ver cómo se calcula.</p>
       <p class="leyenda-tl meta"><span>${ICO_EV.nacimiento}Nacimiento</span><span>${ICO_EV.muerte}Muerte</span><span>${ICO_EV.evento}Suceso</span><span>${ICO_EV.diluvio}Diluvio</span><span>${ICO_EV.hito}Sin dato de tiempo (fuera del eje)</span></p>
-      ${secs || '<p class="vacio-txt">La cronología no trae sucesos.</p>'}`;
+      ${ACC().todo ? '' : `<p class="meta">${ICO_CANDADO} Solo los sucesos hasta donde has leído; los siguientes aparecerán al avanzar.</p>`}
+      ${secs || '<p class="vacio-txt">Aún no hay sucesos en lo que has leído.</p>'}`;
   }
   // Tarjeta de un suceso: año(s), cadena de pasos desde Adán (plegada), supuestos y quién vivía entonces.
   function abrirEvento(id) {
     const C = N.crono(D), ev = C && C.porId.get(id); if (!ev) return;
+    if (!refOk(ev.ref)) { abrirBloqueada('Suceso sin descubrir', 'Este suceso ocurre más adelante en la lectura.'); return; }
     const e = eleg(), comparar = estado.trad === 'ambas';
     const bloque = tr => {
-      const combo = N.combinacion(D, tr, e), a = N.anioEvento(D, id, combo), cad = N.cadenaEvento(D, id, combo), dsp = N.despuesDe(D, id, combo), vivos = N.vivosEn(D, a, combo);
+      const combo = N.combinacion(D, tr, e), a = N.anioEvento(D, id, combo), cad = N.cadenaEvento(D, id, combo), dsp = N.despuesDe(D, id, combo), vivos = N.vivosEn(D, a, combo).filter(v => personaOk(v.persona));
       return `<section class="bloque bloque-calc"><h3>${TRAD_TXT[tr]}</h3>
         <p class="cifra calc">${a === null ? 'Sin año en esta combinación' : 'Año ' + a}</p>
         <p>${insignia('calculo')}${dsp ? ` ${relTxt(dsp)}` : ''}</p>
@@ -2882,7 +3079,7 @@ if (typeof document !== 'undefined') (function () {
     const c = comparar ? N.compararEvento(D, id, e) : null;
     const sup = C.supuestos.map(s => { const o = s.opciones.find(x => x.id === e[s.id]) || {}; return `<li>${esc(s.pregunta || s.id)}: <strong>${esc(o.texto || o.id)}</strong></li>`; }).join('');
     abrirDetalle(ev.titulo || id, `<p class="meta">${esc(TIPO_EV[ev.tipo] || 'Suceso')} · ${refHTML(ev.ref)}</p>
-      ${(ev.personas || []).length ? `<ul class="chips">${ev.personas.map(p => `<li>${btnPersona(p)}</li>`).join('')}</ul>` : ''}
+      ${(ev.personas || []).filter(personaOk).length ? `<ul class="chips">${ev.personas.filter(personaOk).map(p => `<li>${btnPersona(p)}</li>`).join('')}</ul>` : ''}
       ${c && c.dif !== null ? `<p class="difiere-txt">Entre TM y LXX hay ${anios(Math.abs(c.dif))} de diferencia.</p>` : ''}
       ${(comparar ? ['TM', 'LXX'] : [tradSimple()]).map(bloque).join('')}
       ${sup ? `<p class="meta">Supuestos usados (se cambian en Tiempo):</p><ul class="vinculos">${sup}</ul>` : ''}
@@ -2899,16 +3096,16 @@ if (typeof document !== 'undefined') (function () {
       ${trads().map(C ? barrasCronoHTML : barrasHTML).join('')}</section>`;
   }
   function barrasCronoHTML(trad) {
-    const C = N.crono(D), combo = comboDe(trad), m = N.vidasCrono(D, combo);
-    const filas = [...m.values()].filter(x => x.nacimiento !== null).sort((a, b) => a.nacimiento - b.nacimiento);
-    const omit = [...m.values()].filter(x => x.nacimiento === null);
+    const C = N.crono(D), combo = comboDe(trad), m = N.vidasCrono(D, combo), A = ACC();
+    const filas = [...m.values()].map(x => N.vidaAccesible(D, x, A)).filter(x => x && x.nacimiento !== null).sort((a, b) => a.nacimiento - b.nacimiento);
+    const omit = [...m.values()].filter(x => x.nacimiento === null && personaOk(x.persona));
     const aviso = omit.length ? `<p class="meta omitidas">Sin nacimiento calculable en esta combinación (se omiten): ${omit.map(x => esc(nombre(x.persona))).join(', ')}.</p>` : '';
     if (!filas.length) return `<h3>${TRAD_TXT[trad]}</h3><p>Sin datos suficientes.</p>${aviso}`;
     const max = Math.max(1, ...filas.map(f => f.muerte !== null ? f.muerte : f.nacimiento));
     const paso = max > 3000 ? 500 : max > 1200 ? 250 : 100;
     const marcas = []; for (let a = 0; a <= max; a += paso) marcas.push(a);
     const pct = x => (x / max * 100).toFixed(2) + '%';
-    const evD = C.eventos.find(N.esDiluvio), dil = evD ? N.anioEvento(D, evD.id, combo) : null;
+    const evD = C.eventos.find(N.esDiluvio), dil = evD && refOk(evD.ref) ? N.anioEvento(D, evD.id, combo) : null;
     const marcaDil = dil !== null && dil <= max ? `<span class="diluvio-marca" style="left:${pct(dil)}"></span>` : '';
     return `<h3>${TRAD_TXT[trad]}</h3>
       ${dil !== null ? `<p class="leyenda"><span class="muestra-diluvio" aria-hidden="true"></span> Diluvio ≈ año ${dil} desde Adán ${insignia('calculo')} (${refHTML(evD.ref)}).</p>` : ''}
@@ -2918,7 +3115,7 @@ if (typeof document !== 'undefined') (function () {
       <div class="eje" aria-hidden="true">${marcas.map(a => `<span style="left:${pct(a)}">${a}</span>`).join('')}</div>${aviso}`;
   }
   function tablaHTML() {
-    const ts = trads(), orden = N.ordenPatriarcas(D), ambas = ts.length === 2;
+    const ts = trads(), orden = N.ordenPatriarcas(D).filter(personaOk), ambas = ts.length === 2;
     const cab = ambas
       ? `<tr><th rowspan="2" scope="col">Persona</th>${N.TIPOS.map(t => `<th colspan="2" scope="colgroup">${TIPO_TXT[t]}</th>`).join('')}</tr><tr>${N.TIPOS.map(() => '<th scope="col">TM</th><th scope="col">LXX</th>').join('')}</tr>`
       : `<tr><th scope="col">Persona</th>${N.TIPOS.map(t => `<th scope="col">${TIPO_TXT[t]}</th>`).join('')}</tr>`;
@@ -2929,21 +3126,21 @@ if (typeof document !== 'undefined') (function () {
       ${eventosHTML()}`;
   }
   function eventosHTML() {
-    const gs = N.edadesEnEventoPorPersona(D);
+    const gs = N.edadesEnEventoPorPersona(D).filter(g => personaOk(g.persona)).map(g => Object.assign({}, g, { items: g.items.filter(x => refOk(x.ref)) })).filter(g => g.items.length);
     return `<section class="eventos" aria-labelledby="ev-t"><h2 id="ev-t">Edades en momentos del relato</h2>
       ${gs.length ? `<p class="meta">Edad que el texto da a una persona en un momento concreto, en orden de versículo. Si la Septuaginta da otra cifra, se indica.</p>
         <ul class="eventos-lista">${gs.map(g => `<li><h3>${btnPersona(g.persona)}</h3><ul class="edades-acomp">${g.items.map(eventoHTML).join('')}</ul></li>`).join('')}</ul>`
         : '<p class="vacio-txt">Los datos todavía no traen edades en momentos del relato.</p>'}</section>`;
   }
   function barrasHTML(trad) {
-    const { filas, omitidas } = N.vidas(D, trad);
+    const v0 = N.vidas(D, trad), filas = v0.filas.filter(f => personaOk(f.id)), omitidas = v0.omitidas.filter(personaOk);
     const aviso = omitidas.length ? `<p class="meta omitidas">Se ${omitidas.length === 1 ? 'omite' : 'omiten'} ${omitidas.length} ${omitidas.length === 1 ? 'persona' : 'personas'} con edades pero sin la cadena completa desde Adán, así que no se pueden situar: ${omitidas.map(id => esc(nombre(id))).join(', ')}.</p>` : '';
     if (!filas.length) return `<p>Sin datos suficientes para ${trad}.</p>${aviso}`;
     const max = Math.max(1, ...filas.map(f => f.muerte !== null ? f.muerte : f.nacimiento));
     const paso = max > 3000 ? 500 : max > 1200 ? 250 : 100;
     const marcas = []; for (let a = 0; a <= max; a += paso) marcas.push(a);
     const pct = x => (x / max * 100).toFixed(2) + '%';
-    const dil = N.anoDiluvio(D, trad);
+    const dil0 = N.anoDiluvio(D, trad), dil = dil0 && refOk(dil0.ref) ? dil0 : null;
     const marcaDil = dil && dil.ano <= max ? `<span class="diluvio-marca" style="left:${pct(dil.ano)}"></span>` : '';
     return `<h3>${trad === 'TM' ? 'Texto Masorético (TM)' : 'Septuaginta (LXX)'}</h3>
       ${dil ? `<p class="leyenda"><span class="muestra-diluvio" aria-hidden="true"></span> Diluvio ≈ año ${dil.ano} desde Adán ${insignia('calculo')}: ${esc(nombre(dil.persona))} tenía ${dil.valor} años (${refHTML(dil.ref)}).</p>` : ''}
@@ -3017,25 +3214,27 @@ if (typeof document !== 'undefined') (function () {
   // Bloques comunes a las fichas de personaje, objeto y escenario. tipo: 'persona' | 'objetos' | 'escenarios'.
   function bloquesJuegoHTML(e, tipo, id) {
     const JJ = JUEGO();
-    const ds = (Array.isArray(e.datos) ? e.datos : []).filter(x => x && x.texto && N.clave(x.ref) !== null);
+    const ds = (Array.isArray(e.datos) ? e.datos : []).filter(x => x && x.texto && N.clave(x.ref) !== null && refOk(x.ref));
     const ex = (Array.isArray(e.externo) ? e.externo : []).filter(x => x && x.texto && x.fuente && /^https:\/\//i.test(x.url || ''));
-    const aps = (Array.isArray(e.apariciones) ? e.apariciones : []).filter(x => x && N.clave(x.inicio) !== null);
-    const mps = (Array.isArray(e.menciones_posteriores) ? e.menciones_posteriores : []).filter(x => x && N.clave(x.ref) !== null);
+    const aps0 = (Array.isArray(e.apariciones) ? e.apariciones : []).filter(x => x && N.clave(x.inicio) !== null);
+    const aps = aps0.filter(x => refOk(x.inicio)), apsOcultas = aps0.length - aps.length;
+    const mps = (Array.isArray(e.menciones_posteriores) ? e.menciones_posteriores : []).filter(x => x && N.clave(x.ref) !== null && refOk(x.ref));
     const datoLi = x => plegadoRef(x.ref) ? `<li class="dato plegado"><span class="meta">Dato plegado en este perfil (contenido para personas adultas).</span> ${refHTML(x.ref)}</li>`
       : `<li class="dato"><p class="dato-txt">${esc(x.texto)}</p><p class="dato-ins">${insignia(x.certeza === 'inferido' ? 'inferido' : 'texto', x.ref)}</p>${x.cita ? `<blockquote>${esc(x.cita)}</blockquote>` : ''}</li>`;
     const exLi = x => `<li><span class="etiqueta externa">Fuente externa</span> ${esc(x.texto)} <span class="meta">${esc(x.fuente)} · <a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">abrir la fuente</a></span></li>`;
     const apLi = x => `<li><a class="ref" href="${hrefRef(N.parseRef(x.inicio))}">${esc(rango({ inicio: x.inicio, fin: x.fin || x.inicio }))}</a></li>`;
     // Relacionados: personas, lugares del mapa, pieza del tabernáculo, objetos y escenarios del catálogo.
     const rel = [];
-    const personas = (Array.isArray(e.personas) ? e.personas : []).filter(p => N.persona(D, p));
+    const personas = (Array.isArray(e.personas) ? e.personas : []).filter(p => N.persona(D, p) && personaOk(p));
     if (personas.length) rel.push(`<p class="rel-tit">Personas</p><ul class="chips">${personas.map(p => `<li>${btnPersona(p)}</li>`).join('')}</ul>`);
-    const lugs = [].concat(e.lugar ? [e.lugar] : [], Array.isArray(e.lugares) ? e.lugares : []).filter((l, i, a) => N.lugar(D, l) && a.indexOf(l) === i);
+    const lugs = [].concat(e.lugar ? [e.lugar] : [], Array.isArray(e.lugares) ? e.lugares : []).filter((l, i, a) => N.lugar(D, l) && a.indexOf(l) === i && lugarOk(l));
     if (lugs.length) rel.push(`<p class="rel-tit">Lugares del mapa</p><ul class="chips">${lugs.map(l => `<li>${btnLugar(l)}</li>`).join('')}</ul>`);
-    if (e.tabernaculo && TB && N.tbPieza(TB, e.tabernaculo)) rel.push(`<p class="rel-tit">Tabernáculo</p><p><a class="boton secundario" href="${hrefTB(e.tabernaculo)}">Ver «${esc(N.tbPieza(TB, e.tabernaculo).nombre || e.tabernaculo)}» en el plano</a></p>`);
+    if (e.tabernaculo && TB && N.tbPieza(TB, e.tabernaculo) && visiblesLeidoTB().has(e.tabernaculo)) rel.push(`<p class="rel-tit">Tabernáculo</p><p><a class="boton secundario" href="${hrefTB(e.tabernaculo)}">Ver «${esc(N.tbPieza(TB, e.tabernaculo).nombre || e.tabernaculo)}» en el plano</a></p>`);
     const inv = N.relacionadosJuego(JJ, tipo === 'persona' ? 'persona' : tipo === 'objetos' ? 'objeto' : 'escenario', id);
     const objs = tipo === 'escenarios' ? (Array.isArray(e.objetos) ? e.objetos : []) : inv.objetos;
     const escs = tipo === 'escenarios' ? [] : inv.escenarios;
-    const cs = objs.map(o => btnCosa('objetos', o)).concat(escs.map(s => btnCosa('escenarios', s))).filter(Boolean);
+    const cosaOk = (g, x) => { const s = N.vistaFichaJuego(D, JJ, g, x, [...pasajesLeidos()]); return !!s && (!!s.visible || (!!s.primera && refOk(s.primera))); };
+    const cs = objs.filter(o => cosaOk('objetos', o)).map(o => btnCosa('objetos', o)).concat(escs.filter(x => cosaOk('escenarios', x)).map(x => btnCosa('escenarios', x))).filter(Boolean);
     if (cs.length) rel.push(`<p class="rel-tit">Objetos y escenarios</p><ul class="chips">${cs.map(b => `<li>${b}</li>`).join('')}</ul>`);
     const imgs = imagenesJuegoHTML(aps);
     if (imgs) rel.push(`<p class="rel-tit">Imágenes</p>${imgs}`);
@@ -3043,11 +3242,14 @@ if (typeof document !== 'undefined') (function () {
       ${ds.length ? `<h3>Lo que dice el texto</h3><ul class="datos-juego">${ds.map(datoLi).join('')}</ul>` : ''}
       ${ex.length ? `<h3>Fuera de la Biblia</h3><p class="meta">Historia, arqueología o tradición: no lo dice el texto bíblico. Enlaces a sitios ajenos a esta app.</p><ul class="externos">${ex.map(exLi).join('')}</ul>` : ''}
       <h3>Apariciones${aps.length ? ` (${aps.length})` : ''}</h3>
-      ${aps.length ? `<p class="meta">Donde está presente en el relato (aunque no se le nombre); las genealogías no cuentan.</p><ul class="chips apariciones">${aps.map(apLi).join('')}</ul>` : '<p class="meta">Solo se le nombra en genealogías.</p>'}
+      ${aps.length ? `<p class="meta">Donde está presente en el relato (aunque no se le nombre); las genealogías no cuentan.</p><ul class="chips apariciones">${aps.map(apLi).join('')}</ul>` : aps0.length ? '' : '<p class="meta">Solo se le nombra en genealogías.</p>'}
+      ${apsOcultas ? `<p class="meta">${ICO_CANDADO} Hay más apariciones adelante: se verán al leerlas.</p>` : ''}
       ${mps.length ? `<h3>Menciones posteriores</h3><p class="meta">Otros lo nombran más adelante.</p><ul class="chips">${mps.map(x => `<li>${refHTML(x.ref)}</li>`).join('')}</ul>` : ''}
       ${rel.length ? `<h3>Relacionados</h3>${rel.join('')}` : ''}
       <p class="meta">Catálogo de juego del proyecto: resumen y nivel son editoriales; cada dato lleva su versículo.</p></section>`;
   }
+  // Los resúmenes del catálogo no llevan versículo: por prudencia solo se ven cuando todas sus apariciones son accesibles.
+  const resumenOk = e => ACC().todo || ((Array.isArray(e.apariciones) ? e.apariciones : []).length > 0 && e.apariciones.every(x => x && refOk(x.fin || x.inicio)));
   // Ficha de objeto o escenario (mismo diálogo que la de personaje).
   function abrirCosa(g, id) {
     const JJ = JUEGO(), e = JJ && (JJ[g] || {})[id]; if (!e) return;
@@ -3058,7 +3260,7 @@ if (typeof document !== 'undefined') (function () {
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
       <div class="ficha-cab"><figure class="retrato vacio cosa c-${g}${obt ? '' : ' sin-obtener'}">${ico}<figcaption>${obt ? GRUPO_TXT[g] : 'Sin descubrir'}</figcaption></figure><div class="ficha-datos">
         <p class="rol">${GRUPO_TXT[g]}${obt && e.tipo ? ' · ' + esc(e.tipo) : ''}</p>
-        ${obt && e.resumen ? `<p class="resumen-juego">${esc(e.resumen)}</p>` : ''}
+        ${obt && e.resumen && resumenOk(e) ? `<p class="resumen-juego">${esc(e.resumen)}</p>` : ''}
         <p class="ficha-estado${obt ? ' en-col' : ''}">${obt ? 'En tu colección' : `Aún no está en tu colección${s.primeraCap ? ' · aparece en ' + esc(capLegible(s.primeraCap)) : ''}`}</p>
         ${obt ? '' : '<p class="meta">Su ficha se verá cuando leas el pasaje donde aparece por primera vez.</p>'}
       </div></div>
@@ -3069,38 +3271,41 @@ if (typeof document !== 'undefined') (function () {
   }
   function abrirFicha(id) {
     const p = N.persona(D, id); if (!p) return;
+    if (!personaOk(id)) { abrirBloqueada('Persona sin descubrir', 'Esta persona aparece más adelante en la lectura. Su ficha se verá cuando llegues al pasaje donde se la nombra.'); return; }
     const I = N.indice(D);
+    const relOk = (r, otro) => refOk(r.ref) && personaOk(otro); // vínculo y la otra persona, ya accesibles
     const extra = r => `${citaHTML(r)}${r.nota ? `<p class="nota">${esc(r.nota)}</p>` : ''}`;
-    const padres = (I.padres.get(id) || []).map(r => `<li>${btnPersona(r.de)} <span class="meta">${r.tipo}</span> ${insignia(r.certeza, r.ref)}${extra(r)}</li>`);
-    const cony = (I.conyuges.get(id) || []).map(r => `<li>${btnPersona(r.otro)} ${insignia(r.certeza, r.ref)}${extra(r)}</li>`);
-    const hijos = N.hijosDe(D, id).map(r => {
-      const madre = r.tipo !== 'madre' ? (I.padres.get(r.a) || []).find(x => x.tipo === 'madre') : null;
+    const padres = (I.padres.get(id) || []).filter(r => relOk(r, r.de)).map(r => `<li>${btnPersona(r.de)} <span class="meta">${r.tipo}</span> ${insignia(r.certeza, r.ref)}${extra(r)}</li>`);
+    const cony = (I.conyuges.get(id) || []).filter(r => relOk(r, r.otro)).map(r => `<li>${btnPersona(r.otro)} ${insignia(r.certeza, r.ref)}${extra(r)}</li>`);
+    const hijos = N.hijosDe(D, id).filter(r => relOk(r, r.a)).map(r => {
+      const madre = r.tipo !== 'madre' ? (I.padres.get(r.a) || []).find(x => x.tipo === 'madre' && relOk(x, x.de)) : null;
       return `<li>${btnPersona(r.a)} ${insignia(r.certeza, r.ref)}${madre ? `<span class="meta">madre: ${esc(nombre(madre.de))}</span>` : ''}${extra(r)}</li>`;
     });
-    const tieneEdades = N.TIPOS.some(t => N.TRADS.some(tr => N.edad(D, id, t, tr)));
+    const tieneEdades = N.TIPOS.some(t => N.TRADS.some(tr => N.edadAccesible(ACC(), N.edad(D, id, t, tr))));
     const dif = N.diferencias(D, id);
-    const evs = N.edadesEnEvento(D).filter(x => x.persona === id);
+    const evs = N.edadesEnEvento(D).filter(x => x.persona === id && refOk(x.ref));
     const edades = (tieneEdades ? `<table class="edades mini"><thead><tr><th scope="col"></th><th scope="col">TM</th><th scope="col">LXX</th></tr></thead><tbody>${N.TIPOS.map(t => `<tr><th scope="row">${TIPO_TXT[t]}</th>${N.TRADS.map(tr => celda(id, t, tr, dif[t])).join('')}</tr>`).join('')}</tbody></table>` : '')
       + (evs.length ? `<ul class="edades-acomp">${evs.map(eventoHTML).join('')}</ul>` : '') || '<p class="meta">Sin edades registradas.</p>';
     // En el tiempo: nacimiento y muerte en años desde Adán (cálculo) con la combinación elegida en Tiempo.
     let tiempo = '', curios = '';
     if (N.crono(D)) {
-      const tr = tradSimple(), combo = comboDe(tr), x = N.vidasCrono(D, combo).get(id);
-      const cs = N.curiosidadesDe(D, id, combo).filter(c => N.curiosidadPermitida(c, perfil(), CONT()));
+      const tr = tradSimple(), combo = comboDe(tr), x0 = N.vidasCrono(D, combo).get(id), x = x0 ? N.vidaAccesible(D, x0, ACC()) : null;
+      const cs = N.curiosidadesDe(D, id, combo).filter(c => N.curiosidadPermitida(c, perfil(), CONT()) && N.curiosidadAccesible(ACC(), c) && c.personas.every(personaOk));
       const liC = c => `<li class="curio"><p>${esc(c.texto)}.</p><details class="plegable"><summary>Pasos y versículos</summary>${pasosCurio(c)}</details></li>`;
       if (cs.length) curios = `<h3>Curiosidades ${insignia('calculo')}</h3><ul class="curios">${cs.slice(0, 3).map(liC).join('')}</ul>
         ${cs.length > 3 ? `<details class="plegable"><summary>Ver ${cs.length - 3} más</summary><ul class="curios">${cs.slice(3).map(liC).join('')}</ul></details>` : ''}
         <p class="meta">Calculadas por esta app con ${esc(TRAD_TXT[tr])} y los supuestos elegidos en Tiempo; los años son «años desde la creación de Adán».</p>`;
       if (x && (x.nacimiento !== null || x.muerte !== null)) {
         const cel = (a, ev) => a === null ? '<span class="meta">sin dato</span>' : `<button type="button" class="celda-acomp" data-ev="${esc(ev)}"><strong>${a}</strong></button>`;
-        const cont = N.contemporaneos(D, id, combo, 8);
+        const cont = N.contemporaneos(D, id, combo, 30).filter(c => personaOk(c.persona)).slice(0, 8);
         tiempo = `<h3>En el tiempo ${insignia('calculo')}</h3>
           <div class="par"><span>Nace<br>${cel(x.nacimiento, x.evNac)}</span><span>Muere<br>${cel(x.muerte, x.evMuerte)}</span></div>
           <p class="meta">Años desde la creación de Adán (${tr}, con los supuestos elegidos en Tiempo). Pulsa una cifra para ver el cálculo.</p>
           ${cont.length ? `<p class="meta">Contemporáneos destacados:</p><ul class="chips">${cont.map(c => `<li>${btnPersona(c.persona)}</li>`).join('')}</ul>` : ''}`;
       }
     }
-    const refs = [...new Set([].concat(p.primera_ref ? [p.primera_ref] : [], p.refs || []))];
+    const refs0 = [...new Set([].concat(p.primera_ref ? [p.primera_ref] : [], p.refs || []))], refs = refs0.filter(refOk);
+    const todoLeido = refs.length === refs0.length; // la nota y el resumen no llevan versículo: solo cuando todo lo suyo es accesible
     // Grafía de la RV1909 si difiere del nombre mostrado.
     const formas = [...new Set([].concat(p.formas_rv1909 || [], p.nombre_rv1909 || []).filter(Boolean))];
     const grafia = formas.some(f => N.norm(f) !== N.norm(p.nombre)) ? formas.join(', ') : '';
@@ -3111,9 +3316,9 @@ if (typeof document !== 'undefined') (function () {
     const oculto = !!est && !est.visible; // no obtenido: sin el contenido del catálogo (como en la colección)
     const enCol = !p.sin_nombre && N.coleccion(D, leidosF, JJ).has(id), rz = N.rareza(D, id);
     const estadoTxt = enCol ? 'En tu colección' : est && est.estado === 'en-curso' ? `En curso · ${avanceTxt(est)}` : est && est.capitulo ? `Aún no está en tu colección · se desbloquea al terminar ${esc(capLegible(est.capitulo))}` : 'Aún no está en tu colección';
-    const pas = N.pasajesDePersona(D, id);
+    const pas = N.pasajesDePersona(D, id).filter(x => ACC().pasaje(x.pasaje.id));
     const pasLi = x => `<li><a href="#leer/p/${esc(x.pasaje.id)}"><span class="pp-rango">${rango(x.pasaje)}</span><span class="pp-titulo">${esc(x.pasaje.titulo)}</span></a><span class="meta">${x.versiculos} ${x.versiculos === 1 ? 'versículo' : 'versículos'}</span></li>`;
-    const lugs = N.lugaresDePersona(D, id, 10), ext = N.enlacesExternos(D, id);
+    const lugs = N.lugaresDePersona(D, id, 40).filter(x => lugarOk(x.lugar)).slice(0, 10), ext = N.enlacesExternos(D, id);
     fichaDlg.querySelector('h2').textContent = p.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
       <div class="ficha-cab">${retratoHTML(p)}<div class="ficha-datos">
@@ -3121,7 +3326,7 @@ if (typeof document !== 'undefined') (function () {
         ${grafia ? `<p class="grafia">En la Reina-Valera 1909: <strong>${esc(grafia)}</strong></p>` : ''}
         <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${primera ? ' · primera aparición: ' + refHTML(primera) : ''} ${etiquetaTrad(id)}</p>
         ${p.sin_nombre ? '' : `<p class="ficha-estado${enCol ? ' en-col' : est && est.estado === 'en-curso' ? ' en-curso' : ''}">${estadoTxt} · ${est ? nivelHTML(est) : ''}<span class="rareza-muestra r-${rz.id}">${esc(rz.nombre)}</span> <span class="meta">${rz.versiculos} ${rz.versiculos === 1 ? 'versículo' : 'versículos'}</span></p>`}
-        ${ej && ej.resumen && !oculto ? `<p class="resumen-juego">${esc(ej.resumen)}</p>` : ''}
+        ${ej && ej.resumen && !oculto && resumenOk(ej) && todoLeido ? `<p class="resumen-juego">${esc(ej.resumen)}</p>` : ''}
         ${oculto && est.primeraCap ? `<p class="meta">Aparece en ${esc(capLegible(est.primeraCap))}. Su ficha de la colección se verá cuando la obtengas.</p>` : ''}
       </div></div>
       <p class="acciones-ficha">${(r => r ? `<a class="boton" href="${hrefRef(N.parseRef(r))}">Leer donde aparece</a>` : '')([primera, p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
@@ -3134,7 +3339,8 @@ if (typeof document !== 'undefined') (function () {
       ${pas.length ? `<h3>Pasajes donde aparece (${pas.length})</h3><ul class="pasajes-persona">${pas.slice(0, 5).map(pasLi).join('')}</ul>
         ${pas.length > 5 ? `<details class="plegable"><summary>Ver los otros ${pas.length - 5}</summary><ul class="pasajes-persona">${pas.slice(5).map(pasLi).join('')}</ul></details>` : ''}` : ''}
       ${lugs.length ? `<h3>Lugares</h3><p class="meta">Nombrados en los mismos versículos que ${esc(p.nombre || id)}: coincidencia en el texto, no un vínculo afirmado.</p><ul class="chips">${lugs.map(x => `<li>${btnLugar(x.lugar)}</li>`).join('')}</ul>` : ''}
-      ${p.nota && !notaGrafia ? `<h3>Notas</h3><p class="nota">${esc(p.nota)}</p>` : ''}
+      ${p.nota && !notaGrafia && todoLeido ? `<h3>Notas</h3><p class="nota">${esc(p.nota)}</p>` : ''}
+      ${todoLeido ? '' : `<p class="meta">${ICO_CANDADO} Solo lo que va hasta donde has leído; el resto de su historia se verá al avanzar.</p>`}
       ${refs.length ? `<details class="plegable"><summary>Versículos de los datos (${refs.length})</summary><ul class="refs">${refs.map(r => `<li>${refHTML(r)}</li>`).join('')}</ul></details>` : ''}
       ${ext.length ? `<h3>Profundizar</h3><p class="meta">Enlaces a sitios ajenos a esta app (se abren aparte); su contenido no se copia aquí.</p>
         <ul class="externos">${ext.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.titulo)}</a> <span class="etiqueta externa">Fuente externa</span><span class="meta">${esc(x.detalle)}</span></li>`).join('')}</ul>` : ''}`;
@@ -3142,6 +3348,14 @@ if (typeof document !== 'undefined') (function () {
     fichaDlg.querySelector('.dialogo-cuerpo').scrollTop = 0;
   }
 
+  // Ficha de algo que aún no se ha alcanzado leyendo en orden: ni nombre ni datos, solo el candado.
+  function abrirBloqueada(titulo, texto) {
+    fichaDlg.querySelector('h2').textContent = titulo;
+    const f = ACC().frontera;
+    fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `${bloqueadoHTML(esc(texto))}<p class="meta">La lectura avanza en orden: lo que viene después del primer pasaje sin leer está bloqueado.</p>
+      ${f ? `<p class="acciones-ficha"><a class="boton" href="#leer/p/${esc(f.id)}">Seguir leyendo</a></p>` : ''}`;
+    mostrar(fichaDlg);
+  }
   function abrirDetalle(titulo, html) {
     detDlg.querySelector('h2').textContent = titulo;
     detDlg.querySelector('.dialogo-cuerpo').innerHTML = html;
@@ -3317,9 +3531,10 @@ if (typeof document !== 'undefined') (function () {
 
   function abrirLugar(id) {
     const l = N.lugar(D, id); if (!l) return;
+    if (!lugarOk(id)) { abrirBloqueada('Lugar sin descubrir', 'Este lugar aparece más adelante en la lectura. Su ficha se verá cuando llegues al pasaje donde se nombra.'); return; }
     const c = N.confianzaLugar(l), u = l.ubicacion || {};
     const alts = (l.alternativas || []).filter(a => a && a.identificacion);
-    const refs = [...new Set(l.refs || [])];
+    const refs = [...new Set(l.refs || [])].filter(refOk); // solo los versículos ya accesibles
     const fuente = l.fuente === 'openbible' ? 'OpenBible.info, Bible Geocoding Data' : fuenteNombre(l.fuente);
     fichaDlg.querySelector('h2').textContent = l.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
@@ -3344,7 +3559,7 @@ if (typeof document !== 'undefined') (function () {
 
   function vistaMapa(args) {
     if (args && args[0] === 'recorridos') return vistaRecorridos(args.slice(1));
-    const todos = D.lugares || [];
+    const todos = D.lugares || [], A = ACC();
     if (args && args[0]) estado.mapaSel = args[0];
     const caps = D.capitulos || [], ps = N.pasajes(D);
     const f = estado.mapaFiltro;
@@ -3354,16 +3569,18 @@ if (typeof document !== 'undefined') (function () {
       ids = c ? N.lugaresDeRefs(D, (c.versiculos || []).map(v => `${lb} ${cap}:${v.n}`)) : [];
     }
     else if (f.startsWith('p-')) ids = N.lugaresDePasaje(D, ps.find(p => p.id === f.slice(2)));
+    ids = N.lugaresAccesibles(D, A, ids); // solo lugares nombrados en lo accesible
     const ubic = ids.filter(id => { const c = N.confianzaLugar(N.lugar(D, id)); return c !== 'desconocida' && estado.mapaConf.has(c); });
     const desc = ids.filter(id => N.confianzaLugar(N.lugar(D, id)) === 'desconocida');
     const opt = (v, t) => `<option value="${esc(v)}"${f === v ? ' selected' : ''}>${esc(t)}</option>`;
     return `<h1 tabindex="-1">Mapa de los lugares</h1>
       ${subvistasMapa('lugares')}
       <p class="sub">El nombre de cada lugar es texto bíblico; su ubicación es una identificación moderna con un grado de confianza. Lo que no se puede ubicar no se dibuja.</p>
+      ${A.todo ? '' : `<p class="meta">${ICO_CANDADO} Solo los lugares nombrados hasta donde has leído; los demás aparecerán al avanzar.</p>`}
       <div class="herr mapa-filtros">
         <div class="campo"><label for="f-ambito">Pasaje o capítulo</label><select id="f-ambito">${opt('', 'Todo ' + N.alcance(D).texto)}
-          ${(D.pasajes || []).length ? N.seccionesPlan(D, [], null).map(g => `<optgroup label="${esc(g.titulo ? 'Pasajes · ' + g.titulo : 'Pasajes')}">${g.pasajes.map(x => opt('p-' + x.pasaje.id, x.pasaje.titulo)).join('')}</optgroup>`).join('') : ''}
-          ${N.libros(D).map(l => { const cs = caps.filter(c => N.libroIdDe(D, c.libro) === l.id).sort((a, b) => a.cap - b.cap); return cs.length ? `<optgroup label="Capítulos · ${esc(l.nombre)}">${cs.map(c => opt(`cap-${l.id}-${c.cap}`, `${l.nombre} ${c.cap}`)).join('')}</optgroup>` : ''; }).join('')}</select></div>
+          ${(D.pasajes || []).length ? N.seccionesPlan(D, [], null).map(g => [g, g.pasajes.filter(x => A.pasaje(x.pasaje.id))]).filter(x => x[1].length).map(([g, xs]) => `<optgroup label="${esc(g.titulo ? 'Pasajes · ' + g.titulo : 'Pasajes')}">${xs.map(x => opt('p-' + x.pasaje.id, x.pasaje.titulo)).join('')}</optgroup>`).join('') : ''}
+          ${N.libros(D).map(l => { const cs = caps.filter(c => N.libroIdDe(D, c.libro) === l.id && A.ref(`${l.id} ${c.cap}:1`)).sort((a, b) => a.cap - b.cap); return cs.length ? `<optgroup label="Capítulos · ${esc(l.nombre)}">${cs.map(c => opt(`cap-${l.id}-${c.cap}`, `${l.nombre} ${c.cap}`)).join('')}</optgroup>` : ''; }).join('')}</select></div>
         <div class="campo"><label for="buscar-lugar">Buscar lugar</label><input id="buscar-lugar" type="search" autocomplete="off" placeholder="Nombre…" value="${esc(estado.mapaQ)}"></div>
         <fieldset class="conf-filtro"><legend>Confianza</legend>${['alta', 'media', 'baja'].map(c => `<label><input type="checkbox" data-conf="${c}" ${estado.mapaConf.has(c) ? 'checked' : ''}><span>${icoConf(c)}${c[0].toUpperCase() + c.slice(1)}</span></label>`).join('')}</fieldset>
       </div>
@@ -3376,13 +3593,21 @@ if (typeof document !== 'undefined') (function () {
   function resultadosLugar() {
     const q = N.norm(estado.mapaQ);
     if (!q) return '';
-    const r = (D.lugares || []).filter(l => N.norm(l.nombre).includes(q) || N.norm(l.nombre_rv1909).includes(q)).slice(0, 20);
+    const r = (D.lugares || []).filter(l => (N.norm(l.nombre).includes(q) || N.norm(l.nombre_rv1909).includes(q)) && lugarOk(l.id)).slice(0, 20);
     return r.length ? r.map(l => `<li>${btnLugar(l.id)}</li>`).join('') : '<li class="meta">Sin resultados.</li>';
   }
 
   /* ---------- Recorridos (datos/recorridos.js): el relato animado sobre el mapa ---------- */
   // Texto: nombre, orden, cita y ref de cada etapa. Fuente externa: dónde estaba cada lugar (una hipótesis, nunca un hecho).
   let RC = window.BIBLIA_RECORRIDOS || null;
+  // Recorridos vistos desde lo accesible: solo las etapas cuya ref ya se puede leer (lectura en orden).
+  let rcCache = { A: null, rc: null, v: null };
+  const RCV = () => {
+    const A = ACC(); if (!RC) return RC;
+    if (rcCache.A !== A || rcCache.rc !== RC) rcCache = { A, rc: RC, v: Object.assign({}, RC, { recorridos: (RC.recorridos || []).map(r => r && Array.isArray(r.etapas) ? Object.assign({}, r, { etapas: r.etapas.filter(e => e && A.ref(e.ref)) }) : r) }) };
+    return rcCache.v;
+  };
+  const recCompleto = rec => { const o = N.recorrido(RC, rec.id); return !!o && o.etapas.length === rec.etapas.length; };
   const estadoRC = { hip: {}, vel: [0.5, 1, 2].includes(store.get('biblia.rcVel', 1)) ? store.get('biblia.rcVel', 1) : 1 };
   const movReducido = () => !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   // Rótulos de regiones y mares para situarse: posición aproximada, sin fronteras (no son datos del texto).
@@ -3426,10 +3651,10 @@ if (typeof document !== 'undefined') (function () {
   }
 
   function vistaRecorridos(args) {
-    const L = N.listaRecorridos(RC);
+    const L = N.listaRecorridos(RCV());
     const cab = `<h1 tabindex="-1">Recorridos</h1>${subvistasMapa('recorridos')}`;
-    if (!L.length) return cab + '<p class="vacio-txt">Los datos de los recorridos (datos/recorridos.js) todavía no están. Cuando lleguen, aquí verás el relato animado del Éxodo, de Abraham y de Jacob.</p>';
-    const rec = N.recorrido(RC, args[0]) || L[0], E = N.etapasOrdenadas(rec), hid = hipDe(rec);
+    if (!L.length) return cab + (N.listaRecorridos(RC).length ? bloqueadoHTML('Los recorridos se van dibujando a medida que lees en orden: todavía no has llegado a ninguna de sus etapas.') : '<p class="vacio-txt">Los datos de los recorridos (datos/recorridos.js) todavía no están. Cuando lleguen, aquí verás el relato animado del Éxodo, de Abraham y de Jacob.</p>');
+    const rec = N.recorrido(RCV(), args[0]) || L[0], E = N.etapasOrdenadas(rec), hid = hipDe(rec);
     let idx = 0; if (args[1] !== undefined) { const k = E.findIndex(e => String(e.orden) === args[1]); if (k >= 0) idx = k; }
     const hs = (rec.hipotesis || []).filter(h => h && h.id);
     const personas = (rec.personas || []).filter(id => N.persona(D, id));
@@ -3469,7 +3694,8 @@ if (typeof document !== 'undefined') (function () {
             <span><svg class="ico-tramo incierto" viewBox="0 0 28 10" aria-hidden="true"><path class="halo" d="M2 5h24"/><path d="M2 5h24"/></svg>Tramo incierto (toca una etapa de confianza baja)</span>
             <span><svg class="ico-tramo sin-propuesta" viewBox="0 0 28 10" aria-hidden="true"><path d="M2 5h24"/></svg>Tramo sin propuesta en esta hipótesis</span></p>
           <p class="meta">Regiones y mares: rótulos orientativos de posición aproximada, sin fronteras. Mapa base: Natural Earth.</p>
-          ${rec.resumen ? `<p>${esc(rec.resumen)}</p>` : ''}
+          ${rec.resumen && recCompleto(rec) ? `<p>${esc(rec.resumen)}</p>` : ''}
+          ${recCompleto(rec) ? '' : `<p class="meta">${ICO_CANDADO} Se muestran las ${rec.etapas.length} etapas a las que ya has llegado leyendo; las siguientes aparecerán al avanzar.</p>`}
           ${personas.length ? `<p class="rc-personas"><span class="meta">Quién va:</span> ${personas.map(btnPersona).join(' ')}</p>` : ''}
           <details class="plegable"><summary>Todas las etapas (${E.length})</summary><ol class="rc-lista">${E.map((e, i) => `<li><button type="button" class="enlace-boton" data-rc-ir="${i}">${esc(e.nombre || 'Etapa')}</button> <span class="meta">${esc(e.ref || '')}</span></li>`).join('')}</ol></details>
           ${(RC.fuentes || []).length ? `<details class="plegable"><summary>Fuentes de las ubicaciones</summary><ul class="rc-fuentes">${RC.fuentes.map(f => `<li><span class="etiqueta externa">Fuente externa</span> ${enlaceExt(f.nombre || f.id || '', f.url)}${f.licencia ? ` <span class="meta">(${esc(f.licencia)})</span>` : ''}</li>`).join('')}</ul></details>` : ''}
@@ -3481,7 +3707,7 @@ if (typeof document !== 'undefined') (function () {
   // marcadores que aparecen al llegar y transformación animada al cambiar de hipótesis.
   function crearRecorrido(raiz, cfg) {
     raiz.dataset.montado = '1';
-    const rec = N.recorrido(RC, cfg.rec), lienzo = raiz.querySelector('.rc-lienzo');
+    const rec = N.recorrido(RCV(), cfg.rec), lienzo = raiz.querySelector('.rc-lienzo');
     if (!rec || !lienzo) return;
     const mini = !!cfg.mini, E = N.etapasOrdenadas(rec), n = E.length, aqui = new Set(cfg.aqui || []);
     const P = N.proyeccion(MAPA && MAPA.bbox);
@@ -3718,9 +3944,9 @@ if (typeof document !== 'undefined') (function () {
 
   // Acompañante: «En el camino» cuando el pasaje toca una etapa de un recorrido.
   function enCaminoHTML(p, sec, I) {
-    if (!N.listaRecorridos(RC).length || !p) return '';
+    if (!N.listaRecorridos(RCV()).length || !p) return '';
     const lb = N.libroDe(p), refs = N.versiculosDe(D, p).map(v => v.ref);
-    const rs = N.recorridosDeRefs(RC, refs, estado.activo ? `${lb} ${estado.activo}` : null);
+    const rs = N.recorridosDeRefs(RCV(), refs, estado.activo ? `${lb} ${estado.activo}` : null);
     if (!rs.length) return '';
     return sec('En el camino', rs.map(x => {
       const E = N.etapasOrdenadas(x.rec), e = E[x.actual], h = hipPorId(x.rec, hipDe(x.rec));
@@ -3742,7 +3968,7 @@ if (typeof document !== 'undefined') (function () {
   const TB_POS_DESC = { texto: 'el texto dice dónde va.', inferido: 'el texto no da el punto exacto; se deduce de lo que sí dice.', tradicion: 'el texto no la da; se sigue la disposición habitual de las reconstrucciones.' };
   const TB_POS_TRAZO = { texto: 'trazo continuo', inferido: 'trazo discontinuo', tradicion: 'trazo punteado' };
   const certPos = c => c === 'texto' || c === 'tradicion' ? c : 'inferido';
-  const estadoTB = { sel: null, modo: 'todo', capas: null };
+  const estadoTB = { sel: null, modo: 'leido', capas: null }; // lectura en orden: siempre «Según voy leyendo»
   let TBM = null; // motor de la vista completa montada
   const numES = (n, d) => Number(n).toLocaleString('es-ES', { maximumFractionDigits: d === undefined ? 2 : d });
   const codoTB = () => N.tbCodo(TB, store.get('biblia.codo', null));
@@ -3952,7 +4178,8 @@ if (typeof document !== 'undefined') (function () {
       ${imgs.length ? `<section class="tb-sec"><h3>Cómo se ha imaginado</h3><p class="meta">No son datos del texto: reconstrucciones modernas y obras de arte, cada una con su autor.</p><ul class="rec-lista">${imgs.map(recItemHTML).join('')}</ul></section>` : ''}`;
   }
   function calculosTBHTML() {
-    const cs = (TB.calculos || []).filter(c => c && (c.texto || c.resultado !== undefined));
+    // Solo los cálculos cuyos pasos citan versículos ya accesibles (lectura en orden).
+    const cs = (TB.calculos || []).filter(c => c && (c.texto || c.resultado !== undefined) && (c.pasos || []).every(x => !x || !x.ref || refOk(x.ref)) && (c.pasos || []).some(x => x && x.ref));
     if (!cs.length) return '';
     const paso = x => `<li${x.supuesto ? ' class="convencion"' : ''}>${x.supuesto ? '<span class="etiqueta">supuesto</span> ' : ''}${esc(x.texto || '')}${x.valor !== undefined && x.valor !== null ? ` <strong>= ${esc(typeof x.valor === 'number' ? numES(x.valor) : x.valor)}</strong>` : ''}${x.ref ? ' · ' + refHTML(x.ref) : ''}${x.cita ? `<q>${esc(x.cita)}</q>` : ''}${fuenteExtTB(x.fuente, x.url)}${calcTB(x.calculo)}${x.nota ? ` <span class="nota">${esc(x.nota)}</span>` : ''}</li>`;
     return `<section class="tb-calculos" aria-labelledby="t-tb-calc"><h2 id="t-tb-calc">Cálculos (${cs.length})</h2><p class="meta">Cifras que el texto no da de una vez: salen de varios versículos, paso a paso. Algunas dependen de una lectura tradicional o de un supuesto, y lo dicen.</p>
@@ -3965,18 +4192,20 @@ if (typeof document !== 'undefined') (function () {
   function leidoTBHTML() {
     if (estadoTB.modo !== 'leido') return '';
     const vis = visiblesLeidoTB(), ps = N.tbPiezas(TB).filter(p => p.instruccion), faltan = ps.filter(p => !vis.has(p.id));
+    // Las que faltan no se nombran: aparecerán al leer sus instrucciones (lectura en orden).
     return `<p>Ves <strong>${vis.size} de ${ps.length}</strong> piezas: las que tienen leídos (marcados en Leer) todos los pasajes de su instrucción.</p>
-      ${faltan.length ? `<details class="plegable"><summary>Faltan ${faltan.length}</summary><ul class="tb-faltan">${faltan.map(p => `<li>${esc(p.nombre)} · ${refRangoHTML(p.instruccion)}</li>`).join('')}</ul></details>` : '<p class="meta">Ya las has leído todas.</p>'}`;
+      ${faltan.length ? `<p class="meta">${ICO_CANDADO} Faltan ${faltan.length}: irán apareciendo a medida que leas sus instrucciones en Éxodo.</p>` : '<p class="meta">Ya las has leído todas.</p>'}`;
   }
 
   function vistaTabernaculo(args) {
     const cab = `<p class="tb-volver"><a class="volver" href="#leer/Ex"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Éxodo</a></p><h1 tabindex="-1">El tabernáculo</h1>`;
     if (!TB || !N.tbPiezas(TB).length) return cab + '<p class="vacio-txt">Los datos del tabernáculo (datos/tabernaculo.js) todavía no están. Cuando lleguen, aquí verás el plano a escala, el relieve y el montaje de Éxodo 40.</p>';
-    const sel = args[0] && N.tbPieza(TB, args[0]) ? args[0] : null;
-    estadoTB.sel = sel;
+    const visTB = visiblesLeidoTB(), sel = args[0] && N.tbPieza(TB, args[0]) && visTB.has(args[0]) ? args[0] : null;
+    estadoTB.sel = sel; estadoTB.modo = 'leido';
     const codo = codoTB(), cs = (TB.codos || []).filter(c => c && c.id && +c.cm > 0), capas = capasTB(), vista = vistaTBGuardada(), M = N.tbMontaje(TB);
     const o = TB.orientacion;
-    const porGrupo = N.TB_GRUPOS.map(g => [g, N.tbPiezas(TB).filter(p => p.grupo === g)]).filter(x => x[1].length);
+    const porGrupo = N.TB_GRUPOS.map(g => [g, N.tbPiezas(TB).filter(p => p.grupo === g && visTB.has(p.id))]).filter(x => x[1].length);
+    const montajeOk = M.length && M.every(m => refOk(m.ref)); // «Armar según Éx 40» cuando Éx 40 ya es accesible
     return `${cab}
       <p class="sub">Medidas y lugares según Éxodo 25–40. Cada cifra dice de dónde sale: <strong>Texto</strong> (con su cita), <strong>Inferido</strong> o <strong>Cálculo</strong>. Los metros son siempre un cálculo según el codo que elijas.</p>
       ${TB.ejemplo ? '<p class="rc-ejemplo">EJEMPLO: datos de prueba. Las posiciones no son una reconstrucción real.</p>' : ''}
@@ -3997,10 +4226,8 @@ if (typeof document !== 'undefined') (function () {
           </div>
           ${o ? `<p class="tb-orient meta"><span class="tb-orient-flecha" aria-hidden="true">→</span> Oriente: ${esc(o.texto || '')} ${insignia('texto', o.ref)}${o.cita ? `<q class="tb-cita">${esc(o.cita)}</q>` : ''}</p>` : ''}
           <div class="tb-mando">
-            ${M.length ? `<button type="button" class="boton" data-tb-armar>${ICO_PLAY}Armar según Éx 40</button>` : ''}
-            <fieldset class="segmentos tb-modo"><legend class="sr">Qué piezas se ven</legend>
-              <label><input type="radio" name="tb-modo" value="todo" ${estadoTB.modo === 'todo' ? 'checked' : ''}><span>Todas</span></label>
-              <label><input type="radio" name="tb-modo" value="leido" ${estadoTB.modo === 'leido' ? 'checked' : ''}><span>Según voy leyendo</span></label></fieldset>
+            ${montajeOk ? `<button type="button" class="boton" data-tb-armar>${ICO_PLAY}Armar según Éx 40</button>` : ''}
+            <p class="tb-modo-fijo meta">${ICO_CANDADO}<span><strong>Según voy leyendo</strong>: la lectura avanza en orden, así que solo se ven las piezas ya leídas.${M.length && !montajeOk ? ' El montaje de Éx 40 se podrá ver al llegar allí.' : ''}</span></p>
           </div>
           <div class="tb-leido" aria-live="polite">${leidoTBHTML()}</div>
           <fieldset class="tb-capas"><legend>Capas</legend>
@@ -4163,7 +4390,7 @@ if (typeof document !== 'undefined') (function () {
       const f = m.raiz.querySelector('.tb-codo-fuente'), codo = codoTB(); if (f && codo) f.innerHTML = codoNotaHTML(codo);
       m.repintar();
     }
-    else if (t.name === 'tb-modo') { estadoTB.modo = t.value === 'leido' ? 'leido' : 'todo'; const l = m.raiz.querySelector('.tb-leido'); if (l) l.innerHTML = leidoTBHTML(); m.repintar(); }
+    else if (t.name === 'tb-modo') { estadoTB.modo = 'leido'; const l = m.raiz.querySelector('.tb-leido'); if (l) l.innerHTML = leidoTBHTML(); m.repintar(); }
     else if (t.dataset.tbCapa) { const cs = capasTB(); if (t.checked) cs.add(t.dataset.tbCapa); else cs.delete(t.dataset.tbCapa); store.set('biblia.tbCapas', [...cs]); m.repintar(); }
     else if (t.id === 'tb-humana') { store.set('biblia.tbHumana', t.checked); m.repintar(); }
   });
@@ -4485,6 +4712,7 @@ if (typeof document !== 'undefined') (function () {
   let primera = true;
   function render(foco) {
     if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/biblia.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
+    tickLectura(); // cuenta el tiempo del pasaje que se deja antes de pintar el siguiente
     const { vista, args } = ruta();
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
@@ -4520,7 +4748,7 @@ if (typeof document !== 'undefined') (function () {
   function rerender(selectorFoco) { const y = window.scrollY; render(false); window.scrollTo(0, y); if (selectorFoco) { const el = main.querySelector(selectorFoco); if (el) el.focus(); } }
 
   if (window.matchMedia) { const mq = window.matchMedia('(max-width: 699px)'); if (mq.addEventListener) mq.addEventListener('change', () => { if (main.querySelector('.comparar')) rerender(); }); }
-  window.addEventListener('hashchange', () => { parar(); cerrar(detDlg); cerrar(fichaDlg); if (visorDlg) cerrar(visorDlg); estado.focoHash = undefined; render(); });
+  window.addEventListener('hashchange', () => { estado.avisoBloq = null; parar(); cerrar(detDlg); cerrar(fichaDlg); if (visorDlg) cerrar(visorDlg); estado.focoHash = undefined; render(); });
   // Secciones del plan: se recuerda en la sesión cuáles abrió o cerró la persona.
   document.addEventListener('toggle', e => {
     const s = e.target; if (!s || !s.dataset) return;
@@ -4529,7 +4757,7 @@ if (typeof document !== 'undefined') (function () {
     if (s.id === 'supuestos') estado.supAbiertos = s.open;
   }, true);
   document.addEventListener('keydown', e => {
-    if (e.target && e.target.id === 'buscar' && e.key === 'Enter') { const r = N.buscar(D, estado.q, 1)[0]; if (r) { e.preventDefault(); irArbol(r.id); } }
+    if (e.target && e.target.id === 'buscar' && e.key === 'Enter') { const r = N.buscarAccesible(D, ACC(), estado.q, 1)[0]; if (r) { e.preventDefault(); irArbol(r.id); } }
   });
 
   document.addEventListener('click', e => {
@@ -4576,9 +4804,15 @@ if (typeof document !== 'undefined') (function () {
     const ac = t.closest('[data-activar]'); if (ac) { activar(ac.dataset.activar); return; }
     if (t.closest('[data-hoja]')) { estado.hoja = !estado.hoja; const a = $('#acompanante'); if (a) { a.classList.toggle('abierta', estado.hoja); a.querySelector('[data-hoja]').setAttribute('aria-expanded', estado.hoja); } return; }
     const ls = t.closest('[data-leido-seguir]'); if (ls) {
-      const L = pasajesLeidos(), pid = ls.dataset.leidoSeguir, nuevas = L.has(pid) ? null : N.nuevosAlLeer(D, JUEGO(), [...L], pid);
+      const L = pasajesLeidos(), pid = ls.dataset.leidoSeguir;
+      // Solo un pasaje accesible, y con el tiempo mínimo cumplido (o ya leído).
+      if (ls.disabled || !ACC().pasaje(pid) || (pid === LECT.id && !listoMarcar())) return;
+      const nuevas = L.has(pid) ? null : N.nuevosAlLeer(D, JUEGO(), [...L], pid);
       L.add(pid); store.set('biblia.pasajesLeidos', [...L]);
-      const ps = N.pasajes(D), i = ps.findIndex(x => x.id === pid); location.hash = ps[i + 1] ? `#leer/p/${ps[i + 1].id}` : '#leer';
+      const t = tiemposGuardados(); if (pid in t) { delete t[pid]; store.set('biblia.tiemposLectura', t); }
+      if (LECT.id === pid) LECT.leido = true;
+      const ps = N.pasajes(D), i = ps.findIndex(x => x.id === pid), A = ACC(), sig = ps[i + 1] && A.pasaje(ps[i + 1].id) ? ps[i + 1] : A.frontera;
+      location.hash = sig ? `#leer/p/${sig.id}` : '#leer';
       if (nuevas) mostrarNuevas(nuevas);
       return;
     }

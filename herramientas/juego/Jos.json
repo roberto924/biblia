@@ -1,0 +1,3367 @@
+{
+ "libro": "Jos",
+ "genealogias": [
+  {
+   "id": "jos-clanes-de-manases",
+   "inicio": "Jos 17:1",
+   "fin": "Jos 17:2",
+   "titulo": "Los clanes de Manasés: Maquir, Galaad y los hijos de Abiezer, Helec, Esriel, Siquem, Hefer y Semida",
+   "cita": "Machîr, primogénito de Manasés"
+  }
+ ],
+ "historias": [
+  {
+   "id": "encargo-a-josue",
+   "titulo": "El encargo a Josué: «esfuérzate y sé valiente»",
+   "inicio": "Jos 1:1",
+   "fin": "Jos 1:18",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "espias-en-jerico",
+   "titulo": "Los espías en Jericó y el cordón de grana",
+   "inicio": "Jos 2:1",
+   "fin": "Jos 2:24",
+   "principales": [
+    "Joshua_1", "Rahab_1"
+   ]
+  },
+  {
+   "id": "paso-del-jordan",
+   "titulo": "El paso del Jordán y las doce piedras",
+   "inicio": "Jos 3:1",
+   "fin": "Jos 4:24",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "gilgal",
+   "titulo": "Gilgal: circuncisión, Pascua y el Príncipe del ejército de Jehová",
+   "inicio": "Jos 5:1",
+   "fin": "Jos 5:15",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "jerico",
+   "titulo": "Jericó: la caída de los muros y Rahab salvada",
+   "inicio": "Jos 6:1",
+   "fin": "Jos 6:27",
+   "principales": [
+    "Joshua_1",
+    "Rahab_1"
+   ]
+  },
+  {
+   "id": "acan",
+   "titulo": "Acán y el anatema; derrota en Hai",
+   "inicio": "Jos 7:1",
+   "fin": "Jos 7:26",
+   "principales": [
+    "Achan_1",
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "hai-y-ebal",
+   "titulo": "Hai tomada y el altar en el monte Ebal",
+   "inicio": "Jos 8:1",
+   "fin": "Jos 8:35",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "gabaonitas",
+   "titulo": "El engaño de los gabaonitas",
+   "inicio": "Jos 9:1",
+   "fin": "Jos 9:27",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "sol-detenido",
+   "titulo": "Los cinco reyes: Gabaón, el sol detenido y Maceda; las ciudades del sur",
+   "inicio": "Jos 10:1",
+   "fin": "Jos 10:43",
+   "principales": [
+    "Joshua_1",
+    "Adoni-zedek_1"
+   ]
+  },
+  {
+   "id": "campana-del-norte",
+   "titulo": "La coalición del norte: Merom y Hazor",
+   "inicio": "Jos 11:1",
+   "fin": "Jos 11:23",
+   "principales": [
+    "Joshua_1",
+    "Jabin_1"
+   ]
+  },
+  {
+   "id": "reyes-vencidos",
+   "titulo": "Lista de los reyes vencidos",
+   "inicio": "Jos 12:1",
+   "fin": "Jos 12:24",
+   "principales": []
+  },
+  {
+   "id": "tierra-por-repartir",
+   "titulo": "La tierra que queda y la herencia al oriente del Jordán",
+   "inicio": "Jos 13:1",
+   "fin": "Jos 13:33",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "caleb-y-hebron",
+   "titulo": "Caleb pide Hebrón",
+   "inicio": "Jos 14:1",
+   "fin": "Jos 14:15",
+   "principales": [
+    "Caleb_1",
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "limites-de-juda",
+   "titulo": "Los límites de Judá",
+   "inicio": "Jos 15:1",
+   "fin": "Jos 15:12",
+   "principales": []
+  },
+  {
+   "id": "otoniel-y-acsa",
+   "titulo": "Otoniel y Acsa",
+   "inicio": "Jos 15:13",
+   "fin": "Jos 15:19",
+   "principales": [
+    "Othniel_1",
+    "Achsah_1"
+   ]
+  },
+  {
+   "id": "ciudades-de-juda",
+   "titulo": "Las ciudades de Judá",
+   "inicio": "Jos 15:20",
+   "fin": "Jos 15:63",
+   "principales": []
+  },
+  {
+   "id": "heredad-de-efrain",
+   "titulo": "La heredad de Efraín",
+   "inicio": "Jos 16:1",
+   "fin": "Jos 16:10",
+   "principales": []
+  },
+  {
+   "id": "manases-y-zelofehad",
+   "titulo": "Manasés y las hijas de Zelofehad; los hijos de José piden más",
+   "inicio": "Jos 17:1",
+   "fin": "Jos 17:18",
+   "principales": [
+    "Mahlah_1",
+    "Noah_2",
+    "Hoglah_1",
+    "Milcah_2",
+    "Tirzah_1",
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "silo",
+   "titulo": "Silo: se describe la tierra y se echan las suertes",
+   "inicio": "Jos 18:1",
+   "fin": "Jos 18:10",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "suertes-restantes",
+   "titulo": "Las suertes de Benjamín, Simeón, Zabulón, Isacar, Aser, Neftalí y Dan; la heredad de Josué",
+   "inicio": "Jos 18:11",
+   "fin": "Jos 19:51",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "ciudades-de-refugio",
+   "titulo": "Las ciudades de refugio",
+   "inicio": "Jos 20:1",
+   "fin": "Jos 20:9",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "ciudades-de-los-levitas",
+   "titulo": "Las ciudades de los levitas",
+   "inicio": "Jos 21:1",
+   "fin": "Jos 21:45",
+   "principales": [
+    "Eleazar_1"
+   ]
+  },
+  {
+   "id": "altar-junto-al-jordan",
+   "titulo": "El altar junto al Jordán",
+   "inicio": "Jos 22:1",
+   "fin": "Jos 22:34",
+   "principales": [
+    "Phinehas_1"
+   ]
+  },
+  {
+   "id": "despedida",
+   "titulo": "La despedida de Josué",
+   "inicio": "Jos 23:1",
+   "fin": "Jos 23:16",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "pacto-en-siquem",
+   "titulo": "El pacto en Siquem",
+   "inicio": "Jos 24:1",
+   "fin": "Jos 24:28",
+   "principales": [
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "muertes",
+   "titulo": "La muerte de Josué y de Eleazar",
+   "inicio": "Jos 24:29",
+   "fin": "Jos 24:33",
+   "principales": [
+    "Joshua_1",
+    "Eleazar_1"
+   ]
+  }
+ ],
+ "personajes": {
+  "Joshua_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 1:1",
+     "fin": "Jos 1:18"
+    },
+    {
+     "inicio": "Jos 2:1",
+     "fin": "Jos 2:1"
+    },
+    {
+     "inicio": "Jos 2:23",
+     "fin": "Jos 2:24"
+    },
+    {
+     "inicio": "Jos 3:1",
+     "fin": "Jos 4:24"
+    },
+    {
+     "inicio": "Jos 5:2",
+     "fin": "Jos 5:15"
+    },
+    {
+     "inicio": "Jos 6:2",
+     "fin": "Jos 6:27"
+    },
+    {
+     "inicio": "Jos 7:2",
+     "fin": "Jos 7:26"
+    },
+    {
+     "inicio": "Jos 8:1",
+     "fin": "Jos 8:35"
+    },
+    {
+     "inicio": "Jos 9:6",
+     "fin": "Jos 9:27"
+    },
+    {
+     "inicio": "Jos 10:6",
+     "fin": "Jos 10:43"
+    },
+    {
+     "inicio": "Jos 11:6",
+     "fin": "Jos 11:23"
+    },
+    {
+     "inicio": "Jos 13:1",
+     "fin": "Jos 13:1"
+    },
+    {
+     "inicio": "Jos 14:1",
+     "fin": "Jos 14:1"
+    },
+    {
+     "inicio": "Jos 14:6",
+     "fin": "Jos 14:15"
+    },
+    {
+     "inicio": "Jos 17:4",
+     "fin": "Jos 17:4"
+    },
+    {
+     "inicio": "Jos 17:14",
+     "fin": "Jos 17:18"
+    },
+    {
+     "inicio": "Jos 18:3",
+     "fin": "Jos 18:10"
+    },
+    {
+     "inicio": "Jos 19:49",
+     "fin": "Jos 19:51"
+    },
+    {
+     "inicio": "Jos 20:1",
+     "fin": "Jos 20:2"
+    },
+    {
+     "inicio": "Jos 21:1",
+     "fin": "Jos 21:3"
+    },
+    {
+     "inicio": "Jos 22:1",
+     "fin": "Jos 22:9"
+    },
+    {
+     "inicio": "Jos 23:1",
+     "fin": "Jos 23:16"
+    },
+    {
+     "inicio": "Jos 24:1",
+     "fin": "Jos 24:30"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: sucesor de Moisés; cruza el Jordán, toma Jericó, Hai y las ciudades del sur y del norte, reparte la tierra por suertes en Silo, renueva el pacto en Siquem y muere a los 110 años.",
+   "datos": [
+    {
+     "texto": "Jehová le habla tras la muerte de Moisés",
+     "certeza": "texto",
+     "ref": "Jos 1:1",
+     "cita": "Jehová habló á Josué hijo de Nun, ministro de Moisés"
+    },
+    {
+     "texto": "Promesa de Jehová: estará con él como estuvo con Moisés",
+     "certeza": "texto",
+     "ref": "Jos 1:5",
+     "cita": "como yo fuí con Moisés, seré contigo"
+    },
+    {
+     "texto": "Envía dos espías secretamente desde Sitim a Jericó",
+     "certeza": "texto",
+     "ref": "Jos 2:1",
+     "cita": "envió desde Sittim dos espías secretamente"
+    },
+    {
+     "texto": "Jehová lo engrandece a los ojos de todo Israel, que lo teme como a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 4:14",
+     "cita": "Jehová engrandeció á Josué en ojos de todo Israel"
+    },
+    {
+     "texto": "Se hace cuchillos afilados y circuncida a los hijos de Israel",
+     "certeza": "texto",
+     "ref": "Jos 5:3",
+     "cita": "Josué se hizo cuchillos afilados, y circuncidó á los hijos de Israel"
+    },
+    {
+     "texto": "Ante el Príncipe del ejército de Jehová se postra y lo adora",
+     "certeza": "texto",
+     "ref": "Jos 5:14",
+     "cita": "Josué postrándose sobre su rostro en tierra le adoró"
+    },
+    {
+     "texto": "Jura una maldición sobre quien reedifique Jericó",
+     "certeza": "texto",
+     "ref": "Jos 6:26",
+     "cita": "Maldito delante de Jehová el hombre que se levantare y reedificare esta ciudad de Jericó"
+    },
+    {
+     "texto": "Tras la derrota de Hai rompe sus vestidos y se postra ante el arca",
+     "certeza": "texto",
+     "ref": "Jos 7:6",
+     "cita": "Josué rompió sus vestidos"
+    },
+    {
+     "texto": "Edifica un altar a Jehová en el monte Ebal",
+     "certeza": "texto",
+     "ref": "Jos 8:30",
+     "cita": "Josué edificó un altar á Jehová Dios de Israel en el monte de Ebal"
+    },
+    {
+     "texto": "Hace paz con los gabaonitas sin consultar a Jehová (9:14)",
+     "certeza": "texto",
+     "ref": "Jos 9:15",
+     "cita": "Josué hizo paz con ellos"
+    },
+    {
+     "texto": "Pide ante Israel que el sol se detenga en Gabaón",
+     "certeza": "texto",
+     "ref": "Jos 10:12",
+     "cita": "Sol, detente en Gabaón"
+    },
+    {
+     "texto": "Cumple todo lo que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 11:15",
+     "cita": "sin quitar palabra de todo lo que Jehová había mandado á Moisés"
+    },
+    {
+     "texto": "Jehová le dice que es viejo y queda mucha tierra por poseer",
+     "certeza": "texto",
+     "ref": "Jos 13:1",
+     "cita": "queda aún muy mucha tierra por poseer"
+    },
+    {
+     "texto": "Bendice a Caleb y le da Hebrón",
+     "certeza": "texto",
+     "ref": "Jos 14:13",
+     "cita": "Josué entonces le bendijo, y dió á Caleb hijo de Jephone á Hebrón por heredad"
+    },
+    {
+     "texto": "Recibe la ciudad que pidió, Timnat-sera, y la reedifica",
+     "certeza": "texto",
+     "ref": "Jos 19:50",
+     "cita": "le dieron la ciudad que él pidió, Timnath-sera"
+    },
+    {
+     "texto": "Declara que él y su casa servirán a Jehová",
+     "certeza": "texto",
+     "ref": "Jos 24:15",
+     "cita": "yo y mi casa serviremos á Jehová"
+    },
+    {
+     "texto": "Muere a los 110 años",
+     "certeza": "texto",
+     "ref": "Jos 24:29",
+     "cita": "murió Josué, hijo de Nun, siervo de Jehová, siendo de ciento y diez años"
+    },
+    {
+     "texto": "Es sepultado en Timnat-sera, en el monte de Efraín",
+     "certeza": "texto",
+     "ref": "Jos 24:30",
+     "cita": "enterráronlo en el término de su posesión en Timnath-sera"
+    }
+   ],
+   "externo": []
+  },
+  "Rahab_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 2:1",
+     "fin": "Jos 2:21"
+    },
+    {
+     "inicio": "Jos 6:17",
+     "fin": "Jos 6:17"
+    },
+    {
+     "inicio": "Jos 6:22",
+     "fin": "Jos 6:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de Jericó que esconde a los espías de Josué y obtiene, con el cordón de grana, que se salve su familia.",
+   "datos": [
+    {
+     "texto": "Es «ramera»; los espías entran en su casa y posan allí",
+     "certeza": "texto",
+     "ref": "Jos 2:1",
+     "cita": "una mujer ramera que se llamaba Rahab"
+    },
+    {
+     "texto": "Esconde a los dos hombres y dice a los enviados del rey que no sabe de dónde eran",
+     "certeza": "texto",
+     "ref": "Jos 2:4",
+     "cita": "la mujer había tomado los dos hombres, y los había escondido"
+    },
+    {
+     "texto": "Los hace subir al terrado y los esconde entre tascos de lino",
+     "certeza": "texto",
+     "ref": "Jos 2:6",
+     "cita": "entre tascos de lino que en aquel terrado tenía puestos"
+    },
+    {
+     "texto": "Confiesa que Jehová ha dado la tierra a Israel y que el temor ha caído sobre los moradores",
+     "certeza": "texto",
+     "ref": "Jos 2:9",
+     "cita": "Sé que Jehová os ha dado esta tierra"
+    },
+    {
+     "texto": "Declara que Jehová es Dios arriba en los cielos y abajo en la tierra",
+     "certeza": "texto",
+     "ref": "Jos 2:11",
+     "cita": "Jehová vuestro Dios es Dios arriba en los cielos y abajo en la tierra"
+    },
+    {
+     "texto": "Pide que le juren misericordia para la casa de su padre, como ella la hizo con ellos",
+     "certeza": "texto",
+     "ref": "Jos 2:12",
+     "cita": "como he hecho misericordia con vosotros, así la haréis vosotros con la casa de mi padre"
+    },
+    {
+     "texto": "Los hace descender con una cuerda por la ventana; su casa estaba en el muro",
+     "certeza": "texto",
+     "ref": "Jos 2:15",
+     "cita": "ella vivía en el muro"
+    },
+    {
+     "texto": "Ata el cordón de grana a la ventana",
+     "certeza": "texto",
+     "ref": "Jos 2:21",
+     "cita": "ella ató el cordón de grana á la ventana"
+    },
+    {
+     "texto": "Josué ordena que solo ella viva, con los que estén en su casa",
+     "certeza": "texto",
+     "ref": "Jos 6:17",
+     "cita": "solamente Rahab la ramera vivirá"
+    },
+    {
+     "texto": "Josué la salva con la casa de su padre; habita entre los israelitas",
+     "certeza": "texto",
+     "ref": "Jos 6:25",
+     "cita": "habitó ella entre los Israelitas hasta hoy"
+    }
+   ],
+   "externo": []
+  },
+  "Achan_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 7:1",
+     "fin": "Jos 7:1"
+    },
+    {
+     "inicio": "Jos 7:16",
+     "fin": "Jos 7:26"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 22:20"
+    }
+   ],
+   "resumen": "Hombre de Judá que tomó del anatema de Jericó; es descubierto por suertes, confiesa y es castigado en el valle de Acor.",
+   "datos": [
+    {
+     "texto": "Acán, de la tribu de Judá, toma del anatema y se enciende la ira de Jehová",
+     "certeza": "texto",
+     "ref": "Jos 7:1",
+     "cita": "Achân, hijo de Carmi, hijo de Zabdi, hijo de Zera, de la tribu de Judá, tomó del anatema"
+    },
+    {
+     "texto": "Es tomado por suertes: tribu, familia, casa y varón",
+     "certeza": "texto",
+     "ref": "Jos 7:18",
+     "cita": "fué tomado Achân, hijo de Carmi"
+    },
+    {
+     "texto": "Confiesa: «yo he pecado contra Jehová»",
+     "certeza": "texto",
+     "ref": "Jos 7:20",
+     "cita": "Verdaderamente yo he pecado contra Jehová el Dios de Israel"
+    },
+    {
+     "texto": "Confiesa que codició y tomó un manto, plata y oro, escondidos en su tienda",
+     "certeza": "texto",
+     "ref": "Jos 7:21",
+     "cita": "lo cual codicié, y tomé"
+    },
+    {
+     "texto": "Josué y todo Israel lo llevan con sus hijos y cuanto tenía al valle de Acor",
+     "certeza": "texto",
+     "ref": "Jos 7:24",
+     "cita": "lleváronlo todo al valle de Achôr"
+    },
+    {
+     "texto": "Es apedreado y quemado (contenido cruento)",
+     "certeza": "texto",
+     "ref": "Jos 7:25",
+     "cita": "los apedrearon, y los quemaron á fuego"
+    },
+    {
+     "texto": "Sobre él levantan un montón de piedras y el lugar se llama Valle de Acor",
+     "certeza": "texto",
+     "ref": "Jos 7:26",
+     "cita": "fué llamado aquel lugar el Valle de Achôr"
+    },
+    {
+     "texto": "Más tarde se le recuerda como «hijo de Zera» que prevaricó en el anatema",
+     "certeza": "texto",
+     "ref": "Jos 22:20",
+     "cita": "Achân, hijo de Zera, prevaricación en el anatema"
+    }
+   ],
+   "externo": []
+  },
+  "Carmi_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 7:1"
+    },
+    {
+     "ref": "Jos 7:18"
+    }
+   ],
+   "resumen": "Padre de Acán (Jos 7:1, 7:18); solo se le nombra.",
+   "datos": [],
+   "externo": []
+  },
+  "Zabdi_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 7:17",
+     "fin": "Jos 7:18"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 7:1"
+    }
+   ],
+   "resumen": "En Josué: cabeza de la casa de Acán, tomado por suertes en la familia de Zera.",
+   "datos": [
+    {
+     "texto": "Es tomado por suertes entre los varones de la familia de Zera",
+     "certeza": "texto",
+     "ref": "Jos 7:17",
+     "cita": "fué tomado Zabdi"
+    }
+   ],
+   "externo": []
+  },
+  "Zerah_3": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 7:1"
+    },
+    {
+     "ref": "Jos 7:18"
+    },
+    {
+     "ref": "Jos 7:24"
+    },
+    {
+     "ref": "Jos 22:20"
+    }
+   ],
+   "resumen": "En Josué: antepasado de Acán, de la tribu de Judá.",
+   "datos": [
+    {
+     "texto": "Acán es hijo de Carmi, hijo de Zabdi, hijo de Zera (identificar a este Zera con el hijo de Judá es inferencia por la tribu)",
+     "certeza": "inferido",
+     "ref": "Jos 7:1",
+     "cita": "hijo de Zera, de la tribu de Judá"
+    }
+   ],
+   "externo": []
+  },
+  "Adoni-zedek_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 10:1",
+     "fin": "Jos 10:5"
+    },
+    {
+     "inicio": "Jos 10:16",
+     "fin": "Jos 10:27"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Jerusalén que reúne a cuatro reyes amorreos contra Gabaón; huye a la cueva de Maceda.",
+   "datos": [
+    {
+     "texto": "Rey de Jerusalén: oye que Josué tomó Hai y que Gabaón hizo paz, y teme",
+     "certeza": "texto",
+     "ref": "Jos 10:1",
+     "cita": "Adonisedec rey de Jerusalem oyó que Josué había tomado á Hai"
+    },
+    {
+     "texto": "Envía a pedir ayuda a los reyes de Hebrón, Jarmut, Laquis y Eglón",
+     "certeza": "texto",
+     "ref": "Jos 10:3",
+     "cita": "Envió pues á decir Adonisedec rey de Jerusalem"
+    },
+    {
+     "texto": "Los cinco reyes se juntan y asientan campo sobre Gabaón",
+     "certeza": "texto",
+     "ref": "Jos 10:5",
+     "cita": "cinco reyes de los Amorrheos"
+    },
+    {
+     "texto": "Es sacado de la cueva de Maceda con los otros cuatro reyes",
+     "certeza": "texto",
+     "ref": "Jos 10:23",
+     "cita": "al rey de Jerusalem"
+    },
+    {
+     "texto": "Josué hirió y mató a los cinco reyes y los hizo colgar (contenido cruento)",
+     "certeza": "texto",
+     "ref": "Jos 10:26",
+     "cita": "Josué los hirió y los mató, é hízolos colgar en cinco maderos"
+    }
+   ],
+   "externo": []
+  },
+  "Hoham_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 10:3",
+     "fin": "Jos 10:5"
+    },
+    {
+     "inicio": "Jos 10:16",
+     "fin": "Jos 10:27"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Hebrón; acude con Adonisedec contra Gabaón y es sacado de la cueva de Maceda.",
+   "datos": [
+    {
+     "texto": "Se le nombra como rey de Hebrón («Oham» en la RV1909); Adonisedec le pide ayuda",
+     "certeza": "texto",
+     "ref": "Jos 10:3",
+     "cita": "Oham rey de Hebrón"
+    },
+    {
+     "texto": "Es sacado de la cueva de Maceda como rey de Hebrón (que sea el rey nombrado en 10:3 es inferencia: aquí no se le nombra)",
+     "certeza": "inferido",
+     "ref": "Jos 10:23",
+     "cita": "al rey de Hebrón"
+    }
+   ],
+   "externo": []
+  },
+  "Piram_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 10:3",
+     "fin": "Jos 10:5"
+    },
+    {
+     "inicio": "Jos 10:16",
+     "fin": "Jos 10:27"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Jarmut; acude contra Gabaón y es sacado de la cueva de Maceda.",
+   "datos": [
+    {
+     "texto": "Se le nombra como rey de Jarmut («Phiream» en la RV1909); Adonisedec le pide ayuda",
+     "certeza": "texto",
+     "ref": "Jos 10:3",
+     "cita": "Phiream rey de Jerimoth"
+    },
+    {
+     "texto": "Es sacado de la cueva de Maceda como rey de Jarmut (que sea el rey nombrado en 10:3 es inferencia: aquí no se le nombra)",
+     "certeza": "inferido",
+     "ref": "Jos 10:23",
+     "cita": "al rey de Jerimoth"
+    }
+   ],
+   "externo": []
+  },
+  "Japhia_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 10:3",
+     "fin": "Jos 10:5"
+    },
+    {
+     "inicio": "Jos 10:16",
+     "fin": "Jos 10:27"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Laquis; acude contra Gabaón y es sacado de la cueva de Maceda.",
+   "datos": [
+    {
+     "texto": "Se le nombra como rey de Laquis («Japhia» en la RV1909); Adonisedec le pide ayuda",
+     "certeza": "texto",
+     "ref": "Jos 10:3",
+     "cita": "Japhia rey de Lachîs"
+    },
+    {
+     "texto": "Es sacado de la cueva de Maceda como rey de Laquis (que sea el rey nombrado en 10:3 es inferencia: aquí no se le nombra)",
+     "certeza": "inferido",
+     "ref": "Jos 10:23",
+     "cita": "al rey de Lachîs"
+    }
+   ],
+   "externo": []
+  },
+  "Debir_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 10:3",
+     "fin": "Jos 10:5"
+    },
+    {
+     "inicio": "Jos 10:16",
+     "fin": "Jos 10:27"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Eglón; acude contra Gabaón y es sacado de la cueva de Maceda.",
+   "datos": [
+    {
+     "texto": "Se le nombra como rey de Eglón («Debir» en la RV1909); Adonisedec le pide ayuda",
+     "certeza": "texto",
+     "ref": "Jos 10:3",
+     "cita": "Debir rey de Eglón"
+    },
+    {
+     "texto": "Es sacado de la cueva de Maceda como rey de Eglón (que sea el rey nombrado en 10:3 es inferencia: aquí no se le nombra)",
+     "certeza": "inferido",
+     "ref": "Jos 10:23",
+     "cita": "al rey de Eglón"
+    }
+   ],
+   "externo": []
+  },
+  "Horam_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 10:33",
+     "fin": "Jos 10:33"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Gezer que sube a ayudar a Laquis y es derrotado por Josué con su pueblo.",
+   "datos": [
+    {
+     "texto": "Sube en ayuda de Laquis; Josué lo hiere a él y a su pueblo",
+     "certeza": "texto",
+     "ref": "Jos 10:33",
+     "cita": "Horam, rey de Gezer, subió en ayuda de Lachîs"
+    }
+   ],
+   "externo": []
+  },
+  "Jabin_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 11:1",
+     "fin": "Jos 11:5"
+    },
+    {
+     "inicio": "Jos 11:10",
+     "fin": "Jos 11:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Hazor que convoca a los reyes del norte contra Israel junto a las aguas de Merom.",
+   "datos": [
+    {
+     "texto": "Rey de Hazor: envía mensaje a Jobab de Madón y a otros reyes",
+     "certeza": "texto",
+     "ref": "Jos 11:1",
+     "cita": "Jabín rey de Hasor, envió [mensaje] á Jobab rey de Madón"
+    },
+    {
+     "texto": "Los reyes se juntan junto a las aguas de Merom",
+     "certeza": "texto",
+     "ref": "Jos 11:5",
+     "cita": "reunieron los campos junto á las aguas de Merom"
+    },
+    {
+     "texto": "Josué toma Hazor y hiere a cuchillo a su rey (que sea Jabín es inferencia: 11:1 lo llama rey de Hazor)",
+     "certeza": "inferido",
+     "ref": "Jos 11:10",
+     "cita": "tomó en el mismo tiempo á Hasor, é hirió á cuchillo á su rey"
+    }
+   ],
+   "externo": []
+  },
+  "Jobab_3": {
+   "apariciones": [
+    {
+     "inicio": "Jos 11:1",
+     "fin": "Jos 11:5"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Madón, a quien Jabín convoca contra Israel.",
+   "datos": [
+    {
+     "texto": "Recibe el mensaje de Jabín, rey de Hazor",
+     "certeza": "texto",
+     "ref": "Jos 11:1",
+     "cita": "envió [mensaje] á Jobab rey de Madón"
+    }
+   ],
+   "externo": []
+  },
+  "Caleb_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 14:6",
+     "fin": "Jos 14:15"
+    },
+    {
+     "inicio": "Jos 15:13",
+     "fin": "Jos 15:19"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 21:12"
+    }
+   ],
+   "resumen": "En Josué: a los 85 años pide Hebrón a Josué, expulsa a los hijos de Anac y ofrece su hija Acsa a quien tome Debir.",
+   "datos": [
+    {
+     "texto": "Se presenta a Josué en Gilgal con los hijos de Judá; se le llama hijo de Jefone cenezeo",
+     "certeza": "texto",
+     "ref": "Jos 14:6",
+     "cita": "Caleb, hijo de Jephone Cenezeo"
+    },
+    {
+     "texto": "Tenía cuarenta años cuando Moisés lo envió desde Cades-barnea",
+     "certeza": "texto",
+     "ref": "Jos 14:7",
+     "cita": "Yo era de edad de cuarenta años"
+    },
+    {
+     "texto": "Ahora tiene ochenta y cinco años, cuarenta y cinco años después de la promesa",
+     "certeza": "texto",
+     "ref": "Jos 14:10",
+     "cita": "soy hoy día de ochenta y cinco años"
+    },
+    {
+     "texto": "Dice que cumplió siguiendo a Jehová, a diferencia de sus hermanos",
+     "certeza": "texto",
+     "ref": "Jos 14:8",
+     "cita": "yo cumplí siguiendo á Jehová mi Dios"
+    },
+    {
+     "texto": "Pide el monte de los anaceos, ciudades grandes y fuertes",
+     "certeza": "texto",
+     "ref": "Jos 14:12",
+     "cita": "Dame, pues, ahora este monte"
+    },
+    {
+     "texto": "Hebrón queda de Caleb en heredad porque cumplió siguiendo a Jehová",
+     "certeza": "texto",
+     "ref": "Jos 14:14",
+     "cita": "Hebrón fué de Caleb, hijo de Jephone Cenezeo, en heredad hasta hoy"
+    },
+    {
+     "texto": "Echa de Hebrón a los tres hijos de Anac",
+     "certeza": "texto",
+     "ref": "Jos 15:14",
+     "cita": "Caleb echó de allí tres hijos de Anac"
+    },
+    {
+     "texto": "Ofrece a su hija Acsa a quien hiera y tome Quiriat-sefer",
+     "certeza": "texto",
+     "ref": "Jos 15:16",
+     "cita": "yo le daré á mi hija Axa por mujer"
+    },
+    {
+     "texto": "Concede a Acsa las fuentes de arriba y de abajo",
+     "certeza": "texto",
+     "ref": "Jos 15:19",
+     "cita": "El entonces le dió las fuentes de arriba, y las de abajo"
+    }
+   ],
+   "externo": []
+  },
+  "Sheshai_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 15:14",
+     "fin": "Jos 15:14"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: uno de los tres hijos de Anac que Caleb echa de Hebrón.",
+   "datos": [
+    {
+     "texto": "Es expulsado de Hebrón por Caleb, con sus hermanos",
+     "certeza": "texto",
+     "ref": "Jos 15:14",
+     "cita": "Sesai, Aiman, y Talmai, hijos de Anac"
+    }
+   ],
+   "externo": []
+  },
+  "Ahiman_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 15:14",
+     "fin": "Jos 15:14"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: uno de los tres hijos de Anac que Caleb echa de Hebrón.",
+   "datos": [
+    {
+     "texto": "Es expulsado de Hebrón por Caleb, con sus hermanos",
+     "certeza": "texto",
+     "ref": "Jos 15:14",
+     "cita": "Sesai, Aiman, y Talmai, hijos de Anac"
+    }
+   ],
+   "externo": []
+  },
+  "Talmai_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 15:14",
+     "fin": "Jos 15:14"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: uno de los tres hijos de Anac que Caleb echa de Hebrón.",
+   "datos": [
+    {
+     "texto": "Es expulsado de Hebrón por Caleb, con sus hermanos",
+     "certeza": "texto",
+     "ref": "Jos 15:14",
+     "cita": "Sesai, Aiman, y Talmai, hijos de Anac"
+    }
+   ],
+   "externo": []
+  },
+  "Anak_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 15:13"
+    },
+    {
+     "ref": "Jos 15:14"
+    },
+    {
+     "ref": "Jos 21:11"
+    }
+   ],
+   "resumen": "En Josué: padre de los anaceos de Hebrón (Quiriat-arba).",
+   "datos": [],
+   "externo": []
+  },
+  "Jephunneh_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 14:6"
+    },
+    {
+     "ref": "Jos 14:13"
+    },
+    {
+     "ref": "Jos 14:14"
+    },
+    {
+     "ref": "Jos 15:13"
+    },
+    {
+     "ref": "Jos 21:12"
+    }
+   ],
+   "resumen": "En Josué: padre de Caleb.",
+   "datos": [],
+   "externo": []
+  },
+  "Arba_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 14:15"
+    }
+   ],
+   "resumen": "Hombre grande entre los anaceos que dio nombre a Quiriat-arba (Jos 14:15); solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Hebrón se llamó antes Quiriat-arba; Arba fue un hombre grande entre los anaceos",
+     "certeza": "texto",
+     "ref": "Jos 14:15",
+     "cita": "fué [Arba] un hombre grande entre los Anaceos"
+    }
+   ],
+   "externo": []
+  },
+  "Achsah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 15:16",
+     "fin": "Jos 15:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hija de Caleb, entregada por mujer a Otoniel; pide a su padre fuentes de aguas.",
+   "datos": [
+    {
+     "texto": "Caleb la ofrece por mujer a quien tome Quiriat-sefer",
+     "certeza": "texto",
+     "ref": "Jos 15:16",
+     "cita": "yo le daré á mi hija Axa por mujer"
+    },
+    {
+     "texto": "Otoniel toma la ciudad y recibe a Acsa por mujer",
+     "certeza": "texto",
+     "ref": "Jos 15:17",
+     "cita": "él le dió por mujer á su hija Axa"
+    },
+    {
+     "texto": "Desmonta del asno y su padre le pregunta qué tiene",
+     "certeza": "texto",
+     "ref": "Jos 15:18",
+     "cita": "Ella entonces se apeó del asno"
+    },
+    {
+     "texto": "Pide bendición y fuentes de aguas, porque la tierra dada es de secadal",
+     "certeza": "texto",
+     "ref": "Jos 15:19",
+     "cita": "dame también fuentes de aguas"
+    }
+   ],
+   "externo": []
+  },
+  "Othniel_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 15:17",
+     "fin": "Jos 15:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Quenaz que toma Quiriat-sefer y recibe por mujer a Acsa, hija de Caleb.",
+   "datos": [
+    {
+     "texto": "Toma Quiriat-sefer; el texto lo llama hijo de Cenez y hermano de Caleb (no deja claro de cuál de los dos es hermano)",
+     "certeza": "texto",
+     "ref": "Jos 15:17",
+     "cita": "Othoniel, hijo de Cenez, hermano de Caleb"
+    },
+    {
+     "texto": "Persuade a Acsa de que pida tierras para labrar a su padre",
+     "certeza": "texto",
+     "ref": "Jos 15:18",
+     "cita": "él la persuadió que pidiese á su padre tierras para labrar"
+    }
+   ],
+   "externo": []
+  },
+  "Kenaz_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 15:17"
+    }
+   ],
+   "resumen": "Padre de Otoniel (Jos 15:17); solo se le nombra.",
+   "datos": [],
+   "externo": []
+  },
+  "Mahlah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 17:3",
+     "fin": "Jos 17:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: una de las cinco hijas de Zelofehad; con sus hermanas pide y recibe herencia entre los hermanos de su padre.",
+   "datos": [
+    {
+     "texto": "Es una de las hijas de Zelofehad, que no tuvo hijos varones",
+     "certeza": "texto",
+     "ref": "Jos 17:3",
+     "cita": "no tuvo hijos, sino hijas"
+    },
+    {
+     "texto": "Con sus hermanas se presenta ante Eleazar y Josué a reclamar la herencia que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Estas vinieron delante de Eleazar sacerdote, y de Josué hijo de Nun"
+    },
+    {
+     "texto": "Josué les da herencia entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Y él les dió herencia entre los hermanos del padre de ellas"
+    }
+   ],
+   "externo": []
+  },
+  "Noah_2": {
+   "apariciones": [
+    {
+     "inicio": "Jos 17:3",
+     "fin": "Jos 17:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: una de las cinco hijas de Zelofehad; con sus hermanas pide y recibe herencia entre los hermanos de su padre.",
+   "datos": [
+    {
+     "texto": "Es una de las hijas de Zelofehad, que no tuvo hijos varones",
+     "certeza": "texto",
+     "ref": "Jos 17:3",
+     "cita": "no tuvo hijos, sino hijas"
+    },
+    {
+     "texto": "Con sus hermanas se presenta ante Eleazar y Josué a reclamar la herencia que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Estas vinieron delante de Eleazar sacerdote, y de Josué hijo de Nun"
+    },
+    {
+     "texto": "Josué les da herencia entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Y él les dió herencia entre los hermanos del padre de ellas"
+    }
+   ],
+   "externo": []
+  },
+  "Hoglah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 17:3",
+     "fin": "Jos 17:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: una de las cinco hijas de Zelofehad; con sus hermanas pide y recibe herencia entre los hermanos de su padre.",
+   "datos": [
+    {
+     "texto": "Es una de las hijas de Zelofehad, que no tuvo hijos varones",
+     "certeza": "texto",
+     "ref": "Jos 17:3",
+     "cita": "no tuvo hijos, sino hijas"
+    },
+    {
+     "texto": "Con sus hermanas se presenta ante Eleazar y Josué a reclamar la herencia que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Estas vinieron delante de Eleazar sacerdote, y de Josué hijo de Nun"
+    },
+    {
+     "texto": "Josué les da herencia entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Y él les dió herencia entre los hermanos del padre de ellas"
+    }
+   ],
+   "externo": []
+  },
+  "Milcah_2": {
+   "apariciones": [
+    {
+     "inicio": "Jos 17:3",
+     "fin": "Jos 17:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: una de las cinco hijas de Zelofehad; con sus hermanas pide y recibe herencia entre los hermanos de su padre.",
+   "datos": [
+    {
+     "texto": "Es una de las hijas de Zelofehad, que no tuvo hijos varones",
+     "certeza": "texto",
+     "ref": "Jos 17:3",
+     "cita": "no tuvo hijos, sino hijas"
+    },
+    {
+     "texto": "Con sus hermanas se presenta ante Eleazar y Josué a reclamar la herencia que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Estas vinieron delante de Eleazar sacerdote, y de Josué hijo de Nun"
+    },
+    {
+     "texto": "Josué les da herencia entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Y él les dió herencia entre los hermanos del padre de ellas"
+    }
+   ],
+   "externo": []
+  },
+  "Tirzah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 17:3",
+     "fin": "Jos 17:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Josué: una de las cinco hijas de Zelofehad; con sus hermanas pide y recibe herencia entre los hermanos de su padre.",
+   "datos": [
+    {
+     "texto": "Es una de las hijas de Zelofehad, que no tuvo hijos varones",
+     "certeza": "texto",
+     "ref": "Jos 17:3",
+     "cita": "no tuvo hijos, sino hijas"
+    },
+    {
+     "texto": "Con sus hermanas se presenta ante Eleazar y Josué a reclamar la herencia que Jehová mandó a Moisés",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Estas vinieron delante de Eleazar sacerdote, y de Josué hijo de Nun"
+    },
+    {
+     "texto": "Josué les da herencia entre los hermanos de su padre",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Y él les dió herencia entre los hermanos del padre de ellas"
+    }
+   ],
+   "externo": []
+  },
+  "Zelophehad_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 17:3"
+    }
+   ],
+   "resumen": "En Josué: padre de las cinco hijas, que no tuvo hijos varones.",
+   "datos": [],
+   "externo": []
+  },
+  "Machir_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 13:31"
+    },
+    {
+     "ref": "Jos 17:3"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Gilead_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 17:3"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Hepher_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 17:3"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Eleazar_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 14:1",
+     "fin": "Jos 14:1"
+    },
+    {
+     "inicio": "Jos 17:4",
+     "fin": "Jos 17:4"
+    },
+    {
+     "inicio": "Jos 19:51",
+     "fin": "Jos 19:51"
+    },
+    {
+     "inicio": "Jos 21:1",
+     "fin": "Jos 21:2"
+    },
+    {
+     "inicio": "Jos 24:33",
+     "fin": "Jos 24:33"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 22:13"
+    },
+    {
+     "ref": "Jos 22:31"
+    },
+    {
+     "ref": "Jos 22:32"
+    }
+   ],
+   "resumen": "En Josué: sacerdote que reparte la tierra con Josué; a su muerte lo entierran en el collado de su hijo Finees.",
+   "datos": [
+    {
+     "texto": "Reparte con Josué la heredad de Canaán",
+     "certeza": "texto",
+     "ref": "Jos 14:1",
+     "cita": "les repartieron Eleazar sacerdote, y Josué hijo de Nun"
+    },
+    {
+     "texto": "Las hijas de Zelofehad vienen ante él y Josué",
+     "certeza": "texto",
+     "ref": "Jos 17:4",
+     "cita": "Estas vinieron delante de Eleazar sacerdote"
+    },
+    {
+     "texto": "Con Josué y los principales entrega las heredades en Silo ante el tabernáculo",
+     "certeza": "texto",
+     "ref": "Jos 19:51",
+     "cita": "Eleazar sacerdote, y Josué hijo de Nun, y los principales de los padres, entregaron por suerte"
+    },
+    {
+     "texto": "Los cabezas de los levitas vienen a él para pedir ciudades",
+     "certeza": "texto",
+     "ref": "Jos 21:1",
+     "cita": "vinieron á Eleazar sacerdote, y á Josué hijo de Nun"
+    },
+    {
+     "texto": "Muere y lo entierran en el collado de Finees, su hijo",
+     "certeza": "texto",
+     "ref": "Jos 24:33",
+     "cita": "También murió Eleazar, hijo de Aarón"
+    }
+   ],
+   "externo": []
+  },
+  "Phinehas_1": {
+   "apariciones": [
+    {
+     "inicio": "Jos 22:13",
+     "fin": "Jos 22:20"
+    },
+    {
+     "inicio": "Jos 22:30",
+     "fin": "Jos 22:32"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:33"
+    }
+   ],
+   "resumen": "En Josué: hijo de Eleazar, enviado con diez príncipes a las tribus del oriente por el altar junto al Jordán; queda satisfecho con su respuesta.",
+   "datos": [
+    {
+     "texto": "Israel lo envía con diez príncipes a las tribus del oriente",
+     "certeza": "texto",
+     "ref": "Jos 22:13",
+     "cita": "á Phinees hijo de Eleazar sacerdote"
+    },
+    {
+     "texto": "Él y los príncipes quedan contentos con las palabras de las tribus",
+     "certeza": "texto",
+     "ref": "Jos 22:30",
+     "cita": "fueron contentos de ello"
+    },
+    {
+     "texto": "Dice que Jehová está entre ellos porque no cometieron traición",
+     "certeza": "texto",
+     "ref": "Jos 22:31",
+     "cita": "Hoy hemos entendido que Jehová está entre nosotros"
+    },
+    {
+     "texto": "Su collado, en el monte de Efraín, le fue dado y allí se entierra a su padre",
+     "certeza": "texto",
+     "ref": "Jos 24:33",
+     "cita": "en el collado de Phinees su hijo"
+    }
+   ],
+   "externo": []
+  },
+  "Moses_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 1:1"
+    },
+    {
+     "ref": "Jos 1:2"
+    },
+    {
+     "ref": "Jos 1:3"
+    },
+    {
+     "ref": "Jos 1:5"
+    },
+    {
+     "ref": "Jos 1:7"
+    },
+    {
+     "ref": "Jos 1:13"
+    },
+    {
+     "ref": "Jos 1:14"
+    },
+    {
+     "ref": "Jos 1:15"
+    },
+    {
+     "ref": "Jos 1:17"
+    },
+    {
+     "ref": "Jos 3:7"
+    },
+    {
+     "ref": "Jos 4:10"
+    },
+    {
+     "ref": "Jos 4:12"
+    },
+    {
+     "ref": "Jos 4:14"
+    },
+    {
+     "ref": "Jos 8:31"
+    },
+    {
+     "ref": "Jos 8:32"
+    },
+    {
+     "ref": "Jos 8:33"
+    },
+    {
+     "ref": "Jos 8:35"
+    },
+    {
+     "ref": "Jos 9:24"
+    },
+    {
+     "ref": "Jos 11:12"
+    },
+    {
+     "ref": "Jos 11:15"
+    },
+    {
+     "ref": "Jos 11:20"
+    },
+    {
+     "ref": "Jos 11:23"
+    },
+    {
+     "ref": "Jos 12:6"
+    },
+    {
+     "ref": "Jos 13:8"
+    },
+    {
+     "ref": "Jos 13:12"
+    },
+    {
+     "ref": "Jos 13:21"
+    },
+    {
+     "ref": "Jos 13:24"
+    },
+    {
+     "ref": "Jos 13:29"
+    },
+    {
+     "ref": "Jos 13:32"
+    },
+    {
+     "ref": "Jos 13:33"
+    },
+    {
+     "ref": "Jos 14:2"
+    },
+    {
+     "ref": "Jos 14:3"
+    },
+    {
+     "ref": "Jos 14:5"
+    },
+    {
+     "ref": "Jos 14:6"
+    },
+    {
+     "ref": "Jos 14:7"
+    },
+    {
+     "ref": "Jos 14:9"
+    },
+    {
+     "ref": "Jos 14:10"
+    },
+    {
+     "ref": "Jos 14:11"
+    },
+    {
+     "ref": "Jos 17:4"
+    },
+    {
+     "ref": "Jos 18:7"
+    },
+    {
+     "ref": "Jos 20:2"
+    },
+    {
+     "ref": "Jos 21:2"
+    },
+    {
+     "ref": "Jos 21:8"
+    },
+    {
+     "ref": "Jos 22:2"
+    },
+    {
+     "ref": "Jos 22:4"
+    },
+    {
+     "ref": "Jos 22:5"
+    },
+    {
+     "ref": "Jos 22:7"
+    },
+    {
+     "ref": "Jos 22:9"
+    },
+    {
+     "ref": "Jos 23:6"
+    },
+    {
+     "ref": "Jos 24:5"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 21:4"
+    },
+    {
+     "ref": "Jos 21:10"
+    },
+    {
+     "ref": "Jos 21:13"
+    },
+    {
+     "ref": "Jos 21:19"
+    },
+    {
+     "ref": "Jos 24:5"
+    },
+    {
+     "ref": "Jos 24:33"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Nun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 1:1"
+    },
+    {
+     "ref": "Jos 2:1"
+    },
+    {
+     "ref": "Jos 2:23"
+    },
+    {
+     "ref": "Jos 6:6"
+    },
+    {
+     "ref": "Jos 14:1"
+    },
+    {
+     "ref": "Jos 17:4"
+    },
+    {
+     "ref": "Jos 19:49"
+    },
+    {
+     "ref": "Jos 19:51"
+    },
+    {
+     "ref": "Jos 21:1"
+    },
+    {
+     "ref": "Jos 24:29"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Sihon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 2:10"
+    },
+    {
+     "ref": "Jos 9:10"
+    },
+    {
+     "ref": "Jos 12:2"
+    },
+    {
+     "ref": "Jos 12:5"
+    },
+    {
+     "ref": "Jos 13:10"
+    },
+    {
+     "ref": "Jos 13:21"
+    },
+    {
+     "ref": "Jos 13:27"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Og_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 2:10"
+    },
+    {
+     "ref": "Jos 9:10"
+    },
+    {
+     "ref": "Jos 12:4"
+    },
+    {
+     "ref": "Jos 13:12"
+    },
+    {
+     "ref": "Jos 13:30"
+    },
+    {
+     "ref": "Jos 13:31"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Balak_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:9"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Beor_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 13:22"
+    },
+    {
+     "ref": "Jos 24:9"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Terah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:2"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Abram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:2"
+    },
+    {
+     "ref": "Jos 24:3"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Nahor_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:2"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Isaac_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:3"
+    },
+    {
+     "ref": "Jos 24:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Esau_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Hamor_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Shechem_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Gershon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 21:6"
+    },
+    {
+     "ref": "Jos 21:27"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Kohath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 21:5"
+    },
+    {
+     "ref": "Jos 21:20"
+    },
+    {
+     "ref": "Jos 21:26"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Merari_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 21:7"
+    },
+    {
+     "ref": "Jos 21:34"
+    },
+    {
+     "ref": "Jos 21:40"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:4"
+    },
+    {
+     "ref": "Jos 24:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Joseph_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 24:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Balaam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 13:22"
+    },
+    {
+     "ref": "Jos 24:9"
+    },
+    {
+     "ref": "Jos 24:10"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Los hijos de Israel lo mataron a cuchillo con otros",
+     "certeza": "texto",
+     "ref": "Jos 13:22",
+     "cita": "mataron á cuchillo los hijos de Israel á Balaam adivino"
+    }
+   ],
+   "externo": []
+  },
+  "Bohan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jos 15:6"
+    },
+    {
+     "ref": "Jos 18:17"
+    }
+   ],
+   "resumen": "Hijo de Rubén cuya «piedra» marca el límite de Judá y Benjamín (Jos 15:6; 18:17); solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Un mojón del límite se llama «la piedra de Bohán, hijo de Rubén»",
+     "certeza": "texto",
+     "ref": "Jos 15:6",
+     "cita": "la piedra de Bohán, hijo de Rubén"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "cordon-de-grana": {
+   "nombre": "Cordón de grana de Rahab",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Jos 2:17",
+     "fin": "Jos 2:21"
+    }
+   ],
+   "personas": [
+    "Rahab_1"
+   ],
+   "lugares": [
+    "jerico"
+   ],
+   "resumen": "Señal que los espías piden a Rahab atar a la ventana para que su casa sea respetada cuando Israel entre.",
+   "datos": [
+    {
+     "texto": "Los espías piden atar el cordón de grana a la ventana por la que los descolgaron",
+     "certeza": "texto",
+     "ref": "Jos 2:18",
+     "cita": "tú atarás este cordón de grana á la ventana por la cual nos descolgaste"
+    },
+    {
+     "texto": "Quien salga de la casa será responsable de su sangre; quien esté dentro, bajo protección",
+     "certeza": "texto",
+     "ref": "Jos 2:19",
+     "cita": "cualquiera que se estuviere en casa contigo, su sangre será sobre nuestra cabeza"
+    },
+    {
+     "texto": "Rahab lo ata a la ventana",
+     "certeza": "texto",
+     "ref": "Jos 2:21",
+     "cita": "ella ató el cordón de grana á la ventana"
+    }
+   ],
+   "externo": []
+  },
+  "doce-piedras-del-jordan": {
+   "nombre": "Las doce piedras del Jordán y de Gilgal",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "Jos 4:2",
+     "fin": "Jos 4:9"
+    },
+    {
+     "inicio": "Jos 4:20",
+     "fin": "Jos 4:24"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "jordan",
+    "gilgal"
+   ],
+   "resumen": "Doce piedras, una por tribu, tomadas del cauce del Jordán y erigidas como memoria; el texto menciona además doce piedras puestas en medio del río.",
+   "datos": [
+    {
+     "texto": "Jehová manda tomar doce piedras del lugar donde estaban los pies de los sacerdotes",
+     "certeza": "texto",
+     "ref": "Jos 4:3",
+     "cita": "doce piedras, las cuales pasaréis con vosotros"
+    },
+    {
+     "texto": "Los doce hombres las levantan conforme al número de las tribus y las asientan en el alojamiento",
+     "certeza": "texto",
+     "ref": "Jos 4:8",
+     "cita": "levantaron doce piedras del medio del Jordán"
+    },
+    {
+     "texto": "Josué levanta también doce piedras en medio del Jordán, donde estuvieron los pies de los sacerdotes (el texto no aclara si son otras)",
+     "certeza": "texto",
+     "ref": "Jos 4:9",
+     "cita": "Josué también levantó doce piedras en medio del Jordán"
+    },
+    {
+     "texto": "Josué erige en Gilgal las doce piedras traídas del Jordán",
+     "certeza": "texto",
+     "ref": "Jos 4:20",
+     "cita": "Josué erigió en Gilgal las doce piedras"
+    },
+    {
+     "texto": "Servirán para responder a los hijos que pregunten qué significan",
+     "certeza": "texto",
+     "ref": "Jos 4:21",
+     "cita": "¿Qué os significan estas piedras?"
+    }
+   ],
+   "externo": []
+  },
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "Jos 3:3",
+     "fin": "Jos 3:17"
+    },
+    {
+     "inicio": "Jos 4:5",
+     "fin": "Jos 4:11"
+    },
+    {
+     "inicio": "Jos 4:15",
+     "fin": "Jos 4:18"
+    },
+    {
+     "inicio": "Jos 6:4",
+     "fin": "Jos 6:13"
+    },
+    {
+     "inicio": "Jos 7:6",
+     "fin": "Jos 7:6"
+    },
+    {
+     "inicio": "Jos 8:33",
+     "fin": "Jos 8:33"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "jordan",
+    "jerico"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "El pueblo debe seguir el arca del pacto, que llevan sacerdotes y levitas",
+     "certeza": "texto",
+     "ref": "Jos 3:3",
+     "cita": "el arca del pacto de Jehová vuestro Dios, y los sacerdotes y Levitas que la llevan"
+    },
+    {
+     "texto": "Debe haber unos dos mil codos entre el pueblo y el arca",
+     "certeza": "texto",
+     "ref": "Jos 3:4",
+     "cita": "distancia como de la medida de dos mil codos"
+    },
+    {
+     "texto": "Los sacerdotes con el arca están en seco en medio del Jordán hasta que todo el pueblo pasa",
+     "certeza": "texto",
+     "ref": "Jos 3:17",
+     "cita": "estuvieron en seco, firmes en medio del Jordán"
+    },
+    {
+     "texto": "Las aguas del Jordán se partieron delante del arca",
+     "certeza": "texto",
+     "ref": "Jos 4:7",
+     "cita": "las aguas del Jordán fueron partidas delante del arca del pacto de Jehová"
+    },
+    {
+     "texto": "También se la llama «arca del testimonio»",
+     "certeza": "texto",
+     "ref": "Jos 4:16",
+     "cita": "arca del testimonio"
+    },
+    {
+     "texto": "En Jericó va detrás de los siete sacerdotes con las bocinas",
+     "certeza": "texto",
+     "ref": "Jos 6:8",
+     "cita": "el arca del pacto de Jehová los seguía"
+    },
+    {
+     "texto": "Josué se postra delante de ella tras la derrota de Hai",
+     "certeza": "texto",
+     "ref": "Jos 7:6",
+     "cita": "delante del arca de Jehová hasta la tarde"
+    },
+    {
+     "texto": "Israel se coloca a uno y otro lado del arca entre el Gerizim y el Ebal",
+     "certeza": "texto",
+     "ref": "Jos 8:33",
+     "cita": "estaban de la una y de la otra parte junto al arca"
+    }
+   ],
+   "externo": [],
+   "tabernaculo": "arca"
+  },
+  "cuchillos-de-la-circuncision": {
+   "nombre": "Cuchillos afilados de la circuncisión",
+   "tipo": "herramienta",
+   "apariciones": [
+    {
+     "inicio": "Jos 5:2",
+     "fin": "Jos 5:3"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "gilgal"
+   ],
+   "resumen": "Cuchillos que Josué se hace por mandato de Jehová para circuncidar a los hijos de Israel nacidos en el desierto.",
+   "datos": [
+    {
+     "texto": "Jehová manda hacerlos para circuncidar la segunda vez",
+     "certeza": "texto",
+     "ref": "Jos 5:2",
+     "cita": "Hazte cuchillos afilados"
+    },
+    {
+     "texto": "Josué los hace y circuncida en «el monte de los prepucios»",
+     "certeza": "texto",
+     "ref": "Jos 5:3",
+     "cita": "circuncidó á los hijos de Israel en el monte de los prepucios"
+    }
+   ],
+   "externo": []
+  },
+  "bocinas-de-cuerno-de-carnero": {
+   "nombre": "Siete bocinas de cuernos de carnero",
+   "tipo": "instrumento",
+   "apariciones": [
+    {
+     "inicio": "Jos 6:4",
+     "fin": "Jos 6:16"
+    },
+    {
+     "inicio": "Jos 6:20",
+     "fin": "Jos 6:20"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "jerico"
+   ],
+   "resumen": "Siete sacerdotes las llevan delante del arca en las vueltas a Jericó; su sonido prolongado precede a la caída del muro.",
+   "datos": [
+    {
+     "texto": "Siete sacerdotes llevarán siete bocinas de cuernos de carneros delante del arca",
+     "certeza": "texto",
+     "ref": "Jos 6:4",
+     "cita": "siete bocinas de cuernos de carneros delante del arca"
+    },
+    {
+     "texto": "Con el toque prolongado el pueblo gritará y el muro caerá",
+     "certeza": "texto",
+     "ref": "Jos 6:5",
+     "cita": "cuando tocaren prolongadamente el cuerno de carnero"
+    },
+    {
+     "texto": "El séptimo día dan siete vueltas",
+     "certeza": "texto",
+     "ref": "Jos 6:15",
+     "cita": "dieron vuelta á la ciudad de la misma manera siete veces"
+    },
+    {
+     "texto": "Suenan las bocinas, el pueblo grita y el muro cae",
+     "certeza": "texto",
+     "ref": "Jos 6:20",
+     "cita": "el muro cayó á plomo"
+    }
+   ],
+   "externo": []
+  },
+  "botin-de-acan": {
+   "nombre": "El manto, la plata y el lingote de oro de Acán",
+   "tipo": "botín (anatema)",
+   "apariciones": [
+    {
+     "inicio": "Jos 7:1",
+     "fin": "Jos 7:1"
+    },
+    {
+     "inicio": "Jos 7:11",
+     "fin": "Jos 7:11"
+    },
+    {
+     "inicio": "Jos 7:21",
+     "fin": "Jos 7:24"
+    }
+   ],
+   "personas": [
+    "Achan_1",
+    "Joshua_1"
+   ],
+   "lugares": [
+    "valle-de-acor",
+    "jerico"
+   ],
+   "resumen": "Lo que Acán tomó del anatema de Jericó y escondió en su tienda: un manto babilónico, doscientos siclos de plata y un lingote de oro de cincuenta siclos.",
+   "datos": [
+    {
+     "texto": "Un manto babilónico, 200 siclos de plata y un lingote de oro de 50 siclos",
+     "certeza": "texto",
+     "ref": "Jos 7:21",
+     "cita": "un manto babilónico muy bueno, y doscientos siclos de plata, y un changote de oro de peso de cincuenta siclos"
+    },
+    {
+     "texto": "Los escondió bajo tierra en medio de su tienda",
+     "certeza": "texto",
+     "ref": "Jos 7:21",
+     "cita": "escondido debajo de tierra en el medio de mi tienda"
+    },
+    {
+     "texto": "Los mensajeros lo traen y lo ponen delante de Jehová",
+     "certeza": "texto",
+     "ref": "Jos 7:23",
+     "cita": "pusiéronlo delante de Jehová"
+    },
+    {
+     "texto": "Llevado al valle de Acor con Acán y todo lo suyo",
+     "certeza": "texto",
+     "ref": "Jos 7:24",
+     "cita": "lleváronlo todo al valle de Achôr"
+    }
+   ],
+   "externo": []
+  },
+  "lanza-de-josue": {
+   "nombre": "La lanza de Josué en Hai",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "Jos 8:18",
+     "fin": "Jos 8:19"
+    },
+    {
+     "inicio": "Jos 8:26",
+     "fin": "Jos 8:26"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "hai"
+   ],
+   "resumen": "Por orden de Jehová Josué la alza hacia Hai, señal para la emboscada, y no retira la mano hasta que Hai es destruida.",
+   "datos": [
+    {
+     "texto": "Jehová manda alzarla hacia Hai",
+     "certeza": "texto",
+     "ref": "Jos 8:18",
+     "cita": "Levanta la lanza que tienes en tu mano hacia Hai"
+    },
+    {
+     "texto": "Al alzarla los de la emboscada corren y toman la ciudad",
+     "certeza": "texto",
+     "ref": "Jos 8:19",
+     "cita": "corrieron luego que él alzó su mano"
+    },
+    {
+     "texto": "No retrajo su mano que había extendido con la lanza hasta destruir a los moradores",
+     "certeza": "texto",
+     "ref": "Jos 8:26",
+     "cita": "no retrajo su mano que había extendido con la lanza"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-piedras-enteras": {
+   "nombre": "Altar de piedras enteras en el monte Ebal",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "Jos 8:30",
+     "fin": "Jos 8:31"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "monte-ebal"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Josué edifica un altar a Jehová en el monte Ebal",
+     "certeza": "texto",
+     "ref": "Jos 8:30",
+     "cita": "Josué edificó un altar á Jehová Dios de Israel en el monte de Ebal"
+    },
+    {
+     "texto": "Es de piedras enteras, sin hierro, como Moisés mandó; allí ofrecen holocaustos y pacíficos",
+     "certeza": "texto",
+     "ref": "Jos 8:31",
+     "cita": "un altar de piedras enteras sobre las cuales nadie alzó hierro"
+    }
+   ],
+   "externo": []
+  },
+  "piedras-de-la-ley-en-ebal": {
+   "nombre": "Piedras revocadas con cal en el monte Ebal",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "Jos 8:32",
+     "fin": "Jos 8:32"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "monte-ebal"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Josué escribe en piedras la repetición de la ley de Moisés",
+     "certeza": "texto",
+     "ref": "Jos 8:32",
+     "cita": "escribió allí en piedras la repetición de la ley de Moisés"
+    },
+    {
+     "texto": "Que sean las piedras mandadas en Dt 27:2-8 es inferencia: Jos 8 no menciona la cal",
+     "certeza": "inferido",
+     "ref": "Jos 8:32",
+     "cita": "escribió allí en piedras la repetición de la ley de Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "libro-de-la-ley": {
+   "nombre": "Libro de la ley",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "Jos 1:8",
+     "fin": "Jos 1:8"
+    },
+    {
+     "inicio": "Jos 8:31",
+     "fin": "Jos 8:31"
+    },
+    {
+     "inicio": "Jos 8:34",
+     "fin": "Jos 8:35"
+    },
+    {
+     "inicio": "Jos 23:6",
+     "fin": "Jos 23:6"
+    },
+    {
+     "inicio": "Jos 24:26",
+     "fin": "Jos 24:26"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová manda que no se aparte de la boca de Josué y que medite en él de día y de noche",
+     "certeza": "texto",
+     "ref": "Jos 1:8",
+     "cita": "El libro de aquesta ley nunca se apartará de tu boca"
+    },
+    {
+     "texto": "Josué lee todas las palabras de la ley, bendiciones y maldiciones",
+     "certeza": "texto",
+     "ref": "Jos 8:34",
+     "cita": "leyó todas las palabras de la ley, las bendiciones y las maldiciones"
+    },
+    {
+     "texto": "Josué manda guardar lo escrito en el libro de la ley de Moisés",
+     "certeza": "texto",
+     "ref": "Jos 23:6",
+     "cita": "todo lo que está escrito en el libro de la ley de Moisés"
+    },
+    {
+     "texto": "En Siquem escribe sus palabras en el «libro de la ley de Dios»",
+     "certeza": "texto",
+     "ref": "Jos 24:26",
+     "cita": "escribió Josué estas palabras en el libro de la ley de Dios"
+    }
+   ],
+   "externo": []
+  },
+  "mana": {
+   "nombre": "Maná",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "Jos 5:11",
+     "fin": "Jos 5:12"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "gilgal"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "El maná cesa al día siguiente de comer del fruto de la tierra",
+     "certeza": "texto",
+     "ref": "Jos 5:12",
+     "cita": "el maná cesó el día siguiente"
+    }
+   ],
+   "externo": []
+  },
+  "cordero-de-la-pascua": {
+   "nombre": "Cordero de la Pascua",
+   "tipo": "rito",
+   "apariciones": [
+    {
+     "inicio": "Jos 5:10",
+     "fin": "Jos 5:10"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "gilgal"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Celebran la pascua en Gilgal el día catorce, por la tarde (el texto no nombra el cordero)",
+     "certeza": "texto",
+     "ref": "Jos 5:10",
+     "cita": "celebraron la pascua á los catorce días del mes"
+    }
+   ],
+   "externo": []
+  },
+  "libro-de-jaser": {
+   "nombre": "Libro de Jaser",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "Jos 10:13",
+     "fin": "Jos 10:13"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "valle-de-ajalon"
+   ],
+   "resumen": "Libro que el texto cita como donde está escrito el sol detenido.",
+   "datos": [
+    {
+     "texto": "El texto pregunta si el hecho no está escrito en él",
+     "certeza": "texto",
+     "ref": "Jos 10:13",
+     "cita": "¿No está aquesto escrito en el libro de Jasher?"
+    }
+   ],
+   "externo": []
+  },
+  "provisiones-de-los-gabaonitas": {
+   "nombre": "Panes secos y odres rotos de los gabaonitas",
+   "tipo": "disfraz",
+   "apariciones": [
+    {
+     "inicio": "Jos 9:4",
+     "fin": "Jos 9:5"
+    },
+    {
+     "inicio": "Jos 9:12",
+     "fin": "Jos 9:13"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "gabaon",
+    "gilgal"
+   ],
+   "resumen": "Sacos, cueros de vino, zapatos y pan viejos con que los gabaonitas fingen venir de lejos.",
+   "datos": [
+    {
+     "texto": "Toman sacos viejos y cueros de vino rotos y remendados",
+     "certeza": "texto",
+     "ref": "Jos 9:4",
+     "cita": "cueros viejos de vino, rotos y remendados"
+    },
+    {
+     "texto": "Zapatos viejos y recosidos, vestidos viejos y pan seco y mohoso",
+     "certeza": "texto",
+     "ref": "Jos 9:5",
+     "cita": "todo el pan que traían para el camino, seco y mohoso"
+    },
+    {
+     "texto": "Dicen que el pan era caliente al salir de casa",
+     "certeza": "texto",
+     "ref": "Jos 9:12",
+     "cita": "tomamos caliente de nuestras casas"
+    }
+   ],
+   "externo": []
+  },
+  "suertes-de-la-tierra": {
+   "nombre": "Las suertes de la tierra",
+   "tipo": "rito",
+   "apariciones": [
+    {
+     "inicio": "Jos 18:6",
+     "fin": "Jos 18:6"
+    },
+    {
+     "inicio": "Jos 18:8",
+     "fin": "Jos 18:10"
+    },
+    {
+     "inicio": "Jos 19:51",
+     "fin": "Jos 19:51"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Eleazar_1"
+   ],
+   "lugares": [
+    "siloh"
+   ],
+   "resumen": "Suertes echadas delante de Jehová en Silo para repartir la tierra entre las tribus que faltaban.",
+   "datos": [
+    {
+     "texto": "Josué dice que echará las suertes delante de Jehová",
+     "certeza": "texto",
+     "ref": "Jos 18:6",
+     "cita": "yo os echaré las suertes aquí delante de Jehová nuestro Dios"
+    },
+    {
+     "texto": "Echa las suertes en Silo y reparte la tierra por porciones",
+     "certeza": "texto",
+     "ref": "Jos 18:10",
+     "cita": "Josué les echó las suertes delante de Jehová en Silo"
+    },
+    {
+     "texto": "Eleazar, Josué y los principales las entregan a la entrada del tabernáculo",
+     "certeza": "texto",
+     "ref": "Jos 19:51",
+     "cita": "entregaron por suerte en posesión á las tribus"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-ed": {
+   "nombre": "Altar junto al Jordán (Ed)",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "Jos 22:10",
+     "fin": "Jos 22:34"
+    }
+   ],
+   "personas": [
+    "Phinehas_1"
+   ],
+   "lugares": [
+    "jordan"
+   ],
+   "resumen": "Altar «de grande apariencia» que levantan Rubén, Gad y media tribu de Manasés; Israel casi va a la guerra por él, hasta que explican que es un testimonio.",
+   "datos": [
+    {
+     "texto": "Lo edifican al llegar a los términos del Jordán",
+     "certeza": "texto",
+     "ref": "Jos 22:10",
+     "cita": "edificaron allí un altar junto al Jordán, un altar de grande apariencia"
+    },
+    {
+     "texto": "Dicen que no es para sacrificios sino testimonio entre ellos y los de Canaán",
+     "certeza": "texto",
+     "ref": "Jos 22:27",
+     "cita": "para que sea un testimonio entre nosotros y vosotros"
+    },
+    {
+     "texto": "Le ponen por nombre Ed, «testimonio»",
+     "certeza": "texto",
+     "ref": "Jos 22:34",
+     "cita": "pusieron por nombre al altar Ed"
+    }
+   ],
+   "externo": []
+  },
+  "piedra-de-siquem": {
+   "nombre": "La gran piedra de Siquem",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "Jos 24:26",
+     "fin": "Jos 24:27"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "lugares": [
+    "siquem"
+   ],
+   "resumen": "Piedra que Josué levanta debajo de un alcornoque junto al santuario de Jehová, como testigo del pacto.",
+   "datos": [
+    {
+     "texto": "La levanta debajo de un alcornoque junto al santuario de Jehová",
+     "certeza": "texto",
+     "ref": "Jos 24:26",
+     "cita": "tomando una grande piedra, levantóla allí debajo de un alcornoque"
+    },
+    {
+     "texto": "Dice que ha oído las palabras de Jehová y será testigo contra el pueblo",
+     "certeza": "texto",
+     "ref": "Jos 24:27",
+     "cita": "esta piedra será entre nosotros por testigo"
+    }
+   ],
+   "externo": []
+  },
+  "huesos-de-jose": {
+   "nombre": "Huesos de José",
+   "tipo": "reliquia",
+   "apariciones": [
+    {
+     "inicio": "Jos 24:32",
+     "fin": "Jos 24:32"
+    }
+   ],
+   "personas": [
+    "Joseph_1",
+    "Jacob_1"
+   ],
+   "lugares": [
+    "siquem"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Los huesos de José, traídos de Egipto, se entierran en Siquem, en el campo que Jacob compró por cien corderas",
+     "certeza": "texto",
+     "ref": "Jos 24:32",
+     "cita": "Y enterraron en Sichêm los huesos de José"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "casa-de-rahab": {
+   "nombre": "La casa de Rahab en el muro de Jericó",
+   "apariciones": [
+    {
+     "inicio": "Jos 2:1",
+     "fin": "Jos 2:21"
+    }
+   ],
+   "personas": [
+    "Rahab_1"
+   ],
+   "objetos": [
+    "cordon-de-grana"
+   ],
+   "resumen": "Casa pegada al muro de Jericó donde los espías se esconden en el terrado y desde cuya ventana se descuelgan.",
+   "datos": [
+    {
+     "texto": "Los espías entran en la casa de una ramera y posan allí",
+     "certeza": "texto",
+     "ref": "Jos 2:1",
+     "cita": "entráronse en casa de una mujer ramera"
+    },
+    {
+     "texto": "Los esconde en el terrado entre tascos de lino",
+     "certeza": "texto",
+     "ref": "Jos 2:6",
+     "cita": "los había hecho subir al terrado"
+    },
+    {
+     "texto": "La casa está pegada al muro y tiene ventana",
+     "certeza": "texto",
+     "ref": "Jos 2:15",
+     "cita": "su casa estaba á la pared del muro"
+    }
+   ],
+   "externo": [],
+   "lugar": "jerico"
+  },
+  "gilgal": {
+   "nombre": "Gilgal, el campamento al oriente de Jericó",
+   "apariciones": [
+    {
+     "inicio": "Jos 4:19",
+     "fin": "Jos 4:24"
+    },
+    {
+     "inicio": "Jos 5:2",
+     "fin": "Jos 5:12"
+    },
+    {
+     "inicio": "Jos 9:6",
+     "fin": "Jos 9:6"
+    },
+    {
+     "inicio": "Jos 10:6",
+     "fin": "Jos 10:9"
+    },
+    {
+     "inicio": "Jos 10:15",
+     "fin": "Jos 10:15"
+    },
+    {
+     "inicio": "Jos 10:43",
+     "fin": "Jos 10:43"
+    },
+    {
+     "inicio": "Jos 14:6",
+     "fin": "Jos 14:6"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Caleb_1"
+   ],
+   "objetos": [
+    "doce-piedras-del-jordan",
+    "cuchillos-de-la-circuncision",
+    "mana",
+    "cordero-de-la-pascua",
+    "provisiones-de-los-gabaonitas"
+   ],
+   "resumen": "Primer campamento en Canaán: allí se erigen las doce piedras, se circuncida al pueblo, se celebra la pascua y cesa el maná.",
+   "datos": [
+    {
+     "texto": "Asientan el campo en Gilgal, al lado oriental de Jericó, el día diez del mes primero",
+     "certeza": "texto",
+     "ref": "Jos 4:19",
+     "cita": "asentaron el campo en Gilgal, al lado oriental de Jericó"
+    },
+    {
+     "texto": "Jehová quita el oprobio de Egipto y el lugar se llama Gilgal",
+     "certeza": "texto",
+     "ref": "Jos 5:9",
+     "cita": "Hoy he quitado de vosotros el oprobio de Egipto"
+    },
+    {
+     "texto": "Celebran la pascua en los llanos de Jericó",
+     "certeza": "texto",
+     "ref": "Jos 5:10",
+     "cita": "en los llanos de Jericó"
+    },
+    {
+     "texto": "Los gabaonitas llegan a Josué en Gilgal",
+     "certeza": "texto",
+     "ref": "Jos 9:6",
+     "cita": "vinieron á Josué al campo en Gilgal"
+    },
+    {
+     "texto": "Caleb se presenta a Josué en Gilgal",
+     "certeza": "texto",
+     "ref": "Jos 14:6",
+     "cita": "vinieron á Josué en Gilgal"
+    }
+   ],
+   "externo": [],
+   "lugar": "gilgal"
+  },
+  "jerico": {
+   "nombre": "Jericó",
+   "apariciones": [
+    {
+     "inicio": "Jos 5:13",
+     "fin": "Jos 6:27"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Rahab_1"
+   ],
+   "objetos": [
+    "arca-del-testimonio",
+    "bocinas-de-cuerno-de-carnero",
+    "cordon-de-grana"
+   ],
+   "resumen": "Ciudad cerrada que cae tras siete días de vueltas; es consagrada al anatema salvo Rahab y los suyos.",
+   "datos": [
+    {
+     "texto": "Estaba cerrada, sin que nadie entrara ni saliera",
+     "certeza": "texto",
+     "ref": "Jos 6:1",
+     "cita": "Jericó estaba cerrada, bien cerrada"
+    },
+    {
+     "texto": "El muro cayó y el pueblo tomó la ciudad",
+     "certeza": "texto",
+     "ref": "Jos 6:20",
+     "cita": "el muro cayó á plomo"
+    },
+    {
+     "texto": "Destruyen todo lo que había en la ciudad (contenido cruento)",
+     "certeza": "texto",
+     "ref": "Jos 6:21",
+     "cita": "hombres y mujeres, mozos y viejos"
+    },
+    {
+     "texto": "Consumen con fuego la ciudad; la plata, el oro y los metales van al tesoro de Jehová",
+     "certeza": "texto",
+     "ref": "Jos 6:24",
+     "cita": "Y consumieron con fuego la ciudad"
+    },
+    {
+     "texto": "Josué maldice a quien la reedifique",
+     "certeza": "texto",
+     "ref": "Jos 6:26",
+     "cita": "Maldito delante de Jehová el hombre que se levantare y reedificare esta ciudad"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Jericó (Tell es-Sultan): según Wikipedia, las dataciones por radiocarbono de la destrucción de la «ciudad IV» caen hacia 1617–1530 a. C. y el sitio fue reocupado hacia 1550–1200 a. C.; Garstang (1930–36) vinculó el muro superior con el relato de Josué y lo fechó hacia 1400 a. C. La fuente no liga estos datos a Josué: toda correspondencia es interpretación. Inscrito por la UNESCO en 2023 (dato de Wikipedia). Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Tell es-Sultan (abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Tell_es-Sultan"
+    }
+   ],
+   "lugar": "jerico"
+  },
+  "valle-de-acor": {
+   "nombre": "El valle de Acor",
+   "apariciones": [
+    {
+     "inicio": "Jos 7:24",
+     "fin": "Jos 7:26"
+    }
+   ],
+   "personas": [
+    "Achan_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "botin-de-acan"
+   ],
+   "resumen": "Lugar donde Acán es castigado y se levanta un montón de piedras; de allí toma nombre.",
+   "datos": [
+    {
+     "texto": "Josué y todo Israel llevan allí a Acán y lo suyo",
+     "certeza": "texto",
+     "ref": "Jos 7:24",
+     "cita": "lleváronlo todo al valle de Achôr"
+    },
+    {
+     "texto": "Levantan un gran montón de piedras; el lugar se llama Valle de Acor",
+     "certeza": "texto",
+     "ref": "Jos 7:26",
+     "cita": "un gran montón de piedras, hasta hoy"
+    }
+   ],
+   "externo": [],
+   "lugar": "valle-de-acor"
+  },
+  "hai": {
+   "nombre": "Hai",
+   "apariciones": [
+    {
+     "inicio": "Jos 7:2",
+     "fin": "Jos 7:5"
+    },
+    {
+     "inicio": "Jos 8:1",
+     "fin": "Jos 8:29"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "objetos": [
+    "lanza-de-josue"
+   ],
+   "resumen": "Ciudad junto a Bet-aven, al oriente de Betel: primero derrota a Israel; luego cae por emboscada.",
+   "datos": [
+    {
+     "texto": "Está junto a Bet-aven, al oriente de Betel",
+     "certeza": "texto",
+     "ref": "Jos 7:2",
+     "cita": "junto á Beth-aven hacia el oriente de Beth-el"
+    },
+    {
+     "texto": "Mueren unos treinta y seis hombres de Israel",
+     "certeza": "texto",
+     "ref": "Jos 7:5",
+     "cita": "como treinta y seis hombres"
+    },
+    {
+     "texto": "La emboscada se pone entre Betel y Hai, al occidente",
+     "certeza": "texto",
+     "ref": "Jos 8:9",
+     "cita": "entre Beth-el y Hai, al occidente de Hai"
+    },
+    {
+     "texto": "Josué la quema y la reduce a un montón perpetuo",
+     "certeza": "texto",
+     "ref": "Jos 8:28",
+     "cita": "redújola á un montón perpetuo"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Hai: según Wikipedia, la identificación con et-Tell (propuesta por Robinson en 1838; Albright la apoyó en 1924) es aceptada por la mayoría de los arqueólogos, pero el sitio estuvo deshabitado en el Bronce Tardío (hacia 1400 a. C.) y la aldea de la Edad del Hierro I (hacia 1200 a. C.) no muestra conquista; Garstang afirmó haber hallado cerámica del Bronce Tardío, no verificada. Identificación y relación con Josué disputadas. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Et-Tell (abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Et-Tell"
+    }
+   ],
+   "lugar": "hai"
+  },
+  "ebal-y-gerizim": {
+   "nombre": "Ebal y Gerizim: bendición y maldición",
+   "apariciones": [
+    {
+     "inicio": "Jos 8:30",
+     "fin": "Jos 8:35"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "objetos": [
+    "altar-de-piedras-enteras",
+    "piedras-de-la-ley-en-ebal",
+    "arca-del-testimonio",
+    "libro-de-la-ley"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Mitad del pueblo hacia el Gerizim y mitad hacia el Ebal, junto al arca",
+     "certeza": "texto",
+     "ref": "Jos 8:33",
+     "cita": "la mitad de ellos estaba hacia el monte de Gerizim, y la otra mitad hacia el monte de Ebal"
+    },
+    {
+     "texto": "Josué lee toda la ley ante mujeres, niños y extranjeros",
+     "certeza": "texto",
+     "ref": "Jos 8:35",
+     "cita": "mujeres y niños, y extranjeros que andaban entre ellos"
+    }
+   ],
+   "externo": [],
+   "lugar": "monte-ebal"
+  },
+  "gabaon": {
+   "nombre": "Gabaón",
+   "apariciones": [
+    {
+     "inicio": "Jos 9:3",
+     "fin": "Jos 9:27"
+    },
+    {
+     "inicio": "Jos 10:1",
+     "fin": "Jos 10:10"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Adoni-zedek_1"
+   ],
+   "objetos": [
+    "provisiones-de-los-gabaonitas"
+   ],
+   "resumen": "Gran ciudad cuyos moradores engañan a Israel con una alianza y luego son asediados por cinco reyes amorreos.",
+   "datos": [
+    {
+     "texto": "Sus moradores oyen lo que Josué hizo a Jericó y Hai",
+     "certeza": "texto",
+     "ref": "Jos 9:3",
+     "cita": "oyeron lo que Josué había hecho á Jericó y á Hai"
+    },
+    {
+     "texto": "Sus ciudades: Gabaón, Cafira, Beerot y Quiriat-jearim",
+     "certeza": "texto",
+     "ref": "Jos 9:17",
+     "cita": "Gabaón, Caphira, Beeroth, y Chiriath-jearim"
+    },
+    {
+     "texto": "Josué los pone por leñadores y aguadores para el altar",
+     "certeza": "texto",
+     "ref": "Jos 9:27",
+     "cita": "leñadores y aguadores para la congregación y para el altar de Jehová"
+    },
+    {
+     "texto": "Era una gran ciudad, mayor que Hai",
+     "certeza": "texto",
+     "ref": "Jos 10:2",
+     "cita": "Gabaón era una gran ciudad"
+    }
+   ],
+   "externo": [],
+   "lugar": "gabaon"
+  },
+  "sol-detenido-en-ajalon": {
+   "nombre": "El sol detenido en Gabaón y la luna en Ajalón",
+   "apariciones": [
+    {
+     "inicio": "Jos 10:11",
+     "fin": "Jos 10:14"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "objetos": [
+    "libro-de-jaser"
+   ],
+   "resumen": "Granizo sobre los que huyen por Bet-horón y un día casi entero en que el sol y la luna se detienen.",
+   "datos": [
+    {
+     "texto": "Jehová echa del cielo grandes piedras sobre los que huyen",
+     "certeza": "texto",
+     "ref": "Jos 10:11",
+     "cita": "Jehová echó sobre ellos del cielo grandes piedras"
+    },
+    {
+     "texto": "Josué ordena: sol en Gabaón, luna en el valle de Ajalón",
+     "certeza": "texto",
+     "ref": "Jos 10:12",
+     "cita": "tú, Luna, en el valle de Ajalón"
+    },
+    {
+     "texto": "El sol se detiene casi un día entero",
+     "certeza": "texto",
+     "ref": "Jos 10:13",
+     "cita": "no se apresuró á ponerse casi un día entero"
+    },
+    {
+     "texto": "Nunca hubo un día semejante, porque Jehová peleaba por Israel",
+     "certeza": "texto",
+     "ref": "Jos 10:14",
+     "cita": "Jehová peleaba por Israel"
+    }
+   ],
+   "externo": [],
+   "lugar": "valle-de-ajalon"
+  },
+  "cueva-de-maceda": {
+   "nombre": "La cueva de Maceda",
+   "apariciones": [
+    {
+     "inicio": "Jos 10:16",
+     "fin": "Jos 10:28"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Adoni-zedek_1",
+    "Hoham_1",
+    "Piram_1",
+    "Japhia_1",
+    "Debir_1"
+   ],
+   "objetos": [],
+   "resumen": "Cueva donde se esconden los cinco reyes; Josué manda cerrarla con piedras y después la usa de sepultura.",
+   "datos": [
+    {
+     "texto": "Los cinco reyes se esconden en una cueva en Maceda",
+     "certeza": "texto",
+     "ref": "Jos 10:16",
+     "cita": "se escondieron en una cueva en Maceda"
+    },
+    {
+     "texto": "Josué manda rodar grandes piedras a la boca y poner guardas",
+     "certeza": "texto",
+     "ref": "Jos 10:18",
+     "cita": "Rodad grandes piedras á la boca de la cueva"
+    },
+    {
+     "texto": "Los hirió, los mató y los colgó hasta la tarde (contenido cruento)",
+     "certeza": "texto",
+     "ref": "Jos 10:26",
+     "cita": "hízolos colgar en cinco maderos"
+    },
+    {
+     "texto": "Los echan en la cueva con grandes piedras a la boca, hasta hoy",
+     "certeza": "texto",
+     "ref": "Jos 10:27",
+     "cita": "pusieron grandes piedras á la boca de la cueva, hasta hoy"
+    }
+   ],
+   "externo": [],
+   "lugar": "maceda"
+  },
+  "aguas-de-merom": {
+   "nombre": "Las aguas de Merom",
+   "apariciones": [
+    {
+     "inicio": "Jos 11:5",
+     "fin": "Jos 11:9"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Jabin_1",
+    "Jobab_3"
+   ],
+   "objetos": [],
+   "resumen": "Lugar donde se juntan los reyes del norte con caballos y carros y donde Josué los sorprende.",
+   "datos": [
+    {
+     "texto": "Un pueblo como la arena del mar con muchedumbre de caballos y carros",
+     "certeza": "texto",
+     "ref": "Jos 11:4",
+     "cita": "como la arena que está á la orilla del mar"
+    },
+    {
+     "texto": "Se juntan junto a las aguas de Merom",
+     "certeza": "texto",
+     "ref": "Jos 11:5",
+     "cita": "reunieron los campos junto á las aguas de Merom"
+    },
+    {
+     "texto": "Jehová manda desjarretar los caballos y quemar los carros",
+     "certeza": "texto",
+     "ref": "Jos 11:6",
+     "cita": "á sus caballos desjarretarás, y sus carros quemarás al fuego"
+    },
+    {
+     "texto": "Josué cae de repente sobre ellos",
+     "certeza": "texto",
+     "ref": "Jos 11:7",
+     "cita": "dió de repente sobre ellos junto á las aguas de Merom"
+    }
+   ],
+   "externo": [],
+   "lugar": "aguas-de-merom"
+  },
+  "hazor": {
+   "nombre": "Hazor",
+   "apariciones": [
+    {
+     "inicio": "Jos 11:10",
+     "fin": "Jos 11:13"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Jabin_1"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad cabeza de los reinos del norte, la única que Josué quema.",
+   "datos": [
+    {
+     "texto": "Hasor había sido cabeza de todos estos reinos",
+     "certeza": "texto",
+     "ref": "Jos 11:10",
+     "cita": "había sido antes cabeza de todos estos reinos"
+    },
+    {
+     "texto": "Solo Hazor es quemada entre las ciudades en cabezos",
+     "certeza": "texto",
+     "ref": "Jos 11:13",
+     "cita": "sacando á sola Asor, la cual quemó Josué"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Hazor: según Wikipedia, ocupa unas 80 ha (la ciudad alta unas 12) y era la mayor ciudad fortificada de la región; un estrato hacia 1200 a. C. muestra incendio catastrófico. Ben-Tor lo ve como apoyo al relato bíblico; Zuckerman lo atribuye a luchas internas y Finkelstein a guerras civiles, los Pueblos del Mar o el colapso del Bronce Tardío. Inscrito por la UNESCO en 2005 con Meguido y Beerseba. Fuente externa; atribución del incendio disputada.",
+     "fuente": "Wikipedia (secundaria): Tel Hazor (abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Tel_Hazor"
+    }
+   ],
+   "lugar": "hazor"
+  },
+  "siloh": {
+   "nombre": "Silo",
+   "apariciones": [
+    {
+     "inicio": "Jos 18:1",
+     "fin": "Jos 18:10"
+    },
+    {
+     "inicio": "Jos 19:51",
+     "fin": "Jos 19:51"
+    },
+    {
+     "inicio": "Jos 21:1",
+     "fin": "Jos 21:2"
+    },
+    {
+     "inicio": "Jos 22:9",
+     "fin": "Jos 22:9"
+    },
+    {
+     "inicio": "Jos 22:12",
+     "fin": "Jos 22:12"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Eleazar_1"
+   ],
+   "objetos": [
+    "suertes-de-la-tierra"
+   ],
+   "resumen": "Donde se asienta el tabernáculo del testimonio y donde Josué echa las suertes de las siete tribus restantes.",
+   "datos": [
+    {
+     "texto": "La congregación se junta en Silo y asienta el tabernáculo del testimonio",
+     "certeza": "texto",
+     "ref": "Jos 18:1",
+     "cita": "asentaron allí el tabernáculo del testimonio"
+    },
+    {
+     "texto": "Josué pide tres varones por tribu para describir la tierra",
+     "certeza": "texto",
+     "ref": "Jos 18:4",
+     "cita": "Señalad tres varones de cada tribu"
+    },
+    {
+     "texto": "La describen por ciudades en siete partes en un libro",
+     "certeza": "texto",
+     "ref": "Jos 18:9",
+     "cita": "delineándola por ciudades en siete partes en un libro"
+    },
+    {
+     "texto": "Allí se acaba de repartir la tierra, a la entrada del tabernáculo",
+     "certeza": "texto",
+     "ref": "Jos 19:51",
+     "cita": "á la entrada del tabernáculo del testimonio"
+    }
+   ],
+   "externo": [],
+   "lugar": "siloh"
+  },
+  "siquem": {
+   "nombre": "Siquem",
+   "apariciones": [
+    {
+     "inicio": "Jos 24:1",
+     "fin": "Jos 24:28"
+    },
+    {
+     "inicio": "Jos 24:32",
+     "fin": "Jos 24:32"
+    }
+   ],
+   "personas": [
+    "Joshua_1",
+    "Jacob_1",
+    "Joseph_1",
+    "Hamor_1"
+   ],
+   "objetos": [
+    "piedra-de-siquem",
+    "huesos-de-jose"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Josué junta las tribus en Siquem y se presentan delante de Dios",
+     "certeza": "texto",
+     "ref": "Jos 24:1",
+     "cita": "Josué todas las tribus de Israel en Sichêm"
+    },
+    {
+     "texto": "Hace alianza con el pueblo y le pone ordenanzas y leyes",
+     "certeza": "texto",
+     "ref": "Jos 24:25",
+     "cita": "hizo alianza con el pueblo el mismo día"
+    },
+    {
+     "texto": "Entierran allí los huesos de José, en el campo que Jacob compró a los hijos de Hamor",
+     "certeza": "texto",
+     "ref": "Jos 24:32",
+     "cita": "en la parte del campo que Jacob compró de los hijos de Hemor padre de Sichêm"
+    }
+   ],
+   "externo": [],
+   "lugar": "siquem"
+  }
+ }
+}

@@ -1,5 +1,5 @@
 window.BIBLIA_RECORRIDOS = {
- "generado": "2026-11-12T01:17:40+00:00",
+ "generado": "2026-11-12T02:00:46+00:00",
  "fuentes": [
   {
    "id": "rv1909",

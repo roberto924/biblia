@@ -1309,3 +1309,24 @@ main:has(.tb) { max-width: 96rem; }
 .boton[disabled] { opacity: .5; cursor: not-allowed; }
 @media (max-width: 400px) { .nav-principal a span { font-size: .62rem; letter-spacing: -.02em; } .nav-principal { gap: 0; padding-left: .2rem; padding-right: .2rem; } }
 .cmp-txt .nb-chip svg { width: 1.05em; height: 1.05em; vertical-align: -.18em; color: var(--lapis); }
+
+/* ---------- Lectura en orden: candado, pasajes bloqueados y tiempo mínimo ---------- */
+.ico-candado, .ico-reloj { width: 1em; height: 1em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; vertical-align: -.14em; }
+.pasaje.bloqueado .pasaje-fila { position: relative; display: flex; align-items: flex-start; gap: .95rem; padding: .7rem .6rem .7rem 0; color: var(--suave); }
+.pasaje.bloqueado .pasaje-num { border-style: dashed; color: var(--suave); background: var(--papel); }
+.pasaje.bloqueado .pasaje-titulo { font-family: var(--sans); font-size: .95rem; font-weight: 500; font-style: italic; color: var(--suave); }
+.pasaje.bloqueado .pasaje-rango { color: var(--suave); }
+.estado.bloqueado { color: var(--suave); background: var(--hoja2); }
+.libro-btn.bloqueado { background: var(--papel); border-style: dashed; }
+.libro-btn.bloqueado .libro-nombre { display: inline-flex; align-items: center; gap: .35rem; color: var(--suave); }
+.aviso-bloqueo { display: flex; align-items: flex-start; gap: .55rem; margin: 0 0 1rem; padding: .7rem .9rem; border: 1px solid var(--linea); border-left: 4px solid var(--lapis); border-radius: var(--r-ctrl); background: var(--lapis-tinte); color: var(--tinta); line-height: 1.45; max-width: 42rem; }
+.aviso-bloqueo .ico-candado { margin-top: .2em; color: var(--lapis); }
+.boton-marcar[disabled] { opacity: 1; background: var(--hoja2); border-color: var(--linea); color: var(--tinta); font-variant-numeric: tabular-nums; box-shadow: none; filter: none; }
+.boton-marcar .ico-reloj { width: 1.1em; height: 1.1em; }
+.siguiente-bloq { opacity: .6; cursor: not-allowed; border-style: dashed; }
+.regla-lectura { max-width: 42rem; margin: -1rem 0 1.5rem; line-height: 1.45; }
+.tb-modo-fijo { display: flex; align-items: flex-start; gap: .4rem; margin: 0; }
+.tb-modo-fijo .ico-candado { margin-top: .2em; }
+.video-libro-bloq { display: flex; align-items: flex-start; gap: .4rem; }
+.sin-texto-orig { margin: .3rem 0 .8rem; padding-left: 1.1rem; font-size: .88rem; color: var(--suave); line-height: 1.45; }
+.sin-texto-orig strong { color: var(--tinta); font-weight: 600; }

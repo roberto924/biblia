@@ -1,5 +1,5 @@
 window.BIBLIA_CONTENIDO = {
- "generado": "2026-11-12T00:57:47+00:00",
+ "generado": "2026-11-12T01:38:37+00:00",
  "origen": "clasificación editorial del proyecto, no del texto bíblico",
  "criterio": "Clasificación editorial del proyecto para el perfil niño (7-12 años, leyendo con la familia): se pliega (alto) lo sexual explícito o insinuado con detalle, la violación, el incesto, la matanza descrita y el infanticidio; se anota (medio) lo breve o legal. No se marcan menciones sin detalle ni muerte natural. El texto nunca se borra.",
  "marcas": [
@@ -660,6 +660,62 @@ window.BIBLIA_CONTENIDO = {
    "categoria": "violencia",
    "nivel": "medio",
    "motivo": "En el cántico Dios anuncia su venganza: saetas embriagadas de sangre y espada que devora carne."
+  },
+  {
+   "desde": "Jos 2:1",
+   "hasta": "Jos 2:1",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Los espías se alojan en casa de Rahab, a quien el texto llama «mujer ramera»; sin detalle."
+  },
+  {
+   "desde": "Jos 6:21",
+   "hasta": "Jos 6:21",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Destruyen Jericó a filo de espada: hombres y mujeres, mozos y viejos, y el ganado."
+  },
+  {
+   "desde": "Jos 7:24",
+   "hasta": "Jos 7:26",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Acán, con sus hijos y sus hijas y su ganado, es apedreado y quemado en el valle de Acor."
+  },
+  {
+   "desde": "Jos 8:22",
+   "hasta": "Jos 8:29",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Hai: matan a todos sus moradores, hombres y mujeres; el rey es colgado de un madero."
+  },
+  {
+   "desde": "Jos 10:10",
+   "hasta": "Jos 10:14",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Batalla de Gabaón: Israel persigue a los amorreos y mueren más por el granizo que a espada."
+  },
+  {
+   "desde": "Jos 10:16",
+   "hasta": "Jos 10:27",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Los cinco reyes: les ponen el pie sobre el cuello, Josué los mata y los cuelga en cinco maderos."
+  },
+  {
+   "desde": "Jos 10:28",
+   "hasta": "Jos 10:40",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Las ciudades del sur son destruidas a filo de espada sin dejar a nadie con vida."
+  },
+  {
+   "desde": "Jos 11:8",
+   "hasta": "Jos 11:14",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Derrota de los reyes del norte: desjarretan los caballos, queman Hazor y matan a todos sus habitantes."
   }
  ]
 };

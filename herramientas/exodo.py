@@ -270,7 +270,7 @@ def parse_ex(s):
     return (int(m.group(1)), int(m.group(2)))
 
 
-ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4}
+ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4, "Jos": 5}
 
 
 def parse_ref(s):
@@ -497,6 +497,11 @@ def construir(cx, cfg=None):
         refs[p].add(rref)
     for p, rs in REFS_EXTRA.items():
         refs[p] |= set(rs)
+    for p, rs in getattr(cfg, "REFS_QUITAR", {}).items():  # refs de BibleData que son de otra persona
+        faltan = set(rs) - refs[p]
+        if faltan:
+            errores.append(f"REFS_QUITAR de {p}: {sorted(faltan)} no están en sus refs")
+        refs[p] -= set(rs)
     for trad, ref, frag in NOTAS_VERIFICAR:
         if frag not in textos[trad].get(ref, ""):
             errores.append(f"Nota sin base: «{frag}» no está en {ex(ref)} ({trad})")
@@ -723,7 +728,7 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
             else:
                 descartadas.append(f"{d['friendly_id']} {ex(r)}")
         if not refs:
-            if conf:
+            if conf and obid not in getattr(cfg, "LUGAR_OPCIONAL", ()):  # configurado a mano: debe aparecer
                 errores.append(f"Lugar de {NOMBRE} {conf[1]}: ningún versículo contiene «{'/'.join(formas)}»")
             else:
                 sin_forma.append(d["friendly_id"])

@@ -68,6 +68,14 @@ HECHOS = {
         "principal": [("Joshua_1", "Dt", None)],
         "sin_aparicion": [("Og_1", "Dt 3:11")],   # mención posterior, no aparición (criterio de Dt)
     },
+    "Jos": {
+        "genealogia": [("Jos 17:1", "Jos 17:2")],
+        "aparece": [("Rahab_1", "Jos 2:1"), ("Achan_1", "Jos 7:1")],
+        "objeto_en": [("Jos 2:18", "cordón de grana"), ("Jos 4:3", "doce piedras del Jordán")],
+        "escenario_lugar": ["jerico"],
+        "principal": [("Joshua_1", "Jos", None), ("Rahab_1", "Jos", "Jos 2")],
+        "sin_aparicion": [(MOISES, "Jos 1:1")],   # Moisés ya murió: mención, no aparición
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

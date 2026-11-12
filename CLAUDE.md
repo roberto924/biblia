@@ -17,6 +17,11 @@ Todo dato dice de dónde sale y su certeza. Se distingue siempre:
 - Habrá **perfil de usuario**: niño (contenido filtrado) o adulto (todo, incluido lo cruento).
 - Aprobado: imagen por pasaje, ruta del éxodo animada, tabernáculo interactivo, objetos de museo y Rollos del Mar Muerto (de dónde sale el texto), audio en lengua original y en la del usuario, mapas antiguos comparados con el actual, profundizar en personajes, curiosidades, fichas coleccionables, plagas, videos que muestran de dónde a dónde va el relato, comparar textos lado a lado, «Mientras tanto en…», notas y subrayados.
 
+## Lectura en orden (decisiones del usuario, 2026-11-11)
+- La Biblia se **desbloquea leyendo en orden** (orden de los pasajes, Gn → Ap). Todo lo posterior al primer pasaje sin leer queda bloqueado: texto, búsqueda, mapa, línea de tiempo, fichas, recursos, comparar y juego muestran solo lo leído (más el pasaje actual).
+- **Tiempo mínimo** antes de poder marcar un pasaje como leído: palabras ÷ 250 por minuto (adulto) o ÷ 150 (niño); solo cuenta el tiempo con el pasaje abierto y visible.
+- Lo ya marcado fuera de orden se conserva; desde ahora solo se avanza desde el primer pasaje sin leer.
+
 ## Juego (decisiones del usuario, 2026-11-11; diseño en `docs/superpowers/specs/2026-11-11-catalogo-juego-design.md`)
 - Se coleccionan **personajes, objetos y escenarios**; fichas con todo lo que se sabe (con certeza y fuente). Las habilidades y poderes son invención del juego, nunca dato bíblico.
 - **Por cada libro que se ingresa**: catálogo (`herramientas/juego/<Libro>.json` → `python -I herramientas/juego.py` → `datos/juego.js`) con genealogías, historias, personajes, objetos y escenarios, más `docs/juego/ideas-<Libro>.md` con minijuegos por historia para que el usuario elija. Al llegar a Apocalipsis se afina el conjunto.

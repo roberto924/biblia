@@ -1,4 +1,4 @@
-"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico y Números.
+"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio y Josué.
 
 Genera:
   datos/originales.js          window.BIBLIA_ORIGINALES (hebreo WLC, testigos, variantes, videos)
@@ -39,6 +39,8 @@ ARCHIVOS = {
     "oshb_lev": (GH + "openscriptures/morphhb/master/wlc/Lev.xml", "oshb_Lev.xml"),
     "oshb_num": (GH + "openscriptures/morphhb/master/wlc/Num.xml", "oshb_Num.xml"),
     "oshb_deu": (GH + "openscriptures/morphhb/master/wlc/Deut.xml", "oshb_Deut.xml"),
+    "oshb_jos": (GH + "openscriptures/morphhb/master/wlc/Josh.xml", "oshb_Josh.xml"),
+    "uxlc_jos": ("https://tanach.us/Books/Joshua.xml", "uxlc_Joshua.xml"),   # solo para leer la marca «X» (versículo ausente del Códice de Leningrado)
     "tvtms": (TVTMS_URL, "tvtms.txt"),
     "swete_vers": (GH + "eliranwong/LXX-Swete-1930/master/00-Swete_versification.csv",
                    "swete_00-Swete_versification.csv"),
@@ -46,16 +48,17 @@ ARCHIVOS = {
                   "swete_01-Swete_word_with_punctuations.csv"),
     "swete_lic": (GH + "eliranwong/LXX-Swete-1930/master/LICENSE", "swete_LICENSE.txt"),
 }
-for _f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full"):
+for _f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full", "fragment", "line"):
     ARCHIVOS["dss_" + _f] = (GH + "ETCBC/dss/master/tf/2.0/%s.tf" % _f, "dss_%s.tf" % _f)
 
-LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt")
-LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu"}          # códigos TVTMS / Swete
-OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm", "Deu": "Dt", "Deut": "Dt"}
-DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt"}            # códigos de libro en ETCBC/dss
-OSIS_RE = "Gen|Exo|Lev|Num|Deu"                                   # libros TVTMS / Swete que se leen
+LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos")
+LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos"}          # códigos TVTMS / Swete
+OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm", "Deu": "Dt", "Deut": "Dt", "Jos": "Jos", "Josh": "Jos"}
+DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos"}            # códigos de libro en ETCBC/dss
+OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos"                                   # libros TVTMS / Swete que se leen
 FALLOS = []
 ROLLOS_PRESENTES = set()          # nombres de rollo que aparecen en ETCBC/dss (lo llena leer_dss)
+ORDEN_DSS = {}                    # rollo -> [(slot, fragmento, línea, (lib, c, v))] en el orden del rollo (lo llena leer_dss)
 
 
 def fallo(msg):
@@ -142,6 +145,19 @@ def leer_oshb(ruta, lib):
                 pegar = False
         _, c, v = verso.get("osisID").split(".")
         res[(lib, int(c), int(v))] = txt.strip()
+    return res
+
+
+def leer_uxlc_x(ruta, lib):
+    """Versículos con la marca «X» del UXLC (tanach.us): «This verse does NOT occur in the Leningrad Codex»."""
+    s = ruta.read_text(encoding="utf-8")
+    if "This verse does NOT occur in the Leningrad Codex" not in s:
+        fallo("UXLC: falta la definición de la nota «X»")
+    res = []
+    for mc in re.finditer(r'<c n="(\d+)">(.*?)</c>', s, re.S):
+        for mv in re.finditer(r'<v n="(\d+)">(.*?)</v>', mc[2], re.S):
+            if "<x>X</x>" in mv[2]:
+                res.append((lib, int(mc[1]), int(mv[1])))
     return res
 
 
@@ -364,6 +380,7 @@ def construir_mapa(bloques, nombre_col, trad_destino, trad_rv, orden_rv, estrict
             lib, eng, _ = parse_refs(cols[1])
             if not eng:
                 continue
+            eng = [(c, v, None if s == "0" else s) for (c, v, s) in eng]   # «.0» en la KJV = el versículo (Jos 9:27.0 frente a 9:27.1-6, que es otra tradición)
             libd, dst, anot = parse_refs(cols[col])
             for (c, v, s) in eng:
                 cubiertos.add((lib, c, v))
@@ -477,7 +494,7 @@ def rango_slots(v):
 
 
 def leer_dss(sin_red):
-    rutas = {f: obtener("dss_" + f, sin_red) for f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full")}
+    rutas = {f: obtener("dss_" + f, sin_red) for f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full", "fragment", "line")}
     tipos = {}
     for l in rutas["otype"].read_text(encoding="utf-8").splitlines():
         m = re.match(r"(\d+)-(\d+)\t(\w+)$", l)
@@ -505,10 +522,17 @@ def leer_dss(sin_red):
     scroll = leer_tf(rutas["scroll"])
     rec = leer_tf(rutas["rec"])
     full = leer_tf(rutas["full"])
+    frag = leer_tf(rutas["fragment"])
+    lin = leer_tf(rutas["line"])
     ROLLOS_PRESENTES.update(scroll.values())
     a, z = tipos["line"]
     lineas_l = sorted((rango_slots(osl[n]), scroll[n]) for n in range(a, z + 1) if n in scroll and n in osl)
     inicios = [r[0][0] for r in lineas_l]
+    a, z = tipos["line"]
+    lineas_n = sorted((rango_slots(osl[n]), n) for n in range(a, z + 1) if n in scroll and n in osl)
+    a, z = tipos["fragment"]
+    frags = sorted((rango_slots(osl[n]), frag.get(n, "")) for n in range(a, z + 1) if n in osl)
+    ini_f = [r[0][0] for r in frags]
     palabras = {}   # scroll -> {(lib,c,v): [(texto, conservado)]}
     for w, b in book.items():
         if b not in DSS_LIBRO:
@@ -524,6 +548,11 @@ def leer_dss(sin_red):
             continue
         k = (DSS_LIBRO[b], int(cap[w]), int(ver[w]))
         palabras.setdefault(sc, {}).setdefault(k, []).append((full.get(w, ""), conservado))
+        jf = bisect.bisect_right(ini_f, s0) - 1
+        fr = frags[jf][1] if jf >= 0 and frags[jf][0][0] <= s0 <= frags[jf][0][1] else ""
+        ORDEN_DSS.setdefault(sc, []).append((s0, fr, lin.get(lineas_n[j][1], ""), k))
+    for v in ORDEN_DSS.values():
+        v.sort()
     return palabras
 
 
@@ -532,13 +561,15 @@ FUENTES = [
     {"id": "wlc-oshb", "nombre": "Westminster Leningrad Codex 4.20 (texto del Códice de Leningrado), vía Open Scriptures Hebrew Bible (morphhb)",
      "licencia": "Texto WLC: dominio público. Atribución: Open Scriptures Hebrew Bible (lemas y morfología CC BY 4.0, no usados aquí)",
      "url": "https://github.com/openscriptures/morphhb"},
+    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se lee su marca «X» (versículo que no está en el Códice de Leningrado), para Jos 21:36-37",
+     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml"},
     {"id": "tvtms", "nombre": "TVTMS (Translators Versification Traditions with Methodology for Standardisation), STEPBible / Tyndale House",
      "licencia": "CC BY 4.0", "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Versification"},
     {"id": "swete", "nombre": "H. B. Swete, The Old Testament in Greek (Cambridge, ed. 1930), digitalización LXX-Swete-1930 (Eliran Wong)",
      "licencia": "GPL-3.0 (texto de Swete en dominio público; digitalización GPL); va aparte en datos/griego-swete.js",
      "url": "https://github.com/eliranwong/LXX-Swete-1930"},
     {"id": "etcbc-dss", "nombre": "ETCBC/dss: datos de los Rollos del Mar Muerto de M. Abegg, J. Bowley y E. Cook (conversión Text-Fabric de J. Jacobs, M. Naaijer y D. Roorda)",
-     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5 y Dt 32:8; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
+     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8 y el orden de Jos 8:30-35 en 4Q47; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
      "url": "https://github.com/ETCBC/dss"},
     {"id": "leon-levy", "nombre": "The Leon Levy Dead Sea Scrolls Digital Library (Israel Antiquities Authority): fichas con período y edición oficial (DJD)",
      "licencia": "Solo enlace: las imágenes no se pueden reproducir sin permiso de la IAA (https://www.deadseascrolls.org.il/terms)",
@@ -556,38 +587,38 @@ FUENTES = [
 CODICES = [
     {"id": "leningrado", "nombre": "Códice de Leningrado (Firkovich B 19 A)", "tipo": "codice", "idioma": "hebreo",
      "fecha": "1008 (o 1009) d. C.", "fecha_certeza": "colofón",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33"],
      "institucion": "Biblioteca Nacional de Rusia, San Petersburgo",
      "url": "https://archive.org/details/Leningrad_Codex", "uso": "solo_enlace",
-     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace.",
-     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11"},
+     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo.",
+     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»)"},
     {"id": "alepo", "nombre": "Códice de Alepo", "tipo": "codice", "idioma": "hebreo",
      "fecha": "c. 920 d. C. (Tiberíades)", "fecha_certeza": "estimación (un colofón posterior atribuye la vocalización a Aarón ben Moisés ben Aser)",
-     "contiene": ["Dt 28:17-Dt 34:12"],
+     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33"],
      "institucion": "Museo de Israel (Santuario del Libro), Jerusalén",
      "url": "https://www.aleppocodex.org/", "uso": "solo_enlace",
-     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene».",
+     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene.",
      "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11"},
     {"id": "vaticano", "nombre": "Códice Vaticano (Vat. gr. 1209)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 300–350 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12"],
+     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33"],
      "institucion": "Biblioteca Apostólica Vaticana",
      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209", "uso": "solo_enlace",
-     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números y Deuteronomio presentes). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma.",
+     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma.",
      "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11"},
     {"id": "sinaitico", "nombre": "Códice Sinaítico", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 325–360 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30"],
+     "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30", "Jos 1:10"],
      "institucion": "British Library, Biblioteca Universitaria de Leipzig, Monasterio de Santa Catalina y Biblioteca Nacional de Rusia (repartido)",
      "url": "https://codexsinaiticus.org/", "uso": "solo_enlace",
-     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números y de Deuteronomio la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene». No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas.",
+     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas.",
      "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11"},
     {"id": "alejandrino", "nombre": "Códice Alejandrino (Royal MS 1 D V–VIII)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 400–440 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33"],
      "institucion": "British Library, Londres",
      "url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_V", "uso": "solo_enlace",
-     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números y Deuteronomio presentes; la fuente no los nombra ni cita daños en Números ni en Deuteronomio). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I.",
+     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I.",
      "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11"},
     {"id": "samaritano-cul-add1846", "nombre": "Pentateuco Samaritano, Cambridge University Library Add. 1846", "tipo": "pentateuco_samaritano",
      "idioma": "hebreo (escritura samaritana)",
@@ -705,6 +736,10 @@ ROLLOS = [
     (["5Q1"], "5QDeut", "5Q1-1", "Early Hellenistic", "Milik 1962, DJD 3: 169-171", "cuadrada"),
     (["6Q3"], "6QpapDeut(?)", "6Q3-1", "Hellenistic-Roman", "Baillet 1962, DJD 3: 106-107", "cuadrada (papiro)"),
     (["11Q3"], "11QDeut", "11Q3-1", "Herodian", "García Martínez, Tigchelaar y van der Woude 1998, DJD 23: 11-14", "cuadrada"),
+    # Josué (fichas de la Leon Levy leídas el 2026-11-11 con un script: «copy», «period», «script_type», «official_publications»).
+    # No va XJoshua (en los datos de Abegg, Jos 1:9-12 y 2:4-5): no es de Qumrán y la dirección XJosh-1 de la Leon Levy da 404.
+    (["4Q47"], "4QJosh-a", "4Q47-1", "Hasmonean", "Ulrich 1995, DJD 14: 143-152", "cuadrada"),
+    (["4Q48"], "4QJosh-b", "4Q48-1", "Hasmonean", "Tov 1995, DJD 14: 153-160", "cuadrada"),
 ]
 # Rollos sin ficha propia en la Leon Levy o con datos especiales (idioma, contenido no calculable, notas).
 ROLLO_EXTRA = {
@@ -722,6 +757,9 @@ ROLLO_EXTRA = {
     "4Q38a": {"sin_ficha": True,
               "motivo_sin_ficha": "la dirección " + LL + "4Q38a-1 responde, pero sin datos de manuscrito, y 4Q38-2 y 4Q38-3 dan 404; no probé el buscador; consultado el 2026-11-11"},
     "4Q37": {"nota": " Abegg le asigna además versículos de Éx 12:43-13:16, que también van en «contiene». Es el testigo de la variante de Dt 32:8."},
+    "4Q47": {"fuera_de_versiculo": [("Jos", 5, 0)],
+             "nota": " En los fragmentos 1-2, tras Jos 8:34-35 (lectura de la ley junto al altar), viene un texto de enlace que Abegg numera «5:0» "
+                     "(no es un versículo del TM; no entra en «contiene») y después Jos 5:2-7: es el testigo de la variante sobre el lugar del altar de Jos 8:30-35."},
     "4Q41": {"nota": " Abegg le asigna además Éx 20:11 (dentro del Decálogo), que también va en «contiene»."},
     "6Q3": {"nota": " La Leon Levy lo titula «6Q papDeuteronomy(?)» (tipo «Biblical Compositions?»): la identificación es dudosa en la propia ficha. Papiro."},
     "2Q29": {"nota": " La Leon Levy lo cataloga como «2Q Unidentified» (sin libro ni copia); que contenga Nm 23 es la asignación de los datos de Abegg (inferido). "
@@ -733,6 +771,8 @@ COLUMNA_FORZADA = {
     "$Exo.35:8-35:27": ("Greek3 (Brenton)",
                         "columna elegida a mano (inferido): Swete sigue el mismo texto que Brenton (Códice Vaticano) y las anclas de contenido lo confirman, aunque no cumple el TEST «Exo.35:18=notExist»"),
 }
+NOTA_ADICION_LXX = ("El texto griego trae, tras la marca «[1]» (y «[2]»…), frases que la LXX añade y que no están en el hebreo (TM) ni en la RV1909 "
+                    "(inferido: la digitalización LXX-Swete-1930 marca así los subversículos 'a', 'b'… de Swete). Se dejan dentro de este versículo.")
 # Anclas de contenido del griego: RV -> (palabra en la RV, palabra en el griego asignado)
 ANCLAS_GRIEGO = {
     ("Gn", 1, 1): ("principio", "ΑΡΧΗ"), ("Gn", 31, 55): ("Labán", "Λαβὰν"), ("Ex", 1, 5): ("setenta", "ἑβδομήκοντα"),
@@ -754,9 +794,21 @@ ANCLAS_GRIEGO = {
     ("Dt", 12, 32): ("no añadirás", "οὐ προσθήσεις"), ("Dt", 14, 15): ("buho", "στρουθὸν"), ("Dt", 14, 16): ("cisne", "κύκνον"),
     ("Dt", 22, 30): ("mujer de su padre", "γυναῖκα τοῦ πατρὸς"), ("Dt", 29, 1): ("Moab", "Μωάβ"),
     ("Dt", 34, 7): ("ciento y veinte", "ἑκατὸν καὶ εἴκοσι"),
+    # Josué (Swete pone el altar del Ebal, RV 8:30-35, como 9:3-8 y numera RV 9:3-27 como 9:9-33; sigue el orden del TM en 24:29-31)
+    ("Jos", 1, 1): ("Moisés", "Μωυσῆ"), ("Jos", 6, 20): ("muro", "τεῖχος"), ("Jos", 8, 30): ("Ebal", "Γαιβάλ"),
+    ("Jos", 8, 35): ("mujeres y niños", "ταῖς γυναιξὶν"), ("Jos", 9, 3): ("Gabaón", "Γαβαὼν"), ("Jos", 9, 27): ("leñadores", "ξυλοκόπους"),
+    ("Jos", 10, 13): ("el sol se detuvo", "ἔστη ὁ ἥλιος"), ("Jos", 21, 36): ("Rubén", "Ῥουβὴν"), ("Jos", 24, 29): ("ciento y diez", "ἑκατὸν δέκα"),
+    ("Jos", 24, 30): ("Timnath-sera", "Θαμναθασαχαρὰ"),
 }
 
 # Anclas de contenido del hebreo (consonantes): RV -> (palabra en la RV, palabra en el hebreo asignado)
+# Versículos RV que el WLC (OSHB) trae pero el Códice de Leningrado no tiene (marca «X» del UXLC, que se comprueba al generar).
+_NOTA_FUERA_L = ("Sin texto hebreo: este versículo no está en el Códice de Leningrado. El UXLC (tanach.us, la transcripción del WLC) "
+                 "lo marca «X»: «This verse does NOT occur in the Leningrad Codex. Included for continuity of verse numbering». "
+                 "El WLC (OSHB) incluye un texto solo para no romper la numeración, sin decir de qué manuscrito sale, y aquí no se muestra "
+                 "como si fuera del códice. Jos 21:36-37 (ciudades levíticas de Rubén) sí están en la RV1909 y en la LXX (Swete), comprobado al generar.")
+HEBREO_FUERA_DE_L = {("Jos", 21, 36): _NOTA_FUERA_L, ("Jos", 21, 37): _NOTA_FUERA_L}
+
 ANCLAS_HEBREO = {
     ("Lv", 6, 2): ("prójimo", "בעמיתו"),         # TM 5:21
     ("Lv", 6, 9): ("holocausto", "העלה"),        # TM 6:2
@@ -775,6 +827,12 @@ ANCLAS_HEBREO = {
     ("Dt", 29, 1): ("Moab", "מואב"),             # TM 28:69
     ("Dt", 29, 29): ("secretas", "הנסתרת"),      # TM 29:28
     ("Dt", 34, 7): ("ciento y veinte", "ועשרים"),
+    ("Jos", 5, 15): ("zapatos", "נעלך"),
+    ("Jos", 8, 30): ("Ebal", "עיבל"),
+    ("Jos", 9, 27): ("leñadores", "חטבי"),
+    ("Jos", 10, 13): ("sol", "השמש"),
+    ("Jos", 21, 38): ("Gad", "גד"),               # el siguiente a los dos versículos que faltan en el Códice de Leningrado
+    ("Jos", 24, 29): ("ciento y diez", "ועשר"),
 }
 
 # RV -> (Swete, palabra que debe estar en el griego, palabra que debe estar en la RV)
@@ -788,6 +846,17 @@ NOTA_CORRECCION_GRIEGO = {
                      "pero el 14:14 de Swete («καὶ στρουθὸν καὶ γλαῦκα καὶ λάρον», avestruz, lechuza y gaviota) son las aves de RV 14:15 "
                      "(hebreo בת היענה, תחמס, שחף); el halcón está en Swete 14:16 (ἱέρακα)."),
 }
+# Tramos RV -> Swete que el TVTMS no recoge (ninguna de sus columnas griegas numera como esta edición): (libro, cap, v1, v2, cap Swete, v1 Swete, nota).
+# Jos 8:30-35 (altar del Ebal): la LXX lo pone tras 9:2; el TVTMS lo da como subversículos «9:2.1-6» (Greek*) o en su sitio (Brenton),
+# pero Swete lo numera 9:3-8 y corre el resto del capítulo (Swete 9:9-33 = RV 9:3-27). Comprobado con las anclas de 8:30, 8:35, 9:3 y 9:27.
+_NOTA_JOS9 = ("Corrección propia (comprobada por el contenido): en la LXX el altar del monte Ebal (RV 8:30-35) va después de 9:2, y Swete lo numera 9:3-8, "
+              "así que Swete 9:9-33 = RV 9:3-27. El TVTMS no tiene una columna con esta numeración (da «Jos.9:2.1-6» o el orden de Brenton).")
+DESPLAZAMIENTO_GRIEGO = [
+    ("Jos", 8, 30, 35, 9, 3, _NOTA_JOS9),
+    ("Jos", 9, 2, 2, 9, 2, "Swete 9:2 = RV 9:2; a continuación Swete pone el altar del monte Ebal (RV 8:30-35) como 9:3-8."),
+    ("Jos", 9, 3, 27, 9, 9, _NOTA_JOS9),
+]
+
 # RV -> (Swete que el TVTMS le asigna, palabra que NO está en ese griego, palabra que sí está en la RV, motivo)
 QUITAR_GRIEGO = {
     ("Dt", 14, 14): (("Dt", 14, 14), "κόρακ", "cuervo",
@@ -809,6 +878,7 @@ VIDEOS = [
     ("Nm", "IhW7gXB3o8I", "El tema principal del libro de Números • Serie de la Torá • (episodio 6)", "Nm 1:1-Nm 36:13", "libro entero (tema)"),
     ("Dt", "qfMplfJoYA0", "Resumen del libro de Deuteronomio: un panorama completo animado", "Dt 1:1-Dt 34:12", "inferido"),
     ("Dt", "lq36F3b-S2U", "El tema principal del libro de Deuteronomio • Serie de la Torá • (episodio 7)", "Dt 1:1-Dt 34:12", "libro entero (tema)"),
+    ("Jos", "49ggVrdBN_Y", "Resumen del libro de Josué: un panorama completo animado", "Jos 1:1-Jos 24:33", "inferido"),
 ]
 VIDEOS_DESCARTADOS = {"y2pED55wMM4": "Errata del informe de fuentes: oEmbed responde 404. El ID correcto del resumen de Éxodo (parte 1) es y9pED55wMM4."}
 
@@ -867,6 +937,14 @@ def main():
     heb.update(leer_oshb(obtener("oshb_lev", sin_red), "Lv"))
     heb.update(leer_oshb(obtener("oshb_num", sin_red), "Nm"))
     heb.update(leer_oshb(obtener("oshb_deu", sin_red), "Dt"))
+    heb.update(leer_oshb(obtener("oshb_jos", sin_red), "Jos"))
+    fuera_l = leer_uxlc_x(obtener("uxlc_jos", sin_red), "Jos")
+    if set(fuera_l) != set(HEBREO_FUERA_DE_L):
+        fallo(f"UXLC: versículos marcados «X» (no están en el Códice de Leningrado) {sorted(fuera_l)}, se esperaban {sorted(HEBREO_FUERA_DE_L)}")
+    for k in HEBREO_FUERA_DE_L:
+        if k not in heb:
+            fallo(f"{ref(*k)}: se esperaba en el WLC (OSHB) aunque falte en el Códice de Leningrado")
+        heb.pop(k, None)                                 # el WLC lo incluye solo por continuidad de numeración: no se usa
     gr = leer_swete(obtener("swete_vers", sin_red), obtener("swete_pal", sin_red))
     bloques = leer_bloques_tvtms(obtener("tvtms", sin_red))
     t_rv, t_heb, t_gr = Tradicion(texto_rv), Tradicion(heb), Tradicion(gr)
@@ -876,13 +954,16 @@ def main():
     aplicar_rv_propia(mapa_h, notas_h)
     if sorted(vacios_rv) != sorted(k for k, v in RV_PROPIA.items() if not v):
         fallo(f"versículos vacíos de la RV inesperados: {[ref(*k) for k in vacios_rv]}")
-    hebreo, sin_hebreo = {}, {}
+    hebreo, sin_hebreo, hebreo_sin_texto = {}, {}, {}
     usados_h = {}
     for k in orden_rv:
         ds = mapa_h.get(k)
         if not texto_rv[k]:                              # versículo vacío en la RV (su texto está en otro): sin hebreo
             if ds:
                 fallo(f"versículo vacío {ref(*k)} con hebreo asignado")
+            continue
+        if k in HEBREO_FUERA_DE_L:
+            hebreo_sin_texto[ref(*k)] = HEBREO_FUERA_DE_L[k]
             continue
         if not ds or not all(d in heb for d in ds):
             sin_hebreo[ref(*k)] = notas_h.get(k, "sin correspondencia en el TVTMS")
@@ -913,6 +994,13 @@ def main():
     # ---- griego: mapa RV -> Swete
     mapa_g, notas_g = construir_mapa(bloques, "Greek", t_gr, t_rv, orden_rv, estricto=False)
     aplicar_rv_propia(mapa_g, notas_g)
+    for lib, c, v1, v2, cg, vg, nota in DESPLAZAMIENTO_GRIEGO:
+        for v in range(v1, v2 + 1):
+            d = (lib, cg, vg + v - v1)
+            if (lib, c, v) not in texto_rv or d not in gr:
+                fallo(f"desplazamiento griego {ref(lib, c, v)} -> {ref(*d)}: no existe")
+            mapa_g[(lib, c, v)] = [d]
+            notas_g[(lib, c, v)] = nota
     for k, (d, falta_gr, pal_rv, motivo) in QUITAR_GRIEGO.items():
         if mapa_g.get(k) == [d] and falta_gr not in gr.get(d, "") and pal_rv in texto_rv[k]:
             del mapa_g[k]
@@ -948,6 +1036,8 @@ def main():
             ref_griega[ref(*k)] = ref(*ds[0]) + "".join(", " + (ref(*d) if d[1] != ds[0][1] else str(d[2])) for d in ds[1:])
         if k in notas_g:
             notas_griego[ref(*k)] = notas_g[k]
+        if k[0] == "Jos" and re.search(r"\[\d\]", griego[ref(*k)]):    # adiciones de la LXX (15:59a, 21:42a-d, 24:33a-b…)
+            notas_griego[ref(*k)] = (notas_griego.get(ref(*k), "") + " " + NOTA_ADICION_LXX).strip()
         for d in ds:
             usos_g.setdefault(d, []).append(ref(*k))
     for d, ks in usos_g.items():
@@ -964,15 +1054,17 @@ def main():
     testigos = list(CODICES)
     for claves, sigla, llid, per, djd, escritura in ROLLOS:
         vs = set()
+        num = claves[0] if len(claves) == 1 else re.match(r"\d+Q\d+", claves[0]).group(0)
+        extra = ROLLO_EXTRA.get(num, {})
         for c in claves:
             for kheb, ws in pal.get(c, {}).items():
+                if kheb in extra.get("fuera_de_versiculo", ()):
+                    continue                             # texto sin versículo en el TM (p. ej. 4Q47 «5:0»): no entra en «contiene»
                 if any(cons for _, cons in ws):
                     if kheb not in inv_h:
                         fallo(f"{c}: {ref(*kheb)} no existe en el TM")
                         continue
                     vs.add(inv_h[kheb])
-        num = claves[0] if len(claves) == 1 else re.match(r"\d+Q\d+", claves[0]).group(0)
-        extra = ROLLO_EXTRA.get(num, {})
         if extra.get("sin_calculo"):
             if vs:
                 fallo(f"{num}: ahora tiene versículos en ETCBC/dss; revisar «sin_calculo»")
@@ -1147,6 +1239,47 @@ def main():
         "nota": "Texto: cada lectura se comprueba en su fuente al generar. La RV1909 sigue al TM («hijos de Israel»). Qué significa la diferencia es interpretación y no se incluye.",
     })
 
+    # Jos 8:30-35 (altar del monte Ebal): el TM lo pone tras Hai; 4Q47 (4QJosh-a) tras el paso del Jordán, antes de 5:2; Swete tras 9:2.
+    seq47 = []
+    for _, fr, _, k in ORDEN_DSS.get("4Q47", []):
+        if fr == "f1_2" and (not seq47 or seq47[-1] != k):
+            seq47.append(k)
+    if seq47[:4] != [("Jos", 8, 34), ("Jos", 8, 35), ("Jos", 5, 0), ("Jos", 5, 2)]:
+        fallo(f"4Q47 fragmentos 1-2: se esperaba Jos 8:34, 8:35, «5:0», 5:2 seguidos; hay {seq47[:4]}")
+    l835, cons835 = dss_lectura("4Q47", ("Jos", 8, 35))
+    l50, cons50 = dss_lectura("4Q47", ("Jos", 5, 0))
+    l50 = re.sub(r"\s*ε", "", l50)
+    if not any("ירד" in t for t in cons835):
+        fallo("4Q47 Jos 8:35: «הירדן» debería estar conservado")
+    if not (any("ספר" in t for t in cons50) and any("תורה" in t for t in cons50)):
+        fallo("4Q47 «5:0»: «ספר» y «תורה» deberían estar conservados")
+    if "עיבל" not in heb_cons("Jos 8:30").split():
+        fallo("Jos 8:30 hebreo: falta «עיבל»")
+    if ref_griega.get("Jos 8:30") != "Jos 9:3" or "Γαιβάλ" not in griego.get("Jos 8:30", ""):
+        fallo("Jos 8:30 griego: se esperaba Swete 9:3 con «Γαιβάλ»")
+    variantes.append({
+        "ref": "Jos 8:30", "tema": "¿En qué momento edificó Josué el altar del monte Ebal (Jos 8:30-35)?",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["Jos 8:30"]["t"],
+             "traduccion_es": "Entonces edificó Josué un altar a YHVH, Dios de Israel, en el monte Ebal (traducción propia, literal).",
+             "nota": "En el TM (y en la RV1909) el altar y la lectura de la ley (8:30-35) van después de la toma de Hai (8:1-29) y antes de 9:1."},
+            {"testigos": ["4Q47"], "texto_original": l835 + " … " + l50,
+             "traduccion_es": ("…no hubo palabra de todo lo que mandó Moisés […] que no leyera Josué delante de todo [Israel al pasar] el Jordán, "
+                               "y las mujeres y los niños y el extranjero que andaba entre ellos. … Después que se apartaron(?) […] el libro de la ley; "
+                               "después de esto […] los que llevaban el arca […] (traducción propia, aproximada; «נתקו» es lectura dudosa)."),
+             "nota": ("Orden comprobado en los datos de Abegg: en los fragmentos 1-2 de 4Q47, las líneas 1-2 tienen Jos 8:34-35; las líneas 2-4, un texto de enlace "
+                      "sin versículo en el TM (Abegg lo numera «5:0»), y desde la línea 4 sigue Jos 5:2-7 (la circuncisión en Gilgal). Es decir, aquí la lectura de la ley "
+                      "va justo después del paso del Jordán. Transcripción de Abegg: [ ] = texto reconstruido por los editores; # = letra dañada; ? = lectura dudosa; "
+                      "se omite el signo «ε». «Israel al pasar» es reconstrucción; «el Jordán» está conservado.")},
+            {"testigos": ["vaticano"], "texto_original": griego.get("Jos 8:30", ""),
+             "traduccion_es": "Entonces edificó Josué un altar al Señor, Dios de Israel, en el monte Gaibal (traducción propia).",
+             "nota": "Texto de la edición de Swete (base: Códice Vaticano), que pone este pasaje después de Jos 9:2 (el pacto de los reyes contra Israel) y lo numera 9:3-8."},
+        ],
+        "fuente": "Edición oficial de 4QJosh-a (4Q47): Ulrich 1995, DJD 14: 143-152, según la Leon Levy Library. Orden y lectura del rollo comprobados en los datos de Abegg (ETCBC/dss); TM en el WLC; LXX en Swete.",
+        "url_fuente": LL + "4Q47-1",
+        "nota": "Texto: el orden de cada testigo se comprueba al generar. La RV1909 sigue al TM. Cuál de los tres órdenes es el más antiguo es interpretación y no se incluye.",
+    })
+
     # ---- videos
     ruta_oe = CACHE / "oembed.json"
     cache_oe = json.loads(ruta_oe.read_text(encoding="utf-8")) if ruta_oe.exists() else {}
@@ -1171,6 +1304,7 @@ def main():
     # ---- verificaciones generales
     for lib in LIBROS:
         nh = sum(1 for r in hebreo if r.startswith(lib + " "))
+        nh += sum(1 for r in hebreo_sin_texto if r.startswith(lib + " "))
         if nh != conteo_rv[lib]:
             fallo(f"{lib}: hebreo {nh} versículos frente a RV {conteo_rv[lib]}")
     for rv_r, he_r in (("Gn 31:55", "Gn 32:1"), ("Ex 8:1", "Ex 7:26"), ("Ex 8:4", "Ex 7:29"), ("Ex 22:1", "Ex 21:37"),
@@ -1224,6 +1358,7 @@ def main():
         "hebreo_nota": ("Texto hebreo del Códice de Leningrado (WLC 4.20) con vocales y acentos; sin morfología, notas ni marcas de párrafo (פ/ס). "
                         "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0)."),
         "hebreo": hebreo,
+        "hebreo_sin_texto": hebreo_sin_texto,
         "testigos": testigos,
         "variantes": variantes,
         "videos": videos,
@@ -1237,7 +1372,7 @@ def main():
                    "y lo suple con otro uncial (sobre todo el Alejandrino) donde falta, como en Gn 1:1–46:28."),
         "licencia": "GPL-3.0 (texto de Swete 1930 en dominio público; digitalización GPL)",
         "url": "https://github.com/eliranwong/LXX-Swete-1930",
-        "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7, Nm 1, 13 y 30 y Dt 5 y 14 difiere de la RV: "
+        "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7, Nm 1, 13 y 30, Dt 5 y 14 y Jos 8–10 y 13 difiere de la RV: "
                  "la correspondencia se toma del TVTMS (STEPBible, CC BY 4.0), eligiendo en cada bloque la columna griega cuyos TEST cumple esta edición. "
                  "«ref_griega» da la referencia de Swete cuando difiere; «sin_texto» lista los versículos RV sin equivalente completo en la LXX, con el motivo."),
         "texto": griego,
@@ -1252,7 +1387,7 @@ def main():
     t2 = escribir_js(DATOS / "griego-swete.js", cab_g, "BIBLIA_GRIEGO", griego_obj)
     lic = obtener("swete_lic", sin_red).read_text(encoding="utf-8")
     (DATOS / "LICENCIA-griego-swete.txt").write_text(
-        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números y Deuteronomio)\n\n"
+        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio y Josué)\n\n"
         "Texto: H. B. Swete, The Old Testament in Greek according to the Septuagint, Cambridge University Press (ed. 1930). Dominio público.\n"
         "Digitalización: LXX-Swete-1930, Eliran Wong (https://github.com/eliranwong/LXX-Swete-1930), licencia GNU GPL-3.0.\n"
         "Modificaciones: palabras unidas por versículo y claves pasadas a la numeración de la RV1909 con el TVTMS (STEPBible, CC BY 4.0).\n"

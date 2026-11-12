@@ -52,7 +52,10 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como "
          "un año después de la salida, igual que Ex 40:17.",
          "Deuteronomio fecha los discursos de Moab desde la salida (Dt 1:3, «á los cuarenta años», mes undécimo); la "
-         "muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año."]
+         "muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año.",
+         "Josué: el paso del Jordán (Jos 4:19, «el diez del mes primero») se pone en el año siguiente al de Dt 1:3 (mes "
+         "undécimo + treinta días de luto, Dt 34:8). La edad de Caleb (40 en Jos 14:7, 85 en Jos 14:10, «cuarenta y cinco "
+         "años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año."]
 # Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
 F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
@@ -247,6 +250,32 @@ def definir(nombre):
                          "cuarenta y Dt 34:8 da treinta días de luto; se toma el mismo año del cálculo. TM: 80 años en "
                          "Ex 7:7 + 40 = 120, lo que dicen Dt 31:2 y Dt 34:7. LXX: 80 + 39 = 119 frente a 120 en Dt 34:7; "
                          "la diferencia de un año cabe en lo que el cálculo no cuenta (Ex 7:7 ocurre antes de la salida).")))
+    # Josué: el paso del Jordán es el primer «mes primero» después de Dt 1:3 (mes undécimo) y Dt 34:8 (30 días de luto).
+    ev.append(dict(id="ev-paso-jordan", titulo="Israel pasa el Jordán y acampa en Gilgal", tipo="evento", ref="Jos 4:19",
+                   personas=["Joshua_1"], depende_de="ev-discursos-moab",
+                   pasos=[F(1, "Jos 4:19", texto="Dt 1:3 es el mes undécimo; con los treinta días de luto (Dt 34:8), el "
+                                                  "«mes primero» de Jos 4:19 es el del año siguiente: se suma {v}")],
+                   nota=("Jos 4:19: «el diez del mes primero». El texto no da el año: Dt 1:3 sitúa los discursos en el mes "
+                         "undécimo del año cuarenta y Dt 34:8 da treinta días de luto por Moisés; Jos 1:11 y 3:2 hablan de "
+                         "tres días. Se toma el primer mes primero posible, el del año siguiente: TM 40 + 1 = 41 años desde la "
+                         "salida; LXX 39 + 1 = 40 (Dt 1:3 «in the fortieth year»). Si pasara más tiempo, el año sería posterior; "
+                         "nada en el texto lo indica.")))
+    ev.append(dict(id="ev-pascua-gilgal", titulo="Pascua en Gilgal; cesa el maná", tipo="evento", ref="Jos 5:10",
+                   personas=["Joshua_1"], depende_de="ev-paso-jordan", pasos=[],
+                   nota="Jos 5:10-12: «á los catorce días del mes», cuatro días después de pasar el Jordán (Jos 4:19): mismo año."))
+    # Caleb: 40 años al ser enviado (Jos 14:7) y 85 «hoy» (Jos 14:10), 45 años después (40 + 45 = 85).
+    ev.append(dict(id="ev-nac-caleb", titulo="Nace Caleb", tipo="nacimiento", ref="Jos 14:7", personas=["Caleb_1"],
+                   depende_de="ev-salida-sinai",
+                   pasos=[E("Caleb_1", "en_evento", "Jos 14:7", signo=-1,
+                            texto="Caleb tenía {v} años cuando Moisés lo envió de Cades-barnea")],
+                   nota=("Cálculo hacia atrás desde Jos 14:7. Supone que los espías salen de Cades el mismo año en que Israel "
+                         "deja el Sinaí (Nm 10:11, «el año segundo»); Nm 13 no da el año del envío.")))
+    ev.append(dict(id="ev-caleb-hebron", titulo="Caleb pide Hebrón a los 85 años", tipo="evento", ref="Jos 14:10",
+                   personas=["Caleb_1"], depende_de="ev-nac-caleb",
+                   pasos=[E("Caleb_1", "en_evento", "Jos 14:10", texto="Caleb dice tener hoy {v} años")],
+                   nota=("Comprobación: 40 años al ser enviado (Jos 14:7) + «estos cuarenta y cinco años» (Jos 14:10) = 85, "
+                         "lo que dice Jos 14:10. El año resulta 45 después de la salida del Sinaí, con el mismo supuesto que "
+                         "el nacimiento de Caleb.")))
     # Muertes de Gn 5 y 11
     for p in dict.fromkeys([x[0] for x in GN5] + ["Noah_1", "Shem_1", "Arpachshad_1", "Cainan_1", "Shelah_1"] + [x[0] for x in GN11] + ["Terah_1"]):
         if p == "Enoch_2":
@@ -286,6 +315,16 @@ HITOS_NM = [
     ("La rebelión de Coré, Datán y Abiram", "Nm 16:1-35", "Números no da el año."),
     ("La serpiente de bronce", "Nm 21:4-9", "Números no da el año; Nm 21:4 la sitúa después de partir del monte Hor."),
     ("Balac y Balaam", "Nm 22:1-24:25", "Números no da el año."),
+]
+HITOS_JOS = [
+    ("Caen los muros de Jericó", "Jos 6:1-21", "Josué no da el año; ocurre después de la Pascua de Gilgal (Jos 5:10)."),
+    ("El sol se detiene en Gabaón", "Jos 10:12-14", "Sin cifra de año."),
+    ("El reparto de la tierra en Siloh", "Jos 18:1-10", "Sin cifra de año; Jos 14:10 sitúa a Caleb 45 años después del envío."),
+    ("Pacto en Siquem", "Jos 24:1-28", "Sin cifra de año."),
+    ("Muere Josué a los 110 años", "Jos 24:29",
+     "El texto da su edad (110, Jos 24:29; también en la LXX) pero no su año de nacimiento ni cuánto tiempo pasa desde la "
+     "entrada en la tierra (Jos 23:1 dice solo que pasaron muchos días): no hay base para fecharla."),
+    ("Muere Eleazar", "Jos 24:33", "Sin edad ni año."),
 ]
 
 
@@ -441,5 +480,5 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
                               for c in combos],
             "eventos": eventos,
             "hitos_sin_fecha": [{"titulo": t, "ref": r, "nota": NOTA_HITO_GN} for t, r in HITOS]
-                               + [{"titulo": t, "ref": r, "nota": n} for t, r, n in HITOS_EX + HITOS_NM]}
+                               + [{"titulo": t, "ref": r, "nota": n} for t, r, n in HITOS_EX + HITOS_NM + HITOS_JOS]}
     return cron, vivos, usadas

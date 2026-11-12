@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-12T01:17:38+00:00",
+ "generado": "2026-11-12T02:00:43+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -58,6 +58,11 @@ window.BIBLIA_DATOS = {
    "id": "Dt",
    "nombre": "Deuteronomio",
    "capitulos": 34
+  },
+  {
+   "id": "Jos",
+   "nombre": "Josué",
+   "capitulos": 24
   }
  ],
  "capitulos": [
@@ -24592,6 +24597,2782 @@ window.BIBLIA_DATOS = {
      "texto": "Y en toda aquella mano esforzada, y en todo el espanto grande que causó Moisés á ojos de todo Israel."
     }
    ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 1,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ después de la muerte de Moisés siervo de Jehová, que Jehová habló á Josué hijo de Nun, ministro de Moisés, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Mi siervo Moisés es muerto: levántate pues ahora, y pasa este Jordán, tú y todo este pueblo, á la tierra que yo les doy á los hijos de Israel."
+    },
+    {
+     "n": 3,
+     "texto": "Yo os he entregado, como lo había dicho á Moisés, todo lugar que pisare la planta de vuestro pie."
+    },
+    {
+     "n": 4,
+     "texto": "Desde el desierto y este Líbano hasta el gran río Eufrates, toda la tierra de los Hetheos hasta la gran mar del poniente del sol, será vuestro término."
+    },
+    {
+     "n": 5,
+     "texto": "Nadie te podrá hacer frente en todos los días de tu vida: como yo fuí con Moisés, seré contigo; no te dejaré, ni te desampararé."
+    },
+    {
+     "n": 6,
+     "texto": "Esfuérzate y sé valiente: porque tú repartirás á este pueblo por heredad la tierra, de la cual juré á sus padres que [la] daría á ellos."
+    },
+    {
+     "n": 7,
+     "texto": "Solamente te esfuerces, y seas muy valiente, para cuidar de hacer conforme á toda la ley que mi siervo Moisés te mandó: no te apartes de ella ni á diestra ni á siniestra, para que seas prosperado en todas las cosas que emprendieres."
+    },
+    {
+     "n": 8,
+     "texto": "El libro de aquesta ley nunca se apartará de tu boca: antes de día y de noche meditarás en él, para que guardes y hagas conforme á todo lo que en él está escrito: porque entonces harás prosperar tu camino, y todo te saldrá bien."
+    },
+    {
+     "n": 9,
+     "texto": "Mira que te mando que te esfuerces y seas valiente: no temas ni desmayes, porque Jehová tu Dios será contigo en donde quiera que fueres."
+    },
+    {
+     "n": 10,
+     "texto": "Y Josué mandó á los oficiales del pueblo, diciendo:"
+    },
+    {
+     "n": 11,
+     "texto": "Pasad por medio del campo, y mandad al pueblo, diciendo: Preveníos de comida; porque dentro de tres días pasaréis el Jordán, para que entréis á poseer la tierra que Jehová vuestro Dios os da para que la poseáis."
+    },
+    {
+     "n": 12,
+     "texto": "También habló Josué á los Rubenitas y Gaditas, y á la media tribu de Manasés, diciendo:"
+    },
+    {
+     "n": 13,
+     "texto": "Acordaos de la palabra que Moisés, siervo de Jehová, os mandó diciendo: Jehová vuestro Dios os ha dado reposo, y os ha dado esta tierra."
+    },
+    {
+     "n": 14,
+     "texto": "Vuestras mujeres y vuestros niños y vuestras bestias, quedarán en la tierra que Moisés os ha dado de esta parte del Jordán; mas vosotros, todos los valientes y fuertes, pasaréis armados delante de vuestros hermanos, y les ayudaréis;"
+    },
+    {
+     "n": 15,
+     "texto": "Hasta tanto que Jehová haya dado reposo á vuestros hermanos como á vosotros, y que ellos también posean la tierra que Jehová vuestro Dios les da: y después volveréis vosotros á la tierra de vuestra herencia, la cual Moisés siervo de Jehová os ha dado, de esta parte del Jordán hacia donde nace el sol; y la poseeréis."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces respondieron á Josué, diciendo: Nosotros haremos todas las cosas que nos has mandado, é iremos adonde quiera que nos mandares."
+    },
+    {
+     "n": 17,
+     "texto": "De la manera que obedecimos á Moisés en todas las cosas, así te obedeceremos á ti: solamente Jehová tu Dios sea contigo, como fué con Moisés."
+    },
+    {
+     "n": 18,
+     "texto": "Cualquiera que fuere rebelde á tu mandamiento, y no obedeciere á tus palabras en todas las cosas que le mandares, que muera; solamente que te esfuerces, y seas valiente."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 2,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JOSUÉ, hijo de Nun, envió desde Sittim dos espías secretamente, diciéndoles: Andad, reconoced la tierra, y á Jericó. Los cuales fueron, y entráronse en casa de una mujer ramera que se llamaba Rahab, y posaron allí."
+    },
+    {
+     "n": 2,
+     "texto": "Y fué dado aviso al rey de Jericó, diciendo: He aquí que hombres de los hijos de Israel han venido aquí esta noche á espiar la tierra."
+    },
+    {
+     "n": 3,
+     "texto": "Entonces el rey de Jericó envió á decir á Rahab: Saca fuera los hombres que han venido á ti, y han entrado en tu casa; porque han venido á espiar toda la tierra."
+    },
+    {
+     "n": 4,
+     "texto": "Mas la mujer había tomado los dos hombres, y los había escondido; y dijo: Verdad que hombres vinieron á mí, mas no supe de dónde eran:"
+    },
+    {
+     "n": 5,
+     "texto": "Y al cerrarse la puerta, siendo ya oscuro, esos hombres se salieron, y no sé á dónde se han ido: seguidlos apriesa, que los alcanzaréis."
+    },
+    {
+     "n": 6,
+     "texto": "Mas ella los había hecho subir al terrado, y habíalos escondido entre tascos de lino que en aquel terrado tenía puestos."
+    },
+    {
+     "n": 7,
+     "texto": "Y los hombres fueron tras ellos por el camino del Jordán, hasta los vados: y la puerta fué cerrada después que salieron los que tras ellos iban."
+    },
+    {
+     "n": 8,
+     "texto": "Mas antes que ellos durmiesen, ella subió á ellos al terrado, y díjoles:"
+    },
+    {
+     "n": 9,
+     "texto": "Sé que Jehová os ha dado esta tierra; porque el temor de vosotros ha caído sobre nosotros, y todos los moradores del país están desmayados por causa de vosotros;"
+    },
+    {
+     "n": 10,
+     "texto": "Porque hemos oído que Jehová hizo secar las aguas del mar Bermejo delante de vosotros, cuando salisteis de Egipto, y lo que habéis hecho á los dos reyes de los Amorrheos que estaban de la parte allá del Jordán, á Sehón y á Og, á los cuales habéis destruído."
+    },
+    {
+     "n": 11,
+     "texto": "Oyendo esto, ha desmayado nuestro corazón; ni ha quedado más espíritu en alguno por causa de vosotros: porque Jehová vuestro Dios es Dios arriba en los cielos y abajo en la tierra."
+    },
+    {
+     "n": 12,
+     "texto": "Ruégoos pues ahora, me juréis por Jehová, que como he hecho misericordia con vosotros, así la haréis vosotros con la casa de mi padre, de lo cual me daréis una señal cierta;"
+    },
+    {
+     "n": 13,
+     "texto": "Y que salvaréis la vida á mi padre y á mi madre, y á mis hermanos y hermanas, y á todo lo que es suyo; y que libraréis nuestras vidas de la muerte."
+    },
+    {
+     "n": 14,
+     "texto": "Y ellos le respondieron: Nuestra alma por vosotros hasta la muerte, si no denunciareis este nuestro negocio: y cuando Jehová nos hubiere dado la tierra, nosotros haremos contigo misericordia y verdad."
+    },
+    {
+     "n": 15,
+     "texto": "Entonces ella los hizo descender con una cuerda por la ventana; porque su casa estaba á la pared del muro, y ella vivía en el muro."
+    },
+    {
+     "n": 16,
+     "texto": "Y díjoles: Marchaos al monte, porque los que fueron tras vosotros no os encuentren; y estad escondidos allí tres días, hasta que los que os siguen hayan vuelto; y después os iréis vuestro camino."
+    },
+    {
+     "n": 17,
+     "texto": "Y ellos le dijeron: Nosotros seremos desobligados de este juramento con que nos has conjurado."
+    },
+    {
+     "n": 18,
+     "texto": "He aquí, cuando nosotros entráremos en la tierra, tú atarás este cordón de grana á la ventana por la cual nos descolgaste: y tú juntarás en tu casa tu padre y tu madre, tus hermanos y toda la familia de tu padre."
+    },
+    {
+     "n": 19,
+     "texto": "Cualquiera que saliere fuera de las puertas de tu casa, su sangre será sobre su cabeza, y nosotros sin culpa. Mas cualquiera que se estuviere en casa contigo, su sangre será sobre nuestra cabeza, si mano le tocare."
+    },
+    {
+     "n": 20,
+     "texto": "Y si tú denunciares este nuestro negocio, nosotros seremos desobligados de este tu juramento con que nos has juramentado."
+    },
+    {
+     "n": 21,
+     "texto": "Y ella respondió: Sea así como habéis dicho. Luego los despidió, y se fueron: y ella ató el cordón de grana á la ventana."
+    },
+    {
+     "n": 22,
+     "texto": "Y caminando ellos, llegaron al monte, y estuvieron allí tres días, hasta que los que los seguían se hubiesen vuelto: y los que los siguieron, buscaron por todo el camino, mas no los hallaron."
+    },
+    {
+     "n": 23,
+     "texto": "Y tornándose los dos varones, descendieron del monte, y pasaron, y vinieron á Josué hijo de Nun, y contáronle todas las cosas que les habían acontecido."
+    },
+    {
+     "n": 24,
+     "texto": "Y dijeron á Josué: Jehová ha entregado toda la tierra en nuestras manos; y también todos los moradores del país están desmayados delante de nosotros."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 3,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LEVANTÓSE Josué de mañana, y partieron de Sittim, y vinieron hasta el Jordán, él y todos los hijos de Israel, y reposaron allí antes que pasasen."
+    },
+    {
+     "n": 2,
+     "texto": "Y pasados tres días, los oficiales atravesaron por medio del campo,"
+    },
+    {
+     "n": 3,
+     "texto": "Y mandaron al pueblo, diciendo: Cuando viereis el arca del pacto de Jehová vuestro Dios, y los sacerdotes y Levitas que la llevan, vosotros partiréis de vuestro lugar, y marcharéis en pos de ella."
+    },
+    {
+     "n": 4,
+     "texto": "Empero entre vosotros y ella haya distancia como de la medida de dos mil codos: y no os acercaréis á ella, á fin de que sepáis el camino por donde habéis de ir: por cuanto vosotros no habéis pasado antes de ahora por este camino."
+    },
+    {
+     "n": 5,
+     "texto": "Y Josué dijo al pueblo: Santificaos, porque Jehová hará mañana entre vosotros maravillas."
+    },
+    {
+     "n": 6,
+     "texto": "Y habló Josué á los sacerdotes, diciendo: Tomad el arca del pacto, y pasad delante del pueblo. Y ellos tomaron el arca del pacto, y fueron delante del pueblo."
+    },
+    {
+     "n": 7,
+     "texto": "Entonces Jehová dijo á Josué: Desde aqueste día comenzaré á hacerte grande delante de los ojos de todo Israel, para que entiendan que como fuí con Moisés, así seré contigo."
+    },
+    {
+     "n": 8,
+     "texto": "Tú, pues, mandarás á los sacerdotes que llevan el arca del pacto, diciendo: Cuando hubiereis entrado hasta el borde del agua del Jordán, pararéis en el Jordán."
+    },
+    {
+     "n": 9,
+     "texto": "Y Josué dijo á los hijos de Israel: Llegaos acá, y escuchad las palabras de Jehová vuestro Dios."
+    },
+    {
+     "n": 10,
+     "texto": "Y añadió Josué: En esto conoceréis que el Dios viviente está en medio de vosotros, y que él echará de delante de vosotros al Cananeo, y al Heteo, y al Heveo, y al Pherezeo, y al Gergeseo, y al Amorrheo, y al Jebuseo."
+    },
+    {
+     "n": 11,
+     "texto": "He aquí, el arca del pacto del Señoreador de toda la tierra pasa el Jordán delante de vosotros."
+    },
+    {
+     "n": 12,
+     "texto": "Tomad, pues, ahora doce hombres de las tribus de Israel, de cada tribu uno."
+    },
+    {
+     "n": 13,
+     "texto": "Y cuando las plantas de los pies de los sacerdotes que llevan el arca de Jehová Señoreador de toda la tierra, fueren asentadas sobre las aguas del Jordán, las aguas del Jordán se partirán: porque las aguas que vienen de arriba se detendrán en un montón."
+    },
+    {
+     "n": 14,
+     "texto": "Y aconteció, que partiendo el pueblo de sus tiendas para pasar el Jordán, y los sacerdotes delante del pueblo llevando el arca del pacto,"
+    },
+    {
+     "n": 15,
+     "texto": "Cuando los que llevaban el arca entraron en el Jordán, así como los pies de los sacerdotes que llevaban el arca fueron mojados á la orilla del agua, (porque el Jordán suele reverter sobre todos sus bordes todo el tiempo de la siega,)"
+    },
+    {
+     "n": 16,
+     "texto": "Las aguas que venían de arriba, se pararon como en un montón bien lejos de la ciudad de Adam, que está al lado de Sarethan; y las que descendían á la mar de los llanos, al mar Salado, se acabaron y fueron partidas; y el pueblo pasó en derecho de Jericó."
+    },
+    {
+     "n": 17,
+     "texto": "Mas los sacerdotes que llevaban el arca del pacto de Jehová, estuvieron en seco, firmes en medio del Jordán, hasta que todo el pueblo hubo acabado de pasar el Jordán; y todo Israel pasó en seco."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 4,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y CUANDO toda la gente hubo acabado de pasar el Jordán, Jehová habló á Josué, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Tomad del pueblo doce hombres, de cada tribu uno,"
+    },
+    {
+     "n": 3,
+     "texto": "Y mandadles, diciendo: Tomaos de aquí del medio del Jordán, del lugar donde están firmes los pies de los sacerdotes, doce piedras, las cuales pasaréis con vosotros, y las asentaréis en el alojamiento donde habéis de tener la noche."
+    },
+    {
+     "n": 4,
+     "texto": "Entonces Josué llamó á los doce hombres, los cuales había él ordenado de entre los hijos de Israel, de cada tribu uno;"
+    },
+    {
+     "n": 5,
+     "texto": "Y díjoles Josué: Pasad delante del arca de Jehová vuestro Dios al medio del Jordán; y cada uno de vosotros tome una piedra sobre su hombro, conforme al número de las tribus de los hijos de Israel;"
+    },
+    {
+     "n": 6,
+     "texto": "Para que esto sea señal entre vosotros; y cuando vuestros hijos preguntaren á sus padres mañana, diciendo: ¿Qué os significan estas piedras?"
+    },
+    {
+     "n": 7,
+     "texto": "Les responderéis: Que las aguas del Jordán fueron partidas delante del arca del pacto de Jehová; cuando ella pasó el Jordán, las aguas del Jordán se partieron: y estas piedras serán por memoria á los hijos de Israel para siempre."
+    },
+    {
+     "n": 8,
+     "texto": "Y los hijos de Israel lo hicieron así como Josué [les] mandó: que levantaron doce piedras del medio del Jordán, como Jehová lo había dicho á Josué, conforme al número de las tribus de los hijos de Israel, y pasáronlas consigo al alojamiento, y las asentaron allí."
+    },
+    {
+     "n": 9,
+     "texto": "Josué también levantó doce piedras en medio del Jordán, en el lugar donde estuvieron los pies de los sacerdotes que llevaban el arca del pacto; y han estado allí hasta hoy."
+    },
+    {
+     "n": 10,
+     "texto": "Y los sacerdotes que llevaban el arca se pararon en medio del Jordán, hasta tanto que se acabó todo lo que Jehová había mandado á Josué que hablase al pueblo, conforme á todas las cosas que Moisés había á Josué mandado: y el pueblo se dió priesa y pasó."
+    },
+    {
+     "n": 11,
+     "texto": "Y cuando todo el pueblo acabó de pasar, pasó también el arca de Jehová, y los sacerdotes, en presencia del pueblo."
+    },
+    {
+     "n": 12,
+     "texto": "También los hijos de Rubén y los hijos de Gad, y la media tribu de Manasés, pasaron armados delante de los hijos de Israel, según Moisés les había dicho:"
+    },
+    {
+     "n": 13,
+     "texto": "Como cuarenta mil hombres armados á punto pasaron hacia la campiña de Jericó delante de Jehová á la guerra."
+    },
+    {
+     "n": 14,
+     "texto": "En aquel día Jehová engrandeció á Josué en ojos de todo Israel: y temiéronle, como habían temido á Moisés, todos los días de su vida."
+    },
+    {
+     "n": 15,
+     "texto": "Y Jehová habló á Josué, diciendo:"
+    },
+    {
+     "n": 16,
+     "texto": "Manda á los sacerdotes que llevan el arca del testimonio, que suban del Jordán."
+    },
+    {
+     "n": 17,
+     "texto": "Y Josué mandó á los sacerdotes, diciendo: Subid del Jordán."
+    },
+    {
+     "n": 18,
+     "texto": "Y aconteció que como los sacerdotes que llevaban el arca del pacto de Jehová, subieron del medio del Jordán, y las plantas de los pies de los sacerdotes estuvieron en seco, las aguas del Jordán se volvieron á su lugar, corriendo como antes sobre todos sus bordes."
+    },
+    {
+     "n": 19,
+     "texto": "Y el pueblo subió del Jordán el diez del mes primero, y asentaron el campo en Gilgal, al lado oriental de Jericó."
+    },
+    {
+     "n": 20,
+     "texto": "Y Josué erigió en Gilgal las doce piedras que habían traído del Jordán."
+    },
+    {
+     "n": 21,
+     "texto": "Y habló á los hijos de Israel, diciendo: Cuando mañana preguntaren vuestros hijos á sus padres, y dijeren: ¿Qué os significan estas piedras?"
+    },
+    {
+     "n": 22,
+     "texto": "Declararéis á vuestros hijos, diciendo: Israel pasó en seco por este Jordán."
+    },
+    {
+     "n": 23,
+     "texto": "Porque Jehová vuestro Dios secó las aguas del Jordán delante de vosotros, hasta que habíais pasado, á la manera que Jehová vuestro Dios lo había hecho en el mar Bermejo, al cual secó delante de nosotros hasta que pasamos:"
+    },
+    {
+     "n": 24,
+     "texto": "Para que todos los pueblos de la tierra conozcan la mano de Jehová, que es fuerte; para que temáis á Jehová vuestro Dios todos los días."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 5,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y CUANDO todos los reyes de los Amorrheos, que estaban de la otra parte del Jordán al occidente, y todos los reyes de los Cananeos, que estaban cerca de la mar, oyeron como Jehová había secado las aguas del Jordán delante de los hijos de Israel hasta que hubieron pasado, desfalleció su corazón, y no hubo más espíritu en ellos delante de los hijos de Israel."
+    },
+    {
+     "n": 2,
+     "texto": "En aquel tiempo Jehová dijo á Josué: Hazte cuchillos afilados, y vuelve á circuncidar la segunda vez á los hijos de Israel."
+    },
+    {
+     "n": 3,
+     "texto": "Y Josué se hizo cuchillos afilados, y circuncidó á los hijos de Israel en el monte de los prepucios."
+    },
+    {
+     "n": 4,
+     "texto": "Esta es la causa por la cual Josué [los] circuncidó: todo el pueblo que había salido de Egipto, los varones, todos los hombres de guerra, habían muerto en el desierto por el camino, después que salieron de Egipto."
+    },
+    {
+     "n": 5,
+     "texto": "Porque todos los del pueblo que habían salido, estaban circuncidados: mas todo el pueblo que había nacido en el desierto por el camino, después que salieron de Egipto, no estaban circuncidados."
+    },
+    {
+     "n": 6,
+     "texto": "Porque los hijos de Israel anduvieron por el desierto cuarenta años, hasta que toda la gente de los hombres de guerra que habían salido de Egipto, fué consumida, por cuanto no obedecieron á la voz de Jehová; por lo cual Jehová les juró que no les dejaría ver la tierra, de la cual Jehová había jurado á sus padres que nos la daría, tierra que fluye leche y miel."
+    },
+    {
+     "n": 7,
+     "texto": "Y los hijos de ellos, que él había hecho suceder en su lugar, Josué los circuncidó; pues eran incircuncisos, porque no habían sido circuncidados por el camino."
+    },
+    {
+     "n": 8,
+     "texto": "Y cuando hubieron acabado de circuncidar toda la gente, quedáronse en el mismo lugar en el campo, hasta que sanaron."
+    },
+    {
+     "n": 9,
+     "texto": "Y Jehová dijo á Josué: Hoy he quitado de vosotros el oprobio de Egipto: por lo cual el nombre de aquel lugar fué llamado Gilgal, hasta hoy."
+    },
+    {
+     "n": 10,
+     "texto": "Y los hijos de Israel asentaron el campo en Gilgal, y celebraron la pascua á los catorce días del mes, por la tarde, en los llanos de Jericó."
+    },
+    {
+     "n": 11,
+     "texto": "Y al otro día de la pascua comieron del fruto de la tierra los panes sin levadura, y en el mismo día espigas nuevas tostadas."
+    },
+    {
+     "n": 12,
+     "texto": "Y el maná cesó el día siguiente, desde que comenzaron á comer del fruto de la tierra: y los hijos de Israel nunca más tuvieron maná, sino que comieron de los frutos de la tierra de Canaán aquel año."
+    },
+    {
+     "n": 13,
+     "texto": "Y estando Josué cerca de Jericó, alzó sus ojos, y vió un varón que estaba delante de él, el cual tenía una espada desnuda en su mano. Y Josué yéndose hacia él, le dijo: ¿Eres de los nuestros, ó de nuestros enemigos?"
+    },
+    {
+     "n": 14,
+     "texto": "Y él respondió: No; mas Príncipe del ejército de Jehová, ahora he venido. Entonces Josué postrándose sobre su rostro en tierra le adoró; y díjole: ¿Qué dice mi Señor á su siervo?"
+    },
+    {
+     "n": 15,
+     "texto": "Y el Príncipe del ejército de Jehová respondió á Josué: Quita tus zapatos de tus pies; porque el lugar donde estás es santo. Y Josué lo hizo así."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 6,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EMPERO Jericó estaba cerrada, bien cerrada, á causa de los hijos de Israel: nadie entraba, ni salía."
+    },
+    {
+     "n": 2,
+     "texto": "Mas Jehová dijo á Josué: Mira, yo he entregado en tu mano á Jericó y á su rey, con sus varones de guerra."
+    },
+    {
+     "n": 3,
+     "texto": "Cercaréis pues la ciudad todos los hombres de guerra, yendo alrededor de la ciudad una vez: y esto haréis seis días."
+    },
+    {
+     "n": 4,
+     "texto": "Y siete sacerdotes llevarán siete bocinas de cuernos de carneros delante del arca; y al séptimo día daréis siete vueltas á la ciudad, y los sacerdotes tocarán las bocinas."
+    },
+    {
+     "n": 5,
+     "texto": "Y cuando tocaren prolongadamente el cuerno de carnero, así que oyereis el sonido de la bocina, todo el pueblo gritará á gran voz, y el muro de la ciudad caerá debajo de sí: entonces el pueblo subirá cada uno en derecho de sí."
+    },
+    {
+     "n": 6,
+     "texto": "Y llamando Josué hijo de Nun á los sacerdotes, les dijo: Llevad el arca del pacto, y siete sacerdotes lleven bocinas de cuernos de carneros delante del arca de Jehová."
+    },
+    {
+     "n": 7,
+     "texto": "Y dijo al pueblo: Pasad, y rodead la ciudad; y los que están armados pasarán delante del arca de Jehová."
+    },
+    {
+     "n": 8,
+     "texto": "Y así que Josué hubo hablado al pueblo, los siete sacerdotes, llevando las siete bocinas de cuernos de carneros, pasaron delante del arca de Jehová, y tocaron las bocinas: y el arca del pacto de Jehová los seguía."
+    },
+    {
+     "n": 9,
+     "texto": "Y los armados iban delante de los sacerdotes que tocaban las bocinas, y la gente reunida iba detrás del arca, andando y tocando bocinas."
+    },
+    {
+     "n": 10,
+     "texto": "Y Josué mandó al pueblo, diciendo: Vosotros no daréis grita, ni se oirá vuestra voz, ni saldrá palabra de vuestra boca, hasta el día que yo os diga: Gritad: entonces daréis grita."
+    },
+    {
+     "n": 11,
+     "texto": "El arca pues de Jehová dió una vuelta alrededor de la ciudad, y viniéronse al real, en el cual tuvieron la noche."
+    },
+    {
+     "n": 12,
+     "texto": "Y Josué se levantó de mañana, y los sacerdotes tomaron el arca de Jehová."
+    },
+    {
+     "n": 13,
+     "texto": "Y los siete sacerdotes, llevando las siete bocinas de cuernos de carneros, fueron delante del arca de Jehová, andando siempre y tocando las bocinas; y los armados iban delante de ellos, y la gente reunida iba detrás del arca de Jehová, andando y tocando las bocinas."
+    },
+    {
+     "n": 14,
+     "texto": "Así dieron otra vuelta á la ciudad el segundo día, y volviéronse al real: de esta manera hicieron por seis días."
+    },
+    {
+     "n": 15,
+     "texto": "Y al séptimo día levantáronse cuando subía el alba, y dieron vuelta á la ciudad de la misma manera siete veces: solamente este día dieron vuelta alrededor de ella siete veces."
+    },
+    {
+     "n": 16,
+     "texto": "Y como los sacerdotes hubieron tocado las bocinas la séptima vez, Josué dijo al pueblo: Dad grita, porque Jehová os ha entregado la ciudad."
+    },
+    {
+     "n": 17,
+     "texto": "Mas la ciudad será anatema á Jehová, ella con todas las cosas que están en ella: solamente Rahab la ramera vivirá, con todos los que estuvieren en casa con ella, por cuanto escondió los mensajeros que enviamos."
+    },
+    {
+     "n": 18,
+     "texto": "Empero guardaos vosotros del anatema, que ni toquéis, ni toméis alguna cosa del anatema, porque no hagáis anatema el campo de Israel, y lo turbéis."
+    },
+    {
+     "n": 19,
+     "texto": "Mas toda la plata, y el oro, y vasos de metal y de hierro, sea consagrado á Jehová, [y] venga al tesoro de Jehová."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces el pueblo dió grita, y [los sacerdotes] tocaron las bocinas: y aconteció que como el pueblo hubo oído el sonido de la bocina, dió el pueblo grita con gran vocerío, y el muro cayó á plomo. El pueblo subió luego á la ciudad, cada uno en derecho de sí, y tomáronla."
+    },
+    {
+     "n": 21,
+     "texto": "Y destruyeron todo lo que en la ciudad había; hombres y mujeres, mozos y viejos, hasta los bueyes, y ovejas, y asnos, á filo de espada."
+    },
+    {
+     "n": 22,
+     "texto": "Mas Josué dijo á los dos hombres que habían reconocido la tierra: Entrad en casa de la mujer ramera, y haced salir de allá á la mujer, y á todo lo que fuere suyo, como lo jurasteis."
+    },
+    {
+     "n": 23,
+     "texto": "Y los mancebos espías entraron, y sacaron á Rahab, y á su padre, y á su madre, y á sus hermanos, y todo lo que era suyo; y también sacaron á toda su parentela, y pusiéronlos fuera del campo de Israel."
+    },
+    {
+     "n": 24,
+     "texto": "Y consumieron con fuego la ciudad, y todo lo que en ella había: solamente pusieron en el tesoro de la casa de Jehová la plata, y el oro, y los vasos de metal y de hierro."
+    },
+    {
+     "n": 25,
+     "texto": "Mas Josué salvó la vida á Rahab la ramera, y á la casa de su padre, y á todo lo que ella tenía: y habitó ella entre los Israelitas hasta hoy; por cuanto escondió los mensajeros que Josué envió á reconocer á Jericó."
+    },
+    {
+     "n": 26,
+     "texto": "Y en aquel tiempo Josué les juramentó diciendo: Maldito delante de Jehová el hombre que se levantare y reedificare esta ciudad de Jericó. En su primogénito eche sus cimientos, y en su menor asiente sus puertas."
+    },
+    {
+     "n": 27,
+     "texto": "Fué pues Jehová con Josué, y su nombre se divulgó por toda la tierra."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 7,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EMPERO los hijos de Israel cometieron prevaricación en el anatema: porque Achân, hijo de Carmi, hijo de Zabdi, hijo de Zera, de la tribu de Judá, tomó del anatema; y la ira de Jehová se encendió contra los hijos de Israel."
+    },
+    {
+     "n": 2,
+     "texto": "Y Josué envió hombres desde Jericó á Hai, que estaba junto á Beth-aven hacia el oriente de Beth-el; y hablóles diciendo: Subid, y reconoced la tierra. Y ellos subieron, y reconocieron á Hai."
+    },
+    {
+     "n": 3,
+     "texto": "Y volviendo á Josué, dijéronle: No suba todo el pueblo, mas suban como dos mil ó como tres mil hombres, y tomarán á Hai: no fatigues á todo el pueblo allí, porque son pocos."
+    },
+    {
+     "n": 4,
+     "texto": "Y subieron allá del pueblo como tres mil hombres, los cuales huyeron delante de los de Hai."
+    },
+    {
+     "n": 5,
+     "texto": "Y los de Hai hirieron de ellos como treinta y seis hombres, y siguiéronlos desde la puerta hasta Sebarim, y los rompieron en la bajada: por lo que se disolvió el corazón del pueblo, y vino á ser como agua."
+    },
+    {
+     "n": 6,
+     "texto": "Entonces Josué rompió sus vestidos, y postróse en tierra sobre su rostro delante del arca de Jehová hasta la tarde, él y los ancianos de Israel; y echaron polvo sobre sus cabezas."
+    },
+    {
+     "n": 7,
+     "texto": "Y Josué dijo: ¡Ah, Señor Jehová! ¿Por qué hiciste pasar á este pueblo el Jordán, para entregarnos en las manos de los Amorrheos, que nos destruyan? ¡Ojalá nos hubiéramos quedado de la otra parte del Jordán!"
+    },
+    {
+     "n": 8,
+     "texto": "¡Ay Señor! ¿qué diré, ya que Israel ha vuelto las espaldas delante de sus enemigos?"
+    },
+    {
+     "n": 9,
+     "texto": "Porque los Cananeos y todos los moradores de la tierra oirán, y nos cercarán, y raerán nuestro nombre de sobre la tierra: entonces ¿qué harás tú á tu grande nombre?"
+    },
+    {
+     "n": 10,
+     "texto": "Y Jehová dijo á Josué: Levántate; ¿por qué te postras así sobre tu rostro?"
+    },
+    {
+     "n": 11,
+     "texto": "Israel ha pecado, y aun han quebrantado mi pacto que yo les había mandado; pues aun han tomado del anatema, y hasta han hurtado, y también han mentido, y aun lo han guardado entre sus enseres."
+    },
+    {
+     "n": 12,
+     "texto": "Por esto los hijos de Israel no podrán estar delante de sus enemigos, sino que delante de sus enemigos volverán las espaldas; por cuanto han venido á ser anatema: ni seré más con vosotros, si no destruyereis el anatema de en medio de vosotros."
+    },
+    {
+     "n": 13,
+     "texto": "Levántate, santifica al pueblo, y di: Santificaos para mañana; porque Jehová el Dios de Israel dice así: Anatema hay en medio de ti, Israel; no podrás estar delante de tus enemigos, hasta tanto que hayáis quitado el anatema de en medio de vosotros."
+    },
+    {
+     "n": 14,
+     "texto": "Os allegaréis, pues, mañana por vuestras tribus; y la tribu que Jehová tomare, se allegará por sus familias; y la familia que Jehová tomare, se allegará por sus casas; y la casa que Jehová tomare, allegaráse por los varones;"
+    },
+    {
+     "n": 15,
+     "texto": "Y el que fuere cogido en el anatema, será quemado á fuego, él y todo lo que tiene, por cuanto ha quebrantado el pacto de Jehová, y ha cometido maldad en Israel."
+    },
+    {
+     "n": 16,
+     "texto": "Josué, pues, levantándose de mañana, hizo allegar á Israel por sus tribus; y fué tomada la tribu de Judá;"
+    },
+    {
+     "n": 17,
+     "texto": "Y haciendo allegar la tribu de Judá, fué tomada la familia de los de Zera; haciendo luego allegar la familia de los de Zera por los varones, fué tomado Zabdi;"
+    },
+    {
+     "n": 18,
+     "texto": "E hizo allegar su casa por los varones, y fué tomado Achân, hijo de Carmi, hijo de Zabdi, hijo de Zera, de la tribu de Judá."
+    },
+    {
+     "n": 19,
+     "texto": "Entonces Josué dijo á Achân: Hijo mío, da gloria ahora á Jehová el Dios de Israel, y dale alabanza, y declárame ahora lo que has hecho; no me lo encubras."
+    },
+    {
+     "n": 20,
+     "texto": "Y Achân respondió á Josué, diciendo: Verdaderamente yo he pecado contra Jehová el Dios de Israel, y he hecho así y así:"
+    },
+    {
+     "n": 21,
+     "texto": "Que vi entre los despojos un manto babilónico muy bueno, y doscientos siclos de plata, y un changote de oro de peso de cincuenta siclos; lo cual codicié, y tomé: y he aquí que está escondido debajo de tierra en el medio de mi tienda, y el dinero debajo de ello."
+    },
+    {
+     "n": 22,
+     "texto": "Josué entonces envió mensajeros, los cuales fueron corriendo á la tienda; y he aquí estaba escondido en su tienda, y el dinero debajo de ello:"
+    },
+    {
+     "n": 23,
+     "texto": "Y tomándolo de en medio de la tienda, trajéronlo á Josué y á todos los hijos de Israel, y pusiéronlo delante de Jehová."
+    },
+    {
+     "n": 24,
+     "texto": "Entonces Josué, y todo Israel con él, tomó á Achân hijo de Zera, y el dinero, y el manto, y el changote de oro, y sus hijos, y sus hijas, y sus bueyes, y sus asnos, y sus ovejas, y su tienda, y todo cuanto tenía, y lleváronlo todo al valle de Achôr;"
+    },
+    {
+     "n": 25,
+     "texto": "Y dijo Josué: ¿Por qué nos has turbado? Túrbete Jehová en este día. Y todos los Israelitas los apedrearon, y los quemaron á fuego, después de apedrearlos con piedras;"
+    },
+    {
+     "n": 26,
+     "texto": "Y levantaron sobre él un gran montón de piedras, hasta hoy. Y Jehová se tornó de la ira de su furor. Y por esto fué llamado aquel lugar el Valle de Achôr, hasta hoy."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 8,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JEHOVÁ dijo á Josué: No temas, ni desmayes; toma contigo toda la gente de guerra, y levántate y sube á Hai. Mira, yo he entregado en tu mano al rey de Hai, y á su pueblo, á su ciudad, y á su tierra."
+    },
+    {
+     "n": 2,
+     "texto": "Y harás á Hai y á su rey como hiciste á Jericó y á su rey: sólo que sus despojos y sus bestias tomaréis para vosotros. Pondrás, pues, emboscadas á la ciudad detrás de ella."
+    },
+    {
+     "n": 3,
+     "texto": "Y levantóse Josué, y toda la gente de guerra, para subir contra Hai: y escogió Josué treinta mil hombres fuertes, los cuales envió de noche."
+    },
+    {
+     "n": 4,
+     "texto": "Y mandóles, diciendo: Mirad, pondréis emboscada á la ciudad detrás de ella: no os alejaréis mucho de la ciudad, y estaréis todos apercibidos."
+    },
+    {
+     "n": 5,
+     "texto": "Y yo, y todo el pueblo que está conmigo, nos acercaremos á la ciudad; y cuando saldrán ellos contra nosotros, como hicieron antes, huiremos delante de ellos."
+    },
+    {
+     "n": 6,
+     "texto": "Y ellos saldrán tras nosotros, hasta que los arranquemos de la ciudad; porque ellos dirán: Huyen de nosotros como la primera vez. Huiremos, pues, delante de ellos."
+    },
+    {
+     "n": 7,
+     "texto": "Entonces vosotros os levantaréis de la emboscada, y os echaréis sobre la ciudad; pues Jehová vuestro Dios la entregará en vuestras manos."
+    },
+    {
+     "n": 8,
+     "texto": "Y cuando la hubiereis tomado, le prenderéis fuego. Haréis conforme á la palabra de Jehová. Mirad que os lo he mandado."
+    },
+    {
+     "n": 9,
+     "texto": "Entonces Josué los envió; y ellos se fueron á la emboscada, y pusiéronse entre Beth-el y Hai, al occidente de Hai: y Josué se quedó aquella noche en medio del pueblo."
+    },
+    {
+     "n": 10,
+     "texto": "Y levantándose Josué muy de mañana, revistó al pueblo, y subió él, con los ancianos de Israel, delante del pueblo contra Hai."
+    },
+    {
+     "n": 11,
+     "texto": "Y toda la gente de guerra que con él estaba, subió, y acercóse, y llegaron delante de la ciudad, y asentaron el campo á la parte del norte de Hai: y el valle estaba entre él y Hai."
+    },
+    {
+     "n": 12,
+     "texto": "Y tomó como cinco mil hombres, y púsolos en emboscada entre Beth-el y Hai, á la parte occidental de la ciudad."
+    },
+    {
+     "n": 13,
+     "texto": "Y el pueblo, todo el campo que estaba á la parte del norte de la ciudad, colocado ya cerca, y su emboscada al occidente de la ciudad, vínose Josué aquella noche al medio del valle."
+    },
+    {
+     "n": 14,
+     "texto": "Lo cual como viese el rey de Hai, levantóse prestamente de mañana, y salió con la gente de la ciudad contra Israel, él y todo su pueblo, para combatir por el llano al tiempo señalado, no sabiendo que le estaba puesta emboscada á las espaldas de la ciudad."
+    },
+    {
+     "n": 15,
+     "texto": "Entonces Josué y todo Israel, haciéndose vencidos, huyeron delante de ellos por el camino del desierto."
+    },
+    {
+     "n": 16,
+     "texto": "Y todo el pueblo que estaba en Hai se juntó para seguirlos: y siguieron á Josué, siendo así arrancados de la ciudad."
+    },
+    {
+     "n": 17,
+     "texto": "Y no quedó hombre en Hai y Beth-el, que no saliera tras de Israel; y por seguir á Israel dejaron la ciudad abierta."
+    },
+    {
+     "n": 18,
+     "texto": "Entonces Jehová dijo á Josué: Levanta la lanza que tienes en tu mano hacia Hai, porque yo la entregaré en tu mano. Y Josué levantó hacia la ciudad la lanza que en su mano tenía."
+    },
+    {
+     "n": 19,
+     "texto": "Y levantándose prestamente de su lugar los que estaban en la emboscada, corrieron luego que él alzó su mano, y vinieron á la ciudad, y la tomaron, y apresuráronse á prenderle fuego."
+    },
+    {
+     "n": 20,
+     "texto": "Y como los de la ciudad miraron atrás, observaron, y he aquí el humo de la ciudad que subía al cielo, y no tuvieron arbitrio para huir ni á una parte ni á otra: y el pueblo que iba huyendo hacia el desierto, se volvió contra los que le seguían."
+    },
+    {
+     "n": 21,
+     "texto": "Josué y todo Israel, viendo que los de la emboscada habían tomado la ciudad, y que el humo de la ciudad subía, tornaron, é hirieron á los de Hai."
+    },
+    {
+     "n": 22,
+     "texto": "Y los otros salieron de la ciudad á su encuentro: y así fueron encerrados en medio de Israel, los unos de la una parte, y los otros de la otra. Y los hirieron hasta que no quedó ninguno de ellos que escapase."
+    },
+    {
+     "n": 23,
+     "texto": "Y tomaron vivo al rey de Hai, y trajéronle á Josué."
+    },
+    {
+     "n": 24,
+     "texto": "Y cuando los Israelitas acabaron de matar á todos los moradores de Hai en el campo, en el desierto, donde ellos los habían perseguido, y que todos habían caído á filo de espada hasta ser consumidos, todos los Israelitas se tornaron á Hai, y también la pusieron á cuchillo."
+    },
+    {
+     "n": 25,
+     "texto": "Y el número de los que cayeron aquel día, hombres y mujeres, fué doce mil, todos los de Hai."
+    },
+    {
+     "n": 26,
+     "texto": "Y Josué no retrajo su mano que había extendido con la lanza, hasta que hubo destruído á todos los moradores de Hai."
+    },
+    {
+     "n": 27,
+     "texto": "Empero los Israelitas tomaron para sí las bestias y los despojos de la ciudad, conforme á la palabra de Jehová que él había mandado á Josué."
+    },
+    {
+     "n": 28,
+     "texto": "Y Josué quemó á Hai y redújola á un montón perpetuo, asolado hasta hoy."
+    },
+    {
+     "n": 29,
+     "texto": "Mas al rey de Hai colgó de un madero hasta la tarde: y como el sol se puso, mandó Josué que quitasen del madero su cuerpo, y lo echasen á la puerta de la ciudad: y levantaron sobre él un gran montón de piedras, hasta hoy."
+    },
+    {
+     "n": 30,
+     "texto": "Entonces Josué edificó un altar á Jehová Dios de Israel en el monte de Ebal,"
+    },
+    {
+     "n": 31,
+     "texto": "Como Moisés, siervo de Jehová, lo había mandado á los hijos de Israel, como está escrito en el libro de la ley de Moisés, un altar de piedras enteras sobre las cuales nadie alzó hierro: y ofrecieron sobre él holocaustos á Jehová, y sacrificaron víctimas pacíficas."
+    },
+    {
+     "n": 32,
+     "texto": "También escribió allí en piedras la repetición de la ley de Moisés, la cual él había escrito delante de los hijos de Israel."
+    },
+    {
+     "n": 33,
+     "texto": "Y todo Israel, y sus ancianos, oficiales, y jueces, estaban de la una y de la otra parte junto al arca, delante de los sacerdotes Levitas que llevan el arca del pacto de Jehová; así extranjeros como naturales, la mitad de ellos estaba hacia el monte de Gerizim, y la otra mitad hacia el monte de Ebal; de la manera que Moisés, siervo de Jehová, lo había mandado antes, para que bendijesen primeramente al pueblo de Israel."
+    },
+    {
+     "n": 34,
+     "texto": "Después de esto, leyó todas las palabras de la ley, las bendiciones y las maldiciones, conforme á todo lo que está escrito en el libro de la ley."
+    },
+    {
+     "n": 35,
+     "texto": "No hubo palabra alguna de todas las cosas que mandó Moisés, que Josué no hiciese leer delante de toda la congregación de Israel, mujeres y niños, y extranjeros que andaban entre ellos."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 9,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ que como oyeron [estas cosas] todos los reyes que estaban de esta parte del Jordán, así en las montañas como en los llanos, y en toda la costa de la gran mar delante del Líbano, los Hetheos, Amorrheos, Cananeos, Pherezeos, Heveos, y Jebuseos;"
+    },
+    {
+     "n": 2,
+     "texto": "Juntáronse á una, de un acuerdo, para pelear contra Josué é Israel."
+    },
+    {
+     "n": 3,
+     "texto": "Mas los moradores de Gabaón, como oyeron lo que Josué había hecho á Jericó y á Hai,"
+    },
+    {
+     "n": 4,
+     "texto": "Ellos usaron también de astucia; pues fueron y fingiéronse embajadores, y tomaron sacos viejos sobre sus asnos, y cueros viejos de vino, rotos y remendados,"
+    },
+    {
+     "n": 5,
+     "texto": "Y zapatos viejos y recosidos en sus pies, con vestidos viejos sobre sí; y todo el pan que traían para el camino, seco y mohoso."
+    },
+    {
+     "n": 6,
+     "texto": "Así vinieron á Josué al campo en Gilgal, y dijéronle á él y á los de Israel: Nosotros venimos de tierra muy lejana: haced pues ahora con nosotros alianza."
+    },
+    {
+     "n": 7,
+     "texto": "Y los de Israel respondieron á los Heveos: Quizás vosotros habitáis en medio de nosotros: ¿cómo pues podremos nosotros hacer alianza con vosotros?"
+    },
+    {
+     "n": 8,
+     "texto": "Y ellos respondieron á Josué: Nosotros somos tus siervos. Y Josué les dijo: ¿Quién sois vosotros y de dónde venís?"
+    },
+    {
+     "n": 9,
+     "texto": "Y ellos respondieron: Tus siervos han venido de muy lejanas tierras, por la fama de Jehová tu Dios; porque hemos oído su fama, y todas las cosas que hizo en Egipto,"
+    },
+    {
+     "n": 10,
+     "texto": "Y todo lo que hizo á los dos reyes de los Amorrheos que estaban de la otra parte del Jordán; á Sehón rey de Hesbón, y á Og rey de Basán, que estaba en Astaroth."
+    },
+    {
+     "n": 11,
+     "texto": "Por lo cual nuestros ancianos y todos los moradores de nuestra tierra nos dijeron: Tomad en vuestras manos provisión para el camino, é id al encuentro de ellos, y decidles: Nosotros somos vuestros siervos, y haced ahora con nosotros alianza."
+    },
+    {
+     "n": 12,
+     "texto": "Este nuestro pan tomamos caliente de nuestras casas para el camino el día que salimos para venir á vosotros; y helo aquí ahora que está seco y mohoso:"
+    },
+    {
+     "n": 13,
+     "texto": "Estos cueros de vino también los henchimos nuevos; helos aquí ya rotos: también estos nuestros vestidos y nuestros zapatos están ya viejos á causa de lo muy largo del camino."
+    },
+    {
+     "n": 14,
+     "texto": "Y los hombres [de Israel] tomaron de su provisión del camino, y no preguntaron á la boca de Jehová."
+    },
+    {
+     "n": 15,
+     "texto": "Y Josué hizo paz con ellos, y concertó con ellos que les dejaría la vida: también los príncipes de la congregación les juraron."
+    },
+    {
+     "n": 16,
+     "texto": "Pasados tres días después que hicieron con ellos el concierto, oyeron como eran sus vecinos, y que habitaban en medio de ellos."
+    },
+    {
+     "n": 17,
+     "texto": "Y partiéronse los hijos de Israel, y al tercer día llegaron á sus ciudades: y sus ciudades eran Gabaón, Caphira, Beeroth, y Chiriath-jearim."
+    },
+    {
+     "n": 18,
+     "texto": "Y no los hirieron los hijos de Israel, por cuanto los príncipes de la congregación les habían jurado por Jehová el Dios de Israel. Y toda la congregación murmuraba contra los príncipes."
+    },
+    {
+     "n": 19,
+     "texto": "Mas todos los príncipes respondieron á toda la congregación: Nosotros les hemos jurado por Jehová Dios de Israel; por tanto, ahora no les podemos tocar."
+    },
+    {
+     "n": 20,
+     "texto": "Esto haremos con ellos: les dejaremos vivir, porque no venga ira sobre nosotros á causa del juramento que les hemos hecho."
+    },
+    {
+     "n": 21,
+     "texto": "Y los príncipes les dijeron: Vivan; mas sean leñadores y aguadores para toda la congregación, como los príncipes les han dicho."
+    },
+    {
+     "n": 22,
+     "texto": "Y llamándolos Josué, les habló diciendo: ¿Por qué nos habéis engañado, diciendo, Habitamos muy lejos de vosotros; una vez que moráis en medio de nosotros?"
+    },
+    {
+     "n": 23,
+     "texto": "Vosotros pues ahora sois malditos, y no faltará de vosotros siervo, y quien corte la leña y saque el agua para la casa de mi Dios."
+    },
+    {
+     "n": 24,
+     "texto": "Y ellos respondieron á Josué, y dijeron: Como fué dado á entender á tus siervos, que Jehová tu Dios había mandado á Moisés su siervo que os había de dar toda la tierra, y que había de destruir todos los moradores de la tierra delante de vosotros, por esto temimos en gran manera de vosotros por nuestras vidas, é hicimos esto."
+    },
+    {
+     "n": 25,
+     "texto": "Ahora pues, henos aquí en tu mano: lo que te pareciere bueno y recto hacer de nosotros, hazlo."
+    },
+    {
+     "n": 26,
+     "texto": "Y él lo hizo así; que los libró de la mano de los hijos de Israel, para que no los matasen."
+    },
+    {
+     "n": 27,
+     "texto": "Y constituyólos Josué aquel día por leñadores y aguadores para la congregación y para el altar de Jehová, en el lugar que él escogiese: [lo que son] hasta hoy."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 10,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y COMO Adonisedec rey de Jerusalem oyó que Josué había tomado á Hai, y que la había asolado, (como había hecho á Jericó y á su rey, así hizo á Hai y á su rey;) y que los moradores de Gabaón habían hecho paz con los Israelitas, y que estaban entre ellos;"
+    },
+    {
+     "n": 2,
+     "texto": "Tuvieron muy gran temor; porque Gabaón era una gran ciudad, como una de las ciudades reales, y mayor que Hai, y todos sus hombres fuertes."
+    },
+    {
+     "n": 3,
+     "texto": "Envió pues á decir Adonisedec rey de Jerusalem, á Oham rey de Hebrón, y á Phiream rey de Jerimoth, y á Japhia rey de Lachîs, y á Debir rey de Eglón:"
+    },
+    {
+     "n": 4,
+     "texto": "Subid á mí, y ayudadme, y combatamos á Gabaón: porque ha hecho paz con Josué y con los hijos de Israel."
+    },
+    {
+     "n": 5,
+     "texto": "Y cinco reyes de los Amorrheos, el rey de Jerusalem, el rey de Hebrón, el rey de Jerimoth, el rey de Lachîs, el rey de Eglón, se juntaron y subieron, ellos con todos sus ejércitos, y asentaron campo sobre Gabaón, y pelearon contra ella."
+    },
+    {
+     "n": 6,
+     "texto": "Y los moradores de Gabaón enviaron á decir á Josué al campo en Gilgal: No encojas tus manos de tus siervos; sube prestamente á nosotros para guardarnos y ayudarnos: porque todos los reyes de los Amorrheos que habitan en las montañas, se han juntado contra nosotros."
+    },
+    {
+     "n": 7,
+     "texto": "Y subió Josué de Gilgal, él y todo el pueblo de guerra con él, y todos los hombres valientes."
+    },
+    {
+     "n": 8,
+     "texto": "Y Jehová dijo á Josué: No tengas temor de ellos: porque yo los he entregado en tu mano, y ninguno de ellos parará delante de ti."
+    },
+    {
+     "n": 9,
+     "texto": "Y Josué vino á ellos de repente, toda la noche subió desde Gilgal."
+    },
+    {
+     "n": 10,
+     "texto": "Y Jehová los turbó delante de Israel, é hiriólos con gran mortandad en Gabaón: y siguiólos por el camino que sube á Beth-oron, é hiriólos hasta Azeca y Maceda."
+    },
+    {
+     "n": 11,
+     "texto": "Y como iban huyendo de los Israelitas, á la bajada de Beth-oron, Jehová echó sobre ellos del cielo grandes piedras hasta Azeca, y murieron: muchos más murieron de las piedras del granizo, que los que los hijos de Israel habían muerto á cuchillo."
+    },
+    {
+     "n": 12,
+     "texto": "Entonces Josué habló á Jehová el día que Jehová entregó al Amorrheo delante de los hijos de Israel, y dijo en presencia de los Israelitas: Sol, detente en Gabaón; y tú, Luna, en el valle de Ajalón."
+    },
+    {
+     "n": 13,
+     "texto": "Y el sol se detuvo y la luna se paró, hasta tanto que la gente se hubo vengado de sus enemigos. ¿No está aquesto escrito en el libro de Jasher? Y el sol se paró en medio del cielo, y no se apresuró á ponerse casi un día entero."
+    },
+    {
+     "n": 14,
+     "texto": "Y nunca fué tal día antes ni después de aquél, habiendo atendido Jehová á la voz de un hombre: porque Jehová peleaba por Israel."
+    },
+    {
+     "n": 15,
+     "texto": "Y Josué, y todo Israel con él, volvíase al campo en Gilgal."
+    },
+    {
+     "n": 16,
+     "texto": "Pero los cinco reyes huyeron, y se escondieron en una cueva en Maceda."
+    },
+    {
+     "n": 17,
+     "texto": "Y fué dicho á Josué que los cinco reyes habían sido hallados en una cueva en Maceda."
+    },
+    {
+     "n": 18,
+     "texto": "Entonces Josué dijo: Rodad grandes piedras á la boca de la cueva, y poned hombres junto á ella que los guarden;"
+    },
+    {
+     "n": 19,
+     "texto": "Y vosotros no os paréis, sino seguid á vuestros enemigos, y heridles la retaguardia, sin dejarles entrar en sus ciudades; porque Jehová vuestro Dios los ha entregado en vuestra mano."
+    },
+    {
+     "n": 20,
+     "texto": "Y aconteció que como Josué y los hijos de Israel hubieron acabado de herirlos con mortandad muy grande, hasta destruirlos, los que quedaron de ellos se metieron en las ciudades fuertes."
+    },
+    {
+     "n": 21,
+     "texto": "Y todo el pueblo se volvió salvo al campo á Josué en Maceda; que no hubo quien moviese su lengua contra los hijos de Israel."
+    },
+    {
+     "n": 22,
+     "texto": "Entonces dijo Josué: Abrid la boca de la cueva, y sacadme de ella á estos cinco reyes."
+    },
+    {
+     "n": 23,
+     "texto": "E hiciéronlo así, y sacáronle de la cueva aquellos cinco reyes: al rey de Jerusalem, al rey de Hebrón, al rey de Jerimoth, al rey de Lachîs, al rey de Eglón."
+    },
+    {
+     "n": 24,
+     "texto": "Y cuando hubieron sacado estos reyes á Josué, llamó Josué á todos los varones de Israel, y dijo á los principales de la gente de guerra que habían venido con él: Llegad y poned vuestros pies sobre los pescuezos de aquestos reyes. Y ellos se llegaron, y pusieron sus pies sobre los pescuezos de ellos."
+    },
+    {
+     "n": 25,
+     "texto": "Y Josué les dijo: No temáis, ni os atemoricéis; sed fuertes y valientes: porque así hará Jehová á todos vuestros enemigos contra los cuales peleáis."
+    },
+    {
+     "n": 26,
+     "texto": "Y después de esto Josué los hirió y los mató, é hízolos colgar en cinco maderos: y quedaron colgados en los maderos hasta la tarde."
+    },
+    {
+     "n": 27,
+     "texto": "Y cuando el sol se iba á poner, mandó Josué que los quitasen de los maderos, y los echasen en la cueva donde se habían escondido: y pusieron grandes piedras á la boca de la cueva, hasta hoy."
+    },
+    {
+     "n": 28,
+     "texto": "En aquel mismo día tomó Josué á Maceda, y la puso á cuchillo, y mató á su rey; á ellos y á todo lo que en ella tenía vida, sin quedar nada: mas al rey de Maceda hizo como había hecho al rey de Jericó."
+    },
+    {
+     "n": 29,
+     "texto": "Y de Maceda pasó Josué, y todo Israel con él, á Libna; y peleó contra Libna:"
+    },
+    {
+     "n": 30,
+     "texto": "Y Jehová la entregó también á ella, y á su rey, en manos de Israel; y metióla á filo de espada, con todo lo que en ella había vivo, sin quedar nada: mas á su rey hizo de la manera que había hecho al rey de Jericó."
+    },
+    {
+     "n": 31,
+     "texto": "Y Josué, y todo Israel con él, pasó de Libna á Lachîs, y puso campo contra ella, y combatióla:"
+    },
+    {
+     "n": 32,
+     "texto": "Y Jehová entregó á Lachîs en mano de Israel, y tomóla al día siguiente, y metióla á cuchillo, con todo lo que en ella había vivo, como había hecho en Libna."
+    },
+    {
+     "n": 33,
+     "texto": "Entonces Horam, rey de Gezer, subió en ayuda de Lachîs; mas á él y á su pueblo hirió Josué, hasta no quedar ninguno de ellos."
+    },
+    {
+     "n": 34,
+     "texto": "De Lachîs pasó Josué, y todo Israel con él, á Eglón: y pusieron campo contra ella, y combatiéronla:"
+    },
+    {
+     "n": 35,
+     "texto": "Y la tomaron el mismo día, y metiéronla á cuchillo; y aquel día mató á todo lo que en ella había vivo, como había hecho en Lachîs."
+    },
+    {
+     "n": 36,
+     "texto": "Subió luego Josué, y todo Israel con él, de Eglón á Hebrón, y combatiéronla;"
+    },
+    {
+     "n": 37,
+     "texto": "Y tomándola, la metieron á cuchillo, á su rey y á todas sus ciudades, con todo lo que en ella había vivo, sin quedar nada: como habían hecho á Eglón, así la destruyeron con todo lo que en ella había vivo."
+    },
+    {
+     "n": 38,
+     "texto": "Y volviéndose Josué, y todo Israel con él, sobre Debir, combatióla;"
+    },
+    {
+     "n": 39,
+     "texto": "Y tomóla, y á su rey, y á todas sus villas; y metiéronlos á cuchillo, y destruyeron todo lo que allí dentro había vivo, sin quedar nada: como había hecho á Hebrón, así hizo á Debir y á su rey; y como había hecho á Libna y á su rey."
+    },
+    {
+     "n": 40,
+     "texto": "Hirió pues Josué toda la región de las montañas, y del mediodía, y de los llanos, y de las cuestas, y á todos sus reyes, sin quedar nada; todo lo que tenía vida mató, al modo que Jehová Dios de Israel lo había mandado."
+    },
+    {
+     "n": 41,
+     "texto": "E hiriólos Josué desde Cades-barnea hasta Gaza, y toda la tierra de Gosén hasta Gabaón."
+    },
+    {
+     "n": 42,
+     "texto": "Todos estos reyes y sus tierras tomó Josué de una vez; porque Jehová el Dios de Israel peleaba por Israel."
+    },
+    {
+     "n": 43,
+     "texto": "Y tornóse Josué, y todo Israel con él, al campo en Gilgal."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 11,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "OYENDO esto Jabín rey de Hasor, envió [mensaje] á Jobab rey de Madón, y al rey de Simrom, y al rey de Achsaph,"
+    },
+    {
+     "n": 2,
+     "texto": "Y á los reyes que estaban á la parte del norte en las montañas, y en el llano al mediodía de Cinneroth, y en los llanos, y en las regiones de Dor al occidente;"
+    },
+    {
+     "n": 3,
+     "texto": "Y al Cananeo que estaba al oriente y al occidente, y al Amorrheo, y al Hetheo, y al Pherezeo, y al Jebuseo en las montañas, y al Heveo debajo de Hermón en tierra de Mizpa."
+    },
+    {
+     "n": 4,
+     "texto": "Estos salieron, y con ellos todos sus ejércitos, pueblo mucho en gran manera, como la arena que está á la orilla del mar, con gran muchedumbre de caballos y carros."
+    },
+    {
+     "n": 5,
+     "texto": "Todos estos reyes se juntaron, y viniendo reunieron los campos junto á las aguas de Merom, para pelear contra Israel."
+    },
+    {
+     "n": 6,
+     "texto": "Mas Jehová dijo á Josué: No tengas temor de ellos, que mañana á esta hora yo entregaré á todos éstos, muertos delante de Israel: á sus caballos desjarretarás, y sus carros quemarás al fuego."
+    },
+    {
+     "n": 7,
+     "texto": "Y vino Josué, y con él todo el pueblo de guerra, contra ellos, y dió de repente sobre ellos junto á las aguas de Merom."
+    },
+    {
+     "n": 8,
+     "texto": "Y entrególos Jehová en manos de Israel, los cuales los hirieron y siguieron hasta Sidón la grande, y hasta las aguas calientes, y hasta el llano de Mizpa al oriente, hiriéndolos hasta que no les dejaron ninguno."
+    },
+    {
+     "n": 9,
+     "texto": "Y Josué hizo con ellos como Jehová le había mandado: desjarretó sus caballos, y sus carros quemó al fuego."
+    },
+    {
+     "n": 10,
+     "texto": "Y tornándose Josué, tomó en el mismo tiempo á Hasor, é hirió á cuchillo á su rey: la cual Hasor había sido antes cabeza de todos estos reinos."
+    },
+    {
+     "n": 11,
+     "texto": "E hirieron á cuchillo todo cuanto en ella había vivo, destruyendo y no dejando cosa con vida; y á Asor pusieron á fuego."
+    },
+    {
+     "n": 12,
+     "texto": "Asimismo tomó Josué todas las ciudades de aquestos reyes, y á todos los reyes de ellas, y los metió á cuchillo, y los destruyó, como Moisés siervo de Jehová lo había mandado."
+    },
+    {
+     "n": 13,
+     "texto": "Empero todas las ciudades que estaban en sus cabezos, no las quemó Israel, sacando á sola Asor, la cual quemó Josué."
+    },
+    {
+     "n": 14,
+     "texto": "Y los hijos de Israel tomaron para sí todos los despojos y bestias de aquestas ciudades: pero á todos los hombres metieron á cuchillo hasta destruirlos, sin dejar alguno con vida."
+    },
+    {
+     "n": 15,
+     "texto": "De la manera que Jehová lo había mandado á Moisés su siervo, así Moisés lo mandó á Josué: y así Josué lo hizo, sin quitar palabra de todo lo que Jehová había mandado á Moisés."
+    },
+    {
+     "n": 16,
+     "texto": "Tomó pues Josué toda aquella tierra, las montañas, y toda la [región] del mediodía, y toda la tierra de Gosén, y los bajos y los llanos, y la montaña de Israel y sus valles."
+    },
+    {
+     "n": 17,
+     "texto": "Desde el monte de Halac, que sube hasta Seir, hasta Baal-gad en la llanura del Líbano, á las raíces del monte Hermón: tomó asimismo todos sus reyes, los cuales hirió y mató."
+    },
+    {
+     "n": 18,
+     "texto": "Por muchos días tuvo guerra Josué con estos reyes."
+    },
+    {
+     "n": 19,
+     "texto": "No hubo ciudad que hiciese paz con los hijos de Israel, sacados los Heveos, que moraban en Gabaón: todo lo tomaron por guerra."
+    },
+    {
+     "n": 20,
+     "texto": "Porque esto vino de Jehová, que endurecía el corazón de ellos para que resistiesen con guerra á Israel, para destruirlos, y que no les fuese hecha misericordia, antes fuesen desarraigados, como Jehová lo había mandado á Moisés."
+    },
+    {
+     "n": 21,
+     "texto": "También en el mismo tiempo vino Josué y destruyó los Anaceos de los montes, de Hebrón, de Debir, y de Anab, y de todos los montes de Judá, y de todos los montes de Israel: Josué los destruyó á ellos y á sus ciudades."
+    },
+    {
+     "n": 22,
+     "texto": "Ninguno de los Anaceos quedó en la tierra de los hijos de Israel; solamente quedaron en Gaza, en Gath, y en Asdod."
+    },
+    {
+     "n": 23,
+     "texto": "Tomó, pues, Josué toda la tierra, conforme á todo lo que Jehová había dicho á Moisés; y entrególa Josué á los Israelitas por herencia, conforme á sus repartimientos de sus tribus: y la tierra reposó de guerra."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 12,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTOS son los reyes de la tierra que los hijos de Israel hirieron, y cuya tierra poseyeron de la otra parte del Jordán al nacimiento del sol, desde el arroyo de Arnón hasta el monte Hermón, y toda la llanura oriental:"
+    },
+    {
+     "n": 2,
+     "texto": "Sehón rey de los Amorrheos, que habitaba en Hesbón, y señoreaba desde Aroer, que está á la ribera del arroyo de Arnón, y desde en medio del arroyo, y la mitad de Galaad, hasta el arroyo Jaboc, el término de los hijos de Ammón;"
+    },
+    {
+     "n": 3,
+     "texto": "Y desde la campiña hasta la mar de Cinneroth, al oriente; y hasta la mar de la llanura, el mar Salado, al oriente, por el camino de Beth-jesimoth; y desde el mediodía debajo de las vertientes del Pisga."
+    },
+    {
+     "n": 4,
+     "texto": "Y los términos de Og rey de Basán, que había quedado de los Rapheos, el cual habitaba en Astaroth y en Edrei,"
+    },
+    {
+     "n": 5,
+     "texto": "Y señoreaba en el monte de Hermón, y en Salca, y en todo Basán hasta los términos de Gessuri y de Maachâti, y la mitad de Galaad, término de Sehón rey de Hesbón."
+    },
+    {
+     "n": 6,
+     "texto": "A estos hirieron Moisés siervo de Jehová y los hijos de Israel; y Moisés siervo de Jehová dió aquella tierra en posesión á los Rubenitas, Gaditas, y á la media tribu de Manasés."
+    },
+    {
+     "n": 7,
+     "texto": "Y estos son los reyes de la tierra que hirió Josué con los hijos de Israel, de esta parte del Jordán al occidente, desde Baal-gad en el llano del Líbano hasta el monte de Halac que sube á Seir; la cual tierra dió Josué en posesión á las tribus de Israel, conforme á sus repartimientos;"
+    },
+    {
+     "n": 8,
+     "texto": "En montes y en valles, en llanos y en vertientes, al desierto y al mediodía; el Hetheo, y el Amorrheo, y el Cananeo, y el Pherezeo, y el Heveo, y el Jebuseo."
+    },
+    {
+     "n": 9,
+     "texto": "El rey de Jericó, uno: el rey de Hai, que está al lado de Beth-el, otro:"
+    },
+    {
+     "n": 10,
+     "texto": "El rey de Jerusalem, otro: el rey de Hebrón, otro:"
+    },
+    {
+     "n": 11,
+     "texto": "El rey de Jarmuth, otro: el rey de Lachîs, otro:"
+    },
+    {
+     "n": 12,
+     "texto": "El rey de Eglón, otro: el rey de Gezer, otro:"
+    },
+    {
+     "n": 13,
+     "texto": "El rey de Debir, otro: el rey de Geder, otro:"
+    },
+    {
+     "n": 14,
+     "texto": "El rey de Horma, otro: el rey de Arad, otro:"
+    },
+    {
+     "n": 15,
+     "texto": "El rey de Libna, otro: el rey de Adullam, otro:"
+    },
+    {
+     "n": 16,
+     "texto": "El rey de Maceda, otro: el rey de Beth-el, otro:"
+    },
+    {
+     "n": 17,
+     "texto": "El rey de Tappua, otro: el rey de Hepher, otro:"
+    },
+    {
+     "n": 18,
+     "texto": "El rey de Aphec, otro: el rey de Lasarón, otro:"
+    },
+    {
+     "n": 19,
+     "texto": "El rey de Madón, otro: el rey de Hasor, otro:"
+    },
+    {
+     "n": 20,
+     "texto": "El rey de Simrom-meron, otro: el rey de Achsaph, otro:"
+    },
+    {
+     "n": 21,
+     "texto": "El rey de Taanach, otro: el rey de Megiddo, otro:"
+    },
+    {
+     "n": 22,
+     "texto": "El rey de Chêdes, otro: el rey de Jocneam de Carmel, otro:"
+    },
+    {
+     "n": 23,
+     "texto": "El rey de Dor, de la provincia de Dor, otro: el rey de Gentes en Gilgal, otro:"
+    },
+    {
+     "n": 24,
+     "texto": "El rey de Tirsa, otro: treinta y un reyes en todo."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 13,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y SIENDO Josué ya viejo, entrado en días, Jehová le dijo: Tú eres ya viejo, de edad avanzada, y queda aún muy mucha tierra por poseer."
+    },
+    {
+     "n": 2,
+     "texto": "Esta es la tierra que queda: todos los términos de los Philisteos, y toda Gessuri;"
+    },
+    {
+     "n": 3,
+     "texto": "Desde Sihor, que está delante de Egipto, hasta el término de Accarón al norte, repútase de los Cananeos: cinco provincias de los Philisteos; los Gazeos, Asdodios, Ascalonitas, Getheos, y Accaronitas; y los Heveos;"
+    },
+    {
+     "n": 4,
+     "texto": "Al mediodía toda la tierra de los Cananeos, y Mehara que es de los Sidonios, hasta Aphec, hasta el término del Amorrheo;"
+    },
+    {
+     "n": 5,
+     "texto": "Y la tierra de los Gibleos, y todo el Líbano hacia donde sale el sol, desde Baal-gad á las raíces del monte Hermón, hasta entrar en Hamath;"
+    },
+    {
+     "n": 6,
+     "texto": "Todos los que habitan en las montañas desde el Líbano hasta las aguas calientes, todos los Sidonios; yo los desarraigaré delante de lo hijos de Israel: solamente repartirás tú por suerte el [país] á los Israelitas por heredad, como te he mandado."
+    },
+    {
+     "n": 7,
+     "texto": "Parte, pues, tú ahora esta tierra en heredad á las nueve tribus, y á la media tribu de Manasés."
+    },
+    {
+     "n": 8,
+     "texto": "Porque la otra media recibió su heredad con los Rubenitas y Gaditas, la cual les dió Moisés de la otra parte del Jordán al oriente, según que se la dió Moisés siervo de Jehová:"
+    },
+    {
+     "n": 9,
+     "texto": "Desde Aroer, que está á la orilla del arroyo de Arnón, y la ciudad que está en medio del arroyo, y toda la campiña de Medeba, hasta Dibón;"
+    },
+    {
+     "n": 10,
+     "texto": "Y todas las ciudades de Sehón rey de los Amorrheos, el cual reinó en Hesbón, hasta los términos de los hijos de Ammón;"
+    },
+    {
+     "n": 11,
+     "texto": "Y Galaad, y los términos de Gessuri y de Maachâti, y todo el monte de Hermón, y toda la tierra de Basán hasta Salchâ:"
+    },
+    {
+     "n": 12,
+     "texto": "Todo el reino de Og en Basán, el cual reinó en Astaroth y Edrei, el cual había quedado del residuo de los Rapheos; pues Moisés los hirió, y echó."
+    },
+    {
+     "n": 13,
+     "texto": "Mas á los de Gessuri y Maachâti no echaron los hijos de Israel; antes Gessur y Maachât habitaron entre los Israelitas hasta hoy."
+    },
+    {
+     "n": 14,
+     "texto": "Empero á la tribu de Leví no dió heredad: los sacrificios de Jehová Dios de Israel son su heredad, como él les había dicho."
+    },
+    {
+     "n": 15,
+     "texto": "Dió, pues, Moisés á la tribu de los hijos de Rubén conforme á sus familias:"
+    },
+    {
+     "n": 16,
+     "texto": "Y fué el término de ellos desde Aroer, que está á la orilla del arroyo de Arnón, y la ciudad que está en medio del arroyo, y toda la campiña, hasta Medeba;"
+    },
+    {
+     "n": 17,
+     "texto": "Hesbón, con todas sus villas que están en la llanura; Dibón, y Bamoth-baal, y Beth-baal-meón;"
+    },
+    {
+     "n": 18,
+     "texto": "Y Jaas, y Keddemoth, y Mephaath,"
+    },
+    {
+     "n": 19,
+     "texto": "Y Chîriataim, y Sibma, y Zerethshahar en el monte del valle;"
+    },
+    {
+     "n": 20,
+     "texto": "Y Beth-peor, y Asdoth-pisga, y Beth-jesimoth;"
+    },
+    {
+     "n": 21,
+     "texto": "Y todas las ciudades de la campiña, y todo el reino de Sehón rey de los Amorrheos, que reinó en Hesbón, al cual hirió Moisés, y á los príncipes de Madián, Hevi, Recem, y Sur, y Hur, y Reba, príncipes de Sehón que habitaban en aquella tierra."
+    },
+    {
+     "n": 22,
+     "texto": "También mataron á cuchillo los hijos de Israel á Balaam adivino, hijo de Beor, con los demás que mataron."
+    },
+    {
+     "n": 23,
+     "texto": "Y fueron los términos de los hijos de Rubén el Jordán con su término. Esta fué la herencia de los hijos de Rubén conforme á sus familias, estas ciudades con sus villas."
+    },
+    {
+     "n": 24,
+     "texto": "Dió asimismo Moisés á la tribu de Gad, á los hijos de Gad, conforme á sus familias."
+    },
+    {
+     "n": 25,
+     "texto": "Y el término de ellos fué Jacer, y todas las ciudades de Galaad, y la mitad de la tierra de los hijos de Ammón hasta Aroer, que está delante de Rabba."
+    },
+    {
+     "n": 26,
+     "texto": "Y desde Hesbón hasta Ramathmispe, y Betonim; y desde Mahanaim hasta el término de Debir:"
+    },
+    {
+     "n": 27,
+     "texto": "Y la campiña de Beth-aram, y Beth-nimra, y Sucoth, y Saphón, resto del reino de Sehón, rey en Hesbón: el Jordán y su término hasta el cabo de la mar de Cinnereth de la otra parte del Jordán al oriente."
+    },
+    {
+     "n": 28,
+     "texto": "Esta es la herencia de los hijos de Gad, por sus familias, estas ciudades con sus villas."
+    },
+    {
+     "n": 29,
+     "texto": "También dió Moisés [herencia] á la media tribu de Manasés: y fué de la media tribu de los hijos de Manasés, conforme á sus familias."
+    },
+    {
+     "n": 30,
+     "texto": "El término de ellos fué desde Mahanaim, todo Basán, todo el reino de Og rey de Basán, y todas las aldeas de Jair que están en Basán, sesenta poblaciones."
+    },
+    {
+     "n": 31,
+     "texto": "[Dióse] además la mitad de Galaad, y Astaroth, y Edrei, ciudades del reino de Og en Basán, á los hijos de Machîr, hijo de Manasés, á la mitad de los hijos de Machîr conforme á sus familias."
+    },
+    {
+     "n": 32,
+     "texto": "Esto es lo que Moisés repartió en heredad en los llanos de Moab, de la otra parte del Jordán de Jericó, al oriente."
+    },
+    {
+     "n": 33,
+     "texto": "Mas á la tribu de Leví no dió Moisés heredad: Jehová Dios de Israel es la heredad de ellos como él les había dicho."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 14,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTO pues es lo que los hijos de Israel tomaron por heredad en la tierra de Canaán, lo cual les repartieron Eleazar sacerdote, y Josué hijo de Nun, y los principales de los padres de las tribus de los hijos de Israel."
+    },
+    {
+     "n": 2,
+     "texto": "Por suerte [dióseles] su heredad, como Jehová lo había mandado por Moisés, que diese á las nueve tribus, y á la media tribu."
+    },
+    {
+     "n": 3,
+     "texto": "Porque á las dos tribus, y á la media tribu, les había Moisés dado heredad de la otra parte del Jordán: mas á los Levitas no dió heredad entre ellos."
+    },
+    {
+     "n": 4,
+     "texto": "Porque los hijos de José fueron dos tribus, Manasés y Ephraim: y no dieron parte á los Levitas en la tierra, sino ciudades en que morasen, con sus ejidos para sus ganados y rebaños."
+    },
+    {
+     "n": 5,
+     "texto": "De la manera que Jehová lo había mandado á Moisés, así lo hicieron los hijos de Israel en el repartimiento de la tierra."
+    },
+    {
+     "n": 6,
+     "texto": "Y los hijos de Judá vinieron á Josué en Gilgal; y Caleb, hijo de Jephone Cenezeo, le dijo: Tú sabes lo que Jehová dijo á Moisés, varón de Dios, en Cades-barnea, tocante á mí y á ti."
+    },
+    {
+     "n": 7,
+     "texto": "Yo era de edad de cuarenta años, cuando Moisés siervo de Jehová me envió de Cades-barnea á reconocer la tierra; y yo le referí el negocio como lo tenía en mi corazón:"
+    },
+    {
+     "n": 8,
+     "texto": "Mas mis hermanos, los que habían subido conmigo, menguaron el corazón del pueblo; empero yo cumplí siguiendo á Jehová mi Dios."
+    },
+    {
+     "n": 9,
+     "texto": "Entonces Moisés juró, diciendo: Si la tierra que holló tu pie no fuere para ti, y para tus hijos en herencia perpetua: por cuanto cumpliste siguiendo á Jehová mi Dios."
+    },
+    {
+     "n": 10,
+     "texto": "Ahora bien, Jehová me ha hecho vivir, como él dijo, estos cuarenta y cinco años, desde el tiempo que Jehová habló estas palabras á Moisés, cuando Israel andaba por el desierto: y ahora, he aquí, soy hoy día de ochenta y cinco años:"
+    },
+    {
+     "n": 11,
+     "texto": "Pero aun hoy estoy tan fuerte como el día que Moisés me envió: cual era entonces mi fuerza, tal es ahora, para la guerra, y para salir y para entrar."
+    },
+    {
+     "n": 12,
+     "texto": "Dame, pues, ahora este monte, del cual habló Jehová aquel día; porque tú oiste en aquel día que los Anaceos están allí, y grandes y fuertes ciudades. Quizá Jehová será conmigo, y los echaré como Jehová ha dicho."
+    },
+    {
+     "n": 13,
+     "texto": "Josué entonces le bendijo, y dió á Caleb hijo de Jephone á Hebrón por heredad."
+    },
+    {
+     "n": 14,
+     "texto": "Por tanto Hebrón fué de Caleb, hijo de Jephone Cenezeo, en heredad hasta hoy; porque cumplió siguiendo á Jehová Dios de Israel."
+    },
+    {
+     "n": 15,
+     "texto": "Mas Hebrón fué antes llamada Chîriath-arba; fué [Arba] un hombre grande entre los Anaceos. Y la tierra tuvo reposo de las guerras."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 15,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y FUÉ la suerte de la tribu de los hijos de Judá, por sus familias, junto al término de Edom, del desierto de Zin al mediodía, al lado del sur."
+    },
+    {
+     "n": 2,
+     "texto": "Y su término de la parte del mediodía fué desde la costa del mar Salado, desde la lengua que mira hacia el mediodía;"
+    },
+    {
+     "n": 3,
+     "texto": "Y salía hacia el mediodía á la subida de Acrabim, pasando hasta Zin; y subiendo por el mediodía hasta Cades-barnea, pasaba á Hebrón, y subiendo por Addar daba vuelta á Carca;"
+    },
+    {
+     "n": 4,
+     "texto": "De allí pasaba á Azmón, y salía al arroyo de Egipto; y sale este término al occidente. Este pues os será el término del mediodía."
+    },
+    {
+     "n": 5,
+     "texto": "El término del oriente es el mar Salado hasta el fin del Jordán. Y el término de la parte del norte, desde la lengua del mar, desde el fin del Jordán:"
+    },
+    {
+     "n": 6,
+     "texto": "Y sube este término por Beth-hogla, y pasa del norte á Beth-araba, y de aquí sube este término á la piedra de Bohán, hijo de Rubén."
+    },
+    {
+     "n": 7,
+     "texto": "Y torna á subir este término á Debir desde el valle de Achôr: y al norte mira sobre Gilgal, que está delante de la subida de Adumin, la cual está al mediodía del arroyo: y pasa este término á las aguas de En-semes, y sale á la fuente de Rogel:"
+    },
+    {
+     "n": 8,
+     "texto": "Y sube este término por el valle del hijo de Hinnom al lado del Jebuseo al mediodía: esta es Jerusalem. Luego sube este término por la cumbre del monte que está delante del valle de Hinnom hacia el occidente, el cual está al cabo del valle de los gigantes al norte:"
+    },
+    {
+     "n": 9,
+     "texto": "Y rodea este término desde la cumbre del monte hasta la fuente de las aguas de Nephtoa, y sale á la ciudades del monte de Ephrón, rodeando luego el mismo término á Baala, la cual es Chîriath-jearim."
+    },
+    {
+     "n": 10,
+     "texto": "Después torna este término desde Baala hacia el occidente al monte de Seir: y pasa al lado del monte de Jearim hacia el norte, esta es Chesalón, y desciende á Beth-semes, y pasa á Timna."
+    },
+    {
+     "n": 11,
+     "texto": "Sale luego este término al lado de Ecrón hacia el norte; y rodea el mismo término á Sichêron, y pasa por el monte de Baala, y sale á Jabneel: y sale este término á la mar."
+    },
+    {
+     "n": 12,
+     "texto": "El término del occidente es la mar grande. Este pues, es el término de los hijos de Judá en derredor, por sus familias."
+    },
+    {
+     "n": 13,
+     "texto": "Mas á Caleb, hijo de Jephone, dió parte entre los hijos de Judá, conforme al mandamiento de Jehová á Josué: [esto es], á Chîriath-arba, del padre de Anac, que es Hebrón."
+    },
+    {
+     "n": 14,
+     "texto": "Y Caleb echó de allí tres hijos de Anac, á Sesai, Aiman, y Talmai, hijos de Anac."
+    },
+    {
+     "n": 15,
+     "texto": "De aquí subió á los que moraban en Debir: y el nombre de Debir era antes Chîriath-sepher."
+    },
+    {
+     "n": 16,
+     "texto": "Y dijo Caleb: Al que hiriere á Chîriath-sepher, y la tomare, yo le daré á mi hija Axa por mujer."
+    },
+    {
+     "n": 17,
+     "texto": "Y tomóla Othoniel, hijo de Cenez, hermano de Caleb; y él le dió por mujer á su hija Axa."
+    },
+    {
+     "n": 18,
+     "texto": "Y aconteció que cuando la llevaba, él la persuadió que pidiese á su padre tierras para labrar. Ella entonces se apeó del asno. Y Caleb le dijo: ¿Qué tienes?"
+    },
+    {
+     "n": 19,
+     "texto": "Y ella respondió: Dame bendición: pues que me has dado tierra de secadal, dame también fuentes de aguas. El entonces le dió las fuentes de arriba, y las de abajo."
+    },
+    {
+     "n": 20,
+     "texto": "Esta pues es la herencia de la tribu de los hijos de Judá por sus familias."
+    },
+    {
+     "n": 21,
+     "texto": "Y fueron las ciudades del término de la tribu de los hijos de Judá hacia el término de Edom al mediodía: Cabseel, y Eder, y Jagur,"
+    },
+    {
+     "n": 22,
+     "texto": "Y Cina, y Dimona, y Adada,"
+    },
+    {
+     "n": 23,
+     "texto": "Y Cedes, y Asor, é Itnán,"
+    },
+    {
+     "n": 24,
+     "texto": "Ziph, y Telem, y Bealoth,"
+    },
+    {
+     "n": 25,
+     "texto": "Y Asor-hadatta, y Chêrioth-hesron, que es Asor,"
+    },
+    {
+     "n": 26,
+     "texto": "Amam, y Sema, y Molada,"
+    },
+    {
+     "n": 27,
+     "texto": "Y Asar-gadda, y Hesmón, y Beth-pelet,"
+    },
+    {
+     "n": 28,
+     "texto": "Y Hasar-sual, Beersebah, y Bizotia,"
+    },
+    {
+     "n": 29,
+     "texto": "Baala, é Iim, y Esem,"
+    },
+    {
+     "n": 30,
+     "texto": "Y Eltolad, y Cesil, y Horma,"
+    },
+    {
+     "n": 31,
+     "texto": "Y Siclag, y Madmanna, Sansana,"
+    },
+    {
+     "n": 32,
+     "texto": "Y Lebaoth, Silim, y Aín, y Rimmón; en todas veintinueve ciudades con sus aldeas."
+    },
+    {
+     "n": 33,
+     "texto": "En las llanuras, Estaol, y Sorea, y Asena,"
+    },
+    {
+     "n": 34,
+     "texto": "Y Zanoa, y Engannim, Tappua, y Enam,"
+    },
+    {
+     "n": 35,
+     "texto": "Jerimoth, y Adullam, Sochô, y Aceca,"
+    },
+    {
+     "n": 36,
+     "texto": "Y Saraim, y Adithaim, y Gedera, y Gederothaim; catorce ciudades con sus aldeas."
+    },
+    {
+     "n": 37,
+     "texto": "Senán, y Hadasa, y Migdalgad,"
+    },
+    {
+     "n": 38,
+     "texto": "Y Dilán, y Mizpa, y Jocteel,"
+    },
+    {
+     "n": 39,
+     "texto": "Lachîs, y Boscath, y Eglón,"
+    },
+    {
+     "n": 40,
+     "texto": "Y Cabón, y Lamas, y Chîtlis,"
+    },
+    {
+     "n": 41,
+     "texto": "Y Gederoh, Beth-dagón, y Naama, y Maceda; dieciséis ciudades con sus aldeas."
+    },
+    {
+     "n": 42,
+     "texto": "Libna, y Ether, y Asán,"
+    },
+    {
+     "n": 43,
+     "texto": "Y Jiphta, y Asna, y Nesib,"
+    },
+    {
+     "n": 44,
+     "texto": "Y Ceila, y Achzib, y Maresa; nueve ciudades con sus aldeas."
+    },
+    {
+     "n": 45,
+     "texto": "Ecrón con sus villas y sus aldeas:"
+    },
+    {
+     "n": 46,
+     "texto": "Desde Ecrón hasta la mar, todas las que están á la costa de Asdod con sus aldeas."
+    },
+    {
+     "n": 47,
+     "texto": "Asdod con sus villas y sus aldeas: Gaza con sus villas y sus aldeas hasta el río de Egipto, y la gran mar con sus términos."
+    },
+    {
+     "n": 48,
+     "texto": "Y en las montañas, Samir, y Jattir, y Succoth,"
+    },
+    {
+     "n": 49,
+     "texto": "Y Danna, y Chîriath-sanna, que es Debir,"
+    },
+    {
+     "n": 50,
+     "texto": "Y Anab, y Estemo, y Anim,"
+    },
+    {
+     "n": 51,
+     "texto": "Y Gosén, y Olón, y Gilo; once ciudades con sus aldeas."
+    },
+    {
+     "n": 52,
+     "texto": "Arab, y Dumah, y Esán,"
+    },
+    {
+     "n": 53,
+     "texto": "Y Janum, y Beth-tappua, y Apheca,"
+    },
+    {
+     "n": 54,
+     "texto": "Y Humta, y Chîriath-arba, que es Hebrón, y Sior; nueve ciudades con sus aldeas."
+    },
+    {
+     "n": 55,
+     "texto": "Maón, Carmel, y Ziph, y Juta,"
+    },
+    {
+     "n": 56,
+     "texto": "E Izreel, Jocdeam, y Zanoa,"
+    },
+    {
+     "n": 57,
+     "texto": "Caín, Gibea, y Timna; diez ciudades con sus aldeas."
+    },
+    {
+     "n": 58,
+     "texto": "Halhul, y Bethfur, y Gedor,"
+    },
+    {
+     "n": 59,
+     "texto": "Y Maarath, y Beth-anoth, y Eltecón; seis ciudades con sus aldeas."
+    },
+    {
+     "n": 60,
+     "texto": "Chîriath-baal, que es Chîriath-jearim, y Rabba; dos ciudades con sus aldeas."
+    },
+    {
+     "n": 61,
+     "texto": "En el desierto, Beth-araba, Middín, y Sechâchâ,"
+    },
+    {
+     "n": 62,
+     "texto": "Y Nibsan, y la ciudad de la sal, y Engedi; seis ciudades con sus aldeas."
+    },
+    {
+     "n": 63,
+     "texto": "Mas á los Jebuseos que habitaban en Jerusalem, los hijos de Judá no los pudieron desarraigar; antes quedó el Jebuseo en Jerusalem con los hijos de Judá, hasta hoy."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 16,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LA suerte del los hijos de José salió desde el Jordán de Jericó hasta las aguas de Jericó hacia el oriente, al desierto que sube de Jericó al monte de Beth-el:"
+    },
+    {
+     "n": 2,
+     "texto": "Y de Beth-el sale á Luz, y pasa al término de Archi en Ataroth;"
+    },
+    {
+     "n": 3,
+     "texto": "Y torna á descender hacia la mar al término de Japhlet, hasta el término de Beth-oron la de abajo, y hasta Gezer; y sale á la mar."
+    },
+    {
+     "n": 4,
+     "texto": "Recibieron pues heredad los hijos de José, Manasés y Ephraim."
+    },
+    {
+     "n": 5,
+     "texto": "Y fué el término de los hijos de Ephraim por sus familias, fué el término de su herencia á la parte oriental, [desde] Ataroth-addar hasta Beth-oron la de arriba:"
+    },
+    {
+     "n": 6,
+     "texto": "Y sale este término á la mar, y á Michmetat al norte, y da vuelta este término hacia el oriente á Tanath-silo, y de aquí pasa del oriente á Janoa:"
+    },
+    {
+     "n": 7,
+     "texto": "Y de Janoa desciende á Ataroth, y á Naaratha, y toca en Jericó, y sale al Jordán."
+    },
+    {
+     "n": 8,
+     "texto": "Y de Tappua torna este término hacia la mar al arroyo de Cana, y sale á la mar. Esta es la heredad de la tribu de los hijos de Ephraim por sus familias."
+    },
+    {
+     "n": 9,
+     "texto": "Hubo también ciudades que se apartaron para los hijos de Ephraim en medio de la herencia de los hijos de Manasés, todas ciudades con sus aldeas."
+    },
+    {
+     "n": 10,
+     "texto": "Y no echaron al Cananeo que habitaba en Gezer; antes quedó el Cananeo en medio de Ephraim, hasta hoy, y fué tributario."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 17,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y TUVO también suerte la tribu de Manasés, porque fué primogénito de José. Machîr, primogénito de Manasés, [y] padre de Galaad, el cual fué hombre de guerra, tuvo á Galaad y á Basán."
+    },
+    {
+     "n": 2,
+     "texto": "Tuvieron también [suerte] los otros hijos de Manasés conforme á sus familias: los hijos de Abiezer, y los hijos de Helec, y los hijos de Esriel, y los hijos de Sichêm, y los hijos de Hepher, y los hijos de Semida; estos fueron los hijos varones de Manasés hijo de José, por sus familias."
+    },
+    {
+     "n": 3,
+     "texto": "Pero Salphaad, hijo de Hepher, hijo de Galaad, hijo de Machîr, hijo de Manasés, no tuvo hijos, sino hijas, los nombres de las cuales son estos: Maala, Noa, Hogla, Milchâ, y Tirsa."
+    },
+    {
+     "n": 4,
+     "texto": "Estas vinieron delante de Eleazar sacerdote, y de Josué hijo de Nun, y de los príncipes, y dijeron: Jehová mandó á Moisés que nos diese herencia entre nuestros hermanos. Y él les dió herencia entre los hermanos del padre de ellas, conforme al dicho de Jehová."
+    },
+    {
+     "n": 5,
+     "texto": "Y cayeron á Manasés diez suertes á más de la tierra de Galaad y de Basán, que está de la otra parte del Jordán:"
+    },
+    {
+     "n": 6,
+     "texto": "Porque las hijas de Manasés poseyeron herencia entre sus hijos: y la tierra de Galaad fué de los otros hijos de Manasés."
+    },
+    {
+     "n": 7,
+     "texto": "Y fué el término de Manasés desde Aser hasta Michmetat, la cual está delante de Sichêm; y va este término á la mano derecha, á los que habitan en Tappua."
+    },
+    {
+     "n": 8,
+     "texto": "Y la tierra de Tappua fué de Manasés; pero Tappua, que está junto al término de Manasés, es de los hijos de Ephraim."
+    },
+    {
+     "n": 9,
+     "texto": "Y desciende este término al arroyo de Cana, hacia el mediodía del arroyo. Estas ciudades de Ephraim están entre las ciudades de Manasés: y el término de Manasés es desde el norte del mismo arroyo, y sus salidas son á la mar."
+    },
+    {
+     "n": 10,
+     "texto": "Ephraim al mediodía, y Manasés al norte, y la mar es su término: y encuéntranse con Aser á la parte del norte, y con Issachâr al oriente."
+    },
+    {
+     "n": 11,
+     "texto": "Tuvo también Manasés en Issachâr y en Aser á Beth-san y sus aldeas, é Ibleam y sus aldeas, y los moradores de Dor y sus aldeas, y los moradores de Endor y sus aldeas, y los moradores de Taanach y sus aldeas, y los moradores de Megiddo y sus aldeas: tres provincias."
+    },
+    {
+     "n": 12,
+     "texto": "Mas los hijos de Manasés no pudieron echar [á los] de aquellas ciudades; antes el Cananeo quiso habitar en la tierra."
+    },
+    {
+     "n": 13,
+     "texto": "Empero cuando los hijos de Israel tomaron fuerzas, hicieron tributario al Cananeo, mas no lo echaron."
+    },
+    {
+     "n": 14,
+     "texto": "Y los hijos de José hablaron á Josué, diciendo: ¿Por qué me has dado por heredad una sola suerte y una sola parte, siendo yo un pueblo tan grande y que Jehová me ha así bendecido hasta ahora?"
+    },
+    {
+     "n": 15,
+     "texto": "Y Josué les respondió: Si eres pueblo tan grande, sube tú al monte, y corta para ti allí en la tierra del Pherezeo y de los gigantes, pues que el monte de Ephraim es angosto para ti."
+    },
+    {
+     "n": 16,
+     "texto": "Y los hijos de José dijeron: No nos bastará á nosotros [este] monte: y todos los Cananeos que habitan la tierra de la campiña, tienen carros herrados; los que están en Beth-san y en sus aldeas, y los que están en el valle de Jezreel."
+    },
+    {
+     "n": 17,
+     "texto": "Entonces Josué respondió á la casa de José, á Ephraim y Manasés, diciendo: Tú eres gran pueblo, y tienes gran fuerza; no tendrás una sola suerte;"
+    },
+    {
+     "n": 18,
+     "texto": "Mas aquel monte será tuyo; que bosque es, y tú lo cortarás, y serán tuyos sus términos: porque tú echarás al Cananeo, aunque tenga carros herrados, y aunque sea fuerte."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 18,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y TODA la congregación de los hijos de Israel se juntó en Silo, y asentaron allí el tabernáculo del testimonio, después que la tierra les fué sujeta."
+    },
+    {
+     "n": 2,
+     "texto": "Mas habían quedado en los hijos de Israel siete tribus, á las cuales aun no habían repartido su posesión."
+    },
+    {
+     "n": 3,
+     "texto": "Y Josué dijo á los hijos de Israel: ¿Hasta cuándo seréis negligentes para venir á poseer la tierra que os ha dado Jehová el Dios de vuestros padres?"
+    },
+    {
+     "n": 4,
+     "texto": "Señalad tres varones de cada tribu, para que yo los envíe, y que ellos se levanten, y recorran la tierra, y la describan conforme á sus heredades, y se tornen á mí."
+    },
+    {
+     "n": 5,
+     "texto": "Y la dividirán en siete partes: y Judá estará en su término al mediodía, y [los de] la casa de José estarán en el suyo al norte."
+    },
+    {
+     "n": 6,
+     "texto": "Vosotros, pues, delinearéis la tierra en siete partes, y me traeréis la [descripción] aquí, y yo os echaré las suertes aquí delante de Jehová nuestro Dios."
+    },
+    {
+     "n": 7,
+     "texto": "Empero los Levitas ninguna parte tienen entre vosotros; porque el sacerdocio de Jehová es la heredad de ellos: Gad también y Rubén, y la media tribu de Manasés, ya han recibido su heredad de la otra parte del Jordán al oriente, la cual les dió Moisés siervo de Jehová."
+    },
+    {
+     "n": 8,
+     "texto": "Levantándose pues aquellos varones, fueron: y mandó Josué á los que iban para delinear la tierra, diciéndoles: Id, recorred la tierra, y delineadla, y tornad á mí, para que yo os eche las suertes aquí delante de Jehová en Silo."
+    },
+    {
+     "n": 9,
+     "texto": "Fueron pues aquellos varones y pasearon la tierra, delineándola por ciudades en siete partes en un libro, y tornaron á Josué al campo en Silo."
+    },
+    {
+     "n": 10,
+     "texto": "Y Josué les echó las suertes delante de Jehová en Silo; y allí repartió Josué la tierra á los hijos de Israel por sus porciones."
+    },
+    {
+     "n": 11,
+     "texto": "Y sacóse la suerte de la tribu de los hijos de Benjamín por sus familias: y salió el término de su suerte entre los hijos de Judá y los hijos de José."
+    },
+    {
+     "n": 12,
+     "texto": "Y fué el término de ellos al lado del norte desde el Jordán: y sube aquel término al lado de Jericó al norte; sube después al monte hacia el occidente, y viene á salir al desierto de Beth-aven:"
+    },
+    {
+     "n": 13,
+     "texto": "Y de allí pasa aquel término á Luz, por el lado de Luz (esta es Beth-el) hacia el mediodía. Y desciende este término de Ataroth-addar al monte que está al mediodía de Beth-oron la de abajo."
+    },
+    {
+     "n": 14,
+     "texto": "Y torna este término, y da vuelta al lado de la mar, al mediodía hasta el monte que está delante de Beth-oron al mediodía; y viene á salir á Chîriath-baal, que es Chîriath-jearim, ciudad de los hijos de Judá. Este es el lado del occidente."
+    },
+    {
+     "n": 15,
+     "texto": "Y el lado del mediodía es desde el cabo de Chîriath-jearim, y sale el término al occidente, y sale á la fuente de las aguas de Nephtoa:"
+    },
+    {
+     "n": 16,
+     "texto": "Y desciende aqueste término al cabo del monte que está delante del valle del hijo de Hinnom, que está en la campiña de los gigantes hacia el norte: desciende luego al valle de Hinnom, al lado del Jebuseo al mediodía, y [de allí] desciende á la fuente de Rogel:"
+    },
+    {
+     "n": 17,
+     "texto": "Y del norte torna y sale á Ensemes, y [de allí] sale á Geliloth, que está delante de la subida de Adummim, y descendía á la piedra de Bohan, hijo de Rubén:"
+    },
+    {
+     "n": 18,
+     "texto": "Y pasa al lado que está delante de la campiña del norte, y desciende á los llanos:"
+    },
+    {
+     "n": 19,
+     "texto": "Y torna á pasar este término por el lado de Beth-hogla hacia el norte, y viene á salir el término á la lengua del mar Salado al norte, al cabo del Jordán al mediodía. Este es el término de hacia el mediodía."
+    },
+    {
+     "n": 20,
+     "texto": "Y el Jordán acaba aqueste término al lado del oriente. Esta es la heredad de los hijos de Benjamín por sus términos alrededor, conforme á sus familias."
+    },
+    {
+     "n": 21,
+     "texto": "Las ciudades de la tribu de los hijos de Benjamín, por sus familias, fueron Jericó, Beth-hogla, y el valle de Casis,"
+    },
+    {
+     "n": 22,
+     "texto": "Beth-araba, Samaraim, y Beth-el;"
+    },
+    {
+     "n": 23,
+     "texto": "Y Avim, y Para, y Ophra,"
+    },
+    {
+     "n": 24,
+     "texto": "Y Cephar-hammonai, Ophni, y Gaba; doce ciudades con sus aldeas:"
+    },
+    {
+     "n": 25,
+     "texto": "Gabaón, Rama, Beeroth,"
+    },
+    {
+     "n": 26,
+     "texto": "Y Mizpa, Chephira, y Moza,"
+    },
+    {
+     "n": 27,
+     "texto": "Recom, Irpeel y Tarala,"
+    },
+    {
+     "n": 28,
+     "texto": "Y Sela, Eleph, Jebus, que es Jerusalem, Gibeath, y Chîriath; catorce ciudades con sus aldeas. Esta es la heredad de los hijos de Benjamín, conforme á sus familias."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 19,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "LA SEGUNDA suerte salió por Simeón, por la tribu de los hijos de Simeón conforme á sus familias; y su heredad fué entre la heredad de los hijos de Judá."
+    },
+    {
+     "n": 2,
+     "texto": "Y tuvieron en su heredad á Beer-seba, Seba, y Molada,"
+    },
+    {
+     "n": 3,
+     "texto": "Hasar-sual, Bala, y Esem,"
+    },
+    {
+     "n": 4,
+     "texto": "Heltolad, Betul, y Horma,"
+    },
+    {
+     "n": 5,
+     "texto": "Siclag, Beth-marchâboth, y Hasar-susa,"
+    },
+    {
+     "n": 6,
+     "texto": "Beth-lebaoth, y Saruhén; trece ciudades con sus aldeas:"
+    },
+    {
+     "n": 7,
+     "texto": "Aín, Rimmón, Eter, y Asán; cuatro ciudades con sus aldeas:"
+    },
+    {
+     "n": 8,
+     "texto": "Y todas las aldeas que estaban alrededor de estas ciudades hasta Baalath-beer, [que es] Ramat del mediodía. Esta es la heredad de la tribu de los hijos de Simeón, según sus familias."
+    },
+    {
+     "n": 9,
+     "texto": "De la suerte de los hijos de Judá fué [sacada] la heredad de los hijos de Simeón; por cuanto la parte de los hijos de Judá era excesiva para ellos: así que los hijos de Simeón tuvieron su heredad en medio de la de ellos."
+    },
+    {
+     "n": 10,
+     "texto": "La tercera suerte salió por los hijos de Zabulón conforme á sus familias: y el término de su heredad fué hasta Sarid."
+    },
+    {
+     "n": 11,
+     "texto": "Y su término sube hasta la mar y hasta Merala, y llega hasta Dabbe-seth, y [de allí] llega al arroyo que está delante de Jocneam;"
+    },
+    {
+     "n": 12,
+     "texto": "Y tornando de Sarid hacia oriente, donde nace el sol al término de Chisiloth-tabor, sale á Dabrath, y sube á Japhia;"
+    },
+    {
+     "n": 13,
+     "texto": "Y pasando de allí hacia el lado oriental á Gith-hepher y á Itta-kazin, sale á Rimmón rodeando á Nea;"
+    },
+    {
+     "n": 14,
+     "texto": "Y de [aquí] torna este término al norte á Hanatón, viniendo á salir al valle de Iphtael;"
+    },
+    {
+     "n": 15,
+     "texto": "Y [abraza] Catah, y Naalal, y Simrón, é Ideala, y Beth-lehem; doce ciudades con sus aldeas."
+    },
+    {
+     "n": 16,
+     "texto": "Esta es la heredad de los hijos de Zabulón por sus familias; estas ciudades con sus aldeas."
+    },
+    {
+     "n": 17,
+     "texto": "La cuarta suerte salió por Issachâr, por los hijos de Issachâr conforme á sus familias."
+    },
+    {
+     "n": 18,
+     "texto": "Y fué su término Izreel, y Chesullot, y Sunem,"
+    },
+    {
+     "n": 19,
+     "texto": "Y Hapharaim, y Sión, y Anaarath,"
+    },
+    {
+     "n": 20,
+     "texto": "Y Rabbit, y Chisión, y Ebes,"
+    },
+    {
+     "n": 21,
+     "texto": "Y Rameth, y En-gannim, y En-hadda y Beth-passes;"
+    },
+    {
+     "n": 22,
+     "texto": "Y llega este término hasta Tabor, y Sahasim, y Beth-semes; y sale su término al Jordán: diez y seis ciudades con sus aldeas."
+    },
+    {
+     "n": 23,
+     "texto": "Esta es la heredad de la tribu de los hijos de Issachâr conforme á sus familias; estas ciudades con sus aldeas."
+    },
+    {
+     "n": 24,
+     "texto": "Y salió la quinta suerte por la tribu de los hijos de Aser por sus familias."
+    },
+    {
+     "n": 25,
+     "texto": "Y su término fué Helchât, y Halí, y Betén, y Axaph,"
+    },
+    {
+     "n": 26,
+     "texto": "Y Alammelec, y Amead, y Miseal; y llega hasta Carmel al occidente, y á Sihor-libnath;"
+    },
+    {
+     "n": 27,
+     "texto": "Y tornando de donde nace el sol á Beth-dagón, llega á Zabulón, y al valle de Iphtael al norte, á Beth-emec, y á Nehiel, y sale á Cabul á la izquierda;"
+    },
+    {
+     "n": 28,
+     "texto": "Y [abraza] á Hebrón, y Rehob, y Hammón, y Cana, hasta la gran Sidón;"
+    },
+    {
+     "n": 29,
+     "texto": "Y torna [de allí] este término á Horma, y hasta la fuerte ciudad de Tiro, y torna este término á Hosa, y sale á la mar desde el territorio de Achzib:"
+    },
+    {
+     "n": 30,
+     "texto": "[Abraza] también Umma, y Aphec, y Rehob: veinte y dos ciudades con sus aldeas."
+    },
+    {
+     "n": 31,
+     "texto": "Esta es la heredad de la tribu de los hijos de Aser por sus familias; estas ciudades con sus aldeas."
+    },
+    {
+     "n": 32,
+     "texto": "La sexta suerte salió por los hijos de Nephtalí, por los hijos de Nephtalí conforme á sus familias."
+    },
+    {
+     "n": 33,
+     "texto": "Y fué su término desde Heleph, y Allón-saananim, y Adami-neceb, y Jabneel, hasta Lacum; y sale al Jordán;"
+    },
+    {
+     "n": 34,
+     "texto": "Y tornando [de allí] este término hacia el occidente á Aznot-tabor, pasa de allí á Hucuca, y llega hasta Zabulón al mediodía, y al occidente confina con Aser, y con Judá al Jordán hacia donde nace el sol."
+    },
+    {
+     "n": 35,
+     "texto": "Y las ciudades fuertes son Siddim, Ser, y Hamath, Raccath, y Cinneroth,"
+    },
+    {
+     "n": 36,
+     "texto": "Y Adama, y Rama, y Asor,"
+    },
+    {
+     "n": 37,
+     "texto": "Y Cedes, y Edrei, y En-hasor,"
+    },
+    {
+     "n": 38,
+     "texto": "E Irón, y Migdalel, y Horem, y Beth-anath, y Beth-semes: diez y nueve ciudades con sus aldeas."
+    },
+    {
+     "n": 39,
+     "texto": "Esta es la heredad de la tribu de los hijos de Nephtalí por sus familias; estas ciudades con sus aldeas."
+    },
+    {
+     "n": 40,
+     "texto": "La séptima suerte salió por la tribu de los hijos de Dan por sus familias."
+    },
+    {
+     "n": 41,
+     "texto": "Y fué el término de su heredad, Sora, y Estaol, é Ir-semes,"
+    },
+    {
+     "n": 42,
+     "texto": "Y Saalabín, y Ailón, y Jeth-la,"
+    },
+    {
+     "n": 43,
+     "texto": "Y Elón, y Timnatha, y Ecrón,"
+    },
+    {
+     "n": 44,
+     "texto": "Y Eltechê, Gibbethón, y Baalath,"
+    },
+    {
+     "n": 45,
+     "texto": "Y Jehud, y Bene-berác, y Gath-rimmón,"
+    },
+    {
+     "n": 46,
+     "texto": "Y Mejarcón, y Raccón, con el término que está delante de Joppa."
+    },
+    {
+     "n": 47,
+     "texto": "Y faltóles término á los hijos de Dan; y subieron los hijos de Dan y combatieron á Lesem, y tomándola metiéronla á filo de espada, y la poseyeron, y habitaron en ella; y llamaron á Lesem, Dan, del nombre de Dan su padre."
+    },
+    {
+     "n": 48,
+     "texto": "Esta es la heredad de la tribu de los hijos de Dan conforme á sus familias; estas ciudades con sus aldeas."
+    },
+    {
+     "n": 49,
+     "texto": "Y después que acabaron de repartir la tierra en heredad por sus términos, dieron los hijos de Israel heredad á Josué hijo de Nun en medio de ellos:"
+    },
+    {
+     "n": 50,
+     "texto": "Según la palabra de Jehová, le dieron la ciudad que él pidió, Timnath-sera, en el monte de Ephraim; y él reedificó la ciudad, y habitó en ella."
+    },
+    {
+     "n": 51,
+     "texto": "Estas son las heredades que Eleazar sacerdote, y Josué hijo de Nun, y los principales de los padres, entregaron por suerte en posesión á las tribus de los hijos de Israel en Silo delante de Jehová, á la entrada del tabernáculo del testimonio; y acabaron de repartir la tierra."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 20,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Jehová á Josué, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Habla á los hijos de Israel, diciendo: Señalaos las ciudades de refugio, de las cuales yo os hablé por Moisés;"
+    },
+    {
+     "n": 3,
+     "texto": "Para que se acoja allí el homicida que matare á alguno por yerro y no á sabiendas; que os sean por acogimiento del cercano del muerto."
+    },
+    {
+     "n": 4,
+     "texto": "Y el que se acogiere á alguna de aquellas ciudades, presentaráse á la puerta de la ciudad, y dirá sus causas, oyéndolo los ancianos de aquella ciudad: y ellos le recibirán consigo dentro de la ciudad, y le darán lugar que habite con ellos."
+    },
+    {
+     "n": 5,
+     "texto": "Y cuando el cercano del muerto le siguiere, no entregarán en su mano al homicida, por cuanto hirió á su prójimo por yerro, ni tuvo con él antes enemistad."
+    },
+    {
+     "n": 6,
+     "texto": "Y quedará en aquella ciudad hasta que parezca en juicio delante del ayuntamiento, hasta la muerte del gran sacerdote que fuere en aquel tiempo: entonces el homicida tornará y vendrá á su ciudad y á su casa y á la ciudad de donde huyó."
+    },
+    {
+     "n": 7,
+     "texto": "Entonces señalaron á Cedes en Galilea, en el monte de Nephtalí, y á Sichêm en el monte de Ephraim, y á Chîriath-arba, que es Hebrón, en el monte de Judá."
+    },
+    {
+     "n": 8,
+     "texto": "Y de la otra parte del Jordán de Jericó, al oriente, señalaron á Beser en el desierto, en la llanura de la tribu de Rubén, y á Ramoth en Galaad de la tribu de Gad, y á Gaulón en Basán de la tribu de Manasés."
+    },
+    {
+     "n": 9,
+     "texto": "Estas fueron las ciudades señaladas para todos los hijos de Israel, y para el extranjero que morase entre ellos, para que se acogiese á ellas cualquiera que hiriese hombre por yerro, y no muriese por mano del cercano del muerto, hasta que compareciese delante del ayuntamiento."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 21,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LOS principales de los padres de los Levitas vinieron á Eleazar sacerdote, y á Josué hijo de Nun, y á los principales de los padres de las tribus de los hijos de Israel;"
+    },
+    {
+     "n": 2,
+     "texto": "Y habláronles en Silo en la tierra de Canaán, diciendo: Jehová mandó por Moisés que nos fuesen dadas villas para habitar, con sus ejidos para nuestras bestias."
+    },
+    {
+     "n": 3,
+     "texto": "Entonces los hijos de Israel dieron á los Levitas de sus posesiones, conforme á la palabra de Jehová, estas villas con sus ejidos."
+    },
+    {
+     "n": 4,
+     "texto": "Y salió la suerte por las familias de los Coathitas; y fueron dadas por suerte á los hijos de Aarón sacerdote, que eran de los Levitas, por la tribu de Judá, por la de Simeón y por la de Benjamín, trece villas."
+    },
+    {
+     "n": 5,
+     "texto": "Y á los otros hijos de Coath se dieron por suerte diez villas de las familias de la tribu de Ephraim, y de la tribu de Dan, y de la media tribu de Manasés;"
+    },
+    {
+     "n": 6,
+     "texto": "Y á los hijos de Gersón, por las familias de la tribu de Issachâr, y de la tribu de Aser, y de la tribu de Nephtalí, y de la media tribu de Manasés en Basán, fueron dadas por suerte trece villas."
+    },
+    {
+     "n": 7,
+     "texto": "A los hijos de Merari por sus familias se dieron doce villas por la tribu de Rubén, y por la tribu de Gad, y por la tribu de Zabulón."
+    },
+    {
+     "n": 8,
+     "texto": "Y [así] dieron por suerte los hijos de Israel á los Levitas estas villas con sus ejidos, como Jehová lo había mandado por Moisés."
+    },
+    {
+     "n": 9,
+     "texto": "Y de la tribu de los hijos de Judá, y de la tribu de los hijos de Simeón dieron estas villas que fueron nombradas:"
+    },
+    {
+     "n": 10,
+     "texto": "Y la primera suerte fué de los hijos de Aarón, de la familia de Coath, de los hijos de Leví;"
+    },
+    {
+     "n": 11,
+     "texto": "A los cuales dieron Chîriath-arba, del padre de Anac, la cual es Hebrón, en el monte de Judá, con sus ejidos en sus contornos."
+    },
+    {
+     "n": 12,
+     "texto": "Mas el campo de aquesta ciudad y sus aldeas dieron á Caleb hijo de Jephone, por su posesión."
+    },
+    {
+     "n": 13,
+     "texto": "Y á los hijos de Aarón sacerdote dieron la ciudad de refugio para los homicidas, á Hebrón con sus ejidos; y á Libna con sus ejidos,"
+    },
+    {
+     "n": 14,
+     "texto": "Y á Jattir con sus ejidos, y á Estemoa con sus ejidos,"
+    },
+    {
+     "n": 15,
+     "texto": "A Helón con sus ejidos, y á Debir con sus ejidos,"
+    },
+    {
+     "n": 16,
+     "texto": "A Ain con sus ejidos, á Jutta con sus ejidos, y á Beth-semes con sus ejidos; nueve villas de estas dos tribus:"
+    },
+    {
+     "n": 17,
+     "texto": "Y de la tribu de Benjamín, á Gibeón con sus ejidos, á Geba con sus ejidos,"
+    },
+    {
+     "n": 18,
+     "texto": "A Anathoth con sus ejidos, á Almón con sus ejidos: cuatro villas."
+    },
+    {
+     "n": 19,
+     "texto": "Todas las villas de los sacerdotes, hijos de Aarón, son trece con sus ejidos."
+    },
+    {
+     "n": 20,
+     "texto": "Mas las familias de los hijos de Coath, Levitas, los que quedaban de los hijos de Coath, recibieron por suerte villas de la tribu de Ephraim."
+    },
+    {
+     "n": 21,
+     "texto": "Y diéronles á Sichêm, villa de refugio para los homicidas, con sus ejidos, en el monte de Ephraim; y á Geser con sus ejidos,"
+    },
+    {
+     "n": 22,
+     "texto": "Y á Kibsaim con sus ejidos, y á Beth-oron con sus ejidos: cuatro villas:"
+    },
+    {
+     "n": 23,
+     "texto": "Y de la tribu de Dan á Eltheco con sus ejidos, á Gibethón con sus ejidos,"
+    },
+    {
+     "n": 24,
+     "texto": "A Ayalón con sus ejidos, á Gath-rimmón con sus ejidos: cuatro villas:"
+    },
+    {
+     "n": 25,
+     "texto": "Y de la media tribu de Manasés, á Taanach con sus ejidos, y á Gath-rimmón con sus ejidos: dos villas."
+    },
+    {
+     "n": 26,
+     "texto": "Todas las villas para el resto de las familias de los hijos de Coath fueron diez con sus ejidos."
+    },
+    {
+     "n": 27,
+     "texto": "A los hijos de Gersón de las familias de los Levitas, [dieron] la villa de refugio para los homicidas, de la media tribu de Manasés: á Gaulón en Basán con sus ejidos, y á Bosra con sus ejidos: dos villas."
+    },
+    {
+     "n": 28,
+     "texto": "Y de la tribu de Issachâr, á Cesión con sus ejidos, á Dabereth con sus ejidos,"
+    },
+    {
+     "n": 29,
+     "texto": "A Jarmuth con sus ejidos, y á En-gannim con sus ejidos: cuatro villas:"
+    },
+    {
+     "n": 30,
+     "texto": "Y de la tribu de Aser, á Miseal con sus ejidos, á Abdón con sus ejidos,"
+    },
+    {
+     "n": 31,
+     "texto": "A Helchâth con sus ejidos, y á Rehob con sus ejidos: cuatro villas:"
+    },
+    {
+     "n": 32,
+     "texto": "Y de la tribu de Nephtalí, la villa de refugio para los homicidas, á Cedes en Galilea con sus ejidos, á Hammoth-dor con sus ejidos, y á Cartán con sus ejidos: tres villas:"
+    },
+    {
+     "n": 33,
+     "texto": "Todas las villas de los Gersonitas por sus familias fueron trece villas con sus ejidos."
+    },
+    {
+     "n": 34,
+     "texto": "Y á las familias de los hijos de Merari, Levitas que quedaban, [dióseles] de la tribu de Zabulón, á Jocneam con sus ejidos, Cartha con sus ejidos,"
+    },
+    {
+     "n": 35,
+     "texto": "Dimna con sus ejidos, Naalal con sus ejidos: cuatro villas:"
+    },
+    {
+     "n": 36,
+     "texto": "Y de la tribu de Rubén, á Beser con sus ejidos, á Jasa con sus ejidos,"
+    },
+    {
+     "n": 37,
+     "texto": "A Cedemoth con sus ejidos, y Mephaat con sus ejidos: cuatro villas:"
+    },
+    {
+     "n": 38,
+     "texto": "De la tribu de Gad, la villa de refugio para los homicidas, Ramoth en Galaad con sus ejidos, y Mahanaim con sus ejidos,"
+    },
+    {
+     "n": 39,
+     "texto": "Hesbón con sus ejidos, y Jacer con sus ejidos: cuatro villas."
+    },
+    {
+     "n": 40,
+     "texto": "Todas las villas de los hijos de Merari por sus familias, que restaban de las familias de los Levitas, fueron por sus suertes doce villas."
+    },
+    {
+     "n": 41,
+     "texto": "Y todas la villas de los Levitas en medio de la posesión de los hijos de Israel, fueron cuarenta y ocho villas con sus ejidos."
+    },
+    {
+     "n": 42,
+     "texto": "Y estas ciudades estaban apartadas la una de la otra cada cual con sus ejidos alrededor de ellas: lo cual fué en todas estas ciudades."
+    },
+    {
+     "n": 43,
+     "texto": "Así dió Jehová á Israel toda la tierra que había jurado dar á sus padres; y poseyéronla, y habitaron en ella."
+    },
+    {
+     "n": 44,
+     "texto": "Y Jehová les dió reposo alrededor, conforme á todo lo que había jurado á sus padres: y ninguno de todos los enemigos les paró delante, sino que Jehová entregó en sus manos á todos sus enemigos."
+    },
+    {
+     "n": 45,
+     "texto": "No faltó palabra de todas la buenas que habló Jehová á la casa de Israel; todo se cumplió."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 22,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ENTONCES Josué llamó á los Rubenitas y á los Gaditas, y á la media tribu de Manasés,"
+    },
+    {
+     "n": 2,
+     "texto": "Y díjoles: Vosotros habéis guardado todo lo que Moisés siervo de Jehová os mandó, y habéis obedecido á mi voz en todo lo que os he mandado."
+    },
+    {
+     "n": 3,
+     "texto": "No habéis dejado á vuestros hermanos en estos muchos días hasta hoy, antes habéis guardado la observancia de los mandamientos de Jehová vuestro Dios."
+    },
+    {
+     "n": 4,
+     "texto": "Ahora pues que Jehová vuestro Dios ha dado reposo á vuestros hermanos, como se lo había prometido, volved, y tornad á vuestras tiendas, á la tierra de vuestras posesiones, que Moisés siervo de Jehová os dió de la otra parte del Jordán."
+    },
+    {
+     "n": 5,
+     "texto": "Solamente que con diligencia cuidéis de poner por obra el mandamiento y la ley, que Moisés siervo de Jehová os intimó: que améis á Jehová vuestro Dios, y andéis en todos sus caminos; que guardéis sus mandamientos, y os alleguéis á él, y le sirváis de todo vuestro corazón y de toda vuestra alma."
+    },
+    {
+     "n": 6,
+     "texto": "Y bendiciéndolos Josué, los envió: y fuéronse á sus tiendas."
+    },
+    {
+     "n": 7,
+     "texto": "También á la media tribu de Manasés había dado Moisés [posesión] en Basán; mas á la otra media dió Josué [heredad] entre sus hermanos de estotra parte del Jordán al occidente: y también á éstos envió Josué á sus tiendas, después de haberlos bendecido."
+    },
+    {
+     "n": 8,
+     "texto": "Y hablóles, diciendo: Volveos á vuestras tiendas con grandes riquezas, y con grande copia de ganado, con plata, y con oro, y metal, y muchos vestidos: partid con vuestros hermanos el despojo de vuestros enemigos."
+    },
+    {
+     "n": 9,
+     "texto": "Y los hijos de Rubén y los hijos de Gad, y la media tribu de Manasés, se tornaron, y partiéronse de los hijos de Israel, de Silo, que está en la tierra de Canaán, para ir á la tierra de Galaad, á la tierra de sus posesiones, de la cual eran poseedores, según la palabra de Jehová por mano de Moisés."
+    },
+    {
+     "n": 10,
+     "texto": "Y llegando á los términos del Jordán, que está en la tierra de Canaán, los hijos de Rubén y los hijos de Gad, y la media tribu de Manasés, edificaron allí un altar junto al Jordán, un altar de grande apariencia."
+    },
+    {
+     "n": 11,
+     "texto": "Y los hijos de Israel oyeron decir como los hijos de Rubén y los hijos de Gad, y la media tribu de Manasés, habían edificado un altar delante de la tierra de Canaán, en los términos del Jordán, al paso de los hijos de Israel:"
+    },
+    {
+     "n": 12,
+     "texto": "Lo cual como los hijos de Israel oyeron, juntóse toda la congregación de los hijos de Israel en Silo, para subir á pelear contra ellos."
+    },
+    {
+     "n": 13,
+     "texto": "Y enviaron los hijos de Israel á los hijos de Rubén y á los hijos de Gad y á la media tribu de Manasés en la tierra de Galaad, á Phinees hijo de Eleazar sacerdote,"
+    },
+    {
+     "n": 14,
+     "texto": "Y á diez príncipes con él; un príncipe de cada casa paterna de todas las tribus de Israel, cada uno de los cuales era cabeza de familia de sus padres en la multitud de Israel."
+    },
+    {
+     "n": 15,
+     "texto": "Los cuales vinieron á los hijos de Rubén y á los hijos de Gad, y á la media tribu de Manasés, en la tierra de Galaad; y habláronles, diciendo:"
+    },
+    {
+     "n": 16,
+     "texto": "Toda la congregación de Jehová dice así: ¿Qué transgresión es ésta con que prevaricáis contra el Dios de Israel, volviéndoos hoy de seguir á Jehová, edificándoos altar para ser hoy rebeldes contra Jehová?"
+    },
+    {
+     "n": 17,
+     "texto": "¿Nos ha sido poco la maldad de Peor, de la que no estamos aún limpios hasta este día, por la cual fué la mortandad en la congregación de Jehová?"
+    },
+    {
+     "n": 18,
+     "texto": "Y vosotros os volvéis hoy de seguir á Jehová; mas será que vosotros os rebelaréis hoy contra Jehová, y mañana se airará él contra toda la congregación de Israel."
+    },
+    {
+     "n": 19,
+     "texto": "Que si os parece que la tierra de vuestra posesión es inmunda, pasaos á la tierra de la posesión de Jehová, en la cual está el tabernáculo de Jehová, y tomad posesión entre nosotros; pero no os rebeléis contra Jehová, ni os rebeléis contra nosotros, edificándoos altar á más del altar de Jehová nuestro Dios."
+    },
+    {
+     "n": 20,
+     "texto": "¿No cometió Achân, hijo de Zera, prevaricación en el anatema, y vino ira sobre toda la congregación de Israel? y aquel hombre no pereció solo en su iniquidad."
+    },
+    {
+     "n": 21,
+     "texto": "Entonces los hijos de Rubén y los hijos de Gad, y la media tribu de Manasés, respondieron y dijeron á los principales de la multitud de Israel:"
+    },
+    {
+     "n": 22,
+     "texto": "El Dios de los dioses, Jehová, el Dios de los dioses, Jehová, él sabe, y sabrá Israel: si por rebelión ó por prevaricación contra Jehová (no nos salves hoy,)"
+    },
+    {
+     "n": 23,
+     "texto": "Nos hemos edificado altar para tornarnos de en pos de Jehová, ó para sacrificar holocausto ó presente, ó para hacer sobre él sacrificios pacíficos, el mismo Jehová [nos] lo demande."
+    },
+    {
+     "n": 24,
+     "texto": "Asimismo, si no lo hicimos por temor de esto, diciendo: Mañana vuestros hijos dirán á nuestros hijos: ¿Qué tenéis vosotros con Jehová el Dios de Israel?;"
+    },
+    {
+     "n": 25,
+     "texto": "Jehová ha puesto por término el Jordán entre nosotros y vosotros, oh hijos de Rubén é hijos de Gad; no tenéis vosotros parte en Jehová: y [así] vuestros hijos harán que nuestros hijos no teman á Jehová."
+    },
+    {
+     "n": 26,
+     "texto": "Por esto dijimos: Hagamos ahora por edificarnos un altar, no para holocausto ni para sacrificio,"
+    },
+    {
+     "n": 27,
+     "texto": "Sino para que sea un testimonio entre nosotros y vosotros, y entre los que vendrán después de nosotros, de que podemos hacer el servicio de Jehová delante de él con nuestros holocaustos, con nuestros sacrificios, y con nuestros pacíficos; y no digan mañana vuestros hijos á los nuestros: Vosotros no tenéis parte en Jehová."
+    },
+    {
+     "n": 28,
+     "texto": "Nosotros, pues, dijimos: Si aconteciere que tal digan á nosotros, ó á nuestras generaciones en lo por venir, entonces responderemos: Mirad el símil del altar de Jehová, el cual hicieron nuestros padres, no para holocaustos ó sacrificios, sino para que fuese testimonio entre nosotros y vosotros."
+    },
+    {
+     "n": 29,
+     "texto": "Nunca tal acontezca que nos rebelemos contra Jehová, ó que nos apartemos hoy de seguir á Jehová, edificando altar para holocaustos, para presente, ó para sacrificio, á más del altar de Jehová nuestro Dios que está delante de su tabernáculo."
+    },
+    {
+     "n": 30,
+     "texto": "Y oyendo Phinees el sacerdote y los príncipes de la congregación, y las cabezas de la multitud de Israel que con él estaban, las palabras que hablaron los hijos de Rubén y los hijos de Gad y los hijos de Manasés, fueron contentos de ello."
+    },
+    {
+     "n": 31,
+     "texto": "Y dijo Phinees hijo del sacerdote Eleazar, á los hijos de Rubén, á los hijos de Gad, y á los hijos de Manasés: Hoy hemos entendido que Jehová está entre nosotros, pues que no habéis intentado esta traición contra Jehová. Ahora habéis librado á los hijos de Israel de la mano de Jehová."
+    },
+    {
+     "n": 32,
+     "texto": "Y Phinees hijo del sacerdote Eleazar, y los príncipes, volviéronse de con los hijos de Rubén, y de con los hijos de Gad, de la tierra de Galaad á la tierra de Canaán, á los hijos de Israel: á los cuales dieron la respuesta."
+    },
+    {
+     "n": 33,
+     "texto": "Y el negocio plugo á los hijos de Israel, y bendijeron á Dios los hijos de Israel; y no hablaron más de subir contra ellos en guerra, para destruir la tierra en que habitaban los hijos de Rubén y los hijos de Gad."
+    },
+    {
+     "n": 34,
+     "texto": "Y los hijos de Rubén y los hijos de Gad pusieron por nombre al altar Ed; porque es testimonio entre nosotros que Jehová es Dios."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 23,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ, pasados muchos días después que Jehová dió reposo á Israel de todos sus enemigos al contorno, que Josué, siendo viejo, y entrado en días,"
+    },
+    {
+     "n": 2,
+     "texto": "Llamó á todo Israel, á sus ancianos, á sus príncipes, á sus jueces y á sus oficiales, y díjoles: Yo soy ya viejo y entrado en días:"
+    },
+    {
+     "n": 3,
+     "texto": "Y vosotros habéis visto todo lo que Jehová vuestro Dios ha hecho con todas estas gentes en vuestra presencia; porque Jehová vuestro Dios ha peleado por vosotros."
+    },
+    {
+     "n": 4,
+     "texto": "He aquí os he repartido por suerte, en herencia para vuestras tribus, estas gentes, así las destruídas como las que quedan, desde el Jordán hasta la gran mar hacia donde el sol se pone."
+    },
+    {
+     "n": 5,
+     "texto": "Y Jehová vuestro Dios las echará de delante de vosotros, y las lanzará de vuestra presencia: y vosotros poseeréis sus tierras, como Jehová vuestro Dios os ha dicho."
+    },
+    {
+     "n": 6,
+     "texto": "Esforzaos pues mucho á guardar y hacer todo lo que está escrito en el libro de la ley de Moisés, sin apartaros de ello ni á la diestra ni á la siniestra;"
+    },
+    {
+     "n": 7,
+     "texto": "Que cuando entrareis á estas gentes que han quedado con vosotros, no hagáis mención ni juréis por el nombre de sus dioses, ni los sirváis, ni os inclinéis á ellos:"
+    },
+    {
+     "n": 8,
+     "texto": "Mas á Jehová vuestro Dios os allegaréis, como habéis hecho hasta hoy;"
+    },
+    {
+     "n": 9,
+     "texto": "Pues ha echado Jehová delante de vosotros grandes y fuertes naciones, y hasta hoy nadie ha podido parar delante de vuestro rostro."
+    },
+    {
+     "n": 10,
+     "texto": "Un varón de vosotros perseguirá á mil: porque Jehová vuestro Dios pelea por vosotros, como él os dijo."
+    },
+    {
+     "n": 11,
+     "texto": "Por tanto, cuidad mucho por vuestras almas, que améis á Jehová vuestro Dios."
+    },
+    {
+     "n": 12,
+     "texto": "Porque si os apartareis, y os allegareis á lo que resta de aquestas gentes que han quedado con vosotros, y si concertareis con ellas matrimonios, y entrareis á ellas, y ellas á vosotros;"
+    },
+    {
+     "n": 13,
+     "texto": "Sabed que Jehová vuestro Dios no echará más estas gentes delante de vosotros; antes os serán por lazo, y por tropiezo, y por azote para vuestros costados, y por espinas para vuestros ojos, hasta tanto que perezcáis de aquesta buena tierra que Jehová vuestro Dios os ha dado."
+    },
+    {
+     "n": 14,
+     "texto": "Y he aquí que yo estoy para entrar hoy por el camino de toda la tierra: reconoced, pues, con todo vuestro corazón y con toda vuestra alma, que no se ha perdido una palabra de todas la buenas palabras que Jehová vuestro Dios había dicho de vosotros: todas os han venido, no se ha perdido de ellas ni una."
+    },
+    {
+     "n": 15,
+     "texto": "Mas será, que como ha venido sobre vosotros toda palabra buena que Jehová vuestro Dios os había dicho, así [también] traerá Jehová sobre vosotros toda palabra mala, hasta destruiros de sobre la buena tierra que Jehová vuestro Dios os ha dado;"
+    },
+    {
+     "n": 16,
+     "texto": "Cuando traspasareis el pacto de Jehová vuestro Dios que él os ha mandado, yendo y honrando dioses ajenos, é inclinándoos á ellos. Y el furor de Jehová se inflamará contra vosotros, y luego pereceréis de aquesta buena tierra que él os ha dado."
+    }
+   ]
+  },
+  {
+   "libro": "Jos",
+   "cap": 24,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JUNTANDO Josué todas las tribus de Israel en Sichêm, llamó á los ancianos de Israel, y á sus príncipes, á sus jueces, y á sus oficiales; y presentáronse delante de Dios."
+    },
+    {
+     "n": 2,
+     "texto": "Y dijo Josué á todo el pueblo: Así dice Jehová, Dios de Israel: Vuestros padres habitaron antiguamente de esotra parte del río, [es á saber], Tharé, padre de Abraham y de Nachôr; y servían á dioses extraños."
+    },
+    {
+     "n": 3,
+     "texto": "Y yo tomé á vuestro padre Abraham de la otra parte del río, y trájelo por toda la tierra de Canaán, y aumenté su generación, y díle á Isaac."
+    },
+    {
+     "n": 4,
+     "texto": "Y á Isaac dí á Jacob y á Esaú: y á Esaú dí el monte de Seir, que lo poseyese: mas Jacob y sus hijos descendieron á Egipto."
+    },
+    {
+     "n": 5,
+     "texto": "Y yo envié á Moisés y á Aarón, y herí á Egipto, al modo que lo hice en medio de él, y después os saqué."
+    },
+    {
+     "n": 6,
+     "texto": "Y saqué á vuestros padres de Egipto: y como llegaron á la mar, los Egipcios siguieron á vuestros padres hasta el mar Bermejo con carros y caballería."
+    },
+    {
+     "n": 7,
+     "texto": "Y como ellos clamasen á Jehová, él puso oscuridad entre vosotros y los Egipcios, é hizo venir sobre ellos la mar, la cual los cubrió: y vuestros ojos vieron lo que hice en Egipto. Después estuvisteis muchos días en el desierto."
+    },
+    {
+     "n": 8,
+     "texto": "Y os introduje en la tierra de los Amorrheos, que habitaban de la otra parte del Jordán, los cuales pelearon contra vosotros; mas yo los entregué en vuestras manos, y poseísteis su tierra, y los destruí de delante de vosotros."
+    },
+    {
+     "n": 9,
+     "texto": "Y levantóse después Balac hijo de Sephor, rey de los Moabitas, y peleó contra Israel; y envió á llamar á Balaam hijo de Beor, para que os maldijese."
+    },
+    {
+     "n": 10,
+     "texto": "Mas yo no quise escuchar á Balaam, antes os bendijo repetidamente, y os libré de sus manos."
+    },
+    {
+     "n": 11,
+     "texto": "Y pasado el Jordán, vinisteis á Jericó; y los moradores de Jericó pelearon contra vosotros: los Amorrheos, Pherezeos, Cananeos, Hetheos, Gergeseos, Heveos, y Jebuseos: y yo los entregué en vuestras manos."
+    },
+    {
+     "n": 12,
+     "texto": "Y envié tábanos delante de vosotros, los cuales los echaron de delante de vosotros, [á saber], á los dos reyes de los Amorrheos; no con tu espada, ni con tu arco."
+    },
+    {
+     "n": 13,
+     "texto": "Y os dí la tierra por la cual nada trabajasteis, y las ciudades que no edificasteis, en las cuales moráis; y de las viñas y olivares que no plantasteis, coméis."
+    },
+    {
+     "n": 14,
+     "texto": "Ahora pues, temed á Jehová, y servidle con integridad y en verdad; y quitad de en medio los dioses á los cuales sirvieron vuestros padres de esotra parte del río, y en Egipto; y servid á Jehová."
+    },
+    {
+     "n": 15,
+     "texto": "Y si mal os parece servir á Jehová, escogeos hoy á quién sirváis; si á los dioses á quienes sirvieron vuestros padres, cuando [estuvieron] de esotra parte del río, ó á los dioses de los Amorrheos en cuya tierra habitáis: que yo y mi casa serviremos á Jehová."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces el pueblo respondió, y dijo: Nunca tal acontezca, que dejemos á Jehová por servir á otros dioses:"
+    },
+    {
+     "n": 17,
+     "texto": "Porque Jehová nuestro Dios es el que nos sacó á nosotros y á nuestros padres de la tierra de Egipto, de la casa de servidumbre; el cual delante de nuestros ojos ha hecho estas grandes señales, y nos ha guardado por todo el camino por donde hemos andado, y en todos los pueblos por entre los cuales pasamos."
+    },
+    {
+     "n": 18,
+     "texto": "Y Jehová echó de delante de nosotros á todos los pueblos, y al Amorrheo que habitaba en la tierra: nosotros, pues, también serviremos á Jehová, porque él es nuestro Dios."
+    },
+    {
+     "n": 19,
+     "texto": "Entonces Josué dijo al pueblo: No podréis servir á Jehová, porque él es Dios santo, y Dios celoso; no sufrirá vuestras rebeliones y vuestros pecados."
+    },
+    {
+     "n": 20,
+     "texto": "Si dejareis á Jehová y sirviereis á dioses ajenos, se volverá, y os maltratará, y os consumirá, después que os ha hecho bien."
+    },
+    {
+     "n": 21,
+     "texto": "El pueblo entonces dijo á Josué: No, antes á Jehová serviremos."
+    },
+    {
+     "n": 22,
+     "texto": "Y Josué respondió al pueblo: Vosotros sois testigos contra vosotros mismos, de que os habéis elegido á Jehová para servirle. Y ellos respondieron: Testigos somos."
+    },
+    {
+     "n": 23,
+     "texto": "Quitad, pues, ahora los dioses ajenos que están entre vosotros, é inclinad vuestro corazón á Jehová Dios de Israel."
+    },
+    {
+     "n": 24,
+     "texto": "Y el pueblo respondió á Josué: A Jehová nuestro Dios serviremos, y á su voz obedeceremos."
+    },
+    {
+     "n": 25,
+     "texto": "Entonces Josué hizo alianza con el pueblo el mismo día, y púsole ordenanzas y leyes en Sichêm."
+    },
+    {
+     "n": 26,
+     "texto": "Y escribió Josué estas palabras en el libro de la ley de Dios; y tomando una grande piedra, levantóla allí debajo de un alcornoque que estaba junto al santuario de Jehová."
+    },
+    {
+     "n": 27,
+     "texto": "Y dijo Josué á todo el pueblo: He aquí esta piedra será entre nosotros por testigo, la cual ha oído todas las palabras de Jehová que él ha hablado con nosotros: será, pues, testigo contra vosotros, porque no mintáis contra vuestro Dios."
+    },
+    {
+     "n": 28,
+     "texto": "Y envió Josué al pueblo, cada uno á su heredad."
+    },
+    {
+     "n": 29,
+     "texto": "Y después de estas cosas murió Josué, hijo de Nun, siervo de Jehová, siendo de ciento y diez años."
+    },
+    {
+     "n": 30,
+     "texto": "Y enterráronlo en el término de su posesión en Timnath-sera, que está en el monte de Ephraim, al norte del monte de Gaas."
+    },
+    {
+     "n": 31,
+     "texto": "Y sirvió Israel á Jehová todo el tiempo de Josué, y todo el tiempo de los ancianos que vivieron después de Josué, y que sabían todas las obras de Jehová, que había hecho por Israel."
+    },
+    {
+     "n": 32,
+     "texto": "Y enterraron en Sichêm los huesos de José que los hijos de Israel habían traído de Egipto, en la parte del campo que Jacob compró de los hijos de Hemor padre de Sichêm, por cien corderas; y fué en posesión á los hijos de José."
+    },
+    {
+     "n": 33,
+     "texto": "También murió Eleazar, hijo de Aarón; al cual enterraron en el collado de Phinees su hijo, que le fué dado en el monte de Ephraim."
+    }
+   ]
   }
  ],
  "personas": [
@@ -26763,7 +29544,8 @@ window.BIBLIA_DATOS = {
     "Gn 11:28",
     "Gn 11:31",
     "Gn 11:32",
-    "Gn 20:12"
+    "Gn 20:12",
+    "Jos 24:2"
    ],
    "nota": "En la Reina-Valera 1909: Thare."
   },
@@ -26972,7 +29754,9 @@ window.BIBLIA_DATOS = {
     "Dt 9:27",
     "Dt 29:13",
     "Dt 30:20",
-    "Dt 34:4"
+    "Dt 34:4",
+    "Jos 24:2",
+    "Jos 24:3"
    ],
    "nota": "En la Reina-Valera 1909: Abram/Abraham. Se llama Abram hasta Gn 17:5, donde Dios le cambia el nombre por Abraham."
   },
@@ -27019,7 +29803,8 @@ window.BIBLIA_DATOS = {
     "Gn 24:10",
     "Gn 24:15",
     "Gn 24:24",
-    "Gn 24:47"
+    "Gn 24:47",
+    "Jos 24:2"
    ],
    "nota": "En la Reina-Valera 1909: Nachôr."
   },
@@ -27585,7 +30370,9 @@ window.BIBLIA_DATOS = {
     "Dt 9:27",
     "Dt 29:13",
     "Dt 30:20",
-    "Dt 34:4"
+    "Dt 34:4",
+    "Jos 24:3",
+    "Jos 24:4"
    ],
    "nota": ""
   },
@@ -28697,7 +31484,8 @@ window.BIBLIA_DATOS = {
     "Dt 2:8",
     "Dt 2:12",
     "Dt 2:22",
-    "Dt 2:29"
+    "Dt 2:29",
+    "Jos 24:4"
    ],
    "nota": "El texto lo llama también Edom (Gn 25:30; 36:1)."
   },
@@ -28920,7 +31708,9 @@ window.BIBLIA_DATOS = {
     "Dt 9:27",
     "Dt 29:13",
     "Dt 30:20",
-    "Dt 34:4"
+    "Dt 34:4",
+    "Jos 24:4",
+    "Jos 24:32"
    ],
    "nota": "En Gn 32:28 recibe el nombre de Israel; el texto sigue usando ambos. En Deuteronomio «Jeshurun» (Dt 32:15) es nombre del pueblo: no se marca como Jacob."
   },
@@ -29232,7 +32022,25 @@ window.BIBLIA_DATOS = {
     "Nm 32:37",
     "Nm 34:14",
     "Dt 11:6",
-    "Dt 33:6"
+    "Dt 33:6",
+    "Jos 4:12",
+    "Jos 13:23",
+    "Jos 15:6",
+    "Jos 18:17",
+    "Jos 21:7",
+    "Jos 21:36",
+    "Jos 22:9",
+    "Jos 22:10",
+    "Jos 22:11",
+    "Jos 22:13",
+    "Jos 22:15",
+    "Jos 22:21",
+    "Jos 22:25",
+    "Jos 22:30",
+    "Jos 22:31",
+    "Jos 22:32",
+    "Jos 22:33",
+    "Jos 22:34"
    ],
    "nota": ""
   },
@@ -29268,7 +32076,11 @@ window.BIBLIA_DATOS = {
     "Nm 10:19",
     "Nm 13:6",
     "Nm 26:12",
-    "Nm 34:20"
+    "Nm 34:20",
+    "Jos 19:1",
+    "Jos 19:8",
+    "Jos 19:9",
+    "Jos 21:9"
    ],
    "nota": ""
   },
@@ -29313,7 +32125,10 @@ window.BIBLIA_DATOS = {
     "Nm 26:59",
     "Dt 10:8",
     "Dt 18:1",
-    "Dt 33:8"
+    "Dt 33:8",
+    "Jos 13:14",
+    "Jos 13:33",
+    "Jos 21:10"
    ],
    "nota": "En Números la RV1909 escribe también «Levitas»."
   },
@@ -29375,7 +32190,24 @@ window.BIBLIA_DATOS = {
     "Nm 26:19",
     "Nm 26:20",
     "Nm 34:19",
-    "Dt 33:7"
+    "Dt 33:7",
+    "Jos 7:1",
+    "Jos 7:16",
+    "Jos 7:17",
+    "Jos 7:18",
+    "Jos 14:6",
+    "Jos 15:1",
+    "Jos 15:12",
+    "Jos 15:13",
+    "Jos 15:20",
+    "Jos 15:21",
+    "Jos 15:63",
+    "Jos 18:11",
+    "Jos 18:14",
+    "Jos 19:1",
+    "Jos 19:9",
+    "Jos 21:4",
+    "Jos 21:9"
    ],
    "nota": ""
   },
@@ -29412,7 +32244,12 @@ window.BIBLIA_DATOS = {
     "Nm 13:13",
     "Nm 26:42",
     "Nm 34:22",
-    "Dt 33:22"
+    "Dt 33:22",
+    "Jos 19:40",
+    "Jos 19:47",
+    "Jos 19:48",
+    "Jos 21:5",
+    "Jos 21:23"
    ],
    "nota": ""
   },
@@ -29444,7 +32281,11 @@ window.BIBLIA_DATOS = {
     "Nm 26:48",
     "Nm 26:50",
     "Nm 34:28",
-    "Dt 33:23"
+    "Dt 33:23",
+    "Jos 19:32",
+    "Jos 19:39",
+    "Jos 21:6",
+    "Jos 21:32"
    ],
    "nota": "En la Reina-Valera 1909: Nephtalí."
   },
@@ -29483,7 +32324,24 @@ window.BIBLIA_DATOS = {
     "Nm 32:33",
     "Nm 32:34",
     "Nm 34:14",
-    "Dt 33:20"
+    "Dt 33:20",
+    "Jos 4:12",
+    "Jos 13:24",
+    "Jos 13:28",
+    "Jos 21:7",
+    "Jos 21:38",
+    "Jos 22:9",
+    "Jos 22:10",
+    "Jos 22:11",
+    "Jos 22:13",
+    "Jos 22:15",
+    "Jos 22:21",
+    "Jos 22:25",
+    "Jos 22:30",
+    "Jos 22:31",
+    "Jos 22:32",
+    "Jos 22:33",
+    "Jos 22:34"
    ],
    "nota": ""
   },
@@ -29516,7 +32374,11 @@ window.BIBLIA_DATOS = {
     "Nm 26:46",
     "Nm 26:47",
     "Nm 34:27",
-    "Dt 33:24"
+    "Dt 33:24",
+    "Jos 19:24",
+    "Jos 19:31",
+    "Jos 21:6",
+    "Jos 21:30"
    ],
    "nota": ""
   },
@@ -29545,7 +32407,11 @@ window.BIBLIA_DATOS = {
     "Nm 13:8",
     "Nm 26:23",
     "Nm 34:26",
-    "Dt 33:18"
+    "Dt 33:18",
+    "Jos 19:17",
+    "Jos 19:23",
+    "Jos 21:6",
+    "Jos 21:28"
    ],
    "nota": "En la Reina-Valera 1909: Issachâr."
   },
@@ -29576,7 +32442,11 @@ window.BIBLIA_DATOS = {
     "Nm 13:11",
     "Nm 26:26",
     "Nm 34:25",
-    "Dt 33:18"
+    "Dt 33:18",
+    "Jos 19:10",
+    "Jos 19:16",
+    "Jos 21:7",
+    "Jos 21:34"
    ],
    "nota": ""
   },
@@ -29771,9 +32641,20 @@ window.BIBLIA_DATOS = {
     "Nm 36:1",
     "Nm 36:5",
     "Nm 36:12",
-    "Dt 33:16"
+    "Dt 33:16",
+    "Jos 14:4",
+    "Jos 16:1",
+    "Jos 16:4",
+    "Jos 17:1",
+    "Jos 17:2",
+    "Jos 17:14",
+    "Jos 17:16",
+    "Jos 17:17",
+    "Jos 18:5",
+    "Jos 18:11",
+    "Jos 24:32"
    ],
-   "nota": "Faraón le da el nombre Zaphnath-paaneah (Gn 41:45)."
+   "nota": "Faraón le da el nombre Zaphnath-paaneah (Gn 41:45). Sus huesos, traídos de Egipto, se entierran en Siquem, en el campo que compró Jacob (Jos 24:32)."
   },
   {
    "id": "Seir_1",
@@ -29814,7 +32695,8 @@ window.BIBLIA_DATOS = {
     "Gn 34:18",
     "Gn 34:20",
     "Gn 34:24",
-    "Gn 34:26"
+    "Gn 34:26",
+    "Jos 24:32"
    ],
    "nota": ""
   },
@@ -29840,7 +32722,8 @@ window.BIBLIA_DATOS = {
     "Gn 34:18",
     "Gn 34:20",
     "Gn 34:24",
-    "Gn 34:26"
+    "Gn 34:26",
+    "Jos 24:32"
    ],
    "nota": "En la Reina-Valera 1909: Sichêm."
   },
@@ -29901,7 +32784,13 @@ window.BIBLIA_DATOS = {
     "Nm 26:38",
     "Nm 26:41",
     "Nm 34:21",
-    "Dt 33:12"
+    "Dt 33:12",
+    "Jos 18:11",
+    "Jos 18:20",
+    "Jos 18:21",
+    "Jos 18:28",
+    "Jos 21:4",
+    "Jos 21:17"
    ],
    "nota": "Su madre lo llamó Benoni; su padre, Benjamín (Gn 35:18)."
   },
@@ -31374,7 +34263,11 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 38:30",
     "Gn 46:12",
-    "Nm 26:20"
+    "Nm 26:20",
+    "Jos 7:1",
+    "Jos 7:18",
+    "Jos 7:24",
+    "Jos 22:20"
    ],
    "nota": "En Números la RV1909 escribe también «Zera»."
   },
@@ -31472,7 +34365,33 @@ window.BIBLIA_DATOS = {
     "Nm 36:1",
     "Nm 36:12",
     "Dt 3:14",
-    "Dt 33:17"
+    "Dt 33:17",
+    "Jos 4:12",
+    "Jos 12:6",
+    "Jos 13:7",
+    "Jos 13:29",
+    "Jos 13:31",
+    "Jos 16:5",
+    "Jos 16:9",
+    "Jos 17:1",
+    "Jos 17:2",
+    "Jos 17:3",
+    "Jos 17:6",
+    "Jos 17:12",
+    "Jos 21:5",
+    "Jos 21:6",
+    "Jos 21:25",
+    "Jos 21:27",
+    "Jos 22:1",
+    "Jos 22:7",
+    "Jos 22:9",
+    "Jos 22:10",
+    "Jos 22:11",
+    "Jos 22:13",
+    "Jos 22:15",
+    "Jos 22:21",
+    "Jos 22:30",
+    "Jos 22:31"
    ],
    "nota": ""
   },
@@ -31510,7 +34429,13 @@ window.BIBLIA_DATOS = {
     "Nm 26:35",
     "Nm 26:37",
     "Nm 34:24",
-    "Dt 33:17"
+    "Dt 33:17",
+    "Jos 16:5",
+    "Jos 16:8",
+    "Jos 16:9",
+    "Jos 17:8",
+    "Jos 21:5",
+    "Jos 21:20"
    ],
    "nota": "En la Reina-Valera 1909: Ephraim."
   },
@@ -31737,7 +34662,9 @@ window.BIBLIA_DATOS = {
     "Nm 4:41",
     "Nm 7:7",
     "Nm 10:17",
-    "Nm 26:57"
+    "Nm 26:57",
+    "Jos 21:6",
+    "Jos 21:27"
    ],
    "nota": ""
   },
@@ -31766,7 +34693,10 @@ window.BIBLIA_DATOS = {
     "Nm 7:9",
     "Nm 16:1",
     "Nm 26:57",
-    "Nm 26:58"
+    "Nm 26:58",
+    "Jos 21:5",
+    "Jos 21:20",
+    "Jos 21:26"
    ],
    "nota": "En la Reina-Valera 1909: Coath."
   },
@@ -31796,7 +34726,10 @@ window.BIBLIA_DATOS = {
     "Nm 4:45",
     "Nm 7:8",
     "Nm 10:17",
-    "Nm 26:57"
+    "Nm 26:57",
+    "Jos 21:7",
+    "Jos 21:34",
+    "Jos 21:40"
    ],
    "nota": ""
   },
@@ -32478,7 +35411,10 @@ window.BIBLIA_DATOS = {
     "Nm 32:39",
     "Nm 32:40",
     "Nm 36:1",
-    "Dt 3:15"
+    "Dt 3:15",
+    "Jos 13:31",
+    "Jos 17:1",
+    "Jos 17:3"
    ],
    "nota": "En la Reina-Valera 1909: Machîr."
   },
@@ -33167,7 +36103,57 @@ window.BIBLIA_DATOS = {
     "Dt 34:8",
     "Dt 34:9",
     "Dt 34:10",
-    "Dt 34:12"
+    "Dt 34:12",
+    "Jos 1:1",
+    "Jos 1:2",
+    "Jos 1:3",
+    "Jos 1:5",
+    "Jos 1:7",
+    "Jos 1:13",
+    "Jos 1:14",
+    "Jos 1:15",
+    "Jos 1:17",
+    "Jos 3:7",
+    "Jos 4:10",
+    "Jos 4:12",
+    "Jos 4:14",
+    "Jos 8:31",
+    "Jos 8:32",
+    "Jos 8:33",
+    "Jos 8:35",
+    "Jos 9:24",
+    "Jos 11:12",
+    "Jos 11:15",
+    "Jos 11:20",
+    "Jos 11:23",
+    "Jos 12:6",
+    "Jos 13:8",
+    "Jos 13:12",
+    "Jos 13:21",
+    "Jos 13:24",
+    "Jos 13:29",
+    "Jos 13:32",
+    "Jos 13:33",
+    "Jos 14:2",
+    "Jos 14:3",
+    "Jos 14:5",
+    "Jos 14:6",
+    "Jos 14:7",
+    "Jos 14:9",
+    "Jos 14:10",
+    "Jos 14:11",
+    "Jos 17:4",
+    "Jos 18:7",
+    "Jos 20:2",
+    "Jos 21:2",
+    "Jos 21:8",
+    "Jos 22:2",
+    "Jos 22:4",
+    "Jos 22:5",
+    "Jos 22:7",
+    "Jos 22:9",
+    "Jos 23:6",
+    "Jos 24:5"
    ],
    "nota": "Muere en la tierra de Moab a los 120 años (Dt 34:5-7): «Y era Moisés de edad de ciento y veinte años cuando murió»; lo entierran en el valle, enfrente de Bet-peor, «y ninguno sabe su sepulcro hasta hoy» (Dt 34:6)."
   },
@@ -33665,7 +36651,13 @@ window.BIBLIA_DATOS = {
     "Nm 33:39",
     "Dt 9:20",
     "Dt 10:6",
-    "Dt 32:50"
+    "Dt 32:50",
+    "Jos 21:4",
+    "Jos 21:10",
+    "Jos 21:13",
+    "Jos 21:19",
+    "Jos 24:5",
+    "Jos 24:33"
    ],
    "nota": "Muere en la cumbre del monte de Hor (Nm 20:25-28; 33:38), a los 123 años (Nm 33:39); Eleazar recibe sus vestiduras. Dt 10:6 dice que murió y fue sepultado en Moserá («allí murió Aarón, y allí fué sepultado»); Nm 20:28 y 33:38 y Dt 32:50, que murió en el monte Hor. Se registran las dos citas sin armonizarlas."
   },
@@ -34049,9 +37041,17 @@ window.BIBLIA_DATOS = {
     "Nm 32:2",
     "Nm 32:28",
     "Nm 34:17",
-    "Dt 10:6"
+    "Dt 10:6",
+    "Jos 14:1",
+    "Jos 17:4",
+    "Jos 19:51",
+    "Jos 21:1",
+    "Jos 22:13",
+    "Jos 22:31",
+    "Jos 22:32",
+    "Jos 24:33"
    ],
-   "nota": "Sucede a Aarón como sacerdote: Moisés le pone las vestiduras de su padre en el monte Hor (Nm 20:28). Dt 10:6: «en lugar suyo tuvo el sacerdocio su hijo Eleazar»."
+   "nota": "Sucede a Aarón como sacerdote: Moisés le pone las vestiduras de su padre en el monte Hor (Nm 20:28). Dt 10:6: «en lugar suyo tuvo el sacerdocio su hijo Eleazar». Muere y lo entierran «en el collado de Phinees su hijo», en el monte de Efraín (Jos 24:33)."
   },
   {
    "id": "Elisheba_1",
@@ -34217,7 +37217,12 @@ window.BIBLIA_DATOS = {
     "Ex 6:25",
     "Nm 25:7",
     "Nm 25:11",
-    "Nm 31:6"
+    "Nm 31:6",
+    "Jos 22:13",
+    "Jos 22:30",
+    "Jos 22:31",
+    "Jos 22:32",
+    "Jos 24:33"
    ],
    "nota": "En la Reina-Valera 1909: Phinees. Nm 25:7-13: atraviesa a Zimri y a Cozbi y detiene la mortandad; Dios le da «pacto del sacerdocio perpetuo»."
   },
@@ -34302,9 +37307,160 @@ window.BIBLIA_DATOS = {
     "Dt 31:14",
     "Dt 31:23",
     "Dt 32:44",
-    "Dt 34:9"
+    "Dt 34:9",
+    "Jos 1:1",
+    "Jos 1:10",
+    "Jos 1:12",
+    "Jos 1:16",
+    "Jos 2:1",
+    "Jos 2:23",
+    "Jos 2:24",
+    "Jos 3:1",
+    "Jos 3:5",
+    "Jos 3:6",
+    "Jos 3:7",
+    "Jos 3:9",
+    "Jos 3:10",
+    "Jos 4:1",
+    "Jos 4:4",
+    "Jos 4:5",
+    "Jos 4:8",
+    "Jos 4:9",
+    "Jos 4:10",
+    "Jos 4:14",
+    "Jos 4:15",
+    "Jos 4:17",
+    "Jos 4:20",
+    "Jos 5:2",
+    "Jos 5:3",
+    "Jos 5:4",
+    "Jos 5:7",
+    "Jos 5:9",
+    "Jos 5:13",
+    "Jos 5:14",
+    "Jos 5:15",
+    "Jos 6:2",
+    "Jos 6:6",
+    "Jos 6:8",
+    "Jos 6:10",
+    "Jos 6:12",
+    "Jos 6:16",
+    "Jos 6:22",
+    "Jos 6:25",
+    "Jos 6:26",
+    "Jos 6:27",
+    "Jos 7:2",
+    "Jos 7:3",
+    "Jos 7:6",
+    "Jos 7:7",
+    "Jos 7:10",
+    "Jos 7:16",
+    "Jos 7:19",
+    "Jos 7:20",
+    "Jos 7:22",
+    "Jos 7:23",
+    "Jos 7:24",
+    "Jos 7:25",
+    "Jos 8:1",
+    "Jos 8:3",
+    "Jos 8:9",
+    "Jos 8:10",
+    "Jos 8:13",
+    "Jos 8:15",
+    "Jos 8:16",
+    "Jos 8:18",
+    "Jos 8:21",
+    "Jos 8:23",
+    "Jos 8:26",
+    "Jos 8:27",
+    "Jos 8:28",
+    "Jos 8:29",
+    "Jos 8:30",
+    "Jos 8:35",
+    "Jos 9:2",
+    "Jos 9:3",
+    "Jos 9:6",
+    "Jos 9:8",
+    "Jos 9:15",
+    "Jos 9:22",
+    "Jos 9:24",
+    "Jos 9:27",
+    "Jos 10:1",
+    "Jos 10:4",
+    "Jos 10:6",
+    "Jos 10:7",
+    "Jos 10:8",
+    "Jos 10:9",
+    "Jos 10:12",
+    "Jos 10:15",
+    "Jos 10:17",
+    "Jos 10:18",
+    "Jos 10:20",
+    "Jos 10:21",
+    "Jos 10:22",
+    "Jos 10:24",
+    "Jos 10:25",
+    "Jos 10:26",
+    "Jos 10:27",
+    "Jos 10:28",
+    "Jos 10:29",
+    "Jos 10:31",
+    "Jos 10:33",
+    "Jos 10:34",
+    "Jos 10:36",
+    "Jos 10:38",
+    "Jos 10:40",
+    "Jos 10:41",
+    "Jos 10:42",
+    "Jos 10:43",
+    "Jos 11:6",
+    "Jos 11:7",
+    "Jos 11:9",
+    "Jos 11:10",
+    "Jos 11:12",
+    "Jos 11:13",
+    "Jos 11:15",
+    "Jos 11:16",
+    "Jos 11:18",
+    "Jos 11:21",
+    "Jos 11:23",
+    "Jos 12:7",
+    "Jos 13:1",
+    "Jos 14:1",
+    "Jos 14:6",
+    "Jos 14:13",
+    "Jos 15:13",
+    "Jos 17:4",
+    "Jos 17:14",
+    "Jos 17:15",
+    "Jos 17:17",
+    "Jos 18:3",
+    "Jos 18:8",
+    "Jos 18:9",
+    "Jos 18:10",
+    "Jos 19:49",
+    "Jos 19:51",
+    "Jos 20:1",
+    "Jos 21:1",
+    "Jos 22:1",
+    "Jos 22:6",
+    "Jos 22:7",
+    "Jos 23:1",
+    "Jos 23:2",
+    "Jos 24:1",
+    "Jos 24:2",
+    "Jos 24:19",
+    "Jos 24:21",
+    "Jos 24:22",
+    "Jos 24:24",
+    "Jos 24:25",
+    "Jos 24:26",
+    "Jos 24:27",
+    "Jos 24:28",
+    "Jos 24:29",
+    "Jos 24:31"
    ],
-   "nota": "En Números la RV1909 escribe también «Oseas». Nm 13:17 (RV1909): «á Oseas hijo de Nun, le puso Moisés el nombre de Josué». Sucesor de Moisés: Dt 31:7 («tú entrarás con este pueblo á la tierra») y Dt 34:9 («Josué hijo de Nun fué lleno de espíritu de sabiduría, porque Moisés había puesto sus manos sobre él»).",
+   "nota": "En Números la RV1909 escribe también «Oseas». Nm 13:17 (RV1909): «á Oseas hijo de Nun, le puso Moisés el nombre de Josué». Sucesor de Moisés: Dt 31:7 («tú entrarás con este pueblo á la tierra») y Dt 34:9 («Josué hijo de Nun fué lleno de espíritu de sabiduría, porque Moisés había puesto sus manos sobre él»). Muere a los 110 años (Jos 24:29: «siendo de ciento y diez años») y lo entierran en Timnat-sera, «que está en el monte de Ephraim» (Jos 24:30), la ciudad que había pedido (Jos 19:50).",
    "identidad": {
     "certeza": "texto",
     "refs": [
@@ -34469,7 +37625,17 @@ window.BIBLIA_DATOS = {
     "Dt 1:38",
     "Dt 31:23",
     "Dt 32:44",
-    "Dt 34:9"
+    "Dt 34:9",
+    "Jos 1:1",
+    "Jos 2:1",
+    "Jos 2:23",
+    "Jos 6:6",
+    "Jos 14:1",
+    "Jos 17:4",
+    "Jos 19:49",
+    "Jos 19:51",
+    "Jos 21:1",
+    "Jos 24:29"
    ],
    "nota": ""
   },
@@ -35164,9 +38330,20 @@ window.BIBLIA_DATOS = {
     "Nm 26:65",
     "Nm 32:12",
     "Nm 34:19",
-    "Dt 1:36"
+    "Dt 1:36",
+    "Jos 14:6",
+    "Jos 14:7",
+    "Jos 14:10",
+    "Jos 14:13",
+    "Jos 14:14",
+    "Jos 15:13",
+    "Jos 15:14",
+    "Jos 15:16",
+    "Jos 15:17",
+    "Jos 15:18",
+    "Jos 21:12"
    ],
-   "nota": "Uno de los doce enviados a reconocer la tierra; Nm 32:12 lo llama «Caleb, hijo de Jephone Cenezeo»."
+   "nota": "Uno de los doce enviados a reconocer la tierra; Nm 32:12 lo llama «Caleb, hijo de Jephone Cenezeo». Jos 14:7-10: tenía cuarenta años cuando Moisés lo envió de Cades-barnea y «ochenta y cinco» cuando pide Hebrón, «estos cuarenta y cinco años» después (40 + 45 = 85, cálculo comprobado); recibe Hebrón (Jos 14:13)."
   },
   {
    "id": "Jephunneh_1",
@@ -35187,7 +38364,12 @@ window.BIBLIA_DATOS = {
     "Nm 26:65",
     "Nm 32:12",
     "Nm 34:19",
-    "Dt 1:36"
+    "Dt 1:36",
+    "Jos 14:6",
+    "Jos 14:13",
+    "Jos 14:14",
+    "Jos 15:13",
+    "Jos 21:12"
    ],
    "nota": "En la Reina-Valera 1909: Jephone."
   },
@@ -35459,9 +38641,10 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 13:23",
    "refs": [
-    "Nm 13:23"
+    "Nm 13:23",
+    "Jos 15:14"
    ],
-   "nota": "En la Reina-Valera 1909: Aimán."
+   "nota": "En la Reina-Valera 1909: Aimán. En Jos 15:14 la RV1909 escribe «Aiman»."
   },
   {
    "id": "Anak_1",
@@ -35478,9 +38661,12 @@ window.BIBLIA_DATOS = {
     "Nm 13:23",
     "Nm 13:29",
     "Nm 13:33",
-    "Dt 9:2"
+    "Dt 9:2",
+    "Jos 15:13",
+    "Jos 15:14",
+    "Jos 21:11"
    ],
-   "nota": "Antepasado de los «gigantes, hijos de Anac» (Nm 13:33 en la RV1909)."
+   "nota": "Antepasado de los «gigantes, hijos de Anac» (Nm 13:33 en la RV1909). Jos 15:14: Caleb echa de Hebrón a «Sesai, Aiman, y Talmai, hijos de Anac» (los de Nm 13:22)."
   },
   {
    "id": "Sheshai_1",
@@ -35494,7 +38680,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 13:23",
    "refs": [
-    "Nm 13:23"
+    "Nm 13:23",
+    "Jos 15:14"
    ],
    "nota": ""
   },
@@ -35510,7 +38697,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 13:23",
    "refs": [
-    "Nm 13:23"
+    "Nm 13:23",
+    "Jos 15:14"
    ],
    "nota": ""
   },
@@ -35639,7 +38827,14 @@ window.BIBLIA_DATOS = {
     "Dt 3:6",
     "Dt 4:46",
     "Dt 29:7",
-    "Dt 31:4"
+    "Dt 31:4",
+    "Jos 2:10",
+    "Jos 9:10",
+    "Jos 12:2",
+    "Jos 12:5",
+    "Jos 13:10",
+    "Jos 13:21",
+    "Jos 13:27"
    ],
    "nota": "Dt 2:24: «Sehón rey de Hesbón, Amorrheo»; sale a pelear en Jahaza («Jaas», Dt 2:32)."
   },
@@ -35665,7 +38860,13 @@ window.BIBLIA_DATOS = {
     "Dt 3:13",
     "Dt 4:47",
     "Dt 29:7",
-    "Dt 31:4"
+    "Dt 31:4",
+    "Jos 2:10",
+    "Jos 9:10",
+    "Jos 12:4",
+    "Jos 13:12",
+    "Jos 13:30",
+    "Jos 13:31"
    ],
    "nota": "Dt 3:11: su cama de hierro, de nueve codos, «¿no está en Rabbath de los hijos de Ammón?»."
   },
@@ -35716,7 +38917,8 @@ window.BIBLIA_DATOS = {
     "Nm 24:10",
     "Nm 24:12",
     "Nm 24:13",
-    "Nm 24:25"
+    "Nm 24:25",
+    "Jos 24:9"
    ],
    "nota": "Nm 22:4: «Balac, hijo de Zippor, era entonces rey de Moab»."
   },
@@ -35736,7 +38938,8 @@ window.BIBLIA_DATOS = {
     "Nm 22:4",
     "Nm 22:10",
     "Nm 22:16",
-    "Nm 23:18"
+    "Nm 23:18",
+    "Jos 24:9"
    ],
    "nota": "En la Reina-Valera 1909: Zippor."
   },
@@ -35802,7 +39005,10 @@ window.BIBLIA_DATOS = {
     "Nm 31:8",
     "Nm 31:16",
     "Dt 23:4",
-    "Dt 23:5"
+    "Dt 23:5",
+    "Jos 13:22",
+    "Jos 24:9",
+    "Jos 24:10"
    ],
    "nota": "Nm 22:5: Balac lo manda llamar «á Pethor, que está junto al río». Muere a espada en la guerra contra Madián (Nm 31:8). Dt 23:4: «Balaam hijo de Beor de Pethor de Mesopotamia de Siria»."
   },
@@ -35822,7 +39028,9 @@ window.BIBLIA_DATOS = {
     "Nm 24:3",
     "Nm 24:15",
     "Nm 31:8",
-    "Dt 23:4"
+    "Dt 23:4",
+    "Jos 13:22",
+    "Jos 24:9"
    ],
    "nota": ""
   },
@@ -35940,7 +39148,9 @@ window.BIBLIA_DATOS = {
     "Nm 26:31",
     "Nm 26:32",
     "Nm 27:1",
-    "Nm 36:1"
+    "Nm 36:1",
+    "Jos 17:1",
+    "Jos 17:3"
    ],
    "nota": "Hijo de Maquir (Nm 26:29). «Galaad» es también la región al oriente del Jordán (Nm 32)."
   },
@@ -35956,7 +39166,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 26:30",
    "refs": [
-    "Nm 26:30"
+    "Nm 26:30",
+    "Jos 17:2"
    ],
    "nota": ""
   },
@@ -35966,15 +39177,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jezer",
    "rol": "",
    "formas_rv1909": [
-    "Jezer"
+    "Jezer",
+    "Abiezer"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Nm 26:30",
    "refs": [
-    "Nm 26:30"
+    "Nm 26:30",
+    "Jos 17:2"
    ],
-   "nota": ""
+   "nota": "En Josué la RV1909 escribe también «Abiezer»."
   },
   {
    "id": "Asriel_1",
@@ -35982,15 +39195,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Asriel",
    "rol": "",
    "formas_rv1909": [
-    "Asriel"
+    "Asriel",
+    "Esriel"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Nm 26:31",
    "refs": [
-    "Nm 26:31"
+    "Nm 26:31",
+    "Jos 17:2"
    ],
-   "nota": ""
+   "nota": "En Josué la RV1909 escribe también «Esriel»."
   },
   {
    "id": "Shechem_2",
@@ -35998,15 +39213,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Sechêm",
    "rol": "",
    "formas_rv1909": [
-    "Sechêm"
+    "Sechêm",
+    "Sichêm"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Nm 26:31",
    "refs": [
-    "Nm 26:31"
+    "Nm 26:31",
+    "Jos 17:2"
    ],
-   "nota": "En la Reina-Valera 1909: Sechêm. Hijo de Galaad, de Manasés (Nm 26:31). Distinto de Siquem, hijo de Hamor (Gn 34)."
+   "nota": "En la Reina-Valera 1909: Sechêm. Hijo de Galaad, de Manasés (Nm 26:31). Distinto de Siquem, hijo de Hamor (Gn 34). En Josué la RV1909 escribe también «Sichêm»."
   },
   {
    "id": "Hepher_1",
@@ -36022,7 +39239,9 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 26:32",
     "Nm 26:33",
-    "Nm 27:1"
+    "Nm 27:1",
+    "Jos 17:2",
+    "Jos 17:3"
    ],
    "nota": "En la Reina-Valera 1909: Hepher."
   },
@@ -36038,7 +39257,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 26:32",
    "refs": [
-    "Nm 26:32"
+    "Nm 26:32",
+    "Jos 17:2"
    ],
    "nota": ""
   },
@@ -36056,7 +39276,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 26:33",
     "Nm 27:1",
-    "Nm 36:11"
+    "Nm 36:11",
+    "Jos 17:3"
    ],
    "nota": ""
   },
@@ -36074,7 +39295,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 26:33",
     "Nm 27:1",
-    "Nm 36:11"
+    "Nm 36:11",
+    "Jos 17:3"
    ],
    "nota": ""
   },
@@ -36093,7 +39315,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 26:33",
     "Nm 27:1",
-    "Nm 36:11"
+    "Nm 36:11",
+    "Jos 17:3"
    ],
    "nota": "Hija de Zelofehad (Nm 26:33; 27:1). Distinta de Milca, mujer de Nacor (Gn 11:29)."
   },
@@ -36111,7 +39334,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 26:33",
     "Nm 27:1",
-    "Nm 36:11"
+    "Nm 36:11",
+    "Jos 17:3"
    ],
    "nota": "Hija de Zelofehad (Nm 26:33). La RV1909 escribe «Noa»; distinta de Noé."
   },
@@ -36129,7 +39353,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 26:33",
     "Nm 27:1",
-    "Nm 36:11"
+    "Nm 36:11",
+    "Jos 17:3"
    ],
    "nota": ""
   },
@@ -36151,9 +39376,10 @@ window.BIBLIA_DATOS = {
     "Nm 36:2",
     "Nm 36:6",
     "Nm 36:10",
-    "Nm 36:11"
+    "Nm 36:11",
+    "Jos 17:3"
    ],
-   "nota": "En la Reina-Valera 1909: Salphaad."
+   "nota": "En la Reina-Valera 1909: Salphaad. Jos 17:3-4: sus hijas reclaman ante Eleazar y Josué la heredad que Moisés mandó darles (Nm 27)."
   },
   {
    "id": "Becher_2",
@@ -36226,15 +39452,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Evi",
    "rol": "rey de Madián",
    "formas_rv1909": [
-    "Evi"
+    "Evi",
+    "Hevi"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Nm 31:8",
    "refs": [
-    "Nm 31:8"
+    "Nm 31:8",
+    "Jos 13:21"
    ],
-   "nota": ""
+   "nota": "En Josué la RV1909 escribe también «Hevi»."
   },
   {
    "id": "Hur_2",
@@ -36248,7 +39476,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 31:8",
    "refs": [
-    "Nm 31:8"
+    "Nm 31:8",
+    "Jos 13:21"
    ],
    "nota": "Uno de los cinco reyes de Madián (Nm 31:8). Distinto de Hur, que acompaña a Moisés en Éxodo (Ex 17:10)."
   },
@@ -36264,7 +39493,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 31:8",
    "refs": [
-    "Nm 31:8"
+    "Nm 31:8",
+    "Jos 13:21"
    ],
    "nota": ""
   },
@@ -36280,7 +39510,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 31:8",
    "refs": [
-    "Nm 31:8"
+    "Nm 31:8",
+    "Jos 13:21"
    ],
    "nota": "En la Reina-Valera 1909: Recem."
   },
@@ -36290,15 +39521,17 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Zur",
    "rol": "rey de Madián",
    "formas_rv1909": [
-    "Zur"
+    "Zur",
+    "Sur"
    ],
    "sin_nombre": false,
    "sexo": "m",
    "primera_ref": "Nm 31:8",
    "refs": [
-    "Nm 31:8"
+    "Nm 31:8",
+    "Jos 13:21"
    ],
-   "nota": "Uno de los cinco reyes de Madián muertos en la guerra (Nm 31:8). BibleData lo distingue de Zur, padre de Cozbi (Nm 25:15); podrían ser el mismo, pero el texto no lo dice."
+   "nota": "Uno de los cinco reyes de Madián muertos en la guerra (Nm 31:8). BibleData lo distingue de Zur, padre de Cozbi (Nm 25:15); podrían ser el mismo, pero el texto no lo dice. En Josué la RV1909 escribe también «Sur»."
   },
   {
    "id": "Jair_1",
@@ -36620,6 +39853,312 @@ window.BIBLIA_DATOS = {
     "Nm 34:28"
    ],
    "nota": ""
+  },
+  {
+   "id": "Rahab_1",
+   "nombre": "Rahab",
+   "nombre_rv1909": "Rahab",
+   "rol": "mujer de Jericó que esconde a los espías",
+   "formas_rv1909": [
+    "Rahab"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Jos 2:1",
+   "refs": [
+    "Jos 2:1",
+    "Jos 2:3",
+    "Jos 6:17",
+    "Jos 6:23",
+    "Jos 6:25"
+   ],
+   "nota": "Jos 2:1: «una mujer ramera que se llamaba Rahab», de Jericó; esconde a los espías y es salvada con la casa de su padre (Jos 6:25: «habitó ella entre los Israelitas hasta hoy»)."
+  },
+  {
+   "id": "Achan_1",
+   "nombre": "Acán",
+   "nombre_rv1909": "Achân",
+   "rol": "",
+   "formas_rv1909": [
+    "Achân"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 7:1",
+   "refs": [
+    "Jos 7:1",
+    "Jos 7:18",
+    "Jos 7:19",
+    "Jos 7:20",
+    "Jos 7:24",
+    "Jos 22:20"
+   ],
+   "nota": "En la Reina-Valera 1909: Achân. Jos 7:1: «Achân, hijo de Carmi, hijo de Zabdi, hijo de Zera, de la tribu de Judá»; toma del anatema y lo apedrean en el valle de Acor (Jos 7:24-26). Jos 7:24 lo llama «Achân hijo de Zera» (descendiente)."
+  },
+  {
+   "id": "Carmi_2",
+   "nombre": "Carmi",
+   "nombre_rv1909": "Carmi",
+   "rol": "",
+   "formas_rv1909": [
+    "Carmi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 7:1",
+   "refs": [
+    "Jos 7:1",
+    "Jos 7:18"
+   ],
+   "nota": "Padre de Acán, de Judá (Jos 7:1). Distinto de Carmi hijo de Rubén (Gn 46:9)."
+  },
+  {
+   "id": "Zabdi_1",
+   "nombre": "Zabdi",
+   "nombre_rv1909": "Zabdi",
+   "rol": "",
+   "formas_rv1909": [
+    "Zabdi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 7:1",
+   "refs": [
+    "Jos 7:1",
+    "Jos 7:17",
+    "Jos 7:18"
+   ],
+   "nota": "Abuelo de Acán, hijo de Zera, de Judá (Jos 7:1)."
+  },
+  {
+   "id": "Adoni-zedek_1",
+   "nombre": "Adonisedec",
+   "nombre_rv1909": "Adonisedec",
+   "rol": "rey de Jerusalén, rey vencido por Josué",
+   "formas_rv1909": [
+    "Adonisedec"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 10:1",
+   "refs": [
+    "Jos 10:1",
+    "Jos 10:3"
+   ],
+   "nota": "Jos 10:1: «Adonisedec rey de Jerusalem». Reúne a los reyes amorreos contra Gabaón (Jos 10:3-5)."
+  },
+  {
+   "id": "Hoham_1",
+   "nombre": "Hoham",
+   "nombre_rv1909": "Oham",
+   "rol": "rey de Hebrón, rey vencido por Josué",
+   "formas_rv1909": [
+    "Oham"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 10:3",
+   "refs": [
+    "Jos 10:1",
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 12:10"
+   ],
+   "nota": "En la Reina-Valera 1909: Oham. Rey de Hebrón, uno de los cinco reyes amorreos que atacan Gabaón (Jos 10:3-5); muere en Maceda (Jos 10:26). La RV1909 escribe «Oham»."
+  },
+  {
+   "id": "Debir_1",
+   "nombre": "Debir",
+   "nombre_rv1909": "Debir",
+   "rol": "rey de Eglón, rey vencido por Josué",
+   "formas_rv1909": [
+    "Debir"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 10:3",
+   "refs": [
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 12:11"
+   ],
+   "nota": "Rey de Eglón, uno de los cinco reyes amorreos que atacan Gabaón (Jos 10:3-5); muere en Maceda (Jos 10:26). Distinto de la ciudad de Debir."
+  },
+  {
+   "id": "Japhia_1",
+   "nombre": "Jafía",
+   "nombre_rv1909": "Japhia",
+   "rol": "rey de Laquis, rey vencido por Josué",
+   "formas_rv1909": [
+    "Japhia"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 10:3",
+   "refs": [
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 12:11"
+   ],
+   "nota": "En la Reina-Valera 1909: Japhia. Rey de Laquis, uno de los cinco reyes amorreos que atacan Gabaón (Jos 10:3-5); muere en Maceda (Jos 10:26). Distinto de la ciudad de Jafía (Jos 19:12)."
+  },
+  {
+   "id": "Piram_1",
+   "nombre": "Piream",
+   "nombre_rv1909": "Phiream",
+   "rol": "rey de Jarmut, rey vencido por Josué",
+   "formas_rv1909": [
+    "Phiream"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 10:3",
+   "refs": [
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 12:10"
+   ],
+   "nota": "En la Reina-Valera 1909: Phiream. Rey de Jarmut («Jerimoth» en la RV1909), uno de los cinco reyes amorreos que atacan Gabaón (Jos 10:3-5); muere en Maceda (Jos 10:26). La RV1909 escribe «Phiream»."
+  },
+  {
+   "id": "Horam_1",
+   "nombre": "Horam",
+   "nombre_rv1909": "Horam",
+   "rol": "rey de Gezer, rey vencido por Josué",
+   "formas_rv1909": [
+    "Horam"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 10:33",
+   "refs": [
+    "Jos 10:28",
+    "Jos 10:33",
+    "Jos 12:16"
+   ],
+   "nota": "Jos 10:33: «Horam, rey de Gezer», sube en ayuda de Laquis y es vencido."
+  },
+  {
+   "id": "Jabin_1",
+   "nombre": "Jabín",
+   "nombre_rv1909": "Jabín",
+   "rol": "rey de Hazor, rey vencido por Josué",
+   "formas_rv1909": [
+    "Jabín"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 11:1",
+   "refs": [
+    "Jos 10:33",
+    "Jos 11:1",
+    "Jos 12:12"
+   ],
+   "nota": "Jos 11:1: «Jabín rey de Hasor» convoca a los reyes del norte; Josué toma Hazor y la quema (Jos 11:10-11). Puede no ser el Jabín de Jueces 4 (el texto no lo dice)."
+  },
+  {
+   "id": "Jobab_3",
+   "nombre": "Jobab",
+   "nombre_rv1909": "Jobab",
+   "rol": "rey de Madón, rey vencido por Josué",
+   "formas_rv1909": [
+    "Jobab"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 11:1",
+   "refs": [
+    "Jos 11:1",
+    "Jos 12:19"
+   ],
+   "nota": "Jos 11:1: «Jobab rey de Madón». Distinto de Jobab de Gn 10:29 y del rey de Edom (Gn 36:33)."
+  },
+  {
+   "id": "Arba_1",
+   "nombre": "Arba",
+   "nombre_rv1909": "Arba",
+   "rol": "",
+   "formas_rv1909": [
+    "Arba"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 14:15",
+   "refs": [
+    "Jos 14:15",
+    "Jos 15:13"
+   ],
+   "nota": "Jos 14:15: Hebrón «fué antes llamada Chîriath-arba; fué [Arba] un hombre grande entre los Anaceos» (el nombre va entre corchetes en la RV1909: palabra añadida por el traductor). Jos 15:13: «Chîriath-arba, del padre de Anac»."
+  },
+  {
+   "id": "Bohan_1",
+   "nombre": "Bohán",
+   "nombre_rv1909": "Bohán",
+   "rol": "su piedra marca el límite de Judá y Benjamín",
+   "formas_rv1909": [
+    "Bohán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 15:6",
+   "refs": [
+    "Jos 15:6",
+    "Jos 18:17"
+   ],
+   "nota": "Jos 15:6 y 18:17: «la piedra de Bohán, hijo de Rubén», hito del límite entre Judá y Benjamín (descendiente de Rubén)."
+  },
+  {
+   "id": "Achsah_1",
+   "nombre": "Acsa",
+   "nombre_rv1909": "Axa",
+   "rol": "",
+   "formas_rv1909": [
+    "Axa"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Jos 15:16",
+   "refs": [
+    "Jos 15:16",
+    "Jos 15:17"
+   ],
+   "nota": "En la Reina-Valera 1909: Axa. Hija de Caleb (Jos 15:16); Caleb la da por mujer a Otoniel, que toma Quiriat-sefer (Jos 15:17)."
+  },
+  {
+   "id": "Kenaz_2",
+   "nombre": "Quenaz",
+   "nombre_rv1909": "Cenez",
+   "rol": "",
+   "formas_rv1909": [
+    "Cenez"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 15:17",
+   "refs": [
+    "Jos 15:17"
+   ],
+   "nota": "En la Reina-Valera 1909: Cenez. Padre de Otoniel (Jos 15:17). BibleData lo toma por hermano de Caleb; Jos 15:17 se puede leer así o referirlo a Otoniel. Distinto de Cenez hijo de Elifaz (Gn 36:11)."
+  },
+  {
+   "id": "Othniel_1",
+   "nombre": "Otoniel",
+   "nombre_rv1909": "Othoniel",
+   "rol": "",
+   "formas_rv1909": [
+    "Othoniel"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Jos 15:17",
+   "refs": [
+    "Jos 15:17"
+   ],
+   "nota": "En la Reina-Valera 1909: Othoniel. Jos 15:17: «Othoniel, hijo de Cenez, hermano de Caleb»: el texto no deja claro si el hermano de Caleb es Otoniel o Cenez."
   }
  ],
  "relaciones": [
@@ -38994,7 +42533,7 @@ window.BIBLIA_DATOS = {
    "ref": "Gn 34:2",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Jos 24:32: «Hemor padre de Sichêm»."
   },
   {
    "de": "Jacob_1",
@@ -40317,7 +43856,7 @@ window.BIBLIA_DATOS = {
    "ref": "Gn 50:23",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": "También Nm 32:40: «Machîr hijo de Manasés»."
+   "nota": "También Nm 32:40: «Machîr hijo de Manasés». También Jos 17:3: «Machîr, hijo de Manasés»."
   },
   {
    "de": "Pharaoh_3",
@@ -40563,7 +44102,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar». También Dt 10:6: «su hijo Eleazar».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar». También Dt 10:6: «su hijo Eleazar». También Jos 24:33: «Eleazar, hijo de Aarón».",
    "cita": "tomóse Aarón por mujer á Elisabeth"
   },
   {
@@ -40698,7 +44237,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:25",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Nm 25:7: «Phinees, hijo de Eleazar».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Nm 25:7: «Phinees, hijo de Eleazar». También Jos 22:13: «Phinees hijo de Eleazar».",
    "cita": "Eleazar, hijo de Aarón, tomó para sí mujer de las hijas de Phutiel, la cual le parió á Phinees"
   },
   {
@@ -40795,7 +44334,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 33:11",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": "También Nm 13:9: «Oseas hijo de Nun». También Dt 1:38: «Josué hijo de Nun». También Dt 34:9: «Josué hijo de Nun»."
+   "nota": "También Nm 13:9: «Oseas hijo de Nun». También Dt 1:38: «Josué hijo de Nun». También Dt 34:9: «Josué hijo de Nun». También Jos 1:1: «Josué hijo de Nun». También Jos 24:29: «Josué, hijo de Nun»."
   },
   {
    "de": "Dibri_1",
@@ -40968,7 +44507,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 13:7",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "Nm 13:6 en la numeración inglesa. También Dt 1:36: «Caleb hijo de Jephone».",
+   "nota": "Nm 13:6 en la numeración inglesa. También Dt 1:36: «Caleb hijo de Jephone». También Jos 14:6: «Caleb, hijo de Jephone».",
    "cita": "Caleb hijo de Jephone"
   },
   {
@@ -41107,7 +44646,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 22:2",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Jos 24:9: «Balac hijo de Sephor».",
    "cita": "Balac, hijo de Zippor"
   },
   {
@@ -41117,7 +44656,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 22:5",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 31:8. También Dt 23:4: «Balaam hijo de Beor».",
+   "nota": "También Nm 31:8. También Dt 23:4: «Balaam hijo de Beor». También Jos 13:22: «Balaam adivino, hijo de Beor».",
    "cita": "Balaam hijo de Beor"
   },
   {
@@ -41167,7 +44706,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:29",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También Jos 17:3: «Galaad, hijo de Machîr».",
    "cita": "Machîr engendró á Galaad"
   },
   {
@@ -41213,7 +44752,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:32",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Jos 17:3: «Hepher, hijo de Galaad»."
   },
   {
    "de": "Gilead_1",
@@ -41231,7 +44770,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:33",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 27:1.",
+   "nota": "También Nm 27:1. También Jos 17:3: «Salphaad, hijo de Hepher».",
    "cita": "Salphaad, hijo de Hepher"
   },
   {
@@ -41241,7 +44780,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:33",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 27:1 y 36:11.",
+   "nota": "También Nm 27:1 y 36:11. También Jos 17:3: «Hogla».",
    "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
   },
   {
@@ -41251,7 +44790,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:33",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 27:1 y 36:11.",
+   "nota": "También Nm 27:1 y 36:11. También Jos 17:3: «Maala».",
    "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
   },
   {
@@ -41261,7 +44800,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:33",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 27:1 y 36:11.",
+   "nota": "También Nm 27:1 y 36:11. También Jos 17:3: «Milchâ».",
    "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
   },
   {
@@ -41271,7 +44810,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:33",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 27:1 y 36:11.",
+   "nota": "También Nm 27:1 y 36:11. También Jos 17:3: «Noa».",
    "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
   },
   {
@@ -41281,7 +44820,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 26:33",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 27:1 y 36:11.",
+   "nota": "También Nm 27:1 y 36:11. También Jos 17:3: «Tirsa».",
    "cita": "los nombres de las hijas de Salphaad fueron Maala, y Noa, y Hogla, y Milca, y Tirsa"
   },
   {
@@ -41410,6 +44949,76 @@ window.BIBLIA_DATOS = {
    "certeza": "explicito",
    "fuente": "bibledata",
    "nota": ""
+  },
+  {
+   "de": "Carmi_2",
+   "a": "Achan_1",
+   "tipo": "padre",
+   "ref": "Jos 7:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Achân, hijo de Carmi"
+  },
+  {
+   "de": "Zabdi_1",
+   "a": "Carmi_2",
+   "tipo": "padre",
+   "ref": "Jos 7:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Carmi, hijo de Zabdi"
+  },
+  {
+   "de": "Zerah_3",
+   "a": "Zabdi_1",
+   "tipo": "padre",
+   "ref": "Jos 7:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Zera hijo de Judá (Gn 38:30), por «de la tribu de Judá»; identificación de BibleData.",
+   "cita": "Zabdi, hijo de Zera, de la tribu de Judá"
+  },
+  {
+   "de": "Arba_1",
+   "a": "Anak_1",
+   "tipo": "padre",
+   "ref": "Jos 15:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "La ciudad lleva el nombre de Arba, «padre de Anac» (también Jos 21:11).",
+   "cita": "Chîriath-arba, del padre de Anac"
+  },
+  {
+   "de": "Caleb_1",
+   "a": "Achsah_1",
+   "tipo": "padre",
+   "ref": "Jos 15:16",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "mi hija Axa"
+  },
+  {
+   "de": "Achsah_1",
+   "a": "Othniel_1",
+   "tipo": "conyuge",
+   "ref": "Jos 15:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "él le dió por mujer á su hija Axa"
+  },
+  {
+   "de": "Kenaz_2",
+   "a": "Othniel_1",
+   "tipo": "padre",
+   "ref": "Jos 15:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Othoniel, hijo de Cenez"
   }
  ],
  "edades": [
@@ -43395,6 +47004,76 @@ window.BIBLIA_DATOS = {
    "cita": "a hundred and twenty years",
    "nota": "",
    "evento": "al despedirse del pueblo («soy hoy día», Dt 31:2)"
+  },
+  {
+   "persona": "Joshua_1",
+   "tipo": "total",
+   "tradicion": "TM",
+   "valor": 110,
+   "ref": "Jos 24:29",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "ciento y diez años",
+   "nota": ""
+  },
+  {
+   "persona": "Joshua_1",
+   "tipo": "total",
+   "tradicion": "LXX",
+   "valor": 110,
+   "ref": "Jos 24:29",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "a hundred and ten years",
+   "nota": ""
+  },
+  {
+   "persona": "Caleb_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 40,
+   "ref": "Jos 14:7",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "cuarenta años",
+   "nota": "",
+   "evento": "cuando Moisés lo envió de Cades-barnea a reconocer la tierra (Jos 14:7)"
+  },
+  {
+   "persona": "Caleb_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 40,
+   "ref": "Jos 14:7",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "forty years",
+   "nota": "",
+   "evento": "cuando Moisés lo envió de Cades-barnea a reconocer la tierra (Jos 14:7)"
+  },
+  {
+   "persona": "Caleb_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 85,
+   "ref": "Jos 14:10",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "ochenta y cinco años",
+   "nota": "",
+   "evento": "al pedir Hebrón a Josué («soy hoy día», Jos 14:10)"
+  },
+  {
+   "persona": "Caleb_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 85,
+   "ref": "Jos 14:10",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "eighty-five years",
+   "nota": "",
+   "evento": "al pedir Hebrón a Josué («soy hoy día», Jos 14:10)"
   }
  ],
  "pasajes": [
@@ -47577,6 +51256,526 @@ window.BIBLIA_DATOS = {
    "titulo_origen": "editorial",
    "resumen": "Desde el Nebo Dios muestra a Moisés la tierra; muere en Moab a los ciento veinte años; Josué le sucede.",
    "seccion": "Muerte de Moisés (Dt 34)"
+  },
+  {
+   "id": "jos-01",
+   "libro": "Jos",
+   "inicio": "Jos 1:1",
+   "fin": "Jos 1:9",
+   "titulo": "Dios habla a Josué",
+   "titulo_origen": "editorial",
+   "resumen": "Muerto Moisés, Dios manda a Josué pasar el Jordán con el pueblo: «Esfuérzate y sé valiente».",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-02",
+   "libro": "Jos",
+   "inicio": "Jos 1:10",
+   "fin": "Jos 1:18",
+   "titulo": "Preparativos para pasar",
+   "titulo_origen": "editorial",
+   "resumen": "Josué manda prevenir comida; Rubén, Gad y la media tribu de Manasés pasarán armados delante de sus hermanos.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-03",
+   "libro": "Jos",
+   "inicio": "Jos 2:1",
+   "fin": "Jos 2:14",
+   "titulo": "Rahab esconde a los espías",
+   "titulo_origen": "editorial",
+   "resumen": "Josué envía dos espías desde Sitim a Jericó; Rahab los esconde en su terrado y les pide un juramento.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-04",
+   "libro": "Jos",
+   "inicio": "Jos 2:15",
+   "fin": "Jos 2:24",
+   "titulo": "El cordón de grana",
+   "titulo_origen": "editorial",
+   "resumen": "Rahab los descuelga por la ventana; atará a ella un cordón de grana para que su casa se salve.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-05",
+   "libro": "Jos",
+   "inicio": "Jos 3:1",
+   "fin": "Jos 3:17",
+   "titulo": "El arca abre paso en el Jordán",
+   "titulo_origen": "editorial",
+   "resumen": "Los sacerdotes entran en el río con el arca; las aguas se detienen y el pueblo pasa en seco frente a Jericó.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-06",
+   "libro": "Jos",
+   "inicio": "Jos 4:1",
+   "fin": "Jos 4:14",
+   "titulo": "Las doce piedras del Jordán",
+   "titulo_origen": "editorial",
+   "resumen": "Un hombre por tribu saca una piedra del río; Josué pone otras doce en medio del Jordán.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-07",
+   "libro": "Jos",
+   "inicio": "Jos 4:15",
+   "fin": "Jos 4:24",
+   "titulo": "Las piedras de Gilgal",
+   "titulo_origen": "editorial",
+   "resumen": "Salen los sacerdotes y vuelven las aguas; el día diez del mes primero acampan en Gilgal y levantan las piedras.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-08",
+   "libro": "Jos",
+   "inicio": "Jos 5:1",
+   "fin": "Jos 5:12",
+   "titulo": "Circuncisión y Pascua en Gilgal",
+   "titulo_origen": "editorial",
+   "resumen": "Los nacidos en el desierto son circuncidados; celebran la Pascua y cesa el maná.",
+   "seccion": "Entrada en la tierra y paso del Jordán (Jos 1–5)"
+  },
+  {
+   "id": "jos-09",
+   "libro": "Jos",
+   "inicio": "Jos 5:13",
+   "fin": "Jos 6:5",
+   "titulo": "El príncipe del ejército de Jehová",
+   "titulo_origen": "editorial",
+   "resumen": "Junto a Jericó un varón con la espada desnuda se presenta como príncipe del ejército de Jehová; la orden de rodear la ciudad.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-10",
+   "libro": "Jos",
+   "inicio": "Jos 6:6",
+   "fin": "Jos 6:21",
+   "titulo": "Caen los muros de Jericó",
+   "titulo_origen": "editorial",
+   "resumen": "Siete días rodean la ciudad con el arca y las bocinas; al séptimo el pueblo grita, cae el muro y destruyen la ciudad.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-11",
+   "libro": "Jos",
+   "inicio": "Jos 6:22",
+   "fin": "Jos 6:27",
+   "titulo": "Rahab es salvada",
+   "titulo_origen": "editorial",
+   "resumen": "Los espías sacan a Rahab y a su familia; queman la ciudad y Josué maldice a quien la reedifique.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-12",
+   "libro": "Jos",
+   "inicio": "Jos 7:1",
+   "fin": "Jos 7:15",
+   "titulo": "Derrota en Hai",
+   "titulo_origen": "editorial",
+   "resumen": "Acán toma del anatema; Israel huye ante Hai y Josué se postra; Dios manda buscar al culpable.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-13",
+   "libro": "Jos",
+   "inicio": "Jos 7:16",
+   "fin": "Jos 7:26",
+   "titulo": "Acán es descubierto",
+   "titulo_origen": "editorial",
+   "resumen": "La suerte cae sobre Acán, que confiesa haber escondido un manto, plata y oro; es apedreado en el valle de Acor.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-14",
+   "libro": "Jos",
+   "inicio": "Jos 8:1",
+   "fin": "Jos 8:17",
+   "titulo": "La emboscada contra Hai",
+   "titulo_origen": "editorial",
+   "resumen": "Josué pone una emboscada detrás de la ciudad y finge huir; los de Hai salen tras Israel y dejan la ciudad abierta.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-15",
+   "libro": "Jos",
+   "inicio": "Jos 8:18",
+   "fin": "Jos 8:29",
+   "titulo": "Hai es tomada",
+   "titulo_origen": "editorial",
+   "resumen": "Josué extiende la lanza, la emboscada entra y quema la ciudad; el rey de Hai muere.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-16",
+   "libro": "Jos",
+   "inicio": "Jos 8:30",
+   "fin": "Jos 8:35",
+   "titulo": "El altar en el monte Ebal",
+   "titulo_origen": "editorial",
+   "resumen": "Josué edifica un altar en el Ebal, escribe la ley en piedras y la lee ante todo Israel, entre Ebal y Gerizim.",
+   "seccion": "Jericó y Hai (Jos 6–8)"
+  },
+  {
+   "id": "jos-17",
+   "libro": "Jos",
+   "inicio": "Jos 9:1",
+   "fin": "Jos 9:15",
+   "titulo": "El engaño de los gabaonitas",
+   "titulo_origen": "editorial",
+   "resumen": "Los de Gabaón fingen venir de tierra lejana con pan seco y odres rotos; Israel hace alianza sin consultar a Dios.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-18",
+   "libro": "Jos",
+   "inicio": "Jos 9:16",
+   "fin": "Jos 9:27",
+   "titulo": "Leñadores y aguadores",
+   "titulo_origen": "editorial",
+   "resumen": "Se descubre el engaño; por el juramento no los matan, pero serán leñadores y aguadores.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-19",
+   "libro": "Jos",
+   "inicio": "Jos 10:1",
+   "fin": "Jos 10:15",
+   "titulo": "Cinco reyes contra Gabaón; el sol se detiene",
+   "titulo_origen": "editorial",
+   "resumen": "Adonisedec y otros cuatro reyes atacan Gabaón; Josué acude desde Gilgal: «Sol, detente en Gabaón».",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-20",
+   "libro": "Jos",
+   "inicio": "Jos 10:16",
+   "fin": "Jos 10:27",
+   "titulo": "La cueva de Maceda",
+   "titulo_origen": "editorial",
+   "resumen": "Los cinco reyes se esconden en una cueva de Maceda; Josué los saca y los mata.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-21",
+   "libro": "Jos",
+   "inicio": "Jos 10:28",
+   "fin": "Jos 10:43",
+   "titulo": "Las ciudades del sur",
+   "titulo_origen": "editorial",
+   "resumen": "Josué toma Maceda, Libna, Laquis, Eglón, Hebrón y Debir, y vuelve a Gilgal.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-22",
+   "libro": "Jos",
+   "inicio": "Jos 11:1",
+   "fin": "Jos 11:15",
+   "titulo": "La coalición del norte",
+   "titulo_origen": "editorial",
+   "resumen": "Jabín rey de Hazor reúne a los reyes del norte junto a las aguas de Merom; Josué los vence y quema Hazor.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-23",
+   "libro": "Jos",
+   "inicio": "Jos 11:16",
+   "fin": "Jos 11:23",
+   "titulo": "Toda la tierra tomada",
+   "titulo_origen": "editorial",
+   "resumen": "Josué toma la tierra desde el monte Halac hasta Baal-gad y destruye a los anaceos; la tierra reposa.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-24",
+   "libro": "Jos",
+   "inicio": "Jos 12:1",
+   "fin": "Jos 12:6",
+   "titulo": "Los reyes vencidos al oriente",
+   "titulo_origen": "editorial",
+   "resumen": "Sehón y Og, vencidos por Moisés; su tierra dada a Rubén, Gad y la media tribu de Manasés.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-25",
+   "libro": "Jos",
+   "inicio": "Jos 12:7",
+   "fin": "Jos 12:24",
+   "titulo": "Los reyes vencidos al occidente",
+   "titulo_origen": "editorial",
+   "resumen": "Lista de los treinta y un reyes que venció Josué al occidente del Jordán.",
+   "seccion": "Gabaón y las campañas del sur y del norte (Jos 9–12)"
+  },
+  {
+   "id": "jos-26",
+   "libro": "Jos",
+   "inicio": "Jos 13:1",
+   "fin": "Jos 13:14",
+   "titulo": "La tierra que queda por tomar",
+   "titulo_origen": "editorial",
+   "resumen": "Josué es viejo y queda mucha tierra; Dios le manda repartirla; Leví no tiene heredad.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-27",
+   "libro": "Jos",
+   "inicio": "Jos 13:15",
+   "fin": "Jos 13:33",
+   "titulo": "Rubén, Gad y la media tribu de Manasés",
+   "titulo_origen": "editorial",
+   "resumen": "Las heredades que Moisés dio al oriente del Jordán, con sus ciudades.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-28",
+   "libro": "Jos",
+   "inicio": "Jos 14:1",
+   "fin": "Jos 14:15",
+   "titulo": "Caleb pide Hebrón",
+   "titulo_origen": "editorial",
+   "resumen": "Comienza el reparto en Canaán; Caleb, de ochenta y cinco años, pide el monte que le prometió Moisés y recibe Hebrón.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-29",
+   "libro": "Jos",
+   "inicio": "Jos 15:1",
+   "fin": "Jos 15:12",
+   "titulo": "Los límites de Judá",
+   "titulo_origen": "editorial",
+   "resumen": "El término de Judá por el sur, el oriente, el norte y el occidente.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-30",
+   "libro": "Jos",
+   "inicio": "Jos 15:13",
+   "fin": "Jos 15:19",
+   "titulo": "Caleb, Otoniel y Acsa",
+   "titulo_origen": "editorial",
+   "resumen": "Caleb echa de Hebrón a los hijos de Anac; Otoniel toma Debir y recibe a Acsa, que pide fuentes de aguas.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-31",
+   "libro": "Jos",
+   "inicio": "Jos 15:20",
+   "fin": "Jos 15:32",
+   "titulo": "Ciudades de Judá: el sur",
+   "titulo_origen": "editorial",
+   "resumen": "Las ciudades de Judá hacia el término de Edom, al mediodía.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-32",
+   "libro": "Jos",
+   "inicio": "Jos 15:33",
+   "fin": "Jos 15:47",
+   "titulo": "Ciudades de Judá: los llanos y la costa",
+   "titulo_origen": "editorial",
+   "resumen": "Las ciudades de los llanos y las de Ecrón, Asdod y Gaza hasta el río de Egipto.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-33",
+   "libro": "Jos",
+   "inicio": "Jos 15:48",
+   "fin": "Jos 15:63",
+   "titulo": "Ciudades de las montañas y del desierto",
+   "titulo_origen": "editorial",
+   "resumen": "Las ciudades de las montañas de Judá y del desierto; los jebuseos siguen en Jerusalén.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-34",
+   "libro": "Jos",
+   "inicio": "Jos 16:1",
+   "fin": "Jos 16:10",
+   "titulo": "La heredad de Efraín",
+   "titulo_origen": "editorial",
+   "resumen": "La suerte de los hijos de José y el término de Efraín; el cananeo sigue en Gezer.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-35",
+   "libro": "Jos",
+   "inicio": "Jos 17:1",
+   "fin": "Jos 17:18",
+   "titulo": "Manasés y las hijas de Zelofehad",
+   "titulo_origen": "editorial",
+   "resumen": "La heredad de Manasés; las hijas de Zelofehad reciben su parte; los hijos de José piden más tierra.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-36",
+   "libro": "Jos",
+   "inicio": "Jos 18:1",
+   "fin": "Jos 18:10",
+   "titulo": "Siloh: se describe la tierra",
+   "titulo_origen": "editorial",
+   "resumen": "El tabernáculo se levanta en Siloh; Josué envía hombres a describir la tierra y la reparte por suertes.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-37",
+   "libro": "Jos",
+   "inicio": "Jos 18:11",
+   "fin": "Jos 18:28",
+   "titulo": "La heredad de Benjamín",
+   "titulo_origen": "editorial",
+   "resumen": "El término de Benjamín entre Judá y José, y sus ciudades.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-38",
+   "libro": "Jos",
+   "inicio": "Jos 19:1",
+   "fin": "Jos 19:9",
+   "titulo": "La heredad de Simeón",
+   "titulo_origen": "editorial",
+   "resumen": "Simeón recibe su heredad dentro de la de Judá.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-39",
+   "libro": "Jos",
+   "inicio": "Jos 19:10",
+   "fin": "Jos 19:23",
+   "titulo": "Zabulón e Isacar",
+   "titulo_origen": "editorial",
+   "resumen": "Los términos y las ciudades de Zabulón y de Isacar.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-40",
+   "libro": "Jos",
+   "inicio": "Jos 19:24",
+   "fin": "Jos 19:39",
+   "titulo": "Aser y Neftalí",
+   "titulo_origen": "editorial",
+   "resumen": "Los términos y las ciudades de Aser y de Neftalí.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-41",
+   "libro": "Jos",
+   "inicio": "Jos 19:40",
+   "fin": "Jos 19:51",
+   "titulo": "Dan; la heredad de Josué",
+   "titulo_origen": "editorial",
+   "resumen": "La heredad de Dan, que toma Lesem; Israel da a Josué Timnat-sera; termina el reparto en Siloh.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-42",
+   "libro": "Jos",
+   "inicio": "Jos 20:1",
+   "fin": "Jos 20:9",
+   "titulo": "Las ciudades de refugio",
+   "titulo_origen": "editorial",
+   "resumen": "Seis ciudades para el que mata sin querer: Cedes, Siquem y Quiriat-arba; Beser, Ramot y Golán.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-43",
+   "libro": "Jos",
+   "inicio": "Jos 21:1",
+   "fin": "Jos 21:19",
+   "titulo": "Ciudades de los levitas: los hijos de Aarón",
+   "titulo_origen": "editorial",
+   "resumen": "Los levitas piden sus ciudades; los sacerdotes reciben trece ciudades de Judá, Simeón y Benjamín.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-44",
+   "libro": "Jos",
+   "inicio": "Jos 21:20",
+   "fin": "Jos 21:33",
+   "titulo": "Ciudades de coatitas y gersonitas",
+   "titulo_origen": "editorial",
+   "resumen": "Las ciudades de los demás coatitas y de los gersonitas, con sus ejidos.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-45",
+   "libro": "Jos",
+   "inicio": "Jos 21:34",
+   "fin": "Jos 21:45",
+   "titulo": "Ciudades de los meraritas; todo se cumplió",
+   "titulo_origen": "editorial",
+   "resumen": "Las ciudades de los meraritas; cuarenta y ocho en total. «No faltó palabra» de lo que Dios prometió.",
+   "seccion": "El reparto de la tierra (Jos 13–21)"
+  },
+  {
+   "id": "jos-46",
+   "libro": "Jos",
+   "inicio": "Jos 22:1",
+   "fin": "Jos 22:9",
+   "titulo": "Las tribus del oriente vuelven a casa",
+   "titulo_origen": "editorial",
+   "resumen": "Josué despide con bendición a Rubén, Gad y la media tribu de Manasés.",
+   "seccion": "El altar junto al Jordán (Jos 22)"
+  },
+  {
+   "id": "jos-47",
+   "libro": "Jos",
+   "inicio": "Jos 22:10",
+   "fin": "Jos 22:20",
+   "titulo": "El altar junto al Jordán",
+   "titulo_origen": "editorial",
+   "resumen": "Edifican un gran altar junto al Jordán; Israel se junta en Siloh y envía a Finees a pedir cuentas.",
+   "seccion": "El altar junto al Jordán (Jos 22)"
+  },
+  {
+   "id": "jos-48",
+   "libro": "Jos",
+   "inicio": "Jos 22:21",
+   "fin": "Jos 22:34",
+   "titulo": "Un testimonio entre nosotros",
+   "titulo_origen": "editorial",
+   "resumen": "Las tribus explican que el altar es testimonio, no para sacrificios; lo llaman «Ed».",
+   "seccion": "El altar junto al Jordán (Jos 22)"
+  },
+  {
+   "id": "jos-49",
+   "libro": "Jos",
+   "inicio": "Jos 23:1",
+   "fin": "Jos 23:16",
+   "titulo": "Despedida de Josué",
+   "titulo_origen": "editorial",
+   "resumen": "Josué, viejo, reúne a Israel: guarden la ley y no se mezclen con las naciones que quedan.",
+   "seccion": "Despedida de Josué y pacto en Siquem (Jos 23–24)"
+  },
+  {
+   "id": "jos-50",
+   "libro": "Jos",
+   "inicio": "Jos 24:1",
+   "fin": "Jos 24:13",
+   "titulo": "Josué recuerda la historia en Siquem",
+   "titulo_origen": "editorial",
+   "resumen": "En Siquem Josué repasa la historia desde Taré y Abraham hasta la entrada en la tierra.",
+   "seccion": "Despedida de Josué y pacto en Siquem (Jos 23–24)"
+  },
+  {
+   "id": "jos-51",
+   "libro": "Jos",
+   "inicio": "Jos 24:14",
+   "fin": "Jos 24:28",
+   "titulo": "El pacto en Siquem",
+   "titulo_origen": "editorial",
+   "resumen": "«Yo y mi casa serviremos á Jehová»: el pueblo elige servir a Dios; Josué escribe el pacto y pone una piedra.",
+   "seccion": "Despedida de Josué y pacto en Siquem (Jos 23–24)"
+  },
+  {
+   "id": "jos-52",
+   "libro": "Jos",
+   "inicio": "Jos 24:29",
+   "fin": "Jos 24:33",
+   "titulo": "Muerte de Josué y de Eleazar",
+   "titulo_origen": "editorial",
+   "resumen": "Josué muere a los ciento diez años; los huesos de José se entierran en Siquem; muere Eleazar.",
+   "seccion": "Despedida de Josué y pacto en Siquem (Jos 23–24)"
   }
  ],
  "menciones": [
@@ -71951,6 +76150,3114 @@ window.BIBLIA_DATOS = {
    "persona": "Moses_1",
    "inicio": 72,
    "fin": 78
+  },
+  {
+   "ref": "Jos 1:1",
+   "persona": "Moses_1",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 1:1",
+   "persona": "Joshua_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Jos 1:1",
+   "persona": "Nun_1",
+   "inicio": 94,
+   "fin": 97
+  },
+  {
+   "ref": "Jos 1:1",
+   "persona": "Moses_1",
+   "inicio": 111,
+   "fin": 117
+  },
+  {
+   "ref": "Jos 1:2",
+   "persona": "Moses_1",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 1:3",
+   "persona": "Moses_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 1:5",
+   "persona": "Moses_1",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "Jos 1:7",
+   "persona": "Moses_1",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 1:10",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 1:12",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 1:13",
+   "persona": "Moses_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 1:14",
+   "persona": "Moses_1",
+   "inicio": 80,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 1:15",
+   "persona": "Moses_1",
+   "inicio": 216,
+   "fin": 222
+  },
+  {
+   "ref": "Jos 1:16",
+   "persona": "Joshua_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 1:17",
+   "persona": "Moses_1",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 1:17",
+   "persona": "Moses_1",
+   "inicio": 134,
+   "fin": 140
+  },
+  {
+   "ref": "Jos 2:1",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 2:1",
+   "persona": "Nun_1",
+   "inicio": 17,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 2:1",
+   "persona": "Rahab_1",
+   "inicio": 194,
+   "fin": 199
+  },
+  {
+   "ref": "Jos 2:3",
+   "persona": "Rahab_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 2:10",
+   "persona": "Sihon_1",
+   "inicio": 213,
+   "fin": 218
+  },
+  {
+   "ref": "Jos 2:10",
+   "persona": "Og_1",
+   "inicio": 223,
+   "fin": 225
+  },
+  {
+   "ref": "Jos 2:23",
+   "persona": "Joshua_1",
+   "inicio": 78,
+   "fin": 83
+  },
+  {
+   "ref": "Jos 2:23",
+   "persona": "Nun_1",
+   "inicio": 92,
+   "fin": 95
+  },
+  {
+   "ref": "Jos 2:24",
+   "persona": "Joshua_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 3:1",
+   "persona": "Joshua_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 3:5",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 3:6",
+   "persona": "Joshua_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 3:7",
+   "persona": "Joshua_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 3:7",
+   "persona": "Moses_1",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 3:9",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 3:10",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 4:1",
+   "persona": "Joshua_1",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 4:4",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 4:5",
+   "persona": "Joshua_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 4:8",
+   "persona": "Joshua_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 4:8",
+   "persona": "Joshua_1",
+   "inicio": 141,
+   "fin": 146
+  },
+  {
+   "ref": "Jos 4:9",
+   "persona": "Joshua_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 4:10",
+   "persona": "Joshua_1",
+   "inicio": 130,
+   "fin": 135
+  },
+  {
+   "ref": "Jos 4:10",
+   "persona": "Moses_1",
+   "inicio": 190,
+   "fin": 196
+  },
+  {
+   "ref": "Jos 4:10",
+   "persona": "Joshua_1",
+   "inicio": 205,
+   "fin": 210
+  },
+  {
+   "ref": "Jos 4:12",
+   "persona": "Reuben_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 4:12",
+   "persona": "Gad_1",
+   "inicio": 42,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 4:12",
+   "persona": "Manasseh_1",
+   "inicio": 67,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 4:12",
+   "persona": "Moses_1",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "Jos 4:14",
+   "persona": "Joshua_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 4:14",
+   "persona": "Moses_1",
+   "inicio": 99,
+   "fin": 105
+  },
+  {
+   "ref": "Jos 4:15",
+   "persona": "Joshua_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 4:17",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 4:20",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 5:2",
+   "persona": "Joshua_1",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 5:3",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 5:4",
+   "persona": "Joshua_1",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 5:7",
+   "persona": "Joshua_1",
+   "inicio": 62,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 5:9",
+   "persona": "Joshua_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 5:13",
+   "persona": "Joshua_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 5:13",
+   "persona": "Joshua_1",
+   "inicio": 136,
+   "fin": 141
+  },
+  {
+   "ref": "Jos 5:14",
+   "persona": "Joshua_1",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 5:15",
+   "persona": "Joshua_1",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 5:15",
+   "persona": "Joshua_1",
+   "inicio": 127,
+   "fin": 132
+  },
+  {
+   "ref": "Jos 6:2",
+   "persona": "Joshua_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 6:6",
+   "persona": "Joshua_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 6:6",
+   "persona": "Nun_1",
+   "inicio": 25,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 6:8",
+   "persona": "Joshua_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 6:10",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 6:12",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 6:16",
+   "persona": "Joshua_1",
+   "inicio": 66,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 6:17",
+   "persona": "Rahab_1",
+   "inicio": 91,
+   "fin": 96
+  },
+  {
+   "ref": "Jos 6:22",
+   "persona": "Joshua_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 6:23",
+   "persona": "Rahab_1",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 6:25",
+   "persona": "Joshua_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 6:25",
+   "persona": "Rahab_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 6:25",
+   "persona": "Joshua_1",
+   "inicio": 181,
+   "fin": 186
+  },
+  {
+   "ref": "Jos 6:26",
+   "persona": "Joshua_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 6:27",
+   "persona": "Joshua_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 7:1",
+   "persona": "Achan_1",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Jos 7:1",
+   "persona": "Carmi_2",
+   "inicio": 89,
+   "fin": 94
+  },
+  {
+   "ref": "Jos 7:1",
+   "persona": "Zabdi_1",
+   "inicio": 104,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 7:1",
+   "persona": "Zerah_3",
+   "inicio": 119,
+   "fin": 123
+  },
+  {
+   "ref": "Jos 7:1",
+   "persona": "Judah_1",
+   "inicio": 140,
+   "fin": 144
+  },
+  {
+   "ref": "Jos 7:2",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 7:3",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 7:6",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 7:7",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 7:10",
+   "persona": "Joshua_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 7:16",
+   "persona": "Joshua_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 7:16",
+   "persona": "Judah_1",
+   "inicio": 100,
+   "fin": 104
+  },
+  {
+   "ref": "Jos 7:17",
+   "persona": "Judah_1",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 7:17",
+   "persona": "Zabdi_1",
+   "inicio": 152,
+   "fin": 157
+  },
+  {
+   "ref": "Jos 7:18",
+   "persona": "Achan_1",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 7:18",
+   "persona": "Carmi_2",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 7:18",
+   "persona": "Zabdi_1",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 7:18",
+   "persona": "Zerah_3",
+   "inicio": 98,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 7:18",
+   "persona": "Judah_1",
+   "inicio": 119,
+   "fin": 123
+  },
+  {
+   "ref": "Jos 7:19",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 7:19",
+   "persona": "Achan_1",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 7:20",
+   "persona": "Achan_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 7:20",
+   "persona": "Joshua_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 7:22",
+   "persona": "Joshua_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 7:23",
+   "persona": "Joshua_1",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "Jos 7:24",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 7:24",
+   "persona": "Achan_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 7:24",
+   "persona": "Zerah_3",
+   "inicio": 59,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 7:25",
+   "persona": "Joshua_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 8:1",
+   "persona": "Joshua_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 8:3",
+   "persona": "Joshua_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 8:3",
+   "persona": "Joshua_1",
+   "inicio": 79,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 8:9",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 8:9",
+   "persona": "Joshua_1",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 8:10",
+   "persona": "Joshua_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 8:13",
+   "persona": "Joshua_1",
+   "inicio": 141,
+   "fin": 146
+  },
+  {
+   "ref": "Jos 8:15",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 8:16",
+   "persona": "Joshua_1",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Jos 8:18",
+   "persona": "Joshua_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 8:18",
+   "persona": "Joshua_1",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 8:21",
+   "persona": "Joshua_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 8:23",
+   "persona": "Joshua_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 8:26",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 8:27",
+   "persona": "Joshua_1",
+   "inicio": 134,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 8:28",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 8:29",
+   "persona": "Joshua_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 8:30",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 8:31",
+   "persona": "Moses_1",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 8:31",
+   "persona": "Moses_1",
+   "inicio": 114,
+   "fin": 120
+  },
+  {
+   "ref": "Jos 8:32",
+   "persona": "Moses_1",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 8:33",
+   "persona": "Moses_1",
+   "inicio": 319,
+   "fin": 325
+  },
+  {
+   "ref": "Jos 8:35",
+   "persona": "Moses_1",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 8:35",
+   "persona": "Joshua_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "Jos 9:2",
+   "persona": "Joshua_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 9:3",
+   "persona": "Joshua_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 9:6",
+   "persona": "Joshua_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 9:8",
+   "persona": "Joshua_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 9:8",
+   "persona": "Joshua_1",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 9:10",
+   "persona": "Sihon_1",
+   "inicio": 95,
+   "fin": 100
+  },
+  {
+   "ref": "Jos 9:10",
+   "persona": "Og_1",
+   "inicio": 120,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 9:15",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 9:22",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 9:24",
+   "persona": "Joshua_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 9:24",
+   "persona": "Moses_1",
+   "inicio": 116,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 9:27",
+   "persona": "Joshua_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 10:1",
+   "persona": "Adoni-zedek_1",
+   "inicio": 7,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 10:1",
+   "persona": "Joshua_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 10:3",
+   "persona": "Adoni-zedek_1",
+   "inicio": 19,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 10:3",
+   "persona": "Hoham_1",
+   "inicio": 50,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 10:3",
+   "persona": "Piram_1",
+   "inicio": 74,
+   "fin": 81
+  },
+  {
+   "ref": "Jos 10:3",
+   "persona": "Japhia_1",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 10:3",
+   "persona": "Debir_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 10:4",
+   "persona": "Joshua_1",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 10:6",
+   "persona": "Joshua_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 10:7",
+   "persona": "Joshua_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 10:8",
+   "persona": "Joshua_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 10:9",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 10:12",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 10:15",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 10:17",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 10:18",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 10:20",
+   "persona": "Joshua_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 10:21",
+   "persona": "Joshua_1",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 10:22",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 10:24",
+   "persona": "Joshua_1",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 10:24",
+   "persona": "Joshua_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 10:25",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 10:26",
+   "persona": "Joshua_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 10:27",
+   "persona": "Joshua_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Jos 10:28",
+   "persona": "Joshua_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 10:29",
+   "persona": "Joshua_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 10:31",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 10:33",
+   "persona": "Horam_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 10:33",
+   "persona": "Joshua_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "Jos 10:34",
+   "persona": "Joshua_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 10:36",
+   "persona": "Joshua_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 10:38",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 10:40",
+   "persona": "Joshua_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 10:41",
+   "persona": "Joshua_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 10:42",
+   "persona": "Joshua_1",
+   "inicio": 37,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 10:43",
+   "persona": "Joshua_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 11:1",
+   "persona": "Jabin_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 11:1",
+   "persona": "Jobab_3",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 11:6",
+   "persona": "Joshua_1",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 11:7",
+   "persona": "Joshua_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 11:9",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 11:10",
+   "persona": "Joshua_1",
+   "inicio": 13,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 11:12",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 11:12",
+   "persona": "Moses_1",
+   "inicio": 133,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 11:13",
+   "persona": "Joshua_1",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 11:15",
+   "persona": "Moses_1",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 11:15",
+   "persona": "Moses_1",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 11:15",
+   "persona": "Joshua_1",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 11:15",
+   "persona": "Joshua_1",
+   "inicio": 96,
+   "fin": 101
+  },
+  {
+   "ref": "Jos 11:15",
+   "persona": "Moses_1",
+   "inicio": 168,
+   "fin": 174
+  },
+  {
+   "ref": "Jos 11:16",
+   "persona": "Joshua_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 11:18",
+   "persona": "Joshua_1",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 11:20",
+   "persona": "Moses_1",
+   "inicio": 220,
+   "fin": 226
+  },
+  {
+   "ref": "Jos 11:21",
+   "persona": "Joshua_1",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 11:21",
+   "persona": "Joshua_1",
+   "inicio": 172,
+   "fin": 177
+  },
+  {
+   "ref": "Jos 11:23",
+   "persona": "Joshua_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 11:23",
+   "persona": "Moses_1",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 11:23",
+   "persona": "Joshua_1",
+   "inicio": 98,
+   "fin": 103
+  },
+  {
+   "ref": "Jos 12:2",
+   "persona": "Sihon_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 12:4",
+   "persona": "Og_1",
+   "inicio": 18,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 12:5",
+   "persona": "Sihon_1",
+   "inicio": 141,
+   "fin": 146
+  },
+  {
+   "ref": "Jos 12:6",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 12:6",
+   "persona": "Moses_1",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 12:6",
+   "persona": "Manasseh_1",
+   "inicio": 169,
+   "fin": 176
+  },
+  {
+   "ref": "Jos 12:7",
+   "persona": "Joshua_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 12:7",
+   "persona": "Joshua_1",
+   "inicio": 213,
+   "fin": 218
+  },
+  {
+   "ref": "Jos 13:1",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 13:7",
+   "persona": "Manasseh_1",
+   "inicio": 87,
+   "fin": 94
+  },
+  {
+   "ref": "Jos 13:8",
+   "persona": "Moses_1",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 13:8",
+   "persona": "Moses_1",
+   "inicio": 152,
+   "fin": 158
+  },
+  {
+   "ref": "Jos 13:10",
+   "persona": "Sihon_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 13:12",
+   "persona": "Og_1",
+   "inicio": 17,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 13:12",
+   "persona": "Moses_1",
+   "inicio": 120,
+   "fin": 126
+  },
+  {
+   "ref": "Jos 13:14",
+   "persona": "Levi_1",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Sihon_1",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Moses_1",
+   "inicio": 118,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Evi_1",
+   "inicio": 155,
+   "fin": 159
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Rekem_1",
+   "inicio": 161,
+   "fin": 166
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Zur_2",
+   "inicio": 170,
+   "fin": 173
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Hur_2",
+   "inicio": 177,
+   "fin": 180
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Reba_1",
+   "inicio": 184,
+   "fin": 188
+  },
+  {
+   "ref": "Jos 13:21",
+   "persona": "Sihon_1",
+   "inicio": 203,
+   "fin": 208
+  },
+  {
+   "ref": "Jos 13:22",
+   "persona": "Balaam_1",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 13:22",
+   "persona": "Beor_2",
+   "inicio": 73,
+   "fin": 77
+  },
+  {
+   "ref": "Jos 13:23",
+   "persona": "Reuben_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Jos 13:23",
+   "persona": "Reuben_1",
+   "inicio": 107,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 13:24",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 13:24",
+   "persona": "Gad_1",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 13:24",
+   "persona": "Gad_1",
+   "inicio": 54,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 13:27",
+   "persona": "Sihon_1",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "Jos 13:28",
+   "persona": "Gad_1",
+   "inicio": 36,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 13:29",
+   "persona": "Moses_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 13:29",
+   "persona": "Manasseh_1",
+   "inicio": 50,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 13:29",
+   "persona": "Manasseh_1",
+   "inicio": 99,
+   "fin": 106
+  },
+  {
+   "ref": "Jos 13:30",
+   "persona": "Og_1",
+   "inicio": 69,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 13:31",
+   "persona": "Og_1",
+   "inicio": 78,
+   "fin": 80
+  },
+  {
+   "ref": "Jos 13:31",
+   "persona": "Machir_1",
+   "inicio": 106,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 13:31",
+   "persona": "Manasseh_1",
+   "inicio": 122,
+   "fin": 129
+  },
+  {
+   "ref": "Jos 13:31",
+   "persona": "Machir_1",
+   "inicio": 158,
+   "fin": 164
+  },
+  {
+   "ref": "Jos 13:32",
+   "persona": "Moses_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 13:33",
+   "persona": "Levi_1",
+   "inicio": 18,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 13:33",
+   "persona": "Moses_1",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 14:1",
+   "persona": "Eleazar_1",
+   "inicio": 108,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 14:1",
+   "persona": "Joshua_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 14:1",
+   "persona": "Nun_1",
+   "inicio": 143,
+   "fin": 146
+  },
+  {
+   "ref": "Jos 14:2",
+   "persona": "Moses_1",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 14:3",
+   "persona": "Moses_1",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Jos 14:4",
+   "persona": "Joseph_1",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 14:5",
+   "persona": "Moses_1",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 14:6",
+   "persona": "Judah_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 14:6",
+   "persona": "Joshua_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 14:6",
+   "persona": "Caleb_1",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 14:6",
+   "persona": "Jephunneh_1",
+   "inicio": 65,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 14:6",
+   "persona": "Moses_1",
+   "inicio": 121,
+   "fin": 127
+  },
+  {
+   "ref": "Jos 14:7",
+   "persona": "Moses_1",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 14:9",
+   "persona": "Moses_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 14:10",
+   "persona": "Moses_1",
+   "inicio": 131,
+   "fin": 137
+  },
+  {
+   "ref": "Jos 14:11",
+   "persona": "Moses_1",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 14:13",
+   "persona": "Joshua_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 14:13",
+   "persona": "Caleb_1",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 14:13",
+   "persona": "Jephunneh_1",
+   "inicio": 49,
+   "fin": 56
+  },
+  {
+   "ref": "Jos 14:14",
+   "persona": "Caleb_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 14:14",
+   "persona": "Jephunneh_1",
+   "inicio": 39,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 14:15",
+   "persona": "Arba_1",
+   "inicio": 49,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 15:1",
+   "persona": "Judah_1",
+   "inicio": 44,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 15:6",
+   "persona": "Bohan_1",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 15:6",
+   "persona": "Reuben_1",
+   "inicio": 125,
+   "fin": 130
+  },
+  {
+   "ref": "Jos 15:12",
+   "persona": "Judah_1",
+   "inicio": 84,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 15:13",
+   "persona": "Caleb_1",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 15:13",
+   "persona": "Jephunneh_1",
+   "inicio": 21,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 15:13",
+   "persona": "Judah_1",
+   "inicio": 59,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 15:13",
+   "persona": "Joshua_1",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "Jos 15:13",
+   "persona": "Anak_1",
+   "inicio": 149,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 15:14",
+   "persona": "Caleb_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:14",
+   "persona": "Anak_1",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 15:14",
+   "persona": "Sheshai_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 15:14",
+   "persona": "Ahiman_1",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 15:14",
+   "persona": "Talmai_1",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 15:14",
+   "persona": "Anak_1",
+   "inicio": 76,
+   "fin": 80
+  },
+  {
+   "ref": "Jos 15:16",
+   "persona": "Caleb_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 15:16",
+   "persona": "Achsah_1",
+   "inicio": 82,
+   "fin": 85
+  },
+  {
+   "ref": "Jos 15:17",
+   "persona": "Othniel_1",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 15:17",
+   "persona": "Kenaz_2",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 15:17",
+   "persona": "Caleb_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 15:17",
+   "persona": "Achsah_1",
+   "inicio": 84,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 15:18",
+   "persona": "Caleb_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 15:20",
+   "persona": "Judah_1",
+   "inicio": 53,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 15:21",
+   "persona": "Judah_1",
+   "inicio": 62,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 15:63",
+   "persona": "Judah_1",
+   "inicio": 60,
+   "fin": 64
+  },
+  {
+   "ref": "Jos 15:63",
+   "persona": "Judah_1",
+   "inicio": 147,
+   "fin": 151
+  },
+  {
+   "ref": "Jos 16:1",
+   "persona": "Joseph_1",
+   "inicio": 29,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 16:4",
+   "persona": "Joseph_1",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 16:5",
+   "persona": "Ephraim_1",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 16:8",
+   "persona": "Ephraim_1",
+   "inicio": 127,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 16:9",
+   "persona": "Ephraim_1",
+   "inicio": 57,
+   "fin": 64
+  },
+  {
+   "ref": "Jos 16:9",
+   "persona": "Manasseh_1",
+   "inicio": 105,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 17:1",
+   "persona": "Manasseh_1",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 17:1",
+   "persona": "Joseph_1",
+   "inicio": 69,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 17:1",
+   "persona": "Machir_1",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "Jos 17:1",
+   "persona": "Manasseh_1",
+   "inicio": 98,
+   "fin": 105
+  },
+  {
+   "ref": "Jos 17:1",
+   "persona": "Gilead_1",
+   "inicio": 120,
+   "fin": 126
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Manasseh_1",
+   "inicio": 45,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Iezer_1",
+   "inicio": 91,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Helek_1",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Asriel_1",
+   "inicio": 137,
+   "fin": 143
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Shechem_2",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Hepher_1",
+   "inicio": 183,
+   "fin": 189
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Shemida_1",
+   "inicio": 206,
+   "fin": 212
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Manasseh_1",
+   "inicio": 248,
+   "fin": 255
+  },
+  {
+   "ref": "Jos 17:2",
+   "persona": "Joseph_1",
+   "inicio": 264,
+   "fin": 268
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Zelophehad_1",
+   "inicio": 5,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Hepher_1",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Gilead_1",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Machir_1",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Manasseh_1",
+   "inicio": 71,
+   "fin": 78
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Mahlah_1",
+   "inicio": 144,
+   "fin": 149
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Noah_2",
+   "inicio": 151,
+   "fin": 154
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Hoglah_1",
+   "inicio": 156,
+   "fin": 161
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Milcah_2",
+   "inicio": 163,
+   "fin": 169
+  },
+  {
+   "ref": "Jos 17:3",
+   "persona": "Tirzah_1",
+   "inicio": 173,
+   "fin": 178
+  },
+  {
+   "ref": "Jos 17:4",
+   "persona": "Eleazar_1",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 17:4",
+   "persona": "Joshua_1",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 17:4",
+   "persona": "Nun_1",
+   "inicio": 64,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 17:4",
+   "persona": "Moses_1",
+   "inicio": 115,
+   "fin": 121
+  },
+  {
+   "ref": "Jos 17:6",
+   "persona": "Manasseh_1",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 17:6",
+   "persona": "Manasseh_1",
+   "inicio": 112,
+   "fin": 119
+  },
+  {
+   "ref": "Jos 17:8",
+   "persona": "Ephraim_1",
+   "inicio": 108,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 17:12",
+   "persona": "Manasseh_1",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 17:14",
+   "persona": "Joseph_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 17:14",
+   "persona": "Joshua_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 17:15",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 17:16",
+   "persona": "Joseph_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 17:17",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 17:17",
+   "persona": "Joseph_1",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 18:3",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 18:5",
+   "persona": "Joseph_1",
+   "inicio": 95,
+   "fin": 99
+  },
+  {
+   "ref": "Jos 18:7",
+   "persona": "Moses_1",
+   "inicio": 244,
+   "fin": 250
+  },
+  {
+   "ref": "Jos 18:8",
+   "persona": "Joshua_1",
+   "inicio": 52,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 18:9",
+   "persona": "Joshua_1",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 18:10",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 18:10",
+   "persona": "Joshua_1",
+   "inicio": 72,
+   "fin": 77
+  },
+  {
+   "ref": "Jos 18:11",
+   "persona": "Benjamin_1",
+   "inicio": 47,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 18:11",
+   "persona": "Judah_1",
+   "inicio": 125,
+   "fin": 129
+  },
+  {
+   "ref": "Jos 18:11",
+   "persona": "Joseph_1",
+   "inicio": 145,
+   "fin": 149
+  },
+  {
+   "ref": "Jos 18:14",
+   "persona": "Judah_1",
+   "inicio": 203,
+   "fin": 207
+  },
+  {
+   "ref": "Jos 18:17",
+   "persona": "Bohan_1",
+   "inicio": 134,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 18:17",
+   "persona": "Reuben_1",
+   "inicio": 149,
+   "fin": 154
+  },
+  {
+   "ref": "Jos 18:20",
+   "persona": "Benjamin_1",
+   "inicio": 90,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 18:21",
+   "persona": "Benjamin_1",
+   "inicio": 41,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 18:28",
+   "persona": "Benjamin_1",
+   "inicio": 129,
+   "fin": 137
+  },
+  {
+   "ref": "Jos 19:1",
+   "persona": "Simeon_1",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 19:1",
+   "persona": "Simeon_1",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 19:1",
+   "persona": "Judah_1",
+   "inicio": 147,
+   "fin": 151
+  },
+  {
+   "ref": "Jos 19:8",
+   "persona": "Simeon_1",
+   "inicio": 155,
+   "fin": 161
+  },
+  {
+   "ref": "Jos 19:9",
+   "persona": "Judah_1",
+   "inicio": 29,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 19:9",
+   "persona": "Simeon_1",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "Jos 19:9",
+   "persona": "Judah_1",
+   "inicio": 118,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 19:9",
+   "persona": "Simeon_1",
+   "inicio": 169,
+   "fin": 175
+  },
+  {
+   "ref": "Jos 19:10",
+   "persona": "Zebulun_1",
+   "inicio": 41,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 19:16",
+   "persona": "Zebulun_1",
+   "inicio": 35,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 19:17",
+   "persona": "Issachar_1",
+   "inicio": 27,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 19:17",
+   "persona": "Issachar_1",
+   "inicio": 54,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 19:23",
+   "persona": "Issachar_1",
+   "inicio": 47,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 19:24",
+   "persona": "Asher_1",
+   "inicio": 54,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 19:31",
+   "persona": "Asher_1",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 19:32",
+   "persona": "Naphtali_1",
+   "inicio": 39,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 19:32",
+   "persona": "Naphtali_1",
+   "inicio": 66,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 19:39",
+   "persona": "Naphtali_1",
+   "inicio": 47,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 19:40",
+   "persona": "Dan_1",
+   "inicio": 53,
+   "fin": 56
+  },
+  {
+   "ref": "Jos 19:47",
+   "persona": "Dan_1",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 19:47",
+   "persona": "Dan_1",
+   "inicio": 63,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 19:47",
+   "persona": "Dan_1",
+   "inicio": 207,
+   "fin": 210
+  },
+  {
+   "ref": "Jos 19:48",
+   "persona": "Dan_1",
+   "inicio": 47,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 19:49",
+   "persona": "Joshua_1",
+   "inicio": 111,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 19:49",
+   "persona": "Nun_1",
+   "inicio": 125,
+   "fin": 128
+  },
+  {
+   "ref": "Jos 19:51",
+   "persona": "Eleazar_1",
+   "inicio": 28,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 19:51",
+   "persona": "Joshua_1",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 19:51",
+   "persona": "Nun_1",
+   "inicio": 63,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 20:1",
+   "persona": "Joshua_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 20:2",
+   "persona": "Moses_1",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 21:1",
+   "persona": "Eleazar_1",
+   "inicio": 58,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 21:1",
+   "persona": "Joshua_1",
+   "inicio": 81,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 21:1",
+   "persona": "Nun_1",
+   "inicio": 95,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 21:2",
+   "persona": "Moses_1",
+   "inicio": 73,
+   "fin": 79
+  },
+  {
+   "ref": "Jos 21:4",
+   "persona": "Aaron_1",
+   "inicio": 94,
+   "fin": 99
+  },
+  {
+   "ref": "Jos 21:4",
+   "persona": "Judah_1",
+   "inicio": 152,
+   "fin": 156
+  },
+  {
+   "ref": "Jos 21:4",
+   "persona": "Benjamin_1",
+   "inicio": 187,
+   "fin": 195
+  },
+  {
+   "ref": "Jos 21:5",
+   "persona": "Kohath_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 21:5",
+   "persona": "Ephraim_1",
+   "inicio": 93,
+   "fin": 100
+  },
+  {
+   "ref": "Jos 21:5",
+   "persona": "Dan_1",
+   "inicio": 119,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 21:5",
+   "persona": "Manasseh_1",
+   "inicio": 147,
+   "fin": 154
+  },
+  {
+   "ref": "Jos 21:6",
+   "persona": "Gershon_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 21:6",
+   "persona": "Issachar_1",
+   "inicio": 57,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 21:6",
+   "persona": "Asher_1",
+   "inicio": 84,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 21:6",
+   "persona": "Naphtali_1",
+   "inicio": 107,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 21:6",
+   "persona": "Manasseh_1",
+   "inicio": 140,
+   "fin": 147
+  },
+  {
+   "ref": "Jos 21:7",
+   "persona": "Merari_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 21:7",
+   "persona": "Reuben_1",
+   "inicio": 77,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 21:7",
+   "persona": "Gad_1",
+   "inicio": 102,
+   "fin": 105
+  },
+  {
+   "ref": "Jos 21:7",
+   "persona": "Zebulun_1",
+   "inicio": 125,
+   "fin": 132
+  },
+  {
+   "ref": "Jos 21:8",
+   "persona": "Moses_1",
+   "inicio": 122,
+   "fin": 128
+  },
+  {
+   "ref": "Jos 21:9",
+   "persona": "Judah_1",
+   "inicio": 30,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 21:9",
+   "persona": "Simeon_1",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 21:10",
+   "persona": "Aaron_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 21:10",
+   "persona": "Levi_1",
+   "inicio": 87,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 21:11",
+   "persona": "Anak_1",
+   "inicio": 48,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 21:12",
+   "persona": "Caleb_1",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 21:12",
+   "persona": "Jephunneh_1",
+   "inicio": 67,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 21:13",
+   "persona": "Aaron_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 21:17",
+   "persona": "Benjamin_1",
+   "inicio": 17,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 21:19",
+   "persona": "Aaron_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 21:20",
+   "persona": "Kohath_1",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 21:20",
+   "persona": "Kohath_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 21:20",
+   "persona": "Ephraim_1",
+   "inicio": 133,
+   "fin": 140
+  },
+  {
+   "ref": "Jos 21:23",
+   "persona": "Dan_1",
+   "inicio": 17,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 21:25",
+   "persona": "Manasseh_1",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 21:26",
+   "persona": "Kohath_1",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Jos 21:27",
+   "persona": "Gershon_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 21:27",
+   "persona": "Manasseh_1",
+   "inicio": 124,
+   "fin": 131
+  },
+  {
+   "ref": "Jos 21:28",
+   "persona": "Issachar_1",
+   "inicio": 17,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 21:30",
+   "persona": "Asher_1",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 21:32",
+   "persona": "Naphtali_1",
+   "inicio": 17,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 21:34",
+   "persona": "Merari_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 21:34",
+   "persona": "Zebulun_1",
+   "inicio": 89,
+   "fin": 96
+  },
+  {
+   "ref": "Jos 21:36",
+   "persona": "Reuben_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 21:38",
+   "persona": "Gad_1",
+   "inicio": 15,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 21:40",
+   "persona": "Merari_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 22:1",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 22:1",
+   "persona": "Manasseh_1",
+   "inicio": 76,
+   "fin": 83
+  },
+  {
+   "ref": "Jos 22:2",
+   "persona": "Moses_1",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 22:4",
+   "persona": "Moses_1",
+   "inicio": 176,
+   "fin": 182
+  },
+  {
+   "ref": "Jos 22:5",
+   "persona": "Moses_1",
+   "inicio": 84,
+   "fin": 90
+  },
+  {
+   "ref": "Jos 22:6",
+   "persona": "Joshua_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 22:7",
+   "persona": "Manasseh_1",
+   "inicio": 28,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 22:7",
+   "persona": "Moses_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 22:7",
+   "persona": "Joshua_1",
+   "inicio": 99,
+   "fin": 104
+  },
+  {
+   "ref": "Jos 22:7",
+   "persona": "Joshua_1",
+   "inicio": 200,
+   "fin": 205
+  },
+  {
+   "ref": "Jos 22:9",
+   "persona": "Reuben_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 22:9",
+   "persona": "Gad_1",
+   "inicio": 36,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 22:9",
+   "persona": "Manasseh_1",
+   "inicio": 61,
+   "fin": 68
+  },
+  {
+   "ref": "Jos 22:9",
+   "persona": "Moses_1",
+   "inicio": 292,
+   "fin": 298
+  },
+  {
+   "ref": "Jos 22:10",
+   "persona": "Reuben_1",
+   "inicio": 84,
+   "fin": 89
+  },
+  {
+   "ref": "Jos 22:10",
+   "persona": "Gad_1",
+   "inicio": 105,
+   "fin": 108
+  },
+  {
+   "ref": "Jos 22:10",
+   "persona": "Manasseh_1",
+   "inicio": 130,
+   "fin": 137
+  },
+  {
+   "ref": "Jos 22:11",
+   "persona": "Reuben_1",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 22:11",
+   "persona": "Gad_1",
+   "inicio": 74,
+   "fin": 77
+  },
+  {
+   "ref": "Jos 22:11",
+   "persona": "Manasseh_1",
+   "inicio": 99,
+   "fin": 106
+  },
+  {
+   "ref": "Jos 22:13",
+   "persona": "Reuben_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 22:13",
+   "persona": "Gad_1",
+   "inicio": 69,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 22:13",
+   "persona": "Manasseh_1",
+   "inicio": 95,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 22:13",
+   "persona": "Phinehas_1",
+   "inicio": 129,
+   "fin": 136
+  },
+  {
+   "ref": "Jos 22:13",
+   "persona": "Eleazar_1",
+   "inicio": 145,
+   "fin": 152
+  },
+  {
+   "ref": "Jos 22:15",
+   "persona": "Reuben_1",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 22:15",
+   "persona": "Gad_1",
+   "inicio": 58,
+   "fin": 61
+  },
+  {
+   "ref": "Jos 22:15",
+   "persona": "Manasseh_1",
+   "inicio": 85,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 22:20",
+   "persona": "Achan_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 22:20",
+   "persona": "Zerah_3",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 22:21",
+   "persona": "Reuben_1",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 22:21",
+   "persona": "Gad_1",
+   "inicio": 43,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 22:21",
+   "persona": "Manasseh_1",
+   "inicio": 68,
+   "fin": 75
+  },
+  {
+   "ref": "Jos 22:25",
+   "persona": "Reuben_1",
+   "inicio": 78,
+   "fin": 83
+  },
+  {
+   "ref": "Jos 22:25",
+   "persona": "Gad_1",
+   "inicio": 95,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 22:30",
+   "persona": "Phinehas_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 22:30",
+   "persona": "Reuben_1",
+   "inicio": 164,
+   "fin": 169
+  },
+  {
+   "ref": "Jos 22:30",
+   "persona": "Gad_1",
+   "inicio": 185,
+   "fin": 188
+  },
+  {
+   "ref": "Jos 22:30",
+   "persona": "Manasseh_1",
+   "inicio": 204,
+   "fin": 211
+  },
+  {
+   "ref": "Jos 22:31",
+   "persona": "Phinehas_1",
+   "inicio": 7,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 22:31",
+   "persona": "Eleazar_1",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 22:31",
+   "persona": "Reuben_1",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 22:31",
+   "persona": "Gad_1",
+   "inicio": 80,
+   "fin": 83
+  },
+  {
+   "ref": "Jos 22:31",
+   "persona": "Manasseh_1",
+   "inicio": 102,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 22:32",
+   "persona": "Phinehas_1",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 22:32",
+   "persona": "Eleazar_1",
+   "inicio": 29,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 22:32",
+   "persona": "Reuben_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 22:32",
+   "persona": "Gad_1",
+   "inicio": 116,
+   "fin": 119
+  },
+  {
+   "ref": "Jos 22:33",
+   "persona": "Reuben_1",
+   "inicio": 188,
+   "fin": 193
+  },
+  {
+   "ref": "Jos 22:33",
+   "persona": "Gad_1",
+   "inicio": 209,
+   "fin": 212
+  },
+  {
+   "ref": "Jos 22:34",
+   "persona": "Reuben_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 22:34",
+   "persona": "Gad_1",
+   "inicio": 36,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 23:1",
+   "persona": "Joshua_1",
+   "inicio": 111,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 23:6",
+   "persona": "Moses_1",
+   "inicio": 89,
+   "fin": 95
+  },
+  {
+   "ref": "Jos 24:1",
+   "persona": "Joshua_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 24:2",
+   "persona": "Joshua_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 24:2",
+   "persona": "Terah_1",
+   "inicio": 142,
+   "fin": 147
+  },
+  {
+   "ref": "Jos 24:2",
+   "persona": "Abram_1",
+   "inicio": 158,
+   "fin": 165
+  },
+  {
+   "ref": "Jos 24:2",
+   "persona": "Nahor_2",
+   "inicio": 171,
+   "fin": 177
+  },
+  {
+   "ref": "Jos 24:3",
+   "persona": "Abram_1",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 24:3",
+   "persona": "Isaac_1",
+   "inicio": 134,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 24:4",
+   "persona": "Isaac_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 24:4",
+   "persona": "Jacob_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 24:4",
+   "persona": "Esau_1",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 24:4",
+   "persona": "Esau_1",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 24:4",
+   "persona": "Jacob_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 24:5",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 24:5",
+   "persona": "Aaron_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 24:9",
+   "persona": "Balak_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 24:9",
+   "persona": "Balaam_1",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "Jos 24:9",
+   "persona": "Beor_2",
+   "inicio": 120,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 24:10",
+   "persona": "Balaam_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 24:19",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 24:21",
+   "persona": "Joshua_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 24:22",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 24:24",
+   "persona": "Joshua_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 24:25",
+   "persona": "Joshua_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 24:26",
+   "persona": "Joshua_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 24:27",
+   "persona": "Joshua_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 24:28",
+   "persona": "Joshua_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 24:29",
+   "persona": "Joshua_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 24:29",
+   "persona": "Nun_1",
+   "inicio": 46,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 24:31",
+   "persona": "Joshua_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 24:31",
+   "persona": "Joshua_1",
+   "inicio": 107,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 24:32",
+   "persona": "Joseph_1",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 24:32",
+   "persona": "Jacob_1",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 24:32",
+   "persona": "Shechem_1",
+   "inicio": 161,
+   "fin": 167
+  },
+  {
+   "ref": "Jos 24:32",
+   "persona": "Joseph_1",
+   "inicio": 221,
+   "fin": 225
+  },
+  {
+   "ref": "Jos 24:33",
+   "persona": "Eleazar_1",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 24:33",
+   "persona": "Aaron_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 24:33",
+   "persona": "Phinehas_1",
+   "inicio": 74,
+   "fin": 81
   }
  ],
  "lugares": [
@@ -72168,7 +79475,8 @@ window.BIBLIA_DATOS = {
     "Gn 2:14",
     "Gn 15:18",
     "Dt 1:7",
-    "Dt 11:24"
+    "Dt 11:24",
+    "Jos 1:4"
    ],
    "ubicacion": {
     "identificacion": "Euphrates River",
@@ -72535,7 +79843,9 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Gn 10:19",
-    "Gn 49:13"
+    "Gn 49:13",
+    "Jos 11:8",
+    "Jos 19:28"
    ],
    "ubicacion": {
     "identificacion": "Sandikli archaeological site in Sidon",
@@ -72607,7 +79917,10 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Gn 10:19",
-    "Dt 2:23"
+    "Dt 2:23",
+    "Jos 10:41",
+    "Jos 11:22",
+    "Jos 15:47"
    ],
    "ubicacion": {
     "identificacion": "Tell Harube",
@@ -73072,7 +80385,15 @@ window.BIBLIA_DATOS = {
     "Nm 34:29",
     "Nm 35:10",
     "Nm 35:14",
-    "Dt 32:49"
+    "Dt 32:49",
+    "Jos 5:12",
+    "Jos 14:1",
+    "Jos 21:2",
+    "Jos 22:9",
+    "Jos 22:10",
+    "Jos 22:11",
+    "Jos 22:32",
+    "Jos 24:3"
    ],
    "ubicacion": {
     "identificacion": "Canaan",
@@ -73138,7 +80459,33 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Gn 12:8",
-    "Gn 13:3"
+    "Gn 13:3",
+    "Jos 7:2",
+    "Jos 7:3",
+    "Jos 7:4",
+    "Jos 7:5",
+    "Jos 8:1",
+    "Jos 8:2",
+    "Jos 8:3",
+    "Jos 8:9",
+    "Jos 8:10",
+    "Jos 8:11",
+    "Jos 8:12",
+    "Jos 8:14",
+    "Jos 8:16",
+    "Jos 8:17",
+    "Jos 8:18",
+    "Jos 8:21",
+    "Jos 8:23",
+    "Jos 8:24",
+    "Jos 8:25",
+    "Jos 8:26",
+    "Jos 8:28",
+    "Jos 8:29",
+    "Jos 9:3",
+    "Jos 10:1",
+    "Jos 10:2",
+    "Jos 12:9"
    ],
    "ubicacion": {
     "identificacion": "Et Tell",
@@ -73308,7 +80655,8 @@ window.BIBLIA_DATOS = {
    "nombre": "Beerseba",
    "nombre_rv1909": "Beer-seba",
    "formas_rv1909": [
-    "Beer-seba"
+    "Beer-seba",
+    "Beersebah"
    ],
    "tipo": "ciudad",
    "refs": [
@@ -73321,7 +80669,9 @@ window.BIBLIA_DATOS = {
     "Gn 26:33",
     "Gn 28:10",
     "Gn 46:1",
-    "Gn 46:5"
+    "Gn 46:5",
+    "Jos 15:28",
+    "Jos 19:2"
    ],
    "ubicacion": {
     "identificacion": "Tel Beer Sheva",
@@ -73405,7 +80755,17 @@ window.BIBLIA_DATOS = {
     "Gn 35:7",
     "Gn 35:8",
     "Gn 35:15",
-    "Gn 35:16"
+    "Gn 35:16",
+    "Jos 7:2",
+    "Jos 8:9",
+    "Jos 8:12",
+    "Jos 8:17",
+    "Jos 12:9",
+    "Jos 12:16",
+    "Jos 16:1",
+    "Jos 16:2",
+    "Jos 18:13",
+    "Jos 18:22"
    ],
    "ubicacion": {
     "identificacion": "Beitin",
@@ -73542,7 +80902,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Gn 14:14"
+    "Gn 14:14",
+    "Jos 19:47"
    ],
    "ubicacion": {
     "identificacion": "Tel Dan",
@@ -73635,7 +80996,9 @@ window.BIBLIA_DATOS = {
     "Nm 21:4",
     "Nm 24:18",
     "Nm 33:37",
-    "Nm 34:3"
+    "Nm 34:3",
+    "Jos 15:1",
+    "Jos 15:21"
    ],
    "ubicacion": {
     "identificacion": "Buseira",
@@ -73927,7 +81290,21 @@ window.BIBLIA_DATOS = {
     "Dt 29:2",
     "Dt 29:16",
     "Dt 29:25",
-    "Dt 34:11"
+    "Dt 34:11",
+    "Jos 2:10",
+    "Jos 5:4",
+    "Jos 5:5",
+    "Jos 5:6",
+    "Jos 5:9",
+    "Jos 9:9",
+    "Jos 13:3",
+    "Jos 24:4",
+    "Jos 24:5",
+    "Jos 24:6",
+    "Jos 24:7",
+    "Jos 24:14",
+    "Jos 24:17",
+    "Jos 24:32"
    ],
    "ubicacion": {
     "identificacion": "Ain Shams",
@@ -74122,7 +81499,21 @@ window.BIBLIA_DATOS = {
     "Dt 3:15",
     "Dt 3:16",
     "Dt 4:43",
-    "Dt 34:1"
+    "Dt 34:1",
+    "Jos 12:2",
+    "Jos 12:5",
+    "Jos 13:11",
+    "Jos 13:25",
+    "Jos 13:31",
+    "Jos 17:1",
+    "Jos 17:5",
+    "Jos 17:6",
+    "Jos 20:8",
+    "Jos 21:38",
+    "Jos 22:9",
+    "Jos 22:13",
+    "Jos 22:15",
+    "Jos 22:32"
    ],
    "ubicacion": {
     "identificacion": "Tell edh Dhahab esh Sherqiyeh",
@@ -74281,7 +81672,8 @@ window.BIBLIA_DATOS = {
    "nombre": "Hebrón",
    "nombre_rv1909": "Hebrón",
    "formas_rv1909": [
-    "Hebrón"
+    "Hebrón",
+    "Chîriath-arba"
    ],
    "tipo": "ciudad",
    "refs": [
@@ -74289,7 +81681,22 @@ window.BIBLIA_DATOS = {
     "Gn 23:2",
     "Gn 23:19",
     "Gn 35:27",
-    "Nm 13:23"
+    "Nm 13:23",
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 10:36",
+    "Jos 10:39",
+    "Jos 11:21",
+    "Jos 12:10",
+    "Jos 14:13",
+    "Jos 14:14",
+    "Jos 14:15",
+    "Jos 15:13",
+    "Jos 15:54",
+    "Jos 20:7",
+    "Jos 21:11",
+    "Jos 21:13"
    ],
    "ubicacion": {
     "identificacion": "Tel Rumeida",
@@ -74376,7 +81783,8 @@ window.BIBLIA_DATOS = {
     "Gn 32:22",
     "Nm 21:24",
     "Dt 2:37",
-    "Dt 3:16"
+    "Dt 3:16",
+    "Jos 12:2"
    ],
    "ubicacion": {
     "identificacion": "Zarqa River",
@@ -74447,7 +81855,65 @@ window.BIBLIA_DATOS = {
     "Dt 30:18",
     "Dt 31:2",
     "Dt 31:13",
-    "Dt 32:47"
+    "Dt 32:47",
+    "Jos 1:2",
+    "Jos 1:11",
+    "Jos 1:14",
+    "Jos 1:15",
+    "Jos 2:7",
+    "Jos 2:10",
+    "Jos 3:1",
+    "Jos 3:8",
+    "Jos 3:11",
+    "Jos 3:13",
+    "Jos 3:14",
+    "Jos 3:15",
+    "Jos 3:17",
+    "Jos 4:1",
+    "Jos 4:3",
+    "Jos 4:5",
+    "Jos 4:7",
+    "Jos 4:8",
+    "Jos 4:9",
+    "Jos 4:10",
+    "Jos 4:16",
+    "Jos 4:17",
+    "Jos 4:18",
+    "Jos 4:19",
+    "Jos 4:20",
+    "Jos 4:22",
+    "Jos 4:23",
+    "Jos 5:1",
+    "Jos 7:7",
+    "Jos 9:1",
+    "Jos 9:10",
+    "Jos 12:1",
+    "Jos 12:7",
+    "Jos 13:8",
+    "Jos 13:23",
+    "Jos 13:27",
+    "Jos 13:32",
+    "Jos 14:3",
+    "Jos 15:5",
+    "Jos 16:1",
+    "Jos 16:7",
+    "Jos 17:5",
+    "Jos 18:7",
+    "Jos 18:12",
+    "Jos 18:19",
+    "Jos 18:20",
+    "Jos 19:22",
+    "Jos 19:33",
+    "Jos 19:34",
+    "Jos 20:8",
+    "Jos 22:4",
+    "Jos 22:7",
+    "Jos 22:10",
+    "Jos 22:11",
+    "Jos 22:25",
+    "Jos 23:4",
+    "Jos 24:8",
+    "Jos 24:11"
    ],
    "ubicacion": {
     "identificacion": "Jordan River",
@@ -74488,7 +81954,11 @@ window.BIBLIA_DATOS = {
     "Dt 1:19",
     "Dt 1:46",
     "Dt 2:14",
-    "Dt 9:23"
+    "Dt 9:23",
+    "Jos 10:41",
+    "Jos 14:6",
+    "Jos 14:7",
+    "Jos 15:3"
    ],
    "ubicacion": {
     "identificacion": "Ain el Qudeirat",
@@ -74520,7 +81990,9 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 28:19",
     "Gn 35:6",
-    "Gn 48:3"
+    "Gn 48:3",
+    "Jos 16:2",
+    "Jos 18:13"
    ],
    "ubicacion": {
     "identificacion": "Beitin",
@@ -74584,7 +82056,10 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Gn 32:2"
+    "Gn 32:2",
+    "Jos 13:26",
+    "Jos 13:30",
+    "Jos 21:38"
    ],
    "ubicacion": {
     "identificacion": "Tell edh Dhahab el Gharbi",
@@ -74759,7 +82234,8 @@ window.BIBLIA_DATOS = {
     "Nm 31:3",
     "Nm 31:7",
     "Nm 31:8",
-    "Nm 31:9"
+    "Nm 31:9",
+    "Jos 13:21"
    ],
    "ubicacion": {
     "identificacion": "Al Bad",
@@ -74917,7 +82393,10 @@ window.BIBLIA_DATOS = {
     "Dt 2:12",
     "Dt 2:22",
     "Dt 2:29",
-    "Dt 33:2"
+    "Dt 33:2",
+    "Jos 11:17",
+    "Jos 12:7",
+    "Jos 24:4"
    ],
    "ubicacion": {
     "identificacion": "Jebel esh Shera",
@@ -75293,7 +82772,13 @@ window.BIBLIA_DATOS = {
     "Gn 35:4",
     "Gn 37:12",
     "Gn 37:13",
-    "Gn 37:14"
+    "Gn 37:14",
+    "Jos 17:7",
+    "Jos 20:7",
+    "Jos 21:21",
+    "Jos 24:1",
+    "Jos 24:25",
+    "Jos 24:32"
    ],
    "ubicacion": {
     "identificacion": "Tell Balatah",
@@ -75312,11 +82797,20 @@ window.BIBLIA_DATOS = {
    "nombre": "Siloh",
    "nombre_rv1909": "Shiloh",
    "formas_rv1909": [
-    "Shiloh"
+    "Shiloh",
+    "Silo"
    ],
    "tipo": "otro",
    "refs": [
-    "Gn 49:10"
+    "Gn 49:10",
+    "Jos 18:1",
+    "Jos 18:8",
+    "Jos 18:9",
+    "Jos 18:10",
+    "Jos 19:51",
+    "Jos 21:2",
+    "Jos 22:9",
+    "Jos 22:12"
    ],
    "ubicacion": {
     "identificacion": "Khirbet Seilun",
@@ -75417,11 +82911,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Sucot",
    "nombre_rv1909": "Succoth",
    "formas_rv1909": [
-    "Succoth"
+    "Succoth",
+    "Sucoth"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Gn 33:17"
+    "Gn 33:17",
+    "Jos 13:27"
    ],
    "ubicacion": {
     "identificacion": "Tell Deir Alla",
@@ -75807,7 +83303,10 @@ window.BIBLIA_DATOS = {
     "Ex 13:18",
     "Ex 15:4",
     "Ex 15:22",
-    "Dt 11:4"
+    "Dt 11:4",
+    "Jos 2:10",
+    "Jos 4:23",
+    "Jos 24:6"
    ],
    "ubicacion": {
     "identificacion": "Gulf of Suez",
@@ -76374,7 +83873,8 @@ window.BIBLIA_DATOS = {
    "nombre": "Campos de Moab",
    "nombre_rv1909": "campos de Moab",
    "formas_rv1909": [
-    "campos de Moab"
+    "campos de Moab",
+    "llanos de Moab"
    ],
    "tipo": "region",
    "refs": [
@@ -76387,7 +83887,8 @@ window.BIBLIA_DATOS = {
     "Nm 35:1",
     "Nm 36:13",
     "Dt 34:1",
-    "Dt 34:8"
+    "Dt 34:8",
+    "Jos 13:32"
    ],
    "ubicacion": {
     "identificacion": "Tall el Hammam",
@@ -76498,11 +83999,15 @@ window.BIBLIA_DATOS = {
    "nombre": "Torrente de Egipto",
    "nombre_rv1909": "torrente de Egipto",
    "formas_rv1909": [
-    "torrente de Egipto"
+    "torrente de Egipto",
+    "arroyo de Egipto",
+    "río de Egipto"
    ],
    "tipo": "rio",
    "refs": [
-    "Nm 34:5"
+    "Nm 34:5",
+    "Jos 15:4",
+    "Jos 15:47"
    ],
    "ubicacion": {
     "identificacion": "Wadi al Arish",
@@ -76541,14 +84046,20 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "gran mar",
    "formas_rv1909": [
     "gran mar",
-    "mar postrera"
+    "mar postrera",
+    "mar grande"
    ],
    "tipo": "mar",
    "refs": [
     "Nm 34:6",
     "Nm 34:7",
     "Dt 11:24",
-    "Dt 34:2"
+    "Dt 34:2",
+    "Jos 1:4",
+    "Jos 9:1",
+    "Jos 15:12",
+    "Jos 15:47",
+    "Jos 23:4"
    ],
    "ubicacion": {
     "identificacion": "Mediterranean Sea",
@@ -76569,14 +84080,20 @@ window.BIBLIA_DATOS = {
    "formas_rv1909": [
     "mar salado",
     "mar Salado",
-    "mar del llano"
+    "mar del llano",
+    "mar de los llanos"
    ],
    "tipo": "mar",
    "refs": [
     "Nm 34:3",
     "Nm 34:12",
     "Dt 3:17",
-    "Dt 4:49"
+    "Dt 4:49",
+    "Jos 3:16",
+    "Jos 12:3",
+    "Jos 15:2",
+    "Jos 15:5",
+    "Jos 18:19"
    ],
    "ubicacion": {
     "identificacion": "Dead Sea",
@@ -76595,11 +84112,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Mar de Cineret (mar de Galilea)",
    "nombre_rv1909": "mar de Cinnereth",
    "formas_rv1909": [
-    "mar de Cinnereth"
+    "mar de Cinnereth",
+    "mar de Cinneroth"
    ],
    "tipo": "mar",
    "refs": [
-    "Nm 34:11"
+    "Nm 34:11",
+    "Jos 12:3",
+    "Jos 13:27"
    ],
    "ubicacion": {
     "identificacion": "Sea of Galilee",
@@ -76815,11 +84335,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Bamot-baal",
    "nombre_rv1909": "altos de Baal",
    "formas_rv1909": [
-    "altos de Baal"
+    "altos de Baal",
+    "Bamoth-baal"
    ],
    "tipo": "monte",
    "refs": [
-    "Nm 22:41"
+    "Nm 22:41",
+    "Jos 13:17"
    ],
    "ubicacion": {
     "identificacion": "Khirbet el Quweiqiyeh",
@@ -76894,12 +84416,14 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Emath",
    "formas_rv1909": [
     "Emath",
-    "Hamath"
+    "Hamath",
+    "entrar en Hamath"
    ],
    "tipo": "ciudad",
    "refs": [
     "Nm 13:22",
-    "Nm 34:8"
+    "Nm 34:8",
+    "Jos 13:5"
    ],
    "ubicacion": {
     "identificacion": "Labweh",
@@ -77011,7 +84535,10 @@ window.BIBLIA_DATOS = {
     "Dt 2:19",
     "Dt 2:37",
     "Dt 3:11",
-    "Dt 3:16"
+    "Dt 3:16",
+    "Jos 12:2",
+    "Jos 13:10",
+    "Jos 13:25"
    ],
    "ubicacion": {
     "identificacion": "Amman",
@@ -77177,11 +84704,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Subida de Acrabim",
    "nombre_rv1909": "Acrabbim",
    "formas_rv1909": [
-    "Acrabbim"
+    "Acrabbim",
+    "Acrabim"
    ],
    "tipo": "otro",
    "refs": [
-    "Nm 34:4"
+    "Nm 34:4",
+    "Jos 15:3"
    ],
    "ubicacion": {
     "identificacion": "Ma’ale Akrabbim",
@@ -77325,7 +84854,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Nm 21:1",
-    "Nm 33:40"
+    "Nm 33:40",
+    "Jos 12:14"
    ],
    "ubicacion": {
     "identificacion": "Tel Arad",
@@ -77395,7 +84925,11 @@ window.BIBLIA_DATOS = {
     "Dt 3:8",
     "Dt 3:12",
     "Dt 3:16",
-    "Dt 4:48"
+    "Dt 4:48",
+    "Jos 12:1",
+    "Jos 12:2",
+    "Jos 13:9",
+    "Jos 13:16"
    ],
    "ubicacion": {
     "identificacion": "Wadi Mujib",
@@ -77421,7 +84955,10 @@ window.BIBLIA_DATOS = {
     "Nm 32:34",
     "Dt 2:36",
     "Dt 3:12",
-    "Dt 4:48"
+    "Dt 4:48",
+    "Jos 12:2",
+    "Jos 13:9",
+    "Jos 13:16"
    ],
    "ubicacion": {
     "identificacion": "Arair",
@@ -77518,12 +85055,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Azmón",
    "nombre_rv1909": "Asmón",
    "formas_rv1909": [
-    "Asmón"
+    "Asmón",
+    "Azmón"
    ],
    "tipo": "ciudad",
    "refs": [
     "Nm 34:4",
-    "Nm 34:5"
+    "Nm 34:5",
+    "Jos 15:4"
    ],
    "ubicacion": {
     "identificacion": "Ain Muweileh",
@@ -77549,11 +85088,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Baal-meón",
    "nombre_rv1909": "Baal-meón",
    "formas_rv1909": [
-    "Baal-meón"
+    "Baal-meón",
+    "Beth-baal-meón"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 32:38"
+    "Nm 32:38",
+    "Jos 13:17"
    ],
    "ubicacion": {
     "identificacion": "Ma‘in",
@@ -77626,7 +85167,20 @@ window.BIBLIA_DATOS = {
     "Dt 4:47",
     "Dt 29:7",
     "Dt 32:14",
-    "Dt 33:22"
+    "Dt 33:22",
+    "Jos 9:10",
+    "Jos 12:4",
+    "Jos 12:5",
+    "Jos 13:11",
+    "Jos 13:12",
+    "Jos 13:30",
+    "Jos 13:31",
+    "Jos 17:1",
+    "Jos 17:5",
+    "Jos 20:8",
+    "Jos 21:6",
+    "Jos 21:27",
+    "Jos 22:7"
    ],
    "ubicacion": {
     "identificacion": "Saham al Jawlan",
@@ -77715,11 +85269,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Bet-arán",
    "nombre_rv1909": "Betharán",
    "formas_rv1909": [
-    "Betharán"
+    "Betharán",
+    "Beth-aram"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 32:36"
+    "Nm 32:36",
+    "Jos 13:27"
    ],
    "ubicacion": {
     "identificacion": "Tall Iktanu",
@@ -77749,7 +85305,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "campamento",
    "refs": [
-    "Nm 33:49"
+    "Nm 33:49",
+    "Jos 12:3",
+    "Jos 13:20"
    ],
    "ubicacion": {
     "identificacion": "Tell Azeimeh",
@@ -77779,7 +85337,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 32:36"
+    "Nm 32:36",
+    "Jos 13:27"
    ],
    "ubicacion": {
     "identificacion": "Tall Bleibel",
@@ -77814,7 +85373,9 @@ window.BIBLIA_DATOS = {
     "Nm 32:3",
     "Nm 32:34",
     "Nm 33:45",
-    "Nm 33:46"
+    "Nm 33:46",
+    "Jos 13:9",
+    "Jos 13:17"
    ],
    "ubicacion": {
     "identificacion": "Tall Dhiban",
@@ -77864,7 +85425,10 @@ window.BIBLIA_DATOS = {
     "Nm 21:33",
     "Dt 1:4",
     "Dt 3:1",
-    "Dt 3:10"
+    "Dt 3:10",
+    "Jos 12:4",
+    "Jos 13:12",
+    "Jos 13:31"
    ],
    "ubicacion": {
     "identificacion": "Daraa",
@@ -78033,12 +85597,14 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Havoth-jair",
    "formas_rv1909": [
     "Havoth-jair",
-    "Basán-havoth-jair"
+    "Basán-havoth-jair",
+    "aldeas de Jair"
    ],
    "tipo": "region",
    "refs": [
     "Nm 32:41",
-    "Dt 3:14"
+    "Dt 3:14",
+    "Jos 13:30"
    ],
    "ubicacion": {
     "identificacion": "Qamm",
@@ -78183,7 +85749,16 @@ window.BIBLIA_DATOS = {
     "Dt 3:2",
     "Dt 3:6",
     "Dt 4:46",
-    "Dt 29:7"
+    "Dt 29:7",
+    "Jos 9:10",
+    "Jos 12:2",
+    "Jos 12:5",
+    "Jos 13:10",
+    "Jos 13:17",
+    "Jos 13:21",
+    "Jos 13:26",
+    "Jos 13:27",
+    "Jos 21:39"
    ],
    "ubicacion": {
     "identificacion": "Tell Hesban",
@@ -78221,7 +85796,10 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 14:45",
     "Nm 21:3",
-    "Dt 1:44"
+    "Dt 1:44",
+    "Jos 12:14",
+    "Jos 15:30",
+    "Jos 19:4"
    ],
    "ubicacion": {
     "identificacion": "Tel Masos",
@@ -78304,12 +85882,15 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Jahaz",
    "formas_rv1909": [
     "Jahaz",
-    "Jaas"
+    "Jaas",
+    "Jasa"
    ],
    "tipo": "ciudad",
    "refs": [
     "Nm 21:23",
-    "Dt 2:32"
+    "Dt 2:32",
+    "Jos 13:18",
+    "Jos 21:36"
    ],
    "ubicacion": {
     "identificacion": "Khirbet el Medeiyineh",
@@ -78347,14 +85928,17 @@ window.BIBLIA_DATOS = {
    "nombre": "Jazer",
    "nombre_rv1909": "Jazer",
    "formas_rv1909": [
-    "Jazer"
+    "Jazer",
+    "Jacer"
    ],
    "tipo": "ciudad",
    "refs": [
     "Nm 21:32",
     "Nm 32:1",
     "Nm 32:3",
-    "Nm 32:35"
+    "Nm 32:35",
+    "Jos 13:25",
+    "Jos 21:39"
    ],
    "ubicacion": {
     "identificacion": "Khirbet Sara",
@@ -78407,7 +85991,33 @@ window.BIBLIA_DATOS = {
     "Nm 36:13",
     "Dt 32:49",
     "Dt 34:1",
-    "Dt 34:3"
+    "Dt 34:3",
+    "Jos 2:1",
+    "Jos 2:2",
+    "Jos 2:3",
+    "Jos 3:16",
+    "Jos 4:13",
+    "Jos 4:19",
+    "Jos 5:10",
+    "Jos 5:13",
+    "Jos 6:1",
+    "Jos 6:2",
+    "Jos 6:25",
+    "Jos 6:26",
+    "Jos 7:2",
+    "Jos 8:2",
+    "Jos 9:3",
+    "Jos 10:1",
+    "Jos 10:28",
+    "Jos 10:30",
+    "Jos 12:9",
+    "Jos 13:32",
+    "Jos 16:1",
+    "Jos 16:7",
+    "Jos 18:12",
+    "Jos 18:21",
+    "Jos 20:8",
+    "Jos 24:11"
    ],
    "ubicacion": {
     "identificacion": "Tell es Sultan",
@@ -78627,11 +86237,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Quiriataim",
    "nombre_rv1909": "Kiriathaim",
    "formas_rv1909": [
-    "Kiriathaim"
+    "Kiriathaim",
+    "Chîriataim"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 32:37"
+    "Nm 32:37",
+    "Jos 13:19"
    ],
    "ubicacion": {
     "identificacion": "Khirbet al Mukhayyat",
@@ -78800,7 +86412,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 21:30"
+    "Nm 21:30",
+    "Jos 13:9",
+    "Jos 13:16"
    ],
    "ubicacion": {
     "identificacion": "Madaba",
@@ -79086,7 +86700,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 23:28",
     "Nm 25:18",
-    "Nm 31:16"
+    "Nm 31:16",
+    "Jos 22:17"
    ],
    "ubicacion": {
     "identificacion": "Khirbet Ayun Musa",
@@ -79158,7 +86773,8 @@ window.BIBLIA_DATOS = {
     "Dt 3:17",
     "Dt 3:27",
     "Dt 4:49",
-    "Dt 34:1"
+    "Dt 34:1",
+    "Jos 12:3"
    ],
    "ubicacion": {
     "identificacion": "Rujm Siyaghah",
@@ -79468,7 +87084,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "campamento",
    "refs": [
-    "Nm 25:1"
+    "Nm 25:1",
+    "Jos 2:1",
+    "Jos 3:1"
    ],
    "ubicacion": {
     "identificacion": "Tall el Hammam",
@@ -79504,7 +87122,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 32:38"
+    "Nm 32:38",
+    "Jos 13:19"
    ],
    "ubicacion": {
     "identificacion": "Qarn al Qubish",
@@ -79754,7 +87373,8 @@ window.BIBLIA_DATOS = {
     "Nm 27:14",
     "Nm 33:36",
     "Nm 34:3",
-    "Dt 32:51"
+    "Dt 32:51",
+    "Jos 15:1"
    ],
    "ubicacion": {
     "identificacion": "Zin Desert",
@@ -79777,7 +87397,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "otro",
    "refs": [
-    "Nm 34:4"
+    "Nm 34:4",
+    "Jos 15:3"
    ],
    "ubicacion": {
     "identificacion": "Zin Desert",
@@ -79940,7 +87561,9 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Dt 11:29",
     "Dt 27:4",
-    "Dt 27:13"
+    "Dt 27:13",
+    "Jos 8:30",
+    "Jos 8:33"
    ],
    "ubicacion": {
     "identificacion": "Mount Ebal",
@@ -79964,7 +87587,8 @@ window.BIBLIA_DATOS = {
    "tipo": "monte",
    "refs": [
     "Dt 11:29",
-    "Dt 27:12"
+    "Dt 27:12",
+    "Jos 8:33"
    ],
    "ubicacion": {
     "identificacion": "Mount Gerizim",
@@ -79991,7 +87615,13 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Dt 3:8",
     "Dt 3:9",
-    "Dt 4:48"
+    "Dt 4:48",
+    "Jos 11:3",
+    "Jos 11:17",
+    "Jos 12:1",
+    "Jos 12:5",
+    "Jos 13:5",
+    "Jos 13:11"
    ],
    "ubicacion": {
     "identificacion": "Mount Hermon",
@@ -80075,11 +87705,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Cineret",
    "nombre_rv1909": "Cinereth",
    "formas_rv1909": [
-    "Cinereth"
+    "Cinereth",
+    "Cinneroth"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 3:17"
+    "Dt 3:17",
+    "Jos 11:2",
+    "Jos 19:35"
    ],
    "ubicacion": {
     "identificacion": "Tel Kinrot",
@@ -80130,11 +87763,16 @@ window.BIBLIA_DATOS = {
    "nombre": "Astarot",
    "nombre_rv1909": "Astarot",
    "formas_rv1909": [
-    "Astarot"
+    "Astarot",
+    "Astaroth"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 1:4"
+    "Dt 1:4",
+    "Jos 9:10",
+    "Jos 12:4",
+    "Jos 13:12",
+    "Jos 13:31"
    ],
    "ubicacion": {
     "identificacion": "Tell Ashtara",
@@ -80183,7 +87821,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Dt 3:29",
     "Dt 4:46",
-    "Dt 34:6"
+    "Dt 34:6",
+    "Jos 13:20"
    ],
    "ubicacion": {
     "identificacion": "Khirbet Ayun Musa",
@@ -80219,7 +87858,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 4:43"
+    "Dt 4:43",
+    "Jos 20:8",
+    "Jos 21:36"
    ],
    "ubicacion": {
     "identificacion": "Umm el Amad",
@@ -80245,11 +87886,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Golán",
    "nombre_rv1909": "Golán",
    "formas_rv1909": [
-    "Golán"
+    "Golán",
+    "Gaulón"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 4:43"
+    "Dt 4:43",
+    "Jos 20:8",
+    "Jos 21:27"
    ],
    "ubicacion": {
     "identificacion": "Saham al Jawlan",
@@ -80272,7 +87916,9 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 4:43"
+    "Dt 4:43",
+    "Jos 20:8",
+    "Jos 21:38"
    ],
    "ubicacion": {
     "identificacion": "Tall er Rumeith",
@@ -80532,11 +88178,15 @@ window.BIBLIA_DATOS = {
    "nombre": "Cademot",
    "nombre_rv1909": "Cademoth",
    "formas_rv1909": [
-    "Cademoth"
+    "Cademoth",
+    "Keddemoth",
+    "Cedemoth"
    ],
    "tipo": "region",
    "refs": [
-    "Dt 2:26"
+    "Dt 2:26",
+    "Jos 13:18",
+    "Jos 21:37"
    ],
    "ubicacion": {
     "identificacion": "Aleiyan",
@@ -80580,7 +88230,11 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Dt 1:7",
     "Dt 3:25",
-    "Dt 11:24"
+    "Dt 11:24",
+    "Jos 1:4",
+    "Jos 9:1",
+    "Jos 13:5",
+    "Jos 13:6"
    ],
    "ubicacion": {
     "identificacion": "Jezzine",
@@ -80599,11 +88253,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Rabá de los hijos de Amón",
    "nombre_rv1909": "Rabbath",
    "formas_rv1909": [
-    "Rabbath"
+    "Rabbath",
+    "Rabba"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 3:11"
+    "Dt 3:11",
+    "Jos 13:25"
    ],
    "ubicacion": {
     "identificacion": "Amman",
@@ -80622,11 +88278,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Salca",
    "nombre_rv1909": "Salchâ",
    "formas_rv1909": [
-    "Salchâ"
+    "Salchâ",
+    "Salca"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Dt 3:10"
+    "Dt 3:10",
+    "Jos 12:5",
+    "Jos 13:11"
    ],
    "ubicacion": {
     "identificacion": "Salkhad",
@@ -80639,6 +88298,11545 @@ window.BIBLIA_DATOS = {
    "fuente": "openbible",
    "url_fuente": "https://www.openbible.info/geo/ancient/ac3bc41/salecah",
    "nota": "Límite del reino de Og en Basán (Dt 3:10)."
+  },
+  {
+   "id": "bet-horon-de-abajo",
+   "nombre": "Bet-horón de abajo",
+   "nombre_rv1909": "Beth-oron la de abajo",
+   "formas_rv1909": [
+    "Beth-oron la de abajo"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:3",
+    "Jos 18:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Beit Ur al Tahta",
+    "lat": 31.895,
+    "lon": 35.0836,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a094036/lower-beth-horon",
+   "nota": ""
+  },
+  {
+   "id": "bet-horon-de-arriba",
+   "nombre": "Bet-horón de arriba",
+   "nombre_rv1909": "Beth-oron la de arriba",
+   "formas_rv1909": [
+    "Beth-oron la de arriba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Beit Ur al Fauqa",
+    "lat": 31.8858,
+    "lon": 35.1142,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab682e6/upper-beth-horon",
+   "nota": ""
+  },
+  {
+   "id": "aguas-de-merom",
+   "nombre": "Aguas de Merom",
+   "nombre_rv1909": "Merom",
+   "formas_rv1909": [
+    "Merom"
+   ],
+   "tipo": "fuente",
+   "refs": [
+    "Jos 11:5",
+    "Jos 11:7"
+   ],
+   "ubicacion": {
+    "identificacion": "En Meron",
+    "lat": 32.9789,
+    "lon": 35.4378,
+    "puntuacion_openbible": 77,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Birket Hafour el Ahmar",
+     "lat": 33.0997,
+     "lon": 35.4606,
+     "puntuacion_openbible": 69
+    },
+    {
+     "identificacion": "Bint Jbeil water storage",
+     "lat": 33.117,
+     "lon": 35.4319,
+     "puntuacion_openbible": 51
+    },
+    {
+     "identificacion": "Nahal Arbel",
+     "lat": 32.8297,
+     "lon": 35.5167,
+     "puntuacion_openbible": 42
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6ee047/waters-of-merom",
+   "nota": "Junto a ellas Josué vence a los reyes del norte (Jos 11:5-7)."
+  },
+  {
+   "id": "valle-de-hinom",
+   "nombre": "Valle de Hinom",
+   "nombre_rv1909": "Hinnom",
+   "formas_rv1909": [
+    "Hinnom"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 15:8",
+    "Jos 18:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Hinnom Valley",
+    "lat": 31.7692,
+    "lon": 35.2281,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a37c8e6/valley-of-hinnom",
+   "nota": "Límite entre Judá y Benjamín, al sur de Jerusalén (Jos 15:8; 18:16)."
+  },
+  {
+   "id": "valle-de-ajalon",
+   "nombre": "Valle de Ajalón",
+   "nombre_rv1909": "Ajalón",
+   "formas_rv1909": [
+    "Ajalón"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 10:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Ayalon Valley",
+    "lat": 31.8675,
+    "lon": 34.9594,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2e6de9/valley-of-aijalon",
+   "nota": "«Y tú, Luna, en el valle de Ajalón» (Jos 10:12)."
+  },
+  {
+   "id": "valle-de-jefte-el",
+   "nombre": "Valle de Jefte-el",
+   "nombre_rv1909": "Iphtael",
+   "formas_rv1909": [
+    "Iphtael"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 19:14",
+    "Jos 19:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi el Melek",
+    "lat": 32.7712,
+    "lon": 35.143,
+    "puntuacion_openbible": 582,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi Abbelin",
+     "lat": 32.8332,
+     "lon": 35.1753,
+     "puntuacion_openbible": 220
+    },
+    {
+     "identificacion": "Khirbet Shifat",
+     "lat": 32.8319,
+     "lon": 35.2781,
+     "puntuacion_openbible": 10
+    },
+    {
+     "identificacion": "Beit Netofa Valley",
+     "lat": 32.8096,
+     "lon": 35.3325,
+     "puntuacion_openbible": -5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3e0180/valley-of-iphtahel",
+   "nota": ""
+  },
+  {
+   "id": "valle-de-jezreel",
+   "nombre": "Valle de Jezreel",
+   "nombre_rv1909": "Jezreel",
+   "formas_rv1909": [
+    "Jezreel"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 17:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Jezreel Valley",
+    "lat": 32.5964,
+    "lon": 35.2419,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa516c2/valley-of-jezreel",
+   "nota": ""
+  },
+  {
+   "id": "jezreel-juda",
+   "nombre": "Jezreel (de Judá)",
+   "nombre_rv1909": "Izreel",
+   "formas_rv1909": [
+    "Izreel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:56"
+   ],
+   "ubicacion": {
+    "identificacion": "Yatta",
+    "lat": 31.4478,
+    "lon": 35.09,
+    "puntuacion_openbible": 471,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Kufeir",
+     "lat": 31.4597,
+     "lon": 35.0987,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Khirbet Fattuh",
+     "lat": 31.4489,
+     "lon": 35.1061,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Khirbet Tarrama",
+     "lat": 31.4786,
+     "lon": 35.0326,
+     "puntuacion_openbible": -107
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad94cc9/jezreel-1",
+   "nota": "Ciudad de las montañas de Judá (Jos 15:56); distinta de Jezreel de Isacar (Jos 19:18)."
+  },
+  {
+   "id": "jezreel",
+   "nombre": "Jezreel (de Isacar)",
+   "nombre_rv1909": "Izreel",
+   "formas_rv1909": [
+    "Izreel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Yizre’el",
+    "lat": 32.5579,
+    "lon": 35.328,
+    "puntuacion_openbible": 806,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae0bf4a/jezreel-2",
+   "nota": "Jos 19:18; distinta de Jezreel de Judá (Jos 15:56)."
+  },
+  {
+   "id": "sunem",
+   "nombre": "Sunem",
+   "nombre_rv1909": "Sunem",
+   "formas_rv1909": [
+    "Sunem"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Sulam",
+    "lat": 32.6056,
+    "lon": 35.3343,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac86af5/shunem",
+   "nota": ""
+  },
+  {
+   "id": "monte-baala",
+   "nombre": "Monte Baala",
+   "nombre_rv1909": "Baala",
+   "formas_rv1909": [
+    "Baala"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 15:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Mughar",
+    "lat": 31.8414,
+    "lon": 34.7858,
+    "puntuacion_openbible": 660,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Kesla",
+     "lat": 31.7811,
+     "lon": 35.0511,
+     "puntuacion_openbible": 58
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac2b4ef/mount-baalah",
+   "nota": ""
+  },
+  {
+   "id": "monte-efron",
+   "nombre": "Monte Efrón",
+   "nombre_rv1909": "Ephrón",
+   "formas_rv1909": [
+    "Ephrón"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 15:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Qastal",
+    "lat": 31.7969,
+    "lon": 35.1442,
+    "puntuacion_openbible": 658,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a75aff4/mount-ephron",
+   "nota": ""
+  },
+  {
+   "id": "monte-halac",
+   "nombre": "Monte Halac",
+   "nombre_rv1909": "Halac",
+   "formas_rv1909": [
+    "Halac"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 11:17",
+    "Jos 12:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Jebel Halaq",
+    "lat": 30.9144,
+    "lon": 34.8287,
+    "puntuacion_openbible": 587,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a11fadd/mount-halak",
+   "nota": "Límite sur de las conquistas de Josué, «que sube hasta Seir» (Jos 11:17)."
+  },
+  {
+   "id": "monte-jearim",
+   "nombre": "Monte Jearim",
+   "nombre_rv1909": "Jearim",
+   "formas_rv1909": [
+    "Jearim"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 15:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Kesla",
+    "lat": 31.7811,
+    "lon": 35.0511,
+    "puntuacion_openbible": 702,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3587ba/mount-jearim",
+   "nota": "Jos 15:10: «el monte de Jearim hacia el norte, esta es Chesalón»."
+  },
+  {
+   "id": "monte-seir-juda",
+   "nombre": "Monte Seir (de Judá)",
+   "nombre_rv1909": "Seir",
+   "formas_rv1909": [
+    "Seir"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 15:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Shoresh",
+    "lat": 31.7966,
+    "lon": 35.0653,
+    "puntuacion_openbible": 422,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a36c283/mount-seir-2",
+   "nota": "Hito del límite de Judá junto a Quiriat-jearim (Jos 15:10); distinto de Seir, la tierra de Edom."
+  },
+  {
+   "id": "jetla",
+   "nombre": "Jetla",
+   "nombre_rv1909": "Jeth-la",
+   "formas_rv1909": [
+    "Jeth-la"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:42"
+   ],
+   "ubicacion": {
+    "identificacion": "Yalo",
+    "lat": 31.8411,
+    "lon": 35.0236,
+    "puntuacion_openbible": 281,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Bayt Thul",
+     "lat": 31.8225,
+     "lon": 35.0739,
+     "puntuacion_openbible": 131
+    },
+    {
+     "identificacion": "Tell el Kokah",
+     "lat": 31.8401,
+     "lon": 35.0263,
+     "puntuacion_openbible": 72
+    },
+    {
+     "identificacion": "Al Burj",
+     "lat": 31.9017,
+     "lon": 35.0222,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abf8060/ithlah",
+   "nota": ""
+  },
+  {
+   "id": "emec-casis",
+   "nombre": "Emec-casis",
+   "nombre_rv1909": "Casis",
+   "formas_rv1909": [
+    "Casis"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Sultan",
+    "lat": 31.8717,
+    "lon": 35.4446,
+    "puntuacion_openbible": 470,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Marjame",
+     "lat": 31.9914,
+     "lon": 35.3322,
+     "puntuacion_openbible": 143
+    },
+    {
+     "identificacion": "Deir Hajla",
+     "lat": 31.8204,
+     "lon": 35.5012,
+     "puntuacion_openbible": 86
+    },
+    {
+     "identificacion": "Wadi el Kaziz",
+     "lat": 31.7857,
+     "lon": 35.3357,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a774e50/emek-keziz",
+   "nota": "La RV1909 dice «el valle de Casis» (Jos 18:21)."
+  },
+  {
+   "id": "llano-de-mizpa",
+   "nombre": "Llano de Mizpa",
+   "nombre_rv1909": "Mizpa",
+   "formas_rv1909": [
+    "Mizpa"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 11:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Hermon",
+    "lat": 33.4,
+    "lon": 35.85,
+    "puntuacion_openbible": 535,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qalat es Subeibeh",
+     "lat": 33.2528,
+     "lon": 35.7147,
+     "puntuacion_openbible": 142
+    },
+    {
+     "identificacion": "Marjayoun",
+     "lat": 33.3611,
+     "lon": 35.5921,
+     "puntuacion_openbible": 71
+    },
+    {
+     "identificacion": "Metula",
+     "lat": 33.2789,
+     "lon": 35.5767,
+     "puntuacion_openbible": 52
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae32196/valley-of-mizpeh",
+   "nota": "Hasta allí persigue Josué a los reyes del norte (Jos 11:8)."
+  },
+  {
+   "id": "baalat-beer",
+   "nombre": "Baalat-beer",
+   "nombre_rv1909": "Baalath-beer",
+   "formas_rv1909": [
+    "Baalath-beer"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Beer Yeroham",
+    "lat": 30.991,
+    "lon": 34.9113,
+    "puntuacion_openbible": 97,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 87
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": 61
+    },
+    {
+     "identificacion": "Tel Ira",
+     "lat": 31.2328,
+     "lon": 34.9867,
+     "puntuacion_openbible": 52
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a03cc2d/baalath-beer",
+   "nota": "Jos 19:8: «Baalath-beer, [que es] Ramat del mediodía»."
+  },
+  {
+   "id": "valle-de-acor",
+   "nombre": "Valle de Acor",
+   "nombre_rv1909": "Achôr",
+   "formas_rv1909": [
+    "Achôr"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 7:24",
+    "Jos 7:26",
+    "Jos 15:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Buqay’ah",
+    "lat": 31.7167,
+    "lon": 35.3833,
+    "puntuacion_openbible": 604,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi Qelt",
+     "lat": 31.8443,
+     "lon": 35.4143,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Wadi Nu’eima",
+     "lat": 31.8977,
+     "lon": 35.4174,
+     "puntuacion_openbible": -2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a31492f/valley-of-achor",
+   "nota": "Allí apedrean a Acán (Jos 7:24-26); límite de Judá (Jos 15:7)."
+  },
+  {
+   "id": "hesron",
+   "nombre": "Hesrón",
+   "nombre_rv1909": "Hebrón",
+   "formas_rv1909": [
+    "Hebrón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain el Qudeirat",
+    "lat": 30.6483,
+    "lon": 34.4222,
+    "puntuacion_openbible": 523,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Qedeis",
+     "lat": 30.5834,
+     "lon": 34.4841,
+     "puntuacion_openbible": 367
+    },
+    {
+     "identificacion": "Khirbet el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 3
+    },
+    {
+     "identificacion": "Mesudat Ein Qedeis",
+     "lat": 30.5946,
+     "lon": 34.5142,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad5c4a1/hezron",
+   "nota": "Límite sur de Judá (Jos 15:3). La RV1909 escribe «Hebrón»; es Hesrón (hebreo Ḥeṣrón), no la Hebrón de Caleb."
+  },
+  {
+   "id": "ebron",
+   "nombre": "Ebrón",
+   "nombre_rv1909": "Hebrón",
+   "formas_rv1909": [
+    "Hebrón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Avdon",
+    "lat": 33.0477,
+    "lon": 35.1619,
+    "puntuacion_openbible": 513,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a728e07/ebron",
+   "nota": "Ciudad de Aser (Jos 19:28). La RV1909 escribe «Hebrón»; es Ebrón, no la Hebrón de Judá."
+  },
+  {
+   "id": "jarmut",
+   "nombre": "Jarmut",
+   "nombre_rv1909": "Jerimoth",
+   "formas_rv1909": [
+    "Jerimoth",
+    "Jarmuth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 12:11",
+    "Jos 15:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Yarmuth",
+    "lat": 31.7083,
+    "lon": 34.975,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a539e01/jarmuth-1",
+   "nota": "La RV1909 escribe «Jerimoth» (Jos 10:3-23; 15:35) y «Jarmuth» (Jos 12:11)."
+  },
+  {
+   "id": "beestera",
+   "nombre": "Beestera",
+   "nombre_rv1909": "Bosra",
+   "formas_rv1909": [
+    "Bosra"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Ashtara",
+    "lat": 32.8042,
+    "lon": 36.0158,
+    "puntuacion_openbible": 602,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a293fbf/beeshterah",
+   "nota": "Ciudad levítica de Manasés en Basán (Jos 21:27). La RV1909 escribe «Bosra» (hebreo Beesterá); no es Bosra de Edom."
+  },
+  {
+   "id": "bet-marcabot",
+   "nombre": "Bet-marcabot",
+   "nombre_rv1909": "Beth-marchâboth",
+   "formas_rv1909": [
+    "Beth-marchâboth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Tatrit",
+    "lat": 31.3503,
+    "lon": 34.9286,
+    "puntuacion_openbible": 375,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm ed Demineh",
+     "lat": 31.3728,
+     "lon": 34.9332,
+     "puntuacion_openbible": 16
+    },
+    {
+     "identificacion": "Minieh",
+     "lat": 31.2486,
+     "lon": 34.3099,
+     "puntuacion_openbible": 7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a87f8f5/beth-marcaboth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-marchâboth»."
+  },
+  {
+   "id": "cefar-hamonai",
+   "nombre": "Cefar-hamonai",
+   "nombre_rv1909": "Cephar-hammonai",
+   "formas_rv1909": [
+    "Cephar-hammonai"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Kafr Ana",
+    "lat": 31.9661,
+    "lon": 35.2476,
+    "puntuacion_openbible": 252,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Bir Zeit",
+     "lat": 31.9653,
+     "lon": 35.1909,
+     "puntuacion_openbible": 34
+    },
+    {
+     "identificacion": "El Muneitrah",
+     "lat": 31.9608,
+     "lon": 35.2263,
+     "puntuacion_openbible": 34
+    },
+    {
+     "identificacion": "Yabrud",
+     "lat": 31.977,
+     "lon": 35.2428,
+     "puntuacion_openbible": 34
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2cb16b/chephar-ammoni",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Cephar-hammonai»."
+  },
+  {
+   "id": "quisilot-tabor",
+   "nombre": "Quisilot-tabor",
+   "nombre_rv1909": "Chisiloth-tabor",
+   "formas_rv1909": [
+    "Chisiloth-tabor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Iksal",
+    "lat": 32.6834,
+    "lon": 35.3242,
+    "puntuacion_openbible": 652,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a898f06/chisloth-tabor",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Chisiloth-tabor»."
+  },
+  {
+   "id": "queriot-hesron",
+   "nombre": "Queriot-hesron",
+   "nombre_rv1909": "Chêrioth-hesron",
+   "formas_rv1909": [
+    "Chêrioth-hesron"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Qaryatein",
+    "lat": 31.345,
+    "lon": 35.1244,
+    "puntuacion_openbible": 316,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Qedeis",
+     "lat": 30.5834,
+     "lon": 34.4841,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Har Avnon",
+     "lat": 30.9744,
+     "lon": 34.9714,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Mesudat Ein Qedeis",
+     "lat": 30.5946,
+     "lon": 34.5142,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af66926/kerioth-hezron",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Chêrioth-hesron»."
+  },
+  {
+   "id": "quiriat-jearim",
+   "nombre": "Quiriat-jearim",
+   "nombre_rv1909": "Chîriath-jearim",
+   "formas_rv1909": [
+    "Chîriath-jearim",
+    "Chiriath-jearim",
+    "Chîriath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 9:17",
+    "Jos 15:9",
+    "Jos 15:60",
+    "Jos 18:14",
+    "Jos 18:15",
+    "Jos 18:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Deir el Azar",
+    "lat": 31.809,
+    "lon": 35.1038,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9bba61/kiriath-jearim",
+   "nota": ""
+  },
+  {
+   "id": "allon-saananim",
+   "nombre": "Allón-saananim",
+   "nombre_rv1909": "Allón-saananim",
+   "formas_rv1909": [
+    "Allón-saananim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Hanot Taggarim",
+    "lat": 32.7211,
+    "lon": 35.4106,
+    "puntuacion_openbible": 408,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Bessum",
+     "lat": 32.7345,
+     "lon": 35.4812,
+     "puntuacion_openbible": 170
+    },
+    {
+     "identificacion": "Lejjun",
+     "lat": 32.5747,
+     "lon": 35.1778,
+     "puntuacion_openbible": 115
+    },
+    {
+     "identificacion": "Shajarat el Kalb",
+     "lat": 32.6848,
+     "lon": 35.5311,
+     "puntuacion_openbible": 98
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0c4f5e/zaanannim",
+   "nota": ""
+  },
+  {
+   "id": "atarot-adar",
+   "nombre": "Atarot-adar",
+   "nombre_rv1909": "Ataroth-addar",
+   "formas_rv1909": [
+    "Ataroth-addar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:5",
+    "Jos 18:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Atara",
+    "lat": 31.8799,
+    "lon": 35.2175,
+    "puntuacion_openbible": 190,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Raddana",
+     "lat": 31.9121,
+     "lon": 35.202,
+     "puntuacion_openbible": 138
+    },
+    {
+     "identificacion": "Tel al Mazar",
+     "lat": 32.1399,
+     "lon": 35.485,
+     "puntuacion_openbible": 63
+    },
+    {
+     "identificacion": "Tell en Nasbeh",
+     "lat": 31.8851,
+     "lon": 35.2164,
+     "puntuacion_openbible": 20
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2bf0f8/ataroth-addar",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ataroth-addar»."
+  },
+  {
+   "id": "sihor-libnat",
+   "nombre": "Sihor-libnat",
+   "nombre_rv1909": "Sihor-libnath",
+   "formas_rv1909": [
+    "Sihor-libnath"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Jos 19:26"
+   ],
+   "ubicacion": {
+    "identificacion": "mouth of the Kishon River",
+    "lat": 32.8167,
+    "lon": 35.0333,
+    "puntuacion_openbible": 237,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Abu Hawam",
+     "lat": 32.8008,
+     "lon": 35.0192,
+     "puntuacion_openbible": 168
+    },
+    {
+     "identificacion": "Kebara Swamps",
+     "lat": 32.5567,
+     "lon": 34.9246,
+     "puntuacion_openbible": 149
+    },
+    {
+     "identificacion": "Nahal Daliyya",
+     "lat": 32.5889,
+     "lon": 34.915,
+     "puntuacion_openbible": 39
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac6b338/shihor-libnath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Sihor-libnath»."
+  },
+  {
+   "id": "bet-lebaot",
+   "nombre": "Bet-lebaot",
+   "nombre_rv1909": "Beth-lebaoth",
+   "formas_rv1909": [
+    "Beth-lebaoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:6"
+   ],
+   "ubicacion": {
+    "identificacion": "Jebel el Biri",
+    "lat": 31.0067,
+    "lon": 34.4918,
+    "puntuacion_openbible": 456,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein esh Shallala",
+     "lat": 31.3053,
+     "lon": 34.5116,
+     "puntuacion_openbible": 68
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a289a5b/beth-lebaoth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-lebaoth»."
+  },
+  {
+   "id": "asor-hadata",
+   "nombre": "Asor-hadata",
+   "nombre_rv1909": "Asor-hadatta",
+   "formas_rv1909": [
+    "Asor-hadatta"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Har Hezron",
+    "lat": 31.3733,
+    "lon": 35.2336,
+    "puntuacion_openbible": 381,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat HaRoah",
+     "lat": 30.9077,
+     "lon": 34.8534,
+     "puntuacion_openbible": 90
+    },
+    {
+     "identificacion": "Horbat Uza",
+     "lat": 31.2092,
+     "lon": 35.1657,
+     "puntuacion_openbible": -18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acce8c8/hazor-hadattah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Asor-hadatta»."
+  },
+  {
+   "id": "simrom-meron",
+   "nombre": "Simrom-meron",
+   "nombre_rv1909": "Simrom-meron",
+   "formas_rv1909": [
+    "Simrom-meron"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:20"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Shimron",
+    "lat": 32.7039,
+    "lon": 35.2133,
+    "puntuacion_openbible": 531,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Maroun al Ras",
+     "lat": 33.1011,
+     "lon": 35.4439,
+     "puntuacion_openbible": 11
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae20466/shimron-meron",
+   "nota": ""
+  },
+  {
+   "id": "timnat-sera",
+   "nombre": "Timnat-sera",
+   "nombre_rv1909": "Timnath-sera",
+   "formas_rv1909": [
+    "Timnath-sera"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:50",
+    "Jos 24:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Tibnah",
+    "lat": 32.0081,
+    "lon": 35.1073,
+    "puntuacion_openbible": 809,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6e6528/timnath-heres",
+   "nota": ""
+  },
+  {
+   "id": "zeretsahar",
+   "nombre": "Zeretsahar",
+   "nombre_rv1909": "Zerethshahar",
+   "formas_rv1909": [
+    "Zerethshahar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Callirrhoe",
+    "lat": 31.597,
+    "lon": 35.5593,
+    "puntuacion_openbible": 404,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ez Zarat",
+     "lat": 31.6088,
+     "lon": 35.5653,
+     "puntuacion_openbible": 48
+    },
+    {
+     "identificacion": "Khirbet Libb",
+     "lat": 31.6063,
+     "lon": 35.7613,
+     "puntuacion_openbible": 18
+    },
+    {
+     "identificacion": "Qarn al Qubish",
+     "lat": 31.7824,
+     "lon": 35.7613,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a31a510/zereth-shahar",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Zerethshahar»."
+  },
+  {
+   "id": "adami-neceb",
+   "nombre": "Adami-neceb",
+   "nombre_rv1909": "Adami-neceb",
+   "formas_rv1909": [
+    "Adami-neceb"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Adami",
+    "lat": 32.7492,
+    "lon": 35.4592,
+    "puntuacion_openbible": 722,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Bessum",
+     "lat": 32.7345,
+     "lon": 35.4812,
+     "puntuacion_openbible": 34
+    },
+    {
+     "identificacion": "Khirbet Idma",
+     "lat": 32.6343,
+     "lon": 35.5394,
+     "puntuacion_openbible": 16
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2c780b/adami-nekeb",
+   "nota": ""
+  },
+  {
+   "id": "aznot-tabor",
+   "nombre": "Aznot-tabor",
+   "nombre_rv1909": "Aznot-tabor",
+   "formas_rv1909": [
+    "Aznot-tabor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Govel",
+    "lat": 32.7272,
+    "lon": 35.3844,
+    "puntuacion_openbible": 399,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9fd165/aznoth-tabor",
+   "nota": ""
+  },
+  {
+   "id": "bet-pases",
+   "nombre": "Bet-pases",
+   "nombre_rv1909": "Beth-passes",
+   "formas_rv1909": [
+    "Beth-passes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Hadita",
+    "lat": 32.6804,
+    "lon": 35.4863,
+    "puntuacion_openbible": 481,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sheikh Mazghith",
+     "lat": 32.6713,
+     "lon": 35.5278,
+     "puntuacion_openbible": 112
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac814fb/beth-pazzez",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-passes»."
+  },
+  {
+   "id": "bet-tapua",
+   "nombre": "Bet-tapua",
+   "nombre_rv1909": "Beth-tappua",
+   "formas_rv1909": [
+    "Beth-tappua"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:53"
+   ],
+   "ubicacion": {
+    "identificacion": "Taffuh",
+    "lat": 31.5386,
+    "lon": 35.0462,
+    "puntuacion_openbible": 800,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adac973/beth-tappuah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-tappua»."
+  },
+  {
+   "id": "git-hefer",
+   "nombre": "Git-hefer",
+   "nombre_rv1909": "Gith-hepher",
+   "formas_rv1909": [
+    "Gith-hepher"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Gat Hefer",
+    "lat": 32.7381,
+    "lon": 35.3197,
+    "puntuacion_openbible": 789,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Mashhad",
+     "lat": 32.7383,
+     "lon": 35.3244,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac51cec/gath-hepher",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gith-hepher»."
+  },
+  {
+   "id": "gat-rimon",
+   "nombre": "Gat-rimón (Jos 19:45)",
+   "nombre_rv1909": "Gath-rimmón",
+   "formas_rv1909": [
+    "Gath-rimmón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:45",
+    "Jos 21:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Gerisa",
+    "lat": 32.0917,
+    "lon": 34.8075,
+    "puntuacion_openbible": 338,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Zeton",
+     "lat": 32.0994,
+     "lon": 34.8369,
+     "puntuacion_openbible": 180
+    },
+    {
+     "identificacion": "Ras Abu Hamid",
+     "lat": 31.903,
+     "lon": 34.8899,
+     "puntuacion_openbible": 49
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a046c70/gath-rimmon-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gath-rimmón». Hay otros lugares llamados Gat-rimón: este es el de Jos 19:45 según OpenBible."
+  },
+  {
+   "id": "gat-rimon-21-25",
+   "nombre": "Gat-rimón (Jos 21:25)",
+   "nombre_rv1909": "Gath-rimmón",
+   "formas_rv1909": [
+    "Gath-rimmón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Belameh",
+    "lat": 32.4462,
+    "lon": 35.292,
+    "puntuacion_openbible": 365,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rummanah",
+     "lat": 32.5244,
+     "lon": 35.2041,
+     "puntuacion_openbible": -132
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab33b54/gath-rimmon-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gath-rimmón». Hay otros lugares llamados Gat-rimón: este es el de Jos 21:25 según OpenBible."
+  },
+  {
+   "id": "gederotaim",
+   "nombre": "Gederotaim",
+   "nombre_rv1909": "Gederothaim",
+   "formas_rv1909": [
+    "Gederothaim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Judraya",
+    "lat": 31.6889,
+    "lon": 34.9961,
+    "puntuacion_openbible": 290,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Jedireh",
+     "lat": 31.8274,
+     "lon": 34.9589,
+     "puntuacion_openbible": 148
+    },
+    {
+     "identificacion": "Bayt Nattif",
+     "lat": 31.6955,
+     "lon": 34.996,
+     "puntuacion_openbible": 32
+    },
+    {
+     "identificacion": "Tel Goded",
+     "lat": 31.6334,
+     "lon": 34.9166,
+     "puntuacion_openbible": 32
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac36af4/gederothaim",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gederothaim»."
+  },
+  {
+   "id": "hamot-dor",
+   "nombre": "Hamot-dor",
+   "nombre_rv1909": "Hammoth-dor",
+   "formas_rv1909": [
+    "Hammoth-dor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Hamat Tiberias",
+    "lat": 32.7664,
+    "lon": 35.5506,
+    "puntuacion_openbible": 483,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Raqqat",
+     "lat": 32.8064,
+     "lon": 35.5258,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7d3e84/hammoth-dor",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Hammoth-dor»."
+  },
+  {
+   "id": "ramatmispe",
+   "nombre": "Ramatmispe",
+   "nombre_rv1909": "Ramathmispe",
+   "formas_rv1909": [
+    "Ramathmispe"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Jel‘ad",
+    "lat": 32.1185,
+    "lon": 35.777,
+    "puntuacion_openbible": 194,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Qar’a",
+     "lat": 31.873,
+     "lon": 35.8167,
+     "puntuacion_openbible": 42
+    },
+    {
+     "identificacion": "Tall er Rumeith",
+     "lat": 32.4999,
+     "lon": 36.015,
+     "puntuacion_openbible": 40
+    },
+    {
+     "identificacion": "Khirbet Sara",
+     "lat": 31.9445,
+     "lon": 35.8301,
+     "puntuacion_openbible": 37
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a63c954/ramath-mizpeh",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ramathmispe»."
+  },
+  {
+   "id": "tanat-silo",
+   "nombre": "Tanat-silo",
+   "nombre_rv1909": "Tanath-silo",
+   "formas_rv1909": [
+    "Tanath-silo"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:6"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Tana el Fauqa",
+    "lat": 32.1763,
+    "lon": 35.3709,
+    "puntuacion_openbible": 626,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Tana et Tahta",
+     "lat": 32.1523,
+     "lon": 35.3939,
+     "puntuacion_openbible": 62
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5d37f9/taanath-shiloh",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Tanath-silo»."
+  },
+  {
+   "id": "bene-berac",
+   "nombre": "Bene-berác",
+   "nombre_rv1909": "Bene-berác",
+   "formas_rv1909": [
+    "Bene-berác"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:45"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Khayriyya",
+    "lat": 32.0367,
+    "lon": 34.8277,
+    "puntuacion_openbible": 818,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Zeton",
+     "lat": 32.0994,
+     "lon": 34.8369,
+     "puntuacion_openbible": 23
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae83378/bene-berak",
+   "nota": ""
+  },
+  {
+   "id": "bet-anat",
+   "nombre": "Bet-anat",
+   "nombre_rv1909": "Beth-anath",
+   "formas_rv1909": [
+    "Beth-anath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Safad el Battikh",
+    "lat": 33.2003,
+    "lon": 35.4331,
+    "puntuacion_openbible": 372,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Bi’ina",
+     "lat": 32.9285,
+     "lon": 35.2678,
+     "puntuacion_openbible": 70
+    },
+    {
+     "identificacion": "Hinah",
+     "lat": 33.35,
+     "lon": 35.95,
+     "puntuacion_openbible": 20
+    },
+    {
+     "identificacion": "Aynata",
+     "lat": 33.1289,
+     "lon": 35.44,
+     "puntuacion_openbible": -15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae6cef8/beth-anath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-anath»."
+  },
+  {
+   "id": "bet-anot",
+   "nombre": "Bet-anot",
+   "nombre_rv1909": "Beth-anoth",
+   "formas_rv1909": [
+    "Beth-anoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:59"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Beit Anun",
+    "lat": 31.5621,
+    "lon": 35.1262,
+    "puntuacion_openbible": 612,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ras at Tawil",
+     "lat": 31.5675,
+     "lon": 35.1428,
+     "puntuacion_openbible": 71
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa2fea1/beth-anoth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-anoth»."
+  },
+  {
+   "id": "bet-araba",
+   "nombre": "Bet-araba",
+   "nombre_rv1909": "Beth-araba",
+   "formas_rv1909": [
+    "Beth-araba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:6",
+    "Jos 15:61",
+    "Jos 18:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain el Gharabeh",
+    "lat": 31.8458,
+    "lon": 35.5017,
+    "puntuacion_openbible": 404,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rujm el Bahr",
+     "lat": 31.7723,
+     "lon": 35.512,
+     "puntuacion_openbible": 63
+    },
+    {
+     "identificacion": "Tell Muhalhal",
+     "lat": 31.7904,
+     "lon": 35.4435,
+     "puntuacion_openbible": 23
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3f8916/beth-arabah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-araba»."
+  },
+  {
+   "id": "bet-dagon",
+   "nombre": "Bet-dagón (Jos 15:41)",
+   "nombre_rv1909": "Beth-dagón",
+   "formas_rv1909": [
+    "Beth-dagón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Dajun",
+    "lat": 31.9836,
+    "lon": 34.8086,
+    "puntuacion_openbible": 261,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Haraqim",
+     "lat": 31.524,
+     "lon": 34.8272,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Bayt Dajan",
+     "lat": 32.0035,
+     "lon": 34.8293,
+     "puntuacion_openbible": 44
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a561af4/beth-dagon-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-dagón». Hay otros lugares llamados Bet-dagón: este es el de Jos 15:41 según OpenBible."
+  },
+  {
+   "id": "bet-dagon-19-27",
+   "nombre": "Bet-dagón (Jos 19:27)",
+   "nombre_rv1909": "Beth-dagón",
+   "formas_rv1909": [
+    "Beth-dagón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Jelameh",
+    "lat": 32.7226,
+    "lon": 35.0906,
+    "puntuacion_openbible": 422,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Regev",
+     "lat": 32.7589,
+     "lon": 35.0903,
+     "puntuacion_openbible": 256
+    },
+    {
+     "identificacion": "Beit Shearim",
+     "lat": 32.7022,
+     "lon": 35.1292,
+     "puntuacion_openbible": 39
+    },
+    {
+     "identificacion": "Khirbet Buseima",
+     "lat": 32.7348,
+     "lon": 35.1343,
+     "puntuacion_openbible": 11
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0cc925/beth-dagon-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-dagón». Hay otros lugares llamados Bet-dagón: este es el de Jos 19:27 según OpenBible."
+  },
+  {
+   "id": "bet-hogla",
+   "nombre": "Bet-hogla",
+   "nombre_rv1909": "Beth-hogla",
+   "formas_rv1909": [
+    "Beth-hogla"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:6",
+    "Jos 18:19",
+    "Jos 18:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Deir Hajla",
+    "lat": 31.8204,
+    "lon": 35.5012,
+    "puntuacion_openbible": 559,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain Hajlah",
+     "lat": 31.8281,
+     "lon": 35.5122,
+     "puntuacion_openbible": 104
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aabd0ba/beth-hoglah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-hogla»."
+  },
+  {
+   "id": "bet-lehem",
+   "nombre": "Bet-lehem",
+   "nombre_rv1909": "Beth-lehem",
+   "formas_rv1909": [
+    "Beth-lehem"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:15"
+   ],
+   "ubicacion": {
+    "identificacion": "Beit Lahm",
+    "lat": 32.7348,
+    "lon": 35.1856,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a308715/bethlehem-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-lehem»."
+  },
+  {
+   "id": "bet-pelet",
+   "nombre": "Bet-pelet",
+   "nombre_rv1909": "Beth-pelet",
+   "formas_rv1909": [
+    "Beth-pelet"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Saqati",
+    "lat": 31.3099,
+    "lon": 34.9078,
+    "puntuacion_openbible": 444,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Givat Hablanim",
+     "lat": 31.1929,
+     "lon": 34.7936,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": -7
+    },
+    {
+     "identificacion": "Tel Sharuhen",
+     "lat": 31.2819,
+     "lon": 34.4825,
+     "puntuacion_openbible": -172
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac4b767/beth-pelet",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-pelet»."
+  },
+  {
+   "id": "bet-semes",
+   "nombre": "Bet-semes (Jos 15:10)",
+   "nombre_rv1909": "Beth-semes",
+   "formas_rv1909": [
+    "Beth-semes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:10",
+    "Jos 21:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Bet Shemesh",
+    "lat": 31.7506,
+    "lon": 34.9747,
+    "puntuacion_openbible": 864,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3b5b53/beth-shemesh-1",
+   "nota": "Hay otros lugares llamados Bet-semes: este es el de Jos 15:10 según OpenBible."
+  },
+  {
+   "id": "bet-semes-19-22",
+   "nombre": "Bet-semes (Jos 19:22)",
+   "nombre_rv1909": "Beth-semes",
+   "formas_rv1909": [
+    "Beth-semes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Sheikh esh Shamsawi",
+    "lat": 32.6878,
+    "lon": 35.5252,
+    "puntuacion_openbible": 422,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "El Abeidiyeh",
+     "lat": 32.6889,
+     "lon": 35.5611,
+     "puntuacion_openbible": 204
+    },
+    {
+     "identificacion": "Tell esh Shamsiya",
+     "lat": 32.3805,
+     "lon": 35.5123,
+     "puntuacion_openbible": -2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3bb26d/beth-shemesh-2",
+   "nota": "Hay otros lugares llamados Bet-semes: este es el de Jos 19:22 según OpenBible."
+  },
+  {
+   "id": "bet-semes-19-38",
+   "nombre": "Bet-semes (Jos 19:38)",
+   "nombre_rv1909": "Beth-semes",
+   "formas_rv1909": [
+    "Beth-semes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Rosh",
+    "lat": 33.0413,
+    "lon": 35.3327,
+    "puntuacion_openbible": 528,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell esh Shamsiya",
+     "lat": 32.3805,
+     "lon": 35.5123,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "El Abeidiyeh",
+     "lat": 32.6889,
+     "lon": 35.5611,
+     "puntuacion_openbible": -4
+    },
+    {
+     "identificacion": "Hariss",
+     "lat": 33.1745,
+     "lon": 35.3766,
+     "puntuacion_openbible": -4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a85cbab/beth-shemesh-3",
+   "nota": "Hay otros lugares llamados Bet-semes: este es el de Jos 19:38 según OpenBible."
+  },
+  {
+   "id": "dabe-set",
+   "nombre": "Dabe-set",
+   "nombre_rv1909": "Dabbe-seth",
+   "formas_rv1909": [
+    "Dabbe-seth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Shem",
+    "lat": 32.6703,
+    "lon": 35.155,
+    "puntuacion_openbible": 558,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a411151/dabbesheth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Dabbe-seth»."
+  },
+  {
+   "id": "ita-cazin",
+   "nombre": "Ita-cazin",
+   "nombre_rv1909": "Itta-kazin",
+   "formas_rv1909": [
+    "Itta-kazin"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Kefr Kenna",
+    "lat": 32.7465,
+    "lon": 35.3392,
+    "puntuacion_openbible": 288,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Lubya",
+     "lat": 32.7759,
+     "lon": 35.4293,
+     "puntuacion_openbible": 134
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2ca712/eth-kazin",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Itta-kazin»."
+  },
+  {
+   "id": "asar-gada",
+   "nombre": "Asar-gada",
+   "nombre_rv1909": "Asar-gadda",
+   "formas_rv1909": [
+    "Asar-gadda"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Beer Sheva",
+    "lat": 31.2447,
+    "lon": 34.8408,
+    "puntuacion_openbible": 353,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Mezudat Sheluhat Qadesh Barnea",
+     "lat": 30.6802,
+     "lon": 34.4995,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Horbat Uza",
+     "lat": 31.2092,
+     "lon": 35.1657,
+     "puntuacion_openbible": 15
+    },
+    {
+     "identificacion": "Bir es Seba",
+     "lat": 31.2372,
+     "lon": 34.7931,
+     "puntuacion_openbible": 7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7672d8/hazar-gaddah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Asar-gadda»."
+  },
+  {
+   "id": "hasar-sual",
+   "nombre": "Hasar-sual",
+   "nombre_rv1909": "Hasar-sual",
+   "formas_rv1909": [
+    "Hasar-sual"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:28",
+    "Jos 19:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Beer Sheva",
+    "lat": 31.2447,
+    "lon": 34.8408,
+    "puntuacion_openbible": 351,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Waten",
+     "lat": 31.2573,
+     "lon": 34.9214,
+     "puntuacion_openbible": 135
+    },
+    {
+     "identificacion": "Hazar Betarim",
+     "lat": 31.2747,
+     "lon": 34.8384,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Bir es Seba",
+     "lat": 31.2372,
+     "lon": 34.7931,
+     "puntuacion_openbible": 7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a89005a/hazar-shual",
+   "nota": ""
+  },
+  {
+   "id": "hasar-susa",
+   "nombre": "Hasar-susa",
+   "nombre_rv1909": "Hasar-susa",
+   "formas_rv1909": [
+    "Hasar-susa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet esh Shamsaniyat",
+    "lat": 31.3445,
+    "lon": 34.9014,
+    "puntuacion_openbible": 354,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sbalat Abu Susein",
+     "lat": 31.2626,
+     "lon": 34.5298,
+     "puntuacion_openbible": 79
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab270f6/hazar-susah",
+   "nota": ""
+  },
+  {
+   "id": "alamelec",
+   "nombre": "Alamelec",
+   "nombre_rv1909": "Alammelec",
+   "formas_rv1909": [
+    "Alammelec"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Alil",
+    "lat": 32.7718,
+    "lon": 35.1557,
+    "puntuacion_openbible": 518,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Nahal",
+     "lat": 32.7988,
+     "lon": 35.0701,
+     "puntuacion_openbible": 168
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a84cafa/allammelech",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Alammelec»."
+  },
+  {
+   "id": "bet-aven",
+   "nombre": "Bet-aven",
+   "nombre_rv1909": "Beth-aven",
+   "formas_rv1909": [
+    "Beth-aven"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 7:2",
+    "Jos 18:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Maryam",
+    "lat": 31.8692,
+    "lon": 35.2681,
+    "puntuacion_openbible": 222,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Burqa",
+     "lat": 31.8958,
+     "lon": 35.2542,
+     "puntuacion_openbible": 79
+    },
+    {
+     "identificacion": "Khirbet Nisieh",
+     "lat": 31.8975,
+     "lon": 35.2286,
+     "puntuacion_openbible": 54
+    },
+    {
+     "identificacion": "Beitin",
+     "lat": 31.9228,
+     "lon": 35.2414,
+     "puntuacion_openbible": 34
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a03cb21/beth-aven-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-aven»."
+  },
+  {
+   "id": "bet-emec",
+   "nombre": "Bet-emec",
+   "nombre_rv1909": "Beth-emec",
+   "formas_rv1909": [
+    "Beth-emec"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Emek",
+    "lat": 32.9658,
+    "lon": 35.1519,
+    "puntuacion_openbible": 677,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Abu Mudawwar",
+     "lat": 32.8181,
+     "lon": 35.2106,
+     "puntuacion_openbible": 112
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a587ea0/beth-emek",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-emec»."
+  },
+  {
+   "id": "bet-horon",
+   "nombre": "Bet-horón",
+   "nombre_rv1909": "Beth-oron",
+   "formas_rv1909": [
+    "Beth-oron"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:10",
+    "Jos 10:11",
+    "Jos 18:14",
+    "Jos 21:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Beit Ur al Tahta",
+    "lat": 31.895,
+    "lon": 35.0836,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a75b45e/beth-horon",
+   "nota": ""
+  },
+  {
+   "id": "quesullot",
+   "nombre": "Quesullot",
+   "nombre_rv1909": "Chesullot",
+   "formas_rv1909": [
+    "Chesullot"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Iksal",
+    "lat": 32.6834,
+    "lon": 35.3242,
+    "puntuacion_openbible": 878,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac3d92d/chesulloth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Chesullot»."
+  },
+  {
+   "id": "en-ganim-19-21",
+   "nombre": "En-ganim (Jos 19:21)",
+   "nombre_rv1909": "En-gannim",
+   "formas_rv1909": [
+    "En-gannim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:21",
+    "Jos 21:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Beit Jann",
+    "lat": 32.7135,
+    "lon": 35.4954,
+    "puntuacion_openbible": 167,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet ed Dir",
+     "lat": 32.6597,
+     "lon": 35.5372,
+     "puntuacion_openbible": 127
+    },
+    {
+     "identificacion": "Tell Jenin",
+     "lat": 32.4608,
+     "lon": 35.2987,
+     "puntuacion_openbible": 61
+    },
+    {
+     "identificacion": "Hadita",
+     "lat": 32.6804,
+     "lon": 35.4863,
+     "puntuacion_openbible": 43
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8eae19/en-gannim-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «En-gannim». Hay otros lugares llamados En-ganim: este es el de Jos 19:21 según OpenBible."
+  },
+  {
+   "id": "gibeton",
+   "nombre": "Gibetón",
+   "nombre_rv1909": "Gibbethón",
+   "formas_rv1909": [
+    "Gibbethón",
+    "Gibethón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:44",
+    "Jos 21:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Melat",
+    "lat": 31.8564,
+    "lon": 34.8656,
+    "puntuacion_openbible": 530,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ras Abu Hamid",
+     "lat": 31.903,
+     "lon": 34.8899,
+     "puntuacion_openbible": 179
+    },
+    {
+     "identificacion": "Aqir",
+     "lat": 31.8577,
+     "lon": 34.8193,
+     "puntuacion_openbible": 14
+    },
+    {
+     "identificacion": "Qibya",
+     "lat": 31.9775,
+     "lon": 35.0097,
+     "puntuacion_openbible": -1
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6f048c/gibbethon",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gibbethón»."
+  },
+  {
+   "id": "hafaraim",
+   "nombre": "Hafaraim",
+   "nombre_rv1909": "Hapharaim",
+   "formas_rv1909": [
+    "Hapharaim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Et Taiyibeh",
+    "lat": 32.6039,
+    "lon": 35.4466,
+    "puntuacion_openbible": 423,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Afula",
+     "lat": 32.6057,
+     "lon": 35.29,
+     "puntuacion_openbible": 205
+    },
+    {
+     "identificacion": "Tel Parur",
+     "lat": 32.6292,
+     "lon": 35.1035,
+     "puntuacion_openbible": 19
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6309c7/hapharaim",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Hapharaim»."
+  },
+  {
+   "id": "jerusalen",
+   "nombre": "Jerusalén",
+   "nombre_rv1909": "Jerusalem",
+   "formas_rv1909": [
+    "Jerusalem"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:1",
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 12:10",
+    "Jos 15:8",
+    "Jos 15:63",
+    "Jos 18:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Jerusalem",
+    "lat": 31.7767,
+    "lon": 35.2342,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a15257a/jerusalem",
+   "nota": ""
+  },
+  {
+   "id": "micmetat",
+   "nombre": "Micmetat",
+   "nombre_rv1909": "Michmetat",
+   "formas_rv1909": [
+    "Michmetat"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 16:6",
+    "Jos 17:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet en Nabi",
+    "lat": 32.1772,
+    "lon": 35.2672,
+    "puntuacion_openbible": 299,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ibn Naser",
+     "lat": 32.1984,
+     "lon": 35.307,
+     "puntuacion_openbible": 253
+    },
+    {
+     "identificacion": "Mount Kabir",
+     "lat": 32.236,
+     "lon": 35.3316,
+     "puntuacion_openbible": 112
+    },
+    {
+     "identificacion": "Wadi Bedan",
+     "lat": 32.2586,
+     "lon": 35.3443,
+     "puntuacion_openbible": 58
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2f0a70/michmethath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Michmetat»."
+  },
+  {
+   "id": "migdalgad",
+   "nombre": "Migdalgad",
+   "nombre_rv1909": "Migdalgad",
+   "formas_rv1909": [
+    "Migdalgad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Mejdeleh",
+    "lat": 31.5372,
+    "lon": 34.9019,
+    "puntuacion_openbible": 323,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Hasi",
+     "lat": 31.5477,
+     "lon": 34.7302,
+     "puntuacion_openbible": 69
+    },
+    {
+     "identificacion": "Ed Dawaimeh",
+     "lat": 31.5369,
+     "lon": 34.9132,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a571ca0/migdal-gad",
+   "nota": ""
+  },
+  {
+   "id": "aditaim",
+   "nombre": "Aditaim",
+   "nombre_rv1909": "Adithaim",
+   "formas_rv1909": [
+    "Adithaim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Haditha",
+    "lat": 31.9633,
+    "lon": 34.9518,
+    "puntuacion_openbible": 346,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Kheishum",
+     "lat": 31.7285,
+     "lon": 34.9535,
+     "puntuacion_openbible": 179
+    },
+    {
+     "identificacion": "Khirbet el Hadatha",
+     "lat": 31.8798,
+     "lon": 35.0146,
+     "puntuacion_openbible": 100
+    },
+    {
+     "identificacion": "Khirbet Qeiyafa",
+     "lat": 31.6963,
+     "lon": 34.9575,
+     "puntuacion_openbible": -117
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a845493/adithaim",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Adithaim»."
+  },
+  {
+   "id": "anaarat",
+   "nombre": "Anaarat",
+   "nombre_rv1909": "Anaarath",
+   "formas_rv1909": [
+    "Anaarath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Rekhesh",
+    "lat": 32.6534,
+    "lon": 35.4661,
+    "puntuacion_openbible": 741,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall al Ajjul",
+     "lat": 31.467,
+     "lon": 34.4041,
+     "puntuacion_openbible": -50
+    },
+    {
+     "identificacion": "Na’ura",
+     "lat": 32.6157,
+     "lon": 35.3934,
+     "puntuacion_openbible": -195
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac07206/anaharath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Anaarath»."
+  },
+  {
+   "id": "anatot",
+   "nombre": "Anatot",
+   "nombre_rv1909": "Anathoth",
+   "formas_rv1909": [
+    "Anathoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Ras el Kharruba",
+    "lat": 31.8075,
+    "lon": 35.2576,
+    "puntuacion_openbible": 420,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Anata",
+     "lat": 31.8132,
+     "lon": 35.2619,
+     "puntuacion_openbible": 216
+    },
+    {
+     "identificacion": "Khirbet Deir es Sidd",
+     "lat": 31.8109,
+     "lon": 35.2756,
+     "puntuacion_openbible": 105
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab34789/anathoth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Anathoth»."
+  },
+  {
+   "id": "baal-gad",
+   "nombre": "Baal-gad",
+   "nombre_rv1909": "Baal-gad",
+   "formas_rv1909": [
+    "Baal-gad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:17",
+    "Jos 12:7",
+    "Jos 13:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Haush",
+    "lat": 33.4679,
+    "lon": 35.7475,
+    "puntuacion_openbible": 199,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Banias",
+     "lat": 33.2461,
+     "lon": 35.6933,
+     "puntuacion_openbible": 182
+    },
+    {
+     "identificacion": "Mount Hermon",
+     "lat": 33.4,
+     "lon": 35.85,
+     "puntuacion_openbible": 137
+    },
+    {
+     "identificacion": "Hasbaya",
+     "lat": 33.3833,
+     "lon": 35.6833,
+     "puntuacion_openbible": 99
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae12e43/baal-gad",
+   "nota": ""
+  },
+  {
+   "id": "bet-san",
+   "nombre": "Bet-san",
+   "nombre_rv1909": "Beth-san",
+   "formas_rv1909": [
+    "Beth-san"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 17:11",
+    "Jos 17:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Bet Shean",
+    "lat": 32.5036,
+    "lon": 35.5031,
+    "puntuacion_openbible": 889,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2a8df0/beth-shan",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beth-san»."
+  },
+  {
+   "id": "cafira",
+   "nombre": "Cafira",
+   "nombre_rv1909": "Caphira",
+   "formas_rv1909": [
+    "Caphira",
+    "Chephira"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 9:17",
+    "Jos 18:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Kefireh",
+    "lat": 31.8309,
+    "lon": 35.1068,
+    "puntuacion_openbible": 838,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2e5054/chephirah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Caphira»."
+  },
+  {
+   "id": "quesalon",
+   "nombre": "Quesalón",
+   "nombre_rv1909": "Chesalón",
+   "formas_rv1909": [
+    "Chesalón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Kesla",
+    "lat": 31.7811,
+    "lon": 35.0511,
+    "puntuacion_openbible": 702,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a42c452/chesalon",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Chesalón»."
+  },
+  {
+   "id": "dabrat",
+   "nombre": "Dabrat",
+   "nombre_rv1909": "Dabrath",
+   "formas_rv1909": [
+    "Dabrath",
+    "Dabereth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:12",
+    "Jos 21:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Horvat Devora",
+    "lat": 32.6973,
+    "lon": 35.3775,
+    "puntuacion_openbible": 673,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Raba",
+     "lat": 32.3889,
+     "lon": 35.3847,
+     "puntuacion_openbible": 5
+    },
+    {
+     "identificacion": "Arabbuna",
+     "lat": 32.5125,
+     "lon": 35.3633,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6a5e97/daberath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Dabrath»."
+  },
+  {
+   "id": "eltolad",
+   "nombre": "Eltolad",
+   "nombre_rv1909": "Eltolad",
+   "formas_rv1909": [
+    "Eltolad",
+    "Heltolad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:30",
+    "Jos 19:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Beer Sheva",
+    "lat": 31.2447,
+    "lon": 34.8408,
+    "puntuacion_openbible": 183,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Erqa Saqra",
+     "lat": 31.0914,
+     "lon": 34.923,
+     "puntuacion_openbible": 175
+    },
+    {
+     "identificacion": "Tell el Meleiha",
+     "lat": 31.4621,
+     "lon": 34.7765,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Bir es Seba",
+     "lat": 31.2372,
+     "lon": 34.7931,
+     "puntuacion_openbible": 4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5709da/eltolad",
+   "nota": ""
+  },
+  {
+   "id": "en-ganim",
+   "nombre": "En-ganim (Jos 15:34)",
+   "nombre_rv1909": "Engannim",
+   "formas_rv1909": [
+    "Engannim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Umm Jina",
+    "lat": 31.7476,
+    "lon": 34.9638,
+    "puntuacion_openbible": 288,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Beit Jimal",
+     "lat": 31.725,
+     "lon": 34.9764,
+     "puntuacion_openbible": 26
+    },
+    {
+     "identificacion": "Khirbet Umm edh Dhiyab",
+     "lat": 31.7033,
+     "lon": 35.0023,
+     "puntuacion_openbible": -3
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abe5f95/en-gannim-1",
+   "nota": "Hay otros lugares llamados En-ganim: este es el de Jos 15:34 según OpenBible."
+  },
+  {
+   "id": "en-hada",
+   "nombre": "En-hada",
+   "nombre_rv1909": "En-hadda",
+   "formas_rv1909": [
+    "En-hadda"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Hadita",
+    "lat": 32.6804,
+    "lon": 35.4863,
+    "puntuacion_openbible": 698,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "El Karm",
+     "lat": 32.5418,
+     "lon": 35.3666,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Khirbet Judeida",
+     "lat": 32.5146,
+     "lon": 35.4166,
+     "puntuacion_openbible": 10
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a009e7d/en-haddah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «En-hadda»."
+  },
+  {
+   "id": "en-hasor",
+   "nombre": "En-hasor",
+   "nombre_rv1909": "En-hasor",
+   "formas_rv1909": [
+    "En-hasor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Aynata",
+    "lat": 33.1289,
+    "lon": 35.44,
+    "puntuacion_openbible": 394,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Hadran",
+     "lat": 33.0419,
+     "lon": 35.3118,
+     "puntuacion_openbible": 162
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a156070/en-hazor",
+   "nota": ""
+  },
+  {
+   "id": "en-semes",
+   "nombre": "En-semes",
+   "nombre_rv1909": "En-semes",
+   "formas_rv1909": [
+    "En-semes",
+    "Ensemes"
+   ],
+   "tipo": "fuente",
+   "refs": [
+    "Jos 15:7",
+    "Jos 18:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Ein Haud",
+    "lat": 31.7741,
+    "lon": 35.2701,
+    "puntuacion_openbible": 741,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a34e870/en-shemesh",
+   "nota": ""
+  },
+  {
+   "id": "gelilot",
+   "nombre": "Gelilot",
+   "nombre_rv1909": "Geliloth",
+   "formas_rv1909": [
+    "Geliloth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Araq ed Deir",
+    "lat": 31.7905,
+    "lon": 35.3226,
+    "puntuacion_openbible": 352,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "El Khirbeh",
+     "lat": 31.7649,
+     "lon": 35.2888,
+     "puntuacion_openbible": 143
+    },
+    {
+     "identificacion": "Khan el Ahmar",
+     "lat": 31.7924,
+     "lon": 35.3363,
+     "puntuacion_openbible": 63
+    },
+    {
+     "identificacion": "Tal‘at ed Damm",
+     "lat": 31.8184,
+     "lon": 35.3603,
+     "puntuacion_openbible": 28
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0c9a06/geliloth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Geliloth»."
+  },
+  {
+   "id": "helcat",
+   "nombre": "Helcat",
+   "nombre_rv1909": "Helchât",
+   "formas_rv1909": [
+    "Helchât",
+    "Helchâth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:25",
+    "Jos 21:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Qashish",
+    "lat": 32.6853,
+    "lon": 35.1097,
+    "puntuacion_openbible": 377,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Regev",
+     "lat": 32.7589,
+     "lon": 35.0903,
+     "puntuacion_openbible": 58
+    },
+    {
+     "identificacion": "Tell Amr",
+     "lat": 32.7281,
+     "lon": 35.0967,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Khirbet el Jemeijimeh",
+     "lat": 32.8643,
+     "lon": 35.2634,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1d1918/helkath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Helchât»."
+  },
+  {
+   "id": "ir-semes",
+   "nombre": "Ir-semes",
+   "nombre_rv1909": "Ir-semes",
+   "formas_rv1909": [
+    "Ir-semes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Bet Shemesh",
+    "lat": 31.7506,
+    "lon": 34.9747,
+    "puntuacion_openbible": 864,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad6cc26/ir-shemesh",
+   "nota": ""
+  },
+  {
+   "id": "maaca",
+   "nombre": "Maaca",
+   "nombre_rv1909": "Maachâti",
+   "formas_rv1909": [
+    "Maachâti",
+    "Maachât"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 12:5",
+    "Jos 13:11",
+    "Jos 13:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Abel Beth Maacah",
+    "lat": 33.2581,
+    "lon": 35.581,
+    "puntuacion_openbible": 756,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acae7cb/maacah",
+   "nota": ""
+  },
+  {
+   "id": "madmana",
+   "nombre": "Madmana",
+   "nombre_rv1909": "Madmanna",
+   "formas_rv1909": [
+    "Madmanna"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Tatrit",
+    "lat": 31.3503,
+    "lon": 34.9286,
+    "puntuacion_openbible": 554,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm ed Demineh",
+     "lat": 31.3728,
+     "lon": 34.9332,
+     "puntuacion_openbible": 24
+    },
+    {
+     "identificacion": "Minieh",
+     "lat": 31.2486,
+     "lon": 34.3099,
+     "puntuacion_openbible": 10
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8661e2/madmannah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Madmanna»."
+  },
+  {
+   "id": "mejarcon",
+   "nombre": "Mejarcón",
+   "nombre_rv1909": "Mejarcón",
+   "formas_rv1909": [
+    "Mejarcón"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Jos 19:46"
+   ],
+   "ubicacion": {
+    "identificacion": "Yarkon River",
+    "lat": 32.1039,
+    "lon": 34.7758,
+    "puntuacion_openbible": 723,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ayalon River",
+     "lat": 32.0998,
+     "lon": 34.8017,
+     "puntuacion_openbible": 63
+    },
+    {
+     "identificacion": "Tell Qasile",
+     "lat": 32.1014,
+     "lon": 34.7941,
+     "puntuacion_openbible": 17
+    },
+    {
+     "identificacion": "Tel Gerisa",
+     "lat": 32.0917,
+     "lon": 34.8075,
+     "puntuacion_openbible": -20
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7d1972/me-jarkon",
+   "nota": ""
+  },
+  {
+   "id": "mefaat",
+   "nombre": "Mefaat",
+   "nombre_rv1909": "Mephaath",
+   "formas_rv1909": [
+    "Mephaath",
+    "Mephaat"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:18",
+    "Jos 21:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Umm ar Rasas",
+    "lat": 31.4997,
+    "lon": 35.9197,
+    "puntuacion_openbible": 465,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Jawah",
+     "lat": 31.8575,
+     "lon": 35.9316,
+     "puntuacion_openbible": 97
+    },
+    {
+     "identificacion": "Khirbet Nefaah",
+     "lat": 31.8666,
+     "lon": 35.9304,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a97cb23/mephaath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Mephaath»."
+  },
+  {
+   "id": "migdalel",
+   "nombre": "Migdalel",
+   "nombre_rv1909": "Migdalel",
+   "formas_rv1909": [
+    "Migdalel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Majdel Selem",
+    "lat": 33.2217,
+    "lon": 35.4644,
+    "puntuacion_openbible": 243,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yarun",
+     "lat": 33.0833,
+     "lon": 35.4167,
+     "puntuacion_openbible": 157
+    },
+    {
+     "identificacion": "Khirbet el Mejdel",
+     "lat": 33.16,
+     "lon": 35.5158,
+     "puntuacion_openbible": 145
+    },
+    {
+     "identificacion": "Majdal",
+     "lat": 32.8271,
+     "lon": 35.5136,
+     "puntuacion_openbible": 23
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5f0bc3/migdal-el",
+   "nota": ""
+  },
+  {
+   "id": "naarata",
+   "nombre": "Naarata",
+   "nombre_rv1909": "Naaratha",
+   "formas_rv1909": [
+    "Naaratha"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Jisr",
+    "lat": 31.8935,
+    "lon": 35.4248,
+    "puntuacion_openbible": 515,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein ed Duyuk",
+     "lat": 31.8955,
+     "lon": 35.4221,
+     "puntuacion_openbible": 54
+    },
+    {
+     "identificacion": "Khirbet el Mefjir",
+     "lat": 31.8819,
+     "lon": 35.46,
+     "puntuacion_openbible": 42
+    },
+    {
+     "identificacion": "Khirbet el Ayash",
+     "lat": 31.9542,
+     "lon": 35.4749,
+     "puntuacion_openbible": 17
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a179865/naarah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Naaratha»."
+  },
+  {
+   "id": "secaca",
+   "nombre": "Secaca",
+   "nombre_rv1909": "Sechâchâ",
+   "formas_rv1909": [
+    "Sechâchâ"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:61"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet es Samrah",
+    "lat": 31.7168,
+    "lon": 35.3916,
+    "puntuacion_openbible": 398,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qumran",
+     "lat": 31.7408,
+     "lon": 35.4586,
+     "puntuacion_openbible": 184
+    },
+    {
+     "identificacion": "Ain Feshkah",
+     "lat": 31.7144,
+     "lon": 35.4533,
+     "puntuacion_openbible": 33
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af74b9f/secacah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Sechâchâ»."
+  },
+  {
+   "id": "saalabin",
+   "nombre": "Saalabín",
+   "nombre_rv1909": "Saalabín",
+   "formas_rv1909": [
+    "Saalabín"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:42"
+   ],
+   "ubicacion": {
+    "identificacion": "Salbit",
+    "lat": 31.8698,
+    "lon": 34.9871,
+    "puntuacion_openbible": 791,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Salhab",
+     "lat": 32.3542,
+     "lon": 35.3725,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae89331/shaalbim",
+   "nota": ""
+  },
+  {
+   "id": "siqueron",
+   "nombre": "Siqueron",
+   "nombre_rv1909": "Sichêron",
+   "formas_rv1909": [
+    "Sichêron"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Ful",
+    "lat": 31.8215,
+    "lon": 34.812,
+    "puntuacion_openbible": 786,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qatra",
+     "lat": 31.8229,
+     "lon": 34.7777,
+     "puntuacion_openbible": 30
+    },
+    {
+     "identificacion": "Aseret",
+     "lat": 31.824,
+     "lon": 34.7467,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afd2396/shikkeron",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Sichêron»."
+  },
+  {
+   "id": "timna",
+   "nombre": "Timna (Jos 15:10)",
+   "nombre_rv1909": "Timna",
+   "formas_rv1909": [
+    "Timna",
+    "Timnatha"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:10",
+    "Jos 19:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Batash",
+    "lat": 31.7848,
+    "lon": 34.9103,
+    "puntuacion_openbible": 836,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Timna",
+     "lat": 31.743,
+     "lon": 34.9354,
+     "puntuacion_openbible": -98
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a21f909/timnah-1",
+   "nota": "Hay otros lugares llamados Timna: este es el de Jos 15:10 según OpenBible."
+  },
+  {
+   "id": "saretan",
+   "nombre": "Saretan",
+   "nombre_rv1909": "Sarethan",
+   "formas_rv1909": [
+    "Sarethan"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 3:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Sa’idiyeh",
+    "lat": 32.2677,
+    "lon": 35.5772,
+    "puntuacion_openbible": 349,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Umm Hamad",
+     "lat": 32.1421,
+     "lon": 35.5815,
+     "puntuacion_openbible": 244
+    },
+    {
+     "identificacion": "Tall al Meqbarah",
+     "lat": 32.4002,
+     "lon": 35.5905,
+     "puntuacion_openbible": 55
+    },
+    {
+     "identificacion": "Sleikhat",
+     "lat": 32.3231,
+     "lon": 35.5933,
+     "puntuacion_openbible": 42
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afa84ca/zarethan",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Sarethan»."
+  },
+  {
+   "id": "samaraim",
+   "nombre": "Samaraim",
+   "nombre_rv1909": "Samaraim",
+   "formas_rv1909": [
+    "Samaraim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Ras et Tahuneh",
+    "lat": 31.9088,
+    "lon": 35.2117,
+    "puntuacion_openbible": 363,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet es Samra",
+     "lat": 31.9163,
+     "lon": 35.4854,
+     "puntuacion_openbible": 108
+    },
+    {
+     "identificacion": "Rammun",
+     "lat": 31.9297,
+     "lon": 35.2989,
+     "puntuacion_openbible": 61
+    },
+    {
+     "identificacion": "Ras ez Zemara",
+     "lat": 31.9408,
+     "lon": 35.2957,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a811a10/zemaraim",
+   "nota": ""
+  },
+  {
+   "id": "acsaf",
+   "nombre": "Acsaf",
+   "nombre_rv1909": "Achsaph",
+   "formas_rv1909": [
+    "Achsaph",
+    "Axaph"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:1",
+    "Jos 12:20",
+    "Jos 19:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Regev",
+    "lat": 32.7589,
+    "lon": 35.0903,
+    "puntuacion_openbible": 332,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Keisan",
+     "lat": 32.8728,
+     "lon": 35.1513,
+     "puntuacion_openbible": 243
+    },
+    {
+     "identificacion": "Tell Bir el Gharbi",
+     "lat": 32.9014,
+     "lon": 35.1694,
+     "puntuacion_openbible": 7
+    },
+    {
+     "identificacion": "Tel Kabri",
+     "lat": 33.0084,
+     "lon": 35.1391,
+     "puntuacion_openbible": -30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8ce5c4/achshaph",
+   "nota": ""
+  },
+  {
+   "id": "adulam",
+   "nombre": "Adulam",
+   "nombre_rv1909": "Adullam",
+   "formas_rv1909": [
+    "Adullam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:15",
+    "Jos 15:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet esh Sheikh Madhkur",
+    "lat": 31.6517,
+    "lon": 35.0017,
+    "puntuacion_openbible": 737,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Id el Minya",
+     "lat": 31.655,
+     "lon": 35.0039,
+     "puntuacion_openbible": -8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af82614/adullam",
+   "nota": ""
+  },
+  {
+   "id": "adumin",
+   "nombre": "Adumin",
+   "nombre_rv1909": "Adumin",
+   "formas_rv1909": [
+    "Adumin",
+    "Adummim"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 15:7",
+    "Jos 18:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Adummim",
+    "lat": 31.8175,
+    "lon": 35.3615,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acf8790/adummim",
+   "nota": ""
+  },
+  {
+   "id": "atarot-16-2",
+   "nombre": "Atarot (Jos 16:2)",
+   "nombre_rv1909": "Ataroth",
+   "formas_rv1909": [
+    "Ataroth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:2"
+   ],
+   "ubicacion": {
+    "identificacion": "Kafr Aqab",
+    "lat": 31.8805,
+    "lon": 35.2285,
+    "puntuacion_openbible": 121,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Raddana",
+     "lat": 31.9121,
+     "lon": 35.202,
+     "puntuacion_openbible": 107
+    },
+    {
+     "identificacion": "Ein Umm esh Sharayit",
+     "lat": 31.8859,
+     "lon": 35.2052,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Ein Arik",
+     "lat": 31.9067,
+     "lon": 35.1431,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a919ab0/ataroth-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ataroth». Hay otros lugares llamados Atarot: este es el de Jos 16:2 según OpenBible."
+  },
+  {
+   "id": "atarot-16-7",
+   "nombre": "Atarot (Jos 16:7)",
+   "nombre_rv1909": "Ataroth",
+   "formas_rv1909": [
+    "Ataroth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel al Mazar",
+    "lat": 32.1399,
+    "lon": 35.485,
+    "puntuacion_openbible": 136,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Kafr Aqab",
+     "lat": 31.8805,
+     "lon": 35.2285,
+     "puntuacion_openbible": 46
+    },
+    {
+     "identificacion": "Khirbet Raddana",
+     "lat": 31.9121,
+     "lon": 35.202,
+     "puntuacion_openbible": 19
+    },
+    {
+     "identificacion": "Tell esh Sheikh Dhiab",
+     "lat": 32.0467,
+     "lon": 35.43,
+     "puntuacion_openbible": 19
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaf998e/ataroth-3",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ataroth». Hay otros lugares llamados Atarot: este es el de Jos 16:7 según OpenBible."
+  },
+  {
+   "id": "baalat",
+   "nombre": "Baalat",
+   "nombre_rv1909": "Baalath",
+   "formas_rv1909": [
+    "Baalath"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 19:44"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Maghar",
+    "lat": 31.8385,
+    "lon": 34.7822,
+    "puntuacion_openbible": 749,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Mughar",
+     "lat": 31.8414,
+     "lon": 34.7858,
+     "puntuacion_openbible": 55
+    },
+    {
+     "identificacion": "Deir el Azar",
+     "lat": 31.809,
+     "lon": 35.1038,
+     "puntuacion_openbible": 30
+    },
+    {
+     "identificacion": "Kesla",
+     "lat": 31.7811,
+     "lon": 35.0511,
+     "puntuacion_openbible": 5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abc1b7c/baalath-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Baalath»."
+  },
+  {
+   "id": "bealot",
+   "nombre": "Bealot",
+   "nombre_rv1909": "Bealoth",
+   "formas_rv1909": [
+    "Bealoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Beer Yeroham",
+    "lat": 30.991,
+    "lon": 34.9113,
+    "puntuacion_openbible": 36,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Nahal Avnon Fortress",
+     "lat": 30.9929,
+     "lon": 34.9397,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 29
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a14325e/bealoth-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Bealoth»."
+  },
+  {
+   "id": "beerot",
+   "nombre": "Beerot",
+   "nombre_rv1909": "Beeroth",
+   "formas_rv1909": [
+    "Beeroth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 9:17",
+    "Jos 18:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Burj",
+    "lat": 31.8238,
+    "lon": 35.1872,
+    "puntuacion_openbible": 252,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Al Bira",
+     "lat": 31.9051,
+     "lon": 35.215,
+     "puntuacion_openbible": 244
+    },
+    {
+     "identificacion": "Nabi Samwil",
+     "lat": 31.8327,
+     "lon": 35.1801,
+     "puntuacion_openbible": 97
+    },
+    {
+     "identificacion": "Biddu",
+     "lat": 31.8339,
+     "lon": 35.1483,
+     "puntuacion_openbible": 48
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a046454/beeroth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Beeroth»."
+  },
+  {
+   "id": "betfur",
+   "nombre": "Betfur",
+   "nombre_rv1909": "Bethfur",
+   "formas_rv1909": [
+    "Bethfur"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:58"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet et Tubeiqa",
+    "lat": 31.5894,
+    "lon": 35.0942,
+    "puntuacion_openbible": 842,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/addba2a/beth-zur",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Bethfur»."
+  },
+  {
+   "id": "betonim",
+   "nombre": "Betonim",
+   "nombre_rv1909": "Betonim",
+   "formas_rv1909": [
+    "Betonim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Batneh",
+    "lat": 32.0106,
+    "lon": 35.7107,
+    "puntuacion_openbible": 645,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a079478/betonim",
+   "nota": ""
+  },
+  {
+   "id": "bizotia",
+   "nombre": "Bizotia",
+   "nombre_rv1909": "Bizotia",
+   "formas_rv1909": [
+    "Bizotia"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:28"
+   ],
+   "ubicacion": null,
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2227ba/biziothiah",
+   "nota": "OpenBible no da identificación con coordenadas."
+  },
+  {
+   "id": "boscat",
+   "nombre": "Boscat",
+   "nombre_rv1909": "Boscath",
+   "formas_rv1909": [
+    "Boscath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:39"
+   ],
+   "ubicacion": {
+    "identificacion": "Ed Dawaimeh",
+    "lat": 31.5369,
+    "lon": 34.9132,
+    "puntuacion_openbible": 479,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a58252b/bozkath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Boscath»."
+  },
+  {
+   "id": "quitlis",
+   "nombre": "Quitlis",
+   "nombre_rv1909": "Chîtlis",
+   "formas_rv1909": [
+    "Chîtlis"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:40"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Umm al Baqar",
+    "lat": 31.5299,
+    "lon": 34.7896,
+    "puntuacion_openbible": 347,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet er Ras",
+     "lat": 31.5591,
+     "lon": 34.9571,
+     "puntuacion_openbible": 61
+    },
+    {
+     "identificacion": "Horbat Gluma",
+     "lat": 31.5495,
+     "lon": 34.6257,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Tell Kilkis",
+     "lat": 31.5291,
+     "lon": 34.9009,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0ff819/chitlish",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Chîtlis»."
+  },
+  {
+   "id": "elteque",
+   "nombre": "Elteque",
+   "nombre_rv1909": "Eltechê",
+   "formas_rv1909": [
+    "Eltechê",
+    "Eltheco"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:44",
+    "Jos 21:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Shalaf",
+    "lat": 31.8925,
+    "lon": 34.7678,
+    "puntuacion_openbible": 414,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Melat",
+     "lat": 31.8564,
+     "lon": 34.8656,
+     "puntuacion_openbible": 76
+    },
+    {
+     "identificacion": "Tel Miqne",
+     "lat": 31.7775,
+     "lon": 34.8519,
+     "puntuacion_openbible": -68
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3c4559/eltekeh",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Eltechê»."
+  },
+  {
+   "id": "eltecon",
+   "nombre": "Eltecón",
+   "nombre_rv1909": "Eltecón",
+   "formas_rv1909": [
+    "Eltecón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:59"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet ed Deir",
+    "lat": 31.6903,
+    "lon": 35.1015,
+    "puntuacion_openbible": 409,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Udeise",
+     "lat": 31.5495,
+     "lon": 35.1378,
+     "puntuacion_openbible": 107
+    },
+    {
+     "identificacion": "Khirbet el ’Id",
+     "lat": 31.6932,
+     "lon": 35.0915,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a26cd81/eltekon",
+   "nota": ""
+  },
+  {
+   "id": "estemo",
+   "nombre": "Estemo",
+   "nombre_rv1909": "Estemo",
+   "formas_rv1909": [
+    "Estemo",
+    "Estemoa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:50",
+    "Jos 21:14"
+   ],
+   "ubicacion": {
+    "identificacion": "As Samu",
+    "lat": 31.4008,
+    "lon": 35.0671,
+    "puntuacion_openbible": 722,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad68510/eshtemoa",
+   "nota": ""
+  },
+  {
+   "id": "galilea",
+   "nombre": "Galilea",
+   "nombre_rv1909": "Galilea",
+   "formas_rv1909": [
+    "Galilea"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 20:7",
+    "Jos 21:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Galilee",
+    "lat": 32.76,
+    "lon": 35.527,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9cf1e8/galilee-1",
+   "nota": ""
+  },
+  {
+   "id": "gedero",
+   "nombre": "Gedero",
+   "nombre_rv1909": "Gederoh",
+   "formas_rv1909": [
+    "Gederoh"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Judraya",
+    "lat": 31.6889,
+    "lon": 34.9961,
+    "puntuacion_openbible": 98,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell el Meleiha",
+     "lat": 31.4621,
+     "lon": 34.7765,
+     "puntuacion_openbible": 93
+    },
+    {
+     "identificacion": "Khirbet Hamideh",
+     "lat": 31.827,
+     "lon": 34.9876,
+     "puntuacion_openbible": 90
+    },
+    {
+     "identificacion": "Tel Agra",
+     "lat": 31.5017,
+     "lon": 34.8733,
+     "puntuacion_openbible": 90
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a728f1b/gederoth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gederoh»."
+  },
+  {
+   "id": "gesur",
+   "nombre": "Gesur",
+   "nombre_rv1909": "Gessuri",
+   "formas_rv1909": [
+    "Gessuri",
+    "Gessur"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 12:5",
+    "Jos 13:11",
+    "Jos 13:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Fiq",
+    "lat": 32.7667,
+    "lon": 35.7,
+    "puntuacion_openbible": 435,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af6c325/geshur",
+   "nota": ""
+  },
+  {
+   "id": "gibeat",
+   "nombre": "Gibeat",
+   "nombre_rv1909": "Gibeath",
+   "formas_rv1909": [
+    "Gibeath"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 18:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel el Ful",
+    "lat": 31.8231,
+    "lon": 35.2307,
+    "puntuacion_openbible": 308,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Abu Ghosh",
+     "lat": 31.8074,
+     "lon": 35.1075,
+     "puntuacion_openbible": 37
+    },
+    {
+     "identificacion": "Jaba",
+     "lat": 31.8575,
+     "lon": 35.2611,
+     "puntuacion_openbible": 32
+    },
+    {
+     "identificacion": "Khirbet el Mefjir",
+     "lat": 31.8819,
+     "lon": 35.46,
+     "puntuacion_openbible": 10
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac25f34/gibeah-4",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gibeath»."
+  },
+  {
+   "id": "hanaton",
+   "nombre": "Hanatón",
+   "nombre_rv1909": "Hanatón",
+   "formas_rv1909": [
+    "Hanatón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Hanaton",
+    "lat": 32.7856,
+    "lon": 35.2569,
+    "puntuacion_openbible": 847,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Kefr Anau",
+     "lat": 32.7881,
+     "lon": 35.3106,
+     "puntuacion_openbible": 27
+    },
+    {
+     "identificacion": "Tel Regev",
+     "lat": 32.7589,
+     "lon": 35.0903,
+     "puntuacion_openbible": -2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a412c43/hannathon",
+   "nota": ""
+  },
+  {
+   "id": "jabneel",
+   "nombre": "Jabneel (Jos 15:11)",
+   "nombre_rv1909": "Jabneel",
+   "formas_rv1909": [
+    "Jabneel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Yibna",
+    "lat": 31.866,
+    "lon": 34.7463,
+    "puntuacion_openbible": 775,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yavne Yam",
+     "lat": 31.9228,
+     "lon": 34.6933,
+     "puntuacion_openbible": 70
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7adb01/jabneel-1",
+   "nota": "Hay otros lugares llamados Jabneel: este es el de Jos 15:11 según OpenBible."
+  },
+  {
+   "id": "jabneel-19-33",
+   "nombre": "Jabneel (Jos 19:33)",
+   "nombre_rv1909": "Jabneel",
+   "formas_rv1909": [
+    "Jabneel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Yin’am",
+    "lat": 32.7133,
+    "lon": 35.5125,
+    "puntuacion_openbible": 753,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Yamma",
+     "lat": 32.6973,
+     "lon": 35.5103,
+     "puntuacion_openbible": 67
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abff89f/jabneel-2",
+   "nota": "Hay otros lugares llamados Jabneel: este es el de Jos 19:33 según OpenBible."
+  },
+  {
+   "id": "jarmut-21-29",
+   "nombre": "Jarmut (Jos 21:29)",
+   "nombre_rv1909": "Jarmuth",
+   "formas_rv1909": [
+    "Jarmuth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Kokab el Hawa",
+    "lat": 32.5956,
+    "lon": 35.5214,
+    "puntuacion_openbible": 285,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "En haYadid",
+     "lat": 32.5903,
+     "lon": 35.5256,
+     "puntuacion_openbible": 6
+    },
+    {
+     "identificacion": "Khirbet ed Dir",
+     "lat": 32.6597,
+     "lon": 35.5372,
+     "puntuacion_openbible": 5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1eb300/jarmuth-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Jarmuth». Hay otros lugares llamados Jarmut: este es el de Jos 21:29 según OpenBible."
+  },
+  {
+   "id": "jocdeam",
+   "nombre": "Jocdeam",
+   "nombre_rv1909": "Jocdeam",
+   "formas_rv1909": [
+    "Jocdeam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:56"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet er Raqqa",
+    "lat": 31.462,
+    "lon": 35.1185,
+    "puntuacion_openbible": 419,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a56cad5/jokdeam",
+   "nota": ""
+  },
+  {
+   "id": "jocneam",
+   "nombre": "Jocneam",
+   "nombre_rv1909": "Jocneam",
+   "formas_rv1909": [
+    "Jocneam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:22",
+    "Jos 19:11",
+    "Jos 21:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Yokneam",
+    "lat": 32.6641,
+    "lon": 35.1083,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5c92e1/jokneam",
+   "nota": ""
+  },
+  {
+   "id": "jocteel",
+   "nombre": "Jocteel",
+   "nombre_rv1909": "Jocteel",
+   "formas_rv1909": [
+    "Jocteel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell ed Duweir",
+    "lat": 31.5653,
+    "lon": 34.8492,
+    "puntuacion_openbible": 571,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Zanu",
+     "lat": 31.7194,
+     "lon": 35.0013,
+     "puntuacion_openbible": 136
+    },
+    {
+     "identificacion": "Khirbet Umm al Baqar",
+     "lat": 31.5299,
+     "lon": 34.7896,
+     "puntuacion_openbible": 69
+    },
+    {
+     "identificacion": "Khirbet Beit Lei",
+     "lat": 31.5636,
+     "lon": 34.9281,
+     "puntuacion_openbible": 51
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a45dd20/joktheel-1",
+   "nota": ""
+  },
+  {
+   "id": "cabseel",
+   "nombre": "Cabseel",
+   "nombre_rv1909": "Cabseel",
+   "formas_rv1909": [
+    "Cabseel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Hora",
+    "lat": 31.2862,
+    "lon": 34.9323,
+    "puntuacion_openbible": 162,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Ira",
+     "lat": 31.2328,
+     "lon": 34.9867,
+     "puntuacion_openbible": 149
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2715db/kabzeel",
+   "nota": ""
+  },
+  {
+   "id": "quibsaim",
+   "nombre": "Quibsaim",
+   "nombre_rv1909": "Kibsaim",
+   "formas_rv1909": [
+    "Kibsaim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel al Mazar",
+    "lat": 32.1399,
+    "lon": 35.485,
+    "puntuacion_openbible": 123,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Simadi",
+     "lat": 32.1321,
+     "lon": 35.4878,
+     "puntuacion_openbible": 114
+    },
+    {
+     "identificacion": "Tel Yokneam",
+     "lat": 32.6641,
+     "lon": 35.1083,
+     "puntuacion_openbible": 26
+    },
+    {
+     "identificacion": "Qusin",
+     "lat": 32.2387,
+     "lon": 35.1834,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5187a4/kibzaim",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Kibsaim»."
+  },
+  {
+   "id": "quision",
+   "nombre": "Quisión",
+   "nombre_rv1909": "Chisión",
+   "formas_rv1909": [
+    "Chisión",
+    "Cesión"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:20",
+    "Jos 21:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Qisyon",
+    "lat": 32.6614,
+    "lon": 35.3931,
+    "puntuacion_openbible": 447,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Rekhesh",
+     "lat": 32.6534,
+     "lon": 35.4661,
+     "puntuacion_openbible": 232
+    },
+    {
+     "identificacion": "Tell el Ajjul",
+     "lat": 32.6314,
+     "lon": 35.3719,
+     "puntuacion_openbible": 80
+    },
+    {
+     "identificacion": "Tell Abu Qedeis",
+     "lat": 32.5595,
+     "lon": 35.216,
+     "puntuacion_openbible": -38
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a20364a/kishion",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Chisión»."
+  },
+  {
+   "id": "lasaron",
+   "nombre": "Lasarón",
+   "nombre_rv1909": "Lasarón",
+   "formas_rv1909": [
+    "Lasarón"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 12:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Sharon Plain",
+    "lat": 32.4,
+    "lon": 34.883,
+    "puntuacion_openbible": 467,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Sarona",
+     "lat": 32.7131,
+     "lon": 35.4746,
+     "puntuacion_openbible": 29
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8bbf2b/lasharon",
+   "nota": ""
+  },
+  {
+   "id": "lebaot",
+   "nombre": "Lebaot",
+   "nombre_rv1909": "Lebaoth",
+   "formas_rv1909": [
+    "Lebaoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Jebel el Biri",
+    "lat": 31.0067,
+    "lon": 34.4918,
+    "puntuacion_openbible": 429,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein esh Shallala",
+     "lat": 31.3053,
+     "lon": 34.5116,
+     "puntuacion_openbible": 64
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac3ac4e/lebaoth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Lebaoth»."
+  },
+  {
+   "id": "maarat",
+   "nombre": "Maarat",
+   "nombre_rv1909": "Maarath",
+   "formas_rv1909": [
+    "Maarath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:59"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Qufin",
+    "lat": 31.6207,
+    "lon": 35.1135,
+    "puntuacion_openbible": 402,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet ez Zawiya",
+     "lat": 31.6015,
+     "lon": 35.1587,
+     "puntuacion_openbible": 65
+    },
+    {
+     "identificacion": "Khirbet el Hubeila",
+     "lat": 31.66,
+     "lon": 35.1083,
+     "puntuacion_openbible": 38
+    },
+    {
+     "identificacion": "Rujm es Sabit",
+     "lat": 31.6533,
+     "lon": 35.1427,
+     "puntuacion_openbible": 38
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae60c0c/maarath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Maarath»."
+  },
+  {
+   "id": "meguido",
+   "nombre": "Meguido",
+   "nombre_rv1909": "Megiddo",
+   "formas_rv1909": [
+    "Megiddo"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:21",
+    "Jos 17:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Megiddo",
+    "lat": 32.5853,
+    "lon": 35.1844,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8554e3/megiddo",
+   "nota": ""
+  },
+  {
+   "id": "neftoa",
+   "nombre": "Neftoa",
+   "nombre_rv1909": "Nephtoa",
+   "formas_rv1909": [
+    "Nephtoa"
+   ],
+   "tipo": "fuente",
+   "refs": [
+    "Jos 15:9",
+    "Jos 18:15"
+   ],
+   "ubicacion": {
+    "identificacion": "Lifta",
+    "lat": 31.7944,
+    "lon": 35.1966,
+    "puntuacion_openbible": 747,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac1fef1/nephtoah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Nephtoa»."
+  },
+  {
+   "id": "racat",
+   "nombre": "Racat",
+   "nombre_rv1909": "Raccath",
+   "formas_rv1909": [
+    "Raccath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Raqqat",
+    "lat": 32.8064,
+    "lon": 35.5258,
+    "puntuacion_openbible": 562,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tiberias",
+     "lat": 32.7736,
+     "lon": 35.5442,
+     "puntuacion_openbible": 204
+    },
+    {
+     "identificacion": "Khirbet el Fuliya",
+     "lat": 32.8081,
+     "lon": 35.5264,
+     "puntuacion_openbible": 34
+    },
+    {
+     "identificacion": "Khirbet el Qureiyeh",
+     "lat": 33.1119,
+     "lon": 35.4625,
+     "puntuacion_openbible": 6
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a204528/rakkath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Raccath»."
+  },
+  {
+   "id": "sansana",
+   "nombre": "Sansana",
+   "nombre_rv1909": "Sansana",
+   "formas_rv1909": [
+    "Sansana"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet esh Shamsaniyat",
+    "lat": 31.3445,
+    "lon": 34.9014,
+    "puntuacion_openbible": 581,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sbalat Abu Susein",
+     "lat": 31.2626,
+     "lon": 34.5298,
+     "puntuacion_openbible": 11
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aeedde4/sansannah",
+   "nota": ""
+  },
+  {
+   "id": "sahasim",
+   "nombre": "Sahasim",
+   "nombre_rv1909": "Sahasim",
+   "formas_rv1909": [
+    "Sahasim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:22"
+   ],
+   "ubicacion": {
+    "identificacion": "El Karm",
+    "lat": 32.5418,
+    "lon": 35.3666,
+    "puntuacion_openbible": 265,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sheikh Mazghith",
+     "lat": 32.6713,
+     "lon": 35.5278,
+     "puntuacion_openbible": 59
+    },
+    {
+     "identificacion": "Tell Rekhesh",
+     "lat": 32.6534,
+     "lon": 35.4661,
+     "puntuacion_openbible": 41
+    },
+    {
+     "identificacion": "Sheikh esh Shamsawi",
+     "lat": 32.6878,
+     "lon": 35.5252,
+     "puntuacion_openbible": 39
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5b01f4/shahazumah",
+   "nota": ""
+  },
+  {
+   "id": "saruhen",
+   "nombre": "Saruhén",
+   "nombre_rv1909": "Saruhén",
+   "formas_rv1909": [
+    "Saruhén"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:6"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall al Ajjul",
+    "lat": 31.467,
+    "lon": 34.4041,
+    "puntuacion_openbible": 418,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Sharuhen",
+     "lat": 31.2819,
+     "lon": 34.4825,
+     "puntuacion_openbible": 251
+    },
+    {
+     "identificacion": "Tel Haror",
+     "lat": 31.3821,
+     "lon": 34.6065,
+     "puntuacion_openbible": 62
+    },
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 16
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a887d36/sharuhen",
+   "nota": ""
+  },
+  {
+   "id": "sebarim",
+   "nombre": "Sebarim",
+   "nombre_rv1909": "Sebarim",
+   "formas_rv1909": [
+    "Sebarim"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 7:5"
+   ],
+   "ubicacion": {
+    "identificacion": "western cliff of Wadi Makkuk",
+    "lat": 31.9073,
+    "lon": 35.3106,
+    "puntuacion_openbible": 192,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Et Tell",
+     "lat": 31.9169,
+     "lon": 35.2611,
+     "puntuacion_openbible": 99
+    },
+    {
+     "identificacion": "Khirbet el Maqatir",
+     "lat": 31.9148,
+     "lon": 35.2496,
+     "puntuacion_openbible": 14
+    },
+    {
+     "identificacion": "Khirbet Nisieh",
+     "lat": 31.8975,
+     "lon": 35.2286,
+     "puntuacion_openbible": 5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac53696/shebarim",
+   "nota": ""
+  },
+  {
+   "id": "sucot-15-48",
+   "nombre": "Sucot (Jos 15:48)",
+   "nombre_rv1909": "Succoth",
+   "formas_rv1909": [
+    "Succoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:48"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Shuweikah",
+    "lat": 31.4009,
+    "lon": 35.0061,
+    "puntuacion_openbible": 819,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac9c090/socoh-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Succoth». Hay otros lugares llamados Sucot: este es el de Jos 15:48 según OpenBible."
+  },
+  {
+   "id": "taanac",
+   "nombre": "Taanac",
+   "nombre_rv1909": "Taanach",
+   "formas_rv1909": [
+    "Taanach"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:21",
+    "Jos 17:11",
+    "Jos 21:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Ta’anakh",
+    "lat": 32.5215,
+    "lon": 35.2191,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6f05f6/taanach",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Taanach»."
+  },
+  {
+   "id": "aczib",
+   "nombre": "Aczib (Jos 15:44)",
+   "nombre_rv1909": "Achzib",
+   "formas_rv1909": [
+    "Achzib"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:44"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel el Beida",
+    "lat": 31.6421,
+    "lon": 34.953,
+    "puntuacion_openbible": 536,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain Kezbeh",
+     "lat": 31.6901,
+     "lon": 35.0033,
+     "puntuacion_openbible": 51
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2270e4/achzib-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Achzib». Hay otros lugares llamados Aczib: este es el de Jos 15:44 según OpenBible."
+  },
+  {
+   "id": "aczib-19-29",
+   "nombre": "Aczib (Jos 19:29)",
+   "nombre_rv1909": "Achzib",
+   "formas_rv1909": [
+    "Achzib"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Achziv",
+    "lat": 33.0483,
+    "lon": 35.1027,
+    "puntuacion_openbible": 794,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad0d82f/achzib-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Achzib». Hay otros lugares llamados Aczib: este es el de Jos 19:29 según OpenBible."
+  },
+  {
+   "id": "ajalon",
+   "nombre": "Ajalón",
+   "nombre_rv1909": "Ailón",
+   "formas_rv1909": [
+    "Ailón",
+    "Ayalón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:42",
+    "Jos 21:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Yalo",
+    "lat": 31.8411,
+    "lon": 35.0236,
+    "puntuacion_openbible": 665,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell el Kokah",
+     "lat": 31.8401,
+     "lon": 35.0263,
+     "puntuacion_openbible": 170
+    },
+    {
+     "identificacion": "Khirbet Haiyan",
+     "lat": 31.9052,
+     "lon": 35.2704,
+     "puntuacion_openbible": -14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1c600b/aijalon-1",
+   "nota": ""
+  },
+  {
+   "id": "afeca",
+   "nombre": "Afeca",
+   "nombre_rv1909": "Apheca",
+   "formas_rv1909": [
+    "Apheca"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:53"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet al Hadab",
+    "lat": 31.4555,
+    "lon": 34.9975,
+    "puntuacion_openbible": 498,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Marajim",
+     "lat": 31.4885,
+     "lon": 35.0238,
+     "puntuacion_openbible": 219
+    },
+    {
+     "identificacion": "Tell Ras el Ain",
+     "lat": 32.105,
+     "lon": 34.9304,
+     "puntuacion_openbible": 131
+    },
+    {
+     "identificacion": "Khirbet Kan’an",
+     "lat": 31.5126,
+     "lon": 35.0754,
+     "puntuacion_openbible": -75
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae46bcd/aphekah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Apheca»."
+  },
+  {
+   "id": "carmel",
+   "nombre": "Carmel (Jos 12:22)",
+   "nombre_rv1909": "Carmel",
+   "formas_rv1909": [
+    "Carmel"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 12:22",
+    "Jos 19:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Carmel",
+    "lat": 32.6725,
+    "lon": 35.0233,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3e21c6/mount-carmel",
+   "nota": "Hay otros lugares llamados Carmel: este es el de Jos 12:22 según OpenBible."
+  },
+  {
+   "id": "carmel-15-55",
+   "nombre": "Carmel (Jos 15:55)",
+   "nombre_rv1909": "Carmel",
+   "formas_rv1909": [
+    "Carmel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:55"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Kirmil",
+    "lat": 31.4229,
+    "lon": 35.133,
+    "puntuacion_openbible": 842,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a053f15/carmel-1",
+   "nota": "Hay otros lugares llamados Carmel: este es el de Jos 15:55 según OpenBible."
+  },
+  {
+   "id": "dimona",
+   "nombre": "Dimona",
+   "nombre_rv1909": "Dimona",
+   "formas_rv1909": [
+    "Dimona"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet edh Dheiba",
+    "lat": 31.2961,
+    "lon": 35.1562,
+    "puntuacion_openbible": 229,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Tayyav",
+     "lat": 31.3028,
+     "lon": 35.1491,
+     "puntuacion_openbible": 24
+    },
+    {
+     "identificacion": "Horbat Deragot",
+     "lat": 31.3036,
+     "lon": 35.0783,
+     "puntuacion_openbible": 24
+    },
+    {
+     "identificacion": "Tall Dhiban",
+     "lat": 31.5022,
+     "lon": 35.7766,
+     "puntuacion_openbible": 22
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac17675/dimonah",
+   "nota": ""
+  },
+  {
+   "id": "engedi",
+   "nombre": "Engedi",
+   "nombre_rv1909": "Engedi",
+   "formas_rv1909": [
+    "Engedi"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 15:62"
+   ],
+   "ubicacion": {
+    "identificacion": "Ein Gedi",
+    "lat": 31.45,
+    "lon": 35.3833,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a51df0e/engedi",
+   "nota": ""
+  },
+  {
+   "id": "en-tapua",
+   "nombre": "En-tapúa",
+   "nombre_rv1909": "Tappua",
+   "formas_rv1909": [
+    "Tappua"
+   ],
+   "tipo": "fuente",
+   "refs": [
+    "Jos 17:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Abu Zarad",
+    "lat": 32.1041,
+    "lon": 35.2301,
+    "puntuacion_openbible": 357,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein et Tuta",
+     "lat": 32.1087,
+     "lon": 35.2365,
+     "puntuacion_openbible": 60
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad6b2b7/en-tappuah",
+   "nota": "Jos 17:7: «la fuente de Tappua»; distinta de la ciudad de Tapúa."
+  },
+  {
+   "id": "estaol",
+   "nombre": "Estaol",
+   "nombre_rv1909": "Estaol",
+   "formas_rv1909": [
+    "Estaol"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:33",
+    "Jos 19:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Deir Shubeib",
+    "lat": 31.7977,
+    "lon": 34.986,
+    "puntuacion_openbible": 337,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Eshtaol",
+     "lat": 31.7811,
+     "lon": 35.0101,
+     "puntuacion_openbible": 172
+    },
+    {
+     "identificacion": "Artuf",
+     "lat": 31.7673,
+     "lon": 35.0014,
+     "puntuacion_openbible": 90
+    },
+    {
+     "identificacion": "Khirbet Deir Abu Kabus",
+     "lat": 31.7855,
+     "lon": 35.0103,
+     "puntuacion_openbible": 60
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a355b6e/eshtaol",
+   "nota": ""
+  },
+  {
+   "id": "gedera",
+   "nombre": "Gedera",
+   "nombre_rv1909": "Gedera",
+   "formas_rv1909": [
+    "Gedera"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Judraya",
+    "lat": 31.6889,
+    "lon": 34.9961,
+    "puntuacion_openbible": 551,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Goded",
+     "lat": 31.6334,
+     "lon": 34.9166,
+     "puntuacion_openbible": 282
+    },
+    {
+     "identificacion": "Qatra",
+     "lat": 31.8229,
+     "lon": 34.7777,
+     "puntuacion_openbible": 61
+    },
+    {
+     "identificacion": "Jedireh",
+     "lat": 31.8579,
+     "lon": 35.1973,
+     "puntuacion_openbible": 56
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a12012d/gederah-1",
+   "nota": ""
+  },
+  {
+   "id": "gabaon",
+   "nombre": "Gabaón",
+   "nombre_rv1909": "Gabaón",
+   "formas_rv1909": [
+    "Gabaón",
+    "Gibeón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 9:3",
+    "Jos 9:17",
+    "Jos 10:1",
+    "Jos 10:2",
+    "Jos 10:4",
+    "Jos 10:5",
+    "Jos 10:6",
+    "Jos 10:10",
+    "Jos 10:12",
+    "Jos 10:41",
+    "Jos 11:19",
+    "Jos 18:25",
+    "Jos 21:17"
+   ],
+   "ubicacion": {
+    "identificacion": "El Jib",
+    "lat": 31.8475,
+    "lon": 35.1834,
+    "puntuacion_openbible": 912,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aede336/gibeon",
+   "nota": ""
+  },
+  {
+   "id": "gilgal",
+   "nombre": "Gilgal (Jos 4:19)",
+   "nombre_rv1909": "Gilgal",
+   "formas_rv1909": [
+    "Gilgal"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 4:19",
+    "Jos 4:20",
+    "Jos 5:9",
+    "Jos 5:10",
+    "Jos 9:6",
+    "Jos 10:6",
+    "Jos 10:7",
+    "Jos 10:9",
+    "Jos 10:15",
+    "Jos 10:43",
+    "Jos 14:6"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Mefjir",
+    "lat": 31.8819,
+    "lon": 35.46,
+    "puntuacion_openbible": 556,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Bedhat esh Sha’ab",
+     "lat": 32.1599,
+     "lon": 35.5155,
+     "puntuacion_openbible": 20
+    },
+    {
+     "identificacion": "Tell el Jurn",
+     "lat": 31.8739,
+     "lon": 35.4588,
+     "puntuacion_openbible": 14
+    },
+    {
+     "identificacion": "El ’Unuq",
+     "lat": 32.2493,
+     "lon": 35.3707,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab94aea/gilgal-1",
+   "nota": "Hay otros lugares llamados Gilgal: este es el de Jos 4:19 según OpenBible."
+  },
+  {
+   "id": "gilgal-15-7",
+   "nombre": "Gilgal (Jos 15:7)",
+   "nombre_rv1909": "Gilgal",
+   "formas_rv1909": [
+    "Gilgal"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Araq ed Deir",
+    "lat": 31.7905,
+    "lon": 35.3226,
+    "puntuacion_openbible": 162,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tal‘at ed Damm",
+     "lat": 31.8184,
+     "lon": 35.3603,
+     "puntuacion_openbible": 66
+    },
+    {
+     "identificacion": "Khirbet el Mefjir",
+     "lat": 31.8819,
+     "lon": 35.46,
+     "puntuacion_openbible": 37
+    },
+    {
+     "identificacion": "El Khirbeh",
+     "lat": 31.7649,
+     "lon": 35.2888,
+     "puntuacion_openbible": 29
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aed8df9/gilgal-3",
+   "nota": "Hay otros lugares llamados Gilgal: este es el de Jos 15:7 según OpenBible."
+  },
+  {
+   "id": "hadasa",
+   "nombre": "Hadasa",
+   "nombre_rv1909": "Hadasa",
+   "formas_rv1909": [
+    "Hadasa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:37"
+   ],
+   "ubicacion": {
+    "identificacion": "between Lachish and Gath",
+    "lat": 31.6269,
+    "lon": 34.8457,
+    "puntuacion_openbible": 620,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Sheqef",
+     "lat": 31.5594,
+     "lon": 34.7144,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Khirbet el Judeideh",
+     "lat": 31.5803,
+     "lon": 34.7295,
+     "puntuacion_openbible": -12
+    },
+    {
+     "identificacion": "Khirbet Adasa",
+     "lat": 31.8488,
+     "lon": 35.1636,
+     "puntuacion_openbible": -87
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a785680/hadashah",
+   "nota": ""
+  },
+  {
+   "id": "halhul",
+   "nombre": "Halhul",
+   "nombre_rv1909": "Halhul",
+   "formas_rv1909": [
+    "Halhul"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:58"
+   ],
+   "ubicacion": {
+    "identificacion": "Halhul",
+    "lat": 31.5774,
+    "lon": 35.1073,
+    "puntuacion_openbible": 881,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afca9ce/halhul",
+   "nota": ""
+  },
+  {
+   "id": "hamat",
+   "nombre": "Hamat",
+   "nombre_rv1909": "Hamath",
+   "formas_rv1909": [
+    "Hamath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Hamat Tiberias",
+    "lat": 32.7664,
+    "lon": 35.5506,
+    "puntuacion_openbible": 603,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Raqqat",
+     "lat": 32.8064,
+     "lon": 35.5258,
+     "puntuacion_openbible": 39
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2d6bfc/hammath-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Hamath»."
+  },
+  {
+   "id": "hamon",
+   "nombre": "Hamón",
+   "nombre_rv1909": "Hammón",
+   "formas_rv1909": [
+    "Hammón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Umm el Awamid",
+    "lat": 33.1281,
+    "lon": 35.152,
+    "puntuacion_openbible": 752,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9d4f8e/hammon-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Hammón»."
+  },
+  {
+   "id": "helef",
+   "nombre": "Helef",
+   "nombre_rv1909": "Heleph",
+   "formas_rv1909": [
+    "Heleph"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Irbadeh",
+    "lat": 32.7247,
+    "lon": 35.4138,
+    "puntuacion_openbible": 577,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8687ff/heleph",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Heleph»."
+  },
+  {
+   "id": "hefer",
+   "nombre": "Hefer",
+   "nombre_rv1909": "Hepher",
+   "formas_rv1909": [
+    "Hepher"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Muhaffar",
+    "lat": 32.4428,
+    "lon": 35.2177,
+    "puntuacion_openbible": 455,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Hefer",
+     "lat": 32.3716,
+     "lon": 34.9074,
+     "puntuacion_openbible": 157
+    },
+    {
+     "identificacion": "Tel Dotan",
+     "lat": 32.4135,
+     "lon": 35.2399,
+     "puntuacion_openbible": 12
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2ebe1c/hepher",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Hepher»."
+  },
+  {
+   "id": "hesmon",
+   "nombre": "Hesmón",
+   "nombre_rv1909": "Hesmón",
+   "formas_rv1909": [
+    "Hesmón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Saqati",
+    "lat": 31.3099,
+    "lon": 34.9078,
+    "puntuacion_openbible": 231,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Givat Hablanim",
+     "lat": 31.1929,
+     "lon": 34.7936,
+     "puntuacion_openbible": 19
+    },
+    {
+     "identificacion": "Ain Muweileh",
+     "lat": 30.6875,
+     "lon": 34.3333,
+     "puntuacion_openbible": 17
+    },
+    {
+     "identificacion": "Ain Qoseimeh",
+     "lat": 30.6667,
+     "lon": 34.3667,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad2d29f/heshmon",
+   "nota": ""
+  },
+  {
+   "id": "hucuca",
+   "nombre": "Hucuca",
+   "nombre_rv1909": "Hucuca",
+   "formas_rv1909": [
+    "Hucuca"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Jemeijimeh",
+    "lat": 32.8643,
+    "lon": 35.2634,
+    "puntuacion_openbible": 283,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yaquq",
+     "lat": 32.8847,
+     "lon": 35.4789,
+     "puntuacion_openbible": 142
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a901903/hukkok",
+   "nota": ""
+  },
+  {
+   "id": "ibleam",
+   "nombre": "Ibleam",
+   "nombre_rv1909": "Ibleam",
+   "formas_rv1909": [
+    "Ibleam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 17:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Belameh",
+    "lat": 32.4462,
+    "lon": 35.292,
+    "puntuacion_openbible": 860,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a878d66/ibleam",
+   "nota": ""
+  },
+  {
+   "id": "ideala",
+   "nombre": "Ideala",
+   "nombre_rv1909": "Ideala",
+   "formas_rv1909": [
+    "Ideala"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:15"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Huwarah",
+    "lat": 32.7258,
+    "lon": 35.1834,
+    "puntuacion_openbible": 721,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae8fac6/idalah",
+   "nota": ""
+  },
+  {
+   "id": "jifta",
+   "nombre": "Jifta",
+   "nombre_rv1909": "Jiphta",
+   "formas_rv1909": [
+    "Jiphta"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Tarqumiyeh",
+    "lat": 31.5746,
+    "lon": 35.0124,
+    "puntuacion_openbible": 185,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Jebel Salih",
+     "lat": 31.552,
+     "lon": 34.9717,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Atar Nehusha",
+     "lat": 31.6235,
+     "lon": 34.9435,
+     "puntuacion_openbible": 42
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a67bd13/iphtah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Jiphta»."
+  },
+  {
+   "id": "irpeel",
+   "nombre": "Irpeel",
+   "nombre_rv1909": "Irpeel",
+   "formas_rv1909": [
+    "Irpeel"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Rafat",
+    "lat": 31.8706,
+    "lon": 35.1922,
+    "puntuacion_openbible": 198,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Umm esh Sharayit",
+     "lat": 31.8859,
+     "lon": 35.2052,
+     "puntuacion_openbible": 60
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a21b934/irpeel",
+   "nota": ""
+  },
+  {
+   "id": "jafia",
+   "nombre": "Jafia",
+   "nombre_rv1909": "Japhia",
+   "formas_rv1909": [
+    "Japhia"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Yafa",
+    "lat": 32.687,
+    "lon": 35.2754,
+    "puntuacion_openbible": 685,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Mashhad",
+     "lat": 32.7383,
+     "lon": 35.3244,
+     "puntuacion_openbible": 84
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab15bb3/japhia",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Japhia»."
+  },
+  {
+   "id": "jatir",
+   "nombre": "Jatir",
+   "nombre_rv1909": "Jattir",
+   "formas_rv1909": [
+    "Jattir"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:48",
+    "Jos 21:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Attir",
+    "lat": 31.3525,
+    "lon": 35.0161,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad6eb0b/jattir",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Jattir»."
+  },
+  {
+   "id": "carta",
+   "nombre": "Carta",
+   "nombre_rv1909": "Cartha",
+   "formas_rv1909": [
+    "Cartha"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Qureiyeh",
+    "lat": 33.1119,
+    "lon": 35.4625,
+    "puntuacion_openbible": 104,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Iksal",
+     "lat": 32.6834,
+     "lon": 35.3242,
+     "puntuacion_openbible": 99
+    },
+    {
+     "identificacion": "Athlit",
+     "lat": 32.6872,
+     "lon": 34.9383,
+     "puntuacion_openbible": 88
+    },
+    {
+     "identificacion": "Tel Raqqat",
+     "lat": 32.8064,
+     "lon": 35.5258,
+     "puntuacion_openbible": 72
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac0f6e7/kartah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Cartha»."
+  },
+  {
+   "id": "cartan",
+   "nombre": "Cartán",
+   "nombre_rv1909": "Cartán",
+   "formas_rv1909": [
+    "Cartán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Qureiyeh",
+    "lat": 33.1119,
+    "lon": 35.4625,
+    "puntuacion_openbible": 397,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Raqqat",
+     "lat": 32.8064,
+     "lon": 35.5258,
+     "puntuacion_openbible": 275
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4959d5/kartan",
+   "nota": ""
+  },
+  {
+   "id": "cedes",
+   "nombre": "Cedes (Jos 12:22)",
+   "nombre_rv1909": "Chêdes",
+   "formas_rv1909": [
+    "Chêdes",
+    "Cedes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:22",
+    "Jos 21:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Kedesh",
+    "lat": 33.1116,
+    "lon": 35.5295,
+    "puntuacion_openbible": 599,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Qedish",
+     "lat": 32.735,
+     "lon": 35.5555,
+     "puntuacion_openbible": 58
+    },
+    {
+     "identificacion": "Tell Abu Qedeis",
+     "lat": 32.5595,
+     "lon": 35.216,
+     "puntuacion_openbible": 14
+    },
+    {
+     "identificacion": "Tell Qisyon",
+     "lat": 32.6614,
+     "lon": 35.3931,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a321cb8/kedesh-1",
+   "nota": "Hay otros lugares llamados Cedes: este es el de Jos 12:22 según OpenBible."
+  },
+  {
+   "id": "laquis",
+   "nombre": "Laquis",
+   "nombre_rv1909": "Lachîs",
+   "formas_rv1909": [
+    "Lachîs"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 10:31",
+    "Jos 10:32",
+    "Jos 10:33",
+    "Jos 10:34",
+    "Jos 10:35",
+    "Jos 12:11",
+    "Jos 15:39"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell ed Duweir",
+    "lat": 31.5653,
+    "lon": 34.8492,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3cc590/lachish",
+   "nota": ""
+  },
+  {
+   "id": "maceda",
+   "nombre": "Maceda",
+   "nombre_rv1909": "Maceda",
+   "formas_rv1909": [
+    "Maceda"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:10",
+    "Jos 10:16",
+    "Jos 10:17",
+    "Jos 10:21",
+    "Jos 10:28",
+    "Jos 10:29",
+    "Jos 12:16",
+    "Jos 15:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Qom",
+    "lat": 31.5347,
+    "lon": 34.9666,
+    "puntuacion_openbible": 440,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Beit Maqdum",
+     "lat": 31.5377,
+     "lon": 34.9706,
+     "puntuacion_openbible": 86
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 23
+    },
+    {
+     "identificacion": "Tel Goded",
+     "lat": 31.6334,
+     "lon": 34.9166,
+     "puntuacion_openbible": 16
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abf8e4e/makkedah",
+   "nota": ""
+  },
+  {
+   "id": "merala",
+   "nombre": "Merala",
+   "nombre_rv1909": "Merala",
+   "formas_rv1909": [
+    "Merala"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Thorah",
+    "lat": 32.6543,
+    "lon": 35.1687,
+    "puntuacion_openbible": 482,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell el Ghaltah",
+     "lat": 32.6833,
+     "lon": 35.1742,
+     "puntuacion_openbible": 97
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad04336/mareal",
+   "nota": ""
+  },
+  {
+   "id": "maresa",
+   "nombre": "Maresa",
+   "nombre_rv1909": "Maresa",
+   "formas_rv1909": [
+    "Maresa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:44"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Maresha",
+    "lat": 31.593,
+    "lon": 34.8982,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5cda86/mareshah",
+   "nota": ""
+  },
+  {
+   "id": "mehara",
+   "nombre": "Mehara",
+   "nombre_rv1909": "Mehara",
+   "formas_rv1909": [
+    "Mehara"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Jezzine",
+    "lat": 33.54,
+    "lon": 35.5836,
+    "puntuacion_openbible": 375,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi Ara",
+     "lat": 32.4941,
+     "lon": 35.0545,
+     "puntuacion_openbible": 162
+    },
+    {
+     "identificacion": "El Mghairiye",
+     "lat": 33.6031,
+     "lon": 35.4582,
+     "puntuacion_openbible": 129
+    },
+    {
+     "identificacion": "En Iron",
+     "lat": 32.4824,
+     "lon": 35.0093,
+     "puntuacion_openbible": -4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8c3105/mearah",
+   "nota": ""
+  },
+  {
+   "id": "midin",
+   "nombre": "Midín",
+   "nombre_rv1909": "Middín",
+   "formas_rv1909": [
+    "Middín"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:61"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Abu Tabaq",
+    "lat": 31.7415,
+    "lon": 35.4059,
+    "puntuacion_openbible": 418,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qashr el Yahud",
+     "lat": 31.6818,
+     "lon": 35.4425,
+     "puntuacion_openbible": 126
+    },
+    {
+     "identificacion": "Hyrcania",
+     "lat": 31.719,
+     "lon": 35.366,
+     "puntuacion_openbible": -4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aec139c/middin",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Middín»."
+  },
+  {
+   "id": "miseal",
+   "nombre": "Miseal",
+   "nombre_rv1909": "Miseal",
+   "formas_rv1909": [
+    "Miseal"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:26",
+    "Jos 21:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Keisan",
+    "lat": 32.8728,
+    "lon": 35.1513,
+    "puntuacion_openbible": 466,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Bir el Gharbi",
+     "lat": 32.9014,
+     "lon": 35.1694,
+     "puntuacion_openbible": 97
+    },
+    {
+     "identificacion": "Tel Nahal",
+     "lat": 32.7988,
+     "lon": 35.0701,
+     "puntuacion_openbible": 25
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a93f8b6/mishal",
+   "nota": ""
+  },
+  {
+   "id": "molada",
+   "nombre": "Molada",
+   "nombre_rv1909": "Molada",
+   "formas_rv1909": [
+    "Molada"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:26",
+    "Jos 19:2"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Waten",
+    "lat": 31.2573,
+    "lon": 34.9214,
+    "puntuacion_openbible": 416,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 144
+    },
+    {
+     "identificacion": "Khirbet Kuseife",
+     "lat": 31.2553,
+     "lon": 35.0674,
+     "puntuacion_openbible": 62
+    },
+    {
+     "identificacion": "Tel Yeshua",
+     "lat": 31.2764,
+     "lon": 34.9903,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a03a5d0/moladah",
+   "nota": ""
+  },
+  {
+   "id": "naalal",
+   "nombre": "Naalal",
+   "nombre_rv1909": "Naalal",
+   "formas_rv1909": [
+    "Naalal"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:15",
+    "Jos 21:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Horbat Sefan",
+    "lat": 32.6791,
+    "lon": 35.197,
+    "puntuacion_openbible": 226,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Nahal",
+     "lat": 32.7988,
+     "lon": 35.0701,
+     "puntuacion_openbible": 193
+    },
+    {
+     "identificacion": "Ma’alul",
+     "lat": 32.6967,
+     "lon": 35.2414,
+     "puntuacion_openbible": 122
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac69561/nahalal",
+   "nota": ""
+  },
+  {
+   "id": "nehiel",
+   "nombre": "Nehiel",
+   "nombre_rv1909": "Nehiel",
+   "formas_rv1909": [
+    "Nehiel"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 19:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Yanin",
+    "lat": 32.8926,
+    "lon": 35.2219,
+    "puntuacion_openbible": 701,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Beit Netofa Valley",
+     "lat": 32.8096,
+     "lon": 35.3325,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Nimrin",
+     "lat": 32.8042,
+     "lon": 35.4235,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Tell el Wawiyat",
+     "lat": 32.7988,
+     "lon": 35.3051,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab571de/neiel",
+   "nota": ""
+  },
+  {
+   "id": "nibsan",
+   "nombre": "Nibsan",
+   "nombre_rv1909": "Nibsan",
+   "formas_rv1909": [
+    "Nibsan"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:62"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Maqari",
+    "lat": 31.6994,
+    "lon": 35.3814,
+    "puntuacion_openbible": 280,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain el Ghuweir",
+     "lat": 31.6242,
+     "lon": 35.4097,
+     "puntuacion_openbible": 143
+    },
+    {
+     "identificacion": "Qashr el Yahud",
+     "lat": 31.6818,
+     "lon": 35.4425,
+     "puntuacion_openbible": 23
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad96dd4/nibshan",
+   "nota": ""
+  },
+  {
+   "id": "rabit",
+   "nombre": "Rabit",
+   "nombre_rv1909": "Rabbit",
+   "formas_rv1909": [
+    "Rabbit"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:20"
+   ],
+   "ubicacion": {
+    "identificacion": "Horvat Devora",
+    "lat": 32.6973,
+    "lon": 35.3775,
+    "puntuacion_openbible": 320,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Raba",
+     "lat": 32.3889,
+     "lon": 35.3847,
+     "puntuacion_openbible": 51
+    },
+    {
+     "identificacion": "Arabbuna",
+     "lat": 32.5125,
+     "lon": 35.3633,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a13ffd4/rabbith",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Rabbit»."
+  },
+  {
+   "id": "racon",
+   "nombre": "Racón",
+   "nombre_rv1909": "Raccón",
+   "formas_rv1909": [
+    "Raccón"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Jos 19:46"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell er Reqqeit",
+    "lat": 32.1308,
+    "lon": 34.7873,
+    "puntuacion_openbible": 352,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ayalon River",
+     "lat": 32.0998,
+     "lon": 34.8017,
+     "puntuacion_openbible": 205
+    },
+    {
+     "identificacion": "Tel Gerisa",
+     "lat": 32.0917,
+     "lon": 34.8075,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Yarkon River",
+     "lat": 32.1039,
+     "lon": 34.7758,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa3e5ae/rakkon",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Raccón»."
+  },
+  {
+   "id": "ramet",
+   "nombre": "Ramet",
+   "nombre_rv1909": "Rameth",
+   "formas_rv1909": [
+    "Rameth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Kokab el Hawa",
+    "lat": 32.5956,
+    "lon": 35.5214,
+    "puntuacion_openbible": 198,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "En haYadid",
+     "lat": 32.5903,
+     "lon": 35.5256,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Khirbet ed Dir",
+     "lat": 32.6597,
+     "lon": 35.5372,
+     "puntuacion_openbible": 38
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae259d9/remeth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Rameth»."
+  },
+  {
+   "id": "rimon",
+   "nombre": "Rimón (Jos 15:32)",
+   "nombre_rv1909": "Rimmón",
+   "formas_rv1909": [
+    "Rimmón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:32",
+    "Jos 19:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Halif",
+    "lat": 31.3833,
+    "lon": 34.8656,
+    "puntuacion_openbible": 404,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm er Rammamin",
+     "lat": 31.3712,
+     "lon": 34.8649,
+     "puntuacion_openbible": 51
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8da370/rimmon-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Rimmón». Hay otros lugares llamados Rimón: este es el de Jos 15:32 según OpenBible."
+  },
+  {
+   "id": "rimon-19-13",
+   "nombre": "Rimón (Jos 19:13)",
+   "nombre_rv1909": "Rimmón",
+   "formas_rv1909": [
+    "Rimmón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Rumana",
+    "lat": 32.7881,
+    "lon": 35.3106,
+    "puntuacion_openbible": 647,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Rumah",
+     "lat": 32.7889,
+     "lon": 35.2932,
+     "puntuacion_openbible": 70
+    },
+    {
+     "identificacion": "Qarn Hattin",
+     "lat": 32.7997,
+     "lon": 35.4597,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Tel Hanaton",
+     "lat": 32.7856,
+     "lon": 35.2569,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a813f22/rimmon-3",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Rimmón». Hay otros lugares llamados Rimón: este es el de Jos 19:13 según OpenBible."
+  },
+  {
+   "id": "saraim",
+   "nombre": "Saraim",
+   "nombre_rv1909": "Saraim",
+   "formas_rv1909": [
+    "Saraim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet es Sira",
+    "lat": 31.7355,
+    "lon": 35.0276,
+    "puntuacion_openbible": 407,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Qeiyafa",
+     "lat": 31.6963,
+     "lon": 34.9575,
+     "puntuacion_openbible": 21
+    },
+    {
+     "identificacion": "Tall al Ajjul",
+     "lat": 31.467,
+     "lon": 34.4041,
+     "puntuacion_openbible": 16
+    },
+    {
+     "identificacion": "Tel Sharuhen",
+     "lat": 31.2819,
+     "lon": 34.4825,
+     "puntuacion_openbible": 10
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a28da66/shaaraim-1",
+   "nota": ""
+  },
+  {
+   "id": "simron",
+   "nombre": "Simrón",
+   "nombre_rv1909": "Simrom",
+   "formas_rv1909": [
+    "Simrom",
+    "Simrón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:1",
+    "Jos 19:15"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Shimron",
+    "lat": 32.7039,
+    "lon": 35.2133,
+    "puntuacion_openbible": 829,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Maroun al Ras",
+     "lat": 33.1011,
+     "lon": 35.4439,
+     "puntuacion_openbible": 17
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a072bae/shimron",
+   "nota": ""
+  },
+  {
+   "id": "tapua",
+   "nombre": "Tapua (Jos 12:17)",
+   "nombre_rv1909": "Tappua",
+   "formas_rv1909": [
+    "Tappua"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:17",
+    "Jos 16:8",
+    "Jos 17:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Abu Zarad",
+    "lat": 32.1041,
+    "lon": 35.2301,
+    "puntuacion_openbible": 690,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a03be2e/tappuah-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Tappua». Hay otros lugares llamados Tapua: este es el de Jos 12:17 según OpenBible."
+  },
+  {
+   "id": "tapua-15-34",
+   "nombre": "Tapua (Jos 15:34)",
+   "nombre_rv1909": "Tappua",
+   "formas_rv1909": [
+    "Tappua"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Bayt Nattif",
+    "lat": 31.6955,
+    "lon": 34.996,
+    "puntuacion_openbible": 138,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Artuf",
+     "lat": 31.7673,
+     "lon": 35.0014,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Khirbet Shumeila",
+     "lat": 31.705,
+     "lon": 34.9943,
+     "puntuacion_openbible": 26
+    },
+    {
+     "identificacion": "Khirbet Umm Jina",
+     "lat": 31.7476,
+     "lon": 34.9638,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2e9e40/tappuah-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Tappua». Hay otros lugares llamados Tapua: este es el de Jos 15:34 según OpenBible."
+  },
+  {
+   "id": "tarala",
+   "nombre": "Tarala",
+   "nombre_rv1909": "Tarala",
+   "formas_rv1909": [
+    "Tarala"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Erha",
+    "lat": 31.8475,
+    "lon": 35.236,
+    "puntuacion_openbible": 553,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Tililiya",
+     "lat": 31.8167,
+     "lon": 35.2058,
+     "puntuacion_openbible": 202
+    },
+    {
+     "identificacion": "Beit Irza",
+     "lat": 31.7338,
+     "lon": 35.1861,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acfcf28/taralah",
+   "nota": ""
+  },
+  {
+   "id": "safon",
+   "nombre": "Safón",
+   "nombre_rv1909": "Saphón",
+   "formas_rv1909": [
+    "Saphón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Sa’idiyeh",
+    "lat": 32.2677,
+    "lon": 35.5772,
+    "puntuacion_openbible": 523,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell el Qos",
+     "lat": 32.2449,
+     "lon": 35.62,
+     "puntuacion_openbible": 95
+    },
+    {
+     "identificacion": "Tall el Mazar",
+     "lat": 32.2222,
+     "lon": 35.6061,
+     "puntuacion_openbible": 67
+    },
+    {
+     "identificacion": "Khirbet Buweib",
+     "lat": 32.2394,
+     "lon": 35.5905,
+     "puntuacion_openbible": 19
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab49753/zaphon-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Saphón»."
+  },
+  {
+   "id": "sidim",
+   "nombre": "Sidim",
+   "nombre_rv1909": "Siddim",
+   "formas_rv1909": [
+    "Siddim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Hattin",
+    "lat": 32.8076,
+    "lon": 35.4538,
+    "puntuacion_openbible": 264,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tyre",
+     "lat": 33.2708,
+     "lon": 35.1961,
+     "puntuacion_openbible": 32
+    },
+    {
+     "identificacion": "Khirbet Qedish",
+     "lat": 32.735,
+     "lon": 35.5555,
+     "puntuacion_openbible": -21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8248e0/ziddim",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Siddim»."
+  },
+  {
+   "id": "siclag",
+   "nombre": "Siclag",
+   "nombre_rv1909": "Siclag",
+   "formas_rv1909": [
+    "Siclag"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:31",
+    "Jos 19:5"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell esh Sharia",
+    "lat": 31.3912,
+    "lon": 34.6816,
+    "puntuacion_openbible": 531,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 107
+    },
+    {
+     "identificacion": "Tel Beer Sheva",
+     "lat": 31.2447,
+     "lon": 34.8408,
+     "puntuacion_openbible": 53
+    },
+    {
+     "identificacion": "Khirbet a Ra’i",
+     "lat": 31.591,
+     "lon": 34.8193,
+     "puntuacion_openbible": 28
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0ed7ff/ziklag",
+   "nota": ""
+  },
+  {
+   "id": "abdon",
+   "nombre": "Abdón",
+   "nombre_rv1909": "Abdón",
+   "formas_rv1909": [
+    "Abdón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Avdon",
+    "lat": 33.0477,
+    "lon": 35.1619,
+    "puntuacion_openbible": 826,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a72a1ff/abdon",
+   "nota": ""
+  },
+  {
+   "id": "adada",
+   "nombre": "Adada",
+   "nombre_rv1909": "Adada",
+   "formas_rv1909": [
+    "Adada"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Aro’er",
+    "lat": 31.1521,
+    "lon": 34.9791,
+    "puntuacion_openbible": 579,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Udena",
+     "lat": 31.9702,
+     "lon": 35.8713,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Erjan",
+     "lat": 31.9893,
+     "lon": 35.9207,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Tel Esdar",
+     "lat": 31.169,
+     "lon": 34.9752,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abf4481/adadah",
+   "nota": ""
+  },
+  {
+   "id": "adama",
+   "nombre": "Adama",
+   "nombre_rv1909": "Adama",
+   "formas_rv1909": [
+    "Adama"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Qarn Hattin",
+    "lat": 32.7997,
+    "lon": 35.4597,
+    "puntuacion_openbible": 377,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Hajar ed Damm",
+     "lat": 32.9416,
+     "lon": 35.5749,
+     "puntuacion_openbible": 116
+    },
+    {
+     "identificacion": "Tel Adami",
+     "lat": 32.7492,
+     "lon": 35.4592,
+     "puntuacion_openbible": 23
+    },
+    {
+     "identificacion": "Khirbet esh Shiba",
+     "lat": 32.9311,
+     "lon": 35.4175,
+     "puntuacion_openbible": -7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afe1143/adamah",
+   "nota": ""
+  },
+  {
+   "id": "adar",
+   "nombre": "Adar",
+   "nombre_rv1909": "Addar",
+   "formas_rv1909": [
+    "Addar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Ein Qedeis",
+    "lat": 30.5834,
+    "lon": 34.4841,
+    "puntuacion_openbible": 188,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 30
+    },
+    {
+     "identificacion": "Mesudat Ein Qedeis",
+     "lat": 30.5946,
+     "lon": 34.5142,
+     "puntuacion_openbible": 26
+    },
+    {
+     "identificacion": "Har Avnon",
+     "lat": 30.9744,
+     "lon": 34.9714,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaee94d/addar",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Addar»."
+  },
+  {
+   "id": "almon",
+   "nombre": "Almón",
+   "nombre_rv1909": "Almón",
+   "formas_rv1909": [
+    "Almón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Almit",
+    "lat": 31.8249,
+    "lon": 35.2735,
+    "puntuacion_openbible": 657,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ada3369/almon",
+   "nota": ""
+  },
+  {
+   "id": "amead",
+   "nombre": "Amead",
+   "nombre_rv1909": "Amead",
+   "formas_rv1909": [
+    "Amead"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Carmel",
+    "lat": 32.6725,
+    "lon": 35.0233,
+    "puntuacion_openbible": 601,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Umm al Amad",
+     "lat": 32.7295,
+     "lon": 35.1718,
+     "puntuacion_openbible": 102
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2f1fa1/amad",
+   "nota": ""
+  },
+  {
+   "id": "afec",
+   "nombre": "Afec (Jos 12:18)",
+   "nombre_rv1909": "Aphec",
+   "formas_rv1909": [
+    "Aphec"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:18"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Ras el Ain",
+    "lat": 32.105,
+    "lon": 34.9304,
+    "puntuacion_openbible": 901,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7b2e63/aphek-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Aphec». Hay otros lugares llamados Afec: este es el de Jos 12:18 según OpenBible."
+  },
+  {
+   "id": "afec-13-4",
+   "nombre": "Afec (Jos 13:4)",
+   "nombre_rv1909": "Aphec",
+   "formas_rv1909": [
+    "Aphec"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Afqa",
+    "lat": 34.0692,
+    "lon": 35.8861,
+    "puntuacion_openbible": 661,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4cf129/aphek-4",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Aphec». Hay otros lugares llamados Afec: este es el de Jos 13:4 según OpenBible."
+  },
+  {
+   "id": "afec-19-30",
+   "nombre": "Afec (Jos 19:30)",
+   "nombre_rv1909": "Aphec",
+   "formas_rv1909": [
+    "Aphec"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Afek",
+    "lat": 32.8461,
+    "lon": 35.1119,
+    "puntuacion_openbible": 675,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Kabri",
+     "lat": 33.0084,
+     "lon": 35.1391,
+     "puntuacion_openbible": 93
+    },
+    {
+     "identificacion": "Afqa",
+     "lat": 34.0692,
+     "lon": 35.8861,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac4f712/aphek-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Aphec». Hay otros lugares llamados Afec: este es el de Jos 19:30 según OpenBible."
+  },
+  {
+   "id": "aroer-13-25",
+   "nombre": "Aroer (Jos 13:25)",
+   "nombre_rv1909": "Aroer",
+   "formas_rv1909": [
+    "Aroer"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Udena",
+    "lat": 31.9702,
+    "lon": 35.8713,
+    "puntuacion_openbible": 219,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Umm Sweiwineh",
+     "lat": 31.9246,
+     "lon": 35.9251,
+     "puntuacion_openbible": 120
+    },
+    {
+     "identificacion": "Erjan",
+     "lat": 31.9893,
+     "lon": 35.9207,
+     "puntuacion_openbible": 83
+    },
+    {
+     "identificacion": "Arair",
+     "lat": 31.4708,
+     "lon": 35.8194,
+     "puntuacion_openbible": -5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af74969/aroer-2",
+   "nota": "Hay otros lugares llamados Aroer: este es el de Jos 13:25 según OpenBible."
+  },
+  {
+   "id": "asdod",
+   "nombre": "Asdod",
+   "nombre_rv1909": "Asdod",
+   "formas_rv1909": [
+    "Asdod"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:22",
+    "Jos 15:46",
+    "Jos 15:47"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Ashdod",
+    "lat": 31.7572,
+    "lon": 34.6578,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a30c937/ashdod",
+   "nota": ""
+  },
+  {
+   "id": "asena",
+   "nombre": "Asena",
+   "nombre_rv1909": "Asena",
+   "formas_rv1909": [
+    "Asena"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Islin",
+    "lat": 31.7847,
+    "lon": 35.0063,
+    "puntuacion_openbible": 346,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Wadi Illin",
+     "lat": 31.7463,
+     "lon": 34.9971,
+     "puntuacion_openbible": 126
+    },
+    {
+     "identificacion": "Eshtaol",
+     "lat": 31.7811,
+     "lon": 35.0101,
+     "puntuacion_openbible": 40
+    },
+    {
+     "identificacion": "Khirbet el Ghashina",
+     "lat": 31.7423,
+     "lon": 35.065,
+     "puntuacion_openbible": 39
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1e3eff/ashnah-1",
+   "nota": ""
+  },
+  {
+   "id": "azeca",
+   "nombre": "Azeca",
+   "nombre_rv1909": "Azeca",
+   "formas_rv1909": [
+    "Azeca",
+    "Aceca"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:10",
+    "Jos 10:11",
+    "Jos 15:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Azekah",
+    "lat": 31.7002,
+    "lon": 34.9357,
+    "puntuacion_openbible": 772,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af2ca0c/azekah",
+   "nota": ""
+  },
+  {
+   "id": "baala",
+   "nombre": "Baala (Jos 15:9)",
+   "nombre_rv1909": "Baala",
+   "formas_rv1909": [
+    "Baala"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:9",
+    "Jos 15:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Deir el Azar",
+    "lat": 31.809,
+    "lon": 35.1038,
+    "puntuacion_openbible": 970,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac2f5ea/baalah-2",
+   "nota": "Hay otros lugares llamados Baala: este es el de Jos 15:9 según OpenBible."
+  },
+  {
+   "id": "baala-15-29",
+   "nombre": "Baala (Jos 15:29)",
+   "nombre_rv1909": "Baala",
+   "formas_rv1909": [
+    "Baala"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Tulul el Medbah",
+    "lat": 31.1421,
+    "lon": 34.9122,
+    "puntuacion_openbible": 222,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Beer Yeroham",
+     "lat": 30.991,
+     "lon": 34.9113,
+     "puntuacion_openbible": 12
+    },
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 11
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": 7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a289254/baalah-1",
+   "nota": "Hay otros lugares llamados Baala: este es el de Jos 15:29 según OpenBible."
+  },
+  {
+   "id": "beten",
+   "nombre": "Betén",
+   "nombre_rv1909": "Betén",
+   "formas_rv1909": [
+    "Betén"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Ibtin",
+    "lat": 32.7641,
+    "lon": 35.1066,
+    "puntuacion_openbible": 226,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Far",
+     "lat": 32.7711,
+     "lon": 35.1047,
+     "puntuacion_openbible": 195
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aafc721/beten",
+   "nota": ""
+  },
+  {
+   "id": "betul",
+   "nombre": "Betul",
+   "nombre_rv1909": "Betul",
+   "formas_rv1909": [
+    "Betul"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet ar Ras",
+    "lat": 31.3273,
+    "lon": 34.8785,
+    "puntuacion_openbible": 115,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Umm Betin",
+     "lat": 31.2802,
+     "lon": 34.8771,
+     "puntuacion_openbible": 94
+    },
+    {
+     "identificacion": "Khirbet el Qaryatein",
+     "lat": 31.345,
+     "lon": 35.1244,
+     "puntuacion_openbible": 58
+    },
+    {
+     "identificacion": "Khirbet et Tubeiqa",
+     "lat": 31.5894,
+     "lon": 35.0942,
+     "puntuacion_openbible": 17
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a92de65/bethul",
+   "nota": ""
+  },
+  {
+   "id": "cabon",
+   "nombre": "Cabón",
+   "nombre_rv1909": "Cabón",
+   "formas_rv1909": [
+    "Cabón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:40"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Beit Lei",
+    "lat": 31.5636,
+    "lon": 34.9281,
+    "puntuacion_openbible": 143,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Haraqim",
+     "lat": 31.524,
+     "lon": 34.8272,
+     "puntuacion_openbible": 59
+    },
+    {
+     "identificacion": "Khirbet Hebra",
+     "lat": 31.5542,
+     "lon": 34.8968,
+     "puntuacion_openbible": 41
+    },
+    {
+     "identificacion": "Khirbet Tatrit",
+     "lat": 31.3503,
+     "lon": 34.9286,
+     "puntuacion_openbible": 11
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7ed00e/cabbon",
+   "nota": ""
+  },
+  {
+   "id": "cabul",
+   "nombre": "Cabul",
+   "nombre_rv1909": "Cabul",
+   "formas_rv1909": [
+    "Cabul"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Kabul",
+    "lat": 32.8683,
+    "lon": 35.2114,
+    "puntuacion_openbible": 470,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rosh Zayit",
+     "lat": 32.8792,
+     "lon": 35.2285,
+     "puntuacion_openbible": 337
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a978a24/cabul-1",
+   "nota": ""
+  },
+  {
+   "id": "cesil",
+   "nombre": "Cesil",
+   "nombre_rv1909": "Cesil",
+   "formas_rv1909": [
+    "Cesil"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet ar Ras",
+    "lat": 31.3273,
+    "lon": 34.8785,
+    "puntuacion_openbible": 103,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Qaryatein",
+     "lat": 31.345,
+     "lon": 35.1244,
+     "puntuacion_openbible": 52
+    },
+    {
+     "identificacion": "Khirbet et Tubeiqa",
+     "lat": 31.5894,
+     "lon": 35.0942,
+     "puntuacion_openbible": 15
+    },
+    {
+     "identificacion": "Tell Umm Betin",
+     "lat": 31.2802,
+     "lon": 34.8771,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acf2fac/chesil",
+   "nota": ""
+  },
+  {
+   "id": "dana",
+   "nombre": "Dana",
+   "nombre_rv1909": "Danna",
+   "formas_rv1909": [
+    "Danna"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:49"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Zanuta",
+    "lat": 31.3698,
+    "lon": 34.995,
+    "puntuacion_openbible": 143,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Deir ed Domeh",
+     "lat": 31.4306,
+     "lon": 34.9861,
+     "puntuacion_openbible": 102
+    },
+    {
+     "identificacion": "Idhna",
+     "lat": 31.5586,
+     "lon": 34.9761,
+     "puntuacion_openbible": 82
+    },
+    {
+     "identificacion": "Khirbet al Simia",
+     "lat": 31.4217,
+     "lon": 35.0337,
+     "puntuacion_openbible": 60
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a65c305/dannah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Danna»."
+  },
+  {
+   "id": "debir",
+   "nombre": "Debir (Jos 10:38)",
+   "nombre_rv1909": "Debir",
+   "formas_rv1909": [
+    "Debir"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:38",
+    "Jos 10:39",
+    "Jos 11:21",
+    "Jos 12:13",
+    "Jos 15:15",
+    "Jos 15:49",
+    "Jos 21:15"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Rabud",
+    "lat": 31.4321,
+    "lon": 35.0149,
+    "puntuacion_openbible": 775,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Tarrama",
+     "lat": 31.4786,
+     "lon": 35.0326,
+     "puntuacion_openbible": 15
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": -138
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad2048e/debir-1",
+   "nota": "Hay otros lugares llamados Debir: este es el de Jos 10:38 según OpenBible."
+  },
+  {
+   "id": "debir-13-26",
+   "nombre": "Debir (Jos 13:26)",
+   "nombre_rv1909": "Debir",
+   "formas_rv1909": [
+    "Debir"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 13:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Umm ed Debar",
+    "lat": 32.5658,
+    "lon": 35.6122,
+    "puntuacion_openbible": 139,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Dover",
+     "lat": 32.6839,
+     "lon": 35.6299,
+     "puntuacion_openbible": 94
+    },
+    {
+     "identificacion": "Tell el Hamme",
+     "lat": 32.4718,
+     "lon": 35.5994,
+     "puntuacion_openbible": 25
+    },
+    {
+     "identificacion": "Tell el Mughanniya",
+     "lat": 32.2055,
+     "lon": 35.68,
+     "puntuacion_openbible": -5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac6416d/debir-3",
+   "nota": "Hay otros lugares llamados Debir: este es el de Jos 13:26 según OpenBible."
+  },
+  {
+   "id": "debir-15-7",
+   "nombre": "Debir (Jos 15:7)",
+   "nombre_rv1909": "Debir",
+   "formas_rv1909": [
+    "Debir"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Khan el Hatrur",
+    "lat": 31.8164,
+    "lon": 35.3594,
+    "puntuacion_openbible": 258,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Thoghret ed Debr",
+     "lat": 31.8115,
+     "lon": 35.3488,
+     "puntuacion_openbible": 155
+    },
+    {
+     "identificacion": "Wadi ed Debr",
+     "lat": 31.785,
+     "lon": 35.4528,
+     "puntuacion_openbible": 75
+    },
+    {
+     "identificacion": "Khirbet Rabud",
+     "lat": 31.4321,
+     "lon": 35.0149,
+     "puntuacion_openbible": 64
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad334c4/debir-2",
+   "nota": "Hay otros lugares llamados Debir: este es el de Jos 15:7 según OpenBible."
+  },
+  {
+   "id": "dilan",
+   "nombre": "Dilán",
+   "nombre_rv1909": "Dilán",
+   "formas_rv1909": [
+    "Dilán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Nagila",
+    "lat": 31.5026,
+    "lon": 34.7583,
+    "puntuacion_openbible": 309,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Qeshet",
+     "lat": 31.5407,
+     "lon": 34.7629,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aecc492/dilean",
+   "nota": ""
+  },
+  {
+   "id": "dimna",
+   "nombre": "Dimna",
+   "nombre_rv1909": "Dimna",
+   "formas_rv1909": [
+    "Dimna"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Rumana",
+    "lat": 32.7881,
+    "lon": 35.3106,
+    "puntuacion_openbible": 442,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Rumah",
+     "lat": 32.7889,
+     "lon": 35.2932,
+     "puntuacion_openbible": 48
+    },
+    {
+     "identificacion": "Qarn Hattin",
+     "lat": 32.7997,
+     "lon": 35.4597,
+     "puntuacion_openbible": 29
+    },
+    {
+     "identificacion": "Tel Hanaton",
+     "lat": 32.7856,
+     "lon": 35.2569,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a971a54/dimnah",
+   "nota": ""
+  },
+  {
+   "id": "duma",
+   "nombre": "Duma",
+   "nombre_rv1909": "Dumah",
+   "formas_rv1909": [
+    "Dumah"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:52"
+   ],
+   "ubicacion": {
+    "identificacion": "Deir ed Domeh",
+    "lat": 31.4306,
+    "lon": 34.9861,
+    "puntuacion_openbible": 662,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Dura",
+     "lat": 31.5051,
+     "lon": 35.0275,
+     "puntuacion_openbible": 44
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a75d2ab/dumah-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Dumah»."
+  },
+  {
+   "id": "edrei-19-37",
+   "nombre": "Edrei (Jos 19:37)",
+   "nombre_rv1909": "Edrei",
+   "formas_rv1909": [
+    "Edrei"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Har Zevi",
+    "lat": 33.0758,
+    "lon": 35.5283,
+    "puntuacion_openbible": 224,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Aitaroun",
+     "lat": 33.1167,
+     "lon": 35.4667,
+     "puntuacion_openbible": -7
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a85eb38/edrei-2",
+   "nota": "Hay otros lugares llamados Edrei: este es el de Jos 19:37 según OpenBible."
+  },
+  {
+   "id": "eglon",
+   "nombre": "Eglón",
+   "nombre_rv1909": "Eglón",
+   "formas_rv1909": [
+    "Eglón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:3",
+    "Jos 10:5",
+    "Jos 10:23",
+    "Jos 10:34",
+    "Jos 10:36",
+    "Jos 10:37",
+    "Jos 12:12",
+    "Jos 15:39"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Eton",
+    "lat": 31.4918,
+    "lon": 34.9281,
+    "puntuacion_openbible": 574,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Hasi",
+     "lat": 31.5477,
+     "lon": 34.7302,
+     "puntuacion_openbible": 24
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 8
+    },
+    {
+     "identificacion": "Tel Nagila",
+     "lat": 31.5026,
+     "lon": 34.7583,
+     "puntuacion_openbible": 6
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a244d8f/eglon",
+   "nota": ""
+  },
+  {
+   "id": "ecron",
+   "nombre": "Ecrón",
+   "nombre_rv1909": "Ecrón",
+   "formas_rv1909": [
+    "Ecrón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:11",
+    "Jos 15:45",
+    "Jos 15:46",
+    "Jos 19:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Miqne",
+    "lat": 31.7775,
+    "lon": 34.8519,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3fc47a/ekron",
+   "nota": ""
+  },
+  {
+   "id": "endor",
+   "nombre": "Endor",
+   "nombre_rv1909": "Endor",
+   "formas_rv1909": [
+    "Endor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 17:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet es Safsafa",
+    "lat": 32.6436,
+    "lon": 35.3902,
+    "puntuacion_openbible": 757,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Abu Qedeis",
+     "lat": 32.5595,
+     "lon": 35.216,
+     "puntuacion_openbible": 57
+    },
+    {
+     "identificacion": "Tell el Ajjul",
+     "lat": 32.6314,
+     "lon": 35.3719,
+     "puntuacion_openbible": 4
+    },
+    {
+     "identificacion": "Khirbet Jadurah",
+     "lat": 32.5119,
+     "lon": 35.2651,
+     "puntuacion_openbible": 4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aca444b/en-dor",
+   "nota": ""
+  },
+  {
+   "id": "en-rogel",
+   "nombre": "En-rogel",
+   "nombre_rv1909": "Rogel",
+   "formas_rv1909": [
+    "Rogel"
+   ],
+   "tipo": "fuente",
+   "refs": [
+    "Jos 15:7",
+    "Jos 18:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Bir Ayub",
+    "lat": 31.7672,
+    "lon": 35.236,
+    "puntuacion_openbible": 793,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ain el Madauwerah",
+     "lat": 31.7981,
+     "lon": 35.248,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Gihon Spring",
+     "lat": 31.7729,
+     "lon": 35.2364,
+     "puntuacion_openbible": -26
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af9cfc9/en-rogel",
+   "nota": ""
+  },
+  {
+   "id": "eter",
+   "nombre": "Eter (Jos 15:42)",
+   "nombre_rv1909": "Ether",
+   "formas_rv1909": [
+    "Ether"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:42"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Ater",
+    "lat": 31.6159,
+    "lon": 34.8783,
+    "puntuacion_openbible": 751,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a82f7b4/ether-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ether». Hay otros lugares llamados Eter: este es el de Jos 15:42 según OpenBible."
+  },
+  {
+   "id": "geder",
+   "nombre": "Geder",
+   "nombre_rv1909": "Geder",
+   "formas_rv1909": [
+    "Geder"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Jedur",
+    "lat": 31.6326,
+    "lon": 35.0921,
+    "puntuacion_openbible": 422,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Haror",
+     "lat": 31.3821,
+     "lon": 34.6065,
+     "puntuacion_openbible": 105
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 25
+    },
+    {
+     "identificacion": "Bethlehem",
+     "lat": 31.7043,
+     "lon": 35.2076,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a55d681/geder",
+   "nota": ""
+  },
+  {
+   "id": "gedor",
+   "nombre": "Gedor",
+   "nombre_rv1909": "Gedor",
+   "formas_rv1909": [
+    "Gedor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:58"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Jedur",
+    "lat": 31.6326,
+    "lon": 35.0921,
+    "puntuacion_openbible": 806,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af054ba/gedor-1",
+   "nota": ""
+  },
+  {
+   "id": "gezer",
+   "nombre": "Gezer",
+   "nombre_rv1909": "Gezer",
+   "formas_rv1909": [
+    "Gezer",
+    "Geser"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:33",
+    "Jos 12:12",
+    "Jos 16:3",
+    "Jos 16:10",
+    "Jos 21:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Gezer",
+    "lat": 31.8592,
+    "lon": 34.9192,
+    "puntuacion_openbible": 942,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aed6538/gezer",
+   "nota": ""
+  },
+  {
+   "id": "gibea",
+   "nombre": "Gibea",
+   "nombre_rv1909": "Gibea",
+   "formas_rv1909": [
+    "Gibea"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:57"
+   ],
+   "ubicacion": {
+    "identificacion": "south of Hebron",
+    "lat": 31.4502,
+    "lon": 35.0535,
+    "puntuacion_openbible": 448,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Qaryatein",
+     "lat": 31.345,
+     "lon": 35.1244,
+     "puntuacion_openbible": 143
+    },
+    {
+     "identificacion": "Bani Nai’im",
+     "lat": 31.5159,
+     "lon": 35.1642,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Jab’a",
+     "lat": 31.6751,
+     "lon": 35.0762,
+     "puntuacion_openbible": -151
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2f0f05/gibeah-2",
+   "nota": ""
+  },
+  {
+   "id": "gosen-10-41",
+   "nombre": "Gosén (Jos 10:41)",
+   "nombre_rv1909": "Gosén",
+   "formas_rv1909": [
+    "Gosén"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Jos 10:41",
+    "Jos 11:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Dahriya",
+    "lat": 31.4076,
+    "lon": 34.9723,
+    "puntuacion_openbible": 153,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 66
+    },
+    {
+     "identificacion": "Khirbet Tatrit",
+     "lat": 31.3503,
+     "lon": 34.9286,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad3e63c/goshen-2",
+   "nota": "Hay otros lugares llamados Gosén: este es el de Jos 10:41 según OpenBible."
+  },
+  {
+   "id": "gosen-15-51",
+   "nombre": "Gosén (Jos 15:51)",
+   "nombre_rv1909": "Gosén",
+   "formas_rv1909": [
+    "Gosén"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:51"
+   ],
+   "ubicacion": {
+    "identificacion": "Dahriya",
+    "lat": 31.4076,
+    "lon": 34.9723,
+    "puntuacion_openbible": 342,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 147
+    },
+    {
+     "identificacion": "Khirbet Tatrit",
+     "lat": 31.3503,
+     "lon": 34.9286,
+     "puntuacion_openbible": 69
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 40
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a81a10a/goshen-3",
+   "nota": "Hay otros lugares llamados Gosén: este es el de Jos 15:51 según OpenBible."
+  },
+  {
+   "id": "elef",
+   "nombre": "Elef",
+   "nombre_rv1909": "Eleph",
+   "formas_rv1909": [
+    "Eleph"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Salah",
+    "lat": 31.8025,
+    "lon": 35.2096,
+    "puntuacion_openbible": 147,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Nabi Samwil",
+     "lat": 31.8327,
+     "lon": 35.1801,
+     "puntuacion_openbible": 93
+    },
+    {
+     "identificacion": "Ras et Tahuneh",
+     "lat": 31.9088,
+     "lon": 35.2117,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Khirbet Erha",
+     "lat": 31.8475,
+     "lon": 35.236,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae1d208/haeleph",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Eleph»."
+  },
+  {
+   "id": "hazor",
+   "nombre": "Hazor (Jos 11:1)",
+   "nombre_rv1909": "Hasor",
+   "formas_rv1909": [
+    "Hasor",
+    "Asor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:1",
+    "Jos 11:10",
+    "Jos 11:11",
+    "Jos 11:13",
+    "Jos 12:19",
+    "Jos 19:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Hazor",
+    "lat": 33.0183,
+    "lon": 35.5692,
+    "puntuacion_openbible": 928,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6f33c5/hazor-1",
+   "nota": "Hay otros lugares llamados Hazor: este es el de Jos 11:1 según OpenBible."
+  },
+  {
+   "id": "horem",
+   "nombre": "Horem",
+   "nombre_rv1909": "Horem",
+   "formas_rv1909": [
+    "Horem"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Hariss",
+    "lat": 33.1745,
+    "lon": 35.3766,
+    "puntuacion_openbible": 79,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Majdel Selem",
+     "lat": 33.2217,
+     "lon": 35.4644,
+     "puntuacion_openbible": 51
+    },
+    {
+     "identificacion": "Yarun",
+     "lat": 33.0833,
+     "lon": 35.4167,
+     "puntuacion_openbible": 33
+    },
+    {
+     "identificacion": "Khirbet el Mejdel",
+     "lat": 33.16,
+     "lon": 35.5158,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9cdd53/horem",
+   "nota": ""
+  },
+  {
+   "id": "humta",
+   "nombre": "Humta",
+   "nombre_rv1909": "Humta",
+   "formas_rv1909": [
+    "Humta"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:54"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Rumeida",
+    "lat": 31.5251,
+    "lon": 35.1022,
+    "puntuacion_openbible": 795,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet al Hadab",
+     "lat": 31.4555,
+     "lon": 34.9975,
+     "puntuacion_openbible": 71
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5a846f/humtah",
+   "nota": ""
+  },
+  {
+   "id": "itnan",
+   "nombre": "Itnán",
+   "nombre_rv1909": "Itnán",
+   "formas_rv1909": [
+    "Itnán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Mesudat Har Hemet",
+    "lat": 30.6127,
+    "lon": 34.7325,
+    "puntuacion_openbible": 179,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "El Jebariyeh",
+     "lat": 30.7228,
+     "lon": 34.6452,
+     "puntuacion_openbible": 166
+    },
+    {
+     "identificacion": "Khirbet Abu Tulul",
+     "lat": 31.1421,
+     "lon": 34.9122,
+     "puntuacion_openbible": -166
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac333a2/ithnan",
+   "nota": ""
+  },
+  {
+   "id": "jagur",
+   "nombre": "Jagur",
+   "nombre_rv1909": "Jagur",
+   "formas_rv1909": [
+    "Jagur"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Ira",
+    "lat": 31.2328,
+    "lon": 34.9867,
+    "puntuacion_openbible": 650,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a907232/jagur",
+   "nota": ""
+  },
+  {
+   "id": "janum",
+   "nombre": "Janum",
+   "nombre_rv1909": "Janum",
+   "formas_rv1909": [
+    "Janum"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:53"
+   ],
+   "ubicacion": {
+    "identificacion": "Bani Nai’im",
+    "lat": 31.5159,
+    "lon": 35.1642,
+    "puntuacion_openbible": 488,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Kan’an",
+     "lat": 31.5126,
+     "lon": 35.0754,
+     "puntuacion_openbible": -57
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a175f4b/janim",
+   "nota": ""
+  },
+  {
+   "id": "janoa",
+   "nombre": "Janoa",
+   "nombre_rv1909": "Janoa",
+   "formas_rv1909": [
+    "Janoa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 16:6",
+    "Jos 16:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Yanun",
+    "lat": 32.158,
+    "lon": 35.3613,
+    "puntuacion_openbible": 645,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yanun",
+     "lat": 32.1454,
+     "lon": 35.3557,
+     "puntuacion_openbible": 127
+    },
+    {
+     "identificacion": "Khirbet Marah el Inab",
+     "lat": 32.2031,
+     "lon": 35.4512,
+     "puntuacion_openbible": 21
+    },
+    {
+     "identificacion": "Tell Miska",
+     "lat": 32.236,
+     "lon": 35.3942,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0bcd48/janoah-1",
+   "nota": ""
+  },
+  {
+   "id": "jebus",
+   "nombre": "Jebus",
+   "nombre_rv1909": "Jebus",
+   "formas_rv1909": [
+    "Jebus"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Jerusalem",
+    "lat": 31.7767,
+    "lon": 35.2342,
+    "puntuacion_openbible": 805,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "City of David",
+     "lat": 31.7736,
+     "lon": 35.2356,
+     "puntuacion_openbible": 100
+    },
+    {
+     "identificacion": "Shufat",
+     "lat": 31.8201,
+     "lon": 35.2232,
+     "puntuacion_openbible": 81
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a403c45/jebus",
+   "nota": ""
+  },
+  {
+   "id": "jehud",
+   "nombre": "Jehud",
+   "nombre_rv1909": "Jehud",
+   "formas_rv1909": [
+    "Jehud"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:45"
+   ],
+   "ubicacion": {
+    "identificacion": "Yehud",
+    "lat": 32.0308,
+    "lon": 34.8903,
+    "puntuacion_openbible": 805,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yazur",
+     "lat": 32.0256,
+     "lon": 34.8041,
+     "puntuacion_openbible": -37
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa0ef78/jehud",
+   "nota": ""
+  },
+  {
+   "id": "jope",
+   "nombre": "Jope",
+   "nombre_rv1909": "Joppa",
+   "formas_rv1909": [
+    "Joppa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:46"
+   ],
+   "ubicacion": {
+    "identificacion": "Jaffa",
+    "lat": 32.0545,
+    "lon": 34.753,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae023a9/joppa",
+   "nota": ""
+  },
+  {
+   "id": "juta",
+   "nombre": "Juta",
+   "nombre_rv1909": "Juta",
+   "formas_rv1909": [
+    "Juta",
+    "Jutta"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:55",
+    "Jos 21:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Yatta",
+    "lat": 31.4478,
+    "lon": 35.09,
+    "puntuacion_openbible": 771,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acc7184/juttah",
+   "nota": ""
+  },
+  {
+   "id": "carca",
+   "nombre": "Carca",
+   "nombre_rv1909": "Carca",
+   "formas_rv1909": [
+    "Carca"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain Qoseimeh",
+    "lat": 30.6667,
+    "lon": 34.3667,
+    "puntuacion_openbible": 542,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a438f5e/karka",
+   "nota": ""
+  },
+  {
+   "id": "cata",
+   "nombre": "Cata",
+   "nombre_rv1909": "Catah",
+   "formas_rv1909": [
+    "Catah"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:15"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Qutteina",
+    "lat": 32.6256,
+    "lon": 35.0322,
+    "puntuacion_openbible": 123,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Far",
+     "lat": 32.7711,
+     "lon": 35.1047,
+     "puntuacion_openbible": 94
+    },
+    {
+     "identificacion": "Tel Afek",
+     "lat": 32.8461,
+     "lon": 35.1119,
+     "puntuacion_openbible": 48
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6536c9/kattath",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Catah»."
+  },
+  {
+   "id": "cedes-15-23",
+   "nombre": "Cedes (Jos 15:23)",
+   "nombre_rv1909": "Cedes",
+   "formas_rv1909": [
+    "Cedes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain el Qudeirat",
+    "lat": 30.6483,
+    "lon": 34.4222,
+    "puntuacion_openbible": 384,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Qedeis",
+     "lat": 30.5834,
+     "lon": 34.4841,
+     "puntuacion_openbible": -40
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4fa255/kedesh-2",
+   "nota": "Hay otros lugares llamados Cedes: este es el de Jos 15:23 según OpenBible."
+  },
+  {
+   "id": "cedes-de-neftali",
+   "nombre": "Cedes de Neftalí",
+   "nombre_rv1909": "Cedes",
+   "formas_rv1909": [
+    "Cedes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:37",
+    "Jos 20:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Kedesh",
+    "lat": 33.1116,
+    "lon": 35.5295,
+    "puntuacion_openbible": 574,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Qedish",
+     "lat": 32.735,
+     "lon": 35.5555,
+     "puntuacion_openbible": 56
+    },
+    {
+     "identificacion": "Tell Abu Qedeis",
+     "lat": 32.5595,
+     "lon": 35.216,
+     "puntuacion_openbible": 8
+    },
+    {
+     "identificacion": "Tell Qisyon",
+     "lat": 32.6614,
+     "lon": 35.3931,
+     "puntuacion_openbible": 3
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a662eed/kedesh-5",
+   "nota": "Ciudad de refugio en Galilea, en el monte de Neftalí (Jos 20:7; 19:37)."
+  },
+  {
+   "id": "ceila",
+   "nombre": "Ceila",
+   "nombre_rv1909": "Ceila",
+   "formas_rv1909": [
+    "Ceila"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:44"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Qila",
+    "lat": 31.6137,
+    "lon": 35.0036,
+    "puntuacion_openbible": 815,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad9df93/keilah",
+   "nota": ""
+  },
+  {
+   "id": "lamas",
+   "nombre": "Lamas",
+   "nombre_rv1909": "Lamas",
+   "formas_rv1909": [
+    "Lamas"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:40"
+   ],
+   "ubicacion": {
+    "identificacion": "Horbat Lehem",
+    "lat": 31.5718,
+    "lon": 34.896,
+    "puntuacion_openbible": 387,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rasm el Kushukliya",
+     "lat": 31.5684,
+     "lon": 34.8962,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Khirbet Makhaz",
+     "lat": 31.511,
+     "lon": 34.7991,
+     "puntuacion_openbible": -42
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a62aa3a/lahmam",
+   "nota": ""
+  },
+  {
+   "id": "lacum",
+   "nombre": "Lacum",
+   "nombre_rv1909": "Lacum",
+   "formas_rv1909": [
+    "Lacum"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:33"
+   ],
+   "ubicacion": {
+    "identificacion": "Horbat Kush",
+    "lat": 32.6983,
+    "lon": 35.5519,
+    "puntuacion_openbible": 449,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Mansurah",
+     "lat": 32.891,
+     "lon": 35.4175,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abe5dde/lakkum",
+   "nota": ""
+  },
+  {
+   "id": "libna-10-29",
+   "nombre": "Libna (Jos 10:29)",
+   "nombre_rv1909": "Libna",
+   "formas_rv1909": [
+    "Libna"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 10:29",
+    "Jos 10:31",
+    "Jos 10:32",
+    "Jos 10:39",
+    "Jos 12:15",
+    "Jos 15:42",
+    "Jos 21:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Bornat",
+    "lat": 31.6299,
+    "lon": 34.8735,
+    "puntuacion_openbible": 381,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Goded",
+     "lat": 31.6334,
+     "lon": 34.9166,
+     "puntuacion_openbible": 94
+    },
+    {
+     "identificacion": "Tel el Beida",
+     "lat": 31.6421,
+     "lon": 34.953,
+     "puntuacion_openbible": 92
+    },
+    {
+     "identificacion": "Tel Zayit",
+     "lat": 31.6292,
+     "lon": 34.8303,
+     "puntuacion_openbible": 55
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a97b595/libnah-1",
+   "nota": "Hay otros lugares llamados Libna: este es el de Jos 10:29 según OpenBible."
+  },
+  {
+   "id": "madon",
+   "nombre": "Madón",
+   "nombre_rv1909": "Madón",
+   "formas_rv1909": [
+    "Madón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:1",
+    "Jos 12:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Khirbeh",
+    "lat": 33.0768,
+    "lon": 35.4324,
+    "puntuacion_openbible": 146,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Madin",
+     "lat": 32.7994,
+     "lon": 35.4611,
+     "puntuacion_openbible": 121
+    },
+    {
+     "identificacion": "Qarn Hattin",
+     "lat": 32.7997,
+     "lon": 35.4597,
+     "puntuacion_openbible": 54
+    },
+    {
+     "identificacion": "Maroun al Ras",
+     "lat": 33.1011,
+     "lon": 35.4439,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6c2936/madon",
+   "nota": ""
+  },
+  {
+   "id": "mizpa",
+   "nombre": "Mizpa (Jos 11:3)",
+   "nombre_rv1909": "Mizpa",
+   "formas_rv1909": [
+    "Mizpa"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Jos 11:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Hermon",
+    "lat": 33.4,
+    "lon": 35.85,
+    "puntuacion_openbible": 535,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qalat es Subeibeh",
+     "lat": 33.2528,
+     "lon": 35.7147,
+     "puntuacion_openbible": 142
+    },
+    {
+     "identificacion": "Arnah",
+     "lat": 33.3661,
+     "lon": 35.8792,
+     "puntuacion_openbible": 71
+    },
+    {
+     "identificacion": "Marjayoun",
+     "lat": 33.3611,
+     "lon": 35.5921,
+     "puntuacion_openbible": 52
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aad0fa0/mizpah-2",
+   "nota": "Hay otros lugares llamados Mizpa: este es el de Jos 11:3 según OpenBible."
+  },
+  {
+   "id": "mizpa-15-38",
+   "nombre": "Mizpa (Jos 15:38)",
+   "nombre_rv1909": "Mizpa",
+   "formas_rv1909": [
+    "Mizpa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Nagila",
+    "lat": 31.5026,
+    "lon": 34.7583,
+    "puntuacion_openbible": 155,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell es Safi",
+     "lat": 31.6997,
+     "lon": 34.8469,
+     "puntuacion_openbible": 143
+    },
+    {
+     "identificacion": "Khirbet er Ras",
+     "lat": 31.5591,
+     "lon": 34.9571,
+     "puntuacion_openbible": 114
+    },
+    {
+     "identificacion": "Khirbet Safiyeh",
+     "lat": 31.6226,
+     "lon": 34.9257,
+     "puntuacion_openbible": 56
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a67990c/mizpeh-2",
+   "nota": "Hay otros lugares llamados Mizpa: este es el de Jos 15:38 según OpenBible."
+  },
+  {
+   "id": "mizpa-18-26",
+   "nombre": "Mizpa (Jos 18:26)",
+   "nombre_rv1909": "Mizpa",
+   "formas_rv1909": [
+    "Mizpa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell en Nasbeh",
+    "lat": 31.8851,
+    "lon": 35.2164,
+    "puntuacion_openbible": 781,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Nabi Samwil",
+     "lat": 31.8327,
+     "lon": 35.1801,
+     "puntuacion_openbible": 51
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afc2466/mizpeh-1",
+   "nota": "Hay otros lugares llamados Mizpa: este es el de Jos 18:26 según OpenBible."
+  },
+  {
+   "id": "tabor",
+   "nombre": "Tabor",
+   "nombre_rv1909": "Tabor",
+   "formas_rv1909": [
+    "Tabor"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 19:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Jebel et Tur",
+    "lat": 32.6863,
+    "lon": 35.3929,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acd63ee/mount-tabor",
+   "nota": ""
+  },
+  {
+   "id": "naama",
+   "nombre": "Naama",
+   "nombre_rv1909": "Naama",
+   "formas_rv1909": [
+    "Naama"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell ed Duweir",
+    "lat": 31.5653,
+    "lon": 34.8492,
+    "puntuacion_openbible": 528,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Bet Elem",
+     "lat": 31.5793,
+     "lon": 34.9463,
+     "puntuacion_openbible": 36
+    },
+    {
+     "identificacion": "Al Na’ani",
+     "lat": 31.8722,
+     "lon": 34.8732,
+     "puntuacion_openbible": 17
+    },
+    {
+     "identificacion": "Khirbet Fered",
+     "lat": 31.7653,
+     "lon": 34.895,
+     "puntuacion_openbible": -19
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae7bd8b/naamah-1",
+   "nota": ""
+  },
+  {
+   "id": "nesib",
+   "nombre": "Nesib",
+   "nombre_rv1909": "Nesib",
+   "formas_rv1909": [
+    "Nesib"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Beit Nesib esh Sharqiyyeh",
+    "lat": 31.5859,
+    "lon": 35.0098,
+    "puntuacion_openbible": 788,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aafe3bd/nezib",
+   "nota": ""
+  },
+  {
+   "id": "ofni",
+   "nombre": "Ofni",
+   "nombre_rv1909": "Ophni",
+   "formas_rv1909": [
+    "Ophni"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Jifna",
+    "lat": 31.9619,
+    "lon": 35.2156,
+    "puntuacion_openbible": 562,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Bir Zeit",
+     "lat": 31.9653,
+     "lon": 35.1909,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1f2174/ophni",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ophni»."
+  },
+  {
+   "id": "ofra",
+   "nombre": "Ofra",
+   "nombre_rv1909": "Ophra",
+   "formas_rv1909": [
+    "Ophra"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Taybeh",
+    "lat": 31.9544,
+    "lon": 35.3003,
+    "puntuacion_openbible": 786,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a53b82d/ophrah-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ophra»."
+  },
+  {
+   "id": "raba",
+   "nombre": "Raba",
+   "nombre_rv1909": "Rabba",
+   "formas_rv1909": [
+    "Rabba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:60"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Hamideh",
+    "lat": 31.827,
+    "lon": 34.9876,
+    "puntuacion_openbible": 303,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Deir el Azar",
+     "lat": 31.809,
+     "lon": 35.1038,
+     "puntuacion_openbible": 152
+    },
+    {
+     "identificacion": "Horbat Darban",
+     "lat": 31.7252,
+     "lon": 35.0629,
+     "puntuacion_openbible": 26
+    },
+    {
+     "identificacion": "Tell el Kokah",
+     "lat": 31.8401,
+     "lon": 35.0263,
+     "puntuacion_openbible": 26
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a28d652/rabbah-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Rabba»."
+  },
+  {
+   "id": "ramat",
+   "nombre": "Ramat",
+   "nombre_rv1909": "Ramat",
+   "formas_rv1909": [
+    "Ramat"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Ira",
+    "lat": 31.2328,
+    "lon": 34.9867,
+    "puntuacion_openbible": 226,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Uza",
+     "lat": 31.2092,
+     "lon": 35.1657,
+     "puntuacion_openbible": 176
+    },
+    {
+     "identificacion": "Beer Yeroham",
+     "lat": 30.991,
+     "lon": 34.9113,
+     "puntuacion_openbible": 37
+    },
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 33
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaa4c6e/ramah-6",
+   "nota": ""
+  },
+  {
+   "id": "rehob-19-28",
+   "nombre": "Rehob (Jos 19:28)",
+   "nombre_rv1909": "Rehob",
+   "formas_rv1909": [
+    "Rehob"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Balat",
+    "lat": 33.1144,
+    "lon": 35.2908,
+    "puntuacion_openbible": 240,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell er Rahb",
+     "lat": 33.0817,
+     "lon": 35.3253,
+     "puntuacion_openbible": 132
+    },
+    {
+     "identificacion": "Tell Bir el Gharbi",
+     "lat": 32.9014,
+     "lon": 35.1694,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Khirbet Da‘uk",
+     "lat": 32.8718,
+     "lon": 35.122,
+     "puntuacion_openbible": 6
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aaf5fef/rehob-2",
+   "nota": "Hay otros lugares llamados Rehob: este es el de Jos 19:28 según OpenBible."
+  },
+  {
+   "id": "rehob-19-30",
+   "nombre": "Rehob (Jos 19:30)",
+   "nombre_rv1909": "Rehob",
+   "formas_rv1909": [
+    "Rehob"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:30",
+    "Jos 21:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Bir el Gharbi",
+    "lat": 32.9014,
+    "lon": 35.1694,
+    "puntuacion_openbible": 428,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Da‘uk",
+     "lat": 32.8718,
+     "lon": 35.122,
+     "puntuacion_openbible": 56
+    },
+    {
+     "identificacion": "Tell el Balat",
+     "lat": 33.1144,
+     "lon": 35.2908,
+     "puntuacion_openbible": 8
+    },
+    {
+     "identificacion": "Tell er Rahb",
+     "lat": 33.0817,
+     "lon": 35.3253,
+     "puntuacion_openbible": 6
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab71288/rehob-3",
+   "nota": "Hay otros lugares llamados Rehob: este es el de Jos 19:30 según OpenBible."
+  },
+  {
+   "id": "recom",
+   "nombre": "Recom",
+   "nombre_rv1909": "Recom",
+   "formas_rv1909": [
+    "Recom"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Feldstein et al Site 43",
+    "lat": 31.8105,
+    "lon": 35.1742,
+    "puntuacion_openbible": 206,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Feldstein et al Site 34",
+     "lat": 31.7997,
+     "lon": 35.1579,
+     "puntuacion_openbible": 90
+    },
+    {
+     "identificacion": "Rafat",
+     "lat": 31.8706,
+     "lon": 35.1922,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Ein Umm esh Sharayit",
+     "lat": 31.8859,
+     "lon": 35.2052,
+     "puntuacion_openbible": 13
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1b5486/rekem",
+   "nota": ""
+  },
+  {
+   "id": "sarid",
+   "nombre": "Sarid",
+   "nombre_rv1909": "Sarid",
+   "formas_rv1909": [
+    "Sarid"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:10",
+    "Jos 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Shadud",
+    "lat": 32.6604,
+    "lon": 35.2342,
+    "puntuacion_openbible": 760,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab5b542/sarid",
+   "nota": ""
+  },
+  {
+   "id": "samir",
+   "nombre": "Samir",
+   "nombre_rv1909": "Samir",
+   "formas_rv1909": [
+    "Samir"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:48"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Sumara",
+    "lat": 31.4184,
+    "lon": 34.9318,
+    "puntuacion_openbible": 287,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Anab es Seghireh",
+     "lat": 31.4121,
+     "lon": 34.9549,
+     "puntuacion_openbible": 111
+    },
+    {
+     "identificacion": "Khirbet al Bira",
+     "lat": 31.4355,
+     "lon": 34.9265,
+     "puntuacion_openbible": 92
+    },
+    {
+     "identificacion": "Khirbet al Simia",
+     "lat": 31.4217,
+     "lon": 35.0337,
+     "puntuacion_openbible": 36
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a846a2a/shamir-1",
+   "nota": ""
+  },
+  {
+   "id": "sihor",
+   "nombre": "Sihor",
+   "nombre_rv1909": "Sihor",
+   "formas_rv1909": [
+    "Sihor"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Jos 13:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Pelusiac branch of the Nile",
+    "lat": 31.0425,
+    "lon": 32.5461,
+    "puntuacion_openbible": 446,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi al Arish",
+     "lat": 31.1457,
+     "lon": 33.8065,
+     "puntuacion_openbible": 157
+    },
+    {
+     "identificacion": "Nile River",
+     "lat": 31.4653,
+     "lon": 30.3667,
+     "puntuacion_openbible": 63
+    },
+    {
+     "identificacion": "Nahal HaBesor",
+     "lat": 31.4642,
+     "lon": 34.3757,
+     "puntuacion_openbible": 16
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a305f43/shihor-1",
+   "nota": ""
+  },
+  {
+   "id": "silim",
+   "nombre": "Silim",
+   "nombre_rv1909": "Silim",
+   "formas_rv1909": [
+    "Silim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:32"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall al Ajjul",
+    "lat": 31.467,
+    "lon": 34.4041,
+    "puntuacion_openbible": 218,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Sharuhen",
+     "lat": 31.2819,
+     "lon": 34.4825,
+     "puntuacion_openbible": 131
+    },
+    {
+     "identificacion": "Tel Haror",
+     "lat": 31.3821,
+     "lon": 34.6065,
+     "puntuacion_openbible": 32
+    },
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8fe47a/shilhim",
+   "nota": ""
+  },
+  {
+   "id": "soco",
+   "nombre": "Soco",
+   "nombre_rv1909": "Sochô",
+   "formas_rv1909": [
+    "Sochô"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Socho",
+    "lat": 31.6822,
+    "lon": 34.9749,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a39a6b9/socoh-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Sochô»."
+  },
+  {
+   "id": "telem",
+   "nombre": "Telem",
+   "nombre_rv1909": "Telem",
+   "formas_rv1909": [
+    "Telem"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Abu Tulul",
+    "lat": 31.1421,
+    "lon": 34.9122,
+    "puntuacion_openbible": 123,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm es Salafe",
+     "lat": 30.9898,
+     "lon": 34.9653,
+     "puntuacion_openbible": 104
+    },
+    {
+     "identificacion": "Horbat Rahba",
+     "lat": 31.049,
+     "lon": 35.0288,
+     "puntuacion_openbible": 84
+    },
+    {
+     "identificacion": "Khirbet ez Zeifeh",
+     "lat": 30.9968,
+     "lon": 34.9819,
+     "puntuacion_openbible": 63
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6ef6a9/telem",
+   "nota": ""
+  },
+  {
+   "id": "timna-15-57",
+   "nombre": "Timna (Jos 15:57)",
+   "nombre_rv1909": "Timna",
+   "formas_rv1909": [
+    "Timna"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:57"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Main",
+    "lat": 31.4094,
+    "lon": 35.1338,
+    "puntuacion_openbible": 516,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm Lasafa",
+     "lat": 31.4382,
+     "lon": 35.1574,
+     "puntuacion_openbible": 75
+    },
+    {
+     "identificacion": "Khirbet et Tabbaneh",
+     "lat": 31.6941,
+     "lon": 35.0491,
+     "puntuacion_openbible": 71
+    },
+    {
+     "identificacion": "Khirbet Abu Shaban",
+     "lat": 31.4345,
+     "lon": 35.163,
+     "puntuacion_openbible": 33
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae3f164/timnah-2",
+   "nota": "Hay otros lugares llamados Timna: este es el de Jos 15:57 según OpenBible."
+  },
+  {
+   "id": "tirsa",
+   "nombre": "Tirsa",
+   "nombre_rv1909": "Tirsa",
+   "formas_rv1909": [
+    "Tirsa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell el Farah",
+    "lat": 32.2874,
+    "lon": 35.3378,
+    "puntuacion_openbible": 834,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a80d317/tirzah",
+   "nota": ""
+  },
+  {
+   "id": "zanoa",
+   "nombre": "Zanoa (Jos 15:34)",
+   "nombre_rv1909": "Zanoa",
+   "formas_rv1909": [
+    "Zanoa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Zanu",
+    "lat": 31.7194,
+    "lon": 35.0013,
+    "puntuacion_openbible": 730,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a28f432/zanoah-1",
+   "nota": "Hay otros lugares llamados Zanoa: este es el de Jos 15:34 según OpenBible."
+  },
+  {
+   "id": "zanoa-15-56",
+   "nombre": "Zanoa (Jos 15:56)",
+   "nombre_rv1909": "Zanoa",
+   "formas_rv1909": [
+    "Zanoa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:56"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Beit Amra",
+    "lat": 31.4502,
+    "lon": 35.0535,
+    "puntuacion_openbible": 301,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm el Amad",
+     "lat": 31.4431,
+     "lon": 35.0458,
+     "puntuacion_openbible": 101
+    },
+    {
+     "identificacion": "Khirbet Bism",
+     "lat": 31.4627,
+     "lon": 35.0335,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Khirbet Bani Dar",
+     "lat": 31.4963,
+     "lon": 35.1515,
+     "puntuacion_openbible": 26
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afe28fe/zanoah-2",
+   "nota": "Hay otros lugares llamados Zanoa: este es el de Jos 15:56 según OpenBible."
+  },
+  {
+   "id": "senan",
+   "nombre": "Senán",
+   "nombre_rv1909": "Senán",
+   "formas_rv1909": [
+    "Senán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:37"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell ed Duweir",
+    "lat": 31.5653,
+    "lon": 34.8492,
+    "puntuacion_openbible": 510,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Iraq el Kharab",
+     "lat": 31.5994,
+     "lon": 34.8039,
+     "puntuacion_openbible": 349
+    },
+    {
+     "identificacion": "Tel Erani",
+     "lat": 31.6121,
+     "lon": 34.7862,
+     "puntuacion_openbible": 40
+    },
+    {
+     "identificacion": "Khirbet Summeily",
+     "lat": 31.5647,
+     "lon": 34.688,
+     "puntuacion_openbible": -37
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a5e1150/zenan",
+   "nota": ""
+  },
+  {
+   "id": "sorea",
+   "nombre": "Sorea",
+   "nombre_rv1909": "Sorea",
+   "formas_rv1909": [
+    "Sorea",
+    "Sora"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:33",
+    "Jos 19:41"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Tzora",
+    "lat": 31.774,
+    "lon": 34.9853,
+    "puntuacion_openbible": 832,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a08174b/zorah",
+   "nota": ""
+  },
+  {
+   "id": "adam",
+   "nombre": "Adam",
+   "nombre_rv1909": "Adam",
+   "formas_rv1909": [
+    "Adam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 3:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell ed Damiyeh",
+    "lat": 32.1039,
+    "lon": 35.5468,
+    "puntuacion_openbible": 823,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adc31c7/adam",
+   "nota": ""
+  },
+  {
+   "id": "amam",
+   "nombre": "Amam",
+   "nombre_rv1909": "Amam",
+   "formas_rv1909": [
+    "Amam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Be’er Nevatim",
+    "lat": 31.2185,
+    "lon": 34.9068,
+    "puntuacion_openbible": 377,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Nahal Yattir 205",
+     "lat": 31.2437,
+     "lon": 34.8973,
+     "puntuacion_openbible": 90
+    },
+    {
+     "identificacion": "Bir el Esani",
+     "lat": 31.1919,
+     "lon": 34.5801,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a3e2b20/amam",
+   "nota": ""
+  },
+  {
+   "id": "anab",
+   "nombre": "Anab",
+   "nombre_rv1909": "Anab",
+   "formas_rv1909": [
+    "Anab"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:21",
+    "Jos 15:50"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Anab es Seghireh",
+    "lat": 31.4121,
+    "lon": 34.9549,
+    "puntuacion_openbible": 777,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Anab al Kabir",
+     "lat": 31.3959,
+     "lon": 34.9308,
+     "puntuacion_openbible": 67
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a234727/anab",
+   "nota": ""
+  },
+  {
+   "id": "anim",
+   "nombre": "Anim",
+   "nombre_rv1909": "Anim",
+   "formas_rv1909": [
+    "Anim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:50"
+   ],
+   "ubicacion": {
+    "identificacion": "Horbat Anim",
+    "lat": 31.3536,
+    "lon": 35.0635,
+    "puntuacion_openbible": 763,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ghuweina el Fauqa",
+     "lat": 31.3604,
+     "lon": 35.0787,
+     "puntuacion_openbible": 50
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac22b90/anim",
+   "nota": ""
+  },
+  {
+   "id": "arab",
+   "nombre": "Arab",
+   "nombre_rv1909": "Arab",
+   "formas_rv1909": [
+    "Arab"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:52"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet er Rabiyeh",
+    "lat": 31.4319,
+    "lon": 35.0296,
+    "puntuacion_openbible": 536,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet ez Zawiya",
+     "lat": 31.6015,
+     "lon": 35.1587,
+     "puntuacion_openbible": 69
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adbc03e/arab",
+   "nota": ""
+  },
+  {
+   "id": "asan",
+   "nombre": "Asán",
+   "nombre_rv1909": "Asán",
+   "formas_rv1909": [
+    "Asán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:42",
+    "Jos 19:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Asan",
+    "lat": 31.2814,
+    "lon": 34.7974,
+    "puntuacion_openbible": 442,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 154
+    },
+    {
+     "identificacion": "Tel Goded",
+     "lat": 31.6334,
+     "lon": 34.9166,
+     "puntuacion_openbible": 90
+    },
+    {
+     "identificacion": "Khirbet Muleh",
+     "lat": 31.29,
+     "lon": 34.6464,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab5175f/ashan",
+   "nota": ""
+  },
+  {
+   "id": "asna",
+   "nombre": "Asna",
+   "nombre_rv1909": "Asna",
+   "formas_rv1909": [
+    "Asna"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Idhna",
+    "lat": 31.5586,
+    "lon": 34.9761,
+    "puntuacion_openbible": 587,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9a57b7/ashnah-2",
+   "nota": ""
+  },
+  {
+   "id": "avim",
+   "nombre": "Avim",
+   "nombre_rv1909": "Avim",
+   "formas_rv1909": [
+    "Avim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Et Tell",
+    "lat": 31.9169,
+    "lon": 35.2611,
+    "puntuacion_openbible": 156,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Maqatir",
+     "lat": 31.9148,
+     "lon": 35.2496,
+     "puntuacion_openbible": 22
+    },
+    {
+     "identificacion": "Khirbet Haiyan",
+     "lat": 31.9052,
+     "lon": 35.2704,
+     "puntuacion_openbible": 15
+    },
+    {
+     "identificacion": "Khirbet Nisieh",
+     "lat": 31.8975,
+     "lon": 35.2286,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6d7a41/avvim",
+   "nota": ""
+  },
+  {
+   "id": "bala",
+   "nombre": "Bala",
+   "nombre_rv1909": "Bala",
+   "formas_rv1909": [
+    "Bala"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Tulul el Medbah",
+    "lat": 31.1421,
+    "lon": 34.9122,
+    "puntuacion_openbible": 155,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Beer Yeroham",
+     "lat": 30.991,
+     "lon": 34.9113,
+     "puntuacion_openbible": 8
+    },
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 7
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": 5
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8ac29f/balah",
+   "nota": ""
+  },
+  {
+   "id": "ebes",
+   "nombre": "Ebes",
+   "nombre_rv1909": "Ebes",
+   "formas_rv1909": [
+    "Ebes"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:20"
+   ],
+   "ubicacion": {
+    "identificacion": "Ain el Habus",
+    "lat": 32.6581,
+    "lon": 35.5058,
+    "puntuacion_openbible": 142,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Horbat Sefan",
+     "lat": 32.6791,
+     "lon": 35.197,
+     "puntuacion_openbible": 126
+    },
+    {
+     "identificacion": "En haYadid",
+     "lat": 32.5903,
+     "lon": 35.5256,
+     "puntuacion_openbible": 94
+    },
+    {
+     "identificacion": "Horvat Ukkal",
+     "lat": 32.6443,
+     "lon": 35.5053,
+     "puntuacion_openbible": 60
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acd9b19/ebez",
+   "nota": ""
+  },
+  {
+   "id": "eder",
+   "nombre": "Eder",
+   "nombre_rv1909": "Eder",
+   "formas_rv1909": [
+    "Eder"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Arad",
+    "lat": 31.2808,
+    "lon": 35.125,
+    "puntuacion_openbible": 111,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Malhata",
+     "lat": 31.2172,
+     "lon": 35.0258,
+     "puntuacion_openbible": 42
+    },
+    {
+     "identificacion": "Horbat Adar",
+     "lat": 31.4303,
+     "lon": 34.437,
+     "puntuacion_openbible": 25
+    },
+    {
+     "identificacion": "Tel Masos",
+     "lat": 31.2123,
+     "lon": 34.9583,
+     "puntuacion_openbible": 3
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a1b30e1/eder-2",
+   "nota": ""
+  },
+  {
+   "id": "elon",
+   "nombre": "Elón",
+   "nombre_rv1909": "Elón",
+   "formas_rv1909": [
+    "Elón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Wadi Illin",
+    "lat": 31.7463,
+    "lon": 34.9971,
+    "puntuacion_openbible": 315,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Kafr Ana",
+     "lat": 32.0272,
+     "lon": 34.8681,
+     "puntuacion_openbible": 30
+    },
+    {
+     "identificacion": "Khirbet Hasan",
+     "lat": 31.7971,
+     "lon": 34.9625,
+     "puntuacion_openbible": 30
+    },
+    {
+     "identificacion": "Tel Zelafon",
+     "lat": 31.8003,
+     "lon": 34.9388,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae180d8/elon",
+   "nota": ""
+  },
+  {
+   "id": "enam",
+   "nombre": "Enam",
+   "nombre_rv1909": "Enam",
+   "formas_rv1909": [
+    "Enam"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:34"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Beit Ika",
+    "lat": 31.6877,
+    "lon": 35.0124,
+    "puntuacion_openbible": 107,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet en Nabi Bulus",
+     "lat": 31.7149,
+     "lon": 34.9807,
+     "puntuacion_openbible": 99
+    },
+    {
+     "identificacion": "Khirbet el Alya",
+     "lat": 31.7151,
+     "lon": 34.9852,
+     "puntuacion_openbible": 83
+    },
+    {
+     "identificacion": "Nahal Yarmut",
+     "lat": 31.715,
+     "lon": 34.9692,
+     "puntuacion_openbible": 19
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a26921e/enam",
+   "nota": ""
+  },
+  {
+   "id": "esan",
+   "nombre": "Esán",
+   "nombre_rv1909": "Esán",
+   "formas_rv1909": [
+    "Esán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:52"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet et Taiyiba",
+    "lat": 31.5566,
+    "lon": 35.0335,
+    "puntuacion_openbible": 215,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Khallat Sam’a",
+     "lat": 31.4333,
+     "lon": 34.9777,
+     "puntuacion_openbible": 167
+    },
+    {
+     "identificacion": "Khirbet en Nasara",
+     "lat": 31.5494,
+     "lon": 35.0936,
+     "puntuacion_openbible": -87
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/acd9498/eshan",
+   "nota": ""
+  },
+  {
+   "id": "eter-19-7",
+   "nombre": "Eter (Jos 19:7)",
+   "nombre_rv1909": "Eter",
+   "formas_rv1909": [
+    "Eter"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Ater",
+    "lat": 31.6159,
+    "lon": 34.8783,
+    "puntuacion_openbible": 320,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Attir",
+     "lat": 31.3525,
+     "lon": 35.0161,
+     "puntuacion_openbible": 240
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a16596e/ether-2",
+   "nota": "Hay otros lugares llamados Eter: este es el de Jos 19:7 según OpenBible."
+  },
+  {
+   "id": "esem",
+   "nombre": "Esem",
+   "nombre_rv1909": "Esem",
+   "formas_rv1909": [
+    "Esem"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:29",
+    "Jos 19:3"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Asan",
+    "lat": 31.2814,
+    "lon": 34.7974,
+    "puntuacion_openbible": 616,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Umm el Azam",
+     "lat": 31.0806,
+     "lon": 34.9408,
+     "puntuacion_openbible": 136
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a573b95/ezem",
+   "nota": ""
+  },
+  {
+   "id": "gaas",
+   "nombre": "Gaas",
+   "nombre_rv1909": "Gaas",
+   "formas_rv1909": [
+    "Gaas"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Jos 24:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Tibnah",
+    "lat": 32.0081,
+    "lon": 35.1073,
+    "puntuacion_openbible": 671,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet esh Shuna",
+     "lat": 31.9598,
+     "lon": 35.092,
+     "puntuacion_openbible": 61
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab05a42/gaash",
+   "nota": ""
+  },
+  {
+   "id": "gat",
+   "nombre": "Gat",
+   "nombre_rv1909": "Gath",
+   "formas_rv1909": [
+    "Gath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 11:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell es Safi",
+    "lat": 31.6997,
+    "lon": 34.8469,
+    "puntuacion_openbible": 850,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell esh Sharia",
+     "lat": 31.3912,
+     "lon": 34.6816,
+     "puntuacion_openbible": 35
+    },
+    {
+     "identificacion": "Tel Nagila",
+     "lat": 31.5026,
+     "lon": 34.7583,
+     "puntuacion_openbible": 35
+    },
+    {
+     "identificacion": "Ras Abu Hamid",
+     "lat": 31.903,
+     "lon": 34.8899,
+     "puntuacion_openbible": 11
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a18873f/gath-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Gath»."
+  },
+  {
+   "id": "geba",
+   "nombre": "Geba",
+   "nombre_rv1909": "Geba",
+   "formas_rv1909": [
+    "Geba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Jaba",
+    "lat": 31.8575,
+    "lon": 35.2611,
+    "puntuacion_openbible": 740,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel el Ful",
+     "lat": 31.8231,
+     "lon": 35.2307,
+     "puntuacion_openbible": 48
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a264254/geba-1",
+   "nota": ""
+  },
+  {
+   "id": "gaba",
+   "nombre": "Gaba",
+   "nombre_rv1909": "Gaba",
+   "formas_rv1909": [
+    "Gaba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Jaba",
+    "lat": 31.8575,
+    "lon": 35.2611,
+    "puntuacion_openbible": 541,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Burj el Bardawil",
+     "lat": 31.9855,
+     "lon": 35.2439,
+     "puntuacion_openbible": 107
+    },
+    {
+     "identificacion": "Khirbet et Tell",
+     "lat": 32.0215,
+     "lon": 35.262,
+     "puntuacion_openbible": 50
+    },
+    {
+     "identificacion": "Tel el Ful",
+     "lat": 31.8231,
+     "lon": 35.2307,
+     "puntuacion_openbible": 35
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae14b1d/geba-4",
+   "nota": ""
+  },
+  {
+   "id": "gilo",
+   "nombre": "Gilo",
+   "nombre_rv1909": "Gilo",
+   "formas_rv1909": [
+    "Gilo"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:51"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Rabud",
+    "lat": 31.4321,
+    "lon": 35.0149,
+    "puntuacion_openbible": 427,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Dahriya",
+     "lat": 31.4076,
+     "lon": 34.9723,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Khirbet Kafr Jul",
+     "lat": 31.4344,
+     "lon": 34.9518,
+     "puntuacion_openbible": -57
+    },
+    {
+     "identificacion": "Khirbet Jala",
+     "lat": 31.6171,
+     "lon": 35.0766,
+     "puntuacion_openbible": -160
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6df20a/giloh",
+   "nota": ""
+  },
+  {
+   "id": "hali",
+   "nombre": "Halí",
+   "nombre_rv1909": "Halí",
+   "formas_rv1909": [
+    "Halí"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Alil",
+    "lat": 32.7718,
+    "lon": 35.1557,
+    "puntuacion_openbible": 644,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Alil West",
+     "lat": 32.7731,
+     "lon": 35.1482,
+     "puntuacion_openbible": 66
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a79d6a5/hali",
+   "nota": ""
+  },
+  {
+   "id": "hazor-15-23",
+   "nombre": "Hazor (Jos 15:23)",
+   "nombre_rv1909": "Asor",
+   "formas_rv1909": [
+    "Asor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:23"
+   ],
+   "ubicacion": {
+    "identificacion": "El Jebariyeh",
+    "lat": 30.7228,
+    "lon": 34.6452,
+    "puntuacion_openbible": 311,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Qedeis",
+     "lat": 30.5834,
+     "lon": 34.4841,
+     "puntuacion_openbible": 27
+    },
+    {
+     "identificacion": "Khirbet el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 5
+    },
+    {
+     "identificacion": "Ain el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae5657c/hazor-2",
+   "nota": "Hay otros lugares llamados Hazor: este es el de Jos 15:23 según OpenBible."
+  },
+  {
+   "id": "hazor-15-25",
+   "nombre": "Hazor (Jos 15:25)",
+   "nombre_rv1909": "Asor",
+   "formas_rv1909": [
+    "Asor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Qaryatein",
+    "lat": 31.345,
+    "lon": 35.1244,
+    "puntuacion_openbible": 245,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ein Qedeis",
+     "lat": 30.5834,
+     "lon": 34.4841,
+     "puntuacion_openbible": 38
+    },
+    {
+     "identificacion": "Khirbet el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 7
+    },
+    {
+     "identificacion": "Ain el Qudeirat",
+     "lat": 30.6483,
+     "lon": 34.4222,
+     "puntuacion_openbible": 3
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4d3e40/hazor-3",
+   "nota": "Hay otros lugares llamados Hazor: este es el de Jos 15:25 según OpenBible."
+  },
+  {
+   "id": "olon",
+   "nombre": "Olón",
+   "nombre_rv1909": "Olón",
+   "formas_rv1909": [
+    "Olón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:51"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Alin",
+    "lat": 31.6622,
+    "lon": 35.0305,
+    "puntuacion_openbible": 153,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Umm el Amad",
+     "lat": 31.4431,
+     "lon": 35.0458,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Khirbet Bism",
+     "lat": 31.4627,
+     "lon": 35.0335,
+     "puntuacion_openbible": 45
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8819e0/holon-1",
+   "nota": ""
+  },
+  {
+   "id": "hosa",
+   "nombre": "Hosa",
+   "nombre_rv1909": "Hosa",
+   "formas_rv1909": [
+    "Hosa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Rachidiyeh",
+    "lat": 33.2367,
+    "lon": 35.2152,
+    "puntuacion_openbible": 629,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Hos",
+     "lat": 33.2421,
+     "lon": 35.2372,
+     "puntuacion_openbible": 87
+    },
+    {
+     "identificacion": "Tyre",
+     "lat": 33.2708,
+     "lon": 35.1961,
+     "puntuacion_openbible": 22
+    },
+    {
+     "identificacion": "Kefr Yasif",
+     "lat": 32.9557,
+     "lon": 35.1652,
+     "puntuacion_openbible": -2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2feddf/hosah",
+   "nota": ""
+  },
+  {
+   "id": "cain",
+   "nombre": "Caín",
+   "nombre_rv1909": "Caín",
+   "formas_rv1909": [
+    "Caín"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:57"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Bani Dar",
+    "lat": 31.4963,
+    "lon": 35.1515,
+    "puntuacion_openbible": 565,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a765bd8/kain",
+   "nota": ""
+  },
+  {
+   "id": "cana",
+   "nombre": "Cana (Jos 16:8)",
+   "nombre_rv1909": "Cana",
+   "formas_rv1909": [
+    "Cana"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "Jos 16:8",
+    "Jos 17:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Wadi Qana",
+    "lat": 32.127,
+    "lon": 34.8954,
+    "puntuacion_openbible": 661,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yarkon River",
+     "lat": 32.1039,
+     "lon": 34.7758,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a373106/kanah-1",
+   "nota": "Hay otros lugares llamados Cana: este es el de Jos 16:8 según OpenBible."
+  },
+  {
+   "id": "cana-19-28",
+   "nombre": "Cana (Jos 19:28)",
+   "nombre_rv1909": "Cana",
+   "formas_rv1909": [
+    "Cana"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Qana",
+    "lat": 33.2092,
+    "lon": 35.2992,
+    "puntuacion_openbible": 842,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac3233c/kanah-2",
+   "nota": "Hay otros lugares llamados Cana: este es el de Jos 19:28 según OpenBible."
+  },
+  {
+   "id": "cina",
+   "nombre": "Cina",
+   "nombre_rv1909": "Cina",
+   "formas_rv1909": [
+    "Cina"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:22"
+   ],
+   "ubicacion": {
+    "identificacion": "Horbat Uza",
+    "lat": 31.2092,
+    "lon": 35.1657,
+    "puntuacion_openbible": 259,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Wadi el Qeini",
+     "lat": 31.1789,
+     "lon": 35.1747,
+     "puntuacion_openbible": 221
+    },
+    {
+     "identificacion": "Horbat Tayyav",
+     "lat": 31.3028,
+     "lon": 35.1491,
+     "puntuacion_openbible": 155
+    },
+    {
+     "identificacion": "En Hazeva",
+     "lat": 30.8087,
+     "lon": 35.2459,
+     "puntuacion_openbible": 30
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae8f9cf/kinah",
+   "nota": ""
+  },
+  {
+   "id": "maon",
+   "nombre": "Maón",
+   "nombre_rv1909": "Maón",
+   "formas_rv1909": [
+    "Maón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:55"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Main",
+    "lat": 31.4094,
+    "lon": 35.1338,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6845b1/maon",
+   "nota": ""
+  },
+  {
+   "id": "moza",
+   "nombre": "Moza",
+   "nombre_rv1909": "Moza",
+   "formas_rv1909": [
+    "Moza"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Qalunya",
+    "lat": 31.7929,
+    "lon": 35.1642,
+    "puntuacion_openbible": 417,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Beit Mizza",
+     "lat": 31.8069,
+     "lon": 35.1594,
+     "puntuacion_openbible": 270
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af35635/mozah",
+   "nota": ""
+  },
+  {
+   "id": "para",
+   "nombre": "Para",
+   "nombre_rv1909": "Para",
+   "formas_rv1909": [
+    "Para"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Ein Fara",
+    "lat": 31.8348,
+    "lon": 35.3105,
+    "puntuacion_openbible": 449,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Abu Musarrah",
+     "lat": 31.8286,
+     "lon": 35.2862,
+     "puntuacion_openbible": 172
+    },
+    {
+     "identificacion": "Khirbet Tarafayn",
+     "lat": 31.9938,
+     "lon": 35.2125,
+     "puntuacion_openbible": 54
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2ec6b7/parah",
+   "nota": ""
+  },
+  {
+   "id": "rama",
+   "nombre": "Rama (Jos 18:25)",
+   "nombre_rv1909": "Rama",
+   "formas_rv1909": [
+    "Rama"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Ram",
+    "lat": 31.8543,
+    "lon": 35.2316,
+    "puntuacion_openbible": 723,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ramallah",
+     "lat": 31.8969,
+     "lon": 35.2017,
+     "puntuacion_openbible": 65
+    },
+    {
+     "identificacion": "Ramat Rahel",
+     "lat": 31.7399,
+     "lon": 35.2169,
+     "puntuacion_openbible": 26
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6d57ed/ramah-1",
+   "nota": "Hay otros lugares llamados Rama: este es el de Jos 18:25 según OpenBible."
+  },
+  {
+   "id": "rama-19-36",
+   "nombre": "Rama (Jos 19:36)",
+   "nombre_rv1909": "Rama",
+   "formas_rv1909": [
+    "Rama"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Zeitun er Rameh",
+    "lat": 32.9262,
+    "lon": 35.4011,
+    "puntuacion_openbible": 392,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Er Rameh",
+     "lat": 32.9393,
+     "lon": 35.3671,
+     "puntuacion_openbible": 332
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a010244/ramah-3",
+   "nota": "Hay otros lugares llamados Rama: este es el de Jos 19:36 según OpenBible."
+  },
+  {
+   "id": "seba",
+   "nombre": "Seba",
+   "nombre_rv1909": "Seba",
+   "formas_rv1909": [
+    "Seba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:2"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Beer Sheva",
+    "lat": 31.2447,
+    "lon": 34.8408,
+    "puntuacion_openbible": 330,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Bir es Seba",
+     "lat": 31.2372,
+     "lon": 34.7931,
+     "puntuacion_openbible": 6
+    },
+    {
+     "identificacion": "Tel Yeshua",
+     "lat": 31.2764,
+     "lon": 34.9903,
+     "puntuacion_openbible": 4
+    },
+    {
+     "identificacion": "Horbat Beer Shama",
+     "lat": 31.2569,
+     "lon": 34.5442,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae44746/sheba-2",
+   "nota": ""
+  },
+  {
+   "id": "sema",
+   "nombre": "Sema",
+   "nombre_rv1909": "Sema",
+   "formas_rv1909": [
+    "Sema"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Beer Sheva",
+    "lat": 31.2447,
+    "lon": 34.8408,
+    "puntuacion_openbible": 57,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Yeshua",
+     "lat": 31.2764,
+     "lon": 34.9903,
+     "puntuacion_openbible": 45
+    },
+    {
+     "identificacion": "Bir es Seba",
+     "lat": 31.2372,
+     "lon": 34.7931,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Horbat Beer Shama",
+     "lat": 31.2569,
+     "lon": 34.5442,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a55136c/shema",
+   "nota": ""
+  },
+  {
+   "id": "sion-de-isacar",
+   "nombre": "Sión (de Isacar)",
+   "nombre_rv1909": "Sión",
+   "formas_rv1909": [
+    "Sión"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Sirin",
+    "lat": 32.6542,
+    "lon": 35.5069,
+    "puntuacion_openbible": 278,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ayun esh Sha’in",
+     "lat": 32.7122,
+     "lon": 35.3445,
+     "puntuacion_openbible": 221
+    },
+    {
+     "identificacion": "Khirbet Mugheir",
+     "lat": 32.6887,
+     "lon": 35.3519,
+     "puntuacion_openbible": 134
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a03f6cf/shion",
+   "nota": "Ciudad de Isacar (Jos 19:19); no es Sión de Jerusalén ni el «monte de Sión» de Dt 4:48."
+  },
+  {
+   "id": "tiro",
+   "nombre": "Tiro",
+   "nombre_rv1909": "Tiro",
+   "formas_rv1909": [
+    "Tiro"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Tyre",
+    "lat": 33.2708,
+    "lon": 35.1961,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a160272/tyre",
+   "nota": ""
+  },
+  {
+   "id": "uma",
+   "nombre": "Uma",
+   "nombre_rv1909": "Umma",
+   "formas_rv1909": [
+    "Umma"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Akko",
+    "lat": 32.9211,
+    "lon": 35.0883,
+    "puntuacion_openbible": 417,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afa792e/ummah",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Umma»."
+  },
+  {
+   "id": "iron",
+   "nombre": "Irón",
+   "nombre_rv1909": "Irón",
+   "formas_rv1909": [
+    "Irón"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Yarun",
+    "lat": 33.0833,
+    "lon": 35.4167,
+    "puntuacion_openbible": 790,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a78b87e/yiron",
+   "nota": ""
+  },
+  {
+   "id": "sela",
+   "nombre": "Sela",
+   "nombre_rv1909": "Sela",
+   "formas_rv1909": [
+    "Sela"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 18:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Salah",
+    "lat": 31.8025,
+    "lon": 35.2096,
+    "puntuacion_openbible": 413,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Erha",
+     "lat": 31.8475,
+     "lon": 35.236,
+     "puntuacion_openbible": 60
+    },
+    {
+     "identificacion": "Khirbet Shab Salah",
+     "lat": 31.8957,
+     "lon": 35.218,
+     "puntuacion_openbible": -47
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a597dd0/zela",
+   "nota": ""
+  },
+  {
+   "id": "sior",
+   "nombre": "Sior",
+   "nombre_rv1909": "Sior",
+   "formas_rv1909": [
+    "Sior"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:54"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Rumeida",
+    "lat": 31.5251,
+    "lon": 35.1022,
+    "puntuacion_openbible": 471,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sair",
+     "lat": 31.5844,
+     "lon": 35.1453,
+     "puntuacion_openbible": 112
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac2907d/zior",
+   "nota": ""
+  },
+  {
+   "id": "zif",
+   "nombre": "Zif (Jos 15:24)",
+   "nombre_rv1909": "Ziph",
+   "formas_rv1909": [
+    "Ziph"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet ez Zeifeh",
+    "lat": 30.9968,
+    "lon": 34.9819,
+    "puntuacion_openbible": 467,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Mezad Refed",
+     "lat": 31.0117,
+     "lon": 34.9903,
+     "puntuacion_openbible": 67
+    },
+    {
+     "identificacion": "Khirbet Kuseife",
+     "lat": 31.2553,
+     "lon": 35.0674,
+     "puntuacion_openbible": 15
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aab3ff0/ziph-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ziph». Hay otros lugares llamados Zif: este es el de Jos 15:24 según OpenBible."
+  },
+  {
+   "id": "zif-15-55",
+   "nombre": "Zif (Jos 15:55)",
+   "nombre_rv1909": "Ziph",
+   "formas_rv1909": [
+    "Ziph"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:55"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Zif",
+    "lat": 31.4748,
+    "lon": 35.1351,
+    "puntuacion_openbible": 760,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9b852f/ziph-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Ziph». Hay otros lugares llamados Zif: este es el de Jos 15:55 según OpenBible."
+  },
+  {
+   "id": "ain-15-32",
+   "nombre": "Aín (Jos 15:32)",
+   "nombre_rv1909": "Aín",
+   "formas_rv1909": [
+    "Aín"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:32",
+    "Jos 19:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Halif",
+    "lat": 31.3833,
+    "lon": 34.8656,
+    "puntuacion_openbible": 109,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Asan",
+     "lat": 31.2814,
+     "lon": 34.7974,
+     "puntuacion_openbible": 39
+    },
+    {
+     "identificacion": "Horbat Anim",
+     "lat": 31.3536,
+     "lon": 35.0635,
+     "puntuacion_openbible": 16
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 14
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afb265c/ain-2",
+   "nota": "Hay otros lugares llamados Aín: este es el de Jos 15:32 según OpenBible."
+  },
+  {
+   "id": "ain-21-16",
+   "nombre": "Ain (Jos 21:16)",
+   "nombre_rv1909": "Ain",
+   "formas_rv1909": [
+    "Ain"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 21:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Asan",
+    "lat": 31.2814,
+    "lon": 34.7974,
+    "puntuacion_openbible": 99,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tel Halif",
+     "lat": 31.3833,
+     "lon": 34.8656,
+     "puntuacion_openbible": 46
+    },
+    {
+     "identificacion": "Tell Beit Mirsim",
+     "lat": 31.4558,
+     "lon": 34.9098,
+     "puntuacion_openbible": 34
+    },
+    {
+     "identificacion": "Tel Goded",
+     "lat": 31.6334,
+     "lon": 34.9166,
+     "puntuacion_openbible": 20
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adbc931/ain-3",
+   "nota": "Hay otros lugares llamados Ain: este es el de Jos 21:16 según OpenBible."
+  },
+  {
+   "id": "dor",
+   "nombre": "Dor",
+   "nombre_rv1909": "Dor",
+   "formas_rv1909": [
+    "Dor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 12:23",
+    "Jos 17:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Dor",
+    "lat": 32.6174,
+    "lon": 34.9164,
+    "puntuacion_openbible": 864,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a70c56b/dor",
+   "nota": ""
+  },
+  {
+   "id": "iim",
+   "nombre": "Iim",
+   "nombre_rv1909": "Iim",
+   "formas_rv1909": [
+    "Iim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 15:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Deir al Ghawi",
+    "lat": 31.3648,
+    "lon": 34.9206,
+    "puntuacion_openbible": 518,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Umm el Azam",
+     "lat": 31.0806,
+     "lon": 34.9408,
+     "puntuacion_openbible": 73
+    },
+    {
+     "identificacion": "Khirbet Asan",
+     "lat": 31.2814,
+     "lon": 34.7974,
+     "puntuacion_openbible": 16
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad161d1/iim",
+   "nota": ""
+  },
+  {
+   "id": "nea",
+   "nombre": "Nea",
+   "nombre_rv1909": "Nea",
+   "formas_rv1909": [
+    "Nea"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Jos 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Nimrin",
+    "lat": 32.8042,
+    "lon": 35.4235,
+    "puntuacion_openbible": 241,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Beit Netofa Valley",
+     "lat": 32.8096,
+     "lon": 35.3325,
+     "puntuacion_openbible": 189
+    },
+    {
+     "identificacion": "Tell el Wawiyat",
+     "lat": 32.7988,
+     "lon": 35.3051,
+     "puntuacion_openbible": 14
+    },
+    {
+     "identificacion": "Khirbet Yanin",
+     "lat": 32.8926,
+     "lon": 35.2219,
+     "puntuacion_openbible": -3
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2a77d2/neah",
+   "nota": ""
+  },
+  {
+   "id": "ser",
+   "nombre": "Ser",
+   "nombre_rv1909": "Ser",
+   "formas_rv1909": [
+    "Ser"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Jos 19:35"
+   ],
+   "ubicacion": {
+    "identificacion": "Tyre",
+    "lat": 33.2708,
+    "lon": 35.1961,
+    "puntuacion_openbible": 123,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Qarn Hattin",
+     "lat": 32.7997,
+     "lon": 35.4597,
+     "puntuacion_openbible": 51
+    },
+    {
+     "identificacion": "Tell el Khirbeh",
+     "lat": 33.0768,
+     "lon": 35.4324,
+     "puntuacion_openbible": 7
+    },
+    {
+     "identificacion": "Khirbet Madin",
+     "lat": 32.7994,
+     "lon": 35.4611,
+     "puntuacion_openbible": 2
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a061538/zer",
+   "nota": ""
   }
  ],
  "menciones_lugar": [
@@ -87871,6 +107069,5262 @@ window.BIBLIA_DATOS = {
    "lugar": "egipto",
    "inicio": 74,
    "fin": 80
+  },
+  {
+   "ref": "Jos 1:2",
+   "lugar": "jordan",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Jos 1:4",
+   "lugar": "libano",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 1:4",
+   "lugar": "eufrates",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 1:4",
+   "lugar": "mar-grande",
+   "inicio": 99,
+   "fin": 107
+  },
+  {
+   "ref": "Jos 1:11",
+   "lugar": "jordan",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "Jos 1:14",
+   "lugar": "jordan",
+   "inicio": 116,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 1:15",
+   "lugar": "jordan",
+   "inicio": 270,
+   "fin": 276
+  },
+  {
+   "ref": "Jos 2:1",
+   "lugar": "sitim",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 2:1",
+   "lugar": "jerico",
+   "inicio": 111,
+   "fin": 117
+  },
+  {
+   "ref": "Jos 2:2",
+   "lugar": "jerico",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 2:3",
+   "lugar": "jerico",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 2:7",
+   "lugar": "jordan",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "Jos 2:10",
+   "lugar": "mar-rojo",
+   "inicio": 54,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 2:10",
+   "lugar": "egipto",
+   "inicio": 107,
+   "fin": 113
+  },
+  {
+   "ref": "Jos 2:10",
+   "lugar": "jordan",
+   "inicio": 203,
+   "fin": 209
+  },
+  {
+   "ref": "Jos 3:1",
+   "lugar": "sitim",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 3:1",
+   "lugar": "jordan",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Jos 3:8",
+   "lugar": "jordan",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Jos 3:8",
+   "lugar": "jordan",
+   "inicio": 152,
+   "fin": 158
+  },
+  {
+   "ref": "Jos 3:11",
+   "lugar": "jordan",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 3:13",
+   "lugar": "jordan",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 3:13",
+   "lugar": "jordan",
+   "inicio": 169,
+   "fin": 175
+  },
+  {
+   "ref": "Jos 3:14",
+   "lugar": "jordan",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 3:15",
+   "lugar": "jordan",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 3:15",
+   "lugar": "jordan",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "Jos 3:16",
+   "lugar": "adam",
+   "inicio": 88,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 3:16",
+   "lugar": "saretan",
+   "inicio": 114,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 3:16",
+   "lugar": "mar-salado",
+   "inicio": 150,
+   "fin": 167
+  },
+  {
+   "ref": "Jos 3:16",
+   "lugar": "mar-salado",
+   "inicio": 172,
+   "fin": 182
+  },
+  {
+   "ref": "Jos 3:16",
+   "lugar": "jerico",
+   "inicio": 246,
+   "fin": 252
+  },
+  {
+   "ref": "Jos 3:17",
+   "lugar": "jordan",
+   "inicio": 101,
+   "fin": 107
+  },
+  {
+   "ref": "Jos 3:17",
+   "lugar": "jordan",
+   "inicio": 159,
+   "fin": 165
+  },
+  {
+   "ref": "Jos 4:1",
+   "lugar": "jordan",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 4:3",
+   "lugar": "jordan",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 4:5",
+   "lugar": "jordan",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 4:7",
+   "lugar": "jordan",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 4:7",
+   "lugar": "jordan",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "Jos 4:7",
+   "lugar": "jordan",
+   "inicio": 139,
+   "fin": 145
+  },
+  {
+   "ref": "Jos 4:8",
+   "lugar": "jordan",
+   "inicio": 104,
+   "fin": 110
+  },
+  {
+   "ref": "Jos 4:9",
+   "lugar": "jordan",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 4:10",
+   "lugar": "jordan",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Jos 4:13",
+   "lugar": "jerico",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 4:16",
+   "lugar": "jordan",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Jos 4:17",
+   "lugar": "jordan",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 4:18",
+   "lugar": "jordan",
+   "inicio": 101,
+   "fin": 107
+  },
+  {
+   "ref": "Jos 4:18",
+   "lugar": "jordan",
+   "inicio": 187,
+   "fin": 193
+  },
+  {
+   "ref": "Jos 4:19",
+   "lugar": "jordan",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 4:19",
+   "lugar": "gilgal",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 4:19",
+   "lugar": "jerico",
+   "inicio": 106,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 4:20",
+   "lugar": "gilgal",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 4:20",
+   "lugar": "jordan",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "Jos 4:22",
+   "lugar": "jordan",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Jos 4:23",
+   "lugar": "jordan",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 4:23",
+   "lugar": "mar-rojo",
+   "inicio": 157,
+   "fin": 168
+  },
+  {
+   "ref": "Jos 5:1",
+   "lugar": "jordan",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 5:1",
+   "lugar": "jordan",
+   "inicio": 207,
+   "fin": 213
+  },
+  {
+   "ref": "Jos 5:4",
+   "lugar": "egipto",
+   "inicio": 88,
+   "fin": 94
+  },
+  {
+   "ref": "Jos 5:4",
+   "lugar": "egipto",
+   "inicio": 206,
+   "fin": 212
+  },
+  {
+   "ref": "Jos 5:5",
+   "lugar": "egipto",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "Jos 5:6",
+   "lugar": "egipto",
+   "inicio": 139,
+   "fin": 145
+  },
+  {
+   "ref": "Jos 5:9",
+   "lugar": "egipto",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "Jos 5:9",
+   "lugar": "gilgal",
+   "inicio": 121,
+   "fin": 127
+  },
+  {
+   "ref": "Jos 5:10",
+   "lugar": "gilgal",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 5:10",
+   "lugar": "jerico",
+   "inicio": 134,
+   "fin": 140
+  },
+  {
+   "ref": "Jos 5:12",
+   "lugar": "canaan",
+   "inicio": 181,
+   "fin": 187
+  },
+  {
+   "ref": "Jos 5:13",
+   "lugar": "jerico",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 6:1",
+   "lugar": "jerico",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 6:2",
+   "lugar": "jerico",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 6:25",
+   "lugar": "jerico",
+   "inicio": 207,
+   "fin": 213
+  },
+  {
+   "ref": "Jos 6:26",
+   "lugar": "jerico",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "Jos 7:2",
+   "lugar": "jerico",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 7:2",
+   "lugar": "hai",
+   "inicio": 37,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 7:2",
+   "lugar": "bet-aven",
+   "inicio": 61,
+   "fin": 70
+  },
+  {
+   "ref": "Jos 7:2",
+   "lugar": "betel",
+   "inicio": 91,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 7:2",
+   "lugar": "hai",
+   "inicio": 186,
+   "fin": 189
+  },
+  {
+   "ref": "Jos 7:3",
+   "lugar": "hai",
+   "inicio": 116,
+   "fin": 119
+  },
+  {
+   "ref": "Jos 7:4",
+   "lugar": "hai",
+   "inicio": 87,
+   "fin": 90
+  },
+  {
+   "ref": "Jos 7:5",
+   "lugar": "hai",
+   "inicio": 9,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 7:5",
+   "lugar": "sebarim",
+   "inicio": 97,
+   "fin": 104
+  },
+  {
+   "ref": "Jos 7:7",
+   "lugar": "jordan",
+   "inicio": 73,
+   "fin": 79
+  },
+  {
+   "ref": "Jos 7:7",
+   "lugar": "jordan",
+   "inicio": 199,
+   "fin": 205
+  },
+  {
+   "ref": "Jos 7:24",
+   "lugar": "valle-de-acor",
+   "inicio": 243,
+   "fin": 248
+  },
+  {
+   "ref": "Jos 7:26",
+   "lugar": "valle-de-acor",
+   "inicio": 148,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 8:1",
+   "lugar": "hai",
+   "inicio": 105,
+   "fin": 108
+  },
+  {
+   "ref": "Jos 8:1",
+   "lugar": "hai",
+   "inicio": 153,
+   "fin": 156
+  },
+  {
+   "ref": "Jos 8:2",
+   "lugar": "hai",
+   "inicio": 10,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 8:2",
+   "lugar": "jerico",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 8:3",
+   "lugar": "hai",
+   "inicio": 64,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 8:9",
+   "lugar": "betel",
+   "inicio": 79,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 8:9",
+   "lugar": "hai",
+   "inicio": 89,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 8:9",
+   "lugar": "hai",
+   "inicio": 110,
+   "fin": 113
+  },
+  {
+   "ref": "Jos 8:10",
+   "lugar": "hai",
+   "inicio": 121,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 8:11",
+   "lugar": "hai",
+   "inicio": 142,
+   "fin": 145
+  },
+  {
+   "ref": "Jos 8:11",
+   "lugar": "hai",
+   "inicio": 176,
+   "fin": 179
+  },
+  {
+   "ref": "Jos 8:12",
+   "lugar": "betel",
+   "inicio": 60,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 8:12",
+   "lugar": "hai",
+   "inicio": 70,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 8:14",
+   "lugar": "hai",
+   "inicio": 29,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 8:16",
+   "lugar": "hai",
+   "inicio": 31,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 8:17",
+   "lugar": "hai",
+   "inicio": 21,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 8:17",
+   "lugar": "betel",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 8:18",
+   "lugar": "hai",
+   "inicio": 75,
+   "fin": 78
+  },
+  {
+   "ref": "Jos 8:21",
+   "lugar": "hai",
+   "inicio": 141,
+   "fin": 144
+  },
+  {
+   "ref": "Jos 8:23",
+   "lugar": "hai",
+   "inicio": 25,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 8:24",
+   "lugar": "hai",
+   "inicio": 67,
+   "fin": 70
+  },
+  {
+   "ref": "Jos 8:24",
+   "lugar": "hai",
+   "inicio": 234,
+   "fin": 237
+  },
+  {
+   "ref": "Jos 8:25",
+   "lugar": "hai",
+   "inicio": 88,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 8:26",
+   "lugar": "hai",
+   "inicio": 111,
+   "fin": 114
+  },
+  {
+   "ref": "Jos 8:28",
+   "lugar": "hai",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 8:29",
+   "lugar": "hai",
+   "inicio": 14,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 8:30",
+   "lugar": "monte-ebal",
+   "inicio": 71,
+   "fin": 75
+  },
+  {
+   "ref": "Jos 8:33",
+   "lugar": "monte-gerizim",
+   "inicio": 253,
+   "fin": 260
+  },
+  {
+   "ref": "Jos 8:33",
+   "lugar": "monte-ebal",
+   "inicio": 296,
+   "fin": 300
+  },
+  {
+   "ref": "Jos 9:1",
+   "lugar": "jordan",
+   "inicio": 88,
+   "fin": 94
+  },
+  {
+   "ref": "Jos 9:1",
+   "lugar": "mar-grande",
+   "inicio": 161,
+   "fin": 169
+  },
+  {
+   "ref": "Jos 9:1",
+   "lugar": "libano",
+   "inicio": 182,
+   "fin": 188
+  },
+  {
+   "ref": "Jos 9:3",
+   "lugar": "gabaon",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 9:3",
+   "lugar": "jerico",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 9:3",
+   "lugar": "hai",
+   "inicio": 79,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 9:6",
+   "lugar": "gilgal",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 9:9",
+   "lugar": "egipto",
+   "inicio": 157,
+   "fin": 163
+  },
+  {
+   "ref": "Jos 9:10",
+   "lugar": "jordan",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 9:10",
+   "lugar": "hesbon",
+   "inicio": 108,
+   "fin": 114
+  },
+  {
+   "ref": "Jos 9:10",
+   "lugar": "basan",
+   "inicio": 130,
+   "fin": 135
+  },
+  {
+   "ref": "Jos 9:10",
+   "lugar": "astarot",
+   "inicio": 151,
+   "fin": 159
+  },
+  {
+   "ref": "Jos 9:17",
+   "lugar": "gabaon",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 9:17",
+   "lugar": "cafira",
+   "inicio": 104,
+   "fin": 111
+  },
+  {
+   "ref": "Jos 9:17",
+   "lugar": "beerot",
+   "inicio": 113,
+   "fin": 120
+  },
+  {
+   "ref": "Jos 9:17",
+   "lugar": "quiriat-jearim",
+   "inicio": 124,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 10:1",
+   "lugar": "jerusalen",
+   "inicio": 25,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 10:1",
+   "lugar": "hai",
+   "inicio": 64,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 10:1",
+   "lugar": "jerico",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "Jos 10:1",
+   "lugar": "hai",
+   "inicio": 143,
+   "fin": 146
+  },
+  {
+   "ref": "Jos 10:1",
+   "lugar": "gabaon",
+   "inicio": 183,
+   "fin": 189
+  },
+  {
+   "ref": "Jos 10:2",
+   "lugar": "gabaon",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 10:2",
+   "lugar": "hai",
+   "inicio": 105,
+   "fin": 108
+  },
+  {
+   "ref": "Jos 10:3",
+   "lugar": "jerusalen",
+   "inicio": 37,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 10:3",
+   "lugar": "hebron",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Jos 10:3",
+   "lugar": "jarmut",
+   "inicio": 89,
+   "fin": 97
+  },
+  {
+   "ref": "Jos 10:3",
+   "lugar": "laquis",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "Jos 10:3",
+   "lugar": "eglon",
+   "inicio": 142,
+   "fin": 147
+  },
+  {
+   "ref": "Jos 10:4",
+   "lugar": "gabaon",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 10:5",
+   "lugar": "jerusalen",
+   "inicio": 42,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 10:5",
+   "lugar": "hebron",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Jos 10:5",
+   "lugar": "jarmut",
+   "inicio": 81,
+   "fin": 89
+  },
+  {
+   "ref": "Jos 10:5",
+   "lugar": "laquis",
+   "inicio": 101,
+   "fin": 107
+  },
+  {
+   "ref": "Jos 10:5",
+   "lugar": "eglon",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 10:5",
+   "lugar": "gabaon",
+   "inicio": 205,
+   "fin": 211
+  },
+  {
+   "ref": "Jos 10:6",
+   "lugar": "gabaon",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 10:6",
+   "lugar": "gilgal",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Jos 10:7",
+   "lugar": "gilgal",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 10:9",
+   "lugar": "gilgal",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 10:10",
+   "lugar": "gabaon",
+   "inicio": 71,
+   "fin": 77
+  },
+  {
+   "ref": "Jos 10:10",
+   "lugar": "bet-horon",
+   "inicio": 116,
+   "fin": 125
+  },
+  {
+   "ref": "Jos 10:10",
+   "lugar": "azeca",
+   "inicio": 144,
+   "fin": 149
+  },
+  {
+   "ref": "Jos 10:10",
+   "lugar": "maceda",
+   "inicio": 152,
+   "fin": 158
+  },
+  {
+   "ref": "Jos 10:11",
+   "lugar": "bet-horon",
+   "inicio": 54,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 10:11",
+   "lugar": "azeca",
+   "inicio": 121,
+   "fin": 126
+  },
+  {
+   "ref": "Jos 10:12",
+   "lugar": "gabaon",
+   "inicio": 155,
+   "fin": 161
+  },
+  {
+   "ref": "Jos 10:12",
+   "lugar": "valle-de-ajalon",
+   "inicio": 190,
+   "fin": 196
+  },
+  {
+   "ref": "Jos 10:15",
+   "lugar": "gilgal",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 10:16",
+   "lugar": "maceda",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Jos 10:17",
+   "lugar": "maceda",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "Jos 10:21",
+   "lugar": "maceda",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 10:23",
+   "lugar": "jerusalen",
+   "inicio": 74,
+   "fin": 83
+  },
+  {
+   "ref": "Jos 10:23",
+   "lugar": "hebron",
+   "inicio": 95,
+   "fin": 101
+  },
+  {
+   "ref": "Jos 10:23",
+   "lugar": "jarmut",
+   "inicio": 113,
+   "fin": 121
+  },
+  {
+   "ref": "Jos 10:23",
+   "lugar": "laquis",
+   "inicio": 133,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 10:23",
+   "lugar": "eglon",
+   "inicio": 151,
+   "fin": 156
+  },
+  {
+   "ref": "Jos 10:28",
+   "lugar": "maceda",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 10:28",
+   "lugar": "maceda",
+   "inicio": 154,
+   "fin": 160
+  },
+  {
+   "ref": "Jos 10:28",
+   "lugar": "jerico",
+   "inicio": 193,
+   "fin": 199
+  },
+  {
+   "ref": "Jos 10:29",
+   "lugar": "maceda",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 10:29",
+   "lugar": "libna-10-29",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 10:29",
+   "lugar": "libna-10-29",
+   "inicio": 70,
+   "fin": 75
+  },
+  {
+   "ref": "Jos 10:30",
+   "lugar": "jerico",
+   "inicio": 206,
+   "fin": 212
+  },
+  {
+   "ref": "Jos 10:31",
+   "lugar": "libna-10-29",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 10:31",
+   "lugar": "laquis",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 10:32",
+   "lugar": "laquis",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 10:32",
+   "lugar": "libna-10-29",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "Jos 10:33",
+   "lugar": "gezer",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 10:33",
+   "lugar": "laquis",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 10:34",
+   "lugar": "laquis",
+   "inicio": 3,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 10:34",
+   "lugar": "eglon",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 10:35",
+   "lugar": "laquis",
+   "inicio": 123,
+   "fin": 129
+  },
+  {
+   "ref": "Jos 10:36",
+   "lugar": "eglon",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 10:36",
+   "lugar": "hebron",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 10:37",
+   "lugar": "eglon",
+   "inicio": 143,
+   "fin": 148
+  },
+  {
+   "ref": "Jos 10:38",
+   "lugar": "debir",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 10:39",
+   "lugar": "hebron",
+   "inicio": 156,
+   "fin": 162
+  },
+  {
+   "ref": "Jos 10:39",
+   "lugar": "debir",
+   "inicio": 175,
+   "fin": 180
+  },
+  {
+   "ref": "Jos 10:39",
+   "lugar": "libna-10-29",
+   "inicio": 214,
+   "fin": 219
+  },
+  {
+   "ref": "Jos 10:41",
+   "lugar": "cades",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 10:41",
+   "lugar": "gaza",
+   "inicio": 42,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 10:41",
+   "lugar": "gosen-10-41",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 10:41",
+   "lugar": "gabaon",
+   "inicio": 80,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 10:43",
+   "lugar": "gilgal",
+   "inicio": 51,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 11:1",
+   "lugar": "hazor",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 11:1",
+   "lugar": "madon",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Jos 11:1",
+   "lugar": "simron",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 11:1",
+   "lugar": "acsaf",
+   "inicio": 102,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 11:2",
+   "lugar": "cineret",
+   "inicio": 93,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 11:3",
+   "lugar": "monte-hermon",
+   "inicio": 145,
+   "fin": 151
+  },
+  {
+   "ref": "Jos 11:3",
+   "lugar": "mizpa",
+   "inicio": 165,
+   "fin": 170
+  },
+  {
+   "ref": "Jos 11:5",
+   "lugar": "aguas-de-merom",
+   "inicio": 84,
+   "fin": 89
+  },
+  {
+   "ref": "Jos 11:7",
+   "lugar": "aguas-de-merom",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "Jos 11:8",
+   "lugar": "sidon",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 11:8",
+   "lugar": "llano-de-mizpa",
+   "inicio": 148,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 11:10",
+   "lugar": "hazor",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 11:10",
+   "lugar": "hazor",
+   "inicio": 90,
+   "fin": 95
+  },
+  {
+   "ref": "Jos 11:11",
+   "lugar": "hazor",
+   "inicio": 98,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 11:13",
+   "lugar": "hazor",
+   "inicio": 90,
+   "fin": 94
+  },
+  {
+   "ref": "Jos 11:16",
+   "lugar": "gosen-10-41",
+   "inicio": 104,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 11:17",
+   "lugar": "monte-halac",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 11:17",
+   "lugar": "seir",
+   "inicio": 40,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 11:17",
+   "lugar": "baal-gad",
+   "inicio": 52,
+   "fin": 60
+  },
+  {
+   "ref": "Jos 11:17",
+   "lugar": "monte-hermon",
+   "inicio": 110,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 11:19",
+   "lugar": "gabaon",
+   "inicio": 91,
+   "fin": 97
+  },
+  {
+   "ref": "Jos 11:21",
+   "lugar": "hebron",
+   "inicio": 79,
+   "fin": 85
+  },
+  {
+   "ref": "Jos 11:21",
+   "lugar": "debir",
+   "inicio": 90,
+   "fin": 95
+  },
+  {
+   "ref": "Jos 11:21",
+   "lugar": "anab",
+   "inicio": 102,
+   "fin": 106
+  },
+  {
+   "ref": "Jos 11:22",
+   "lugar": "gaza",
+   "inicio": 88,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 11:22",
+   "lugar": "gat",
+   "inicio": 97,
+   "fin": 101
+  },
+  {
+   "ref": "Jos 11:22",
+   "lugar": "asdod",
+   "inicio": 108,
+   "fin": 113
+  },
+  {
+   "ref": "Jos 12:1",
+   "lugar": "jordan",
+   "inicio": 112,
+   "fin": 118
+  },
+  {
+   "ref": "Jos 12:1",
+   "lugar": "arnon",
+   "inicio": 161,
+   "fin": 166
+  },
+  {
+   "ref": "Jos 12:1",
+   "lugar": "monte-hermon",
+   "inicio": 182,
+   "fin": 188
+  },
+  {
+   "ref": "Jos 12:2",
+   "lugar": "hesbon",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 12:2",
+   "lugar": "aroer",
+   "inicio": 70,
+   "fin": 75
+  },
+  {
+   "ref": "Jos 12:2",
+   "lugar": "arnon",
+   "inicio": 112,
+   "fin": 117
+  },
+  {
+   "ref": "Jos 12:2",
+   "lugar": "galaad",
+   "inicio": 162,
+   "fin": 168
+  },
+  {
+   "ref": "Jos 12:2",
+   "lugar": "jaboc",
+   "inicio": 186,
+   "fin": 191
+  },
+  {
+   "ref": "Jos 12:2",
+   "lugar": "amon",
+   "inicio": 220,
+   "fin": 225
+  },
+  {
+   "ref": "Jos 12:3",
+   "lugar": "mar-de-cineret",
+   "inicio": 28,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 12:3",
+   "lugar": "mar-salado",
+   "inicio": 91,
+   "fin": 101
+  },
+  {
+   "ref": "Jos 12:3",
+   "lugar": "bet-jesimot",
+   "inicio": 132,
+   "fin": 145
+  },
+  {
+   "ref": "Jos 12:3",
+   "lugar": "pisga",
+   "inicio": 196,
+   "fin": 201
+  },
+  {
+   "ref": "Jos 12:4",
+   "lugar": "basan",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 12:4",
+   "lugar": "astarot",
+   "inicio": 89,
+   "fin": 97
+  },
+  {
+   "ref": "Jos 12:4",
+   "lugar": "edrei",
+   "inicio": 103,
+   "fin": 108
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "monte-hermon",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "salca",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "basan",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "gesur",
+   "inicio": 85,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "maaca",
+   "inicio": 98,
+   "fin": 106
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "galaad",
+   "inicio": 122,
+   "fin": 128
+  },
+  {
+   "ref": "Jos 12:5",
+   "lugar": "hesbon",
+   "inicio": 154,
+   "fin": 160
+  },
+  {
+   "ref": "Jos 12:7",
+   "lugar": "jordan",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "Jos 12:7",
+   "lugar": "baal-gad",
+   "inicio": 121,
+   "fin": 129
+  },
+  {
+   "ref": "Jos 12:7",
+   "lugar": "monte-halac",
+   "inicio": 171,
+   "fin": 176
+  },
+  {
+   "ref": "Jos 12:7",
+   "lugar": "seir",
+   "inicio": 188,
+   "fin": 192
+  },
+  {
+   "ref": "Jos 12:9",
+   "lugar": "jerico",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 12:9",
+   "lugar": "hai",
+   "inicio": 33,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 12:9",
+   "lugar": "betel",
+   "inicio": 58,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 12:10",
+   "lugar": "jerusalen",
+   "inicio": 10,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 12:10",
+   "lugar": "hebron",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "Jos 12:11",
+   "lugar": "jarmut",
+   "inicio": 10,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 12:11",
+   "lugar": "laquis",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 12:12",
+   "lugar": "eglon",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 12:12",
+   "lugar": "gezer",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 12:13",
+   "lugar": "debir",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 12:13",
+   "lugar": "geder",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 12:14",
+   "lugar": "horma",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 12:14",
+   "lugar": "arad",
+   "inicio": 33,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 12:15",
+   "lugar": "libna-10-29",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 12:15",
+   "lugar": "adulam",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 12:16",
+   "lugar": "maceda",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 12:16",
+   "lugar": "betel",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 12:17",
+   "lugar": "tapua",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 12:17",
+   "lugar": "hefer",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 12:18",
+   "lugar": "afec",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 12:18",
+   "lugar": "lasaron",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 12:19",
+   "lugar": "madon",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 12:19",
+   "lugar": "hazor",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 12:20",
+   "lugar": "simrom-meron",
+   "inicio": 10,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 12:20",
+   "lugar": "acsaf",
+   "inicio": 40,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 12:21",
+   "lugar": "taanac",
+   "inicio": 10,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 12:21",
+   "lugar": "meguido",
+   "inicio": 35,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 12:22",
+   "lugar": "cedes",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 12:22",
+   "lugar": "jocneam",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 12:22",
+   "lugar": "carmel",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 12:23",
+   "lugar": "dor",
+   "inicio": 10,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 12:23",
+   "lugar": "dor",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 12:24",
+   "lugar": "tirsa",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 13:3",
+   "lugar": "sihor",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 13:3",
+   "lugar": "egipto",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 13:4",
+   "lugar": "mehara",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 13:4",
+   "lugar": "afec-13-4",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "Jos 13:5",
+   "lugar": "libano",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 13:5",
+   "lugar": "baal-gad",
+   "inicio": 76,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 13:5",
+   "lugar": "monte-hermon",
+   "inicio": 108,
+   "fin": 114
+  },
+  {
+   "ref": "Jos 13:5",
+   "lugar": "lebo-hamat",
+   "inicio": 132,
+   "fin": 138
+  },
+  {
+   "ref": "Jos 13:6",
+   "lugar": "libano",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 13:8",
+   "lugar": "jordan",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "Jos 13:9",
+   "lugar": "aroer",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 13:9",
+   "lugar": "arnon",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 13:9",
+   "lugar": "medeba",
+   "inicio": 118,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 13:9",
+   "lugar": "dibon",
+   "inicio": 132,
+   "fin": 137
+  },
+  {
+   "ref": "Jos 13:10",
+   "lugar": "hesbon",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Jos 13:10",
+   "lugar": "amon",
+   "inicio": 112,
+   "fin": 117
+  },
+  {
+   "ref": "Jos 13:11",
+   "lugar": "galaad",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 13:11",
+   "lugar": "gesur",
+   "inicio": 28,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 13:11",
+   "lugar": "maaca",
+   "inicio": 41,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 13:11",
+   "lugar": "monte-hermon",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 13:11",
+   "lugar": "basan",
+   "inicio": 98,
+   "fin": 103
+  },
+  {
+   "ref": "Jos 13:11",
+   "lugar": "salca",
+   "inicio": 110,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 13:12",
+   "lugar": "basan",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 13:12",
+   "lugar": "astarot",
+   "inicio": 47,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 13:12",
+   "lugar": "edrei",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 13:13",
+   "lugar": "gesur",
+   "inicio": 13,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 13:13",
+   "lugar": "maaca",
+   "inicio": 23,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 13:13",
+   "lugar": "gesur",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 13:13",
+   "lugar": "maaca",
+   "inicio": 79,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 13:16",
+   "lugar": "aroer",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 13:16",
+   "lugar": "arnon",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Jos 13:16",
+   "lugar": "medeba",
+   "inicio": 148,
+   "fin": 154
+  },
+  {
+   "ref": "Jos 13:17",
+   "lugar": "hesbon",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 13:17",
+   "lugar": "dibon",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 13:17",
+   "lugar": "bamot-baal",
+   "inicio": 63,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 13:17",
+   "lugar": "baal-meon",
+   "inicio": 78,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 13:18",
+   "lugar": "jahaza",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 13:18",
+   "lugar": "cademot",
+   "inicio": 10,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 13:18",
+   "lugar": "mefaat",
+   "inicio": 23,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 13:19",
+   "lugar": "quiriataim",
+   "inicio": 2,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 13:19",
+   "lugar": "sibma",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 13:19",
+   "lugar": "zeretsahar",
+   "inicio": 25,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 13:20",
+   "lugar": "bet-peor",
+   "inicio": 2,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 13:20",
+   "lugar": "bet-jesimot",
+   "inicio": 31,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 13:21",
+   "lugar": "hesbon",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 13:21",
+   "lugar": "madian",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 13:23",
+   "lugar": "jordan",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 13:25",
+   "lugar": "jazer",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 13:25",
+   "lugar": "galaad",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 13:25",
+   "lugar": "amon",
+   "inicio": 105,
+   "fin": 110
+  },
+  {
+   "ref": "Jos 13:25",
+   "lugar": "aroer-13-25",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 13:25",
+   "lugar": "raba-amon",
+   "inicio": 144,
+   "fin": 149
+  },
+  {
+   "ref": "Jos 13:26",
+   "lugar": "hesbon",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 13:26",
+   "lugar": "ramatmispe",
+   "inicio": 21,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 13:26",
+   "lugar": "betonim",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "Jos 13:26",
+   "lugar": "mahanaim",
+   "inicio": 53,
+   "fin": 61
+  },
+  {
+   "ref": "Jos 13:26",
+   "lugar": "debir-13-26",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "bet-haran",
+   "inicio": 16,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "bet-nimra",
+   "inicio": 29,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "sucot",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "safon",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "hesbon",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "jordan",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "mar-de-cineret",
+   "inicio": 145,
+   "fin": 161
+  },
+  {
+   "ref": "Jos 13:27",
+   "lugar": "jordan",
+   "inicio": 183,
+   "fin": 189
+  },
+  {
+   "ref": "Jos 13:30",
+   "lugar": "mahanaim",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 13:30",
+   "lugar": "basan",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 13:30",
+   "lugar": "basan",
+   "inicio": 79,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 13:30",
+   "lugar": "havot-jair",
+   "inicio": 98,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 13:30",
+   "lugar": "basan",
+   "inicio": 126,
+   "fin": 131
+  },
+  {
+   "ref": "Jos 13:31",
+   "lugar": "galaad",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 13:31",
+   "lugar": "astarot",
+   "inicio": 37,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 13:31",
+   "lugar": "edrei",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 13:31",
+   "lugar": "basan",
+   "inicio": 84,
+   "fin": 89
+  },
+  {
+   "ref": "Jos 13:32",
+   "lugar": "campos-de-moab",
+   "inicio": 49,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 13:32",
+   "lugar": "jordan",
+   "inicio": 86,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 13:32",
+   "lugar": "jerico",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 14:1",
+   "lugar": "canaan",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 14:3",
+   "lugar": "jordan",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 14:6",
+   "lugar": "gilgal",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 14:6",
+   "lugar": "cades",
+   "inicio": 147,
+   "fin": 152
+  },
+  {
+   "ref": "Jos 14:7",
+   "lugar": "cades",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "Jos 14:13",
+   "lugar": "hebron",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 14:14",
+   "lugar": "hebron",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 14:15",
+   "lugar": "hebron",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 14:15",
+   "lugar": "hebron",
+   "inicio": 29,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 15:1",
+   "lugar": "edom",
+   "inicio": 88,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 15:1",
+   "lugar": "desierto-de-zin",
+   "inicio": 110,
+   "fin": 113
+  },
+  {
+   "ref": "Jos 15:2",
+   "lugar": "mar-salado",
+   "inicio": 61,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 15:3",
+   "lugar": "acrabim",
+   "inicio": 41,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 15:3",
+   "lugar": "zin",
+   "inicio": 64,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 15:3",
+   "lugar": "cades",
+   "inicio": 102,
+   "fin": 107
+  },
+  {
+   "ref": "Jos 15:3",
+   "lugar": "hesron",
+   "inicio": 125,
+   "fin": 131
+  },
+  {
+   "ref": "Jos 15:3",
+   "lugar": "adar",
+   "inicio": 148,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 15:3",
+   "lugar": "carca",
+   "inicio": 168,
+   "fin": 173
+  },
+  {
+   "ref": "Jos 15:4",
+   "lugar": "azmon",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 15:4",
+   "lugar": "torrente-de-egipto",
+   "inicio": 35,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 15:5",
+   "lugar": "mar-salado",
+   "inicio": 29,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 15:5",
+   "lugar": "jordan",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 15:5",
+   "lugar": "jordan",
+   "inicio": 143,
+   "fin": 149
+  },
+  {
+   "ref": "Jos 15:6",
+   "lugar": "bet-hogla",
+   "inicio": 24,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 15:6",
+   "lugar": "bet-araba",
+   "inicio": 55,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 15:7",
+   "lugar": "debir-15-7",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 15:7",
+   "lugar": "valle-de-acor",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Jos 15:7",
+   "lugar": "gilgal-15-7",
+   "inicio": 84,
+   "fin": 90
+  },
+  {
+   "ref": "Jos 15:7",
+   "lugar": "adumin",
+   "inicio": 125,
+   "fin": 131
+  },
+  {
+   "ref": "Jos 15:7",
+   "lugar": "en-semes",
+   "inicio": 205,
+   "fin": 213
+  },
+  {
+   "ref": "Jos 15:7",
+   "lugar": "en-rogel",
+   "inicio": 237,
+   "fin": 242
+  },
+  {
+   "ref": "Jos 15:8",
+   "lugar": "valle-de-hinom",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Jos 15:8",
+   "lugar": "jerusalen",
+   "inicio": 93,
+   "fin": 102
+  },
+  {
+   "ref": "Jos 15:8",
+   "lugar": "valle-de-hinom",
+   "inicio": 182,
+   "fin": 188
+  },
+  {
+   "ref": "Jos 15:9",
+   "lugar": "neftoa",
+   "inicio": 79,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 15:9",
+   "lugar": "monte-efron",
+   "inicio": 122,
+   "fin": 128
+  },
+  {
+   "ref": "Jos 15:9",
+   "lugar": "baala",
+   "inicio": 164,
+   "fin": 169
+  },
+  {
+   "ref": "Jos 15:9",
+   "lugar": "quiriat-jearim",
+   "inicio": 182,
+   "fin": 197
+  },
+  {
+   "ref": "Jos 15:10",
+   "lugar": "baala",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 15:10",
+   "lugar": "monte-seir-juda",
+   "inicio": 70,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 15:10",
+   "lugar": "monte-jearim",
+   "inicio": 104,
+   "fin": 110
+  },
+  {
+   "ref": "Jos 15:10",
+   "lugar": "quesalon",
+   "inicio": 135,
+   "fin": 143
+  },
+  {
+   "ref": "Jos 15:10",
+   "lugar": "bet-semes",
+   "inicio": 159,
+   "fin": 169
+  },
+  {
+   "ref": "Jos 15:10",
+   "lugar": "timna",
+   "inicio": 180,
+   "fin": 185
+  },
+  {
+   "ref": "Jos 15:11",
+   "lugar": "ecron",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 15:11",
+   "lugar": "siqueron",
+   "inicio": 84,
+   "fin": 92
+  },
+  {
+   "ref": "Jos 15:11",
+   "lugar": "monte-baala",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "Jos 15:11",
+   "lugar": "jabneel",
+   "inicio": 133,
+   "fin": 140
+  },
+  {
+   "ref": "Jos 15:12",
+   "lugar": "mar-grande",
+   "inicio": 31,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 15:13",
+   "lugar": "hebron",
+   "inicio": 121,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 15:13",
+   "lugar": "hebron",
+   "inicio": 162,
+   "fin": 168
+  },
+  {
+   "ref": "Jos 15:15",
+   "lugar": "debir",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 15:15",
+   "lugar": "debir",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 15:21",
+   "lugar": "edom",
+   "inicio": 87,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 15:21",
+   "lugar": "cabseel",
+   "inicio": 105,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 15:21",
+   "lugar": "eder",
+   "inicio": 116,
+   "fin": 120
+  },
+  {
+   "ref": "Jos 15:21",
+   "lugar": "jagur",
+   "inicio": 124,
+   "fin": 129
+  },
+  {
+   "ref": "Jos 15:22",
+   "lugar": "cina",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 15:22",
+   "lugar": "dimona",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 15:22",
+   "lugar": "adada",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 15:23",
+   "lugar": "cedes-15-23",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:23",
+   "lugar": "hazor-15-23",
+   "inicio": 11,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 15:23",
+   "lugar": "itnan",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 15:24",
+   "lugar": "zif",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Jos 15:24",
+   "lugar": "telem",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 15:24",
+   "lugar": "bealot",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 15:25",
+   "lugar": "asor-hadata",
+   "inicio": 2,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 15:25",
+   "lugar": "queriot-hesron",
+   "inicio": 18,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 15:25",
+   "lugar": "hazor-15-25",
+   "inicio": 42,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 15:26",
+   "lugar": "amam",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Jos 15:26",
+   "lugar": "sema",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 15:26",
+   "lugar": "molada",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 15:27",
+   "lugar": "asar-gada",
+   "inicio": 2,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 15:27",
+   "lugar": "hesmon",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 15:27",
+   "lugar": "bet-pelet",
+   "inicio": 26,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 15:28",
+   "lugar": "hasar-sual",
+   "inicio": 2,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 15:28",
+   "lugar": "beerseba",
+   "inicio": 14,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 15:28",
+   "lugar": "bizotia",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 15:29",
+   "lugar": "baala-15-29",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 15:29",
+   "lugar": "iim",
+   "inicio": 9,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 15:29",
+   "lugar": "esem",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 15:30",
+   "lugar": "eltolad",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 15:30",
+   "lugar": "cesil",
+   "inicio": 13,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 15:30",
+   "lugar": "horma",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 15:31",
+   "lugar": "siclag",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:31",
+   "lugar": "madmana",
+   "inicio": 12,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 15:31",
+   "lugar": "sansana",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 15:32",
+   "lugar": "lebaot",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 15:32",
+   "lugar": "silim",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 15:32",
+   "lugar": "ain-15-32",
+   "inicio": 20,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 15:32",
+   "lugar": "rimon",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 15:33",
+   "lugar": "estaol",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 15:33",
+   "lugar": "sorea",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 15:33",
+   "lugar": "asena",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 15:34",
+   "lugar": "zanoa",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:34",
+   "lugar": "en-ganim",
+   "inicio": 11,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 15:34",
+   "lugar": "tapua-15-34",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 15:34",
+   "lugar": "enam",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 15:35",
+   "lugar": "jarmut",
+   "inicio": 0,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:35",
+   "lugar": "adulam",
+   "inicio": 12,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 15:35",
+   "lugar": "soco",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 15:35",
+   "lugar": "azeca",
+   "inicio": 30,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 15:36",
+   "lugar": "saraim",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:36",
+   "lugar": "aditaim",
+   "inicio": 12,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 15:36",
+   "lugar": "gedera",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 15:36",
+   "lugar": "gederotaim",
+   "inicio": 34,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 15:37",
+   "lugar": "senan",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 15:37",
+   "lugar": "hadasa",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 15:37",
+   "lugar": "migdalgad",
+   "inicio": 19,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 15:38",
+   "lugar": "dilan",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:38",
+   "lugar": "mizpa-15-38",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 15:38",
+   "lugar": "jocteel",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 15:39",
+   "lugar": "laquis",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 15:39",
+   "lugar": "boscat",
+   "inicio": 10,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 15:39",
+   "lugar": "eglon",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 15:40",
+   "lugar": "cabon",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:40",
+   "lugar": "lamas",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 15:40",
+   "lugar": "quitlis",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 15:41",
+   "lugar": "gedero",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 15:41",
+   "lugar": "bet-dagon",
+   "inicio": 11,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 15:41",
+   "lugar": "naama",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 15:41",
+   "lugar": "maceda",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Jos 15:42",
+   "lugar": "libna-10-29",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 15:42",
+   "lugar": "eter",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 15:42",
+   "lugar": "asan",
+   "inicio": 18,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 15:43",
+   "lugar": "jifta",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:43",
+   "lugar": "asna",
+   "inicio": 12,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 15:43",
+   "lugar": "nesib",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 15:44",
+   "lugar": "ceila",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:44",
+   "lugar": "aczib",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 15:44",
+   "lugar": "maresa",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 15:45",
+   "lugar": "ecron",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 15:46",
+   "lugar": "ecron",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 15:46",
+   "lugar": "asdod",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 15:47",
+   "lugar": "asdod",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 15:47",
+   "lugar": "gaza",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 15:47",
+   "lugar": "torrente-de-egipto",
+   "inicio": 77,
+   "fin": 90
+  },
+  {
+   "ref": "Jos 15:47",
+   "lugar": "mar-grande",
+   "inicio": 97,
+   "fin": 105
+  },
+  {
+   "ref": "Jos 15:48",
+   "lugar": "samir",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 15:48",
+   "lugar": "jatir",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 15:48",
+   "lugar": "sucot-15-48",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 15:49",
+   "lugar": "dana",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:49",
+   "lugar": "debir",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 15:50",
+   "lugar": "anab",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 15:50",
+   "lugar": "estemo",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 15:50",
+   "lugar": "anim",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 15:51",
+   "lugar": "gosen-15-51",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:51",
+   "lugar": "olon",
+   "inicio": 11,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 15:51",
+   "lugar": "gilo",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 15:52",
+   "lugar": "arab",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Jos 15:52",
+   "lugar": "duma",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 15:52",
+   "lugar": "esan",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 15:53",
+   "lugar": "janum",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:53",
+   "lugar": "bet-tapua",
+   "inicio": 11,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 15:53",
+   "lugar": "afeca",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 15:54",
+   "lugar": "humta",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 15:54",
+   "lugar": "hebron",
+   "inicio": 11,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 15:54",
+   "lugar": "hebron",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 15:54",
+   "lugar": "sior",
+   "inicio": 43,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 15:55",
+   "lugar": "maon",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Jos 15:55",
+   "lugar": "carmel-15-55",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 15:55",
+   "lugar": "zif-15-55",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 15:55",
+   "lugar": "juta",
+   "inicio": 24,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 15:56",
+   "lugar": "jezreel-juda",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:56",
+   "lugar": "jocdeam",
+   "inicio": 10,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 15:56",
+   "lugar": "zanoa-15-56",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 15:57",
+   "lugar": "cain",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Jos 15:57",
+   "lugar": "gibea",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 15:57",
+   "lugar": "timna-15-57",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 15:58",
+   "lugar": "halhul",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 15:58",
+   "lugar": "betfur",
+   "inicio": 10,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 15:58",
+   "lugar": "gedor",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 15:59",
+   "lugar": "maarat",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 15:59",
+   "lugar": "bet-anot",
+   "inicio": 13,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 15:59",
+   "lugar": "eltecon",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 15:60",
+   "lugar": "quiriat-jearim",
+   "inicio": 0,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:60",
+   "lugar": "quiriat-jearim",
+   "inicio": 22,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 15:60",
+   "lugar": "raba",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 15:61",
+   "lugar": "bet-araba",
+   "inicio": 16,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 15:61",
+   "lugar": "midin",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 15:61",
+   "lugar": "secaca",
+   "inicio": 38,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 15:62",
+   "lugar": "nibsan",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 15:62",
+   "lugar": "engedi",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 15:63",
+   "lugar": "jerusalen",
+   "inicio": 36,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 15:63",
+   "lugar": "jerusalen",
+   "inicio": 120,
+   "fin": 129
+  },
+  {
+   "ref": "Jos 16:1",
+   "lugar": "jordan",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 16:1",
+   "lugar": "jerico",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 16:1",
+   "lugar": "jerico",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 16:1",
+   "lugar": "jerico",
+   "inicio": 134,
+   "fin": 140
+  },
+  {
+   "ref": "Jos 16:1",
+   "lugar": "betel",
+   "inicio": 153,
+   "fin": 160
+  },
+  {
+   "ref": "Jos 16:2",
+   "lugar": "betel",
+   "inicio": 5,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 16:2",
+   "lugar": "luz",
+   "inicio": 20,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 16:2",
+   "lugar": "atarot-16-2",
+   "inicio": 55,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 16:3",
+   "lugar": "bet-horon-de-abajo",
+   "inicio": 76,
+   "fin": 97
+  },
+  {
+   "ref": "Jos 16:3",
+   "lugar": "gezer",
+   "inicio": 107,
+   "fin": 112
+  },
+  {
+   "ref": "Jos 16:5",
+   "lugar": "atarot-adar",
+   "inicio": 118,
+   "fin": 131
+  },
+  {
+   "ref": "Jos 16:5",
+   "lugar": "bet-horon-de-arriba",
+   "inicio": 138,
+   "fin": 160
+  },
+  {
+   "ref": "Jos 16:6",
+   "lugar": "micmetat",
+   "inicio": 34,
+   "fin": 43
+  },
+  {
+   "ref": "Jos 16:6",
+   "lugar": "tanat-silo",
+   "inicio": 98,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 16:6",
+   "lugar": "janoa",
+   "inicio": 140,
+   "fin": 145
+  },
+  {
+   "ref": "Jos 16:7",
+   "lugar": "janoa",
+   "inicio": 5,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 16:7",
+   "lugar": "atarot-16-7",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 16:7",
+   "lugar": "naarata",
+   "inicio": 36,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 16:7",
+   "lugar": "jerico",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 16:7",
+   "lugar": "jordan",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "Jos 16:8",
+   "lugar": "tapua",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 16:8",
+   "lugar": "cana",
+   "inicio": 57,
+   "fin": 61
+  },
+  {
+   "ref": "Jos 16:10",
+   "lugar": "gezer",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 17:1",
+   "lugar": "galaad",
+   "inicio": 165,
+   "fin": 171
+  },
+  {
+   "ref": "Jos 17:1",
+   "lugar": "basan",
+   "inicio": 176,
+   "fin": 181
+  },
+  {
+   "ref": "Jos 17:5",
+   "lugar": "galaad",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Jos 17:5",
+   "lugar": "basan",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 17:5",
+   "lugar": "jordan",
+   "inicio": 104,
+   "fin": 110
+  },
+  {
+   "ref": "Jos 17:6",
+   "lugar": "galaad",
+   "inicio": 79,
+   "fin": 85
+  },
+  {
+   "ref": "Jos 17:7",
+   "lugar": "micmetat",
+   "inicio": 45,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 17:7",
+   "lugar": "siquem",
+   "inicio": 80,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 17:7",
+   "lugar": "en-tapua",
+   "inicio": 146,
+   "fin": 152
+  },
+  {
+   "ref": "Jos 17:8",
+   "lugar": "tapua",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 17:8",
+   "lugar": "tapua",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 17:9",
+   "lugar": "cana",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 17:11",
+   "lugar": "bet-san",
+   "inicio": 45,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 17:11",
+   "lugar": "ibleam",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 17:11",
+   "lugar": "dor",
+   "inicio": 110,
+   "fin": 113
+  },
+  {
+   "ref": "Jos 17:11",
+   "lugar": "endor",
+   "inicio": 147,
+   "fin": 152
+  },
+  {
+   "ref": "Jos 17:11",
+   "lugar": "taanac",
+   "inicio": 186,
+   "fin": 193
+  },
+  {
+   "ref": "Jos 17:11",
+   "lugar": "meguido",
+   "inicio": 227,
+   "fin": 234
+  },
+  {
+   "ref": "Jos 17:16",
+   "lugar": "bet-san",
+   "inicio": 168,
+   "fin": 176
+  },
+  {
+   "ref": "Jos 17:16",
+   "lugar": "valle-de-jezreel",
+   "inicio": 225,
+   "fin": 232
+  },
+  {
+   "ref": "Jos 18:1",
+   "lugar": "siloh",
+   "inicio": 58,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 18:7",
+   "lugar": "jordan",
+   "inicio": 209,
+   "fin": 215
+  },
+  {
+   "ref": "Jos 18:8",
+   "lugar": "siloh",
+   "inicio": 222,
+   "fin": 226
+  },
+  {
+   "ref": "Jos 18:9",
+   "lugar": "siloh",
+   "inicio": 137,
+   "fin": 141
+  },
+  {
+   "ref": "Jos 18:10",
+   "lugar": "siloh",
+   "inicio": 50,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 18:12",
+   "lugar": "jordan",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 18:12",
+   "lugar": "jerico",
+   "inicio": 93,
+   "fin": 99
+  },
+  {
+   "ref": "Jos 18:12",
+   "lugar": "bet-aven",
+   "inicio": 183,
+   "fin": 192
+  },
+  {
+   "ref": "Jos 18:13",
+   "lugar": "luz",
+   "inicio": 31,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 18:13",
+   "lugar": "luz",
+   "inicio": 51,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 18:13",
+   "lugar": "betel",
+   "inicio": 64,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 18:13",
+   "lugar": "atarot-adar",
+   "inicio": 120,
+   "fin": 133
+  },
+  {
+   "ref": "Jos 18:13",
+   "lugar": "bet-horon-de-abajo",
+   "inicio": 167,
+   "fin": 188
+  },
+  {
+   "ref": "Jos 18:14",
+   "lugar": "bet-horon",
+   "inicio": 100,
+   "fin": 109
+  },
+  {
+   "ref": "Jos 18:14",
+   "lugar": "quiriat-jearim",
+   "inicio": 141,
+   "fin": 149
+  },
+  {
+   "ref": "Jos 18:14",
+   "lugar": "quiriat-jearim",
+   "inicio": 163,
+   "fin": 178
+  },
+  {
+   "ref": "Jos 18:15",
+   "lugar": "quiriat-jearim",
+   "inicio": 43,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 18:15",
+   "lugar": "neftoa",
+   "inicio": 127,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 18:16",
+   "lugar": "valle-de-hinom",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Jos 18:16",
+   "lugar": "valle-de-hinom",
+   "inicio": 176,
+   "fin": 182
+  },
+  {
+   "ref": "Jos 18:16",
+   "lugar": "en-rogel",
+   "inicio": 254,
+   "fin": 259
+  },
+  {
+   "ref": "Jos 18:17",
+   "lugar": "en-semes",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 18:17",
+   "lugar": "gelilot",
+   "inicio": 55,
+   "fin": 63
+  },
+  {
+   "ref": "Jos 18:17",
+   "lugar": "adumin",
+   "inicio": 98,
+   "fin": 105
+  },
+  {
+   "ref": "Jos 18:19",
+   "lugar": "bet-hogla",
+   "inicio": 44,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 18:19",
+   "lugar": "mar-salado",
+   "inicio": 114,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 18:19",
+   "lugar": "jordan",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "Jos 18:20",
+   "lugar": "jordan",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 18:21",
+   "lugar": "jerico",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 18:21",
+   "lugar": "bet-hogla",
+   "inicio": 84,
+   "fin": 94
+  },
+  {
+   "ref": "Jos 18:21",
+   "lugar": "emec-casis",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 18:22",
+   "lugar": "bet-araba",
+   "inicio": 0,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 18:22",
+   "lugar": "samaraim",
+   "inicio": 12,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 18:22",
+   "lugar": "betel",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 18:23",
+   "lugar": "avim",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 18:23",
+   "lugar": "para",
+   "inicio": 10,
+   "fin": 14
+  },
+  {
+   "ref": "Jos 18:23",
+   "lugar": "ofra",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 18:24",
+   "lugar": "cefar-hamonai",
+   "inicio": 2,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 18:24",
+   "lugar": "ofni",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 18:24",
+   "lugar": "gaba",
+   "inicio": 28,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 18:25",
+   "lugar": "gabaon",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 18:25",
+   "lugar": "rama",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 18:25",
+   "lugar": "beerot",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 18:26",
+   "lugar": "mizpa-18-26",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 18:26",
+   "lugar": "cafira",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 18:26",
+   "lugar": "moza",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 18:27",
+   "lugar": "recom",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 18:27",
+   "lugar": "irpeel",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 18:27",
+   "lugar": "tarala",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 18:28",
+   "lugar": "sela",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 18:28",
+   "lugar": "elef",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Jos 18:28",
+   "lugar": "jebus",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 18:28",
+   "lugar": "jerusalen",
+   "inicio": 29,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 18:28",
+   "lugar": "gibeat",
+   "inicio": 40,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 18:28",
+   "lugar": "quiriat-jearim",
+   "inicio": 51,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 19:2",
+   "lugar": "beerseba",
+   "inicio": 27,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 19:2",
+   "lugar": "seba",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Jos 19:2",
+   "lugar": "molada",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 19:3",
+   "lugar": "hasar-sual",
+   "inicio": 0,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 19:3",
+   "lugar": "bala",
+   "inicio": 12,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 19:3",
+   "lugar": "esem",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 19:4",
+   "lugar": "eltolad",
+   "inicio": 0,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 19:4",
+   "lugar": "betul",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 19:4",
+   "lugar": "horma",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 19:5",
+   "lugar": "siclag",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 19:5",
+   "lugar": "bet-marcabot",
+   "inicio": 8,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 19:5",
+   "lugar": "hasar-susa",
+   "inicio": 27,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 19:6",
+   "lugar": "bet-lebaot",
+   "inicio": 0,
+   "fin": 12
+  },
+  {
+   "ref": "Jos 19:6",
+   "lugar": "saruhen",
+   "inicio": 16,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 19:7",
+   "lugar": "ain-15-32",
+   "inicio": 0,
+   "fin": 3
+  },
+  {
+   "ref": "Jos 19:7",
+   "lugar": "rimon",
+   "inicio": 5,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 19:7",
+   "lugar": "eter-19-7",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "Jos 19:7",
+   "lugar": "asan",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Jos 19:8",
+   "lugar": "baalat-beer",
+   "inicio": 65,
+   "fin": 77
+  },
+  {
+   "ref": "Jos 19:8",
+   "lugar": "ramat",
+   "inicio": 88,
+   "fin": 93
+  },
+  {
+   "ref": "Jos 19:10",
+   "lugar": "sarid",
+   "inicio": 111,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 19:11",
+   "lugar": "merala",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 19:11",
+   "lugar": "dabe-set",
+   "inicio": 61,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 19:11",
+   "lugar": "jocneam",
+   "inicio": 121,
+   "fin": 128
+  },
+  {
+   "ref": "Jos 19:12",
+   "lugar": "sarid",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 19:12",
+   "lugar": "quisilot-tabor",
+   "inicio": 67,
+   "fin": 82
+  },
+  {
+   "ref": "Jos 19:12",
+   "lugar": "dabrat",
+   "inicio": 91,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 19:12",
+   "lugar": "jafia",
+   "inicio": 109,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 19:13",
+   "lugar": "git-hefer",
+   "inicio": 43,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 19:13",
+   "lugar": "ita-cazin",
+   "inicio": 59,
+   "fin": 69
+  },
+  {
+   "ref": "Jos 19:13",
+   "lugar": "rimon-19-13",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 19:13",
+   "lugar": "nea",
+   "inicio": 96,
+   "fin": 99
+  },
+  {
+   "ref": "Jos 19:14",
+   "lugar": "hanaton",
+   "inicio": 42,
+   "fin": 49
+  },
+  {
+   "ref": "Jos 19:14",
+   "lugar": "valle-de-jefte-el",
+   "inicio": 80,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 19:15",
+   "lugar": "cata",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 19:15",
+   "lugar": "naalal",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 19:15",
+   "lugar": "simron",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 19:15",
+   "lugar": "ideala",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 19:15",
+   "lugar": "bet-lehem",
+   "inicio": 50,
+   "fin": 60
+  },
+  {
+   "ref": "Jos 19:18",
+   "lugar": "jezreel",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 19:18",
+   "lugar": "quesullot",
+   "inicio": 27,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 19:18",
+   "lugar": "sunem",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Jos 19:19",
+   "lugar": "hafaraim",
+   "inicio": 2,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 19:19",
+   "lugar": "sion-de-isacar",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 19:19",
+   "lugar": "anaarat",
+   "inicio": 23,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 19:20",
+   "lugar": "rabit",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 19:20",
+   "lugar": "quision",
+   "inicio": 12,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 19:20",
+   "lugar": "ebes",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 19:21",
+   "lugar": "ramet",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 19:21",
+   "lugar": "en-ganim-19-21",
+   "inicio": 12,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 19:21",
+   "lugar": "en-hada",
+   "inicio": 25,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 19:21",
+   "lugar": "bet-pases",
+   "inicio": 36,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 19:22",
+   "lugar": "tabor",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 19:22",
+   "lugar": "sahasim",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "Jos 19:22",
+   "lugar": "bet-semes-19-22",
+   "inicio": 47,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 19:22",
+   "lugar": "jordan",
+   "inicio": 80,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 19:25",
+   "lugar": "helcat",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "Jos 19:25",
+   "lugar": "hali",
+   "inicio": 28,
+   "fin": 32
+  },
+  {
+   "ref": "Jos 19:25",
+   "lugar": "beten",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 19:25",
+   "lugar": "acsaf",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Jos 19:26",
+   "lugar": "alamelec",
+   "inicio": 2,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 19:26",
+   "lugar": "amead",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 19:26",
+   "lugar": "miseal",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 19:26",
+   "lugar": "carmel",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Jos 19:26",
+   "lugar": "sihor-libnat",
+   "inicio": 71,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 19:27",
+   "lugar": "bet-dagon-19-27",
+   "inicio": 34,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 19:27",
+   "lugar": "valle-de-jefte-el",
+   "inicio": 77,
+   "fin": 84
+  },
+  {
+   "ref": "Jos 19:27",
+   "lugar": "bet-emec",
+   "inicio": 97,
+   "fin": 106
+  },
+  {
+   "ref": "Jos 19:27",
+   "lugar": "nehiel",
+   "inicio": 112,
+   "fin": 118
+  },
+  {
+   "ref": "Jos 19:27",
+   "lugar": "cabul",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "Jos 19:28",
+   "lugar": "ebron",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 19:28",
+   "lugar": "rehob-19-28",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 19:28",
+   "lugar": "hamon",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 19:28",
+   "lugar": "cana-19-28",
+   "inicio": 42,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 19:28",
+   "lugar": "sidon",
+   "inicio": 62,
+   "fin": 67
+  },
+  {
+   "ref": "Jos 19:29",
+   "lugar": "tiro",
+   "inicio": 68,
+   "fin": 72
+  },
+  {
+   "ref": "Jos 19:29",
+   "lugar": "hosa",
+   "inicio": 97,
+   "fin": 101
+  },
+  {
+   "ref": "Jos 19:29",
+   "lugar": "aczib-19-29",
+   "inicio": 142,
+   "fin": 148
+  },
+  {
+   "ref": "Jos 19:30",
+   "lugar": "uma",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 19:30",
+   "lugar": "afec-19-30",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 19:30",
+   "lugar": "rehob-19-30",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 19:33",
+   "lugar": "helef",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 19:33",
+   "lugar": "allon-saananim",
+   "inicio": 33,
+   "fin": 47
+  },
+  {
+   "ref": "Jos 19:33",
+   "lugar": "adami-neceb",
+   "inicio": 51,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 19:33",
+   "lugar": "jabneel-19-33",
+   "inicio": 66,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 19:33",
+   "lugar": "lacum",
+   "inicio": 81,
+   "fin": 86
+  },
+  {
+   "ref": "Jos 19:33",
+   "lugar": "jordan",
+   "inicio": 98,
+   "fin": 104
+  },
+  {
+   "ref": "Jos 19:34",
+   "lugar": "aznot-tabor",
+   "inicio": 55,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 19:34",
+   "lugar": "hucuca",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Jos 19:34",
+   "lugar": "jordan",
+   "inicio": 173,
+   "fin": 179
+  },
+  {
+   "ref": "Jos 19:35",
+   "lugar": "sidim",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 19:35",
+   "lugar": "ser",
+   "inicio": 35,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 19:35",
+   "lugar": "hamat",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Jos 19:35",
+   "lugar": "racat",
+   "inicio": 50,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 19:35",
+   "lugar": "cineret",
+   "inicio": 61,
+   "fin": 70
+  },
+  {
+   "ref": "Jos 19:36",
+   "lugar": "adama",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 19:36",
+   "lugar": "rama-19-36",
+   "inicio": 11,
+   "fin": 15
+  },
+  {
+   "ref": "Jos 19:36",
+   "lugar": "hazor",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "Jos 19:37",
+   "lugar": "cedes-de-neftali",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 19:37",
+   "lugar": "edrei-19-37",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Jos 19:37",
+   "lugar": "en-hasor",
+   "inicio": 20,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 19:38",
+   "lugar": "iron",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 19:38",
+   "lugar": "migdalel",
+   "inicio": 10,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 19:38",
+   "lugar": "horem",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 19:38",
+   "lugar": "bet-anat",
+   "inicio": 31,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 19:38",
+   "lugar": "bet-semes-19-38",
+   "inicio": 45,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 19:41",
+   "lugar": "sorea",
+   "inicio": 32,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 19:41",
+   "lugar": "estaol",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 19:41",
+   "lugar": "ir-semes",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 19:42",
+   "lugar": "saalabin",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 19:42",
+   "lugar": "ajalon",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Jos 19:42",
+   "lugar": "jetla",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 19:43",
+   "lugar": "elon",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 19:43",
+   "lugar": "timna",
+   "inicio": 10,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 19:43",
+   "lugar": "ecron",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Jos 19:44",
+   "lugar": "elteque",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 19:44",
+   "lugar": "gibeton",
+   "inicio": 11,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 19:44",
+   "lugar": "baalat",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 19:45",
+   "lugar": "jehud",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Jos 19:45",
+   "lugar": "bene-berac",
+   "inicio": 11,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 19:45",
+   "lugar": "gat-rimon",
+   "inicio": 25,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 19:46",
+   "lugar": "mejarcon",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 19:46",
+   "lugar": "racon",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 19:46",
+   "lugar": "jope",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 19:47",
+   "lugar": "dan",
+   "inicio": 188,
+   "fin": 191
+  },
+  {
+   "ref": "Jos 19:50",
+   "lugar": "timnat-sera",
+   "inicio": 62,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 19:51",
+   "lugar": "siloh",
+   "inicio": 174,
+   "fin": 178
+  },
+  {
+   "ref": "Jos 20:7",
+   "lugar": "cedes-de-neftali",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Jos 20:7",
+   "lugar": "galilea",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "Jos 20:7",
+   "lugar": "siquem",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 20:7",
+   "lugar": "hebron",
+   "inicio": 103,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 20:7",
+   "lugar": "hebron",
+   "inicio": 125,
+   "fin": 131
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "jordan",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "jerico",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "beser",
+   "inicio": 65,
+   "fin": 70
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "ramot-galaad",
+   "inicio": 127,
+   "fin": 133
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "galaad",
+   "inicio": 137,
+   "fin": 143
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "golan",
+   "inicio": 168,
+   "fin": 174
+  },
+  {
+   "ref": "Jos 20:8",
+   "lugar": "basan",
+   "inicio": 178,
+   "fin": 183
+  },
+  {
+   "ref": "Jos 21:2",
+   "lugar": "siloh",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Jos 21:2",
+   "lugar": "canaan",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Jos 21:6",
+   "lugar": "basan",
+   "inicio": 151,
+   "fin": 156
+  },
+  {
+   "ref": "Jos 21:11",
+   "lugar": "hebron",
+   "inicio": 20,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 21:11",
+   "lugar": "hebron",
+   "inicio": 65,
+   "fin": 71
+  },
+  {
+   "ref": "Jos 21:13",
+   "lugar": "hebron",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Jos 21:13",
+   "lugar": "libna-10-29",
+   "inicio": 110,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 21:14",
+   "lugar": "jatir",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 21:14",
+   "lugar": "estemo",
+   "inicio": 31,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 21:15",
+   "lugar": "debir",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Jos 21:16",
+   "lugar": "ain-21-16",
+   "inicio": 2,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 21:16",
+   "lugar": "juta",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Jos 21:16",
+   "lugar": "bet-semes",
+   "inicio": 50,
+   "fin": 60
+  },
+  {
+   "ref": "Jos 21:17",
+   "lugar": "gabaon",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 21:17",
+   "lugar": "geba",
+   "inicio": 54,
+   "fin": 58
+  },
+  {
+   "ref": "Jos 21:18",
+   "lugar": "anatot",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 21:18",
+   "lugar": "almon",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Jos 21:21",
+   "lugar": "siquem",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Jos 21:21",
+   "lugar": "gezer",
+   "inicio": 103,
+   "fin": 108
+  },
+  {
+   "ref": "Jos 21:22",
+   "lugar": "quibsaim",
+   "inicio": 4,
+   "fin": 11
+  },
+  {
+   "ref": "Jos 21:22",
+   "lugar": "bet-horon",
+   "inicio": 32,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 21:23",
+   "lugar": "elteque",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 21:23",
+   "lugar": "gibeton",
+   "inicio": 49,
+   "fin": 57
+  },
+  {
+   "ref": "Jos 21:24",
+   "lugar": "ajalon",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Jos 21:24",
+   "lugar": "gat-rimon",
+   "inicio": 27,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 21:25",
+   "lugar": "taanac",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "Jos 21:25",
+   "lugar": "gat-rimon-21-25",
+   "inicio": 62,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 21:27",
+   "lugar": "golan",
+   "inicio": 135,
+   "fin": 141
+  },
+  {
+   "ref": "Jos 21:27",
+   "lugar": "basan",
+   "inicio": 145,
+   "fin": 150
+  },
+  {
+   "ref": "Jos 21:27",
+   "lugar": "beestera",
+   "inicio": 171,
+   "fin": 176
+  },
+  {
+   "ref": "Jos 21:28",
+   "lugar": "quision",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 21:28",
+   "lugar": "dabrat",
+   "inicio": 54,
+   "fin": 62
+  },
+  {
+   "ref": "Jos 21:29",
+   "lugar": "jarmut-21-29",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "Jos 21:29",
+   "lugar": "en-ganim-19-21",
+   "inicio": 30,
+   "fin": 39
+  },
+  {
+   "ref": "Jos 21:30",
+   "lugar": "miseal",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 21:30",
+   "lugar": "abdon",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Jos 21:31",
+   "lugar": "helcat",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 21:31",
+   "lugar": "rehob-19-30",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 21:32",
+   "lugar": "cedes",
+   "inicio": 69,
+   "fin": 74
+  },
+  {
+   "ref": "Jos 21:32",
+   "lugar": "galilea",
+   "inicio": 78,
+   "fin": 85
+  },
+  {
+   "ref": "Jos 21:32",
+   "lugar": "hamot-dor",
+   "inicio": 104,
+   "fin": 115
+  },
+  {
+   "ref": "Jos 21:32",
+   "lugar": "cartan",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "Jos 21:34",
+   "lugar": "jocneam",
+   "inicio": 100,
+   "fin": 107
+  },
+  {
+   "ref": "Jos 21:34",
+   "lugar": "carta",
+   "inicio": 124,
+   "fin": 130
+  },
+  {
+   "ref": "Jos 21:35",
+   "lugar": "dimna",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Jos 21:35",
+   "lugar": "naalal",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "Jos 21:36",
+   "lugar": "beser",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Jos 21:36",
+   "lugar": "jahaza",
+   "inicio": 50,
+   "fin": 54
+  },
+  {
+   "ref": "Jos 21:37",
+   "lugar": "cademot",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Jos 21:37",
+   "lugar": "mefaat",
+   "inicio": 29,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 21:38",
+   "lugar": "ramot-galaad",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "Jos 21:38",
+   "lugar": "galaad",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Jos 21:38",
+   "lugar": "mahanaim",
+   "inicio": 95,
+   "fin": 103
+  },
+  {
+   "ref": "Jos 21:39",
+   "lugar": "hesbon",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Jos 21:39",
+   "lugar": "jazer",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Jos 22:4",
+   "lugar": "jordan",
+   "inicio": 228,
+   "fin": 234
+  },
+  {
+   "ref": "Jos 22:7",
+   "lugar": "basan",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Jos 22:7",
+   "lugar": "jordan",
+   "inicio": 155,
+   "fin": 161
+  },
+  {
+   "ref": "Jos 22:9",
+   "lugar": "siloh",
+   "inicio": 124,
+   "fin": 128
+  },
+  {
+   "ref": "Jos 22:9",
+   "lugar": "canaan",
+   "inicio": 155,
+   "fin": 161
+  },
+  {
+   "ref": "Jos 22:9",
+   "lugar": "galaad",
+   "inicio": 186,
+   "fin": 192
+  },
+  {
+   "ref": "Jos 22:10",
+   "lugar": "jordan",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Jos 22:10",
+   "lugar": "canaan",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Jos 22:10",
+   "lugar": "jordan",
+   "inicio": 173,
+   "fin": 179
+  },
+  {
+   "ref": "Jos 22:11",
+   "lugar": "canaan",
+   "inicio": 158,
+   "fin": 164
+  },
+  {
+   "ref": "Jos 22:11",
+   "lugar": "jordan",
+   "inicio": 186,
+   "fin": 192
+  },
+  {
+   "ref": "Jos 22:12",
+   "lugar": "siloh",
+   "inicio": 96,
+   "fin": 100
+  },
+  {
+   "ref": "Jos 22:13",
+   "lugar": "galaad",
+   "inicio": 119,
+   "fin": 125
+  },
+  {
+   "ref": "Jos 22:15",
+   "lugar": "galaad",
+   "inicio": 110,
+   "fin": 116
+  },
+  {
+   "ref": "Jos 22:17",
+   "lugar": "peor",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 22:25",
+   "lugar": "jordan",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 22:32",
+   "lugar": "galaad",
+   "inicio": 137,
+   "fin": 143
+  },
+  {
+   "ref": "Jos 22:32",
+   "lugar": "canaan",
+   "inicio": 159,
+   "fin": 165
+  },
+  {
+   "ref": "Jos 23:4",
+   "lugar": "jordan",
+   "inicio": 133,
+   "fin": 139
+  },
+  {
+   "ref": "Jos 23:4",
+   "lugar": "mar-grande",
+   "inicio": 149,
+   "fin": 157
+  },
+  {
+   "ref": "Jos 24:1",
+   "lugar": "siquem",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "Jos 24:3",
+   "lugar": "canaan",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "Jos 24:4",
+   "lugar": "seir",
+   "inicio": 55,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 24:4",
+   "lugar": "egipto",
+   "inicio": 115,
+   "fin": 121
+  },
+  {
+   "ref": "Jos 24:5",
+   "lugar": "egipto",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Jos 24:6",
+   "lugar": "egipto",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "Jos 24:6",
+   "lugar": "mar-rojo",
+   "inicio": 113,
+   "fin": 124
+  },
+  {
+   "ref": "Jos 24:7",
+   "lugar": "egipto",
+   "inicio": 172,
+   "fin": 178
+  },
+  {
+   "ref": "Jos 24:8",
+   "lugar": "jordan",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Jos 24:11",
+   "lugar": "jordan",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "Jos 24:11",
+   "lugar": "jerico",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Jos 24:11",
+   "lugar": "jerico",
+   "inicio": 59,
+   "fin": 65
+  },
+  {
+   "ref": "Jos 24:14",
+   "lugar": "egipto",
+   "inicio": 168,
+   "fin": 174
+  },
+  {
+   "ref": "Jos 24:17",
+   "lugar": "egipto",
+   "inicio": 93,
+   "fin": 99
+  },
+  {
+   "ref": "Jos 24:25",
+   "lugar": "siquem",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "Jos 24:30",
+   "lugar": "timnat-sera",
+   "inicio": 47,
+   "fin": 59
+  },
+  {
+   "ref": "Jos 24:30",
+   "lugar": "gaas",
+   "inicio": 116,
+   "fin": 120
+  },
+  {
+   "ref": "Jos 24:32",
+   "lugar": "siquem",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Jos 24:32",
+   "lugar": "egipto",
+   "inicio": 83,
+   "fin": 89
   }
  ],
  "cronologia": {
@@ -87989,7 +112443,8 @@ window.BIBLIA_DATOS = {
    "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas.",
    "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7.",
    "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como un año después de la salida, igual que Ex 40:17.",
-   "Deuteronomio fecha los discursos de Moab desde la salida (Dt 1:3, «á los cuarenta años», mes undécimo); la muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año."
+   "Deuteronomio fecha los discursos de Moab desde la salida (Dt 1:3, «á los cuarenta años», mes undécimo); la muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año.",
+   "Josué: el paso del Jordán (Jos 4:19, «el diez del mes primero») se pone en el año siguiente al de Dt 1:3 (mes undécimo + treinta días de luto, Dt 34:8). La edad de Caleb (40 en Jos 14:7, 85 en Jos 14:10, «cuarenta y cinco años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año."
   ],
   "combinaciones": [
    {
@@ -90784,6 +115239,163 @@ window.BIBLIA_DATOS = {
     "nota": "El texto no da el año de su muerte: Dt 1:3 sitúa los discursos en el mes undécimo del año cuarenta y Dt 34:8 da treinta días de luto; se toma el mismo año del cálculo. TM: 80 años en Ex 7:7 + 40 = 120, lo que dicen Dt 31:2 y Dt 34:7. LXX: 80 + 39 = 119 frente a 120 en Dt 34:7; la diferencia de un año cabe en lo que el cálculo no cuenta (Ex 7:7 ocurre antes de la salida)."
    },
    {
+    "id": "ev-paso-jordan",
+    "titulo": "Israel pasa el Jordán y acampa en Gilgal",
+    "tipo": "evento",
+    "ref": "Jos 4:19",
+    "pasaje": "jos-07",
+    "personas": [
+     "Joshua_1"
+    ],
+    "depende_de": "ev-discursos-moab",
+    "pasos": [
+     {
+      "texto": "Dt 1:3 es el mes undécimo; con los treinta días de luto (Dt 34:8), el «mes primero» de Jos 4:19 es el del año siguiente: se suma 1",
+      "signo": 1,
+      "ref": "Jos 4:19",
+      "convencion": true
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2709,
+     "TM|tare70|sem2|canaan": 2494,
+     "TM|tare70|noe500|egipto": 2707,
+     "TM|tare70|noe500|canaan": 2492,
+     "TM|tare130|sem2|egipto": 2769,
+     "TM|tare130|sem2|canaan": 2554,
+     "TM|tare130|noe500|egipto": 2767,
+     "TM|tare130|noe500|canaan": 2552,
+     "LXX|tare70|sem2|egipto": 4174,
+     "LXX|tare70|sem2|canaan": 3959,
+     "LXX|tare70|noe500|egipto": 4172,
+     "LXX|tare70|noe500|canaan": 3957,
+     "LXX|tare130|sem2|egipto": 4234,
+     "LXX|tare130|sem2|canaan": 4019,
+     "LXX|tare130|noe500|egipto": 4232,
+     "LXX|tare130|noe500|canaan": 4017
+    },
+    "certeza": "calculo",
+    "nota": "Jos 4:19: «el diez del mes primero». El texto no da el año: Dt 1:3 sitúa los discursos en el mes undécimo del año cuarenta y Dt 34:8 da treinta días de luto por Moisés; Jos 1:11 y 3:2 hablan de tres días. Se toma el primer mes primero posible, el del año siguiente: TM 40 + 1 = 41 años desde la salida; LXX 39 + 1 = 40 (Dt 1:3 «in the fortieth year»). Si pasara más tiempo, el año sería posterior; nada en el texto lo indica."
+   },
+   {
+    "id": "ev-pascua-gilgal",
+    "titulo": "Pascua en Gilgal; cesa el maná",
+    "tipo": "evento",
+    "ref": "Jos 5:10",
+    "pasaje": "jos-08",
+    "personas": [
+     "Joshua_1"
+    ],
+    "depende_de": "ev-paso-jordan",
+    "pasos": [],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2709,
+     "TM|tare70|sem2|canaan": 2494,
+     "TM|tare70|noe500|egipto": 2707,
+     "TM|tare70|noe500|canaan": 2492,
+     "TM|tare130|sem2|egipto": 2769,
+     "TM|tare130|sem2|canaan": 2554,
+     "TM|tare130|noe500|egipto": 2767,
+     "TM|tare130|noe500|canaan": 2552,
+     "LXX|tare70|sem2|egipto": 4174,
+     "LXX|tare70|sem2|canaan": 3959,
+     "LXX|tare70|noe500|egipto": 4172,
+     "LXX|tare70|noe500|canaan": 3957,
+     "LXX|tare130|sem2|egipto": 4234,
+     "LXX|tare130|sem2|canaan": 4019,
+     "LXX|tare130|noe500|egipto": 4232,
+     "LXX|tare130|noe500|canaan": 4017
+    },
+    "certeza": "calculo",
+    "nota": "Jos 5:10-12: «á los catorce días del mes», cuatro días después de pasar el Jordán (Jos 4:19): mismo año."
+   },
+   {
+    "id": "ev-nac-caleb",
+    "titulo": "Nace Caleb",
+    "tipo": "nacimiento",
+    "ref": "Jos 14:7",
+    "pasaje": "jos-28",
+    "personas": [
+     "Caleb_1"
+    ],
+    "depende_de": "ev-salida-sinai",
+    "pasos": [
+     {
+      "texto": "Caleb tenía 40 años cuando Moisés lo envió de Cades-barnea",
+      "signo": -1,
+      "ref": "Jos 14:7",
+      "edad": {
+       "persona": "Caleb_1",
+       "tipo": "en_evento",
+       "ref": "Jos 14:7"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2629,
+     "TM|tare70|sem2|canaan": 2414,
+     "TM|tare70|noe500|egipto": 2627,
+     "TM|tare70|noe500|canaan": 2412,
+     "TM|tare130|sem2|egipto": 2689,
+     "TM|tare130|sem2|canaan": 2474,
+     "TM|tare130|noe500|egipto": 2687,
+     "TM|tare130|noe500|canaan": 2472,
+     "LXX|tare70|sem2|egipto": 4095,
+     "LXX|tare70|sem2|canaan": 3880,
+     "LXX|tare70|noe500|egipto": 4093,
+     "LXX|tare70|noe500|canaan": 3878,
+     "LXX|tare130|sem2|egipto": 4155,
+     "LXX|tare130|sem2|canaan": 3940,
+     "LXX|tare130|noe500|egipto": 4153,
+     "LXX|tare130|noe500|canaan": 3938
+    },
+    "certeza": "calculo",
+    "nota": "Cálculo hacia atrás desde Jos 14:7. Supone que los espías salen de Cades el mismo año en que Israel deja el Sinaí (Nm 10:11, «el año segundo»); Nm 13 no da el año del envío."
+   },
+   {
+    "id": "ev-caleb-hebron",
+    "titulo": "Caleb pide Hebrón a los 85 años",
+    "tipo": "evento",
+    "ref": "Jos 14:10",
+    "pasaje": "jos-28",
+    "personas": [
+     "Caleb_1"
+    ],
+    "depende_de": "ev-nac-caleb",
+    "pasos": [
+     {
+      "texto": "Caleb dice tener hoy 85 años",
+      "signo": 1,
+      "ref": "Jos 14:10",
+      "edad": {
+       "persona": "Caleb_1",
+       "tipo": "en_evento",
+       "ref": "Jos 14:10"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2714,
+     "TM|tare70|sem2|canaan": 2499,
+     "TM|tare70|noe500|egipto": 2712,
+     "TM|tare70|noe500|canaan": 2497,
+     "TM|tare130|sem2|egipto": 2774,
+     "TM|tare130|sem2|canaan": 2559,
+     "TM|tare130|noe500|egipto": 2772,
+     "TM|tare130|noe500|canaan": 2557,
+     "LXX|tare70|sem2|egipto": 4180,
+     "LXX|tare70|sem2|canaan": 3965,
+     "LXX|tare70|noe500|egipto": 4178,
+     "LXX|tare70|noe500|canaan": 3963,
+     "LXX|tare130|sem2|egipto": 4240,
+     "LXX|tare130|sem2|canaan": 4025,
+     "LXX|tare130|noe500|egipto": 4238,
+     "LXX|tare130|noe500|canaan": 4023
+    },
+    "certeza": "calculo",
+    "nota": "Comprobación: 40 años al ser enviado (Jos 14:7) + «estos cuarenta y cinco años» (Jos 14:10) = 85, lo que dice Jos 14:10. El año resulta 45 después de la salida del Sinaí, con el mismo supuesto que el nacimiento de Caleb."
+   },
+   {
     "id": "ev-muerte-adan",
     "titulo": "Muere Adán",
     "tipo": "muerte",
@@ -91780,6 +116392,42 @@ window.BIBLIA_DATOS = {
     "ref": "Nm 22:1-24:25",
     "nota": "Números no da el año.",
     "pasaje": "nm-56"
+   },
+   {
+    "titulo": "Caen los muros de Jericó",
+    "ref": "Jos 6:1-21",
+    "nota": "Josué no da el año; ocurre después de la Pascua de Gilgal (Jos 5:10).",
+    "pasaje": "jos-09"
+   },
+   {
+    "titulo": "El sol se detiene en Gabaón",
+    "ref": "Jos 10:12-14",
+    "nota": "Sin cifra de año.",
+    "pasaje": "jos-19"
+   },
+   {
+    "titulo": "El reparto de la tierra en Siloh",
+    "ref": "Jos 18:1-10",
+    "nota": "Sin cifra de año; Jos 14:10 sitúa a Caleb 45 años después del envío.",
+    "pasaje": "jos-36"
+   },
+   {
+    "titulo": "Pacto en Siquem",
+    "ref": "Jos 24:1-28",
+    "nota": "Sin cifra de año.",
+    "pasaje": "jos-50"
+   },
+   {
+    "titulo": "Muere Josué a los 110 años",
+    "ref": "Jos 24:29",
+    "nota": "El texto da su edad (110, Jos 24:29; también en la LXX) pero no su año de nacimiento ni cuánto tiempo pasa desde la entrada en la tierra (Jos 23:1 dice solo que pasaron muchos días): no hay base para fecharla.",
+    "pasaje": "jos-52"
+   },
+   {
+    "titulo": "Muere Eleazar",
+    "ref": "Jos 24:33",
+    "nota": "Sin edad ni año.",
+    "pasaje": "jos-52"
    }
   ]
  }

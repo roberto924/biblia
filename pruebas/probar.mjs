@@ -750,6 +750,48 @@ if (existsSync(real)) {
       assert.equal(NC.marcaDe(CR, 'Dt 6:4'), null);
     });
   }
+  if ((D2.libros || []).some(l => l.id === 'Jos')) {
+    prueba('Josué: selector, plan por 6 secciones y lector sin huecos (658 versículos, con Jos 21:36-37)', () => {
+      assert.deepEqual(j(N2.libros(D2)).map(l => l.id).slice(0, 6), ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos']);
+      assert.equal(N2.nombreLibro(D2, 'Jos'), 'Josué');
+      assert.equal(N2.parseRef('Josué 24:29').libro, 'Jos');
+      assert.ok(N2.clave('Jos 1:1') > N2.clave('Dt 34:12'));
+      const s = j(N2.seccionesPlan(D2, ['jos-01'], 'jos-02', 'Jos'));
+      assert.equal(s.length, 6); assert.ok(s.every(g => g.libro === 'Jos'));
+      const vs = N2.pasajes(D2).filter(p => N2.libroDe(p) === 'Jos').flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 658); assert.equal(new Set(vs.map(v => v.ref)).size, 658);
+      assert.equal(vs[0].ref, 'Jos 1:1'); assert.equal(vs[vs.length - 1].ref, 'Jos 24:33');
+      assert.ok(/^Y de la tribu de Rubén/.test(vs.find(x => x.ref === 'Jos 21:36').texto), 'Jos 21:36-37 presentes');
+    });
+    prueba('Josué: personas nuevas y compartidas en el lector (Rahab, Acán, Caleb, hijas de Zelofehad, Siquem)', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => x.ref === r); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona).map(x => [x.texto, x.persona]); };
+      assert.ok(seg('Jos 2:1').some(x => x[0] === 'Rahab' && x[1] === 'Rahab_1'));
+      assert.deepEqual(seg('Jos 7:1').slice(0, 2), [['Achân', 'Achan_1'], ['Carmi', 'Carmi_2']]);
+      assert.deepEqual(seg('Jos 1:1').filter(x => x[1] !== 'Moses_1'), [['Josué', 'Joshua_1'], ['Nun', 'Nun_1']]);
+      assert.ok(seg('Jos 17:3').some(x => x[0] === 'Maala' && x[1] === 'Mahlah_1'));
+      assert.ok(seg('Jos 15:14').some(x => x[0] === 'Aiman' && x[1] === 'Ahiman_1'));
+      assert.equal(seg('Jos 24:32').filter(x => x[1] === 'Shechem_1').length, 1, 'la Siquem ciudad no se marca como persona');
+    });
+    prueba('Josué: mapa (refugio, Siquem, homónimos) y tiempo (Jordán año 41, Caleb 40 + 45 = 85)', () => {
+      assert.ok(['cedes-de-neftali', 'siquem', 'hebron'].every(id => j(N2.lugaresDeRefs(D2, ['Jos 20:7'])).includes(id)));
+      assert.ok(['beser', 'ramot-galaad', 'golan'].every(id => j(N2.lugaresDeRefs(D2, ['Jos 20:8', 'Dt 4:43'])).includes(id)));
+      const ls = j(N2.lugaresDePasaje(D2, N2.pasajeDe(D2, 'Jos 15:21')));
+      assert.ok(ls.length > 20, 'las listas de ciudades traen muchos lugares');
+      const L = Object.fromEntries(D2.lugares.map(l => [l.id, l]));
+      assert.notEqual(L['afec'].nombre, L['afec-13-4'].nombre, 'homónimos con nombre distinguible');
+      const tm = 'TM|tare70|sem2|egipto';
+      assert.equal(N2.anioEvento(D2, 'ev-paso-jordan', tm) - N2.anioEvento(D2, 'ev-salida-egipto', tm), 41);
+      assert.equal(N2.anioEvento(D2, 'ev-caleb-hebron', tm) - N2.anioEvento(D2, 'ev-nac-caleb', tm), 85);
+      assert.ok(j(N2.eventosDePasaje(D2, N2.pasajeDe(D2, 'Jos 4:19'))).some(e => e.id === 'ev-paso-jordan'));
+    });
+    const rc4 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc4)) prueba('Josué: marcas de contenido (Jericó alto, granizo medio, Rahab sexual, 1:9 sin marca)', () => {
+      const cr = cargar(rc4, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      assert.equal(NC.marcaDe(CR, 'Jos 6:21').nivel, 'alto'); assert.equal(NC.marcaDe(CR, 'Jos 10:26').categoria, 'crueldad');
+      assert.equal(NC.marcaDe(CR, 'Jos 10:11').nivel, 'medio'); assert.equal(NC.marcaDe(CR, 'Jos 2:1').categoria, 'sexual');
+      assert.equal(NC.marcaDe(CR, 'Jos 1:9'), null);
+    });
+  }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 // ---- Textos originales: alineación, testigos, variantes, voz y video (con pruebas/originales-ejemplo.js) ----
@@ -1273,6 +1315,120 @@ console.log('Notas y subrayados');
     assert.equal(N.textoNotas(DN, lista), 'Génesis 50:26 (RV 1909)\n«Y murió José de edad de ciento diez años.»\nTu nota: José\n\nÉxodo 1:1 (RV 1909) · subrayado verde\n«Estos son los nombres de los hijos de Israel.»');
   });
 }
+
+console.log('Lectura en orden');
+{
+  const ps = N.pasajes(D), ids = ps.map(p => p.id);
+  prueba('frontera: primer pasaje sin leer; lo leído fuera de orden no la mueve', () => {
+    assert.ok(ps.length >= 4, 'el ejemplo trae varios pasajes');
+    assert.equal(N.frontera(D, []).id, ids[0]);
+    assert.equal(N.frontera(D, [ids[0], ids[1]]).id, ids[2]);
+    assert.equal(N.frontera(D, [ids[0], ids[3]]).id, ids[1], 'leer el 4.º no salta el 2.º');
+    assert.equal(N.frontera(D, ids), null, 'todo leído');
+  });
+  prueba('accesibles: lo leído más todo hasta la frontera incluida', () => {
+    const A = N.accesibles(D, [ids[0], ids[3]]);
+    assert.ok(A.pasaje(ids[0]) && A.pasaje(ids[1]), 'leído y frontera');
+    assert.equal(A.pasaje(ids[2]), false, 'posterior a la frontera, sin leer');
+    assert.equal(A.pasaje(ids[3]), true, 'leído fuera de orden: se conserva');
+    assert.equal(N.esAccesible(D, [], ids[1]), false);
+    assert.equal(N.esAccesible(D, [], ids[0]), true);
+    const last = ps[ps.length - 1];
+    assert.equal(A.ref(last.fin), ids.length - 1 === 3, 'ref del último pasaje solo si es accesible');
+    assert.equal(A.ref(ps[2].inicio), false);
+    assert.equal(A.ref(ps[1].inicio), true);
+    assert.equal(A.ref(''), false, 'sin ref no es accesible');
+    assert.equal(N.accesibles(D, ids).todo, true);
+    assert.equal(N.accesibles(D, ids).ref('Ap 22:21'), true, 'con todo leído no se oculta nada');
+  });
+  prueba('refs de rango y de capítulo: accesibles solo si lo son su principio y su final', () => {
+    const A = N.accesibles(D, []), p0 = ps[0], a = N.parseRef(p0.inicio), b = N.parseRef(p0.fin);
+    assert.equal(A.ref(`${a.libro} ${a.cap}:${a.v}-${b.v}`), a.cap === b.cap);
+    const p1 = ps[1], c = N.parseRef(p1.fin);
+    assert.equal(A.ref(`${a.libro} ${a.cap}:${a.v}-${c.cap}:${c.v}`), false, 'el final cae tras la frontera');
+  });
+  prueba('enlace a un pasaje bloqueado lleva a la frontera', () => {
+    const r = N.destinoPasaje(D, [ids[0]], ids[3]);
+    assert.equal(r.bloqueado, true); assert.equal(r.pasaje.id, ids[1]); assert.equal(r.pedido.id, ids[3]);
+    const s = N.destinoPasaje(D, [ids[0]], ids[1]);
+    assert.equal(s.bloqueado, false); assert.equal(s.pasaje.id, ids[1]);
+  });
+  prueba('segundos mínimos: palabras ÷ 250 (adulto) o ÷ 150 (niño) por minuto', () => {
+    assert.equal(N.contarPalabras('Y dijo Dios: Sea la luz: y fué la luz.'), 10);
+    assert.equal(N.segundosMinimos(250, { tipo: 'adulto' }), 60);
+    assert.equal(N.segundosMinimos(250, { tipo: 'nino' }), 100);
+    assert.equal(N.segundosMinimos(251, { tipo: 'adulto' }), 61, 'se redondea hacia arriba');
+    assert.equal(N.segundosMinimos(0, null), 0);
+    const w = N.palabrasPasaje(D, ps[0]);
+    assert.ok(w > 0, 'el pasaje tiene palabras');
+    assert.equal(N.palabrasPasaje(D, ps[0], () => true), 0, 'omitir quita versículos');
+    assert.equal(N.relojTxt(83), '1:23'); assert.equal(N.relojTxt(5.2), '0:06');
+    assert.equal(N.puedeMarcar(false, 59, 60), false); assert.equal(N.puedeMarcar(false, 60, 60), true); assert.equal(N.puedeMarcar(true, 0, 60), true, 'releer no pide tiempo');
+    assert.deepEqual(j(N.normalizarTiempos({ a: 12, b: -1, c: 'x', d: '7' })), { a: 12, d: 7 });
+    assert.deepEqual(j(N.normalizarTiempos(null)), {});
+  });
+  prueba('búsqueda y fichas: solo personas que aparecen en algo accesible (también leído fuera de orden)', () => {
+    const A0 = N.accesibles(D, []), Atodo = N.accesibles(D, ids), I = N.indice(D);
+    const tarde = [...I.primera.keys()].filter(id => ![...I.porRef].some(([k, s]) => s.has(id) && A0.clave(k)));
+    assert.ok(tarde.length, 'hay personas que aparecen después del primer pasaje');
+    const id = tarde[0], nom = N.persona(D, id).nombre;
+    assert.ok(N.buscar(D, nom).some(p => p.id === id));
+    assert.equal(N.buscarAccesible(D, A0, nom).some(p => p.id === id), false, 'no se encuentra antes de llegar');
+    assert.equal(N.buscarAccesible(D, Atodo, nom).some(p => p.id === id), true);
+    assert.equal(N.personaAccesible(D, A0, id), false);
+    const pid = N.pasajes(D).find(p => N.versiculosDe(D, p).some(v => (I.porRef.get(v.clave) || new Set()).has(id))).id;
+    assert.equal(N.personaAccesible(D, N.accesibles(D, [pid]), id), true, 'leer fuera de orden un pasaje donde aparece la muestra');
+  });
+  prueba('mapa: solo lugares mencionados en lo accesible', () => {
+    const A0 = N.accesibles(D, []), Atodo = N.accesibles(D, ids), todos = (D.lugares || []).map(l => l.id);
+    if (!todos.length) return;
+    const vis = N.lugaresAccesibles(D, A0);
+    assert.ok(vis.length < todos.length || todos.every(id => N.refsLugar(D, id).some(A0.ref)), 'algo queda oculto');
+    vis.forEach(id => assert.ok(N.refsLugar(D, id).some(A0.ref)));
+    assert.equal(N.lugaresAccesibles(D, Atodo).length, todos.filter(id => N.refsLugar(D, id).length).length);
+  });
+  prueba('tiempo: solo sucesos e hitos con ref accesible; vidas sin muerte futura', () => {
+    const C = N.crono(D); if (!C) return;
+    const combo = N.combinacion(D, 'TM', N.elecciones(D, {}));
+    const A1 = N.accesibles(D, [ids[0]]), Atodo = N.accesibles(D, ids);
+    const cuenta = L => L.reduce((s, g) => s + g.items.length + g.hitos.length, 0);
+    const parcial = N.lineaAccesible(D, combo, A1);
+    parcial.forEach(g => { g.items.forEach(it => assert.ok(A1.ref(it.evento.ref))); g.hitos.forEach(h => assert.ok(A1.ref(h.hito.ref))); });
+    assert.ok(cuenta(parcial) < cuenta(N.lineaAccesible(D, combo, Atodo)), 'se ocultan sucesos posteriores');
+    for (const x of N.vidasCrono(D, combo).values()) {
+      const v = N.vidaAccesible(D, x, A1);
+      if (v && v.evMuerte) assert.ok(A1.ref(C.porId.get(v.evMuerte).ref));
+    }
+  });
+  prueba('curiosidades y edades: solo si todas sus refs son accesibles', () => {
+    const A = N.accesibles(D, [ids[0]]);
+    assert.equal(N.curiosidadAccesible(A, { refs: [ps[0].inicio] }), true);
+    assert.equal(N.curiosidadAccesible(A, { refs: [ps[0].inicio, ps[3].inicio] }), false);
+    assert.equal(N.curiosidadAccesible(A, { refs: [] }), false);
+    assert.equal(N.edadAccesible(A, { ref: ps[0].inicio, de: [{ ref: ps[3].inicio }] }), false);
+  });
+}
+
+console.log('Versículos sin texto original');
+prueba('sin hebreo o sin griego: el motivo de los datos, tal cual, en la alineación y en la lista', () => {
+  const O = { hebreo: { 'Gn 1:1': { t: 'בְּרֵאשִׁית' } }, hebreo_sin_texto: { 'Gn 1:2': 'No está en el Códice de Leningrado.' } };
+  const G = { texto: { 'Gn 1:1': 'Ἐν ἀρχῇ' }, sin_texto: { 'Gn 1:2': 'Swete lo tiene vacío.' } };
+  assert.deepEqual(j(N.sinTextoDe(O, G, 'Gn 1:2')), { he: 'No está en el Códice de Leningrado.', gr: 'Swete lo tiene vacío.' });
+  assert.deepEqual(j(N.sinTextoDe(O, G, 'Gn 1:1')), { he: null, gr: null });
+  assert.deepEqual(j(N.sinTextoOriginal(O, null, ['Gn 1:1', 'Gn 1:2'])), [{ ref: 'Gn 1:2', idioma: 'he', nota: 'No está en el Códice de Leningrado.' }]);
+  const p = N.pasajes(D).find(x => N.clave(x.inicio) <= N.clave('Gn 1:2') && N.clave('Gn 1:2') <= N.clave(x.fin));
+  if (p) {
+    const f = N.alinearOriginales(D, p, O, G).find(x => x.ref === 'Gn 1:2');
+    assert.equal(f.heFalta, 'No está en el Códice de Leningrado.'); assert.equal(f.grFalta, 'Swete lo tiene vacío.');
+    assert.equal(N.alinearOriginales(D, p, O, G).find(x => x.ref === 'Gn 1:1').heFalta, undefined);
+  }
+  const ro = path.join(aqui, '..', 'datos', 'originales.js');
+  if (existsSync(ro)) {
+    const NR = cargar(ro, path.join(aqui, '..', 'app.js'));
+    const st = NR.BibliaNucleo.sinTextoOriginal(NR.BIBLIA_ORIGINALES, null, ['Jos 21:36', 'Jos 21:37']);
+    if ((NR.BIBLIA_ORIGINALES.hebreo_sin_texto || {})['Jos 21:36']) { assert.equal(st.length, 2); assert.match(st[0].nota, /Leningrado/); }
+  }
+});
 
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);
