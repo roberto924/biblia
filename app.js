@@ -2223,7 +2223,7 @@ if (typeof document !== 'undefined') (function () {
   }
 
   /* ---------- Variantes y testigos ---------- */
-  const TIPO_TESTIGO = { codice: 'Códice', rollo: 'Rollo', pentateuco_samaritano: 'Pentateuco samaritano' };
+  const TIPO_TESTIGO = { codice: 'Códice', rollo: 'Rollo', papiro: 'Papiro', pentateuco_samaritano: 'Pentateuco samaritano' };
   const TESTIGO_CONOCIDO = { lxx: 'Septuaginta (LXX)', tm: 'Texto Masorético (TM)', sp: 'Pentateuco samaritano' };
   const nombreTestigo = id => { const t = ((ORIG.o && ORIG.o.testigos) || []).find(x => x.id === id); return t ? t.nombre : (TESTIGO_CONOCIDO[String(id).toLowerCase()] || id); };
   function marcaVariante(ref, n) {

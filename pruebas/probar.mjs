@@ -708,6 +708,48 @@ if (existsSync(real)) {
       assert.equal(NC.marcaDe(CR, 'Nm 6:24'), null);
     });
   }
+  if ((D2.libros || []).some(l => l.id === 'Dt')) {
+    prueba('Deuteronomio: selector, plan por 7 secciones y lector sin huecos (numeración inglesa, sin vacíos)', () => {
+      assert.deepEqual(j(N2.libros(D2)).map(l => l.id).slice(0, 5), ['Gn', 'Ex', 'Lv', 'Nm', 'Dt']);
+      assert.equal(N2.nombreLibro(D2, 'Dt'), 'Deuteronomio');
+      assert.equal(N2.parseRef('Deuteronomio 34:7').libro, 'Dt');
+      assert.ok(N2.clave('Dt 1:1') > N2.clave('Nm 36:13'));
+      const s = j(N2.seccionesPlan(D2, ['dt-01'], 'dt-02', 'Dt'));
+      assert.equal(s.length, 7); assert.ok(s.every(g => g.libro === 'Dt'));
+      assert.equal(s.reduce((n, g) => n + g.total, 0), D2.pasajes.filter(p => p.libro === 'Dt').length);
+      const vs = N2.pasajes(D2).filter(p => N2.libroDe(p) === 'Dt').flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 959); assert.equal(new Set(vs.map(v => v.ref)).size, 959);
+      assert.equal(vs[0].ref, 'Dt 1:1'); assert.equal(vs[vs.length - 1].ref, 'Dt 34:12');
+      assert.ok(vs.every(v => v.texto), 'ningún versículo vacío');
+      assert.ok(/^Cuidaréis/.test(vs.find(x => x.ref === 'Dt 12:32').texto) && /^ESTAS son las palabras del pacto/.test(vs.find(x => x.ref === 'Dt 29:1').texto));
+    });
+    prueba('Deuteronomio: personas compartidas en el lector (Josué, Datán y Abiram, Balaam, Og, Eleazar)', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => x.ref === r); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona).map(x => [x.texto, x.persona]); };
+      assert.deepEqual(seg('Dt 34:9').slice(0, 2), [['Josué', 'Joshua_1'], ['Nun', 'Nun_1']]);
+      assert.deepEqual(seg('Dt 11:6').slice(0, 3), [['Dathán', 'Dathan_1'], ['Abiram', 'Abiram_1'], ['Eliab', 'Eliab_2']]);
+      assert.ok(seg('Dt 23:4').some(x => x[0] === 'Balaam' && x[1] === 'Balaam_1'));
+      assert.ok(seg('Dt 3:1').some(x => x[0] === 'Og' && x[1] === 'Og_1'));
+      assert.ok(seg('Dt 10:6').some(x => x[0] === 'Eleazar' && x[1] === 'Eleazar_1'));
+      assert.ok(!seg('Dt 32:9').some(x => x[1] === 'Jacob_1'), '«Jacob» como pueblo no se marca');
+    });
+    prueba('Deuteronomio: mapa (Nebo, Pisga, Ebal, Gerizim, refugio) y tiempo (Moisés muere a los 120)', () => {
+      const ls = j(N2.lugaresDePasaje(D2, N2.pasajeDe(D2, 'Dt 34:1')));
+      ['monte-nebo', 'pisga', 'campos-de-moab', 'jerico'].forEach(id => assert.ok(ls.includes(id), id));
+      assert.ok(['monte-ebal', 'monte-gerizim'].every(id => j(N2.lugaresDeRefs(D2, ['Dt 11:29'])).includes(id)));
+      assert.ok(['beser', 'ramot-galaad', 'golan'].every(id => j(N2.lugaresDeRefs(D2, ['Dt 4:43'])).includes(id)));
+      const tm = 'TM|tare70|sem2|egipto';
+      assert.equal(N2.anioEvento(D2, 'ev-muerte-moises', tm) - N2.anioEvento(D2, 'ev-nac-moises', tm), 120);
+      assert.equal(N2.anioEvento(D2, 'ev-discursos-moab', tm) - N2.anioEvento(D2, 'ev-salida-egipto', tm), 40);
+      assert.ok(j(N2.eventosDePasaje(D2, N2.pasajeDe(D2, 'Dt 34:5'))).some(e => e.id === 'ev-muerte-moises'));
+    });
+    const rc3 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc3)) prueba('Deuteronomio: marcas de contenido (asedio alto, Sehón alto, Shemá sin marca)', () => {
+      const cr = cargar(rc3, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      assert.equal(NC.marcaDe(CR, 'Dt 28:53').nivel, 'alto'); assert.equal(NC.marcaDe(CR, 'Dt 2:34').nivel, 'alto');
+      assert.equal(NC.marcaDe(CR, 'Dt 21:20').categoria, 'crueldad'); assert.equal(NC.marcaDe(CR, 'Dt 22:25').categoria, 'sexual');
+      assert.equal(NC.marcaDe(CR, 'Dt 6:4'), null);
+    });
+  }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 // ---- Textos originales: alineación, testigos, variantes, voz y video (con pruebas/originales-ejemplo.js) ----
@@ -820,6 +862,32 @@ if (existsSync(real)) {
         assert.ok(['leningrado', 'vaticano', 'alejandrino', '2Q8'].every(x => a.includes(x)) && !a.includes('alepo') && !a.includes('sinaitico'));
         assert.ok(ids(['Nm 13:8']).includes('4Q27') && ids(['Nm 23:6']).includes('2Q29'));
         assert.deepEqual(j(NO.videosDeLibro(O, 'Números')).map(v => v.youtube_id), ['dtfbSxNecMk', 'IhW7gXB3o8I']);
+      });
+    }
+    if ((D.libros || []).some(l => l.id === 'Dt')) {
+      console.log('Textos originales reales (Deuteronomio)');
+      prueba('Deuteronomio: hebreo en todo versículo (TM 13:1, 23:1, 28:69 y 29:1-28); sin griego solo los 4 de «sin_texto»', () => {
+        const f = j(NO.alinearOriginales(D, { inicio: 'Dt 1:1', fin: 'Dt 34:12' }, O, G));
+        assert.equal(f.length, 959);
+        assert.ok(f.every(x => x.he), 'ningún versículo de Dt sin hebreo');
+        const sin = ['Dt 14:14', 'Dt 23:2', 'Dt 23:12', 'Dt 25:16'];
+        assert.deepEqual(f.filter(x => !x.gr).map(x => x.ref), sin, 'Swete no tiene «todo cuervo» y tiene tres versículos vacíos');
+        assert.deepEqual(Object.keys(G.sin_texto).filter(r => r.startsWith('Dt ')), sin, 'cada uno con su motivo');
+        const por = Object.fromEntries(f.map(x => [x.ref, x]));
+        assert.equal(por['Dt 12:32'].heNum, '13:1'); assert.equal(por['Dt 22:30'].heNum, '23:1');
+        assert.equal(por['Dt 29:1'].heNum, '28:69'); assert.equal(por['Dt 29:29'].heNum, '29:28'); assert.equal(por['Dt 30:1'].heNum, null);
+        assert.ok(por['Dt 6:4'].he.includes('ע') && por['Dt 6:4'].gr.includes('Ἄκουε'), 'Shemá con la ע grande');
+        assert.ok(por['Dt 5:17'].gr.includes('φονεύσεις') && por['Dt 14:15'].gr.includes('στρουθὸν'));
+      });
+      prueba('Deuteronomio: testigos (Qumrán, papiros, Alepo), variante de Dt 32:8 y videos', () => {
+        const ids = refs => j(NO.testigosDe(O, refs)).map(t => t.id);
+        const a = ids(['Dt 32:8']);
+        assert.ok(['leningrado', 'alepo', 'vaticano', 'alejandrino', '4Q37'].every(x => a.includes(x)) && !a.includes('sinaitico'));
+        assert.ok(ids(['Dt 6:4']).includes('papiro-nash') && ids(['Dt 26:18']).includes('rylands-458') && !ids(['Dt 1:1']).includes('alepo'));
+        assert.equal(O.testigos.find(t => t.id === 'papiro-nash').tipo, 'papiro');
+        const v = j(NO.variantesDe(O, ['Dt 32:8']));
+        assert.equal(v.length, 1); assert.deepEqual(v[0].lecturas.map(l => l.testigos[0]), ['leningrado', '4Q37', 'vaticano']);
+        assert.deepEqual(j(NO.videosDeLibro(O, 'Deuteronomio')).map(v => v.youtube_id), ['qfMplfJoYA0', 'lq36F3b-S2U']);
       });
     }
   }

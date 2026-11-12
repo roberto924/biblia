@@ -518,6 +518,146 @@
    "categoria": "crueldad",
    "nivel": "medio",
    "motivo": "El homicida morirá por dicho de testigos; no se acepta rescate por su vida."
+  },
+  {
+   "desde": "Dt 2:33",
+   "hasta": "Dt 2:34",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Israel vence a Sehón y destruye sus ciudades: hombres, mujeres y niños; «no dejamos ninguno»."
+  },
+  {
+   "desde": "Dt 3:6",
+   "hasta": "Dt 3:6",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Las ciudades de Og son destruidas igual: hombres, mujeres y niños."
+  },
+  {
+   "desde": "Dt 7:2",
+   "hasta": "Dt 7:2",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Orden de destruir del todo a las naciones de Canaán, sin alianza ni compasión."
+  },
+  {
+   "desde": "Dt 12:31",
+   "hasta": "Dt 12:31",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Las naciones quemaban en el fuego a sus hijos e hijas para sus dioses."
+  },
+  {
+   "desde": "Dt 13:6",
+   "hasta": "Dt 13:10",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "El pariente o amigo que incita a servir a otros dioses ha de ser apedreado."
+  },
+  {
+   "desde": "Dt 13:15",
+   "hasta": "Dt 13:16",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "La ciudad que se aparta a otros dioses es destruida a filo de espada con sus moradores y sus bestias."
+  },
+  {
+   "desde": "Dt 17:2",
+   "hasta": "Dt 17:7",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Pena de muerte por apedreamiento para quien sirve a otros dioses, por dicho de dos o tres testigos."
+  },
+  {
+   "desde": "Dt 18:10",
+   "hasta": "Dt 18:10",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Prohibición de hacer pasar al hijo o a la hija por el fuego."
+  },
+  {
+   "desde": "Dt 19:11",
+   "hasta": "Dt 19:13",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "El homicida voluntario es entregado al vengador de la sangre y muere."
+  },
+  {
+   "desde": "Dt 19:21",
+   "hasta": "Dt 19:21",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Ley del talión para el testigo falso: «vida por vida, ojo por ojo»."
+  },
+  {
+   "desde": "Dt 20:13",
+   "hasta": "Dt 20:17",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Leyes de la guerra: matar a los varones de la ciudad y tomar como botín a mujeres y niños; en las ciudades de Canaán no dejar con vida a nadie."
+  },
+  {
+   "desde": "Dt 21:10",
+   "hasta": "Dt 21:14",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Ley sobre la mujer cautiva de guerra tomada como esposa."
+  },
+  {
+   "desde": "Dt 21:18",
+   "hasta": "Dt 21:23",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "El hijo rebelde es apedreado por los hombres de su ciudad; el ajusticiado colgado en un madero."
+  },
+  {
+   "desde": "Dt 22:13",
+   "hasta": "Dt 22:30",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Leyes sobre la virginidad de la recién casada, el adulterio y la violación, con pena de muerte por apedreamiento; texto legal."
+  },
+  {
+   "desde": "Dt 23:17",
+   "hasta": "Dt 23:18",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Prohibición de la prostitución entre los hijos e hijas de Israel."
+  },
+  {
+   "desde": "Dt 25:11",
+   "hasta": "Dt 25:12",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "La mujer que agarra las partes íntimas del que pelea con su marido pierde la mano."
+  },
+  {
+   "desde": "Dt 27:20",
+   "hasta": "Dt 27:23",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Maldiciones contra el incesto y la unión con animales; texto legal."
+  },
+  {
+   "desde": "Dt 28:27",
+   "hasta": "Dt 28:35",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Maldiciones: plagas incurables, locura, la mujer desposada tomada por otro, los hijos dados a otro pueblo."
+  },
+  {
+   "desde": "Dt 28:53",
+   "hasta": "Dt 28:57",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "En el asedio comerán la carne de sus propios hijos e hijas; se describe con detalle."
+  },
+  {
+   "desde": "Dt 32:42",
+   "hasta": "Dt 32:42",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "En el cántico Dios anuncia su venganza: saetas embriagadas de sangre y espada que devora carne."
   }
  ]
 }

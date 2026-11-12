@@ -1,0 +1,1669 @@
+{
+ "libro": "Dt",
+ "genealogias": [],
+ "historias": [
+  {
+   "id": "primer-discurso",
+   "titulo": "El primer discurso en Moab: de Horeb al Jordán",
+   "inicio": "Dt 1:1",
+   "fin": "Dt 4:43",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "decalogo-y-shema",
+   "titulo": "El Decálogo, el Shemá y la exhortación",
+   "inicio": "Dt 4:44",
+   "fin": "Dt 11:32",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "leyes-de-moab",
+   "titulo": "Las leyes para la tierra",
+   "inicio": "Dt 12:1",
+   "fin": "Dt 26:19",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "ebal-y-gerizim-maldiciones",
+   "titulo": "Ebal y Gerizim, bendiciones y maldiciones",
+   "inicio": "Dt 27:1",
+   "fin": "Dt 28:68",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "pacto-en-moab",
+   "titulo": "El pacto en Moab",
+   "inicio": "Dt 29:1",
+   "fin": "Dt 30:20",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "josue-sucesor-y-ley-escrita",
+   "titulo": "Josué sucesor y la ley escrita",
+   "inicio": "Dt 31:1",
+   "fin": "Dt 31:30",
+   "principales": [
+    "Moses_1",
+    "Joshua_1"
+   ]
+  },
+  {
+   "id": "cantico-de-moises",
+   "titulo": "El cántico de Moisés y la orden de subir al Nebo",
+   "inicio": "Dt 32:1",
+   "fin": "Dt 32:52",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "bendicion-de-moises",
+   "titulo": "La bendición de Moisés",
+   "inicio": "Dt 33:1",
+   "fin": "Dt 33:29",
+   "principales": [
+    "Moses_1"
+   ]
+  },
+  {
+   "id": "muerte-de-moises",
+   "titulo": "La muerte de Moisés",
+   "inicio": "Dt 34:1",
+   "fin": "Dt 34:12",
+   "principales": [
+    "Moses_1"
+   ]
+  }
+ ],
+ "personajes": {
+  "Abram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:8"
+    },
+    {
+     "ref": "Dt 6:10"
+    },
+    {
+     "ref": "Dt 9:5"
+    },
+    {
+     "ref": "Dt 9:27"
+    },
+    {
+     "ref": "Dt 29:13"
+    },
+    {
+     "ref": "Dt 30:20"
+    },
+    {
+     "ref": "Dt 34:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová juró dar la tierra a Abraham, Isaac y Jacob",
+     "certeza": "texto",
+     "ref": "Dt 1:8",
+     "cita": "la tierra que Jehová juró á vuestros padres Abraham, Isaac, y Jacob"
+    }
+   ],
+   "externo": []
+  },
+  "Lot_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 2:9"
+    },
+    {
+     "ref": "Dt 2:19"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová dio Ar por heredad a los hijos de Lot",
+     "certeza": "texto",
+     "ref": "Dt 2:9",
+     "cita": "yo he dado á Ar por heredad á los hijos de Lot"
+    }
+   ],
+   "externo": []
+  },
+  "Isaac_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:8"
+    },
+    {
+     "ref": "Dt 6:10"
+    },
+    {
+     "ref": "Dt 9:5"
+    },
+    {
+     "ref": "Dt 9:27"
+    },
+    {
+     "ref": "Dt 29:13"
+    },
+    {
+     "ref": "Dt 30:20"
+    },
+    {
+     "ref": "Dt 34:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Esau_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 2:4"
+    },
+    {
+     "ref": "Dt 2:5"
+    },
+    {
+     "ref": "Dt 2:8"
+    },
+    {
+     "ref": "Dt 2:12"
+    },
+    {
+     "ref": "Dt 2:22"
+    },
+    {
+     "ref": "Dt 2:29"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová dio a Esaú el monte de Seir por heredad",
+     "certeza": "texto",
+     "ref": "Dt 2:5",
+     "cita": "yo he dado por heredad á Esaú el monte de Seir"
+    }
+   ],
+   "externo": []
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:8"
+    },
+    {
+     "ref": "Dt 6:10"
+    },
+    {
+     "ref": "Dt 9:5"
+    },
+    {
+     "ref": "Dt 9:27"
+    },
+    {
+     "ref": "Dt 29:13"
+    },
+    {
+     "ref": "Dt 30:20"
+    },
+    {
+     "ref": "Dt 34:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Reuben_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 11:6"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Manasseh_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 3:14"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Machir_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 3:15"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés da Galaad a Maquir",
+     "certeza": "texto",
+     "ref": "Dt 3:15",
+     "cita": "Y á Machîr dí á Galaad"
+    }
+   ],
+   "externo": []
+  },
+  "Moses_1": {
+   "apariciones": [
+    {
+     "inicio": "Dt 1:1",
+     "fin": "Dt 34:8"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 34:9"
+    },
+    {
+     "ref": "Dt 34:10"
+    },
+    {
+     "ref": "Dt 34:11"
+    },
+    {
+     "ref": "Dt 34:12"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Habla a todo Israel en Moab estas palabras",
+     "certeza": "texto",
+     "ref": "Dt 1:1",
+     "cita": "las palabras que habló Moisés á todo Israel"
+    },
+    {
+     "texto": "Resuelve declarar la ley en tierra de Moab",
+     "certeza": "texto",
+     "ref": "Dt 1:5",
+     "cita": "resolvió Moisés declarar esta ley"
+    },
+    {
+     "texto": "Cuenta que Jehová se airó también contra él por causa del pueblo",
+     "certeza": "texto",
+     "ref": "Dt 1:37",
+     "cita": "contra mí se airó Jehová por vosotros"
+    },
+    {
+     "texto": "Recibe la orden de subir a la cumbre del Pisga, porque no pasará el Jordán",
+     "certeza": "texto",
+     "ref": "Dt 3:27",
+     "cita": "Sube á la cumbre del Pisga"
+    },
+    {
+     "texto": "Aparta tres ciudades de refugio al oriente del Jordán",
+     "certeza": "texto",
+     "ref": "Dt 4:41",
+     "cita": "apartó Moisés tres ciudades"
+    },
+    {
+     "texto": "Dice que estuvo entre Jehová y el pueblo para denunciarles la palabra",
+     "certeza": "texto",
+     "ref": "Dt 5:5",
+     "cita": "Yo estaba entonces entre Jehová y vosotros"
+    },
+    {
+     "texto": "Dice que hizo un arca de madera de Sittim (Ex 37:1 dice que la hizo Bezaleel; el texto no lo concilia)",
+     "certeza": "texto",
+     "ref": "Dt 10:3",
+     "cita": "E hice un arca de madera de Sittim"
+    },
+    {
+     "texto": "Declara que tiene ciento veinte años y no puede más salir ni entrar",
+     "certeza": "texto",
+     "ref": "Dt 31:2",
+     "cita": "De edad de ciento y veinte años soy hoy día"
+    },
+    {
+     "texto": "Escribe la ley y la da a los sacerdotes y a los ancianos",
+     "certeza": "texto",
+     "ref": "Dt 31:9",
+     "cita": "escribió Moisés esta ley"
+    },
+    {
+     "texto": "Escribe el cántico el mismo día en que Jehová se lo manda",
+     "certeza": "texto",
+     "ref": "Dt 31:22",
+     "cita": "Moisés escribió este cántico aquel día"
+    },
+    {
+     "texto": "Se le llama «varón de Dios» al bendecir a Israel antes de morir",
+     "certeza": "texto",
+     "ref": "Dt 33:1",
+     "cita": "Moisés varón de Dios"
+    },
+    {
+     "texto": "Muere en la tierra de Moab, conforme al dicho de Jehová",
+     "certeza": "texto",
+     "ref": "Dt 34:5",
+     "cita": "murió allí Moisés siervo de Jehová"
+    },
+    {
+     "texto": "Nadie sabe dónde está su sepulcro",
+     "certeza": "texto",
+     "ref": "Dt 34:6",
+     "cita": "ninguno sabe su sepulcro hasta hoy"
+    },
+    {
+     "texto": "A los ciento veinte años sus ojos no se habían oscurecido",
+     "certeza": "texto",
+     "ref": "Dt 34:7",
+     "cita": "sus ojos nunca se oscurecieron"
+    },
+    {
+     "texto": "Ningún profeta posterior iguala a Moisés, a quien Jehová conoció cara a cara",
+     "certeza": "texto",
+     "ref": "Dt 34:10",
+     "cita": "nunca más se levantó profeta en Israel como Moisés"
+    }
+   ],
+   "externo": []
+  },
+  "Pharaoh_4": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 6:21"
+    },
+    {
+     "ref": "Dt 6:22"
+    },
+    {
+     "ref": "Dt 7:8"
+    },
+    {
+     "ref": "Dt 7:18"
+    },
+    {
+     "ref": "Dt 11:3"
+    },
+    {
+     "ref": "Dt 29:2"
+    },
+    {
+     "ref": "Dt 34:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 9:20"
+    },
+    {
+     "ref": "Dt 10:6"
+    },
+    {
+     "ref": "Dt 32:50"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que Jehová se enojó con Aarón y que él oró por Aarón",
+     "certeza": "texto",
+     "ref": "Dt 9:20",
+     "cita": "oré por Aarón entonces"
+    },
+    {
+     "texto": "Dt 10:6 dice que Aarón murió y fue sepultado en Moserá",
+     "certeza": "texto",
+     "ref": "Dt 10:6",
+     "cita": "allí murió Aarón, y allí fué sepultado"
+    },
+    {
+     "texto": "Dt 32:50 dice que murió en el monte de Hor (Nm 20:28 y 33:38 también); el texto no concilia ambos lugares",
+     "certeza": "texto",
+     "ref": "Dt 32:50",
+     "cita": "murió Aarón tu hermano en el monte de Hor"
+    }
+   ],
+   "externo": []
+  },
+  "Eleazar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 10:6"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Tras la muerte de Aarón, su hijo Eleazar tiene el sacerdocio",
+     "certeza": "texto",
+     "ref": "Dt 10:6",
+     "cita": "en lugar suyo tuvo el sacerdocio su hijo Eleazar"
+    }
+   ],
+   "externo": []
+  },
+  "Miriam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 24:9"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés manda acordarse de lo que Jehová hizo a María en el camino",
+     "certeza": "texto",
+     "ref": "Dt 24:9",
+     "cita": "lo que hizo Jehová tu Dios á María en el camino"
+    }
+   ],
+   "externo": []
+  },
+  "Joshua_1": {
+   "apariciones": [
+    {
+     "inicio": "Dt 31:7",
+     "fin": "Dt 31:8"
+    },
+    {
+     "inicio": "Dt 31:14",
+     "fin": "Dt 31:23"
+    },
+    {
+     "inicio": "Dt 32:44",
+     "fin": "Dt 32:44"
+    },
+    {
+     "inicio": "Dt 34:9",
+     "fin": "Dt 34:9"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:38"
+    },
+    {
+     "ref": "Dt 3:21"
+    },
+    {
+     "ref": "Dt 3:28"
+    },
+    {
+     "ref": "Dt 31:3"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová dice a Moisés que Josué, que está delante de él, entrará en la tierra (recuerdo de Cades)",
+     "certeza": "texto",
+     "ref": "Dt 1:38",
+     "cita": "Josué hijo de Nun, que está delante de ti, él entrará allá"
+    },
+    {
+     "texto": "Moisés recuerda que mandó animarlo porque pasará delante del pueblo",
+     "certeza": "texto",
+     "ref": "Dt 3:28",
+     "cita": "Y manda á Josué, y anímalo, y confórtalo"
+    },
+    {
+     "texto": "Moisés lo llama y lo esfuerza a la vista de todo Israel",
+     "certeza": "texto",
+     "ref": "Dt 31:7",
+     "cita": "Y llamó Moisés á Josué"
+    },
+    {
+     "texto": "Va con Moisés a esperar en el tabernáculo del testimonio",
+     "certeza": "texto",
+     "ref": "Dt 31:14",
+     "cita": "Fueron pues Moisés y Josué"
+    },
+    {
+     "texto": "Recibe la orden de meter a Israel en la tierra, con la promesa «yo seré contigo»",
+     "certeza": "texto",
+     "ref": "Dt 31:23",
+     "cita": "y yo seré contigo"
+    },
+    {
+     "texto": "Recita el cántico a oídos del pueblo junto con Moisés",
+     "certeza": "texto",
+     "ref": "Dt 32:44",
+     "cita": "él, y Josué hijo de Nun"
+    },
+    {
+     "texto": "Queda lleno de espíritu de sabiduría porque Moisés puso sus manos sobre él; Israel le obedece",
+     "certeza": "texto",
+     "ref": "Dt 34:9",
+     "cita": "fué lleno de espíritu de sabiduría"
+    }
+   ],
+   "externo": []
+  },
+  "Nun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:38"
+    },
+    {
+     "ref": "Dt 31:23"
+    },
+    {
+     "ref": "Dt 32:44"
+    },
+    {
+     "ref": "Dt 34:9"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Caleb_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:36"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová lo exceptúa de la sentencia: verá la tierra que pisó",
+     "certeza": "texto",
+     "ref": "Dt 1:36",
+     "cita": "Excepto Caleb hijo de Jephone: él la verá"
+    }
+   ],
+   "externo": []
+  },
+  "Jephunneh_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:36"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Abiram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 11:6"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que la tierra abrió su boca y se los tragó a él y a Datán con sus casas",
+     "certeza": "texto",
+     "ref": "Dt 11:6",
+     "cita": "abrió la tierra su boca, y tragóse á ellos"
+    }
+   ],
+   "externo": []
+  },
+  "Dathan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 11:6"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que la tierra abrió su boca y se los tragó a él y a Abiram con sus casas",
+     "certeza": "texto",
+     "ref": "Dt 11:6",
+     "cita": "abrió la tierra su boca, y tragóse á ellos"
+    }
+   ],
+   "externo": []
+  },
+  "Eliab_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 11:6"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Se le nombra como padre de Datán y Abiram",
+     "certeza": "texto",
+     "ref": "Dt 11:6",
+     "cita": "hijos de Eliab hijo de Rubén"
+    }
+   ],
+   "externo": []
+  },
+  "Sihon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:4"
+    },
+    {
+     "ref": "Dt 2:24"
+    },
+    {
+     "ref": "Dt 2:26"
+    },
+    {
+     "ref": "Dt 2:30"
+    },
+    {
+     "ref": "Dt 2:32"
+    },
+    {
+     "ref": "Dt 3:2"
+    },
+    {
+     "ref": "Dt 3:6"
+    },
+    {
+     "ref": "Dt 4:46"
+    },
+    {
+     "ref": "Dt 29:7"
+    },
+    {
+     "ref": "Dt 31:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Se niega a dejar pasar a Israel porque Jehová endureció su espíritu",
+     "certeza": "texto",
+     "ref": "Dt 2:30",
+     "cita": "Sehón rey de Hesbón no quiso que pasásemos"
+    },
+    {
+     "texto": "Sale a pelear contra Israel en Jaas y es entregado",
+     "certeza": "texto",
+     "ref": "Dt 2:32",
+     "cita": "saliónos Sehón al encuentro"
+    }
+   ],
+   "externo": []
+  },
+  "Og_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 1:4"
+    },
+    {
+     "ref": "Dt 3:1"
+    },
+    {
+     "ref": "Dt 3:3"
+    },
+    {
+     "ref": "Dt 3:10"
+    },
+    {
+     "ref": "Dt 3:11"
+    },
+    {
+     "ref": "Dt 3:13"
+    },
+    {
+     "ref": "Dt 4:47"
+    },
+    {
+     "ref": "Dt 29:7"
+    },
+    {
+     "ref": "Dt 31:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Sale al encuentro de Israel para pelear en Edrei (recuerdo de Moisés)",
+     "certeza": "texto",
+     "ref": "Dt 3:1",
+     "cita": "saliónos al encuentro Og rey de Basán para pelear"
+    },
+    {
+     "texto": "Su reino en Basán tiene sesenta ciudades, toda la tierra de Argob",
+     "certeza": "texto",
+     "ref": "Dt 3:4",
+     "cita": "sesenta ciudades, toda la tierra de Argob"
+    },
+    {
+     "texto": "Es el único que había quedado de los gigantes",
+     "certeza": "texto",
+     "ref": "Dt 3:11",
+     "cita": "sólo Og rey de Basán había quedado de los gigantes"
+    },
+    {
+     "texto": "Su cama era de hierro, de nueve codos de largo y cuatro de ancho",
+     "certeza": "texto",
+     "ref": "Dt 3:11",
+     "cita": "la longitud de ella de nueve codos, y su anchura de cuatro codos"
+    }
+   ],
+   "externo": []
+  },
+  "Balaam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 23:4"
+    },
+    {
+     "ref": "Dt 23:5"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que Moab lo alquiló contra Israel, de Petor en Mesopotamia",
+     "certeza": "texto",
+     "ref": "Dt 23:4",
+     "cita": "alquiló contra ti á Balaam hijo de Beor de Pethor"
+    },
+    {
+     "texto": "Jehová no lo quiso oír y volvió la maldición en bendición",
+     "certeza": "texto",
+     "ref": "Dt 23:5",
+     "cita": "Jehová tu Dios te volvió la maldición en bendición"
+    }
+   ],
+   "externo": []
+  },
+  "Beor_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 23:4"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Jair_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Dt 3:14"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jair hijo de Manasés toma Argob y la llama de su nombre Basán-havoth-jair",
+     "certeza": "texto",
+     "ref": "Dt 3:14",
+     "cita": "Jair hijo de Manasés tomó toda la tierra de Argob"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "tablas-de-la-ley": {
+   "nombre": "Tablas del Testimonio",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "Dt 4:13",
+     "fin": "Dt 4:13"
+    },
+    {
+     "inicio": "Dt 5:22",
+     "fin": "Dt 5:22"
+    },
+    {
+     "inicio": "Dt 9:9",
+     "fin": "Dt 9:11"
+    },
+    {
+     "inicio": "Dt 9:15",
+     "fin": "Dt 9:17"
+    },
+    {
+     "inicio": "Dt 10:1",
+     "fin": "Dt 10:5"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Dios escribe las diez palabras en dos tablas de piedra",
+     "certeza": "texto",
+     "ref": "Dt 5:22",
+     "cita": "escribiólas en dos tablas de piedra"
+    },
+    {
+     "texto": "Las tablas están escritas con el dedo de Dios",
+     "certeza": "texto",
+     "ref": "Dt 9:10",
+     "cita": "escritas con el dedo de Dios"
+    },
+    {
+     "texto": "Moisés rompe las primeras tablas delante del pueblo",
+     "certeza": "texto",
+     "ref": "Dt 9:17",
+     "cita": "quebrélas delante de vuestros ojos"
+    },
+    {
+     "texto": "Jehová manda labrar otras dos como las primeras y ponerlas en el arca",
+     "certeza": "texto",
+     "ref": "Dt 10:2",
+     "cita": "las pondrás en el arca"
+    },
+    {
+     "texto": "Moisés las pone en el arca que hizo y dice que allí están",
+     "certeza": "texto",
+     "ref": "Dt 10:5",
+     "cita": "y allí están, como Jehová me mandó"
+    }
+   ],
+   "externo": []
+  },
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "Dt 10:1",
+     "fin": "Dt 10:5"
+    },
+    {
+     "inicio": "Dt 10:8",
+     "fin": "Dt 10:8"
+    },
+    {
+     "inicio": "Dt 31:9",
+     "fin": "Dt 31:9"
+    },
+    {
+     "inicio": "Dt 31:25",
+     "fin": "Dt 31:26"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés dice que hizo un arca de madera de Sittim para guardar las tablas",
+     "certeza": "texto",
+     "ref": "Dt 10:3",
+     "cita": "E hice un arca de madera de Sittim"
+    },
+    {
+     "texto": "Leví es apartado para llevar el arca del pacto",
+     "certeza": "texto",
+     "ref": "Dt 10:8",
+     "cita": "para que llevase el arca del pacto de Jehová"
+    },
+    {
+     "texto": "Los levitas que llevaban el arca reciben la ley escrita",
+     "certeza": "texto",
+     "ref": "Dt 31:9",
+     "cita": "los sacerdotes, hijos de Leví, que llevaban el arca del pacto"
+    },
+    {
+     "texto": "El libro de la ley se pone al lado del arca, por testigo",
+     "certeza": "texto",
+     "ref": "Dt 31:26",
+     "cita": "ponedlo al lado del arca del pacto de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "becerro-de-oro": {
+   "nombre": "Becerro de oro",
+   "tipo": "ídolo",
+   "apariciones": [
+    {
+     "inicio": "Dt 9:12",
+     "fin": "Dt 9:21"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Aaron_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que el pueblo se hizo un becerro de fundición",
+     "certeza": "texto",
+     "ref": "Dt 9:16",
+     "cita": "os habíais hecho un becerro de fundición"
+    },
+    {
+     "texto": "Lo quema, lo muele hasta polvo y echa el polvo al arroyo del monte",
+     "certeza": "texto",
+     "ref": "Dt 9:21",
+     "cita": "fué reducido á polvo"
+    }
+   ],
+   "externo": []
+  },
+  "mana": {
+   "nombre": "Maná",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "Dt 8:3",
+     "fin": "Dt 8:3"
+    },
+    {
+     "inicio": "Dt 8:16",
+     "fin": "Dt 8:16"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que Jehová sustentó al pueblo con maná, comida que no conocían",
+     "certeza": "texto",
+     "ref": "Dt 8:3",
+     "cita": "te sustentó con maná"
+    },
+    {
+     "texto": "El maná en el desierto fue para afligir, probar y hacer bien al final",
+     "certeza": "texto",
+     "ref": "Dt 8:16",
+     "cita": "afligiéndote y probándote"
+    }
+   ],
+   "externo": []
+  },
+  "urim-y-tumim": {
+   "nombre": "Urim y Tumim",
+   "tipo": "objeto sacerdotal",
+   "apariciones": [
+    {
+     "inicio": "Dt 33:8",
+     "fin": "Dt 33:8"
+    }
+   ],
+   "personas": [],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "En la bendición a Leví se nombran su Thummim y su Urim",
+     "certeza": "texto",
+     "ref": "Dt 33:8",
+     "cita": "Tu Thummim y tu Urim"
+    }
+   ],
+   "externo": []
+  },
+  "columna-de-nube-y-fuego": {
+   "nombre": "Columna de nube y de fuego",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Dt 1:33",
+     "fin": "Dt 1:33"
+    },
+    {
+     "inicio": "Dt 31:15",
+     "fin": "Dt 31:15"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joshua_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Moisés recuerda que iba delante con fuego de noche y nube de día",
+     "certeza": "texto",
+     "ref": "Dt 1:33",
+     "cita": "con fuego de noche para mostraros el camino por donde anduvieseis, y con nube de día"
+    },
+    {
+     "texto": "Se pone sobre la puerta del tabernáculo cuando Jehová se aparece a Moisés y Josué",
+     "certeza": "texto",
+     "ref": "Dt 31:15",
+     "cita": "la columna de nube se puso sobre la puerta del tabernáculo"
+    }
+   ],
+   "externo": []
+  },
+  "libro-de-la-ley": {
+   "nombre": "Libro de la ley",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "Dt 31:9",
+     "fin": "Dt 31:13"
+    },
+    {
+     "inicio": "Dt 31:24",
+     "fin": "Dt 31:26"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joshua_1"
+   ],
+   "lugares": [],
+   "resumen": "La ley que Moisés escribe en un libro y manda poner junto al arca, para leerla cada siete años y que sirva de testigo.",
+   "datos": [
+    {
+     "texto": "Moisés escribe la ley y la entrega a los sacerdotes y a los ancianos",
+     "certeza": "texto",
+     "ref": "Dt 31:9",
+     "cita": "escribió Moisés esta ley, y dióla á los sacerdotes"
+    },
+    {
+     "texto": "Debe leerse a todo Israel al cabo del séptimo año, en la fiesta de las Cabañas",
+     "certeza": "texto",
+     "ref": "Dt 31:10",
+     "cita": "en el año de la remisión, en la fiesta de las Cabañas"
+    },
+    {
+     "texto": "Moisés termina de escribirla en un libro",
+     "certeza": "texto",
+     "ref": "Dt 31:24",
+     "cita": "acabó Moisés de escribir las palabras de esta ley en un libro"
+    },
+    {
+     "texto": "Se pone al lado del arca, como testigo",
+     "certeza": "texto",
+     "ref": "Dt 31:26",
+     "cita": "esté allí por testigo contra ti"
+    }
+   ],
+   "externo": []
+  },
+  "palabras-en-mano-y-postes": {
+   "nombre": "Las palabras atadas en la mano y escritas en los postes",
+   "tipo": "mandato",
+   "apariciones": [
+    {
+     "inicio": "Dt 6:4",
+     "fin": "Dt 6:9"
+    },
+    {
+     "inicio": "Dt 11:18",
+     "fin": "Dt 11:20"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [],
+   "resumen": "Tras el «Oye, Israel», Moisés manda atar las palabras como señal en la mano y entre los ojos y escribirlas en los postes de la casa.",
+   "datos": [
+    {
+     "texto": "Comienza con «Oye, Israel: Jehová nuestro Dios, Jehová uno es»",
+     "certeza": "texto",
+     "ref": "Dt 6:4",
+     "cita": "Jehová nuestro Dios, Jehová uno es"
+    },
+    {
+     "texto": "Se atan por señal en la mano y como frontales entre los ojos",
+     "certeza": "texto",
+     "ref": "Dt 6:8",
+     "cita": "atarlas por señal en tu mano"
+    },
+    {
+     "texto": "Se escriben en los postes de la casa y en las portadas",
+     "certeza": "texto",
+     "ref": "Dt 6:9",
+     "cita": "en los postes de tu casa, y en tus portadas"
+    },
+    {
+     "texto": "Se repiten a los hijos en casa, de camino, al acostarse y al levantarse",
+     "certeza": "texto",
+     "ref": "Dt 6:7",
+     "cita": "las repetirás á tus hijos"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "El papiro Nash (Cambridge University Library, MS Or.233, hacia 150-100 a. C.) conserva en hebreo el Decálogo y el comienzo del Shemá (Dt 6:4). Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Nash Papyrus (abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Nash_Papyrus"
+    }
+   ]
+  },
+  "cama-de-hierro-de-og": {
+   "nombre": "Cama de hierro de Og",
+   "tipo": "objeto",
+   "apariciones": [
+    {
+     "inicio": "Dt 3:11",
+     "fin": "Dt 3:11"
+    }
+   ],
+   "personas": [
+    "Og_1"
+   ],
+   "lugares": [
+    "raba-amon"
+   ],
+   "resumen": "La cama de hierro del rey Og, de nueve codos de largo y cuatro de ancho, que Moisés dice que está en Rabá de los hijos de Amón.",
+   "datos": [
+    {
+     "texto": "Es una cama de hierro",
+     "certeza": "texto",
+     "ref": "Dt 3:11",
+     "cita": "una cama de hierro"
+    },
+    {
+     "texto": "Mide nueve codos de largo y cuatro de ancho, «al codo de un hombre»",
+     "certeza": "texto",
+     "ref": "Dt 3:11",
+     "cita": "al codo de un hombre"
+    },
+    {
+     "texto": "Está en Rabá de los hijos de Amón",
+     "certeza": "texto",
+     "ref": "Dt 3:11",
+     "cita": "Rabbath de los hijos de Ammón"
+    }
+   ],
+   "externo": []
+  },
+  "piedras-de-la-ley-en-ebal": {
+   "nombre": "Piedras revocadas con cal en el monte Ebal",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "Dt 27:2",
+     "fin": "Dt 27:4"
+    },
+    {
+     "inicio": "Dt 27:8",
+     "fin": "Dt 27:8"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "monte-ebal"
+   ],
+   "resumen": "Piedras grandes que el pueblo debe levantar en el Ebal al pasar el Jordán, revocadas con cal y con toda la ley escrita en ellas.",
+   "datos": [
+    {
+     "texto": "Son piedras grandes revocadas con cal",
+     "certeza": "texto",
+     "ref": "Dt 27:2",
+     "cita": "piedras grandes, las cuales revocarás con cal"
+    },
+    {
+     "texto": "Se levantan en el monte Ebal después de pasar el Jordán",
+     "certeza": "texto",
+     "ref": "Dt 27:4",
+     "cita": "levantaréis estas piedras que yo os mando hoy, en el monte de Ebal"
+    },
+    {
+     "texto": "En ellas se escribe toda la ley «muy claramente»",
+     "certeza": "texto",
+     "ref": "Dt 27:8",
+     "cita": "escribirás en las piedras todas las palabras de esta ley muy claramente"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-piedras-enteras": {
+   "nombre": "Altar de piedras enteras en el monte Ebal",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "Dt 27:5",
+     "fin": "Dt 27:7"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "lugares": [
+    "monte-ebal"
+   ],
+   "resumen": "Altar sin hierro, de piedras enteras, para holocaustos y pacíficos en el Ebal.",
+   "datos": [
+    {
+     "texto": "Es altar de piedras, sin alzar hierro sobre ellas",
+     "certeza": "texto",
+     "ref": "Dt 27:5",
+     "cita": "no alzarás sobre ellas hierro"
+    },
+    {
+     "texto": "Se edifica de piedras enteras y se ofrece holocausto",
+     "certeza": "texto",
+     "ref": "Dt 27:6",
+     "cita": "De piedras enteras edificarás el altar de Jehová tu Dios"
+    },
+    {
+     "texto": "Se sacrifican pacíficos y se come allí con alegría",
+     "certeza": "texto",
+     "ref": "Dt 27:7",
+     "cita": "sacrificarás pacíficos, y comerás allí"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "En el monte Ebal, Adam Zertal excavó (1982-1989) una estructura de la Edad del Hierro I; la mayoría de los arqueólogos la ve como un lugar de culto israelita temprano, pero la identificación con el altar de Josué es disputada. Identificación controvertida. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Mount Ebal (abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Mount_Ebal"
+    }
+   ]
+  },
+  "cantico-de-moises": {
+   "nombre": "El cántico de Moisés",
+   "tipo": "cántico",
+   "apariciones": [
+    {
+     "inicio": "Dt 31:19",
+     "fin": "Dt 31:22"
+    },
+    {
+     "inicio": "Dt 31:30",
+     "fin": "Dt 32:44"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joshua_1"
+   ],
+   "lugares": [],
+   "resumen": "Cántico que Jehová manda escribir y enseñar a Israel para que sea testigo contra el pueblo; Moisés lo recita con Josué.",
+   "datos": [
+    {
+     "texto": "Jehová manda escribirlo y enseñarlo para que sea testigo contra Israel",
+     "certeza": "texto",
+     "ref": "Dt 31:19",
+     "cita": "este cántico me sea por testigo contra los hijos de Israel"
+    },
+    {
+     "texto": "Moisés lo escribe el mismo día y lo enseña a los hijos de Israel",
+     "certeza": "texto",
+     "ref": "Dt 31:22",
+     "cita": "enseñólo á los hijos de Israel"
+    },
+    {
+     "texto": "Llama a Dios «la Roca», de obra perfecta",
+     "certeza": "texto",
+     "ref": "Dt 32:4",
+     "cita": "la Roca, cuya obra es perfecta"
+    },
+    {
+     "texto": "Moisés lo recita a oídos del pueblo con Josué",
+     "certeza": "texto",
+     "ref": "Dt 32:44",
+     "cita": "recitó todas las palabras de este cántico á oídos del pueblo"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "discursos-en-moab": {
+   "nombre": "Los discursos de Moisés en Moab",
+   "lugar": "campos-de-moab",
+   "apariciones": [
+    {
+     "inicio": "Dt 1:1",
+     "fin": "Dt 1:5"
+    },
+    {
+     "inicio": "Dt 4:44",
+     "fin": "Dt 4:49"
+    },
+    {
+     "inicio": "Dt 29:1",
+     "fin": "Dt 29:2"
+    },
+    {
+     "inicio": "Dt 31:1",
+     "fin": "Dt 31:2"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Al otro lado del Jordán, en tierra de Moab, Moisés declara la ley a todo Israel.",
+   "datos": [
+    {
+     "texto": "Habla de este lado del Jordán, en el llano delante del mar Bermejo",
+     "certeza": "texto",
+     "ref": "Dt 1:1",
+     "cita": "entre Parán, y Thopel, y Labán, y Haseroth, y Dizahab"
+    },
+    {
+     "texto": "Es el mes undécimo, el día primero, a los cuarenta años",
+     "certeza": "texto",
+     "ref": "Dt 1:3",
+     "cita": "á los cuarenta años, en el mes undécimo, al primero del mes"
+    },
+    {
+     "texto": "Declara la ley en tierra de Moab, tras vencer a Sehón y a Og",
+     "certeza": "texto",
+     "ref": "Dt 1:5",
+     "cita": "en tierra de Moab, resolvió Moisés declarar esta ley"
+    },
+    {
+     "texto": "Hay un pacto en Moab además del de Horeb",
+     "certeza": "texto",
+     "ref": "Dt 29:1",
+     "cita": "además del pacto que concertó con ellos en Horeb"
+    }
+   ],
+   "externo": []
+  },
+  "ebal-y-gerizim": {
+   "nombre": "Ebal y Gerizim: bendición y maldición",
+   "lugar": "monte-ebal",
+   "apariciones": [
+    {
+     "inicio": "Dt 11:26",
+     "fin": "Dt 11:32"
+    },
+    {
+     "inicio": "Dt 27:1",
+     "fin": "Dt 27:26"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "piedras-de-la-ley-en-ebal",
+    "altar-de-piedras-enteras"
+   ],
+   "resumen": "Moisés manda poner la bendición en el Gerizim y la maldición en el Ebal al pasar el Jordán.",
+   "datos": [
+    {
+     "texto": "La bendición se pone sobre el Gerizim y la maldición sobre el Ebal",
+     "certeza": "texto",
+     "ref": "Dt 11:29",
+     "cita": "la bendición sobre el monte Gerizim, y la maldición sobre el monte Ebal"
+    },
+    {
+     "texto": "Seis tribus se colocan en el Gerizim para bendecir",
+     "certeza": "texto",
+     "ref": "Dt 27:12",
+     "cita": "Estos estarán sobre el monte de Gerizim para bendecir al pueblo"
+    },
+    {
+     "texto": "Seis tribus se colocan en el Ebal para la maldición",
+     "certeza": "texto",
+     "ref": "Dt 27:13",
+     "cita": "para [pronunciar] la maldición en el de Ebal"
+    },
+    {
+     "texto": "Los levitas hablan en voz alta y el pueblo responde «Amén»",
+     "certeza": "texto",
+     "ref": "Dt 27:14",
+     "cita": "Y hablarán los Levitas, y dirán á todo varón de Israel en alta voz"
+    }
+   ],
+   "externo": []
+  },
+  "tabernaculo-de-la-comision": {
+   "nombre": "El tabernáculo: Jehová comisiona a Josué",
+   "apariciones": [
+    {
+     "inicio": "Dt 31:14",
+     "fin": "Dt 31:23"
+    }
+   ],
+   "personas": [
+    "Moses_1",
+    "Joshua_1"
+   ],
+   "objetos": [
+    "columna-de-nube-y-fuego",
+    "cantico-de-moises"
+   ],
+   "resumen": "Moisés y Josué esperan en el tabernáculo del testimonio; Jehová se aparece en la columna de nube.",
+   "datos": [
+    {
+     "texto": "Moisés y Josué esperan en el tabernáculo del testimonio",
+     "certeza": "texto",
+     "ref": "Dt 31:14",
+     "cita": "esperaron en el tabernáculo del testimonio"
+    },
+    {
+     "texto": "Jehová se aparece en la columna de nube",
+     "certeza": "texto",
+     "ref": "Dt 31:15",
+     "cita": "aparecióse Jehová en el tabernáculo, en la columna de nube"
+    },
+    {
+     "texto": "Se da orden a Josué hijo de Nun",
+     "certeza": "texto",
+     "ref": "Dt 31:23",
+     "cita": "dió orden á Josué hijo de Nun"
+    }
+   ],
+   "externo": []
+  },
+  "bendicion-de-moises": {
+   "nombre": "La bendición de Moisés a las tribus",
+   "lugar": "campos-de-moab",
+   "apariciones": [
+    {
+     "inicio": "Dt 33:1",
+     "fin": "Dt 33:29"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [
+    "urim-y-tumim"
+   ],
+   "resumen": "Antes de morir, Moisés bendice a Israel tribu por tribu.",
+   "datos": [
+    {
+     "texto": "Es la bendición que da antes de morir",
+     "certeza": "texto",
+     "ref": "Dt 33:1",
+     "cita": "antes que muriese"
+    },
+    {
+     "texto": "Jehová vino de Sinaí, de Seir y del monte de Parán",
+     "certeza": "texto",
+     "ref": "Dt 33:2",
+     "cita": "Jehová vino de Sinaí, y de Seir les esclareció"
+    },
+    {
+     "texto": "A Leví se le nombra el Thummim y el Urim",
+     "certeza": "texto",
+     "ref": "Dt 33:8",
+     "cita": "Tu Thummim y tu Urim"
+    }
+   ],
+   "externo": []
+  },
+  "monte-nebo": {
+   "nombre": "El monte Nebo y la vista de la tierra",
+   "lugar": "monte-nebo",
+   "apariciones": [
+    {
+     "inicio": "Dt 32:48",
+     "fin": "Dt 32:52"
+    },
+    {
+     "inicio": "Dt 34:1",
+     "fin": "Dt 34:4"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Moisés sube al Nebo, a la cumbre del Pisga frente a Jericó, y ve la tierra que no pisará.",
+   "datos": [
+    {
+     "texto": "Jehová manda subir al monte Nebo, en tierra de Moab, frente a Jericó",
+     "certeza": "texto",
+     "ref": "Dt 32:49",
+     "cita": "Sube á este monte de Abarim, al monte Nebo"
+    },
+    {
+     "texto": "Sube de los campos de Moab a la cumbre del Pisga",
+     "certeza": "texto",
+     "ref": "Dt 34:1",
+     "cita": "Moisés de los campos de Moab al monte de Nebo, á la cumbre de Pisga"
+    },
+    {
+     "texto": "Jehová le muestra la tierra jurada a los patriarcas",
+     "certeza": "texto",
+     "ref": "Dt 34:4",
+     "cita": "Esta es la tierra de que juré á Abraham, á Isaac, y á Jacob"
+    },
+    {
+     "texto": "Se la hace ver con los ojos, pero no pasará",
+     "certeza": "texto",
+     "ref": "Dt 34:4",
+     "cita": "mas no pasarás allá"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "La tradición cristiana sitúa la memoria de Moisés en Siyagha, el punto más alto del monte Nebo (Jordania, unos 700 m); es tradición, no identificación demostrada. Fuente externa.",
+     "fuente": "Wikipedia (secundaria): Mount Nebo (abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Mount_Nebo"
+    }
+   ]
+  },
+  "valle-de-bet-peor": {
+   "nombre": "El valle frente a Bet-peor: muerte y sepultura de Moisés",
+   "lugar": "bet-peor",
+   "apariciones": [
+    {
+     "inicio": "Dt 34:5",
+     "fin": "Dt 34:8"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Moisés muere en tierra de Moab, se le sepulta en el valle frente a Bet-peor y el pueblo lo llora treinta días.",
+   "datos": [
+    {
+     "texto": "Muere allí, en la tierra de Moab",
+     "certeza": "texto",
+     "ref": "Dt 34:5",
+     "cita": "murió allí Moisés siervo de Jehová, en la tierra de Moab"
+    },
+    {
+     "texto": "Se le sepulta en el valle, frente a Bet-peor; el texto no nombra con claridad al sepultador (por el contexto, Jehová)",
+     "certeza": "inferido",
+     "ref": "Dt 34:6",
+     "cita": "enterrólo en el valle, en tierra de Moab, enfrente de Bethpeor"
+    },
+    {
+     "texto": "Nadie sabe su sepulcro",
+     "certeza": "texto",
+     "ref": "Dt 34:6",
+     "cita": "ninguno sabe su sepulcro hasta hoy"
+    },
+    {
+     "texto": "El pueblo lo llora treinta días en los campos de Moab",
+     "certeza": "texto",
+     "ref": "Dt 34:8",
+     "cita": "lloraron los hijos de Israel á Moisés en los campos de Moab treinta días"
+    }
+   ],
+   "externo": []
+  },
+  "ciudades-de-refugio-del-oriente": {
+   "nombre": "Las tres ciudades de refugio al oriente del Jordán",
+   "lugar": "beser",
+   "apariciones": [
+    {
+     "inicio": "Dt 4:41",
+     "fin": "Dt 4:43"
+    }
+   ],
+   "personas": [
+    "Moses_1"
+   ],
+   "objetos": [],
+   "resumen": "Moisés aparta Beser, Ramot de Galaad y Golán para quien mate sin intención.",
+   "datos": [
+    {
+     "texto": "Moisés aparta tres ciudades de este lado del Jordán",
+     "certeza": "texto",
+     "ref": "Dt 4:41",
+     "cita": "apartó Moisés tres ciudades"
+    },
+    {
+     "texto": "Beser, de los rubenitas, en el desierto",
+     "certeza": "texto",
+     "ref": "Dt 4:43",
+     "cita": "A Beser en el desierto, en tierra de la llanura, de los Rubenitas"
+    },
+    {
+     "texto": "Ramot de Galaad, de los gaditas, y Golán en Basán, de los de Manasés",
+     "certeza": "texto",
+     "ref": "Dt 4:43",
+     "cita": "á Golán en Basán, de los de Manasés"
+    }
+   ],
+   "externo": []
+  }
+ }
+}

@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-11T20:44:22+00:00",
+ "generado": "2026-11-12T01:17:38+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -53,6 +53,11 @@ window.BIBLIA_DATOS = {
    "id": "Nm",
    "nombre": "Números",
    "capitulos": 36
+  },
+  {
+   "id": "Dt",
+   "nombre": "Deuteronomio",
+   "capitulos": 34
   }
  ],
  "capitulos": [
@@ -20547,6 +20552,4046 @@ window.BIBLIA_DATOS = {
      "texto": "Estos son los mandamientos y los estatutos que mandó Jehová por mano de Moisés á los hijos de Israel en los campos de Moab, junto al Jordán de Jericó."
     }
    ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 1,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTAS son las palabras que habló Moisés á todo Israel de esta parte del Jordán en el desierto, en el llano delante del mar Bermejo, entre Parán, y Thopel, y Labán, y Haseroth, y Dizahab."
+    },
+    {
+     "n": 2,
+     "texto": "Once jornadas hay desde Horeb, camino del monte de Seir, hasta Cades-barnea."
+    },
+    {
+     "n": 3,
+     "texto": "Y fué, que á los cuarenta años, en el mes undécimo, al primero del mes, Moisés habló á los hijos de Israel conforme á todas las cosas que Jehová le había mandado acerca de ellos;"
+    },
+    {
+     "n": 4,
+     "texto": "Después que hirió á Sehón rey de los Amorrheos, que habitaba en Hesbón, y á Og rey de Basán, que habitaba en Astarot en Edrei:"
+    },
+    {
+     "n": 5,
+     "texto": "De esta parte del Jordán, en tierra de Moab, resolvió Moisés declarar esta ley, diciendo:"
+    },
+    {
+     "n": 6,
+     "texto": "Jehová nuestro Dios nos habló en Horeb, diciendo: Harto habéis estado en este monte;"
+    },
+    {
+     "n": 7,
+     "texto": "Volveos, partíos é id al monte del Amorrheo, y á todas sus comarcas, en el llano, en el monte, y en los valles, y al mediodía, y á la costa de la mar, á la tierra del Cananeo, y el Líbano, hasta el gran río, el río Eufrates."
+    },
+    {
+     "n": 8,
+     "texto": "Mirad, yo he dado la tierra en vuestra presencia; entrad y poseed la tierra que Jehová juró á vuestros padres Abraham, Isaac, y Jacob, que les daría á ellos y á su simiente después de ellos."
+    },
+    {
+     "n": 9,
+     "texto": "Y yo os hablé entonces, diciendo: Yo no puedo llevaros solo:"
+    },
+    {
+     "n": 10,
+     "texto": "Jehová vuestro Dios os ha multiplicado, y he aquí sois hoy vosotros como las estrellas del cielo en multitud."
+    },
+    {
+     "n": 11,
+     "texto": "¡Jehová Dios de vuestros padres añada sobre vosotros como sois mil veces, y os bendiga, como os ha prometido!"
+    },
+    {
+     "n": 12,
+     "texto": "¿Cómo llevaré yo solo vuestras molestias, vuestras cargas, y vuestros pleitos?"
+    },
+    {
+     "n": 13,
+     "texto": "Dad[me] de entre vosotros, de vuestras tribus, varones sabios y entendidos y expertos, para que yo los ponga por vuestros jefes."
+    },
+    {
+     "n": 14,
+     "texto": "Y me respondisteis, y dijisteis: Bueno es hacer lo que has dicho."
+    },
+    {
+     "n": 15,
+     "texto": "Y tomé los principales de vuestras tribus, varones sabios y expertos, y púselos por jefes sobre vosotros, jefes de millares, y jefes de cientos, y jefes de cincuenta, y cabos de diez, y gobernadores á vuestras tribus."
+    },
+    {
+     "n": 16,
+     "texto": "Y entonces mandé á vuestros jueces, diciendo: Oid entre vuestros hermanos, y juzgad justamente entre el hombre y su hermano, y el que le es extranjero."
+    },
+    {
+     "n": 17,
+     "texto": "No tengáis respeto de personas en el juicio: así al pequeño como al grande oiréis: no tendréis temor de ninguno, porque el juicio es de Dios: y la causa que os fuere difícil, la traeréis á mí, y yo la oiré."
+    },
+    {
+     "n": 18,
+     "texto": "Os mandé, pues, en aquel tiempo todo lo que habíais de hacer."
+    },
+    {
+     "n": 19,
+     "texto": "Y partidos de Horeb, anduvimos todo aquel grande y terrible desierto que habéis visto, por el camino del monte del Amorrheo, como Jehová nuestro Dios nos lo mandó; y llegamos hasta Cades-barnea."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces os dije: Llegado habéis al monte del Amorrheo, el cual Jehová nuestro Dios nos da."
+    },
+    {
+     "n": 21,
+     "texto": "Mira, Jehová tu Dios ha dado delante de ti la tierra: sube y posée[la], como Jehová el Dios de tus padres te ha dicho; no temas ni desmayes."
+    },
+    {
+     "n": 22,
+     "texto": "Y llegasteis á mí todos vosotros, y dijisteis: Enviemos varones delante de nosotros, que nos reconozcan la tierra y nos traigan de vuelta razón del camino por donde hemos de subir, y de las ciudades adonde hemos de llegar."
+    },
+    {
+     "n": 23,
+     "texto": "Y el dicho me pareció bien: y tomé doce varones de vosotros, un varón por tribu:"
+    },
+    {
+     "n": 24,
+     "texto": "Y se encaminaron, y subieron al monte, y llegaron hasta la arroyada de Escol, y reconocieron [la tierra]."
+    },
+    {
+     "n": 25,
+     "texto": "Y tomaron en sus manos del fruto del país, y nos lo trajeron, y diéronnos cuenta, y dijeron: Es buena la tierra que Jehová nuestro Dios nos da."
+    },
+    {
+     "n": 26,
+     "texto": "Empero no quisisteis subir, antes fuisteis rebeldes al dicho de Jehová vuestro Dios;"
+    },
+    {
+     "n": 27,
+     "texto": "Y murmurasteis en vuestras tiendas, diciendo: Porque Jehová nos aborrecía, nos ha sacado de tierra de Egipto, para entregarnos en mano del Amorrheo para destruirnos."
+    },
+    {
+     "n": 28,
+     "texto": "¿A dónde subimos? Nuestros hermanos han hecho desfallecer nuestro corazón, diciendo: Este pueblo es mayor y más alto que nosotros, las ciudades grandes y muradas hasta el cielo; y también vimos allí hijos de gigantes."
+    },
+    {
+     "n": 29,
+     "texto": "Entonces os dije: No temáis, ni tengáis miedo de ellos."
+    },
+    {
+     "n": 30,
+     "texto": "Jehová vuestro Dios, el cual va delante de vosotros, él peleará por vosotros, conforme á todas las cosas que hizo por vosotros en Egipto delante de vuestros ojos;"
+    },
+    {
+     "n": 31,
+     "texto": "Y en el desierto has visto que Jehová tu Dios te ha traído, como trae el hombre á su hijo, por todo el camino que habéis andado, hasta que habéis venido á este lugar."
+    },
+    {
+     "n": 32,
+     "texto": "Y aun con esto no creisteis en Jehová vuestro Dios,"
+    },
+    {
+     "n": 33,
+     "texto": "El cual iba delante de vosotros por el camino, para reconoceros el lugar donde habíais de asentar el campo, con fuego de noche para mostraros el camino por donde anduvieseis, y con nube de día."
+    },
+    {
+     "n": 34,
+     "texto": "Y oyó Jehová la voz de vuestras palabras, y enojóse, y juró diciendo:"
+    },
+    {
+     "n": 35,
+     "texto": "No verá hombre alguno de estos de esta mala generación, la buena tierra que juré había de dar á vuestros padres,"
+    },
+    {
+     "n": 36,
+     "texto": "Excepto Caleb hijo de Jephone: él la verá, y á él le daré la tierra que pisó, y á sus hijos; porque cumplió en pos de Jehová."
+    },
+    {
+     "n": 37,
+     "texto": "Y también contra mí se airó Jehová por vosotros, diciendo: Tampoco tú entrarás allá:"
+    },
+    {
+     "n": 38,
+     "texto": "Josué hijo de Nun, que está delante de ti, él entrará allá: anímale; porque él la hará heredar á Israel."
+    },
+    {
+     "n": 39,
+     "texto": "Y vuestros chiquitos, de los cuales dijisteis serán por presa, y vuestros hijos que no saben hoy bueno ni malo, ellos entrarán allá, y á ellos la daré, y ellos la heredarán."
+    },
+    {
+     "n": 40,
+     "texto": "Y vosotros volveos, y partíos al desierto camino del mar Bermejo."
+    },
+    {
+     "n": 41,
+     "texto": "Entonces respondisteis y me dijisteis: Pecado hemos contra Jehová; nosotros subiremos y pelearemos, conforme á todo lo que Jehová nuestro Dios nos ha mandado. Y os armasteis cada uno de sus armas de guerra, y os apercibisteis para subir al monte."
+    },
+    {
+     "n": 42,
+     "texto": "Y Jehová me dijo: Diles: No subáis, ni peleéis, pues no estoy entre vosotros; porque no seáis heridos delante de vuestros enemigos."
+    },
+    {
+     "n": 43,
+     "texto": "Y os hablé, y no disteis oído; antes fuisteis rebeldes al dicho de Jehová, y persistiendo con altivez, subisteis al monte."
+    },
+    {
+     "n": 44,
+     "texto": "Y salió el Amorrheo, que habitaba en aquel monte, á vuestro encuentro, y os persiguieron, como hacen las avispas, y os derrotaron en Seir, [persiguiéndoos] hasta Horma."
+    },
+    {
+     "n": 45,
+     "texto": "Y volvisteis, y llorasteis delante de Jehová; pero Jehová no escuchó vuestra voz, ni os prestó oído."
+    },
+    {
+     "n": 46,
+     "texto": "Y estuvisteis en Cades por muchos días, como en los días que habéis estado."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 2,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y VOLVIMOS, y partímonos al desierto camino del mar Bermejo, como Jehová me había dicho; y rodeamos el monte de Seir por muchos días."
+    },
+    {
+     "n": 2,
+     "texto": "Y Jehová me habló, diciendo:"
+    },
+    {
+     "n": 3,
+     "texto": "Harto habéis rodeado este monte; volveos al aquilón."
+    },
+    {
+     "n": 4,
+     "texto": "Y manda al pueblo, diciendo: Pasando vosotros por el término de vuestros hermanos los hijos de Esaú, que habitan en Seir, ellos tendrán miedo de vosotros; mas vosotros guardaos mucho:"
+    },
+    {
+     "n": 5,
+     "texto": "No os metáis con ellos; que no os daré de su tierra ni aun la holladura de la planta de un pie; porque yo he dado por heredad á Esaú el monte de Seir."
+    },
+    {
+     "n": 6,
+     "texto": "Compraréis de ellos por dinero las viandas, y comeréis; y también compraréis de ellos el agua, y beberéis:"
+    },
+    {
+     "n": 7,
+     "texto": "Pues Jehová tu Dios te ha bendecido en toda obra de tus manos: él sabe que andas por este gran desierto: estos cuarenta años Jehová tu Dios fué contigo; y ninguna cosa te ha faltado."
+    },
+    {
+     "n": 8,
+     "texto": "Y pasamos de nuestros hermanos los hijos de Esaú, que habitaban en Seir, por el camino de la llanura de Elath y de Esiongeber. Y volvimos, y pasamos camino del desierto de Moab."
+    },
+    {
+     "n": 9,
+     "texto": "Y Jehová me dijo: No molestes á Moab, ni te empeñes con ellos en guerra, que no te daré posesión de su tierra; porque yo he dado á Ar por heredad á los hijos de Lot."
+    },
+    {
+     "n": 10,
+     "texto": "(Los Emimeos habitaron en ella antes, pueblo grande, y numeroso, y alto como gigantes:"
+    },
+    {
+     "n": 11,
+     "texto": "Por gigantes eran ellos también contados, como los Anaceos; y los Moabitas los llaman Emimeos."
+    },
+    {
+     "n": 12,
+     "texto": "Y en Seir habitaron antes los Horeos, á los cuales echaron los hijos de Esaú; y los destruyeron de delante de sí, y moraron en lugar de ellos; como hizo Israel en la tierra de su posesión que les dió Jehová.)"
+    },
+    {
+     "n": 13,
+     "texto": "Levantaos ahora, y pasad el arroyo de Zered. Y pasamos el arroyo de Zered."
+    },
+    {
+     "n": 14,
+     "texto": "Y los días que anduvimos de Cades-barnea hasta que pasamos el arroyo de Zered, fueron treinta y ocho años; hasta que se acabó toda la generación de los hombres de guerra de en medio del campo, como Jehová les había jurado."
+    },
+    {
+     "n": 15,
+     "texto": "Y también la mano de Jehová fué sobre ellos para destruirlos de en medio del campo, hasta acabarlos."
+    },
+    {
+     "n": 16,
+     "texto": "Y aconteció que cuando se hubieron acabado de morir todos los hombres de guerra de entre el pueblo,"
+    },
+    {
+     "n": 17,
+     "texto": "Jehová me habló, diciendo:"
+    },
+    {
+     "n": 18,
+     "texto": "Tú pasarás hoy el término de Moab, á Ar,"
+    },
+    {
+     "n": 19,
+     "texto": "Y te acercarás delante de los hijos de Ammón: no los molestes, ni te metas con ellos; porque no te tengo de dar posesión de la tierra de los hijos de Ammón; que á los hijos de Lot la he dado por heredad."
+    },
+    {
+     "n": 20,
+     "texto": "(Por tierra de gigantes fué también ella tenida: habitaron en ella gigantes en otro tiempo, á los cuales los Ammonitas llamaban Zomzommeos;"
+    },
+    {
+     "n": 21,
+     "texto": "Pueblo grande, y numeroso, y alto, como los Anaceos; á los cuales Jehová destruyó de delante de los Ammonitas, quienes les sucedieron, y habitaron en su lugar:"
+    },
+    {
+     "n": 22,
+     "texto": "Como hizo con los hijos de Esaú, que habitaban en Seir, de delante de los cuales destruyó á los Horeos; y ellos les sucedieron, y habitaron en su lugar hasta hoy."
+    },
+    {
+     "n": 23,
+     "texto": "Y á los Heveos que habitaban en Haserin hasta Gaza, los Caftoreos que salieron de Caftor los destruyeron, y habitaron en su lugar.)"
+    },
+    {
+     "n": 24,
+     "texto": "Levantaos, partid, y pasad el arroyo de Arnón: he aquí he dado en tu mano á Sehón rey de Hesbón, Amorrheo, y á su tierra: comienza á tomar posesión, y empéñate con él en guerra."
+    },
+    {
+     "n": 25,
+     "texto": "Hoy comenzaré á poner tu miedo y tu espanto sobre los pueblos debajo de todo el cielo; los cuales oirán tu fama, y temblarán, y angustiarse han delante de ti."
+    },
+    {
+     "n": 26,
+     "texto": "Y envié mensajeros desde el desierto de Cademoth á Sehón rey de Hesbón, con palabras de paz, diciendo:"
+    },
+    {
+     "n": 27,
+     "texto": "Pasaré por tu tierra por el camino: por el camino iré, sin apartarme á diestra ni á siniestra:"
+    },
+    {
+     "n": 28,
+     "texto": "La comida me venderás por dinero, y comeré: el agua también me darás por dinero, y beberé: solamente pasaré á pie;"
+    },
+    {
+     "n": 29,
+     "texto": "Como lo hicieron conmigo los hijos de Esaú que habitaban en Seir, y los Moabitas que habitaban en Ar; hasta que pase el Jordán á la tierra que nos da Jehová nuestro Dios."
+    },
+    {
+     "n": 30,
+     "texto": "Mas Sehón rey de Hesbón no quiso que pasásemos por el [territorio suyo]; porque Jehová tu Dios había endurecido su espíritu, y obstinado su corazón para entregarlo en tu mano, como hoy."
+    },
+    {
+     "n": 31,
+     "texto": "Y díjome Jehová: He aquí yo he comenzado á dar delante de ti á Sehón y á su tierra; comienza á tomar posesión, para que heredes su tierra."
+    },
+    {
+     "n": 32,
+     "texto": "Y saliónos Sehón al encuentro, él y todo su pueblo, para pelear en Jaas."
+    },
+    {
+     "n": 33,
+     "texto": "Mas Jehová nuestro Dios lo entregó delante de nosotros; y herimos á él y á sus hijos, y á todo su pueblo."
+    },
+    {
+     "n": 34,
+     "texto": "Y tomamos entonces todas sus ciudades, y destruimos todas las ciudades, hombres, y mujeres, y niños; no dejamos ninguno:"
+    },
+    {
+     "n": 35,
+     "texto": "Solamente tomamos para nosotros las bestias, y los despojos de las ciudades que habíamos tomado."
+    },
+    {
+     "n": 36,
+     "texto": "Desde Aroer, que está junto á la ribera del arroyo de Arnón, y la ciudad que está en el arroyo, hasta Galaad, no hubo ciudad que escapase de nosotros: todas las entregó Jehová nuestro Dios en nuestro poder."
+    },
+    {
+     "n": 37,
+     "texto": "Solamente á la tierra de los hijos de Ammón no llegaste, ni á todo lo que está á la orilla del arroyo de Jaboc ni á las ciudades del monte, ni á [lugar] alguno que Jehová nuestro Dios había prohibido."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 3,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y VOLVIMOS, y subimos camino de Basán, y saliónos al encuentro Og rey de Basán para pelear, él y todo su pueblo, en Edrei."
+    },
+    {
+     "n": 2,
+     "texto": "Y díjome Jehová: No tengas temor de él, porque en tu mano he entregado á él y á todo su pueblo, y su tierra: y harás con él como hiciste con Sehón rey Amorrheo, que habitaba en Hesbón."
+    },
+    {
+     "n": 3,
+     "texto": "Y Jehová nuestro Dios entregó también en nuestra mano á Og rey de Basán, y á todo su pueblo, al cual herimos hasta no quedar de él ninguno."
+    },
+    {
+     "n": 4,
+     "texto": "Y tomamos entonces todas sus ciudades; no quedó ciudad que no les tomásemos: sesenta ciudades, toda la tierra de Argob, del reino de Og en Basán."
+    },
+    {
+     "n": 5,
+     "texto": "Todas éstas eran ciudades fortalecidas con alto muro, con puertas y barras; sin otras muy muchas ciudades sin muro."
+    },
+    {
+     "n": 6,
+     "texto": "Y destruímoslas, como hicimos á Sehón rey de Hesbón, destruyendo en toda ciudad hombres, mujeres, y niños."
+    },
+    {
+     "n": 7,
+     "texto": "Y tomamos para nosotros todas las bestias, y los despojos de las ciudades."
+    },
+    {
+     "n": 8,
+     "texto": "También tomamos en aquel tiempo de mano de dos reyes Amorrheos que estaban de esta parte del Jordán, la tierra desde el arroyo de Arnón hasta el monte de Hermón:"
+    },
+    {
+     "n": 9,
+     "texto": "(Los Sidonios llaman á Hermón Sirión; y los Amorrheos, Senir:)"
+    },
+    {
+     "n": 10,
+     "texto": "Todas las ciudades de la llanura, y todo Galaad, y todo Basán hasta Salchâ y Edrei, ciudades del reino de Og en Basán."
+    },
+    {
+     "n": 11,
+     "texto": "Porque sólo Og rey de Basán había quedado de los gigantes que quedaron. He aquí su cama, una cama de hierro, ¿no está en Rabbath de los hijos de Ammón?; la longitud de ella de nueve codos, y su anchura de cuatro codos, al codo de un hombre."
+    },
+    {
+     "n": 12,
+     "texto": "Y esta tierra [que] heredamos entonces desde Aroer, que está al arroyo de Arnón, y la mitad del monte de Galaad con sus ciudades, dí á los Rubenitas y á los Gaditas:"
+    },
+    {
+     "n": 13,
+     "texto": "Y el resto de Galaad, y todo Basán, del reino de Og, dí[lo] á la media tribu de Manasés; toda la tierra de Argob, todo Basán, que se llamaba la tierra de los gigantes."
+    },
+    {
+     "n": 14,
+     "texto": "Jair hijo de Manasés tomó toda la tierra de Argob hasta el término de Gessuri y Machâti; y llamóla de su nombre Basán-havoth-jair, hasta hoy."
+    },
+    {
+     "n": 15,
+     "texto": "Y á Machîr dí á Galaad."
+    },
+    {
+     "n": 16,
+     "texto": "Y á los Rubenitas y Gaditas dí de Galaad hasta el arroyo de Arnón, el medio del arroyo por término; hasta el arroyo de Jaboc, término de los hijos de Ammón:"
+    },
+    {
+     "n": 17,
+     "texto": "Asimismo la campiña, y el Jordán, y el término, desde Cinereth hasta la mar del llano, el mar Salado, las vertientes abajo del Pisga al oriente."
+    },
+    {
+     "n": 18,
+     "texto": "Y os mandé entonces, diciendo: Jehová vuestro Dios os ha dado esta tierra para que la poseáis: pasaréis armados delante de vuestros hermanos los hijos de Israel todos los valientes."
+    },
+    {
+     "n": 19,
+     "texto": "Solamente vuestras mujeres, vuestros niños, y vuestros ganados, (yo sé que tenéis mucho ganado,) quedarán en vuestras ciudades que os he dado,"
+    },
+    {
+     "n": 20,
+     "texto": "Hasta que Jehová dé reposo á vuestros hermanos, así como á vosotros, y hereden también ellos la tierra que Jehová vuestro Dios les da á la otra parte del Jordán: entonces os volveréis cada uno á su heredad que yo os he dado."
+    },
+    {
+     "n": 21,
+     "texto": "Mandé también á Josué entonces, diciendo: Tus ojos vieron todo lo que Jehová vuestro Dios ha hecho á aquellos dos reyes: así hará Jehová á todos los reinos á los cuales pasarás tú."
+    },
+    {
+     "n": 22,
+     "texto": "No los temáis; que Jehová vuestro Dios, él es el que pelea por vosotros."
+    },
+    {
+     "n": 23,
+     "texto": "Y oré á Jehová en aquel tiempo, diciendo:"
+    },
+    {
+     "n": 24,
+     "texto": "Señor Jehová, tú has comenzado á mostrar á tu siervo tu grandeza, y tu mano fuerte: porque ¿qué dios hay en el cielo ni en la tierra que haga según tus obras, y según tus valentías?"
+    },
+    {
+     "n": 25,
+     "texto": "Pase yo, ruégote, y vea aquella tierra buena, que está á la parte allá del Jordán, aquel buen monte, y el Líbano."
+    },
+    {
+     "n": 26,
+     "texto": "Mas Jehová se había enojado contra mí por causa de vosotros, por lo cual no me oyó: y díjome Jehová: Bástate, no me hables más de este negocio."
+    },
+    {
+     "n": 27,
+     "texto": "Sube á la cumbre del Pisga, y alza tus ojos al occidente, y al aquilón, y al mediodía, y al oriente, y ve por tus ojos: porque no pasarás este Jordán."
+    },
+    {
+     "n": 28,
+     "texto": "Y manda á Josué, y anímalo, y confórtalo; porque él ha de pasar delante de este pueblo, y él les hará heredar la tierra que verás."
+    },
+    {
+     "n": 29,
+     "texto": "Y paramos en el valle delante de Beth-peor."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 4,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "AHORA pues, oh Israel, oye los estatutos y derechos que yo os enseño, para que los ejecutéis, y viváis, y entréis, y poseáis la tierra que Jehová el Dios de vuestros padres te da."
+    },
+    {
+     "n": 2,
+     "texto": "No añadiréis á la palabra que yo os mando, ni disminuiréis de ella, para que guardéis los mandamientos de Jehová vuestro Dios que yo os ordeno."
+    },
+    {
+     "n": 3,
+     "texto": "Vuestros ojos vieron lo que hizo Jehová con motivo de Baal-peor; que á todo hombre que fué en pos de Baal-peor destruyó Jehová tu Dios de en medio de ti."
+    },
+    {
+     "n": 4,
+     "texto": "Mas vosotros que os allegasteis á Jehová vuestro Dios, todos estáis vivos hoy."
+    },
+    {
+     "n": 5,
+     "texto": "Mirad, yo os he enseñado estatutos y derechos, como Jehová mi Dios me mandó, para que hagáis así en medio de la tierra en la cual entráis para poseerla."
+    },
+    {
+     "n": 6,
+     "texto": "Guardadlos, pues, y ponedlos por obra: porque esta es vuestra sabiduría y vuestra inteligencia en ojos de los pueblos, los cuales oirán todos estos estatutos, y dirán: Ciertamente pueblo sabio y entendido, gente grande es ésta."
+    },
+    {
+     "n": 7,
+     "texto": "Porque ¿qué gente grande hay que tenga los dioses cercanos á sí, como lo está Jehová nuestro Dios en todo cuanto le pedimos?"
+    },
+    {
+     "n": 8,
+     "texto": "Y ¿qué gente grande hay que tenga estatutos y derechos justos, como es toda esta ley que yo pongo hoy delante de vosotros?"
+    },
+    {
+     "n": 9,
+     "texto": "Por tanto, guárdate, y guarda tu alma con diligencia, que no te olvides de las cosas que tus ojos han visto, ni se aparten de tu corazón todos los días de tu vida: y enseñarlas has á tus hijos, y á los hijos de tus hijos;"
+    },
+    {
+     "n": 10,
+     "texto": "El día que estuviste delante de Jehová tu Dios en Horeb, cuando Jehová me dijo: Júntame el pueblo, para que yo les haga oir mis palabras, las cuales aprenderán, para temerme todos los días que vivieren sobre la tierra: y [las] enseñarán á sus hijos;"
+    },
+    {
+     "n": 11,
+     "texto": "Y os llegasteis, y os pusisteis al pie del monte; y el monte ardía en fuego hasta en medio de los cielos con tinieblas, nube, y oscuridad."
+    },
+    {
+     "n": 12,
+     "texto": "Y habló Jehová con vosotros de en medio del fuego: oisteis la voz de sus palabras, mas á excepción de [oir] la voz, ninguna figura visteis:"
+    },
+    {
+     "n": 13,
+     "texto": "Y él os anunció su pacto, el cual os mandó poner por obra, las diez palabras; y escribiólas en dos tablas de piedra."
+    },
+    {
+     "n": 14,
+     "texto": "A mí también me mandó Jehová entonces enseñaros los estatutos y derechos, para que los pusieseis por obra en la tierra á la cual pasáis para poseerla."
+    },
+    {
+     "n": 15,
+     "texto": "Guardad pues mucho vuestras almas: pues ninguna figura visteis el día que Jehová habló con vosotros de en medio del fuego:"
+    },
+    {
+     "n": 16,
+     "texto": "Porque no os corrompáis, y hagáis para vosotros escultura, imagen de figura alguna, efigie de varón ó hembra,"
+    },
+    {
+     "n": 17,
+     "texto": "Figura de algún animal que sea en la tierra, figura de ave alguna alada que vuele por el aire,"
+    },
+    {
+     "n": 18,
+     "texto": "Figura de ningún [animal] que vaya arrastrando por la tierra, figura de pez alguno que haya en el agua debajo de la tierra:"
+    },
+    {
+     "n": 19,
+     "texto": "Y porque alzando tus ojos al cielo, y viendo el sol y la luna y las estrellas, y todo el ejército del cielo, no seas incitado, y te inclines á ellos, y les sirvas; que Jehová tu Dios los ha concedido á todos los pueblos debajo de todos los cielos."
+    },
+    {
+     "n": 20,
+     "texto": "Empero á vosotros Jehová os tomó, y os ha sacado del horno de hierro, de Egipto, para que le seáis por pueblo de heredad como en este día."
+    },
+    {
+     "n": 21,
+     "texto": "Y Jehová se enojó contra mí sobre vuestros negocios, y juró que yo no pasaría el Jordán, ni entraría en la buena tierra, que Jehová tu Dios te da por heredad."
+    },
+    {
+     "n": 22,
+     "texto": "Así que yo voy á morir en esta tierra; y no paso el Jordán: mas vosotros pasaréis, y poseeréis aquella buena tierra."
+    },
+    {
+     "n": 23,
+     "texto": "Guardaos no os olvidéis del pacto de Jehová vuestro Dios, que él estableció con vosotros, y os hagáis escultura ó imagen de cualquier cosa, que Jehová tu Dios te ha vedado."
+    },
+    {
+     "n": 24,
+     "texto": "Porque Jehová tu Dios es fuego que consume, Dios celoso."
+    },
+    {
+     "n": 25,
+     "texto": "Cuando hubiereis engendrado hijos y nietos, y hubiereis envejecido en la tierra, y os corrompiereis, é hiciereis escultura ó imagen de cualquier cosa, é hiciereis mal en ojos de Jehová vuestro Dios, para enojarlo;"
+    },
+    {
+     "n": 26,
+     "texto": "Yo pongo hoy por testigos al cielo y á la tierra, que presto pereceréis totalmente de la tierra hacia la cual pasáis el Jordán para poseerla: no estaréis en ella largos días sin que seáis destruídos."
+    },
+    {
+     "n": 27,
+     "texto": "Y Jehová os esparcirá entre los pueblos, y quedaréis pocos en número entre las gentes á las cuales os llevará Jehová:"
+    },
+    {
+     "n": 28,
+     "texto": "Y serviréis allí á dioses hechos de manos de hombres, á madera y á piedra, que no ven, ni oyen, ni comen, ni huelen."
+    },
+    {
+     "n": 29,
+     "texto": "Mas si desde allí buscares á Jehová tu Dios, lo hallarás, si lo buscares de todo tu corazón y de toda tu alma."
+    },
+    {
+     "n": 30,
+     "texto": "Cuando estuviereis en angustia, y te alcanzaren todas estas cosas, si en los postreros días te volvieres á Jehová tu Dios, y oyeres su voz;"
+    },
+    {
+     "n": 31,
+     "texto": "Porque Dios misericordioso es Jehová tu Dios; no te dejará, ni te destruirá, ni se olvidará del pacto de tus padres que les juró."
+    },
+    {
+     "n": 32,
+     "texto": "Porque pregunta ahora de los tiempos pasados, que han sido antes de ti, desde el día que crió Dios al hombre sobre la tierra, y desde el un cabo del cielo al otro, si se ha hecho cosa semejante á esta gran cosa, ó se haya oído otra como ella."
+    },
+    {
+     "n": 33,
+     "texto": "¿Ha oído pueblo la voz de Dios, que hablase de en medio del fuego, como tú la has oído, y vivido?"
+    },
+    {
+     "n": 34,
+     "texto": "¿O ha Dios probado á venir á tomar para sí gente de en medio [de otra] gente, con pruebas, con señales, con milagros, y con guerra, y mano fuerte, y brazo extendido, y grandes espantos, según todas las cosas que hizo con vosotros Jehová vuestro Dios en Egipto ante tus ojos?"
+    },
+    {
+     "n": 35,
+     "texto": "A ti te fué mostrado, para que supieses que Jehová él es Dios; no hay más fuera de él."
+    },
+    {
+     "n": 36,
+     "texto": "De los cielos te hizo oir su voz, para enseñarte: y sobre la tierra te mostró su gran fuego: y has oído sus palabras de en medio del fuego."
+    },
+    {
+     "n": 37,
+     "texto": "Y por cuanto él amó á tus padres, escogió su simiente después de ellos, y sacóte delante de sí de Egipto con su gran poder;"
+    },
+    {
+     "n": 38,
+     "texto": "Para echar de delante de ti gentes grandes y más fuertes que tú, y para introducirte, y darte su tierra por heredad, como hoy."
+    },
+    {
+     "n": 39,
+     "texto": "Aprende pues hoy, y reduce á tu corazón que Jehová él es el Dios arriba en el cielo, y abajo sobre la tierra; no hay otro."
+    },
+    {
+     "n": 40,
+     "texto": "Y guarda sus estatutos y sus mandamientos, que yo te mando hoy, para que te vaya bien á ti y á tus hijos después de ti, y prolongues tus días sobre la tierra que Jehová tu Dios te da para siempre."
+    },
+    {
+     "n": 41,
+     "texto": "Entonces apartó Moisés tres ciudades de esta parte del Jordán al nacimiento del sol,"
+    },
+    {
+     "n": 42,
+     "texto": "Para que huyese allí el homicida que matase á su prójimo por yerro, sin haber tenido enemistad con él desde ayer ni antes de ayer; y que huyendo á una de estas ciudades salvara la vida:"
+    },
+    {
+     "n": 43,
+     "texto": "A Beser en el desierto, en tierra de la llanura, de los Rubenitas; y á Ramoth en Galaad, de los Gaditas; y á Golán en Basán, de los de Manasés."
+    },
+    {
+     "n": 44,
+     "texto": "Esta, pues, es la ley que Moisés propuso delante de los hijos de Israel."
+    },
+    {
+     "n": 45,
+     "texto": "Estos son los testimonios, y los estatutos, y los derechos, que Moisés notificó á los hijos de Israel, cuando hubieron salido de Egipto;"
+    },
+    {
+     "n": 46,
+     "texto": "De esta parte del Jordán, en el valle delante de Beth-peor, en la tierra de Sehón rey de los Amorrheos, que habitaba en Hesbón, al cual hirió Moisés con los hijos de Israel, cuando hubieron salido de Egipto:"
+    },
+    {
+     "n": 47,
+     "texto": "Y poseyeron su tierra, y la tierra de Og rey de Basán; dos reyes de los Amorrheos que estaban de esta parte del Jordán, al nacimiento del sol:"
+    },
+    {
+     "n": 48,
+     "texto": "Desde Aroer, que está junto á la ribera del arroyo de Arnón, hasta el monte de Sión, que es Hermón;"
+    },
+    {
+     "n": 49,
+     "texto": "Y toda la llanura de esta parte del Jordán, al oriente, hasta la mar del llano, las vertientes de las aguas abajo del Pisga."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 5,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y LLAMÓ Moisés á todo Israel, y díjoles: Oye, Israel, los estatutos y derechos que yo pronuncio hoy en vuestros oídos: y aprendedlos, y guardadlos, para ponerlos por obra."
+    },
+    {
+     "n": 2,
+     "texto": "Jehová nuestro Dios hizo pacto con nosotros en Horeb."
+    },
+    {
+     "n": 3,
+     "texto": "No con nuestros padres hizo Jehová este pacto, sino con nosotros todos los que estamos aquí hoy vivos."
+    },
+    {
+     "n": 4,
+     "texto": "Cara á cara habló Jehová con vosotros en el monte de en medio del fuego,"
+    },
+    {
+     "n": 5,
+     "texto": "(Yo estaba entonces entre Jehová y vosotros, para denunciaros la palabra de Jehová; porque vosotros tuvisteis temor del fuego, y no subisteis al monte;) diciendo:"
+    },
+    {
+     "n": 6,
+     "texto": "Yo soy Jehová tu Dios, que te saqué de tierra de Egipto, de casa de siervos."
+    },
+    {
+     "n": 7,
+     "texto": "No tendrás dioses extraños delante de mí."
+    },
+    {
+     "n": 8,
+     "texto": "No harás para ti escultura, [ni] imagen alguna [de cosa] que está arriba en los cielos, ó abajo en la tierra, ó en las aguas debajo de la tierra:"
+    },
+    {
+     "n": 9,
+     "texto": "No te inclinarás á ellas ni les servirás: porque yo soy Jehová tu Dios, fuerte, celoso, que visito la iniquidad de los padres sobre los hijos, y sobre los terceros, y sobre los cuartos, á los que me aborrecen,"
+    },
+    {
+     "n": 10,
+     "texto": "Y que hago misericordia á millares á los que me aman, y guardan mis mandamientos."
+    },
+    {
+     "n": 11,
+     "texto": "No tomarás en vano el nombre de Jehová tu Dios; porque Jehová no dará por inocente al que tomare en vano su nombre."
+    },
+    {
+     "n": 12,
+     "texto": "Guardarás el día del reposo para santificarlo, como Jehová tu Dios te ha mandado."
+    },
+    {
+     "n": 13,
+     "texto": "Seis días trabajarás y harás toda tu obra:"
+    },
+    {
+     "n": 14,
+     "texto": "Mas el séptimo es reposo á Jehová tu Dios: ninguna obra harás tú, ni tu hijo, ni tu hija, ni tu siervo, ni tu sierva, ni tu buey, ni tu asno, ni ningún animal tuyo, ni tu peregrino que está dentro de tus puertas: porque descanse tu siervo y tu sierva como tú."
+    },
+    {
+     "n": 15,
+     "texto": "Y acuérdate que fuiste siervo en tierra de Egipto, y que Jehová tu Dios te sacó de allá con mano fuerte y brazo extendido: por lo cual Jehová tu Dios te ha mandado que guardes el día del reposo."
+    },
+    {
+     "n": 16,
+     "texto": "Honra á tu padre y á tu madre, como Jehová tu Dios te ha mandado, para que sean prolongados tus días, y para que te vaya bien sobre la tierra que Jehová tu Dios te da."
+    },
+    {
+     "n": 17,
+     "texto": "No matarás."
+    },
+    {
+     "n": 18,
+     "texto": "No adulterarás."
+    },
+    {
+     "n": 19,
+     "texto": "No hurtarás."
+    },
+    {
+     "n": 20,
+     "texto": "No dirás falso testimonio contra tu prójimo."
+    },
+    {
+     "n": 21,
+     "texto": "No codiciarás la mujer de tu prójimo, ni desearás la casa de tu prójimo, ni su tierra, ni su siervo, ni su sierva, ni su buey, ni su asno, ni ninguna cosa que sea de tu prójimo."
+    },
+    {
+     "n": 22,
+     "texto": "Estas palabras habló Jehová á toda vuestra congregación en el monte, de en medio del fuego, de la nube y de la oscuridad, á gran voz: y no añadió más. Y escribiólas en dos tablas de piedra, las cuales me dió á mí."
+    },
+    {
+     "n": 23,
+     "texto": "Y aconteció, que como vosotros oisteis la voz de en medio de las tinieblas, y [visteis] al monte que ardía en fuego, llegasteis á mí todos los príncipes de vuestras tribus, y vuestros ancianos;"
+    },
+    {
+     "n": 24,
+     "texto": "Y dijisteis: He aquí, Jehová nuestro Dios nos ha mostrado su gloria y su grandeza, y hemos oído su voz de en medio del fuego: hoy hemos visto que Jehová habla al hombre, y [éste] vive."
+    },
+    {
+     "n": 25,
+     "texto": "Ahora pues, ¿por qué moriremos? que este gran fuego nos consumirá: si tornáremos á oir la voz de Jehová nuestro Dios, moriremos."
+    },
+    {
+     "n": 26,
+     "texto": "Porque, ¿qué es toda carne, para que oiga la voz del Dios viviente que habla de en medio del fuego, como nosotros [la oímos], y viva?"
+    },
+    {
+     "n": 27,
+     "texto": "Llega tú, y oye todas las cosas que dijere Jehová nuestro Dios; y tú nos dirás todo lo que Jehová nuestro Dios te dijere, y nosotros oiremos y haremos."
+    },
+    {
+     "n": 28,
+     "texto": "Y oyó Jehová la voz de vuestras palabras, cuando me hablabais; y díjome Jehová: He oído la voz de las palabras de este pueblo, que ellos te han hablado: bien está todo lo que han dicho."
+    },
+    {
+     "n": 29,
+     "texto": "¡Quién diera que tuviesen tal corazón, que me temiesen, y guardasen todos los días todos mis mandamientos, para que á ellos y á sus hijos les fuese bien para siempre!"
+    },
+    {
+     "n": 30,
+     "texto": "Ve, diles: Volveos á vuestras tiendas."
+    },
+    {
+     "n": 31,
+     "texto": "Y tú estáte aquí conmigo, y te diré todos los mandamientos, y estatutos, y derechos, que les has de enseñar, á fin que [los] pongan ahora por obra en la tierra que yo les doy para poseerla."
+    },
+    {
+     "n": 32,
+     "texto": "Mirad, pues, que hagáis como Jehová vuestro Dios os ha mandado: no os apartéis á diestra ni á siniestra;"
+    },
+    {
+     "n": 33,
+     "texto": "Andad en todo camino que Jehová vuestro Dios os ha mandado, para que viváis, y os vaya bien, y tengáis largos días en la tierra que habéis de poseer."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 6,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTOS pues son los mandamientos, estatutos, y derechos que Jehová vuestro Dios mandó que os enseñase, para que los pongáis por obra en la tierra á la cual pasáis vosotros para poseerla:"
+    },
+    {
+     "n": 2,
+     "texto": "Para que temas á Jehová tu Dios, guardando todos sus estatutos y sus mandamientos que yo te mando, tú, y tu hijo, y el hijo de tu hijo, todos los días de tu vida, y que tus días sean prolongados."
+    },
+    {
+     "n": 3,
+     "texto": "Oye pues, oh Israel, y cuida de ponerlos por obra, para que te vaya bien, y seáis multiplicados, como te ha dicho Jehová el Dios de tus padres, en la tierra que destila leche y miel."
+    },
+    {
+     "n": 4,
+     "texto": "Oye, Israel: Jehová nuestro Dios, Jehová uno es:"
+    },
+    {
+     "n": 5,
+     "texto": "Y amarás á Jehová tu Dios de todo tu corazón, y de toda tu alma, y con todo tu poder."
+    },
+    {
+     "n": 6,
+     "texto": "Y estas palabras que yo te mando hoy, estarán sobre tu corazón:"
+    },
+    {
+     "n": 7,
+     "texto": "Y las repetirás á tus hijos, y hablarás de ellas estando en tu casa, y andando por el camino, y al acostarte, y cuando te levantes:"
+    },
+    {
+     "n": 8,
+     "texto": "Y has de atarlas por señal en tu mano, y estarán por frontales entre tus ojos:"
+    },
+    {
+     "n": 9,
+     "texto": "Y las escribirás en los postes de tu casa, y en tus portadas."
+    },
+    {
+     "n": 10,
+     "texto": "Y será, cuando Jehová tu Dios te hubiere introducido en la tierra que juró á tus padres Abraham, Isaac, y Jacob, que te daría; [en] ciudades grandes y buenas que tú no edificaste,"
+    },
+    {
+     "n": 11,
+     "texto": "Y casas llenas de todo bien, que tú no henchiste, y cisternas cavadas, que tú no cavaste, viñas y olivares que no plantaste: luego que comieres y te hartares,"
+    },
+    {
+     "n": 12,
+     "texto": "Guárdate que no te olvides de Jehová, que te sacó de tierra de Egipto, de casa de siervos."
+    },
+    {
+     "n": 13,
+     "texto": "A Jehová tu Dios temerás, y á él servirás, y por su nombre jurarás."
+    },
+    {
+     "n": 14,
+     "texto": "No andaréis en pos de dioses ajenos, de los dioses de los pueblos que están en vuestros contornos:"
+    },
+    {
+     "n": 15,
+     "texto": "Porque el Dios celoso, Jehová tu Dios, en medio de ti [está]; porque no se inflame el furor de Jehová tu Dios contra ti, y te destruya de sobre la haz de la tierra."
+    },
+    {
+     "n": 16,
+     "texto": "No tentaréis á Jehová vuestro Dios, como lo tentasteis en Massa."
+    },
+    {
+     "n": 17,
+     "texto": "Guardad cuidadosamente los mandamientos de Jehová vuestro Dios, y sus testimonios, y sus estatutos, que te ha mandado."
+    },
+    {
+     "n": 18,
+     "texto": "Y harás lo recto y bueno en ojos de Jehová, para que te vaya bien, y entres y poseas la buena tierra que Jehová juró á tus padres;"
+    },
+    {
+     "n": 19,
+     "texto": "Para que él eche á todos tus enemigos de delante de ti, como Jehová ha dicho."
+    },
+    {
+     "n": 20,
+     "texto": "Cuando mañana te preguntare tu hijo, diciendo: ¿Qué significan los testimonios, y estatutos, y derechos, que Jehová nuestro Dios os mandó?"
+    },
+    {
+     "n": 21,
+     "texto": "Entonces dirás á tu hijo: Nosotros éramos siervos de Faraón en Egipto, y Jehová nos sacó de Egipto con mano fuerte;"
+    },
+    {
+     "n": 22,
+     "texto": "Y dió Jehová señales y milagros grandes y nocivos en Egipto, sobre Faraón y sobre toda su casa, delante de nuestros ojos;"
+    },
+    {
+     "n": 23,
+     "texto": "Y sacónos de allá, para traernos y darnos la tierra que juró á nuestros padres;"
+    },
+    {
+     "n": 24,
+     "texto": "Y mandónos Jehová que ejecutásemos todos estos estatutos, y que temamos á Jehová nuestro Dios, porque nos vaya bien todos los días, y para que nos dé vida, como hoy."
+    },
+    {
+     "n": 25,
+     "texto": "Y tendremos justicia cuando cuidáremos de poner por obra todos estos mandamientos delante de Jehová nuestro Dios, como él nos ha mandado."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 7,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO Jehová tu Dios te hubiere introducido en la tierra en la cual tú has de entrar para poseerla, y hubiere echado de delante de ti muchas gentes, al Hetheo, al Gergeseo, y al Amorrheo, y al Cananeo, y al Pherezeo, y al Heveo, y al Jebuseo, siete naciones mayores y más fuertes que tú;"
+    },
+    {
+     "n": 2,
+     "texto": "Y Jehová tu Dios las hubiere entregado delante de ti, y las hirieres, del todo las destruirás: no harás con ellos alianza, ni las tomarás á merced."
+    },
+    {
+     "n": 3,
+     "texto": "Y no emparentarás con ellos: no darás tu hija á su hijo, ni tomarás á su hija para tu hijo."
+    },
+    {
+     "n": 4,
+     "texto": "Porque desviará á tu hijo de en pos de mí, y servirán á dioses ajenos; y el furor de Jehová se encenderá sobre vosotros, y te destruirá presto."
+    },
+    {
+     "n": 5,
+     "texto": "Mas así habéis de hacer con ellos: sus altares destruiréis, y quebraréis sus estatuas, y cortaréis sus bosques, y quemaréis sus esculturas en el fuego."
+    },
+    {
+     "n": 6,
+     "texto": "Porque tú eres pueblo santo á Jehová tu Dios: Jehová tu Dios te ha escogido para serle un pueblo especial, más que todos los pueblos que están sobre la haz de la tierra."
+    },
+    {
+     "n": 7,
+     "texto": "No por ser vosotros más que todos los pueblos os ha querido Jehová, y os ha escogido; porque vosotros erais los más pocos de todos los pueblos:"
+    },
+    {
+     "n": 8,
+     "texto": "Sino porque Jehová os amó, y quiso guardar el juramento que juró á vuestros padres, os ha sacado Jehová con mano fuerte, y os ha rescatado de casa de siervos, de la mano de Faraón, rey de Egipto."
+    },
+    {
+     "n": 9,
+     "texto": "Conoce, pues, que Jehová tu Dios es Dios, Dios fiel, que guarda el pacto y la misericordia á los que le aman y guardan sus mandamientos, hasta las mil generaciones;"
+    },
+    {
+     "n": 10,
+     "texto": "Y que da el pago en su cara al que le aborrece, destruyéndolo: ni [lo] dilatará al que le odia, en su cara le dará el pago."
+    },
+    {
+     "n": 11,
+     "texto": "Guarda por tanto los mandamientos, y estatutos, y derechos que yo te mando hoy que cumplas."
+    },
+    {
+     "n": 12,
+     "texto": "Y será que, por haber oído estos derechos, y guardado y puéstolos por obra, Jehová tu Dios guardará contigo el pacto y la misericordia que juró á tus padres;"
+    },
+    {
+     "n": 13,
+     "texto": "Y te amará, y te bendecirá, y te multiplicará, y bendecirá el fruto de tu vientre, y el fruto de tu tierra, y tu grano, y tu mosto, y tu aceite, la cría de tus vacas, y los rebaños de tus ovejas, en la tierra que juró á tus padres que te daría."
+    },
+    {
+     "n": 14,
+     "texto": "Bendito serás más que todos los pueblos: no habrá en ti varón ni hembra estéril, ni en tus bestias."
+    },
+    {
+     "n": 15,
+     "texto": "Y quitará Jehová de ti toda enfermedad; y todas las malas plagas de Egipto, que tú sabes, no las pondrá sobre ti, antes las pondrá sobre todos los que te aborrecieren."
+    },
+    {
+     "n": 16,
+     "texto": "Y consumirás á todos los pueblos que te da Jehová tu Dios: no los perdonará tu ojo; ni servirás á sus dioses, que te será tropiezo."
+    },
+    {
+     "n": 17,
+     "texto": "Cuando dijeres en tu corazón: Estas gentes son muchas más que yo, ¿cómo las podré desarraigar?;"
+    },
+    {
+     "n": 18,
+     "texto": "No tengas temor de ellos: acuérdate bien de lo que hizo Jehová tu Dios con Faraón y con todo Egipto;"
+    },
+    {
+     "n": 19,
+     "texto": "De las grandes pruebas que vieron tus ojos, y de las señales y milagros, y de la mano fuerte y brazo extendido con que Jehová tu Dios te sacó: así hará Jehová tu Dios con todos los pueblos de cuya presencia tú temieres."
+    },
+    {
+     "n": 20,
+     "texto": "Y también enviará Jehová tu Dios sobre ellos avispas, hasta que perezcan los que quedaren, y los que se hubieren escondido de delante de ti."
+    },
+    {
+     "n": 21,
+     "texto": "No desmayes delante de ellos, que Jehová tu Dios está en medio de ti, Dios grande y terrible."
+    },
+    {
+     "n": 22,
+     "texto": "Y Jehová tu Dios echará á estas gentes de delante de ti poco á poco: no las podrás acabar luego, porque las bestias del campo no se aumenten contra ti."
+    },
+    {
+     "n": 23,
+     "texto": "Mas Jehová tu Dios las entregará delante de ti, y él las quebrantará con grande destrozo, hasta que sean destruídos."
+    },
+    {
+     "n": 24,
+     "texto": "Y él entregará sus reyes en tu mano, y tú destruirás el nombre de ellos de debajo del cielo: nadie te hará frente hasta que los destruyas."
+    },
+    {
+     "n": 25,
+     "texto": "Las esculturas de sus dioses quemarás en el fuego: no codiciarás plata ni oro de sobre ellas para tomarlo para ti, porque no tropieces en ello, pues es abominación á Jehová tu Dios;"
+    },
+    {
+     "n": 26,
+     "texto": "Y no meterás abominación en tu casa, porque no seas anatema como ello; del todo lo aborrecerás y lo abominarás; porque es anatema."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 8,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUIDARÉIS de poner por obra todo mandamiento que yo os ordeno hoy, porque viváis, y seáis multiplicados, y entréis, y poseáis la tierra, de la cual juró Jehová á vuestros padres."
+    },
+    {
+     "n": 2,
+     "texto": "Y acordarte has de todo el camino por donde te ha traído Jehová tu Dios estos cuarenta años en el desierto, para afligirte, por probarte, para saber lo que estaba en tu corazón, si habías de guardar ó no sus mandamientos."
+    },
+    {
+     "n": 3,
+     "texto": "Y te afligió, é hízote tener hambre, y te sustentó con maná, [comida] que no conocías tú, ni tus padres la habían conocido; para hacerte saber que el hombre no vivirá de solo pan, mas de todo lo que sale de la boca de Jehová vivirá el hombre."
+    },
+    {
+     "n": 4,
+     "texto": "Tu vestido nunca se envejeció sobre ti, ni el pie se te ha hinchado por estos cuarenta años."
+    },
+    {
+     "n": 5,
+     "texto": "Reconoce asimismo en tu corazón, que como castiga el hombre á su hijo, así Jehová tu Dios te castiga."
+    },
+    {
+     "n": 6,
+     "texto": "Guardarás, pues, los mandamientos de Jehová tu Dios, andando en sus caminos, y temiéndolo."
+    },
+    {
+     "n": 7,
+     "texto": "Porque Jehová tu Dios te introduce en la buena tierra, tierra de arroyos, de aguas, de fuentes, de abismos que brotan por vegas y montes;"
+    },
+    {
+     "n": 8,
+     "texto": "Tierra de trigo y cebada, y de vides, é higueras, y granados; tierra de olivas, de aceite, y de miel;"
+    },
+    {
+     "n": 9,
+     "texto": "Tierra en la cual no comerás el pan con escasez, no te faltará nada en ella; tierra que sus piedras son hierro, y de sus montes cortarás metal."
+    },
+    {
+     "n": 10,
+     "texto": "Y comerás y te hartarás, y bendecirás á Jehová tu Dios por la buena tierra que te habrá dado."
+    },
+    {
+     "n": 11,
+     "texto": "Guárdate, que no te olvides de Jehová tu Dios, para no observar sus mandamientos, y sus derechos, y sus estatutos, que yo te ordeno hoy:"
+    },
+    {
+     "n": 12,
+     "texto": "Que quizá no comas y te hartes, y edifiques buenas casas en que mores,"
+    },
+    {
+     "n": 13,
+     "texto": "Y tus vacas y tus ovejas se aumenten, y la plata y el oro se te multiplique, y todo lo que tuvieres se te aumente,"
+    },
+    {
+     "n": 14,
+     "texto": "Y se eleve luego tu corazón, y te olvides de Jehová tu Dios, que te sacó de tierra de Egipto, de casa de siervos;"
+    },
+    {
+     "n": 15,
+     "texto": "Que te hizo caminar por un desierto grande y espantoso, de serpientes ardientes, y de escorpiones, y de sed, donde ningún agua había, y él te sacó agua de la roca del pedernal;"
+    },
+    {
+     "n": 16,
+     "texto": "Que te sustentó con maná en el desierto, [comida] que tus padres no habían conocido, afligiéndote y probándote, para á la postre hacerte bien;"
+    },
+    {
+     "n": 17,
+     "texto": "Y digas en tu corazón: Mi poder y la fortaleza de mi mano me han traído esta riqueza."
+    },
+    {
+     "n": 18,
+     "texto": "Antes acuérdate de Jehová tu Dios: porque él te da el poder para hacer las riquezas, á fin de confirmar su pacto que juró á tus padres, como en este día."
+    },
+    {
+     "n": 19,
+     "texto": "Mas será, si llegares á olvidarte de Jehová tu Dios, y anduvieres en pos de dioses ajenos, y les sirvieres, y á ellos te encorvares, protésto[lo] hoy contra vosotros, que de cierto pereceréis."
+    },
+    {
+     "n": 20,
+     "texto": "Como las gentes que Jehová destruirá delante de vosotros, así pereceréis; por cuanto no habréis atendido á la voz de Jehová vuestro Dios."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 9,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "OYE, Israel: tú estás hoy para pasar el Jordán, para entrar á poseer gentes más [numerosas] y más fuertes que tú, ciudades grandes y encastilladas hasta el cielo,"
+    },
+    {
+     "n": 2,
+     "texto": "Un pueblo grande y alto, hijos de gigantes, de los cuales tienes tú conocimiento, y has oído decir: ¿Quién se sostendrá delante de los hijos del gigante?"
+    },
+    {
+     "n": 3,
+     "texto": "Sabe, pues, hoy que Jehová tu Dios es el que pasa delante de ti, fuego consumidor, que los destruirá y humillará delante de ti: y tú los echarás, y los destruirás luego, como Jehová te ha dicho."
+    },
+    {
+     "n": 4,
+     "texto": "No discurras en tu corazón cuando Jehová tu Dios los habrá echado de delante de ti, diciendo: Por mi justicia me ha metido Jehová á poseer esta tierra; pues por la impiedad de estas gentes Jehová las echa de delante de ti."
+    },
+    {
+     "n": 5,
+     "texto": "No por tu justicia, ni por la rectitud de tu corazón entras á poseer la tierra de ellos; mas por la impiedad de estas gentes Jehová tu Dios las echa de delante de ti, y por confirmar la palabra que Jehová juró á tus padres Abraham, Isaac, y Jacob."
+    },
+    {
+     "n": 6,
+     "texto": "Por tanto, sabe que no por tu justicia Jehová tu Dios te da esta buena tierra para poseerla; que pueblo duro de cerviz eres tú."
+    },
+    {
+     "n": 7,
+     "texto": "Acuérdate, no te olvides que has provocado á ira á Jehová tu Dios en el desierto: desde el día que saliste de la tierra de Egipto, hasta que entrasteis en este lugar, habéis sido rebeldes á Jehová."
+    },
+    {
+     "n": 8,
+     "texto": "Y en Horeb provocasteis á ira á Jehová, y enojóse Jehová contra vosotros para destruiros."
+    },
+    {
+     "n": 9,
+     "texto": "Cuando yo subí al monte para recibir las tablas de piedra, las tablas del pacto que Jehová hizo con vosotros, estuve entonces en el monte cuarenta días y cuarenta noches, sin comer pan ni beber agua:"
+    },
+    {
+     "n": 10,
+     "texto": "Y dióme Jehová las dos tablas de piedra escritas con el dedo de Dios; y en ellas [estaba escrito] conforme á todas las palabras que os habló Jehová en el monte de en medio del fuego, el día de la asamblea."
+    },
+    {
+     "n": 11,
+     "texto": "Y fué al cabo de los cuarenta días y cuarenta noches, que Jehová me dió las dos tablas de piedra, las tablas del pacto."
+    },
+    {
+     "n": 12,
+     "texto": "Y díjome Jehová: Levántate, desciende presto de aquí; que tu pueblo que sacaste de Egipto se ha corrompido: pronto se han apartado del camino que yo les mandé: hanse hecho una efigie de fundición."
+    },
+    {
+     "n": 13,
+     "texto": "Y hablóme Jehová, diciendo: He visto ese pueblo, y he aquí, que él es pueblo duro de cerviz:"
+    },
+    {
+     "n": 14,
+     "texto": "Déjame que los destruya, y raiga su nombre de debajo del cielo; que yo te pondré sobre gente fuerte y mucha más que ellos."
+    },
+    {
+     "n": 15,
+     "texto": "Y volví y descendí del monte, el cual ardía en fuego, con las tablas del pacto en mis dos manos."
+    },
+    {
+     "n": 16,
+     "texto": "Y miré, y he aquí habíais pecado contra Jehová vuestro Dios: os habíais hecho un becerro de fundición, apartándoos presto del camino que Jehová os había mandado."
+    },
+    {
+     "n": 17,
+     "texto": "Entonces tomé las dos tablas, y arrojélas de mis dos manos, y quebrélas delante de vuestros ojos."
+    },
+    {
+     "n": 18,
+     "texto": "Y postréme delante de Jehová, como antes, cuarenta días y cuarenta noches: no comí pan ni bebí agua, á causa de todo vuestro pecado que habíais cometido haciendo mal en ojos de Jehová para enojarlo."
+    },
+    {
+     "n": 19,
+     "texto": "Porque temí á causa del furor y de la ira con que Jehová estaba enojado contra vosotros para destruiros. Pero Jehová me oyó aún esta vez."
+    },
+    {
+     "n": 20,
+     "texto": "Contra Aarón también se enojó Jehová en gran manera para destruirlo: y también oré por Aarón entonces."
+    },
+    {
+     "n": 21,
+     "texto": "Y tomé vuestro pecado, el becerro que habíais hecho, y quemélo en el fuego, y lo desmenucé moliéndole muy bien, hasta que fué reducido á polvo: y eché el polvo de él en el arroyo que descendía del monte."
+    },
+    {
+     "n": 22,
+     "texto": "También en Tabera, y en Massa, y en Kibroth-hataavah, enojasteis á Jehová."
+    },
+    {
+     "n": 23,
+     "texto": "Y cuando Jehová os envió desde Cades-barnea, diciendo, Subid y poseed la tierra que yo os he dado; también fuisteis rebeldes al dicho de Jehová vuestro Dios, y no lo creisteis, ni obedecisteis á su voz."
+    },
+    {
+     "n": 24,
+     "texto": "Rebeldes habéis sido á Jehová desde el día que yo os conozco."
+    },
+    {
+     "n": 25,
+     "texto": "Postréme, pues, delante de Jehová cuarenta días y cuarenta noches que estuve postrado; porque Jehová dijo que os había de destruir."
+    },
+    {
+     "n": 26,
+     "texto": "Y oré á Jehová, diciendo: Oh Señor Jehová, no destruyas tu pueblo y tu heredad que has redimido con tu grandeza, al cual sacaste de Egipto con mano fuerte."
+    },
+    {
+     "n": 27,
+     "texto": "Acuérdate de tus siervos Abraham, Isaac, y Jacob; no mires á la dureza de este pueblo, ni á su impiedad, ni á su pecado:"
+    },
+    {
+     "n": 28,
+     "texto": "Porque no digan [los de] la tierra de donde nos sacaste: Por cuanto no pudo Jehová introducirlos en la tierra que les había dicho, ó porque los aborrecía, los sacó para matarlos en el desierto."
+    },
+    {
+     "n": 29,
+     "texto": "Y ellos son tu pueblo y tu heredad, que sacaste con tu gran fortaleza y con tu brazo extendido."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 10,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN aquel tiempo Jehová me dijo: Lábrate dos tablas de piedra como las primeras, y sube á mí al monte, y hazte un arca de madera:"
+    },
+    {
+     "n": 2,
+     "texto": "Y escribiré en aquellas tablas las palabras que estaban en las tablas primeras que quebraste; y las pondrás en el arca."
+    },
+    {
+     "n": 3,
+     "texto": "E hice un arca de madera de Sittim, y labré dos tablas de piedra como las primeras, y subí al monte con las dos tablas en mi mano."
+    },
+    {
+     "n": 4,
+     "texto": "Y escribió en las tablas conforme á la primera escritura, las diez palabras que Jehová os había hablado en el monte de en medio del fuego, el día de la asamblea; y diómelas Jehová."
+    },
+    {
+     "n": 5,
+     "texto": "Y volví y descendí del monte, y puse las tablas en el arca que había hecho; y allí están, como Jehová me mandó."
+    },
+    {
+     "n": 6,
+     "texto": "(Después partieron los hijos de Israel de Beerot-bene-jacaam á Moserá: allí murió Aarón, y allí fué sepultado; y en lugar suyo tuvo el sacerdocio su hijo Eleazar."
+    },
+    {
+     "n": 7,
+     "texto": "De allí partieron á Gudgod, y de Gudgod á Jotbath, tierra de arroyos de aguas."
+    },
+    {
+     "n": 8,
+     "texto": "En aquel tiempo apartó Jehová la tribu de Leví, para que llevase el arca del pacto de Jehová, para que estuviese delante de Jehová para servirle, y para bendecir en su nombre, hasta hoy."
+    },
+    {
+     "n": 9,
+     "texto": "Por lo cual Leví no tuvo parte ni heredad con sus hermanos: Jehová es su heredad, como Jehová tu Dios le dijo.)"
+    },
+    {
+     "n": 10,
+     "texto": "Y yo estuve en el monte como los primeros días, cuarenta días y cuarenta noches; y Jehová me oyó también esta vez, y no quiso Jehová destruirte."
+    },
+    {
+     "n": 11,
+     "texto": "Y díjome Jehová: Levántate, anda, para que partas delante del pueblo, para que entren y posean la tierra que juré á sus padres les había de dar."
+    },
+    {
+     "n": 12,
+     "texto": "Ahora pues, Israel, ¿qué pide Jehová tu Dios de ti, sino que temas á Jehová tu Dios, que andes en todos sus caminos, y que lo ames, y sirvas á Jehová tu Dios con todo tu corazón, y con toda tu alma;"
+    },
+    {
+     "n": 13,
+     "texto": "Que guardes los mandamientos de Jehová y sus estatutos, que yo te prescribo hoy, para que hayas bien?"
+    },
+    {
+     "n": 14,
+     "texto": "He aquí, de Jehová tu Dios son los cielos, y los cielos de los cielos: la tierra, y todas las cosas que hay en ella."
+    },
+    {
+     "n": 15,
+     "texto": "Solamente de tus padres se agradó Jehová para amarlos, y escogió su simiente después de ellos, á vosotros, de entre todos los pueblos, como en este día."
+    },
+    {
+     "n": 16,
+     "texto": "Circuncidad pues el prepucio de vuestro corazón, y no endurezcáis más vuestra cerviz."
+    },
+    {
+     "n": 17,
+     "texto": "Porque Jehová vuestro Dios es Dios de dioses, y Señor de señores, Dios grande, poderoso, y terrible, que no acepta persona, ni toma cohecho;"
+    },
+    {
+     "n": 18,
+     "texto": "Que hace justicia al huérfano y á la viuda; que ama también al extranjero dándole pan y vestido."
+    },
+    {
+     "n": 19,
+     "texto": "Amaréis pues al extranjero: porque extranjeros fuisteis vosotros en tierra de Egipto."
+    },
+    {
+     "n": 20,
+     "texto": "A Jehová tu Dios temerás, á él servirás, á él te allegarás, y por su nombre jurarás."
+    },
+    {
+     "n": 21,
+     "texto": "El es tu alabanza, y él es tu Dios, que ha hecho contigo estas grandes y terribles cosas que tus ojos han visto."
+    },
+    {
+     "n": 22,
+     "texto": "Con setenta almas descendieron tus padres á Egipto; y ahora Jehová te ha hecho como las estrellas del cielo en multitud."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 11,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "AMARÁS pues á Jehová tu Dios, y guardarás su ordenanza, y sus estatutos y sus derechos y sus mandamientos, todos los días."
+    },
+    {
+     "n": 2,
+     "texto": "Y comprended hoy: porque no [hablo] con vuestros hijos que no han sabido ni visto el castigo de Jehová vuestro Dios, su grandeza, su mano fuerte, y su brazo extendido,"
+    },
+    {
+     "n": 3,
+     "texto": "Y sus señales, y sus obras que hizo en medio de Egipto á Faraón, rey de Egipto, y á toda su tierra;"
+    },
+    {
+     "n": 4,
+     "texto": "Y lo que hizo al ejército de Egipto, á sus caballos, y á sus carros; cómo hizo ondear las aguas del mar Bermejo sobre ellos, cuando venían tras vosotros, y Jehová los destruyó hasta hoy;"
+    },
+    {
+     "n": 5,
+     "texto": "Y lo que ha hecho con vosotros en el desierto, hasta que habéis llegado á este lugar;"
+    },
+    {
+     "n": 6,
+     "texto": "Y lo que hizo con Dathán y Abiram, hijos de Eliab hijo de Rubén; cómo abrió la tierra su boca, y tragóse á ellos y á sus casas, y sus tiendas, y toda la hacienda que tenían en pie en medio de todo Israel:"
+    },
+    {
+     "n": 7,
+     "texto": "Mas vuestros ojos han visto todos los grandes hechos que Jehová ha ejecutado."
+    },
+    {
+     "n": 8,
+     "texto": "Guardad, pues, todos los mandamientos que yo os prescribo hoy, para que seáis esforzados, y entréis y poseáis la tierra, á la cual pasáis para poseerla;"
+    },
+    {
+     "n": 9,
+     "texto": "Y para que os sean prolongados los días sobre la tierra, que juró Jehová á vuestros padres había de dar á ellos y á su simiente, tierra que fluye leche y miel."
+    },
+    {
+     "n": 10,
+     "texto": "Que la tierra á la cual entras para poseerla, no es como la tierra de Egipto de donde habéis salido, donde sembrabas tu simiente, y regabas con tu pie, como huerto de hortaliza."
+    },
+    {
+     "n": 11,
+     "texto": "La tierra á la cual pasáis para poseerla, es tierra de montes y de vegas; de la lluvia del cielo ha de beber las aguas;"
+    },
+    {
+     "n": 12,
+     "texto": "Tierra de la cual Jehová tu Dios cuida: siempre están sobre ella los ojos de Jehová tu Dios, desde el principio del año hasta el fin de él."
+    },
+    {
+     "n": 13,
+     "texto": "Y será que, si obedeciereis cuidadosamente mis mandamientos que yo os prescribo hoy, amando á Jehová vuestro Dios, y sirviéndolo con todo vuestro corazón, y con toda vuestra alma,"
+    },
+    {
+     "n": 14,
+     "texto": "Yo daré la lluvia de vuestra tierra en su tiempo, la temprana y la tardía; y cogerás tu grano, y tu vino, y tu aceite."
+    },
+    {
+     "n": 15,
+     "texto": "Daré también hierba en tu campo para tus bestias; y comerás, y te hartarás."
+    },
+    {
+     "n": 16,
+     "texto": "Guardaos, pues, que vuestro corazón no se infatúe, y os apartéis, y sirváis á dioses ajenos, y os inclinéis á ellos;"
+    },
+    {
+     "n": 17,
+     "texto": "Y así se encienda el furor de Jehová sobre vosotros, y cierre los cielos, y no haya lluvia, ni la tierra dé su fruto, y perezcáis presto de la buena tierra que os da Jehová."
+    },
+    {
+     "n": 18,
+     "texto": "Por tanto, pondréis estas mis palabras en vuestro corazón y en vuestra alma, y las ataréis por señal en vuestra mano, y serán por frontales entre vuestros ojos."
+    },
+    {
+     "n": 19,
+     "texto": "Y las enseñaréis á vuestros hijos, hablando de ellas, ora sentado en tu casa, ó andando por el camino, cuando te acuestes, y cuando te levantes:"
+    },
+    {
+     "n": 20,
+     "texto": "Y las escribirás en los postes de tu casa, y en tus portadas:"
+    },
+    {
+     "n": 21,
+     "texto": "Para que sean aumentados vuestros días, y los días de vuestros hijos, sobre la tierra que juró Jehová á vuestros padres que les había de dar, como los días de los cielos sobre la tierra."
+    },
+    {
+     "n": 22,
+     "texto": "Porque si guardareis cuidadosamente todos estos mandamientos que yo os prescribo, para que los cumpláis; como améis á Jehová vuestro Dios andando en todos sus caminos, y á él os allegareis,"
+    },
+    {
+     "n": 23,
+     "texto": "Jehová también echará todas estas gentes de delante de vosotros y poseeréis gentes grandes y más fuertes que vosotros."
+    },
+    {
+     "n": 24,
+     "texto": "Todo lugar que pisare la planta de vuestro pie, será vuestro: desde el desierto y el Líbano, desde el río, el río Eufrates, hasta la mar postrera será vuestro término."
+    },
+    {
+     "n": 25,
+     "texto": "Nadie se sostendrá delante de vosotros: miedo y temor de vosotros pondrá Jehová vuestro Dios sobre la haz de toda la tierra que hollareis, como él os ha dicho."
+    },
+    {
+     "n": 26,
+     "texto": "He aquí yo pongo hoy delante de vosotros la bendición y la maldición:"
+    },
+    {
+     "n": 27,
+     "texto": "La bendición, si oyereis los mandamientos de Jehová vuestro Dios, que yo os prescribo hoy;"
+    },
+    {
+     "n": 28,
+     "texto": "Y la maldición, si no oyereis los mandamientos de Jehová vuestro Dios, y os apartareis del camino que yo os ordeno hoy, para ir en pos de dioses ajenos que no habéis conocido."
+    },
+    {
+     "n": 29,
+     "texto": "Y será que, cuando Jehová tu Dios te introdujere en la tierra á la cual vas para poseerla, pondrás la bendición sobre el monte Gerizim, y la maldición sobre el monte Ebal:"
+    },
+    {
+     "n": 30,
+     "texto": "Los cuales están de la otra parte del Jordán, tras el camino del occidente en la tierra del Cananeo, que habita en la campiña delante de Gilgal, junto á los llanos de Moreh."
+    },
+    {
+     "n": 31,
+     "texto": "Porque vosotros pasáis el Jordán, para ir á poseer la tierra que os da Jehová vuestro Dios; y la poseeréis, y habitaréis en ella."
+    },
+    {
+     "n": 32,
+     "texto": "Cuidaréis, pues, de poner por obra todos los estatutos y derechos que yo presento hoy delante de vosotros."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 12,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTOS son los estatutos y derechos que cuidaréis de poner por obra, en la tierra que Jehová el Dios de tus padres te ha dado para que la poseas, todos los días que vosotros viviereis sobre la tierra."
+    },
+    {
+     "n": 2,
+     "texto": "Destruiréis enteramente todos los lugares donde las gentes que vosotros heredareis sirvieron á sus dioses, sobre los montes altos, y sobre los collados, y debajo de todo árbol espeso:"
+    },
+    {
+     "n": 3,
+     "texto": "Y derribaréis sus altares, y quebraréis sus imágenes, y sus bosques consumiréis con fuego: y destruiréis las esculturas de sus dioses, y extirparéis el nombre de ellas de aquel lugar."
+    },
+    {
+     "n": 4,
+     "texto": "No haréis así á Jehová vuestro Dios."
+    },
+    {
+     "n": 5,
+     "texto": "Mas el lugar que Jehová vuestro Dios escogiere de todas vuestras tribus, para poner allí su nombre para su habitación, ése buscaréis, y allá iréis:"
+    },
+    {
+     "n": 6,
+     "texto": "Y allí llevaréis vuestros holocaustos, y vuestros sacrificios, y vuestros diezmos, y la ofrenda elevada de vuestras manos, y vuestros votos, y vuestras ofrendas voluntarias, y los primerizos de vuestras vacas y de vuestras ovejas:"
+    },
+    {
+     "n": 7,
+     "texto": "Y comeréis allí delante de Jehová vuestro Dios, y os alegraréis, vosotros y vuestras familias, en toda obra de vuestras manos en que Jehová tu Dios te hubiere bendecido."
+    },
+    {
+     "n": 8,
+     "texto": "No haréis como todo lo que nosotros hacemos aquí ahora, cada uno lo que le parece,"
+    },
+    {
+     "n": 9,
+     "texto": "Porque aun hasta ahora no habéis entrado al reposo y á la heredad que os da Jehová vuestro Dios."
+    },
+    {
+     "n": 10,
+     "texto": "Mas pasaréis el Jordán, y habitaréis en la tierra que Jehová vuestro Dios os hace heredar, y él os dará reposo de todos vuestros enemigos alrededor, y habitaréis seguros."
+    },
+    {
+     "n": 11,
+     "texto": "Y al lugar que Jehová vuestro Dios escogiere para hacer habitar en él su nombre, allí llevaréis todas las cosas que yo os mando: vuestros holocaustos, y vuestros sacrificios, vuestros diezmos, y las ofrendas elevadas de vuestras manos, y todo lo escogido de vuestros votos que hubiereis prometido á Jehová;"
+    },
+    {
+     "n": 12,
+     "texto": "Y os alegraréis delante de Jehová vuestro Dios, vosotros, y vuestros hijos, y vuestras hijas, y vuestros siervos, y vuestras siervas, y el Levita que estuviere en vuestras poblaciones: por cuanto no tiene parte ni heredad con vosotros."
+    },
+    {
+     "n": 13,
+     "texto": "Guárdate, que no ofrezcas tus holocaustos en cualquier lugar que vieres;"
+    },
+    {
+     "n": 14,
+     "texto": "Mas en el lugar que Jehová escogiere, en una de tus tribus, allí ofrecerás tus holocaustos, y allí harás todo lo que yo te mando."
+    },
+    {
+     "n": 15,
+     "texto": "Con todo, podrás matar y comer carne en todas tus poblaciones conforme al deseo de tu alma, según la bendición de Jehová tu Dios que él te habrá dado: el inmundo y el limpio la comerá, como [la] de corzo ó de ciervo:"
+    },
+    {
+     "n": 16,
+     "texto": "Salvo que sangre no comeréis; sobre la tierra la derramaréis como agua."
+    },
+    {
+     "n": 17,
+     "texto": "Ni podrás comer en tus poblaciones el diezmo de tu grano, ó de tu vino, ó de tu aceite, ni los primerizos de tus vacas, ni de tus ovejas, ni tus votos que prometieres, ni tus ofrendas voluntarias, ni las elevadas ofrendas de tus manos:"
+    },
+    {
+     "n": 18,
+     "texto": "Mas delante de Jehová tu Dios las comerás, en el lugar que Jehová tu Dios hubiere escogido, tú, y tu hijo, y tu hija, y tu siervo, y tu sierva, y el Levita que está en tus poblaciones: y alegrarte has delante de Jehová tu Dios en toda obra de tus manos."
+    },
+    {
+     "n": 19,
+     "texto": "Ten cuidado de no desamparar al Levita en todos tus días sobre tu tierra."
+    },
+    {
+     "n": 20,
+     "texto": "Cuando Jehová tu Dios ensanchare tu término, como él te ha dicho, y tú dijeres, Comeré carne, porque deseó tu alma comerla, conforme á todo el deseo de tu alma comerás carne."
+    },
+    {
+     "n": 21,
+     "texto": "Cuando estuviere lejos de ti el lugar que Jehová tu Dios habrá escogido, para poner allí su nombre, matarás de tus vacas y de tus ovejas, que Jehová te hubiere dado, como te he mandado yo, y comerás en tus puertas según todo lo que deseare tu alma."
+    },
+    {
+     "n": 22,
+     "texto": "Lo mismo que se come el corzo y el ciervo, así las comerás: el inmundo y el limpio comerán también de ellas."
+    },
+    {
+     "n": 23,
+     "texto": "Solamente que te esfuerces á no comer sangre: porque la sangre es el alma; y no has de comer el alma juntamente con su carne."
+    },
+    {
+     "n": 24,
+     "texto": "No la comerás: en tierra la derramarás como agua."
+    },
+    {
+     "n": 25,
+     "texto": "No comerás de ella; para que te vaya bien á ti, y á tus hijos después de ti, cuando hicieres lo recto en ojos de Jehová."
+    },
+    {
+     "n": 26,
+     "texto": "Empero las cosas que tuvieres tú consagradas, y tus votos, las tomarás, y vendrás al lugar que Jehová hubiere escogido:"
+    },
+    {
+     "n": 27,
+     "texto": "Y ofrecerás tus holocaustos, la carne y la sangre, sobre el altar de Jehová tu Dios: y la sangre de tus sacrificios será derramada sobre el altar de Jehová tu Dios, y comerás la carne."
+    },
+    {
+     "n": 28,
+     "texto": "Guarda y escucha todas estas palabras que yo te mando, porque te vaya bien á ti y á tus hijos después de ti para siempre, cuando hicieres lo bueno y lo recto en los ojos de Jehová tu Dios."
+    },
+    {
+     "n": 29,
+     "texto": "Cuando hubiere devastado delante de ti Jehová tu Dios las naciones á donde tú vas para poseerlas, y las heredares, y habitares en su tierra,"
+    },
+    {
+     "n": 30,
+     "texto": "Guárdate que no tropieces en pos de ellas, después que fueren destruídas delante de ti: no preguntes acerca de sus dioses, diciendo: De la manera que servían aquellas gentes á sus dioses, así haré yo también."
+    },
+    {
+     "n": 31,
+     "texto": "No harás así á Jehová tu Dios; porque todo lo que Jehová aborrece, hicieron ellos á sus dioses; pues aun á sus hijos é hijas quemaban en el fuego á sus dioses."
+    },
+    {
+     "n": 32,
+     "texto": "Cuidaréis de hacer todo lo que yo os mando: no añadirás á ello, ni quitarás de ello."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 13,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO se levantare en medio de ti profeta, ó soñador de sueños, y te diere señal ó prodigio,"
+    },
+    {
+     "n": 2,
+     "texto": "Y acaeciere la señal ó prodigio que él te dijo, diciendo: Vamos en pos de dioses ajenos, que no conociste, y sirvámosles;"
+    },
+    {
+     "n": 3,
+     "texto": "No darás oído á las palabras de tal profeta, ni al tal soñador de sueños: porque Jehová vuestro Dios os prueba, para saber si amáis á Jehová vuestro Dios con todo vuestro corazón, y con toda vuestra alma."
+    },
+    {
+     "n": 4,
+     "texto": "En pos de Jehová vuestro Dios andaréis, y á él temeréis, y guardaréis sus mandamientos, y escucharéis su voz, y á él serviréis, y á él os allegaréis."
+    },
+    {
+     "n": 5,
+     "texto": "Y el tal profeta ó soñador de sueños, ha de ser muerto; por cuanto trató de rebelión contra Jehová vuestro Dios, que te sacó de tierra de Egipto, y te rescató de casa de siervos, y de echarte del camino por el que Jehová tu Dios te mandó que anduvieses: y así quitarás el mal de en medio de ti."
+    },
+    {
+     "n": 6,
+     "texto": "Cuando te incitare tu hermano, hijo de tu madre, ó tu hijo, ó tu hija, ó la mujer de tu seno, ó tu amigo que sea como tu alma, diciendo en secreto: Vamos y sirvamos á dioses ajenos, que ni tú ni tus padres conocisteis,"
+    },
+    {
+     "n": 7,
+     "texto": "De los dioses de los pueblos que están en vuestros alrededores cercanos á ti, ó lejos de ti, desde el un cabo de la tierra hasta el otro cabo de ella;"
+    },
+    {
+     "n": 8,
+     "texto": "No consentirás con él, ni le darás oído; ni tu ojo le perdonará, ni tendrás compasión, ni lo encubrirás:"
+    },
+    {
+     "n": 9,
+     "texto": "Antes has de matarlo; tu mano será primero sobre él para matarle, y después la mano de todo el pueblo."
+    },
+    {
+     "n": 10,
+     "texto": "Y has de apedrearlo con piedras, y morirá; por cuanto procuró apartarte de Jehová tu Dios, que te sacó de tierra de Egipto, de casa de siervos:"
+    },
+    {
+     "n": 11,
+     "texto": "Para que todo Israel oiga, y tema, y no tornen á hacer cosa semejante á esta mala cosa en medio de ti."
+    },
+    {
+     "n": 12,
+     "texto": "Cuando oyeres de alguna de tus ciudades que Jehová tu Dios te da para que mores en ellas, que se dice:"
+    },
+    {
+     "n": 13,
+     "texto": "Hombres, hijos de impiedad, han salido de en medio de ti, que han instigado á los moradores de su ciudad, diciendo: Vamos y sirvamos á dioses ajenos, que vosotros no conocisteis;"
+    },
+    {
+     "n": 14,
+     "texto": "Tú inquirirás, y buscarás, y preguntarás con diligencia; y si pareciere verdad, cosa cierta, que tal abominación se hizo en medio de ti,"
+    },
+    {
+     "n": 15,
+     "texto": "Irremisiblemente herirás á filo de espada los moradores de aquella ciudad, destruyéndola con todo lo que en ella hubiere, y [también] sus bestias á filo de espada."
+    },
+    {
+     "n": 16,
+     "texto": "Y juntarás todo el despojo de ella en medio de su plaza, y consumirás con fuego la ciudad y todo su despojo, todo ello, á Jehová tu Dios: y será un montón para siempre: nunca más se edificará."
+    },
+    {
+     "n": 17,
+     "texto": "Y no se pegará algo á tu mano del anatema; porque Jehová se aparte del furor de su ira, y te dé mercedes, y tenga misericordia de ti, y te multiplique, como lo juró á tus padres,"
+    },
+    {
+     "n": 18,
+     "texto": "Cuando obedecieres á la voz de Jehová tu Dios, guardando todos sus mandamientos que yo te prescribo hoy, para hacer lo recto en ojos de Jehová tu Dios."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 14,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "HIJOS sois de Jehová vuestro Dios: no os sajaréis, ni pondréis calva sobre vuestros ojos por muerto;"
+    },
+    {
+     "n": 2,
+     "texto": "Porque eres pueblo santo á Jehová tu Dios, y Jehová te ha escogido para que le seas un pueblo singular de entre todos los pueblos que están sobre la haz de la tierra."
+    },
+    {
+     "n": 3,
+     "texto": "Nada abominable comerás."
+    },
+    {
+     "n": 4,
+     "texto": "Estos son los animales que comeréis: el buey, la oveja, y la cabra,"
+    },
+    {
+     "n": 5,
+     "texto": "El ciervo, el corzo, y el búfalo, y el cabrío salvaje, y el unicornio, y buey salvaje, y cabra montés."
+    },
+    {
+     "n": 6,
+     "texto": "Y todo animal de pezuñas, que tiene hendidura de dos uñas, y que rumiare entre los animales, ese comeréis."
+    },
+    {
+     "n": 7,
+     "texto": "Empero estos no comeréis de los que rumian, ó tienen uña hendida: camello, y liebre, y conejo, porque rumian, mas no tienen uña hendida, os serán inmundos;"
+    },
+    {
+     "n": 8,
+     "texto": "Ni puerco: porque tiene uña hendida, mas no rumia, os será inmundo. De la carne de éstos no comeréis, ni tocaréis sus cuerpos muertos."
+    },
+    {
+     "n": 9,
+     "texto": "Esto comeréis de todo lo que está en el agua: todo lo que tiene aleta y escama comeréis;"
+    },
+    {
+     "n": 10,
+     "texto": "Mas todo lo que no tuviere aleta y escama, no comeréis: inmundo os será."
+    },
+    {
+     "n": 11,
+     "texto": "Toda ave limpia comeréis."
+    },
+    {
+     "n": 12,
+     "texto": "Y estas son de las que no comeréis: el águila, y el azor, y el esmerejón,"
+    },
+    {
+     "n": 13,
+     "texto": "Y el ixio, y el buitre, y el milano según su especie,"
+    },
+    {
+     "n": 14,
+     "texto": "Y todo cuervo según su especie,"
+    },
+    {
+     "n": 15,
+     "texto": "Y el buho, y la lechuza, y el cuclillo, y el halcón según su especie,"
+    },
+    {
+     "n": 16,
+     "texto": "Y el herodión, y el cisne, y el ibis,"
+    },
+    {
+     "n": 17,
+     "texto": "Y el somormujo, y el calamón, y el corvejón,"
+    },
+    {
+     "n": 18,
+     "texto": "Y la cigüeña, y la garza según su especie, y la abubilla, y el murciélago."
+    },
+    {
+     "n": 19,
+     "texto": "Y todo reptil alado os será inmundo: no se comerá."
+    },
+    {
+     "n": 20,
+     "texto": "Toda ave limpia comeréis."
+    },
+    {
+     "n": 21,
+     "texto": "Ninguna cosa mortecina comeréis: al extranjero que está en tus poblaciones la darás, y él la comerá: ó véndela al extranjero; porque tú eres pueblo santo á Jehová tu Dios. No cocerás el cabrito en la leche de su madre."
+    },
+    {
+     "n": 22,
+     "texto": "Indispensablemente diezmarás todo el producto de tu simiente, que rindiere el campo cada un año."
+    },
+    {
+     "n": 23,
+     "texto": "Y comerás delante de Jehová tu Dios en el lugar que él escogiere para hacer habitar allí su nombre, el diezmo de tu grano, de tu vino, y de tu aceite, y los primerizos de tus manadas, y de tus ganados, para que aprendas á temer á Jehová tu Dios todos los días."
+    },
+    {
+     "n": 24,
+     "texto": "Y si el camino fuere tan largo que tú no puedas llevarlo por él, por estar lejos de ti el lugar que Jehová tu Dios hubiere escogido para poner en él su nombre, cuando Jehová tu Dios te bendijere,"
+    },
+    {
+     "n": 25,
+     "texto": "Entonces venderlo has, y atarás el dinero en tu mano, y vendrás al lugar que Jehová tu Dios escogiere;"
+    },
+    {
+     "n": 26,
+     "texto": "Y darás el dinero por todo lo que deseare tu alma, por vacas, ó por ovejas, ó por vino, ó por sidra, ó por cualquier cosa que tu alma te demandare: y comerás allí delante de Jehová tu Dios, y te alegrarás tú y tu familia."
+    },
+    {
+     "n": 27,
+     "texto": "Y no desampararás al Levita que [habitare] en tus poblaciones; porque no tiene parte ni heredad contigo."
+    },
+    {
+     "n": 28,
+     "texto": "Al cabo de cada tres años sacarás todo el diezmo de tus productos de aquel año, y lo guardarás en tus ciudades:"
+    },
+    {
+     "n": 29,
+     "texto": "Y vendrá el Levita, que no tiene parte ni heredad contigo, y el extranjero, y el huérfano, y la viuda, que hubiere en tus poblaciones, y comerán y serán saciados; para que Jehová tu Dios te bendiga en toda obra de tus manos que hicieres."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 15,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "AL cabo de siete años harás remisión."
+    },
+    {
+     "n": 2,
+     "texto": "Y esta es la manera de la remisión: perdonará á su deudor todo aquél que hizo empréstito de su mano, con que obligó á su prójimo: no lo demandará más á su prójimo, ó á su hermano; porque la remisión de Jehová es pregonada."
+    },
+    {
+     "n": 3,
+     "texto": "Del extranjero demandarás el [reintegro]: mas lo que tu hermano tuviere tuyo, lo perdonará tu mano;"
+    },
+    {
+     "n": 4,
+     "texto": "Para que así no haya en ti mendigo; porque Jehová te bendecirá con abundancia en la tierra que Jehová tu Dios te da por heredad para que la poseas,"
+    },
+    {
+     "n": 5,
+     "texto": "Si empero escuchares fielmente la voz de Jehová tu Dios, para guardar y cumplir todos estos mandamientos que yo te intimo hoy."
+    },
+    {
+     "n": 6,
+     "texto": "Ya que Jehová tu Dios te habrá bendecido, como te ha dicho, prestarás entonces á muchas gentes, mas tú no tomarás prestado; y enseñorearte has de muchas gentes, pero de ti no se enseñorearán."
+    },
+    {
+     "n": 7,
+     "texto": "Cuando hubiere en ti menesteroso de alguno de tus hermanos en alguna de tus ciudades, en tu tierra que Jehová tu Dios te da, no endurecerás tu corazón, ni cerrarás tu mano á tu hermano pobre:"
+    },
+    {
+     "n": 8,
+     "texto": "Mas abrirás á él tu mano liberalmente, y en efecto le prestarás lo que basta, lo que hubiere menester."
+    },
+    {
+     "n": 9,
+     "texto": "Guárdate que no haya en tu corazón perverso pensamiento, diciendo: Cerca está el año séptimo, el de la remisión; y tu ojo sea maligno sobre tu hermano menesteroso para no darle: que él podrá clamar contra ti á Jehová, y se te imputará á pecado."
+    },
+    {
+     "n": 10,
+     "texto": "Sin falta le darás, y no sea tu corazón maligno cuando le dieres: que por ello te bendecirá Jehová tu Dios en todos tus hechos, y en todo lo que pusieres mano."
+    },
+    {
+     "n": 11,
+     "texto": "Porque no faltarán menesterosos de en medio de la tierra; por eso yo te mando, diciendo: Abrirás tu mano á tu hermano, á tu pobre, y á tu menesteroso en tu tierra."
+    },
+    {
+     "n": 12,
+     "texto": "Cuando se vendiere á ti tu hermano Hebreo ó Hebrea, y te hubiere servido seis años, al séptimo año le despedirás libre de ti."
+    },
+    {
+     "n": 13,
+     "texto": "Y cuando lo despidieres libre de ti, no lo enviarás vacío:"
+    },
+    {
+     "n": 14,
+     "texto": "Le abastecerás liberalmente de tus ovejas, de tu era, y de tu lagar; le darás [de] aquello en que Jehová te hubiere bendecido."
+    },
+    {
+     "n": 15,
+     "texto": "Y te acordarás que fuiste siervo en la tierra de Egipto, y que Jehová tu Dios te rescató: por tanto yo te mando esto hoy."
+    },
+    {
+     "n": 16,
+     "texto": "Y será que, si él te dijere: No saldré de contigo; porque te ama á ti y á tu casa, que le va bien contigo;"
+    },
+    {
+     "n": 17,
+     "texto": "Entonces tomarás una lesna, y horadarás su oreja junto á la puerta, y será tu siervo para siempre: así también harás á tu criada."
+    },
+    {
+     "n": 18,
+     "texto": "No te parezca duro cuando le enviares libre de ti; que doblado del salario de mozo jornalero te sirvió seis años: y Jehová tu Dios te bendecirá en todo cuanto hicieres."
+    },
+    {
+     "n": 19,
+     "texto": "Santificarás á Jehová tu Dios todo primerizo macho que nacerá de tus vacas y de tus ovejas: no te sirvas del primerizo de tus vacas, ni trasquiles el primerizo de tus ovejas."
+    },
+    {
+     "n": 20,
+     "texto": "Delante de Jehová tu Dios los comerás cada un año, tú y tu familia, en el lugar que Jehová escogiere."
+    },
+    {
+     "n": 21,
+     "texto": "Y si hubiere en él tacha, ciego ó cojo, ó cualquiera mala falta, no lo sacrificarás á Jehová tu Dios."
+    },
+    {
+     "n": 22,
+     "texto": "En tus poblaciones lo comerás: el inmundo lo mismo que el limpio [comerán de él], como de un corzo ó de un ciervo."
+    },
+    {
+     "n": 23,
+     "texto": "Solamente que no comas su sangre: sobre la tierra la derramarás como agua."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 16,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "GUARDARÁS el mes de Abib, y harás pascua á Jehová tu Dios: porque en el mes de Abib te sacó Jehová tu Dios de Egipto de noche."
+    },
+    {
+     "n": 2,
+     "texto": "Y sacrificarás la pascua á Jehová tu Dios, de las ovejas y de las vacas, en el lugar que Jehová escogiere para hacer habitar allí su nombre."
+    },
+    {
+     "n": 3,
+     "texto": "No comerás con ella leudo; siete días comerás con ella pan por leudar, pan de aflicción, porque apriesa saliste de tierra de Egipto: para que te acuerdes del día en que saliste de la tierra de Egipto todos los días de tu vida."
+    },
+    {
+     "n": 4,
+     "texto": "Y no se dejará ver levadura contigo en todo tu término por siete días; y de la carne que matares á la tarde del primer día, no quedará hasta la mañana."
+    },
+    {
+     "n": 5,
+     "texto": "No podrás sacrificar la pascua en ninguna de tus ciudades, que Jehová tu Dios te da;"
+    },
+    {
+     "n": 6,
+     "texto": "Sino en el lugar que Jehová tu Dios escogiere para hacer habitar allí su nombre, sacrificarás la pascua por la tarde á puesta del sol, al tiempo que saliste de Egipto:"
+    },
+    {
+     "n": 7,
+     "texto": "Y la asarás y comerás en el lugar que Jehová tu Dios hubiere escogido; y por la mañana te volverás y restituirás á tu morada."
+    },
+    {
+     "n": 8,
+     "texto": "Seis días comerás ázimos, y el séptimo día será solemnidad á Jehová tu Dios: no harás obra [en él]."
+    },
+    {
+     "n": 9,
+     "texto": "Siete semanas te contarás: desde que comenzare la hoz en las mieses comenzarás á contarte las siete semanas."
+    },
+    {
+     "n": 10,
+     "texto": "Y harás la solemnidad de las semanas á Jehová tu Dios: de la suficiencia voluntaria de tu mano será lo que dieres, según Jehová tu Dios te hubiere bendecido."
+    },
+    {
+     "n": 11,
+     "texto": "Y te alegrarás delante de Jehová tu Dios, tú, y tu hijo, y tu hija, y tu siervo, y tu sierva, y el Levita que estuviere en tus ciudades, y el extranjero, y el huérfano, y la viuda, que estuvieren en medio de ti, en el lugar que Jehová tu Dios hubiere escogido para hacer habitar allí su nombre."
+    },
+    {
+     "n": 12,
+     "texto": "Y acuérdate que fuiste siervo en Egipto; por tanto guardarás y cumplirás estos estatutos."
+    },
+    {
+     "n": 13,
+     "texto": "La solemnidad de las cabañas harás por siete días, cuando hubieres hecho la cosecha de tu era y de tu lagar."
+    },
+    {
+     "n": 14,
+     "texto": "Y te alegrarás en tus solemnidades, tú, y tu hijo, y tu hija, y tu siervo, y tu sierva, y el Levita, y el extranjero, y el huérfano, y la viuda, que están en tus poblaciones."
+    },
+    {
+     "n": 15,
+     "texto": "Siete días celebrarás solemnidad á Jehová tu Dios en el lugar que Jehová escogiere; porque te habrá bendecido Jehová tu Dios en todos tus frutos, y en toda obra de tus manos, y estarás ciertamente alegre."
+    },
+    {
+     "n": 16,
+     "texto": "Tres veces cada un año parecerá todo varón tuyo delante de Jehová tu Dios en el lugar que él escogiere: en la solemnidad de los ázimos, y en la solemnidad de las semanas, y en la solemnidad de las cabañas. Y no parecerá vacío delante de Jehová:"
+    },
+    {
+     "n": 17,
+     "texto": "Cada uno con el don de su mano, conforme á la bendición de Jehová tu Dios, que te hubiere dado."
+    },
+    {
+     "n": 18,
+     "texto": "Jueces y alcaldes te pondrás en todas tus ciudades que Jehová tu Dios te dará en tus tribus, los cuales juzgarán al pueblo con justo juicio."
+    },
+    {
+     "n": 19,
+     "texto": "No tuerzas el derecho; no hagas acepción de personas, ni tomes soborno; porque el soborno ciega los ojos de los sabios, y pervierte las palabras de los justos."
+    },
+    {
+     "n": 20,
+     "texto": "La justicia, la justicia seguirás, porque vivas y heredes la tierra que Jehová tu Dios te da."
+    },
+    {
+     "n": 21,
+     "texto": "No te plantarás bosque de ningún árbol cerca del altar de Jehová tu Dios, que tú te habrás hecho."
+    },
+    {
+     "n": 22,
+     "texto": "Ni te levantarás estatua; lo cual aborrece Jehová tu Dios."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 17,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "NO sacrificarás á Jehová tu Dios buey, ó cordero, en el cual haya falta ó alguna cosa mala: porque es abominación á Jehová tu Dios."
+    },
+    {
+     "n": 2,
+     "texto": "Cuando se hallare entre ti, en alguna de tus ciudades que Jehová tu Dios te da, hombre, ó mujer, que haya hecho mal en ojos de Jehová tu Dios traspasando su pacto,"
+    },
+    {
+     "n": 3,
+     "texto": "Que hubiere ido y servido á dioses ajenos, y se hubiere inclinado á ellos, ora al sol, ó á la luna, ó á todo el ejército del cielo, lo cual yo no he mandado;"
+    },
+    {
+     "n": 4,
+     "texto": "Y te fuere dado aviso, y, después que oyeres y hubieres indagado bien, la cosa parece de verdad cierta, que tal abominación ha sido hecha en Israel;"
+    },
+    {
+     "n": 5,
+     "texto": "Entonces sacarás al hombre ó mujer que hubiere hecho esta mala cosa, á tus puertas, hombre ó mujer, y los apedrearás con piedras, y así morirán."
+    },
+    {
+     "n": 6,
+     "texto": "Por dicho de dos testigos, ó de tres testigos, morirá el que hubiere de morir; no morirá por el dicho de un solo testigo."
+    },
+    {
+     "n": 7,
+     "texto": "La mano de los testigos será primero sobre él para matarlo, y después la mano de todo el pueblo: así quitarás el mal de en medio de ti."
+    },
+    {
+     "n": 8,
+     "texto": "Cuando alguna cosa te fuere oculta en juicio entre sangre y sangre, entre causa y causa, y entre llaga y llaga, en negocios de litigio en tus ciudades; entonces te levantarás y recurrirás al lugar que Jehová tu Dios escogiere;"
+    },
+    {
+     "n": 9,
+     "texto": "Y vendrás á los sacerdotes Levitas, y al juez que fuere en aquellos días, y preguntarás; y te enseñarán la sentencia del juicio."
+    },
+    {
+     "n": 10,
+     "texto": "Y harás según la sentencia que te indicaren los del lugar que Jehová escogiere, y cuidarás de hacer según todo lo que te manifestaren."
+    },
+    {
+     "n": 11,
+     "texto": "Según la ley que ellos te enseñaren, y según el juicio que te dijeren, harás: no te apartarás ni á diestra ni á siniestra de la sentencia que te mostraren."
+    },
+    {
+     "n": 12,
+     "texto": "Y el hombre que procediere con soberbia, no obedeciendo al sacerdote que está para ministrar allí delante de Jehová tu Dios, ó al juez, el tal varón morirá: y quitarás el mal de Israel."
+    },
+    {
+     "n": 13,
+     "texto": "Y todo el pueblo oirá, y temerá, y no se ensoberbecerán más."
+    },
+    {
+     "n": 14,
+     "texto": "Cuando hubieres entrado en la tierra que Jehová tu Dios te da, y la poseyeres, y habitares en ella, y dijeres: Pondré rey sobre mí, como todas las gentes que están en mis alrededores;"
+    },
+    {
+     "n": 15,
+     "texto": "Sin duda pondrás por rey sobre ti al que Jehová tu Dios escogiere: de entre tus hermanos pondrás rey sobre ti: no podrás poner sobre ti hombre extranjero, que no sea tu hermano."
+    },
+    {
+     "n": 16,
+     "texto": "Empero que no se aumente caballos, ni haga volver el pueblo á Egipto para acrecentar caballos: porque Jehová os ha dicho: No procuraréis volver más por este camino."
+    },
+    {
+     "n": 17,
+     "texto": "Ni aumentará para sí mujeres, porque su corazón no se desvíe: ni plata ni oro acrecentará para sí en gran copia."
+    },
+    {
+     "n": 18,
+     "texto": "Y será, cuando se asentare sobre el solio de su reino, que ha de escribir para sí en un libro un traslado de esta ley, [del original] de delante de los sacerdotes Levitas;"
+    },
+    {
+     "n": 19,
+     "texto": "Y lo tendrá consigo, y leerá en él todos los días de su vida, para que aprenda á temer á Jehová su Dios, para guardar todas las palabras de aquesta ley y estos estatutos, para ponerlos por obra:"
+    },
+    {
+     "n": 20,
+     "texto": "Para que no se eleve su corazón sobre sus hermanos, ni se aparte del mandamiento á diestra ni á siniestra: á fin que prolongue sus días en su reino, él y sus hijos, en medio de Israel."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 18,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "LOS sacerdotes Levitas, toda la tribu de Leví, no tendrán parte ni heredad con Israel; de las ofrendas encendidas á Jehová, y de la heredad de él comerán."
+    },
+    {
+     "n": 2,
+     "texto": "No tendrán, pues, heredad entre sus hermanos: Jehová es su heredad, como él les ha dicho."
+    },
+    {
+     "n": 3,
+     "texto": "Y este será el derecho de los sacerdotes de parte del pueblo, de los que ofrecieren en sacrificio buey ó cordero: darán al sacerdote la espalda, y las quijadas, y el cuajar."
+    },
+    {
+     "n": 4,
+     "texto": "Las primicias de tu grano, de tu vino, y de tu aceite, y las primicias de la lana de tus ovejas le darás:"
+    },
+    {
+     "n": 5,
+     "texto": "Porque le ha escogido Jehová tu Dios de todas tus tribus, para que esté para ministrar al nombre de Jehová, él y sus hijos para siempre."
+    },
+    {
+     "n": 6,
+     "texto": "Y cuando el Levita saliere de alguna de tus ciudades de todo Israel, donde hubiere peregrinado, y viniere con todo deseo de su alma al lugar que Jehová escogiere,"
+    },
+    {
+     "n": 7,
+     "texto": "Ministrará al nombre de Jehová su Dios, como todos sus hermanos los Levitas que estuvieren allí delante de Jehová."
+    },
+    {
+     "n": 8,
+     "texto": "Porción como la porción [de los otros] comerán, además de sus patrimonios."
+    },
+    {
+     "n": 9,
+     "texto": "Cuando hubieres entrado en la tierra que Jehová tu Dios te da, no aprenderás á hacer según las abominaciones de aquellas gentes."
+    },
+    {
+     "n": 10,
+     "texto": "No sea hallado en ti quien haga pasar su hijo ó su hija por el fuego, ni practicante de adivinaciones, ni agorero, ni sortílego, ni hechicero,"
+    },
+    {
+     "n": 11,
+     "texto": "Ni fraguador de encantamentos, ni quien pregunte á pitón, ni mágico, ni quien pregunte á los muertos."
+    },
+    {
+     "n": 12,
+     "texto": "Porque es abominación á Jehová cualquiera que hace estas cosas, y por estas abominaciones Jehová tu Dios las echó de delante de ti."
+    },
+    {
+     "n": 13,
+     "texto": "Perfecto serás con Jehová tu Dios."
+    },
+    {
+     "n": 14,
+     "texto": "Porque estas gentes que has de heredar, á agoreros y hechiceros oían: mas tú, no así te ha dado Jehová tu Dios."
+    },
+    {
+     "n": 15,
+     "texto": "Profeta de en medio de ti, de tus hermanos, como yo, te levantará Jehová tu Dios: á él oiréis:"
+    },
+    {
+     "n": 16,
+     "texto": "Conforme á todo lo que pediste á Jehová tu Dios en Horeb el día de la asamblea, diciendo: No vuelva yo á oir la voz de Jehová mi Dios, ni vea yo más este gran fuego, porque no muera."
+    },
+    {
+     "n": 17,
+     "texto": "Y Jehová me dijo: Bien han dicho."
+    },
+    {
+     "n": 18,
+     "texto": "Profeta les suscitaré de en medio de sus hermanos, como tú; y pondré mis palabras en su boca, y él les hablará todo lo que yo le mandare."
+    },
+    {
+     "n": 19,
+     "texto": "Mas será, que cualquiera que no oyere mis palabras que él hablare en mi nombre, yo le residenciaré."
+    },
+    {
+     "n": 20,
+     "texto": "Empero el profeta que presumiere hablar palabra en mi nombre, que yo no le haya mandado hablar, ó que hablare en nombre de dioses ajenos, el tal profeta morirá."
+    },
+    {
+     "n": 21,
+     "texto": "Y si dijeres en tu corazón: ¿Cómo conoceremos la palabra que Jehová no hubiere hablado?"
+    },
+    {
+     "n": 22,
+     "texto": "Cuando el profeta hablare en nombre de Jehová, y no fuere la tal cosa, ni viniere, es palabra que Jehová no ha hablado: con soberbia la habló aquel profeta: no tengas temor de él."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 19,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO Jehová tu Dios talare las gentes, cuya tierra Jehová tu Dios te da á ti, y tú las heredares, y habitares en sus ciudades, y en sus casas;"
+    },
+    {
+     "n": 2,
+     "texto": "Te apartarás tres ciudades en medio de tu tierra que Jehová tu Dios te da para que la poseas."
+    },
+    {
+     "n": 3,
+     "texto": "Arreglarte has el camino, y dividirás en tres partes el término de tu tierra, que Jehová tu Dios te dará en heredad, y será para que todo homicida se huya allí."
+    },
+    {
+     "n": 4,
+     "texto": "Y este es el caso del homicida que ha de huir allí, y vivirá: el que hiriere á su prójimo por yerro, que no le tenía enemistad desde ayer ni antes de ayer:"
+    },
+    {
+     "n": 5,
+     "texto": "Como el que fué con su prójimo al monte á cortar leña, y poniendo fuerza con su mano en el hacha para cortar algún leño, saltó el hierro del cabo, y encontró á su prójimo, y murió; aquél huirá á una de aquestas ciudades, y vivirá;"
+    },
+    {
+     "n": 6,
+     "texto": "No sea que el pariente del muerto vaya tras el homicida, cuando se enardeciere su corazón, y le alcance por ser largo el camino, y le hiera de muerte, no debiendo ser condenado á muerte; por cuanto no tenía enemistad desde ayer ni antes de ayer con el [muerto]."
+    },
+    {
+     "n": 7,
+     "texto": "Por tanto yo te mando, diciendo: Tres ciudades te apartarás."
+    },
+    {
+     "n": 8,
+     "texto": "Y si Jehová tu Dios ensanchare tu término, como lo juró á tus padres, y te diere toda la tierra que dijo á tus padres que había de dar;"
+    },
+    {
+     "n": 9,
+     "texto": "Cuando guardases todos estos mandamientos, que yo te prescribo hoy, para ponerlos por obra, que ames á Jehová tu Dios y andes en sus caminos todos los días; entonces añadirás tres ciudades á más de estas tres;"
+    },
+    {
+     "n": 10,
+     "texto": "Porque no sea derramada sangre inocente en medio de tu tierra, que Jehová tu Dios te da por heredad, y sea sobre ti sangre."
+    },
+    {
+     "n": 11,
+     "texto": "Mas cuando hubiere alguno que aborreciere á su prójimo, y lo acechare, y se levantare sobre él, y lo hiriere de muerte, y muriere, y huyere á alguna de estas ciudades;"
+    },
+    {
+     "n": 12,
+     "texto": "Entonces los ancianos de su ciudad enviarán y lo sacarán de allí, y entregarlo han en mano del pariente del muerto, y morirá."
+    },
+    {
+     "n": 13,
+     "texto": "No le perdonará tu ojo: y quitarás de Israel la sangre inocente, y te irá bien."
+    },
+    {
+     "n": 14,
+     "texto": "No reducirás el término de tu prójimo, el cual señalaron los antiguos en tu heredad, la que poseyeres en la tierra que Jehová tu Dios te da para que la poseas."
+    },
+    {
+     "n": 15,
+     "texto": "No valdrá un testigo contra ninguno en cualquier delito, ó en cualquier pecado, en cualquier pecado que se cometiere. En el dicho de dos testigos, ó en el dicho de tres testigos consistirá el negocio."
+    },
+    {
+     "n": 16,
+     "texto": "Cuando se levantare testigo falso contra alguno, para testificar contra él rebelión,"
+    },
+    {
+     "n": 17,
+     "texto": "Entonces los dos hombres litigantes se presentarán delante de Jehová, delante de los sacerdotes y jueces que fueren en aquellos días:"
+    },
+    {
+     "n": 18,
+     "texto": "Y los jueces inquirirán bien, y si pareciere ser aquél testigo falso, que testificó falsamente contra su hermano,"
+    },
+    {
+     "n": 19,
+     "texto": "Haréis á él como él pensó hacer á su hermano: y quitarás el mal de en medio de ti."
+    },
+    {
+     "n": 20,
+     "texto": "Y los que quedaren oirán, y temerán, y no volverán más á hacer una mala cosa como ésta, en medio de ti."
+    },
+    {
+     "n": 21,
+     "texto": "Y no perdonará tu ojo: vida por vida, ojo por ojo, diente por diente, mano por mano, pie por pie."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 20,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO salieres á la guerra contra tus enemigos, y vieres caballos y carros, un pueblo más grande que tú, no tengas temor de ellos, que Jehová tu Dios es contigo, el cual te sacó de tierra de Egipto."
+    },
+    {
+     "n": 2,
+     "texto": "Y será que, cuando os acercareis para combatir, llegaráse el sacerdote, y hablará al pueblo,"
+    },
+    {
+     "n": 3,
+     "texto": "Y les dirá: Oye, Israel, vosotros os juntáis hoy en batalla contra vuestros enemigos: no se ablande vuestro corazón, no temáis, no os azoréis, ni tampoco os desalentéis delante de ellos;"
+    },
+    {
+     "n": 4,
+     "texto": "Que Jehová vuestro Dios anda con vosotros, para pelear por vosotros contra vuestros enemigos, para salvaros."
+    },
+    {
+     "n": 5,
+     "texto": "Y los oficiales hablarán al pueblo, diciendo: ¿Quién ha edificado casa nueva, y no la ha estrenado? Vaya, y vuélvase á su casa, porque quizá no muera en la batalla, y otro alguno la estrene."
+    },
+    {
+     "n": 6,
+     "texto": "¿Y quién ha plantado viña, y no ha hecho común uso de ella? Vaya, y vuélvase á su casa, porque quizá no muera en la batalla, y otro alguno la goce."
+    },
+    {
+     "n": 7,
+     "texto": "¿Y quién se ha desposado con mujer, y no la ha tomado? Vaya, y vuélvase á su casa, porque quizá no muera en la batalla, y algún otro la tome."
+    },
+    {
+     "n": 8,
+     "texto": "Y tornarán los oficiales á hablar al pueblo, y dirán: ¿Quién es hombre medroso y tierno de corazón? Vaya, y vuélvase á su casa, y no apoque el corazón de sus hermanos, como su corazón."
+    },
+    {
+     "n": 9,
+     "texto": "Y será que, cuando los oficiales acabaren de hablar al pueblo, entonces los capitanes de los ejércitos mandarán delante del pueblo."
+    },
+    {
+     "n": 10,
+     "texto": "Cuando te acercares á una ciudad para combatirla, le intimarás la paz."
+    },
+    {
+     "n": 11,
+     "texto": "Y será que, si te respondiere, Paz, y te abriere, todo el pueblo que en ella fuere hallado te serán tributarios, y te servirán."
+    },
+    {
+     "n": 12,
+     "texto": "Mas si no hiciere paz contigo, y emprendiere contigo guerra, y la cercares,"
+    },
+    {
+     "n": 13,
+     "texto": "Luego que Jehová tu Dios la entregare en tu mano, herirás á todo varón suyo á filo de espada."
+    },
+    {
+     "n": 14,
+     "texto": "Solamente las mujeres y los niños, y los animales, y todo lo que hubiere en la ciudad, todos sus despojos, tomarás para ti: y comerás del despojo de tus enemigos, los cuales Jehová tu Dios te entregó."
+    },
+    {
+     "n": 15,
+     "texto": "Así harás á todas las ciudades que estuvieren muy lejos de ti, que no fueren de las ciudades de estas gentes."
+    },
+    {
+     "n": 16,
+     "texto": "Empero de las ciudades de estos pueblos que Jehová tu Dios te da por heredad, ninguna persona dejarás con vida;"
+    },
+    {
+     "n": 17,
+     "texto": "Antes del todo los destruirás: al Hetheo, y al Amorrheo, y al Cananeo, y al Pherezeo, y al Heveo, y al Jebuseo; como Jehová tu Dios te ha mandado:"
+    },
+    {
+     "n": 18,
+     "texto": "Porque no os enseñen á hacer según todas sus abominaciones, que ellos hacen á sus dioses, y pequéis contra Jehová vuestro Dios."
+    },
+    {
+     "n": 19,
+     "texto": "Cuando pusieres cerco á alguna ciudad, peleando contra ella muchos días para tomarla, no destruyas su arboleda metiendo en ella hacha, porque de ella comerás; y no la talarás, que no es hombre el árbol del campo para venir contra ti en el cerco."
+    },
+    {
+     "n": 20,
+     "texto": "Mas el árbol que supieres que no es árbol para comer, lo destruirás y lo talarás, y construye baluarte contra la ciudad que pelea contigo, hasta sojuzgarla."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 21,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO fuere hallado en la tierra que Jehová tu Dios te da para que la poseas, muerto echado en el campo, y no se supiere quién lo hirió,"
+    },
+    {
+     "n": 2,
+     "texto": "Entonces tus ancianos y tus jueces saldrán y medirán hasta las ciudades que están alrededor del muerto:"
+    },
+    {
+     "n": 3,
+     "texto": "Y será, que los ancianos de aquella ciudad, de la ciudad más cercana al muerto, tomarán de la vacada una becerra que no haya servido, que no haya traído yugo;"
+    },
+    {
+     "n": 4,
+     "texto": "Y los ancianos de aquella ciudad traerán la becerra á un valle áspero, que nunca haya sido arado ni sembrado, y cortarán el pescuezo á la becerra allí en el valle."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces vendrán los sacerdotes hijos de Leví, porque á ellos escogió Jehová tu Dios para que le sirvan, y para bendecir en nombre de Jehová; y por el dicho de ellos se determinará todo pleito y toda llaga."
+    },
+    {
+     "n": 6,
+     "texto": "Y todos los ancianos de aquella ciudad más cercana al muerto lavarán sus manos sobre la becerra degollada en el valle."
+    },
+    {
+     "n": 7,
+     "texto": "Y protestarán, y dirán: Nuestras manos no han derramado esta sangre, ni nuestros ojos lo vieron."
+    },
+    {
+     "n": 8,
+     "texto": "Expía á tu pueblo Israel, al cual redimiste, oh Jehová; y no imputes la sangre inocente [derramada] en medio de tu pueblo Israel. Y la sangre les será perdonada."
+    },
+    {
+     "n": 9,
+     "texto": "Y tú quitarás la [culpa] de sangre inocente de en medio de ti, cuando hicieres lo que es recto en los ojos de Jehová."
+    },
+    {
+     "n": 10,
+     "texto": "Cuando salieres á la guerra contra tus enemigos, y Jehová tu Dios los entregare en tu mano, y tomares de ellos cautivos,"
+    },
+    {
+     "n": 11,
+     "texto": "Y vieres entre los cautivos [alguna] mujer hermosa, y la codiciares, y la tomares para ti por mujer,"
+    },
+    {
+     "n": 12,
+     "texto": "La meterás en tu casa; y ella raerá su cabeza, y cortará sus uñas,"
+    },
+    {
+     "n": 13,
+     "texto": "Y se quitará el vestido de su cautiverio, y quedaráse en tu casa: y llorará á su padre y á su madre el tiempo de un mes: y después entrarás á ella, y tu serás su marido, y ella tu mujer."
+    },
+    {
+     "n": 14,
+     "texto": "Y será, si no te agradare, que la has de dejar en su libertad; y no la venderás por dinero, ni mercadearás con ella, por cuanto la afligiste."
+    },
+    {
+     "n": 15,
+     "texto": "Cuando un hombre tuviere dos mujeres, la una amada y la otra aborrecida, y la amada y la aborrecida le parieren hijos, y el hijo primogénito fuere de la aborrecida;"
+    },
+    {
+     "n": 16,
+     "texto": "Será que, el día que hiciere heredar á sus hijos lo que tuviere, no podrá dar el derecho de primogenitura á los hijos de la amada en preferencia al hijo de la aborrecida, que es el primogénito;"
+    },
+    {
+     "n": 17,
+     "texto": "Mas al hijo de la aborrecida reconocerá por primogénito, para darle dos tantos de todo lo que se hallare que tiene: porque aquél es el principio de su fuerza, el derecho de la primogenitura es suyo."
+    },
+    {
+     "n": 18,
+     "texto": "Cuando alguno tuviere hijo contumaz y rebelde, que no obedeciere á la voz de su padre ni á la voz de su madre, y habiéndolo castigado, no les obedeciere;"
+    },
+    {
+     "n": 19,
+     "texto": "Entonces tomarlo han su padre y su madre, y lo sacarán á los ancianos de su ciudad, y á la puerta del lugar suyo;"
+    },
+    {
+     "n": 20,
+     "texto": "Y dirán á los ancianos de la ciudad: Este nuestro hijo es contumaz y rebelde, no obedece á nuestra voz; es glotón y borracho."
+    },
+    {
+     "n": 21,
+     "texto": "Entonces todos los hombres de su ciudad lo apedrearán con piedras, y morirá: así quitarás el mal de en medio de ti; y todo Israel oirá, y temerá."
+    },
+    {
+     "n": 22,
+     "texto": "Cuando en alguno hubiere pecado de sentencia de muerte, [por el] que haya de morir, y le habrás colgado en un madero,"
+    },
+    {
+     "n": 23,
+     "texto": "No estará su cuerpo por la noche en el madero, mas sin falta lo enterrarás el mismo día, porque maldición de Dios es el colgado: y no contaminarás tu tierra, que Jehová tu Dios te da por heredad."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 22,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "NO verás el buey de tu hermano, ó su cordero, perdidos, y te retirarás de ellos: precisamente los volverás á tu hermano."
+    },
+    {
+     "n": 2,
+     "texto": "Y si tu hermano no fuere tu vecino, ó no le conocieres, los recogerás en tu casa, y estarán contigo hasta que tu hermano los busque, y se los devolverás."
+    },
+    {
+     "n": 3,
+     "texto": "Y así harás de su asno, así harás también de su vestido, y lo mismo harás con toda cosa perdida de tu hermano que se le perdiere, y tú la hallares: no podrás retraerte [de ello]."
+    },
+    {
+     "n": 4,
+     "texto": "No verás el asno de tu hermano, ó su buey, caídos en el camino, y te esconderás de ellos: con él has de procurar levantarlos."
+    },
+    {
+     "n": 5,
+     "texto": "No vestirá la mujer hábito de hombre, ni el hombre vestirá ropa de mujer; porque abominación es á Jehová tu Dios cualquiera que esto hace."
+    },
+    {
+     "n": 6,
+     "texto": "Cuando topares en el camino algún nido de ave en cualquier árbol, ó sobre la tierra, con pollos ó huevos, y estuviere la madre echada sobre los pollos ó sobre los huevos, no tomes la madre con los hijos:"
+    },
+    {
+     "n": 7,
+     "texto": "Dejarás ir á la madre, y tomarás los pollos para ti; para que te vaya bien, y prolongues tus días."
+    },
+    {
+     "n": 8,
+     "texto": "Cuando edificares casa nueva, harás pretil á tu terrado, porque no pongas sangre en tu casa, si de él cayere alguno."
+    },
+    {
+     "n": 9,
+     "texto": "No sembrarás tu viña de varias semillas, porque no se deprave la plenitud de la semilla que sembraste, y el fruto de la viña."
+    },
+    {
+     "n": 10,
+     "texto": "No ararás con buey y con asno juntamente."
+    },
+    {
+     "n": 11,
+     "texto": "No te vestirás de mistura, de lana y lino juntamente."
+    },
+    {
+     "n": 12,
+     "texto": "Hacerte has flecos en los cuatro cabos de tu manto con que te cubrieres."
+    },
+    {
+     "n": 13,
+     "texto": "Cuando alguno tomare mujer, y después de haber entrado á ella la aborreciere,"
+    },
+    {
+     "n": 14,
+     "texto": "Y le pusiere algunas faltas, y esparciere sobre ella mala fama, y dijere: Esta tomé por mujer, y llegué á ella, y no la hallé virgen;"
+    },
+    {
+     "n": 15,
+     "texto": "Entonces el padre de la moza y su madre tomarán, y sacarán las señales de la virginidad de la doncella á los ancianos de la ciudad, en la puerta."
+    },
+    {
+     "n": 16,
+     "texto": "Y dirá el padre de la moza á los ancianos: Yo dí mi hija á este hombre por mujer, y él la aborrece;"
+    },
+    {
+     "n": 17,
+     "texto": "Y, he aquí, él le pone tachas de [algunas] cosas, diciendo: No he hallado tu hija virgen; empero, he aquí las señales de la virginidad de mi hija. Y extenderán la sábana delante de los ancianos de la ciudad."
+    },
+    {
+     "n": 18,
+     "texto": "Entonces los ancianos de la ciudad tomarán al hombre y lo castigarán;"
+    },
+    {
+     "n": 19,
+     "texto": "Y le han de penar en cien [piezas] de plata, las cuales darán al padre de la moza, por cuanto esparció mala fama sobre virgen de Israel: y la ha de tener por mujer, y no podrá despedirla en todos sus días."
+    },
+    {
+     "n": 20,
+     "texto": "Mas si este negocio fué verdad, que no se hubiere hallado virginidad en la moza,"
+    },
+    {
+     "n": 21,
+     "texto": "Entonces la sacarán á la puerta de la casa de su padre, y la apedrearán con piedras los hombres de su ciudad, y morirá; por cuanto hizo vileza en Israel fornicando en casa de su padre: así quitarás el mal de en medio de ti."
+    },
+    {
+     "n": 22,
+     "texto": "Cuando se sorprendiere alguno echado con mujer casada con marido, entrambos morirán, el hombre que se acostó con la mujer, y la mujer: así quitarás el mal de Israel."
+    },
+    {
+     "n": 23,
+     "texto": "Cuando fuere moza virgen desposada con alguno, y alguno la hallare en la ciudad, y se echare con ella;"
+    },
+    {
+     "n": 24,
+     "texto": "Entonces los sacaréis á ambos á la puerta de aquella ciudad, y los apedrearéis con piedras, y morirán; la moza porque no dió voces en la ciudad, y el hombre porque humilló á la mujer de su prójimo: así quitarás el mal de en medio de ti."
+    },
+    {
+     "n": 25,
+     "texto": "Mas si el hombre halló una moza desposada en el campo, y él la agarrare, y se echare con ella, morirá sólo el hombre que con ella se habrá echado;"
+    },
+    {
+     "n": 26,
+     "texto": "Y á la moza no harás nada; no tiene la moza culpa de muerte: porque como cuando alguno se levanta contra su prójimo, y le quita la vida, así es esto:"
+    },
+    {
+     "n": 27,
+     "texto": "Porque él la halló en el campo: dió voces la moza desposada, y no hubo quien la valiese."
+    },
+    {
+     "n": 28,
+     "texto": "Cuando alguno hallare moza virgen, que no fuere desposada, y la tomare, y se echare con ella, y fueren hallados;"
+    },
+    {
+     "n": 29,
+     "texto": "Entonces el hombre que se echó con ella dará al padre de la moza cincuenta [piezas] de plata, y ella será su mujer, por cuanto la humilló: no la podrá despedir en todos sus días."
+    },
+    {
+     "n": 30,
+     "texto": "No tomará alguno la mujer de su padre, ni descubrirá el regazo de su padre."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 23,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "NO entrará en la congregación de Jehová el que fuere quebrado, ni el castrado."
+    },
+    {
+     "n": 2,
+     "texto": "No entrará bastardo en la congregación de Jehová: ni aun en la décima generación entrará en la congregación de Jehová."
+    },
+    {
+     "n": 3,
+     "texto": "No entrará Ammonita ni Moabita en la congregación de Jehová; ni aun en la décima generación entrará en la congregación de Jehová para siempre:"
+    },
+    {
+     "n": 4,
+     "texto": "Por cuanto no os salieron á recibir con pan y agua al camino, cuando salisteis de Egipto; y porque alquiló contra ti á Balaam hijo de Beor de Pethor de Mesopotamia de Siria, para que te maldijese."
+    },
+    {
+     "n": 5,
+     "texto": "Mas no quiso Jehová tu Dios oir á Balaam; y Jehová tu Dios te volvió la maldición en bendición, porque Jehová tu Dios te amaba."
+    },
+    {
+     "n": 6,
+     "texto": "No procurarás la paz de ellos ni su bien en todos los días para siempre."
+    },
+    {
+     "n": 7,
+     "texto": "No abominarás al Idumeo, que tu hermano es: no abominarás al Egipcio, que extranjero fuiste en su tierra."
+    },
+    {
+     "n": 8,
+     "texto": "Los hijos que nacieren de ellos, á la tercera generación entrarán en la congregación de Jehová."
+    },
+    {
+     "n": 9,
+     "texto": "Cuando salieres á campaña contra tus enemigos, guárdate de toda cosa mala."
+    },
+    {
+     "n": 10,
+     "texto": "Cuando hubiere en ti alguno que no fuere limpio por accidente de noche, saldráse del campo, y no entrará en él."
+    },
+    {
+     "n": 11,
+     "texto": "Y será que al declinar de la tarde se lavará con agua, y cuando fuere puesto el sol, entrará en el campo."
+    },
+    {
+     "n": 12,
+     "texto": "Y tendrás un lugar fuera del real, y saldrás allá fuera;"
+    },
+    {
+     "n": 13,
+     "texto": "Tendrás también una estaca entre tus armas; y será que, cuando estuvieres [allí] fuera, cavarás con ella, y luego al volverte cubrirás tu excremento:"
+    },
+    {
+     "n": 14,
+     "texto": "Porque Jehová tu Dios anda por medio de tu campo, para librarte y entregar tus enemigos delante de ti; por tanto será tu real santo: porque él no vea en ti cosa inmunda, y se vuelva de en pos de ti."
+    },
+    {
+     "n": 15,
+     "texto": "No entregarás á su señor el siervo que se huyere á ti de su amo:"
+    },
+    {
+     "n": 16,
+     "texto": "More contigo, en medio de ti, en el lugar que escogiere en alguna de tus ciudades, donde bien le estuviere: no le harás fuerza."
+    },
+    {
+     "n": 17,
+     "texto": "No habrá ramera de las hijas de Israel, ni habrá sodomítico de los hijos de Israel."
+    },
+    {
+     "n": 18,
+     "texto": "No traerás precio de ramera, ni precio de perro á la casa de Jehová tu Dios por ningún voto; porque abominación es á Jehová tu Dios así lo uno como lo otro."
+    },
+    {
+     "n": 19,
+     "texto": "No tomarás de tu hermano logro de dinero, ni logro de comida, ni logro de cosa alguna de que se suele tomar."
+    },
+    {
+     "n": 20,
+     "texto": "Del extraño tomarás logro, mas de tu hermano no lo tomarás, porque te bendiga Jehová tu Dios en toda obra de tus manos sobre la tierra á la cual entras para poseerla."
+    },
+    {
+     "n": 21,
+     "texto": "Cuando prometieres voto á Jehová tu Dios, no tardarás en pagarlo; porque ciertamente lo demandará Jehová tu Dios de ti, y habría en ti pecado."
+    },
+    {
+     "n": 22,
+     "texto": "Mas cuando te abstuvieres de prometer, no habrá en ti pecado."
+    },
+    {
+     "n": 23,
+     "texto": "Guardarás lo que tus labios pronunciaren; y harás, como prometiste á Jehová tu Dios, lo que de tu voluntad hablaste por tu boca."
+    },
+    {
+     "n": 24,
+     "texto": "Cuando entrares en la viña de tu prójimo, comerás uvas hasta saciar tu deseo: mas no pondrás en tu vaso."
+    },
+    {
+     "n": 25,
+     "texto": "Cuando entrares en la mies de tu prójimo, podrás cortar espigas con tu mano; mas no aplicarás hoz á la mies de tu prójimo."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 24,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO alguno tomare mujer y se casare con ella, si no le agradare por haber hallado en ella alguna cosa torpe, le escribirá carta de repudio, y se la entregará en su mano, y despedirála de su casa."
+    },
+    {
+     "n": 2,
+     "texto": "Y salida de su casa, podrá ir y casarse con otro hombre."
+    },
+    {
+     "n": 3,
+     "texto": "Y si la aborreciere aqueste último, y le escribiere carta de repudio, y se la entregare en su mano, y la despidiere de su casa; ó si muriere el postrer hombre que la tomó para sí por mujer,"
+    },
+    {
+     "n": 4,
+     "texto": "No podrá su primer marido, que la despidió, volverla á tomar para que sea su mujer, después que fué amancillada; porque es abominación delante de Jehová, y no has de pervertir la tierra que Jehová tu Dios te da por heredad."
+    },
+    {
+     "n": 5,
+     "texto": "Cuando tomare alguno mujer nueva, no saldrá á la guerra, ni en ninguna cosa se le ocupará; libre estará en su casa por un año, para alegrar á su mujer que tomó."
+    },
+    {
+     "n": 6,
+     "texto": "No tomarás en prenda la muela de molino, ni la de abajo ni la de arriba: porque sería prendar la vida."
+    },
+    {
+     "n": 7,
+     "texto": "Cuando fuere hallado alguno que haya hurtado persona de sus hermanos los hijos de Israel, y hubiere mercadeado con ella, ó la hubiere vendido, el tal ladrón morirá, y quitarás el mal de en medio de ti."
+    },
+    {
+     "n": 8,
+     "texto": "Guárdate de llaga de lepra, observando diligentemente, y haciendo según todo lo que os enseñaren los sacerdotes Levitas: cuidaréis de hacer como les he mandado."
+    },
+    {
+     "n": 9,
+     "texto": "Acuérdate de lo que hizo Jehová tu Dios á María en el camino, después que salisteis de Egipto."
+    },
+    {
+     "n": 10,
+     "texto": "Cuando dieres á tu prójimo alguna cosa emprestada, no entrarás en su casa para tomarle prenda:"
+    },
+    {
+     "n": 11,
+     "texto": "Fuera estarás, y el hombre á quien prestaste, te sacará afuera la prenda."
+    },
+    {
+     "n": 12,
+     "texto": "Y si fuere hombre pobre, no duermas con su prenda:"
+    },
+    {
+     "n": 13,
+     "texto": "Precisamente le devolverás la prenda cuando el sol se ponga, para que duerma en su ropa, y te bendiga: y te será justicia delante de Jehová tu Dios."
+    },
+    {
+     "n": 14,
+     "texto": "No hagas agravio al jornalero pobre y menesteroso, así de tus hermanos como de tus extranjeros que están en tu tierra en tus ciudades:"
+    },
+    {
+     "n": 15,
+     "texto": "En su día le darás su jornal, y no se pondrá el sol sin dárselo: pues es pobre, y con él sustenta su vida: porque no clame contra ti á Jehová, y sea en ti pecado."
+    },
+    {
+     "n": 16,
+     "texto": "Los padres no morirán por los hijos, ni los hijos por los padres; cada uno morirá por su pecado."
+    },
+    {
+     "n": 17,
+     "texto": "No torcerás el derecho del peregrino y del huérfano; ni tomarás por prenda la ropa de la viuda:"
+    },
+    {
+     "n": 18,
+     "texto": "Mas acuérdate que fuiste siervo en Egipto, y de allí te rescató Jehová tu Dios: por tanto, yo te mando que hagas esto."
+    },
+    {
+     "n": 19,
+     "texto": "Cuando segares tu mies en tu campo, y olvidares alguna gavilla en el campo, no volverás á tomarla: para el extranjero, para el huérfano, y para la viuda será; porque te bendiga Jehová tu Dios en toda obra de tus manos."
+    },
+    {
+     "n": 20,
+     "texto": "Cuando sacudieres tus olivas, no recorrerás las ramas tras ti: para el extranjero, para el huérfano, y para la viuda será."
+    },
+    {
+     "n": 21,
+     "texto": "Cuando vendimiares tu viña, no rebuscarás tras ti: para el extranjero, para el huérfano, y para la viuda será."
+    },
+    {
+     "n": 22,
+     "texto": "Y acuérdate que fuiste siervo en tierra de Egipto: por tanto, yo te mando que hagas esto."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 25,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO hubiere pleito entre algunos, y vinieren á juicio, y los juzgaren, y absolvieren al justo y condenaren al inicuo,"
+    },
+    {
+     "n": 2,
+     "texto": "Será que, si el delincuente mereciere ser azotado, entonces el juez lo hará echar en tierra, y harále azotar delante de sí, según su delito, por cuenta."
+    },
+    {
+     "n": 3,
+     "texto": "Harále dar cuarenta azotes, no más: no sea que, si lo hiriere con muchos azotes á más de éstos, se envilezca tu hermano delante de tus ojos."
+    },
+    {
+     "n": 4,
+     "texto": "No pondrás bozal al buey cuando trillare."
+    },
+    {
+     "n": 5,
+     "texto": "Cuando hermanos estuvieren juntos, y muriere alguno de ellos, y no tuviere hijo, la mujer del muerto no se casará fuera con hombre extraño: su cuñado entrará á ella, y la tomará por su mujer, y hará con ella parentesco."
+    },
+    {
+     "n": 6,
+     "texto": "Y será que el primogénito que pariere ella, se levantará en nombre de su hermano el muerto, porque el nombre de éste no sea raído de Israel."
+    },
+    {
+     "n": 7,
+     "texto": "Y si el hombre no quisiere tomar á su cuñada, irá entonces la cuñada suya á la puerta á los ancianos, y dirá: Mi cuñado no quiere suscitar nombre en Israel á su hermano; no quiere emparentar conmigo."
+    },
+    {
+     "n": 8,
+     "texto": "Entonces los ancianos de aquella ciudad lo harán venir, y hablarán con él: y si él se levantare, y dijere, No quiero tomarla,"
+    },
+    {
+     "n": 9,
+     "texto": "Llegaráse entonces su cuñada á él delante de los ancianos, y le descalzará el zapato de su pie, y escupirále en el rostro, y hablará y dirá: Así será hecho al varón que no edificare la casa de su hermano."
+    },
+    {
+     "n": 10,
+     "texto": "Y su nombre será llamado en Israel: La casa del descalzado."
+    },
+    {
+     "n": 11,
+     "texto": "Cuando algunos riñeren juntos el uno con el otro, y llegare la mujer del uno para librar á su marido de mano del que le hiriere, y metiere su mano y le trabare de sus vergüenzas;"
+    },
+    {
+     "n": 12,
+     "texto": "La cortarás entonces la mano, no [la] perdonará tu ojo."
+    },
+    {
+     "n": 13,
+     "texto": "No tendrás en tu bolsa pesa grande y pesa chica."
+    },
+    {
+     "n": 14,
+     "texto": "No tendrás en tu casa epha grande y epha pequeño."
+    },
+    {
+     "n": 15,
+     "texto": "Pesas cumplidas y justas tendrás; epha cabal y justo tendrás: para que tus días sean prolongados sobre la tierra que Jehová tu Dios te da."
+    },
+    {
+     "n": 16,
+     "texto": "Porque abominación es á Jehová tu Dios cualquiera que hace esto, cualquiera que hace agravio."
+    },
+    {
+     "n": 17,
+     "texto": "Acuérdate de lo que te hizo Amalec en el camino, cuando salisteis de Egipto:"
+    },
+    {
+     "n": 18,
+     "texto": "Que te salió al camino, y te desbarató la retaguardia de todos los flacos que [iban] detrás de ti, cuando tú estabas cansado y trabajado; y no temió á Dios."
+    },
+    {
+     "n": 19,
+     "texto": "Será pues, cuando Jehová tu Dios te hubiere dado reposo de tus enemigos alrededor, en la tierra que Jehová tu Dios te da por heredad para que la poseas, que raerás la memoria de Amalec de debajo del cielo: no te olvides."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 26,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y SERÁ que, cuando hubieres entrado en la tierra que Jehová tu Dios te da por heredad, y la poseyeres, y habitares en ella;"
+    },
+    {
+     "n": 2,
+     "texto": "Entonces tomarás de las primicias de todos los frutos de la tierra, que sacares de tu tierra que Jehová tu Dios te da, y lo pondrás en un canastillo, é irás al lugar que Jehová tu Dios escogiere para hacer habitar allí su nombre."
+    },
+    {
+     "n": 3,
+     "texto": "Y llegarás al sacerdote que fuere en aquellos días, y le dirás: Reconozco hoy á Jehová tu Dios que he entrado en la tierra que juró Jehová á nuestros padres que nos había de dar."
+    },
+    {
+     "n": 4,
+     "texto": "Y el sacerdote tomará el canastillo de tu mano, y pondrálo delante del altar de Jehová tu Dios."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces hablarás y dirás delante de Jehová tu Dios: Un Siro á punto de perecer fué mi padre, el cual descendió á Egipto y peregrinó allá con pocos hombres, y allí creció en gente grande, fuerte y numerosa:"
+    },
+    {
+     "n": 6,
+     "texto": "Y los Egipcios nos maltrataron, y nos afligieron, y pusieron sobre nosotros dura servidumbre."
+    },
+    {
+     "n": 7,
+     "texto": "Y clamamos á Jehová Dios de nuestros padres; y oyó Jehová nuestra voz, y vió nuestra aflicción, y nuestro trabajo, y nuestra opresión:"
+    },
+    {
+     "n": 8,
+     "texto": "Y sacónos Jehová de Egipto con mano fuerte, y con brazo extendido, y con grande espanto, y con señales y con milagros:"
+    },
+    {
+     "n": 9,
+     "texto": "Y trájonos á este lugar, y diónos esta tierra, tierra que fluye leche y miel."
+    },
+    {
+     "n": 10,
+     "texto": "Y ahora, he aquí, he traído las primicias del fruto de la tierra que me diste, oh Jehová. Y lo dejarás delante de Jehová tu Dios, é inclinarte has delante de Jehová tu Dios."
+    },
+    {
+     "n": 11,
+     "texto": "Y te alegrarás con todo el bien que Jehová tu Dios te hubiere dado [á ti] y á tu casa, tú y el Levita, y el extranjero que está en medio de ti."
+    },
+    {
+     "n": 12,
+     "texto": "Cuando hubieres acabado de diezmar todo el diezmo de tus frutos en el año tercero, el año del diezmo, darás también al Levita, al extranjero, al huérfano y á la viuda; y comerán en tus villas, y se saciarán."
+    },
+    {
+     "n": 13,
+     "texto": "Y dirás delante de Jehová tu Dios: Yo he sacado lo consagrado de mi casa, y también lo he dado al Levita, y al extranjero, y al huérfano, y á la viuda, conforme á todos tus mandamientos que me ordenaste: no he traspasado tus mandamientos, ni me he olvidado de ellos:"
+    },
+    {
+     "n": 14,
+     "texto": "No he comido de ello en mi luto, ni he sacado de ello en inmundicia, ni de ello he dado para mortuorio: he obedecido á la voz de Jehová mi Dios, he hecho conforme á todo lo que me has mandado."
+    },
+    {
+     "n": 15,
+     "texto": "Mira desde la morada de tu santidad, desde el cielo, y bendice á tu pueblo Israel, y á la tierra que nos has dado, como juraste á nuestros padres, tierra que fluye leche y miel."
+    },
+    {
+     "n": 16,
+     "texto": "Jehová tu Dios te manda hoy que cumplas estos estatutos y derechos; cuida, pues, de ponerlos por obra con todo tu corazón, y con toda tu alma."
+    },
+    {
+     "n": 17,
+     "texto": "A Jehová has ensalzado hoy para que te sea por Dios, y para andar en sus caminos, y para guardar sus estatutos y sus mandamientos y sus derechos, y para oir su voz:"
+    },
+    {
+     "n": 18,
+     "texto": "Y Jehová te ha ensalzado hoy para que le seas su peculiar pueblo, como él te lo ha dicho, y para que guardes todos sus mandamientos;"
+    },
+    {
+     "n": 19,
+     "texto": "Y para ponerte alto sobre todas las gentes que hizo, para loor, y fama, y gloria; y para que seas pueblo santo á Jehová tu Dios, como él ha dicho."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 27,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y MANDÓ Moisés, con los ancianos de Israel, al pueblo, diciendo: Guardaréis todos los mandamientos que yo prescribo hoy."
+    },
+    {
+     "n": 2,
+     "texto": "Y será que, el día que pasareis el Jordán á la tierra que Jehová tu Dios te da, te has de levantar piedras grandes, las cuales revocarás con cal:"
+    },
+    {
+     "n": 3,
+     "texto": "Y escribirás en ellas todas las palabras de esta ley, cuando hubieres pasado para entrar en la tierra que Jehová tu Dios te da, tierra que fluye leche y miel, como Jehová el Dios de tus padres te ha dicho."
+    },
+    {
+     "n": 4,
+     "texto": "Será pues, cuando hubieres pasado el Jordán, que levantaréis estas piedras que yo os mando hoy, en el monte de Ebal, y las revocarás con cal:"
+    },
+    {
+     "n": 5,
+     "texto": "Y edificarás allí altar á Jehová tu Dios, altar de piedras: no alzarás sobre ellas hierro."
+    },
+    {
+     "n": 6,
+     "texto": "De piedras enteras edificarás el altar de Jehová tu Dios; y ofrecerás sobre él holocausto á Jehová tu Dios;"
+    },
+    {
+     "n": 7,
+     "texto": "Y sacrificarás pacíficos, y comerás allí; y alegrarte has delante de Jehová tu Dios."
+    },
+    {
+     "n": 8,
+     "texto": "Y escribirás en las piedras todas las palabras de esta ley muy claramente."
+    },
+    {
+     "n": 9,
+     "texto": "Y Moisés, con los sacerdotes Levitas, habló á todo Israel, diciendo: Atiende y escucha, Israel: hoy eres hecho pueblo de Jehová tu Dios."
+    },
+    {
+     "n": 10,
+     "texto": "Oirás pues la voz de Jehová tu Dios, y cumplirás sus mandamientos y sus estatutos, que yo te ordeno hoy."
+    },
+    {
+     "n": 11,
+     "texto": "Y mandó Moisés al pueblo en aquel día, diciendo:"
+    },
+    {
+     "n": 12,
+     "texto": "Estos estarán sobre el monte de Gerizim para bendecir al pueblo, cuando hubiereis pasado el Jordán: Simeón, y Leví, y Judá, é Issachâr, y José, y Benjamín."
+    },
+    {
+     "n": 13,
+     "texto": "Y estos estarán para [pronunciar] la maldición en el de Ebal: Rubén, Gad, y Aser, y Zabulón, Dan, y Nephtalí."
+    },
+    {
+     "n": 14,
+     "texto": "Y hablarán los Levitas, y dirán á todo varón de Israel en alta voz:"
+    },
+    {
+     "n": 15,
+     "texto": "Maldito el hombre que hiciere escultura ó imagen de fundición, abominación á Jehová, obra de mano de artífice, y la pusiere en oculto. Y todo el pueblo responderá y dirá: Amén."
+    },
+    {
+     "n": 16,
+     "texto": "Maldito el que deshonrare á su padre ó á su madre. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 17,
+     "texto": "Maldito el que redujere el término de su prójimo. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 18,
+     "texto": "Maldito el que hiciere errar al ciego en el camino. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 19,
+     "texto": "Maldito el que torciere el derecho del extranjero, del huérfano, y de la viuda. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 20,
+     "texto": "Maldito el que se echare con la mujer de su padre; por cuanto descubrió el regazo de su padre. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 21,
+     "texto": "Maldito el que tuviere parte con cualquiera bestia. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 22,
+     "texto": "Maldito el que se echare con su hermana, hija de su padre, ó hija de su madre. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 23,
+     "texto": "Maldito el que se echare con su suegra. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 24,
+     "texto": "Maldito el que hiriere á su prójimo ocultamente. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 25,
+     "texto": "Maldito el que recibiere don para herir de muerte al inocente. Y dirá todo el pueblo: Amén."
+    },
+    {
+     "n": 26,
+     "texto": "Maldito el que no confirmare las palabras de esta ley para cumplirlas. Y dirá todo el pueblo: Amén."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 28,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y SERÁ que, si oyeres diligente la voz de Jehová tu Dios, para guardar, para poner por obra todos sus mandamientos que yo te prescribo hoy, también Jehová tu Dios te pondrá alto sobre todas las gentes de la tierra;"
+    },
+    {
+     "n": 2,
+     "texto": "Y vendrán sobre ti todas estas bendiciones, y te alcanzarán, cuando oyeres la voz de Jehová tu Dios."
+    },
+    {
+     "n": 3,
+     "texto": "Bendito serás tú en la ciudad, y bendito tú en el campo."
+    },
+    {
+     "n": 4,
+     "texto": "Bendito el fruto de tu vientre, y el fruto de tu bestia, la cría de tus vacas, y los rebaños de tus ovejas."
+    },
+    {
+     "n": 5,
+     "texto": "Bendito tu canastillo y tus sobras."
+    },
+    {
+     "n": 6,
+     "texto": "Bendito serás en tu entrar, y bendito en tu salir."
+    },
+    {
+     "n": 7,
+     "texto": "Pondrá Jehová á tus enemigos que se levantaren contra ti, de rota batida delante de ti: por un camino saldrán á ti, por siete caminos huirán delante de ti."
+    },
+    {
+     "n": 8,
+     "texto": "Enviará Jehová contigo la bendición en tus graneros, y en todo aquello en que pusieres tu mano; y te bendecirá en la tierra que Jehová tu Dios te da."
+    },
+    {
+     "n": 9,
+     "texto": "Confirmarte ha Jehová por pueblo suyo santo, como te ha jurado, cuando guardares los mandamientos de Jehová tu Dios, y anduvieres en sus caminos."
+    },
+    {
+     "n": 10,
+     "texto": "Y verán todos los pueblos de la tierra que el nombre de Jehová es llamado sobre ti, y te temerán."
+    },
+    {
+     "n": 11,
+     "texto": "Y te hará Jehová sobreabundar en bienes, en el fruto de tu vientre, y en el fruto de tu bestia, y en el fruto de tu tierra, en el país que juró Jehová á tus padres que te había de dar."
+    },
+    {
+     "n": 12,
+     "texto": "Abrirte ha Jehová su buen depósito, el cielo, para dar lluvia á tu tierra en su tiempo, y para bendecir toda obra de tus manos. Y prestarás á muchas gentes, y tú no tomarás emprestado."
+    },
+    {
+     "n": 13,
+     "texto": "Y te pondrá Jehová por cabeza, y no por cola: y estarás encima solamente, y no estarás debajo; cuando obedecieres á los mandamientos de Jehová tu Dios, que yo te ordeno hoy, para que [los] guardes y cumplas."
+    },
+    {
+     "n": 14,
+     "texto": "Y no te apartes de todas las palabras que yo os mando hoy, ni á diestra ni á siniestra, para ir tras dioses ajenos para servirles."
+    },
+    {
+     "n": 15,
+     "texto": "Y será, si no oyeres la voz de Jehová tu Dios, para cuidar de poner por obra todos sus mandamientos y sus estatutos, que yo te intimo hoy, que vendrán sobre ti todas estas maldiciones, y te alcanzarán."
+    },
+    {
+     "n": 16,
+     "texto": "Maldito serás tu en la ciudad, y maldito en el campo."
+    },
+    {
+     "n": 17,
+     "texto": "Maldito tu canastillo, y tus sobras."
+    },
+    {
+     "n": 18,
+     "texto": "Maldito el fruto de tu vientre, y el fruto de tu tierra, y la cría de tus vacas, y los rebaños de tus ovejas."
+    },
+    {
+     "n": 19,
+     "texto": "Maldito serás en tu entrar, y maldito en tu salir."
+    },
+    {
+     "n": 20,
+     "texto": "Y Jehová enviará contra ti la maldición, quebranto y asombro en todo cuanto pusieres mano é hicieres, hasta que seas destruído, y perezcas presto á causa de la maldad de tus obras, por las cuales me habrás dejado."
+    },
+    {
+     "n": 21,
+     "texto": "Jehová hará que se te pegue mortandad, hasta que te consuma de la tierra á la cual entras para poseerla."
+    },
+    {
+     "n": 22,
+     "texto": "Jehová te herirá de tisis, y de fiebre, y de ardor, y de calor, y de cuchillo, y de calamidad repentina, y con añublo; y perseguirte han hasta que perezcas."
+    },
+    {
+     "n": 23,
+     "texto": "Y tus cielos que están sobre tu cabeza, serán de metal; y la tierra que está debajo de ti, de hierro."
+    },
+    {
+     "n": 24,
+     "texto": "Dará Jehová por lluvia á tu tierra polvo y ceniza: de los cielos descenderán sobre ti hasta que perezcas."
+    },
+    {
+     "n": 25,
+     "texto": "Jehová te entregará herido delante de tus enemigos: por un camino saldrás á ellos, y por siete caminos huirás delante de ellos: y serás sacudido á todos los reinos de la tierra."
+    },
+    {
+     "n": 26,
+     "texto": "Y será tu cuerpo muerto por comida á toda ave del cielo y bestia de la tierra, y no habrá quien las espante."
+    },
+    {
+     "n": 27,
+     "texto": "Jehová te herirá de la plaga de Egipto, y con almorranas, y con sarna, y con comezón, de que no puedas ser curado."
+    },
+    {
+     "n": 28,
+     "texto": "Jehová te herirá con locura, y con ceguedad, y con pasmo de corazón."
+    },
+    {
+     "n": 29,
+     "texto": "Y palparás al mediodía, como palpa el ciego en la oscuridad, y no serás prosperado en tus caminos: y nunca serás sino oprimido y robado todos los días, y no habrá quien te salve."
+    },
+    {
+     "n": 30,
+     "texto": "Te desposarás con mujer, y otro varón dormirá con ella; edificarás casa, y no habitarás en ella; plantarás viña, y no la vendimiarás."
+    },
+    {
+     "n": 31,
+     "texto": "Tu buey será matado delante de tus ojos, y tú no comerás de él; tu asno será arrebatado de delante de ti, y no se te volverá; tus ovejas serán dadas á tus enemigos, y no tendrás quien te [las] rescate."
+    },
+    {
+     "n": 32,
+     "texto": "Tus hijos y tus hijas serán entregados á otro pueblo, y tus ojos lo verán, y desfallecerán por ellos todo el día: y no habrá fuerza en tu mano."
+    },
+    {
+     "n": 33,
+     "texto": "El fruto de tu tierra y todo tu trabajo comerá pueblo que no conociste; y nunca serás sino oprimido y quebrantado todos los días."
+    },
+    {
+     "n": 34,
+     "texto": "Y enloquecerás á causa de lo que verás con tus ojos."
+    },
+    {
+     "n": 35,
+     "texto": "Herirte ha Jehová con maligna pústula en las rodillas y en las piernas, sin que puedas ser curado: [aun] desde la planta de tu pie hasta tu mollera."
+    },
+    {
+     "n": 36,
+     "texto": "Jehová llevará á ti, y á tu rey que hubieres puesto sobre ti, á gente que no conociste tú ni tus padres; y allá servirás á dioses ajenos, al palo y á la piedra."
+    },
+    {
+     "n": 37,
+     "texto": "Y serás por pasmo, por ejemplo y por fábula, á todos los pueblos á los cuales te llevará Jehová."
+    },
+    {
+     "n": 38,
+     "texto": "Sacarás mucha simiente al campo, y cogerás poco; porque la langosta lo consumirá."
+    },
+    {
+     "n": 39,
+     "texto": "Plantarás viñas y labrarás, mas no beberás vino, ni cogerás [uvas]; porque el gusano las comerá."
+    },
+    {
+     "n": 40,
+     "texto": "Tendrás olivas en todo tu término, mas no te ungirás con el aceite; porque tu aceituna se caerá."
+    },
+    {
+     "n": 41,
+     "texto": "Hijos é hijas engendrarás, y no serán para ti; porque irán en cautiverio."
+    },
+    {
+     "n": 42,
+     "texto": "Toda tu arboleda y el fruto de tu tierra consumirá la langosta."
+    },
+    {
+     "n": 43,
+     "texto": "El extranjero que estará en medio de ti subirá sobre ti muy alto, y tú serás puesto muy bajo."
+    },
+    {
+     "n": 44,
+     "texto": "El te prestará á ti, y tú no prestarás á él: él será por cabeza, y tú serás por cola."
+    },
+    {
+     "n": 45,
+     "texto": "Y vendrán sobre ti todas estas maldiciones, y te perseguirán, y te alcanzarán hasta que perezcas; por cuanto no habrás atendido á la voz de Jehová tu Dios, para guardar sus mandamientos y sus estatutos, que él te mandó:"
+    },
+    {
+     "n": 46,
+     "texto": "Y serán en ti por señal y por maravilla, y en tu simiente para siempre."
+    },
+    {
+     "n": 47,
+     "texto": "Por cuanto no serviste á Jehová tu Dios con alegría y con gozo de corazón, por la abundancia de todas las cosas;"
+    },
+    {
+     "n": 48,
+     "texto": "Servirás por tanto á tus enemigos que enviare Jehová contra ti, con hambre y con sed y con desnudez, y con falta de todas las cosas; y él pondrá yugo de hierro sobre tu cuello, hasta destruirte."
+    },
+    {
+     "n": 49,
+     "texto": "Jehová traerá sobre ti gente de lejos, del cabo de la tierra, que vuele como águila, gente cuya lengua no entiendas;"
+    },
+    {
+     "n": 50,
+     "texto": "Gente fiera de rostro, que no tendrá respeto al anciano, ni perdonará al niño:"
+    },
+    {
+     "n": 51,
+     "texto": "Y comerá el fruto de tu bestia y el fruto de tu tierra, hasta que perezcas: y no te dejará grano, ni mosto, ni aceite, ni la cría de tus vacas, ni los rebaños de tus ovejas, hasta destruirte."
+    },
+    {
+     "n": 52,
+     "texto": "Y te pondrá cerco en todas tus ciudades, hasta que caigan tus muros altos y encastillados en que tú confías, en toda tu tierra: te cercará, pues, en todas tus ciudades y en toda tu tierra, que Jehová tu Dios te habrá dado."
+    },
+    {
+     "n": 53,
+     "texto": "Y comerás el fruto de tu vientre, la carne de tus hijos y de tus hijas que Jehová tu Dios te dió, en el cerco y en el apuro con que te angustiará tu enemigo."
+    },
+    {
+     "n": 54,
+     "texto": "El hombre tierno en ti, y el muy delicado, su ojo será maligno para con su hermano, y para con la mujer de su seno, y para con el resto de sus hijos que le quedaren;"
+    },
+    {
+     "n": 55,
+     "texto": "Para no dar á alguno de ellos de la carne de sus hijos, que él comerá, porque nada le habrá quedado, en el cerco y en el apuro con que tu enemigo te oprimirá en todas tus ciudades."
+    },
+    {
+     "n": 56,
+     "texto": "La tierna y la delicada entre vosotros, que nunca la planta de su pie probó á sentar sobre la tierra, de ternura y delicadeza, su ojo será maligno para con el marido de su seno, y para con su hijo, y para con su hija,"
+    },
+    {
+     "n": 57,
+     "texto": "Y para con su chiquita que sale de entre sus pies, y para con sus hijos que pariere; pues los comerá escondidamente, á falta de todo, en el cerco y en el apuro con que tu enemigo te oprimirá en tus ciudades."
+    },
+    {
+     "n": 58,
+     "texto": "Si no cuidares de poner por obra todas las palabras de aquesta ley que están escritas en este libro, temiendo este nombre glorioso y terrible, JEHOVÁ TU DIOS,"
+    },
+    {
+     "n": 59,
+     "texto": "Jehová aumentará maravillosamente tus plagas y las plagas de tu simiente, plagas grandes y estables, y enfermedades malignas y duraderas;"
+    },
+    {
+     "n": 60,
+     "texto": "Y hará volver sobre ti todos los males de Egipto, delante de los cuales temiste, y se te pegarán."
+    },
+    {
+     "n": 61,
+     "texto": "Asimismo toda enfermedad y toda plaga que no está escrita en el libro de esta ley, Jehová la enviará sobre ti, hasta que tú seas destruído."
+    },
+    {
+     "n": 62,
+     "texto": "Y quedaréis en poca gente, en lugar de haber sido como las estrellas del cielo en multitud; por cuanto no obedeciste á la voz de Jehová tu Dios."
+    },
+    {
+     "n": 63,
+     "texto": "Y será que como Jehová se gozó sobre vosotros para haceros bien, y para multiplicaros, así se gozará Jehová sobre vosotros para arruinaros, y para destruiros; y seréis arrancados de sobre la tierra, á la cual entráis para poseerla."
+    },
+    {
+     "n": 64,
+     "texto": "Y Jehová te esparcirá por todos los pueblos, desde el un cabo de la tierra hasta el otro cabo de ella; y allí servirás á dioses ajenos que no conociste tú ni tus padres, al leño y á la piedra."
+    },
+    {
+     "n": 65,
+     "texto": "Y ni aun entre las mismas gentes descansarás, ni la planta de tu pie tendrá reposo; que allí te dará Jehová corazón temeroso, y caimiento de ojos, y tristeza de alma:"
+    },
+    {
+     "n": 66,
+     "texto": "Y tendrás tu vida [como] colgada delante de ti, y estarás temeroso de noche y de día, y no confiarás de tu vida."
+    },
+    {
+     "n": 67,
+     "texto": "Por la mañana dirás: ¡Quién diera fuese la tarde! y á la tarde dirás: ¡Quién diera fuese la mañana! por el miedo de tu corazón con que estarás amedrentado, y por lo que verán tus ojos."
+    },
+    {
+     "n": 68,
+     "texto": "Y Jehová te hará tornar á Egipto en navíos por el camino del cual te ha dicho: Nunca más volveréis: y allí seréis vendidos á vuestros enemigos por esclavos y por esclavas, y no habrá quien os compre."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 29,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESTAS son las palabras del pacto que Jehová mandó á Moisés concertara con los hijos de Israel en la tierra de Moab, además del pacto que concertó con ellos en Horeb."
+    },
+    {
+     "n": 2,
+     "texto": "Moisés pues llamó á todo Israel, y díjoles: Vosotros habéis visto todo lo que Jehová ha hecho delante de vuestros ojos en la tierra de Egipto á Faraón y á todos sus siervos, y á toda su tierra:"
+    },
+    {
+     "n": 3,
+     "texto": "Las pruebas grandes que vieron tus ojos, las señales, y las grandes maravillas."
+    },
+    {
+     "n": 4,
+     "texto": "Y Jehová no os dió corazón para entender, ni ojos para ver, ni oídos para oir, hasta el día de hoy."
+    },
+    {
+     "n": 5,
+     "texto": "Y yo os he traído cuarenta años por el desierto: vuestros vestidos no se han envejecido sobre vosotros, ni tu zapato se ha envejecido sobre tu pie."
+    },
+    {
+     "n": 6,
+     "texto": "No habéis comido pan, ni bebisteis vino ni sidra: para que supieseis que yo soy Jehová vuestro Dios."
+    },
+    {
+     "n": 7,
+     "texto": "Y llegasteis á este lugar, y salió Sehón rey de Hesbón, y Og rey de Basán, delante de nosotros para pelear, y herímoslos;"
+    },
+    {
+     "n": 8,
+     "texto": "Y tomamos su tierra, y dímosla por heredad á Rubén y á Gad, y á la media tribu de Manasés."
+    },
+    {
+     "n": 9,
+     "texto": "Guardaréis, pues, las palabras de este pacto, y las pondréis por obra, para que prosperéis en todo lo que hiciereis."
+    },
+    {
+     "n": 10,
+     "texto": "Vosotros todos estáis hoy delante de Jehová vuestro Dios; vuestros príncipes de vuestras tribus, vuestros ancianos, y vuestros oficiales, todos los varones de Israel,"
+    },
+    {
+     "n": 11,
+     "texto": "Vuestros niños, vuestras mujeres, y tus extranjeros que habitan en medio de tu campo, desde el que corta tu leña hasta el que saca tus aguas:"
+    },
+    {
+     "n": 12,
+     "texto": "Para que entres en el pacto de Jehová tu Dios, y en su juramento, que Jehová tu Dios acuerda hoy contigo:"
+    },
+    {
+     "n": 13,
+     "texto": "Para confirmarte hoy por su pueblo, y que él te sea á ti por Dios, de la manera que él te ha dicho, y como él juró á tus padres Abraham, Isaac, y Jacob."
+    },
+    {
+     "n": 14,
+     "texto": "Y no con vosotros solos acuerdo yo este pacto y este juramento,"
+    },
+    {
+     "n": 15,
+     "texto": "Sino con los que están aquí presentes hoy con nosotros delante de Jehová nuestro Dios, y con los que no están aquí hoy con nosotros."
+    },
+    {
+     "n": 16,
+     "texto": "Porque vosotros sabéis cómo habitamos en la tierra de Egipto, y cómo hemos pasado por medio de las gentes que habéis pasado;"
+    },
+    {
+     "n": 17,
+     "texto": "Y habéis visto sus abominaciones, y sus ídolos, madera y piedra, plata y oro, que [tienen] consigo."
+    },
+    {
+     "n": 18,
+     "texto": "Quizá habrá entre vosotros varón, ó mujer, ó familia, ó tribu, cuyo corazón se vuelva hoy de con Jehová nuestro Dios, por andar á servir á los dioses de aquellas gentes; quizá habrá en vosotros raíz que eche veneno y ajenjo;"
+    },
+    {
+     "n": 19,
+     "texto": "Y sea que, cuando el tal oyere las palabras de esta maldición, él se bendiga en su corazón, diciendo: Tendré paz, aunque ande según el pensamiento de mi corazón, para añadir la embriaguez á la sed:"
+    },
+    {
+     "n": 20,
+     "texto": "Jehová no querrá perdonarle; antes humeará luego el furor de Jehová y su celo sobre el tal hombre, y asentaráse sobre él toda maldición escrita en este libro, y Jehová raerá su nombre de debajo del cielo:"
+    },
+    {
+     "n": 21,
+     "texto": "Y apartarálo Jehová de todas las tribus de Israel para mal, conforme á todas las maldiciones del pacto escrito en este libro de la ley."
+    },
+    {
+     "n": 22,
+     "texto": "Y dirá la generación venidera, vuestros hijos que vendrán después de vosotros, y el extranjero que vendrá de lejanas tierras, cuando vieren las plagas de aquesta tierra, y sus enfermedades de que Jehová la hizo enfermar,"
+    },
+    {
+     "n": 23,
+     "texto": "(Azufre y sal, abrasada toda su tierra: no será sembrada, ni producirá, ni crecerá en ella hierba ninguna, como en la subversión de Sodoma y de Gomorra, de Adma y de Seboim, que Jehová subvirtió en su furor y en su ira:)"
+    },
+    {
+     "n": 24,
+     "texto": "Dirán, pues, todas las gentes: ¿Por qué hizo Jehová esto á esta tierra? ¿qué ira es ésta de tan gran furor?"
+    },
+    {
+     "n": 25,
+     "texto": "Y responderán: Por cuanto dejaron el pacto de Jehová el Dios de sus padres, que él concertó con ellos cuando los sacó de la tierra de Egipto,"
+    },
+    {
+     "n": 26,
+     "texto": "Y fueron y sirvieron á dioses ajenos, é inclináronse á ellos, dioses que no conocían, y que ninguna cosa les habían dado:"
+    },
+    {
+     "n": 27,
+     "texto": "Encendióse por tanto, el furor de Jehová contra esta tierra, para traer sobre ella todas las maldiciones escritas en este libro;"
+    },
+    {
+     "n": 28,
+     "texto": "Y Jehová los desarraigó de su tierra con enojo, y con saña, y con furor grande, y los echó á otra tierra, como hoy."
+    },
+    {
+     "n": 29,
+     "texto": "Las cosas secretas pertenecen á Jehová nuestro Dios: mas las reveladas son para nosotros y para nuestros hijos por siempre, para que cumplamos todas las palabras de esta ley."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 30,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y SERÁ que, cuando te sobrevinieren todas estas cosas, la bendición y la maldición que he puesto delante de ti, y volvieres á tu corazón en medio de todas las gentes á las cuales Jehová tu Dios te hubiere echado,"
+    },
+    {
+     "n": 2,
+     "texto": "Y te convirtieres á Jehová tu Dios, y obedecieres á su voz conforme á todo lo que yo te mando hoy, tú y tus hijos, con todo tu corazón y con toda tu alma,"
+    },
+    {
+     "n": 3,
+     "texto": "Jehová también volverá tus cautivos, y tendrá misericordia de ti, y tornará á recogerte de todos los pueblos á los cuales te hubiere esparcido Jehová tu Dios."
+    },
+    {
+     "n": 4,
+     "texto": "Si hubieres sido arrojado hasta el cabo de los cielos, de allí te recogerá Jehová tu Dios, y de allá te tomará:"
+    },
+    {
+     "n": 5,
+     "texto": "Y volverte ha Jehová tu Dios á la tierra que heredaron tus padres, y la poseerás; y te hará bien, y te multiplicará más que á tus padres."
+    },
+    {
+     "n": 6,
+     "texto": "Y circuncidará Jehová tu Dios tu corazón, y el corazón de tu simiente, para que ames á Jehová tu Dios con todo tu corazón y con toda tu alma, á fin de que tú vivas."
+    },
+    {
+     "n": 7,
+     "texto": "Y pondrá Jehová tu Dios todas estas maldiciones sobre tus enemigos, y sobre tus aborrecedores que te persiguieron."
+    },
+    {
+     "n": 8,
+     "texto": "Y tú volverás, y oirás la voz de Jehová, y pondrás por obra todos sus mandamientos, que yo te intimo hoy."
+    },
+    {
+     "n": 9,
+     "texto": "Y hacerte ha Jehová tu Dios abundar en toda obra de tus manos, en el fruto de tu vientre, en el fruto de tu bestia, y en el fruto de tu tierra, para bien: porque Jehová volverá á gozarse sobre ti para bien, de la manera que se gozó sobre tus padres;"
+    },
+    {
+     "n": 10,
+     "texto": "Cuando oyeres la voz de Jehová tu Dios, para guardar sus mandamientos y sus estatutos escritos en este libro de la ley; cuando te convirtieres á Jehová tu Dios con todo tu corazón y con toda tu alma."
+    },
+    {
+     "n": 11,
+     "texto": "Porque este mandamiento que yo te intimo hoy, no te es encubierto, ni está lejos:"
+    },
+    {
+     "n": 12,
+     "texto": "No está en el cielo, para que digas: ¿Quién subirá por nosotros al cielo, y nos lo traerá y nos lo representará, para que lo cumplamos?"
+    },
+    {
+     "n": 13,
+     "texto": "Ni está de la otra parte de la mar, para que digas: ¿Quién pasará por nosotros la mar, para que nos lo traiga y nos lo represente, á fin de que lo cumplamos?"
+    },
+    {
+     "n": 14,
+     "texto": "Porque muy cerca de ti está la palabra, en tu boca y en tu corazón, para que la cumplas."
+    },
+    {
+     "n": 15,
+     "texto": "Mira, yo he puesto delante de ti hoy la vida y el bien, la muerte y el mal:"
+    },
+    {
+     "n": 16,
+     "texto": "Porque yo te mando hoy que ames á Jehová tu Dios, que andes en sus caminos, y guardes sus mandamientos y sus estatutos y sus derechos, para que vivas y seas multiplicado, y Jehová tu Dios te bendiga en la tierra á la cual entras para poseerla."
+    },
+    {
+     "n": 17,
+     "texto": "Mas si tu corazón se apartare, y no oyeres, y fueres incitado, y te inclinares á dioses ajenos, y los sirvieres;"
+    },
+    {
+     "n": 18,
+     "texto": "Protéstoos hoy que de cierto pereceréis: no tendréis largos días sobre la tierra, para ir á la cual pasas el Jordán para poseerla."
+    },
+    {
+     "n": 19,
+     "texto": "A los cielos y la tierra llamo por testigos hoy contra vosotros, que os he puesto delante la vida y la muerte, la bendición y la maldición: escoge pues la vida, porque vivas tú y tu simiente:"
+    },
+    {
+     "n": 20,
+     "texto": "Que ames á Jehová tu Dios, que oigas su voz, y te allegues á él; porque él es tu vida, y la longitud de tus días; á fin de que habites sobre la tierra que juró Jehová á tus padres Abraham, Isaac, y Jacob, que les había de dar."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 31,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y FUÉ Moisés, y habló estas palabras á todo Israel,"
+    },
+    {
+     "n": 2,
+     "texto": "Y díjoles: De edad de ciento y veinte años soy hoy día; no puedo más salir ni entrar: á más de esto Jehová me ha dicho: No pasarás este Jordán."
+    },
+    {
+     "n": 3,
+     "texto": "Jehová tu Dios, él pasa delante de ti; él destruirá estas gentes de delante de ti, y las heredarás: Josué será el que pasará delante de ti, como Jehová ha dicho."
+    },
+    {
+     "n": 4,
+     "texto": "Y hará Jehová con ellos como hizo con Sehón y con Og, reyes de los Amorrheos, y con su tierra, que los destruyó."
+    },
+    {
+     "n": 5,
+     "texto": "Y los entregará Jehová delante de vosotros, y haréis con ellos conforme á todo lo que os he mandado."
+    },
+    {
+     "n": 6,
+     "texto": "Esforzaos y cobrad ánimo; no temáis, ni tengáis miedo de ellos: que Jehová tu Dios es el que va contigo: no te dejará ni te desamparará."
+    },
+    {
+     "n": 7,
+     "texto": "Y llamó Moisés á Josué, y díjole á vista de todo Israel: Esfuérzate y anímate; porque tú entrarás con este pueblo á la tierra que juró Jehová á sus padres que les había de dar, y tú se la harás heredar."
+    },
+    {
+     "n": 8,
+     "texto": "Y Jehová es el que va delante de ti; él será contigo, no te dejará, ni te desamparará; no temas, ni te intimides."
+    },
+    {
+     "n": 9,
+     "texto": "Y escribió Moisés esta ley, y dióla á los sacerdotes, hijos de Leví, que llevaban el arca del pacto de Jehová, y á todos los ancianos de Israel."
+    },
+    {
+     "n": 10,
+     "texto": "Y mandóles Moisés, diciendo: Al cabo del séptimo año, en el año de la remisión, en la fiesta de las Cabañas,"
+    },
+    {
+     "n": 11,
+     "texto": "Cuando viniere todo Israel á presentarse delante de Jehová tu Dios en el lugar que él escogiere, leerás esta ley delante de todo Israel á oídos de ellos."
+    },
+    {
+     "n": 12,
+     "texto": "Harás congregar el pueblo, varones y mujeres y niños, y tus extranjeros que estuvieren en tus ciudades, para que oigan y aprendan, y teman á Jehová vuestro Dios, y cuiden de poner por obra todas las palabras de esta ley:"
+    },
+    {
+     "n": 13,
+     "texto": "Y los hijos de ellos que no supieron oigan, y aprendan á temer á Jehová vuestro Dios todos los días que viviereis sobre la tierra, para ir á la cual pasáis el Jordán para poseerla."
+    },
+    {
+     "n": 14,
+     "texto": "Y Jehová dijo á Moisés: He aquí se han acercado tus días para que mueras: llama á Josué, y esperad en el tabernáculo del testimonio, y le mandaré. Fueron pues Moisés y Josué, y esperaron en el tabernáculo del testimonio."
+    },
+    {
+     "n": 15,
+     "texto": "Y aparecióse Jehová en el tabernáculo, en la columna de nube; y la columna de nube se puso sobre la puerta del tabernáculo."
+    },
+    {
+     "n": 16,
+     "texto": "Y Jehová dijo á Moisés: He aquí tú vas á dormir con tus padres, y este pueblo se levantará y fornicará tras los dioses ajenos de la tierra adonde va, [en estando] en medio de ella; y me dejará, é invalidará mi pacto que he concertado con él:"
+    },
+    {
+     "n": 17,
+     "texto": "Y mi furor se encenderá contra él en aquel día; y los abandonaré, y esconderé de ellos mi rostro, y serán consumidos; y le hallarán muchos males y angustias, y dirá en aquel día: ¿No me han hallado estos males porque no está mi Dios en medio de mí?"
+    },
+    {
+     "n": 18,
+     "texto": "Empero yo esconderé ciertamente mi rostro en aquel día, por todo el mal que ellos habrán hecho, por haberse vuelto á dioses ajenos."
+    },
+    {
+     "n": 19,
+     "texto": "Ahora pues, escribíos este cántico, y enséñalo á los hijos de Israel: ponlo en boca de ellos, para que este cántico me sea por testigo contra los hijos de Israel."
+    },
+    {
+     "n": 20,
+     "texto": "Porque yo le introduciré en la tierra que juré á sus padres, la cual fluye leche y miel; y comerá, y se hartará, y se engordará: y volveránse á dioses ajenos, y les servirán, y me enojarán, é invalidarán mi pacto."
+    },
+    {
+     "n": 21,
+     "texto": "Y será que cuando le vinieren muchos males y angustias, entonces responderá en su cara este cántico como testigo, pues no caerá en olvido de la boca de su linaje: porque yo conozco su ingenio, [y] lo que hace hoy antes que le introduzca en la tierra que juré."
+    },
+    {
+     "n": 22,
+     "texto": "Y Moisés escribió este cántico aquel día, y enseñólo á los hijos de Israel."
+    },
+    {
+     "n": 23,
+     "texto": "Y dió orden á Josué hijo de Nun, y dijo: Esfuérzate y anímate, que tú meterás los hijos de Israel en la tierra que les juré, y yo seré contigo."
+    },
+    {
+     "n": 24,
+     "texto": "Y como acabó Moisés de escribir las palabras de esta ley en un libro hasta concluirse,"
+    },
+    {
+     "n": 25,
+     "texto": "Mandó Moisés á los Levitas que llevaban el arca del pacto de Jehová, diciendo:"
+    },
+    {
+     "n": 26,
+     "texto": "Tomad este libro de la ley, y ponedlo al lado del arca del pacto de Jehová vuestro Dios, y esté allí por testigo contra ti."
+    },
+    {
+     "n": 27,
+     "texto": "Porque yo conozco tu rebelión, y tu cerviz dura: he aquí que aun viviendo yo hoy con vosotros, sois rebeldes á Jehová; y ¿cuánto más después que yo fuere muerto?"
+    },
+    {
+     "n": 28,
+     "texto": "Congregad á mí todos los ancianos de vuestras tribus, y á vuestros oficiales, y hablaré en sus oídos estas palabras, y llamaré por testigos contra ellos los cielos y la tierra."
+    },
+    {
+     "n": 29,
+     "texto": "Porque yo sé que después de mi muerte, ciertamente os corromperéis y os aparteréis del camino que os he mandado; y que os ha de venir mal en los postreros días, por haber hecho mal en ojos de Jehová, enojándole con la obra de vuestras manos."
+    },
+    {
+     "n": 30,
+     "texto": "Entonces habló Moisés en oídos de toda la congregación de Israel las palabras de este cántico hasta acabarlo."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 32,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ESCUCHAD, cielos, y hablaré; y oiga la tierra los dichos de mi boca."
+    },
+    {
+     "n": 2,
+     "texto": "Goteará como la lluvia mi doctrina; destilará como el rocío mi razonamiento; como la llovizna sobre la grama, y como las gotas sobre la hierba:"
+    },
+    {
+     "n": 3,
+     "texto": "Porque el nombre de Jehová invocaré: engrandeced á nuestro Dios."
+    },
+    {
+     "n": 4,
+     "texto": "[El es] la Roca, cuya obra es perfecta, porque todos sus caminos son rectitud: Dios de verdad, y ninguna iniquidad en él: es justo y recto."
+    },
+    {
+     "n": 5,
+     "texto": "La corrupción no [es] suya: á sus hijos la mancha de ellos, generación torcida y perversa."
+    },
+    {
+     "n": 6,
+     "texto": "¿Así pagáis á Jehová, pueblo loco é ignorante? ¿no es él tu padre que te poseyó? él te hizo y te ha organizado."
+    },
+    {
+     "n": 7,
+     "texto": "Acuérdate de los tiempos antiguos; considerad los años de generación y generación: pregunta á tu padre, que él te declarará; á tus viejos, y ellos te dirán."
+    },
+    {
+     "n": 8,
+     "texto": "Cuando el Altísimo hizo heredar á las gentes, cuando hizo dividir los hijos de los hombres, estableció los términos de los pueblos según el número de los hijos de Israel."
+    },
+    {
+     "n": 9,
+     "texto": "Porque la parte de Jehová es su pueblo; Jacob la cuerda de su heredad."
+    },
+    {
+     "n": 10,
+     "texto": "Hallólo en tierra de desierto, y en desierto horrible y yermo; trájolo alrededor, instruyólo, guardólo como la niña de su ojo."
+    },
+    {
+     "n": 11,
+     "texto": "Como el águila despierta su nidada, revolotea sobre sus pollos, extiende sus alas, los toma, los lleva sobre sus plumas:"
+    },
+    {
+     "n": 12,
+     "texto": "Jehová solo le guió, que no hubo con él dios ajeno."
+    },
+    {
+     "n": 13,
+     "texto": "Hízolo subir sobre las alturas de la tierra, y comió los frutos del campo, é hizo que chupase miel de la peña, y aceite del duro pedernal;"
+    },
+    {
+     "n": 14,
+     "texto": "Manteca de vacas y leche de ovejas, con grosura de corderos, y carneros de Basán; también machos de cabrío, con grosura de riñones de trigo: y sangre de uva bebiste, vino puro."
+    },
+    {
+     "n": 15,
+     "texto": "Y engrosó Jeshurun, y tiró coces: engordástete, engrosástete, cubrístete: y dejó al Dios que le hizo, y menospreció la Roca de su salud."
+    },
+    {
+     "n": 16,
+     "texto": "Despertáronle á celos con los [dioses] ajenos; ensañáronle con abominaciones."
+    },
+    {
+     "n": 17,
+     "texto": "Sacrificaron á los diablos, no á Dios; á dioses que no habían conocido, á nuevos [dioses] venidos de cerca, que no habían temido vuestros padres."
+    },
+    {
+     "n": 18,
+     "texto": "De la Roca que te crió te olvidaste: te has olvidado del Dios tu criador."
+    },
+    {
+     "n": 19,
+     "texto": "Y vió[lo] Jehová, y encendióse en ira, por el menosprecio de sus hijos y de sus hijas."
+    },
+    {
+     "n": 20,
+     "texto": "Y dijo: Esconderé de ellos mi rostro, veré cuál será su postrimería: que son generación de perversidades, hijos sin fe."
+    },
+    {
+     "n": 21,
+     "texto": "Ellos me movieron á celos con lo que no es Dios; hiciéronme ensañar con sus vanidades: yo también los moveré á celos con [un pueblo que] no [es] pueblo, con gente insensata los haré ensañar."
+    },
+    {
+     "n": 22,
+     "texto": "Porque fuego se encenderá en mi furor, y arderá hasta el profundo; y devorará la tierra y sus frutos, y abrasará los fundamentos de los montes."
+    },
+    {
+     "n": 23,
+     "texto": "Yo allegaré males sobre ellos; emplearé en ellos mis saetas."
+    },
+    {
+     "n": 24,
+     "texto": "Consumidos [serán] de hambre, y comidos de fiebre ardiente y de amarga pestilencia; diente de bestias enviaré también sobre ellos, con veneno de serpiente de la tierra."
+    },
+    {
+     "n": 25,
+     "texto": "De fuera desolará la espada, y dentro de las cámaras el espanto; así al mancebo como á la doncella, al que mama como el hombre cano."
+    },
+    {
+     "n": 26,
+     "texto": "Dije: Echaríalos yo del mundo, haría cesar de entre los hombres la memoria de ellos,"
+    },
+    {
+     "n": 27,
+     "texto": "Si no temiese la ira del enemigo, no sea que se envanezcan sus adversarios, no sea que digan: Nuestra mano alta ha hecho todo esto, no Jehová."
+    },
+    {
+     "n": 28,
+     "texto": "Porque son gente de perdidos consejos, y no hay en ellos entendimiento."
+    },
+    {
+     "n": 29,
+     "texto": "¡Ojalá fueran sabios, que comprendieran esto, y entendieran su postrimería!"
+    },
+    {
+     "n": 30,
+     "texto": "¿Cómo podría perseguir uno á mil, y dos harían huir á diez mil, si su Roca no los hubiese vendido, y Jehová no los hubiera entregado?"
+    },
+    {
+     "n": 31,
+     "texto": "Que la roca de ellos no es como nuestra Roca: y nuestros enemigos [sean de ello] jueces."
+    },
+    {
+     "n": 32,
+     "texto": "Porque de la vid de Sodoma es la vid de ellos, y de los sarmientos de Gomorra: las uvas de ellos son uvas ponzoñosas, racimos muy amargos tienen."
+    },
+    {
+     "n": 33,
+     "texto": "Veneno de dragones es su vino, y ponzoña cruel de áspides."
+    },
+    {
+     "n": 34,
+     "texto": "¿No tengo yo esto guardado, sellado en mis tesoros?"
+    },
+    {
+     "n": 35,
+     "texto": "Mía es la venganza y el pago, al tiempo que su pie vacilará; porque el día de su aflicción está cercano, y lo que les está preparado se apresura."
+    },
+    {
+     "n": 36,
+     "texto": "Porque Jehová juzgará á su pueblo, y por amor de sus siervos se arrepentirá, cuando viere que la fuerza pereció, y que no hay guardado, mas desamparado."
+    },
+    {
+     "n": 37,
+     "texto": "Y dirá: ¿Dónde están sus dioses, la roca en que se guarecían;"
+    },
+    {
+     "n": 38,
+     "texto": "Que comían el sebo de sus sacrificios, bebían el vino de sus libaciones? Levántense, que os ayuden y os defiendan."
+    },
+    {
+     "n": 39,
+     "texto": "Ved ahora que yo, yo soy, y no hay dioses conmigo: yo hago morir, y yo hago vivir: yo hiero, y yo curo: y no hay quien pueda librar de mi mano."
+    },
+    {
+     "n": 40,
+     "texto": "Cuando yo alzaré á los cielos mi mano, y diré: Vivo yo para siempre,"
+    },
+    {
+     "n": 41,
+     "texto": "Si afilare mi reluciente espada, y mi mano arrebatare el juicio, yo volveré la venganza á mis enemigos, y daré el pago á los que me aborrecen."
+    },
+    {
+     "n": 42,
+     "texto": "Embriagaré de sangre mis saetas, y mi espada devorará carne: en la sangre de los muertos y de los cautivos de las cabezas, con venganzas de enemigo."
+    },
+    {
+     "n": 43,
+     "texto": "Alabad, gentes, á su pueblo, porque él vengará la sangre de sus siervos, y volverá la venganza á sus enemigos, y expiará su tierra, á su pueblo."
+    },
+    {
+     "n": 44,
+     "texto": "Y vino Moisés, y recitó todas las palabras de este cántico á oídos del pueblo, él, y Josué hijo de Nun."
+    },
+    {
+     "n": 45,
+     "texto": "Y acabó Moisés de recitar todas estas palabras á todo Israel;"
+    },
+    {
+     "n": 46,
+     "texto": "Y díjoles: Poned vuestro corazón á todas las palabras que yo os protesto hoy, para que las mandéis á vuestros hijos, y cuiden de poner por obra todas las palabras de esta ley."
+    },
+    {
+     "n": 47,
+     "texto": "Porque no os es cosa vana, mas es vuestra vida: y por ellas haréis prolongar los días sobre la tierra, para poseer la cual pasáis el Jordán."
+    },
+    {
+     "n": 48,
+     "texto": "Y habló Jehová á Moisés aquel mismo día, diciendo:"
+    },
+    {
+     "n": 49,
+     "texto": "Sube á este monte de Abarim, al monte Nebo, que está en la tierra de Moab, que está en derecho de Jericó, y mira la tierra de Canaán, que yo doy por heredad á los hijos de Israel;"
+    },
+    {
+     "n": 50,
+     "texto": "Y muere en el monte al cual subes, y sé reunido á tus pueblos; al modo que murió Aarón tu hermano en el monte de Hor, y fué reunido á sus pueblos:"
+    },
+    {
+     "n": 51,
+     "texto": "Por cuanto prevaricasteis contra mí en medio de los hijos de Israel en las aguas de la rencilla de Cades, en el desierto de Zin; porque no me santificasteis en medio de los hijos de Israel."
+    },
+    {
+     "n": 52,
+     "texto": "Verás por tanto delante de ti la tierra; mas no entrarás allá, á la tierra que doy á los hijos de Israel."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 33,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ESTA es la bendición con la cual bendijo Moisés varón de Dios á los hijos de Israel, antes que muriese."
+    },
+    {
+     "n": 2,
+     "texto": "Y dijo: Jehová vino de Sinaí, y de Seir les esclareció; resplandeció del monte de Parán, y vino con diez mil santos: á su diestra la ley de fuego para ellos."
+    },
+    {
+     "n": 3,
+     "texto": "Aun amó los pueblos; todos sus santos en tu mano: ellos también se llegaron á tus pies: recibieron de tus dichos."
+    },
+    {
+     "n": 4,
+     "texto": "Ley nos mandó Moisés, heredad á la congregación de Jacob."
+    },
+    {
+     "n": 5,
+     "texto": "Y fué rey en Jeshurun, cuando se congregaron las cabezas del pueblo con las tribus de Israel."
+    },
+    {
+     "n": 6,
+     "texto": "Viva Rubén, y no muera; y sean sus varones en número."
+    },
+    {
+     "n": 7,
+     "texto": "Y esta [bendición] para Judá. Dijo así: Oye, oh Jehová, la voz de Judá, y llévalo á su pueblo; sus manos le basten, y tú seas ayuda contra sus enemigos."
+    },
+    {
+     "n": 8,
+     "texto": "Y á Leví dijo: Tu Thummim y tu Urim, con tu buen varón, al cual tentaste en Massa, y le hiciste reñir en las aguas de la rencilla;"
+    },
+    {
+     "n": 9,
+     "texto": "El que dijo á su padre y á su madre: Nunca los vi: ni conoció á sus hermanos, ni conoció á sus hijos: por lo cual ellos guardarán tus palabras, y observarán tu pacto."
+    },
+    {
+     "n": 10,
+     "texto": "Ellos enseñarán tus juicios á Jacob, y tu ley á Israel; pondrán el perfume delante de ti, y el holocausto sobre tu altar."
+    },
+    {
+     "n": 11,
+     "texto": "Bendice, oh Jehová, lo que hicieren, y recibe con agrado la obra de sus manos: hiere los lomos de sus enemigos, y de los que le aborrecieren; para que nunca se levanten."
+    },
+    {
+     "n": 12,
+     "texto": "Y á Benjamín dijo: El amado de Jehová habitará confiado cerca de él; cubrirálo siempre, y entre sus hombros morará."
+    },
+    {
+     "n": 13,
+     "texto": "Y á José dijo: Bendita de Jehová su tierra, por los regalos de los cielos, por el rocío, y por el abismo que abajo yace,"
+    },
+    {
+     "n": 14,
+     "texto": "Y por los regalados frutos del sol, y por los regalos de las influencias de las lunas,"
+    },
+    {
+     "n": 15,
+     "texto": "Y por la cumbre de los montes antiguos, y por los regalos de los collados eternos,"
+    },
+    {
+     "n": 16,
+     "texto": "Y por los regalos de la tierra y su plenitud; y la gracia del que habitó en la zarza venga sobre la cabeza de José, y sobre la mollera del apartado de sus hermanos."
+    },
+    {
+     "n": 17,
+     "texto": "El es aventajado como el primogénito de su toro, y sus cuernos, cuernos de unicornio: con ellos acorneará los pueblos juntos [hasta] los fines de la tierra: y estos son los diez millares de Ephraim, y estos los millares de Manasés."
+    },
+    {
+     "n": 18,
+     "texto": "Y á Zabulón dijo: Alégrate, Zabulón, cuando salieres: y [tú], Issachâr, en tus tiendas."
+    },
+    {
+     "n": 19,
+     "texto": "Llamarán los pueblos al monte; allí sacrificarán sacrificios de justicia: por lo cual chuparán la abundancia de los mares, y los tesoros escondidos de la arena."
+    },
+    {
+     "n": 20,
+     "texto": "Y á Gad dijo: Bendito el que hizo ensanchar á Gad: como león habitará, y arrebatará brazo y testa."
+    },
+    {
+     "n": 21,
+     "texto": "Y él se ha provisto de la parte primera, porque allí una porción del legislador fuéle reservada, y vino en la delantera del pueblo; la justicia de Jehová ejecutará, y sus juicios con Israel."
+    },
+    {
+     "n": 22,
+     "texto": "Y á Dan dijo: Dan, cachorro de león: saltará desde Basán."
+    },
+    {
+     "n": 23,
+     "texto": "Y á Nephtalí dijo: Nephtalí, saciado de benevolencia, y lleno de la bendición de Jehová, posee el occidente y el mediodía."
+    },
+    {
+     "n": 24,
+     "texto": "Y á Aser dijo: Bendito Aser en hijos: agradable será á sus hermanos, y mojará en aceite su pie."
+    },
+    {
+     "n": 25,
+     "texto": "Hierro y metal tu calzado, y como tus días tu fortaleza."
+    },
+    {
+     "n": 26,
+     "texto": "No hay como el Dios de Jeshurun, montado sobre los cielos para tu ayuda, y sobre las nubes con su grandeza."
+    },
+    {
+     "n": 27,
+     "texto": "El eterno Dios es [tu] refugio, y acá abajo los brazos eternos; él echará de delante de ti al enemigo, y dirá: Destruye."
+    },
+    {
+     "n": 28,
+     "texto": "E Israel, fuente de Jacob, habitará confiado solo en tierra de grano y de vino: también sus cielos destilarán rocío."
+    },
+    {
+     "n": 29,
+     "texto": "Bienaventurado tú, oh Israel, ¿quién como tú, pueblo salvo por Jehová, escudo de tu socorro, y espada de tu excelencia? Así que tus enemigos serán humillados, y tú hollarás sobre sus alturas."
+    }
+   ]
+  },
+  {
+   "libro": "Dt",
+   "cap": 34,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y SUBIÓ Moisés de los campos de Moab al monte de Nebo, á la cumbre de Pisga, que está enfrente de Jericó: y mostróle Jehová toda la tierra de Galaad hasta Dan,"
+    },
+    {
+     "n": 2,
+     "texto": "Y á todo Nephtalí, y la tierra de Ephraim y de Manasés, toda la tierra de Judá hasta la mar postrera;"
+    },
+    {
+     "n": 3,
+     "texto": "Y la parte meridional, y la campiña, la vega de Jericó, ciudad de las palmas, hasta Soar."
+    },
+    {
+     "n": 4,
+     "texto": "Y díjole Jehová: Esta es la tierra de que juré á Abraham, á Isaac, y á Jacob, diciendo: A tu simiente la daré. Hétela hecho ver con tus ojos, mas no pasarás allá."
+    },
+    {
+     "n": 5,
+     "texto": "Y murió allí Moisés siervo de Jehová, en la tierra de Moab, conforme al dicho de Jehová."
+    },
+    {
+     "n": 6,
+     "texto": "Y enterrólo en el valle, en tierra de Moab, enfrente de Bethpeor; y ninguno sabe su sepulcro hasta hoy."
+    },
+    {
+     "n": 7,
+     "texto": "Y era Moisés de edad de ciento y veinte años cuando murió: sus ojos nunca se oscurecieron, ni perdió su vigor."
+    },
+    {
+     "n": 8,
+     "texto": "Y lloraron los hijos de Israel á Moisés en los campos de Moab treinta días: y así se cumplieron los días del lloro del luto de Moisés."
+    },
+    {
+     "n": 9,
+     "texto": "Y Josué hijo de Nun fué lleno de espíritu de sabiduría, porque Moisés había puesto sus manos sobre él: y los hijos de Israel le obedecieron, é hicieron como Jehová mandó á Moisés."
+    },
+    {
+     "n": 10,
+     "texto": "Y nunca más se levantó profeta en Israel como Moisés, á quien haya conocido Jehová cara á cara;"
+    },
+    {
+     "n": 11,
+     "texto": "En todas las señales y prodigios que le envió Jehová á hacer en tierra de Egipto á Faraón, y á todos sus siervos, y á toda su tierra;"
+    },
+    {
+     "n": 12,
+     "texto": "Y en toda aquella mano esforzada, y en todo el espanto grande que causó Moisés á ojos de todo Israel."
+    }
+   ]
   }
  ],
  "personas": [
@@ -22920,7 +26965,14 @@ window.BIBLIA_DATOS = {
     "Ex 32:13",
     "Ex 33:1",
     "Lv 26:42",
-    "Nm 32:11"
+    "Nm 32:11",
+    "Dt 1:8",
+    "Dt 6:10",
+    "Dt 9:5",
+    "Dt 9:27",
+    "Dt 29:13",
+    "Dt 30:20",
+    "Dt 34:4"
    ],
    "nota": "En la Reina-Valera 1909: Abram/Abraham. Se llama Abram hasta Gn 17:5, donde Dios le cambia el nombre por Abraham."
   },
@@ -23012,7 +27064,9 @@ window.BIBLIA_DATOS = {
     "Gn 19:31",
     "Gn 19:36",
     "Gn 19:37",
-    "Gn 19:38"
+    "Gn 19:38",
+    "Dt 2:9",
+    "Dt 2:19"
    ],
    "nota": ""
   },
@@ -23524,7 +27578,14 @@ window.BIBLIA_DATOS = {
     "Ex 32:13",
     "Ex 33:1",
     "Lv 26:42",
-    "Nm 32:11"
+    "Nm 32:11",
+    "Dt 1:8",
+    "Dt 6:10",
+    "Dt 9:5",
+    "Dt 9:27",
+    "Dt 29:13",
+    "Dt 30:20",
+    "Dt 34:4"
    ],
    "nota": ""
   },
@@ -24630,7 +28691,13 @@ window.BIBLIA_DATOS = {
     "Gn 36:18",
     "Gn 36:19",
     "Gn 36:40",
-    "Gn 36:43"
+    "Gn 36:43",
+    "Dt 2:4",
+    "Dt 2:5",
+    "Dt 2:8",
+    "Dt 2:12",
+    "Dt 2:22",
+    "Dt 2:29"
    ],
    "nota": "El texto lo llama también Edom (Gn 25:30; 36:1)."
   },
@@ -24846,9 +28913,16 @@ window.BIBLIA_DATOS = {
     "Ex 32:13",
     "Ex 33:1",
     "Lv 26:42",
-    "Nm 32:11"
+    "Nm 32:11",
+    "Dt 1:8",
+    "Dt 6:10",
+    "Dt 9:5",
+    "Dt 9:27",
+    "Dt 29:13",
+    "Dt 30:20",
+    "Dt 34:4"
    ],
-   "nota": "En Gn 32:28 recibe el nombre de Israel; el texto sigue usando ambos."
+   "nota": "En Gn 32:28 recibe el nombre de Israel; el texto sigue usando ambos. En Deuteronomio «Jeshurun» (Dt 32:15) es nombre del pueblo: no se marca como Jacob."
   },
   {
    "id": "Ahuzzath_1",
@@ -25156,7 +29230,9 @@ window.BIBLIA_DATOS = {
     "Nm 32:31",
     "Nm 32:33",
     "Nm 32:37",
-    "Nm 34:14"
+    "Nm 34:14",
+    "Dt 11:6",
+    "Dt 33:6"
    ],
    "nota": ""
   },
@@ -25234,7 +29310,10 @@ window.BIBLIA_DATOS = {
     "Nm 18:2",
     "Nm 18:21",
     "Nm 26:58",
-    "Nm 26:59"
+    "Nm 26:59",
+    "Dt 10:8",
+    "Dt 18:1",
+    "Dt 33:8"
    ],
    "nota": "En Números la RV1909 escribe también «Levitas»."
   },
@@ -25295,7 +29374,8 @@ window.BIBLIA_DATOS = {
     "Nm 13:7",
     "Nm 26:19",
     "Nm 26:20",
-    "Nm 34:19"
+    "Nm 34:19",
+    "Dt 33:7"
    ],
    "nota": ""
   },
@@ -25331,7 +29411,8 @@ window.BIBLIA_DATOS = {
     "Nm 10:25",
     "Nm 13:13",
     "Nm 26:42",
-    "Nm 34:22"
+    "Nm 34:22",
+    "Dt 33:22"
    ],
    "nota": ""
   },
@@ -25362,7 +29443,8 @@ window.BIBLIA_DATOS = {
     "Nm 13:15",
     "Nm 26:48",
     "Nm 26:50",
-    "Nm 34:28"
+    "Nm 34:28",
+    "Dt 33:23"
    ],
    "nota": "En la Reina-Valera 1909: Nephtalí."
   },
@@ -25400,7 +29482,8 @@ window.BIBLIA_DATOS = {
     "Nm 32:31",
     "Nm 32:33",
     "Nm 32:34",
-    "Nm 34:14"
+    "Nm 34:14",
+    "Dt 33:20"
    ],
    "nota": ""
   },
@@ -25432,7 +29515,8 @@ window.BIBLIA_DATOS = {
     "Nm 26:44",
     "Nm 26:46",
     "Nm 26:47",
-    "Nm 34:27"
+    "Nm 34:27",
+    "Dt 33:24"
    ],
    "nota": ""
   },
@@ -25460,7 +29544,8 @@ window.BIBLIA_DATOS = {
     "Nm 10:15",
     "Nm 13:8",
     "Nm 26:23",
-    "Nm 34:26"
+    "Nm 34:26",
+    "Dt 33:18"
    ],
    "nota": "En la Reina-Valera 1909: Issachâr."
   },
@@ -25490,7 +29575,8 @@ window.BIBLIA_DATOS = {
     "Nm 10:16",
     "Nm 13:11",
     "Nm 26:26",
-    "Nm 34:25"
+    "Nm 34:25",
+    "Dt 33:18"
    ],
    "nota": ""
   },
@@ -25684,7 +29770,8 @@ window.BIBLIA_DATOS = {
     "Nm 34:23",
     "Nm 36:1",
     "Nm 36:5",
-    "Nm 36:12"
+    "Nm 36:12",
+    "Dt 33:16"
    ],
    "nota": "Faraón le da el nombre Zaphnath-paaneah (Gn 41:45)."
   },
@@ -25813,7 +29900,8 @@ window.BIBLIA_DATOS = {
     "Nm 13:10",
     "Nm 26:38",
     "Nm 26:41",
-    "Nm 34:21"
+    "Nm 34:21",
+    "Dt 33:12"
    ],
    "nota": "Su madre lo llamó Benoni; su padre, Benjamín (Gn 35:18)."
   },
@@ -27382,7 +31470,9 @@ window.BIBLIA_DATOS = {
     "Nm 34:14",
     "Nm 34:23",
     "Nm 36:1",
-    "Nm 36:12"
+    "Nm 36:12",
+    "Dt 3:14",
+    "Dt 33:17"
    ],
    "nota": ""
   },
@@ -27419,7 +31509,8 @@ window.BIBLIA_DATOS = {
     "Nm 26:28",
     "Nm 26:35",
     "Nm 26:37",
-    "Nm 34:24"
+    "Nm 34:24",
+    "Dt 33:17"
    ],
    "nota": "En la Reina-Valera 1909: Ephraim."
   },
@@ -28386,7 +32477,8 @@ window.BIBLIA_DATOS = {
     "Nm 27:1",
     "Nm 32:39",
     "Nm 32:40",
-    "Nm 36:1"
+    "Nm 36:1",
+    "Dt 3:15"
    ],
    "nota": "En la Reina-Valera 1909: Machîr."
   },
@@ -29039,9 +33131,45 @@ window.BIBLIA_DATOS = {
     "Nm 36:1",
     "Nm 36:5",
     "Nm 36:10",
-    "Nm 36:13"
+    "Nm 36:13",
+    "Dt 1:1",
+    "Dt 1:3",
+    "Dt 1:5",
+    "Dt 4:41",
+    "Dt 4:44",
+    "Dt 4:45",
+    "Dt 4:46",
+    "Dt 5:1",
+    "Dt 27:1",
+    "Dt 27:9",
+    "Dt 27:11",
+    "Dt 29:1",
+    "Dt 29:2",
+    "Dt 31:1",
+    "Dt 31:2",
+    "Dt 31:7",
+    "Dt 31:9",
+    "Dt 31:10",
+    "Dt 31:14",
+    "Dt 31:16",
+    "Dt 31:22",
+    "Dt 31:24",
+    "Dt 31:25",
+    "Dt 31:30",
+    "Dt 32:44",
+    "Dt 32:45",
+    "Dt 32:48",
+    "Dt 33:1",
+    "Dt 33:4",
+    "Dt 34:1",
+    "Dt 34:5",
+    "Dt 34:7",
+    "Dt 34:8",
+    "Dt 34:9",
+    "Dt 34:10",
+    "Dt 34:12"
    ],
-   "nota": ""
+   "nota": "Muere en la tierra de Moab a los 120 años (Dt 34:5-7): «Y era Moisés de edad de ciento y veinte años cuando murió»; lo entierran en el valle, enfrente de Bet-peor, «y ninguno sabe su sepulcro hasta hoy» (Dt 34:6)."
   },
   {
    "id": "Reuel_2",
@@ -29232,7 +33360,14 @@ window.BIBLIA_DATOS = {
     "Ex 15:19",
     "Ex 18:4",
     "Ex 18:8",
-    "Ex 18:10"
+    "Ex 18:10",
+    "Dt 6:21",
+    "Dt 6:22",
+    "Dt 7:8",
+    "Dt 7:18",
+    "Dt 11:3",
+    "Dt 29:2",
+    "Dt 34:11"
    ],
    "nota": "Faraón de las plagas y de la salida (desde Ex 3:10); BibleData lo distingue del que muere en Ex 2:23. El texto no da su nombre."
   },
@@ -29527,9 +33662,12 @@ window.BIBLIA_DATOS = {
     "Nm 27:13",
     "Nm 33:1",
     "Nm 33:38",
-    "Nm 33:39"
+    "Nm 33:39",
+    "Dt 9:20",
+    "Dt 10:6",
+    "Dt 32:50"
    ],
-   "nota": "Muere en la cumbre del monte de Hor (Nm 20:25-28; 33:38), a los 123 años (Nm 33:39); Eleazar recibe sus vestiduras."
+   "nota": "Muere en la cumbre del monte de Hor (Nm 20:25-28; 33:38), a los 123 años (Nm 33:39); Eleazar recibe sus vestiduras. Dt 10:6 dice que murió y fue sepultado en Moserá («allí murió Aarón, y allí fué sepultado»); Nm 20:28 y 33:38 y Dt 32:50, que murió en el monte Hor. Se registran las dos citas sin armonizarlas."
   },
   {
    "id": "Libni_1",
@@ -29910,9 +34048,10 @@ window.BIBLIA_DATOS = {
     "Nm 31:54",
     "Nm 32:2",
     "Nm 32:28",
-    "Nm 34:17"
+    "Nm 34:17",
+    "Dt 10:6"
    ],
-   "nota": "Sucede a Aarón como sacerdote: Moisés le pone las vestiduras de su padre en el monte Hor (Nm 20:28)."
+   "nota": "Sucede a Aarón como sacerdote: Moisés le pone las vestiduras de su padre en el monte Hor (Nm 20:28). Dt 10:6: «en lugar suyo tuvo el sacerdocio su hijo Eleazar»."
   },
   {
    "id": "Elisheba_1",
@@ -30118,7 +34257,8 @@ window.BIBLIA_DATOS = {
     "Nm 12:10",
     "Nm 12:15",
     "Nm 20:1",
-    "Nm 26:59"
+    "Nm 26:59",
+    "Dt 24:9"
    ],
    "nota": "En la Reina-Valera 1909: María. Ex 15:20 la llama «hermana de Aarón»; el texto masorético de Éxodo no nombra a sus padres: su filiación (Amram y Jocabed) es inferida. La LXX (Brenton) en Ex 6:20 añade «and Mariam their sister». La «hermana» de Moisés de Ex 2:4-8 no tiene nombre y no se identifica con ella. Muere y es sepultada en Cades, en el desierto de Zin (Nm 20:1). Nm 26:59 sí nombra a sus padres: «parió de Amram á Aarón y á Moisés, y á María su hermana»."
   },
@@ -30153,9 +34293,18 @@ window.BIBLIA_DATOS = {
     "Nm 27:22",
     "Nm 32:12",
     "Nm 32:28",
-    "Nm 34:17"
+    "Nm 34:17",
+    "Dt 1:38",
+    "Dt 3:21",
+    "Dt 3:28",
+    "Dt 31:3",
+    "Dt 31:7",
+    "Dt 31:14",
+    "Dt 31:23",
+    "Dt 32:44",
+    "Dt 34:9"
    ],
-   "nota": "En Números la RV1909 escribe también «Oseas». Nm 13:17 (RV1909): «á Oseas hijo de Nun, le puso Moisés el nombre de Josué».",
+   "nota": "En Números la RV1909 escribe también «Oseas». Nm 13:17 (RV1909): «á Oseas hijo de Nun, le puso Moisés el nombre de Josué». Sucesor de Moisés: Dt 31:7 («tú entrarás con este pueblo á la tierra») y Dt 34:9 («Josué hijo de Nun fué lleno de espíritu de sabiduría, porque Moisés había puesto sus manos sobre él»).",
    "identidad": {
     "certeza": "texto",
     "refs": [
@@ -30316,7 +34465,11 @@ window.BIBLIA_DATOS = {
     "Nm 27:18",
     "Nm 32:12",
     "Nm 32:28",
-    "Nm 34:17"
+    "Nm 34:17",
+    "Dt 1:38",
+    "Dt 31:23",
+    "Dt 32:44",
+    "Dt 34:9"
    ],
    "nota": ""
   },
@@ -31010,7 +35163,8 @@ window.BIBLIA_DATOS = {
     "Nm 14:38",
     "Nm 26:65",
     "Nm 32:12",
-    "Nm 34:19"
+    "Nm 34:19",
+    "Dt 1:36"
    ],
    "nota": "Uno de los doce enviados a reconocer la tierra; Nm 32:12 lo llama «Caleb, hijo de Jephone Cenezeo»."
   },
@@ -31032,7 +35186,8 @@ window.BIBLIA_DATOS = {
     "Nm 14:38",
     "Nm 26:65",
     "Nm 32:12",
-    "Nm 34:19"
+    "Nm 34:19",
+    "Dt 1:36"
    ],
    "nota": "En la Reina-Valera 1909: Jephone."
   },
@@ -31322,7 +35477,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 13:23",
     "Nm 13:29",
-    "Nm 13:33"
+    "Nm 13:33",
+    "Dt 9:2"
    ],
    "nota": "Antepasado de los «gigantes, hijos de Anac» (Nm 13:33 en la RV1909)."
   },
@@ -31375,9 +35531,10 @@ window.BIBLIA_DATOS = {
     "Nm 16:24",
     "Nm 16:25",
     "Nm 16:27",
-    "Nm 26:9"
+    "Nm 26:9",
+    "Dt 11:6"
    ],
-   "nota": ""
+   "nota": "Dt 11:6: «Dathán y Abiram, hijos de Eliab hijo de Rubén» (Eliab es nieto de Rubén por Falú, Nm 26:5-8)."
   },
   {
    "id": "Dathan_1",
@@ -31396,9 +35553,10 @@ window.BIBLIA_DATOS = {
     "Nm 16:24",
     "Nm 16:25",
     "Nm 16:27",
-    "Nm 26:9"
+    "Nm 26:9",
+    "Dt 11:6"
    ],
-   "nota": "En la Reina-Valera 1909: Dathán."
+   "nota": "En la Reina-Valera 1909: Dathán. Dt 11:6: «Dathán y Abiram, hijos de Eliab hijo de Rubén» (Eliab es nieto de Rubén por Falú, Nm 26:5-8)."
   },
   {
    "id": "Eliab_2",
@@ -31415,7 +35573,8 @@ window.BIBLIA_DATOS = {
     "Nm 16:1",
     "Nm 16:12",
     "Nm 26:8",
-    "Nm 26:9"
+    "Nm 26:9",
+    "Dt 11:6"
    ],
    "nota": "De la tribu de Rubén, padre de Datán y Abiram (Nm 16:1). Distinto de Eliab, jefe de Zabulón (Nm 1:9)."
   },
@@ -31470,9 +35629,19 @@ window.BIBLIA_DATOS = {
     "Nm 21:28",
     "Nm 21:29",
     "Nm 21:34",
-    "Nm 32:33"
+    "Nm 32:33",
+    "Dt 1:4",
+    "Dt 2:24",
+    "Dt 2:26",
+    "Dt 2:30",
+    "Dt 2:32",
+    "Dt 3:2",
+    "Dt 3:6",
+    "Dt 4:46",
+    "Dt 29:7",
+    "Dt 31:4"
    ],
-   "nota": ""
+   "nota": "Dt 2:24: «Sehón rey de Hesbón, Amorrheo»; sale a pelear en Jahaza («Jaas», Dt 2:32)."
   },
   {
    "id": "Og_1",
@@ -31487,9 +35656,18 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Nm 21:33",
    "refs": [
     "Nm 21:33",
-    "Nm 32:33"
+    "Nm 32:33",
+    "Dt 1:4",
+    "Dt 3:1",
+    "Dt 3:3",
+    "Dt 3:10",
+    "Dt 3:11",
+    "Dt 3:13",
+    "Dt 4:47",
+    "Dt 29:7",
+    "Dt 31:4"
    ],
-   "nota": ""
+   "nota": "Dt 3:11: su cama de hierro, de nueve codos, «¿no está en Rabbath de los hijos de Ammón?»."
   },
   {
    "id": "Balak_1",
@@ -31622,9 +35800,11 @@ window.BIBLIA_DATOS = {
     "Nm 24:15",
     "Nm 24:25",
     "Nm 31:8",
-    "Nm 31:16"
+    "Nm 31:16",
+    "Dt 23:4",
+    "Dt 23:5"
    ],
-   "nota": "Nm 22:5: Balac lo manda llamar «á Pethor, que está junto al río». Muere a espada en la guerra contra Madián (Nm 31:8)."
+   "nota": "Nm 22:5: Balac lo manda llamar «á Pethor, que está junto al río». Muere a espada en la guerra contra Madián (Nm 31:8). Dt 23:4: «Balaam hijo de Beor de Pethor de Mesopotamia de Siria»."
   },
   {
    "id": "Beor_2",
@@ -31641,7 +35821,8 @@ window.BIBLIA_DATOS = {
     "Nm 22:5",
     "Nm 24:3",
     "Nm 24:15",
-    "Nm 31:8"
+    "Nm 31:8",
+    "Dt 23:4"
    ],
    "nota": ""
   },
@@ -32131,7 +36312,8 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "Nm 32:41",
    "refs": [
-    "Nm 32:41"
+    "Nm 32:41",
+    "Dt 3:14"
    ],
    "nota": "Nm 32:41: «Jair hijo de Manasés» (descendiente de Manasés; el texto no da su padre)."
   },
@@ -36381,7 +40563,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar».",
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Lv 10:6: «á Aarón, y á Eleazar y á Ithamar, sus hijos». También Nm 26:60: «á Aarón nacieron Nadab y Abiú, Eleazar é Ithamar». También Dt 10:6: «su hijo Eleazar».",
    "cita": "tomóse Aarón por mujer á Elisabeth"
   },
   {
@@ -36613,7 +40795,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 33:11",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": "También Nm 13:9: «Oseas hijo de Nun»."
+   "nota": "También Nm 13:9: «Oseas hijo de Nun». También Dt 1:38: «Josué hijo de Nun». También Dt 34:9: «Josué hijo de Nun»."
   },
   {
    "de": "Dibri_1",
@@ -36786,7 +40968,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 13:7",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "Nm 13:6 en la numeración inglesa.",
+   "nota": "Nm 13:6 en la numeración inglesa. También Dt 1:36: «Caleb hijo de Jephone».",
    "cita": "Caleb hijo de Jephone"
   },
   {
@@ -36895,7 +41077,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 16:1",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 26:9.",
+   "nota": "También Nm 26:9. También Dt 11:6: «Dathán y Abiram, hijos de Eliab».",
    "cita": "Dathán y Abiram, hijos de Eliab"
   },
   {
@@ -36905,7 +41087,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 16:1",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 26:9.",
+   "nota": "También Nm 26:9. También Dt 11:6: «Dathán y Abiram, hijos de Eliab».",
    "cita": "Dathán y Abiram, hijos de Eliab"
   },
   {
@@ -36935,7 +41117,7 @@ window.BIBLIA_DATOS = {
    "ref": "Nm 22:5",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También Nm 31:8.",
+   "nota": "También Nm 31:8. También Dt 23:4: «Balaam hijo de Beor».",
    "cita": "Balaam hijo de Beor"
   },
   {
@@ -39167,6 +43349,52 @@ window.BIBLIA_DATOS = {
    "fuente": "brenton",
    "cita": "a hundred and twenty-three years",
    "nota": ""
+  },
+  {
+   "persona": "Moses_1",
+   "tipo": "total",
+   "tradicion": "TM",
+   "valor": 120,
+   "ref": "Dt 34:7",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "ciento y veinte años",
+   "nota": ""
+  },
+  {
+   "persona": "Moses_1",
+   "tipo": "total",
+   "tradicion": "LXX",
+   "valor": 120,
+   "ref": "Dt 34:7",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "a hundred and twenty years",
+   "nota": ""
+  },
+  {
+   "persona": "Moses_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 120,
+   "ref": "Dt 31:2",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "ciento y veinte años",
+   "nota": "",
+   "evento": "al despedirse del pueblo («soy hoy día», Dt 31:2)"
+  },
+  {
+   "persona": "Moses_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 120,
+   "ref": "Dt 31:2",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "a hundred and twenty years",
+   "nota": "",
+   "evento": "al despedirse del pueblo («soy hoy día», Dt 31:2)"
   }
  ],
  "pasajes": [
@@ -42609,6 +46837,746 @@ window.BIBLIA_DATOS = {
    "titulo_origen": "editorial",
    "resumen": "Las hijas de Zelofehad se casan dentro de su tribu para que la heredad no pase a otra.",
    "seccion": "Preparativos para entrar en la tierra (Nm 27–36)"
+  },
+  {
+   "id": "dt-01",
+   "libro": "Dt",
+   "inicio": "Dt 1:1",
+   "fin": "Dt 1:8",
+   "titulo": "Las palabras de Moisés en Moab",
+   "titulo_origen": "editorial",
+   "resumen": "El año cuarenta, mes undécimo, Moisés habla a Israel al otro lado del Jordán y recuerda la orden de salir de Horeb.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-02",
+   "libro": "Dt",
+   "inicio": "Dt 1:9",
+   "fin": "Dt 1:18",
+   "titulo": "Jefes y jueces para el pueblo",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés no puede llevar solo al pueblo: pone jefes por tribus y manda juzgar con justicia.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-03",
+   "libro": "Dt",
+   "inicio": "Dt 1:19",
+   "fin": "Dt 1:33",
+   "titulo": "Cades-barnea: el pueblo no quiere subir",
+   "titulo_origen": "editorial",
+   "resumen": "Los enviados traen fruto de la tierra, pero el pueblo teme a los amorreos y no confía en Jehová.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-04",
+   "libro": "Dt",
+   "inicio": "Dt 1:34",
+   "fin": "Dt 1:46",
+   "titulo": "Castigo y derrota en Horma",
+   "titulo_origen": "editorial",
+   "resumen": "Esa generación no verá la tierra, salvo Caleb y Josué; el pueblo sube sin Dios y es derrotado.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-05",
+   "libro": "Dt",
+   "inicio": "Dt 2:1",
+   "fin": "Dt 2:15",
+   "titulo": "Por Seir y Moab sin pelear",
+   "titulo_origen": "editorial",
+   "resumen": "Rodean el monte Seir; no han de pelear con los hijos de Esaú ni con Moab; pasan el arroyo de Zered tras treinta y ocho años.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-06",
+   "libro": "Dt",
+   "inicio": "Dt 2:16",
+   "fin": "Dt 2:25",
+   "titulo": "Junto a Ammón; hacia el Arnón",
+   "titulo_origen": "editorial",
+   "resumen": "No han de molestar a los hijos de Ammón; antiguos pueblos de gigantes; Dios manda pasar el Arnón.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-07",
+   "libro": "Dt",
+   "inicio": "Dt 2:26",
+   "fin": "Dt 2:37",
+   "titulo": "Victoria sobre Sehón",
+   "titulo_origen": "editorial",
+   "resumen": "Sehón, rey de Hesbón, niega el paso; Israel lo vence en Jahaza y toma sus ciudades.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-08",
+   "libro": "Dt",
+   "inicio": "Dt 3:1",
+   "fin": "Dt 3:11",
+   "titulo": "Victoria sobre Og",
+   "titulo_origen": "editorial",
+   "resumen": "Og, rey de Basán, sale a pelear en Edrei; Israel toma sesenta ciudades de Argob; la cama de hierro de Og.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-09",
+   "libro": "Dt",
+   "inicio": "Dt 3:12",
+   "fin": "Dt 3:22",
+   "titulo": "El reparto al oriente del Jordán",
+   "titulo_origen": "editorial",
+   "resumen": "Rubén, Gad y la media tribu de Manasés reciben la tierra; Jair y Maquir; los hombres de guerra pasarán armados.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-10",
+   "libro": "Dt",
+   "inicio": "Dt 3:23",
+   "fin": "Dt 3:29",
+   "titulo": "Moisés no pasará el Jordán",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés ruega pasar; Dios le manda subir a la cumbre del Pisga y mirar, y animar a Josué.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-11",
+   "libro": "Dt",
+   "inicio": "Dt 4:1",
+   "fin": "Dt 4:14",
+   "titulo": "Guardar los mandamientos; el día de Horeb",
+   "titulo_origen": "editorial",
+   "resumen": "No añadir ni quitar; lo que pasó en Baal-peor; el pueblo oyó la voz de Dios en Horeb.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-12",
+   "libro": "Dt",
+   "inicio": "Dt 4:15",
+   "fin": "Dt 4:31",
+   "titulo": "Contra las imágenes",
+   "titulo_origen": "editorial",
+   "resumen": "En Horeb no vieron figura: no harán imágenes; si las hacen serán esparcidos, y si vuelven Dios no los olvidará.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-13",
+   "libro": "Dt",
+   "inicio": "Dt 4:32",
+   "fin": "Dt 4:43",
+   "titulo": "Ningún dios como Jehová; ciudades de refugio",
+   "titulo_origen": "editorial",
+   "resumen": "¿Qué pueblo oyó la voz de Dios y vivió? Moisés aparta Beser, Ramot y Golán al oriente del Jordán.",
+   "seccion": "Primer discurso: memoria del desierto (Dt 1:1–4:43)"
+  },
+  {
+   "id": "dt-14",
+   "libro": "Dt",
+   "inicio": "Dt 4:44",
+   "fin": "Dt 5:5",
+   "titulo": "Introducción: el pacto de Horeb",
+   "titulo_origen": "editorial",
+   "resumen": "Esta es la ley que Moisés puso delante de Israel en Moab; el pacto de Horeb es con los que viven hoy.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-15",
+   "libro": "Dt",
+   "inicio": "Dt 5:6",
+   "fin": "Dt 5:21",
+   "titulo": "Los diez mandamientos",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés repite las diez palabras: un solo Dios, sin imágenes, el nombre, el sábado, los padres, la vida, el matrimonio, lo ajeno.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-16",
+   "libro": "Dt",
+   "inicio": "Dt 5:22",
+   "fin": "Dt 5:33",
+   "titulo": "El pueblo pide que Moisés hable",
+   "titulo_origen": "editorial",
+   "resumen": "El pueblo teme la voz de Dios en el fuego y pide que Moisés les transmita lo que Dios diga.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-17",
+   "libro": "Dt",
+   "inicio": "Dt 6:1",
+   "fin": "Dt 6:9",
+   "titulo": "Oye, Israel (el Shemá)",
+   "titulo_origen": "editorial",
+   "resumen": "«Oye, Israel: Jehová nuestro Dios, Jehová uno es»; amarle con todo el corazón y enseñar estas palabras a los hijos.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-18",
+   "libro": "Dt",
+   "inicio": "Dt 6:10",
+   "fin": "Dt 6:25",
+   "titulo": "No olvidar a Jehová en la tierra",
+   "titulo_origen": "editorial",
+   "resumen": "Al entrar en la tierra no olvidarán a Dios ni lo tentarán como en Massa; contarán a sus hijos la salida de Egipto.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-19",
+   "libro": "Dt",
+   "inicio": "Dt 7:1",
+   "fin": "Dt 7:11",
+   "titulo": "Un pueblo santo, escogido por amor",
+   "titulo_origen": "editorial",
+   "resumen": "Orden de destruir a las siete naciones y no emparentar con ellas; Dios los escogió por amor, no por ser muchos.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-20",
+   "libro": "Dt",
+   "inicio": "Dt 7:12",
+   "fin": "Dt 7:26",
+   "titulo": "La bendición de obedecer; no temer",
+   "titulo_origen": "editorial",
+   "resumen": "Si obedecen serán bendecidos; no temerán a las naciones; quemarán sus imágenes.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-21",
+   "libro": "Dt",
+   "inicio": "Dt 8:1",
+   "fin": "Dt 8:20",
+   "titulo": "No olvidar en la abundancia",
+   "titulo_origen": "editorial",
+   "resumen": "Cuarenta años en el desierto y el maná: «el hombre no vivirá de solo pan»; en la tierra buena no olvidarán a Dios.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-22",
+   "libro": "Dt",
+   "inicio": "Dt 9:1",
+   "fin": "Dt 9:14",
+   "titulo": "No por tu justicia; la rebelión en Horeb",
+   "titulo_origen": "editorial",
+   "resumen": "Dios echará a las naciones no por la justicia de Israel; Moisés recuerda cómo el pueblo se rebeló en Horeb.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-23",
+   "libro": "Dt",
+   "inicio": "Dt 9:15",
+   "fin": "Dt 9:29",
+   "titulo": "El becerro de oro y la intercesión",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés quiebra las tablas al ver el becerro, lo quema y ruega cuarenta días por el pueblo y por Aarón.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-24",
+   "libro": "Dt",
+   "inicio": "Dt 10:1",
+   "fin": "Dt 10:11",
+   "titulo": "Las nuevas tablas; los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "Dios escribe otra vez las tablas, que se guardan en el arca; muerte de Aarón; la tribu de Leví apartada.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-25",
+   "libro": "Dt",
+   "inicio": "Dt 10:12",
+   "fin": "Dt 10:22",
+   "titulo": "¿Qué pide Jehová?",
+   "titulo_origen": "editorial",
+   "resumen": "Temer a Dios, andar en sus caminos y amarle; circuncidar el corazón y amar al extranjero.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-26",
+   "libro": "Dt",
+   "inicio": "Dt 11:1",
+   "fin": "Dt 11:12",
+   "titulo": "Lo que vieron sus ojos",
+   "titulo_origen": "editorial",
+   "resumen": "Las señales en Egipto y en el mar, lo que hizo con Datán y Abiram; la tierra que Dios cuida.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-27",
+   "libro": "Dt",
+   "inicio": "Dt 11:13",
+   "fin": "Dt 11:21",
+   "titulo": "La lluvia a su tiempo; las palabras en el corazón",
+   "titulo_origen": "editorial",
+   "resumen": "Si aman a Dios tendrán lluvia y cosecha; pondrán estas palabras en su corazón y en sus puertas.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-28",
+   "libro": "Dt",
+   "inicio": "Dt 11:22",
+   "fin": "Dt 11:32",
+   "titulo": "Bendición y maldición: Gerizim y Ebal",
+   "titulo_origen": "editorial",
+   "resumen": "La tierra hasta el Éufrates; delante de ellos la bendición y la maldición, puestas sobre Gerizim y Ebal.",
+   "seccion": "Segundo discurso: el Decálogo y el Shemá (Dt 4:44–11:32)"
+  },
+  {
+   "id": "dt-29",
+   "libro": "Dt",
+   "inicio": "Dt 12:1",
+   "fin": "Dt 12:14",
+   "titulo": "El lugar que Dios escoja",
+   "titulo_origen": "editorial",
+   "resumen": "Destruirán los lugares de culto de las naciones y ofrecerán sus sacrificios solo en el lugar que Dios escoja.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-30",
+   "libro": "Dt",
+   "inicio": "Dt 12:15",
+   "fin": "Dt 12:32",
+   "titulo": "Comer carne; no imitar a las naciones",
+   "titulo_origen": "editorial",
+   "resumen": "Pueden comer carne en sus ciudades, pero no la sangre; no imitarán el culto de las naciones.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-31",
+   "libro": "Dt",
+   "inicio": "Dt 13:1",
+   "fin": "Dt 13:18",
+   "titulo": "Contra quien incita a otros dioses",
+   "titulo_origen": "editorial",
+   "resumen": "El profeta, el pariente o la ciudad que inciten a servir a otros dioses serán castigados.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-32",
+   "libro": "Dt",
+   "inicio": "Dt 14:1",
+   "fin": "Dt 14:21",
+   "titulo": "Animales limpios e inmundos",
+   "titulo_origen": "editorial",
+   "resumen": "Pueblo santo: qué animales, peces y aves pueden comer y cuáles no.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-33",
+   "libro": "Dt",
+   "inicio": "Dt 14:22",
+   "fin": "Dt 14:29",
+   "titulo": "El diezmo",
+   "titulo_origen": "editorial",
+   "resumen": "Diezmo de la cosecha comido delante de Dios; cada tres años, para el levita, el extranjero, el huérfano y la viuda.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-34",
+   "libro": "Dt",
+   "inicio": "Dt 15:1",
+   "fin": "Dt 15:11",
+   "titulo": "El año de la remisión",
+   "titulo_origen": "editorial",
+   "resumen": "Cada siete años se perdonan las deudas; no endurecer el corazón con el pobre.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-35",
+   "libro": "Dt",
+   "inicio": "Dt 15:12",
+   "fin": "Dt 15:23",
+   "titulo": "El siervo hebreo; los primogénitos",
+   "titulo_origen": "editorial",
+   "resumen": "El siervo hebreo sale libre al séptimo año y con provisión; los primogénitos del ganado son de Dios.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-36",
+   "libro": "Dt",
+   "inicio": "Dt 16:1",
+   "fin": "Dt 16:17",
+   "titulo": "Las tres fiestas",
+   "titulo_origen": "editorial",
+   "resumen": "La Pascua, la fiesta de las semanas y la de las cabañas, en el lugar que Dios escoja.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-37",
+   "libro": "Dt",
+   "inicio": "Dt 16:18",
+   "fin": "Dt 17:7",
+   "titulo": "Jueces justos; contra la idolatría",
+   "titulo_origen": "editorial",
+   "resumen": "Jueces que no reciban soborno; no plantar bosques ni ofrecer animales con defecto; castigo del que sirve a otros dioses.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-38",
+   "libro": "Dt",
+   "inicio": "Dt 17:8",
+   "fin": "Dt 17:20",
+   "titulo": "El tribunal y el rey",
+   "titulo_origen": "editorial",
+   "resumen": "Los casos difíciles van a los sacerdotes y al juez; el rey no multiplicará caballos, mujeres ni oro, y leerá la ley.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-39",
+   "libro": "Dt",
+   "inicio": "Dt 18:1",
+   "fin": "Dt 18:8",
+   "titulo": "La porción de los levitas",
+   "titulo_origen": "editorial",
+   "resumen": "Los levitas no tienen heredad: Jehová es su heredad y viven de las ofrendas.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-40",
+   "libro": "Dt",
+   "inicio": "Dt 18:9",
+   "fin": "Dt 18:22",
+   "titulo": "Contra la adivinación; el profeta",
+   "titulo_origen": "editorial",
+   "resumen": "No habrá adivinos ni encantadores; Dios levantará un profeta como Moisés.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-41",
+   "libro": "Dt",
+   "inicio": "Dt 19:1",
+   "fin": "Dt 19:13",
+   "titulo": "Las ciudades de refugio",
+   "titulo_origen": "editorial",
+   "resumen": "Tres ciudades para quien mata sin intención; el homicida voluntario no tiene refugio.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-42",
+   "libro": "Dt",
+   "inicio": "Dt 19:14",
+   "fin": "Dt 19:21",
+   "titulo": "Lindes y testigos",
+   "titulo_origen": "editorial",
+   "resumen": "No mover los mojones del prójimo; dos o tres testigos; castigo del testigo falso.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-43",
+   "libro": "Dt",
+   "inicio": "Dt 20:1",
+   "fin": "Dt 20:20",
+   "titulo": "Leyes de la guerra",
+   "titulo_origen": "editorial",
+   "resumen": "El sacerdote anima al pueblo; quiénes vuelven a casa; ofrecer paz a las ciudades; no cortar los árboles frutales.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-44",
+   "libro": "Dt",
+   "inicio": "Dt 21:1",
+   "fin": "Dt 21:9",
+   "titulo": "El muerto hallado en el campo",
+   "titulo_origen": "editorial",
+   "resumen": "Si aparece un muerto y no se sabe quién lo mató, los ancianos de la ciudad más cercana hacen expiación.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-45",
+   "libro": "Dt",
+   "inicio": "Dt 21:10",
+   "fin": "Dt 21:23",
+   "titulo": "La cautiva, el primogénito y el hijo rebelde",
+   "titulo_origen": "editorial",
+   "resumen": "Leyes sobre la mujer tomada en la guerra, el derecho del primogénito, el hijo rebelde y el colgado de un madero.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-46",
+   "libro": "Dt",
+   "inicio": "Dt 22:1",
+   "fin": "Dt 22:12",
+   "titulo": "Cuidar lo del prójimo y otras leyes",
+   "titulo_origen": "editorial",
+   "resumen": "Devolver el animal perdido; el nido de aves; el pretil del terrado; no mezclar semillas ni tejidos; los flecos.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-47",
+   "libro": "Dt",
+   "inicio": "Dt 22:13",
+   "fin": "Dt 22:30",
+   "titulo": "Leyes sobre el matrimonio",
+   "titulo_origen": "editorial",
+   "resumen": "La acusación contra la recién casada, el adulterio y otras faltas contra el matrimonio.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-48",
+   "libro": "Dt",
+   "inicio": "Dt 23:1",
+   "fin": "Dt 23:14",
+   "titulo": "La congregación y el campamento",
+   "titulo_origen": "editorial",
+   "resumen": "Quiénes no entran en la congregación (amonitas y moabitas, por Balaam); limpieza del campamento.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-49",
+   "libro": "Dt",
+   "inicio": "Dt 23:15",
+   "fin": "Dt 23:25",
+   "titulo": "Siervos, préstamos y votos",
+   "titulo_origen": "editorial",
+   "resumen": "No entregar al siervo fugitivo; no cobrar usura al hermano; cumplir los votos; comer de la viña ajena sin llevarse.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-50",
+   "libro": "Dt",
+   "inicio": "Dt 24:1",
+   "fin": "Dt 24:9",
+   "titulo": "Divorcio, recién casados y prendas",
+   "titulo_origen": "editorial",
+   "resumen": "La carta de divorcio; el recién casado no va a la guerra; no tomar en prenda la muela; acordarse de María.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-51",
+   "libro": "Dt",
+   "inicio": "Dt 24:10",
+   "fin": "Dt 24:22",
+   "titulo": "El jornal y el extranjero",
+   "titulo_origen": "editorial",
+   "resumen": "Las prendas del pobre, el jornal el mismo día, cada uno muere por su pecado; las espigas para el extranjero, el huérfano y la viuda.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-52",
+   "libro": "Dt",
+   "inicio": "Dt 25:1",
+   "fin": "Dt 25:10",
+   "titulo": "Azotes y levirato",
+   "titulo_origen": "editorial",
+   "resumen": "Límite de cuarenta azotes; no poner bozal al buey; el hermano del difunto toma a la viuda.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-53",
+   "libro": "Dt",
+   "inicio": "Dt 25:11",
+   "fin": "Dt 25:19",
+   "titulo": "Pesas justas; Amalec",
+   "titulo_origen": "editorial",
+   "resumen": "Pesas y medidas justas; acordarse de lo que hizo Amalec en el camino.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-54",
+   "libro": "Dt",
+   "inicio": "Dt 26:1",
+   "fin": "Dt 26:19",
+   "titulo": "Las primicias, el diezmo y el pacto",
+   "titulo_origen": "editorial",
+   "resumen": "Al ofrecer las primicias se recuerda la historia («Un Siro á punto de perecer fué mi padre»); Israel, pueblo de Dios.",
+   "seccion": "Las leyes (Dt 12–26)"
+  },
+  {
+   "id": "dt-55",
+   "libro": "Dt",
+   "inicio": "Dt 27:1",
+   "fin": "Dt 27:10",
+   "titulo": "Las piedras en el monte Ebal",
+   "titulo_origen": "editorial",
+   "resumen": "Al pasar el Jordán levantarán piedras con la ley escrita y un altar en el monte Ebal.",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-56",
+   "libro": "Dt",
+   "inicio": "Dt 27:11",
+   "fin": "Dt 27:26",
+   "titulo": "Las maldiciones entre Gerizim y Ebal",
+   "titulo_origen": "editorial",
+   "resumen": "Seis tribus sobre Gerizim y seis sobre Ebal; los levitas pronuncian doce maldiciones y el pueblo responde «Amén».",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-57",
+   "libro": "Dt",
+   "inicio": "Dt 28:1",
+   "fin": "Dt 28:14",
+   "titulo": "Las bendiciones",
+   "titulo_origen": "editorial",
+   "resumen": "Si obedecen serán benditos en la ciudad y en el campo, en sus hijos, su ganado y sus cosechas.",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-58",
+   "libro": "Dt",
+   "inicio": "Dt 28:15",
+   "fin": "Dt 28:29",
+   "titulo": "Maldiciones: plagas y sequía",
+   "titulo_origen": "editorial",
+   "resumen": "Si no obedecen vendrán maldición, enfermedad, sequía y derrota.",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-59",
+   "libro": "Dt",
+   "inicio": "Dt 28:30",
+   "fin": "Dt 28:46",
+   "titulo": "Maldiciones: despojo y destierro",
+   "titulo_origen": "editorial",
+   "resumen": "Otros gozarán lo que ellos trabajaron; serán llevados a otra nación y el extranjero los dominará.",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-60",
+   "libro": "Dt",
+   "inicio": "Dt 28:47",
+   "fin": "Dt 28:57",
+   "titulo": "El asedio",
+   "titulo_origen": "editorial",
+   "resumen": "Una nación lejana pondrá cerco a sus ciudades y el hambre será extrema.",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-61",
+   "libro": "Dt",
+   "inicio": "Dt 28:58",
+   "fin": "Dt 28:68",
+   "titulo": "Esparcidos entre los pueblos",
+   "titulo_origen": "editorial",
+   "resumen": "Plagas, pocos sobrevivientes, dispersión entre las naciones y vuelta a Egipto en navíos.",
+   "seccion": "Bendiciones y maldiciones (Dt 27–28)"
+  },
+  {
+   "id": "dt-62",
+   "libro": "Dt",
+   "inicio": "Dt 29:1",
+   "fin": "Dt 29:15",
+   "titulo": "El pacto en Moab",
+   "titulo_origen": "editorial",
+   "resumen": "Palabras del pacto en Moab, además del de Horeb; todo Israel, presentes y futuros, entran en él.",
+   "seccion": "El pacto en Moab (Dt 29–30)"
+  },
+  {
+   "id": "dt-63",
+   "libro": "Dt",
+   "inicio": "Dt 29:16",
+   "fin": "Dt 29:29",
+   "titulo": "Contra la idolatría; lo secreto y lo revelado",
+   "titulo_origen": "editorial",
+   "resumen": "Quien se aparte para servir a otros dioses traerá ruina sobre la tierra; las cosas secretas son de Dios.",
+   "seccion": "El pacto en Moab (Dt 29–30)"
+  },
+  {
+   "id": "dt-64",
+   "libro": "Dt",
+   "inicio": "Dt 30:1",
+   "fin": "Dt 30:10",
+   "titulo": "La vuelta y el corazón circuncidado",
+   "titulo_origen": "editorial",
+   "resumen": "Si en el destierro vuelven a Dios, él los reunirá y circuncidará su corazón.",
+   "seccion": "El pacto en Moab (Dt 29–30)"
+  },
+  {
+   "id": "dt-65",
+   "libro": "Dt",
+   "inicio": "Dt 30:11",
+   "fin": "Dt 30:20",
+   "titulo": "La vida y la muerte delante de ti",
+   "titulo_origen": "editorial",
+   "resumen": "El mandamiento no está lejos; Moisés pone delante la vida y la muerte: «escoge pues la vida».",
+   "seccion": "El pacto en Moab (Dt 29–30)"
+  },
+  {
+   "id": "dt-66",
+   "libro": "Dt",
+   "inicio": "Dt 31:1",
+   "fin": "Dt 31:13",
+   "titulo": "Josué, sucesor; la ley escrita",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés, de ciento veinte años, anima a Josué; escribe la ley y manda leerla cada siete años.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-67",
+   "libro": "Dt",
+   "inicio": "Dt 31:14",
+   "fin": "Dt 31:30",
+   "titulo": "Dios anuncia la infidelidad; el cántico",
+   "titulo_origen": "editorial",
+   "resumen": "En el tabernáculo Dios encarga a Josué y anuncia que el pueblo se apartará; Moisés escribe un cántico y deja el libro junto al arca.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-68",
+   "libro": "Dt",
+   "inicio": "Dt 32:1",
+   "fin": "Dt 32:18",
+   "titulo": "El cántico de Moisés: la Roca",
+   "titulo_origen": "editorial",
+   "resumen": "«Escuchad, cielos»: Dios es la Roca, perfecta su obra; cuidó a su pueblo en el desierto, pero Jeshurun lo dejó.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-69",
+   "libro": "Dt",
+   "inicio": "Dt 32:19",
+   "fin": "Dt 32:33",
+   "titulo": "El cántico de Moisés: el castigo",
+   "titulo_origen": "editorial",
+   "resumen": "Dios esconde su rostro y anuncia el castigo de un pueblo infiel.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-70",
+   "libro": "Dt",
+   "inicio": "Dt 32:34",
+   "fin": "Dt 32:43",
+   "titulo": "El cántico de Moisés: Dios juzga",
+   "titulo_origen": "editorial",
+   "resumen": "«Mía es la venganza»: Dios juzgará a su pueblo y se apiadará de sus siervos.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-71",
+   "libro": "Dt",
+   "inicio": "Dt 32:44",
+   "fin": "Dt 32:52",
+   "titulo": "Moisés verá la tierra desde Nebo",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés pide guardar todas estas palabras; Dios le manda subir al monte Nebo para ver Canaán y morir allí.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-72",
+   "libro": "Dt",
+   "inicio": "Dt 33:1",
+   "fin": "Dt 33:12",
+   "titulo": "La bendición de Moisés: de Rubén a Benjamín",
+   "titulo_origen": "editorial",
+   "resumen": "Moisés, varón de Dios, bendice a las tribus: Rubén, Judá, Leví y Benjamín.",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-73",
+   "libro": "Dt",
+   "inicio": "Dt 33:13",
+   "fin": "Dt 33:29",
+   "titulo": "La bendición de Moisés: de José a Aser",
+   "titulo_origen": "editorial",
+   "resumen": "Bendiciones de José, Zabulón e Isacar, Gad, Dan, Neftalí y Aser; «Bienaventurado tú, oh Israel».",
+   "seccion": "Josué, el cántico y la bendición (Dt 31–33)"
+  },
+  {
+   "id": "dt-74",
+   "libro": "Dt",
+   "inicio": "Dt 34:1",
+   "fin": "Dt 34:12",
+   "titulo": "Muerte de Moisés",
+   "titulo_origen": "editorial",
+   "resumen": "Desde el Nebo Dios muestra a Moisés la tierra; muere en Moab a los ciento veinte años; Josué le sucede.",
+   "seccion": "Muerte de Moisés (Dt 34)"
   }
  ],
  "menciones": [
@@ -66101,6 +71069,888 @@ window.BIBLIA_DATOS = {
    "persona": "Moses_1",
    "inicio": 72,
    "fin": 78
+  },
+  {
+   "ref": "Dt 1:1",
+   "persona": "Moses_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 1:3",
+   "persona": "Moses_1",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Dt 1:4",
+   "persona": "Sihon_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "Dt 1:4",
+   "persona": "Og_1",
+   "inicio": 76,
+   "fin": 78
+  },
+  {
+   "ref": "Dt 1:5",
+   "persona": "Moses_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Dt 1:8",
+   "persona": "Abram_1",
+   "inicio": 110,
+   "fin": 117
+  },
+  {
+   "ref": "Dt 1:8",
+   "persona": "Isaac_1",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "Dt 1:8",
+   "persona": "Jacob_1",
+   "inicio": 128,
+   "fin": 133
+  },
+  {
+   "ref": "Dt 1:36",
+   "persona": "Caleb_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Dt 1:36",
+   "persona": "Jephunneh_1",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "Dt 1:38",
+   "persona": "Joshua_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "Dt 1:38",
+   "persona": "Nun_1",
+   "inicio": 14,
+   "fin": 17
+  },
+  {
+   "ref": "Dt 2:4",
+   "persona": "Esau_1",
+   "inicio": 95,
+   "fin": 99
+  },
+  {
+   "ref": "Dt 2:5",
+   "persona": "Esau_1",
+   "inicio": 128,
+   "fin": 132
+  },
+  {
+   "ref": "Dt 2:8",
+   "persona": "Esau_1",
+   "inicio": 44,
+   "fin": 48
+  },
+  {
+   "ref": "Dt 2:9",
+   "persona": "Lot_1",
+   "inicio": 161,
+   "fin": 164
+  },
+  {
+   "ref": "Dt 2:12",
+   "persona": "Esau_1",
+   "inicio": 72,
+   "fin": 76
+  },
+  {
+   "ref": "Dt 2:19",
+   "persona": "Lot_1",
+   "inicio": 176,
+   "fin": 179
+  },
+  {
+   "ref": "Dt 2:22",
+   "persona": "Esau_1",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "Dt 2:24",
+   "persona": "Sihon_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "Dt 2:26",
+   "persona": "Sihon_1",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "Dt 2:29",
+   "persona": "Esau_1",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Dt 2:30",
+   "persona": "Sihon_1",
+   "inicio": 4,
+   "fin": 9
+  },
+  {
+   "ref": "Dt 2:32",
+   "persona": "Sihon_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Dt 3:1",
+   "persona": "Og_1",
+   "inicio": 63,
+   "fin": 65
+  },
+  {
+   "ref": "Dt 3:2",
+   "persona": "Sihon_1",
+   "inicio": 141,
+   "fin": 146
+  },
+  {
+   "ref": "Dt 3:3",
+   "persona": "Og_1",
+   "inicio": 56,
+   "fin": 58
+  },
+  {
+   "ref": "Dt 3:6",
+   "persona": "Sihon_1",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Dt 3:10",
+   "persona": "Og_1",
+   "inicio": 106,
+   "fin": 108
+  },
+  {
+   "ref": "Dt 3:11",
+   "persona": "Og_1",
+   "inicio": 12,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 3:13",
+   "persona": "Og_1",
+   "inicio": 49,
+   "fin": 51
+  },
+  {
+   "ref": "Dt 3:14",
+   "persona": "Jair_1",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Dt 3:14",
+   "persona": "Manasseh_1",
+   "inicio": 13,
+   "fin": 20
+  },
+  {
+   "ref": "Dt 3:15",
+   "persona": "Machir_1",
+   "inicio": 4,
+   "fin": 10
+  },
+  {
+   "ref": "Dt 3:21",
+   "persona": "Joshua_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "Dt 3:28",
+   "persona": "Joshua_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Dt 4:41",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 4:44",
+   "persona": "Moses_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Dt 4:45",
+   "persona": "Moses_1",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "Dt 4:46",
+   "persona": "Sihon_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "Dt 4:46",
+   "persona": "Moses_1",
+   "inicio": 142,
+   "fin": 148
+  },
+  {
+   "ref": "Dt 4:47",
+   "persona": "Og_1",
+   "inicio": 38,
+   "fin": 40
+  },
+  {
+   "ref": "Dt 5:1",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 6:10",
+   "persona": "Abram_1",
+   "inicio": 88,
+   "fin": 95
+  },
+  {
+   "ref": "Dt 6:10",
+   "persona": "Isaac_1",
+   "inicio": 97,
+   "fin": 102
+  },
+  {
+   "ref": "Dt 6:10",
+   "persona": "Jacob_1",
+   "inicio": 106,
+   "fin": 111
+  },
+  {
+   "ref": "Dt 6:21",
+   "persona": "Pharaoh_4",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Dt 6:22",
+   "persona": "Pharaoh_4",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "Dt 7:8",
+   "persona": "Pharaoh_4",
+   "inicio": 173,
+   "fin": 179
+  },
+  {
+   "ref": "Dt 7:18",
+   "persona": "Pharaoh_4",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "Dt 9:5",
+   "persona": "Abram_1",
+   "inicio": 223,
+   "fin": 230
+  },
+  {
+   "ref": "Dt 9:5",
+   "persona": "Isaac_1",
+   "inicio": 232,
+   "fin": 237
+  },
+  {
+   "ref": "Dt 9:5",
+   "persona": "Jacob_1",
+   "inicio": 241,
+   "fin": 246
+  },
+  {
+   "ref": "Dt 9:20",
+   "persona": "Aaron_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Dt 9:20",
+   "persona": "Aaron_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "Dt 9:27",
+   "persona": "Abram_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "Dt 9:27",
+   "persona": "Isaac_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 9:27",
+   "persona": "Jacob_1",
+   "inicio": 43,
+   "fin": 48
+  },
+  {
+   "ref": "Dt 10:6",
+   "persona": "Aaron_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Dt 10:6",
+   "persona": "Eleazar_1",
+   "inicio": 154,
+   "fin": 161
+  },
+  {
+   "ref": "Dt 10:8",
+   "persona": "Levi_1",
+   "inicio": 42,
+   "fin": 46
+  },
+  {
+   "ref": "Dt 11:3",
+   "persona": "Pharaoh_4",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "Dt 11:6",
+   "persona": "Dathan_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Dt 11:6",
+   "persona": "Abiram_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "Dt 11:6",
+   "persona": "Eliab_2",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 11:6",
+   "persona": "Reuben_1",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Dt 18:1",
+   "persona": "Levi_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 18:1",
+   "persona": "Levi_1",
+   "inicio": 41,
+   "fin": 45
+  },
+  {
+   "ref": "Dt 23:4",
+   "persona": "Balaam_1",
+   "inicio": 119,
+   "fin": 125
+  },
+  {
+   "ref": "Dt 23:4",
+   "persona": "Beor_2",
+   "inicio": 134,
+   "fin": 138
+  },
+  {
+   "ref": "Dt 23:5",
+   "persona": "Balaam_1",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Dt 24:9",
+   "persona": "Miriam_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "Dt 27:1",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 27:9",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Dt 27:11",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 29:1",
+   "persona": "Moses_1",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Dt 29:2",
+   "persona": "Moses_1",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "Dt 29:2",
+   "persona": "Pharaoh_4",
+   "inicio": 144,
+   "fin": 150
+  },
+  {
+   "ref": "Dt 29:7",
+   "persona": "Sihon_1",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "Dt 29:7",
+   "persona": "Og_1",
+   "inicio": 58,
+   "fin": 60
+  },
+  {
+   "ref": "Dt 29:13",
+   "persona": "Abram_1",
+   "inicio": 128,
+   "fin": 135
+  },
+  {
+   "ref": "Dt 29:13",
+   "persona": "Isaac_1",
+   "inicio": 137,
+   "fin": 142
+  },
+  {
+   "ref": "Dt 29:13",
+   "persona": "Jacob_1",
+   "inicio": 146,
+   "fin": 151
+  },
+  {
+   "ref": "Dt 30:20",
+   "persona": "Abram_1",
+   "inicio": 180,
+   "fin": 187
+  },
+  {
+   "ref": "Dt 30:20",
+   "persona": "Isaac_1",
+   "inicio": 189,
+   "fin": 194
+  },
+  {
+   "ref": "Dt 30:20",
+   "persona": "Jacob_1",
+   "inicio": 198,
+   "fin": 203
+  },
+  {
+   "ref": "Dt 31:1",
+   "persona": "Moses_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Dt 31:3",
+   "persona": "Joshua_1",
+   "inicio": 100,
+   "fin": 105
+  },
+  {
+   "ref": "Dt 31:4",
+   "persona": "Sihon_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Dt 31:4",
+   "persona": "Og_1",
+   "inicio": 50,
+   "fin": 52
+  },
+  {
+   "ref": "Dt 31:7",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 31:7",
+   "persona": "Joshua_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 31:9",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Dt 31:10",
+   "persona": "Moses_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Dt 31:14",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 31:14",
+   "persona": "Joshua_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Dt 31:14",
+   "persona": "Moses_1",
+   "inicio": 159,
+   "fin": 165
+  },
+  {
+   "ref": "Dt 31:14",
+   "persona": "Joshua_1",
+   "inicio": 168,
+   "fin": 173
+  },
+  {
+   "ref": "Dt 31:16",
+   "persona": "Moses_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 31:22",
+   "persona": "Moses_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Dt 31:23",
+   "persona": "Joshua_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Dt 31:23",
+   "persona": "Nun_1",
+   "inicio": 28,
+   "fin": 31
+  },
+  {
+   "ref": "Dt 31:24",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Dt 31:25",
+   "persona": "Moses_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Dt 31:30",
+   "persona": "Moses_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "Dt 32:44",
+   "persona": "Moses_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "Dt 32:44",
+   "persona": "Joshua_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "Dt 32:44",
+   "persona": "Nun_1",
+   "inicio": 99,
+   "fin": 102
+  },
+  {
+   "ref": "Dt 32:45",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 32:48",
+   "persona": "Moses_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Dt 32:50",
+   "persona": "Aaron_1",
+   "inicio": 81,
+   "fin": 86
+  },
+  {
+   "ref": "Dt 33:1",
+   "persona": "Moses_1",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 33:4",
+   "persona": "Moses_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Dt 33:6",
+   "persona": "Reuben_1",
+   "inicio": 5,
+   "fin": 10
+  },
+  {
+   "ref": "Dt 33:7",
+   "persona": "Judah_1",
+   "inicio": 24,
+   "fin": 28
+  },
+  {
+   "ref": "Dt 33:7",
+   "persona": "Judah_1",
+   "inicio": 66,
+   "fin": 70
+  },
+  {
+   "ref": "Dt 33:8",
+   "persona": "Levi_1",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "Dt 33:12",
+   "persona": "Benjamin_1",
+   "inicio": 4,
+   "fin": 12
+  },
+  {
+   "ref": "Dt 33:16",
+   "persona": "Joseph_1",
+   "inicio": 110,
+   "fin": 114
+  },
+  {
+   "ref": "Dt 33:17",
+   "persona": "Ephraim_1",
+   "inicio": 190,
+   "fin": 197
+  },
+  {
+   "ref": "Dt 33:17",
+   "persona": "Manasseh_1",
+   "inicio": 223,
+   "fin": 230
+  },
+  {
+   "ref": "Dt 33:18",
+   "persona": "Zebulun_1",
+   "inicio": 4,
+   "fin": 11
+  },
+  {
+   "ref": "Dt 33:18",
+   "persona": "Zebulun_1",
+   "inicio": 28,
+   "fin": 35
+  },
+  {
+   "ref": "Dt 33:18",
+   "persona": "Issachar_1",
+   "inicio": 62,
+   "fin": 70
+  },
+  {
+   "ref": "Dt 33:20",
+   "persona": "Gad_1",
+   "inicio": 4,
+   "fin": 7
+  },
+  {
+   "ref": "Dt 33:20",
+   "persona": "Gad_1",
+   "inicio": 46,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 33:22",
+   "persona": "Dan_1",
+   "inicio": 4,
+   "fin": 7
+  },
+  {
+   "ref": "Dt 33:22",
+   "persona": "Dan_1",
+   "inicio": 14,
+   "fin": 17
+  },
+  {
+   "ref": "Dt 33:23",
+   "persona": "Naphtali_1",
+   "inicio": 4,
+   "fin": 12
+  },
+  {
+   "ref": "Dt 33:23",
+   "persona": "Naphtali_1",
+   "inicio": 19,
+   "fin": 27
+  },
+  {
+   "ref": "Dt 33:24",
+   "persona": "Asher_1",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "Dt 33:24",
+   "persona": "Asher_1",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "Dt 34:1",
+   "persona": "Moses_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "Dt 34:4",
+   "persona": "Abram_1",
+   "inicio": 49,
+   "fin": 56
+  },
+  {
+   "ref": "Dt 34:4",
+   "persona": "Isaac_1",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Dt 34:4",
+   "persona": "Jacob_1",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Dt 34:5",
+   "persona": "Moses_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "Dt 34:7",
+   "persona": "Moses_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "Dt 34:8",
+   "persona": "Moses_1",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 34:8",
+   "persona": "Moses_1",
+   "inicio": 127,
+   "fin": 133
+  },
+  {
+   "ref": "Dt 34:9",
+   "persona": "Joshua_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Dt 34:9",
+   "persona": "Nun_1",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "Dt 34:9",
+   "persona": "Moses_1",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Dt 34:9",
+   "persona": "Moses_1",
+   "inicio": 172,
+   "fin": 178
+  },
+  {
+   "ref": "Dt 34:10",
+   "persona": "Moses_1",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "Dt 34:11",
+   "persona": "Pharaoh_4",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Dt 34:12",
+   "persona": "Moses_1",
+   "inicio": 72,
+   "fin": 78
   }
  ],
  "lugares": [
@@ -66316,7 +72166,9 @@ window.BIBLIA_DATOS = {
    "tipo": "rio",
    "refs": [
     "Gn 2:14",
-    "Gn 15:18"
+    "Gn 15:18",
+    "Dt 1:7",
+    "Dt 11:24"
    ],
    "ubicacion": {
     "identificacion": "Euphrates River",
@@ -66754,7 +72606,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Gn 10:19"
+    "Gn 10:19",
+    "Dt 2:23"
    ],
    "ubicacion": {
     "identificacion": "Tell Harube",
@@ -66796,7 +72649,9 @@ window.BIBLIA_DATOS = {
     "Gn 19:1",
     "Gn 19:4",
     "Gn 19:24",
-    "Gn 19:28"
+    "Gn 19:28",
+    "Dt 29:23",
+    "Dt 32:32"
    ],
    "ubicacion": {
     "identificacion": "south of the Lisan",
@@ -66846,7 +72701,9 @@ window.BIBLIA_DATOS = {
     "Gn 14:11",
     "Gn 18:20",
     "Gn 19:24",
-    "Gn 19:28"
+    "Gn 19:28",
+    "Dt 29:23",
+    "Dt 32:32"
    ],
    "ubicacion": {
     "identificacion": "south of the Lisan",
@@ -66890,7 +72747,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 10:19",
     "Gn 14:2",
-    "Gn 14:8"
+    "Gn 14:8",
+    "Dt 29:23"
    ],
    "ubicacion": {
     "identificacion": "south of the Lisan",
@@ -66928,13 +72786,15 @@ window.BIBLIA_DATOS = {
    "nombre": "Zeboim",
    "nombre_rv1909": "Zeboim",
    "formas_rv1909": [
-    "Zeboim"
+    "Zeboim",
+    "Seboim"
    ],
    "tipo": "ciudad",
    "refs": [
     "Gn 10:19",
     "Gn 14:2",
-    "Gn 14:8"
+    "Gn 14:8",
+    "Dt 29:23"
    ],
    "ubicacion": {
     "identificacion": "south of the Lisan",
@@ -67211,7 +73071,8 @@ window.BIBLIA_DATOS = {
     "Nm 34:2",
     "Nm 34:29",
     "Nm 35:10",
-    "Nm 35:14"
+    "Nm 35:14",
+    "Dt 32:49"
    ],
    "ubicacion": {
     "identificacion": "Canaan",
@@ -68019,7 +73880,54 @@ window.BIBLIA_DATOS = {
     "Nm 26:59",
     "Nm 32:11",
     "Nm 33:1",
-    "Nm 33:38"
+    "Nm 33:38",
+    "Dt 1:27",
+    "Dt 1:30",
+    "Dt 4:20",
+    "Dt 4:34",
+    "Dt 4:37",
+    "Dt 4:45",
+    "Dt 4:46",
+    "Dt 5:6",
+    "Dt 5:15",
+    "Dt 6:12",
+    "Dt 6:21",
+    "Dt 6:22",
+    "Dt 7:8",
+    "Dt 7:15",
+    "Dt 7:18",
+    "Dt 8:14",
+    "Dt 9:7",
+    "Dt 9:12",
+    "Dt 9:26",
+    "Dt 10:19",
+    "Dt 10:22",
+    "Dt 11:3",
+    "Dt 11:4",
+    "Dt 11:10",
+    "Dt 13:5",
+    "Dt 13:10",
+    "Dt 15:15",
+    "Dt 16:1",
+    "Dt 16:3",
+    "Dt 16:6",
+    "Dt 16:12",
+    "Dt 17:16",
+    "Dt 20:1",
+    "Dt 23:4",
+    "Dt 24:9",
+    "Dt 24:18",
+    "Dt 24:22",
+    "Dt 25:17",
+    "Dt 26:5",
+    "Dt 26:8",
+    "Dt 28:27",
+    "Dt 28:60",
+    "Dt 28:68",
+    "Dt 29:2",
+    "Dt 29:16",
+    "Dt 29:25",
+    "Dt 34:11"
    ],
    "ubicacion": {
     "identificacion": "Ain Shams",
@@ -68206,7 +74114,15 @@ window.BIBLIA_DATOS = {
     "Nm 32:26",
     "Nm 32:29",
     "Nm 32:39",
-    "Nm 32:40"
+    "Nm 32:40",
+    "Dt 2:36",
+    "Dt 3:10",
+    "Dt 3:12",
+    "Dt 3:13",
+    "Dt 3:15",
+    "Dt 3:16",
+    "Dt 4:43",
+    "Dt 34:1"
    ],
    "ubicacion": {
     "identificacion": "Tell edh Dhahab esh Sherqiyeh",
@@ -68458,7 +74374,9 @@ window.BIBLIA_DATOS = {
    "tipo": "rio",
    "refs": [
     "Gn 32:22",
-    "Nm 21:24"
+    "Nm 21:24",
+    "Dt 2:37",
+    "Dt 3:16"
    ],
    "ubicacion": {
     "identificacion": "Zarqa River",
@@ -68503,7 +74421,33 @@ window.BIBLIA_DATOS = {
     "Nm 35:1",
     "Nm 35:10",
     "Nm 35:14",
-    "Nm 36:13"
+    "Nm 36:13",
+    "Dt 1:1",
+    "Dt 1:5",
+    "Dt 2:29",
+    "Dt 3:8",
+    "Dt 3:17",
+    "Dt 3:20",
+    "Dt 3:25",
+    "Dt 3:27",
+    "Dt 4:21",
+    "Dt 4:22",
+    "Dt 4:26",
+    "Dt 4:41",
+    "Dt 4:46",
+    "Dt 4:47",
+    "Dt 4:49",
+    "Dt 9:1",
+    "Dt 11:30",
+    "Dt 11:31",
+    "Dt 12:10",
+    "Dt 27:2",
+    "Dt 27:4",
+    "Dt 27:12",
+    "Dt 30:18",
+    "Dt 31:2",
+    "Dt 31:13",
+    "Dt 32:47"
    ],
    "ubicacion": {
     "identificacion": "Jordan River",
@@ -68539,7 +74483,12 @@ window.BIBLIA_DATOS = {
     "Nm 32:8",
     "Nm 33:36",
     "Nm 33:37",
-    "Nm 34:4"
+    "Nm 34:4",
+    "Dt 1:2",
+    "Dt 1:19",
+    "Dt 1:46",
+    "Dt 2:14",
+    "Dt 9:23"
    ],
    "ubicacion": {
     "identificacion": "Ain el Qudeirat",
@@ -68741,7 +74690,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "region",
    "refs": [
-    "Gn 24:10"
+    "Gn 24:10",
+    "Dt 23:4"
    ],
    "ubicacion": {
     "identificacion": "Harran",
@@ -68853,7 +74803,15 @@ window.BIBLIA_DATOS = {
     "Nm 23:17",
     "Nm 24:17",
     "Nm 25:1",
-    "Nm 33:44"
+    "Nm 33:44",
+    "Dt 1:5",
+    "Dt 2:8",
+    "Dt 2:9",
+    "Dt 2:18",
+    "Dt 29:1",
+    "Dt 32:49",
+    "Dt 34:5",
+    "Dt 34:6"
    ],
    "ubicacion": {
     "identificacion": "Kerak",
@@ -68876,7 +74834,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "otro",
    "refs": [
-    "Gn 12:6"
+    "Gn 12:6",
+    "Dt 11:30"
    ],
    "ubicacion": {
     "identificacion": "Tell Balatah",
@@ -68948,7 +74907,17 @@ window.BIBLIA_DATOS = {
     "Gn 36:8",
     "Gn 36:9",
     "Gn 36:30",
-    "Nm 24:18"
+    "Nm 24:18",
+    "Dt 1:2",
+    "Dt 1:44",
+    "Dt 2:1",
+    "Dt 2:4",
+    "Dt 2:5",
+    "Dt 2:8",
+    "Dt 2:12",
+    "Dt 2:22",
+    "Dt 2:29",
+    "Dt 33:2"
    ],
    "ubicacion": {
     "identificacion": "Jebel esh Shera",
@@ -69045,7 +75014,8 @@ window.BIBLIA_DATOS = {
     "Nm 10:12",
     "Nm 13:1",
     "Nm 13:4",
-    "Nm 13:27"
+    "Nm 13:27",
+    "Dt 1:1"
    ],
    "ubicacion": {
     "identificacion": "Paran",
@@ -69521,7 +75491,8 @@ window.BIBLIA_DATOS = {
    "nombre": "Zoar",
    "nombre_rv1909": "Zoar",
    "formas_rv1909": [
-    "Zoar"
+    "Zoar",
+    "Soar"
    ],
    "tipo": "ciudad",
    "refs": [
@@ -69530,7 +75501,8 @@ window.BIBLIA_DATOS = {
     "Gn 14:8",
     "Gn 19:22",
     "Gn 19:23",
-    "Gn 19:30"
+    "Gn 19:30",
+    "Dt 34:3"
    ],
    "ubicacion": {
     "identificacion": "Al Safi",
@@ -69834,7 +75806,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Ex 13:18",
     "Ex 15:4",
-    "Ex 15:22"
+    "Ex 15:22",
+    "Dt 11:4"
    ],
    "ubicacion": {
     "identificacion": "Gulf of Suez",
@@ -70113,11 +76086,15 @@ window.BIBLIA_DATOS = {
    "nombre": "Masah",
    "nombre_rv1909": "Massah",
    "formas_rv1909": [
-    "Massah"
+    "Massah",
+    "Massa"
    ],
    "tipo": "campamento",
    "refs": [
-    "Ex 17:7"
+    "Ex 17:7",
+    "Dt 6:16",
+    "Dt 9:22",
+    "Dt 33:8"
    ],
    "ubicacion": {
     "identificacion": "Wadi Rufaiyil",
@@ -70155,11 +76132,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Meriba",
    "nombre_rv1909": "Meribah",
    "formas_rv1909": [
-    "Meribah"
+    "Meribah",
+    "aguas de la rencilla"
    ],
    "tipo": "campamento",
    "refs": [
-    "Ex 17:7"
+    "Ex 17:7",
+    "Dt 33:8"
    ],
    "ubicacion": {
     "identificacion": "Wadi Rufaiyil",
@@ -70209,7 +76188,9 @@ window.BIBLIA_DATOS = {
     "Ex 17:14",
     "Ex 17:16",
     "Nm 13:30",
-    "Nm 24:20"
+    "Nm 24:20",
+    "Dt 25:17",
+    "Dt 25:19"
    ],
    "ubicacion": {
     "identificacion": "Ain el Qudeirat",
@@ -70302,7 +76283,8 @@ window.BIBLIA_DATOS = {
     "Lv 26:46",
     "Lv 27:34",
     "Nm 3:1",
-    "Nm 28:6"
+    "Nm 28:6",
+    "Dt 33:2"
    ],
    "ubicacion": {
     "identificacion": "Jebel Musa",
@@ -70346,7 +76328,15 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Ex 3:1",
     "Ex 17:6",
-    "Ex 33:6"
+    "Ex 33:6",
+    "Dt 1:2",
+    "Dt 1:6",
+    "Dt 1:19",
+    "Dt 4:10",
+    "Dt 5:2",
+    "Dt 9:8",
+    "Dt 18:16",
+    "Dt 29:1"
    ],
    "ubicacion": {
     "identificacion": "Jebel Musa",
@@ -70395,7 +76385,9 @@ window.BIBLIA_DATOS = {
     "Nm 33:49",
     "Nm 33:50",
     "Nm 35:1",
-    "Nm 36:13"
+    "Nm 36:13",
+    "Dt 34:1",
+    "Dt 34:8"
    ],
    "ubicacion": {
     "identificacion": "Tall el Hammam",
@@ -70461,7 +76453,9 @@ window.BIBLIA_DATOS = {
    "tipo": "otro",
    "refs": [
     "Nm 14:25",
-    "Nm 21:4"
+    "Nm 21:4",
+    "Dt 1:40",
+    "Dt 2:1"
    ],
    "ubicacion": {
     "identificacion": "road between the Dead Sea and the Gulf of Aqaba",
@@ -70546,12 +76540,15 @@ window.BIBLIA_DATOS = {
    "nombre": "Mar Grande (Mediterráneo)",
    "nombre_rv1909": "gran mar",
    "formas_rv1909": [
-    "gran mar"
+    "gran mar",
+    "mar postrera"
    ],
    "tipo": "mar",
    "refs": [
     "Nm 34:6",
-    "Nm 34:7"
+    "Nm 34:7",
+    "Dt 11:24",
+    "Dt 34:2"
    ],
    "ubicacion": {
     "identificacion": "Mediterranean Sea",
@@ -70570,12 +76567,16 @@ window.BIBLIA_DATOS = {
    "nombre": "Mar Salado (mar Muerto)",
    "nombre_rv1909": "mar salado",
    "formas_rv1909": [
-    "mar salado"
+    "mar salado",
+    "mar Salado",
+    "mar del llano"
    ],
    "tipo": "mar",
    "refs": [
     "Nm 34:3",
-    "Nm 34:12"
+    "Nm 34:12",
+    "Dt 3:17",
+    "Dt 4:49"
    ],
    "ubicacion": {
     "identificacion": "Dead Sea",
@@ -70623,7 +76624,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 20:13",
     "Nm 20:24",
-    "Nm 27:14"
+    "Nm 27:14",
+    "Dt 32:51"
    ],
    "ubicacion": {
     "identificacion": "Ain el Qudeirat",
@@ -70661,7 +76663,8 @@ window.BIBLIA_DATOS = {
     "Nm 33:37",
     "Nm 33:38",
     "Nm 33:39",
-    "Nm 33:41"
+    "Nm 33:41",
+    "Dt 32:50"
    ],
    "ubicacion": {
     "identificacion": "Har Zin",
@@ -70773,12 +76776,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Hor-gidgad",
    "nombre_rv1909": "Gidgad",
    "formas_rv1909": [
-    "Gidgad"
+    "Gidgad",
+    "Gudgod"
    ],
    "tipo": "campamento",
    "refs": [
     "Nm 33:32",
-    "Nm 33:33"
+    "Nm 33:33",
+    "Dt 10:7"
    ],
    "ubicacion": {
     "identificacion": "Wadi Khadakhid",
@@ -70933,7 +76938,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 13:24",
     "Nm 13:25",
-    "Nm 32:9"
+    "Nm 32:9",
+    "Dt 1:24"
    ],
    "ubicacion": {
     "identificacion": "Tel Rumeida",
@@ -70971,11 +76977,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Arroyo de Zered",
    "nombre_rv1909": "Zared",
    "formas_rv1909": [
-    "Zared"
+    "Zared",
+    "Zered"
    ],
    "tipo": "rio",
    "refs": [
-    "Nm 21:12"
+    "Nm 21:12",
+    "Dt 2:13",
+    "Dt 2:14"
    ],
    "ubicacion": {
     "identificacion": "Wadi al Hasa",
@@ -70998,7 +77007,11 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "region",
    "refs": [
-    "Nm 21:24"
+    "Nm 21:24",
+    "Dt 2:19",
+    "Dt 2:37",
+    "Dt 3:11",
+    "Dt 3:16"
    ],
    "ubicacion": {
     "identificacion": "Amman",
@@ -71023,7 +77036,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Nm 27:12",
     "Nm 33:47",
-    "Nm 33:48"
+    "Nm 33:48",
+    "Dt 32:49"
    ],
    "ubicacion": {
     "identificacion": "Abarim",
@@ -71265,7 +77279,10 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Nm 21:15",
-    "Nm 21:28"
+    "Nm 21:28",
+    "Dt 2:9",
+    "Dt 2:18",
+    "Dt 2:29"
    ],
    "ubicacion": {
     "identificacion": "Khirbet al Balua",
@@ -71372,7 +77389,13 @@ window.BIBLIA_DATOS = {
     "Nm 21:24",
     "Nm 21:26",
     "Nm 21:28",
-    "Nm 22:36"
+    "Nm 22:36",
+    "Dt 2:24",
+    "Dt 2:36",
+    "Dt 3:8",
+    "Dt 3:12",
+    "Dt 3:16",
+    "Dt 4:48"
    ],
    "ubicacion": {
     "identificacion": "Wadi Mujib",
@@ -71395,7 +77418,10 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 32:34"
+    "Nm 32:34",
+    "Dt 2:36",
+    "Dt 3:12",
+    "Dt 4:48"
    ],
    "ubicacion": {
     "identificacion": "Arair",
@@ -71588,7 +77614,19 @@ window.BIBLIA_DATOS = {
    "tipo": "region",
    "refs": [
     "Nm 21:33",
-    "Nm 32:33"
+    "Nm 32:33",
+    "Dt 1:4",
+    "Dt 3:1",
+    "Dt 3:3",
+    "Dt 3:4",
+    "Dt 3:10",
+    "Dt 3:11",
+    "Dt 3:13",
+    "Dt 4:43",
+    "Dt 4:47",
+    "Dt 29:7",
+    "Dt 32:14",
+    "Dt 33:22"
    ],
    "ubicacion": {
     "identificacion": "Saham al Jawlan",
@@ -71823,7 +77861,10 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 21:33"
+    "Nm 21:33",
+    "Dt 1:4",
+    "Dt 3:1",
+    "Dt 3:10"
    ],
    "ubicacion": {
     "identificacion": "Daraa",
@@ -71866,12 +77907,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Ezión-geber",
    "nombre_rv1909": "Esion-geber",
    "formas_rv1909": [
-    "Esion-geber"
+    "Esion-geber",
+    "Esiongeber"
    ],
    "tipo": "campamento",
    "refs": [
     "Nm 33:35",
-    "Nm 33:36"
+    "Nm 33:36",
+    "Dt 2:8"
    ],
    "ubicacion": {
     "identificacion": "Jezirat Faraun",
@@ -71989,11 +78032,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Havot-jair",
    "nombre_rv1909": "Havoth-jair",
    "formas_rv1909": [
-    "Havoth-jair"
+    "Havoth-jair",
+    "Basán-havoth-jair"
    ],
    "tipo": "region",
    "refs": [
-    "Nm 32:41"
+    "Nm 32:41",
+    "Dt 3:14"
    ],
    "ubicacion": {
     "identificacion": "Qamm",
@@ -72092,7 +78137,8 @@ window.BIBLIA_DATOS = {
     "Nm 11:35",
     "Nm 13:1",
     "Nm 33:17",
-    "Nm 33:18"
+    "Nm 33:18",
+    "Dt 1:1"
    ],
    "ubicacion": {
     "identificacion": "Ain el Khadra",
@@ -72129,7 +78175,15 @@ window.BIBLIA_DATOS = {
     "Nm 21:30",
     "Nm 21:34",
     "Nm 32:3",
-    "Nm 32:37"
+    "Nm 32:37",
+    "Dt 1:4",
+    "Dt 2:24",
+    "Dt 2:26",
+    "Dt 2:30",
+    "Dt 3:2",
+    "Dt 3:6",
+    "Dt 4:46",
+    "Dt 29:7"
    ],
    "ubicacion": {
     "identificacion": "Tell Hesban",
@@ -72166,7 +78220,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Nm 14:45",
-    "Nm 21:3"
+    "Nm 21:3",
+    "Dt 1:44"
    ],
    "ubicacion": {
     "identificacion": "Tel Masos",
@@ -72248,11 +78303,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Jahaza",
    "nombre_rv1909": "Jahaz",
    "formas_rv1909": [
-    "Jahaz"
+    "Jahaz",
+    "Jaas"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 21:23"
+    "Nm 21:23",
+    "Dt 2:32"
    ],
    "ubicacion": {
     "identificacion": "Khirbet el Medeiyineh",
@@ -72347,7 +78404,10 @@ window.BIBLIA_DATOS = {
     "Nm 33:50",
     "Nm 34:15",
     "Nm 35:1",
-    "Nm 36:13"
+    "Nm 36:13",
+    "Dt 32:49",
+    "Dt 34:1",
+    "Dt 34:3"
    ],
    "ubicacion": {
     "identificacion": "Tell es Sultan",
@@ -72420,12 +78480,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Jotbata",
    "nombre_rv1909": "Jotbatha",
    "formas_rv1909": [
-    "Jotbatha"
+    "Jotbatha",
+    "Jotbath"
    ],
    "tipo": "campamento",
    "refs": [
     "Nm 33:33",
-    "Nm 33:34"
+    "Nm 33:34",
+    "Dt 10:7"
    ],
    "ubicacion": {
     "identificacion": "Taba",
@@ -72518,14 +78580,16 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Kibroth-hattaavah",
    "formas_rv1909": [
     "Kibroth-hattaavah",
-    "Kibroth-hataava"
+    "Kibroth-hataava",
+    "Kibroth-hataavah"
    ],
    "tipo": "campamento",
    "refs": [
     "Nm 11:34",
     "Nm 11:35",
     "Nm 33:16",
-    "Nm 33:17"
+    "Nm 33:17",
+    "Dt 9:22"
    ],
    "ubicacion": {
     "identificacion": "Erweis el Ebeirig",
@@ -72798,12 +78862,14 @@ window.BIBLIA_DATOS = {
    "nombre": "Moserot",
    "nombre_rv1909": "Moseroth",
    "formas_rv1909": [
-    "Moseroth"
+    "Moseroth",
+    "Moserá"
    ],
    "tipo": "campamento",
    "refs": [
     "Nm 33:30",
-    "Nm 33:31"
+    "Nm 33:31",
+    "Dt 10:6"
    ],
    "ubicacion": {
     "identificacion": "Har Zin",
@@ -73056,7 +79122,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Nm 22:5"
+    "Nm 22:5",
+    "Dt 23:4"
    ],
    "ubicacion": {
     "identificacion": "Til Barsip",
@@ -73087,7 +79154,11 @@ window.BIBLIA_DATOS = {
    "tipo": "monte",
    "refs": [
     "Nm 21:20",
-    "Nm 23:14"
+    "Nm 23:14",
+    "Dt 3:17",
+    "Dt 3:27",
+    "Dt 4:49",
+    "Dt 34:1"
    ],
    "ubicacion": {
     "identificacion": "Rujm Siyaghah",
@@ -73471,11 +79542,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Tabera",
    "nombre_rv1909": "Taberah",
    "formas_rv1909": [
-    "Taberah"
+    "Taberah",
+    "Tabera"
    ],
    "tipo": "campamento",
    "refs": [
-    "Nm 11:3"
+    "Nm 11:3",
+    "Dt 9:22"
    ],
    "ubicacion": {
     "identificacion": "Erweis el Ebeirig",
@@ -73680,7 +79753,8 @@ window.BIBLIA_DATOS = {
     "Nm 20:1",
     "Nm 27:14",
     "Nm 33:36",
-    "Nm 34:3"
+    "Nm 34:3",
+    "Dt 32:51"
    ],
    "ubicacion": {
     "identificacion": "Zin Desert",
@@ -73817,6 +79891,754 @@ window.BIBLIA_DATOS = {
    "fuente": "openbible",
    "url_fuente": "https://www.openbible.info/geo/ancient/ae7f7b5/zophim",
    "nota": ""
+  },
+  {
+   "id": "monte-nebo",
+   "nombre": "Monte Nebo",
+   "nombre_rv1909": "Nebo",
+   "formas_rv1909": [
+    "Nebo"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Dt 32:49",
+    "Dt 34:1"
+   ],
+   "ubicacion": {
+    "identificacion": "Jabal al Naba",
+    "lat": 31.7667,
+    "lon": 35.75,
+    "puntuacion_openbible": 413,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Rujm Siyaghah",
+     "lat": 31.7678,
+     "lon": 35.7256,
+     "puntuacion_openbible": 365
+    },
+    {
+     "identificacion": "Jebel Osha",
+     "lat": 32.0715,
+     "lon": 35.7086,
+     "puntuacion_openbible": 39
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aefaa2d/mount-nebo",
+   "nota": "Desde aquí Moisés ve la tierra antes de morir (Dt 32:49; 34:1). Distinto de la ciudad de Nebo (Nm 32:3)."
+  },
+  {
+   "id": "monte-ebal",
+   "nombre": "Monte Ebal",
+   "nombre_rv1909": "Ebal",
+   "formas_rv1909": [
+    "Ebal"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Dt 11:29",
+    "Dt 27:4",
+    "Dt 27:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Ebal",
+    "lat": 32.234,
+    "lon": 35.2733,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa5cc66/mount-ebal",
+   "nota": "Monte de la maldición (Dt 11:29; 27:13); allí se levantan las piedras con la ley (Dt 27:4)."
+  },
+  {
+   "id": "monte-gerizim",
+   "nombre": "Monte Gerizim",
+   "nombre_rv1909": "Gerizim",
+   "formas_rv1909": [
+    "Gerizim"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Dt 11:29",
+    "Dt 27:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Gerizim",
+    "lat": 32.1994,
+    "lon": 35.2728,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a30e967/mount-gerizim",
+   "nota": "Monte de la bendición (Dt 11:29; 27:12)."
+  },
+  {
+   "id": "monte-hermon",
+   "nombre": "Monte Hermón",
+   "nombre_rv1909": "Hermón",
+   "formas_rv1909": [
+    "Hermón",
+    "Sirión",
+    "Sión"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Dt 3:8",
+    "Dt 3:9",
+    "Dt 4:48"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Hermon",
+    "lat": 33.4,
+    "lon": 35.85,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a341fe8/mount-hermon",
+   "nota": "Dt 3:9: «Los Sidonios llaman á Hermón Sirión; y los Amorrheos, Senir». Dt 4:48: «el monte de Sión, que es Hermón» (no es Sion de Jerusalén)."
+  },
+  {
+   "id": "senir",
+   "nombre": "Senir",
+   "nombre_rv1909": "Senir",
+   "formas_rv1909": [
+    "Senir"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Dt 3:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Hermon",
+    "lat": 33.4,
+    "lon": 35.85,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad27e17/senir",
+   "nota": "Nombre amorreo del Hermón (Dt 3:9); OpenBible lo registra aparte."
+  },
+  {
+   "id": "monte-paran",
+   "nombre": "Monte de Parán",
+   "nombre_rv1909": "Parán",
+   "formas_rv1909": [
+    "Parán"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "Dt 33:2"
+   ],
+   "ubicacion": {
+    "identificacion": "Jebel Musa",
+    "lat": 28.5397,
+    "lon": 33.9733,
+    "puntuacion_openbible": 316,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Har Karkom",
+     "lat": 30.2833,
+     "lon": 34.75,
+     "puntuacion_openbible": 70
+    },
+    {
+     "identificacion": "Jebel Sin Bishar",
+     "lat": 29.671,
+     "lon": 32.961,
+     "puntuacion_openbible": 61
+    },
+    {
+     "identificacion": "Ras es Safsafeh",
+     "lat": 28.5556,
+     "lon": 33.9672,
+     "puntuacion_openbible": 37
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af693b8/mount-paran",
+   "nota": "En la bendición de Moisés (Dt 33:2)."
+  },
+  {
+   "id": "cineret",
+   "nombre": "Cineret",
+   "nombre_rv1909": "Cinereth",
+   "formas_rv1909": [
+    "Cinereth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 3:17"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Kinrot",
+    "lat": 32.8694,
+    "lon": 35.5383,
+    "puntuacion_openbible": 756,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sea of Galilee",
+     "lat": 32.8189,
+     "lon": 35.59,
+     "puntuacion_openbible": 57
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a2bb265/chinnereth",
+   "nota": "Límite de lo que reciben Rubén y Gad (Dt 3:17). OpenBible la identifica sobre todo con Tel Kinrot y propone también el mar de Galilea."
+  },
+  {
+   "id": "argob",
+   "nombre": "Argob",
+   "nombre_rv1909": "Argob",
+   "formas_rv1909": [
+    "Argob"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Dt 3:4",
+    "Dt 3:13",
+    "Dt 3:14"
+   ],
+   "ubicacion": {
+    "identificacion": "Argob",
+    "lat": 32.9695,
+    "lon": 36.4554,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a42a5b2/argob",
+   "nota": "Región del reino de Og en Basán, con sesenta ciudades (Dt 3:4)."
+  },
+  {
+   "id": "astarot",
+   "nombre": "Astarot",
+   "nombre_rv1909": "Astarot",
+   "formas_rv1909": [
+    "Astarot"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 1:4"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Ashtara",
+    "lat": 32.8042,
+    "lon": 36.0158,
+    "puntuacion_openbible": 797,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6fea11/ashtaroth",
+   "nota": "Donde habitaba Og, rey de Basán (Dt 1:4)."
+  },
+  {
+   "id": "beerot-bene-jaacan",
+   "nombre": "Beerot-bene-jaacán",
+   "nombre_rv1909": "Beerot-bene-jacaam",
+   "formas_rv1909": [
+    "Beerot-bene-jacaam"
+   ],
+   "tipo": "campamento",
+   "refs": [
+    "Dt 10:6"
+   ],
+   "ubicacion": {
+    "identificacion": "Birein",
+    "lat": 30.7918,
+    "lon": 34.4725,
+    "puntuacion_openbible": 370,
+    "confianza": "media"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a280f83/beeroth-bene-jaakan",
+   "nota": "Dt 10:6. Probablemente el mismo lugar que Bene-jaacán (Nm 33:31); OpenBible los registra aparte."
+  },
+  {
+   "id": "bet-peor",
+   "nombre": "Bet-peor",
+   "nombre_rv1909": "Beth-peor",
+   "formas_rv1909": [
+    "Beth-peor",
+    "Bethpeor"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 3:29",
+    "Dt 4:46",
+    "Dt 34:6"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Ayun Musa",
+    "lat": 31.777,
+    "lon": 35.7385,
+    "puntuacion_openbible": 245,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Muhatta",
+     "lat": 31.7985,
+     "lon": 35.7224,
+     "puntuacion_openbible": 233
+    },
+    {
+     "identificacion": "Tall Iktanu",
+     "lat": 31.8193,
+     "lon": 35.6719,
+     "puntuacion_openbible": -4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af3ce34/beth-peor",
+   "nota": "Moisés es enterrado en el valle, enfrente de Bet-peor (Dt 34:6)."
+  },
+  {
+   "id": "beser",
+   "nombre": "Beser",
+   "nombre_rv1909": "Beser",
+   "formas_rv1909": [
+    "Beser"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 4:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Umm el Amad",
+    "lat": 31.786,
+    "lon": 35.9017,
+    "puntuacion_openbible": 442,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tall Jalul",
+     "lat": 31.7166,
+     "lon": 35.8568,
+     "puntuacion_openbible": 62
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0cd098/bezer",
+   "nota": "Ciudad de refugio de Rubén (Dt 4:43)."
+  },
+  {
+   "id": "golan",
+   "nombre": "Golán",
+   "nombre_rv1909": "Golán",
+   "formas_rv1909": [
+    "Golán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 4:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Saham al Jawlan",
+    "lat": 32.7811,
+    "lon": 35.9347,
+    "puntuacion_openbible": 680,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abb5c1e/golan",
+   "nota": "Ciudad de refugio de Manasés, en Basán (Dt 4:43)."
+  },
+  {
+   "id": "ramot-galaad",
+   "nombre": "Ramot de Galaad",
+   "nombre_rv1909": "Ramoth",
+   "formas_rv1909": [
+    "Ramoth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 4:43"
+   ],
+   "ubicacion": {
+    "identificacion": "Tall er Rumeith",
+    "lat": 32.4999,
+    "lon": 36.015,
+    "puntuacion_openbible": 808,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Ar Ramtha",
+     "lat": 32.5592,
+     "lon": 36.0069,
+     "puntuacion_openbible": 13
+    },
+    {
+     "identificacion": "As Salt",
+     "lat": 32.0333,
+     "lon": 35.7333,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Iraq al Amir",
+     "lat": 31.9128,
+     "lon": 35.7518,
+     "puntuacion_openbible": -1
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a95147f/ramoth-3",
+   "nota": "Ciudad de refugio de Gad (Dt 4:43: «Ramoth en Galaad»)."
+  },
+  {
+   "id": "caftor",
+   "nombre": "Caftor",
+   "nombre_rv1909": "Caftor",
+   "formas_rv1909": [
+    "Caftor"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Dt 2:23"
+   ],
+   "ubicacion": {
+    "identificacion": "Crete",
+    "lat": 35.3097,
+    "lon": 24.8933,
+    "puntuacion_openbible": 757,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Cappadocia",
+     "lat": 38.6706,
+     "lon": 34.8392,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Tarsus",
+     "lat": 36.913,
+     "lon": 34.8921,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Cyprus",
+     "lat": 35.0,
+     "lon": 33.0,
+     "puntuacion_openbible": 21
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a329990/caphtor",
+   "nota": "De donde salieron los caftoreos (Dt 2:23)."
+  },
+  {
+   "id": "dizahab",
+   "nombre": "Dizahab",
+   "nombre_rv1909": "Dizahab",
+   "formas_rv1909": [
+    "Dizahab"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Dt 1:1"
+   ],
+   "ubicacion": {
+    "identificacion": "Ad Duhaybah",
+    "lat": 31.8066,
+    "lon": 36.0508,
+    "puntuacion_openbible": 339,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Dahab",
+     "lat": 28.4931,
+     "lon": 34.5047,
+     "puntuacion_openbible": 67
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/afcb77d/dizahab",
+   "nota": "En la descripción del lugar de los discursos (Dt 1:1)."
+  },
+  {
+   "id": "tofel",
+   "nombre": "Tofel",
+   "nombre_rv1909": "Thopel",
+   "formas_rv1909": [
+    "Thopel"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Dt 1:1"
+   ],
+   "ubicacion": {
+    "identificacion": "Tafila",
+    "lat": 30.8375,
+    "lon": 35.6042,
+    "puntuacion_openbible": 189,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "between Punon and Zered",
+     "lat": 30.9396,
+     "lon": 35.4588,
+     "puntuacion_openbible": 111
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7ecf6c/tophel",
+   "nota": "En la descripción del lugar de los discursos (Dt 1:1)."
+  },
+  {
+   "id": "laban",
+   "nombre": "Labán (lugar)",
+   "nombre_rv1909": "Labán",
+   "formas_rv1909": [
+    "Labán"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "Dt 1:1"
+   ],
+   "ubicacion": {
+    "identificacion": "Tel Abu Seleimeh",
+    "lat": 31.2319,
+    "lon": 34.1067,
+    "puntuacion_openbible": 162,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sheikh ez Zuweid",
+     "lat": 31.2119,
+     "lon": 34.1106,
+     "puntuacion_openbible": 54
+    },
+    {
+     "identificacion": "Wadi el Beidha",
+     "lat": 29.9932,
+     "lon": 34.704,
+     "puntuacion_openbible": 49
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad763b1/laban",
+   "nota": "Lugar de Dt 1:1; no es Labán, el hermano de Rebeca."
+  },
+  {
+   "id": "elat",
+   "nombre": "Elat",
+   "nombre_rv1909": "Elath",
+   "formas_rv1909": [
+    "Elath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 2:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Aqaba",
+    "lat": 29.5307,
+    "lon": 35.0,
+    "puntuacion_openbible": 527,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell el Kheleifeh",
+     "lat": 29.5472,
+     "lon": 34.9803,
+     "puntuacion_openbible": 103
+    },
+    {
+     "identificacion": "Jezirat Faraun",
+     "lat": 29.4628,
+     "lon": 34.8601,
+     "puntuacion_openbible": 28
+    },
+    {
+     "identificacion": "Eilat",
+     "lat": 29.5715,
+     "lon": 34.9635,
+     "puntuacion_openbible": 20
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af0ac29/elath",
+   "nota": ""
+  },
+  {
+   "id": "gilgal-more",
+   "nombre": "Gilgal (junto a More)",
+   "nombre_rv1909": "Gilgal",
+   "formas_rv1909": [
+    "Gilgal"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 11:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet el Mefjir",
+    "lat": 31.8819,
+    "lon": 35.46,
+    "puntuacion_openbible": 103,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Ibn Naser",
+     "lat": 32.1984,
+     "lon": 35.307,
+     "puntuacion_openbible": 75
+    },
+    {
+     "identificacion": "Jiljilyya",
+     "lat": 32.0306,
+     "lon": 35.225,
+     "puntuacion_openbible": 37
+    },
+    {
+     "identificacion": "El ’Unuq",
+     "lat": 32.2493,
+     "lon": 35.3707,
+     "puntuacion_openbible": 31
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a84a509/gilgal-4",
+   "nota": "Dt 11:30: «delante de Gilgal, junto á los llanos de Moreh»."
+  },
+  {
+   "id": "cademot",
+   "nombre": "Cademot",
+   "nombre_rv1909": "Cademoth",
+   "formas_rv1909": [
+    "Cademoth"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Dt 2:26"
+   ],
+   "ubicacion": {
+    "identificacion": "Aleiyan",
+    "lat": 31.5318,
+    "lon": 35.8803,
+    "puntuacion_openbible": 251,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Er Remeil",
+     "lat": 31.5757,
+     "lon": 35.8744,
+     "puntuacion_openbible": 174
+    },
+    {
+     "identificacion": "Es Saliyeh",
+     "lat": 31.4553,
+     "lon": 35.9203,
+     "puntuacion_openbible": 166
+    },
+    {
+     "identificacion": "Qasr ez Za’feran I",
+     "lat": 31.6155,
+     "lon": 35.8716,
+     "puntuacion_openbible": 116
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a416b43/kedemoth",
+   "nota": "Desierto desde el que Moisés envía mensajeros a Sehón (Dt 2:26)."
+  },
+  {
+   "id": "libano",
+   "nombre": "Líbano",
+   "nombre_rv1909": "Líbano",
+   "formas_rv1909": [
+    "Líbano"
+   ],
+   "tipo": "region",
+   "refs": [
+    "Dt 1:7",
+    "Dt 3:25",
+    "Dt 11:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Jezzine",
+    "lat": 33.54,
+    "lon": 35.5836,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a730058/lebanon",
+   "nota": ""
+  },
+  {
+   "id": "raba-amon",
+   "nombre": "Rabá de los hijos de Amón",
+   "nombre_rv1909": "Rabbath",
+   "formas_rv1909": [
+    "Rabbath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 3:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Amman",
+    "lat": 31.9547,
+    "lon": 35.9343,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ae067b5/rabbah-1",
+   "nota": "Allí está la cama de hierro de Og (Dt 3:11)."
+  },
+  {
+   "id": "salca",
+   "nombre": "Salca",
+   "nombre_rv1909": "Salchâ",
+   "formas_rv1909": [
+    "Salchâ"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "Dt 3:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Salkhad",
+    "lat": 32.4939,
+    "lon": 36.7105,
+    "puntuacion_openbible": 716,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac3bc41/salecah",
+   "nota": "Límite del reino de Og en Basán (Dt 3:10)."
   }
  ],
  "menciones_lugar": [
@@ -79513,6 +86335,1542 @@ window.BIBLIA_DATOS = {
    "lugar": "jerico",
    "inicio": 143,
    "fin": 149
+  },
+  {
+   "ref": "Dt 1:1",
+   "lugar": "jordan",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Dt 1:1",
+   "lugar": "paran",
+   "inicio": 138,
+   "fin": 143
+  },
+  {
+   "ref": "Dt 1:1",
+   "lugar": "tofel",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "Dt 1:1",
+   "lugar": "laban",
+   "inicio": 157,
+   "fin": 162
+  },
+  {
+   "ref": "Dt 1:1",
+   "lugar": "haserot",
+   "inicio": 166,
+   "fin": 174
+  },
+  {
+   "ref": "Dt 1:1",
+   "lugar": "dizahab",
+   "inicio": 178,
+   "fin": 185
+  },
+  {
+   "ref": "Dt 1:2",
+   "lugar": "horeb",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Dt 1:2",
+   "lugar": "seir",
+   "inicio": 51,
+   "fin": 55
+  },
+  {
+   "ref": "Dt 1:2",
+   "lugar": "cades",
+   "inicio": 63,
+   "fin": 68
+  },
+  {
+   "ref": "Dt 1:4",
+   "lugar": "hesbon",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "Dt 1:4",
+   "lugar": "basan",
+   "inicio": 86,
+   "fin": 91
+  },
+  {
+   "ref": "Dt 1:4",
+   "lugar": "astarot",
+   "inicio": 109,
+   "fin": 116
+  },
+  {
+   "ref": "Dt 1:4",
+   "lugar": "edrei",
+   "inicio": 120,
+   "fin": 125
+  },
+  {
+   "ref": "Dt 1:5",
+   "lugar": "jordan",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Dt 1:5",
+   "lugar": "moab",
+   "inicio": 39,
+   "fin": 43
+  },
+  {
+   "ref": "Dt 1:6",
+   "lugar": "horeb",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "Dt 1:7",
+   "lugar": "libano",
+   "inicio": 181,
+   "fin": 187
+  },
+  {
+   "ref": "Dt 1:7",
+   "lugar": "eufrates",
+   "inicio": 215,
+   "fin": 223
+  },
+  {
+   "ref": "Dt 1:19",
+   "lugar": "horeb",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "Dt 1:19",
+   "lugar": "cades",
+   "inicio": 181,
+   "fin": 186
+  },
+  {
+   "ref": "Dt 1:24",
+   "lugar": "valle-de-escol",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Dt 1:27",
+   "lugar": "egipto",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "Dt 1:30",
+   "lugar": "egipto",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "Dt 1:40",
+   "lugar": "camino-mar-rojo",
+   "inicio": 42,
+   "fin": 64
+  },
+  {
+   "ref": "Dt 1:44",
+   "lugar": "seir",
+   "inicio": 133,
+   "fin": 137
+  },
+  {
+   "ref": "Dt 1:44",
+   "lugar": "horma",
+   "inicio": 162,
+   "fin": 167
+  },
+  {
+   "ref": "Dt 1:46",
+   "lugar": "cades",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 2:1",
+   "lugar": "camino-mar-rojo",
+   "inicio": 37,
+   "fin": 59
+  },
+  {
+   "ref": "Dt 2:1",
+   "lugar": "seir",
+   "inicio": 112,
+   "fin": 116
+  },
+  {
+   "ref": "Dt 2:4",
+   "lugar": "seir",
+   "inicio": 116,
+   "fin": 120
+  },
+  {
+   "ref": "Dt 2:5",
+   "lugar": "seir",
+   "inicio": 145,
+   "fin": 149
+  },
+  {
+   "ref": "Dt 2:8",
+   "lugar": "seir",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "Dt 2:8",
+   "lugar": "elat",
+   "inicio": 104,
+   "fin": 109
+  },
+  {
+   "ref": "Dt 2:8",
+   "lugar": "ezion-geber",
+   "inicio": 115,
+   "fin": 125
+  },
+  {
+   "ref": "Dt 2:8",
+   "lugar": "moab",
+   "inicio": 172,
+   "fin": 176
+  },
+  {
+   "ref": "Dt 2:9",
+   "lugar": "moab",
+   "inicio": 32,
+   "fin": 36
+  },
+  {
+   "ref": "Dt 2:9",
+   "lugar": "ar",
+   "inicio": 131,
+   "fin": 133
+  },
+  {
+   "ref": "Dt 2:12",
+   "lugar": "seir",
+   "inicio": 5,
+   "fin": 9
+  },
+  {
+   "ref": "Dt 2:13",
+   "lugar": "arroyo-de-zered",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Dt 2:13",
+   "lugar": "arroyo-de-zered",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Dt 2:14",
+   "lugar": "cades",
+   "inicio": 28,
+   "fin": 33
+  },
+  {
+   "ref": "Dt 2:14",
+   "lugar": "arroyo-de-zered",
+   "inicio": 72,
+   "fin": 77
+  },
+  {
+   "ref": "Dt 2:18",
+   "lugar": "moab",
+   "inicio": 29,
+   "fin": 33
+  },
+  {
+   "ref": "Dt 2:18",
+   "lugar": "ar",
+   "inicio": 37,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 2:19",
+   "lugar": "amon",
+   "inicio": 39,
+   "fin": 44
+  },
+  {
+   "ref": "Dt 2:19",
+   "lugar": "amon",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "Dt 2:22",
+   "lugar": "seir",
+   "inicio": 50,
+   "fin": 54
+  },
+  {
+   "ref": "Dt 2:23",
+   "lugar": "gaza",
+   "inicio": 46,
+   "fin": 50
+  },
+  {
+   "ref": "Dt 2:23",
+   "lugar": "caftor",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "Dt 2:24",
+   "lugar": "arnon",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "Dt 2:24",
+   "lugar": "hesbon",
+   "inicio": 89,
+   "fin": 95
+  },
+  {
+   "ref": "Dt 2:26",
+   "lugar": "cademot",
+   "inicio": 40,
+   "fin": 48
+  },
+  {
+   "ref": "Dt 2:26",
+   "lugar": "hesbon",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "Dt 2:29",
+   "lugar": "seir",
+   "inicio": 60,
+   "fin": 64
+  },
+  {
+   "ref": "Dt 2:29",
+   "lugar": "ar",
+   "inicio": 98,
+   "fin": 100
+  },
+  {
+   "ref": "Dt 2:29",
+   "lugar": "jordan",
+   "inicio": 120,
+   "fin": 126
+  },
+  {
+   "ref": "Dt 2:30",
+   "lugar": "hesbon",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "Dt 2:32",
+   "lugar": "jahaza",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "Dt 2:36",
+   "lugar": "aroer",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Dt 2:36",
+   "lugar": "arnon",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "Dt 2:36",
+   "lugar": "galaad",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "Dt 2:37",
+   "lugar": "amon",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "Dt 2:37",
+   "lugar": "jaboc",
+   "inicio": 105,
+   "fin": 110
+  },
+  {
+   "ref": "Dt 3:1",
+   "lugar": "basan",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "Dt 3:1",
+   "lugar": "basan",
+   "inicio": 73,
+   "fin": 78
+  },
+  {
+   "ref": "Dt 3:1",
+   "lugar": "edrei",
+   "inicio": 116,
+   "fin": 121
+  },
+  {
+   "ref": "Dt 3:2",
+   "lugar": "hesbon",
+   "inicio": 177,
+   "fin": 183
+  },
+  {
+   "ref": "Dt 3:3",
+   "lugar": "basan",
+   "inicio": 66,
+   "fin": 71
+  },
+  {
+   "ref": "Dt 3:4",
+   "lugar": "argob",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "Dt 3:4",
+   "lugar": "basan",
+   "inicio": 139,
+   "fin": 144
+  },
+  {
+   "ref": "Dt 3:6",
+   "lugar": "hesbon",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "Dt 3:8",
+   "lugar": "jordan",
+   "inicio": 93,
+   "fin": 99
+  },
+  {
+   "ref": "Dt 3:8",
+   "lugar": "arnon",
+   "inicio": 130,
+   "fin": 135
+  },
+  {
+   "ref": "Dt 3:8",
+   "lugar": "monte-hermon",
+   "inicio": 154,
+   "fin": 160
+  },
+  {
+   "ref": "Dt 3:9",
+   "lugar": "monte-hermon",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "Dt 3:9",
+   "lugar": "monte-hermon",
+   "inicio": 30,
+   "fin": 36
+  },
+  {
+   "ref": "Dt 3:9",
+   "lugar": "senir",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "Dt 3:10",
+   "lugar": "galaad",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "Dt 3:10",
+   "lugar": "basan",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "Dt 3:10",
+   "lugar": "salca",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Dt 3:10",
+   "lugar": "edrei",
+   "inicio": 77,
+   "fin": 82
+  },
+  {
+   "ref": "Dt 3:10",
+   "lugar": "basan",
+   "inicio": 112,
+   "fin": 117
+  },
+  {
+   "ref": "Dt 3:11",
+   "lugar": "basan",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "Dt 3:11",
+   "lugar": "raba-amon",
+   "inicio": 121,
+   "fin": 128
+  },
+  {
+   "ref": "Dt 3:11",
+   "lugar": "amon",
+   "inicio": 145,
+   "fin": 150
+  },
+  {
+   "ref": "Dt 3:12",
+   "lugar": "aroer",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "Dt 3:12",
+   "lugar": "arnon",
+   "inicio": 74,
+   "fin": 79
+  },
+  {
+   "ref": "Dt 3:12",
+   "lugar": "galaad",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "Dt 3:13",
+   "lugar": "galaad",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "Dt 3:13",
+   "lugar": "basan",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Dt 3:13",
+   "lugar": "argob",
+   "inicio": 107,
+   "fin": 112
+  },
+  {
+   "ref": "Dt 3:13",
+   "lugar": "basan",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "Dt 3:14",
+   "lugar": "argob",
+   "inicio": 44,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 3:14",
+   "lugar": "havot-jair",
+   "inicio": 112,
+   "fin": 129
+  },
+  {
+   "ref": "Dt 3:15",
+   "lugar": "galaad",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 3:16",
+   "lugar": "galaad",
+   "inicio": 34,
+   "fin": 40
+  },
+  {
+   "ref": "Dt 3:16",
+   "lugar": "arnon",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "Dt 3:16",
+   "lugar": "jaboc",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "Dt 3:16",
+   "lugar": "amon",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "Dt 3:17",
+   "lugar": "jordan",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Dt 3:17",
+   "lugar": "cineret",
+   "inicio": 54,
+   "fin": 62
+  },
+  {
+   "ref": "Dt 3:17",
+   "lugar": "mar-salado",
+   "inicio": 72,
+   "fin": 85
+  },
+  {
+   "ref": "Dt 3:17",
+   "lugar": "mar-salado",
+   "inicio": 90,
+   "fin": 100
+  },
+  {
+   "ref": "Dt 3:17",
+   "lugar": "pisga",
+   "inicio": 127,
+   "fin": 132
+  },
+  {
+   "ref": "Dt 3:20",
+   "lugar": "jordan",
+   "inicio": 154,
+   "fin": 160
+  },
+  {
+   "ref": "Dt 3:25",
+   "lugar": "jordan",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "Dt 3:25",
+   "lugar": "libano",
+   "inicio": 106,
+   "fin": 112
+  },
+  {
+   "ref": "Dt 3:27",
+   "lugar": "pisga",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "Dt 3:27",
+   "lugar": "jordan",
+   "inicio": 143,
+   "fin": 149
+  },
+  {
+   "ref": "Dt 3:29",
+   "lugar": "bet-peor",
+   "inicio": 33,
+   "fin": 42
+  },
+  {
+   "ref": "Dt 4:10",
+   "lugar": "horeb",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "Dt 4:20",
+   "lugar": "egipto",
+   "inicio": 73,
+   "fin": 79
+  },
+  {
+   "ref": "Dt 4:21",
+   "lugar": "jordan",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Dt 4:22",
+   "lugar": "jordan",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Dt 4:26",
+   "lugar": "jordan",
+   "inicio": 120,
+   "fin": 126
+  },
+  {
+   "ref": "Dt 4:34",
+   "lugar": "egipto",
+   "inicio": 253,
+   "fin": 259
+  },
+  {
+   "ref": "Dt 4:37",
+   "lugar": "egipto",
+   "inicio": 98,
+   "fin": 104
+  },
+  {
+   "ref": "Dt 4:41",
+   "lugar": "jordan",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "Dt 4:43",
+   "lugar": "beser",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Dt 4:43",
+   "lugar": "ramot-galaad",
+   "inicio": 71,
+   "fin": 77
+  },
+  {
+   "ref": "Dt 4:43",
+   "lugar": "galaad",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "Dt 4:43",
+   "lugar": "golan",
+   "inicio": 109,
+   "fin": 114
+  },
+  {
+   "ref": "Dt 4:43",
+   "lugar": "basan",
+   "inicio": 118,
+   "fin": 123
+  },
+  {
+   "ref": "Dt 4:45",
+   "lugar": "egipto",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "Dt 4:46",
+   "lugar": "jordan",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "Dt 4:46",
+   "lugar": "bet-peor",
+   "inicio": 49,
+   "fin": 58
+  },
+  {
+   "ref": "Dt 4:46",
+   "lugar": "hesbon",
+   "inicio": 120,
+   "fin": 126
+  },
+  {
+   "ref": "Dt 4:46",
+   "lugar": "egipto",
+   "inicio": 200,
+   "fin": 206
+  },
+  {
+   "ref": "Dt 4:47",
+   "lugar": "basan",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "Dt 4:47",
+   "lugar": "jordan",
+   "inicio": 112,
+   "fin": 118
+  },
+  {
+   "ref": "Dt 4:48",
+   "lugar": "aroer",
+   "inicio": 6,
+   "fin": 11
+  },
+  {
+   "ref": "Dt 4:48",
+   "lugar": "arnon",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "Dt 4:48",
+   "lugar": "monte-hermon",
+   "inicio": 79,
+   "fin": 83
+  },
+  {
+   "ref": "Dt 4:48",
+   "lugar": "monte-hermon",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "Dt 4:49",
+   "lugar": "jordan",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "Dt 4:49",
+   "lugar": "mar-salado",
+   "inicio": 65,
+   "fin": 78
+  },
+  {
+   "ref": "Dt 4:49",
+   "lugar": "pisga",
+   "inicio": 118,
+   "fin": 123
+  },
+  {
+   "ref": "Dt 5:2",
+   "lugar": "horeb",
+   "inicio": 47,
+   "fin": 52
+  },
+  {
+   "ref": "Dt 5:6",
+   "lugar": "egipto",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Dt 5:15",
+   "lugar": "egipto",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 6:12",
+   "lugar": "egipto",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Dt 6:16",
+   "lugar": "masah",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "Dt 6:21",
+   "lugar": "egipto",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Dt 6:21",
+   "lugar": "egipto",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "Dt 6:22",
+   "lugar": "egipto",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "Dt 7:8",
+   "lugar": "egipto",
+   "inicio": 188,
+   "fin": 194
+  },
+  {
+   "ref": "Dt 7:15",
+   "lugar": "egipto",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "Dt 7:18",
+   "lugar": "egipto",
+   "inicio": 93,
+   "fin": 99
+  },
+  {
+   "ref": "Dt 8:14",
+   "lugar": "egipto",
+   "inicio": 86,
+   "fin": 92
+  },
+  {
+   "ref": "Dt 9:1",
+   "lugar": "jordan",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Dt 9:7",
+   "lugar": "egipto",
+   "inicio": 123,
+   "fin": 129
+  },
+  {
+   "ref": "Dt 9:8",
+   "lugar": "horeb",
+   "inicio": 5,
+   "fin": 10
+  },
+  {
+   "ref": "Dt 9:12",
+   "lugar": "egipto",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "Dt 9:22",
+   "lugar": "tabera",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "Dt 9:22",
+   "lugar": "masah",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Dt 9:22",
+   "lugar": "kibrot-hataava",
+   "inicio": 36,
+   "fin": 52
+  },
+  {
+   "ref": "Dt 9:23",
+   "lugar": "cades",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "Dt 9:26",
+   "lugar": "egipto",
+   "inicio": 132,
+   "fin": 138
+  },
+  {
+   "ref": "Dt 10:6",
+   "lugar": "beerot-bene-jaacan",
+   "inicio": 42,
+   "fin": 60
+  },
+  {
+   "ref": "Dt 10:6",
+   "lugar": "moserot",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "Dt 10:7",
+   "lugar": "hor-gidgad",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Dt 10:7",
+   "lugar": "hor-gidgad",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 10:7",
+   "lugar": "jotbata",
+   "inicio": 42,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 10:19",
+   "lugar": "egipto",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "Dt 10:22",
+   "lugar": "egipto",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "Dt 11:3",
+   "lugar": "egipto",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Dt 11:3",
+   "lugar": "egipto",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "Dt 11:4",
+   "lugar": "egipto",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "Dt 11:4",
+   "lugar": "mar-rojo",
+   "inicio": 100,
+   "fin": 111
+  },
+  {
+   "ref": "Dt 11:10",
+   "lugar": "egipto",
+   "inicio": 70,
+   "fin": 76
+  },
+  {
+   "ref": "Dt 11:24",
+   "lugar": "libano",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "Dt 11:24",
+   "lugar": "eufrates",
+   "inicio": 114,
+   "fin": 122
+  },
+  {
+   "ref": "Dt 11:24",
+   "lugar": "mar-grande",
+   "inicio": 133,
+   "fin": 145
+  },
+  {
+   "ref": "Dt 11:29",
+   "lugar": "monte-gerizim",
+   "inicio": 127,
+   "fin": 134
+  },
+  {
+   "ref": "Dt 11:29",
+   "lugar": "monte-ebal",
+   "inicio": 166,
+   "fin": 170
+  },
+  {
+   "ref": "Dt 11:30",
+   "lugar": "jordan",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "Dt 11:30",
+   "lugar": "gilgal-more",
+   "inicio": 137,
+   "fin": 143
+  },
+  {
+   "ref": "Dt 11:30",
+   "lugar": "more",
+   "inicio": 167,
+   "fin": 172
+  },
+  {
+   "ref": "Dt 11:31",
+   "lugar": "jordan",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Dt 12:10",
+   "lugar": "jordan",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "Dt 13:5",
+   "lugar": "egipto",
+   "inicio": 138,
+   "fin": 144
+  },
+  {
+   "ref": "Dt 13:10",
+   "lugar": "egipto",
+   "inicio": 116,
+   "fin": 122
+  },
+  {
+   "ref": "Dt 15:15",
+   "lugar": "egipto",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "Dt 16:1",
+   "lugar": "egipto",
+   "inicio": 110,
+   "fin": 116
+  },
+  {
+   "ref": "Dt 16:3",
+   "lugar": "egipto",
+   "inicio": 125,
+   "fin": 131
+  },
+  {
+   "ref": "Dt 16:3",
+   "lugar": "egipto",
+   "inicio": 193,
+   "fin": 199
+  },
+  {
+   "ref": "Dt 16:6",
+   "lugar": "egipto",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "Dt 16:12",
+   "lugar": "egipto",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 17:16",
+   "lugar": "egipto",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "Dt 18:16",
+   "lugar": "horeb",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "Dt 20:1",
+   "lugar": "egipto",
+   "inicio": 192,
+   "fin": 198
+  },
+  {
+   "ref": "Dt 23:4",
+   "lugar": "egipto",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "Dt 23:4",
+   "lugar": "petor",
+   "inicio": 142,
+   "fin": 148
+  },
+  {
+   "ref": "Dt 23:4",
+   "lugar": "mesopotamia",
+   "inicio": 152,
+   "fin": 163
+  },
+  {
+   "ref": "Dt 24:9",
+   "lugar": "egipto",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "Dt 24:18",
+   "lugar": "egipto",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Dt 24:22",
+   "lugar": "egipto",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "Dt 25:17",
+   "lugar": "amalec",
+   "inicio": 28,
+   "fin": 34
+  },
+  {
+   "ref": "Dt 25:17",
+   "lugar": "egipto",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "Dt 25:19",
+   "lugar": "amalec",
+   "inicio": 178,
+   "fin": 184
+  },
+  {
+   "ref": "Dt 26:5",
+   "lugar": "egipto",
+   "inicio": 114,
+   "fin": 120
+  },
+  {
+   "ref": "Dt 26:8",
+   "lugar": "egipto",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Dt 27:2",
+   "lugar": "jordan",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "Dt 27:4",
+   "lugar": "jordan",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "Dt 27:4",
+   "lugar": "monte-ebal",
+   "inicio": 111,
+   "fin": 115
+  },
+  {
+   "ref": "Dt 27:12",
+   "lugar": "monte-gerizim",
+   "inicio": 32,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 27:12",
+   "lugar": "jordan",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "Dt 27:13",
+   "lugar": "monte-ebal",
+   "inicio": 56,
+   "fin": 60
+  },
+  {
+   "ref": "Dt 28:27",
+   "lugar": "egipto",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Dt 28:60",
+   "lugar": "egipto",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "Dt 28:68",
+   "lugar": "egipto",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "Dt 29:1",
+   "lugar": "moab",
+   "inicio": 110,
+   "fin": 114
+  },
+  {
+   "ref": "Dt 29:1",
+   "lugar": "horeb",
+   "inicio": 159,
+   "fin": 164
+  },
+  {
+   "ref": "Dt 29:2",
+   "lugar": "egipto",
+   "inicio": 135,
+   "fin": 141
+  },
+  {
+   "ref": "Dt 29:7",
+   "lugar": "hesbon",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Dt 29:7",
+   "lugar": "basan",
+   "inicio": 68,
+   "fin": 73
+  },
+  {
+   "ref": "Dt 29:16",
+   "lugar": "egipto",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "Dt 29:23",
+   "lugar": "sodoma",
+   "inicio": 132,
+   "fin": 138
+  },
+  {
+   "ref": "Dt 29:23",
+   "lugar": "gomorra",
+   "inicio": 144,
+   "fin": 151
+  },
+  {
+   "ref": "Dt 29:23",
+   "lugar": "adma",
+   "inicio": 156,
+   "fin": 160
+  },
+  {
+   "ref": "Dt 29:23",
+   "lugar": "zeboim",
+   "inicio": 166,
+   "fin": 172
+  },
+  {
+   "ref": "Dt 29:25",
+   "lugar": "egipto",
+   "inicio": 134,
+   "fin": 140
+  },
+  {
+   "ref": "Dt 30:18",
+   "lugar": "jordan",
+   "inicio": 109,
+   "fin": 115
+  },
+  {
+   "ref": "Dt 31:2",
+   "lugar": "jordan",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "Dt 31:13",
+   "lugar": "jordan",
+   "inicio": 159,
+   "fin": 165
+  },
+  {
+   "ref": "Dt 32:14",
+   "lugar": "basan",
+   "inicio": 75,
+   "fin": 80
+  },
+  {
+   "ref": "Dt 32:32",
+   "lugar": "sodoma",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "Dt 32:32",
+   "lugar": "gomorra",
+   "inicio": 70,
+   "fin": 77
+  },
+  {
+   "ref": "Dt 32:47",
+   "lugar": "jordan",
+   "inicio": 133,
+   "fin": 139
+  },
+  {
+   "ref": "Dt 32:49",
+   "lugar": "abarim",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "Dt 32:49",
+   "lugar": "monte-nebo",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Dt 32:49",
+   "lugar": "moab",
+   "inicio": 69,
+   "fin": 73
+  },
+  {
+   "ref": "Dt 32:49",
+   "lugar": "jerico",
+   "inicio": 98,
+   "fin": 104
+  },
+  {
+   "ref": "Dt 32:49",
+   "lugar": "canaan",
+   "inicio": 126,
+   "fin": 132
+  },
+  {
+   "ref": "Dt 32:50",
+   "lugar": "monte-hor",
+   "inicio": 113,
+   "fin": 116
+  },
+  {
+   "ref": "Dt 32:51",
+   "lugar": "meriba-cades",
+   "inicio": 75,
+   "fin": 95
+  },
+  {
+   "ref": "Dt 32:51",
+   "lugar": "desierto-de-zin",
+   "inicio": 124,
+   "fin": 127
+  },
+  {
+   "ref": "Dt 33:2",
+   "lugar": "sinai",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Dt 33:2",
+   "lugar": "seir",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Dt 33:2",
+   "lugar": "monte-paran",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "Dt 33:8",
+   "lugar": "masah",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "Dt 33:8",
+   "lugar": "meriba",
+   "inicio": 109,
+   "fin": 129
+  },
+  {
+   "ref": "Dt 33:22",
+   "lugar": "basan",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "Dt 34:1",
+   "lugar": "campos-de-moab",
+   "inicio": 22,
+   "fin": 36
+  },
+  {
+   "ref": "Dt 34:1",
+   "lugar": "monte-nebo",
+   "inicio": 49,
+   "fin": 53
+  },
+  {
+   "ref": "Dt 34:1",
+   "lugar": "pisga",
+   "inicio": 70,
+   "fin": 75
+  },
+  {
+   "ref": "Dt 34:1",
+   "lugar": "jerico",
+   "inicio": 98,
+   "fin": 104
+  },
+  {
+   "ref": "Dt 34:1",
+   "lugar": "galaad",
+   "inicio": 142,
+   "fin": 148
+  },
+  {
+   "ref": "Dt 34:2",
+   "lugar": "mar-grande",
+   "inicio": 88,
+   "fin": 100
+  },
+  {
+   "ref": "Dt 34:3",
+   "lugar": "jerico",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "Dt 34:3",
+   "lugar": "zoar",
+   "inicio": 84,
+   "fin": 88
+  },
+  {
+   "ref": "Dt 34:5",
+   "lugar": "moab",
+   "inicio": 54,
+   "fin": 58
+  },
+  {
+   "ref": "Dt 34:6",
+   "lugar": "moab",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Dt 34:6",
+   "lugar": "bet-peor",
+   "inicio": 56,
+   "fin": 64
+  },
+  {
+   "ref": "Dt 34:8",
+   "lugar": "campos-de-moab",
+   "inicio": 47,
+   "fin": 61
+  },
+  {
+   "ref": "Dt 34:11",
+   "lugar": "egipto",
+   "inicio": 74,
+   "fin": 80
   }
  ],
  "cronologia": {
@@ -79630,7 +87988,8 @@ window.BIBLIA_DATOS = {
    "Convención del cálculo: una edad N al ocurrir algo se cuenta como N años después del nacimiento.",
    "La LXX es la de Brenton (1851); otros manuscritos dan cifras distintas.",
    "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7.",
-   "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como un año después de la salida, igual que Ex 40:17."
+   "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como un año después de la salida, igual que Ex 40:17.",
+   "Deuteronomio fecha los discursos de Moab desde la salida (Dt 1:3, «á los cuarenta años», mes undécimo); la muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año."
   ],
   "combinaciones": [
    {
@@ -82309,6 +90668,120 @@ window.BIBLIA_DATOS = {
       ]
      }
     ]
+   },
+   {
+    "id": "ev-discursos-moab",
+    "titulo": "Moisés habla a Israel en Moab",
+    "tipo": "evento",
+    "ref": "Dt 1:3",
+    "pasaje": "dt-01",
+    "personas": [
+     "Moses_1"
+    ],
+    "depende_de": "ev-salida-egipto",
+    "pasos": [
+     {
+      "texto": "la RV1909 dice «á los cuarenta años» (40) de la salida",
+      "signo": 1,
+      "ref": "Dt 1:3",
+      "cifra_texto": {
+       "TM": "á los cuarenta años",
+       "LXX": "in the fortieth year"
+      }
+     }
+    ],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2708,
+     "TM|tare70|sem2|canaan": 2493,
+     "TM|tare70|noe500|egipto": 2706,
+     "TM|tare70|noe500|canaan": 2491,
+     "TM|tare130|sem2|egipto": 2768,
+     "TM|tare130|sem2|canaan": 2553,
+     "TM|tare130|noe500|egipto": 2766,
+     "TM|tare130|noe500|canaan": 2551,
+     "LXX|tare70|sem2|egipto": 4173,
+     "LXX|tare70|sem2|canaan": 3958,
+     "LXX|tare70|noe500|egipto": 4171,
+     "LXX|tare70|noe500|canaan": 3956,
+     "LXX|tare130|sem2|egipto": 4233,
+     "LXX|tare130|sem2|canaan": 4018,
+     "LXX|tare130|noe500|egipto": 4231,
+     "LXX|tare130|noe500|canaan": 4016
+    },
+    "certeza": "calculo",
+    "nota": "Dt 1:3: en el mes undécimo, el día primero. Se lee igual que Nm 33:38 (muerte de Aarón, mes quinto del mismo año): TM «á los cuarenta años» → 40; LXX «in the fortieth year» → 39.",
+    "variantes": [
+     {
+      "cuando": {
+       "tradicion": "TM"
+      },
+      "pasos": [
+       {
+        "texto": "la RV1909 dice «á los cuarenta años» (40) de la salida",
+        "signo": 1,
+        "ref": "Dt 1:3",
+        "cifra_texto": {
+         "TM": "á los cuarenta años",
+         "LXX": "in the fortieth year"
+        }
+       }
+      ]
+     },
+     {
+      "cuando": {
+       "tradicion": "LXX"
+      },
+      "pasos": [
+       {
+        "texto": "la LXX dice «in the fortieth year» (año 40 desde la salida)",
+        "signo": 1,
+        "ref": "Dt 1:3",
+        "cifra_texto": {
+         "TM": "á los cuarenta años",
+         "LXX": "in the fortieth year"
+        }
+       },
+       {
+        "texto": "el primer año es el de la salida: se resta 1",
+        "signo": -1,
+        "ref": "Dt 1:3",
+        "convencion": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ev-muerte-moises",
+    "titulo": "Muere Moisés en Moab",
+    "tipo": "muerte",
+    "ref": "Dt 34:5",
+    "pasaje": "dt-74",
+    "personas": [
+     "Moses_1"
+    ],
+    "depende_de": "ev-discursos-moab",
+    "pasos": [],
+    "anios": {
+     "TM|tare70|sem2|egipto": 2708,
+     "TM|tare70|sem2|canaan": 2493,
+     "TM|tare70|noe500|egipto": 2706,
+     "TM|tare70|noe500|canaan": 2491,
+     "TM|tare130|sem2|egipto": 2768,
+     "TM|tare130|sem2|canaan": 2553,
+     "TM|tare130|noe500|egipto": 2766,
+     "TM|tare130|noe500|canaan": 2551,
+     "LXX|tare70|sem2|egipto": 4173,
+     "LXX|tare70|sem2|canaan": 3958,
+     "LXX|tare70|noe500|egipto": 4171,
+     "LXX|tare70|noe500|canaan": 3956,
+     "LXX|tare130|sem2|egipto": 4233,
+     "LXX|tare130|sem2|canaan": 4018,
+     "LXX|tare130|noe500|egipto": 4231,
+     "LXX|tare130|noe500|canaan": 4016
+    },
+    "certeza": "calculo",
+    "nota": "El texto no da el año de su muerte: Dt 1:3 sitúa los discursos en el mes undécimo del año cuarenta y Dt 34:8 da treinta días de luto; se toma el mismo año del cálculo. TM: 80 años en Ex 7:7 + 40 = 120, lo que dicen Dt 31:2 y Dt 34:7. LXX: 80 + 39 = 119 frente a 120 en Dt 34:7; la diferencia de un año cabe en lo que el cálculo no cuenta (Ex 7:7 ocurre antes de la salida)."
    },
    {
     "id": "ev-muerte-adan",

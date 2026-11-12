@@ -61,6 +61,13 @@ HECHOS = {
         "escenario_lugar": ["monte-hor"],
         "principal": [("Balaam_1", "Nm", None), ("Phinehas_1", "Nm", "Nm 25")],
     },
+    "Dt": {
+        "aparece": [(MOISES, "Dt 34:5"), ("Joshua_1", "Dt 31:7")],
+        "objeto_en": [("Dt 10:5", "tablas en el arca"), ("Dt 31:26", "libro de la ley junto al arca")],
+        "escenario_lugar": ["monte-nebo"],
+        "principal": [("Joshua_1", "Dt", None)],
+        "sin_aparicion": [("Og_1", "Dt 3:11")],   # mención posterior, no aparición (criterio de Dt)
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")
@@ -457,6 +464,13 @@ def construir(fuentes, biblia, tab):
             ap = personajes.get(pid, {}).get("apariciones", [])
             if not any(T.idx[r["inicio"]] <= x <= T.idx[r["fin"]] for r in ap):
                 err(libro, "hechos", pid, "apariciones", "hecho", f"{pid} debe aparecer en {ref}")
+        for pid, ref in H.get("sin_aparicion", []):
+            x = T.idx[ref]
+            p = personajes.get(pid, {})
+            if any(T.idx[r["inicio"]] <= x <= T.idx[r["fin"]] for r in p.get("apariciones", [])):
+                err(libro, "hechos", pid, "apariciones", "hecho", f"{pid} no debe aparecer en {ref} (es mención posterior)")
+            if not any(m["ref"] == ref for m in p.get("menciones_posteriores", [])):
+                err(libro, "hechos", pid, "menciones_posteriores", "hecho", f"{pid} debe tener mención posterior en {ref}")
         for ref, que in H.get("objeto_en", []):
             x = T.idx[ref]
             if not any(i <= x <= j for _, rg in objetos.values() for i, j in rg):

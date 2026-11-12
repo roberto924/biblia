@@ -50,7 +50,9 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "Éxodo no da edades de padres al engendrar: la salida de Egipto se enlaza con Génesis mediante los 430 años "
          "de Ex 12:40 (supuesto «e430»); los nacimientos de Moisés y Aarón se calculan hacia atrás desde Ex 7:7.",
          "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como "
-         "un año después de la salida, igual que Ex 40:17."]
+         "un año después de la salida, igual que Ex 40:17.",
+         "Deuteronomio fecha los discursos de Moab desde la salida (Dt 1:3, «á los cuarenta años», mes undécimo); la "
+         "muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año."]
 # Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
 F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
@@ -228,6 +230,23 @@ def definir(nombre):
                          "83 años en Ex 7:7 + 40 = 123, lo que dice Nm 33:39. LXX: «in the fortieth year» da 39 años "
                          "desde la salida y 83 + 39 = 122; la diferencia de un año cabe en lo que el cálculo no cuenta "
                          "(Ex 7:7 ocurre antes de la salida y Aarón muere en el mes quinto).")))
+    # Deuteronomio: Dt 1:3 fecha los discursos desde la salida, como Nm 33:38; la muerte de Moisés no lleva año.
+    C13 = {"TM": ("á los cuarenta años", "cuarenta"), "LXX": ("in the fortieth year", "fortieth")}
+    ev.append(dict(id="ev-discursos-moab", titulo="Moisés habla a Israel en Moab", tipo="evento", ref="Dt 1:3",
+                   personas=["Moses_1"], depende_de=S,
+                   variantes=[({"tradicion": "TM"}, [
+                       C("Dt 1:3", C13, texto="la RV1909 dice «á los cuarenta años» ({v}) de la salida")]),
+                       ({"tradicion": "LXX"}, [
+                           C("Dt 1:3", C13, texto="la LXX dice «in the fortieth year» (año {v} desde la salida)"),
+                           F(1, "Dt 1:3", signo=-1, texto="el primer año es el de la salida: se resta {v}")])],
+                   nota=("Dt 1:3: en el mes undécimo, el día primero. Se lee igual que Nm 33:38 (muerte de Aarón, mes "
+                         "quinto del mismo año): TM «á los cuarenta años» → 40; LXX «in the fortieth year» → 39.")))
+    ev.append(dict(id="ev-muerte-moises", titulo="Muere Moisés en Moab", tipo="muerte", ref="Dt 34:5",
+                   personas=["Moses_1"], depende_de="ev-discursos-moab", margen_total=1, pasos=[],
+                   nota=("El texto no da el año de su muerte: Dt 1:3 sitúa los discursos en el mes undécimo del año "
+                         "cuarenta y Dt 34:8 da treinta días de luto; se toma el mismo año del cálculo. TM: 80 años en "
+                         "Ex 7:7 + 40 = 120, lo que dicen Dt 31:2 y Dt 34:7. LXX: 80 + 39 = 119 frente a 120 en Dt 34:7; "
+                         "la diferencia de un año cabe en lo que el cálculo no cuenta (Ex 7:7 ocurre antes de la salida).")))
     # Muertes de Gn 5 y 11
     for p in dict.fromkeys([x[0] for x in GN5] + ["Noah_1", "Shem_1", "Arpachshad_1", "Cainan_1", "Shelah_1"] + [x[0] for x in GN11] + ["Terah_1"]):
         if p == "Enoch_2":

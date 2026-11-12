@@ -270,7 +270,7 @@ def parse_ex(s):
     return (int(m.group(1)), int(m.group(2)))
 
 
-ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3}
+ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4}
 
 
 def parse_ref(s):
@@ -662,6 +662,13 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
         mod_ids |= set(d.get("modern_associations", {}))
     mod = lm._leer_jsonl(rutas["ob_modern"], mod_ids)
     gn_por_ob = {l["url_fuente"].split("/ancient/")[1].split("/")[0]: l for l in lugares_gn}
+    # obid de OpenBible que es el mismo lugar que uno ya registrado con otro obid (amplía ese lugar)
+    por_lid = {l["id"]: l for l in lugares_gn}
+    for obid, lid in getattr(cfg, "UNIR_LUGAR", {}).items():
+        if lid not in por_lid:
+            errores.append(f"{NOMBRE}: UNIR_LUGAR {obid} -> {lid}: no existe ese lugar"); continue
+        gn_por_ob[obid] = por_lid[lid]
+        avisos.append(f"{NOMBRE}: el lugar de OpenBible {obid} se une a «{lid}» (misma identificación moderna)")
     ocupado = defaultdict(list)
     for m in menciones_personas:
         ocupado[m["ref"]].append((m["inicio"], m["fin"]))
