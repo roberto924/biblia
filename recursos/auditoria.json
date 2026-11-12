@@ -845,6 +845,140 @@
   "video-bp-rut-es": {
    "veredicto": "OK",
    "motivo": "Página de BibleProject en español existe (200), «Resumen del libro de Rut», duración 7:43 y © 2026 BibleProject; solo enlace."
+  },
+  "tissot-1s-1-ana": {
+   "veredicto": "OK",
+   "motivo": "Ana de rodillas ante Elí sentado en el santuario; encaja con 1S 1:9-18. Commons: Public domain, Tissot, 1900.",
+   "sensible": false
+  },
+  "tissot-1s-3-voz": {
+   "veredicto": "OK",
+   "motivo": "Niño incorporado en el lecho con la mano al oído y una luz arriba; es 1S 3:1-10. Commons: Public domain, 1900.",
+   "sensible": false
+  },
+  "copley-1s-3-eli": {
+   "veredicto": "OK",
+   "motivo": "Samuel señala hacia arriba y Elí con pectoral lo escucha: 1S 3:15-18 (Elí pide que no le oculte la visión). Commons: Public domain, 1780.",
+   "sensible": false
+  },
+  "tissot-1s-5-dagon": {
+   "veredicto": "OK",
+   "motivo": "Arca sobre el pedestal y la figura del ídolo caída: 1S 5:1-5 (5:4). Commons: Public domain, 1900.",
+   "sensible": false
+  },
+  "rijks-1s-5-dagon": {
+   "veredicto": "OK",
+   "motivo": "Estampa del Rijksmuseum RP-P-OB-36.154 con el arca y la estatua caída; arte de 1520-1561 (CC0 confirmado en Commons). Sensible por varias figuras masculinas desnudas.",
+   "sensible": true
+  },
+  "tissot-1s-6-arca": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "1S 6:10-12"
+   ],
+   "motivo": "La imagen muestra solo el carro con el arca tirado por dos vacas rumbo a la ciudad; la consulta de los filisteos (6:1-9) no se ve. Cubre 6:10-12. La descripción dice «consultan»: debe decir que la despiden en el carro.",
+   "sensible": false
+  },
+  "dore-1s-9-samuel-saul": {
+   "veredicto": "OK",
+   "motivo": "Samuel de pie señalando al cielo y Saúl arrodillado; el pie de Commons cita 1S 9:17. Public domain, 1866.",
+   "sensible": false
+  },
+  "dore-1s-15-agag": {
+   "veredicto": "OK",
+   "motivo": "Hombre con espada sujeta a Agag arrodillado ante la tropa: 1S 15:32-33. Public domain, 1866. Ejecución en curso.",
+   "sensible": true
+  },
+  "rembrandt-1s-16-saul-david": {
+   "veredicto": "AJUSTAR",
+   "refs": [
+    "1S 16:14-23"
+   ],
+   "motivo": "Saúl con lanza y David con arpa encajan con 1S 16:14-23, pero Commons rotula la autoría «Rembrandt or workshop» (Mauritshuis 621, 1650-1670): el autor de la ficha debe decir «Rembrandt o taller».",
+   "sensible": false
+  },
+  "parys-1s-16-arpa": {
+   "veredicto": "OK",
+   "motivo": "David tocando ante Saúl dormido: 1S 16:23. Commons: CC BY-SA 4.0, autor del archivo Phillip Medhurst, reproducción Brunoff 1904 (pintura de Louis de Parys sobre dibujo de Tissot). La atribución de la ficha nombra a los tres; añadir el enlace a la licencia al mostrarla.",
+   "sensible": false
+  },
+  "tissot-1s-16-presentado": {
+   "veredicto": "OK",
+   "motivo": "Anciano con la mano en el hombro de un muchacho: 1S 16:11-13 (Commons cita 16:12). Public domain, 1900.",
+   "sensible": false
+  },
+  "tissot-1s-17-honda": {
+   "veredicto": "OK",
+   "motivo": "David con la honda frente a Goliat con escudo y lanza: 1S 17:40-49. Public domain, 1900. Sin sangre.",
+   "sensible": false
+  },
+  "dore-1s-17-goliat": {
+   "veredicto": "OK",
+   "motivo": "David sobre el cuerpo levantando la cabeza cortada: 1S 17:49-51. Public domain, 1866.",
+   "sensible": true
+  },
+  "met-1s-17-plato-goliat": {
+   "veredicto": "OK",
+   "motivo": "Relieve de plata del Met (629-630, CC0): David con nimbo frente a guerrero; arte bizantino del siglo VII sobre 1S 17:40-50, bien rotulado como no contemporáneo.",
+   "sensible": false
+  },
+  "dore-1s-18-lanza": {
+   "veredicto": "OK",
+   "motivo": "Saúl alza la lanza contra David con el arpa: 1S 18:10-11 dentro de 18:6-11. Public domain, 1866. Sin sangre ni herida: no se marca sensible.",
+   "sensible": false
+  },
+  "dore-1s-19-ventana": {
+   "veredicto": "OK",
+   "motivo": "Mical descuelga a David por la ventana con una cuerda: 1S 19:11-18 (19:12). Public domain, 1866.",
+   "sensible": false
+  },
+  "dore-1s-20-jonatan": {
+   "veredicto": "OK",
+   "motivo": "Dos jóvenes junto a un estanque, uno apoyado en el hombro del otro: despedida de 1S 20:41-42 (Commons cita 20:42). Sin fecha en el archivo, la ficha ya lo dice.",
+   "sensible": false
+  },
+  "dore-1s-24-cueva": {
+   "veredicto": "OK",
+   "motivo": "David en la boca de la cueva alza el trozo de manto ante la tropa de Saúl arriba: 1S 24:3-22. Public domain, 1866.",
+   "sensible": false
+  },
+  "dore-1s-28-endor": {
+   "veredicto": "OK",
+   "motivo": "Mujer que invoca, Samuel aparecido a la izquierda y Saúl postrado: 1S 28:7-25. Public domain, 1866. Escena sombría con serpientes junto al caldero pero sin sangre; se deja visible (duda para el usuario).",
+   "sensible": false
+  },
+  "dore-1s-31-saul": {
+   "veredicto": "OK",
+   "motivo": "Campo de batalla con caídos, caballos y la caída de Saúl: 1S 31:1-6. Public domain, 1866. Muertos en combate.",
+   "sensible": true
+  },
+  "qeiyafa-valle-ela-debate": {
+   "veredicto": "OK",
+   "motivo": "Refs 17:1-3 y 17:52 (valle de Ela, Saaraim) cuadran. Está como «relación debatida» con las dos posturas (Garfinkel frente a Finkelstein/Piasetzky y Maeir); solo enlace, sin imagen. DOI no verificable desde aquí (sin respuesta), se confía en la lectura de Cursor."
+  },
+  "audio-librivox-1samuel-rv-es": {
+   "veredicto": "OK",
+   "motivo": "Página de LibriVox existe (200): Joyfull, 2:46:30, coincide con la ficha; 1S 1-31."
+  },
+  "audio-librivox-1samuel-kjv-en": {
+   "veredicto": "OK",
+   "motivo": "Página de LibriVox existe (200): Joy Chan, 2:37:04, coincide; 1S 1-31."
+  },
+  "video-bp-1samuel-en": {
+   "veredicto": "OK",
+   "motivo": "oEmbed 200: «Book of 1 Samuel Summary: A Complete Animated Overview», canal @bibleproject; resumen del libro entero."
+  },
+  "video-bp-1samuel-es": {
+   "veredicto": "RECHAZAR",
+   "motivo": "Duplicado: la página es la del mismo resumen en español que datos/originales.js ya trae incrustado (YouTube 34biq4ivs5I, oEmbed 200, canal @ProyectoBibliaOficial, mismo título «Resumen del libro de 1 Samuel»)."
+  },
+  "video-superbook-david-goliat": {
+   "veredicto": "OK",
+   "motivo": "oEmbed 200: Superbook «A Giant Adventure» T1E6, canal @SuperbookTV; cubre 1S 16-17. Serie infantil animada."
+  },
+  "video-superbook-david-saul": {
+   "veredicto": "OK",
+   "motivo": "oEmbed 200: Superbook «David and Saul» T3E7, canal @SuperbookTV; 1S 15, 16 y 18 según la ficha. Serie infantil animada."
   }
  }
 }

@@ -36,7 +36,7 @@ SALIDA = os.path.join(RAIZ, 'datos', 'recursos.js')
 CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal',
          'Pr', 'Ec', 'Cnt', 'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal']
 ORD = {b: i + 1 for i, b in enumerate(CANON)}
-ENLAZABLES = ('Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt')
+ENLAZABLES = ('Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S')
 # biblia.js usa «Rut»; app.js y la clave usan el id canónico «Rt».
 ALIAS = {'Rut': 'Rt'}
 TIPOS = ('arte', 'arqueologia', 'mapa_antiguo', 'video', 'audio', 'reconstruccion', 'ilustracion')

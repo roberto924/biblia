@@ -56,6 +56,19 @@ Licencias leídas en la API de Commons, en la ficha del Walters (CC0) y en las p
 - Videos con oEmbed: Superbook Rahab/Jericó `BYANFchuQeQ`, Gedeón `wTglXGJ0xxo`, Rut `jLhVTd-6oE4` (canal @SuperbookTV); BibleProject Rut en inglés `0h1eoBeR4Jk`. No se repitieron `49ggVrdBN_Y` ni `bCwaJz4L2nU`. La página en español de Rut quedó solo enlace: el HTML no traía id de YouTube.
 - Solo enlace, además: crátera de Laquis BM 160152 (la ficha no muestra licencia). La duración de Josué en español se fichó como 02:08:02, suma de las 24 secciones; la cabecera de LibriVox dice 00:25:33 y no cuadra con la tabla ni con el zip de 61 MB.
 
+## Quinta tanda (1 Samuel 1–31): 22 fichas
+
+16 láminas locales (Doré, Tissot, Louis de Parys, Rembrandt, plato del Met, estampa del Rijks), todas JPG bajo 400 KB. Licencias leídas en la API de Commons. LibriVox: la suma de secciones coincide con la cabecera (español 02:46:30, inglés 02:37:04).
+
+- Escena violenta: `dore-1s-17-goliat` (cabeza cortada), `dore-1s-18-lanza`, `dore-1s-31-saul`. La honda de Tissot y el plato bizantino no muestran la decapitación.
+- oEmbed: BibleProject `QJOju5Dw0V0` (panorama del libro, canal @bibleproject); Superbook `vJYnpoY86zk` (@SuperbookTV, 1S 16 y 17). La página en español de 1 Samuel quedó solo enlace: el HTML no traía id de YouTube.
+- Solo enlace también: el volumen de Khirbet Qeiyafa (Zúrich, © 2017), certeza «relación debatida». No hay foto del óstracon.
+
+## Complemento de 1 Samuel (5 fichas)
+
+El llamado (Tissot, 1S 3:4), Samuel ante Elí (Copley, 1780), la muerte de Agag (Doré, escena violenta) y David presentado a Samuel (Tissot, 1S 16:12). oEmbed de Superbook «David and Saul», `Jp0bSkNQhJ0`, canal @SuperbookTV.
+
+
 
 ### Revisión con Claude (2026-11-12): 37 fichas, 36 OK, 1 AJUSTAR, 0 RECHAZAR
 
@@ -65,3 +78,14 @@ Las 25 imágenes se vieron una a una. Licencias releídas en la API de Commons (
 - Sensibles (true, 9): `dore-jos-6-muros-jerico`, `dore-jos-6-rahab`, `dore-jue-9-abimelec`, `dore-jue-16-muerte-sanson`, `tissot-jos-10-cinco-reyes`, `tissot-jos-11-gigantes`, `walters-jue-4-jael-reymond`, `rijks-jue-cuatro-escenas-1698`.
 - No sensibles pese a su tema: `dore-jue-4-jael` (sin sangre ni estaca), `dore-jos-8-hai` (solo humo y fuego lejano), `dore-jos-10-sol`, `met-jue-16-ficha-sanson`.
 - Mapa de campañas: la imagen dice «West of Jordan» y la descripción «Jordon».
+
+### Revisión con Claude, 1 Samuel (2026-11-12): 27 fichas, 24 OK, 2 AJUSTAR, 1 RECHAZAR
+
+Las 20 imágenes se vieron una a una y se cotejaron con RV1909 (`datos/biblia.js`). Commons releído por API para las 20 (Doré, Tissot, Copley y Rembrandt: Public domain; Rijksmuseum y Met: CC0; Parys: CC BY-SA 4.0, archivo de Phillip Medhurst). Videos con oEmbed 200 y canal correcto; las dos páginas de LibriVox y la de BibleProject en español existen. El DOI de ZORA (Qeiyafa) no respondió desde aquí.
+
+- AJUSTAR `tissot-1s-6-arca` -> 1S 6:10-12: solo se ve el carro con vacas y el arca; la consulta de los filisteos no. La descripción dice «consultan»; debe decir que la despiden.
+- AJUSTAR `rembrandt-1s-16-saul-david`: refs bien, pero Commons rotula «Rembrandt or workshop»; el autor de la ficha debe decir «Rembrandt o taller».
+- RECHAZAR `video-bp-1samuel-es`: duplicado del video en español ya incrustado en `originales.js` (34biq4ivs5I).
+- Sensibles (true, 4): `rijks-1s-5-dagon` (varios desnudos masculinos), `dore-1s-15-agag` (ejecución), `dore-1s-17-goliat` (cabeza cortada), `dore-1s-31-saul` (caídos en Gilboa).
+- No sensibles pese a lo marcado por Cursor: `dore-1s-18-lanza` (lanzazo sin sangre ni herida) y `dore-1s-28-endor` (sombría, con espectro y serpientes, sin sangre; duda abierta).
+- Parys: la atribución exige nombrar a Medhurst y CC BY-SA 4.0; la ficha ya lo hace, conviene enlazar la licencia al mostrarla.

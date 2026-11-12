@@ -147,6 +147,24 @@ No abrí en esta pasada a Albright, a Kenyon ni a Bryant Wood. La postura «dest
 
 ---
 
+## El paso a la monarquía (Hierro I–IIA)
+
+> **Esto es debate, no una fecha del texto.** 1 Samuel no da un año a. C. Lo que sigue sale del volumen abierto en Zúrich. No elige una postura ni identifica a Saúl o a David con un muro.
+
+**El yacimiento.** *Khirbet Qeiyafa in the Shephelah*, editado por Silvia Schroer y Stefan Münger (Friburgo / Gotinga, 2017), PDF en la Universidad de Zúrich, https://doi.org/10.5167/uzh-137143 — **[A, leí el PDF]**. El prólogo dice: excavación 2007-2011 de Yosef Garfinkel y Saar Ganor (Universidad Hebrea e Israel Antiquities Authority); un óstracon desató la controversia; el sitio está a la entrada del valle de Ela, con muralla de casamatas y dos puertas, y la ocupación principal duró apenas medio siglo. La fecha y el enlace con una monarquía judea temprana «son materia de debate intenso».
+
+**Las posturas, dentro de ese mismo libro.**
+
+- **Garfinkel (informe del excavador):** con huesos de aceituna quemados, la ciudad del Hierro IIA termina hacia 1020-980 a. C. Defiende que el sitio es judeo (casas adosadas a la casamata, como en otros sitios que él sitúa en Judá) y que la mejor identificación es Saaraim, «dos puertas», citado en 1 Samuel 17:52, junto al valle de Ela. Resume la cronología baja (Finkelstein 1996): si la urbanización llega solo a fines del siglo X, David y Salomón habrían sido jefes tribales y no reyes de un reino. Él sostiene lo contrario a partir de este yacimiento.
+- **Otras lecturas que el propio capítulo de Garfinkel enumera:** adscripción al reino de Israel (Finkelstein 2013), a una entidad local no identificada (Lehmann y Niemann 2014), o filistea (Na’aman 2010; Lederman y Bunimovitz 2014). También anota la crítica de Finkelstein y Piasetzky (2010) al promedio de las primeras fechas de radiocarbono.
+- **Aren Maeir, en el mismo volumen:** acepta, con reservas, el carácter judeo «a falta de una solución mejor», y no da por hecha Saaraim: el final «-áyim» no prueba el dual, y el argumento de «el único sitio con dos puertas» quedó desmentido en Laquis. Otro capítulo del libro dice que la falta de imágenes de culto y de huesos de cerdo no basta para afirmar que los habitantes eran judeos, y cuestiona el vínculo directo con David.
+
+Nada de esto es el combate de 1 Samuel 17. Es el debate sobre una ciudad fortificada en la boca de ese valle.
+
+**Lo que no abrí.** Pesas «pim», relieves de Medinet Habu, Tel Shiloh, Bet-semes, Asdod, Ecrón, Gat (Tell es-Safi), Gabaa (Tell el-Ful) y el muro de Bet-sán. La ficha del plato bizantino del Met agotó el tiempo.
+
+---
+
 ## Cómo leer este contexto junto al texto bíblico
 
 - Génesis y Éxodo **no dan fechas a. C.** El texto cuenta generaciones, edades y duraciones, pero no ancla ningún acontecimiento a un año del calendario actual. Las fechas a. C. de este documento pertenecen a la cronología de egiptólogos y asiriólogos, no al texto.

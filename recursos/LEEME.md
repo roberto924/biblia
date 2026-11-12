@@ -1,37 +1,37 @@
 # Cómo se armó este catálogo
 
-Investigación para acompañar la lectura. No modifica la aplicación. Cada ficha sale de una página abierta (museo, Wikimedia Commons, LibriVox, BibleProject o el canal oficial de Superbook). La licencia que se publica es la que devolvió la API de Commons (`LicenseShortName`), la ficha del museo o la página de términos, no una suposición. En noviembre de 2026 se añadieron Josué, Jueces y Rut.
+Investigación para acompañar la lectura. No modifica la aplicación. Cada ficha sale de una página abierta (museo, Wikimedia Commons, LibriVox, BibleProject, Superbook o un repositorio universitario). La licencia que se publica es la que devolvió la fuente, no una suposición. En noviembre de 2026 se añadieron Josué, Jueces, Rut y 1 Samuel.
 
 Las 13 secciones de lectura del plan (6 de Génesis y 7 de Éxodo) tienen al menos tres imágenes locales.
 
 ## Totales
 
-179 fichas en `catalogo.json`. 123 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó. El texto reunido para ChatGPT es `PARA-CHATGPT.md` (no incluye las fichas añadidas después de Génesis, Éxodo y los Salmos).
+206 fichas en `catalogo.json`. 143 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó. El texto reunido para ChatGPT es `PARA-CHATGPT.md` (no incluye las fichas añadidas después de Génesis, Éxodo y los Salmos).
 
 | Tipo | Fichas |
 | --- | ---: |
-| Arte | 107 |
-| Arqueología | 20 |
+| Arte | 127 |
+| Arqueología | 21 |
 | Mapas antiguos | 16 |
-| Video | 20 |
-| Audio | 12 |
+| Video | 24 |
+| Audio | 14 |
 | Reconstrucción | 4 |
 
-Referencias (una ficha puede citar más de un libro): Génesis 59, Éxodo 58, Levítico 4, Números 21, Deuteronomio 6, Josué 22, Jueces 14, Rut 8, Salmos 6.
+Referencias (una ficha puede citar más de un libro): Génesis 59, Éxodo 58, Levítico 4, Números 21, Deuteronomio 6, Josué 22, Jueces 14, Rut 8, 1 Samuel 27, Salmos 6.
 
 | Uso | Fichas |
 | --- | ---: |
-| Descargable (123 imágenes locales y 11 audios de LibriVox, sin archivo de audio guardado) | 134 |
-| Solo enlace | 30 |
-| Incrustable (YouTube respondió al oEmbed con título y canal) | 15 |
+| Descargable (143 imágenes locales y 13 audios de LibriVox, sin archivo de audio guardado) | 156 |
+| Solo enlace | 32 |
+| Incrustable (YouTube respondió al oEmbed con título y canal) | 18 |
 
 | Licencia | Fichas |
 | --- | ---: |
-| Dominio público | 93 |
-| CC BY-SA 4.0 | 34 |
-| Derechos reservados | 23 |
+| Dominio público | 112 |
+| CC BY-SA 4.0 | 35 |
+| Derechos reservados | 28 |
 | desconocida | 19 |
-| CC0 | 7 |
+| CC0 | 9 |
 | CC BY-SA 3.0 | 2 |
 | CC BY 4.0 | 1 |
 
@@ -57,6 +57,7 @@ No hay descargas con NC, ND o derechos reservados. Las fichas del British Museum
 - Mapas de la Library of Congress, la BNE, Gallica y David Rumsey: solo enlace. En la LoC la ficha dice que no conoce restricciones de copyright en Estados Unidos para mapas anteriores a 1922; no se pudo bajar el JPEG. En la BNE y en Rumsey la ficha consultada no cede una licencia abierta explícita.
 - La datación del éxodo (siglo XV a. C., siglo XIII a. C., o relato no histórico en esos términos) está en `contexto-historico.md` como debate, no como fecha.
 - Josué, Jueces y Rut: no fiché Schnorr (esas búsquedas no devolvieron láminas). El mapa de Madaba tiene fotos en Commons con CC BY-SA 3.0, pero no comprobé qué fragmento muestra Jericó, Guilgal o Belén, y no lo fiché. No abrí una ficha de cerámica filistea: la crátera del British Museum 160152 es bícroma del Bronce tardío I, de Laquis, no filistea. Tel es-Sultan, et-Tell, Hazor, Silo, Gabaón, Tel Qasile y Belén quedaron sin ficha (la API de categorías de Commons respondió 429). Siquem (EA 252) y la estela de Merneptah ya estaban en el catálogo, con refs de Génesis y de Éxodo; no las dupliqué. No hay video por capítulo. En la guía de Superbook que abrí no apareció un episodio de Sansón. Los panoramas de Josué y de Jueces de Proyecto Biblia no se repiten: oEmbed confirmó que son `49ggVrdBN_Y` y `bCwaJz4L2nU`. La página en español de Rut no traía id de YouTube.
+- 1 Samuel: hay una xilografía de Schnorr (placa 95, 1851-1860, dominio público) cuyo archivo no dice qué escena es, y no la fiché. Caravaggio, Salvator Rosa y Benjamin West quedaron en un 429. No hay mapa anterior a 1900 comprobado de Silo, Ramá, Gabaa, el valle de Ela, Siclag o Gilboa. Las fotos de pesas «pim» en Commons son de colección privada, sin museo ni inventario. No abrí ficha de Medinet Habu, Tel Shiloh, Bet-semes, Asdod, Ecrón, Gat ni Tell el-Ful. Siguen sin lámina el carro del arca en Bet-semes, la unción de Saúl, Abigail y el campamento de 1 Samuel 26.
 
 ## Material de trabajo
 
@@ -327,4 +328,49 @@ Con escena de esta tanda (arte): Jos 1, 5, 6, 7, 8, 10 y 11; Jue 3, 4, 5, 7, 9, 
 Sin video de pasaje: Jos 1, Jos 3, Jos 4, Jos 7, Jos 8, Jos 9, Jos 10, Jos 11, Jos 12, Jos 13, Jos 14, Jos 15, Jos 16, Jos 17, Jos 18, Jos 19, Jos 20, Jos 21, Jos 22, Jos 23, Jos 24, Jue 1, Jue 2, Jue 3, Jue 4, Jue 5, Jue 9, Jue 10, Jue 11, Jue 12, Jue 13, Jue 14, Jue 15, Jue 16, Jue 17, Jue 18, Jue 19, Jue 20, Jue 21
 
 Sin imagen: Jos 13, Jos 14, Jos 15, Jos 16, Jos 17, Jos 18, Jos 19, Jos 20, Jos 21, Jos 22, Jos 23, Jos 24, Jue 1, Jue 2, Jue 6, Jue 8, Jue 10, Jue 12, Jue 15, Jue 17, Jue 18, Jue 19, Jue 20, Jue 21, Rut 3, Rut 4
+
+## Cobertura por capítulo (1 S 1–31)
+
+Misma regla: una imagen cuenta si el archivo está en `imagenes/` y la ficha cita ese capítulo. Un video cuenta solo si sus refs cubren el capítulo y no más de ocho. Los panoramas de todo 1 Samuel (31 capítulos) no se reparten capítulo por capítulo.
+
+Con lámina local: 1S 1, 3, 5, 6, 9, 15, 16, 17, 18, 19, 20, 24, 28 y 31. Sin lámina: 1S 2, 4, 7, 8, 10–14, 21–23, 25–27, 29 y 30. Videos de pasaje: Superbook, capítulos 15, 16, 17 y 18. Los panoramas del libro no entran en la tabla.
+
+| Capítulo | Videos de pasaje | Imágenes |
+| --- | ---: | ---: |
+| 1S 1 | 0 | 1 |
+| 1S 2 | 0 | 0 |
+| 1S 3 | 0 | 2 |
+| 1S 4 | 0 | 0 |
+| 1S 5 | 0 | 2 |
+| 1S 6 | 0 | 1 |
+| 1S 7 | 0 | 0 |
+| 1S 8 | 0 | 0 |
+| 1S 9 | 0 | 1 |
+| 1S 10 | 0 | 0 |
+| 1S 11 | 0 | 0 |
+| 1S 12 | 0 | 0 |
+| 1S 13 | 0 | 0 |
+| 1S 14 | 0 | 0 |
+| 1S 15 | 1 | 1 |
+| 1S 16 | 2 | 3 |
+| 1S 17 | 1 | 3 |
+| 1S 18 | 1 | 1 |
+| 1S 19 | 0 | 1 |
+| 1S 20 | 0 | 1 |
+| 1S 21 | 0 | 0 |
+| 1S 22 | 0 | 0 |
+| 1S 23 | 0 | 0 |
+| 1S 24 | 0 | 1 |
+| 1S 25 | 0 | 0 |
+| 1S 26 | 0 | 0 |
+| 1S 27 | 0 | 0 |
+| 1S 28 | 0 | 1 |
+| 1S 29 | 0 | 0 |
+| 1S 30 | 0 | 0 |
+| 1S 31 | 0 | 1 |
+
+Sin video de pasaje: 1S 1, 1S 2, 1S 3, 1S 4, 1S 5, 1S 6, 1S 7, 1S 8, 1S 9, 1S 10, 1S 11, 1S 12, 1S 13, 1S 14, 1S 19, 1S 20, 1S 21, 1S 22, 1S 23, 1S 24, 1S 25, 1S 26, 1S 27, 1S 28, 1S 29, 1S 30, 1S 31
+
+Sin imagen: 1S 2, 1S 4, 1S 7, 1S 8, 1S 10, 1S 11, 1S 12, 1S 13, 1S 14, 1S 21, 1S 22, 1S 23, 1S 25, 1S 26, 1S 27, 1S 29, 1S 30
+
 
