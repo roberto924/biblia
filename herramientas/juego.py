@@ -93,6 +93,17 @@ HECHOS = {
         "principal": [("Boaz_1", "Rut", "Rut 2"), ("Ruth_1", "Rut", "Rut 1"), ("Naomi_1", "Rut", "Rut 1")],
         "sin_aparicion": [("David_1", "Rut 4:17")],   # solo «padre de David»: mención, no aparición
     },
+    "1S": {
+        "genealogia": [("1S 1:1", "1S 1:1"), ("1S 9:1", "1S 9:1"), ("1S 14:3", "1S 14:3"), ("1S 14:49", "1S 14:51"),
+                       ("1S 17:13", "1S 17:13")],
+        "aparece": [("Samuel_2", "1S 3:4"), ("David_1", "1S 17:50"), ("Hannah_1", "1S 1:10")],
+        "objeto_en": [("1S 17:40", "honda y cinco piedras de David"), ("1S 6:4", "hemorroides y ratones de oro")],
+        "escenario_lugar": ["valle-de-ela"],
+        # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal)
+        "principal": [("Samuel_2", "1S", "1S 3"), ("Saul_1", "1S", "1S 10"), ("David_1", "1S", "1S 16"),
+                      ("Jonathan_2", "1S", "1S 14"), ("Hannah_1", "1S", "1S 1")],
+        "sin_aparicion": [("Moses_1", "1S 12:6")],   # Samuel solo lo recuerda: mención, no aparición
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")
@@ -308,8 +319,10 @@ def construir(fuentes, biblia, tab):
             d = pj.setdefault(pid, {"_ap": [], "menciones_posteriores": [], "resumen": "", "datos": [], "externo": []})
             d["_ap"] += ap
             d["menciones_posteriores"] += mp
-            if not d["resumen"] and e.get("resumen"):
+            # El resumen sale del primer libro donde actúa (con apariciones); si solo se le nombra, del primero.
+            if e.get("resumen") and (not d["resumen"] or (ap and not d.get("_res_ap"))):
                 d["resumen"] = e["resumen"]
+                d["_res_ap"] = bool(ap)
             d["datos"] += datos_ok(e.get("datos", []), ruta)
             d["externo"] += externo_ok(e.get("externo", []), ruta)
 

@@ -835,7 +835,8 @@ if (existsSync(real)) {
   }
   if ((D2.libros || []).some(l => l.id === 'Rut')) {
     prueba('Rut: selector, 4 secciones, lector sin huecos (85 versículos) y lectura en orden después de Jueces', () => {
-      assert.equal(j(N2.libros(D2)).pop().nombre, 'Rut'); assert.equal(N2.nombreLibro(D2, 'Rut'), 'Rut');
+      const LB = j(N2.libros(D2)), iR = LB.findIndex(l => l.nombre === 'Rut');
+      assert.ok(iR > 0 && LB[iR - 1].nombre === 'Jueces', 'Rut va después de Jueces'); assert.equal(N2.nombreLibro(D2, 'Rut'), 'Rut');
       assert.ok(N2.clave('Rut 1:1') > N2.clave('Jue 21:25'));
       const s = j(N2.seccionesPlan(D2, ['rut-01'], 'rut-02', 'Rut'));
       assert.equal(s.length, 4);
@@ -863,6 +864,51 @@ if (existsSync(real)) {
       const cr = cargar(rc6, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
       assert.equal(NC.marcaDe(CR, 'Rut 3:7').categoria, 'sexual'); assert.equal(NC.marcaDe(CR, 'Rut 3:7').nivel, 'medio');
       assert.equal(NC.marcaDe(CR, 'Rut 1:16'), null); assert.equal(NC.marcaDe(CR, 'Rut 4:13'), null);
+    });
+  }
+  if ((D2.libros || []).some(l => l.id === '1S')) {
+    prueba('1 Samuel: id con dígito («1S»): referencias, rangos, nombre, enlaces y pasajes 1s-NN', () => {
+      assert.deepEqual(j(N2.parseRef('1S 3:4')), { libro: '1S', cap: 3, v: 4 });
+      assert.deepEqual(j(N2.parseRef('1 Samuel 3:4')), { libro: '1S', cap: 3, v: 4 }, 'el nombre con espacio también');
+      assert.equal(N2.clave('1S 1:1') > N2.clave('Rut 4:22'), true); assert.equal(N2.clave('1S 31:13') < N2.clave('2S 1:1'), true);
+      const r = N2.rangoClaves('1S 4:19-21'); assert.equal(r.a, N2.clave('1S 4:19')); assert.equal(r.b, N2.clave('1S 4:21'));
+      assert.equal(N2.nombreLibro(D2, '1S'), '1 Samuel'); assert.equal(j(N2.libros(D2)).pop().id, '1S');
+      assert.equal(N2.libroDe({ inicio: '1S 1:1' }), '1S');
+      const p = N2.pasajeDe(D2, '1S 17:49'); assert.equal(p.id, '1s-31'); assert.equal(N2.libroDe(p), '1S');
+      assert.equal(N2.pasajeDe(D2, '1S 24:1').id, N2.pasajeDe(D2, '1S 24:22').id);
+    });
+    prueba('1 Samuel: 9 secciones, lector sin huecos (810 versículos; 23:29 vacío con nota), lectura en orden y tiempo tras Rut', () => {
+      const ps = j(N2.pasajes(D2)), i = ps.findIndex(p => p.id === '1s-01');
+      assert.equal(ps[i - 1].id, 'rut-07', '1s-01 va justo después del último de Rut');
+      assert.equal(j(N2.seccionesPlan(D2, ['1s-01'], '1s-02', '1S')).length, 9);
+      const vs = ps.filter(p => N2.libroDe(p) === '1S').flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 810); assert.equal(new Set(vs.map(v => v.ref)).size, 810);
+      const v29 = vs.find(v => v.ref === '1S 23:29'); assert.equal(v29.texto, ''); assert.ok(/1S 24:1/.test(v29.nota));
+      assert.ok(/^ENTONCES David subió/.test(vs.find(v => v.ref === '1S 24:1').texto), 'la RV1909 numera 24 como el hebreo');
+      const antes = ps.slice(0, i).map(p => p.id), A = N2.accesibles(D2, antes);
+      assert.equal(N2.frontera(D2, antes).id, '1s-01');
+      assert.ok(A.ref('1S 1:8') && !A.ref('1S 1:9') && !A.pasaje('1s-02'), '1 Samuel se abre pasaje a pasaje');
+      const pal = N2.palabrasPasaje(D2, ps[i]); assert.ok(pal > 150);
+      assert.equal(N2.segundosMinimos(pal, { tipo: 'nino' }), Math.ceil(pal / 150 * 60));
+    });
+    prueba('1 Samuel: personas en el lector (Finees ≠ Nm 25, Bedán = Barac inferido, Isúi/Abinadab) y mapa (Ramá, En-gadi en 24:1)', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => x.ref === r); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona || x.lugar).map(x => [x.texto, x.persona || x.lugar]); };
+      assert.deepEqual(seg('1S 1:3').filter(x => x[1] !== 'siloh'), [['Eli', 'Eli_1'], ['Ophni', 'Hophni_1'], ['Phinees', 'Phinehas_2']]);
+      assert.ok(seg('1S 12:11').some(x => x[0] === 'Bedán' && x[1] === 'Barak_1'));
+      assert.deepEqual(seg('1S 31:2').filter(x => x[0] === 'Abinadab'), [['Abinadab', 'Ishvi_2']]);
+      assert.ok(seg('1S 1:1').some(x => x[1] === 'rama-de-samuel') && seg('1S 24:1').some(x => x[1] === 'engedi'));
+      const R = new Set(D2.relaciones.map(x => `${x.de}>${x.a}>${x.tipo}`));
+      ['Jesse_1>David_1>padre', 'Kish_1>Saul_1>padre', 'Saul_1>Jonathan_2>padre', 'Eli_1>Phinehas_2>padre', 'Phinehas_2>Ichabod_1>padre'].forEach(k => assert.ok(R.has(k), k));
+      const P = Object.fromEntries(D2.personas.map(x => [x.id, x]));
+      assert.ok(P.David_1.refs.includes('Rut 4:17') && P.David_1.refs.includes('1S 16:13'), 'David de Rut 4 = el de 1 S');
+      assert.ok(!P.Phinehas_1.refs.some(r => r.startsWith('1S ')) && !P.Jonathan_1.refs.some(r => r.startsWith('1S ')));
+    });
+    const rc7 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc7)) prueba('1 Samuel: marcas de contenido (Goliat alto, Nob alto, Endor sin marca)', () => {
+      const cr = cargar(rc7, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      assert.equal(NC.marcaDe(CR, '1S 17:51').nivel, 'alto'); assert.equal(NC.marcaDe(CR, '1S 22:19').categoria, 'crueldad');
+      assert.equal(NC.marcaDe(CR, '1S 2:22').categoria, 'sexual'); assert.equal(NC.marcaDe(CR, '1S 28:12'), null);
+      assert.equal(NC.marcaDe(CR, '1S 31:4').nivel, 'alto');
     });
   }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');

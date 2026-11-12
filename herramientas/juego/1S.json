@@ -1,0 +1,6195 @@
+{
+ "libro": "1S",
+ "genealogias": [
+  {
+   "id": "1s-elcana-hasta-suf",
+   "inicio": "1S 1:1",
+   "fin": "1S 1:1",
+   "titulo": "Los antepasados de Elcana: Elcana, Jeroham, Eliú, Tohu y Suf",
+   "cita": "hijo de Jeroham, hijo de Eliú, hijo de Thohu, hijo de Suph"
+  },
+  {
+   "id": "1s-cis-hasta-afia",
+   "inicio": "1S 9:1",
+   "fin": "1S 9:1",
+   "titulo": "Los antepasados de Cis: Cis, Abiel, Zeror, Becorat y Afía",
+   "cita": "hijo de Abiel, hijo de Seor, hijo de Bechôra, hijo de Aphia"
+  },
+  {
+   "id": "1s-ahias-hijo-de-ahitob",
+   "inicio": "1S 14:3",
+   "fin": "1S 14:3",
+   "titulo": "Ahías, hijo de Ahitob, hermano de Icabod, hijo de Finees, hijo de Elí",
+   "cita": "Achîas hijo de Achîtob, hermano de Ichâbod, hijo de Phinees, hijo de Eli"
+  },
+  {
+   "id": "1s-casa-de-saul",
+   "inicio": "1S 14:49",
+   "fin": "1S 14:51",
+   "titulo": "La casa de Saúl: sus hijos e hijas, su mujer, Abner, Ner, Cis y Abiel",
+   "cita": "Y los hijos de Saúl fueron Jonathán, Isui, y Melchi-sua"
+  },
+  {
+   "id": "1s-hijos-de-isai",
+   "inicio": "1S 17:13",
+   "fin": "1S 17:13",
+   "titulo": "Los tres hijos mayores de Isaí: Eliab, Abinadab y Sama",
+   "cita": "Eliab el primogénito, el segundo Abinadab, y el tercero Samma"
+  }
+ ],
+ "historias": [
+  {
+   "id": "ana-y-nacimiento-de-samuel",
+   "titulo": "Elcana, Ana y Penina; el voto de Ana, el nacimiento de Samuel y su entrega en Silo",
+   "inicio": "1S 1:1",
+   "fin": "1S 1:28",
+   "principales": [
+    "Elkanah_2",
+    "Hannah_1",
+    "Peninnah_1"
+   ]
+  },
+  {
+   "id": "cantico-de-ana",
+   "titulo": "El cántico de Ana",
+   "inicio": "1S 2:1",
+   "fin": "1S 2:11",
+   "principales": [
+    "Hannah_1"
+   ]
+  },
+  {
+   "id": "hijos-de-eli-y-joven-samuel",
+   "titulo": "Los hijos de Elí y el joven Samuel",
+   "inicio": "1S 2:12",
+   "fin": "1S 2:26",
+   "principales": [
+    "Eli_1",
+    "Hophni_1",
+    "Phinehas_2"
+   ]
+  },
+  {
+   "id": "varon-de-dios-contra-la-casa-de-eli",
+   "titulo": "El varón de Dios contra la casa de Elí",
+   "inicio": "1S 2:27",
+   "fin": "1S 2:36",
+   "principales": [
+    "Eli_1"
+   ]
+  },
+  {
+   "id": "llamado-de-samuel",
+   "titulo": "El llamado de Samuel: «Habla, que tu siervo oye»",
+   "inicio": "1S 3:1",
+   "fin": "1S 3:21",
+   "principales": [
+    "Samuel_2",
+    "Eli_1"
+   ]
+  },
+  {
+   "id": "arca-tomada-en-afec",
+   "titulo": "Israel y los filisteos: el arca tomada, muertos Ofni y Finees",
+   "inicio": "1S 4:1",
+   "fin": "1S 4:11",
+   "principales": [
+    "Hophni_1",
+    "Phinehas_2"
+   ]
+  },
+  {
+   "id": "muerte-de-eli-e-icabod",
+   "titulo": "La muerte de Elí y el nacimiento de Icabod",
+   "inicio": "1S 4:12",
+   "fin": "1S 4:22",
+   "principales": [
+    "Eli_1",
+    "Ichabod_1"
+   ]
+  },
+  {
+   "id": "arca-en-asdod-gat-y-ecron",
+   "titulo": "Dagón y las hemorroides: el arca en Asdod, Gat y Ecrón",
+   "inicio": "1S 5:1",
+   "fin": "1S 5:12",
+   "principales": []
+  },
+  {
+   "id": "filisteos-devuelven-el-arca",
+   "titulo": "Los filisteos devuelven el arca con una ofrenda de oro",
+   "inicio": "1S 6:1",
+   "fin": "1S 6:12",
+   "principales": []
+  },
+  {
+   "id": "bet-semes-y-quiriat-jearim",
+   "titulo": "El arca en Bet-semes y en Quiriat-jearim",
+   "inicio": "1S 6:13",
+   "fin": "1S 7:2",
+   "principales": [
+    "Abinadab_1",
+    "Eleazar_2"
+   ]
+  },
+  {
+   "id": "samuel-juzga-y-eben-ezer",
+   "titulo": "Samuel convoca a Mizpa; la piedra Eben-ezer",
+   "inicio": "1S 7:3",
+   "fin": "1S 7:17",
+   "principales": [
+    "Samuel_2"
+   ]
+  },
+  {
+   "id": "israel-pide-rey",
+   "titulo": "Israel pide un rey",
+   "inicio": "1S 8:1",
+   "fin": "1S 8:22",
+   "principales": [
+    "Samuel_2",
+    "Joel_1",
+    "Abijah_1"
+   ]
+  },
+  {
+   "id": "asnas-de-cis-y-uncion-de-saul",
+   "titulo": "Las asnas de Cis, el encuentro con Samuel y la unción de Saúl",
+   "inicio": "1S 9:1",
+   "fin": "1S 10:16",
+   "principales": [
+    "Saul_1",
+    "Samuel_2"
+   ]
+  },
+  {
+   "id": "saul-elegido-en-mizpa",
+   "titulo": "Saúl elegido por suerte en Mizpa",
+   "inicio": "1S 10:17",
+   "fin": "1S 10:27",
+   "principales": [
+    "Saul_1",
+    "Samuel_2"
+   ]
+  },
+  {
+   "id": "saul-libra-a-jabes-de-galaad",
+   "titulo": "Saúl libra a Jabes de Galaad y es hecho rey en Gilgal",
+   "inicio": "1S 11:1",
+   "fin": "1S 11:15",
+   "principales": [
+    "Nahash_1"
+   ]
+  },
+  {
+   "id": "discurso-de-samuel",
+   "titulo": "El discurso de Samuel",
+   "inicio": "1S 12:1",
+   "fin": "1S 12:25",
+   "principales": [
+    "Samuel_2"
+   ]
+  },
+  {
+   "id": "holocausto-en-gilgal",
+   "titulo": "Saúl ofrece el holocausto en Gilgal",
+   "inicio": "1S 13:1",
+   "fin": "1S 13:15",
+   "principales": [
+    "Saul_1",
+    "Samuel_2"
+   ]
+  },
+  {
+   "id": "micmas-y-hazana-de-jonatan",
+   "titulo": "Micmas: los herreros, Jonatán y su paje de armas",
+   "inicio": "1S 13:16",
+   "fin": "1S 14:23",
+   "principales": [
+    "Jonathan_2",
+    "Ahijah_1"
+   ]
+  },
+  {
+   "id": "juramento-de-saul-y-la-miel",
+   "titulo": "El juramento de Saúl, la miel y la sangre",
+   "inicio": "1S 14:24",
+   "fin": "1S 14:35",
+   "principales": [
+    "Jonathan_2"
+   ]
+  },
+  {
+   "id": "jonatan-salvado-por-el-pueblo",
+   "titulo": "Jonatán señalado por suerte y salvado por el pueblo",
+   "inicio": "1S 14:36",
+   "fin": "1S 14:46",
+   "principales": []
+  },
+  {
+   "id": "guerras-y-casa-de-saul",
+   "titulo": "Las guerras y la casa de Saúl",
+   "inicio": "1S 14:47",
+   "fin": "1S 14:52",
+   "principales": []
+  },
+  {
+   "id": "saul-contra-amalec",
+   "titulo": "Saúl contra Amalec",
+   "inicio": "1S 15:1",
+   "fin": "1S 15:23",
+   "principales": []
+  },
+  {
+   "id": "rechazo-de-saul-y-muerte-de-agag",
+   "titulo": "Jehová desecha a Saúl; Agag",
+   "inicio": "1S 15:24",
+   "fin": "1S 15:35",
+   "principales": [
+    "Agag_2"
+   ]
+  },
+  {
+   "id": "samuel-unge-a-david",
+   "titulo": "Samuel unge a David en casa de Isaí",
+   "inicio": "1S 16:1",
+   "fin": "1S 16:13",
+   "principales": [
+    "Jesse_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "david-tane-el-arpa-ante-saul",
+   "titulo": "David tañe el arpa ante Saúl",
+   "inicio": "1S 16:14",
+   "fin": "1S 16:23",
+   "principales": []
+  },
+  {
+   "id": "desafio-de-goliat",
+   "titulo": "El desafío de Goliat",
+   "inicio": "1S 17:1",
+   "fin": "1S 17:11",
+   "principales": [
+    "Goliath_1"
+   ]
+  },
+  {
+   "id": "david-llega-al-campamento",
+   "titulo": "David llega al campamento y Eliab se enoja",
+   "inicio": "1S 17:12",
+   "fin": "1S 17:30",
+   "principales": [
+    "Eliab_3"
+   ]
+  },
+  {
+   "id": "david-vence-a-goliat",
+   "titulo": "David vence a Goliat",
+   "inicio": "1S 17:31",
+   "fin": "1S 17:58",
+   "principales": []
+  },
+  {
+   "id": "alianza-de-jonatan-y-david",
+   "titulo": "Jonatán y David: el alma ligada y la alianza",
+   "inicio": "1S 18:1",
+   "fin": "1S 18:5",
+   "principales": []
+  },
+  {
+   "id": "celos-de-saul",
+   "titulo": "El canto de las mujeres, los celos de Saúl y la lanza",
+   "inicio": "1S 18:6",
+   "fin": "1S 18:16",
+   "principales": []
+  },
+  {
+   "id": "merab-y-mical",
+   "titulo": "Merab y Mical: el yerno del rey",
+   "inicio": "1S 18:17",
+   "fin": "1S 18:30",
+   "principales": [
+    "Michal_1",
+    "Merab_1",
+    "Adriel_1"
+   ]
+  },
+  {
+   "id": "jonatan-intercede-por-david",
+   "titulo": "Jonatán intercede por David; otra vez la lanza",
+   "inicio": "1S 19:1",
+   "fin": "1S 19:10",
+   "principales": []
+  },
+  {
+   "id": "mical-y-la-ventana",
+   "titulo": "Mical descuelga a David por la ventana",
+   "inicio": "1S 19:11",
+   "fin": "1S 19:17",
+   "principales": []
+  },
+  {
+   "id": "najot-saul-entre-los-profetas",
+   "titulo": "Najot: ¿También Saúl entre los profetas?",
+   "inicio": "1S 19:18",
+   "fin": "1S 19:24",
+   "principales": []
+  },
+  {
+   "id": "pacto-de-david-y-jonatan",
+   "titulo": "El pacto de David y Jonatán",
+   "inicio": "1S 20:1",
+   "fin": "1S 20:23",
+   "principales": []
+  },
+  {
+   "id": "saetas-de-jonatan",
+   "titulo": "El asiento vacío y las saetas de Jonatán",
+   "inicio": "1S 20:24",
+   "fin": "1S 20:42",
+   "principales": []
+  },
+  {
+   "id": "david-en-nob",
+   "titulo": "David en Nob: los panes y la espada de Goliat",
+   "inicio": "1S 21:1",
+   "fin": "1S 21:9",
+   "principales": [
+    "Ahimelech_1"
+   ]
+  },
+  {
+   "id": "david-finge-locura-ante-aquis",
+   "titulo": "David ante Aquis en Gat",
+   "inicio": "1S 21:10",
+   "fin": "1S 21:15",
+   "principales": [
+    "Achish_1"
+   ]
+  },
+  {
+   "id": "cueva-de-adulam",
+   "titulo": "La cueva de Adulam; Gad profeta",
+   "inicio": "1S 22:1",
+   "fin": "1S 22:5",
+   "principales": [
+    "Gad_2"
+   ]
+  },
+  {
+   "id": "matanza-de-nob",
+   "titulo": "Doeg y la matanza de Nob; huye Abiatar",
+   "inicio": "1S 22:6",
+   "fin": "1S 22:23",
+   "principales": [
+    "Doeg_1",
+    "Abiathar_1"
+   ]
+  },
+  {
+   "id": "david-libra-a-keila",
+   "titulo": "David libra a Keila",
+   "inicio": "1S 23:1",
+   "fin": "1S 23:14",
+   "principales": []
+  },
+  {
+   "id": "zif-y-maon",
+   "titulo": "Zif y Maón; Jonatán fortalece a David",
+   "inicio": "1S 23:15",
+   "fin": "1S 23:29",
+   "principales": []
+  },
+  {
+   "id": "david-perdona-a-saul-en-en-gadi",
+   "titulo": "David perdona a Saúl en la cueva de En-gadi",
+   "inicio": "1S 24:1",
+   "fin": "1S 24:22",
+   "principales": []
+  },
+  {
+   "id": "muerte-de-samuel-y-nabal",
+   "titulo": "Muere Samuel; David y Nabal",
+   "inicio": "1S 25:1",
+   "fin": "1S 25:22",
+   "principales": [
+    "Nabal_1",
+    "Abigail_1"
+   ]
+  },
+  {
+   "id": "abigail-y-david",
+   "titulo": "Abigail sale al encuentro de David; las mujeres de David",
+   "inicio": "1S 25:23",
+   "fin": "1S 25:44",
+   "principales": []
+  },
+  {
+   "id": "lanza-y-botija-de-saul",
+   "titulo": "La lanza y la botija de agua de Saúl",
+   "inicio": "1S 26:1",
+   "fin": "1S 26:25",
+   "principales": [
+    "Abishai_1",
+    "Abner_1"
+   ]
+  },
+  {
+   "id": "siclag-con-aquis",
+   "titulo": "David entre los filisteos: Siclag",
+   "inicio": "1S 27:1",
+   "fin": "1S 27:12",
+   "principales": []
+  },
+  {
+   "id": "saul-y-la-adivina-de-endor",
+   "titulo": "Saúl y la mujer de Endor",
+   "inicio": "1S 28:1",
+   "fin": "1S 28:25",
+   "principales": []
+  },
+  {
+   "id": "filisteos-despiden-a-david",
+   "titulo": "Los príncipes filisteos despiden a David",
+   "inicio": "1S 29:1",
+   "fin": "1S 29:11",
+   "principales": []
+  },
+  {
+   "id": "siclag-incendiada",
+   "titulo": "Siclag incendiada y las mujeres cautivas",
+   "inicio": "1S 30:1",
+   "fin": "1S 30:15",
+   "principales": []
+  },
+  {
+   "id": "david-recobra-todo",
+   "titulo": "David recobra todo; el reparto del botín",
+   "inicio": "1S 30:16",
+   "fin": "1S 30:31",
+   "principales": []
+  },
+  {
+   "id": "muerte-de-saul-en-gilboa",
+   "titulo": "La muerte de Saúl y de sus hijos en Gilboa; Jabes",
+   "inicio": "1S 31:1",
+   "fin": "1S 31:13",
+   "principales": []
+  }
+ ],
+ "personajes": {
+  "Elihu_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Abuelo de Elcana; solo se nombra en la lista de 1:1.",
+   "datos": [
+    {
+     "texto": "Elcana es «hijo de Jeroham, hijo de Eliú»",
+     "certeza": "texto",
+     "ref": "1S 1:1",
+     "cita": "hijo de Eliú"
+    }
+   ],
+   "externo": []
+  },
+  "Jeroham_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Elcana; solo se nombra en la lista de 1:1.",
+   "datos": [
+    {
+     "texto": "Elcana es «hijo de Jeroham»",
+     "certeza": "texto",
+     "ref": "1S 1:1",
+     "cita": "hijo de Jeroham"
+    }
+   ],
+   "externo": []
+  },
+  "Tohu_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Bisabuelo de Elcana; solo se nombra en la lista de 1:1.",
+   "datos": [
+    {
+     "texto": "Eliú es «hijo de Thohu»",
+     "certeza": "texto",
+     "ref": "1S 1:1",
+     "cita": "hijo de Thohu"
+    }
+   ],
+   "externo": []
+  },
+  "Zuph_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Tatarabuelo de Elcana; solo se nombra en la lista de 1:1.",
+   "datos": [
+    {
+     "texto": "Thohu es «hijo de Suph, Ephrateo»",
+     "certeza": "texto",
+     "ref": "1S 1:1",
+     "cita": "hijo de Suph"
+    }
+   ],
+   "externo": []
+  },
+  "Elkanah_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:2",
+     "fin": "1S 1:8"
+    },
+    {
+     "inicio": "1S 1:19",
+     "fin": "1S 1:19"
+    },
+    {
+     "inicio": "1S 1:21",
+     "fin": "1S 1:23"
+    },
+    {
+     "inicio": "1S 2:11",
+     "fin": "1S 2:11"
+    },
+    {
+     "inicio": "1S 2:20",
+     "fin": "1S 2:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Varón efrateo de Ramataim; marido de Ana y de Penina, sube cada año a Silo a sacrificar. Padre de Samuel.",
+   "datos": [
+    {
+     "texto": "De Ramataim de Sofim, del monte de Efraín, efrateo",
+     "certeza": "texto",
+     "ref": "1S 1:1",
+     "cita": "Ramathaim de Sophim, del monte de Ephraim"
+    },
+    {
+     "texto": "Tiene dos mujeres, Ana y Penina",
+     "certeza": "texto",
+     "ref": "1S 1:2",
+     "cita": "el nombre de la una era Anna, y el nombre de la otra Peninna"
+    },
+    {
+     "texto": "Sube cada año a Silo a adorar y sacrificar",
+     "certeza": "texto",
+     "ref": "1S 1:3",
+     "cita": "á adorar y sacrificar á Jehová de los ejércitos en Silo"
+    },
+    {
+     "texto": "A Ana le da una parte escogida porque la amaba",
+     "certeza": "texto",
+     "ref": "1S 1:5",
+     "cita": "á Anna daba una parte escogida"
+    },
+    {
+     "texto": "Consuela a Ana: «¿No te soy yo mejor que diez hijos?»",
+     "certeza": "texto",
+     "ref": "1S 1:8",
+     "cita": "¿No te soy yo mejor que diez hijos?"
+    },
+    {
+     "texto": "Conoce a Ana y Jehová se acuerda de ella",
+     "certeza": "texto",
+     "ref": "1S 1:19",
+     "cita": "Elcana conoció á Anna su mujer"
+    },
+    {
+     "texto": "Elí lo bendice a él y a su mujer",
+     "certeza": "texto",
+     "ref": "1S 2:20",
+     "cita": "Eli bendijo á Elcana y á su mujer"
+    },
+    {
+     "texto": "Su padre es Jeroham (1:1); el texto no lo relaciona con el Elcana de Éxodo 6:24",
+     "certeza": "inferido",
+     "ref": "1S 1:1",
+     "cita": "hijo de Jeroham"
+    }
+   ],
+   "externo": []
+  },
+  "Hannah_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:2",
+     "fin": "1S 1:28"
+    },
+    {
+     "inicio": "1S 2:1",
+     "fin": "1S 2:10"
+    },
+    {
+     "inicio": "1S 2:19",
+     "fin": "1S 2:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de Elcana, estéril; ora en Silo, hace voto, da a luz a Samuel y lo entrega a Jehová; su cántico (2:1-10).",
+   "datos": [
+    {
+     "texto": "Jehová había cerrado su matriz",
+     "certeza": "texto",
+     "ref": "1S 1:5",
+     "cita": "Jehová había cerrado su matriz"
+    },
+    {
+     "texto": "Su competidora la irritaba",
+     "certeza": "texto",
+     "ref": "1S 1:6",
+     "cita": "su competidora la irritaba"
+    },
+    {
+     "texto": "Ora con amargura y llora en Silo",
+     "certeza": "texto",
+     "ref": "1S 1:10",
+     "cita": "oró á Jehová, y lloró abundantemente"
+    },
+    {
+     "texto": "Hace voto: si le da un hijo varón, lo dedicará a Jehová",
+     "certeza": "texto",
+     "ref": "1S 1:11",
+     "cita": "no subirá navaja sobre su cabeza"
+    },
+    {
+     "texto": "Elí la toma por borracha",
+     "certeza": "texto",
+     "ref": "1S 1:13",
+     "cita": "túvola Eli por borracha"
+    },
+    {
+     "texto": "Dice haber derramado su alma ante Jehová",
+     "certeza": "texto",
+     "ref": "1S 1:15",
+     "cita": "he derramado mi alma delante de Jehová"
+    },
+    {
+     "texto": "Da a luz un hijo y le pone por nombre Samuel",
+     "certeza": "texto",
+     "ref": "1S 1:20",
+     "cita": "púsole por nombre Samuel"
+    },
+    {
+     "texto": "Lo lleva destetado a Silo con tres becerros, un efa de harina y una vasija de vino",
+     "certeza": "texto",
+     "ref": "1S 1:24",
+     "cita": "con tres becerros, y un epha de harina, y una vasija de vino"
+    },
+    {
+     "texto": "Lo vuelve a Jehová todos los días de su vida",
+     "certeza": "texto",
+     "ref": "1S 1:28",
+     "cita": "Yo pues le vuelvo también á Jehová"
+    },
+    {
+     "texto": "Su oración-cántico empieza «mi corazón se regocija en Jehová»",
+     "certeza": "texto",
+     "ref": "1S 2:1",
+     "cita": "mi corazón se regocija en Jehová"
+    },
+    {
+     "texto": "Cada año le hace una túnica pequeña",
+     "certeza": "texto",
+     "ref": "1S 2:19",
+     "cita": "Y hacíale su madre una túnica pequeña"
+    },
+    {
+     "texto": "Después tiene tres hijos y dos hijas",
+     "certeza": "texto",
+     "ref": "1S 2:21",
+     "cita": "parió tres hijos, y dos hijas"
+    }
+   ],
+   "externo": []
+  },
+  "Peninnah_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:2",
+     "fin": "1S 1:7"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Otra mujer de Elcana; tiene hijos e irrita a Ana.",
+   "datos": [
+    {
+     "texto": "Ella tenía hijos y Ana no",
+     "certeza": "texto",
+     "ref": "1S 1:2",
+     "cita": "Peninna tenía hijos, mas Anna no los tenía"
+    },
+    {
+     "texto": "Elcana le da su parte a ella y a todos sus hijos e hijas",
+     "certeza": "texto",
+     "ref": "1S 1:4",
+     "cita": "daba á Peninna su mujer, y á todos sus hijos y á todas sus hijas"
+    },
+    {
+     "texto": "Irritaba a Ana, enojándola y entristeciéndola",
+     "certeza": "texto",
+     "ref": "1S 1:6",
+     "cita": "su competidora la irritaba, enojándola y entristeciéndola"
+    }
+   ],
+   "externo": []
+  },
+  "Eli_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:9",
+     "fin": "1S 1:18"
+    },
+    {
+     "inicio": "1S 1:25",
+     "fin": "1S 1:28"
+    },
+    {
+     "inicio": "1S 2:11",
+     "fin": "1S 2:11"
+    },
+    {
+     "inicio": "1S 2:20",
+     "fin": "1S 2:20"
+    },
+    {
+     "inicio": "1S 2:22",
+     "fin": "1S 2:36"
+    },
+    {
+     "inicio": "1S 3:1",
+     "fin": "1S 3:18"
+    },
+    {
+     "inicio": "1S 4:13",
+     "fin": "1S 4:18"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 14:3"
+    }
+   ],
+   "resumen": "Sacerdote en Silo; toma a Ana por borracha y luego la bendice; no estorba a sus hijos; muere al oír que el arca fue tomada.",
+   "datos": [
+    {
+     "texto": "Sacerdote, sentado junto a un pilar del templo de Jehová en Silo",
+     "certeza": "texto",
+     "ref": "1S 1:9",
+     "cita": "el sacerdote Eli estaba sentado en una silla junto á un pilar del templo de Jehová"
+    },
+    {
+     "texto": "A Ana: «Ve en paz, y el Dios de Israel te otorgue la petición que le has hecho»",
+     "certeza": "texto",
+     "ref": "1S 1:17",
+     "cita": "Ve en paz, y el Dios de Israel te otorgue la petición que le has hecho"
+    },
+    {
+     "texto": "Era muy viejo y oyó lo que sus hijos hacían",
+     "certeza": "texto",
+     "ref": "1S 2:22",
+     "cita": "Eli empero era muy viejo"
+    },
+    {
+     "texto": "Reprende a sus hijos pero no le oyen",
+     "certeza": "texto",
+     "ref": "1S 2:25",
+     "cita": "Mas ellos no oyeron la voz de su padre"
+    },
+    {
+     "texto": "Un varón de Dios le anuncia el juicio sobre su casa",
+     "certeza": "texto",
+     "ref": "1S 2:27",
+     "cita": "vino un varón de Dios á Eli"
+    },
+    {
+     "texto": "Sus ojos comenzaban a oscurecerse",
+     "certeza": "texto",
+     "ref": "1S 3:2",
+     "cita": "sus ojos comenzaban á oscurecerse"
+    },
+    {
+     "texto": "Entiende que Jehová llamaba al joven Samuel",
+     "certeza": "texto",
+     "ref": "1S 3:8",
+     "cita": "Entonces entendió Eli que Jehová llamaba al joven"
+    },
+    {
+     "texto": "Jehová dice que juzgará su casa porque sus hijos se envilecieron y él no los estorbó",
+     "certeza": "texto",
+     "ref": "1S 3:13",
+     "cita": "sus hijos se han envilecido, y él no los ha estorbado"
+    },
+    {
+     "texto": "Ante el mensaje: «Jehová es; haga lo que bien le pareciere»",
+     "certeza": "texto",
+     "ref": "1S 3:18",
+     "cita": "Jehová es; haga lo que bien le pareciere"
+    },
+    {
+     "texto": "Tenía noventa y ocho años",
+     "certeza": "texto",
+     "ref": "1S 4:15",
+     "cita": "Era ya Eli de edad de noventa y ocho años"
+    },
+    {
+     "texto": "Cae de la silla al oír del arca y muere",
+     "certeza": "texto",
+     "ref": "1S 4:18",
+     "cita": "quebrósele la cerviz, y murió"
+    },
+    {
+     "texto": "Había juzgado a Israel cuarenta años",
+     "certeza": "texto",
+     "ref": "1S 4:18",
+     "cita": "Y había juzgado á Israel cuarenta años"
+    }
+   ],
+   "externo": []
+  },
+  "Hophni_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:3",
+     "fin": "1S 1:3"
+    },
+    {
+     "inicio": "1S 2:12",
+     "fin": "1S 2:17"
+    },
+    {
+     "inicio": "1S 2:22",
+     "fin": "1S 2:25"
+    },
+    {
+     "inicio": "1S 2:34",
+     "fin": "1S 2:34"
+    },
+    {
+     "inicio": "1S 4:4",
+     "fin": "1S 4:4"
+    },
+    {
+     "inicio": "1S 4:11",
+     "fin": "1S 4:11"
+    },
+    {
+     "inicio": "1S 4:17",
+     "fin": "1S 4:17"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Elí y sacerdote en Silo; el texto lo describe, junto con su hermano, como impío; muere en la batalla en que se toma el arca.",
+   "datos": [
+    {
+     "texto": "Hijos de Elí, sacerdotes de Jehová en Silo",
+     "certeza": "texto",
+     "ref": "1S 1:3",
+     "cita": "dos hijos de Eli, Ophni y Phinees, sacerdotes de Jehová"
+    },
+    {
+     "texto": "El texto no distingue entre los dos hijos: «eran hombres impíos»",
+     "certeza": "texto",
+     "ref": "1S 2:12",
+     "cita": "los hijos de Eli eran hombres impíos, y no tenían conocimiento de Jehová"
+    },
+    {
+     "texto": "Menospreciaban los sacrificios de Jehová",
+     "certeza": "texto",
+     "ref": "1S 2:17",
+     "cita": "los hombres menospreciaban los sacrificios de Jehová"
+    },
+    {
+     "texto": "Se anuncia que ambos morirán en un día",
+     "certeza": "texto",
+     "ref": "1S 2:34",
+     "cita": "ambos morirán en un día"
+    },
+    {
+     "texto": "Están con el arca en el campamento",
+     "certeza": "texto",
+     "ref": "1S 4:4",
+     "cita": "estaban allí con el arca del pacto de Dios"
+    },
+    {
+     "texto": "Mueren cuando el arca es tomada",
+     "certeza": "texto",
+     "ref": "1S 4:11",
+     "cita": "muertos los dos hijos de Eli, Ophni y Phinees"
+    }
+   ],
+   "externo": []
+  },
+  "Phinehas_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:3",
+     "fin": "1S 1:3"
+    },
+    {
+     "inicio": "1S 2:12",
+     "fin": "1S 2:17"
+    },
+    {
+     "inicio": "1S 2:22",
+     "fin": "1S 2:25"
+    },
+    {
+     "inicio": "1S 2:34",
+     "fin": "1S 2:34"
+    },
+    {
+     "inicio": "1S 4:4",
+     "fin": "1S 4:4"
+    },
+    {
+     "inicio": "1S 4:11",
+     "fin": "1S 4:11"
+    },
+    {
+     "inicio": "1S 4:17",
+     "fin": "1S 4:17"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 4:19"
+    },
+    {
+     "ref": "1S 4:21"
+    },
+    {
+     "ref": "1S 14:3"
+    }
+   ],
+   "resumen": "Hijo de Elí y sacerdote en Silo, hermano de Ofni; muere con él al ser tomada el arca. Padre de Icabod y de Ahitob (14:3). No es el Finees de Números 25.",
+   "datos": [
+    {
+     "texto": "Hijos de Elí, sacerdotes de Jehová en Silo",
+     "certeza": "texto",
+     "ref": "1S 1:3",
+     "cita": "dos hijos de Eli, Ophni y Phinees, sacerdotes de Jehová"
+    },
+    {
+     "texto": "El texto no distingue entre los dos hijos: «eran hombres impíos»",
+     "certeza": "texto",
+     "ref": "1S 2:12",
+     "cita": "los hijos de Eli eran hombres impíos, y no tenían conocimiento de Jehová"
+    },
+    {
+     "texto": "Se anuncia que ambos morirán en un día",
+     "certeza": "texto",
+     "ref": "1S 2:34",
+     "cita": "ambos morirán en un día"
+    },
+    {
+     "texto": "Está con el arca en el campamento",
+     "certeza": "texto",
+     "ref": "1S 4:4",
+     "cita": "estaban allí con el arca del pacto de Dios"
+    },
+    {
+     "texto": "Muere cuando el arca es tomada",
+     "certeza": "texto",
+     "ref": "1S 4:11",
+     "cita": "muertos los dos hijos de Eli, Ophni y Phinees"
+    },
+    {
+     "texto": "Su mujer, preñada, da a luz al oír que su marido murió",
+     "certeza": "texto",
+     "ref": "1S 4:19",
+     "cita": "la mujer de Phinees, que estaba preñada"
+    }
+   ],
+   "externo": []
+  },
+  "Samuel_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 1:20",
+     "fin": "1S 1:20"
+    },
+    {
+     "inicio": "1S 1:22",
+     "fin": "1S 1:28"
+    },
+    {
+     "inicio": "1S 2:11",
+     "fin": "1S 2:11"
+    },
+    {
+     "inicio": "1S 2:18",
+     "fin": "1S 2:21"
+    },
+    {
+     "inicio": "1S 2:26",
+     "fin": "1S 2:26"
+    },
+    {
+     "inicio": "1S 3:1",
+     "fin": "1S 4:1"
+    },
+    {
+     "inicio": "1S 7:3",
+     "fin": "1S 7:17"
+    },
+    {
+     "inicio": "1S 8:1",
+     "fin": "1S 8:22"
+    },
+    {
+     "inicio": "1S 9:14",
+     "fin": "1S 10:9"
+    },
+    {
+     "inicio": "1S 10:17",
+     "fin": "1S 10:26"
+    },
+    {
+     "inicio": "1S 11:12",
+     "fin": "1S 12:25"
+    },
+    {
+     "inicio": "1S 13:8",
+     "fin": "1S 13:15"
+    },
+    {
+     "inicio": "1S 15:1",
+     "fin": "1S 15:35"
+    },
+    {
+     "inicio": "1S 16:1",
+     "fin": "1S 16:13"
+    },
+    {
+     "inicio": "1S 19:18",
+     "fin": "1S 19:18"
+    },
+    {
+     "inicio": "1S 19:20",
+     "fin": "1S 19:24"
+    },
+    {
+     "inicio": "1S 25:1",
+     "fin": "1S 25:1"
+    },
+    {
+     "inicio": "1S 28:11",
+     "fin": "1S 28:20"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 11:7"
+    },
+    {
+     "ref": "1S 28:3"
+    }
+   ],
+   "resumen": "Hijo de Ana y de Elcana, dedicado a Jehová; sirve en Silo, es llamado por Jehová, juzga a Israel, unge a Saúl y a David. No es el Samuel de Números 34:20.",
+   "datos": [
+    {
+     "texto": "Nace de Ana, que lo pidió a Jehová",
+     "certeza": "texto",
+     "ref": "1S 1:20",
+     "cita": "púsole por nombre Samuel"
+    },
+    {
+     "texto": "Lo dedican: «todos los días que viviere, será de Jehová»",
+     "certeza": "texto",
+     "ref": "1S 1:28",
+     "cita": "todos los días que viviere, será de Jehová"
+    },
+    {
+     "texto": "Ministra de niño, vestido de un efod de lino",
+     "certeza": "texto",
+     "ref": "1S 2:18",
+     "cita": "el joven Samuel ministraba delante de Jehová, vestido de un ephod de lino"
+    },
+    {
+     "texto": "Crecía delante de Dios y de los hombres",
+     "certeza": "texto",
+     "ref": "1S 2:26",
+     "cita": "iba creciendo, y adelantando delante de Dios y delante de los hombres"
+    },
+    {
+     "texto": "Jehová lo llama de noche; no lo había conocido aún",
+     "certeza": "texto",
+     "ref": "1S 3:7",
+     "cita": "Samuel no había conocido aún á Jehová"
+    },
+    {
+     "texto": "Responde: «Habla, que tu siervo oye»",
+     "certeza": "texto",
+     "ref": "1S 3:10",
+     "cita": "Habla, que tu siervo oye"
+    },
+    {
+     "texto": "Todo Israel supo que era fiel profeta de Jehová",
+     "certeza": "texto",
+     "ref": "1S 3:20",
+     "cita": "fiel profeta de Jehová"
+    },
+    {
+     "texto": "Ofrece un cordero de leche en holocausto y Jehová le oye",
+     "certeza": "texto",
+     "ref": "1S 7:9",
+     "cita": "Samuel tomó un cordero de leche, y sacrificólo entero á Jehová en holocausto"
+    },
+    {
+     "texto": "Pone una piedra entre Mizpa y Sen y la llama Eben-ezer",
+     "certeza": "texto",
+     "ref": "1S 7:12",
+     "cita": "Hasta aquí nos ayudó Jehová"
+    },
+    {
+     "texto": "Juzgó a Israel todo el tiempo que vivió",
+     "certeza": "texto",
+     "ref": "1S 7:15",
+     "cita": "juzgó Samuel á Israel todo el tiempo que vivió"
+    },
+    {
+     "texto": "Su casa estaba en Ramá",
+     "certeza": "texto",
+     "ref": "1S 7:17",
+     "cita": "porque allí estaba su casa, y allí juzgaba á Israel"
+    },
+    {
+     "texto": "Puso a sus hijos por jueces cuando envejeció",
+     "certeza": "texto",
+     "ref": "1S 8:1",
+     "cita": "puso sus hijos por jueces sobre Israel"
+    },
+    {
+     "texto": "Se presenta a Saúl como «el vidente»",
+     "certeza": "texto",
+     "ref": "1S 9:19",
+     "cita": "Yo soy el vidente"
+    },
+    {
+     "texto": "Unge a Saúl con una ampolla de aceite",
+     "certeza": "texto",
+     "ref": "1S 10:1",
+     "cita": "derramóla sobre su cabeza"
+    },
+    {
+     "texto": "Recita el derecho del reino y lo escribe en un libro",
+     "certeza": "texto",
+     "ref": "1S 10:25",
+     "cita": "escribiólo en un libro"
+    },
+    {
+     "texto": "Jehová envió a «Jerobaal, Bedán, Jefté y Samuel»",
+     "certeza": "texto",
+     "ref": "1S 12:11",
+     "cita": "Jehová envió á Jerobaal, y á Bedán, y á Jephté, y á Samuel"
+    },
+    {
+     "texto": "Reprende a Saúl: «Locamente has hecho»",
+     "certeza": "texto",
+     "ref": "1S 13:13",
+     "cita": "Locamente has hecho"
+    },
+    {
+     "texto": "«El obedecer es mejor que los sacrificios»",
+     "certeza": "texto",
+     "ref": "1S 15:22",
+     "cita": "el obedecer es mejor que los sacrificios"
+    },
+    {
+     "texto": "Corta en pedazos a Agag en Gilgal",
+     "certeza": "texto",
+     "ref": "1S 15:33",
+     "cita": "Samuel cortó en pedazos á Agag delante de Jehová en Gilgal"
+    },
+    {
+     "texto": "No vio más a Saúl en su vida, pero lo lloraba",
+     "certeza": "texto",
+     "ref": "1S 15:35",
+     "cita": "nunca después vió Samuel á Saúl en toda su vida"
+    },
+    {
+     "texto": "Unge a David con el cuerno de aceite",
+     "certeza": "texto",
+     "ref": "1S 16:13",
+     "cita": "Samuel tomó el cuerno del aceite, y ungiólo de entre sus hermanos"
+    },
+    {
+     "texto": "Preside a los profetas en Najoth",
+     "certeza": "texto",
+     "ref": "1S 19:20",
+     "cita": "á Samuel que estaba [allí], y los presidía"
+    },
+    {
+     "texto": "Muere y lo sepultan en su casa en Ramá",
+     "certeza": "texto",
+     "ref": "1S 25:1",
+     "cita": "lo sepultaron en su casa en Rama"
+    },
+    {
+     "texto": "Ya muerto, Saúl pide a la mujer de Endor: «Hazme venir á Samuel»",
+     "certeza": "texto",
+     "ref": "1S 28:11",
+     "cita": "Hazme venir á Samuel"
+    },
+    {
+     "texto": "En 28:12-20 el texto nombra «Samuel» como quien ve la mujer y quien habla; aquí se cita tal cual y no se decide su interpretación",
+     "certeza": "texto",
+     "ref": "1S 28:15",
+     "cita": "Y Samuel dijo á Saúl: ¿Por qué me has inquietado haciéndome venir?"
+    }
+   ],
+   "externo": []
+  },
+  "Ichabod_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 4:20",
+     "fin": "1S 4:21"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 14:3"
+    }
+   ],
+   "resumen": "Hijo de Finees, nace cuando se toma el arca; su madre lo llama Icabod.",
+   "datos": [
+    {
+     "texto": "Su madre le pone por nombre Icabod: «Traspasada es la gloria de Israel»",
+     "certeza": "texto",
+     "ref": "1S 4:21",
+     "cita": "Y llamó al niño Ichâbod, diciendo: ¡Traspasada es la gloria de Israel!"
+    },
+    {
+     "texto": "Ahías es «hermano de Icabod»",
+     "certeza": "texto",
+     "ref": "1S 14:3",
+     "cita": "hermano de Ichâbod"
+    }
+   ],
+   "externo": []
+  },
+  "Joshua_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 6:14"
+    },
+    {
+     "ref": "1S 6:18"
+    }
+   ],
+   "resumen": "Dueño, según se infiere, del campo de Bet-semes donde se detiene el carro con el arca; solo se nombra por su campo. No es Josué hijo de Nun.",
+   "datos": [
+    {
+     "texto": "El carro llega al campo de Josué, betsemita",
+     "certeza": "texto",
+     "ref": "1S 6:14",
+     "cita": "campo de Josué Beth-semita"
+    },
+    {
+     "texto": "Se le toma por propietario del campo; el texto solo dice «campo de Josué»",
+     "certeza": "inferido",
+     "ref": "1S 6:18",
+     "cita": "en el campo de Josué Beth-semita hasta hoy"
+    }
+   ],
+   "externo": []
+  },
+  "Abinadab_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 7:1",
+     "fin": "1S 7:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En su casa, en el collado de Quiriat-jearim, se deposita el arca.",
+   "datos": [
+    {
+     "texto": "Llevan el arca a su casa",
+     "certeza": "texto",
+     "ref": "1S 7:1",
+     "cita": "metiéronla en casa de Abinadab, [situada] en el collado"
+    }
+   ],
+   "externo": []
+  },
+  "Eleazar_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 7:1",
+     "fin": "1S 7:1"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Abinadab, consagrado para guardar el arca. No es Eleazar hijo de Aarón.",
+   "datos": [
+    {
+     "texto": "Lo santifican para guardar el arca",
+     "certeza": "texto",
+     "ref": "1S 7:1",
+     "cita": "santificaron á Eleazar su hijo, para que guardase el arca de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Joel_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 8:1",
+     "fin": "1S 8:3"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Primogénito de Samuel; juez en Beer-seba, no sigue los caminos de su padre.",
+   "datos": [
+    {
+     "texto": "Primogénito de Samuel",
+     "certeza": "texto",
+     "ref": "1S 8:2",
+     "cita": "el nombre de su hijo primogénito fué Joel"
+    },
+    {
+     "texto": "Cohecho y derecho pervertido",
+     "certeza": "texto",
+     "ref": "1S 8:3",
+     "cita": "recibiendo cohecho y pervirtiendo el derecho"
+    }
+   ],
+   "externo": []
+  },
+  "Abijah_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 8:1",
+     "fin": "1S 8:3"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Segundo hijo de Samuel; juez en Beer-seba junto a Joel.",
+   "datos": [
+    {
+     "texto": "Segundo hijo de Samuel, juez en Beer-seba",
+     "certeza": "texto",
+     "ref": "1S 8:2",
+     "cita": "Abia: fueron jueces en Beer-sebah"
+    },
+    {
+     "texto": "No anduvieron por los caminos de su padre",
+     "certeza": "texto",
+     "ref": "1S 8:3",
+     "cita": "no anduvieron los hijos por los caminos de su padre"
+    }
+   ],
+   "externo": []
+  },
+  "Abiel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Cis (9:1) y de Ner (14:51); solo se nombra en listas.",
+   "datos": [
+    {
+     "texto": "Cis es «hijo de Abiel»",
+     "certeza": "texto",
+     "ref": "1S 9:1",
+     "cita": "hijo de Abiel"
+    },
+    {
+     "texto": "Cis y Ner fueron hijos de Abiel (por 14:50, Ner es tío de Saúl)",
+     "certeza": "texto",
+     "ref": "1S 14:51",
+     "cita": "fueron hijos de Abiel"
+    }
+   ],
+   "externo": []
+  },
+  "Zeror_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Antepasado de Cis (RV1909: «Seor»); solo se nombra en la lista de 9:1.",
+   "datos": [
+    {
+     "texto": "Abiel es «hijo de Seor»",
+     "certeza": "texto",
+     "ref": "1S 9:1",
+     "cita": "hijo de Seor"
+    }
+   ],
+   "externo": []
+  },
+  "Becorath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Antepasado de Cis (RV1909: «Bechôra»); solo se nombra en 9:1.",
+   "datos": [
+    {
+     "texto": "Seor es «hijo de Bechôra»",
+     "certeza": "texto",
+     "ref": "1S 9:1",
+     "cita": "hijo de Bechôra"
+    }
+   ],
+   "externo": []
+  },
+  "Aphiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Antepasado de Cis, de la tribu de Benjamín; solo se nombra en 9:1.",
+   "datos": [
+    {
+     "texto": "Bechôra es «hijo de Aphia, hijo de un hombre de Benjamín»",
+     "certeza": "texto",
+     "ref": "1S 9:1",
+     "cita": "hijo de Aphia"
+    }
+   ],
+   "externo": []
+  },
+  "Kish_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 9:2",
+     "fin": "1S 9:3"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 10:11"
+    },
+    {
+     "ref": "1S 10:21"
+    }
+   ],
+   "resumen": "Benjaminita valeroso, padre de Saúl; pierde sus asnas.",
+   "datos": [
+    {
+     "texto": "Hombre valeroso de Benjamín",
+     "certeza": "texto",
+     "ref": "1S 9:1",
+     "cita": "hombre valeroso"
+    },
+    {
+     "texto": "Se le pierden las asnas y envía a Saúl a buscarlas",
+     "certeza": "texto",
+     "ref": "1S 9:3",
+     "cita": "habíanse perdido las asnas de Cis, padre de Saúl"
+    },
+    {
+     "texto": "«Cis padre de Saúl» e hijo de Abiel",
+     "certeza": "texto",
+     "ref": "1S 14:51",
+     "cita": "Cis padre de Saúl"
+    }
+   ],
+   "externo": []
+  },
+  "Saul_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 9:2",
+     "fin": "1S 10:16"
+    },
+    {
+     "inicio": "1S 10:17",
+     "fin": "1S 10:27"
+    },
+    {
+     "inicio": "1S 11:4",
+     "fin": "1S 11:15"
+    },
+    {
+     "inicio": "1S 13:1",
+     "fin": "1S 13:16"
+    },
+    {
+     "inicio": "1S 13:22",
+     "fin": "1S 13:22"
+    },
+    {
+     "inicio": "1S 14:2",
+     "fin": "1S 14:2"
+    },
+    {
+     "inicio": "1S 14:16",
+     "fin": "1S 14:48"
+    },
+    {
+     "inicio": "1S 14:52",
+     "fin": "1S 14:52"
+    },
+    {
+     "inicio": "1S 15:1",
+     "fin": "1S 15:35"
+    },
+    {
+     "inicio": "1S 16:14",
+     "fin": "1S 16:23"
+    },
+    {
+     "inicio": "1S 17:2",
+     "fin": "1S 17:2"
+    },
+    {
+     "inicio": "1S 17:11",
+     "fin": "1S 17:11"
+    },
+    {
+     "inicio": "1S 17:19",
+     "fin": "1S 17:19"
+    },
+    {
+     "inicio": "1S 17:31",
+     "fin": "1S 17:39"
+    },
+    {
+     "inicio": "1S 17:55",
+     "fin": "1S 17:58"
+    },
+    {
+     "inicio": "1S 18:2",
+     "fin": "1S 18:2"
+    },
+    {
+     "inicio": "1S 18:5",
+     "fin": "1S 18:30"
+    },
+    {
+     "inicio": "1S 19:1",
+     "fin": "1S 19:24"
+    },
+    {
+     "inicio": "1S 20:25",
+     "fin": "1S 20:34"
+    },
+    {
+     "inicio": "1S 22:6",
+     "fin": "1S 22:19"
+    },
+    {
+     "inicio": "1S 23:7",
+     "fin": "1S 23:15"
+    },
+    {
+     "inicio": "1S 23:19",
+     "fin": "1S 23:28"
+    },
+    {
+     "inicio": "1S 24:2",
+     "fin": "1S 24:22"
+    },
+    {
+     "inicio": "1S 26:1",
+     "fin": "1S 26:25"
+    },
+    {
+     "inicio": "1S 28:3",
+     "fin": "1S 28:25"
+    },
+    {
+     "inicio": "1S 31:2",
+     "fin": "1S 31:12"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 25:44"
+    },
+    {
+     "ref": "1S 27:1"
+    },
+    {
+     "ref": "1S 27:4"
+    },
+    {
+     "ref": "1S 29:3"
+    },
+    {
+     "ref": "1S 29:5"
+    }
+   ],
+   "resumen": "Hijo de Cis, de Benjamín; primer rey de Israel, ungido por Samuel; Jehová lo desecha; persigue a David y muere en Gilboa.",
+   "datos": [
+    {
+     "texto": "Joven y hermoso; del hombro arriba sobrepujaba a cualquiera",
+     "certeza": "texto",
+     "ref": "1S 9:2",
+     "cita": "del hombro arriba sobrepujaba á cualquiera del pueblo"
+    },
+    {
+     "texto": "Se considera de la más pequeña de las tribus",
+     "certeza": "texto",
+     "ref": "1S 9:21",
+     "cita": "¿No soy yo hijo de Benjamín, de las más pequeñas tribus de Israel?"
+    },
+    {
+     "texto": "Samuel lo unge con aceite como capitán sobre su heredad",
+     "certeza": "texto",
+     "ref": "1S 10:1",
+     "cita": "¿No te ha ungido Jehová por capitán sobre su heredad?"
+    },
+    {
+     "texto": "Dios le muda el corazón",
+     "certeza": "texto",
+     "ref": "1S 10:9",
+     "cita": "mudóle Dios su corazón"
+    },
+    {
+     "texto": "Cuando lo eligen, está escondido entre el bagaje",
+     "certeza": "texto",
+     "ref": "1S 10:22",
+     "cita": "él está escondido entre el bagaje"
+    },
+    {
+     "texto": "Lo arrebata el espíritu de Dios al oír lo de Jabes",
+     "certeza": "texto",
+     "ref": "1S 11:6",
+     "cita": "el espíritu de Dios arrebató á Saúl en oyendo estas palabras"
+    },
+    {
+     "texto": "Lo invisten por rey en Gilgal",
+     "certeza": "texto",
+     "ref": "1S 11:15",
+     "cita": "invistieron allí á Saúl por rey delante de Jehová en Gilgal"
+    },
+    {
+     "texto": "Ofrece el holocausto sin esperar a Samuel",
+     "certeza": "texto",
+     "ref": "1S 13:9",
+     "cita": "Y ofreció el holocausto"
+    },
+    {
+     "texto": "Conjura al pueblo a no comer hasta la tarde",
+     "certeza": "texto",
+     "ref": "1S 14:24",
+     "cita": "sea maldito"
+    },
+    {
+     "texto": "Edifica un altar a Jehová, el primero que edificó",
+     "certeza": "texto",
+     "ref": "1S 14:35",
+     "cita": "el cual altar fué el primero que edificó á Jehová"
+    },
+    {
+     "texto": "Perdona a Agag y a lo mejor del ganado",
+     "certeza": "texto",
+     "ref": "1S 15:9",
+     "cita": "Saúl y el pueblo perdonaron á Agag"
+    },
+    {
+     "texto": "Samuel: «Jehová te ha desechado para que no seas rey»",
+     "certeza": "texto",
+     "ref": "1S 15:26",
+     "cita": "Jehová te ha desechado para que no seas rey sobre Israel"
+    },
+    {
+     "texto": "El espíritu de Jehová se aparta de él y lo atormenta un espíritu malo",
+     "certeza": "texto",
+     "ref": "1S 16:14",
+     "cita": "el espíritu de Jehová se apartó de Saúl, y atormentábale el espíritu malo de parte de Jehová"
+    },
+    {
+     "texto": "Arroja la lanza contra David",
+     "certeza": "texto",
+     "ref": "1S 18:11",
+     "cita": "Enclavaré á David en la pared"
+    },
+    {
+     "texto": "Fue enemigo de David todos los días",
+     "certeza": "texto",
+     "ref": "1S 18:29",
+     "cita": "fué Saúl enemigo de David todos los días"
+    },
+    {
+     "texto": "Ordena matar a los sacerdotes de Jehová",
+     "certeza": "texto",
+     "ref": "1S 22:17",
+     "cita": "Cercad y matad á los sacerdotes de Jehová"
+    },
+    {
+     "texto": "En En-gadi, llora y reconoce a David",
+     "certeza": "texto",
+     "ref": "1S 24:17",
+     "cita": "alzando Saúl su voz lloró"
+    },
+    {
+     "texto": "En Haquila: «He pecado: vuélvete, hijo mío David»",
+     "certeza": "texto",
+     "ref": "1S 26:21",
+     "cita": "He pecado: vuélvete, hijo mío David"
+    },
+    {
+     "texto": "Jehová no le responde ni por sueños, ni por Urim, ni por profetas",
+     "certeza": "texto",
+     "ref": "1S 28:6",
+     "cita": "Jehová no le respondió, ni por sueños, ni por Urim, ni por profetas"
+    },
+    {
+     "texto": "Se disfraza para ir a la mujer de Endor",
+     "certeza": "texto",
+     "ref": "1S 28:8",
+     "cita": "disfrazóse Saúl"
+    },
+    {
+     "texto": "Muere en Gilboa con sus tres hijos",
+     "certeza": "texto",
+     "ref": "1S 31:6",
+     "cita": "Así murió Saúl en aquel día, juntamente con sus tres hijos"
+    },
+    {
+     "texto": "Los filisteos le cortan la cabeza y le quitan las armas",
+     "certeza": "texto",
+     "ref": "1S 31:9",
+     "cita": "cortáronle la cabeza, y desnudáronle las armas"
+    }
+   ],
+   "externo": []
+  },
+  "Nahash_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 11:1",
+     "fin": "1S 11:2"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:12"
+    }
+   ],
+   "resumen": "Rey amonita que sitia Jabes de Galaad.",
+   "datos": [
+    {
+     "texto": "Sube y sitia Jabes de Galaad",
+     "certeza": "texto",
+     "ref": "1S 11:1",
+     "cita": "asentó campo contra Jabes de Galaad"
+    },
+    {
+     "texto": "Pone como condición sacar el ojo derecho a cada uno",
+     "certeza": "texto",
+     "ref": "1S 11:2",
+     "cita": "saque el ojo derecho"
+    }
+   ],
+   "externo": []
+  },
+  "Jonathan_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 13:2",
+     "fin": "1S 13:3"
+    },
+    {
+     "inicio": "1S 13:16",
+     "fin": "1S 13:16"
+    },
+    {
+     "inicio": "1S 13:22",
+     "fin": "1S 13:22"
+    },
+    {
+     "inicio": "1S 14:1",
+     "fin": "1S 14:2"
+    },
+    {
+     "inicio": "1S 14:4",
+     "fin": "1S 14:14"
+    },
+    {
+     "inicio": "1S 14:17",
+     "fin": "1S 14:17"
+    },
+    {
+     "inicio": "1S 14:21",
+     "fin": "1S 14:21"
+    },
+    {
+     "inicio": "1S 14:27",
+     "fin": "1S 14:45"
+    },
+    {
+     "inicio": "1S 18:1",
+     "fin": "1S 18:4"
+    },
+    {
+     "inicio": "1S 19:1",
+     "fin": "1S 19:7"
+    },
+    {
+     "inicio": "1S 20:1",
+     "fin": "1S 20:42"
+    },
+    {
+     "inicio": "1S 23:16",
+     "fin": "1S 23:18"
+    },
+    {
+     "inicio": "1S 31:2",
+     "fin": "1S 31:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Saúl; ataca la guarnición filistea en Micmas, hace alianza con David y muere en Gilboa. No es el Jonatán de Jueces 18:30.",
+   "datos": [
+    {
+     "texto": "Dirige mil hombres en Gabaa",
+     "certeza": "texto",
+     "ref": "1S 13:2",
+     "cita": "los mil estuvieron con Jonathán en Gabaa de Benjamín"
+    },
+    {
+     "texto": "Hiere la guarnición de los filisteos",
+     "certeza": "texto",
+     "ref": "1S 13:3",
+     "cita": "Jonathán hirió la guarnición de los Filisteos que había en el collado"
+    },
+    {
+     "texto": "En el día de la batalla solo Saúl y él tenían espada y lanza",
+     "certeza": "texto",
+     "ref": "1S 13:22",
+     "cita": "excepto Saúl y Jonathán su hijo, que las tenían"
+    },
+    {
+     "texto": "Propone pasar a la guarnición sin avisar a su padre",
+     "certeza": "texto",
+     "ref": "1S 14:1",
+     "cita": "Ven, y pasemos á la guarnición de los Filisteos"
+    },
+    {
+     "texto": "«No es difícil á Jehová salvar con multitud ó con poco número»",
+     "certeza": "texto",
+     "ref": "1S 14:6",
+     "cita": "no es difícil á Jehová salvar con multitud ó con poco número"
+    },
+    {
+     "texto": "Sube trepando con manos y pies",
+     "certeza": "texto",
+     "ref": "1S 14:13",
+     "cita": "subió Jonathán [trepando] con sus manos y sus pies"
+    },
+    {
+     "texto": "Gusta miel con la punta de su vara sin haber oído el juramento",
+     "certeza": "texto",
+     "ref": "1S 14:27",
+     "cita": "alargó la punta de una vara que traía en su mano, y mojóla en un panal de miel"
+    },
+    {
+     "texto": "«Mi padre ha turbado el país»",
+     "certeza": "texto",
+     "ref": "1S 14:29",
+     "cita": "Mi padre ha turbado el país"
+    },
+    {
+     "texto": "El pueblo lo libra de morir",
+     "certeza": "texto",
+     "ref": "1S 14:45",
+     "cita": "no ha de caer un cabello de su cabeza en tierra"
+    },
+    {
+     "texto": "Su alma queda ligada con la de David",
+     "certeza": "texto",
+     "ref": "1S 18:1",
+     "cita": "el alma de Jonathán fué ligada con la de David"
+    },
+    {
+     "texto": "Le da su ropa, su espada, su arco y su talabarte",
+     "certeza": "texto",
+     "ref": "1S 18:4",
+     "cita": "hasta su espada, y su arco, y su talabarte"
+    },
+    {
+     "texto": "Habla bien de David a Saúl",
+     "certeza": "texto",
+     "ref": "1S 19:4",
+     "cita": "Jonathán habló bien de David á Saúl su padre"
+    },
+    {
+     "texto": "Se juran por el nombre de Jehová",
+     "certeza": "texto",
+     "ref": "1S 20:42",
+     "cita": "ambos hemos jurado por el nombre de Jehová"
+    },
+    {
+     "texto": "En el bosque «confortó su mano en Dios»",
+     "certeza": "texto",
+     "ref": "1S 23:16",
+     "cita": "confortó su mano en Dios"
+    },
+    {
+     "texto": "Le dice a David: «yo seré segundo después de ti»",
+     "certeza": "texto",
+     "ref": "1S 23:17",
+     "cita": "yo seré segundo después de ti"
+    },
+    {
+     "texto": "Los filisteos lo matan en Gilboa",
+     "certeza": "texto",
+     "ref": "1S 31:2",
+     "cita": "mataron á Jonathán, y á Abinadab, y á Melchîsua, hijos de Saúl"
+    }
+   ],
+   "externo": []
+  },
+  "Ahijah_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 14:18",
+     "fin": "1S 14:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Sacerdote de Jehová en Silo que lleva el efod; hijo de Ahitob y hermano de Icabod.",
+   "datos": [
+    {
+     "texto": "Hijo de Ahitob, hermano de Icabod, nieto de Elí; lleva el efod",
+     "certeza": "texto",
+     "ref": "1S 14:3",
+     "cita": "llevaba el ephod"
+    },
+    {
+     "texto": "Saúl le dice: «Trae el arca de Dios»",
+     "certeza": "texto",
+     "ref": "1S 14:18",
+     "cita": "Trae el arca de Dios"
+    },
+    {
+     "texto": "Saúl le dice «Detén tu mano»",
+     "certeza": "texto",
+     "ref": "1S 14:19",
+     "cita": "Detén tu mano"
+    }
+   ],
+   "externo": []
+  },
+  "Ahitub_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 22:9"
+    },
+    {
+     "ref": "1S 22:11"
+    },
+    {
+     "ref": "1S 22:12"
+    },
+    {
+     "ref": "1S 22:20"
+    }
+   ],
+   "resumen": "Padre de Ahías (14:3) y de Ahimelec (22:9-20); solo se nombra como padre. Que el Ahitob de 14:3 y el de 22:9 sean el mismo es identificación de BibleData, no del texto.",
+   "datos": [
+    {
+     "texto": "Ahías es «hijo de Ahitob»",
+     "certeza": "texto",
+     "ref": "1S 14:3",
+     "cita": "Achîas hijo de Achîtob"
+    },
+    {
+     "texto": "Ahimelec es «hijo de Ahitob»",
+     "certeza": "texto",
+     "ref": "1S 22:9",
+     "cita": "Ahimelech hijo de Ahitob"
+    },
+    {
+     "texto": "Se toma por una sola persona al de 14:3 y al de 22:9 (BibleData; el texto no lo dice)",
+     "certeza": "inferido",
+     "ref": "1S 22:9",
+     "cita": "Ahimelech hijo de Ahitob"
+    }
+   ],
+   "externo": []
+  },
+  "Ishvi_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 31:2",
+     "fin": "1S 31:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Saúl (14:49: «Isui»). Por BibleData se identifica con el «Abinadab» hijo de Saúl de 31:2; el texto no lo dice.",
+   "datos": [
+    {
+     "texto": "Hijo de Saúl en la lista",
+     "certeza": "texto",
+     "ref": "1S 14:49",
+     "cita": "Jonathán, Isui, y Melchi-sua"
+    },
+    {
+     "texto": "En 31:2 los hijos muertos son «Jonathán, Abinadab y Melchîsua»; se toma «Abinadab» por Isúi (BibleData; el texto no lo dice)",
+     "certeza": "inferido",
+     "ref": "1S 31:2",
+     "cita": "á Abinadab"
+    }
+   ],
+   "externo": []
+  },
+  "Malchi-shua_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 31:2",
+     "fin": "1S 31:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Saúl; muere en Gilboa.",
+   "datos": [
+    {
+     "texto": "Hijo de Saúl",
+     "certeza": "texto",
+     "ref": "1S 14:49",
+     "cita": "Melchi-sua"
+    },
+    {
+     "texto": "Muere con Saúl y sus hermanos",
+     "certeza": "texto",
+     "ref": "1S 31:2",
+     "cita": "Melchîsua, hijos de Saúl"
+    }
+   ],
+   "externo": []
+  },
+  "Merab_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 18:17",
+     "fin": "1S 18:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hija mayor de Saúl; se la ofrece a David pero se da por mujer a Adriel.",
+   "datos": [
+    {
+     "texto": "Hija mayor de Saúl",
+     "certeza": "texto",
+     "ref": "1S 14:49",
+     "cita": "el nombre de la mayor, Merab"
+    },
+    {
+     "texto": "Saúl se la ofrece a David como yerno",
+     "certeza": "texto",
+     "ref": "1S 18:17",
+     "cita": "yo te daré á Merab mi hija mayor por mujer"
+    },
+    {
+     "texto": "La dan por mujer a Adriel el meholatita",
+     "certeza": "texto",
+     "ref": "1S 18:19",
+     "cita": "fué dada por mujer á Adriel Meholatita"
+    }
+   ],
+   "externo": []
+  },
+  "Michal_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 18:20",
+     "fin": "1S 18:28"
+    },
+    {
+     "inicio": "1S 19:11",
+     "fin": "1S 19:17"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 25:44"
+    }
+   ],
+   "resumen": "Hija menor de Saúl; ama a David, es su mujer y lo salva por una ventana; luego Saúl la da a Palti.",
+   "datos": [
+    {
+     "texto": "Hija menor de Saúl",
+     "certeza": "texto",
+     "ref": "1S 14:49",
+     "cita": "el de la menor, Michâl"
+    },
+    {
+     "texto": "Ama a David",
+     "certeza": "texto",
+     "ref": "1S 18:20",
+     "cita": "Michâl la [otra] hija de Saúl amaba á David"
+    },
+    {
+     "texto": "Saúl se la da a David por mujer",
+     "certeza": "texto",
+     "ref": "1S 18:27",
+     "cita": "Saúl le dió á su hija Michâl por mujer"
+    },
+    {
+     "texto": "Descuelga a David por una ventana",
+     "certeza": "texto",
+     "ref": "1S 19:12",
+     "cita": "descolgó Michâl á David por una ventana"
+    },
+    {
+     "texto": "Pone una estatua en la cama",
+     "certeza": "texto",
+     "ref": "1S 19:13",
+     "cita": "Tomó luego Michâl una estatua, y púsola sobre la cama"
+    },
+    {
+     "texto": "Ante Saúl dice que David la amenazó",
+     "certeza": "texto",
+     "ref": "1S 19:17",
+     "cita": "Déjame ir; si no, yo te mataré"
+    },
+    {
+     "texto": "Saúl la da a Palti hijo de Lais",
+     "certeza": "texto",
+     "ref": "1S 25:44",
+     "cita": "Saúl había dado su hija Michâl mujer de David, á Palti hijo de Lais"
+    }
+   ],
+   "externo": []
+  },
+  "Abner_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 17:55",
+     "fin": "1S 17:57"
+    },
+    {
+     "inicio": "1S 20:25",
+     "fin": "1S 20:25"
+    },
+    {
+     "inicio": "1S 26:5",
+     "fin": "1S 26:16"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Tío de Saúl según 14:50 (hijo de Ner) y general de su ejército.",
+   "datos": [
+    {
+     "texto": "General del ejército, hijo de Ner, tío de Saúl",
+     "certeza": "texto",
+     "ref": "1S 14:50",
+     "cita": "Abner, hijo de Ner tío de Saúl"
+    },
+    {
+     "texto": "Saúl le pregunta de quién es hijo David",
+     "certeza": "texto",
+     "ref": "1S 17:55",
+     "cita": "dijo á Abner general del ejército"
+    },
+    {
+     "texto": "Lleva a David ante Saúl con la cabeza de Goliat",
+     "certeza": "texto",
+     "ref": "1S 17:57",
+     "cita": "Abner lo tomó, y llevólo delante de Saúl"
+    },
+    {
+     "texto": "Se sienta al lado de Saúl en la fiesta de luna nueva",
+     "certeza": "texto",
+     "ref": "1S 20:25",
+     "cita": "sentóse Abner al lado de Saúl"
+    },
+    {
+     "texto": "Duerme junto a Saúl en la trinchera",
+     "certeza": "texto",
+     "ref": "1S 26:7",
+     "cita": "Abner y el pueblo estaban alrededor de él tendidos"
+    },
+    {
+     "texto": "David lo reprende por no guardar al rey",
+     "certeza": "texto",
+     "ref": "1S 26:15",
+     "cita": "¿por qué pues no has guardado al rey tu señor?"
+    }
+   ],
+   "externo": []
+  },
+  "Ahimaaz_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Ahinoam, mujer de Saúl; solo se nombra en 14:50.",
+   "datos": [
+    {
+     "texto": "Ahinoam es «hija de Aimaas»",
+     "certeza": "texto",
+     "ref": "1S 14:50",
+     "cita": "hija de Aimaas"
+    }
+   ],
+   "externo": []
+  },
+  "Ahinoam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de Saúl; solo se nombra en la lista de 14:50.",
+   "datos": [
+    {
+     "texto": "Mujer de Saúl, hija de Aimaas",
+     "certeza": "texto",
+     "ref": "1S 14:50",
+     "cita": "el nombre de la mujer de Saúl era Ahinoam, hija de Aimaas"
+    }
+   ],
+   "externo": []
+  },
+  "Ner_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 26:5"
+    },
+    {
+     "ref": "1S 26:14"
+    }
+   ],
+   "resumen": "Padre de Abner y hermano de Cis; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Abner",
+     "certeza": "texto",
+     "ref": "1S 14:50",
+     "cita": "Abner, hijo de Ner"
+    },
+    {
+     "texto": "Ner y Cis fueron hijos de Abiel",
+     "certeza": "texto",
+     "ref": "1S 14:51",
+     "cita": "Ner padre de Abner"
+    }
+   ],
+   "externo": []
+  },
+  "Agag_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 15:8",
+     "fin": "1S 15:9"
+    },
+    {
+     "inicio": "1S 15:32",
+     "fin": "1S 15:33"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 15:20"
+    }
+   ],
+   "resumen": "Rey de Amalec; Saúl lo toma vivo; Samuel lo mata en Gilgal. No es el Agag de Números 24:7.",
+   "datos": [
+    {
+     "texto": "Saúl lo toma vivo",
+     "certeza": "texto",
+     "ref": "1S 15:8",
+     "cita": "Y tomó vivo á Agag rey de Amalec"
+    },
+    {
+     "texto": "Saúl y el pueblo lo perdonan",
+     "certeza": "texto",
+     "ref": "1S 15:9",
+     "cita": "perdonaron á Agag"
+    },
+    {
+     "texto": "Dice «se pasó la amargura de la muerte»",
+     "certeza": "texto",
+     "ref": "1S 15:32",
+     "cita": "Ciertamente se pasó la amargura de la muerte"
+    },
+    {
+     "texto": "Samuel dice que su madre quedará sin hijo y lo corta en pedazos",
+     "certeza": "texto",
+     "ref": "1S 15:33",
+     "cita": "Samuel cortó en pedazos á Agag delante de Jehová en Gilgal"
+    }
+   ],
+   "externo": []
+  },
+  "Eliab_3": {
+   "apariciones": [
+    {
+     "inicio": "1S 16:6",
+     "fin": "1S 16:7"
+    },
+    {
+     "inicio": "1S 17:28",
+     "fin": "1S 17:29"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Primogénito de Isaí; Samuel cree que es el ungido; se enoja con David en el campamento.",
+   "datos": [
+    {
+     "texto": "Samuel lo ve y piensa que es el ungido",
+     "certeza": "texto",
+     "ref": "1S 16:6",
+     "cita": "él vió á Eliab"
+    },
+    {
+     "texto": "Primogénito de Isaí, en la guerra con Saúl",
+     "certeza": "texto",
+     "ref": "1S 17:13",
+     "cita": "Eliab el primogénito"
+    },
+    {
+     "texto": "Se enciende en ira contra David",
+     "certeza": "texto",
+     "ref": "1S 17:28",
+     "cita": "Eliab se encendió en ira contra David"
+    },
+    {
+     "texto": "Dice conocer la soberbia de David",
+     "certeza": "texto",
+     "ref": "1S 17:28",
+     "cita": "Yo conozco tu soberbia y la malicia de tu corazón"
+    }
+   ],
+   "externo": []
+  },
+  "Abinadab_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 16:8",
+     "fin": "1S 16:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Segundo hijo de Isaí; Samuel dice que Jehová no lo eligió.",
+   "datos": [
+    {
+     "texto": "Isaí lo hace pasar ante Samuel",
+     "certeza": "texto",
+     "ref": "1S 16:8",
+     "cita": "llamó Isaí á Abinadab, é hízole pasar delante de Samuel"
+    },
+    {
+     "texto": "«Ni á éste ha elegido Jehová»",
+     "certeza": "texto",
+     "ref": "1S 16:8",
+     "cita": "Ni á éste ha elegido Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Shammah_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 16:9",
+     "fin": "1S 16:9"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Tercer hijo de Isaí (RV1909: «Samma»); Samuel dice que Jehová no lo eligió.",
+   "datos": [
+    {
+     "texto": "Isaí lo hace pasar ante Samuel",
+     "certeza": "texto",
+     "ref": "1S 16:9",
+     "cita": "Hizo luego pasar Isaí á Samma"
+    },
+    {
+     "texto": "Tercero de los hijos que van con Saúl",
+     "certeza": "texto",
+     "ref": "1S 17:13",
+     "cita": "y el tercero Samma"
+    }
+   ],
+   "externo": []
+  },
+  "Goliath_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 17:4",
+     "fin": "1S 17:10"
+    },
+    {
+     "inicio": "1S 17:16",
+     "fin": "1S 17:16"
+    },
+    {
+     "inicio": "1S 17:23",
+     "fin": "1S 17:23"
+    },
+    {
+     "inicio": "1S 17:40",
+     "fin": "1S 17:51"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 17:54"
+    },
+    {
+     "ref": "1S 17:57"
+    },
+    {
+     "ref": "1S 18:6"
+    },
+    {
+     "ref": "1S 21:9"
+    },
+    {
+     "ref": "1S 22:10"
+    }
+   ],
+   "resumen": "Campeón filisteo de Gat que desafía a Israel durante cuarenta días; lo mata David.",
+   "datos": [
+    {
+     "texto": "De Gat; seis codos y un palmo de altura",
+     "certeza": "texto",
+     "ref": "1S 17:4",
+     "cita": "Goliath, de Gath, y tenía de altura seis codos y un palmo"
+    },
+    {
+     "texto": "El peso de su coraza",
+     "certeza": "texto",
+     "ref": "1S 17:5",
+     "cita": "el peso de la coraza cinco mil siclos de metal"
+    },
+    {
+     "texto": "Reta: «dadme un hombre que pelee conmigo»",
+     "certeza": "texto",
+     "ref": "1S 17:10",
+     "cita": "dadme un hombre que pelee conmigo"
+    },
+    {
+     "texto": "Se presentó cuarenta días",
+     "certeza": "texto",
+     "ref": "1S 17:16",
+     "cita": "presentóse por cuarenta días"
+    },
+    {
+     "texto": "Se burla de David: «¿Soy yo perro?»",
+     "certeza": "texto",
+     "ref": "1S 17:43",
+     "cita": "¿Soy yo perro para que vengas á mí con palos?"
+    },
+    {
+     "texto": "La piedra le hiere en la frente",
+     "certeza": "texto",
+     "ref": "1S 17:49",
+     "cita": "hirió al Filisteo en la frente"
+    },
+    {
+     "texto": "David le corta la cabeza con su propia espada",
+     "certeza": "texto",
+     "ref": "1S 17:51",
+     "cita": "matólo, y cortóle con ella la cabeza"
+    },
+    {
+     "texto": "Su espada queda en Nob envuelta en un velo detrás del efod",
+     "certeza": "texto",
+     "ref": "1S 21:9",
+     "cita": "La espada de Goliath el Filisteo"
+    }
+   ],
+   "externo": []
+  },
+  "Adriel_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 18:19",
+     "fin": "1S 18:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Meholatita a quien se da por mujer a Merab.",
+   "datos": [
+    {
+     "texto": "Se le da Merab por mujer",
+     "certeza": "texto",
+     "ref": "1S 18:19",
+     "cita": "fué dada por mujer á Adriel Meholatita"
+    }
+   ],
+   "externo": []
+  },
+  "Ahimelech_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 21:1",
+     "fin": "1S 21:9"
+    },
+    {
+     "inicio": "1S 22:11",
+     "fin": "1S 22:18"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 22:9"
+    },
+    {
+     "ref": "1S 22:10"
+    },
+    {
+     "ref": "1S 22:20"
+    },
+    {
+     "ref": "1S 23:6"
+    },
+    {
+     "ref": "1S 30:7"
+    }
+   ],
+   "resumen": "Sacerdote en Nob, hijo de Ahitob; da a David los panes sagrados y la espada de Goliat; Saúl lo condena.",
+   "datos": [
+    {
+     "texto": "Sacerdote en Nob que se sorprende de ver a David solo",
+     "certeza": "texto",
+     "ref": "1S 21:1",
+     "cita": "á Ahimelech sacerdote"
+    },
+    {
+     "texto": "Solo tiene pan sagrado",
+     "certeza": "texto",
+     "ref": "1S 21:4",
+     "cita": "No tengo pan común á la mano; solamente tengo pan sagrado"
+    },
+    {
+     "texto": "La espada de Goliat está envuelta en un velo detrás del efod",
+     "certeza": "texto",
+     "ref": "1S 21:9",
+     "cita": "está aquí envuelta en un velo detrás del ephod"
+    },
+    {
+     "texto": "Hijo de Ahitob",
+     "certeza": "texto",
+     "ref": "1S 22:9",
+     "cita": "Ahimelech hijo de Ahitob"
+    },
+    {
+     "texto": "Dice no saber nada del asunto",
+     "certeza": "texto",
+     "ref": "1S 22:15",
+     "cita": "tu siervo ninguna cosa sabe de este negocio, grande ni chica"
+    },
+    {
+     "texto": "Saúl lo sentencia a morir con la casa de su padre",
+     "certeza": "texto",
+     "ref": "1S 22:16",
+     "cita": "Sin duda morirás, Ahimelech, tú y toda la casa de tu padre"
+    },
+    {
+     "texto": "El texto no dice expresamente su muerte; se infiere de 22:16-18",
+     "certeza": "inferido",
+     "ref": "1S 22:18",
+     "cita": "mató en aquel día ochenta y cinco varones que vestían ephod de lino"
+    }
+   ],
+   "externo": []
+  },
+  "Doeg_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 21:7",
+     "fin": "1S 21:7"
+    },
+    {
+     "inicio": "1S 22:9",
+     "fin": "1S 22:10"
+    },
+    {
+     "inicio": "1S 22:18",
+     "fin": "1S 22:19"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 22:22"
+    }
+   ],
+   "resumen": "Idumeo, principal de los pastores de Saúl; acusa a Ahimelec y mata a los sacerdotes de Nob.",
+   "datos": [
+    {
+     "texto": "Idumeo, principal de los pastores de Saúl, detenido delante de Jehová",
+     "certeza": "texto",
+     "ref": "1S 21:7",
+     "cita": "el nombre del cual era Doeg, Idumeo, principal de los pastores de Saúl"
+    },
+    {
+     "texto": "Dice haber visto a David en Nob",
+     "certeza": "texto",
+     "ref": "1S 22:9",
+     "cita": "Yo vi al hijo de Isaí que vino á Nob"
+    },
+    {
+     "texto": "Mata a ochenta y cinco sacerdotes por orden de Saúl",
+     "certeza": "texto",
+     "ref": "1S 22:18",
+     "cita": "arremetió contra los sacerdotes, y mató en aquel día ochenta y cinco varones que vestían ephod de lino"
+    },
+    {
+     "texto": "Nob es puesta a cuchillo (el texto no nombra al autor; se infiere que fue Doeg)",
+     "certeza": "inferido",
+     "ref": "1S 22:19",
+     "cita": "Nob, ciudad de los sacerdotes, puso á cuchillo"
+    }
+   ],
+   "externo": []
+  },
+  "Achish_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 21:10",
+     "fin": "1S 21:15"
+    },
+    {
+     "inicio": "1S 27:2",
+     "fin": "1S 27:12"
+    },
+    {
+     "inicio": "1S 28:1",
+     "fin": "1S 28:2"
+    },
+    {
+     "inicio": "1S 29:2",
+     "fin": "1S 29:11"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey filisteo de Gat; recibe a David, le da Siclag y lo cree leal.",
+   "datos": [
+    {
+     "texto": "Rey de Gat, adonde huye David",
+     "certeza": "texto",
+     "ref": "1S 21:10",
+     "cita": "vínose á Achîs rey de Gath"
+    },
+    {
+     "texto": "Ve a David como demente",
+     "certeza": "texto",
+     "ref": "1S 21:14",
+     "cita": "He aquí estáis viendo un hombre demente"
+    },
+    {
+     "texto": "Hijo de Maoc, rey de Gat",
+     "certeza": "texto",
+     "ref": "1S 27:2",
+     "cita": "Achîs hijo de Maoch, rey de Gath"
+    },
+    {
+     "texto": "Le da Siclag",
+     "certeza": "texto",
+     "ref": "1S 27:6",
+     "cita": "Achîs le dió aquel día á Siclag"
+    },
+    {
+     "texto": "Cree a David",
+     "certeza": "texto",
+     "ref": "1S 27:12",
+     "cita": "Achîs creía á David"
+    },
+    {
+     "texto": "Lo hace guarda de su cabeza",
+     "certeza": "texto",
+     "ref": "1S 28:2",
+     "cita": "te haré guarda de mi cabeza todos los días"
+    },
+    {
+     "texto": "Dice de David: «como un ángel de Dios»",
+     "certeza": "texto",
+     "ref": "1S 29:9",
+     "cita": "como un ángel de Dios"
+    }
+   ],
+   "externo": []
+  },
+  "Gad_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 22:5",
+     "fin": "1S 22:5"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Profeta que dice a David que se vaya a tierra de Judá.",
+   "datos": [
+    {
+     "texto": "Aconseja a David",
+     "certeza": "texto",
+     "ref": "1S 22:5",
+     "cita": "Gad profeta dijo á David"
+    }
+   ],
+   "externo": []
+  },
+  "Abiathar_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 22:20",
+     "fin": "1S 22:23"
+    },
+    {
+     "inicio": "1S 23:6",
+     "fin": "1S 23:6"
+    },
+    {
+     "inicio": "1S 23:9",
+     "fin": "1S 23:9"
+    },
+    {
+     "inicio": "1S 30:7",
+     "fin": "1S 30:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Ahimelec; escapa de Nob, huye a David con el efod y es su sacerdote.",
+   "datos": [
+    {
+     "texto": "Escapa de Nob y se huye a David",
+     "certeza": "texto",
+     "ref": "1S 22:20",
+     "cita": "que se llamaba Abiathar, escapó, y huyóse á David"
+    },
+    {
+     "texto": "Le cuenta a David la matanza",
+     "certeza": "texto",
+     "ref": "1S 22:21",
+     "cita": "Abiathar notició á David como Saúl había muerto los sacerdotes de Jehová"
+    },
+    {
+     "texto": "David: «Quédate conmigo, no temas»",
+     "certeza": "texto",
+     "ref": "1S 22:23",
+     "cita": "Quédate conmigo, no temas"
+    },
+    {
+     "texto": "Llega a Keila con el efod",
+     "certeza": "texto",
+     "ref": "1S 23:6",
+     "cita": "vino también con él el ephod"
+    },
+    {
+     "texto": "David le pide el efod",
+     "certeza": "texto",
+     "ref": "1S 23:9",
+     "cita": "Trae el ephod"
+    },
+    {
+     "texto": "En Siclag le acerca el efod",
+     "certeza": "texto",
+     "ref": "1S 30:7",
+     "cita": "Abiathar acercó el ephod á David"
+    }
+   ],
+   "externo": []
+  },
+  "Abigail_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 25:3",
+     "fin": "1S 25:3"
+    },
+    {
+     "inicio": "1S 25:14",
+     "fin": "1S 25:20"
+    },
+    {
+     "inicio": "1S 25:23",
+     "fin": "1S 25:42"
+    },
+    {
+     "inicio": "1S 27:3",
+     "fin": "1S 27:3"
+    },
+    {
+     "inicio": "1S 30:5",
+     "fin": "1S 30:5"
+    },
+    {
+     "inicio": "1S 30:18",
+     "fin": "1S 30:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de Nabal, de buen entendimiento; sale al encuentro de David y luego se casa con él.",
+   "datos": [
+    {
+     "texto": "De buen entendimiento y buena gracia",
+     "certeza": "texto",
+     "ref": "1S 25:3",
+     "cita": "aquella mujer de buen entendimiento y de buena gracia"
+    },
+    {
+     "texto": "Un criado le da aviso de lo de David",
+     "certeza": "texto",
+     "ref": "1S 25:14",
+     "cita": "uno de los criados dió aviso á Abigail mujer de Nabal"
+    },
+    {
+     "texto": "Prepara doscientos panes, vino, ovejas, grano, pasas e higos",
+     "certeza": "texto",
+     "ref": "1S 25:18",
+     "cita": "doscientos panes, y dos cueros de vino, y cinco ovejas guisadas"
+    },
+    {
+     "texto": "No dijo nada a Nabal",
+     "certeza": "texto",
+     "ref": "1S 25:19",
+     "cita": "Y nada declaró á su marido Nabal"
+    },
+    {
+     "texto": "A David: «sobre mí sea el pecado»",
+     "certeza": "texto",
+     "ref": "1S 25:24",
+     "cita": "Señor mío, sobre mí sea el pecado"
+    },
+    {
+     "texto": "David bendice a Dios porque la envió",
+     "certeza": "texto",
+     "ref": "1S 25:32",
+     "cita": "Bendito sea Jehová Dios de Israel, que te envió para que hoy me encontrases"
+    },
+    {
+     "texto": "Se hace mujer de David",
+     "certeza": "texto",
+     "ref": "1S 25:42",
+     "cita": "siguió los mensajeros de David, y fué su mujer"
+    },
+    {
+     "texto": "Cautiva en Siclag",
+     "certeza": "texto",
+     "ref": "1S 30:5",
+     "cita": "Abigail la [que fué] mujer de Nabal del Carmelo"
+    }
+   ],
+   "externo": []
+  },
+  "Nabal_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 25:2",
+     "fin": "1S 25:38"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 27:3"
+    },
+    {
+     "ref": "1S 30:5"
+    }
+   ],
+   "resumen": "Rico del Carmelo de Maón, del linaje de Caleb, duro y de malos hechos; rechaza a David y muere.",
+   "datos": [
+    {
+     "texto": "Tres mil ovejas y mil cabras",
+     "certeza": "texto",
+     "ref": "1S 25:2",
+     "cita": "tres mil ovejas y mil cabras"
+    },
+    {
+     "texto": "Duro, de malos hechos, del linaje de Caleb",
+     "certeza": "texto",
+     "ref": "1S 25:3",
+     "cita": "el hombre era duro y de malos hechos; y era del linaje de Caleb"
+    },
+    {
+     "texto": "Responde: «¿Quién es David?»",
+     "certeza": "texto",
+     "ref": "1S 25:10",
+     "cita": "¿Quién es David? ¿y quién es el hijo de Isaí?"
+    },
+    {
+     "texto": "Su nombre significa locura, dice Abigail",
+     "certeza": "texto",
+     "ref": "1S 25:25",
+     "cita": "El se llama Nabal, y la locura está con él"
+    },
+    {
+     "texto": "Muy borracho en su banquete",
+     "certeza": "texto",
+     "ref": "1S 25:36",
+     "cita": "estaba muy borracho"
+    },
+    {
+     "texto": "Se le amortece el corazón",
+     "certeza": "texto",
+     "ref": "1S 25:37",
+     "cita": "se le amorteció el corazón, y quedóse como una piedra"
+    },
+    {
+     "texto": "Diez días después Jehová lo hiere y muere",
+     "certeza": "texto",
+     "ref": "1S 25:38",
+     "cita": "Jehová hirió á Nabal, y murió"
+    }
+   ],
+   "externo": []
+  },
+  "Ahinoam_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 25:43",
+     "fin": "1S 25:43"
+    },
+    {
+     "inicio": "1S 27:3",
+     "fin": "1S 27:3"
+    },
+    {
+     "inicio": "1S 30:5",
+     "fin": "1S 30:5"
+    },
+    {
+     "inicio": "1S 30:18",
+     "fin": "1S 30:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de David, de Jezreel.",
+   "datos": [
+    {
+     "texto": "David la toma por mujer",
+     "certeza": "texto",
+     "ref": "1S 25:43",
+     "cita": "También tomó David á Ahinoam de Jezreel, y ambas á dos fueron sus mujeres"
+    },
+    {
+     "texto": "Va con David a Gat",
+     "certeza": "texto",
+     "ref": "1S 27:3",
+     "cita": "Ahinoam Jezreelita"
+    },
+    {
+     "texto": "Cautiva en Siclag",
+     "certeza": "texto",
+     "ref": "1S 30:5",
+     "cita": "Las dos mujeres de David, Ahinoam Jezreelita y Abigail"
+    },
+    {
+     "texto": "David libra a sus dos mujeres",
+     "certeza": "texto",
+     "ref": "1S 30:18",
+     "cita": "libertó David á sus dos mujeres"
+    }
+   ],
+   "externo": []
+  },
+  "Laish_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 25:44"
+    }
+   ],
+   "resumen": "Padre de Palti; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Palti es «hijo de Lais»",
+     "certeza": "texto",
+     "ref": "1S 25:44",
+     "cita": "Palti hijo de Lais"
+    }
+   ],
+   "externo": []
+  },
+  "Palti_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 25:44",
+     "fin": "1S 25:44"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "De Gallim; Saúl le da a Mical, mujer de David.",
+   "datos": [
+    {
+     "texto": "Saúl le da a Mical",
+     "certeza": "texto",
+     "ref": "1S 25:44",
+     "cita": "á Palti hijo de Lais, que era de Gallim"
+    }
+   ],
+   "externo": []
+  },
+  "Abishai_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 26:6",
+     "fin": "1S 26:9"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Sarvia y hermano de Joab; baja con David al campamento de Saúl.",
+   "datos": [
+    {
+     "texto": "Hijo de Sarvia, hermano de Joab",
+     "certeza": "texto",
+     "ref": "1S 26:6",
+     "cita": "Abisai hijo de Sarvia, hermano de Joab"
+    },
+    {
+     "texto": "Se ofrece a ir con David",
+     "certeza": "texto",
+     "ref": "1S 26:6",
+     "cita": "Yo descenderé contigo"
+    },
+    {
+     "texto": "Quiere herir a Saúl y David se lo impide",
+     "certeza": "texto",
+     "ref": "1S 26:8",
+     "cita": "herirélo luego con la lanza"
+    },
+    {
+     "texto": "David: «No le mates»",
+     "certeza": "texto",
+     "ref": "1S 26:9",
+     "cita": "No le mates"
+    }
+   ],
+   "externo": []
+  },
+  "Ahimelech_2": {
+   "apariciones": [
+    {
+     "inicio": "1S 26:6",
+     "fin": "1S 26:6"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Heteo a quien David invita a bajar al campamento de Saúl; no responde. No es el sacerdote de Nob.",
+   "datos": [
+    {
+     "texto": "David lo requiere",
+     "certeza": "texto",
+     "ref": "1S 26:6",
+     "cita": "Ahimelech Hetheo"
+    }
+   ],
+   "externo": []
+  },
+  "Joab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 26:6"
+    }
+   ],
+   "resumen": "Hermano de Abisai; en 1 S solo se nombra como hermano.",
+   "datos": [
+    {
+     "texto": "Abisai es «hermano de Joab»",
+     "certeza": "texto",
+     "ref": "1S 26:6",
+     "cita": "hermano de Joab"
+    }
+   ],
+   "externo": []
+  },
+  "Zeruiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 26:6"
+    }
+   ],
+   "resumen": "Madre de Abisai y Joab; solo se nombra como madre (RV1909: «Sarvia»).",
+   "datos": [
+    {
+     "texto": "Abisai es «hijo de Sarvia»",
+     "certeza": "texto",
+     "ref": "1S 26:6",
+     "cita": "hijo de Sarvia"
+    }
+   ],
+   "externo": []
+  },
+  "Maoch_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 27:2"
+    }
+   ],
+   "resumen": "Padre de Aquis; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Aquis es «hijo de Maoc»",
+     "certeza": "texto",
+     "ref": "1S 27:2",
+     "cita": "Achîs hijo de Maoch"
+    }
+   ],
+   "externo": []
+  },
+  "David_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 16:12",
+     "fin": "1S 16:13"
+    },
+    {
+     "inicio": "1S 16:19",
+     "fin": "1S 16:23"
+    },
+    {
+     "inicio": "1S 17:12",
+     "fin": "1S 17:12"
+    },
+    {
+     "inicio": "1S 17:14",
+     "fin": "1S 17:58"
+    },
+    {
+     "inicio": "1S 18:1",
+     "fin": "1S 18:30"
+    },
+    {
+     "inicio": "1S 19:2",
+     "fin": "1S 19:24"
+    },
+    {
+     "inicio": "1S 20:1",
+     "fin": "1S 20:42"
+    },
+    {
+     "inicio": "1S 21:1",
+     "fin": "1S 21:15"
+    },
+    {
+     "inicio": "1S 22:1",
+     "fin": "1S 22:5"
+    },
+    {
+     "inicio": "1S 22:20",
+     "fin": "1S 22:23"
+    },
+    {
+     "inicio": "1S 23:1",
+     "fin": "1S 23:18"
+    },
+    {
+     "inicio": "1S 23:24",
+     "fin": "1S 23:26"
+    },
+    {
+     "inicio": "1S 24:1",
+     "fin": "1S 24:22"
+    },
+    {
+     "inicio": "1S 25:1",
+     "fin": "1S 25:1"
+    },
+    {
+     "inicio": "1S 25:4",
+     "fin": "1S 25:44"
+    },
+    {
+     "inicio": "1S 26:3",
+     "fin": "1S 26:25"
+    },
+    {
+     "inicio": "1S 27:1",
+     "fin": "1S 27:12"
+    },
+    {
+     "inicio": "1S 28:1",
+     "fin": "1S 28:2"
+    },
+    {
+     "inicio": "1S 29:1",
+     "fin": "1S 29:11"
+    },
+    {
+     "inicio": "1S 30:1",
+     "fin": "1S 30:31"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 22:14"
+    },
+    {
+     "ref": "1S 25:10"
+    },
+    {
+     "ref": "1S 28:17"
+    }
+   ],
+   "resumen": "Hijo de Isaí de Belén, ungido por Samuel; sirve a Saúl, vence a Goliat, huye de Saúl y vive entre los filisteos.",
+   "datos": [
+    {
+     "texto": "Rubio, de hermoso parecer y de bello aspecto",
+     "certeza": "texto",
+     "ref": "1S 16:12",
+     "cita": "era rubio, de hermoso parecer y de bello aspecto"
+    },
+    {
+     "texto": "Samuel lo unge y el espíritu de Jehová lo toma",
+     "certeza": "texto",
+     "ref": "1S 16:13",
+     "cita": "el espíritu de Jehová tomó á David"
+    },
+    {
+     "texto": "Sabe tocar, es valiente y vigoroso (dice un criado de Saúl)",
+     "certeza": "texto",
+     "ref": "1S 16:18",
+     "cita": "sabe tocar, y es valiente y vigoroso"
+    },
+    {
+     "texto": "Es hecho escudero de Saúl",
+     "certeza": "texto",
+     "ref": "1S 16:21",
+     "cita": "fué hecho su escudero"
+    },
+    {
+     "texto": "Con su arpa alivia a Saúl",
+     "certeza": "texto",
+     "ref": "1S 16:23",
+     "cita": "David tomaba el arpa, y tañía con su mano"
+    },
+    {
+     "texto": "Pastor que mató león y oso",
+     "certeza": "texto",
+     "ref": "1S 17:34",
+     "cita": "Tu siervo era pastor en las ovejas de su padre"
+    },
+    {
+     "texto": "Va contra Goliat «en el nombre de Jehová de los ejércitos»",
+     "certeza": "texto",
+     "ref": "1S 17:45",
+     "cita": "yo vengo á ti en el nombre de Jehová de los ejércitos"
+    },
+    {
+     "texto": "Vence a Goliat con honda y piedra",
+     "certeza": "texto",
+     "ref": "1S 17:50",
+     "cita": "Así venció David al Filisteo con honda y piedra"
+    },
+    {
+     "texto": "Las mujeres cantan: «David sus diez miles»",
+     "certeza": "texto",
+     "ref": "1S 18:7",
+     "cita": "Saúl hirió sus miles, y David sus diez miles"
+    },
+    {
+     "texto": "Mata a doscientos filisteos por Mical",
+     "certeza": "texto",
+     "ref": "1S 18:27",
+     "cita": "hirió doscientos hombres de los Filisteos"
+    },
+    {
+     "texto": "Huye de la lanza de Saúl",
+     "certeza": "texto",
+     "ref": "1S 19:10",
+     "cita": "David huyó, y escapóse aquella noche"
+    },
+    {
+     "texto": "Se despide de Jonatán llorando",
+     "certeza": "texto",
+     "ref": "1S 20:41",
+     "cita": "inclinóse tres veces postrándose hasta la tierra"
+    },
+    {
+     "texto": "Le dice al sacerdote que el rey le encargó un negocio",
+     "certeza": "texto",
+     "ref": "1S 21:2",
+     "cita": "El rey me encomendó un negocio"
+    },
+    {
+     "texto": "Se finge loco ante Aquis",
+     "certeza": "texto",
+     "ref": "1S 21:13",
+     "cita": "fingióse loco entre sus manos"
+    },
+    {
+     "texto": "Reúne a unos cuatrocientos hombres",
+     "certeza": "texto",
+     "ref": "1S 22:2",
+     "cita": "tuvo consigo como cuatrocientos hombres"
+    },
+    {
+     "texto": "Consulta a Jehová antes de ir a Keila",
+     "certeza": "texto",
+     "ref": "1S 23:2",
+     "cita": "David consultó á Jehová"
+    },
+    {
+     "texto": "Corta la orilla del manto de Saúl",
+     "certeza": "texto",
+     "ref": "1S 24:5",
+     "cita": "calladamente cortó la orilla del manto de Saúl"
+    },
+    {
+     "texto": "No extiende su mano contra Saúl",
+     "certeza": "texto",
+     "ref": "1S 24:11",
+     "cita": "No extenderé mi mano contra mi señor"
+    },
+    {
+     "texto": "Ordena ceñir espadas contra Nabal",
+     "certeza": "texto",
+     "ref": "1S 25:13",
+     "cita": "Cíñase cada uno su espada"
+    },
+    {
+     "texto": "Se lleva la lanza y la botija de agua de Saúl",
+     "certeza": "texto",
+     "ref": "1S 26:12",
+     "cita": "Llevóse pues David la lanza y la botija de agua de la cabecera de Saúl"
+    },
+    {
+     "texto": "Se pasa a Aquis con seiscientos hombres",
+     "certeza": "texto",
+     "ref": "1S 27:2",
+     "cita": "pasóse á Achîs hijo de Maoch, rey de Gath"
+    },
+    {
+     "texto": "En sus incursiones no dejaba con vida hombre ni mujer",
+     "certeza": "texto",
+     "ref": "1S 27:9",
+     "cita": "hería David el país, y no dejaba á vida hombre ni mujer"
+    },
+    {
+     "texto": "Se esfuerza en Jehová ante el pueblo que quería apedrearlo",
+     "certeza": "texto",
+     "ref": "1S 30:6",
+     "cita": "David se esforzó en Jehová su Dios"
+    },
+    {
+     "texto": "Persigue y vence a los amalecitas",
+     "certeza": "texto",
+     "ref": "1S 30:17",
+     "cita": "E hiriólos David desde aquella mañana hasta la tarde del día siguiente"
+    },
+    {
+     "texto": "Fija la misma parte para quien baja a la batalla y quien guarda el bagaje",
+     "certeza": "texto",
+     "ref": "1S 30:24",
+     "cita": "igual parte ha de ser la de los que vienen á la batalla, y la de los que quedan con el bagaje"
+    }
+   ],
+   "externo": []
+  },
+  "Jesse_1": {
+   "apariciones": [
+    {
+     "inicio": "1S 16:5",
+     "fin": "1S 16:5"
+    },
+    {
+     "inicio": "1S 16:8",
+     "fin": "1S 16:11"
+    },
+    {
+     "inicio": "1S 16:18",
+     "fin": "1S 16:22"
+    },
+    {
+     "inicio": "1S 17:12",
+     "fin": "1S 17:12"
+    },
+    {
+     "inicio": "1S 17:17",
+     "fin": "1S 17:18"
+    },
+    {
+     "inicio": "1S 17:20",
+     "fin": "1S 17:20"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 16:1"
+    },
+    {
+     "ref": "1S 16:3"
+    },
+    {
+     "ref": "1S 17:58"
+    },
+    {
+     "ref": "1S 20:27"
+    },
+    {
+     "ref": "1S 20:30"
+    },
+    {
+     "ref": "1S 20:31"
+    },
+    {
+     "ref": "1S 22:7"
+    },
+    {
+     "ref": "1S 22:8"
+    },
+    {
+     "ref": "1S 22:9"
+    },
+    {
+     "ref": "1S 22:13"
+    },
+    {
+     "ref": "1S 25:10"
+    }
+   ],
+   "resumen": "Padre de David, efrateo de Belén, con ocho hijos.",
+   "datos": [
+    {
+     "texto": "Samuel es enviado a Isaí de Belén",
+     "certeza": "texto",
+     "ref": "1S 16:1",
+     "cita": "te enviaré á Isaí de Beth-lehem"
+    },
+    {
+     "texto": "Hace pasar siete hijos ante Samuel",
+     "certeza": "texto",
+     "ref": "1S 16:10",
+     "cita": "E hizo pasar Isaí sus siete hijos delante de Samuel"
+    },
+    {
+     "texto": "Envía a David a Saúl con un asno cargado de pan, vino y un cabrito",
+     "certeza": "texto",
+     "ref": "1S 16:20",
+     "cita": "tomó Isaí un asno [cargado] de pan, y una vasija de vino y un cabrito"
+    },
+    {
+     "texto": "Efrateo de Belén, con ocho hijos",
+     "certeza": "texto",
+     "ref": "1S 17:12",
+     "cita": "el cual tenía ocho hijos"
+    },
+    {
+     "texto": "Manda a David con grano tostado y diez panes a sus hermanos",
+     "certeza": "texto",
+     "ref": "1S 17:17",
+     "cita": "Toma ahora para tus hermanos un epha de este grano tostado, y estos diez panes"
+    },
+    {
+     "texto": "Nabal dice «el hijo de Isaí»",
+     "certeza": "texto",
+     "ref": "1S 25:10",
+     "cita": "¿y quién es el hijo de Isaí?"
+    }
+   ],
+   "externo": []
+  },
+  "Moses_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:6"
+    },
+    {
+     "ref": "1S 12:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová hizo a Moisés y a Aarón",
+     "certeza": "texto",
+     "ref": "1S 12:6",
+     "cita": "Jehová es quien hizo á Moisés y á Aarón"
+    },
+    {
+     "texto": "Jehová envió a Moisés y a Aarón a sacar a los padres de Egipto",
+     "certeza": "texto",
+     "ref": "1S 12:8",
+     "cita": "Jehová envió á Moisés y á Aarón"
+    }
+   ],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:6"
+    },
+    {
+     "ref": "1S 12:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová hizo a Moisés y a Aarón",
+     "certeza": "texto",
+     "ref": "1S 12:6",
+     "cita": "Jehová es quien hizo á Moisés y á Aarón"
+    }
+   ],
+   "externo": []
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Los padres entraron a Egipto con Jacob",
+     "certeza": "texto",
+     "ref": "1S 12:8",
+     "cita": "Después que Jacob hubo entrado en Egipto"
+    }
+   ],
+   "externo": []
+  },
+  "Rachel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 10:2"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Su sepulcro, en el término de Benjamín, en Selsa",
+     "certeza": "texto",
+     "ref": "1S 10:2",
+     "cita": "junto al sepulcro de Rachêl"
+    }
+   ],
+   "externo": []
+  },
+  "Pharaoh_4": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 2:27"
+    },
+    {
+     "ref": "1S 6:6"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "El varón de Dios recuerda a Israel «en casa de Faraón»",
+     "certeza": "texto",
+     "ref": "1S 2:27",
+     "cita": "en Egipto en casa de Faraón"
+    },
+    {
+     "texto": "Los egipcios y Faraón endurecieron su corazón",
+     "certeza": "texto",
+     "ref": "1S 6:6",
+     "cita": "los Egipcios y Faraón endurecieron su corazón"
+    }
+   ],
+   "externo": []
+  },
+  "Sisera_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:9"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová vendió a Israel en la mano de Sísara",
+     "certeza": "texto",
+     "ref": "1S 12:9",
+     "cita": "en la mano de Sísara capitán del ejército de Asor"
+    }
+   ],
+   "externo": []
+  },
+  "Barak_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "En 12:11 la RV1909 dice «Bedán»; BibleData y Brenton («Barac») lo toman por Barac; el texto RV no lo dice",
+     "certeza": "inferido",
+     "ref": "1S 12:11",
+     "cita": "á Bedán"
+    }
+   ],
+   "externo": []
+  },
+  "Gideon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "En 12:11 se nombra a «Jerobaal»; Jue 6:32 da ese nombre a Gedeón",
+     "certeza": "texto",
+     "ref": "1S 12:11",
+     "cita": "á Jerobaal"
+    }
+   ],
+   "externo": []
+  },
+  "Jephthah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1S 12:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jehová envió a Jefté (RV1909: «Jephté»)",
+     "certeza": "texto",
+     "ref": "1S 12:11",
+     "cita": "á Jephté"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "1S 3:3",
+     "fin": "1S 3:3"
+    },
+    {
+     "inicio": "1S 4:3",
+     "fin": "1S 4:22"
+    },
+    {
+     "inicio": "1S 5:1",
+     "fin": "1S 5:12"
+    },
+    {
+     "inicio": "1S 6:1",
+     "fin": "1S 6:21"
+    },
+    {
+     "inicio": "1S 7:1",
+     "fin": "1S 7:2"
+    },
+    {
+     "inicio": "1S 14:18",
+     "fin": "1S 14:18"
+    }
+   ],
+   "personas": [
+    "Hophni_1",
+    "Phinehas_2",
+    "Eli_1",
+    "Abinadab_1",
+    "Eleazar_2",
+    "Ahijah_1"
+   ],
+   "lugares": [
+    "siloh",
+    "eben-ezer",
+    "asdod",
+    "gat",
+    "ecron",
+    "bet-semes",
+    "quiriat-jearim"
+   ],
+   "resumen": "En 1 Samuel el arca es llevada a la batalla, tomada por los filisteos, devuelta con una ofrenda y depositada en Quiriat-jearim.",
+   "datos": [
+    {
+     "texto": "En 1 S se llama «arca de Dios», «arca de Jehová» y «arca del pacto»",
+     "certeza": "texto",
+     "ref": "1S 4:3",
+     "cita": "arca del pacto de Jehová"
+    },
+    {
+     "texto": "Samuel duerme en el templo de Jehová, donde estaba el arca",
+     "certeza": "texto",
+     "ref": "1S 3:3",
+     "cita": "Samuel estaba durmiendo en el templo de Jehová, donde el arca de Dios estaba"
+    },
+    {
+     "texto": "La traen de Silo; Jehová está «entre los querubines»",
+     "certeza": "texto",
+     "ref": "1S 4:4",
+     "cita": "trajeron de allá el arca del pacto de Jehová de los ejércitos, que estaba asentado entre los querubines"
+    },
+    {
+     "texto": "Al llegar al campo, Israel grita y la tierra tiembla",
+     "certeza": "texto",
+     "ref": "1S 4:5",
+     "cita": "todo Israel dió grita con tan gran júbilo, que la tierra tembló"
+    },
+    {
+     "texto": "Los filisteos la toman",
+     "certeza": "texto",
+     "ref": "1S 4:11",
+     "cita": "el arca de Dios fué tomada"
+    },
+    {
+     "texto": "La ponen en el templo de Dagón junto a Dagón",
+     "certeza": "texto",
+     "ref": "1S 5:2",
+     "cita": "metiéronla en la casa de Dagón, y pusiéronla junto á Dagón"
+    },
+    {
+     "texto": "Dagón cae postrado delante de ella",
+     "certeza": "texto",
+     "ref": "1S 5:3",
+     "cita": "Dagón postrado en tierra delante del arca de Jehová"
+    },
+    {
+     "texto": "La pasan a Gat y luego a Ecrón",
+     "certeza": "texto",
+     "ref": "1S 5:8",
+     "cita": "Pásese el arca del Dios de Israel á Gath"
+    },
+    {
+     "texto": "Estuvo siete meses en tierra filistea",
+     "certeza": "texto",
+     "ref": "1S 6:1",
+     "cita": "el arca de Jehová en la tierra de los Filisteos siete meses"
+    },
+    {
+     "texto": "Las vacas la llevan hacia Bet-semes",
+     "certeza": "texto",
+     "ref": "1S 6:12",
+     "cita": "se encaminaron por el camino de Beth-semes"
+    },
+    {
+     "texto": "Hieren a los de Bet-semes porque miraron en el arca",
+     "certeza": "texto",
+     "ref": "1S 6:19",
+     "cita": "porque habían mirado en el arca de Jehová"
+    },
+    {
+     "texto": "Los de Bet-semes avisan a Quiriat-jearim",
+     "certeza": "texto",
+     "ref": "1S 6:21",
+     "cita": "Los Filisteos han vuelto el arca de Jehová"
+    },
+    {
+     "texto": "Queda en casa de Abinadab, en el collado",
+     "certeza": "texto",
+     "ref": "1S 7:1",
+     "cita": "metiéronla en casa de Abinadab, [situada] en el collado"
+    },
+    {
+     "texto": "Pasan «muchos días, veinte años» en Quiriat-jearim",
+     "certeza": "texto",
+     "ref": "1S 7:2",
+     "cita": "pasaron muchos días, veinte años"
+    },
+    {
+     "texto": "Saúl: «Trae el arca de Dios»",
+     "certeza": "texto",
+     "ref": "1S 14:18",
+     "cita": "Trae el arca de Dios"
+    }
+   ],
+   "externo": []
+  },
+  "hemorroides-y-ratones-de-oro": {
+   "nombre": "Hemorroides y ratones de oro",
+   "tipo": "ofrenda de expiación",
+   "apariciones": [
+    {
+     "inicio": "1S 6:3",
+     "fin": "1S 6:5"
+    },
+    {
+     "inicio": "1S 6:8",
+     "fin": "1S 6:8"
+    },
+    {
+     "inicio": "1S 6:11",
+     "fin": "1S 6:11"
+    },
+    {
+     "inicio": "1S 6:15",
+     "fin": "1S 6:15"
+    },
+    {
+     "inicio": "1S 6:17",
+     "fin": "1S 6:18"
+    }
+   ],
+   "personas": [],
+   "lugares": [
+    "asdod",
+    "gaza",
+    "ascalon",
+    "gat",
+    "ecron"
+   ],
+   "resumen": "La expiación que los filisteos pagan a Jehová al devolver el arca: formas de oro de sus hemorroides y de ratones. La RV1909 usa «hemorroides».",
+   "datos": [
+    {
+     "texto": "Cinco hemorroides de oro y cinco ratones de oro, según el número de los príncipes",
+     "certeza": "texto",
+     "ref": "1S 6:4",
+     "cita": "cinco hemorroides de oro, y cinco ratones de oro"
+    },
+    {
+     "texto": "Harán «las formas» de las hemorroides y de los ratones que destruyen la tierra",
+     "certeza": "texto",
+     "ref": "1S 6:5",
+     "cita": "las formas de vuestras hemorroides, y las formas de vuestros ratones que destruyen la tierra"
+    },
+    {
+     "texto": "Van en una caja al lado del arca",
+     "certeza": "texto",
+     "ref": "1S 6:8",
+     "cita": "poned en una caja al lado de ella las alhajas de oro"
+    },
+    {
+     "texto": "Una por Asdod, Gaza, Ascalón, Gat y Ecrón",
+     "certeza": "texto",
+     "ref": "1S 6:17",
+     "cita": "por Asdod una, por Gaza una, por Ascalón una, por Gath una, por Ecrón una"
+    },
+    {
+     "texto": "Los ratones, según 6:18, son «conforme al número de todas las ciudades» (distinto de los cinco de 6:4; sin armonizar)",
+     "certeza": "texto",
+     "ref": "1S 6:18",
+     "cita": "ratones de oro conforme al número de todas las ciudades de los Filisteos"
+    }
+   ],
+   "externo": []
+  },
+  "carro-nuevo-vacas-y-gran-piedra": {
+   "nombre": "Carro nuevo, dos vacas y gran piedra de Bet-semes",
+   "tipo": "carro",
+   "apariciones": [
+    {
+     "inicio": "1S 6:7",
+     "fin": "1S 6:7"
+    },
+    {
+     "inicio": "1S 6:9",
+     "fin": "1S 6:14"
+    },
+    {
+     "inicio": "1S 6:18",
+     "fin": "1S 6:18"
+    }
+   ],
+   "personas": [
+    "Joshua_2"
+   ],
+   "lugares": [
+    "bet-semes"
+   ],
+   "resumen": "El carro nuevo con dos vacas que crían, sin yugo, lleva el arca por el camino de Bet-semes; se detiene junto a una gran piedra, y las vacas se ofrecen en holocausto.",
+   "datos": [
+    {
+     "texto": "Un carro nuevo y dos vacas que críen",
+     "certeza": "texto",
+     "ref": "1S 6:7",
+     "cita": "un carro nuevo, y tomad luego dos vacas que críen"
+    },
+    {
+     "texto": "La señal: si sube por el camino de Bet-semes, Jehová hizo el mal",
+     "certeza": "texto",
+     "ref": "1S 6:9",
+     "cita": "si sube por el camino de su término á Beth-semes, él nos ha hecho este mal [tan] grande"
+    },
+    {
+     "texto": "Iban bramando, sin apartarse a diestra ni a siniestra",
+     "certeza": "texto",
+     "ref": "1S 6:12",
+     "cita": "iban por un mismo camino andando y bramando, sin apartarse ni á diestra ni á siniestra"
+    },
+    {
+     "texto": "Cortan la madera del carro y ofrecen las vacas en holocausto",
+     "certeza": "texto",
+     "ref": "1S 6:14",
+     "cita": "cortaron la madera del carro, y ofrecieron las vacas en holocausto á Jehová"
+    },
+    {
+     "texto": "Una gran piedra, en el campo de Josué, que sigue allí «hasta hoy»",
+     "certeza": "texto",
+     "ref": "1S 6:18",
+     "cita": "en el campo de Josué Beth-semita hasta hoy"
+    }
+   ],
+   "externo": []
+  },
+  "piedra-eben-ezer": {
+   "nombre": "Piedra Eben-ezer",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "1S 7:12",
+     "fin": "1S 7:12"
+    }
+   ],
+   "personas": [
+    "Samuel_2"
+   ],
+   "lugares": [
+    "piedra-de-eben-ezer",
+    "mizpa-18-26",
+    "sen"
+   ],
+   "resumen": "Piedra que Samuel pone entre Mizpa y Sen. No es la ciudad Eben-ezer de 4:1.",
+   "datos": [
+    {
+     "texto": "Samuel la pone entre Mizpa y Sen",
+     "certeza": "texto",
+     "ref": "1S 7:12",
+     "cita": "una piedra, y púsola entre Mizpa y Sen"
+    },
+    {
+     "texto": "La llama Eben-ezer: «Hasta aquí nos ayudó Jehová»",
+     "certeza": "texto",
+     "ref": "1S 7:12",
+     "cita": "Hasta aquí nos ayudó Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "ampolla-de-aceite-de-saul": {
+   "nombre": "Ampolla de aceite de la unción de Saúl",
+   "tipo": "aceite de unción",
+   "apariciones": [
+    {
+     "inicio": "1S 9:16",
+     "fin": "1S 9:16"
+    },
+    {
+     "inicio": "1S 10:1",
+     "fin": "1S 10:1"
+    }
+   ],
+   "personas": [
+    "Samuel_2",
+    "Saul_1"
+   ],
+   "lugares": [],
+   "resumen": "Con ella Samuel unge a Saúl como capitán sobre la heredad de Jehová.",
+   "datos": [
+    {
+     "texto": "Jehová anuncia a Samuel que ungirá a un benjaminita por príncipe",
+     "certeza": "texto",
+     "ref": "1S 9:16",
+     "cita": "ungirás por príncipe sobre mi pueblo Israel"
+    },
+    {
+     "texto": "Samuel toma una ampolla y la derrama sobre su cabeza",
+     "certeza": "texto",
+     "ref": "1S 10:1",
+     "cita": "una ampolla de aceite, derramóla sobre su cabeza"
+    }
+   ],
+   "externo": []
+  },
+  "libro-del-derecho-del-reino": {
+   "nombre": "Libro del derecho del reino",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "1S 10:25",
+     "fin": "1S 10:25"
+    }
+   ],
+   "personas": [
+    "Samuel_2"
+   ],
+   "lugares": [],
+   "resumen": "Samuel recita el derecho del reino al pueblo, lo escribe en un libro y lo guarda delante de Jehová. El texto no dice su contenido.",
+   "datos": [
+    {
+     "texto": "Lo recita, lo escribe y lo guarda delante de Jehová",
+     "certeza": "texto",
+     "ref": "1S 10:25",
+     "cita": "escribiólo en un libro, el cual guardó delante de Jehová"
+    },
+    {
+     "texto": "En 8:11 Samuel había hablado del «derecho del rey» (sin que el texto lo relacione con este libro)",
+     "certeza": "texto",
+     "ref": "1S 8:11",
+     "cita": "Este será el derecho del rey que hubiere de reinar sobre vosotros"
+    }
+   ],
+   "externo": []
+  },
+  "cuerno-de-aceite-de-samuel": {
+   "nombre": "Cuerno de aceite de Samuel",
+   "tipo": "aceite de unción",
+   "apariciones": [
+    {
+     "inicio": "1S 16:1",
+     "fin": "1S 16:1"
+    },
+    {
+     "inicio": "1S 16:13",
+     "fin": "1S 16:13"
+    }
+   ],
+   "personas": [
+    "Samuel_2",
+    "David_1"
+   ],
+   "lugares": [
+    "belen"
+   ],
+   "resumen": "Cuerno con el que Samuel unge a David de entre sus hermanos.",
+   "datos": [
+    {
+     "texto": "Jehová: «Hinche tu cuerno de aceite»",
+     "certeza": "texto",
+     "ref": "1S 16:1",
+     "cita": "Hinche tu cuerno de aceite"
+    },
+    {
+     "texto": "Samuel unge a David con él",
+     "certeza": "texto",
+     "ref": "1S 16:13",
+     "cita": "Samuel tomó el cuerno del aceite, y ungiólo de entre sus hermanos"
+    }
+   ],
+   "externo": []
+  },
+  "arpa-de-david": {
+   "nombre": "Arpa de David",
+   "tipo": "instrumento",
+   "apariciones": [
+    {
+     "inicio": "1S 16:16",
+     "fin": "1S 16:23"
+    },
+    {
+     "inicio": "1S 18:10",
+     "fin": "1S 18:10"
+    },
+    {
+     "inicio": "1S 19:9",
+     "fin": "1S 19:9"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Saul_1"
+   ],
+   "lugares": [],
+   "resumen": "Con ella David da alivio a Saúl cuando lo atormenta el espíritu malo.",
+   "datos": [
+    {
+     "texto": "Los criados piden a alguien que sepa tocar el arpa",
+     "certeza": "texto",
+     "ref": "1S 16:16",
+     "cita": "alguno que sepa tocar el arpa"
+    },
+    {
+     "texto": "David tañe y Saúl tiene refrigerio",
+     "certeza": "texto",
+     "ref": "1S 16:23",
+     "cita": "David tomaba el arpa, y tañía con su mano; y Saúl tenía refrigerio"
+    },
+    {
+     "texto": "Saúl le arroja la lanza mientras David tañe",
+     "certeza": "texto",
+     "ref": "1S 18:10",
+     "cita": "David tañía con su mano como los otros días"
+    },
+    {
+     "texto": "Otra vez David tañe cuando Saúl tira la lanza",
+     "certeza": "texto",
+     "ref": "1S 19:9",
+     "cita": "mientras David estaba tañendo con su mano"
+    }
+   ],
+   "externo": []
+  },
+  "armadura-de-saul": {
+   "nombre": "Almete, coraza y espada de Saúl en David",
+   "tipo": "armadura",
+   "apariciones": [
+    {
+     "inicio": "1S 17:38",
+     "fin": "1S 17:39"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "David_1"
+   ],
+   "lugares": [
+    "valle-de-ela"
+   ],
+   "resumen": "Saúl viste a David con su armadura; David no puede andar con ella y se la quita.",
+   "datos": [
+    {
+     "texto": "Almete de acero y coraza",
+     "certeza": "texto",
+     "ref": "1S 17:38",
+     "cita": "puso sobre su cabeza un almete de acero, y armóle de coraza"
+    },
+    {
+     "texto": "David prueba a andar con la espada sobre sus vestidos",
+     "certeza": "texto",
+     "ref": "1S 17:39",
+     "cita": "probó á andar, porque nunca había probado"
+    },
+    {
+     "texto": "«Yo no puedo andar con esto»",
+     "certeza": "texto",
+     "ref": "1S 17:39",
+     "cita": "Yo no puedo andar con esto, porque nunca lo practiqué"
+    }
+   ],
+   "externo": []
+  },
+  "honda-y-cinco-piedras": {
+   "nombre": "Honda, cayado y cinco piedras lisas de David",
+   "tipo": "arma de pastor",
+   "apariciones": [
+    {
+     "inicio": "1S 17:40",
+     "fin": "1S 17:40"
+    },
+    {
+     "inicio": "1S 17:49",
+     "fin": "1S 17:50"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Goliath_1"
+   ],
+   "lugares": [
+    "valle-de-ela"
+   ],
+   "resumen": "Lo que David lleva contra Goliat: su cayado, cinco piedras lisas del arroyo en su saco y su honda.",
+   "datos": [
+    {
+     "texto": "Escoge cinco piedras lisas del arroyo",
+     "certeza": "texto",
+     "ref": "1S 17:40",
+     "cita": "escogióse cinco piedras lisas del arroyo"
+    },
+    {
+     "texto": "Va con su honda en la mano",
+     "certeza": "texto",
+     "ref": "1S 17:40",
+     "cita": "con su honda en su mano"
+    },
+    {
+     "texto": "Tira una piedra con la honda",
+     "certeza": "texto",
+     "ref": "1S 17:49",
+     "cita": "tirósela con la honda, é hirió al Filisteo en la frente"
+    },
+    {
+     "texto": "Vence sin espada en la mano",
+     "certeza": "texto",
+     "ref": "1S 17:50",
+     "cita": "Así venció David al Filisteo con honda y piedra"
+    }
+   ],
+   "externo": []
+  },
+  "armas-de-goliat": {
+   "nombre": "Armadura y lanza de Goliat",
+   "tipo": "armadura",
+   "apariciones": [
+    {
+     "inicio": "1S 17:5",
+     "fin": "1S 17:7"
+    },
+    {
+     "inicio": "1S 17:54",
+     "fin": "1S 17:54"
+    }
+   ],
+   "personas": [
+    "Goliath_1",
+    "David_1"
+   ],
+   "lugares": [
+    "valle-de-ela"
+   ],
+   "resumen": "Almete, coraza, grebas, escudo y una lanza de asta como enjullo de telar.",
+   "datos": [
+    {
+     "texto": "La coraza pesa cinco mil siclos",
+     "certeza": "texto",
+     "ref": "1S 17:5",
+     "cita": "el peso de la coraza cinco mil siclos de metal"
+    },
+    {
+     "texto": "Grebas de hierro y escudo de acero",
+     "certeza": "texto",
+     "ref": "1S 17:6",
+     "cita": "grebas de hierro, y escudo de acero"
+    },
+    {
+     "texto": "Asta como enjullo de telar; el hierro, seiscientos siclos",
+     "certeza": "texto",
+     "ref": "1S 17:7",
+     "cita": "El asta de su lanza era como un enjullo de telar, y tenía el hierro de su lanza seiscientos siclos de hierro"
+    },
+    {
+     "texto": "David pone «sus armas» en su tienda (el texto dice «sus armas»)",
+     "certeza": "texto",
+     "ref": "1S 17:54",
+     "cita": "mas puso sus armas en su tienda"
+    }
+   ],
+   "externo": []
+  },
+  "espada-de-goliat": {
+   "nombre": "Espada de Goliat",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "1S 17:51",
+     "fin": "1S 17:51"
+    },
+    {
+     "inicio": "1S 21:8",
+     "fin": "1S 21:9"
+    },
+    {
+     "inicio": "1S 22:10",
+     "fin": "1S 22:10"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Goliath_1",
+    "Ahimelech_1",
+    "Doeg_1"
+   ],
+   "lugares": [
+    "valle-de-ela",
+    "nob"
+   ],
+   "resumen": "David mata a Goliat con su propia espada; luego queda en Nob, envuelta en un velo detrás del efod, y David la toma.",
+   "datos": [
+    {
+     "texto": "David la saca de su vaina y lo mata",
+     "certeza": "texto",
+     "ref": "1S 17:51",
+     "cita": "tomando la espada de él, sacándola de su vaina, matólo"
+    },
+    {
+     "texto": "Está en Nob envuelta en un velo detrás del efod",
+     "certeza": "texto",
+     "ref": "1S 21:9",
+     "cita": "está aquí envuelta en un velo detrás del ephod"
+    },
+    {
+     "texto": "«Ninguna como ella: dámela»",
+     "certeza": "texto",
+     "ref": "1S 21:9",
+     "cita": "Ninguna como ella: dámela"
+    },
+    {
+     "texto": "Doeg dice que Ahimelec también le dio esta espada",
+     "certeza": "texto",
+     "ref": "1S 22:10",
+     "cita": "también le dió la espada de Goliath el Filisteo"
+    }
+   ],
+   "externo": []
+  },
+  "ropa-y-armas-de-jonatan": {
+   "nombre": "Ropa, espada, arco y talabarte de Jonatán",
+   "tipo": "prenda y armas",
+   "apariciones": [
+    {
+     "inicio": "1S 18:4",
+     "fin": "1S 18:4"
+    }
+   ],
+   "personas": [
+    "Jonathan_2",
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "Lo que Jonatán da a David al hacer alianza. La RV1909 dice «la ropa», no «manto».",
+   "datos": [
+    {
+     "texto": "Jonatán se quita la ropa y se la da a David con otras ropas",
+     "certeza": "texto",
+     "ref": "1S 18:4",
+     "cita": "Jonathán se desnudó la ropa que tenía sobre sí, y dióla á David"
+    },
+    {
+     "texto": "También su espada, su arco y su talabarte",
+     "certeza": "texto",
+     "ref": "1S 18:4",
+     "cita": "hasta su espada, y su arco, y su talabarte"
+    }
+   ],
+   "externo": []
+  },
+  "lanza-de-saul": {
+   "nombre": "Lanza de Saúl",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "1S 18:10",
+     "fin": "1S 18:11"
+    },
+    {
+     "inicio": "1S 19:9",
+     "fin": "1S 19:10"
+    },
+    {
+     "inicio": "1S 20:33",
+     "fin": "1S 20:33"
+    },
+    {
+     "inicio": "1S 22:6",
+     "fin": "1S 22:6"
+    },
+    {
+     "inicio": "1S 26:7",
+     "fin": "1S 26:8"
+    },
+    {
+     "inicio": "1S 26:11",
+     "fin": "1S 26:12"
+    },
+    {
+     "inicio": "1S 26:16",
+     "fin": "1S 26:16"
+    },
+    {
+     "inicio": "1S 26:22",
+     "fin": "1S 26:22"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "David_1",
+    "Jonathan_2",
+    "Abishai_1",
+    "Abner_1"
+   ],
+   "lugares": [
+    "haquila"
+   ],
+   "resumen": "Lanza que Saúl tiene a mano; la arroja contra David y contra Jonatán y David se la lleva de su cabecera. El texto no afirma que sea siempre la misma lanza.",
+   "datos": [
+    {
+     "texto": "«Una lanza» a mano de Saúl",
+     "certeza": "texto",
+     "ref": "1S 18:10",
+     "cita": "estaba una lanza á mano de Saúl"
+    },
+    {
+     "texto": "Dos veces David se aparta",
+     "certeza": "texto",
+     "ref": "1S 18:11",
+     "cita": "Y dos veces se apartó de él David"
+    },
+    {
+     "texto": "Hiere con la lanza en la pared",
+     "certeza": "texto",
+     "ref": "1S 19:10",
+     "cita": "el cual hirió con la lanza en la pared"
+    },
+    {
+     "texto": "Se la arroja a Jonatán",
+     "certeza": "texto",
+     "ref": "1S 20:33",
+     "cita": "Saúl le arrojó una lanza por herirlo"
+    },
+    {
+     "texto": "En Gabaa la tiene en la mano bajo un árbol",
+     "certeza": "texto",
+     "ref": "1S 22:6",
+     "cita": "tenía su lanza en su mano"
+    },
+    {
+     "texto": "Hincada en tierra a su cabecera",
+     "certeza": "texto",
+     "ref": "1S 26:7",
+     "cita": "su lanza hincada en tierra á su cabecera"
+    },
+    {
+     "texto": "David se la lleva",
+     "certeza": "texto",
+     "ref": "1S 26:12",
+     "cita": "Llevóse pues David la lanza y la botija de agua de la cabecera de Saúl"
+    },
+    {
+     "texto": "David: «He aquí la lanza del rey»",
+     "certeza": "texto",
+     "ref": "1S 26:22",
+     "cita": "He aquí la lanza del rey; pase acá uno de los criados, y tómela"
+    }
+   ],
+   "externo": []
+  },
+  "botija-de-agua-de-saul": {
+   "nombre": "Botija de agua de Saúl",
+   "tipo": "utensilio",
+   "apariciones": [
+    {
+     "inicio": "1S 26:11",
+     "fin": "1S 26:12"
+    },
+    {
+     "inicio": "1S 26:16",
+     "fin": "1S 26:16"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Abishai_1",
+    "Saul_1"
+   ],
+   "lugares": [
+    "haquila"
+   ],
+   "resumen": "Vasija de agua junto a la cabecera de Saúl; David se la lleva con la lanza.",
+   "datos": [
+    {
+     "texto": "David: «toma la lanza... y la botija del agua»",
+     "certeza": "texto",
+     "ref": "1S 26:11",
+     "cita": "toma ahora la lanza que está á su cabecera, y la botija del agua, y vámonos"
+    },
+    {
+     "texto": "David reprocha a Abner que no la guardaron",
+     "certeza": "texto",
+     "ref": "1S 26:16",
+     "cita": "la botija del agua que estaba á su cabecera"
+    }
+   ],
+   "externo": []
+  },
+  "capa-de-samuel-rasgada": {
+   "nombre": "Capa de Samuel, rasgada",
+   "tipo": "prenda",
+   "apariciones": [
+    {
+     "inicio": "1S 15:27",
+     "fin": "1S 15:28"
+    }
+   ],
+   "personas": [
+    "Samuel_2",
+    "Saul_1"
+   ],
+   "lugares": [
+    "gilgal"
+   ],
+   "resumen": "Al irse Samuel, la orilla de su capa se desgarra y Samuel dice que Jehová ha desgarrado el reino de Saúl. El texto dice «él echó mano»; por el contexto se entiende que es Saúl.",
+   "datos": [
+    {
+     "texto": "«Él echó mano de la orla de su capa, y desgarróse»",
+     "certeza": "texto",
+     "ref": "1S 15:27",
+     "cita": "él echó mano de la orla de su capa, y desgarróse"
+    },
+    {
+     "texto": "Quien la toma es Saúl y la capa es la de Samuel (el texto dice solo «él» y «su capa»)",
+     "certeza": "inferido",
+     "ref": "1S 15:27",
+     "cita": "volviéndose Samuel para irse"
+    },
+    {
+     "texto": "Samuel: «Jehová ha desgarrado hoy de ti el reino de Israel»",
+     "certeza": "texto",
+     "ref": "1S 15:28",
+     "cita": "Jehová ha desgarrado hoy de ti el reino de Israel"
+    }
+   ],
+   "externo": []
+  },
+  "orla-del-manto-de-saul": {
+   "nombre": "Orla del manto de Saúl",
+   "tipo": "prenda",
+   "apariciones": [
+    {
+     "inicio": "1S 24:4",
+     "fin": "1S 24:6"
+    },
+    {
+     "inicio": "1S 24:11",
+     "fin": "1S 24:12"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Saul_1"
+   ],
+   "lugares": [
+    "engedi"
+   ],
+   "resumen": "David la corta en silencio en la cueva y luego se la muestra a Saúl como prueba de que no lo mató.",
+   "datos": [
+    {
+     "texto": "Corta la orilla del manto de Saúl",
+     "certeza": "texto",
+     "ref": "1S 24:5",
+     "cita": "calladamente cortó la orilla del manto de Saúl"
+    },
+    {
+     "texto": "Le golpea el corazón por haberlo hecho",
+     "certeza": "texto",
+     "ref": "1S 24:6",
+     "cita": "el corazón de David le golpeaba"
+    },
+    {
+     "texto": "Se la muestra: «mira aún la orilla de tu manto en mi mano»",
+     "certeza": "texto",
+     "ref": "1S 24:12",
+     "cita": "mira aún la orilla de tu manto en mi mano"
+    }
+   ],
+   "externo": []
+  },
+  "panes-de-la-proposicion": {
+   "nombre": "Doce tortas sobre la mesa (panes de la proposición)",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "1S 21:3",
+     "fin": "1S 21:6"
+    }
+   ],
+   "personas": [
+    "Ahimelech_1",
+    "David_1"
+   ],
+   "lugares": [
+    "nob"
+   ],
+   "resumen": "En Nob el sacerdote da a David los panes de la proposición porque no hay otro pan.",
+   "datos": [
+    {
+     "texto": "Ahimelec: «solamente tengo pan sagrado»",
+     "certeza": "texto",
+     "ref": "1S 21:4",
+     "cita": "No tengo pan común á la mano; solamente tengo pan sagrado"
+    },
+    {
+     "texto": "Condiciona darlo a que los criados se hayan guardado de mujeres",
+     "certeza": "texto",
+     "ref": "1S 21:4",
+     "cita": "si los criados se han guardado mayormente de mujeres"
+    },
+    {
+     "texto": "Era el pan de la proposición, quitado de delante de Jehová",
+     "certeza": "texto",
+     "ref": "1S 21:6",
+     "cita": "los panes de la proposición, los cuales habían sido quitados de delante de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "efod-sacerdotal": {
+   "nombre": "Efod",
+   "tipo": "vestidura sacerdotal",
+   "apariciones": [
+    {
+     "inicio": "1S 2:18",
+     "fin": "1S 2:18"
+    },
+    {
+     "inicio": "1S 2:28",
+     "fin": "1S 2:28"
+    },
+    {
+     "inicio": "1S 14:3",
+     "fin": "1S 14:3"
+    },
+    {
+     "inicio": "1S 21:9",
+     "fin": "1S 21:9"
+    },
+    {
+     "inicio": "1S 22:18",
+     "fin": "1S 22:18"
+    },
+    {
+     "inicio": "1S 23:6",
+     "fin": "1S 23:6"
+    },
+    {
+     "inicio": "1S 23:9",
+     "fin": "1S 23:9"
+    },
+    {
+     "inicio": "1S 30:7",
+     "fin": "1S 30:7"
+    }
+   ],
+   "personas": [
+    "Samuel_2",
+    "Ahijah_1",
+    "Ahimelech_1",
+    "Abiathar_1",
+    "David_1"
+   ],
+   "lugares": [
+    "nob",
+    "ceila",
+    "siclag"
+   ],
+   "resumen": "El texto usa «efod» para la vestidura de lino de Samuel y de los sacerdotes y para lo que el sacerdote trae ante Jehová; no lo describe. No se afirma que sea siempre el mismo objeto; los efods de Gedeón (Jue 8:27) y de Micaía (Jue 17:5) son otros.",
+   "datos": [
+    {
+     "texto": "Samuel, vestido de un efod de lino",
+     "certeza": "texto",
+     "ref": "1S 2:18",
+     "cita": "vestido de un ephod de lino"
+    },
+    {
+     "texto": "Jehová escogió a la casa de Elí para traer efod delante de él",
+     "certeza": "texto",
+     "ref": "1S 2:28",
+     "cita": "trajese ephod delante de mí"
+    },
+    {
+     "texto": "Ahías lo lleva",
+     "certeza": "texto",
+     "ref": "1S 14:3",
+     "cita": "llevaba el ephod"
+    },
+    {
+     "texto": "La espada de Goliat está detrás del efod",
+     "certeza": "texto",
+     "ref": "1S 21:9",
+     "cita": "detrás del ephod"
+    },
+    {
+     "texto": "Ochenta y cinco varones «que vestían efod de lino»",
+     "certeza": "texto",
+     "ref": "1S 22:18",
+     "cita": "ochenta y cinco varones que vestían ephod de lino"
+    },
+    {
+     "texto": "Abiatar llega a Keila con él",
+     "certeza": "texto",
+     "ref": "1S 23:6",
+     "cita": "vino también con él el ephod"
+    },
+    {
+     "texto": "David: «Trae el efod»; después consulta a Jehová (la relación entre ambos se infiere del orden del texto)",
+     "certeza": "inferido",
+     "ref": "1S 23:9",
+     "cita": "Trae el ephod"
+    },
+    {
+     "texto": "En Siclag David pide que se lo acerquen",
+     "certeza": "texto",
+     "ref": "1S 30:7",
+     "cita": "me acerques el ephod"
+    }
+   ],
+   "externo": []
+  },
+  "urim-y-tumim": {
+   "nombre": "Urim y Tumim",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "1S 28:6",
+     "fin": "1S 28:6"
+    }
+   ],
+   "personas": [
+    "Saul_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Saúl consulta a Jehová y no responde ni por sueños, ni por Urim, ni por profetas",
+     "certeza": "texto",
+     "ref": "1S 28:6",
+     "cita": "ni por sueños, ni por Urim, ni por profetas"
+    }
+   ],
+   "externo": []
+  },
+  "estatua-en-la-cama": {
+   "nombre": "Estatua y almohada de pelos de cabra",
+   "tipo": "señuelo",
+   "apariciones": [
+    {
+     "inicio": "1S 19:13",
+     "fin": "1S 19:16"
+    }
+   ],
+   "personas": [
+    "Michal_1",
+    "Saul_1",
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "Mical pone una estatua en la cama de David para ganar tiempo; los mensajeros de Saúl la encuentran.",
+   "datos": [
+    {
+     "texto": "Pone la estatua en la cama con una almohada de pelos de cabra",
+     "certeza": "texto",
+     "ref": "1S 19:13",
+     "cita": "acomodóle por cabecera una almohada de pelos de cabra"
+    },
+    {
+     "texto": "Dice que David está enfermo",
+     "certeza": "texto",
+     "ref": "1S 19:14",
+     "cita": "Está enfermo"
+    },
+    {
+     "texto": "Los mensajeros hallan la estatua",
+     "certeza": "texto",
+     "ref": "1S 19:16",
+     "cita": "he aquí la estatua estaba en la cama"
+    }
+   ],
+   "externo": []
+  },
+  "saetas-de-jonatan": {
+   "nombre": "Las tres saetas de Jonatán",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "1S 20:20",
+     "fin": "1S 20:22"
+    },
+    {
+     "inicio": "1S 20:35",
+     "fin": "1S 20:40"
+    }
+   ],
+   "personas": [
+    "Jonathan_2",
+    "David_1"
+   ],
+   "lugares": [
+    "ezel"
+   ],
+   "resumen": "Señal convenida: Jonatán tira saetas junto a la piedra de Ezel y su palabra al criado dice a David si puede volver o debe huir.",
+   "datos": [
+    {
+     "texto": "Tirará tres saetas hacia aquel lado",
+     "certeza": "texto",
+     "ref": "1S 20:20",
+     "cita": "tiraré tres saetas hacia aquel lado"
+    },
+    {
+     "texto": "«Las saetas más acá de ti»: paz",
+     "certeza": "texto",
+     "ref": "1S 20:21",
+     "cita": "He allí las saetas más acá de ti, tómalas"
+    },
+    {
+     "texto": "«Las saetas más allá de ti»: vete",
+     "certeza": "texto",
+     "ref": "1S 20:22",
+     "cita": "He allí las saetas más allá de ti: vete"
+    },
+    {
+     "texto": "Tira una saeta más allá del muchacho",
+     "certeza": "texto",
+     "ref": "1S 20:36",
+     "cita": "él tiraba la saeta que pasara más allá de él"
+    }
+   ],
+   "externo": []
+  },
+  "provisiones-de-abigail": {
+   "nombre": "Provisiones de Abigail",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "1S 25:18",
+     "fin": "1S 25:18"
+    },
+    {
+     "inicio": "1S 25:27",
+     "fin": "1S 25:27"
+    },
+    {
+     "inicio": "1S 25:35",
+     "fin": "1S 25:35"
+    }
+   ],
+   "personas": [
+    "Abigail_1",
+    "David_1"
+   ],
+   "lugares": [
+    "carmel-15-55"
+   ],
+   "resumen": "Lo que Abigail lleva a David en asnos a espaldas de Nabal.",
+   "datos": [
+    {
+     "texto": "Doscientos panes, dos cueros de vino, cinco ovejas guisadas, cinco medidas de grano tostado, cien hilos de pasas, doscientos panes de higos",
+     "certeza": "texto",
+     "ref": "1S 25:18",
+     "cita": "doscientos panes, y dos cueros de vino, y cinco ovejas guisadas, y cinco medidas de grano tostado, y cien hilos de uvas pasas, y doscientos panes de higos secos"
+    },
+    {
+     "texto": "David lo recibe de su mano",
+     "certeza": "texto",
+     "ref": "1S 25:35",
+     "cita": "Y recibió David de su mano lo que le había traído"
+    }
+   ],
+   "externo": []
+  },
+  "armas-de-saul-en-el-templo-de-astarot": {
+   "nombre": "Armas de Saúl en el templo de Astarot",
+   "tipo": "trofeo",
+   "apariciones": [
+    {
+     "inicio": "1S 31:8",
+     "fin": "1S 31:10"
+    }
+   ],
+   "personas": [
+    "Saul_1"
+   ],
+   "lugares": [
+    "bet-san"
+   ],
+   "resumen": "Los filisteos despojan a Saúl; sus armas quedan en el templo de Astarot.",
+   "datos": [
+    {
+     "texto": "Le quitan las armas",
+     "certeza": "texto",
+     "ref": "1S 31:9",
+     "cita": "desnudáronle las armas"
+    },
+    {
+     "texto": "Ponen sus armas en el templo de Astarot",
+     "certeza": "texto",
+     "ref": "1S 31:10",
+     "cita": "pusieron sus armas en el templo de Astarot"
+    }
+   ],
+   "externo": []
+  },
+  "tunica-pequena-de-samuel": {
+   "nombre": "Túnica pequeña de Samuel",
+   "tipo": "prenda",
+   "apariciones": [
+    {
+     "inicio": "1S 2:19",
+     "fin": "1S 2:19"
+    }
+   ],
+   "personas": [
+    "Hannah_1",
+    "Samuel_2",
+    "Elkanah_2"
+   ],
+   "lugares": [],
+   "resumen": "La que su madre le hace cada año y le lleva al subir a Silo.",
+   "datos": [
+    {
+     "texto": "Se la hace su madre y se la trae cada año",
+     "certeza": "texto",
+     "ref": "1S 2:19",
+     "cita": "Y hacíale su madre una túnica pequeña, y traíasela cada año"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "siloh": {
+   "nombre": "Silo",
+   "apariciones": [
+    {
+     "inicio": "1S 1:3",
+     "fin": "1S 1:3"
+    },
+    {
+     "inicio": "1S 1:9",
+     "fin": "1S 1:18"
+    },
+    {
+     "inicio": "1S 1:24",
+     "fin": "1S 1:28"
+    },
+    {
+     "inicio": "1S 2:14",
+     "fin": "1S 2:14"
+    },
+    {
+     "inicio": "1S 3:1",
+     "fin": "1S 3:21"
+    },
+    {
+     "inicio": "1S 4:3",
+     "fin": "1S 4:4"
+    },
+    {
+     "inicio": "1S 4:12",
+     "fin": "1S 4:18"
+    },
+    {
+     "inicio": "1S 14:3",
+     "fin": "1S 14:3"
+    }
+   ],
+   "personas": [
+    "Elkanah_2",
+    "Hannah_1",
+    "Eli_1",
+    "Samuel_2",
+    "Hophni_1",
+    "Phinehas_2"
+   ],
+   "objetos": [
+    "arca-del-testimonio"
+   ],
+   "resumen": "En 1 Samuel: donde sube Elcana cada año, donde Ana ora y Samuel sirve ante Elí y Jehová se le manifiesta; de allí traen el arca a la batalla.",
+   "datos": [
+    {
+     "texto": "Elcana sube cada año a adorar y sacrificar en Silo",
+     "certeza": "texto",
+     "ref": "1S 1:3",
+     "cita": "á adorar y sacrificar á Jehová de los ejércitos en Silo"
+    },
+    {
+     "texto": "Ana ora junto al templo de Jehová",
+     "certeza": "texto",
+     "ref": "1S 1:9",
+     "cita": "junto á un pilar del templo de Jehová"
+    },
+    {
+     "texto": "Llevan a Samuel a la casa de Jehová en Silo",
+     "certeza": "texto",
+     "ref": "1S 1:24",
+     "cita": "trájolo á la casa de Jehová en Silo"
+    },
+    {
+     "texto": "Los sacerdotes tomaban su parte de todo israelita que venía a Silo",
+     "certeza": "texto",
+     "ref": "1S 2:14",
+     "cita": "De esta manera hacían á todo Israelita que venía á Silo"
+    },
+    {
+     "texto": "Jehová se manifiesta a Samuel en Silo",
+     "certeza": "texto",
+     "ref": "1S 3:21",
+     "cita": "Jehová se manifestó á Samuel en Silo con palabra de Jehová"
+    },
+    {
+     "texto": "De Silo traen el arca",
+     "certeza": "texto",
+     "ref": "1S 4:4",
+     "cita": "trajeron de allá el arca del pacto de Jehová de los ejércitos"
+    },
+    {
+     "texto": "El mensajero llega a Silo con la ropa rota y tierra en la cabeza",
+     "certeza": "texto",
+     "ref": "1S 4:12",
+     "cita": "vino aquel día á Silo, rotos sus vestidos y tierra sobre su cabeza"
+    }
+   ],
+   "externo": [],
+   "lugar": "siloh"
+  },
+  "rama-de-samuel": {
+   "nombre": "Ramá (Ramataim de Sofim), la casa de Samuel",
+   "apariciones": [
+    {
+     "inicio": "1S 1:1",
+     "fin": "1S 1:1"
+    },
+    {
+     "inicio": "1S 1:19",
+     "fin": "1S 1:19"
+    },
+    {
+     "inicio": "1S 2:11",
+     "fin": "1S 2:11"
+    },
+    {
+     "inicio": "1S 7:17",
+     "fin": "1S 7:17"
+    },
+    {
+     "inicio": "1S 8:4",
+     "fin": "1S 8:4"
+    },
+    {
+     "inicio": "1S 15:34",
+     "fin": "1S 15:34"
+    },
+    {
+     "inicio": "1S 16:13",
+     "fin": "1S 16:13"
+    },
+    {
+     "inicio": "1S 19:18",
+     "fin": "1S 19:19"
+    },
+    {
+     "inicio": "1S 25:1",
+     "fin": "1S 25:1"
+    },
+    {
+     "inicio": "1S 28:3",
+     "fin": "1S 28:3"
+    }
+   ],
+   "personas": [
+    "Elkanah_2",
+    "Samuel_2"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad de Elcana y luego de Samuel, donde juzga, tiene su altar y es sepultado.",
+   "datos": [
+    {
+     "texto": "Elcana es de Ramataim de Sofim",
+     "certeza": "texto",
+     "ref": "1S 1:1",
+     "cita": "Ramathaim de Sophim"
+    },
+    {
+     "texto": "Vuelven a su casa en Ramá",
+     "certeza": "texto",
+     "ref": "1S 1:19",
+     "cita": "vinieron á su casa en Ramatha"
+    },
+    {
+     "texto": "Samuel vuelve a Ramá porque allí está su casa y allí juzga",
+     "certeza": "texto",
+     "ref": "1S 7:17",
+     "cita": "porque allí estaba su casa, y allí juzgaba á Israel"
+    },
+    {
+     "texto": "Los ancianos vienen a Samuel en Ramá",
+     "certeza": "texto",
+     "ref": "1S 8:4",
+     "cita": "vinieron á Samuel en Rama"
+    },
+    {
+     "texto": "David y Samuel moran en Najoth",
+     "certeza": "texto",
+     "ref": "1S 19:18",
+     "cita": "moraron en Najoth"
+    },
+    {
+     "texto": "Lo sepultan en su casa en Ramá",
+     "certeza": "texto",
+     "ref": "1S 25:1",
+     "cita": "lo sepultaron en su casa en Rama"
+    }
+   ],
+   "externo": [],
+   "lugar": "rama-de-samuel"
+  },
+  "asdod-y-templo-de-dagon": {
+   "nombre": "Asdod y el templo de Dagón",
+   "apariciones": [
+    {
+     "inicio": "1S 5:1",
+     "fin": "1S 5:7"
+    }
+   ],
+   "personas": [],
+   "objetos": [
+    "arca-del-testimonio"
+   ],
+   "resumen": "Los filisteos ponen el arca junto a Dagón en Asdod; Dagón aparece caído dos mañanas y la mano de Jehová se agrava sobre la ciudad.",
+   "datos": [
+    {
+     "texto": "Meten el arca en la casa de Dagón",
+     "certeza": "texto",
+     "ref": "1S 5:2",
+     "cita": "metiéronla en la casa de Dagón"
+    },
+    {
+     "texto": "Dagón postrado delante del arca",
+     "certeza": "texto",
+     "ref": "1S 5:3",
+     "cita": "Dagón postrado en tierra delante del arca de Jehová"
+    },
+    {
+     "texto": "Su cabeza y las palmas de las manos cortadas sobre el umbral",
+     "certeza": "texto",
+     "ref": "1S 5:4",
+     "cita": "la cabeza de Dagón y las dos palmas de sus manos [estaban] cortadas sobre el umbral"
+    },
+    {
+     "texto": "Sus sacerdotes no pisan el umbral «hasta hoy»",
+     "certeza": "texto",
+     "ref": "1S 5:5",
+     "cita": "no pisan el umbral de Dagón en Asdod, hasta hoy"
+    },
+    {
+     "texto": "Jehová hiere a los de Asdod con hemorroides",
+     "certeza": "texto",
+     "ref": "1S 5:6",
+     "cita": "hiriólos con hemorroides en Asdod y en todos sus términos"
+    },
+    {
+     "texto": "Dagón es «nuestro dios» de los filisteos",
+     "certeza": "texto",
+     "ref": "1S 5:7",
+     "cita": "sobre nuestro dios Dagón"
+    }
+   ],
+   "externo": [],
+   "lugar": "asdod"
+  },
+  "bet-semes": {
+   "nombre": "Bet-semes",
+   "apariciones": [
+    {
+     "inicio": "1S 6:9",
+     "fin": "1S 6:20"
+    }
+   ],
+   "personas": [
+    "Joshua_2"
+   ],
+   "objetos": [
+    "arca-del-testimonio",
+    "carro-nuevo-vacas-y-gran-piedra"
+   ],
+   "resumen": "A donde llegan las vacas con el arca; los de Bet-semes la reciben, ofrecen holocaustos y luego la envían a Quiriat-jearim.",
+   "datos": [
+    {
+     "texto": "Segaban el trigo en el valle y se alegraron al ver el arca",
+     "certeza": "texto",
+     "ref": "1S 6:13",
+     "cita": "los de Beth-semes segaban el trigo en el valle"
+    },
+    {
+     "texto": "Los levitas bajan el arca y la caja",
+     "certeza": "texto",
+     "ref": "1S 6:15",
+     "cita": "los Levitas bajaron el arca de Jehová, y la caja que estaba junto á ella"
+    },
+    {
+     "texto": "Hieren a cincuenta mil y setenta hombres",
+     "certeza": "texto",
+     "ref": "1S 6:19",
+     "cita": "hirió en el pueblo cincuenta mil y setenta hombres"
+    },
+    {
+     "texto": "«¿Quién podrá estar delante de Jehová el Dios santo?»",
+     "certeza": "texto",
+     "ref": "1S 6:20",
+     "cita": "¿Quién podrá estar delante de Jehová el Dios santo?"
+    },
+    {
+     "texto": "Envían mensajeros a Quiriat-jearim",
+     "certeza": "texto",
+     "ref": "1S 6:21",
+     "cita": "enviaron mensajeros á los de Chîriath-jearim"
+    }
+   ],
+   "externo": [],
+   "lugar": "bet-semes"
+  },
+  "mizpa-de-benjamin": {
+   "nombre": "Mizpa, donde Israel se congrega",
+   "apariciones": [
+    {
+     "inicio": "1S 7:5",
+     "fin": "1S 7:12"
+    },
+    {
+     "inicio": "1S 7:16",
+     "fin": "1S 7:16"
+    },
+    {
+     "inicio": "1S 10:17",
+     "fin": "1S 10:25"
+    }
+   ],
+   "personas": [
+    "Samuel_2",
+    "Saul_1"
+   ],
+   "objetos": [
+    "piedra-eben-ezer",
+    "libro-del-derecho-del-reino"
+   ],
+   "resumen": "En 1 Samuel: donde Samuel reúne a Israel, que ayuna y derrama agua; allí vence a los filisteos y más tarde se elige a Saúl por suerte.",
+   "datos": [
+    {
+     "texto": "Sacan agua, la derraman ante Jehová y ayunan",
+     "certeza": "texto",
+     "ref": "1S 7:6",
+     "cita": "sacaron agua, y derramáronla delante de Jehová, y ayunaron aquel día"
+    },
+    {
+     "texto": "Samuel juzga en Mizpa",
+     "certeza": "texto",
+     "ref": "1S 7:6",
+     "cita": "juzgó Samuel á los hijos de Israel en Mizpa"
+    },
+    {
+     "texto": "Samuel convoca al pueblo en Mizpa",
+     "certeza": "texto",
+     "ref": "1S 10:17",
+     "cita": "Samuel convocó el pueblo á Jehová en Mizpa"
+    },
+    {
+     "texto": "Es tomada la tribu de Benjamín",
+     "certeza": "texto",
+     "ref": "1S 10:20",
+     "cita": "fué tomada la tribu de Benjamín"
+    },
+    {
+     "texto": "El pueblo: «Viva el rey»",
+     "certeza": "texto",
+     "ref": "1S 10:24",
+     "cita": "Viva el rey"
+    }
+   ],
+   "externo": [],
+   "lugar": "mizpa-18-26"
+  },
+  "gabaa-de-benjamin": {
+   "nombre": "Gabaa de Benjamín",
+   "apariciones": [
+    {
+     "inicio": "1S 10:26",
+     "fin": "1S 10:26"
+    },
+    {
+     "inicio": "1S 11:4",
+     "fin": "1S 11:5"
+    },
+    {
+     "inicio": "1S 13:2",
+     "fin": "1S 13:2"
+    },
+    {
+     "inicio": "1S 13:15",
+     "fin": "1S 13:16"
+    },
+    {
+     "inicio": "1S 14:2",
+     "fin": "1S 14:2"
+    },
+    {
+     "inicio": "1S 14:16",
+     "fin": "1S 14:16"
+    },
+    {
+     "inicio": "1S 15:34",
+     "fin": "1S 15:34"
+    },
+    {
+     "inicio": "1S 22:6",
+     "fin": "1S 22:6"
+    },
+    {
+     "inicio": "1S 23:19",
+     "fin": "1S 23:19"
+    },
+    {
+     "inicio": "1S 26:1",
+     "fin": "1S 26:1"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "Jonathan_2"
+   ],
+   "objetos": [
+    "lanza-de-saul"
+   ],
+   "resumen": "En 1 Samuel: la casa de Saúl («Gabaa de Saúl») y su campamento.",
+   "datos": [
+    {
+     "texto": "Saúl se va a su casa en Gabaa",
+     "certeza": "texto",
+     "ref": "1S 10:26",
+     "cita": "Saúl también se fué á su casa en Gabaa"
+    },
+    {
+     "texto": "«Gabaa de Saúl»",
+     "certeza": "texto",
+     "ref": "1S 11:4",
+     "cita": "Gabaa de Saúl"
+    },
+    {
+     "texto": "Mil con Jonatán en Gabaa de Benjamín",
+     "certeza": "texto",
+     "ref": "1S 13:2",
+     "cita": "los mil estuvieron con Jonathán en Gabaa de Benjamín"
+    },
+    {
+     "texto": "Saúl, bajo un granado en Migrón",
+     "certeza": "texto",
+     "ref": "1S 14:2",
+     "cita": "Saúl estaba en el término de Gabaa, debajo de un granado que hay en Migrón"
+    },
+    {
+     "texto": "Saúl sube a su casa en Gabaa",
+     "certeza": "texto",
+     "ref": "1S 15:34",
+     "cita": "Saúl subió á su casa en Gabaa de Saúl"
+    },
+    {
+     "texto": "Con su lanza en la mano, bajo un árbol",
+     "certeza": "texto",
+     "ref": "1S 22:6",
+     "cita": "Saúl en Gabaa debajo de un árbol en Rama"
+    },
+    {
+     "texto": "Los zifeos le informan de David",
+     "certeza": "texto",
+     "ref": "1S 26:1",
+     "cita": "Zipheos á Saúl en Gabaa"
+    }
+   ],
+   "externo": [],
+   "lugar": "gabaa"
+  },
+  "gilgal-de-samuel-y-saul": {
+   "nombre": "Gilgal de Samuel y Saúl",
+   "apariciones": [
+    {
+     "inicio": "1S 7:16",
+     "fin": "1S 7:16"
+    },
+    {
+     "inicio": "1S 10:8",
+     "fin": "1S 10:8"
+    },
+    {
+     "inicio": "1S 11:14",
+     "fin": "1S 11:15"
+    },
+    {
+     "inicio": "1S 13:4",
+     "fin": "1S 13:15"
+    },
+    {
+     "inicio": "1S 15:12",
+     "fin": "1S 15:12"
+    },
+    {
+     "inicio": "1S 15:21",
+     "fin": "1S 15:21"
+    },
+    {
+     "inicio": "1S 15:33",
+     "fin": "1S 15:33"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "Samuel_2",
+    "Agag_2"
+   ],
+   "objetos": [
+    "capa-de-samuel-rasgada"
+   ],
+   "resumen": "Donde Saúl es investido rey, espera siete días a Samuel, ofrece el holocausto, y donde Samuel mata a Agag.",
+   "datos": [
+    {
+     "texto": "Samuel le dice que espere siete días",
+     "certeza": "texto",
+     "ref": "1S 10:8",
+     "cita": "Espera siete días, hasta que yo venga á ti"
+    },
+    {
+     "texto": "Invisten a Saúl por rey",
+     "certeza": "texto",
+     "ref": "1S 11:15",
+     "cita": "invistieron allí á Saúl por rey delante de Jehová en Gilgal"
+    },
+    {
+     "texto": "Saúl espera siete días y Samuel no viene",
+     "certeza": "texto",
+     "ref": "1S 13:8",
+     "cita": "él esperó siete días, conforme al plazo que Samuel [había dicho]"
+    },
+    {
+     "texto": "Saúl: «ofrecí holocausto»",
+     "certeza": "texto",
+     "ref": "1S 13:12",
+     "cita": "Esforcéme pues, y ofrecí holocausto"
+    },
+    {
+     "texto": "Samuel corta en pedazos a Agag en Gilgal",
+     "certeza": "texto",
+     "ref": "1S 15:33",
+     "cita": "Samuel cortó en pedazos á Agag delante de Jehová en Gilgal"
+    }
+   ],
+   "externo": [],
+   "lugar": "gilgal"
+  },
+  "jabes-de-galaad": {
+   "nombre": "Jabes de Galaad",
+   "apariciones": [
+    {
+     "inicio": "1S 11:1",
+     "fin": "1S 11:11"
+    },
+    {
+     "inicio": "1S 31:11",
+     "fin": "1S 31:13"
+    }
+   ],
+   "personas": [
+    "Nahash_1",
+    "Saul_1"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad sitiada por Nahas que Saúl libra; después sus hombres rescatan el cuerpo de Saúl.",
+   "datos": [
+    {
+     "texto": "Nahas acampa contra Jabes",
+     "certeza": "texto",
+     "ref": "1S 11:1",
+     "cita": "asentó campo contra Jabes de Galaad"
+    },
+    {
+     "texto": "Piden siete días para enviar mensajeros",
+     "certeza": "texto",
+     "ref": "1S 11:3",
+     "cita": "Danos siete días, para que enviemos mensajeros á todos los términos de Israel"
+    },
+    {
+     "texto": "Saúl entra en el real a la vela de la mañana",
+     "certeza": "texto",
+     "ref": "1S 11:11",
+     "cita": "entraron en medio del real á la vela de la mañana"
+    },
+    {
+     "texto": "Sus valientes caminan toda la noche",
+     "certeza": "texto",
+     "ref": "1S 31:12",
+     "cita": "anduvieron toda aquella noche"
+    },
+    {
+     "texto": "Sepultan los huesos bajo un árbol y ayunan siete días",
+     "certeza": "texto",
+     "ref": "1S 31:13",
+     "cita": "sepultáronlos debajo de un árbol en Jabes, y ayunaron siete días"
+    }
+   ],
+   "externo": [],
+   "lugar": "jabes-de-galaad"
+  },
+  "micmas": {
+   "nombre": "Micmas",
+   "apariciones": [
+    {
+     "inicio": "1S 13:2",
+     "fin": "1S 13:2"
+    },
+    {
+     "inicio": "1S 13:5",
+     "fin": "1S 13:5"
+    },
+    {
+     "inicio": "1S 13:11",
+     "fin": "1S 13:11"
+    },
+    {
+     "inicio": "1S 13:16",
+     "fin": "1S 13:23"
+    },
+    {
+     "inicio": "1S 14:4",
+     "fin": "1S 14:5"
+    },
+    {
+     "inicio": "1S 14:31",
+     "fin": "1S 14:31"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "Jonathan_2"
+   ],
+   "objetos": [],
+   "resumen": "Campamento filisteo frente a Gabaa, entre dos peñascos, Boses y Sene.",
+   "datos": [
+    {
+     "texto": "Los filisteos acampan en Micmas, al oriente de Bet-aven",
+     "certeza": "texto",
+     "ref": "1S 13:5",
+     "cita": "asentaron campo en Michmas, al oriente de Beth-aven"
+    },
+    {
+     "texto": "No había herrero en toda la tierra de Israel",
+     "certeza": "texto",
+     "ref": "1S 13:19",
+     "cita": "no se hallaba herrero"
+    },
+    {
+     "texto": "Dos peñascos, Boses y Sene",
+     "certeza": "texto",
+     "ref": "1S 14:4",
+     "cita": "el uno se llamaba Boses y el otro Sene"
+    },
+    {
+     "texto": "Uno al norte hacia Micmas, otro al mediodía hacia Gabaa",
+     "certeza": "texto",
+     "ref": "1S 14:5",
+     "cita": "El un peñasco situado al norte hacia Michmas, y el otro al mediodía hacia Gabaa"
+    },
+    {
+     "texto": "Hieren a los filisteos desde Micmas hasta Ajalón",
+     "certeza": "texto",
+     "ref": "1S 14:31",
+     "cita": "hirieron aquel día á los Filisteos desde Michmas hasta Ajalón"
+    }
+   ],
+   "externo": [],
+   "lugar": "micmas"
+  },
+  "valle-de-ela": {
+   "nombre": "Valle de Ela («valle del Alcornoque» en la RV1909)",
+   "apariciones": [
+    {
+     "inicio": "1S 17:1",
+     "fin": "1S 17:3"
+    },
+    {
+     "inicio": "1S 17:19",
+     "fin": "1S 17:19"
+    },
+    {
+     "inicio": "1S 21:9",
+     "fin": "1S 21:9"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "David_1",
+    "Goliath_1"
+   ],
+   "objetos": [
+    "honda-y-cinco-piedras",
+    "armadura-de-saul",
+    "armas-de-goliat",
+    "espada-de-goliat"
+   ],
+   "resumen": "Donde Israel y los filisteos acampan frente a frente y David vence a Goliat.",
+   "datos": [
+    {
+     "texto": "Los filisteos acampan entre Soco y Azeca, en Efes-damim",
+     "certeza": "texto",
+     "ref": "1S 17:1",
+     "cita": "asentaron el campo entre Sochô y Azeca, en Ephes-dammim"
+    },
+    {
+     "texto": "Israel acampa en el valle del Alcornoque",
+     "certeza": "texto",
+     "ref": "1S 17:2",
+     "cita": "asentaron el campo en el valle del Alcornoque"
+    },
+    {
+     "texto": "Cada ejército sobre un monte, y el valle entre ellos",
+     "certeza": "texto",
+     "ref": "1S 17:3",
+     "cita": "y el valle entre ellos"
+    },
+    {
+     "texto": "La espada de Goliat, vencido en este valle",
+     "certeza": "texto",
+     "ref": "1S 21:9",
+     "cita": "que tú venciste en el valle del Alcornoque"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Khirbet Qeiyafa está en una loma sobre el valle de Elah, frontera entre Filistea y Judá; sus excavadores lo fechan en la primera mitad del siglo X a. C. y lo vinculan con el tiempo de David, vinculación que otros investigadores discuten. No prueba nada sobre el relato de Goliat.",
+     "fuente": "Wikipedia, «Khirbet Qeiyafa» (fuente secundaria, abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Khirbet_Qeiyafa"
+    }
+   ],
+   "lugar": "valle-de-ela"
+  },
+  "belen-de-isai": {
+   "nombre": "Belén, casa de Isaí",
+   "apariciones": [
+    {
+     "inicio": "1S 16:4",
+     "fin": "1S 16:5"
+    },
+    {
+     "inicio": "1S 17:12",
+     "fin": "1S 17:12"
+    },
+    {
+     "inicio": "1S 17:15",
+     "fin": "1S 17:15"
+    },
+    {
+     "inicio": "1S 17:58",
+     "fin": "1S 17:58"
+    }
+   ],
+   "personas": [
+    "Jesse_1",
+    "David_1",
+    "Samuel_2",
+    "Eliab_3"
+   ],
+   "objetos": [
+    "cuerno-de-aceite-de-samuel"
+   ],
+   "resumen": "Donde vive Isaí con sus hijos y a donde llega Samuel con su cuerno de aceite.",
+   "datos": [
+    {
+     "texto": "Los ancianos salen a recibir a Samuel con miedo",
+     "certeza": "texto",
+     "ref": "1S 16:4",
+     "cita": "los ancianos de la ciudad le salieron á recibir con miedo"
+    },
+    {
+     "texto": "Samuel dice venir a sacrificar y santifica a Isaí y a sus hijos",
+     "certeza": "texto",
+     "ref": "1S 16:5",
+     "cita": "santificaos, y venid conmigo al sacrificio"
+    },
+    {
+     "texto": "Isaí, efrateo de Belén de Judá",
+     "certeza": "texto",
+     "ref": "1S 17:12",
+     "cita": "Ephrateo de Beth-lehem de Judá"
+    },
+    {
+     "texto": "David apacienta las ovejas de su padre en Belén",
+     "certeza": "texto",
+     "ref": "1S 17:15",
+     "cita": "para apacentar las ovejas de su padre en Beth-lehem"
+    },
+    {
+     "texto": "David: «hijo de tu siervo Isaí de Belén»",
+     "certeza": "texto",
+     "ref": "1S 17:58",
+     "cita": "Yo soy hijo de tu siervo Isaí de Beth-lehem"
+    }
+   ],
+   "externo": [],
+   "lugar": "belen"
+  },
+  "nob": {
+   "nombre": "Nob, ciudad de los sacerdotes",
+   "apariciones": [
+    {
+     "inicio": "1S 21:1",
+     "fin": "1S 21:9"
+    },
+    {
+     "inicio": "1S 22:9",
+     "fin": "1S 22:11"
+    },
+    {
+     "inicio": "1S 22:19",
+     "fin": "1S 22:19"
+    }
+   ],
+   "personas": [
+    "Ahimelech_1",
+    "David_1",
+    "Doeg_1",
+    "Abiathar_1"
+   ],
+   "objetos": [
+    "panes-de-la-proposicion",
+    "espada-de-goliat",
+    "efod-sacerdotal"
+   ],
+   "resumen": "Donde David pide pan y recibe los panes sagrados y la espada de Goliat; después Saúl la pone a cuchillo.",
+   "datos": [
+    {
+     "texto": "David viene a Ahimelec, sacerdote",
+     "certeza": "texto",
+     "ref": "1S 21:1",
+     "cita": "á Ahimelech sacerdote"
+    },
+    {
+     "texto": "Doeg, siervo de Saúl, está allí detenido delante de Jehová",
+     "certeza": "texto",
+     "ref": "1S 21:7",
+     "cita": "detenido delante de Jehová"
+    },
+    {
+     "texto": "Doeg dice haber visto a David venir a Nob",
+     "certeza": "texto",
+     "ref": "1S 22:9",
+     "cita": "Yo vi al hijo de Isaí que vino á Nob"
+    },
+    {
+     "texto": "Saúl manda llamar a los sacerdotes que estaban en Nob",
+     "certeza": "texto",
+     "ref": "1S 22:11",
+     "cita": "los sacerdotes que estaban en Nob"
+    },
+    {
+     "texto": "Nob, ciudad de los sacerdotes, puesta a cuchillo",
+     "certeza": "texto",
+     "ref": "1S 22:19",
+     "cita": "Nob, ciudad de los sacerdotes"
+    }
+   ],
+   "externo": [],
+   "lugar": "nob"
+  },
+  "cueva-de-adulam": {
+   "nombre": "Cueva de Adulam",
+   "apariciones": [
+    {
+     "inicio": "1S 22:1",
+     "fin": "1S 22:2"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [],
+   "resumen": "Donde David se refugia y se le juntan su familia y unos cuatrocientos hombres afligidos.",
+   "datos": [
+    {
+     "texto": "David se escapa a la cueva de Adulam",
+     "certeza": "texto",
+     "ref": "1S 22:1",
+     "cita": "escapóse á la cueva de Adullam"
+    },
+    {
+     "texto": "Vienen sus hermanos y toda la casa de su padre",
+     "certeza": "texto",
+     "ref": "1S 22:1",
+     "cita": "sus hermanos y toda la casa de su padre, vinieron allí á él"
+    },
+    {
+     "texto": "Se juntan afligidos, endeudados y amargados",
+     "certeza": "texto",
+     "ref": "1S 22:2",
+     "cita": "todos los afligidos, y todo el que estaba adeudado, y todos los que se hallaban en amargura de espíritu"
+    },
+    {
+     "texto": "Unos cuatrocientos hombres",
+     "certeza": "texto",
+     "ref": "1S 22:2",
+     "cita": "como cuatrocientos hombres"
+    }
+   ],
+   "externo": [],
+   "lugar": "adulam"
+  },
+  "keila": {
+   "nombre": "Keila",
+   "apariciones": [
+    {
+     "inicio": "1S 23:1",
+     "fin": "1S 23:13"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Abiathar_1",
+    "Saul_1"
+   ],
+   "objetos": [
+    "efod-sacerdotal"
+   ],
+   "resumen": "Ciudad que David libra de los filisteos y de la que sale porque Jehová le dice que sus vecinos lo entregarán a Saúl.",
+   "datos": [
+    {
+     "texto": "Los filisteos combaten a Keila y roban las eras",
+     "certeza": "texto",
+     "ref": "1S 23:1",
+     "cita": "los Filisteos combaten á Keila, y roban las eras"
+    },
+    {
+     "texto": "David libra a los de Keila",
+     "certeza": "texto",
+     "ref": "1S 23:5",
+     "cita": "libró David á los de Keila"
+    },
+    {
+     "texto": "Saúl: «ciudad con puertas y cerraduras»",
+     "certeza": "texto",
+     "ref": "1S 23:7",
+     "cita": "habiéndose metido en ciudad con puertas y cerraduras"
+    },
+    {
+     "texto": "Jehová: los vecinos lo entregarán",
+     "certeza": "texto",
+     "ref": "1S 23:12",
+     "cita": "Te entregarán"
+    }
+   ],
+   "externo": [],
+   "lugar": "ceila"
+  },
+  "desierto-de-zif": {
+   "nombre": "Desierto de Zif",
+   "apariciones": [
+    {
+     "inicio": "1S 23:14",
+     "fin": "1S 23:15"
+    },
+    {
+     "inicio": "1S 23:19",
+     "fin": "1S 23:23"
+    },
+    {
+     "inicio": "1S 26:1",
+     "fin": "1S 26:3"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Saul_1",
+    "Jonathan_2"
+   ],
+   "objetos": [],
+   "resumen": "Donde David se esconde, donde Jonatán lo fortalece y donde los zifeos lo delatan dos veces a Saúl.",
+   "datos": [
+    {
+     "texto": "David habita en un monte del desierto de Zif",
+     "certeza": "texto",
+     "ref": "1S 23:14",
+     "cita": "habitaba en un monte en el desierto de Ziph"
+    },
+    {
+     "texto": "Jonatán viene a David en el bosque",
+     "certeza": "texto",
+     "ref": "1S 23:16",
+     "cita": "vino á David en el bosque"
+    },
+    {
+     "texto": "Los zifeos dicen a Saúl que David está en el collado de Haquila",
+     "certeza": "texto",
+     "ref": "1S 23:19",
+     "cita": "en el collado de Hachîla"
+    },
+    {
+     "texto": "Saúl baja al desierto de Zif con tres mil hombres",
+     "certeza": "texto",
+     "ref": "1S 26:2",
+     "cita": "descendió al desierto de Ziph, llevando consigo tres mil hombres escogidos de Israel"
+    }
+   ],
+   "externo": [],
+   "lugar": "desierto-de-zif"
+  },
+  "cueva-de-en-gadi": {
+   "nombre": "Cueva de En-gadi",
+   "apariciones": [
+    {
+     "inicio": "1S 24:1",
+     "fin": "1S 24:22"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Saul_1"
+   ],
+   "objetos": [
+    "orla-del-manto-de-saul"
+   ],
+   "resumen": "Cueva en una majada de ovejas donde Saúl entra «a cubrir sus pies» y David corta la orilla de su manto.",
+   "datos": [
+    {
+     "texto": "David habita en los parajes fuertes de En-gadi",
+     "certeza": "texto",
+     "ref": "1S 24:1",
+     "cita": "habitó en los parajes fuertes en Engaddi"
+    },
+    {
+     "texto": "Saúl busca a David con tres mil hombres",
+     "certeza": "texto",
+     "ref": "1S 24:3",
+     "cita": "tres mil hombres escogidos de todo Israel"
+    },
+    {
+     "texto": "Una majada con una cueva",
+     "certeza": "texto",
+     "ref": "1S 24:4",
+     "cita": "llegó á una majada de ovejas en el camino, donde había una cueva"
+    },
+    {
+     "texto": "David y los suyos estaban a los lados de la cueva",
+     "certeza": "texto",
+     "ref": "1S 24:4",
+     "cita": "David y los suyos estaban á los lados de la cueva"
+    }
+   ],
+   "externo": [],
+   "lugar": "engedi"
+  },
+  "carmel-de-nabal": {
+   "nombre": "Carmel de Nabal",
+   "apariciones": [
+    {
+     "inicio": "1S 25:2",
+     "fin": "1S 25:42"
+    },
+    {
+     "inicio": "1S 27:3",
+     "fin": "1S 27:3"
+    },
+    {
+     "inicio": "1S 30:5",
+     "fin": "1S 30:5"
+    }
+   ],
+   "personas": [
+    "Nabal_1",
+    "Abigail_1",
+    "David_1"
+   ],
+   "objetos": [
+    "provisiones-de-abigail"
+   ],
+   "resumen": "Donde Nabal esquila sus ovejas y vive Abigail.",
+   "datos": [
+    {
+     "texto": "Nabal tiene su hacienda en el Carmelo, en Maón",
+     "certeza": "texto",
+     "ref": "1S 25:2",
+     "cita": "en Maón había un hombre que tenía su hacienda en el Carmelo"
+    },
+    {
+     "texto": "David: a sus pastores nunca les hicieron fuerza",
+     "certeza": "texto",
+     "ref": "1S 25:7",
+     "cita": "nunca les hicimos fuerza"
+    },
+    {
+     "texto": "Los criados de David vienen a Abigail al Carmelo",
+     "certeza": "texto",
+     "ref": "1S 25:40",
+     "cita": "los criados de David vinieron á Abigail en el Carmelo"
+    }
+   ],
+   "externo": [],
+   "lugar": "carmel-15-55"
+  },
+  "gat-de-aquis": {
+   "nombre": "Gat, ciudad de Aquis",
+   "apariciones": [
+    {
+     "inicio": "1S 21:10",
+     "fin": "1S 21:15"
+    },
+    {
+     "inicio": "1S 27:2",
+     "fin": "1S 27:12"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Achish_1"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad filistea a la que David huye dos veces: finge locura y luego se queda con Aquis.",
+   "datos": [
+    {
+     "texto": "David va a Aquis, rey de Gat",
+     "certeza": "texto",
+     "ref": "1S 21:10",
+     "cita": "vínose á Achîs rey de Gath"
+    },
+    {
+     "texto": "Escribe en las portadas y deja correr saliva",
+     "certeza": "texto",
+     "ref": "1S 21:13",
+     "cita": "escribía en las portadas de las puertas"
+    },
+    {
+     "texto": "Mora con Aquis en Gat",
+     "certeza": "texto",
+     "ref": "1S 27:3",
+     "cita": "moró David con Achîs en Gath"
+    },
+    {
+     "texto": "Saúl se entera de que David huyó a Gat y no lo busca más",
+     "certeza": "texto",
+     "ref": "1S 27:4",
+     "cita": "David se había huído á Gath"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Tell es-Safi se identifica generalmente con la Gat filistea; la fuente reseña una destrucción atribuida al rey Hazael de Aram-Damasco hacia el 830 a. C. (según informes de 2010).",
+     "fuente": "Wikipedia, «Tell es-Safi» (fuente secundaria, abierta al redactar; solo se leyó la primera parte del artículo)",
+     "url": "https://en.wikipedia.org/wiki/Tell_es-Safi"
+    }
+   ],
+   "lugar": "gat"
+  },
+  "siclag": {
+   "nombre": "Siclag",
+   "apariciones": [
+    {
+     "inicio": "1S 27:6",
+     "fin": "1S 27:6"
+    },
+    {
+     "inicio": "1S 29:11",
+     "fin": "1S 29:11"
+    },
+    {
+     "inicio": "1S 30:1",
+     "fin": "1S 30:31"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Abiathar_1",
+    "Ahinoam_2",
+    "Abigail_1"
+   ],
+   "objetos": [
+    "efod-sacerdotal"
+   ],
+   "resumen": "Ciudad que Aquis da a David; los amalecitas la incendian y se llevan a las mujeres.",
+   "datos": [
+    {
+     "texto": "Aquis se la da a David; fue de los reyes de Judá «hasta hoy»",
+     "certeza": "texto",
+     "ref": "1S 27:6",
+     "cita": "De aquí fué Siclag de los reyes de Judá hasta hoy"
+    },
+    {
+     "texto": "Los amalecitas la desolaron y le pusieron fuego",
+     "certeza": "texto",
+     "ref": "1S 30:1",
+     "cita": "habían desolado á Siclag, y puéstola á fuego"
+    },
+    {
+     "texto": "A nadie mataron, sino llevaron cautivos",
+     "certeza": "texto",
+     "ref": "1S 30:2",
+     "cita": "á nadie habían muerto, sino llevado, é ídose su camino"
+    },
+    {
+     "texto": "David y los suyos lloran hasta que faltan las fuerzas",
+     "certeza": "texto",
+     "ref": "1S 30:4",
+     "cita": "hasta que les faltaron las fuerzas para llorar"
+    },
+    {
+     "texto": "De vuelta, David envía parte del botín a los ancianos de Judá",
+     "certeza": "texto",
+     "ref": "1S 30:26",
+     "cita": "envió de la presa á los ancianos de Judá"
+    }
+   ],
+   "externo": [],
+   "lugar": "siclag"
+  },
+  "endor": {
+   "nombre": "Endor",
+   "apariciones": [
+    {
+     "inicio": "1S 28:7",
+     "fin": "1S 28:25"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "Samuel_2"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad donde Saúl, disfrazado, va de noche a una mujer con espíritu de pitón. El texto nombra «Samuel» como quien habla; aquí no se decide cómo entenderlo.",
+   "datos": [
+    {
+     "texto": "Una mujer en Endor tiene espíritu de pitón",
+     "certeza": "texto",
+     "ref": "1S 28:7",
+     "cita": "hay una mujer en Endor que tiene espíritu de pythón"
+    },
+    {
+     "texto": "Saúl se disfraza y va de noche",
+     "certeza": "texto",
+     "ref": "1S 28:8",
+     "cita": "disfrazóse Saúl, y púsose otros vestidos"
+    },
+    {
+     "texto": "La mujer: Saúl ha apartado de la tierra a pitones y adivinos",
+     "certeza": "texto",
+     "ref": "1S 28:9",
+     "cita": "cómo ha separado de la tierra los pythones y los adivinos"
+    },
+    {
+     "texto": "Ella ve «dioses que suben de la tierra»",
+     "certeza": "texto",
+     "ref": "1S 28:13",
+     "cita": "He visto dioses que suben de la tierra"
+    },
+    {
+     "texto": "«Un hombre anciano viene, cubierto de un manto»",
+     "certeza": "texto",
+     "ref": "1S 28:14",
+     "cita": "Un hombre anciano viene, cubierto de un manto"
+    },
+    {
+     "texto": "La mujer mata un ternero y cuece panes sin levadura",
+     "certeza": "texto",
+     "ref": "1S 28:24",
+     "cita": "coció de ella panes sin levadura"
+    }
+   ],
+   "externo": [],
+   "lugar": "endor"
+  },
+  "monte-gilboa": {
+   "nombre": "Monte Gilboa",
+   "apariciones": [
+    {
+     "inicio": "1S 28:4",
+     "fin": "1S 28:4"
+    },
+    {
+     "inicio": "1S 31:1",
+     "fin": "1S 31:8"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "Jonathan_2"
+   ],
+   "objetos": [],
+   "resumen": "Donde Israel acampa y donde Saúl y sus hijos mueren.",
+   "datos": [
+    {
+     "texto": "Saúl y todo Israel acampan en Gilboa",
+     "certeza": "texto",
+     "ref": "1S 28:4",
+     "cita": "asentaron campo en Gilboa"
+    },
+    {
+     "texto": "Caen muertos en el monte de Gilboa",
+     "certeza": "texto",
+     "ref": "1S 31:1",
+     "cita": "cayeron muertos en el monte de Gilboa"
+    },
+    {
+     "texto": "Le alcanzan los flecheros",
+     "certeza": "texto",
+     "ref": "1S 31:3",
+     "cita": "le alcanzaron los flecheros"
+    },
+    {
+     "texto": "Al día siguiente hallan a Saúl y sus tres hijos en Gilboa",
+     "certeza": "texto",
+     "ref": "1S 31:8",
+     "cita": "hallaron á Saúl y á sus tres hijos tendidos en el monte de Gilboa"
+    }
+   ],
+   "externo": [],
+   "lugar": "monte-gilboa"
+  }
+ }
+}

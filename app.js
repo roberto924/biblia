@@ -13,10 +13,10 @@ const Nucleo = (() => {
   const CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal', 'Pr', 'Ec', 'Cnt',
     'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal',
     'Mt', 'Mr', 'Lc', 'Jn', 'Hch', 'Ro', '1Co', '2Co', 'Ga', 'Ef', 'Fil', 'Col', '1Ts', '2Ts', '1Ti', '2Ti', 'Tit', 'Flm', 'He', 'Stg', '1P', '2P', '1Jn', '2Jn', '3Jn', 'Jud', 'Ap'];
-  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut' };
+  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel' };
   const ordLibro = new Map(), idPorOrd = new Map(), idCanon = new Map();
   CANON.forEach((id, i) => { ordLibro.set(norm(id), i + 1); idPorOrd.set(i + 1, id); idCanon.set(norm(id), id); });
-  Object.entries(NOMBRES_LIBRO).forEach(([id, n]) => idCanon.set(norm(n), id));
+  Object.entries(NOMBRES_LIBRO).forEach(([id, n]) => { idCanon.set(norm(n), id); idCanon.set(norm(n).replace(/\s+/g, ''), id); }); // «1 Samuel» y «1Samuel»
   // Id de libro con su grafía canónica ("éx" → "Ex"); un id desconocido se registra en orden de aparición.
   function libroCanon(x) {
     const k = norm(x).replace(/\s+/g, '').replace(/\.$/, '');

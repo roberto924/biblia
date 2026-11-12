@@ -60,7 +60,42 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "o se solapan: no se fechan desde Adán. Sus sumas son cálculo con esa advertencia; Jue 11:26 («trescientos "
          "años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes.",
          "Rut 1:1 sitúa la historia «en los días que gobernaban los jueces» sin decir en qué juez ni en qué año, y la "
-         "genealogía de Rut 4:18-22 no da edades: Rut no añade eventos con año (sus hechos van sin fecha)."]
+         "genealogía de Rut 4:18-22 no da edades: Rut no añade eventos con año (sus hechos van sin fecha).",
+         "1 Samuel da duraciones sueltas (Elí: 98 años y cuarenta de juez; el arca, siete meses entre los filisteos y "
+         "veinte años en Quiriat-jearim; David, cuatro meses y algunos días en tierra filistea), pero ningún enlace con "
+         "los libros anteriores: no se fecha desde Adán (sus hechos van sin fecha, con las cifras citadas). 1 S 13:1 no "
+         "se usa para la edad de Saúl ni para la duración de su reinado, ni tampoco Hch 13:21 (libro posterior)."]
+# 1 Samuel: (título, ref, nota, [(ref, tradición, cita literal)]). Sin año: las citas se comprueban contra el texto.
+HITOS_1S = [
+    ("Nace Samuel", "1S 1:19-20", "Sin cifra de tiempo: Elcana subía a Silo «todos los años» (1 S 1:3), sin año.",
+     [("1S 1:20", "TM", "parió un hijo, y púsole por nombre Samuel"), ("1S 1:3", "TM", "todos los años")]),
+    ("El arca es tomada; muere Elí", "1S 4:1-22",
+     "Texto: Elí tenía «noventa y ocho años» (1 S 4:15; Brenton, LXX: «ninety years») y «había juzgado á Israel "
+     "cuarenta años» (1 S 4:18; Brenton: «twenty years»). Sin año desde Adán: el texto no dice cuándo empezó a juzgar.",
+     [("1S 4:15", "TM", "noventa y ocho años"), ("1S 4:15", "LXX", "ninety years"),
+      ("1S 4:18", "TM", "había juzgado á Israel cuarenta años"), ("1S 4:18", "LXX", "he judged Israel twenty years")]),
+    ("El arca en la tierra de los filisteos", "1S 5:1-6:21",
+     "Texto: «siete meses» (1 S 6:1; Brenton: «seven months»).",
+     [("1S 6:1", "TM", "siete meses"), ("1S 6:1", "LXX", "seven months")]),
+    ("El arca en Quiriat-jearim", "1S 7:1-2",
+     "Texto: desde que llegó el arca a Quiriat-jearim «pasaron muchos días, veinte años» (1 S 7:2; Brenton: «twenty "
+     "years»), y entonces Samuel habla a Israel (1 S 7:3). El texto no dice cuánto más estuvo allí el arca.",
+     [("1S 7:2", "TM", "pasaron muchos días, veinte años"), ("1S 7:2", "LXX", "twenty years")]),
+    ("Saúl, rey de Israel", "1S 10:1-13:1",
+     "Sin cifra utilizable. La RV1909 traduce 1 S 13:1 «HABÍA ya Saúl reinado un año; y reinado que hubo dos años sobre "
+     "Israel», y Brenton (LXX) no tiene ese versículo. Fuente externa: se considera que al texto hebreo de 1 S 13:1 le "
+     "falta una cifra. No se saca de ahí ni la edad de Saúl ni la duración de su reinado; Hch 13:21 la da, pero es un "
+     "libro posterior y no se usa.",
+     [("1S 13:1", "TM", "HABÍA ya Saúl reinado un año; y reinado que hubo dos años sobre Israel")]),
+    ("Muere Samuel", "1S 25:1", "Sin edad ni año.", [("1S 25:1", "TM", "MURIÓ Samuel")]),
+    ("David en la tierra de los filisteos", "1S 27:1-12",
+     "Texto: la RV1909 dice «cuatro meses y algunos días» (1 S 27:7) y Brenton (LXX) «four months».",
+     [("1S 27:7", "TM", "cuatro meses y algunos días"), ("1S 27:7", "LXX", "four months")]),
+    ("Muerte de Saúl y de sus hijos en Gilboa", "1S 31:1-13", "Sin año: el texto no da la edad de Saúl.",
+     [("1S 31:6", "TM", "Así murió Saúl en aquel día")]),
+]
+
+
 # Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
 F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
@@ -618,5 +653,13 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
         for t, r, n, (rc, cita) in HITOS_RUT:
             if cita not in textos["TM"].get(rc, ""):
                 errores.append(f"Hito de Rut: «{cita}» no está en {rc}")
+            cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
+    if any(r.startswith("1S ") for r in textos["TM"]):
+        if "1S 13:1" in textos["LXX"]:
+            errores.append("Cronología de 1 S: Brenton tiene 1 S 13:1 (la nota dice que no)")
+        for t, r, n, citas in HITOS_1S:
+            for rc, trad, cita in citas:
+                if cita not in textos[trad].get(rc, ""):
+                    errores.append(f"Hito de 1 S: «{cita}» no está en {rc} ({trad})")
             cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
     return cron, vivos, usadas

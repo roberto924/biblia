@@ -882,6 +882,146 @@
    "categoria": "sexual",
    "nivel": "medio",
    "motivo": "Noemí manda a Rut acostarse de noche a los pies de Booz en la era; él la bendice y la despide al alba. El texto no describe nada más; sin detalle."
+  },
+  {
+   "desde": "1S 2:22",
+   "hasta": "1S 2:22",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Los hijos de Elí duermen con las mujeres que velaban a la puerta del tabernáculo; sin detalle."
+  },
+  {
+   "desde": "1S 4:10",
+   "hasta": "1S 4:11",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Israel es vencido: caen treinta mil hombres, el arca es tomada y mueren Ofni y Finees."
+  },
+  {
+   "desde": "1S 5:6",
+   "hasta": "1S 5:12",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "La mano de Jehová hiere a los filisteos con hemorroides y mortandad en Asdod, Gat y Ecrón."
+  },
+  {
+   "desde": "1S 6:19",
+   "hasta": "1S 6:19",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehová hiere a los de Bet-semes por mirar en el arca: mueren cincuenta mil setenta."
+  },
+  {
+   "desde": "1S 11:2",
+   "hasta": "1S 11:2",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Nahas exige sacar el ojo derecho a cada hombre de Jabes como condición de alianza (amenaza)."
+  },
+  {
+   "desde": "1S 14:13",
+   "hasta": "1S 14:14",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jonatán y su paje de armas matan a unos veinte filisteos."
+  },
+  {
+   "desde": "1S 15:3",
+   "hasta": "1S 15:3",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Orden de destruir a Amalec: matar hombres y mujeres, niños y niños de pecho, y el ganado."
+  },
+  {
+   "desde": "1S 15:7",
+   "hasta": "1S 15:8",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Saúl hiere a Amalec y mata a filo de espada a todo el pueblo; toma vivo a Agag."
+  },
+  {
+   "desde": "1S 15:33",
+   "hasta": "1S 15:33",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Samuel corta en pedazos a Agag delante de Jehová en Gilgal."
+  },
+  {
+   "desde": "1S 17:49",
+   "hasta": "1S 17:51",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "La piedra se hinca en la frente de Goliat; David lo mata y le corta la cabeza con su espada."
+  },
+  {
+   "desde": "1S 17:54",
+   "hasta": "1S 17:54",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "David lleva la cabeza del filisteo a Jerusalén."
+  },
+  {
+   "desde": "1S 18:25",
+   "hasta": "1S 18:27",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Saúl pide como dote cien prepucios de filisteos; David mata a doscientos y los entrega al rey."
+  },
+  {
+   "desde": "1S 22:17",
+   "hasta": "1S 22:19",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Doeg mata a ochenta y cinco sacerdotes y pasa a cuchillo Nob: hombres, mujeres, niños y niños de pecho."
+  },
+  {
+   "desde": "1S 25:22",
+   "hasta": "1S 25:22",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David jura no dejar con vida a ningún varón de la casa de Nabal (amenaza)."
+  },
+  {
+   "desde": "1S 25:34",
+   "hasta": "1S 25:34",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David repite que no habría quedado vivo ningún varón de Nabal (amenaza)."
+  },
+  {
+   "desde": "1S 25:38",
+   "hasta": "1S 25:38",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehová hiere a Nabal y muere a los diez días; sin detalle."
+  },
+  {
+   "desde": "1S 27:9",
+   "hasta": "1S 27:11",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "En sus incursiones David no deja con vida hombre ni mujer, para que no lo delaten."
+  },
+  {
+   "desde": "1S 30:17",
+   "hasta": "1S 30:17",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David hiere a los amalecitas de la mañana a la tarde del día siguiente; escapan cuatrocientos."
+  },
+  {
+   "desde": "1S 31:3",
+   "hasta": "1S 31:6",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Saúl, herido por los flecheros, se echa sobre su espada; su escudero hace lo mismo; mueren sus tres hijos."
+  },
+  {
+   "desde": "1S 31:8",
+   "hasta": "1S 31:12",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Los filisteos cortan la cabeza a Saúl y cuelgan su cuerpo y los de sus hijos en el muro de Bet-san; los de Jabes los descuelgan y los queman."
   }
  ]
 }
