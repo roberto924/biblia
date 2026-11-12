@@ -1188,6 +1188,8 @@ const Nucleo = (() => {
     const a = parseRef(ref), b = parseRef(r);
     const tramo = /:\s*\d+\s*-\s*\d/.test(String(r)) ? String(r).replace(/^[^\d]*(?=\d+\s*:)/, '').replace(/\s*-\s*/, '–') : null;
     if (tramo && a && b && a.libro === b.libro) return tramo;
+    const parte = /:\s*\d+([a-z])\s*$/.exec(String(r));  // media unidad del hebreo (p. ej. Jue 14:18a)
+    if (parte && a && b && a.libro === b.libro) return `${b.cap}:${b.v}${parte[1]}`;
     if (!a || !b || (a.libro === b.libro && a.cap === b.cap && a.v === b.v)) return null;
     return a.libro === b.libro ? `${b.cap}:${b.v}` : `${b.libro} ${b.cap}:${b.v}`;
   }

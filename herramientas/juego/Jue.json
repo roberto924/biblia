@@ -1,0 +1,3958 @@
+{
+ "libro": "Jue",
+ "genealogias": [],
+ "historias": [
+  {
+   "id": "conquista-incompleta-y-adoni-bezec",
+   "titulo": "La conquista incompleta: Judá sube primero, Adoni-bezec, Caleb y Otoniel, Bet-el y lo que no se echó",
+   "inicio": "Jue 1:1",
+   "fin": "Jue 1:36",
+   "principales": [
+    "Adoni-bezek_1"
+   ]
+  },
+  {
+   "id": "angel-en-boquim-y-ciclo-de-los-jueces",
+   "titulo": "El ángel en Boquim, la muerte de Josué y el ciclo de los jueces",
+   "inicio": "Jue 2:1",
+   "fin": "Jue 3:6",
+   "principales": []
+  },
+  {
+   "id": "otoniel",
+   "titulo": "Otoniel libra de Cusán-risataim",
+   "inicio": "Jue 3:7",
+   "fin": "Jue 3:11",
+   "principales": [
+    "Othniel_1"
+   ]
+  },
+  {
+   "id": "aod-y-eglon",
+   "titulo": "Aod y Eglón, rey de Moab",
+   "inicio": "Jue 3:12",
+   "fin": "Jue 3:30",
+   "principales": [
+    "Ehud_1"
+   ]
+  },
+  {
+   "id": "samgar",
+   "titulo": "Samgar y la aguijada de bueyes",
+   "inicio": "Jue 3:31",
+   "fin": "Jue 3:31",
+   "principales": [
+    "Shamgar_1"
+   ]
+  },
+  {
+   "id": "debora-barac-y-jael",
+   "titulo": "Débora, Barac y Jael contra Sísara",
+   "inicio": "Jue 4:1",
+   "fin": "Jue 4:24",
+   "principales": [
+    "Deborah_2",
+    "Barak_1",
+    "Jael_1",
+    "Sisera_1"
+   ]
+  },
+  {
+   "id": "cantico-de-debora",
+   "titulo": "El cántico de Débora y Barac",
+   "inicio": "Jue 5:1",
+   "fin": "Jue 5:31",
+   "principales": [
+    "Deborah_2",
+    "Barak_1"
+   ]
+  },
+  {
+   "id": "llamado-de-gedeon-y-el-vellon",
+   "titulo": "El llamado de Gedeón, el altar de Baal y el vellón",
+   "inicio": "Jue 6:1",
+   "fin": "Jue 6:40",
+   "principales": [
+    "Gideon_1"
+   ]
+  },
+  {
+   "id": "los-trescientos-de-gedeon",
+   "titulo": "Los trescientos, el sueño del pan de cebada y los cántaros",
+   "inicio": "Jue 7:1",
+   "fin": "Jue 7:25",
+   "principales": [
+    "Gideon_1"
+   ]
+  },
+  {
+   "id": "zeba-zalmuna-y-el-efod",
+   "titulo": "Efraín, Sucot y Penuel, Zeba y Zalmuna, y el efod de Gedeón",
+   "inicio": "Jue 8:1",
+   "fin": "Jue 8:35",
+   "principales": [
+    "Gideon_1",
+    "Zebah_1",
+    "Zalmunna_1"
+   ]
+  },
+  {
+   "id": "abimelec-y-la-fabula-de-jotam",
+   "titulo": "Abimelec rey en Siquem, la fábula de Jotam y la caída de Siquem",
+   "inicio": "Jue 9:1",
+   "fin": "Jue 9:57",
+   "principales": [
+    "Abimelech_2",
+    "Jotham_1"
+   ]
+  },
+  {
+   "id": "tola-y-jair",
+   "titulo": "Tola y Jair",
+   "inicio": "Jue 10:1",
+   "fin": "Jue 10:5",
+   "principales": [
+    "Tola_2",
+    "Jair_2"
+   ]
+  },
+  {
+   "id": "jefte-y-su-voto",
+   "titulo": "Jefté, capitán de Galaad: Amón, el voto y Shiboleth",
+   "inicio": "Jue 10:6",
+   "fin": "Jue 12:7",
+   "principales": [
+    "Jephthah_1",
+    "Hija_de_Jefte"
+   ]
+  },
+  {
+   "id": "ibzan-elon-y-abdon",
+   "titulo": "Ibzán, Elón y Abdón",
+   "inicio": "Jue 12:8",
+   "fin": "Jue 12:15",
+   "principales": [
+    "Ibzan_1",
+    "Elon_3",
+    "Abdon_1"
+   ]
+  },
+  {
+   "id": "nacimiento-de-sanson",
+   "titulo": "El ángel anuncia a Manoa y su mujer el nacimiento de Sansón",
+   "inicio": "Jue 13:1",
+   "fin": "Jue 13:25",
+   "principales": [
+    "Manoah_1",
+    "Mujer_de_Manoa"
+   ]
+  },
+  {
+   "id": "timnat-y-el-acertijo",
+   "titulo": "Sansón en Timnat: el león y el acertijo",
+   "inicio": "Jue 14:1",
+   "fin": "Jue 14:20",
+   "principales": [
+    "Samson_1"
+   ]
+  },
+  {
+   "id": "zorras-y-quijada",
+   "titulo": "Las zorras con teas y la quijada de asno",
+   "inicio": "Jue 15:1",
+   "fin": "Jue 15:20",
+   "principales": [
+    "Samson_1"
+   ]
+  },
+  {
+   "id": "gaza-dalila-y-dagon",
+   "titulo": "Gaza, Dalila y la muerte de Sansón en el templo de Dagón",
+   "inicio": "Jue 16:1",
+   "fin": "Jue 16:31",
+   "principales": [
+    "Samson_1",
+    "Delilah_1"
+   ]
+  },
+  {
+   "id": "micaia-y-el-levita",
+   "titulo": "Micaía, su imagen y el levita de Belén",
+   "inicio": "Jue 17:1",
+   "fin": "Jue 17:13",
+   "principales": [
+    "Micah_1"
+   ]
+  },
+  {
+   "id": "los-danitas-y-lais",
+   "titulo": "Los danitas se llevan los dioses de Micaía y toman Lais",
+   "inicio": "Jue 18:1",
+   "fin": "Jue 18:31",
+   "principales": [
+    "Micah_1"
+   ]
+  },
+  {
+   "id": "el-levita-y-su-concubina",
+   "titulo": "El levita de Efraín y su concubina en Gabaa",
+   "inicio": "Jue 19:1",
+   "fin": "Jue 19:30",
+   "principales": []
+  },
+  {
+   "id": "guerra-contra-benjamin",
+   "titulo": "Israel en Mizpa y la guerra contra Benjamín",
+   "inicio": "Jue 20:1",
+   "fin": "Jue 20:48",
+   "principales": []
+  },
+  {
+   "id": "mujeres-para-benjamin",
+   "titulo": "Jabes de Galaad, las hijas de Silo y mujeres para Benjamín",
+   "inicio": "Jue 21:1",
+   "fin": "Jue 21:25",
+   "principales": []
+  }
+ ],
+ "personajes": {
+  "Adoni-bezek_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 1:5",
+     "fin": "Jue 1:7"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey cananeo de Bezec: Judá lo derrota, lo captura y le corta los pulgares; reconoce que Dios le paga lo que él hizo a setenta reyes.",
+   "datos": [
+    {
+     "texto": "Lo prenden y le cortan los pulgares de manos y pies",
+     "certeza": "texto",
+     "ref": "Jue 1:6",
+     "cita": "cortáronle los pulgares de las manos y de los pies"
+    },
+    {
+     "texto": "Él mismo había hecho lo mismo a setenta reyes que comían bajo su mesa",
+     "certeza": "texto",
+     "ref": "Jue 1:7",
+     "cita": "Setenta reyes, cortados los pulgares de sus manos y de sus pies"
+    },
+    {
+     "texto": "Lo reconoce como pago de Dios",
+     "certeza": "texto",
+     "ref": "Jue 1:7",
+     "cita": "como yo hice, así me ha pagado Dios"
+    },
+    {
+     "texto": "Lo llevan a Jerusalén, donde muere",
+     "certeza": "texto",
+     "ref": "Jue 1:7",
+     "cita": "Y metiéronle en Jerusalem, donde murió"
+    }
+   ],
+   "externo": []
+  },
+  "Cushan-rishathaim_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 3:8",
+     "fin": "Jue 3:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey al que Jehová vende a Israel; lo sirven ocho años hasta que Otoniel lo vence.",
+   "datos": [
+    {
+     "texto": "Israel es vendido en su mano",
+     "certeza": "texto",
+     "ref": "Jue 3:8",
+     "cita": "vendiólos en manos de Chusan-risathaim, rey de Mesopotamia"
+    },
+    {
+     "texto": "Lo sirven ocho años",
+     "certeza": "texto",
+     "ref": "Jue 3:8",
+     "cita": "sirvieron los hijos de Israel á Chusan-risathaim ocho años"
+    },
+    {
+     "texto": "La RV1909 lo llama «rey de Siria» en 3:10 y «rey de Mesopotamia» en 3:8 (sin armonizar)",
+     "certeza": "texto",
+     "ref": "Jue 3:10",
+     "cita": "rey de Siria"
+    }
+   ],
+   "externo": []
+  },
+  "Eglon_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 3:12",
+     "fin": "Jue 3:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Moab que oprime a Israel dieciocho años y muere a manos de Aod.",
+   "datos": [
+    {
+     "texto": "Jehová lo fortalece contra Israel por el mal de Israel",
+     "certeza": "texto",
+     "ref": "Jue 3:12",
+     "cita": "Jehová esforzó á Eglón rey de Moab contra Israel"
+    },
+    {
+     "texto": "Se une a Amón y Amalec y toma la ciudad de las palmas",
+     "certeza": "texto",
+     "ref": "Jue 3:13",
+     "cita": "tomó la ciudad de las palmas"
+    },
+    {
+     "texto": "Israel lo sirve dieciocho años",
+     "certeza": "texto",
+     "ref": "Jue 3:14",
+     "cita": "diez y ocho años"
+    },
+    {
+     "texto": "Es un hombre muy grueso",
+     "certeza": "texto",
+     "ref": "Jue 3:17",
+     "cita": "era Eglón hombre muy grueso"
+    },
+    {
+     "texto": "Sus siervos lo encuentran muerto",
+     "certeza": "texto",
+     "ref": "Jue 3:25",
+     "cita": "su señor caído en tierra muerto"
+    }
+   ],
+   "externo": []
+  },
+  "Ehud_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 3:15",
+     "fin": "Jue 3:28"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Benjamita zurdo que Jehová suscita como salvador: mata a Eglón y encabeza a Israel contra Moab.",
+   "datos": [
+    {
+     "texto": "Hijo de Gera, de Benjamín, con la mano derecha cerrada",
+     "certeza": "texto",
+     "ref": "Jue 3:15",
+     "cita": "Aod, hijo de Gera, Benjamita, el cual tenía cerrada la mano derecha"
+    },
+    {
+     "texto": "Se hace un puñal de dos filos de un codo de largo",
+     "certeza": "texto",
+     "ref": "Jue 3:16",
+     "cita": "un puñal de dos filos, de un codo de largo"
+    },
+    {
+     "texto": "Con esta frase se acerca al rey, solo en la sala de verano",
+     "certeza": "texto",
+     "ref": "Jue 3:20",
+     "cita": "Tengo palabra de Dios para ti"
+    },
+    {
+     "texto": "Mata a Eglón con la mano izquierda",
+     "certeza": "texto",
+     "ref": "Jue 3:21",
+     "cita": "Aod metió su mano izquierda, y tomó el puñal de su lado derecho"
+    },
+    {
+     "texto": "Convoca a Israel en el monte de Efraín",
+     "certeza": "texto",
+     "ref": "Jue 3:27",
+     "cita": "tocó el cuerno en el monte de Ephraim"
+    },
+    {
+     "texto": "Toma con Israel los vados del Jordán",
+     "certeza": "texto",
+     "ref": "Jue 3:28",
+     "cita": "Seguidme, porque Jehová ha entregado vuestros enemigos"
+    },
+    {
+     "texto": "La tierra reposa ochenta años",
+     "certeza": "texto",
+     "ref": "Jue 3:30",
+     "cita": "reposó la tierra ochenta años"
+    }
+   ],
+   "externo": []
+  },
+  "Gera_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 3:15"
+    }
+   ],
+   "resumen": "Padre de Aod.",
+   "datos": [],
+   "externo": []
+  },
+  "Shamgar_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 3:31",
+     "fin": "Jue 3:31"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 5:6"
+    }
+   ],
+   "resumen": "Juez que hirió a seiscientos filisteos con una aguijada de bueyes.",
+   "datos": [
+    {
+     "texto": "Hiere a seiscientos filisteos con una aguijada de bueyes",
+     "certeza": "texto",
+     "ref": "Jue 3:31",
+     "cita": "hirió seiscientos hombres de los Filisteos con una aguijada de bueyes"
+    },
+    {
+     "texto": "Salvó a Israel",
+     "certeza": "texto",
+     "ref": "Jue 3:31",
+     "cita": "él también salvó á Israel"
+    },
+    {
+     "texto": "El cántico de Débora lo sitúa como época de caminos desiertos",
+     "certeza": "texto",
+     "ref": "Jue 5:6",
+     "cita": "En los días de Samgar hijo de Anath"
+    }
+   ],
+   "externo": []
+  },
+  "Anath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 3:31"
+    },
+    {
+     "ref": "Jue 5:6"
+    }
+   ],
+   "resumen": "Padre de Samgar.",
+   "datos": [],
+   "externo": []
+  },
+  "Jabin_Jue4": {
+   "apariciones": [
+    {
+     "inicio": "Jue 4:2",
+     "fin": "Jue 4:3"
+    },
+    {
+     "inicio": "Jue 4:23",
+     "fin": "Jue 4:24"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Canaán que reinó en Asor y oprimió veinte años a Israel; Sísara era su capitán. El texto no lo relaciona con el rey de Hazor de Josué 11.",
+   "datos": [
+    {
+     "texto": "Rey de Canaán en Asor, con Sísara como capitán",
+     "certeza": "texto",
+     "ref": "Jue 4:2",
+     "cita": "Jabín rey de Canaán, el cual reinó en Asor"
+    },
+    {
+     "texto": "Tenía novecientos carros herrados",
+     "certeza": "texto",
+     "ref": "Jue 4:3",
+     "cita": "nuevecientos carros herrados"
+    },
+    {
+     "texto": "Afligió a Israel veinte años",
+     "certeza": "texto",
+     "ref": "Jue 4:3",
+     "cita": "por veinte años"
+    },
+    {
+     "texto": "Israel se fortalece contra él hasta destruirlo",
+     "certeza": "texto",
+     "ref": "Jue 4:24",
+     "cita": "hasta que lo destruyeron"
+    }
+   ],
+   "externo": []
+  },
+  "Sisera_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 4:2",
+     "fin": "Jue 4:3"
+    },
+    {
+     "inicio": "Jue 4:7",
+     "fin": "Jue 4:7"
+    },
+    {
+     "inicio": "Jue 4:9",
+     "fin": "Jue 4:9"
+    },
+    {
+     "inicio": "Jue 4:12",
+     "fin": "Jue 4:22"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 5:20"
+    },
+    {
+     "ref": "Jue 5:26"
+    },
+    {
+     "ref": "Jue 5:28"
+    },
+    {
+     "ref": "Jue 5:30"
+    }
+   ],
+   "resumen": "Capitán del ejército de Jabín: Jehová lo desbarata junto al Cisón y muere en la tienda de Jael.",
+   "datos": [
+    {
+     "texto": "Capitán del ejército de Jabín, habitaba en Haroset de las Gentes",
+     "certeza": "texto",
+     "ref": "Jue 4:2",
+     "cita": "el capitán de su ejército [se llamaba] Sísara"
+    },
+    {
+     "texto": "Débora anuncia que caerá en mano de una mujer",
+     "certeza": "texto",
+     "ref": "Jue 4:9",
+     "cita": "en mano de mujer venderá Jehová á Sísara"
+    },
+    {
+     "texto": "Reúne sus carros hasta el arroyo de Cisón",
+     "certeza": "texto",
+     "ref": "Jue 4:13",
+     "cita": "Y reunió Sísara todos sus carros, nuevecientos carros herrados"
+    },
+    {
+     "texto": "Jehová desbarata su ejército y él huye a pie",
+     "certeza": "texto",
+     "ref": "Jue 4:15",
+     "cita": "Sísara descendió del carro, y huyó á pie"
+    },
+    {
+     "texto": "Se refugia en la tienda de Jael",
+     "certeza": "texto",
+     "ref": "Jue 4:17",
+     "cita": "Sísara se acogió á pie á la tienda de Jael"
+    },
+    {
+     "texto": "Jael lo mata mientras duerme",
+     "certeza": "texto",
+     "ref": "Jue 4:21",
+     "cita": "metióle la estaca por las sienes"
+    },
+    {
+     "texto": "El cántico describe a su madre esperándolo",
+     "certeza": "texto",
+     "ref": "Jue 5:28",
+     "cita": "La madre de Sísara se asoma á la ventana"
+    }
+   ],
+   "externo": []
+  },
+  "Deborah_2": {
+   "apariciones": [
+    {
+     "inicio": "Jue 4:4",
+     "fin": "Jue 4:14"
+    },
+    {
+     "inicio": "Jue 5:1",
+     "fin": "Jue 5:31"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Profetisa y juez de Israel bajo la palma entre Ramá y Betel; llama a Barac, va con él al combate y canta la victoria.",
+   "datos": [
+    {
+     "texto": "Gobierna a Israel; es profetisa y mujer de Lapidot",
+     "certeza": "texto",
+     "ref": "Jue 4:4",
+     "cita": "gobernaba en aquel tiempo á Israel una mujer, Débora, profetisa"
+    },
+    {
+     "texto": "Los israelitas suben a ella a juicio",
+     "certeza": "texto",
+     "ref": "Jue 4:5",
+     "cita": "habitaba debajo de una palma entre Rama y Beth-el"
+    },
+    {
+     "texto": "Transmite a Barac el mandato de Jehová",
+     "certeza": "texto",
+     "ref": "Jue 4:6",
+     "cita": "Ve, y haz gente en el monte de Tabor"
+    },
+    {
+     "texto": "Acepta ir con Barac y anuncia que Sísara caerá en mano de mujer",
+     "certeza": "texto",
+     "ref": "Jue 4:9",
+     "cita": "Iré contigo; mas no será tu honra en el camino que vas"
+    },
+    {
+     "texto": "Da la orden de descender del Tabor",
+     "certeza": "texto",
+     "ref": "Jue 4:14",
+     "cita": "Levántate; porque este es el día en que Jehová ha entregado á Sísara"
+    },
+    {
+     "texto": "En el cántico se llama «madre en Israel»",
+     "certeza": "texto",
+     "ref": "Jue 5:7",
+     "cita": "hasta que yo Débora me levanté, me levanté madre en Israel"
+    },
+    {
+     "texto": "El cántico la invita a entonar un cántico",
+     "certeza": "texto",
+     "ref": "Jue 5:12",
+     "cita": "Despierta, despierta, Débora"
+    }
+   ],
+   "externo": []
+  },
+  "Lappidoth_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 4:4"
+    }
+   ],
+   "resumen": "Marido de Débora.",
+   "datos": [],
+   "externo": []
+  },
+  "Abinoam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 4:6"
+    },
+    {
+     "ref": "Jue 4:12"
+    },
+    {
+     "ref": "Jue 5:1"
+    },
+    {
+     "ref": "Jue 5:12"
+    }
+   ],
+   "resumen": "Padre de Barac.",
+   "datos": [],
+   "externo": []
+  },
+  "Barak_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 4:6",
+     "fin": "Jue 4:16"
+    },
+    {
+     "inicio": "Jue 4:22",
+     "fin": "Jue 4:22"
+    },
+    {
+     "inicio": "Jue 5:1",
+     "fin": "Jue 5:1"
+    },
+    {
+     "inicio": "Jue 5:12",
+     "fin": "Jue 5:12"
+    },
+    {
+     "inicio": "Jue 5:15",
+     "fin": "Jue 5:15"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Capitán de Cedes de Neftalí al que Débora manda reunir diez mil hombres en el Tabor.",
+   "datos": [
+    {
+     "texto": "Llamado por Débora desde Cedes de Neftalí",
+     "certeza": "texto",
+     "ref": "Jue 4:6",
+     "cita": "Barac hijo de Abinoam, de Cedes de Nephtalí"
+    },
+    {
+     "texto": "Condiciona su marcha a que Débora vaya",
+     "certeza": "texto",
+     "ref": "Jue 4:8",
+     "cita": "Si tú fueres conmigo, yo iré"
+    },
+    {
+     "texto": "Desciende del Tabor con diez mil hombres",
+     "certeza": "texto",
+     "ref": "Jue 4:14",
+     "cita": "Barac descendió del monte de Tabor, y diez mil hombres en pos de él"
+    },
+    {
+     "texto": "Persigue al ejército de Sísara",
+     "certeza": "texto",
+     "ref": "Jue 4:16",
+     "cita": "Barac siguió los carros y el ejército hasta Haroseth de las Gentes"
+    },
+    {
+     "texto": "Canta con Débora",
+     "certeza": "texto",
+     "ref": "Jue 5:1",
+     "cita": "cantó Débora, con Barac, hijo de Abinoam"
+    }
+   ],
+   "externo": []
+  },
+  "Heber_2": {
+   "apariciones": [
+    {
+     "inicio": "Jue 4:11",
+     "fin": "Jue 4:11"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 5:24"
+    }
+   ],
+   "resumen": "Cineo que se apartó de los suyos y puso su tienda junto a Cedes; su mujer es Jael.",
+   "datos": [
+    {
+     "texto": "Cineo, de los hijos de Hobab, apartado de los demás",
+     "certeza": "texto",
+     "ref": "Jue 4:11",
+     "cita": "Heber Cineo, de los hijos de Hobab suegro de Moisés, se había apartado de los Cineos"
+    },
+    {
+     "texto": "Su casa tiene paz con Jabín",
+     "certeza": "texto",
+     "ref": "Jue 4:17",
+     "cita": "había paz entre Jabín rey de Asor y la casa de Heber Cineo"
+    }
+   ],
+   "externo": []
+  },
+  "Jael_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 4:17",
+     "fin": "Jue 4:22"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 5:6"
+    },
+    {
+     "ref": "Jue 5:24"
+    },
+    {
+     "ref": "Jue 5:26"
+    }
+   ],
+   "resumen": "Mujer de Heber el Cineo que recibe a Sísara en su tienda y lo mata con una estaca de la tienda.",
+   "datos": [
+    {
+     "texto": "Sale a recibir a Sísara y lo cubre con una manta",
+     "certeza": "texto",
+     "ref": "Jue 4:18",
+     "cita": "Ven, señor mío, ven á mí, no tengas temor"
+    },
+    {
+     "texto": "Le da leche cuando él pide agua",
+     "certeza": "texto",
+     "ref": "Jue 4:19",
+     "cita": "abrió un odre de leche y dióle de beber"
+    },
+    {
+     "texto": "Toma estaca y mazo y lo mata mientras duerme",
+     "certeza": "texto",
+     "ref": "Jue 4:21",
+     "cita": "tomó una estaca de la tienda, y poniendo un mazo en su mano"
+    },
+    {
+     "texto": "Sale a recibir a Barac y le muestra el cuerpo",
+     "certeza": "texto",
+     "ref": "Jue 4:22",
+     "cita": "Ven, y te mostraré al varón que tú buscas"
+    },
+    {
+     "texto": "El cántico la bendice",
+     "certeza": "texto",
+     "ref": "Jue 5:24",
+     "cita": "Bendita sea entre las mujeres Jael"
+    }
+   ],
+   "externo": []
+  },
+  "Gideon_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 6:11",
+     "fin": "Jue 6:40"
+    },
+    {
+     "inicio": "Jue 7:1",
+     "fin": "Jue 7:25"
+    },
+    {
+     "inicio": "Jue 8:1",
+     "fin": "Jue 8:32"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 8:33"
+    },
+    {
+     "ref": "Jue 8:35"
+    },
+    {
+     "ref": "Jue 9:1"
+    },
+    {
+     "ref": "Jue 9:2"
+    },
+    {
+     "ref": "Jue 9:5"
+    },
+    {
+     "ref": "Jue 9:16"
+    },
+    {
+     "ref": "Jue 9:19"
+    },
+    {
+     "ref": "Jue 9:24"
+    },
+    {
+     "ref": "Jue 9:28"
+    },
+    {
+     "ref": "Jue 9:57"
+    }
+   ],
+   "resumen": "Hijo de Joás de Ofra, de Manasés: el ángel de Jehová lo llama; con trescientos hombres vence a Madián, rehúsa reinar y hace un efod que se vuelve tropiezo. También se le llama Jerobaal.",
+   "datos": [
+    {
+     "texto": "El ángel lo halla sacudiendo trigo en el lagar, escondido de Madián",
+     "certeza": "texto",
+     "ref": "Jue 6:11",
+     "cita": "su hijo Gedeón estaba sacudiendo el trigo en el lagar"
+    },
+    {
+     "texto": "Saludo del ángel de Jehová",
+     "certeza": "texto",
+     "ref": "Jue 6:12",
+     "cita": "Jehová es contigo, varón esforzado"
+    },
+    {
+     "texto": "Se presenta como el menor, de familia pobre en Manasés",
+     "certeza": "texto",
+     "ref": "Jue 6:15",
+     "cita": "yo el menor en la casa de mi padre"
+    },
+    {
+     "texto": "Derriba de noche el altar de Baal y corta el bosque, por temor",
+     "certeza": "texto",
+     "ref": "Jue 6:27",
+     "cita": "hízolo de noche"
+    },
+    {
+     "texto": "Recibe el nombre Jerobaal",
+     "certeza": "texto",
+     "ref": "Jue 6:32",
+     "cita": "llamó [él] á Gedeón Jerobaal"
+    },
+    {
+     "texto": "Pide una señal con el vellón",
+     "certeza": "texto",
+     "ref": "Jue 6:37",
+     "cita": "yo pondré un vellón de lana en la era"
+    },
+    {
+     "texto": "El texto identifica a Jerobaal con Gedeón",
+     "certeza": "texto",
+     "ref": "Jue 7:1",
+     "cita": "Jerobaal, el cual es Gedeón"
+    },
+    {
+     "texto": "Jehová deja solo trescientos de los que lamieron el agua",
+     "certeza": "texto",
+     "ref": "Jue 7:6",
+     "cita": "trescientos hombres"
+    },
+    {
+     "texto": "Grito de los trescientos",
+     "certeza": "texto",
+     "ref": "Jue 7:20",
+     "cita": "¡La espada de Jehová y de Gedeón!"
+    },
+    {
+     "texto": "Rehúsa ser rey y dice que Jehová será su Señor",
+     "certeza": "texto",
+     "ref": "Jue 8:23",
+     "cita": "No seré señor sobre vosotros"
+    },
+    {
+     "texto": "Hace un efod con el oro y lo guarda en Ofra",
+     "certeza": "texto",
+     "ref": "Jue 8:27",
+     "cita": "Gedeón hizo de ellos un ephod"
+    },
+    {
+     "texto": "Tiene setenta hijos, por sus muchas mujeres",
+     "certeza": "texto",
+     "ref": "Jue 8:30",
+     "cita": "Y tuvo Gedeón setenta hijos"
+    },
+    {
+     "texto": "Muere y es sepultado en Ofra",
+     "certeza": "texto",
+     "ref": "Jue 8:32",
+     "cita": "murió Gedeón hijo de Joas en buena vejez"
+    }
+   ],
+   "externo": []
+  },
+  "Joash_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 6:11",
+     "fin": "Jue 6:11"
+    },
+    {
+     "inicio": "Jue 6:29",
+     "fin": "Jue 6:32"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 7:14"
+    },
+    {
+     "ref": "Jue 8:13"
+    },
+    {
+     "ref": "Jue 8:29"
+    },
+    {
+     "ref": "Jue 8:32"
+    }
+   ],
+   "resumen": "Abiezerita de Ofra, padre de Gedeón: defiende a su hijo ante quienes piden su muerte por derribar el altar de Baal.",
+   "datos": [
+    {
+     "texto": "Dueño del alcornoque de Ofra",
+     "certeza": "texto",
+     "ref": "Jue 6:11",
+     "cita": "era de Joas Abiezerita"
+    },
+    {
+     "texto": "Responde a los hombres de la ciudad",
+     "certeza": "texto",
+     "ref": "Jue 6:31",
+     "cita": "Si es Dios, contienda por sí mismo con el que derribó su altar"
+    }
+   ],
+   "externo": []
+  },
+  "Purah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 7:10",
+     "fin": "Jue 7:11"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Criado de Gedeón que baja con él al campo de Madián.",
+   "datos": [
+    {
+     "texto": "Acompaña a Gedeón a oír lo que se habla en el campamento",
+     "certeza": "texto",
+     "ref": "Jue 7:11",
+     "cita": "descendió con Phara su criado"
+    }
+   ],
+   "externo": []
+  },
+  "Oreb_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 7:25",
+     "fin": "Jue 7:25"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 8:3"
+    }
+   ],
+   "resumen": "Príncipe de Madián capturado y muerto junto a la peña que lleva su nombre.",
+   "datos": [
+    {
+     "texto": "Lo matan los de Efraín en la peña de Oreb",
+     "certeza": "texto",
+     "ref": "Jue 7:25",
+     "cita": "mataron á Oreb en la peña de Oreb"
+    },
+    {
+     "texto": "Gedeón lo nombra príncipe de Madián",
+     "certeza": "texto",
+     "ref": "Jue 8:3",
+     "cita": "Oreb y á Zeeb, príncipes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Zeeb_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 7:25",
+     "fin": "Jue 7:25"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 8:3"
+    }
+   ],
+   "resumen": "Príncipe de Madián capturado y muerto en el lagar que lleva su nombre.",
+   "datos": [
+    {
+     "texto": "Lo matan los de Efraín en el lagar de Zeeb",
+     "certeza": "texto",
+     "ref": "Jue 7:25",
+     "cita": "á Zeeb [lo] mataron en el lagar de Zeeb"
+    },
+    {
+     "texto": "Gedeón lo nombra príncipe de Madián",
+     "certeza": "texto",
+     "ref": "Jue 8:3",
+     "cita": "Oreb y á Zeeb, príncipes de Madián"
+    }
+   ],
+   "externo": []
+  },
+  "Zebah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 8:10",
+     "fin": "Jue 8:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Madián tomado por Gedeón en Carcor y muerto por su mano, junto a Zalmuna.",
+   "datos": [
+    {
+     "texto": "Rey de Madián, perseguido por Gedeón",
+     "certeza": "texto",
+     "ref": "Jue 8:5",
+     "cita": "Zeba y á Zalmunna, reyes de Madián"
+    },
+    {
+     "texto": "Está en Carcor con unos quince mil hombres",
+     "certeza": "texto",
+     "ref": "Jue 8:10",
+     "cita": "Zeba y Zalmunna estaban en Carcor"
+    },
+    {
+     "texto": "Pide que lo mate Gedeón, no el muchacho",
+     "certeza": "texto",
+     "ref": "Jue 8:21",
+     "cita": "Levántate tú, y mátanos"
+    }
+   ],
+   "externo": []
+  },
+  "Zalmunna_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 8:10",
+     "fin": "Jue 8:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Madián tomado por Gedeón en Carcor y muerto por su mano, junto a Zeba.",
+   "datos": [
+    {
+     "texto": "Rey de Madián, perseguido por Gedeón",
+     "certeza": "texto",
+     "ref": "Jue 8:5",
+     "cita": "Zeba y á Zalmunna, reyes de Madián"
+    },
+    {
+     "texto": "Gedeón los toma",
+     "certeza": "texto",
+     "ref": "Jue 8:12",
+     "cita": "tomados los dos reyes de Madián"
+    },
+    {
+     "texto": "Dicen que los hermanos de Gedeón muertos en Tabor parecían hijos de rey",
+     "certeza": "texto",
+     "ref": "Jue 8:18",
+     "cita": "parecían hijos de rey"
+    }
+   ],
+   "externo": []
+  },
+  "Jether_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 8:20",
+     "fin": "Jue 8:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Primogénito de Gedeón, aún muchacho.",
+   "datos": [
+    {
+     "texto": "No obedece la orden de su padre",
+     "certeza": "texto",
+     "ref": "Jue 8:20",
+     "cita": "el joven no desenvainó su espada, porque tenía temor"
+    }
+   ],
+   "externo": []
+  },
+  "Abimelech_2": {
+   "apariciones": [
+    {
+     "inicio": "Jue 8:31",
+     "fin": "Jue 8:31"
+    },
+    {
+     "inicio": "Jue 9:1",
+     "fin": "Jue 9:6"
+    },
+    {
+     "inicio": "Jue 9:22",
+     "fin": "Jue 9:55"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 10:1"
+    }
+   ],
+   "resumen": "Hijo de Gedeón y de una concubina de Siquem: mata a sus hermanos, reina tres años y muere en Tebes por una rueda de molino.",
+   "datos": [
+    {
+     "texto": "Nace de la concubina de Gedeón en Siquem",
+     "certeza": "texto",
+     "ref": "Jue 8:31",
+     "cita": "su concubina que estaba en Sichêm, también le parió un hijo"
+    },
+    {
+     "texto": "Con la plata del templo alquila hombres ociosos",
+     "certeza": "texto",
+     "ref": "Jue 9:4",
+     "cita": "setenta [siclos] de plata del templo de Baal-berith"
+    },
+    {
+     "texto": "Mata a sus hermanos; solo queda Jotam",
+     "certeza": "texto",
+     "ref": "Jue 9:5",
+     "cita": "mató á sus hermanos los hijos de Jerobaal, setenta varones, sobre una piedra"
+    },
+    {
+     "texto": "Siquem lo elige rey",
+     "certeza": "texto",
+     "ref": "Jue 9:6",
+     "cita": "eligieron á Abimelech por rey"
+    },
+    {
+     "texto": "Domina tres años",
+     "certeza": "texto",
+     "ref": "Jue 9:22",
+     "cita": "Abimelech hubo dominado sobre Israel tres años"
+    },
+    {
+     "texto": "Toma Siquem y la arrasa",
+     "certeza": "texto",
+     "ref": "Jue 9:45",
+     "cita": "asoló la ciudad, y sembróla de sal"
+    },
+    {
+     "texto": "Una mujer le deja caer sobre la cabeza un pedazo de rueda de molino",
+     "certeza": "texto",
+     "ref": "Jue 9:53",
+     "cita": "un pedazo de una rueda de molino"
+    },
+    {
+     "texto": "Pide a su escudero que lo mate para que no se diga eso",
+     "certeza": "texto",
+     "ref": "Jue 9:54",
+     "cita": "Una mujer lo mató"
+    },
+    {
+     "texto": "El texto lo presenta como pago de Dios",
+     "certeza": "texto",
+     "ref": "Jue 9:56",
+     "cita": "pagó Dios á Abimelech el mal que hizo"
+    }
+   ],
+   "externo": []
+  },
+  "Jotham_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 9:5",
+     "fin": "Jue 9:5"
+    },
+    {
+     "inicio": "Jue 9:7",
+     "fin": "Jue 9:21"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 9:57"
+    }
+   ],
+   "resumen": "Hijo menor de Gedeón, único que escapa; desde el Gerizim propone la fábula de los árboles a Siquem y huye a Beer.",
+   "datos": [
+    {
+     "texto": "Sobrevive escondido",
+     "certeza": "texto",
+     "ref": "Jue 9:5",
+     "cita": "quedó Jotham, el más pequeño hijo de Jerobaal"
+    },
+    {
+     "texto": "Habla a los de Siquem desde el Gerizim",
+     "certeza": "texto",
+     "ref": "Jue 9:7",
+     "cita": "púsose en la cumbre del monte de Gerizim"
+    },
+    {
+     "texto": "El escaramujo acepta reinar en la fábula, con advertencia",
+     "certeza": "texto",
+     "ref": "Jue 9:15",
+     "cita": "fuego salga del escaramujo que devore los cedros del Líbano"
+    },
+    {
+     "texto": "Huye a Beer por miedo de Abimelec",
+     "certeza": "texto",
+     "ref": "Jue 9:21",
+     "cita": "fuése á Beer"
+    },
+    {
+     "texto": "Su maldición se cumple",
+     "certeza": "texto",
+     "ref": "Jue 9:57",
+     "cita": "la maldición de Jotham, hijo de Jerobaal, vino sobre ellos"
+    }
+   ],
+   "externo": []
+  },
+  "Ebed_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 9:26"
+    },
+    {
+     "ref": "Jue 9:28"
+    },
+    {
+     "ref": "Jue 9:30"
+    },
+    {
+     "ref": "Jue 9:31"
+    },
+    {
+     "ref": "Jue 9:35"
+    }
+   ],
+   "resumen": "Padre de Gaal.",
+   "datos": [],
+   "externo": []
+  },
+  "Gaal_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 9:26",
+     "fin": "Jue 9:41"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Llega a Siquem con sus hermanos, incita contra Abimelec y es expulsado por Zebul.",
+   "datos": [
+    {
+     "texto": "Se establece en Siquem y los de Siquem se confían en él",
+     "certeza": "texto",
+     "ref": "Jue 9:26",
+     "cita": "Gaal hijo de Ebed vino con sus hermanos"
+    },
+    {
+     "texto": "Desafía a Abimelec",
+     "certeza": "texto",
+     "ref": "Jue 9:28",
+     "cita": "¿Quién es Abimelech y qué es Sichêm"
+    },
+    {
+     "texto": "Pelea contra Abimelec",
+     "certeza": "texto",
+     "ref": "Jue 9:39",
+     "cita": "Gaal salió delante de los de Sichêm, y peleó contra Abimelech"
+    },
+    {
+     "texto": "Zebul lo echa de Siquem",
+     "certeza": "texto",
+     "ref": "Jue 9:41",
+     "cita": "Zebul echó fuera á Gaal y á sus hermanos"
+    }
+   ],
+   "externo": []
+  },
+  "Zebul_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 9:28",
+     "fin": "Jue 9:28"
+    },
+    {
+     "inicio": "Jue 9:30",
+     "fin": "Jue 9:33"
+    },
+    {
+     "inicio": "Jue 9:36",
+     "fin": "Jue 9:38"
+    },
+    {
+     "inicio": "Jue 9:41",
+     "fin": "Jue 9:41"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Asistente de la ciudad de Siquem: avisa a Abimelec contra Gaal y lo expulsa.",
+   "datos": [
+    {
+     "texto": "Se enciende su ira al oír a Gaal",
+     "certeza": "texto",
+     "ref": "Jue 9:30",
+     "cita": "Zebul asistente de la ciudad"
+    },
+    {
+     "texto": "Avisa a Abimelec de la emboscada que debe poner",
+     "certeza": "texto",
+     "ref": "Jue 9:31",
+     "cita": "envió sagazmente mensajeros á Abimelech"
+    },
+    {
+     "texto": "Empuja a Gaal a salir",
+     "certeza": "texto",
+     "ref": "Jue 9:38",
+     "cita": "Sal pues ahora, y pelea con él"
+    }
+   ],
+   "externo": []
+  },
+  "Dodo_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 10:1"
+    }
+   ],
+   "resumen": "Abuelo de Tola.",
+   "datos": [],
+   "externo": []
+  },
+  "Puah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 10:1"
+    }
+   ],
+   "resumen": "Padre de Tola.",
+   "datos": [],
+   "externo": []
+  },
+  "Tola_2": {
+   "apariciones": [
+    {
+     "inicio": "Jue 10:1",
+     "fin": "Jue 10:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Juez de Isacar que habitó en Samir y juzgó veintitrés años.",
+   "datos": [
+    {
+     "texto": "Libra a Israel después de Abimelec",
+     "certeza": "texto",
+     "ref": "Jue 10:1",
+     "cita": "Tola hijo de Púa, hijo de Dodo, varón de Issachâr"
+    },
+    {
+     "texto": "Juzga veintitrés años y es sepultado en Samir",
+     "certeza": "texto",
+     "ref": "Jue 10:2",
+     "cita": "juzgó á Israel veintitrés años"
+    }
+   ],
+   "externo": []
+  },
+  "Jair_2": {
+   "apariciones": [
+    {
+     "inicio": "Jue 10:3",
+     "fin": "Jue 10:5"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Galaadita que juzgó veintidós años.",
+   "datos": [
+    {
+     "texto": "Juzga veintidós años",
+     "certeza": "texto",
+     "ref": "Jue 10:3",
+     "cita": "Jair, Galaadita, el cual juzgó á Israel veintidós años"
+    },
+    {
+     "texto": "Tiene treinta hijos y treinta villas",
+     "certeza": "texto",
+     "ref": "Jue 10:4",
+     "cita": "treinta hijos que cabalgaban sobre treinta asnos"
+    },
+    {
+     "texto": "Muere y es sepultado en Camón",
+     "certeza": "texto",
+     "ref": "Jue 10:5",
+     "cita": "fué sepultado en Camón"
+    }
+   ],
+   "externo": []
+  },
+  "Gilead_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 11:1"
+    },
+    {
+     "ref": "Jue 11:2"
+    }
+   ],
+   "resumen": "Padre de Jefté.",
+   "datos": [],
+   "externo": []
+  },
+  "Jephthah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 11:1",
+     "fin": "Jue 12:7"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Galaadita, hijo de una ramera, echado por sus hermanos y vuelto a llamar como capitán contra Amón; hace un voto, vence a Amón, derrota a Efraín y juzga seis años.",
+   "datos": [
+    {
+     "texto": "Hombre valiente, hijo de una ramera",
+     "certeza": "texto",
+     "ref": "Jue 11:1",
+     "cita": "Jephté, Galaadita, hombre valiente, hijo de una ramera"
+    },
+    {
+     "texto": "Sus hermanos lo echan",
+     "certeza": "texto",
+     "ref": "Jue 11:2",
+     "cita": "No heredarás en la casa de nuestro padre"
+    },
+    {
+     "texto": "Huye a Tob, donde se le juntan hombres ociosos",
+     "certeza": "texto",
+     "ref": "Jue 11:3",
+     "cita": "habitó en tierra de Tob"
+    },
+    {
+     "texto": "Los ancianos de Galaad lo vuelven a llamar y lo eligen",
+     "certeza": "texto",
+     "ref": "Jue 11:11",
+     "cita": "el pueblo lo eligió por su cabeza y príncipe"
+    },
+    {
+     "texto": "Recibe el espíritu de Jehová antes de pasar a Amón",
+     "certeza": "texto",
+     "ref": "Jue 11:29",
+     "cita": "el espíritu de Jehová fué sobre Jephté"
+    },
+    {
+     "texto": "Voto: lo primero que salga de su casa",
+     "certeza": "texto",
+     "ref": "Jue 11:31",
+     "cita": "será de Jehová, y le ofreceré en holocausto"
+    },
+    {
+     "texto": "Al ver a su hija rompe sus vestidos",
+     "certeza": "texto",
+     "ref": "Jue 11:35",
+     "cita": "no podré retractarme"
+    },
+    {
+     "texto": "Cumple su voto (el texto no da más detalle)",
+     "certeza": "texto",
+     "ref": "Jue 11:39",
+     "cita": "hizo de ella conforme á su voto"
+    },
+    {
+     "texto": "Los de Galaad dominan los vados con la prueba de Shiboleth",
+     "certeza": "texto",
+     "ref": "Jue 12:6",
+     "cita": "Siboleth"
+    },
+    {
+     "texto": "Juzga seis años y es sepultado en una ciudad de Galaad",
+     "certeza": "texto",
+     "ref": "Jue 12:7",
+     "cita": "Jephté juzgó á Israel seis años"
+    }
+   ],
+   "externo": []
+  },
+  "Hija_de_Jefte": {
+   "apariciones": [
+    {
+     "inicio": "Jue 11:34",
+     "fin": "Jue 11:39"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 11:40"
+    }
+   ],
+   "resumen": "Hija única de Jefté: sale a recibirlo con adufes y danzas y acepta que se cumpla el voto.",
+   "datos": [
+    {
+     "texto": "Es su única hija",
+     "certeza": "texto",
+     "ref": "Jue 11:34",
+     "cita": "su hija le salió á recibir con adufes y danzas"
+    },
+    {
+     "texto": "Pide que se cumpla el voto",
+     "certeza": "texto",
+     "ref": "Jue 11:36",
+     "cita": "haz de mí como salió de tu boca"
+    },
+    {
+     "texto": "Pide dos meses para llorar su virginidad por los montes",
+     "certeza": "texto",
+     "ref": "Jue 11:37",
+     "cita": "déjame por dos meses"
+    },
+    {
+     "texto": "Vuelve a su padre y se cumple el voto",
+     "certeza": "texto",
+     "ref": "Jue 11:39",
+     "cita": "Y ella nunca conoció varón"
+    },
+    {
+     "texto": "Nace una costumbre anual en Israel",
+     "certeza": "texto",
+     "ref": "Jue 11:40",
+     "cita": "á endechar á la hija de Jephté Galaadita, cuatro días en el año"
+    }
+   ],
+   "externo": []
+  },
+  "Ibzan_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 12:8",
+     "fin": "Jue 12:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Juez de Belén que juzgó siete años.",
+   "datos": [
+    {
+     "texto": "Casó a sus hijas fuera y tomó treinta hijas para sus hijos",
+     "certeza": "texto",
+     "ref": "Jue 12:9",
+     "cita": "treinta hijos y treinta hijas"
+    },
+    {
+     "texto": "Muere y es sepultado en Belén",
+     "certeza": "texto",
+     "ref": "Jue 12:10",
+     "cita": "fué sepultado en Beth-lehem"
+    }
+   ],
+   "externo": []
+  },
+  "Elon_3": {
+   "apariciones": [
+    {
+     "inicio": "Jue 12:11",
+     "fin": "Jue 12:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Zabulonita que juzgó diez años.",
+   "datos": [
+    {
+     "texto": "Juzga diez años",
+     "certeza": "texto",
+     "ref": "Jue 12:11",
+     "cita": "Elón, Zabulonita, el cual juzgó á Israel diez años"
+    },
+    {
+     "texto": "Sepultado en Ajalón",
+     "certeza": "texto",
+     "ref": "Jue 12:12",
+     "cita": "fué sepultado en Ajalón en la tierra de Zabulón"
+    }
+   ],
+   "externo": []
+  },
+  "Abdon_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 12:13",
+     "fin": "Jue 12:15"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Piratonita hijo de Hilel que juzgó ocho años.",
+   "datos": [
+    {
+     "texto": "Tiene cuarenta hijos y treinta nietos",
+     "certeza": "texto",
+     "ref": "Jue 12:14",
+     "cita": "cuarenta hijos y treinta nietos, que cabalgaban sobre setenta asnos"
+    },
+    {
+     "texto": "Muere y es sepultado en Piratón",
+     "certeza": "texto",
+     "ref": "Jue 12:15",
+     "cita": "fué sepultado en Piratón"
+    }
+   ],
+   "externo": []
+  },
+  "Hillel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 12:13"
+    },
+    {
+     "ref": "Jue 12:15"
+    }
+   ],
+   "resumen": "Padre de Abdón.",
+   "datos": [],
+   "externo": []
+  },
+  "Manoah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 13:2",
+     "fin": "Jue 13:23"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 16:31"
+    }
+   ],
+   "resumen": "Hombre de Sora, de Dan, marido de la mujer estéril a la que el ángel anuncia un hijo nazareo; ofrece un cabrito y ve subir al ángel en la llama.",
+   "datos": [
+    {
+     "texto": "Su mujer es estéril",
+     "certeza": "texto",
+     "ref": "Jue 13:2",
+     "cita": "un hombre de Sora, de la tribu de Dan, el cual se llamaba Manoa"
+    },
+    {
+     "texto": "Ora para que el ángel vuelva a enseñarles",
+     "certeza": "texto",
+     "ref": "Jue 13:8",
+     "cita": "yo te ruego que aquel varón de Dios que enviaste, torne ahora"
+    },
+    {
+     "texto": "Sacrifica sobre una peña",
+     "certeza": "texto",
+     "ref": "Jue 13:19",
+     "cita": "Manoa tomó un cabrito de las cabras y un presente"
+    },
+    {
+     "texto": "Teme morir al darse cuenta de que era el ángel de Jehová",
+     "certeza": "texto",
+     "ref": "Jue 13:22",
+     "cita": "Ciertamente moriremos, porque á Dios hemos visto"
+    },
+    {
+     "texto": "Sansón es sepultado en su sepulcro",
+     "certeza": "texto",
+     "ref": "Jue 16:31",
+     "cita": "en el sepulcro de su padre Manoa"
+    }
+   ],
+   "externo": []
+  },
+  "Mujer_de_Manoa": {
+   "apariciones": [
+    {
+     "inicio": "Jue 13:2",
+     "fin": "Jue 13:24"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer estéril de Sora a quien el ángel de Jehová anuncia que tendrá un hijo nazareo; razona con Manoa que Jehová no los quiere matar.",
+   "datos": [
+    {
+     "texto": "El ángel se lo anuncia",
+     "certeza": "texto",
+     "ref": "Jue 13:3",
+     "cita": "tú eres estéril, y no has parido; mas concebirás y parirás un hijo"
+    },
+    {
+     "texto": "Debe guardarse mientras espera al hijo",
+     "certeza": "texto",
+     "ref": "Jue 13:4",
+     "cita": "no bebas vino, ni sidra, ni comas cosa inmunda"
+    },
+    {
+     "texto": "Su razonamiento tranquiliza a Manoa",
+     "certeza": "texto",
+     "ref": "Jue 13:23",
+     "cita": "Si Jehová nos quisiera matar"
+    },
+    {
+     "texto": "Da a luz a Sansón",
+     "certeza": "texto",
+     "ref": "Jue 13:24",
+     "cita": "la mujer parió un hijo, y llamóle por nombre Samsón"
+    }
+   ],
+   "externo": []
+  },
+  "Samson_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 13:24",
+     "fin": "Jue 13:25"
+    },
+    {
+     "inicio": "Jue 14:1",
+     "fin": "Jue 14:20"
+    },
+    {
+     "inicio": "Jue 15:1",
+     "fin": "Jue 15:20"
+    },
+    {
+     "inicio": "Jue 16:1",
+     "fin": "Jue 16:31"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Nazareo de Dan que comienza a salvar a Israel de los filisteos: mata un león, propone un acertijo, hiere a mil con una quijada, revela su secreto a Dalila y muere derribando el templo de Dagón.",
+   "datos": [
+    {
+     "texto": "El ángel anuncia que será nazareo y comenzará a salvar a Israel",
+     "certeza": "texto",
+     "ref": "Jue 13:5",
+     "cita": "aquel niño será Nazareo á Dios desde el vientre"
+    },
+    {
+     "texto": "Entre Sora y Estaol",
+     "certeza": "texto",
+     "ref": "Jue 13:25",
+     "cita": "el espíritu de Jehová comenzó á manifestarse en él"
+    },
+    {
+     "texto": "Quiere tomarla por mujer",
+     "certeza": "texto",
+     "ref": "Jue 14:1",
+     "cita": "vió en Timnah una mujer de las hijas de los Filisteos"
+    },
+    {
+     "texto": "Mata un cachorro de león sin armas",
+     "certeza": "texto",
+     "ref": "Jue 14:6",
+     "cita": "despedazólo como quien despedaza un cabrito"
+    },
+    {
+     "texto": "Su acertijo en el banquete",
+     "certeza": "texto",
+     "ref": "Jue 14:14",
+     "cita": "Del comedor salió comida, y del fuerte salió dulzura"
+    },
+    {
+     "texto": "Las suelta con teas en los sembrados filisteos",
+     "certeza": "texto",
+     "ref": "Jue 15:4",
+     "cita": "cogió trescientas zorras"
+    },
+    {
+     "texto": "Usa una quijada de asno fresca",
+     "certeza": "texto",
+     "ref": "Jue 15:15",
+     "cita": "hirió con ella á mil hombres"
+    },
+    {
+     "texto": "Juzga veinte años",
+     "certeza": "texto",
+     "ref": "Jue 15:20",
+     "cita": "juzgó á Israel en días de los Filisteos veinte años"
+    },
+    {
+     "texto": "En Gaza se lleva las puertas al monte delante de Hebrón",
+     "certeza": "texto",
+     "ref": "Jue 16:3",
+     "cita": "tomando las puertas de la ciudad con sus dos pilares y su cerrojo"
+    },
+    {
+     "texto": "Revela a Dalila su secreto",
+     "certeza": "texto",
+     "ref": "Jue 16:17",
+     "cita": "soy Nazareo de Dios desde el vientre de mi madre"
+    },
+    {
+     "texto": "Los filisteos lo capturan y lo llevan a Gaza",
+     "certeza": "texto",
+     "ref": "Jue 16:21",
+     "cita": "sacáronle los ojos"
+    },
+    {
+     "texto": "Derriba el templo; mata muriendo a más de los que mató en vida",
+     "certeza": "texto",
+     "ref": "Jue 16:30",
+     "cita": "Muera yo con los Filisteos"
+    },
+    {
+     "texto": "Es sepultado entre Sora y Estaol",
+     "certeza": "texto",
+     "ref": "Jue 16:31",
+     "cita": "Y él juzgó á Israel veinte años"
+    }
+   ],
+   "externo": []
+  },
+  "Delilah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 16:4",
+     "fin": "Jue 16:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer del valle de Sorec amada por Sansón: los príncipes filisteos le ofrecen plata y ella le saca el secreto de su fuerza.",
+   "datos": [
+    {
+     "texto": "Sansón se enamora de ella",
+     "certeza": "texto",
+     "ref": "Jue 16:4",
+     "cita": "se enamoró de una mujer en el valle de Sorec, la cual se llamaba Dalila"
+    },
+    {
+     "texto": "Cada príncipe filisteo le ofrece mil cien siclos",
+     "certeza": "texto",
+     "ref": "Jue 16:5",
+     "cita": "mil y cien siclos de plata"
+    },
+    {
+     "texto": "Lo presiona hasta que él habla",
+     "certeza": "texto",
+     "ref": "Jue 16:15",
+     "cita": "Ya me has engañado tres veces"
+    },
+    {
+     "texto": "Hace que lo rapen mientras duerme",
+     "certeza": "texto",
+     "ref": "Jue 16:19",
+     "cita": "rapóle siete guedejas de su cabeza"
+    }
+   ],
+   "externo": []
+  },
+  "Micah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 17:1",
+     "fin": "Jue 17:13"
+    },
+    {
+     "inicio": "Jue 18:13",
+     "fin": "Jue 18:26"
+    },
+    {
+     "inicio": "Jue 18:31",
+     "fin": "Jue 18:31"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hombre del monte de Efraín: devuelve a su madre la plata, hace una imagen, efod y terafín, toma un levita por sacerdote y lo pierde cuando los danitas se llevan todo.",
+   "datos": [
+    {
+     "texto": "Confiesa a su madre que él los tomó",
+     "certeza": "texto",
+     "ref": "Jue 17:2",
+     "cita": "Los mil y cien [siclos] de plata que te fueron hurtados"
+    },
+    {
+     "texto": "Tiene casa de dioses y consagra a uno de sus hijos por sacerdote",
+     "certeza": "texto",
+     "ref": "Jue 17:5",
+     "cita": "hízose hacer ephod y teraphim"
+    },
+    {
+     "texto": "Contrata al levita de Belén por diez siclos al año",
+     "certeza": "texto",
+     "ref": "Jue 17:10",
+     "cita": "me serás en lugar de padre y sacerdote"
+    },
+    {
+     "texto": "Cree que le irá bien por tener al levita",
+     "certeza": "texto",
+     "ref": "Jue 17:13",
+     "cita": "Ahora sé que Jehová me hará bien"
+    },
+    {
+     "texto": "Protesta cuando los danitas se llevan sus cosas",
+     "certeza": "texto",
+     "ref": "Jue 18:24",
+     "cita": "Mis dioses que yo hice"
+    },
+    {
+     "texto": "Su imagen se queda en Dan mientras la casa de Dios estuvo en Silo",
+     "certeza": "texto",
+     "ref": "Jue 18:31",
+     "cita": "levantáronse la imagen de Michâs"
+    }
+   ],
+   "externo": []
+  },
+  "Gershom_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 18:30"
+    }
+   ],
+   "resumen": "Padre de Jonatán (el sacerdote de Dan).",
+   "datos": [],
+   "externo": []
+  },
+  "Manasseh_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 18:30"
+    }
+   ],
+   "resumen": "Padre de Gersón, según Jue 18:30.",
+   "datos": [],
+   "externo": []
+  },
+  "Jonathan_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 18:30",
+     "fin": "Jue 18:30"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Gersón: él y sus hijos fueron sacerdotes en la tribu de Dan. El texto no dice expresamente que sea el levita de 17:7.",
+   "datos": [
+    {
+     "texto": "Sacerdote de la tribu de Dan hasta la transmigración de la tierra",
+     "certeza": "texto",
+     "ref": "Jue 18:30",
+     "cita": "Jonathán, hijo de Gersón, hijo de Manasés, él y sus hijos fueron sacerdotes en la tribu de Dan"
+    }
+   ],
+   "externo": []
+  },
+  "Caleb_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 1:12",
+     "fin": "Jue 1:15"
+    },
+    {
+     "inicio": "Jue 1:20",
+     "fin": "Jue 1:20"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 3:9"
+    }
+   ],
+   "resumen": "En Jueces: ofrece a su hija Acsa a quien tome Quiriat-sefer y recibe Hebrón.",
+   "datos": [
+    {
+     "texto": "Ofrece a su hija por mujer a quien tome Debir",
+     "certeza": "texto",
+     "ref": "Jue 1:12",
+     "cita": "El que hiriere á Chîriath-sepher, y la tomare, yo le daré á Axa mi hija por mujer"
+    },
+    {
+     "texto": "Concede a Acsa las fuentes",
+     "certeza": "texto",
+     "ref": "Jue 1:15",
+     "cita": "Caleb le dió las fuentes de arriba y las fuentes de abajo"
+    },
+    {
+     "texto": "Hebrón le es dada y él echa a tres hijos de Anac",
+     "certeza": "texto",
+     "ref": "Jue 1:20",
+     "cita": "dieron Hebrón á Caleb, como Moisés había dicho"
+    }
+   ],
+   "externo": []
+  },
+  "Othniel_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 1:13",
+     "fin": "Jue 1:13"
+    },
+    {
+     "inicio": "Jue 3:9",
+     "fin": "Jue 3:11"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Jueces: toma Quiriat-sefer y se casa con Acsa; Jehová lo suscita como salvador contra Cusán-risataim.",
+   "datos": [
+    {
+     "texto": "Toma la ciudad y recibe a Acsa por mujer",
+     "certeza": "texto",
+     "ref": "Jue 1:13",
+     "cita": "tomóla Othoniel hijo de Cenez, hermano menor de Caleb"
+    },
+    {
+     "texto": "Es el primer salvador del libro",
+     "certeza": "texto",
+     "ref": "Jue 3:9",
+     "cita": "Jehová suscitó salvador á los hijos de Israel y librólos"
+    },
+    {
+     "texto": "Juzga y sale a batalla",
+     "certeza": "texto",
+     "ref": "Jue 3:10",
+     "cita": "el espíritu de Jehová fué sobre él, y juzgó á Israel"
+    },
+    {
+     "texto": "Cuarenta años de reposo y muere",
+     "certeza": "texto",
+     "ref": "Jue 3:11",
+     "cita": "reposó la tierra cuarenta años; y murió Othoniel"
+    }
+   ],
+   "externo": []
+  },
+  "Kenaz_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:13"
+    },
+    {
+     "ref": "Jue 3:9"
+    },
+    {
+     "ref": "Jue 3:11"
+    }
+   ],
+   "resumen": "Padre de Otoniel.",
+   "datos": [],
+   "externo": []
+  },
+  "Achsah_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 1:12",
+     "fin": "Jue 1:15"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Jueces: se repite su historia de Josué 15: pide a Caleb las fuentes de aguas.",
+   "datos": [
+    {
+     "texto": "Pide a su padre fuentes además de tierra de secadal",
+     "certeza": "texto",
+     "ref": "Jue 1:15",
+     "cita": "me des también fuentes de aguas"
+    }
+   ],
+   "externo": []
+  },
+  "Sheshai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:10"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Ahiman_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:10"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Talmai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:10"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Anak_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:20"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Joshua_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:1"
+    },
+    {
+     "ref": "Jue 2:6"
+    },
+    {
+     "ref": "Jue 2:7"
+    },
+    {
+     "ref": "Jue 2:8"
+    },
+    {
+     "ref": "Jue 2:21"
+    },
+    {
+     "ref": "Jue 2:23"
+    }
+   ],
+   "resumen": "En Jueces: ya muerto; Jue 2:8 repite su muerte a los 110 años.",
+   "datos": [
+    {
+     "texto": "Muere a los 110 años",
+     "certeza": "texto",
+     "ref": "Jue 2:8",
+     "cita": "siendo de ciento y diez años"
+    },
+    {
+     "texto": "Enterrado en Timnat-sera",
+     "certeza": "texto",
+     "ref": "Jue 2:9",
+     "cita": "enterráronlo en el término de su heredad en Timnath-sera"
+    }
+   ],
+   "externo": []
+  },
+  "Nun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 2:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Moses_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 1:16"
+    },
+    {
+     "ref": "Jue 1:20"
+    },
+    {
+     "ref": "Jue 3:4"
+    },
+    {
+     "ref": "Jue 4:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Hobab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 4:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Phinehas_1": {
+   "apariciones": [
+    {
+     "inicio": "Jue 20:28",
+     "fin": "Jue 20:28"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "En Jueces: se presenta ante el arca del pacto en Jue 20:27-28.",
+   "datos": [
+    {
+     "texto": "Sirve ante el arca cuando Israel consulta a Jehová",
+     "certeza": "texto",
+     "ref": "Jue 20:28",
+     "cita": "Phinees, hijo de Eleazar, hijo de Aarón, se presentaba delante de ella"
+    }
+   ],
+   "externo": []
+  },
+  "Eleazar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 20:28"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Aaron_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 20:28"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Hamor_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 9:28"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Shechem_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 9:28"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Sihon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 11:19"
+    },
+    {
+     "ref": "Jue 11:20"
+    },
+    {
+     "ref": "Jue 11:21"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Balak_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 11:25"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Zippor_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 11:25"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Iezer_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 8:2"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Dan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Jue 18:29"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "aguijada-de-samgar": {
+   "nombre": "Aguijada de bueyes de Samgar",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "Jue 3:31",
+     "fin": "Jue 3:31"
+    }
+   ],
+   "personas": [
+    "Shamgar_1"
+   ],
+   "lugares": [],
+   "resumen": "Vara con punta de labrador con la que Samgar hirió a seiscientos filisteos.",
+   "datos": [
+    {
+     "texto": "Samgar hiere con ella a seiscientos filisteos",
+     "certeza": "texto",
+     "ref": "Jue 3:31",
+     "cita": "con una aguijada de bueyes"
+    }
+   ],
+   "externo": []
+  },
+  "punal-de-aod": {
+   "nombre": "Puñal de dos filos de Aod",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "Jue 3:16",
+     "fin": "Jue 3:23"
+    }
+   ],
+   "personas": [
+    "Ehud_1",
+    "Eglon_1"
+   ],
+   "lugares": [
+    "gilgal"
+   ],
+   "resumen": "Puñal de un codo que Aod esconde bajo la ropa, al lado derecho, para llegar hasta Eglón.",
+   "datos": [
+    {
+     "texto": "Aod se lo hace",
+     "certeza": "texto",
+     "ref": "Jue 3:16",
+     "cita": "un puñal de dos filos, de un codo de largo"
+    },
+    {
+     "texto": "Lo lleva oculto a la derecha",
+     "certeza": "texto",
+     "ref": "Jue 3:16",
+     "cita": "ciñósele debajo de sus vestidos á su lado derecho"
+    },
+    {
+     "texto": "Lo toma con la mano izquierda",
+     "certeza": "texto",
+     "ref": "Jue 3:21",
+     "cita": "tomó el puñal de su lado derecho"
+    }
+   ],
+   "externo": []
+  },
+  "carros-herrados": {
+   "nombre": "Carros herrados de Sísara",
+   "tipo": "armamento",
+   "apariciones": [
+    {
+     "inicio": "Jue 1:19",
+     "fin": "Jue 1:19"
+    },
+    {
+     "inicio": "Jue 4:3",
+     "fin": "Jue 4:3"
+    },
+    {
+     "inicio": "Jue 4:13",
+     "fin": "Jue 4:16"
+    }
+   ],
+   "personas": [
+    "Sisera_1",
+    "Jabin_Jue4",
+    "Barak_1"
+   ],
+   "lugares": [
+    "cison",
+    "haroset-goim"
+   ],
+   "resumen": "Los carros herrados detienen a Judá en los llanos (Jue 1:19) y son los novecientos de Sísara junto al Cisón.",
+   "datos": [
+    {
+     "texto": "Judá no pudo echar a los de los llanos por sus carros herrados",
+     "certeza": "texto",
+     "ref": "Jue 1:19",
+     "cita": "tenían carros herrados"
+    },
+    {
+     "texto": "Los de Sísara son novecientos",
+     "certeza": "texto",
+     "ref": "Jue 4:3",
+     "cita": "nuevecientos carros herrados"
+    },
+    {
+     "texto": "Jehová los desbarata delante de Barac",
+     "certeza": "texto",
+     "ref": "Jue 4:15",
+     "cita": "Jehová desbarató á Sísara, y á todos sus carros"
+    }
+   ],
+   "externo": []
+  },
+  "estaca-y-mazo-de-jael": {
+   "nombre": "Estaca de la tienda y mazo de Jael",
+   "tipo": "herramienta / arma",
+   "apariciones": [
+    {
+     "inicio": "Jue 4:21",
+     "fin": "Jue 4:22"
+    },
+    {
+     "inicio": "Jue 5:26",
+     "fin": "Jue 5:26"
+    }
+   ],
+   "personas": [
+    "Jael_1",
+    "Sisera_1"
+   ],
+   "lugares": [
+    "allon-saananim"
+   ],
+   "resumen": "Estaca de tienda y mazo con que Jael mata a Sísara mientras duerme.",
+   "datos": [
+    {
+     "texto": "Jael los toma y se acerca callando",
+     "certeza": "texto",
+     "ref": "Jue 4:21",
+     "cita": "tomó una estaca de la tienda, y poniendo un mazo en su mano"
+    },
+    {
+     "texto": "Barac lo encuentra así",
+     "certeza": "texto",
+     "ref": "Jue 4:22",
+     "cita": "Sísara yacía muerto con la estaca por la sien"
+    },
+    {
+     "texto": "El cántico lo repite",
+     "certeza": "texto",
+     "ref": "Jue 5:26",
+     "cita": "Su mano tendió á la estaca, y su diestra al mazo de trabajadores"
+    }
+   ],
+   "externo": []
+  },
+  "ofrenda-de-gedeon": {
+   "nombre": "Cabrito, panes sin levadura y caldo sobre la peña",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "Jue 6:18",
+     "fin": "Jue 6:21"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "lugares": [
+    "ofra-de-abiezer"
+   ],
+   "resumen": "Presente de Gedeón al ángel: el fuego sube de la peña y lo consume.",
+   "datos": [
+    {
+     "texto": "Gedeón prepara el presente",
+     "certeza": "texto",
+     "ref": "Jue 6:19",
+     "cita": "aderezó un cabrito, y panes sin levadura de un epha de harina"
+    },
+    {
+     "texto": "El ángel indica dónde ponerlo",
+     "certeza": "texto",
+     "ref": "Jue 6:20",
+     "cita": "ponlo sobre esta peña, y vierte el caldo"
+    },
+    {
+     "texto": "El ángel toca con el bordón y desaparece",
+     "certeza": "texto",
+     "ref": "Jue 6:21",
+     "cita": "subió fuego de la peña, el cual consumió la carne y los panes sin levadura"
+    }
+   ],
+   "externo": []
+  },
+  "altar-jehova-salom": {
+   "nombre": "Altar Jehová-salom",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "Jue 6:24",
+     "fin": "Jue 6:24"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "lugares": [
+    "ofra-de-abiezer"
+   ],
+   "resumen": "Altar que Gedeón edifica en Ofra tras ver al ángel de Jehová.",
+   "datos": [
+    {
+     "texto": "Lo edifica y le da ese nombre",
+     "certeza": "texto",
+     "ref": "Jue 6:24",
+     "cita": "edificó allí Gedeón altar á Jehová, al que llamó Jehová-salom"
+    },
+    {
+     "texto": "El texto lo da por existente en su tiempo",
+     "certeza": "texto",
+     "ref": "Jue 6:24",
+     "cita": "está hasta hoy en Ophra de los Abiezeritas"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-baal-y-bosque": {
+   "nombre": "Altar de Baal y bosque de Ofra",
+   "tipo": "altar / ídolo",
+   "apariciones": [
+    {
+     "inicio": "Jue 6:25",
+     "fin": "Jue 6:32"
+    }
+   ],
+   "personas": [
+    "Gideon_1",
+    "Joash_1"
+   ],
+   "lugares": [
+    "ofra-de-abiezer"
+   ],
+   "resumen": "El altar de Baal de Joás, junto a un bosque (ídolo de madera), que Gedeón derriba de noche.",
+   "datos": [
+    {
+     "texto": "Orden de Jehová a Gedeón",
+     "certeza": "texto",
+     "ref": "Jue 6:25",
+     "cita": "derriba el altar de Baal que tu padre tiene"
+    },
+    {
+     "texto": "La ciudad lo halla derribado por la mañana",
+     "certeza": "texto",
+     "ref": "Jue 6:28",
+     "cita": "el altar de Baal estaba derribado"
+    },
+    {
+     "texto": "Origen del nombre Jerobaal",
+     "certeza": "texto",
+     "ref": "Jue 6:32",
+     "cita": "Pleitee Baal contra el que derribó su altar"
+    }
+   ],
+   "externo": []
+  },
+  "vellon-de-gedeon": {
+   "nombre": "Vellón de lana de Gedeón",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Jue 6:36",
+     "fin": "Jue 6:40"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "lugares": [
+    "ofra-de-abiezer"
+   ],
+   "resumen": "Vellón puesto en la era como señal: primero mojado con la tierra seca, luego seco con la tierra mojada.",
+   "datos": [
+    {
+     "texto": "Gedeón pide la señal",
+     "certeza": "texto",
+     "ref": "Jue 6:37",
+     "cita": "yo pondré un vellón de lana en la era"
+    },
+    {
+     "texto": "Primera noche: el vellón empapado, la tierra seca",
+     "certeza": "texto",
+     "ref": "Jue 6:38",
+     "cita": "sacó de él el rocío, un vaso lleno de agua"
+    },
+    {
+     "texto": "Segunda noche: al revés",
+     "certeza": "texto",
+     "ref": "Jue 6:40",
+     "cita": "la sequedad fué sólo en el vellón, y en toda la tierra estuvo el rocío"
+    }
+   ],
+   "externo": []
+  },
+  "cantaros-teas-y-bocinas": {
+   "nombre": "Cántaros, teas y bocinas de los trescientos",
+   "tipo": "estratagema",
+   "apariciones": [
+    {
+     "inicio": "Jue 7:8",
+     "fin": "Jue 7:8"
+    },
+    {
+     "inicio": "Jue 7:16",
+     "fin": "Jue 7:22"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "lugares": [
+    "harod"
+   ],
+   "resumen": "Cada uno de los trescientos lleva una bocina y un cántaro vacío con una tea dentro.",
+   "datos": [
+    {
+     "texto": "Gedeón los reparte en tres escuadrones",
+     "certeza": "texto",
+     "ref": "Jue 7:16",
+     "cita": "bocinas en sus manos, y cántaros vacíos con teas ardiendo dentro de los cántaros"
+    },
+    {
+     "texto": "Rompen los cántaros y tocan las bocinas",
+     "certeza": "texto",
+     "ref": "Jue 7:20",
+     "cita": "quebrando los cántaros tomaron en las manos izquierdas las teas"
+    },
+    {
+     "texto": "El ejército madianita huye",
+     "certeza": "texto",
+     "ref": "Jue 7:22",
+     "cita": "Jehová puso la espada de cada uno contra su compañero"
+    }
+   ],
+   "externo": []
+  },
+  "efod-de-gedeon": {
+   "nombre": "Efod de oro de Gedeón",
+   "tipo": "objeto de culto",
+   "apariciones": [
+    {
+     "inicio": "Jue 8:24",
+     "fin": "Jue 8:27"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "lugares": [
+    "ofra-de-abiezer"
+   ],
+   "resumen": "Efod hecho con los zarcillos de oro del despojo; Israel va tras él y es tropiezo para Gedeón y su casa.",
+   "datos": [
+    {
+     "texto": "Peso de los zarcillos pedidos",
+     "certeza": "texto",
+     "ref": "Jue 8:26",
+     "cita": "mil y setecientos [siclos] de oro"
+    },
+    {
+     "texto": "Lo hace y lo guarda en Ofra",
+     "certeza": "texto",
+     "ref": "Jue 8:27",
+     "cita": "Gedeón hizo de ellos un ephod, el cual hizo guardar en su ciudad de Ophra"
+    },
+    {
+     "texto": "Todo Israel fornicó tras él",
+     "certeza": "texto",
+     "ref": "Jue 8:27",
+     "cita": "fué por tropiezo á Gedeón y á su casa"
+    }
+   ],
+   "externo": []
+  },
+  "rueda-de-molino": {
+   "nombre": "Rueda de molino de la torre de Tebes",
+   "tipo": "arma improvisada",
+   "apariciones": [
+    {
+     "inicio": "Jue 9:53",
+     "fin": "Jue 9:53"
+    }
+   ],
+   "personas": [
+    "Abimelech_2"
+   ],
+   "lugares": [
+    "tebes"
+   ],
+   "resumen": "Pedazo de rueda de molino que una mujer deja caer sobre Abimelec.",
+   "datos": [
+    {
+     "texto": "Le quiebra los cascos",
+     "certeza": "texto",
+     "ref": "Jue 9:53",
+     "cita": "un pedazo de una rueda de molino sobre la cabeza de Abimelech"
+    }
+   ],
+   "externo": []
+  },
+  "panal-en-el-leon": {
+   "nombre": "El panal de miel en el cuerpo del león",
+   "tipo": "botín / acertijo",
+   "apariciones": [
+    {
+     "inicio": "Jue 14:5",
+     "fin": "Jue 14:9"
+    },
+    {
+     "inicio": "Jue 14:14",
+     "fin": "Jue 14:14"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "lugares": [
+    "timna"
+   ],
+   "resumen": "Panal en el cadáver del león que Sansón comparte con sus padres sin decirles de dónde viene; origen del acertijo.",
+   "datos": [
+    {
+     "texto": "Lo ve al volver, dentro del león muerto",
+     "certeza": "texto",
+     "ref": "Jue 14:8",
+     "cita": "un enjambre de abejas, y [un panal de] miel"
+    },
+    {
+     "texto": "Da miel a sus padres sin decir de dónde",
+     "certeza": "texto",
+     "ref": "Jue 14:9",
+     "cita": "no les descubrió que había tomado aquella miel del cuerpo del león"
+    },
+    {
+     "texto": "Acertijo que propone a los treinta compañeros",
+     "certeza": "texto",
+     "ref": "Jue 14:14",
+     "cita": "Del comedor salió comida, y del fuerte salió dulzura"
+    }
+   ],
+   "externo": []
+  },
+  "zorras-con-teas": {
+   "nombre": "Trescientas zorras con teas",
+   "tipo": "estratagema",
+   "apariciones": [
+    {
+     "inicio": "Jue 15:4",
+     "fin": "Jue 15:5"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "lugares": [
+    "timna"
+   ],
+   "resumen": "Zorras atadas por las colas de dos en dos con una tea en medio, soltadas en los sembrados filisteos.",
+   "datos": [
+    {
+     "texto": "Sansón las reúne",
+     "certeza": "texto",
+     "ref": "Jue 15:4",
+     "cita": "cogió trescientas zorras"
+    },
+    {
+     "texto": "Las ata de dos en dos",
+     "certeza": "texto",
+     "ref": "Jue 15:4",
+     "cita": "puso entre cada dos colas una tea"
+    },
+    {
+     "texto": "Los sembrados filisteos se queman",
+     "certeza": "texto",
+     "ref": "Jue 15:5",
+     "cita": "quemó hacinas y mieses, y viñas y olivares"
+    }
+   ],
+   "externo": []
+  },
+  "quijada-de-asno": {
+   "nombre": "Quijada de asno",
+   "tipo": "arma improvisada",
+   "apariciones": [
+    {
+     "inicio": "Jue 15:15",
+     "fin": "Jue 15:19"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "lugares": [
+    "lehi",
+    "ramat-lehi",
+    "en-hacore"
+   ],
+   "resumen": "Quijada fresca con la que Sansón hiere a mil hombres; luego Dios hace brotar agua de la muela.",
+   "datos": [
+    {
+     "texto": "Sansón la toma",
+     "certeza": "texto",
+     "ref": "Jue 15:15",
+     "cita": "hallando una quijada de asno fresca"
+    },
+    {
+     "texto": "La usa contra los filisteos de Lehi",
+     "certeza": "texto",
+     "ref": "Jue 15:15",
+     "cita": "hirió con ella á mil hombres"
+    },
+    {
+     "texto": "Echa la quijada y nombra el lugar",
+     "certeza": "texto",
+     "ref": "Jue 15:17",
+     "cita": "llamó á aquel lugar Ramath-lehi"
+    },
+    {
+     "texto": "Sansón bebe y recobra el ánimo",
+     "certeza": "texto",
+     "ref": "Jue 15:19",
+     "cita": "quebró Dios una muela que estaba en la quijada, y salieron de allí aguas"
+    }
+   ],
+   "externo": []
+  },
+  "puertas-de-gaza": {
+   "nombre": "Puertas de Gaza",
+   "tipo": "puertas de ciudad",
+   "apariciones": [
+    {
+     "inicio": "Jue 16:3",
+     "fin": "Jue 16:3"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "lugares": [
+    "gaza",
+    "hebron"
+   ],
+   "resumen": "Puertas con dos pilares y cerrojo que Sansón carga a medianoche hasta un monte.",
+   "datos": [
+    {
+     "texto": "Se las echa al hombro",
+     "certeza": "texto",
+     "ref": "Jue 16:3",
+     "cita": "tomando las puertas de la ciudad con sus dos pilares y su cerrojo"
+    },
+    {
+     "texto": "Las lleva allí",
+     "certeza": "texto",
+     "ref": "Jue 16:3",
+     "cita": "á la cumbre del monte que está delante de Hebrón"
+    }
+   ],
+   "externo": []
+  },
+  "mimbres-cuerdas-y-telar": {
+   "nombre": "Siete mimbres, cuerdas nuevas y telar",
+   "tipo": "ataduras",
+   "apariciones": [
+    {
+     "inicio": "Jue 16:7",
+     "fin": "Jue 16:14"
+    }
+   ],
+   "personas": [
+    "Samson_1",
+    "Delilah_1"
+   ],
+   "lugares": [
+    "valle-de-sorec"
+   ],
+   "resumen": "Ataduras con que Dalila prueba el secreto de Sansón; él las rompe las tres veces.",
+   "datos": [
+    {
+     "texto": "Primera atadura",
+     "certeza": "texto",
+     "ref": "Jue 16:7",
+     "cita": "siete mimbres verdes que aun no estén enjutos"
+    },
+    {
+     "texto": "Segunda atadura",
+     "certeza": "texto",
+     "ref": "Jue 16:11",
+     "cita": "cuerdas nuevas, con las cuales ninguna cosa se haya hecho"
+    },
+    {
+     "texto": "Tercera: las guedejas tejidas con la tela",
+     "certeza": "texto",
+     "ref": "Jue 16:14",
+     "cita": "arrancó la estaca del telar con la tela"
+    }
+   ],
+   "externo": []
+  },
+  "siete-guedejas-de-sanson": {
+   "nombre": "Las siete guedejas y el nazareato de Sansón",
+   "tipo": "voto / cabello",
+   "apariciones": [
+    {
+     "inicio": "Jue 13:5",
+     "fin": "Jue 13:5"
+    },
+    {
+     "inicio": "Jue 13:7",
+     "fin": "Jue 13:7"
+    },
+    {
+     "inicio": "Jue 16:13",
+     "fin": "Jue 16:13"
+    },
+    {
+     "inicio": "Jue 16:17",
+     "fin": "Jue 16:22"
+    }
+   ],
+   "personas": [
+    "Samson_1",
+    "Delilah_1",
+    "Mujer_de_Manoa"
+   ],
+   "lugares": [
+    "valle-de-sorec"
+   ],
+   "resumen": "Cabello nunca tocado por navaja: señal de su voto de nazareo, ligada a su fuerza según él mismo.",
+   "datos": [
+    {
+     "texto": "El ángel lo anuncia a su madre",
+     "certeza": "texto",
+     "ref": "Jue 13:5",
+     "cita": "no subirá navaja sobre su cabeza"
+    },
+    {
+     "texto": "Sansón se lo dice a Dalila",
+     "certeza": "texto",
+     "ref": "Jue 16:17",
+     "cita": "Nunca á mi cabeza llegó navaja"
+    },
+    {
+     "texto": "Se las rapan mientras duerme",
+     "certeza": "texto",
+     "ref": "Jue 16:19",
+     "cita": "rapóle siete guedejas de su cabeza"
+    },
+    {
+     "texto": "Vuelve a crecer en la cárcel",
+     "certeza": "texto",
+     "ref": "Jue 16:22",
+     "cita": "el cabello de su cabeza comenzó á crecer"
+    }
+   ],
+   "externo": []
+  },
+  "columnas-del-templo-de-dagon": {
+   "nombre": "Las dos columnas del medio del templo de Dagón",
+   "tipo": "construcción",
+   "apariciones": [
+    {
+     "inicio": "Jue 16:25",
+     "fin": "Jue 16:30"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "lugares": [
+    "gaza"
+   ],
+   "resumen": "Columnas que sostienen la casa donde los filisteos celebran a Dagón; Sansón se apoya en ellas.",
+   "datos": [
+    {
+     "texto": "Lo ponen entre ellas para divertirse",
+     "certeza": "texto",
+     "ref": "Jue 16:25",
+     "cita": "pusiéronlo entre las columnas"
+    },
+    {
+     "texto": "Se apoya en ambas",
+     "certeza": "texto",
+     "ref": "Jue 16:29",
+     "cita": "Asió luego Samsón las dos columnas del medio"
+    },
+    {
+     "texto": "La casa cae",
+     "certeza": "texto",
+     "ref": "Jue 16:30",
+     "cita": "cayó la casa sobre los príncipes"
+    }
+   ],
+   "externo": []
+  },
+  "imagen-de-micaia": {
+   "nombre": "Imagen de talla y de fundición de Micaía",
+   "tipo": "ídolo",
+   "apariciones": [
+    {
+     "inicio": "Jue 17:3",
+     "fin": "Jue 17:4"
+    },
+    {
+     "inicio": "Jue 18:14",
+     "fin": "Jue 18:20"
+    },
+    {
+     "inicio": "Jue 18:30",
+     "fin": "Jue 18:31"
+    }
+   ],
+   "personas": [
+    "Micah_1",
+    "Jonathan_1"
+   ],
+   "lugares": [
+    "dan",
+    "siloh"
+   ],
+   "resumen": "Imagen hecha con doscientos siclos de la plata de la madre de Micaía; los danitas se la llevan y la instalan en Dan.",
+   "datos": [
+    {
+     "texto": "La madre dedica la plata para hacerla",
+     "certeza": "texto",
+     "ref": "Jue 17:3",
+     "cita": "una imagen de talla y de fundición"
+    },
+    {
+     "texto": "Se hace y se pone en casa de Micaía",
+     "certeza": "texto",
+     "ref": "Jue 17:4",
+     "cita": "doscientos [siclos] de plata, y diólos al fundidor"
+    },
+    {
+     "texto": "Se queda en Dan todo el tiempo que la casa de Dios estuvo en Silo",
+     "certeza": "texto",
+     "ref": "Jue 18:31",
+     "cita": "levantáronse la imagen de Michâs"
+    }
+   ],
+   "externo": []
+  },
+  "efod-y-terafin-de-micaia": {
+   "nombre": "Efod y terafín de Micaía",
+   "tipo": "objeto de culto",
+   "apariciones": [
+    {
+     "inicio": "Jue 17:5",
+     "fin": "Jue 17:5"
+    },
+    {
+     "inicio": "Jue 18:14",
+     "fin": "Jue 18:20"
+    }
+   ],
+   "personas": [
+    "Micah_1"
+   ],
+   "lugares": [
+    "dan"
+   ],
+   "resumen": "Efod y terafín de la casa de dioses de Micaía, que los danitas se llevan con el sacerdote.",
+   "datos": [
+    {
+     "texto": "Micaía los manda hacer",
+     "certeza": "texto",
+     "ref": "Jue 17:5",
+     "cita": "hízose hacer ephod y teraphim"
+    },
+    {
+     "texto": "El sacerdote los toma y se va con los danitas",
+     "certeza": "texto",
+     "ref": "Jue 18:20",
+     "cita": "tomando el ephod y el teraphim, y la imagen"
+    }
+   ],
+   "externo": []
+  },
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "Jue 20:27",
+     "fin": "Jue 20:28"
+    }
+   ],
+   "personas": [
+    "Phinehas_1"
+   ],
+   "lugares": [],
+   "resumen": "En Jue 20:27-28 el arca del pacto está donde Israel consulta a Jehová, y Finees se presenta ante ella.",
+   "datos": [
+    {
+     "texto": "Israel consulta a Jehová allí antes de la tercera batalla contra Benjamín",
+     "certeza": "texto",
+     "ref": "Jue 20:27",
+     "cita": "el arca del pacto de Dios estaba allí en aquellos días"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "boquim": {
+   "nombre": "Boquim",
+   "apariciones": [
+    {
+     "inicio": "Jue 2:1",
+     "fin": "Jue 2:5"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "Lugar al que sube el ángel de Jehová desde Gilgal; el pueblo llora y lo nombra así.",
+   "datos": [
+    {
+     "texto": "El ángel habla a todos los hijos de Israel",
+     "certeza": "texto",
+     "ref": "Jue 2:1",
+     "cita": "El ángel de Jehová subió de Gilgal á Bochîm"
+    },
+    {
+     "texto": "El pueblo llora y sacrifica allí",
+     "certeza": "texto",
+     "ref": "Jue 2:5",
+     "cita": "llamaron por nombre aquel lugar Bochîm"
+    }
+   ],
+   "externo": [],
+   "lugar": "boquim"
+  },
+  "timnat-sera": {
+   "nombre": "Timnat-sera: sepultura de Josué",
+   "apariciones": [
+    {
+     "inicio": "Jue 2:8",
+     "fin": "Jue 2:9"
+    }
+   ],
+   "personas": [
+    "Joshua_1"
+   ],
+   "objetos": [],
+   "resumen": "Donde se entierra a Josué, en el monte de Efraín.",
+   "datos": [
+    {
+     "texto": "Al norte del monte de Gaas",
+     "certeza": "texto",
+     "ref": "Jue 2:9",
+     "cita": "enterráronlo en el término de su heredad en Timnath-sera"
+    }
+   ],
+   "externo": [],
+   "lugar": "timnat-sera"
+  },
+  "betel": {
+   "nombre": "Betel",
+   "apariciones": [
+    {
+     "inicio": "Jue 1:22",
+     "fin": "Jue 1:26"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "La casa de José toma Betel (antes Luz) con ayuda de un hombre que muestra la entrada.",
+   "datos": [
+    {
+     "texto": "Los de la casa de José ponen espías",
+     "certeza": "texto",
+     "ref": "Jue 1:23",
+     "cita": "la cual ciudad antes se llamaba Luz"
+    },
+    {
+     "texto": "Lo perdonan por mostrar la entrada",
+     "certeza": "texto",
+     "ref": "Jue 1:25",
+     "cita": "dejaron á aquel hombre con toda su familia"
+    }
+   ],
+   "externo": [],
+   "lugar": "betel"
+  },
+  "palmera-de-debora": {
+   "nombre": "La palma de Débora",
+   "apariciones": [
+    {
+     "inicio": "Jue 4:4",
+     "fin": "Jue 4:5"
+    }
+   ],
+   "personas": [
+    "Deborah_2"
+   ],
+   "objetos": [],
+   "resumen": "Lugar bajo una palma, entre Ramá y Betel, donde Débora juzga.",
+   "datos": [
+    {
+     "texto": "Allí suben los israelitas a juicio",
+     "certeza": "texto",
+     "ref": "Jue 4:5",
+     "cita": "habitaba debajo de una palma entre Rama y Beth-el, en el monte de Ephraim"
+    }
+   ],
+   "externo": [],
+   "lugar": "rama"
+  },
+  "monte-tabor": {
+   "nombre": "El monte Tabor",
+   "apariciones": [
+    {
+     "inicio": "Jue 4:6",
+     "fin": "Jue 4:14"
+    }
+   ],
+   "personas": [
+    "Barak_1",
+    "Deborah_2",
+    "Sisera_1"
+   ],
+   "objetos": [],
+   "resumen": "Punto de reunión de los diez mil de Neftalí y Zabulón.",
+   "datos": [
+    {
+     "texto": "Mandato de Jehová por Débora",
+     "certeza": "texto",
+     "ref": "Jue 4:6",
+     "cita": "haz gente en el monte de Tabor"
+    },
+    {
+     "texto": "Sísara se entera",
+     "certeza": "texto",
+     "ref": "Jue 4:12",
+     "cita": "como Barac hijo de Abinoam había subido al monte de Tabor"
+    },
+    {
+     "texto": "Baja con diez mil hombres",
+     "certeza": "texto",
+     "ref": "Jue 4:14",
+     "cita": "Barac descendió del monte de Tabor"
+    }
+   ],
+   "externo": [],
+   "lugar": "tabor"
+  },
+  "arroyo-de-cison": {
+   "nombre": "El arroyo de Cisón",
+   "apariciones": [
+    {
+     "inicio": "Jue 4:7",
+     "fin": "Jue 4:7"
+    },
+    {
+     "inicio": "Jue 4:13",
+     "fin": "Jue 4:16"
+    },
+    {
+     "inicio": "Jue 5:19",
+     "fin": "Jue 5:21"
+    }
+   ],
+   "personas": [
+    "Sisera_1",
+    "Barak_1",
+    "Deborah_2"
+   ],
+   "objetos": [
+    "carros-herrados"
+   ],
+   "resumen": "Donde se enfrenta el ejército de Sísara; el cántico dice que el torrente los barrió.",
+   "datos": [
+    {
+     "texto": "Sísara reúne ahí sus carros",
+     "certeza": "texto",
+     "ref": "Jue 4:13",
+     "cita": "hasta el arroyo de Cisón"
+    },
+    {
+     "texto": "El cántico lo da como parte de la derrota",
+     "certeza": "texto",
+     "ref": "Jue 5:21",
+     "cita": "Barriólos el torrente de Cisón"
+    }
+   ],
+   "externo": [],
+   "lugar": "cison"
+  },
+  "tienda-de-jael": {
+   "nombre": "La tienda de Jael, junto a Cedes",
+   "apariciones": [
+    {
+     "inicio": "Jue 4:11",
+     "fin": "Jue 4:11"
+    },
+    {
+     "inicio": "Jue 4:17",
+     "fin": "Jue 4:22"
+    }
+   ],
+   "personas": [
+    "Heber_2",
+    "Jael_1",
+    "Sisera_1"
+   ],
+   "objetos": [
+    "estaca-y-mazo-de-jael"
+   ],
+   "resumen": "Tienda del cineo Heber, cerca de Cedes, adonde huye Sísara.",
+   "datos": [
+    {
+     "texto": "Ubicación de la tienda de Heber",
+     "certeza": "texto",
+     "ref": "Jue 4:11",
+     "cita": "puesto su tienda hasta el valle de Zaananim, que está junto á Cedes"
+    },
+    {
+     "texto": "Jael recibe a Sísara en la tienda",
+     "certeza": "texto",
+     "ref": "Jue 4:18",
+     "cita": "ella le cubrió con una manta"
+    }
+   ],
+   "externo": [],
+   "lugar": "allon-saananim"
+  },
+  "ofra-de-gedeon": {
+   "nombre": "Ofra de los abiezeritas",
+   "apariciones": [
+    {
+     "inicio": "Jue 6:11",
+     "fin": "Jue 6:32"
+    },
+    {
+     "inicio": "Jue 8:27",
+     "fin": "Jue 8:27"
+    },
+    {
+     "inicio": "Jue 8:32",
+     "fin": "Jue 8:32"
+    }
+   ],
+   "personas": [
+    "Gideon_1",
+    "Joash_1"
+   ],
+   "objetos": [
+    "ofrenda-de-gedeon",
+    "altar-jehova-salom",
+    "altar-de-baal-y-bosque",
+    "vellon-de-gedeon",
+    "efod-de-gedeon"
+   ],
+   "resumen": "Ciudad de Joás y Gedeón: alcornoque donde llega el ángel, altar de Baal, efod y sepulcro de Gedeón.",
+   "datos": [
+    {
+     "texto": "El ángel de Jehová llega aquí",
+     "certeza": "texto",
+     "ref": "Jue 6:11",
+     "cita": "sentóse debajo del alcornoque que está en Ophra"
+    },
+    {
+     "texto": "Aquí guarda Gedeón el efod",
+     "certeza": "texto",
+     "ref": "Jue 8:27",
+     "cita": "el cual hizo guardar en su ciudad de Ophra"
+    },
+    {
+     "texto": "Aquí lo sepultan",
+     "certeza": "texto",
+     "ref": "Jue 8:32",
+     "cita": "fué sepultado en el sepulcro de su padre Joas, en Ophra de los Abiezeritas"
+    }
+   ],
+   "externo": [],
+   "lugar": "ofra-de-abiezer"
+  },
+  "fuente-de-harod": {
+   "nombre": "La fuente de Harod",
+   "apariciones": [
+    {
+     "inicio": "Jue 7:1",
+     "fin": "Jue 7:8"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "objetos": [],
+   "resumen": "Campamento de Israel antes de la prueba de las aguas; Madián está al norte, en el valle.",
+   "datos": [
+    {
+     "texto": "Gedeón y el pueblo acampan",
+     "certeza": "texto",
+     "ref": "Jue 7:1",
+     "cita": "asentaron el campo junto á la fuente de Harod"
+    },
+    {
+     "texto": "Criterio de Jehová para escoger",
+     "certeza": "texto",
+     "ref": "Jue 7:5",
+     "cita": "Cualquiera que lamiere las aguas con su lengua como lame el perro"
+    },
+    {
+     "texto": "Los que lamieron con la mano",
+     "certeza": "texto",
+     "ref": "Jue 7:6",
+     "cita": "trescientos hombres"
+    }
+   ],
+   "externo": [],
+   "lugar": "harod"
+  },
+  "sucot": {
+   "nombre": "Sucot",
+   "apariciones": [
+    {
+     "inicio": "Jue 8:5",
+     "fin": "Jue 8:8"
+    },
+    {
+     "inicio": "Jue 8:14",
+     "fin": "Jue 8:16"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad cuyos principales niegan pan a Gedeón mientras persigue a Zeba y Zalmuna.",
+   "datos": [
+    {
+     "texto": "Los principales se niegan a darle pan",
+     "certeza": "texto",
+     "ref": "Jue 8:6",
+     "cita": "¿Está ya la mano de Zeba y Zalmunna en tu mano"
+    },
+    {
+     "texto": "Un mozo le escribe los principales y ancianos",
+     "certeza": "texto",
+     "ref": "Jue 8:14",
+     "cita": "setenta y siete varones"
+    }
+   ],
+   "externo": [],
+   "lugar": "sucot"
+  },
+  "peniel": {
+   "nombre": "Peniel",
+   "apariciones": [
+    {
+     "inicio": "Jue 8:8",
+     "fin": "Jue 8:9"
+    },
+    {
+     "inicio": "Jue 8:17",
+     "fin": "Jue 8:17"
+    }
+   ],
+   "personas": [
+    "Gideon_1"
+   ],
+   "objetos": [],
+   "resumen": "En Jueces, Penuel responde a Gedeón como Sucot y tiene una torre.",
+   "datos": [
+    {
+     "texto": "Los de Penuel responden como los de Sucot",
+     "certeza": "texto",
+     "ref": "Jue 8:8",
+     "cita": "subió á Penuel, y hablóles las mismas palabras"
+    },
+    {
+     "texto": "Cumple su amenaza de 8:9",
+     "certeza": "texto",
+     "ref": "Jue 8:17",
+     "cita": "derribó la torre de Penuel"
+    }
+   ],
+   "externo": [],
+   "lugar": "peniel"
+  },
+  "siquem": {
+   "nombre": "Siquem",
+   "apariciones": [
+    {
+     "inicio": "Jue 8:31",
+     "fin": "Jue 8:31"
+    },
+    {
+     "inicio": "Jue 9:1",
+     "fin": "Jue 9:6"
+    },
+    {
+     "inicio": "Jue 9:22",
+     "fin": "Jue 9:49"
+    }
+   ],
+   "personas": [
+    "Abimelech_2",
+    "Gaal_1",
+    "Zebul_1"
+   ],
+   "objetos": [],
+   "resumen": "En Jueces: ciudad de la madre de Abimelec, donde lo eligen rey, se rebela Gaal y Abimelec la arrasa.",
+   "datos": [
+    {
+     "texto": "Lo eligen los de Siquem y la casa de Millo",
+     "certeza": "texto",
+     "ref": "Jue 9:6",
+     "cita": "eligieron á Abimelech por rey, cerca de la llanura del pilar que [estaba] en Sichêm"
+    },
+    {
+     "texto": "Los de la torre de Siquem se refugian en el templo de Berit",
+     "certeza": "texto",
+     "ref": "Jue 9:46",
+     "cita": "entráronse en la fortaleza del templo del dios Berith"
+    },
+    {
+     "texto": "Abimelec la destruye",
+     "certeza": "texto",
+     "ref": "Jue 9:45",
+     "cita": "asoló la ciudad, y sembróla de sal"
+    }
+   ],
+   "externo": [],
+   "lugar": "siquem"
+  },
+  "monte-gerizim-jotam": {
+   "nombre": "El monte Gerizim de Jotam",
+   "apariciones": [
+    {
+     "inicio": "Jue 9:7",
+     "fin": "Jue 9:21"
+    }
+   ],
+   "personas": [
+    "Jotham_1"
+   ],
+   "objetos": [],
+   "resumen": "Desde su cumbre Jotam grita la fábula de los árboles a los de Siquem.",
+   "datos": [
+    {
+     "texto": "Alza su voz desde allí",
+     "certeza": "texto",
+     "ref": "Jue 9:7",
+     "cita": "púsose en la cumbre del monte de Gerizim"
+    }
+   ],
+   "externo": [],
+   "lugar": "monte-gerizim"
+  },
+  "mizpa-de-galaad": {
+   "nombre": "Mizpa de Galaad",
+   "apariciones": [
+    {
+     "inicio": "Jue 10:17",
+     "fin": "Jue 10:17"
+    },
+    {
+     "inicio": "Jue 11:11",
+     "fin": "Jue 11:11"
+    },
+    {
+     "inicio": "Jue 11:29",
+     "fin": "Jue 11:29"
+    },
+    {
+     "inicio": "Jue 11:34",
+     "fin": "Jue 11:34"
+    }
+   ],
+   "personas": [
+    "Jephthah_1",
+    "Hija_de_Jefte"
+   ],
+   "objetos": [],
+   "resumen": "Donde Israel acampa contra Amón, Jefté habla ante Jehová y su hija sale a recibirlo.",
+   "datos": [
+    {
+     "texto": "Israel se reúne allí",
+     "certeza": "texto",
+     "ref": "Jue 10:17",
+     "cita": "los hijos de Israel, y asentaron su campo en Mizpa"
+    },
+    {
+     "texto": "Su pacto con los ancianos",
+     "certeza": "texto",
+     "ref": "Jue 11:11",
+     "cita": "Jephté habló todas sus palabras delante de Jehová en Mizpa"
+    },
+    {
+     "texto": "Aquí lo recibe su hija",
+     "certeza": "texto",
+     "ref": "Jue 11:34",
+     "cita": "volviendo Jephté á Mizpa á su casa"
+    }
+   ],
+   "externo": [],
+   "lugar": "mizpa-de-galaad"
+  },
+  "vados-del-jordan": {
+   "nombre": "Los vados del Jordán",
+   "apariciones": [
+    {
+     "inicio": "Jue 3:27",
+     "fin": "Jue 3:29"
+    },
+    {
+     "inicio": "Jue 12:5",
+     "fin": "Jue 12:6"
+    }
+   ],
+   "personas": [
+    "Ehud_1",
+    "Jephthah_1"
+   ],
+   "objetos": [],
+   "resumen": "Pasos del Jordán tomados primero contra Moab y luego contra los fugitivos de Efraín.",
+   "datos": [
+    {
+     "texto": "Con Aod, y no dejaron pasar a ninguno",
+     "certeza": "texto",
+     "ref": "Jue 3:28",
+     "cita": "tomaron los vados del Jordán á Moab"
+    },
+    {
+     "texto": "Prueba de Shiboleth",
+     "certeza": "texto",
+     "ref": "Jue 12:5",
+     "cita": "los Galaaditas tomaron los vados del Jordán á Ephraim"
+    }
+   ],
+   "externo": [],
+   "lugar": "jordan"
+  },
+  "timnat": {
+   "nombre": "Timnat",
+   "apariciones": [
+    {
+     "inicio": "Jue 14:1",
+     "fin": "Jue 14:18"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "objetos": [
+    "panal-en-el-leon"
+   ],
+   "resumen": "Ciudad filistea a la que baja Sansón: viñas, león, banquete y acertijo.",
+   "datos": [
+    {
+     "texto": "Sansón baja a Timnat",
+     "certeza": "texto",
+     "ref": "Jue 14:1",
+     "cita": "vió en Timnah una mujer de las hijas de los Filisteos"
+    },
+    {
+     "texto": "Allí lo sale a encontrar un cachorro de león",
+     "certeza": "texto",
+     "ref": "Jue 14:5",
+     "cita": "las viñas de Timnah"
+    },
+    {
+     "texto": "Plazo del acertijo",
+     "certeza": "texto",
+     "ref": "Jue 14:12",
+     "cita": "en los siete días del banquete"
+    }
+   ],
+   "externo": [],
+   "lugar": "timna"
+  },
+  "gaza-y-templo-de-dagon": {
+   "nombre": "Gaza y el templo de Dagón",
+   "apariciones": [
+    {
+     "inicio": "Jue 16:1",
+     "fin": "Jue 16:3"
+    },
+    {
+     "inicio": "Jue 16:21",
+     "fin": "Jue 16:30"
+    }
+   ],
+   "personas": [
+    "Samson_1"
+   ],
+   "objetos": [
+    "puertas-de-gaza",
+    "columnas-del-templo-de-dagon"
+   ],
+   "resumen": "Ciudad filistea donde Sansón se lleva las puertas y, preso, muere en el templo de Dagón.",
+   "datos": [
+    {
+     "texto": "Se las lleva a medianoche",
+     "certeza": "texto",
+     "ref": "Jue 16:3",
+     "cita": "tomando las puertas de la ciudad"
+    },
+    {
+     "texto": "Los príncipes se reúnen en una fiesta",
+     "certeza": "texto",
+     "ref": "Jue 16:23",
+     "cita": "ofrecer sacrificio á Dagón su dios"
+    },
+    {
+     "texto": "En el piso alto había unos tres mil",
+     "certeza": "texto",
+     "ref": "Jue 16:27",
+     "cita": "la casa estaba llena de hombres y mujeres"
+    }
+   ],
+   "externo": [],
+   "lugar": "gaza"
+  },
+  "valle-de-sorec": {
+   "nombre": "El valle de Sorec",
+   "apariciones": [
+    {
+     "inicio": "Jue 16:4",
+     "fin": "Jue 16:20"
+    }
+   ],
+   "personas": [
+    "Delilah_1",
+    "Samson_1"
+   ],
+   "objetos": [
+    "mimbres-cuerdas-y-telar",
+    "siete-guedejas-de-sanson"
+   ],
+   "resumen": "Donde vive Dalila.",
+   "datos": [
+    {
+     "texto": "Sansón conoce a Dalila",
+     "certeza": "texto",
+     "ref": "Jue 16:4",
+     "cita": "se enamoró de una mujer en el valle de Sorec"
+    }
+   ],
+   "externo": [],
+   "lugar": "valle-de-sorec"
+  },
+  "lais-y-dan": {
+   "nombre": "Lais, desde entonces Dan",
+   "apariciones": [
+    {
+     "inicio": "Jue 18:7",
+     "fin": "Jue 18:7"
+    },
+    {
+     "inicio": "Jue 18:27",
+     "fin": "Jue 18:29"
+    }
+   ],
+   "personas": [
+    "Micah_1",
+    "Jonathan_1"
+   ],
+   "objetos": [
+    "imagen-de-micaia"
+   ],
+   "resumen": "Ciudad tranquila al norte, que los danitas toman, reedifican y llaman Dan.",
+   "datos": [
+    {
+     "texto": "Cómo la ven los cinco exploradores",
+     "certeza": "texto",
+     "ref": "Jue 18:7",
+     "cita": "estaba seguro, ocioso y confiado"
+    },
+    {
+     "texto": "Antes se llamaba Lais",
+     "certeza": "texto",
+     "ref": "Jue 18:29",
+     "cita": "llamaron el nombre de aquella ciudad Dan"
+    }
+   ],
+   "externo": [],
+   "lugar": "dan"
+  },
+  "gabaa-de-benjamin": {
+   "nombre": "Gabaa de Benjamín",
+   "apariciones": [
+    {
+     "inicio": "Jue 19:12",
+     "fin": "Jue 19:15"
+    },
+    {
+     "inicio": "Jue 20:19",
+     "fin": "Jue 20:35"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "Ciudad donde se hospeda el levita (Jue 19) y contra la que Israel pelea (Jue 20).",
+   "datos": [
+    {
+     "texto": "El levita llega de noche",
+     "certeza": "texto",
+     "ref": "Jue 19:14",
+     "cita": "púsoseles el sol junto á Gabaa, que era de Benjamín"
+    },
+    {
+     "texto": "Se quedan en la plaza",
+     "certeza": "texto",
+     "ref": "Jue 19:15",
+     "cita": "no hubo quien los acogiese en casa para pasar la noche"
+    },
+    {
+     "texto": "Comienza la guerra de Israel",
+     "certeza": "texto",
+     "ref": "Jue 20:19",
+     "cita": "pusieron campo contra Gabaa"
+    }
+   ],
+   "externo": [],
+   "lugar": "gabaa"
+  },
+  "mizpa-de-benjamin": {
+   "nombre": "Mizpa, donde Israel se congrega",
+   "apariciones": [
+    {
+     "inicio": "Jue 20:1",
+     "fin": "Jue 20:3"
+    },
+    {
+     "inicio": "Jue 21:1",
+     "fin": "Jue 21:5"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "Reunión de todo Israel contra Gabaa y lugar del juramento de no dar hijas a Benjamín.",
+   "datos": [
+    {
+     "texto": "Se reúne todo Israel",
+     "certeza": "texto",
+     "ref": "Jue 20:1",
+     "cita": "la congregación como un solo hombre, desde Dan hasta Beer-seba y la tierra de Galaad, á Jehová en Mizpa"
+    },
+    {
+     "texto": "Ninguno daría su hija a Benjamín",
+     "certeza": "texto",
+     "ref": "Jue 21:1",
+     "cita": "habían jurado en Mizpa"
+    }
+   ],
+   "externo": [],
+   "lugar": "mizpa-18-26"
+  },
+  "siloh": {
+   "nombre": "Silo",
+   "apariciones": [
+    {
+     "inicio": "Jue 18:31",
+     "fin": "Jue 18:31"
+    },
+    {
+     "inicio": "Jue 21:12",
+     "fin": "Jue 21:12"
+    },
+    {
+     "inicio": "Jue 21:19",
+     "fin": "Jue 21:23"
+    }
+   ],
+   "personas": [],
+   "objetos": [],
+   "resumen": "En Jueces: sede de la casa de Dios, a donde llevan a las jóvenes de Jabes y donde se baila en la fiesta anual.",
+   "datos": [
+    {
+     "texto": "Referencia de tiempo para la imagen de Micaía",
+     "certeza": "texto",
+     "ref": "Jue 18:31",
+     "cita": "todo el tiempo que la casa de Dios estuvo en Silo"
+    },
+    {
+     "texto": "Fiesta anual",
+     "certeza": "texto",
+     "ref": "Jue 21:19",
+     "cita": "cada un año hay solemnidad de Jehová en Silo"
+    },
+    {
+     "texto": "Plan para dar mujeres a Benjamín",
+     "certeza": "texto",
+     "ref": "Jue 21:21",
+     "cita": "cuando viereis salir las hijas de Silo á bailar en corros"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "Se identifica con Khirbet Seilun / Tel Shiloh, a unos 31 km al norte de Jerusalén: la identificación se apoya en la descripción de Jueces 21:19; el estrato de destrucción del Hierro I (c. 1050 a. C.) se discute si corresponde a una derrota filistea.",
+     "fuente": "Wikipedia, «Shiloh (biblical city)» (fuente secundaria, abierta al redactar)",
+     "url": "https://en.wikipedia.org/wiki/Shiloh_(biblical_city)"
+    }
+   ],
+   "lugar": "siloh"
+  }
+ }
+}

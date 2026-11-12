@@ -714,6 +714,167 @@
    "categoria": "violencia",
    "nivel": "alto",
    "motivo": "Derrota de los reyes del norte: desjarretan los caballos, queman Hazor y matan a todos sus habitantes."
+  },
+  {
+   "desde": "Jue 1:6",
+   "hasta": "Jue 1:7",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "A Adoni-bezec le cortan los pulgares de las manos y de los pies; él lo había hecho a setenta reyes."
+  },
+  {
+   "desde": "Jue 3:21",
+   "hasta": "Jue 3:25",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Aod hunde un puñal en el vientre de Eglón, que queda dentro con la empuñadura; sus siervos lo hallan muerto."
+  },
+  {
+   "desde": "Jue 4:21",
+   "hasta": "Jue 4:21",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Jael clava a Sísara una estaca por las sienes mientras duerme."
+  },
+  {
+   "desde": "Jue 5:26",
+   "hasta": "Jue 5:27",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "El cántico repite cómo Jael hiere a Sísara en la cabeza y él cae muerto a sus pies."
+  },
+  {
+   "desde": "Jue 7:25",
+   "hasta": "Jue 7:25",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Matan a los príncipes Oreb y Zeeb y llevan sus cabezas a Gedeón."
+  },
+  {
+   "desde": "Jue 8:16",
+   "hasta": "Jue 8:21",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Gedeón castiga con espinas a los de Sucot, mata a los de Penuel y da muerte a Zeba y Zalmuna."
+  },
+  {
+   "desde": "Jue 9:5",
+   "hasta": "Jue 9:5",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Abimelec mata a sus setenta hermanos sobre una piedra."
+  },
+  {
+   "desde": "Jue 9:43",
+   "hasta": "Jue 9:57",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Abimelec mata al pueblo de Siquem, siembra la ciudad de sal y quema la fortaleza con unas mil personas dentro; muere con la cabeza rota por una muela."
+  },
+  {
+   "desde": "Jue 11:30",
+   "hasta": "Jue 11:40",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Jefté promete en holocausto a quien salga a recibirlo; sale su única hija y él cumple su voto con ella."
+  },
+  {
+   "desde": "Jue 12:6",
+   "hasta": "Jue 12:6",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "En los vados del Jordán degüellan a los efraimitas que no saben decir «Shiboleth»: cuarenta y dos mil."
+  },
+  {
+   "desde": "Jue 14:20",
+   "hasta": "Jue 14:20",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Sansón mata a treinta hombres en Ascalón y toma sus vestidos (14:19 en la numeración inglesa)."
+  },
+  {
+   "desde": "Jue 15:6",
+   "hasta": "Jue 15:6",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Los filisteos queman a la mujer de Sansón y a su padre."
+  },
+  {
+   "desde": "Jue 15:8",
+   "hasta": "Jue 15:8",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Sansón hiere a los filisteos con gran mortandad."
+  },
+  {
+   "desde": "Jue 15:15",
+   "hasta": "Jue 15:16",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Sansón mata a mil hombres con una quijada de asno."
+  },
+  {
+   "desde": "Jue 16:1",
+   "hasta": "Jue 16:1",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Sansón entra a una mujer ramera en Gaza; sin detalle."
+  },
+  {
+   "desde": "Jue 16:21",
+   "hasta": "Jue 16:21",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Los filisteos sacan los ojos a Sansón y lo ponen a moler encadenado."
+  },
+  {
+   "desde": "Jue 16:27",
+   "hasta": "Jue 16:30",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Sansón derriba el templo de Dagón y muere con los filisteos que estaban dentro (sin detalle, como Nm 16:31-35)."
+  },
+  {
+   "desde": "Jue 19:2",
+   "hasta": "Jue 19:2",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "La concubina del levita le es infiel y se va a casa de su padre; sin detalle."
+  },
+  {
+   "desde": "Jue 19:22",
+   "hasta": "Jue 19:28",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Los hombres de Gabaa exigen abusar del levita; violan a su concubina toda la noche y ella muere."
+  },
+  {
+   "desde": "Jue 19:29",
+   "hasta": "Jue 19:30",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "El levita despedaza el cuerpo de su concubina en doce partes y las envía por Israel."
+  },
+  {
+   "desde": "Jue 20:35",
+   "hasta": "Jue 20:48",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Derrota de Benjamín: mueren veinticinco mil; Israel pasa a cuchillo a hombres y bestias y quema las ciudades."
+  },
+  {
+   "desde": "Jue 21:10",
+   "hasta": "Jue 21:12",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Matan a los habitantes de Jabes de Galaad, mujeres y niños incluidos, y reservan a cuatrocientas doncellas."
+  },
+  {
+   "desde": "Jue 21:19",
+   "hasta": "Jue 21:23",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Los benjamitas arrebatan por mujeres a las hijas de Silo que salen a bailar."
   }
  ]
 }

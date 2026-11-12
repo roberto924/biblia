@@ -76,6 +76,15 @@ HECHOS = {
         "principal": [("Joshua_1", "Jos", None), ("Rahab_1", "Jos", "Jos 2")],
         "sin_aparicion": [(MOISES, "Jos 1:1")],   # Moisés ya murió: mención, no aparición
     },
+    "Jue": {
+        "aparece": [("Jael_1", "Jue 4:21"), ("Samson_1", "Jue 16:3")],
+        "objeto_en": [("Jue 4:21", "estaca y mazo de Jael"), ("Jue 6:37", "vellón de Gedeón"), ("Jue 16:29", "columnas del templo de Dagón")],
+        "escenario_lugar": ["tabor"],
+        # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal)
+        "principal": [("Gideon_1", "Jue", "Jue 6"), ("Deborah_2", "Jue", "Jue 4"), ("Samson_1", "Jue", "Jue 14"),
+                      ("Jephthah_1", "Jue", "Jue 12"), ("Ehud_1", "Jue", "Jue 3"), ("Jael_1", "Jue", "Jue 4")],
+        "sin_aparicion": [("Joshua_1", "Jue 2:8")],   # su muerte se repite en 2:8: mención, no aparición
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

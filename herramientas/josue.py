@@ -385,10 +385,16 @@ def _tipo(d):
     return "otro"
 
 
-def lugares_auto(rv, rutas, lugares_previos, avisos):
+def lugares_auto(rv, rutas, lugares_previos, avisos, cfg=None):
     """Configura los lugares de OpenBible en Josué que no están a mano: formas RV1909 detectadas (sin gentilicios),
     nombre actual (NOMBRE_LUGAR o regla), tipo de OpenBible, homónimos con la primera ref y unión con un lugar ya
-    registrado del mismo nombre e idéntica identificación moderna."""
+    registrado del mismo nombre e idéntica identificación moderna. cfg: módulo del libro (por defecto Josué;
+    Jueces usa herramientas/jueces.py)."""
+    cfg = cfg or sys.modules[__name__]
+    USX, LIB = cfg.USX, cfg.LIBRO
+    LUGARES_MANUAL, EXCLUIR_LUGAR, NOMBRE_OB, NOMBRE_LUGAR = cfg.LUGARES_MANUAL, cfg.EXCLUIR_LUGAR, cfg.NOMBRE_OB, cfg.NOMBRE_LUGAR
+    OPC, EXCL_AUTO, INFO_AUTO, moderno_ = cfg.LUGAR_OPCIONAL, cfg.EXCL_AUTO, cfg.INFO_AUTO, getattr(cfg, "moderno", moderno)
+    remap = getattr(cfg, "REMAP_REF", lambda r: r)  # versificación de OpenBible (inglesa) -> RV1909
     anc = {}
     with open(rutas["ob_ancient"], encoding="utf-8") as f:
         for n, linea in enumerate(f, 1):
@@ -405,7 +411,7 @@ def lugares_auto(rv, rutas, lugares_previos, avisos):
     for obid, (_, d) in sorted(anc.items(), key=lambda x: x[1][0]):
         if obid in LUGARES_MANUAL or obid in EXCLUIR_LUGAR:
             continue
-        vs = sorted({tuple(map(int, v["usx"][4:].split(":"))) for v in d["verses"] if v["usx"].startswith(USX + " ")})
+        vs = sorted({remap(tuple(map(int, v["usx"][4:].split(":")))) for v in d["verses"] if v["usx"].startswith(USX + " ")})
         nombres_en = d.get("translation_name_counts") or {d["friendly_id"]: 1}
         ingles = max(nombres_en.items(), key=lambda x: x[1])[0]
         cuenta = Counter()
@@ -422,7 +428,7 @@ def lugares_auto(rv, rutas, lugares_previos, avisos):
         if not formas:
             sin_forma.append(d["friendly_id"])
             if any(na.mejor_forma(ingles, rv.get(r, ""))[0] for r in vs):  # solo gentilicios («Ascalonitas»)
-                EXCL_AUTO[obid] = (f"{d['friendly_id']}: en Josué la RV1909 solo trae el gentilicio, no el nombre del "
+                EXCL_AUTO[obid] = (f"{d['friendly_id']}: en {cfg.NOMBRE} la RV1909 solo trae el gentilicio, no el nombre del "
                                    "lugar.")
             continue
         coord = None
@@ -430,7 +436,7 @@ def lugares_auto(rv, rutas, lugares_previos, avisos):
             if mid in mod and mod[mid][1].get("lonlat"):
                 coord = tuple(round(float(x), 2) for x in mod[mid][1]["lonlat"].split(","))
                 break
-        nombre = NOMBRE_OB.get(obid, (None,))[0] or NOMBRE_LUGAR.get(formas[0]) or moderno(formas[0])
+        nombre = NOMBRE_OB.get(obid, (None,))[0] or NOMBRE_LUGAR.get(formas[0]) or moderno_(formas[0])
         cand.append({"obid": obid, "formas": formas, "nombre": nombre, "slug": lm._slug(nombre), "coord": coord,
                      "ref": vs[0], "tipo": _tipo(d), "nota": NOMBRE_OB.get(obid, (None, ""))[1]})
     # mismo nombre que un lugar ya registrado: si la identificación moderna coincide, es el mismo lugar
@@ -462,13 +468,13 @@ def lugares_auto(rv, rutas, lugares_previos, avisos):
             while lid in ids:
                 lid += "-b"
             ids.add(lid)
-            nombre = c["nombre"] + (f" (Jos {c['ref'][0]}:{c['ref'][1]})" if homon else "")
+            nombre = c["nombre"] + (f" ({LIB} {c['ref'][0]}:{c['ref'][1]})" if homon else "")
             nota = [c["nota"]] if c["nota"] else []
             if c["nombre"] != c["formas"][0] and c["formas"][0] not in NOMBRE_LUGAR and not c["nota"]:
                 nota.append(f"Grafía actual adaptada por regla de la RV1909 «{c['formas'][0]}».")
             if homon:
                 n_homon += 1
-                nota.append(f"Hay otros lugares llamados {c['nombre']}: este es el de Jos {c['ref'][0]}:{c['ref'][1]} "
+                nota.append(f"Hay otros lugares llamados {c['nombre']}: este es el de {LIB} {c['ref'][0]}:{c['ref'][1]} "
                             "según OpenBible.")
             conf[c["obid"]] = (lid, nombre, c["formas"], c["tipo"], " ".join(nota), False)
             OPC.add(c["obid"])

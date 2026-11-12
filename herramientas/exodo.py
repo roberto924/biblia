@@ -270,7 +270,7 @@ def parse_ex(s):
     return (int(m.group(1)), int(m.group(2)))
 
 
-ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4, "Jos": 5}
+ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4, "Jos": 5, "Jue": 6}
 
 
 def parse_ref(s):

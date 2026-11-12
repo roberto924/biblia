@@ -55,7 +55,10 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año.",
          "Josué: el paso del Jordán (Jos 4:19, «el diez del mes primero») se pone en el año siguiente al de Dt 1:3 (mes "
          "undécimo + treinta días de luto, Dt 34:8). La edad de Caleb (40 en Jos 14:7, 85 en Jos 14:10, «cuarenta y cinco "
-         "años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año."]
+         "años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año.",
+         "Jueces da duraciones (años de opresión, de reposo y de cada juez: `duraciones`), pero no dice si se suceden "
+         "o se solapan: no se fechan desde Adán. Sus sumas son cálculo con esa advertencia; Jue 11:26 («trescientos "
+         "años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes."]
 # Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
 F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
@@ -328,6 +331,117 @@ HITOS_JOS = [
 ]
 
 
+# Jueces: duraciones que da el texto (opresión, reposo, gobierno de un juez). El texto no dice si son consecutivas ni
+# si se solapan: no se convierten en años desde Adán. 1 Re 6:1 (480 años desde la salida) queda para cuando llegue Reyes.
+# (id, tipo, título, ref, cita TM (RV1909), cita LXX (Brenton))
+PERIODOS_JUE = [
+    ("jue-cusan", "opresion", "Israel sirve a Cusán-risataim", "Jue 3:8", "ocho años", "eight years"),
+    ("jue-reposo-otoniel", "reposo", "Reposo tras Otoniel", "Jue 3:11", "cuarenta años", "forty years"),
+    ("jue-eglon", "opresion", "Israel sirve a Eglón", "Jue 3:14", "diez y ocho años", "eighteen years"),
+    ("jue-reposo-aod", "reposo", "Reposo tras Aod", "Jue 3:30", "ochenta años", "eighty years"),
+    ("jue-jabin", "opresion", "Jabín oprime a Israel", "Jue 4:3", "veinte años", "twenty years"),
+    ("jue-reposo-debora", "reposo", "Reposo tras Débora y Barac", "Jue 5:31", "cuarenta años", "forty years"),
+    ("jue-madian", "opresion", "Israel en manos de Madián", "Jue 6:1", "siete años", "seven years"),
+    ("jue-reposo-gedeon", "reposo", "Reposo en los días de Gedeón", "Jue 8:28", "cuarenta años", "forty years"),
+    ("jue-abimelec", "gobierno", "Abimelec domina sobre Israel", "Jue 9:22", "tres años", "three years"),
+    ("jue-tola", "juez", "Tola juzga a Israel", "Jue 10:2", "veintitrés años", "twenty-three years"),
+    ("jue-jair", "juez", "Jair juzga a Israel", "Jue 10:3", "veintidós años", "twenty-two years"),
+    ("jue-ammon", "opresion", "Ammón oprime a Israel", "Jue 10:8", "dieciocho años", "eighteen years"),
+    ("jue-jefte", "juez", "Jefté juzga a Israel", "Jue 12:7", "seis años", "six years"),
+    ("jue-ibzan", "juez", "Ibzán juzga a Israel", "Jue 12:9", "siete años", "seven years"),
+    ("jue-elon", "juez", "Elón juzga a Israel", "Jue 12:11", "diez años", "ten years"),
+    ("jue-abdon", "juez", "Abdón juzga a Israel", "Jue 12:14", "ocho años", "eight years"),
+    ("jue-filisteos", "opresion", "Israel en manos de los filisteos", "Jue 13:1", "cuarenta años", "forty years"),
+    ("jue-sanson", "juez", "Sansón juzga a Israel «en días de los Filisteos»", "Jue 15:20", "veinte años", "twenty years"),
+]
+REPITE_JUE = {"jue-sanson": ("Jue 16:31", "juzgó á Israel veinte años", "judged Israel twenty years")}
+TRESCIENTOS = ("Jue 11:26", "trescientos años", "three hundred years")
+ADV_JUE = ("El texto no dice si estos periodos se suceden uno tras otro ni si se solapan: la suma solo vale si fueran "
+           "consecutivos.")
+
+
+def duraciones_jueces(textos, numeral, errores):
+    """Periodos de Jueces (texto, TM y LXX) y dos sumas (cálculo). Devuelve (duraciones, hitos) o (None, [])."""
+    if "Jue 3:8" not in textos["TM"]:
+        return None, []
+    per, val = [], {}
+    for pid, tipo, titulo, ref, c_tm, c_lxx in PERIODOS_JUE:
+        citas = {}
+        for trad, cita, idioma, fuente in (("TM", c_tm, "es", "rv1909"), ("LXX", c_lxx, "en", "brenton")):
+            if cita not in textos[trad].get(ref, ""):
+                errores.append(f"Duración de Jueces: «{cita}» no está en {ref} ({trad})")
+            n = numeral(re.sub(r"\s+(años|years)$", "", cita), idioma)
+            citas[trad] = {"cita": cita, "fuente": fuente, "valor": n}
+        if citas["TM"]["valor"] != citas["LXX"]["valor"]:
+            errores.append(f"Duración de Jueces {ref}: TM {citas['TM']['valor']} ≠ LXX {citas['LXX']['valor']}")
+        val[pid] = citas["TM"]["valor"]
+        d = {"id": pid, "tipo": tipo, "titulo": titulo, "ref": ref, "valor": val[pid], "certeza": "texto", "citas": citas}
+        if pid in REPITE_JUE:
+            r2, t2, l2 = REPITE_JUE[pid]
+            if t2 not in textos["TM"].get(r2, "") or l2 not in textos["LXX"].get(r2, ""):
+                errores.append(f"Duración de Jueces: {r2} no repite la cifra")
+            d["tambien"] = {"ref": r2, "cita": t2}
+        per.append(d)
+    if not all(c in textos[t].get(TRESCIENTOS[0], "") for t, c in (("TM", TRESCIENTOS[1]), ("LXX", TRESCIENTOS[2]))):
+        errores.append("Jue 11:26 no dice «trescientos años»")
+    t300 = numeral(TRESCIENTOS[1].replace(" años", ""), "es")
+
+    def suma(ids):
+        pasos = [{"ref": p["ref"], "texto": p["titulo"], "valor": p["valor"], "signo": 1} for p in per if p["id"] in ids]
+        return pasos, sum(x["valor"] for x in pasos)
+
+    orden = [p["id"] for p in per]
+    p1, s1 = suma(orden[:orden.index("jue-ammon") + 1])
+    p2, s2 = suma(orden)
+    calculos = [
+        {"id": "jue-suma-hasta-jefte", "titulo": "Suma de los periodos de Jue 3:8–10:8 (hasta Jefté)", "certeza": "calculo",
+         "pasos": p1, "total": s1, "advertencia": ADV_JUE,
+         "comparacion": {"ref": TRESCIENTOS[0], "cita": TRESCIENTOS[1], "valor": t300, "certeza": "texto",
+                         "nota": (f"Jefté dice que Israel habita en Hesbón desde hace «trescientos años» (Jue 11:26), contando "
+                                  f"desde la conquista de Hesbón (Nm 21:25), antes de Josué. Si los periodos de Jue 3:8–10:8 "
+                                  f"fueran consecutivos sumarían {s1}, más que {t300} sin contar el tiempo de Josué y de los "
+                                  "ancianos (sin cifra). El texto no explica la diferencia (cifra redonda, periodos que se "
+                                  "solapan u otra cosa): no se decide.")}},
+        {"id": "jue-suma-total", "titulo": "Suma de todos los periodos con cifra de Jueces (Jue 3:8–15:20)",
+         "certeza": "calculo", "pasos": p2, "total": s2,
+         "advertencia": ADV_JUE + " Además, Jue 15:20 sitúa los veinte años de Sansón «en días de los Filisteos», sin "
+                                  "decir si caen dentro de los cuarenta de Jue 13:1."},
+    ]
+    v = lambda i: val[i]  # noqa: E731
+    hitos = [
+        ("Otoniel libra a Israel de Cusán-risataim", "Jue 3:7-11",
+         f"Texto: {v('jue-cusan')} años de servidumbre (Jue 3:8) y {v('jue-reposo-otoniel')} de reposo (Jue 3:11). Sin año: "
+         "el texto no dice cuánto pasó desde la muerte de Josué."),
+        ("Aod mata a Eglón", "Jue 3:12-30",
+         f"Texto: {v('jue-eglon')} años de servidumbre (Jue 3:14) y {v('jue-reposo-aod')} de reposo (Jue 3:30)."),
+        ("Samgar hiere a seiscientos filisteos", "Jue 3:31", "Sin cifra de tiempo."),
+        ("Débora y Barac vencen a Sísara", "Jue 4:1-5:31",
+         f"Texto: {v('jue-jabin')} años de opresión de Jabín (Jue 4:3) y {v('jue-reposo-debora')} de reposo (Jue 5:31)."),
+        ("Gedeón vence a Madián", "Jue 6:1-8:35",
+         f"Texto: {v('jue-madian')} años en manos de Madián (Jue 6:1) y {v('jue-reposo-gedeon')} de reposo «en los días "
+         "de Gedeón» (Jue 8:28)."),
+        ("Abimelec, rey en Siquem", "Jue 9:1-57", f"Texto: domina {v('jue-abimelec')} años sobre Israel (Jue 9:22)."),
+        ("Tola y Jair juzgan a Israel", "Jue 10:1-5",
+         f"Texto: Tola {v('jue-tola')} años (Jue 10:2), Jair {v('jue-jair')} (Jue 10:3)."),
+        ("Jefté vence a Ammón", "Jue 10:6-12:7",
+         f"Texto: {v('jue-ammon')} años de opresión (Jue 10:8); Jefté juzga {v('jue-jefte')} (Jue 12:7). Jue 11:26 da "
+         f"«trescientos años» desde que Israel habita en Hesbón. Cálculo: si los periodos de Jue 3:8–10:8 fueran "
+         f"consecutivos sumarían {s1} años, más que esos {t300}. " + ADV_JUE),
+        ("Ibzán, Elón y Abdón juzgan a Israel", "Jue 12:8-15",
+         f"Texto: {v('jue-ibzan')} años (Jue 12:9), {v('jue-elon')} (Jue 12:11) y {v('jue-abdon')} (Jue 12:14)."),
+        ("Sansón", "Jue 13:1-16:31",
+         f"Texto: {v('jue-filisteos')} años en manos de los filisteos (Jue 13:1); Sansón juzga {v('jue-sanson')} años «en "
+         f"días de los Filisteos» (Jue 15:20; 16:31). Cálculo: todos los periodos con cifra de Jue 3:8–15:20 suman {s2} "
+         "años si fueran consecutivos; el texto no lo dice."),
+        ("Micaía y la migración de Dan", "Jue 17:1-18:31", "Sin cifra de tiempo."),
+        ("La guerra contra Benjamín", "Jue 19:1-21:25",
+         "Sin cifra de tiempo. Jue 20:28 dice que entonces ministraba Finees, hijo de Eleazar, hijo de Aarón."),
+    ]
+    dur = {"libro": "Jue", "nota": ADV_JUE + " No se fechan desde Adán ni se usa 1 Re 6:1.", "periodos": per,
+           "calculos": calculos}
+    return dur, hitos
+
+
 def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
     """textos = {"TM": rv, "LXX": br}; numeral(frase, idioma) -> int."""
     idx = {}
@@ -481,4 +595,8 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
             "eventos": eventos,
             "hitos_sin_fecha": [{"titulo": t, "ref": r, "nota": NOTA_HITO_GN} for t, r in HITOS]
                                + [{"titulo": t, "ref": r, "nota": n} for t, r, n in HITOS_EX + HITOS_NM + HITOS_JOS]}
+    dur, hitos_jue = duraciones_jueces(textos, numeral, errores)
+    if dur:
+        cron["duraciones"] = dur
+        cron["hitos_sin_fecha"] += [{"titulo": t, "ref": r, "nota": n} for t, r, n in hitos_jue]
     return cron, vivos, usadas

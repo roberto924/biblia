@@ -792,6 +792,47 @@ if (existsSync(real)) {
       assert.equal(NC.marcaDe(CR, 'Jos 1:9'), null);
     });
   }
+  if ((D2.libros || []).some(l => l.id === 'Jue')) {
+    prueba('Jueces: selector, 9 secciones, lector sin huecos (618 versículos) y Jue 14:18-20 de la RV1909', () => {
+      assert.deepEqual(j(N2.libros(D2)).map(l => l.id).slice(0, 7), ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue']);
+      assert.equal(N2.nombreLibro(D2, 'Jue'), 'Jueces');
+      assert.equal(N2.parseRef('Jueces 21:25').libro, 'Jue');
+      assert.ok(N2.clave('Jue 1:1') > N2.clave('Jos 24:33'));
+      const s = j(N2.seccionesPlan(D2, ['jue-01'], 'jue-02', 'Jue'));
+      assert.equal(s.length, 9); assert.ok(s.every(g => g.libro === 'Jue'));
+      const vs = N2.pasajes(D2).filter(p => N2.libroDe(p) === 'Jue').flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 618); assert.equal(new Set(vs.map(v => v.ref)).size, 618);
+      assert.equal(vs[0].ref, 'Jue 1:1'); assert.equal(vs[vs.length - 1].ref, 'Jue 21:25');
+      assert.ok(/^Y él les respondió/.test(vs.find(x => x.ref === 'Jue 14:19').texto), 'la RV1909 parte el 14:18 inglés');
+    });
+    prueba('Jueces: lectura en orden después de Josué y tiempo mínimo del primer pasaje', () => {
+      const ps = j(N2.pasajes(D2)), i = ps.findIndex(p => p.id === 'jue-01');
+      assert.equal(ps[i - 1].id, ps.filter(p => N2.libroDe(p) === 'Jos').pop().id, 'jue-01 va justo después del último de Josué');
+      const antes = ps.slice(0, i).map(p => p.id);
+      assert.equal(N2.frontera(D2, antes).id, 'jue-01');
+      const A = N2.accesibles(D2, antes);
+      assert.ok(A.ref('Jue 1:15') && !A.ref('Jue 1:16') && !A.pasaje('jue-02'), 'Jueces se abre pasaje a pasaje');
+      const pal = N2.palabrasPasaje(D2, ps[i]);
+      assert.ok(pal > 300); assert.equal(N2.segundosMinimos(pal, { tipo: 'adulto' }), Math.ceil(pal / 250 * 60));
+    });
+    prueba('Jueces: personas en el lector (Gedeón = Jerobaal, Jabín de Jue 4 ≠ Jos 11, Hobab, Dan/Lais) y mapa', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => x.ref === r); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona).map(x => [x.texto, x.persona]); };
+      assert.deepEqual(seg('Jue 6:32'), [['Gedeón', 'Gideon_1'], ['Jerobaal', 'Gideon_1']]);
+      assert.ok(seg('Jue 4:2').some(x => x[0] === 'Jabín' && x[1] === 'Jabin_Jue4'));
+      assert.ok(seg('Jos 11:1').some(x => x[0] === 'Jabín' && x[1] === 'Jabin_1'));
+      assert.ok(seg('Jue 4:11').some(x => x[0] === 'Hobab' && x[1] === 'Hobab_1'));
+      assert.ok(seg('Jue 4:4').some(x => x[0] === 'Débora' && x[1] === 'Deborah_2'));
+      assert.equal(seg('Jue 18:29').filter(x => x[1] === 'Dan_1').length, 1, 'la ciudad Dan no se marca como persona');
+      assert.ok(['dan', 'gabaa', 'siloh', 'mizpa-de-galaad'].every(id => j(N2.lugaresDeRefs(D2, ['Jue 18:29', 'Jue 19:12', 'Jue 18:31', 'Jue 11:29'])).includes(id)));
+    });
+    const rc5 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc5)) prueba('Jueces: marcas de contenido (Jael alto, Gabaa sexual alto, despedazada crueldad, 6:12 sin marca)', () => {
+      const cr = cargar(rc5, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      assert.equal(NC.marcaDe(CR, 'Jue 4:21').nivel, 'alto'); assert.equal(NC.marcaDe(CR, 'Jue 19:25').categoria, 'sexual');
+      assert.equal(NC.marcaDe(CR, 'Jue 19:29').categoria, 'crueldad'); assert.equal(NC.marcaDe(CR, 'Jue 15:15').nivel, 'medio');
+      assert.equal(NC.marcaDe(CR, 'Jue 6:12'), null);
+    });
+  }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 // ---- Textos originales: alineación, testigos, variantes, voz y video (con pruebas/originales-ejemplo.js) ----
@@ -825,6 +866,8 @@ if (existsSync(real)) {
     assert.equal(NO.numeracionHebrea('Gn 31:55', 'Gn 32:1'), '32:1');
     assert.equal(NO.numeracionHebrea('Gn 1:1', 'Gn 1:1'), null); assert.equal(NO.numeracionHebrea('Gn 1:1', undefined), null);
     assert.equal(NO.numeracionHebrea('Ml 4:1', 'Mal 3:19'), 'Mal 3:19', 'otro libro: se muestra completo');
+    assert.equal(NO.numeracionHebrea('Jue 14:18', 'Jue 14:18a'), '14:18a', 'media unidad: se rotula aunque el número coincida');
+    assert.equal(NO.numeracionHebrea('Jue 14:19', 'Jue 14:18b'), '14:18b');
     const d = { capitulos: [{ libro: 'Gn', cap: 31, versiculos: [{ n: 54, texto: 'a' }, { n: 55, texto: 'Y levantóse Labán' }] }] };
     const f = j(NO.alinearOriginales(d, { inicio: 'Gn 31:54', fin: 'Gn 31:55' }, O, G));
     assert.deepEqual(f.map(x => x.ref), ['Gn 31:54', 'Gn 31:55']);

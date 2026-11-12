@@ -1,4 +1,4 @@
-"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio y Josué.
+"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué y Jueces.
 
 Genera:
   datos/originales.js          window.BIBLIA_ORIGINALES (hebreo WLC, testigos, variantes, videos)
@@ -41,6 +41,8 @@ ARCHIVOS = {
     "oshb_deu": (GH + "openscriptures/morphhb/master/wlc/Deut.xml", "oshb_Deut.xml"),
     "oshb_jos": (GH + "openscriptures/morphhb/master/wlc/Josh.xml", "oshb_Josh.xml"),
     "uxlc_jos": ("https://tanach.us/Books/Joshua.xml", "uxlc_Joshua.xml"),   # solo para leer la marca «X» (versículo ausente del Códice de Leningrado)
+    "oshb_jue": (GH + "openscriptures/morphhb/master/wlc/Judg.xml", "oshb_Judg.xml"),
+    "uxlc_jue": ("https://tanach.us/Books/Judges.xml", "uxlc_Judges.xml"),  # marca «X» (no hay en Jueces) y letra suspendida de Jue 18:30
     "tvtms": (TVTMS_URL, "tvtms.txt"),
     "swete_vers": (GH + "eliranwong/LXX-Swete-1930/master/00-Swete_versification.csv",
                    "swete_00-Swete_versification.csv"),
@@ -51,11 +53,12 @@ ARCHIVOS = {
 for _f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full", "fragment", "line"):
     ARCHIVOS["dss_" + _f] = (GH + "ETCBC/dss/master/tf/2.0/%s.tf" % _f, "dss_%s.tf" % _f)
 
-LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos")
-LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos"}          # códigos TVTMS / Swete
-OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm", "Deu": "Dt", "Deut": "Dt", "Jos": "Jos", "Josh": "Jos"}
-DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos"}            # códigos de libro en ETCBC/dss
-OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos"                                   # libros TVTMS / Swete que se leen
+LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue")
+LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos", "Jue": "Jdg"}          # códigos TVTMS / Swete
+OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm", "Deu": "Dt", "Deut": "Dt", "Jos": "Jos", "Josh": "Jos",
+              "Jdg": "Jue", "Judg": "Jue"}
+DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos", "Judg": "Jue"}            # códigos de libro en ETCBC/dss
+OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos|Jdg"                               # libros TVTMS / Swete que se leen
 FALLOS = []
 ROLLOS_PRESENTES = set()          # nombres de rollo que aparecen en ETCBC/dss (lo llena leer_dss)
 ORDEN_DSS = {}                    # rollo -> [(slot, fragmento, línea, (lib, c, v))] en el orden del rollo (lo llena leer_dss)
@@ -561,20 +564,20 @@ FUENTES = [
     {"id": "wlc-oshb", "nombre": "Westminster Leningrad Codex 4.20 (texto del Códice de Leningrado), vía Open Scriptures Hebrew Bible (morphhb)",
      "licencia": "Texto WLC: dominio público. Atribución: Open Scriptures Hebrew Bible (lemas y morfología CC BY 4.0, no usados aquí)",
      "url": "https://github.com/openscriptures/morphhb"},
-    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se lee su marca «X» (versículo que no está en el Códice de Leningrado), para Jos 21:36-37",
-     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml"},
+    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces no hay ninguna) y su marca de letra suspendida en Jue 18:30 (nota «7»)",
+     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml y https://tanach.us/Books/Judges.xml"},
     {"id": "tvtms", "nombre": "TVTMS (Translators Versification Traditions with Methodology for Standardisation), STEPBible / Tyndale House",
      "licencia": "CC BY 4.0", "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Versification"},
     {"id": "swete", "nombre": "H. B. Swete, The Old Testament in Greek (Cambridge, ed. 1930), digitalización LXX-Swete-1930 (Eliran Wong)",
      "licencia": "GPL-3.0 (texto de Swete en dominio público; digitalización GPL); va aparte en datos/griego-swete.js",
      "url": "https://github.com/eliranwong/LXX-Swete-1930"},
     {"id": "etcbc-dss", "nombre": "ETCBC/dss: datos de los Rollos del Mar Muerto de M. Abegg, J. Bowley y E. Cook (conversión Text-Fabric de J. Jacobs, M. Naaijer y D. Roorda)",
-     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8 y el orden de Jos 8:30-35 en 4Q47; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
+     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47 y que 4Q49 pasa de Jue 6:6 a 6:11; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
      "url": "https://github.com/ETCBC/dss"},
     {"id": "leon-levy", "nombre": "The Leon Levy Dead Sea Scrolls Digital Library (Israel Antiquities Authority): fichas con período y edición oficial (DJD)",
      "licencia": "Solo enlace: las imágenes no se pueden reproducir sin permiso de la IAA (https://www.deadseascrolls.org.il/terms)",
      "url": "https://www.deadseascrolls.org.il/"},
-    {"id": "wikipedia", "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11",
+    {"id": "wikipedia", "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11 y el 2026-11-12 (Jueces)",
      "licencia": "CC BY-SA 4.0 (solo se toman datos, no texto)", "url": "https://en.wikipedia.org/"},
     {"id": "cudl", "nombre": "Cambridge Digital Library (Cambridge University Library): ficha del Papiro Nash, MS Or.233 (registro JSON)",
      "licencia": "Metadatos CC BY-NC 4.0 (solo se toman datos); imágenes: solo enlace", "url": "https://cudl.lib.cam.ac.uk/view/MS-OR-00233"},
@@ -587,39 +590,39 @@ FUENTES = [
 CODICES = [
     {"id": "leningrado", "nombre": "Códice de Leningrado (Firkovich B 19 A)", "tipo": "codice", "idioma": "hebreo",
      "fecha": "1008 (o 1009) d. C.", "fecha_certeza": "colofón",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25"],
      "institucion": "Biblioteca Nacional de Rusia, San Petersburgo",
      "url": "https://archive.org/details/Leningrad_Codex", "uso": "solo_enlace",
-     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo.",
-     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»)"},
+     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar).",
+     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12)"},
     {"id": "alepo", "nombre": "Códice de Alepo", "tipo": "codice", "idioma": "hebreo",
      "fecha": "c. 920 d. C. (Tiberíades)", "fecha_certeza": "estimación (un colofón posterior atribuye la vocalización a Aarón ben Moisés ben Aser)",
-     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33"],
+     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25"],
      "institucion": "Museo de Israel (Santuario del Libro), Jerusalén",
      "url": "https://www.aleppocodex.org/", "uso": "solo_enlace",
-     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene.",
-     "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11"},
+     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12).",
+     "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11 y el 2026-11-12"},
     {"id": "vaticano", "nombre": "Códice Vaticano (Vat. gr. 1209)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 300–350 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33"],
+     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25"],
      "institucion": "Biblioteca Apostólica Vaticana",
      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209", "uso": "solo_enlace",
-     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma.",
-     "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11"},
+     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app.",
+     "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"},
     {"id": "sinaitico", "nombre": "Códice Sinaítico", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 325–360 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30", "Jos 1:10"],
+     "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30", "Jos 1:10", "Jue 5:7-Jue 11:2"],
      "institucion": "British Library, Biblioteca Universitaria de Leipzig, Monasterio de Santa Catalina y Biblioteca Nacional de Rusia (repartido)",
      "url": "https://codexsinaiticus.org/", "uso": "solo_enlace",
-     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas.",
-     "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11"},
+     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden).",
+     "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"},
     {"id": "alejandrino", "nombre": "Códice Alejandrino (Royal MS 1 D V–VIII)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 400–440 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25"],
      "institucion": "British Library, Londres",
      "url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_V", "uso": "solo_enlace",
-     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I.",
-     "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11"},
+     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app.",
+     "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"},
     {"id": "samaritano-cul-add1846", "nombre": "Pentateuco Samaritano, Cambridge University Library Add. 1846", "tipo": "pentateuco_samaritano",
      "idioma": "hebreo (escritura samaritana)",
      "fecha": "comienzos del s. XII d. C. (según el catálogo de Cambridge)", "fecha_certeza": "no verificada en la ficha (dato del catálogo leído solo a través de un buscador)",
@@ -740,6 +743,11 @@ ROLLOS = [
     # No va XJoshua (en los datos de Abegg, Jos 1:9-12 y 2:4-5): no es de Qumrán y la dirección XJosh-1 de la Leon Levy da 404.
     (["4Q47"], "4QJosh-a", "4Q47-1", "Hasmonean", "Ulrich 1995, DJD 14: 143-152", "cuadrada"),
     (["4Q48"], "4QJosh-b", "4Q48-1", "Hasmonean", "Tov 1995, DJD 14: 153-160", "cuadrada"),
+    # Jueces (fichas de la Leon Levy descargadas con un script el 2026-11-12: «copy», «period», «script_type», «official_publications»).
+    # No va «Xjudges» (en los datos de Abegg, Jue 1:10-13, 3:23-24 y 4:5-9): no es de Qumrán y la dirección XJudg-1 de la Leon Levy da 404.
+    (["1Q6"], "1QJudg", "1Q6-1", "Hellenistic-Roman", "Barthélemy 1955, DJD 1: 62-64", "cuadrada"),
+    (["4Q49"], "4QJudg-a", "4Q49-1", "Herodian", "Trebolle Barrera 1995, DJD 14: 161-164", "cuadrada"),
+    (["4Q50"], "4QJudg-b", "4Q50-1", "Herodian", "Trebolle Barrera 1995, DJD 14: 165-169", "cuadrada"),
 ]
 # Rollos sin ficha propia en la Leon Levy o con datos especiales (idioma, contenido no calculable, notas).
 ROLLO_EXTRA = {
@@ -760,6 +768,10 @@ ROLLO_EXTRA = {
     "4Q47": {"fuera_de_versiculo": [("Jos", 5, 0)],
              "nota": " En los fragmentos 1-2, tras Jos 8:34-35 (lectura de la ley junto al altar), viene un texto de enlace que Abegg numera «5:0» "
                      "(no es un versículo del TM; no entra en «contiene») y después Jos 5:2-7: es el testigo de la variante sobre el lugar del altar de Jos 8:30-35."},
+    "1Q6": {"nota": " La ficha de la Leon Levy no da letra de copia («copy» vacío): sigla sin letra."},
+    "4Q49": {"nota": " En el fragmento 1, la línea 5 conserva el final de Jue 6:6 y la línea 6 ya conserva Jue 6:11 (el principio de 6:11, al final de la línea 5, "
+                     "es reconstrucción de los editores): el rollo no tiene Jue 6:7-10 (el profeta enviado a Israel). "
+                     "Es el testigo de la variante de Jue 6:7-10 (comprobado al generar en los datos de Abegg)."},
     "4Q41": {"nota": " Abegg le asigna además Éx 20:11 (dentro del Decálogo), que también va en «contiene»."},
     "6Q3": {"nota": " La Leon Levy lo titula «6Q papDeuteronomy(?)» (tipo «Biblical Compositions?»): la identificación es dudosa en la propia ficha. Papiro."},
     "2Q29": {"nota": " La Leon Levy lo cataloga como «2Q Unidentified» (sin libro ni copia); que contenga Nm 23 es la asignación de los datos de Abegg (inferido). "
@@ -799,6 +811,11 @@ ANCLAS_GRIEGO = {
     ("Jos", 8, 35): ("mujeres y niños", "ταῖς γυναιξὶν"), ("Jos", 9, 3): ("Gabaón", "Γαβαὼν"), ("Jos", 9, 27): ("leñadores", "ξυλοκόπους"),
     ("Jos", 10, 13): ("el sol se detuvo", "ἔστη ὁ ἥλιος"), ("Jos", 21, 36): ("Rubén", "Ῥουβὴν"), ("Jos", 24, 29): ("ciento y diez", "ἑκατὸν δέκα"),
     ("Jos", 24, 30): ("Timnath-sera", "Θαμναθασαχαρὰ"),
+    # Jueces (Swete = forma B, Códice Vaticano; misma numeración que el TM salvo el corte propio de la RV en 14:18-20)
+    ("Jue", 1, 1): ("Josué", "Ἰησοῦ"), ("Jue", 4, 4): ("Débora", "Δεββωρὰ"), ("Jue", 7, 20): ("espada", "Ῥομφαία"),
+    ("Jue", 14, 18): ("dulce", "γλυκύτερον"), ("Jue", 14, 19): ("araseis", "ἠροτριάσατε"), ("Jue", 14, 20): ("Ascalón", "Ἀσκάλωνα"),
+    ("Jue", 16, 30): ("Muera yo con los Filisteos", "Ἀποθανέτω ψυχή μου μετὰ ἀλλοφύλων"), ("Jue", 18, 30): ("Manasés", "Μανασσή"),
+    ("Jue", 21, 25): ("no había rey", "οὐκ ἦν βασιλεὺς"),
 }
 
 # Anclas de contenido del hebreo (consonantes): RV -> (palabra en la RV, palabra en el hebreo asignado)
@@ -833,6 +850,14 @@ ANCLAS_HEBREO = {
     ("Jos", 10, 13): ("sol", "השמש"),
     ("Jos", 21, 38): ("Gad", "גד"),               # el siguiente a los dos versículos que faltan en el Códice de Leningrado
     ("Jos", 24, 29): ("ciento y diez", "ועשר"),
+    ("Jue", 1, 1): ("Josué", "יהושע"),
+    ("Jue", 4, 4): ("profetisa", "נביאה"),
+    ("Jue", 14, 18): ("dulce", "מתוק"),          # TM 14:18, primera parte
+    ("Jue", 14, 19): ("araseis", "חרשתם"),        # TM 14:18, segunda parte
+    ("Jue", 14, 20): ("Ascalón", "אשקלון"),       # TM 14:19-20
+    ("Jue", 16, 13): ("tela", "המסכת"),
+    ("Jue", 18, 30): ("Manasés", "מנשה"),         # con la nun suspendida
+    ("Jue", 21, 25): ("rey", "מלך"),
 }
 
 # RV -> (Swete, palabra que debe estar en el griego, palabra que debe estar en la RV)
@@ -857,6 +882,29 @@ DESPLAZAMIENTO_GRIEGO = [
     ("Jos", 9, 3, 27, 9, 9, _NOTA_JOS9),
 ]
 
+# La RV1909 de eBible parte en dos el 14:18 del TM y de Swete (que numeran como la KJV; el TVTMS no recoge el corte) y reúne sus 14:19-20
+# en su 14:20 (ver jueces.py). Aquí: RV 14:18 = primera parte del 14:18 (la pregunta de los de la ciudad), RV 14:19 = segunda parte
+# (la respuesta de Sansón), cortando justo antes de las palabras de CORTES; RV 14:20 = TM/Swete 14:19-20. Cada parte se usa una vez.
+RV_PARTIDA = {("Jue", 14, 18): (("Jue", 14, 18), 0, "Jue 14:18a"), ("Jue", 14, 19): (("Jue", 14, 18), 1, "Jue 14:18b")}
+CORTES = {("Jue", 14, 18): ("ויאמר להם", "καὶ εἶπεν αὐτοῖς Σαμψών")}       # (hebreo en consonantes, griego literal)
+# Cada parte NO debe contener la palabra de la otra (se comprueba en hebreo y en griego).
+NO_EN_PARTE = {("Jue", 14, 18): (("חרשתם", "ἠροτριάσατε"), ("מתוק", "γλυκύτερον"))}
+RV_UNIDA = {("Jue", 14, 20): [("Jue", 14, 19), ("Jue", 14, 20)]}
+_NOTA_JUE14 = ("Corrección propia (comprobada por el contenido): la RV1909 (eBible) parte en dos el 14:18 del texto hebreo y de Swete "
+               "(14:18 la pregunta de los de la ciudad; 14:19 la respuesta de Sansón, «Si no araseis con mi novilla…») y reúne sus 14:19-20 "
+               "(Ascalón y la mujer de Sansón dada a su compañero) en su 14:20. El TVTMS no recoge este corte. El original de RV 14:18 y 14:19 "
+               "es el 14:18, cortado justo antes de «{corte}»; el de RV 14:20, los versículos 14:19-20.")
+
+
+def partir(txt, corte, hebreo):
+    """Corta el texto justo antes de «corte» (en hebreo, comparando consonantes palabra a palabra). Devuelve (a, b) o None."""
+    if not hebreo:
+        return (txt[:txt.index(corte)].strip(), txt[txt.index(corte):].strip()) if txt.count(corte) == 1 else None
+    ps, cs = txt.split(), corte.split()
+    pos = [i for i in range(len(ps)) if [consonantes(w).strip() for w in ps[i:i + len(cs)]] == cs]
+    return (" ".join(ps[:pos[0]]), " ".join(ps[pos[0]:])) if len(pos) == 1 and pos[0] > 0 else None
+
+
 # RV -> (Swete que el TVTMS le asigna, palabra que NO está en ese griego, palabra que sí está en la RV, motivo)
 QUITAR_GRIEGO = {
     ("Dt", 14, 14): (("Dt", 14, 14), "κόρακ", "cuervo",
@@ -879,6 +927,7 @@ VIDEOS = [
     ("Dt", "qfMplfJoYA0", "Resumen del libro de Deuteronomio: un panorama completo animado", "Dt 1:1-Dt 34:12", "inferido"),
     ("Dt", "lq36F3b-S2U", "El tema principal del libro de Deuteronomio • Serie de la Torá • (episodio 7)", "Dt 1:1-Dt 34:12", "libro entero (tema)"),
     ("Jos", "49ggVrdBN_Y", "Resumen del libro de Josué: un panorama completo animado", "Jos 1:1-Jos 24:33", "inferido"),
+    ("Jue", "bCwaJz4L2nU", "Resumen del libro de Jueces: un panorama completo animado", "Jue 1:1-Jue 21:25", "inferido"),
 ]
 VIDEOS_DESCARTADOS = {"y2pED55wMM4": "Errata del informe de fuentes: oEmbed responde 404. El ID correcto del resumen de Éxodo (parte 1) es y9pED55wMM4."}
 
@@ -938,7 +987,8 @@ def main():
     heb.update(leer_oshb(obtener("oshb_num", sin_red), "Nm"))
     heb.update(leer_oshb(obtener("oshb_deu", sin_red), "Dt"))
     heb.update(leer_oshb(obtener("oshb_jos", sin_red), "Jos"))
-    fuera_l = leer_uxlc_x(obtener("uxlc_jos", sin_red), "Jos")
+    heb.update(leer_oshb(obtener("oshb_jue", sin_red), "Jue"))
+    fuera_l = leer_uxlc_x(obtener("uxlc_jos", sin_red), "Jos") + leer_uxlc_x(obtener("uxlc_jue", sin_red), "Jue")
     if set(fuera_l) != set(HEBREO_FUERA_DE_L):
         fallo(f"UXLC: versículos marcados «X» (no están en el Códice de Leningrado) {sorted(fuera_l)}, se esperaban {sorted(HEBREO_FUERA_DE_L)}")
     for k in HEBREO_FUERA_DE_L:
@@ -952,6 +1002,10 @@ def main():
     # ---- hebreo: mapa RV -> TM
     mapa_h, notas_h = construir_mapa(bloques, "Hebrew", t_heb, t_rv, orden_rv, estricto=True)
     aplicar_rv_propia(mapa_h, notas_h)
+    for k, ds in RV_UNIDA.items():
+        mapa_h[k] = ds
+    hebreo_notas = {ref(*k): _NOTA_JUE14.format(corte=CORTES[RV_PARTIDA.get(k, (("Jue", 14, 18),))[0]][0]) for k in list(RV_PARTIDA) + list(RV_UNIDA)}
+    partes_h = {}                                        # TM partido -> {parte: RV}
     if sorted(vacios_rv) != sorted(k for k, v in RV_PROPIA.items() if not v):
         fallo(f"versículos vacíos de la RV inesperados: {[ref(*k) for k in vacios_rv]}")
     hebreo, sin_hebreo, hebreo_sin_texto = {}, {}, {}
@@ -964,6 +1018,17 @@ def main():
             continue
         if k in HEBREO_FUERA_DE_L:
             hebreo_sin_texto[ref(*k)] = HEBREO_FUERA_DE_L[k]
+            continue
+        if k in RV_PARTIDA:                              # RV que tiene solo una parte de un versículo hebreo (Jue 14:18-19)
+            d, parte, r = RV_PARTIDA[k]
+            pp = partir(heb.get(d, ""), CORTES[d][0], True)
+            if not pp:
+                fallo(f"{ref(*k)}: no se pudo cortar el hebreo {ref(*d)} antes de «{CORTES[d][0]}»")
+                continue
+            if parte in partes_h.setdefault(d, {}):
+                fallo(f"hebreo {ref(*d)} (parte {parte}) asignado dos veces")
+            partes_h[d][parte] = k
+            hebreo[ref(*k)] = {"t": pp[parte], "r": r}
             continue
         if not ds or not all(d in heb for d in ds):
             sin_hebreo[ref(*k)] = notas_h.get(k, "sin correspondencia en el TVTMS")
@@ -983,6 +1048,15 @@ def main():
             else:
                 e["r"] = ref(*ds[0])
         hebreo[ref(*k)] = e
+    for d in CORTES:
+        if sorted(partes_h.get(d, {})) != [0, 1] or d in usados_h:
+            fallo(f"hebreo {ref(*d)}: se esperaba repartido en dos partes, una por versículo RV ({partes_h.get(d)})")
+        else:
+            usados_h[d] = partes_h[d][0]
+            pp = partir(heb[d], CORTES[d][0], True)
+            for parte, (no_he, _) in enumerate(NO_EN_PARTE[d]):
+                if no_he in consonantes(pp[parte]).split():
+                    fallo(f"hebreo {ref(*d)}: la parte {parte} no debería tener «{no_he}»")
     sobrantes_h = [ref(*d) for d in heb if d not in usados_h]
     if sobrantes_h:
         fallo(f"versículos hebreos sin asignar: {sobrantes_h[:10]}")
@@ -1001,6 +1075,9 @@ def main():
                 fallo(f"desplazamiento griego {ref(lib, c, v)} -> {ref(*d)}: no existe")
             mapa_g[(lib, c, v)] = [d]
             notas_g[(lib, c, v)] = nota
+    for k, ds in RV_UNIDA.items():
+        mapa_g[k] = ds
+        notas_g[k] = hebreo_notas[ref(*k)].replace("«" + CORTES[("Jue", 14, 18)][0] + "»", "«" + CORTES[("Jue", 14, 18)][1] + "»")
     for k, (d, falta_gr, pal_rv, motivo) in QUITAR_GRIEGO.items():
         if mapa_g.get(k) == [d] and falta_gr not in gr.get(d, "") and pal_rv in texto_rv[k]:
             del mapa_g[k]
@@ -1017,12 +1094,27 @@ def main():
         else:
             fallo(f"corrección griega {ref(*k)}: ya no aplica o el contenido no coincide")
     griego, ref_griega, notas_griego, sin_griego = {}, {}, {}, {}
-    usos_g = {}
+    usos_g, partes_g = {}, {}
     for k in orden_rv:
         ds = mapa_g.get(k)
         if not texto_rv[k]:                              # versículo vacío en la RV: ni griego ni «sin_texto»
             if ds:
                 fallo(f"versículo vacío {ref(*k)} con griego asignado")
+            continue
+        if k in RV_PARTIDA:                              # RV que tiene solo una parte de un versículo de Swete (Jue 14:18-19)
+            d, parte, r = RV_PARTIDA[k]
+            pp = partir(gr.get(d, ""), CORTES[d][1], False)
+            if not pp:
+                fallo(f"{ref(*k)}: no se pudo cortar el griego {ref(*d)} antes de «{CORTES[d][1]}»")
+                continue
+            for i, (_, no_gr) in enumerate(NO_EN_PARTE[d]):
+                if no_gr in pp[i]:
+                    fallo(f"griego {ref(*d)}: la parte {i} no debería tener «{no_gr}»")
+            partes_g.setdefault(d, {})[parte] = k
+            griego[ref(*k)], ref_griega[ref(*k)] = pp[parte], r
+            notas_griego[ref(*k)] = hebreo_notas[ref(*k)].replace("«" + CORTES[d][0] + "»", "«" + CORTES[d][1] + "»")
+            if parte == 0:
+                usos_g.setdefault(d, []).append(ref(*k))
             continue
         if not ds or not all(d in gr for d in ds):
             sin_griego[ref(*k)] = notas_g.get(k) or "la edición de Swete no tiene este versículo con esa numeración"
@@ -1040,6 +1132,9 @@ def main():
             notas_griego[ref(*k)] = (notas_griego.get(ref(*k), "") + " " + NOTA_ADICION_LXX).strip()
         for d in ds:
             usos_g.setdefault(d, []).append(ref(*k))
+    for d in CORTES:
+        if sorted(partes_g.get(d, {})) != [0, 1] or len(usos_g.get(d, [])) != 1:
+            fallo(f"griego {ref(*d)}: se esperaba repartido en dos partes, una por versículo RV ({partes_g.get(d)}, {usos_g.get(d)})")
     for d, ks in usos_g.items():
         if len(ks) > 1:
             for kk in ks:
@@ -1280,6 +1375,122 @@ def main():
         "nota": "Texto: el orden de cada testigo se comprueba al generar. La RV1909 sigue al TM. Cuál de los tres órdenes es el más antiguo es interpretación y no se incluye.",
     })
 
+    # Jue 18:30: la nun suspendida de מנשה (Manasés); sin ella, משה (Moisés). Se comprueba en el WLC (OSHB) y en el UXLC.
+    xml_jue = obtener("oshb_jue", sin_red).read_text(encoding="utf-8")
+    v1830 = re.search(r'<verse osisID="Judg\.18\.30".*?</verse>', xml_jue, re.S)
+    if not (v1830 and re.search(r'<w [^>]*lemma="4519"[^>]*>[^<]*<seg type="x-suspended">נ', v1830.group(0))):
+        fallo("Jue 18:30 OSHB: se esperaba la נ de מנשה marcada «x-suspended»")
+    ux_jue = obtener("uxlc_jue", sin_red).read_text(encoding="utf-8")
+    c18 = re.search(r'<c n="18">(.*?)</c>', ux_jue, re.S)
+    u1830 = re.search(r'<v n="30">(.*?)</v>', c18.group(1), re.S) if c18 else None
+    if not (u1830 and re.search(r'<s t="suspended">נ[^<]*</s><x>7</x>', u1830.group(1))
+            and re.search(r"<code>7</code>.*?Suspended letter", ux_jue, re.S)):
+        fallo("Jue 18:30 UXLC: se esperaba la נ suspendida con la nota «7» (Suspended letter(s))")
+    if "מנשה" not in heb_cons("Jue 18:30").split() or "Manasés" not in texto_rv[("Jue", 18, 30)]:
+        fallo("Jue 18:30: se esperaba «מנשה» en el hebreo y «Manasés» en la RV")
+    m1830 = re.search(r"Ἰωναθὰμ υἱὸς Γηρσὸμ υἱὸς Μανασσή", griego.get("Jue 18:30", ""))
+    if not m1830:
+        fallo("Jue 18:30 griego: falta «Ἰωναθὰμ υἱὸς Γηρσὸμ υἱὸς Μανασσή»")
+    variantes.append({
+        "ref": "Jue 18:30", "tema": "¿Hijo de Manasés o de Moisés? La letra suspendida de Jue 18:30",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["Jue 18:30"]["t"],
+             "traduccion_es": ("Y se levantaron los hijos de Dan la imagen tallada; y Jonatán, hijo de Guersón, hijo de Manasés, él y sus hijos fueron "
+                               "sacerdotes de la tribu de Dan hasta el día del cautiverio de la tierra (traducción propia, literal)."),
+             "nota": ("La נ (nun) de מנשה, «Manasés», va escrita en alto, suspendida sobre la línea: el WLC (OSHB) la marca como letra suspendida "
+                      "(«x-suspended») y el UXLC (tanach.us) con su nota «7», «Suspended letter(s)» (comprobado al generar). Sin esa letra, las "
+                      "consonantes son משה, «Moisés» (cálculo: מנשה sin la נ).")},
+            {"testigos": ["vaticano"], "texto_original": m1830.group(0) if m1830 else "",
+             "traduccion_es": "Jonatán, hijo de Gersón, hijo de Manasés (traducción propia).",
+             "nota": ("Texto de la edición de Swete, que en Jueces imprime el Códice Vaticano (forma «B»). Según Wikipedia («Codex Vaticanus» y "
+                      "«Codex Alexandrinus»), que cita la edición de Rahlfs, el Códice Alejandrino (forma «A») lee aquí «Moisés»: fuente externa, "
+                      "no está en los datos de esta app y no se comprueba.")},
+        ],
+        "fuente": "Comparación directa: WLC (OSHB) y UXLC 2.x (tanach.us) para la letra suspendida; Swete (LXX-Swete-1930) para el griego.",
+        "url_fuente": "https://tanach.us/Books/Judges.xml",
+        "nota": "Texto: la letra y las palabras se comprueban en cada fuente al generar. La RV1909 lee «Manasés». Por qué se escribió suspendida es interpretación y no se incluye.",
+    })
+
+    # Jue 6:7-10 (el profeta enviado a Israel): 4Q49 (4QJudg-a) pasa de 6:6 a 6:11 dentro de la línea 5 del fragmento 1.
+    lin49, seq49 = {}, []
+    for _, fr, ln, k in ORDEN_DSS.get("4Q49", []):
+        if fr == "f1" and str(ln).isdigit():
+            lin49.setdefault(k, set()).add(int(ln))
+            if not seq49 or seq49[-1] != k:
+                seq49.append(k)
+    if any(("Jue", 6, v) in pal.get("4Q49", {}) for v in range(7, 11)):
+        fallo("4Q49: no debería tener Jue 6:7-10")
+    k66, k611 = ("Jue", 6, 6), ("Jue", 6, 11)
+    def lineas_conservadas(k):                       # líneas de las palabras con alguna letra conservada (mismo orden en ORDEN_DSS y en pal)
+        ls = [int(ln) for _, fr, ln, kk in ORDEN_DSS.get("4Q49", []) if kk == k]
+        ws = pal.get("4Q49", {}).get(k, [])
+        return {l for l, (_, c) in zip(ls, ws) if c} if len(ls) == len(ws) else set()
+    if not (k66 in seq49 and seq49[seq49.index(k66) + 1:seq49.index(k66) + 2] == [k611]
+            and lineas_conservadas(k66) == {5} and lineas_conservadas(k611) == {6}):
+        fallo("4Q49 fragmento 1: se esperaba Jue 6:6 seguido de 6:11, con lo conservado de 6:6 en la línea 5 y lo de 6:11 en la 6: " + repr(lin49))
+    l66, cons66 = dss_lectura("4Q49", k66)
+    l611, cons611 = dss_lectura("4Q49", k611)
+    if not (any("יזעקו" in t for t in cons66) and any("יואש" in t for t in cons611)):
+        fallo("4Q49: «יזעקו» (6:6) y «יואש» (6:11) deberían estar conservados")
+    if "נביא" not in heb_cons("Jue 6:8").split() or "profeta" not in texto_rv[("Jue", 6, 8)]:
+        fallo("Jue 6:8: se esperaba «נביא» en el hebreo y «profeta» en la RV")
+    m68 = re.search(r"ἐξαπέστειλεν Κύριος ἄνδρα προφήτην", griego.get("Jue 6:8", ""))
+    if not m68:
+        fallo("Jue 6:8 griego: falta «ἐξαπέστειλεν Κύριος ἄνδρα προφήτην»")
+    variantes.append({
+        "ref": "Jue 6:7", "tema": "¿Estaba en Jueces 6 el pasaje del profeta (Jue 6:7-10)?",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["Jue 6:8"]["t"],
+             "traduccion_es": ("Y envió YHVH un varón profeta a los hijos de Israel, y les dijo: Así dice YHVH, Dios de Israel: Yo os hice subir de "
+                               "Egipto y os saqué de la casa de esclavos (traducción propia, literal; es Jue 6:8)."),
+             "nota": "En el TM (y en la RV1909), 6:7-10 —el profeta que reprende a Israel— va entre 6:6 (Israel clama a YHVH) y 6:11 (el ángel en Ofra)."},
+            {"testigos": ["4Q49"], "texto_original": l66 + " … " + l611,
+             "traduccion_es": ("…y clamaron los hijos de Isr[ael a] YHVH. […] que era de Joás el abiezerita, y G[edeón…] "
+                               "(traducción propia, aproximada; es Jue 6:6 seguido de 6:11)."),
+             "nota": ("Orden comprobado en los datos de Abegg: en el fragmento 1 de 4Q49, Jue 6:6 ocupa las líneas 4-5 y en la misma línea 5 sigue Jue 6:11 "
+                      "(el resto de la línea 5, el principio de 6:11, es reconstrucción de los editores). Lo conservado: el final de 6:6 en la línea 5 («יזעקו», "
+                      "«יהוה») y parte de 6:11 en la línea 6 («ליואש האביעזרי»). Jue 6:7-10 no aparece en ningún lugar del rollo; que no quepa en lo que "
+                      "falta de la línea 5 es la reconstrucción de la edición (inferido). Transcripción de Abegg: [ ] = texto "
+                      "reconstruido por los editores; # = letra dañada; ? = lectura dudosa.")},
+            {"testigos": ["vaticano"], "texto_original": m68.group(0) if m68 else "",
+             "traduccion_es": "Y envió el Señor un varón profeta (traducción propia; Jue 6:8).",
+             "nota": "Texto de la edición de Swete (forma «B», Códice Vaticano), que tiene Jue 6:7-10."},
+        ],
+        "fuente": "Edición oficial de 4QJudg-a (4Q49): Trebolle Barrera 1995, DJD 14: 161-164, según la Leon Levy Library. Orden y lectura del rollo comprobados en los datos de Abegg (ETCBC/dss); TM en el WLC; LXX en Swete.",
+        "url_fuente": LL + "4Q49-1",
+        "nota": "Texto: el orden de cada testigo se comprueba al generar. La RV1909 sigue al TM. Si el rollo omitió el pasaje o copia un texto que aún no lo tenía es interpretación y no se incluye.",
+    })
+
+    # Jue 16:13-14: la LXX (Swete) tiene una frase más en cada versículo («y seré débil…»; «mientras dormía, tejió…»).
+    h1613, h1614 = heb_cons("Jue 16:13").split(), heb_cons("Jue 16:14").split()
+    if not (h1613[-1:] == ["המסכת"] and "וחליתי" not in h1613 and h1614[:2] == ["ותתקע", "ביתד"]):
+        fallo("Jue 16:13-14 hebreo: se esperaba 16:13 terminado en «המסכת», sin «וחליתי», y 16:14 empezando por «ותתקע ביתד»")
+    m1613 = re.search(r"Ἐὰν ὑφάνῃς τὰς ἑπτὰ σειρὰς τῆς κεφαλῆς μου σὺν τῷ διάσματι καὶ ἐνκρούσῃς τῷ πασσάλῳ εἰς τὸν τοῖχον, καὶ ἔσομαι ὡς εἷς τῶν ἀνθρώπων ἀσθενής",
+                      griego.get("Jue 16:13", ""))
+    m1614 = re.search(r"καὶ ἐγένετο ἐν τῷ κοιμᾶσθαι αὐτὸν καὶ ἔλαβεν Δαλειδὰ τὰς ἑπτὰ σειρὰς τῆς κεφαλῆς αὐτοῦ καὶ ὕφανεν ἐν τῷ διάσματι καὶ ἔπηξεν τῷ πασσάλῳ εἰς τὸν τοῖχον",
+                      griego.get("Jue 16:14", ""))
+    if not (m1613 and m1614):
+        fallo("Jue 16:13-14 griego: faltan las frases más largas de Swete")
+    if not (texto_rv[("Jue", 16, 13)].endswith("con la tela.") and texto_rv[("Jue", 16, 14)].startswith("Y ella hincó la estaca")):
+        fallo("RV Jue 16:13-14: se esperaba el texto corto (como el TM)")
+    variantes.append({
+        "ref": "Jue 16:13", "tema": "¿Qué dijo Sansón a Dalila la tercera vez (Jue 16:13-14)?",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["Jue 16:13"]["t"] + " " + hebreo["Jue 16:14"]["t"],
+             "traduccion_es": ("…Y él le dijo: Si tejes las siete trenzas de mi cabeza con la urdimbre. Y ella (las) fijó con la estaca, y le dijo: "
+                               "¡Los filisteos sobre ti, Sansón! Y él despertó de su sueño y arrancó la estaca del telar y la urdimbre (traducción propia, literal)."),
+             "nota": "El TM pasa de la propuesta de Sansón (16:13) a «y ella fijó con la estaca» (16:14), sin decir qué pasaría ni que ella tejiera mientras él dormía."},
+            {"testigos": ["vaticano"], "texto_original": (m1613.group(0) + " … " + m1614.group(0)) if (m1613 and m1614) else "",
+             "traduccion_es": ("Si tejes las siete trenzas de mi cabeza con la urdimbre y las clavas con la estaca en la pared, seré débil como uno de "
+                               "los hombres. … Y sucedió que, mientras él dormía, Dalila tomó las siete trenzas de su cabeza, las tejió con la urdimbre "
+                               "y las fijó con la estaca en la pared (traducción propia)."),
+             "nota": "Texto de la edición de Swete (forma «B», Códice Vaticano). Las dos frases de más se comprueban al generar."},
+        ],
+        "fuente": "Comparación directa de las ediciones: WLC (OSHB) y Swete (LXX-Swete-1930).",
+        "url_fuente": "https://github.com/eliranwong/LXX-Swete-1930",
+        "nota": "Texto (las palabras se comprueban en cada edición). La RV1909 sigue al TM (texto corto). Cuál de los dos textos es el más antiguo es interpretación y no se incluye.",
+    })
+
     # ---- videos
     ruta_oe = CACHE / "oembed.json"
     cache_oe = json.loads(ruta_oe.read_text(encoding="utf-8")) if ruta_oe.exists() else {}
@@ -1317,7 +1528,8 @@ def main():
                        ("Nm 30:15", None), ("Nm 30:16", "Nm 30:16-17"),
                        ("Dt 12:31", None), ("Dt 12:32", "Dt 13:1"), ("Dt 13:1", "Dt 13:2"), ("Dt 13:18", "Dt 13:19"), ("Dt 14:1", None),
                        ("Dt 22:29", None), ("Dt 22:30", "Dt 23:1"), ("Dt 23:25", "Dt 23:26"), ("Dt 24:1", None),
-                       ("Dt 28:68", None), ("Dt 29:1", "Dt 28:69"), ("Dt 29:2", "Dt 29:1"), ("Dt 29:29", "Dt 29:28"), ("Dt 30:1", None)):
+                       ("Dt 28:68", None), ("Dt 29:1", "Dt 28:69"), ("Dt 29:2", "Dt 29:1"), ("Dt 29:29", "Dt 29:28"), ("Dt 30:1", None),
+                       ("Jue 14:17", None), ("Jue 14:18", "Jue 14:18a"), ("Jue 14:19", "Jue 14:18b"), ("Jue 14:20", "Jue 14:19-20"), ("Jue 15:1", None)):
         if renum_h.get(rv_r) != he_r:
             fallo(f"numeración: RV {rv_r} debería ser hebreo {he_r}, es {renum_h.get(rv_r)}")
     for r in ("Nm 12:16", "Nm 29:40"):                      # vacíos en la RV: ni hebreo ni griego ni «sin_texto»
@@ -1342,6 +1554,10 @@ def main():
             for tid in l["testigos"]:
                 if tid not in ids:
                     fallo(f"variante {v['ref']}: testigo {tid} no existe")
+    # Jueces: la digitalización de Swete trae una sola forma del texto (la que imprime Swete, «B»), con la misma numeración que el TM.
+    jue_gr = {k for k in gr if k[0] == "Jue"}
+    if jue_gr != {k for k in orden_rv if k[0] == "Jue"}:
+        fallo(f"Swete Jueces: se esperaban los mismos {conteo_rv['Jue']} versículos que la RV; hay {len(jue_gr)}")
     ex15 = griego.get("Ex 1:5", "")
     if not ("πέντε" in ex15 or "ἑβδομήκοντα πέντε" in ex15):
         fallo("Ex 1:5 griego")
@@ -1356,8 +1572,9 @@ def main():
         "generado": ahora,
         "fuentes": FUENTES,
         "hebreo_nota": ("Texto hebreo del Códice de Leningrado (WLC 4.20) con vocales y acentos; sin morfología, notas ni marcas de párrafo (פ/ס). "
-                        "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0)."),
+                        "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»)."),
         "hebreo": hebreo,
+        "hebreo_notas": hebreo_notas,
         "hebreo_sin_texto": hebreo_sin_texto,
         "testigos": testigos,
         "variantes": variantes,
@@ -1372,9 +1589,10 @@ def main():
                    "y lo suple con otro uncial (sobre todo el Alejandrino) donde falta, como en Gn 1:1–46:28."),
         "licencia": "GPL-3.0 (texto de Swete 1930 en dominio público; digitalización GPL)",
         "url": "https://github.com/eliranwong/LXX-Swete-1930",
-        "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7, Nm 1, 13 y 30, Dt 5 y 14 y Jos 8–10 y 13 difiere de la RV: "
+        "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7, Nm 1, 13 y 30, Dt 5 y 14 y Jos 8–10 y 13 difiere de la RV (en Jue 14:18-20 es la RV la que parte y une versículos): "
                  "la correspondencia se toma del TVTMS (STEPBible, CC BY 4.0), eligiendo en cada bloque la columna griega cuyos TEST cumple esta edición. "
-                 "«ref_griega» da la referencia de Swete cuando difiere; «sin_texto» lista los versículos RV sin equivalente completo en la LXX, con el motivo."),
+                 "«ref_griega» da la referencia de Swete cuando difiere; «sin_texto» lista los versículos RV sin equivalente completo en la LXX, con el motivo. Jueces: la LXX tiene dos formas textuales (A, Alejandrino; B, Vaticano); "
+                 "la digitalización de Swete trae solo la que imprime Swete, la del Códice Vaticano («B»), y es la única que se muestra: no se mezcla con «A»."),
         "texto": griego,
         "ref_griega": ref_griega,
         "notas": notas_griego,
@@ -1387,7 +1605,7 @@ def main():
     t2 = escribir_js(DATOS / "griego-swete.js", cab_g, "BIBLIA_GRIEGO", griego_obj)
     lic = obtener("swete_lic", sin_red).read_text(encoding="utf-8")
     (DATOS / "LICENCIA-griego-swete.txt").write_text(
-        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio y Josué)\n\n"
+        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué y Jueces)\n\n"
         "Texto: H. B. Swete, The Old Testament in Greek according to the Septuagint, Cambridge University Press (ed. 1930). Dominio público.\n"
         "Digitalización: LXX-Swete-1930, Eliran Wong (https://github.com/eliranwong/LXX-Swete-1930), licencia GNU GPL-3.0.\n"
         "Modificaciones: palabras unidas por versículo y claves pasadas a la numeración de la RV1909 con el TVTMS (STEPBible, CC BY 4.0).\n"
