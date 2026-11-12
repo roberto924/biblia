@@ -124,6 +124,29 @@
 
 ---
 
+## Josué y los Jueces (Bronce tardío / Hierro I)
+
+> **Esto es debate, no una fecha del texto.** Josué y Jueces no dan un año a. C. Lo que sigue es lo que dicen las páginas abiertas en esta pasada, más un objeto de museo. No elige una postura.
+
+**La conquista, según una página abierta.** Israel Finkelstein y Neil Asher Silberman, «The Bible Unearthed», *The Bible and Interpretation* (marzo de 2001), https://bibleinterp.arizona.edu/articles/Finkelstein_Silberman022001 — **[A]**. Cuentan dos momentos de la investigación y defienden el suyo:
+
+- **La lectura que describen como la de unas décadas atrás** (nombran a Albright en el tramo de los patriarcas, y dicen que hace cuarenta años la historia bíblica «fiable» se hacía empezar en Josué): los niveles de destrucción del Bronce tardío en los tells de la tierra se tomaban por la acción militar de las tribus.
+- **La suya:** los sondeos de los años 1970 y 1980 en Cisjordania muestran, según ellos, que el asentamiento no fue una invasión relámpago sino un proceso de transformación social, con grupos de dentro y de fuera de Canaán. Escriben que no hay evidencia arqueológica contundente de una conquista unificada, y que el Pentateuco y la historia deuteronomista cristalizan, como obra, en el programa del reino de Judá del siglo VII a. C. Añaden que eso no convierte la Biblia en un cuento sin valor: la tratan como testimonio y como logro cultural, no como crónica moderna.
+
+No abrí en esta pasada a Albright, a Kenyon ni a Bryant Wood. La postura «destrucciones = Josué» queda aquí solo como el resumen que hacen Finkelstein y Silberman de la lectura anterior, no como una ficha que yo haya leído de esos autores. El debate de la fecha del éxodo, que arrastra la de la entrada en la tierra, está en la sección anterior.
+
+**Un objeto de Laquis, que no es la campaña.** Crátera de cerámica bícroma, British Museum 160152 (1980,1214.12041), https://www.britishmuseum.org/collection/object/W_1980-1214-12041 — **[A]**. La ficha dice: Bronce tardío I, excavada por J. L. Starkey en Laquis (Pit 0144), expedición Wellcome-Marston 1932-1938, pájaros y peces. Es cerámica de la ciudad que Josué 10 nombra. No es filistea y no es prueba del asedio del relato. La ficha no cede la foto.
+
+**Filisteos.** No abrí una ficha de museo de cerámica filistea ni un ensayo que describiera su llegada. No resumen aquí su origen. El marfil del Met fichado en el catálogo (ficha de juego, hacia 1150 d. C., Sansón camino de Dagón) es arte medieval, no un objeto filisteo. Tel Qasile, la estela de Merneptah y las cartas de Amarna no se reabrieron en esta pasada: la estela y Amarna ya están en el catálogo y en las secciones de arriba.
+
+### No verificado en esta sección
+
+- Excavaciones de Tel es-Sultan / Jericó, et-Tell / Hai, Tel Hazor, Silo, Siquem, Gabaón y Tel Qasile: no abrí la ficha del yacimiento.
+- Mapa de Madaba: hay fotos en Commons; no comprobé cuál muestra Jericó, Guilgal o Belén.
+- La API de búsqueda del Met respondió 410 a «Philistine».
+
+---
+
 ## Cómo leer este contexto junto al texto bíblico
 
 - Génesis y Éxodo **no dan fechas a. C.** El texto cuenta generaciones, edades y duraciones, pero no ancla ningún acontecimiento a un año del calendario actual. Las fechas a. C. de este documento pertenecen a la cronología de egiptólogos y asiriólogos, no al texto.

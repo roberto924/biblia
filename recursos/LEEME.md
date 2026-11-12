@@ -1,37 +1,37 @@
 # Cómo se armó este catálogo
 
-Investigación para acompañar la lectura de Génesis, Éxodo y los Salmos. No modifica la aplicación. Cada ficha sale de una página abierta (museo, Wikimedia Commons, LibriVox o BibleProject). La licencia que se publica es la que devolvió la API de Commons (`LicenseShortName`), la ficha del Met (`isPublicDomain` / política Open Access CC0) o la página de términos, no una suposición.
+Investigación para acompañar la lectura. No modifica la aplicación. Cada ficha sale de una página abierta (museo, Wikimedia Commons, LibriVox, BibleProject o el canal oficial de Superbook). La licencia que se publica es la que devolvió la API de Commons (`LicenseShortName`), la ficha del museo o la página de términos, no una suposición. En noviembre de 2026 se añadieron Josué, Jueces y Rut.
 
 Las 13 secciones de lectura del plan (6 de Génesis y 7 de Éxodo) tienen al menos tres imágenes locales.
 
 ## Totales
 
-142 fichas en `catalogo.json`. 98 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó. El texto reunido para ChatGPT es `PARA-CHATGPT.md` (no incluye todavía las fichas de Levítico, Números y Deuteronomio añadidas después).
+179 fichas en `catalogo.json`. 123 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó. El texto reunido para ChatGPT es `PARA-CHATGPT.md` (no incluye las fichas añadidas después de Génesis, Éxodo y los Salmos).
 
 | Tipo | Fichas |
 | --- | ---: |
-| Arte | 84 |
-| Arqueología | 19 |
-| Mapas antiguos | 14 |
-| Video | 15 |
-| Audio | 6 |
+| Arte | 107 |
+| Arqueología | 20 |
+| Mapas antiguos | 16 |
+| Video | 20 |
+| Audio | 12 |
 | Reconstrucción | 4 |
 
-Referencias (una ficha puede citar más de un libro): Génesis 48, Éxodo 48, Salmos 6.
+Referencias (una ficha puede citar más de un libro): Génesis 59, Éxodo 58, Levítico 4, Números 21, Deuteronomio 6, Josué 22, Jueces 14, Rut 8, Salmos 6.
 
 | Uso | Fichas |
 | --- | ---: |
-| Descargable (98 imágenes locales y 5 audios de LibriVox, sin archivo de audio guardado) | 103 |
-| Solo enlace | 28 |
-| Incrustable (YouTube respondió al oEmbed con título y canal) | 11 |
+| Descargable (123 imágenes locales y 11 audios de LibriVox, sin archivo de audio guardado) | 134 |
+| Solo enlace | 30 |
+| Incrustable (YouTube respondió al oEmbed con título y canal) | 15 |
 
 | Licencia | Fichas |
 | --- | ---: |
-| Dominio público | 71 |
-| CC BY-SA 4.0 | 28 |
-| desconocida | 18 |
-| Derechos reservados | 18 |
-| CC0 | 4 |
+| Dominio público | 93 |
+| CC BY-SA 4.0 | 34 |
+| Derechos reservados | 23 |
+| desconocida | 19 |
+| CC0 | 7 |
 | CC BY-SA 3.0 | 2 |
 | CC BY 4.0 | 1 |
 
@@ -56,6 +56,7 @@ No hay descargas con NC, ND o derechos reservados. Las fichas del British Museum
 - Las duraciones de los videos se dejaron vacías: figuraban en bibleproject.com, pero no se volvieron a cronometrar. Las de LibriVox sí se leyeron en la página del audiolibro.
 - Mapas de la Library of Congress, la BNE, Gallica y David Rumsey: solo enlace. En la LoC la ficha dice que no conoce restricciones de copyright en Estados Unidos para mapas anteriores a 1922; no se pudo bajar el JPEG. En la BNE y en Rumsey la ficha consultada no cede una licencia abierta explícita.
 - La datación del éxodo (siglo XV a. C., siglo XIII a. C., o relato no histórico en esos términos) está en `contexto-historico.md` como debate, no como fecha.
+- Josué, Jueces y Rut: no fiché Schnorr (esas búsquedas no devolvieron láminas). El mapa de Madaba tiene fotos en Commons con CC BY-SA 3.0, pero no comprobé qué fragmento muestra Jericó, Guilgal o Belén, y no lo fiché. No abrí una ficha de cerámica filistea: la crátera del British Museum 160152 es bícroma del Bronce tardío I, de Laquis, no filistea. Tel es-Sultan, et-Tell, Hazor, Silo, Gabaón, Tel Qasile y Belén quedaron sin ficha (la API de categorías de Commons respondió 429). Siquem (EA 252) y la estela de Merneptah ya estaban en el catálogo, con refs de Génesis y de Éxodo; no las dupliqué. No hay video por capítulo. En la guía de Superbook que abrí no apareció un episodio de Sansón. Los panoramas de Josué y de Jueces de Proyecto Biblia no se repiten: oEmbed confirmó que son `49ggVrdBN_Y` y `bCwaJz4L2nU`. La página en español de Rut no traía id de YouTube.
 
 ## Material de trabajo
 
@@ -264,3 +265,66 @@ No se pudo abrir una ficha de museo de la inscripción de Deir Alla (Balaam): so
 Sin video de pasaje: Gn 2, Gn 3, Gn 4, Gn 5, Gn 6, Gn 7, Gn 8, Gn 9, Gn 10, Gn 11, Gn 12, Gn 13, Gn 14, Gn 15, Gn 16, Gn 17, Gn 18, Gn 19, Gn 20, Gn 21, Gn 22, Gn 23, Gn 24, Gn 25, Gn 26, Gn 27, Gn 28, Gn 29, Gn 30, Gn 31, Gn 32, Gn 33, Gn 34, Gn 35, Gn 36, Gn 37, Gn 38, Gn 39, Gn 40, Gn 41, Gn 42, Gn 43, Gn 44, Gn 45, Gn 46, Gn 47, Gn 48, Gn 49, Gn 50, Ex 1, Ex 2, Ex 3, Ex 4, Ex 5, Ex 6, Ex 7, Ex 8, Ex 9, Ex 10, Ex 11, Ex 12, Ex 13, Ex 14, Ex 15, Ex 16, Ex 17, Ex 18, Ex 19, Ex 20, Ex 21, Ex 22, Ex 23, Ex 24, Ex 25, Ex 26, Ex 27, Ex 28, Ex 29, Ex 30, Ex 31, Ex 32, Ex 33, Ex 34, Ex 35, Ex 36, Ex 37, Ex 38, Ex 39, Ex 40, Lv 1, Lv 2, Lv 3, Lv 4, Lv 5, Lv 6, Lv 7, Lv 8, Lv 9, Lv 10, Lv 11, Lv 12, Lv 13, Lv 14, Lv 15, Lv 16, Lv 17, Lv 18, Lv 19, Lv 20, Lv 21, Lv 22, Lv 23, Lv 24, Lv 25, Lv 26, Lv 27, Nm 1, Nm 2, Nm 3, Nm 4, Nm 5, Nm 6, Nm 7, Nm 8, Nm 9, Nm 10, Nm 11, Nm 12, Nm 13, Nm 14, Nm 15, Nm 16, Nm 17, Nm 18, Nm 19, Nm 20, Nm 21, Nm 22, Nm 23, Nm 24, Nm 25, Nm 26, Nm 27, Nm 28, Nm 29, Nm 30, Nm 31, Nm 32, Nm 33, Nm 34, Nm 35, Nm 36, Dt 1, Dt 2, Dt 3, Dt 4, Dt 5, Dt 7, Dt 8, Dt 9, Dt 10, Dt 11, Dt 12, Dt 13, Dt 14, Dt 15, Dt 16, Dt 17, Dt 18, Dt 19, Dt 20, Dt 21, Dt 22, Dt 23, Dt 24, Dt 25, Dt 26, Dt 27, Dt 28, Dt 29, Dt 30, Dt 31, Dt 32, Dt 33, Dt 34
 
 Sin imagen: Gn 5, Gn 6, Gn 13, Gn 14, Gn 17, Gn 20, Gn 26, Gn 30, Gn 31, Gn 35, Gn 36, Gn 42, Gn 43, Gn 48, Ex 11, Ex 21, Ex 22, Ex 23, Ex 24, Ex 28, Ex 29, Ex 33, Ex 34, Lv 1, Lv 2, Lv 3, Lv 4, Lv 5, Lv 6, Lv 7, Lv 8, Lv 9, Lv 11, Lv 12, Lv 13, Lv 14, Lv 15, Lv 16, Lv 17, Lv 18, Lv 19, Lv 20, Lv 21, Lv 22, Lv 23, Lv 24, Lv 25, Lv 26, Lv 27, Nm 1, Nm 2, Nm 3, Nm 4, Nm 5, Nm 6, Nm 7, Nm 8, Nm 9, Nm 10, Nm 11, Nm 14, Nm 15, Nm 18, Nm 19, Nm 23, Nm 25, Nm 26, Nm 27, Nm 28, Nm 29, Nm 30, Nm 31, Nm 32, Nm 33, Nm 34, Nm 35, Nm 36, Dt 1, Dt 2, Dt 3, Dt 4, Dt 5, Dt 6, Dt 7, Dt 8, Dt 9, Dt 10, Dt 11, Dt 12, Dt 13, Dt 14, Dt 15, Dt 16, Dt 17, Dt 18, Dt 19, Dt 20, Dt 21, Dt 22, Dt 23, Dt 24, Dt 25, Dt 26, Dt 27, Dt 28, Dt 29, Dt 30, Dt 31, Dt 32, Dt 33
+
+## Cobertura por capítulo (Jos 1 a Rut 4)
+
+Misma regla que arriba: una imagen cuenta si el archivo está en `imagenes/` y la ficha cita ese capítulo; un video cuenta si sus refs cubren el capítulo y no más de ocho. El mapa de Goeree ya fichado cita `Jos 1-12` entero, así que Jos 2, 9 y 12 tienen lámina local solo por ese mapa general, no por una escena del capítulo. Jos 3 y 4, además, tienen el mapa de MacCoun del paso del Jordán (1899). Los mapas de tribus de la Library of Congress, la BNE y otros siguen en solo enlace y no cuentan como lámina local.
+
+Con escena de esta tanda (arte): Jos 1, 5, 6, 7, 8, 10 y 11; Jue 3, 4, 5, 7, 9, 11, 13, 14 y 16; Rut 1 y 2. Sin lámina local: Jos 13–24; Jue 1, 2, 6, 8, 10, 12, 15 y 17–21; Rut 3 y 4. Jue 6 y 8 tienen video de la historia de Gedeón y no tienen imagen. Rut 3 y 4 tienen video del libro o del episodio, y no tienen imagen.
+
+| Capítulo | Videos de pasaje | Imágenes |
+| --- | ---: | ---: |
+| Jos 1 | 0 | 2 |
+| Jos 2 | 1 | 1 |
+| Jos 3 | 0 | 3 |
+| Jos 4 | 0 | 2 |
+| Jos 5 | 1 | 2 |
+| Jos 6 | 1 | 3 |
+| Jos 7 | 0 | 2 |
+| Jos 8 | 0 | 2 |
+| Jos 9 | 0 | 1 |
+| Jos 10 | 0 | 4 |
+| Jos 11 | 0 | 3 |
+| Jos 12 | 0 | 1 |
+| Jos 13 | 0 | 0 |
+| Jos 14 | 0 | 0 |
+| Jos 15 | 0 | 0 |
+| Jos 16 | 0 | 0 |
+| Jos 17 | 0 | 0 |
+| Jos 18 | 0 | 0 |
+| Jos 19 | 0 | 0 |
+| Jos 20 | 0 | 0 |
+| Jos 21 | 0 | 0 |
+| Jos 22 | 0 | 0 |
+| Jos 23 | 0 | 0 |
+| Jos 24 | 0 | 0 |
+| Jue 1 | 0 | 0 |
+| Jue 2 | 0 | 0 |
+| Jue 3 | 0 | 1 |
+| Jue 4 | 0 | 3 |
+| Jue 5 | 0 | 1 |
+| Jue 6 | 1 | 0 |
+| Jue 7 | 1 | 1 |
+| Jue 8 | 1 | 0 |
+| Jue 9 | 0 | 1 |
+| Jue 10 | 0 | 0 |
+| Jue 11 | 0 | 1 |
+| Jue 12 | 0 | 0 |
+| Jue 13 | 0 | 1 |
+| Jue 14 | 0 | 1 |
+| Jue 15 | 0 | 0 |
+| Jue 16 | 0 | 4 |
+| Jue 17 | 0 | 0 |
+| Jue 18 | 0 | 0 |
+| Jue 19 | 0 | 0 |
+| Jue 20 | 0 | 0 |
+| Jue 21 | 0 | 0 |
+| Rut 1 | 3 | 2 |
+| Rut 2 | 3 | 1 |
+| Rut 3 | 3 | 0 |
+| Rut 4 | 3 | 0 |
+
+Sin video de pasaje: Jos 1, Jos 3, Jos 4, Jos 7, Jos 8, Jos 9, Jos 10, Jos 11, Jos 12, Jos 13, Jos 14, Jos 15, Jos 16, Jos 17, Jos 18, Jos 19, Jos 20, Jos 21, Jos 22, Jos 23, Jos 24, Jue 1, Jue 2, Jue 3, Jue 4, Jue 5, Jue 9, Jue 10, Jue 11, Jue 12, Jue 13, Jue 14, Jue 15, Jue 16, Jue 17, Jue 18, Jue 19, Jue 20, Jue 21
+
+Sin imagen: Jos 13, Jos 14, Jos 15, Jos 16, Jos 17, Jos 18, Jos 19, Jos 20, Jos 21, Jos 22, Jos 23, Jos 24, Jue 1, Jue 2, Jue 6, Jue 8, Jue 10, Jue 12, Jue 15, Jue 17, Jue 18, Jue 19, Jue 20, Jue 21, Rut 3, Rut 4
+

@@ -47,3 +47,21 @@ Licencias verificadas en Commons por API (Doré 16 y 22 dominio público; Tissot
 - AJUSTAR: `tissot-nm-24-balaam` -> refs `Nm 23:1-3`, `Nm 24:1-3` (siete altares son de Nm 23:1-2).
 - Sin imagen (OK, solo enlace): `ketef-hinnom-bendicion-sacerdotal`, `papiro-nash-cul-or-233`, `rylands-greek-p-458`, `ebal-estructura-zertal` (identificación como altar es tesis debatida; Jos 8:30-35 fuera del corpus cargado).
 - Sensibles nuevas: 2 (`dore-nm-16-core`, `dore-nm-21-serpiente`).
+
+## Cuarta tanda (Josué, Jueces, Rut): 37 fichas
+
+Licencias leídas en la API de Commons, en la ficha del Walters (CC0) y en las páginas de LibriVox, BibleProject, Superbook y el British Museum. Las 25 imágenes nuevas están en JPG, lado máximo 1600 px y menos de 400 KB.
+
+- Escena violenta en la descripción (para el perfil niño): Jael (Doré y Walters), la hoja del Rijks (Aod y Jael), Hai en llamas, los cinco reyes, los anaquitas, la muerte de Sansón, la ficha de Dagón y la muerte de Abimelec. Débora y la lámina de Dalila no muestran la muerte ni el corte del pelo.
+- Videos con oEmbed: Superbook Rahab/Jericó `BYANFchuQeQ`, Gedeón `wTglXGJ0xxo`, Rut `jLhVTd-6oE4` (canal @SuperbookTV); BibleProject Rut en inglés `0h1eoBeR4Jk`. No se repitieron `49ggVrdBN_Y` ni `bCwaJz4L2nU`. La página en español de Rut quedó solo enlace: el HTML no traía id de YouTube.
+- Solo enlace, además: crátera de Laquis BM 160152 (la ficha no muestra licencia). La duración de Josué en español se fichó como 02:08:02, suma de las 24 secciones; la cabecera de LibriVox dice 00:25:33 y no cuadra con la tabla ni con el zip de 61 MB.
+
+
+### Revisión con Claude (2026-11-12): 37 fichas, 36 OK, 1 AJUSTAR, 0 RECHAZAR
+
+Las 25 imágenes se vieron una a una. Licencias releídas en la API de Commons (Doré, Tissot/Medhurst CC BY-SA 4.0, Met y Rijksmuseum CC0, mapas MacCoun). Walters y British Museum devuelven 403 al script: sin releer. Videos con oEmbed 200 y canal correcto; las 6 páginas de LibriVox y la de BibleProject en español existen.
+
+- AJUSTAR `gorguet-rut-1-fuente` -> Rut 1:19-21: son mujeres en el pozo mirando a una viajera con asno (llegada de Noemí); Rut 1:1-7 no lo narra.
+- Sensibles (true, 9): `dore-jos-6-muros-jerico`, `dore-jos-6-rahab`, `dore-jue-9-abimelec`, `dore-jue-16-muerte-sanson`, `tissot-jos-10-cinco-reyes`, `tissot-jos-11-gigantes`, `walters-jue-4-jael-reymond`, `rijks-jue-cuatro-escenas-1698`.
+- No sensibles pese a su tema: `dore-jue-4-jael` (sin sangre ni estaca), `dore-jos-8-hai` (solo humo y fuego lejano), `dore-jos-10-sol`, `met-jue-16-ficha-sanson`.
+- Mapa de campañas: la imagen dice «West of Jordan» y la descripción «Jordon».

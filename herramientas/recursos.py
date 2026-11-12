@@ -36,7 +36,9 @@ SALIDA = os.path.join(RAIZ, 'datos', 'recursos.js')
 CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal',
          'Pr', 'Ec', 'Cnt', 'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal']
 ORD = {b: i + 1 for i, b in enumerate(CANON)}
-ENLAZABLES = ('Gn', 'Ex', 'Lv', 'Nm', 'Dt')
+ENLAZABLES = ('Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt')
+# biblia.js usa «Rut»; app.js y la clave usan el id canónico «Rt».
+ALIAS = {'Rut': 'Rt'}
 TIPOS = ('arte', 'arqueologia', 'mapa_antiguo', 'video', 'audio', 'reconstruccion', 'ilustracion')
 USOS = ('descargable', 'solo_enlace', 'incrustable')
 RESTRINGIDAS = ('desconocida', 'derechos reservados')
@@ -59,7 +61,7 @@ def versiculos_por_cap(d):
     out = {}
     for c in d.get('capitulos', []):
         vs = [v['n'] for v in c.get('versiculos', [])]
-        out[(c['libro'], int(c['cap']))] = max(vs) if vs else 0
+        out[(ALIAS.get(c['libro'], c['libro']), int(c['cap']))] = max(vs) if vs else 0
     return out
 
 
@@ -69,6 +71,7 @@ def rango(ref, vmax):
     if not m:
         return None, None, None, f'ref ilegible «{ref}»'
     lb, c1, v1, c2, v2 = m.group(1), int(m.group(2)), m.group(3), m.group(4), m.group(5)
+    lb = ALIAS.get(lb, lb)
     if lb not in ORD:
         return None, None, None, f'libro desconocido en «{ref}»'
     if lb not in ENLAZABLES:
