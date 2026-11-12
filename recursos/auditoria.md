@@ -37,3 +37,13 @@ Tissot / archivo Phillip Medhurst: `tissot-gn-15-abram-aves`, `tissot-gn-16-sara
 ## Campo `sensible` (perfil niño)
 
 Marcadas `sensible: true` (12): `dore-gn-4-cain-mata-abel`, `dore-gn-7-diluvio`, `dore-gn-8-paloma-del-arca`, `dore-gn-19-lot-huye-sodoma`, `schnorr-gn-22-sacrificio-isaac` (cuchillo sobre niño atado), `tissot-gn-34-dina`, `tissot-gn-39-mujer-potifar`, `dore-ex-9-plaga-ganado`, `dore-ex-10-plaga-tinieblas`, `dore-ex-12-muerte-primogenitos`, `dore-ex-14-egipcios-ahogados`, `schnorr-ex-32-becerro-oro`. El resto de fichas con imagen: `false` (criterio: la imagen, no el capítulo; p. ej. Tamar y Judá, la Eva de Doré y los bocetos de Ex 32 de Doré/Tissot no muestran nada inapropiado).
+
+## Tercera tanda (18 fichas: Lv, Nm, Dt): 17 OK, 1 AJUSTAR, 0 RECHAZAR
+
+Licencias verificadas en Commons por API (Doré 16 y 22 dominio público; Tissot Lv 10, Nm 13, Nm 17 y Dt 34 CC BY-SA 4.0, autor del archivo Phillip Medhurst, 1904). Las 4 sin imagen no se descargan; sus enlaces responden (algunos bloquean bots, 403).
+
+- Doré (dominio público): `dore-nm-16-core` (sensible: tragados por la tierra), `dore-nm-13-exploradores`, `dore-nm-21-serpiente` (sensible: muchos muertos; poste en forma de cruz, licencia artística), `dore-nm-22-balaam`.
+- Tissot (CC BY-SA 4.0): `tissot-lv-10-nadab`, `tissot-nm-13-racimos`, `tissot-nm-12-miriam`, `tissot-nm-17-vara-aaron`, `tissot-nm-20-agua`, `tissot-nm-20-muerte-aaron`, `tissot-nm-21-serpiente`, `tissot-nm-22-asna`, `tissot-dt-34-muerte-moises`: OK, `sensible: false` (muertes sin sangre ni desnudez).
+- AJUSTAR: `tissot-nm-24-balaam` -> refs `Nm 23:1-3`, `Nm 24:1-3` (siete altares son de Nm 23:1-2).
+- Sin imagen (OK, solo enlace): `ketef-hinnom-bendicion-sacerdotal`, `papiro-nash-cul-or-233`, `rylands-greek-p-458`, `ebal-estructura-zertal` (identificación como altar es tesis debatida; Jos 8:30-35 fuera del corpus cargado).
+- Sensibles nuevas: 2 (`dore-nm-16-core`, `dore-nm-21-serpiente`).

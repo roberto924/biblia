@@ -36,7 +36,7 @@ SALIDA = os.path.join(RAIZ, 'datos', 'recursos.js')
 CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal',
          'Pr', 'Ec', 'Cnt', 'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal']
 ORD = {b: i + 1 for i, b in enumerate(CANON)}
-ENLAZABLES = ('Gn', 'Ex')
+ENLAZABLES = ('Gn', 'Ex', 'Lv', 'Nm', 'Dt')
 TIPOS = ('arte', 'arqueologia', 'mapa_antiguo', 'video', 'audio', 'reconstruccion', 'ilustracion')
 USOS = ('descargable', 'solo_enlace', 'incrustable')
 RESTRINGIDAS = ('desconocida', 'derechos reservados')
@@ -136,6 +136,9 @@ def main():
         aud, auditado = {}, False
         print('AVISO: no existe recursos/auditoria.json; todas las fichas quedan «sin auditar».')
     vmax = versiculos_por_cap(leer_js(BIBLIA))
+    ruta_orig = os.path.join(RAIZ, 'datos', 'originales.js')
+    videos_originales = ({v['youtube_id'] for v in leer_js(ruta_orig).get('videos', [])}
+                         if os.path.exists(ruta_orig) else set())
 
     errores, salida, excluidas = [], [], []
     ids = set()
@@ -198,6 +201,9 @@ def main():
             if mt:
                 yt = mt.group(1)
                 break
+        if yt and yt in videos_originales:  # ya se muestra como video del libro (datos/originales.js)
+            excluidas.append({'id': fid, 'motivo': f'video {yt} ya está en datos/originales.js'})
+            continue
         modo = 'imagen' if imagen else ('incrustable' if uso == 'incrustable' and yt else 'enlace')
         caps = {(CANON[ka // 1_000_000 - 1], c) for ka, kb in rangos for c in range((ka // 1000) % 1000, (kb // 1000) % 1000 + 1)}
         sensible = bool(imagen) and tipo != 'mapa_antiguo' and (fid in SENSIBLE_IDS or bool(caps & SENSIBLE_CAPS))
@@ -233,7 +239,7 @@ def main():
         fo.write(';\n')
     imgs = sum(1 for x in salida if x['imagen'])
     enl = sum(1 for x in salida if x['rangos'])
-    print(f'{len(salida)} fichas mostradas ({imgs} con imagen local, {enl} enlazadas a Gn/Ex), '
+    print(f'{len(salida)} fichas mostradas ({imgs} con imagen local, {enl} enlazadas a {"/".join(ENLAZABLES)}), '
           f'{len(excluidas)} excluidas · auditado: {"sí" if auditado else "no"} → {os.path.relpath(SALIDA, RAIZ)} '
           f'({os.path.getsize(SALIDA) // 1024} KB)')
 

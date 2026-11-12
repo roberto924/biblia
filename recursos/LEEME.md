@@ -6,14 +6,14 @@ Las 13 secciones de lectura del plan (6 de Génesis y 7 de Éxodo) tienen al men
 
 ## Totales
 
-119 fichas en `catalogo.json`. 84 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó: aunque LibriVox lo declara descargable, aquí solo queda el enlace. El texto reunido para ChatGPT es `PARA-CHATGPT.md`, en esta misma carpeta.
+142 fichas en `catalogo.json`. 98 imágenes en `imagenes/` (JPG, lado máximo 1600 px, menos de 400 KB). El audio no se descargó. El texto reunido para ChatGPT es `PARA-CHATGPT.md` (no incluye todavía las fichas de Levítico, Números y Deuteronomio añadidas después).
 
 | Tipo | Fichas |
 | --- | ---: |
-| Arte | 70 |
-| Arqueología | 15 |
+| Arte | 84 |
+| Arqueología | 19 |
 | Mapas antiguos | 14 |
-| Video | 10 |
+| Video | 15 |
 | Audio | 6 |
 | Reconstrucción | 4 |
 
@@ -21,16 +21,16 @@ Referencias (una ficha puede citar más de un libro): Génesis 48, Éxodo 48, Sa
 
 | Uso | Fichas |
 | --- | ---: |
-| Descargable (84 imágenes locales y 5 audios de LibriVox, sin archivo de audio guardado) | 89 |
-| Solo enlace | 24 |
-| Incrustable (YouTube respondió al oEmbed con título y canal «Proyecto Biblia») | 6 |
+| Descargable (98 imágenes locales y 5 audios de LibriVox, sin archivo de audio guardado) | 103 |
+| Solo enlace | 28 |
+| Incrustable (YouTube respondió al oEmbed con título y canal) | 11 |
 
 | Licencia | Fichas |
 | --- | ---: |
-| Dominio público | 67 |
-| Desconocida | 16 |
-| Derechos reservados | 11 |
-| CC BY-SA 4.0 | 18 |
+| Dominio público | 71 |
+| CC BY-SA 4.0 | 28 |
+| desconocida | 18 |
+| Derechos reservados | 18 |
 | CC0 | 4 |
 | CC BY-SA 3.0 | 2 |
 | CC BY 4.0 | 1 |
@@ -60,3 +60,207 @@ No hay descargas con NC, ND o derechos reservados. Las fichas del British Museum
 ## Material de trabajo
 
 `recursos/_trabajo/` guarda las búsquedas y los borradores. El catálogo que vale es `catalogo.json`.
+
+## Cobertura por capítulo (Gn 1 a Dt 34)
+
+Un video cuenta en un capítulo solo si sus referencias cubren ese capítulo y no más de ocho. Los panoramas de un libro entero (Levítico, Números, Deuteronomio, y los de Génesis y Éxodo ya fichados) no se reparten capítulo por capítulo: explican el libro, no el capítulo. Una imagen cuenta si el archivo está en imagenes/ y la ficha cita ese capítulo.
+
+Proyecto Biblia no publica un video por capítulo de la Torá. Lo que hay, comprobado con oEmbed en el canal «Proyecto Biblia», son panoramas y dos episodios de la serie de la Torá. No se ficharon resubidas ni canales sin autor.
+
+Capítulos de Levítico, Números y Deuteronomio con lámina local: Lv 10; Nm 12, 13, 16, 17, 20, 21, 22 y 24; Dt 34. El resto de esos libros no tenía, en Doré o en Tissot, una lámina cuyo pie citara el capítulo, o la escena era una lista o una ley sin grabado localizado.
+
+No se pudo abrir una ficha de museo de la inscripción de Deir Alla (Balaam): solo apareció Wikipedia, y no se usó. La serpiente de cobre de Timna se menciona en un artículo académico como ofrenda de un santuario madianita, no como la serpiente de Moisés; no hay foto con licencia abierta, y no se fichó. El altar del monte Ebal sí se fichó como relación debatida, sin imagen.
+
+| Capítulo | Videos de pasaje | Imágenes |
+| --- | ---: | ---: |
+| Gn 1 | 1 | 1 |
+| Gn 2 | 0 | 1 |
+| Gn 3 | 0 | 1 |
+| Gn 4 | 0 | 1 |
+| Gn 5 | 0 | 0 |
+| Gn 6 | 0 | 0 |
+| Gn 7 | 0 | 1 |
+| Gn 8 | 0 | 1 |
+| Gn 9 | 0 | 1 |
+| Gn 10 | 0 | 2 |
+| Gn 11 | 0 | 2 |
+| Gn 12 | 0 | 2 |
+| Gn 13 | 0 | 0 |
+| Gn 14 | 0 | 0 |
+| Gn 15 | 0 | 1 |
+| Gn 16 | 0 | 1 |
+| Gn 17 | 0 | 0 |
+| Gn 18 | 0 | 1 |
+| Gn 19 | 0 | 1 |
+| Gn 20 | 0 | 0 |
+| Gn 21 | 0 | 1 |
+| Gn 22 | 0 | 1 |
+| Gn 23 | 0 | 1 |
+| Gn 24 | 0 | 1 |
+| Gn 25 | 0 | 1 |
+| Gn 26 | 0 | 0 |
+| Gn 27 | 0 | 1 |
+| Gn 28 | 0 | 1 |
+| Gn 29 | 0 | 1 |
+| Gn 30 | 0 | 0 |
+| Gn 31 | 0 | 0 |
+| Gn 32 | 0 | 1 |
+| Gn 33 | 0 | 1 |
+| Gn 34 | 0 | 1 |
+| Gn 35 | 0 | 0 |
+| Gn 36 | 0 | 0 |
+| Gn 37 | 0 | 3 |
+| Gn 38 | 0 | 1 |
+| Gn 39 | 0 | 1 |
+| Gn 40 | 0 | 1 |
+| Gn 41 | 0 | 1 |
+| Gn 42 | 0 | 0 |
+| Gn 43 | 0 | 0 |
+| Gn 44 | 0 | 1 |
+| Gn 45 | 0 | 1 |
+| Gn 46 | 0 | 1 |
+| Gn 47 | 0 | 1 |
+| Gn 48 | 0 | 0 |
+| Gn 49 | 0 | 1 |
+| Gn 50 | 0 | 1 |
+| Ex 1 | 0 | 1 |
+| Ex 2 | 0 | 1 |
+| Ex 3 | 0 | 1 |
+| Ex 4 | 0 | 1 |
+| Ex 5 | 0 | 1 |
+| Ex 6 | 0 | 1 |
+| Ex 7 | 0 | 1 |
+| Ex 8 | 0 | 1 |
+| Ex 9 | 0 | 1 |
+| Ex 10 | 0 | 1 |
+| Ex 11 | 0 | 0 |
+| Ex 12 | 0 | 2 |
+| Ex 13 | 0 | 1 |
+| Ex 14 | 0 | 2 |
+| Ex 15 | 0 | 1 |
+| Ex 16 | 0 | 1 |
+| Ex 17 | 0 | 2 |
+| Ex 18 | 0 | 1 |
+| Ex 19 | 0 | 2 |
+| Ex 20 | 0 | 2 |
+| Ex 21 | 0 | 0 |
+| Ex 22 | 0 | 0 |
+| Ex 23 | 0 | 0 |
+| Ex 24 | 0 | 0 |
+| Ex 25 | 0 | 5 |
+| Ex 26 | 0 | 2 |
+| Ex 27 | 0 | 3 |
+| Ex 28 | 0 | 0 |
+| Ex 29 | 0 | 0 |
+| Ex 30 | 0 | 1 |
+| Ex 31 | 0 | 1 |
+| Ex 32 | 0 | 4 |
+| Ex 33 | 0 | 0 |
+| Ex 34 | 0 | 0 |
+| Ex 35 | 0 | 1 |
+| Ex 36 | 0 | 1 |
+| Ex 37 | 0 | 3 |
+| Ex 38 | 0 | 1 |
+| Ex 39 | 0 | 1 |
+| Ex 40 | 0 | 3 |
+| Lv 1 | 0 | 0 |
+| Lv 2 | 0 | 0 |
+| Lv 3 | 0 | 0 |
+| Lv 4 | 0 | 0 |
+| Lv 5 | 0 | 0 |
+| Lv 6 | 0 | 0 |
+| Lv 7 | 0 | 0 |
+| Lv 8 | 0 | 0 |
+| Lv 9 | 0 | 0 |
+| Lv 10 | 0 | 1 |
+| Lv 11 | 0 | 0 |
+| Lv 12 | 0 | 0 |
+| Lv 13 | 0 | 0 |
+| Lv 14 | 0 | 0 |
+| Lv 15 | 0 | 0 |
+| Lv 16 | 0 | 0 |
+| Lv 17 | 0 | 0 |
+| Lv 18 | 0 | 0 |
+| Lv 19 | 0 | 0 |
+| Lv 20 | 0 | 0 |
+| Lv 21 | 0 | 0 |
+| Lv 22 | 0 | 0 |
+| Lv 23 | 0 | 0 |
+| Lv 24 | 0 | 0 |
+| Lv 25 | 0 | 0 |
+| Lv 26 | 0 | 0 |
+| Lv 27 | 0 | 0 |
+| Nm 1 | 0 | 0 |
+| Nm 2 | 0 | 0 |
+| Nm 3 | 0 | 0 |
+| Nm 4 | 0 | 0 |
+| Nm 5 | 0 | 0 |
+| Nm 6 | 0 | 0 |
+| Nm 7 | 0 | 0 |
+| Nm 8 | 0 | 0 |
+| Nm 9 | 0 | 0 |
+| Nm 10 | 0 | 0 |
+| Nm 11 | 0 | 0 |
+| Nm 12 | 0 | 1 |
+| Nm 13 | 0 | 2 |
+| Nm 14 | 0 | 0 |
+| Nm 15 | 0 | 0 |
+| Nm 16 | 0 | 1 |
+| Nm 17 | 0 | 1 |
+| Nm 18 | 0 | 0 |
+| Nm 19 | 0 | 0 |
+| Nm 20 | 0 | 2 |
+| Nm 21 | 0 | 2 |
+| Nm 22 | 0 | 2 |
+| Nm 23 | 0 | 0 |
+| Nm 24 | 0 | 1 |
+| Nm 25 | 0 | 0 |
+| Nm 26 | 0 | 0 |
+| Nm 27 | 0 | 0 |
+| Nm 28 | 0 | 0 |
+| Nm 29 | 0 | 0 |
+| Nm 30 | 0 | 0 |
+| Nm 31 | 0 | 0 |
+| Nm 32 | 0 | 0 |
+| Nm 33 | 0 | 0 |
+| Nm 34 | 0 | 0 |
+| Nm 35 | 0 | 0 |
+| Nm 36 | 0 | 0 |
+| Dt 1 | 0 | 0 |
+| Dt 2 | 0 | 0 |
+| Dt 3 | 0 | 0 |
+| Dt 4 | 0 | 0 |
+| Dt 5 | 0 | 0 |
+| Dt 6 | 1 | 0 |
+| Dt 7 | 0 | 0 |
+| Dt 8 | 0 | 0 |
+| Dt 9 | 0 | 0 |
+| Dt 10 | 0 | 0 |
+| Dt 11 | 0 | 0 |
+| Dt 12 | 0 | 0 |
+| Dt 13 | 0 | 0 |
+| Dt 14 | 0 | 0 |
+| Dt 15 | 0 | 0 |
+| Dt 16 | 0 | 0 |
+| Dt 17 | 0 | 0 |
+| Dt 18 | 0 | 0 |
+| Dt 19 | 0 | 0 |
+| Dt 20 | 0 | 0 |
+| Dt 21 | 0 | 0 |
+| Dt 22 | 0 | 0 |
+| Dt 23 | 0 | 0 |
+| Dt 24 | 0 | 0 |
+| Dt 25 | 0 | 0 |
+| Dt 26 | 0 | 0 |
+| Dt 27 | 0 | 0 |
+| Dt 28 | 0 | 0 |
+| Dt 29 | 0 | 0 |
+| Dt 30 | 0 | 0 |
+| Dt 31 | 0 | 0 |
+| Dt 32 | 0 | 0 |
+| Dt 33 | 0 | 0 |
+| Dt 34 | 0 | 1 |
+
+Sin video de pasaje: Gn 2, Gn 3, Gn 4, Gn 5, Gn 6, Gn 7, Gn 8, Gn 9, Gn 10, Gn 11, Gn 12, Gn 13, Gn 14, Gn 15, Gn 16, Gn 17, Gn 18, Gn 19, Gn 20, Gn 21, Gn 22, Gn 23, Gn 24, Gn 25, Gn 26, Gn 27, Gn 28, Gn 29, Gn 30, Gn 31, Gn 32, Gn 33, Gn 34, Gn 35, Gn 36, Gn 37, Gn 38, Gn 39, Gn 40, Gn 41, Gn 42, Gn 43, Gn 44, Gn 45, Gn 46, Gn 47, Gn 48, Gn 49, Gn 50, Ex 1, Ex 2, Ex 3, Ex 4, Ex 5, Ex 6, Ex 7, Ex 8, Ex 9, Ex 10, Ex 11, Ex 12, Ex 13, Ex 14, Ex 15, Ex 16, Ex 17, Ex 18, Ex 19, Ex 20, Ex 21, Ex 22, Ex 23, Ex 24, Ex 25, Ex 26, Ex 27, Ex 28, Ex 29, Ex 30, Ex 31, Ex 32, Ex 33, Ex 34, Ex 35, Ex 36, Ex 37, Ex 38, Ex 39, Ex 40, Lv 1, Lv 2, Lv 3, Lv 4, Lv 5, Lv 6, Lv 7, Lv 8, Lv 9, Lv 10, Lv 11, Lv 12, Lv 13, Lv 14, Lv 15, Lv 16, Lv 17, Lv 18, Lv 19, Lv 20, Lv 21, Lv 22, Lv 23, Lv 24, Lv 25, Lv 26, Lv 27, Nm 1, Nm 2, Nm 3, Nm 4, Nm 5, Nm 6, Nm 7, Nm 8, Nm 9, Nm 10, Nm 11, Nm 12, Nm 13, Nm 14, Nm 15, Nm 16, Nm 17, Nm 18, Nm 19, Nm 20, Nm 21, Nm 22, Nm 23, Nm 24, Nm 25, Nm 26, Nm 27, Nm 28, Nm 29, Nm 30, Nm 31, Nm 32, Nm 33, Nm 34, Nm 35, Nm 36, Dt 1, Dt 2, Dt 3, Dt 4, Dt 5, Dt 7, Dt 8, Dt 9, Dt 10, Dt 11, Dt 12, Dt 13, Dt 14, Dt 15, Dt 16, Dt 17, Dt 18, Dt 19, Dt 20, Dt 21, Dt 22, Dt 23, Dt 24, Dt 25, Dt 26, Dt 27, Dt 28, Dt 29, Dt 30, Dt 31, Dt 32, Dt 33, Dt 34
+
+Sin imagen: Gn 5, Gn 6, Gn 13, Gn 14, Gn 17, Gn 20, Gn 26, Gn 30, Gn 31, Gn 35, Gn 36, Gn 42, Gn 43, Gn 48, Ex 11, Ex 21, Ex 22, Ex 23, Ex 24, Ex 28, Ex 29, Ex 33, Ex 34, Lv 1, Lv 2, Lv 3, Lv 4, Lv 5, Lv 6, Lv 7, Lv 8, Lv 9, Lv 11, Lv 12, Lv 13, Lv 14, Lv 15, Lv 16, Lv 17, Lv 18, Lv 19, Lv 20, Lv 21, Lv 22, Lv 23, Lv 24, Lv 25, Lv 26, Lv 27, Nm 1, Nm 2, Nm 3, Nm 4, Nm 5, Nm 6, Nm 7, Nm 8, Nm 9, Nm 10, Nm 11, Nm 14, Nm 15, Nm 18, Nm 19, Nm 23, Nm 25, Nm 26, Nm 27, Nm 28, Nm 29, Nm 30, Nm 31, Nm 32, Nm 33, Nm 34, Nm 35, Nm 36, Dt 1, Dt 2, Dt 3, Dt 4, Dt 5, Dt 6, Dt 7, Dt 8, Dt 9, Dt 10, Dt 11, Dt 12, Dt 13, Dt 14, Dt 15, Dt 16, Dt 17, Dt 18, Dt 19, Dt 20, Dt 21, Dt 22, Dt 23, Dt 24, Dt 25, Dt 26, Dt 27, Dt 28, Dt 29, Dt 30, Dt 31, Dt 32, Dt 33
