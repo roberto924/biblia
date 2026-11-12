@@ -405,7 +405,8 @@ def lugares_auto(rv, rutas, lugares_previos, avisos, cfg=None):
     for _, d in anc.values():
         mod_ids |= set(d.get("modern_associations", {}))
     mod = lm._leer_jsonl(rutas["ob_modern"], mod_ids)
-    prev_ob = {l["url_fuente"].split("/ancient/")[1].split("/")[0]: l for l in lugares_previos}
+    prev_ob = {l["url_fuente"].split("/ancient/")[1].split("/")[0]: l for l in lugares_previos
+               if "/ancient/" in (l.get("url_fuente") or "")}  # Judá (Rut) no es de OpenBible
     prev_id = {l["id"]: l for l in lugares_previos}
     conf, unir, cand, sin_forma = {}, {}, [], []
     for obid, (_, d) in sorted(anc.items(), key=lambda x: x[1][0]):

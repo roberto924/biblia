@@ -1,0 +1,1185 @@
+{
+ "libro": "Rut",
+ "genealogias": [
+  {
+   "id": "rut-de-fares-a-david",
+   "inicio": "Rut 4:18",
+   "fin": "Rut 4:22",
+   "titulo": "De Fares a David: Fares, Hezrón, Ram, Aminadab, Naasón, Salmón, Booz, Obed, Isaí y David",
+   "cita": "Y estas son las generaciones de Phares"
+  }
+ ],
+ "historias": [
+  {
+   "id": "moab-y-las-muertes",
+   "titulo": "En los campos de Moab: Elimelec, Noemí y sus hijos; las muertes",
+   "inicio": "Rut 1:1",
+   "fin": "Rut 1:5",
+   "principales": [
+    "Elimelech_1",
+    "Naomi_1"
+   ]
+  },
+  {
+   "id": "tu-pueblo-sera-mi-pueblo",
+   "titulo": "«Tu pueblo será mi pueblo»: Noemí vuelve a Belén con Rut; Orfa se queda",
+   "inicio": "Rut 1:6",
+   "fin": "Rut 1:22",
+   "principales": [
+    "Naomi_1",
+    "Ruth_1",
+    "Orpah_1"
+   ]
+  },
+  {
+   "id": "campo-de-booz",
+   "titulo": "Rut espiga en el campo de Booz",
+   "inicio": "Rut 2:1",
+   "fin": "Rut 2:23",
+   "principales": [
+    "Ruth_1",
+    "Boaz_1"
+   ]
+  },
+  {
+   "id": "la-era",
+   "titulo": "En la era: Rut y Booz, «pariente cercano»",
+   "inicio": "Rut 3:1",
+   "fin": "Rut 3:18",
+   "principales": [
+    "Ruth_1",
+    "Boaz_1",
+    "Naomi_1"
+   ]
+  },
+  {
+   "id": "la-puerta-y-el-rescate",
+   "titulo": "La puerta de Belén: el pariente más cercano y el rescate",
+   "inicio": "Rut 4:1",
+   "fin": "Rut 4:12",
+   "principales": [
+    "Boaz_1",
+    "Pariente_de_Rut_4"
+   ]
+  },
+  {
+   "id": "nacimiento-de-obed",
+   "titulo": "Booz toma a Rut y nace Obed",
+   "inicio": "Rut 4:13",
+   "fin": "Rut 4:17",
+   "principales": [
+    "Obed_1",
+    "Naomi_1",
+    "Ruth_1",
+    "Boaz_1"
+   ]
+  },
+  {
+   "id": "generaciones-de-fares",
+   "titulo": "Las generaciones de Fares hasta David",
+   "inicio": "Rut 4:18",
+   "fin": "Rut 4:22",
+   "principales": []
+  }
+ ],
+ "personajes": {
+  "Elimelech_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 1:1",
+     "fin": "Rut 1:3"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 2:1"
+    },
+    {
+     "ref": "Rut 2:3"
+    },
+    {
+     "ref": "Rut 4:3"
+    },
+    {
+     "ref": "Rut 4:9"
+    }
+   ],
+   "resumen": "Varón de Belén de Judá que con su mujer Noemí y sus dos hijos va a vivir a los campos de Moab por el hambre; allí muere.",
+   "datos": [
+    {
+     "texto": "Va a los campos de Moab con su mujer y sus dos hijos",
+     "certeza": "texto",
+     "ref": "Rut 1:1",
+     "cita": "fué á peregrinar en los campos de Moab, él y su mujer, y dos hijos suyos"
+    },
+    {
+     "texto": "Es marido de Noemí",
+     "certeza": "texto",
+     "ref": "Rut 1:2",
+     "cita": "el de su mujer Noemi"
+    },
+    {
+     "texto": "Muere en Moab",
+     "certeza": "texto",
+     "ref": "Rut 1:3",
+     "cita": "murió Elimelech, marido de Noemi"
+    },
+    {
+     "texto": "Booz es de su familia",
+     "certeza": "texto",
+     "ref": "Rut 2:1",
+     "cita": "de la familia de Elimelech"
+    },
+    {
+     "texto": "Sus tierras las vende Noemí; el texto las llama «de nuestro hermano Elimelec»",
+     "certeza": "texto",
+     "ref": "Rut 4:3",
+     "cita": "las tierras que tuvo nuestro hermano Elimelech"
+    }
+   ],
+   "externo": []
+  },
+  "Naomi_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 1:1",
+     "fin": "Rut 1:22"
+    },
+    {
+     "inicio": "Rut 2:1",
+     "fin": "Rut 2:2"
+    },
+    {
+     "inicio": "Rut 2:18",
+     "fin": "Rut 2:23"
+    },
+    {
+     "inicio": "Rut 3:1",
+     "fin": "Rut 3:5"
+    },
+    {
+     "inicio": "Rut 3:16",
+     "fin": "Rut 3:18"
+    },
+    {
+     "inicio": "Rut 4:14",
+     "fin": "Rut 4:17"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 2:6"
+    },
+    {
+     "ref": "Rut 4:3"
+    },
+    {
+     "ref": "Rut 4:5"
+    },
+    {
+     "ref": "Rut 4:9"
+    }
+   ],
+   "resumen": "Mujer de Elimelec; viuda y sin hijos en Moab, vuelve a Belén con su nuera Rut, le ordena el plan de la era y al final toma en su regazo al hijo de Rut y Booz.",
+   "datos": [
+    {
+     "texto": "Mujer de Elimelec, con dos hijos",
+     "certeza": "texto",
+     "ref": "Rut 1:2",
+     "cita": "el de su mujer Noemi"
+    },
+    {
+     "texto": "Vuelve de Moab porque oyó que Jehová había dado pan a su pueblo",
+     "certeza": "texto",
+     "ref": "Rut 1:6",
+     "cita": "que Jehová había visitado á su pueblo para darles pan"
+    },
+    {
+     "texto": "Pide a sus nueras que vuelvan a su casa",
+     "certeza": "texto",
+     "ref": "Rut 1:8",
+     "cita": "Andad, volveos cada una á la casa de su madre"
+    },
+    {
+     "texto": "Se hace llamar Mara por su amargura",
+     "certeza": "texto",
+     "ref": "Rut 1:20",
+     "cita": "llamadme Mara: porque en grande amargura me ha puesto el Todopoderoso"
+    },
+    {
+     "texto": "Reconoce a Booz como pariente y redentor",
+     "certeza": "texto",
+     "ref": "Rut 2:20",
+     "cita": "de nuestros redentores es"
+    },
+    {
+     "texto": "Busca un descanso para Rut",
+     "certeza": "texto",
+     "ref": "Rut 3:1",
+     "cita": "no te tengo de buscar descanso, que te sea bueno"
+    },
+    {
+     "texto": "Toma al niño en su regazo y es su ama",
+     "certeza": "texto",
+     "ref": "Rut 4:16",
+     "cita": "púsolo en su regazo, y fuéle su ama"
+    },
+    {
+     "texto": "Las vecinas dicen que le nace un hijo",
+     "certeza": "texto",
+     "ref": "Rut 4:17",
+     "cita": "A Noemi ha nacido un hijo"
+    }
+   ],
+   "externo": []
+  },
+  "Mahlon_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 1:2",
+     "fin": "Rut 1:5"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:9"
+    },
+    {
+     "ref": "Rut 4:10"
+    }
+   ],
+   "resumen": "Hijo de Elimelec y Noemí; se casa en Moab (su mujer es Rut) y muere allí.",
+   "datos": [
+    {
+     "texto": "Hijo de Elimelec y Noemí",
+     "certeza": "texto",
+     "ref": "Rut 1:2",
+     "cita": "los nombres de sus dos hijos eran, Mahalón y Chelión"
+    },
+    {
+     "texto": "Muere en Moab, junto con su hermano",
+     "certeza": "texto",
+     "ref": "Rut 1:5",
+     "cita": "murieron también los dos, Mahalón y Chelión"
+    },
+    {
+     "texto": "Rut es su mujer",
+     "certeza": "texto",
+     "ref": "Rut 4:10",
+     "cita": "Ruth Moabita, mujer de Mahalón"
+    }
+   ],
+   "externo": []
+  },
+  "Chilion_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 1:2",
+     "fin": "Rut 1:5"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:9"
+    }
+   ],
+   "resumen": "Hijo de Elimelec y Noemí; se casa en Moab y muere allí.",
+   "datos": [
+    {
+     "texto": "Hijo de Elimelec y Noemí",
+     "certeza": "texto",
+     "ref": "Rut 1:2",
+     "cita": "los nombres de sus dos hijos eran, Mahalón y Chelión"
+    },
+    {
+     "texto": "Muere en Moab, junto con su hermano",
+     "certeza": "texto",
+     "ref": "Rut 1:5",
+     "cita": "murieron también los dos, Mahalón y Chelión"
+    },
+    {
+     "texto": "Booz toma de mano de Noemí todo lo que fue suyo",
+     "certeza": "texto",
+     "ref": "Rut 4:9",
+     "cita": "todo lo que fué de Chelión y de Mahalón"
+    },
+    {
+     "texto": "Su mujer sería Orfa: Rut 1:4 no dice quién se casó con quién; 4:10 da a Rut como mujer de Mahlón",
+     "certeza": "inferido",
+     "ref": "Rut 4:10",
+     "cita": "Ruth Moabita, mujer de Mahalón"
+    }
+   ],
+   "externo": []
+  },
+  "Orpah_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 1:4",
+     "fin": "Rut 1:4"
+    },
+    {
+     "inicio": "Rut 1:6",
+     "fin": "Rut 1:14"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Moabita, una de las dos nueras de Noemí; acompaña a Noemí al principio del camino y al final besa a su suegra y se vuelve.",
+   "datos": [
+    {
+     "texto": "Mujer moabita que se casa con uno de los hijos de Noemí",
+     "certeza": "texto",
+     "ref": "Rut 1:4",
+     "cita": "el nombre de la una Orpha"
+    },
+    {
+     "texto": "Quiere volver con Noemí a su pueblo",
+     "certeza": "texto",
+     "ref": "Rut 1:10",
+     "cita": "nosotras volveremos contigo á tu pueblo"
+    },
+    {
+     "texto": "Besa a su suegra y se queda",
+     "certeza": "texto",
+     "ref": "Rut 1:14",
+     "cita": "Orpha besó á su suegra, mas Ruth se quedó con ella"
+    },
+    {
+     "texto": "Noemí dice que se ha vuelto a su pueblo y a sus dioses",
+     "certeza": "texto",
+     "ref": "Rut 1:15",
+     "cita": "tu cuñada se ha vuelto á su pueblo y á sus dioses"
+    }
+   ],
+   "externo": []
+  },
+  "Ruth_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 1:4",
+     "fin": "Rut 1:4"
+    },
+    {
+     "inicio": "Rut 1:6",
+     "fin": "Rut 1:22"
+    },
+    {
+     "inicio": "Rut 2:2",
+     "fin": "Rut 2:23"
+    },
+    {
+     "inicio": "Rut 3:1",
+     "fin": "Rut 3:18"
+    },
+    {
+     "inicio": "Rut 4:13",
+     "fin": "Rut 4:13"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:5"
+    },
+    {
+     "ref": "Rut 4:10"
+    },
+    {
+     "ref": "Rut 4:15"
+    }
+   ],
+   "resumen": "Moabita, viuda de Mahlón: se queda con Noemí, espiga en el campo de Booz, va a la era y se casa con Booz; su hijo es Obed.",
+   "datos": [
+    {
+     "texto": "Moabita, mujer de uno de los hijos de Noemí",
+     "certeza": "texto",
+     "ref": "Rut 1:4",
+     "cita": "el nombre de la otra Ruth"
+    },
+    {
+     "texto": "Declara que se queda con Noemí, su pueblo y su Dios",
+     "certeza": "texto",
+     "ref": "Rut 1:16",
+     "cita": "Tu pueblo será mi pueblo, y tu Dios mi Dios"
+    },
+    {
+     "texto": "Pide ir a espigar tras los segadores",
+     "certeza": "texto",
+     "ref": "Rut 2:2",
+     "cita": "cogeré espigas en pos de aquel á cuyos ojos hallare gracia"
+    },
+    {
+     "texto": "Booz alaba que dejó a su padre, a su madre y su tierra",
+     "certeza": "texto",
+     "ref": "Rut 2:11",
+     "cita": "dejando á tu padre y á tu madre y la tierra donde naciste"
+    },
+    {
+     "texto": "Lo espigado en el día fue como una efa de cebada",
+     "certeza": "texto",
+     "ref": "Rut 2:17",
+     "cita": "fué como un epha de cebada"
+    },
+    {
+     "texto": "En la era se presenta a Booz como su sierva",
+     "certeza": "texto",
+     "ref": "Rut 3:9",
+     "cita": "Yo soy Ruth tu sierva"
+    },
+    {
+     "texto": "Booz dice que en la puerta de su pueblo saben que es mujer virtuosa",
+     "certeza": "texto",
+     "ref": "Rut 3:11",
+     "cita": "sabe que eres mujer virtuosa"
+    },
+    {
+     "texto": "Booz la toma por mujer",
+     "certeza": "texto",
+     "ref": "Rut 4:13",
+     "cita": "Booz pues tomó á Ruth, y ella fué su mujer"
+    },
+    {
+     "texto": "Las mujeres dicen que Noemí la ama y le vale más que siete hijos",
+     "certeza": "texto",
+     "ref": "Rut 4:15",
+     "cita": "tu nuera, la cual te ama y te vale más que siete hijos"
+    }
+   ],
+   "externo": []
+  },
+  "Boaz_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 2:1",
+     "fin": "Rut 2:1"
+    },
+    {
+     "inicio": "Rut 2:3",
+     "fin": "Rut 2:16"
+    },
+    {
+     "inicio": "Rut 3:7",
+     "fin": "Rut 3:15"
+    },
+    {
+     "inicio": "Rut 4:1",
+     "fin": "Rut 4:13"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 2:19"
+    },
+    {
+     "ref": "Rut 2:23"
+    },
+    {
+     "ref": "Rut 3:2"
+    }
+   ],
+   "resumen": "Hombre de Belén, de la familia de Elimelec: cuida a Rut cuando espiga, se le presenta como pariente cercano en la era y la toma por mujer tras rescatar con los ancianos las tierras.",
+   "datos": [
+    {
+     "texto": "Hombre poderoso, de la familia de Elimelec",
+     "certeza": "texto",
+     "ref": "Rut 2:1",
+     "cita": "varón poderoso y de hecho"
+    },
+    {
+     "texto": "Saluda a los segadores con una bendición",
+     "certeza": "texto",
+     "ref": "Rut 2:4",
+     "cita": "Jehová sea con vosotros"
+    },
+    {
+     "texto": "Manda a los mozos que no la toquen",
+     "certeza": "texto",
+     "ref": "Rut 2:9",
+     "cita": "yo he mandado á los mozos que no te toquen"
+    },
+    {
+     "texto": "La invita a comer pan mojado en vinagre",
+     "certeza": "texto",
+     "ref": "Rut 2:14",
+     "cita": "moja tu bocado en el vinagre"
+    },
+    {
+     "texto": "Manda dejarle manojos a propósito",
+     "certeza": "texto",
+     "ref": "Rut 2:16",
+     "cita": "echaréis á sabiendas de los manojos"
+    },
+    {
+     "texto": "Dice que hay un pariente más cercano que él",
+     "certeza": "texto",
+     "ref": "Rut 3:12",
+     "cita": "hay pariente más cercano que yo"
+    },
+    {
+     "texto": "Le mide seis medidas de cebada",
+     "certeza": "texto",
+     "ref": "Rut 3:15",
+     "cita": "él midió seis"
+    },
+    {
+     "texto": "Sube a la puerta y se sienta",
+     "certeza": "texto",
+     "ref": "Rut 4:1",
+     "cita": "subió á la puerta y sentóse allí"
+    },
+    {
+     "texto": "Toma por mujer a Rut para suscitar el nombre del difunto",
+     "certeza": "texto",
+     "ref": "Rut 4:10",
+     "cita": "tomo por mi mujer á Ruth Moabita"
+    },
+    {
+     "texto": "Su padre es Salmón (genealogía)",
+     "certeza": "texto",
+     "ref": "Rut 4:21",
+     "cita": "Salmón engendró á Booz"
+    }
+   ],
+   "externo": []
+  },
+  "Pariente_de_Rut_4": {
+   "apariciones": [
+    {
+     "inicio": "Rut 4:1",
+     "fin": "Rut 4:8"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 3:12"
+    }
+   ],
+   "resumen": "El pariente más cercano, sin nombre en el texto («fulano»): primero acepta redimir las tierras de Elimelec, luego renuncia y entrega su zapato a Booz.",
+   "datos": [
+    {
+     "texto": "Booz habla de un pariente más cercano que él",
+     "certeza": "texto",
+     "ref": "Rut 3:12",
+     "cita": "hay pariente más cercano que yo"
+    },
+    {
+     "texto": "Booz lo llama sin nombre",
+     "certeza": "texto",
+     "ref": "Rut 4:1",
+     "cita": "Eh, fulano, ven acá y siéntate"
+    },
+    {
+     "texto": "Primero dice que redimirá",
+     "certeza": "texto",
+     "ref": "Rut 4:4",
+     "cita": "Yo redimiré"
+    },
+    {
+     "texto": "Renuncia porque echaría a perder su heredad",
+     "certeza": "texto",
+     "ref": "Rut 4:6",
+     "cita": "echaría á perder mi heredad"
+    },
+    {
+     "texto": "Da su zapato a Booz",
+     "certeza": "texto",
+     "ref": "Rut 4:8",
+     "cita": "Tómalo tú. Y descalzó su zapato"
+    }
+   ],
+   "externo": []
+  },
+  "Obed_1": {
+   "apariciones": [
+    {
+     "inicio": "Rut 4:13",
+     "fin": "Rut 4:17"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Booz y Rut; las mujeres lo llaman «restaurador» de Noemí, que lo cría; es padre de Isaí y abuelo de David.",
+   "datos": [
+    {
+     "texto": "Nace de Booz y Rut por voluntad de Jehová",
+     "certeza": "texto",
+     "ref": "Rut 4:13",
+     "cita": "Jehová le dió que concibiese y pariese un hijo"
+    },
+    {
+     "texto": "Será restaurador del alma y sustento de la vejez de Noemí",
+     "certeza": "texto",
+     "ref": "Rut 4:15",
+     "cita": "restaurador de tu alma"
+    },
+    {
+     "texto": "Lo llaman Obed",
+     "certeza": "texto",
+     "ref": "Rut 4:17",
+     "cita": "llamáronle Obed"
+    },
+    {
+     "texto": "Padre de Isaí, padre de David",
+     "certeza": "texto",
+     "ref": "Rut 4:17",
+     "cita": "Este es padre de Isaí, padre de David"
+    }
+   ],
+   "externo": []
+  },
+  "Jesse_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:17"
+    }
+   ],
+   "resumen": "Padre de David; en Rut solo se nombra como hijo de Obed.",
+   "datos": [
+    {
+     "texto": "Hijo de Obed y padre de David",
+     "certeza": "texto",
+     "ref": "Rut 4:17",
+     "cita": "padre de Isaí, padre de David"
+    },
+    {
+     "texto": "Obed engendró a Isaí (genealogía)",
+     "certeza": "texto",
+     "ref": "Rut 4:22",
+     "cita": "Obed engendró á Isaí"
+    }
+   ],
+   "externo": []
+  },
+  "David_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:17"
+    }
+   ],
+   "resumen": "Rey de Israel; en Rut solo se nombra como descendiente de Obed (aparece como actor en libros posteriores).",
+   "datos": [
+    {
+     "texto": "Nieto de Obed",
+     "certeza": "texto",
+     "ref": "Rut 4:17",
+     "cita": "padre de Isaí, padre de David"
+    },
+    {
+     "texto": "Isaí engendró a David (genealogía)",
+     "certeza": "texto",
+     "ref": "Rut 4:22",
+     "cita": "Isaí engendró á David"
+    }
+   ],
+   "externo": []
+  },
+  "Ram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Hezrón y padre de Aminadab; solo sale en la genealogía.",
+   "datos": [
+    {
+     "texto": "Hezrón engendró a Ram, y Ram a Aminadab",
+     "certeza": "texto",
+     "ref": "Rut 4:19",
+     "cita": "Hesrón engendró á Ram, y Ram engendró á Aminadab"
+    }
+   ],
+   "externo": []
+  },
+  "Salmon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Naasón y padre de Booz; solo sale en la genealogía.",
+   "datos": [
+    {
+     "texto": "Naasón engendró a Salmón",
+     "certeza": "texto",
+     "ref": "Rut 4:20",
+     "cita": "Nahasón engendró á Salmón"
+    },
+    {
+     "texto": "Salmón engendró a Booz",
+     "certeza": "texto",
+     "ref": "Rut 4:21",
+     "cita": "Salmón engendró á Booz"
+    }
+   ],
+   "externo": []
+  },
+  "Perez_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:12"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "El pueblo desea que la casa de Booz sea como la casa de Fares, hijo de Tamar y Judá",
+     "certeza": "texto",
+     "ref": "Rut 4:12",
+     "cita": "sea tu casa como la casa de Phares, al que parió Thamar á Judá"
+    }
+   ],
+   "externo": []
+  },
+  "Tamar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:12"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Su hijo Fares sirve de modelo de casa para Booz",
+     "certeza": "texto",
+     "ref": "Rut 4:12",
+     "cita": "al que parió Thamar á Judá"
+    }
+   ],
+   "externo": []
+  },
+  "Judah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:12"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Tamar parió a Fares de Judá",
+     "certeza": "texto",
+     "ref": "Rut 4:12",
+     "cita": "al que parió Thamar á Judá"
+    }
+   ],
+   "externo": []
+  },
+  "Rachel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Raquel y Lea edificaron la casa de Israel",
+     "certeza": "texto",
+     "ref": "Rut 4:11",
+     "cita": "Rachêl y á Lea, las cuales dos edificaron la casa de Israel"
+    }
+   ],
+   "externo": []
+  },
+  "Leah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "Rut 4:11"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Raquel y Lea edificaron la casa de Israel",
+     "certeza": "texto",
+     "ref": "Rut 4:11",
+     "cita": "Rachêl y á Lea, las cuales dos edificaron la casa de Israel"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "espigas-de-rut": {
+   "nombre": "Espigas y efa de cebada de Rut",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "Rut 2:2",
+     "fin": "Rut 2:23"
+    }
+   ],
+   "personas": [
+    "Ruth_1",
+    "Boaz_1",
+    "Naomi_1"
+   ],
+   "lugares": [],
+   "resumen": "Lo que Rut recoge detrás de los segadores en la siega de la cebada; de un día salen como una efa, que lleva a Noemí.",
+   "datos": [
+    {
+     "texto": "Pide coger espigas tras los segadores",
+     "certeza": "texto",
+     "ref": "Rut 2:2",
+     "cita": "cogeré espigas en pos de aquel á cuyos ojos hallare gracia"
+    },
+    {
+     "texto": "Booz manda dejarle manojos a propósito",
+     "certeza": "texto",
+     "ref": "Rut 2:16",
+     "cita": "echaréis á sabiendas de los manojos"
+    },
+    {
+     "texto": "Desgrana lo cogido y es como una efa de cebada",
+     "certeza": "texto",
+     "ref": "Rut 2:17",
+     "cita": "desgranó lo que había cogido, y fué como un epha de cebada"
+    },
+    {
+     "texto": "Da a Noemí también lo que le sobró de la comida",
+     "certeza": "texto",
+     "ref": "Rut 2:18",
+     "cita": "lo que le había sobrado después de harta"
+    }
+   ],
+   "externo": []
+  },
+  "pan-en-vinagre": {
+   "nombre": "Pan mojado en vinagre y potaje",
+   "tipo": "comida",
+   "apariciones": [
+    {
+     "inicio": "Rut 2:14",
+     "fin": "Rut 2:14"
+    }
+   ],
+   "personas": [
+    "Boaz_1",
+    "Ruth_1"
+   ],
+   "lugares": [],
+   "resumen": "Lo que Booz da a Rut a la hora de comer, junto a los segadores; ella come hasta saciarse y le sobra.",
+   "datos": [
+    {
+     "texto": "Booz la invita a comer pan y mojar el bocado en vinagre",
+     "certeza": "texto",
+     "ref": "Rut 2:14",
+     "cita": "moja tu bocado en el vinagre"
+    },
+    {
+     "texto": "Él le da potaje y a ella le sobra",
+     "certeza": "texto",
+     "ref": "Rut 2:14",
+     "cita": "comió hasta que se hartó y le sobró"
+    }
+   ],
+   "externo": []
+  },
+  "manto-y-seis-medidas": {
+   "nombre": "Lienzo con las seis medidas de cebada",
+   "tipo": "prenda",
+   "apariciones": [
+    {
+     "inicio": "Rut 3:9",
+     "fin": "Rut 3:9"
+    },
+    {
+     "inicio": "Rut 3:15",
+     "fin": "Rut 3:17"
+    }
+   ],
+   "personas": [
+    "Boaz_1",
+    "Ruth_1",
+    "Naomi_1"
+   ],
+   "lugares": [],
+   "resumen": "Prenda que Rut lleva sobre sí; Booz mide en ella seis medidas de cebada, que Rut lleva a Noemí.",
+   "datos": [
+    {
+     "texto": "Rut le pide extender el borde de su capa sobre ella",
+     "certeza": "texto",
+     "ref": "Rut 3:9",
+     "cita": "extiende el borde"
+    },
+    {
+     "texto": "Booz le manda extender el lienzo y le mide seis medidas",
+     "certeza": "texto",
+     "ref": "Rut 3:15",
+     "cita": "él midió seis"
+    },
+    {
+     "texto": "Se las lleva a su suegra: «para que no vayas vacía»",
+     "certeza": "texto",
+     "ref": "Rut 3:17",
+     "cita": "Porque no vayas vacía á tu suegra"
+    },
+    {
+     "texto": "La RV1909 pone «medidas» entre corchetes: el texto no dice la unidad",
+     "certeza": "inferido",
+     "ref": "Rut 3:15",
+     "cita": "él midió seis"
+    }
+   ],
+   "externo": []
+  },
+  "zapato-del-rescate": {
+   "nombre": "Zapato del rescate",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "Rut 4:7",
+     "fin": "Rut 4:8"
+    }
+   ],
+   "personas": [
+    "Pariente_de_Rut_4",
+    "Boaz_1"
+   ],
+   "lugares": [
+    "belen"
+   ],
+   "resumen": "Costumbre de Israel para confirmar un trato de redención: uno se quita el zapato y se lo da al otro.",
+   "datos": [
+    {
+     "texto": "Costumbre antigua en Israel para confirmar un negocio",
+     "certeza": "texto",
+     "ref": "Rut 4:7",
+     "cita": "el uno se quitaba el zapato y lo daba á su compañero"
+    },
+    {
+     "texto": "Era el testimonio en Israel",
+     "certeza": "texto",
+     "ref": "Rut 4:7",
+     "cita": "este era el testimonio en Israel"
+    },
+    {
+     "texto": "El pariente se descalza y da el zapato a Booz",
+     "certeza": "texto",
+     "ref": "Rut 4:8",
+     "cita": "Tómalo tú. Y descalzó su zapato"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "campos-de-moab": {
+   "nombre": "Los campos de Moab",
+   "apariciones": [
+    {
+     "inicio": "Rut 1:1",
+     "fin": "Rut 1:6"
+    }
+   ],
+   "personas": [
+    "Elimelech_1",
+    "Naomi_1",
+    "Mahlon_1",
+    "Chilion_1",
+    "Orpah_1",
+    "Ruth_1"
+   ],
+   "objetos": [],
+   "resumen": "Tierra donde la familia de Elimelec vive unos diez años; allí mueren los tres varones y se casan los hijos.",
+   "datos": [
+    {
+     "texto": "Elimelec va a vivir allí por el hambre",
+     "certeza": "texto",
+     "ref": "Rut 1:1",
+     "cita": "fué á peregrinar en los campos de Moab"
+    },
+    {
+     "texto": "Viven allí unos diez años",
+     "certeza": "texto",
+     "ref": "Rut 1:4",
+     "cita": "habitaron allí unos diez años"
+    },
+    {
+     "texto": "Noemí oye allí que Jehová ha dado pan a su pueblo",
+     "certeza": "texto",
+     "ref": "Rut 1:6",
+     "cita": "oyó en el campo de Moab que Jehová había visitado á su pueblo"
+    }
+   ],
+   "externo": [],
+   "lugar": "moab"
+  },
+  "camino-de-moab-a-belen": {
+   "nombre": "El camino de Moab a Belén",
+   "apariciones": [
+    {
+     "inicio": "Rut 1:7",
+     "fin": "Rut 1:22"
+    }
+   ],
+   "personas": [
+    "Naomi_1",
+    "Ruth_1",
+    "Orpah_1"
+   ],
+   "objetos": [],
+   "resumen": "Ruta de regreso a Belén: Noemí despide a sus nueras, Orfa se vuelve, Rut se queda y llegan juntas.",
+   "datos": [
+    {
+     "texto": "Salen a caminar para volver a la tierra de Judá",
+     "certeza": "texto",
+     "ref": "Rut 1:7",
+     "cita": "comenzaron á caminar para volverse á la tierra de Judá"
+    },
+    {
+     "texto": "Al llegar a Belén toda la ciudad se conmueve",
+     "certeza": "texto",
+     "ref": "Rut 1:19",
+     "cita": "toda la ciudad se conmovió por razón de ellas"
+    },
+    {
+     "texto": "Llegan al principio de la siega de las cebadas",
+     "certeza": "texto",
+     "ref": "Rut 1:22",
+     "cita": "en el principio de la siega de las cebadas"
+    }
+   ],
+   "externo": []
+  },
+  "campo-de-booz": {
+   "nombre": "El campo de Booz",
+   "apariciones": [
+    {
+     "inicio": "Rut 2:2",
+     "fin": "Rut 2:23"
+    }
+   ],
+   "personas": [
+    "Ruth_1",
+    "Boaz_1"
+   ],
+   "objetos": [
+    "espigas-de-rut",
+    "pan-en-vinagre"
+   ],
+   "resumen": "Campo donde Rut espiga hasta que acaba la siega de las cebadas y de los trigos, al cuidado de Booz.",
+   "datos": [
+    {
+     "texto": "La parte del campo era de Booz",
+     "certeza": "texto",
+     "ref": "Rut 2:3",
+     "cita": "la suerte del campo era de Booz"
+    },
+    {
+     "texto": "Espiga detrás de los segadores",
+     "certeza": "texto",
+     "ref": "Rut 2:3",
+     "cita": "espigó en el campo en pos de los segadores"
+    },
+    {
+     "texto": "Hay vasos de agua para quien tenga sed",
+     "certeza": "texto",
+     "ref": "Rut 2:9",
+     "cita": "si tuvieres sed, ve á los vasos"
+    },
+    {
+     "texto": "Se queda con las mozas de Booz hasta el fin de la siega",
+     "certeza": "texto",
+     "ref": "Rut 2:23",
+     "cita": "hasta que la siega de las cebadas y la de los trigos fué acabada"
+    },
+    {
+     "texto": "El campo estaba cerca de Belén: Booz «vino de Belén» (el texto no da más ubicación)",
+     "certeza": "inferido",
+     "ref": "Rut 2:4",
+     "cita": "Booz vino de Beth-lehem"
+    }
+   ],
+   "externo": []
+  },
+  "era-de-booz": {
+   "nombre": "La era de Booz",
+   "apariciones": [
+    {
+     "inicio": "Rut 3:2",
+     "fin": "Rut 3:15"
+    }
+   ],
+   "personas": [
+    "Ruth_1",
+    "Boaz_1"
+   ],
+   "objetos": [
+    "manto-y-seis-medidas"
+   ],
+   "resumen": "Lugar donde esa noche se avienta la cebada; Rut baja, Booz duerme junto al montón y a la mañana ella vuelve con cebada.",
+   "datos": [
+    {
+     "texto": "Esa noche Booz avienta la parva de cebada",
+     "certeza": "texto",
+     "ref": "Rut 3:2",
+     "cita": "él avienta esta noche la parva de las cebadas"
+    },
+    {
+     "texto": "Booz se retira a dormir a un lado del montón",
+     "certeza": "texto",
+     "ref": "Rut 3:7",
+     "cita": "retiróse á dormir á un lado del montón"
+    },
+    {
+     "texto": "A medianoche él se estremece y palpa",
+     "certeza": "texto",
+     "ref": "Rut 3:8",
+     "cita": "á la media noche se estremeció aquel hombre, y palpó"
+    },
+    {
+     "texto": "Pide que no se sepa que vino una mujer a la era",
+     "certeza": "texto",
+     "ref": "Rut 3:14",
+     "cita": "No se sepa que haya venido mujer á la era"
+    }
+   ],
+   "externo": []
+  },
+  "puerta-de-belen": {
+   "nombre": "La puerta de Belén",
+   "apariciones": [
+    {
+     "inicio": "Rut 4:1",
+     "fin": "Rut 4:12"
+    }
+   ],
+   "personas": [
+    "Boaz_1",
+    "Pariente_de_Rut_4"
+   ],
+   "objetos": [
+    "zapato-del-rescate"
+   ],
+   "resumen": "Lugar donde Booz sienta a diez ancianos y al pariente más cercano; allí se decide el rescate y la gente da testimonio.",
+   "datos": [
+    {
+     "texto": "Booz sube a la puerta y se sienta",
+     "certeza": "texto",
+     "ref": "Rut 4:1",
+     "cita": "subió á la puerta y sentóse allí"
+    },
+    {
+     "texto": "Toma diez ancianos de la ciudad",
+     "certeza": "texto",
+     "ref": "Rut 4:2",
+     "cita": "tomó diez varones de los ancianos de la ciudad"
+    },
+    {
+     "texto": "El pueblo en la puerta responde: «Testigos somos»",
+     "certeza": "texto",
+     "ref": "Rut 4:11",
+     "cita": "Testigos somos"
+    },
+    {
+     "texto": "La puerta es la de Belén: el pueblo desea a Booz renombre en Belén",
+     "certeza": "inferido",
+     "ref": "Rut 4:11",
+     "cita": "tengas nombradía en Beth-lehem"
+    }
+   ],
+   "externo": [],
+   "lugar": "belen"
+  }
+ }
+}

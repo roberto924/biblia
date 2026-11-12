@@ -484,7 +484,7 @@ def comprobar(datos, errores):
     ok_(len({p["seccion"] for p in pas}) == 9, "9 secciones")
     ids = [p["id"] for p in datos["pasajes"]]
     ult_jos = max(i for i, p in enumerate(datos["pasajes"]) if p["libro"] == "Jos")
-    ok_(ids.index(pas[0]["id"]) == ult_jos + 1 and datos["libros"][-1]["id"] == LIBRO,
+    ok_(ids.index(pas[0]["id"]) == ult_jos + 1 and [l["id"] for l in datos["libros"]].index(LIBRO) == [l["id"] for l in datos["libros"]].index("Jos") + 1,
         "Jueces va justo después de Josué en el orden de los pasajes (lectura en orden)")
     return lineas
 

@@ -1,4 +1,4 @@
-"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué y Jueces.
+"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué, Jueces y Rut.
 
 Genera:
   datos/originales.js          window.BIBLIA_ORIGINALES (hebreo WLC, testigos, variantes, videos)
@@ -43,6 +43,8 @@ ARCHIVOS = {
     "uxlc_jos": ("https://tanach.us/Books/Joshua.xml", "uxlc_Joshua.xml"),   # solo para leer la marca «X» (versículo ausente del Códice de Leningrado)
     "oshb_jue": (GH + "openscriptures/morphhb/master/wlc/Judg.xml", "oshb_Judg.xml"),
     "uxlc_jue": ("https://tanach.us/Books/Judges.xml", "uxlc_Judges.xml"),  # marca «X» (no hay en Jueces) y letra suspendida de Jue 18:30
+    "oshb_rut": (GH + "openscriptures/morphhb/master/wlc/Ruth.xml", "oshb_Ruth.xml"),
+    "uxlc_rut": ("https://tanach.us/Books/Ruth.xml", "uxlc_Ruth.xml"),      # marca «X» (no hay en Rut) y ketiv/qere (<k>/<q>) para cotejar con OSHB
     "tvtms": (TVTMS_URL, "tvtms.txt"),
     "swete_vers": (GH + "eliranwong/LXX-Swete-1930/master/00-Swete_versification.csv",
                    "swete_00-Swete_versification.csv"),
@@ -53,12 +55,12 @@ ARCHIVOS = {
 for _f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full", "fragment", "line"):
     ARCHIVOS["dss_" + _f] = (GH + "ETCBC/dss/master/tf/2.0/%s.tf" % _f, "dss_%s.tf" % _f)
 
-LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue")
-LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos", "Jue": "Jdg"}          # códigos TVTMS / Swete
+LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut")
+LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos", "Jue": "Jdg", "Rut": "Rut"}          # códigos TVTMS / Swete
 OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm", "Deu": "Dt", "Deut": "Dt", "Jos": "Jos", "Josh": "Jos",
-              "Jdg": "Jue", "Judg": "Jue"}
-DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos", "Judg": "Jue"}            # códigos de libro en ETCBC/dss
-OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos|Jdg"                               # libros TVTMS / Swete que se leen
+              "Jdg": "Jue", "Judg": "Jue", "Rut": "Rut", "Ruth": "Rut"}
+DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos", "Judg": "Jue", "Ruth": "Rut"}            # códigos de libro en ETCBC/dss
+OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos|Jdg|Rut"                               # libros TVTMS / Swete que se leen
 FALLOS = []
 ROLLOS_PRESENTES = set()          # nombres de rollo que aparecen en ETCBC/dss (lo llena leer_dss)
 ORDEN_DSS = {}                    # rollo -> [(slot, fragmento, línea, (lib, c, v))] en el orden del rollo (lo llena leer_dss)
@@ -162,6 +164,52 @@ def leer_uxlc_x(ruta, lib):
             if "<x>X</x>" in mv[2]:
                 res.append((lib, int(mc[1]), int(mv[1])))
     return res
+
+
+def leer_kq_oshb(ruta, lib):
+    """Ketiv/qere del WLC (OSHB): {(lib, c, v): [(ketiv sin «/» o None, qere con vocales o None)]} en el orden del versículo.
+    Ketiv = <w type="x-ketiv">; qere = <note type="variant"><rdg type="x-qere"> (sin <catchWord>: qere sin ketiv; qere vacío: ketiv sin qere)."""
+    res = {}
+    for verso in ET.parse(ruta).getroot().iter(OSIS_NS + "verse"):
+        _, c, v = verso.get("osisID").split(".")
+        k, lista = (lib, int(c), int(v)), []
+        for h in verso.iter():
+            tag = h.tag.replace(OSIS_NS, "")
+            if tag == "w" and h.get("type") == "x-ketiv":
+                lista.append(["".join(h.itertext()).replace("/", ""), None])
+            elif tag == "note" and h.get("type") == "variant":
+                rdg = h.find(OSIS_NS + "rdg")
+                if rdg is None or rdg.get("type") != "x-qere":
+                    continue
+                q = "".join(rdg.itertext()).replace("/", "").strip() or None
+                cw = h.find(OSIS_NS + "catchWord")
+                if cw is not None and lista and lista[-1][0] == (cw.text or "").replace("/", "") and lista[-1][1] is None:
+                    lista[-1][1] = q
+                else:
+                    lista.append([None, q])
+        if lista:
+            res[k] = [tuple(x) for x in lista]
+    return res
+
+
+def leer_kq_uxlc(ruta, lib):
+    """Ketiv/qere del UXLC: {(lib, c, v): ([ketiv…], [qere…])} (etiquetas <k> y <q>)."""
+    s = ruta.read_text(encoding="utf-8")
+    res = {}
+    for mc in re.finditer(r'<c n="(\d+)">(.*?)</c>', s, re.S):
+        for mv in re.finditer(r'<v n="(\d+)">(.*?)</v>', mc[2], re.S):
+            ks, qs = re.findall(r"<k>(.*?)</k>", mv[2]), re.findall(r"<q>(.*?)</q>", mv[2])
+            if ks or qs:
+                res[(lib, int(mc[1]), int(mv[1]))] = (ks, qs)
+    return res
+
+
+def uxlc_consonantes(ruta, c, v):
+    """Consonantes de un versículo del UXLC (sin notas)."""
+    s = ruta.read_text(encoding="utf-8")
+    mc = re.search(r'<c n="%d">(.*?)</c>' % c, s, re.S)
+    mv = mc and re.search(r'<v n="%d">(.*?)</v>' % v, mc[1], re.S)
+    return consonantes(re.sub(r"<x>.*?</x>|<[^>]+>", " ", mv[1])) if mv else ""
 
 
 def consonantes(s):
@@ -564,20 +612,20 @@ FUENTES = [
     {"id": "wlc-oshb", "nombre": "Westminster Leningrad Codex 4.20 (texto del Códice de Leningrado), vía Open Scriptures Hebrew Bible (morphhb)",
      "licencia": "Texto WLC: dominio público. Atribución: Open Scriptures Hebrew Bible (lemas y morfología CC BY 4.0, no usados aquí)",
      "url": "https://github.com/openscriptures/morphhb"},
-    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces no hay ninguna) y su marca de letra suspendida en Jue 18:30 (nota «7»)",
-     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml y https://tanach.us/Books/Judges.xml"},
+    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces y en Rut no hay ninguna), su marca de letra suspendida en Jue 18:30 (nota «7») y, en Rut, sus ketiv/qere (<k>/<q>) para cotejarlos con el WLC",
+     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml, https://tanach.us/Books/Judges.xml y https://tanach.us/Books/Ruth.xml"},
     {"id": "tvtms", "nombre": "TVTMS (Translators Versification Traditions with Methodology for Standardisation), STEPBible / Tyndale House",
      "licencia": "CC BY 4.0", "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Versification"},
     {"id": "swete", "nombre": "H. B. Swete, The Old Testament in Greek (Cambridge, ed. 1930), digitalización LXX-Swete-1930 (Eliran Wong)",
      "licencia": "GPL-3.0 (texto de Swete en dominio público; digitalización GPL); va aparte en datos/griego-swete.js",
      "url": "https://github.com/eliranwong/LXX-Swete-1930"},
     {"id": "etcbc-dss", "nombre": "ETCBC/dss: datos de los Rollos del Mar Muerto de M. Abegg, J. Bowley y E. Cook (conversión Text-Fabric de J. Jacobs, M. Naaijer y D. Roorda)",
-     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47 y que 4Q49 pasa de Jue 6:6 a 6:11; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
+     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47, que 4Q49 pasa de Jue 6:6 a 6:11 y las lecturas de 4Q104 (Rut 1:2, 1:9) y 2Q17 (Rut 3:14, 3:15); no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
      "url": "https://github.com/ETCBC/dss"},
     {"id": "leon-levy", "nombre": "The Leon Levy Dead Sea Scrolls Digital Library (Israel Antiquities Authority): fichas con período y edición oficial (DJD)",
      "licencia": "Solo enlace: las imágenes no se pueden reproducir sin permiso de la IAA (https://www.deadseascrolls.org.il/terms)",
      "url": "https://www.deadseascrolls.org.il/"},
-    {"id": "wikipedia", "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11 y el 2026-11-12 (Jueces)",
+    {"id": "wikipedia", "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)",
      "licencia": "CC BY-SA 4.0 (solo se toman datos, no texto)", "url": "https://en.wikipedia.org/"},
     {"id": "cudl", "nombre": "Cambridge Digital Library (Cambridge University Library): ficha del Papiro Nash, MS Or.233 (registro JSON)",
      "licencia": "Metadatos CC BY-NC 4.0 (solo se toman datos); imágenes: solo enlace", "url": "https://cudl.lib.cam.ac.uk/view/MS-OR-00233"},
@@ -590,39 +638,39 @@ FUENTES = [
 CODICES = [
     {"id": "leningrado", "nombre": "Códice de Leningrado (Firkovich B 19 A)", "tipo": "codice", "idioma": "hebreo",
      "fecha": "1008 (o 1009) d. C.", "fecha_certeza": "colofón",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22"],
      "institucion": "Biblioteca Nacional de Rusia, San Petersburgo",
      "url": "https://archive.org/details/Leningrad_Codex", "uso": "solo_enlace",
-     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar).",
-     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12)"},
+     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar). Rut: entero; el UXLC tampoco marca con «X» ningún versículo de Rut (comprobado al generar). En este códice Rut va en los Ketuvim (tras Proverbios), no tras Jueces como en la RV (Wikipedia «Leningrad Codex»).",
+     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12); Rut: https://tanach.us/Books/Ruth.xml (2026-11-12)"},
     {"id": "alepo", "nombre": "Códice de Alepo", "tipo": "codice", "idioma": "hebreo",
      "fecha": "c. 920 d. C. (Tiberíades)", "fecha_certeza": "estimación (un colofón posterior atribuye la vocalización a Aarón ben Moisés ben Aser)",
-     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25"],
+     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22"],
      "institucion": "Museo de Israel (Santuario del Libro), Jerusalén",
      "url": "https://www.aleppocodex.org/", "uso": "solo_enlace",
-     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12).",
-     "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11 y el 2026-11-12"},
+     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12). Rut: la fuente da el orden de los Ketuvim de este códice (Crónicas, Salmos, Job, Proverbios, Rut, Cantar…) y su lista de lo perdido en esa parte empieza en Cantar 3:11; no nombra Rut (inferido: completo; 2026-11-12).",
+     "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"},
     {"id": "vaticano", "nombre": "Códice Vaticano (Vat. gr. 1209)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 300–350 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25"],
+     "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22"],
      "institucion": "Biblioteca Apostólica Vaticana",
      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209", "uso": "solo_enlace",
-     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app.",
-     "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"},
+     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app. Rut: la fuente lo nombra al describir la página (44 líneas por columna en el Pentateuco, Josué, Jueces, Rut y 1 Reyes 1:1–19:11) y no lo cita entre lo perdido (inferido: completo; 2026-11-12).",
+     "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"},
     {"id": "sinaitico", "nombre": "Códice Sinaítico", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 325–360 d. C.", "fecha_certeza": "datación paleográfica",
      "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30", "Jos 1:10", "Jue 5:7-Jue 11:2"],
      "institucion": "British Library, Biblioteca Universitaria de Leipzig, Monasterio de Santa Catalina y Biblioteca Nacional de Rusia (repartido)",
      "url": "https://codexsinaiticus.org/", "uso": "solo_enlace",
-     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden).",
-     "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"},
+     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden). Rut: la lista de contenidos de Wikipedia no lo nombra (releída el 2026-11-12): no va en «contiene»; no comprobé si se conserva algo.",
+     "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"},
     {"id": "alejandrino", "nombre": "Códice Alejandrino (Royal MS 1 D V–VIII)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 400–440 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22"],
      "institucion": "British Library, Londres",
      "url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_V", "uso": "solo_enlace",
-     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app.",
-     "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"},
+     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app. Rut: la fuente cita el facsímil de Kenyon (1915) «Vol. 1: Genesis – Ruth» y no da daños en Rut (inferido: completo; 2026-11-12).",
+     "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"},
     {"id": "samaritano-cul-add1846", "nombre": "Pentateuco Samaritano, Cambridge University Library Add. 1846", "tipo": "pentateuco_samaritano",
      "idioma": "hebreo (escritura samaritana)",
      "fecha": "comienzos del s. XII d. C. (según el catálogo de Cambridge)", "fecha_certeza": "no verificada en la ficha (dato del catálogo leído solo a través de un buscador)",
@@ -748,6 +796,11 @@ ROLLOS = [
     (["1Q6"], "1QJudg", "1Q6-1", "Hellenistic-Roman", "Barthélemy 1955, DJD 1: 62-64", "cuadrada"),
     (["4Q49"], "4QJudg-a", "4Q49-1", "Herodian", "Trebolle Barrera 1995, DJD 14: 161-164", "cuadrada"),
     (["4Q50"], "4QJudg-b", "4Q50-1", "Herodian", "Trebolle Barrera 1995, DJD 14: 165-169", "cuadrada"),
+    # Rut (fichas de la Leon Levy descargadas con un script el 2026-11-12: «copy», «period», «script_type», «official_publications»).
+    (["2Q16"], "2QRuth-a", "2Q16-1", "Herodian", "Baillet 1962, DJD 3: 71-74", "cuadrada"),
+    (["2Q17"], "2QRuth-b", "2Q17-1", "Hasmonean", "Baillet 1962, DJD 3: 74-75", "cuadrada"),
+    (["4Q104"], "4QRuth-a", "4Q104-1", "Hasmonean", "Ulrich y Murphy 2000, DJD 16: 187-189", "cuadrada"),
+    (["4Q105"], "4QRuth-b", "4Q105-1", "Herodian", "Ulrich y Murphy 2000, DJD 16: 191-194", "cuadrada"),
 ]
 # Rollos sin ficha propia en la Leon Levy o con datos especiales (idioma, contenido no calculable, notas).
 ROLLO_EXTRA = {
@@ -772,6 +825,8 @@ ROLLO_EXTRA = {
     "4Q49": {"nota": " En el fragmento 1, la línea 5 conserva el final de Jue 6:6 y la línea 6 ya conserva Jue 6:11 (el principio de 6:11, al final de la línea 5, "
                      "es reconstrucción de los editores): el rollo no tiene Jue 6:7-10 (el profeta enviado a Israel). "
                      "Es el testigo de la variante de Jue 6:7-10 (comprobado al generar en los datos de Abegg)."},
+    "4Q104": {"nota": " Es el testigo de las variantes de Rut 1:2 («וישבו», «y habitaron») y Rut 1:9 («קולם»), comprobadas al generar en los datos de Abegg."},
+    "2Q17": {"nota": " Es el testigo de la variante de Rut 3:15 («שם», «allí», de más) y en Rut 3:14 escribe «מ[רג]לתיו», con la י de la qere (ver «hebreo_notas»)."},
     "4Q41": {"nota": " Abegg le asigna además Éx 20:11 (dentro del Decálogo), que también va en «contiene»."},
     "6Q3": {"nota": " La Leon Levy lo titula «6Q papDeuteronomy(?)» (tipo «Biblical Compositions?»): la identificación es dudosa en la propia ficha. Papiro."},
     "2Q29": {"nota": " La Leon Levy lo cataloga como «2Q Unidentified» (sin libro ni copia); que contenga Nm 23 es la asignación de los datos de Abegg (inferido). "
@@ -816,6 +871,9 @@ ANCLAS_GRIEGO = {
     ("Jue", 14, 18): ("dulce", "γλυκύτερον"), ("Jue", 14, 19): ("araseis", "ἠροτριάσατε"), ("Jue", 14, 20): ("Ascalón", "Ἀσκάλωνα"),
     ("Jue", 16, 30): ("Muera yo con los Filisteos", "Ἀποθανέτω ψυχή μου μετὰ ἀλλοφύλων"), ("Jue", 18, 30): ("Manasés", "Μανασσή"),
     ("Jue", 21, 25): ("no había rey", "οὐκ ἦν βασιλεὺς"),
+    # Rut (misma numeración en la RV, el TM y Swete; el TVTMS no tiene ningún bloque de Rut)
+    ("Rut", 1, 16): ("Ruth respondió", "εἶπεν δὲ Ῥούθ"), ("Rut", 2, 3): ("Booz", "Βόος, τοῦ ἐκ συγγενείας Ἀβειμέλεχ"),
+    ("Rut", 4, 17): ("Obed", "Ὠβήδ"), ("Rut", 4, 22): ("David", "Δαυείδ"),
 }
 
 # Anclas de contenido del hebreo (consonantes): RV -> (palabra en la RV, palabra en el hebreo asignado)
@@ -858,6 +916,12 @@ ANCLAS_HEBREO = {
     ("Jue", 16, 13): ("tela", "המסכת"),
     ("Jue", 18, 30): ("Manasés", "מנשה"),         # con la nun suspendida
     ("Jue", 21, 25): ("rey", "מלך"),
+    ("Rut", 1, 16): ("Ruth", "רות"),
+    ("Rut", 2, 3): ("Booz", "לבעז"),
+    ("Rut", 4, 17): ("Obed", "עובד"),
+    ("Rut", 4, 20): ("Salmón", "שלמה"),          # Salmá (שַׂלְמָה) en 4:20 …
+    ("Rut", 4, 21): ("Salmón", "ושלמון"),        # … y Salmón (שַׂלְמוֹן) en 4:21: ver SALMA_SALMON
+    ("Rut", 4, 22): ("David", "דוד"),
 }
 
 # RV -> (Swete, palabra que debe estar en el griego, palabra que debe estar en la RV)
@@ -912,6 +976,44 @@ QUITAR_GRIEGO = {
                      "su 14:14 son las aves de RV 14:15. Sin equivalente en esta edición."),
 }
 
+# ------------------------------------------------------------------ Rut
+# Comprobación versículo a versículo (además del recuento): cada nombre debe caer en los mismos versículos en la RV, el hebreo
+# (consonantes; basta con que la palabra contenga la forma, para admitir prefijos) y el griego (sin acentos ni mayúsculas).
+# El griego no se compara con Booz ni Rut (la LXX añade el sujeto «Βόος»/«Ῥούθ» en varios versículos) ni con Noemí (la RV suple «[Noemi]»).
+NOMBRES_RUT = [  # (RV, formas hebreas, forma griega o None)
+    ("Elimelech", ("אלימלך",), "μελεχ"), ("Mahalón", ("מחלון",), "μααλων"), ("Chelión", ("כליון",), None),
+    ("Orpha", ("ערפה",), "ορφα"), ("Booz", ("בעז",), None), ("Obed", ("עובד", "עבד"), "ωβηδ"), ("Isaí", ("ישי",), "ιεσσα"),
+    ("David", ("דוד",), "δαυει"), ("Phares", ("פרץ",), "φαρες"), ("Mara", ("מרא",), None),
+]
+RATIO_RUT = {"hebreo": (1.15, 2.7), "griego": (0.5, 1.7)}     # letras RV / letras del original, por versículo
+# Salmá / Salmón (Rut 4:20-21): dato del texto hebreo (no variante entre testigos). Se comprueba en el WLC (OSHB) y en el UXLC.
+SALMA_SALMON = {("Rut", 4, 20): "שלמה", ("Rut", 4, 21): "ושלמון"}
+_NOTA_SALMA = ("Dato del texto hebreo (Códice de Leningrado: WLC 4.20 vía OSHB; igual en el UXLC, comprobado al generar): el padre de Booz se escribe "
+               "«שַׂלְמָה» (Salmá) en Rut 4:20 («y Naasón engendró a Salmá») y «שַׂלְמוֹן» (Salmón) en Rut 4:21 («y Salmón engendró a Booz»). "
+               "No es una variante entre manuscritos: son dos grafías dentro del mismo texto. La RV1909 escribe «Salmón» en los dos versículos "
+               "y la LXX de Swete «Σαλμάν» en los dos (comprobado al generar). Que sea la misma persona es lo que da el texto (4:20 lo engendra, "
+               "4:21 engendra a Booz); OSHB les da dos lemas Strong distintos (8009 y 8012).")
+_NOTA_KQ = ("Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): "
+            "el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición "
+            "masorética (nota al margen; aquí no se muestra). Aquí ")
+# Variantes de los rollos de Rut: (ref RV, rollo, palabras que deben estar conservadas en el rollo, palabra del TM, tema, traducciones, nota)
+VARIANTES_RUT = [
+    (("Rut", 1, 2), "4Q104", ("ישבו", "שם"), ("ויהיו", "שם"), "¿«Estuvieron» o «habitaron» allí? (Rut 1:2)",
+     "…y llegaron a los campos de Moab y estuvieron allí (traducción propia, literal).",
+     "…y llegaron al campo de Moab y habitaron allí (traducción propia, literal).",
+     "En 4Q104 (4QRuth-a) el versículo acaba «ו ישבו שם», con las letras conservadas (no reconstruidas) según los datos de Abegg; el TM acaba «ויהיו שם»."),
+    (("Rut", 1, 9), "4Q104", ("קולם",), ("קולן",), "«Alzaron su voz»: sufijo femenino o masculino (Rut 1:9)",
+     "…y alzaron su voz (de ellas) y lloraron (traducción propia, literal).",
+     "…y alzaron su voz (con sufijo masculino, «de ellos») y lloraron (traducción propia, literal).",
+     "En 4Q104 (4QRuth-a) la palabra conservada es «קול׳ם» (Abegg separa el sufijo con «׳»), con sufijo masculino plural; el TM tiene «קולן», femenino plural "
+     "(Noemí y sus nueras). Es una diferencia gramatical: el sentido no cambia."),
+    (("Rut", 3, 15), "2Q17", ("ימד", "שם", "שש"), ("וימד", "שש"), "«Midió seis…» o «midió allí seis…» (Rut 3:15)",
+     "…y midió seis (medidas) de cebada (traducción propia, literal).",
+     "…y midió allí seis (medidas) de cebada (traducción propia, literal).",
+     "En 2Q17 (2QRuth-b) se conservan «ו ימד שם שש שערי[ם]»: tiene «שם» («allí») entre «midió» y «seis», que el TM no tiene."),
+]
+
+
 VIDEOS = [
     ("Gn", "HQMKA6w5ZZM", "Resumen del libro de Génesis: un panorama completo animado (parte 1)", "Gn 1:1-Gn 11:32", "inferido"),
     ("Gn", "MC8BqGu9B8A", "Resumen del libro de Génesis: un panorama completo animado (parte 2)", "Gn 12:1-Gn 50:26", "inferido"),
@@ -928,6 +1030,7 @@ VIDEOS = [
     ("Dt", "lq36F3b-S2U", "El tema principal del libro de Deuteronomio • Serie de la Torá • (episodio 7)", "Dt 1:1-Dt 34:12", "libro entero (tema)"),
     ("Jos", "49ggVrdBN_Y", "Resumen del libro de Josué: un panorama completo animado", "Jos 1:1-Jos 24:33", "inferido"),
     ("Jue", "bCwaJz4L2nU", "Resumen del libro de Jueces: un panorama completo animado", "Jue 1:1-Jue 21:25", "inferido"),
+    ("Rut", "f984fG4-xlE", "Resumen del libro de Rut: un panorama completo animado", "Rut 1:1-Rut 4:22", "inferido"),
 ]
 VIDEOS_DESCARTADOS = {"y2pED55wMM4": "Errata del informe de fuentes: oEmbed responde 404. El ID correcto del resumen de Éxodo (parte 1) es y9pED55wMM4."}
 
@@ -988,7 +1091,9 @@ def main():
     heb.update(leer_oshb(obtener("oshb_deu", sin_red), "Dt"))
     heb.update(leer_oshb(obtener("oshb_jos", sin_red), "Jos"))
     heb.update(leer_oshb(obtener("oshb_jue", sin_red), "Jue"))
-    fuera_l = leer_uxlc_x(obtener("uxlc_jos", sin_red), "Jos") + leer_uxlc_x(obtener("uxlc_jue", sin_red), "Jue")
+    heb.update(leer_oshb(obtener("oshb_rut", sin_red), "Rut"))
+    fuera_l = (leer_uxlc_x(obtener("uxlc_jos", sin_red), "Jos") + leer_uxlc_x(obtener("uxlc_jue", sin_red), "Jue")
+               + leer_uxlc_x(obtener("uxlc_rut", sin_red), "Rut"))
     if set(fuera_l) != set(HEBREO_FUERA_DE_L):
         fallo(f"UXLC: versículos marcados «X» (no están en el Códice de Leningrado) {sorted(fuera_l)}, se esperaban {sorted(HEBREO_FUERA_DE_L)}")
     for k in HEBREO_FUERA_DE_L:
@@ -1491,6 +1596,100 @@ def main():
         "nota": "Texto (las palabras se comprueban en cada edición). La RV1909 sigue al TM (texto corto). Cuál de los dos textos es el más antiguo es interpretación y no se incluye.",
     })
 
+    # ---- Rut: comprobaciones versículo a versículo, Salmá/Salmón, ketiv/qere y variantes de los rollos
+    rut = [k for k in orden_rv if k[0] == "Rut"]
+    if any(r.startswith("Rut ") for r in renum_h) or any(r.startswith("Rut ") for r in ref_griega):
+        fallo("Rut: no debería haber renumeración hebrea ni griega")
+    if sorted(k for k in gr if k[0] == "Rut") != rut or any(k not in heb for k in rut) or len(rut) != 85:
+        fallo(f"Rut: se esperaban los mismos 85 versículos en la RV, el WLC y Swete ({len(rut)})")
+    lineas_tv = obtener("tvtms", sin_red).read_text(encoding="utf-8").splitlines()
+    linea_tv = next((l.split("\t")[2].strip() for l in lineas_tv if l.startswith("Rut\tRuth\t")), "")
+    ult_rv = "; ".join(f"{c}:{max(v for _, cc, v in rut if cc == c)}" for c in sorted({k[1] for k in rut}))
+    if linea_tv != ult_rv or any("Rut." in l for l in lineas_tv):
+        fallo(f"Rut TVTMS: se esperaba la tabla «{ult_rv}» y ningún bloque de Rut; tabla «{linea_tv}»")
+
+    def sin_acentos(t):
+        return "".join(ch for ch in unicodedata.normalize("NFD", t) if unicodedata.category(ch) != "Mn").lower()
+    for nom, formas_h, forma_g in NOMBRES_RUT:
+        en_rv = {k for k in rut if nom in texto_rv[k]}
+        en_h = {k for k in rut if any(f in w for w in consonantes(hebreo[ref(*k)]["t"]).split() for f in formas_h)}
+        if not en_rv or en_rv != en_h:
+            fallo(f"Rut «{nom}»: versículos RV {sorted(en_rv)} ≠ hebreo {sorted(en_h)}")
+        if forma_g and en_rv != {k for k in rut if forma_g in sin_acentos(griego.get(ref(*k), ""))}:
+            fallo(f"Rut «{nom}»: no cae en los mismos versículos en el griego («{forma_g}»)")
+    for k in rut:
+        letras = len(re.sub(r"\W", "", texto_rv[k]))
+        for idioma, txt in (("hebreo", consonantes(hebreo[ref(*k)]["t"]).replace(" ", "")), ("griego", re.sub(r"\W", "", griego.get(ref(*k), "")))):
+            a, b = RATIO_RUT[idioma]
+            if not txt or not a <= letras / len(txt) <= b:
+                fallo(f"{ref(*k)}: proporción de longitud RV/{idioma} fuera de {a}-{b}")
+    # Salmá / Salmón
+    ux_rut = obtener("uxlc_rut", sin_red)
+    for k, forma in SALMA_SALMON.items():
+        otra = "שלמון" if forma == "שלמה" else "שלמה"
+        cons_k, ux_k = consonantes(hebreo[ref(*k)]["t"]).split(), uxlc_consonantes(ux_rut, k[1], k[2]).split()
+        if forma not in cons_k or forma not in ux_k or any(otra in w for w in cons_k + ux_k) or "Salmón" not in texto_rv[k]:
+            fallo(f"{ref(*k)}: se esperaba «{forma}» (no «{otra}») en el WLC y en el UXLC, y «Salmón» en la RV")
+        if "σαλμαν" not in sin_acentos(griego.get(ref(*k), "")):
+            fallo(f"{ref(*k)} griego: se esperaba «Σαλμάν»")
+        hebreo_notas[ref(*k)] = _NOTA_SALMA
+    # ketiv / qere (solo lo que marcan los datos; se cotejan OSHB y UXLC)
+    kq = leer_kq_oshb(obtener("oshb_rut", sin_red), "Rut")
+    kq_ux = leer_kq_uxlc(ux_rut, "Rut")
+
+    def c_(t):
+        return consonantes(t).replace(" ", "")
+    if sorted(kq) != sorted(kq_ux):
+        fallo(f"Rut ketiv/qere: versículos distintos en OSHB {sorted(kq)} y UXLC {sorted(kq_ux)}")
+    n_kq = 0
+    for k, lista in sorted(kq.items()):
+        ks_ux, qs_ux = kq_ux.get(k, ([], []))
+        if [c_(x) for x, _ in lista if x] != [c_(x) for x in ks_ux] or [c_(y) for _, y in lista if y] != [c_(y) for y in qs_ux]:
+            fallo(f"{ref(*k)} ketiv/qere: OSHB {lista} ≠ UXLC {(ks_ux, qs_ux)}")
+        partes = []
+        for x, y in lista:
+            n_kq += 1
+            if x and x not in hebreo[ref(*k)]["t"].replace("־", " ").split():
+                fallo(f"{ref(*k)}: el ketiv «{x}» debería estar en el texto mostrado")
+            if x and y:
+                partes.append(f"se escribe «{x}» y se lee «{y}»")
+            elif x:
+                partes.append(f"se escribe «{x}» pero no se lee (ketiv sin qere)")
+            else:
+                partes.append(f"se lee «{y}», que no está escrito (qere sin ketiv; el texto mostrado no lo incluye)")
+        nota = _NOTA_KQ + "; ".join(partes) + "."
+        if k == ("Rut", 3, 14):
+            w2q17 = [t for t, cons in pal.get("2Q17", {}).get(k, []) if cons and "לתי" in t]
+            if not (w2q17 and re.sub(r"[^א-ת]", "", re.sub(r"\[.*?\]", "", w2q17[0])) == "מלתיו"):
+                fallo(f"2Q17 Rut 3:14: se esperaba «מ[רג]לתי׳ו» conservado ({w2q17})")
+            nota += (" El rollo 2Q17 (2QRuth-b) escribe esta palabra «מ[רג]לתיו» (datos de Abegg; «רג» reconstruido por los editores): "
+                     "con la י de la forma que se lee (qere), no como el ketiv «מרגלתו».")
+        hebreo_notas[ref(*k)] = (hebreo_notas[ref(*k)] + " " + nota) if ref(*k) in hebreo_notas else nota
+    if n_kq != 13:
+        fallo(f"Rut ketiv/qere: se esperaban 13 (10 con ketiv y qere, 1 ketiv sin qere y 2 qere sin ketiv), hay {n_kq}")
+    # variantes de los rollos de Rut
+    for k, sc, en_rollo, en_tm, tema, tr_tm, tr_rollo, nota_v in VARIANTES_RUT:
+        toks = [(re.sub(r"[^א-ת]", "", t), cons and "[" not in t and "]" not in t) for t, cons in pal.get(sc, {}).get(k, [])]
+        ok_rollo = any(all(toks[i + j][0] == w and toks[i + j][1] for j, w in enumerate(en_rollo)) for i in range(len(toks) - len(en_rollo) + 1))
+        h = consonantes(hebreo[ref(*k)]["t"]).split()
+        ok_tm = any(h[i:i + len(en_tm)] == list(en_tm) for i in range(len(h))) and "".join(en_rollo) not in "".join(h)
+        if not (ok_rollo and ok_tm):
+            fallo(f"variante {ref(*k)}: se esperaba {en_rollo} conservado en {sc} y {en_tm} en el TM")
+        lect, _ = dss_lectura(sc, k)
+        llid, djd, sigla = next((r[2], r[4], r[1]) for r in ROLLOS if r[0] == [sc])
+        variantes.append({
+            "ref": ref(*k), "tema": tema,
+            "lecturas": [
+                {"testigos": ["leningrado"], "texto_original": hebreo[ref(*k)]["t"], "traduccion_es": tr_tm,
+                 "nota": "Texto masorético (WLC). La RV1909 sigue aquí al TM."},
+                {"testigos": [sc], "texto_original": lect, "traduccion_es": tr_rollo,
+                 "nota": nota_v + " Transcripción de Abegg: [ ] = texto reconstruido por los editores; # = letra dañada; ? = lectura dudosa; ׳ separa el sufijo."},
+            ],
+            "fuente": f"Edición oficial de {sigla} ({sc}): {djd}, según la Leon Levy Library. Lectura del rollo comprobada en los datos de Abegg (ETCBC/dss); TM en el WLC.",
+            "url_fuente": LL + llid,
+            "nota": "Texto: las palabras se comprueban al generar (en el rollo, solo letras conservadas, no reconstruidas). Cuál de las dos lecturas es la original es interpretación y no se incluye.",
+        })
+
     # ---- videos
     ruta_oe = CACHE / "oembed.json"
     cache_oe = json.loads(ruta_oe.read_text(encoding="utf-8")) if ruta_oe.exists() else {}
@@ -1558,6 +1757,8 @@ def main():
     jue_gr = {k for k in gr if k[0] == "Jue"}
     if jue_gr != {k for k in orden_rv if k[0] == "Jue"}:
         fallo(f"Swete Jueces: se esperaban los mismos {conteo_rv['Jue']} versículos que la RV; hay {len(jue_gr)}")
+    if {k for k in gr if k[0] == "Rut"} != {k for k in orden_rv if k[0] == "Rut"}:
+        fallo("Swete Rut: se esperaban los mismos versículos que la RV")
     ex15 = griego.get("Ex 1:5", "")
     if not ("πέντε" in ex15 or "ἑβδομήκοντα πέντε" in ex15):
         fallo("Ex 1:5 griego")
@@ -1567,12 +1768,29 @@ def main():
         sys.exit(1)
 
     # ---- escribir
+    # La app normaliza el libro «Rut» de biblia.js a su id canónico «Rt» (CANON de app.js) y busca hebreo y griego por la clave exacta
+    # «Rt 1:1»: aquí las referencias de Rut salen con «Rt». (biblia.js sigue con «Rut»; parseRef de la app acepta los dos.)
+    def rt(x):
+        return re.sub(r"^Rut (?=\d)", "Rt ", x) if isinstance(x, str) else x
+
+    def rt_claves(d):
+        return {rt(k): ({**v, "r": rt(v["r"])} if isinstance(v, dict) and "r" in v else v) for k, v in d.items()}
+    hebreo, hebreo_notas, hebreo_sin_texto = rt_claves(hebreo), rt_claves(hebreo_notas), rt_claves(hebreo_sin_texto)
+    griego, ref_griega = rt_claves(griego), {rt(k): rt(v) for k, v in ref_griega.items()}
+    notas_griego, sin_griego, griego_sin_asignar = rt_claves(notas_griego), rt_claves(sin_griego), [rt(x) for x in griego_sin_asignar]
+    for t in testigos:
+        t["contiene"] = [re.sub(r"(^|-)Rut (?=\d)", r"\1Rt ", x) for x in t["contiene"]]
+    for v in variantes:
+        v["ref"] = rt(v["ref"])
+    for v in videos:
+        v["rango"] = re.sub(r"(^|-)Rut (?=\d)", r"\1Rt ", v["rango"])
+        v["libro"] = "Rt" if v["libro"] == "Rut" else v["libro"]
     ahora = datetime.now(timezone.utc).isoformat(timespec="seconds")
     orig = {
         "generado": ahora,
         "fuentes": FUENTES,
         "hebreo_nota": ("Texto hebreo del Códice de Leningrado (WLC 4.20) con vocales y acentos; sin morfología, notas ni marcas de párrafo (פ/ס). "
-                        "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»)."),
+                        "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»). Rut va con el id de la app, «Rt» (p. ej. «Rt 1:1»)."),
         "hebreo": hebreo,
         "hebreo_notas": hebreo_notas,
         "hebreo_sin_texto": hebreo_sin_texto,
@@ -1605,7 +1823,7 @@ def main():
     t2 = escribir_js(DATOS / "griego-swete.js", cab_g, "BIBLIA_GRIEGO", griego_obj)
     lic = obtener("swete_lic", sin_red).read_text(encoding="utf-8")
     (DATOS / "LICENCIA-griego-swete.txt").write_text(
-        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué y Jueces)\n\n"
+        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué, Jueces y Rut)\n\n"
         "Texto: H. B. Swete, The Old Testament in Greek according to the Septuagint, Cambridge University Press (ed. 1930). Dominio público.\n"
         "Digitalización: LXX-Swete-1930, Eliran Wong (https://github.com/eliranwong/LXX-Swete-1930), licencia GNU GPL-3.0.\n"
         "Modificaciones: palabras unidas por versículo y claves pasadas a la numeración de la RV1909 con el TVTMS (STEPBible, CC BY 4.0).\n"
@@ -1616,8 +1834,10 @@ def main():
     # ---- resumen
     print("Conteos RV:", conteo_rv)
     for lib in LIBROS:
-        print(f"  {lib}: hebreo {sum(1 for r in hebreo if r.startswith(lib + ' '))}, "
-              f"griego {sum(1 for r in griego if r.startswith(lib + ' '))}, sin griego {sum(1 for r in sin_griego if r.startswith(lib + ' '))}")
+        lb = "Rt" if lib == "Rut" else lib
+        print(f"  {lib}: hebreo {sum(1 for r in hebreo if r.startswith(lb + ' '))}, "
+              f"griego {sum(1 for r in griego if r.startswith(lb + ' '))}, sin griego {sum(1 for r in sin_griego if r.startswith(lb + ' '))}")
+    print("Rut: ketiv/qere", n_kq, "· notas hebreas de Rut", sorted(k for k in hebreo_notas if k.startswith("Rt ")))
     print("Renumeración hebrea (RV -> TM):", len(renum_h), "versículos; casos:",
           {k: renum_h[k] for k in ("Gn 31:55", "Ex 8:1", "Ex 8:4", "Ex 22:1")})
     print("Griego con referencia distinta:", len(ref_griega), "· griego sin asignar:", len(griego_sin_asignar))

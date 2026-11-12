@@ -1,5 +1,5 @@
 window.BIBLIA_CONTENIDO = {
- "generado": "2026-11-12T17:00:49+00:00",
+ "generado": "2026-11-12T19:41:33+00:00",
  "origen": "clasificación editorial del proyecto, no del texto bíblico",
  "criterio": "Clasificación editorial del proyecto para el perfil niño (7-12 años, leyendo con la familia): se pliega (alto) lo sexual explícito o insinuado con detalle, la violación, el incesto, la matanza descrita y el infanticidio; se anota (medio) lo breve o legal. No se marcan menciones sin detalle ni muerte natural. El texto nunca se borra.",
  "marcas": [
@@ -877,6 +877,13 @@ window.BIBLIA_CONTENIDO = {
    "categoria": "sexual",
    "nivel": "medio",
    "motivo": "Los benjamitas arrebatan por mujeres a las hijas de Silo que salen a bailar."
+  },
+  {
+   "desde": "Rut 3:4",
+   "hasta": "Rut 3:14",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Noemí manda a Rut acostarse de noche a los pies de Booz en la era; él la bendice y la despide al alba. El texto no describe nada más; sin detalle."
   }
  ]
 };

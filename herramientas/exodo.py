@@ -270,7 +270,7 @@ def parse_ex(s):
     return (int(m.group(1)), int(m.group(2)))
 
 
-ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4, "Jos": 5, "Jue": 6}
+ORDEN_LIBRO = {"Gn": 0, "Ex": 1, "Lv": 2, "Nm": 3, "Dt": 4, "Jos": 5, "Jue": 6, "Rut": 7}
 
 
 def parse_ref(s):
@@ -666,7 +666,8 @@ def construir_lugares(rv, menciones_personas, rutas, lugares_gn, errores, avisos
     for _, d in anc.values():
         mod_ids |= set(d.get("modern_associations", {}))
     mod = lm._leer_jsonl(rutas["ob_modern"], mod_ids)
-    gn_por_ob = {l["url_fuente"].split("/ancient/")[1].split("/")[0]: l for l in lugares_gn}
+    gn_por_ob = {l["url_fuente"].split("/ancient/")[1].split("/")[0]: l for l in lugares_gn
+                 if "/ancient/" in (l.get("url_fuente") or "")}  # Judá (Rut) no es de OpenBible
     # obid de OpenBible que es el mismo lugar que uno ya registrado con otro obid (amplía ese lugar)
     por_lid = {l["id"]: l for l in lugares_gn}
     for obid, lid in getattr(cfg, "UNIR_LUGAR", {}).items():

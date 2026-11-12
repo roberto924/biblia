@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-12T17:15:37+00:00",
+ "generado": "2026-11-12T20:02:07+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -68,6 +68,11 @@ window.BIBLIA_DATOS = {
    "id": "Jue",
    "nombre": "Jueces",
    "capitulos": 21
+  },
+  {
+   "id": "Rut",
+   "nombre": "Rut",
+   "capitulos": 4
   }
  ],
  "capitulos": [
@@ -29976,6 +29981,370 @@ window.BIBLIA_DATOS = {
      "texto": "En estos días no había rey en Israel: cada uno hacía lo recto delante de sus ojos."
     }
    ]
+  },
+  {
+   "libro": "Rut",
+   "cap": 1,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ en los días que gobernaban los jueces, que hubo hambre en la tierra. Y un varón de Beth-lehem de Judá, fué á peregrinar en los campos de Moab, él y su mujer, y dos hijos suyos."
+    },
+    {
+     "n": 2,
+     "texto": "El nombre de aquel varón era Elimelech, y el de su mujer Noemi; y los nombres de sus dos hijos eran, Mahalón y Chelión, Ephrateos de Beth-lehem de Judá. Llegaron pues á los campos de Moab, y asentaron allí."
+    },
+    {
+     "n": 3,
+     "texto": "Y murió Elimelech, marido de Noemi, y quedó ella con sus dos hijos;"
+    },
+    {
+     "n": 4,
+     "texto": "Los cuales tomaron para sí mujeres de Moab, el nombre de la una Orpha, y el nombre de la otra Ruth; y habitaron allí unos diez años."
+    },
+    {
+     "n": 5,
+     "texto": "Y murieron también los dos, Mahalón y Chelión, quedando así la mujer [desamparada] de sus dos hijos y de su marido."
+    },
+    {
+     "n": 6,
+     "texto": "Entonces se levantó con sus nueras, y volvióse de los campos de Moab: porque oyó en el campo de Moab que Jehová había visitado á su pueblo para darles pan."
+    },
+    {
+     "n": 7,
+     "texto": "Salió pues del lugar donde había estado, y con ella sus dos nueras, y comenzaron á caminar para volverse á la tierra de Judá."
+    },
+    {
+     "n": 8,
+     "texto": "Y Noemi dijo á sus dos nueras: Andad, volveos cada una á la casa de su madre: Jehová haga con vosotras misericordia, como la habéis hecho con los muertos y conmigo."
+    },
+    {
+     "n": 9,
+     "texto": "Déos Jehová que halléis descanso, cada una en casa de su marido: besólas luego, y ellas lloraron á voz en grito."
+    },
+    {
+     "n": 10,
+     "texto": "Y dijéronle: Ciertamente nosotras volveremos contigo á tu pueblo."
+    },
+    {
+     "n": 11,
+     "texto": "Y Noemi respondió: Volveos, hijas mías: ¿para qué habéis de ir conmigo? ¿tengo yo más hijos en el vientre, que puedan ser vuestros maridos?"
+    },
+    {
+     "n": 12,
+     "texto": "Volveos, hijas mías, é idos; que yo ya soy vieja para ser para varón. Y aunque dijese: Esperanza tengo; y esta noche fuese con varón, y aun pariese hijos;"
+    },
+    {
+     "n": 13,
+     "texto": "¿Habíais vosotras de esperarlos hasta que fuesen grandes? ¿habías vosotras de quedaros sin casar por amor de ellos? No, hijas mías; que mayor amargura tengo yo que vosotras, pues la mano de Jehová ha salido contra mí."
+    },
+    {
+     "n": 14,
+     "texto": "Mas ellas alzando otra vez su voz, lloraron: y Orpha besó á su suegra, mas Ruth se quedó con ella."
+    },
+    {
+     "n": 15,
+     "texto": "Y [Noemi] dijo: He aquí tu cuñada se ha vuelto á su pueblo y á sus dioses; vuélvete tú tras ella."
+    },
+    {
+     "n": 16,
+     "texto": "Y Ruth respondió: No me ruegues que te deje, y me aparte de ti: porque donde quiera que tú fueres, iré yo; y donde quiera que vivieres, viviré. Tu pueblo será mi pueblo, y tu Dios mi Dios."
+    },
+    {
+     "n": 17,
+     "texto": "Donde tú murieres, moriré yo, y allí seré sepultada: así me haga Jehová, y así me dé, que sólo la muerte hará separación entre mí y ti."
+    },
+    {
+     "n": 18,
+     "texto": "Y viendo [Noemi] que estaba tan resuelta á ir con ella, dejó de hablarle."
+    },
+    {
+     "n": 19,
+     "texto": "Anduvieron pues ellas dos hasta que llegaron á Beth-lehem: y aconteció que entrando en Beth-lehem, toda la ciudad se conmovió por razón de ellas, y decían: ¿No es ésta Noemi?"
+    },
+    {
+     "n": 20,
+     "texto": "Y ella les respondía: No me llaméis Noemi, sino llamadme Mara: porque en grande amargura me ha puesto el Todopoderoso."
+    },
+    {
+     "n": 21,
+     "texto": "Yo me fuí llena, mas vacía me ha vuelto Jehová. ¿Por qué me llamaréis Noemi, ya que Jehová ha dado testimonio contra mí, y el Todopoderoso me ha afligido?"
+    },
+    {
+     "n": 22,
+     "texto": "Así volvió Noemi y Ruth Moabita su nuera con ella; volvió de los campos de Moab, y llegaron á Beth-lehem en el principio de la siega de las cebadas."
+    }
+   ]
+  },
+  {
+   "libro": "Rut",
+   "cap": 2,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y TENÍA Noemi un pariente de su marido, varón poderoso y de hecho, de la familia de Elimelech, el cual se llamaba Booz."
+    },
+    {
+     "n": 2,
+     "texto": "Y Ruth la Moabita dijo á Noemi: Ruégote que me dejes ir al campo, y cogeré espigas en pos de aquel á cuyos ojos hallare gracia. Y ella le respondió: Ve, hija mía."
+    },
+    {
+     "n": 3,
+     "texto": "Fué pues, y llegando, espigó en el campo en pos de los segadores: y aconteció por ventura, que la suerte del campo era de Booz, el cual era de la parentela de Elimelech."
+    },
+    {
+     "n": 4,
+     "texto": "Y he aquí que Booz vino de Beth-lehem, y dijo á los segadores: Jehová sea con vosotros. Y ellos respondieron: Jehová te bendiga."
+    },
+    {
+     "n": 5,
+     "texto": "Y Booz dijo á su criado el sobrestante de los segadores: ¿Cúya es esta moza?"
+    },
+    {
+     "n": 6,
+     "texto": "Y el criado, sobrestante de los segadores, respondió y dijo: Es la moza de Moab, que volvió con Noemi de los campos de Moab;"
+    },
+    {
+     "n": 7,
+     "texto": "Y ha dicho: Ruégote que me dejes coger y juntar tras los segadores entre las gavillas: entró pues, y está desde por la mañana hasta ahora, menos un poco que se detuvo en casa."
+    },
+    {
+     "n": 8,
+     "texto": "Entonces Booz dijo á Ruth: Oye, hija mía, no vayas á espigar á otro campo, ni pases de aquí: y aquí estarás con mis mozas."
+    },
+    {
+     "n": 9,
+     "texto": "Mira bien al campo que segaren, y síguelas: porque yo he mandado á los mozos que no te toquen. Y si tuvieres sed, ve á los vasos, y bebe del [agua] que sacaren los mozos."
+    },
+    {
+     "n": 10,
+     "texto": "Ella entonces bajando su rostro inclinóse á tierra, y díjole: ¿Por qué he hallado gracia en tus ojos para que tú me reconozcas, siendo yo extranjera?"
+    },
+    {
+     "n": 11,
+     "texto": "Y respondiendo Booz, díjole: Por cierto se me ha declarado todo lo que has hecho con tu suegra después de la muerte de tu marido, y que dejando á tu padre y á tu madre y la tierra donde naciste, has venido á pueblo que no conociste antes."
+    },
+    {
+     "n": 12,
+     "texto": "Jehová galardone tu obra, y tu remuneración sea llena por Jehová Dios de Israel, que has venido para cubrirte debajo de sus alas."
+    },
+    {
+     "n": 13,
+     "texto": "Y ella dijo: Señor mío, halle yo gracia delante de tus ojos; porque me has consolado, y porque has hablado al corazón de tu sierva, no siendo yo como una de tus criadas."
+    },
+    {
+     "n": 14,
+     "texto": "Y Booz le dijo á la hora de comer: Allégate aquí, y come del pan, y moja tu bocado en el vinagre. Y sentóse ella junto á los segadores, y él le dió del potaje, y comió hasta que se hartó y le sobró."
+    },
+    {
+     "n": 15,
+     "texto": "Levantóse luego para espigar. Y Booz mandó á sus criados, diciendo: Coja también espigas entre las gavillas, y no la avergoncéis;"
+    },
+    {
+     "n": 16,
+     "texto": "Antes echaréis á sabiendas de los manojos, y la dejaréis que coja, y no la reprendáis."
+    },
+    {
+     "n": 17,
+     "texto": "Y espigó en el campo hasta la tarde, y desgranó lo que había cogido, y fué como un epha de cebada."
+    },
+    {
+     "n": 18,
+     "texto": "Y tomólo, y vínose á la ciudad; y su suegra vió lo que había cogido. Sacó también luego lo que le había sobrado después de harta, y dióselo."
+    },
+    {
+     "n": 19,
+     "texto": "Y díjole su suegra: ¿Dónde has espigado hoy? ¿y dónde has trabajado? bendito sea el que te ha reconocido. Y ella declaró á su suegra lo que le había acontecido con aquél, y dijo: El nombre del varón con quien hoy he trabajado es Booz."
+    },
+    {
+     "n": 20,
+     "texto": "Y dijo Noemi á su nuera: Sea él bendito de Jehová, pues que no ha rehusado á los vivos la benevolencia que tuvo para con los finados. Díjole después Noemi: Nuestro pariente es aquel varón, y de nuestros redentores es."
+    },
+    {
+     "n": 21,
+     "texto": "Y Ruth Moabita dijo: A más de esto me ha dicho: Júntate con mis criados, hasta que hayan acabado toda mi siega."
+    },
+    {
+     "n": 22,
+     "texto": "Y Noemi respondió á Ruth su nuera: Mejor es, hija mía, que salgas con sus criadas, que no que te encuentren en otro campo."
+    },
+    {
+     "n": 23,
+     "texto": "Estuvo pues junta con las mozas de Booz espigando, hasta que la siega de las cebadas y la de los trigos fué acabada; mas con su suegra habitó."
+    }
+   ]
+  },
+  {
+   "libro": "Rut",
+   "cap": 3,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y DÍJOLE su suegra Noemi: Hija mía, ¿no te tengo de buscar descanso, que te sea bueno?"
+    },
+    {
+     "n": 2,
+     "texto": "¿No es Booz nuestro pariente, con cuyas mozas tú has estado? He aquí que él avienta esta noche la parva de las cebadas."
+    },
+    {
+     "n": 3,
+     "texto": "Te lavarás pues, y te ungirás, y vistiéndote tus vestidos, pasarás á la era; mas no te darás á conocer al varón hasta que él haya acabado de comer y de beber."
+    },
+    {
+     "n": 4,
+     "texto": "Y cuando él se acostare, repara tú el lugar donde él se acostará, é irás, y descubrirás los pies, y te acostarás allí; y él te dirá lo que hayas de hacer."
+    },
+    {
+     "n": 5,
+     "texto": "Y le respondió: Haré todo lo que tú me mandares."
+    },
+    {
+     "n": 6,
+     "texto": "Descendió pues á la era, é hizo todo lo que su suegra le había mandado."
+    },
+    {
+     "n": 7,
+     "texto": "Y como Booz hubo comido y bebido, y su corazón estuvo contento, retiróse á dormir á un lado del montón. Entonces ella vino calladamente, y descubrió los pies, y acostóse."
+    },
+    {
+     "n": 8,
+     "texto": "Y aconteció, que á la media noche se estremeció aquel hombre, y palpó: y he aquí, la mujer que estaba acostada á sus pies."
+    },
+    {
+     "n": 9,
+     "texto": "Entonces él dijo: ¿Quién eres? Y ella respondió: Yo soy Ruth tu sierva: extiende el borde [de tu capa] sobre tu sierva, por cuanto eres pariente cercano."
+    },
+    {
+     "n": 10,
+     "texto": "Y él dijo: Bendita seas tú de Jehová, hija mía; que has hecho mejor tu postrera gracia que la primera, no yendo tras los mancebos, sean pobres ó ricos."
+    },
+    {
+     "n": 11,
+     "texto": "Ahora pues, no temas, hija mía: yo haré contigo lo que tú dijeres, pues que toda la puerta de mi pueblo sabe que eres mujer virtuosa."
+    },
+    {
+     "n": 12,
+     "texto": "Y ahora, aunque es cierto que yo soy pariente cercano, con todo eso hay pariente más cercano que yo."
+    },
+    {
+     "n": 13,
+     "texto": "Reposa esta noche, y cuando sea de día, si él te redimiere, bien, redímate; mas si él no te quisiere redimir, yo te redimiré, vive Jehová. Descansa pues hasta la mañana."
+    },
+    {
+     "n": 14,
+     "texto": "Y después que reposó á sus pies hasta la mañana, levantóse, antes que nadie pudiese conocer á otro. Y él dijo: No se sepa que haya venido mujer á la era."
+    },
+    {
+     "n": 15,
+     "texto": "Después le dijo: Llega el lienzo que traes sobre ti, y ten de él. Y teniéndolo ella, él midió seis [medidas] de cebada, y púsoselas á cuestas: y vínose ella á la ciudad."
+    },
+    {
+     "n": 16,
+     "texto": "Así que vino á su suegra, ésta le dijo: ¿Qué pues, hija mía? Y declaróle ella todo lo que con aquel varón le había acontecido."
+    },
+    {
+     "n": 17,
+     "texto": "Y dijo: Estas seis [medidas] de cebada me dió, diciéndome: Porque no vayas vacía á tu suegra."
+    },
+    {
+     "n": 18,
+     "texto": "Entonces [Noemi] dijo: Reposa, hija mía, hasta que sepas cómo cae la cosa: porque aquel hombre no parará hasta que hoy concluya el negocio."
+    }
+   ]
+  },
+  {
+   "libro": "Rut",
+   "cap": 4,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y BOOZ subió á la puerta y sentóse allí: y he aquí pasaba aquel pariente del cual había Booz hablado, y díjole: Eh, fulano, ven acá y siéntate. Y él vino, y sentóse."
+    },
+    {
+     "n": 2,
+     "texto": "Entonces él tomó diez varones de los ancianos de la ciudad, y dijo: Sentaos aquí. Y ellos se sentaron."
+    },
+    {
+     "n": 3,
+     "texto": "Luego dijo al pariente: Noemi, que ha vuelto del campo de Moab, vende una parte de las tierras que tuvo nuestro hermano Elimelech;"
+    },
+    {
+     "n": 4,
+     "texto": "Y yo decidí hacértelo saber, y decirte que la tomes delante de los que están aquí sentados, y delante de los ancianos de mi pueblo. Si hubieres de redimir, redime; y si no quisieres redimir, decláramelo para que yo lo sepa: porque no hay otro que redima sino tú, y yo después de ti. Y él respondió: Yo redimiré."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces replicó Booz: El mismo día que tomares las tierras de mano de Noemi, has de tomar también á Ruth Moabita, mujer del difunto, para que suscites el nombre del muerto sobre su posesión."
+    },
+    {
+     "n": 6,
+     "texto": "Y respondió el pariente: No puedo redimir por mi parte, porque echaría á perder mi heredad: redime tú [usando de] mi derecho, porque yo no podré redimir."
+    },
+    {
+     "n": 7,
+     "texto": "Había ya de largo tiempo esta costumbre en Israel en la redención ó contrato, que para la confirmación de cualquier negocio, el uno se quitaba el zapato y lo daba á su compañero: y este era el testimonio en Israel."
+    },
+    {
+     "n": 8,
+     "texto": "Entonces el pariente dijo á Booz: Tómalo tú. Y descalzó su zapato."
+    },
+    {
+     "n": 9,
+     "texto": "Y Booz dijo á los ancianos y á todo el pueblo: Vosotros sois hoy testigos de que tomo todas las cosas que fueron de Elimelech, y todo lo que fué de Chelión y de Mahalón, de mano de Noemi;"
+    },
+    {
+     "n": 10,
+     "texto": "Y que también tomo por mi mujer á Ruth Moabita, mujer de Mahalón, para suscitar el nombre del difunto sobre su heredad, para que el nombre del muerto no se borre de entre sus hermanos y de la puerta de su lugar. Vosotros sois hoy testigos."
+    },
+    {
+     "n": 11,
+     "texto": "Y dijeron todos los del pueblo que estaban á la puerta con los ancianos: Testigos somos. Jehová haga á la mujer que entra en tu casa como á Rachêl y á Lea, las cuales dos edificaron la casa de Israel; y tú seas ilustre en Ephrata, y tengas nombradía en Beth-lehem;"
+    },
+    {
+     "n": 12,
+     "texto": "Y de la simiente que Jehová te diere de aquesta moza, sea tu casa como la casa de Phares, al que parió Thamar á Judá."
+    },
+    {
+     "n": 13,
+     "texto": "Booz pues tomó á Ruth, y ella fué su mujer; y luego que entró á ella, Jehová le dió que concibiese y pariese un hijo."
+    },
+    {
+     "n": 14,
+     "texto": "Y las mujeres decían á Noemi: Loado sea Jehová, que hizo que no te faltase hoy pariente, cuyo nombre será nombrado en Israel."
+    },
+    {
+     "n": 15,
+     "texto": "El cual será restaurador de tu alma, y el que sustentará tu vejez; pues que tu nuera, la cual te ama y te vale más que siete hijos, le ha parido."
+    },
+    {
+     "n": 16,
+     "texto": "Y tomando Noemi el hijo, púsolo en su regazo, y fuéle su ama."
+    },
+    {
+     "n": 17,
+     "texto": "Y las vecinas diciendo, A Noemi ha nacido un hijo, le pusieron nombre; y llamáronle Obed. Este es padre de Isaí, padre de David."
+    },
+    {
+     "n": 18,
+     "texto": "Y estas son las generaciones de Phares: Phares engendró á Hesrón;"
+    },
+    {
+     "n": 19,
+     "texto": "Y Hesrón engendró á Ram, y Ram engendró á Aminadab;"
+    },
+    {
+     "n": 20,
+     "texto": "Y Aminadab engendró á Nahasón, y Nahasón engendró á Salmón;"
+    },
+    {
+     "n": 21,
+     "texto": "Y Salmón engendró á Booz, y Booz engendró á Obed;"
+    },
+    {
+     "n": 22,
+     "texto": "Y Obed engendró á Isaí, é Isaí engendró á David."
+    }
+   ]
   }
  ],
  "personas": [
@@ -34474,9 +34843,10 @@ window.BIBLIA_DATOS = {
     "Gn 46:19",
     "Gn 46:22",
     "Gn 46:25",
-    "Gn 48:7"
+    "Gn 48:7",
+    "Rut 4:11"
    ],
-   "nota": "En la Reina-Valera 1909: Rachêl."
+   "nota": "En la Reina-Valera 1909: Rachêl. Rut 4:11: con Lea, «las cuales dos edificaron la casa de Israel»."
   },
   {
    "id": "Leah_1",
@@ -34524,9 +34894,10 @@ window.BIBLIA_DATOS = {
     "Gn 35:26",
     "Gn 46:15",
     "Gn 46:18",
-    "Gn 49:31"
+    "Gn 49:31",
+    "Rut 4:11"
    ],
-   "nota": ""
+   "nota": "Rut 4:11: con Raquel, «las cuales dos edificaron la casa de Israel»."
   },
   {
    "id": "Zilpah_1",
@@ -34814,7 +35185,8 @@ window.BIBLIA_DATOS = {
     "Jue 1:8",
     "Jue 1:9",
     "Jue 1:16",
-    "Jue 17:7"
+    "Jue 17:7",
+    "Rut 4:12"
    ],
    "nota": ""
   },
@@ -36866,7 +37238,8 @@ window.BIBLIA_DATOS = {
     "Gn 38:13",
     "Gn 38:24",
     "Gn 38:29",
-    "Gn 38:30"
+    "Gn 38:30",
+    "Rut 4:12"
    ],
    "nota": "En la Reina-Valera 1909: Thamar."
   },
@@ -36885,9 +37258,11 @@ window.BIBLIA_DATOS = {
     "Gn 38:29",
     "Gn 46:12",
     "Nm 26:20",
-    "Nm 26:21"
+    "Nm 26:21",
+    "Rut 4:12",
+    "Rut 4:18"
    ],
-   "nota": "En la Reina-Valera 1909: Phares."
+   "nota": "En la Reina-Valera 1909: Phares. Rut 4:18-22: «las generaciones de Phares» llegan hasta David."
   },
   {
    "id": "Zerah_3",
@@ -37405,7 +37780,9 @@ window.BIBLIA_DATOS = {
    "primera_ref": "Gn 46:12",
    "refs": [
     "Gn 46:12",
-    "Nm 26:21"
+    "Nm 26:21",
+    "Rut 4:18",
+    "Rut 4:19"
    ],
    "nota": "En Números la RV1909 escribe también «Hesrón»."
   },
@@ -39631,7 +40008,9 @@ window.BIBLIA_DATOS = {
     "Nm 2:3",
     "Nm 7:12",
     "Nm 7:17",
-    "Nm 10:14"
+    "Nm 10:14",
+    "Rut 4:19",
+    "Rut 4:20"
    ],
    "nota": ""
   },
@@ -39771,7 +40150,8 @@ window.BIBLIA_DATOS = {
    "nombre_rv1909": "Naasón",
    "rol": "",
    "formas_rv1909": [
-    "Naasón"
+    "Naasón",
+    "Nahasón"
    ],
    "sin_nombre": false,
    "sexo": "m",
@@ -39782,9 +40162,10 @@ window.BIBLIA_DATOS = {
     "Nm 2:3",
     "Nm 7:12",
     "Nm 7:17",
-    "Nm 10:14"
+    "Nm 10:14",
+    "Rut 4:20"
    ],
-   "nota": ""
+   "nota": "En Rut la RV1909 escribe también «Nahasón»."
   },
   {
    "id": "Abiasaph_1",
@@ -43901,6 +44282,298 @@ window.BIBLIA_DATOS = {
     "Jue 18:30"
    ],
    "nota": "Jue 18:30: «Jonathán, hijo de Gersón, hijo de Manasés». Distinto de Manasés hijo de José (Gn 41:51), según BibleData."
+  },
+  {
+   "id": "Chilion_1",
+   "nombre": "Quelión",
+   "nombre_rv1909": "Chelión",
+   "rol": "hijo de Elimelec y Noemí",
+   "formas_rv1909": [
+    "Chelión"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 1:2",
+   "refs": [
+    "Rut 1:2",
+    "Rut 1:3",
+    "Rut 1:4",
+    "Rut 1:5",
+    "Rut 4:9"
+   ],
+   "nota": "En la Reina-Valera 1909: Chelión. Muere en Moab (Rut 1:5)."
+  },
+  {
+   "id": "Elimelech_1",
+   "nombre": "Elimelec",
+   "nombre_rv1909": "Elimelech",
+   "rol": "varón de Belén de Judá, marido de Noemí",
+   "formas_rv1909": [
+    "Elimelech"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 1:2",
+   "refs": [
+    "Rut 1:2",
+    "Rut 1:3",
+    "Rut 2:1",
+    "Rut 2:3",
+    "Rut 4:3",
+    "Rut 4:9"
+   ],
+   "nota": "En la Reina-Valera 1909: Elimelech."
+  },
+  {
+   "id": "Mahlon_1",
+   "nombre": "Mahlón",
+   "nombre_rv1909": "Mahalón",
+   "rol": "hijo de Elimelec y Noemí, marido de Rut",
+   "formas_rv1909": [
+    "Mahalón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 1:2",
+   "refs": [
+    "Rut 1:2",
+    "Rut 1:3",
+    "Rut 1:5",
+    "Rut 4:9",
+    "Rut 4:10"
+   ],
+   "nota": "En la Reina-Valera 1909: Mahalón. Muere en Moab (Rut 1:5). Rut 4:10: «Ruth Moabita, mujer de Mahalón»."
+  },
+  {
+   "id": "Naomi_1",
+   "nombre": "Noemí",
+   "nombre_rv1909": "Noemi",
+   "rol": "mujer de Elimelec; vuelve de Moab a Belén",
+   "formas_rv1909": [
+    "Noemi",
+    "Mara"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Rut 1:2",
+   "refs": [
+    "Rut 1:2",
+    "Rut 1:3",
+    "Rut 1:8",
+    "Rut 1:11",
+    "Rut 1:19",
+    "Rut 1:20",
+    "Rut 1:21",
+    "Rut 1:22",
+    "Rut 2:1",
+    "Rut 2:2",
+    "Rut 2:6",
+    "Rut 2:18",
+    "Rut 2:20",
+    "Rut 2:22",
+    "Rut 3:1",
+    "Rut 4:3",
+    "Rut 4:5",
+    "Rut 4:9",
+    "Rut 4:14",
+    "Rut 4:16",
+    "Rut 4:17"
+   ],
+   "nota": "En la Reina-Valera 1909: Noemi/Mara. Rut 1:20: «No me llaméis Noemi, sino llamadme Mara»: Mara es el nombre que ella pide, no otra persona.",
+   "identidad": {
+    "certeza": "texto",
+    "refs": [
+     "Rut 1:20"
+    ],
+    "nombres_rv1909": [
+     "Noemi",
+     "Mara"
+    ],
+    "fuente": "rv1909",
+    "nota": "Rut 1:20: «No me llaméis Noemi, sino llamadme Mara»."
+   }
+  },
+  {
+   "id": "Orpah_1",
+   "nombre": "Orfa",
+   "nombre_rv1909": "Orpha",
+   "rol": "moabita, nuera de Noemí; vuelve a su pueblo",
+   "formas_rv1909": [
+    "Orpha"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Rut 1:4",
+   "refs": [
+    "Rut 1:4",
+    "Rut 1:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Orpha. Rut 1:14: «Orpha besó á su suegra, mas Ruth se quedó con ella»."
+  },
+  {
+   "id": "Ruth_1",
+   "nombre": "Rut",
+   "nombre_rv1909": "Ruth",
+   "rol": "moabita, nuera de Noemí, mujer de Booz",
+   "formas_rv1909": [
+    "Ruth"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "Rut 1:4",
+   "refs": [
+    "Rut 1:4",
+    "Rut 1:14",
+    "Rut 1:16",
+    "Rut 1:22",
+    "Rut 2:2",
+    "Rut 2:8",
+    "Rut 2:21",
+    "Rut 2:22",
+    "Rut 3:9",
+    "Rut 4:5",
+    "Rut 4:10",
+    "Rut 4:13"
+   ],
+   "nota": "En la Reina-Valera 1909: Ruth."
+  },
+  {
+   "id": "Boaz_1",
+   "nombre": "Booz",
+   "nombre_rv1909": "Booz",
+   "rol": "pariente de Elimelec, varón poderoso de Belén",
+   "formas_rv1909": [
+    "Booz"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 2:1",
+   "refs": [
+    "Rut 2:1",
+    "Rut 2:3",
+    "Rut 2:4",
+    "Rut 2:5",
+    "Rut 2:8",
+    "Rut 2:11",
+    "Rut 2:14",
+    "Rut 2:15",
+    "Rut 2:19",
+    "Rut 2:23",
+    "Rut 3:2",
+    "Rut 3:7",
+    "Rut 4:1",
+    "Rut 4:5",
+    "Rut 4:8",
+    "Rut 4:9",
+    "Rut 4:13",
+    "Rut 4:21"
+   ],
+   "nota": "Rut 2:1: «un pariente de su marido» (de Noemí), «de la familia de Elimelech»; Rut 2:20: «de nuestros redentores es». Rut 3:12: hay otro pariente más cercano. El texto no precisa el grado de parentesco."
+  },
+  {
+   "id": "Pariente_de_Rut_4",
+   "nombre": "El pariente más cercano (sin nombre)",
+   "nombre_rv1909": null,
+   "formas_rv1909": [],
+   "rol": "pariente más cercano que Booz; renuncia a redimir",
+   "sin_nombre": true,
+   "sexo": "m",
+   "primera_ref": "Rut 3:12",
+   "refs": [
+    "Rut 3:12",
+    "Rut 4:1",
+    "Rut 4:3",
+    "Rut 4:6",
+    "Rut 4:8"
+   ],
+   "nota": "El texto no da su nombre: Booz le dice «Eh, fulano» (Rut 4:1). Es pariente más cercano que Booz (Rut 3:12) y renuncia a redimir la heredad de Elimelec y a tomar a Rut (Rut 4:6-8).",
+   "ref_mencion": "Rut 3:12"
+  },
+  {
+   "id": "Obed_1",
+   "nombre": "Obed",
+   "nombre_rv1909": "Obed",
+   "rol": "hijo de Booz y Rut, abuelo de David",
+   "formas_rv1909": [
+    "Obed"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 4:17",
+   "refs": [
+    "Rut 4:13",
+    "Rut 4:17",
+    "Rut 4:21",
+    "Rut 4:22"
+   ],
+   "nota": "Rut 4:17: le ponen nombre «las vecinas»; «Este es padre de Isaí, padre de David»."
+  },
+  {
+   "id": "David_1",
+   "nombre": "David",
+   "nombre_rv1909": "David",
+   "rol": "hijo de Isaí",
+   "formas_rv1909": [
+    "David"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 4:17",
+   "refs": [
+    "Rut 4:17",
+    "Rut 4:22"
+   ],
+   "nota": "En Rut solo aparece en la genealogía (Rut 4:17, 4:22), como hijo de Isaí."
+  },
+  {
+   "id": "Jesse_1",
+   "nombre": "Isaí",
+   "nombre_rv1909": "Isaí",
+   "rol": "padre de David",
+   "formas_rv1909": [
+    "Isaí"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 4:17",
+   "refs": [
+    "Rut 4:17",
+    "Rut 4:22"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ram_1",
+   "nombre": "Ram",
+   "nombre_rv1909": "Ram",
+   "rol": "",
+   "formas_rv1909": [
+    "Ram"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 4:19",
+   "refs": [
+    "Rut 4:19"
+   ],
+   "nota": "Rut 4:19: «Hesrón engendró á Ram, y Ram engendró á Aminadab». BibleData lo hace abuelo de Aminadab según Lc 3:33 (Fuente externa, fuera del AT); aquí se sigue lo que dice Rut 4:19."
+  },
+  {
+   "id": "Salmon_1",
+   "nombre": "Salmón",
+   "nombre_rv1909": "Salmón",
+   "rol": "",
+   "formas_rv1909": [
+    "Salmón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "Rut 4:20",
+   "refs": [
+    "Rut 4:20",
+    "Rut 4:21"
+   ],
+   "nota": "La RV1909 de eBible escribe «Salmón» en Rut 4:20 y 4:21 (Brenton: «Salmon» en ambos); BibleData lo registra como una sola persona (Salmon_1). No confundir con el monte Salmón (Jue 9:48)."
   }
  ],
  "relaciones": [
@@ -47024,7 +47697,7 @@ window.BIBLIA_DATOS = {
    "ref": "Gn 38:29",
    "certeza": "inferido",
    "fuente": "bibledata",
-   "nota": "El texto no presenta a Judá y Tamar como matrimonio (Gn 38:15-18, 26)."
+   "nota": "El texto no presenta a Judá y Tamar como matrimonio (Gn 38:15-18, 26). También Rut 4:12: «Phares, al que parió Thamar á Judá»."
   },
   {
    "de": "Tamar_1",
@@ -47033,7 +47706,7 @@ window.BIBLIA_DATOS = {
    "ref": "Gn 38:29",
    "certeza": "inferido",
    "fuente": "bibledata",
-   "nota": "El texto no presenta a Judá y Tamar como matrimonio (Gn 38:15-18, 26)."
+   "nota": "El texto no presenta a Judá y Tamar como matrimonio (Gn 38:15-18, 26). También Rut 4:12: «Phares, al que parió Thamar»."
   },
   {
    "de": "Judah_1",
@@ -47261,7 +47934,7 @@ window.BIBLIA_DATOS = {
    "ref": "Gn 46:12",
    "certeza": "explicito",
    "fuente": "bibledata",
-   "nota": ""
+   "nota": "También Rut 4:18: «Phares engendró á Hesrón»."
   },
   {
    "de": "Issachar_1",
@@ -47893,7 +48566,7 @@ window.BIBLIA_DATOS = {
    "ref": "Ex 6:23",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "BibleData la marca inferida; el versículo nombra a ambos."
+   "nota": "BibleData la marca inferida; el versículo nombra a ambos. También Rut 4:20: «Aminadab engendró á Nahasón»."
   },
   {
    "de": "Elisheba_1",
@@ -48961,6 +49634,166 @@ window.BIBLIA_DATOS = {
    "fuente": "rv1909",
    "nota": "",
    "cita": "Gersón, hijo de Manasés"
+  },
+  {
+   "de": "Elimelech_1",
+   "a": "Chilion_1",
+   "tipo": "padre",
+   "ref": "Rut 1:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "los nombres de sus dos hijos eran, Mahalón y Chelión"
+  },
+  {
+   "de": "Elimelech_1",
+   "a": "Mahlon_1",
+   "tipo": "padre",
+   "ref": "Rut 1:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "los nombres de sus dos hijos eran, Mahalón y Chelión"
+  },
+  {
+   "de": "Elimelech_1",
+   "a": "Naomi_1",
+   "tipo": "conyuge",
+   "ref": "Rut 1:3",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 1:2: «El nombre de aquel varón era Elimelech, y el de su mujer Noemi».",
+   "cita": "Elimelech, marido de Noemi"
+  },
+  {
+   "de": "Naomi_1",
+   "a": "Chilion_1",
+   "tipo": "madre",
+   "ref": "Rut 1:3",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 1:2 los nombra: «Mahalón y Chelión».",
+   "cita": "quedó ella con sus dos hijos"
+  },
+  {
+   "de": "Naomi_1",
+   "a": "Mahlon_1",
+   "tipo": "madre",
+   "ref": "Rut 1:3",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 1:2 los nombra: «Mahalón y Chelión».",
+   "cita": "quedó ella con sus dos hijos"
+  },
+  {
+   "de": "Chilion_1",
+   "a": "Orpah_1",
+   "tipo": "conyuge",
+   "ref": "Rut 1:4",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Rut 1:4 no dice quién se casó con quién; Rut 4:10 dice que Rut era «mujer de Mahalón», de donde se infiere que Orfa lo era de Quelión.",
+   "cita": "el nombre de la una Orpha, y el nombre de la otra Ruth"
+  },
+  {
+   "de": "Mahlon_1",
+   "a": "Ruth_1",
+   "tipo": "conyuge",
+   "ref": "Rut 4:10",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 1:4: los dos hijos «tomaron para sí mujeres de Moab».",
+   "cita": "Ruth Moabita, mujer de Mahalón"
+  },
+  {
+   "de": "Boaz_1",
+   "a": "Ruth_1",
+   "tipo": "conyuge",
+   "ref": "Rut 4:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 4:10: «tomo por mi mujer á Ruth Moabita».",
+   "cita": "Booz pues tomó á Ruth, y ella fué su mujer"
+  },
+  {
+   "de": "Ruth_1",
+   "a": "Obed_1",
+   "tipo": "madre",
+   "ref": "Rut 4:13",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 4:17: «llamáronle Obed».",
+   "cita": "Jehová le dió que concibiese y pariese un hijo"
+  },
+  {
+   "de": "Jesse_1",
+   "a": "David_1",
+   "tipo": "padre",
+   "ref": "Rut 4:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 4:22: «Isaí engendró á David».",
+   "cita": "Isaí, padre de David"
+  },
+  {
+   "de": "Obed_1",
+   "a": "Jesse_1",
+   "tipo": "padre",
+   "ref": "Rut 4:17",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 4:22: «Obed engendró á Isaí».",
+   "cita": "Este es padre de Isaí"
+  },
+  {
+   "de": "Hezron_2",
+   "a": "Ram_1",
+   "tipo": "padre",
+   "ref": "Rut 4:19",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Hesrón engendró á Ram"
+  },
+  {
+   "de": "Ram_1",
+   "a": "Amminadab_1",
+   "tipo": "padre",
+   "ref": "Rut 4:19",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "BibleData la registra como abuelo/nieto (según Lc 3:33, Fuente externa); Rut 4:19 dice «engendró».",
+   "cita": "Ram engendró á Aminadab"
+  },
+  {
+   "de": "Nahshon_1",
+   "a": "Salmon_1",
+   "tipo": "padre",
+   "ref": "Rut 4:20",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Nahasón engendró á Salmón"
+  },
+  {
+   "de": "Boaz_1",
+   "a": "Obed_1",
+   "tipo": "padre",
+   "ref": "Rut 4:21",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Rut 4:13 y 4:17.",
+   "cita": "Booz engendró á Obed"
+  },
+  {
+   "de": "Salmon_1",
+   "a": "Boaz_1",
+   "tipo": "padre",
+   "ref": "Rut 4:21",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Salmón engendró á Booz"
   }
  ],
  "edades": [
@@ -56248,6 +57081,76 @@ window.BIBLIA_DATOS = {
    "titulo_origen": "editorial",
    "resumen": "Los benjamitas que faltan toman mujeres de las hijas de Silo en la fiesta. «No había rey en Israel».",
    "seccion": "El levita de Efraín y la guerra contra Benjamín (Jue 19–21)"
+  },
+  {
+   "id": "rut-01",
+   "libro": "Rut",
+   "inicio": "Rut 1:1",
+   "fin": "Rut 1:5",
+   "titulo": "Elimelec y los suyos en Moab",
+   "titulo_origen": "editorial",
+   "resumen": "En días de los jueces, por el hambre, Elimelec de Belén va a Moab con Noemí y sus dos hijos; los hijos se casan con Orfa y Rut, y mueren los tres hombres.",
+   "seccion": "De Moab a Belén (Rut 1)"
+  },
+  {
+   "id": "rut-02",
+   "libro": "Rut",
+   "inicio": "Rut 1:6",
+   "fin": "Rut 1:22",
+   "titulo": "«Tu pueblo será mi pueblo»",
+   "titulo_origen": "editorial",
+   "resumen": "Noemí vuelve a Judá; Orfa regresa a su pueblo y Rut se queda con ella. En Belén, Noemí pide que la llamen Mara.",
+   "seccion": "De Moab a Belén (Rut 1)"
+  },
+  {
+   "id": "rut-03",
+   "libro": "Rut",
+   "inicio": "Rut 2:1",
+   "fin": "Rut 2:13",
+   "titulo": "Rut espiga en el campo de Booz",
+   "titulo_origen": "editorial",
+   "resumen": "Rut espiga tras los segadores en el campo de Booz, pariente de Elimelec, que la deja quedarse con sus criadas y la protege.",
+   "seccion": "En el campo de Booz (Rut 2)"
+  },
+  {
+   "id": "rut-04",
+   "libro": "Rut",
+   "inicio": "Rut 2:14",
+   "fin": "Rut 2:23",
+   "titulo": "«De nuestros redentores es»",
+   "titulo_origen": "editorial",
+   "resumen": "Booz le da de comer y manda dejarle espigas; Noemí reconoce en él a un pariente y Rut espiga hasta el fin de la siega.",
+   "seccion": "En el campo de Booz (Rut 2)"
+  },
+  {
+   "id": "rut-05",
+   "libro": "Rut",
+   "inicio": "Rut 3:1",
+   "fin": "Rut 3:18",
+   "titulo": "En la era de Booz",
+   "titulo_origen": "editorial",
+   "resumen": "Por consejo de Noemí, Rut va de noche a la era y se acuesta a los pies de Booz; él promete redimirla si no lo hace el pariente más cercano y la despide con seis medidas de cebada.",
+   "seccion": "La era (Rut 3)"
+  },
+  {
+   "id": "rut-06",
+   "libro": "Rut",
+   "inicio": "Rut 4:1",
+   "fin": "Rut 4:12",
+   "titulo": "El pariente en la puerta",
+   "titulo_origen": "editorial",
+   "resumen": "Ante diez ancianos, el pariente más cercano renuncia a redimir y se quita el zapato; Booz adquiere lo de Elimelec y toma por mujer a Rut.",
+   "seccion": "La puerta y la genealogía (Rut 4)"
+  },
+  {
+   "id": "rut-07",
+   "libro": "Rut",
+   "inicio": "Rut 4:13",
+   "fin": "Rut 4:22",
+   "titulo": "Nace Obed; de Fares a David",
+   "titulo_origen": "editorial",
+   "resumen": "Rut da a luz a Obed y las vecinas bendicen a Noemí; Obed es padre de Isaí, padre de David. Genealogía de Fares a David.",
+   "seccion": "La puerta y la genealogía (Rut 4)"
   }
  ],
  "menciones": [
@@ -86460,6 +87363,570 @@ window.BIBLIA_DATOS = {
    "persona": "Benjamin_1",
    "inicio": 15,
    "fin": 23
+  },
+  {
+   "ref": "Rut 1:2",
+   "persona": "Elimelech_1",
+   "inicio": 29,
+   "fin": 38
+  },
+  {
+   "ref": "Rut 1:2",
+   "persona": "Naomi_1",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "Rut 1:2",
+   "persona": "Mahlon_1",
+   "inicio": 101,
+   "fin": 108
+  },
+  {
+   "ref": "Rut 1:2",
+   "persona": "Chilion_1",
+   "inicio": 111,
+   "fin": 118
+  },
+  {
+   "ref": "Rut 1:3",
+   "persona": "Elimelech_1",
+   "inicio": 8,
+   "fin": 17
+  },
+  {
+   "ref": "Rut 1:3",
+   "persona": "Naomi_1",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "Rut 1:4",
+   "persona": "Orpah_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "Rut 1:4",
+   "persona": "Ruth_1",
+   "inicio": 94,
+   "fin": 98
+  },
+  {
+   "ref": "Rut 1:5",
+   "persona": "Mahlon_1",
+   "inicio": 28,
+   "fin": 35
+  },
+  {
+   "ref": "Rut 1:5",
+   "persona": "Chilion_1",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "Rut 1:8",
+   "persona": "Naomi_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Rut 1:11",
+   "persona": "Naomi_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Rut 1:14",
+   "persona": "Orpah_1",
+   "inicio": 47,
+   "fin": 52
+  },
+  {
+   "ref": "Rut 1:14",
+   "persona": "Ruth_1",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "Rut 1:16",
+   "persona": "Ruth_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 1:19",
+   "persona": "Naomi_1",
+   "inicio": 168,
+   "fin": 173
+  },
+  {
+   "ref": "Rut 1:20",
+   "persona": "Naomi_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "Rut 1:20",
+   "persona": "Naomi_1",
+   "inicio": 57,
+   "fin": 61
+  },
+  {
+   "ref": "Rut 1:21",
+   "persona": "Naomi_1",
+   "inicio": 70,
+   "fin": 75
+  },
+  {
+   "ref": "Rut 1:22",
+   "persona": "Naomi_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "Rut 1:22",
+   "persona": "Ruth_1",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "Rut 2:1",
+   "persona": "Naomi_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "Rut 2:1",
+   "persona": "Elimelech_1",
+   "inicio": 84,
+   "fin": 93
+  },
+  {
+   "ref": "Rut 2:1",
+   "persona": "Boaz_1",
+   "inicio": 114,
+   "fin": 118
+  },
+  {
+   "ref": "Rut 2:2",
+   "persona": "Ruth_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 2:2",
+   "persona": "Naomi_1",
+   "inicio": 25,
+   "fin": 30
+  },
+  {
+   "ref": "Rut 2:3",
+   "persona": "Boaz_1",
+   "inicio": 122,
+   "fin": 126
+  },
+  {
+   "ref": "Rut 2:3",
+   "persona": "Elimelech_1",
+   "inicio": 159,
+   "fin": 168
+  },
+  {
+   "ref": "Rut 2:4",
+   "persona": "Boaz_1",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "Rut 2:5",
+   "persona": "Boaz_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 2:6",
+   "persona": "Naomi_1",
+   "inicio": 96,
+   "fin": 101
+  },
+  {
+   "ref": "Rut 2:8",
+   "persona": "Boaz_1",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "Rut 2:8",
+   "persona": "Ruth_1",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "Rut 2:11",
+   "persona": "Boaz_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "Rut 2:14",
+   "persona": "Boaz_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 2:15",
+   "persona": "Boaz_1",
+   "inicio": 32,
+   "fin": 36
+  },
+  {
+   "ref": "Rut 2:19",
+   "persona": "Boaz_1",
+   "inicio": 229,
+   "fin": 233
+  },
+  {
+   "ref": "Rut 2:20",
+   "persona": "Naomi_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "Rut 2:20",
+   "persona": "Naomi_1",
+   "inicio": 149,
+   "fin": 154
+  },
+  {
+   "ref": "Rut 2:21",
+   "persona": "Ruth_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 2:22",
+   "persona": "Naomi_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "Rut 2:22",
+   "persona": "Ruth_1",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Rut 2:23",
+   "persona": "Boaz_1",
+   "inicio": 35,
+   "fin": 39
+  },
+  {
+   "ref": "Rut 3:1",
+   "persona": "Naomi_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "Rut 3:2",
+   "persona": "Boaz_1",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "Rut 3:7",
+   "persona": "Boaz_1",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "Rut 3:9",
+   "persona": "Ruth_1",
+   "inicio": 56,
+   "fin": 60
+  },
+  {
+   "ref": "Rut 4:1",
+   "persona": "Boaz_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 4:1",
+   "persona": "Boaz_1",
+   "inicio": 88,
+   "fin": 92
+  },
+  {
+   "ref": "Rut 4:3",
+   "persona": "Naomi_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "Rut 4:3",
+   "persona": "Elimelech_1",
+   "inicio": 120,
+   "fin": 129
+  },
+  {
+   "ref": "Rut 4:5",
+   "persona": "Boaz_1",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Rut 4:5",
+   "persona": "Naomi_1",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "Rut 4:5",
+   "persona": "Ruth_1",
+   "inicio": 101,
+   "fin": 105
+  },
+  {
+   "ref": "Rut 4:8",
+   "persona": "Boaz_1",
+   "inicio": 28,
+   "fin": 32
+  },
+  {
+   "ref": "Rut 4:9",
+   "persona": "Boaz_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 4:9",
+   "persona": "Elimelech_1",
+   "inicio": 116,
+   "fin": 125
+  },
+  {
+   "ref": "Rut 4:9",
+   "persona": "Chilion_1",
+   "inicio": 148,
+   "fin": 155
+  },
+  {
+   "ref": "Rut 4:9",
+   "persona": "Mahlon_1",
+   "inicio": 161,
+   "fin": 168
+  },
+  {
+   "ref": "Rut 4:9",
+   "persona": "Naomi_1",
+   "inicio": 181,
+   "fin": 186
+  },
+  {
+   "ref": "Rut 4:10",
+   "persona": "Ruth_1",
+   "inicio": 34,
+   "fin": 38
+  },
+  {
+   "ref": "Rut 4:10",
+   "persona": "Mahlon_1",
+   "inicio": 57,
+   "fin": 64
+  },
+  {
+   "ref": "Rut 4:11",
+   "persona": "Rachel_1",
+   "inicio": 140,
+   "fin": 146
+  },
+  {
+   "ref": "Rut 4:11",
+   "persona": "Leah_1",
+   "inicio": 151,
+   "fin": 154
+  },
+  {
+   "ref": "Rut 4:12",
+   "persona": "Perez_1",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "Rut 4:12",
+   "persona": "Tamar_1",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "Rut 4:12",
+   "persona": "Judah_1",
+   "inicio": 112,
+   "fin": 116
+  },
+  {
+   "ref": "Rut 4:13",
+   "persona": "Boaz_1",
+   "inicio": 0,
+   "fin": 4
+  },
+  {
+   "ref": "Rut 4:13",
+   "persona": "Ruth_1",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "Rut 4:14",
+   "persona": "Naomi_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "Rut 4:16",
+   "persona": "Naomi_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "Rut 4:17",
+   "persona": "Naomi_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "Rut 4:17",
+   "persona": "Obed_1",
+   "inicio": 84,
+   "fin": 88
+  },
+  {
+   "ref": "Rut 4:17",
+   "persona": "Jesse_1",
+   "inicio": 107,
+   "fin": 111
+  },
+  {
+   "ref": "Rut 4:17",
+   "persona": "David_1",
+   "inicio": 122,
+   "fin": 127
+  },
+  {
+   "ref": "Rut 4:18",
+   "persona": "Perez_1",
+   "inicio": 32,
+   "fin": 38
+  },
+  {
+   "ref": "Rut 4:18",
+   "persona": "Perez_1",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "Rut 4:18",
+   "persona": "Hezron_2",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "Rut 4:19",
+   "persona": "Hezron_2",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Rut 4:19",
+   "persona": "Ram_1",
+   "inicio": 20,
+   "fin": 23
+  },
+  {
+   "ref": "Rut 4:19",
+   "persona": "Ram_1",
+   "inicio": 27,
+   "fin": 30
+  },
+  {
+   "ref": "Rut 4:19",
+   "persona": "Amminadab_1",
+   "inicio": 42,
+   "fin": 50
+  },
+  {
+   "ref": "Rut 4:20",
+   "persona": "Amminadab_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "Rut 4:20",
+   "persona": "Nahshon_1",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "Rut 4:20",
+   "persona": "Nahshon_1",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "Rut 4:20",
+   "persona": "Salmon_1",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "Rut 4:21",
+   "persona": "Salmon_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "Rut 4:21",
+   "persona": "Boaz_1",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "Rut 4:21",
+   "persona": "Boaz_1",
+   "inicio": 28,
+   "fin": 32
+  },
+  {
+   "ref": "Rut 4:21",
+   "persona": "Obed_1",
+   "inicio": 44,
+   "fin": 48
+  },
+  {
+   "ref": "Rut 4:22",
+   "persona": "Obed_1",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "Rut 4:22",
+   "persona": "Jesse_1",
+   "inicio": 18,
+   "fin": 22
+  },
+  {
+   "ref": "Rut 4:22",
+   "persona": "Jesse_1",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "Rut 4:22",
+   "persona": "David_1",
+   "inicio": 42,
+   "fin": 47
   }
  ],
  "lugares": [
@@ -88032,7 +89499,13 @@ window.BIBLIA_DATOS = {
     "Jue 17:9",
     "Jue 19:1",
     "Jue 19:2",
-    "Jue 19:18"
+    "Jue 19:18",
+    "Rut 1:1",
+    "Rut 1:2",
+    "Rut 1:19",
+    "Rut 1:22",
+    "Rut 2:4",
+    "Rut 4:11"
    ],
    "ubicacion": {
     "identificacion": "Bethlehem",
@@ -88676,7 +90149,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 35:16",
     "Gn 35:19",
-    "Gn 48:7"
+    "Gn 48:7",
+    "Rut 4:11"
    ],
    "ubicacion": {
     "identificacion": "Bethlehem",
@@ -89607,7 +91081,14 @@ window.BIBLIA_DATOS = {
     "Jue 11:15",
     "Jue 11:17",
     "Jue 11:18",
-    "Jue 11:25"
+    "Jue 11:25",
+    "Rut 1:1",
+    "Rut 1:2",
+    "Rut 1:4",
+    "Rut 1:6",
+    "Rut 1:22",
+    "Rut 2:6",
+    "Rut 4:3"
    ],
    "ubicacion": {
     "identificacion": "Kerak",
@@ -109320,6 +110801,25 @@ window.BIBLIA_DATOS = {
    "fuente": "openbible",
    "url_fuente": "https://www.openbible.info/geo/ancient/aaff3e1/tob",
    "nota": ""
+  },
+  {
+   "id": "juda",
+   "nombre": "Judá",
+   "nombre_rv1909": "Judá",
+   "formas_rv1909": [
+    "Judá"
+   ],
+   "tipo": "region",
+   "ubicacion": null,
+   "alternativas": [],
+   "fuente": "rv1909",
+   "url_fuente": "",
+   "nota": "Región de la tribu de Judá: Rut 1:1-2 «Beth-lehem de Judá», Rut 1:7 «la tierra de Judá». OpenBible no la registra como lugar: OpenBible no da identificación con coordenadas. Por ahora solo se marca desde Rut; en los libros anteriores «Judá» como territorio no está marcado.",
+   "refs": [
+    "Rut 1:1",
+    "Rut 1:2",
+    "Rut 1:7"
+   ]
   }
  ],
  "menciones_lugar": [
@@ -124172,6 +125672,126 @@ window.BIBLIA_DATOS = {
    "lugar": "siloh",
    "inicio": 164,
    "fin": 168
+  },
+  {
+   "ref": "Rut 1:1",
+   "lugar": "belen",
+   "inicio": 95,
+   "fin": 105
+  },
+  {
+   "ref": "Rut 1:1",
+   "lugar": "juda",
+   "inicio": 109,
+   "fin": 113
+  },
+  {
+   "ref": "Rut 1:1",
+   "lugar": "moab",
+   "inicio": 149,
+   "fin": 153
+  },
+  {
+   "ref": "Rut 1:2",
+   "lugar": "belen",
+   "inicio": 133,
+   "fin": 143
+  },
+  {
+   "ref": "Rut 1:2",
+   "lugar": "juda",
+   "inicio": 147,
+   "fin": 151
+  },
+  {
+   "ref": "Rut 1:2",
+   "lugar": "moab",
+   "inicio": 183,
+   "fin": 187
+  },
+  {
+   "ref": "Rut 1:4",
+   "lugar": "moab",
+   "inicio": 38,
+   "fin": 42
+  },
+  {
+   "ref": "Rut 1:6",
+   "lugar": "moab",
+   "inicio": 64,
+   "fin": 68
+  },
+  {
+   "ref": "Rut 1:6",
+   "lugar": "moab",
+   "inicio": 96,
+   "fin": 100
+  },
+  {
+   "ref": "Rut 1:7",
+   "lugar": "juda",
+   "inicio": 120,
+   "fin": 124
+  },
+  {
+   "ref": "Rut 1:19",
+   "lugar": "belen",
+   "inicio": 47,
+   "fin": 57
+  },
+  {
+   "ref": "Rut 1:19",
+   "lugar": "belen",
+   "inicio": 87,
+   "fin": 97
+  },
+  {
+   "ref": "Rut 1:22",
+   "lugar": "moab",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "Rut 1:22",
+   "lugar": "belen",
+   "inicio": 94,
+   "fin": 104
+  },
+  {
+   "ref": "Rut 2:4",
+   "lugar": "belen",
+   "inicio": 27,
+   "fin": 37
+  },
+  {
+   "ref": "Rut 2:6",
+   "lugar": "moab",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "Rut 2:6",
+   "lugar": "moab",
+   "inicio": 119,
+   "fin": 123
+  },
+  {
+   "ref": "Rut 4:3",
+   "lugar": "moab",
+   "inicio": 58,
+   "fin": 62
+  },
+  {
+   "ref": "Rut 4:11",
+   "lugar": "efrata",
+   "inicio": 222,
+   "fin": 229
+  },
+  {
+   "ref": "Rut 4:11",
+   "lugar": "belen",
+   "inicio": 253,
+   "fin": 263
   }
  ],
  "cronologia": {
@@ -124292,7 +125912,8 @@ window.BIBLIA_DATOS = {
    "Números fecha algunos hechos desde la salida (Nm 1:1; 9:1; 10:11; 33:38): «el segundo año» se cuenta como un año después de la salida, igual que Ex 40:17.",
    "Deuteronomio fecha los discursos de Moab desde la salida (Dt 1:3, «á los cuarenta años», mes undécimo); la muerte de Moisés (Dt 34:5-8) no tiene año propio y se pone en ese mismo año.",
    "Josué: el paso del Jordán (Jos 4:19, «el diez del mes primero») se pone en el año siguiente al de Dt 1:3 (mes undécimo + treinta días de luto, Dt 34:8). La edad de Caleb (40 en Jos 14:7, 85 en Jos 14:10, «cuarenta y cinco años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año.",
-   "Jueces da duraciones (años de opresión, de reposo y de cada juez: `duraciones`), pero no dice si se suceden o se solapan: no se fechan desde Adán. Sus sumas son cálculo con esa advertencia; Jue 11:26 («trescientos años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes."
+   "Jueces da duraciones (años de opresión, de reposo y de cada juez: `duraciones`), pero no dice si se suceden o se solapan: no se fechan desde Adán. Sus sumas son cálculo con esa advertencia; Jue 11:26 («trescientos años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes.",
+   "Rut 1:1 sitúa la historia «en los días que gobernaban los jueces» sin decir en qué juez ni en qué año, y la genealogía de Rut 4:18-22 no da edades: Rut no añade eventos con año (sus hechos van sin fecha)."
   ],
   "combinaciones": [
    {
@@ -128348,6 +129969,24 @@ window.BIBLIA_DATOS = {
     "ref": "Jue 19:1-21:25",
     "nota": "Sin cifra de tiempo. Jue 20:28 dice que entonces ministraba Finees, hijo de Eleazar, hijo de Aarón.",
     "pasaje": "jue-47"
+   },
+   {
+    "titulo": "Elimelec y Noemí van a Moab por el hambre",
+    "ref": "Rut 1:1-5",
+    "nota": "Rut 1:1: «en los días que gobernaban los jueces»; no dice en qué juez ni en qué año. Habitan allí «unos diez años» (Rut 1:4), sin año de partida.",
+    "pasaje": "rut-01"
+   },
+   {
+    "titulo": "Noemí y Rut llegan a Belén",
+    "ref": "Rut 1:22",
+    "nota": "«en el principio de la siega de las cebadas» (Rut 1:22): una estación, no un año.",
+    "pasaje": "rut-02"
+   },
+   {
+    "titulo": "Booz toma a Rut por mujer; nace Obed",
+    "ref": "Rut 4:13-17",
+    "nota": "Sin año. La genealogía de Rut 4:18-22 (de Fares a David) no da edades: no permite fechar a Obed ni a David.",
+    "pasaje": "rut-07"
    }
   ],
   "duraciones": {

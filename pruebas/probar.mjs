@@ -833,6 +833,38 @@ if (existsSync(real)) {
       assert.equal(NC.marcaDe(CR, 'Jue 6:12'), null);
     });
   }
+  if ((D2.libros || []).some(l => l.id === 'Rut')) {
+    prueba('Rut: selector, 4 secciones, lector sin huecos (85 versículos) y lectura en orden después de Jueces', () => {
+      assert.equal(j(N2.libros(D2)).pop().nombre, 'Rut'); assert.equal(N2.nombreLibro(D2, 'Rut'), 'Rut');
+      assert.ok(N2.clave('Rut 1:1') > N2.clave('Jue 21:25'));
+      const s = j(N2.seccionesPlan(D2, ['rut-01'], 'rut-02', 'Rut'));
+      assert.equal(s.length, 4);
+      const vs = N2.pasajes(D2).filter(p => N2.libroDe(p) === N2.libroDe({ inicio: 'Rut 1:1' })).flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 85); assert.equal(new Set(vs.map(v => v.ref)).size, 85);
+      const ps = j(N2.pasajes(D2)), i = ps.findIndex(p => p.id === 'rut-01');
+      assert.equal(ps[i - 1].id, 'jue-53', 'rut-01 va justo después del último de Jueces');
+      const A = N2.accesibles(D2, ps.slice(0, i).map(p => p.id));
+      assert.equal(N2.frontera(D2, ps.slice(0, i).map(p => p.id)).id, 'rut-01');
+      assert.ok(A.ref('Rut 1:5') && !A.ref('Rut 1:6') && !A.pasaje('rut-02'), 'Rut se abre pasaje a pasaje');
+    });
+    prueba('Rut: personas (Noemí = Mara, Naasón «Nahasón», Judá persona en 4:12), genealogía y mapa (Judá sin coordenadas)', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => N2.clave(x.ref) === N2.clave(r)); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona || x.lugar).map(x => [x.texto, x.persona || x.lugar]); };
+      assert.deepEqual(seg('Rut 1:20'), [['Noemi', 'Naomi_1'], ['Mara', 'Naomi_1']]);
+      assert.deepEqual(seg('Rut 4:20'), [['Aminadab', 'Amminadab_1'], ['Nahasón', 'Nahshon_1'], ['Nahasón', 'Nahshon_1'], ['Salmón', 'Salmon_1']]);
+      assert.ok(seg('Rut 4:12').some(x => x[0] === 'Judá' && x[1] === 'Judah_1') && seg('Rut 1:7').some(x => x[1] === 'juda'));
+      const R = new Set(D2.relaciones.map(x => `${x.de}>${x.a}>${x.tipo}`));
+      ['Perez_1>Hezron_2', 'Hezron_2>Ram_1', 'Ram_1>Amminadab_1', 'Amminadab_1>Nahshon_1', 'Nahshon_1>Salmon_1', 'Salmon_1>Boaz_1',
+        'Boaz_1>Obed_1', 'Obed_1>Jesse_1', 'Jesse_1>David_1'].forEach(k => assert.ok(R.has(k + '>padre'), k));
+      const L = Object.fromEntries(D2.lugares.map(l => [l.id, l]));
+      assert.equal(L.juda.ubicacion, null); assert.ok(['belen', 'moab', 'efrata'].every(id => j(N2.lugaresDeRefs(D2, ['Rut 1:1', 'Rut 4:11'])).includes(id)));
+    });
+    const rc6 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc6)) prueba('Rut: marcas de contenido (la era sexual medio, 1:16 y 4:13 sin marca)', () => {
+      const cr = cargar(rc6, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      assert.equal(NC.marcaDe(CR, 'Rut 3:7').categoria, 'sexual'); assert.equal(NC.marcaDe(CR, 'Rut 3:7').nivel, 'medio');
+      assert.equal(NC.marcaDe(CR, 'Rut 1:16'), null); assert.equal(NC.marcaDe(CR, 'Rut 4:13'), null);
+    });
+  }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
 
 // ---- Textos originales: alineación, testigos, variantes, voz y video (con pruebas/originales-ejemplo.js) ----
@@ -876,6 +908,10 @@ if (existsSync(real)) {
     const e = j(NO.alinearOriginales({ capitulos: [{ libro: 'Ex', cap: 1, versiculos: [{ n: 5, texto: 'x' }] }] }, { inicio: 'Ex 1:5', fin: 'Ex 1:5' }, O, G))[0];
     assert.equal(e.heNum, null); assert.ok(e.gr.includes('πέντε καὶ ἑβδομήκοντα'));
     assert.deepEqual(j(NO.alinearOriginales(d, { inicio: 'Gn 31:55', fin: 'Gn 31:55' }, null, null)).map(x => [x.he, x.gr]), [[null, null]]);
+    const dR = { capitulos: [{ libro: 'Rut', cap: 4, versiculos: [{ n: 20, texto: 'x' }] }] }, pR = { inicio: 'Rut 4:20', fin: 'Rut 4:20' };
+    const r = j(NO.alinearOriginales(dR, pR, { hebreo: { 'Rt 4:20': { t: 'שַׂלְמָה' } }, hebreo_notas: { 'Rt 4:20': 'Salmá en 4:20' } }, { texto: { 'Rt 4:20': 'Σαλμάν' }, notas: { 'Rt 4:20': 'nota griega' } }))[0];
+    assert.equal(r.heNota, 'Salmá en 4:20', 'la nota del hebreo llega a la fila'); assert.equal(r.grNota, 'nota griega');
+    assert.equal(f[0].heNota, undefined, 'sin texto hebreo no hay nota del hebreo');
   });
   prueba('texto para la voz: sin cantilación (hebreo) y monotónico (griego)', () => {
     const h = NO.textoParaVoz(O.hebreo['Gn 1:1'].t, 'he');

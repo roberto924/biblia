@@ -1199,8 +1199,10 @@ const Nucleo = (() => {
     return versiculosDe(d, pasaje).map(v => {
       const h = H[v.ref];
       const he = (h && h.t) || null, gr = T[v.ref] || null, falta = sinTextoDe(O, G, v.ref);
+      const heNota = (O && O.hebreo_notas && O.hebreo_notas[v.ref]) || null, grNota = (G && G.notas && G.notas[v.ref]) || null;
       return Object.assign({ ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr }, v.nota ? { nota: v.nota } : {},
-        !he && falta.he ? { heFalta: falta.he } : {}, !gr && falta.gr ? { grFalta: falta.gr } : {});
+        !he && falta.he ? { heFalta: falta.he } : {}, !gr && falta.gr ? { grFalta: falta.gr } : {},
+        he && heNota ? { heNota } : {}, gr && grNota ? { grNota } : {});
     });
   }
   // Motivo por el que un versículo no tiene texto original (datos: `hebreo_sin_texto` y `sin_texto` del griego), tal cual.
@@ -2391,7 +2393,9 @@ if (typeof document !== 'undefined') (function () {
         const attrs = c === 'he' ? ' lang="he" dir="rtl"' : c === 'gr' ? ' lang="grc"' : '';
         const num = c === 'he' && f.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">Heb. ${esc(f.heNum)}</span>` : '';
         const nt = c === 'rv' ? NTc[f.ref] : null; // subrayado del lector (Tu nota se ve y edita en la lectura normal)
-        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>` : `<p class="cmp-vacio">${pend ? '…' : c === 'rv' && f.nota ? esc(f.nota) : c === 'he' && f.heFalta ? esc(f.heFalta) : c === 'gr' && f.grFalta ? esc(f.grFalta) : 'Sin texto en los datos'}</p>`}</div>`;
+        const nfu = c === 'he' ? f.heNota : c === 'gr' ? f.grNota : null; // nota de la fuente (grafías, ketiv/qere, cortes de versículo)
+        const notaFu = nfu ? `<details class="cmp-nota-fuente"><summary>Nota sobre este texto</summary><p>${esc(nfu)}</p></details>` : '';
+        return `<div class="cmp-celda cmp-${c}">${num}${t ? `<p class="cmp-txt"${attrs}>${nt && nt.color ? `<span class="nb-sub nb-${nt.color}">${esc(t)}</span>${nbSrHTML(nt)}` : esc(t)}${nt && nt.nota ? ' <span class="nb-chip" title="Tienes una nota en este versículo">' + ICO_NOTA + '<span class="sr">Tienes una nota en este versículo.</span></span>' : ''}</p><button type="button" class="hablar-btn" data-hablar="${COLS[c].idioma}|${k}" aria-label="Escuchar el versículo ${f.n} en ${esc(COLS[c].t.toLowerCase())}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5"/></svg></button>${notaFu}` : `<p class="cmp-vacio">${pend ? '…' : c === 'rv' && f.nota ? esc(f.nota) : c === 'he' && f.heFalta ? esc(f.heFalta) : c === 'gr' && f.grFalta ? esc(f.grFalta) : 'Sin texto en los datos'}</p>`}</div>`;
       };
       return `${marca}<div class="cmp-fila${habla.k === k ? ' sonando' : ''}${vars.has(f.ref) ? ' con-variante' : ''}" data-v="${k}"><div class="cmp-num">${f.n}${vars.has(f.ref) ? marcaVariante(f.ref, f.n) : ''}</div>${vis.map(celda).join('')}</div>${nota}`;
     }).join('');

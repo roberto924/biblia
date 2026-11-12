@@ -1,6 +1,6 @@
 // Generado por herramientas/originales.py; no editar a mano. Fuentes y licencias en «fuentes».
 window.BIBLIA_ORIGINALES = {
- "generado": "2026-11-12T17:15:39+00:00",
+ "generado": "2026-11-12T20:02:09+00:00",
  "fuentes": [
   {
    "id": "wlc-oshb",
@@ -10,9 +10,9 @@ window.BIBLIA_ORIGINALES = {
   },
   {
    "id": "uxlc",
-   "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces no hay ninguna) y su marca de letra suspendida en Jue 18:30 (nota «7»)",
+   "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces y en Rut no hay ninguna), su marca de letra suspendida en Jue 18:30 (nota «7») y, en Rut, sus ketiv/qere (<k>/<q>) para cotejarlos con el WLC",
    "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)",
-   "url": "https://tanach.us/Books/Joshua.xml y https://tanach.us/Books/Judges.xml"
+   "url": "https://tanach.us/Books/Joshua.xml, https://tanach.us/Books/Judges.xml y https://tanach.us/Books/Ruth.xml"
   },
   {
    "id": "tvtms",
@@ -29,7 +29,7 @@ window.BIBLIA_ORIGINALES = {
   {
    "id": "etcbc-dss",
    "nombre": "ETCBC/dss: datos de los Rollos del Mar Muerto de M. Abegg, J. Bowley y E. Cook (conversión Text-Fabric de J. Jacobs, M. Naaijer y D. Roorda)",
-   "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47 y que 4Q49 pasa de Jue 6:6 a 6:11; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
+   "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47, que 4Q49 pasa de Jue 6:6 a 6:11 y las lecturas de 4Q104 (Rut 1:2, 1:9) y 2Q17 (Rut 3:14, 3:15); no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
    "url": "https://github.com/ETCBC/dss"
   },
   {
@@ -40,7 +40,7 @@ window.BIBLIA_ORIGINALES = {
   },
   {
    "id": "wikipedia",
-   "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11 y el 2026-11-12 (Jueces)",
+   "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)",
    "licencia": "CC BY-SA 4.0 (solo se toman datos, no texto)",
    "url": "https://en.wikipedia.org/"
   },
@@ -63,7 +63,7 @@ window.BIBLIA_ORIGINALES = {
    "url": "https://www.youtube.com/@ProyectoBibliaOficial"
   }
  ],
- "hebreo_nota": "Texto hebreo del Códice de Leningrado (WLC 4.20) con vocales y acentos; sin morfología, notas ni marcas de párrafo (פ/ס). Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»).",
+ "hebreo_nota": "Texto hebreo del Códice de Leningrado (WLC 4.20) con vocales y acentos; sin morfología, notas ni marcas de párrafo (פ/ס). Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»). Rut va con el id de la app, «Rt» (p. ej. «Rt 1:1»).",
  "hebreo": {
   "Gn 1:1": {
    "t": "בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃"
@@ -21702,12 +21702,280 @@ window.BIBLIA_ORIGINALES = {
   },
   "Jue 21:25": {
    "t": "בַּיָּמִ֣ים הָהֵ֔ם אֵ֥ין מֶ֖לֶךְ בְּיִשְׂרָאֵ֑ל אִ֛ישׁ הַיָּשָׁ֥ר בְּעֵינָ֖יו יַעֲשֶֽׂה׃"
+  },
+  "Rt 1:1": {
+   "t": "וַיְהִ֗י בִּימֵי֙ שְׁפֹ֣ט הַשֹּׁפְטִ֔ים וַיְהִ֥י רָעָ֖ב בָּאָ֑רֶץ וַיֵּ֨לֶךְ אִ֜ישׁ מִבֵּ֧ית לֶ֣חֶם יְהוּדָ֗ה לָגוּר֙ בִּשְׂדֵ֣י מוֹאָ֔ב ה֥וּא וְאִשְׁתּ֖וֹ וּשְׁנֵ֥י בָנָֽיו׃"
+  },
+  "Rt 1:2": {
+   "t": "וְשֵׁ֣ם הָאִ֣ישׁ אֱֽלִימֶ֡לֶךְ וְשֵׁם֩ אִשְׁתּ֨וֹ נָעֳמִ֜י וְשֵׁ֥ם שְׁנֵֽי־בָנָ֣יו ׀ מַחְל֤וֹן וְכִלְיוֹן֙ אֶפְרָתִ֔ים מִבֵּ֥ית לֶ֖חֶם יְהוּדָ֑ה וַיָּבֹ֥אוּ שְׂדֵי־מוֹאָ֖ב וַיִּֽהְיוּ־שָֽׁם׃"
+  },
+  "Rt 1:3": {
+   "t": "וַיָּ֥מָת אֱלִימֶ֖לֶךְ אִ֣ישׁ נָעֳמִ֑י וַתִּשָּׁאֵ֥ר הִ֖יא וּשְׁנֵ֥י בָנֶֽיהָ׃"
+  },
+  "Rt 1:4": {
+   "t": "וַיִּשְׂא֣וּ לָהֶ֗ם נָשִׁים֙ מֹֽאֲבִיּ֔וֹת שֵׁ֤ם הָֽאַחַת֙ עָרְפָּ֔ה וְשֵׁ֥ם הַשֵּׁנִ֖ית ר֑וּת וַיֵּ֥שְׁבוּ שָׁ֖ם כְּעֶ֥שֶׂר שָׁנִֽים׃"
+  },
+  "Rt 1:5": {
+   "t": "וַיָּמ֥וּתוּ גַם־שְׁנֵיהֶ֖ם מַחְל֣וֹן וְכִלְי֑וֹן וַתִּשָּׁאֵר֙ הָֽאִשָּׁ֔ה מִשְּׁנֵ֥י יְלָדֶ֖יהָ וּמֵאִישָֽׁהּ׃"
+  },
+  "Rt 1:6": {
+   "t": "וַתָּ֤קָם הִיא֙ וְכַלֹּתֶ֔יהָ וַתָּ֖שָׁב מִשְּׂדֵ֣י מוֹאָ֑ב כִּ֤י שָֽׁמְעָה֙ בִּשְׂדֵ֣ה מוֹאָ֔ב כִּֽי־פָקַ֤ד יְהוָה֙ אֶת־עַמּ֔וֹ לָתֵ֥ת לָהֶ֖ם לָֽחֶם׃"
+  },
+  "Rt 1:7": {
+   "t": "וַתֵּצֵ֗א מִן־הַמָּקוֹם֙ אֲשֶׁ֣ר הָיְתָה־שָׁ֔מָּה וּשְׁתֵּ֥י כַלֹּתֶ֖יהָ עִמָּ֑הּ וַתֵּלַ֣כְנָה בַדֶּ֔רֶךְ לָשׁ֖וּב אֶל־אֶ֥רֶץ יְהוּדָֽה׃"
+  },
+  "Rt 1:8": {
+   "t": "וַתֹּ֤אמֶר נָעֳמִי֙ לִשְׁתֵּ֣י כַלֹּתֶ֔יהָ לֵ֣כְנָה שֹּׁ֔בְנָה אִשָּׁ֖ה לְבֵ֣ית אִמָּ֑הּ יעשה יְהוָ֤ה עִמָּכֶם֙ חֶ֔סֶד כַּאֲשֶׁ֧ר עֲשִׂיתֶ֛ם עִם־הַמֵּתִ֖ים וְעִמָּדִֽי׃"
+  },
+  "Rt 1:9": {
+   "t": "יִתֵּ֤ן יְהוָה֙ לָכֶ֔ם וּמְצֶ֣אןָ מְנוּחָ֔ה אִשָּׁ֖ה בֵּ֣ית אִישָׁ֑הּ וַתִּשַּׁ֣ק לָהֶ֔ן וַתִּשֶּׂ֥אנָה קוֹלָ֖ן וַתִּבְכֶּֽינָה׃"
+  },
+  "Rt 1:10": {
+   "t": "וַתֹּאמַ֖רְנָה־לָּ֑הּ כִּי־אִתָּ֥ךְ נָשׁ֖וּב לְעַמֵּֽךְ׃"
+  },
+  "Rt 1:11": {
+   "t": "וַתֹּ֤אמֶר נָעֳמִי֙ שֹׁ֣בְנָה בְנֹתַ֔י לָ֥מָּה תֵלַ֖כְנָה עִמִּ֑י הַֽעֽוֹד־לִ֤י בָנִים֙ בְּֽמֵעַ֔י וְהָי֥וּ לָכֶ֖ם לַאֲנָשִֽׁים׃"
+  },
+  "Rt 1:12": {
+   "t": "שֹׁ֤בְנָה בְנֹתַי֙ לֵ֔כְןָ כִּ֥י זָקַ֖נְתִּי מִהְי֣וֹת לְאִ֑ישׁ כִּ֤י אָמַ֨רְתִּי֙ יֶשׁ־לִ֣י תִקְוָ֔ה גַּ֣ם הָיִ֤יתִי הַלַּ֨יְלָה֙ לְאִ֔ישׁ וְגַ֖ם יָלַ֥דְתִּי בָנִֽים׃"
+  },
+  "Rt 1:13": {
+   "t": "הֲלָהֵ֣ן ׀ תְּשַׂבֵּ֗רְנָה עַ֚ד אֲשֶׁ֣ר יִגְדָּ֔לוּ הֲלָהֵן֙ תֵּֽעָגֵ֔נָה לְבִלְתִּ֖י הֱי֣וֹת לְאִ֑ישׁ אַ֣ל בְּנֹתַ֗י כִּֽי־מַר־לִ֤י מְאֹד֙ מִכֶּ֔ם כִּֽי־יָצְאָ֥ה בִ֖י יַד־יְהוָֽה׃"
+  },
+  "Rt 1:14": {
+   "t": "וַתִּשֶּׂ֣נָה קוֹלָ֔ן וַתִּבְכֶּ֖ינָה ע֑וֹד וַתִּשַּׁ֤ק עָרְפָּה֙ לַחֲמוֹתָ֔הּ וְר֖וּת דָּ֥בְקָה בָּֽהּ׃"
+  },
+  "Rt 1:15": {
+   "t": "וַתֹּ֗אמֶר הִנֵּה֙ שָׁ֣בָה יְבִמְתֵּ֔ךְ אֶל־עַמָּ֖הּ וְאֶל־אֱלֹהֶ֑יהָ שׁ֖וּבִי אַחֲרֵ֥י יְבִמְתֵּֽךְ׃"
+  },
+  "Rt 1:16": {
+   "t": "וַתֹּ֤אמֶר רוּת֙ אַל־תִּפְגְּעִי־בִ֔י לְעָזְבֵ֖ךְ לָשׁ֣וּב מֵאַחֲרָ֑יִךְ כִּ֠י אֶל־אֲשֶׁ֨ר תֵּלְכִ֜י אֵלֵ֗ךְ וּבַאֲשֶׁ֤ר תָּלִ֨ינִי֙ אָלִ֔ין עַמֵּ֣ךְ עַמִּ֔י וֵאלֹהַ֖יִךְ אֱלֹהָֽי׃"
+  },
+  "Rt 1:17": {
+   "t": "בַּאֲשֶׁ֤ר תָּמ֨וּתִי֙ אָמ֔וּת וְשָׁ֖ם אֶקָּבֵ֑ר כֹּה֩ יַעֲשֶׂ֨ה יְהוָ֥ה לִי֙ וְכֹ֣ה יֹסִ֔יף כִּ֣י הַמָּ֔וֶת יַפְרִ֖יד בֵּינִ֥י וּבֵינֵֽךְ׃"
+  },
+  "Rt 1:18": {
+   "t": "וַתֵּ֕רֶא כִּֽי־מִתְאַמֶּ֥צֶת הִ֖יא לָלֶ֣כֶת אִתָּ֑הּ וַתֶּחְדַּ֖ל לְדַבֵּ֥ר אֵלֶֽיהָ׃"
+  },
+  "Rt 1:19": {
+   "t": "וַתֵּלַ֣כְנָה שְׁתֵּיהֶ֔ם עַד־בֹּאָ֖נָה בֵּ֣ית לָ֑חֶם וַיְהִ֗י כְּבֹאָ֨נָה֙ בֵּ֣ית לֶ֔חֶם וַתֵּהֹ֤ם כָּל־הָעִיר֙ עֲלֵיהֶ֔ן וַתֹּאמַ֖רְנָה הֲזֹ֥את נָעֳמִֽי׃"
+  },
+  "Rt 1:20": {
+   "t": "וַתֹּ֣אמֶר אֲלֵיהֶ֔ן אַל־תִּקְרֶ֥אנָה לִ֖י נָעֳמִ֑י קְרֶ֤אןָ לִי֙ מָרָ֔א כִּי־הֵמַ֥ר שַׁדַּ֛י לִ֖י מְאֹֽד׃"
+  },
+  "Rt 1:21": {
+   "t": "אֲנִי֙ מְלֵאָ֣ה הָלַ֔כְתִּי וְרֵיקָ֖ם הֱשִׁיבַ֣נִי יְהוָ֑ה לָ֣מָּה תִקְרֶ֤אנָה לִי֙ נָעֳמִ֔י וַֽיהוָה֙ עָ֣נָה בִ֔י וְשַׁדַּ֖י הֵ֥רַֽע לִֽי׃"
+  },
+  "Rt 1:22": {
+   "t": "וַתָּ֣שָׁב נָעֳמִ֗י וְר֨וּת הַמּוֹאֲבִיָּ֤ה כַלָּתָהּ֙ עִמָּ֔הּ הַשָּׁ֖בָה מִשְּׂדֵ֣י מוֹאָ֑ב וְהֵ֗מָּה בָּ֚אוּ בֵּ֣ית לֶ֔חֶם בִּתְחִלַּ֖ת קְצִ֥יר שְׂעֹרִֽים׃"
+  },
+  "Rt 2:1": {
+   "t": "וּֽלְנָעֳמִ֞י מידע לְאִישָׁ֗הּ אִ֚ישׁ גִּבּ֣וֹר חַ֔יִל מִמִּשְׁפַּ֖חַת אֱלִימֶ֑לֶךְ וּשְׁמ֖וֹ בֹּֽעַז׃"
+  },
+  "Rt 2:2": {
+   "t": "וַתֹּאמֶר֩ ר֨וּת הַמּוֹאֲבִיָּ֜ה אֶֽל־נָעֳמִ֗י אֵֽלְכָה־נָּ֤א הַשָּׂדֶה֙ וַאֲלַקֳטָּ֣ה בַשִׁבֳּלִ֔ים אַחַ֕ר אֲשֶׁ֥ר אֶמְצָא־חֵ֖ן בְּעֵינָ֑יו וַתֹּ֥אמֶר לָ֖הּ לְכִ֥י בִתִּֽי׃"
+  },
+  "Rt 2:3": {
+   "t": "וַתֵּ֤לֶךְ וַתָּבוֹא֙ וַתְּלַקֵּ֣ט בַּשָּׂדֶ֔ה אַחֲרֵ֖י הַקֹּצְרִ֑ים וַיִּ֣קֶר מִקְרֶ֔הָ חֶלְקַ֤ת הַשָּׂדֶה֙ לְבֹ֔עַז אֲשֶׁ֖ר מִמִּשְׁפַּ֥חַת אֱלִימֶֽלֶךְ׃"
+  },
+  "Rt 2:4": {
+   "t": "וְהִנֵּה־בֹ֗עַז בָּ֚א מִבֵּ֣ית לֶ֔חֶם וַיֹּ֥אמֶר לַקּוֹצְרִ֖ים יְהוָ֣ה עִמָּכֶ֑ם וַיֹּ֥אמְרוּ ל֖וֹ יְבָרֶכְךָ֥ יְהוָֽה׃"
+  },
+  "Rt 2:5": {
+   "t": "וַיֹּ֤אמֶר בֹּ֨עַז֙ לְנַעֲר֔וֹ הַנִּצָּ֖ב עַל־הַקּֽוֹצְרִ֑ים לְמִ֖י הַנַּעֲרָ֥ה הַזֹּֽאת׃"
+  },
+  "Rt 2:6": {
+   "t": "וַיַּ֗עַן הַנַּ֛עַר הַנִּצָּ֥ב עַל־הַקּוֹצְרִ֖ים וַיֹּאמַ֑ר נַעֲרָ֤ה מֽוֹאֲבִיָּה֙ הִ֔יא הַשָּׁ֥בָה עִֽם־נָעֳמִ֖י מִשְּׂדֵ֥ה מוֹאָֽב׃"
+  },
+  "Rt 2:7": {
+   "t": "וַתֹּ֗אמֶר אֲלַקֳטָה־נָּא֙ וְאָסַפְתִּ֣י בָֽעֳמָרִ֔ים אַחֲרֵ֖י הַקּוֹצְרִ֑ים וַתָּב֣וֹא וַֽתַּעֲמ֗וֹד מֵאָ֤ז הַבֹּ֨קֶר֙ וְעַד־עַ֔תָּה זֶ֛ה שִׁבְתָּ֥הּ הַבַּ֖יִת מְעָֽט׃"
+  },
+  "Rt 2:8": {
+   "t": "וַיֹּאמֶר֩ בֹּ֨עַז אֶל־ר֜וּת הֲל֧וֹא שָׁמַ֣עַתְּ בִּתִּ֗י אַל־תֵּלְכִי֙ לִלְקֹט֙ בְּשָׂדֶ֣ה אַחֵ֔ר וְגַ֛ם לֹ֥א תַעֲבוּרִ֖י מִזֶּ֑ה וְכֹ֥ה תִדְבָּקִ֖ין עִם־נַעֲרֹתָֽי׃"
+  },
+  "Rt 2:9": {
+   "t": "עֵינַ֜יִךְ בַּשָּׂדֶ֤ה אֲשֶׁר־יִקְצֹרוּן֙ וְהָלַ֣כְתִּ אַחֲרֵיהֶ֔ן הֲל֥וֹא צִוִּ֛יתִי אֶת־הַנְּעָרִ֖ים לְבִלְתִּ֣י נָגְעֵ֑ךְ וְצָמִ֗ת וְהָלַכְתְּ֙ אֶל־הַכֵּלִ֔ים וְשָׁתִ֕ית מֵאֲשֶׁ֥ר יִשְׁאֲב֖וּן הַנְּעָרִֽים׃"
+  },
+  "Rt 2:10": {
+   "t": "וַתִּפֹּל֙ עַל־פָּנֶ֔יהָ וַתִּשְׁתַּ֖חוּ אָ֑רְצָה וַתֹּ֣אמֶר אֵלָ֗יו מַדּוּעַ֩ מָצָ֨אתִי חֵ֤ן בְּעֵינֶ֨יךָ֙ לְהַכִּירֵ֔נִי וְאָּנֹכִ֖י נָכְרִיָּֽה׃"
+  },
+  "Rt 2:11": {
+   "t": "וַיַּ֤עַן בֹּ֨עַז֙ וַיֹּ֣אמֶר לָ֔הּ הֻגֵּ֨ד הֻגַּ֜ד לִ֗י כֹּ֤ל אֲשֶׁר־עָשִׂית֙ אֶת־חֲמוֹתֵ֔ךְ אַחֲרֵ֖י מ֣וֹת אִישֵׁ֑ךְ וַתַּֽעַזְבִ֞י אָּבִ֣יךְ וְאִמֵּ֗ךְ וְאֶ֨רֶץ֙ מֽוֹלַדְתֵּ֔ךְ וַתֵּ֣לְכִ֔י אֶל־עַ֕ם אֲשֶׁ֥ר לֹא־יָדַ֖עַתְּ תְּמ֥וֹל שִׁלְשֽׁוֹם׃"
+  },
+  "Rt 2:12": {
+   "t": "יְשַׁלֵּ֥ם יְהוָ֖ה פָּעֳלֵ֑ךְ וּתְהִ֨י מַשְׂכֻּרְתֵּ֜ךְ שְׁלֵמָ֗ה מֵעִ֤ם יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁר־בָּ֖את לַחֲס֥וֹת תַּֽחַת־כְּנָפָֽיו׃"
+  },
+  "Rt 2:13": {
+   "t": "וַ֠תֹּאמֶר אֶמְצָא־חֵ֨ן בְּעֵינֶ֤יךָ אֲדֹנִי֙ כִּ֣י נִֽחַמְתָּ֔נִי וְכִ֥י דִבַּ֖רְתָּ עַל־לֵ֣ב שִׁפְחָתֶ֑ךָ וְאָנֹכִי֙ לֹ֣א אֶֽהְיֶ֔ה כְּאַחַ֖ת שִׁפְחֹתֶֽיךָ׃"
+  },
+  "Rt 2:14": {
+   "t": "וַיֹּאמֶר֩ לָ֨ה בֹ֜עַז לְעֵ֣ת הָאֹ֗כֶל גֹּ֤שִֽׁי הֲלֹם֙ וְאָכַ֣לְתְּ מִן־הַלֶּ֔חֶם וְטָבַ֥לְתְּ פִּתֵּ֖ךְ בַּחֹ֑מֶץ וַתֵּ֨שֶׁב֙ מִצַּ֣ד הַקּֽוֹצְרִ֔ים וַיִּצְבָּט־לָ֣הּ קָלִ֔י וַתֹּ֥אכַל וַתִּשְׂבַּ֖ע וַתֹּתַֽר׃"
+  },
+  "Rt 2:15": {
+   "t": "וַתָּ֖קָם לְלַקֵּ֑ט וַיְצַו֩ בֹּ֨עַז אֶת־נְעָרָ֜יו לֵאמֹ֗ר גַּ֣ם בֵּ֧ין הָֽעֳמָרִ֛ים תְּלַקֵּ֖ט וְלֹ֥א תַכְלִימֽוּהָ׃"
+  },
+  "Rt 2:16": {
+   "t": "וְגַ֛ם שֹׁל־תָּשֹׁ֥לּוּ לָ֖הּ מִן־הַצְּבָתִ֑ים וַעֲזַבְתֶּ֥ם וְלִקְּטָ֖ה וְלֹ֥א תִגְעֲרוּ־בָֽהּ׃"
+  },
+  "Rt 2:17": {
+   "t": "וַתְּלַקֵּ֥ט בַּשָּׂדֶ֖ה עַד־הָעָ֑רֶב וַתַּחְבֹּט֙ אֵ֣ת אֲשֶׁר־לִקֵּ֔טָה וַיְהִ֖י כְּאֵיפָ֥ה שְׂעֹרִֽים׃"
+  },
+  "Rt 2:18": {
+   "t": "וַתִּשָּׂא֙ וַתָּב֣וֹא הָעִ֔יר וַתֵּ֥רֶא חֲמוֹתָ֖הּ אֵ֣ת אֲשֶׁר־לִקֵּ֑טָה וַתּוֹצֵא֙ וַתִּתֶּן־לָ֔הּ אֵ֥ת אֲשֶׁר־הוֹתִ֖רָה מִשָּׂבְעָֽהּ׃"
+  },
+  "Rt 2:19": {
+   "t": "וַתֹּאמֶר֩ לָ֨הּ חֲמוֹתָ֜הּ אֵיפֹ֨ה לִקַּ֤טְתְּ הַיּוֹם֙ וְאָ֣נָה עָשִׂ֔ית יְהִ֥י מַכִּירֵ֖ךְ בָּר֑וּךְ וַתַּגֵּ֣ד לַחֲמוֹתָ֗הּ אֵ֤ת אֲשֶׁר־עָשְׂתָה֙ עִמּ֔וֹ וַתֹּ֗אמֶר שֵׁ֤ם הָאִישׁ֙ אֲשֶׁ֨ר עָשִׂ֧יתִי עִמּ֛וֹ הַיּ֖וֹם בֹּֽעַז׃"
+  },
+  "Rt 2:20": {
+   "t": "וַתֹּ֨אמֶר נָעֳמִ֜י לְכַלָּתָ֗הּ בָּר֥וּךְ הוּא֙ לַיהוָ֔ה אֲשֶׁר֙ לֹא־עָזַ֣ב חַסְדּ֔וֹ אֶת־הַחַיִּ֖ים וְאֶת־הַמֵּתִ֑ים וַתֹּ֧אמֶר לָ֣הּ נָעֳמִ֗י קָר֥וֹב לָ֨נוּ֙ הָאִ֔ישׁ מִֽגֹּאֲלֵ֖נוּ הֽוּא׃"
+  },
+  "Rt 2:21": {
+   "t": "וַתֹּ֖אמֶר ר֣וּת הַמּוֹאֲבִיָּ֑ה גַּ֣ם ׀ כִּי־אָמַ֣ר אֵלַ֗י עִם־הַנְּעָרִ֤ים אֲשֶׁר־לִי֙ תִּדְבָּקִ֔ין עַ֣ד אִם־כִּלּ֔וּ אֵ֥ת כָּל־הַקָּצִ֖יר אֲשֶׁר־לִֽי׃"
+  },
+  "Rt 2:22": {
+   "t": "וַתֹּ֥אמֶר נָעֳמִ֖י אֶל־ר֣וּת כַּלָּתָ֑הּ ט֣וֹב בִּתִּ֗י כִּ֤י תֵֽצְאִי֙ עִם־נַ֣עֲרוֹתָ֔יו וְלֹ֥א יִפְגְּעוּ־בָ֖ךְ בְּשָׂדֶ֥ה אַחֵֽר׃"
+  },
+  "Rt 2:23": {
+   "t": "וַתִּדְבַּ֞ק בְּנַעֲר֥וֹת בֹּ֨עַז֙ לְלַקֵּ֔ט עַד־כְּל֥וֹת קְצִֽיר־הַשְּׂעֹרִ֖ים וּקְצִ֣יר הַֽחִטִּ֑ים וַתֵּ֖שֶׁב אֶת־חֲמוֹתָֽהּ׃"
+  },
+  "Rt 3:1": {
+   "t": "וַתֹּ֥אמֶר לָ֖הּ נָעֳמִ֣י חֲמוֹתָ֑הּ בִּתִּ֞י הֲלֹ֧א אֲבַקֶּשׁ־לָ֛ךְ מָנ֖וֹחַ אֲשֶׁ֥ר יִֽיטַב־לָֽךְ׃"
+  },
+  "Rt 3:2": {
+   "t": "וְעַתָּ֗ה הֲלֹ֥א בֹ֨עַז֙ מֹֽדַעְתָּ֔נוּ אֲשֶׁ֥ר הָיִ֖ית אֶת־נַעֲרוֹתָ֑יו הִנֵּה־ה֗וּא זֹרֶ֛ה אֶת־גֹּ֥רֶן הַשְּׂעֹרִ֖ים הַלָּֽיְלָה׃"
+  },
+  "Rt 3:3": {
+   "t": "וְרָחַ֣צְתְּ ׀ וָסַ֗כְתְּ וְשַׂ֧מְתְּ שמלתך עָלַ֖יִךְ וירדתי הַגֹּ֑רֶן אַל־תִּוָּדְעִ֣י לָאִ֔ישׁ עַ֥ד כַּלֹּת֖וֹ לֶאֱכֹ֥ל וְלִשְׁתּֽוֹת׃"
+  },
+  "Rt 3:4": {
+   "t": "וִיהִ֣י בְשָׁכְב֗וֹ וְיָדַ֨עַתְּ֙ אֶת־הַמָּקוֹם֙ אֲשֶׁ֣ר יִשְׁכַּב־שָׁ֔ם וּבָ֛את וְגִלִּ֥ית מַרְגְּלֹתָ֖יו ושכבתי וְהוּא֙ יַגִּ֣יד לָ֔ךְ אֵ֖ת אֲשֶׁ֥ר תַּעַשִֽׂין׃"
+  },
+  "Rt 3:5": {
+   "t": "וַתֹּ֖אמֶר אֵלֶ֑יהָ כֹּ֛ל אֲשֶׁר־תֹּאמְרִ֥י אֶֽעֱשֶֽׂה׃"
+  },
+  "Rt 3:6": {
+   "t": "וַתֵּ֖רֶד הַגֹּ֑רֶן וַתַּ֕עַשׂ כְּכֹ֥ל אֲשֶׁר־צִוַּ֖תָּה חֲמוֹתָֽהּ׃"
+  },
+  "Rt 3:7": {
+   "t": "וַיֹּ֨אכַל בֹּ֤עַז וַיֵּשְׁתְּ֙ וַיִּיטַ֣ב לִבּ֔וֹ וַיָּבֹ֕א לִשְׁכַּ֖ב בִּקְצֵ֣ה הָעֲרֵמָ֑ה וַתָּבֹ֣א בַלָּ֔ט וַתְּגַ֥ל מַרְגְּלֹתָ֖יו וַתִּשְׁכָּֽב׃"
+  },
+  "Rt 3:8": {
+   "t": "וַיְהִי֙ בַּחֲצִ֣י הַלַּ֔יְלָה וַיֶּחֱרַ֥ד הָאִ֖ישׁ וַיִּלָּפֵ֑ת וְהִנֵּ֣ה אִשָּׁ֔ה שֹׁכֶ֖בֶת מַרְגְּלֹתָֽיו׃"
+  },
+  "Rt 3:9": {
+   "t": "וַיֹּ֖אמֶר מִי־אָ֑תּ וַתֹּ֗אמֶר אָנֹכִי֙ ר֣וּת אֲמָתֶ֔ךָ וּפָרַשְׂתָּ֤ כְנָפֶ֨ךָ֙ עַל־אֲמָ֣תְךָ֔ כִּ֥י גֹאֵ֖ל אָֽתָּה׃"
+  },
+  "Rt 3:10": {
+   "t": "וַיֹּ֗אמֶר בְּרוּכָ֨ה אַ֤תְּ לַֽיהוָה֙ בִּתִּ֔י הֵיטַ֛בְתְּ חַסְדֵּ֥ךְ הָאַחֲר֖וֹן מִן־הָרִאשׁ֑וֹן לְבִלְתִּי־לֶ֗כֶת אַחֲרֵי֙ הַבַּ֣חוּרִ֔ים אִם־דַּ֖ל וְאִם־עָשִֽׁיר׃"
+  },
+  "Rt 3:11": {
+   "t": "וְעַתָּ֗ה בִּתִּי֙ אַל־תִּ֣ירְאִ֔י כֹּ֥ל אֲשֶׁר־תֹּאמְרִ֖י אֶֽעֱשֶׂה־לָּ֑ךְ כִּ֤י יוֹדֵ֨עַ֙ כָּל־שַׁ֣עַר עַמִּ֔י כִּ֛י אֵ֥שֶׁת חַ֖יִל אָֽתְּ׃"
+  },
+  "Rt 3:12": {
+   "t": "וְעַתָּה֙ כִּ֣י אָמְנָ֔ם כִּ֥י אם גֹאֵ֖ל אָנֹ֑כִי וְגַ֛ם יֵ֥שׁ גֹּאֵ֖ל קָר֥וֹב מִמֶּֽנִּי׃"
+  },
+  "Rt 3:13": {
+   "t": "לִ֣ינִי ׀ הַלַּ֗יְלָה וְהָיָ֤ה בַבֹּ֨קֶר֙ אִם־יִגְאָלֵ֥ךְ טוֹב֙ יִגְאָ֔ל וְאִם־לֹ֨א יַחְפֹּ֧ץ לְגָֽאֳלֵ֛ךְ וּגְאַלְתִּ֥יךְ אָנֹ֖כִי חַי־יְהוָ֑ה שִׁכְבִ֖י עַד־הַבֹּֽקֶר׃"
+  },
+  "Rt 3:14": {
+   "t": "וַתִּשְׁכַּ֤ב מרגלתו עַד־הַבֹּ֔קֶר וַתָּ֕קָם בטרום יַכִּ֥יר אִ֖ישׁ אֶת־רֵעֵ֑הוּ וַיֹּ֨אמֶר֙ אַל־יִוָּדַ֔ע כִּי־בָ֥אָה הָאִשָּׁ֖ה הַגֹּֽרֶן׃"
+  },
+  "Rt 3:15": {
+   "t": "וַיֹּ֗אמֶר הָ֠בִי הַמִּטְפַּ֧חַת אֲשֶׁר־עָלַ֛יִךְ וְאֶֽחֳזִי־בָ֖הּ וַתֹּ֣אחֶז בָּ֑הּ וַיָּ֤מָד שֵׁשׁ־שְׂעֹרִים֙ וַיָּ֣שֶׁת עָלֶ֔יהָ וַיָּבֹ֖א הָעִֽיר׃"
+  },
+  "Rt 3:16": {
+   "t": "וַתָּבוֹא֙ אֶל־חֲמוֹתָ֔הּ וַתֹּ֖אמֶר מִי־אַ֣תְּ בִּתִּ֑י וַתַּ֨גֶּד־לָ֔הּ אֵ֛ת כָּל־אֲשֶׁ֥ר עָֽשָׂה־לָ֖הּ הָאִֽישׁ׃"
+  },
+  "Rt 3:17": {
+   "t": "וַתֹּ֕אמֶר שֵׁשׁ־הַשְּׂעֹרִ֥ים הָאֵ֖לֶּה נָ֣תַן לִ֑י כִּ֚י אָמַ֣ר אַל־תָּב֥וֹאִי רֵיקָ֖ם אֶל־חֲמוֹתֵֽךְ׃"
+  },
+  "Rt 3:18": {
+   "t": "וַתֹּ֨אמֶר֙ שְׁבִ֣י בִתִּ֔י עַ֚ד אֲשֶׁ֣ר תֵּֽדְעִ֔ין אֵ֖יךְ יִפֹּ֣ל דָּבָ֑ר כִּ֣י לֹ֤א יִשְׁקֹט֙ הָאִ֔ישׁ כִּֽי־אִם־כִּלָּ֥ה הַדָּבָ֖ר הַיּֽוֹם׃"
+  },
+  "Rt 4:1": {
+   "t": "וּבֹ֨עַז עָלָ֣ה הַשַּׁעַר֮ וַיֵּ֣שֶׁב שָׁם֒ וְהִנֵּ֨ה הַגֹּאֵ֤ל עֹבֵר֙ אֲשֶׁ֣ר דִּבֶּר־בֹּ֔עַז וַיֹּ֛אמֶר ס֥וּרָה שְׁבָה־פֹּ֖ה פְּלֹנִ֣י אַלְמֹנִ֑י וַיָּ֖סַר וַיֵּשֵֽׁב׃"
+  },
+  "Rt 4:2": {
+   "t": "וַיִּקַּ֞ח עֲשָׂרָ֧ה אֲנָשִׁ֛ים מִזִּקְנֵ֥י הָעִ֖יר וַיֹּ֣אמֶר שְׁבוּ־פֹ֑ה וַיֵּשֵֽׁבוּ׃"
+  },
+  "Rt 4:3": {
+   "t": "וַיֹּ֨אמֶר֙ לַגֹּאֵ֔ל חֶלְקַת֙ הַשָּׂדֶ֔ה אֲשֶׁ֥ר לְאָחִ֖ינוּ לֶאֱלִימֶ֑לֶךְ מָכְרָ֣ה נָעֳמִ֔י הַשָּׁ֖בָה מִשְּׂדֵ֥ה מוֹאָֽב׃"
+  },
+  "Rt 4:4": {
+   "t": "וַאֲנִ֨י אָמַ֜רְתִּי אֶגְלֶ֧ה אָזְנְךָ֣ לֵאמֹ֗ר קְ֠נֵה נֶ֥גֶד הַֽיֹּשְׁבִים֮ וְנֶ֣גֶד זִקְנֵ֣י עַמִּי֒ אִם־תִּגְאַל֙ גְּאָ֔ל וְאִם־לֹ֨א יִגְאַ֜ל הַגִּ֣ידָה לִּ֗י ואדע כִּ֣י אֵ֤ין זוּלָֽתְךָ֙ לִגְא֔וֹל וְאָנֹכִ֖י אַחֲרֶ֑יךָ וַיֹּ֖אמֶר אָנֹכִ֥י אֶגְאָֽל׃"
+  },
+  "Rt 4:5": {
+   "t": "וַיֹּ֣אמֶר בֹּ֔עַז בְּיוֹם־קְנוֹתְךָ֥ הַשָּׂדֶ֖ה מִיַּ֣ד נָעֳמִ֑י וּ֠מֵאֵת ר֣וּת הַמּוֹאֲבִיָּ֤ה אֵֽשֶׁת־הַמֵּת֙ קניתי לְהָקִ֥ים שֵׁם־הַמֵּ֖ת עַל־נַחֲלָתֽוֹ׃"
+  },
+  "Rt 4:6": {
+   "t": "וַיֹּ֣אמֶר הַגֹּאֵ֗ל לֹ֤א אוּכַל֙ לגאול־לִ֔י פֶּן־אַשְׁחִ֖ית אֶת־נַחֲלָתִ֑י גְּאַל־לְךָ֤ אַתָּה֙ אֶת־גְּאֻלָּתִ֔י כִּ֥י לֹא־אוּכַ֖ל לִגְאֹֽל׃"
+  },
+  "Rt 4:7": {
+   "t": "וְזֹאת֩ לְפָנִ֨ים בְּיִשְׂרָאֵ֜ל עַל־הַגְּאוּלָּ֤ה וְעַל־הַתְּמוּרָה֙ לְקַיֵּ֣ם כָּל־דָּבָ֔ר שָׁלַ֥ף אִ֛ישׁ נַעֲל֖וֹ וְנָתַ֣ן לְרֵעֵ֑הוּ וְזֹ֥את הַתְּעוּדָ֖ה בְּיִשְׂרָאֵֽל׃"
+  },
+  "Rt 4:8": {
+   "t": "וַיֹּ֧אמֶר הַגֹּאֵ֛ל לְבֹ֖עַז קְנֵה־לָ֑ךְ וַיִּשְׁלֹ֖ף נַעֲלֽוֹ׃"
+  },
+  "Rt 4:9": {
+   "t": "וַיֹּאמֶר֩ בֹּ֨עַז לַזְּקֵנִ֜ים וְכָל־הָעָ֗ם עֵדִ֤ים אַתֶּם֙ הַיּ֔וֹם כִּ֤י קָנִ֨יתִי֙ אֶת־כָּל־אֲשֶׁ֣ר לֶֽאֱלִימֶ֔לֶךְ וְאֵ֛ת כָּל־אֲשֶׁ֥ר לְכִלְי֖וֹן וּמַחְל֑וֹן מִיַּ֖ד נָעֳמִֽי׃"
+  },
+  "Rt 4:10": {
+   "t": "וְגַ֣ם אֶת־ר֣וּת הַמֹּאֲבִיָּה֩ אֵ֨שֶׁת מַחְל֜וֹן קָנִ֧יתִי לִ֣י לְאִשָּׁ֗ה לְהָקִ֤ים שֵׁם־הַמֵּת֙ עַל־נַ֣חֲלָת֔וֹ וְלֹא־יִכָּרֵ֧ת שֵׁם־הַמֵּ֛ת מֵעִ֥ם אֶחָ֖יו וּמִשַּׁ֣עַר מְקוֹמ֑וֹ עֵדִ֥ים אַתֶּ֖ם הַיּֽוֹם׃"
+  },
+  "Rt 4:11": {
+   "t": "וַיֹּ֨אמְר֜וּ כָּל־הָעָ֧ם אֲשֶׁר־בַּשַּׁ֛עַר וְהַזְּקֵנִ֖ים עֵדִ֑ים יִתֵּן֩ יְהוָ֨ה אֶֽת־הָאִשָּׁ֜ה הַבָּאָ֣ה אֶל־בֵּיתֶ֗ךָ כְּרָחֵ֤ל ׀ וּכְלֵאָה֙ אֲשֶׁ֨ר בָּנ֤וּ שְׁתֵּיהֶם֙ אֶת־בֵּ֣ית יִשְׂרָאֵ֔ל וַעֲשֵׂה־חַ֣יִל בְּאֶפְרָ֔תָה וּקְרָא־שֵׁ֖ם בְּבֵ֥ית לָֽחֶם׃"
+  },
+  "Rt 4:12": {
+   "t": "וִיהִ֤י בֵֽיתְךָ֙ כְּבֵ֣ית פֶּ֔רֶץ אֲשֶׁר־יָלְדָ֥ה תָמָ֖ר לִֽיהוּדָ֑ה מִן־הַזֶּ֗רַע אֲשֶׁ֨ר יִתֵּ֤ן יְהוָה֙ לְךָ֔ מִן־הַֽנַּעֲרָ֖ה הַזֹּֽאת׃"
+  },
+  "Rt 4:13": {
+   "t": "וַיִּקַּ֨ח בֹּ֤עַז אֶת־רוּת֙ וַתְּהִי־ל֣וֹ לְאִשָּׁ֔ה וַיָּבֹ֖א אֵלֶ֑יהָ וַיִּתֵּ֨ן יְהוָ֥ה לָ֛הּ הֵרָי֖וֹן וַתֵּ֥לֶד בֵּֽן׃"
+  },
+  "Rt 4:14": {
+   "t": "וַתֹּאמַ֤רְנָה הַנָּשִׁים֙ אֶֽל־נָעֳמִ֔י בָּר֣וּךְ יְהוָ֔ה אֲ֠שֶׁר לֹ֣א הִשְׁבִּ֥ית לָ֛ךְ גֹּאֵ֖ל הַיּ֑וֹם וְיִקָּרֵ֥א שְׁמ֖וֹ בְּיִשְׂרָאֵֽל׃"
+  },
+  "Rt 4:15": {
+   "t": "וְהָ֤יָה לָךְ֙ לְמֵשִׁ֣יב נֶ֔פֶשׁ וּלְכַלְכֵּ֖ל אֶת־שֵׂיבָתֵ֑ךְ כִּ֣י כַלָּתֵ֤ךְ אֲֽשֶׁר־אֲהֵבַ֨תֶךְ֙ יְלָדַ֔תּוּ אֲשֶׁר־הִיא֙ ט֣וֹבָה לָ֔ךְ מִשִּׁבְעָ֖ה בָּנִֽים׃"
+  },
+  "Rt 4:16": {
+   "t": "וַתִּקַּ֨ח נָעֳמִ֤י אֶת־הַיֶּ֨לֶד֙ וַתְּשִׁתֵ֣הוּ בְחֵיקָ֔הּ וַתְּהִי־ל֖וֹ לְאֹמֶֽנֶת׃"
+  },
+  "Rt 4:17": {
+   "t": "וַתִּקְרֶאנָה֩ ל֨וֹ הַשְּׁכֵנ֥וֹת שֵׁם֙ לֵאמֹ֔ר יֻלַּד־בֵּ֖ן לְנָעֳמִ֑י וַתִּקְרֶ֤אנָֽה שְׁמוֹ֙ עוֹבֵ֔ד ה֥וּא אֲבִי־יִשַׁ֖י אֲבִ֥י דָוִֽד׃"
+  },
+  "Rt 4:18": {
+   "t": "וְאֵ֨לֶּה֙ תּוֹלְד֣וֹת פָּ֔רֶץ פֶּ֖רֶץ הוֹלִ֥יד אֶת־חֶצְרֽוֹן׃"
+  },
+  "Rt 4:19": {
+   "t": "וְחֶצְרוֹן֙ הוֹלִ֣יד אֶת־רָ֔ם וְרָ֖ם הוֹלִ֥יד אֶת־עַמִּֽינָדָֽב׃"
+  },
+  "Rt 4:20": {
+   "t": "וְעַמִּֽינָדָב֙ הוֹלִ֣יד אֶת־נַחְשׁ֔וֹן וְנַחְשׁ֖וֹן הוֹלִ֥יד אֶת־שַׂלְמָֽה׃"
+  },
+  "Rt 4:21": {
+   "t": "וְשַׂלְמוֹן֙ הוֹלִ֣יד אֶת־בֹּ֔עַז וּבֹ֖עַז הוֹלִ֥יד אֶת־עוֹבֵֽד׃"
+  },
+  "Rt 4:22": {
+   "t": "וְעֹבֵד֙ הוֹלִ֣יד אֶת־יִשָׁ֔י וְיִשַׁ֖י הוֹלִ֥יד אֶת־דָּוִֽד׃"
   }
  },
  "hebreo_notas": {
   "Jue 14:18": "Corrección propia (comprobada por el contenido): la RV1909 (eBible) parte en dos el 14:18 del texto hebreo y de Swete (14:18 la pregunta de los de la ciudad; 14:19 la respuesta de Sansón, «Si no araseis con mi novilla…») y reúne sus 14:19-20 (Ascalón y la mujer de Sansón dada a su compañero) en su 14:20. El TVTMS no recoge este corte. El original de RV 14:18 y 14:19 es el 14:18, cortado justo antes de «ויאמר להם»; el de RV 14:20, los versículos 14:19-20.",
   "Jue 14:19": "Corrección propia (comprobada por el contenido): la RV1909 (eBible) parte en dos el 14:18 del texto hebreo y de Swete (14:18 la pregunta de los de la ciudad; 14:19 la respuesta de Sansón, «Si no araseis con mi novilla…») y reúne sus 14:19-20 (Ascalón y la mujer de Sansón dada a su compañero) en su 14:20. El TVTMS no recoge este corte. El original de RV 14:18 y 14:19 es el 14:18, cortado justo antes de «ויאמר להם»; el de RV 14:20, los versículos 14:19-20.",
-  "Jue 14:20": "Corrección propia (comprobada por el contenido): la RV1909 (eBible) parte en dos el 14:18 del texto hebreo y de Swete (14:18 la pregunta de los de la ciudad; 14:19 la respuesta de Sansón, «Si no araseis con mi novilla…») y reúne sus 14:19-20 (Ascalón y la mujer de Sansón dada a su compañero) en su 14:20. El TVTMS no recoge este corte. El original de RV 14:18 y 14:19 es el 14:18, cortado justo antes de «ויאמר להם»; el de RV 14:20, los versículos 14:19-20."
+  "Jue 14:20": "Corrección propia (comprobada por el contenido): la RV1909 (eBible) parte en dos el 14:18 del texto hebreo y de Swete (14:18 la pregunta de los de la ciudad; 14:19 la respuesta de Sansón, «Si no araseis con mi novilla…») y reúne sus 14:19-20 (Ascalón y la mujer de Sansón dada a su compañero) en su 14:20. El TVTMS no recoge este corte. El original de RV 14:18 y 14:19 es el 14:18, cortado justo antes de «ויאמר להם»; el de RV 14:20, los versículos 14:19-20.",
+  "Rt 4:20": "Dato del texto hebreo (Códice de Leningrado: WLC 4.20 vía OSHB; igual en el UXLC, comprobado al generar): el padre de Booz se escribe «שַׂלְמָה» (Salmá) en Rut 4:20 («y Naasón engendró a Salmá») y «שַׂלְמוֹן» (Salmón) en Rut 4:21 («y Salmón engendró a Booz»). No es una variante entre manuscritos: son dos grafías dentro del mismo texto. La RV1909 escribe «Salmón» en los dos versículos y la LXX de Swete «Σαλμάν» en los dos (comprobado al generar). Que sea la misma persona es lo que da el texto (4:20 lo engendra, 4:21 engendra a Booz); OSHB les da dos lemas Strong distintos (8009 y 8012).",
+  "Rt 4:21": "Dato del texto hebreo (Códice de Leningrado: WLC 4.20 vía OSHB; igual en el UXLC, comprobado al generar): el padre de Booz se escribe «שַׂלְמָה» (Salmá) en Rut 4:20 («y Naasón engendró a Salmá») y «שַׂלְמוֹן» (Salmón) en Rut 4:21 («y Salmón engendró a Booz»). No es una variante entre manuscritos: son dos grafías dentro del mismo texto. La RV1909 escribe «Salmón» en los dos versículos y la LXX de Swete «Σαλμάν» en los dos (comprobado al generar). Que sea la misma persona es lo que da el texto (4:20 lo engendra, 4:21 engendra a Booz); OSHB les da dos lemas Strong distintos (8009 y 8012).",
+  "Rt 1:8": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «יעשה» y se lee «יַ֣עַשׂ».",
+  "Rt 2:1": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «מידע» y se lee «מוֹדַ֣ע».",
+  "Rt 3:3": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «שמלתך» y se lee «שִׂמְלֹתַ֛יִךְ»; se escribe «וירדתי» y se lee «וְיָרַ֣דְתְּ».",
+  "Rt 3:4": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «ושכבתי» y se lee «וְשָׁכָ֑בְתְּ».",
+  "Rt 3:5": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se lee «אֵלַ֖י», que no está escrito (qere sin ketiv; el texto mostrado no lo incluye).",
+  "Rt 3:12": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «אם» pero no se lee (ketiv sin qere).",
+  "Rt 3:14": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «מרגלתו» y se lee «מַרְגְּלוֹתָיוֹ֙»; se escribe «בטרום» y se lee «בְּטֶ֛רֶם». El rollo 2Q17 (2QRuth-b) escribe esta palabra «מ[רג]לתיו» (datos de Abegg; «רג» reconstruido por los editores): con la י de la forma que se lee (qere), no como el ketiv «מרגלתו».",
+  "Rt 3:17": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se lee «אֵלַ֔י», que no está escrito (qere sin ketiv; el texto mostrado no lo incluye).",
+  "Rt 4:4": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «ואדע» y se lee «וְאֵֽדְעָה֙».",
+  "Rt 4:5": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «קניתי» y se lee «קָנִ֔יתָה».",
+  "Rt 4:6": "Ketiv y qere (dato del texto hebreo, Códice de Leningrado: WLC 4.20 vía OSHB; el UXLC marca los mismos, comprobado al generar): el ketiv es lo escrito en el texto consonántico (el texto hebreo de esta app lo muestra, sin vocales) y el qere, lo que lee la tradición masorética (nota al margen; aquí no se muestra). Aquí se escribe «לגאול» y se lee «לִגְאָל»."
  },
  "hebreo_sin_texto": {
   "Jos 21:36": "Sin texto hebreo: este versículo no está en el Códice de Leningrado. El UXLC (tanach.us, la transcripción del WLC) lo marca «X»: «This verse does NOT occur in the Leningrad Codex. Included for continuity of verse numbering». El WLC (OSHB) incluye un texto solo para no romper la numeración, sin decir de qué manuscrito sale, y aquí no se muestra como si fuera del códice. Jos 21:36-37 (ciudades levíticas de Rubén) sí están en la RV1909 y en la LXX (Swete), comprobado al generar.",
@@ -21729,13 +21997,14 @@ window.BIBLIA_ORIGINALES = {
     "Dt 1:1-Dt 34:12",
     "Jos 1:1-Jos 21:35",
     "Jos 21:38-Jos 24:33",
-    "Jue 1:1-Jue 21:25"
+    "Jue 1:1-Jue 21:25",
+    "Rt 1:1-Rt 4:22"
    ],
    "institucion": "Biblioteca Nacional de Rusia, San Petersburgo",
    "url": "https://archive.org/details/Leningrad_Codex",
    "uso": "solo_enlace",
-   "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar).",
-   "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12)"
+   "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar). Rut: entero; el UXLC tampoco marca con «X» ningún versículo de Rut (comprobado al generar). En este códice Rut va en los Ketuvim (tras Proverbios), no tras Jueces como en la RV (Wikipedia «Leningrad Codex»).",
+   "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12); Rut: https://tanach.us/Books/Ruth.xml (2026-11-12)"
   },
   {
    "id": "alepo",
@@ -21748,13 +22017,14 @@ window.BIBLIA_ORIGINALES = {
     "Dt 28:17-Dt 34:12",
     "Jos 1:1-Jos 21:35",
     "Jos 21:38-Jos 24:33",
-    "Jue 1:1-Jue 21:25"
+    "Jue 1:1-Jue 21:25",
+    "Rt 1:1-Rt 4:22"
    ],
    "institucion": "Museo de Israel (Santuario del Libro), Jerusalén",
    "url": "https://www.aleppocodex.org/",
    "uso": "solo_enlace",
-   "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12).",
-   "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11 y el 2026-11-12"
+   "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12). Rut: la fuente da el orden de los Ketuvim de este códice (Crónicas, Salmos, Job, Proverbios, Rut, Cantar…) y su lista de lo perdido en esa parte empieza en Cantar 3:11; no nombra Rut (inferido: completo; 2026-11-12).",
+   "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"
   },
   {
    "id": "vaticano",
@@ -21770,13 +22040,14 @@ window.BIBLIA_ORIGINALES = {
     "Nm 1:1-Nm 36:13",
     "Dt 1:1-Dt 34:12",
     "Jos 1:1-Jos 24:33",
-    "Jue 1:1-Jue 21:25"
+    "Jue 1:1-Jue 21:25",
+    "Rt 1:1-Rt 4:22"
    ],
    "institucion": "Biblioteca Apostólica Vaticana",
    "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
    "uso": "solo_enlace",
-   "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app.",
-   "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"
+   "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y 2 Re 2:5–7, 10–13 (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app. Rut: la fuente lo nombra al describir la página (44 líneas por columna en el Pentateuco, Josué, Jueces, Rut y 1 Reyes 1:1–19:11) y no lo cita entre lo perdido (inferido: completo; 2026-11-12).",
+   "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"
   },
   {
    "id": "sinaitico",
@@ -21794,8 +22065,8 @@ window.BIBLIA_ORIGINALES = {
    "institucion": "British Library, Biblioteca Universitaria de Leipzig, Monasterio de Santa Catalina y Biblioteca Nacional de Rusia (repartido)",
    "url": "https://codexsinaiticus.org/",
    "uso": "solo_enlace",
-   "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden).",
-   "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"
+   "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden). Rut: la lista de contenidos de Wikipedia no lo nombra (releída el 2026-11-12): no va en «contiene»; no comprobé si se conserva algo.",
+   "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"
   },
   {
    "id": "alejandrino",
@@ -21811,13 +22082,14 @@ window.BIBLIA_ORIGINALES = {
     "Nm 1:1-Nm 36:13",
     "Dt 1:1-Dt 34:12",
     "Jos 1:1-Jos 24:33",
-    "Jue 1:1-Jue 21:25"
+    "Jue 1:1-Jue 21:25",
+    "Rt 1:1-Rt 4:22"
    ],
    "institucion": "British Library, Londres",
    "url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_V",
    "uso": "solo_enlace",
-   "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app.",
-   "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11 y el 2026-11-12 (Jueces)"
+   "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app. Rut: la fuente cita el facsímil de Kenyon (1915) «Vol. 1: Genesis – Ruth» y no da daños en Rut (inferido: completo; 2026-11-12).",
+   "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11 y el 2026-11-12 (Jueces y Rut)"
   },
   {
    "id": "samaritano-cul-add1846",
@@ -24171,6 +24443,85 @@ window.BIBLIA_ORIGINALES = {
    "edicion": "Trebolle Barrera 1995, DJD 14: 165-169",
    "nota": "Contenido calculado: versículos con al menos una letra conservada (sin contar el texto reconstruido por los editores) según los datos de Abegg (ETCBC/dss), pasados a numeración RV. La fecha es la etiqueta paleográfica de la Leon Levy Library, no una fecha numérica.",
    "fuente": "Leon Levy Dead Sea Scrolls Digital Library (período y edición oficial, ficha consultada el 2026-11-11); contenido: ETCBC/dss (Abegg, Bowley y Cook), CC BY-NC 4.0"
+  },
+  {
+   "id": "2Q16",
+   "sigla": "2QRuth-a",
+   "nombre": "2QRuth-a (2Q16)",
+   "tipo": "rollo",
+   "idioma": "hebreo",
+   "escritura": "cuadrada",
+   "fecha": "período herodiano",
+   "fecha_certeza": "datación paleográfica",
+   "contiene": [
+    "Rt 2:13-Rt 3:8",
+    "Rt 4:3-Rt 4:4"
+   ],
+   "institucion": "Autoridad de Antigüedades de Israel (IAA)",
+   "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/2Q16-1",
+   "uso": "solo_enlace",
+   "edicion": "Baillet 1962, DJD 3: 71-74",
+   "nota": "Contenido calculado: versículos con al menos una letra conservada (sin contar el texto reconstruido por los editores) según los datos de Abegg (ETCBC/dss), pasados a numeración RV. La fecha es la etiqueta paleográfica de la Leon Levy Library, no una fecha numérica.",
+   "fuente": "Leon Levy Dead Sea Scrolls Digital Library (período y edición oficial, ficha consultada el 2026-11-11); contenido: ETCBC/dss (Abegg, Bowley y Cook), CC BY-NC 4.0"
+  },
+  {
+   "id": "2Q17",
+   "sigla": "2QRuth-b",
+   "nombre": "2QRuth-b (2Q17)",
+   "tipo": "rollo",
+   "idioma": "hebreo",
+   "escritura": "cuadrada",
+   "fecha": "período asmoneo",
+   "fecha_certeza": "datación paleográfica",
+   "contiene": [
+    "Rt 3:13-Rt 3:18"
+   ],
+   "institucion": "Autoridad de Antigüedades de Israel (IAA)",
+   "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/2Q17-1",
+   "uso": "solo_enlace",
+   "edicion": "Baillet 1962, DJD 3: 74-75",
+   "nota": "Contenido calculado: versículos con al menos una letra conservada (sin contar el texto reconstruido por los editores) según los datos de Abegg (ETCBC/dss), pasados a numeración RV. La fecha es la etiqueta paleográfica de la Leon Levy Library, no una fecha numérica. Es el testigo de la variante de Rut 3:15 («שם», «allí», de más) y en Rut 3:14 escribe «מ[רג]לתיו», con la י de la qere (ver «hebreo_notas»).",
+   "fuente": "Leon Levy Dead Sea Scrolls Digital Library (período y edición oficial, ficha consultada el 2026-11-11); contenido: ETCBC/dss (Abegg, Bowley y Cook), CC BY-NC 4.0"
+  },
+  {
+   "id": "4Q104",
+   "sigla": "4QRuth-a",
+   "nombre": "4QRuth-a (4Q104)",
+   "tipo": "rollo",
+   "idioma": "hebreo",
+   "escritura": "cuadrada",
+   "fecha": "período asmoneo",
+   "fecha_certeza": "datación paleográfica",
+   "contiene": [
+    "Rt 1:1-Rt 1:9",
+    "Rt 1:11-Rt 1:12"
+   ],
+   "institucion": "Autoridad de Antigüedades de Israel (IAA)",
+   "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q104-1",
+   "uso": "solo_enlace",
+   "edicion": "Ulrich y Murphy 2000, DJD 16: 187-189",
+   "nota": "Contenido calculado: versículos con al menos una letra conservada (sin contar el texto reconstruido por los editores) según los datos de Abegg (ETCBC/dss), pasados a numeración RV. La fecha es la etiqueta paleográfica de la Leon Levy Library, no una fecha numérica. Es el testigo de las variantes de Rut 1:2 («וישבו», «y habitaron») y Rut 1:9 («קולם»), comprobadas al generar en los datos de Abegg.",
+   "fuente": "Leon Levy Dead Sea Scrolls Digital Library (período y edición oficial, ficha consultada el 2026-11-11); contenido: ETCBC/dss (Abegg, Bowley y Cook), CC BY-NC 4.0"
+  },
+  {
+   "id": "4Q105",
+   "sigla": "4QRuth-b",
+   "nombre": "4QRuth-b (4Q105)",
+   "tipo": "rollo",
+   "idioma": "hebreo",
+   "escritura": "cuadrada",
+   "fecha": "período herodiano",
+   "fecha_certeza": "datación paleográfica",
+   "contiene": [
+    "Rt 1:1-Rt 1:6",
+    "Rt 1:12-Rt 1:15"
+   ],
+   "institucion": "Autoridad de Antigüedades de Israel (IAA)",
+   "url": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q105-1",
+   "uso": "solo_enlace",
+   "edicion": "Ulrich y Murphy 2000, DJD 16: 191-194",
+   "nota": "Contenido calculado: versículos con al menos una letra conservada (sin contar el texto reconstruido por los editores) según los datos de Abegg (ETCBC/dss), pasados a numeración RV. La fecha es la etiqueta paleográfica de la Leon Levy Library, no una fecha numérica.",
+   "fuente": "Leon Levy Dead Sea Scrolls Digital Library (período y edición oficial, ficha consultada el 2026-11-11); contenido: ETCBC/dss (Abegg, Bowley y Cook), CC BY-NC 4.0"
   }
  ],
  "variantes": [
@@ -24436,6 +24787,81 @@ window.BIBLIA_ORIGINALES = {
    "fuente": "Comparación directa de las ediciones: WLC (OSHB) y Swete (LXX-Swete-1930).",
    "url_fuente": "https://github.com/eliranwong/LXX-Swete-1930",
    "nota": "Texto (las palabras se comprueban en cada edición). La RV1909 sigue al TM (texto corto). Cuál de los dos textos es el más antiguo es interpretación y no se incluye."
+  },
+  {
+   "ref": "Rt 1:2",
+   "tema": "¿«Estuvieron» o «habitaron» allí? (Rut 1:2)",
+   "lecturas": [
+    {
+     "testigos": [
+      "leningrado"
+     ],
+     "texto_original": "וְשֵׁ֣ם הָאִ֣ישׁ אֱֽלִימֶ֡לֶךְ וְשֵׁם֩ אִשְׁתּ֨וֹ נָעֳמִ֜י וְשֵׁ֥ם שְׁנֵֽי־בָנָ֣יו ׀ מַחְל֤וֹן וְכִלְיוֹן֙ אֶפְרָתִ֔ים מִבֵּ֥ית לֶ֖חֶם יְהוּדָ֑ה וַיָּבֹ֥אוּ שְׂדֵי־מוֹאָ֖ב וַיִּֽהְיוּ־שָֽׁם׃",
+     "traduccion_es": "…y llegaron a los campos de Moab y estuvieron allí (traducción propia, literal).",
+     "nota": "Texto masorético (WLC). La RV1909 sigue aquí al TM."
+    },
+    {
+     "testigos": [
+      "4Q104"
+     ],
+     "texto_original": "ושם האי?[ ש אלימלך ] ושם אשת׳ו נעמי ושם שני בני׳ו מחלון וכליון אפרתים מ## [ בית לחם ] [ יהו ]דה ויבאו שדה מואב וישבו שם׃",
+     "traduccion_es": "…y llegaron al campo de Moab y habitaron allí (traducción propia, literal).",
+     "nota": "En 4Q104 (4QRuth-a) el versículo acaba «ו ישבו שם», con las letras conservadas (no reconstruidas) según los datos de Abegg; el TM acaba «ויהיו שם». Transcripción de Abegg: [ ] = texto reconstruido por los editores; # = letra dañada; ? = lectura dudosa; ׳ separa el sufijo."
+    }
+   ],
+   "fuente": "Edición oficial de 4QRuth-a (4Q104): Ulrich y Murphy 2000, DJD 16: 187-189, según la Leon Levy Library. Lectura del rollo comprobada en los datos de Abegg (ETCBC/dss); TM en el WLC.",
+   "url_fuente": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q104-1",
+   "nota": "Texto: las palabras se comprueban al generar (en el rollo, solo letras conservadas, no reconstruidas). Cuál de las dos lecturas es la original es interpretación y no se incluye."
+  },
+  {
+   "ref": "Rt 1:9",
+   "tema": "«Alzaron su voz»: sufijo femenino o masculino (Rut 1:9)",
+   "lecturas": [
+    {
+     "testigos": [
+      "leningrado"
+     ],
+     "texto_original": "יִתֵּ֤ן יְהוָה֙ לָכֶ֔ם וּמְצֶ֣אןָ מְנוּחָ֔ה אִשָּׁ֖ה בֵּ֣ית אִישָׁ֑הּ וַתִּשַּׁ֣ק לָהֶ֔ן וַתִּשֶּׂ֥אנָה קוֹלָ֖ן וַתִּבְכֶּֽינָה׃",
+     "traduccion_es": "…y alzaron su voz (de ellas) y lloraron (traducción propia, literal).",
+     "nota": "Texto masorético (WLC). La RV1909 sigue aquí al TM."
+    },
+    {
+     "testigos": [
+      "4Q104"
+     ],
+     "texto_original": "יתן יהוה ל׳כם ומצאן מנוחה אשה בית איש׳ה ותשק ל׳הן ] ותשא#נה קול׳ם ו[ תבכינה׃",
+     "traduccion_es": "…y alzaron su voz (con sufijo masculino, «de ellos») y lloraron (traducción propia, literal).",
+     "nota": "En 4Q104 (4QRuth-a) la palabra conservada es «קול׳ם» (Abegg separa el sufijo con «׳»), con sufijo masculino plural; el TM tiene «קולן», femenino plural (Noemí y sus nueras). Es una diferencia gramatical: el sentido no cambia. Transcripción de Abegg: [ ] = texto reconstruido por los editores; # = letra dañada; ? = lectura dudosa; ׳ separa el sufijo."
+    }
+   ],
+   "fuente": "Edición oficial de 4QRuth-a (4Q104): Ulrich y Murphy 2000, DJD 16: 187-189, según la Leon Levy Library. Lectura del rollo comprobada en los datos de Abegg (ETCBC/dss); TM en el WLC.",
+   "url_fuente": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q104-1",
+   "nota": "Texto: las palabras se comprueban al generar (en el rollo, solo letras conservadas, no reconstruidas). Cuál de las dos lecturas es la original es interpretación y no se incluye."
+  },
+  {
+   "ref": "Rt 3:15",
+   "tema": "«Midió seis…» o «midió allí seis…» (Rut 3:15)",
+   "lecturas": [
+    {
+     "testigos": [
+      "leningrado"
+     ],
+     "texto_original": "וַיֹּ֗אמֶר הָ֠בִי הַמִּטְפַּ֧חַת אֲשֶׁר־עָלַ֛יִךְ וְאֶֽחֳזִי־בָ֖הּ וַתֹּ֣אחֶז בָּ֑הּ וַיָּ֤מָד שֵׁשׁ־שְׂעֹרִים֙ וַיָּ֣שֶׁת עָלֶ֔יהָ וַיָּבֹ֖א הָעִֽיר׃",
+     "traduccion_es": "…y midió seis (medidas) de cebada (traducción propia, literal).",
+     "nota": "Texto masorético (WLC). La RV1909 sigue aquí al TM."
+    },
+    {
+     "testigos": [
+      "2Q17"
+     ],
+     "texto_original": "ויא[ מר הבי המטפחת אשר עלי׳ך ואחזי ב׳ה ותאחז ] ב׳ה וימד שם שש שערי[ ם וישת עלי׳ה ויבא העיר׃",
+     "traduccion_es": "…y midió allí seis (medidas) de cebada (traducción propia, literal).",
+     "nota": "En 2Q17 (2QRuth-b) se conservan «ו ימד שם שש שערי[ם]»: tiene «שם» («allí») entre «midió» y «seis», que el TM no tiene. Transcripción de Abegg: [ ] = texto reconstruido por los editores; # = letra dañada; ? = lectura dudosa; ׳ separa el sufijo."
+    }
+   ],
+   "fuente": "Edición oficial de 2QRuth-b (2Q17): Baillet 1962, DJD 3: 74-75, según la Leon Levy Library. Lectura del rollo comprobada en los datos de Abegg (ETCBC/dss); TM en el WLC.",
+   "url_fuente": "https://www.deadseascrolls.org.il/explore-the-archive/manuscript/2Q17-1",
+   "nota": "Texto: las palabras se comprueban al generar (en el rollo, solo letras conservadas, no reconstruidas). Cuál de las dos lecturas es la original es interpretación y no se incluye."
   }
  ],
  "videos": [
@@ -24602,6 +25028,17 @@ window.BIBLIA_ORIGINALES = {
    "rango_certeza": "inferido",
    "fuente": "Proyecto Biblia / BibleProject",
    "url": "https://www.youtube.com/watch?v=bCwaJz4L2nU",
+   "verificado": "oEmbed 200, 2026-11-12"
+  },
+  {
+   "libro": "Rt",
+   "titulo": "Resumen del libro de Rut: un panorama completo animado",
+   "youtube_id": "f984fG4-xlE",
+   "idioma": "es",
+   "rango": "Rt 1:1-Rt 4:22",
+   "rango_certeza": "inferido",
+   "fuente": "Proyecto Biblia / BibleProject",
+   "url": "https://www.youtube.com/watch?v=f984fG4-xlE",
    "verificado": "oEmbed 200, 2026-11-12"
   }
  ],

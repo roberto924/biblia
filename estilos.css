@@ -799,6 +799,9 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 .cmp-he .cmp-txt { font-family: var(--hebreo); font-size: 1.38rem; line-height: 1.9; text-align: right; }
 .cmp-gr .cmp-txt { font-family: var(--griego); font-size: 1.1rem; }
 .cmp-vacio { margin: 0; font-size: .85rem; }
+.cmp-nota-fuente { margin-top: .35rem; font-size: .8rem; color: var(--suave); }
+.cmp-nota-fuente summary { cursor: pointer; }
+.cmp-nota-fuente p { margin: .3rem 0 0; direction: ltr; text-align: start; }
 .num-heb { display: inline-block; margin-bottom: .2rem; padding: .05rem .45rem; border-radius: 999px; font: 600 .74rem/1.4 var(--sans); color: var(--c-inferido); background: color-mix(in srgb, var(--c-inferido) 12%, var(--hoja)); }
 .hablar-btn { display: inline-grid; place-items: center; width: 40px; height: 40px; margin: -.2rem 0 -.3rem -.4rem; border: 0; border-radius: 50%; background: none; color: var(--suave); cursor: pointer; }
 .hablar-btn:hover { color: var(--lapis); background: var(--lapis-tinte); }

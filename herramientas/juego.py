@@ -85,6 +85,14 @@ HECHOS = {
                       ("Jephthah_1", "Jue", "Jue 12"), ("Ehud_1", "Jue", "Jue 3"), ("Jael_1", "Jue", "Jue 4")],
         "sin_aparicion": [("Joshua_1", "Jue 2:8")],   # su muerte se repite en 2:8: mención, no aparición
     },
+    "Rut": {
+        "genealogia": [("Rut 4:18", "Rut 4:22")],
+        "objeto_en": [("Rut 2:17", "efa de cebada de Rut"), ("Rut 4:7", "zapato del rescate")],
+        "escenario_lugar": ["belen"],
+        # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal)
+        "principal": [("Boaz_1", "Rut", "Rut 2"), ("Ruth_1", "Rut", "Rut 1"), ("Naomi_1", "Rut", "Rut 1")],
+        "sin_aparicion": [("David_1", "Rut 4:17")],   # solo «padre de David»: mención, no aparición
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

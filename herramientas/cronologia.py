@@ -58,7 +58,9 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año.",
          "Jueces da duraciones (años de opresión, de reposo y de cada juez: `duraciones`), pero no dice si se suceden "
          "o se solapan: no se fechan desde Adán. Sus sumas son cálculo con esa advertencia; Jue 11:26 («trescientos "
-         "años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes."]
+         "años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes.",
+         "Rut 1:1 sitúa la historia «en los días que gobernaban los jueces» sin decir en qué juez ni en qué año, y la "
+         "genealogía de Rut 4:18-22 no da edades: Rut no añade eventos con año (sus hechos van sin fecha)."]
 # Paso fijo de convención (no es cifra del texto): {"fija": n, "signo": s, "texto": ..., "ref": ...}
 F = lambda n, ref, signo=1, texto="": {"fija": n, "ref": ref, "signo": signo, "texto": texto}
 
@@ -330,6 +332,19 @@ HITOS_JOS = [
     ("Muere Eleazar", "Jos 24:33", "Sin edad ni año."),
 ]
 
+# Rut: (título, ref, nota, (ref de la cita, cita literal TM)). Sin año: la cita se comprueba contra la RV1909.
+HITOS_RUT = [
+    ("Elimelec y Noemí van a Moab por el hambre", "Rut 1:1-5",
+     "Rut 1:1: «en los días que gobernaban los jueces»; no dice en qué juez ni en qué año. Habitan allí «unos diez años» "
+     "(Rut 1:4), sin año de partida.", ("Rut 1:1", "en los días que gobernaban los jueces")),
+    ("Noemí y Rut llegan a Belén", "Rut 1:22",
+     "«en el principio de la siega de las cebadas» (Rut 1:22): una estación, no un año.",
+     ("Rut 1:22", "en el principio de la siega de las cebadas")),
+    ("Booz toma a Rut por mujer; nace Obed", "Rut 4:13-17",
+     "Sin año. La genealogía de Rut 4:18-22 (de Fares a David) no da edades: no permite fechar a Obed ni a David.",
+     ("Rut 4:13", "Booz pues tomó á Ruth")),
+]
+
 
 # Jueces: duraciones que da el texto (opresión, reposo, gobierno de un juez). El texto no dice si son consecutivas ni
 # si se solapan: no se convierten en años desde Adán. 1 Re 6:1 (480 años desde la salida) queda para cuando llegue Reyes.
@@ -599,4 +614,9 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
     if dur:
         cron["duraciones"] = dur
         cron["hitos_sin_fecha"] += [{"titulo": t, "ref": r, "nota": n} for t, r, n in hitos_jue]
+    if any(r.startswith("Rut ") for r in textos["TM"]):
+        for t, r, n, (rc, cita) in HITOS_RUT:
+            if cita not in textos["TM"].get(rc, ""):
+                errores.append(f"Hito de Rut: «{cita}» no está en {rc}")
+            cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
     return cron, vivos, usadas
