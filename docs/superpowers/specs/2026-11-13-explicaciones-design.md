@@ -175,7 +175,7 @@ Se documenta en `CLAUDE.md` («Por cada libro…») y en `datos/LEEME.md`.
 1. **Verificación del contenido.** El generador comprueba las citas bíblicas, los ids y las refs. Además, cada tanda de contenido pasa por una **auditoría** de un agente distinto, como la de las láminas. El auditor revisa:
    - todos los pasajes difíciles: que cada postura diga lo que dice su fuente, abriéndola;
    - todas las medidas: los pasos del cálculo y el supuesto, con su fuente;
-   - una muestra de al menos el 20 % de los demás términos, contra su fuente.
+   - todos los demás términos, contra su fuente (desde 2026-11-13: con una muestra del 20 % se escapó ~1 de cada 3 conceptos con errores).
 
    Los veredictos van a `herramientas/explicaciones/auditoria.json` (OK, AJUSTAR o RECHAZAR) y el generador no publica lo RECHAZADO.
 2. **Diccionario en español.** Si no aparece uno de dominio público, la explicación se redacta en español resumiendo a Easton o Smith (en inglés). La fuente lleva `idioma: "en"` y la certeza es `externa`. Si la Biblia lo dice, la certeza es `texto` y prima esa cita.
