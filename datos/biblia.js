@@ -1,5 +1,5 @@
 window.BIBLIA_DATOS = {
- "generado": "2026-11-13T19:08:50+00:00",
+ "generado": "2026-11-13T22:14:55+00:00",
  "fuentes": [
   {
    "id": "rv1909",
@@ -88,6 +88,11 @@ window.BIBLIA_DATOS = {
    "id": "1R",
    "nombre": "1 Reyes",
    "capitulos": 22
+  },
+  {
+   "id": "2R",
+   "nombre": "2 Reyes",
+   "capitulos": 25
   }
  ],
  "capitulos": [
@@ -40108,6 +40113,3032 @@ window.BIBLIA_DATOS = {
      "texto": "E hizo lo malo en los ojos de Jehová, y anduvo en el camino de su padre, y en el camino de su madre, y en el camino de Jeroboam hijo de Nabat, que hizo pecar á Israel: Porque sirvió á Baal, y lo adoró, y provocó á ira á Jehová Dios de Israel, conforme á todas las cosas que su padre había hecho."
     }
    ]
+  },
+  {
+   "libro": "2R",
+   "cap": 1,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "DESPUÉS de la muerte de Achâb rebelóse Moab contra Israel."
+    },
+    {
+     "n": 2,
+     "texto": "Y Ochôzías cayó por las celosías de una sala [de la casa] que tenía en Samaria; y estando enfermo envió mensajeros, y díjoles: Id, y consultad á Baal-zebub dios de Ecrón, si tengo de sanar de esta mi enfermedad."
+    },
+    {
+     "n": 3,
+     "texto": "Entonces el ángel de Jehová habló á Elías Thisbita, [diciendo]: Levántate, y sube á encontrarte con los mensajeros del rey de Samaria, y les dirás: ¿No hay Dios en Israel, que vosotros vais á consultar á Baal-zebub dios de Ecrón?"
+    },
+    {
+     "n": 4,
+     "texto": "Por tanto así ha dicho Jehová: Del lecho en que subiste no descenderás, antes morirás ciertamente. Y Elías se fué."
+    },
+    {
+     "n": 5,
+     "texto": "Y como los mensajeros se volvieron al rey, él les dijo: ¿Por qué pues os habéis vuelto?"
+    },
+    {
+     "n": 6,
+     "texto": "Y ellos le respondieron: Encontramos un varón que nos dijo: Id, y volveos al rey que os envió, y decidle: Así ha dicho Jehová: ¿No hay Dios en Israel, que tú envías á consultar á Baal-zebub dios de Ecrón? Por tanto, del lecho en que subiste no descenderás, antes morirás de cierto."
+    },
+    {
+     "n": 7,
+     "texto": "Entonces él les dijo: ¿Qué hábito era el de aquel varón que encontrasteis, y os dijo tales palabras?"
+    },
+    {
+     "n": 8,
+     "texto": "Y ellos le respondieron: Un varón velloso, y ceñía sus lomos con un cinto de cuero. Entonces él dijo: Elías Thisbita es."
+    },
+    {
+     "n": 9,
+     "texto": "Y envió luego á él un capitán de cincuenta con sus cincuenta, el cual subió á él; y he aquí que él estaba sentado en la cumbre del monte. Y él le dijo: Varón de Dios, el rey ha dicho que desciendas."
+    },
+    {
+     "n": 10,
+     "texto": "Y Elías respondió, y dijo al capitán de cincuenta: Si yo soy varón de Dios, descienda fuego del cielo, y consúmate con tus cincuenta. Y descendió fuego del cielo, que lo consumió á él y á sus cincuenta."
+    },
+    {
+     "n": 11,
+     "texto": "Volvió el rey á enviar á él otro capitán de cincuenta con sus cincuenta; y hablóle, y dijo: Varón de Dios, el rey ha dicho así: Desciende presto."
+    },
+    {
+     "n": 12,
+     "texto": "Y respondióle Elías, y dijo: Si yo soy varón de Dios, descienda fuego del cielo, y consúmate con tus cincuenta. Y descendió fuego del cielo, que lo consumió á él y á sus cincuenta."
+    },
+    {
+     "n": 13,
+     "texto": "Y volvió á enviar el tercer capitán de cincuenta con sus cincuenta: y subiendo aquel tercer capitán de cincuenta, hincóse de rodillas delante de Elías, y rogóle, diciendo: Varón de Dios, ruégote que sea de valor delante de tus ojos mi vida, y la vida de estos tus cincuenta siervos."
+    },
+    {
+     "n": 14,
+     "texto": "He aquí ha descendido fuego del cielo, y ha consumido los dos primeros capitanes de cincuenta, con sus cincuenta; sea ahora mi vida de valor delante de tus ojos."
+    },
+    {
+     "n": 15,
+     "texto": "Entonces el ángel de Jehová dijo á Elías: Desciende con él; no hayas de él miedo. Y él se levantó, y descendió con él al rey."
+    },
+    {
+     "n": 16,
+     "texto": "Y díjole: Así ha dicho Jehová: Pues que enviaste mensajeros á consultar á Baal-zebub dios de Ecrón, ¿no hay Dios en Israel para consultar en su palabra? No descenderás, por tanto, del lecho en que subiste, antes morirás de cierto."
+    },
+    {
+     "n": 17,
+     "texto": "Y murió conforme á la palabra de Jehová que había hablado Elías: y reinó en su lugar Joram, en el segundo año de Joram, hijo de Josaphat rey de Judá; porque [Ochôzías] no tenía hijo."
+    },
+    {
+     "n": 18,
+     "texto": "Y lo demás de los hechos de Ochôzías, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 2,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ que, cuando quiso Jehová alzar á Elías en un torbellino al cielo, Elías venía con Eliseo de Gilgal."
+    },
+    {
+     "n": 2,
+     "texto": "Y dijo Elías á Eliseo: Quédate ahora aquí, porque Jehová me ha enviado á Beth-el. Y Eliseo dijo: Vive Jehová, y vive tu alma, que no te dejaré. Descendieron pues á Beth-el."
+    },
+    {
+     "n": 3,
+     "texto": "Y saliendo á Eliseo los hijos de los profetas que estaban en Beth-el, dijéronle: ¿Sabes como Jehová quitará hoy á tu señor de tu cabeza? Y él dijo: Sí, yo lo sé; callad."
+    },
+    {
+     "n": 4,
+     "texto": "Y Elías le volvió á decir: Eliseo, quédate aquí ahora, porque Jehová me ha enviado á Jericó. Y él dijo: Vive Jehová, y vive tu alma, que no te dejaré. Vinieron pues á Jericó."
+    },
+    {
+     "n": 5,
+     "texto": "Y llegáronse á Eliseo los hijos de los profetas que estaban en Jericó, y dijéronle: ¿Sabes cómo Jehová quitará hoy á tu señor de tu cabeza? Y él respondió: Sí, yo lo sé; callad."
+    },
+    {
+     "n": 6,
+     "texto": "Y Elías le dijo: Ruégote que te quedes aquí, porque Jehová me ha enviado al Jordán. Y él dijo: Vive Jehová, y vive tu alma, que no te dejaré. Fueron pues ambos á dos."
+    },
+    {
+     "n": 7,
+     "texto": "Y vinieron cincuenta varones de los hijos de los profetas, y paráronse enfrente á lo lejos: y ellos dos se pararon junto al Jordán."
+    },
+    {
+     "n": 8,
+     "texto": "Tomando entonces Elías su manto, doblólo, é hirió las aguas, las cuales se apartaron á uno y á otro lado, y pasaron ambos en seco."
+    },
+    {
+     "n": 9,
+     "texto": "Y como hubieron pasado, Elías dijo á Eliseo: Pide lo que quieres que haga por ti, antes que sea quitado de contigo. Y dijo Eliseo: Ruégote que las dos partes de tu espíritu sean sobre mí."
+    },
+    {
+     "n": 10,
+     "texto": "Y él le dijo: Cosa difícil has pedido. Si me vieres cuando fuere quitado de ti, te será así hecho; mas si no, no."
+    },
+    {
+     "n": 11,
+     "texto": "Y aconteció que, yendo ellos hablando, he aquí, un carro de fuego con caballos de fuego apartó á los dos: y Elías subió al cielo en un torbellino."
+    },
+    {
+     "n": 12,
+     "texto": "Y viéndolo Eliseo, clamaba: ¡Padre mío, padre mío, carro de Israel y su gente de á caballo! Y nunca más le vió, y trabando de sus vestidos, rompiólos en dos partes."
+    },
+    {
+     "n": 13,
+     "texto": "Alzó luego el manto de Elías que se le había caído, y volvió, y paróse á la orilla del Jordán."
+    },
+    {
+     "n": 14,
+     "texto": "Y tomando el manto de Elías que se le había caído, hirió las aguas, y dijo: ¿Dónde está Jehová, el Dios de Elías? Y así que hubo del mismo modo herido las aguas, apartáronse á uno y á otro lado, y pasó Eliseo."
+    },
+    {
+     "n": 15,
+     "texto": "Y viéndole los hijos de los profetas que estaban en Jericó de la otra parte, dijeron: El espíritu de Elías reposó sobre Eliseo. Y viniéronle á recibir, é inclináronse á él hasta la tierra."
+    },
+    {
+     "n": 16,
+     "texto": "Y dijéronle: He aquí hay con tus siervos cincuenta varones fuertes: vayan ahora y busquen á tu señor; quizá lo ha levantado el espíritu de Jehová, y lo ha echado en algún monte ó en algún valle. Y él les dijo: No enviéis."
+    },
+    {
+     "n": 17,
+     "texto": "Mas ellos le importunaron, hasta que avergonzándose dijo: Enviad. Entonces ellos enviaron cincuenta hombres, los cuales lo buscaron tres días, mas no lo hallaron."
+    },
+    {
+     "n": 18,
+     "texto": "Y cuando volvieron á él, que se había quedado en Jericó, él les dijo: ¿No os dije yo que no fueseis?"
+    },
+    {
+     "n": 19,
+     "texto": "Y los hombres de la ciudad dijeron á Eliseo: He aquí el asiento de esta ciudad es bueno, como mi señor ve; mas las aguas son malas, y la tierra enferma."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces él dijo: Traedme una botija nueva, y poned en ella sal. Y trajéronsela."
+    },
+    {
+     "n": 21,
+     "texto": "Y saliendo él á los manaderos de las aguas, echó dentro la sal, y dijo: Así ha dicho Jehová: Yo sané estas aguas, y no habrá más en ellas muerte ni enfermedad."
+    },
+    {
+     "n": 22,
+     "texto": "Y fueron sanas las aguas hasta hoy, conforme á la palabra que habló Eliseo."
+    },
+    {
+     "n": 23,
+     "texto": "Después subió de allí á Beth-el; y subiendo por el camino, salieron los muchachos de la ciudad, y se burlaban de él, diciendo: ¡Calvo, sube! ¡calvo, sube!"
+    },
+    {
+     "n": 24,
+     "texto": "Y mirando él atrás, viólos, y maldíjolos en el nombre de Jehová. Y salieron dos osos del monte, y despedazaron de ellos cuarenta y dos muchachos."
+    },
+    {
+     "n": 25,
+     "texto": "De allí fué al monte de Carmelo, y de allí volvió á Samaria."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 3,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y JORAM hijo de Achâb comenzó á reinar en Samaria sobre Israel el año dieciocho de Josaphat rey de Judá; y reinó doce años."
+    },
+    {
+     "n": 2,
+     "texto": "E hizo lo malo en ojos de Jehová, aunque no como su padre y su madre; porque quitó las estatuas de Baal que su padre había hecho."
+    },
+    {
+     "n": 3,
+     "texto": "Mas allegóse á los pecados de Jeroboam, hijo de Nabat, que hizo pecar á Israel; y no se apartó de ellos."
+    },
+    {
+     "n": 4,
+     "texto": "Entonces Mesa rey de Moab era propietario de ganados, y pagaba al rey de Israel cien mil corderos y cien mil carneros con sus vellones."
+    },
+    {
+     "n": 5,
+     "texto": "Mas muerto Achâb, el rey de Moab se rebeló contra el rey de Israel."
+    },
+    {
+     "n": 6,
+     "texto": "Y salió entonces de Samaria el rey Joram, é inspeccionó á todo Israel."
+    },
+    {
+     "n": 7,
+     "texto": "Y fué y envió á decir á Josaphat rey de Judá: El rey de Moab se ha rebelado contra mí: ¿irás tú conmigo á la guerra contra Moab? Y él respondió: Iré, [porque] como yo, así tú; como mi pueblo, así tu pueblo; como mis caballos, así también tus caballos."
+    },
+    {
+     "n": 8,
+     "texto": "Y dijo: ¿Por qué camino iremos? Y él respondió: Por el camino del desierto de Idumea."
+    },
+    {
+     "n": 9,
+     "texto": "Partieron pues el rey de Israel, y el rey de Judá, y el rey de Idumea; y como anduvieron rodeando por el desierto siete días de camino, faltóles el agua para el ejército, y para las bestias que los seguían."
+    },
+    {
+     "n": 10,
+     "texto": "Entonces el rey de Israel dijo: ¡Ah! que ha llamado Jehová estos tres reyes para entregarlos en manos de los Moabitas."
+    },
+    {
+     "n": 11,
+     "texto": "Mas Josaphat dijo: ¿No hay aquí profeta de Jehová, para que consultemos á Jehová por él? Y uno de los siervos del rey de Israel respondió y dijo: Aquí está Eliseo hijo de Saphat, que daba agua á manos á Elías."
+    },
+    {
+     "n": 12,
+     "texto": "Y Josaphat dijo: Este tendrá palabra de Jehová. Y descendieron á él el rey de Israel, y Josaphat, y el rey de Idumea."
+    },
+    {
+     "n": 13,
+     "texto": "Entonces Eliseo dijo al rey de Israel: ¿Qué tengo yo contigo? Ve á los profetas de tu padre, y á los profetas de tu madre. Y el rey de Israel le respondió: No: porque ha juntado Jehová estos tres reyes para entregarlos en manos de los Moabitas."
+    },
+    {
+     "n": 14,
+     "texto": "Y Eliseo dijo: Vive Jehová de los ejércitos, en cuya presencia estoy, que si no tuviese respeto al rostro de Josaphat rey de Judá, no mirara á ti, ni te viera."
+    },
+    {
+     "n": 15,
+     "texto": "Mas ahora traedme un tañedor. Y mientras el tañedor tocaba, la mano de Jehová fué sobre Eliseo."
+    },
+    {
+     "n": 16,
+     "texto": "Y dijo: Así ha dicho Jehová: Haced en este valle muchas acequias."
+    },
+    {
+     "n": 17,
+     "texto": "Porque Jehová ha dicho así: No veréis viento, ni veréis lluvia, y este valle será lleno de agua, y beberéis vosotros, y vuestras bestias, y vuestros ganados."
+    },
+    {
+     "n": 18,
+     "texto": "Y esto es cosa ligera en los ojos de Jehová; dará también á los Moabitas en vuestras manos."
+    },
+    {
+     "n": 19,
+     "texto": "Y vosotros heriréis á toda ciudad fortalecida y á toda villa hermosa, y talaréis todo buen árbol, y cegaréis todas las fuentes de aguas, y destruiréis con piedras toda tierra fértil."
+    },
+    {
+     "n": 20,
+     "texto": "Y aconteció que por la mañana, cuando se ofrece el sacrificio, he aquí vinieron aguas por el camino de Idumea, y la tierra fué llena de aguas."
+    },
+    {
+     "n": 21,
+     "texto": "Y todos los de Moab, como oyeron que los reyes subían á pelear contra ellos, juntáronse desde todos los que ceñían talabarte arriba, y pusiéronse en la frontera."
+    },
+    {
+     "n": 22,
+     "texto": "Y como se levantaron por la mañana, y lució el sol sobre las aguas, vieron los de Moab desde lejos las aguas rojas como sangre;"
+    },
+    {
+     "n": 23,
+     "texto": "Y dijeron: ¡Sangre es esta de espada! Los reyes se han revuelto, y cada uno ha muerto á su compañero. Ahora pues, ¡Moab, á la presa!"
+    },
+    {
+     "n": 24,
+     "texto": "Mas cuando llegaron al campo de Israel, levantáronse los Israelitas é hirieron á los de Moab, los cuales huyeron delante de ellos: siguieron empero hiriendo todavía á los de Moab."
+    },
+    {
+     "n": 25,
+     "texto": "Y asolaron las ciudades, y en todas las heredades fértiles echó cada uno su piedra, y las llenaron; cegaron también todas las fuentes de las aguas, y derribaron todos los buenos árboles; hasta que en Kir-hareseth solamente dejaron sus piedras; porque los honderos la cercaron, y la hirieron."
+    },
+    {
+     "n": 26,
+     "texto": "Y cuando el rey de Moab vió que la batalla lo vencía, tomó consigo setecientos hombres que sacaban espada, para romper contra el rey de Idumea: mas no pudieron."
+    },
+    {
+     "n": 27,
+     "texto": "Entonces arrebató á su primogénito que había de reinar en su lugar, y sacrificóle en holocausto sobre el muro. Y hubo grande enojo en Israel; y retiráronse de él, y volviéronse á su tierra."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 4,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "UNA mujer, de las mujeres de los hijos de los profetas, clamó á Eliseo, diciendo: Tu siervo mi marido es muerto; y tú sabes que tu siervo era temeroso de Jehová: y ha venido el acreedor para tomarse dos hijos míos por siervos."
+    },
+    {
+     "n": 2,
+     "texto": "Y Eliseo le dijo: ¿Qué te haré yo? Declárame qué tienes en casa. Y ella dijo: Tu sierva ninguna cosa tiene en casa, sino una botija de aceite."
+    },
+    {
+     "n": 3,
+     "texto": "Y él le dijo: Ve, y pide para ti vasos prestados de todos tus vecinos, vasos vacíos, no pocos."
+    },
+    {
+     "n": 4,
+     "texto": "Entra luego, y cierra la puerta tras ti y tras tus hijos; y echa en todos los vasos, y en estando uno lleno, ponlo aparte."
+    },
+    {
+     "n": 5,
+     "texto": "Y partióse la mujer de él, y cerró la puerta tras sí y tras sus hijos; y ellos le llegaban [los vasos], y ella echaba [del aceite]."
+    },
+    {
+     "n": 6,
+     "texto": "Y como los vasos fueron llenos, dijo á un hijo suyo: Tráeme aún [otro] vaso. Y él dijo: No hay más vasos. Entonces cesó el aceite."
+    },
+    {
+     "n": 7,
+     "texto": "Vino ella luego, y contólo al varón de Dios, [el cual] dijo: Ve, y vende el aceite, y paga á tus acreedores; y tú y tus hijos vivid de lo que quedare."
+    },
+    {
+     "n": 8,
+     "texto": "Y aconteció también que un día pasaba Eliseo por Sunem; y había allí una mujer principal, la cual le constriñó á que comiese del pan: y cuando por allí pasaba, veníase á su casa á comer del pan."
+    },
+    {
+     "n": 9,
+     "texto": "Y ella dijo á su marido: He aquí ahora, yo entiendo que éste que siempre pasa por nuestra casa, es varón de Dios santo."
+    },
+    {
+     "n": 10,
+     "texto": "Yo te ruego que hagas una pequeña cámara de paredes, y pongamos en ella cama, y mesa, y silla, y candelero, para que cuando viniere á nosotros, se recoja en ella."
+    },
+    {
+     "n": 11,
+     "texto": "Y aconteció que un día vino él por allí, y recogióse en aquella cámara, y durmió en ella."
+    },
+    {
+     "n": 12,
+     "texto": "Entonces dijo á Giezi su criado: Llama á esta Sunamita. Y como él la llamó, pareció ella delante de él."
+    },
+    {
+     "n": 13,
+     "texto": "Y dijo él á Giezi: Dile: He aquí tú has estado solícita por nosotros con todo este esmero: ¿qué quieres que haga por ti? ¿has menester que hable por ti al rey, ó al general del ejército? Y ella respondió: Yo habito en medio de mi pueblo."
+    },
+    {
+     "n": 14,
+     "texto": "Y él dijo: ¿Qué pues haremos por ella? Y Giezi respondió: He aquí ella no tiene hijo, y su marido es viejo."
+    },
+    {
+     "n": 15,
+     "texto": "Dijo entonces: Llámala. Y él la llamó, y ella se paró á la puerta."
+    },
+    {
+     "n": 16,
+     "texto": "Y él le dijo: A este tiempo según el tiempo de la vida, abrazarás un hijo. Y ella dijo: No, señor mío, varón de Dios, no hagas burla de tu sierva."
+    },
+    {
+     "n": 17,
+     "texto": "Mas la mujer concibió, y parió un hijo á aquel tiempo que Eliseo le había dicho, según el tiempo de la vida."
+    },
+    {
+     "n": 18,
+     "texto": "Y como el niño fué grande, aconteció que un día salió á su padre, á los segadores."
+    },
+    {
+     "n": 19,
+     "texto": "Y dijo á su padre: ¡Mi cabeza, mi cabeza! Y él dijo á un criado: Llévalo á su madre."
+    },
+    {
+     "n": 20,
+     "texto": "Y habiéndole él tomado, y traídolo á su madre, estuvo sentado sobre sus rodillas hasta medio día, y murióse."
+    },
+    {
+     "n": 21,
+     "texto": "Ella entonces subió, y púsolo sobre la cama del varón de Dios, y cerrándole [la puerta], salióse."
+    },
+    {
+     "n": 22,
+     "texto": "Llamando luego á su marido, díjole: Ruégote que envíes conmigo á alguno de los criados y una de las asnas, para que yo vaya corriendo al varón de Dios, y vuelva."
+    },
+    {
+     "n": 23,
+     "texto": "Y él dijo: ¿Para qué has de ir á él hoy? No es nueva luna, ni sábado. Y ella respondió: Paz."
+    },
+    {
+     "n": 24,
+     "texto": "Después hizo enalbardar una borrica, y dijo al mozo: Guía y anda; y no me hagas detener para que suba, sino cuando yo te lo dijere."
+    },
+    {
+     "n": 25,
+     "texto": "Partióse pues, y vino al varón de Dios al monte del Carmelo. Y cuando el varón de Dios la vió de lejos, dijo á su criado Giezi: He aquí la Sunamita:"
+    },
+    {
+     "n": 26,
+     "texto": "Ruégote que vayas ahora corriendo á recibirla, y dile: ¿Tienes paz? ¿y tu marido, y tu hijo? Y ella dijo: Paz."
+    },
+    {
+     "n": 27,
+     "texto": "Y luego que llegó al varón de Dios en el monte, asió de sus pies. Y llegóse Giezi para quitarla; mas el varón de Dios le dijo: Déjala, porque su alma está en amargura, y Jehová me ha encubierto [el motivo], y no me lo ha revelado."
+    },
+    {
+     "n": 28,
+     "texto": "Y ella dijo: ¿Pedí yo hijo á mi señor? ¿No dije yo, que no me burlases?"
+    },
+    {
+     "n": 29,
+     "texto": "Entonces dijo él á Giezi: Ciñe tus lomos, y toma mi bordón en tu mano, y ve; y si alguno te encontrare, no lo saludes; y si alguno te saludare, no le respondas: y pondrás mi bordón sobre el rostro del niño."
+    },
+    {
+     "n": 30,
+     "texto": "Y dijo la madre del niño: Vive Jehová, y vive tu alma, que no te dejaré."
+    },
+    {
+     "n": 31,
+     "texto": "El entonces se levantó, y siguióla. Y Giezi había ido delante de ellos, y había puesto el bordón sobre el rostro del niño, mas ni tenía voz ni sentido; y así se había vuelto para encontrar á Eliseo; y declaróselo, diciendo: El mozo no despierta."
+    },
+    {
+     "n": 32,
+     "texto": "Y venido Eliseo á la casa, he aquí el niño que estaba tendido muerto sobre su cama."
+    },
+    {
+     "n": 33,
+     "texto": "Entrando él entonces, cerró la puerta sobre ambos, y oró á Jehová."
+    },
+    {
+     "n": 34,
+     "texto": "Después subió, y echóse sobre el niño, poniendo su boca sobre la boca de él, y sus ojos sobre sus ojos, y sus manos sobre las manos suyas; así se tendió sobre él, y calentóse la carne del joven."
+    },
+    {
+     "n": 35,
+     "texto": "Volviéndose luego, paseóse por la casa á una parte y á otra, y después subió, y tendióse sobre él; y el joven estornudó siete veces, y abrió sus ojos."
+    },
+    {
+     "n": 36,
+     "texto": "Entonces llamó él á Giezi, y díjole: Llama á esta Sunamita. Y él la llamó. Y entrando ella, él le dijo: Toma tu hijo."
+    },
+    {
+     "n": 37,
+     "texto": "Y así que ella entró, echóse á sus pies, é inclinóse á tierra: después tomó su hijo, y salióse."
+    },
+    {
+     "n": 38,
+     "texto": "Y Eliseo se volvió á Gilgal. Había entonces grande hambre en la tierra. Y los hijos de los profetas estaban con él, por lo que dijo á su criado: Pon una grande olla, y haz potaje para los hijos de los profetas."
+    },
+    {
+     "n": 39,
+     "texto": "Y salió uno al campo á coger hierbas, y halló una [como] parra montés, y cogió de ella una faldada de calabazas silvestres: y volvió, y cortólas en la olla del potaje: porque no sabía [lo que era]."
+    },
+    {
+     "n": 40,
+     "texto": "Echóse después para que comieran los hombres; pero sucedió que comiendo ellos de aquel guisado, dieron voces, diciendo: ¡Varón de Dios, la muerte en la olla! Y no lo pudieron comer."
+    },
+    {
+     "n": 41,
+     "texto": "El entonces dijo: Traed harina. Y esparcióla en la olla, y dijo: Echa de comer á la gente. Y no hubo más mal en la olla."
+    },
+    {
+     "n": 42,
+     "texto": "Vino entonces un hombre de Baal-salisa, el cual trajo al varón de Dios panes de primicias, veinte panes de cebada, y trigo nuevo en su espiga. Y él dijo: Da á la gente para que coman."
+    },
+    {
+     "n": 43,
+     "texto": "Y respondió su sirviente: ¿Cómo he de poner esto delante de cien hombres? Mas él tornó á decir: Da á la gente para que coman, porque así ha dicho Jehová: Comerán, y sobrará."
+    },
+    {
+     "n": 44,
+     "texto": "Entonces él lo puso delante de ellos, y comieron, y sobróles, conforme á la palabra de Jehová."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 5,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "NAAMÁN, general del ejército del rey de Siria, era gran varón delante de su señor, y en alta estima, porque por medio de él había dado Jehová salvamento á la Siria. Era este hombre valeroso en extremo, [pero] leproso."
+    },
+    {
+     "n": 2,
+     "texto": "Y de Siria habían salido cuadrillas, y habían llevado cautiva de la tierra de Israel una muchacha; la cual sirviendo á la mujer de Naamán,"
+    },
+    {
+     "n": 3,
+     "texto": "Dijo á su señora: Si rogase mi señor al profeta que está en Samaria, él lo sanaría de su lepra."
+    },
+    {
+     "n": 4,
+     "texto": "Y entrando [Naamán] á su señor, declaróselo, diciendo: Así y así ha dicho una muchacha que es de la tierra de Israel."
+    },
+    {
+     "n": 5,
+     "texto": "Y díjole el rey de Siria: Anda, ve, y yo enviaré letras al rey de Israel. Partió pues él, llevando consigo diez talentos de plata, y seis mil [piezas] de oro, y diez mudas de vestidos."
+    },
+    {
+     "n": 6,
+     "texto": "Tomó también letras para el rey de Israel, que decían así: Luego en llegando á ti estas letras, sabe [por ellas] que yo envío á ti mi siervo Naamán, para que lo sanes de su lepra."
+    },
+    {
+     "n": 7,
+     "texto": "Y luego que el rey de Israel leyó las cartas, rasgó sus vestidos, y dijo: ¿Soy yo Dios, que mate y dé vida, para que éste envíe á mí á que sane un hombre de su lepra? Considerad ahora, y ved cómo busca ocasión contra mí."
+    },
+    {
+     "n": 8,
+     "texto": "Y como Eliseo, varón de Dios oyó que el rey de Israel había rasgado sus vestidos, envió á decir al rey: ¿Por qué has rasgado tus vestidos? Venga ahora á mí, y sabrá que hay profeta en Israel."
+    },
+    {
+     "n": 9,
+     "texto": "Y vino Naamán con sus caballos y con su carro, y paróse á las puertas de la casa de Eliseo."
+    },
+    {
+     "n": 10,
+     "texto": "Entonces Eliseo le envió un mensajero, diciendo: Ve, y lávate siete veces en el Jordán, y tu carne se te restaurará, y serás limpio."
+    },
+    {
+     "n": 11,
+     "texto": "Y Naamán se fué enojado, diciendo: He aquí yo decía para mí: Saldrá él luego, y estando en pie invocará el nombre de Jehová su Dios, y alzará su mano, [y tocará] el lugar, y sanará la lepra."
+    },
+    {
+     "n": 12,
+     "texto": "Abana y Pharphar, ríos de Damasco, ¿no son mejores que todas las aguas de Israel? Si me lavare en ellos, ¿no seré [también] limpio? Y volvióse, y fuése enojado."
+    },
+    {
+     "n": 13,
+     "texto": "Mas sus criados se llegaron á él, y habláronle, diciendo: Padre mío, si el profeta te mandara alguna gran cosa, ¿no la hicieras? ¿cuánto más, diciéndote: Lávate, y serás limpio?"
+    },
+    {
+     "n": 14,
+     "texto": "El entonces descendió, y zambullóse siete veces en el Jordán, conforme á la palabra del varón de Dios: y su carne se volvió como la carne de un niño, y fué limpio."
+    },
+    {
+     "n": 15,
+     "texto": "Y volvió al varón de Dios, él y toda su compañía, y púsose delante de él, y dijo: He aquí ahora conozco que no hay Dios en toda la tierra, sino en Israel. Ruégote que recibas [algún] presente de tu siervo."
+    },
+    {
+     "n": 16,
+     "texto": "Mas él dijo: Vive Jehová, delante del cual estoy, que no [lo] tomaré. E importunándole que tomase, él nunca quiso."
+    },
+    {
+     "n": 17,
+     "texto": "Entonces Naamán dijo: Ruégote pues, ¿no se dará á tu siervo una carga de un par de acémilas de aquesta tierra? porque de aquí adelante tu siervo no sacrificará holocausto ni sacrificio á otros dioses, sino á Jehová."
+    },
+    {
+     "n": 18,
+     "texto": "En esto perdone Jehová á tu siervo: que cuando mi señor entrare en el templo de Rimmón, y para adorar en él se apoyare sobre mi mano, si yo también me inclinare en el templo de Rimmón, si en el templo de Rimmón me inclino, Jehová perdone en esto á tu siervo."
+    },
+    {
+     "n": 19,
+     "texto": "Y él le dijo: Vete en paz. Partióse pues de él, [y caminó] como el espacio de una milla."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces Giezi, criado de Eliseo el varón de Dios, dijo [entre sí]: He aquí mi señor estorbó á este Siro Naamán, no tomando de su mano las cosas que había traído. Vive Jehová, que correré yo tras él, y tomaré de él alguna cosa."
+    },
+    {
+     "n": 21,
+     "texto": "Y siguió Giezi á Naamán: y como le vió Naamán que venía corriendo tras él, apeóse del carro para recibirle, y dijo: ¿Va bien?"
+    },
+    {
+     "n": 22,
+     "texto": "Y él dijo: Bien. Mi señor me envía á decir: He aquí vinieron á mí en esta hora del monte de Ephraim dos mancebos de los hijos de los profetas: ruégote que les des un talento de plata, y sendas mudas de vestidos."
+    },
+    {
+     "n": 23,
+     "texto": "Y Naamán dijo: Ruégote que tomes dos talentos. Y él le constriñó, y ató dos talentos de plata en dos sacos, y dos mudas de vestidos, y púsolo á cuestas á dos de sus criados, que lo llevasen delante de él."
+    },
+    {
+     "n": 24,
+     "texto": "Y llegado que hubo á un lugar secreto, él lo tomó de mano de ellos, y guardólo en casa: luego mandó á los hombres que se fuesen."
+    },
+    {
+     "n": 25,
+     "texto": "Y él entró, y púsose delante de su señor. Y Eliseo le dijo: ¿De dónde vienes, Giezi? Y él dijo: Tu siervo no ha ido á ninguna parte."
+    },
+    {
+     "n": 26,
+     "texto": "El entonces le dijo: ¿No fué también mi corazón, cuando el hombre volvió de su carro á recibirte? ¿es tiempo de tomar plata, y de tomar vestidos, olivares, viñas, ovejas, bueyes, siervos y siervas?"
+    },
+    {
+     "n": 27,
+     "texto": "La lepra de Naamán se te pegará á ti, y á tu simiente para siempre. Y salió de delante de él leproso, [blanco] como la nieve."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 6,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "LOS hijos de los profetas dijeron á Eliseo: He aquí, el lugar en que moramos contigo nos es estrecho."
+    },
+    {
+     "n": 2,
+     "texto": "Vamos ahora al Jordán, y tomemos de allí cada uno una viga, y hagámonos allí lugar en que habitemos. Y él dijo: Andad."
+    },
+    {
+     "n": 3,
+     "texto": "Y dijo uno: Rogámoste que quieras venir con tus siervos. Y él respondió: Yo iré."
+    },
+    {
+     "n": 4,
+     "texto": "Fuése pues con ellos; y como llegaron al Jordán, cortaron la madera."
+    },
+    {
+     "n": 5,
+     "texto": "Y aconteció que derribando uno un árbol, cayósele el hacha en el agua; y dió voces, diciendo: ¡Ah, señor mío, que era emprestada!"
+    },
+    {
+     "n": 6,
+     "texto": "Y el varón de Dios dijo: ¿Dónde cayó? Y él le mostró el lugar. Entonces cortó él un palo, y echólo allí; é hizo nadar el hierro."
+    },
+    {
+     "n": 7,
+     "texto": "Y dijo: Tómalo. Y él tendió la mano, y tomólo."
+    },
+    {
+     "n": 8,
+     "texto": "Tenía el rey de Siria guerra contra Israel, y consultando con sus siervos, dijo: En tal y tal lugar estará mi campamento."
+    },
+    {
+     "n": 9,
+     "texto": "Y el varón de Dios envió á decir al rey de Israel: Mira que no pases por tal lugar, porque los Siros van allí."
+    },
+    {
+     "n": 10,
+     "texto": "Entonces el rey de Israel envió á aquel lugar que el varón de Dios había dicho y amonestádole; y guardóse de allí, no una vez ni dos."
+    },
+    {
+     "n": 11,
+     "texto": "Y el corazón del rey de Siria fué turbado de esto; y llamando á sus siervos, díjoles: ¿No me declararéis vosotros quién de los nuestros es del rey de Israel?"
+    },
+    {
+     "n": 12,
+     "texto": "Entonces uno de los siervos dijo: No, rey señor mío; sino que el profeta Eliseo está en Israel, el cual declara al rey de Israel las palabras que tú hablas en tu más secreta cámara."
+    },
+    {
+     "n": 13,
+     "texto": "Y él dijo: Id, y mirad dónde está, para que yo envíe á tomarlo. Y fuéle dicho: He aquí él está en Dothán."
+    },
+    {
+     "n": 14,
+     "texto": "Entonces envió el rey allá gente de á caballo, y carros, y un grande ejército, los cuales vinieron de noche, y cercaron la ciudad."
+    },
+    {
+     "n": 15,
+     "texto": "Y levantándose de mañana el que servía al varón de Dios, para salir, he aquí el ejército que tenía cercada la ciudad, con gente de á caballo y carros. Entonces su criado le dijo: ¡Ah, señor mío! ¿qué haremos?"
+    },
+    {
+     "n": 16,
+     "texto": "Y él le dijo: No hayas miedo: porque más son los que están con nosotros que los que están con ellos."
+    },
+    {
+     "n": 17,
+     "texto": "Y oró Eliseo, y dijo: Ruégote, oh Jehová, que abras sus ojos para que vea. Entonces Jehová abrió los ojos del mozo, y miró: y he aquí que el monte estaba lleno de gente de á caballo, y de carros de fuego alrededor de Eliseo."
+    },
+    {
+     "n": 18,
+     "texto": "Y luego que los [Siros] descendieron á él, oró Eliseo á Jehová, y dijo: Ruégote que hieras á esta gente con ceguedad. E hiriólos con ceguedad, conforme al dicho de Eliseo."
+    },
+    {
+     "n": 19,
+     "texto": "Después les dijo Eliseo: No es este el camino, ni es esta la ciudad; seguidme, que yo os guiaré al hombre que buscáis. Y guiólos á Samaria."
+    },
+    {
+     "n": 20,
+     "texto": "Y así que llegaron á Samaria, dijo Eliseo: Jehová, abre los ojos de éstos, para que vean. Y Jehová abrió sus ojos, y miraron, y halláronse en medio de Samaria."
+    },
+    {
+     "n": 21,
+     "texto": "Y cuando el rey de Israel los hubo visto, dijo á Eliseo: ¿Herirélos, padre mío?"
+    },
+    {
+     "n": 22,
+     "texto": "Y él le respondió: No los hieras; ¿herirías tú á los que tomaste cautivos con tu espada y con tu arco? Pon delante de ellos pan y agua, para que coman y beban, y se vuelvan á sus señores."
+    },
+    {
+     "n": 23,
+     "texto": "Entonces les fué aparejada grande comida: y como hubieron comido y bebido, enviólos, y ellos se volvieron á su señor. Y nunca más vinieron cuadrillas de Siria á la tierra de Israel."
+    },
+    {
+     "n": 24,
+     "texto": "Después de esto aconteció, que Ben-adad rey de Siria juntó todo su ejército, y subió, y puso cerco á Samaria."
+    },
+    {
+     "n": 25,
+     "texto": "Y hubo grande hambre en Samaria, teniendo ellos cerco sobre ella; tanto, que la cabeza de un asno era vendida por ochenta [piezas] de plata, y la cuarta de un cabo de estiércol de palomas por cinco [piezas] de plata."
+    },
+    {
+     "n": 26,
+     "texto": "Y pasando el rey de Israel por el muro, una mujer le dió voces, y dijo: Salva, rey señor mío."
+    },
+    {
+     "n": 27,
+     "texto": "Y él dijo: Si no te salva Jehová, ¿de dónde te tengo de salvar yo? ¿del alfolí, ó del lagar?"
+    },
+    {
+     "n": 28,
+     "texto": "Y díjole el rey: ¿Qué tienes? Y ella respondió: Esta mujer me dijo: Da acá tu hijo, y comámoslo hoy, y mañana comeremos el mío."
+    },
+    {
+     "n": 29,
+     "texto": "Cocimos pues mi hijo, y le comimos. El día siguiente yo le dije: Da acá tu hijo, y comámoslo. Mas ella ha escondido su hijo."
+    },
+    {
+     "n": 30,
+     "texto": "Y como el rey oyó las palabras de aquella mujer, rasgó sus vestidos, y pasó [así] por el muro: y llegó á ver el pueblo el saco que traía interiormente sobre su carne."
+    },
+    {
+     "n": 31,
+     "texto": "Y él dijo: Así me haga Dios, y así me añada, si la cabeza de Eliseo hijo de Saphat quedare sobre él hoy."
+    },
+    {
+     "n": 32,
+     "texto": "Estaba á la sazón Eliseo sentado en su casa, y con él estaban sentados los ancianos: y el rey envió á él un hombre. Mas antes que el mensajero viniese á él, dijo él á los ancianos: ¿No habéis visto cómo este hijo del homicida me envía á quitar la cabeza? Mirad pues, y cuando viniere el mensajero, cerrad la puerta, é impedidle la entrada: ¿no viene tras él el ruido de los pies de su amo?"
+    },
+    {
+     "n": 33,
+     "texto": "Aun estaba él hablando con ellos, y he aquí el mensajero que descendía á él; y dijo: Ciertamente este mal de Jehová viene. ¿Para qué tengo de esperar más á Jehová?"
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 7,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "DIJO entonces Eliseo: Oid palabra de Jehová: Así dijo Jehová: Mañana á estas horas [valdrá] el seah de flor de harina un siclo, y dos seah de cebada un siclo, á la puerta de Samaria."
+    },
+    {
+     "n": 2,
+     "texto": "Y un príncipe sobre cuya mano el rey se apoyaba, respondió al varón de Dios, y dijo: Si Jehová hiciese ahora ventanas en el cielo, ¿sería esto así? Y él dijo: He aquí tú lo verás con tus ojos, mas no comerás de ello."
+    },
+    {
+     "n": 3,
+     "texto": "Y había cuatro hombres leprosos á la entrada de la puerta, los cuales dijeron el uno al otro: ¿Para qué nos estamos aquí hasta que muramos?"
+    },
+    {
+     "n": 4,
+     "texto": "Si tratáremos de entrar en la ciudad, por el hambre que hay en la ciudad moriremos en ella; y si nos quedamos aquí, también moriremos. Vamos pues ahora, y pasémonos al ejército de los Siros: si ellos nos dieren la vida, viviremos; y si nos dieren la muerte, moriremos."
+    },
+    {
+     "n": 5,
+     "texto": "Levantáronse pues en el principio de la noche, para irse al campo de los Siros; y llegando á las primeras estancias de los Siros, no había allí hombre."
+    },
+    {
+     "n": 6,
+     "texto": "Porque el Señor había hecho que en el campo de los Siros se oyese estruendo de carros, ruido de caballos, y estrépito de grande ejército; y dijéronse los unos á los otros: He aquí el rey de Israel ha pagado contra nosotros á los reyes de los Hetheos, y á los reyes de los Egipcios, para que vengan contra nosotros."
+    },
+    {
+     "n": 7,
+     "texto": "Y así se habían levantado y huído al principio de la noche, dejando sus tiendas, sus caballos, sus asnos, y el campo como se estaba; y habían huído por [salvar] las vidas."
+    },
+    {
+     "n": 8,
+     "texto": "Y como los leprosos llegaron á las primeras estancias, entráronse en una tienda, y comieron y bebieron, y tomaron de allí plata, y oro, y vestidos, y fueron, y escondiéronlo: y vueltos, entraron en otra tienda, y de allí también tomaron, y fueron, y escondieron."
+    },
+    {
+     "n": 9,
+     "texto": "Y dijéronse el uno al otro: No hacemos bien: hoy es día de buena nueva, y nosotros callamos: y si esperamos hasta la luz de la mañana, nos alcanzará la maldad. Vamos pues ahora, entremos, y demos la nueva en casa del rey."
+    },
+    {
+     "n": 10,
+     "texto": "Y vinieron, y dieron voces á los guardas de la puerta de la ciudad, y declaráronles, diciendo: Nosotros fuimos al campo de los Siros, y he aquí que no había allí hombre, ni voz de hombre, sino caballos atados, asnos también atados, y el campo como se estaba."
+    },
+    {
+     "n": 11,
+     "texto": "Y los porteros dieron voces, y declaráronlo dentro, en el palacio del rey."
+    },
+    {
+     "n": 12,
+     "texto": "Y levantóse el rey de noche, y dijo á sus siervos: Yo os declararé lo que nos han hecho los Siros. Ellos saben que tenemos hambre, y hanse salido de las tiendas y escondídose en el campo, diciendo: Cuando hubieren salido de la ciudad, los tomaremos vivos, y entraremos en la ciudad."
+    },
+    {
+     "n": 13,
+     "texto": "Entonces respondió uno de sus siervos, y dijo: Tomen ahora cinco de los caballos que han quedado en la ciudad, (porque ellos también son como toda la multitud de Israel que ha quedado en ella; también ellos son como toda la multitud de Israel que ha perecido;) y enviemos, y veamos [qué hay]."
+    },
+    {
+     "n": 14,
+     "texto": "Tomaron pues dos caballos de un carro, y envió el rey tras el campo de los Siros, diciendo: Id, y ved."
+    },
+    {
+     "n": 15,
+     "texto": "Y ellos fueron, y siguiéronlos hasta el Jordán: y he aquí, todo el camino estaba lleno de vestidos y enseres que los Siros habían arrojado con la premura. Y volvieron los mensajeros, é hiciéronlo saber al rey."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces el pueblo salió, y saquearon el campo de los Siros. Y fué [vendido] un seah de flor de harina por un siclo, y dos seah de cebada por un siclo, conforme á la palabra de Jehová."
+    },
+    {
+     "n": 17,
+     "texto": "Y el rey puso á la puerta á aquel príncipe sobre cuya mano él se apoyaba: y atropellóle el pueblo á la entrada, y murió, conforme á lo que había dicho el varón de Dios, lo que habló cuando el rey descendió á él."
+    },
+    {
+     "n": 18,
+     "texto": "Aconteció pues de la manera que el varón de Dios había hablado al rey, diciendo: Dos seah de cebada por un siclo, y el seah de flor de harina será [vendido] por un siclo mañana á estas horas, á la puerta de Samaria."
+    },
+    {
+     "n": 19,
+     "texto": "A lo cual aquel príncipe había respondido al varón de Dios, diciendo: Aunque Jehová hiciese ventanas en el cielo, ¿pudiera ser eso? Y él dijo: He aquí tú lo verás con tus ojos, mas no comerás de ello."
+    },
+    {
+     "n": 20,
+     "texto": "Y vínole así; porque el pueblo le atropelló á la entrada, y murió."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 8,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y HABLÓ Eliseo á aquella mujer á cuyo hijo había hecho vivir, diciendo: Levántate, vete tú y toda tu casa á vivir donde pudieres; porque Jehová ha llamado el hambre, la cual vendrá también sobre la tierra siete años."
+    },
+    {
+     "n": 2,
+     "texto": "Entonces la mujer se levantó, é hizo como el varón de Dios le dijo: y partióse ella con su familia, y vivió en tierra de los Filisteos siete años."
+    },
+    {
+     "n": 3,
+     "texto": "Y como fueron pasados los siete años, la mujer volvió de la tierra de los Filisteos: después salió para clamar al rey por su casa, y por sus tierras."
+    },
+    {
+     "n": 4,
+     "texto": "Y había el rey hablado con Giezi, criado del varón de Dios, diciéndole: Ruégote que me cuentes todas las maravillas que ha hecho Eliseo."
+    },
+    {
+     "n": 5,
+     "texto": "Y contando él al rey cómo había hecho vivir á un muerto, he aquí la mujer, á cuyo hijo había hecho vivir, que clamaba al rey por su casa y por sus tierras. Entonces dijo Giezi: Rey señor mío, esta es la mujer, y este es su hijo, al cual Eliseo hizo vivir."
+    },
+    {
+     "n": 6,
+     "texto": "Y preguntando el rey á la mujer, ella se lo contó. Entonces el rey le dió un eunuco, diciéndole: Hazle volver todas las cosas que eran suyas, y todos los frutos de las tierras desde el día que dejó el país hasta ahora."
+    },
+    {
+     "n": 7,
+     "texto": "Eliseo se fué luego á Damasco, y Ben-adad rey de Siria estaba enfermo, al cual dieron aviso, diciendo: El varón de Dios ha venido aquí."
+    },
+    {
+     "n": 8,
+     "texto": "Y el rey dijo á Hazael: Toma en tu mano un presente, y ve á recibir al varón de Dios, y consulta por él á Jehová, diciendo: ¿Tengo de sanar de esta enfermedad?"
+    },
+    {
+     "n": 9,
+     "texto": "Tomó pues Hazael en su mano un presente de todos los bienes de Damasco, cuarenta camellos cargados, y saliólo á recibir: y llegó, y púsose delante de él, y dijo: Tu hijo Ben-adad, rey de Siria, me ha enviado á ti, diciendo: ¿Tengo de sanar de esta enfermedad?"
+    },
+    {
+     "n": 10,
+     "texto": "Y Eliseo le dijo: Ve, dile: Seguramente vivirás. Empero Jehová me ha mostrado que él ha de morir ciertamente."
+    },
+    {
+     "n": 11,
+     "texto": "Y el varón de Dios le volvió el rostro afirmadamente, y estúvose así una gran pieza; y lloró el varón de Dios."
+    },
+    {
+     "n": 12,
+     "texto": "Entonces díjole Hazael: ¿Por qué llora mi señor? Y él respondió: Porque sé el mal que has de hacer á los hijos de Israel: á sus fortalezas pegarás fuego, y á sus mancebos matarás á cuchillo, y estrellarás á sus niños, y abrirás á sus preñadas."
+    },
+    {
+     "n": 13,
+     "texto": "Y Hazael dijo: ¿Por qué? ¿es tu siervo perro, que hará esta gran cosa? Y respondió Eliseo: Jehová me ha mostrado que tú has de ser rey de Siria."
+    },
+    {
+     "n": 14,
+     "texto": "Y él se partió de Eliseo, y vino á su señor, el cual le dijo: ¿Qué te ha dicho Eliseo? Y él respondió: Díjome que seguramente vivirás."
+    },
+    {
+     "n": 15,
+     "texto": "El día siguiente tomó un paño basto, y metiólo en agua, y tendiólo sobre el rostro de Ben-adad, y murió: y reinó Hazael en su lugar."
+    },
+    {
+     "n": 16,
+     "texto": "En el quinto año de Joram hijo de Achâb rey de Israel, y siendo Josaphat rey de Judá, comenzó á reinar Joram hijo de Josaphat rey de Judá."
+    },
+    {
+     "n": 17,
+     "texto": "De treinta y dos años era cuando comenzó á reinar, y ocho años reinó en Jerusalem."
+    },
+    {
+     "n": 18,
+     "texto": "Y anduvo en el camino de los reyes de Israel, como hizo la casa de Achâb, porque una hija de Achâb fué su mujer; é hizo lo malo en ojos de Jehová."
+    },
+    {
+     "n": 19,
+     "texto": "Con todo eso, Jehová no quiso cortar á Judá, por amor de David su siervo, como le había prometido darle lámpara de sus hijos perpetuamente."
+    },
+    {
+     "n": 20,
+     "texto": "En su tiempo se rebeló Edom de debajo de la mano de Judá, y pusieron rey sobre sí."
+    },
+    {
+     "n": 21,
+     "texto": "Joram por tanto pasó á Seir, y todos sus carros con él: y levantándose de noche hirió á los Idumeos, los cuales le habían cercado, y á los capitanes de los carros: y el pueblo huyó á sus estancias."
+    },
+    {
+     "n": 22,
+     "texto": "Sustrájose no obstante Edom de bajo la mano de Judá, hasta hoy. Rebelóse además Libna en el mismo tiempo."
+    },
+    {
+     "n": 23,
+     "texto": "Lo demás de los hechos de Joram, y todas las cosas que hizo, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 24,
+     "texto": "Y durmió Joram con sus padres, y fué sepultado con sus padres en la ciudad de David: y reinó en lugar suyo Ochôzías, su hijo."
+    },
+    {
+     "n": 25,
+     "texto": "En el año doce de Joram hijo de Achâb rey de Israel, comenzó á reinar Ochôzías hijo de Joram rey de Judá."
+    },
+    {
+     "n": 26,
+     "texto": "De veintidós años era Ochôzías cuando comenzó á reinar, y reinó un año en Jerusalem. El nombre de su madre fué Athalía hija de Omri rey de Israel."
+    },
+    {
+     "n": 27,
+     "texto": "Y anduvo en el camino de la casa de Achâb, é hizo lo malo en ojos de Jehová, como la casa de Achâb: porque era yerno de la casa de Achâb."
+    },
+    {
+     "n": 28,
+     "texto": "Y fué á la guerra con Joram hijo de Achâb á Ramoth de Galaad, contra Hazael rey de Siria; y los Siros hirieron á Joram."
+    },
+    {
+     "n": 29,
+     "texto": "Y el rey Joram se volvió á Jezreel, para curarse de las heridas que los Siros le hicieron delante de Ramoth, cuando peleó contra Hazael rey de Siria. Y descendió Ochôzías hijo de Joram rey de Judá, á visitar á Joram hijo de Achâb en Jezreel, porque estaba enfermo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 9,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ENTONCES el profeta Eliseo llamó á uno de los hijos de los profetas, y díjole: Ciñe tus lomos, y toma esta alcuza de aceite en tu mano, y ve á Ramoth de Galaad."
+    },
+    {
+     "n": 2,
+     "texto": "Y cuando llegares allá, verás allí á Jehú hijo de Josaphat hijo de Nimsi; y entrando, haz que se levante de entre sus hermanos, y mételo en la recámara."
+    },
+    {
+     "n": 3,
+     "texto": "Toma luego la alcuza de aceite, y derrámala sobre su cabeza, y di: Así dijo Jehová: Yo te he ungido por rey sobre Israel. Y abriendo la puerta, echa á huir, y no esperes."
+    },
+    {
+     "n": 4,
+     "texto": "Fué pues el mozo, el mozo del profeta, á Ramoth de Galaad."
+    },
+    {
+     "n": 5,
+     "texto": "Y como él entró, he aquí los príncipes del ejército que estaban sentados. Y él dijo: Príncipe, una palabra tengo que decirte. Y Jehú dijo: ¿A cuál de todos nosotros? Y él dijo: A ti, príncipe."
+    },
+    {
+     "n": 6,
+     "texto": "Y él se levantó, y entróse en casa; y el [otro] derramó el aceite sobre su cabeza, y díjole: Así dijo Jehová Dios de Israel: Yo te he ungido por rey sobre el pueblo de Jehová, sobre Israel."
+    },
+    {
+     "n": 7,
+     "texto": "Y herirás la casa de Achâb tu señor, para que yo vengue la sangre de mis siervos los profetas, y la sangre de todos los siervos de Jehová, de la mano de Jezabel."
+    },
+    {
+     "n": 8,
+     "texto": "Y perecerá toda la casa de Achâb, y talaré de Achâb todo meante á la pared, así al guardado como al desamparado en Israel."
+    },
+    {
+     "n": 9,
+     "texto": "Y yo pondré la casa de Achâb como la casa de Jeroboam hijo de Nabat, y como la casa de Baasa hijo de Ahía."
+    },
+    {
+     "n": 10,
+     "texto": "Y á Jezabel comerán perros en el campo de Jezreel, y no habrá quien la sepulte. En seguida abrió la puerta, y echó á huir."
+    },
+    {
+     "n": 11,
+     "texto": "Después salió Jehú á los siervos de su señor, y dijéronle: ¿Hay paz? ¿para qué entró á ti aquel loco? Y él les dijo: Vosotros conocéis al hombre y sus palabras."
+    },
+    {
+     "n": 12,
+     "texto": "Y ellos dijeron: Mentira; decláranoslo ahora. Y él dijo: Así y así me habló, diciendo: Así ha dicho Jehová: Yo te he ungido por rey sobre Israel."
+    },
+    {
+     "n": 13,
+     "texto": "Entonces tomaron prestamente su ropa, y púsola cada uno debajo de él en un trono alto, y tocaron corneta, y dijeron: Jehú es rey."
+    },
+    {
+     "n": 14,
+     "texto": "Así conjuró Jehú hijo de Josaphat hijo de Nimsi, contra Joram. (Estaba Joram guardando á Ramoth de Galaad con todo Israel, por causa de Hazael rey de Siria."
+    },
+    {
+     "n": 15,
+     "texto": "Habíase empero vuelto el rey Joram á Jezreel, para curarse de las heridas que los Siros le habían hecho, peleando contra Hazael rey de Siria.) Y Jehú dijo: Si es vuestra voluntad, ninguno escape de la ciudad, para ir á dar las nuevas en Jezreel."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces Jehú cabalgó, y fuése á Jezreel, porque Joram estaba allí enfermo. También Ochôzías rey de Judá había descendido á visitar á Joram."
+    },
+    {
+     "n": 17,
+     "texto": "Y el atalaya que estaba en la torre de Jezreel, vió la cuadrilla de Jehú, que venía, y dijo: Yo veo una cuadrilla. Y Joram dijo: Toma uno de á caballo, y envía á reconocerlos, y que les diga: ¿Hay paz?"
+    },
+    {
+     "n": 18,
+     "texto": "Fué pues el de á caballo á reconocerlos, y dijo: El rey dice así: ¿Hay paz? Y Jehú le dijo: ¿Qué tienes tú que ver con la paz? vuélvete tras mí. El atalaya dió luego aviso, diciendo: El mensajero llegó hasta ellos, y no vuelve."
+    },
+    {
+     "n": 19,
+     "texto": "Entonces envió otro de á caballo, el cual llegando á ellos, dijo: El rey dice así: ¿Hay paz? Y Jehú respondió: ¿Qué tienes tú que ver con la paz? vuélvete tras mí."
+    },
+    {
+     "n": 20,
+     "texto": "El atalaya volvió á decir: También éste llegó á ellos y no vuelve: mas el marchar [del que viene] es como el marchar de Jehú hijo de Nimsi, porque viene impetuosamente."
+    },
+    {
+     "n": 21,
+     "texto": "Entonces Joram dijo: Unce. Y uncido que fué su carro, salió Joram rey de Israel, y Ochôzías rey de Judá, cada uno en su carro, y salieron á encontrar á Jehú, al cual hallaron en la heredad de Naboth de Jezreel."
+    },
+    {
+     "n": 22,
+     "texto": "Y en viendo Joram á Jehú, dijo: ¿Hay paz, Jehú? Y él respondió: ¿Qué paz, con las fornicaciones de Jezabel tu madre, y sus muchas hechicerías?"
+    },
+    {
+     "n": 23,
+     "texto": "Entonces Joram volviendo la mano huyó, y dijo á Ochôzías: ¡Traición, Ochôzías!"
+    },
+    {
+     "n": 24,
+     "texto": "Mas Jehú flechó su arco, é hirió á Joram entre las espaldas, y la saeta salió por su corazón, y cayó en su carro."
+    },
+    {
+     "n": 25,
+     "texto": "Dijo luego [Jehú] á Bidkar su capitán: Tómalo y échalo á un cabo de la heredad de Naboth de Jezreel. Acuérdate que cuando tú y yo íbamos juntos con la gente de Achâb su padre, Jehová pronunció esta sentencia sobre él, diciendo:"
+    },
+    {
+     "n": 26,
+     "texto": "Que yo he visto ayer las sangres de Naboth, y las sangres de sus hijos, dijo Jehová; y tengo de darte la paga en esta heredad, dijo Jehová. Tómalo pues ahora, y échalo en la heredad, conforme á la palabra de Jehová."
+    },
+    {
+     "n": 27,
+     "texto": "Y viendo esto Ochôzías rey de Judá, huyó por el camino de la casa del huerto. Y siguiólo Jehú, diciendo: Herid también á éste en el carro. [Y le hirieron] á la subida de Gur, junto á Ibleam. Y él huyó á Megiddo, y murió allí."
+    },
+    {
+     "n": 28,
+     "texto": "Y sus siervos le llevaron en un carro á Jerusalem, y allá le sepultaron con sus padres, en su sepulcro en la ciudad de David."
+    },
+    {
+     "n": 29,
+     "texto": "En el undécimo año de Joram hijo de Achâb, comenzó á reinar Ochôzías sobre Judá."
+    },
+    {
+     "n": 30,
+     "texto": "Vino después Jehú á Jezreel: y como Jezabel lo oyó, adornó sus ojos con alcohol, y atavió su cabeza, y asomóse á una ventana."
+    },
+    {
+     "n": 31,
+     "texto": "Y como entraba Jehú por la puerta, ella dijo: ¿Sucedió bien á Zimri, que mató á su señor?"
+    },
+    {
+     "n": 32,
+     "texto": "Alzando él entonces su rostro hacia la ventana, dijo: ¿Quién es conmigo? ¿quién? Y miraron hacia él dos ó tres eunucos."
+    },
+    {
+     "n": 33,
+     "texto": "Y él [les] dijo: Echadla abajo. Y ellos la echaron: y parte de su sangre fué salpicada en la pared, y en los caballos; y él la atropelló."
+    },
+    {
+     "n": 34,
+     "texto": "Entró luego, y después que comió y bebió, dijo: Id ahora á ver aquella maldita, y sepultadla; que es hija de rey."
+    },
+    {
+     "n": 35,
+     "texto": "Empero cuando fueron para sepultarla, no hallaron de ella más que la calavera, y los pies, y las palmas de las manos."
+    },
+    {
+     "n": 36,
+     "texto": "Y volvieron, y dijéronselo. Y él dijo: La palabra de Dios es ésta, la cual él habló por mano de su siervo Elías Thisbita, diciendo: En la heredad de Jezreel comerán los perros las carnes de Jezabel."
+    },
+    {
+     "n": 37,
+     "texto": "Y el cuerpo de Jezabel fué cual estiércol sobre la faz de la tierra en la heredad de Jezreel; de manera que nadie pueda decir: Esta es Jezabel."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 10,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y TENÍA Achâb en Samaria setenta hijos; y escribió letras Jehú, y enviólas á Samaria á los principales de Jezreel, á los ancianos y á los ayos de Achâb, diciendo:"
+    },
+    {
+     "n": 2,
+     "texto": "Luego en llegando estas letras á vosotros los que tenéis los hijos de vuestro señor, y los que tenéis carros y gente de á caballo, la ciudad pertrechada, y las armas,"
+    },
+    {
+     "n": 3,
+     "texto": "Mirad [cuál es] el mejor y él más recto de los hijos de vuestro señor, y ponedlo en el trono de su padre, y pelead por la casa de vuestro señor."
+    },
+    {
+     "n": 4,
+     "texto": "Mas ellos tuvieron gran temor, y dijeron: He aquí dos reyes no pudieron resistirle, ¿cómo le resistiremos nosotros?"
+    },
+    {
+     "n": 5,
+     "texto": "Y el mayordomo, y el presidente de la ciudad, y los ancianos, y los ayos, enviaron á decir á Jehú: Siervos tuyos somos, y haremos todo lo que nos mandares: no elegiremos por rey á ninguno; tú harás lo que bien te pareciere."
+    },
+    {
+     "n": 6,
+     "texto": "El entonces les escribió la segunda vez, diciendo: Si sois míos, y queréis obedecerme, tomad las cabezas de los varones hijos de vuestro señor, y venid mañana á estas horas á mí á Jezreel. Y los hijos del rey, setenta varones, estaban con los principales de la ciudad, que los criaban."
+    },
+    {
+     "n": 7,
+     "texto": "Y como las letras llegaron á ellos, tomaron á los hijos del rey, y degollaron setenta varones, y pusieron sus cabezas en canastillos, y enviáronselas á Jezreel."
+    },
+    {
+     "n": 8,
+     "texto": "Y vino un mensajero que le dió las nuevas, diciendo: Traído han las cabezas de los hijos del rey. Y él le dijo: Ponedlas en dos montones á la entrada de la puerta hasta la mañana."
+    },
+    {
+     "n": 9,
+     "texto": "Venida la mañana, salió él, y estando en pie dijo á todo el pueblo: Vosotros sois justos: he aquí yo he conspirado contra mi señor, y lo he muerto: ¿mas quién ha muerto á todos estos?"
+    },
+    {
+     "n": 10,
+     "texto": "Sabed ahora que de la palabra de Jehová que habló sobre la casa de Achâb, nada caerá en tierra: y que Jehová ha hecho lo que dijo por su siervo Elías."
+    },
+    {
+     "n": 11,
+     "texto": "Mató entonces Jehú á todos los que habían quedado de la casa de Achâb en Jezreel, y á todos sus príncipes, y á todos sus familiares, y á sus sacerdotes, que no le quedó ninguno."
+    },
+    {
+     "n": 12,
+     "texto": "Y levantóse de allí, y vino á Samaria; y llegando él en el camino á una casa de esquileo de pastores,"
+    },
+    {
+     "n": 13,
+     "texto": "Halló [allí] á los hermanos de Ochôzías rey de Judá, y díjoles: ¿Quién sois vosotros? Y ellos dijeron: Somos hermanos de Ochôzías, y hemos venido á saludar á los hijos del rey, y á los hijos de la reina."
+    },
+    {
+     "n": 14,
+     "texto": "Entonces él dijo: Prendedlos vivos. Y después que los tomaron vivos, degolláronlos junto al pozo de la casa de esquileo, cuarenta y dos varones, sin dejar ninguno de ellos."
+    },
+    {
+     "n": 15,
+     "texto": "Partiéndose luego de allí encontróse con Jonadab hijo de Rechâb; y después que lo hubo saludado, díjole: ¿Es recto tu corazón, como el mío es recto con el tuyo? Y Jonadab dijo: Lo es. Pues que lo es, dame la mano. Y él le dió su mano. Hízolo luego subir consigo en el carro."
+    },
+    {
+     "n": 16,
+     "texto": "Y díjole: Ven conmigo, y verás mi celo por Jehová. Pusiéronlo pues en su carro."
+    },
+    {
+     "n": 17,
+     "texto": "Y luego que hubo [Jehú] llegado á Samaria, mató á todos los que habían quedado de Achâb en Samaria, hasta extirparlos, conforme á la palabra de Jehová, que había hablado por Elías."
+    },
+    {
+     "n": 18,
+     "texto": "Y juntó Jehú todo el pueblo, y díjoles: Achâb sirvió poco á Baal; mas Jehú lo servirá mucho."
+    },
+    {
+     "n": 19,
+     "texto": "Llamadme pues luego á todos los profetas de Baal, á todos sus siervos, y á todos sus sacerdotes; que no falte uno, porque tengo un gran sacrifico para Baal; cualquiera que faltare, no vivirá. Esto hacía Jehú con astucia, para destruir á los que honraban á Baal."
+    },
+    {
+     "n": 20,
+     "texto": "Y dijo Jehú: Santificad un día solemne á Baal. Y ellos convocaron."
+    },
+    {
+     "n": 21,
+     "texto": "Y envió Jehú por todo Israel, y vinieron todos los siervos de Baal, que no faltó ninguno que no viniese. Y entraron en el templo de Baal, y el templo de Baal se llenó de cabo á cabo."
+    },
+    {
+     "n": 22,
+     "texto": "Entonces dijo al que tenía el cargo de las vestiduras: Saca vestiduras para todos lo siervos de Baal. Y él les sacó vestimentas."
+    },
+    {
+     "n": 23,
+     "texto": "Y entró Jehú con Jonadab hijo de Rechâb en el templo de Baal, y dijo á los siervos de Baal: Mirad y ved que por dicha no haya aquí entre vosotros alguno de los siervos de Jehová, sino solos los siervos de Baal."
+    },
+    {
+     "n": 24,
+     "texto": "Y como ellos entraron para hacer sacrificios y holocaustos, Jehú puso fuera ochenta hombres, y díjoles: Cualquiera que dejare vivo alguno de aquellos hombres que yo he puesto en vuestras manos, su vida será por la del otro."
+    },
+    {
+     "n": 25,
+     "texto": "Y después que acabaron ellos de hacer el holocausto, Jehú dijo á los de su guardia y á los capitanes: Entrad, y matadlos; que no escape ninguno. Y los hirieron á cuchillo: y dejáronlos tendidos los de la guardia y los capitanes, y fueron hasta la ciudad del templo de Baal."
+    },
+    {
+     "n": 26,
+     "texto": "Y sacaron las estatuas de la casa de Baal, y quemáronlas."
+    },
+    {
+     "n": 27,
+     "texto": "Y quebraron la estatua de Baal, y derribaron la casa de Baal, é hiciéronla necesaria, hasta hoy."
+    },
+    {
+     "n": 28,
+     "texto": "Así extinguió Jehú á Baal de Israel."
+    },
+    {
+     "n": 29,
+     "texto": "Con todo eso Jehú no se apartó de los pecados de Jeroboam hijo de Nabat, que hizo pecar á Israel; [á saber], de en pos de los becerros de oro que estaban en Beth-el y en Dan."
+    },
+    {
+     "n": 30,
+     "texto": "Y Jehová dijo á Jehú: Por cuanto has hecho bien ejecutando lo recto delante de mis ojos, é hiciste á la casa de Achâb conforme á todo lo que estaba en mi corazón, tus hijos se sentarán sobre el trono de Israel hasta la cuarta generación."
+    },
+    {
+     "n": 31,
+     "texto": "Mas Jehú no cuidó de andar en la ley de Jehová Dios de Israel con todo su corazón, ni se apartó de los pecados de Jeroboam, el que había hecho pecar á Israel."
+    },
+    {
+     "n": 32,
+     "texto": "En aquellos días comenzó Jehová á talar en Israel: é hiriólos Hazael en todos los términos de Israel,"
+    },
+    {
+     "n": 33,
+     "texto": "Desde el Jordán al nacimiento del sol, toda la tierra de Galaad, de Gad, de Rubén, y de Manasés, desde Aroer que está junto al arroyo de Arnón, á Galaad y á Basán."
+    },
+    {
+     "n": 34,
+     "texto": "Lo demás de los hechos de Jehú, y todas las cosas que hizo, y toda su valentía, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    },
+    {
+     "n": 35,
+     "texto": "Y durmió Jehú con sus padres, y sepultáronlo en Samaria: y reinó en su lugar Joachâz su hijo."
+    },
+    {
+     "n": 36,
+     "texto": "El tiempo que reinó Jehú sobre Israel en Samaria, fué veintiocho años."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 11,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ATHALÍA madre de Ochôzías, viendo que su hijo era muerto, levantóse, y destruyó toda la simiente real."
+    },
+    {
+     "n": 2,
+     "texto": "Pero tomando Josaba hija del rey Joram, hermana de Ochôzías, á Joas hijo de Ochôzías, sacólo furtivamente de entre los hijos del rey, que se mataban, y ocultólo de delante de Athalía, á él y á su ama, en la cámara de las camas, y [así] no lo mataron."
+    },
+    {
+     "n": 3,
+     "texto": "Y estuvo con ella escondido en la casa de Jehová seis años: y Athalía fué reina sobre el país."
+    },
+    {
+     "n": 4,
+     "texto": "Mas al séptimo año envió Joiada, y tomó centuriones, capitanes, y gente de la guardia, y metiólos consigo en la casa de Jehová: é hizo con ellos liga, juramentándolos en la casa de Jehová; y mostróles al hijo del rey."
+    },
+    {
+     "n": 5,
+     "texto": "Y mandóles, diciendo: Esto es lo que habéis de hacer: la tercera parte de vosotros, los que entrarán el sábado, tendrán la guardia de la casa del rey;"
+    },
+    {
+     "n": 6,
+     "texto": "Y la [otra] tercera parte estará á la puerta del sur, y la [otra] tercera parte á la puerta del postigo de los de la guardia: así guardaréis la casa, para que no sea allanada."
+    },
+    {
+     "n": 7,
+     "texto": "Y las dos partes de vosotros, [es á saber], todos los que salen el sábado, tendréis la guarda de la casa de Jehová junto al rey."
+    },
+    {
+     "n": 8,
+     "texto": "Y estaréis alrededor del rey de todas partes, teniendo cada uno sus armas en las manos, y cualquiera que entrare dentro de estos órdenes, sea muerto. Y habéis de estar con el rey cuando saliere, y cuando entrare."
+    },
+    {
+     "n": 9,
+     "texto": "Los centuriones pues, hicieron todo como el sacerdote Joiada les mandó: y tomando cada uno los suyos, [es á saber], los que habían de entrar el sábado, y los que habían salido el sábado, viniéronse á Joiada el sacerdote."
+    },
+    {
+     "n": 10,
+     "texto": "Y el sacerdote dió á los centuriones las picas y los escudos que habían sido del rey David, que estaban en la casa de Jehová."
+    },
+    {
+     "n": 11,
+     "texto": "Y los de la guardia se pusieron [en orden], teniendo cada uno sus armas en sus manos, desde el lado derecho de la casa hasta el lado izquierdo, junto al altar y el templo, en derredor del rey."
+    },
+    {
+     "n": 12,
+     "texto": "Sacando luego [Joiada] al hijo del rey, púsole la corona y el testimonio, é hiciéronle rey ungiéndole; y batiendo las manos dijeron: ¡Viva el rey!"
+    },
+    {
+     "n": 13,
+     "texto": "Y oyendo Athalía el estruendo del pueblo que corría, entró al pueblo en el templo de Jehová;"
+    },
+    {
+     "n": 14,
+     "texto": "Y como miró, he aquí el rey que estaba junto á la columna, conforme á la costumbre, y los príncipes y los trompetas junto al rey; y que todo el pueblo del país hacía alegrías, y que tocaban las trompetas. Entonces Athalía, rasgando sus vestidos, clamó á voz en grito: ¡Traición, traición!"
+    },
+    {
+     "n": 15,
+     "texto": "Mas el sacerdote Joiada mandó á los centuriones que gobernaban el ejército, y díjoles: Sacadla fuera del recinto del templo, y al que la siguiere, matadlo á cuchillo. (Porque el sacerdote dijo que no la matasen en el templo de Jehová.)"
+    },
+    {
+     "n": 16,
+     "texto": "Diéronle pues lugar, y como iba el camino por donde entran los de á caballo á la casa del rey, allí la mataron."
+    },
+    {
+     "n": 17,
+     "texto": "Entonces Joiada hizo alianza entre Jehová y el rey y el pueblo, que serían pueblo de Jehová: y asimismo entre el rey y el pueblo."
+    },
+    {
+     "n": 18,
+     "texto": "Y todo el pueblo de la tierra entró en el templo de Baal, y derribáronlo: asimismo despedazaron enteramente sus altares y sus imágenes, y mataron á Mathán sacerdote de Baal delante de los altares. Y el sacerdote puso guarnición sobre la casa de Jehová."
+    },
+    {
+     "n": 19,
+     "texto": "Después tomó los centuriones, y capitanes, y los de la guardia, y á todo el pueblo de la tierra, y llevaron al rey desde la casa de Jehová, y vinieron por el camino de la puerta de los de la guardia á la casa del rey; y sentóse el [rey] sobre el trono de los reyes."
+    },
+    {
+     "n": 20,
+     "texto": "Y todo el pueblo de la tierra hizo alegrías, y la ciudad estuvo en reposo, habiendo sido Athalía muerta á cuchillo [junto] á la casa del rey."
+    },
+    {
+     "n": 21,
+     "texto": "Era Joas de siete años cuando comenzó á reinar."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 12,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el séptimo año de Jehú comenzó á reinar Joas, y reinó cuarenta años en Jerusalem. El nombre de su madre fué Sibia, de Beer-seba."
+    },
+    {
+     "n": 2,
+     "texto": "Y Joas hizo lo recto en ojos de Jehová todo el tiempo que le dirigió el sacerdote Joiada."
+    },
+    {
+     "n": 3,
+     "texto": "Con todo eso los altos no se quitaron; que aun sacrificaba y quemaba el pueblo perfumes en los altos."
+    },
+    {
+     "n": 4,
+     "texto": "Y Joas dijo á los sacerdotes: Todo el dinero de las santificaciones que se suele traer á la casa de Jehová, el dinero de los que pasan [en cuenta], el dinero por las personas, cada cual según su tasa, y todo el dinero que cada uno de su propia voluntad mete en la casa de Jehová,"
+    },
+    {
+     "n": 5,
+     "texto": "Recíbanlo los sacerdotes, cada uno de sus familiares, y reparen los portillos del templo donde quiera que se hallare abertura."
+    },
+    {
+     "n": 6,
+     "texto": "Pero el año veintitrés del rey Joas, no habían aún reparado los sacerdotes las aberturas del templo."
+    },
+    {
+     "n": 7,
+     "texto": "Llamando entonces el rey Joas al pontífice Joiada y á los sacerdotes, díjoles: ¿Por qué no reparáis las aberturas del templo? Ahora pues, no toméis más el dinero de vuestros familiares, sino dadlo para [reparar] las roturas del templo."
+    },
+    {
+     "n": 8,
+     "texto": "Y los sacerdotes consintieron en no tomar [más] dinero del pueblo, ni tener cargo de reparar las aberturas del templo."
+    },
+    {
+     "n": 9,
+     "texto": "Mas el pontífice Joiada tomó un arca, é hízole en la tapa un agujero, y púsola junto al altar, á la mano derecha como se entra en el templo de Jehová; y los sacerdotes que guardaban la puerta, ponían allí todo el dinero que se metía en la casa de Jehová."
+    },
+    {
+     "n": 10,
+     "texto": "Y cuando veían que había mucho dinero en el arca, venía el notario del rey y el gran sacerdote, y contaban el dinero que hallaban en el templo de Jehová, y guardábanlo."
+    },
+    {
+     "n": 11,
+     "texto": "Y daban el dinero suficiente en mano de los que hacían la obra, y de los que tenían el cargo de la casa de Jehová; y ellos lo expendían en [pagar] los carpinteros y maestros que reparaban la casa de Jehová,"
+    },
+    {
+     "n": 12,
+     "texto": "Y los albañiles y canteros; y en comprar la madera y piedra de cantería para reparar las aberturas de la casa de Jehová; y en todo lo que se gastaba en la casa para repararla."
+    },
+    {
+     "n": 13,
+     "texto": "Mas de aquel dinero que se traía á la casa de Jehová, no se hacían tazas de plata, ni salterios, ni jofainas, ni trompetas; ni ningún otro vaso de oro ni de plata se hacía para el templo de Jehová:"
+    },
+    {
+     "n": 14,
+     "texto": "Porque lo daban á los que hacían la obra, y con él reparaban la casa de Jehová."
+    },
+    {
+     "n": 15,
+     "texto": "Y no se tomaba cuenta á los hombres en cuyas manos el dinero era entregado, para que ellos lo diesen á los que hacían la obra: porque [lo] hacían ellos fielmente."
+    },
+    {
+     "n": 16,
+     "texto": "El dinero por el delito, y el dinero por los pecados, no se metía en la casa de Jehová; porque era de los sacerdotes."
+    },
+    {
+     "n": 17,
+     "texto": "Entonces subió Hazael rey de Siria, y peleó contra Gath, y tomóla: y puso Hazael su rostro para subir contra Jerusalem;"
+    },
+    {
+     "n": 18,
+     "texto": "Por lo que tomó Joas rey de Judá todas las ofrendas que había dedicado Josaphat, y Joram y Ochôzías sus padres, reyes de Judá, y las que él había dedicado, y todo el oro que se halló en los tesoros de la casa de Jehová, y en la casa del rey, y enviólo á Hazael rey de Siria: y él se partió de Jerusalem."
+    },
+    {
+     "n": 19,
+     "texto": "Lo demás de los hechos de Joas, y todas las cosas que hizo, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 20,
+     "texto": "Y levantáronse sus siervos, y conspiraron en conjuración, y mataron á Joas en la casa de Millo, descendiendo él á Silla;"
+    },
+    {
+     "n": 21,
+     "texto": "Pues Josachâr hijo de Simaath, y Jozabad hijo de Somer, sus siervos, hiriéronle, y murió. Y sepultáronlo con sus padres en la ciudad de David, y reinó en su lugar Amasías su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 13,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el año veintitrés de Joas hijo de Ochôzías, rey de Judá, comenzó á reinar Joachâz hijo de Jehú sobre Israel en Samaria; [y reinó] diecisiete años."
+    },
+    {
+     "n": 2,
+     "texto": "E hizo lo malo en ojos de Jehová, y siguió los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel; y no se apartó de ellos."
+    },
+    {
+     "n": 3,
+     "texto": "Y encendióse el furor de Jehová contra Israel, y entrególos en mano de Hazael rey de Siria, y en mano de Ben-adad hijo de Hazael, por largo tiempo."
+    },
+    {
+     "n": 4,
+     "texto": "Mas Joachâz oró á la faz de Jehová, y Jehová lo oyó: porque miró la aflicción de Israel, pues el rey de Siria los afligía."
+    },
+    {
+     "n": 5,
+     "texto": "(Y dió Jehová salvador á Israel, y salieron de bajo la mano de los Siros; y habitaron los hijos de Israel en sus estancias, como antes."
+    },
+    {
+     "n": 6,
+     "texto": "Con todo eso no se apartaron de los pecados de la casa de Jeroboam, el que hizo pecar á Israel: en ellos anduvieron; y también el bosque permaneció en Samaria.)"
+    },
+    {
+     "n": 7,
+     "texto": "Porque no le había quedado gente á Joachâz, sino cincuenta hombres de á caballo, y diez carros, y diez mil hombres de á pié; pues el rey de Siria los había destruído, y los había puesto como polvo para hollar."
+    },
+    {
+     "n": 8,
+     "texto": "Lo demás de los hechos de Joachâz, y todo lo que hizo, y sus valentías, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    },
+    {
+     "n": 9,
+     "texto": "Y durmió Joachâz con sus padres, y sepultáronlo en Samaria: y reinó en su lugar Joas su hijo."
+    },
+    {
+     "n": 10,
+     "texto": "El año treinta y siete de Joas rey de Judá, comenzó á reinar Joas hijo de Joachâz sobre Israel en Samaria; [y reinó] dieciséis años."
+    },
+    {
+     "n": 11,
+     "texto": "E hizo lo malo en ojos de Jehová: no se apartó de todos los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel; en ellos anduvo."
+    },
+    {
+     "n": 12,
+     "texto": "Lo demás de los hechos de Joas, y todas las cosas que hizo, y su esfuerzo con que guerreó contra Amasías rey de Judá, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    },
+    {
+     "n": 13,
+     "texto": "Y durmió Joas con sus padres, y sentóse Jeroboam sobre su trono: y Joas fué sepultado en Samaria con los reyes de Israel."
+    },
+    {
+     "n": 14,
+     "texto": "Estaba Eliseo enfermo de aquella su enfermedad de que murió. Y descendió á él Joas rey de Israel, y llorando delante de él, dijo: ¡Padre mío, padre mío, carro de Israel y su gente de á caballo!"
+    },
+    {
+     "n": 15,
+     "texto": "Y díjole Eliseo: Toma un arco y unas saetas. Tomóse él entonces un arco y unas saetas."
+    },
+    {
+     "n": 16,
+     "texto": "Y dijo [Eliseo] al rey de Israel: Pon tu mano sobre el arco. Y puso él su mano sobre el arco. Entonces puso Eliseo sus manos sobre las manos del rey,"
+    },
+    {
+     "n": 17,
+     "texto": "Y dijo: Abre la ventana de hacia el oriente. Y como él la abrió dijo Eliseo: Tira. Y tirando él, dijo [Eliseo]: Saeta de salud de Jehová, y saeta de salud contra Siria: porque herirás á los Siros en Aphec, hasta consumirlos."
+    },
+    {
+     "n": 18,
+     "texto": "Y tornóle á decir: Toma las saetas. Y luego que el rey de Israel las hubo tomado, díjole: Hiere la tierra. Y él hirió tres veces, y cesó."
+    },
+    {
+     "n": 19,
+     "texto": "Entonces el varón de Dios, enojado con él, le dijo: A herir cinco ó seis veces, herirías á Siria, hasta no quedar ninguno: empero ahora tres veces herirás á Siria."
+    },
+    {
+     "n": 20,
+     "texto": "Y murió Eliseo, y sepultáronlo. Entrado el año vinieron partidas de Moabitas á la tierra."
+    },
+    {
+     "n": 21,
+     "texto": "Y aconteció que al sepultar unos un hombre, súbitamente vieron una partida, y arrojaron al hombre en el sepulcro de Eliseo: y cuando llegó á tocar el muerto los huesos de Eliseo, revivió, y levantóse sobre sus pies."
+    },
+    {
+     "n": 22,
+     "texto": "Hazael pues, rey de Siria, afligió á Israel todo el tiempo de Joachâz."
+    },
+    {
+     "n": 23,
+     "texto": "Mas Jehová tuvo misericordia de ellos, y compadecióse de ellos, y mirólos, por amor de su pacto con Abraham, Isaac y Jacob; y no quiso destruirlos ni echarlos de delante de sí hasta ahora."
+    },
+    {
+     "n": 24,
+     "texto": "Y murió Hazael rey de Siria, y reinó en su lugar Ben-adad su hijo."
+    },
+    {
+     "n": 25,
+     "texto": "Y volvió Joas hijo de Joachâz, y tomó de mano de Ben-adad hijo de Hazael, las ciudades que él había tomado de mano de Joachâz su padre en guerra. Tres veces lo batió Joas, y restituyó las ciudades á Israel."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 14,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el año segundo de Joas hijo de Joachâz rey de Israel, comenzó á reinar Amasías hijo de Joas rey de Judá."
+    },
+    {
+     "n": 2,
+     "texto": "Cuando comenzó á reinar era de veinticinco años, y veintinueve años reinó en Jerusalem: el nombre de su madre fué Joaddan, de Jerusalem."
+    },
+    {
+     "n": 3,
+     "texto": "Y él hizo lo recto en ojos de Jehová, aunque no como David su padre: hizo conforme á todas las cosas que había hecho Joas su padre."
+    },
+    {
+     "n": 4,
+     "texto": "Con todo eso los altos no fueron quitados; que el pueblo aun sacrificaba y quemaba perfumes en los altos."
+    },
+    {
+     "n": 5,
+     "texto": "Y luego que el reino fué confirmado en su mano, hirió á sus siervos, los que habían muerto al rey su padre."
+    },
+    {
+     "n": 6,
+     "texto": "Mas no mató á los hijos de los que le mataron, conforme á lo que está escrito en el libro de la ley de Moisés, donde Jehová mandó, diciendo: No matarán á los padres por los hijos, ni á los hijos por los padres: mas cada uno morirá por su pecado."
+    },
+    {
+     "n": 7,
+     "texto": "Este hirió asimismo diez mil Idumeos en el valle de las Salinas, y tomó á Sela por guerra, y llamóla Jocteel, hasta hoy."
+    },
+    {
+     "n": 8,
+     "texto": "Entonces Amasías envió embajadores á Joas, hijo de Joachâz hijo de Jehú, rey de Israel, diciendo: Ven, y veámonos de rostro."
+    },
+    {
+     "n": 9,
+     "texto": "Y Joas rey de Israel envió á Amasías rey de Judá esta respuesta: El cardillo que está en el Líbano envió á decir al cedro que está en el Líbano: Da tu hija por mujer á mi hijo. Y pasaron las bestias fieras que están en el Líbano, y hollaron el cardillo."
+    },
+    {
+     "n": 10,
+     "texto": "Ciertamente has herido á Edom, y tu corazón te ha envanecido: gloríate pues, mas estáte en tu casa. ¿Y por qué te entrometerás en un mal, para que caigas tú, y Judá contigo?"
+    },
+    {
+     "n": 11,
+     "texto": "Mas Amasías no dió oídos; por lo que subió Joas rey de Israel, y viéronse de rostro él y Amasías rey de Judá, en Beth-semes, que es de Judá."
+    },
+    {
+     "n": 12,
+     "texto": "Y Judá cayó delante de Israel, y huyeron cada uno á sus estancias."
+    },
+    {
+     "n": 13,
+     "texto": "Además Joas rey de Israel tomó á Amasías rey de Judá, hijo de Joas hijo de Ochôzías, en Beth-semes: y vino á Jerusalem, y rompió el muro de Jerusalem desde la puerta de Ephraim hasta la puerta de la esquina, cuatrocientos codos."
+    },
+    {
+     "n": 14,
+     "texto": "Y tomó todo el oro y la plata, y todos los vasos que fueron hallados en la casa de Jehová, y en los tesoros de la casa del rey, y los hijos en rehenes, y volvióse á Samaria."
+    },
+    {
+     "n": 15,
+     "texto": "Lo demás de los hechos de Joas que ejecutó, y sus hazañas, y cómo peleó contra Amasías rey de Judá, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    },
+    {
+     "n": 16,
+     "texto": "Y durmió Joas con sus padres, y fué sepultado en Samaria con los reyes de Israel; y reinó en su lugar Jeroboam su hijo."
+    },
+    {
+     "n": 17,
+     "texto": "Y Amasías hijo de Joas rey de Judá, vivió después de la muerte de Joas hijo de Joachâz rey de Israel, quince años."
+    },
+    {
+     "n": 18,
+     "texto": "Lo demás de los hechos de Amasías, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 19,
+     "texto": "E hicieron conspiración contra él en Jerusalem, y él huyó á Lachîs; mas enviaron tras él á Lachîs, y allá lo mataron."
+    },
+    {
+     "n": 20,
+     "texto": "Trajéronlo luego sobre caballos, y sepultáronlo en Jerusalem con sus padres, en la ciudad de David."
+    },
+    {
+     "n": 21,
+     "texto": "Entonces todo el pueblo de Judá tomó á Azarías, que era de diez y seis años, é hiciéronlo rey en lugar de Amasías su padre."
+    },
+    {
+     "n": 22,
+     "texto": "Edificó él á Elath, y la restituyó á Judá, después que el rey durmió con sus padres."
+    },
+    {
+     "n": 23,
+     "texto": "El año quince de Amasías hijo de Joas rey de Judá, comenzó á reinar Jeroboam hijo de Joas sobre Israel en Samaria; [y reinó] cuarenta y un años."
+    },
+    {
+     "n": 24,
+     "texto": "E hizo lo malo en ojos de Jehová, y no se apartó de todos los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel."
+    },
+    {
+     "n": 25,
+     "texto": "El restituyó los términos de Israel desde la entrada de Amath hasta la mar de la llanura, conforme á la palabra de Jehová Dios de Israel, la cual había él hablado por su siervo Jonás hijo de Amittai, profeta que fué de Gath-hepher."
+    },
+    {
+     "n": 26,
+     "texto": "Por cuanto Jehová miró la muy amarga aflicción de Israel; que no había guardado ni desamparado, ni quien diese ayuda á Israel;"
+    },
+    {
+     "n": 27,
+     "texto": "Y Jehová no había determinado raer el nombre de Israel de debajo del cielo: por tanto, los salvó por mano de Jeroboam hijo de Joas."
+    },
+    {
+     "n": 28,
+     "texto": "Y lo demás de los hechos de Jeroboam, y todas las cosas que hizo, y su valentía, y todas las guerras que hizo, y cómo restituyó á Judá en Israel á Damasco y á Hamath, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    },
+    {
+     "n": 29,
+     "texto": "Y durmió Jeroboam con sus padres, los reyes de Israel, y reinó en su lugar Zachârías su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 15,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el año veintisiete de Jeroboam, rey de Israel, comenzó á reinar Azarías hijo de Amasías rey de Judá."
+    },
+    {
+     "n": 2,
+     "texto": "Cuando comenzó á reinar era de dieciséis años, y cincuenta y dos años reinó en Jerusalem; el nombre de su madre fué Jecolía, de Jerusalem."
+    },
+    {
+     "n": 3,
+     "texto": "E hizo lo recto en ojos de Jehová, conforme á todas las cosas que su padre Amasías había hecho."
+    },
+    {
+     "n": 4,
+     "texto": "Con todo eso los altos no se quitaron; que el pueblo sacrificaba aún y quemaba perfumes en los altos."
+    },
+    {
+     "n": 5,
+     "texto": "Mas Jehová hirió al rey con lepra, y fué leproso hasta el día de su muerte, y habitó en casa separada, y Jotham hijo del rey tenía el cargo del palacio, gobernando al pueblo de la tierra."
+    },
+    {
+     "n": 6,
+     "texto": "Lo demás de los hechos de Azarías, y todas las cosas que hizo, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 7,
+     "texto": "Y durmió Azarías con sus padres, y sepultáronlo con sus padres en la ciudad de David: y reinó en su lugar Jotham su hijo."
+    },
+    {
+     "n": 8,
+     "texto": "En el año treinta y ocho de Azarías rey de Judá, reinó Zachârías hijo de Jeroboam sobre Israel seis meses."
+    },
+    {
+     "n": 9,
+     "texto": "E hizo lo malo en ojos de Jehová, como habían hecho sus padres: no se apartó de los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel."
+    },
+    {
+     "n": 10,
+     "texto": "Contra él se conjuró Sallum hijo de Jabes, y lo hirió en presencia de su pueblo, y matólo, y reinó en su lugar."
+    },
+    {
+     "n": 11,
+     "texto": "Lo demás de los hechos de Zachârías, he aquí está escrito en el libro de las crónicas de los reyes de Israel."
+    },
+    {
+     "n": 12,
+     "texto": "Y esta fué la palabra de Jehová que había hablado á Jehú, diciendo: Tus hijos hasta la cuarta generación se sentarán en el trono de Israel. Y fué así."
+    },
+    {
+     "n": 13,
+     "texto": "Sallum hijo de Jabes comenzó á reinar en el año treinta y nueve de Uzzía rey de Judá, y reinó el tiempo de un mes en Samaria;"
+    },
+    {
+     "n": 14,
+     "texto": "Pues subió Manahem hijo de Gadi, de Thirsa, y vino á Samaria, é hirió á Sallum hijo de Jabes en Samaria, y matólo, y reinó en su lugar."
+    },
+    {
+     "n": 15,
+     "texto": "Lo demás de los hechos de Sallum, y su conjuración con que conspiró, he aquí está escrito en el libro de las crónicas de los reyes de Israel."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces hirió Manahem á Tiphsa, y á todos los que estaban en ella, y también sus términos desde Thirsa; é hirióla porque no le habían abierto; y abrió á todas sus preñadas."
+    },
+    {
+     "n": 17,
+     "texto": "En el año treinta y nueve de Azarías rey de Judá, reinó Manahem hijo de Gadi sobre Israel diez años, en Samaria."
+    },
+    {
+     "n": 18,
+     "texto": "E hizo lo malo en ojos de Jehová: no se apartó en todo su tiempo de los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel."
+    },
+    {
+     "n": 19,
+     "texto": "Y vino Phul rey de Asiria á la tierra; y dió Manahem á Phul mil talentos de plata porque le ayudara á confirmarse en el reino."
+    },
+    {
+     "n": 20,
+     "texto": "E impuso Manahem este dinero sobre Israel, sobre todos los poderosos y opulentos: de cada uno cincuenta siclos de plata, para dar al rey de Asiria, y el rey de Asiria se volvió, y no se detuvo allí en la tierra."
+    },
+    {
+     "n": 21,
+     "texto": "Lo demás de los hechos de Manahem, y todas las cosas que hizo, ¿no está escrito en el libro de las crónicas de los reyes de Israel?"
+    },
+    {
+     "n": 22,
+     "texto": "Y durmió Manahem con sus padres, y reinó en su lugar Pekaía su hijo."
+    },
+    {
+     "n": 23,
+     "texto": "En el año cincuenta de Azarías rey de Judá, reinó Pekaía hijo de Manahem sobre Israel en Samaria, dos años."
+    },
+    {
+     "n": 24,
+     "texto": "E hizo lo malo en ojos de Jehová: no se apartó de los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel."
+    },
+    {
+     "n": 25,
+     "texto": "Y conspiró contra él Peka hijo de Remalías, capitán suyo, é hiriólo en Samaria, en el palacio de la casa real, en compañía de Argob y de Ariph, y con cincuenta hombres de los hijos de los Galaaditas; y matólo, y reinó en su lugar."
+    },
+    {
+     "n": 26,
+     "texto": "Lo demás de los hechos de Pekaía, y todas las cosas que hizo, he aquí está escrito en el libro de las crónicas de los reyes de Israel."
+    },
+    {
+     "n": 27,
+     "texto": "En el año cincuenta y dos de Azarías rey de Judá, reinó Peka hijo de Remalías sobre Israel en Samaria; y reinó veinte años."
+    },
+    {
+     "n": 28,
+     "texto": "E hizo lo malo en ojos de Jehová; no se apartó de los pecados de Jeroboam hijo de Nabat, el que hizo pecar á Israel."
+    },
+    {
+     "n": 29,
+     "texto": "En los días de Peka rey de Israel, vino Tiglath-pileser rey de los Asirios, y tomó á Ahión, Abel-beth-maachâ, y Janoa, y Cedes, y Asor, y Galaad, y Galilea, y toda la tierra de Nephtalí; y trasportólos á Asiria."
+    },
+    {
+     "n": 30,
+     "texto": "Y Oseas hijo de Ela hizo conjuración contra Peka hijo de Remalías, é hiriólo, y matólo, y reinó en su lugar, á los veinte años de Jotham hijo de Uzzía."
+    },
+    {
+     "n": 31,
+     "texto": "Lo demás de los hechos de Peka, y todo lo que hizo, he aquí está escrito en el libro de las crónicas de los reyes de Israel."
+    },
+    {
+     "n": 32,
+     "texto": "En el segundo año de Peka hijo de Remalías rey de Israel, comenzó á reinar Jotham hijo de Uzzía rey de Judá."
+    },
+    {
+     "n": 33,
+     "texto": "Cuando comenzó á reinar era de veinticinco años, y reinó dieciséis años en Jerusalem. El nombre de su madre fué Jerusa hija de Sadoc."
+    },
+    {
+     "n": 34,
+     "texto": "Y él hizo lo recto en ojos de Jehová; hizo conforme á todas las cosas que había hecho su padre Uzzía."
+    },
+    {
+     "n": 35,
+     "texto": "Con todo eso los altos no fueron quitados; que el pueblo sacrificaba aún, y quemaba perfumes en los altos. Edificó él la puerta más alta de la casa de Jehová."
+    },
+    {
+     "n": 36,
+     "texto": "Lo demás de los hechos de Jotham, y todas las cosas que hizo, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 37,
+     "texto": "En aquel tiempo comenzó Jehová á enviar contra Judá á Resín rey de Siria, y á Peka hijo de Remalías."
+    },
+    {
+     "n": 38,
+     "texto": "Y durmió Jotham con sus padres, y fué sepultado con sus padres en la ciudad de David su padre: y reinó en su lugar Achâz su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 16,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el año diecisiete de Peka hijo de Remalías, comenzó á reinar Achâz hijo de Jotham rey de Judá."
+    },
+    {
+     "n": 2,
+     "texto": "Cuando comenzó á reinar Achâz, era de veinte años, y reinó en Jerusalem dieciséis años: y no hizo lo recto en ojos de Jehová su Dios, como David su padre;"
+    },
+    {
+     "n": 3,
+     "texto": "Antes anduvo en el camino de los reyes de Israel, y aun hizo pasar por el fuego á su hijo, según las abominaciones de las gentes que Jehová echó de delante de los hijos de Israel."
+    },
+    {
+     "n": 4,
+     "texto": "Asimismo sacrificó, y quemó perfumes en los altos, y sobre los collados, y debajo de todo árbol umbroso."
+    },
+    {
+     "n": 5,
+     "texto": "Entonces Resín rey de Siria, y Peka hijo de Remalías rey de Israel, subieron á Jerusalem para hacer guerra, y cercar á Achâz; mas no pudieron tomarla."
+    },
+    {
+     "n": 6,
+     "texto": "En aquel tiempo Resín rey de Siria restituyó Elath á Siria, y echó á los Judíos de Elath; y los Siros vinieron á Elath, y habitaron allí hasta hoy."
+    },
+    {
+     "n": 7,
+     "texto": "Entonces Achâz envió embajadores á Tiglath-pileser rey de Asiria, diciendo: Yo soy tu siervo y tu hijo: sube, y defiéndeme de mano del rey de Siria, y de mano del rey de Israel, que se han levantado contra mí."
+    },
+    {
+     "n": 8,
+     "texto": "Y tomando Achâz la plata y el oro que se halló en la casa de Jehová, y en los tesoros de la casa real, envió al rey de Asiria un presente."
+    },
+    {
+     "n": 9,
+     "texto": "Y atendióle el rey de Asiria; pues subió el rey de Asiria contra Damasco, y tomóla, y trasportó los moradores á Kir, y mató á Resín."
+    },
+    {
+     "n": 10,
+     "texto": "Y fué el rey Achâz á encontrar á Tiglath-pileser rey de Asiria en Damasco; y visto que hubo el rey Achâz el altar que estaba en Damasco, envió á Urías sacerdote el diseño y la descripción del altar, conforme á toda su hechura."
+    },
+    {
+     "n": 11,
+     "texto": "Y Urías el sacerdote edificó el altar; conforme á todo lo que el rey Achâz había enviado de Damasco, así lo hizo el sacerdote Urías, entre tanto que el rey Achâz venía de Damasco."
+    },
+    {
+     "n": 12,
+     "texto": "Y luego que vino el rey de Damasco, y hubo visto el altar, acercóse el rey á él, y sacrificó en él;"
+    },
+    {
+     "n": 13,
+     "texto": "Y encendió su holocausto, y su presente, y derramó sus libaciones, y esparció la sangre de sus pacíficos junto al altar."
+    },
+    {
+     "n": 14,
+     "texto": "Y el altar de bronce que estaba delante de Jehová, hízolo acercar delante de la frontera de la casa, entre el altar y el templo de Jehová, y púsolo al lado del altar hacia el aquilón."
+    },
+    {
+     "n": 15,
+     "texto": "Y mandó el rey Achâz al sacerdote Urías, diciendo: En el gran altar encenderás el holocausto de la mañana y el presente de la tarde, y el holocausto del rey y su presente, y asimismo el holocausto de todo el pueblo de la tierra y su presente y sus libaciones: y esparcirás sobre él toda la sangre de holocausto, y toda la sangre de sacrificio: y el altar de bronce será mío para preguntar [en él]."
+    },
+    {
+     "n": 16,
+     "texto": "E hizo el sacerdote Urías conforme á todas las cosas que el rey Achâz le mandó."
+    },
+    {
+     "n": 17,
+     "texto": "Y cortó el rey Achâz las cintas de las basas, y quitóles las fuentes; quitó también el mar de sobre los bueyes de bronce que estaban debajo de él, y púsolo sobre el solado de piedra."
+    },
+    {
+     "n": 18,
+     "texto": "Asimismo la tienda del sábado que habían edificado en la casa, y el pasadizo de afuera del rey, mudólos del templo de Jehová, por causa del rey de Asiria."
+    },
+    {
+     "n": 19,
+     "texto": "Lo demás de los hechos de Achâz que puso por obra, ¿no está todo escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 20,
+     "texto": "Y durmió el rey Achâz con sus padres y fué sepultado con sus padres en la ciudad de David: y reinó en su lugar Ezechîas su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 17,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el año duodécimo de Achâz rey de Judá, comenzó á reinar Oseas hijo de Ela en Samaria sobre Israel; [y reinó] nueve años."
+    },
+    {
+     "n": 2,
+     "texto": "E hizo lo malo en ojos de Jehová, aunque no como los reyes de Israel que antes de él habían sido."
+    },
+    {
+     "n": 3,
+     "texto": "Contra éste subió Salmanasar rey de los Asirios; y Oseas fué hecho su siervo, y pagábale tributo."
+    },
+    {
+     "n": 4,
+     "texto": "Mas el rey de Asiria halló que Oseas hacía conjuración: porque había enviado embajadores á So, rey de Egipto, y no pagaba tributo al rey de Asiria, como cada año: por lo que el rey de Asiria le detuvo, y le aprisionó en la casa de la cárcel."
+    },
+    {
+     "n": 5,
+     "texto": "Y el rey de Asiria partió contra todo el país, y subió contra Samaria, y estuvo sobre ella tres años."
+    },
+    {
+     "n": 6,
+     "texto": "En el año nueve de Oseas tomó el rey de Asiria á Samaria, y trasportó á Israel á Asiria, y púsolos en Hala, y en Habor, junto al río de Gozán, y en las ciudades de los Medos."
+    },
+    {
+     "n": 7,
+     "texto": "Porque como los hijos de Israel pecasen contra Jehová su Dios, que los sacó de tierra de Egipto de bajo la mano de Faraón rey de Egipto, y temiesen á dioses ajenos,"
+    },
+    {
+     "n": 8,
+     "texto": "Y anduviesen en los estatutos de las gentes que Jehová había lanzado delante de los hijos de Israel, y [en los] de los reyes de Israel, que hicieron;"
+    },
+    {
+     "n": 9,
+     "texto": "Y como los hijos de Israel paliasen cosas no rectas contra Jehová su Dios, edificándose altos en todas sus ciudades, desde las torres de las atalayas hasta las ciudades fuertes,"
+    },
+    {
+     "n": 10,
+     "texto": "Y se levantasen estatuas y bosques en todo collado alto, y debajo de todo árbol umbroso,"
+    },
+    {
+     "n": 11,
+     "texto": "Y quemasen allí perfumes en todos los altos, á la manera de las gentes que había Jehová traspuesto delante de ellos, é hiciesen cosas muy malas para provocar á ira á Jehová,"
+    },
+    {
+     "n": 12,
+     "texto": "Pues servían á los ídolos, de los cuales Jehová les había dicho: Vosotros no habéis de hacer esto;"
+    },
+    {
+     "n": 13,
+     "texto": "Jehová protestaba entonces contra Israel y contra Judá, por mano de todos los profetas, y de todos los videntes, diciendo: Volveos de vuestros malos caminos, y guardad mis mandamientos y mis ordenanzas, conforme á todas las leyes que yo prescribí á vuestros padres, y que os he enviado por mano de mis siervos los profetas."
+    },
+    {
+     "n": 14,
+     "texto": "Mas ellos no obedecieron, antes endurecieron su cerviz, como la cerviz de sus padres, los cuales no creyeron en Jehová su Dios."
+    },
+    {
+     "n": 15,
+     "texto": "Y desecharon sus estatutos, y su pacto que él había concertado con sus padres, y sus testimonios que él había protestado contra ellos; y siguieron la vanidad, y se hicieron vanos, y fueron en pos de las gentes que estaban alrededor de ellos, de las cuales les había Jehová mandado que no hiciesen á la manera de ellas:"
+    },
+    {
+     "n": 16,
+     "texto": "Y dejaron todos los mandamientos de Jehová su Dios, é hiciéronse vaciadizos dos becerros, y también bosques, y adoraron á todo el ejército del cielo, y sirvieron á Baal:"
+    },
+    {
+     "n": 17,
+     "texto": "E hicieron pasar á sus hijos y á sus hijas por fuego; y diéronse á adivinaciones y agüeros, y entregáronse á hacer lo malo en ojos de Jehová, provocándole á ira."
+    },
+    {
+     "n": 18,
+     "texto": "Jehová por tanto se airó en gran manera contra Israel, y quitólos de delante de su rostro; que no quedó sino sólo la tribu de Judá."
+    },
+    {
+     "n": 19,
+     "texto": "Mas ni aun Judá guardó los mandamientos de Jehová su Dios; antes anduvieron en los estatutos de Israel, los cuales habían ellos hecho."
+    },
+    {
+     "n": 20,
+     "texto": "Y desechó Jehová toda la simiente de Israel, y afligiólos, y entrególos en manos de saqueadores, hasta echarlos de su presencia."
+    },
+    {
+     "n": 21,
+     "texto": "Porque cortó á Israel de la casa de David, y ellos se hicieron rey á Jeroboam hijo de Nabat; y Jeroboam rempujó á Israel de en pos de Jehová, é hízoles cometer gran pecado."
+    },
+    {
+     "n": 22,
+     "texto": "Y los hijos de Israel anduvieron en todos los pecados de Jeroboam que él hizo, sin apartarse de ellos;"
+    },
+    {
+     "n": 23,
+     "texto": "Hasta tanto que Jehová quitó á Israel de delante de su rostro, como lo había él dicho por mano de todos los profetas sus siervos: é Israel fué trasportado de su tierra á Asiria, hasta hoy."
+    },
+    {
+     "n": 24,
+     "texto": "Y trajo el rey de Asiria gente de Babilonia, y de Cutha, y de Ava, y de Hamath, y de Sepharvaim, y púsolos en las ciudades de Samaria, en lugar de los hijos de Israel; y poseyeron á Samaria, y habitaron en sus ciudades."
+    },
+    {
+     "n": 25,
+     "texto": "Y aconteció al principio, cuando comenzaron á habitar allí, que no temiendo ellos á Jehová, envió Jehová contra ellos leones que los mataban."
+    },
+    {
+     "n": 26,
+     "texto": "Entonces dijeron ellos al rey de Asiria: Las gentes que tú traspasaste y pusiste en las ciudades de Samaria, no saben la costumbre del Dios de aquella tierra, y él ha echado leones en ellos, y he aquí los matan, porque no saben la costumbre del Dios de la tierra."
+    },
+    {
+     "n": 27,
+     "texto": "Y el rey de Asiria mandó, diciendo: Llevad allí á alguno de los sacerdotes que trajisteis de allá, y vayan y habiten allí, y enséñenles la costumbre del Dios del país."
+    },
+    {
+     "n": 28,
+     "texto": "Y vino uno de los sacerdotes que habían trasportado de Samaria, y habitó en Beth-el, y enseñóles cómo habían de temer á Jehová."
+    },
+    {
+     "n": 29,
+     "texto": "Mas cada nación se hizo sus dioses, y pusiéronlos en los templos de los altos que habían hecho los de Samaria; cada nación en su ciudad donde habitaba."
+    },
+    {
+     "n": 30,
+     "texto": "Los de Babilonia hicieron á Succoth-benoth, y los de Cutha hicieron á Nergal, y los de Hamath hicieron á Asima;"
+    },
+    {
+     "n": 31,
+     "texto": "Los Heveos hicieron á Nibhaz y á Tharthac; y los de Sepharvaim quemaban sus hijos al fuego á Adra-melech y á Anamelech, dioses de Sepharvaim."
+    },
+    {
+     "n": 32,
+     "texto": "Y temían á Jehová; é hicieron del pueblo bajo sacerdotes de los altos, quienes sacrificaban para ellos en los templos de los altos."
+    },
+    {
+     "n": 33,
+     "texto": "Temían á Jehová, y honraban á sus dioses, según la costumbre de las gentes de donde habían sido trasladados."
+    },
+    {
+     "n": 34,
+     "texto": "Hasta hoy hacen como primero; que ni temen á Jehová, ni guardan sus estatutos, ni sus ordenanzas, ni hacen según la ley y los mandamientos que prescribió Jehová á los hijos de Jacob, al cual puso el nombre de Israel;"
+    },
+    {
+     "n": 35,
+     "texto": "Con los cuales había Jehová hecho pacto, y les mandó, diciendo: No temeréis á otros dioses, ni los adoraréis, ni les serviréis, ni les sacrificaréis:"
+    },
+    {
+     "n": 36,
+     "texto": "Mas á Jehová, que os sacó de tierra de Egipto con grande poder y brazo extendido, á éste temeréis, y á éste adoraréis, y á éste haréis sacrificio."
+    },
+    {
+     "n": 37,
+     "texto": "Los estatutos y derechos y ley y mandamientos que os dió por escrito, cuidaréis siempre de ponerlos por obra, y no temeréis dioses ajenos."
+    },
+    {
+     "n": 38,
+     "texto": "Y no olvidaréis el pacto que hice con vosotros; ni temeréis dioses ajenos:"
+    },
+    {
+     "n": 39,
+     "texto": "Mas temed á Jehová vuestro Dios, y él os librará de mano de todos vuestros enemigos."
+    },
+    {
+     "n": 40,
+     "texto": "Empero ellos no escucharon; antes hicieron según su costumbre antigua."
+    },
+    {
+     "n": 41,
+     "texto": "Así temieron á Jehová aquellas gentes, y juntamente sirvieron á sus ídolos: y también sus hijos y sus nietos, según que hicieron sus padres, así hacen hasta hoy."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 18,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN el tercer año de Oseas hijo de Ela rey de Israel, comenzó á reinar Ezechîas hijo de Achâz rey de Judá."
+    },
+    {
+     "n": 2,
+     "texto": "Cuando comenzó á reinar era de veinticinco años, y reinó en Jerusalem veintinueve años. El nombre de su madre [fué] Abi hija de Zachârías."
+    },
+    {
+     "n": 3,
+     "texto": "Hizo lo recto en ojos de Jehová, conforme á todas las cosas que había hecho David su padre."
+    },
+    {
+     "n": 4,
+     "texto": "El quitó los altos, y quebró las imágenes, y taló los bosques, é hizo pedazos la serpiente de bronce que había hecho Moisés, porque hasta entonces le quemaban perfumes los hijos de Israel; y llamóle por nombre Nehustán."
+    },
+    {
+     "n": 5,
+     "texto": "En Jehová Dios de Israel puso su esperanza: después ni antes de él no hubo otro como él en todos los reyes de Judá."
+    },
+    {
+     "n": 6,
+     "texto": "Porque se llegó á Jehová, y no se apartó de él, sino que guardó los mandamientos que Jehová prescribió á Moisés."
+    },
+    {
+     "n": 7,
+     "texto": "Y Jehová fué con él; y en todas las cosas á que salía prosperaba. El se rebeló contra el rey de Asiria, y no le sirvió."
+    },
+    {
+     "n": 8,
+     "texto": "Hirió también á los Filisteos hasta Gaza y sus términos, desde las torres de las atalayas hasta la ciudad fortalecida."
+    },
+    {
+     "n": 9,
+     "texto": "En el cuarto año del rey Ezechîas, que era el año séptimo de Oseas hijo de Ela rey de Israel, subió Salmanasar rey de los Asirios contra Samaria, y cercóla."
+    },
+    {
+     "n": 10,
+     "texto": "Y tomáronla al cabo de tres años; [esto es], en el sexto año de Ezechîas, el cual era el año nono de Oseas rey de Israel, fué Samaria tomada."
+    },
+    {
+     "n": 11,
+     "texto": "Y el rey de Asiria traspuso á Israel á Asiria, y púsolos en Hala, y en Habor, junto al río de Gozán, y en las ciudades de los Medos:"
+    },
+    {
+     "n": 12,
+     "texto": "Por cuanto no habían atendido la voz de Jehová su Dios, antes habían quebrantado su pacto; y todas las cosas que Moisés siervo de Jehová había mandado, ni las habían escuchado, ni puesto por obra."
+    },
+    {
+     "n": 13,
+     "texto": "Y á los catorce años del rey Ezechîas, subió Sennachêrib rey de Asiria contra todas las ciudades fuertes de Judá, y tomólas."
+    },
+    {
+     "n": 14,
+     "texto": "Entonces Ezechîas rey de Judá envió á decir al rey de Asiria en Lachîs: Yo he pecado: vuélvete de mí, y llevaré todo lo que me impusieres. Y el rey de Asiria impuso á Ezechîas rey de Judá trescientos talentos de plata, y treinta talentos de oro."
+    },
+    {
+     "n": 15,
+     "texto": "Dió por tanto Ezechîas toda la plata que fué hallada en la casa de Jehová, y en los tesoros de la casa real."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces descompuso Ezechîas las puertas del templo de Jehová, y los quiciales que el [mismo] rey Ezechîas había cubierto [de oro], y diólo al rey de Asiria."
+    },
+    {
+     "n": 17,
+     "texto": "Después el rey de Asiria envió al rey Ezechîas, desde Lachîs contra Jerusalem, á Thartán y á Rabsaris y á Rabsaces, con un grande ejército: y subieron, y vinieron á Jerusalem. Y habiendo subido, vinieron y pararon junto al conducto del estanque de arriba, que es en el camino de la heredad del batanero."
+    },
+    {
+     "n": 18,
+     "texto": "Llamaron luego al rey, y salió á ellos Eliacim hijo de Hilcías, que era mayordomo, y Sebna escriba, y Joah hijo de Asaph, canciller."
+    },
+    {
+     "n": 19,
+     "texto": "Y díjoles Rabsaces: Decid ahora á Ezechîas: Así dice el gran rey de Asiria: ¿Qué confianza es esta en que tú estás?"
+    },
+    {
+     "n": 20,
+     "texto": "Dices, (por cierto palabras de labios): Consejo [tengo] y esfuerzo para la guerra. Mas ¿en qué confías, que te has rebelado contra mí?"
+    },
+    {
+     "n": 21,
+     "texto": "He aquí tú confías ahora en este bordón de caña cascada, en Egipto, en el que si alguno se apoyare, entrarále por la mano, y se le pasará. Tal es Faraón rey de Egipto, para todos los que en él confían."
+    },
+    {
+     "n": 22,
+     "texto": "Y si me decís: Nosotros confiamos en Jehová nuestro Dios: ¿no es aquél cuyos altos y altares ha quitado Ezechîas, y ha dicho á Judá y á Jerusalem: Delante de este altar adoraréis en Jerusalem?"
+    },
+    {
+     "n": 23,
+     "texto": "Por tanto, ahora yo te ruego que des rehenes á mi señor, el rey de Asiria, y yo te daré dos mil caballos, si tú pudieres dar jinetes para ellos."
+    },
+    {
+     "n": 24,
+     "texto": "¿Cómo pues harás volver el rostro de un capitán el menor de los siervos de mi señor, aunque estés confiado en Egipto por sus carros y su gente de á caballo?"
+    },
+    {
+     "n": 25,
+     "texto": "Además, ¿he venido yo ahora sin Jehová á este lugar, para destruirlo? Jehová me ha dicho: Sube á esta tierra, y destrúyela."
+    },
+    {
+     "n": 26,
+     "texto": "Entonces dijo Eliacim hijo de Hilcías, y Sebna y Joah, á Rabsaces: Ruégote que hables á tus siervos siriaco, porque nosotros lo entendemos, y no hables con nosotros judaico á oídos del pueblo que está sobre el muro."
+    },
+    {
+     "n": 27,
+     "texto": "Y Rabsaces les dijo: ¿Hame enviado mi señor á ti y á tu señor para decir estas palabras, y no antes á los hombres que están sobre el muro, para comer su estiércol, y beber el agua de sus pies con vosotros?"
+    },
+    {
+     "n": 28,
+     "texto": "Paróse luego Rabsaces, y clamó á gran voz en judaico, y habló, diciendo: Oid la palabra del gran rey, el rey de Asiria."
+    },
+    {
+     "n": 29,
+     "texto": "Así ha dicho el rey: No os engañe Ezechîas, porque no os podrá librar de mi mano."
+    },
+    {
+     "n": 30,
+     "texto": "Y no os haga Ezechîas confiar en Jehová, diciendo: De cierto nos librará Jehová, y esta ciudad no será entregada en mano del rey de Asiria."
+    },
+    {
+     "n": 31,
+     "texto": "No oigáis á Ezechîas, porque así dice el rey de Asiria: Haced conmigo paz, y salid á mí, y cada uno comerá de su vid, y de su higuera, y cada uno beberá las aguas de su pozo;"
+    },
+    {
+     "n": 32,
+     "texto": "Hasta que yo venga, y os lleve á una tierra como la vuestra, tierra de grano y de vino, tierra de pan y de viñas, tierra de olivas, de aceite, y de miel; y viviréis, y no moriréis. No oigáis á Ezechîas, porque os engaña cuando dice: Jehová nos librará."
+    },
+    {
+     "n": 33,
+     "texto": "¿[Acaso] alguno de los dioses de las gentes ha librado su tierra de la mano del rey de Asiria?"
+    },
+    {
+     "n": 34,
+     "texto": "¿Dónde está el dios de Hamath, y de Arphad? ¿dónde el dios de Sepharvaim, de Hena, y de Hiva? ¿pudieron éstos librar á Samaria de mi mano?"
+    },
+    {
+     "n": 35,
+     "texto": "¿Qué dios de todos los dioses de las provincias ha librado á su provincia de mi mano, para que libre Jehová de mi mano á Jerusalem?"
+    },
+    {
+     "n": 36,
+     "texto": "Y el pueblo calló, que no le respondieron palabra: porque había mandamiento del rey, el cual había dicho: No le respondáis."
+    },
+    {
+     "n": 37,
+     "texto": "Entonces Eliacim hijo de Hilcías, que era mayordomo, y Sebna el escriba, y Joah hijo de Asaph, canciller, vinieron á Ezechîas, rotos sus vestidos, y recitáronle las palabras de Rabsaces."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 19,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y COMO el rey Ezechîas lo oyó, rasgó sus vestidos, y cubrióse de saco, y entróse en la casa de Jehová."
+    },
+    {
+     "n": 2,
+     "texto": "Y envió á Eliacim el mayordomo, y á Sebna escriba, y á los ancianos de los sacerdotes, vestidos de sacos á Isaías profeta hijo de Amós,"
+    },
+    {
+     "n": 3,
+     "texto": "Que le dijesen: Así ha dicho Ezechîas: Este día es día de angustia, y de reprensión, y de blasfemia; porque los hijos han venido hasta la rotura, y la que pare no tiene fuerzas."
+    },
+    {
+     "n": 4,
+     "texto": "Quizá oirá Jehová tu Dios todas las palabras de Rabsaces, al cual el rey de los Asirios su señor ha enviado para injuriar al Dios vivo, y á vituperar con palabras, las cuales Jehová tu Dios ha oído: por tanto, eleva oración por las reliquias que aun se hallan."
+    },
+    {
+     "n": 5,
+     "texto": "Vinieron pues los siervos del rey Ezechîas á Isaías."
+    },
+    {
+     "n": 6,
+     "texto": "E Isaías les respondió: Así diréis á vuestro señor: Así ha dicho Jehová; No temas por las palabras que has oído, con las cuales me han blasfemado los siervos del rey de Asiria."
+    },
+    {
+     "n": 7,
+     "texto": "He aquí pondré yo en él un espíritu, y oirá rumor, y volveráse á su tierra: y yo haré que en su tierra caiga á cuchillo."
+    },
+    {
+     "n": 8,
+     "texto": "Y regresando Rabsaces, halló al rey de Asiria combatiendo á Libna; porque había oído que se había partido de Lachîs."
+    },
+    {
+     "n": 9,
+     "texto": "Y oyó decir de Thiraca rey de Ethiopía: He aquí es salido para hacerte guerra. Entonces volvió él, y envió embajadores á Ezechîas, diciendo:"
+    },
+    {
+     "n": 10,
+     "texto": "Así diréis á Ezechîas rey de Judá: No te engañe tu Dios en quien tú confías, para decir: Jerusalem no será entregada en mano del rey de Asiria."
+    },
+    {
+     "n": 11,
+     "texto": "He aquí tú has oído lo que han hecho los reyes de Asiria á todas las tierras, destruyéndolas; ¿y has tú de escapar?"
+    },
+    {
+     "n": 12,
+     "texto": "¿Libráronlas los dioses de las gentes, que mis padres destruyeron, [es á saber], Gozán, y Harán, y Reseph, y los hijos de Edén que estaban en Thalasar?"
+    },
+    {
+     "n": 13,
+     "texto": "¿Dónde está el rey de Hamath, el rey de Arphad, el rey de la ciudad de Sepharvaim, de Hena, y de Hiva?"
+    },
+    {
+     "n": 14,
+     "texto": "Y tomó Ezechîas las letras de mano de los embajadores; y después que las hubo leído, subió á la casa de Jehová, y extendiólas Ezechîas delante de Jehová."
+    },
+    {
+     "n": 15,
+     "texto": "Y oró Ezechîas delante de Jehová, diciendo: Jehová Dios de Israel, que habitas entre los querubines, tú solo eres Dios de todos los reinos de la tierra; tú hiciste el cielo y la tierra."
+    },
+    {
+     "n": 16,
+     "texto": "Inclina, oh Jehová, tu oído, y oye; abre, oh Jehová, tus ojos, y mira: y oye las palabras de Sennachêrib, que ha enviado á blasfemar al Dios viviente."
+    },
+    {
+     "n": 17,
+     "texto": "Es verdad, oh Jehová, que los reyes de Asiria han destruído las gentes y sus tierras;"
+    },
+    {
+     "n": 18,
+     "texto": "Y que pusieron en el fuego á sus dioses, por cuanto ellos no eran dioses, sino obra de manos de hombres, madera ó piedra, y así los destruyeron."
+    },
+    {
+     "n": 19,
+     "texto": "Ahora pues, oh Jehová Dios nuestro, sálvanos, te suplico, de su mano, para que sepan todos los reinos de la tierra que tú solo, Jehová, eres Dios."
+    },
+    {
+     "n": 20,
+     "texto": "Entonces Isaías hijo de Amós envió á decir á Ezechîas: Así ha dicho Jehová, Dios de Israel: Lo que me rogaste acerca de Sennachêrib rey de Asiria, he oído."
+    },
+    {
+     "n": 21,
+     "texto": "Esta es la palabra que Jehová ha hablado contra él: Hate menospreciado, hate escarnecido la virgen hija de Sión; ha movido su cabeza detrás de ti la hija de Jerusalem."
+    },
+    {
+     "n": 22,
+     "texto": "¿A quién has injuriado y á quién has blasfemado? ¿y contra quién has hablado alto, y has alzado en alto tus ojos? Contra el Santo de Israel."
+    },
+    {
+     "n": 23,
+     "texto": "Por mano de tus mensajeros has proferido injuria contra el Señor, y has dicho: Con la multitud de mis carros he subido á las cumbres de los montes, á las cuestas del Líbano; y cortaré sus altos cedros, sus hayas escogidas; y entraré á la morada de su término, al monte de su Carmel."
+    },
+    {
+     "n": 24,
+     "texto": "Yo he cavado y bebido las aguas ajenas, y he secado con las plantas de mis pies todos los ríos de lugares bloqueados."
+    },
+    {
+     "n": 25,
+     "texto": "¿Nunca has oído que mucho tiempo ha yo lo hice, y de días antiguos lo he formado? Y ahora lo he hecho venir, y fué para desolación de ciudades fuertes en montones de ruinas."
+    },
+    {
+     "n": 26,
+     "texto": "Y sus moradores, cortos de manos, quebrantados y confusos, fueron cual hierba del campo, como legumbre verde, y heno de los tejados, que antes que venga á madurez es seco."
+    },
+    {
+     "n": 27,
+     "texto": "Yo he sabido tu asentarte, tu salir y tu entrar, y tu furor contra mí."
+    },
+    {
+     "n": 28,
+     "texto": "Por cuanto te has airado contra mí, y tu estruendo ha subido á mis oídos, yo por tanto pondré mi anzuelo en tus narices, y mi bocado en tus labios, y te haré volver por el camino por donde viniste."
+    },
+    {
+     "n": 29,
+     "texto": "Y esto te será por señal [Ezechîas]: Este año comerás lo que nacerá de suyo, y el segundo año lo que nacerá de suyo; y el tercer año haréis sementera, y segaréis, y plantaréis viñas, y comeréis el fruto de ellas."
+    },
+    {
+     "n": 30,
+     "texto": "Y lo que hubiere escapado, lo que habrá quedado de la casa de Judá, tornará á echar raíz abajo, y hará fruto arriba."
+    },
+    {
+     "n": 31,
+     "texto": "Porque saldrán de Jerusalem reliquias, y los que escaparán, del monte de Sión: el celo de Jehová de los ejércitos hará esto."
+    },
+    {
+     "n": 32,
+     "texto": "Por tanto, Jehová dice así del rey de Asiria: No entrará en esta ciudad, ni echará saeta en ella; ni vendrá delante de ella escudo, ni será echado contra ella baluarte."
+    },
+    {
+     "n": 33,
+     "texto": "Por el camino que vino se volverá, y no entrará en esta ciudad, dice Jehová."
+    },
+    {
+     "n": 34,
+     "texto": "Porque yo ampararé á esta ciudad para salvarla, por amor de mí, y por amor de David mi siervo."
+    },
+    {
+     "n": 35,
+     "texto": "Y aconteció que la misma noche salió el ángel de Jehová, é hirió en el campo de los Asirios ciento ochenta y cinco mil; y como se levantaron por la mañana, he aquí los cuerpos de los muertos."
+    },
+    {
+     "n": 36,
+     "texto": "Entonces Sennachêrib, rey de Asiria se partió, y se fué y tornó á Nínive, donde se estuvo."
+    },
+    {
+     "n": 37,
+     "texto": "Y aconteció que, estando él adorando en el templo de Nisroch su dios, Adramelech y Saresar sus hijos lo hirieron á cuchillo; y huyéronse á tierra de Ararat. Y reinó en su lugar Esar-hadón su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 20,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN aquellos días cayó Ezechîas enfermo de muerte, y vino á él Isaías profeta hijo de Amós, y díjole: Jehová dice así: Dispón de tu casa, porque has de morir, y no vivirás."
+    },
+    {
+     "n": 2,
+     "texto": "Entonces volvió él su rostro á la pared, y oró á Jehová, y dijo:"
+    },
+    {
+     "n": 3,
+     "texto": "Ruégote, oh Jehová, ruégote hagas memoria de que he andado delante de ti en verdad é íntegro corazón, y que he hecho las cosas que te agradan. Y lloró Ezechîas con gran lloro."
+    },
+    {
+     "n": 4,
+     "texto": "Y antes que Isaías saliese hasta la mitad del patio, fué palabra de Jehová á Isaías, diciendo:"
+    },
+    {
+     "n": 5,
+     "texto": "Vuelve, y di á Ezechîas, príncipe de mi pueblo: Así dice Jehová, el Dios de David tu padre: Yo he oído tu oración, y he visto tus lágrimas: he aquí yo te sano; al tercer día subirás á la casa de Jehová."
+    },
+    {
+     "n": 6,
+     "texto": "Y añadiré á tus días quince años, y te libraré á ti y á esta ciudad de mano del rey de Asiria; y ampararé esta ciudad por amor de mí, y por amor de David mi siervo."
+    },
+    {
+     "n": 7,
+     "texto": "Y dijo Isaías: Tomad masa de higos. Y tomándola, pusieron sobre la llaga, y sanó."
+    },
+    {
+     "n": 8,
+     "texto": "Y Ezechîas había dicho á Isaías: ¿Qué señal tendré de que Jehová me sanará, y que subiré á la casa de Jehová al tercer día?"
+    },
+    {
+     "n": 9,
+     "texto": "Y respondió Isaías: Esta señal tendrás de Jehová, de que hará Jehová esto que ha dicho: ¿Avanzará la sombra diez grados, ó retrocederá diez grados?"
+    },
+    {
+     "n": 10,
+     "texto": "Y Ezechîas respondió: Fácil cosa es que la sombra decline diez grados: pero, que la sombra vuelva atrás diez grados."
+    },
+    {
+     "n": 11,
+     "texto": "Entonces el profeta Isaías clamó á Jehová; é hizo volver la sombra por los grados que había descendido en el reloj de Achâz, diez grados atrás."
+    },
+    {
+     "n": 12,
+     "texto": "En aquel tiempo Berodach-baladán hijo de Baladán, rey de Babilonia, envió letras y presentes á Ezechîas, porque había oído que Ezechîas había caído enfermo."
+    },
+    {
+     "n": 13,
+     "texto": "Y Ezechîas los oyó, y mostróles toda la casa de las cosas preciosas, plata, oro, y especiería, y preciosos ungüentos; y la casa de sus armas, y todo lo que había en sus tesoros: ninguna cosa quedó que Ezechîas no les mostrase, así en su casa como en todo su señorío."
+    },
+    {
+     "n": 14,
+     "texto": "Entonces el profeta Isaías vino al rey Ezechîas, y díjole: ¿Qué dijeron aquellos varones, y de dónde vinieron á ti? Y Ezechîas le respondió: De lejanas tierras han venido, de Babilonia."
+    },
+    {
+     "n": 15,
+     "texto": "Y él le volvió á decir: ¿Qué vieron en tu casa? Y Ezechîas respondió: Vieron todo lo que había en mi casa; nada quedó en mis tesoros que no les mostrase."
+    },
+    {
+     "n": 16,
+     "texto": "Entonces Isaías dijo á Ezechîas: Oye palabra de Jehová:"
+    },
+    {
+     "n": 17,
+     "texto": "He aquí vienen días, en que todo lo que está en tu casa, y todo lo que tus padres han atesorado hasta hoy, será llevado á Babilonia, sin quedar nada, dijo Jehová."
+    },
+    {
+     "n": 18,
+     "texto": "Y de tus hijos que saldrán de ti, que habrás engendrado, tomarán; y serán eunucos en el palacio del rey de Babilonia."
+    },
+    {
+     "n": 19,
+     "texto": "Entonces Ezechîas dijo á Isaías: La palabra de Jehová que has hablado, es buena. Después dijo: ¿Mas no habrá paz y verdad en mis días?"
+    },
+    {
+     "n": 20,
+     "texto": "Lo demás de los hechos de Ezechîas, y todo su vigor, y cómo hizo el estanque, y el conducto, y metió las aguas en la ciudad, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 21,
+     "texto": "Y durmió Ezechîas con sus padres, y reinó en su lugar Manasés su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 21,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "DE doce años era Manasés cuando comenzó á reinar, y reinó en Jerusalem cincuenta y cinco años: el nombre de su madre fué Hepsiba."
+    },
+    {
+     "n": 2,
+     "texto": "E hizo lo malo en ojos de Jehová, según las abominaciones de las gentes que Jehová había echado delante de los hijos de Israel."
+    },
+    {
+     "n": 3,
+     "texto": "Porque él volvió á edificar los altos que Ezechîas su padre había derribado, y levantó altares á Baal, é hizo bosque, como había hecho Achâb rey de Israel: y adoró á todo el ejército del cielo, y sirvió á aquellas cosas."
+    },
+    {
+     "n": 4,
+     "texto": "Asimismo edificó altares en la casa de Jehová, de la cual Jehová había dicho: Yo pondré mi nombre en Jerusalem."
+    },
+    {
+     "n": 5,
+     "texto": "Y edificó altares para todo el ejército del cielo en los dos atrios de la casa de Jehová."
+    },
+    {
+     "n": 6,
+     "texto": "Y pasó á su hijo por fuego, y miró en tiempos, y fué agorero, é instituyó pythones y adivinos, multiplicando así el hacer lo malo en ojos de Jehová, para provocarlo á ira."
+    },
+    {
+     "n": 7,
+     "texto": "Y puso una entalladura del bosque que él había hecho, en la casa de la cual había Jehová dicho á David y á Salomón su hijo: Yo pondré mi nombre para siempre en esta casa, y en Jerusalem, á la cual escogí de todas las tribus de Israel:"
+    },
+    {
+     "n": 8,
+     "texto": "Y no volveré á hacer que el pie de Israel sea movido de la tierra que dí á sus padres, con tal que guarden y hagan conforme á todas las cosas que yo les he mandado, y conforme á toda la ley que mi siervo Moisés les mandó."
+    },
+    {
+     "n": 9,
+     "texto": "Mas ellos no escucharon; y Manasés los indujo á que hiciesen más mal que las gentes que Jehová destruyó delante de los hijos de Israel."
+    },
+    {
+     "n": 10,
+     "texto": "Y habló Jehová por mano de sus siervos los profetas, diciendo:"
+    },
+    {
+     "n": 11,
+     "texto": "Por cuanto Manasés rey de Judá ha hecho estas abominaciones, y ha hecho más mal que todo lo que hicieron los Amorrheos que fueron antes de él, y también ha hecho pecar á Judá en sus ídolos;"
+    },
+    {
+     "n": 12,
+     "texto": "Por tanto, así ha dicho Jehová el Dios de Israel: He aquí yo traigo tal mal sobre Jerusalem y sobre Judá, que el que lo oyere, le retiñirán ambos oídos."
+    },
+    {
+     "n": 13,
+     "texto": "Y extenderé sobre Jerusalem el cordel de Samaria, y el plomo de la casa de Achâb: y yo limpiaré á Jerusalem como se limpia una escudilla, que después que la han limpiado, la vuelven sobre su haz."
+    },
+    {
+     "n": 14,
+     "texto": "Y desampararé las reliquias de mi heredad, y entregarlas he en manos de sus enemigos; y serán para saco y para robo á todos sus adversarios;"
+    },
+    {
+     "n": 15,
+     "texto": "Por cuanto han hecho lo malo en mis ojos, y me han provocado á ira, desde el día que sus padres salieron de Egipto hasta hoy."
+    },
+    {
+     "n": 16,
+     "texto": "Fuera de esto, derramó Manasés mucha sangre inocente en gran manera, hasta henchir á Jerusalem de cabo á cabo: además de su pecado con que hizo pecar á Judá, para que hiciese lo malo en ojos de Jehová."
+    },
+    {
+     "n": 17,
+     "texto": "Lo demás de los hechos de Manasés, y todas las cosas que hizo, y su pecado que cometió, ¿no está todo escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 18,
+     "texto": "Y durmió Manasés con sus padres, y fué sepultado en el huerto de su casa, en el huerto de Uzza; y reinó en su lugar Amón su hijo."
+    },
+    {
+     "n": 19,
+     "texto": "De veinte y dos años era Amón cuando comenzó á reinar, y reinó dos años en Jerusalem. El nombre de su madre fué Mesalemeth hija de Harus de Jotba."
+    },
+    {
+     "n": 20,
+     "texto": "E hizo lo malo en ojos de Jehová, como había hecho Manasés su padre."
+    },
+    {
+     "n": 21,
+     "texto": "Y anduvo en todos los caminos en que su padre anduvo, y sirvió á las inmundicias á las cuales había servido su padre, y á ellas adoró;"
+    },
+    {
+     "n": 22,
+     "texto": "Y dejó á Jehová el Dios de sus padres, y no anduvo en el camino de Jehová."
+    },
+    {
+     "n": 23,
+     "texto": "Y los siervos de Amón conspiraron contra él, y mataron al rey en su casa."
+    },
+    {
+     "n": 24,
+     "texto": "Entonces el pueblo de la tierra hirió á todos los que habían conspirado contra el rey Amón; y puso el pueblo de la tierra por rey en su lugar á Josías su hijo."
+    },
+    {
+     "n": 25,
+     "texto": "Lo demás de los hechos de Amón, que efectuara, ¿no está todo escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 26,
+     "texto": "Y fué sepultado en su sepulcro en el huerto de Uzza, y reinó en su lugar Josías su hijo."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 22,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "CUANDO Josías comenzó á reinar era de ocho años, y reinó en Jerusalem treinta y un años. El nombre de su madre fué Idida hija de Adaía de Boscath."
+    },
+    {
+     "n": 2,
+     "texto": "E hizo lo recto en ojos de Jehová, y anduvo en todo el camino de David su padre, sin apartarse á diestra ni á siniestra."
+    },
+    {
+     "n": 3,
+     "texto": "Y á los dieciocho años del rey Josías, fué que envió el rey á Saphán hijo de Azalía, hijo de Mesullam, escriba, á la casa de Jehová, diciendo:"
+    },
+    {
+     "n": 4,
+     "texto": "Ve á Hilcías, sumo sacerdote: [dile] que recoja el dinero que se ha metido en la casa de Jehová, que han juntado del pueblo los guardianes de la puerta,"
+    },
+    {
+     "n": 5,
+     "texto": "Y que lo pongan en manos de los que hacen la obra, que tienen cargo de la casa de Jehová, y que lo entreguen á los que hacen la obra de la casa de Jehová, para reparar las aberturas de la casa:"
+    },
+    {
+     "n": 6,
+     "texto": "A los carpinteros, á los maestros y albañiles, para comprar madera y piedra de cantería para reparar la casa;"
+    },
+    {
+     "n": 7,
+     "texto": "Y que no se les cuente el dinero cuyo manejo se les confiare, porque ellos proceden con fidelidad."
+    },
+    {
+     "n": 8,
+     "texto": "Entonces dijo el sumo sacerdote Hilcías á Saphán escriba: El libro de la ley he hallado en la casa de Jehová. E Hilcías dió el libro á Saphán, y leyólo."
+    },
+    {
+     "n": 9,
+     "texto": "Viniendo luego Saphán escriba al rey, dió al rey la respuesta, y dijo: Tus siervos han juntado el dinero que se halló en el templo, y lo han entregado en poder de los que hacen la obra, que tienen cargo de la casa de Jehová."
+    },
+    {
+     "n": 10,
+     "texto": "Asimismo Saphán escriba declaró al rey, diciendo: Hilcías el sacerdote me ha dado un libro. Y leyólo Saphán delante del rey."
+    },
+    {
+     "n": 11,
+     "texto": "Y cuando el rey hubo oído las palabras del libro de la ley, rasgó sus vestidos."
+    },
+    {
+     "n": 12,
+     "texto": "Luego mandó el rey á Hilcías el sacerdote, y á Ahicam hijo de Saphán, y á Achbor hijo de Michâía, y á Saphán escriba, y á Asaía siervo del rey, diciendo:"
+    },
+    {
+     "n": 13,
+     "texto": "Id, y preguntad á Jehová por mí, y por el pueblo, y por todo Judá, acerca de las palabras de este libro que se ha hallado: porque grande ira de Jehová es la que ha sido encendida contra nosotros, por cuanto nuestros padres no escucharon las palabras de este libro, para hacer conforme á todo lo que nos fué escrito."
+    },
+    {
+     "n": 14,
+     "texto": "Entonces fué Hilcías el sacerdote, y Ahicam y Achbor y Saphán y Asaía, á Hulda profetisa, mujer de Sallum hijo de Ticva hijo de Araas, guarda de las vestiduras, la cual moraba en Jerusalem en la segunda parte [de la ciudad], y hablaron con ella."
+    },
+    {
+     "n": 15,
+     "texto": "Y ella les dijo: Así ha dicho Jehová el Dios de Israel: Decid al varón que os envió á mí:"
+    },
+    {
+     "n": 16,
+     "texto": "Así dijo Jehová: He aquí yo traigo mal sobre este lugar, y sobre los que en él moran, [á saber], todas las palabras del libro que ha leído el rey de Judá:"
+    },
+    {
+     "n": 17,
+     "texto": "Por cuanto me dejaron á mí, y quemaron perfumes á dioses ajenos, provocándome á ira en toda obra de sus manos; y mi furor se ha encendido contra este lugar, y no se apagará."
+    },
+    {
+     "n": 18,
+     "texto": "Mas al rey de Judá que os ha enviado para que preguntaseis á Jehová, diréis así: Así ha dicho Jehová el Dios de Israel: [Por cuanto] oíste las palabras [del libro],"
+    },
+    {
+     "n": 19,
+     "texto": "Y tu corazón se enterneció, y te humillaste delante de Jehová, cuando oíste lo que yo he pronunciado contra este lugar y contra sus moradores, que vendrían á ser asolados y malditos, y rasgaste tus vestidos, y lloraste en mi presencia, también yo te he oído, dice Jehová."
+    },
+    {
+     "n": 20,
+     "texto": "Por tanto, he aquí yo te recogeré con tus padres, y tú serás recogido á tu sepulcro en paz, y no verán tus ojos todo el mal que yo traigo sobre este lugar. Y ellos dieron al rey la respuesta."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 23,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "ENTONCES el rey envió, y juntaron á él todos los ancianos de Judá y de Jerusalem."
+    },
+    {
+     "n": 2,
+     "texto": "Y subió el rey á la casa de Jehová con todos los varones de Judá, y con todos los moradores de Jerusalem, con los sacerdotes y profetas y con todo el pueblo, desde el más chico hasta el más grande; y leyó, oyéndolo ellos, todas las palabras del libro del pacto que había sido hallado en la casa de Jehová."
+    },
+    {
+     "n": 3,
+     "texto": "Y poniéndose el rey en pie junto á la columna, hizo alianza delante de Jehová, de que irían en pos de Jehová, y guardarían sus mandamientos, y sus testimonios, y sus estatutos, con todo el corazón y con toda el alma, y que cumplirían las palabras de la alianza que estaban escritas en aquel libro. Y todo el pueblo confirmó el pacto."
+    },
+    {
+     "n": 4,
+     "texto": "Entonces mandó el rey al sumo sacerdote Hilcías, y á los sacerdotes de segundo orden, y á los guardianes de la puerta, que sacasen del templo de Jehová todos los vasos que habían sido hechos para Baal, y para el bosque, y para toda la milicia del cielo; y quemólos fuera de Jerusalem en el campo de Cedrón, é hizo llevar las cenizas de ellos á Beth-el."
+    },
+    {
+     "n": 5,
+     "texto": "Y quitó á los Camoreos, que habían puesto los reyes de Judá para que quemasen perfumes en los altos en las ciudades de Judá, y en los alrededores de Jerusalem; y asimismo á los que quemaban perfumes á Baal, al sol y á la luna, y á los signos, y á todo el ejército del cielo."
+    },
+    {
+     "n": 6,
+     "texto": "Hizo también sacar el bosque fuera de la casa de Jehová, fuera de Jerusalem, al torrente de Cedrón, y quemólo en el torrente de Cedrón, y tornólo en polvo, y echó el polvo de él sobre los sepulcros de los hijos del pueblo."
+    },
+    {
+     "n": 7,
+     "texto": "Además derribó las casas de los sodomitas que estaban en la casa de Jehová, en las cuales tejían las mujeres pabellones para el bosque."
+    },
+    {
+     "n": 8,
+     "texto": "E hizo venir todos los sacerdotes de las ciudades de Judá, y profanó los altos donde los sacerdotes quemaban perfumes, desde Gabaa hasta Beer-seba; y derribó los altares de las puertas que estaban á la entrada de la puerta de Josué, gobernador de la ciudad, que estaban á la mano izquierda, á la puerta de la ciudad."
+    },
+    {
+     "n": 9,
+     "texto": "Empero los sacerdotes de los altos no subían al altar de Jehová en Jerusalem, mas comían panes sin levadura entre sus hermanos."
+    },
+    {
+     "n": 10,
+     "texto": "Asimismo profanó á Topheth, que está en el valle del hijo de Hinnom, porque ninguno pasase su hijo ó su hija por fuego á Moloch."
+    },
+    {
+     "n": 11,
+     "texto": "Quitó también los caballos que los reyes de Judá habían dedicado al sol á la entrada del templo de Jehová, junto á la cámara de Nathan-melech eunuco, el cual tenía cargo de los ejidos; y quemó al fuego los carros del sol."
+    },
+    {
+     "n": 12,
+     "texto": "Derribó además el rey los altares que estaban sobre la techumbre de la sala de Achâz, que los reyes de Judá habían hecho, y los altares que había hecho Manasés en los dos atrios de la casa de Jehová; y de allí corrió y arrojó el polvo en el torrente de Cedrón."
+    },
+    {
+     "n": 13,
+     "texto": "Asimismo profanó el rey los altos que estaban delante de Jerusalem, á la mano derecha del monte de la destrucción, los cuales Salomón rey de Israel había edificado á Astharoth, abominación de los Sidonios, y á Chêmos abominación de Moab, y á Milcom abominación de los hijos de Ammón."
+    },
+    {
+     "n": 14,
+     "texto": "Y quebró las estatuas, y taló los bosques, é hinchió el lugar de ellos de huesos de hombres."
+    },
+    {
+     "n": 15,
+     "texto": "Igualmente el altar que estaba en Beth-el, y el alto que había hecho Jeroboam hijo de Nabat, el que hizo pecar á Israel, aquel altar y el alto destruyó; y quemó el alto, y lo tornó en polvo, y puso fuego al bosque."
+    },
+    {
+     "n": 16,
+     "texto": "Y volvióse Josías, y viendo los sepulcros que estaban allí en el monte, envió y sacó los huesos de los sepulcros, y quemólos sobre el altar para contaminarlo, conforme á la palabra de Jehová que había profetizado el varón de Dios, el cual había anunciado estos negocios."
+    },
+    {
+     "n": 17,
+     "texto": "Y después dijo: ¿Qué título es este que veo? Y los de la ciudad le respondieron: Este es el sepulcro del varón de Dios que vino de Judá, y profetizó estas cosas que tú has hecho sobre el altar de Beth-el."
+    },
+    {
+     "n": 18,
+     "texto": "Y él dijo: Dejadlo; ninguno mueva sus huesos: y así fueron preservados sus huesos, y los huesos del profeta que había venido de Samaria."
+    },
+    {
+     "n": 19,
+     "texto": "Y todas las casas de los altos que estaban en las ciudades de Samaria, las cuales habían hecho los reyes de Israel para provocar á ira, quitólas también Josías, é hizo de ellas como había hecho en Beth-el."
+    },
+    {
+     "n": 20,
+     "texto": "Mató además sobre los altares á todos los sacerdotes de los altos que allí estaban, y quemó sobre ellos huesos de hombres, y volvióse á Jerusalem."
+    },
+    {
+     "n": 21,
+     "texto": "Entonces mandó el rey á todo el pueblo, diciendo: Haced la pascua á Jehová vuestro Dios, conforme á lo que está escrito en el libro de esta alianza."
+    },
+    {
+     "n": 22,
+     "texto": "No fué hecha tal pascua desde los tiempos de los jueces que gobernaron á Israel, ni en todos los tiempos de los reyes de Israel, y de los reyes de Judá."
+    },
+    {
+     "n": 23,
+     "texto": "A los diez y ocho años del rey Josías fué hecha aquella pascua á Jehová en Jerusalem."
+    },
+    {
+     "n": 24,
+     "texto": "Asimismo barrió Josías los pythones, adivinos, y terapheos, y todas las abominaciones que se veían en la tierra de Judá y en Jerusalem, para cumplir las palabras de la ley que estaban escritas en el libro que el sacerdote Hilcías había hallado en la casa de Jehová."
+    },
+    {
+     "n": 25,
+     "texto": "No hubo tal rey antes de él que se convirtiese á Jehová de todo su corazón, y de toda su alma, y de todas su fuerzas, conforme á toda la ley de Moisés; ni después de él nació otro tal."
+    },
+    {
+     "n": 26,
+     "texto": "Con todo eso, no se volvió Jehová del ardor de su grande ira, con que se había encendido su enojo contra Judá, por todas las provocaciones con que Manasés le había irritado."
+    },
+    {
+     "n": 27,
+     "texto": "Y dijo Jehová: También he de quitar de mi presencia á Judá, como quité á Israel, y abominaré á esta ciudad que había escogido, á Jerusalem, y á la casa de la cual había yo dicho: Mi nombre será allí."
+    },
+    {
+     "n": 28,
+     "texto": "Lo demás de los hechos de Josías, y todas las cosas que hizo, ¿no está todo escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 29,
+     "texto": "En aquellos días Faraón Nechâo rey de Egipto subió contra el rey de Asiria al río Eufrates, y salió contra él el rey Josías; pero aquél, así que le vió, matólo en Megiddo."
+    },
+    {
+     "n": 30,
+     "texto": "Y sus siervos lo pusieron en un carro, y trajéronlo muerto de Megiddo á Jerusalem, y sepultáronlo en su sepulcro. Entonces el pueblo de la tierra tomó á Joachâz hijo de Josías, y ungiéronle y pusiéronlo por rey en lugar de su padre."
+    },
+    {
+     "n": 31,
+     "texto": "De veintitrés años era Joachâz cuando comenzó á reinar, y reinó tres meses en Jerusalem. El nombre de su madre fué Amutal, hija de Jeremías de Libna."
+    },
+    {
+     "n": 32,
+     "texto": "Y él hizo lo malo en ojos de Jehová, conforme á todas las cosas que sus padres habían hecho."
+    },
+    {
+     "n": 33,
+     "texto": "Y echólo preso Faraón Nechâo en Ribla en la provincia de Hamath, reinando él en Jerusalem; é impuso sobre la tierra una multa de cien talentos de plata, y uno de oro."
+    },
+    {
+     "n": 34,
+     "texto": "Entonces Faraón Nechâo puso por rey á Eliacim hijo de Josías, en lugar de Josías su padre, y mudóle el nombre en el de Joacim; y tomó á Joachâz, y llevólo á Egipto, y murió allí."
+    },
+    {
+     "n": 35,
+     "texto": "Y Joacim pagó á Faraón la plata y el oro; mas hizo apreciar la tierra para dar el dinero conforme al mandamiento de Faraón, sacando la plata y oro del pueblo de la tierra, de cada uno según la estimación [de su hacienda], para dar á Faraón Nechâo."
+    },
+    {
+     "n": 36,
+     "texto": "De veinticinco años era Joacim cuando comenzó á Reinar, y once años reinó en Jerusalem. El nombre de su madre fué Zebuda hija de Pedaia, de Ruma."
+    },
+    {
+     "n": 37,
+     "texto": "E hizo lo malo en ojos de Jehová, conforme á todas las cosas que sus padres habían hecho."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 24,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "EN su tiempo subió Nabucodonosor rey de Babilonia, al cual sirvió Joacim tres años; volvióse luego, y se rebeló contra él."
+    },
+    {
+     "n": 2,
+     "texto": "Jehová empero envió contra él tropas de Caldeos, y tropas de Siros, y tropas de Moabitas, y tropas de Ammonitas; los cuales envió contra Judá para que la destruyesen, conforme á la palabra de Jehová que había hablado por sus siervos los profetas."
+    },
+    {
+     "n": 3,
+     "texto": "Ciertamente vino esto contra Judá por dicho de Jehová, para quitarla de su presencia, por los pecados de Manasés, conforme á todo lo que hizo;"
+    },
+    {
+     "n": 4,
+     "texto": "Asimismo por la sangre inocente que derramó, pues hinchió á Jerusalem de sangre inocente: Jehová por tanto, no quiso perdonar."
+    },
+    {
+     "n": 5,
+     "texto": "Lo demás de los hechos de Joacim, y todas las cosas que hizo, ¿no está escrito en el libro de las crónicas de los reyes de Judá?"
+    },
+    {
+     "n": 6,
+     "texto": "Y durmió Joacim con sus padres, y reinó en su lugar Joachîn su hijo."
+    },
+    {
+     "n": 7,
+     "texto": "Y nunca más el rey de Egipto salió de su tierra: porque el rey de Babilonia le tomó todo lo que era suyo, desde el río de Egipto hasta el río de Eufrates."
+    },
+    {
+     "n": 8,
+     "texto": "De dieciocho años era Joachîn cuando comenzó á reinar, y reinó en Jerusalem tres meses. El nombre de su madre fué Neusta hija de Elnathán, de Jerusalem."
+    },
+    {
+     "n": 9,
+     "texto": "E hizo lo malo en ojos de Jehová, conforme á todas las cosas que había hecho su padre."
+    },
+    {
+     "n": 10,
+     "texto": "En aquel tiempo subieron los siervos de Nabucodonosor rey de Babilonia contra Jerusalem, y la ciudad fué cercada."
+    },
+    {
+     "n": 11,
+     "texto": "Vino también Nabucodonosor rey de Babilonia contra la ciudad, cuando sus siervos la tenían cercada."
+    },
+    {
+     "n": 12,
+     "texto": "Entonces salió Joachîn rey de Judá al rey de Babilonia, él, y su madre, y sus siervos, y sus príncipes, y sus eunucos: y prendiólo el rey de Babilonia en el octavo año de su reinado."
+    },
+    {
+     "n": 13,
+     "texto": "Y sacó de allí todos los tesoros de la casa de Jehová, y los tesoros de la casa real, y quebró en piezas todos los vasos de oro que había hecho Salomón rey de Israel en la casa de Jehová, como Jehová había dicho."
+    },
+    {
+     "n": 14,
+     "texto": "Y llevó en cautiverio á toda Jerusalem, á todos los príncipes, y á todos los hombres valientes, hasta diez mil cautivos, y á todos los oficiales y herreros; que no quedó nadie, excepto los pobres del pueblo de la tierra."
+    },
+    {
+     "n": 15,
+     "texto": "Asimismo trasportó á Joachîn á Babilonia, y á la madre del rey, y á las mujeres del rey, y á sus eunucos, y á los poderosos de la tierra; cautivos los llevó de Jerusalem á Babilonia."
+    },
+    {
+     "n": 16,
+     "texto": "A todos los hombre de guerra, [que fueron] siete mil, y á los oficiales y herreros, [que fueron] mil, y á todos los valientes para hacer la guerra, llevó cautivos el rey de Babilonia."
+    },
+    {
+     "n": 17,
+     "texto": "Y el rey de Babilonia puso por rey en lugar de Joachîn á Mathanías su tío, y mudóle el nombre en el de Sedecías."
+    },
+    {
+     "n": 18,
+     "texto": "De veintiún años era Sedecías cuando comenzó á reinar, y reinó en Jerusalem once años. El nombre de su madre fué Amutal hija de Jeremías, de Libna."
+    },
+    {
+     "n": 19,
+     "texto": "E hizo lo malo en ojos de Jehová, conforme á todo lo que había hecho Joacim."
+    },
+    {
+     "n": 20,
+     "texto": "Fué pues la ira de Jehová contra Jerusalem y Judá, hasta que los echó de su presencia. Y Sedecías se rebeló contra el rey de Babilonia."
+    }
+   ]
+  },
+  {
+   "libro": "2R",
+   "cap": 25,
+   "versiculos": [
+    {
+     "n": 1,
+     "texto": "Y ACONTECIÓ á los nueve años de su reinado, en el mes décimo, á los diez del mes, que Nabucodonosor rey de Babilonia vino con todo su ejército contra Jerusalem, y cercóla; y levantaron contra ella ingenios alrededor."
+    },
+    {
+     "n": 2,
+     "texto": "Y estuvo la ciudad cercada hasta el undécimo año del rey Sedecías."
+    },
+    {
+     "n": 3,
+     "texto": "A los nueve del mes prevaleció el hambre en la ciudad, que no hubo pan para el pueblo de la tierra."
+    },
+    {
+     "n": 4,
+     "texto": "Abierta ya la ciudad, [huyeron] de noche todos los hombres de guerra por el camino de la puerta que estaba entre los dos muros, junto á los huertos del rey, estando los Caldeos alrededor de la ciudad; [y el rey] se fué camino de la campiña."
+    },
+    {
+     "n": 5,
+     "texto": "Y el ejército de los Caldeos siguió al rey, y tomólo en las llanuras de Jericó, habiéndose esparcido de él todo su ejército."
+    },
+    {
+     "n": 6,
+     "texto": "Tomado pues el rey, trajéronle al rey de Babilonia á Ribla, y profirieron contra él sentencia."
+    },
+    {
+     "n": 7,
+     "texto": "Y degollaron á los hijos de Sedecías en presencia suya; y á Sedecías sacaron los ojos, y atado con cadenas lleváronlo á Babilonia."
+    },
+    {
+     "n": 8,
+     "texto": "En el mes quinto, á los siete del mes, siendo el año diecinueve de Nabucodonosor rey de Babilonia, vino á Jerusalem Nabuzaradán, capitán de los de la guardia, siervo del rey de Babilonia."
+    },
+    {
+     "n": 9,
+     "texto": "Y quemó la casa de Jehová, y la casa del rey, y todas las casas de Jerusalem; y todas las casas de los príncipes quemó á fuego."
+    },
+    {
+     "n": 10,
+     "texto": "Y todo el ejército de los Caldeos que estaba [con] el capitán de la guardia, derribó los muros de Jerusalem alrededor."
+    },
+    {
+     "n": 11,
+     "texto": "Y á los del pueblo que habían quedado en la ciudad, y á los que se habían juntado al rey de Babilonia, y á los que habían quedado del vulgo, trasportólos Nabuzaradán, capitán de los de la guardia."
+    },
+    {
+     "n": 12,
+     "texto": "Mas de los pobres de la tierra dejó Nabuzaradán, capitán de los de la guardia, para que labrasen las viñas y las tierras."
+    },
+    {
+     "n": 13,
+     "texto": "Y quebraron los Caldeos las columnas de bronce que estaban en la casa de Jehová, y las basas, y el mar de bronce que estaba en la casa de Jehová, y llevaron el metal de ello á Babilonia."
+    },
+    {
+     "n": 14,
+     "texto": "Lleváronse también los calderos, y las paletas, y las tenazas, y los cucharones, y todos los vasos de metal con que ministraban."
+    },
+    {
+     "n": 15,
+     "texto": "Incensarios, cuencos, los que de oro, en oro, y los que de plata, en plata, [todo] lo llevó el capitán de los de la guardia;"
+    },
+    {
+     "n": 16,
+     "texto": "Las dos columnas, un mar, y las basas que Salomón había hecho para la casa de Jehová: no había peso de todos estos vasos."
+    },
+    {
+     "n": 17,
+     "texto": "La altura de la una columna era diez y ocho codos y tenía encima un capitel de bronce, y la altura del capitel era de tres codos; y sobre el capitel había un enredado y granadas alrededor, todo de bronce: y semejante [obra] había en la otra columna con el enredado."
+    },
+    {
+     "n": 18,
+     "texto": "Tomó entonces el capitán de los de la guardia á Saraías primer sacerdote, y á Sophonías segundo sacerdote, y tres guardas de la vajilla;"
+    },
+    {
+     "n": 19,
+     "texto": "Y de la ciudad tomó un eunuco, el cual era maestre de campo, y cinco varones de los continuos del rey, que se hallaron en la ciudad; y al principal escriba del ejército, que hacía la reseña de la gente del país; y sesenta varones del pueblo de la tierra, que se hallaron en la ciudad."
+    },
+    {
+     "n": 20,
+     "texto": "Estos tomó Nabuzaradán, capitán de los de la guardia, y llevólos á Ribla al rey de Babilonia."
+    },
+    {
+     "n": 21,
+     "texto": "Y el rey de Babilonia los hirió y mató en Ribla, en tierra de Hamath. Así fué trasportado Judá de sobre su tierra."
+    },
+    {
+     "n": 22,
+     "texto": "Y al pueblo que Nabucodonosor rey de Babilonia dejó en tierra de Judá, puso por gobernador á Gedalías, hijo de Ahicam hijo de Saphán."
+    },
+    {
+     "n": 23,
+     "texto": "Y oyendo todos los príncipes del ejército, ellos y su gente, que el rey de Babilonia había puesto por gobernador á Gedalías, viniéronse á él en Mizpa, [es á saber], Ismael hijo de Nathanías, y Johanán hijo de Carea, y Saraía hijo de Tanhumet Netofatita, y Jaazanías hijo de Maachâti, ellos con los suyos."
+    },
+    {
+     "n": 24,
+     "texto": "Entonces Gedalías les hizo juramento, á ellos y á los suyos, y díjoles: No temáis de [ser] siervos de los Caldeos; habitad en la tierra, y servid al rey de Babilonia, y os irá bien."
+    },
+    {
+     "n": 25,
+     "texto": "Mas en el mes séptimo vino Ismael hijo de Nathanías, hijo de Elisama, de la estirpe real, y con él diez varones, é hirieron á Gedalías, y murió: y también á los Judíos y Caldeos que estaban con él en Mizpa."
+    },
+    {
+     "n": 26,
+     "texto": "Y levantándose todo el pueblo, desde el menor hasta el mayor, con los capitanes del ejército, fuéronse á Egipto por temor de los Caldeos."
+    },
+    {
+     "n": 27,
+     "texto": "Y aconteció á los treinta y siete años de la trasportación de Joachîn rey de Judá, en el mes duodécimo, á los veinte y siete del mes, que Evil-merodach rey de Babilonia, en el primer año de su reinado, levantó la cabeza de Joachîn rey de Judá, [sacándolo] de la casa de la cárcel;"
+    },
+    {
+     "n": 28,
+     "texto": "Y hablóle bien, y puso su asiento sobre el asiento de los reyes que con él estaban en Babilonia."
+    },
+    {
+     "n": 29,
+     "texto": "Y mudóle los vestidos de su prisión, y comió siempre delante de él todos los días de su vida."
+    },
+    {
+     "n": 30,
+     "texto": "Y fuéle diariamente dada su comida de parte del rey de continuo, todos los días de su vida."
+    }
+   ]
   }
  ],
  "personas": [
@@ -42491,7 +45522,8 @@ window.BIBLIA_DATOS = {
     "Dt 30:20",
     "Dt 34:4",
     "Jos 24:2",
-    "Jos 24:3"
+    "Jos 24:3",
+    "2R 13:23"
    ],
    "nota": "En la Reina-Valera 1909: Abram/Abraham. Se llama Abram hasta Gn 17:5, donde Dios le cambia el nombre por Abraham."
   },
@@ -43107,7 +46139,8 @@ window.BIBLIA_DATOS = {
     "Dt 30:20",
     "Dt 34:4",
     "Jos 24:3",
-    "Jos 24:4"
+    "Jos 24:4",
+    "2R 13:23"
    ],
    "nota": ""
   },
@@ -44447,7 +47480,9 @@ window.BIBLIA_DATOS = {
     "Jos 24:4",
     "Jos 24:32",
     "1S 12:8",
-    "1R 18:31"
+    "1R 18:31",
+    "2R 13:23",
+    "2R 17:34"
    ],
    "nota": "En Gn 32:28 recibe el nombre de Israel; el texto sigue usando ambos. En Deuteronomio «Jeshurun» (Dt 32:15) es nombre del pueblo: no se marca como Jacob."
   },
@@ -44957,7 +47992,8 @@ window.BIBLIA_DATOS = {
     "1S 11:8",
     "1R 12:20",
     "1R 12:21",
-    "1R 12:23"
+    "1R 12:23",
+    "2R 19:30"
    ],
    "nota": ""
   },
@@ -48961,7 +51997,13 @@ window.BIBLIA_DATOS = {
     "1R 2:3",
     "1R 8:9",
     "1R 8:53",
-    "1R 8:56"
+    "1R 8:56",
+    "2R 14:6",
+    "2R 18:4",
+    "2R 18:6",
+    "2R 18:12",
+    "2R 21:8",
+    "2R 23:25"
    ],
    "nota": "Muere en la tierra de Moab a los 120 años (Dt 34:5-7): «Y era Moisés de edad de ciento y veinte años cuando murió»; lo entierran en el valle, enfrente de Bet-peor, «y ninguno sabe su sepulcro hasta hoy» (Dt 34:6)."
   },
@@ -49163,9 +52205,10 @@ window.BIBLIA_DATOS = {
     "Dt 29:2",
     "Dt 34:11",
     "1S 2:27",
-    "1S 6:6"
+    "1S 6:6",
+    "2R 17:7"
    ],
-   "nota": "Faraón de las plagas y de la salida (desde Ex 3:10); BibleData lo distingue del que muere en Ex 2:23. El texto no da su nombre. 1 S 6:6: los filisteos recuerdan «como los Egipcios y Faraón endurecieron su corazón»; 1 S 2:27: «en Egipto en casa de Faraón». BibleData lo asigna al faraón de las plagas."
+   "nota": "Faraón de las plagas y de la salida (desde Ex 3:10); BibleData lo distingue del que muere en Ex 2:23. El texto no da su nombre. 1 S 6:6: los filisteos recuerdan «como los Egipcios y Faraón endurecieron su corazón»; 1 S 2:27: «en Egipto en casa de Faraón». BibleData lo asigna al faraón de las plagas. 2 R 17:7: «de bajo la mano de Faraón rey de Egipto» (el de la salida)."
   },
   {
    "id": "Aaron_1",
@@ -54877,7 +57920,25 @@ window.BIBLIA_DATOS = {
     "1R 15:8",
     "1R 15:11",
     "1R 15:24",
-    "1R 22:51"
+    "1R 22:51",
+    "2R 8:19",
+    "2R 8:24",
+    "2R 9:28",
+    "2R 11:10",
+    "2R 12:21",
+    "2R 14:3",
+    "2R 14:20",
+    "2R 15:7",
+    "2R 15:38",
+    "2R 16:2",
+    "2R 16:20",
+    "2R 17:21",
+    "2R 18:3",
+    "2R 19:34",
+    "2R 20:5",
+    "2R 20:6",
+    "2R 21:7",
+    "2R 22:2"
    ],
    "nota": "En Rut solo aparece en la genealogía (Rut 4:17, 4:22), como hijo de Isaí. 1 S 16:13: Samuel lo unge «de entre sus hermanos»; 1 S 17:12: «David era hijo de aquel hombre Ephrateo de Beth-lehem de Judá, cuyo nombre era Isaí» (la misma persona que en Rut 4:17-22). 2 S 2:4: ungido rey de Judá en Hebrón; 2 S 5:3-5: rey de todo Israel, «de treinta años», siete años y seis meses en Hebrón y treinta y tres en Jerusalén. 1 R 2:10-11: muere y es sepultado en la ciudad de David; reinó «cuarenta años»: siete en Hebrón y treinta y tres en Jerusalén."
   },
@@ -57525,7 +60586,11 @@ window.BIBLIA_DATOS = {
     "1R 12:21",
     "1R 12:23",
     "1R 14:21",
-    "1R 14:26"
+    "1R 14:26",
+    "2R 21:7",
+    "2R 23:13",
+    "2R 24:13",
+    "2R 25:16"
    ],
    "nota": "Hijo de David y de Betsabé (2 S 12:24); Jehová, «por mano de Nathán profeta», lo llama Jedidiah (2 S 12:25). 1 R 1:39: Sadoc «ungió á Salomón»; reina «cuarenta años» (1 R 11:42) y «reinó en su lugar Roboam su hijo» (1 R 11:43)."
   },
@@ -60370,7 +63435,22 @@ window.BIBLIA_DATOS = {
     "1R 16:26",
     "1R 16:31",
     "1R 21:22",
-    "1R 22:53"
+    "1R 22:53",
+    "2R 3:3",
+    "2R 9:9",
+    "2R 10:29",
+    "2R 10:31",
+    "2R 13:2",
+    "2R 13:6",
+    "2R 13:11",
+    "2R 14:24",
+    "2R 15:9",
+    "2R 15:18",
+    "2R 15:24",
+    "2R 15:28",
+    "2R 17:21",
+    "2R 17:22",
+    "2R 23:15"
    ],
    "nota": ""
   },
@@ -60394,7 +63474,19 @@ window.BIBLIA_DATOS = {
     "1R 16:26",
     "1R 16:31",
     "1R 21:22",
-    "1R 22:53"
+    "1R 22:53",
+    "2R 3:3",
+    "2R 9:9",
+    "2R 10:29",
+    "2R 13:2",
+    "2R 13:11",
+    "2R 14:24",
+    "2R 15:9",
+    "2R 15:18",
+    "2R 15:24",
+    "2R 15:28",
+    "2R 17:21",
+    "2R 23:15"
    ],
    "nota": ""
   },
@@ -60516,9 +63608,26 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "1R 13:2",
    "refs": [
-    "1R 13:2"
+    "1R 13:2",
+    "2R 21:24",
+    "2R 21:26",
+    "2R 22:1",
+    "2R 22:3",
+    "2R 22:16",
+    "2R 22:18",
+    "2R 23:16",
+    "2R 23:19",
+    "2R 23:23",
+    "2R 23:24",
+    "2R 23:28",
+    "2R 23:29",
+    "2R 23:30",
+    "2R 23:31",
+    "2R 23:34",
+    "2R 23:36",
+    "2R 24:18"
    ],
-   "nota": "1 R 13:2: el varón de Dios anuncia que «á la casa de David nacerá un hijo, llamado Josías»."
+   "nota": "1 R 13:2: el varón de Dios anuncia que «á la casa de David nacerá un hijo, llamado Josías». 2 R 22:1: «reinó en Jerusalem treinta y un años»; halla el libro de la ley y renueva el pacto; «No hubo tal rey antes de él» (23:25); muere en Megido (23:29)."
   },
   {
    "id": "Abijah_2",
@@ -60698,7 +63807,8 @@ window.BIBLIA_DATOS = {
     "1R 16:11",
     "1R 16:12",
     "1R 16:13",
-    "1R 21:22"
+    "1R 21:22",
+    "2R 9:9"
    ],
    "nota": ""
   },
@@ -60731,9 +63841,17 @@ window.BIBLIA_DATOS = {
     "1R 20:32",
     "1R 20:33",
     "1R 22:3",
-    "1R 22:31"
+    "1R 22:31",
+    "2R 5:1",
+    "2R 5:5",
+    "2R 6:8",
+    "2R 6:11",
+    "2R 6:24",
+    "2R 8:7",
+    "2R 8:9",
+    "2R 8:15"
    ],
-   "nota": "Rey de Siria, «hijo de Tabrimón, hijo de Hezión» (1 R 15:18), en tiempos de Asa; BibleData le da también el Ben-adad de 1 R 20 (tiempos de Acab). El texto no dice si es el mismo (ver identidad).",
+   "nota": "Rey de Siria, «hijo de Tabrimón, hijo de Hezión» (1 R 15:18), en tiempos de Asa; BibleData le da también el Ben-adad de 1 R 20 (tiempos de Acab). El texto no dice si es el mismo (ver identidad). 2 R 6:24 y 8:7: «Ben-adad rey de Siria estaba enfermo»; Hazael lo ahoga (8:15). BibleData lo une con el de 1 R 15 y 20; distinto de Ben-adad hijo de Hazael (2 R 13:3).",
    "identidad": {
     "certeza": "inferido",
     "refs": [
@@ -60809,7 +63927,15 @@ window.BIBLIA_DATOS = {
     "1R 22:49",
     "1R 22:50",
     "1R 22:51",
-    "1R 22:52"
+    "1R 22:52",
+    "2R 1:17",
+    "2R 3:1",
+    "2R 3:7",
+    "2R 3:11",
+    "2R 3:12",
+    "2R 3:14",
+    "2R 8:16",
+    "2R 12:18"
    ],
    "nota": "En la Reina-Valera 1909: Josaphat. Hijo de Asa, rey de Judá (1 R 15:24; 22:41-42). Distinto de Josafat hijo de Ahilud y del hijo de Parúa."
   },
@@ -60827,7 +63953,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "1R 15:27",
     "1R 15:33",
-    "1R 21:22"
+    "1R 21:22",
+    "2R 9:9"
    ],
    "nota": "En la Reina-Valera 1909: Ahía. Padre de Baasa, «de la casa de Issachâr» (1 R 15:27, 33; 21:22). Distinto de Ahías silonita."
   },
@@ -60944,7 +64071,8 @@ window.BIBLIA_DATOS = {
     "1R 16:27",
     "1R 16:28",
     "1R 16:29",
-    "1R 16:30"
+    "1R 16:30",
+    "2R 8:26"
    ],
    "nota": ""
   },
@@ -61082,7 +64210,29 @@ window.BIBLIA_DATOS = {
     "1R 22:41",
     "1R 22:45",
     "1R 22:50",
-    "1R 22:52"
+    "1R 22:52",
+    "2R 1:1",
+    "2R 3:1",
+    "2R 3:5",
+    "2R 8:16",
+    "2R 8:18",
+    "2R 8:25",
+    "2R 8:27",
+    "2R 8:28",
+    "2R 8:29",
+    "2R 9:7",
+    "2R 9:8",
+    "2R 9:9",
+    "2R 9:25",
+    "2R 9:29",
+    "2R 10:1",
+    "2R 10:10",
+    "2R 10:11",
+    "2R 10:17",
+    "2R 10:18",
+    "2R 10:30",
+    "2R 21:3",
+    "2R 21:13"
    ],
    "nota": "En la Reina-Valera 1909: Achâb."
   },
@@ -61126,9 +64276,15 @@ window.BIBLIA_DATOS = {
     "1R 21:14",
     "1R 21:15",
     "1R 21:23",
-    "1R 21:25"
+    "1R 21:25",
+    "2R 9:7",
+    "2R 9:10",
+    "2R 9:22",
+    "2R 9:30",
+    "2R 9:36",
+    "2R 9:37"
    ],
-   "nota": ""
+   "nota": "2 R 9:33-36: Jehú dice «Echadla abajo»; se cumple la palabra de Elías: «comerán los perros las carnes de Jezabel»."
   },
   {
    "id": "Abiram_2",
@@ -61227,9 +64383,33 @@ window.BIBLIA_DATOS = {
     "1R 19:21",
     "1R 21:17",
     "1R 21:20",
-    "1R 21:28"
+    "1R 21:28",
+    "2R 1:3",
+    "2R 1:4",
+    "2R 1:8",
+    "2R 1:9",
+    "2R 1:10",
+    "2R 1:11",
+    "2R 1:12",
+    "2R 1:13",
+    "2R 1:15",
+    "2R 1:17",
+    "2R 2:1",
+    "2R 2:2",
+    "2R 2:4",
+    "2R 2:6",
+    "2R 2:8",
+    "2R 2:9",
+    "2R 2:11",
+    "2R 2:13",
+    "2R 2:14",
+    "2R 2:15",
+    "2R 3:11",
+    "2R 9:36",
+    "2R 10:10",
+    "2R 10:17"
    ],
-   "nota": "Tisbita, «de los moradores de Galaad» (1 R 17:1)."
+   "nota": "Tisbita, «de los moradores de Galaad» (1 R 17:1). 2 R 1: anuncia a Ocozías que morirá y hace descender fuego sobre dos capitanes de cincuenta; 2 R 2:11: «Elías subió al cielo en un torbellino», y Eliseo alza su manto (2:13)."
   },
   {
    "id": "Obadiah_1",
@@ -61265,9 +64445,27 @@ window.BIBLIA_DATOS = {
    "primera_ref": "1R 19:15",
    "refs": [
     "1R 19:15",
-    "1R 19:17"
+    "1R 19:17",
+    "2R 8:8",
+    "2R 8:9",
+    "2R 8:12",
+    "2R 8:13",
+    "2R 8:15",
+    "2R 8:28",
+    "2R 8:29",
+    "2R 9:14",
+    "2R 9:15",
+    "2R 10:32",
+    "2R 12:17",
+    "2R 12:18",
+    "2R 13:3",
+    "2R 13:4",
+    "2R 13:7",
+    "2R 13:22",
+    "2R 13:24",
+    "2R 13:25"
    ],
-   "nota": ""
+   "nota": "2 R 8:15: «reinó Hazael en su lugar»; su hijo es Ben-adad (2 R 13:3, 24)."
   },
   {
    "id": "Elisha_1",
@@ -61283,9 +64481,83 @@ window.BIBLIA_DATOS = {
    "refs": [
     "1R 19:16",
     "1R 19:17",
-    "1R 19:19"
+    "1R 19:19",
+    "2R 2:1",
+    "2R 2:2",
+    "2R 2:3",
+    "2R 2:4",
+    "2R 2:5",
+    "2R 2:9",
+    "2R 2:12",
+    "2R 2:14",
+    "2R 2:15",
+    "2R 2:19",
+    "2R 2:22",
+    "2R 3:11",
+    "2R 3:13",
+    "2R 3:14",
+    "2R 3:15",
+    "2R 4:1",
+    "2R 4:2",
+    "2R 4:7",
+    "2R 4:8",
+    "2R 4:9",
+    "2R 4:16",
+    "2R 4:17",
+    "2R 4:21",
+    "2R 4:22",
+    "2R 4:25",
+    "2R 4:27",
+    "2R 4:31",
+    "2R 4:32",
+    "2R 4:38",
+    "2R 4:40",
+    "2R 4:42",
+    "2R 5:8",
+    "2R 5:9",
+    "2R 5:10",
+    "2R 5:14",
+    "2R 5:15",
+    "2R 5:20",
+    "2R 5:25",
+    "2R 6:1",
+    "2R 6:6",
+    "2R 6:9",
+    "2R 6:10",
+    "2R 6:12",
+    "2R 6:15",
+    "2R 6:17",
+    "2R 6:18",
+    "2R 6:19",
+    "2R 6:20",
+    "2R 6:21",
+    "2R 6:31",
+    "2R 6:32",
+    "2R 7:1",
+    "2R 7:2",
+    "2R 7:17",
+    "2R 7:18",
+    "2R 7:19",
+    "2R 8:1",
+    "2R 8:2",
+    "2R 8:4",
+    "2R 8:5",
+    "2R 8:7",
+    "2R 8:8",
+    "2R 8:10",
+    "2R 8:11",
+    "2R 8:13",
+    "2R 8:14",
+    "2R 9:1",
+    "2R 13:14",
+    "2R 13:15",
+    "2R 13:16",
+    "2R 13:17",
+    "2R 13:19",
+    "2R 13:20",
+    "2R 13:21"
    ],
-   "nota": "Hijo de Safat, de Abel-mehola (1 R 19:16); Elías echa sobre él su manto (1 R 19:19)."
+   "nota": "Hijo de Safat, de Abel-mehola (1 R 19:16); Elías echa sobre él su manto (1 R 19:19). 2 R 2–13: hereda el manto de Elías; «murió Eliseo, y sepultáronlo» (2 R 13:20)."
   },
   {
    "id": "Jehu_2",
@@ -61300,9 +64572,48 @@ window.BIBLIA_DATOS = {
    "primera_ref": "1R 19:16",
    "refs": [
     "1R 19:16",
-    "1R 19:17"
+    "1R 19:17",
+    "2R 9:2",
+    "2R 9:5",
+    "2R 9:11",
+    "2R 9:13",
+    "2R 9:14",
+    "2R 9:15",
+    "2R 9:16",
+    "2R 9:17",
+    "2R 9:18",
+    "2R 9:19",
+    "2R 9:20",
+    "2R 9:21",
+    "2R 9:22",
+    "2R 9:24",
+    "2R 9:27",
+    "2R 9:30",
+    "2R 9:31",
+    "2R 10:1",
+    "2R 10:5",
+    "2R 10:11",
+    "2R 10:13",
+    "2R 10:18",
+    "2R 10:19",
+    "2R 10:20",
+    "2R 10:21",
+    "2R 10:23",
+    "2R 10:24",
+    "2R 10:25",
+    "2R 10:28",
+    "2R 10:29",
+    "2R 10:30",
+    "2R 10:31",
+    "2R 10:34",
+    "2R 10:35",
+    "2R 10:36",
+    "2R 12:1",
+    "2R 13:1",
+    "2R 14:8",
+    "2R 15:12"
    ],
-   "nota": "Hijo de Nimsi, al que Elías debe ungir rey sobre Israel (1 R 19:16). Distinto del profeta Jehú hijo de Hanani."
+   "nota": "Hijo de Nimsi, al que Elías debe ungir rey sobre Israel (1 R 19:16). Distinto del profeta Jehú hijo de Hanani. 2 R 9: ungido rey en Ramot de Galaad; 9:2 y 9:14 lo llaman «hijo de Josaphat hijo de Nimsi» (ver su padre Josafat, Jehoshaphat_4); 10:28: «Así extinguió Jehú á Baal de Israel»; reina «veintiocho años» (10:36)."
   },
   {
    "id": "Nimshi_1",
@@ -61316,9 +64627,12 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "1R 19:16",
    "refs": [
-    "1R 19:16"
+    "1R 19:16",
+    "2R 9:2",
+    "2R 9:14",
+    "2R 9:20"
    ],
-   "nota": ""
+   "nota": "2 R 9:2 y 9:14 dicen «Jehú hijo de Josaphat hijo de Nimsi»: ahí Nimsi es el abuelo y Josafat el padre (relaciones aparte, con cita). 1 R 19:16 y 2 R 9:20 dicen «hijo de Nimsi». No se armoniza."
   },
   {
    "id": "Shaphat_2",
@@ -61333,7 +64647,9 @@ window.BIBLIA_DATOS = {
    "primera_ref": "1R 19:16",
    "refs": [
     "1R 19:16",
-    "1R 19:19"
+    "1R 19:19",
+    "2R 3:11",
+    "2R 6:31"
    ],
    "nota": "En la Reina-Valera 1909: Saphat."
   },
@@ -61363,7 +64679,10 @@ window.BIBLIA_DATOS = {
     "1R 21:15",
     "1R 21:16",
     "1R 21:18",
-    "1R 21:19"
+    "1R 21:19",
+    "2R 9:21",
+    "2R 9:25",
+    "2R 9:26"
    ],
    "nota": "En la Reina-Valera 1909: Naboth. De Jezreel; no quiere vender a Acab su viña y es apedreado (1 R 21:1-13)."
   },
@@ -61487,9 +64806,13 @@ window.BIBLIA_DATOS = {
    "refs": [
     "1R 22:40",
     "1R 22:50",
-    "1R 22:52"
+    "1R 22:52",
+    "2R 1:2",
+    "2R 1:3",
+    "2R 1:17",
+    "2R 1:18"
    ],
-   "nota": "En la Reina-Valera 1909: Ochôzías."
+   "nota": "En la Reina-Valera 1909: Ochôzías. 2 R 1:2: «cayó por las celosías»; muere sin hijo («porque [Ochôzías] no tenía hijo», 1:17). Distinto de Ocozías de Judá."
   },
   {
    "id": "Azubah_1",
@@ -61535,9 +64858,2432 @@ window.BIBLIA_DATOS = {
    "sexo": "m",
    "primera_ref": "1R 22:51",
    "refs": [
-    "1R 22:51"
+    "1R 22:51",
+    "2R 1:17",
+    "2R 8:16",
+    "2R 8:17",
+    "2R 8:18",
+    "2R 8:21",
+    "2R 8:23",
+    "2R 8:24",
+    "2R 8:25",
+    "2R 8:29",
+    "2R 11:2",
+    "2R 12:18"
+   ],
+   "nota": "2 R 8:16-17: «comenzó á reinar Joram hijo de Josaphat rey de Judá»; «ocho años reinó en Jerusalem». Distinto de Joram hijo de Acab, rey de Israel (2 R 3:1)."
+  },
+  {
+   "id": "Jehoram_2",
+   "nombre": "Joram",
+   "nombre_rv1909": "Joram",
+   "rol": "hijo de Acab, rey de Israel",
+   "formas_rv1909": [
+    "Joram"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 1:17",
+   "refs": [
+    "2R 1:17",
+    "2R 3:1",
+    "2R 3:4",
+    "2R 3:5",
+    "2R 3:6",
+    "2R 3:9",
+    "2R 3:10",
+    "2R 3:11",
+    "2R 3:12",
+    "2R 3:13",
+    "2R 5:5",
+    "2R 5:6",
+    "2R 5:7",
+    "2R 5:8",
+    "2R 6:9",
+    "2R 6:10",
+    "2R 6:11",
+    "2R 6:12",
+    "2R 6:21",
+    "2R 6:26",
+    "2R 7:6",
+    "2R 8:16",
+    "2R 8:25",
+    "2R 8:28",
+    "2R 8:29",
+    "2R 9:14",
+    "2R 9:15",
+    "2R 9:16",
+    "2R 9:17",
+    "2R 9:21",
+    "2R 9:22",
+    "2R 9:23",
+    "2R 9:24",
+    "2R 9:29"
+   ],
+   "nota": "Hijo de Acab, rey de Israel en Samaria doce años (2 R 3:1); su madre es Jezabel (9:22). Jehú lo mata en la heredad de Nabot (9:24). Distinto de Joram hijo de Josafat, rey de Judá. BibleData le atribuye también «el rey de Israel» sin nombre de 2 R 5–7."
+  },
+  {
+   "id": "Mesha_1",
+   "nombre": "Mesa",
+   "nombre_rv1909": "Mesa",
+   "rol": "rey de Moab",
+   "formas_rv1909": [
+    "Mesa"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 3:4",
+   "refs": [
+    "2R 3:4",
+    "2R 3:5",
+    "2R 3:7",
+    "2R 3:26"
    ],
    "nota": ""
+  },
+  {
+   "id": "Shunammite_2R4_1",
+   "nombre": "La sunamita",
+   "nombre_rv1909": null,
+   "formas_rv1909": [],
+   "rol": "mujer principal de Sunem que hospeda a Eliseo",
+   "sin_nombre": true,
+   "sexo": "f",
+   "primera_ref": "2R 4:8",
+   "refs": [
+    "2R 4:8",
+    "2R 4:9",
+    "2R 4:12",
+    "2R 4:13",
+    "2R 4:16",
+    "2R 4:17",
+    "2R 4:22",
+    "2R 4:25",
+    "2R 4:26",
+    "2R 4:28",
+    "2R 4:30",
+    "2R 4:36",
+    "2R 4:37",
+    "2R 8:1",
+    "2R 8:2",
+    "2R 8:3",
+    "2R 8:5",
+    "2R 8:6"
+   ],
+   "nota": "«Una mujer principal» de Sunem que hospeda a Eliseo (2 R 4:8-10); el texto no da su nombre. Eliseo le anuncia un hijo, que muere y revive (4:16-37); por consejo de Eliseo vive siete años en tierra de los filisteos y el rey le devuelve sus tierras (8:1-6).",
+   "ref_mencion": "2R 4:8"
+  },
+  {
+   "id": "Gehazi_1",
+   "nombre": "Giezi",
+   "nombre_rv1909": "Giezi",
+   "rol": "criado de Eliseo",
+   "formas_rv1909": [
+    "Giezi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 4:12",
+   "refs": [
+    "2R 4:12",
+    "2R 4:13",
+    "2R 4:14",
+    "2R 4:25",
+    "2R 4:27",
+    "2R 4:29",
+    "2R 4:31",
+    "2R 4:36",
+    "2R 5:20",
+    "2R 5:21",
+    "2R 5:25",
+    "2R 8:4",
+    "2R 8:5"
+   ],
+   "nota": "Criado de Eliseo (2 R 4:12); la lepra de Naamán se le pega (5:27)."
+  },
+  {
+   "id": "Naaman_2",
+   "nombre": "Naamán",
+   "nombre_rv1909": "Naamán",
+   "rol": "general del ejército del rey de Siria",
+   "formas_rv1909": [
+    "Naamán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 5:1",
+   "refs": [
+    "2R 5:1",
+    "2R 5:2",
+    "2R 5:4",
+    "2R 5:6",
+    "2R 5:9",
+    "2R 5:11",
+    "2R 5:17",
+    "2R 5:20",
+    "2R 5:21",
+    "2R 5:23",
+    "2R 5:27"
+   ],
+   "nota": "General del ejército del rey de Siria, leproso, sanado en el Jordán (2 R 5:1, 14). Distinto de Naamán hijo de Benjamín."
+  },
+  {
+   "id": "Athaliah_1",
+   "nombre": "Atalía",
+   "nombre_rv1909": "Athalía",
+   "rol": "madre de Ocozías; reina sobre el país",
+   "formas_rv1909": [
+    "Athalía"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 8:26",
+   "refs": [
+    "2R 8:18",
+    "2R 8:26",
+    "2R 11:1",
+    "2R 11:2",
+    "2R 11:3",
+    "2R 11:13",
+    "2R 11:14",
+    "2R 11:16",
+    "2R 11:20"
+   ],
+   "nota": "En la Reina-Valera 1909: Athalía. Madre de Ocozías de Judá; reina seis años sobre el país (2 R 11:3). 2 R 8:18 dice de Joram de Judá que «una hija de Achâb fué su mujer», sin nombrarla; 8:26 llama a Atalía, madre de Ocozías hijo de Joram, «hija de Omri rey de Israel», y 1 R 16:28 hace a Acab hijo de Omri. Se registra lo que dice cada versículo: Omri padre (8:26, texto) y Acab padre (8:18, inferido: el texto no nombra a la hija). No se armoniza."
+  },
+  {
+   "id": "Ahaziah_2",
+   "nombre": "Ocozías",
+   "nombre_rv1909": "Ochôzías",
+   "rol": "hijo de Joram, rey de Judá",
+   "formas_rv1909": [
+    "Ochôzías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 8:24",
+   "refs": [
+    "2R 8:24",
+    "2R 8:25",
+    "2R 8:26",
+    "2R 8:29",
+    "2R 9:16",
+    "2R 9:21",
+    "2R 9:23",
+    "2R 9:27",
+    "2R 9:29",
+    "2R 10:13",
+    "2R 11:1",
+    "2R 11:2",
+    "2R 12:1",
+    "2R 12:18",
+    "2R 13:1",
+    "2R 14:13"
+   ],
+   "nota": "En la Reina-Valera 1909: Ochôzías. Hijo de Joram y de Atalía, rey de Judá un año (2 R 8:25-26). Distinto de Ocozías hijo de Acab, rey de Israel."
+  },
+  {
+   "id": "Jehoshaphat_4",
+   "nombre": "Josafat",
+   "nombre_rv1909": "Josaphat",
+   "rol": "padre de Jehú",
+   "formas_rv1909": [
+    "Josaphat"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 9:2",
+   "refs": [
+    "2R 9:2",
+    "2R 9:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Josaphat. Padre de Jehú, hijo de Nimsi (2 R 9:2, 14). Distinto del rey Josafat hijo de Asa (Jehoshaphat_3) y de los Josafat de 1 Reyes."
+  },
+  {
+   "id": "Bidkar_1",
+   "nombre": "Bidcar",
+   "nombre_rv1909": "Bidkar",
+   "rol": "capitán de Jehú",
+   "formas_rv1909": [
+    "Bidkar"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 9:25",
+   "refs": [
+    "2R 9:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Bidkar."
+  },
+  {
+   "id": "Jehonadab_1",
+   "nombre": "Jonadab",
+   "nombre_rv1909": "Jonadab",
+   "rol": "hijo de Recab, va con Jehú",
+   "formas_rv1909": [
+    "Jonadab"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 10:15",
+   "refs": [
+    "2R 10:15",
+    "2R 10:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Rechab_2",
+   "nombre": "Recab",
+   "nombre_rv1909": "Rechâb",
+   "rol": "",
+   "formas_rv1909": [
+    "Rechâb"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 10:15",
+   "refs": [
+    "2R 10:15",
+    "2R 10:23"
+   ],
+   "nota": "En la Reina-Valera 1909: Rechâb."
+  },
+  {
+   "id": "Jehoahaz_1",
+   "nombre": "Joacaz",
+   "nombre_rv1909": "Joachâz",
+   "rol": "hijo de Jehú, rey de Israel",
+   "formas_rv1909": [
+    "Joachâz"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 10:35",
+   "refs": [
+    "2R 10:35",
+    "2R 13:1",
+    "2R 13:4",
+    "2R 13:7",
+    "2R 13:8",
+    "2R 13:9",
+    "2R 13:10",
+    "2R 13:22",
+    "2R 13:25",
+    "2R 14:1",
+    "2R 14:8",
+    "2R 14:17"
+   ],
+   "nota": "En la Reina-Valera 1909: Joachâz. Hijo de Jehú, rey de Israel (2 R 10:35; 13:1). Distinto de Joacaz hijo de Josías, rey de Judá (23:30)."
+  },
+  {
+   "id": "Jehosheba_1",
+   "nombre": "Josaba",
+   "nombre_rv1909": "Josaba",
+   "rol": "hija del rey Joram; esconde a Joás",
+   "formas_rv1909": [
+    "Josaba"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 11:2",
+   "refs": [
+    "2R 11:2"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Joash_3",
+   "nombre": "Joás",
+   "nombre_rv1909": "Joas",
+   "rol": "hijo de Ocozías, rey de Judá",
+   "formas_rv1909": [
+    "Joas"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 11:2",
+   "refs": [
+    "2R 11:2",
+    "2R 11:21",
+    "2R 12:1",
+    "2R 12:2",
+    "2R 12:4",
+    "2R 12:6",
+    "2R 12:7",
+    "2R 12:18",
+    "2R 12:19",
+    "2R 12:20",
+    "2R 12:21",
+    "2R 13:1",
+    "2R 13:10",
+    "2R 14:1",
+    "2R 14:2",
+    "2R 14:3",
+    "2R 14:13",
+    "2R 14:17",
+    "2R 14:23"
+   ],
+   "nota": "En la Reina-Valera 1909: Joas. Hijo de Ocozías, rey de Judá (2 R 11:2, 21; 12:1). Distinto de Joás hijo de Joacaz, rey de Israel (13:10)."
+  },
+  {
+   "id": "Jehoiada_2",
+   "nombre": "Joiada",
+   "nombre_rv1909": "Joiada",
+   "rol": "sacerdote",
+   "formas_rv1909": [
+    "Joiada"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 11:4",
+   "refs": [
+    "2R 11:4",
+    "2R 11:9",
+    "2R 11:15",
+    "2R 11:17",
+    "2R 12:2",
+    "2R 12:7",
+    "2R 12:9"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Mattan_1",
+   "nombre": "Matán",
+   "nombre_rv1909": "Mathán",
+   "rol": "sacerdote de Baal",
+   "formas_rv1909": [
+    "Mathán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 11:18",
+   "refs": [
+    "2R 11:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Mathán."
+  },
+  {
+   "id": "Zibiah_1",
+   "nombre": "Sibia",
+   "nombre_rv1909": "Sibia",
+   "rol": "",
+   "formas_rv1909": [
+    "Sibia"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 12:1",
+   "refs": [
+    "2R 12:1"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Amaziah_1",
+   "nombre": "Amasías",
+   "nombre_rv1909": "Amasías",
+   "rol": "hijo de Joás, rey de Judá",
+   "formas_rv1909": [
+    "Amasías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 12:21",
+   "refs": [
+    "2R 12:21",
+    "2R 13:12",
+    "2R 14:1",
+    "2R 14:2",
+    "2R 14:8",
+    "2R 14:9",
+    "2R 14:11",
+    "2R 14:13",
+    "2R 14:15",
+    "2R 14:17",
+    "2R 14:18",
+    "2R 14:21",
+    "2R 14:23",
+    "2R 15:1",
+    "2R 15:2",
+    "2R 15:3"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Jehozabad_1",
+   "nombre": "Jozabad",
+   "nombre_rv1909": "Jozabad",
+   "rol": "siervo que mata a Joás",
+   "formas_rv1909": [
+    "Jozabad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 12:21",
+   "refs": [
+    "2R 12:21"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Jozacar_1",
+   "nombre": "Josacar",
+   "nombre_rv1909": "Josachâr",
+   "rol": "siervo que mata a Joás",
+   "formas_rv1909": [
+    "Josachâr"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 12:21",
+   "refs": [
+    "2R 12:21"
+   ],
+   "nota": "En la Reina-Valera 1909: Josachâr."
+  },
+  {
+   "id": "Shimeath_1",
+   "nombre": "Simeat",
+   "nombre_rv1909": "Simaath",
+   "rol": "",
+   "formas_rv1909": [
+    "Simaath"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 12:21",
+   "refs": [
+    "2R 12:21"
+   ],
+   "nota": "En la Reina-Valera 1909: Simaath. Padre o madre de Josacar (2 R 12:21). 2 R 12:21 dice «hijo de Simaath» y «hijo de Somer» sin decir si son el padre o la madre; BibleData los hace madres (por 2 Cr 24:26, libro aún no cargado, que las llama amonita y moabita): inferido."
+  },
+  {
+   "id": "Shomer_1",
+   "nombre": "Somer",
+   "nombre_rv1909": "Somer",
+   "rol": "",
+   "formas_rv1909": [
+    "Somer"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 12:21",
+   "refs": [
+    "2R 12:21"
+   ],
+   "nota": "Padre o madre de Jozabad (2 R 12:21). 2 R 12:21 dice «hijo de Simaath» y «hijo de Somer» sin decir si son el padre o la madre; BibleData los hace madres (por 2 Cr 24:26, libro aún no cargado, que las llama amonita y moabita): inferido."
+  },
+  {
+   "id": "Ben-hadad_2",
+   "nombre": "Ben-adad",
+   "nombre_rv1909": "Ben-adad",
+   "rol": "",
+   "formas_rv1909": [
+    "Ben-adad"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 13:3",
+   "refs": [
+    "2R 13:3",
+    "2R 13:24",
+    "2R 13:25"
+   ],
+   "nota": "Hijo de Hazael, rey de Siria (2 R 13:3, 24). Distinto del Ben-adad de 1 R 15 y 20 y de 2 R 6–8."
+  },
+  {
+   "id": "Joash_4",
+   "nombre": "Joás",
+   "nombre_rv1909": "Joas",
+   "rol": "hijo de Joacaz, rey de Israel",
+   "formas_rv1909": [
+    "Joas"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 13:9",
+   "refs": [
+    "2R 13:9",
+    "2R 13:10",
+    "2R 13:12",
+    "2R 13:13",
+    "2R 13:14",
+    "2R 13:16",
+    "2R 13:18",
+    "2R 13:25",
+    "2R 14:1",
+    "2R 14:8",
+    "2R 14:9",
+    "2R 14:11",
+    "2R 14:13",
+    "2R 14:15",
+    "2R 14:16",
+    "2R 14:17",
+    "2R 14:23",
+    "2R 14:27"
+   ],
+   "nota": "En la Reina-Valera 1909: Joas. Hijo de Joacaz, rey de Israel (2 R 13:9-10). Distinto de Joás hijo de Ocozías, rey de Judá."
+  },
+  {
+   "id": "Jeroboam_2",
+   "nombre": "Jeroboam",
+   "nombre_rv1909": "Jeroboam",
+   "rol": "hijo de Joás, rey de Israel",
+   "formas_rv1909": [
+    "Jeroboam"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 13:13",
+   "refs": [
+    "2R 13:13",
+    "2R 14:16",
+    "2R 14:23",
+    "2R 14:27",
+    "2R 14:28",
+    "2R 14:29",
+    "2R 15:1",
+    "2R 15:8"
+   ],
+   "nota": "Hijo de Joás, rey de Israel cuarenta y un años (2 R 14:23). Distinto de Jeroboam hijo de Nabat."
+  },
+  {
+   "id": "Jehoaddin_1",
+   "nombre": "Joadán",
+   "nombre_rv1909": "Joaddan",
+   "rol": "",
+   "formas_rv1909": [
+    "Joaddan"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 14:2",
+   "refs": [
+    "2R 14:2"
+   ],
+   "nota": "En la Reina-Valera 1909: Joaddan."
+  },
+  {
+   "id": "Azariah_3",
+   "nombre": "Azarías",
+   "nombre_rv1909": "Azarías",
+   "rol": "hijo de Amasías, rey de Judá",
+   "formas_rv1909": [
+    "Azarías",
+    "Uzzía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 14:21",
+   "refs": [
+    "2R 14:21",
+    "2R 15:1",
+    "2R 15:2",
+    "2R 15:6",
+    "2R 15:7",
+    "2R 15:8",
+    "2R 15:13",
+    "2R 15:17",
+    "2R 15:23",
+    "2R 15:27",
+    "2R 15:28",
+    "2R 15:30",
+    "2R 15:32",
+    "2R 15:33",
+    "2R 15:34"
+   ],
+   "nota": "Hijo de Amasías, rey de Judá (2 R 14:21; 15:1); leproso hasta su muerte (15:5). 2 R 15:13, 30, 32 y 34 lo llaman «Uzzía» (ver identidad).",
+   "identidad": {
+    "certeza": "inferido",
+    "refs": [
+     "2R 15:13",
+     "2R 15:30",
+     "2R 15:32",
+     "2R 15:34"
+    ],
+    "nombres_rv1909": [
+     "Azarías",
+     "Uzzía"
+    ],
+    "fuente": "bibledata",
+    "nota": "BibleData identifica a «Uzzía» (2 R 15:13, 30, 32, 34) con Azarías hijo de Amasías (14:21; 15:1-7). 2 Reyes no dice que sean el mismo; lo sugiere que ambos se dan como padre de Jotam (15:7 «Jotham su hijo»; 15:32 «Jotham hijo de Uzzía») y que 15:13 («año treinta y nueve de Uzzía») y 15:17 («año treinta y nueve de Azarías») fechan reinados seguidos. Se sigue a la fuente: inferido."
+   }
+  },
+  {
+   "id": "Amittai_1",
+   "nombre": "Amitai",
+   "nombre_rv1909": "Amittai",
+   "rol": "",
+   "formas_rv1909": [
+    "Amittai"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 14:25",
+   "refs": [
+    "2R 14:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Amittai."
+  },
+  {
+   "id": "Jonah_1",
+   "nombre": "Jonás",
+   "nombre_rv1909": "Jonás",
+   "rol": "profeta de Gat-hefer",
+   "formas_rv1909": [
+    "Jonás"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 14:25",
+   "refs": [
+    "2R 14:25"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zechariah_1",
+   "nombre": "Zacarías",
+   "nombre_rv1909": "Zachârías",
+   "rol": "hijo de Jeroboam, rey de Israel",
+   "formas_rv1909": [
+    "Zachârías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 14:29",
+   "refs": [
+    "2R 14:29",
+    "2R 15:8",
+    "2R 15:11"
+   ],
+   "nota": "En la Reina-Valera 1909: Zachârías. Hijo de Jeroboam, rey de Israel seis meses (2 R 15:8). Distinto de Zacarías padre de Abi (18:2)."
+  },
+  {
+   "id": "Jecoliah_1",
+   "nombre": "Jecolías",
+   "nombre_rv1909": "Jecolía",
+   "rol": "",
+   "formas_rv1909": [
+    "Jecolía"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 15:2",
+   "refs": [
+    "2R 15:2"
+   ],
+   "nota": "En la Reina-Valera 1909: Jecolía."
+  },
+  {
+   "id": "Jotham_2",
+   "nombre": "Jotam",
+   "nombre_rv1909": "Jotham",
+   "rol": "hijo de Azarías (Uzías), rey de Judá",
+   "formas_rv1909": [
+    "Jotham"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:5",
+   "refs": [
+    "2R 15:5",
+    "2R 15:7",
+    "2R 15:30",
+    "2R 15:32",
+    "2R 15:33",
+    "2R 15:36",
+    "2R 15:38",
+    "2R 16:1"
+   ],
+   "nota": "En la Reina-Valera 1909: Jotham."
+  },
+  {
+   "id": "Jabesh_1",
+   "nombre": "Jabes",
+   "nombre_rv1909": "Jabes",
+   "rol": "",
+   "formas_rv1909": [
+    "Jabes"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:10",
+   "refs": [
+    "2R 15:10",
+    "2R 15:13",
+    "2R 15:14"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Shallum_1",
+   "nombre": "Salum",
+   "nombre_rv1909": "Sallum",
+   "rol": "rey de Israel un mes",
+   "formas_rv1909": [
+    "Sallum"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:10",
+   "refs": [
+    "2R 15:10",
+    "2R 15:13",
+    "2R 15:14",
+    "2R 15:15"
+   ],
+   "nota": "En la Reina-Valera 1909: Sallum. Hijo de Jabes; reina un mes en Samaria (2 R 15:13). Distinto de Salum marido de Hulda."
+  },
+  {
+   "id": "Gadi_1",
+   "nombre": "Gadi",
+   "nombre_rv1909": "Gadi",
+   "rol": "",
+   "formas_rv1909": [
+    "Gadi"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:14",
+   "refs": [
+    "2R 15:14",
+    "2R 15:17"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Menachem_1",
+   "nombre": "Manahem",
+   "nombre_rv1909": "Manahem",
+   "rol": "rey de Israel",
+   "formas_rv1909": [
+    "Manahem"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:14",
+   "refs": [
+    "2R 15:14",
+    "2R 15:16",
+    "2R 15:17",
+    "2R 15:19",
+    "2R 15:20",
+    "2R 15:21",
+    "2R 15:22",
+    "2R 15:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Pul_1",
+   "nombre": "Pul",
+   "nombre_rv1909": "Phul",
+   "rol": "rey de Asiria",
+   "formas_rv1909": [
+    "Phul"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:19",
+   "refs": [
+    "2R 15:19",
+    "2R 15:20"
+   ],
+   "nota": "En la Reina-Valera 1909: Phul."
+  },
+  {
+   "id": "Pekahiah_1",
+   "nombre": "Pekaía",
+   "nombre_rv1909": "Pekaía",
+   "rol": "rey de Israel",
+   "formas_rv1909": [
+    "Pekaía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:22",
+   "refs": [
+    "2R 15:22",
+    "2R 15:23",
+    "2R 15:26"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Argob_1",
+   "nombre": "Argob",
+   "nombre_rv1909": "Argob",
+   "rol": "conjurado con Peka",
+   "formas_rv1909": [
+    "Argob"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:25",
+   "refs": [
+    "2R 15:25"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Arieh_1",
+   "nombre": "Arie",
+   "nombre_rv1909": "Ariph",
+   "rol": "conjurado con Peka",
+   "formas_rv1909": [
+    "Ariph"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:25",
+   "refs": [
+    "2R 15:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Ariph."
+  },
+  {
+   "id": "Pekah_1",
+   "nombre": "Peka",
+   "nombre_rv1909": "Peka",
+   "rol": "capitán de Pekaía; rey de Israel",
+   "formas_rv1909": [
+    "Peka"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:25",
+   "refs": [
+    "2R 15:25",
+    "2R 15:27",
+    "2R 15:29",
+    "2R 15:30",
+    "2R 15:31",
+    "2R 15:32",
+    "2R 15:37",
+    "2R 16:1",
+    "2R 16:5",
+    "2R 16:7"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Remaliah_1",
+   "nombre": "Remalías",
+   "nombre_rv1909": "Remalías",
+   "rol": "",
+   "formas_rv1909": [
+    "Remalías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:25",
+   "refs": [
+    "2R 15:25",
+    "2R 15:27",
+    "2R 15:30",
+    "2R 15:32",
+    "2R 15:37",
+    "2R 16:1",
+    "2R 16:5"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Tiglath-pileser_1",
+   "nombre": "Tiglat-pileser",
+   "nombre_rv1909": "Tiglath-pileser",
+   "rol": "rey de Asiria",
+   "formas_rv1909": [
+    "Tiglath-pileser"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:29",
+   "refs": [
+    "2R 15:29",
+    "2R 16:7",
+    "2R 16:8",
+    "2R 16:9",
+    "2R 16:10",
+    "2R 16:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Tiglath-pileser."
+  },
+  {
+   "id": "Elah_3",
+   "nombre": "Ela",
+   "nombre_rv1909": "Ela",
+   "rol": "",
+   "formas_rv1909": [
+    "Ela"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:30",
+   "refs": [
+    "2R 15:30",
+    "2R 17:1",
+    "2R 18:1",
+    "2R 18:9"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Hoshea_1",
+   "nombre": "Oseas",
+   "nombre_rv1909": "Oseas",
+   "rol": "hijo de Ela, último rey de Israel",
+   "formas_rv1909": [
+    "Oseas"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:30",
+   "refs": [
+    "2R 15:30",
+    "2R 17:1",
+    "2R 17:3",
+    "2R 17:4",
+    "2R 17:6",
+    "2R 18:1",
+    "2R 18:9",
+    "2R 18:10"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Jerusha_1",
+   "nombre": "Jerusa",
+   "nombre_rv1909": "Jerusa",
+   "rol": "",
+   "formas_rv1909": [
+    "Jerusa"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 15:33",
+   "refs": [
+    "2R 15:33"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zadok_2",
+   "nombre": "Sadoc",
+   "nombre_rv1909": "Sadoc",
+   "rol": "",
+   "formas_rv1909": [
+    "Sadoc"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:33",
+   "refs": [
+    "2R 15:33"
+   ],
+   "nota": "Padre de Jerusa, madre de Jotam (2 R 15:33). Distinto del sacerdote Sadoc de David."
+  },
+  {
+   "id": "Rezin_1",
+   "nombre": "Rezín",
+   "nombre_rv1909": "Resín",
+   "rol": "rey de Siria",
+   "formas_rv1909": [
+    "Resín"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:37",
+   "refs": [
+    "2R 15:37",
+    "2R 16:5",
+    "2R 16:6",
+    "2R 16:7",
+    "2R 16:9"
+   ],
+   "nota": "En la Reina-Valera 1909: Resín."
+  },
+  {
+   "id": "Ahaz_1",
+   "nombre": "Acaz",
+   "nombre_rv1909": "Achâz",
+   "rol": "hijo de Jotam, rey de Judá",
+   "formas_rv1909": [
+    "Achâz"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 15:38",
+   "refs": [
+    "2R 15:38",
+    "2R 16:1",
+    "2R 16:2",
+    "2R 16:5",
+    "2R 16:7",
+    "2R 16:8",
+    "2R 16:10",
+    "2R 16:11",
+    "2R 16:15",
+    "2R 16:16",
+    "2R 16:17",
+    "2R 16:19",
+    "2R 16:20",
+    "2R 17:1",
+    "2R 18:1",
+    "2R 18:2",
+    "2R 20:11",
+    "2R 23:12"
+   ],
+   "nota": "En la Reina-Valera 1909: Achâz."
+  },
+  {
+   "id": "Urijah_1",
+   "nombre": "Urías",
+   "nombre_rv1909": "Urías",
+   "rol": "sacerdote que edifica el altar según el diseño de Damasco",
+   "formas_rv1909": [
+    "Urías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 16:10",
+   "refs": [
+    "2R 16:10",
+    "2R 16:11",
+    "2R 16:15",
+    "2R 16:16"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Hezekiah_1",
+   "nombre": "Ezequías",
+   "nombre_rv1909": "Ezechîas",
+   "rol": "hijo de Acaz, rey de Judá",
+   "formas_rv1909": [
+    "Ezechîas"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 16:20",
+   "refs": [
+    "2R 16:20",
+    "2R 18:1",
+    "2R 18:2",
+    "2R 18:9",
+    "2R 18:10",
+    "2R 18:13",
+    "2R 18:14",
+    "2R 18:15",
+    "2R 18:16",
+    "2R 18:17",
+    "2R 18:19",
+    "2R 18:22",
+    "2R 18:29",
+    "2R 18:30",
+    "2R 18:31",
+    "2R 18:32",
+    "2R 18:37",
+    "2R 19:1",
+    "2R 19:3",
+    "2R 19:5",
+    "2R 19:9",
+    "2R 19:10",
+    "2R 19:14",
+    "2R 19:15",
+    "2R 19:20",
+    "2R 20:1",
+    "2R 20:3",
+    "2R 20:5",
+    "2R 20:8",
+    "2R 20:10",
+    "2R 20:12",
+    "2R 20:13",
+    "2R 20:14",
+    "2R 20:15",
+    "2R 20:16",
+    "2R 20:19",
+    "2R 20:20",
+    "2R 20:21",
+    "2R 21:1",
+    "2R 21:3"
+   ],
+   "nota": "En la Reina-Valera 1909: Ezechîas."
+  },
+  {
+   "id": "Shalmaneser_1",
+   "nombre": "Salmanasar",
+   "nombre_rv1909": "Salmanasar",
+   "rol": "rey de los asirios",
+   "formas_rv1909": [
+    "Salmanasar"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 17:3",
+   "refs": [
+    "2R 17:3",
+    "2R 17:4",
+    "2R 17:5",
+    "2R 17:6",
+    "2R 17:24",
+    "2R 17:26",
+    "2R 17:27",
+    "2R 18:7",
+    "2R 18:9",
+    "2R 18:11"
+   ],
+   "nota": "«Salmanasar rey de los Asirios» (2 R 17:3; 18:9). BibleData le atribuye también «el rey de Asiria» sin nombre de 17:4-27; el texto solo da su nombre en 17:3 y 18:9."
+  },
+  {
+   "id": "So_1",
+   "nombre": "So",
+   "nombre_rv1909": "So",
+   "rol": "rey de Egipto",
+   "formas_rv1909": [
+    "So"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 17:4",
+   "refs": [
+    "2R 17:4"
+   ],
+   "nota": "«So, rey de Egipto» (2 R 17:4), al que Oseas envía embajadores. 2 R 18:21: Rabsaces habla de «Faraón rey de Egipto» en tiempos de Ezequías; BibleData lo identifica con So (17:4, en tiempos de Oseas). El texto no lo dice: no se marca como So."
+  },
+  {
+   "id": "Abi_1",
+   "nombre": "Abi",
+   "nombre_rv1909": "Abi",
+   "rol": "",
+   "formas_rv1909": [
+    "Abi"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 18:2",
+   "refs": [
+    "2R 18:2"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Zechariah_2",
+   "nombre": "Zacarías",
+   "nombre_rv1909": "Zachârías",
+   "rol": "",
+   "formas_rv1909": [
+    "Zachârías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:2",
+   "refs": [
+    "2R 18:2"
+   ],
+   "nota": "En la Reina-Valera 1909: Zachârías. Padre de Abi, madre de Ezequías (2 R 18:2). Distinto del rey Zacarías."
+  },
+  {
+   "id": "Sennacherib_1",
+   "nombre": "Senaquerib",
+   "nombre_rv1909": "Sennachêrib",
+   "rol": "rey de Asiria",
+   "formas_rv1909": [
+    "Sennachêrib"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:13",
+   "refs": [
+    "2R 18:13",
+    "2R 18:14",
+    "2R 18:16",
+    "2R 18:17",
+    "2R 18:19",
+    "2R 18:23",
+    "2R 18:28",
+    "2R 18:30",
+    "2R 18:31",
+    "2R 18:33",
+    "2R 19:4",
+    "2R 19:6",
+    "2R 19:8",
+    "2R 19:10",
+    "2R 19:16",
+    "2R 19:20",
+    "2R 19:32",
+    "2R 19:36",
+    "2R 19:37",
+    "2R 20:6"
+   ],
+   "nota": "En la Reina-Valera 1909: Sennachêrib."
+  },
+  {
+   "id": "Rab-saris_1",
+   "nombre": "Rabsaris",
+   "nombre_rv1909": "Rabsaris",
+   "rol": "enviado del rey de Asiria",
+   "formas_rv1909": [
+    "Rabsaris"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:17",
+   "refs": [
+    "2R 18:17"
+   ],
+   "nota": "Enviado del rey de Asiria con Tartán y Rabsaces (2 R 18:17). En la RV1909 aparecen como nombres propios («á Thartán y á Rabsaris y á Rabsaces», 2 R 18:17). Fuente externa: los diccionarios bíblicos de dominio público (Easton, Smith) los explican como títulos de cargos asirios, no como nombres. Se registran como los da el texto, igual que «Faraón»."
+  },
+  {
+   "id": "Rabshakeh_1",
+   "nombre": "Rabsaces",
+   "nombre_rv1909": "Rabsaces",
+   "rol": "enviado del rey de Asiria",
+   "formas_rv1909": [
+    "Rabsaces"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:17",
+   "refs": [
+    "2R 18:17",
+    "2R 18:19",
+    "2R 18:26",
+    "2R 18:27",
+    "2R 18:28",
+    "2R 18:37",
+    "2R 19:4",
+    "2R 19:8"
+   ],
+   "nota": "Enviado del rey de Asiria que habla al pueblo desde el muro (2 R 18:17-37; 19:4, 8). En la RV1909 aparecen como nombres propios («á Thartán y á Rabsaris y á Rabsaces», 2 R 18:17). Fuente externa: los diccionarios bíblicos de dominio público (Easton, Smith) los explican como títulos de cargos asirios, no como nombres. Se registran como los da el texto, igual que «Faraón»."
+  },
+  {
+   "id": "Tartan_1",
+   "nombre": "Tartán",
+   "nombre_rv1909": "Thartán",
+   "rol": "enviado del rey de Asiria",
+   "formas_rv1909": [
+    "Thartán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:17",
+   "refs": [
+    "2R 18:17"
+   ],
+   "nota": "En la Reina-Valera 1909: Thartán. Enviado del rey de Asiria con Rabsaris y Rabsaces (2 R 18:17). En la RV1909 aparecen como nombres propios («á Thartán y á Rabsaris y á Rabsaces», 2 R 18:17). Fuente externa: los diccionarios bíblicos de dominio público (Easton, Smith) los explican como títulos de cargos asirios, no como nombres. Se registran como los da el texto, igual que «Faraón»."
+  },
+  {
+   "id": "Asaph_1",
+   "nombre": "Asaf",
+   "nombre_rv1909": "Asaph",
+   "rol": "",
+   "formas_rv1909": [
+    "Asaph"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:18",
+   "refs": [
+    "2R 18:18",
+    "2R 18:37"
+   ],
+   "nota": "En la Reina-Valera 1909: Asaph."
+  },
+  {
+   "id": "Eliakim_1",
+   "nombre": "Eliaquim",
+   "nombre_rv1909": "Eliacim",
+   "rol": "mayordomo de Ezequías",
+   "formas_rv1909": [
+    "Eliacim"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:18",
+   "refs": [
+    "2R 18:18",
+    "2R 18:26",
+    "2R 18:37",
+    "2R 19:2"
+   ],
+   "nota": "En la Reina-Valera 1909: Eliacim. Hijo de Hilcías, mayordomo de Ezequías (2 R 18:18). Distinto de Eliaquim hijo de Josías (Joacim)."
+  },
+  {
+   "id": "Hilkiah_1",
+   "nombre": "Hilcías",
+   "nombre_rv1909": "Hilcías",
+   "rol": "",
+   "formas_rv1909": [
+    "Hilcías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:18",
+   "refs": [
+    "2R 18:18",
+    "2R 18:26",
+    "2R 18:37"
+   ],
+   "nota": "Padre de Eliaquim el mayordomo (2 R 18:18). Distinto de Hilcías sumo sacerdote (22:4)."
+  },
+  {
+   "id": "Joah_1",
+   "nombre": "Joa",
+   "nombre_rv1909": "Joah",
+   "rol": "canciller de Ezequías",
+   "formas_rv1909": [
+    "Joah"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:18",
+   "refs": [
+    "2R 18:18",
+    "2R 18:26",
+    "2R 18:37"
+   ],
+   "nota": "En la Reina-Valera 1909: Joah."
+  },
+  {
+   "id": "Shebnah_1",
+   "nombre": "Sebna",
+   "nombre_rv1909": "Sebna",
+   "rol": "escriba de Ezequías",
+   "formas_rv1909": [
+    "Sebna"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 18:18",
+   "refs": [
+    "2R 18:18",
+    "2R 18:26",
+    "2R 18:37",
+    "2R 19:2"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Amoz_1",
+   "nombre": "Amoz",
+   "nombre_rv1909": "Amós",
+   "rol": "",
+   "formas_rv1909": [
+    "Amós"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 19:2",
+   "refs": [
+    "2R 19:2",
+    "2R 19:20",
+    "2R 20:1"
+   ],
+   "nota": "En la Reina-Valera 1909: Amós. Padre del profeta Isaías (2 R 19:2). La RV1909 escribe «Amós»; BibleData lo distingue del profeta Amós."
+  },
+  {
+   "id": "Isaiah_1",
+   "nombre": "Isaías",
+   "nombre_rv1909": "Isaías",
+   "rol": "profeta",
+   "formas_rv1909": [
+    "Isaías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 19:2",
+   "refs": [
+    "2R 19:2",
+    "2R 19:5",
+    "2R 19:6",
+    "2R 19:20",
+    "2R 20:1",
+    "2R 20:4",
+    "2R 20:7",
+    "2R 20:8",
+    "2R 20:9",
+    "2R 20:11",
+    "2R 20:14",
+    "2R 20:16",
+    "2R 20:19"
+   ],
+   "nota": "Profeta, hijo de Amoz (2 R 19:2). La RV1909 escribe «Amós» al padre; no es el profeta Amós (BibleData los distingue)."
+  },
+  {
+   "id": "Tirhakah_1",
+   "nombre": "Tirhaca",
+   "nombre_rv1909": "Thiraca",
+   "rol": "rey de Etiopía",
+   "formas_rv1909": [
+    "Thiraca"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 19:9",
+   "refs": [
+    "2R 19:9"
+   ],
+   "nota": "En la Reina-Valera 1909: Thiraca."
+  },
+  {
+   "id": "Adrammelech_1",
+   "nombre": "Adramelec",
+   "nombre_rv1909": "Adramelech",
+   "rol": "",
+   "formas_rv1909": [
+    "Adramelech"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 19:37",
+   "refs": [
+    "2R 19:37"
+   ],
+   "nota": "En la Reina-Valera 1909: Adramelech."
+  },
+  {
+   "id": "Esarhaddon_1",
+   "nombre": "Esar-hadón",
+   "nombre_rv1909": "Esar-hadón",
+   "rol": "hijo de Senaquerib; rey de Asiria",
+   "formas_rv1909": [
+    "Esar-hadón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 19:37",
+   "refs": [
+    "2R 19:37"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Sharezer_1",
+   "nombre": "Sarezer",
+   "nombre_rv1909": "Saresar",
+   "rol": "",
+   "formas_rv1909": [
+    "Saresar"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 19:37",
+   "refs": [
+    "2R 19:37"
+   ],
+   "nota": "En la Reina-Valera 1909: Saresar."
+  },
+  {
+   "id": "Baladan_1",
+   "nombre": "Baladán",
+   "nombre_rv1909": "Baladán",
+   "rol": "",
+   "formas_rv1909": [
+    "Baladán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 20:12",
+   "refs": [
+    "2R 20:12"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Berodach-baladan_1",
+   "nombre": "Berodac-baladán",
+   "nombre_rv1909": "Berodach-baladán",
+   "rol": "rey de Babilonia",
+   "formas_rv1909": [
+    "Berodach-baladán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 20:12",
+   "refs": [
+    "2R 20:12",
+    "2R 20:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Berodach-baladán."
+  },
+  {
+   "id": "Manasseh_3",
+   "nombre": "Manasés",
+   "nombre_rv1909": "Manasés",
+   "rol": "hijo de Ezequías, rey de Judá",
+   "formas_rv1909": [
+    "Manasés"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 20:21",
+   "refs": [
+    "2R 20:21",
+    "2R 21:1",
+    "2R 21:9",
+    "2R 21:11",
+    "2R 21:16",
+    "2R 21:17",
+    "2R 21:18",
+    "2R 21:19",
+    "2R 21:20",
+    "2R 23:12",
+    "2R 23:26",
+    "2R 24:3"
+   ],
+   "nota": "Hijo de Ezequías, rey de Judá (2 R 20:21; 21:1). Distinto de Manasés hijo de José."
+  },
+  {
+   "id": "Hephzibah_1",
+   "nombre": "Hepsiba",
+   "nombre_rv1909": "Hepsiba",
+   "rol": "",
+   "formas_rv1909": [
+    "Hepsiba"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 21:1",
+   "refs": [
+    "2R 21:1"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Amon_2",
+   "nombre": "Amón",
+   "nombre_rv1909": "Amón",
+   "rol": "hijo de Manasés, rey de Judá",
+   "formas_rv1909": [
+    "Amón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 21:18",
+   "refs": [
+    "2R 21:18",
+    "2R 21:19",
+    "2R 21:23",
+    "2R 21:24",
+    "2R 21:25",
+    "2R 22:1"
+   ],
+   "nota": "Hijo de Manasés, rey de Judá (2 R 21:18-19). Distinto de Amón gobernador de la ciudad (1 R 22:26)."
+  },
+  {
+   "id": "Uzza_1",
+   "nombre": "Uza",
+   "nombre_rv1909": "Uzza",
+   "rol": "dueño del huerto donde sepultan a Manasés",
+   "formas_rv1909": [
+    "Uzza"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 21:18",
+   "refs": [
+    "2R 21:18",
+    "2R 21:26"
+   ],
+   "nota": "En la Reina-Valera 1909: Uzza. Dueño del huerto donde se sepulta a Manasés y a Amón (2 R 21:18, 26). Distinto de Uza de 2 S 6."
+  },
+  {
+   "id": "Haruz_1",
+   "nombre": "Haruz",
+   "nombre_rv1909": "Harus",
+   "rol": "",
+   "formas_rv1909": [
+    "Harus"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 21:19",
+   "refs": [
+    "2R 21:19"
+   ],
+   "nota": "En la Reina-Valera 1909: Harus."
+  },
+  {
+   "id": "Meshullemeth_1",
+   "nombre": "Mesulemet",
+   "nombre_rv1909": "Mesalemeth",
+   "rol": "",
+   "formas_rv1909": [
+    "Mesalemeth"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 21:19",
+   "refs": [
+    "2R 21:19"
+   ],
+   "nota": "En la Reina-Valera 1909: Mesalemeth."
+  },
+  {
+   "id": "Adaiah_1",
+   "nombre": "Adaía",
+   "nombre_rv1909": "Adaía",
+   "rol": "",
+   "formas_rv1909": [
+    "Adaía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:1",
+   "refs": [
+    "2R 22:1"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Jedidah_1",
+   "nombre": "Jedida",
+   "nombre_rv1909": "Idida",
+   "rol": "",
+   "formas_rv1909": [
+    "Idida"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 22:1",
+   "refs": [
+    "2R 22:1"
+   ],
+   "nota": "En la Reina-Valera 1909: Idida."
+  },
+  {
+   "id": "Azaliah_1",
+   "nombre": "Azalía",
+   "nombre_rv1909": "Azalía",
+   "rol": "",
+   "formas_rv1909": [
+    "Azalía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:3",
+   "refs": [
+    "2R 22:3"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Meshullam_1",
+   "nombre": "Mesulam",
+   "nombre_rv1909": "Mesullam",
+   "rol": "",
+   "formas_rv1909": [
+    "Mesullam"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:3",
+   "refs": [
+    "2R 22:3"
+   ],
+   "nota": "En la Reina-Valera 1909: Mesullam."
+  },
+  {
+   "id": "Shaphan_1",
+   "nombre": "Safán",
+   "nombre_rv1909": "Saphán",
+   "rol": "escriba de Josías",
+   "formas_rv1909": [
+    "Saphán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:3",
+   "refs": [
+    "2R 22:3",
+    "2R 22:8",
+    "2R 22:9",
+    "2R 22:10",
+    "2R 22:12",
+    "2R 22:14",
+    "2R 25:22"
+   ],
+   "nota": "En la Reina-Valera 1909: Saphán."
+  },
+  {
+   "id": "Hilkiah_2",
+   "nombre": "Hilcías",
+   "nombre_rv1909": "Hilcías",
+   "rol": "sumo sacerdote",
+   "formas_rv1909": [
+    "Hilcías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:4",
+   "refs": [
+    "2R 22:4",
+    "2R 22:8",
+    "2R 22:10",
+    "2R 22:12",
+    "2R 22:14",
+    "2R 23:4",
+    "2R 23:24"
+   ],
+   "nota": "Sumo sacerdote en tiempos de Josías; halla el libro de la ley (2 R 22:8). Distinto del padre de Eliaquim."
+  },
+  {
+   "id": "Achbor_2",
+   "nombre": "Acbor",
+   "nombre_rv1909": "Achbor",
+   "rol": "",
+   "formas_rv1909": [
+    "Achbor"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:12",
+   "refs": [
+    "2R 22:12",
+    "2R 22:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Achbor."
+  },
+  {
+   "id": "Ahikam_1",
+   "nombre": "Ahicam",
+   "nombre_rv1909": "Ahicam",
+   "rol": "",
+   "formas_rv1909": [
+    "Ahicam"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:12",
+   "refs": [
+    "2R 22:12",
+    "2R 22:14",
+    "2R 25:22"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Asaiah_1",
+   "nombre": "Asaías",
+   "nombre_rv1909": "Asaía",
+   "rol": "siervo del rey Josías",
+   "formas_rv1909": [
+    "Asaía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:12",
+   "refs": [
+    "2R 22:12",
+    "2R 22:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Asaía."
+  },
+  {
+   "id": "Micaiah_2",
+   "nombre": "Micaías",
+   "nombre_rv1909": "Michâía",
+   "rol": "",
+   "formas_rv1909": [
+    "Michâía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:12",
+   "refs": [
+    "2R 22:12"
+   ],
+   "nota": "En la Reina-Valera 1909: Michâía. Padre de Acbor (2 R 22:12). Distinto del profeta Micaías hijo de Imla (1 R 22)."
+  },
+  {
+   "id": "Harhas_1",
+   "nombre": "Harhas",
+   "nombre_rv1909": "Araas",
+   "rol": "",
+   "formas_rv1909": [
+    "Araas"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:14",
+   "refs": [
+    "2R 22:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Araas."
+  },
+  {
+   "id": "Huldah_1",
+   "nombre": "Hulda",
+   "nombre_rv1909": "Hulda",
+   "rol": "profetisa",
+   "formas_rv1909": [
+    "Hulda"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 22:14",
+   "refs": [
+    "2R 22:14"
+   ],
+   "nota": "Profetisa, mujer de Salum (2 R 22:14)."
+  },
+  {
+   "id": "Shallum_2",
+   "nombre": "Salum",
+   "nombre_rv1909": "Sallum",
+   "rol": "guarda de las vestiduras",
+   "formas_rv1909": [
+    "Sallum"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:14",
+   "refs": [
+    "2R 22:14"
+   ],
+   "nota": "En la Reina-Valera 1909: Sallum. Marido de Hulda, «guarda de las vestiduras» (2 R 22:14). Distinto del rey Salum."
+  },
+  {
+   "id": "Tikvah_1",
+   "nombre": "Ticva",
+   "nombre_rv1909": "Ticva",
+   "rol": "",
+   "formas_rv1909": [
+    "Ticva"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 22:14",
+   "refs": [
+    "2R 22:14"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Joshua_3",
+   "nombre": "Josué",
+   "nombre_rv1909": "Josué",
+   "rol": "gobernador de la ciudad",
+   "formas_rv1909": [
+    "Josué"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:8",
+   "refs": [
+    "2R 23:8"
+   ],
+   "nota": "«Josué, gobernador de la ciudad» (2 R 23:8). Distinto de Josué hijo de Nun."
+  },
+  {
+   "id": "Nathan-melech_1",
+   "nombre": "Natán-melec",
+   "nombre_rv1909": "Nathan-melech",
+   "rol": "eunuco",
+   "formas_rv1909": [
+    "Nathan-melech"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:11",
+   "refs": [
+    "2R 23:11"
+   ],
+   "nota": "En la Reina-Valera 1909: Nathan-melech."
+  },
+  {
+   "id": "Pharaoh Neco_1",
+   "nombre": "Faraón Necao",
+   "nombre_rv1909": "Faraón Nechâo",
+   "rol": "rey de Egipto",
+   "formas_rv1909": [
+    "Faraón Nechâo",
+    "Faraón"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:29",
+   "refs": [
+    "2R 23:29",
+    "2R 23:33",
+    "2R 23:34",
+    "2R 23:35",
+    "2R 24:7"
+   ],
+   "nota": "En la Reina-Valera 1909: Faraón Nechâo/Faraón. «Faraón Nechâo rey de Egipto» (2 R 23:29); mata a Josías en Megido y pone por rey a Eliaquim (23:34)."
+  },
+  {
+   "id": "Jehoahaz_2",
+   "nombre": "Joacaz",
+   "nombre_rv1909": "Joachâz",
+   "rol": "hijo de Josías, rey de Judá",
+   "formas_rv1909": [
+    "Joachâz"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:30",
+   "refs": [
+    "2R 23:30",
+    "2R 23:31",
+    "2R 23:34"
+   ],
+   "nota": "En la Reina-Valera 1909: Joachâz. Hijo de Josías, rey de Judá tres meses (2 R 23:30-31). Distinto de Joacaz hijo de Jehú, rey de Israel."
+  },
+  {
+   "id": "Hamutal_1",
+   "nombre": "Hamutal",
+   "nombre_rv1909": "Amutal",
+   "rol": "",
+   "formas_rv1909": [
+    "Amutal"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 23:31",
+   "refs": [
+    "2R 23:31",
+    "2R 24:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Amutal."
+  },
+  {
+   "id": "Jeremiah_1",
+   "nombre": "Jeremías",
+   "nombre_rv1909": "Jeremías",
+   "rol": "",
+   "formas_rv1909": [
+    "Jeremías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:31",
+   "refs": [
+    "2R 23:31",
+    "2R 24:18"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Eliakim_2",
+   "nombre": "Eliaquim",
+   "nombre_rv1909": "Eliacim",
+   "rol": "hijo de Josías, rey de Judá (Joacim)",
+   "formas_rv1909": [
+    "Eliacim",
+    "Joacim"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:34",
+   "refs": [
+    "2R 23:34",
+    "2R 23:35",
+    "2R 23:36",
+    "2R 24:1",
+    "2R 24:5",
+    "2R 24:6",
+    "2R 24:8",
+    "2R 24:19"
+   ],
+   "nota": "En la Reina-Valera 1909: Eliacim/Joacim. Hijo de Josías; Faraón Necao le cambia el nombre por Joacim (2 R 23:34). Distinto del mayordomo de Ezequías.",
+   "identidad": {
+    "certeza": "texto",
+    "refs": [
+     "2R 23:34"
+    ],
+    "nombres_rv1909": [
+     "Eliacim",
+     "Joacim"
+    ],
+    "fuente": "rv1909",
+    "nota": "2 R 23:34: Faraón Nechâo «puso por rey á Eliacim hijo de Josías ... y mudóle el nombre en el de Joacim»."
+   }
+  },
+  {
+   "id": "Pedaiah_1",
+   "nombre": "Pedaías",
+   "nombre_rv1909": "Pedaia",
+   "rol": "",
+   "formas_rv1909": [
+    "Pedaia"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 23:36",
+   "refs": [
+    "2R 23:36"
+   ],
+   "nota": "En la Reina-Valera 1909: Pedaia."
+  },
+  {
+   "id": "Zebidah_1",
+   "nombre": "Zebuda",
+   "nombre_rv1909": "Zebuda",
+   "rol": "",
+   "formas_rv1909": [
+    "Zebuda"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 23:36",
+   "refs": [
+    "2R 23:36"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Nebuchadnezzar_1",
+   "nombre": "Nabucodonosor",
+   "nombre_rv1909": "Nabucodonosor",
+   "rol": "rey de Babilonia",
+   "formas_rv1909": [
+    "Nabucodonosor"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 24:1",
+   "refs": [
+    "2R 24:1",
+    "2R 24:7",
+    "2R 24:10",
+    "2R 24:11",
+    "2R 24:12",
+    "2R 24:16",
+    "2R 24:17",
+    "2R 25:1",
+    "2R 25:6",
+    "2R 25:8",
+    "2R 25:11",
+    "2R 25:20",
+    "2R 25:21",
+    "2R 25:22",
+    "2R 25:23",
+    "2R 25:24"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Jehoiachin_1",
+   "nombre": "Joaquín",
+   "nombre_rv1909": "Joachîn",
+   "rol": "hijo de Joacim, rey de Judá",
+   "formas_rv1909": [
+    "Joachîn"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 24:6",
+   "refs": [
+    "2R 24:6",
+    "2R 24:8",
+    "2R 24:12",
+    "2R 24:15",
+    "2R 24:17",
+    "2R 25:27"
+   ],
+   "nota": "En la Reina-Valera 1909: Joachîn. Hijo de Joacim, rey de Judá tres meses; llevado a Babilonia (2 R 24:8, 15); Evil-merodac lo saca de la cárcel (25:27)."
+  },
+  {
+   "id": "Elnathan_1",
+   "nombre": "Elnatán",
+   "nombre_rv1909": "Elnathán",
+   "rol": "",
+   "formas_rv1909": [
+    "Elnathán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 24:8",
+   "refs": [
+    "2R 24:8"
+   ],
+   "nota": "En la Reina-Valera 1909: Elnathán."
+  },
+  {
+   "id": "Nehushta_1",
+   "nombre": "Nehusta",
+   "nombre_rv1909": "Neusta",
+   "rol": "",
+   "formas_rv1909": [
+    "Neusta"
+   ],
+   "sin_nombre": false,
+   "sexo": "f",
+   "primera_ref": "2R 24:8",
+   "refs": [
+    "2R 24:8"
+   ],
+   "nota": "En la Reina-Valera 1909: Neusta."
+  },
+  {
+   "id": "Mattaniah_1",
+   "nombre": "Matanías",
+   "nombre_rv1909": "Mathanías",
+   "rol": "tío de Joaquín, rey de Judá (Sedecías)",
+   "formas_rv1909": [
+    "Mathanías",
+    "Sedecías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 24:17",
+   "refs": [
+    "2R 24:17",
+    "2R 24:18",
+    "2R 24:20",
+    "2R 25:2",
+    "2R 25:7"
+   ],
+   "nota": "En la Reina-Valera 1909: Mathanías/Sedecías. «Mathanías su tío» (de Joaquín): el rey de Babilonia lo pone por rey y le cambia el nombre por Sedecías (2 R 24:17). Distinto del profeta Sedequías de 1 R 22:11.",
+   "identidad": {
+    "certeza": "texto",
+    "refs": [
+     "2R 24:17"
+    ],
+    "nombres_rv1909": [
+     "Mathanías",
+     "Sedecías"
+    ],
+    "fuente": "rv1909",
+    "nota": "2 R 24:17: el rey de Babilonia «puso por rey en lugar de Joachîn á Mathanías su tío, y mudóle el nombre en el de Sedecías»."
+   }
+  },
+  {
+   "id": "Nebuzaradan_1",
+   "nombre": "Nabuzaradán",
+   "nombre_rv1909": "Nabuzaradán",
+   "rol": "capitán de la guardia del rey de Babilonia",
+   "formas_rv1909": [
+    "Nabuzaradán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:8",
+   "refs": [
+    "2R 25:8",
+    "2R 25:11",
+    "2R 25:12",
+    "2R 25:20"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Seraiah_2",
+   "nombre": "Seraías",
+   "nombre_rv1909": "Saraías",
+   "rol": "primer sacerdote",
+   "formas_rv1909": [
+    "Saraías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:18",
+   "refs": [
+    "2R 25:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Saraías. «Saraías primer sacerdote» (2 R 25:18). Distinto de Seraías hijo de Tanhumet (25:23)."
+  },
+  {
+   "id": "Zephaniah_1",
+   "nombre": "Sofonías",
+   "nombre_rv1909": "Sophonías",
+   "rol": "segundo sacerdote",
+   "formas_rv1909": [
+    "Sophonías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:18",
+   "refs": [
+    "2R 25:18"
+   ],
+   "nota": "En la Reina-Valera 1909: Sophonías."
+  },
+  {
+   "id": "Gedaliah_1",
+   "nombre": "Gedalías",
+   "nombre_rv1909": "Gedalías",
+   "rol": "gobernador puesto por el rey de Babilonia",
+   "formas_rv1909": [
+    "Gedalías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:22",
+   "refs": [
+    "2R 25:22",
+    "2R 25:23",
+    "2R 25:24",
+    "2R 25:25"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Ishmael_2",
+   "nombre": "Ismael",
+   "nombre_rv1909": "Ismael",
+   "rol": "de la estirpe real; mata a Gedalías",
+   "formas_rv1909": [
+    "Ismael"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23",
+    "2R 25:25"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Jaazaniah_1",
+   "nombre": "Jaazanías",
+   "nombre_rv1909": "Jaazanías",
+   "rol": "",
+   "formas_rv1909": [
+    "Jaazanías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Johanan_1",
+   "nombre": "Johanán",
+   "nombre_rv1909": "Johanán",
+   "rol": "",
+   "formas_rv1909": [
+    "Johanán"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Kareah_1",
+   "nombre": "Carea",
+   "nombre_rv1909": "Carea",
+   "rol": "",
+   "formas_rv1909": [
+    "Carea"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Maachathi_2R25_1",
+   "nombre": "Maacati",
+   "nombre_rv1909": "Maachâti",
+   "rol": "",
+   "formas_rv1909": [
+    "Maachâti"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23"
+   ],
+   "nota": "En la Reina-Valera 1909: Maachâti. 2 R 25:23: «Jaazanías hijo de Maachâti». La RV1909 lo escribe como nombre propio; BibleData lo toma por gentilicio («el maacateo») y lo identifica con Osaías, padre de Jezanías (Jer 42:1, libro aún no cargado). Se registra como lo da la RV1909, con id propio (Maachathi_2R25_1)."
+  },
+  {
+   "id": "Nethaniah_1",
+   "nombre": "Netanías",
+   "nombre_rv1909": "Nathanías",
+   "rol": "",
+   "formas_rv1909": [
+    "Nathanías"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23",
+    "2R 25:25"
+   ],
+   "nota": "En la Reina-Valera 1909: Nathanías."
+  },
+  {
+   "id": "Seraiah_3",
+   "nombre": "Seraías",
+   "nombre_rv1909": "Saraía",
+   "rol": "",
+   "formas_rv1909": [
+    "Saraía"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23"
+   ],
+   "nota": "En la Reina-Valera 1909: Saraía. Hijo de Tanhumet netofatita, de los príncipes del ejército (2 R 25:23). Distinto del primer sacerdote."
+  },
+  {
+   "id": "Tanhumeth_1",
+   "nombre": "Tanhumet",
+   "nombre_rv1909": "Tanhumet",
+   "rol": "",
+   "formas_rv1909": [
+    "Tanhumet"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:23",
+   "refs": [
+    "2R 25:23"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Elishama_3",
+   "nombre": "Elisama",
+   "nombre_rv1909": "Elisama",
+   "rol": "",
+   "formas_rv1909": [
+    "Elisama"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:25",
+   "refs": [
+    "2R 25:25"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "Evil-merodach_1",
+   "nombre": "Evil-merodac",
+   "nombre_rv1909": "Evil-merodach",
+   "rol": "rey de Babilonia",
+   "formas_rv1909": [
+    "Evil-merodach"
+   ],
+   "sin_nombre": false,
+   "sexo": "m",
+   "primera_ref": "2R 25:27",
+   "refs": [
+    "2R 25:27"
+   ],
+   "nota": "En la Reina-Valera 1909: Evil-merodach."
   }
  ],
  "relaciones": [
@@ -67694,7 +73440,7 @@ window.BIBLIA_DATOS = {
    "ref": "2S 12:24",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "2 S 12:24: «consoló David á Bath-sheba su mujer… y parió un hijo»; 5:14: entre «los que le nacieron en Jerusalem». También 1R 2:1: «mandó á Salomón su hijo».",
+   "nota": "2 S 12:24: «consoló David á Bath-sheba su mujer… y parió un hijo»; 5:14: entre «los que le nacieron en Jerusalem». También 1R 2:1: «mandó á Salomón su hijo». También 2R 21:7: «á David y á Salomón su hijo».",
    "cita": "llamó su nombre Salomón"
   },
   {
@@ -68216,7 +73962,7 @@ window.BIBLIA_DATOS = {
    "ref": "1R 11:26",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También 2R 3:3: «Jeroboam, hijo de Nabat».",
    "cita": "Jeroboam hijo de Nabat"
   },
   {
@@ -68374,7 +74120,7 @@ window.BIBLIA_DATOS = {
    "ref": "1R 15:27",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También 1 R 15:33 y 21:22.",
+   "nota": "También 1 R 15:33 y 21:22. También 2R 9:9: «Baasa hijo de Ahía».",
    "cita": "Baasa hijo de Ahía"
   },
   {
@@ -68462,7 +74208,7 @@ window.BIBLIA_DATOS = {
    "ref": "1R 19:16",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También 2R 9:20: «Jehú hijo de Nimsi». 2 R 9:2 y 9:14 dicen «Jehú hijo de Josaphat hijo de Nimsi»: ahí Nimsi es el abuelo y Josafat el padre (relaciones aparte, con cita). 1 R 19:16 y 2 R 9:20 dicen «hijo de Nimsi». No se armoniza.",
    "cita": "Jehú hijo de Nimsi"
   },
   {
@@ -68472,7 +74218,7 @@ window.BIBLIA_DATOS = {
    "ref": "1R 19:16",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "También 1 R 19:19.",
+   "nota": "También 1 R 19:19. También 2R 3:11: «Eliseo hijo de Saphat».",
    "cita": "Eliseo hijo de Saphat"
   },
   {
@@ -68551,7 +74297,7 @@ window.BIBLIA_DATOS = {
    "ref": "1R 22:51",
    "certeza": "explicito",
    "fuente": "rv1909",
-   "nota": "",
+   "nota": "También 2R 8:16: «Joram hijo de Josaphat rey de Judá».",
    "cita": "en su lugar reinó Joram su hijo"
   },
   {
@@ -68563,6 +74309,871 @@ window.BIBLIA_DATOS = {
    "fuente": "rv1909",
    "nota": "1 R 15:2 y 15:10 dan la misma madre, «Maachâ, hija de Abisalom», a Abiam y a su hijo Asa (1 R 15:8); en 15:13 Asa priva «á su madre Maachâ» de ser princesa. El texto no lo explica ni dice que Abiam y Maaca fueran cónyuges; no se armoniza.",
    "cita": "el nombre de su madre fué Maachâ, hija de Abisalom"
+  },
+  {
+   "de": "Ahab_1",
+   "a": "Jehoram_2",
+   "tipo": "padre",
+   "ref": "2R 3:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 8:16, 25, 28-29; 9:15 (no lo nombra).",
+   "cita": "JORAM hijo de Achâb"
+  },
+  {
+   "de": "Ahab_1",
+   "a": "Athaliah_1",
+   "tipo": "padre",
+   "ref": "2R 8:18",
+   "certeza": "inferido",
+   "fuente": "bibledata",
+   "nota": "2 R 8:18 dice de Joram de Judá que «una hija de Achâb fué su mujer», sin nombrarla; 8:26 llama a Atalía, madre de Ocozías hijo de Joram, «hija de Omri rey de Israel», y 1 R 16:28 hace a Acab hijo de Omri. Se registra lo que dice cada versículo: Omri padre (8:26, texto) y Acab padre (8:18, inferido: el texto no nombra a la hija). No se armoniza."
+  },
+  {
+   "de": "Athaliah_1",
+   "a": "Jehoram_1",
+   "tipo": "conyuge",
+   "ref": "2R 8:18",
+   "certeza": "inferido",
+   "fuente": "bibledata",
+   "nota": "2 R 8:18: «una hija de Achâb fué su mujer»; 8:26: Atalía es madre de Ocozías hijo de Joram (8:24-25). Que esa hija sea Atalía es inferido."
+  },
+  {
+   "de": "Jehoram_1",
+   "a": "Ahaziah_2",
+   "tipo": "padre",
+   "ref": "2R 8:24",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 8:25: «Ochôzías hijo de Joram rey de Judá».",
+   "cita": "reinó en lugar suyo Ochôzías, su hijo"
+  },
+  {
+   "de": "Athaliah_1",
+   "a": "Ahaziah_2",
+   "tipo": "madre",
+   "ref": "2R 8:26",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 11:1: «ATHALÍA madre de Ochôzías».",
+   "cita": "El nombre de su madre fué Athalía"
+  },
+  {
+   "de": "Omri_1",
+   "a": "Athaliah_1",
+   "tipo": "padre",
+   "ref": "2R 8:26",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 8:18 dice de Joram de Judá que «una hija de Achâb fué su mujer», sin nombrarla; 8:26 llama a Atalía, madre de Ocozías hijo de Joram, «hija de Omri rey de Israel», y 1 R 16:28 hace a Acab hijo de Omri. Se registra lo que dice cada versículo: Omri padre (8:26, texto) y Acab padre (8:18, inferido: el texto no nombra a la hija). No se armoniza.",
+   "cita": "Athalía hija de Omri rey de Israel"
+  },
+  {
+   "de": "Jehoshaphat_4",
+   "a": "Jehu_2",
+   "tipo": "padre",
+   "ref": "2R 9:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 9:14. 1 R 19:16 y 2 R 9:20 dicen «Jehú hijo de Nimsi»: ver la relación con Nimsi. No se armoniza.",
+   "cita": "Jehú hijo de Josaphat hijo de Nimsi"
+  },
+  {
+   "de": "Nimshi_1",
+   "a": "Jehoshaphat_4",
+   "tipo": "padre",
+   "ref": "2R 9:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 9:14.",
+   "cita": "Josaphat hijo de Nimsi"
+  },
+  {
+   "de": "Jezebel_1",
+   "a": "Jehoram_2",
+   "tipo": "madre",
+   "ref": "2R 9:22",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "Lo dice Jehú a Joram (2 R 9:22).",
+   "cita": "las fornicaciones de Jezabel tu madre"
+  },
+  {
+   "de": "Rechab_2",
+   "a": "Jehonadab_1",
+   "tipo": "padre",
+   "ref": "2R 10:15",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 10:23.",
+   "cita": "Jonadab hijo de Rechâb"
+  },
+  {
+   "de": "Jehu_2",
+   "a": "Jehoahaz_1",
+   "tipo": "padre",
+   "ref": "2R 10:35",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 13:1: «Joachâz hijo de Jehú».",
+   "cita": "reinó en su lugar Joachâz su hijo"
+  },
+  {
+   "de": "Ahaziah_2",
+   "a": "Joash_3",
+   "tipo": "padre",
+   "ref": "2R 11:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 13:1; 14:13.",
+   "cita": "Joas hijo de Ochôzías"
+  },
+  {
+   "de": "Jehoram_1",
+   "a": "Jehosheba_1",
+   "tipo": "padre",
+   "ref": "2R 11:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "El texto la llama «hermana de Ochôzías» (2 R 11:2) y no dice quién es su madre.",
+   "cita": "Josaba hija del rey Joram"
+  },
+  {
+   "de": "Ahaziah_2",
+   "a": "Zibiah_1",
+   "tipo": "conyuge",
+   "ref": "2R 12:1",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Joás hijo de Ocozías (2 R 11:2; 12:1); el texto no la llama mujer de Ocozías: inferido.",
+   "cita": "El nombre de su madre fué Sibia"
+  },
+  {
+   "de": "Zibiah_1",
+   "a": "Joash_3",
+   "tipo": "madre",
+   "ref": "2R 12:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Sibia, de Beer-seba"
+  },
+  {
+   "de": "Joash_3",
+   "a": "Amaziah_1",
+   "tipo": "padre",
+   "ref": "2R 12:21",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 14:1: «Amasías hijo de Joas rey de Judá».",
+   "cita": "reinó en su lugar Amasías su hijo"
+  },
+  {
+   "de": "Shimeath_1",
+   "a": "Jozacar_1",
+   "tipo": "madre",
+   "ref": "2R 12:21",
+   "certeza": "inferido",
+   "fuente": "bibledata",
+   "nota": "2 R 12:21 dice «hijo de Simaath» y «hijo de Somer» sin decir si son el padre o la madre; BibleData los hace madres (por 2 Cr 24:26, libro aún no cargado, que las llama amonita y moabita): inferido."
+  },
+  {
+   "de": "Shomer_1",
+   "a": "Jehozabad_1",
+   "tipo": "madre",
+   "ref": "2R 12:21",
+   "certeza": "inferido",
+   "fuente": "bibledata",
+   "nota": "2 R 12:21 dice «hijo de Simaath» y «hijo de Somer» sin decir si son el padre o la madre; BibleData los hace madres (por 2 Cr 24:26, libro aún no cargado, que las llama amonita y moabita): inferido."
+  },
+  {
+   "de": "Hazael_1",
+   "a": "Ben-hadad_2",
+   "tipo": "padre",
+   "ref": "2R 13:3",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 13:24-25.",
+   "cita": "Ben-adad hijo de Hazael"
+  },
+  {
+   "de": "Jehoahaz_1",
+   "a": "Joash_4",
+   "tipo": "padre",
+   "ref": "2R 13:9",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 13:10: «Joas hijo de Joachâz».",
+   "cita": "reinó en su lugar Joas su hijo"
+  },
+  {
+   "de": "Jehoaddin_1",
+   "a": "Amaziah_1",
+   "tipo": "madre",
+   "ref": "2R 14:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "el nombre de su madre fué Joaddan, de Jerusalem"
+  },
+  {
+   "de": "Jehoaddin_1",
+   "a": "Joash_3",
+   "tipo": "conyuge",
+   "ref": "2R 14:2",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Amasías hijo de Joás (2 R 14:1-2); el texto no la llama mujer de Joás: inferido.",
+   "cita": "el nombre de su madre fué Joaddan"
+  },
+  {
+   "de": "Joash_4",
+   "a": "Jeroboam_2",
+   "tipo": "padre",
+   "ref": "2R 14:16",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 14:23: «Jeroboam hijo de Joas».",
+   "cita": "reinó en su lugar Jeroboam su hijo"
+  },
+  {
+   "de": "Amaziah_1",
+   "a": "Azariah_3",
+   "tipo": "padre",
+   "ref": "2R 14:21",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 15:1: «Azarías hijo de Amasías».",
+   "cita": "hiciéronlo rey en lugar de Amasías su padre"
+  },
+  {
+   "de": "Amittai_1",
+   "a": "Jonah_1",
+   "tipo": "padre",
+   "ref": "2R 14:25",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Jonás hijo de Amittai"
+  },
+  {
+   "de": "Jeroboam_2",
+   "a": "Zechariah_1",
+   "tipo": "padre",
+   "ref": "2R 14:29",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 15:8: «Zachârías hijo de Jeroboam».",
+   "cita": "reinó en su lugar Zachârías su hijo"
+  },
+  {
+   "de": "Amaziah_1",
+   "a": "Jecoliah_1",
+   "tipo": "conyuge",
+   "ref": "2R 15:2",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Azarías hijo de Amasías (2 R 15:1-2); el texto no la llama mujer de Amasías: inferido.",
+   "cita": "el nombre de su madre fué Jecolía"
+  },
+  {
+   "de": "Jecoliah_1",
+   "a": "Azariah_3",
+   "tipo": "madre",
+   "ref": "2R 15:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "el nombre de su madre fué Jecolía, de Jerusalem"
+  },
+  {
+   "de": "Azariah_3",
+   "a": "Jotham_2",
+   "tipo": "padre",
+   "ref": "2R 15:7",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 15:32: «Jotham hijo de Uzzía» (ver la identidad de Azarías).",
+   "cita": "reinó en su lugar Jotham su hijo"
+  },
+  {
+   "de": "Jabesh_1",
+   "a": "Shallum_1",
+   "tipo": "padre",
+   "ref": "2R 15:10",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 15:13-14.",
+   "cita": "Sallum hijo de Jabes"
+  },
+  {
+   "de": "Gadi_1",
+   "a": "Menachem_1",
+   "tipo": "padre",
+   "ref": "2R 15:14",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 15:17.",
+   "cita": "Manahem hijo de Gadi"
+  },
+  {
+   "de": "Menachem_1",
+   "a": "Pekahiah_1",
+   "tipo": "padre",
+   "ref": "2R 15:22",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 15:23: «Pekaía hijo de Manahem».",
+   "cita": "reinó en su lugar Pekaía su hijo"
+  },
+  {
+   "de": "Remaliah_1",
+   "a": "Pekah_1",
+   "tipo": "padre",
+   "ref": "2R 15:25",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 15:27, 30, 32, 37; 16:1, 5.",
+   "cita": "Peka hijo de Remalías"
+  },
+  {
+   "de": "Elah_3",
+   "a": "Hoshea_1",
+   "tipo": "padre",
+   "ref": "2R 15:30",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 17:1; 18:1, 9.",
+   "cita": "Oseas hijo de Ela"
+  },
+  {
+   "de": "Azariah_3",
+   "a": "Jerusha_1",
+   "tipo": "conyuge",
+   "ref": "2R 15:33",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Jotam hijo de Uzías (2 R 15:32-33); el texto no la llama mujer de Azarías: inferido.",
+   "cita": "El nombre de su madre fué Jerusa"
+  },
+  {
+   "de": "Jerusha_1",
+   "a": "Jotham_2",
+   "tipo": "madre",
+   "ref": "2R 15:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Jerusa hija de Sadoc"
+  },
+  {
+   "de": "Zadok_2",
+   "a": "Jerusha_1",
+   "tipo": "padre",
+   "ref": "2R 15:33",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Jerusa hija de Sadoc"
+  },
+  {
+   "de": "Jotham_2",
+   "a": "Ahaz_1",
+   "tipo": "padre",
+   "ref": "2R 15:38",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 16:1: «Achâz hijo de Jotham».",
+   "cita": "reinó en su lugar Achâz su hijo"
+  },
+  {
+   "de": "Ahaz_1",
+   "a": "Hezekiah_1",
+   "tipo": "padre",
+   "ref": "2R 16:20",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 18:1: «Ezechîas hijo de Achâz».",
+   "cita": "reinó en su lugar Ezechîas su hijo"
+  },
+  {
+   "de": "Abi_1",
+   "a": "Ahaz_1",
+   "tipo": "conyuge",
+   "ref": "2R 18:2",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Ezequías hijo de Acaz (2 R 18:1-2); el texto no la llama mujer de Acaz: inferido.",
+   "cita": "El nombre de su madre [fué] Abi"
+  },
+  {
+   "de": "Abi_1",
+   "a": "Hezekiah_1",
+   "tipo": "madre",
+   "ref": "2R 18:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre [fué] Abi hija de Zachârías"
+  },
+  {
+   "de": "Zechariah_2",
+   "a": "Abi_1",
+   "tipo": "padre",
+   "ref": "2R 18:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Abi hija de Zachârías"
+  },
+  {
+   "de": "Asaph_1",
+   "a": "Joah_1",
+   "tipo": "padre",
+   "ref": "2R 18:18",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 18:37.",
+   "cita": "Joah hijo de Asaph"
+  },
+  {
+   "de": "Hilkiah_1",
+   "a": "Eliakim_1",
+   "tipo": "padre",
+   "ref": "2R 18:18",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 18:26, 37.",
+   "cita": "Eliacim hijo de Hilcías"
+  },
+  {
+   "de": "Amoz_1",
+   "a": "Isaiah_1",
+   "tipo": "padre",
+   "ref": "2R 19:2",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 19:20; 20:1.",
+   "cita": "Isaías profeta hijo de Amós"
+  },
+  {
+   "de": "Sennacherib_1",
+   "a": "Adrammelech_1",
+   "tipo": "padre",
+   "ref": "2R 19:37",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Adramelech y Saresar sus hijos"
+  },
+  {
+   "de": "Sennacherib_1",
+   "a": "Esarhaddon_1",
+   "tipo": "padre",
+   "ref": "2R 19:37",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "reinó en su lugar Esar-hadón su hijo"
+  },
+  {
+   "de": "Sennacherib_1",
+   "a": "Sharezer_1",
+   "tipo": "padre",
+   "ref": "2R 19:37",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Adramelech y Saresar sus hijos"
+  },
+  {
+   "de": "Baladan_1",
+   "a": "Berodach-baladan_1",
+   "tipo": "padre",
+   "ref": "2R 20:12",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Berodach-baladán hijo de Baladán"
+  },
+  {
+   "de": "Hezekiah_1",
+   "a": "Manasseh_3",
+   "tipo": "padre",
+   "ref": "2R 20:21",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "reinó en su lugar Manasés su hijo"
+  },
+  {
+   "de": "Hephzibah_1",
+   "a": "Hezekiah_1",
+   "tipo": "conyuge",
+   "ref": "2R 21:1",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Manasés hijo de Ezequías (2 R 20:21; 21:1); el texto no la llama mujer de Ezequías: inferido.",
+   "cita": "el nombre de su madre fué Hepsiba"
+  },
+  {
+   "de": "Hephzibah_1",
+   "a": "Manasseh_3",
+   "tipo": "madre",
+   "ref": "2R 21:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "el nombre de su madre fué Hepsiba"
+  },
+  {
+   "de": "Manasseh_3",
+   "a": "Amon_2",
+   "tipo": "padre",
+   "ref": "2R 21:18",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "reinó en su lugar Amón su hijo"
+  },
+  {
+   "de": "Haruz_1",
+   "a": "Meshullemeth_1",
+   "tipo": "padre",
+   "ref": "2R 21:19",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Mesalemeth hija de Harus de Jotba"
+  },
+  {
+   "de": "Manasseh_3",
+   "a": "Meshullemeth_1",
+   "tipo": "conyuge",
+   "ref": "2R 21:19",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Amón hijo de Manasés (2 R 21:18-19); el texto no la llama mujer de Manasés: inferido.",
+   "cita": "El nombre de su madre fué Mesalemeth"
+  },
+  {
+   "de": "Meshullemeth_1",
+   "a": "Amon_2",
+   "tipo": "madre",
+   "ref": "2R 21:19",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Mesalemeth"
+  },
+  {
+   "de": "Amon_2",
+   "a": "Josiah_1",
+   "tipo": "padre",
+   "ref": "2R 21:24",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 21:26.",
+   "cita": "por rey en su lugar á Josías su hijo"
+  },
+  {
+   "de": "Adaiah_1",
+   "a": "Jedidah_1",
+   "tipo": "padre",
+   "ref": "2R 22:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Idida hija de Adaía de Boscath"
+  },
+  {
+   "de": "Amon_2",
+   "a": "Jedidah_1",
+   "tipo": "conyuge",
+   "ref": "2R 22:1",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Josías hijo de Amón (2 R 21:24; 22:1); el texto no la llama mujer de Amón: inferido.",
+   "cita": "El nombre de su madre fué Idida"
+  },
+  {
+   "de": "Jedidah_1",
+   "a": "Josiah_1",
+   "tipo": "madre",
+   "ref": "2R 22:1",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Idida"
+  },
+  {
+   "de": "Azaliah_1",
+   "a": "Shaphan_1",
+   "tipo": "padre",
+   "ref": "2R 22:3",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Saphán hijo de Azalía"
+  },
+  {
+   "de": "Meshullam_1",
+   "a": "Azaliah_1",
+   "tipo": "padre",
+   "ref": "2R 22:3",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Azalía, hijo de Mesullam"
+  },
+  {
+   "de": "Micaiah_2",
+   "a": "Achbor_2",
+   "tipo": "padre",
+   "ref": "2R 22:12",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Achbor hijo de Michâía"
+  },
+  {
+   "de": "Shaphan_1",
+   "a": "Ahikam_1",
+   "tipo": "padre",
+   "ref": "2R 22:12",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 25:22.",
+   "cita": "Ahicam hijo de Saphán"
+  },
+  {
+   "de": "Harhas_1",
+   "a": "Tikvah_1",
+   "tipo": "padre",
+   "ref": "2R 22:14",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Ticva hijo de Araas"
+  },
+  {
+   "de": "Huldah_1",
+   "a": "Shallum_2",
+   "tipo": "conyuge",
+   "ref": "2R 22:14",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Hulda profetisa, mujer de Sallum"
+  },
+  {
+   "de": "Tikvah_1",
+   "a": "Shallum_2",
+   "tipo": "padre",
+   "ref": "2R 22:14",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Sallum hijo de Ticva"
+  },
+  {
+   "de": "Josiah_1",
+   "a": "Jehoahaz_2",
+   "tipo": "padre",
+   "ref": "2R 23:30",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Joachâz hijo de Josías"
+  },
+  {
+   "de": "Hamutal_1",
+   "a": "Jehoahaz_2",
+   "tipo": "madre",
+   "ref": "2R 23:31",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Amutal"
+  },
+  {
+   "de": "Hamutal_1",
+   "a": "Josiah_1",
+   "tipo": "conyuge",
+   "ref": "2R 23:31",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Joacaz hijo de Josías (2 R 23:30-31); el texto no la llama mujer de Josías: inferido.",
+   "cita": "El nombre de su madre fué Amutal"
+  },
+  {
+   "de": "Jeremiah_1",
+   "a": "Hamutal_1",
+   "tipo": "padre",
+   "ref": "2R 23:31",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 24:18.",
+   "cita": "Amutal, hija de Jeremías de Libna"
+  },
+  {
+   "de": "Josiah_1",
+   "a": "Eliakim_2",
+   "tipo": "padre",
+   "ref": "2R 23:34",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Eliacim hijo de Josías"
+  },
+  {
+   "de": "Josiah_1",
+   "a": "Zebidah_1",
+   "tipo": "conyuge",
+   "ref": "2R 23:36",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Joacim hijo de Josías (2 R 23:34-36); el texto no la llama mujer de Josías: inferido.",
+   "cita": "El nombre de su madre fué Zebuda"
+  },
+  {
+   "de": "Pedaiah_1",
+   "a": "Zebidah_1",
+   "tipo": "padre",
+   "ref": "2R 23:36",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Zebuda hija de Pedaia, de Ruma"
+  },
+  {
+   "de": "Zebidah_1",
+   "a": "Eliakim_2",
+   "tipo": "madre",
+   "ref": "2R 23:36",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Zebuda"
+  },
+  {
+   "de": "Eliakim_2",
+   "a": "Jehoiachin_1",
+   "tipo": "padre",
+   "ref": "2R 24:6",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "reinó en su lugar Joachîn su hijo"
+  },
+  {
+   "de": "Eliakim_2",
+   "a": "Nehushta_1",
+   "tipo": "conyuge",
+   "ref": "2R 24:8",
+   "certeza": "inferido",
+   "fuente": "rv1909",
+   "nota": "Madre de Joaquín hijo de Joacim (2 R 24:6-8); el texto no la llama mujer de Joacim: inferido.",
+   "cita": "El nombre de su madre fué Neusta"
+  },
+  {
+   "de": "Elnathan_1",
+   "a": "Nehushta_1",
+   "tipo": "padre",
+   "ref": "2R 24:8",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Neusta hija de Elnathán"
+  },
+  {
+   "de": "Nehushta_1",
+   "a": "Jehoiachin_1",
+   "tipo": "madre",
+   "ref": "2R 24:8",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Neusta"
+  },
+  {
+   "de": "Hamutal_1",
+   "a": "Mattaniah_1",
+   "tipo": "madre",
+   "ref": "2R 24:18",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "El nombre de su madre fué Amutal hija de Jeremías"
+  },
+  {
+   "de": "Josiah_1",
+   "a": "Mattaniah_1",
+   "tipo": "padre",
+   "ref": "2R 24:18",
+   "certeza": "inferido",
+   "fuente": "bibledata",
+   "nota": "2 R 24:17 llama a Matanías «tío» de Joaquín (hijo de Joacim, hijo de Josías), y 24:18 le da la misma madre que a Joacaz hijo de Josías (23:31): que sea hijo de Josías es inferido (BibleData)."
+  },
+  {
+   "de": "Ahikam_1",
+   "a": "Gedaliah_1",
+   "tipo": "padre",
+   "ref": "2R 25:22",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Gedalías, hijo de Ahicam hijo de Saphán"
+  },
+  {
+   "de": "Kareah_1",
+   "a": "Johanan_1",
+   "tipo": "padre",
+   "ref": "2R 25:23",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Johanán hijo de Carea"
+  },
+  {
+   "de": "Maachathi_2R25_1",
+   "a": "Jaazaniah_1",
+   "tipo": "padre",
+   "ref": "2R 25:23",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "2 R 25:23: «Jaazanías hijo de Maachâti». La RV1909 lo escribe como nombre propio; BibleData lo toma por gentilicio («el maacateo») y lo identifica con Osaías, padre de Jezanías (Jer 42:1, libro aún no cargado). Se registra como lo da la RV1909, con id propio (Maachathi_2R25_1).",
+   "cita": "Jaazanías hijo de Maachâti"
+  },
+  {
+   "de": "Nethaniah_1",
+   "a": "Ishmael_2",
+   "tipo": "padre",
+   "ref": "2R 25:23",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "También 2 R 25:25.",
+   "cita": "Ismael hijo de Nathanías"
+  },
+  {
+   "de": "Tanhumeth_1",
+   "a": "Seraiah_3",
+   "tipo": "padre",
+   "ref": "2R 25:23",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Saraía hijo de Tanhumet Netofatita"
+  },
+  {
+   "de": "Elishama_3",
+   "a": "Nethaniah_1",
+   "tipo": "padre",
+   "ref": "2R 25:25",
+   "certeza": "explicito",
+   "fuente": "rv1909",
+   "nota": "",
+   "cita": "Nathanías, hijo de Elisama"
   }
  ],
  "edades": [
@@ -70786,6 +77397,366 @@ window.BIBLIA_DATOS = {
    "cita": "Thirty and five years",
    "nota": "",
    "evento": "cuando comienza a reinar (1 R 22:42)"
+  },
+  {
+   "persona": "Jehoram_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 32,
+   "ref": "2R 8:17",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "treinta y dos años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 8:17)"
+  },
+  {
+   "persona": "Jehoram_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 32,
+   "ref": "2R 8:17",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Thirty and two years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 8:17)"
+  },
+  {
+   "persona": "Ahaziah_2",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 22,
+   "ref": "2R 8:26",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veintidós años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 8:26)"
+  },
+  {
+   "persona": "Ahaziah_2",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 22,
+   "ref": "2R 8:26",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty and two years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 8:26)"
+  },
+  {
+   "persona": "Joash_3",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 7,
+   "ref": "2R 11:21",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "siete años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 11:21)"
+  },
+  {
+   "persona": "Joash_3",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 7,
+   "ref": "2R 11:21",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "seven years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 11:21)"
+  },
+  {
+   "persona": "Amaziah_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 25,
+   "ref": "2R 14:2",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veinticinco años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 14:2)"
+  },
+  {
+   "persona": "Amaziah_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 25,
+   "ref": "2R 14:2",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty and five years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 14:2)"
+  },
+  {
+   "persona": "Azariah_3",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 16,
+   "ref": "2R 15:2",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "dieciséis años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 15:2; también 14:21)"
+  },
+  {
+   "persona": "Azariah_3",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 16,
+   "ref": "2R 15:2",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Sixteen years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 15:2; también 14:21)"
+  },
+  {
+   "persona": "Jotham_2",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 25,
+   "ref": "2R 15:33",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veinticinco años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 15:33)"
+  },
+  {
+   "persona": "Jotham_2",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 25,
+   "ref": "2R 15:33",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty and five years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 15:33)"
+  },
+  {
+   "persona": "Ahaz_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 20,
+   "ref": "2R 16:2",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veinte años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 16:2)"
+  },
+  {
+   "persona": "Ahaz_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 20,
+   "ref": "2R 16:2",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 16:2)"
+  },
+  {
+   "persona": "Hezekiah_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 25,
+   "ref": "2R 18:2",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veinticinco años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 18:2)"
+  },
+  {
+   "persona": "Hezekiah_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 25,
+   "ref": "2R 18:2",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Five and twenty years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 18:2)"
+  },
+  {
+   "persona": "Manasseh_3",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 12,
+   "ref": "2R 21:1",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "doce años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 21:1)"
+  },
+  {
+   "persona": "Manasseh_3",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 12,
+   "ref": "2R 21:1",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "twelve years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 21:1)"
+  },
+  {
+   "persona": "Amon_2",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 22,
+   "ref": "2R 21:19",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veinte y dos años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 21:19)"
+  },
+  {
+   "persona": "Amon_2",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 22,
+   "ref": "2R 21:19",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty and two years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 21:19)"
+  },
+  {
+   "persona": "Josiah_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 8,
+   "ref": "2R 22:1",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "ocho años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 22:1)"
+  },
+  {
+   "persona": "Josiah_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 8,
+   "ref": "2R 22:1",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "eight years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 22:1)"
+  },
+  {
+   "persona": "Jehoahaz_2",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 23,
+   "ref": "2R 23:31",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veintitrés años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 23:31)"
+  },
+  {
+   "persona": "Jehoahaz_2",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 23,
+   "ref": "2R 23:31",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty and three years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 23:31)"
+  },
+  {
+   "persona": "Eliakim_2",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 25,
+   "ref": "2R 23:36",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veinticinco años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 23:36)"
+  },
+  {
+   "persona": "Eliakim_2",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 25,
+   "ref": "2R 23:36",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty-five years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 23:36)"
+  },
+  {
+   "persona": "Jehoiachin_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 18,
+   "ref": "2R 24:8",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "dieciocho años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 24:8)"
+  },
+  {
+   "persona": "Jehoiachin_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 18,
+   "ref": "2R 24:8",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Eighteen years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 24:8)"
+  },
+  {
+   "persona": "Mattaniah_1",
+   "tipo": "en_evento",
+   "tradicion": "TM",
+   "valor": 21,
+   "ref": "2R 24:18",
+   "certeza": "texto",
+   "fuente": "rv1909",
+   "cita": "veintiún años",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 24:18)"
+  },
+  {
+   "persona": "Mattaniah_1",
+   "tipo": "en_evento",
+   "tradicion": "LXX",
+   "valor": 21,
+   "ref": "2R 24:18",
+   "certeza": "texto",
+   "fuente": "brenton",
+   "cita": "Twenty and one years",
+   "nota": "",
+   "evento": "cuando comienza a reinar (2 R 24:18)"
   }
  ],
  "pasajes": [
@@ -77548,6 +84519,526 @@ window.BIBLIA_DATOS = {
    "titulo_origen": "editorial",
    "resumen": "Josafat reina veinticinco años en Jerusalén; Ocozías, hijo de Acab, reina dos años sobre Israel y sirve a Baal.",
    "seccion": "Acab: las guerras arameas, Nabot y Micaías (1 R 20–22)"
+  },
+  {
+   "id": "2r-01",
+   "libro": "2R",
+   "inicio": "2R 1:1",
+   "fin": "2R 1:18",
+   "titulo": "Ocozías y los capitanes de cincuenta",
+   "titulo_origen": "editorial",
+   "resumen": "Ocozías cae por una celosía y manda consultar a Baal-zebub; Elías le anuncia que morirá, y el fuego del cielo consume a dos capitanes de cincuenta. Ocozías muere sin hijo y reina Joram.",
+   "seccion": "Elías sube al cielo (2 R 1–2)"
+  },
+  {
+   "id": "2r-02",
+   "libro": "2R",
+   "inicio": "2R 2:1",
+   "fin": "2R 2:14",
+   "titulo": "Elías sube al cielo",
+   "titulo_origen": "editorial",
+   "resumen": "Elías y Eliseo van de Gilgal a Betel, a Jericó y al Jordán; un carro de fuego los aparta y «Elías subió al cielo en un torbellino». Eliseo alza su manto y divide las aguas.",
+   "seccion": "Elías sube al cielo (2 R 1–2)"
+  },
+  {
+   "id": "2r-03",
+   "libro": "2R",
+   "inicio": "2R 2:15",
+   "fin": "2R 2:25",
+   "titulo": "Eliseo en Jericó y en Betel",
+   "titulo_origen": "editorial",
+   "resumen": "Los hijos de los profetas buscan a Elías tres días sin hallarlo; Eliseo sana las aguas de Jericó con sal, y en el camino de Betel unos muchachos se burlan de él.",
+   "seccion": "Elías sube al cielo (2 R 1–2)"
+  },
+  {
+   "id": "2r-04",
+   "libro": "2R",
+   "inicio": "2R 3:1",
+   "fin": "2R 3:12",
+   "titulo": "Joram, Josafat y el rey de Edom contra Moab",
+   "titulo_origen": "editorial",
+   "resumen": "Joram, hijo de Acab, reina en Samaria; Mesa de Moab se rebela, y los reyes de Israel, Judá y Edom se quedan sin agua en el desierto y van a Eliseo.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-05",
+   "libro": "2R",
+   "inicio": "2R 3:13",
+   "fin": "2R 3:27",
+   "titulo": "Agua en el valle; la derrota de Moab",
+   "titulo_origen": "editorial",
+   "resumen": "Eliseo manda abrir acequias y el valle se llena de agua; los moabitas la ven roja como sangre, atacan y son vencidos.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-06",
+   "libro": "2R",
+   "inicio": "2R 4:1",
+   "fin": "2R 4:7",
+   "titulo": "El aceite de la viuda",
+   "titulo_origen": "editorial",
+   "resumen": "La viuda de uno de los hijos de los profetas llena vasos prestados con su botija de aceite y paga a su acreedor.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-07",
+   "libro": "2R",
+   "inicio": "2R 4:8",
+   "fin": "2R 4:17",
+   "titulo": "La sunamita y el hijo anunciado",
+   "titulo_origen": "editorial",
+   "resumen": "Una mujer principal de Sunem prepara a Eliseo una cámara; él le anuncia que abrazará un hijo, y lo da a luz.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-08",
+   "libro": "2R",
+   "inicio": "2R 4:18",
+   "fin": "2R 4:37",
+   "titulo": "El hijo de la sunamita revive",
+   "titulo_origen": "editorial",
+   "resumen": "El niño muere en las rodillas de su madre; ella va al Carmelo a buscar a Eliseo, que ora y se tiende sobre él, y el niño revive.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-09",
+   "libro": "2R",
+   "inicio": "2R 4:38",
+   "fin": "2R 4:44",
+   "titulo": "La olla y los panes",
+   "titulo_origen": "editorial",
+   "resumen": "En Gilgal Eliseo sana un potaje de calabazas silvestres («¡Varón de Dios, la muerte en la olla!») y veinte panes de cebada alcanzan para cien hombres.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-10",
+   "libro": "2R",
+   "inicio": "2R 5:1",
+   "fin": "2R 5:14",
+   "titulo": "Naamán sanado en el Jordán",
+   "titulo_origen": "editorial",
+   "resumen": "Una muchacha cautiva de Israel habla del profeta; Naamán, general del rey de Siria, se lava siete veces en el Jordán y queda limpio de su lepra.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-11",
+   "libro": "2R",
+   "inicio": "2R 5:15",
+   "fin": "2R 5:27",
+   "titulo": "Naamán agradece; Giezi",
+   "titulo_origen": "editorial",
+   "resumen": "Eliseo no acepta el presente de Naamán; Giezi corre tras él, toma plata y vestidos, y queda leproso.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-12",
+   "libro": "2R",
+   "inicio": "2R 6:1",
+   "fin": "2R 6:7",
+   "titulo": "El hacha que flota",
+   "titulo_origen": "editorial",
+   "resumen": "Cortando vigas junto al Jordán, a uno se le cae al agua un hacha prestada; Eliseo echa un palo y hace nadar el hierro.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-13",
+   "libro": "2R",
+   "inicio": "2R 6:8",
+   "fin": "2R 6:23",
+   "titulo": "Los sirios en Dotán",
+   "titulo_origen": "editorial",
+   "resumen": "Eliseo avisa al rey de Israel de los planes del rey de Siria; cercado en Dotán, su criado ve el monte lleno de carros de fuego, y los sirios, heridos de ceguera, son llevados a Samaria y despedidos.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-14",
+   "libro": "2R",
+   "inicio": "2R 6:24",
+   "fin": "2R 6:33",
+   "titulo": "El hambre en Samaria",
+   "titulo_origen": "editorial",
+   "resumen": "Ben-adad cerca Samaria y hay grande hambre; el rey de Israel oye a una mujer y culpa a Eliseo.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-15",
+   "libro": "2R",
+   "inicio": "2R 7:1",
+   "fin": "2R 7:20",
+   "titulo": "Los cuatro leprosos",
+   "titulo_origen": "editorial",
+   "resumen": "Eliseo anuncia abundancia para el día siguiente; cuatro leprosos hallan vacío el campamento sirio, y el príncipe que no creyó muere atropellado en la puerta.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-16",
+   "libro": "2R",
+   "inicio": "2R 8:1",
+   "fin": "2R 8:6",
+   "titulo": "La sunamita recupera sus tierras",
+   "titulo_origen": "editorial",
+   "resumen": "Tras siete años en tierra de los filisteos, la sunamita pide al rey su casa y sus tierras, y Giezi cuenta cómo Eliseo resucitó a su hijo.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-17",
+   "libro": "2R",
+   "inicio": "2R 8:7",
+   "fin": "2R 8:15",
+   "titulo": "Eliseo y Hazael en Damasco",
+   "titulo_origen": "editorial",
+   "resumen": "Ben-adad, enfermo, envía a Hazael a consultar a Eliseo; Eliseo llora por el mal que Hazael hará a Israel, y Hazael reina en lugar de Ben-adad.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-18",
+   "libro": "2R",
+   "inicio": "2R 8:16",
+   "fin": "2R 8:29",
+   "titulo": "Joram y Ocozías, reyes de Judá",
+   "titulo_origen": "editorial",
+   "resumen": "Joram hijo de Josafat reina ocho años en Jerusalén; Edom se rebela. Ocozías, hijo de Joram y de Atalía, reina un año y visita a Joram de Israel, herido, en Jezreel.",
+   "seccion": "Los hechos de Eliseo (2 R 3–8)"
+  },
+  {
+   "id": "2r-19",
+   "libro": "2R",
+   "inicio": "2R 9:1",
+   "fin": "2R 9:13",
+   "titulo": "Jehú ungido rey",
+   "titulo_origen": "editorial",
+   "resumen": "Un hijo de los profetas unge a Jehú en Ramot de Galaad por mandato de Eliseo, y los capitanes lo aclaman: «Jehú es rey».",
+   "seccion": "Jehú (2 R 9–10)"
+  },
+  {
+   "id": "2r-20",
+   "libro": "2R",
+   "inicio": "2R 9:14",
+   "fin": "2R 9:29",
+   "titulo": "Jehú mata a Joram y a Ocozías",
+   "titulo_origen": "editorial",
+   "resumen": "Jehú va en su carro a Jezreel; hiere a Joram en la heredad de Nabot, y Ocozías, herido en la huida, muere en Megido.",
+   "seccion": "Jehú (2 R 9–10)"
+  },
+  {
+   "id": "2r-21",
+   "libro": "2R",
+   "inicio": "2R 9:30",
+   "fin": "2R 9:37",
+   "titulo": "Muerte de Jezabel",
+   "titulo_origen": "editorial",
+   "resumen": "Jezabel se asoma a la ventana; los eunucos la echan abajo y se cumple la palabra de Elías sobre ella.",
+   "seccion": "Jehú (2 R 9–10)"
+  },
+  {
+   "id": "2r-22",
+   "libro": "2R",
+   "inicio": "2R 10:1",
+   "fin": "2R 10:17",
+   "titulo": "La casa de Acab",
+   "titulo_origen": "editorial",
+   "resumen": "Los principales de Samaria entregan las cabezas de los setenta hijos de Acab; Jehú mata a los que quedan de su casa y sube con Jonadab hijo de Recab.",
+   "seccion": "Jehú (2 R 9–10)"
+  },
+  {
+   "id": "2r-23",
+   "libro": "2R",
+   "inicio": "2R 10:18",
+   "fin": "2R 10:36",
+   "titulo": "Jehú destruye a Baal",
+   "titulo_origen": "editorial",
+   "resumen": "Jehú reúne a los siervos de Baal en su templo y los hace matar; derriba la casa de Baal, pero no se aparta de los becerros de Betel y Dan. Reina veintiocho años.",
+   "seccion": "Jehú (2 R 9–10)"
+  },
+  {
+   "id": "2r-24",
+   "libro": "2R",
+   "inicio": "2R 11:1",
+   "fin": "2R 11:12",
+   "titulo": "Atalía; Joás escondido y coronado",
+   "titulo_origen": "editorial",
+   "resumen": "Atalía destruye la simiente real; Josaba esconde a Joás seis años en la casa de Jehová, y al séptimo Joiada lo corona: «¡Viva el rey!».",
+   "seccion": "Atalía y Joás (2 R 11–12)"
+  },
+  {
+   "id": "2r-25",
+   "libro": "2R",
+   "inicio": "2R 11:13",
+   "fin": "2R 11:21",
+   "titulo": "Muerte de Atalía; el pacto",
+   "titulo_origen": "editorial",
+   "resumen": "Atalía grita «¡Traición, traición!» y la matan fuera del templo; Joiada hace pacto entre Jehová, el rey y el pueblo, y derriban el templo de Baal.",
+   "seccion": "Atalía y Joás (2 R 11–12)"
+  },
+  {
+   "id": "2r-26",
+   "libro": "2R",
+   "inicio": "2R 12:1",
+   "fin": "2R 12:16",
+   "titulo": "Joás repara el templo",
+   "titulo_origen": "editorial",
+   "resumen": "Joás reina cuarenta años; Joiada pone un arca junto al altar para recoger el dinero con que se reparan las aberturas de la casa de Jehová.",
+   "seccion": "Atalía y Joás (2 R 11–12)"
+  },
+  {
+   "id": "2r-27",
+   "libro": "2R",
+   "inicio": "2R 12:17",
+   "fin": "2R 12:21",
+   "titulo": "Hazael; muere Joás",
+   "titulo_origen": "editorial",
+   "resumen": "Joás da a Hazael el oro del templo para que no suba contra Jerusalén; sus siervos lo matan y reina Amasías.",
+   "seccion": "Atalía y Joás (2 R 11–12)"
+  },
+  {
+   "id": "2r-28",
+   "libro": "2R",
+   "inicio": "2R 13:1",
+   "fin": "2R 13:13",
+   "titulo": "Joacaz y Joás, reyes de Israel",
+   "titulo_origen": "editorial",
+   "resumen": "Joacaz hijo de Jehú reina diecisiete años, oprimido por Hazael; le sucede Joás su hijo.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-29",
+   "libro": "2R",
+   "inicio": "2R 13:14",
+   "fin": "2R 13:25",
+   "titulo": "Muerte de Eliseo",
+   "titulo_origen": "editorial",
+   "resumen": "Eliseo, enfermo, manda a Joás tirar la saeta de salud y herir la tierra; muere, y un muerto echado en su sepulcro revive al tocar sus huesos.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-30",
+   "libro": "2R",
+   "inicio": "2R 14:1",
+   "fin": "2R 14:22",
+   "titulo": "Amasías de Judá",
+   "titulo_origen": "editorial",
+   "resumen": "Amasías vence a Edom y desafía a Joás de Israel, que lo derrota en Bet-semes y saquea Jerusalén; muere en Laquis y reina Azarías.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-31",
+   "libro": "2R",
+   "inicio": "2R 14:23",
+   "fin": "2R 14:29",
+   "titulo": "Jeroboam hijo de Joás",
+   "titulo_origen": "editorial",
+   "resumen": "Jeroboam reina cuarenta y un años y restituye los términos de Israel, conforme a la palabra de Jonás hijo de Amitai.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-32",
+   "libro": "2R",
+   "inicio": "2R 15:1",
+   "fin": "2R 15:7",
+   "titulo": "Azarías, el rey leproso",
+   "titulo_origen": "editorial",
+   "resumen": "Azarías reina cincuenta y dos años; Jehová lo hiere con lepra y su hijo Jotam gobierna el palacio.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-33",
+   "libro": "2R",
+   "inicio": "2R 15:8",
+   "fin": "2R 15:31",
+   "titulo": "De Zacarías a Peka",
+   "titulo_origen": "editorial",
+   "resumen": "Cinco reyes de Israel en pocos años: Zacarías, Salum, Manahem, Pekaía y Peka; Pul y Tiglat-pileser de Asiria llegan a la tierra.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-34",
+   "libro": "2R",
+   "inicio": "2R 15:32",
+   "fin": "2R 16:4",
+   "titulo": "Jotam y Acaz",
+   "titulo_origen": "editorial",
+   "resumen": "Jotam reina dieciséis años y edifica la puerta más alta del templo; Acaz no hace lo recto y anda en el camino de los reyes de Israel.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-35",
+   "libro": "2R",
+   "inicio": "2R 16:5",
+   "fin": "2R 16:20",
+   "titulo": "Acaz y el altar de Damasco",
+   "titulo_origen": "editorial",
+   "resumen": "Resín y Peka suben contra Jerusalén; Acaz pide ayuda a Tiglat-pileser y manda a Urías hacer un altar como el de Damasco.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-36",
+   "libro": "2R",
+   "inicio": "2R 17:1",
+   "fin": "2R 17:23",
+   "titulo": "Caída de Samaria",
+   "titulo_origen": "editorial",
+   "resumen": "Oseas deja de pagar tributo; el rey de Asiria toma Samaria y lleva a Israel a Asiria, porque no escucharon a los profetas.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-37",
+   "libro": "2R",
+   "inicio": "2R 17:24",
+   "fin": "2R 17:41",
+   "titulo": "Los pueblos traídos a Samaria",
+   "titulo_origen": "editorial",
+   "resumen": "El rey de Asiria pone en las ciudades de Samaria gentes de Babilonia, Cuta, Ava, Hamat y Sefarvaim, que temen a Jehová y sirven a sus dioses.",
+   "seccion": "Los reyes hasta la caída de Samaria (2 R 13–17)"
+  },
+  {
+   "id": "2r-38",
+   "libro": "2R",
+   "inicio": "2R 18:1",
+   "fin": "2R 18:12",
+   "titulo": "Ezequías",
+   "titulo_origen": "editorial",
+   "resumen": "Ezequías quita los altos y hace pedazos la serpiente de bronce de Moisés; en su sexto año cae Samaria.",
+   "seccion": "Ezequías y Senaquerib (2 R 18–20)"
+  },
+  {
+   "id": "2r-39",
+   "libro": "2R",
+   "inicio": "2R 18:13",
+   "fin": "2R 18:37",
+   "titulo": "Senaquerib y Rabsaces",
+   "titulo_origen": "editorial",
+   "resumen": "Senaquerib toma las ciudades de Judá; desde el conducto del estanque de arriba, Rabsaces habla al pueblo contra Ezequías.",
+   "seccion": "Ezequías y Senaquerib (2 R 18–20)"
+  },
+  {
+   "id": "2r-40",
+   "libro": "2R",
+   "inicio": "2R 19:1",
+   "fin": "2R 19:19",
+   "titulo": "Ezequías ora",
+   "titulo_origen": "editorial",
+   "resumen": "Ezequías se cubre de saco y envía a Isaías; extiende ante Jehová las cartas de Senaquerib y ora.",
+   "seccion": "Ezequías y Senaquerib (2 R 18–20)"
+  },
+  {
+   "id": "2r-41",
+   "libro": "2R",
+   "inicio": "2R 19:20",
+   "fin": "2R 19:37",
+   "titulo": "La respuesta de Isaías",
+   "titulo_origen": "editorial",
+   "resumen": "Isaías anuncia que el rey de Asiria no entrará en Jerusalén; el ángel de Jehová hiere el campamento asirio, y Senaquerib vuelve a Nínive.",
+   "seccion": "Ezequías y Senaquerib (2 R 18–20)"
+  },
+  {
+   "id": "2r-42",
+   "libro": "2R",
+   "inicio": "2R 20:1",
+   "fin": "2R 20:11",
+   "titulo": "Enfermedad de Ezequías",
+   "titulo_origen": "editorial",
+   "resumen": "Ezequías ora y Jehová le añade quince años; como señal, la sombra vuelve atrás diez grados en el reloj de Acaz.",
+   "seccion": "Ezequías y Senaquerib (2 R 18–20)"
+  },
+  {
+   "id": "2r-43",
+   "libro": "2R",
+   "inicio": "2R 20:12",
+   "fin": "2R 20:21",
+   "titulo": "Los enviados de Babilonia",
+   "titulo_origen": "editorial",
+   "resumen": "Ezequías muestra sus tesoros a los enviados de Berodac-baladán; Isaías anuncia que todo será llevado a Babilonia.",
+   "seccion": "Ezequías y Senaquerib (2 R 18–20)"
+  },
+  {
+   "id": "2r-44",
+   "libro": "2R",
+   "inicio": "2R 21:1",
+   "fin": "2R 21:18",
+   "titulo": "Manasés",
+   "titulo_origen": "editorial",
+   "resumen": "Manasés reedifica los altos, levanta altares a Baal en la casa de Jehová y llena Jerusalén de sangre inocente.",
+   "seccion": "Manasés y Josías (2 R 21–23)"
+  },
+  {
+   "id": "2r-45",
+   "libro": "2R",
+   "inicio": "2R 21:19",
+   "fin": "2R 21:26",
+   "titulo": "Amón",
+   "titulo_origen": "editorial",
+   "resumen": "Amón anda en los caminos de su padre; sus siervos lo matan, y el pueblo pone por rey a Josías.",
+   "seccion": "Manasés y Josías (2 R 21–23)"
+  },
+  {
+   "id": "2r-46",
+   "libro": "2R",
+   "inicio": "2R 22:1",
+   "fin": "2R 22:20",
+   "titulo": "El libro de la ley",
+   "titulo_origen": "editorial",
+   "resumen": "Hilcías dice a Safán: «El libro de la ley he hallado»; Josías rasga sus vestidos y consultan a la profetisa Hulda.",
+   "seccion": "Manasés y Josías (2 R 21–23)"
+  },
+  {
+   "id": "2r-47",
+   "libro": "2R",
+   "inicio": "2R 23:1",
+   "fin": "2R 23:14",
+   "titulo": "Josías renueva el pacto",
+   "titulo_origen": "editorial",
+   "resumen": "Josías lee el libro del pacto al pueblo y quita del templo y de Judá los ídolos, los altos y los caballos del sol.",
+   "seccion": "Manasés y Josías (2 R 21–23)"
+  },
+  {
+   "id": "2r-48",
+   "libro": "2R",
+   "inicio": "2R 23:15",
+   "fin": "2R 23:27",
+   "titulo": "Betel; la pascua",
+   "titulo_origen": "editorial",
+   "resumen": "Josías destruye el altar de Betel, conforme a la palabra del varón de Dios, y celebra una pascua como no la hubo desde los jueces.",
+   "seccion": "Manasés y Josías (2 R 21–23)"
+  },
+  {
+   "id": "2r-49",
+   "libro": "2R",
+   "inicio": "2R 23:28",
+   "fin": "2R 23:37",
+   "titulo": "Muerte de Josías; Joacaz y Joacim",
+   "titulo_origen": "editorial",
+   "resumen": "Faraón Necao mata a Josías en Megido; prende a Joacaz y pone por rey a Eliaquim con el nombre de Joacim.",
+   "seccion": "Manasés y Josías (2 R 21–23)"
+  },
+  {
+   "id": "2r-50",
+   "libro": "2R",
+   "inicio": "2R 24:1",
+   "fin": "2R 24:20",
+   "titulo": "Joacim, Joaquín y Sedecías",
+   "titulo_origen": "editorial",
+   "resumen": "Joacim sirve a Nabucodonosor y se rebela; Joaquín es llevado a Babilonia con los tesoros del templo, y Sedecías reina en su lugar.",
+   "seccion": "La caída de Jerusalén (2 R 24–25)"
+  },
+  {
+   "id": "2r-51",
+   "libro": "2R",
+   "inicio": "2R 25:1",
+   "fin": "2R 25:21",
+   "titulo": "La caída de Jerusalén",
+   "titulo_origen": "editorial",
+   "resumen": "Nabucodonosor cerca Jerusalén; Sedecías es apresado en las llanuras de Jericó, y Nabuzaradán quema la casa de Jehová y derriba los muros.",
+   "seccion": "La caída de Jerusalén (2 R 24–25)"
+  },
+  {
+   "id": "2r-52",
+   "libro": "2R",
+   "inicio": "2R 25:22",
+   "fin": "2R 25:30",
+   "titulo": "Gedalías; Joaquín liberado",
+   "titulo_origen": "editorial",
+   "resumen": "Gedalías gobierna a los que quedan en Judá hasta que Ismael lo mata; Evil-merodac saca a Joaquín de la cárcel en Babilonia.",
+   "seccion": "La caída de Jerusalén (2 R 24–25)"
   }
  ],
  "menciones": [
@@ -126612,6 +134103,4722 @@ window.BIBLIA_DATOS = {
    "persona": "Nebat_1",
    "inicio": 136,
    "fin": 141
+  },
+  {
+   "ref": "2R 1:1",
+   "persona": "Ahab_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "2R 1:2",
+   "persona": "Ahaziah_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "2R 1:3",
+   "persona": "Elijah_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 1:4",
+   "persona": "Elijah_1",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "2R 1:8",
+   "persona": "Elijah_1",
+   "inicio": 102,
+   "fin": 107
+  },
+  {
+   "ref": "2R 1:10",
+   "persona": "Elijah_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "2R 1:12",
+   "persona": "Elijah_1",
+   "inicio": 14,
+   "fin": 19
+  },
+  {
+   "ref": "2R 1:13",
+   "persona": "Elijah_1",
+   "inicio": 145,
+   "fin": 150
+  },
+  {
+   "ref": "2R 1:15",
+   "persona": "Elijah_1",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "2R 1:17",
+   "persona": "Elijah_1",
+   "inicio": 58,
+   "fin": 63
+  },
+  {
+   "ref": "2R 1:17",
+   "persona": "Jehoram_2",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "2R 1:17",
+   "persona": "Jehoram_1",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "2R 1:17",
+   "persona": "Jehoshaphat_3",
+   "inicio": 128,
+   "fin": 136
+  },
+  {
+   "ref": "2R 1:17",
+   "persona": "Ahaziah_1",
+   "inicio": 158,
+   "fin": 166
+  },
+  {
+   "ref": "2R 1:18",
+   "persona": "Ahaziah_1",
+   "inicio": 28,
+   "fin": 36
+  },
+  {
+   "ref": "2R 2:1",
+   "persona": "Elijah_1",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "2R 2:1",
+   "persona": "Elijah_1",
+   "inicio": 78,
+   "fin": 83
+  },
+  {
+   "ref": "2R 2:1",
+   "persona": "Elisha_1",
+   "inicio": 94,
+   "fin": 100
+  },
+  {
+   "ref": "2R 2:2",
+   "persona": "Elijah_1",
+   "inicio": 7,
+   "fin": 12
+  },
+  {
+   "ref": "2R 2:2",
+   "persona": "Elisha_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "2R 2:2",
+   "persona": "Elisha_1",
+   "inicio": 84,
+   "fin": 90
+  },
+  {
+   "ref": "2R 2:3",
+   "persona": "Elisha_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "2R 2:4",
+   "persona": "Elijah_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "2R 2:4",
+   "persona": "Elisha_1",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "2R 2:5",
+   "persona": "Elisha_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "2R 2:6",
+   "persona": "Elijah_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "2R 2:8",
+   "persona": "Elijah_1",
+   "inicio": 17,
+   "fin": 22
+  },
+  {
+   "ref": "2R 2:9",
+   "persona": "Elijah_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "2R 2:9",
+   "persona": "Elisha_1",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "2R 2:9",
+   "persona": "Elisha_1",
+   "inicio": 123,
+   "fin": 129
+  },
+  {
+   "ref": "2R 2:11",
+   "persona": "Elijah_1",
+   "inicio": 108,
+   "fin": 113
+  },
+  {
+   "ref": "2R 2:12",
+   "persona": "Elisha_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "2R 2:13",
+   "persona": "Elijah_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "2R 2:14",
+   "persona": "Elijah_1",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "2R 2:14",
+   "persona": "Elijah_1",
+   "inicio": 107,
+   "fin": 112
+  },
+  {
+   "ref": "2R 2:14",
+   "persona": "Elisha_1",
+   "inicio": 202,
+   "fin": 208
+  },
+  {
+   "ref": "2R 2:15",
+   "persona": "Elijah_1",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "2R 2:15",
+   "persona": "Elisha_1",
+   "inicio": 120,
+   "fin": 126
+  },
+  {
+   "ref": "2R 2:19",
+   "persona": "Elisha_1",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "2R 2:22",
+   "persona": "Elisha_1",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "2R 3:1",
+   "persona": "Jehoram_2",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "2R 3:1",
+   "persona": "Ahab_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "2R 3:1",
+   "persona": "Jehoshaphat_3",
+   "inicio": 83,
+   "fin": 91
+  },
+  {
+   "ref": "2R 3:3",
+   "persona": "Jeroboam_1",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "2R 3:3",
+   "persona": "Nebat_1",
+   "inicio": 48,
+   "fin": 53
+  },
+  {
+   "ref": "2R 3:4",
+   "persona": "Mesha_1",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "2R 3:5",
+   "persona": "Ahab_1",
+   "inicio": 11,
+   "fin": 16
+  },
+  {
+   "ref": "2R 3:6",
+   "persona": "Jehoram_2",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "2R 3:7",
+   "persona": "Jehoshaphat_3",
+   "inicio": 24,
+   "fin": 32
+  },
+  {
+   "ref": "2R 3:11",
+   "persona": "Jehoshaphat_3",
+   "inicio": 4,
+   "fin": 12
+  },
+  {
+   "ref": "2R 3:11",
+   "persona": "Elisha_1",
+   "inicio": 156,
+   "fin": 162
+  },
+  {
+   "ref": "2R 3:11",
+   "persona": "Shaphat_2",
+   "inicio": 171,
+   "fin": 177
+  },
+  {
+   "ref": "2R 3:11",
+   "persona": "Elijah_1",
+   "inicio": 203,
+   "fin": 208
+  },
+  {
+   "ref": "2R 3:12",
+   "persona": "Jehoshaphat_3",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "2R 3:12",
+   "persona": "Jehoshaphat_3",
+   "inicio": 88,
+   "fin": 96
+  },
+  {
+   "ref": "2R 3:13",
+   "persona": "Elisha_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 3:14",
+   "persona": "Elisha_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 3:14",
+   "persona": "Jehoshaphat_3",
+   "inicio": 109,
+   "fin": 117
+  },
+  {
+   "ref": "2R 3:15",
+   "persona": "Elisha_1",
+   "inicio": 88,
+   "fin": 94
+  },
+  {
+   "ref": "2R 4:1",
+   "persona": "Elisha_1",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "2R 4:2",
+   "persona": "Elisha_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 4:8",
+   "persona": "Elisha_1",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "2R 4:12",
+   "persona": "Gehazi_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "2R 4:13",
+   "persona": "Gehazi_1",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "2R 4:14",
+   "persona": "Gehazi_1",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "2R 4:17",
+   "persona": "Elisha_1",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "2R 4:25",
+   "persona": "Gehazi_1",
+   "inicio": 121,
+   "fin": 126
+  },
+  {
+   "ref": "2R 4:27",
+   "persona": "Gehazi_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "2R 4:29",
+   "persona": "Gehazi_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "2R 4:31",
+   "persona": "Gehazi_1",
+   "inicio": 38,
+   "fin": 43
+  },
+  {
+   "ref": "2R 4:31",
+   "persona": "Elisha_1",
+   "inicio": 191,
+   "fin": 197
+  },
+  {
+   "ref": "2R 4:32",
+   "persona": "Elisha_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 4:36",
+   "persona": "Gehazi_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "2R 4:38",
+   "persona": "Elisha_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 5:1",
+   "persona": "Naaman_2",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "2R 5:2",
+   "persona": "Naaman_2",
+   "inicio": 131,
+   "fin": 137
+  },
+  {
+   "ref": "2R 5:4",
+   "persona": "Naaman_2",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 5:6",
+   "persona": "Naaman_2",
+   "inicio": 141,
+   "fin": 147
+  },
+  {
+   "ref": "2R 5:8",
+   "persona": "Elisha_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "2R 5:9",
+   "persona": "Naaman_2",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "2R 5:9",
+   "persona": "Elisha_1",
+   "inicio": 84,
+   "fin": 90
+  },
+  {
+   "ref": "2R 5:10",
+   "persona": "Elisha_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 5:11",
+   "persona": "Naaman_2",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 5:17",
+   "persona": "Naaman_2",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 5:20",
+   "persona": "Gehazi_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 5:20",
+   "persona": "Elisha_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "2R 5:20",
+   "persona": "Naaman_2",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "2R 5:21",
+   "persona": "Gehazi_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 5:21",
+   "persona": "Naaman_2",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "2R 5:21",
+   "persona": "Naaman_2",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "2R 5:23",
+   "persona": "Naaman_2",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 5:25",
+   "persona": "Elisha_1",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "2R 5:25",
+   "persona": "Gehazi_1",
+   "inicio": 78,
+   "fin": 83
+  },
+  {
+   "ref": "2R 5:27",
+   "persona": "Naaman_2",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 6:1",
+   "persona": "Elisha_1",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "2R 6:12",
+   "persona": "Elisha_1",
+   "inicio": 73,
+   "fin": 79
+  },
+  {
+   "ref": "2R 6:17",
+   "persona": "Elisha_1",
+   "inicio": 6,
+   "fin": 12
+  },
+  {
+   "ref": "2R 6:17",
+   "persona": "Elisha_1",
+   "inicio": 217,
+   "fin": 223
+  },
+  {
+   "ref": "2R 6:18",
+   "persona": "Elisha_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "2R 6:18",
+   "persona": "Elisha_1",
+   "inicio": 164,
+   "fin": 170
+  },
+  {
+   "ref": "2R 6:19",
+   "persona": "Elisha_1",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "2R 6:20",
+   "persona": "Elisha_1",
+   "inicio": 35,
+   "fin": 41
+  },
+  {
+   "ref": "2R 6:21",
+   "persona": "Elisha_1",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "2R 6:24",
+   "persona": "Ben-hadad_1",
+   "inicio": 31,
+   "fin": 39
+  },
+  {
+   "ref": "2R 6:31",
+   "persona": "Elisha_1",
+   "inicio": 61,
+   "fin": 67
+  },
+  {
+   "ref": "2R 6:31",
+   "persona": "Shaphat_2",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "2R 6:32",
+   "persona": "Elisha_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "2R 7:1",
+   "persona": "Elisha_1",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "2R 8:1",
+   "persona": "Elisha_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "2R 8:4",
+   "persona": "Gehazi_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "2R 8:4",
+   "persona": "Elisha_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "2R 8:5",
+   "persona": "Gehazi_1",
+   "inicio": 170,
+   "fin": 175
+  },
+  {
+   "ref": "2R 8:5",
+   "persona": "Elisha_1",
+   "inicio": 237,
+   "fin": 243
+  },
+  {
+   "ref": "2R 8:7",
+   "persona": "Elisha_1",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "2R 8:7",
+   "persona": "Ben-hadad_1",
+   "inicio": 33,
+   "fin": 41
+  },
+  {
+   "ref": "2R 8:8",
+   "persona": "Hazael_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "2R 8:9",
+   "persona": "Hazael_1",
+   "inicio": 10,
+   "fin": 16
+  },
+  {
+   "ref": "2R 8:9",
+   "persona": "Ben-hadad_1",
+   "inicio": 170,
+   "fin": 178
+  },
+  {
+   "ref": "2R 8:10",
+   "persona": "Elisha_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 8:12",
+   "persona": "Hazael_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "2R 8:13",
+   "persona": "Hazael_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 8:13",
+   "persona": "Elisha_1",
+   "inicio": 83,
+   "fin": 89
+  },
+  {
+   "ref": "2R 8:14",
+   "persona": "Elisha_1",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "2R 8:14",
+   "persona": "Elisha_1",
+   "inicio": 79,
+   "fin": 85
+  },
+  {
+   "ref": "2R 8:15",
+   "persona": "Ben-hadad_1",
+   "inicio": 86,
+   "fin": 94
+  },
+  {
+   "ref": "2R 8:15",
+   "persona": "Hazael_1",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "2R 8:16",
+   "persona": "Jehoram_2",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "2R 8:16",
+   "persona": "Ahab_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "2R 8:16",
+   "persona": "Jehoshaphat_3",
+   "inicio": 64,
+   "fin": 72
+  },
+  {
+   "ref": "2R 8:16",
+   "persona": "Jehoram_1",
+   "inicio": 103,
+   "fin": 108
+  },
+  {
+   "ref": "2R 8:16",
+   "persona": "Jehoshaphat_3",
+   "inicio": 117,
+   "fin": 125
+  },
+  {
+   "ref": "2R 8:18",
+   "persona": "Ahab_1",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "2R 8:18",
+   "persona": "Ahab_1",
+   "inicio": 93,
+   "fin": 98
+  },
+  {
+   "ref": "2R 8:19",
+   "persona": "David_1",
+   "inicio": 57,
+   "fin": 62
+  },
+  {
+   "ref": "2R 8:21",
+   "persona": "Jehoram_1",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "2R 8:23",
+   "persona": "Jehoram_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "2R 8:24",
+   "persona": "Jehoram_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 8:24",
+   "persona": "Ahaziah_2",
+   "inicio": 107,
+   "fin": 115
+  },
+  {
+   "ref": "2R 8:25",
+   "persona": "Jehoram_2",
+   "inicio": 18,
+   "fin": 23
+  },
+  {
+   "ref": "2R 8:25",
+   "persona": "Ahab_1",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "2R 8:25",
+   "persona": "Ahaziah_2",
+   "inicio": 70,
+   "fin": 78
+  },
+  {
+   "ref": "2R 8:25",
+   "persona": "Jehoram_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "2R 8:26",
+   "persona": "Ahaziah_2",
+   "inicio": 22,
+   "fin": 30
+  },
+  {
+   "ref": "2R 8:26",
+   "persona": "Athaliah_1",
+   "inicio": 111,
+   "fin": 118
+  },
+  {
+   "ref": "2R 8:26",
+   "persona": "Omri_1",
+   "inicio": 127,
+   "fin": 131
+  },
+  {
+   "ref": "2R 8:27",
+   "persona": "Ahab_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 8:27",
+   "persona": "Ahab_1",
+   "inicio": 93,
+   "fin": 98
+  },
+  {
+   "ref": "2R 8:27",
+   "persona": "Ahab_1",
+   "inicio": 131,
+   "fin": 136
+  },
+  {
+   "ref": "2R 8:28",
+   "persona": "Jehoram_2",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "2R 8:28",
+   "persona": "Ahab_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 8:28",
+   "persona": "Hazael_1",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "2R 8:28",
+   "persona": "Jehoram_2",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "2R 8:29",
+   "persona": "Jehoram_2",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 8:29",
+   "persona": "Hazael_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "2R 8:29",
+   "persona": "Ahaziah_2",
+   "inicio": 162,
+   "fin": 170
+  },
+  {
+   "ref": "2R 8:29",
+   "persona": "Jehoram_1",
+   "inicio": 179,
+   "fin": 184
+  },
+  {
+   "ref": "2R 8:29",
+   "persona": "Jehoram_2",
+   "inicio": 210,
+   "fin": 215
+  },
+  {
+   "ref": "2R 8:29",
+   "persona": "Ahab_1",
+   "inicio": 224,
+   "fin": 229
+  },
+  {
+   "ref": "2R 9:1",
+   "persona": "Elisha_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "2R 9:2",
+   "persona": "Jehu_2",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "2R 9:2",
+   "persona": "Jehoshaphat_4",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "2R 9:2",
+   "persona": "Nimshi_1",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "2R 9:5",
+   "persona": "Jehu_2",
+   "inicio": 128,
+   "fin": 132
+  },
+  {
+   "ref": "2R 9:7",
+   "persona": "Ahab_1",
+   "inicio": 21,
+   "fin": 26
+  },
+  {
+   "ref": "2R 9:7",
+   "persona": "Jezebel_1",
+   "inicio": 153,
+   "fin": 160
+  },
+  {
+   "ref": "2R 9:8",
+   "persona": "Ahab_1",
+   "inicio": 27,
+   "fin": 32
+  },
+  {
+   "ref": "2R 9:8",
+   "persona": "Ahab_1",
+   "inicio": 46,
+   "fin": 51
+  },
+  {
+   "ref": "2R 9:9",
+   "persona": "Ahab_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "2R 9:9",
+   "persona": "Jeroboam_1",
+   "inicio": 45,
+   "fin": 53
+  },
+  {
+   "ref": "2R 9:9",
+   "persona": "Nebat_1",
+   "inicio": 62,
+   "fin": 67
+  },
+  {
+   "ref": "2R 9:9",
+   "persona": "Baasha_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "2R 9:9",
+   "persona": "Ahijah_3",
+   "inicio": 101,
+   "fin": 105
+  },
+  {
+   "ref": "2R 9:10",
+   "persona": "Jezebel_1",
+   "inicio": 4,
+   "fin": 11
+  },
+  {
+   "ref": "2R 9:11",
+   "persona": "Jehu_2",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "2R 9:13",
+   "persona": "Jehu_2",
+   "inicio": 117,
+   "fin": 121
+  },
+  {
+   "ref": "2R 9:14",
+   "persona": "Jehu_2",
+   "inicio": 12,
+   "fin": 16
+  },
+  {
+   "ref": "2R 9:14",
+   "persona": "Jehoshaphat_4",
+   "inicio": 25,
+   "fin": 33
+  },
+  {
+   "ref": "2R 9:14",
+   "persona": "Nimshi_1",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "2R 9:14",
+   "persona": "Jehoram_2",
+   "inicio": 56,
+   "fin": 61
+  },
+  {
+   "ref": "2R 9:14",
+   "persona": "Jehoram_2",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "2R 9:14",
+   "persona": "Hazael_1",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "2R 9:15",
+   "persona": "Jehoram_2",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "2R 9:15",
+   "persona": "Hazael_1",
+   "inicio": 121,
+   "fin": 127
+  },
+  {
+   "ref": "2R 9:15",
+   "persona": "Jehu_2",
+   "inicio": 145,
+   "fin": 149
+  },
+  {
+   "ref": "2R 9:16",
+   "persona": "Jehu_2",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "2R 9:16",
+   "persona": "Jehoram_2",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "2R 9:16",
+   "persona": "Ahaziah_2",
+   "inicio": 84,
+   "fin": 92
+  },
+  {
+   "ref": "2R 9:16",
+   "persona": "Jehoram_2",
+   "inicio": 134,
+   "fin": 139
+  },
+  {
+   "ref": "2R 9:17",
+   "persona": "Jehu_2",
+   "inicio": 68,
+   "fin": 72
+  },
+  {
+   "ref": "2R 9:17",
+   "persona": "Jehoram_2",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "2R 9:18",
+   "persona": "Jehu_2",
+   "inicio": 78,
+   "fin": 82
+  },
+  {
+   "ref": "2R 9:19",
+   "persona": "Jehu_2",
+   "inicio": 95,
+   "fin": 99
+  },
+  {
+   "ref": "2R 9:20",
+   "persona": "Jehu_2",
+   "inicio": 120,
+   "fin": 124
+  },
+  {
+   "ref": "2R 9:20",
+   "persona": "Nimshi_1",
+   "inicio": 133,
+   "fin": 138
+  },
+  {
+   "ref": "2R 9:21",
+   "persona": "Jehoram_2",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 9:21",
+   "persona": "Jehoram_2",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "2R 9:21",
+   "persona": "Ahaziah_2",
+   "inicio": 83,
+   "fin": 91
+  },
+  {
+   "ref": "2R 9:21",
+   "persona": "Jehu_2",
+   "inicio": 152,
+   "fin": 156
+  },
+  {
+   "ref": "2R 9:21",
+   "persona": "Naboth_1",
+   "inicio": 192,
+   "fin": 198
+  },
+  {
+   "ref": "2R 9:22",
+   "persona": "Jehoram_2",
+   "inicio": 12,
+   "fin": 17
+  },
+  {
+   "ref": "2R 9:22",
+   "persona": "Jehu_2",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "2R 9:22",
+   "persona": "Jehu_2",
+   "inicio": 42,
+   "fin": 46
+  },
+  {
+   "ref": "2R 9:22",
+   "persona": "Jezebel_1",
+   "inicio": 99,
+   "fin": 106
+  },
+  {
+   "ref": "2R 9:23",
+   "persona": "Jehoram_2",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 9:23",
+   "persona": "Ahaziah_2",
+   "inicio": 48,
+   "fin": 56
+  },
+  {
+   "ref": "2R 9:23",
+   "persona": "Ahaziah_2",
+   "inicio": 69,
+   "fin": 77
+  },
+  {
+   "ref": "2R 9:24",
+   "persona": "Jehu_2",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "2R 9:24",
+   "persona": "Jehoram_2",
+   "inicio": 35,
+   "fin": 40
+  },
+  {
+   "ref": "2R 9:25",
+   "persona": "Bidkar_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "2R 9:25",
+   "persona": "Naboth_1",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "2R 9:25",
+   "persona": "Ahab_1",
+   "inicio": 160,
+   "fin": 165
+  },
+  {
+   "ref": "2R 9:26",
+   "persona": "Naboth_1",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "2R 9:27",
+   "persona": "Ahaziah_2",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "2R 9:27",
+   "persona": "Jehu_2",
+   "inicio": 89,
+   "fin": 93
+  },
+  {
+   "ref": "2R 9:29",
+   "persona": "Jehoram_2",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "2R 9:29",
+   "persona": "Ahab_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 9:29",
+   "persona": "Ahaziah_2",
+   "inicio": 60,
+   "fin": 68
+  },
+  {
+   "ref": "2R 9:30",
+   "persona": "Jehu_2",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "2R 9:30",
+   "persona": "Jezebel_1",
+   "inicio": 36,
+   "fin": 43
+  },
+  {
+   "ref": "2R 9:31",
+   "persona": "Jehu_2",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "2R 9:36",
+   "persona": "Elijah_1",
+   "inicio": 106,
+   "fin": 111
+  },
+  {
+   "ref": "2R 9:36",
+   "persona": "Jezebel_1",
+   "inicio": 190,
+   "fin": 197
+  },
+  {
+   "ref": "2R 9:37",
+   "persona": "Jezebel_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "2R 9:37",
+   "persona": "Jezebel_1",
+   "inicio": 135,
+   "fin": 142
+  },
+  {
+   "ref": "2R 10:1",
+   "persona": "Ahab_1",
+   "inicio": 8,
+   "fin": 13
+  },
+  {
+   "ref": "2R 10:1",
+   "persona": "Jehu_2",
+   "inicio": 58,
+   "fin": 62
+  },
+  {
+   "ref": "2R 10:1",
+   "persona": "Ahab_1",
+   "inicio": 146,
+   "fin": 151
+  },
+  {
+   "ref": "2R 10:5",
+   "persona": "Jehu_2",
+   "inicio": 93,
+   "fin": 97
+  },
+  {
+   "ref": "2R 10:10",
+   "persona": "Ahab_1",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "2R 10:10",
+   "persona": "Elijah_1",
+   "inicio": 144,
+   "fin": 149
+  },
+  {
+   "ref": "2R 10:11",
+   "persona": "Jehu_2",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "2R 10:11",
+   "persona": "Ahab_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "2R 10:13",
+   "persona": "Ahaziah_2",
+   "inicio": 31,
+   "fin": 39
+  },
+  {
+   "ref": "2R 10:13",
+   "persona": "Ahaziah_2",
+   "inicio": 121,
+   "fin": 129
+  },
+  {
+   "ref": "2R 10:15",
+   "persona": "Jehonadab_1",
+   "inicio": 41,
+   "fin": 48
+  },
+  {
+   "ref": "2R 10:15",
+   "persona": "Rechab_2",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "2R 10:15",
+   "persona": "Jehonadab_1",
+   "inicio": 163,
+   "fin": 170
+  },
+  {
+   "ref": "2R 10:17",
+   "persona": "Ahab_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "2R 10:17",
+   "persona": "Elijah_1",
+   "inicio": 174,
+   "fin": 179
+  },
+  {
+   "ref": "2R 10:18",
+   "persona": "Jehu_2",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "2R 10:18",
+   "persona": "Ahab_1",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "2R 10:18",
+   "persona": "Jehu_2",
+   "inicio": 70,
+   "fin": 74
+  },
+  {
+   "ref": "2R 10:19",
+   "persona": "Jehu_2",
+   "inicio": 203,
+   "fin": 207
+  },
+  {
+   "ref": "2R 10:20",
+   "persona": "Jehu_2",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "2R 10:21",
+   "persona": "Jehu_2",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "2R 10:23",
+   "persona": "Jehu_2",
+   "inicio": 8,
+   "fin": 12
+  },
+  {
+   "ref": "2R 10:23",
+   "persona": "Jehonadab_1",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "2R 10:23",
+   "persona": "Rechab_2",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "2R 10:24",
+   "persona": "Jehu_2",
+   "inicio": 60,
+   "fin": 64
+  },
+  {
+   "ref": "2R 10:25",
+   "persona": "Jehu_2",
+   "inicio": 53,
+   "fin": 57
+  },
+  {
+   "ref": "2R 10:28",
+   "persona": "Jehu_2",
+   "inicio": 14,
+   "fin": 18
+  },
+  {
+   "ref": "2R 10:29",
+   "persona": "Jehu_2",
+   "inicio": 13,
+   "fin": 17
+  },
+  {
+   "ref": "2R 10:29",
+   "persona": "Jeroboam_1",
+   "inicio": 49,
+   "fin": 57
+  },
+  {
+   "ref": "2R 10:29",
+   "persona": "Nebat_1",
+   "inicio": 66,
+   "fin": 71
+  },
+  {
+   "ref": "2R 10:30",
+   "persona": "Jehu_2",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "2R 10:30",
+   "persona": "Ahab_1",
+   "inicio": 112,
+   "fin": 117
+  },
+  {
+   "ref": "2R 10:31",
+   "persona": "Jehu_2",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "2R 10:31",
+   "persona": "Jeroboam_1",
+   "inicio": 114,
+   "fin": 122
+  },
+  {
+   "ref": "2R 10:32",
+   "persona": "Hazael_1",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "2R 10:34",
+   "persona": "Jehu_2",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 10:35",
+   "persona": "Jehu_2",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "2R 10:35",
+   "persona": "Jehoahaz_1",
+   "inicio": 77,
+   "fin": 84
+  },
+  {
+   "ref": "2R 10:36",
+   "persona": "Jehu_2",
+   "inicio": 20,
+   "fin": 24
+  },
+  {
+   "ref": "2R 11:1",
+   "persona": "Athaliah_1",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "2R 11:1",
+   "persona": "Ahaziah_2",
+   "inicio": 19,
+   "fin": 27
+  },
+  {
+   "ref": "2R 11:2",
+   "persona": "Jehosheba_1",
+   "inicio": 13,
+   "fin": 19
+  },
+  {
+   "ref": "2R 11:2",
+   "persona": "Jehoram_1",
+   "inicio": 33,
+   "fin": 38
+  },
+  {
+   "ref": "2R 11:2",
+   "persona": "Ahaziah_2",
+   "inicio": 51,
+   "fin": 59
+  },
+  {
+   "ref": "2R 11:2",
+   "persona": "Joash_3",
+   "inicio": 63,
+   "fin": 67
+  },
+  {
+   "ref": "2R 11:2",
+   "persona": "Ahaziah_2",
+   "inicio": 76,
+   "fin": 84
+  },
+  {
+   "ref": "2R 11:2",
+   "persona": "Athaliah_1",
+   "inicio": 175,
+   "fin": 182
+  },
+  {
+   "ref": "2R 11:3",
+   "persona": "Athaliah_1",
+   "inicio": 62,
+   "fin": 69
+  },
+  {
+   "ref": "2R 11:4",
+   "persona": "Jehoiada_2",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "2R 11:9",
+   "persona": "Jehoiada_2",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "2R 11:9",
+   "persona": "Jehoiada_2",
+   "inicio": 200,
+   "fin": 206
+  },
+  {
+   "ref": "2R 11:10",
+   "persona": "David_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "2R 11:13",
+   "persona": "Athaliah_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 11:14",
+   "persona": "Athaliah_1",
+   "inicio": 214,
+   "fin": 221
+  },
+  {
+   "ref": "2R 11:15",
+   "persona": "Jehoiada_2",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "2R 11:17",
+   "persona": "Jehoiada_2",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 11:18",
+   "persona": "Mattan_1",
+   "inicio": 148,
+   "fin": 154
+  },
+  {
+   "ref": "2R 11:20",
+   "persona": "Athaliah_1",
+   "inicio": 89,
+   "fin": 96
+  },
+  {
+   "ref": "2R 11:21",
+   "persona": "Joash_3",
+   "inicio": 4,
+   "fin": 8
+  },
+  {
+   "ref": "2R 12:1",
+   "persona": "Jehu_2",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "2R 12:1",
+   "persona": "Joash_3",
+   "inicio": 43,
+   "fin": 47
+  },
+  {
+   "ref": "2R 12:1",
+   "persona": "Zibiah_1",
+   "inicio": 111,
+   "fin": 116
+  },
+  {
+   "ref": "2R 12:2",
+   "persona": "Joash_3",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "2R 12:2",
+   "persona": "Jehoiada_2",
+   "inicio": 82,
+   "fin": 88
+  },
+  {
+   "ref": "2R 12:4",
+   "persona": "Joash_3",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "2R 12:6",
+   "persona": "Joash_3",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "2R 12:7",
+   "persona": "Joash_3",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "2R 12:7",
+   "persona": "Jehoiada_2",
+   "inicio": 43,
+   "fin": 49
+  },
+  {
+   "ref": "2R 12:9",
+   "persona": "Jehoiada_2",
+   "inicio": 17,
+   "fin": 23
+  },
+  {
+   "ref": "2R 12:17",
+   "persona": "Hazael_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "2R 12:17",
+   "persona": "Hazael_1",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "2R 12:18",
+   "persona": "Joash_3",
+   "inicio": 16,
+   "fin": 20
+  },
+  {
+   "ref": "2R 12:18",
+   "persona": "Jehoshaphat_3",
+   "inicio": 71,
+   "fin": 79
+  },
+  {
+   "ref": "2R 12:18",
+   "persona": "Jehoram_1",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "2R 12:18",
+   "persona": "Ahaziah_2",
+   "inicio": 91,
+   "fin": 99
+  },
+  {
+   "ref": "2R 12:18",
+   "persona": "Hazael_1",
+   "inicio": 254,
+   "fin": 260
+  },
+  {
+   "ref": "2R 12:19",
+   "persona": "Joash_3",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 12:20",
+   "persona": "Joash_3",
+   "inicio": 70,
+   "fin": 74
+  },
+  {
+   "ref": "2R 12:21",
+   "persona": "Jozacar_1",
+   "inicio": 5,
+   "fin": 13
+  },
+  {
+   "ref": "2R 12:21",
+   "persona": "Shimeath_1",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "2R 12:21",
+   "persona": "Jehozabad_1",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "2R 12:21",
+   "persona": "Shomer_1",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "2R 12:21",
+   "persona": "Amaziah_1",
+   "inicio": 163,
+   "fin": 170
+  },
+  {
+   "ref": "2R 13:1",
+   "persona": "Joash_3",
+   "inicio": 24,
+   "fin": 28
+  },
+  {
+   "ref": "2R 13:1",
+   "persona": "Ahaziah_2",
+   "inicio": 37,
+   "fin": 45
+  },
+  {
+   "ref": "2R 13:1",
+   "persona": "Jehoahaz_1",
+   "inicio": 77,
+   "fin": 84
+  },
+  {
+   "ref": "2R 13:1",
+   "persona": "Jehu_2",
+   "inicio": 93,
+   "fin": 97
+  },
+  {
+   "ref": "2R 13:2",
+   "persona": "Jeroboam_1",
+   "inicio": 58,
+   "fin": 66
+  },
+  {
+   "ref": "2R 13:2",
+   "persona": "Nebat_1",
+   "inicio": 75,
+   "fin": 80
+  },
+  {
+   "ref": "2R 13:3",
+   "persona": "Hazael_1",
+   "inicio": 71,
+   "fin": 77
+  },
+  {
+   "ref": "2R 13:3",
+   "persona": "Ben-hadad_2",
+   "inicio": 105,
+   "fin": 113
+  },
+  {
+   "ref": "2R 13:3",
+   "persona": "Hazael_1",
+   "inicio": 122,
+   "fin": 128
+  },
+  {
+   "ref": "2R 13:4",
+   "persona": "Jehoahaz_1",
+   "inicio": 4,
+   "fin": 11
+  },
+  {
+   "ref": "2R 13:6",
+   "persona": "Jeroboam_1",
+   "inicio": 58,
+   "fin": 66
+  },
+  {
+   "ref": "2R 13:7",
+   "persona": "Jehoahaz_1",
+   "inicio": 35,
+   "fin": 42
+  },
+  {
+   "ref": "2R 13:8",
+   "persona": "Jehoahaz_1",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "2R 13:9",
+   "persona": "Jehoahaz_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 13:9",
+   "persona": "Joash_4",
+   "inicio": 80,
+   "fin": 84
+  },
+  {
+   "ref": "2R 13:10",
+   "persona": "Joash_3",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 13:10",
+   "persona": "Joash_4",
+   "inicio": 61,
+   "fin": 65
+  },
+  {
+   "ref": "2R 13:10",
+   "persona": "Jehoahaz_1",
+   "inicio": 74,
+   "fin": 81
+  },
+  {
+   "ref": "2R 13:11",
+   "persona": "Jeroboam_1",
+   "inicio": 71,
+   "fin": 79
+  },
+  {
+   "ref": "2R 13:11",
+   "persona": "Nebat_1",
+   "inicio": 88,
+   "fin": 93
+  },
+  {
+   "ref": "2R 13:12",
+   "persona": "Joash_4",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 13:12",
+   "persona": "Amaziah_1",
+   "inicio": 97,
+   "fin": 104
+  },
+  {
+   "ref": "2R 13:13",
+   "persona": "Joash_4",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "2R 13:13",
+   "persona": "Jeroboam_2",
+   "inicio": 40,
+   "fin": 48
+  },
+  {
+   "ref": "2R 13:13",
+   "persona": "Joash_4",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "2R 13:14",
+   "persona": "Elisha_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "2R 13:14",
+   "persona": "Joash_4",
+   "inicio": 78,
+   "fin": 82
+  },
+  {
+   "ref": "2R 13:15",
+   "persona": "Elisha_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 13:16",
+   "persona": "Elisha_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "2R 13:16",
+   "persona": "Elisha_1",
+   "inicio": 108,
+   "fin": 114
+  },
+  {
+   "ref": "2R 13:17",
+   "persona": "Elisha_1",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "2R 13:17",
+   "persona": "Elisha_1",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "2R 13:20",
+   "persona": "Elisha_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "2R 13:21",
+   "persona": "Elisha_1",
+   "inicio": 116,
+   "fin": 122
+  },
+  {
+   "ref": "2R 13:21",
+   "persona": "Elisha_1",
+   "inicio": 171,
+   "fin": 177
+  },
+  {
+   "ref": "2R 13:22",
+   "persona": "Hazael_1",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "2R 13:22",
+   "persona": "Jehoahaz_1",
+   "inicio": 62,
+   "fin": 69
+  },
+  {
+   "ref": "2R 13:23",
+   "persona": "Abram_1",
+   "inicio": 100,
+   "fin": 107
+  },
+  {
+   "ref": "2R 13:23",
+   "persona": "Isaac_1",
+   "inicio": 109,
+   "fin": 114
+  },
+  {
+   "ref": "2R 13:23",
+   "persona": "Jacob_1",
+   "inicio": 117,
+   "fin": 122
+  },
+  {
+   "ref": "2R 13:24",
+   "persona": "Hazael_1",
+   "inicio": 8,
+   "fin": 14
+  },
+  {
+   "ref": "2R 13:24",
+   "persona": "Ben-hadad_2",
+   "inicio": 49,
+   "fin": 57
+  },
+  {
+   "ref": "2R 13:25",
+   "persona": "Joash_4",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "2R 13:25",
+   "persona": "Jehoahaz_1",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "2R 13:25",
+   "persona": "Ben-hadad_2",
+   "inicio": 49,
+   "fin": 57
+  },
+  {
+   "ref": "2R 13:25",
+   "persona": "Hazael_1",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "2R 13:25",
+   "persona": "Jehoahaz_1",
+   "inicio": 118,
+   "fin": 125
+  },
+  {
+   "ref": "2R 13:25",
+   "persona": "Joash_4",
+   "inicio": 166,
+   "fin": 170
+  },
+  {
+   "ref": "2R 14:1",
+   "persona": "Joash_4",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "2R 14:1",
+   "persona": "Jehoahaz_1",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "2R 14:1",
+   "persona": "Amaziah_1",
+   "inicio": 74,
+   "fin": 81
+  },
+  {
+   "ref": "2R 14:1",
+   "persona": "Joash_3",
+   "inicio": 90,
+   "fin": 94
+  },
+  {
+   "ref": "2R 14:2",
+   "persona": "Jehoaddin_1",
+   "inicio": 114,
+   "fin": 121
+  },
+  {
+   "ref": "2R 14:3",
+   "persona": "David_1",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "2R 14:3",
+   "persona": "Joash_3",
+   "inicio": 117,
+   "fin": 121
+  },
+  {
+   "ref": "2R 14:6",
+   "persona": "Moses_1",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "2R 14:8",
+   "persona": "Amaziah_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 14:8",
+   "persona": "Joash_4",
+   "inicio": 37,
+   "fin": 41
+  },
+  {
+   "ref": "2R 14:8",
+   "persona": "Jehoahaz_1",
+   "inicio": 51,
+   "fin": 58
+  },
+  {
+   "ref": "2R 14:8",
+   "persona": "Jehu_2",
+   "inicio": 67,
+   "fin": 71
+  },
+  {
+   "ref": "2R 14:9",
+   "persona": "Joash_4",
+   "inicio": 2,
+   "fin": 6
+  },
+  {
+   "ref": "2R 14:9",
+   "persona": "Amaziah_1",
+   "inicio": 29,
+   "fin": 36
+  },
+  {
+   "ref": "2R 14:11",
+   "persona": "Amaziah_1",
+   "inicio": 4,
+   "fin": 11
+  },
+  {
+   "ref": "2R 14:11",
+   "persona": "Joash_4",
+   "inicio": 43,
+   "fin": 47
+  },
+  {
+   "ref": "2R 14:11",
+   "persona": "Amaziah_1",
+   "inicio": 89,
+   "fin": 96
+  },
+  {
+   "ref": "2R 14:13",
+   "persona": "Joash_4",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "2R 14:13",
+   "persona": "Amaziah_1",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "2R 14:13",
+   "persona": "Joash_3",
+   "inicio": 62,
+   "fin": 66
+  },
+  {
+   "ref": "2R 14:13",
+   "persona": "Ahaziah_2",
+   "inicio": 75,
+   "fin": 83
+  },
+  {
+   "ref": "2R 14:15",
+   "persona": "Joash_4",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 14:15",
+   "persona": "Amaziah_1",
+   "inicio": 79,
+   "fin": 86
+  },
+  {
+   "ref": "2R 14:16",
+   "persona": "Joash_4",
+   "inicio": 9,
+   "fin": 13
+  },
+  {
+   "ref": "2R 14:16",
+   "persona": "Jeroboam_2",
+   "inicio": 102,
+   "fin": 110
+  },
+  {
+   "ref": "2R 14:17",
+   "persona": "Amaziah_1",
+   "inicio": 2,
+   "fin": 9
+  },
+  {
+   "ref": "2R 14:17",
+   "persona": "Joash_3",
+   "inicio": 18,
+   "fin": 22
+  },
+  {
+   "ref": "2R 14:17",
+   "persona": "Joash_4",
+   "inicio": 66,
+   "fin": 70
+  },
+  {
+   "ref": "2R 14:17",
+   "persona": "Jehoahaz_1",
+   "inicio": 79,
+   "fin": 86
+  },
+  {
+   "ref": "2R 14:18",
+   "persona": "Amaziah_1",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "2R 14:21",
+   "persona": "Azariah_3",
+   "inicio": 39,
+   "fin": 46
+  },
+  {
+   "ref": "2R 14:21",
+   "persona": "Amaziah_1",
+   "inicio": 106,
+   "fin": 113
+  },
+  {
+   "ref": "2R 14:23",
+   "persona": "Amaziah_1",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "2R 14:23",
+   "persona": "Joash_3",
+   "inicio": 33,
+   "fin": 37
+  },
+  {
+   "ref": "2R 14:23",
+   "persona": "Jeroboam_2",
+   "inicio": 68,
+   "fin": 76
+  },
+  {
+   "ref": "2R 14:23",
+   "persona": "Joash_4",
+   "inicio": 85,
+   "fin": 89
+  },
+  {
+   "ref": "2R 14:24",
+   "persona": "Jeroboam_1",
+   "inicio": 73,
+   "fin": 81
+  },
+  {
+   "ref": "2R 14:24",
+   "persona": "Nebat_1",
+   "inicio": 90,
+   "fin": 95
+  },
+  {
+   "ref": "2R 14:25",
+   "persona": "Jonah_1",
+   "inicio": 177,
+   "fin": 182
+  },
+  {
+   "ref": "2R 14:25",
+   "persona": "Amittai_1",
+   "inicio": 191,
+   "fin": 198
+  },
+  {
+   "ref": "2R 14:27",
+   "persona": "Jeroboam_2",
+   "inicio": 109,
+   "fin": 117
+  },
+  {
+   "ref": "2R 14:27",
+   "persona": "Joash_4",
+   "inicio": 126,
+   "fin": 130
+  },
+  {
+   "ref": "2R 14:28",
+   "persona": "Jeroboam_2",
+   "inicio": 28,
+   "fin": 36
+  },
+  {
+   "ref": "2R 14:29",
+   "persona": "Jeroboam_2",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "2R 14:29",
+   "persona": "Zechariah_1",
+   "inicio": 75,
+   "fin": 84
+  },
+  {
+   "ref": "2R 15:1",
+   "persona": "Jeroboam_2",
+   "inicio": 25,
+   "fin": 33
+  },
+  {
+   "ref": "2R 15:1",
+   "persona": "Azariah_3",
+   "inicio": 67,
+   "fin": 74
+  },
+  {
+   "ref": "2R 15:1",
+   "persona": "Amaziah_1",
+   "inicio": 83,
+   "fin": 90
+  },
+  {
+   "ref": "2R 15:2",
+   "persona": "Jecoliah_1",
+   "inicio": 116,
+   "fin": 123
+  },
+  {
+   "ref": "2R 15:3",
+   "persona": "Amaziah_1",
+   "inicio": 75,
+   "fin": 82
+  },
+  {
+   "ref": "2R 15:5",
+   "persona": "Jotham_2",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "2R 15:6",
+   "persona": "Azariah_3",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "2R 15:7",
+   "persona": "Azariah_3",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 15:7",
+   "persona": "Jotham_2",
+   "inicio": 106,
+   "fin": 112
+  },
+  {
+   "ref": "2R 15:8",
+   "persona": "Azariah_3",
+   "inicio": 28,
+   "fin": 35
+  },
+  {
+   "ref": "2R 15:8",
+   "persona": "Zechariah_1",
+   "inicio": 55,
+   "fin": 64
+  },
+  {
+   "ref": "2R 15:8",
+   "persona": "Jeroboam_2",
+   "inicio": 73,
+   "fin": 81
+  },
+  {
+   "ref": "2R 15:9",
+   "persona": "Jeroboam_1",
+   "inicio": 95,
+   "fin": 103
+  },
+  {
+   "ref": "2R 15:9",
+   "persona": "Nebat_1",
+   "inicio": 112,
+   "fin": 117
+  },
+  {
+   "ref": "2R 15:10",
+   "persona": "Shallum_1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "2R 15:10",
+   "persona": "Jabesh_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 15:11",
+   "persona": "Zechariah_1",
+   "inicio": 26,
+   "fin": 35
+  },
+  {
+   "ref": "2R 15:12",
+   "persona": "Jehu_2",
+   "inicio": 52,
+   "fin": 56
+  },
+  {
+   "ref": "2R 15:13",
+   "persona": "Shallum_1",
+   "inicio": 0,
+   "fin": 6
+  },
+  {
+   "ref": "2R 15:13",
+   "persona": "Jabesh_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "2R 15:13",
+   "persona": "Azariah_3",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "2R 15:14",
+   "persona": "Menachem_1",
+   "inicio": 11,
+   "fin": 18
+  },
+  {
+   "ref": "2R 15:14",
+   "persona": "Gadi_1",
+   "inicio": 27,
+   "fin": 31
+  },
+  {
+   "ref": "2R 15:14",
+   "persona": "Shallum_1",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "2R 15:14",
+   "persona": "Jabesh_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "2R 15:15",
+   "persona": "Shallum_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "2R 15:16",
+   "persona": "Menachem_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "2R 15:17",
+   "persona": "Azariah_3",
+   "inicio": 29,
+   "fin": 36
+  },
+  {
+   "ref": "2R 15:17",
+   "persona": "Menachem_1",
+   "inicio": 56,
+   "fin": 63
+  },
+  {
+   "ref": "2R 15:17",
+   "persona": "Gadi_1",
+   "inicio": 72,
+   "fin": 76
+  },
+  {
+   "ref": "2R 15:18",
+   "persona": "Jeroboam_1",
+   "inicio": 83,
+   "fin": 91
+  },
+  {
+   "ref": "2R 15:18",
+   "persona": "Nebat_1",
+   "inicio": 100,
+   "fin": 105
+  },
+  {
+   "ref": "2R 15:19",
+   "persona": "Pul_1",
+   "inicio": 7,
+   "fin": 11
+  },
+  {
+   "ref": "2R 15:19",
+   "persona": "Menachem_1",
+   "inicio": 45,
+   "fin": 52
+  },
+  {
+   "ref": "2R 15:19",
+   "persona": "Pul_1",
+   "inicio": 55,
+   "fin": 59
+  },
+  {
+   "ref": "2R 15:20",
+   "persona": "Menachem_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 15:21",
+   "persona": "Menachem_1",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "2R 15:22",
+   "persona": "Menachem_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 15:22",
+   "persona": "Pekahiah_1",
+   "inicio": 53,
+   "fin": 59
+  },
+  {
+   "ref": "2R 15:23",
+   "persona": "Azariah_3",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "2R 15:23",
+   "persona": "Pekahiah_1",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "2R 15:23",
+   "persona": "Menachem_1",
+   "inicio": 65,
+   "fin": 72
+  },
+  {
+   "ref": "2R 15:24",
+   "persona": "Jeroboam_1",
+   "inicio": 65,
+   "fin": 73
+  },
+  {
+   "ref": "2R 15:24",
+   "persona": "Nebat_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "2R 15:25",
+   "persona": "Pekah_1",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "2R 15:25",
+   "persona": "Remaliah_1",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "2R 15:25",
+   "persona": "Argob_1",
+   "inicio": 126,
+   "fin": 131
+  },
+  {
+   "ref": "2R 15:25",
+   "persona": "Arieh_1",
+   "inicio": 137,
+   "fin": 142
+  },
+  {
+   "ref": "2R 15:26",
+   "persona": "Pekahiah_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "2R 15:27",
+   "persona": "Azariah_3",
+   "inicio": 29,
+   "fin": 36
+  },
+  {
+   "ref": "2R 15:27",
+   "persona": "Pekah_1",
+   "inicio": 56,
+   "fin": 60
+  },
+  {
+   "ref": "2R 15:27",
+   "persona": "Remaliah_1",
+   "inicio": 69,
+   "fin": 77
+  },
+  {
+   "ref": "2R 15:28",
+   "persona": "Jeroboam_1",
+   "inicio": 65,
+   "fin": 73
+  },
+  {
+   "ref": "2R 15:28",
+   "persona": "Nebat_1",
+   "inicio": 82,
+   "fin": 87
+  },
+  {
+   "ref": "2R 15:29",
+   "persona": "Pekah_1",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "2R 15:29",
+   "persona": "Tiglath-pileser_1",
+   "inicio": 40,
+   "fin": 55
+  },
+  {
+   "ref": "2R 15:30",
+   "persona": "Hoshea_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "2R 15:30",
+   "persona": "Elah_3",
+   "inicio": 16,
+   "fin": 19
+  },
+  {
+   "ref": "2R 15:30",
+   "persona": "Pekah_1",
+   "inicio": 44,
+   "fin": 48
+  },
+  {
+   "ref": "2R 15:30",
+   "persona": "Remaliah_1",
+   "inicio": 57,
+   "fin": 65
+  },
+  {
+   "ref": "2R 15:30",
+   "persona": "Jotham_2",
+   "inicio": 130,
+   "fin": 136
+  },
+  {
+   "ref": "2R 15:30",
+   "persona": "Azariah_3",
+   "inicio": 145,
+   "fin": 150
+  },
+  {
+   "ref": "2R 15:31",
+   "persona": "Pekah_1",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 15:32",
+   "persona": "Pekah_1",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "2R 15:32",
+   "persona": "Remaliah_1",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "2R 15:32",
+   "persona": "Jotham_2",
+   "inicio": 75,
+   "fin": 81
+  },
+  {
+   "ref": "2R 15:32",
+   "persona": "Azariah_3",
+   "inicio": 90,
+   "fin": 95
+  },
+  {
+   "ref": "2R 15:33",
+   "persona": "Jerusha_1",
+   "inicio": 112,
+   "fin": 118
+  },
+  {
+   "ref": "2R 15:33",
+   "persona": "Zadok_2",
+   "inicio": 127,
+   "fin": 132
+  },
+  {
+   "ref": "2R 15:34",
+   "persona": "Azariah_3",
+   "inicio": 95,
+   "fin": 100
+  },
+  {
+   "ref": "2R 15:36",
+   "persona": "Jotham_2",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "2R 15:37",
+   "persona": "Rezin_1",
+   "inicio": 54,
+   "fin": 59
+  },
+  {
+   "ref": "2R 15:37",
+   "persona": "Pekah_1",
+   "inicio": 78,
+   "fin": 82
+  },
+  {
+   "ref": "2R 15:37",
+   "persona": "Remaliah_1",
+   "inicio": 91,
+   "fin": 99
+  },
+  {
+   "ref": "2R 15:38",
+   "persona": "Jotham_2",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 15:38",
+   "persona": "Ahaz_1",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "2R 16:1",
+   "persona": "Pekah_1",
+   "inicio": 24,
+   "fin": 28
+  },
+  {
+   "ref": "2R 16:1",
+   "persona": "Remaliah_1",
+   "inicio": 37,
+   "fin": 45
+  },
+  {
+   "ref": "2R 16:1",
+   "persona": "Ahaz_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "2R 16:1",
+   "persona": "Jotham_2",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "2R 16:2",
+   "persona": "Ahaz_1",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "2R 16:2",
+   "persona": "David_1",
+   "inicio": 139,
+   "fin": 144
+  },
+  {
+   "ref": "2R 16:5",
+   "persona": "Rezin_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 16:5",
+   "persona": "Pekah_1",
+   "inicio": 31,
+   "fin": 35
+  },
+  {
+   "ref": "2R 16:5",
+   "persona": "Remaliah_1",
+   "inicio": 44,
+   "fin": 52
+  },
+  {
+   "ref": "2R 16:5",
+   "persona": "Ahaz_1",
+   "inicio": 119,
+   "fin": 124
+  },
+  {
+   "ref": "2R 16:6",
+   "persona": "Rezin_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "2R 16:7",
+   "persona": "Ahaz_1",
+   "inicio": 9,
+   "fin": 14
+  },
+  {
+   "ref": "2R 16:7",
+   "persona": "Tiglath-pileser_1",
+   "inicio": 35,
+   "fin": 50
+  },
+  {
+   "ref": "2R 16:8",
+   "persona": "Ahaz_1",
+   "inicio": 10,
+   "fin": 15
+  },
+  {
+   "ref": "2R 16:9",
+   "persona": "Rezin_1",
+   "inicio": 126,
+   "fin": 131
+  },
+  {
+   "ref": "2R 16:10",
+   "persona": "Ahaz_1",
+   "inicio": 13,
+   "fin": 18
+  },
+  {
+   "ref": "2R 16:10",
+   "persona": "Tiglath-pileser_1",
+   "inicio": 33,
+   "fin": 48
+  },
+  {
+   "ref": "2R 16:10",
+   "persona": "Ahaz_1",
+   "inicio": 99,
+   "fin": 104
+  },
+  {
+   "ref": "2R 16:10",
+   "persona": "Urijah_1",
+   "inicio": 145,
+   "fin": 150
+  },
+  {
+   "ref": "2R 16:11",
+   "persona": "Urijah_1",
+   "inicio": 2,
+   "fin": 7
+  },
+  {
+   "ref": "2R 16:11",
+   "persona": "Ahaz_1",
+   "inicio": 69,
+   "fin": 74
+  },
+  {
+   "ref": "2R 16:11",
+   "persona": "Urijah_1",
+   "inicio": 126,
+   "fin": 131
+  },
+  {
+   "ref": "2R 16:11",
+   "persona": "Ahaz_1",
+   "inicio": 156,
+   "fin": 161
+  },
+  {
+   "ref": "2R 16:15",
+   "persona": "Ahaz_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "2R 16:15",
+   "persona": "Urijah_1",
+   "inicio": 34,
+   "fin": 39
+  },
+  {
+   "ref": "2R 16:16",
+   "persona": "Urijah_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "2R 16:16",
+   "persona": "Ahaz_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "2R 16:17",
+   "persona": "Ahaz_1",
+   "inicio": 15,
+   "fin": 20
+  },
+  {
+   "ref": "2R 16:19",
+   "persona": "Ahaz_1",
+   "inicio": 26,
+   "fin": 31
+  },
+  {
+   "ref": "2R 16:20",
+   "persona": "Ahaz_1",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "2R 16:20",
+   "persona": "Hezekiah_1",
+   "inicio": 111,
+   "fin": 119
+  },
+  {
+   "ref": "2R 17:1",
+   "persona": "Ahaz_1",
+   "inicio": 23,
+   "fin": 28
+  },
+  {
+   "ref": "2R 17:1",
+   "persona": "Hoshea_1",
+   "inicio": 59,
+   "fin": 64
+  },
+  {
+   "ref": "2R 17:1",
+   "persona": "Elah_3",
+   "inicio": 73,
+   "fin": 76
+  },
+  {
+   "ref": "2R 17:3",
+   "persona": "Shalmaneser_1",
+   "inicio": 18,
+   "fin": 28
+  },
+  {
+   "ref": "2R 17:3",
+   "persona": "Hoshea_1",
+   "inicio": 51,
+   "fin": 56
+  },
+  {
+   "ref": "2R 17:4",
+   "persona": "Hoshea_1",
+   "inicio": 31,
+   "fin": 36
+  },
+  {
+   "ref": "2R 17:4",
+   "persona": "So_1",
+   "inicio": 91,
+   "fin": 93
+  },
+  {
+   "ref": "2R 17:6",
+   "persona": "Hoshea_1",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "2R 17:7",
+   "persona": "Pharaoh_4",
+   "inicio": 115,
+   "fin": 121
+  },
+  {
+   "ref": "2R 17:21",
+   "persona": "David_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 17:21",
+   "persona": "Jeroboam_1",
+   "inicio": 69,
+   "fin": 77
+  },
+  {
+   "ref": "2R 17:21",
+   "persona": "Nebat_1",
+   "inicio": 86,
+   "fin": 91
+  },
+  {
+   "ref": "2R 17:21",
+   "persona": "Jeroboam_1",
+   "inicio": 95,
+   "fin": 103
+  },
+  {
+   "ref": "2R 17:22",
+   "persona": "Jeroboam_1",
+   "inicio": 57,
+   "fin": 65
+  },
+  {
+   "ref": "2R 17:34",
+   "persona": "Jacob_1",
+   "inicio": 176,
+   "fin": 181
+  },
+  {
+   "ref": "2R 18:1",
+   "persona": "Hoshea_1",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "2R 18:1",
+   "persona": "Elah_3",
+   "inicio": 34,
+   "fin": 37
+  },
+  {
+   "ref": "2R 18:1",
+   "persona": "Hezekiah_1",
+   "inicio": 70,
+   "fin": 78
+  },
+  {
+   "ref": "2R 18:1",
+   "persona": "Ahaz_1",
+   "inicio": 87,
+   "fin": 92
+  },
+  {
+   "ref": "2R 18:2",
+   "persona": "Abi_1",
+   "inicio": 116,
+   "fin": 119
+  },
+  {
+   "ref": "2R 18:2",
+   "persona": "Zechariah_2",
+   "inicio": 128,
+   "fin": 137
+  },
+  {
+   "ref": "2R 18:3",
+   "persona": "David_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "2R 18:4",
+   "persona": "Moses_1",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "2R 18:6",
+   "persona": "Moses_1",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "2R 18:9",
+   "persona": "Hezekiah_1",
+   "inicio": 25,
+   "fin": 33
+  },
+  {
+   "ref": "2R 18:9",
+   "persona": "Hoshea_1",
+   "inicio": 61,
+   "fin": 66
+  },
+  {
+   "ref": "2R 18:9",
+   "persona": "Elah_3",
+   "inicio": 75,
+   "fin": 78
+  },
+  {
+   "ref": "2R 18:9",
+   "persona": "Shalmaneser_1",
+   "inicio": 100,
+   "fin": 110
+  },
+  {
+   "ref": "2R 18:10",
+   "persona": "Hezekiah_1",
+   "inicio": 64,
+   "fin": 72
+  },
+  {
+   "ref": "2R 18:10",
+   "persona": "Hoshea_1",
+   "inicio": 101,
+   "fin": 106
+  },
+  {
+   "ref": "2R 18:12",
+   "persona": "Moses_1",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "2R 18:13",
+   "persona": "Hezekiah_1",
+   "inicio": 29,
+   "fin": 37
+  },
+  {
+   "ref": "2R 18:13",
+   "persona": "Sennacherib_1",
+   "inicio": 45,
+   "fin": 56
+  },
+  {
+   "ref": "2R 18:14",
+   "persona": "Hezekiah_1",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "2R 18:14",
+   "persona": "Hezekiah_1",
+   "inicio": 167,
+   "fin": 175
+  },
+  {
+   "ref": "2R 18:15",
+   "persona": "Hezekiah_1",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "2R 18:16",
+   "persona": "Hezekiah_1",
+   "inicio": 20,
+   "fin": 28
+  },
+  {
+   "ref": "2R 18:16",
+   "persona": "Hezekiah_1",
+   "inicio": 98,
+   "fin": 106
+  },
+  {
+   "ref": "2R 18:17",
+   "persona": "Hezekiah_1",
+   "inicio": 38,
+   "fin": 46
+  },
+  {
+   "ref": "2R 18:17",
+   "persona": "Tartan_1",
+   "inicio": 81,
+   "fin": 88
+  },
+  {
+   "ref": "2R 18:17",
+   "persona": "Rab-saris_1",
+   "inicio": 93,
+   "fin": 101
+  },
+  {
+   "ref": "2R 18:17",
+   "persona": "Rabshakeh_1",
+   "inicio": 106,
+   "fin": 114
+  },
+  {
+   "ref": "2R 18:18",
+   "persona": "Eliakim_1",
+   "inicio": 39,
+   "fin": 46
+  },
+  {
+   "ref": "2R 18:18",
+   "persona": "Hilkiah_1",
+   "inicio": 55,
+   "fin": 62
+  },
+  {
+   "ref": "2R 18:18",
+   "persona": "Shebnah_1",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "2R 18:18",
+   "persona": "Joah_1",
+   "inicio": 102,
+   "fin": 106
+  },
+  {
+   "ref": "2R 18:18",
+   "persona": "Asaph_1",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "2R 18:19",
+   "persona": "Rabshakeh_1",
+   "inicio": 10,
+   "fin": 18
+  },
+  {
+   "ref": "2R 18:19",
+   "persona": "Hezekiah_1",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "2R 18:22",
+   "persona": "Hezekiah_1",
+   "inicio": 104,
+   "fin": 112
+  },
+  {
+   "ref": "2R 18:26",
+   "persona": "Eliakim_1",
+   "inicio": 14,
+   "fin": 21
+  },
+  {
+   "ref": "2R 18:26",
+   "persona": "Hilkiah_1",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "2R 18:26",
+   "persona": "Shebnah_1",
+   "inicio": 41,
+   "fin": 46
+  },
+  {
+   "ref": "2R 18:26",
+   "persona": "Joah_1",
+   "inicio": 49,
+   "fin": 53
+  },
+  {
+   "ref": "2R 18:26",
+   "persona": "Rabshakeh_1",
+   "inicio": 57,
+   "fin": 65
+  },
+  {
+   "ref": "2R 18:27",
+   "persona": "Rabshakeh_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "2R 18:28",
+   "persona": "Rabshakeh_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "2R 18:29",
+   "persona": "Hezekiah_1",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "2R 18:30",
+   "persona": "Hezekiah_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "2R 18:31",
+   "persona": "Hezekiah_1",
+   "inicio": 12,
+   "fin": 20
+  },
+  {
+   "ref": "2R 18:32",
+   "persona": "Hezekiah_1",
+   "inicio": 193,
+   "fin": 201
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Eliakim_1",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Hilkiah_1",
+   "inicio": 25,
+   "fin": 32
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Shebnah_1",
+   "inicio": 55,
+   "fin": 60
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Joah_1",
+   "inicio": 75,
+   "fin": 79
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Asaph_1",
+   "inicio": 88,
+   "fin": 93
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Hezekiah_1",
+   "inicio": 117,
+   "fin": 125
+  },
+  {
+   "ref": "2R 18:37",
+   "persona": "Rabshakeh_1",
+   "inicio": 177,
+   "fin": 185
+  },
+  {
+   "ref": "2R 19:1",
+   "persona": "Hezekiah_1",
+   "inicio": 14,
+   "fin": 22
+  },
+  {
+   "ref": "2R 19:2",
+   "persona": "Eliakim_1",
+   "inicio": 10,
+   "fin": 17
+  },
+  {
+   "ref": "2R 19:2",
+   "persona": "Shebnah_1",
+   "inicio": 36,
+   "fin": 41
+  },
+  {
+   "ref": "2R 19:2",
+   "persona": "Isaiah_1",
+   "inicio": 107,
+   "fin": 113
+  },
+  {
+   "ref": "2R 19:2",
+   "persona": "Amoz_1",
+   "inicio": 130,
+   "fin": 134
+  },
+  {
+   "ref": "2R 19:3",
+   "persona": "Hezekiah_1",
+   "inicio": 29,
+   "fin": 37
+  },
+  {
+   "ref": "2R 19:4",
+   "persona": "Rabshakeh_1",
+   "inicio": 48,
+   "fin": 56
+  },
+  {
+   "ref": "2R 19:5",
+   "persona": "Hezekiah_1",
+   "inicio": 34,
+   "fin": 42
+  },
+  {
+   "ref": "2R 19:5",
+   "persona": "Isaiah_1",
+   "inicio": 45,
+   "fin": 51
+  },
+  {
+   "ref": "2R 19:6",
+   "persona": "Isaiah_1",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 19:8",
+   "persona": "Rabshakeh_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "2R 19:9",
+   "persona": "Tirhakah_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "2R 19:9",
+   "persona": "Hezekiah_1",
+   "inicio": 121,
+   "fin": 129
+  },
+  {
+   "ref": "2R 19:10",
+   "persona": "Hezekiah_1",
+   "inicio": 13,
+   "fin": 21
+  },
+  {
+   "ref": "2R 19:14",
+   "persona": "Hezekiah_1",
+   "inicio": 7,
+   "fin": 15
+  },
+  {
+   "ref": "2R 19:14",
+   "persona": "Hezekiah_1",
+   "inicio": 126,
+   "fin": 134
+  },
+  {
+   "ref": "2R 19:15",
+   "persona": "Hezekiah_1",
+   "inicio": 6,
+   "fin": 14
+  },
+  {
+   "ref": "2R 19:16",
+   "persona": "Sennacherib_1",
+   "inicio": 93,
+   "fin": 104
+  },
+  {
+   "ref": "2R 19:20",
+   "persona": "Isaiah_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 19:20",
+   "persona": "Amoz_1",
+   "inicio": 24,
+   "fin": 28
+  },
+  {
+   "ref": "2R 19:20",
+   "persona": "Hezekiah_1",
+   "inicio": 45,
+   "fin": 53
+  },
+  {
+   "ref": "2R 19:20",
+   "persona": "Sennacherib_1",
+   "inicio": 120,
+   "fin": 131
+  },
+  {
+   "ref": "2R 19:30",
+   "persona": "Judah_1",
+   "inicio": 62,
+   "fin": 66
+  },
+  {
+   "ref": "2R 19:34",
+   "persona": "David_1",
+   "inicio": 78,
+   "fin": 83
+  },
+  {
+   "ref": "2R 19:36",
+   "persona": "Sennacherib_1",
+   "inicio": 9,
+   "fin": 20
+  },
+  {
+   "ref": "2R 19:37",
+   "persona": "Adrammelech_1",
+   "inicio": 70,
+   "fin": 80
+  },
+  {
+   "ref": "2R 19:37",
+   "persona": "Sharezer_1",
+   "inicio": 83,
+   "fin": 90
+  },
+  {
+   "ref": "2R 19:37",
+   "persona": "Esarhaddon_1",
+   "inicio": 177,
+   "fin": 187
+  },
+  {
+   "ref": "2R 20:1",
+   "persona": "Hezekiah_1",
+   "inicio": 22,
+   "fin": 30
+  },
+  {
+   "ref": "2R 20:1",
+   "persona": "Isaiah_1",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "2R 20:1",
+   "persona": "Amoz_1",
+   "inicio": 85,
+   "fin": 89
+  },
+  {
+   "ref": "2R 20:3",
+   "persona": "Hezekiah_1",
+   "inicio": 151,
+   "fin": 159
+  },
+  {
+   "ref": "2R 20:4",
+   "persona": "Isaiah_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 20:4",
+   "persona": "Isaiah_1",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "2R 20:5",
+   "persona": "Hezekiah_1",
+   "inicio": 15,
+   "fin": 23
+  },
+  {
+   "ref": "2R 20:5",
+   "persona": "David_1",
+   "inicio": 76,
+   "fin": 81
+  },
+  {
+   "ref": "2R 20:6",
+   "persona": "David_1",
+   "inicio": 148,
+   "fin": 153
+  },
+  {
+   "ref": "2R 20:7",
+   "persona": "Isaiah_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "2R 20:8",
+   "persona": "Hezekiah_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "2R 20:8",
+   "persona": "Isaiah_1",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "2R 20:9",
+   "persona": "Isaiah_1",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 20:10",
+   "persona": "Hezekiah_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "2R 20:11",
+   "persona": "Isaiah_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "2R 20:11",
+   "persona": "Ahaz_1",
+   "inicio": 118,
+   "fin": 123
+  },
+  {
+   "ref": "2R 20:12",
+   "persona": "Berodach-baladan_1",
+   "inicio": 16,
+   "fin": 32
+  },
+  {
+   "ref": "2R 20:12",
+   "persona": "Baladan_1",
+   "inicio": 41,
+   "fin": 48
+  },
+  {
+   "ref": "2R 20:12",
+   "persona": "Hezekiah_1",
+   "inicio": 95,
+   "fin": 103
+  },
+  {
+   "ref": "2R 20:12",
+   "persona": "Hezekiah_1",
+   "inicio": 127,
+   "fin": 135
+  },
+  {
+   "ref": "2R 20:13",
+   "persona": "Hezekiah_1",
+   "inicio": 2,
+   "fin": 10
+  },
+  {
+   "ref": "2R 20:13",
+   "persona": "Hezekiah_1",
+   "inicio": 201,
+   "fin": 209
+  },
+  {
+   "ref": "2R 20:14",
+   "persona": "Isaiah_1",
+   "inicio": 20,
+   "fin": 26
+  },
+  {
+   "ref": "2R 20:14",
+   "persona": "Hezekiah_1",
+   "inicio": 39,
+   "fin": 47
+  },
+  {
+   "ref": "2R 20:14",
+   "persona": "Hezekiah_1",
+   "inicio": 118,
+   "fin": 126
+  },
+  {
+   "ref": "2R 20:15",
+   "persona": "Hezekiah_1",
+   "inicio": 50,
+   "fin": 58
+  },
+  {
+   "ref": "2R 20:16",
+   "persona": "Isaiah_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 20:16",
+   "persona": "Hezekiah_1",
+   "inicio": 23,
+   "fin": 31
+  },
+  {
+   "ref": "2R 20:19",
+   "persona": "Hezekiah_1",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "2R 20:19",
+   "persona": "Isaiah_1",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "2R 20:20",
+   "persona": "Hezekiah_1",
+   "inicio": 26,
+   "fin": 34
+  },
+  {
+   "ref": "2R 20:21",
+   "persona": "Hezekiah_1",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "2R 20:21",
+   "persona": "Manasseh_3",
+   "inicio": 54,
+   "fin": 61
+  },
+  {
+   "ref": "2R 21:1",
+   "persona": "Manasseh_3",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "2R 21:1",
+   "persona": "Hephzibah_1",
+   "inicio": 121,
+   "fin": 128
+  },
+  {
+   "ref": "2R 21:3",
+   "persona": "Hezekiah_1",
+   "inicio": 42,
+   "fin": 50
+  },
+  {
+   "ref": "2R 21:3",
+   "persona": "Ahab_1",
+   "inicio": 135,
+   "fin": 140
+  },
+  {
+   "ref": "2R 21:7",
+   "persona": "David_1",
+   "inicio": 97,
+   "fin": 102
+  },
+  {
+   "ref": "2R 21:7",
+   "persona": "Solomon_1",
+   "inicio": 107,
+   "fin": 114
+  },
+  {
+   "ref": "2R 21:8",
+   "persona": "Moses_1",
+   "inicio": 204,
+   "fin": 210
+  },
+  {
+   "ref": "2R 21:9",
+   "persona": "Manasseh_3",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "2R 21:11",
+   "persona": "Manasseh_3",
+   "inicio": 11,
+   "fin": 18
+  },
+  {
+   "ref": "2R 21:13",
+   "persona": "Ahab_1",
+   "inicio": 75,
+   "fin": 80
+  },
+  {
+   "ref": "2R 21:16",
+   "persona": "Manasseh_3",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "2R 21:17",
+   "persona": "Manasseh_3",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "2R 21:18",
+   "persona": "Manasseh_3",
+   "inicio": 9,
+   "fin": 16
+  },
+  {
+   "ref": "2R 21:18",
+   "persona": "Uzza_1",
+   "inicio": 90,
+   "fin": 94
+  },
+  {
+   "ref": "2R 21:18",
+   "persona": "Amon_2",
+   "inicio": 116,
+   "fin": 120
+  },
+  {
+   "ref": "2R 21:19",
+   "persona": "Amon_2",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "2R 21:19",
+   "persona": "Meshullemeth_1",
+   "inicio": 112,
+   "fin": 122
+  },
+  {
+   "ref": "2R 21:19",
+   "persona": "Haruz_1",
+   "inicio": 131,
+   "fin": 136
+  },
+  {
+   "ref": "2R 21:20",
+   "persona": "Manasseh_3",
+   "inicio": 51,
+   "fin": 58
+  },
+  {
+   "ref": "2R 21:23",
+   "persona": "Amon_2",
+   "inicio": 17,
+   "fin": 21
+  },
+  {
+   "ref": "2R 21:24",
+   "persona": "Amon_2",
+   "inicio": 86,
+   "fin": 90
+  },
+  {
+   "ref": "2R 21:24",
+   "persona": "Josiah_1",
+   "inicio": 144,
+   "fin": 150
+  },
+  {
+   "ref": "2R 21:25",
+   "persona": "Amon_2",
+   "inicio": 26,
+   "fin": 30
+  },
+  {
+   "ref": "2R 21:26",
+   "persona": "Uzza_1",
+   "inicio": 47,
+   "fin": 51
+  },
+  {
+   "ref": "2R 21:26",
+   "persona": "Josiah_1",
+   "inicio": 73,
+   "fin": 79
+  },
+  {
+   "ref": "2R 22:1",
+   "persona": "Josiah_1",
+   "inicio": 7,
+   "fin": 13
+  },
+  {
+   "ref": "2R 22:1",
+   "persona": "Jedidah_1",
+   "inicio": 115,
+   "fin": 120
+  },
+  {
+   "ref": "2R 22:1",
+   "persona": "Adaiah_1",
+   "inicio": 129,
+   "fin": 134
+  },
+  {
+   "ref": "2R 22:2",
+   "persona": "David_1",
+   "inicio": 65,
+   "fin": 70
+  },
+  {
+   "ref": "2R 22:3",
+   "persona": "Josiah_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "2R 22:3",
+   "persona": "Shaphan_1",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "2R 22:3",
+   "persona": "Azaliah_1",
+   "inicio": 77,
+   "fin": 83
+  },
+  {
+   "ref": "2R 22:3",
+   "persona": "Meshullam_1",
+   "inicio": 93,
+   "fin": 101
+  },
+  {
+   "ref": "2R 22:4",
+   "persona": "Hilkiah_2",
+   "inicio": 5,
+   "fin": 12
+  },
+  {
+   "ref": "2R 22:8",
+   "persona": "Hilkiah_2",
+   "inicio": 32,
+   "fin": 39
+  },
+  {
+   "ref": "2R 22:8",
+   "persona": "Shaphan_1",
+   "inicio": 42,
+   "fin": 48
+  },
+  {
+   "ref": "2R 22:8",
+   "persona": "Hilkiah_2",
+   "inicio": 112,
+   "fin": 119
+  },
+  {
+   "ref": "2R 22:8",
+   "persona": "Shaphan_1",
+   "inicio": 135,
+   "fin": 141
+  },
+  {
+   "ref": "2R 22:9",
+   "persona": "Shaphan_1",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "2R 22:10",
+   "persona": "Shaphan_1",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 22:10",
+   "persona": "Hilkiah_2",
+   "inicio": 50,
+   "fin": 57
+  },
+  {
+   "ref": "2R 22:10",
+   "persona": "Shaphan_1",
+   "inicio": 101,
+   "fin": 107
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Hilkiah_2",
+   "inicio": 21,
+   "fin": 28
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Ahikam_1",
+   "inicio": 47,
+   "fin": 53
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Shaphan_1",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Achbor_2",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Micaiah_2",
+   "inicio": 89,
+   "fin": 96
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Shaphan_1",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "2R 22:12",
+   "persona": "Asaiah_1",
+   "inicio": 122,
+   "fin": 127
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Hilkiah_2",
+   "inicio": 13,
+   "fin": 20
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Ahikam_1",
+   "inicio": 37,
+   "fin": 43
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Achbor_2",
+   "inicio": 46,
+   "fin": 52
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Shaphan_1",
+   "inicio": 55,
+   "fin": 61
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Asaiah_1",
+   "inicio": 64,
+   "fin": 69
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Huldah_1",
+   "inicio": 73,
+   "fin": 78
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Shallum_2",
+   "inicio": 99,
+   "fin": 105
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Tikvah_1",
+   "inicio": 114,
+   "fin": 119
+  },
+  {
+   "ref": "2R 22:14",
+   "persona": "Harhas_1",
+   "inicio": 128,
+   "fin": 133
+  },
+  {
+   "ref": "2R 23:4",
+   "persona": "Hilkiah_2",
+   "inicio": 40,
+   "fin": 47
+  },
+  {
+   "ref": "2R 23:8",
+   "persona": "Joshua_3",
+   "inicio": 226,
+   "fin": 231
+  },
+  {
+   "ref": "2R 23:11",
+   "persona": "Nathan-melech_1",
+   "inicio": 128,
+   "fin": 141
+  },
+  {
+   "ref": "2R 23:12",
+   "persona": "Ahaz_1",
+   "inicio": 79,
+   "fin": 84
+  },
+  {
+   "ref": "2R 23:12",
+   "persona": "Manasseh_3",
+   "inicio": 152,
+   "fin": 159
+  },
+  {
+   "ref": "2R 23:13",
+   "persona": "Solomon_1",
+   "inicio": 126,
+   "fin": 133
+  },
+  {
+   "ref": "2R 23:15",
+   "persona": "Jeroboam_1",
+   "inicio": 69,
+   "fin": 77
+  },
+  {
+   "ref": "2R 23:15",
+   "persona": "Nebat_1",
+   "inicio": 86,
+   "fin": 91
+  },
+  {
+   "ref": "2R 23:16",
+   "persona": "Josiah_1",
+   "inicio": 11,
+   "fin": 17
+  },
+  {
+   "ref": "2R 23:19",
+   "persona": "Josiah_1",
+   "inicio": 153,
+   "fin": 159
+  },
+  {
+   "ref": "2R 23:23",
+   "persona": "Josiah_1",
+   "inicio": 31,
+   "fin": 37
+  },
+  {
+   "ref": "2R 23:24",
+   "persona": "Josiah_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "2R 23:24",
+   "persona": "Hilkiah_2",
+   "inicio": 222,
+   "fin": 229
+  },
+  {
+   "ref": "2R 23:25",
+   "persona": "Moses_1",
+   "inicio": 144,
+   "fin": 150
+  },
+  {
+   "ref": "2R 23:26",
+   "persona": "Manasseh_3",
+   "inicio": 147,
+   "fin": 154
+  },
+  {
+   "ref": "2R 23:28",
+   "persona": "Josiah_1",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "2R 23:29",
+   "persona": "Pharaoh Neco_1",
+   "inicio": 17,
+   "fin": 30
+  },
+  {
+   "ref": "2R 23:29",
+   "persona": "Josiah_1",
+   "inicio": 117,
+   "fin": 123
+  },
+  {
+   "ref": "2R 23:30",
+   "persona": "Jehoahaz_2",
+   "inicio": 153,
+   "fin": 160
+  },
+  {
+   "ref": "2R 23:30",
+   "persona": "Josiah_1",
+   "inicio": 169,
+   "fin": 175
+  },
+  {
+   "ref": "2R 23:31",
+   "persona": "Jehoahaz_2",
+   "inicio": 23,
+   "fin": 30
+  },
+  {
+   "ref": "2R 23:31",
+   "persona": "Hamutal_1",
+   "inicio": 115,
+   "fin": 121
+  },
+  {
+   "ref": "2R 23:31",
+   "persona": "Jeremiah_1",
+   "inicio": 131,
+   "fin": 139
+  },
+  {
+   "ref": "2R 23:33",
+   "persona": "Pharaoh Neco_1",
+   "inicio": 15,
+   "fin": 28
+  },
+  {
+   "ref": "2R 23:34",
+   "persona": "Pharaoh Neco_1",
+   "inicio": 9,
+   "fin": 22
+  },
+  {
+   "ref": "2R 23:34",
+   "persona": "Eliakim_2",
+   "inicio": 38,
+   "fin": 45
+  },
+  {
+   "ref": "2R 23:34",
+   "persona": "Josiah_1",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "2R 23:34",
+   "persona": "Josiah_1",
+   "inicio": 74,
+   "fin": 80
+  },
+  {
+   "ref": "2R 23:34",
+   "persona": "Eliakim_2",
+   "inicio": 119,
+   "fin": 125
+  },
+  {
+   "ref": "2R 23:34",
+   "persona": "Jehoahaz_2",
+   "inicio": 136,
+   "fin": 143
+  },
+  {
+   "ref": "2R 23:35",
+   "persona": "Eliakim_2",
+   "inicio": 2,
+   "fin": 8
+  },
+  {
+   "ref": "2R 23:35",
+   "persona": "Pharaoh Neco_1",
+   "inicio": 16,
+   "fin": 22
+  },
+  {
+   "ref": "2R 23:35",
+   "persona": "Pharaoh Neco_1",
+   "inicio": 116,
+   "fin": 122
+  },
+  {
+   "ref": "2R 23:35",
+   "persona": "Pharaoh Neco_1",
+   "inicio": 233,
+   "fin": 246
+  },
+  {
+   "ref": "2R 23:36",
+   "persona": "Eliakim_2",
+   "inicio": 24,
+   "fin": 30
+  },
+  {
+   "ref": "2R 23:36",
+   "persona": "Zebidah_1",
+   "inicio": 114,
+   "fin": 120
+  },
+  {
+   "ref": "2R 23:36",
+   "persona": "Pedaiah_1",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "2R 24:1",
+   "persona": "Nebuchadnezzar_1",
+   "inicio": 19,
+   "fin": 32
+  },
+  {
+   "ref": "2R 24:1",
+   "persona": "Eliakim_2",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "2R 24:3",
+   "persona": "Manasseh_3",
+   "inicio": 105,
+   "fin": 112
+  },
+  {
+   "ref": "2R 24:5",
+   "persona": "Eliakim_2",
+   "inicio": 26,
+   "fin": 32
+  },
+  {
+   "ref": "2R 24:6",
+   "persona": "Eliakim_2",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 24:6",
+   "persona": "Jehoiachin_1",
+   "inicio": 52,
+   "fin": 59
+  },
+  {
+   "ref": "2R 24:8",
+   "persona": "Jehoiachin_1",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "2R 24:8",
+   "persona": "Nehushta_1",
+   "inicio": 114,
+   "fin": 120
+  },
+  {
+   "ref": "2R 24:8",
+   "persona": "Elnathan_1",
+   "inicio": 129,
+   "fin": 137
+  },
+  {
+   "ref": "2R 24:10",
+   "persona": "Nebuchadnezzar_1",
+   "inicio": 40,
+   "fin": 53
+  },
+  {
+   "ref": "2R 24:11",
+   "persona": "Nebuchadnezzar_1",
+   "inicio": 13,
+   "fin": 26
+  },
+  {
+   "ref": "2R 24:12",
+   "persona": "Jehoiachin_1",
+   "inicio": 15,
+   "fin": 22
+  },
+  {
+   "ref": "2R 24:13",
+   "persona": "Solomon_1",
+   "inicio": 144,
+   "fin": 151
+  },
+  {
+   "ref": "2R 24:15",
+   "persona": "Jehoiachin_1",
+   "inicio": 21,
+   "fin": 28
+  },
+  {
+   "ref": "2R 24:17",
+   "persona": "Jehoiachin_1",
+   "inicio": 47,
+   "fin": 54
+  },
+  {
+   "ref": "2R 24:17",
+   "persona": "Mattaniah_1",
+   "inicio": 57,
+   "fin": 66
+  },
+  {
+   "ref": "2R 24:17",
+   "persona": "Mattaniah_1",
+   "inicio": 103,
+   "fin": 111
+  },
+  {
+   "ref": "2R 24:18",
+   "persona": "Mattaniah_1",
+   "inicio": 21,
+   "fin": 29
+  },
+  {
+   "ref": "2R 24:18",
+   "persona": "Hamutal_1",
+   "inicio": 113,
+   "fin": 119
+  },
+  {
+   "ref": "2R 24:18",
+   "persona": "Jeremiah_1",
+   "inicio": 128,
+   "fin": 136
+  },
+  {
+   "ref": "2R 24:19",
+   "persona": "Eliakim_2",
+   "inicio": 69,
+   "fin": 75
+  },
+  {
+   "ref": "2R 24:20",
+   "persona": "Mattaniah_1",
+   "inicio": 89,
+   "fin": 97
+  },
+  {
+   "ref": "2R 25:1",
+   "persona": "Nebuchadnezzar_1",
+   "inicio": 86,
+   "fin": 99
+  },
+  {
+   "ref": "2R 25:2",
+   "persona": "Mattaniah_1",
+   "inicio": 57,
+   "fin": 65
+  },
+  {
+   "ref": "2R 25:7",
+   "persona": "Mattaniah_1",
+   "inicio": 28,
+   "fin": 36
+  },
+  {
+   "ref": "2R 25:7",
+   "persona": "Mattaniah_1",
+   "inicio": 60,
+   "fin": 68
+  },
+  {
+   "ref": "2R 25:8",
+   "persona": "Nebuchadnezzar_1",
+   "inicio": 67,
+   "fin": 80
+  },
+  {
+   "ref": "2R 25:8",
+   "persona": "Nebuzaradan_1",
+   "inicio": 116,
+   "fin": 127
+  },
+  {
+   "ref": "2R 25:11",
+   "persona": "Nebuzaradan_1",
+   "inicio": 154,
+   "fin": 165
+  },
+  {
+   "ref": "2R 25:12",
+   "persona": "Nebuzaradan_1",
+   "inicio": 36,
+   "fin": 47
+  },
+  {
+   "ref": "2R 25:16",
+   "persona": "Solomon_1",
+   "inicio": 42,
+   "fin": 49
+  },
+  {
+   "ref": "2R 25:18",
+   "persona": "Seraiah_2",
+   "inicio": 48,
+   "fin": 55
+  },
+  {
+   "ref": "2R 25:18",
+   "persona": "Zephaniah_1",
+   "inicio": 78,
+   "fin": 87
+  },
+  {
+   "ref": "2R 25:20",
+   "persona": "Nebuzaradan_1",
+   "inicio": 11,
+   "fin": 22
+  },
+  {
+   "ref": "2R 25:22",
+   "persona": "Nebuchadnezzar_1",
+   "inicio": 16,
+   "fin": 29
+  },
+  {
+   "ref": "2R 25:22",
+   "persona": "Gedaliah_1",
+   "inicio": 93,
+   "fin": 101
+  },
+  {
+   "ref": "2R 25:22",
+   "persona": "Ahikam_1",
+   "inicio": 111,
+   "fin": 117
+  },
+  {
+   "ref": "2R 25:22",
+   "persona": "Shaphan_1",
+   "inicio": 126,
+   "fin": 132
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Gedaliah_1",
+   "inicio": 115,
+   "fin": 123
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Ishmael_2",
+   "inicio": 165,
+   "fin": 171
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Nethaniah_1",
+   "inicio": 180,
+   "fin": 189
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Johanan_1",
+   "inicio": 193,
+   "fin": 200
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Kareah_1",
+   "inicio": 209,
+   "fin": 214
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Seraiah_3",
+   "inicio": 218,
+   "fin": 224
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Tanhumeth_1",
+   "inicio": 233,
+   "fin": 241
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Jaazaniah_1",
+   "inicio": 256,
+   "fin": 265
+  },
+  {
+   "ref": "2R 25:23",
+   "persona": "Maachathi_2R25_1",
+   "inicio": 274,
+   "fin": 282
+  },
+  {
+   "ref": "2R 25:24",
+   "persona": "Gedaliah_1",
+   "inicio": 9,
+   "fin": 17
+  },
+  {
+   "ref": "2R 25:25",
+   "persona": "Ishmael_2",
+   "inicio": 27,
+   "fin": 33
+  },
+  {
+   "ref": "2R 25:25",
+   "persona": "Nethaniah_1",
+   "inicio": 42,
+   "fin": 51
+  },
+  {
+   "ref": "2R 25:25",
+   "persona": "Elishama_3",
+   "inicio": 61,
+   "fin": 68
+  },
+  {
+   "ref": "2R 25:25",
+   "persona": "Gedaliah_1",
+   "inicio": 126,
+   "fin": 134
+  },
+  {
+   "ref": "2R 25:27",
+   "persona": "Jehoiachin_1",
+   "inicio": 62,
+   "fin": 69
+  },
+  {
+   "ref": "2R 25:27",
+   "persona": "Evil-merodach_1",
+   "inicio": 138,
+   "fin": 151
+  },
+  {
+   "ref": "2R 25:27",
+   "persona": "Jehoiachin_1",
+   "inicio": 223,
+   "fin": 230
   }
  ],
  "lugares": [
@@ -126831,7 +139038,9 @@ window.BIBLIA_DATOS = {
     "Dt 1:7",
     "Dt 11:24",
     "Jos 1:4",
-    "2S 8:3"
+    "2S 8:3",
+    "2R 23:29",
+    "2R 24:7"
    ],
    "ubicacion": {
     "identificacion": "Euphrates River",
@@ -126857,7 +139066,44 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Gn 2:14",
     "Gn 10:11",
-    "Gn 25:18"
+    "Gn 25:18",
+    "2R 15:19",
+    "2R 15:20",
+    "2R 15:29",
+    "2R 16:7",
+    "2R 16:8",
+    "2R 16:9",
+    "2R 16:10",
+    "2R 16:18",
+    "2R 17:4",
+    "2R 17:5",
+    "2R 17:6",
+    "2R 17:23",
+    "2R 17:24",
+    "2R 17:26",
+    "2R 17:27",
+    "2R 18:7",
+    "2R 18:11",
+    "2R 18:13",
+    "2R 18:14",
+    "2R 18:16",
+    "2R 18:17",
+    "2R 18:19",
+    "2R 18:23",
+    "2R 18:28",
+    "2R 18:30",
+    "2R 18:31",
+    "2R 18:33",
+    "2R 19:6",
+    "2R 19:8",
+    "2R 19:10",
+    "2R 19:11",
+    "2R 19:17",
+    "2R 19:20",
+    "2R 19:32",
+    "2R 19:36",
+    "2R 20:6",
+    "2R 23:29"
    ],
    "ubicacion": {
     "identificacion": "Nineveh",
@@ -126893,11 +139139,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Ararat",
    "nombre_rv1909": "Armenia",
    "formas_rv1909": [
-    "Armenia"
+    "Armenia",
+    "Ararat"
    ],
    "tipo": "region",
    "refs": [
-    "Gn 8:4"
+    "Gn 8:4",
+    "2R 19:37"
    ],
    "ubicacion": {
     "identificacion": "Urartu",
@@ -127078,7 +139326,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Gn 10:11",
-    "Gn 10:12"
+    "Gn 10:12",
+    "2R 19:36"
    ],
    "ubicacion": {
     "identificacion": "Nineveh",
@@ -127289,7 +139538,8 @@ window.BIBLIA_DATOS = {
     "Jue 16:2",
     "Jue 16:21",
     "1S 6:17",
-    "1R 4:24"
+    "1R 4:24",
+    "2R 18:8"
    ],
    "ubicacion": {
     "identificacion": "Tell Harube",
@@ -127676,7 +139926,8 @@ window.BIBLIA_DATOS = {
     "Gn 12:5",
     "Gn 27:43",
     "Gn 28:10",
-    "Gn 29:4"
+    "Gn 29:4",
+    "2R 19:12"
    ],
    "ubicacion": {
     "identificacion": "Harran",
@@ -128057,7 +140308,9 @@ window.BIBLIA_DATOS = {
     "2S 24:7",
     "2S 24:15",
     "1R 4:25",
-    "1R 19:3"
+    "1R 19:3",
+    "2R 12:1",
+    "2R 23:8"
    ],
    "ubicacion": {
     "identificacion": "Tel Beer Sheva",
@@ -128168,7 +140421,16 @@ window.BIBLIA_DATOS = {
     "1R 13:10",
     "1R 13:11",
     "1R 13:32",
-    "1R 16:34"
+    "1R 16:34",
+    "2R 2:2",
+    "2R 2:3",
+    "2R 2:23",
+    "2R 10:29",
+    "2R 17:28",
+    "2R 23:4",
+    "2R 23:15",
+    "2R 23:17",
+    "2R 23:19"
    ],
    "ubicacion": {
     "identificacion": "Beitin",
@@ -128313,7 +140575,15 @@ window.BIBLIA_DATOS = {
     "1R 11:24",
     "1R 15:18",
     "1R 19:15",
-    "1R 20:34"
+    "1R 20:34",
+    "2R 5:12",
+    "2R 8:7",
+    "2R 8:9",
+    "2R 14:28",
+    "2R 16:9",
+    "2R 16:10",
+    "2R 16:11",
+    "2R 16:12"
    ],
    "ubicacion": {
     "identificacion": "Damascus",
@@ -128354,7 +140624,8 @@ window.BIBLIA_DATOS = {
     "1R 4:25",
     "1R 12:29",
     "1R 12:30",
-    "1R 15:20"
+    "1R 15:20",
+    "2R 10:29"
    ],
    "ubicacion": {
     "identificacion": "Tel Dan",
@@ -128407,7 +140678,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Gn 37:17"
+    "Gn 37:17",
+    "2R 6:13"
    ],
    "ubicacion": {
     "identificacion": "Tel Dotan",
@@ -128426,7 +140698,8 @@ window.BIBLIA_DATOS = {
    "nombre": "Edom",
    "nombre_rv1909": "Edom",
    "formas_rv1909": [
-    "Edom"
+    "Edom",
+    "Idumea"
    ],
    "tipo": "region",
    "refs": [
@@ -128459,7 +140732,15 @@ window.BIBLIA_DATOS = {
     "1R 11:14",
     "1R 11:15",
     "1R 11:16",
-    "1R 22:48"
+    "1R 22:48",
+    "2R 3:8",
+    "2R 3:9",
+    "2R 3:12",
+    "2R 3:20",
+    "2R 3:26",
+    "2R 8:20",
+    "2R 8:22",
+    "2R 14:10"
    ],
    "ubicacion": {
     "identificacion": "Buseira",
@@ -128805,7 +141086,17 @@ window.BIBLIA_DATOS = {
     "1R 11:40",
     "1R 12:2",
     "1R 12:28",
-    "1R 14:25"
+    "1R 14:25",
+    "2R 17:4",
+    "2R 17:7",
+    "2R 17:36",
+    "2R 18:21",
+    "2R 18:24",
+    "2R 21:15",
+    "2R 23:29",
+    "2R 23:34",
+    "2R 24:7",
+    "2R 25:26"
    ],
    "ubicacion": {
     "identificacion": "Ain Shams",
@@ -129038,7 +141329,9 @@ window.BIBLIA_DATOS = {
     "2S 24:6",
     "1R 4:13",
     "1R 4:19",
-    "1R 17:1"
+    "1R 17:1",
+    "2R 10:33",
+    "2R 15:29"
    ],
    "ubicacion": {
     "identificacion": "Tell edh Dhahab esh Sherqiyeh",
@@ -129498,7 +141791,16 @@ window.BIBLIA_DATOS = {
     "1R 2:8",
     "1R 7:46",
     "1R 17:3",
-    "1R 17:5"
+    "1R 17:5",
+    "2R 2:6",
+    "2R 2:7",
+    "2R 2:13",
+    "2R 5:10",
+    "2R 5:14",
+    "2R 6:2",
+    "2R 6:4",
+    "2R 7:15",
+    "2R 10:33"
    ],
    "ubicacion": {
     "identificacion": "Jordan River",
@@ -129938,7 +142240,17 @@ window.BIBLIA_DATOS = {
     "2S 23:20",
     "1R 11:1",
     "1R 11:7",
-    "1R 11:33"
+    "1R 11:33",
+    "2R 1:1",
+    "2R 3:4",
+    "2R 3:5",
+    "2R 3:7",
+    "2R 3:21",
+    "2R 3:22",
+    "2R 3:23",
+    "2R 3:24",
+    "2R 3:26",
+    "2R 23:13"
    ],
    "ubicacion": {
     "identificacion": "Kerak",
@@ -131729,7 +144041,8 @@ window.BIBLIA_DATOS = {
     "Nm 34:5",
     "Jos 15:4",
     "Jos 15:47",
-    "1R 8:65"
+    "1R 8:65",
+    "2R 24:7"
    ],
    "ubicacion": {
     "identificacion": "Wadi al Arish",
@@ -131803,7 +144116,8 @@ window.BIBLIA_DATOS = {
     "mar salado",
     "mar Salado",
     "mar del llano",
-    "mar de los llanos"
+    "mar de los llanos",
+    "mar de la llanura"
    ],
    "tipo": "mar",
    "refs": [
@@ -131815,7 +144129,8 @@ window.BIBLIA_DATOS = {
     "Jos 12:3",
     "Jos 15:2",
     "Jos 15:5",
-    "Jos 18:19"
+    "Jos 18:19",
+    "2R 14:25"
    ],
    "ubicacion": {
     "identificacion": "Dead Sea",
@@ -132139,7 +144454,8 @@ window.BIBLIA_DATOS = {
    "formas_rv1909": [
     "Emath",
     "Hamath",
-    "entrar en Hamath"
+    "entrar en Hamath",
+    "entrada de Amath"
    ],
    "tipo": "ciudad",
    "refs": [
@@ -132147,7 +144463,8 @@ window.BIBLIA_DATOS = {
     "Nm 34:8",
     "Jos 13:5",
     "Jue 3:3",
-    "1R 8:65"
+    "1R 8:65",
+    "2R 14:25"
    ],
    "ubicacion": {
     "identificacion": "Labweh",
@@ -132301,7 +144618,8 @@ window.BIBLIA_DATOS = {
     "2S 23:37",
     "1R 11:1",
     "1R 11:7",
-    "1R 11:33"
+    "1R 11:33",
+    "2R 23:13"
    ],
    "ubicacion": {
     "identificacion": "Amman",
@@ -132698,7 +145016,8 @@ window.BIBLIA_DATOS = {
     "Jue 11:13",
     "Jue 11:18",
     "Jue 11:22",
-    "Jue 11:26"
+    "Jue 11:26",
+    "2R 10:33"
    ],
    "ubicacion": {
     "identificacion": "Wadi Mujib",
@@ -132729,7 +145048,8 @@ window.BIBLIA_DATOS = {
     "Jos 13:9",
     "Jos 13:16",
     "Jue 11:26",
-    "2S 24:5"
+    "2S 24:5",
+    "2R 10:33"
    ],
    "ubicacion": {
     "identificacion": "Arair",
@@ -132953,7 +145273,8 @@ window.BIBLIA_DATOS = {
     "Jos 21:27",
     "Jos 22:7",
     "1R 4:13",
-    "1R 4:19"
+    "1R 4:19",
+    "2R 10:33"
    ],
    "ubicacion": {
     "identificacion": "Saham al Jawlan",
@@ -133802,7 +146123,12 @@ window.BIBLIA_DATOS = {
     "Jos 20:8",
     "Jos 24:11",
     "2S 10:5",
-    "1R 16:34"
+    "1R 16:34",
+    "2R 2:4",
+    "2R 2:5",
+    "2R 2:15",
+    "2R 2:18",
+    "2R 25:5"
    ],
    "ubicacion": {
     "identificacion": "Tell es Sultan",
@@ -135717,7 +148043,12 @@ window.BIBLIA_DATOS = {
     "1R 22:12",
     "1R 22:15",
     "1R 22:20",
-    "1R 22:29"
+    "1R 22:29",
+    "2R 8:28",
+    "2R 8:29",
+    "2R 9:1",
+    "2R 9:4",
+    "2R 9:14"
    ],
    "ubicacion": {
     "identificacion": "Tall er Rumeith",
@@ -135898,7 +148229,9 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Dt 2:8",
-    "1R 9:26"
+    "1R 9:26",
+    "2R 14:22",
+    "2R 16:6"
    ],
    "ubicacion": {
     "identificacion": "Aqaba",
@@ -136040,7 +148373,9 @@ window.BIBLIA_DATOS = {
     "1R 5:6",
     "1R 5:9",
     "1R 5:14",
-    "1R 9:19"
+    "1R 9:19",
+    "2R 14:9",
+    "2R 19:23"
    ],
    "ubicacion": {
     "identificacion": "Jezzine",
@@ -136210,7 +148545,8 @@ window.BIBLIA_DATOS = {
    "tipo": "otro",
    "refs": [
     "Jos 15:8",
-    "Jos 18:16"
+    "Jos 18:16",
+    "2R 23:10"
    ],
    "ubicacion": {
     "identificacion": "Hinnom Valley",
@@ -136377,7 +148713,21 @@ window.BIBLIA_DATOS = {
     "1R 18:45",
     "1R 18:46",
     "1R 21:1",
-    "1R 21:23"
+    "1R 21:23",
+    "2R 8:29",
+    "2R 9:10",
+    "2R 9:15",
+    "2R 9:16",
+    "2R 9:17",
+    "2R 9:21",
+    "2R 9:25",
+    "2R 9:30",
+    "2R 9:36",
+    "2R 9:37",
+    "2R 10:1",
+    "2R 10:6",
+    "2R 10:7",
+    "2R 10:11"
    ],
    "ubicacion": {
     "identificacion": "Tel Yizre’el",
@@ -136402,7 +148752,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Jos 19:18",
-    "1S 28:4"
+    "1S 28:4",
+    "2R 4:8"
    ],
    "ubicacion": {
     "identificacion": "Sulam",
@@ -137447,11 +149798,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Git-hefer",
    "nombre_rv1909": "Gith-hepher",
    "formas_rv1909": [
-    "Gith-hepher"
+    "Gith-hepher",
+    "Gath-hepher"
    ],
    "tipo": "ciudad",
    "refs": [
-    "Jos 19:13"
+    "Jos 19:13",
+    "2R 14:25"
    ],
    "ubicacion": {
     "identificacion": "Tel Gat Hefer",
@@ -138016,7 +150369,9 @@ window.BIBLIA_DATOS = {
     "1S 6:15",
     "1S 6:19",
     "1S 6:20",
-    "1R 4:9"
+    "1R 4:9",
+    "2R 14:11",
+    "2R 14:13"
    ],
    "ubicacion": {
     "identificacion": "Tel Bet Shemesh",
@@ -138637,7 +150992,63 @@ window.BIBLIA_DATOS = {
     "1R 15:2",
     "1R 15:4",
     "1R 15:10",
-    "1R 22:42"
+    "1R 22:42",
+    "2R 8:17",
+    "2R 8:26",
+    "2R 9:28",
+    "2R 12:1",
+    "2R 12:17",
+    "2R 12:18",
+    "2R 14:2",
+    "2R 14:13",
+    "2R 14:19",
+    "2R 14:20",
+    "2R 15:2",
+    "2R 15:33",
+    "2R 16:2",
+    "2R 16:5",
+    "2R 18:2",
+    "2R 18:17",
+    "2R 18:22",
+    "2R 18:35",
+    "2R 19:10",
+    "2R 19:21",
+    "2R 19:31",
+    "2R 21:1",
+    "2R 21:4",
+    "2R 21:7",
+    "2R 21:12",
+    "2R 21:13",
+    "2R 21:16",
+    "2R 21:19",
+    "2R 22:1",
+    "2R 22:14",
+    "2R 23:1",
+    "2R 23:2",
+    "2R 23:4",
+    "2R 23:5",
+    "2R 23:6",
+    "2R 23:9",
+    "2R 23:13",
+    "2R 23:20",
+    "2R 23:23",
+    "2R 23:24",
+    "2R 23:27",
+    "2R 23:30",
+    "2R 23:31",
+    "2R 23:33",
+    "2R 23:36",
+    "2R 24:4",
+    "2R 24:8",
+    "2R 24:10",
+    "2R 24:14",
+    "2R 24:15",
+    "2R 24:18",
+    "2R 24:20",
+    "2R 25:1",
+    "2R 25:8",
+    "2R 25:9",
+    "2R 25:10"
    ],
    "ubicacion": {
     "identificacion": "Jerusalem",
@@ -140135,7 +152546,8 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "Jos 15:39"
+    "Jos 15:39",
+    "2R 22:1"
    ],
    "ubicacion": {
     "identificacion": "Ed Dawaimeh",
@@ -140303,7 +152715,8 @@ window.BIBLIA_DATOS = {
    "refs": [
     "Jos 20:7",
     "Jos 21:32",
-    "1R 9:11"
+    "1R 9:11",
+    "2R 15:29"
    ],
    "ubicacion": {
     "identificacion": "Galilee",
@@ -140888,7 +153301,10 @@ window.BIBLIA_DATOS = {
     "Jue 1:27",
     "Jue 5:19",
     "1R 4:12",
-    "1R 9:15"
+    "1R 9:15",
+    "2R 9:27",
+    "2R 23:29",
+    "2R 23:30"
    ],
    "ubicacion": {
     "identificacion": "Tel Megiddo",
@@ -141327,7 +153743,10 @@ window.BIBLIA_DATOS = {
     "Jos 19:26",
     "1R 18:19",
     "1R 18:20",
-    "1R 18:42"
+    "1R 18:42",
+    "2R 2:25",
+    "2R 4:25",
+    "2R 19:23"
    ],
    "ubicacion": {
     "identificacion": "Mount Carmel",
@@ -141980,7 +154399,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Jos 17:11",
-    "Jue 1:27"
+    "Jue 1:27",
+    "2R 9:27"
    ],
    "ubicacion": {
     "identificacion": "Khirbet Belameh",
@@ -142221,7 +154641,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "Jos 12:22",
-    "Jos 21:32"
+    "Jos 21:32",
+    "2R 15:29"
    ],
    "ubicacion": {
     "identificacion": "Tel Kedesh",
@@ -142272,7 +154693,11 @@ window.BIBLIA_DATOS = {
     "Jos 10:34",
     "Jos 10:35",
     "Jos 12:11",
-    "Jos 15:39"
+    "Jos 15:39",
+    "2R 14:19",
+    "2R 18:14",
+    "2R 18:17",
+    "2R 19:8"
    ],
    "ubicacion": {
     "identificacion": "Tell ed Duweir",
@@ -144205,7 +156630,11 @@ window.BIBLIA_DATOS = {
     "1S 6:16",
     "1S 6:17",
     "1S 7:14",
-    "1S 17:52"
+    "1S 17:52",
+    "2R 1:2",
+    "2R 1:3",
+    "2R 1:6",
+    "2R 1:16"
    ],
    "ubicacion": {
     "identificacion": "Tel Miqne",
@@ -144609,7 +157038,8 @@ window.BIBLIA_DATOS = {
     "Jue 4:2",
     "Jue 4:17",
     "1S 12:9",
-    "1R 9:15"
+    "1R 9:15",
+    "2R 15:29"
    ],
    "ubicacion": {
     "identificacion": "Tel Hazor",
@@ -145192,7 +157622,11 @@ window.BIBLIA_DATOS = {
     "Jos 10:39",
     "Jos 12:15",
     "Jos 15:42",
-    "Jos 21:13"
+    "Jos 21:13",
+    "2R 8:22",
+    "2R 19:8",
+    "2R 23:31",
+    "2R 24:18"
    ],
    "ubicacion": {
     "identificacion": "Tell Bornat",
@@ -145374,7 +157808,9 @@ window.BIBLIA_DATOS = {
     "1S 7:12",
     "1S 7:16",
     "1S 10:17",
-    "1R 15:22"
+    "1R 15:22",
+    "2R 25:23",
+    "2R 25:25"
    ],
    "ubicacion": {
     "identificacion": "Tell en Nasbeh",
@@ -146033,7 +158469,9 @@ window.BIBLIA_DATOS = {
     "1R 16:9",
     "1R 16:15",
     "1R 16:17",
-    "1R 16:23"
+    "1R 16:23",
+    "2R 15:14",
+    "2R 15:16"
    ],
    "ubicacion": {
     "identificacion": "Tell el Farah",
@@ -146811,7 +159249,8 @@ window.BIBLIA_DATOS = {
     "2S 21:22",
     "1R 2:39",
     "1R 2:40",
-    "1R 2:41"
+    "1R 2:41",
+    "2R 12:17"
    ],
    "ubicacion": {
     "identificacion": "Tell es Safi",
@@ -148011,7 +160450,34 @@ window.BIBLIA_DATOS = {
     "1R 20:22",
     "1R 20:23",
     "1R 22:3",
-    "1R 22:31"
+    "1R 22:31",
+    "2R 5:1",
+    "2R 5:2",
+    "2R 5:5",
+    "2R 6:8",
+    "2R 6:11",
+    "2R 6:23",
+    "2R 6:24",
+    "2R 8:7",
+    "2R 8:9",
+    "2R 8:13",
+    "2R 8:28",
+    "2R 8:29",
+    "2R 9:14",
+    "2R 9:15",
+    "2R 12:17",
+    "2R 12:18",
+    "2R 13:3",
+    "2R 13:4",
+    "2R 13:7",
+    "2R 13:17",
+    "2R 13:19",
+    "2R 13:22",
+    "2R 13:24",
+    "2R 15:37",
+    "2R 16:5",
+    "2R 16:6",
+    "2R 16:7"
    ],
    "ubicacion": {
     "identificacion": "Damascus",
@@ -148035,7 +160501,8 @@ window.BIBLIA_DATOS = {
    "tipo": "otro",
    "refs": [
     "Jue 9:6",
-    "Jue 9:20"
+    "Jue 9:20",
+    "2R 12:20"
    ],
    "ubicacion": {
     "identificacion": "Tell Balatah",
@@ -151422,7 +163889,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "2S 5:7",
-    "1R 8:1"
+    "1R 8:1",
+    "2R 19:21"
    ],
    "ubicacion": {
     "identificacion": "Jerusalem",
@@ -151458,7 +163926,14 @@ window.BIBLIA_DATOS = {
     "1R 14:31",
     "1R 15:8",
     "1R 15:24",
-    "1R 22:51"
+    "1R 22:51",
+    "2R 8:24",
+    "2R 9:28",
+    "2R 12:21",
+    "2R 14:20",
+    "2R 15:7",
+    "2R 15:38",
+    "2R 16:20"
    ],
    "ubicacion": {
     "identificacion": "City of David",
@@ -151525,11 +164000,13 @@ window.BIBLIA_DATOS = {
    "nombre": "Valle de la Sal",
    "nombre_rv1909": "sal",
    "formas_rv1909": [
-    "sal"
+    "sal",
+    "valle de las Salinas"
    ],
    "tipo": "otro",
    "refs": [
-    "2S 8:13"
+    "2S 8:13",
+    "2R 14:7"
    ],
    "ubicacion": {
     "identificacion": "Es Sebkha",
@@ -151573,7 +164050,10 @@ window.BIBLIA_DATOS = {
    "refs": [
     "2S 15:23",
     "1R 2:37",
-    "1R 15:13"
+    "1R 15:13",
+    "2R 23:4",
+    "2R 23:6",
+    "2R 23:12"
    ],
    "ubicacion": {
     "identificacion": "Kidron River",
@@ -151624,7 +164104,8 @@ window.BIBLIA_DATOS = {
     "2S 20:14",
     "2S 20:15",
     "2S 20:18",
-    "1R 15:20"
+    "1R 15:20",
+    "2R 15:29"
    ],
    "ubicacion": {
     "identificacion": "Tel Abel Beth Maacah",
@@ -152109,7 +164590,12 @@ window.BIBLIA_DATOS = {
    ],
    "tipo": "ciudad",
    "refs": [
-    "2S 8:9"
+    "2S 8:9",
+    "2R 14:28",
+    "2R 18:34",
+    "2R 19:13",
+    "2R 23:33",
+    "2R 25:21"
    ],
    "ubicacion": {
     "identificacion": "Hama",
@@ -152659,7 +165145,51 @@ window.BIBLIA_DATOS = {
     "1R 22:10",
     "1R 22:37",
     "1R 22:38",
-    "1R 22:52"
+    "1R 22:52",
+    "2R 1:2",
+    "2R 1:3",
+    "2R 2:25",
+    "2R 3:1",
+    "2R 3:6",
+    "2R 5:3",
+    "2R 6:19",
+    "2R 6:20",
+    "2R 6:24",
+    "2R 6:25",
+    "2R 7:1",
+    "2R 7:18",
+    "2R 10:1",
+    "2R 10:12",
+    "2R 10:17",
+    "2R 10:35",
+    "2R 10:36",
+    "2R 13:1",
+    "2R 13:6",
+    "2R 13:9",
+    "2R 13:10",
+    "2R 13:13",
+    "2R 14:14",
+    "2R 14:16",
+    "2R 14:23",
+    "2R 15:13",
+    "2R 15:14",
+    "2R 15:17",
+    "2R 15:23",
+    "2R 15:25",
+    "2R 15:27",
+    "2R 17:1",
+    "2R 17:5",
+    "2R 17:6",
+    "2R 17:24",
+    "2R 17:26",
+    "2R 17:28",
+    "2R 17:29",
+    "2R 18:9",
+    "2R 18:10",
+    "2R 18:34",
+    "2R 21:13",
+    "2R 23:18",
+    "2R 23:19"
    ],
    "ubicacion": {
     "identificacion": "Samaria",
@@ -152922,7 +165452,8 @@ window.BIBLIA_DATOS = {
    "tipo": "ciudad",
    "refs": [
     "1R 20:26",
-    "1R 20:30"
+    "1R 20:30",
+    "2R 13:17"
    ],
    "ubicacion": {
     "identificacion": "Tel Ein Gev",
@@ -153108,6 +165639,1153 @@ window.BIBLIA_DATOS = {
    "fuente": "openbible",
    "url_fuente": "https://www.openbible.info/geo/ancient/a81ab85/sheba-1",
    "nota": "Hay otros lugares llamados Seba: este es el de 1R 10:1 según OpenBible."
+  },
+  {
+   "id": "ijon",
+   "nombre": "Ijón",
+   "nombre_rv1909": "Ahión",
+   "formas_rv1909": [
+    "Ahión"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 15:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Dibbine",
+    "lat": 33.3453,
+    "lon": 35.59,
+    "puntuacion_openbible": 661,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Marjaayoun",
+     "lat": 33.3611,
+     "lon": 35.5921,
+     "puntuacion_openbible": 54
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a062b95/ijon",
+   "nota": "La RV1909 escribe «Ahión» (2 R 15:29)."
+  },
+  {
+   "id": "monte-sion",
+   "nombre": "Monte de Sión",
+   "nombre_rv1909": "monte de Sión",
+   "formas_rv1909": [
+    "monte de Sión"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "2R 19:31"
+   ],
+   "ubicacion": {
+    "identificacion": "Mount Zion",
+    "lat": 31.7717,
+    "lon": 35.2286,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abd9596/mount-zion",
+   "nota": "2 R 19:31: «del monte de Sión». OpenBible lo distingue de Sión (la fortaleza, 2 S 5:7) por su identificación moderna."
+  },
+  {
+   "id": "cus-19-9",
+   "nombre": "Etiopía (Cus, 2R 19:9)",
+   "nombre_rv1909": "Ethiopía",
+   "formas_rv1909": [
+    "Ethiopía"
+   ],
+   "tipo": "region",
+   "refs": [
+    "2R 19:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Meroe",
+    "lat": 16.9351,
+    "lon": 33.7507,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ac5a1ec/cush-1",
+   "nota": "«Thiraca rey de Ethiopía» (2 R 19:9): la RV1909 traduce Cus por Etiopía. OpenBible lo distingue del Cus de Gn 2:13 y lo identifica con Meroe."
+  },
+  {
+   "id": "quir-hareset",
+   "nombre": "Quir-hareset",
+   "nombre_rv1909": "Kir-hareseth",
+   "formas_rv1909": [
+    "Kir-hareseth"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 3:25"
+   ],
+   "ubicacion": {
+    "identificacion": "Kerak",
+    "lat": 31.1806,
+    "lon": 35.7014,
+    "puntuacion_openbible": 805,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab55371/kir-hareseth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Kir-hareseth»."
+  },
+  {
+   "id": "baal-salisa",
+   "nombre": "Baal-salisa",
+   "nombre_rv1909": "Baal-salisa",
+   "formas_rv1909": [
+    "Baal-salisa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 4:42"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Sirisye",
+    "lat": 32.1103,
+    "lon": 35.0118,
+    "puntuacion_openbible": 349,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Marjame",
+     "lat": 31.9914,
+     "lon": 35.3322,
+     "puntuacion_openbible": 222
+    },
+    {
+     "identificacion": "Ein Samia",
+     "lat": 31.9878,
+     "lon": 35.3332,
+     "puntuacion_openbible": 25
+    },
+    {
+     "identificacion": "Kafr Thulth",
+     "lat": 32.1525,
+     "lon": 35.0442,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad3d9fc/baal-shalishah",
+   "nota": ""
+  },
+  {
+   "id": "sefarvaim",
+   "nombre": "Sefarvaim",
+   "nombre_rv1909": "Sepharvaim",
+   "formas_rv1909": [
+    "Sepharvaim"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 17:24",
+    "2R 17:31",
+    "2R 18:34",
+    "2R 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "between Damascus and Hamath",
+    "lat": 34.4011,
+    "lon": 36.6364,
+    "puntuacion_openbible": 393,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Sippar",
+     "lat": 33.0588,
+     "lon": 44.2522,
+     "puntuacion_openbible": 153
+    },
+    {
+     "identificacion": "Nippur",
+     "lat": 32.1261,
+     "lon": 45.2308,
+     "puntuacion_openbible": 63
+    },
+    {
+     "identificacion": "Huwwarin",
+     "lat": 34.2667,
+     "lon": 37.0667,
+     "puntuacion_openbible": 38
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a282c15/sepharvaim",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Sepharvaim»."
+  },
+  {
+   "id": "babilonia",
+   "nombre": "Babilonia",
+   "nombre_rv1909": "Babilonia",
+   "formas_rv1909": [
+    "Babilonia"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 17:24",
+    "2R 17:30",
+    "2R 20:12",
+    "2R 20:14",
+    "2R 20:17",
+    "2R 20:18",
+    "2R 24:1",
+    "2R 24:7",
+    "2R 24:10",
+    "2R 24:11",
+    "2R 24:12",
+    "2R 24:15",
+    "2R 24:16",
+    "2R 24:17",
+    "2R 24:20",
+    "2R 25:1",
+    "2R 25:6",
+    "2R 25:7",
+    "2R 25:8",
+    "2R 25:11",
+    "2R 25:13",
+    "2R 25:20",
+    "2R 25:21",
+    "2R 25:22",
+    "2R 25:23",
+    "2R 25:24",
+    "2R 25:27",
+    "2R 25:28"
+   ],
+   "ubicacion": {
+    "identificacion": "Babylon",
+    "lat": 32.5433,
+    "lon": 44.4222,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a217d18/babylon-1",
+   "nota": ""
+  },
+  {
+   "id": "farfar",
+   "nombre": "Farfar",
+   "nombre_rv1909": "Pharphar",
+   "formas_rv1909": [
+    "Pharphar"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "2R 5:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Awaj River",
+    "lat": 33.3136,
+    "lon": 36.0555,
+    "puntuacion_openbible": 600,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Barbar River",
+     "lat": 33.4167,
+     "lon": 36.1333,
+     "puntuacion_openbible": 39
+    },
+    {
+     "identificacion": "Tora River",
+     "lat": 33.5406,
+     "lon": 36.3531,
+     "puntuacion_openbible": 28
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a8d054a/pharpar",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Pharphar»."
+  },
+  {
+   "id": "talasar",
+   "nombre": "Talasar",
+   "nombre_rv1909": "Thalasar",
+   "formas_rv1909": [
+    "Thalasar"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Til Barsip",
+    "lat": 36.7014,
+    "lon": 38.0865,
+    "puntuacion_openbible": 347,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Til Assuri",
+     "lat": 35.1119,
+     "lon": 45.6864,
+     "puntuacion_openbible": 126
+    },
+    {
+     "identificacion": "Tal Afar",
+     "lat": 36.3792,
+     "lon": 42.4497,
+     "puntuacion_openbible": 31
+    },
+    {
+     "identificacion": "Tell Bashir",
+     "lat": 36.8742,
+     "lon": 37.5589,
+     "puntuacion_openbible": -51
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0e11c1/telassar",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Thalasar»."
+  },
+  {
+   "id": "tofet",
+   "nombre": "Tofet",
+   "nombre_rv1909": "Topheth",
+   "formas_rv1909": [
+    "Topheth"
+   ],
+   "tipo": "otro",
+   "refs": [
+    "2R 23:10"
+   ],
+   "ubicacion": {
+    "identificacion": "Hinnom Valley",
+    "lat": 31.7692,
+    "lon": 35.2281,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ad81b79/topheth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Topheth»."
+  },
+  {
+   "id": "arfad",
+   "nombre": "Arfad",
+   "nombre_rv1909": "Arphad",
+   "formas_rv1909": [
+    "Arphad"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 18:34",
+    "2R 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Rifat",
+    "lat": 36.4725,
+    "lon": 37.0947,
+    "puntuacion_openbible": 765,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a173c40/arpad",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Arphad»."
+  },
+  {
+   "id": "gilgal-2-1",
+   "nombre": "Gilgal (2R 2:1)",
+   "nombre_rv1909": "Gilgal",
+   "formas_rv1909": [
+    "Gilgal"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 2:1",
+    "2R 4:38"
+   ],
+   "ubicacion": {
+    "identificacion": "Jiljilyya",
+    "lat": 32.0306,
+    "lon": 35.225,
+    "puntuacion_openbible": 318,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet el Mefjir",
+     "lat": 31.8819,
+     "lon": 35.46,
+     "puntuacion_openbible": 3
+    },
+    {
+     "identificacion": "Suwwanet eth Thaniya",
+     "lat": 31.8816,
+     "lon": 35.4557,
+     "puntuacion_openbible": 0
+    },
+    {
+     "identificacion": "Tell el Jurn",
+     "lat": 31.8739,
+     "lon": 35.4588,
+     "puntuacion_openbible": 0
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a6399b3/gilgal-2",
+   "nota": "Hay otros lugares llamados Gilgal: este es el de 2R 2:1 según OpenBible."
+  },
+  {
+   "id": "hamat-17-24",
+   "nombre": "Hamat (2R 17:24)",
+   "nombre_rv1909": "Hamath",
+   "formas_rv1909": [
+    "Hamath"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 17:24",
+    "2R 17:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Hama",
+    "lat": 35.1365,
+    "lon": 36.75,
+    "puntuacion_openbible": 1077,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Karkheh River",
+     "lat": 31.7823,
+     "lon": 47.8694,
+     "puntuacion_openbible": 9
+    },
+    {
+     "identificacion": "Karun River",
+     "lat": 30.4275,
+     "lon": 48.1654,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aa9c505/hamath-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Hamath». Hay otros lugares llamados Hamat: este es el de 2R 17:24 según OpenBible."
+  },
+  {
+   "id": "resef",
+   "nombre": "Resef",
+   "nombre_rv1909": "Reseph",
+   "formas_rv1909": [
+    "Reseph"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Resafa",
+    "lat": 35.6278,
+    "lon": 38.7564,
+    "puntuacion_openbible": 609,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Resappa",
+     "lat": 36.4345,
+     "lon": 42.4177,
+     "puntuacion_openbible": 120
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aefdac1/rezeph",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Reseph»."
+  },
+  {
+   "id": "tifsa-15-16",
+   "nombre": "Tifsa (2R 15:16)",
+   "nombre_rv1909": "Tiphsa",
+   "formas_rv1909": [
+    "Tiphsa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 15:16"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Abu Zarad",
+    "lat": 32.1041,
+    "lon": 35.2301,
+    "puntuacion_openbible": 403,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Tafsah",
+     "lat": 32.1673,
+     "lon": 35.1697,
+     "puntuacion_openbible": 90
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abf2443/tiphsah-2",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Tiphsa». Hay otros lugares llamados Tifsa: este es el de 2R 15:16 según OpenBible."
+  },
+  {
+   "id": "abana",
+   "nombre": "Abana",
+   "nombre_rv1909": "Abana",
+   "formas_rv1909": [
+    "Abana"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "2R 5:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Barada River",
+    "lat": 33.5135,
+    "lon": 36.305,
+    "puntuacion_openbible": 1000,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aea17b7/abana",
+   "nota": ""
+  },
+  {
+   "id": "cuta",
+   "nombre": "Cuta",
+   "nombre_rv1909": "Cutha",
+   "formas_rv1909": [
+    "Cutha"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 17:24",
+    "2R 17:30"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Ibrahim",
+    "lat": 32.76,
+    "lon": 44.6129,
+    "puntuacion_openbible": 810,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a538831/cuth",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Cutha»."
+  },
+  {
+   "id": "gabaa-23-8",
+   "nombre": "Gabaa (2R 23:8)",
+   "nombre_rv1909": "Gabaa",
+   "formas_rv1909": [
+    "Gabaa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 23:8"
+   ],
+   "ubicacion": {
+    "identificacion": "Jaba",
+    "lat": 31.8575,
+    "lon": 35.2611,
+    "puntuacion_openbible": 437,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet et Tell",
+     "lat": 32.0215,
+     "lon": 35.262,
+     "puntuacion_openbible": 244
+    },
+    {
+     "identificacion": "Tel el Ful",
+     "lat": 31.8231,
+     "lon": 35.2307,
+     "puntuacion_openbible": 28
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a33cfcc/geba-3",
+   "nota": "Hay otros lugares llamados Gabaa: este es el de 2R 23:8 según OpenBible."
+  },
+  {
+   "id": "gozan",
+   "nombre": "Gozán",
+   "nombre_rv1909": "Gozán",
+   "formas_rv1909": [
+    "Gozán"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 17:6",
+    "2R 18:11",
+    "2R 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Tell Halaf",
+    "lat": 36.8268,
+    "lon": 40.0397,
+    "puntuacion_openbible": 829,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a924b16/gozan",
+   "nota": ""
+  },
+  {
+   "id": "habor",
+   "nombre": "Habor",
+   "nombre_rv1909": "Habor",
+   "formas_rv1909": [
+    "Habor"
+   ],
+   "tipo": "rio",
+   "refs": [
+    "2R 17:6",
+    "2R 18:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Khabur River",
+    "lat": 35.1303,
+    "lon": 40.4273,
+    "puntuacion_openbible": 879,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af19252/habor",
+   "nota": ""
+  },
+  {
+   "id": "janoa-15-29",
+   "nombre": "Janoa (2R 15:29)",
+   "nombre_rv1909": "Janoa",
+   "formas_rv1909": [
+    "Janoa"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 15:29"
+   ],
+   "ubicacion": {
+    "identificacion": "Yanouh",
+    "lat": 33.2602,
+    "lon": 35.3026,
+    "puntuacion_openbible": 321,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Yanuh",
+     "lat": 32.9819,
+     "lon": 35.2499,
+     "puntuacion_openbible": 247
+    },
+    {
+     "identificacion": "Khirbet Niha",
+     "lat": 33.2527,
+     "lon": 35.5606,
+     "puntuacion_openbible": 106
+    },
+    {
+     "identificacion": "Givat ha Shoqet",
+     "lat": 33.2383,
+     "lon": 35.5643,
+     "puntuacion_openbible": 81
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4f2291/janoah-2",
+   "nota": "Hay otros lugares llamados Janoa: este es el de 2R 15:29 según OpenBible."
+  },
+  {
+   "id": "jotba",
+   "nombre": "Jotba",
+   "nombre_rv1909": "Jotba",
+   "formas_rv1909": [
+    "Jotba"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 21:19"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet Shifat",
+    "lat": 32.8319,
+    "lon": 35.2781,
+    "puntuacion_openbible": 637,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Karm er Ras",
+     "lat": 32.7501,
+     "lon": 35.3339,
+     "puntuacion_openbible": 43
+    },
+    {
+     "identificacion": "Et Taba",
+     "lat": 29.8588,
+     "lon": 35.0965,
+     "puntuacion_openbible": 17
+    },
+    {
+     "identificacion": "Taba",
+     "lat": 29.4925,
+     "lon": 34.8969,
+     "puntuacion_openbible": 8
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/adbbb54/jotbah",
+   "nota": ""
+  },
+  {
+   "id": "ribla-23-33",
+   "nombre": "Ribla (2R 23:33)",
+   "nombre_rv1909": "Ribla",
+   "formas_rv1909": [
+    "Ribla"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 23:33",
+    "2R 25:6",
+    "2R 25:20",
+    "2R 25:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Rableh",
+    "lat": 34.4595,
+    "lon": 36.5726,
+    "puntuacion_openbible": 948,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab2bde8/riblah-1",
+   "nota": "Hay otros lugares llamados Ribla: este es el de 2R 23:33 según OpenBible."
+  },
+  {
+   "id": "silla",
+   "nombre": "Silla",
+   "nombre_rv1909": "Silla",
+   "formas_rv1909": [
+    "Silla"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 12:20"
+   ],
+   "ubicacion": {
+    "identificacion": "Jerusalem",
+    "lat": 31.7767,
+    "lon": 35.2342,
+    "puntuacion_openbible": 724,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Stepped Stone Structure",
+     "lat": 31.7737,
+     "lon": 35.236,
+     "puntuacion_openbible": 228
+    },
+    {
+     "identificacion": "City of David",
+     "lat": 31.7736,
+     "lon": 35.2356,
+     "puntuacion_openbible": 18
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab56451/silla",
+   "nota": ""
+  },
+  {
+   "id": "eden-19-12",
+   "nombre": "Edén (2R 19:12)",
+   "nombre_rv1909": "Edén",
+   "formas_rv1909": [
+    "Edén"
+   ],
+   "tipo": "region",
+   "refs": [
+    "2R 19:12"
+   ],
+   "ubicacion": {
+    "identificacion": "Til Barsip",
+    "lat": 36.7014,
+    "lon": 38.0865,
+    "puntuacion_openbible": 944,
+    "confianza": "alta"
+   },
+   "alternativas": [],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a7409b9/eden-2",
+   "nota": "Hay otros lugares llamados Edén: este es el de 2R 19:12 según OpenBible."
+  },
+  {
+   "id": "hala",
+   "nombre": "Hala",
+   "nombre_rv1909": "Hala",
+   "formas_rv1909": [
+    "Hala"
+   ],
+   "tipo": "region",
+   "refs": [
+    "2R 17:6",
+    "2R 18:11"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Abbasiyah",
+    "lat": 36.4317,
+    "lon": 43.1946,
+    "puntuacion_openbible": 396,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Tell Halaf",
+     "lat": 36.8268,
+     "lon": 40.0397,
+     "puntuacion_openbible": 76
+    },
+    {
+     "identificacion": "Khabur River",
+     "lat": 35.1303,
+     "lon": 40.4273,
+     "puntuacion_openbible": 52
+    },
+    {
+     "identificacion": "Nimrud",
+     "lat": 36.0981,
+     "lon": 43.3289,
+     "puntuacion_openbible": 50
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/abf176f/halah",
+   "nota": ""
+  },
+  {
+   "id": "hena",
+   "nombre": "Hena",
+   "nombre_rv1909": "Hena",
+   "formas_rv1909": [
+    "Hena"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 18:34",
+    "2R 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Anah",
+    "lat": 34.3686,
+    "lon": 41.9819,
+    "puntuacion_openbible": 318,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Hama",
+     "lat": 35.1365,
+     "lon": 36.75,
+     "puntuacion_openbible": 256
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/aab9a5e/hena",
+   "nota": ""
+  },
+  {
+   "id": "hiva",
+   "nombre": "Hiva",
+   "nombre_rv1909": "Hiva",
+   "formas_rv1909": [
+    "Hiva"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 18:34",
+    "2R 19:13"
+   ],
+   "ubicacion": {
+    "identificacion": "Kafr Aya",
+    "lat": 34.6847,
+    "lon": 36.6906,
+    "puntuacion_openbible": 110,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Imma",
+     "lat": 36.2379,
+     "lon": 36.5695,
+     "puntuacion_openbible": 39
+    },
+    {
+     "identificacion": "Karkheh River",
+     "lat": 31.7823,
+     "lon": 47.8694,
+     "puntuacion_openbible": 5
+    },
+    {
+     "identificacion": "Karun River",
+     "lat": 30.4275,
+     "lon": 48.1654,
+     "puntuacion_openbible": 4
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a9ac5f9/ivvah",
+   "nota": ""
+  },
+  {
+   "id": "ruma",
+   "nombre": "Ruma",
+   "nombre_rv1909": "Ruma",
+   "formas_rv1909": [
+    "Ruma"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 23:36"
+   ],
+   "ubicacion": {
+    "identificacion": "Horbat Rumah",
+    "lat": 32.7889,
+    "lon": 35.2932,
+    "puntuacion_openbible": 598,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Khirbet Urmah",
+     "lat": 32.1476,
+     "lon": 35.3216,
+     "puntuacion_openbible": 94
+    },
+    {
+     "identificacion": "Deir ed Domeh",
+     "lat": 31.4306,
+     "lon": 34.9861,
+     "puntuacion_openbible": 24
+    },
+    {
+     "identificacion": "Dura",
+     "lat": 31.5051,
+     "lon": 35.0275,
+     "puntuacion_openbible": 20
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a0009b3/rumah",
+   "nota": ""
+  },
+  {
+   "id": "sela-14-7",
+   "nombre": "Sela (2R 14:7)",
+   "nombre_rv1909": "Sela",
+   "formas_rv1909": [
+    "Sela"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 14:7"
+   ],
+   "ubicacion": {
+    "identificacion": "Sela",
+    "lat": 30.7809,
+    "lon": 35.5745,
+    "puntuacion_openbible": 437,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Umm el Bayyara",
+     "lat": 30.3267,
+     "lon": 35.434,
+     "puntuacion_openbible": 203
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/af8ce6a/sela-2",
+   "nota": "Hay otros lugares llamados Sela: este es el de 2R 14:7 según OpenBible."
+  },
+  {
+   "id": "seir-8-21",
+   "nombre": "Seir (2R 8:21)",
+   "nombre_rv1909": "Seir",
+   "formas_rv1909": [
+    "Seir"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 8:21"
+   ],
+   "ubicacion": {
+    "identificacion": "Al Safi",
+    "lat": 31.0369,
+    "lon": 35.4877,
+    "puntuacion_openbible": 205,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "south of the Lisan",
+     "lat": 31.2085,
+     "lon": 35.4492,
+     "puntuacion_openbible": 83
+    },
+    {
+     "identificacion": "Jebel esh Shera",
+     "lat": 30.1843,
+     "lon": 35.3166,
+     "puntuacion_openbible": 51
+    },
+    {
+     "identificacion": "north of the Dead Sea",
+     "lat": 31.795,
+     "lon": 35.5953,
+     "puntuacion_openbible": 27
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a74c453/zair",
+   "nota": "Hay otros lugares llamados Seir: este es el de 2R 8:21 según OpenBible."
+  },
+  {
+   "id": "ava",
+   "nombre": "Ava",
+   "nombre_rv1909": "Ava",
+   "formas_rv1909": [
+    "Ava"
+   ],
+   "tipo": "ciudad",
+   "refs": [
+    "2R 17:24"
+   ],
+   "ubicacion": {
+    "identificacion": "Kafr Aya",
+    "lat": 34.6847,
+    "lon": 36.6906,
+    "puntuacion_openbible": 62,
+    "confianza": "baja"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Imma",
+     "lat": 36.2379,
+     "lon": 36.5695,
+     "puntuacion_openbible": 22
+    },
+    {
+     "identificacion": "Karkheh River",
+     "lat": 31.7823,
+     "lon": 47.8694,
+     "puntuacion_openbible": 12
+    },
+    {
+     "identificacion": "Karun River",
+     "lat": 30.4275,
+     "lon": 48.1654,
+     "puntuacion_openbible": 11
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a4b500d/avva",
+   "nota": ""
+  },
+  {
+   "id": "gur",
+   "nombre": "Gur",
+   "nombre_rv1909": "Gur",
+   "formas_rv1909": [
+    "Gur"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "2R 9:27"
+   ],
+   "ubicacion": {
+    "identificacion": "Khirbet en Najjar",
+    "lat": 32.4441,
+    "lon": 35.2966,
+    "puntuacion_openbible": 566,
+    "confianza": "alta"
+   },
+   "alternativas": [
+    {
+     "identificacion": "between Ibleam and Megiddo",
+     "lat": 32.4661,
+     "lon": 35.2017,
+     "puntuacion_openbible": -40
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/a878fea/gur",
+   "nota": ""
+  },
+  {
+   "id": "quir",
+   "nombre": "Quir",
+   "nombre_rv1909": "Kir",
+   "formas_rv1909": [
+    "Kir"
+   ],
+   "tipo": "monte",
+   "refs": [
+    "2R 16:9"
+   ],
+   "ubicacion": {
+    "identificacion": "Der",
+    "lat": 33.1236,
+    "lon": 45.9314,
+    "puntuacion_openbible": 465,
+    "confianza": "media"
+   },
+   "alternativas": [
+    {
+     "identificacion": "Kura River",
+     "lat": 39.2864,
+     "lon": 49.4278,
+     "puntuacion_openbible": 98
+    },
+    {
+     "identificacion": "Amuk Valley",
+     "lat": 36.3543,
+     "lon": 36.3615,
+     "puntuacion_openbible": 73
+    },
+    {
+     "identificacion": "Tell Meskene",
+     "lat": 35.9872,
+     "lon": 38.1102,
+     "puntuacion_openbible": 63
+    }
+   ],
+   "fuente": "openbible",
+   "url_fuente": "https://www.openbible.info/geo/ancient/ab92800/kir-1",
+   "nota": "Grafía actual adaptada por regla de la RV1909 «Kir»."
   }
  ],
  "menciones_lugar": [
@@ -172892,6 +186570,2634 @@ window.BIBLIA_DATOS = {
    "lugar": "samaria",
    "inicio": 58,
    "fin": 65
+  },
+  {
+   "ref": "2R 1:1",
+   "lugar": "moab",
+   "inicio": 39,
+   "fin": 43
+  },
+  {
+   "ref": "2R 1:2",
+   "lugar": "samaria",
+   "inicio": 71,
+   "fin": 78
+  },
+  {
+   "ref": "2R 1:2",
+   "lugar": "ecron",
+   "inicio": 164,
+   "fin": 169
+  },
+  {
+   "ref": "2R 1:3",
+   "lugar": "samaria",
+   "inicio": 126,
+   "fin": 133
+  },
+  {
+   "ref": "2R 1:3",
+   "lugar": "ecron",
+   "inicio": 223,
+   "fin": 228
+  },
+  {
+   "ref": "2R 1:6",
+   "lugar": "ecron",
+   "inicio": 198,
+   "fin": 203
+  },
+  {
+   "ref": "2R 1:16",
+   "lugar": "ecron",
+   "inicio": 93,
+   "fin": 98
+  },
+  {
+   "ref": "2R 2:1",
+   "lugar": "gilgal-2-1",
+   "inicio": 104,
+   "fin": 110
+  },
+  {
+   "ref": "2R 2:2",
+   "lugar": "betel",
+   "inicio": 73,
+   "fin": 80
+  },
+  {
+   "ref": "2R 2:2",
+   "lugar": "betel",
+   "inicio": 164,
+   "fin": 171
+  },
+  {
+   "ref": "2R 2:3",
+   "lugar": "betel",
+   "inicio": 61,
+   "fin": 68
+  },
+  {
+   "ref": "2R 2:4",
+   "lugar": "jerico",
+   "inicio": 85,
+   "fin": 91
+  },
+  {
+   "ref": "2R 2:4",
+   "lugar": "jerico",
+   "inicio": 167,
+   "fin": 173
+  },
+  {
+   "ref": "2R 2:5",
+   "lugar": "jerico",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "2R 2:6",
+   "lugar": "jordan",
+   "inicio": 76,
+   "fin": 82
+  },
+  {
+   "ref": "2R 2:7",
+   "lugar": "jordan",
+   "inicio": 124,
+   "fin": 130
+  },
+  {
+   "ref": "2R 2:13",
+   "lugar": "jordan",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "2R 2:15",
+   "lugar": "jerico",
+   "inicio": 52,
+   "fin": 58
+  },
+  {
+   "ref": "2R 2:18",
+   "lugar": "jerico",
+   "inicio": 49,
+   "fin": 55
+  },
+  {
+   "ref": "2R 2:23",
+   "lugar": "betel",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "2R 2:25",
+   "lugar": "carmel",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "2R 2:25",
+   "lugar": "samaria",
+   "inicio": 52,
+   "fin": 59
+  },
+  {
+   "ref": "2R 3:1",
+   "lugar": "samaria",
+   "inicio": 42,
+   "fin": 49
+  },
+  {
+   "ref": "2R 3:4",
+   "lugar": "moab",
+   "inicio": 21,
+   "fin": 25
+  },
+  {
+   "ref": "2R 3:5",
+   "lugar": "moab",
+   "inicio": 28,
+   "fin": 32
+  },
+  {
+   "ref": "2R 3:6",
+   "lugar": "samaria",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "2R 3:7",
+   "lugar": "moab",
+   "inicio": 56,
+   "fin": 60
+  },
+  {
+   "ref": "2R 3:7",
+   "lugar": "moab",
+   "inicio": 123,
+   "fin": 127
+  },
+  {
+   "ref": "2R 3:8",
+   "lugar": "edom",
+   "inicio": 78,
+   "fin": 84
+  },
+  {
+   "ref": "2R 3:9",
+   "lugar": "edom",
+   "inicio": 63,
+   "fin": 69
+  },
+  {
+   "ref": "2R 3:12",
+   "lugar": "edom",
+   "inicio": 110,
+   "fin": 116
+  },
+  {
+   "ref": "2R 3:20",
+   "lugar": "edom",
+   "inicio": 103,
+   "fin": 109
+  },
+  {
+   "ref": "2R 3:21",
+   "lugar": "moab",
+   "inicio": 15,
+   "fin": 19
+  },
+  {
+   "ref": "2R 3:22",
+   "lugar": "moab",
+   "inicio": 82,
+   "fin": 86
+  },
+  {
+   "ref": "2R 3:23",
+   "lugar": "moab",
+   "inicio": 115,
+   "fin": 119
+  },
+  {
+   "ref": "2R 3:24",
+   "lugar": "moab",
+   "inicio": 88,
+   "fin": 92
+  },
+  {
+   "ref": "2R 3:24",
+   "lugar": "moab",
+   "inicio": 174,
+   "fin": 178
+  },
+  {
+   "ref": "2R 3:25",
+   "lugar": "quir-hareset",
+   "inicio": 200,
+   "fin": 212
+  },
+  {
+   "ref": "2R 3:26",
+   "lugar": "moab",
+   "inicio": 19,
+   "fin": 23
+  },
+  {
+   "ref": "2R 3:26",
+   "lugar": "edom",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "2R 4:8",
+   "lugar": "sunem",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "2R 4:25",
+   "lugar": "carmel",
+   "inicio": 52,
+   "fin": 59
+  },
+  {
+   "ref": "2R 4:38",
+   "lugar": "gilgal-2-1",
+   "inicio": 21,
+   "fin": 27
+  },
+  {
+   "ref": "2R 4:42",
+   "lugar": "baal-salisa",
+   "inicio": 27,
+   "fin": 38
+  },
+  {
+   "ref": "2R 5:1",
+   "lugar": "siria",
+   "inicio": 40,
+   "fin": 45
+  },
+  {
+   "ref": "2R 5:1",
+   "lugar": "siria",
+   "inicio": 158,
+   "fin": 163
+  },
+  {
+   "ref": "2R 5:2",
+   "lugar": "siria",
+   "inicio": 5,
+   "fin": 10
+  },
+  {
+   "ref": "2R 5:3",
+   "lugar": "samaria",
+   "inicio": 60,
+   "fin": 67
+  },
+  {
+   "ref": "2R 5:5",
+   "lugar": "siria",
+   "inicio": 19,
+   "fin": 24
+  },
+  {
+   "ref": "2R 5:10",
+   "lugar": "jordan",
+   "inicio": 80,
+   "fin": 86
+  },
+  {
+   "ref": "2R 5:12",
+   "lugar": "abana",
+   "inicio": 0,
+   "fin": 5
+  },
+  {
+   "ref": "2R 5:12",
+   "lugar": "farfar",
+   "inicio": 8,
+   "fin": 16
+  },
+  {
+   "ref": "2R 5:12",
+   "lugar": "damasco",
+   "inicio": 26,
+   "fin": 33
+  },
+  {
+   "ref": "2R 5:14",
+   "lugar": "jordan",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "2R 6:2",
+   "lugar": "jordan",
+   "inicio": 15,
+   "fin": 21
+  },
+  {
+   "ref": "2R 6:4",
+   "lugar": "jordan",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "2R 6:8",
+   "lugar": "siria",
+   "inicio": 16,
+   "fin": 21
+  },
+  {
+   "ref": "2R 6:11",
+   "lugar": "siria",
+   "inicio": 24,
+   "fin": 29
+  },
+  {
+   "ref": "2R 6:13",
+   "lugar": "dotan",
+   "inicio": 98,
+   "fin": 104
+  },
+  {
+   "ref": "2R 6:19",
+   "lugar": "samaria",
+   "inicio": 131,
+   "fin": 138
+  },
+  {
+   "ref": "2R 6:20",
+   "lugar": "samaria",
+   "inicio": 21,
+   "fin": 28
+  },
+  {
+   "ref": "2R 6:20",
+   "lugar": "samaria",
+   "inicio": 151,
+   "fin": 158
+  },
+  {
+   "ref": "2R 6:23",
+   "lugar": "siria",
+   "inicio": 153,
+   "fin": 158
+  },
+  {
+   "ref": "2R 6:24",
+   "lugar": "siria",
+   "inicio": 47,
+   "fin": 52
+  },
+  {
+   "ref": "2R 6:24",
+   "lugar": "samaria",
+   "inicio": 101,
+   "fin": 108
+  },
+  {
+   "ref": "2R 6:25",
+   "lugar": "samaria",
+   "inicio": 24,
+   "fin": 31
+  },
+  {
+   "ref": "2R 7:1",
+   "lugar": "samaria",
+   "inicio": 174,
+   "fin": 181
+  },
+  {
+   "ref": "2R 7:15",
+   "lugar": "jordan",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "2R 7:18",
+   "lugar": "samaria",
+   "inicio": 207,
+   "fin": 214
+  },
+  {
+   "ref": "2R 8:7",
+   "lugar": "damasco",
+   "inicio": 22,
+   "fin": 29
+  },
+  {
+   "ref": "2R 8:7",
+   "lugar": "siria",
+   "inicio": 49,
+   "fin": 54
+  },
+  {
+   "ref": "2R 8:9",
+   "lugar": "damasco",
+   "inicio": 63,
+   "fin": 70
+  },
+  {
+   "ref": "2R 8:9",
+   "lugar": "siria",
+   "inicio": 187,
+   "fin": 192
+  },
+  {
+   "ref": "2R 8:13",
+   "lugar": "siria",
+   "inicio": 138,
+   "fin": 143
+  },
+  {
+   "ref": "2R 8:17",
+   "lugar": "jerusalen",
+   "inicio": 72,
+   "fin": 81
+  },
+  {
+   "ref": "2R 8:20",
+   "lugar": "edom",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "2R 8:21",
+   "lugar": "seir-8-21",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "2R 8:22",
+   "lugar": "edom",
+   "inicio": 23,
+   "fin": 27
+  },
+  {
+   "ref": "2R 8:22",
+   "lugar": "libna-10-29",
+   "inicio": 80,
+   "fin": 85
+  },
+  {
+   "ref": "2R 8:24",
+   "lugar": "ciudad-de-david",
+   "inicio": 68,
+   "fin": 83
+  },
+  {
+   "ref": "2R 8:26",
+   "lugar": "jerusalen",
+   "inicio": 74,
+   "fin": 83
+  },
+  {
+   "ref": "2R 8:28",
+   "lugar": "ramot-galaad",
+   "inicio": 44,
+   "fin": 50
+  },
+  {
+   "ref": "2R 8:28",
+   "lugar": "siria",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "2R 8:29",
+   "lugar": "jezreel",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "2R 8:29",
+   "lugar": "ramot-galaad",
+   "inicio": 101,
+   "fin": 107
+  },
+  {
+   "ref": "2R 8:29",
+   "lugar": "siria",
+   "inicio": 143,
+   "fin": 148
+  },
+  {
+   "ref": "2R 8:29",
+   "lugar": "jezreel",
+   "inicio": 233,
+   "fin": 240
+  },
+  {
+   "ref": "2R 9:1",
+   "lugar": "ramot-galaad",
+   "inicio": 143,
+   "fin": 149
+  },
+  {
+   "ref": "2R 9:4",
+   "lugar": "ramot-galaad",
+   "inicio": 41,
+   "fin": 47
+  },
+  {
+   "ref": "2R 9:10",
+   "lugar": "jezreel",
+   "inicio": 42,
+   "fin": 49
+  },
+  {
+   "ref": "2R 9:14",
+   "lugar": "ramot-galaad",
+   "inicio": 89,
+   "fin": 95
+  },
+  {
+   "ref": "2R 9:14",
+   "lugar": "siria",
+   "inicio": 150,
+   "fin": 155
+  },
+  {
+   "ref": "2R 9:15",
+   "lugar": "jezreel",
+   "inicio": 37,
+   "fin": 44
+  },
+  {
+   "ref": "2R 9:15",
+   "lugar": "siria",
+   "inicio": 135,
+   "fin": 140
+  },
+  {
+   "ref": "2R 9:15",
+   "lugar": "jezreel",
+   "inicio": 237,
+   "fin": 244
+  },
+  {
+   "ref": "2R 9:16",
+   "lugar": "jezreel",
+   "inicio": 33,
+   "fin": 40
+  },
+  {
+   "ref": "2R 9:17",
+   "lugar": "jezreel",
+   "inicio": 39,
+   "fin": 46
+  },
+  {
+   "ref": "2R 9:21",
+   "lugar": "jezreel",
+   "inicio": 202,
+   "fin": 209
+  },
+  {
+   "ref": "2R 9:25",
+   "lugar": "jezreel",
+   "inicio": 92,
+   "fin": 99
+  },
+  {
+   "ref": "2R 9:27",
+   "lugar": "gur",
+   "inicio": 170,
+   "fin": 173
+  },
+  {
+   "ref": "2R 9:27",
+   "lugar": "ibleam",
+   "inicio": 183,
+   "fin": 189
+  },
+  {
+   "ref": "2R 9:27",
+   "lugar": "meguido",
+   "inicio": 203,
+   "fin": 210
+  },
+  {
+   "ref": "2R 9:28",
+   "lugar": "jerusalen",
+   "inicio": 40,
+   "fin": 49
+  },
+  {
+   "ref": "2R 9:28",
+   "lugar": "ciudad-de-david",
+   "inicio": 109,
+   "fin": 124
+  },
+  {
+   "ref": "2R 9:30",
+   "lugar": "jezreel",
+   "inicio": 20,
+   "fin": 27
+  },
+  {
+   "ref": "2R 9:36",
+   "lugar": "jezreel",
+   "inicio": 149,
+   "fin": 156
+  },
+  {
+   "ref": "2R 9:37",
+   "lugar": "jezreel",
+   "inicio": 85,
+   "fin": 92
+  },
+  {
+   "ref": "2R 10:1",
+   "lugar": "samaria",
+   "inicio": 17,
+   "fin": 24
+  },
+  {
+   "ref": "2R 10:1",
+   "lugar": "samaria",
+   "inicio": 77,
+   "fin": 84
+  },
+  {
+   "ref": "2R 10:1",
+   "lugar": "jezreel",
+   "inicio": 106,
+   "fin": 113
+  },
+  {
+   "ref": "2R 10:6",
+   "lugar": "jezreel",
+   "inicio": 180,
+   "fin": 187
+  },
+  {
+   "ref": "2R 10:7",
+   "lugar": "jezreel",
+   "inicio": 152,
+   "fin": 159
+  },
+  {
+   "ref": "2R 10:11",
+   "lugar": "jezreel",
+   "inicio": 73,
+   "fin": 80
+  },
+  {
+   "ref": "2R 10:12",
+   "lugar": "samaria",
+   "inicio": 30,
+   "fin": 37
+  },
+  {
+   "ref": "2R 10:17",
+   "lugar": "samaria",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "2R 10:17",
+   "lugar": "samaria",
+   "inicio": 91,
+   "fin": 98
+  },
+  {
+   "ref": "2R 10:29",
+   "lugar": "betel",
+   "inicio": 157,
+   "fin": 164
+  },
+  {
+   "ref": "2R 10:29",
+   "lugar": "dan",
+   "inicio": 170,
+   "fin": 173
+  },
+  {
+   "ref": "2R 10:33",
+   "lugar": "jordan",
+   "inicio": 9,
+   "fin": 15
+  },
+  {
+   "ref": "2R 10:33",
+   "lugar": "galaad",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "2R 10:33",
+   "lugar": "aroer",
+   "inicio": 103,
+   "fin": 108
+  },
+  {
+   "ref": "2R 10:33",
+   "lugar": "arnon",
+   "inicio": 137,
+   "fin": 142
+  },
+  {
+   "ref": "2R 10:33",
+   "lugar": "galaad",
+   "inicio": 146,
+   "fin": 152
+  },
+  {
+   "ref": "2R 10:33",
+   "lugar": "basan",
+   "inicio": 157,
+   "fin": 162
+  },
+  {
+   "ref": "2R 10:35",
+   "lugar": "samaria",
+   "inicio": 48,
+   "fin": 55
+  },
+  {
+   "ref": "2R 10:36",
+   "lugar": "samaria",
+   "inicio": 41,
+   "fin": 48
+  },
+  {
+   "ref": "2R 12:1",
+   "lugar": "jerusalen",
+   "inicio": 74,
+   "fin": 83
+  },
+  {
+   "ref": "2R 12:1",
+   "lugar": "beerseba",
+   "inicio": 121,
+   "fin": 130
+  },
+  {
+   "ref": "2R 12:17",
+   "lugar": "siria",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "2R 12:17",
+   "lugar": "gat",
+   "inicio": 51,
+   "fin": 55
+  },
+  {
+   "ref": "2R 12:17",
+   "lugar": "jerusalen",
+   "inicio": 109,
+   "fin": 118
+  },
+  {
+   "ref": "2R 12:18",
+   "lugar": "siria",
+   "inicio": 268,
+   "fin": 273
+  },
+  {
+   "ref": "2R 12:18",
+   "lugar": "jerusalen",
+   "inicio": 293,
+   "fin": 302
+  },
+  {
+   "ref": "2R 12:20",
+   "lugar": "bet-milo",
+   "inicio": 89,
+   "fin": 94
+  },
+  {
+   "ref": "2R 12:20",
+   "lugar": "silla",
+   "inicio": 114,
+   "fin": 119
+  },
+  {
+   "ref": "2R 12:21",
+   "lugar": "ciudad-de-david",
+   "inicio": 126,
+   "fin": 141
+  },
+  {
+   "ref": "2R 13:1",
+   "lugar": "samaria",
+   "inicio": 114,
+   "fin": 121
+  },
+  {
+   "ref": "2R 13:3",
+   "lugar": "siria",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "2R 13:4",
+   "lugar": "siria",
+   "inicio": 104,
+   "fin": 109
+  },
+  {
+   "ref": "2R 13:6",
+   "lugar": "samaria",
+   "inicio": 151,
+   "fin": 158
+  },
+  {
+   "ref": "2R 13:7",
+   "lugar": "siria",
+   "inicio": 140,
+   "fin": 145
+  },
+  {
+   "ref": "2R 13:9",
+   "lugar": "samaria",
+   "inicio": 51,
+   "fin": 58
+  },
+  {
+   "ref": "2R 13:10",
+   "lugar": "samaria",
+   "inicio": 98,
+   "fin": 105
+  },
+  {
+   "ref": "2R 13:13",
+   "lugar": "samaria",
+   "inicio": 89,
+   "fin": 96
+  },
+  {
+   "ref": "2R 13:17",
+   "lugar": "siria",
+   "inicio": 162,
+   "fin": 167
+  },
+  {
+   "ref": "2R 13:17",
+   "lugar": "afec-20-26",
+   "inicio": 199,
+   "fin": 204
+  },
+  {
+   "ref": "2R 13:19",
+   "lugar": "siria",
+   "inicio": 91,
+   "fin": 96
+  },
+  {
+   "ref": "2R 13:19",
+   "lugar": "siria",
+   "inicio": 157,
+   "fin": 162
+  },
+  {
+   "ref": "2R 13:22",
+   "lugar": "siria",
+   "inicio": 20,
+   "fin": 25
+  },
+  {
+   "ref": "2R 13:24",
+   "lugar": "siria",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "2R 14:2",
+   "lugar": "jerusalen",
+   "inicio": 77,
+   "fin": 86
+  },
+  {
+   "ref": "2R 14:2",
+   "lugar": "jerusalen",
+   "inicio": 126,
+   "fin": 135
+  },
+  {
+   "ref": "2R 14:7",
+   "lugar": "valle-de-la-sal",
+   "inicio": 43,
+   "fin": 63
+  },
+  {
+   "ref": "2R 14:7",
+   "lugar": "sela-14-7",
+   "inicio": 74,
+   "fin": 78
+  },
+  {
+   "ref": "2R 14:9",
+   "lugar": "libano",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "2R 14:9",
+   "lugar": "libano",
+   "inicio": 137,
+   "fin": 143
+  },
+  {
+   "ref": "2R 14:9",
+   "lugar": "libano",
+   "inicio": 222,
+   "fin": 228
+  },
+  {
+   "ref": "2R 14:10",
+   "lugar": "edom",
+   "inicio": 25,
+   "fin": 29
+  },
+  {
+   "ref": "2R 14:11",
+   "lugar": "bet-semes",
+   "inicio": 113,
+   "fin": 123
+  },
+  {
+   "ref": "2R 14:13",
+   "lugar": "bet-semes",
+   "inicio": 88,
+   "fin": 98
+  },
+  {
+   "ref": "2R 14:13",
+   "lugar": "jerusalen",
+   "inicio": 109,
+   "fin": 118
+  },
+  {
+   "ref": "2R 14:13",
+   "lugar": "jerusalen",
+   "inicio": 140,
+   "fin": 149
+  },
+  {
+   "ref": "2R 14:14",
+   "lugar": "samaria",
+   "inicio": 165,
+   "fin": 172
+  },
+  {
+   "ref": "2R 14:16",
+   "lugar": "samaria",
+   "inicio": 49,
+   "fin": 56
+  },
+  {
+   "ref": "2R 14:19",
+   "lugar": "jerusalen",
+   "inicio": 37,
+   "fin": 46
+  },
+  {
+   "ref": "2R 14:19",
+   "lugar": "laquis",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "2R 14:19",
+   "lugar": "laquis",
+   "inicio": 91,
+   "fin": 97
+  },
+  {
+   "ref": "2R 14:20",
+   "lugar": "jerusalen",
+   "inicio": 51,
+   "fin": 60
+  },
+  {
+   "ref": "2R 14:20",
+   "lugar": "ciudad-de-david",
+   "inicio": 83,
+   "fin": 98
+  },
+  {
+   "ref": "2R 14:22",
+   "lugar": "elat",
+   "inicio": 13,
+   "fin": 18
+  },
+  {
+   "ref": "2R 14:23",
+   "lugar": "samaria",
+   "inicio": 106,
+   "fin": 113
+  },
+  {
+   "ref": "2R 14:25",
+   "lugar": "lebo-hamat",
+   "inicio": 45,
+   "fin": 61
+  },
+  {
+   "ref": "2R 14:25",
+   "lugar": "mar-salado",
+   "inicio": 71,
+   "fin": 88
+  },
+  {
+   "ref": "2R 14:25",
+   "lugar": "git-hefer",
+   "inicio": 219,
+   "fin": 230
+  },
+  {
+   "ref": "2R 14:28",
+   "lugar": "damasco",
+   "inicio": 147,
+   "fin": 154
+  },
+  {
+   "ref": "2R 14:28",
+   "lugar": "hamat-8-9",
+   "inicio": 159,
+   "fin": 165
+  },
+  {
+   "ref": "2R 15:2",
+   "lugar": "jerusalen",
+   "inicio": 79,
+   "fin": 88
+  },
+  {
+   "ref": "2R 15:2",
+   "lugar": "jerusalen",
+   "inicio": 128,
+   "fin": 137
+  },
+  {
+   "ref": "2R 15:7",
+   "lugar": "ciudad-de-david",
+   "inicio": 69,
+   "fin": 84
+  },
+  {
+   "ref": "2R 15:13",
+   "lugar": "samaria",
+   "inicio": 117,
+   "fin": 124
+  },
+  {
+   "ref": "2R 15:14",
+   "lugar": "tirsa",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "2R 15:14",
+   "lugar": "samaria",
+   "inicio": 53,
+   "fin": 60
+  },
+  {
+   "ref": "2R 15:14",
+   "lugar": "samaria",
+   "inicio": 96,
+   "fin": 103
+  },
+  {
+   "ref": "2R 15:16",
+   "lugar": "tifsa-15-16",
+   "inicio": 25,
+   "fin": 31
+  },
+  {
+   "ref": "2R 15:16",
+   "lugar": "tirsa",
+   "inicio": 97,
+   "fin": 103
+  },
+  {
+   "ref": "2R 15:17",
+   "lugar": "samaria",
+   "inicio": 104,
+   "fin": 111
+  },
+  {
+   "ref": "2R 15:19",
+   "lugar": "asiria",
+   "inicio": 19,
+   "fin": 25
+  },
+  {
+   "ref": "2R 15:20",
+   "lugar": "asiria",
+   "inicio": 140,
+   "fin": 146
+  },
+  {
+   "ref": "2R 15:20",
+   "lugar": "asiria",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "2R 15:23",
+   "lugar": "samaria",
+   "inicio": 89,
+   "fin": 96
+  },
+  {
+   "ref": "2R 15:25",
+   "lugar": "samaria",
+   "inicio": 71,
+   "fin": 78
+  },
+  {
+   "ref": "2R 15:27",
+   "lugar": "samaria",
+   "inicio": 94,
+   "fin": 101
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "ijon",
+   "inicio": 85,
+   "fin": 90
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "abel-bet-maaca",
+   "inicio": 92,
+   "fin": 96
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "janoa-15-29",
+   "inicio": 112,
+   "fin": 117
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "cedes",
+   "inicio": 121,
+   "fin": 126
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "hazor",
+   "inicio": 130,
+   "fin": 134
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "galaad",
+   "inicio": 138,
+   "fin": 144
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "galilea",
+   "inicio": 148,
+   "fin": 155
+  },
+  {
+   "ref": "2R 15:29",
+   "lugar": "asiria",
+   "inicio": 204,
+   "fin": 210
+  },
+  {
+   "ref": "2R 15:33",
+   "lugar": "jerusalen",
+   "inicio": 75,
+   "fin": 84
+  },
+  {
+   "ref": "2R 15:37",
+   "lugar": "siria",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "2R 15:38",
+   "lugar": "ciudad-de-david",
+   "inicio": 69,
+   "fin": 84
+  },
+  {
+   "ref": "2R 16:2",
+   "lugar": "jerusalen",
+   "inicio": 62,
+   "fin": 71
+  },
+  {
+   "ref": "2R 16:5",
+   "lugar": "siria",
+   "inicio": 22,
+   "fin": 27
+  },
+  {
+   "ref": "2R 16:5",
+   "lugar": "jerusalen",
+   "inicio": 79,
+   "fin": 88
+  },
+  {
+   "ref": "2R 16:6",
+   "lugar": "siria",
+   "inicio": 29,
+   "fin": 34
+  },
+  {
+   "ref": "2R 16:6",
+   "lugar": "elat",
+   "inicio": 45,
+   "fin": 50
+  },
+  {
+   "ref": "2R 16:6",
+   "lugar": "siria",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "2R 16:6",
+   "lugar": "elat",
+   "inicio": 83,
+   "fin": 88
+  },
+  {
+   "ref": "2R 16:6",
+   "lugar": "elat",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "2R 16:7",
+   "lugar": "asiria",
+   "inicio": 58,
+   "fin": 64
+  },
+  {
+   "ref": "2R 16:7",
+   "lugar": "siria",
+   "inicio": 142,
+   "fin": 147
+  },
+  {
+   "ref": "2R 16:8",
+   "lugar": "asiria",
+   "inicio": 119,
+   "fin": 125
+  },
+  {
+   "ref": "2R 16:9",
+   "lugar": "asiria",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "2R 16:9",
+   "lugar": "asiria",
+   "inicio": 51,
+   "fin": 57
+  },
+  {
+   "ref": "2R 16:9",
+   "lugar": "damasco",
+   "inicio": 65,
+   "fin": 72
+  },
+  {
+   "ref": "2R 16:9",
+   "lugar": "quir",
+   "inicio": 112,
+   "fin": 115
+  },
+  {
+   "ref": "2R 16:10",
+   "lugar": "asiria",
+   "inicio": 56,
+   "fin": 62
+  },
+  {
+   "ref": "2R 16:10",
+   "lugar": "damasco",
+   "inicio": 66,
+   "fin": 73
+  },
+  {
+   "ref": "2R 16:10",
+   "lugar": "damasco",
+   "inicio": 128,
+   "fin": 135
+  },
+  {
+   "ref": "2R 16:11",
+   "lugar": "damasco",
+   "inicio": 92,
+   "fin": 99
+  },
+  {
+   "ref": "2R 16:11",
+   "lugar": "damasco",
+   "inicio": 171,
+   "fin": 178
+  },
+  {
+   "ref": "2R 16:12",
+   "lugar": "damasco",
+   "inicio": 27,
+   "fin": 34
+  },
+  {
+   "ref": "2R 16:18",
+   "lugar": "asiria",
+   "inicio": 147,
+   "fin": 153
+  },
+  {
+   "ref": "2R 16:20",
+   "lugar": "ciudad-de-david",
+   "inicio": 74,
+   "fin": 89
+  },
+  {
+   "ref": "2R 17:1",
+   "lugar": "samaria",
+   "inicio": 80,
+   "fin": 87
+  },
+  {
+   "ref": "2R 17:4",
+   "lugar": "asiria",
+   "inicio": 14,
+   "fin": 20
+  },
+  {
+   "ref": "2R 17:4",
+   "lugar": "egipto",
+   "inicio": 102,
+   "fin": 108
+  },
+  {
+   "ref": "2R 17:4",
+   "lugar": "asiria",
+   "inicio": 140,
+   "fin": 146
+  },
+  {
+   "ref": "2R 17:4",
+   "lugar": "asiria",
+   "inicio": 184,
+   "fin": 190
+  },
+  {
+   "ref": "2R 17:5",
+   "lugar": "asiria",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 17:5",
+   "lugar": "samaria",
+   "inicio": 62,
+   "fin": 69
+  },
+  {
+   "ref": "2R 17:6",
+   "lugar": "asiria",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "2R 17:6",
+   "lugar": "samaria",
+   "inicio": 49,
+   "fin": 56
+  },
+  {
+   "ref": "2R 17:6",
+   "lugar": "asiria",
+   "inicio": 81,
+   "fin": 87
+  },
+  {
+   "ref": "2R 17:6",
+   "lugar": "hala",
+   "inicio": 102,
+   "fin": 106
+  },
+  {
+   "ref": "2R 17:6",
+   "lugar": "habor",
+   "inicio": 113,
+   "fin": 118
+  },
+  {
+   "ref": "2R 17:6",
+   "lugar": "gozan",
+   "inicio": 136,
+   "fin": 141
+  },
+  {
+   "ref": "2R 17:7",
+   "lugar": "egipto",
+   "inicio": 89,
+   "fin": 95
+  },
+  {
+   "ref": "2R 17:7",
+   "lugar": "egipto",
+   "inicio": 129,
+   "fin": 135
+  },
+  {
+   "ref": "2R 17:23",
+   "lugar": "asiria",
+   "inicio": 170,
+   "fin": 176
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "asiria",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "babilonia",
+   "inicio": 34,
+   "fin": 43
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "cuta",
+   "inicio": 50,
+   "fin": 55
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "ava",
+   "inicio": 62,
+   "fin": 65
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "hamat-17-24",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "sefarvaim",
+   "inicio": 85,
+   "fin": 95
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "samaria",
+   "inicio": 126,
+   "fin": 133
+  },
+  {
+   "ref": "2R 17:24",
+   "lugar": "samaria",
+   "inicio": 182,
+   "fin": 189
+  },
+  {
+   "ref": "2R 17:26",
+   "lugar": "asiria",
+   "inicio": 33,
+   "fin": 39
+  },
+  {
+   "ref": "2R 17:26",
+   "lugar": "samaria",
+   "inicio": 100,
+   "fin": 107
+  },
+  {
+   "ref": "2R 17:27",
+   "lugar": "asiria",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 17:28",
+   "lugar": "samaria",
+   "inicio": 55,
+   "fin": 62
+  },
+  {
+   "ref": "2R 17:28",
+   "lugar": "betel",
+   "inicio": 76,
+   "fin": 83
+  },
+  {
+   "ref": "2R 17:29",
+   "lugar": "samaria",
+   "inicio": 102,
+   "fin": 109
+  },
+  {
+   "ref": "2R 17:30",
+   "lugar": "babilonia",
+   "inicio": 7,
+   "fin": 16
+  },
+  {
+   "ref": "2R 17:30",
+   "lugar": "cuta",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "2R 17:30",
+   "lugar": "hamat-17-24",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "2R 17:31",
+   "lugar": "sefarvaim",
+   "inicio": 52,
+   "fin": 62
+  },
+  {
+   "ref": "2R 17:31",
+   "lugar": "sefarvaim",
+   "inicio": 130,
+   "fin": 140
+  },
+  {
+   "ref": "2R 17:36",
+   "lugar": "egipto",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "2R 18:2",
+   "lugar": "jerusalen",
+   "inicio": 60,
+   "fin": 69
+  },
+  {
+   "ref": "2R 18:7",
+   "lugar": "asiria",
+   "inicio": 96,
+   "fin": 102
+  },
+  {
+   "ref": "2R 18:8",
+   "lugar": "gaza",
+   "inicio": 36,
+   "fin": 40
+  },
+  {
+   "ref": "2R 18:9",
+   "lugar": "samaria",
+   "inicio": 137,
+   "fin": 144
+  },
+  {
+   "ref": "2R 18:10",
+   "lugar": "samaria",
+   "inicio": 126,
+   "fin": 133
+  },
+  {
+   "ref": "2R 18:11",
+   "lugar": "asiria",
+   "inicio": 12,
+   "fin": 18
+  },
+  {
+   "ref": "2R 18:11",
+   "lugar": "asiria",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "2R 18:11",
+   "lugar": "hala",
+   "inicio": 60,
+   "fin": 64
+  },
+  {
+   "ref": "2R 18:11",
+   "lugar": "habor",
+   "inicio": 71,
+   "fin": 76
+  },
+  {
+   "ref": "2R 18:11",
+   "lugar": "gozan",
+   "inicio": 94,
+   "fin": 99
+  },
+  {
+   "ref": "2R 18:13",
+   "lugar": "asiria",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "2R 18:14",
+   "lugar": "asiria",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "2R 18:14",
+   "lugar": "laquis",
+   "inicio": 64,
+   "fin": 70
+  },
+  {
+   "ref": "2R 18:14",
+   "lugar": "asiria",
+   "inicio": 151,
+   "fin": 157
+  },
+  {
+   "ref": "2R 18:16",
+   "lugar": "asiria",
+   "inicio": 150,
+   "fin": 156
+  },
+  {
+   "ref": "2R 18:17",
+   "lugar": "asiria",
+   "inicio": 18,
+   "fin": 24
+  },
+  {
+   "ref": "2R 18:17",
+   "lugar": "laquis",
+   "inicio": 54,
+   "fin": 60
+  },
+  {
+   "ref": "2R 18:17",
+   "lugar": "jerusalen",
+   "inicio": 68,
+   "fin": 77
+  },
+  {
+   "ref": "2R 18:17",
+   "lugar": "jerusalen",
+   "inicio": 165,
+   "fin": 174
+  },
+  {
+   "ref": "2R 18:19",
+   "lugar": "asiria",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "2R 18:21",
+   "lugar": "egipto",
+   "inicio": 60,
+   "fin": 66
+  },
+  {
+   "ref": "2R 18:21",
+   "lugar": "egipto",
+   "inicio": 160,
+   "fin": 166
+  },
+  {
+   "ref": "2R 18:22",
+   "lugar": "jerusalen",
+   "inicio": 136,
+   "fin": 145
+  },
+  {
+   "ref": "2R 18:22",
+   "lugar": "jerusalen",
+   "inicio": 182,
+   "fin": 191
+  },
+  {
+   "ref": "2R 18:23",
+   "lugar": "asiria",
+   "inicio": 67,
+   "fin": 73
+  },
+  {
+   "ref": "2R 18:24",
+   "lugar": "egipto",
+   "inicio": 110,
+   "fin": 116
+  },
+  {
+   "ref": "2R 18:28",
+   "lugar": "asiria",
+   "inicio": 112,
+   "fin": 118
+  },
+  {
+   "ref": "2R 18:30",
+   "lugar": "asiria",
+   "inicio": 132,
+   "fin": 138
+  },
+  {
+   "ref": "2R 18:31",
+   "lugar": "asiria",
+   "inicio": 48,
+   "fin": 54
+  },
+  {
+   "ref": "2R 18:33",
+   "lugar": "asiria",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "2R 18:34",
+   "lugar": "hamat-8-9",
+   "inicio": 23,
+   "fin": 29
+  },
+  {
+   "ref": "2R 18:34",
+   "lugar": "arfad",
+   "inicio": 36,
+   "fin": 42
+  },
+  {
+   "ref": "2R 18:34",
+   "lugar": "sefarvaim",
+   "inicio": 62,
+   "fin": 72
+  },
+  {
+   "ref": "2R 18:34",
+   "lugar": "hena",
+   "inicio": 77,
+   "fin": 81
+  },
+  {
+   "ref": "2R 18:34",
+   "lugar": "hiva",
+   "inicio": 88,
+   "fin": 92
+  },
+  {
+   "ref": "2R 18:34",
+   "lugar": "samaria",
+   "inicio": 119,
+   "fin": 126
+  },
+  {
+   "ref": "2R 18:35",
+   "lugar": "jerusalen",
+   "inicio": 121,
+   "fin": 130
+  },
+  {
+   "ref": "2R 19:6",
+   "lugar": "asiria",
+   "inicio": 169,
+   "fin": 175
+  },
+  {
+   "ref": "2R 19:8",
+   "lugar": "asiria",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "2R 19:8",
+   "lugar": "libna-10-29",
+   "inicio": 60,
+   "fin": 65
+  },
+  {
+   "ref": "2R 19:8",
+   "lugar": "laquis",
+   "inicio": 109,
+   "fin": 115
+  },
+  {
+   "ref": "2R 19:9",
+   "lugar": "cus-19-9",
+   "inicio": 30,
+   "fin": 38
+  },
+  {
+   "ref": "2R 19:10",
+   "lugar": "jerusalen",
+   "inicio": 89,
+   "fin": 98
+  },
+  {
+   "ref": "2R 19:10",
+   "lugar": "asiria",
+   "inicio": 136,
+   "fin": 142
+  },
+  {
+   "ref": "2R 19:11",
+   "lugar": "asiria",
+   "inicio": 50,
+   "fin": 56
+  },
+  {
+   "ref": "2R 19:12",
+   "lugar": "gozan",
+   "inicio": 81,
+   "fin": 86
+  },
+  {
+   "ref": "2R 19:12",
+   "lugar": "haran",
+   "inicio": 90,
+   "fin": 95
+  },
+  {
+   "ref": "2R 19:12",
+   "lugar": "resef",
+   "inicio": 99,
+   "fin": 105
+  },
+  {
+   "ref": "2R 19:12",
+   "lugar": "eden-19-12",
+   "inicio": 122,
+   "fin": 126
+  },
+  {
+   "ref": "2R 19:12",
+   "lugar": "talasar",
+   "inicio": 142,
+   "fin": 150
+  },
+  {
+   "ref": "2R 19:13",
+   "lugar": "hamat-8-9",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "2R 19:13",
+   "lugar": "arfad",
+   "inicio": 40,
+   "fin": 46
+  },
+  {
+   "ref": "2R 19:13",
+   "lugar": "sefarvaim",
+   "inicio": 71,
+   "fin": 81
+  },
+  {
+   "ref": "2R 19:13",
+   "lugar": "hena",
+   "inicio": 86,
+   "fin": 90
+  },
+  {
+   "ref": "2R 19:13",
+   "lugar": "hiva",
+   "inicio": 97,
+   "fin": 101
+  },
+  {
+   "ref": "2R 19:17",
+   "lugar": "asiria",
+   "inicio": 39,
+   "fin": 45
+  },
+  {
+   "ref": "2R 19:20",
+   "lugar": "asiria",
+   "inicio": 139,
+   "fin": 145
+  },
+  {
+   "ref": "2R 19:21",
+   "lugar": "sion",
+   "inicio": 107,
+   "fin": 111
+  },
+  {
+   "ref": "2R 19:21",
+   "lugar": "jerusalen",
+   "inicio": 157,
+   "fin": 166
+  },
+  {
+   "ref": "2R 19:23",
+   "lugar": "libano",
+   "inicio": 166,
+   "fin": 172
+  },
+  {
+   "ref": "2R 19:23",
+   "lugar": "carmel",
+   "inicio": 275,
+   "fin": 281
+  },
+  {
+   "ref": "2R 19:31",
+   "lugar": "jerusalen",
+   "inicio": 18,
+   "fin": 27
+  },
+  {
+   "ref": "2R 19:31",
+   "lugar": "monte-sion",
+   "inicio": 64,
+   "fin": 77
+  },
+  {
+   "ref": "2R 19:32",
+   "lugar": "asiria",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "2R 19:36",
+   "lugar": "asiria",
+   "inicio": 29,
+   "fin": 35
+  },
+  {
+   "ref": "2R 19:36",
+   "lugar": "ninive",
+   "inicio": 66,
+   "fin": 72
+  },
+  {
+   "ref": "2R 19:37",
+   "lugar": "ararat",
+   "inicio": 149,
+   "fin": 155
+  },
+  {
+   "ref": "2R 20:6",
+   "lugar": "asiria",
+   "inicio": 87,
+   "fin": 93
+  },
+  {
+   "ref": "2R 20:12",
+   "lugar": "babilonia",
+   "inicio": 57,
+   "fin": 66
+  },
+  {
+   "ref": "2R 20:14",
+   "lugar": "babilonia",
+   "inicio": 175,
+   "fin": 184
+  },
+  {
+   "ref": "2R 20:17",
+   "lugar": "babilonia",
+   "inicio": 122,
+   "fin": 131
+  },
+  {
+   "ref": "2R 20:18",
+   "lugar": "babilonia",
+   "inicio": 107,
+   "fin": 116
+  },
+  {
+   "ref": "2R 21:1",
+   "lugar": "jerusalen",
+   "inicio": 61,
+   "fin": 70
+  },
+  {
+   "ref": "2R 21:4",
+   "lugar": "jerusalen",
+   "inicio": 101,
+   "fin": 110
+  },
+  {
+   "ref": "2R 21:7",
+   "lugar": "jerusalen",
+   "inicio": 176,
+   "fin": 185
+  },
+  {
+   "ref": "2R 21:12",
+   "lugar": "jerusalen",
+   "inicio": 82,
+   "fin": 91
+  },
+  {
+   "ref": "2R 21:13",
+   "lugar": "jerusalen",
+   "inicio": 18,
+   "fin": 27
+  },
+  {
+   "ref": "2R 21:13",
+   "lugar": "samaria",
+   "inicio": 41,
+   "fin": 48
+  },
+  {
+   "ref": "2R 21:13",
+   "lugar": "jerusalen",
+   "inicio": 98,
+   "fin": 107
+  },
+  {
+   "ref": "2R 21:15",
+   "lugar": "egipto",
+   "inicio": 108,
+   "fin": 114
+  },
+  {
+   "ref": "2R 21:16",
+   "lugar": "jerusalen",
+   "inicio": 85,
+   "fin": 94
+  },
+  {
+   "ref": "2R 21:19",
+   "lugar": "jerusalen",
+   "inicio": 75,
+   "fin": 84
+  },
+  {
+   "ref": "2R 21:19",
+   "lugar": "jotba",
+   "inicio": 140,
+   "fin": 145
+  },
+  {
+   "ref": "2R 22:1",
+   "lugar": "jerusalen",
+   "inicio": 60,
+   "fin": 69
+  },
+  {
+   "ref": "2R 22:1",
+   "lugar": "boscat",
+   "inicio": 138,
+   "fin": 145
+  },
+  {
+   "ref": "2R 22:14",
+   "lugar": "jerusalen",
+   "inicio": 179,
+   "fin": 188
+  },
+  {
+   "ref": "2R 23:1",
+   "lugar": "jerusalen",
+   "inicio": 71,
+   "fin": 80
+  },
+  {
+   "ref": "2R 23:2",
+   "lugar": "jerusalen",
+   "inicio": 95,
+   "fin": 104
+  },
+  {
+   "ref": "2R 23:4",
+   "lugar": "jerusalen",
+   "inicio": 274,
+   "fin": 283
+  },
+  {
+   "ref": "2R 23:4",
+   "lugar": "torrente-de-cedron",
+   "inicio": 299,
+   "fin": 305
+  },
+  {
+   "ref": "2R 23:4",
+   "lugar": "betel",
+   "inicio": 344,
+   "fin": 351
+  },
+  {
+   "ref": "2R 23:5",
+   "lugar": "jerusalen",
+   "inicio": 149,
+   "fin": 158
+  },
+  {
+   "ref": "2R 23:6",
+   "lugar": "jerusalen",
+   "inicio": 66,
+   "fin": 75
+  },
+  {
+   "ref": "2R 23:6",
+   "lugar": "torrente-de-cedron",
+   "inicio": 92,
+   "fin": 98
+  },
+  {
+   "ref": "2R 23:6",
+   "lugar": "torrente-de-cedron",
+   "inicio": 128,
+   "fin": 134
+  },
+  {
+   "ref": "2R 23:8",
+   "lugar": "gabaa-23-8",
+   "inicio": 125,
+   "fin": 130
+  },
+  {
+   "ref": "2R 23:8",
+   "lugar": "beerseba",
+   "inicio": 137,
+   "fin": 146
+  },
+  {
+   "ref": "2R 23:9",
+   "lugar": "jerusalen",
+   "inicio": 67,
+   "fin": 76
+  },
+  {
+   "ref": "2R 23:10",
+   "lugar": "tofet",
+   "inicio": 19,
+   "fin": 26
+  },
+  {
+   "ref": "2R 23:10",
+   "lugar": "valle-de-hinom",
+   "inicio": 61,
+   "fin": 67
+  },
+  {
+   "ref": "2R 23:12",
+   "lugar": "torrente-de-cedron",
+   "inicio": 253,
+   "fin": 259
+  },
+  {
+   "ref": "2R 23:13",
+   "lugar": "jerusalen",
+   "inicio": 57,
+   "fin": 66
+  },
+  {
+   "ref": "2R 23:13",
+   "lugar": "moab",
+   "inicio": 232,
+   "fin": 236
+  },
+  {
+   "ref": "2R 23:13",
+   "lugar": "amon",
+   "inicio": 277,
+   "fin": 282
+  },
+  {
+   "ref": "2R 23:15",
+   "lugar": "betel",
+   "inicio": 34,
+   "fin": 41
+  },
+  {
+   "ref": "2R 23:17",
+   "lugar": "betel",
+   "inicio": 196,
+   "fin": 203
+  },
+  {
+   "ref": "2R 23:18",
+   "lugar": "samaria",
+   "inicio": 128,
+   "fin": 135
+  },
+  {
+   "ref": "2R 23:19",
+   "lugar": "samaria",
+   "inicio": 62,
+   "fin": 69
+  },
+  {
+   "ref": "2R 23:19",
+   "lugar": "betel",
+   "inicio": 197,
+   "fin": 204
+  },
+  {
+   "ref": "2R 23:20",
+   "lugar": "jerusalen",
+   "inicio": 136,
+   "fin": 145
+  },
+  {
+   "ref": "2R 23:23",
+   "lugar": "jerusalen",
+   "inicio": 75,
+   "fin": 84
+  },
+  {
+   "ref": "2R 23:24",
+   "lugar": "jerusalen",
+   "inicio": 125,
+   "fin": 134
+  },
+  {
+   "ref": "2R 23:27",
+   "lugar": "jerusalen",
+   "inicio": 129,
+   "fin": 138
+  },
+  {
+   "ref": "2R 23:29",
+   "lugar": "egipto",
+   "inicio": 38,
+   "fin": 44
+  },
+  {
+   "ref": "2R 23:29",
+   "lugar": "asiria",
+   "inicio": 68,
+   "fin": 74
+  },
+  {
+   "ref": "2R 23:29",
+   "lugar": "eufrates",
+   "inicio": 82,
+   "fin": 90
+  },
+  {
+   "ref": "2R 23:29",
+   "lugar": "meguido",
+   "inicio": 163,
+   "fin": 170
+  },
+  {
+   "ref": "2R 23:30",
+   "lugar": "meguido",
+   "inicio": 62,
+   "fin": 69
+  },
+  {
+   "ref": "2R 23:30",
+   "lugar": "jerusalen",
+   "inicio": 72,
+   "fin": 81
+  },
+  {
+   "ref": "2R 23:31",
+   "lugar": "jerusalen",
+   "inicio": 78,
+   "fin": 87
+  },
+  {
+   "ref": "2R 23:31",
+   "lugar": "libna-10-29",
+   "inicio": 143,
+   "fin": 148
+  },
+  {
+   "ref": "2R 23:33",
+   "lugar": "ribla-23-33",
+   "inicio": 32,
+   "fin": 37
+  },
+  {
+   "ref": "2R 23:33",
+   "lugar": "hamat-8-9",
+   "inicio": 57,
+   "fin": 63
+  },
+  {
+   "ref": "2R 23:33",
+   "lugar": "jerusalen",
+   "inicio": 80,
+   "fin": 89
+  },
+  {
+   "ref": "2R 23:34",
+   "lugar": "egipto",
+   "inicio": 157,
+   "fin": 163
+  },
+  {
+   "ref": "2R 23:36",
+   "lugar": "jerusalen",
+   "inicio": 77,
+   "fin": 86
+  },
+  {
+   "ref": "2R 23:36",
+   "lugar": "ruma",
+   "inicio": 140,
+   "fin": 144
+  },
+  {
+   "ref": "2R 24:1",
+   "lugar": "babilonia",
+   "inicio": 40,
+   "fin": 49
+  },
+  {
+   "ref": "2R 24:4",
+   "lugar": "jerusalen",
+   "inicio": 60,
+   "fin": 69
+  },
+  {
+   "ref": "2R 24:7",
+   "lugar": "egipto",
+   "inicio": 22,
+   "fin": 28
+  },
+  {
+   "ref": "2R 24:7",
+   "lugar": "babilonia",
+   "inicio": 66,
+   "fin": 75
+  },
+  {
+   "ref": "2R 24:7",
+   "lugar": "torrente-de-egipto",
+   "inicio": 115,
+   "fin": 128
+  },
+  {
+   "ref": "2R 24:7",
+   "lugar": "eufrates",
+   "inicio": 145,
+   "fin": 153
+  },
+  {
+   "ref": "2R 24:8",
+   "lugar": "jerusalen",
+   "inicio": 66,
+   "fin": 75
+  },
+  {
+   "ref": "2R 24:8",
+   "lugar": "jerusalen",
+   "inicio": 142,
+   "fin": 151
+  },
+  {
+   "ref": "2R 24:10",
+   "lugar": "babilonia",
+   "inicio": 61,
+   "fin": 70
+  },
+  {
+   "ref": "2R 24:10",
+   "lugar": "jerusalen",
+   "inicio": 78,
+   "fin": 87
+  },
+  {
+   "ref": "2R 24:11",
+   "lugar": "babilonia",
+   "inicio": 34,
+   "fin": 43
+  },
+  {
+   "ref": "2R 24:12",
+   "lugar": "babilonia",
+   "inicio": 45,
+   "fin": 54
+  },
+  {
+   "ref": "2R 24:12",
+   "lugar": "babilonia",
+   "inicio": 141,
+   "fin": 150
+  },
+  {
+   "ref": "2R 24:14",
+   "lugar": "jerusalen",
+   "inicio": 29,
+   "fin": 38
+  },
+  {
+   "ref": "2R 24:15",
+   "lugar": "babilonia",
+   "inicio": 31,
+   "fin": 40
+  },
+  {
+   "ref": "2R 24:15",
+   "lugar": "jerusalen",
+   "inicio": 160,
+   "fin": 169
+  },
+  {
+   "ref": "2R 24:15",
+   "lugar": "babilonia",
+   "inicio": 172,
+   "fin": 181
+  },
+  {
+   "ref": "2R 24:16",
+   "lugar": "babilonia",
+   "inicio": 173,
+   "fin": 182
+  },
+  {
+   "ref": "2R 24:17",
+   "lugar": "babilonia",
+   "inicio": 12,
+   "fin": 21
+  },
+  {
+   "ref": "2R 24:18",
+   "lugar": "jerusalen",
+   "inicio": 66,
+   "fin": 75
+  },
+  {
+   "ref": "2R 24:18",
+   "lugar": "libna-10-29",
+   "inicio": 141,
+   "fin": 146
+  },
+  {
+   "ref": "2R 24:20",
+   "lugar": "jerusalen",
+   "inicio": 33,
+   "fin": 42
+  },
+  {
+   "ref": "2R 24:20",
+   "lugar": "babilonia",
+   "inicio": 125,
+   "fin": 134
+  },
+  {
+   "ref": "2R 25:1",
+   "lugar": "babilonia",
+   "inicio": 107,
+   "fin": 116
+  },
+  {
+   "ref": "2R 25:1",
+   "lugar": "jerusalen",
+   "inicio": 150,
+   "fin": 159
+  },
+  {
+   "ref": "2R 25:5",
+   "lugar": "jerico",
+   "inicio": 72,
+   "fin": 78
+  },
+  {
+   "ref": "2R 25:6",
+   "lugar": "babilonia",
+   "inicio": 41,
+   "fin": 50
+  },
+  {
+   "ref": "2R 25:6",
+   "lugar": "ribla-23-33",
+   "inicio": 53,
+   "fin": 58
+  },
+  {
+   "ref": "2R 25:7",
+   "lugar": "babilonia",
+   "inicio": 120,
+   "fin": 129
+  },
+  {
+   "ref": "2R 25:8",
+   "lugar": "babilonia",
+   "inicio": 88,
+   "fin": 97
+  },
+  {
+   "ref": "2R 25:8",
+   "lugar": "jerusalen",
+   "inicio": 106,
+   "fin": 115
+  },
+  {
+   "ref": "2R 25:8",
+   "lugar": "babilonia",
+   "inicio": 177,
+   "fin": 186
+  },
+  {
+   "ref": "2R 25:9",
+   "lugar": "jerusalen",
+   "inicio": 67,
+   "fin": 76
+  },
+  {
+   "ref": "2R 25:10",
+   "lugar": "jerusalen",
+   "inicio": 98,
+   "fin": 107
+  },
+  {
+   "ref": "2R 25:11",
+   "lugar": "babilonia",
+   "inicio": 92,
+   "fin": 101
+  },
+  {
+   "ref": "2R 25:13",
+   "lugar": "babilonia",
+   "inicio": 176,
+   "fin": 185
+  },
+  {
+   "ref": "2R 25:20",
+   "lugar": "ribla-23-33",
+   "inicio": 67,
+   "fin": 72
+  },
+  {
+   "ref": "2R 25:20",
+   "lugar": "babilonia",
+   "inicio": 83,
+   "fin": 92
+  },
+  {
+   "ref": "2R 25:21",
+   "lugar": "babilonia",
+   "inicio": 12,
+   "fin": 21
+  },
+  {
+   "ref": "2R 25:21",
+   "lugar": "ribla-23-33",
+   "inicio": 42,
+   "fin": 47
+  },
+  {
+   "ref": "2R 25:21",
+   "lugar": "hamat-8-9",
+   "inicio": 62,
+   "fin": 68
+  },
+  {
+   "ref": "2R 25:22",
+   "lugar": "babilonia",
+   "inicio": 37,
+   "fin": 46
+  },
+  {
+   "ref": "2R 25:23",
+   "lugar": "babilonia",
+   "inicio": 75,
+   "fin": 84
+  },
+  {
+   "ref": "2R 25:23",
+   "lugar": "mizpa-18-26",
+   "inicio": 144,
+   "fin": 149
+  },
+  {
+   "ref": "2R 25:24",
+   "lugar": "babilonia",
+   "inicio": 156,
+   "fin": 165
+  },
+  {
+   "ref": "2R 25:25",
+   "lugar": "mizpa-18-26",
+   "inicio": 200,
+   "fin": 205
+  },
+  {
+   "ref": "2R 25:26",
+   "lugar": "egipto",
+   "inicio": 105,
+   "fin": 111
+  },
+  {
+   "ref": "2R 25:27",
+   "lugar": "babilonia",
+   "inicio": 159,
+   "fin": 168
+  },
+  {
+   "ref": "2R 25:28",
+   "lugar": "babilonia",
+   "inicio": 86,
+   "fin": 95
   }
  ],
  "cronologia": {
@@ -173016,7 +189322,8 @@ window.BIBLIA_DATOS = {
    "Rut 1:1 sitúa la historia «en los días que gobernaban los jueces» sin decir en qué juez ni en qué año, y la genealogía de Rut 4:18-22 no da edades: Rut no añade eventos con año (sus hechos van sin fecha).",
    "1 Samuel da duraciones sueltas (Elí: 98 años y cuarenta de juez; el arca, siete meses entre los filisteos y veinte años en Quiriat-jearim; David, cuatro meses y algunos días en tierra filistea), pero ningún enlace con los libros anteriores: no se fecha desde Adán (sus hechos van sin fecha, con las cifras citadas). 1 S 13:1 no se usa para la edad de Saúl ni para la duración de su reinado, ni tampoco Hch 13:21 (libro posterior).",
    "2 Samuel da duraciones con cita (David siete años y seis meses en Hebrón y treinta y tres en Jerusalén, cuarenta en total; Is-boset, dos años; Absalón, tres años en Gesur…), pero ninguna une el reinado de David con los libros anteriores ni con un año desde Adán: sus hechos van sin fecha, con las cifras citadas y, donde se suman, el cálculo con sus pasos. No se usan libros posteriores (Reyes, Crónicas).",
-   "1 Reyes enlaza la monarquía con la salida de Egipto en un solo versículo: 1 R 6:1 sitúa el comienzo del templo «en el año cuatrocientos ochenta» después de la salida (Brenton, LXX: «four hundred and fortieth»), en el cuarto año de Salomón. Con el mismo convenio que Ex 40:17 («el año N» = N − 1 años después de la salida) da el evento «Salomón comienza el templo». Ningún otro hecho de 1 Reyes se fecha desde Adán: los reinados y sincronismos van con su cita (texto), y la suma de las duraciones de Jueces, Samuel y Reyes solo se compara con 1 R 6:1 (cálculo, con advertencias). No se usan libros posteriores (2 Reyes, Crónicas)."
+   "1 Reyes enlaza la monarquía con la salida de Egipto en un solo versículo: 1 R 6:1 sitúa el comienzo del templo «en el año cuatrocientos ochenta» después de la salida (Brenton, LXX: «four hundred and fortieth»), en el cuarto año de Salomón. Con el mismo convenio que Ex 40:17 («el año N» = N − 1 años después de la salida) da el evento «Salomón comienza el templo». Ningún otro hecho de 1 Reyes se fecha desde Adán: los reinados y sincronismos van con su cita (texto), y la suma de las duraciones de Jueces, Samuel y Reyes solo se compara con 1 R 6:1 (cálculo, con advertencias). No se usan libros posteriores (2 Reyes, Crónicas).",
+   "2 Reyes da la duración de cada reinado y, casi siempre, su comienzo en un año del rey del otro reino (sincronismo), con su cita en la RV1909 (TM) y en Brenton (LXX) (`reinados`, texto). Varios sincronismos no cuadran entre sí (Joram de Israel: 2 R 1:17 frente a 3:1 y 8:16; Ocozías: 8:25 frente a 9:29; Joás de Israel: 13:1 frente a 13:10; Azarías: 14:2 y 14:23 frente a 15:1; Oseas: 15:27, 16:1 y 15:30 frente a 17:1; Samaria: 18:1 frente a 18:10): se muestran tal cual, con su cita, y un cálculo con pasos y advertencias (`calculos_2r`), sin armonizar. Nada de 2 Reyes se fecha desde Adán ni en años antes de Cristo: anclar la cronología con fuentes de fuera de la Biblia (anales asirios, Crónica babilónica) es una decisión pendiente (ver datos/LEEME.md, «2 Reyes: decisiones»)."
   ],
   "combinaciones": [
    {
@@ -177354,6 +193661,258 @@ window.BIBLIA_DATOS = {
     "ref": "1R 22:1",
     "nota": "Texto: «TRES años pasaron sin guerra entre los Siros é Israel» (1 R 22:1; Brenton: «he rested three years»), antes de la batalla de Ramot de Galaad, sin año.",
     "pasaje": "1r-48"
+   },
+   {
+    "titulo": "Reinado de Joram (Israel)",
+    "ref": "2R 3:1",
+    "nota": "Texto: reina «reinó doce años» (2R 3:1; Brenton, LXX: «he reigned twelve years»). Comienza «el año dieciocho de Josaphat» (2R 3:1; LXX: «in the eighteenth year of Josaphat»). Otro versículo: «en el segundo año de Joram, hijo de Josaphat» (2R 1:17), que no cuadra con el anterior (ver los cálculos de 2 Reyes; no se armoniza). Brenton no tiene el sincronismo de 1:17.",
+    "pasaje": "2r-04"
+   },
+   {
+    "titulo": "Reinado de Joram (Judá)",
+    "ref": "2R 8:17",
+    "nota": "Texto: reina «ocho años reinó en Jerusalem» (2R 8:17; Brenton, LXX: «he reigned eight years»). Comienza «En el quinto año de Joram hijo de Achâb» (2R 8:16; LXX: «In the fifth year of Joram»).",
+    "pasaje": "2r-18"
+   },
+   {
+    "titulo": "Reinado de Ocozías (Judá)",
+    "ref": "2R 8:26",
+    "nota": "Texto: reina «reinó un año en Jerusalem» (2R 8:26; Brenton, LXX: «he reigned one year»). Comienza «En el año doce de Joram» (2R 8:25; LXX: «In the twelfth year of Joram»). Otro versículo: «En el undécimo año de Joram» (2R 9:29), que no cuadra con el anterior (ver los cálculos de 2 Reyes; no se armoniza). Brenton: «in the eleventh year of Joram» (2R 9:29), que no cuadra con el anterior (ver los cálculos de 2 Reyes; no se armoniza).",
+    "pasaje": "2r-18"
+   },
+   {
+    "titulo": "Reinado de Jehú (Israel)",
+    "ref": "2R 10:36",
+    "nota": "Texto: reina «fué veintiocho años» (2R 10:36; Brenton, LXX: «twenty-eight years»).",
+    "pasaje": "2r-23"
+   },
+   {
+    "titulo": "Reinado de Atalía (Judá)",
+    "ref": "2R 11:3",
+    "nota": "Texto: reina «seis años: y Athalía fué reina sobre el país» (2R 11:3; Brenton, LXX: «six years: and Gotholia reigned over the land»).",
+    "pasaje": "2r-24"
+   },
+   {
+    "titulo": "Reinado de Joás (Judá)",
+    "ref": "2R 12:1",
+    "nota": "Texto: reina «reinó cuarenta años en Jerusalem» (2R 12:1; Brenton, LXX: «he reigned forty years»). Comienza «EN el séptimo año de Jehú» (2R 12:1; LXX: «in the seventh year of Ju»).",
+    "pasaje": "2r-26"
+   },
+   {
+    "titulo": "Reinado de Joacaz (Israel)",
+    "ref": "2R 13:1",
+    "nota": "Texto: reina «diecisiete años» (2R 13:1; Brenton, LXX: «seventeen years»). Comienza «EN el año veintitrés de Joas» (2R 13:1; LXX: «In the twenty-third year of Joas»).",
+    "pasaje": "2r-28"
+   },
+   {
+    "titulo": "Reinado de Joás (Israel)",
+    "ref": "2R 13:10",
+    "nota": "Texto: reina «dieciséis años» (2R 13:10; Brenton, LXX: «sixteen years»). Comienza «El año treinta y siete de Joas» (2R 13:10; LXX: «In the thirty-seventh year of Joas»).",
+    "pasaje": "2r-28"
+   },
+   {
+    "titulo": "Reinado de Amasías (Judá)",
+    "ref": "2R 14:2",
+    "nota": "Texto: reina «veintinueve años reinó en Jerusalem» (2R 14:2; Brenton, LXX: «he reigned twenty and nine years»). Comienza «EN el año segundo de Joas» (2R 14:1; LXX: «In the second year of Joas»).",
+    "pasaje": "2r-30"
+   },
+   {
+    "titulo": "Reinado de Jeroboam (Israel)",
+    "ref": "2R 14:23",
+    "nota": "Texto: reina «cuarenta y un años» (2R 14:23; Brenton, LXX: «forty and one years»). Comienza «El año quince de Amasías» (2R 14:23; LXX: «In the fifteenth year of Amessias»).",
+    "pasaje": "2r-31"
+   },
+   {
+    "titulo": "Reinado de Azarías (Uzías) (Judá)",
+    "ref": "2R 15:2",
+    "nota": "Texto: reina «cincuenta y dos años reinó en Jerusalem» (2R 15:2; Brenton, LXX: «he reigned fifty-two years»). Comienza «EN el año veintisiete de Jeroboam» (2R 15:1; LXX: «In the twenty-seventh year of Jeroboam»).",
+    "pasaje": "2r-32"
+   },
+   {
+    "titulo": "Reinado de Zacarías (Israel)",
+    "ref": "2R 15:8",
+    "nota": "Texto: reina «seis meses» (2R 15:8; Brenton, LXX: «six months»). Comienza «En el año treinta y ocho de Azarías» (2R 15:8; LXX: «In the thirty and eighth year of Azarias»).",
+    "pasaje": "2r-33"
+   },
+   {
+    "titulo": "Reinado de Salum (Israel)",
+    "ref": "2R 15:13",
+    "nota": "Texto: reina «reinó el tiempo de un mes» (2R 15:13; Brenton: «a full month», sin cifra). Comienza «en el año treinta y nueve de Uzzía» (2R 15:13); la LXX dice «in the thirty and ninth year of Azarias» (no se armoniza).",
+    "pasaje": "2r-33"
+   },
+   {
+    "titulo": "Reinado de Manahem (Israel)",
+    "ref": "2R 15:17",
+    "nota": "Texto: reina «diez años» (2R 15:17; Brenton, LXX: «ten years»). Comienza «En el año treinta y nueve de Azarías» (2R 15:17; LXX: «In the thirty and ninth year of Azarias»).",
+    "pasaje": "2r-33"
+   },
+   {
+    "titulo": "Reinado de Pekaía (Israel)",
+    "ref": "2R 15:23",
+    "nota": "Texto: reina «dos años» (2R 15:23; Brenton, LXX: «two years»). Comienza «En el año cincuenta de Azarías» (2R 15:23; LXX: «In the fiftieth year of Azarias»).",
+    "pasaje": "2r-33"
+   },
+   {
+    "titulo": "Reinado de Peka (Israel)",
+    "ref": "2R 15:27",
+    "nota": "Texto: reina «reinó veinte años» (2R 15:27; Brenton, LXX: «twenty years»). Comienza «En el año cincuenta y dos de Azarías» (2R 15:27; LXX: «In the fifty-second year of Azarias»).",
+    "pasaje": "2r-33"
+   },
+   {
+    "titulo": "Reinado de Jotam (Judá)",
+    "ref": "2R 15:33",
+    "nota": "Texto: reina «reinó dieciséis años en Jerusalem» (2R 15:33; Brenton, LXX: «he reigned sixteen years»). Comienza «En el segundo año de Peka» (2R 15:32; LXX: «In the second year of Phakee»).",
+    "pasaje": "2r-34"
+   },
+   {
+    "titulo": "Reinado de Acaz (Judá)",
+    "ref": "2R 16:2",
+    "nota": "Texto: reina «reinó en Jerusalem dieciséis años» (2R 16:2; Brenton, LXX: «he reigned sixteen years»). Comienza «EN el año diecisiete de Peka» (2R 16:1; LXX: «In the seventeenth year of Phakee»).",
+    "pasaje": "2r-34"
+   },
+   {
+    "titulo": "Reinado de Oseas (Israel)",
+    "ref": "2R 17:1",
+    "nota": "Texto: reina «nueve años» (2R 17:1; Brenton, LXX: «nine years»). Comienza «EN el año duodécimo de Achâz» (2R 17:1; LXX: «In the twelfth year of Achaz»). Otro versículo: «á los veinte años de Jotham» (2R 15:30), que no cuadra con el anterior (ver los cálculos de 2 Reyes; no se armoniza). Brenton: «in the twentieth year of Joatham» (2R 15:30), que no cuadra con el anterior (ver los cálculos de 2 Reyes; no se armoniza).",
+    "pasaje": "2r-36"
+   },
+   {
+    "titulo": "Reinado de Ezequías (Judá)",
+    "ref": "2R 18:2",
+    "nota": "Texto: reina «reinó en Jerusalem veintinueve años» (2R 18:2; Brenton, LXX: «he reigned twenty and nine years»). Comienza «EN el tercer año de Oseas» (2R 18:1; LXX: «in the third year of Osee»).",
+    "pasaje": "2r-38"
+   },
+   {
+    "titulo": "Reinado de Manasés (Judá)",
+    "ref": "2R 21:1",
+    "nota": "Texto: reina «reinó en Jerusalem cincuenta y cinco años» (2R 21:1; Brenton, LXX: «he reigned fifty-five years»).",
+    "pasaje": "2r-44"
+   },
+   {
+    "titulo": "Reinado de Amón (Judá)",
+    "ref": "2R 21:19",
+    "nota": "Texto: reina «reinó dos años en Jerusalem» (2R 21:19; Brenton, LXX: «he reigned two years»).",
+    "pasaje": "2r-45"
+   },
+   {
+    "titulo": "Reinado de Josías (Judá)",
+    "ref": "2R 22:1",
+    "nota": "Texto: reina «reinó en Jerusalem treinta y un años» (2R 22:1; Brenton, LXX: «he reigned thirty and one years»).",
+    "pasaje": "2r-46"
+   },
+   {
+    "titulo": "Reinado de Joacaz (Judá)",
+    "ref": "2R 23:31",
+    "nota": "Texto: reina «reinó tres meses en Jerusalem» (2R 23:31; Brenton, LXX: «he reigned three months»).",
+    "pasaje": "2r-49"
+   },
+   {
+    "titulo": "Reinado de Joacim (Eliaquim) (Judá)",
+    "ref": "2R 23:36",
+    "nota": "Texto: reina «once años reinó en Jerusalem» (2R 23:36; Brenton, LXX: «he reigned eleven years»).",
+    "pasaje": "2r-49"
+   },
+   {
+    "titulo": "Reinado de Joaquín (Judá)",
+    "ref": "2R 24:8",
+    "nota": "Texto: reina «reinó en Jerusalem tres meses» (2R 24:8; Brenton, LXX: «he reigned three months»).",
+    "pasaje": "2r-50"
+   },
+   {
+    "titulo": "Reinado de Sedecías (Matanías) (Judá)",
+    "ref": "2R 24:18",
+    "nota": "Texto: reina «reinó en Jerusalem once años» (2R 24:18; Brenton, LXX: «he reigned eleven years»).",
+    "pasaje": "2r-50"
+   },
+   {
+    "titulo": "Elías sube al cielo",
+    "ref": "2R 2:1-11",
+    "nota": "Sin cifra de tiempo: el texto no lo sitúa en un año de ningún rey.",
+    "pasaje": "2r-02"
+   },
+   {
+    "titulo": "Siete años de hambre",
+    "ref": "2R 8:1-6",
+    "nota": "Texto: «siete años» (2 R 8:1-3; Brenton: «seven years»), sin decir en qué año de qué rey empiezan.",
+    "pasaje": "2r-16"
+   },
+   {
+    "titulo": "Toma de Samaria",
+    "ref": "2R 17:5-6",
+    "nota": "Texto: el rey de Asiria cerca Samaria «tres años» (2 R 17:5) y la toma «En el año nueve de Oseas» (17:6); 18:9-10 lo pone del «cuarto año del rey Ezechîas, que era el año séptimo de Oseas» al «sexto año de Ezechîas, el cual era el año nono de Oseas». Ver el cálculo «2r-samaria» (18:1 frente a 18:10).",
+    "pasaje": "2r-36"
+   },
+   {
+    "titulo": "Senaquerib contra Judá",
+    "ref": "2R 18:13",
+    "nota": "Texto: «á los catorce años del rey Ezechîas» (2 R 18:13; Brenton: «in the fourteenth year of king Ezekias»).",
+    "pasaje": "2r-39"
+   },
+   {
+    "titulo": "Quince años más para Ezequías",
+    "ref": "2R 20:1-11",
+    "nota": "Texto: «añadiré á tus días quince años» (2 R 20:6; Brenton: «fifteen years»). Cálculo: si la enfermedad cae en el año catorce (18:13; 20:1 dice solo «EN aquellos días») y reina veintinueve (18:2), 14 + 15 = 29; el texto no dice que sea el mismo año.",
+    "pasaje": "2r-42"
+   },
+   {
+    "titulo": "El libro de la ley; la pascua de Josías",
+    "ref": "2R 22:3",
+    "nota": "Texto: «á los dieciocho años del rey Josías» (2 R 22:3; 23:23; Brenton: «in the eighteenth year of king Josias»).",
+    "pasaje": "2r-46"
+   },
+   {
+    "titulo": "Primera deportación: Joaquín a Babilonia",
+    "ref": "2R 24:10-16",
+    "nota": "Texto: el rey de Babilonia lo prende «en el octavo año de su reinado» (2 R 24:12; Brenton: «in the eighth year of his reign»); se lleva «hasta diez mil cautivos» (24:14).",
+    "pasaje": "2r-50"
+   },
+   {
+    "titulo": "Cerco y caída de Jerusalén",
+    "ref": "2R 25:1-10",
+    "nota": "Texto: el cerco empieza «á los nueve años de su reinado» (de Sedecías), «en el mes décimo, á los diez del mes» (25:1); dura «hasta el undécimo año del rey Sedecías» (25:2); el templo se quema en el mes quinto, «siendo el año diecinueve de Nabucodonosor» (25:8). Brenton: «in the ninth year of his reign», «until the eleventh year», «the nineteenth year».",
+    "pasaje": "2r-51"
+   },
+   {
+    "titulo": "Joaquín sale de la cárcel",
+    "ref": "2R 25:27-30",
+    "nota": "Texto: «á los treinta y siete años de la trasportación de Joachîn», en el mes duodécimo, «en el primer año de su reinado» (de Evil-merodac) (2 R 25:27; Brenton: «in the thirty-seventh year of the carrying away»).",
+    "pasaje": "2r-52"
+   },
+   {
+    "titulo": "Cálculo: ¿Cuándo empieza Joram de Israel? 2 R 3:1 y 8:16 frente a 1:17",
+    "ref": "2R 1:17",
+    "nota": "Cálculo con pasos (2r-joram-israel): Según 8:16, Joram de Israel empieza 4 años antes que Joram de Judá (y 3:1 lo pone en «el año dieciocho de Josaphat»). Según 1:17 (TM; Brenton no lo tiene) empieza «en el segundo año de Joram, hijo de Josaphat», es decir, después que él. Los dos órdenes no cuadran; el texto no lo explica. Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.",
+    "pasaje": "2r-01"
+   },
+   {
+    "titulo": "Cálculo: ¿Cuándo empieza Ocozías de Judá? 2 R 8:25 frente a 9:29",
+    "ref": "2R 9:29",
+    "nota": "Cálculo con pasos (2r-ocozias-juda): 8:25 da el año 12 de Joram de Israel y 9:29 el año 11 (TM y LXX). Diferencia de un año; el texto no la explica. Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.",
+    "pasaje": "2r-20"
+   },
+   {
+    "titulo": "Cálculo: ¿Cuándo empieza Joás de Israel? 2 R 13:1 frente a 13:10",
+    "ref": "2R 13:10",
+    "nota": "Cálculo con pasos (2r-joas-israel): Si Joacaz empieza en el año 23 de Joás de Judá y reina 17, su hijo Joás empieza hacia el año 40 de Joás de Judá (o uno antes, si el último año de Joacaz cuenta también como primero de su hijo); 13:10 dice el año 37. Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.",
+    "pasaje": "2r-28"
+   },
+   {
+    "titulo": "Cálculo: ¿Cuándo empieza Azarías? 2 R 14:2 y 14:23 frente a 15:1",
+    "ref": "2R 15:1",
+    "nota": "Cálculo con pasos (2r-azarias): Si Azarías empieza al morir Amasías (14:19-21), cae hacia el año 15 de Jeroboam; 15:1 dice el año 27. 14:17 dice además que Amasías «vivió después de la muerte de Joas» quince años. El texto no explica la diferencia. Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.",
+    "pasaje": "2r-32"
+   },
+   {
+    "titulo": "Cálculo: ¿Cuándo empieza Oseas? 2 R 15:27 y 16:1 frente a 17:1 (y 15:30)",
+    "ref": "2R 17:1",
+    "nota": "Cálculo con pasos (2r-oseas): Si Oseas reina al matar a Peka (15:30), eso cae hacia el año 4 de Acaz; 17:1 dice el año 12. Además, 15:30 fecha la muerte de Peka «á los veinte años de Jotham», y 15:33 da a Jotam «dieciséis años» de reinado. El texto no lo explica. Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.",
+    "pasaje": "2r-36"
+   },
+   {
+    "titulo": "Cálculo: ¿En qué año de Ezequías cae Samaria? 2 R 18:1 y 17:6 frente a 18:10",
+    "ref": "2R 18:10",
+    "nota": "Cálculo con pasos (2r-samaria): Con 18:1, el año 9 de Oseas sería el 7 de Ezequías; 18:10 dice el 6 (y 18:9 hace del cuarto de Ezequías el séptimo de Oseas, que cuadra con 18:10 y no con 18:1). El texto no lo explica. Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.",
+    "pasaje": "2r-38"
    }
   ],
   "duraciones": {
@@ -178367,6 +194926,901 @@ window.BIBLIA_DATOS = {
       "fuente": "brenton"
      }
     }
+   },
+   {
+    "persona": "Jehoram_2",
+    "rey": "Joram",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 3:1",
+      "cita": "reinó doce años",
+      "valor": 12,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 3:1",
+      "cita": "he reigned twelve years",
+      "valor": 12,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 3:1",
+      "cita": "el año dieciocho de Josaphat",
+      "anio": 18,
+      "de": "Josafat",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 3:1",
+      "cita": "in the eighteenth year of Josaphat",
+      "anio": 18,
+      "de": "Josafat",
+      "fuente": "brenton"
+     }
+    },
+    "otros_sincronismos": [
+     {
+      "ref": "2R 1:17",
+      "tradicion": "TM",
+      "cita": "en el segundo año de Joram, hijo de Josaphat",
+      "anio": 2,
+      "de": "Joram de Judá",
+      "fuente": "rv1909"
+     }
+    ]
+   },
+   {
+    "persona": "Jehoram_1",
+    "rey": "Joram",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 8:17",
+      "cita": "ocho años reinó en Jerusalem",
+      "valor": 8,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 8:17",
+      "cita": "he reigned eight years",
+      "valor": 8,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 8:16",
+      "cita": "En el quinto año de Joram hijo de Achâb",
+      "anio": 5,
+      "de": "Joram de Israel",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 8:16",
+      "cita": "In the fifth year of Joram",
+      "anio": 5,
+      "de": "Joram de Israel",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Ahaziah_2",
+    "rey": "Ocozías",
+    "reino": "Judá",
+    "unidad": "año",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 8:26",
+      "cita": "reinó un año en Jerusalem",
+      "valor": 1,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 8:26",
+      "cita": "he reigned one year",
+      "valor": 1,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 8:25",
+      "cita": "En el año doce de Joram",
+      "anio": 12,
+      "de": "Joram de Israel",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 8:25",
+      "cita": "In the twelfth year of Joram",
+      "anio": 12,
+      "de": "Joram de Israel",
+      "fuente": "brenton"
+     }
+    },
+    "otros_sincronismos": [
+     {
+      "ref": "2R 9:29",
+      "tradicion": "TM",
+      "cita": "En el undécimo año de Joram",
+      "anio": 11,
+      "de": "Joram de Israel",
+      "fuente": "rv1909"
+     },
+     {
+      "ref": "2R 9:29",
+      "tradicion": "LXX",
+      "cita": "in the eleventh year of Joram",
+      "anio": 11,
+      "de": "Joram de Israel",
+      "fuente": "brenton"
+     }
+    ]
+   },
+   {
+    "persona": "Jehu_2",
+    "rey": "Jehú",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 10:36",
+      "cita": "fué veintiocho años",
+      "valor": 28,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 10:36",
+      "cita": "twenty-eight years",
+      "valor": 28,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Athaliah_1",
+    "rey": "Atalía",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 11:3",
+      "cita": "seis años: y Athalía fué reina sobre el país",
+      "valor": 6,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 11:3",
+      "cita": "six years: and Gotholia reigned over the land",
+      "valor": 6,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Joash_3",
+    "rey": "Joás",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 12:1",
+      "cita": "reinó cuarenta años en Jerusalem",
+      "valor": 40,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 12:1",
+      "cita": "he reigned forty years",
+      "valor": 40,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 12:1",
+      "cita": "EN el séptimo año de Jehú",
+      "anio": 7,
+      "de": "Jehú",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 12:1",
+      "cita": "in the seventh year of Ju",
+      "anio": 7,
+      "de": "Jehú",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Jehoahaz_1",
+    "rey": "Joacaz",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 13:1",
+      "cita": "diecisiete años",
+      "valor": 17,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 13:1",
+      "cita": "seventeen years",
+      "valor": 17,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 13:1",
+      "cita": "EN el año veintitrés de Joas",
+      "anio": 23,
+      "de": "Joás de Judá",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 13:1",
+      "cita": "In the twenty-third year of Joas",
+      "anio": 23,
+      "de": "Joás de Judá",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Joash_4",
+    "rey": "Joás",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 13:10",
+      "cita": "dieciséis años",
+      "valor": 16,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 13:10",
+      "cita": "sixteen years",
+      "valor": 16,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 13:10",
+      "cita": "El año treinta y siete de Joas",
+      "anio": 37,
+      "de": "Joás de Judá",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 13:10",
+      "cita": "In the thirty-seventh year of Joas",
+      "anio": 37,
+      "de": "Joás de Judá",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Amaziah_1",
+    "rey": "Amasías",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 14:2",
+      "cita": "veintinueve años reinó en Jerusalem",
+      "valor": 29,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 14:2",
+      "cita": "he reigned twenty and nine years",
+      "valor": 29,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 14:1",
+      "cita": "EN el año segundo de Joas",
+      "anio": 2,
+      "de": "Joás de Israel",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 14:1",
+      "cita": "In the second year of Joas",
+      "anio": 2,
+      "de": "Joás de Israel",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Jeroboam_2",
+    "rey": "Jeroboam",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 14:23",
+      "cita": "cuarenta y un años",
+      "valor": 41,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 14:23",
+      "cita": "forty and one years",
+      "valor": 41,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 14:23",
+      "cita": "El año quince de Amasías",
+      "anio": 15,
+      "de": "Amasías",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 14:23",
+      "cita": "In the fifteenth year of Amessias",
+      "anio": 15,
+      "de": "Amasías",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Azariah_3",
+    "rey": "Azarías (Uzías)",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:2",
+      "cita": "cincuenta y dos años reinó en Jerusalem",
+      "valor": 52,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:2",
+      "cita": "he reigned fifty-two years",
+      "valor": 52,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:1",
+      "cita": "EN el año veintisiete de Jeroboam",
+      "anio": 27,
+      "de": "Jeroboam hijo de Joás",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:1",
+      "cita": "In the twenty-seventh year of Jeroboam",
+      "anio": 27,
+      "de": "Jeroboam hijo de Joás",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Zechariah_1",
+    "rey": "Zacarías",
+    "reino": "Israel",
+    "unidad": "meses",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:8",
+      "cita": "seis meses",
+      "valor": 6,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:8",
+      "cita": "six months",
+      "valor": 6,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:8",
+      "cita": "En el año treinta y ocho de Azarías",
+      "anio": 38,
+      "de": "Azarías",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:8",
+      "cita": "In the thirty and eighth year of Azarias",
+      "anio": 38,
+      "de": "Azarías",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Shallum_1",
+    "rey": "Salum",
+    "reino": "Israel",
+    "unidad": "mes",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:13",
+      "cita": "reinó el tiempo de un mes",
+      "valor": 1,
+      "fuente": "rv1909"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:13",
+      "cita": "en el año treinta y nueve de Uzzía",
+      "anio": 39,
+      "de": "Uzías (Azarías)",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:13",
+      "cita": "in the thirty and ninth year of Azarias",
+      "anio": 39,
+      "de": "Azarías",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Menachem_1",
+    "rey": "Manahem",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:17",
+      "cita": "diez años",
+      "valor": 10,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:17",
+      "cita": "ten years",
+      "valor": 10,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:17",
+      "cita": "En el año treinta y nueve de Azarías",
+      "anio": 39,
+      "de": "Azarías",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:17",
+      "cita": "In the thirty and ninth year of Azarias",
+      "anio": 39,
+      "de": "Azarías",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Pekahiah_1",
+    "rey": "Pekaía",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:23",
+      "cita": "dos años",
+      "valor": 2,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:23",
+      "cita": "two years",
+      "valor": 2,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:23",
+      "cita": "En el año cincuenta de Azarías",
+      "anio": 50,
+      "de": "Azarías",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:23",
+      "cita": "In the fiftieth year of Azarias",
+      "anio": 50,
+      "de": "Azarías",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Pekah_1",
+    "rey": "Peka",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:27",
+      "cita": "reinó veinte años",
+      "valor": 20,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:27",
+      "cita": "twenty years",
+      "valor": 20,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:27",
+      "cita": "En el año cincuenta y dos de Azarías",
+      "anio": 52,
+      "de": "Azarías",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:27",
+      "cita": "In the fifty-second year of Azarias",
+      "anio": 52,
+      "de": "Azarías",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Jotham_2",
+    "rey": "Jotam",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 15:33",
+      "cita": "reinó dieciséis años en Jerusalem",
+      "valor": 16,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:33",
+      "cita": "he reigned sixteen years",
+      "valor": 16,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 15:32",
+      "cita": "En el segundo año de Peka",
+      "anio": 2,
+      "de": "Peka",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 15:32",
+      "cita": "In the second year of Phakee",
+      "anio": 2,
+      "de": "Peka",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Ahaz_1",
+    "rey": "Acaz",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 16:2",
+      "cita": "reinó en Jerusalem dieciséis años",
+      "valor": 16,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 16:2",
+      "cita": "he reigned sixteen years",
+      "valor": 16,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 16:1",
+      "cita": "EN el año diecisiete de Peka",
+      "anio": 17,
+      "de": "Peka",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 16:1",
+      "cita": "In the seventeenth year of Phakee",
+      "anio": 17,
+      "de": "Peka",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Hoshea_1",
+    "rey": "Oseas",
+    "reino": "Israel",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 17:1",
+      "cita": "nueve años",
+      "valor": 9,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 17:1",
+      "cita": "nine years",
+      "valor": 9,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 17:1",
+      "cita": "EN el año duodécimo de Achâz",
+      "anio": 12,
+      "de": "Acaz",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 17:1",
+      "cita": "In the twelfth year of Achaz",
+      "anio": 12,
+      "de": "Acaz",
+      "fuente": "brenton"
+     }
+    },
+    "otros_sincronismos": [
+     {
+      "ref": "2R 15:30",
+      "tradicion": "TM",
+      "cita": "á los veinte años de Jotham",
+      "anio": 20,
+      "de": "Jotam",
+      "fuente": "rv1909"
+     },
+     {
+      "ref": "2R 15:30",
+      "tradicion": "LXX",
+      "cita": "in the twentieth year of Joatham",
+      "anio": 20,
+      "de": "Jotam",
+      "fuente": "brenton"
+     }
+    ]
+   },
+   {
+    "persona": "Hezekiah_1",
+    "rey": "Ezequías",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 18:2",
+      "cita": "reinó en Jerusalem veintinueve años",
+      "valor": 29,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 18:2",
+      "cita": "he reigned twenty and nine years",
+      "valor": 29,
+      "fuente": "brenton"
+     }
+    },
+    "sincronismo": {
+     "TM": {
+      "ref": "2R 18:1",
+      "cita": "EN el tercer año de Oseas",
+      "anio": 3,
+      "de": "Oseas",
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 18:1",
+      "cita": "in the third year of Osee",
+      "anio": 3,
+      "de": "Oseas",
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Manasseh_3",
+    "rey": "Manasés",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 21:1",
+      "cita": "reinó en Jerusalem cincuenta y cinco años",
+      "valor": 55,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 21:1",
+      "cita": "he reigned fifty-five years",
+      "valor": 55,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Amon_2",
+    "rey": "Amón",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 21:19",
+      "cita": "reinó dos años en Jerusalem",
+      "valor": 2,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 21:19",
+      "cita": "he reigned two years",
+      "valor": 2,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Josiah_1",
+    "rey": "Josías",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 22:1",
+      "cita": "reinó en Jerusalem treinta y un años",
+      "valor": 31,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 22:1",
+      "cita": "he reigned thirty and one years",
+      "valor": 31,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Jehoahaz_2",
+    "rey": "Joacaz",
+    "reino": "Judá",
+    "unidad": "meses",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 23:31",
+      "cita": "reinó tres meses en Jerusalem",
+      "valor": 3,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 23:31",
+      "cita": "he reigned three months",
+      "valor": 3,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Eliakim_2",
+    "rey": "Joacim (Eliaquim)",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 23:36",
+      "cita": "once años reinó en Jerusalem",
+      "valor": 11,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 23:36",
+      "cita": "he reigned eleven years",
+      "valor": 11,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Jehoiachin_1",
+    "rey": "Joaquín",
+    "reino": "Judá",
+    "unidad": "meses",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 24:8",
+      "cita": "reinó en Jerusalem tres meses",
+      "valor": 3,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 24:8",
+      "cita": "he reigned three months",
+      "valor": 3,
+      "fuente": "brenton"
+     }
+    }
+   },
+   {
+    "persona": "Mattaniah_1",
+    "rey": "Sedecías (Matanías)",
+    "reino": "Judá",
+    "unidad": "años",
+    "certeza": "texto",
+    "duracion": {
+     "TM": {
+      "ref": "2R 24:18",
+      "cita": "reinó en Jerusalem once años",
+      "valor": 11,
+      "fuente": "rv1909"
+     },
+     "LXX": {
+      "ref": "2R 24:18",
+      "cita": "he reigned eleven years",
+      "valor": 11,
+      "fuente": "brenton"
+     }
+    }
    }
   ],
   "calculos_1r": [
@@ -178472,6 +195926,245 @@ window.BIBLIA_DATOS = {
      },
      "nota": "Sumadas como si fueran consecutivas, las duraciones con cifra dan 533 años en el TM (RV1909) y 513 en la LXX (Brenton: Elí juzga veinte años, 1 S 4:18), sin contar los periodos sin cifra; 1 R 6:1 da «el año cuatrocientos ochenta» (TM) y «four hundred and fortieth» (LXX). No coinciden; el texto no explica la diferencia y no se armoniza."
     }
+   }
+  ],
+  "calculos_2r": [
+   {
+    "id": "2r-joram-israel",
+    "titulo": "¿Cuándo empieza Joram de Israel? 2 R 3:1 y 8:16 frente a 1:17",
+    "certeza": "calculo",
+    "pasos": [
+     {
+      "ref": "2R 8:16",
+      "texto": "Joram de Judá empieza «En el quinto año de Joram hijo de Achâb»",
+      "valor": 5,
+      "signo": 1,
+      "cita": "En el quinto año de Joram hijo de Achâb",
+      "certeza": "texto"
+     },
+     {
+      "texto": "convenio: el año 5 de Joram de Israel es 5 − 1 = 4 años después de su comienzo",
+      "valor": 1,
+      "signo": -1,
+      "certeza": "calculo",
+      "convencion": true
+     }
+    ],
+    "total": 4,
+    "comparacion": {
+     "ref": "2R 1:17",
+     "certeza": "texto",
+     "TM": {
+      "cita": "en el segundo año de Joram, hijo de Josaphat",
+      "valor": 2
+     },
+     "LXX": null,
+     "nota": "Según 8:16, Joram de Israel empieza 4 años antes que Joram de Judá (y 3:1 lo pone en «el año dieciocho de Josaphat»). Según 1:17 (TM; Brenton no lo tiene) empieza «en el segundo año de Joram, hijo de Josaphat», es decir, después que él. Los dos órdenes no cuadran; el texto no lo explica."
+    },
+    "advertencia": "Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza."
+   },
+   {
+    "id": "2r-ocozias-juda",
+    "titulo": "¿Cuándo empieza Ocozías de Judá? 2 R 8:25 frente a 9:29",
+    "certeza": "calculo",
+    "pasos": [
+     {
+      "ref": "2R 8:25",
+      "texto": "Ocozías empieza «En el año doce de Joram hijo de Achâb»",
+      "valor": 12,
+      "signo": 1,
+      "cita": "En el año doce de Joram hijo de Achâb",
+      "certeza": "texto"
+     }
+    ],
+    "total": 12,
+    "comparacion": {
+     "ref": "2R 9:29",
+     "certeza": "texto",
+     "TM": {
+      "cita": "En el undécimo año de Joram hijo de Achâb",
+      "valor": 11
+     },
+     "LXX": {
+      "cita": "in the eleventh year of Joram",
+      "valor": 11
+     },
+     "nota": "8:25 da el año 12 de Joram de Israel y 9:29 el año 11 (TM y LXX). Diferencia de un año; el texto no la explica."
+    },
+    "advertencia": "Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza."
+   },
+   {
+    "id": "2r-joas-israel",
+    "titulo": "¿Cuándo empieza Joás de Israel? 2 R 13:1 frente a 13:10",
+    "certeza": "calculo",
+    "pasos": [
+     {
+      "ref": "2R 13:1",
+      "texto": "Joacaz empieza «EN el año veintitrés de Joas» (de Judá)",
+      "valor": 23,
+      "signo": 1,
+      "cita": "EN el año veintitrés de Joas",
+      "certeza": "texto"
+     },
+     {
+      "ref": "2R 13:1",
+      "texto": "y reina «diecisiete años»",
+      "valor": 17,
+      "signo": 1,
+      "cita": "diecisiete años",
+      "certeza": "texto"
+     }
+    ],
+    "total": 40,
+    "comparacion": {
+     "ref": "2R 13:10",
+     "certeza": "texto",
+     "TM": {
+      "cita": "El año treinta y siete de Joas",
+      "valor": 37
+     },
+     "LXX": {
+      "cita": "In the thirty-seventh year of Joas",
+      "valor": 37
+     },
+     "nota": "Si Joacaz empieza en el año 23 de Joás de Judá y reina 17, su hijo Joás empieza hacia el año 40 de Joás de Judá (o uno antes, si el último año de Joacaz cuenta también como primero de su hijo); 13:10 dice el año 37."
+    },
+    "advertencia": "Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza."
+   },
+   {
+    "id": "2r-azarias",
+    "titulo": "¿Cuándo empieza Azarías? 2 R 14:2 y 14:23 frente a 15:1",
+    "certeza": "calculo",
+    "pasos": [
+     {
+      "ref": "2R 14:2",
+      "texto": "Amasías reina «veintinueve años»",
+      "valor": 29,
+      "signo": 1,
+      "cita": "veintinueve años reinó en Jerusalem",
+      "certeza": "texto"
+     },
+     {
+      "ref": "2R 14:23",
+      "texto": "Jeroboam empieza «El año quince de Amasías»",
+      "valor": 15,
+      "signo": -1,
+      "cita": "El año quince de Amasías",
+      "certeza": "texto"
+     },
+     {
+      "texto": "convenio: el año 15 de Amasías es el año 1 de Jeroboam",
+      "valor": 1,
+      "signo": 1,
+      "certeza": "calculo",
+      "convencion": true
+     }
+    ],
+    "total": 15,
+    "comparacion": {
+     "ref": "2R 15:1",
+     "certeza": "texto",
+     "TM": {
+      "cita": "EN el año veintisiete de Jeroboam",
+      "valor": 27
+     },
+     "LXX": {
+      "cita": "In the twenty-seventh year of Jeroboam",
+      "valor": 27
+     },
+     "nota": "Si Azarías empieza al morir Amasías (14:19-21), cae hacia el año 15 de Jeroboam; 15:1 dice el año 27. 14:17 dice además que Amasías «vivió después de la muerte de Joas» quince años. El texto no explica la diferencia."
+    },
+    "advertencia": "Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza."
+   },
+   {
+    "id": "2r-oseas",
+    "titulo": "¿Cuándo empieza Oseas? 2 R 15:27 y 16:1 frente a 17:1 (y 15:30)",
+    "certeza": "calculo",
+    "pasos": [
+     {
+      "ref": "2R 15:27",
+      "texto": "Peka reina «veinte años»",
+      "valor": 20,
+      "signo": 1,
+      "cita": "reinó veinte años",
+      "certeza": "texto"
+     },
+     {
+      "ref": "2R 16:1",
+      "texto": "Acaz empieza «EN el año diecisiete de Peka»",
+      "valor": 17,
+      "signo": -1,
+      "cita": "EN el año diecisiete de Peka",
+      "certeza": "texto"
+     },
+     {
+      "texto": "convenio: el año 17 de Peka es el año 1 de Acaz",
+      "valor": 1,
+      "signo": 1,
+      "certeza": "calculo",
+      "convencion": true
+     }
+    ],
+    "total": 4,
+    "comparacion": {
+     "ref": "2R 17:1",
+     "certeza": "texto",
+     "TM": {
+      "cita": "EN el año duodécimo de Achâz",
+      "valor": 12
+     },
+     "LXX": {
+      "cita": "In the twelfth year of Achaz",
+      "valor": 12
+     },
+     "nota": "Si Oseas reina al matar a Peka (15:30), eso cae hacia el año 4 de Acaz; 17:1 dice el año 12. Además, 15:30 fecha la muerte de Peka «á los veinte años de Jotham», y 15:33 da a Jotam «dieciséis años» de reinado. El texto no lo explica."
+    },
+    "advertencia": "Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza."
+   },
+   {
+    "id": "2r-samaria",
+    "titulo": "¿En qué año de Ezequías cae Samaria? 2 R 18:1 y 17:6 frente a 18:10",
+    "certeza": "calculo",
+    "pasos": [
+     {
+      "ref": "2R 17:6",
+      "texto": "Samaria cae «En el año nueve de Oseas»",
+      "valor": 9,
+      "signo": 1,
+      "cita": "En el año nueve de Oseas",
+      "certeza": "texto"
+     },
+     {
+      "ref": "2R 18:1",
+      "texto": "Ezequías empieza «EN el tercer año de Oseas»",
+      "valor": 3,
+      "signo": -1,
+      "cita": "EN el tercer año de Oseas",
+      "certeza": "texto"
+     },
+     {
+      "texto": "convenio: el año 3 de Oseas es el año 1 de Ezequías",
+      "valor": 1,
+      "signo": 1,
+      "certeza": "calculo",
+      "convencion": true
+     }
+    ],
+    "total": 7,
+    "comparacion": {
+     "ref": "2R 18:10",
+     "certeza": "texto",
+     "TM": {
+      "cita": "en el sexto año de Ezechîas",
+      "valor": 6
+     },
+     "LXX": {
+      "cita": "in the sixth year of Ezekias",
+      "valor": 6
+     },
+     "nota": "Con 18:1, el año 9 de Oseas sería el 7 de Ezequías; 18:10 dice el 6 (y 18:9 hace del cuarto de Ezequías el séptimo de Oseas, que cuadra con 18:10 y no con 18:1). El texto no lo explica."
+    },
+    "advertencia": "Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza."
    }
   ]
  }

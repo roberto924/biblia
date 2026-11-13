@@ -1393,6 +1393,286 @@
    "categoria": "violencia",
    "nivel": "alto",
    "motivo": "Una flecha hiere a Acab; muere en su carro a la tarde con la sangre de la herida corriendo por el carro, y los perros lamen su sangre."
+  },
+  {
+   "desde": "2R 1:10",
+   "hasta": "2R 1:12",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "El fuego del cielo consume a dos capitanes de cincuenta con sus cincuenta hombres."
+  },
+  {
+   "desde": "2R 2:23",
+   "hasta": "2R 2:24",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Unos muchachos se burlan de Eliseo; salen dos osos del monte y despedazan a cuarenta y dos de ellos."
+  },
+  {
+   "desde": "2R 3:27",
+   "hasta": "2R 3:27",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "El rey de Moab sacrifica en holocausto sobre el muro a su primogénito."
+  },
+  {
+   "desde": "2R 6:28",
+   "hasta": "2R 6:29",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "En el hambre del cerco de Samaria, una madre cuenta que ella y otra mujer cocieron y comieron a su hijo."
+  },
+  {
+   "desde": "2R 7:17",
+   "hasta": "2R 7:20",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "El príncipe que no creyó a Eliseo muere atropellado por el pueblo en la puerta."
+  },
+  {
+   "desde": "2R 8:12",
+   "hasta": "2R 8:12",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Eliseo anuncia que Hazael estrellará a los niños de Israel y abrirá a sus preñadas."
+  },
+  {
+   "desde": "2R 8:15",
+   "hasta": "2R 8:15",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Hazael tiende un paño mojado sobre el rostro de Ben-adad, que muere, y reina en su lugar."
+  },
+  {
+   "desde": "2R 9:24",
+   "hasta": "2R 9:27",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehú atraviesa a Joram con una saeta y hace herir a Ocozías, que muere en Megido."
+  },
+  {
+   "desde": "2R 9:32",
+   "hasta": "2R 9:37",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Jezabel es echada por la ventana y atropellada; los perros comen su cuerpo y solo quedan la calavera, los pies y las palmas de las manos."
+  },
+  {
+   "desde": "2R 10:6",
+   "hasta": "2R 10:8",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Degüellan a los setenta hijos de Acab y llevan sus cabezas en canastillos a Jezreel, donde se amontonan a la puerta."
+  },
+  {
+   "desde": "2R 10:11",
+   "hasta": "2R 10:11",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehú mata a todos los que quedaban de la casa de Acab en Jezreel."
+  },
+  {
+   "desde": "2R 10:14",
+   "hasta": "2R 10:14",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Degüellan junto a un pozo a cuarenta y dos hermanos de Ocozías."
+  },
+  {
+   "desde": "2R 10:17",
+   "hasta": "2R 10:17",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehú mata a todos los que quedaban de Acab en Samaria."
+  },
+  {
+   "desde": "2R 10:24",
+   "hasta": "2R 10:25",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Jehú hace matar a cuchillo a los siervos de Baal reunidos en su templo."
+  },
+  {
+   "desde": "2R 11:1",
+   "hasta": "2R 11:2",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Atalía destruye la simiente real: matan a los hijos del rey y solo Joás se salva escondido."
+  },
+  {
+   "desde": "2R 11:15",
+   "hasta": "2R 11:16",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Sacan a Atalía del templo y la matan."
+  },
+  {
+   "desde": "2R 11:18",
+   "hasta": "2R 11:18",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Matan a Matán, sacerdote de Baal, delante de los altares."
+  },
+  {
+   "desde": "2R 12:20",
+   "hasta": "2R 12:21",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Los siervos del rey Joás conspiran y lo matan."
+  },
+  {
+   "desde": "2R 14:5",
+   "hasta": "2R 14:5",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Amasías mata a los siervos que habían matado a su padre."
+  },
+  {
+   "desde": "2R 14:19",
+   "hasta": "2R 14:19",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Conspiran contra Amasías y lo matan en Laquis."
+  },
+  {
+   "desde": "2R 15:10",
+   "hasta": "2R 15:10",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Salum conspira contra el rey Zacarías y lo mata."
+  },
+  {
+   "desde": "2R 15:14",
+   "hasta": "2R 15:14",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Manahem mata a Salum en Samaria."
+  },
+  {
+   "desde": "2R 15:16",
+   "hasta": "2R 15:16",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Manahem hiere a Tifsa y abre a todas sus preñadas."
+  },
+  {
+   "desde": "2R 15:25",
+   "hasta": "2R 15:25",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Peka conspira contra el rey Pekaía y lo mata en el palacio."
+  },
+  {
+   "desde": "2R 15:30",
+   "hasta": "2R 15:30",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Oseas conspira contra Peka y lo mata."
+  },
+  {
+   "desde": "2R 16:3",
+   "hasta": "2R 16:3",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Acaz hace pasar por el fuego a su hijo."
+  },
+  {
+   "desde": "2R 17:17",
+   "hasta": "2R 17:17",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Israel hace pasar por el fuego a sus hijos y a sus hijas."
+  },
+  {
+   "desde": "2R 17:25",
+   "hasta": "2R 17:26",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Leones enviados por Jehová matan a los que habitan en Samaria."
+  },
+  {
+   "desde": "2R 17:31",
+   "hasta": "2R 17:31",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Los de Sefarvaim queman a sus hijos en el fuego a sus dioses."
+  },
+  {
+   "desde": "2R 19:35",
+   "hasta": "2R 19:35",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "El ángel de Jehová hiere en el campamento asirio a ciento ochenta y cinco mil; por la mañana aparecen los cuerpos de los muertos."
+  },
+  {
+   "desde": "2R 19:37",
+   "hasta": "2R 19:37",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Dos hijos de Senaquerib lo matan a cuchillo mientras adora a su dios."
+  },
+  {
+   "desde": "2R 21:6",
+   "hasta": "2R 21:6",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Manasés hace pasar por el fuego a su hijo."
+  },
+  {
+   "desde": "2R 21:23",
+   "hasta": "2R 21:24",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Los siervos de Amón lo matan en su casa, y el pueblo mata a los conspiradores."
+  },
+  {
+   "desde": "2R 23:10",
+   "hasta": "2R 23:10",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Tofet, donde se hacía pasar por el fuego a hijos e hijas para Moloc, es profanado."
+  },
+  {
+   "desde": "2R 23:16",
+   "hasta": "2R 23:16",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Josías saca huesos de los sepulcros y los quema sobre el altar de Betel."
+  },
+  {
+   "desde": "2R 23:20",
+   "hasta": "2R 23:20",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Josías mata sobre los altares a los sacerdotes de los altos y quema sobre ellos huesos de hombres."
+  },
+  {
+   "desde": "2R 23:29",
+   "hasta": "2R 23:29",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Faraón Necao mata a Josías en Megido."
+  },
+  {
+   "desde": "2R 25:7",
+   "hasta": "2R 25:7",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Degüellan a los hijos de Sedecías delante de él; luego le sacan los ojos y lo llevan encadenado a Babilonia."
+  },
+  {
+   "desde": "2R 25:21",
+   "hasta": "2R 25:21",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "El rey de Babilonia hiere y mata en Ribla a los sacerdotes y principales que le lleva Nabuzaradán."
+  },
+  {
+   "desde": "2R 25:25",
+   "hasta": "2R 25:25",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Ismael y diez hombres matan a Gedalías y a los que estaban con él en Mizpa."
   }
  ]
 }

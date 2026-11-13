@@ -2,7 +2,7 @@
 
 Aplicación web instalable (celular y PC) que acompaña la lectura de la Biblia con árbol genealógico, edades y plan de lectura. Cada dato muestra su versículo y su fuente, y distingue lo que dice el texto de lo inferido o calculado.
 
-**Alcance actual:** Génesis 1–50, Éxodo 1–40, Levítico 1–27, Números 1–36, Deuteronomio 1–34, Josué 1–24, Jueces 1–21, Rut 1–4, 1 Samuel 1–31, 2 Samuel 1–24 y 1 Reyes 1–22: lectura por pasajes con acompañante, árbol, línea de tiempo (años desde Adán, con tradiciones y supuestos elegibles) y mapa de lugares.
+**Alcance actual:** Génesis 1–50, Éxodo 1–40, Levítico 1–27, Números 1–36, Deuteronomio 1–34, Josué 1–24, Jueces 1–21, Rut 1–4, 1 Samuel 1–31, 2 Samuel 1–24, 1 Reyes 1–22 y 2 Reyes 1–25: lectura por pasajes con acompañante, árbol, línea de tiempo (años desde Adán, con tradiciones y supuestos elegibles) y mapa de lugares.
 
 ## Usarla
 

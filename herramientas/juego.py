@@ -119,6 +119,14 @@ HECHOS = {
         "principal": [("Elijah_1", "1R", "1R 17"), ("Jeroboam_1", "1R", "1R 11"), ("Elisha_1", "1R", "1R 19")],
         "sin_aparicion": [("Moses_1", "1R 8:9")],   # Salomón solo recuerda a Moisés: mención, no aparición
     },
+    "2R": {
+        "objeto_en": [("2R 2:11", "carro y caballos de fuego")],
+        "escenario_lugar": ["sunem"],
+        # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal);
+        # Eliseo ya era principal en 1 R 19 (su listo no cambia): solo se exige que lo sea también en 2 R
+        "principal": [("Elisha_1", "2R", None), ("Jehu_2", "2R", "2R 9"), ("Josiah_1", "2R", "2R 22")],
+        "sin_aparicion": [("Moses_1", "2R 18:4")],   # solo se recuerda que hizo la serpiente de bronce: mención, no aparición
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

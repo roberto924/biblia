@@ -41,7 +41,7 @@
    "Lv": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0103"}, "Nm": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0142"},
    "Dt": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0195"}, "Jos": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0242"},
    "Jue": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0275"}, "Rut": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0308"},
-   "1S": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0313"}, "2S": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0358"}, "1R": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0399"}}}
+   "1S": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0313"}, "2S": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0358"}, "1R": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0399"}, "2R": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0446"}}}
  },
  "alteraciones": [
   {"nombre": "pasaje sin folio", "ruta": ["leningrado", "pasajes", "gn-02"], "valor": []},

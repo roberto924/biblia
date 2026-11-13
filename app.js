@@ -13,7 +13,7 @@ const Nucleo = (() => {
   const CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal', 'Pr', 'Ec', 'Cnt',
     'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal',
     'Mt', 'Mr', 'Lc', 'Jn', 'Hch', 'Ro', '1Co', '2Co', 'Ga', 'Ef', 'Fil', 'Col', '1Ts', '2Ts', '1Ti', '2Ti', 'Tit', 'Flm', 'He', 'Stg', '1P', '2P', '1Jn', '2Jn', '3Jn', 'Jud', 'Ap'];
-  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel', '2S': '2 Samuel', '1R': '1 Reyes' };
+  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel', '2S': '2 Samuel', '1R': '1 Reyes', '2R': '2 Reyes' };
   const ordLibro = new Map(), idPorOrd = new Map(), idCanon = new Map();
   CANON.forEach((id, i) => { ordLibro.set(norm(id), i + 1); idPorOrd.set(i + 1, id); idCanon.set(norm(id), id); });
   Object.entries(NOMBRES_LIBRO).forEach(([id, n]) => { idCanon.set(norm(n), id); idCanon.set(norm(n).replace(/\s+/g, ''), id); }); // «1 Samuel» y «1Samuel»
@@ -614,7 +614,10 @@ const Nucleo = (() => {
     const nom = x => (I.personas.get(x) || {}).nombre || x;
     const ok = r => !refOk || refOk(r.ref);
     const partes = [];
-    const pad = unicos((I.padres.get(id) || []).filter(ok).map(r => r.de));
+    // «Hijo de X» en sentido de descendiente: si X es a su vez padre de otro padre registrado (Jehú: Nimsi → Josafat → Jehú,
+    // 2 R 9:2), se nombra solo el padre directo.
+    const pad0 = unicos((I.padres.get(id) || []).filter(ok).map(r => r.de));
+    const pad = pad0.filter(x => !pad0.some(y => y !== x && (I.padres.get(y) || []).filter(ok).some(r => r.de === x)));
     if (pad.length) partes.push(`${p.sexo === 'f' ? 'hija' : p.sexo === 'm' ? 'hijo' : p.sin_nombre ? 'descendencia' : 'hijo o hija'} de ${unir(pad.map(nom))}`);
     const cs = unicos((I.conyuges.get(id) || []).filter(ok).map(r => r.otro));
     if (cs.length) partes.push(`${p.sexo === 'f' ? 'esposa' : p.sexo === 'm' ? 'esposo' : 'cónyuge'} de ${unir(cs.map(nom))}`);

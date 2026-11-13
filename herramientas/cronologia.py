@@ -75,7 +75,14 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "año de Salomón. Con el mismo convenio que Ex 40:17 («el año N» = N − 1 años después de la salida) da el evento "
          "«Salomón comienza el templo». Ningún otro hecho de 1 Reyes se fecha desde Adán: los reinados y sincronismos van "
          "con su cita (texto), y la suma de las duraciones de Jueces, Samuel y Reyes solo se compara con 1 R 6:1 "
-         "(cálculo, con advertencias). No se usan libros posteriores (2 Reyes, Crónicas)."]
+         "(cálculo, con advertencias). No se usan libros posteriores (2 Reyes, Crónicas).",
+         "2 Reyes da la duración de cada reinado y, casi siempre, su comienzo en un año del rey del otro reino (sincronismo), "
+         "con su cita en la RV1909 (TM) y en Brenton (LXX) (`reinados`, texto). Varios sincronismos no cuadran entre sí (Joram de "
+         "Israel: 2 R 1:17 frente a 3:1 y 8:16; Ocozías: 8:25 frente a 9:29; Joás de Israel: 13:1 frente a 13:10; Azarías: 14:2 y "
+         "14:23 frente a 15:1; Oseas: 15:27, 16:1 y 15:30 frente a 17:1; Samaria: 18:1 frente a 18:10): se muestran tal cual, "
+         "con su cita, y un cálculo con pasos y advertencias (`calculos_2r`), sin armonizar. Nada de 2 Reyes se fecha desde Adán "
+         "ni en años antes de Cristo: anclar la cronología con fuentes de fuera de la Biblia (anales asirios, Crónica "
+         "babilónica) es una decisión pendiente (ver datos/LEEME.md, «2 Reyes: decisiones»)."]
 # 2 Samuel: (título, ref, nota, [(ref, tradición, cita literal)]). Sin año: las citas se comprueban contra el texto.
 HITOS_2S = [
     ("David, rey de Judá en Hebrón", "2S 2:1-11",
@@ -169,7 +176,10 @@ REINADOS_1R = [
      ("1R 22:52", "in the seventeenth year of Josaphat", "seventeenth", "Josafat"), "años"),
 ]
 _ORD = {"segundo": "dos", "tercer": "tres", "tercero": "tres", "cuarto": "cuatro", "second": "two", "third": "three",
-        "fourth": "four", "eighteenth": "eighteen", "twentieth": "twenty", "seventeenth": "seventeen", "first": "one"}
+        "fourth": "four", "eighteenth": "eighteen", "twentieth": "twenty", "seventeenth": "seventeen", "first": "one",
+        "quinto": "cinco", "sexto": "seis", "séptimo": "siete", "octavo": "ocho", "nono": "nueve", "noveno": "nueve",
+        "undécimo": "once", "duodécimo": "doce", "fifth": "five", "sixth": "six", "seventh": "seven", "eighth": "eight",
+        "ninth": "nine", "eleventh": "eleven", "twelfth": "twelve", "fourteenth": "fourteen", "fifteenth": "fifteen"}
 # 1 Reyes: otros hechos sin año, con cita (título, ref, nota, [(ref, tradición, cita)]).
 HITOS_1R = [
     ("El templo, acabado", "1R 6:37-38",
@@ -203,6 +213,189 @@ PASOS_1R61 = [
     ("1R 2:11", "David reina sobre Israel", "fueron cuarenta años", "cuarenta", "forty years", "forty"),
     ("1R 6:1", "Salomón, hasta «el cuarto año» de su reino (3 años cumplidos)", "en el cuarto año", "cuarto",
      "in the fourth year", "fourth"),
+]
+
+
+# 2 Reyes: reinados con cita (texto). (persona, nombre, reino, (ref TM, cita TM, cifra TM), (ref LXX, cita LXX, cifra LXX)
+# | None, sincronismo TM (ref, cita, cifra, rey) | None, sincronismo LXX | None, unidad, [otros sincronismos: (ref, trad,
+# cita, cifra, rey)]). Los «otros» son sincronismos del mismo reinado en otro versículo que no cuadran con el principal.
+REINADOS_2R = [
+    ("Jehoram_2", "Joram", "Israel", ("2R 3:1", "reinó doce años", "doce"), ("2R 3:1", "he reigned twelve years", "twelve"),
+     ("2R 3:1", "el año dieciocho de Josaphat", "dieciocho", "Josafat"),
+     ("2R 3:1", "in the eighteenth year of Josaphat", "eighteenth", "Josafat"), "años",
+     [("2R 1:17", "TM", "en el segundo año de Joram, hijo de Josaphat", "segundo", "Joram de Judá")]),
+    ("Jehoram_1", "Joram", "Judá", ("2R 8:17", "ocho años reinó en Jerusalem", "ocho"),
+     ("2R 8:17", "he reigned eight years", "eight"),
+     ("2R 8:16", "En el quinto año de Joram hijo de Achâb", "quinto", "Joram de Israel"),
+     ("2R 8:16", "In the fifth year of Joram", "fifth", "Joram de Israel"), "años", []),
+    ("Ahaziah_2", "Ocozías", "Judá", ("2R 8:26", "reinó un año en Jerusalem", "un"), ("2R 8:26", "he reigned one year", "one"),
+     ("2R 8:25", "En el año doce de Joram", "doce", "Joram de Israel"),
+     ("2R 8:25", "In the twelfth year of Joram", "twelfth", "Joram de Israel"), "año",
+     [("2R 9:29", "TM", "En el undécimo año de Joram", "undécimo", "Joram de Israel"),
+      ("2R 9:29", "LXX", "in the eleventh year of Joram", "eleventh", "Joram de Israel")]),
+    ("Jehu_2", "Jehú", "Israel", ("2R 10:36", "fué veintiocho años", "veintiocho"), ("2R 10:36", "twenty-eight years", "twenty-eight"),
+     None, None, "años", []),
+    ("Athaliah_1", "Atalía", "Judá", ("2R 11:3", "seis años: y Athalía fué reina sobre el país", "seis"),
+     ("2R 11:3", "six years: and Gotholia reigned over the land", "six"), None, None, "años", []),
+    ("Joash_3", "Joás", "Judá", ("2R 12:1", "reinó cuarenta años en Jerusalem", "cuarenta"),
+     ("2R 12:1", "he reigned forty years", "forty"), ("2R 12:1", "EN el séptimo año de Jehú", "séptimo", "Jehú"),
+     ("2R 12:1", "in the seventh year of Ju", "seventh", "Jehú"), "años", []),
+    ("Jehoahaz_1", "Joacaz", "Israel", ("2R 13:1", "diecisiete años", "diecisiete"), ("2R 13:1", "seventeen years", "seventeen"),
+     ("2R 13:1", "EN el año veintitrés de Joas", "veintitrés", "Joás de Judá"),
+     ("2R 13:1", "In the twenty-third year of Joas", "twenty-third", "Joás de Judá"), "años", []),
+    ("Joash_4", "Joás", "Israel", ("2R 13:10", "dieciséis años", "dieciséis"), ("2R 13:10", "sixteen years", "sixteen"),
+     ("2R 13:10", "El año treinta y siete de Joas", "treinta y siete", "Joás de Judá"),
+     ("2R 13:10", "In the thirty-seventh year of Joas", "thirty-seventh", "Joás de Judá"), "años", []),
+    ("Amaziah_1", "Amasías", "Judá", ("2R 14:2", "veintinueve años reinó en Jerusalem", "veintinueve"),
+     ("2R 14:2", "he reigned twenty and nine years", "twenty and nine"),
+     ("2R 14:1", "EN el año segundo de Joas", "segundo", "Joás de Israel"),
+     ("2R 14:1", "In the second year of Joas", "second", "Joás de Israel"), "años", []),
+    ("Jeroboam_2", "Jeroboam", "Israel", ("2R 14:23", "cuarenta y un años", "cuarenta y un"),
+     ("2R 14:23", "forty and one years", "forty and one"), ("2R 14:23", "El año quince de Amasías", "quince", "Amasías"),
+     ("2R 14:23", "In the fifteenth year of Amessias", "fifteenth", "Amasías"), "años", []),
+    ("Azariah_3", "Azarías (Uzías)", "Judá", ("2R 15:2", "cincuenta y dos años reinó en Jerusalem", "cincuenta y dos"),
+     ("2R 15:2", "he reigned fifty-two years", "fifty-two"),
+     ("2R 15:1", "EN el año veintisiete de Jeroboam", "veintisiete", "Jeroboam hijo de Joás"),
+     ("2R 15:1", "In the twenty-seventh year of Jeroboam", "twenty-seventh", "Jeroboam hijo de Joás"), "años", []),
+    ("Zechariah_1", "Zacarías", "Israel", ("2R 15:8", "seis meses", "seis"), ("2R 15:8", "six months", "six"),
+     ("2R 15:8", "En el año treinta y ocho de Azarías", "treinta y ocho", "Azarías"),
+     ("2R 15:8", "In the thirty and eighth year of Azarias", "thirty and eighth", "Azarías"), "meses", []),
+    ("Shallum_1", "Salum", "Israel", ("2R 15:13", "reinó el tiempo de un mes", "un"), None,
+     ("2R 15:13", "en el año treinta y nueve de Uzzía", "treinta y nueve", "Uzías (Azarías)"),
+     ("2R 15:13", "in the thirty and ninth year of Azarias", "thirty and ninth", "Azarías"), "mes", []),
+    ("Menachem_1", "Manahem", "Israel", ("2R 15:17", "diez años", "diez"), ("2R 15:17", "ten years", "ten"),
+     ("2R 15:17", "En el año treinta y nueve de Azarías", "treinta y nueve", "Azarías"),
+     ("2R 15:17", "In the thirty and ninth year of Azarias", "thirty and ninth", "Azarías"), "años", []),
+    ("Pekahiah_1", "Pekaía", "Israel", ("2R 15:23", "dos años", "dos"), ("2R 15:23", "two years", "two"),
+     ("2R 15:23", "En el año cincuenta de Azarías", "cincuenta", "Azarías"),
+     ("2R 15:23", "In the fiftieth year of Azarias", "fiftieth", "Azarías"), "años", []),
+    ("Pekah_1", "Peka", "Israel", ("2R 15:27", "reinó veinte años", "veinte"), ("2R 15:27", "twenty years", "twenty"),
+     ("2R 15:27", "En el año cincuenta y dos de Azarías", "cincuenta y dos", "Azarías"),
+     ("2R 15:27", "In the fifty-second year of Azarias", "fifty-second", "Azarías"), "años", []),
+    ("Jotham_2", "Jotam", "Judá", ("2R 15:33", "reinó dieciséis años en Jerusalem", "dieciséis"),
+     ("2R 15:33", "he reigned sixteen years", "sixteen"), ("2R 15:32", "En el segundo año de Peka", "segundo", "Peka"),
+     ("2R 15:32", "In the second year of Phakee", "second", "Peka"), "años", []),
+    ("Ahaz_1", "Acaz", "Judá", ("2R 16:2", "reinó en Jerusalem dieciséis años", "dieciséis"),
+     ("2R 16:2", "he reigned sixteen years", "sixteen"), ("2R 16:1", "EN el año diecisiete de Peka", "diecisiete", "Peka"),
+     ("2R 16:1", "In the seventeenth year of Phakee", "seventeenth", "Peka"), "años", []),
+    ("Hoshea_1", "Oseas", "Israel", ("2R 17:1", "nueve años", "nueve"), ("2R 17:1", "nine years", "nine"),
+     ("2R 17:1", "EN el año duodécimo de Achâz", "duodécimo", "Acaz"), ("2R 17:1", "In the twelfth year of Achaz", "twelfth", "Acaz"),
+     "años", [("2R 15:30", "TM", "á los veinte años de Jotham", "veinte", "Jotam"),
+              ("2R 15:30", "LXX", "in the twentieth year of Joatham", "twentieth", "Jotam")]),
+    ("Hezekiah_1", "Ezequías", "Judá", ("2R 18:2", "reinó en Jerusalem veintinueve años", "veintinueve"),
+     ("2R 18:2", "he reigned twenty and nine years", "twenty and nine"),
+     ("2R 18:1", "EN el tercer año de Oseas", "tercer", "Oseas"), ("2R 18:1", "in the third year of Osee", "third", "Oseas"),
+     "años", []),
+    ("Manasseh_3", "Manasés", "Judá", ("2R 21:1", "reinó en Jerusalem cincuenta y cinco años", "cincuenta y cinco"),
+     ("2R 21:1", "he reigned fifty-five years", "fifty-five"), None, None, "años", []),
+    ("Amon_2", "Amón", "Judá", ("2R 21:19", "reinó dos años en Jerusalem", "dos"), ("2R 21:19", "he reigned two years", "two"),
+     None, None, "años", []),
+    ("Josiah_1", "Josías", "Judá", ("2R 22:1", "reinó en Jerusalem treinta y un años", "treinta y un"),
+     ("2R 22:1", "he reigned thirty and one years", "thirty and one"), None, None, "años", []),
+    ("Jehoahaz_2", "Joacaz", "Judá", ("2R 23:31", "reinó tres meses en Jerusalem", "tres"),
+     ("2R 23:31", "he reigned three months", "three"), None, None, "meses", []),
+    ("Eliakim_2", "Joacim (Eliaquim)", "Judá", ("2R 23:36", "once años reinó en Jerusalem", "once"),
+     ("2R 23:36", "he reigned eleven years", "eleven"), None, None, "años", []),
+    ("Jehoiachin_1", "Joaquín", "Judá", ("2R 24:8", "reinó en Jerusalem tres meses", "tres"),
+     ("2R 24:8", "he reigned three months", "three"), None, None, "meses", []),
+    ("Mattaniah_1", "Sedecías (Matanías)", "Judá", ("2R 24:18", "reinó en Jerusalem once años", "once"),
+     ("2R 24:18", "he reigned eleven years", "eleven"), None, None, "años", []),
+]
+# 2 Reyes: otros hechos sin año, con cita (título, ref, nota, [(ref, tradición, cita)]).
+HITOS_2R = [
+    ("Elías sube al cielo", "2R 2:1-11", "Sin cifra de tiempo: el texto no lo sitúa en un año de ningún rey.",
+     [("2R 2:11", "TM", "Elías subió al cielo en un torbellino")]),
+    ("Siete años de hambre", "2R 8:1-6",
+     "Texto: «siete años» (2 R 8:1-3; Brenton: «seven years»), sin decir en qué año de qué rey empiezan.",
+     [("2R 8:1", "TM", "siete años"), ("2R 8:3", "LXX", "seven years")]),
+    ("Toma de Samaria", "2R 17:5-6",
+     "Texto: el rey de Asiria cerca Samaria «tres años» (2 R 17:5) y la toma «En el año nueve de Oseas» (17:6); 18:9-10 "
+     "lo pone del «cuarto año del rey Ezechîas, que era el año séptimo de Oseas» al «sexto año de Ezechîas, el cual era el "
+     "año nono de Oseas». Ver el cálculo «2r-samaria» (18:1 frente a 18:10).",
+     [("2R 17:5", "TM", "estuvo sobre ella tres años"), ("2R 17:6", "TM", "En el año nueve de Oseas"),
+      ("2R 18:9", "TM", "En el cuarto año del rey Ezechîas, que era el año séptimo de Oseas"),
+      ("2R 18:10", "TM", "en el sexto año de Ezechîas, el cual era el año nono de Oseas"),
+      ("2R 18:10", "LXX", "in the sixth year of Ezekias")]),
+    ("Senaquerib contra Judá", "2R 18:13",
+     "Texto: «á los catorce años del rey Ezechîas» (2 R 18:13; Brenton: «in the fourteenth year of king Ezekias»).",
+     [("2R 18:13", "TM", "á los catorce años del rey Ezechîas"), ("2R 18:13", "LXX", "in the fourteenth year of king Ezekias")]),
+    ("Quince años más para Ezequías", "2R 20:1-11",
+     "Texto: «añadiré á tus días quince años» (2 R 20:6; Brenton: «fifteen years»). Cálculo: si la enfermedad cae en el "
+     "año catorce (18:13; 20:1 dice solo «EN aquellos días») y reina veintinueve (18:2), 14 + 15 = 29; el texto no dice que "
+     "sea el mismo año.",
+     [("2R 20:6", "TM", "añadiré á tus días quince años"), ("2R 20:6", "LXX", "fifteen years"), ("2R 20:1", "TM", "EN aquellos días")]),
+    ("El libro de la ley; la pascua de Josías", "2R 22:3",
+     "Texto: «á los dieciocho años del rey Josías» (2 R 22:3; 23:23; Brenton: «in the eighteenth year of king Josias»).",
+     [("2R 22:3", "TM", "á los dieciocho años del rey Josías"), ("2R 23:23", "TM", "A los diez y ocho años del rey Josías"),
+      ("2R 22:3", "LXX", "in the eighteenth year of king Josias")]),
+    ("Primera deportación: Joaquín a Babilonia", "2R 24:10-16",
+     "Texto: el rey de Babilonia lo prende «en el octavo año de su reinado» (2 R 24:12; Brenton: «in the eighth year of his "
+     "reign»); se lleva «hasta diez mil cautivos» (24:14).",
+     [("2R 24:12", "TM", "en el octavo año de su reinado"), ("2R 24:12", "LXX", "in the eighth year of his reign"),
+      ("2R 24:14", "TM", "hasta diez mil cautivos")]),
+    ("Cerco y caída de Jerusalén", "2R 25:1-10",
+     "Texto: el cerco empieza «á los nueve años de su reinado» (de Sedecías), «en el mes décimo, á los diez del mes» (25:1); "
+     "dura «hasta el undécimo año del rey Sedecías» (25:2); el templo se quema en el mes quinto, «siendo el año diecinueve de "
+     "Nabucodonosor» (25:8). Brenton: «in the ninth year of his reign», «until the eleventh year», «the nineteenth year».",
+     [("2R 25:1", "TM", "á los nueve años de su reinado, en el mes décimo, á los diez del mes"),
+      ("2R 25:2", "TM", "hasta el undécimo año del rey Sedecías"), ("2R 25:8", "TM", "siendo el año diecinueve de Nabucodonosor"),
+      ("2R 25:1", "LXX", "in the ninth year of his reign"), ("2R 25:2", "LXX", "until the eleventh year of king Sedekias"),
+      ("2R 25:8", "LXX", "the nineteenth year of Nabuchodonosor")]),
+    ("Joaquín sale de la cárcel", "2R 25:27-30",
+     "Texto: «á los treinta y siete años de la trasportación de Joachîn», en el mes duodécimo, «en el primer año de su "
+     "reinado» (de Evil-merodac) (2 R 25:27; Brenton: «in the thirty-seventh year of the carrying away»).",
+     [("2R 25:27", "TM", "á los treinta y siete años de la trasportación de Joachîn"),
+      ("2R 25:27", "TM", "en el primer año de su reinado"),
+      ("2R 25:27", "LXX", "in the thirty-seventh year of the carrying away of Joachim")]),
+]
+ADV_2R = ("Convenio del cálculo (no lo dice el texto): «el año N» de un rey es N − 1 años después de su comienzo, como en "
+          "Ex 40:17 y 1 R 6:1. El texto no dice cómo se contaba el año en que empieza un rey (si es su primer año o el último "
+          "del anterior) ni si hubo reinados compartidos; las explicaciones con corregencias o con cómputos distintos en "
+          "Judá e Israel son de fuera del texto (Fuente externa) y no se aplican. No se armoniza.")
+# Sincronismos que no cuadran entre sí (cálculo con sus pasos). (id, título, pasos, comparación, nota). Paso: (ref, texto,
+# cita TM, cifra TM, signo) o (None, texto del convenio, valor, signo). Comparación: (ref, cita TM, cifra TM, cita LXX |
+# None, cifra LXX | None). En la nota, {total} es el resultado del cálculo y {comp} la cifra del versículo comparado.
+CALCULOS_2R = [
+    ("2r-joram-israel", "¿Cuándo empieza Joram de Israel? 2 R 3:1 y 8:16 frente a 1:17",
+     [("2R 8:16", "Joram de Judá empieza «En el quinto año de Joram hijo de Achâb»", "En el quinto año de Joram hijo de Achâb",
+       "quinto", 1),
+      (None, "convenio: el año 5 de Joram de Israel es 5 − 1 = 4 años después de su comienzo", 1, -1)],
+     ("2R 1:17", "en el segundo año de Joram, hijo de Josaphat", "segundo", None, None),
+     "Según 8:16, Joram de Israel empieza {total} años antes que Joram de Judá (y 3:1 lo pone en «el año dieciocho de "
+     "Josaphat»). Según 1:17 (TM; Brenton no lo tiene) empieza «en el segundo año de Joram, hijo de Josaphat», es decir, "
+     "después que él. Los dos órdenes no cuadran; el texto no lo explica."),
+    ("2r-ocozias-juda", "¿Cuándo empieza Ocozías de Judá? 2 R 8:25 frente a 9:29",
+     [("2R 8:25", "Ocozías empieza «En el año doce de Joram hijo de Achâb»", "En el año doce de Joram hijo de Achâb", "doce", 1)],
+     ("2R 9:29", "En el undécimo año de Joram hijo de Achâb", "undécimo", "in the eleventh year of Joram", "eleventh"),
+     "8:25 da el año {total} de Joram de Israel y 9:29 el año {comp} (TM y LXX). Diferencia de un año; el texto no la explica."),
+    ("2r-joas-israel", "¿Cuándo empieza Joás de Israel? 2 R 13:1 frente a 13:10",
+     [("2R 13:1", "Joacaz empieza «EN el año veintitrés de Joas» (de Judá)", "EN el año veintitrés de Joas", "veintitrés", 1),
+      ("2R 13:1", "y reina «diecisiete años»", "diecisiete años", "diecisiete", 1)],
+     ("2R 13:10", "El año treinta y siete de Joas", "treinta y siete", "In the thirty-seventh year of Joas", "thirty-seventh"),
+     "Si Joacaz empieza en el año 23 de Joás de Judá y reina 17, su hijo Joás empieza hacia el año {total} de Joás de Judá "
+     "(o uno antes, si el último año de Joacaz cuenta también como primero de su hijo); 13:10 dice el año {comp}."),
+    ("2r-azarias", "¿Cuándo empieza Azarías? 2 R 14:2 y 14:23 frente a 15:1",
+     [("2R 14:2", "Amasías reina «veintinueve años»", "veintinueve años reinó en Jerusalem", "veintinueve", 1),
+      ("2R 14:23", "Jeroboam empieza «El año quince de Amasías»", "El año quince de Amasías", "quince", -1),
+      (None, "convenio: el año 15 de Amasías es el año 1 de Jeroboam", 1, 1)],
+     ("2R 15:1", "EN el año veintisiete de Jeroboam", "veintisiete", "In the twenty-seventh year of Jeroboam", "twenty-seventh"),
+     "Si Azarías empieza al morir Amasías (14:19-21), cae hacia el año {total} de Jeroboam; 15:1 dice el año {comp}. 14:17 "
+     "dice además que Amasías «vivió después de la muerte de Joas» quince años. El texto no explica la diferencia."),
+    ("2r-oseas", "¿Cuándo empieza Oseas? 2 R 15:27 y 16:1 frente a 17:1 (y 15:30)",
+     [("2R 15:27", "Peka reina «veinte años»", "reinó veinte años", "veinte", 1),
+      ("2R 16:1", "Acaz empieza «EN el año diecisiete de Peka»", "EN el año diecisiete de Peka", "diecisiete", -1),
+      (None, "convenio: el año 17 de Peka es el año 1 de Acaz", 1, 1)],
+     ("2R 17:1", "EN el año duodécimo de Achâz", "duodécimo", "In the twelfth year of Achaz", "twelfth"),
+     "Si Oseas reina al matar a Peka (15:30), eso cae hacia el año {total} de Acaz; 17:1 dice el año {comp}. Además, 15:30 "
+     "fecha la muerte de Peka «á los veinte años de Jotham», y 15:33 da a Jotam «dieciséis años» de reinado. El texto no "
+     "lo explica."),
+    ("2r-samaria", "¿En qué año de Ezequías cae Samaria? 2 R 18:1 y 17:6 frente a 18:10",
+     [("2R 17:6", "Samaria cae «En el año nueve de Oseas»", "En el año nueve de Oseas", "nueve", 1),
+      ("2R 18:1", "Ezequías empieza «EN el tercer año de Oseas»", "EN el tercer año de Oseas", "tercer", -1),
+      (None, "convenio: el año 3 de Oseas es el año 1 de Ezequías", 1, 1)],
+     ("2R 18:10", "en el sexto año de Ezechîas", "sexto", "in the sixth year of Ezekias", "sixth"),
+     "Con 18:1, el año 9 de Oseas sería el {total} de Ezequías; 18:10 dice el {comp} (y 18:9 hace del cuarto de Ezequías el "
+     "séptimo de Oseas, que cuadra con 18:10 y no con 18:1). El texto no lo explica."),
 ]
 
 
@@ -736,6 +929,98 @@ def reyes_1r(cron, dur, textos, numeral, errores):
                        f"(LXX), frente a 480 / 440. {ADV_1R}")
 
 
+def reyes_2r(cron, textos, numeral, errores):
+    """2 Reyes: reinados y sincronismos (texto, TM y LXX), sincronismos que no cuadran (cálculo con pasos y advertencia)
+    y hechos sin año. Nada se fecha desde Adán ni en años antes de Cristo."""
+    def cifra(ref, trad, cita, frase):
+        if cita not in textos[trad].get(ref, "") or frase not in cita:
+            errores.append(f"Cronología de 2 R: «{cita}» no está en {ref} ({trad}) o no contiene «{frase}»")
+            return None
+        idioma = "es" if trad == "TM" else "en"
+        w = " ".join(_ORD.get(x, x) for x in frase.replace("-", " ").split())
+        w = re.sub(r"(\w+)ieth$", lambda m: m.group(1) + "y", w)  # «twentieth» -> «twenty»
+        v = numeral(w, idioma)
+        if v is None:
+            errores.append(f"Cronología de 2 R: no se entiende la cifra «{frase}» ({ref}, {trad})")
+        return v
+
+    reinados = []
+    for pid, nom, reino, tm, lxx, s_tm, s_lxx, unidad, otros in REINADOS_2R:
+        d = {"persona": pid, "rey": nom, "reino": reino, "unidad": unidad, "certeza": "texto",
+             "duracion": {"TM": {"ref": tm[0], "cita": tm[1], "valor": cifra(tm[0], "TM", tm[1], tm[2]), "fuente": "rv1909"}}}
+        if lxx:
+            d["duracion"]["LXX"] = {"ref": lxx[0], "cita": lxx[1], "valor": cifra(lxx[0], "LXX", lxx[1], lxx[2]),
+                                    "fuente": "brenton"}
+        if s_tm:
+            d["sincronismo"] = {"TM": {"ref": s_tm[0], "cita": s_tm[1], "anio": cifra(s_tm[0], "TM", s_tm[1], s_tm[2]),
+                                       "de": s_tm[3], "fuente": "rv1909"}}
+            if s_lxx:
+                d["sincronismo"]["LXX"] = {"ref": s_lxx[0], "cita": s_lxx[1],
+                                           "anio": cifra(s_lxx[0], "LXX", s_lxx[1], s_lxx[2]), "de": s_lxx[3],
+                                           "fuente": "brenton"}
+        if otros:
+            d["otros_sincronismos"] = [{"ref": r, "tradicion": tr, "cita": c, "anio": cifra(r, tr, c, f), "de": de,
+                                        "fuente": "rv1909" if tr == "TM" else "brenton"} for r, tr, c, f, de in otros]
+        reinados.append(d)
+        t = d["duracion"]["TM"]
+        nota = f"Texto: reina «{t['cita']}» ({t['ref']}"
+        if "LXX" in d["duracion"]:
+            x = d["duracion"]["LXX"]
+            nota += f"; Brenton, LXX: «{x['cita']}»" + ("" if x["valor"] == t["valor"] else f", {x['valor']} {unidad}")
+        elif pid == "Shallum_1":
+            nota += "; Brenton: «a full month», sin cifra"
+        nota += ")."
+        if s_tm:
+            st, sl = d["sincronismo"]["TM"], d["sincronismo"].get("LXX")
+            nota += f" Comienza «{st['cita']}» ({st['ref']}"
+            if sl and (sl["anio"], sl["de"]) == (st["anio"], st["de"]):
+                nota += f"; LXX: «{sl['cita']}»)."
+            elif sl:
+                nota += f"); la LXX dice «{sl['cita']}» (no se armoniza)."
+            else:
+                nota += "); Brenton no da el sincronismo."
+        for o in d.get("otros_sincronismos", []):
+            nota += (f" {'Brenton' if o['tradicion'] == 'LXX' else 'Otro versículo'}: «{o['cita']}» ({o['ref']}), que no "
+                     "cuadra con el anterior (ver los cálculos de 2 Reyes; no se armoniza).")
+        if pid == "Jehoram_2":
+            nota += " Brenton no tiene el sincronismo de 1:17."
+        cron["hitos_sin_fecha"].append({"titulo": f"Reinado de {nom} ({reino})", "ref": t["ref"], "nota": nota})
+    cron.setdefault("reinados", []).extend(reinados)
+    for t, r, n, citas in HITOS_2R:
+        for rc, trad, cita in citas:
+            if cita not in textos[trad].get(rc, ""):
+                errores.append(f"Hito de 2 R: «{cita}» no está en {rc} ({trad})")
+        cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
+    calculos = []
+    for cid, titulo, pasos_def, (cref, c_tm, f_tm, c_lxx, f_lxx), nota in CALCULOS_2R:
+        pasos = []
+        for p in pasos_def:
+            if p[0] is None:
+                pasos.append({"texto": p[1], "valor": p[2], "signo": p[3], "certeza": "calculo", "convencion": True})
+            else:
+                ref, texto, cita, frase, signo = p
+                pasos.append({"ref": ref, "texto": texto, "valor": cifra(ref, "TM", cita, frase), "signo": signo,
+                              "cita": cita, "certeza": "texto"})
+        if any(p["valor"] is None for p in pasos):
+            continue
+        total = sum(p["valor"] * p["signo"] for p in pasos)
+        comp = {"ref": cref, "certeza": "texto", "TM": {"cita": c_tm, "valor": cifra(cref, "TM", c_tm, f_tm)}}
+        if c_lxx:
+            comp["LXX"] = {"cita": c_lxx, "valor": cifra(cref, "LXX", c_lxx, f_lxx)}
+        else:
+            comp["LXX"] = None
+        comp["nota"] = nota.format(total=total, comp=comp["TM"]["valor"])
+        if comp["TM"]["valor"] == total and cid != "2r-joram-israel":
+            errores.append(f"Cálculo {cid}: el texto cuadra ({total}); la nota dice que no")
+        calculos.append({"id": cid, "titulo": titulo, "certeza": "calculo", "pasos": pasos, "total": total,
+                         "comparacion": comp, "advertencia": ADV_2R})
+        cron["hitos_sin_fecha"].append({"titulo": f"Cálculo: {titulo}", "ref": cref,
+                                        "nota": f"Cálculo con pasos ({cid}): {comp['nota']} {ADV_2R}"})
+    cron["calculos_2r"] = calculos
+    if len(calculos) != len(CALCULOS_2R):
+        errores.append(f"Cronología de 2 R: {len(calculos)} cálculos de {len(CALCULOS_2R)}")
+
+
 def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
     """textos = {"TM": rv, "LXX": br}; numeral(frase, idioma) -> int."""
     idx = {}
@@ -918,4 +1203,6 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
             errores.append(f"Cálculo de 2 S 5:4-5: {hebron} + {jerus} ≠ {total} (más seis meses)")
     if any(r.startswith("1R ") for r in textos["TM"]):
         reyes_1r(cron, dur, textos, numeral, errores)
+    if any(r.startswith("2R ") for r in textos["TM"]):
+        reyes_2r(cron, textos, numeral, errores)
     return cron, vivos, usadas

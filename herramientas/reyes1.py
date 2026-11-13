@@ -748,6 +748,7 @@ def comprobar(datos, errores):
     ids = [p["id"] for p in datos["pasajes"]]
     ult_2s = max(i for i, p in enumerate(datos["pasajes"]) if p["libro"] == "2S")
     lb = [l["id"] for l in datos["libros"]]
-    ok_(ids.index(pas[0]["id"]) == ult_2s + 1 and lb.index(LIBRO) == lb.index("2S") + 1 and lb[-1] == LIBRO,
-        "1 Reyes va justo después de 2 Samuel en el orden de los pasajes (lectura en orden) y es el último libro")
+    ok_(ids.index(pas[0]["id"]) == ult_2s + 1 and lb.index(LIBRO) == lb.index("2S") + 1
+        and (lb[-1] == LIBRO or lb[lb.index(LIBRO) + 1] == "2R"),
+        "1 Reyes va justo después de 2 Samuel en el orden de los pasajes (lectura en orden) y antes de 2 Reyes (si está)")
     return lineas

@@ -461,12 +461,13 @@
   },
   "seah": {
     "tipo": "medida",
-    "lema": "medida (seah)",
+    "lema": "seah (medida de áridos)",
     "formas": [
-      "tres medidas"
+      "tres medidas",
+      "seah"
     ],
-    "adulto": "En Génesis 18:6 se piden «tres medidas de flor de harina» para hacer pan. La RV1909 no dice la unidad; los diccionarios la identifican con el seah, que es la tercera parte del efa. Serían entonces un efa entero de harina, unos 22 litros: una cantidad grande.",
-    "nino": "Tres medidas grandes de harina, lo suficiente para hacer mucho pan.",
+    "adulto": "El seah es una medida de áridos: según Easton, la tercera parte del efa («tres seahs o diez omeres»), unos 7 litros. La RV1909 a veces escribe «seah» y a veces no nombra la unidad: en Gn 18:6 se piden «tres medidas de flor de harina» para hacer pan, y los diccionarios la identifican con el seah. Serían entonces un efa entero de harina, unos 22 litros: una cantidad grande. La capacidad actual es una estimación con margen.",
+    "nino": "Una medida de harina o de grano, como un balde mediano (unos 7 litros, es un cálculo). Tres medidas, como las de Gn 18:6, son mucha harina: lo suficiente para hacer mucho pan.",
     "certeza": "inferido",
     "fuentes": [
       {
@@ -483,10 +484,11 @@
       }
     ],
     "calculo": {
-      "resultado": "3 seahs ≈ 1 efa ≈ 22 L",
+      "resultado": "1 seah ≈ 7,3 L (rango ≈ 6,3–12 L); 3 seahs = 1 efa ≈ 22 L",
       "pasos": [
-        "Easton: el efa contiene tres seahs.",
-        "3 seahs = 1 efa ≈ 22 L (≈ 7 L cada seah)."
+        "Easton («Ephah»): el efa contiene «tres seahs o diez omers»; 1 seah = 1/3 de efa.",
+        "Con el efa ≈ 22 L (rango ≈ 19–36 L; ver «efa»): 22 L ÷ 3 ≈ 7,3 L; con 19 L, 6,3 L; con 36 L, 12 L.",
+        "3 seahs = 1 efa ≈ 22 L (≈ 7,3 L cada seah)."
       ],
       "supuestos": [
         "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas.",
@@ -1678,10 +1680,12 @@
     "lema": "sahumerio e incienso",
     "formas": [
       "sahumerio",
-      "incienso"
+      "incienso",
+      "perfume",
+      "perfumes"
     ],
-    "adulto": "El sahumerio es una mezcla aromática que se quema en el culto, y el incienso, una sustancia aromática de esa mezcla. Easton recoge que simbolizaba la oración que sube a Dios; la ley detalla su uso más adelante.",
-    "nino": "Un perfume que se quemaba en el santuario y que olía muy bien.",
+    "adulto": "El sahumerio es una mezcla aromática que se quema en el culto, y el incienso, una sustancia aromática de esa mezcla. Easton recoge que simbolizaba la oración que sube a Dios; la ley detalla su uso más adelante. En la RV1909 también se le llama «perfume», y «quemar perfumes» es quemar incienso; esa equivalencia es una identificación del proyecto, no de Easton.",
+    "nino": "Un perfume que se quemaba en el santuario y que olía muy bien. A veces la Biblia lo llama «perfume».",
     "certeza": "externa",
     "fuentes": [
       {
@@ -1697,7 +1701,9 @@
         "idioma": "en"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Lv 26:31"
+    ],
     "solo": null
   },
   "fuente-metal": {
@@ -1779,7 +1785,8 @@
     "formas": [
       "lepra",
       "leprosa",
-      "leproso"
+      "leproso",
+      "leprosos"
     ],
     "adulto": "En la RV1909 «lepra» traduce el hebreo tsaraat, una afección de la piel que la ley describe con manchas, hinchazones y postillas. La identificación exacta con una enfermedad actual no la da el texto. Quien la tenía debía ser examinado por el sacerdote y vivir apartado.",
     "nino": "Una enfermedad de la piel por la que el enfermo vivía apartado hasta que el sacerdote lo declaraba sano.",
@@ -1822,7 +1829,9 @@
         "cita": "Para hacer diferencia entre inmundo y limpio"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "2R 21:21"
+    ],
     "solo": null
   },
   "vaca-bermeja": {
@@ -2535,7 +2544,13 @@
       "1R 18:18-26",
       "1R 18:40",
       "1R 19:18",
-      "1R 22:53"
+      "1R 22:53",
+      "2R 3:2",
+      "2R 10:18-28",
+      "2R 11:18",
+      "2R 17:16",
+      "2R 21:3",
+      "2R 23:4-5"
     ]
   },
   "astaroth": {
@@ -2571,7 +2586,8 @@
       "1S 12:10",
       "1S 31:10",
       "1R 11:5",
-      "1R 11:33"
+      "1R 11:33",
+      "2R 23:13"
     ]
   },
   "moloc": {
@@ -2668,7 +2684,16 @@
       "1R 14:23",
       "1R 15:13",
       "1R 16:33",
-      "1R 18:19"
+      "1R 18:19",
+      "2R 13:6",
+      "2R 17:10",
+      "2R 17:16",
+      "2R 18:4",
+      "2R 21:3",
+      "2R 21:7",
+      "2R 23:4",
+      "2R 23:6-7",
+      "2R 23:14-15"
     ]
   },
   "terafines": {
@@ -2676,9 +2701,10 @@
     "lema": "terafines (ídolos del hogar)",
     "formas": [
       "teraphim",
-      "ídolos"
+      "ídolos",
+      "terapheos"
     ],
-    "adulto": "Los terafines (la RV1909 escribe «teraphim») son figuras domésticas de dioses, con forma humana, que se guardaban en la casa y se consultaban. Algunos pasajes de la RV1909 hablan de «ídolos» donde otros dicen «teraphim». La identificación de cada caso es una inferencia.",
+    "adulto": "Los terafines (la RV1909 escribe «teraphim») son figuras domésticas de dioses, con forma humana, que se guardaban en la casa y se consultaban. Algunos pasajes de la RV1909 hablan de «ídolos» donde otros dicen «teraphim». La identificación de cada caso es una inferencia. La RV1909 escribe también «terapheos» (variante de «teraphim»: identificación del proyecto, no del texto).",
     "nino": "Pequeñas figuras de dioses que se guardaban en casa.",
     "certeza": "inferido",
     "fuentes": [
@@ -2704,7 +2730,8 @@
       "Jue 18:14",
       "Jue 18:17",
       "Jue 18:18",
-      "Jue 18:20"
+      "Jue 18:20",
+      "2R 23:24"
     ]
   },
   "belial": {

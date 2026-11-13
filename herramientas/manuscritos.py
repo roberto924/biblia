@@ -1,4 +1,4 @@
-"""Manuscritos: el registro real de donde sale el texto de cada pasaje (Gn, Ex, Lv, Nm, Dt, Jos, Jue, Rut, 1 S, 2 S, 1 R).
+"""Manuscritos: el registro real de donde sale el texto de cada pasaje (Gn, Ex, Lv, Nm, Dt, Jos, Jue, Rut, 1 S, 2 S, 1 R, 2 R).
 
 Genera:
   datos/manuscritos.js     window.BIBLIA_MANUSCRITOS
@@ -37,13 +37,13 @@ FIXTURE = HERR / "manuscritos" / "_prueba" / "fixture.json"
 UA = {"User-Agent": "biblia-datos/1.0 (lectura de metadatos, uso no comercial)"}
 HOY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S", "1R")
+LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S", "1R", "2R")
 
 # ------------------------------------------------------------------ Leningrado (Commons)
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-CATEGORIAS = ("001-100", "101-200", "201-300", "401-491")   # Gn–2 S en 1b–184a; 1 R desde 184a; Rut en 421a–423a
+CATEGORIAS = ("001-100", "101-200", "201-300", "401-491")   # Gn–2 S en 1b–184a; 1 R desde 184a; 2 R en 202b–220b; Rut en 421a–423a
 LIBRO_EN = {"Genesis": "Gn", "Exodus": "Ex", "Leviticus": "Lv", "Numbers": "Nm", "Deuteronomy": "Dt",
-            "Joshua": "Jos", "Judges": "Jue", "Ruth": "Rut", "1 Samuel": "1S", "2 Samuel": "2S", "1 Kings": "1R"}
+            "Joshua": "Jos", "Judges": "Jue", "Ruth": "Rut", "1 Samuel": "1S", "2 Samuel": "2S", "1 Kings": "1R", "2 Kings": "2R"}
 LICENCIA_ABIERTA = re.compile(r"^(Public domain|PD\b|CC0|CC BY(-SA)? \d)")
 ANCHO_MINIATURA = 1280
 
@@ -68,7 +68,7 @@ MUESTRA_VERIFICADA = {   # (rollo, fragmento de Abegg): (imagen LL, qué se comp
 VAT_MANIFIESTO = "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json"
 VAT_VISOR = "https://digi.vatlib.it/view/MSS_Vat.gr.1209/"
 VAT_LIBRO = {"Genesis": "Gn", "Exodus": "Ex", "Leviticus": "Lv", "Numeri": "Nm", "Deuteronomium": "Dt",
-             "Iosue": "Jos", "Iudicum": "Jue", "Ruth": "Rut", "Samuelis I": "1S", "Samuelis II": "2S", "Regum I": "1R"}
+             "Iosue": "Jos", "Iudicum": "Jue", "Ruth": "Rut", "Samuelis I": "1S", "Samuelis II": "2S", "Regum I": "1R", "Regum II": "2R"}
 # Diferencias entre el rótulo del catálogo («p. 47-99 Exodus») y la primera imagen que el manifiesto
 # pone en ese tramo, revisadas a mano. Se usa la página del rótulo solo si está aquí.
 VAT_REVISADO = {
@@ -91,6 +91,11 @@ VAT_NOTA = {
            "la p. 394 (0398) acaba 2 Reinos con «… ΚΑΙ ΠΡΟΣΕΘΗΚΕ ΣΑΛΩΜΩΝ ΕΠΙ ΤΟ ΘΥΣΙΑΣΤΗΡΙΟΝ …» (el final que la LXX da a 2 S 24:25) y deja "
            "en blanco el resto de la tercera columna; la p. 395 (0399) lleva arriba «Βασιλειων γ», una banda de adorno y empieza, con inicial "
            "grande, «ΚΑΙ Ο ΒΑΣΙΛΕΥΣ ΔΑΥΕΙΔ ΠΡΕΣΒΥΤΕΡΟΣ ΠΡΟΒΕΒΗΚΩΣ ΗΜΕΡΑΙΣ» (1 R 1:1). Se enlaza la p. 395, la del rótulo."),
+    "2R": ("En la Septuaginta, 2 Reyes es «4 Reinos» (Βασιλειῶν Δ); el catálogo lo rotula «Regum II». Revisado a mano el 2026-11-13: "
+           "4 Reinos empieza en la misma página en que acaba 3 Reinos, la p. 442 (0446), que lleva arriba «Βασιλειων δ». La primera columna "
+           "acaba 3 Reinos con «… ΚΑΙ ΗΘΕΤΗΣΕΝ ΜΩΑΒ ΕΝ ΙΣΡΑΗΛ ΜΕΤΑ ΤΟ ΑΠΟΘΑΝΕΙΝ ΑΧΑΑΒ» (el texto de 2 R 1:1) y la suscripción «ΒΑΣΙΛΕΙΩΝ Γ»; "
+           "la segunda empieza, bajo una banda de adorno y con inicial grande, «ΚΑΙ ΗΘΕΤΗΣΕΝ ΜΩΑΒ ΕΝ ΙΣΡΑΗΛ ΜΕΤΑ ΤΟ ΑΠΟΘΑΝΕΙΝ ΑΧΑΑΒ ΚΑΙ ΕΠΕΣΕΝ "
+           "ΟΧΟΖΕΙΑΣ ΔΙΑ ΤΟΥ ΔΙΚΤΥΩΤΟΥ» (2 R 1:1-2; 1:1 sale así dos veces). Se enlaza la p. 442, la del rótulo."),
 }
 
 FALLOS = []
@@ -202,7 +207,7 @@ def contexto_textos(orig, sin_red):
     norm = lambda s: re.sub(r"^Rt ", "Rut ", s)
     heb_orden = {}
     claves_oshb = {"Gn": "oshb_gen", "Ex": "oshb_exo", "Lv": "oshb_lev", "Nm": "oshb_num", "Dt": "oshb_deu",
-                   "Jos": "oshb_jos", "Jue": "oshb_jue", "Rut": "oshb_rut", "1S": "oshb_1s", "2S": "oshb_2s", "1R": "oshb_1r"}
+                   "Jos": "oshb_jos", "Jue": "oshb_jue", "Rut": "oshb_rut", "1S": "oshb_1s", "2S": "oshb_2s", "1R": "oshb_1r", "2R": "oshb_2r"}
     for lib, clave in claves_oshb.items():
         heb_orden[lib] = list(orig.leer_oshb(orig.obtener(clave, sin_red), lib))
     heb_idx = {k: (lib, i) for lib, l in heb_orden.items() for i, k in enumerate(l)}

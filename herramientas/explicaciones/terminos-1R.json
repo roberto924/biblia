@@ -526,10 +526,11 @@
   "formas": [
    "altos",
    "el alto principal",
-   "un alto"
+   "un alto",
+   "el alto"
   ],
-  "adulto": "Los «altos» son lugares elevados, naturales o hechos, donde se ofrecían sacrificios y ofrendas (Easton; en 3:3 y 22:44 el texto añade que se quemaban perfumes). Según 3:2, el pueblo sacrificaba en los altos porque todavía no había una casa edificada al nombre de Jehová; el más importante era el de Gabaón (3:4). Easton recuerda que la ley mandaba derribar los de los cananeos y prohibía adorar a Jehová en lugares altos, con un solo altar elegido por Dios (Dt 12:2-3 y 12:11-14).",
-  "nino": "Lugares en lo alto de los cerros donde la gente hacía sacrificios. Mientras no hubo templo, el pueblo los usaba.",
+  "adulto": "Los «altos» son lugares elevados, naturales o hechos, donde se ofrecían sacrificios y ofrendas (Easton; en 1R 3:3 y 22:44 el texto añade que se quemaban perfumes). Según 1R 3:2, el pueblo sacrificaba en los altos porque todavía no había una casa edificada al nombre de Jehová; el más importante era el de Gabaón (1R 3:4). Easton recuerda que la ley mandaba derribar los de los cananeos y prohibía adorar a Jehová en lugares altos, con un solo altar elegido por Dios (Dt 12:2-3 y 12:11-14).",
+  "nino": "Lugares en lo alto de los cerros donde la gente hacía sacrificios. Antes de que hubiera templo, el pueblo los usaba.",
   "certeza": "externa",
   "fuentes": [
    {
@@ -560,7 +561,24 @@
    "1R 13:32-33",
    "1R 14:23",
    "1R 15:14",
-   "1R 22:44"
+   "1R 22:44",
+   "2R 12:3",
+   "2R 14:4",
+   "2R 15:4",
+   "2R 15:35",
+   "2R 16:4",
+   "2R 17:9",
+   "2R 17:11",
+   "2R 17:29",
+   "2R 17:32",
+   "2R 18:4",
+   "2R 18:22",
+   "2R 21:3",
+   "2R 23:5",
+   "2R 23:8-9",
+   "2R 23:13",
+   "2R 23:19-20",
+   "2R 23:15"
   ]
  },
  "tributo-1r": {
@@ -608,7 +626,7 @@
    "gente de á caballo",
    "jinetes"
   ],
-  "adulto": "La RV1909 llama «gente de á caballo» y «jinetes» a los soldados montados. En 4:26 Salomón tiene cuarenta mil caballos en sus caballerizas para sus carros y doce mil jinetes. Según Easton, los israelitas no usaron caballos de guerra durante mucho tiempo, porque la ley lo prohibía (Dt 17:16); David formó una fuerza de caballería y Salomón multiplicó su número. El versículo de la ley dice «que no se aumente caballos» ni se haga volver al pueblo a Egipto para acrecentarlos.",
+  "adulto": "La RV1909 llama «gente de á caballo» y «jinetes» a los soldados montados. En 1R 4:26 Salomón tiene cuarenta mil caballos en sus caballerizas para sus carros y doce mil jinetes. Según Easton, los israelitas no usaron caballos de guerra durante mucho tiempo, porque la ley lo prohibía (Dt 17:16); David formó una fuerza de caballería y Salomón multiplicó su número. El versículo de la ley dice «que no se aumente caballos» ni se haga volver al pueblo a Egipto para acrecentarlos.",
   "nino": "Soldados que iban montados a caballo. Salomón tenía muchísimos caballos y carros de guerra.",
   "certeza": "externa",
   "fuentes": [
@@ -645,7 +663,10 @@
    "1R 9:19",
    "1R 9:22",
    "1R 10:26",
-   "1R 20:21"
+   "1R 20:21",
+   "2R 6:14-17",
+   "2R 10:2",
+   "2R 18:23-24"
   ]
  },
  "marfil": {
@@ -804,7 +825,7 @@
   "formas": [
    "Chêmos"
   ],
-  "adulto": "Chemos es el dios de los moabitas. Según Easton, Salomón introdujo su culto en Jerusalén; el texto lo cuenta en 11:7: edificó un alto a Chêmos, «abominación de Moab», en el monte que está enfrente de Jerusalén.",
+  "adulto": "Chemos es el dios de los moabitas. Según Easton, Salomón introdujo su culto en Jerusalén; el texto lo cuenta 1R 11:7: edificó un alto a Chêmos, «abominación de Moab», en el monte que está enfrente de Jerusalén.",
   "nino": "El dios falso del pueblo de Moab.",
   "certeza": "externa",
   "fuentes": [
@@ -825,7 +846,8 @@
   "excluir": [],
   "solo": [
    "1R 11:7",
-   "1R 11:33"
+   "1R 11:33",
+   "2R 23:13"
   ]
  },
  "milcom": {
@@ -869,7 +891,7 @@
    "dos becerros de oro",
    "becerros"
   ],
-  "adulto": "Jeroboam hizo dos becerros de oro y puso uno en Betel y el otro en Dan (12:28-29). El motivo que da el texto es político: temía que, si el pueblo seguía subiendo a sacrificar a Jerusalén, su corazón se volviera a Roboam (12:27). Les dijo: «he aquí tus dioses, oh Israel, que te hicieron subir de la tierra de Egipto» (12:28), casi las mismas palabras que se dijeron del becerro del Sinaí (Ex 32:4). Easton cuenta lo mismo: dos ídolos con forma de becerro en Dan y Betel para impedir que las diez tribus fueran a Jerusalén.",
+  "adulto": "Jeroboam hizo dos becerros de oro y puso uno en Betel y el otro en Dan (1R 12:28-29). El motivo que da el texto es político: temía que, si el pueblo seguía subiendo a sacrificar a Jerusalén, su corazón se volviera a Roboam (1R 12:27). Les dijo: «he aquí tus dioses, oh Israel, que te hicieron subir de la tierra de Egipto» (1R 12:28), casi las mismas palabras que se dijeron del becerro del Sinaí (Ex 32:4). Easton cuenta lo mismo: dos ídolos con forma de becerro en Dan y Betel para impedir que las diez tribus fueran a Jerusalén.",
   "nino": "Jeroboam hizo dos becerros de oro para que el pueblo los adorara y no fuera a Jerusalén. Puso uno en Betel y otro en Dan.",
   "certeza": "texto",
   "fuentes": [
@@ -899,7 +921,9 @@
   ],
   "excluir": [],
   "solo": [
-   "1R 12:28-32"
+   "1R 12:28-32",
+   "2R 10:29",
+   "2R 17:16"
   ]
  },
  "varon-dios": {
@@ -908,7 +932,7 @@
   "formas": [
    "varón de Dios"
   ],
-  "adulto": "En 1 Reyes, «varón de Dios» se dice de alguien que habla de parte de Dios: en 13:1 viene «por palabra de Jehová». Easton define al profeta como portavoz de Dios, la boca por la que Dios habla. Que «varón de Dios» sea otra forma de llamar a un profeta es una inferencia del contexto.",
+  "adulto": "«Varón de Dios» se dice de alguien que habla de parte de Dios; por ejemplo, en 1R 13:1 viene «por palabra de Jehová». Easton define al profeta como portavoz de Dios, la boca por la que Dios habla. Que «varón de Dios» sea otra forma de llamar a un profeta es una inferencia del contexto.",
   "nino": "Parece ser una forma de llamar a un profeta: alguien que habla de parte de Dios.",
   "certeza": "inferido",
   "fuentes": [
@@ -931,7 +955,30 @@
    "1R 13:1",
    "1R 17:18",
    "1R 17:24",
-   "1R 20:28"
+   "1R 20:28",
+   "2R 1:9-13",
+   "2R 4:7",
+   "2R 4:9",
+   "2R 4:16",
+   "2R 4:21-22",
+   "2R 4:25",
+   "2R 4:27",
+   "2R 4:40",
+   "2R 4:42",
+   "2R 5:8",
+   "2R 5:14-15",
+   "2R 5:20",
+   "2R 6:6",
+   "2R 6:9",
+   "2R 6:15",
+   "2R 7:2",
+   "2R 7:17-19",
+   "2R 8:2",
+   "2R 8:4",
+   "2R 8:7-8",
+   "2R 8:11",
+   "2R 13:19",
+   "2R 23:16-17"
   ]
  },
  "enebro-retama": {
@@ -967,7 +1014,7 @@
   "formas": [
    "manto"
   ],
-  "adulto": "El manto es una prenda exterior grande. Elías se cubre el rostro con el suyo al oír la voz (19:13) y más tarde lo echa sobre Eliseo, que araba con doce yuntas; Eliseo deja los bueyes y corre tras él (19:19-20). El texto no explica el gesto. Easton dice que el manto de Elías (hebreo «addereth») era una prenda grande, probablemente de piel de oveja.",
+  "adulto": "El manto es una prenda exterior grande. Elías se cubre el rostro con el suyo al oír la voz (1R 19:13) y más tarde lo echa sobre Eliseo, que araba con doce yuntas; Eliseo deja los bueyes y corre tras él (1R 19:19-20). El texto no explica el gesto. Easton dice que el manto de Elías (hebreo «addereth») era una prenda grande, probablemente de piel de oveja.",
   "nino": "Una capa grande de abrigo. Elías la echó sobre Eliseo, y Eliseo fue tras él.",
   "certeza": "externa",
   "fuentes": [
@@ -988,7 +1035,9 @@
   "excluir": [],
   "solo": [
    "1R 19:13",
-   "1R 19:19"
+   "1R 19:19",
+   "2R 2:8",
+   "2R 2:13-14"
   ]
  },
  "gananes": {
@@ -1084,8 +1133,8 @@
   "formas": [
    "blasfemado"
   ],
-  "adulto": "Blasfemar es hablar mal de Dios y, en sentido amplio, calumniar o insultar (Easton cita 21:10 entre sus ejemplos). La ley decía que quien blasfemara el nombre de Jehová moría apedreado (Lv 24:16). En 21:10 y 21:13, Jezabel hace que dos hombres perversos digan que Nabot «ha blasfemado á Dios y al rey»; la acusación es falsa.",
-  "nino": "Hablar mal de Dios. Aquí es una mentira que inventan para acusar a Nabot.",
+  "adulto": "Blasfemar es hablar mal de Dios y, en sentido amplio, calumniar o insultar (Easton cita 1R 21:10 entre sus ejemplos). La ley decía que quien blasfemara el nombre de Jehová moría apedreado (Lv 24:16). En 1R 21:10 y 21:13, Jezabel hace que dos hombres perversos digan que Nabot «ha blasfemado á Dios y al rey»; la acusación es falsa.",
+  "nino": "Hablar mal de Dios o insultarlo. En 1 Reyes 21 es una mentira que inventan para acusar a Nabot.",
   "certeza": "externa",
   "fuentes": [
    {
@@ -1110,7 +1159,9 @@
   "excluir": [],
   "solo": [
    "1R 21:10",
-   "1R 21:13"
+   "1R 21:13",
+   "2R 19:6",
+   "2R 19:22"
   ]
  },
  "lampara-david": {

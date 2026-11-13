@@ -1,1230 +1,1382 @@
 {
-  "dt-21-hijo-rebelde": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "dt-34-muerte-moises": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "ex-7-endurecimiento-faraon": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "ex-21-ojo-por-ojo": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "jos-7-acan-y-su-familia": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "jue-4-jael": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "jue-11-voto-jefte": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "jue-21-mujeres-de-silo": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "nm-31-guerra-madian": {
-    "veredicto": "OK",
-    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
-  },
-  "1s-17-quien-mato-a-goliat": {
-    "veredicto": "RECHAZAR",
-    "nota": "Todo el contenido (Elhanán, Lahmi, 2 S 21, 1 Cr 20) cuenta sucesos posteriores a 1 S 17: rompe la lectura en orden. Reponer cuando se cargue 2 Samuel. Además, en Wikipedia «Lahmi fue un apodo» estaba invertido (es Goliat el apodo)."
-  },
-  "1s-2-su-ungido": {
-    "veredicto": "AJUSTAR",
-    "nota": "Radak: quitado «no ve un Mesías de los últimos tiempos» (no está en el comentario) y la mención a Samuel ungiendo al rey (adelanto de 1 S 10). K-D y Henry: quitadas David/Hijo de David/Cristo (adelanto)."
-  },
-  "1s-15-anatema-amalec": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikipedia: Crouch dice «componente excepcional», no «irregular»; Klapper es solo fuente de una nota; reescrito."
-  },
-  "1s-15-dios-se-arrepiente": {
-    "veredicto": "AJUSTAR",
-    "nota": "K-D: quitado lo no comprobado (oración de Samuel, v. 35); Henry: citas exactas («dispensación», «Fortaleza de Israel»); Radak: quitada la promesa a David (2 S 7, adelanto)."
-  },
-  "1s-16-espiritu-malo": {
-    "veredicto": "AJUSTAR",
-    "nota": "K-D: «agitando sentimientos y pensamientos» en vez de «locura»; Henry: no reprocha a los siervos, opina que habría sido mejor aconsejar paz con Dios; Wikipedia: Stein habla de manía/trastorno del ánimo."
-  },
-  "1s-18-david-y-jonatan": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikipedia: Nissinen habla de vínculo «homosocial», no «sin contenido sexual»; quitada la mención a 1 S 20:30 (adelanto)."
-  },
-  "1s-28-adivina-de-endor": {
-    "veredicto": "AJUSTAR",
-    "nota": "Jewish Encyclopedia: quitado «importa menos si ocurrió» (no está); reemplazado por lo que sí dice."
-  },
-  "1s-31-muerte-de-saul": {
-    "veredicto": "AJUSTAR",
-    "nota": "Quitada la postura de la Catholic Encyclopedia: no menciona a Saúl ni comenta el pasaje; quedan K-D, Henry y Jewish Encyclopedia."
-  },
-  "dt-7-anatema-naciones": {
-    "veredicto": "AJUSTAR",
-    "nota": "Cogan: «no resuelve la dificultad moral» cambiado por «reconoce una contradicción moral en la ley» (lo que dice el artículo). Solo se pudo leer el subtítulo y un fragmento del artículo de TheTorah."
-  },
-  "jos-2-rahab-miente": {
-    "veredicto": "AJUSTAR",
-    "nota": "K-D: quitadas citas de Heb/Stg (NT); Reimer: quitada Jael (adelanto); Jewish Encyclopedia: no explica la posición de Kimhi."
-  },
-  "jos-6-anatema-jerico": {
-    "veredicto": "AJUSTAR",
-    "nota": "Henry: quitado «en contraste con el Evangelio»; Wikipedia: «exagerados, ficticios o metafóricos» (como dice la fuente)."
-  },
-  "jos-10-sol-detenido": {
-    "veredicto": "AJUSTAR",
-    "nota": "K-D: decían «difícil decidir» entre objetiva y subjetiva, el resumen se contradecía; Mariottini: «minoritaria» no está en la fuente, es su tesis."
-  },
-  "jos-13-tierra-por-conquistar": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikipedia: no dice lo de otros pasajes ni cita Jue 1:1–2:5 (adelanto); reescrito con Brettler, Killebrew, Dever, Collins."
-  },
-  "jue-3-aod-eglon": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi sí dice que por levantarse Rut descendió de Eglón. Eso adelanta Rut (libro siguiente): el resumen conserva la idea (mérito que premió a su descendencia) sin nombrar a Rut. «Gesto de respeto» no es de Rashi (corregido)."
-  },
-  "jue-16-sanson-nazareo": {
-    "veredicto": "AJUSTAR",
-    "nota": "K-D: la miel del león no sale de la URL citada (Jue 14); quitada."
-  },
-  "jue-19-concubina-levita": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi: «coincide con la RV1909» marcado como fuente externa; Sweerts-Vermeulen: «tentativa»; K-D: quitado 1 S 11 (adelanto); Henry: quitada coletilla que no es de la fuente."
-  },
-  "gn-2-dos-relatos-creacion": {
-    "veredicto": "AJUSTAR",
-    "nota": "Henry: dice «apéndice» y «centro y resumen», no «recapitula»; Rashi: quitada una conclusión propia; Schmid: añadido que los compiladores los unieron para leerlos juntos."
-  },
-  "gn-6-hijos-de-dios": {
-    "veredicto": "AJUSTAR",
-    "nota": "Henry y Glaser: quitadas afirmaciones sobre «lectura más extendida/minoritaria» que no están en la fuente; Rashi: quitada la cita de Ex 7:1 (adelanto)."
-  },
-  "gn-9-cam-canaan": {
-    "veredicto": "AJUSTAR",
-    "nota": "Henry: quitado «desplazados de su tierra» (alude a la conquista)."
-  },
-  "gn-12-sara-hermana": {
-    "veredicto": "AJUSTAR",
-    "nota": "Levin: resumen vago y con adelantos (Gn 26, Éxodo); reescrito sin ellos. Rashi: quitado «no discute el problema moral»."
-  },
-  "gn-22-sacrificio-isaac": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi: la acusación de Satán/Ismael está en 22:1, no en 22:12 (obra y url corregidas); Koller: quitado «minoritaria», añadida su conclusión."
-  },
-  "gn-27-bendicion-engano": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi: quitado un motivo que Rashi no declara; Walfish: aclarado el origen (Edom y luego Roma); omitida la mención a la Iglesia (adelanto del NT)."
-  },
-  "gn-38-judah-tamar": {
-    "veredicto": "AJUSTAR",
-    "nota": "Barmash: quitado «sin poder acudir a la ley» (no confirmado)."
-  },
-  "rut-3-la-era": {
-    "veredicto": "AJUSTAR",
-    "nota": "nino: «cumpliera su deber» contradecía a K-D (no era obligación vinculante); reescrito."
-  },
-  "rut-4-rescate-y-zapato": {
-    "veredicto": "AJUSTAR",
-    "nota": "Jewish Encyclopedia «Levirate Marriage»: solo sustenta la primera frase; lo de Barton (otro artículo) quitado."
-  },
-  "rut-4-moabita-en-la-genealogia": {
-    "veredicto": "AJUSTAR",
-    "nota": "Barton: sin nombrar Esdras/Nehemías; Henry: lectura cristiana tipológica rotulada como tal, quitado «anuncio de los gentiles»."
-  },
-  "ex-4-sangre-esposo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi: añadida la salvedad de la misma tradición; Henry: «no puede determinar» en vez de «con injusticia»; Frolov: no deja «sin solución única», propone una lectura que usa pasajes posteriores (Nm 31, 1 S, Gn 32, 34): omitida."
-  },
-  "ex-12-muerte-primogenitos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Frankel: habla de primerizos del ganado y rescate de hijos, no «primeros corderos»; quitada la referencia a Ex 13 (aún no leído)."
-  },
-  "lv-11-animales-impuros": {
-    "veredicto": "AJUSTAR",
-    "nota": "Henry: «algunas carnes» pudieron ser dañinas, no «muchas»."
-  },
-  "lv-16-azazel": {
-    "veredicto": "AJUSTAR",
-    "nota": "Angelini: la figura demoníaca es de tradición posterior; quitado «no hay acuerdo» como afirmación suya."
-  },
-  "nm-5-aguas-amargas": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi 5:28 dice «limpia» y libre de los efectos del agua, no «libre de toda sospecha»."
-  },
-  "nm-12-mujer-cusita": {
-    "veredicto": "AJUSTAR",
-    "nota": "Goldenberg: añadida su tesis propia (la queja es porque no es israelita); Ibn Ezra prefiere a Séfora."
-  },
-  "siclo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Resuelto: rango ≈ 11,5–14,3 g. Fuentes abiertas: pesa de 23 g por dos siclos del Primer Templo (Wikipedia «Shekel», cita a Laden 2020 en BAR), Easton (220 granos = 14,26 g) y Jewish Encyclopedia (11,95 g bíblico; 14,34 g del santuario). El 11,4 g no tenía fuente; eliminado."
-  },
-  "codo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Resuelto: ≈ 51 cm (rango 49,5–55,6). Easton: 20,24 pulgadas ordinario (51,4 cm) y 21,888 sagrado (55,6 cm); Jewish Encyclopedia: 495 o 525 mm. El 45 cm del palmo no tenía fuente; eliminado."
-  },
-  "obolo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Recalculado con el rango del siclo: 11,5÷20 = 0,575 g; 14,26÷20 = 0,71 g (JE: gera 0,5975 g). Antes usaba 11,4 g sin fuente."
-  },
-  "talento": {
-    "veredicto": "AJUSTAR",
-    "nota": "Pasos de Ex 38:25-26 correctos (603.550 × ½ = 301.775 siclos; − 1.775 = 300.000 = 100 talentos → 3.000 siclos; Easton también dice 3.000). Recalculado: 34,5–43 kg (Easton: 94 3/7 lb = 42,8 kg)."
-  },
-  "palmo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Recalculado como ½ codo (JE: zeret = ½ codo): 24,75–26,25 cm con codo de JE/Easton común; 27,8–28 cm con codo sagrado/talmúdico. Antes 45 cm sin fuente (22,5 cm). nino: 25 cm."
-  },
-  "pieza-plata": {
-    "veredicto": "AJUSTAR",
-    "nota": "Recalculado con el rango del siclo: 20 × 11,5 = 230 g; 20 × 14,26 = 285 g. Supuesto pieza = siclo sigue como inferencia."
-  },
-  "efa": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton: omer = ½ galón = 1/10 efa (≈ 22 L); pero su entrada «Homer» dice ≈ 8 bushels (≈ 29 L por efa); añadido al margen. Rango 19–36 L (JE 36,44) se mantiene."
-  },
-  "homer": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton «Homer»: «about 8 bushels» = 10 efas, solo cita Lv 27:16 entre paréntesis; la identificación sigue marcada como inferencia. Añadida la discrepancia de Easton."
-  },
-  "gomer": {
-    "veredicto": "OK",
-    "nota": "Ex 16:36 (1/10 de efa) y Easton («omer = half a gallon») verificados."
-  },
-  "hin": {
-    "veredicto": "OK",
-    "nota": "JE: hin 6,074 L = 1/6 de bato 36,44 L: cuadra con el cálculo (3,7–6,1 L); relación rabínica rotulada como externa."
-  },
-  "log": {
-    "veredicto": "OK",
-    "nota": "JE: 1 hin = 12 logs (0,506 L con su hin): cuadra con 0,3–0,5 L."
-  },
-  "pieza-moneda": {
-    "veredicto": "OK",
-    "nota": "Sin equivalencia: correcto, no se inventa."
-  },
-  "seah": {
-    "veredicto": "OK",
-    "nota": "Easton «Ephah»: «three seahs or ten omers» verificado; 3 seah = 1 efa."
-  },
-  "pacto": {
-    "veredicto": "AJUSTAR",
-    "nota": "Quitado Abraham del texto (primera aparición Gn 6:18, Noé)."
-  },
-  "sacerdote": {
-    "veredicto": "AJUSTAR",
-    "nota": "certeza texto -> externa: la definición general viene de Easton (verificado: Gn 14:18 y jefes de familia)."
-  },
-  "levita": {
-    "veredicto": "AJUSTAR",
-    "nota": "Quitada la frase sobre el servicio del santuario (adelanto respecto de Ex 4:14)."
-  },
-  "concubina": {
-    "veredicto": "AJUSTAR",
-    "nota": "Quitado «la ley limita algunos de sus aspectos» (adelanto respecto de Gn 22:24)."
-  },
-  "usura": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 22:25: añadida esa cita y quitado «aumento» (de Lv 25:36)."
-  },
-  "ayuntar": {
-    "veredicto": "AJUSTAR",
-    "nota": "Aclarado que «unión carnal» se deduce del contexto (el Wikcionario consultado solo da «juntar» y «añadir»)."
-  },
-  "profeta": {
-    "veredicto": "AJUSTAR",
-    "nota": "Quitados Moisés y Aarón (Ex 7:1, posterior a Gn 20:7, primera aparición); añadida Gn 20:7 «es profeta»."
-  },
-  "diezmo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Quitada «la ley de Moisés dice después…» (adelanto respecto de Gn 14:20)."
-  },
-  "levirato": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 38:8: añadida esa cita; la ley de Dt 25 queda rotulada como posterior. El resumen de Dt 25 se mantiene (es ley, no suceso)."
-  },
-  "nazareo": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "sumo-sacerdote": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "jehova": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "anatema": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "terafines": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "angel-jehova": {
-    "veredicto": "AJUSTAR",
-    "nota": "Muestra anterior: OK. 2S: «ángel de Dios» es un símil («como un ángel de Dios») en 2S 14:17, 14:20 y 19:27, y también en 1S 29:9 y Jue 13:6 («aspecto de un ángel de Dios»); se excluyen los cinco. 2S 24:16 sí es el ángel de Jehová."
-  },
-  "goel": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "pacto-sal": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "lepra": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "expiacion": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "juez": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "belial": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "urim": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "querubines": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "circuncision": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "juramento-muslo": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "dote": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "mandragoras": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "azazel": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "baal": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta. 1R: `solo` ampliado a 16:31-32, 18:18-26, 18:40, 19:18 y 22:53 (absorbe `baal-1r`)."
-  },
-  "impureza": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "celoso": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "hebreo": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "ojo-por-ojo": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "adivinacion": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "vengador-sangre": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "suertes": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "mana": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "moloc": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "primogenitura": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "jubileo": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "tejon": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "unicornio": {
-    "veredicto": "OK",
-    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
-  },
-  "coger": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "tentar": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "mancebo": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "holgar": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "heder": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "almorranas": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "apostema": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "siniestra": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "cohecho": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "hacienda": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "yacer": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "hollar": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "laganoso": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "almete": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "enjullo": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "holocausto": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
-  },
-  "empero": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "aderezar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden. 2S: se añaden «aderece» (2S 13:5), «aderecéis» (Ex 12:16), «aderezóla» (2S 12:4) y «aderezólas» (2S 13:8); todas son preparar comida."
-  },
-  "aparejar": {
-    "veredicto": "AJUSTAR",
-    "nota": "«Aparejo» (nombre) no está definido en la fuente; se ajustó el texto para decir que se deduce del contexto (Lv 15:9, Jue 19:10 «asnos aparejados»)."
-  },
-  "allegar": {
-    "veredicto": "OK",
-    "nota": "Cubre acercar, juntar y unirse (Gn 41:35, Nm 25:3)."
-  },
-  "priesa": {
-    "veredicto": "OK",
-    "nota": "«Apriesa» tiene su propia entrada (aprisa, anticuado); coincide."
-  },
-  "aqueste": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "esotro": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario solo trae «esotro = ese otro»; «estotro» no tiene entrada: la forma con «esta» se marcó como analogía."
-  },
-  "tornar": {
-    "veredicto": "OK",
-    "nota": "Cubre volver, volver a hacer y volverse en otra cosa (Ex 4:4, Ex 14:21)."
-  },
-  "tañer": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "desmayar": {
-    "veredicto": "AJUSTAR",
-    "nota": "En Gn 45:26 «su corazón se desmayó» es de impresión o aturdimiento, no de perder el ánimo: excluido el versículo."
-  },
-  "dilatar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "esforzar": {
-    "veredicto": "AJUSTAR",
-    "nota": "La fuente no dice que «esforzado» sea valiente (es solo el participio); además hay usos de «poner empeño» (Dt 12:23, Jos 23:6). Se amplió y se marcó lo deducido."
-  },
-  "confortar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "fenecer": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "menguar": {
-    "veredicto": "OK",
-    "nota": "Fuente solo intransitiva; el uso transitivo de Jos 14:8 («menguaron el corazón») es figurado y coherente."
-  },
-  "cerviz": {
-    "veredicto": "OK",
-    "nota": "Correcto. Posible mejora futura: la locución «dura cerviz» como terquedad (no en la fuente)."
-  },
-  "dadiva": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "anima": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "agorero": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "pelliza": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "pingue": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "postrimeria": {
-    "veredicto": "OK",
-    "nota": "Nota: «postrimero» no está en la entrada; es derivado de postrimería. Aceptable."
-  },
-  "sortilego": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "zurron": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "anublo": {
-    "veredicto": "OK",
-    "nota": "Wikcionario describe el hongo de los cereales; Dt 28:22 es la plaga de cultivos. Coincide."
-  },
-  "aquilon": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "austro": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "vedar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "nombradia": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "enjuto": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "greba": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "aljaba": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "albarda": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "mies": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "bagaje": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "bastimento": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "bocina": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario solo define la bocina moderna; Easton «Cornet» describe el shofar, no la palabra «bocina». Se sustituyó por Wikcionario (etimología «trompeta») y Easton «Trumpets» (de cuerno de carnero o de plata)."
-  },
-  "buril": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "abrojo": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "acaecer": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "acicalador": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "adufe": {
-    "veredicto": "OK",
-    "nota": "Easton «Tabret» (toph) = pandero; coincide con Jue 11:34 y 1S 10:5."
-  },
-  "alhaja": {
-    "veredicto": "AJUSTAR",
-    "nota": "Por contexto (Gn 31:37, Nm 3:8, Ex 22:7) son enseres y utensilios además de joyas; se matizó y se marcó como contexto."
-  },
-  "corchete": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "corcovado": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "denostar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "dintel": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "estambre": {
-    "veredicto": "AJUSTAR",
-    "nota": "«Urdimbre» no está en Wikcionario (hebras largas de lana); se dedujo de que Lv 13 lo contrapone a «trama». Se marcó como contexto."
-  },
-  "frontal": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton dice que el mandato se tomó al pie de la letra (tefilín, tiras de pergamino) tras Babilonia; el texto anterior («cintas o estuches») no se sostenía. Reescrito."
-  },
-  "guarecer": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "guedeja": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "horro": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "lesna": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton no habla de cuero; solo de la oreja del siervo. Se quitó «perforar cuero» y no se cita Dt 15:17 (posterior)."
-  },
-  "lumbrera": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "majano": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "majar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "manteca": {
-    "veredicto": "OK",
-    "nota": "Wikcionario da «mantequilla» como acepción regional; el sentido lácteo se sostiene por contexto (Gn 18:8, Dt 32:14), ya señalado en el texto."
-  },
-  "menester": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "mortecina": {
-    "veredicto": "AJUSTAR",
-    "nota": "La entrada «mortecina» solo remite a «mortecino»; el sentido (animal muerto naturalmente) está en «mortecino», acepción 3. Se cambió la fuente."
-  },
-  "odre": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton no dice «piel de cabra»; se quitó. Sí cita vino, leche (Jue 4:19) y agua (Gn 21:14)."
-  },
-  "pertrecho": {
-    "veredicto": "AJUSTAR",
-    "nota": "La entrada «pertrecho» era la forma verbal de «pertrechar»; la definición de armas y equipo está en «pertrechos». Se cambió la fuente."
-  },
-  "pollino": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "sobrestante": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario solo cubre el encargado de obra (materiales, jornales); «capataz de segadores» (Rt 2:5) se marcó como sentido por contexto."
-  },
-  "terrado": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "tropezadero": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "vitualla": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "yermo": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "zarcillo": {
-    "veredicto": "OK",
-    "nota": "Pendiente (acepción 2) y Easton «Earrings»: coincide en Ex 32:2, Jue 8:24."
-  },
-  "arrebozar": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario «arrebozar» dice solo «rebozar / ocultar con ingenio»; el sentido de cubrir el rostro está en «rebozar» acepción 1. Se añadió esa fuente."
-  },
-  "atalayar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "henchir": {
-    "veredicto": "OK",
-    "nota": "Hay usos de «henchir las manos» (Ex 29:9) con sentido de consagrar; el significado «llenar» sigue valiendo. Nm 5:21 ya está excluido."
-  },
-  "aventar": {
-    "veredicto": "AJUSTAR",
-    "nota": "La fuente habla de bieldo, no de pala; se ajustó."
-  },
-  "heredad": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario: terreno cultivado de un dueño, hacienda y bienes raíces, y «herencia»; se reescribió para ajustarse (Gn 17:8 «heredad perpetua», Gn 23:9 finca)."
-  },
-  "guisar": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "asechanza": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "apercibir": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "atavio": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "canteria": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "sembradura": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "bdelio": {
-    "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
-  },
-  "efod": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 25:7 (lista de materiales): se quitó el detalle de colores e hilos de Ex 28 y se dejó lo que dice Easton (lino, dos piezas, distintivo del oficio, el pectoral se fija a él). Se excluyen Nm 34:23 (Ephod es un nombre de persona) y Jue 8:27, 17:5, 18:14-20 (efod hecho como objeto de culto, otro uso que Easton no trata)."
-  },
-  "racional": {
-    "veredicto": "AJUSTAR",
-    "nota": "Se quitó «se ponían el Urim y Thummim» (Ex 28:30, posterior a la primera aparición en Ex 25:7 y que Easton no menciona en la entrada). Easton da unas diez pulgadas por lado y doce piedras, una por tribu."
-  },
-  "propiciatorio": {
-    "veredicto": "OK",
-    "nota": "Easton confirma que es la tapa del arca; `solo` cubre los versículos de la tapa (las demás «cubiertas» son de la tienda y quedan fuera: verificado). La descripción queda dentro de Ex 25:17-22."
-  },
-  "arca-testimonio": {
-    "veredicto": "OK",
-    "nota": "Citas literales; la descripción queda dentro de lo que dicen Ex 25:16-22. Certeza texto correcta (sin fuente externa)."
-  },
-  "ciudades-refugio": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton solo lista las seis ciudades y no explica su propósito; la explicación sale de Nm 35 (texto), así que se quitó Easton de las fuentes para no atribuirle lo que no dice."
-  },
-  "ano-sabatico": {
-    "veredicto": "OK",
-    "nota": "Easton confirma descanso de la tierra y que lo que brota es para pobres, extranjeros y animales. Ex 23:11 es anterior a Lv 25."
-  },
-  "remision": {
-    "veredicto": "AJUSTAR",
-    "nota": "Se quitó la finalidad («proteger a los endeudados de quedar atrapados») porque ni el texto ni Easton la dicen; Easton confirma el perdón de deudas al séptimo año (salvo las de extranjeros)."
-  },
-  "ofrenda-mecida": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 29:24: quien mece allí es Moisés, no «el sacerdote» (eso se dice después). Texto reformulado sin atribuir el gesto al sacerdote."
-  },
-  "ofrenda-elevada": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Lv 7:14: la explicación contaba Nm 18:19 (porción permanente de sacerdotes y familias), posterior. Se limita a Lv 7:14 y se quitó la afirmación sin fuente sobre «otras versiones»."
-  },
-  "primicias": {
-    "veredicto": "AJUSTAR",
-    "nota": "Se quitó «o lo primero que produce un rebaño» (Easton habla de frutos de la tierra, comparados con los primogénitos). Easton confirma el sentido de reconocimiento de que la cosecha viene de Dios."
-  },
-  "gavilla-omer": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton habla de «una gavilla de grano nuevo» pero no dice cebada; se quitó «de cebada» en nino. Identificación como inferida, correcta."
-  },
-  "pascua": {
-    "veredicto": "OK",
-    "nota": "Easton confirma: fiesta mayor que recuerda que el Señor perdonó las casas israelitas; contenido dentro de Ex 12 (primer pasaje con la palabra); citas literales."
-  },
-  "azimos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 19:3 (Lot): la explicación hablaba de «las leyes», «ofrendas» y «fiesta» (posteriores) y de «plano», que el texto no dice. Se reduce a lo que dicen las palabras, con cita Gn 19:3; certeza inferido por la parte «más rápido», señalada como inferencia."
-  },
-  "fiesta-azimos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton dice que la Pascua se llama también fiesta de los ázimos y que no se podía comer ni guardar leudado; se reformuló sin «la tratan como una sola celebración» (exagerado)."
-  },
-  "fiesta-semanas": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 34:22: se quitó el conteo desde la gavilla y la ofrenda nueva (Lv 23, posterior). Easton confirma el nombre Pentecostés («quincuagésimo»; el nombre solo aparece en el NT) y que marca el fin de la cosecha de grano."
-  },
-  "dia-expiaciones": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Scapegoat) no habla de ayuno ni del sumo sacerdote: se quitó «y ayuna» y se atribuye al «sacerdote». Lv 16 es anterior a 23:27, por eso se puede remitir a él."
-  },
-  "ofrenda-culpa": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton: asham = «deuda», siempre un carnero. En Lv 14 aparece un cordero, así que se dice «normalmente» y se atribuye a Easton."
-  },
-  "tabernaculo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 25:9: la descripción (lugar santo y santísimo, atrio con altar, se desmonta y traslada) es de Ex 26-27 y Nm, posterior. Se limita a lo de Ex 25:8-9. Se excluye Ex 33:7-9 (la tienda de Moisés fuera del campamento, otra cosa)."
-  },
-  "velo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Ex 34:33-35 es el velo en el rostro de Moisés (otro sentido): se excluye. El resto es el velo del santuario; la descripción cabe en Ex 26:31-33. 1R 20:38 y 20:41 («velo sobre los ojos», disfraz del profeta): exclusión correcta; no hay otro «velo» en 1 Reyes."
-  },
-  "pan-proposicion": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 25:30: las doce hogazas, el cambio semanal y quién las come son de Lv 24 (posterior). Se limita a Ex 25:30 y a lo que Easton dice sobre el nombre."
-  },
-  "candelero": {
-    "veredicto": "OK",
-    "nota": "Easton confirma candelero de oro fino en el santuario; descripción dentro de Ex 25:31-40."
-  },
-  "incienso": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 25:6 (lista de materiales): se quitó lo de Ex 30 (altar, cada mañana). Easton: mezcla aromática que se quema en el culto; símbolo de la oración."
-  },
-  "fuente-metal": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton habla de cobre/bronce de los espejos (Ex 38:8, posterior); se dice solo «de metal», como el texto."
-  },
-  "libacion": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 35:14: la explicación contaba las leyes de Ex 29 y Nm 28 (cantidades fijas, vino). Se limita a lo de Gn 35:14."
-  },
-  "sabado": {
-    "veredicto": "OK",
-    "nota": "Easton: origen en la creación, vínculo con el maná y Sinaí. Primera aparición Ex 16:22; el vínculo con Gn 2:2-3 es anterior."
-  },
-  "vaca-bermeja": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Nm 19:2 (pasaje Nm 19:1-10): el uso contra el contacto con un muerto es de Nm 19:11 en adelante. Se limita a lo del pasaje."
-  },
-  "aguas-amargas": {
-    "veredicto": "OK",
-    "nota": "Citas literales, contenido dentro de Nm 5:11-31; «lo deja a la decisión de Dios» se apoya en las fórmulas de maldición del texto; nino neutro."
-  },
-  "voto": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 28:20: «la ley manda cumplirlo» es Nm 30 (posterior). Se pasa a Jacob y se cambia la cita a Gn 28:20."
-  },
-  "ungir": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 31:13; se acota a la piedra de Jacob y a lo que dice Easton. Se excluyen Dt 28:40 y Rut 3:3 (untarse aceite como cuidado personal, no consagración). 2S: se añaden «ungieron» (2S 2:4, 5:3), «ungí» (2S 12:7) y «ungídolo» (Nm 7:1). «ungióse» (2S 12:20, aceite como aseo tras el duelo) no se añade."
-  },
-  "todopoderoso": {
-    "veredicto": "OK",
-    "nota": "Citas literales; Gn 17:1 es la primera aparición y el texto no avanza nada."
-  },
-  "dios-alto": {
-    "veredicto": "OK",
-    "nota": "Citas literales; contenido ajustado a Gn 14:18-22."
-  },
-  "prenda": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 38:17: la explicación contaba Ex 22:26 y Dt 24 (ley sobre el vestido, posterior). Se reescribe con Gn 38:17. Se excluyen Nm 31:20 (prenda de vestir) y 1S 17:18 (señales, otro sentido)."
-  },
-  "espigar": {
-    "veredicto": "AJUSTAR",
-    "nota": "Se excluye Jue 20:45 («rebuscaron» = persiguieron y mataron a rezagados, sentido figurado)."
-  },
-  "zapato": {
-    "veredicto": "OK",
-    "nota": "Cita literal y única aparición; el propio versículo explica el gesto."
-  },
-  "puerta-ciudad": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton confirma solo que en las puertas se celebraban juicios y se reunía la gente; no dice nada de comercio. Se reformula con lo que sí dice y con los casos de Gn 23 y 34."
-  },
-  "ancianos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 3:16: «Moisés los reúne» y «funciones de gobierno y justicia local» eran posteriores. Se limita a lo que Easton dice (autoridad, representan al pueblo, magistrados)."
-  },
-  "hisopo": {
-    "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Ex 12:22 (untar sangre): se quitó «ritos de purificación» (Lv 14, Nm 19, posteriores). Easton no zanja la identidad: recoge mejorana y alcaparra."
-  },
-  "astaroth": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton: diosa lunar fenicia, principio femenino de la naturaleza, emparejada con Baal. «Diosa de la fertilidad» no está en Easton; se corrige. 1R: forma «Astharoth» y `solo` a 11:5 y 11:33 (absorbe `astoret`)."
-  },
-  "dagon": {
-    "veredicto": "OK",
-    "nota": "Easton: nombre ligado a «pez», dios nacional filisteo, cuerpo de pez con cabeza y manos humanas, templos en Gaza y Asdod. Jos 15:41 y 19:27 (Bet-dagón, topónimo) ya estaban excluidos."
-  },
-  "asera": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton: asera = imagen o poste de madera que representaba a Astoret, a menudo en una arboleda; se quitó «junto a los altares» (Dt 16:21 y Jue 6, posteriores a Ex 34:13). La lista `solo` cubre los usos de «bosque» como asera. 1R: `solo` ampliado a 14:15, 14:23, 15:13, 16:33 y 18:19 (absorbe `asera-1r`); texto neutro («se talan o se hacen»)."
-  },
-  "duelo": {
-    "veredicto": "OK",
-    "nota": "Easton: tela áspera de pelo de cabra; señal de duelo y de arrepentimiento. Solo 3 apariciones, todas de duelo."
-  },
-  "desjarretar": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Hough) abierto: «captured horses… render them useless»; se quitó «en guerra» (no lo dice) y del nino el detalle de los tendones. Primera aparición Jos 11:6, sin adelantos."
-  },
-  "endecha": {
-    "veredicto": "OK",
-    "nota": "Wikcionario (endecha: canción triste y lamentable; composición de asunto luctuoso) abierto. «Endechar» por un muerto es lectura del contexto (Gn 50:10, 2S 1:17). Formas cubren las 4 apariciones."
-  },
-  "ajorca": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario OK. Easton (Bracelet) lista 2S 1:10 entre «anklets» y dice que los brazaletes los usaban hombres y mujeres; no dice que la palabra de este versículo se traduzca «brazalete o pulsera». Reescrito."
-  },
-  "regaton": {
-    "veredicto": "OK",
-    "nota": "Wikcionario (regatón: protección de metal que cubre la parte inferior de lanzas y bastones) abierto. nino sin violencia."
-  },
-  "feretro": {
-    "veredicto": "OK",
-    "nota": "Wikcionario (féretro: caja o andas en que se lleva a enterrar a los difuntos) y Easton (Bier: armazón en que se llevaba a los muertos) abiertos."
-  },
-  "villano": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario abierto (vecino de villa, vs. noble; ruin, indigno). Se quitó «castellano antiguo» y «sin derechos» (no están en la fuente); queda «ruin o de poco valor» como inferido."
-  },
-  "alcornoque": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Oak) abierto: seis palabras hebreas traducidas «roble»; 2S 18:9 con margen RSV «terebinth». La primera aparición es Jos 24:26: se quitó la cita de 2S 18:9 (adelanto) y «frondoso» (no está en la fuente). Las apariciones como lugar («valle del Alcornoque», 1S 17) las resuelve la app."
-  },
-  "atalaya": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario abierto (torre de vigilancia; posición elevada de la que se vigila). Primera aparición 2S 13:34: la cita bíblica pasó de 2S 18:25 (posterior) a 13:34."
-  },
-  "escudero": {
-    "veredicto": "OK",
-    "nota": "Easton (Armour-bearer) abierto: oficial escogido por su valentía, lleva armas y armadura y se queda al lado en el peligro. Primera aparición Jue 9:54."
-  },
-  "majada": {
-    "veredicto": "OK",
-    "nota": "Wikcionario (majada: lugar donde se recogen por la noche el ganado y los pastores) abierto. Cubre Nm 32 a 2S 7:8."
-  },
-  "pleito": {
-    "veredicto": "OK",
-    "nota": "Wikcionario (pleito: enfrentamiento ante autoridades entre partes en disputa) abierto."
-  },
-  "canciller": {
-    "veredicto": "OK",
-    "nota": "Easton (Recorder) abierto: mazkir, «mentioner/rememberancer», canciller o visir; presenta quejas y peticiones, redacta papeles, cuida los archivos. Solo 2S 8:16 y 20:24."
-  },
-  "ayuno": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Fast) abierto: ayunos públicos, locales y privados por pecado o para pedir el favor de Dios. Se quitó «duelo, arrepentimiento y súplica» (de 1S 7:6, 1S 31:13, 2S 12, posteriores a la primera aparición Jue 20:26); se ancla en Jue 20:26 con cita."
-  },
-  "casa-cedro": {
-    "veredicto": "OK",
-    "nota": "Easton (Cedar) abierto: apreciado por altura, olor y durabilidad; tablas, columnas y techos. `solo` correcto: sin apariciones anteriores de esas formas."
-  },
-  "ceretheos": {
-    "veredicto": "OK",
-    "nota": "Smith (Cherethites: «executioners», posibles mercenarios filisteos) y Easton (Pelethites: «runners/couriers»; solo en tiempo de David; quizá tribus filisteas) abiertos. Duda: 1S 30:14 «Cerethi» (el pueblo del sur) no se explica; es lugar, no el cuerpo de David."
-  },
-  "mesa-rey": {
-    "veredicto": "AJUSTAR",
-    "nota": "Texto 2S 9:7-13 y 19:28 revisado. «Aquí el propio texto» pasó a «En 2S 9:11» (en 19:28 no era «aquí»). `solo` deja fuera 1S 20:29 («la mesa del rey» de Saúl, otra cosa): correcto."
-  },
-  "instrumentos": {
-    "veredicto": "OK",
-    "nota": "Easton abierto en Harp (kinnor, instrumento nacional; alegría y alabanza), Psaltery (lira o arpa de doce cuerdas) y Cymbals (dos piezas convexas de bronce; cita 2S 6:5). Primera aparición Gn 4:21 (arpa), sin adelantos en el texto."
-  },
-  "tierra-cabeza": {
-    "veredicto": "OK",
-    "nota": "Easton (Ashes) abierto: cubrirse la cabeza de ceniza, señal de aborrecimiento de sí mismo y humillación (cita 2S 13:19). Lo de la tierra va marcado como inferencia. Primera aparición 1S 4:12."
-  },
-  "descalzo-luto": {
-    "veredicto": "OK",
-    "nota": "Easton (Barefoot) abierto: gran angustia o calamidad (cita 2S 15:30). La cabeza cubierta se declara no cubierta por Easton (inferido)."
-  },
-  "seol": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Hell, Sheol) abiertos: sheol «invisible world of departed souls», 31 veces «grave» y 31 «hell»; morada de malos y buenos. Se cambió «no significa el lugar de castigo» (no lo dice Easton) por lo que Easton sí dice."
-  },
-  "cuerno-salud": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Horn) abierto: cuerno = fuerza, poder; «horn of salvation» = salvación de fuerza. Easton lo dice de Cristo (Lc 1:69, NT): se omite la referencia (adelanto) y la aplicación a Dios en 2S 22:3 va como inferencia."
-  },
-  "lampara-israel": {
-    "veredicto": "OK",
-    "nota": "Easton (Lamp) abierto: lámpara como imagen de vida, bienestar o guía, y cita 2S 21:17. La identificación con David va como inferido."
-  },
-  "pacificos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Peace offerings) abierto: tres clases (acción de gracias, voto, voluntarios). `solo` dejaba sin explicar 14 apariciones anteriores (Ex 20:24 en adelante): ahora se aplica a todas menos Gn 34:21 («pacíficos con nosotros», adjetivo). Se quitó «se ofrecían junto con los holocaustos» como dato de Easton: queda como observación con cita Ex 20:24."
-  },
-  "era": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Agriculture) abierto: las gavillas se extendían en la era y los bueyes las pisaban. `solo` dejaba sin explicar Rut 3, Jue 6:37, Nm 15/18 y Gn 50:10-11; la explicación es general y no adelanta nada: se quitó `solo`."
-  },
-  "barba-humillacion": {
-    "veredicto": "OK",
-    "nota": "Easton (Beard) abierto: descuidarla indicaba dolor; cortársela a los enviados de David (2S 10:4), señal de afrenta. nino sin violencia."
-  },
-  "perro-muerto": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Dog) abierto: perro animal impuro; «perro», «cabeza de perro», «perro muerto» como reproche o humildad (cita 1S 24:14 inglés = 24:15, 2S 3:8, 9:8, 16:9). `solo` dejaba fuera 1S 24:15, primera aparición y mismo sentido: se quitó."
-  },
-  "prepucios": {
-    "veredicto": "AJUSTAR",
-    "nota": "Texto 1S 18:25, 18:27, 2S 3:14 y Gn 17:11 revisado. La primera aparición (sin Jos 5:3, nombre de lugar) es 1S 18:25: la explicación contaba 2S 3:14 (posterior) y `solo` la dejaba fuera. Se reescribe con 1S 18:25 y se excluye Jos 5:3. 1S 18:25-27 está plegado para niño. Duda leve: nino habla de «la piel que se cortaba en la circuncisión»."
-  },
-  "gigante": {
-    "veredicto": "OK",
-    "nota": "Easton (Rephaim, Giants) abiertos: «Rapha» en el margen de 2S 21:16, 18; raza de «hombres altos» refugiada entre los filisteos en tiempo de David; origen desconocido. `solo` deja sin esta explicación Dt 9:2 y 1S 17:51 («su gigante»), que no son de ese caso: aceptado."
-  },
-  "2s-6-uza-arca": {
-    "veredicto": "AJUSTAR",
-    "nota": "Radak (hebreo, Sefaria) cotejado: el resumen mezclaba 6:6 y 6:7 y decía «Coat» para lo de Uza (Radak dice Leví) y «como los filisteos» como razón de David (Radak da otra: no había tabernáculo y el arca vino en carro). Reescrito. Rashi 6:7, Keil y Delitzsch, Matthew Henry abiertos; de MH se quitó «falta parece pequeña» (dice que el castigo parece muy grande). nino coherente (6:7 es medio, no se pliega). Sin adelantos."
-  },
-  "2s-11-betsabe-urias": {
-    "veredicto": "OK",
-    "nota": "Radak 11:4 (hebreo), Keil y Delitzsch y Matthew Henry abiertos: coinciden con el resumen. nino null correcto (11:2-5 alto). Sin adelantos."
-  },
-  "2s-12-nino-muere": {
-    "veredicto": "OK",
-    "nota": "Radak 12:14 (hebreo; Targum de Jonatán), Keil y Delitzsch (con Gerlach) y Matthew Henry abiertos: coinciden. nino sin sexo ni violencia; 12:13-23 sin marca. Sin adelantos (no cita a Salomón)."
-  },
-  "2s-13-tamar-amnon": {
-    "veredicto": "OK",
-    "nota": "Rashi 13:13 (Metsudah), Keil y Delitzsch y Matthew Henry abiertos: coinciden. nino null correcto (13:1-22 alto)."
-  },
-  "2s-21-gabaonitas": {
-    "veredicto": "AJUSTAR",
-    "nota": "Radak 21:1 (hebreo; Saadia Gaón), Rashi 21:1, Matthew Henry (Dt 21:23, caso extraordinario) abiertos: coinciden. Keil y Delitzsch citan Nm 35:31 y no 35:33: corregido. nino null correcto (21:6-10 alto)."
-  },
-  "2s-21-elhanan-goliat": {
-    "veredicto": "OK",
-    "nota": "Radak 21:19 (hebreo), Rashi 21:19, Keil y Delitzsch (copista; rechazan dos Goliat; Bertheau y Böttcher lo contrario) y Wikipedia (en, «Goliath») abiertos: coinciden. Cita 1S 17:50 sin contradecir datos/LEEME (Goliath_1, sin unir ni armonizar). No cita 1 Cr ni 1 Re. Repone el tema rechazado `1s-17-quien-mato-a-goliat`, que se deja como está. nino coherente (21:17-21 medio)."
-  },
-  "2s-24-censo": {
-    "veredicto": "OK",
-    "nota": "Radak 24:1 (hebreo; Targum), Rashi 24:1, Keil y Delitzsch (remite a 1 S 26:19) y Matthew Henry abiertos: coinciden. Los comentarios citan 1 Cr (Satán): el texto no. nino coherente (24:15 medio)."
-  },
-  "oraculo-1r": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Oracle) abierto: lugar santísimo del templo, salvo 2S 16:23; cita 1R 6:5. La primera aparición es 6:5 y la explicación daba medidas (6:20) y el arca (8:6), de pasajes posteriores: se reescribe con Easton y 6:5, certeza externa; `solo` suma 6:5."
-  },
-  "portico-1r": {
-    "veredicto": "AJUSTAR",
-    "nota": "La definición («construcción abierta, con techo») no tenía fuente. Wikcionario abierto: sitio cubierto y con columnas delante de templos u otros edificios suntuosos. Certeza texto -> externa; se quitó la cita de 7:7 (pasaje posterior)."
-  },
-  "capitel-1r": {
-    "veredicto": "OK",
-    "nota": "Easton (Chapiter): «cabeza ornamental o capitel de un pilar», Cothereth en 1R 7:16. Versículos 7:16-20 cotejados con el texto. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
-  },
-  "jachin-boaz": {
-    "veredicto": "OK",
-    "nota": "Easton (Boaz): nombre de una de las dos columnas de bronce (la otra Jachin), motivo desconocido, 1R 7:21; distingue al Boaz de Rut. 7:21 cotejado. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
-  },
-  "mar-fundicion": {
-    "veredicto": "OK",
-    "nota": "7:23-26 cotejado (diez codos, cinco, treinta, labio de cáliz, dos mil batos, doce bueyes). Easton (Laver): mar de fundición y diez lavatorios en 1R 7:23-39. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
-  },
-  "basas-fuentes": {
-    "veredicto": "OK",
-    "nota": "7:27, 7:30, 7:33 y 7:38 cotejados. Easton (Laver): diez lavatorios en el templo, descritos en 1R 7:23-39. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
-  },
-  "quiciales": {
-    "veredicto": "OK",
-    "nota": "Wikcionario abierto (madero que con pernios y bisagras sostiene puertas; muchas veces = quicio). 7:50 cotejado. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
-  },
-  "coro": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Cor) abierto: = homer, 10 efas o 10 batos; rabinos 45 galones, Josefo ~87. Jewish Encyclopedia abierta: 364,4 L. Pasos recalculados (190/220/360; 170 y 329 L; 6.600 L). `solo` dejaba fuera 5:11 («veinte mil coros de trigo»): se añade con su cálculo (4.400.000 L). nino decía «cientos de litros»: son miles."
-  },
-  "bato": {
-    "veredicto": "OK",
-    "nota": "Easton (Bath): 8 galones y 3 cuartos = 8,75 × 3,785 = 33 L; Easton (Ephah): efa = bato. Jewish Encyclopedia: 36,44 L. Pasos recalculados (44.000, 38.000, 72.880 L; 880, 760, 1.457 L); coherente con el rango ya auditado del efa. 7:26 y 7:38 cotejados."
-  },
-  "sato": {
-    "veredicto": "OK",
-    "nota": "Easton (Ephah): efa = 3 seahs; Easton (Seah): «un poco más de un peck». Jewish Encyclopedia: 12,148 L. Pasos recalculados (7,3 / 6,3 / 12 L; 14,7 L; 12,6–24,3 L). La identificación sato = seah va como inferencia y no se calcula el área. 18:32 cotejado."
-  },
-  "libra-maneh": {
-    "veredicto": "OK",
-    "nota": "Easton (Maneh y Pound): 100 siclos comunes, ~2½ o 3 libras (1,13–1,36 kg). Jewish Encyclopedia: maneh de 25 siclos = 341,077 g y otro de 40. Pasos recalculados con el siclo 11,5–14,3 g (1,15–1,43 kg; 3 libras 1,0–4,3 kg). Se presentan las dos cifras sin elegir."
-  },
-  "paveses": {
-    "veredicto": "AJUSTAR",
-    "nota": "Wikcionario (pavés) abierto: escudo oblongo que cubre casi todo el cuerpo. 10:16-17 cotejado. Se quitó «más pequeños» a los escudos de 10:17: el texto solo da el oro (3 libras), no el tamaño."
-  },
-  "altos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (High place) abierto: eminencia, natural o artificial, con sacrificios u ofrendas; Dt 12:2-3 y 12:11-14. Los «perfumes» no son de Easton sino de 3:3 y 22:44: se atribuye al texto. Ocurrencias revisadas (3:2-4, 11:7, 12:31-32, 13:2, 13:32-33, 14:23, 15:14, 22:44)."
-  },
-  "tributo-1r": {
-    "veredicto": "OK",
-    "nota": "Easton (Tribute): impuesto que el rey pone a sus súbditos. 5:13-14, 9:15, 9:21 y 12:18 cotejados. Queda fuera 4:6 (Adoniram «sobre el tributo») a propósito: explicarlo allí adelantaría 5:13-14."
-  },
-  "caballeria": {
-    "veredicto": "OK",
-    "nota": "Easton (Horse y Chariot): sin caballos de guerra por Dt 17:16; David formó caballería (2S 8:4); Salomón los multiplicó (1R 4:26, 10:26). Ocurrencias 4:26, 9:19, 9:22, 10:26 y 20:21 cotejadas. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
-  },
-  "marfil": {
-    "veredicto": "OK",
-    "nota": "Easton (Ivory): colmillos de elefante, adorno antiguo, trono de Salomón (1R 10:18) y naves de Tarsis desde las Indias (10:22). 10:18, 10:22 y 22:39 cotejados."
-  },
-  "simios-pavos": {
-    "veredicto": "OK",
-    "nota": "Easton (Ape y Peacock): koph (mono, nombre indio) y tuk (pavo real, ave de la India), 1R 10:22. 10:22 cotejado."
-  },
-  "cabrahigos": {
-    "veredicto": "OK",
-    "nota": "Easton (Sycamore): árbol parecido a la higuera, hallado sobre todo en las tierras bajas, cita 1R 10:27. 10:27 cotejado. Que el «cabrahigo» de la RV1909 sea el sicómoro es lo que dice Easton al citar ese versículo."
-  },
-  "acemilas": {
-    "veredicto": "OK",
-    "nota": "Wikcionario (acémila: mula, animal de carga, cruce de caballo y asno) y Easton (Mule, cita 1R 10:25). 10:25 y 18:5 cotejados."
-  },
-  "maestresalas": {
-    "veredicto": "OK",
-    "nota": "Wikcionario abierto (criado principal que asistía a la mesa de un señor y presentaba y distribuía la comida). 10:5 cotejado."
-  },
-  "chemos": {
-    "veredicto": "OK",
-    "nota": "Easton (Chemosh): dios de los moabitas, su culto introducido en Jerusalén por Salomón (1R 11:7). 11:7 y 11:33 cotejados."
-  },
-  "milcom": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Moloch): Milcom es otro nombre de Moloc (cita 1R 11:5 y 11:33). Keil y Delitzsch (11:5) lo distinguen del Moloc con artículo y dicen que no se puede precisar la diferencia: se añade para no decidir por el lector, con su fuente."
-  },
-  "becerros-jeroboam": {
-    "veredicto": "OK",
-    "nota": "Easton (Calf): Jeroboam, dos becerros en Dan y Betel para impedir que las diez tribus fueran a Jerusalén. 12:27-32 y Ex 32:4 cotejados."
-  },
-  "varon-dios": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Prophet): portavoz de Dios, «la boca por la que Dios habla». Se quitó la cita de 17:24 (primera aparición 13:1; adelanto) y el nino pasa a «Parece ser…» porque es inferencia."
-  },
-  "enebro-retama": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Juniper): rothem/retem, retama española, el arbusto más grande de esos desiertos, sombra, leña; cita 1R 19:4-5. Se quitó «no el enebro que conocemos hoy» (no lo dice Easton)."
-  },
-  "manto-elias": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Mantle): 'addereth, gran prenda exterior, el de Elías probablemente de piel de oveja. Se quitó «se lleva sobre los hombros» (no lo dice Easton). 19:13 y 19:19-20 cotejados."
-  },
-  "gananes": {
-    "veredicto": "OK",
-    "nota": "Wikcionario abierto (gañán: peón empleado en tareas de labranza). 19:19 cotejado."
-  },
-  "silbo": {
-    "veredicto": "OK",
-    "nota": "Wikcionario abierto (sonido agudo que hace el aire o que se hace con la boca). 19:12 cotejado."
-  },
-  "lancetas": {
-    "veredicto": "OK",
-    "nota": "Wikcionario abierto (lanceta: instrumento de hoja de acero muy afilada para sangrar o abrir tumores; sajar: hacer cortaduras en la carne). 18:28 cotejado; el versículo está plegado para niño."
-  },
-  "blasfemar": {
-    "veredicto": "OK",
-    "nota": "Easton (Blasphemy): hablar mal de Dios y, en general, calumnia o insulto, cita 1R 21:10. Lv 24:16 y 21:10-13 cotejados. nino sin violencia."
-  },
-  "lampara-david": {
-    "veredicto": "AJUSTAR",
-    "nota": "Easton (Lamp): metáfora de vida, bienestar o guía (2S 21:17). 11:36 y 15:4 cotejados. El nino afirmaba la lectura como hecho: pasa a «Parece ser…» (es inferencia)."
-  },
-  "1r-6-480-anos": {
-    "veredicto": "AJUSTAR",
-    "nota": "Keil y Delitzsch 6:1 (480 frente a 440 de la LXX; Böttcher/Bertheau 12×40; Thenius y 484; Preuss) y Matthew Henry (40+17+299+40+40+40+4 = 480) abiertos y cotejados. Abarbanel (hebreo, Sefaria 6:1): él se pregunta por qué no cuenta desde la creación; se corrigió «observa». nino: «número redondo» pasa a «doce generaciones de cuarenta años» (lo que dice Böttcher). El pasaje no lleva cálculo propio: las sumas de `calculos_1r` (533 TM, 513 LXX frente a 480/440) no se usan ni se contradicen."
-  },
-  "1r-3-dos-mujeres": {
-    "veredicto": "AJUSTAR",
-    "nota": "Matthew Henry y Keil y Delitzsch 3:16-28 abiertos: coinciden. Rashi 3:27 (Sefaria, ed. Metsudah): voz divina; coincide. Radak 3:27 (hebreo): no dice «la primera mujer», sino la que se compadece: corregido. nino a null: contenido.js pliega 3:16-27 para niño, así que la app no mostraría nada."
-  },
-  "1r-11-mujeres-salomon": {
-    "veredicto": "AJUSTAR",
-    "nota": "Radak 11:1 (hebreo): matiz añadido (la hija de Faraón no desvió su corazón hasta la vejez). Ralbag 11:4 (hebreo), Rashi 11:7 (Metsudah) y Keil y Delitzsch 11:1-8 (números redondos, nota sobre error de letras numerales, no sacrificó él) cotejados. Dt 17:17 anterior. nino coherente (11:1-8 no se pliega)."
-  },
-  "1r-13-profeta-leon": {
-    "veredicto": "AJUSTAR",
-    "nota": "Radak 13:18 y 13:28 (hebreo), Keil y Delitzsch 13:18-26 y Matthew Henry 13 cotejados; sin adelantos. nino a null: contenido.js pliega 13:24-28 (león) para niño y el rango 13:7-32 los incluye."
-  },
-  "1r-18-profetas-baal": {
-    "veredicto": "OK",
-    "nota": "Radak 18:40 (hebreo) y Keil y Delitzsch 18:40 (Dt 17:2-3 y 13:13; mensajero extraordinario; no se deduce un derecho a perseguir) cotejados. nino null correcto: 18:40 está plegado (alto)."
-  },
-  "1r-19-silbo-apacible": {
-    "veredicto": "OK",
-    "nota": "Rashi 19:11-12 (Targum Yonatán), Radak 19:11-13 (hebreo; la recompensa por el Carmelo es de 19:13) y Keil y Delitzsch 19:11-12 (segundo Moisés, Herder) cotejados. nino coherente: 19:11-13 no está plegado."
-  },
-  "1r-21-nabot": {
-    "veredicto": "AJUSTAR",
-    "nota": "Keil y Delitzsch 21:3 y 21:11, Radak 21:10 (hebreo) y Rashi 21:15 (Metsudah) cotejados. nino a null: contenido.js pliega 21:10-13 para niño y el rango 21:1-16 los incluye."
-  },
-  "1r-22-espiritu-mentira": {
-    "veredicto": "AJUSTAR",
-    "nota": "Rashi 22:19 y 22:21 (Sanedrín 89a), Radak 22:20 (hebreo), Keil y Delitzsch 22:19-23 y Matthew Henry cotejados. Radak: se precisó lo que dice del Rambam (solo la sangre de Nabot pesaba contra Acab). nino coherente (22:19-23 no se pliega)."
-  }
+ "dt-21-hijo-rebelde": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "dt-34-muerte-moises": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "ex-7-endurecimiento-faraon": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "ex-21-ojo-por-ojo": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "jos-7-acan-y-su-familia": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "jue-4-jael": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "jue-11-voto-jefte": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "jue-21-mujeres-de-silo": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "nm-31-guerra-madian": {
+  "veredicto": "OK",
+  "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+ },
+ "1s-17-quien-mato-a-goliat": {
+  "veredicto": "RECHAZAR",
+  "nota": "Todo el contenido (Elhanán, Lahmi, 2 S 21, 1 Cr 20) cuenta sucesos posteriores a 1 S 17: rompe la lectura en orden. Reponer cuando se cargue 2 Samuel. Además, en Wikipedia «Lahmi fue un apodo» estaba invertido (es Goliat el apodo)."
+ },
+ "1s-2-su-ungido": {
+  "veredicto": "AJUSTAR",
+  "nota": "Radak: quitado «no ve un Mesías de los últimos tiempos» (no está en el comentario) y la mención a Samuel ungiendo al rey (adelanto de 1 S 10). K-D y Henry: quitadas David/Hijo de David/Cristo (adelanto)."
+ },
+ "1s-15-anatema-amalec": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikipedia: Crouch dice «componente excepcional», no «irregular»; Klapper es solo fuente de una nota; reescrito."
+ },
+ "1s-15-dios-se-arrepiente": {
+  "veredicto": "AJUSTAR",
+  "nota": "K-D: quitado lo no comprobado (oración de Samuel, v. 35); Henry: citas exactas («dispensación», «Fortaleza de Israel»); Radak: quitada la promesa a David (2 S 7, adelanto)."
+ },
+ "1s-16-espiritu-malo": {
+  "veredicto": "AJUSTAR",
+  "nota": "K-D: «agitando sentimientos y pensamientos» en vez de «locura»; Henry: no reprocha a los siervos, opina que habría sido mejor aconsejar paz con Dios; Wikipedia: Stein habla de manía/trastorno del ánimo."
+ },
+ "1s-18-david-y-jonatan": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikipedia: Nissinen habla de vínculo «homosocial», no «sin contenido sexual»; quitada la mención a 1 S 20:30 (adelanto)."
+ },
+ "1s-28-adivina-de-endor": {
+  "veredicto": "AJUSTAR",
+  "nota": "Jewish Encyclopedia: quitado «importa menos si ocurrió» (no está); reemplazado por lo que sí dice."
+ },
+ "1s-31-muerte-de-saul": {
+  "veredicto": "AJUSTAR",
+  "nota": "Quitada la postura de la Catholic Encyclopedia: no menciona a Saúl ni comenta el pasaje; quedan K-D, Henry y Jewish Encyclopedia."
+ },
+ "dt-7-anatema-naciones": {
+  "veredicto": "AJUSTAR",
+  "nota": "Cogan: «no resuelve la dificultad moral» cambiado por «reconoce una contradicción moral en la ley» (lo que dice el artículo). Solo se pudo leer el subtítulo y un fragmento del artículo de TheTorah."
+ },
+ "jos-2-rahab-miente": {
+  "veredicto": "AJUSTAR",
+  "nota": "K-D: quitadas citas de Heb/Stg (NT); Reimer: quitada Jael (adelanto); Jewish Encyclopedia: no explica la posición de Kimhi."
+ },
+ "jos-6-anatema-jerico": {
+  "veredicto": "AJUSTAR",
+  "nota": "Henry: quitado «en contraste con el Evangelio»; Wikipedia: «exagerados, ficticios o metafóricos» (como dice la fuente)."
+ },
+ "jos-10-sol-detenido": {
+  "veredicto": "AJUSTAR",
+  "nota": "K-D: decían «difícil decidir» entre objetiva y subjetiva, el resumen se contradecía; Mariottini: «minoritaria» no está en la fuente, es su tesis."
+ },
+ "jos-13-tierra-por-conquistar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikipedia: no dice lo de otros pasajes ni cita Jue 1:1–2:5 (adelanto); reescrito con Brettler, Killebrew, Dever, Collins."
+ },
+ "jue-3-aod-eglon": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi sí dice que por levantarse Rut descendió de Eglón. Eso adelanta Rut (libro siguiente): el resumen conserva la idea (mérito que premió a su descendencia) sin nombrar a Rut. «Gesto de respeto» no es de Rashi (corregido)."
+ },
+ "jue-16-sanson-nazareo": {
+  "veredicto": "AJUSTAR",
+  "nota": "K-D: la miel del león no sale de la URL citada (Jue 14); quitada."
+ },
+ "jue-19-concubina-levita": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi: «coincide con la RV1909» marcado como fuente externa; Sweerts-Vermeulen: «tentativa»; K-D: quitado 1 S 11 (adelanto); Henry: quitada coletilla que no es de la fuente."
+ },
+ "gn-2-dos-relatos-creacion": {
+  "veredicto": "AJUSTAR",
+  "nota": "Henry: dice «apéndice» y «centro y resumen», no «recapitula»; Rashi: quitada una conclusión propia; Schmid: añadido que los compiladores los unieron para leerlos juntos."
+ },
+ "gn-6-hijos-de-dios": {
+  "veredicto": "AJUSTAR",
+  "nota": "Henry y Glaser: quitadas afirmaciones sobre «lectura más extendida/minoritaria» que no están en la fuente; Rashi: quitada la cita de Ex 7:1 (adelanto)."
+ },
+ "gn-9-cam-canaan": {
+  "veredicto": "AJUSTAR",
+  "nota": "Henry: quitado «desplazados de su tierra» (alude a la conquista)."
+ },
+ "gn-12-sara-hermana": {
+  "veredicto": "AJUSTAR",
+  "nota": "Levin: resumen vago y con adelantos (Gn 26, Éxodo); reescrito sin ellos. Rashi: quitado «no discute el problema moral»."
+ },
+ "gn-22-sacrificio-isaac": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi: la acusación de Satán/Ismael está en 22:1, no en 22:12 (obra y url corregidas); Koller: quitado «minoritaria», añadida su conclusión."
+ },
+ "gn-27-bendicion-engano": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi: quitado un motivo que Rashi no declara; Walfish: aclarado el origen (Edom y luego Roma); omitida la mención a la Iglesia (adelanto del NT)."
+ },
+ "gn-38-judah-tamar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Barmash: quitado «sin poder acudir a la ley» (no confirmado)."
+ },
+ "rut-3-la-era": {
+  "veredicto": "AJUSTAR",
+  "nota": "nino: «cumpliera su deber» contradecía a K-D (no era obligación vinculante); reescrito."
+ },
+ "rut-4-rescate-y-zapato": {
+  "veredicto": "AJUSTAR",
+  "nota": "Jewish Encyclopedia «Levirate Marriage»: solo sustenta la primera frase; lo de Barton (otro artículo) quitado."
+ },
+ "rut-4-moabita-en-la-genealogia": {
+  "veredicto": "AJUSTAR",
+  "nota": "Barton: sin nombrar Esdras/Nehemías; Henry: lectura cristiana tipológica rotulada como tal, quitado «anuncio de los gentiles»."
+ },
+ "ex-4-sangre-esposo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi: añadida la salvedad de la misma tradición; Henry: «no puede determinar» en vez de «con injusticia»; Frolov: no deja «sin solución única», propone una lectura que usa pasajes posteriores (Nm 31, 1 S, Gn 32, 34): omitida."
+ },
+ "ex-12-muerte-primogenitos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Frankel: habla de primerizos del ganado y rescate de hijos, no «primeros corderos»; quitada la referencia a Ex 13 (aún no leído)."
+ },
+ "lv-11-animales-impuros": {
+  "veredicto": "AJUSTAR",
+  "nota": "Henry: «algunas carnes» pudieron ser dañinas, no «muchas»."
+ },
+ "lv-16-azazel": {
+  "veredicto": "AJUSTAR",
+  "nota": "Angelini: la figura demoníaca es de tradición posterior; quitado «no hay acuerdo» como afirmación suya."
+ },
+ "nm-5-aguas-amargas": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi 5:28 dice «limpia» y libre de los efectos del agua, no «libre de toda sospecha»."
+ },
+ "nm-12-mujer-cusita": {
+  "veredicto": "AJUSTAR",
+  "nota": "Goldenberg: añadida su tesis propia (la queja es porque no es israelita); Ibn Ezra prefiere a Séfora."
+ },
+ "siclo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Resuelto: rango ≈ 11,5–14,3 g. Fuentes abiertas: pesa de 23 g por dos siclos del Primer Templo (Wikipedia «Shekel», cita a Laden 2020 en BAR), Easton (220 granos = 14,26 g) y Jewish Encyclopedia (11,95 g bíblico; 14,34 g del santuario). El 11,4 g no tenía fuente; eliminado."
+ },
+ "codo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Resuelto: ≈ 51 cm (rango 49,5–55,6). Easton: 20,24 pulgadas ordinario (51,4 cm) y 21,888 sagrado (55,6 cm); Jewish Encyclopedia: 495 o 525 mm. El 45 cm del palmo no tenía fuente; eliminado."
+ },
+ "obolo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Recalculado con el rango del siclo: 11,5÷20 = 0,575 g; 14,26÷20 = 0,71 g (JE: gera 0,5975 g). Antes usaba 11,4 g sin fuente."
+ },
+ "talento": {
+  "veredicto": "AJUSTAR",
+  "nota": "Pasos de Ex 38:25-26 correctos (603.550 × ½ = 301.775 siclos; − 1.775 = 300.000 = 100 talentos → 3.000 siclos; Easton también dice 3.000). Recalculado: 34,5–43 kg (Easton: 94 3/7 lb = 42,8 kg)."
+ },
+ "palmo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Recalculado como ½ codo (JE: zeret = ½ codo): 24,75–26,25 cm con codo de JE/Easton común; 27,8–28 cm con codo sagrado/talmúdico. Antes 45 cm sin fuente (22,5 cm). nino: 25 cm."
+ },
+ "pieza-plata": {
+  "veredicto": "AJUSTAR",
+  "nota": "Recalculado con el rango del siclo: 20 × 11,5 = 230 g; 20 × 14,26 = 285 g. Supuesto pieza = siclo sigue como inferencia."
+ },
+ "efa": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton: omer = ½ galón = 1/10 efa (≈ 22 L); pero su entrada «Homer» dice ≈ 8 bushels (≈ 29 L por efa); añadido al margen. Rango 19–36 L (JE 36,44) se mantiene."
+ },
+ "homer": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton «Homer»: «about 8 bushels» = 10 efas, solo cita Lv 27:16 entre paréntesis; la identificación sigue marcada como inferencia. Añadida la discrepancia de Easton."
+ },
+ "gomer": {
+  "veredicto": "OK",
+  "nota": "Ex 16:36 (1/10 de efa) y Easton («omer = half a gallon») verificados."
+ },
+ "hin": {
+  "veredicto": "OK",
+  "nota": "JE: hin 6,074 L = 1/6 de bato 36,44 L: cuadra con el cálculo (3,7–6,1 L); relación rabínica rotulada como externa."
+ },
+ "log": {
+  "veredicto": "OK",
+  "nota": "JE: 1 hin = 12 logs (0,506 L con su hin): cuadra con 0,3–0,5 L."
+ },
+ "pieza-moneda": {
+  "veredicto": "OK",
+  "nota": "Sin equivalencia: correcto, no se inventa."
+ },
+ "seah": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton «Ephah»: «three seahs or ten omers» verificado; 3 seah = 1 efa. | 2 Reyes: absorbe el término nuevo «seah-reyes» (duplicado): se añade la forma «seah» (2R 7:1, 7:16, 7:18). Texto y cálculo reescritos por seah (7,3 L; rango 6,3–12 L): Easton (Ephah) «three seahs or ten omers». Se quitó el precio de 7:1 (posterior a Gn 18:6). Nota: «sato» (1R 18:32) sigue como término propio."
+ },
+ "pacto": {
+  "veredicto": "AJUSTAR",
+  "nota": "Quitado Abraham del texto (primera aparición Gn 6:18, Noé)."
+ },
+ "sacerdote": {
+  "veredicto": "AJUSTAR",
+  "nota": "certeza texto -> externa: la definición general viene de Easton (verificado: Gn 14:18 y jefes de familia)."
+ },
+ "levita": {
+  "veredicto": "AJUSTAR",
+  "nota": "Quitada la frase sobre el servicio del santuario (adelanto respecto de Ex 4:14)."
+ },
+ "concubina": {
+  "veredicto": "AJUSTAR",
+  "nota": "Quitado «la ley limita algunos de sus aspectos» (adelanto respecto de Gn 22:24)."
+ },
+ "usura": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 22:25: añadida esa cita y quitado «aumento» (de Lv 25:36)."
+ },
+ "ayuntar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Aclarado que «unión carnal» se deduce del contexto (el Wikcionario consultado solo da «juntar» y «añadir»)."
+ },
+ "profeta": {
+  "veredicto": "AJUSTAR",
+  "nota": "Quitados Moisés y Aarón (Ex 7:1, posterior a Gn 20:7, primera aparición); añadida Gn 20:7 «es profeta»."
+ },
+ "diezmo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Quitada «la ley de Moisés dice después…» (adelanto respecto de Gn 14:20)."
+ },
+ "levirato": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Gn 38:8: añadida esa cita; la ley de Dt 25 queda rotulada como posterior. El resumen de Dt 25 se mantiene (es ley, no suceso)."
+ },
+ "nazareo": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "sumo-sacerdote": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "jehova": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "anatema": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "terafines": {
+  "veredicto": "AJUSTAR",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra. | 2 Reyes: absorbe «terapheos» (2R 23:24): forma y `solo` añadidos; Easton (Teraphim) abierto («idols in human shape»; cita 2R 23:24)."
+ },
+ "angel-jehova": {
+  "veredicto": "AJUSTAR",
+  "nota": "Muestra anterior: OK. 2S: «ángel de Dios» es un símil («como un ángel de Dios») en 2S 14:17, 14:20 y 19:27, y también en 1S 29:9 y Jue 13:6 («aspecto de un ángel de Dios»); se excluyen los cinco. 2S 24:16 sí es el ángel de Jehová."
+ },
+ "goel": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "pacto-sal": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "lepra": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "expiacion": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "juez": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "belial": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "urim": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "querubines": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "circuncision": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "juramento-muslo": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "dote": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "mandragoras": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "azazel": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "baal": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta. 1R: `solo` ampliado a 16:31-32, 18:18-26, 18:40, 19:18 y 22:53 (absorbe `baal-1r`). | 2 Reyes: 2R 3:2, 10:18-28, 11:18, 17:16, 21:3 y 23:4-5 revisados; 1:2-16 los toma «Baal-zebub» y 4:42 es un lugar. Texto genérico, vale en 2R."
+ },
+ "impureza": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta. | 2 Reyes: 2R 21:21 «inmundicias» = ídolos, bien excluido; sin otras apariciones en 2 R."
+ },
+ "celoso": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "hebreo": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "ojo-por-ojo": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "adivinacion": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "vengador-sangre": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "suertes": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "mana": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "moloc": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "primogenitura": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "jubileo": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "tejon": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "unicornio": {
+  "veredicto": "OK",
+  "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+ },
+ "coger": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "tentar": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "mancebo": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "holgar": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "heder": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "almorranas": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "apostema": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "siniestra": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "cohecho": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "hacienda": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "yacer": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "hollar": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "laganoso": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "almete": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "enjullo": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "holocausto": {
+  "veredicto": "OK",
+  "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+ },
+ "empero": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "aderezar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden. 2S: se añaden «aderece» (2S 13:5), «aderecéis» (Ex 12:16), «aderezóla» (2S 12:4) y «aderezólas» (2S 13:8); todas son preparar comida."
+ },
+ "aparejar": {
+  "veredicto": "AJUSTAR",
+  "nota": "«Aparejo» (nombre) no está definido en la fuente; se ajustó el texto para decir que se deduce del contexto (Lv 15:9, Jue 19:10 «asnos aparejados»)."
+ },
+ "allegar": {
+  "veredicto": "OK",
+  "nota": "Cubre acercar, juntar y unirse (Gn 41:35, Nm 25:3)."
+ },
+ "priesa": {
+  "veredicto": "OK",
+  "nota": "«Apriesa» tiene su propia entrada (aprisa, anticuado); coincide."
+ },
+ "aqueste": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "esotro": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario solo trae «esotro = ese otro»; «estotro» no tiene entrada: la forma con «esta» se marcó como analogía."
+ },
+ "tornar": {
+  "veredicto": "OK",
+  "nota": "Cubre volver, volver a hacer y volverse en otra cosa (Ex 4:4, Ex 14:21)."
+ },
+ "tañer": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "desmayar": {
+  "veredicto": "AJUSTAR",
+  "nota": "En Gn 45:26 «su corazón se desmayó» es de impresión o aturdimiento, no de perder el ánimo: excluido el versículo."
+ },
+ "dilatar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "esforzar": {
+  "veredicto": "AJUSTAR",
+  "nota": "La fuente no dice que «esforzado» sea valiente (es solo el participio); además hay usos de «poner empeño» (Dt 12:23, Jos 23:6). Se amplió y se marcó lo deducido."
+ },
+ "confortar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "fenecer": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "menguar": {
+  "veredicto": "OK",
+  "nota": "Fuente solo intransitiva; el uso transitivo de Jos 14:8 («menguaron el corazón») es figurado y coherente."
+ },
+ "cerviz": {
+  "veredicto": "OK",
+  "nota": "Correcto. Posible mejora futura: la locución «dura cerviz» como terquedad (no en la fuente)."
+ },
+ "dadiva": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "anima": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "agorero": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "pelliza": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "pingue": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "postrimeria": {
+  "veredicto": "OK",
+  "nota": "Nota: «postrimero» no está en la entrada; es derivado de postrimería. Aceptable."
+ },
+ "sortilego": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "zurron": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "anublo": {
+  "veredicto": "OK",
+  "nota": "Wikcionario describe el hongo de los cereales; Dt 28:22 es la plaga de cultivos. Coincide."
+ },
+ "aquilon": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "austro": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "vedar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "nombradia": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "enjuto": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "greba": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "aljaba": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "albarda": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "mies": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "bagaje": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "bastimento": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "bocina": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario solo define la bocina moderna; Easton «Cornet» describe el shofar, no la palabra «bocina». Se sustituyó por Wikcionario (etimología «trompeta») y Easton «Trumpets» (de cuerno de carnero o de plata)."
+ },
+ "buril": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "abrojo": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "acaecer": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "acicalador": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "adufe": {
+  "veredicto": "OK",
+  "nota": "Easton «Tabret» (toph) = pandero; coincide con Jue 11:34 y 1S 10:5."
+ },
+ "alhaja": {
+  "veredicto": "AJUSTAR",
+  "nota": "Por contexto (Gn 31:37, Nm 3:8, Ex 22:7) son enseres y utensilios además de joyas; se matizó y se marcó como contexto."
+ },
+ "corchete": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "corcovado": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "denostar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "dintel": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "estambre": {
+  "veredicto": "AJUSTAR",
+  "nota": "«Urdimbre» no está en Wikcionario (hebras largas de lana); se dedujo de que Lv 13 lo contrapone a «trama». Se marcó como contexto."
+ },
+ "frontal": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton dice que el mandato se tomó al pie de la letra (tefilín, tiras de pergamino) tras Babilonia; el texto anterior («cintas o estuches») no se sostenía. Reescrito."
+ },
+ "guarecer": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "guedeja": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "horro": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "lesna": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton no habla de cuero; solo de la oreja del siervo. Se quitó «perforar cuero» y no se cita Dt 15:17 (posterior)."
+ },
+ "lumbrera": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "majano": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "majar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "manteca": {
+  "veredicto": "OK",
+  "nota": "Wikcionario da «mantequilla» como acepción regional; el sentido lácteo se sostiene por contexto (Gn 18:8, Dt 32:14), ya señalado en el texto."
+ },
+ "menester": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "mortecina": {
+  "veredicto": "AJUSTAR",
+  "nota": "La entrada «mortecina» solo remite a «mortecino»; el sentido (animal muerto naturalmente) está en «mortecino», acepción 3. Se cambió la fuente."
+ },
+ "odre": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton no dice «piel de cabra»; se quitó. Sí cita vino, leche (Jue 4:19) y agua (Gn 21:14)."
+ },
+ "pertrecho": {
+  "veredicto": "AJUSTAR",
+  "nota": "La entrada «pertrecho» era la forma verbal de «pertrechar»; la definición de armas y equipo está en «pertrechos». Se cambió la fuente."
+ },
+ "pollino": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "sobrestante": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario solo cubre el encargado de obra (materiales, jornales); «capataz de segadores» (Rt 2:5) se marcó como sentido por contexto."
+ },
+ "terrado": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "tropezadero": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "vitualla": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "yermo": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "zarcillo": {
+  "veredicto": "OK",
+  "nota": "Pendiente (acepción 2) y Easton «Earrings»: coincide en Ex 32:2, Jue 8:24."
+ },
+ "arrebozar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario «arrebozar» dice solo «rebozar / ocultar con ingenio»; el sentido de cubrir el rostro está en «rebozar» acepción 1. Se añadió esa fuente."
+ },
+ "atalayar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "henchir": {
+  "veredicto": "OK",
+  "nota": "Hay usos de «henchir las manos» (Ex 29:9) con sentido de consagrar; el significado «llenar» sigue valiendo. Nm 5:21 ya está excluido."
+ },
+ "aventar": {
+  "veredicto": "AJUSTAR",
+  "nota": "La fuente habla de bieldo, no de pala; se ajustó."
+ },
+ "heredad": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario: terreno cultivado de un dueño, hacienda y bienes raíces, y «herencia»; se reescribió para ajustarse (Gn 17:8 «heredad perpetua», Gn 23:9 finca)."
+ },
+ "guisar": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "asechanza": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "apercibir": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "atavio": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "canteria": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "sembradura": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "bdelio": {
+  "veredicto": "OK",
+  "nota": "Fuente y contexto coinciden."
+ },
+ "efod": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 25:7 (lista de materiales): se quitó el detalle de colores e hilos de Ex 28 y se dejó lo que dice Easton (lino, dos piezas, distintivo del oficio, el pectoral se fija a él). Se excluyen Nm 34:23 (Ephod es un nombre de persona) y Jue 8:27, 17:5, 18:14-20 (efod hecho como objeto de culto, otro uso que Easton no trata)."
+ },
+ "racional": {
+  "veredicto": "AJUSTAR",
+  "nota": "Se quitó «se ponían el Urim y Thummim» (Ex 28:30, posterior a la primera aparición en Ex 25:7 y que Easton no menciona en la entrada). Easton da unas diez pulgadas por lado y doce piedras, una por tribu."
+ },
+ "propiciatorio": {
+  "veredicto": "OK",
+  "nota": "Easton confirma que es la tapa del arca; `solo` cubre los versículos de la tapa (las demás «cubiertas» son de la tienda y quedan fuera: verificado). La descripción queda dentro de Ex 25:17-22."
+ },
+ "arca-testimonio": {
+  "veredicto": "OK",
+  "nota": "Citas literales; la descripción queda dentro de lo que dicen Ex 25:16-22. Certeza texto correcta (sin fuente externa)."
+ },
+ "ciudades-refugio": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton solo lista las seis ciudades y no explica su propósito; la explicación sale de Nm 35 (texto), así que se quitó Easton de las fuentes para no atribuirle lo que no dice."
+ },
+ "ano-sabatico": {
+  "veredicto": "OK",
+  "nota": "Easton confirma descanso de la tierra y que lo que brota es para pobres, extranjeros y animales. Ex 23:11 es anterior a Lv 25."
+ },
+ "remision": {
+  "veredicto": "AJUSTAR",
+  "nota": "Se quitó la finalidad («proteger a los endeudados de quedar atrapados») porque ni el texto ni Easton la dicen; Easton confirma el perdón de deudas al séptimo año (salvo las de extranjeros)."
+ },
+ "ofrenda-mecida": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 29:24: quien mece allí es Moisés, no «el sacerdote» (eso se dice después). Texto reformulado sin atribuir el gesto al sacerdote."
+ },
+ "ofrenda-elevada": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Lv 7:14: la explicación contaba Nm 18:19 (porción permanente de sacerdotes y familias), posterior. Se limita a Lv 7:14 y se quitó la afirmación sin fuente sobre «otras versiones»."
+ },
+ "primicias": {
+  "veredicto": "AJUSTAR",
+  "nota": "Se quitó «o lo primero que produce un rebaño» (Easton habla de frutos de la tierra, comparados con los primogénitos). Easton confirma el sentido de reconocimiento de que la cosecha viene de Dios."
+ },
+ "gavilla-omer": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton habla de «una gavilla de grano nuevo» pero no dice cebada; se quitó «de cebada» en nino. Identificación como inferida, correcta."
+ },
+ "pascua": {
+  "veredicto": "OK",
+  "nota": "Easton confirma: fiesta mayor que recuerda que el Señor perdonó las casas israelitas; contenido dentro de Ex 12 (primer pasaje con la palabra); citas literales."
+ },
+ "azimos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Gn 19:3 (Lot): la explicación hablaba de «las leyes», «ofrendas» y «fiesta» (posteriores) y de «plano», que el texto no dice. Se reduce a lo que dicen las palabras, con cita Gn 19:3; certeza inferido por la parte «más rápido», señalada como inferencia."
+ },
+ "fiesta-azimos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton dice que la Pascua se llama también fiesta de los ázimos y que no se podía comer ni guardar leudado; se reformuló sin «la tratan como una sola celebración» (exagerado)."
+ },
+ "fiesta-semanas": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 34:22: se quitó el conteo desde la gavilla y la ofrenda nueva (Lv 23, posterior). Easton confirma el nombre Pentecostés («quincuagésimo»; el nombre solo aparece en el NT) y que marca el fin de la cosecha de grano."
+ },
+ "dia-expiaciones": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Scapegoat) no habla de ayuno ni del sumo sacerdote: se quitó «y ayuna» y se atribuye al «sacerdote». Lv 16 es anterior a 23:27, por eso se puede remitir a él."
+ },
+ "ofrenda-culpa": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton: asham = «deuda», siempre un carnero. En Lv 14 aparece un cordero, así que se dice «normalmente» y se atribuye a Easton."
+ },
+ "tabernaculo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 25:9: la descripción (lugar santo y santísimo, atrio con altar, se desmonta y traslada) es de Ex 26-27 y Nm, posterior. Se limita a lo de Ex 25:8-9. Se excluye Ex 33:7-9 (la tienda de Moisés fuera del campamento, otra cosa)."
+ },
+ "velo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Ex 34:33-35 es el velo en el rostro de Moisés (otro sentido): se excluye. El resto es el velo del santuario; la descripción cabe en Ex 26:31-33. 1R 20:38 y 20:41 («velo sobre los ojos», disfraz del profeta): exclusión correcta; no hay otro «velo» en 1 Reyes."
+ },
+ "pan-proposicion": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 25:30: las doce hogazas, el cambio semanal y quién las come son de Lv 24 (posterior). Se limita a Ex 25:30 y a lo que Easton dice sobre el nombre."
+ },
+ "candelero": {
+  "veredicto": "OK",
+  "nota": "Easton confirma candelero de oro fino en el santuario; descripción dentro de Ex 25:31-40."
+ },
+ "incienso": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 25:6 (lista de materiales): se quitó lo de Ex 30 (altar, cada mañana). Easton: mezcla aromática que se quema en el culto; símbolo de la oración. | 2 Reyes: absorbe «perfumes-incienso»: formas «perfume» y «perfumes» (Ex 30:1, 30:27, 31:11, Lv 10:1, 16:12, Nm 7:14, 1S 2:28, 1R 3:3, 2R 12:3 y siguientes); excluido Lv 26:31 («suave perfume» = olor). La equivalencia «quemar perfumes» = incienso va como identificación del proyecto (Easton, Incense, no usa «perfume»)."
+ },
+ "fuente-metal": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton habla de cobre/bronce de los espejos (Ex 38:8, posterior); se dice solo «de metal», como el texto."
+ },
+ "libacion": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Gn 35:14: la explicación contaba las leyes de Ex 29 y Nm 28 (cantidades fijas, vino). Se limita a lo de Gn 35:14."
+ },
+ "sabado": {
+  "veredicto": "OK",
+  "nota": "Easton: origen en la creación, vínculo con el maná y Sinaí. Primera aparición Ex 16:22; el vínculo con Gn 2:2-3 es anterior."
+ },
+ "vaca-bermeja": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Nm 19:2 (pasaje Nm 19:1-10): el uso contra el contacto con un muerto es de Nm 19:11 en adelante. Se limita a lo del pasaje."
+ },
+ "aguas-amargas": {
+  "veredicto": "OK",
+  "nota": "Citas literales, contenido dentro de Nm 5:11-31; «lo deja a la decisión de Dios» se apoya en las fórmulas de maldición del texto; nino neutro."
+ },
+ "voto": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Gn 28:20: «la ley manda cumplirlo» es Nm 30 (posterior). Se pasa a Jacob y se cambia la cita a Gn 28:20."
+ },
+ "ungir": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Gn 31:13; se acota a la piedra de Jacob y a lo que dice Easton. Se excluyen Dt 28:40 y Rut 3:3 (untarse aceite como cuidado personal, no consagración). 2S: se añaden «ungieron» (2S 2:4, 5:3), «ungí» (2S 12:7) y «ungídolo» (Nm 7:1). «ungióse» (2S 12:20, aceite como aseo tras el duelo) no se añade."
+ },
+ "todopoderoso": {
+  "veredicto": "OK",
+  "nota": "Citas literales; Gn 17:1 es la primera aparición y el texto no avanza nada."
+ },
+ "dios-alto": {
+  "veredicto": "OK",
+  "nota": "Citas literales; contenido ajustado a Gn 14:18-22."
+ },
+ "prenda": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Gn 38:17: la explicación contaba Ex 22:26 y Dt 24 (ley sobre el vestido, posterior). Se reescribe con Gn 38:17. Se excluyen Nm 31:20 (prenda de vestir) y 1S 17:18 (señales, otro sentido)."
+ },
+ "espigar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Se excluye Jue 20:45 («rebuscaron» = persiguieron y mataron a rezagados, sentido figurado)."
+ },
+ "zapato": {
+  "veredicto": "OK",
+  "nota": "Cita literal y única aparición; el propio versículo explica el gesto."
+ },
+ "puerta-ciudad": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton confirma solo que en las puertas se celebraban juicios y se reunía la gente; no dice nada de comercio. Se reformula con lo que sí dice y con los casos de Gn 23 y 34."
+ },
+ "ancianos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 3:16: «Moisés los reúne» y «funciones de gobierno y justicia local» eran posteriores. Se limita a lo que Easton dice (autoridad, representan al pueblo, magistrados)."
+ },
+ "hisopo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Primera aparición Ex 12:22 (untar sangre): se quitó «ritos de purificación» (Lv 14, Nm 19, posteriores). Easton no zanja la identidad: recoge mejorana y alcaparra."
+ },
+ "astaroth": {
+  "veredicto": "OK",
+  "nota": "Easton: diosa lunar fenicia, principio femenino de la naturaleza, emparejada con Baal. «Diosa de la fertilidad» no está en Easton; se corrige. 1R: forma «Astharoth» y `solo` a 11:5 y 11:33 (absorbe `astoret`). | 2 Reyes: 2R 23:13 revisado. Texto genérico, vale en 2R."
+ },
+ "dagon": {
+  "veredicto": "OK",
+  "nota": "Easton: nombre ligado a «pez», dios nacional filisteo, cuerpo de pez con cabeza y manos humanas, templos en Gaza y Asdod. Jos 15:41 y 19:27 (Bet-dagón, topónimo) ya estaban excluidos."
+ },
+ "asera": {
+  "veredicto": "OK",
+  "nota": "Easton: asera = imagen o poste de madera que representaba a Astoret, a menudo en una arboleda; se quitó «junto a los altares» (Dt 16:21 y Jue 6, posteriores a Ex 34:13). La lista `solo` cubre los usos de «bosque» como asera. 1R: `solo` ampliado a 14:15, 14:23, 15:13, 16:33 y 18:19 (absorbe `asera-1r`); texto neutro («se talan o se hacen»). | 2 Reyes: 2R 13:6, 17:10, 17:16, 18:4, 21:3, 21:7, 23:4, 23:6-7 y 23:14-15 revisados. Texto genérico, vale en 2R."
+ },
+ "duelo": {
+  "veredicto": "OK",
+  "nota": "Easton: tela áspera de pelo de cabra; señal de duelo y de arrepentimiento. Solo 3 apariciones, todas de duelo."
+ },
+ "desjarretar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Hough) abierto: «captured horses… render them useless»; se quitó «en guerra» (no lo dice) y del nino el detalle de los tendones. Primera aparición Jos 11:6, sin adelantos."
+ },
+ "endecha": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (endecha: canción triste y lamentable; composición de asunto luctuoso) abierto. «Endechar» por un muerto es lectura del contexto (Gn 50:10, 2S 1:17). Formas cubren las 4 apariciones."
+ },
+ "ajorca": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario OK. Easton (Bracelet) lista 2S 1:10 entre «anklets» y dice que los brazaletes los usaban hombres y mujeres; no dice que la palabra de este versículo se traduzca «brazalete o pulsera». Reescrito."
+ },
+ "regaton": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (regatón: protección de metal que cubre la parte inferior de lanzas y bastones) abierto. nino sin violencia."
+ },
+ "feretro": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (féretro: caja o andas en que se lleva a enterrar a los difuntos) y Easton (Bier: armazón en que se llevaba a los muertos) abiertos."
+ },
+ "villano": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario abierto (vecino de villa, vs. noble; ruin, indigno). Se quitó «castellano antiguo» y «sin derechos» (no están en la fuente); queda «ruin o de poco valor» como inferido."
+ },
+ "alcornoque": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Oak) abierto: seis palabras hebreas traducidas «roble»; 2S 18:9 con margen RSV «terebinth». La primera aparición es Jos 24:26: se quitó la cita de 2S 18:9 (adelanto) y «frondoso» (no está en la fuente). Las apariciones como lugar («valle del Alcornoque», 1S 17) las resuelve la app."
+ },
+ "atalaya": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario abierto (torre de vigilancia; posición elevada de la que se vigila). Primera aparición 2S 13:34: la cita bíblica pasó de 2S 18:25 (posterior) a 13:34."
+ },
+ "escudero": {
+  "veredicto": "OK",
+  "nota": "Easton (Armour-bearer) abierto: oficial escogido por su valentía, lleva armas y armadura y se queda al lado en el peligro. Primera aparición Jue 9:54."
+ },
+ "majada": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (majada: lugar donde se recogen por la noche el ganado y los pastores) abierto. Cubre Nm 32 a 2S 7:8."
+ },
+ "pleito": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (pleito: enfrentamiento ante autoridades entre partes en disputa) abierto."
+ },
+ "canciller": {
+  "veredicto": "OK",
+  "nota": "Easton (Recorder) abierto: mazkir, «mentioner/rememberancer», canciller o visir; presenta quejas y peticiones, redacta papeles, cuida los archivos. Solo 2S 8:16 y 20:24."
+ },
+ "ayuno": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Fast) abierto: ayunos públicos, locales y privados por pecado o para pedir el favor de Dios. Se quitó «duelo, arrepentimiento y súplica» (de 1S 7:6, 1S 31:13, 2S 12, posteriores a la primera aparición Jue 20:26); se ancla en Jue 20:26 con cita."
+ },
+ "casa-cedro": {
+  "veredicto": "OK",
+  "nota": "Easton (Cedar) abierto: apreciado por altura, olor y durabilidad; tablas, columnas y techos. `solo` correcto: sin apariciones anteriores de esas formas."
+ },
+ "ceretheos": {
+  "veredicto": "OK",
+  "nota": "Smith (Cherethites: «executioners», posibles mercenarios filisteos) y Easton (Pelethites: «runners/couriers»; solo en tiempo de David; quizá tribus filisteas) abiertos. Duda: 1S 30:14 «Cerethi» (el pueblo del sur) no se explica; es lugar, no el cuerpo de David."
+ },
+ "mesa-rey": {
+  "veredicto": "AJUSTAR",
+  "nota": "Texto 2S 9:7-13 y 19:28 revisado. «Aquí el propio texto» pasó a «En 2S 9:11» (en 19:28 no era «aquí»). `solo` deja fuera 1S 20:29 («la mesa del rey» de Saúl, otra cosa): correcto."
+ },
+ "instrumentos": {
+  "veredicto": "OK",
+  "nota": "Easton abierto en Harp (kinnor, instrumento nacional; alegría y alabanza), Psaltery (lira o arpa de doce cuerdas) y Cymbals (dos piezas convexas de bronce; cita 2S 6:5). Primera aparición Gn 4:21 (arpa), sin adelantos en el texto."
+ },
+ "tierra-cabeza": {
+  "veredicto": "OK",
+  "nota": "Easton (Ashes) abierto: cubrirse la cabeza de ceniza, señal de aborrecimiento de sí mismo y humillación (cita 2S 13:19). Lo de la tierra va marcado como inferencia. Primera aparición 1S 4:12."
+ },
+ "descalzo-luto": {
+  "veredicto": "OK",
+  "nota": "Easton (Barefoot) abierto: gran angustia o calamidad (cita 2S 15:30). La cabeza cubierta se declara no cubierta por Easton (inferido)."
+ },
+ "seol": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Hell, Sheol) abiertos: sheol «invisible world of departed souls», 31 veces «grave» y 31 «hell»; morada de malos y buenos. Se cambió «no significa el lugar de castigo» (no lo dice Easton) por lo que Easton sí dice."
+ },
+ "cuerno-salud": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Horn) abierto: cuerno = fuerza, poder; «horn of salvation» = salvación de fuerza. Easton lo dice de Cristo (Lc 1:69, NT): se omite la referencia (adelanto) y la aplicación a Dios en 2S 22:3 va como inferencia."
+ },
+ "lampara-israel": {
+  "veredicto": "OK",
+  "nota": "Easton (Lamp) abierto: lámpara como imagen de vida, bienestar o guía, y cita 2S 21:17. La identificación con David va como inferido."
+ },
+ "pacificos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Peace offerings) abierto: tres clases (acción de gracias, voto, voluntarios). `solo` dejaba sin explicar 14 apariciones anteriores (Ex 20:24 en adelante): ahora se aplica a todas menos Gn 34:21 («pacíficos con nosotros», adjetivo). Se quitó «se ofrecían junto con los holocaustos» como dato de Easton: queda como observación con cita Ex 20:24."
+ },
+ "era": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Agriculture) abierto: las gavillas se extendían en la era y los bueyes las pisaban. `solo` dejaba sin explicar Rut 3, Jue 6:37, Nm 15/18 y Gn 50:10-11; la explicación es general y no adelanta nada: se quitó `solo`."
+ },
+ "barba-humillacion": {
+  "veredicto": "OK",
+  "nota": "Easton (Beard) abierto: descuidarla indicaba dolor; cortársela a los enviados de David (2S 10:4), señal de afrenta. nino sin violencia."
+ },
+ "perro-muerto": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Dog) abierto: perro animal impuro; «perro», «cabeza de perro», «perro muerto» como reproche o humildad (cita 1S 24:14 inglés = 24:15, 2S 3:8, 9:8, 16:9). `solo` dejaba fuera 1S 24:15, primera aparición y mismo sentido: se quitó."
+ },
+ "prepucios": {
+  "veredicto": "AJUSTAR",
+  "nota": "Texto 1S 18:25, 18:27, 2S 3:14 y Gn 17:11 revisado. La primera aparición (sin Jos 5:3, nombre de lugar) es 1S 18:25: la explicación contaba 2S 3:14 (posterior) y `solo` la dejaba fuera. Se reescribe con 1S 18:25 y se excluye Jos 5:3. 1S 18:25-27 está plegado para niño. Duda leve: nino habla de «la piel que se cortaba en la circuncisión»."
+ },
+ "gigante": {
+  "veredicto": "OK",
+  "nota": "Easton (Rephaim, Giants) abiertos: «Rapha» en el margen de 2S 21:16, 18; raza de «hombres altos» refugiada entre los filisteos en tiempo de David; origen desconocido. `solo` deja sin esta explicación Dt 9:2 y 1S 17:51 («su gigante»), que no son de ese caso: aceptado."
+ },
+ "2s-6-uza-arca": {
+  "veredicto": "AJUSTAR",
+  "nota": "Radak (hebreo, Sefaria) cotejado: el resumen mezclaba 6:6 y 6:7 y decía «Coat» para lo de Uza (Radak dice Leví) y «como los filisteos» como razón de David (Radak da otra: no había tabernáculo y el arca vino en carro). Reescrito. Rashi 6:7, Keil y Delitzsch, Matthew Henry abiertos; de MH se quitó «falta parece pequeña» (dice que el castigo parece muy grande). nino coherente (6:7 es medio, no se pliega). Sin adelantos."
+ },
+ "2s-11-betsabe-urias": {
+  "veredicto": "OK",
+  "nota": "Radak 11:4 (hebreo), Keil y Delitzsch y Matthew Henry abiertos: coinciden con el resumen. nino null correcto (11:2-5 alto). Sin adelantos."
+ },
+ "2s-12-nino-muere": {
+  "veredicto": "OK",
+  "nota": "Radak 12:14 (hebreo; Targum de Jonatán), Keil y Delitzsch (con Gerlach) y Matthew Henry abiertos: coinciden. nino sin sexo ni violencia; 12:13-23 sin marca. Sin adelantos (no cita a Salomón)."
+ },
+ "2s-13-tamar-amnon": {
+  "veredicto": "OK",
+  "nota": "Rashi 13:13 (Metsudah), Keil y Delitzsch y Matthew Henry abiertos: coinciden. nino null correcto (13:1-22 alto)."
+ },
+ "2s-21-gabaonitas": {
+  "veredicto": "AJUSTAR",
+  "nota": "Radak 21:1 (hebreo; Saadia Gaón), Rashi 21:1, Matthew Henry (Dt 21:23, caso extraordinario) abiertos: coinciden. Keil y Delitzsch citan Nm 35:31 y no 35:33: corregido. nino null correcto (21:6-10 alto)."
+ },
+ "2s-21-elhanan-goliat": {
+  "veredicto": "OK",
+  "nota": "Radak 21:19 (hebreo), Rashi 21:19, Keil y Delitzsch (copista; rechazan dos Goliat; Bertheau y Böttcher lo contrario) y Wikipedia (en, «Goliath») abiertos: coinciden. Cita 1S 17:50 sin contradecir datos/LEEME (Goliath_1, sin unir ni armonizar). No cita 1 Cr ni 1 Re. Repone el tema rechazado `1s-17-quien-mato-a-goliat`, que se deja como está. nino coherente (21:17-21 medio)."
+ },
+ "2s-24-censo": {
+  "veredicto": "OK",
+  "nota": "Radak 24:1 (hebreo; Targum), Rashi 24:1, Keil y Delitzsch (remite a 1 S 26:19) y Matthew Henry abiertos: coinciden. Los comentarios citan 1 Cr (Satán): el texto no. nino coherente (24:15 medio)."
+ },
+ "oraculo-1r": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Oracle) abierto: lugar santísimo del templo, salvo 2S 16:23; cita 1R 6:5. La primera aparición es 6:5 y la explicación daba medidas (6:20) y el arca (8:6), de pasajes posteriores: se reescribe con Easton y 6:5, certeza externa; `solo` suma 6:5."
+ },
+ "portico-1r": {
+  "veredicto": "AJUSTAR",
+  "nota": "La definición («construcción abierta, con techo») no tenía fuente. Wikcionario abierto: sitio cubierto y con columnas delante de templos u otros edificios suntuosos. Certeza texto -> externa; se quitó la cita de 7:7 (pasaje posterior)."
+ },
+ "capitel-1r": {
+  "veredicto": "OK",
+  "nota": "Easton (Chapiter): «cabeza ornamental o capitel de un pilar», Cothereth en 1R 7:16. Versículos 7:16-20 cotejados con el texto. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+ },
+ "jachin-boaz": {
+  "veredicto": "OK",
+  "nota": "Easton (Boaz): nombre de una de las dos columnas de bronce (la otra Jachin), motivo desconocido, 1R 7:21; distingue al Boaz de Rut. 7:21 cotejado. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+ },
+ "mar-fundicion": {
+  "veredicto": "OK",
+  "nota": "7:23-26 cotejado (diez codos, cinco, treinta, labio de cáliz, dos mil batos, doce bueyes). Easton (Laver): mar de fundición y diez lavatorios en 1R 7:23-39. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+ },
+ "basas-fuentes": {
+  "veredicto": "OK",
+  "nota": "7:27, 7:30, 7:33 y 7:38 cotejados. Easton (Laver): diez lavatorios en el templo, descritos en 1R 7:23-39. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+ },
+ "quiciales": {
+  "veredicto": "OK",
+  "nota": "Wikcionario abierto (madero que con pernios y bisagras sostiene puertas; muchas veces = quicio). 7:50 cotejado. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+ },
+ "coro": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Cor) abierto: = homer, 10 efas o 10 batos; rabinos 45 galones, Josefo ~87. Jewish Encyclopedia abierta: 364,4 L. Pasos recalculados (190/220/360; 170 y 329 L; 6.600 L). `solo` dejaba fuera 5:11 («veinte mil coros de trigo»): se añade con su cálculo (4.400.000 L). nino decía «cientos de litros»: son miles."
+ },
+ "bato": {
+  "veredicto": "OK",
+  "nota": "Easton (Bath): 8 galones y 3 cuartos = 8,75 × 3,785 = 33 L; Easton (Ephah): efa = bato. Jewish Encyclopedia: 36,44 L. Pasos recalculados (44.000, 38.000, 72.880 L; 880, 760, 1.457 L); coherente con el rango ya auditado del efa. 7:26 y 7:38 cotejados."
+ },
+ "sato": {
+  "veredicto": "OK",
+  "nota": "Easton (Ephah): efa = 3 seahs; Easton (Seah): «un poco más de un peck». Jewish Encyclopedia: 12,148 L. Pasos recalculados (7,3 / 6,3 / 12 L; 14,7 L; 12,6–24,3 L). La identificación sato = seah va como inferencia y no se calcula el área. 18:32 cotejado."
+ },
+ "libra-maneh": {
+  "veredicto": "OK",
+  "nota": "Easton (Maneh y Pound): 100 siclos comunes, ~2½ o 3 libras (1,13–1,36 kg). Jewish Encyclopedia: maneh de 25 siclos = 341,077 g y otro de 40. Pasos recalculados con el siclo 11,5–14,3 g (1,15–1,43 kg; 3 libras 1,0–4,3 kg). Se presentan las dos cifras sin elegir."
+ },
+ "paveses": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario (pavés) abierto: escudo oblongo que cubre casi todo el cuerpo. 10:16-17 cotejado. Se quitó «más pequeños» a los escudos de 10:17: el texto solo da el oro (3 libras), no el tamaño."
+ },
+ "altos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (High place) abierto: eminencia, natural o artificial, con sacrificios u ofrendas; Dt 12:2-3 y 12:11-14. Los «perfumes» no son de Easton sino de 3:3 y 22:44: se atribuye al texto. Ocurrencias revisadas (3:2-4, 11:7, 12:31-32, 13:2, 13:32-33, 14:23, 15:14, 22:44). | 2 Reyes: ocurrencias de 2R (12:3, 14:4, 15:4, 15:35, 16:4, 17:9, 17:11, 17:29, 17:32, 18:4, 18:22, 21:3, 23:5, 23:8-9, 23:13, 23:19-20) revisadas con el texto; 19:23 («altos» = cumbres) queda fuera a propósito. Se añade la forma «el alto» con `solo` 23:15; refs con «1R» y nino sin «mientras no hubo templo»."
+ },
+ "tributo-1r": {
+  "veredicto": "OK",
+  "nota": "Easton (Tribute): impuesto que el rey pone a sus súbditos. 5:13-14, 9:15, 9:21 y 12:18 cotejados. Queda fuera 4:6 (Adoniram «sobre el tributo») a propósito: explicarlo allí adelantaría 5:13-14."
+ },
+ "caballeria": {
+  "veredicto": "OK",
+  "nota": "Easton (Horse y Chariot): sin caballos de guerra por Dt 17:16; David formó caballería (2S 8:4); Salomón los multiplicó (1R 4:26, 10:26). Ocurrencias 4:26, 9:19, 9:22, 10:26 y 20:21 cotejadas. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo. | 2 Reyes: 6:14-17, 10:2 y 18:23-24 revisados; 2:12 y 13:14 los toma «carro de Israel…» (forma más larga). Ref «1R 4:26». El texto sigue valiendo."
+ },
+ "marfil": {
+  "veredicto": "OK",
+  "nota": "Easton (Ivory): colmillos de elefante, adorno antiguo, trono de Salomón (1R 10:18) y naves de Tarsis desde las Indias (10:22). 10:18, 10:22 y 22:39 cotejados."
+ },
+ "simios-pavos": {
+  "veredicto": "OK",
+  "nota": "Easton (Ape y Peacock): koph (mono, nombre indio) y tuk (pavo real, ave de la India), 1R 10:22. 10:22 cotejado."
+ },
+ "cabrahigos": {
+  "veredicto": "OK",
+  "nota": "Easton (Sycamore): árbol parecido a la higuera, hallado sobre todo en las tierras bajas, cita 1R 10:27. 10:27 cotejado. Que el «cabrahigo» de la RV1909 sea el sicómoro es lo que dice Easton al citar ese versículo."
+ },
+ "acemilas": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (acémila: mula, animal de carga, cruce de caballo y asno) y Easton (Mule, cita 1R 10:25). 10:25 y 18:5 cotejados."
+ },
+ "maestresalas": {
+  "veredicto": "OK",
+  "nota": "Wikcionario abierto (criado principal que asistía a la mesa de un señor y presentaba y distribuía la comida). 10:5 cotejado."
+ },
+ "chemos": {
+  "veredicto": "OK",
+  "nota": "Easton (Chemosh): dios de los moabitas, su culto introducido en Jerusalén por Salomón (1R 11:7). 11:7 y 11:33 cotejados. | 2 Reyes: 2R 23:13 revisado; el texto cita 1R 11:7 (ahora con «1R»)."
+ },
+ "milcom": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Moloch): Milcom es otro nombre de Moloc (cita 1R 11:5 y 11:33). Keil y Delitzsch (11:5) lo distinguen del Moloc con artículo y dicen que no se puede precisar la diferencia: se añade para no decidir por el lector, con su fuente."
+ },
+ "becerros-jeroboam": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Calf): Jeroboam, dos becerros en Dan y Betel para impedir que las diez tribus fueran a Jerusalén. 12:27-32 y Ex 32:4 cotejados. | 2 Reyes: 2R 10:29 y 17:16 revisados; refs con «1R»."
+ },
+ "varon-dios": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Prophet): portavoz de Dios, «la boca por la que Dios habla». Se quitó la cita de 17:24 (primera aparición 13:1; adelanto) y el nino pasa a «Parece ser…» porque es inferencia. | 2 Reyes: 33 apariciones de 2R revisadas (6:10 queda sin subrayar por ser el mismo pasaje que 6:6 y 6:9). El texto hablaba de «En 1 Reyes»: se neutraliza con «1R 13:1»."
+ },
+ "enebro-retama": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Juniper): rothem/retem, retama española, el arbusto más grande de esos desiertos, sombra, leña; cita 1R 19:4-5. Se quitó «no el enebro que conocemos hoy» (no lo dice Easton)."
+ },
+ "manto-elias": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Mantle): 'addereth, gran prenda exterior, el de Elías probablemente de piel de oveja. Se quitó «se lleva sobre los hombros» (no lo dice Easton). 19:13 y 19:19-20 cotejados. | 2 Reyes: 2R 2:8 y 2:13-14 revisados; refs con «1R». El texto no adelanta nada."
+ },
+ "gananes": {
+  "veredicto": "OK",
+  "nota": "Wikcionario abierto (gañán: peón empleado en tareas de labranza). 19:19 cotejado."
+ },
+ "silbo": {
+  "veredicto": "OK",
+  "nota": "Wikcionario abierto (sonido agudo que hace el aire o que se hace con la boca). 19:12 cotejado."
+ },
+ "lancetas": {
+  "veredicto": "OK",
+  "nota": "Wikcionario abierto (lanceta: instrumento de hoja de acero muy afilada para sangrar o abrir tumores; sajar: hacer cortaduras en la carne). 18:28 cotejado; el versículo está plegado para niño."
+ },
+ "blasfemar": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Blasphemy): hablar mal de Dios y, en general, calumnia o insulto, cita 1R 21:10. Lv 24:16 y 21:10-13 cotejados. nino sin violencia. | 2 Reyes: 2R 19:6 y 19:22 («blasfemado») revisados. El texto hablaba solo de Nabot y de «21:10», que en 2 R es otro capítulo: refs con «1R» y nino sin «aquí»."
+ },
+ "lampara-david": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Lamp): metáfora de vida, bienestar o guía (2S 21:17). 11:36 y 15:4 cotejados. El nino afirmaba la lectura como hecho: pasa a «Parece ser…» (es inferencia)."
+ },
+ "1r-6-480-anos": {
+  "veredicto": "AJUSTAR",
+  "nota": "Keil y Delitzsch 6:1 (480 frente a 440 de la LXX; Böttcher/Bertheau 12×40; Thenius y 484; Preuss) y Matthew Henry (40+17+299+40+40+40+4 = 480) abiertos y cotejados. Abarbanel (hebreo, Sefaria 6:1): él se pregunta por qué no cuenta desde la creación; se corrigió «observa». nino: «número redondo» pasa a «doce generaciones de cuarenta años» (lo que dice Böttcher). El pasaje no lleva cálculo propio: las sumas de `calculos_1r` (533 TM, 513 LXX frente a 480/440) no se usan ni se contradicen."
+ },
+ "1r-3-dos-mujeres": {
+  "veredicto": "AJUSTAR",
+  "nota": "Matthew Henry y Keil y Delitzsch 3:16-28 abiertos: coinciden. Rashi 3:27 (Sefaria, ed. Metsudah): voz divina; coincide. Radak 3:27 (hebreo): no dice «la primera mujer», sino la que se compadece: corregido. nino a null: contenido.js pliega 3:16-27 para niño, así que la app no mostraría nada."
+ },
+ "1r-11-mujeres-salomon": {
+  "veredicto": "AJUSTAR",
+  "nota": "Radak 11:1 (hebreo): matiz añadido (la hija de Faraón no desvió su corazón hasta la vejez). Ralbag 11:4 (hebreo), Rashi 11:7 (Metsudah) y Keil y Delitzsch 11:1-8 (números redondos, nota sobre error de letras numerales, no sacrificó él) cotejados. Dt 17:17 anterior. nino coherente (11:1-8 no se pliega)."
+ },
+ "1r-13-profeta-leon": {
+  "veredicto": "AJUSTAR",
+  "nota": "Radak 13:18 y 13:28 (hebreo), Keil y Delitzsch 13:18-26 y Matthew Henry 13 cotejados; sin adelantos. nino a null: contenido.js pliega 13:24-28 (león) para niño y el rango 13:7-32 los incluye."
+ },
+ "1r-18-profetas-baal": {
+  "veredicto": "OK",
+  "nota": "Radak 18:40 (hebreo) y Keil y Delitzsch 18:40 (Dt 17:2-3 y 13:13; mensajero extraordinario; no se deduce un derecho a perseguir) cotejados. nino null correcto: 18:40 está plegado (alto)."
+ },
+ "1r-19-silbo-apacible": {
+  "veredicto": "OK",
+  "nota": "Rashi 19:11-12 (Targum Yonatán), Radak 19:11-13 (hebreo; la recompensa por el Carmelo es de 19:13) y Keil y Delitzsch 19:11-12 (segundo Moisés, Herder) cotejados. nino coherente: 19:11-13 no está plegado."
+ },
+ "1r-21-nabot": {
+  "veredicto": "AJUSTAR",
+  "nota": "Keil y Delitzsch 21:3 y 21:11, Radak 21:10 (hebreo) y Rashi 21:15 (Metsudah) cotejados. nino a null: contenido.js pliega 21:10-13 para niño y el rango 21:1-16 los incluye."
+ },
+ "1r-22-espiritu-mentira": {
+  "veredicto": "AJUSTAR",
+  "nota": "Rashi 22:19 y 22:21 (Sanedrín 89a), Radak 22:20 (hebreo), Keil y Delitzsch 22:19-23 y Matthew Henry cotejados. Radak: se precisó lo que dice del Rambam (solo la sangre de Nabot pesaba contra Acab). nino coherente (22:19-23 no se pliega)."
+ },
+ "nehustan": {
+  "veredicto": "OK",
+  "nota": "Easton (Nehushtan) abierto: «of copper; a brazen thing», nombre de desprecio; coincide con 18:4. Una sola aparición, sin adelantos."
+ },
+ "tofet": {
+  "veredicto": "OK",
+  "nota": "Easton (Tophet) abierto: toph «tambor» o taph/toph «quemar»; las dos etimologías coinciden. 23:10 cotejado (valle de Hinnom, Moloc). Única aparición; nino sin violencia."
+ },
+ "rabsaces": {
+  "veredicto": "OK",
+  "nota": "Easton (Rabshakeh) abierto: «chief of the princes», copero mayor o visir, enviado a Ezequías. 18:17 cotejado."
+ },
+ "tartan": {
+  "veredicto": "OK",
+  "nota": "Easton (Tartan) abierto: «the commander-in-chief», enviado (2 R 18:17). Isa 20:1 de Easton no se usa."
+ },
+ "rabsaris": {
+  "veredicto": "OK",
+  "nota": "Easton (Rabsaris) abierto: «chief of the Heads», uno de los tres oficiales de 18:17; Jer 39 no se usa."
+ },
+ "reloj-acaz": {
+  "veredicto": "OK",
+  "nota": "Easton (Dial) y Keil y Delitzsch (20:11) abiertos: ma'aloth «escalones»/«grados» (Easton); KD lo entienden gnomon, no escalones de palacio, y dicen que no se puede inferir más. «grados» solo aparece en 20:9-11."
+ },
+ "dioses-colonos": {
+  "veredicto": "OK",
+  "nota": "Easton abierto en Nergal, Succoth-benoth, Nibhaz, Tartak, Adrammelech y Anammelech: coinciden con el texto (17:30-31). Asima: sin entrada en Easton (404), como dice el término. Sin adelantos."
+ },
+ "trasportar": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (trasportar): «variante de transportar». El sentido «deportar» va marcado como inferencia. Todas las apariciones son de 2 R (1S 18:10 «trasportes» no coincide)."
+ },
+ "libro-ley": {
+  "veredicto": "OK",
+  "nota": "Easton (Hilkiah) abierto: «book of the law» 22:8 y «book of the covenant» 23:2; algunos suponen que era el autógrafo del Pentateuco, como dice el término. `solo` acotado a 22:8, 22:11, 23:2 y 23:21; formas verificadas en el texto."
+ },
+ "baal-zebub": {
+  "veredicto": "OK",
+  "nota": "Easton (Baal-zebub) abierto: «fly-lord», dios filisteo de Ecrón, plaga de moscas, consultado por Ocozías. 1:2, 1:3, 1:6 y 1:16 cotejados."
+ },
+ "rimmon": {
+  "veredicto": "OK",
+  "nota": "Easton (Rimmon) y Keil y Delitzsch (5:17-18) abiertos: ídolo sirio, «pomegranate»; KD: dios supremo de Damasco, probablemente Hadad-Rimmón, Hadad = dios sol; derivaciones discutidas. Coinciden."
+ },
+ "cabo-medida": {
+  "veredicto": "OK",
+  "nota": "Easton (Cab y Ephah) abiertos: el cabo es 1/6 de seah, 1/18 de efa, unos dos cuartos de galón. Pasos recalculados: 22÷18 = 1,22 L; 19÷18 = 1,06; 36÷18 = 2,0; un cuarto 0,31 / 0,26 / 0,5 L; 2 × 0,946 = 1,9 L dentro del rango. Texto 6:25 literal. «Cabo» solo se toma en «cuarta de un cabo» (sin ambigüedad con «cabo» = extremo)."
+ },
+ "porcion-doble": {
+  "veredicto": "OK",
+  "nota": "Keil y Delitzsch (2:9) abiertos: «double portion», ley del primogénito (Dt 21:17), rechazan «el doble de espíritu»; Easton (Birthright): doble porción (Dt 21:15-17). Dt 21:17 cotejado con el texto."
+ },
+ "carro-israel": {
+  "veredicto": "OK",
+  "nota": "Keil y Delitzsch (2:12) abiertos: «padre mío» como padre espiritual; carro y caballería = defensa del reino. Coincide. (KD citan 13:14; el término no lo usa.)"
+ },
+ "pythones": {
+  "veredicto": "OK",
+  "nota": "Easton (Familiar spirit) abierto: nigromantes, 'ob = odre de cuero, equivalente al pytho griego. Primera aparición 1S 28:9; Dt 18:11 anterior; sin adelantos. nino sin violencia."
+ },
+ "camoreos": {
+  "veredicto": "OK",
+  "nota": "Easton (Chemarim) y KD (23:5) abiertos: «idolatrous priests» en 23:5, etimología discutida (Kamaru «postrarse» / «los de negro»); KD: sacerdotes no levitas puestos por los reyes de Judá, distintos de los que quemaban a Baal. Coincide."
+ },
+ "caballos-sol": {
+  "veredicto": "OK",
+  "nota": "Keil y Delitzsch (23:11) abiertos: caballos vivos, no imágenes; carros quemados; procesiones (rabinos); culto de Asia, quizá por los asirios. Coincide."
+ },
+ "alcuza": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (alcuza): vasija o botella, generalmente cónica, para aceite. 9:1 y 9:3 cotejados."
+ },
+ "escudilla": {
+  "veredicto": "OK",
+  "nota": "Wikcionario (escudilla): vasija semiesférica para alimentos caldosos. 21:13 cotejado. Nota: «escudillas» (plural, Ex 25:29, Nm 4:7) no es forma de este término, a propósito (otra vasija)."
+ },
+ "hijos-profetas": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Prophet) abierto: «sons/disciples» jóvenes que vivían juntos en escuelas y se formaban para ser profetas. La primera aparición es 1R 20:35 y `solo` la dejaba fuera: se quitó `solo`; la explicación citaba Betel y Jericó (2:3, 2:5), posteriores: se reescribe sin ellos y con cita de 1R 20:35."
+ },
+ "eunuco": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Eunuch) abierto: «bed-keeper, chamberlain», no siempre mutilado. La primera aparición es Gn 37:36 (Potifar) y el texto citaba 2R 8:6 (posterior): se cambia la cita a Gn 37:36 y se neutraliza el texto. nino sin sexo ni violencia."
+ },
+ "escriba": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Scribes) abierto: sopher = secretario de estado que prepara decretos; escribas subordinados, la mayoría levitas (cita 2S 8:17; 1R 4:3). La primera aparición es 2S 8:17 y la cita era 2R 18:18 (posterior): se cambia a 2S 8:17."
+ },
+ "estatuas-baal": {
+  "veredicto": "AJUSTAR",
+  "nota": "Keil y Delitzsch (10:26) y Easton (Pillar) abiertos: «columnas» (matstsebah); Easton: pilar como soporte, trofeo o monumento. Se quitó «unas de madera y otra, piedra cónica» (es de 10:26, posterior a la primera aparición en 3:2) y «de Baal» como regla (17:10 y 23:14 no lo dicen). Duda: `solo` deja sin explicar «estatuas» de Ex 23:24, Dt 16:22, Lv 26:1, 1R 14:23; no hay fuente que asegure que son matstsebah."
+ },
+ "ejercito-cielo": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Host of heaven) abierto: sol, luna y estrellas; adora a ellos cuando los judíos cayeron en idolatría. Se quitó esa frase (historia posterior a la primera aparición, Dt 4:19) y queda Dt 4:19 y Easton."
+ },
+ "pasar-fuego": {
+  "veredicto": "AJUSTAR",
+  "nota": "Easton (Moloch) abierto: niños sacrificados por fuego (lectura de Easton, el texto no lo dice). Faltaba la forma de Dt 18:10 («haga pasar su hijo ó su hija por el fuego»): añadida; Lv 18:21 lleva corchetes en el texto y queda a cargo de «Moloc». nino sin violencia gráfica."
+ },
+ "celosia": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario (celosía) abierto. La primera aparición es Jue 5:28 y `solo` la dejaba fuera: se quita `solo`; la cita pasa a Jue 5:28 (la de 2R 1:2 era posterior)."
+ },
+ "botija": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario (botija, 1.ª acepción: vasija de cuello corto y estrecho). Primera aparición 1S 26:11 («la botija del agua»); `solo` la excluía: se quita y se cita 1S 26:11."
+ },
+ "bordon": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario (bordón, 1.ª acepción: bastón más alto que un hombre, con punta de hierro). Primera aparición Gn 32:10; `solo` la excluía: se quita y se cita Gn 32:10."
+ },
+ "emprestada": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario (emprestar): «prestar» (anticuado) y «solicitar en préstamo». Aparece antes en Ex 22:25, Dt 24:10 y Dt 28:12 (con «emprestado»): se añade la forma «emprestado», se quita `solo` y se cita Ex 22:25."
+ },
+ "alcohol": {
+  "veredicto": "AJUSTAR",
+  "nota": "Wikcionario (alcohol), acepción 4: sustancia negra del hollín, maquillaje de ojos y cejas. Se quitó «polvo» (la palabra no se lee en lo consultado). 9:30 cotejado."
+ },
+ "2r-2-osos-betel": {
+  "veredicto": "OK",
+  "nota": "KD 2:23-24 (calvo no por lepra; castigar en los hijos las culpas de los padres), Matthew Henry (reproche a su condición de profeta), Rashi 2:23 (Sefaria; «Void of mitzvos», «has hecho calvo el lugar», Sotá; nota Metsudah) y Radak 2:24 (hebreo: discrepan los sabios; milagro dentro de milagro) abiertos y cotejados. nino null correcto: contenido.js pliega 2:23-24. Sin adelantos."
+ },
+ "2r-3-sacrificio-mesa": {
+  "veredicto": "OK",
+  "nota": "KD 3:27 (a Quemos; qetsef = ira divina; Lv 18:21, 20:3), Matthew Henry (3:27: Quemos, aterrar, exasperar), Radak 3:27 (hebreo: su padre, su hermano, el midrás) y Rashi 3:27 (Pesiqta, enojo, nota Metsudah) abiertos y cotejados. nino null: 3:27 se pliega."
+ },
+ "2r-5-naaman-rimmon": {
+  "veredicto": "AJUSTAR",
+  "nota": "KD 5:17-19, Matthew Henry (excusa, «no justificable») y Rashi 5:18 (Sefaria) abiertos. Rashi dice «nombre de una deidad pagana» y «contra mi voluntad», no «idolatría» ni «por fuerza»: corregido. nino coherente (5:17-19 no se pliega)."
+ },
+ "2r-6-madres-samaria": {
+  "veredicto": "OK",
+  "nota": "KD (Lv 26:29, Dt 28:53 y 57), Matthew Henry («barbarous agreement», Dt 28:53-57) y Radak 6:29 (hebreo: ella sola o por compasión) abiertos. nino null: 6:28-29 se pliega."
+ },
+ "2r-10-jehu-aprobacion": {
+  "veredicto": "OK",
+  "nota": "KD 10:28 («objectively... in accordance with the law», motivos egoístas), Matthew Henry (10:30-31) y Radak 10:30 (hebreo: cuatro generaciones, Baal sí, becerros no) abiertos y cotejados. nino coherente (10:28-31 no se pliega)."
+ },
+ "2r-20-sombra-reloj": {
+  "veredicto": "AJUSTAR",
+  "nota": "KD 20:8-11 (refracción milagrosa, gnomon), Matthew Henry (Patrick), Easton (Dial) y Radak 20:11 (hebreo; Targum: piedra marcada) abiertos. Radak habla de «diez grados» devueltos a Ezequías, no «diez horas»: corregido. Sin adelantos."
+ },
+ "2r-23-muerte-josias": {
+  "veredicto": "OK",
+  "nota": "KD 22:20 (reunido con sus padres = morir; 1R 22:34 y 40; «en paz» = sin ver la ruina), Rashi 22:20 con nota Metsudah que cita a Radak (Sefaria) y Matthew Henry (23:26-30) abiertos. nino coherente (23:29 se anota, no se pliega)."
+ },
+ "2r-24-pecados-manases": {
+  "veredicto": "OK",
+  "nota": "KD 24:3-4 (por dicho de Jehová, medida colmada), Matthew Henry (23:26-30), Radak 24:3 (hebreo; decreto anterior a Joacim) y Metzudat David 24:4 (hebreo) abiertos y cotejados. Las citas 21:16 y 23:26 son anteriores."
+ }
 }

@@ -245,6 +245,11 @@ prueba('contexto de una persona calculado de las relaciones', () => {
   const hasta = k => r => N.clave(r) !== null && N.clave(r) <= N.clave(k);
   assert.equal(N.contextoPersona(D, 'Cain_1', hasta('Gn 4:16')), 'hijo de Adán y Eva');
   assert.equal(N.contextoPersona(D, 'Cain_1', () => false), '');
+  // Abuelo registrado también como «padre» («hijo de Nimsi», 1 R 19:16; 2 R 9:2): solo el padre directo.
+  const Dj = { personas: [{ id: 'J', nombre: 'Jehú', sexo: 'm' }, { id: 'F', nombre: 'Josafat', sexo: 'm' }, { id: 'N', nombre: 'Nimsi', sexo: 'm' }],
+    relaciones: [{ tipo: 'padre', de: 'N', a: 'J', ref: '1R 19:16' }, { tipo: 'padre', de: 'F', a: 'J', ref: '2R 9:2' }, { tipo: 'padre', de: 'N', a: 'F', ref: '2R 9:2' }] };
+  assert.equal(N.contextoPersona(Dj, 'J'), 'hijo de Josafat');
+  assert.equal(N.contextoPersona(Dj, 'J', r => r === '1R 19:16'), 'hijo de Nimsi', 'antes de leer 2 R 9:2 solo se sabe «hijo de Nimsi»');
 });
 prueba('contenido del acompañante para un ref', () => {
   const a = j(N.acompanante(D, ['Gn 4:19']));
@@ -969,7 +974,9 @@ if (existsSync(real)) {
   if ((D2.libros || []).some(l => l.id === '1R')) {
     prueba('1 Reyes: id «1R», selector, 8 secciones, lector sin huecos (816; 22:51 «Y durmió Josaphat»), lectura en orden tras 2 S y tiempo', () => {
       assert.deepEqual(j(N2.parseRef('1 Reyes 18:19')), { libro: '1R', cap: 18, v: 19 });
-      assert.equal(N2.nombreLibro(D2, '1R'), '1 Reyes'); assert.equal(j(N2.libros(D2)).pop().id, '1R');
+      assert.equal(N2.nombreLibro(D2, '1R'), '1 Reyes');
+      const LB3 = j(N2.libros(D2)).map(l => l.id), i3 = LB3.indexOf('1R');
+      assert.ok(i3 > 0 && LB3[i3 - 1] === '2S' && (i3 === LB3.length - 1 || LB3[i3 + 1] === '2R'), '1 R va tras 2 S y antes de 2 R (si está)');
       assert.ok(N2.clave('1R 1:1') > N2.clave('2S 24:25'));
       const ps = j(N2.pasajes(D2)), i = ps.findIndex(p => p.id === '1r-01');
       assert.equal(ps[i - 1].id, ps.filter(p => N2.libroDe(p) === '2S').pop().id, '1r-01 va justo después del último de 2 Samuel');
@@ -1015,6 +1022,58 @@ if (existsSync(real)) {
       assert.equal(NC.marcaDe(CR, '1R 18:40').nivel, 'alto'); assert.equal(NC.marcaDe(CR, '1R 22:35').nivel, 'alto');
       assert.equal(NC.marcaDe(CR, '1R 21:13').nivel, 'medio'); assert.equal(NC.marcaDe(CR, '1R 3:25').categoria, 'crueldad');
       assert.equal(NC.marcaDe(CR, '1R 6:1'), null); assert.equal(NC.marcaDe(CR, '1R 11:3'), null);
+    });
+  }
+  if ((D2.libros || []).some(l => l.id === '2R')) {
+    prueba('2 Reyes: id «2R», selector, 8 secciones, lector sin huecos (719; 11:21 «Era Joas»), lectura en orden tras 1 R y tiempo', () => {
+      assert.deepEqual(j(N2.parseRef('2 Reyes 2:11')), { libro: '2R', cap: 2, v: 11 });
+      assert.equal(N2.nombreLibro(D2, '2R'), '2 Reyes');
+      const LB4 = j(N2.libros(D2)).map(l => l.id), i4 = LB4.indexOf('2R');
+      assert.ok(i4 > 0 && LB4[i4 - 1] === '1R', '2 R va tras 1 R');
+      assert.ok(N2.clave('2R 1:1') > N2.clave('1R 22:53'));
+      const ps = j(N2.pasajes(D2)), i = ps.findIndex(p => p.id === '2r-01');
+      assert.equal(ps[i - 1].id, ps.filter(p => N2.libroDe(p) === '1R').pop().id, '2r-01 va justo después del último de 1 Reyes');
+      assert.equal(j(N2.seccionesPlan(D2, ['2r-01'], '2r-02', '2R')).length, 8);
+      const vs = ps.filter(p => N2.libroDe(p) === '2R').flatMap(p => j(N2.versiculosDe(D2, p)));
+      assert.equal(vs.length, 719); assert.equal(new Set(vs.map(v => v.ref)).size, 719); assert.ok(vs.every(v => v.texto));
+      const t = r => vs.find(v => v.ref === r).texto;
+      assert.ok(/^Era Joas de siete años/.test(t('2R 11:21')) && /^EN el séptimo año de Jehú/.test(t('2R 12:1')) && /Elías subió al cielo en un torbellino/.test(t('2R 2:11')));
+      const antes = ps.slice(0, i).map(p => p.id), A = N2.accesibles(D2, antes);
+      assert.equal(N2.frontera(D2, antes).id, '2r-01');
+      assert.ok(A.ref('2R 1:18') && !A.ref('2R 2:1') && !A.pasaje('2r-02'), '2 Reyes se abre pasaje a pasaje');
+      assert.ok(!N2.accesibles(D2, antes.slice(0, -1)).ref('2R 1:1'), 'sin terminar 1 Reyes, 2 Reyes sigue bloqueado');
+      const pal = N2.palabrasPasaje(D2, ps[i]); assert.ok(pal > 150);
+      assert.equal(N2.segundosMinimos(pal, { tipo: 'adulto' }), Math.ceil(pal / 250 * 60));
+    });
+    prueba('2 Reyes: personas (Jehú hijo de Josafat, Atalía sin armonizar, Joram y Joás por orden, Azarías/Uzías), cronología y mapa', () => {
+      const seg = r => { const v = j(N2.versiculosDe(D2, N2.pasajeDe(D2, r))).find(x => x.ref === r); return j(N2.segmentar(D2, r, v.texto)).filter(x => x.persona || x.lugar).map(x => [x.texto, x.persona || x.lugar]); };
+      assert.ok(seg('2R 9:2').some(x => x[0] === 'Jehú' && x[1] === 'Jehu_2') && seg('2R 9:2').some(x => x[0] === 'Josaphat' && x[1] === 'Jehoshaphat_4'));
+      assert.deepEqual(seg('2R 8:29').filter(x => x[0] === 'Joram').map(x => x[1]), ['Jehoram_2', 'Jehoram_1', 'Jehoram_2']);
+      assert.deepEqual(seg('2R 14:1').filter(x => x[0] === 'Joas').map(x => x[1]), ['Joash_4', 'Joash_3']);
+      assert.ok(seg('2R 15:13').some(x => x[0] === 'Uzzía' && x[1] === 'Azariah_3') && seg('2R 15:1').some(x => x[0] === 'Azarías' && x[1] === 'Azariah_3'));
+      assert.ok(seg('2R 18:21').every(x => x[1] !== 'So_1'), 'el Faraón de 18:21 no es So');
+      assert.ok(seg('2R 17:6').some(x => x[1] === 'samaria') && seg('2R 17:6').some(x => x[1] === 'gozan') && seg('2R 25:6').some(x => x[0] === 'Ribla'));
+      const P = Object.fromEntries(D2.personas.map(x => [x.id, x]));
+      assert.ok(P.Jehu_2.refs.includes('1R 19:16') && P.Jehu_2.refs.includes('2R 9:2') && !P.Jehoshaphat_3.refs.includes('2R 9:2'));
+      assert.equal(P.Azariah_3.identidad.certeza, 'inferido'); assert.equal(P.Mattaniah_1.identidad.certeza, 'texto');
+      const R = new Map(D2.relaciones.map(x => [`${x.de}>${x.a}>${x.tipo}`, x]));
+      assert.equal(R.get('Omri_1>Athaliah_1>padre').certeza, 'explicito'); assert.equal(R.get('Ahab_1>Athaliah_1>padre').certeza, 'inferido');
+      assert.ok(R.has('Jehoshaphat_4>Jehu_2>padre') && R.has('Nimshi_1>Jehoshaphat_4>padre') && R.has('Nimshi_1>Jehu_2>padre'), 'Jehú: lo que dice cada versículo');
+      ['Ahaz_1>Hezekiah_1>padre', 'Hephzibah_1>Manasseh_3>madre', 'Zibiah_1>Joash_3>madre', 'Athaliah_1>Ahaziah_2>madre'].forEach(k => assert.ok(R.has(k), k));
+      const C = D2.cronologia, rei = C.reinados.filter(r => r.duracion.TM.ref.startsWith('2R '));
+      assert.equal(rei.length, 27); assert.equal(rei.find(r => r.persona === 'Hezekiah_1').sincronismo.TM.anio, 3);
+      const cs = C.calculos_2r; assert.equal(cs.length, 6);
+      cs.forEach(c => { assert.equal(c.certeza, 'calculo'); assert.equal(c.total, c.pasos.reduce((a, p) => a + p.valor * p.signo, 0)); assert.ok(c.advertencia && c.comparacion.nota); });
+      assert.equal(cs.find(c => c.id === '2r-ocozias-juda').comparacion.TM.valor, 11);
+      assert.ok(!C.eventos.some(e => (e.ref || '').startsWith('2R ')), 'sin años desde Adán en 2 R');
+      assert.ok(['samaria', 'jerico', 'ninive', 'babilonia', 'laquis', 'ribla-23-33'].every(id => j(N2.lugaresDeRefs(D2, ['2R 17:6', '2R 2:4', '2R 19:36', '2R 20:12', '2R 18:14', '2R 25:6'])).includes(id)));
+    });
+    const rc10 = path.join(aqui, '..', 'datos', 'contenido.js');
+    if (existsSync(rc10)) prueba('2 Reyes: marcas de contenido (osos, Mesa, madres, Jezabel, Sedecías altos; el fuego medio; Naamán sin marca)', () => {
+      const cr = cargar(rc10, path.join(aqui, '..', 'app.js')), NC = cr.BibliaNucleo, CR = cr.BIBLIA_CONTENIDO;
+      ['2R 2:24', '2R 3:27', '2R 6:29', '2R 9:33', '2R 10:7', '2R 10:25', '2R 25:7', '2R 15:16', '2R 8:12'].forEach(r => assert.equal(NC.marcaDe(CR, r).nivel, 'alto', r));
+      ['2R 16:3', '2R 17:17', '2R 21:6', '2R 19:35', '2R 23:16', '2R 23:20', '2R 11:16'].forEach(r => assert.equal(NC.marcaDe(CR, r).nivel, 'medio', r));
+      assert.equal(NC.marcaDe(CR, '2R 6:28').categoria, 'crueldad'); assert.equal(NC.marcaDe(CR, '2R 5:14'), null); assert.equal(NC.marcaDe(CR, '2R 2:11'), null);
     });
   }
 } else console.log('(datos/biblia.js aún no existe: se omiten las pruebas con datos reales)');
@@ -1207,7 +1266,7 @@ if (existsSync(real)) {
         assert.ok(por['1R 20:1'].gr.includes('υἱὸς Ἁδὲρ') && por['1R 21:1'].gr.includes('Ναβουθαὶ'), 'RV 20 = Swete 21; RV 21 = Swete 20');
         assert.ok(!/\[\d+\]/.test(por['1R 12:24'].gr) && /Σουσακεὶμ/.test(G.bloques_sin_paralelo.find(b => b.brenton === '12:24a-z').texto), 'el bloque 12:24a-z va aparte');
         assert.ok(/bloques_sin_paralelo/.test(G.sin_texto['1R 14:1']) && /16:28/.test(G.sin_texto['1R 22:47']));
-        assert.equal(G.bloques_sin_paralelo.length, 11);
+        assert.equal(G.bloques_sin_paralelo.filter(b => b.tras.startsWith('1R ')).length, 11);
       });
       prueba('1 Reyes: testigos (4Q54, 5Q2, 6Q4; Vaticano sin lo que la LXX no tiene en su sitio), variantes y video', () => {
         const ids = refs => j(NO.testigosDe(O, refs)).map(t => t.id);
@@ -1217,6 +1276,27 @@ if (existsSync(real)) {
         assert.deepEqual(j(NO.variantesDe(O, ['1R 6:1']))[0].lecturas.map(l => l.cifra), [480, 440]);
         assert.deepEqual(j(NO.variantesDe(O, ['1R 8:16']))[0].lecturas.map(l => l.testigos[0]), ['leningrado', '4Q54', 'vaticano']);
         assert.deepEqual(j(O.videos.filter(x => x.libro === '1R').map(x => x.youtube_id)), ['8V-TefJJc0g']);
+      });
+    }
+    if ((D.libros || []).some(l => l.id === '2R') && Object.keys(O.hebreo).some(r => r.startsWith('2R '))) {
+      console.log('Textos originales reales (2 Reyes)');
+      prueba('2 Reyes: hebreo en los 719 (RV 11:21 = TM 12:1, RV 12:21 = TM 12:22); griego salvo 25:10; bloque 1:18a-d aparte; testigos, variantes y video', () => {
+        const f = j(NO.alinearOriginales(D, { inicio: '2R 1:1', fin: '2R 25:30' }, O, G));
+        assert.equal(f.length, 719);
+        assert.ok(f.every(x => x.he), 'todos los versículos con hebreo');
+        const por = Object.fromEntries(f.map(x => [x.ref, x]));
+        assert.equal(O.hebreo['2R 11:21'].r, '2R 12:1'); assert.equal(O.hebreo['2R 12:21'].r, '2R 12:22'); assert.ok(!O.hebreo['2R 11:20'].r && !O.hebreo['2R 13:1'].r);
+        assert.ok(/Ἰωὰς/.test(G.texto['2R 11:21']) && !G.ref_griega['2R 11:21'], 'Swete numera 11:21 como la RV');
+        assert.deepEqual(Object.keys(G.sin_texto).filter(r => r.startsWith('2R ')), ['2R 25:10']);
+        assert.ok(!/\[\d+\]/.test(G.texto['2R 1:18']) && /Ἰωρὰμ υἱὸς Ἀχαὰβ/.test(G.bloques_sin_paralelo.find(b => b.brenton === '1:18a-d').texto));
+        const ids = refs => j(NO.testigosDe(O, refs)).map(t => t.id);
+        assert.ok(['leningrado', 'alepo', 'vaticano', 'alejandrino', '6Q4'].every(x => ids(['2R 7:8']).includes(x)) && !ids(['2R 7:8']).includes('sinaitico'));
+        assert.ok(!ids(['2R 16:1']).includes('alepo') && ids(['2R 14:20']).includes('alepo') && ids(['2R 18:14']).includes('alepo'), 'Alepo sin 2 R 14:21–18:13');
+        assert.ok(!ids(['2R 25:10']).includes('vaticano') && ids(['2R 25:11']).includes('vaticano'));
+        assert.deepEqual(j(NO.variantesDe(O, ['2R 1:17']))[0].lecturas.map(l => l.testigos[0]), ['leningrado', 'vaticano']);
+        assert.ok(j(NO.variantesDe(O, ['2R 12:21'])).length === 1);
+        assert.deepEqual(j(O.videos.filter(x => x.libro === '2R').map(x => x.youtube_id)), ['8V-TefJJc0g']);
+        assert.ok(por['2R 12:1'] && por['2R 12:1'].he);
       });
     }
   }
@@ -1282,6 +1362,14 @@ if (existsSync(real)) {
           assert.ok(j(NR.foliosDePasaje(MR, DR, de('1R 18:30'))).some(f => f.id === '198b'));
           assert.equal(NR.vaticanoDeLibro(MR, '1R').pagina, '395');
           assert.ok(j(NR.rollosDePasaje(MR, OR, DR, de('1R 8:16'))).some(x => x.id === '4Q54'));
+        }
+        if ((DR.libros || []).some(l => l.id === '2R')) {
+          assert.equal(ps.filter(p => NR.libroDe(p) === '2R').length, 52, 'los 52 pasajes de 2 R');
+          assert.deepEqual(j(NR.foliosDePasaje(MR, DR, de('2R 1:1'))).map(f => f.id), ['202b', '203a'], '2 R 1:1 en el folio que acaba 1 R');
+          assert.ok(j(NR.foliosDePasaje(MR, DR, de('2R 2:11'))).some(f => f.id === '203b'));
+          assert.ok(j(NR.foliosDePasaje(MR, DR, de('2R 12:4'))).some(f => f.id === '210a'), 'RV 12:4 (hebreo 12:5) en el folio 210a');
+          assert.equal(NR.vaticanoDeLibro(MR, '2R').pagina, '442');
+          assert.ok(j(NR.rollosDePasaje(MR, OR, DR, de('2R 7:8'))).some(x => x.id === '6Q4'));
         }
       });
     }

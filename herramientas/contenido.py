@@ -3,7 +3,7 @@ import json, re, sys, os, datetime
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATS = {"sexual", "violencia", "crueldad"}
 NIVELES = {"medio": 1, "alto": 2}
-LIBROS = ["Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S", "1R"]
+LIBROS = ["Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S", "1R", "2R"]
 
 def fallo(m):
     print("ERROR:", m); sys.exit(1)

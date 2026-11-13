@@ -1,0 +1,955 @@
+{
+ "hijos-profetas": {
+  "tipo": "concepto",
+  "lema": "hijos de los profetas",
+  "formas": [
+   "hijos de los profetas"
+  ],
+  "adulto": "«Hijos de los profetas» no significa hijos de sangre: son discípulos o seguidores de un profeta. Según Easton, eran jóvenes que vivían juntos en «escuelas de los profetas» y se formaban para ejercer el oficio de profeta; el texto, por su parte, no explica cómo se organizaban.",
+  "nino": "Grupos de discípulos que vivían juntos y seguían a un profeta. «Hijos» quiere decir «seguidores», no hijos de familia.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 20:35",
+    "cita": "un varón de los hijos de los profetas"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Prophet",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/prophet.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "nehustan": {
+  "tipo": "concepto",
+  "lema": "Nehustán",
+  "formas": [
+   "Nehustán"
+  ],
+  "adulto": "Nehustán es el nombre que el rey puso a la serpiente de bronce hecha por Moisés cuando la hizo pedazos, porque los hijos de Israel le quemaban perfumes (18:4). Según Easton, significa «cosa de bronce» y es un nombre de desprecio: una simple pieza de metal. Los hechos son del texto; el sentido del nombre, de Easton.",
+  "nino": "Un nombre que significa algo así como «pedazo de bronce». El rey lo usó para decir que la serpiente era solo un objeto y que no había que adorarla.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 18:4",
+    "cita": "llamóle por nombre Nehustán"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Nehushtan",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/nehushtan.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "tofet": {
+  "tipo": "concepto",
+  "lema": "Tofet (Topheth)",
+  "formas": [
+   "Topheth"
+  ],
+  "adulto": "Topheth (Tofet) estaba, según 23:10, en el valle del hijo de Hinnom, y era un lugar donde se hacía pasar por el fuego a hijos e hijas para Moloc. Easton explica el nombre de dos maneras: del hebreo toph, «tambor» (por el ruido con que se ahogarían los gritos de los niños sacrificados), o de taph o toph, «quemar», de modo que sería «lugar de quemar». Es una etimología discutida, no un dato del texto.",
+  "nino": "Un lugar en el valle de Hinnom, cerca de Jerusalén, donde se practicaban ritos del dios Moloc. El nombre quizá significa «lugar donde se quema».",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 23:10",
+    "cita": "profanó á Topheth, que está en el valle del hijo de Hinnom"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Tophet",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tophet.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "pasar-fuego": {
+  "tipo": "concepto",
+  "lema": "hacer pasar por el fuego (a un hijo)",
+  "formas": [
+   "pasar por el fuego",
+   "pasar á sus hijos y á sus hijas por fuego",
+   "pasó á su hijo por fuego",
+   "pasase su hijo ó su hija por fuego",
+   "haga pasar su hijo ó su hija por el fuego"
+  ],
+  "adulto": "«Hacer pasar a un hijo por el fuego» es una práctica que la Biblia atribuye a los pueblos de Canaán y que condena: la ley dice que no se halle en Israel «quien haga pasar su hijo ó su hija por el fuego» (Dt 18:10) y la relaciona con Moloc (Lv 18:21). La expresión por sí sola no dice si el niño moría. Easton, sobre Moloc, dice que se le sacrificaban niños por fuego; esa lectura es de Easton, no del versículo.",
+  "nino": "Un rito cruel de los pueblos vecinos, en el que se ofrecían niños al fuego para un dios falso. La Biblia lo prohíbe y lo condena.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Dt 18:10",
+    "cita": "haga pasar su hijo ó su hija por el fuego"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "2R 16:3",
+    "cita": "hizo pasar por el fuego á su hijo"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Lv 18:21",
+    "cita": "para hacerla pasar"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Moloch",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/moloch.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "carro-israel": {
+  "tipo": "concepto",
+  "lema": "«Carro de Israel y su gente de á caballo»",
+  "formas": [
+   "carro de Israel y su gente de á caballo"
+  ],
+  "adulto": "Es el grito de Eliseo cuando Elías es llevado (2:12). Keil y Delitzsch lo entienden así: «padre mío» lo dice Eliseo como discípulo, y los carros y la caballería eran aquello en que los reyes de Israel apoyaban el poder y la seguridad del reino; la frase presenta a Elías como la defensa fuerte que su ministerio fue para Israel. Es una lectura de esos autores: el texto no explica la frase.",
+  "nino": "Una manera de decir que Elías protegía a Israel como lo haría un ejército con carros y jinetes.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 2:12",
+    "cita": "carro de Israel y su gente de á caballo"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 2:12",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/2.htm",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "rabsaces": {
+  "tipo": "concepto",
+  "lema": "Rabsaces (cargo asirio)",
+  "formas": [
+   "Rabsaces"
+  ],
+  "adulto": "Rabsaces no es un nombre propio sino un título. Según Easton, es «jefe de los príncipes», el nombre dado al copero mayor o visir de la corte asiria. En 18:17 es uno de los tres enviados del rey de Asiria a Jerusalén.",
+  "nino": "Un título: el de un alto oficial del rey de Asiria, que habla en nombre de su rey.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 18:17",
+    "cita": "á Thartán y á Rabsaris y á Rabsaces"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Rabshakeh",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/rabshakeh.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "tartan": {
+  "tipo": "concepto",
+  "lema": "Tartán (cargo asirio)",
+  "formas": [
+   "Thartán"
+  ],
+  "adulto": "Tartán es una palabra asiria que, según Easton, significa «comandante en jefe». En 18:17 aparece, con Rabsaris y Rabsaces, entre los enviados del rey de Asiria a Jerusalén; el texto no explica el título.",
+  "nino": "Un título asirio: algo así como «general en jefe». Uno de los enviados del rey de Asiria.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 18:17",
+    "cita": "á Thartán y á Rabsaris"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Tartan",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tartan.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "rabsaris": {
+  "tipo": "concepto",
+  "lema": "Rabsaris (cargo asirio)",
+  "formas": [
+   "Rabsaris"
+  ],
+  "adulto": "Rabsaris es un título asirio que Easton traduce «jefe de las cabezas» (chief of the Heads) y describe como uno de los tres oficiales que el rey de Asiria envió a Jerusalén (18:17). El texto no explica el título.",
+  "nino": "Un título de un alto oficial del rey de Asiria, enviado a Jerusalén con otros dos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 18:17",
+    "cita": "á Thartán y á Rabsaris y á Rabsaces"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Rabsaris",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/rabsaris.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "reloj-acaz": {
+  "tipo": "concepto",
+  "lema": "los grados y el reloj de Acaz",
+  "formas": [
+   "grados",
+   "reloj de Achâz"
+  ],
+  "adulto": "Los «grados» (20:9-11) y el «reloj de Achâz» son un instrumento para medir el tiempo por una sombra. Easton explica que la palabra hebrea (ma'aloth) significa «escalones», se traduce «grados» en 20:9-11, y que probablemente eran escaleras sobre las que caía la sombra de una columna o un obelisco, que cubría más o menos escalones según la altura del sol. Keil y Delitzsch lo entienden como un reloj de sol con una escala de grados (un gnomon), no como escalones de un palacio. Cuál era su forma exacta no lo dice el texto.",
+  "nino": "Una especie de reloj de sol: una sombra caía sobre una escala y mostraba cómo avanzaba el día.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 20:9",
+    "cita": "diez grados"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Dial",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/dial.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 20:11",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/20.htm",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "dioses-colonos": {
+  "tipo": "concepto",
+  "lema": "los dioses de los pueblos traídos a Samaria",
+  "formas": [
+   "Succoth-benoth",
+   "Nergal",
+   "Asima",
+   "Nibhaz",
+   "Tharthac",
+   "Adra-melech",
+   "Anamelech"
+  ],
+  "adulto": "En 17:30-31 el texto dice quién hizo cada dios: los de Babilonia, a Succoth-benoth; los de Cutha, a Nergal; los de Hamath, a Asima; los Heveos, a Nibhaz y Tharthac; y los de Sepharvaim quemaban sus hijos al fuego a Adra-melech y Anamelech. Lo demás es de Easton: Nergal («el gran perro», es decir, león) sería un dios asirio y babilonio de la guerra y la caza, ligado a Cutha; Succoth-benoth, una diosa babilonia que se supone Zir-banit; Nibhaz, un ídolo, quizá en forma de perro; Tharthac, un dios de los Heveos; Adra-melech, una forma del dios sol de Sepharvaim; Anamelech, una diosa lunar. De Asima Easton no trae entrada. Las identificaciones son suposiciones de los diccionarios.",
+  "nino": "Los dioses que cada pueblo trajo a Samaria cuando el rey de Asiria los instaló allí. Cada pueblo hizo los suyos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 17:30",
+    "cita": "Los de Babilonia hicieron á Succoth-benoth, y los de Cutha hicieron á Nergal"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Nergal",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/nergal.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Succoth-benoth",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/succoth-benoth.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Nibhaz",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/nibhaz.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Tartak",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tartak.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Adrammelech",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/adrammelech.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Anammelech",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/anammelech.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "trasportar": {
+  "tipo": "palabra",
+  "lema": "trasportar (deportar)",
+  "formas": [
+   "trasportó",
+   "trasportólos",
+   "trasportado",
+   "trasportación"
+  ],
+  "adulto": "En la RV1909 «trasportar» es una variante antigua de «transportar» (Wikcionario). Aquí significa llevar a un pueblo fuera de su tierra, lo que hoy se llama «deportar»: el rey de Asiria «trasportó» a los habitantes de varias ciudades a Asiria (15:29). «Deportación» es el nombre moderno; el texto solo describe el hecho.",
+  "nino": "Llevar a la gente a la fuerza lejos de su tierra, a otro país.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 15:29",
+    "cita": "trasportólos á Asiria"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "trasportar",
+    "url": "https://es.wiktionary.org/wiki/trasportar",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "libro-ley": {
+  "tipo": "concepto",
+  "lema": "el libro de la ley (el libro hallado en el templo)",
+  "formas": [
+   "libro de la ley",
+   "libro del pacto",
+   "libro de esta alianza"
+  ],
+  "adulto": "Es el libro que el sumo sacerdote Hilcías dice haber hallado en la casa de Jehová (22:8). El texto lo llama «libro de la ley» y, más adelante, también «libro del pacto»; no dice qué libro era. Easton recoge que algunos suponen que era el ejemplar original de la ley de Moisés (el Pentateuco). Es una suposición, no un dato del texto.",
+  "nino": "El libro con la ley de Dios que se encontró en el templo. No se dice más sobre cómo era.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 22:8",
+    "cita": "El libro de la ley he hallado en la casa de Jehová"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Hilkiah",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/hilkiah.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "2R 22:8",
+   "2R 22:11",
+   "2R 23:2",
+   "2R 23:21"
+  ]
+ },
+ "baal-zebub": {
+  "tipo": "concepto",
+  "lema": "Baal-zebub",
+  "formas": [
+   "Baal-zebub"
+  ],
+  "adulto": "Según Easton, Baal-zebub («señor de las moscas») era el dios de los filisteos en Ecrón. Se creía que podía alejar la plaga de moscas que se temía en esa región. En 1:2 el rey Ocozías envía a consultarlo sobre si sanará de su enfermedad.",
+  "nino": "El dios de la ciudad filistea de Ecrón. Su nombre quizá significa «señor de las moscas».",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 1:2",
+    "cita": "consultad á Baal-zebub dios de Ecrón"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Baal-zebub",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/baal-zebub.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "rimmon": {
+  "tipo": "concepto",
+  "lema": "Rimmón",
+  "formas": [
+   "Rimmón"
+  ],
+  "adulto": "Rimmón es, según Easton, un ídolo sirio que solo se menciona en 5:18; el nombre significa «granada». Keil y Delitzsch lo entienden como el nombre del dios supremo de los sirios de Damasco, probablemente forma abreviada de Hadad-Rimmón, y ven en Hadad al dios sol de los sirios; el sentido de «Rimmón» se explica de varias maneras. El texto solo habla de «el templo de Rimmón».",
+  "nino": "El dios de los sirios de Damasco; tenía un templo en la tierra de Naamán.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 5:18",
+    "cita": "el templo de Rimmón"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Rimmon",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/rimmon.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 5:17-18",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/5.htm",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "2R 5:18"
+  ]
+ },
+ "alcohol": {
+  "tipo": "palabra",
+  "lema": "alcohol (polvo para los ojos)",
+  "formas": [
+   "alcohol"
+  ],
+  "adulto": "Aquí «alcohol» no es la bebida ni un líquido: según el Wikcionario, en su sentido 4 es una sustancia negra, obtenida del hollín u otra sustancia, utilizada como maquillaje para ojos y cejas en Oriente (kohl). En 9:30 Jezabel «adornó sus ojos con alcohol».",
+  "nino": "Un polvo negro que se usaba para pintarse los ojos, como el maquillaje de hoy.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 9:30",
+    "cita": "adornó sus ojos con alcohol"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "alcohol",
+    "url": "https://es.wiktionary.org/wiki/alcohol",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "eunuco": {
+  "tipo": "concepto",
+  "lema": "eunuco (funcionario de la corte)",
+  "formas": [
+   "eunuco",
+   "eunucos"
+  ],
+  "adulto": "Según Easton, «eunuco» significa literalmente «guardián de la cama» o chambelán, y no necesariamente era un hombre mutilado, aunque en las cortes orientales era común emplear a quienes lo estaban. Es un funcionario de la corte; el texto, al usar la palabra, no precisa de cuál de los dos casos se trata.",
+  "nino": "Un funcionario de confianza que servía en la casa de un rey o de un faraón.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Gn 37:36",
+    "cita": "Potiphar, eunuco de Faraón"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Eunuch",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/eunuch.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "cabo-medida": {
+  "tipo": "medida",
+  "lema": "cabo (medida de áridos)",
+  "formas": [
+   "cuarta de un cabo"
+  ],
+  "adulto": "El «cabo» es, según Easton, una medida de áridos: la sexta parte de un seah y la dieciochava de un efa, unos dos cuartos de galón ingleses. La «cuarta de un cabo» es entonces un cuarto de esa medida. En 6:25 el texto dice que en el hambre del cerco se pagaban cinco piezas de plata por «la cuarta de un cabo de estiércol de palomas». Las equivalencias actuales son una estimación con margen.",
+  "nino": "Una medida pequeña de grano; una cuarta parte era más o menos un vaso grande (es un cálculo).",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 6:25",
+    "cita": "la cuarta de un cabo de estiércol de palomas"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Cab",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cab.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Ephah",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephah.html",
+    "idioma": "en"
+   }
+  ],
+  "calculo": {
+   "resultado": "1 cabo ≈ 1,2 L (rango ≈ 1,1–2,0 L); ¼ de cabo ≈ 0,3 L (rango ≈ 0,26–0,5 L)",
+   "pasos": [
+    "Easton («Cab»): el cabo es la dieciochava parte del efa (y la sexta del seah); 1 efa = 18 cabos.",
+    "Con el efa ≈ 22 L (rango ≈ 19–36 L; ver «efa»): 22 L ÷ 18 ≈ 1,22 L por cabo; con 19 L, 1,06 L; con 36 L, 2,0 L.",
+    "Un cuarto de cabo: 1,22 L ÷ 4 ≈ 0,31 L; con 1,06 L, 0,26 L; con 2,0 L, 0,5 L.",
+    "Easton da además «unos dos cuartos de galón ingleses»: 2 × 0,946 L (cuarto estadounidense) ≈ 1,9 L por cabo, y ¼ ≈ 0,47 L, dentro del rango."
+   ],
+   "supuestos": [
+    "Se toma el efa ≈ 22 L; las estimaciones del efa van de ≈ 19 a ≈ 36 L (ver «efa»).",
+    "Easton no aclara de qué cuarto de galón habla; aquí se usa el estadounidense.",
+    "Que «la cuarta de un cabo» sea ¼ de esa medida es una lectura del versículo, no un dato de Easton."
+   ],
+   "fuente": {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Cab",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cab.html",
+    "idioma": "en"
+   }
+  },
+  "excluir": [],
+  "solo": null
+ },
+ "escriba": {
+  "tipo": "concepto",
+  "lema": "escriba (secretario del rey)",
+  "formas": [
+   "escriba",
+   "escribas"
+  ],
+  "adulto": "Según Easton, el hebreo sopher («escriba») designaba en el Antiguo Testamento a un alto funcionario: el secretario de estado que preparaba y despachaba los decretos del rey. Había además una clase de escribas subordinados, la mayoría levitas, que trabajaban como escritores. El versículo solo da el título, no el tipo de escriba.",
+  "nino": "El secretario del rey: el que escribía y guardaba los documentos importantes.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2S 8:17",
+    "cita": "Seraía era escriba"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Scribes",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/scribes.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "estatuas-baal": {
+  "tipo": "concepto",
+  "lema": "estatuas (columnas de culto)",
+  "formas": [
+   "estatua",
+   "estatuas"
+  ],
+  "adulto": "Aquí las «estatuas» no son figuras de personas: Keil y Delitzsch las traducen «columnas» (hebreo matstsebah), objetos de culto; en 3:2 son las de Baal. Easton dice que un «pilar» servía en la Biblia para sostener un edificio o como trofeo o monumento. Qué forma tenían estas columnas lo dicen los autores, no el texto.",
+  "nino": "Columnas o piedras levantadas en honor de un dios falso, no figuras de personas.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 3:2",
+    "cita": "quitó las estatuas de Baal"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 10:26",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/10.htm",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Pillar",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/pillar.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "2R 3:2",
+   "2R 10:26-27",
+   "2R 17:10",
+   "2R 23:14"
+  ]
+ },
+ "ejercito-cielo": {
+  "tipo": "concepto",
+  "lema": "el ejército del cielo",
+  "formas": [
+   "ejército del cielo",
+   "milicia del cielo"
+  ],
+  "adulto": "Según Easton, el «ejército del cielo» (o «milicia del cielo») es el sol, la luna y las estrellas. La ley ya prohíbe inclinarse a ellos: Dt 4:19 manda no alzar los ojos al cielo y, al ver el sol, la luna, las estrellas y «todo el ejército del cielo», no ser incitado a inclinarse a ellos y servirles.",
+  "nino": "El sol, la luna y las estrellas. La ley de Dios prohibía adorarlos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Dt 4:19",
+    "cita": "todo el ejército del cielo"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Host of heaven",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/host-of-heaven.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "porcion-doble": {
+  "tipo": "concepto",
+  "lema": "«las dos partes de tu espíritu»",
+  "formas": [
+   "las dos partes de tu espíritu"
+  ],
+  "adulto": "Eliseo pide a Elías «las dos partes» de su espíritu (2:9). Keil y Delitzsch lo explican por la ley del primogénito: Dt 21:17 manda dar al primogénito «dos tantos» de lo que tiene el padre; Eliseo se pediría como primogénito espiritual de Elías, y no el doble de espíritu, como entendieron algunos traductores. Easton recuerda que al primogénito se le asignaba una porción doble de la herencia (Dt 21:15-17). Es una lectura de comentaristas; el texto no la aclara.",
+  "nino": "Eliseo pide ser el heredero principal de Elías, como el hijo mayor, que recibía una parte doble de la herencia.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 2:9",
+    "cita": "las dos partes de tu espíritu"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Dt 21:17",
+    "cita": "dos tantos de todo lo que se hallare que tiene"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 2:9",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/2.htm",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Birthright",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/birthright.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "pythones": {
+  "tipo": "concepto",
+  "lema": "pythones (espíritus familiares)",
+  "formas": [
+   "pythones"
+  ],
+  "adulto": "Según Easton, los «pythones» (hebreo 'ob) son nigromantes que decían llamar a los muertos para que respondieran a preguntas, y de quienes se decía que tenían un «espíritu familiar»; 'ob significa propiamente «odre de cuero», porque se los consideraba recipientes del espíritu que los inspiraba. La ley prohíbe consultar a «pitón» (Dt 18:11).",
+  "nino": "Personas que decían hablar con los muertos o con espíritus. La ley de Dios lo prohibía.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Dt 18:11",
+    "cita": "quien pregunte á pitón"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Familiar spirit",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/familiar-spirit.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "celosia": {
+  "tipo": "palabra",
+  "lema": "celosía",
+  "formas": [
+   "celosías"
+  ],
+  "adulto": "Según el Wikcionario, una celosía es un tablero calado para cerrar ventanas, que impide ser visto pero no impide ver y deja pasar la luz y el aire; suele ser de madera. En Jue 5:28 la madre de Sísara se asoma «por entre las celosías».",
+  "nino": "Una especie de rejilla de madera en una ventana: se ve hacia afuera y entra el aire.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Jue 5:28",
+    "cita": "por entre las celosías"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "celosía",
+    "url": "https://es.wiktionary.org/wiki/celosía",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "botija": {
+  "tipo": "palabra",
+  "lema": "botija",
+  "formas": [
+   "botija"
+  ],
+  "adulto": "Una botija es, según el Wikcionario, una vasija de cuello corto y estrecho. En 1S 26:11 es la «botija del agua» que Saúl tenía a su cabecera.",
+  "nino": "Una vasija de barro con el cuello corto y angosto.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1S 26:11",
+    "cita": "la botija del agua"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "botija",
+    "url": "https://es.wiktionary.org/wiki/botija",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "alcuza": {
+  "tipo": "palabra",
+  "lema": "alcuza",
+  "formas": [
+   "alcuza"
+  ],
+  "adulto": "Según el Wikcionario, una alcuza es una vasija o botella, generalmente de forma cónica, que se emplea para guardar el aceite. En 9:1 el aceite que Eliseo manda llevar viene en una «alcuza».",
+  "nino": "Una botellita para guardar aceite.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 9:1",
+    "cita": "esta alcuza de aceite"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "alcuza",
+    "url": "https://es.wiktionary.org/wiki/alcuza",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "escudilla": {
+  "tipo": "palabra",
+  "lema": "escudilla",
+  "formas": [
+   "escudilla"
+  ],
+  "adulto": "Según el Wikcionario, una escudilla es una vasija semiesférica en la que se suelen servir alimentos caldosos (tazón, cuenco). En 21:13 se compara a Jerusalén con una escudilla que se limpia.",
+  "nino": "Un cuenco hondo, como un tazón.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 21:13",
+    "cita": "una escudilla"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "escudilla",
+    "url": "https://es.wiktionary.org/wiki/escudilla",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "bordon": {
+  "tipo": "palabra",
+  "lema": "bordón",
+  "formas": [
+   "bordón"
+  ],
+  "adulto": "Según el Wikcionario, un bordón es un bastón o palo más alto que la estatura de un hombre, con una punta de hierro. En Gn 32:10 Jacob dice que pasó el Jordán «con mi bordón»; el texto no dice cómo era.",
+  "nino": "Un bastón largo para caminar o apoyarse.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Gn 32:10",
+    "cita": "con mi bordón pasé este Jordán"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "bordón",
+    "url": "https://es.wiktionary.org/wiki/bordón",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "emprestada": {
+  "tipo": "palabra",
+  "lema": "emprestado",
+  "formas": [
+   "emprestada",
+   "emprestado"
+  ],
+  "adulto": "«Emprestado» es el participio de «emprestar», que el Wikcionario da como forma anticuada de «prestar» (también «solicitar en préstamo»). En Ex 22:25, «dinero emprestado» es dinero prestado.",
+  "nino": "Quiere decir «prestada».",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "Ex 22:25",
+    "cita": "dinero emprestado"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "emprestar",
+    "url": "https://es.wiktionary.org/wiki/emprestar",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "camoreos": {
+  "tipo": "concepto",
+  "lema": "camoreos",
+  "formas": [
+   "Camoreos"
+  ],
+  "adulto": "La RV1909 llama «Camoreos» a unos sacerdotes que, según 23:5, los reyes de Judá habían puesto para quemar perfumes en los altos. Easton recoge que la palabra hebrea (chemarim) se traduce «sacerdotes idólatras» y que su origen es discutido: «los que se postran» o «los que van de negro». Keil y Delitzsch los entienden como sacerdotes no levitas nombrados por los reyes de Judá, distintos de quienes quemaban perfumes a Baal. El texto solo dice quiénes los pusieron y qué hacían.",
+  "nino": "Un tipo de sacerdotes que los reyes de Judá habían puesto en los altos, no los sacerdotes del templo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 23:5",
+    "cita": "Camoreos"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Chemarim",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/chemarim.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 23:5",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/23.htm",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "caballos-sol": {
+  "tipo": "concepto",
+  "lema": "los caballos dedicados al sol",
+  "formas": [
+   "dedicado al sol"
+  ],
+  "adulto": "Keil y Delitzsch entienden que eran caballos vivos, no figuras, dedicados al sol, y que los carros del sol se quemaron; probablemente se usaban en procesiones del culto al sol, como pensaban los rabinos. Dicen también que ese culto vendría de Asia, quizá a través de los asirios. El texto solo dice quién los dedicó (los reyes de Judá) y dónde estaban (a la entrada del templo).",
+  "nino": "Caballos que los reyes de Judá habían dedicado a adorar al sol, puestos a la entrada del templo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2R 23:11",
+    "cita": "los caballos que los reyes de Judá habían dedicado al sol"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Reyes 23:11",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/2_kings/23.htm",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ }
+}
