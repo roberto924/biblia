@@ -1614,7 +1614,9 @@
       "Gn 38:14",
       "Gn 38:19",
       "1S 21:9",
-      "Ex 34:33-35"
+      "Ex 34:33-35",
+      "1R 20:38",
+      "1R 20:41"
     ],
     "solo": null
   },
@@ -2528,14 +2530,20 @@
       "Jue 10:6",
       "Jue 10:10",
       "1S 7:4",
-      "1S 12:10"
+      "1S 12:10",
+      "1R 16:31-32",
+      "1R 18:18-26",
+      "1R 18:40",
+      "1R 19:18",
+      "1R 22:53"
     ]
   },
   "astaroth": {
     "tipo": "concepto",
     "lema": "Astarté (Astaroth)",
     "formas": [
-      "Astaroth"
+      "Astaroth",
+      "Astharoth"
     ],
     "adulto": "Astaroth (Astoret) es una divinidad femenina que adoraban los pueblos de Canaán junto con Baal. Según Easton, era la diosa lunar fenicia y representaba el principio femenino de la naturaleza.",
     "nino": "Una diosa falsa que adoraban los pueblos vecinos.",
@@ -2561,7 +2569,9 @@
       "1S 7:3",
       "1S 7:4",
       "1S 12:10",
-      "1S 31:10"
+      "1S 31:10",
+      "1R 11:5",
+      "1R 11:33"
     ]
   },
   "moloc": {
@@ -2626,7 +2636,7 @@
       "bosques",
       "bosque"
     ],
-    "adulto": "En varios pasajes la RV1909 manda «talar los bosques» de otros pueblos. Según Easton, se trata de la asera, un poste o imagen de madera que representaba a una diosa cananea (Astoret). Lo que traduce «bosque» aquí no es una selva sino ese objeto de culto.",
+    "adulto": "En varios pasajes la RV1909 habla de «bosques» que se talan o se hacen. Según Easton, se trata de la asera, un poste o imagen de madera que representaba a una diosa cananea (Astoret). Lo que traduce «bosque» aquí no es una selva sino ese objeto de culto.",
     "nino": "Un poste de madera consagrado a una diosa falsa, que Dios mandó derribar.",
     "certeza": "externa",
     "fuentes": [
@@ -2653,7 +2663,12 @@
       "Jue 6:25",
       "Jue 6:26",
       "Jue 6:28",
-      "Jue 6:30"
+      "Jue 6:30",
+      "1R 14:15",
+      "1R 14:23",
+      "1R 15:13",
+      "1R 16:33",
+      "1R 18:19"
     ]
   },
   "terafines": {

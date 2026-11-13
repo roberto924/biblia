@@ -58,7 +58,8 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "años» después) se comprueba: 40 + 45 = 85. La muerte de Josué (110 años) no tiene base para un año.",
          "Jueces da duraciones (años de opresión, de reposo y de cada juez: `duraciones`), pero no dice si se suceden "
          "o se solapan: no se fechan desde Adán. Sus sumas son cálculo con esa advertencia; Jue 11:26 («trescientos "
-         "años») se compara con la suma hasta Jefté. 1 Re 6:1 queda para cuando se añada Reyes.",
+         "años») se compara con la suma hasta Jefté. 1 R 6:1 no fecha los periodos de Jueces: solo se compara con su suma "
+         "(ver 1 Reyes).",
          "Rut 1:1 sitúa la historia «en los días que gobernaban los jueces» sin decir en qué juez ni en qué año, y la "
          "genealogía de Rut 4:18-22 no da edades: Rut no añade eventos con año (sus hechos van sin fecha).",
          "1 Samuel da duraciones sueltas (Elí: 98 años y cuarenta de juez; el arca, siete meses entre los filisteos y "
@@ -68,7 +69,13 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "2 Samuel da duraciones con cita (David siete años y seis meses en Hebrón y treinta y tres en Jerusalén, "
          "cuarenta en total; Is-boset, dos años; Absalón, tres años en Gesur…), pero ninguna une el reinado de David con "
          "los libros anteriores ni con un año desde Adán: sus hechos van sin fecha, con las cifras citadas y, donde se "
-         "suman, el cálculo con sus pasos. No se usan libros posteriores (Reyes, Crónicas)."]
+         "suman, el cálculo con sus pasos. No se usan libros posteriores (Reyes, Crónicas).",
+         "1 Reyes enlaza la monarquía con la salida de Egipto en un solo versículo: 1 R 6:1 sitúa el comienzo del templo "
+         "«en el año cuatrocientos ochenta» después de la salida (Brenton, LXX: «four hundred and fortieth»), en el cuarto "
+         "año de Salomón. Con el mismo convenio que Ex 40:17 («el año N» = N − 1 años después de la salida) da el evento "
+         "«Salomón comienza el templo». Ningún otro hecho de 1 Reyes se fecha desde Adán: los reinados y sincronismos van "
+         "con su cita (texto), y la suma de las duraciones de Jueces, Samuel y Reyes solo se compara con 1 R 6:1 "
+         "(cálculo, con advertencias). No se usan libros posteriores (2 Reyes, Crónicas)."]
 # 2 Samuel: (título, ref, nota, [(ref, tradición, cita literal)]). Sin año: las citas se comprueban contra el texto.
 HITOS_2S = [
     ("David, rey de Judá en Hebrón", "2S 2:1-11",
@@ -115,6 +122,90 @@ HITOS_2S = [
       ("2S 24:13", "TM", "siete años de hambre"), ("2S 24:13", "LXX", "three years famine"),
       ("2S 24:15", "TM", "desde la mañana hasta el tiempo señalado")]),
 ]
+# 1 Reyes: reinados con cita (texto). (persona, nombre, reino, (ref TM, cita TM, cifra TM), (ref LXX, cita LXX, cifra LXX)
+# | None, sincronismo (ref TM, cita TM, cifra TM, rey) | None, sincronismo LXX (ref, cita, cifra, rey) | None, unidad)
+REINADOS_1R = [
+    ("David_1", "David", "Israel", ("1R 2:11", "fueron cuarenta años", "cuarenta"), ("1R 2:11", "forty years", "forty"),
+     None, None, "años"),
+    ("Solomon_1", "Salomón", "Israel", ("1R 11:42", "fueron cuarenta años", "cuarenta"),
+     ("1R 11:42", "forty years", "forty"), None, None, "años"),
+    ("Rehoboam_1", "Roboam", "Judá", ("1R 14:21", "diecisiete años reinó en Jerusalem", "diecisiete"),
+     ("1R 14:21", "he reigned seventeen years", "seventeen"), None, None, "años"),
+    ("Jeroboam_1", "Jeroboam", "Israel", ("1R 14:20", "El tiempo que reinó Jeroboam fueron veintidós años", "veintidós"),
+     None, None, None, "años"),
+    ("Abijam_1", "Abiam", "Judá", ("1R 15:2", "Reinó tres años en Jerusalem", "tres"),
+     ("1R 15:2", "he reigned three years", "three"),
+     ("1R 15:1", "EN el año dieciocho del rey Jeroboam", "dieciocho", "Jeroboam"),
+     ("1R 15:1", "in the eighteenth year of the reign of Jeroboam", "eighteenth", "Jeroboam"), "años"),
+    ("Asa_1", "Asa", "Judá", ("1R 15:10", "reinó cuarenta y un años en Jerusalem", "cuarenta y un"),
+     ("1R 15:10", "he reigned forty-one years", "forty-one"),
+     ("1R 15:9", "En el año veinte de Jeroboam", "veinte", "Jeroboam"),
+     ("1R 15:9", "In the four and twentieth year of Jeroboam", "four and twentieth", "Jeroboam"), "años"),
+    ("Nadab_2", "Nadab", "Israel", ("1R 15:25", "reinó sobre Israel dos años", "dos"),
+     ("1R 15:25", "he reigned two years", "two"),
+     ("1R 15:25", "en el segundo año de Asa", "segundo", "Asa"), ("1R 15:25", "in the second year of Asa", "second", "Asa"),
+     "años"),
+    ("Baasha_1", "Baasa", "Israel", ("1R 15:33", "veinticuatro años", "veinticuatro"),
+     ("1R 15:33", "twenty and four years", "twenty and four"),
+     ("1R 15:33", "En el tercer año de Asa", "tercer", "Asa"), ("1R 15:33", "in the third year of Asa", "third", "Asa"),
+     "años"),
+    ("Elah_2", "Ela", "Israel", ("1R 16:8", "dos años", "dos"), ("1R 16:8", "two years", "two"),
+     ("1R 16:8", "En el año veintiséis de Asa", "veintiséis", "Asa"), None, "años"),
+    ("Zimri_2", "Zimri", "Israel", ("1R 16:15", "siete días en Thirsa", "siete"), ("1R 16:15", "seven days", "seven"),
+     ("1R 16:15", "En el año veintisiete de Asa", "veintisiete", "Asa"), None, "días"),
+    ("Omri_1", "Omri", "Israel", ("1R 16:23", "doce años", "doce"), ("1R 16:23", "twelve years", "twelve"),
+     ("1R 16:23", "En el año treinta y uno de Asa", "treinta y uno", "Asa"),
+     ("1R 16:23", "In the thirty-first year of king Asa", "thirty-first", "Asa"), "años"),
+    ("Ahab_1", "Acab", "Israel", ("1R 16:30", "veintidós años", "veintidós"),
+     ("1R 16:29", "twenty-two years", "twenty-two"),
+     ("1R 16:29", "el año treinta y ocho de Asa", "treinta y ocho", "Asa"),
+     ("1R 16:29", "In the second year of Josaphat", "second", "Josafat"), "años"),
+    ("Jehoshaphat_3", "Josafat", "Judá", ("1R 22:42", "reinó veinticinco años en Jerusalem", "veinticinco"),
+     ("1R 22:42", "he reigned twenty and five years", "twenty and five"),
+     ("1R 22:41", "en el cuarto año de Achâb", "cuarto", "Acab"), ("1R 22:41", "in the fourth year of Achaab", "fourth", "Acab"),
+     "años"),
+    ("Ahaziah_1", "Ocozías", "Israel", ("1R 22:52", "reinó dos años sobre Israel", "dos"), ("1R 22:52", "two years", "two"),
+     ("1R 22:52", "el año diecisiete de Josaphat", "diecisiete", "Josafat"),
+     ("1R 22:52", "in the seventeenth year of Josaphat", "seventeenth", "Josafat"), "años"),
+]
+_ORD = {"segundo": "dos", "tercer": "tres", "tercero": "tres", "cuarto": "cuatro", "second": "two", "third": "three",
+        "fourth": "four", "eighteenth": "eighteen", "twentieth": "twenty", "seventeenth": "seventeen", "first": "one"}
+# 1 Reyes: otros hechos sin año, con cita (título, ref, nota, [(ref, tradición, cita)]).
+HITOS_1R = [
+    ("El templo, acabado", "1R 6:37-38",
+     "Texto: cimientos «En el cuarto año» y casa acabada «en el undécimo año»: «Edificóla pues, en siete años» (1 R 6:37-38). "
+     "Brenton no tiene 6:37-38 en su sitio (la LXX los pone tras 6:1).",
+     [("1R 6:37", "TM", "En el cuarto año"), ("1R 6:38", "TM", "Edificóla pues, en siete años")]),
+    ("El palacio de Salomón", "1R 7:1",
+     "Texto: «edificó Salomón su propia casa en trece años» (1 R 7:1; Brenton: «in thirteen years»).",
+     [("1R 7:1", "TM", "en trece años"), ("1R 7:1", "LXX", "in thirteen years")]),
+    ("Las dos casas, acabadas", "1R 9:10",
+     "Texto: «al cabo de veinte años, en que Salomón había edificado las dos casas» (1 R 9:10; Brenton: «twenty years»). "
+     "Cálculo: 7 (templo, 6:38) + 13 (palacio, 7:1) = 20.",
+     [("1R 9:10", "TM", "al cabo de veinte años"), ("1R 9:10", "LXX", "twenty years")]),
+    ("La sequía y el Carmelo", "1R 17:1-18:46",
+     "Texto: la palabra llega a Elías «en el tercer año» (1 R 18:1; Brenton: «in the third year»), sin decir desde cuándo "
+     "se cuenta ni en qué año de Acab.",
+     [("1R 18:1", "TM", "en el tercer año"), ("1R 18:1", "LXX", "in the third year")]),
+    ("Tres años sin guerra con Siria", "1R 22:1",
+     "Texto: «TRES años pasaron sin guerra entre los Siros é Israel» (1 R 22:1; Brenton: «he rested three years»), antes de "
+     "la batalla de Ramot de Galaad, sin año.",
+     [("1R 22:1", "TM", "TRES años pasaron sin guerra"), ("1R 22:1", "LXX", "he rested three years")]),
+]
+ADV_1R = ("El texto no dice que estos periodos se sucedan sin solaparse, y faltan los que no tienen cifra (Josué y los "
+          "ancianos, Samuel, Saúl —1 S 13:1 no se usa—). Tampoco se suman los veinte años del arca en Quiriat-jearim "
+          "(1 S 7:2), que pueden caer dentro de otros periodos. No se decide cuál es la causa de la diferencia.")
+# Pasos de la comparación con 1 R 6:1: (ref, título, cita TM, cifra TM, cita LXX, cifra LXX); «jue» = suma de Jueces.
+PASOS_1R61 = [
+    ("Nm 14:33", "Israel en el desierto", "cuarenta años", "cuarenta", "forty years", "forty"),
+    ("jue", "Periodos con cifra de Jueces (Jue 3:8–15:20, suma)", None, None, None, None),
+    ("1S 4:18", "Elí juzga a Israel", "había juzgado á Israel cuarenta años", "cuarenta", "judged Israel twenty years", "twenty"),
+    ("1R 2:11", "David reina sobre Israel", "fueron cuarenta años", "cuarenta", "forty years", "forty"),
+    ("1R 6:1", "Salomón, hasta «el cuarto año» de su reino (3 años cumplidos)", "en el cuarto año", "cuarto",
+     "in the fourth year", "fourth"),
+]
+
+
 # 1 Samuel: (título, ref, nota, [(ref, tradición, cita literal)]). Sin año: las citas se comprueban contra el texto.
 HITOS_1S = [
     ("Nace Samuel", "1S 1:19-20", "Sin cifra de tiempo: Elcana subía a Silo «todos los años» (1 S 1:3), sin año.",
@@ -375,6 +466,16 @@ def definir(nombre):
         slug = "adan" if nac[p] == "ev-adan" else nac[p].replace("ev-nac-", "")
         evento(f"ev-muerte-{slug}", f"Muere {nombre(p)}", "muerte", None, [p], nac[p],
                [E(p, "total", texto=f"{nombre(p)} vivió {{v}} años")])
+    # 1 Reyes 6:1: «en el año cuatrocientos ochenta después que los hijos de Israel salieron de Egipto» (TM); la LXX
+    # (Brenton) dice «four hundred and fortieth». Mismo convenio que Ex 40:17: el primer año es el de la salida.
+    evento("ev-templo-salomon", "Salomón comienza a edificar el templo", "evento", "1R 6:1", ["Solomon_1"], S,
+           [C("1R 6:1", {"TM": ("en el año cuatrocientos ochenta", "cuatrocientos ochenta"),
+                         "LXX": ("in the four hundred and fortieth year", "four hundred and fortieth")},
+              texto="«el año {v}» después de la salida de Egipto"),
+            F(1, "1R 6:1", signo=-1, texto="el primer año es el de la salida: se resta {v}")],
+           "1 R 6:1: «en el cuarto año del principio del reino de Salomón sobre Israel, en el mes de Ziph, que es el mes "
+           "segundo». Es la única cifra del texto que une la monarquía con la salida de Egipto. Ver en «Cálculos» la "
+           "comparación con la suma de las duraciones de Jueces, Samuel y Reyes (no coincide; no se armoniza).")
     return ev, nac
 
 
@@ -540,6 +641,99 @@ def duraciones_jueces(textos, numeral, errores):
     dur = {"libro": "Jue", "nota": ADV_JUE + " No se fechan desde Adán ni se usa 1 Re 6:1.", "periodos": per,
            "calculos": calculos}
     return dur, hitos
+
+
+def reyes_1r(cron, dur, textos, numeral, errores):
+    """1 Reyes: reinados y sincronismos (texto), hitos sin año y la comparación de 1 R 6:1 con la suma (cálculo)."""
+    def cifra(ref, trad, cita, frase):
+        if cita not in textos[trad].get(ref, "") or frase not in cita:
+            errores.append(f"Cronología de 1 R: «{cita}» no está en {ref} ({trad}) o no contiene «{frase}»")
+            return None
+        idioma = "es" if trad == "TM" else "en"
+        ws = [_ORD.get(w, w) for w in frase.replace("-", " ").split()]
+        w = " ".join(ws)
+        w = re.sub(r"(\w+)ieth$", lambda m: m.group(1) + "y", w)  # «twentieth» -> «twenty»
+        return numeral(w, idioma)
+
+    reinados = []
+    for pid, nom, reino, tm, lxx, s_tm, s_lxx, unidad in REINADOS_1R:
+        d = {"persona": pid, "rey": nom, "reino": reino, "unidad": unidad, "certeza": "texto",
+             "duracion": {"TM": {"ref": tm[0], "cita": tm[1], "valor": cifra(tm[0], "TM", tm[1], tm[2]), "fuente": "rv1909"}}}
+        if lxx:
+            d["duracion"]["LXX"] = {"ref": lxx[0], "cita": lxx[1], "valor": cifra(lxx[0], "LXX", lxx[1], lxx[2]),
+                                    "fuente": "brenton"}
+        if s_tm:
+            d["sincronismo"] = {"TM": {"ref": s_tm[0], "cita": s_tm[1], "anio": cifra(s_tm[0], "TM", s_tm[1], s_tm[2]),
+                                       "de": s_tm[3], "fuente": "rv1909"}}
+            if s_lxx:
+                d["sincronismo"]["LXX"] = {"ref": s_lxx[0], "cita": s_lxx[1], "anio": cifra(s_lxx[0], "LXX", s_lxx[1], s_lxx[2]),
+                                           "de": s_lxx[3], "fuente": "brenton"}
+        reinados.append(d)
+        t = d["duracion"]["TM"]
+        nota = f"Texto: reina «{t['cita']}» ({t['ref']}"
+        if "LXX" in d["duracion"]:
+            x = d["duracion"]["LXX"]
+            nota += f"; Brenton, LXX: «{x['cita']}»" + ("" if x["valor"] == t["valor"] else f", {x['valor']} {unidad}")
+        else:
+            nota += "; Brenton no tiene el versículo en su sitio"
+        nota += ")."
+        if s_tm:
+            st = d["sincronismo"]["TM"]
+            nota += f" Comienza «{st['cita']}» ({st['ref']}"
+            sl = d["sincronismo"].get("LXX")
+            if sl and (sl["anio"], sl["de"]) == (st["anio"], st["de"]):
+                nota += f"; LXX: «{sl['cita']}»)."
+            elif sl:
+                nota += f"); la LXX dice «{sl['cita']}» (no se armoniza)."
+            else:
+                nota += "); Brenton no da el sincronismo."
+        cron["hitos_sin_fecha"].append({"titulo": f"Reinado de {nom} ({reino})", "ref": t["ref"], "nota": nota})
+    cron["reinados"] = reinados
+    for t, r, n, citas in HITOS_1R:
+        for rc, trad, cita in citas:
+            if cita not in textos[trad].get(rc, ""):
+                errores.append(f"Hito de 1 R: «{cita}» no está en {rc} ({trad})")
+        cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
+    # Comparación de 1 R 6:1 con la suma de las duraciones (cálculo).
+    tot_jue = next((c["total"] for c in (dur or {}).get("calculos", []) if c["id"] == "jue-suma-total"), None)
+    if tot_jue is None:
+        errores.append("Cronología de 1 R: falta la suma de Jueces")
+        return
+    calc = {}
+    for trad in ("TM", "LXX"):
+        pasos = []
+        for ref, titulo, c_tm, f_tm, c_lxx, f_lxx in PASOS_1R61:
+            if ref == "jue":
+                pasos.append({"ref": "Jue 3:8", "texto": titulo, "valor": tot_jue, "signo": 1, "certeza": "calculo"})
+                continue
+            cita, frase = (c_tm, f_tm) if trad == "TM" else (c_lxx, f_lxx)
+            v = cifra(ref, trad, cita, frase)
+            if ref == "1R 6:1":
+                v = v - 1 if v is not None else None
+            pasos.append({"ref": ref, "texto": titulo, "valor": v, "signo": 1, "cita": cita, "certeza": "texto"})
+        n6 = cifra("1R 6:1", trad, *(("en el año cuatrocientos ochenta", "cuatrocientos ochenta") if trad == "TM"
+                                      else ("in the four hundred and fortieth year", "four hundred and fortieth")))
+        total = sum(p["valor"] for p in pasos if p["valor"] is not None)
+        calc[trad] = {"pasos": pasos, "total": total, "texto_1r_6_1": n6}
+    tm, lx = calc["TM"], calc["LXX"]
+    if (tm["texto_1r_6_1"], lx["texto_1r_6_1"]) != (480, 440):
+        errores.append(f"1 R 6:1: TM {tm['texto_1r_6_1']} / LXX {lx['texto_1r_6_1']} (se esperaban 480 / 440)")
+    cron["calculos_1r"] = [{
+        "id": "1r-6-1-comparacion", "titulo": "1 R 6:1 frente a la suma de las duraciones (salida → cuarto año de Salomón)",
+        "certeza": "calculo", "pasos": tm["pasos"], "total": tm["total"], "pasos_lxx": lx["pasos"], "total_lxx": lx["total"],
+        "advertencia": ADV_1R + " " + ADV_JUE,
+        "comparacion": {"ref": "1R 6:1", "certeza": "texto",
+                        "TM": {"cita": "en el año cuatrocientos ochenta", "valor": tm["texto_1r_6_1"]},
+                        "LXX": {"cita": "in the four hundred and fortieth year", "valor": lx["texto_1r_6_1"]},
+                        "nota": (f"Sumadas como si fueran consecutivas, las duraciones con cifra dan {tm['total']} años en el "
+                                 f"TM (RV1909) y {lx['total']} en la LXX (Brenton: Elí juzga veinte años, 1 S 4:18), sin "
+                                 "contar los periodos sin cifra; 1 R 6:1 da «el año cuatrocientos ochenta» (TM) y «four "
+                                 "hundred and fortieth» (LXX). No coinciden; el texto no explica la diferencia y no se "
+                                 "armoniza.")}}]
+    ev = next((e for e in cron["eventos"] if e["id"] == "ev-templo-salomon"), None)
+    if ev:
+        ev["nota"] += (f" Cálculo: desierto + Jueces + Elí + David + 3 años de Salomón = {tm['total']} (TM) / {lx['total']} "
+                       f"(LXX), frente a 480 / 440. {ADV_1R}")
 
 
 def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
@@ -722,4 +916,6 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
         hebron, jerus, total = (numeral(x, "es") for x in ("siete", "treinta y tres", "cuarenta"))
         if (hebron, jerus, total) != (7, 33, 40) or hebron + jerus != total:
             errores.append(f"Cálculo de 2 S 5:4-5: {hebron} + {jerus} ≠ {total} (más seis meses)")
+    if any(r.startswith("1R ") for r in textos["TM"]):
+        reyes_1r(cron, dur, textos, numeral, errores)
     return cron, vivos, usadas

@@ -1,0 +1,7866 @@
+{
+ "libro": "1R",
+ "genealogias": [
+  {
+   "id": "1r-oficiales-de-salomon",
+   "inicio": "1R 4:2",
+   "fin": "1R 4:6",
+   "titulo": "Los oficiales de Salomón: Azarías, Elioref, Ahía, Josafat, Benaía, Sadoc, Abiatar, Azarías, Zabud, Ahisar y Adoniram",
+   "cita": "Azarías hijo de Sadoc, sacerdote"
+  },
+  {
+   "id": "1r-los-doce-gobernadores",
+   "inicio": "1R 4:8",
+   "fin": "1R 4:19",
+   "titulo": "Los doce gobernadores de Salomón y sus distritos",
+   "cita": "el hijo de Hur en el monte de Ephraim"
+  }
+ ],
+ "historias": [
+  {
+   "id": "abisag-sirve-a-david",
+   "titulo": "Abisag la sunamita cuida al rey David",
+   "inicio": "1R 1:1",
+   "fin": "1R 1:4",
+   "principales": [
+    "David_1",
+    "Abishag_1"
+   ]
+  },
+  {
+   "id": "adonias-se-proclama-rey",
+   "titulo": "Adonías dice «Yo reinaré»",
+   "inicio": "1R 1:5",
+   "fin": "1R 1:10",
+   "principales": [
+    "Adonijah_1"
+   ]
+  },
+  {
+   "id": "natan-y-betsabe-ante-david",
+   "titulo": "Natán y Betsabé hablan al rey David",
+   "inicio": "1R 1:11",
+   "fin": "1R 1:31",
+   "principales": [
+    "Nathan_2",
+    "Bathsheba_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "salomon-ungido-en-gihon",
+   "titulo": "Salomón es ungido en Gihón",
+   "inicio": "1R 1:32",
+   "fin": "1R 1:40",
+   "principales": [
+    "Solomon_1",
+    "Zadok_1",
+    "Benaiah_1"
+   ]
+  },
+  {
+   "id": "adonias-oye-el-estruendo-y-se-acoge-al-altar",
+   "titulo": "Adonías oye el estruendo y se acoge al altar",
+   "inicio": "1R 1:41",
+   "fin": "1R 1:53",
+   "principales": [
+    "Adonijah_1",
+    "Jonathan_3"
+   ]
+  },
+  {
+   "id": "los-encargos-de-david-y-su-muerte",
+   "titulo": "Los encargos de David a Salomón y su muerte",
+   "inicio": "1R 2:1",
+   "fin": "1R 2:12",
+   "principales": [
+    "David_1",
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "adonias-pide-a-abisag",
+   "titulo": "Adonías pide a Abisag por mujer",
+   "inicio": "1R 2:13",
+   "fin": "1R 2:25",
+   "principales": [
+    "Adonijah_1",
+    "Bathsheba_1",
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "abiatar-desterrado-y-muerte-de-joab",
+   "titulo": "Abiatar desterrado y Joab en el altar",
+   "inicio": "1R 2:26",
+   "fin": "1R 2:35",
+   "principales": [
+    "Joab_1",
+    "Abiathar_1",
+    "Benaiah_1"
+   ]
+  },
+  {
+   "id": "semei-y-el-juramento",
+   "titulo": "Semei y la casa en Jerusalén",
+   "inicio": "1R 2:36",
+   "fin": "1R 2:46",
+   "principales": [
+    "Shimei_2"
+   ]
+  },
+  {
+   "id": "el-sueno-de-gabaon",
+   "titulo": "El sueño de Gabaón: un corazón entendido",
+   "inicio": "1R 3:1",
+   "fin": "1R 3:15",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "las-dos-mujeres-y-el-nino",
+   "titulo": "El juicio de las dos mujeres y el niño",
+   "inicio": "1R 3:16",
+   "fin": "1R 3:28",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "oficiales-de-salomon",
+   "titulo": "Los oficiales de Salomón",
+   "inicio": "1R 4:1",
+   "fin": "1R 4:6",
+   "principales": []
+  },
+  {
+   "id": "los-doce-gobernadores",
+   "titulo": "Los doce gobernadores",
+   "inicio": "1R 4:7",
+   "fin": "1R 4:19",
+   "principales": []
+  },
+  {
+   "id": "paz-despensa-y-sabiduria-de-salomon",
+   "titulo": "La paz, la despensa y la sabiduría de Salomón",
+   "inicio": "1R 4:20",
+   "fin": "1R 4:34",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "hiram-y-los-materiales",
+   "titulo": "Hiram y los materiales para el templo",
+   "inicio": "1R 5:1",
+   "fin": "1R 5:12",
+   "principales": [
+    "Hiram_1",
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "los-obreros-del-templo",
+   "titulo": "Los treinta mil obreros y los cortadores del monte",
+   "inicio": "1R 5:13",
+   "fin": "1R 5:18",
+   "principales": [
+    "Adoniram_1"
+   ]
+  },
+  {
+   "id": "se-comienza-el-templo",
+   "titulo": "Salomón comienza a edificar la casa de Jehová",
+   "inicio": "1R 6:1",
+   "fin": "1R 6:10",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "la-palabra-de-jehova-sobre-la-casa",
+   "titulo": "La palabra de Jehová a Salomón sobre la casa",
+   "inicio": "1R 6:11",
+   "fin": "1R 6:13",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "el-interior-del-templo",
+   "titulo": "El interior del templo: cedro, oro y querubines",
+   "inicio": "1R 6:14",
+   "fin": "1R 6:38",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "el-palacio-de-salomon",
+   "titulo": "El palacio de Salomón",
+   "inicio": "1R 7:1",
+   "fin": "1R 7:12",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "las-columnas-jaquin-y-boaz",
+   "titulo": "Hiram el artífice y las columnas Jaquín y Boaz",
+   "inicio": "1R 7:13",
+   "fin": "1R 7:22",
+   "principales": [
+    "Hiram_2"
+   ]
+  },
+  {
+   "id": "el-mar-de-fundicion-y-las-basas",
+   "titulo": "El mar de fundición, las basas y las fuentes",
+   "inicio": "1R 7:23",
+   "fin": "1R 7:39",
+   "principales": [
+    "Hiram_2"
+   ]
+  },
+  {
+   "id": "hiram-termina-y-los-utensilios-de-oro",
+   "titulo": "Hiram termina la obra y los utensilios de oro",
+   "inicio": "1R 7:40",
+   "fin": "1R 7:51",
+   "principales": [
+    "Hiram_2",
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "el-arca-entra-en-el-templo",
+   "titulo": "El arca entra en el templo y la nube llena la casa",
+   "inicio": "1R 8:1",
+   "fin": "1R 8:11",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "salomon-bendice-a-israel",
+   "titulo": "Salomón bendice a Israel",
+   "inicio": "1R 8:12",
+   "fin": "1R 8:21",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "la-oracion-de-dedicacion",
+   "titulo": "La oración de dedicación",
+   "inicio": "1R 8:22",
+   "fin": "1R 8:53",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "bendicion-sacrificios-y-fiesta",
+   "titulo": "La bendición, los sacrificios y la fiesta",
+   "inicio": "1R 8:54",
+   "fin": "1R 8:66",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "la-segunda-aparicion-de-jehova",
+   "titulo": "La segunda aparición de Jehová a Salomón",
+   "inicio": "1R 9:1",
+   "fin": "1R 9:9",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "cabul-tributos-y-ciudades",
+   "titulo": "Cabul, los tributos y las ciudades de Salomón",
+   "inicio": "1R 9:10",
+   "fin": "1R 9:25",
+   "principales": [
+    "Solomon_1",
+    "Hiram_1"
+   ]
+  },
+  {
+   "id": "la-flota-de-ezion-geber",
+   "titulo": "La flota de Ezión-geber y el oro de Ofir",
+   "inicio": "1R 9:26",
+   "fin": "1R 9:28",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "la-reina-de-seba",
+   "titulo": "La reina de Seba visita a Salomón",
+   "inicio": "1R 10:1",
+   "fin": "1R 10:13",
+   "principales": [
+    "Queen of Sheba_1",
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "las-riquezas-de-salomon",
+   "titulo": "Las riquezas de Salomón y su trono de marfil",
+   "inicio": "1R 10:14",
+   "fin": "1R 10:29",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "las-mujeres-de-salomon",
+   "titulo": "Las mujeres extranjeras de Salomón y el juicio de Jehová",
+   "inicio": "1R 11:1",
+   "fin": "1R 11:13",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "adad-y-rezon-adversarios",
+   "titulo": "Los adversarios Adad y Rezón",
+   "inicio": "1R 11:14",
+   "fin": "1R 11:25",
+   "principales": [
+    "Hadad_3",
+    "Rezon_1"
+   ]
+  },
+  {
+   "id": "jeroboam-y-la-capa-rota",
+   "titulo": "Jeroboam y Ahías: la capa rota en doce pedazos",
+   "inicio": "1R 11:26",
+   "fin": "1R 11:40",
+   "principales": [
+    "Jeroboam_1",
+    "Ahijah_1R11_1"
+   ]
+  },
+  {
+   "id": "muerte-de-salomon",
+   "titulo": "El fin del reinado de Salomón",
+   "inicio": "1R 11:41",
+   "fin": "1R 11:43",
+   "principales": [
+    "Solomon_1"
+   ]
+  },
+  {
+   "id": "roboam-en-siquem",
+   "titulo": "Roboam en Siquem y la división del reino",
+   "inicio": "1R 12:1",
+   "fin": "1R 12:19",
+   "principales": [
+    "Rehoboam_1",
+    "Jeroboam_1"
+   ]
+  },
+  {
+   "id": "jeroboam-rey-y-la-palabra-a-semeias",
+   "titulo": "Jeroboam rey de Israel y la palabra a Semeías",
+   "inicio": "1R 12:20",
+   "fin": "1R 12:24",
+   "principales": [
+    "Shemaiah_1"
+   ]
+  },
+  {
+   "id": "los-becerros-de-jeroboam",
+   "titulo": "Los becerros de oro de Jeroboam en Betel y Dan",
+   "inicio": "1R 12:25",
+   "fin": "1R 12:33",
+   "principales": [
+    "Jeroboam_1"
+   ]
+  },
+  {
+   "id": "el-varon-de-dios-en-betel",
+   "titulo": "El varón de Dios de Judá ante el altar de Betel",
+   "inicio": "1R 13:1",
+   "fin": "1R 13:10",
+   "principales": [
+    "Jeroboam_1"
+   ]
+  },
+  {
+   "id": "el-profeta-viejo-y-el-varon-de-dios",
+   "titulo": "El profeta viejo de Betel y el varón de Dios",
+   "inicio": "1R 13:11",
+   "fin": "1R 13:34",
+   "principales": []
+  },
+  {
+   "id": "la-mujer-de-jeroboam-y-ahias",
+   "titulo": "La mujer de Jeroboam visita a Ahías en Silo",
+   "inicio": "1R 14:1",
+   "fin": "1R 14:20",
+   "principales": [
+    "Ahijah_1R11_1",
+    "Jeroboam_1"
+   ]
+  },
+  {
+   "id": "roboam-sisac-y-los-escudos",
+   "titulo": "Roboam, Sisac y los escudos de metal",
+   "inicio": "1R 14:21",
+   "fin": "1R 14:31",
+   "principales": [
+    "Rehoboam_1",
+    "Shishak_1"
+   ]
+  },
+  {
+   "id": "abiam-rey-de-juda",
+   "titulo": "Abiam rey de Judá",
+   "inicio": "1R 15:1",
+   "fin": "1R 15:8",
+   "principales": [
+    "Abijam_1"
+   ]
+  },
+  {
+   "id": "asa-quita-los-idolos",
+   "titulo": "Asa quita los ídolos y destituye a Maaca",
+   "inicio": "1R 15:9",
+   "fin": "1R 15:15",
+   "principales": [
+    "Asa_1",
+    "Maacah_3"
+   ]
+  },
+  {
+   "id": "asa-ben-adad-y-baasa",
+   "titulo": "Asa, Ben-adad y Baasa",
+   "inicio": "1R 15:16",
+   "fin": "1R 15:24",
+   "principales": [
+    "Asa_1",
+    "Ben-hadad_1",
+    "Baasha_1"
+   ]
+  },
+  {
+   "id": "nadab-y-baasa",
+   "titulo": "Nadab y Baasa reyes de Israel",
+   "inicio": "1R 15:25",
+   "fin": "1R 15:34",
+   "principales": [
+    "Baasha_1",
+    "Nadab_2"
+   ]
+  },
+  {
+   "id": "la-palabra-contra-baasa",
+   "titulo": "La palabra de Jehová contra Baasa por Jehú",
+   "inicio": "1R 16:1",
+   "fin": "1R 16:7",
+   "principales": [
+    "Jehu_1"
+   ]
+  },
+  {
+   "id": "ela-zimri-y-omri",
+   "titulo": "Ela, Zimri y Omri",
+   "inicio": "1R 16:8",
+   "fin": "1R 16:20",
+   "principales": [
+    "Zimri_2"
+   ]
+  },
+  {
+   "id": "tibni-omri-y-samaria",
+   "titulo": "Tibni y Omri: se edifica Samaria",
+   "inicio": "1R 16:21",
+   "fin": "1R 16:28",
+   "principales": [
+    "Omri_1"
+   ]
+  },
+  {
+   "id": "acab-jezabel-y-hiel",
+   "titulo": "Acab, Jezabel y Hiel de Betel",
+   "inicio": "1R 16:29",
+   "fin": "1R 16:34",
+   "principales": [
+    "Ahab_1"
+   ]
+  },
+  {
+   "id": "elias-sequia-y-cuervos",
+   "titulo": "Elías anuncia la sequía y los cuervos del arroyo de Querit",
+   "inicio": "1R 17:1",
+   "fin": "1R 17:7",
+   "principales": [
+    "Elijah_1"
+   ]
+  },
+  {
+   "id": "la-viuda-de-sarepta",
+   "titulo": "La viuda de Sarepta, la tinaja y la botija",
+   "inicio": "1R 17:8",
+   "fin": "1R 17:16",
+   "principales": [
+    "Elijah_1"
+   ]
+  },
+  {
+   "id": "el-hijo-de-la-viuda",
+   "titulo": "El hijo de la viuda vuelve a la vida",
+   "inicio": "1R 17:17",
+   "fin": "1R 17:24",
+   "principales": [
+    "Elijah_1"
+   ]
+  },
+  {
+   "id": "elias-y-abdias",
+   "titulo": "Elías y Abdías",
+   "inicio": "1R 18:1",
+   "fin": "1R 18:16",
+   "principales": [
+    "Obadiah_1"
+   ]
+  },
+  {
+   "id": "el-carmelo",
+   "titulo": "El monte Carmelo: el fuego de Jehová",
+   "inicio": "1R 18:17",
+   "fin": "1R 18:40",
+   "principales": [
+    "Elijah_1",
+    "Ahab_1"
+   ]
+  },
+  {
+   "id": "la-lluvia-vuelve",
+   "titulo": "La pequeña nube y la lluvia",
+   "inicio": "1R 18:41",
+   "fin": "1R 18:46",
+   "principales": [
+    "Elijah_1"
+   ]
+  },
+  {
+   "id": "elias-huye-a-beerseba",
+   "titulo": "Elías huye de Jezabel hasta Beerseba",
+   "inicio": "1R 19:1",
+   "fin": "1R 19:8",
+   "principales": [
+    "Elijah_1"
+   ]
+  },
+  {
+   "id": "elias-en-horeb",
+   "titulo": "Elías en Horeb: el silbo apacible",
+   "inicio": "1R 19:9",
+   "fin": "1R 19:18",
+   "principales": [
+    "Elijah_1"
+   ]
+  },
+  {
+   "id": "el-llamamiento-de-eliseo",
+   "titulo": "El llamamiento de Eliseo",
+   "inicio": "1R 19:19",
+   "fin": "1R 19:21",
+   "principales": [
+    "Elisha_1"
+   ]
+  },
+  {
+   "id": "ben-adad-sitia-samaria",
+   "titulo": "Ben-adad sitia Samaria",
+   "inicio": "1R 20:1",
+   "fin": "1R 20:12",
+   "principales": [
+    "Ben-hadad_1"
+   ]
+  },
+  {
+   "id": "la-victoria-de-los-criados",
+   "titulo": "La victoria de los criados de los príncipes",
+   "inicio": "1R 20:13",
+   "fin": "1R 20:21",
+   "principales": [
+    "Ahab_1"
+   ]
+  },
+  {
+   "id": "afec-y-el-muro-caido",
+   "titulo": "El año siguiente: Afec y el muro caído",
+   "inicio": "1R 20:22",
+   "fin": "1R 20:30",
+   "principales": [
+    "Ahab_1"
+   ]
+  },
+  {
+   "id": "ben-adad-es-perdonado",
+   "titulo": "Ben-adad pide la vida y Acab lo suelta",
+   "inicio": "1R 20:31",
+   "fin": "1R 20:34",
+   "principales": [
+    "Ben-hadad_1"
+   ]
+  },
+  {
+   "id": "el-profeta-disfrazado",
+   "titulo": "El profeta disfrazado ante el rey",
+   "inicio": "1R 20:35",
+   "fin": "1R 20:43",
+   "principales": []
+  },
+  {
+   "id": "la-vina-de-nabot",
+   "titulo": "La viña de Nabot",
+   "inicio": "1R 21:1",
+   "fin": "1R 21:16",
+   "principales": [
+    "Naboth_1",
+    "Jezebel_1"
+   ]
+  },
+  {
+   "id": "elias-y-acab-en-la-vina",
+   "titulo": "Elías sale al encuentro de Acab en la viña",
+   "inicio": "1R 21:17",
+   "fin": "1R 21:29",
+   "principales": [
+    "Elijah_1",
+    "Ahab_1"
+   ]
+  },
+  {
+   "id": "josafat-y-acab-consultan-a-los-profetas",
+   "titulo": "Josafat y Acab consultan a los profetas",
+   "inicio": "1R 22:1",
+   "fin": "1R 22:12",
+   "principales": [
+    "Jehoshaphat_3",
+    "Zedekiah_1"
+   ]
+  },
+  {
+   "id": "micaias-ante-los-reyes",
+   "titulo": "Micaías ante los dos reyes",
+   "inicio": "1R 22:13",
+   "fin": "1R 22:28",
+   "principales": [
+    "Micaiah_1"
+   ]
+  },
+  {
+   "id": "la-muerte-de-acab",
+   "titulo": "Acab muere en Ramot de Galaad",
+   "inicio": "1R 22:29",
+   "fin": "1R 22:40",
+   "principales": [
+    "Ahab_1"
+   ]
+  },
+  {
+   "id": "josafat-rey-de-juda",
+   "titulo": "Josafat rey de Judá",
+   "inicio": "1R 22:41",
+   "fin": "1R 22:50",
+   "principales": [
+    "Jehoshaphat_3"
+   ]
+  },
+  {
+   "id": "ocozias-rey-de-israel",
+   "titulo": "Ocozías rey de Israel",
+   "inicio": "1R 22:51",
+   "fin": "1R 22:53",
+   "principales": [
+    "Ahaziah_1"
+   ]
+  }
+ ],
+ "personajes": {
+  "David_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:1",
+     "fin": "1R 1:4"
+    },
+    {
+     "inicio": "1R 1:15",
+     "fin": "1R 1:40"
+    },
+    {
+     "inicio": "1R 1:47",
+     "fin": "1R 1:48"
+    },
+    {
+     "inicio": "1R 2:1",
+     "fin": "1R 2:11"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    },
+    {
+     "ref": "1R 1:11"
+    },
+    {
+     "ref": "1R 1:13"
+    },
+    {
+     "ref": "1R 1:43"
+    },
+    {
+     "ref": "1R 2:12"
+    },
+    {
+     "ref": "1R 2:24"
+    },
+    {
+     "ref": "1R 2:26"
+    },
+    {
+     "ref": "1R 2:32"
+    },
+    {
+     "ref": "1R 2:33"
+    },
+    {
+     "ref": "1R 2:44"
+    },
+    {
+     "ref": "1R 2:45"
+    },
+    {
+     "ref": "1R 3:1"
+    },
+    {
+     "ref": "1R 3:3"
+    },
+    {
+     "ref": "1R 3:6"
+    },
+    {
+     "ref": "1R 3:7"
+    },
+    {
+     "ref": "1R 3:14"
+    },
+    {
+     "ref": "1R 5:1"
+    },
+    {
+     "ref": "1R 5:3"
+    },
+    {
+     "ref": "1R 5:5"
+    },
+    {
+     "ref": "1R 5:7"
+    },
+    {
+     "ref": "1R 6:12"
+    },
+    {
+     "ref": "1R 7:51"
+    },
+    {
+     "ref": "1R 8:1"
+    },
+    {
+     "ref": "1R 8:15"
+    },
+    {
+     "ref": "1R 8:16"
+    },
+    {
+     "ref": "1R 8:17"
+    },
+    {
+     "ref": "1R 8:18"
+    },
+    {
+     "ref": "1R 8:20"
+    },
+    {
+     "ref": "1R 8:24"
+    },
+    {
+     "ref": "1R 8:25"
+    },
+    {
+     "ref": "1R 8:26"
+    },
+    {
+     "ref": "1R 8:66"
+    },
+    {
+     "ref": "1R 9:4"
+    },
+    {
+     "ref": "1R 9:5"
+    },
+    {
+     "ref": "1R 11:4"
+    },
+    {
+     "ref": "1R 11:6"
+    },
+    {
+     "ref": "1R 11:12"
+    },
+    {
+     "ref": "1R 11:13"
+    },
+    {
+     "ref": "1R 11:15"
+    },
+    {
+     "ref": "1R 11:21"
+    },
+    {
+     "ref": "1R 11:24"
+    },
+    {
+     "ref": "1R 11:27"
+    },
+    {
+     "ref": "1R 11:32"
+    },
+    {
+     "ref": "1R 11:33"
+    },
+    {
+     "ref": "1R 11:34"
+    },
+    {
+     "ref": "1R 11:36"
+    },
+    {
+     "ref": "1R 11:38"
+    },
+    {
+     "ref": "1R 11:39"
+    },
+    {
+     "ref": "1R 11:43"
+    },
+    {
+     "ref": "1R 12:16"
+    },
+    {
+     "ref": "1R 12:19"
+    },
+    {
+     "ref": "1R 12:20"
+    },
+    {
+     "ref": "1R 12:26"
+    },
+    {
+     "ref": "1R 13:2"
+    },
+    {
+     "ref": "1R 14:8"
+    },
+    {
+     "ref": "1R 14:31"
+    },
+    {
+     "ref": "1R 15:3"
+    },
+    {
+     "ref": "1R 15:4"
+    },
+    {
+     "ref": "1R 15:5"
+    },
+    {
+     "ref": "1R 15:8"
+    },
+    {
+     "ref": "1R 15:11"
+    },
+    {
+     "ref": "1R 15:24"
+    },
+    {
+     "ref": "1R 22:51"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Viejo, no se calienta con los vestidos",
+     "certeza": "texto",
+     "ref": "1R 1:1",
+     "cita": "era viejo, y entrado en días, cubríanle de vestidos, mas no se calentaba"
+    },
+    {
+     "texto": "Jura a Betsabé que Salomón reinará después de él",
+     "certeza": "texto",
+     "ref": "1R 1:30",
+     "cita": "Tu hijo Salomón reinará después de mí"
+    },
+    {
+     "texto": "Manda subir a Salomón en su mula a Gihón para ungirlo",
+     "certeza": "texto",
+     "ref": "1R 1:33",
+     "cita": "haced subir á Salomón mi hijo en mi mula, y llevadlo á Gihón"
+    },
+    {
+     "texto": "Encarga a Salomón antes de morir",
+     "certeza": "texto",
+     "ref": "1R 2:2",
+     "cita": "Yo voy el camino de toda la tierra: esfuérzate, y sé varón"
+    },
+    {
+     "texto": "Reinó cuarenta años (siete en Hebrón y treinta y tres en Jerusalén)",
+     "certeza": "texto",
+     "ref": "1R 2:11",
+     "cita": "siete años reinó en Hebrón, y treinta y tres años reinó en Jerusalem"
+    }
+   ],
+   "externo": []
+  },
+  "Jacob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 18:31"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Elías toma doce piedras según las tribus de los hijos de Jacob, a quien Jehová dijo «Israel será tu nombre»",
+     "certeza": "texto",
+     "ref": "1R 18:31",
+     "cita": "Israel será tu nombre"
+    }
+   ],
+   "externo": []
+  },
+  "Moses_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:3"
+    },
+    {
+     "ref": "1R 8:9"
+    },
+    {
+     "ref": "1R 8:53"
+    },
+    {
+     "ref": "1R 8:56"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Salomón: en el arca solo están las dos tablas que Moisés puso en Horeb",
+     "certeza": "texto",
+     "ref": "1R 8:9",
+     "cita": "las dos tablas de piedra que había allí puesto Moisés en Horeb"
+    }
+   ],
+   "externo": []
+  },
+  "Joshua_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:34"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "La palabra sobre Hiel se cumple «por Josué hijo de Nun»",
+     "certeza": "texto",
+     "ref": "1R 16:34",
+     "cita": "conforme á la palabra de Jehová que había hablado por Josué hijo de Nun"
+    }
+   ],
+   "externo": []
+  },
+  "Nun_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:34"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Eli_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:27"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Salomón echa a Abiatar del sacerdocio para que se cumpla la palabra sobre la casa de Elí",
+     "certeza": "texto",
+     "ref": "1R 2:27",
+     "cita": "la palabra de Jehová que había dicho sobre la casa de Eli en Silo"
+    }
+   ],
+   "externo": []
+  },
+  "Abner_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:5"
+    },
+    {
+     "ref": "1R 2:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David recuerda a Salomón que Joab mató a Abner hijo de Ner",
+     "certeza": "texto",
+     "ref": "1R 2:5",
+     "cita": "Abner hijo de Ner"
+    }
+   ],
+   "externo": []
+  },
+  "Ner_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:5"
+    },
+    {
+     "ref": "1R 2:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Amasa_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:5"
+    },
+    {
+     "ref": "1R 2:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Salomón dice que Joab mató a Amasa, general de Judá",
+     "certeza": "texto",
+     "ref": "1R 2:32",
+     "cita": "Amasa hijo de Jether, general de ejército de Judá"
+    }
+   ],
+   "externo": []
+  },
+  "Ithra_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:5"
+    },
+    {
+     "ref": "1R 2:32"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Achish_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:39"
+    },
+    {
+     "ref": "1R 2:40"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "A él se le huyen los dos siervos de Semei",
+     "certeza": "texto",
+     "ref": "1R 2:39",
+     "cita": "Achîs, hijo de Maachâ, rey de Gath"
+    }
+   ],
+   "externo": []
+  },
+  "Maoch_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:39"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Zeruiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:7"
+    },
+    {
+     "ref": "1R 2:5"
+    },
+    {
+     "ref": "1R 2:22"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Absalom_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:6"
+    },
+    {
+     "ref": "1R 2:7"
+    },
+    {
+     "ref": "1R 2:28"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David recuerda cuando huía de Absalón (Barzilai lo recibió)",
+     "certeza": "texto",
+     "ref": "1R 2:7",
+     "cita": "cuando iba huyendo de Absalom tu hermano"
+    }
+   ],
+   "externo": []
+  },
+  "Haggith_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:5"
+    },
+    {
+     "ref": "1R 1:11"
+    },
+    {
+     "ref": "1R 2:13"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Jehoiada_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    },
+    {
+     "ref": "1R 1:26"
+    },
+    {
+     "ref": "1R 1:32"
+    },
+    {
+     "ref": "1R 1:36"
+    },
+    {
+     "ref": "1R 1:38"
+    },
+    {
+     "ref": "1R 1:44"
+    },
+    {
+     "ref": "1R 2:25"
+    },
+    {
+     "ref": "1R 2:29"
+    },
+    {
+     "ref": "1R 2:34"
+    },
+    {
+     "ref": "1R 2:35"
+    },
+    {
+     "ref": "1R 2:46"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Gera_3": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Barzillai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:7"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David pide a Salomón misericordia con los hijos de Barzilai el galaadita",
+     "certeza": "texto",
+     "ref": "1R 2:7",
+     "cita": "los hijos de Barzillai Galaadita harás misericordia"
+    }
+   ],
+   "externo": []
+  },
+  "Uriah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:5"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Del tiempo de David solo se exceptúa «el negocio de Uría Heteo»",
+     "certeza": "texto",
+     "ref": "1R 15:5",
+     "cita": "excepto el negocio de Uría Hetheo"
+    }
+   ],
+   "externo": []
+  },
+  "Hadadezer_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:23"
+    }
+   ],
+   "resumen": "",
+   "datos": [],
+   "externo": []
+  },
+  "Abiathar_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:7",
+     "fin": "1R 1:7"
+    },
+    {
+     "inicio": "1R 2:26",
+     "fin": "1R 2:27"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:19"
+    },
+    {
+     "ref": "1R 1:25"
+    },
+    {
+     "ref": "1R 1:42"
+    },
+    {
+     "ref": "1R 2:22"
+    },
+    {
+     "ref": "1R 2:35"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Ayuda a Adonías",
+     "certeza": "texto",
+     "ref": "1R 1:7",
+     "cita": "tenía tratos con Joab hijo de Sarvia, y con Abiathar sacerdote, los cuales ayudaban á Adonía"
+    },
+    {
+     "texto": "Salomón lo manda a Anatot y no lo mata «hoy» por haber llevado el arca delante de David",
+     "certeza": "texto",
+     "ref": "1R 2:26",
+     "cita": "Vete á Anathoth á tus heredades, que tú eres digno de muerte"
+    },
+    {
+     "texto": "Salomón lo echa del sacerdocio, para que se cumpla la palabra sobre la casa de Elí",
+     "certeza": "texto",
+     "ref": "1R 2:27",
+     "cita": "Así echó Salomón á Abiathar del sacerdocio de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Joab_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:7",
+     "fin": "1R 1:7"
+    },
+    {
+     "inicio": "1R 1:41",
+     "fin": "1R 1:41"
+    },
+    {
+     "inicio": "1R 2:28",
+     "fin": "1R 2:34"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:19"
+    },
+    {
+     "ref": "1R 2:5"
+    },
+    {
+     "ref": "1R 2:22"
+    },
+    {
+     "ref": "1R 11:15"
+    },
+    {
+     "ref": "1R 11:16"
+    },
+    {
+     "ref": "1R 11:21"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Se pone de parte de Adonías",
+     "certeza": "texto",
+     "ref": "1R 1:7",
+     "cita": "tenía tratos con Joab hijo de Sarvia"
+    },
+    {
+     "texto": "Oye la trompeta en el banquete de Adonías y pregunta por qué se alborota la ciudad",
+     "certeza": "texto",
+     "ref": "1R 1:41",
+     "cita": "¿Por qué se alborota la ciudad con estruendo?"
+    },
+    {
+     "texto": "Huye al tabernáculo y se agarra a los cuernos del altar",
+     "certeza": "texto",
+     "ref": "1R 2:28",
+     "cita": "huyó Joab al tabernáculo de Jehová, y asióse á los cornijales del altar"
+    },
+    {
+     "texto": "Se niega a salir del altar",
+     "certeza": "texto",
+     "ref": "1R 2:30",
+     "cita": "No, sino aquí moriré"
+    },
+    {
+     "texto": "Benaía lo mata y es sepultado «en su casa en el desierto»",
+     "certeza": "texto",
+     "ref": "1R 2:34",
+     "cita": "Entonces Benaía hijo de Joiada subió, y dió sobre él, y matólo"
+    }
+   ],
+   "externo": []
+  },
+  "Adonijah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:5",
+     "fin": "1R 1:9"
+    },
+    {
+     "inicio": "1R 1:41",
+     "fin": "1R 1:53"
+    },
+    {
+     "inicio": "1R 2:13",
+     "fin": "1R 2:17"
+    },
+    {
+     "inicio": "1R 2:25",
+     "fin": "1R 2:25"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:11"
+    },
+    {
+     "ref": "1R 1:13"
+    },
+    {
+     "ref": "1R 1:18"
+    },
+    {
+     "ref": "1R 1:24"
+    },
+    {
+     "ref": "1R 1:25"
+    },
+    {
+     "ref": "1R 2:19"
+    },
+    {
+     "ref": "1R 2:21"
+    },
+    {
+     "ref": "1R 2:22"
+    },
+    {
+     "ref": "1R 2:23"
+    },
+    {
+     "ref": "1R 2:24"
+    },
+    {
+     "ref": "1R 2:28"
+    }
+   ],
+   "resumen": "Cuarto hijo de David (según 2 S 3:4), hijo de Haguit; se proclama rey estando David viejo, huye al altar al ser ungido Salomón, pide a Abisag por mujer y Salomón lo hace matar.",
+   "datos": [
+    {
+     "texto": "Dice «Yo reinaré» y se hace de carros, jinetes y cincuenta hombres que corran delante de él",
+     "certeza": "texto",
+     "ref": "1R 1:5",
+     "cita": "Yo reinaré"
+    },
+    {
+     "texto": "Mata ovejas y vacas junto a la peña de Zoheleth y convida a sus hermanos, pero no a Natán, Benaía ni Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:9",
+     "cita": "convidó á todos sus hermanos los hijos del rey"
+    },
+    {
+     "texto": "Teme a Salomón y se agarra a los cuernos del altar",
+     "certeza": "texto",
+     "ref": "1R 1:50",
+     "cita": "cogió los cornijales del altar"
+    },
+    {
+     "texto": "Salomón: si es virtuoso no caerá ni uno de sus cabellos; si hay mal en él, morirá",
+     "certeza": "texto",
+     "ref": "1R 1:52",
+     "cita": "Si él fuere virtuoso, ni uno de sus cabellos caerá en tierra"
+    },
+    {
+     "texto": "Salomón lo envía por mano de Benaía, que lo mata",
+     "certeza": "texto",
+     "ref": "1R 2:25",
+     "cita": "el cual dió sobre él, y murió"
+    }
+   ],
+   "externo": []
+  },
+  "Hiram_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 5:1",
+     "fin": "1R 5:12"
+    },
+    {
+     "inicio": "1R 9:11",
+     "fin": "1R 9:14"
+    },
+    {
+     "inicio": "1R 9:27",
+     "fin": "1R 9:27"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 5:18"
+    },
+    {
+     "ref": "1R 10:11"
+    },
+    {
+     "ref": "1R 10:22"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Rey de Tiro: siempre amó a David y envía siervos a Salomón al saber que lo ungieron",
+     "certeza": "texto",
+     "ref": "1R 5:1",
+     "cita": "Hiram había siempre amado á David"
+    },
+    {
+     "texto": "Da a Salomón madera de cedro y de haya",
+     "certeza": "texto",
+     "ref": "1R 5:10",
+     "cita": "Dió pues Hiram á Salomón madera de cedro y madera de haya todo lo que quiso"
+    },
+    {
+     "texto": "Salomón le da cada año trigo y aceite",
+     "certeza": "texto",
+     "ref": "1R 5:11",
+     "cita": "veinte mil coros de trigo para el sustento de su familia, y veinte coros de aceite limpio"
+    },
+    {
+     "texto": "No le contentan las veinte ciudades de Galilea y las llama «la tierra de Cabul»",
+     "certeza": "texto",
+     "ref": "1R 9:13",
+     "cita": "púsoles por nombre, la tierra de Cabul"
+    },
+    {
+     "texto": "Había enviado al rey ciento veinte talentos de oro",
+     "certeza": "texto",
+     "ref": "1R 9:14",
+     "cita": "ciento y veinte talentos de oro"
+    }
+   ],
+   "externo": []
+  },
+  "Solomon_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:38",
+     "fin": "1R 1:39"
+    },
+    {
+     "inicio": "1R 1:43",
+     "fin": "1R 1:53"
+    },
+    {
+     "inicio": "1R 2:1",
+     "fin": "1R 2:46"
+    },
+    {
+     "inicio": "1R 3:1",
+     "fin": "1R 3:28"
+    },
+    {
+     "inicio": "1R 4:1",
+     "fin": "1R 4:1"
+    },
+    {
+     "inicio": "1R 4:7",
+     "fin": "1R 4:7"
+    },
+    {
+     "inicio": "1R 4:20",
+     "fin": "1R 4:34"
+    },
+    {
+     "inicio": "1R 5:1",
+     "fin": "1R 5:18"
+    },
+    {
+     "inicio": "1R 6:1",
+     "fin": "1R 6:38"
+    },
+    {
+     "inicio": "1R 7:1",
+     "fin": "1R 7:51"
+    },
+    {
+     "inicio": "1R 8:1",
+     "fin": "1R 8:66"
+    },
+    {
+     "inicio": "1R 9:1",
+     "fin": "1R 9:28"
+    },
+    {
+     "inicio": "1R 10:1",
+     "fin": "1R 10:29"
+    },
+    {
+     "inicio": "1R 11:1",
+     "fin": "1R 11:13"
+    },
+    {
+     "inicio": "1R 11:27",
+     "fin": "1R 11:28"
+    },
+    {
+     "inicio": "1R 11:40",
+     "fin": "1R 11:43"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:10"
+    },
+    {
+     "ref": "1R 1:11"
+    },
+    {
+     "ref": "1R 1:12"
+    },
+    {
+     "ref": "1R 1:13"
+    },
+    {
+     "ref": "1R 1:17"
+    },
+    {
+     "ref": "1R 1:19"
+    },
+    {
+     "ref": "1R 1:21"
+    },
+    {
+     "ref": "1R 1:26"
+    },
+    {
+     "ref": "1R 1:30"
+    },
+    {
+     "ref": "1R 1:33"
+    },
+    {
+     "ref": "1R 1:34"
+    },
+    {
+     "ref": "1R 1:37"
+    },
+    {
+     "ref": "1R 11:14"
+    },
+    {
+     "ref": "1R 11:25"
+    },
+    {
+     "ref": "1R 11:26"
+    },
+    {
+     "ref": "1R 11:31"
+    },
+    {
+     "ref": "1R 12:2"
+    },
+    {
+     "ref": "1R 12:6"
+    },
+    {
+     "ref": "1R 12:21"
+    },
+    {
+     "ref": "1R 12:23"
+    },
+    {
+     "ref": "1R 14:21"
+    },
+    {
+     "ref": "1R 14:26"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Sadoc lo unge en Gihón y el pueblo grita «¡Viva el rey Salomón!»",
+     "certeza": "texto",
+     "ref": "1R 1:39",
+     "cita": "ungió á Salomón: y tocaron trompeta, y dijo todo el pueblo: ¡Viva el rey Salomón!"
+    },
+    {
+     "texto": "En Gabaón pide un corazón dócil para juzgar y discernir entre lo bueno y lo malo",
+     "certeza": "texto",
+     "ref": "1R 3:9",
+     "cita": "Da pues á tu siervo corazón dócil para juzgar á tu pueblo"
+    },
+    {
+     "texto": "Sentencia a favor de la mujer que no quiso partir al niño",
+     "certeza": "texto",
+     "ref": "1R 3:27",
+     "cita": "Dad á aquélla el hijo vivo, y no lo matéis: ella es su madre"
+    },
+    {
+     "texto": "Su sabiduría fue mayor que la de todos los orientales y los egipcios",
+     "certeza": "texto",
+     "ref": "1R 4:30",
+     "cita": "mayor la sabiduría de Salomón que la de todos los orientales"
+    },
+    {
+     "texto": "Acaba el templo en siete años",
+     "certeza": "texto",
+     "ref": "1R 6:38",
+     "cita": "Edificóla pues, en siete años"
+    },
+    {
+     "texto": "Edifica su propia casa en trece años",
+     "certeza": "texto",
+     "ref": "1R 7:1",
+     "cita": "edificó Salomón su propia casa en trece años"
+    },
+    {
+     "texto": "Ora ante el altar con las manos extendidas al cielo",
+     "certeza": "texto",
+     "ref": "1R 8:22",
+     "cita": "Púsose luego Salomón delante del altar de Jehová"
+    },
+    {
+     "texto": "Tuvo setecientas mujeres reinas y trescientas concubinas",
+     "certeza": "texto",
+     "ref": "1R 11:3",
+     "cita": "setecientas mujeres reinas, y trescientas concubinas"
+    },
+    {
+     "texto": "Reinó cuarenta años en Jerusalén sobre todo Israel",
+     "certeza": "texto",
+     "ref": "1R 11:42",
+     "cita": "fueron cuarenta años"
+    }
+   ],
+   "externo": []
+  },
+  "Nathan_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:11",
+     "fin": "1R 1:14"
+    },
+    {
+     "inicio": "1R 1:22",
+     "fin": "1R 1:27"
+    },
+    {
+     "inicio": "1R 1:32",
+     "fin": "1R 1:34"
+    },
+    {
+     "inicio": "1R 1:38",
+     "fin": "1R 1:38"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    },
+    {
+     "ref": "1R 1:10"
+    },
+    {
+     "ref": "1R 1:44"
+    },
+    {
+     "ref": "1R 1:45"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Aconseja a Betsabé que hable al rey para guardar su vida y la de Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:12",
+     "cita": "para que guardes tu vida, y la vida de tu hijo Salomón"
+    },
+    {
+     "texto": "Ante David pregunta si ha dicho que Adonías reinará",
+     "certeza": "texto",
+     "ref": "1R 1:24",
+     "cita": "¿has tú dicho: Adonía reinará después de mí"
+    },
+    {
+     "texto": "David lo manda con Sadoc a ungir a Salomón en Gihón",
+     "certeza": "texto",
+     "ref": "1R 1:34",
+     "cita": "allí lo ungirán Sadoc sacerdote y Nathán profeta por rey sobre Israel"
+    }
+   ],
+   "externo": []
+  },
+  "Zadok_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:32",
+     "fin": "1R 1:39"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    },
+    {
+     "ref": "1R 1:26"
+    },
+    {
+     "ref": "1R 1:44"
+    },
+    {
+     "ref": "1R 1:45"
+    },
+    {
+     "ref": "1R 2:35"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David lo llama junto a Natán y Benaía",
+     "certeza": "texto",
+     "ref": "1R 1:32",
+     "cita": "Llamadme á Sadoc sacerdote, y á Nathán profeta, y á Benaía hijo de Joiada"
+    },
+    {
+     "texto": "Toma el cuerno del aceite del tabernáculo y unge a Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:39",
+     "cita": "tomando Sadoc sacerdote el cuerno del aceite del tabernáculo, ungió á Salomón"
+    },
+    {
+     "texto": "Salomón lo pone por sacerdote en lugar de Abiatar",
+     "certeza": "texto",
+     "ref": "1R 2:35",
+     "cita": "á Sadoc puso el rey por sacerdote en lugar de Abiathar"
+    }
+   ],
+   "externo": []
+  },
+  "Benaiah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:32",
+     "fin": "1R 1:38"
+    },
+    {
+     "inicio": "1R 2:25",
+     "fin": "1R 2:25"
+    },
+    {
+     "inicio": "1R 2:29",
+     "fin": "1R 2:35"
+    },
+    {
+     "inicio": "1R 2:46",
+     "fin": "1R 2:46"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    },
+    {
+     "ref": "1R 1:10"
+    },
+    {
+     "ref": "1R 1:26"
+    },
+    {
+     "ref": "1R 1:44"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Responde «Amén» al plan de David de ungir a Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:36",
+     "cita": "Amén. Así [lo] diga Jehová, Dios de mi señor el rey"
+    },
+    {
+     "texto": "Salomón lo envía contra Adonías",
+     "certeza": "texto",
+     "ref": "1R 2:25",
+     "cita": "Entonces el rey Salomón envió por mano de Benaía hijo de Joiada, el cual dió sobre él, y murió"
+    },
+    {
+     "texto": "Salomón lo pone al frente del ejército en lugar de Joab",
+     "certeza": "texto",
+     "ref": "1R 2:35",
+     "cita": "puso en su lugar á Benaía hijo de Joiada sobre el ejército"
+    }
+   ],
+   "externo": []
+  },
+  "Bathsheba_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:11",
+     "fin": "1R 1:31"
+    },
+    {
+     "inicio": "1R 2:13",
+     "fin": "1R 2:22"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Recuerda a David el juramento sobre Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:17",
+     "cita": "Salomón tu hijo reinará después de mí, y él se sentará en mi trono"
+    },
+    {
+     "texto": "Salomón la recibe, se inclina y la hace sentar a su derecha",
+     "certeza": "texto",
+     "ref": "1R 2:19",
+     "cita": "hizo poner una silla á la madre del rey, la cual se sentó á su diestra"
+    },
+    {
+     "texto": "Pide a Salomón que dé Abisag por mujer a Adonías",
+     "certeza": "texto",
+     "ref": "1R 2:21",
+     "cita": "Dése Abisag Sunamita por mujer á tu hermano Adonía"
+    }
+   ],
+   "externo": []
+  },
+  "Jonathan_3": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:42",
+     "fin": "1R 1:48"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Hijo de Abiatar: llega al banquete de Adonías",
+     "certeza": "texto",
+     "ref": "1R 1:42",
+     "cita": "Entra, porque tú eres hombre de esfuerzo, y traerás buenas nuevas"
+    },
+    {
+     "texto": "Cuenta a Adonías que David ha hecho rey a Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:43",
+     "cita": "Ciertamente nuestro señor el rey David ha hecho rey á Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Shimei_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 2:36",
+     "fin": "1R 2:46"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Salomón le manda vivir en Jerusalén sin salir",
+     "certeza": "texto",
+     "ref": "1R 2:36",
+     "cita": "Edifícate una casa en Jerusalem, y mora ahí, y no salgas de allá á una parte ni á otra"
+    },
+    {
+     "texto": "Salomón le advierte que morirá si pasa el torrente de Cedrón",
+     "certeza": "texto",
+     "ref": "1R 2:37",
+     "cita": "el día que salieres, y pasares el torrente de Cedrón, sin duda morirás"
+    },
+    {
+     "texto": "A los tres años va a Gat por sus dos siervos",
+     "certeza": "texto",
+     "ref": "1R 2:40",
+     "cita": "Levantóse entonces Semei, y enalbardó su asno, y fué á Gath"
+    },
+    {
+     "texto": "Salomón manda a Benaía, que lo hiere y muere",
+     "certeza": "texto",
+     "ref": "1R 2:46",
+     "cita": "el cual salió é hirióle; y murió"
+    }
+   ],
+   "externo": []
+  },
+  "Adoram_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 12:18",
+     "fin": "1R 12:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Roboam lo envía y Israel lo apedrea",
+     "certeza": "texto",
+     "ref": "1R 12:18",
+     "cita": "Y el rey Roboam envió á Adoram, que estaba sobre los tributos; pero apedreóle todo Israel"
+    }
+   ],
+   "externo": []
+  },
+  "Abishag_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 1:1",
+     "fin": "1R 1:4"
+    },
+    {
+     "inicio": "1R 1:15",
+     "fin": "1R 1:15"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 2:17"
+    },
+    {
+     "ref": "1R 2:21"
+    },
+    {
+     "ref": "1R 2:22"
+    }
+   ],
+   "resumen": "Joven sunamita que sirve al rey David viejo; después Adonías la pide por mujer.",
+   "datos": [
+    {
+     "texto": "La hallan en todo el término de Israel y la traen al rey",
+     "certeza": "texto",
+     "ref": "1R 1:3",
+     "cita": "hallaron á Abisag Sunamita, y trajéronla al rey"
+    },
+    {
+     "texto": "El rey nunca la conoció",
+     "certeza": "texto",
+     "ref": "1R 1:4",
+     "cita": "el rey nunca la conoció"
+    },
+    {
+     "texto": "Adonías pide a Betsabé que interceda para que Salomón se la dé por mujer",
+     "certeza": "texto",
+     "ref": "1R 2:17",
+     "cita": "para que me dé á Abisag Sunamita por mujer"
+    }
+   ],
+   "externo": []
+  },
+  "Pharaoh_5": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:18",
+     "fin": "1R 11:22"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 3:1"
+    },
+    {
+     "ref": "1R 7:8"
+    },
+    {
+     "ref": "1R 9:16"
+    },
+    {
+     "ref": "1R 9:24"
+    },
+    {
+     "ref": "1R 11:1"
+    }
+   ],
+   "resumen": "Rey de Egipto y suegro de Salomón (no es el del éxodo): da a su hija por mujer, toma y quema Gezer y la da en don, y acoge a Adad el edomita; esta última identidad es de la fuente de datos, no del texto.",
+   "datos": [
+    {
+     "texto": "Faraón rey de Egipto, suegro de Salomón (no es el del éxodo)",
+     "certeza": "texto",
+     "ref": "1R 3:1",
+     "cita": "hizo parentesco con Faraón rey de Egipto"
+    },
+    {
+     "texto": "Acoge a Adad y le da casa, alimentos y tierra",
+     "certeza": "texto",
+     "ref": "1R 11:18",
+     "cita": "viniéronse á Egipto, á Faraón rey de Egipto, el cual le dió casa, y le señaló alimentos, y aun le dió tierra"
+    },
+    {
+     "texto": "Que sea el mismo Faraón suegro de Salomón (3:1) no lo dice el texto: lo propone la fuente de los datos",
+     "certeza": "inferido",
+     "ref": "1R 11:19",
+     "cita": "Faraón"
+    }
+   ],
+   "externo": []
+  },
+  "Pharaoh_5_hija_1R3": {
+   "apariciones": [
+    {
+     "inicio": "1R 3:1",
+     "fin": "1R 3:1"
+    },
+    {
+     "inicio": "1R 9:24",
+     "fin": "1R 9:24"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 7:8"
+    },
+    {
+     "ref": "1R 9:16"
+    },
+    {
+     "ref": "1R 11:1"
+    }
+   ],
+   "resumen": "Hija de Faraón, mujer de Salomón; el texto no da su nombre.",
+   "datos": [
+    {
+     "texto": "Salomón la toma por mujer y la trae a la ciudad de David",
+     "certeza": "texto",
+     "ref": "1R 3:1",
+     "cita": "tomó la hija de Faraón, y trájola á la ciudad de David"
+    },
+    {
+     "texto": "Salomón le edifica una casa",
+     "certeza": "texto",
+     "ref": "1R 7:8",
+     "cita": "Edificó también Salomón una casa para la hija de Faraón"
+    },
+    {
+     "texto": "Faraón le dio Gezer en don",
+     "certeza": "texto",
+     "ref": "1R 9:16",
+     "cita": "dádola en don á su hija la mujer de Salomón"
+    },
+    {
+     "texto": "Sube a su casa",
+     "certeza": "texto",
+     "ref": "1R 9:24",
+     "cita": "subió la hija de Faraón de la ciudad de David á su casa"
+    }
+   ],
+   "externo": []
+  },
+  "Rei_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Con Sadoc, Benaía, Natán y Semei, no seguía a Adonías",
+     "certeza": "texto",
+     "ref": "1R 1:8",
+     "cita": "Semei, y Reihi, y todos los grandes de David, no seguían á Adonía"
+    }
+   ],
+   "externo": []
+  },
+  "Shimei_1R1_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 1:8"
+    }
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Con Sadoc, Benaía, Natán y Reihi, no seguía a Adonías (otro Semei que el de 2:8)",
+     "certeza": "texto",
+     "ref": "1R 1:8",
+     "cita": "Semei, y Reihi, y todos los grandes de David, no seguían á Adonía"
+    }
+   ],
+   "externo": []
+  },
+  "Azariah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Sadoc, sacerdote; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Azarías hijo de Sadoc, sacerdote",
+     "certeza": "texto",
+     "ref": "1R 4:2",
+     "cita": "Azarías hijo de Sadoc, sacerdote"
+    }
+   ],
+   "externo": []
+  },
+  "Ahijah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Escriba, hijo de Sisa; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Ahía, escriba, hijo de Sisa",
+     "certeza": "texto",
+     "ref": "1R 4:3",
+     "cita": "Elioreph y Ahía, hijos de Sisa, escribas"
+    }
+   ],
+   "externo": []
+  },
+  "Elihoreph_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Escriba, hijo de Sisa; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Elioref, escriba, hijo de Sisa",
+     "certeza": "texto",
+     "ref": "1R 4:3",
+     "cita": "Elioreph y Ahía, hijos de Sisa, escribas"
+    }
+   ],
+   "externo": []
+  },
+  "Shisha_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Elioref y Ahía; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Padre de los escribas Elioref y Ahía",
+     "certeza": "texto",
+     "ref": "1R 4:3",
+     "cita": "hijos de Sisa"
+    }
+   ],
+   "externo": []
+  },
+  "Azariah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Natán, sobre los gobernadores; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Azarías hijo de Natán, sobre los gobernadores",
+     "certeza": "texto",
+     "ref": "1R 4:5",
+     "cita": "Azaría hijo de Nathán era sobre los gobernadores"
+    }
+   ],
+   "externo": []
+  },
+  "Nathan_4": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Azarías (4:5); el texto no dice si es el profeta.",
+   "datos": [
+    {
+     "texto": "Padre de Azarías, el jefe de los gobernadores",
+     "certeza": "texto",
+     "ref": "1R 4:5",
+     "cita": "Azaría hijo de Nathán era sobre los gobernadores"
+    }
+   ],
+   "externo": []
+  },
+  "Nathan_5": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Zabud (4:5); el texto no dice si es el profeta.",
+   "datos": [
+    {
+     "texto": "Padre de Zabud, «amigo del rey»",
+     "certeza": "texto",
+     "ref": "1R 4:5",
+     "cita": "Zabud hijo de Nathán era principal [oficial], amigo del rey"
+    }
+   ],
+   "externo": []
+  },
+  "Zabud_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Natán, oficial principal y amigo del rey; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Oficial principal, amigo del rey",
+     "certeza": "texto",
+     "ref": "1R 4:5",
+     "cita": "Zabud hijo de Nathán era principal [oficial], amigo del rey"
+    }
+   ],
+   "externo": []
+  },
+  "Abda_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Adoniram; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Padre de Adoniram",
+     "certeza": "texto",
+     "ref": "1R 4:6",
+     "cita": "Adoniram hijo de Abda era sobre el tributo"
+    }
+   ],
+   "externo": []
+  },
+  "Adoniram_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 5:14",
+     "fin": "1R 5:14"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mayordomo del tributo de Salomón; al frente de los treinta mil que cortan madera en el Líbano.",
+   "datos": [
+    {
+     "texto": "Está sobre el tributo",
+     "certeza": "texto",
+     "ref": "1R 4:6",
+     "cita": "Adoniram hijo de Abda era sobre el tributo"
+    },
+    {
+     "texto": "Está sobre los treinta mil que van al Líbano por turnos de diez mil",
+     "certeza": "texto",
+     "ref": "1R 5:14",
+     "cita": "Adoniram estaba sobre aquel tributo"
+    }
+   ],
+   "externo": []
+  },
+  "Ahishar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Mayordomo; solo sale en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Ahisar era mayordomo",
+     "certeza": "texto",
+     "ref": "1R 4:6",
+     "cita": "Ahisar era mayordomo"
+    }
+   ],
+   "externo": []
+  },
+  "Ben-hur_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en el monte de Efraín; solo se le nombra como «el hijo de Hur».",
+   "datos": [
+    {
+     "texto": "Gobernador «en el monte de Efraín»",
+     "certeza": "texto",
+     "ref": "1R 4:8",
+     "cita": "el hijo de Hur en el monte de Ephraim"
+    }
+   ],
+   "externo": []
+  },
+  "Ben-deker_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en Macas y otras ciudades; solo «el hijo de Decar».",
+   "datos": [
+    {
+     "texto": "Gobernador en Macas, Saalbim, Bet-semes, Elón y Bet-hanán",
+     "certeza": "texto",
+     "ref": "1R 4:9",
+     "cita": "El hijo de Decar, en Maccas"
+    }
+   ],
+   "externo": []
+  },
+  "Ben-hesed_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en Arubot; solo «el hijo de Hesed».",
+   "datos": [
+    {
+     "texto": "Gobernador en Arubot; tenía también Soco y toda la tierra de Efer",
+     "certeza": "texto",
+     "ref": "1R 4:10",
+     "cita": "El hijo de Hesed, en Aruboth"
+    }
+   ],
+   "externo": []
+  },
+  "Ben-abinadab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en los términos de Dor, yerno de Salomón; solo «el hijo de Abinadab».",
+   "datos": [
+    {
+     "texto": "Gobernador en los términos de Dor; su mujer era Tafat, hija de Salomón",
+     "certeza": "texto",
+     "ref": "1R 4:11",
+     "cita": "El hijo de Abinadab, en todos los términos de Dor"
+    }
+   ],
+   "externo": []
+  },
+  "Taphath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hija de Salomón, casada con el gobernador de Dor; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Mujer del hijo de Abinadab; hija de Salomón",
+     "certeza": "texto",
+     "ref": "1R 4:11",
+     "cita": "éste tenía por mujer á Thaphat hija de Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Ahilud_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Baana, gobernador en Taanac y Meguido; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Padre del gobernador Baana",
+     "certeza": "texto",
+     "ref": "1R 4:12",
+     "cita": "Baana hijo de Ahilud, en Taanach y Megiddo"
+    }
+   ],
+   "externo": []
+  },
+  "Baana_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en Taanac, Meguido y Bet-san; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Gobernador en Taanac, Meguido y Bet-san, hasta Abel-mehola",
+     "certeza": "texto",
+     "ref": "1R 4:12",
+     "cita": "Baana hijo de Ahilud, en Taanach y Megiddo"
+    }
+   ],
+   "externo": []
+  },
+  "Ben-geber_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en Ramot de Galaad y Argob; solo «el hijo de Geber».",
+   "datos": [
+    {
+     "texto": "Gobernador en Ramot de Galaad; tenía las ciudades de Jair y la provincia de Argob",
+     "certeza": "texto",
+     "ref": "1R 4:13",
+     "cita": "El hijo de Geber, en Ramoth de Galaad"
+    }
+   ],
+   "externo": []
+  },
+  "Ahinadab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Iddo, gobernador en Mahanaim; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Gobernador en Mahanaim",
+     "certeza": "texto",
+     "ref": "1R 4:14",
+     "cita": "Ahinadab hijo de Iddo, en Mahanaim"
+    }
+   ],
+   "externo": []
+  },
+  "Iddo_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Ahinadab; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Padre del gobernador Ahinadab",
+     "certeza": "texto",
+     "ref": "1R 4:14",
+     "cita": "Ahinadab hijo de Iddo, en Mahanaim"
+    }
+   ],
+   "externo": []
+  },
+  "Ahimaaz_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Gobernador en Neftalí, casado con Basemat hija de Salomón; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Gobernador en Neftalí",
+     "certeza": "texto",
+     "ref": "1R 4:15",
+     "cita": "Ahimaas en Nephtalí"
+    },
+    {
+     "texto": "Toma por mujer a Basemat hija de Salomón",
+     "certeza": "texto",
+     "ref": "1R 4:15",
+     "cita": "tomó también por mujer á Basemath hija de Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Basemath_1R4_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hija de Salomón, casada con Ahimaas; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Hija de Salomón, mujer de Ahimaas",
+     "certeza": "texto",
+     "ref": "1R 4:15",
+     "cita": "tomó también por mujer á Basemath hija de Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Baana_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Husai, gobernador en Aser y Alot; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Gobernador en Aser y en Alot",
+     "certeza": "texto",
+     "ref": "1R 4:16",
+     "cita": "Baana hijo de Husai, en Aser y en Aloth"
+    }
+   ],
+   "externo": []
+  },
+  "Hushai_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Baana (4:16); el texto no lo identifica con otro Husai.",
+   "datos": [
+    {
+     "texto": "Padre del gobernador Baana",
+     "certeza": "texto",
+     "ref": "1R 4:16",
+     "cita": "Baana hijo de Husai"
+    }
+   ],
+   "externo": []
+  },
+  "Jehoshaphat_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Parúa, gobernador en Isacar; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Gobernador en Isacar",
+     "certeza": "texto",
+     "ref": "1R 4:17",
+     "cita": "Josaphat hijo de Pharua, en Issachâr"
+    }
+   ],
+   "externo": []
+  },
+  "Paruah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Josafat, el gobernador de Isacar; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Padre del gobernador Josafat",
+     "certeza": "texto",
+     "ref": "1R 4:17",
+     "cita": "Josaphat hijo de Pharua"
+    }
+   ],
+   "externo": []
+  },
+  "Ela_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Simei, gobernador en Benjamín; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Padre del gobernador Simei",
+     "certeza": "texto",
+     "ref": "1R 4:18",
+     "cita": "Semei hijo de Ela, en Benjamín"
+    }
+   ],
+   "externo": []
+  },
+  "Shimei_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Ela, gobernador en Benjamín; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Gobernador en Benjamín",
+     "certeza": "texto",
+     "ref": "1R 4:18",
+     "cita": "Semei hijo de Ela, en Benjamín"
+    }
+   ],
+   "externo": []
+  },
+  "Geber_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Uri, único gobernador en la tierra de Galaad; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Único gobernador en la tierra de Galaad, antes de Sehón y de Og",
+     "certeza": "texto",
+     "ref": "1R 4:19",
+     "cita": "Geber hijo de Uri, en la tierra de Galaad"
+    }
+   ],
+   "externo": []
+  },
+  "Uri_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Geber; solo sale en la lista.",
+   "datos": [
+    {
+     "texto": "Padre del gobernador Geber",
+     "certeza": "texto",
+     "ref": "1R 4:19",
+     "cita": "Geber hijo de Uri"
+    }
+   ],
+   "externo": []
+  },
+  "Ethan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 4:31"
+    }
+   ],
+   "resumen": "Etán el ezraíta: Salomón fue más sabio que él.",
+   "datos": [
+    {
+     "texto": "Salomón fue más sabio que Etán el ezraíta",
+     "certeza": "texto",
+     "ref": "1R 4:31",
+     "cita": "más que Ethán Ezrahita"
+    }
+   ],
+   "externo": []
+  },
+  "Heman_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 4:31"
+    }
+   ],
+   "resumen": "Hemán, hijo de Mahol: Salomón fue más sabio que él.",
+   "datos": [
+    {
+     "texto": "Salomón fue más sabio que Hemán, Calcol y Darda, «hijos de Mahol»",
+     "certeza": "texto",
+     "ref": "1R 4:31",
+     "cita": "que Emán y Calchôl y Darda, hijos de Mahol"
+    }
+   ],
+   "externo": []
+  },
+  "Calcol_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 4:31"
+    }
+   ],
+   "resumen": "Calcol, hijo de Mahol: Salomón fue más sabio que él.",
+   "datos": [
+    {
+     "texto": "Salomón fue más sabio que Hemán, Calcol y Darda, «hijos de Mahol»",
+     "certeza": "texto",
+     "ref": "1R 4:31",
+     "cita": "que Emán y Calchôl y Darda, hijos de Mahol"
+    }
+   ],
+   "externo": []
+  },
+  "Darda_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 4:31"
+    }
+   ],
+   "resumen": "Darda, hijo de Mahol: Salomón fue más sabio que él.",
+   "datos": [
+    {
+     "texto": "Salomón fue más sabio que Hemán, Calcol y Darda, «hijos de Mahol»",
+     "certeza": "texto",
+     "ref": "1R 4:31",
+     "cita": "que Emán y Calchôl y Darda, hijos de Mahol"
+    }
+   ],
+   "externo": []
+  },
+  "Mahol_1R4_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 4:31"
+    }
+   ],
+   "resumen": "Padre de Hemán, Calcol y Darda; solo se le nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Hemán, Calcol y Darda",
+     "certeza": "texto",
+     "ref": "1R 4:31",
+     "cita": "hijos de Mahol"
+    }
+   ],
+   "externo": []
+  },
+  "Hiram_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 7:13",
+     "fin": "1R 7:45"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Artífice de bronce, hijo de una viuda de Neftalí y de padre de Tiro; Salomón lo hace venir y hace las columnas, el mar, las basas y los utensilios del templo.",
+   "datos": [
+    {
+     "texto": "Salomón lo hace venir de Tiro",
+     "certeza": "texto",
+     "ref": "1R 7:13",
+     "cita": "envió el rey Salomón, é hizo venir de Tiro á Hiram"
+    },
+    {
+     "texto": "Hijo de una viuda de la tribu de Neftalí; su padre era de Tiro",
+     "certeza": "texto",
+     "ref": "1R 7:14",
+     "cita": "Hijo de una viuda de la tribu de Nephtalí, y su padre había sido de Tiro"
+    },
+    {
+     "texto": "Lleno de sabiduría, inteligencia y saber en toda obra de metal",
+     "certeza": "texto",
+     "ref": "1R 7:14",
+     "cita": "lleno de sabiduría y de inteligencia y saber en toda obra de metal"
+    },
+    {
+     "texto": "Acaba toda la obra del bronce para la casa de Jehová",
+     "certeza": "texto",
+     "ref": "1R 7:40",
+     "cita": "Así acabó toda la obra que hizo á Salomón para la casa de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Queen of Sheba_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 10:1",
+     "fin": "1R 10:13"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Reina de Seba (el texto no da su nombre): viene con una gran comitiva a probar a Salomón con preguntas, se queda sin aliento y vuelve a su tierra con regalos.",
+   "datos": [
+    {
+     "texto": "Viene a probar a Salomón con preguntas",
+     "certeza": "texto",
+     "ref": "1R 10:1",
+     "cita": "vino á probarle con preguntas"
+    },
+    {
+     "texto": "Llega con camellos cargados de especias, oro y piedras preciosas",
+     "certeza": "texto",
+     "ref": "1R 10:2",
+     "cita": "con camellos cargados de especias, y oro en grande abundancia, y piedras preciosas"
+    },
+    {
+     "texto": "Dice que no le habían dicho ni la mitad",
+     "certeza": "texto",
+     "ref": "1R 10:7",
+     "cita": "ni aun la mitad fué lo que se me dijo"
+    },
+    {
+     "texto": "Da al rey ciento veinte talentos de oro, especias y piedras preciosas",
+     "certeza": "texto",
+     "ref": "1R 10:10",
+     "cita": "ciento y veinte talentos de oro, y muy mucha especiería, y piedras preciosas"
+    }
+   ],
+   "externo": []
+  },
+  "Hadad_3": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:14",
+     "fin": "1R 11:22"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:25"
+    }
+   ],
+   "resumen": "Idumeo de sangre real, adversario de Salomón; huye niño a Egipto, Faraón le da casa y mujer, y cuando muere David pide volver a su tierra.",
+   "datos": [
+    {
+     "texto": "Jehová lo suscita como adversario de Salomón",
+     "certeza": "texto",
+     "ref": "1R 11:14",
+     "cita": "Jehová suscitó un adversario á Salomón, á Adad, Idumeo, de la sangre real"
+    },
+    {
+     "texto": "Huye a Egipto siendo muchacho pequeño",
+     "certeza": "texto",
+     "ref": "1R 11:17",
+     "cita": "era entonces Adad muchacho pequeño"
+    },
+    {
+     "texto": "Faraón le da por mujer a la hermana de la reina Tafnes",
+     "certeza": "texto",
+     "ref": "1R 11:19",
+     "cita": "le dió por mujer á la hermana de su esposa, á la hermana de la reina Thaphnes"
+    },
+    {
+     "texto": "Pide a Faraón que lo deje ir a su tierra",
+     "certeza": "texto",
+     "ref": "1R 11:22",
+     "cita": "ruégote que me dejes ir"
+    }
+   ],
+   "externo": []
+  },
+  "Tahpenes_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:19",
+     "fin": "1R 11:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Reina de Egipto; su hermana se casa con Adad y ella destetó a su hijo Genubat.",
+   "datos": [
+    {
+     "texto": "Es la reina; su hermana se casa con Adad",
+     "certeza": "texto",
+     "ref": "1R 11:19",
+     "cita": "la reina Thaphnes"
+    },
+    {
+     "texto": "Desteta a Genubat dentro de la casa de Faraón",
+     "certeza": "texto",
+     "ref": "1R 11:20",
+     "cita": "al cual destetó Thaphnes dentro de la casa de Faraón"
+    }
+   ],
+   "externo": []
+  },
+  "Genubath_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:20",
+     "fin": "1R 11:20"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Adad y de la hermana de la reina Tafnes; se cría en la casa de Faraón entre los hijos de Faraón.",
+   "datos": [
+    {
+     "texto": "Se cría en la casa de Faraón entre los hijos de Faraón",
+     "certeza": "texto",
+     "ref": "1R 11:20",
+     "cita": "estaba Genubath en casa de Faraón entre los hijos de Faraón"
+    }
+   ],
+   "externo": []
+  },
+  "Eliada_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:23"
+    }
+   ],
+   "resumen": "Padre de Rezón; solo se le nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Rezón",
+     "certeza": "texto",
+     "ref": "1R 11:23",
+     "cita": "hijo de Eliada"
+    }
+   ],
+   "externo": []
+  },
+  "Rezon_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:23",
+     "fin": "1R 11:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Eliada: huye de su amo Hadad-ezer, reúne gente, se hace rey en Damasco y es adversario de Israel todos los días de Salomón.",
+   "datos": [
+    {
+     "texto": "Huye de su amo Hadad-ezer, rey de Soba",
+     "certeza": "texto",
+     "ref": "1R 11:23",
+     "cita": "Rezón, hijo de Eliada, el cual había huído de su amo Adad-ezer, rey de Soba"
+    },
+    {
+     "texto": "Lo hacen rey en Damasco",
+     "certeza": "texto",
+     "ref": "1R 11:24",
+     "cita": "hiciéronle rey en Damasco"
+    },
+    {
+     "texto": "Adversario de Israel todos los días de Salomón",
+     "certeza": "texto",
+     "ref": "1R 11:25",
+     "cita": "fué adversario á Israel todos los días de Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Jeroboam_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:26",
+     "fin": "1R 11:40"
+    },
+    {
+     "inicio": "1R 12:2",
+     "fin": "1R 12:3"
+    },
+    {
+     "inicio": "1R 12:12",
+     "fin": "1R 12:12"
+    },
+    {
+     "inicio": "1R 12:20",
+     "fin": "1R 12:20"
+    },
+    {
+     "inicio": "1R 12:25",
+     "fin": "1R 12:33"
+    },
+    {
+     "inicio": "1R 13:1",
+     "fin": "1R 13:10"
+    },
+    {
+     "inicio": "1R 13:33",
+     "fin": "1R 13:33"
+    },
+    {
+     "inicio": "1R 14:2",
+     "fin": "1R 14:3"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 12:15"
+    },
+    {
+     "ref": "1R 13:34"
+    },
+    {
+     "ref": "1R 14:1"
+    },
+    {
+     "ref": "1R 14:4"
+    },
+    {
+     "ref": "1R 14:5"
+    },
+    {
+     "ref": "1R 14:6"
+    },
+    {
+     "ref": "1R 14:7"
+    },
+    {
+     "ref": "1R 14:10"
+    },
+    {
+     "ref": "1R 14:11"
+    },
+    {
+     "ref": "1R 14:13"
+    },
+    {
+     "ref": "1R 14:14"
+    },
+    {
+     "ref": "1R 14:16"
+    },
+    {
+     "ref": "1R 14:17"
+    },
+    {
+     "ref": "1R 14:19"
+    },
+    {
+     "ref": "1R 14:20"
+    },
+    {
+     "ref": "1R 14:30"
+    },
+    {
+     "ref": "1R 15:1"
+    },
+    {
+     "ref": "1R 15:6"
+    },
+    {
+     "ref": "1R 15:7"
+    },
+    {
+     "ref": "1R 15:9"
+    },
+    {
+     "ref": "1R 15:25"
+    },
+    {
+     "ref": "1R 15:29"
+    },
+    {
+     "ref": "1R 15:30"
+    },
+    {
+     "ref": "1R 15:34"
+    },
+    {
+     "ref": "1R 16:2"
+    },
+    {
+     "ref": "1R 16:3"
+    },
+    {
+     "ref": "1R 16:7"
+    },
+    {
+     "ref": "1R 16:19"
+    },
+    {
+     "ref": "1R 16:26"
+    },
+    {
+     "ref": "1R 16:31"
+    },
+    {
+     "ref": "1R 21:22"
+    },
+    {
+     "ref": "1R 22:53"
+    }
+   ],
+   "resumen": "Hijo de Nabat, efrateo de Sereda, siervo de Salomón. Ahías le anuncia diez tribus; huye a Egipto; Israel lo hace rey; hace dos becerros de oro en Betel y Dan, sacerdotes que no son levitas y una fiesta propia.",
+   "datos": [
+    {
+     "texto": "Hijo de Nabat, efrateo de Sereda, siervo de Salomón; su madre era Serva, viuda",
+     "certeza": "texto",
+     "ref": "1R 11:26",
+     "cita": "Jeroboam hijo de Nabat, Ephrateo de Sereda, siervo de Salomón"
+    },
+    {
+     "texto": "Salomón le encomienda todo el cargo de la casa de José",
+     "certeza": "texto",
+     "ref": "1R 11:28",
+     "cita": "encomendóle todo el cargo de la casa de José"
+    },
+    {
+     "texto": "Ahías le da diez pedazos de la capa: diez tribus",
+     "certeza": "texto",
+     "ref": "1R 11:31",
+     "cita": "Toma para ti los diez pedazos"
+    },
+    {
+     "texto": "Salomón procura matarlo y huye a Egipto, donde está hasta la muerte de Salomón",
+     "certeza": "texto",
+     "ref": "1R 11:40",
+     "cita": "huyó á Egipto, á Sisac rey de Egipto"
+    },
+    {
+     "texto": "Israel lo hace rey; solo la tribu de Judá sigue a la casa de David",
+     "certeza": "texto",
+     "ref": "1R 12:20",
+     "cita": "hiciéronle rey sobre todo Israel"
+    },
+    {
+     "texto": "Hace dos becerros de oro y dice «he aquí tus dioses, oh Israel»",
+     "certeza": "texto",
+     "ref": "1R 12:28",
+     "cita": "hizo el rey dos becerros de oro"
+    },
+    {
+     "texto": "Hace sacerdotes que no eran de los hijos de Leví",
+     "certeza": "texto",
+     "ref": "1R 12:31",
+     "cita": "hizo sacerdotes de la clase del pueblo, que no eran de los hijos de Leví"
+    },
+    {
+     "texto": "Su mano se seca cuando manda prender al varón de Dios; el varón de Dios la restituye (13:6)",
+     "certeza": "texto",
+     "ref": "1R 13:4",
+     "cita": "la mano que había extendido contra él, se le secó"
+    },
+    {
+     "texto": "Reinó veintidós años y lo sucedió Nadab",
+     "certeza": "texto",
+     "ref": "1R 14:20",
+     "cita": "fueron veintidós años"
+    }
+   ],
+   "externo": []
+  },
+  "Nebat_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:26"
+    },
+    {
+     "ref": "1R 12:2"
+    },
+    {
+     "ref": "1R 12:15"
+    },
+    {
+     "ref": "1R 15:1"
+    },
+    {
+     "ref": "1R 16:3"
+    },
+    {
+     "ref": "1R 16:26"
+    },
+    {
+     "ref": "1R 16:31"
+    },
+    {
+     "ref": "1R 21:22"
+    },
+    {
+     "ref": "1R 22:53"
+    }
+   ],
+   "resumen": "Padre de Jeroboam; solo se le nombra como padre («Jeroboam hijo de Nabat»).",
+   "datos": [
+    {
+     "texto": "Padre de Jeroboam",
+     "certeza": "texto",
+     "ref": "1R 11:26",
+     "cita": "Jeroboam hijo de Nabat"
+    }
+   ],
+   "externo": []
+  },
+  "Zeruah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:26"
+    }
+   ],
+   "resumen": "Madre de Jeroboam, «mujer viuda»; solo se la nombra.",
+   "datos": [
+    {
+     "texto": "Madre de Jeroboam, viuda",
+     "certeza": "texto",
+     "ref": "1R 11:26",
+     "cita": "su madre se llamaba Serva, mujer viuda"
+    }
+   ],
+   "externo": []
+  },
+  "Ahijah_1R11_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 11:29",
+     "fin": "1R 11:39"
+    },
+    {
+     "inicio": "1R 14:4",
+     "fin": "1R 14:16"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 12:15"
+    },
+    {
+     "ref": "1R 14:2"
+    },
+    {
+     "ref": "1R 14:18"
+    },
+    {
+     "ref": "1R 15:29"
+    }
+   ],
+   "resumen": "Profeta silonita: rompe una capa nueva en doce pedazos ante Jeroboam; ya anciano y ciego, reconoce en Silo a la mujer de Jeroboam y le anuncia el mal sobre su casa.",
+   "datos": [
+    {
+     "texto": "Profeta silonita, con una capa nueva, encuentra a Jeroboam a solas en el campo",
+     "certeza": "texto",
+     "ref": "1R 11:29",
+     "cita": "el profeta Ahías Silonita; y él estaba cubierto con una capa nueva"
+    },
+    {
+     "texto": "Rompe la capa en doce pedazos",
+     "certeza": "texto",
+     "ref": "1R 11:30",
+     "cita": "rompióla en doce pedazos"
+    },
+    {
+     "texto": "Está viejo y ciego",
+     "certeza": "texto",
+     "ref": "1R 14:4",
+     "cita": "no podía ya ver Ahías, que sus ojos se habían oscurecido á causa de su vejez"
+    },
+    {
+     "texto": "La reconoce por el sonido de sus pies, aunque va disfrazada",
+     "certeza": "texto",
+     "ref": "1R 14:6",
+     "cita": "Entra, mujer de Jeroboam; ¿por qué te finges otra?"
+    }
+   ],
+   "externo": []
+  },
+  "Shishak_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 14:25",
+     "fin": "1R 14:26"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:40"
+    }
+   ],
+   "resumen": "Rey de Egipto: acoge a Jeroboam que huye (11:40) y al quinto año de Roboam sube contra Jerusalén y se lleva los tesoros y los escudos de oro.",
+   "datos": [
+    {
+     "texto": "Jeroboam huye a Egipto, a Sisac",
+     "certeza": "texto",
+     "ref": "1R 11:40",
+     "cita": "huyó á Egipto, á Sisac rey de Egipto"
+    },
+    {
+     "texto": "Sube contra Jerusalén en el quinto año de Roboam",
+     "certeza": "texto",
+     "ref": "1R 14:25",
+     "cita": "Al quinto año del rey Roboam subió Sisac rey de Egipto contra Jerusalem"
+    },
+    {
+     "texto": "Se lleva los tesoros del templo y de la casa real y los escudos de oro",
+     "certeza": "texto",
+     "ref": "1R 14:26",
+     "cita": "llevóse también todos los escudos de oro que Salomón había hecho"
+    }
+   ],
+   "externo": []
+  },
+  "Rehoboam_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 12:1",
+     "fin": "1R 12:1"
+    },
+    {
+     "inicio": "1R 12:3",
+     "fin": "1R 12:18"
+    },
+    {
+     "inicio": "1R 12:21",
+     "fin": "1R 12:24"
+    },
+    {
+     "inicio": "1R 14:21",
+     "fin": "1R 14:31"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 11:43"
+    },
+    {
+     "ref": "1R 12:27"
+    },
+    {
+     "ref": "1R 15:2"
+    },
+    {
+     "ref": "1R 15:6"
+    }
+   ],
+   "resumen": "Hijo de Salomón: en Siquem responde con dureza a Israel por consejo de los jóvenes y el reino se divide; reina sobre Judá diecisiete años.",
+   "datos": [
+    {
+     "texto": "Pide tres días para responder al pueblo",
+     "certeza": "texto",
+     "ref": "1R 12:5",
+     "cita": "Idos, y de aquí á tres días volved á mí"
+    },
+    {
+     "texto": "Responde duramente, dejado el consejo de los ancianos",
+     "certeza": "texto",
+     "ref": "1R 12:13",
+     "cita": "el rey respondió al pueblo duramente, dejado el consejo de los ancianos"
+    },
+    {
+     "texto": "Dice «yo os heriré con escorpiones»",
+     "certeza": "texto",
+     "ref": "1R 12:14",
+     "cita": "mi padre os hirió con azotes, mas yo os heriré con escorpiones"
+    },
+    {
+     "texto": "Huye en su carro a Jerusalén tras la muerte de Adoram",
+     "certeza": "texto",
+     "ref": "1R 12:18",
+     "cita": "Entonces el rey Roboam se esforzó á subir en un carro, y huir á Jerusalem"
+    },
+    {
+     "texto": "Cuarenta y un años al empezar a reinar; reinó diecisiete",
+     "certeza": "texto",
+     "ref": "1R 14:21",
+     "cita": "De cuarenta y un años era Roboam cuando comenzó á reinar, y diecisiete años reinó en Jerusalem"
+    },
+    {
+     "texto": "Hace escudos de metal en lugar de los de oro",
+     "certeza": "texto",
+     "ref": "1R 14:27",
+     "cita": "hizo el rey Roboam escudos de metal"
+    }
+   ],
+   "externo": []
+  },
+  "Shemaiah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 12:22",
+     "fin": "1R 12:24"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Varón de Dios: lleva la palabra de Jehová a Roboam para que no pelee contra Israel; Roboam obedece.",
+   "datos": [
+    {
+     "texto": "Recibe la palabra de Jehová",
+     "certeza": "texto",
+     "ref": "1R 12:22",
+     "cita": "fué palabra de Jehová á Semeías varón de Dios"
+    },
+    {
+     "texto": "Manda que no peleen contra Israel; ellos obedecen",
+     "certeza": "texto",
+     "ref": "1R 12:24",
+     "cita": "No vayáis, ni peleéis contra vuestros hermanos los hijos de Israel"
+    }
+   ],
+   "externo": []
+  },
+  "Josiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 13:2"
+    }
+   ],
+   "resumen": "Nombrado en la palabra del varón de Dios contra el altar de Betel; el texto no dice cuándo nacerá.",
+   "datos": [
+    {
+     "texto": "El varón de Dios anuncia que a la casa de David «nacerá un hijo, llamado Josías»",
+     "certeza": "texto",
+     "ref": "1R 13:2",
+     "cita": "nacerá un hijo, llamado Josías"
+    }
+   ],
+   "externo": []
+  },
+  "Abijah_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 14:1",
+     "fin": "1R 14:1"
+    },
+    {
+     "inicio": "1R 14:17",
+     "fin": "1R 14:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Jeroboam que cae enfermo; muere cuando su madre entra en la ciudad y todo Israel lo endecha.",
+   "datos": [
+    {
+     "texto": "Cae enfermo",
+     "certeza": "texto",
+     "ref": "1R 14:1",
+     "cita": "Abías hijo de Jeroboam cayó enfermo"
+    },
+    {
+     "texto": "Es el único de los de Jeroboam que entrará en sepultura, porque se halló en él «alguna cosa buena»",
+     "certeza": "texto",
+     "ref": "1R 14:13",
+     "cita": "por cuanto se ha hallado en él alguna cosa buena de Jehová"
+    },
+    {
+     "texto": "Muere cuando ella pisa el umbral de la casa",
+     "certeza": "texto",
+     "ref": "1R 14:17",
+     "cita": "el mozo murió"
+    }
+   ],
+   "externo": []
+  },
+  "Abijam_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 15:1",
+     "fin": "1R 15:8"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 14:31"
+    }
+   ],
+   "resumen": "Hijo de Roboam; reina tres años sobre Judá; el texto dice que anduvo en los pecados de su padre y que hubo guerra con Jeroboam.",
+   "datos": [
+    {
+     "texto": "Reina tres años",
+     "certeza": "texto",
+     "ref": "1R 15:2",
+     "cita": "Reinó tres años en Jerusalem"
+    },
+    {
+     "texto": "Anda en todos los pecados de su padre",
+     "certeza": "texto",
+     "ref": "1R 15:3",
+     "cita": "Y anduvo en todos los pecados de su padre"
+    },
+    {
+     "texto": "Por amor de David, Jehová le da lámpara en Jerusalén",
+     "certeza": "texto",
+     "ref": "1R 15:4",
+     "cita": "por amor de David, dióle Jehová su Dios lámpara en Jerusalem"
+    }
+   ],
+   "externo": []
+  },
+  "Naamah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 14:21"
+    },
+    {
+     "ref": "1R 14:31"
+    }
+   ],
+   "resumen": "Madre de Roboam, amonita; solo se la nombra.",
+   "datos": [
+    {
+     "texto": "Madre de Roboam, amonita",
+     "certeza": "texto",
+     "ref": "1R 14:21",
+     "cita": "El nombre de su madre fué Naama, Ammonita"
+    }
+   ],
+   "externo": []
+  },
+  "Abishalom_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:2"
+    },
+    {
+     "ref": "1R 15:10"
+    }
+   ],
+   "resumen": "Padre (o antepasado) de Maaca; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Maaca era hija de Abisalón",
+     "certeza": "texto",
+     "ref": "1R 15:2",
+     "cita": "Maachâ, hija de Abisalom"
+    }
+   ],
+   "externo": []
+  },
+  "Maacah_3": {
+   "apariciones": [
+    {
+     "inicio": "1R 15:13",
+     "fin": "1R 15:13"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:2"
+    },
+    {
+     "ref": "1R 15:10"
+    }
+   ],
+   "resumen": "Madre de Abiam y, según 15:10 y 15:13, de Asa; Asa la priva de ser princesa por hacer un ídolo.",
+   "datos": [
+    {
+     "texto": "Madre de Abiam, hija de Abisalón",
+     "certeza": "texto",
+     "ref": "1R 15:2",
+     "cita": "El nombre de su madre fué Maachâ, hija de Abisalom"
+    },
+    {
+     "texto": "El texto da el mismo nombre a la madre de Asa",
+     "certeza": "texto",
+     "ref": "1R 15:10",
+     "cita": "el nombre de su madre fué Maachâ, hija de Abisalom"
+    },
+    {
+     "texto": "Asa la priva de ser princesa porque hizo un ídolo en un bosque",
+     "certeza": "texto",
+     "ref": "1R 15:13",
+     "cita": "privó á su madre Maachâ de ser princesa, porque había hecho un ídolo en un bosque"
+    }
+   ],
+   "externo": []
+  },
+  "Asa_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 15:9",
+     "fin": "1R 15:24"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:8"
+    },
+    {
+     "ref": "1R 15:25"
+    },
+    {
+     "ref": "1R 15:28"
+    },
+    {
+     "ref": "1R 15:32"
+    },
+    {
+     "ref": "1R 15:33"
+    },
+    {
+     "ref": "1R 16:8"
+    },
+    {
+     "ref": "1R 16:10"
+    },
+    {
+     "ref": "1R 16:15"
+    },
+    {
+     "ref": "1R 16:23"
+    },
+    {
+     "ref": "1R 16:29"
+    },
+    {
+     "ref": "1R 22:41"
+    },
+    {
+     "ref": "1R 22:42"
+    },
+    {
+     "ref": "1R 22:43"
+    },
+    {
+     "ref": "1R 22:47"
+    }
+   ],
+   "resumen": "Hijo de Abiam; reina cuarenta y un años en Jerusalén; quita los sodomitas y los ídolos, no quita los altos y compra la ayuda de Ben-adad contra Baasa.",
+   "datos": [
+    {
+     "texto": "Hizo lo recto ante los ojos de Jehová",
+     "certeza": "texto",
+     "ref": "1R 15:11",
+     "cita": "Asa hizo lo recto ante los ojos de Jehová, como David su padre"
+    },
+    {
+     "texto": "No quitó los altos, pero su corazón fue perfecto para con Jehová",
+     "certeza": "texto",
+     "ref": "1R 15:14",
+     "cita": "los altos no se quitaron: con todo, el corazón de Asa fué perfecto para con Jehová toda su vida"
+    },
+    {
+     "texto": "Toma la plata y el oro de los tesoros del templo y de la casa real y los envía a Ben-adad",
+     "certeza": "texto",
+     "ref": "1R 15:18",
+     "cita": "tomando Asa toda la plata y oro que había quedado en los tesoros de la casa de Jehová"
+    },
+    {
+     "texto": "Con la piedra y la madera de Rama edifica Geba y Mizpa",
+     "certeza": "texto",
+     "ref": "1R 15:22",
+     "cita": "edificó el rey Asa con ello á Gabaa de Benjamín, y á Mizpa"
+    },
+    {
+     "texto": "En su vejez enfermó de los pies",
+     "certeza": "texto",
+     "ref": "1R 15:23",
+     "cita": "Mas en el tiempo de su vejez enfermó de sus pies"
+    }
+   ],
+   "externo": []
+  },
+  "Baasha_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 15:16",
+     "fin": "1R 15:17"
+    },
+    {
+     "inicio": "1R 15:21",
+     "fin": "1R 15:22"
+    },
+    {
+     "inicio": "1R 15:27",
+     "fin": "1R 15:29"
+    },
+    {
+     "inicio": "1R 15:33",
+     "fin": "1R 15:34"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:19"
+    },
+    {
+     "ref": "1R 15:32"
+    },
+    {
+     "ref": "1R 16:1"
+    },
+    {
+     "ref": "1R 16:3"
+    },
+    {
+     "ref": "1R 16:4"
+    },
+    {
+     "ref": "1R 16:5"
+    },
+    {
+     "ref": "1R 16:6"
+    },
+    {
+     "ref": "1R 16:7"
+    },
+    {
+     "ref": "1R 16:8"
+    },
+    {
+     "ref": "1R 16:11"
+    },
+    {
+     "ref": "1R 16:12"
+    },
+    {
+     "ref": "1R 16:13"
+    },
+    {
+     "ref": "1R 21:22"
+    }
+   ],
+   "resumen": "De la casa de Isacar, hijo de Ahías: mata a Nadab en Gibetón, hiere toda la casa de Jeroboam y reina veinticuatro años en Tirsa.",
+   "datos": [
+    {
+     "texto": "Hijo de Ahía, de la casa de Isacar, conspira contra Nadab",
+     "certeza": "texto",
+     "ref": "1R 15:27",
+     "cita": "Baasa hijo de Ahía, el cual era de la casa de Issachâr, hizo conspiración contra él"
+    },
+    {
+     "texto": "Al reinar hiere toda la casa de Jeroboam según la palabra de Jehová por Ahías",
+     "certeza": "texto",
+     "ref": "1R 15:29",
+     "cita": "hirió toda la casa de Jeroboam, sin dejar alma viviente"
+    },
+    {
+     "texto": "Deja de edificar Rama y se queda en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 15:21",
+     "cita": "dejó de edificar á Rama, y estúvose en Thirsa"
+    },
+    {
+     "texto": "Jehú: la palabra contra Baasa fue por lo malo que hizo y porque hirió a la casa de Jeroboam",
+     "certeza": "texto",
+     "ref": "1R 16:7",
+     "cita": "porque lo había herido"
+    }
+   ],
+   "externo": []
+  },
+  "Ben-hadad_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 15:18",
+     "fin": "1R 15:20"
+    },
+    {
+     "inicio": "1R 20:1",
+     "fin": "1R 20:12"
+    },
+    {
+     "inicio": "1R 20:16",
+     "fin": "1R 20:20"
+    },
+    {
+     "inicio": "1R 20:23",
+     "fin": "1R 20:34"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 20:22"
+    },
+    {
+     "ref": "1R 22:3"
+    },
+    {
+     "ref": "1R 22:31"
+    }
+   ],
+   "resumen": "Rey de Siria (Aram), de Damasco. En 15:18 es hijo de Tabrimón; en 20 sitia Samaria, es vencido y pide la vida a Acab, que lo suelta con una alianza.",
+   "datos": [
+    {
+     "texto": "Acepta el presente de Asa y ataca las ciudades de Israel",
+     "certeza": "texto",
+     "ref": "1R 15:20",
+     "cita": "Ben-adad consintió con el rey Asa"
+    },
+    {
+     "texto": "Junta su ejército con treinta y dos reyes y sitia Samaria",
+     "certeza": "texto",
+     "ref": "1R 20:1",
+     "cita": "Ben-adad rey de Siria juntó á todo su ejército, y con él treinta y dos reyes"
+    },
+    {
+     "texto": "Escapa a caballo tras la derrota",
+     "certeza": "texto",
+     "ref": "1R 20:20",
+     "cita": "Ben-adad, se escapó en un caballo con alguna gente de caballería"
+    },
+    {
+     "texto": "Tras el muro caído en Afec huye y se esconde de cámara en cámara",
+     "certeza": "texto",
+     "ref": "1R 20:30",
+     "cita": "Ben-adad vino huyendo á la ciudad, y [escondíase] de cámara en cámara"
+    },
+    {
+     "texto": "Acab hace alianza con él y lo deja partir",
+     "certeza": "texto",
+     "ref": "1R 20:34",
+     "cita": "Hizo pues con él alianza, y dejóle ir"
+    },
+    {
+     "texto": "Que el Ben-adad de 15:18 y el de 20 sean la misma persona no lo dice el texto: lo propone la fuente de los datos",
+     "certeza": "inferido",
+     "ref": "1R 15:18",
+     "cita": "Ben-adad, hijo de Tabrimón, hijo de Hezión"
+    }
+   ],
+   "externo": []
+  },
+  "Hezion_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:18"
+    }
+   ],
+   "resumen": "Abuelo de Ben-adad (15:18); solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Padre de Tabrimón y abuelo de Ben-adad",
+     "certeza": "texto",
+     "ref": "1R 15:18",
+     "cita": "hijo de Tabrimón, hijo de Hezión"
+    }
+   ],
+   "externo": []
+  },
+  "Tabrimmon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:18"
+    }
+   ],
+   "resumen": "Padre de Ben-adad (15:18); solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Padre de Ben-adad e hijo de Hezión",
+     "certeza": "texto",
+     "ref": "1R 15:18",
+     "cita": "hijo de Tabrimón, hijo de Hezión"
+    }
+   ],
+   "externo": []
+  },
+  "Jehoshaphat_3": {
+   "apariciones": [
+    {
+     "inicio": "1R 22:2",
+     "fin": "1R 22:33"
+    },
+    {
+     "inicio": "1R 22:41",
+     "fin": "1R 22:51"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:24"
+    },
+    {
+     "ref": "1R 22:52"
+    }
+   ],
+   "resumen": "Hijo de Asa, rey de Judá: baja a Samaria, se alía con Acab contra Ramot de Galaad y pide consultar a un profeta de Jehová; anduvo en el camino de su padre.",
+   "datos": [
+    {
+     "texto": "Responde a Acab que está con él para pelear contra Ramot de Galaad",
+     "certeza": "texto",
+     "ref": "1R 22:4",
+     "cita": "Como yo, así tú; y como mi pueblo, así tu pueblo"
+    },
+    {
+     "texto": "Pide que se consulte la palabra de Jehová",
+     "certeza": "texto",
+     "ref": "1R 22:5",
+     "cita": "Yo te ruego que consultes hoy la palabra de Jehová"
+    },
+    {
+     "texto": "Los capitanes sirios lo toman por el rey de Israel y él da voces",
+     "certeza": "texto",
+     "ref": "1R 22:32",
+     "cita": "mas el rey Josaphat dió voces"
+    },
+    {
+     "texto": "Treinta y cinco años al empezar a reinar; reinó veinticinco",
+     "certeza": "texto",
+     "ref": "1R 22:42",
+     "cita": "Y era Josaphat de treinta y cinco años cuando comenzó á reinar, y reinó veinticinco años en Jerusalem"
+    },
+    {
+     "texto": "Anduvo en el camino de Asa, aunque los altos no fueron quitados (22:44)",
+     "certeza": "texto",
+     "ref": "1R 22:43",
+     "cita": "Y anduvo en todo el camino de Asa su padre"
+    },
+    {
+     "texto": "Sus navíos de Tarsis se rompen en Ezión-geber antes de ir a Ofir",
+     "certeza": "texto",
+     "ref": "1R 22:49",
+     "cita": "los cuales habían de ir á Ophir por oro; mas no fueron, porque se rompieron en Ezion-geber"
+    }
+   ],
+   "externo": []
+  },
+  "Ahijah_3": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 15:27"
+    },
+    {
+     "ref": "1R 15:33"
+    },
+    {
+     "ref": "1R 21:22"
+    }
+   ],
+   "resumen": "Padre de Baasa; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Baasa",
+     "certeza": "texto",
+     "ref": "1R 15:27",
+     "cita": "Baasa hijo de Ahía"
+    }
+   ],
+   "externo": []
+  },
+  "Hanani_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:1"
+    },
+    {
+     "ref": "1R 16:7"
+    }
+   ],
+   "resumen": "Padre del profeta Jehú; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre del profeta Jehú",
+     "certeza": "texto",
+     "ref": "1R 16:1",
+     "cita": "Jehú hijo de Hanani"
+    }
+   ],
+   "externo": []
+  },
+  "Jehu_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:1",
+     "fin": "1R 16:4"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:7"
+    },
+    {
+     "ref": "1R 16:12"
+    }
+   ],
+   "resumen": "Profeta, hijo de Hanani: recibe la palabra de Jehová contra Baasa y su casa.",
+   "datos": [
+    {
+     "texto": "Recibe la palabra contra Baasa",
+     "certeza": "texto",
+     "ref": "1R 16:1",
+     "cita": "palabra de Jehová á Jehú hijo de Hanani contra Baasa"
+    },
+    {
+     "texto": "Se le llama profeta (no es Jehú hijo de Nimsi)",
+     "certeza": "texto",
+     "ref": "1R 16:7",
+     "cita": "la palabra de Jehová por mano de Jehú profeta, hijo de Hanani"
+    }
+   ],
+   "externo": []
+  },
+  "Elah_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:8",
+     "fin": "1R 16:10"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:6"
+    },
+    {
+     "ref": "1R 16:13"
+    },
+    {
+     "ref": "1R 16:14"
+    }
+   ],
+   "resumen": "Hijo de Baasa, reina dos años en Tirsa; lo mata Zimri mientras bebe en casa de Arsa.",
+   "datos": [
+    {
+     "texto": "Reina dos años en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 16:8",
+     "cita": "comenzó á reinar Ela hijo de Baasa sobre Israel en Thirsa; [y reinó] dos años"
+    },
+    {
+     "texto": "Bebe y se embriaga en casa de Arsa, su mayordomo",
+     "certeza": "texto",
+     "ref": "1R 16:9",
+     "cita": "bebiendo y embriagado en casa de Arsa su mayordomo"
+    },
+    {
+     "texto": "Zimri lo mata",
+     "certeza": "texto",
+     "ref": "1R 16:10",
+     "cita": "lo hirió y mató"
+    }
+   ],
+   "externo": []
+  },
+  "Arza_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:9",
+     "fin": "1R 16:9"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mayordomo de Ela, en cuya casa en Tirsa bebía el rey cuando lo mataron.",
+   "datos": [
+    {
+     "texto": "Mayordomo de Ela en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 16:9",
+     "cita": "en casa de Arsa su mayordomo en Thirsa"
+    }
+   ],
+   "externo": []
+  },
+  "Zimri_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:9",
+     "fin": "1R 16:18"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:20"
+    }
+   ],
+   "resumen": "Comandante de la mitad de los carros: conspira, mata a Ela, reina siete días y se quema en el palacio al ser tomada Tirsa.",
+   "datos": [
+    {
+     "texto": "Comandante de la mitad de los carros, conspira contra Ela",
+     "certeza": "texto",
+     "ref": "1R 16:9",
+     "cita": "hizo conjuración contra él su siervo Zimri, comandante de la mitad de los carros"
+    },
+    {
+     "texto": "Al reinar hiere toda la casa de Baasa, sin dejar varón",
+     "certeza": "texto",
+     "ref": "1R 16:11",
+     "cita": "hirió toda la casa de Baasa"
+    },
+    {
+     "texto": "Reina siete días en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 16:15",
+     "cita": "comenzó á reinar Zimri, [y reinó] siete días en Thirsa"
+    },
+    {
+     "texto": "Se mete en el palacio, le pega fuego y muere",
+     "certeza": "texto",
+     "ref": "1R 16:18",
+     "cita": "pegó fuego á la casa consigo: así murió"
+    }
+   ],
+   "externo": []
+  },
+  "Omri_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:16",
+     "fin": "1R 16:17"
+    },
+    {
+     "inicio": "1R 16:21",
+     "fin": "1R 16:28"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:29"
+    },
+    {
+     "ref": "1R 16:30"
+    }
+   ],
+   "resumen": "General del ejército, hecho rey por el campo; vence a Tibni, compra el monte de Samaria a Semer y edifica Samaria; hizo peor que todos los anteriores.",
+   "datos": [
+    {
+     "texto": "El pueblo lo hace rey en el campo el mismo día",
+     "certeza": "texto",
+     "ref": "1R 16:16",
+     "cita": "levantó el mismo día por rey sobre Israel á Omri, general del ejército"
+    },
+    {
+     "texto": "Reina doce años; seis en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 16:23",
+     "cita": "[y reinó] doce años: en Thirsa reinó seis años"
+    },
+    {
+     "texto": "Compra a Semer el monte de Samaria por dos talentos de plata",
+     "certeza": "texto",
+     "ref": "1R 16:24",
+     "cita": "compró él de Semer el monte de Samaria por dos talentos de plata"
+    },
+    {
+     "texto": "Hizo lo malo, peor que todos los anteriores",
+     "certeza": "texto",
+     "ref": "1R 16:25",
+     "cita": "é hizo peor que todos los que habían sido antes de él"
+    }
+   ],
+   "externo": []
+  },
+  "Ginath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:21"
+    },
+    {
+     "ref": "1R 16:22"
+    }
+   ],
+   "resumen": "Padre de Tibni; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Tibni",
+     "certeza": "texto",
+     "ref": "1R 16:21",
+     "cita": "Thibni hijo de Gineth"
+    }
+   ],
+   "externo": []
+  },
+  "Tibni_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:21",
+     "fin": "1R 16:22"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Ginet: la mitad del pueblo lo sigue para hacerlo rey; muere y Omri reina.",
+   "datos": [
+    {
+     "texto": "La mitad del pueblo lo sigue",
+     "certeza": "texto",
+     "ref": "1R 16:21",
+     "cita": "la mitad del pueblo seguía á Thibni hijo de Gineth, para hacerlo rey"
+    },
+    {
+     "texto": "Muere y Omri es rey",
+     "certeza": "texto",
+     "ref": "1R 16:22",
+     "cita": "Thibni murió, y Omri fué rey"
+    }
+   ],
+   "externo": []
+  },
+  "Shemer_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:24",
+     "fin": "1R 16:24"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Dueño del monte de Samaria, que Omri le compra; da nombre a la ciudad.",
+   "datos": [
+    {
+     "texto": "Samaria toma su nombre de Semer, señor del monte",
+     "certeza": "texto",
+     "ref": "1R 16:24",
+     "cita": "llamó el nombre de la ciudad que edificó, Samaria, del nombre de Semer, señor [que fué] de aquel monte"
+    }
+   ],
+   "externo": []
+  },
+  "Ahab_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:29",
+     "fin": "1R 16:33"
+    },
+    {
+     "inicio": "1R 17:1",
+     "fin": "1R 17:1"
+    },
+    {
+     "inicio": "1R 18:3",
+     "fin": "1R 18:6"
+    },
+    {
+     "inicio": "1R 18:16",
+     "fin": "1R 18:20"
+    },
+    {
+     "inicio": "1R 18:41",
+     "fin": "1R 18:46"
+    },
+    {
+     "inicio": "1R 19:1",
+     "fin": "1R 19:1"
+    },
+    {
+     "inicio": "1R 20:2",
+     "fin": "1R 20:22"
+    },
+    {
+     "inicio": "1R 20:28",
+     "fin": "1R 20:43"
+    },
+    {
+     "inicio": "1R 21:1",
+     "fin": "1R 21:8"
+    },
+    {
+     "inicio": "1R 21:15",
+     "fin": "1R 21:29"
+    },
+    {
+     "inicio": "1R 22:2",
+     "fin": "1R 22:40"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:28"
+    },
+    {
+     "ref": "1R 18:1"
+    },
+    {
+     "ref": "1R 18:2"
+    },
+    {
+     "ref": "1R 18:9"
+    },
+    {
+     "ref": "1R 18:12"
+    },
+    {
+     "ref": "1R 22:41"
+    },
+    {
+     "ref": "1R 22:45"
+    },
+    {
+     "ref": "1R 22:50"
+    },
+    {
+     "ref": "1R 22:52"
+    }
+   ],
+   "resumen": "Hijo de Omri, rey de Israel en Samaria veintidós años; casado con Jezabel, sirve a Baal. Vence a Ben-adad y lo suelta; toma la viña de Nabot; muere en Ramot de Galaad.",
+   "datos": [
+    {
+     "texto": "Hizo lo malo sobre todos los que fueron antes de él",
+     "certeza": "texto",
+     "ref": "1R 16:30",
+     "cita": "Achâb hijo de Omri hizo lo malo á los ojos de Jehová sobre todos los que fueron antes de él"
+    },
+    {
+     "texto": "Toma por mujer a Jezabel y sirve a Baal",
+     "certeza": "texto",
+     "ref": "1R 16:31",
+     "cita": "tomó por mujer á Jezabel hija de Ethbaal rey de los Sidonios, y fué y sirvió á Baal"
+    },
+    {
+     "texto": "Llama a Elías «el que alborotas a Israel»",
+     "certeza": "texto",
+     "ref": "1R 18:17",
+     "cita": "¿Eres tú el que alborotas á Israel?"
+    },
+    {
+     "texto": "Suelta a Ben-adad con una alianza",
+     "certeza": "texto",
+     "ref": "1R 20:34",
+     "cita": "Hizo pues con él alianza, y dejóle ir"
+    },
+    {
+     "texto": "Triste y enojado porque Nabot no le da la viña",
+     "certeza": "texto",
+     "ref": "1R 21:4",
+     "cita": "Y vínose Achâb á su casa triste y enojado"
+    },
+    {
+     "texto": "Al oír a Elías se humilla; Jehová difiere el mal a los días de su hijo (21:29)",
+     "certeza": "texto",
+     "ref": "1R 21:27",
+     "cita": "rasgó sus vestidos, y puso saco sobre su carne, y ayunó"
+    },
+    {
+     "texto": "Un flechazo a la ventura lo hiere entre las junturas de la armadura",
+     "certeza": "texto",
+     "ref": "1R 22:34",
+     "cita": "Y un hombre disparando su arco á la ventura, hirió al rey de Israel"
+    },
+    {
+     "texto": "Hizo una casa de marfil",
+     "certeza": "texto",
+     "ref": "1R 22:39",
+     "cita": "la casa de marfil que hizo"
+    }
+   ],
+   "externo": []
+  },
+  "Ethbaal_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 16:31"
+    }
+   ],
+   "resumen": "Rey de los sidonios, padre de Jezabel; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Rey de los sidonios; padre de Jezabel",
+     "certeza": "texto",
+     "ref": "1R 16:31",
+     "cita": "Jezabel hija de Ethbaal rey de los Sidonios"
+    }
+   ],
+   "externo": []
+  },
+  "Jezebel_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:31",
+     "fin": "1R 16:31"
+    },
+    {
+     "inicio": "1R 18:4",
+     "fin": "1R 18:4"
+    },
+    {
+     "inicio": "1R 19:2",
+     "fin": "1R 19:2"
+    },
+    {
+     "inicio": "1R 21:5",
+     "fin": "1R 21:15"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 18:13"
+    },
+    {
+     "ref": "1R 18:19"
+    },
+    {
+     "ref": "1R 19:1"
+    },
+    {
+     "ref": "1R 21:23"
+    },
+    {
+     "ref": "1R 21:25"
+    }
+   ],
+   "resumen": "Hija de Et-baal rey de los sidonios y mujer de Acab: destruye a los profetas de Jehová, amenaza a Elías y consigue por cartas la viña de Nabot.",
+   "datos": [
+    {
+     "texto": "Destruía a los profetas de Jehová",
+     "certeza": "texto",
+     "ref": "1R 18:4",
+     "cita": "cuando Jezabel destruía á los profetas de Jehová"
+    },
+    {
+     "texto": "Envía un mensajero a Elías y jura matarlo",
+     "certeza": "texto",
+     "ref": "1R 19:2",
+     "cita": "si mañana á estas horas yo no haya puesto tu persona como la de uno de ellos"
+    },
+    {
+     "texto": "Dice a Acab que ella le dará la viña",
+     "certeza": "texto",
+     "ref": "1R 21:7",
+     "cita": "¿Eres tú ahora rey sobre Israel? Levántate, y come pan, y alégrate"
+    },
+    {
+     "texto": "Escribe cartas en nombre de Acab y las sella con su anillo",
+     "certeza": "texto",
+     "ref": "1R 21:8",
+     "cita": "escribió cartas en nombre de Achâb, y sellólas con su anillo"
+    }
+   ],
+   "externo": []
+  },
+  "Abiram_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:34",
+     "fin": "1R 16:34"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Primogénito de Hiel de Betel: en él echó los cimientos de Jericó (16:34).",
+   "datos": [
+    {
+     "texto": "Hiel echó el cimiento de Jericó en Abiram, su primogénito",
+     "certeza": "texto",
+     "ref": "1R 16:34",
+     "cita": "En Abiram su primogénito echó el cimiento"
+    }
+   ],
+   "externo": []
+  },
+  "Hiel_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:34",
+     "fin": "1R 16:34"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "De Betel: reedificó Jericó; echó el cimiento en su primogénito Abiram y puso las puertas en el postrero, Segub.",
+   "datos": [
+    {
+     "texto": "Reedifica Jericó, conforme a la palabra de Jehová por Josué",
+     "certeza": "texto",
+     "ref": "1R 16:34",
+     "cita": "Hiel de Beth-el reedificó á Jericó"
+    },
+    {
+     "texto": "El texto no dice qué les ocurrió; la fórmula «conforme á la palabra… por Josué» remite a la maldición de Jos 6:26 (lectura inferida)",
+     "certeza": "inferido",
+     "ref": "1R 16:34",
+     "cita": "En Abiram su primogénito echó el cimiento"
+    }
+   ],
+   "externo": []
+  },
+  "Segub_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 16:34",
+     "fin": "1R 16:34"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo menor de Hiel: en él puso las puertas de Jericó (16:34).",
+   "datos": [
+    {
+     "texto": "Hiel puso las puertas de Jericó en Segub, su hijo postrero",
+     "certeza": "texto",
+     "ref": "1R 16:34",
+     "cita": "en Segub su [hijo] postrero puso sus puertas"
+    }
+   ],
+   "externo": []
+  },
+  "Elijah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 17:1",
+     "fin": "1R 17:24"
+    },
+    {
+     "inicio": "1R 18:1",
+     "fin": "1R 18:2"
+    },
+    {
+     "inicio": "1R 18:7",
+     "fin": "1R 18:46"
+    },
+    {
+     "inicio": "1R 19:2",
+     "fin": "1R 19:21"
+    },
+    {
+     "inicio": "1R 21:17",
+     "fin": "1R 21:29"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 19:1"
+    }
+   ],
+   "resumen": "Elías el tisbita, de los moradores de Galaad: anuncia la sequía, es alimentado por los cuervos y por la viuda de Sarepta, hace revivir a su hijo, vence a los profetas de Baal en el Carmelo, huye a Horeb, llama a Eliseo y sale al encuentro de Acab en la viña de Nabot.",
+   "datos": [
+    {
+     "texto": "Tisbita, de los moradores de Galaad",
+     "certeza": "texto",
+     "ref": "1R 17:1",
+     "cita": "Elías Thisbita, que era de los moradores de Galaad"
+    },
+    {
+     "texto": "Anuncia a Acab que no habrá lluvia ni rocío sino por su palabra",
+     "certeza": "texto",
+     "ref": "1R 17:1",
+     "cita": "no habrá lluvia ni rocío en estos años, sino por mi palabra"
+    },
+    {
+     "texto": "Los cuervos le traen pan y carne junto al arroyo de Querit",
+     "certeza": "texto",
+     "ref": "1R 17:6",
+     "cita": "los cuervos le traían pan y carne por la mañana, y pan y carne á la tarde"
+    },
+    {
+     "texto": "Jehová oye su voz y el hijo de la viuda revive",
+     "certeza": "texto",
+     "ref": "1R 17:22",
+     "cita": "Jehová oyó la voz de Elías, y el alma del niño volvió á sus entrañas, y revivió"
+    },
+    {
+     "texto": "En el Carmelo pregunta al pueblo hasta cuándo claudicarán entre dos pensamientos",
+     "certeza": "texto",
+     "ref": "1R 18:21",
+     "cita": "¿Hasta cuándo claudicaréis vosotros entre dos pensamientos?"
+    },
+    {
+     "texto": "Cae fuego de Jehová y consume el holocausto, la leña, las piedras y el polvo",
+     "certeza": "texto",
+     "ref": "1R 18:38",
+     "cita": "cayó fuego de Jehová, el cual consumió el holocausto, y la leña, y las piedras, y el polvo"
+    },
+    {
+     "texto": "Lleva a los profetas de Baal al arroyo de Cisón y los degüella",
+     "certeza": "texto",
+     "ref": "1R 18:40",
+     "cita": "llevólos Elías al arroyo de Cisón, y allí los degolló"
+    },
+    {
+     "texto": "Huye de Jezabel y, bajo un enebro, pide morir",
+     "certeza": "texto",
+     "ref": "1R 19:4",
+     "cita": "Baste ya, oh Jehová, quita mi alma"
+    },
+    {
+     "texto": "En Horeb, Jehová no estaba en el viento, el terremoto ni el fuego, sino en «un silbo apacible y delicado»",
+     "certeza": "texto",
+     "ref": "1R 19:12",
+     "cita": "un silbo apacible y delicado"
+    },
+    {
+     "texto": "Echa su manto sobre Eliseo, que araba con doce yuntas",
+     "certeza": "texto",
+     "ref": "1R 19:19",
+     "cita": "echó sobre él su manto"
+    },
+    {
+     "texto": "Por orden de Jehová anuncia a Acab que los perros lamerán su sangre donde lamieron la de Nabot",
+     "certeza": "texto",
+     "ref": "1R 21:19",
+     "cita": "los perros lamerán también tu sangre, la tuya misma"
+    }
+   ],
+   "externo": []
+  },
+  "Obadiah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 18:3",
+     "fin": "1R 18:16"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mayordomo de Acab, temeroso de Jehová: escondió a cien profetas de cincuenta en cincuenta en cuevas y se encuentra con Elías cuando recorre el país buscando hierba.",
+   "datos": [
+    {
+     "texto": "Mayordomo de Acab, muy temeroso de Jehová",
+     "certeza": "texto",
+     "ref": "1R 18:3",
+     "cita": "Abdías su mayordomo, el cual Abdías era en grande manera temeroso de Jehová"
+    },
+    {
+     "texto": "Esconde a cien profetas de Jehová en cuevas y los sustenta con pan y agua",
+     "certeza": "texto",
+     "ref": "1R 18:4",
+     "cita": "Abdías tomó cien profetas, los cuales escondió de cincuenta en cincuenta por cuevas"
+    },
+    {
+     "texto": "Reconoce a Elías en el camino y se postra",
+     "certeza": "texto",
+     "ref": "1R 18:7",
+     "cita": "postróse sobre su rostro, y dijo: ¿No eres tú mi señor Elías?"
+    }
+   ],
+   "externo": []
+  },
+  "Hazael_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 19:15"
+    },
+    {
+     "ref": "1R 19:17"
+    }
+   ],
+   "resumen": "Futuro rey de Siria: Jehová manda a Elías ungirlo (19:15); aquí solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Elías debe ungirlo por rey de Siria",
+     "certeza": "texto",
+     "ref": "1R 19:15",
+     "cita": "ungirás á Hazael por rey de Siria"
+    }
+   ],
+   "externo": []
+  },
+  "Elisha_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 19:19",
+     "fin": "1R 19:21"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 19:16"
+    },
+    {
+     "ref": "1R 19:17"
+    }
+   ],
+   "resumen": "Hijo de Safat, de Abel-mehola: Elías lo llama echándole el manto mientras ara con doce yuntas; mata un par de bueyes, cuece la carne con el arado y sigue a Elías.",
+   "datos": [
+    {
+     "texto": "Jehová manda ungirlo profeta en lugar de Elías",
+     "certeza": "texto",
+     "ref": "1R 19:16",
+     "cita": "Eliseo hijo de Saphat, de Abelmehula, ungirás para que sea profeta en lugar de ti"
+    },
+    {
+     "texto": "Ara con doce yuntas; Elías le echa su manto",
+     "certeza": "texto",
+     "ref": "1R 19:19",
+     "cita": "halló á Eliseo hijo de Saphat, que araba con doce yuntas delante de sí"
+    },
+    {
+     "texto": "Mata un par de bueyes, cuece la carne con el arado y la da al pueblo",
+     "certeza": "texto",
+     "ref": "1R 19:21",
+     "cita": "tomó un par de bueyes, y matólos, y con el arado de los bueyes coció la carne de ellos"
+    },
+    {
+     "texto": "Va tras Elías y le sirve",
+     "certeza": "texto",
+     "ref": "1R 19:21",
+     "cita": "fué tras Elías, y servíale"
+    }
+   ],
+   "externo": []
+  },
+  "Jehu_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 19:16"
+    },
+    {
+     "ref": "1R 19:17"
+    }
+   ],
+   "resumen": "Hijo de Nimsi: Jehová manda a Elías ungirlo rey sobre Israel (19:16); aquí solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Elías debe ungirlo rey sobre Israel",
+     "certeza": "texto",
+     "ref": "1R 19:16",
+     "cita": "á Jehú hijo de Nimsi, ungirás por rey sobre Israel"
+    }
+   ],
+   "externo": []
+  },
+  "Nimshi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 19:16"
+    }
+   ],
+   "resumen": "Padre de Jehú; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Jehú",
+     "certeza": "texto",
+     "ref": "1R 19:16",
+     "cita": "Jehú hijo de Nimsi"
+    }
+   ],
+   "externo": []
+  },
+  "Shaphat_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 19:16"
+    },
+    {
+     "ref": "1R 19:19"
+    }
+   ],
+   "resumen": "Padre de Eliseo; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Eliseo",
+     "certeza": "texto",
+     "ref": "1R 19:16",
+     "cita": "Eliseo hijo de Saphat"
+    }
+   ],
+   "externo": []
+  },
+  "Naboth_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 21:1",
+     "fin": "1R 21:3"
+    },
+    {
+     "inicio": "1R 21:12",
+     "fin": "1R 21:14"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 21:4"
+    },
+    {
+     "ref": "1R 21:6"
+    },
+    {
+     "ref": "1R 21:7"
+    },
+    {
+     "ref": "1R 21:8"
+    },
+    {
+     "ref": "1R 21:9"
+    },
+    {
+     "ref": "1R 21:15"
+    },
+    {
+     "ref": "1R 21:16"
+    },
+    {
+     "ref": "1R 21:18"
+    },
+    {
+     "ref": "1R 21:19"
+    }
+   ],
+   "resumen": "Nabot de Jezreel, dueño de una viña junto al palacio de Acab: no se la da por ser «la heredad de mis padres»; Jezabel lo hace acusar falsamente y lo apedrean.",
+   "datos": [
+    {
+     "texto": "Tiene una viña en Jezreel junto al palacio de Acab",
+     "certeza": "texto",
+     "ref": "1R 21:1",
+     "cita": "Naboth de Jezreel tenía en Jezreel una viña junto al palacio de Achâb"
+    },
+    {
+     "texto": "Se niega a vender la viña: es la heredad de sus padres",
+     "certeza": "texto",
+     "ref": "1R 21:3",
+     "cita": "Guárdeme Jehová de que yo te dé á ti la heredad de mis padres"
+    },
+    {
+     "texto": "Dos hombres perversos lo acusan de blasfemia y lo apedrean",
+     "certeza": "texto",
+     "ref": "1R 21:13",
+     "cita": "Naboth ha blasfemado á Dios y al rey"
+    }
+   ],
+   "externo": []
+  },
+  "Imlah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:8"
+    },
+    {
+     "ref": "1R 22:9"
+    }
+   ],
+   "resumen": "Padre del profeta Micaías; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Micaías",
+     "certeza": "texto",
+     "ref": "1R 22:8",
+     "cita": "Michêas, hijo de Imla"
+    }
+   ],
+   "externo": []
+  },
+  "Micaiah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 22:13",
+     "fin": "1R 22:28"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:8"
+    },
+    {
+     "ref": "1R 22:9"
+    }
+   ],
+   "resumen": "Profeta de Jehová, hijo de Imla: Acab lo aborrece porque nunca le profetiza bien; ante los dos reyes cuenta su visión del ejército de los cielos y es mandado a la cárcel.",
+   "datos": [
+    {
+     "texto": "Acab lo aborrece porque no le profetiza bien",
+     "certeza": "texto",
+     "ref": "1R 22:8",
+     "cita": "mas yo le aborrezco, porque nunca me profetiza bien, sino solamente mal"
+    },
+    {
+     "texto": "Jura decir solo lo que Jehová le hable",
+     "certeza": "texto",
+     "ref": "1R 22:14",
+     "cita": "lo que Jehová me hablare, eso diré"
+    },
+    {
+     "texto": "Cuenta que vio a Jehová sentado en su trono con el ejército de los cielos",
+     "certeza": "texto",
+     "ref": "1R 22:19",
+     "cita": "Yo vi á Jehová sentado en su trono, y todo el ejército de los cielos estaba junto á él"
+    },
+    {
+     "texto": "Acab lo manda a la cárcel con pan de angustia y agua de aflicción",
+     "certeza": "texto",
+     "ref": "1R 22:27",
+     "cita": "Echad á éste en la cárcel, y mantenedle con pan de angustia y con agua de aflicción"
+    },
+    {
+     "texto": "Dice que si Acab vuelve en paz, Jehová no ha hablado por él",
+     "certeza": "texto",
+     "ref": "1R 22:28",
+     "cita": "Si llegares á volver en paz, Jehová no ha hablado por mí"
+    }
+   ],
+   "externo": []
+  },
+  "Chenaanah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:11"
+    },
+    {
+     "ref": "1R 22:24"
+    }
+   ],
+   "resumen": "Padre de Sedequías; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Sedequías",
+     "certeza": "texto",
+     "ref": "1R 22:11",
+     "cita": "Sedechîas hijo de Chânaana"
+    }
+   ],
+   "externo": []
+  },
+  "Zedekiah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 22:11",
+     "fin": "1R 22:11"
+    },
+    {
+     "inicio": "1R 22:24",
+     "fin": "1R 22:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Quenaana, uno de los profetas de Acab: se hace cuernos de hierro y golpea en la mejilla a Micaías.",
+   "datos": [
+    {
+     "texto": "Se hace cuernos de hierro: «Con éstos acornearás á los Siros»",
+     "certeza": "texto",
+     "ref": "1R 22:11",
+     "cita": "se había hecho unos cuernos de hierro"
+    },
+    {
+     "texto": "Hiere a Micaías en la mejilla",
+     "certeza": "texto",
+     "ref": "1R 22:24",
+     "cita": "hirió á Michêas en la mejilla"
+    }
+   ],
+   "externo": []
+  },
+  "Amon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:26"
+    }
+   ],
+   "resumen": "Gobernador de la ciudad (Samaria); Acab manda llevarle a Micaías.",
+   "datos": [
+    {
+     "texto": "Gobernador de la ciudad",
+     "certeza": "texto",
+     "ref": "1R 22:26",
+     "cita": "Amón gobernador de la ciudad"
+    }
+   ],
+   "externo": []
+  },
+  "Joash_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:26"
+    }
+   ],
+   "resumen": "Hijo del rey (de Israel), junto al cual Acab manda llevar a Micaías; solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Hijo del rey",
+     "certeza": "texto",
+     "ref": "1R 22:26",
+     "cita": "Joas hijo del rey"
+    }
+   ],
+   "externo": []
+  },
+  "Ahaziah_1": {
+   "apariciones": [
+    {
+     "inicio": "1R 22:50",
+     "fin": "1R 22:50"
+    },
+    {
+     "inicio": "1R 22:52",
+     "fin": "1R 22:53"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:40"
+    }
+   ],
+   "resumen": "Hijo de Acab, rey de Israel: pide navegar con Josafat y este no quiere; reina dos años y hace lo malo.",
+   "datos": [
+    {
+     "texto": "Propone a Josafat navegar juntos y Josafat no quiere",
+     "certeza": "texto",
+     "ref": "1R 22:50",
+     "cita": "Vayan mis siervos con los tuyos en los navíos. Mas Josaphat no quiso"
+    },
+    {
+     "texto": "Empieza a reinar en el año diecisiete de Josafat; reina dos años",
+     "certeza": "texto",
+     "ref": "1R 22:52",
+     "cita": "reinó dos años sobre Israel"
+    },
+    {
+     "texto": "Anduvo en el camino de su padre, de su madre y de Jeroboam",
+     "certeza": "texto",
+     "ref": "1R 22:53",
+     "cita": "anduvo en el camino de su padre, y en el camino de su madre"
+    }
+   ],
+   "externo": []
+  },
+  "Azubah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:42"
+    }
+   ],
+   "resumen": "Madre de Josafat, hija de Silai; solo se la nombra.",
+   "datos": [
+    {
+     "texto": "Madre de Josafat",
+     "certeza": "texto",
+     "ref": "1R 22:42",
+     "cita": "El nombre de su madre fué Azuba hija de Silai"
+    }
+   ],
+   "externo": []
+  },
+  "Shilhi_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:42"
+    }
+   ],
+   "resumen": "Padre de Azuba; solo se le nombra así.",
+   "datos": [
+    {
+     "texto": "Padre de Azuba",
+     "certeza": "texto",
+     "ref": "1R 22:42",
+     "cita": "Azuba hija de Silai"
+    }
+   ],
+   "externo": []
+  },
+  "Jehoram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 22:51"
+    }
+   ],
+   "resumen": "Hijo de Josafat, que reina en su lugar (22:51); aquí solo se le nombra.",
+   "datos": [
+    {
+     "texto": "Reina en lugar de su padre Josafat",
+     "certeza": "texto",
+     "ref": "1R 22:51",
+     "cita": "en su lugar reinó Joram su hijo"
+    }
+   ],
+   "externo": []
+  },
+  "Nadab_2": {
+   "apariciones": [
+    {
+     "inicio": "1R 15:25",
+     "fin": "1R 15:28"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "1R 14:20"
+    },
+    {
+     "ref": "1R 15:31"
+    }
+   ],
+   "resumen": "Hijo de Jeroboam, rey de Israel dos años; Baasa conspira y lo hiere en Gibetón.",
+   "datos": [
+    {
+     "texto": "Empieza a reinar en el segundo año de Asa; reina dos años",
+     "certeza": "texto",
+     "ref": "1R 15:25",
+     "cita": "Nadab, hijo de Jeroboam, comenzó á reinar sobre Israel en el segundo año de Asa rey de Judá"
+    },
+    {
+     "texto": "Hizo lo malo andando en el camino de su padre",
+     "certeza": "texto",
+     "ref": "1R 15:26",
+     "cita": "E hizo lo malo ante los ojos de Jehová, andando en el camino de su padre"
+    },
+    {
+     "texto": "Baasa lo hiere en Gibetón, que cercaban Nadab y todo Israel",
+     "certeza": "texto",
+     "ref": "1R 15:27",
+     "cita": "hiriólo Baasa en Gibbethón, que era de los Filisteos"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "1R 3:15",
+     "fin": "1R 3:15"
+    },
+    {
+     "inicio": "1R 8:1",
+     "fin": "1R 8:9"
+    },
+    {
+     "inicio": "1R 8:21",
+     "fin": "1R 8:21"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Los sacerdotes la meten en el oráculo, bajo las alas de los querubines",
+     "certeza": "texto",
+     "ref": "1R 8:6",
+     "cita": "metieron el arca del pacto de Jehová en su lugar, en el oráculo de la casa, en el lugar santísimo, debajo de las alas de los querubines"
+    },
+    {
+     "texto": "Las varas se dejan salir y «así se quedaron hasta hoy»",
+     "certeza": "texto",
+     "ref": "1R 8:8",
+     "cita": "hicieron salir las varas; que las cabezas de las varas se dejaban ver desde el santuario"
+    },
+    {
+     "texto": "Salomón, al volver de Gabaón, se presenta delante del arca en Jerusalén",
+     "certeza": "texto",
+     "ref": "1R 3:15",
+     "cita": "presentóse delante del arca del pacto de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "tablas-de-la-ley": {
+   "nombre": "Tablas del Testimonio",
+   "tipo": "objeto sagrado",
+   "apariciones": [
+    {
+     "inicio": "1R 8:9",
+     "fin": "1R 8:9"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "En el arca no hay más que las dos tablas de piedra que Moisés puso en Horeb",
+     "certeza": "texto",
+     "ref": "1R 8:9",
+     "cita": "En el arca ninguna cosa había más de las dos tablas de piedra"
+    }
+   ],
+   "externo": []
+  },
+  "cuerno-de-aceite-de-sadoc": {
+   "nombre": "Cuerno de aceite del tabernáculo",
+   "tipo": "unción",
+   "apariciones": [
+    {
+     "inicio": "1R 1:39",
+     "fin": "1R 1:39"
+    }
+   ],
+   "personas": [
+    "Zadok_1",
+    "Solomon_1"
+   ],
+   "lugares": [
+    "gihon-1-33"
+   ],
+   "resumen": "Con el cuerno de aceite tomado del tabernáculo, Sadoc unge a Salomón en Gihón.",
+   "datos": [
+    {
+     "texto": "Sadoc toma el cuerno del aceite del tabernáculo y unge a Salomón",
+     "certeza": "texto",
+     "ref": "1R 1:39",
+     "cita": "tomando Sadoc sacerdote el cuerno del aceite del tabernáculo, ungió á Salomón"
+    },
+    {
+     "texto": "David manda que lo unjan en Gihón",
+     "certeza": "texto",
+     "ref": "1R 1:34",
+     "cita": "allí lo ungirán Sadoc sacerdote y Nathán profeta por rey sobre Israel"
+    }
+   ],
+   "externo": []
+  },
+  "mula-del-rey-david": {
+   "nombre": "La mula del rey David",
+   "tipo": "animal de montar",
+   "apariciones": [
+    {
+     "inicio": "1R 1:33",
+     "fin": "1R 1:38"
+    },
+    {
+     "inicio": "1R 1:44",
+     "fin": "1R 1:44"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Solomon_1",
+    "Nathan_2",
+    "Zadok_1",
+    "Benaiah_1"
+   ],
+   "lugares": [
+    "gihon-1-33"
+   ],
+   "resumen": "David manda montar a Salomón en su mula y llevarlo a Gihón.",
+   "datos": [
+    {
+     "texto": "Manda subir a Salomón en su mula",
+     "certeza": "texto",
+     "ref": "1R 1:33",
+     "cita": "haced subir á Salomón mi hijo en mi mula"
+    },
+    {
+     "texto": "Lo suben en la mula y lo llevan a Gihón con los ceretitas y peletitas",
+     "certeza": "texto",
+     "ref": "1R 1:38",
+     "cita": "é hicieron subir á Salomón en la mula del rey David, y lleváronlo á Gihón"
+    }
+   ],
+   "externo": []
+  },
+  "cornijales-del-altar": {
+   "nombre": "Los cuernos del altar",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "1R 1:50",
+     "fin": "1R 1:53"
+    },
+    {
+     "inicio": "1R 2:28",
+     "fin": "1R 2:34"
+    }
+   ],
+   "personas": [
+    "Adonijah_1",
+    "Joab_1",
+    "Solomon_1",
+    "Benaiah_1"
+   ],
+   "lugares": [],
+   "resumen": "Dos veces alguien huye y se agarra a los cuernos del altar: Adonías (1:50) y Joab, que huye al tabernáculo (2:28).",
+   "datos": [
+    {
+     "texto": "Adonías, temiendo a Salomón, se agarra a los cuernos del altar",
+     "certeza": "texto",
+     "ref": "1R 1:50",
+     "cita": "cogió los cornijales del altar"
+    },
+    {
+     "texto": "Pide a Salomón que le jure que no lo matará",
+     "certeza": "texto",
+     "ref": "1R 1:51",
+     "cita": "Júreme hoy el rey Salomón que no matará á cuchillo á su siervo"
+    },
+    {
+     "texto": "Joab huye al tabernáculo de Jehová y se agarra a los cuernos del altar",
+     "certeza": "texto",
+     "ref": "1R 2:28",
+     "cita": "huyó Joab al tabernáculo de Jehová, y asióse á los cornijales del altar"
+    },
+    {
+     "texto": "Joab no sale y Benaía vuelve al rey con la respuesta",
+     "certeza": "texto",
+     "ref": "1R 2:30",
+     "cita": "No, sino aquí moriré"
+    },
+    {
+     "texto": "El texto no dice de qué altar se trata en 1:50; 2:28 dice que Joab huyó «al tabernáculo de Jehová»",
+     "certeza": "inferido",
+     "ref": "1R 1:50",
+     "cita": "cornijales del altar"
+    }
+   ],
+   "externo": []
+  },
+  "silla-de-la-madre-del-rey": {
+   "nombre": "La silla a la diestra del rey",
+   "tipo": "mueble",
+   "apariciones": [
+    {
+     "inicio": "1R 2:19",
+     "fin": "1R 2:19"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Bathsheba_1"
+   ],
+   "lugares": [],
+   "resumen": "Salomón hace poner una silla para su madre a su derecha.",
+   "datos": [
+    {
+     "texto": "Hace poner una silla a su madre, que se sienta a su diestra",
+     "certeza": "texto",
+     "ref": "1R 2:19",
+     "cita": "hizo poner una silla á la madre del rey, la cual se sentó á su diestra"
+    }
+   ],
+   "externo": []
+  },
+  "altar-del-alto-de-gabaon": {
+   "nombre": "El altar de Gabaón",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "1R 3:3",
+     "fin": "1R 3:4"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "gabaon"
+   ],
+   "resumen": "En Gabaón, «el alto principal», Salomón sacrifica mil holocaustos.",
+   "datos": [
+    {
+     "texto": "Es el alto principal; allí sacrifica mil holocaustos",
+     "certeza": "texto",
+     "ref": "1R 3:4",
+     "cita": "aquél era el alto principal, y sacrificaba allí: mil holocaustos sacrificaba Salomón sobre aquel altar"
+    },
+    {
+     "texto": "Hasta entonces el pueblo sacrificaba en los altos, porque no había casa",
+     "certeza": "texto",
+     "ref": "1R 3:2",
+     "cita": "el pueblo sacrificaba en los altos; porque no había casa edificada al nombre de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "cuchillo-del-juicio-de-salomon": {
+   "nombre": "El cuchillo del juicio",
+   "tipo": "herramienta",
+   "apariciones": [
+    {
+     "inicio": "1R 3:24",
+     "fin": "1R 3:27"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [],
+   "resumen": "El rey manda traer un cuchillo para partir al niño vivo: así descubre a la madre.",
+   "datos": [
+    {
+     "texto": "Pide un cuchillo y se lo traen",
+     "certeza": "texto",
+     "ref": "1R 3:24",
+     "cita": "Traedme un cuchillo. Y trajeron al rey un cuchillo"
+    },
+    {
+     "texto": "Manda partir al niño vivo, sin llegar a hacerse",
+     "certeza": "texto",
+     "ref": "1R 3:25",
+     "cita": "Partid por medio el niño vivo, y dad la mitad á la una, y la otra mitad á la otra"
+    }
+   ],
+   "externo": []
+  },
+  "despensa-de-salomon": {
+   "nombre": "La despensa de Salomón",
+   "tipo": "provisiones",
+   "apariciones": [
+    {
+     "inicio": "1R 4:22",
+     "fin": "1R 4:23"
+    },
+    {
+     "inicio": "1R 4:27",
+     "fin": "1R 4:28"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [],
+   "resumen": "Lo que se gastaba cada día en la mesa del rey y cómo la abastecían los gobernadores.",
+   "datos": [
+    {
+     "texto": "Cada día: treinta coros de flor de harina y sesenta de harina",
+     "certeza": "texto",
+     "ref": "1R 4:22",
+     "cita": "la despensa de Salomón era cada día treinta coros de flor de harina, y sesenta coros de harina"
+    },
+    {
+     "texto": "Diez bueyes engordados, veinte de pasto y cien ovejas, sin la caza y las aves",
+     "certeza": "texto",
+     "ref": "1R 4:23",
+     "cita": "Diez bueyes engordados, y veinte bueyes de pasto, y cien ovejas"
+    },
+    {
+     "texto": "Los gobernadores la mantienen cada uno un mes",
+     "certeza": "texto",
+     "ref": "1R 4:27",
+     "cita": "estos gobernadores mantenían al rey Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "cedro-y-haya-del-libano": {
+   "nombre": "Cedro y haya del Líbano",
+   "tipo": "materiales",
+   "apariciones": [
+    {
+     "inicio": "1R 5:6",
+     "fin": "1R 5:10"
+    },
+    {
+     "inicio": "1R 5:18",
+     "fin": "1R 5:18"
+    }
+   ],
+   "personas": [
+    "Hiram_1",
+    "Solomon_1"
+   ],
+   "lugares": [
+    "libano"
+   ],
+   "resumen": "Hiram corta y lleva por mar, en balsas, la madera de cedro y de haya para el templo.",
+   "datos": [
+    {
+     "texto": "Salomón pide cedros del Líbano",
+     "certeza": "texto",
+     "ref": "1R 5:6",
+     "cita": "Manda pues ahora que me corten cedros del Líbano"
+    },
+    {
+     "texto": "Hiram la lleva en balsas por mar hasta donde Salomón señale",
+     "certeza": "texto",
+     "ref": "1R 5:9",
+     "cita": "yo la pondré en balsas por la mar hasta el lugar que tú me señalares"
+    },
+    {
+     "texto": "Da todo lo que quiso de cedro y de haya",
+     "certeza": "texto",
+     "ref": "1R 5:10",
+     "cita": "Dió pues Hiram á Salomón madera de cedro y madera de haya todo lo que quiso"
+    }
+   ],
+   "externo": []
+  },
+  "piedras-del-templo": {
+   "nombre": "Las piedras del templo",
+   "tipo": "materiales",
+   "apariciones": [
+    {
+     "inicio": "1R 5:17",
+     "fin": "1R 5:18"
+    },
+    {
+     "inicio": "1R 6:7",
+     "fin": "1R 6:7"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [],
+   "resumen": "Piedras de precio, cortadas de antemano para el cimiento, de modo que no se oyeron martillos en la casa.",
+   "datos": [
+    {
+     "texto": "Manda traer grandes piedras de precio para los cimientos",
+     "certeza": "texto",
+     "ref": "1R 5:17",
+     "cita": "grandes piedras, piedras de precio, para los cimientos de la casa"
+    },
+    {
+     "texto": "Las piedras llegaban acabadas: no se oyó martillo ni hacha en la casa",
+     "certeza": "texto",
+     "ref": "1R 6:7",
+     "cita": "ni martillos ni hachas se oyeron en la casa, ni ningún otro instrumento de hierro"
+    }
+   ],
+   "externo": []
+  },
+  "querubines-de-olivo-del-oraculo": {
+   "nombre": "Los dos querubines de madera de olivo",
+   "tipo": "escultura",
+   "apariciones": [
+    {
+     "inicio": "1R 6:23",
+     "fin": "1R 6:28"
+    },
+    {
+     "inicio": "1R 8:6",
+     "fin": "1R 8:7"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Dos querubines de diez codos de alto, forrados de oro, con las alas extendidas dentro del oráculo.",
+   "datos": [
+    {
+     "texto": "Dos querubines de madera de olivo, de diez codos de altura",
+     "certeza": "texto",
+     "ref": "1R 6:23",
+     "cita": "dos querubines de madera de oliva, cada uno de altura de diez codos"
+    },
+    {
+     "texto": "Cada ala mide cinco codos",
+     "certeza": "texto",
+     "ref": "1R 6:24",
+     "cita": "La una ala del querubín tenía cinco codos, y la otra ala del querubín otros cinco codos"
+    },
+    {
+     "texto": "Los viste de oro",
+     "certeza": "texto",
+     "ref": "1R 6:28",
+     "cita": "vistió de oro los querubines"
+    },
+    {
+     "texto": "Sus alas cubren el arca y sus varas",
+     "certeza": "texto",
+     "ref": "1R 8:7",
+     "cita": "los querubines tenían extendidas las alas sobre el lugar del arca"
+    }
+   ],
+   "externo": []
+  },
+  "columnas-jaquin-y-boaz": {
+   "nombre": "Las columnas Jaquín y Boaz",
+   "tipo": "columnas de bronce",
+   "apariciones": [
+    {
+     "inicio": "1R 7:15",
+     "fin": "1R 7:22"
+    },
+    {
+     "inicio": "1R 7:41",
+     "fin": "1R 7:42"
+    }
+   ],
+   "personas": [
+    "Hiram_2"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Dos columnas de bronce de dieciocho codos con capiteles de cinco; la de la derecha se llama Jaquín y la de la izquierda Boaz.",
+   "datos": [
+    {
+     "texto": "Dos columnas de bronce de dieciocho codos de altura",
+     "certeza": "texto",
+     "ref": "1R 7:15",
+     "cita": "dos columnas de bronce, la altura de cada cual era de diez y ocho codos"
+    },
+    {
+     "texto": "Capiteles de fundición de cinco codos",
+     "certeza": "texto",
+     "ref": "1R 7:16",
+     "cita": "la altura de un capitel era de cinco codos"
+    },
+    {
+     "texto": "La de la derecha, Jaquín; la de la izquierda, Boaz",
+     "certeza": "texto",
+     "ref": "1R 7:21",
+     "cita": "púsole por nombre Jachîn: y alzando la columna de la mano izquierda, llamó su nombre Boaz"
+    },
+    {
+     "texto": "Cuatrocientas granadas en las dos redes",
+     "certeza": "texto",
+     "ref": "1R 7:42",
+     "cita": "cuatrocientas granadas para las dos redes"
+    }
+   ],
+   "externo": []
+  },
+  "mar-de-fundicion": {
+   "nombre": "El mar de fundición",
+   "tipo": "vaso de bronce",
+   "apariciones": [
+    {
+     "inicio": "1R 7:23",
+     "fin": "1R 7:26"
+    },
+    {
+     "inicio": "1R 7:44",
+     "fin": "1R 7:44"
+    }
+   ],
+   "personas": [
+    "Hiram_2"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Un gran estanque redondo de bronce, de diez codos de lado a lado y cinco de alto, sobre doce bueyes.",
+   "datos": [
+    {
+     "texto": "De diez codos de lado a lado, redondo",
+     "certeza": "texto",
+     "ref": "1R 7:23",
+     "cita": "un mar de fundición, de diez codos del un lado al otro, perfectamente redondo"
+    },
+    {
+     "texto": "Lo rodea un cordón de treinta codos",
+     "certeza": "texto",
+     "ref": "1R 7:23",
+     "cita": "ceñíalo alrededor un cordón de treinta codos"
+    },
+    {
+     "texto": "Se asienta sobre doce bueyes, tres hacia cada punto cardinal",
+     "certeza": "texto",
+     "ref": "1R 7:25",
+     "cita": "Y estaba [asentado] sobre doce bueyes"
+    },
+    {
+     "texto": "Le caben dos mil batos",
+     "certeza": "texto",
+     "ref": "1R 7:26",
+     "cita": "cabían en él dos mil batos"
+    }
+   ],
+   "externo": []
+  },
+  "basas-y-fuentes-de-bronce": {
+   "nombre": "Las diez basas y las diez fuentes",
+   "tipo": "vasos de bronce",
+   "apariciones": [
+    {
+     "inicio": "1R 7:27",
+     "fin": "1R 7:39"
+    },
+    {
+     "inicio": "1R 7:43",
+     "fin": "1R 7:43"
+    }
+   ],
+   "personas": [
+    "Hiram_2"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Diez basas de bronce con ruedas, y sobre cada una una fuente de cuarenta batos; cinco a cada lado de la casa.",
+   "datos": [
+    {
+     "texto": "Diez basas de cuatro codos de largo y ancho y tres de alto",
+     "certeza": "texto",
+     "ref": "1R 7:27",
+     "cita": "diez basas de bronce, siendo la longitud de cada basa de cuatro codos"
+    },
+    {
+     "texto": "Cada basa tenía cuatro ruedas de bronce",
+     "certeza": "texto",
+     "ref": "1R 7:30",
+     "cita": "Cada basa tenía cuatro ruedas de bronce"
+    },
+    {
+     "texto": "Cada fuente contiene cuarenta batos",
+     "certeza": "texto",
+     "ref": "1R 7:38",
+     "cita": "cada fuente contenía cuarenta batos"
+    },
+    {
+     "texto": "Cinco a la derecha y cinco a la izquierda de la casa",
+     "certeza": "texto",
+     "ref": "1R 7:39",
+     "cita": "puso las cinco basas á la mano derecha de la casa, y las otras cinco á la mano izquierda"
+    }
+   ],
+   "externo": []
+  },
+  "utensilios-de-oro-del-templo": {
+   "nombre": "Los utensilios de oro de la casa de Jehová",
+   "tipo": "utensilios",
+   "apariciones": [
+    {
+     "inicio": "1R 7:48",
+     "fin": "1R 7:51"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Altar de oro, mesa de los panes de la proposición, diez candeleros, cántaros, tazas, incensarios y quiciales de oro.",
+   "datos": [
+    {
+     "texto": "Un altar de oro y una mesa de oro para los panes de la proposición",
+     "certeza": "texto",
+     "ref": "1R 7:48",
+     "cita": "un altar de oro, y una mesa sobre la cual estaban los panes de la proposición, también de oro"
+    },
+    {
+     "texto": "Diez candeleros de oro purísimo, cinco a cada lado",
+     "certeza": "texto",
+     "ref": "1R 7:49",
+     "cita": "cinco candeleros de oro purísimo á la mano derecha, y otros cinco á la izquierda"
+    },
+    {
+     "texto": "Guarda en las tesorerías lo que David había dedicado",
+     "certeza": "texto",
+     "ref": "1R 7:51",
+     "cita": "púsolo [todo] en guarda en las tesorerías de la casa de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "nube-de-la-gloria-en-el-templo": {
+   "nombre": "La nube que llena la casa",
+   "tipo": "manifestación",
+   "apariciones": [
+    {
+     "inicio": "1R 8:10",
+     "fin": "1R 8:11"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Al salir los sacerdotes del santuario, la nube llena la casa y no pueden ministrar.",
+   "datos": [
+    {
+     "texto": "La nube llena la casa de Jehová",
+     "certeza": "texto",
+     "ref": "1R 8:10",
+     "cita": "la nube hinchió la casa de Jehová"
+    },
+    {
+     "texto": "Los sacerdotes no pueden ministrar por causa de la nube",
+     "certeza": "texto",
+     "ref": "1R 8:11",
+     "cita": "los sacerdotes no pudieron estar para ministrar por causa de la nube"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-bronce-del-atrio": {
+   "nombre": "El altar de bronce delante de la casa",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "1R 8:62",
+     "fin": "1R 8:64"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Era pequeño para tantos sacrificios y Salomón santifica el medio del atrio para ofrecer allí.",
+   "datos": [
+    {
+     "texto": "Era pequeño para los holocaustos, presentes y sebos",
+     "certeza": "texto",
+     "ref": "1R 8:64",
+     "cita": "el altar de bronce que estaba delante de Jehová era pequeño"
+    },
+    {
+     "texto": "Sacrifica veintidós mil bueyes y ciento veinte mil ovejas como pacíficos",
+     "certeza": "texto",
+     "ref": "1R 8:63",
+     "cita": "veinte y dos mil bueyes, y ciento veinte mil ovejas"
+    }
+   ],
+   "externo": []
+  },
+  "veinte-ciudades-de-cabul": {
+   "nombre": "Las veinte ciudades de Galilea",
+   "tipo": "regalo",
+   "apariciones": [
+    {
+     "inicio": "1R 9:10",
+     "fin": "1R 9:14"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Hiram_1"
+   ],
+   "lugares": [
+    "cabul"
+   ],
+   "resumen": "Salomón da a Hiram veinte ciudades en tierra de Galilea; no le contentan y las llama Cabul.",
+   "datos": [
+    {
+     "texto": "Salomón da a Hiram veinte ciudades en Galilea",
+     "certeza": "texto",
+     "ref": "1R 9:11",
+     "cita": "el rey Salomón dió á Hiram veinte ciudades en tierra de Galilea"
+    },
+    {
+     "texto": "Hiram no queda contento y las llama «la tierra de Cabul»",
+     "certeza": "texto",
+     "ref": "1R 9:13",
+     "cita": "¿Qué ciudades son estas que me has dado, hermano?"
+    }
+   ],
+   "externo": []
+  },
+  "flota-de-ezion-geber": {
+   "nombre": "Los navíos de Salomón y Hiram",
+   "tipo": "flota",
+   "apariciones": [
+    {
+     "inicio": "1R 9:26",
+     "fin": "1R 9:28"
+    },
+    {
+     "inicio": "1R 10:11",
+     "fin": "1R 10:11"
+    },
+    {
+     "inicio": "1R 10:22",
+     "fin": "1R 10:22"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Hiram_1"
+   ],
+   "lugares": [
+    "ezion-geber",
+    "ofir"
+   ],
+   "resumen": "Naves hechas en Ezión-geber que van a Ofir; la flota de Tarsis trae oro, plata, marfil, simios y pavos cada tres años.",
+   "datos": [
+    {
+     "texto": "Hace navíos en Ezión-geber, junto a Elat",
+     "certeza": "texto",
+     "ref": "1R 9:26",
+     "cita": "Hizo también el rey Salomón navíos en Ezión-geber"
+    },
+    {
+     "texto": "Traen de Ofir cuatrocientos veinte talentos de oro",
+     "certeza": "texto",
+     "ref": "1R 9:28",
+     "cita": "tomaron de allí oro, cuatrocientos y veinte talentos"
+    },
+    {
+     "texto": "Cada tres años la flota de Tarsis trae oro, plata, marfil, simios y pavos",
+     "certeza": "texto",
+     "ref": "1R 10:22",
+     "cita": "una vez en cada tres años venía la flota de Tharsis, y traía oro, plata, marfil, simios y pavos"
+    }
+   ],
+   "externo": []
+  },
+  "regalos-de-la-reina-de-seba": {
+   "nombre": "Los regalos de la reina de Seba",
+   "tipo": "regalo",
+   "apariciones": [
+    {
+     "inicio": "1R 10:2",
+     "fin": "1R 10:2"
+    },
+    {
+     "inicio": "1R 10:10",
+     "fin": "1R 10:10"
+    },
+    {
+     "inicio": "1R 10:13",
+     "fin": "1R 10:13"
+    }
+   ],
+   "personas": [
+    "Queen of Sheba_1",
+    "Solomon_1"
+   ],
+   "lugares": [
+    "seba-10-1"
+   ],
+   "resumen": "Camellos con especias, oro y piedras preciosas; el rey le da todo lo que pidió.",
+   "datos": [
+    {
+     "texto": "Ciento veinte talentos de oro, mucha especiería y piedras preciosas",
+     "certeza": "texto",
+     "ref": "1R 10:10",
+     "cita": "ciento y veinte talentos de oro, y muy mucha especiería, y piedras preciosas"
+    },
+    {
+     "texto": "Salomón le da todo lo que quiso y pidió",
+     "certeza": "texto",
+     "ref": "1R 10:13",
+     "cita": "el rey Salomón dió á la reina de Seba todo lo que quiso, y todo lo que pidió"
+    }
+   ],
+   "externo": []
+  },
+  "escudos-de-oro-de-salomon": {
+   "nombre": "Los paveses y escudos de oro de Salomón",
+   "tipo": "armas",
+   "apariciones": [
+    {
+     "inicio": "1R 10:16",
+     "fin": "1R 10:17"
+    },
+    {
+     "inicio": "1R 14:26",
+     "fin": "1R 14:28"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Shishak_1",
+    "Rehoboam_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Doscientos paveses y trescientos escudos de oro en la casa del bosque del Líbano; Sisac se los lleva y Roboam los sustituye por escudos de metal.",
+   "datos": [
+    {
+     "texto": "Hace doscientos paveses de oro extendido",
+     "certeza": "texto",
+     "ref": "1R 10:16",
+     "cita": "doscientos paveses de oro extendido"
+    },
+    {
+     "texto": "Y trescientos escudos de oro, puestos en la casa del bosque del Líbano",
+     "certeza": "texto",
+     "ref": "1R 10:17",
+     "cita": "trescientos escudos de oro extendido"
+    },
+    {
+     "texto": "Sisac se lleva los escudos de oro",
+     "certeza": "texto",
+     "ref": "1R 14:26",
+     "cita": "llevóse también todos los escudos de oro que Salomón había hecho"
+    },
+    {
+     "texto": "Roboam hace escudos de metal en su lugar",
+     "certeza": "texto",
+     "ref": "1R 14:27",
+     "cita": "hizo el rey Roboam escudos de metal"
+    }
+   ],
+   "externo": []
+  },
+  "trono-de-marfil": {
+   "nombre": "El trono de marfil",
+   "tipo": "trono",
+   "apariciones": [
+    {
+     "inicio": "1R 10:18",
+     "fin": "1R 10:20"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [],
+   "resumen": "Gran trono de marfil cubierto de oro purísimo, con seis gradas y doce leones.",
+   "datos": [
+    {
+     "texto": "Gran trono de marfil cubierto de oro purísimo",
+     "certeza": "texto",
+     "ref": "1R 10:18",
+     "cita": "un gran trono de marfil, el cual cubrió de oro purísimo"
+    },
+    {
+     "texto": "Seis gradas, con dos leones junto a los apoyos",
+     "certeza": "texto",
+     "ref": "1R 10:19",
+     "cita": "Seis gradas tenía el trono"
+    },
+    {
+     "texto": "Doce leones sobre las seis gradas; ningún otro reino tenía uno semejante",
+     "certeza": "texto",
+     "ref": "1R 10:20",
+     "cita": "Estaban también doce leones puestos allí sobre las seis gradas"
+    }
+   ],
+   "externo": []
+  },
+  "carros-y-caballos-de-salomon": {
+   "nombre": "Los carros y caballos de Salomón",
+   "tipo": "carros",
+   "apariciones": [
+    {
+     "inicio": "1R 4:26",
+     "fin": "1R 4:26"
+    },
+    {
+     "inicio": "1R 10:26",
+     "fin": "1R 10:29"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [
+    "egipto"
+   ],
+   "resumen": "Mil cuatrocientos carros y doce mil jinetes; los caballos y carros se traen de Egipto.",
+   "datos": [
+    {
+     "texto": "Mil cuatrocientos carros y doce mil jinetes",
+     "certeza": "texto",
+     "ref": "1R 10:26",
+     "cita": "tenía mil cuatrocientos carros, y doce mil jinetes"
+    },
+    {
+     "texto": "Un carro cuesta seiscientas piezas de plata; un caballo, ciento cincuenta",
+     "certeza": "texto",
+     "ref": "1R 10:29",
+     "cita": "el carro por seiscientas piezas de plata, y el caballo por ciento y cincuenta"
+    },
+    {
+     "texto": "Cuarenta mil caballos en sus caballerizas (4:26)",
+     "certeza": "texto",
+     "ref": "1R 4:26",
+     "cita": "cuarenta mil caballos en sus caballerizas para sus carros"
+    }
+   ],
+   "externo": []
+  },
+  "capa-nueva-de-ahias": {
+   "nombre": "La capa nueva rota en doce pedazos",
+   "tipo": "señal profética",
+   "apariciones": [
+    {
+     "inicio": "1R 11:29",
+     "fin": "1R 11:31"
+    }
+   ],
+   "personas": [
+    "Ahijah_1R11_1",
+    "Jeroboam_1"
+   ],
+   "lugares": [],
+   "resumen": "Ahías rompe en doce pedazos su capa nueva y da diez a Jeroboam: diez tribus.",
+   "datos": [
+    {
+     "texto": "Ahías va cubierto con una capa nueva; están los dos solos en el campo",
+     "certeza": "texto",
+     "ref": "1R 11:29",
+     "cita": "él estaba cubierto con una capa nueva; y estaban ellos dos solos en el campo"
+    },
+    {
+     "texto": "La rompe en doce pedazos",
+     "certeza": "texto",
+     "ref": "1R 11:30",
+     "cita": "trabando Ahías de la capa nueva que tenía sobre sí, rompióla en doce pedazos"
+    },
+    {
+     "texto": "Da diez pedazos a Jeroboam: «á ti daré diez tribus»",
+     "certeza": "texto",
+     "ref": "1R 11:31",
+     "cita": "Toma para ti los diez pedazos"
+    }
+   ],
+   "externo": []
+  },
+  "becerros-de-oro-de-jeroboam": {
+   "nombre": "Los dos becerros de oro de Jeroboam",
+   "tipo": "imagen",
+   "apariciones": [
+    {
+     "inicio": "1R 12:28",
+     "fin": "1R 12:33"
+    },
+    {
+     "inicio": "1R 13:33",
+     "fin": "1R 13:33"
+    }
+   ],
+   "personas": [
+    "Jeroboam_1"
+   ],
+   "lugares": [
+    "betel",
+    "dan"
+   ],
+   "resumen": "Jeroboam hace dos becerros de oro y pone uno en Betel y otro en Dan, para que el pueblo no suba a Jerusalén.",
+   "datos": [
+    {
+     "texto": "Hace dos becerros de oro y dice al pueblo que ya han subido bastante a Jerusalén",
+     "certeza": "texto",
+     "ref": "1R 12:28",
+     "cita": "hizo el rey dos becerros de oro, y dijo al pueblo: Harto habéis subido á Jerusalem"
+    },
+    {
+     "texto": "Pone uno en Betel y otro en Dan",
+     "certeza": "texto",
+     "ref": "1R 12:29",
+     "cita": "puso el uno en Beth-el, y el otro puso en Dan"
+    },
+    {
+     "texto": "El pueblo iba a adorar delante del uno hasta Dan",
+     "certeza": "texto",
+     "ref": "1R 12:30",
+     "cita": "el pueblo iba [á adorar] delante del uno, hasta Dan"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-betel": {
+   "nombre": "El altar de Betel",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "1R 12:32",
+     "fin": "1R 12:33"
+    },
+    {
+     "inicio": "1R 13:1",
+     "fin": "1R 13:5"
+    },
+    {
+     "inicio": "1R 13:32",
+     "fin": "1R 13:32"
+    }
+   ],
+   "personas": [
+    "Jeroboam_1"
+   ],
+   "lugares": [
+    "betel"
+   ],
+   "resumen": "Jeroboam sacrifica sobre este altar; el varón de Dios lo anuncia roto y el altar se rompe y se derrama la ceniza.",
+   "datos": [
+    {
+     "texto": "Jeroboam sacrifica sobre el altar que hizo en Betel el día quince del mes octavo",
+     "certeza": "texto",
+     "ref": "1R 12:33",
+     "cita": "Sacrificó pues sobre el altar que él había hecho en Beth-el"
+    },
+    {
+     "texto": "La señal: el altar se quebrará y la ceniza se derramará",
+     "certeza": "texto",
+     "ref": "1R 13:3",
+     "cita": "el altar se quebrará, y la ceniza que sobre él está se derramará"
+    },
+    {
+     "texto": "El altar se rompe y se derrama la ceniza",
+     "certeza": "texto",
+     "ref": "1R 13:5",
+     "cita": "Y el altar se rompió, y derramóse la ceniza del altar"
+    }
+   ],
+   "externo": []
+  },
+  "asno-del-profeta-viejo": {
+   "nombre": "El asno y el león del camino",
+   "tipo": "animal",
+   "apariciones": [
+    {
+     "inicio": "1R 13:13",
+     "fin": "1R 13:29"
+    }
+   ],
+   "personas": [],
+   "lugares": [
+    "betel"
+   ],
+   "resumen": "El profeta viejo enalbarda un asno para alcanzar al varón de Dios; después el león mata al varón de Dios y se queda junto al cuerpo sin comerlo ni dañar al asno.",
+   "datos": [
+    {
+     "texto": "El profeta viejo monta un asno para ir tras el varón de Dios",
+     "certeza": "texto",
+     "ref": "1R 13:13",
+     "cita": "Enalbardadme el asno"
+    },
+    {
+     "texto": "Un león encuentra al varón de Dios en el camino y lo mata",
+     "certeza": "texto",
+     "ref": "1R 13:24",
+     "cita": "topóle un león en el camino, y matóle"
+    },
+    {
+     "texto": "El león y el asno están junto al cuerpo; el león no lo había comido ni dañado al asno",
+     "certeza": "texto",
+     "ref": "1R 13:28",
+     "cita": "el león no había comido el cuerpo, ni dañado al asno"
+    }
+   ],
+   "externo": []
+  },
+  "sepulcro-del-varon-de-dios": {
+   "nombre": "El sepulcro del varón de Dios",
+   "tipo": "sepulcro",
+   "apariciones": [
+    {
+     "inicio": "1R 13:29",
+     "fin": "1R 13:32"
+    }
+   ],
+   "personas": [],
+   "lugares": [
+    "betel"
+   ],
+   "resumen": "El profeta viejo lo pone en su propio sepulcro y pide ser enterrado junto a él.",
+   "datos": [
+    {
+     "texto": "Pone el cuerpo en su propio sepulcro",
+     "certeza": "texto",
+     "ref": "1R 13:30",
+     "cita": "puso su cuerpo en su sepulcro"
+    },
+    {
+     "texto": "Pide a sus hijos que lo entierren junto al varón de Dios",
+     "certeza": "texto",
+     "ref": "1R 13:31",
+     "cita": "poned mis huesos junto á los suyos"
+    }
+   ],
+   "externo": []
+  },
+  "presente-para-ahias": {
+   "nombre": "Diez panes, turrones y una botija de miel",
+   "tipo": "presente",
+   "apariciones": [
+    {
+     "inicio": "1R 14:3",
+     "fin": "1R 14:3"
+    }
+   ],
+   "personas": [
+    "Jeroboam_1"
+   ],
+   "lugares": [
+    "siloh"
+   ],
+   "resumen": "Lo que Jeroboam manda llevar a Ahías en Silo.",
+   "datos": [
+    {
+     "texto": "Diez panes, turrones y una botija de miel para el profeta",
+     "certeza": "texto",
+     "ref": "1R 14:3",
+     "cita": "toma en tu mano diez panes, y turrones, y una botija de miel"
+    }
+   ],
+   "externo": []
+  },
+  "idolo-de-maaca": {
+   "nombre": "El ídolo de Maaca",
+   "tipo": "ídolo",
+   "apariciones": [
+    {
+     "inicio": "1R 15:13",
+     "fin": "1R 15:13"
+    }
+   ],
+   "personas": [
+    "Asa_1",
+    "Maacah_3"
+   ],
+   "lugares": [
+    "torrente-de-cedron"
+   ],
+   "resumen": "Un ídolo hecho en un bosque que Asa deshace y quema junto al torrente de Cedrón.",
+   "datos": [
+    {
+     "texto": "Asa deshace el ídolo de su madre y lo quema junto al torrente de Cedrón",
+     "certeza": "texto",
+     "ref": "1R 15:13",
+     "cita": "deshizo Asa el ídolo de su madre, y quemólo junto al torrente de Cedrón"
+    }
+   ],
+   "externo": []
+  },
+  "tesoros-para-ben-adad": {
+   "nombre": "La plata y el oro enviados a Ben-adad",
+   "tipo": "presente",
+   "apariciones": [
+    {
+     "inicio": "1R 15:18",
+     "fin": "1R 15:19"
+    }
+   ],
+   "personas": [
+    "Asa_1",
+    "Ben-hadad_1"
+   ],
+   "lugares": [
+    "damasco"
+   ],
+   "resumen": "Asa toma lo que quedaba en los tesoros del templo y de la casa real y lo envía a Ben-adad en Damasco.",
+   "datos": [
+    {
+     "texto": "Toma lo que queda en los tesoros del templo y de la casa real",
+     "certeza": "texto",
+     "ref": "1R 15:18",
+     "cita": "tomando Asa toda la plata y oro que había quedado en los tesoros de la casa de Jehová"
+    },
+    {
+     "texto": "Lo envía como presente para romper la alianza de Ben-adad con Baasa",
+     "certeza": "texto",
+     "ref": "1R 15:19",
+     "cita": "he aquí yo te envío un presente de plata y oro"
+    }
+   ],
+   "externo": []
+  },
+  "piedra-y-madera-de-rama": {
+   "nombre": "La piedra y la madera de Rama",
+   "tipo": "materiales",
+   "apariciones": [
+    {
+     "inicio": "1R 15:17",
+     "fin": "1R 15:22"
+    }
+   ],
+   "personas": [
+    "Asa_1",
+    "Baasha_1"
+   ],
+   "lugares": [
+    "rama"
+   ],
+   "resumen": "Baasa edifica Rama; al dejarla, Asa se lleva la piedra y la madera y edifica con ellas Geba y Mizpa.",
+   "datos": [
+    {
+     "texto": "Quitan de Rama la piedra y la madera de Baasa",
+     "certeza": "texto",
+     "ref": "1R 15:22",
+     "cita": "quitaron de Rama la piedra y la madera con que Baasa edificaba"
+    },
+    {
+     "texto": "Con ellas Asa edifica Geba de Benjamín y Mizpa",
+     "certeza": "texto",
+     "ref": "1R 15:22",
+     "cita": "edificó el rey Asa con ello á Gabaa de Benjamín, y á Mizpa"
+    }
+   ],
+   "externo": []
+  },
+  "pan-y-carne-de-los-cuervos": {
+   "nombre": "El pan y la carne de los cuervos",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "1R 17:4",
+     "fin": "1R 17:6"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "lugares": [
+    "querit"
+   ],
+   "resumen": "Los cuervos traen pan y carne a Elías por la mañana y por la tarde junto al arroyo de Querit.",
+   "datos": [
+    {
+     "texto": "Jehová manda a los cuervos que le den de comer",
+     "certeza": "texto",
+     "ref": "1R 17:4",
+     "cita": "yo he mandado á los cuervos que te den allí de comer"
+    },
+    {
+     "texto": "Le traen pan y carne mañana y tarde; bebe del arroyo",
+     "certeza": "texto",
+     "ref": "1R 17:6",
+     "cita": "los cuervos le traían pan y carne por la mañana, y pan y carne á la tarde"
+    }
+   ],
+   "externo": []
+  },
+  "tinaja-de-harina-y-botija-de-aceite": {
+   "nombre": "La tinaja de harina y la botija de aceite",
+   "tipo": "provisiones",
+   "apariciones": [
+    {
+     "inicio": "1R 17:12",
+     "fin": "1R 17:16"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "lugares": [
+    "sarepta"
+   ],
+   "resumen": "La harina de la tinaja y el aceite de la botija de la viuda no se acaban hasta que Jehová da lluvia.",
+   "datos": [
+    {
+     "texto": "La viuda solo tiene un puñado de harina y un poco de aceite",
+     "certeza": "texto",
+     "ref": "1R 17:12",
+     "cita": "solamente un puñado de harina tengo en la tinaja, y un poco de aceite en una botija"
+    },
+    {
+     "texto": "La palabra: no escaseará la harina ni se disminuirá el aceite hasta que llueva",
+     "certeza": "texto",
+     "ref": "1R 17:14",
+     "cita": "La tinaja de la harina no escaseará, ni se disminuirá la botija del aceite"
+    },
+    {
+     "texto": "Así fue, conforme a la palabra de Jehová por Elías",
+     "certeza": "texto",
+     "ref": "1R 17:16",
+     "cita": "Y la tinaja de la harina no escaseó, ni menguó la botija del aceite"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-elias-en-el-carmelo": {
+   "nombre": "El altar de Elías en el Carmelo",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "1R 18:30",
+     "fin": "1R 18:38"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "lugares": [
+    "carmel"
+   ],
+   "resumen": "Elías repara el altar de Jehová con doce piedras, abre una reguera, lo empapa con cuatro cántaros tres veces y cae fuego.",
+   "datos": [
+    {
+     "texto": "Repara el altar de Jehová arruinado",
+     "certeza": "texto",
+     "ref": "1R 18:30",
+     "cita": "reparó el altar de Jehová que estaba arruinado"
+    },
+    {
+     "texto": "Toma doce piedras, según las tribus de los hijos de Jacob",
+     "certeza": "texto",
+     "ref": "1R 18:31",
+     "cita": "doce piedras, conforme al número de las tribus de los hijos de Jacob"
+    },
+    {
+     "texto": "Manda echar agua cuatro cántaros, tres veces",
+     "certeza": "texto",
+     "ref": "1R 18:34",
+     "cita": "Henchid cuatro cántaros de agua, y derramadla sobre el holocausto y sobre la leña"
+    },
+    {
+     "texto": "Cae fuego de Jehová y consume holocausto, leña, piedras y polvo, y lame el agua",
+     "certeza": "texto",
+     "ref": "1R 18:38",
+     "cita": "cayó fuego de Jehová, el cual consumió el holocausto, y la leña, y las piedras, y el polvo"
+    }
+   ],
+   "externo": []
+  },
+  "buey-de-los-profetas-de-baal": {
+   "nombre": "El buey y el altar de los profetas de Baal",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "1R 18:23",
+     "fin": "1R 18:29"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "lugares": [
+    "carmel"
+   ],
+   "resumen": "Los profetas de Baal preparan su buey sobre leña sin fuego y claman desde la mañana hasta pasado el mediodía; no hay respuesta.",
+   "datos": [
+    {
+     "texto": "Elías propone dos bueyes, sin poner fuego debajo",
+     "certeza": "texto",
+     "ref": "1R 18:23",
+     "cita": "Dénsenos pues dos bueyes, y escójanse ellos el uno"
+    },
+    {
+     "texto": "Invocan a Baal desde la mañana hasta el mediodía",
+     "certeza": "texto",
+     "ref": "1R 18:26",
+     "cita": "invocaron en el nombre de Baal desde la mañana hasta el medio día"
+    },
+    {
+     "texto": "No hay voz ni quien responda",
+     "certeza": "texto",
+     "ref": "1R 18:29",
+     "cita": "no había voz, ni quien respondiese ni escuchase"
+    }
+   ],
+   "externo": []
+  },
+  "nube-como-la-palma-de-la-mano": {
+   "nombre": "La nube como la palma de la mano",
+   "tipo": "señal",
+   "apariciones": [
+    {
+     "inicio": "1R 18:43",
+     "fin": "1R 18:45"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "lugares": [
+    "carmel"
+   ],
+   "resumen": "A la séptima vez el criado ve una pequeña nube del mar; poco después hay gran lluvia.",
+   "datos": [
+    {
+     "texto": "Elías manda al criado mirar hacia el mar siete veces",
+     "certeza": "texto",
+     "ref": "1R 18:43",
+     "cita": "Vuelve siete veces"
+    },
+    {
+     "texto": "A la séptima vez el criado ve una pequeña nube que sube del mar",
+     "certeza": "texto",
+     "ref": "1R 18:44",
+     "cita": "una pequeña nube como la palma de la mano de un hombre, que sube de la mar"
+    },
+    {
+     "texto": "Los cielos se oscurecen con nubes y viento y hay gran lluvia",
+     "certeza": "texto",
+     "ref": "1R 18:45",
+     "cita": "hubo una gran lluvia"
+    }
+   ],
+   "externo": []
+  },
+  "torta-y-vaso-de-agua-del-angel": {
+   "nombre": "La torta cocida y el vaso de agua",
+   "tipo": "alimento",
+   "apariciones": [
+    {
+     "inicio": "1R 19:5",
+     "fin": "1R 19:8"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "lugares": [
+    "beerseba"
+   ],
+   "resumen": "Un ángel despierta a Elías dos veces para que coma y beba; con esa comida camina cuarenta días y cuarenta noches.",
+   "datos": [
+    {
+     "texto": "A su cabecera hay una torta cocida sobre las ascuas y un vaso de agua",
+     "certeza": "texto",
+     "ref": "1R 19:6",
+     "cita": "una torta cocida sobre las ascuas, y un vaso de agua"
+    },
+    {
+     "texto": "Camina cuarenta días y cuarenta noches hasta Horeb",
+     "certeza": "texto",
+     "ref": "1R 19:8",
+     "cita": "caminó con la fortaleza de aquella comida cuarenta días y cuarenta noches"
+    }
+   ],
+   "externo": []
+  },
+  "manto-de-elias": {
+   "nombre": "El manto de Elías",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "1R 19:13",
+     "fin": "1R 19:13"
+    },
+    {
+     "inicio": "1R 19:19",
+     "fin": "1R 19:19"
+    }
+   ],
+   "personas": [
+    "Elijah_1",
+    "Elisha_1"
+   ],
+   "lugares": [
+    "horeb"
+   ],
+   "resumen": "Con el manto Elías cubre su rostro en Horeb y con él llama a Eliseo, a quien lo echa encima.",
+   "datos": [
+    {
+     "texto": "En Horeb cubre su rostro con su manto al oír el silbo",
+     "certeza": "texto",
+     "ref": "1R 19:13",
+     "cita": "cubrió su rostro con su manto"
+    },
+    {
+     "texto": "Pasando junto a Eliseo, echa sobre él su manto",
+     "certeza": "texto",
+     "ref": "1R 19:19",
+     "cita": "echó sobre él su manto"
+    }
+   ],
+   "externo": []
+  },
+  "doce-yuntas-de-eliseo": {
+   "nombre": "Las doce yuntas y el arado de Eliseo",
+   "tipo": "aperos",
+   "apariciones": [
+    {
+     "inicio": "1R 19:19",
+     "fin": "1R 19:21"
+    }
+   ],
+   "personas": [
+    "Elisha_1"
+   ],
+   "lugares": [
+    "abel-mehola"
+   ],
+   "resumen": "Eliseo ara con doce yuntas; para despedirse mata un par de bueyes y cuece su carne con el arado.",
+   "datos": [
+    {
+     "texto": "Ara con doce yuntas; él es uno de los doce gañanes",
+     "certeza": "texto",
+     "ref": "1R 19:19",
+     "cita": "araba con doce yuntas delante de sí; y él era uno de los doce [gañanes]"
+    },
+    {
+     "texto": "Cuece la carne con el arado de los bueyes",
+     "certeza": "texto",
+     "ref": "1R 19:21",
+     "cita": "con el arado de los bueyes coció la carne de ellos"
+    }
+   ],
+   "externo": []
+  },
+  "sacos-y-sogas-de-los-siervos-de-ben-adad": {
+   "nombre": "Sacos y sogas de los siervos de Ben-adad",
+   "tipo": "vestido de súplica",
+   "apariciones": [
+    {
+     "inicio": "1R 20:31",
+     "fin": "1R 20:33"
+    }
+   ],
+   "personas": [
+    "Ben-hadad_1",
+    "Ahab_1"
+   ],
+   "lugares": [
+    "samaria"
+   ],
+   "resumen": "Los siervos de Ben-adad se ciñen sacos y sogas a la cabeza para pedir su vida al rey de Israel.",
+   "datos": [
+    {
+     "texto": "Proponen ir al rey de Israel con sacos y sogas",
+     "certeza": "texto",
+     "ref": "1R 20:31",
+     "cita": "pongamos pues ahora sacos en nuestros lomos, y sogas en nuestras cabezas"
+    },
+    {
+     "texto": "Acab responde que, si vive, es su hermano",
+     "certeza": "texto",
+     "ref": "1R 20:32",
+     "cita": "Si él vive aún, mi hermano es"
+    }
+   ],
+   "externo": []
+  },
+  "velo-del-profeta-disfrazado": {
+   "nombre": "El velo sobre los ojos del profeta",
+   "tipo": "disfraz",
+   "apariciones": [
+    {
+     "inicio": "1R 20:35",
+     "fin": "1R 20:41"
+    }
+   ],
+   "personas": [
+    "Ahab_1"
+   ],
+   "lugares": [
+    "samaria"
+   ],
+   "resumen": "Un hijo de los profetas, herido por orden de Dios, se disfraza con un velo para presentar un caso ante el rey.",
+   "datos": [
+    {
+     "texto": "Se pone en el camino del rey con un velo sobre los ojos",
+     "certeza": "texto",
+     "ref": "1R 20:38",
+     "cita": "púsose delante del rey en el camino, y disfrazóse con un velo sobre los ojos"
+    },
+    {
+     "texto": "Se quita el velo y el rey lo reconoce como profeta",
+     "certeza": "texto",
+     "ref": "1R 20:41",
+     "cita": "se quitó de presto el velo de sobre sus ojos, y el rey de Israel conoció que era de los profetas"
+    }
+   ],
+   "externo": []
+  },
+  "vina-de-nabot": {
+   "nombre": "La viña de Nabot",
+   "tipo": "heredad",
+   "apariciones": [
+    {
+     "inicio": "1R 21:1",
+     "fin": "1R 21:19"
+    }
+   ],
+   "personas": [
+    "Naboth_1",
+    "Ahab_1",
+    "Jezebel_1",
+    "Elijah_1"
+   ],
+   "lugares": [
+    "jezreel"
+   ],
+   "resumen": "Viña de Nabot en Jezreel junto al palacio de Acab: Acab la quiere para huerto de legumbres; Nabot no la da; muerto Nabot, Acab desciende a tomarla.",
+   "datos": [
+    {
+     "texto": "La viña está junto al palacio de Acab",
+     "certeza": "texto",
+     "ref": "1R 21:1",
+     "cita": "Naboth de Jezreel tenía en Jezreel una viña junto al palacio de Achâb"
+    },
+    {
+     "texto": "Acab la pide para un huerto de legumbres",
+     "certeza": "texto",
+     "ref": "1R 21:2",
+     "cita": "Dame tu viña para un huerto de legumbres"
+    },
+    {
+     "texto": "Nabot la considera la heredad de sus padres",
+     "certeza": "texto",
+     "ref": "1R 21:3",
+     "cita": "la heredad de mis padres"
+    },
+    {
+     "texto": "Acab baja a tomar posesión de ella",
+     "certeza": "texto",
+     "ref": "1R 21:16",
+     "cita": "levantóse para descender á la viña de Naboth de Jezreel, para tomar posesión de ella"
+    }
+   ],
+   "externo": []
+  },
+  "cartas-de-jezabel": {
+   "nombre": "Las cartas de Jezabel selladas con el anillo",
+   "tipo": "carta",
+   "apariciones": [
+    {
+     "inicio": "1R 21:8",
+     "fin": "1R 21:14"
+    }
+   ],
+   "personas": [
+    "Jezebel_1",
+    "Ahab_1",
+    "Naboth_1"
+   ],
+   "lugares": [
+    "jezreel"
+   ],
+   "resumen": "Jezabel escribe cartas en nombre de Acab y las sella con su anillo; los ancianos hacen lo que decían.",
+   "datos": [
+    {
+     "texto": "Escribe cartas en nombre de Acab y las sella con su anillo",
+     "certeza": "texto",
+     "ref": "1R 21:8",
+     "cita": "escribió cartas en nombre de Achâb, y sellólas con su anillo"
+    },
+    {
+     "texto": "Los de su ciudad lo hacen conforme a lo escrito",
+     "certeza": "texto",
+     "ref": "1R 21:11",
+     "cita": "lo hicieron como Jezabel les mandó, conforme á lo escrito en las cartas"
+    }
+   ],
+   "externo": []
+  },
+  "cuernos-de-hierro-de-sedequias": {
+   "nombre": "Los cuernos de hierro de Sedequías",
+   "tipo": "señal profética",
+   "apariciones": [
+    {
+     "inicio": "1R 22:11",
+     "fin": "1R 22:11"
+    }
+   ],
+   "personas": [
+    "Zedekiah_1"
+   ],
+   "lugares": [
+    "samaria"
+   ],
+   "resumen": "Sedequías se hace cuernos de hierro y dice que con ellos Acab acorneará a los sirios hasta acabarlos.",
+   "datos": [
+    {
+     "texto": "Se hace cuernos de hierro y anuncia que con ellos acornearán a los sirios",
+     "certeza": "texto",
+     "ref": "1R 22:11",
+     "cita": "se había hecho unos cuernos de hierro, y dijo: Así ha dicho Jehová: Con éstos acornearás á los Siros hasta acabarlos"
+    }
+   ],
+   "externo": []
+  },
+  "flecha-a-la-ventura": {
+   "nombre": "La flecha disparada a la ventura",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "1R 22:34",
+     "fin": "1R 22:34"
+    }
+   ],
+   "personas": [
+    "Ahab_1"
+   ],
+   "lugares": [
+    "ramot-galaad"
+   ],
+   "resumen": "Un hombre dispara su arco a la ventura y hiere al rey de Israel entre las junturas de la armadura.",
+   "datos": [
+    {
+     "texto": "Un hombre dispara a la ventura y hiere al rey entre las junturas de la armadura",
+     "certeza": "texto",
+     "ref": "1R 22:34",
+     "cita": "Y un hombre disparando su arco á la ventura, hirió al rey de Israel por entre las junturas de la armadura"
+    }
+   ],
+   "externo": []
+  },
+  "carro-de-acab": {
+   "nombre": "El carro de Acab",
+   "tipo": "carro",
+   "apariciones": [
+    {
+     "inicio": "1R 22:34",
+     "fin": "1R 22:38"
+    }
+   ],
+   "personas": [
+    "Ahab_1"
+   ],
+   "lugares": [
+    "ramot-galaad",
+    "samaria"
+   ],
+   "resumen": "El rey herido se sostiene en su carro frente a los sirios hasta la tarde; el carro se lava en el estanque de Samaria.",
+   "datos": [
+    {
+     "texto": "Sostenido en su carro, muere a la tarde",
+     "certeza": "texto",
+     "ref": "1R 22:35",
+     "cita": "el rey estuvo en su carro delante de los Siros, y á la tarde murió"
+    },
+    {
+     "texto": "Lavan el carro en el estanque de Samaria; los perros lamen su sangre",
+     "certeza": "texto",
+     "ref": "1R 22:38",
+     "cita": "lavaron el carro en el estanque de Samaria"
+    }
+   ],
+   "externo": []
+  },
+  "casa-de-marfil-de-acab": {
+   "nombre": "La casa de marfil de Acab",
+   "tipo": "edificio",
+   "apariciones": [
+    {
+     "inicio": "1R 22:39",
+     "fin": "1R 22:39"
+    }
+   ],
+   "personas": [
+    "Ahab_1"
+   ],
+   "lugares": [
+    "samaria"
+   ],
+   "resumen": "El texto la nombra entre las obras de Acab, sin más descripción.",
+   "datos": [
+    {
+     "texto": "Entre los hechos de Acab figura «la casa de marfil que hizo»",
+     "certeza": "texto",
+     "ref": "1R 22:39",
+     "cita": "la casa de marfil que hizo"
+    }
+   ],
+   "externo": []
+  },
+  "navios-de-josafat": {
+   "nombre": "Los navíos de Tarsis de Josafat",
+   "tipo": "flota",
+   "apariciones": [
+    {
+     "inicio": "1R 22:48",
+     "fin": "1R 22:50"
+    }
+   ],
+   "personas": [
+    "Jehoshaphat_3",
+    "Ahaziah_1"
+   ],
+   "lugares": [
+    "ezion-geber",
+    "ofir"
+   ],
+   "resumen": "Josafat hace navíos para ir a Ofir por oro; se rompen en Ezión-geber; no acepta que vayan los siervos de Ocozías.",
+   "datos": [
+    {
+     "texto": "En Edom no hay rey, sino un presidente",
+     "certeza": "texto",
+     "ref": "1R 22:48",
+     "cita": "No había entonces rey en Edom; presidente había [en lugar de] rey"
+    },
+    {
+     "texto": "Los navíos se rompen en Ezión-geber y no van a Ofir",
+     "certeza": "texto",
+     "ref": "1R 22:49",
+     "cita": "se rompieron en Ezion-geber"
+    }
+   ],
+   "externo": []
+  },
+  "libros-de-las-cronicas-de-los-reyes": {
+   "nombre": "Los libros de los hechos de Salomón y de las crónicas de los reyes",
+   "tipo": "libros",
+   "apariciones": [
+    {
+     "inicio": "1R 11:41",
+     "fin": "1R 11:41"
+    },
+    {
+     "inicio": "1R 14:19",
+     "fin": "1R 14:19"
+    },
+    {
+     "inicio": "1R 14:29",
+     "fin": "1R 14:29"
+    },
+    {
+     "inicio": "1R 15:7",
+     "fin": "1R 15:7"
+    },
+    {
+     "inicio": "1R 15:23",
+     "fin": "1R 15:23"
+    },
+    {
+     "inicio": "1R 15:31",
+     "fin": "1R 15:31"
+    },
+    {
+     "inicio": "1R 16:5",
+     "fin": "1R 16:5"
+    },
+    {
+     "inicio": "1R 16:14",
+     "fin": "1R 16:14"
+    },
+    {
+     "inicio": "1R 16:20",
+     "fin": "1R 16:20"
+    },
+    {
+     "inicio": "1R 16:27",
+     "fin": "1R 16:27"
+    },
+    {
+     "inicio": "1R 22:39",
+     "fin": "1R 22:39"
+    },
+    {
+     "inicio": "1R 22:46",
+     "fin": "1R 22:46"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "lugares": [],
+   "resumen": "Obras que el narrador cita para el resto de los hechos de cada rey; no se conservan en la Biblia.",
+   "datos": [
+    {
+     "texto": "Para el resto de los hechos de Salomón remite al «libro de los hechos de Salomón»",
+     "certeza": "texto",
+     "ref": "1R 11:41",
+     "cita": "¿no están escritas en el libro de los hechos de Salomón?"
+    },
+    {
+     "texto": "Remite al libro de las historias de los reyes de Israel",
+     "certeza": "texto",
+     "ref": "1R 14:19",
+     "cita": "todo está escrito en el libro de las historias de los reyes de Israel"
+    },
+    {
+     "texto": "Remite a las crónicas de los reyes de Judá",
+     "certeza": "texto",
+     "ref": "1R 14:29",
+     "cita": "¿no están escritas en las crónicas de los reyes de Judá?"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "gabaon": {
+   "nombre": "Gabaón",
+   "lugar": "gabaon",
+   "apariciones": [
+    {
+     "inicio": "1R 3:4",
+     "fin": "1R 3:15"
+    }
+   ],
+   "personas": [
+    "Solomon_1"
+   ],
+   "objetos": [
+    "altar-del-alto-de-gabaon"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Salomón va a Gabaón, el alto principal, a sacrificar",
+     "certeza": "texto",
+     "ref": "1R 3:4",
+     "cita": "iba el rey á Gabaón, porque aquél era el alto principal"
+    },
+    {
+     "texto": "Allí se le aparece Jehová en sueños; Salomón pide un corazón dócil",
+     "certeza": "texto",
+     "ref": "1R 3:5",
+     "cita": "aparecióse Jehová á Salomón en Gabaón una noche en sueños"
+    },
+    {
+     "texto": "La segunda aparición de Jehová se compara con la de Gabaón",
+     "certeza": "texto",
+     "ref": "1R 9:2",
+     "cita": "como le había aparecido en Gabaón"
+    }
+   ],
+   "externo": []
+  },
+  "betel": {
+   "nombre": "Betel",
+   "lugar": "betel",
+   "apariciones": [
+    {
+     "inicio": "1R 12:29",
+     "fin": "1R 13:32"
+    },
+    {
+     "inicio": "1R 12:33",
+     "fin": "1R 12:33"
+    }
+   ],
+   "personas": [
+    "Jeroboam_1"
+   ],
+   "objetos": [
+    "becerros-de-oro-de-jeroboam",
+    "altar-de-betel",
+    "asno-del-profeta-viejo",
+    "sepulcro-del-varon-de-dios"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Jeroboam pone allí uno de los dos becerros",
+     "certeza": "texto",
+     "ref": "1R 12:29",
+     "cita": "puso el uno en Beth-el, y el otro puso en Dan"
+    },
+    {
+     "texto": "El varón de Dios de Judá viene a clamar contra el altar",
+     "certeza": "texto",
+     "ref": "1R 13:1",
+     "cita": "un varón de Dios por palabra de Jehová vino de Judá á Beth-el"
+    },
+    {
+     "texto": "Vive en Betel un profeta viejo",
+     "certeza": "texto",
+     "ref": "1R 13:11",
+     "cita": "Moraba á la sazón en Beth-el un viejo profeta"
+    }
+   ],
+   "externo": []
+  },
+  "lais-y-dan": {
+   "nombre": "Lais, desde entonces Dan",
+   "lugar": "dan",
+   "apariciones": [
+    {
+     "inicio": "1R 12:29",
+     "fin": "1R 12:30"
+    }
+   ],
+   "personas": [
+    "Jeroboam_1"
+   ],
+   "objetos": [
+    "becerros-de-oro-de-jeroboam"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "El pueblo iba hasta Dan a adorar delante del becerro",
+     "certeza": "texto",
+     "ref": "1R 12:30",
+     "cita": "el pueblo iba [á adorar] delante del uno, hasta Dan"
+    }
+   ],
+   "externo": []
+  },
+  "siloh": {
+   "nombre": "Silo",
+   "lugar": "siloh",
+   "apariciones": [
+    {
+     "inicio": "1R 14:2",
+     "fin": "1R 14:6"
+    }
+   ],
+   "personas": [
+    "Ahijah_1R11_1"
+   ],
+   "objetos": [
+    "presente-para-ahias"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "La mujer de Jeroboam va a casa de Ahías en Silo",
+     "certeza": "texto",
+     "ref": "1R 14:4",
+     "cita": "la mujer de Jeroboam hízolo así; y levantóse, y fué á Silo, y vino á casa de Ahías"
+    }
+   ],
+   "externo": []
+  },
+  "fuente-de-rogel": {
+   "nombre": "La fuente de Rogel",
+   "lugar": "en-rogel",
+   "apariciones": [
+    {
+     "inicio": "1R 1:9",
+     "fin": "1R 1:9"
+    }
+   ],
+   "personas": [
+    "Adonijah_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Adonías hace su banquete junto a la peña de Zoheleth, cerca de la fuente de Rogel",
+     "certeza": "texto",
+     "ref": "1R 1:9",
+     "cita": "junto á la peña de Zoheleth, que está cerca de la fuente de Rogel"
+    }
+   ],
+   "externo": []
+  },
+  "beerseba": {
+   "nombre": "Beerseba",
+   "lugar": "beerseba",
+   "apariciones": [
+    {
+     "inicio": "1R 19:3",
+     "fin": "1R 19:4"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "objetos": [
+    "torta-y-vaso-de-agua-del-angel"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Elías huye a Beerseba y deja allí a su criado",
+     "certeza": "texto",
+     "ref": "1R 19:3",
+     "cita": "vino á Beer-seba, que es en Judá, y dejó allí su criado"
+    }
+   ],
+   "externo": []
+  },
+  "siquem": {
+   "nombre": "Siquem",
+   "lugar": "siquem",
+   "apariciones": [
+    {
+     "inicio": "1R 12:1",
+     "fin": "1R 12:1"
+    },
+    {
+     "inicio": "1R 12:25",
+     "fin": "1R 12:25"
+    }
+   ],
+   "personas": [
+    "Rehoboam_1",
+    "Jeroboam_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Roboam va a Siquem, donde todo Israel viene a hacerlo rey",
+     "certeza": "texto",
+     "ref": "1R 12:1",
+     "cita": "Roboam á Sichêm; porque todo Israel había venido á Sichêm para hacerlo rey"
+    },
+    {
+     "texto": "Jeroboam reedifica Siquem y habita en ella",
+     "certeza": "texto",
+     "ref": "1R 12:25",
+     "cita": "reedificó Jeroboam á Sichêm en el monte de Ephraim, y habitó en ella"
+    }
+   ],
+   "externo": []
+  },
+  "arroyo-de-cison": {
+   "nombre": "El arroyo de Cisón",
+   "lugar": "cison",
+   "apariciones": [
+    {
+     "inicio": "1R 18:40",
+     "fin": "1R 18:40"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Elías lleva a los profetas de Baal al arroyo de Cisón",
+     "certeza": "texto",
+     "ref": "1R 18:40",
+     "cita": "llevólos Elías al arroyo de Cisón, y allí los degolló"
+    }
+   ],
+   "externo": []
+  },
+  "ciudad-de-david": {
+   "nombre": "La Ciudad de David",
+   "lugar": "ciudad-de-david",
+   "apariciones": [
+    {
+     "inicio": "1R 2:10",
+     "fin": "1R 2:10"
+    },
+    {
+     "inicio": "1R 3:1",
+     "fin": "1R 3:1"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Solomon_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David es sepultado en la ciudad de David",
+     "certeza": "texto",
+     "ref": "1R 2:10",
+     "cita": "fué sepultado en la ciudad de David"
+    },
+    {
+     "texto": "Salomón trae allí a la hija de Faraón mientras acaba su casa y el templo",
+     "certeza": "texto",
+     "ref": "1R 3:1",
+     "cita": "trájola á la ciudad de David"
+    }
+   ],
+   "externo": []
+  },
+  "gihon": {
+   "nombre": "Gihón",
+   "lugar": "gihon-1-33",
+   "apariciones": [
+    {
+     "inicio": "1R 1:32",
+     "fin": "1R 1:45"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Zadok_1",
+    "Nathan_2",
+    "Benaiah_1"
+   ],
+   "objetos": [
+    "cuerno-de-aceite-de-sadoc",
+    "mula-del-rey-david"
+   ],
+   "resumen": "Allí unge Sadoc a Salomón, mientras Adonías banquetea cerca, junto a Rogel.",
+   "datos": [
+    {
+     "texto": "David manda llevar a Salomón a Gihón",
+     "certeza": "texto",
+     "ref": "1R 1:33",
+     "cita": "llevadlo á Gihón"
+    },
+    {
+     "texto": "Jonatán cuenta a Adonías que lo han ungido en Gihón",
+     "certeza": "texto",
+     "ref": "1R 1:45",
+     "cita": "Sadoc sacerdote y Nathán profeta lo han ungido en Gihón por rey"
+    }
+   ],
+   "externo": []
+  },
+  "templo-de-salomon": {
+   "nombre": "La casa de Jehová, el templo de Salomón",
+   "lugar": "jerusalen",
+   "apariciones": [
+    {
+     "inicio": "1R 6:1",
+     "fin": "1R 6:38"
+    },
+    {
+     "inicio": "1R 7:12",
+     "fin": "1R 7:51"
+    },
+    {
+     "inicio": "1R 8:1",
+     "fin": "1R 8:66"
+    },
+    {
+     "inicio": "1R 9:3",
+     "fin": "1R 9:3"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Hiram_2"
+   ],
+   "objetos": [
+    "arca-del-testimonio",
+    "querubines-de-olivo-del-oraculo",
+    "columnas-jaquin-y-boaz",
+    "mar-de-fundicion",
+    "basas-y-fuentes-de-bronce",
+    "utensilios-de-oro-del-templo",
+    "nube-de-la-gloria-en-el-templo",
+    "altar-de-bronce-del-atrio"
+   ],
+   "resumen": "No es un lugar propio de la lista de lugares: se sitúa en Jerusalén, donde Salomón hace subir el arca (8:1); el texto da sus medidas y materiales.",
+   "datos": [
+    {
+     "texto": "Sesenta codos de largo, veinte de ancho y treinta de alto",
+     "certeza": "texto",
+     "ref": "1R 6:2",
+     "cita": "La casa que el rey Salomón edificó á Jehová, tuvo sesenta codos de largo y veinte de ancho, y treinta codos de alto"
+    },
+    {
+     "texto": "Se empieza en el año 480 después de la salida de Egipto (TM), el cuarto año de Salomón",
+     "certeza": "texto",
+     "ref": "1R 6:1",
+     "cita": "en el año cuatrocientos ochenta después que los hijos de Israel salieron de Egipto"
+    },
+    {
+     "texto": "Las piedras llegaban acabadas",
+     "certeza": "texto",
+     "ref": "1R 6:7",
+     "cita": "ni martillos ni hachas se oyeron en la casa"
+    },
+    {
+     "texto": "La acaba en siete años",
+     "certeza": "texto",
+     "ref": "1R 6:38",
+     "cita": "Edificóla pues, en siete años"
+    },
+    {
+     "texto": "El arca entra en el oráculo, el lugar santísimo",
+     "certeza": "texto",
+     "ref": "1R 8:6",
+     "cita": "los sacerdotes metieron el arca del pacto de Jehová en su lugar, en el oráculo de la casa"
+    }
+   ],
+   "externo": []
+  },
+  "palacio-de-salomon": {
+   "nombre": "El palacio de Salomón y la casa del bosque del Líbano",
+   "lugar": "jerusalen",
+   "apariciones": [
+    {
+     "inicio": "1R 7:1",
+     "fin": "1R 7:12"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Pharaoh_5_hija_1R3"
+   ],
+   "objetos": [
+    "escudos-de-oro-de-salomon",
+    "trono-de-marfil"
+   ],
+   "resumen": "El texto no dice dónde estaba; 9:24 sitúa la casa de la hija de Faraón junto a la ciudad de David (la ubicación en Jerusalén es inferida).",
+   "datos": [
+    {
+     "texto": "Edifica su propia casa en trece años",
+     "certeza": "texto",
+     "ref": "1R 7:1",
+     "cita": "Salomón su propia casa en trece años"
+    },
+    {
+     "texto": "La casa del bosque del Líbano: cien codos de largo, cincuenta de ancho y treinta de alto",
+     "certeza": "texto",
+     "ref": "1R 7:2",
+     "cita": "la casa del bosque del Líbano, la cual tenía cien codos de longitud, y cincuenta codos de anchura, y treinta codos de altura"
+    },
+    {
+     "texto": "Hace el pórtico del trono, el pórtico del juicio",
+     "certeza": "texto",
+     "ref": "1R 7:7",
+     "cita": "el pórtico del trono en que había de juzgar, el pórtico del juicio"
+    },
+    {
+     "texto": "Edifica otra casa para la hija de Faraón",
+     "certeza": "texto",
+     "ref": "1R 7:8",
+     "cita": "una casa para la hija de Faraón, que había tomado por mujer"
+    },
+    {
+     "texto": "Que estuviera en Jerusalén lo da por supuesto 9:24; el texto no lo dice en ese versículo",
+     "certeza": "inferido",
+     "ref": "1R 7:1",
+     "cita": "Salomón su propia casa"
+    }
+   ],
+   "externo": []
+  },
+  "arroyo-de-querit": {
+   "nombre": "El arroyo de Querit",
+   "lugar": "querit",
+   "apariciones": [
+    {
+     "inicio": "1R 17:2",
+     "fin": "1R 17:7"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "objetos": [
+    "pan-y-carne-de-los-cuervos"
+   ],
+   "resumen": "Elías se esconde allí por mandato de Jehová; el arroyo se seca porque no llueve.",
+   "datos": [
+    {
+     "texto": "Jehová lo manda esconderse en el arroyo de Querit, delante del Jordán",
+     "certeza": "texto",
+     "ref": "1R 17:3",
+     "cita": "escóndete en el arroyo de Cherith, que está delante del Jordán"
+    },
+    {
+     "texto": "Pasados algunos días el arroyo se seca",
+     "certeza": "texto",
+     "ref": "1R 17:7",
+     "cita": "secóse el arroyo; porque no había llovido sobre la tierra"
+    }
+   ],
+   "externo": []
+  },
+  "sarepta": {
+   "nombre": "Sarepta de Sidón",
+   "lugar": "sarepta",
+   "apariciones": [
+    {
+     "inicio": "1R 17:8",
+     "fin": "1R 17:24"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "objetos": [
+    "tinaja-de-harina-y-botija-de-aceite"
+   ],
+   "resumen": "Elías llega a la puerta de la ciudad, encuentra a la viuda y se hospeda en su casa; allí revive al niño.",
+   "datos": [
+    {
+     "texto": "Jehová lo manda a Sarepta de Sidón",
+     "certeza": "texto",
+     "ref": "1R 17:9",
+     "cita": "vete á Sarepta de Sidón, y allí morarás"
+    },
+    {
+     "texto": "Llega a la puerta de la ciudad y halla a la viuda cogiendo leña",
+     "certeza": "texto",
+     "ref": "1R 17:10",
+     "cita": "llegó á la puerta de la ciudad, he aquí una mujer viuda que estaba allí cogiendo serojas"
+    },
+    {
+     "texto": "Lleva al niño a la cámara donde él se hospeda",
+     "certeza": "texto",
+     "ref": "1R 17:19",
+     "cita": "llevólo á la cámara donde él estaba, y púsole sobre su cama"
+    }
+   ],
+   "externo": []
+  },
+  "monte-carmelo": {
+   "nombre": "El monte Carmelo",
+   "lugar": "carmel",
+   "apariciones": [
+    {
+     "inicio": "1R 18:19",
+     "fin": "1R 18:46"
+    }
+   ],
+   "personas": [
+    "Elijah_1",
+    "Ahab_1"
+   ],
+   "objetos": [
+    "altar-de-elias-en-el-carmelo",
+    "buey-de-los-profetas-de-baal",
+    "nube-como-la-palma-de-la-mano"
+   ],
+   "resumen": "Allí Elías convoca a Israel y a los profetas de Baal; después sube a la cumbre y ve la nube.",
+   "datos": [
+    {
+     "texto": "Elías pide a Acab que junte a Israel en el monte Carmelo",
+     "certeza": "texto",
+     "ref": "1R 18:19",
+     "cita": "júntame á todo Israel en el monte de Carmelo"
+    },
+    {
+     "texto": "Sube a la cumbre y pone su rostro entre las rodillas",
+     "certeza": "texto",
+     "ref": "1R 18:42",
+     "cita": "Elías subió á la cumbre del Carmelo"
+    }
+   ],
+   "externo": []
+  },
+  "jezreel": {
+   "nombre": "Jezreel",
+   "lugar": "jezreel",
+   "apariciones": [
+    {
+     "inicio": "1R 18:45",
+     "fin": "1R 18:46"
+    },
+    {
+     "inicio": "1R 21:1",
+     "fin": "1R 21:24"
+    }
+   ],
+   "personas": [
+    "Ahab_1",
+    "Jezebel_1",
+    "Naboth_1",
+    "Elijah_1"
+   ],
+   "objetos": [
+    "vina-de-nabot",
+    "cartas-de-jezabel"
+   ],
+   "resumen": "Acab llega allí tras la lluvia, Elías corre delante de él; allí está la viña de Nabot.",
+   "datos": [
+    {
+     "texto": "Elías corre delante del carro de Acab hasta Jezreel",
+     "certeza": "texto",
+     "ref": "1R 18:46",
+     "cita": "vino corriendo delante de Achâb hasta llegar á Jezreel"
+    },
+    {
+     "texto": "Jehová anuncia que los perros comerán a Jezabel en la barbacana de Jezreel",
+     "certeza": "texto",
+     "ref": "1R 21:23",
+     "cita": "Los perros comerán á Jezabel en la barbacana de Jezreel"
+    }
+   ],
+   "externo": []
+  },
+  "horeb-de-elias": {
+   "nombre": "Horeb, el monte de Dios",
+   "lugar": "horeb",
+   "apariciones": [
+    {
+     "inicio": "1R 19:8",
+     "fin": "1R 19:18"
+    }
+   ],
+   "personas": [
+    "Elijah_1"
+   ],
+   "objetos": [
+    "manto-de-elias"
+   ],
+   "resumen": "Elías llega tras cuarenta días de camino, se mete en una cueva y oye a Jehová en el silbo apacible.",
+   "datos": [
+    {
+     "texto": "Camina hasta Horeb, el monte de Dios",
+     "certeza": "texto",
+     "ref": "1R 19:8",
+     "cita": "hasta el monte de Dios, Horeb"
+    },
+    {
+     "texto": "Pasa la noche en una cueva",
+     "certeza": "texto",
+     "ref": "1R 19:9",
+     "cita": "allí se metió en una cueva, donde tuvo la noche"
+    },
+    {
+     "texto": "Tras el viento, el terremoto y el fuego, un silbo apacible y delicado",
+     "certeza": "texto",
+     "ref": "1R 19:12",
+     "cita": "un silbo apacible y delicado"
+    }
+   ],
+   "externo": []
+  },
+  "samaria": {
+   "nombre": "Samaria",
+   "lugar": "samaria",
+   "apariciones": [
+    {
+     "inicio": "1R 16:24",
+     "fin": "1R 16:24"
+    },
+    {
+     "inicio": "1R 20:1",
+     "fin": "1R 20:21"
+    },
+    {
+     "inicio": "1R 20:34",
+     "fin": "1R 20:34"
+    },
+    {
+     "inicio": "1R 22:10",
+     "fin": "1R 22:10"
+    },
+    {
+     "inicio": "1R 22:37",
+     "fin": "1R 22:38"
+    }
+   ],
+   "personas": [
+    "Omri_1",
+    "Ahab_1",
+    "Ben-hadad_1"
+   ],
+   "objetos": [
+    "cuernos-de-hierro-de-sedequias",
+    "sacos-y-sogas-de-los-siervos-de-ben-adad",
+    "carro-de-acab",
+    "casa-de-marfil-de-acab"
+   ],
+   "resumen": "Omri la edifica en el monte comprado a Semer; Ben-adad la sitia; en la plaza de su puerta están los dos reyes; allí sepultan a Acab.",
+   "datos": [
+    {
+     "texto": "Omri edifica la ciudad y la llama Samaria",
+     "certeza": "texto",
+     "ref": "1R 16:24",
+     "cita": "llamó el nombre de la ciudad que edificó, Samaria"
+    },
+    {
+     "texto": "Ben-adad la sitia",
+     "certeza": "texto",
+     "ref": "1R 20:1",
+     "cita": "puso cerco á Samaria, y combatióla"
+    },
+    {
+     "texto": "Los dos reyes se sientan en la plaza junto a la puerta de Samaria",
+     "certeza": "texto",
+     "ref": "1R 22:10",
+     "cita": "en la plaza junto á la entrada de la puerta de Samaria"
+    },
+    {
+     "texto": "El carro de Acab se lava en el estanque de Samaria",
+     "certeza": "texto",
+     "ref": "1R 22:38",
+     "cita": "lavaron el carro en el estanque de Samaria"
+    }
+   ],
+   "externo": []
+  },
+  "afec": {
+   "nombre": "Afec",
+   "lugar": "afec-20-26",
+   "apariciones": [
+    {
+     "inicio": "1R 20:26",
+     "fin": "1R 20:30"
+    }
+   ],
+   "personas": [
+    "Ben-hadad_1",
+    "Ahab_1"
+   ],
+   "objetos": [],
+   "resumen": "Al año siguiente Ben-adad sube a pelear en llanura; tras siete días de campo, el muro de la ciudad cae sobre veintisiete mil.",
+   "datos": [
+    {
+     "texto": "Ben-adad viene a Afec a pelear contra Israel",
+     "certeza": "texto",
+     "ref": "1R 20:26",
+     "cita": "vino á Aphec á pelear contra Israel"
+    },
+    {
+     "texto": "El muro de la ciudad cae sobre veintisiete mil hombres",
+     "certeza": "texto",
+     "ref": "1R 20:30",
+     "cita": "el muro cayó sobre veinte y siete mil hombres que habían quedado"
+    }
+   ],
+   "externo": []
+  },
+  "ramot-de-galaad": {
+   "nombre": "Ramot de Galaad",
+   "lugar": "ramot-galaad",
+   "apariciones": [
+    {
+     "inicio": "1R 22:3",
+     "fin": "1R 22:36"
+    }
+   ],
+   "personas": [
+    "Ahab_1",
+    "Jehoshaphat_3",
+    "Micaiah_1"
+   ],
+   "objetos": [
+    "flecha-a-la-ventura",
+    "carro-de-acab"
+   ],
+   "resumen": "Acab pide a Josafat subir a tomarla al rey de Siria; allí es herido.",
+   "datos": [
+    {
+     "texto": "Acab dice que Ramot de Galaad es de Israel y está en poder del rey de Siria",
+     "certeza": "texto",
+     "ref": "1R 22:3",
+     "cita": "¿No sabéis que es nuestra Ramoth de Galaad?"
+    },
+    {
+     "texto": "Los dos reyes suben a Ramot de Galaad",
+     "certeza": "texto",
+     "ref": "1R 22:29",
+     "cita": "Subió pues el rey de Israel con Josaphat rey de Judá á Ramoth de Galaad"
+    }
+   ],
+   "externo": []
+  },
+  "tirsa": {
+   "nombre": "Tirsa",
+   "lugar": "tirsa",
+   "apariciones": [
+    {
+     "inicio": "1R 14:17",
+     "fin": "1R 14:17"
+    },
+    {
+     "inicio": "1R 15:21",
+     "fin": "1R 15:21"
+    },
+    {
+     "inicio": "1R 15:33",
+     "fin": "1R 15:33"
+    },
+    {
+     "inicio": "1R 16:8",
+     "fin": "1R 16:18"
+    }
+   ],
+   "personas": [
+    "Baasha_1",
+    "Elah_2",
+    "Zimri_2",
+    "Omri_1"
+   ],
+   "objetos": [],
+   "resumen": "Capital de Israel en estos años: reinan allí Baasa, Ela y Zimri y Omri seis años.",
+   "datos": [
+    {
+     "texto": "Baasa reina en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 15:33",
+     "cita": "comenzó á reinar Baasa hijo de Ahía sobre todo Israel en Thirsa"
+    },
+    {
+     "texto": "Zimri se quema en el palacio de Tirsa",
+     "certeza": "texto",
+     "ref": "1R 16:18",
+     "cita": "metióse en el palacio de la casa real, y pegó fuego á la casa consigo"
+    },
+    {
+     "texto": "Omri reina seis años en Tirsa",
+     "certeza": "texto",
+     "ref": "1R 16:23",
+     "cita": "en Thirsa reinó seis años"
+    }
+   ],
+   "externo": []
+  },
+  "ezion-geber": {
+   "nombre": "Ezión-geber",
+   "lugar": "ezion-geber",
+   "apariciones": [
+    {
+     "inicio": "1R 9:26",
+     "fin": "1R 9:28"
+    },
+    {
+     "inicio": "1R 22:48",
+     "fin": "1R 22:49"
+    }
+   ],
+   "personas": [
+    "Solomon_1",
+    "Hiram_1",
+    "Jehoshaphat_3"
+   ],
+   "objetos": [
+    "flota-de-ezion-geber",
+    "navios-de-josafat"
+   ],
+   "resumen": "Junto a Elat, en la ribera del mar Bermejo, en la tierra de Edom: de allí salen las flotas.",
+   "datos": [
+    {
+     "texto": "Está junto a Elat, en la ribera del mar Bermejo, en tierra de Edom",
+     "certeza": "texto",
+     "ref": "1R 9:26",
+     "cita": "en Ezión-geber, que es junto á Elath en la ribera del mar Bermejo, en la tierra de Edom"
+    }
+   ],
+   "externo": []
+  },
+  "cabul": {
+   "nombre": "La tierra de Cabul",
+   "lugar": "cabul",
+   "apariciones": [
+    {
+     "inicio": "1R 9:11",
+     "fin": "1R 9:13"
+    }
+   ],
+   "personas": [
+    "Hiram_1",
+    "Solomon_1"
+   ],
+   "objetos": [
+    "veinte-ciudades-de-cabul"
+   ],
+   "resumen": "Las veinte ciudades que Hiram recibe de Salomón y que no le contentan.",
+   "datos": [
+    {
+     "texto": "Las llama «la tierra de Cabul», nombre que sigue «hasta hoy»",
+     "certeza": "texto",
+     "ref": "1R 9:13",
+     "cita": "púsoles por nombre, la tierra de Cabul, hasta hoy"
+    }
+   ],
+   "externo": []
+  }
+ }
+}

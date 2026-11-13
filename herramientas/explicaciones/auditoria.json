@@ -329,7 +329,7 @@
   },
   "baal": {
     "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta. 1R: `solo` ampliado a 16:31-32, 18:18-26, 18:40, 19:18 y 22:53 (absorbe `baal-1r`)."
   },
   "impureza": {
     "veredicto": "OK",
@@ -841,7 +841,7 @@
   },
   "velo": {
     "veredicto": "AJUSTAR",
-    "nota": "Ex 34:33-35 es el velo en el rostro de Moisés (otro sentido): se excluye. El resto es el velo del santuario; la descripción cabe en Ex 26:31-33."
+    "nota": "Ex 34:33-35 es el velo en el rostro de Moisés (otro sentido): se excluye. El resto es el velo del santuario; la descripción cabe en Ex 26:31-33. 1R 20:38 y 20:41 («velo sobre los ojos», disfraz del profeta): exclusión correcta; no hay otro «velo» en 1 Reyes."
   },
   "pan-proposicion": {
     "veredicto": "AJUSTAR",
@@ -917,7 +917,7 @@
   },
   "astaroth": {
     "veredicto": "AJUSTAR",
-    "nota": "Easton: diosa lunar fenicia, principio femenino de la naturaleza, emparejada con Baal. «Diosa de la fertilidad» no está en Easton; se corrige."
+    "nota": "Easton: diosa lunar fenicia, principio femenino de la naturaleza, emparejada con Baal. «Diosa de la fertilidad» no está en Easton; se corrige. 1R: forma «Astharoth» y `solo` a 11:5 y 11:33 (absorbe `astoret`)."
   },
   "dagon": {
     "veredicto": "OK",
@@ -925,7 +925,7 @@
   },
   "asera": {
     "veredicto": "AJUSTAR",
-    "nota": "Easton: asera = imagen o poste de madera que representaba a Astoret, a menudo en una arboleda; se quitó «junto a los altares» (Dt 16:21 y Jue 6, posteriores a Ex 34:13). La lista `solo` cubre los usos de «bosque» como asera."
+    "nota": "Easton: asera = imagen o poste de madera que representaba a Astoret, a menudo en una arboleda; se quitó «junto a los altares» (Dt 16:21 y Jue 6, posteriores a Ex 34:13). La lista `solo` cubre los usos de «bosque» como asera. 1R: `solo` ampliado a 14:15, 14:23, 15:13, 16:33 y 18:19 (absorbe `asera-1r`); texto neutro («se talan o se hacen»)."
   },
   "duelo": {
     "veredicto": "OK",
@@ -1070,5 +1070,161 @@
   "2s-24-censo": {
     "veredicto": "OK",
     "nota": "Radak 24:1 (hebreo; Targum), Rashi 24:1, Keil y Delitzsch (remite a 1 S 26:19) y Matthew Henry abiertos: coinciden. Los comentarios citan 1 Cr (Satán): el texto no. nino coherente (24:15 medio)."
+  },
+  "oraculo-1r": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Oracle) abierto: lugar santísimo del templo, salvo 2S 16:23; cita 1R 6:5. La primera aparición es 6:5 y la explicación daba medidas (6:20) y el arca (8:6), de pasajes posteriores: se reescribe con Easton y 6:5, certeza externa; `solo` suma 6:5."
+  },
+  "portico-1r": {
+    "veredicto": "AJUSTAR",
+    "nota": "La definición («construcción abierta, con techo») no tenía fuente. Wikcionario abierto: sitio cubierto y con columnas delante de templos u otros edificios suntuosos. Certeza texto -> externa; se quitó la cita de 7:7 (pasaje posterior)."
+  },
+  "capitel-1r": {
+    "veredicto": "OK",
+    "nota": "Easton (Chapiter): «cabeza ornamental o capitel de un pilar», Cothereth en 1R 7:16. Versículos 7:16-20 cotejados con el texto. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+  },
+  "jachin-boaz": {
+    "veredicto": "OK",
+    "nota": "Easton (Boaz): nombre de una de las dos columnas de bronce (la otra Jachin), motivo desconocido, 1R 7:21; distingue al Boaz de Rut. 7:21 cotejado. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+  },
+  "mar-fundicion": {
+    "veredicto": "OK",
+    "nota": "7:23-26 cotejado (diez codos, cinco, treinta, labio de cáliz, dos mil batos, doce bueyes). Easton (Laver): mar de fundición y diez lavatorios en 1R 7:23-39. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+  },
+  "basas-fuentes": {
+    "veredicto": "OK",
+    "nota": "7:27, 7:30, 7:33 y 7:38 cotejados. Easton (Laver): diez lavatorios en el templo, descritos en 1R 7:23-39. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+  },
+  "quiciales": {
+    "veredicto": "OK",
+    "nota": "Wikcionario abierto (madero que con pernios y bisagras sostiene puertas; muchas veces = quicio). 7:50 cotejado. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+  },
+  "coro": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Cor) abierto: = homer, 10 efas o 10 batos; rabinos 45 galones, Josefo ~87. Jewish Encyclopedia abierta: 364,4 L. Pasos recalculados (190/220/360; 170 y 329 L; 6.600 L). `solo` dejaba fuera 5:11 («veinte mil coros de trigo»): se añade con su cálculo (4.400.000 L). nino decía «cientos de litros»: son miles."
+  },
+  "bato": {
+    "veredicto": "OK",
+    "nota": "Easton (Bath): 8 galones y 3 cuartos = 8,75 × 3,785 = 33 L; Easton (Ephah): efa = bato. Jewish Encyclopedia: 36,44 L. Pasos recalculados (44.000, 38.000, 72.880 L; 880, 760, 1.457 L); coherente con el rango ya auditado del efa. 7:26 y 7:38 cotejados."
+  },
+  "sato": {
+    "veredicto": "OK",
+    "nota": "Easton (Ephah): efa = 3 seahs; Easton (Seah): «un poco más de un peck». Jewish Encyclopedia: 12,148 L. Pasos recalculados (7,3 / 6,3 / 12 L; 14,7 L; 12,6–24,3 L). La identificación sato = seah va como inferencia y no se calcula el área. 18:32 cotejado."
+  },
+  "libra-maneh": {
+    "veredicto": "OK",
+    "nota": "Easton (Maneh y Pound): 100 siclos comunes, ~2½ o 3 libras (1,13–1,36 kg). Jewish Encyclopedia: maneh de 25 siclos = 341,077 g y otro de 40. Pasos recalculados con el siclo 11,5–14,3 g (1,15–1,43 kg; 3 libras 1,0–4,3 kg). Se presentan las dos cifras sin elegir."
+  },
+  "paveses": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario (pavés) abierto: escudo oblongo que cubre casi todo el cuerpo. 10:16-17 cotejado. Se quitó «más pequeños» a los escudos de 10:17: el texto solo da el oro (3 libras), no el tamaño."
+  },
+  "altos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (High place) abierto: eminencia, natural o artificial, con sacrificios u ofrendas; Dt 12:2-3 y 12:11-14. Los «perfumes» no son de Easton sino de 3:3 y 22:44: se atribuye al texto. Ocurrencias revisadas (3:2-4, 11:7, 12:31-32, 13:2, 13:32-33, 14:23, 15:14, 22:44)."
+  },
+  "tributo-1r": {
+    "veredicto": "OK",
+    "nota": "Easton (Tribute): impuesto que el rey pone a sus súbditos. 5:13-14, 9:15, 9:21 y 12:18 cotejados. Queda fuera 4:6 (Adoniram «sobre el tributo») a propósito: explicarlo allí adelantaría 5:13-14."
+  },
+  "caballeria": {
+    "veredicto": "OK",
+    "nota": "Easton (Horse y Chariot): sin caballos de guerra por Dt 17:16; David formó caballería (2S 8:4); Salomón los multiplicó (1R 4:26, 10:26). Ocurrencias 4:26, 9:19, 9:22, 10:26 y 20:21 cotejadas. Fuente abierta y cotejada; sin adelantos; nino sin violencia ni sexo."
+  },
+  "marfil": {
+    "veredicto": "OK",
+    "nota": "Easton (Ivory): colmillos de elefante, adorno antiguo, trono de Salomón (1R 10:18) y naves de Tarsis desde las Indias (10:22). 10:18, 10:22 y 22:39 cotejados."
+  },
+  "simios-pavos": {
+    "veredicto": "OK",
+    "nota": "Easton (Ape y Peacock): koph (mono, nombre indio) y tuk (pavo real, ave de la India), 1R 10:22. 10:22 cotejado."
+  },
+  "cabrahigos": {
+    "veredicto": "OK",
+    "nota": "Easton (Sycamore): árbol parecido a la higuera, hallado sobre todo en las tierras bajas, cita 1R 10:27. 10:27 cotejado. Que el «cabrahigo» de la RV1909 sea el sicómoro es lo que dice Easton al citar ese versículo."
+  },
+  "acemilas": {
+    "veredicto": "OK",
+    "nota": "Wikcionario (acémila: mula, animal de carga, cruce de caballo y asno) y Easton (Mule, cita 1R 10:25). 10:25 y 18:5 cotejados."
+  },
+  "maestresalas": {
+    "veredicto": "OK",
+    "nota": "Wikcionario abierto (criado principal que asistía a la mesa de un señor y presentaba y distribuía la comida). 10:5 cotejado."
+  },
+  "chemos": {
+    "veredicto": "OK",
+    "nota": "Easton (Chemosh): dios de los moabitas, su culto introducido en Jerusalén por Salomón (1R 11:7). 11:7 y 11:33 cotejados."
+  },
+  "milcom": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Moloch): Milcom es otro nombre de Moloc (cita 1R 11:5 y 11:33). Keil y Delitzsch (11:5) lo distinguen del Moloc con artículo y dicen que no se puede precisar la diferencia: se añade para no decidir por el lector, con su fuente."
+  },
+  "becerros-jeroboam": {
+    "veredicto": "OK",
+    "nota": "Easton (Calf): Jeroboam, dos becerros en Dan y Betel para impedir que las diez tribus fueran a Jerusalén. 12:27-32 y Ex 32:4 cotejados."
+  },
+  "varon-dios": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Prophet): portavoz de Dios, «la boca por la que Dios habla». Se quitó la cita de 17:24 (primera aparición 13:1; adelanto) y el nino pasa a «Parece ser…» porque es inferencia."
+  },
+  "enebro-retama": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Juniper): rothem/retem, retama española, el arbusto más grande de esos desiertos, sombra, leña; cita 1R 19:4-5. Se quitó «no el enebro que conocemos hoy» (no lo dice Easton)."
+  },
+  "manto-elias": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Mantle): 'addereth, gran prenda exterior, el de Elías probablemente de piel de oveja. Se quitó «se lleva sobre los hombros» (no lo dice Easton). 19:13 y 19:19-20 cotejados."
+  },
+  "gananes": {
+    "veredicto": "OK",
+    "nota": "Wikcionario abierto (gañán: peón empleado en tareas de labranza). 19:19 cotejado."
+  },
+  "silbo": {
+    "veredicto": "OK",
+    "nota": "Wikcionario abierto (sonido agudo que hace el aire o que se hace con la boca). 19:12 cotejado."
+  },
+  "lancetas": {
+    "veredicto": "OK",
+    "nota": "Wikcionario abierto (lanceta: instrumento de hoja de acero muy afilada para sangrar o abrir tumores; sajar: hacer cortaduras en la carne). 18:28 cotejado; el versículo está plegado para niño."
+  },
+  "blasfemar": {
+    "veredicto": "OK",
+    "nota": "Easton (Blasphemy): hablar mal de Dios y, en general, calumnia o insulto, cita 1R 21:10. Lv 24:16 y 21:10-13 cotejados. nino sin violencia."
+  },
+  "lampara-david": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Lamp): metáfora de vida, bienestar o guía (2S 21:17). 11:36 y 15:4 cotejados. El nino afirmaba la lectura como hecho: pasa a «Parece ser…» (es inferencia)."
+  },
+  "1r-6-480-anos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Keil y Delitzsch 6:1 (480 frente a 440 de la LXX; Böttcher/Bertheau 12×40; Thenius y 484; Preuss) y Matthew Henry (40+17+299+40+40+40+4 = 480) abiertos y cotejados. Abarbanel (hebreo, Sefaria 6:1): él se pregunta por qué no cuenta desde la creación; se corrigió «observa». nino: «número redondo» pasa a «doce generaciones de cuarenta años» (lo que dice Böttcher). El pasaje no lleva cálculo propio: las sumas de `calculos_1r` (533 TM, 513 LXX frente a 480/440) no se usan ni se contradicen."
+  },
+  "1r-3-dos-mujeres": {
+    "veredicto": "AJUSTAR",
+    "nota": "Matthew Henry y Keil y Delitzsch 3:16-28 abiertos: coinciden. Rashi 3:27 (Sefaria, ed. Metsudah): voz divina; coincide. Radak 3:27 (hebreo): no dice «la primera mujer», sino la que se compadece: corregido. nino a null: contenido.js pliega 3:16-27 para niño, así que la app no mostraría nada."
+  },
+  "1r-11-mujeres-salomon": {
+    "veredicto": "AJUSTAR",
+    "nota": "Radak 11:1 (hebreo): matiz añadido (la hija de Faraón no desvió su corazón hasta la vejez). Ralbag 11:4 (hebreo), Rashi 11:7 (Metsudah) y Keil y Delitzsch 11:1-8 (números redondos, nota sobre error de letras numerales, no sacrificó él) cotejados. Dt 17:17 anterior. nino coherente (11:1-8 no se pliega)."
+  },
+  "1r-13-profeta-leon": {
+    "veredicto": "AJUSTAR",
+    "nota": "Radak 13:18 y 13:28 (hebreo), Keil y Delitzsch 13:18-26 y Matthew Henry 13 cotejados; sin adelantos. nino a null: contenido.js pliega 13:24-28 (león) para niño y el rango 13:7-32 los incluye."
+  },
+  "1r-18-profetas-baal": {
+    "veredicto": "OK",
+    "nota": "Radak 18:40 (hebreo) y Keil y Delitzsch 18:40 (Dt 17:2-3 y 13:13; mensajero extraordinario; no se deduce un derecho a perseguir) cotejados. nino null correcto: 18:40 está plegado (alto)."
+  },
+  "1r-19-silbo-apacible": {
+    "veredicto": "OK",
+    "nota": "Rashi 19:11-12 (Targum Yonatán), Radak 19:11-13 (hebreo; la recompensa por el Carmelo es de 19:13) y Keil y Delitzsch 19:11-12 (segundo Moisés, Herder) cotejados. nino coherente: 19:11-13 no está plegado."
+  },
+  "1r-21-nabot": {
+    "veredicto": "AJUSTAR",
+    "nota": "Keil y Delitzsch 21:3 y 21:11, Radak 21:10 (hebreo) y Rashi 21:15 (Metsudah) cotejados. nino a null: contenido.js pliega 21:10-13 para niño y el rango 21:1-16 los incluye."
+  },
+  "1r-22-espiritu-mentira": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi 22:19 y 22:21 (Sanedrín 89a), Radak 22:20 (hebreo), Keil y Delitzsch 22:19-23 y Matthew Henry cotejados. Radak: se precisó lo que dice del Rambam (solo la sangre de Nabot pesaba contra Acab). nino coherente (22:19-23 no se pliega)."
   }
 }

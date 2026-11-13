@@ -13,7 +13,7 @@ const Nucleo = (() => {
   const CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal', 'Pr', 'Ec', 'Cnt',
     'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal',
     'Mt', 'Mr', 'Lc', 'Jn', 'Hch', 'Ro', '1Co', '2Co', 'Ga', 'Ef', 'Fil', 'Col', '1Ts', '2Ts', '1Ti', '2Ti', 'Tit', 'Flm', 'He', 'Stg', '1P', '2P', '1Jn', '2Jn', '3Jn', 'Jud', 'Ap'];
-  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel', '2S': '2 Samuel' };
+  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel', '2S': '2 Samuel', '1R': '1 Reyes' };
   const ordLibro = new Map(), idPorOrd = new Map(), idCanon = new Map();
   CANON.forEach((id, i) => { ordLibro.set(norm(id), i + 1); idPorOrd.set(i + 1, id); idCanon.set(norm(id), id); });
   Object.entries(NOMBRES_LIBRO).forEach(([id, n]) => { idCanon.set(norm(n), id); idCanon.set(norm(n).replace(/\s+/g, ''), id); }); // «1 Samuel» y «1Samuel»
@@ -1258,10 +1258,34 @@ const Nucleo = (() => {
   }
   // Ref de la numeración hebrea solo cuando difiere de la de la RV ("Gn 31:55" → "Gn 32:1"); null si coincide o falta.
   // Si a un versículo RV le corresponden varios hebreos, r es un tramo ("Nm 13:32-33" → "13:32–33"; "Nm 25:19-26:1" → "25:19–26:1").
+  // Notas del griego que vienen del TVTMS («TVTMS (LongVerseDuplicated): GreekUndivided* «1Ki.12:3 [=1Ki.12:24.15]»»):
+  // se dicen en castellano para el lector; el dato técnico queda en griego-swete.js.
+  const OSIS_LIBRO = { Gen: 'Gn', Exo: 'Ex', Lev: 'Lv', Num: 'Nm', Deu: 'Dt', Jos: 'Jos', Jdg: 'Jue', Rut: 'Rt', '1Sa': '1 S', '2Sa': '2 S', '1Ki': '1 R', '2Ki': '2 R' };
+  const TVTMS_FRASE = {
+    TextMayBeMissing: 'En la LXX este versículo puede faltar o venir incompleto',
+    MergedPrevVerse: 'En la LXX este texto va unido al versículo anterior',
+    MergedVerse: 'En la LXX este texto va unido a otro versículo',
+    LongVerseElsewhereJoin: 'En la LXX este texto va unido a otro versículo',
+    SubdividedVerse: 'En la LXX este versículo se divide de otra forma',
+    OneToOne: 'En la LXX corresponde a otro número de versículo',
+    DuplicateTarget: 'En la LXX corresponde a un versículo que también recoge otro texto',
+    LongVerseElsewhere: 'La LXX trae este contenido en otro lugar',
+    'LongVerse/LVElsewhere': 'La LXX trae este contenido en otro lugar',
+    LongVerseDuplicated: 'La LXX repite este contenido en otro lugar',
+    'LongVerse/LVDuplicated': 'La LXX repite este contenido en otro lugar' };
+  function notaGriegoLegible(t) {
+    const s = String(t == null ? '' : t), m = /^TVTMS \(([^)]+)\):\s*(?:en\s+)?[^«]*«([^»]*)»\s*(.*)$/.exec(s);
+    if (!m) return s;
+    const ref = m[2].replace(/\b(Gen|Exo|Lev|Num|Deu|Jos|Jdg|Rut|1Sa|2Sa|1Ki|2Ki)\.(\d)/g, (_, b, d) => `${OSIS_LIBRO[b]} ${d}`)
+      .replace(/\[=\+?/g, '(= ').replace(/\]/g, ')').replace(/(\d+:\d+)\.0\b/g, '$1');
+    const resto = m[3].replace(/^;\s*corresponde a .*?equivalente\b/, '').replace(/^;\s*/, '').replace(/^sin versículo completo equivalente/, 'sin un versículo completo equivalente')
+      .replace(/\(esta edición no cumple todos los TEST del bloque\)/, '(la edición de Swete no cumple todas las comprobaciones del TVTMS)').replace(/\s+$/, '');
+    return `${TVTMS_FRASE[m[1]] || 'En la LXX la numeración difiere'}: ${ref}${resto ? '. ' + resto.charAt(0).toUpperCase() + resto.slice(1) + (/[.»]$/.test(resto) ? '' : '.') : '.'} (Correspondencia según el TVTMS, de Tyndale House.)`;
+  }
   function numeracionHebrea(ref, r) {
     if (!r) return null;
     const a = parseRef(ref), b = parseRef(r);
-    const tramo = /:\s*\d+\s*-\s*\d/.test(String(r)) ? String(r).replace(/^[^\d]*(?=\d+\s*:)/, '').replace(/\s*-\s*/, '–') : null;
+    const tramo = /:\s*\d+\s*-\s*\d/.test(String(r)) ? String(r).replace(/^\s*(?:[1-3]\s?)?[^\d\s:]+\.?\s+/, '').replace(/\s*-\s*/, '–') : null;
     if (tramo && a && b && a.libro === b.libro) return tramo;
     const parte = /:\s*\d+([a-z])\s*$/.exec(String(r));  // media unidad del hebreo (p. ej. Jue 14:18a)
     if (parte && a && b && a.libro === b.libro) return `${b.cap}:${b.v}${parte[1]}`;
@@ -1274,7 +1298,7 @@ const Nucleo = (() => {
     return versiculosDe(d, pasaje).map(v => {
       const h = H[v.ref];
       const he = (h && h.t) || null, gr = T[v.ref] || null, falta = sinTextoDe(O, G, v.ref);
-      const heNota = (O && O.hebreo_notas && O.hebreo_notas[v.ref]) || null, grNota = (G && G.notas && G.notas[v.ref]) || null;
+      const heNota = (O && O.hebreo_notas && O.hebreo_notas[v.ref]) || null, grNota = (G && G.notas && G.notas[v.ref]) ? notaGriegoLegible(G.notas[v.ref]) : null;
       return Object.assign({ ref: v.ref, cap: v.cap, n: v.n, rv: v.texto || null, he, heNum: h ? numeracionHebrea(v.ref, h.r) : null, gr }, v.nota ? { nota: v.nota } : {},
         !he && falta.he ? { heFalta: falta.he } : {}, !gr && falta.gr ? { grFalta: falta.gr } : {},
         he && heNota ? { heNota } : {}, gr && grNota ? { grNota } : {});
@@ -1840,7 +1864,7 @@ const Nucleo = (() => {
     marcasContenido, marcaDe, decisionVerso, accionVerso, recursoPermitido, curiosidadPermitida, enlaceLibre, tramosContenido,
     listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
-    TRADS, TIPOS, norm, rangoClaves, testigosDe, tramoRefs, nombreFolio, foliosDePasaje, rollosDePasaje, vaticanoDeLibro, variantesDe, numeracionHebrea, alinearOriginales, sinTextoDe, sinTextoOriginal, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+    TRADS, TIPOS, norm, rangoClaves, testigosDe, tramoRefs, nombreFolio, foliosDePasaje, rollosDePasaje, vaticanoDeLibro, variantesDe, numeracionHebrea, notaGriegoLegible, alinearOriginales, sinTextoDe, sinTextoOriginal, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona,
     GRUPOS_JUEGO, juegoValido, estadoPersonaje, vistaFichaJuego, estadoCosa, fichasCosas, nuevosAlLeer, genealogiasDe, esGenealogia, datoPlegado, relacionadosJuego, capituloListo, rangosAp, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,

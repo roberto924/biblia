@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Construye datos/biblia.js (Génesis 1–50, Éxodo 1–40, Levítico 1–27, Números 1–36, Deuteronomio 1–34, Josué 1–24, Jueces 1–21, Rut 1–4, 1 Samuel 1–31 y 2 Samuel 1–24) a partir de fuentes abiertas.
+"""Construye datos/biblia.js (Génesis 1–50, Éxodo 1–40, Levítico 1–27, Números 1–36, Deuteronomio 1–34, Josué 1–24, Jueces 1–21, Rut 1–4, 1 Samuel 1–31, 2 Samuel 1–24 y 1 Reyes 1–22) a partir de fuentes abiertas.
 
 Uso:  python herramientas/construir_datos.py [--sin-red]
 
@@ -7,7 +7,7 @@ Uso:  python herramientas/construir_datos.py [--sin-red]
 - Genera datos/biblia.js con  window.BIBLIA_DATOS = {...};  (Éxodo: herramientas/exodo.py; Levítico: herramientas/levitico.py;
   Números: herramientas/numeros.py; Deuteronomio: herramientas/deuteronomio.py; Josué: herramientas/josue.py;
   Jueces: herramientas/jueces.py; Rut: herramientas/rut.py; 1 Samuel: herramientas/samuel1.py;
-  2 Samuel: herramientas/samuel2.py)
+  2 Samuel: herramientas/samuel2.py; 1 Reyes: herramientas/reyes1.py)
 - Verifica citas, cifras, sumas, relaciones y nombres. Sale con código 1 si falla
   una verificación obligatoria (las sumas que no cuadran y los nombres no hallados
   se listan como advertencias).
@@ -40,6 +40,7 @@ import jueces  # noqa: E402
 import rut  # noqa: E402
 import samuel1  # noqa: E402
 import samuel2  # noqa: E402
+import reyes1  # noqa: E402
 
 MAXCAP = 50
 RAIZ = Path(__file__).resolve().parent.parent
@@ -50,7 +51,7 @@ LIBROS = [{"id": "Gn", "nombre": "Génesis", "capitulos": 50}, {"id": "Ex", "nom
           {"id": "Dt", "nombre": "Deuteronomio", "capitulos": 34},
           {"id": "Jos", "nombre": "Josué", "capitulos": 24}, {"id": "Jue", "nombre": "Jueces", "capitulos": 21},
           {"id": "Rut", "nombre": "Rut", "capitulos": 4}, {"id": "1S", "nombre": "1 Samuel", "capitulos": 31},
-          {"id": "2S", "nombre": "2 Samuel", "capitulos": 24}]
+          {"id": "2S", "nombre": "2 Samuel", "capitulos": 24}, {"id": "1R", "nombre": "1 Reyes", "capitulos": 22}]
 
 BD = "https://raw.githubusercontent.com/BradyStephenson/bible-data/HEAD/"
 FUENTES = [
@@ -1002,6 +1003,17 @@ def main():
     capitulos += S2["capitulos"]
     pasajes += S2["pasajes"]
     menciones = menciones + S2["menciones"]
+
+    # ------------------------------------------------------------ 1 Reyes 1–22 (herramientas/reyes1.py)
+    rv_1r = leer_vpl(obtener("rv", sin_red), "1KI", 22)
+    br_1r = reyes1.br_a_rv(leer_vpl(obtener("br", sin_red), "1KI", 22))  # único punto de versificación de Brenton
+    pv_1r = [r for r in leer_csv(obtener("pv", sin_red)) if re.match(r"1KI \d+:\d+$", r["reference_id"].strip())]
+    R1 = reyes1.construir(dict(rv=rv_1r, br=br_1r, rels=rels, pv_filas=pv_1r, per=per, personas=personas,
+                               relaciones=relaciones, edades=edades, sin_acentos=sin_acentos,
+                               numeral=numeral_a_numero, ES=ES, EN=EN, errores=errores, avisos=avisos))
+    capitulos += R1["capitulos"]
+    pasajes += R1["pasajes"]
+    menciones = menciones + R1["menciones"]
     personas.sort(key=lambda p: (exodo.clave_ref(p["refs"][0]) if p["refs"] else (9, 0, 0), p["id"]))
     vistos_id = Counter(p["id"] for p in personas)
     errores.extend(f"Persona duplicada: {k}" for k, n in vistos_id.items() if n > 1)
@@ -1018,20 +1030,23 @@ def main():
     rt = lambda k: f"Rut {k[0]}:{k[1]}"  # noqa: E731
     s1 = lambda k: f"1S {k[0]}:{k[1]}"  # noqa: E731
     s2 = lambda k: f"2S {k[0]}:{k[1]}"  # noqa: E731
+    r1 = lambda k: f"1R {k[0]}:{k[1]}"  # noqa: E731
     texto_ref = {"TM": {**{gn(k): v for k, v in rv.items()}, **{exodo.ex(k): v for k, v in rv_ex.items()},
                         **{lv(k): v for k, v in rv_lv.items()}, **{nm(k): v for k, v in rv_nm.items()},
                         **{dt(k): v for k, v in rv_dt.items()}, **{jos(k): v for k, v in rv_jos.items()},
                         **{jue(k): v for k, v in rv_jue.items()}, **{rt(k): v for k, v in rv_rut.items()},
-                        **{s1(k): v for k, v in rv_1s.items()}, **{s2(k): v for k, v in rv_2s.items()}},
+                        **{s1(k): v for k, v in rv_1s.items()}, **{s2(k): v for k, v in rv_2s.items()},
+                        **{r1(k): v for k, v in rv_1r.items()}},
                  "LXX": {**{gn(k): v for k, v in br.items()}, **{exodo.ex(k): v for k, v in br_ex.items()},
                          **{lv(k): v for k, v in br_lv.items()}, **{nm(k): v for k, v in br_nm.items()},
                          **{dt(k): v for k, v in br_dt.items()}, **{jos(k): v for k, v in br_jos.items()},
                          **{jue(k): v for k, v in br_jue.items()}, **{rt(k): v for k, v in br_rut.items()},
-                         **{s1(k): v for k, v in br_1s.items()}, **{s2(k): v for k, v in br_2s.items()}}}
+                         **{s1(k): v for k, v in br_1s.items()}, **{s2(k): v for k, v in br_2s.items()},
+                         **{r1(k): v for k, v in br_1r.items()}}}
     rango_pasaje = [(exodo.clave_ref(p["inicio"]), exodo.clave_ref(p["fin"]), p["id"]) for p in pasajes]
 
     def pasaje_de(ref):
-        if not ref or not re.match(r"(Gn|Ex|Lv|Nm|Dt|Jos|Jue|Rut|1S|2S) \d+:\d+", ref):
+        if not ref or not re.match(r"(Gn|Ex|Lv|Nm|Dt|Jos|Jue|Rut|1S|2S|1R) \d+:\d+", ref):
             return None
         k = exodo.clave_ref(ref)
         return next((pid for a0, b0, pid in rango_pasaje if a0 <= k <= b0), None)
@@ -1116,6 +1131,10 @@ def main():
                                                                 avisos, sin_acentos)
     lugares += lug_2s
     menciones_lugar += men_lug_2s
+    lug_1r, men_lug_1r, info_lug_1r = reyes1.construir_lugares(rv_1r, R1["menciones"], rutas, lugares, errores,
+                                                               avisos, sin_acentos)
+    lugares += lug_1r
+    menciones_lugar += men_lug_1r
     mapa = lm.construir_mapa(lugares, rutas)
     x0, y0, x1, y1 = mapa["bbox"]
     for l in lugares:
@@ -1146,6 +1165,7 @@ def main():
     hechos_rut = rut.comprobar(datos, errores)
     hechos_1s = samuel1.comprobar(datos, errores)
     hechos_2s = samuel2.comprobar(datos, errores)
+    hechos_1r = reyes1.comprobar(datos, errores)
     for lb in LIBROS:
         n = sum(1 for c in capitulos if c["libro"] == lb["id"])
         if n != lb["capitulos"]:
@@ -1383,6 +1403,20 @@ def main():
           f"{info_lug_2s['sin_forma']}; versículos descartados {info_lug_2s['descartadas']}")
     print("Hechos obligatorios de 2 Samuel:")
     for h in hechos_2s:
+        print("  " + h)
+    cs3 = Counter(l["ubicacion"]["confianza"] if l["ubicacion"] else "sin" for l in lug_1r)
+    print(f"1 Reyes: personas nuevas ({len(R1['nuevas'])}) {[x['id'] for x in R1['nuevas']]}; ampliadas "
+          f"({len(R1['ampliadas'])}) {R1['ampliadas']}; pasajes {len(R1['pasajes'])} (tamaños {R1['tam_pasaje']}); "
+          f"secciones {dict(Counter(x['seccion'] for x in R1['pasajes']))}")
+    print(f"1 Reyes: menciones {len(R1['menciones'])}; ambiguas descartadas ({len(R1['ambiguos'])}): {R1['ambiguos'][:15]}; "
+          f"no situadas {dict(R1['no_situados'].most_common(15))}; relaciones BibleData descartadas {R1['descartadas']}")
+    print(f"1 Reyes: versificación {reyes1.INFO_VERSIFICACION}")
+    print(f"1 Reyes: lugares nuevos {len(lug_1r)} {[x['id'] for x in lug_1r]} (automáticos {reyes1.INFO_AUTO.get('auto')}, "
+          f"homónimos {reyes1.INFO_AUTO.get('homonimos')}; confianza {dict(cs3)}); unidos {reyes1.INFO_AUTO.get('unidos')}; "
+          f"menciones de lugar {len(men_lug_1r)}; OpenBible sin forma ({len(info_lug_1r['sin_forma'])}) "
+          f"{info_lug_1r['sin_forma']}; versículos descartados {info_lug_1r['descartadas']}")
+    print("Hechos obligatorios de 1 Reyes:")
+    for h in hechos_1r:
         print("  " + h)
     print(f"Sumas al_engendrar+restantes=total comprobadas y correctas: {sumas_ok}")
     print(f"Advertencias ({len(avisos)}):")

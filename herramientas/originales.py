@@ -1,4 +1,4 @@
-"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué, Jueces, Rut, 1 Samuel y 2 Samuel.
+"""Fase 7b: textos originales y testigos de Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué, Jueces, Rut, 1 Samuel, 2 Samuel y 1 Reyes.
 
 Genera:
   datos/originales.js          window.BIBLIA_ORIGINALES (hebreo WLC, testigos, variantes, videos)
@@ -50,6 +50,8 @@ ARCHIVOS = {
     "uxlc_1s": ("https://tanach.us/Books/Samuel_1.xml", "uxlc_Samuel_1.xml"),  # marca «X» (no hay en 1 S), ketiv/qere y 13:1 para cotejar con OSHB
     "oshb_2s": (GH + "openscriptures/morphhb/master/wlc/2Sam.xml", "oshb_2Sam.xml"),
     "uxlc_2s": ("https://tanach.us/Books/Samuel_2.xml", "uxlc_Samuel_2.xml"),  # marca «X» y ketiv/qere para cotejar con OSHB
+    "oshb_1r": (GH + "openscriptures/morphhb/master/wlc/1Kgs.xml", "oshb_1Kgs.xml"),
+    "uxlc_1r": ("https://tanach.us/Books/Kings_1.xml", "uxlc_Kings_1.xml"),    # marca «X» y ketiv/qere para cotejar con OSHB
     "tvtms": (TVTMS_URL, "tvtms.txt"),
     "swete_vers": (GH + "eliranwong/LXX-Swete-1930/master/00-Swete_versification.csv",
                    "swete_00-Swete_versification.csv"),
@@ -60,12 +62,12 @@ ARCHIVOS = {
 for _f in ("otype", "oslots", "scroll", "book", "chapter", "verse", "rec", "full", "fragment", "line"):
     ARCHIVOS["dss_" + _f] = (GH + "ETCBC/dss/master/tf/2.0/%s.tf" % _f, "dss_%s.tf" % _f)
 
-LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S")
-LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos", "Jue": "Jdg", "Rut": "Rut", "1S": "1Sa", "2S": "2Sa"}          # códigos TVTMS / Swete
+LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S", "1R")
+LIBRO_OSIS = {"Gn": "Gen", "Ex": "Exo", "Lv": "Lev", "Nm": "Num", "Dt": "Deu", "Jos": "Jos", "Jue": "Jdg", "Rut": "Rut", "1S": "1Sa", "2S": "2Sa", "1R": "1Ki"}          # códigos TVTMS / Swete
 OSIS_LIBRO = {"Gen": "Gn", "Exo": "Ex", "Exod": "Ex", "Lev": "Lv", "Num": "Nm", "Deu": "Dt", "Deut": "Dt", "Jos": "Jos", "Josh": "Jos",
-              "Jdg": "Jue", "Judg": "Jue", "Rut": "Rut", "Ruth": "Rut", "1Sa": "1S", "1Sam": "1S", "2Sa": "2S", "2Sam": "2S"}
-DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos", "Judg": "Jue", "Ruth": "Rut", "1Sam": "1S", "2Sam": "2S"}            # códigos de libro en ETCBC/dss
-OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos|Jdg|Rut|1Sa|2Sa"                               # libros TVTMS / Swete que se leen
+              "Jdg": "Jue", "Judg": "Jue", "Rut": "Rut", "Ruth": "Rut", "1Sa": "1S", "1Sam": "1S", "2Sa": "2S", "2Sam": "2S", "1Ki": "1R", "1Kgs": "1R"}
+DSS_LIBRO = {"Gen": "Gn", "Ex": "Ex", "Lev": "Lv", "Num": "Nm", "Deut": "Dt", "Josh": "Jos", "Judg": "Jue", "Ruth": "Rut", "1Sam": "1S", "2Sam": "2S", "1Kgs": "1R"}            # códigos de libro en ETCBC/dss
+OSIS_RE = "Gen|Exo|Lev|Num|Deu|Jos|Jdg|Rut|1Sa|2Sa|1Ki"                               # libros TVTMS / Swete que se leen
 FALLOS = []
 ROLLOS_PRESENTES = set()          # nombres de rollo que aparecen en ETCBC/dss (lo llena leer_dss)
 ORDEN_DSS = {}                    # rollo -> [(slot, fragmento, línea, (lib, c, v))] en el orden del rollo (lo llena leer_dss)
@@ -346,17 +348,17 @@ def evaluar_test(expr, trad):
         if e is None:
             return True
         return e if que == "exist" else not e
-    un = r"(?:%s)\.\d+:\d+" % OSIS_RE
+    un = r"(?:%s)\.\d+:\d+(?:\*\d+)?" % OSIS_RE
     m = re.match(r"(%s(?:\+%s)*)([<>])(%s(?:\+%s)*)$" % (un, un, un, un), expr)
-    if m:                                              # largos de versículos (o sumas: «Num.1:32+Num.1:33>…»)
+    if m:                                              # largos de versículos (sumas: «Num.1:32+Num.1:33>…»; múltiplos: «1Ki.6:6*2»)
         def suma(lado):
             tot = 0
             for p in lado.split("+"):
-                q = re.match(r"(\w+)\.(\d+):(\d+)$", p)
+                q = re.match(r"(\w+)\.(\d+):(\d+)(?:\*(\d+))?$", p)
                 x = trad.largo(OSIS_LIBRO[q[1]], int(q[2]), int(q[3]))
                 if x is None:
                     return None
-                tot += x
+                tot += x * int(q[4] or 1)
             return tot
         a, b = suma(m[1]), suma(m[3])
         if a is None or b is None:
@@ -633,20 +635,20 @@ FUENTES = [
     {"id": "wlc-oshb", "nombre": "Westminster Leningrad Codex 4.20 (texto del Códice de Leningrado), vía Open Scriptures Hebrew Bible (morphhb)",
      "licencia": "Texto WLC: dominio público. Atribución: Open Scriptures Hebrew Bible (lemas y morfología CC BY 4.0, no usados aquí)",
      "url": "https://github.com/openscriptures/morphhb"},
-    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces y en Rut no hay ninguna), su marca de letra suspendida en Jue 18:30 (nota «7») y, en Rut, 1 Samuel y 2 Samuel, sus ketiv/qere (<k>/<q>) para cotejarlos con el WLC (y en 1 S 13:1, el comienzo del versículo)",
-     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml, https://tanach.us/Books/Judges.xml, https://tanach.us/Books/Ruth.xml, https://tanach.us/Books/Samuel_1.xml y https://tanach.us/Books/Samuel_2.xml"},
+    {"id": "uxlc", "nombre": "UXLC 2.6 (Unicode/XML Leningrad Codex), C. V. Kimball, tanach.us: solo se leen su marca «X» (versículo que no está en el Códice de Leningrado: Jos 21:36-37; en Jueces y en Rut no hay ninguna), su marca de letra suspendida en Jue 18:30 (nota «7») y, en Rut, 1 Samuel y 2 Samuel, sus ketiv/qere (<k>/<q>) para cotejarlos con el WLC (también en 1 Reyes; y en 1 S 13:1, el comienzo del versículo)",
+     "licencia": "«Freely available» según su cabecera (no se redistribuye su texto)", "url": "https://tanach.us/Books/Joshua.xml, https://tanach.us/Books/Judges.xml, https://tanach.us/Books/Ruth.xml, https://tanach.us/Books/Samuel_1.xml, https://tanach.us/Books/Samuel_2.xml y https://tanach.us/Books/Kings_1.xml"},
     {"id": "tvtms", "nombre": "TVTMS (Translators Versification Traditions with Methodology for Standardisation), STEPBible / Tyndale House",
      "licencia": "CC BY 4.0", "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Versification"},
     {"id": "swete", "nombre": "H. B. Swete, The Old Testament in Greek (Cambridge, ed. 1930), digitalización LXX-Swete-1930 (Eliran Wong)",
      "licencia": "GPL-3.0 (texto de Swete en dominio público; digitalización GPL); va aparte en datos/griego-swete.js",
      "url": "https://github.com/eliranwong/LXX-Swete-1930"},
     {"id": "etcbc-dss", "nombre": "ETCBC/dss: datos de los Rollos del Mar Muerto de M. Abegg, J. Bowley y E. Cook (conversión Text-Fabric de J. Jacobs, M. Naaijer y D. Roorda)",
-     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47, que 4Q49 pasa de Jue 6:6 a 6:11, las lecturas de 4Q104 (Rut 1:2, 1:9) y 2Q17 (Rut 3:14, 3:15) las de 4Q51 en 1 Samuel (1:24, 2:9, 2:10, 10:27, 17:4) y en 2 Samuel (5:6, 6:2, 8:4, 11:3, 13:21, 13:27, 24:16); no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
+     "licencia": "CC BY-NC 4.0. Solo se usan para calcular qué versículos conserva cada rollo y para verificar Ex 1:5, Dt 32:8, el orden de Jos 8:30-35 en 4Q47, que 4Q49 pasa de Jue 6:6 a 6:11, las lecturas de 4Q104 (Rut 1:2, 1:9) y 2Q17 (Rut 3:14, 3:15) las de 4Q51 en 1 Samuel (1:24, 2:9, 2:10, 10:27, 17:4) en 2 Samuel (5:6, 6:2, 8:4, 11:3, 13:21, 13:27, 24:16) y la de 4Q54 en 1 R 8:16; no se redistribuye su texto salvo las lecturas breves citadas en esas variantes",
      "url": "https://github.com/ETCBC/dss"},
     {"id": "leon-levy", "nombre": "The Leon Levy Dead Sea Scrolls Digital Library (Israel Antiquities Authority): fichas con período y edición oficial (DJD)",
      "licencia": "Solo enlace: las imágenes no se pueden reproducir sin permiso de la IAA (https://www.deadseascrolls.org.il/terms)",
      "url": "https://www.deadseascrolls.org.il/"},
-    {"id": "wikipedia", "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11, el 2026-11-12 (Jueces y Rut) y el 2026-11-13 (2 Samuel)",
+    {"id": "wikipedia", "nombre": "Wikipedia en inglés (fuente secundaria para fechas y contenido de los códices), consultada el 2026-11-11, el 2026-11-12 (Jueces y Rut) y el 2026-11-13 (2 Samuel y 1 Reyes)",
      "licencia": "CC BY-SA 4.0 (solo se toman datos, no texto)", "url": "https://en.wikipedia.org/"},
     {"id": "cudl", "nombre": "Cambridge Digital Library (Cambridge University Library): ficha del Papiro Nash, MS Or.233 (registro JSON)",
      "licencia": "Metadatos CC BY-NC 4.0 (solo se toman datos); imágenes: solo enlace", "url": "https://cudl.lib.cam.ac.uk/view/MS-OR-00233"},
@@ -659,38 +661,38 @@ FUENTES = [
 CODICES = [
     {"id": "leningrado", "nombre": "Códice de Leningrado (Firkovich B 19 A)", "tipo": "codice", "idioma": "hebreo",
      "fecha": "1008 (o 1009) d. C.", "fecha_certeza": "colofón",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22", "1S 1:1-1S 31:13", "2S 1:1-2S 24:25"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22", "1S 1:1-1S 31:13", "2S 1:1-2S 24:25", "1R 1:1-1R 22:53"],
      "institucion": "Biblioteca Nacional de Rusia, San Petersburgo",
      "url": "https://archive.org/details/Leningrad_Codex", "uso": "solo_enlace",
-     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar). Rut: entero; el UXLC tampoco marca con «X» ningún versículo de Rut (comprobado al generar). En este códice Rut va en los Ketuvim (tras Proverbios), no tras Jueces como en la RV (Wikipedia «Leningrad Codex»). 1 Samuel: entero; el UXLC no marca con «X» ningún versículo de 1 Samuel (comprobado al generar). 2 Samuel: entero; el UXLC tampoco marca con «X» ningún versículo de 2 Samuel (comprobado al generar).",
-     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12); Rut: https://tanach.us/Books/Ruth.xml (2026-11-12); 1 Samuel: https://tanach.us/Books/Samuel_1.xml (2026-11-12); 2 Samuel: https://tanach.us/Books/Samuel_2.xml (2026-11-13)"},
+     "nota": "Es la base del texto hebreo de esta app (WLC). Copiado en El Cairo según su colofón. Facsímil en archive.org (B/N, 988 págs.; en color: https://archive.org/details/Leningrad_Codex_Color_Images); licencia del facsímil no declarada: solo enlace. NO tiene Jos 21:36-37: el UXLC (tanach.us) los marca «X», «This verse does NOT occur in the Leningrad Codex» (comprobado al generar); el WLC los incluye solo para no romper la numeración y aquí van sin hebreo. Jueces: entero; el UXLC no marca con «X» ningún versículo de Jueces (comprobado al generar). Rut: entero; el UXLC tampoco marca con «X» ningún versículo de Rut (comprobado al generar). En este códice Rut va en los Ketuvim (tras Proverbios), no tras Jueces como en la RV (Wikipedia «Leningrad Codex»). 1 Samuel: entero; el UXLC no marca con «X» ningún versículo de 1 Samuel (comprobado al generar). 2 Samuel: entero; el UXLC tampoco marca con «X» ningún versículo de 2 Samuel (comprobado al generar). 1 Reyes: entero; el UXLC no marca con «X» ningún versículo de 1 Reyes (comprobado al generar).",
+     "fuente": "Wikipedia «Leningrad Codex» (fecha, signatura, institución y facsímiles), consultada el 2026-11-11; Jos 21:36-37: UXLC 2.x, https://tanach.us/Books/Joshua.xml (nota «X»); Jueces: https://tanach.us/Books/Judges.xml (2026-11-12); Rut: https://tanach.us/Books/Ruth.xml (2026-11-12); 1 Samuel: https://tanach.us/Books/Samuel_1.xml (2026-11-12); 2 Samuel: https://tanach.us/Books/Samuel_2.xml (2026-11-13); 1 Reyes: https://tanach.us/Books/Kings_1.xml (2026-11-13)"},
     {"id": "alepo", "nombre": "Códice de Alepo", "tipo": "codice", "idioma": "hebreo",
      "fecha": "c. 920 d. C. (Tiberíades)", "fecha_certeza": "estimación (un colofón posterior atribuye la vocalización a Aarón ben Moisés ben Aser)",
-     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22", "1S 1:1-1S 31:13", "2S 1:1-2S 24:25"],
+     "contiene": ["Dt 28:17-Dt 34:12", "Jos 1:1-Jos 21:35", "Jos 21:38-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22", "1S 1:1-1S 31:13", "2S 1:1-2S 24:25", "1R 1:1-1R 22:53"],
      "institucion": "Museo de Israel (Santuario del Libro), Jerusalén",
      "url": "https://www.aleppocodex.org/", "uso": "solo_enlace",
-     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12). Rut: la fuente da el orden de los Ketuvim de este códice (Crónicas, Salmos, Job, Proverbios, Rut, Cantar…) y su lista de lo perdido en esa parte empieza en Cantar 3:11; no nombra Rut (inferido: completo; 2026-11-12). 1 Samuel: la lista de lo perdido de la fuente (Pentateuco hasta Dt 28:17, 2 Re 14:21–18:13, partes de Jeremías, Amós–Miqueas, Sofonías–Zacarías, 2 Crónicas, Salmos, Cantar desde 3:11 y los Ketuvim finales) no lo nombra (inferido: completo; releída el 2026-11-12). 2 Samuel: esa misma lista tampoco lo nombra (inferido: completo; no se volvió a abrir la fuente para 2 S).",
-     "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11 y el 2026-11-12 (Jueces, Rut y 1 Samuel)"},
+     "nota": "NO conserva Génesis, Éxodo, Levítico ni Números: le falta todo el Pentateuco hasta Dt 28:17. De Deuteronomio, «contiene» va desde Dt 28:17 hasta el final (inferido: la fuente no lista otras lagunas en Dt; no comprobé si el 28:17 está entero). Solo se han recuperado aparte un fragmento con partes de Éx 8 (publicado por Yosef Ofer en 2016) y otra hoja de Éxodo aparecida en los años 80; no verifiqué sus versículos exactos y no van en «contiene». Josué: la lista de partes perdidas de la fuente no lo nombra (inferido: completo); Jos 21:36-37, que faltan en el Códice de Leningrado, no van en «contiene» porque no comprobé si este códice los tiene. Jueces: la lista de partes perdidas de la fuente tampoco lo nombra (inferido: completo; releída el 2026-11-12). Rut: la fuente da el orden de los Ketuvim de este códice (Crónicas, Salmos, Job, Proverbios, Rut, Cantar…) y su lista de lo perdido en esa parte empieza en Cantar 3:11; no nombra Rut (inferido: completo; 2026-11-12). 1 Samuel: la lista de lo perdido de la fuente (Pentateuco hasta Dt 28:17, 2 Re 14:21–18:13, partes de Jeremías, Amós–Miqueas, Sofonías–Zacarías, 2 Crónicas, Salmos, Cantar desde 3:11 y los Ketuvim finales) no lo nombra (inferido: completo; releída el 2026-11-12). 2 Samuel: esa misma lista tampoco lo nombra (inferido: completo; no se volvió a abrir la fuente para 2 S). 1 Reyes: la lista de lo perdido, releída el 2026-11-13, empieza «The current text is missing all of the Pentateuch to the Book of Deuteronomy 28.17; II Kings 14.21–18.13…»: nombra 2 Reyes, no 1 Reyes (inferido: completo).",
+     "fuente": "Wikipedia «Aleppo Codex», consultada el 2026-11-11, el 2026-11-12 (Jueces, Rut y 1 Samuel) y el 2026-11-13 (1 Reyes)"},
     {"id": "vaticano", "nombre": "Códice Vaticano (Vat. gr. 1209)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 300–350 d. C.", "fecha_certeza": "datación paleográfica",
      "contiene": ["Gn 46:28-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22"],
      "institucion": "Biblioteca Apostólica Vaticana",
      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209", "uso": "solo_enlace",
-     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y «2 Kings 2:5–7, 10–13» (es 2 Samuel, «2 Reinos» en la LXX: ver abajo) (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app. Rut: la fuente lo nombra al describir la página (44 líneas por columna en el Pentateuco, Josué, Jueces, Rut y 1 Reyes 1:1–19:11) y no lo cita entre lo perdido (inferido: completo; 2026-11-12). 1 Samuel (1 Reinos en la LXX): la fuente no lo cita entre lo perdido (solo Gn 1:1–46:28a y Sal 105:27–137:6b) (inferido: presente). Su texto es más breve que el TM: «contiene» de 1 Samuel es un cálculo, los versículos RV que tienen texto en la edición de Swete, que imprime este códice (inferido); los que no lo tienen —13:1, gran parte de 1 S 17–18, 20:16 y 23:12— se listan en «sin_texto» del griego (comprobado en los datos de Swete, 2026-11-12). 2 Samuel (2 Reinos en la LXX): Wikipedia da como perdidos por una hoja rota «2 Kings 2:5–7, 10–13»; la Introducción de Swete (cap. V) precisa «Through the tearing of fol. 178 2 Regn. ii. 5–7, 10–13, has also disappeared», es decir 2 S 2:5-7 y 2:10-13, que no van en «contiene». El resto de 2 Samuel: «contiene» es un cálculo, los versículos RV con texto en la edición de Swete menos esos siete (inferido: Swete imprime este códice).",
+     "nota": "Se perdieron las hojas con Gn 1:1–46:28a; las que hay ahora son una reposición del s. XV (no son testigo antiguo). La fuente solo menciona como perdidos, en el Antiguo Testamento, Gn 1:1–46:28a, Sal 105:27–137:6b y «2 Kings 2:5–7, 10–13» (es 2 Samuel, «2 Reinos» en la LXX: ver abajo) (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; «contiene» de Josué va con la numeración RV, aunque la LXX ordena y numera parte del libro de otra forma, p. ej. el altar del Ebal tras Jos 9:2). Gn 46:28 se conserva solo en parte (desde 46:28b). En Ex 35–40 la Septuaginta ordena y numera el texto de otra forma. Jueces: la fuente no lo cita entre lo perdido (inferido: presente), dice que en Jueces su texto difiere mucho del de la mayoría de los manuscritos y coincide con la Vetus Latina, la versión sahídica y Cirilo de Alejandría, y da su lectura de Jue 18:30, «υἱὸς Μανασση» (según Rahlfs). Es la forma «B» de Jueces: la que imprime Swete y la que muestra esta app. Rut: la fuente lo nombra al describir la página (44 líneas por columna en el Pentateuco, Josué, Jueces, Rut y 1 Reyes 1:1–19:11) y no lo cita entre lo perdido (inferido: completo; 2026-11-12). 1 Samuel (1 Reinos en la LXX): la fuente no lo cita entre lo perdido (solo Gn 1:1–46:28a y Sal 105:27–137:6b) (inferido: presente). Su texto es más breve que el TM: «contiene» de 1 Samuel es un cálculo, los versículos RV que tienen texto en la edición de Swete, que imprime este códice (inferido); los que no lo tienen —13:1, gran parte de 1 S 17–18, 20:16 y 23:12— se listan en «sin_texto» del griego (comprobado en los datos de Swete, 2026-11-12). 2 Samuel (2 Reinos en la LXX): Wikipedia da como perdidos por una hoja rota «2 Kings 2:5–7, 10–13»; la Introducción de Swete (cap. V) precisa «Through the tearing of fol. 178 2 Regn. ii. 5–7, 10–13, has also disappeared», es decir 2 S 2:5-7 y 2:10-13, que no van en «contiene». El resto de 2 Samuel: «contiene» es un cálculo, los versículos RV con texto en la edición de Swete menos esos siete (inferido: Swete imprime este códice). 1 Reyes (3 Reinos en la LXX): ni Wikipedia ni la Introducción de Swete (cap. V: «Every book of the Greek O. T. is included, except 1 -- 4 Maccabees»; en Reinos solo da perdidos 2 Regn. ii. 5–7, 10–13) citan nada perdido (inferido: presente). «contiene» es un cálculo: los versículos RV con texto en la edición de Swete (inferido: Swete imprime este códice); los que la LXX no tiene en su sitio van en «sin_texto» del griego y los bloques que añade, en «bloques_sin_paralelo».",
      "fuente": "Wikipedia «Codex Vaticanus», consultada el 2026-11-11 y el 2026-11-12 (Jueces, Rut y 1 Samuel); 1 Samuel: cálculo sobre la edición de Swete (LXX-Swete-1930); 2 Samuel: la misma página (2026-11-13), H. B. Swete, «An Introduction to the Old Testament in Greek», cap. V (texto en https://biblehub.com/library/swete/an_introduction_to_the_old_testament_in_greek_additional_notes/chapter_v_manuscripts_of_the.htm, consultado el 2026-11-13) y cálculo sobre la edición de Swete"},
     {"id": "sinaitico", "nombre": "Códice Sinaítico", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 325–360 d. C.", "fecha_certeza": "datación paleográfica",
      "contiene": ["Gn 23:19-Gn 24:46", "Lv 20:27-Lv 22:30", "Jos 1:10", "Jue 5:7-Jue 11:2"],
      "institucion": "British Library, Biblioteca Universitaria de Leipzig, Monasterio de Santa Catalina y Biblioteca Nacional de Rusia (repartido)",
      "url": "https://codexsinaiticus.org/", "uso": "solo_enlace",
-     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden). Rut: la lista de contenidos de Wikipedia no lo nombra (releída el 2026-11-12): no va en «contiene»; no comprobé si se conserva algo. 1 Samuel: la misma lista tampoco lo nombra (pasa de Jueces a 1 Crónicas 9:27; 2026-11-12): no va en «contiene». 2 Samuel: tampoco lo nombra, ni la lista del contenido que da la Introducción de Swete (cap. V; 2026-11-13): no va en «contiene».",
+     "nota": "De Génesis solo quedan fragmentos de Gn 23:19–24:46; NO contiene Éxodo; de Levítico conserva Lv 20:27–22:30 (lista de contenidos de Wikipedia, según Würthwein y Swete). De Números, Deuteronomio y Josué la misma lista dice solo «fragmentos», sin versículos: no se añaden a «contiene», salvo Jos 1:10, el texto del fragmento que halló Nikolas Sarris en 2009 en el monasterio de Santa Catalina (según Wikipedia, que cita a The Independent del 2 de septiembre de 2009; no comprobado en la fuente original). No comprobé el contenido de las hojas del Pentateuco halladas en 1975 en el Sinaí. No pude abrir codexsinaiticus.org (no respondió) ni confirmar en qué institución están esas hojas. Jueces: la lista de contenidos de Wikipedia da «5:7 - 11:2 + fragments»: en «contiene» va Jue 5:7–11:2 (no comprobado en las imágenes; los «fragmentos», sin versículos, no se añaden). Rut: la lista de contenidos de Wikipedia no lo nombra (releída el 2026-11-12): no va en «contiene»; no comprobé si se conserva algo. 1 Samuel: la misma lista tampoco lo nombra (pasa de Jueces a 1 Crónicas 9:27; 2026-11-12): no va en «contiene». 2 Samuel: tampoco lo nombra, ni la lista del contenido que da la Introducción de Swete (cap. V; 2026-11-13): no va en «contiene». 1 Reyes: tampoco lo nombran ni Wikipedia ni la Introducción de Swete (releída el 2026-11-13): no va en «contiene».",
      "fuente": "Wikipedia «Codex Sinaiticus», consultada el 2026-11-11 y el 2026-11-12 (Jueces, Rut y 1 Samuel)"},
     {"id": "alejandrino", "nombre": "Códice Alejandrino (Royal MS 1 D V–VIII)", "tipo": "codice", "idioma": "griego (Septuaginta)",
      "fecha": "c. 400–440 d. C.", "fecha_certeza": "datación paleográfica",
-     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22", "1S 1:1-1S 12:16", "1S 14:10-1S 31:13", "2S 1:1-2S 24:25"],
+     "contiene": ["Gn 1:1-Gn 50:26", "Ex 1:1-Ex 40:38", "Lv 1:1-Lv 27:34", "Nm 1:1-Nm 36:13", "Dt 1:1-Dt 34:12", "Jos 1:1-Jos 24:33", "Jue 1:1-Jue 21:25", "Rut 1:1-Rut 4:22", "1S 1:1-1S 12:16", "1S 14:10-1S 31:13", "2S 1:1-2S 24:25", "1R 1:1-1R 22:53"],
      "institucion": "British Library, Londres",
      "url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_V", "uso": "solo_enlace",
-     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app. Rut: la fuente cita el facsímil de Kenyon (1915) «Vol. 1: Genesis – Ruth» y no da daños en Rut (inferido: completo; 2026-11-12). 1 Samuel: la fuente da como perdida una hoja con 1 S 12:17–14:9 (según Würthwein) y cita el facsímil de Kenyon (1930) «Vol. 2: 1 Samuel – 2 Chronicles»; «contiene» es el resto del libro (inferido: no cita más daños; 2026-11-12). Su texto de 1 Samuel no está en esta app (Swete imprime el Vaticano). 2 Samuel: la Introducción de Swete (cap. V) solo da en 1-2 Reinos la laguna «1 Regn. xii. 18—xiv. 9 (leaf missing)», ninguna en 2 Reinos, y Wikipedia tampoco cita daños (inferido: completo; 2026-11-13). Su texto de 2 Samuel tampoco está en esta app.",
+     "nota": "El primer volumen contiene de Génesis a 2 Crónicas (inferido: Éxodo, Levítico, Números, Deuteronomio y Josué presentes; la fuente no los nombra ni cita daños en Números, Deuteronomio ni Josué, y da lecturas suyas de Jos 10:42 y 11:1). Dañados Gn 14:14–17, 15:1–5, 15:16–19 y 16:6–9; defectos por hojas rotas en Gn 1:20–25, 1:29–2:3 y Lv 8:6, 8:7 y 8:16 (según Swete). El enlace de la British Library responde, pero no comprobé que muestre las imágenes del volumen I. Jueces: inferido presente (va en el primer volumen; la fuente da su lectura de Jue 18:30, «υιος Μωυση», «hijo de Moisés», según Rahlfs). Es la forma «A» de Jueces, que la digitalización de Swete no trae: su texto no está en esta app. Rut: la fuente cita el facsímil de Kenyon (1915) «Vol. 1: Genesis – Ruth» y no da daños en Rut (inferido: completo; 2026-11-12). 1 Samuel: la fuente da como perdida una hoja con 1 S 12:17–14:9 (según Würthwein) y cita el facsímil de Kenyon (1930) «Vol. 2: 1 Samuel – 2 Chronicles»; «contiene» es el resto del libro (inferido: no cita más daños; 2026-11-12). Su texto de 1 Samuel no está en esta app (Swete imprime el Vaticano). 2 Samuel: la Introducción de Swete (cap. V) solo da en 1-2 Reinos la laguna «1 Regn. xii. 18—xiv. 9 (leaf missing)», ninguna en 2 Reinos, y Wikipedia tampoco cita daños (inferido: completo; 2026-11-13). Su texto de 2 Samuel tampoco está en esta app. 1 Reyes (3 Reinos): va en el primer volumen («vol. i. Genesis -- 2 Chronicles», Introducción de Swete, cap. V), que en Reinos solo da la laguna de 1 Regn. xii. 18 – xiv. 9 (inferido: completo; 2026-11-13). Su texto tampoco está en esta app.",
      "fuente": "Wikipedia «Codex Alexandrinus», consultada el 2026-11-11 y el 2026-11-12 (Jueces, Rut y 1 Samuel); 2 Samuel: H. B. Swete, «An Introduction to the Old Testament in Greek», cap. V (biblehub.com, 2026-11-13)"},
     {"id": "samaritano-cul-add1846", "nombre": "Pentateuco Samaritano, Cambridge University Library Add. 1846", "tipo": "pentateuco_samaritano",
      "idioma": "hebreo (escritura samaritana)",
@@ -828,6 +830,11 @@ ROLLOS = [
     (["4Q51"], "4QSam-a", "4Q51-2", "Herodian", "Cross, Parry y Saley 2005, DJD 17: 1-216 y 217", "cuadrada"),
     (["4Q52"], "4QSam-b", "4Q52-1", "Early Hellenistic", "Cross, Parry y Saley 2002, DJD 17: 219-246", "cuadrada"),
     (["4Q53"], "4QSam-c", "4Q53-1", "Hasmonean", "Ulrich 2002, DJD 17: 247-267", "cuadrada"),
+    # 1 Reyes: todos los que hay en los datos de Abegg (fichas de la Leon Levy descargadas con un script el 2026-11-13: «name», «copy»,
+    # «period», «script_type», «material», «official_publications»). Ninguna ficha da letra de copia.
+    (["4Q54"], "4QKgs", "4Q54-1", "Herodian", "Trebolle Barrera 1995, DJD 14: 171-183", "cuadrada"),
+    (["5Q2"], "5QKgs", "5Q2-1", "Hasmonean", "Milik 1962, DJD 3: 171-172", "cuadrada"),
+    (["6Q4"], "6QpapKgs", "6Q4-1", "Hasmonean", "Baillet 1962, DJD 3: 107-112", "cuadrada (papiro)"),
 ]
 # Rollos sin ficha propia en la Leon Levy o con datos especiales (idioma, contenido no calculable, notas).
 ROLLO_EXTRA = {
@@ -860,6 +867,9 @@ ROLLO_EXTRA = {
                      "(«4Q Multiple Compositions», período herodiano, la misma edición DJD 17); la fecha es la de 4Q51-1. En los datos de Abegg tiene también "
                      "texto de 2 Samuel (letras conservadas en los 24 capítulos; ver «contiene»)."},
     "4Q53": {"nota": " En los datos de Abegg tiene también texto de 2 Samuel (2 S 14–15; ver «contiene»)."},
+    "4Q54": {"nota": " La ficha de la Leon Levy («4Q Kings», pergamino) no da letra de copia («copy» vacío): sigla sin letra."},
+    "5Q2": {"nota": " La ficha de la Leon Levy («5Q Kings», pergamino) no da letra de copia («copy» vacío): sigla sin letra."},
+    "6Q4": {"nota": " La ficha de la Leon Levy («6Q papKings») no da letra de copia («copy» vacío): sigla sin letra. Es un papiro (campo «material» de la ficha)."},
     "4Q52": {"nota": " En 1 S 14:41 conserva solo «או» y una «ב» («o en…»), letras de la forma larga del versículo que tiene el griego (ver la variante de 1 S 14:41)."},
     "4Q41": {"nota": " Abegg le asigna además Éx 20:11 (dentro del Decálogo), que también va en «contiene»."},
     "6Q3": {"nota": " La Leon Levy lo titula «6Q papDeuteronomy(?)» (tipo «Biblical Compositions?»): la identificación es dudosa en la propia ficha. Papiro."},
@@ -923,6 +933,14 @@ ANCLAS_GRIEGO = {
     ("2S", 19, 1): ("aviso á Joab", "ἀνηγγέλη τῷ Ἰωὰβ"), ("2S", 19, 43): ("diez partes", "Δέκα χεῖρές"),
     ("2S", 20, 25): ("Ira Jaireo", "Εἴρας ὁ Ἰαρεὶν"), ("2S", 23, 1): ("postreras palabras de David", "οἱ λόγοι Δαυεὶδ οἱ ἔσχατοι"),
     ("2S", 24, 13): ("siete años de hambre", "τρία ἔτη λιμὸς"),
+    # 1 Reyes (Swete = 3 Reinos; numera 4–6 y 10 a su manera, invierte 20 y 21 y numera 22 como el hebreo: ver _griego_1r)
+    ("1R", 4, 17): ("Josaphat", "Ἰωσαφὰτ"), ("1R", 4, 18): ("Ela", "Ἠλὰ"), ("1R", 4, 19): ("Sehón", "Σηὼν"),
+    ("1R", 4, 27): ("mantenían", "ἐχορήγουν"), ("1R", 4, 28): ("cebada", "κριθὰς"), ("1R", 4, 29): ("arena", "ἄμμος"),
+    ("1R", 4, 32): ("tres mil parábolas", "τρισχιλίας παραβολάς"), ("1R", 5, 1): ("HIRAM", "Χειρὰμ"), ("1R", 5, 18): ("aparejaron", "ἡτοίμασαν"),
+    ("1R", 6, 1): ("cuatrocientos ochenta", "τετρακοσιοστῷ"), ("1R", 6, 36): ("atrio", "αὐλὴν"), ("1R", 7, 1): ("trece años", "τρισκαίδεκα"),
+    ("1R", 7, 13): ("Hiram", "Χειρὰμ"), ("1R", 10, 26): ("doce mil", "δώδεκα χιλιάδες"), ("1R", 11, 7): ("Chêmos", "Χαμὼς"),
+    ("1R", 20, 1): ("Ben-adad", "υἱὸς Ἁδὲρ"), ("1R", 21, 1): ("Naboth", "Ναβουθαὶ"), ("1R", 22, 51): ("durmió Josaphat", "ἐκοιμήθη"),
+    ("1R", 22, 53): ("Baal", "Βααλεὶμ"),
 }
 
 # Anclas de contenido del hebreo (consonantes): RV -> (palabra en la RV, palabra en el hebreo asignado)
@@ -991,6 +1009,16 @@ ANCLAS_HEBREO = {
     ("2S", 20, 25): ("Jaireo", "היארי"),        # TM 20:25-26
     ("2S", 23, 1): ("David", "דוד"),
     ("2S", 24, 13): ("siete años", "שבע"),
+    ("1R", 4, 21): ("Filisteos", "פלשתים"),     # TM 5:1
+    ("1R", 4, 34): ("sabiduría", "חכמת"),       # TM 5:14
+    ("1R", 5, 1): ("HIRAM", "חירם"),            # TM 5:15
+    ("1R", 5, 18): ("Hiram", "חירום"),          # TM 5:32
+    ("1R", 6, 1): ("ochenta", "בשמונים"),
+    ("1R", 18, 34): ("cántaros", "כדים"),
+    ("1R", 22, 43): ("Asa", "אסא"),
+    ("1R", 22, 44): ("altos", "הבמות"),
+    ("1R", 22, 52): ("Ochôzías", "אחזיהו"),
+    ("1R", 22, 53): ("Baal", "הבעל"),           # TM 22:53-54
 }
 
 # RV -> (Swete, palabra que debe estar en el griego, palabra que debe estar en la RV)
@@ -1131,6 +1159,159 @@ KQ_SOLO_OSHB_2S = {("2S", 20, 8): 1}                # OSHB marca ketiv «ועל�
 KQ_DISTINTOS_2S = {("2S", 13, 37): ("עמיחור", "עמיחוד")}   # el UXLC lleva la nota «t» (transcripción dudosa)
 
 
+# ------------------------------------------------------------------ 1 Reyes
+# Hebreo: el TVTMS (columna «Hebrew») da RV 4:21-34 = TM 5:1-14 y RV 5:1-18 = TM 5:15-32 (la RV1909 numera 4–5 como la KJV).
+# En 22 la RV1909 numera como el hebreo: parte en dos (43 y 44) el 22:43 de la KJV y reúne en su 22:53 los versículos 22:53-54
+# del TM (22:52-53 de la KJV). Las filas del TVTMS para 22:43-53 son de la KJV y aquí se sustituyen (único punto: DIRECTO_1R_22).
+# Comprobado por contenido (anclas hebreas y griegas de 22:43, 22:44, 22:52 y 22:53).
+DIRECTO_1R_22 = {("1R", 22, v): [("1R", 22, v)] for v in range(43, 53)}
+DIRECTO_1R_22[("1R", 22, 53)] = [("1R", 22, 53), ("1R", 22, 54)]
+NOTA_1R_22 = ("La RV1909 (eBible) numera 1 R 22:43-53 como el hebreo, no como la KJV: parte en dos (43 y 44) el 22:43 de la KJV y reúne "
+              "en su 22:53 los versículos 22:53-54 del TM y de Swete (22:52-53 de la KJV). Correspondencia propia sobre el TVTMS, comprobada por contenido.")
+NOMBRES_1R_HEBREO = [("Abisag", ("אבישג",)), ("Adoniram", ("אדנירם",)), ("Naboth", ("נבות",)), ("Ochôzías", ("אחזיהו",)),
+                     ("Zimri", ("זמרי",)), ("Hazael", ("חזאל",)), ("Rezón", ("רזון",)), ("Benaía", ("בניהו",)),
+                     ("Semei", ("שמעי",)), ("Abiathar", ("אביתר",)), ("Josaphat", ("יהושפט",))]
+NOMBRES_1R_GRIEGO = [("Abisag", "αβεισα"), ("Hazael", "αζαηλ"), ("Abiathar", "αβιαθαρ")]
+RATIO_1R = {"hebreo": (0.75, 3.6), "griego": (0.2, 7.5)}       # letras RV / letras del original (extremos en el resumen)
+
+
+# Griego (3 Reinos de Swete). La digitalización de Swete numera 1 R a su manera en 4–6 y 10 (sus «5:14a-b», «6:1a-d», «10:22a-c»
+# y «10:26a» son versículos propios: 4:31-33, 6:2-5, 10:23-25 y 10:30), y ninguna columna griega del TVTMS cumple los TEST de esos
+# bloques con esta edición (se comprueba al generar). Tabla propia RV -> Swete por contenido, guiada por la columna Greek* del TVTMS;
+# en 7, 11:5-8 y 20–21 coincide con la que da el TVTMS (se comprueba). Regla, la de «1 Reyes: decisiones» en datos/LEEME.md:
+# los bloques que la LXX añade con letra (2:35a-o, 2:46a-l, 5:14a-b, 6:1a-d, 6:36a, 8:53a, 9:9a, 10:22a-c, 10:26a, 12:24a-z,
+# 16:28a-h) no se emparejan con ningún versículo RV aunque repitan su contenido: van en «bloques_sin_paralelo»; lo que la LXX
+# solo cambia de orden (4:17-19, 4:27-34, 6, 7, 11:4-8, capítulos 20 y 21) sí se empareja. [] = sin texto griego (SIN_GRIEGO_1R).
+def _griego_1r():
+    m = {}
+
+    def p(c, v, *sw):
+        m[("1R", c, v)] = [("1R",) + x for x in sw]
+    p(4, 17, (4, 19)); p(4, 18, (4, 17)); p(4, 19, (4, 18)); p(4, 27, (4, 20)); p(4, 28, (4, 21))
+    for v in range(29, 35):
+        p(4, v, (4, v - 4))
+    p(5, 18, (5, 17))
+    # 7: la del TVTMS (columna Greek*), que la digitalización de Swete cumple (se comprueba que coinciden)
+    p(7, 1, (7, 38), (7, 50))
+    for v in range(2, 13):
+        p(7, v, (7, v + 37))
+    for v in range(13, 19):
+        p(7, v, (7, v - 12))
+    p(7, 19, (7, 8)); p(7, 20, (7, 9)); p(7, 21, (7, 7)); p(7, 23, (7, 10)); p(7, 24, (7, 11)); p(7, 25, (7, 13)); p(7, 26, (7, 12))
+    for v in range(27, 31):
+        p(7, v, (7, v - 13))
+    for v in range(32, 38):
+        p(7, v, (7, v - 14))
+    for v in range(38, 46):
+        p(7, v, (7, v - 14))
+    p(7, 46, (7, 33)); p(7, 47, (7, 32))
+    for v in range(48, 52):
+        p(7, v, (7, v - 14))
+    p(6, 2, (6, 6)); p(6, 3, (6, 7), (6, 8))
+    for v in range(4, 11):
+        p(6, v, (6, v + 5))
+    p(6, 15, (6, 16)); p(6, 16, (6, 17)); p(6, 17, (6, 18)); p(6, 20, (6, 19), (6, 20))
+    for v in range(22, 31):
+        p(6, v, (6, v - 1))
+    p(6, 31, (6, 30), (6, 31)); p(6, 34, (6, 32)); p(6, 35, (6, 33)); p(6, 36, (6, 34))
+    for v in range(23, 27):
+        p(10, v, (10, v + 3))
+    for v in range(27, 30):
+        p(10, v, (10, v + 4))
+    p(11, 4, (11, 3), (11, 4)); p(11, 5, (11, 6)); p(11, 6, (11, 8)); p(11, 7, (11, 5)); p(11, 8, (11, 7))
+    for v in range(1, 44):
+        p(20, v, (21, v))
+    for v in range(1, 30):
+        p(21, v, (20, v))
+    for k, ds in DIRECTO_1R_22.items():
+        m[k] = ds
+    for k in SIN_GRIEGO_1R:
+        m[k] = []
+    return m
+
+
+_B246 = "el bloque que Swete añade tras 2:46 (2:46a-l en la numeración de Brenton; en Swete, tras la marca «[1]» de su 2:46)"
+_B235 = "el bloque que Swete añade tras 2:35 (2:35a-o en Brenton; en Swete, tras la marca «[1]» de su 2:35)"
+_B1224 = "el bloque que Swete añade tras 12:24 (12:24a-z en Brenton; en Swete, tras la marca «[1]» de su 12:24)"
+_SIN_SITIO = "La LXX (edición de Swete) no tiene este versículo en su sitio"
+SIN_GRIEGO_1R = {
+    ("1R", 3, 1): f"{_SIN_SITIO} (la digitalización trae la marca 3:1 vacía). Una forma de su texto está en dos bloques añadidos: en {_B235}, marca «[3]», y en el que Swete numera 4:31 (5:14a en Brenton). Ver «bloques_sin_paralelo».",
+    ("1R", 4, 20): f"{_SIN_SITIO}. Una forma de su texto está en {_B246}, marca «[1]». Ver «bloques_sin_paralelo».",
+    ("1R", 4, 21): f"{_SIN_SITIO}. Una forma de su texto está en {_B246}, marca «[11]», y en el versículo que Swete numera 10:30 (10:26a en Brenton). Ver «bloques_sin_paralelo».",
+    ("1R", 4, 25): f"{_SIN_SITIO}. Una forma de su texto está en {_B246}, marca «[7]». Ver «bloques_sin_paralelo».",
+    ("1R", 4, 26): f"{_SIN_SITIO}. Una forma de su texto está en {_B246}, marca «[9]». Ver «bloques_sin_paralelo».",
+    ("1R", 5, 17): f"{_SIN_SITIO}: lo pone tras 6:1, en el versículo que Swete numera 6:2 (6:1a en Brenton). Ver «bloques_sin_paralelo».",
+    **{("1R", 6, v): "La LXX (edición de Swete) no tiene 1 R 6:11-14 (la palabra de Jehová a Salomón mientras edificaba la casa)." for v in range(11, 15)},
+    ("1R", 6, 18): "La LXX (edición de Swete) no tiene este versículo (el revestimiento de cedro con calabazas y flores).",
+    ("1R", 6, 19): "En Swete el contenido de este versículo (el lugar del arca, «δοῦναι ἐκεῖ τὴν κιβωτὸν διαθήκης Κυρίου») va al final de su 6:18, que se muestra con RV 6:17.",
+    ("1R", 6, 21): "La LXX (edición de Swete) no tiene este versículo (las cadenas de oro ante el oráculo); su 6:20-21 corresponde a RV 6:20 y 6:22.",
+    ("1R", 6, 32): "La LXX (edición de Swete) no tiene este versículo (las puertas de olivo talladas); sus puertas de 6:32-33 son las de RV 6:34-35.",
+    ("1R", 6, 33): "La LXX (edición de Swete) no tiene este versículo (los postes de la puerta del templo).",
+    ("1R", 6, 37): f"{_SIN_SITIO}: lo pone tras 6:1, en el versículo que Swete numera 6:4 (6:1c en Brenton). Ver «bloques_sin_paralelo».",
+    ("1R", 6, 38): f"{_SIN_SITIO}: lo pone tras 6:1, en el versículo que Swete numera 6:5 (6:1d en Brenton). Ver «bloques_sin_paralelo».",
+    ("1R", 7, 22): "La LXX (edición de Swete) no tiene este versículo: el TVTMS lo da «Absent» en la columna griega y los 50 versículos de Swete 7 corresponden a otros de la RV.",
+    ("1R", 7, 31): "La LXX (edición de Swete) no tiene este versículo: el TVTMS lo da «Absent» en la columna griega y los 50 versículos de Swete 7 corresponden a otros de la RV.",
+    ("1R", 8, 12): f"{_SIN_SITIO} (marca vacía en la digitalización). Las palabras de Salomón sobre la casa están, en otra forma, en el bloque que Swete añade tras 8:53 (8:53a en Brenton; en Swete, tras la marca «[1]»), que cita el «libro del cántico». Ver «bloques_sin_paralelo».",
+    ("1R", 8, 13): f"{_SIN_SITIO} (marca vacía en la digitalización). Ver la nota de 8:12 y el bloque tras 8:53 en «bloques_sin_paralelo».",
+    ("1R", 9, 15): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está en el versículo que Swete numera 10:23 (10:22a en Brenton; el TVTMS lo hace corresponder a «1Ki.10:22.1»). Ver «bloques_sin_paralelo».",
+    ("1R", 9, 16): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está en los versículos que Swete numera 4:32-33 (5:14b en Brenton). Ver «bloques_sin_paralelo».",
+    **{("1R", 9, v): f"{_SIN_SITIO} (marca vacía en la digitalización). Las ciudades que edificó Salomón están, en otra forma, en el versículo que Swete numera 10:23 (10:22a en Brenton; el TVTMS da «Absent [=1Ki.10:22.1]») y en {_B235}, marca «[9]». Ver «bloques_sin_paralelo»." for v in (17, 18, 19)},
+    ("1R", 9, 20): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está en el versículo que Swete numera 10:24 (10:22b en Brenton; el TVTMS lo hace corresponder a «1Ki.10:22.2»). Ver «bloques_sin_paralelo».",
+    ("1R", 9, 21): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está en el versículo que Swete numera 10:24 (10:22b en Brenton). Ver «bloques_sin_paralelo».",
+    ("1R", 9, 22): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está en el versículo que Swete numera 10:25 (10:22c en Brenton; el TVTMS lo hace corresponder a «1Ki.10:22.3»). Ver «bloques_sin_paralelo».",
+    ("1R", 9, 23): f"{_SIN_SITIO} (marca vacía en la digitalización). Los jefes de las obras están, con otra cifra, en {_B235}, marca «[8]». Ver «bloques_sin_paralelo».",
+    ("1R", 9, 24): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está al final de Swete 9:9 (9:9a en Brenton) y en {_B235}, marca «[6]». Ver «bloques_sin_paralelo».",
+    ("1R", 9, 25): f"{_SIN_SITIO} (marca vacía en la digitalización). Una forma de su texto está en {_B235}, marca «[7]». Ver «bloques_sin_paralelo».",
+    ("1R", 11, 3): "En Swete «setecientas princesas y trescientas concubinas» van dentro de su 11:1 (que se muestra con RV 11:1), y lo demás del versículo («sus mujeres torcieron su corazón») en su 11:4, que se muestra con RV 11:4.",
+    **{("1R", 11, v): "En Swete el contenido de 11:23-25 (Rezón, aquí «Ἑσρὼμ υἱὸν Ἐλιαδᾶε», que toma Damasco y es adversario de Israel) va dentro de su 11:14, que se muestra con RV 11:14 (el TVTMS da «Absent [=1Ki.11:14…]»)." for v in (23, 24, 25)},
+    ("1R", 12, 2): "En Swete el contenido de este versículo (Jeroboam en Egipto oye la noticia) va al final de su 11:43, que se muestra con RV 11:43 (el TVTMS da «Absent [=1Ki.11:43]»).",
+    **{("1R", 14, v): f"{_SIN_SITIO} (marca vacía en la digitalización): Swete no tiene 14:1-20 en su sitio. La historia del hijo enfermo de Jeroboam y del profeta Ahías está, en otra forma, en {_B1224}, marcas «[7]» a «[14]». Ver «bloques_sin_paralelo»." for v in range(1, 21)},
+}
+# Versículos RV cuyo versículo de Swete está vacío en la digitalización (el bucle general les da el motivo); aquí, lo que se añade.
+EXTRA_SIN_1R = {
+    **{("1R", 22, v): " En Swete, una forma de 22:47-50 está en el bloque que añade tras 16:28 (16:28a-h en Brenton; marcas «[4]» a «[7]»; el TVTMS da «Absent [=1Ki.16:28.4-7]»). Ver «bloques_sin_paralelo»." for v in range(47, 51)},
+    ("1R", 11, 39): "", ("1R", 12, 17): "", ("1R", 13, 27): "", ("1R", 15, 6): "", ("1R", 15, 32): "", ("1R", 21, 11): "", ("1R", 21, 12): "",
+}
+# Bloques de Swete sin paralelo en el TM ni en la RV1909. (verso de Swete, corte o None, versos enteros, ref RV tras la que va, letras de Brenton, nota)
+# corte: «[1]» (marcas de subversículo de la digitalización) o la frase griega donde empieza el bloque; None = versículos enteros de Swete.
+BLOQUES_1R = [
+    ((2, 35), "[1]", None, (2, 35), "2:35a-o",
+     "Catorce frases (marcas [1]-[9] y [11]-[15]: la digitalización no tiene «[10]», como Brenton no tiene «2:35j»): la sabiduría de Salomón, la hija de Faraón, "
+     "los trabajadores, el mar de bronce, los holocaustos, los jefes de las obras y las ciudades que edificó (en el TM, en 3:1 y en 4–9), y la orden de David sobre Semei (en el TM, 2:8-9)."),
+    ((2, 46), "[1]", None, (2, 46), "2:46a-l",
+     "Once frases (marcas [1]-[9], [11] y [12]): la sabiduría y la prosperidad de Salomón, su comida diaria, sus príncipes y sus caballos (en el TM, sobre todo en 1 R 4)."),
+    (None, None, [(4, 31), (4, 32), (4, 33)], (4, 34), "5:14a-b",
+     "Swete los numera 4:31-33: Salomón toma por mujer a la hija de Faraón; Faraón toma Gezer y se la da a su hija; Salomón edifica Gezer (en el TM, 3:1 y 9:16-17)."),
+    (None, None, [(6, 2), (6, 3), (6, 4), (6, 5)], (6, 1), "6:1a-d",
+     "Swete los numera 6:2-5: las piedras para los cimientos, los canteros de Salomón y de Hiram, y el cuarto y el undécimo año de la obra (en el TM, 5:31-32 —RV 5:17-18— y 6:37-38)."),
+    ((6, 34), "καὶ ᾠκοδόμησε καταπέτασμα", None, (6, 36), "6:36a",
+     "Final de Swete 6:34: el velo del atrio del pórtico de la casa, sin paralelo en el TM."),
+    ((8, 53), "[1]", None, (8, 53), "8:53a",
+     "Las palabras de Salomón al terminar la casa («el Señor dio a conocer el sol en el cielo…»), que remiten al «libro del cántico»; en el TM, una forma distinta en 8:12-13."),
+    ((9, 9), "Τότε ἀνήγαγεν", None, (9, 9), "9:9a",
+     "Final de Swete 9:9: Salomón sube a la hija de Faraón de la ciudad de David a la casa que le edificó (en el TM, 9:24)."),
+    (None, None, [(10, 23), (10, 24), (10, 25)], (10, 22), "10:22a-c",
+     "Swete los numera 10:23-25: la leva de Salomón, las ciudades que edificó y los pueblos sometidos a tributo (en el TM, 9:15-22)."),
+    (None, None, [(10, 30)], (10, 26), "10:26a",
+     "Swete lo numera 10:30: Salomón señorea sobre todos los reyes desde el río hasta la tierra de los filisteos y el término de Egipto (en el TM, 4:21 RV = 5:1 TM)."),
+    ((12, 24), "[1]", None, (12, 24), "12:24a-z",
+     "Otro relato de la subida de Jeroboam (marcas [1]-[9], [11]-[21] y [24]-[26]; Brenton no tiene las letras j, v ni w): su madre Sarisa, su huida a Egipto ante «Susakim», "
+     "la enfermedad y muerte de su hijo con el profeta Ahías, el manto en doce trozos de Semeías y la asamblea de Siquem (en el TM, en otra forma, 11:26-12:24 y 14:1-20)."),
+    ((16, 28), "[1]", None, (16, 28), "16:28a-h",
+     "El reinado de Josafat de Judá (marcas [1]-[8]), con otras cifras que 22:41-50 (el año once de Omri, su madre «Γαβουζά»)."),
+]
+# Anclas de los bloques: palabra griega que debe estar en el texto del bloque y palabra inglesa en el lugar de Brenton (eng-Brenton_vpl).
+ANCLAS_BLOQUES_1R = {"2:35a-o": ("Σεμεεὶ υἱὸς Γηρά", "2:35l", "Semei"), "2:46a-l": ("Θερμαὶ", "2:46d", "Thermæ"),
+                     "5:14a-b": ("Γάζερ", "5:14b", "Gazer"), "6:1a-d": ("Χειράμ", "6:1b", "Chiram"), "6:36a": ("καταπέτασμα", "6:36a", "curtain"),
+                     "8:53a": ("ᾠδῆς", "8:53a", "song"), "9:9a": ("θυγατέρα Φαραὼ", "9:9a", "Pharao"), "10:22a-c": ("Χετταίου", "10:22b", "Chettite"),
+                     "10:26a": ("ἀλλοφύλων", "10:26a", "Philistines"), "12:24a-z": ("Σουσακεὶμ", "12:24c", "Susakim"), "16:28a-h": ("Γαβουζά", "16:28a", "Josaphat")}
+KQ_UNIDOS_1R = {("1R", 17, 15)}
+KQ_SOLO_UXLC_1R = set()
+KQ_SOLO_OSHB_1R = {}
+KQ_DISTINTOS_1R = {}
+N_KQ_1R = 45
+
+
 VIDEOS = [
     ("Gn", "HQMKA6w5ZZM", "Resumen del libro de Génesis: un panorama completo animado (parte 1)", "Gn 1:1-Gn 11:32", "inferido"),
     ("Gn", "MC8BqGu9B8A", "Resumen del libro de Génesis: un panorama completo animado (parte 2)", "Gn 12:1-Gn 50:26", "inferido"),
@@ -1150,6 +1331,8 @@ VIDEOS = [
     ("Rut", "f984fG4-xlE", "Resumen del libro de Rut: un panorama completo animado", "Rut 1:1-Rut 4:22", "inferido"),
     ("1S", "34biq4ivs5I", "Resumen del libro de 1 Samuel: un panorama completo animado", "1S 1:1-1S 31:13", "inferido"),
     ("2S", "BEvicPpjQBE", "Resumen del libro de 2 Samuel: un panorama completo animado", "2S 1:1-2S 24:25", "inferido"),   # buscador de YouTube, 2026-11-13
+    # El video es de 1 y 2 Reyes; con solo 1 Reyes cargado, el rango llega a 1 R 22:53 (inferido). Buscador de YouTube, 2026-11-13.
+    ("1R", "8V-TefJJc0g", "Resumen del libro de 1-2 Reyes: un panorama completo animado", "1R 1:1-1R 22:53", "inferido"),
 ]
 VIDEOS_DESCARTADOS = {"y2pED55wMM4": "Errata del informe de fuentes: oEmbed responde 404. El ID correcto del resumen de Éxodo (parte 1) es y9pED55wMM4."}
 
@@ -1213,9 +1396,10 @@ def main():
     heb.update(leer_oshb(obtener("oshb_rut", sin_red), "Rut"))
     heb.update(leer_oshb(obtener("oshb_1s", sin_red), "1S"))
     heb.update(leer_oshb(obtener("oshb_2s", sin_red), "2S"))
+    heb.update(leer_oshb(obtener("oshb_1r", sin_red), "1R"))
     fuera_l = (leer_uxlc_x(obtener("uxlc_jos", sin_red), "Jos") + leer_uxlc_x(obtener("uxlc_jue", sin_red), "Jue")
                + leer_uxlc_x(obtener("uxlc_rut", sin_red), "Rut") + leer_uxlc_x(obtener("uxlc_1s", sin_red), "1S")
-               + leer_uxlc_x(obtener("uxlc_2s", sin_red), "2S"))
+               + leer_uxlc_x(obtener("uxlc_2s", sin_red), "2S") + leer_uxlc_x(obtener("uxlc_1r", sin_red), "1R"))
     if set(fuera_l) != set(HEBREO_FUERA_DE_L):
         fallo(f"UXLC: versículos marcados «X» (no están en el Códice de Leningrado) {sorted(fuera_l)}, se esperaban {sorted(HEBREO_FUERA_DE_L)}")
     for k in HEBREO_FUERA_DE_L:
@@ -1231,6 +1415,11 @@ def main():
     aplicar_rv_propia(mapa_h, notas_h)
     for k, ds in RV_UNIDA.items():
         mapa_h[k] = ds
+    for k, ds in DIRECTO_1R_22.items():                 # 1 R 22:43-53: la RV1909 numera como el hebreo, no como la KJV
+        mapa_h[k] = ds
+        notas_h.pop(k, None)
+        if ds != [k]:
+            notas_h[k] = NOTA_1R_22
     hebreo_notas = {ref(*k): _NOTA_JUE14.format(corte=CORTES[RV_PARTIDA.get(k, (("Jue", 14, 18),))[0]][0]) for k in list(RV_PARTIDA) + list(RV_UNIDA)}
     partes_h = {}                                        # TM partido -> {parte: RV}
     if sorted(vacios_rv) != sorted(k for k, v in RV_PROPIA.items() if not v):
@@ -1320,6 +1509,21 @@ def main():
                           f"{ref(*d)} griego («{pal_gr}») corresponde a {ref(*k)} RV («{pal_rv}»).")
         else:
             fallo(f"corrección griega {ref(*k)}: ya no aplica o el contenido no coincide")
+    # 1 Reyes: tabla propia RV -> Swete (ver _griego_1r); se guarda lo que da el TVTMS para compararlo
+    tvtms_1r = {k: mapa_g.get(k) for k in orden_rv if k[0] == "1R"}
+    bloques_sin_col_1r = sorted({mm[1] for k in tvtms_1r for mm in [re.match(r"TVTMS (\$1Ki\.\S+): ninguna columna", notas_g.get(k, ""))] if mm})
+    tabla_1r = _griego_1r()
+    for k in tvtms_1r:
+        ds = tabla_1r.get(k, [k])
+        if ds != tvtms_1r[k]:
+            notas_g.pop(k, None)
+        if ds:
+            mapa_g[k] = ds
+        else:
+            mapa_g.pop(k, None)
+            notas_g[k] = SIN_GRIEGO_1R[k]
+        if ds == DIRECTO_1R_22.get(k) and ds != [k]:
+            notas_g[k] = NOTA_1R_22
     griego, ref_griega, notas_griego, sin_griego = {}, {}, {}, {}
     usos_g, partes_g = {}, {}
     for k in orden_rv:
@@ -2443,6 +2647,237 @@ def main():
         if t["id"] == "4Q51":
             t["nota"] += " En 2 Samuel es el testigo de las variantes de 5:6, 6:2, 11:3, 13:21 y 24:16 (y se cita en las notas de 5:8, 8:4 y 13:27)."
 
+    # ---- 1 Reyes: versificación, comparación versículo a versículo, bloques de la LXX, ketiv/qere, Vaticano, rollos y variantes
+    r1 = [k for k in orden_rv if k[0] == "1R"]
+    if len(r1) != 816 or not all(texto_rv[k] for k in r1):
+        fallo(f"1 R: se esperaban 816 versículos RV con texto; hay {len(r1)}")
+    if len([k for k in heb if k[0] == "1R"]) != 817 or ("1R", 5, 32) not in heb or ("1R", 22, 54) not in heb or ("1R", 4, 21) in heb:
+        fallo("1 R: se esperaban 817 versículos en el WLC (4:1-20, 5:1-32, 22:1-54)")
+    if len([k for k in gr if k[0] == "1R"]) != 814:
+        fallo(f"1 R: se esperaban 814 marcas de versículo en Swete; hay {len([k for k in gr if k[0] == '1R'])}")
+    linea_1r = next((l.split("\t")[2].strip() for l in lineas_tv if l.startswith("1Ki\t1Kgs\t")), "")
+    ult_1r_kjv = "; ".join(f"{c}:{max(v for _, cc, v in r1 if cc == c)}" for c in sorted({k[1] for k in r1}))
+    if linea_1r != ult_1r_kjv:
+        fallo(f"1 R TVTMS: la tabla de la KJV «{linea_1r}» debería coincidir con los últimos versículos de la RV «{ult_1r_kjv}»")
+    if sorted(bloques_sin_col_1r) != ["$1Ki.2:8--7:23", "$1Ki.5:17--6:38"]:
+        fallo(f"1 R TVTMS: bloques sin columna griega válida para Swete {bloques_sin_col_1r}")
+    dif_tv = [ref(*k) for k in r1 if (k[1] in (7, 20, 21) or (k[1] == 11 and 5 <= k[2] <= 8)) and mapa_g.get(k) != tvtms_1r.get(k)]
+    if dif_tv:
+        fallo(f"1 R griego: la tabla propia no coincide con el TVTMS en {dif_tv}")
+    for nom, formas in NOMBRES_1R_HEBREO:
+        en_rv = {k for k in r1 if nom in texto_rv[k]}
+        en_h = {k for k in r1 if any(w.endswith(f) and len(w) - len(f) <= 2 for w in consonantes(hebreo[ref(*k)]["t"]).split() for f in formas)}
+        if not en_rv or en_rv != en_h:
+            fallo(f"1 R «{nom}»: versículos RV {sorted(en_rv - en_h)} / hebreo {sorted(en_h - en_rv)} no coinciden")
+    for nom, forma in NOMBRES_1R_GRIEGO:
+        en_rv = {k for k in r1 if nom in texto_rv[k] and ref(*k) in griego}
+        en_g = {k for k in r1 if any(w.startswith(forma) for w in re.findall(r"\w+", sin_acentos(griego.get(ref(*k), ""))))}
+        if not en_rv or en_rv != en_g:
+            fallo(f"1 R «{nom}»: versículos RV {sorted(en_rv - en_g)} / griego {sorted(en_g - en_rv)} no coinciden")
+    # bloques que la LXX añade con letra: fuera de los versículos, en «bloques_sin_paralelo»
+    import zipfile
+    ruta_br = CACHE / "eng-Brenton_vpl.zip"
+    brenton = {}
+    if ruta_br.exists():
+        for l in zipfile.ZipFile(ruta_br).read("eng-Brenton_vpl.txt").decode("utf-8-sig").splitlines():
+            mb = re.match(r"1KI (\d+:\d+)([a-z])? (.*)$", l)
+            if mb and mb[2]:
+                brenton.setdefault(mb[1], {})[mb[2]] = mb[3]
+    else:
+        fallo("falta cache/eng-Brenton_vpl.zip (lo descarga construir_datos.py) para comprobar las letras de los bloques")
+    letras_br = sorted(f"{v}{l}" for v, d in brenton.items() for l in d)
+    esperadas = []
+    bloques_1r = []
+    for sw, corte, enteros, tras, letras, nota in BLOQUES_1R:
+        r, ktras = ref("1R", *tras), ("1R",) + tras
+        v_br, l0, l1 = re.fullmatch(r"(\d+:\d+)([a-z])(?:-([a-z]))?", letras).groups()
+        let = [chr(x) for x in range(ord(l0), ord(l1 or l0) + 1) if chr(x) in brenton.get(v_br, {})]
+        esperadas += [v_br + x for x in let]
+        if sw:
+            txt = griego.get(r, "")
+            if mapa_g.get(ktras) != [("1R",) + sw] or txt.count(corte) != 1:
+                fallo(f"bloque {letras}: se esperaba «{corte}» una vez en Swete {ref('1R', *sw)} (= RV {r})")
+                continue
+            i = txt.index(corte)
+            cabeza, bloque = txt[:i].strip(), txt[i:].strip()
+            if corte == "[1]":
+                marcas = [int(x) for x in re.findall(r"\[(\d+)\]", bloque)]
+                if [chr(96 + n) for n in marcas] != let:
+                    fallo(f"bloque {letras}: marcas de Swete {marcas} ≠ letras de Brenton {let}")
+                ref_sw = f"{ref('1R', *sw)}, desde la marca «[1]»"
+            else:
+                if len(let) != 1:
+                    fallo(f"bloque {letras}: se esperaba una letra en Brenton")
+                ref_sw = f"final de {ref('1R', *sw)}, desde «{corte}»"
+            griego[r] = cabeza
+        else:
+            ks = [("1R",) + x for x in enteros]
+            if any(k in usos_g or not gr.get(k) for k in ks) or len(ks) < len(let) - 1:
+                fallo(f"bloque {letras}: Swete {[ref(*k) for k in ks]} vacío o ya asignado")
+                continue
+            bloque = " ".join(gr[k] for k in ks)
+            ref_sw = ref(*ks[0]) + (f"-{ks[-1][2]}" if len(ks) > 1 else "")
+        pg, vb, pb = ANCLAS_BLOQUES_1R[letras]
+        if pg not in bloque or pb not in brenton.get(vb.rstrip("abcdefghijklmnopqrstuvwxyz"), {}).get(vb[-1], ""):
+            fallo(f"bloque {letras}: ancla «{pg}» (Swete) / «{pb}» (Brenton {vb}) no encontrada")
+        bloques_1r.append({"ref_swete": ref_sw, "brenton": letras, "tras": r, "texto": bloque, "nota": nota})
+        notas_griego[r] = (notas_griego.get(r, "") + f" Tras este versículo la LXX (Swete, {ref_sw}) trae texto sin paralelo en el hebreo ni en la RV1909 "
+                           f"({letras} en la numeración de Brenton): {nota} No se muestra como texto de ningún versículo: va aparte, en «bloques_sin_paralelo» de griego-swete.js.").strip()
+    if sorted(esperadas) != letras_br:
+        fallo(f"1 R: versículos con letra de Brenton no recogidos en BLOQUES_1R {sorted(set(letras_br) - set(esperadas))}")
+    if any(re.search(r"\[\d+\]", griego.get(ref(*k), "")) for k in r1):
+        fallo("1 R griego: quedan marcas «[n]» dentro de algún versículo")
+    asig_1r = sorted(ref(*d) for d in gr if d[0] == "1R" and d not in usos_g and gr[d])
+    ent_1r = sorted(ref("1R", *x) for b in BLOQUES_1R for x in (b[2] or []))
+    if asig_1r != ent_1r:
+        fallo(f"1 R griego sin asignar {asig_1r}, se esperaban los bloques enteros {ent_1r}")
+    extremos_1r = {}
+    for idioma in ("hebreo", "griego"):
+        a, b = RATIO_1R[idioma]
+        rs = []
+        for k in r1:
+            n = largo_orig(k, idioma)
+            if not n:
+                continue
+            x = largo_rv(k) / n
+            rs.append((round(x, 2), ref(*k)))
+            if not a <= x <= b:
+                fallo(f"{ref(*k)}: proporción de longitud RV/{idioma} {x:.2f} fuera de {a}-{b}")
+        extremos_1r[idioma] = (min(rs), max(rs))
+        lg = sorted(math.log(x) for x, _ in rs)
+        med = lg[len(lg) // 2]
+        for c in sorted({k[1] for k in r1}):
+            vs = [k for k in r1 if k[1] == c]
+
+            def coste3(d):
+                tot, n = 0.0, 0
+                for k in vs:
+                    k2 = (k[0], k[1], k[2] + d)
+                    lo = largo_orig(k2, idioma) if texto_rv.get(k2) else 0
+                    if lo and largo_orig(k, idioma):
+                        tot += abs(math.log(largo_rv(k) / lo) - med)
+                        n += 1
+                return tot / n if n else 99
+            if not (coste3(0) < coste3(1) and coste3(0) < coste3(-1)):
+                fallo(f"1 R {c} ({idioma}): el emparejamiento con desfase compara mejor que sin desfase ({coste3(-1):.3f} {coste3(0):.3f} {coste3(1):.3f})")
+    # griego: lista exacta de lo que no tiene texto, y comprobación de que el versículo de Swete con el mismo número está vacío o se usa en otro
+    sin_gr_1r = {k for k in r1 if ref(*k) in sin_griego}
+    if sin_gr_1r != set(SIN_GRIEGO_1R) | set(EXTRA_SIN_1R):
+        fallo(f"1 R griego: sin texto distinto de lo esperado {sorted(sin_gr_1r ^ (set(SIN_GRIEGO_1R) | set(EXTRA_SIN_1R)))}")
+    for k in SIN_GRIEGO_1R:
+        mismo = ("1R", 20 if k[1] == 21 else 21 if k[1] == 20 else k[1], k[2])
+        if gr.get(mismo) and mismo not in usos_g and not any(mismo in [("1R",) + x for x in (b[2] or [])] for b in BLOQUES_1R):
+            fallo(f"{ref(*k)}: Swete {ref(*mismo)} tiene texto y no se usa")
+    for k, extra in EXTRA_SIN_1R.items():
+        if "marca de versículo sin palabras" not in sin_griego.get(ref(*k), ""):
+            fallo(f"{ref(*k)}: se esperaba la marca vacía en Swete")
+        sin_griego[ref(*k)] = sin_griego.get(ref(*k), "") + extra
+    for k in r1:                                         # nota de los versículos que la LXX pone en otro orden (tabla propia)
+        ds = mapa_g.get(k)
+        if ds and ds != [k] and ds != tvtms_1r.get(k) and k not in DIRECTO_1R_22:
+            notas_griego[ref(*k)] = ("La LXX pone este texto en otro lugar o lo numera de otra forma: Swete " + ref_griega[ref(*k)].replace("1R ", "")
+                                     + ". Correspondencia propia por contenido (la digitalización de Swete no numera 1 R 4–6 y 10 como ninguna columna del TVTMS)."
+                                     + (" " + notas_griego[ref(*k)] if ref(*k) in notas_griego else ""))
+    for c, otro in ((20, 21), (21, 20)):
+        for k in r1:
+            if k[1] == c and ref(*k) in griego:
+                notas_griego[ref(*k)] = (f"La LXX invierte el orden de los capítulos 20 y 21: RV {c} es el capítulo {otro} de Swete "
+                                         f"({'las guerras con Ben-adad' if c == 20 else 'la viña de Nabot'}). Correspondencia del TVTMS (columna Greek*), comprobada por contenido.")
+    for t in testigos:
+        if t["id"] == "vaticano":
+            t["contiene"] += comprimir([k for k in r1 if ref(*k) in griego], indice)
+    # ketiv / qere
+    ux_1r = obtener("uxlc_1r", sin_red)
+    kq3, kq3_ux, n_kq_1r = ketiv_qere("1R", "oshb_1r", ux_1r, KQ_UNIDOS_1R, KQ_SOLO_UXLC_1R, KQ_SOLO_OSHB_1R, KQ_DISTINTOS_1R, N_KQ_1R)
+    # rollos de 1 Reyes (todos los de los datos de Abegg con texto de 1 R)
+    con_1r = sorted(sc for sc, d in pal.items() if any(k[0] == "1R" and any(c for _, c in ws) for k, ws in d.items()))
+    if con_1r != ["4Q54", "5Q2", "6Q4"]:
+        fallo(f"1 R: rollos con texto en los datos de Abegg {con_1r}")
+    # variantes de 1 Reyes (cada palabra o cifra se comprueba en su fuente; en el rollo, solo letras fuera de [ ])
+    h3 = {r: consonantes(hebreo[r]["t"]) for r in ("1R 6:1", "1R 8:16", "1R 15:9", "1R 16:29")}
+    g3 = {r: griego.get(r, "") for r in h3}
+    m61 = re.search(r"ἐν τῷ τεσσερακοστῷ καὶ τετρακοσιοστῷ ἔτει τῆς ἐξόδου", g3["1R 6:1"])
+    if not (m61 and "בשמונים שנה וארבע מאות שנה" in h3["1R 6:1"] and "cuatrocientos ochenta" in texto_rv[("1R", 6, 1)]):
+        fallo("variante 1 R 6:1: cifras no comprobadas")
+    m159 = re.search(r"Ἐν τῷ ἐνιαυτῷ τῷ τετάρτῳ καὶ εἰκοστῷ τοῦ Ἰεροβοὰμ", g3["1R 15:9"])
+    if not (m159 and "ובשנת עשרים לירבעם" in h3["1R 15:9"] and "En el año veinte de Jeroboam" in texto_rv[("1R", 15, 9)]):
+        fallo("variante 1 R 15:9: cifras no comprobadas")
+    m1629 = re.search(r"Ἐν ἔτει δευτέρῳ τῷ Ἰωσαφὰθ", g3["1R 16:29"])
+    if not (m1629 and "בשנת שלשים ושמנה שנה לאסא" in h3["1R 16:29"] and "Asa" in texto_rv[("1R", 16, 29)] and "treinta y ocho" in texto_rv[("1R", 16, 29)]
+            and "Ἀσὰ" not in g3["1R 16:29"]):
+        fallo("variante 1 R 16:29: lecturas no comprobadas")
+    c816 = cons_rollo("4Q54", ("1R", 8, 16))
+    m816 = re.search(r"καὶ ἐξελεξάμην ἐν Ἰερουσαλὴμ μεῖναι τὸ ὄνομά μου ἐκεῖ", g3["1R 8:16"])
+    if not ("נגיד" in c816 and "נגיד" not in h3["1R 8:16"].split() and "ירושלם" not in h3["1R 8:16"] and m816
+            and "בירושלם" not in c816 and "Jerusalem" not in texto_rv[("1R", 8, 16)]):
+        fallo(f"variante 1 R 8:16: lecturas no comprobadas ({c816})")
+    l816 = dss_lectura("4Q54", ("1R", 8, 16))[0]
+    ll54 = LL + "4Q54-1"
+    variantes += [{
+        "ref": "1R 6:1", "tema": "¿480 o 440 años desde la salida de Egipto hasta el templo? (1 R 6:1)",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["1R 6:1"]["t"],
+             "traduccion_es": ("Y fue en el año cuatrocientos ochenta de la salida de los hijos de Israel de la tierra de Egipto, en el año cuarto, en el mes de Ziv, "
+                               "que es el mes segundo, del reinado de Salomón sobre Israel, que edificó la casa a YHVH (traducción propia, literal)."),
+             "cifra": 480, "nota": "Texto masorético (WLC): «בִּשְׁמוֹנִים שָׁנָה וְאַרְבַּע מֵאוֹת שָׁנָה», «en el año ochenta y cuatrocientos». La RV1909 sigue al TM («cuatrocientos ochenta»)."},
+            {"testigos": ["vaticano"], "texto_original": m61.group(0) if m61 else "",
+             "traduccion_es": "en el año cuadragésimo y cuadringentésimo de la salida (traducción propia).",
+             "cifra": 440, "nota": "Texto de la edición de Swete (Códice Vaticano): «τεσσερακοστῷ καὶ τετρακοσιοστῷ», 440."},
+        ],
+        "fuente": "Comparación directa de las ediciones: WLC (OSHB) y Swete (LXX-Swete-1930).",
+        "url_fuente": "https://github.com/eliranwong/LXX-Swete-1930",
+        "nota": "Texto: las cifras se comprueban en cada edición al generar. La cronología de la app ya usa las dos cifras (biblia.js, «ev-templo-salomon»). Ningún rollo de los datos de Abegg conserva 1 R 6. Cuál es la original es interpretación y no se incluye.",
+    }, {
+        "ref": "1R 8:16", "tema": "«No escogí a nadie para ser príncipe sobre mi pueblo»: una frase más en 4QKgs (1 R 8:16)",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["1R 8:16"]["t"],
+             "traduccion_es": ("Desde el día que saqué a mi pueblo Israel de Egipto no escogí ciudad de todas las tribus de Israel para edificar casa donde estuviese mi nombre, "
+                               "pero escogí a David para que estuviese sobre mi pueblo Israel (traducción propia, literal)."),
+             "nota": "Texto masorético (WLC): no tiene «נָגִיד» («príncipe») ni nombra Jerusalén (comprobado al generar). La RV1909 sigue al TM."},
+            {"testigos": ["4Q54"], "texto_original": l816,
+             "traduccion_es": ("…[y no escogí a ningún hombre para] ser príncipe sobre [mi] pueblo [Israel… y escogí a David pa]ra estar sobre mi pueblo… "
+                               "(traducción propia, aproximada; [ ] = reconstrucción de los editores)."),
+             "nota": "Conservadas según los datos de Abegg: «היות נגיד על ע[מ]י» («ser príncipe sobre mi pueblo», con letras dañadas) y «ל היות על עמי» al final; "
+                     "el resto, también la mención de Jerusalén, es reconstrucción de los editores (no se usa)." + NOTA_ABEGG},
+            {"testigos": ["vaticano"], "texto_original": m816.group(0) if m816 else "",
+             "traduccion_es": "y escogí Jerusalén para que mi nombre permaneciese allí (traducción propia).",
+             "nota": "Texto de la edición de Swete (Códice Vaticano): tiene la elección de Jerusalén, que el TM no tiene, pero no la frase del «príncipe» (comprobado al generar)."},
+        ],
+        "fuente": "Edición oficial de 4QKgs (4Q54): Trebolle Barrera 1995, DJD 14: 171-183, según la Leon Levy Library. Lectura del rollo comprobada en los datos de Abegg (ETCBC/dss); TM en el WLC; LXX en Swete.",
+        "url_fuente": ll54,
+        "nota": "Texto: las palabras se comprueban al generar (en el rollo, solo letras conservadas). Cuál es la lectura original, y si el TM perdió la frase, es interpretación y no se incluye.",
+    }, {
+        "ref": "1R 15:9", "tema": "¿En el año veinte o veinticuatro de Jeroboam empezó a reinar Asa? (1 R 15:9)",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["1R 15:9"]["t"],
+             "traduccion_es": "Y en el año veinte de Jeroboam, rey de Israel, reinó Asa sobre Judá (traducción propia, literal).",
+             "cifra": 20, "nota": "Texto masorético (WLC): «בִשְׁנַת עֶשְׂרִים לְיָרָבְעָם». La RV1909 sigue al TM («En el año veinte de Jeroboam»)."},
+            {"testigos": ["vaticano"], "texto_original": m159.group(0) if m159 else "",
+             "traduccion_es": "En el año vigésimo cuarto de Jeroboam (traducción propia).",
+             "cifra": 24, "nota": "Texto de la edición de Swete (Códice Vaticano)."},
+        ],
+        "fuente": "Comparación directa de las ediciones: WLC (OSHB) y Swete (LXX-Swete-1930).",
+        "url_fuente": "https://github.com/eliranwong/LXX-Swete-1930",
+        "nota": "Texto: las cifras se comprueban al generar. Es uno de los sincronismos de los reyes que la LXX da de otra forma (ver también 16:29); la cronología de la app los recoge en «reinados». Cómo se explica la diferencia es interpretación y no se incluye.",
+    }, {
+        "ref": "1R 16:29", "tema": "¿Acab empezó a reinar en el año 38 de Asa o en el segundo de Josafat? (1 R 16:29)",
+        "lecturas": [
+            {"testigos": ["leningrado"], "texto_original": hebreo["1R 16:29"]["t"],
+             "traduccion_es": ("Y Acab hijo de Omri reinó sobre Israel en el año treinta y ocho de Asa, rey de Judá; y reinó Acab hijo de Omri sobre Israel en Samaria "
+                               "veintidós años (traducción propia, literal)."),
+             "cifra": 38, "nota": "Texto masorético (WLC): «בִּשְׁנַת שְׁלֹשִׁים וּשְׁמֹנֶה שָׁנָה לְאָסָא». La RV1909 sigue al TM («el año treinta y ocho de Asa»)."},
+            {"testigos": ["vaticano"], "texto_original": m1629.group(0) if m1629 else "",
+             "traduccion_es": "En el año segundo de Josafat (traducción propia).",
+             "cifra": 2, "nota": "Texto de la edición de Swete (Códice Vaticano): fecha por el rey siguiente de Judá, Josafat, no por Asa (comprobado al generar). Los veintidós años de reinado son los mismos."},
+        ],
+        "fuente": "Comparación directa de las ediciones: WLC (OSHB) y Swete (LXX-Swete-1930).",
+        "url_fuente": "https://github.com/eliranwong/LXX-Swete-1930",
+        "nota": "Texto: las cifras se comprueban al generar. La «cifra» de cada lectura cuenta años de reyes distintos (Asa y Josafat): no se pueden restar. Cómo se explica es interpretación y no se incluye.",
+    }]
+    for t in testigos:
+        if t["id"] == "4Q54":
+            t["nota"] += " Es el testigo de la variante de 1 R 8:16 (comprobada al generar en los datos de Abegg)."
+
     # ---- videos
     ruta_oe = CACHE / "oembed.json"
     cache_oe = json.loads(ruta_oe.read_text(encoding="utf-8")) if ruta_oe.exists() else {}
@@ -2485,7 +2920,9 @@ def main():
                        ("1S 20:41", None), ("1S 20:42", "1S 20:42-21:1"), ("1S 21:1", "1S 21:2"), ("1S 21:15", "1S 21:16"), ("1S 22:1", None),
                        ("1S 23:28", None), ("1S 24:1", None), ("1S 24:2", None), ("1S 24:21", None), ("1S 24:22", "1S 24:22-23"), ("1S 25:1", None),
                        ("2S 18:32", None), ("2S 18:33", "2S 19:1"), ("2S 19:1", "2S 19:2"), ("2S 19:43", "2S 19:44"), ("2S 20:1", None),
-                       ("2S 20:24", None), ("2S 20:25", "2S 20:25-26"), ("2S 21:1", None)):
+                       ("2S 20:24", None), ("2S 20:25", "2S 20:25-26"), ("2S 21:1", None),
+                       ("1R 4:20", None), ("1R 4:21", "1R 5:1"), ("1R 4:34", "1R 5:14"), ("1R 5:1", "1R 5:15"), ("1R 5:18", "1R 5:32"),
+                       ("1R 6:1", None), ("1R 22:42", None), ("1R 22:43", None), ("1R 22:44", None), ("1R 22:52", None), ("1R 22:53", "1R 22:53-54")):
         if renum_h.get(rv_r) != he_r:
             fallo(f"numeración: RV {rv_r} debería ser hebreo {he_r}, es {renum_h.get(rv_r)}")
     for r in ("Nm 12:16", "Nm 29:40", "1S 23:29", "2S 20:26"):          # vacíos en la RV: ni hebreo ni griego ni «sin_texto»
@@ -2547,7 +2984,7 @@ def main():
         "generado": ahora,
         "fuentes": FUENTES,
         "hebreo_nota": ("Texto hebreo del Códice de Leningrado (WLC 4.20) con vocales y acentos; sin morfología, notas ni marcas de párrafo (פ/ס). "
-                        "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»). Rut va con el id de la app, «Rt» (p. ej. «Rt 1:1»); 1 Samuel, con «1S» (p. ej. «1S 1:1»); 2 Samuel, con «2S»."),
+                        "Clave = referencia en numeración RV1909; «r» = referencia hebrea cuando difiere (correspondencia del TVTMS, CC BY 4.0); «14:18a»/«14:18b» = primera o segunda parte de ese versículo hebreo (Jue 14:18-19 RV, ver «hebreo_notas»). Rut va con el id de la app, «Rt» (p. ej. «Rt 1:1»); 1 Samuel, con «1S» (p. ej. «1S 1:1»); 2 Samuel, con «2S»; 1 Reyes, con «1R»."),
         "hebreo": hebreo,
         "hebreo_notas": hebreo_notas,
         "hebreo_sin_texto": hebreo_sin_texto,
@@ -2567,12 +3004,15 @@ def main():
         "nota": ("Clave = referencia RV1909. Swete numera como la LXX, que en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7, Nm 1, 13 y 30, Dt 5 y 14 y Jos 8–10 y 13 y 1 S 20 difiere de la RV (en Jue 14:18-20 es la RV la que parte y une versículos; en 1 S 23–24 la RV numera como el hebreo; en 2 S 20:25 la RV reúne 20:25-26): "
                  "la correspondencia se toma del TVTMS (STEPBible, CC BY 4.0), eligiendo en cada bloque la columna griega cuyos TEST cumple esta edición. "
                  "«ref_griega» da la referencia de Swete cuando difiere; «sin_texto» lista los versículos RV sin equivalente completo en la LXX, con el motivo. Jueces: la LXX tiene dos formas textuales (A, Alejandrino; B, Vaticano); "
-                 "la digitalización de Swete trae solo la que imprime Swete, la del Códice Vaticano («B»), y es la única que se muestra: no se mezcla con «A». 1 Samuel (1 Reinos en la LXX): el texto de Swete es más breve que el TM (13:1, 1 S 17–18, 20:16 y 23:12 van en «sin_texto»). 2 Samuel (2 Reinos): Swete numera como la RV; el Vaticano perdió 2:5-7 y 2:10-13 (ver «notas»)."),
+                 "la digitalización de Swete trae solo la que imprime Swete, la del Códice Vaticano («B»), y es la única que se muestra: no se mezcla con «A». 1 Samuel (1 Reinos en la LXX): el texto de Swete es más breve que el TM (13:1, 1 S 17–18, 20:16 y 23:12 van en «sin_texto»). 2 Samuel (2 Reinos): Swete numera como la RV; el Vaticano perdió 2:5-7 y 2:10-13 (ver «notas»). 1 Reyes (3 Reinos): la LXX ordena y numera distinto 4–7, 10, 11:4-8 y los capítulos 20 y 21 (correspondencia por contenido, ver «notas»); "
+                 "los versículos que no tiene en su sitio van en «sin_texto», y los bloques que añade con letra (2:35a-o, 2:46a-l, 5:14a-b, 6:1a-d, 6:36a, 8:53a, 9:9a, 10:22a-c, 10:26a, 12:24a-z, 16:28a-h en la numeración de Brenton), "
+                 "que no tienen paralelo en el hebreo ni en la RV1909, en «bloques_sin_paralelo» (ref_swete; tras = versículo RV tras el que van; texto; nota)."),
         "texto": griego,
         "ref_griega": ref_griega,
         "notas": notas_griego,
         "sin_texto": sin_griego,
         "griego_sin_asignar": griego_sin_asignar,
+        "bloques_sin_paralelo": bloques_1r,
     }
     cab_g = ("// LXX de Swete (1930) por versículo. Digitalización: LXX-Swete-1930 (Eliran Wong), licencia GNU GPL-3.0.\n"
              "// Este archivo se distribuye bajo la GPL-3.0: ver datos/LICENCIA-griego-swete.txt y https://www.gnu.org/licenses/gpl-3.0.html\n"
@@ -2580,7 +3020,7 @@ def main():
     t2 = escribir_js(DATOS / "griego-swete.js", cab_g, "BIBLIA_GRIEGO", griego_obj)
     lic = obtener("swete_lic", sin_red).read_text(encoding="utf-8")
     (DATOS / "LICENCIA-griego-swete.txt").write_text(
-        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué, Jueces, Rut, 1 Samuel y 2 Samuel)\n\n"
+        "datos/griego-swete.js — Septuaginta de Swete (Génesis, Éxodo, Levítico, Números, Deuteronomio, Josué, Jueces, Rut, 1 Samuel, 2 Samuel y 1 Reyes)\n\n"
         "Texto: H. B. Swete, The Old Testament in Greek according to the Septuagint, Cambridge University Press (ed. 1930). Dominio público.\n"
         "Digitalización: LXX-Swete-1930, Eliran Wong (https://github.com/eliranwong/LXX-Swete-1930), licencia GNU GPL-3.0.\n"
         "Modificaciones: palabras unidas por versículo y claves pasadas a la numeración de la RV1909 con el TVTMS (STEPBible, CC BY 4.0).\n"
@@ -2600,6 +3040,9 @@ def main():
     print("2 S: ketiv/qere", n_kq_2s, "en", len(kq2), "versículos · sin griego", len([r for r in sin_griego if r.startswith("2S ")]),
           "· 4Q51 capítulos", caps51_2s, "· extremos de proporción", extremos_2s,
           "· variantes", [v["ref"] for v in variantes if v["ref"].startswith("2S ")])
+    print("1 R: ketiv/qere", n_kq_1r, "en", len(kq3), "versículos · sin griego", len([r for r in sin_griego if r.startswith("1R ")]),
+          "· rollos", con_1r, "· bloques sin paralelo", [b["brenton"] for b in bloques_1r], "· extremos de proporción", extremos_1r,
+          "· TVTMS sin columna para Swete", bloques_sin_col_1r, "· variantes", [v["ref"] for v in variantes if v["ref"].startswith("1R ")])
     print("Renumeración hebrea (RV -> TM):", len(renum_h), "versículos; casos:",
           {k: renum_h[k] for k in ("Gn 31:55", "Ex 8:1", "Ex 8:4", "Ex 22:1")})
     print("Griego con referencia distinta:", len(ref_griega), "· griego sin asignar:", len(griego_sin_asignar))

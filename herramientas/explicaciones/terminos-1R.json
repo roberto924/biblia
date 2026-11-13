@@ -1,0 +1,1144 @@
+{
+ "oraculo-1r": {
+  "tipo": "concepto",
+  "lema": "oráculo (el lugar santísimo)",
+  "formas": [
+   "oráculo"
+  ],
+  "adulto": "En 1 Reyes, «oráculo» no es un adivino ni una respuesta: según Easton, en el Antiguo Testamento esta palabra designa, salvo en una ocasión, el lugar santísimo del templo, la sala más interior, y entre los casos cita 6:5.",
+  "nino": "La sala más escondida y más sagrada del templo, el lugar santísimo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 6:5",
+    "cita": "del templo y del oráculo"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Oracle",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/oracle.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 6:5",
+   "1R 6:16-38",
+   "1R 7:49",
+   "1R 8:6-8"
+  ]
+ },
+ "portico-1r": {
+  "tipo": "concepto",
+  "lema": "pórtico",
+  "formas": [
+   "pórtico"
+  ],
+  "adulto": "Según el Wikcionario, un pórtico es un sitio cubierto y con columnas que se construye delante de los templos u otros edificios suntuosos. En 6:3 el texto describe el del templo: está «delante del templo de la casa», mide veinte codos de largo, según el ancho de la casa, y diez de ancho.",
+  "nino": "La entrada cubierta que hay delante de un edificio grande.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 6:3",
+    "cita": "el pórtico delante del templo de la casa"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "pórtico",
+    "url": "https://es.wiktionary.org/wiki/p%C3%B3rtico",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "capitel-1r": {
+  "tipo": "palabra",
+  "lema": "capitel",
+  "formas": [
+   "capitel",
+   "capiteles"
+  ],
+  "adulto": "El capitel es la pieza adornada que remata una columna (Easton lo define como «la cabeza ornamental» de un pilar). En 7:16 se hacen dos capiteles de fundición de bronce, de cinco codos de alto cada uno, para ponerlos sobre las columnas; llevaban trenzas «á manera de red», cintas «á manera de cadenas» y granadas (7:17-20).",
+  "nino": "La pieza decorada que va encima de una columna, como una corona.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:16",
+    "cita": "dos capiteles de fundición de bronce"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:18",
+    "cita": "granadas"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Chapiter",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/chapiter.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 7:16-50"
+  ]
+ },
+ "jachin-boaz": {
+  "tipo": "concepto",
+  "lema": "Jaquín y Boaz (las dos columnas)",
+  "formas": [
+   "Jachîn",
+   "Boaz"
+  ],
+  "adulto": "Son los nombres de las dos columnas de bronce que se levantaron en el pórtico del templo: a la de la mano derecha le puso por nombre Jachîn y a la de la izquierda la llamó Boaz (7:21). El texto no explica por qué esos nombres. Easton dice lo mismo: que no se sabe la razón. El Boaz de las columnas no es el marido de Rut.",
+  "nino": "Los nombres de las dos grandes columnas de la entrada del templo. La Biblia no dice por qué se llamaban así.",
+  "certeza": "texto",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:21",
+    "cita": "llamó su nombre Boaz"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:15",
+    "cita": "dos columnas de bronce"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Boaz",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/boaz.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 7:21"
+  ]
+ },
+ "mar-fundicion": {
+  "tipo": "concepto",
+  "lema": "mar de fundición",
+  "formas": [
+   "mar de fundición"
+  ],
+  "adulto": "Gran recipiente de bronce fundido hecho para el templo. El texto lo describe redondo, de diez codos de un lado al otro, cinco de alto y un cordón de treinta codos alrededor; su borde era «como el labio de un cáliz, ó de flor de lis», y cabían en él dos mil batos (7:23-26). Estaba asentado sobre doce bueyes (7:25). Este pasaje no dice para qué servía; Easton lo trata junto a los lavatorios del templo.",
+  "nino": "Una enorme pila redonda de bronce, apoyada sobre doce bueyes de bronce, que Salomón hizo para el templo.",
+  "certeza": "texto",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:23",
+    "cita": "un mar de fundición, de diez codos del un lado al otro"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:25",
+    "cita": "estaba [asentado] sobre doce bueyes"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Laver",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/laver.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "basas-fuentes": {
+  "tipo": "concepto",
+  "lema": "basas y fuentes de bronce",
+  "formas": [
+   "basas",
+   "basa",
+   "diez fuentes de bronce"
+  ],
+  "adulto": "En 1 Reyes 7, las «basas» son diez bases de bronce, cada una de cuatro codos de largo, cuatro de ancho y tres de alto, con cuatro ruedas «como la hechura de las ruedas de un carro» (7:27, 7:30, 7:33). Sobre cada basa se asentó una «fuente» de bronce, una vasija de cuarenta batos (7:38). Easton cuenta diez lavatorios en el templo y remite a este pasaje.",
+  "nino": "Diez carritos de bronce con ruedas; cada uno llevaba encima una gran vasija, también de bronce.",
+  "certeza": "texto",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:27",
+    "cita": "diez basas de bronce"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:38",
+    "cita": "diez fuentes de bronce"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Laver",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/laver.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 7:27-43"
+  ]
+ },
+ "quiciales": {
+  "tipo": "palabra",
+  "lema": "quicial",
+  "formas": [
+   "quiciales"
+  ],
+  "adulto": "El quicial es el madero que, con pernios y bisagras, afirma y sostiene las puertas y ventanas para que, al girar, se abran y cierren; muchas veces se toma por lo mismo que «quicio». En 7:50 los quiciales de las puertas del templo son de oro.",
+  "nino": "La pieza en que giran las puertas para abrirse y cerrarse.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "quicial",
+    "url": "https://es.wiktionary.org/wiki/quicial",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:50",
+    "cita": "de oro los quiciales de las puertas"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "coro": {
+  "tipo": "medida",
+  "lema": "coro",
+  "formas": [
+   "coro",
+   "coros"
+  ],
+  "adulto": "El coro es una vasija redonda para medir, igual a un homer: diez efas de áridos o diez batos de líquidos (Easton). En 4:22 la despensa de Salomón gasta cada día treinta coros de flor de harina y sesenta de harina; en 5:11 Salomón da a Hiram cada año veinte mil coros de trigo y veinte de aceite. Su capacidad actual es una estimación con un margen amplio.",
+  "nino": "Una medida enorme de harina o de grano; treinta coros eran miles de litros.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 4:22",
+    "cita": "treinta coros de flor de harina"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 5:11",
+    "cita": "veinte mil coros de trigo"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Cor",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cor.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "The Jewish Encyclopedia (1906)",
+    "entrada": "Weights and Measures",
+    "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+    "idioma": "en"
+   }
+  ],
+  "calculo": {
+   "resultado": "≈ 220 L (rango ≈ 170–364 L)",
+   "pasos": [
+    "Easton («Cor»): el coro es igual a un homer, es decir, diez efas (áridos) o diez batos (líquidos).",
+    "Con el efa ≈ 22 L (rango ≈ 19–36 L; ver «efa»): 10 × 22 L = 220 L; 10 × 19 L = 190 L; 10 × 36 L = 360 L.",
+    "Jewish Encyclopedia: 1 coro = 10 batos = 364,4 L (medida rabínica posterior).",
+    "Easton añade que los rabinos lo calculaban en 45 galones y Josefo en unos 87: 45 × 3,785 L = 170 L y 87 × 3,785 L = 329 L (galón estadounidense; Easton no dice cuál).",
+    "En 4:22: 30 coros × 220 L = 6.600 L de flor de harina al día (volumen, no peso).",
+    "En 5:11: 20.000 coros × 220 L = 4.400.000 L de trigo (de 3.400.000 a 7.290.000 L con los extremos de 170 y 364 L); 20 coros de aceite × 220 L = 4.400 L (volumen, no peso)."
+   ],
+   "supuestos": [
+    "Se toma el efa ≈ 22 L; las estimaciones del efa van de ≈ 19 L a ≈ 36 L (ver «efa»), y el coro varía con ellas.",
+    "Que el coro sea igual al homer y a diez efas lo dice Easton, no el versículo.",
+    "Easton no aclara qué galón usan los rabinos y Josefo; aquí se usa el estadounidense."
+   ],
+   "fuente": {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Cor",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cor.html",
+    "idioma": "en"
+   }
+  },
+  "excluir": [],
+  "solo": [
+   "1R 4:22",
+   "1R 5:11"
+  ]
+ },
+ "bato": {
+  "tipo": "medida",
+  "lema": "bato",
+  "formas": [
+   "bato",
+   "batos"
+  ],
+  "adulto": "El bato es la medida de líquidos igual al efa de áridos: la décima parte de un homer (Easton). En 7:26 el mar de fundición contiene dos mil batos y en 7:38 cada fuente cuarenta. Su capacidad actual es una estimación: unos 22 litros, con un margen amplio.",
+  "nino": "Una medida de líquidos, como un balde grande; el mar de bronce del templo tenía cabida para dos mil.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:26",
+    "cita": "dos mil batos"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 7:38",
+    "cita": "cada fuente contenía cuarenta batos"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Bath",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/bath.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "The Jewish Encyclopedia (1906)",
+    "entrada": "Weights and Measures",
+    "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+    "idioma": "en"
+   }
+  ],
+  "calculo": {
+   "resultado": "≈ 22 L (rango ≈ 19–36 L); 2.000 batos ≈ 44.000 L",
+   "pasos": [
+    "Easton («Bath»): el bato es la décima parte de un homer y contiene 8 galones y 3 cuartos de galón: 8,75 × 3,785 L ≈ 33 L.",
+    "El bato (líquidos) y el efa (áridos) son la misma capacidad, ≈ 22 L (rango ≈ 19–36 L; ver «efa» y «hin»).",
+    "Jewish Encyclopedia: 1 bato = 36,44 L (medida rabínica posterior).",
+    "En 7:26: 2.000 × 22 L = 44.000 L; con 19 L, 38.000 L; con 36,44 L, 72.880 L.",
+    "En 7:38: 40 × 22 L = 880 L por fuente (de 760 a 1.457 L)."
+   ],
+   "supuestos": [
+    "Se toma el efa ≈ 22 L; Easton da para el bato ≈ 33 L y la Jewish Encyclopedia 36,44 L, dentro del mismo rango amplio.",
+    "Las equivalencias entre el bato y el homer son de Easton y de la tradición judía posterior, no del texto."
+   ],
+   "fuente": {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Bath",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/bath.html",
+    "idioma": "en"
+   }
+  },
+  "excluir": [],
+  "solo": [
+   "1R 7:26",
+   "1R 7:38"
+  ]
+ },
+ "sato": {
+  "tipo": "medida",
+  "lema": "sato (seah)",
+  "formas": [
+   "satos"
+  ],
+  "adulto": "El «sato» es la medida hebrea de áridos que las obras de consulta llaman seah: la tercera parte de un efa. En 18:32 Elías hace una reguera alrededor del altar «cuanto cupieran dos satos de simiente»: el versículo da el tamaño por la cantidad de semilla, y no dice si se refiere al espacio sembrado o a la capacidad. Que el sato sea el seah es una inferencia.",
+  "nino": "Una medida de grano. La zanja del altar era de un tamaño en que cabían dos de ellas de semilla.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 18:32",
+    "cita": "cuanto cupieran dos satos de simiente"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Ephah",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephah.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Seah",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/seah.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "The Jewish Encyclopedia (1906)",
+    "entrada": "Weights and Measures",
+    "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+    "idioma": "en"
+   }
+  ],
+  "calculo": {
+   "resultado": "1 sato ≈ 7,3 L (rango ≈ 6–12 L); 2 satos ≈ 14,7 L",
+   "pasos": [
+    "Easton («Ephah»): el efa contiene tres seahs, es decir, un seah es la tercera parte del efa.",
+    "Con el efa ≈ 22 L: 22 ÷ 3 ≈ 7,3 L; con 19 L, ≈ 6,3 L; con 36 L, ≈ 12 L.",
+    "Jewish Encyclopedia: 1 seah = 12,148 L (medida rabínica posterior).",
+    "Easton («Seah»): «un poco más de un peck» de capacidad; 1 peck estadounidense ≈ 8,8 L, de modo que ≈ 9 L.",
+    "Dos satos: 2 × 7,3 L ≈ 14,7 L (de ≈ 12,6 L a ≈ 24,3 L)."
+   ],
+   "supuestos": [
+    "Se toma el efa ≈ 22 L (ver «efa»); la cifra del sato depende de ella.",
+    "Que el «sato» de la RV1909 sea el seah de las obras de consulta es una inferencia: el versículo solo dice «satos».",
+    "Easton da también para el seah una medida de superficie (50 × 50 codos); el versículo no dice si «cupieran» se refiere al área o al volumen, y no se calcula."
+   ],
+   "fuente": {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Ephah",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephah.html",
+    "idioma": "en"
+   }
+  },
+  "excluir": [],
+  "solo": [
+   "1R 18:32"
+  ]
+ },
+ "libra-maneh": {
+  "tipo": "medida",
+  "lema": "libra (maneh)",
+  "formas": [
+   "libras"
+  ],
+  "adulto": "En 10:17 la RV1909 dice que en cada escudo de oro extendido Salomón «gastó tres libras de oro». Esa «libra» es, según Easton, el maneh hebreo, un peso que él calcula en unos 100 siclos (de 2½ a 3 libras actuales); la tradición judía posterior da cifras menores. Es una estimación: el texto no da el peso en unidades de hoy.",
+  "nino": "Una medida de peso, de más de un kilo según algunos y mucho menos según otros.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:17",
+    "cita": "tres libras de oro"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Maneh",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/maneh.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Pound",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/pound.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "The Jewish Encyclopedia (1906)",
+    "entrada": "Weights and Measures",
+    "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+    "idioma": "en"
+   }
+  ],
+  "calculo": {
+   "resultado": "1 libra (maneh) ≈ 0,34–1,43 kg; 3 libras ≈ 1,0–4,3 kg",
+   "pasos": [
+    "Easton («Maneh» y «Pound»): el maneh de oro es de 100 siclos comunes; lo estima en unas 2½ o 3 libras (2,5 × 453,6 g ≈ 1,13 kg; 3 × 453,6 g ≈ 1,36 kg).",
+    "Con el siclo ≈ 11,5–14,3 g (ver «siclo»): 100 × 11,5 g = 1.150 g; 100 × 14,26 g = 1.426 g.",
+    "Jewish Encyclopedia: el maneh talmúdico equivale a 25 siclos, 341,1 g; menciona también otro de 40 siclos.",
+    "Tres libras por escudo: 3 × 341 g ≈ 1,0 kg (cifra talmúdica) hasta 3 × 1.426 g ≈ 4,3 kg (Easton)."
+   ],
+   "supuestos": [
+    "Hay dos cifras con fuente y no se elige una: Easton (100 siclos) y la Jewish Encyclopedia (25 siclos, tradición posterior).",
+    "Que la «libra» del versículo sea el maneh lo dice Easton; el versículo solo dice «libras».",
+    "El siclo es un rango (ver «siclo»)."
+   ],
+   "fuente": {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Maneh",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/maneh.html",
+    "idioma": "en"
+   }
+  },
+  "excluir": [],
+  "solo": [
+   "1R 10:17"
+  ]
+ },
+ "paveses": {
+  "tipo": "palabra",
+  "lema": "pavés",
+  "formas": [
+   "paveses"
+  ],
+  "adulto": "El pavés es un escudo oblongo, de tamaño suficiente para cubrir casi todo el cuerpo del combatiente. En 10:16 Salomón hace doscientos paveses de oro extendido, con seiscientos siclos de oro cada uno, y en 10:17 trescientos escudos de oro extendido, de tres libras de oro cada uno.",
+  "nino": "Un escudo muy grande, que tapaba casi todo el cuerpo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "pavés",
+    "url": "https://es.wiktionary.org/wiki/pav%C3%A9s",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:16",
+    "cita": "doscientos paveses de oro extendido"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Shield",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/shield.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "altos": {
+  "tipo": "concepto",
+  "lema": "los altos (lugares altos)",
+  "formas": [
+   "altos",
+   "el alto principal",
+   "un alto"
+  ],
+  "adulto": "Los «altos» son lugares elevados, naturales o hechos, donde se ofrecían sacrificios y ofrendas (Easton; en 3:3 y 22:44 el texto añade que se quemaban perfumes). Según 3:2, el pueblo sacrificaba en los altos porque todavía no había una casa edificada al nombre de Jehová; el más importante era el de Gabaón (3:4). Easton recuerda que la ley mandaba derribar los de los cananeos y prohibía adorar a Jehová en lugares altos, con un solo altar elegido por Dios (Dt 12:2-3 y 12:11-14).",
+  "nino": "Lugares en lo alto de los cerros donde la gente hacía sacrificios. Mientras no hubo templo, el pueblo los usaba.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 3:2",
+    "cita": "el pueblo sacrificaba en los altos"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Dt 12:11",
+    "cita": "Y al lugar que Jehová vuestro Dios escogiere"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "High place",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/high-place.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 3:2-4",
+   "1R 11:7",
+   "1R 12:31-32",
+   "1R 13:2",
+   "1R 13:32-33",
+   "1R 14:23",
+   "1R 15:14",
+   "1R 22:44"
+  ]
+ },
+ "tributo-1r": {
+  "tipo": "concepto",
+  "lema": "tributo (trabajo obligatorio)",
+  "formas": [
+   "tributo",
+   "tributos"
+  ],
+  "adulto": "Easton define el tributo como un impuesto que el rey pone a sus súbditos. En 1 Reyes 5:13-14, sin embargo, el «tributo» que Salomón impone a todo Israel no es dinero: «el tributo fué de treinta mil hombres» que iban al Líbano de diez mil en diez mil, un mes allá y dos en casa, y Adoniram estaba sobre ese tributo. Es trabajo por turnos.",
+  "nino": "Aquí, trabajo que el rey pedía al pueblo: treinta mil hombres iban por turnos a trabajar al Líbano.",
+  "certeza": "texto",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 5:13",
+    "cita": "el tributo fué de treinta mil hombres"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 5:14",
+    "cita": "cada mes por su turno"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Tribute",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tribute.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 5:13-14",
+   "1R 9:15",
+   "1R 9:21",
+   "1R 12:18"
+  ]
+ },
+ "caballeria": {
+  "tipo": "concepto",
+  "lema": "gente de a caballo y jinetes",
+  "formas": [
+   "gente de á caballo",
+   "jinetes"
+  ],
+  "adulto": "La RV1909 llama «gente de á caballo» y «jinetes» a los soldados montados. En 4:26 Salomón tiene cuarenta mil caballos en sus caballerizas para sus carros y doce mil jinetes. Según Easton, los israelitas no usaron caballos de guerra durante mucho tiempo, porque la ley lo prohibía (Dt 17:16); David formó una fuerza de caballería y Salomón multiplicó su número. El versículo de la ley dice «que no se aumente caballos» ni se haga volver al pueblo a Egipto para acrecentarlos.",
+  "nino": "Soldados que iban montados a caballo. Salomón tenía muchísimos caballos y carros de guerra.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 4:26",
+    "cita": "doce mil jinetes"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Dt 17:16",
+    "cita": "no se aumente caballos"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Horse",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/horse.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Chariot",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/chariot.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 4:26",
+   "1R 9:19",
+   "1R 9:22",
+   "1R 10:26",
+   "1R 20:21"
+  ]
+ },
+ "marfil": {
+  "tipo": "palabra",
+  "lema": "marfil",
+  "formas": [
+   "marfil"
+  ],
+  "adulto": "El marfil son los colmillos del elefante. Easton cuenta que se usaba desde antiguo en adornos y que se traía de la India por las naves de Tarsis. En 10:18 el rey hace un gran trono de marfil cubierto de oro purísimo, y en 10:22 la flota lo trae con oro, plata, simios y pavos.",
+  "nino": "Los colmillos del elefante, un material muy valioso con que se hacían adornos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:18",
+    "cita": "un gran trono de marfil"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Ivory",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ivory.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "simios-pavos": {
+  "tipo": "palabra",
+  "lema": "simios y pavos (10:22)",
+  "formas": [
+   "simios",
+   "pavos"
+  ],
+  "adulto": "Entre lo que trae la flota de Tarsis, 10:22 nombra «simios y pavos». Easton identifica el primero con un mono (hebreo «koph», palabra de origen indio) y los segundos con el pavo real (hebreo «tuk»), ave de la India.",
+  "nino": "Monos y pavos reales: animales raros que Salomón recibía de tierras lejanas.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:22",
+    "cita": "oro, plata, marfil, simios y pavos"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Ape",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ape.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Peacock",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/peacock.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "cabrahigos": {
+  "tipo": "palabra",
+  "lema": "cabrahigo (sicómoro)",
+  "formas": [
+   "cabrahigos"
+  ],
+  "adulto": "En 10:27 Salomón hace que haya en Jerusalén cedros «como los cabrahigos que están por los campos». Easton cita este versículo al hablar del sicómoro, un árbol parecido a la higuera que crece sobre todo en las tierras bajas.",
+  "nino": "Un árbol parecido a la higuera, muy común en los campos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:27",
+    "cita": "los cabrahigos que están por los campos"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Sycamore",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/sycamore.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "acemilas": {
+  "tipo": "palabra",
+  "lema": "acémila",
+  "formas": [
+   "acémilas"
+  ],
+  "adulto": "Una acémila es una mula, animal de carga que nace del cruce de un caballo con un asno. En 10:25 llegan a Salomón regalos de todas partes: vasos, vestidos, armas, aromas, caballos y acémilas. Easton cita este versículo al hablar de las mulas.",
+  "nino": "Una mula, el animal que lleva cargas.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "acémila",
+    "url": "https://es.wiktionary.org/wiki/ac%C3%A9mila",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:25",
+    "cita": "caballos y acémilas"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Mule",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/mule.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "maestresalas": {
+  "tipo": "palabra",
+  "lema": "maestresala",
+  "formas": [
+   "maestresalas"
+  ],
+  "adulto": "El maestresala era el criado principal que asistía a la mesa de un señor y presentaba y repartía la comida. En 10:5 la reina que visita a Salomón, al ver entre otras cosas la comida de su mesa, el asiento de sus siervos y sus maestresalas, «quedóse enajenada».",
+  "nino": "El criado que servía la comida en la mesa del rey.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "maestresala",
+    "url": "https://es.wiktionary.org/wiki/maestresala",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 10:5",
+    "cita": "sus maestresalas"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "chemos": {
+  "tipo": "concepto",
+  "lema": "Chemos",
+  "formas": [
+   "Chêmos"
+  ],
+  "adulto": "Chemos es el dios de los moabitas. Según Easton, Salomón introdujo su culto en Jerusalén; el texto lo cuenta en 11:7: edificó un alto a Chêmos, «abominación de Moab», en el monte que está enfrente de Jerusalén.",
+  "nino": "El dios falso del pueblo de Moab.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 11:7",
+    "cita": "edificó Salomón un alto á Chêmos"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Chemosh",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/chemosh.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 11:7",
+   "1R 11:33"
+  ]
+ },
+ "milcom": {
+  "tipo": "concepto",
+  "lema": "Milcom",
+  "formas": [
+   "Milcom"
+  ],
+  "adulto": "Milcom es el nombre con que 11:5 llama al dios de los amonitas, «abominación de los Ammonitas». Easton dice que es otro nombre de Moloc y cita este versículo; en 11:7 el texto llama «Moloch» al dios de los hijos de Ammón. Keil y Delitzsch, en cambio, dicen que no hay que confundirlo con el Moloc (con artículo) de los cananeos antiguos, y reconocen que la falta de datos impide precisar la diferencia.",
+  "nino": "Un dios falso del pueblo de Amón.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 11:5",
+    "cita": "á Milcom, abominación de los Ammonitas"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Moloch",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/moloch.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "obra",
+    "obra": "Commentary on the Old Testament (Keil y Delitzsch), 1 Reyes 11:5",
+    "autor": "C. F. Keil y F. Delitzsch",
+    "url": "https://biblehub.com/commentaries/kad/1_kings/11.htm",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "becerros-jeroboam": {
+  "tipo": "concepto",
+  "lema": "los becerros de Jeroboam",
+  "formas": [
+   "dos becerros de oro",
+   "becerros"
+  ],
+  "adulto": "Jeroboam hizo dos becerros de oro y puso uno en Betel y el otro en Dan (12:28-29). El motivo que da el texto es político: temía que, si el pueblo seguía subiendo a sacrificar a Jerusalén, su corazón se volviera a Roboam (12:27). Les dijo: «he aquí tus dioses, oh Israel, que te hicieron subir de la tierra de Egipto» (12:28), casi las mismas palabras que se dijeron del becerro del Sinaí (Ex 32:4). Easton cuenta lo mismo: dos ídolos con forma de becerro en Dan y Betel para impedir que las diez tribus fueran a Jerusalén.",
+  "nino": "Jeroboam hizo dos becerros de oro para que el pueblo los adorara y no fuera a Jerusalén. Puso uno en Betel y otro en Dan.",
+  "certeza": "texto",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 12:28",
+    "cita": "hizo el rey dos becerros de oro"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 12:27",
+    "cita": "el corazón de este pueblo se convertirá á su señor Roboam"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Ex 32:4",
+    "cita": "estos son tus dioses, que te sacaron de la tierra de Egipto"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Calf",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/calf.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 12:28-32"
+  ]
+ },
+ "varon-dios": {
+  "tipo": "concepto",
+  "lema": "varón de Dios",
+  "formas": [
+   "varón de Dios"
+  ],
+  "adulto": "En 1 Reyes, «varón de Dios» se dice de alguien que habla de parte de Dios: en 13:1 viene «por palabra de Jehová». Easton define al profeta como portavoz de Dios, la boca por la que Dios habla. Que «varón de Dios» sea otra forma de llamar a un profeta es una inferencia del contexto.",
+  "nino": "Parece ser una forma de llamar a un profeta: alguien que habla de parte de Dios.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 13:1",
+    "cita": "un varón de Dios por palabra de Jehová"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Prophet",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/prophet.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 13:1",
+   "1R 17:18",
+   "1R 17:24",
+   "1R 20:28"
+  ]
+ },
+ "enebro-retama": {
+  "tipo": "palabra",
+  "lema": "enebro (retama)",
+  "formas": [
+   "enebro"
+  ],
+  "adulto": "En 19:4-5 Elías se sienta y se duerme bajo un «enebro». Según Easton, la palabra hebrea es «rothem» (en árabe «retem») y se conoce como retama española («Spanish broom»): es el arbusto más grande y más visible de esos desiertos, da sombra y abrigo del viento y también servía de leña.",
+  "nino": "Un arbusto del desierto que da sombra; hoy se lo llamaría retama.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 19:4",
+    "cita": "sentóse debajo de un enebro"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Juniper",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/juniper.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "manto-elias": {
+  "tipo": "concepto",
+  "lema": "manto (el de Elías)",
+  "formas": [
+   "manto"
+  ],
+  "adulto": "El manto es una prenda exterior grande. Elías se cubre el rostro con el suyo al oír la voz (19:13) y más tarde lo echa sobre Eliseo, que araba con doce yuntas; Eliseo deja los bueyes y corre tras él (19:19-20). El texto no explica el gesto. Easton dice que el manto de Elías (hebreo «addereth») era una prenda grande, probablemente de piel de oveja.",
+  "nino": "Una capa grande de abrigo. Elías la echó sobre Eliseo, y Eliseo fue tras él.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 19:19",
+    "cita": "echó sobre él su manto"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Mantle",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/mantle.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 19:13",
+   "1R 19:19"
+  ]
+ },
+ "gananes": {
+  "tipo": "palabra",
+  "lema": "gañán",
+  "formas": [
+   "gañanes",
+   "gañán"
+  ],
+  "adulto": "El gañán es el peón que trabaja en las tareas del campo. En 19:19 Eliseo araba con doce yuntas «delante de sí» y «era uno de los doce [gañanes]».",
+  "nino": "Un trabajador del campo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "gañán",
+    "url": "https://es.wiktionary.org/wiki/ga%C3%B1%C3%A1n",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 19:19",
+    "cita": "uno de los doce [gañanes]"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "silbo": {
+  "tipo": "palabra",
+  "lema": "silbo",
+  "formas": [
+   "silbo"
+  ],
+  "adulto": "El silbo es un sonido agudo, como el que hace el aire o el que se produce con la boca. En 19:12 va con «apacible y delicado», y se refiere a lo que oyó Elías tras el fuego. Cómo entender esa frase es objeto de una nota aparte (pasaje difícil de 19:11-13).",
+  "nino": "Un sonido, como un silbido.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "silbo",
+    "url": "https://es.wiktionary.org/wiki/silbo",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 19:12",
+    "cita": "un silbo apacible y delicado"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "lancetas": {
+  "tipo": "palabra",
+  "lema": "lanceta (y «sajar»)",
+  "formas": [
+   "lancetas",
+   "sajábanse"
+  ],
+  "adulto": "La lanceta es un instrumento de hoja de acero muy afilada y de punta agudísima, usado para sangrar o abrir tumores. «Sajar» es hacer cortaduras en la carne. En 18:28 los profetas de Baal «sajábanse con cuchillos y con lancetas conforme á su costumbre».",
+  "nino": "Cuchillitos muy afilados.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "lanceta",
+    "url": "https://es.wiktionary.org/wiki/lanceta",
+    "idioma": "es"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "sajar",
+    "url": "https://es.wiktionary.org/wiki/sajar",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "1R 18:28",
+    "cita": "sajábanse con cuchillos y con lancetas"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "blasfemar": {
+  "tipo": "concepto",
+  "lema": "blasfemar",
+  "formas": [
+   "blasfemado"
+  ],
+  "adulto": "Blasfemar es hablar mal de Dios y, en sentido amplio, calumniar o insultar (Easton cita 21:10 entre sus ejemplos). La ley decía que quien blasfemara el nombre de Jehová moría apedreado (Lv 24:16). En 21:10 y 21:13, Jezabel hace que dos hombres perversos digan que Nabot «ha blasfemado á Dios y al rey»; la acusación es falsa.",
+  "nino": "Hablar mal de Dios. Aquí es una mentira que inventan para acusar a Nabot.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 21:10",
+    "cita": "Tú has blasfemado á Dios y al rey"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Lv 24:16",
+    "cita": "el que blasfemare el nombre de Jehová, ha de ser muerto"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Blasphemy",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/blasphemy.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "1R 21:10",
+   "1R 21:13"
+  ]
+ },
+ "lampara-david": {
+  "tipo": "concepto",
+  "lema": "lámpara de David",
+  "formas": [
+   "tenga lámpara",
+   "su Dios lámpara"
+  ],
+  "adulto": "La lámpara se usa como imagen de la vida, el bienestar o la guía (Easton). En 11:36 Dios deja una tribu al hijo de Salomón «para que mi siervo David tenga lámpara todos los días delante de mí en Jerusalem». Que signifique que la casa de David seguirá en Jerusalén es una inferencia del contexto.",
+  "nino": "Parece ser una forma de decir que David siempre tendría descendientes que siguieran en Jerusalén.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1R 11:36",
+    "cita": "para que mi siervo David tenga lámpara todos los días"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Lamp",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/lamp.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ }
+}

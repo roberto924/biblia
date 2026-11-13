@@ -1,5 +1,5 @@
 window.BIBLIA_CONTENIDO = {
- "generado": "2026-11-13T16:44:56+00:00",
+ "generado": "2026-11-13T18:24:27+00:00",
  "origen": "clasificación editorial del proyecto, no del texto bíblico",
  "criterio": "Clasificación editorial del proyecto para el perfil niño (7-12 años, leyendo con la familia): se pliega (alto) lo sexual explícito o insinuado con detalle, la violación, el incesto, la matanza descrita y el infanticidio; se anota (medio) lo breve o legal. No se marcan menciones sin detalle ni muerte natural. El texto nunca se borra.",
  "marcas": [
@@ -1227,6 +1227,174 @@ window.BIBLIA_CONTENIDO = {
    "categoria": "violencia",
    "nivel": "medio",
    "motivo": "Jehová envía pestilencia y mueren setenta mil hombres; sin detalle."
+  },
+  {
+   "desde": "1R 1:1",
+   "hasta": "1R 1:4",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Buscan una moza virgen que duerma al lado del rey anciano para calentarlo; «el rey nunca la conoció». Sin detalle."
+  },
+  {
+   "desde": "1R 2:5",
+   "hasta": "1R 2:6",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David recuerda que Joab mató a Abner y a Amasa «derramando en paz la sangre de guerra»."
+  },
+  {
+   "desde": "1R 2:23",
+   "hasta": "1R 2:25",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Salomón jura que Adonías morirá y Benaía «dió sobre él, y murió»; sin detalle."
+  },
+  {
+   "desde": "1R 2:29",
+   "hasta": "1R 2:34",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Benaía mata a Joab, asido del altar en el tabernáculo; sin detalle."
+  },
+  {
+   "desde": "1R 2:46",
+   "hasta": "1R 2:46",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Benaía hiere a Simei y muere; sin detalle."
+  },
+  {
+   "desde": "1R 3:16",
+   "hasta": "1R 3:27",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Dos mujeres rameras: un niño muere de noche porque su madre se acuesta sobre él, y el rey manda partir por medio al niño vivo (la orden no se cumple)."
+  },
+  {
+   "desde": "1R 9:16",
+   "hasta": "1R 9:16",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Faraón toma Gezer, la quema y mata a los cananeos que la habitan; sin detalle."
+  },
+  {
+   "desde": "1R 11:15",
+   "hasta": "1R 11:16",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Joab mata «á todos los varones de Edom» durante seis meses; sin detalle."
+  },
+  {
+   "desde": "1R 13:2",
+   "hasta": "1R 13:2",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Anuncio contra el altar de Betel: sobre él se sacrificará a los sacerdotes y se quemarán huesos de hombres."
+  },
+  {
+   "desde": "1R 13:24",
+   "hasta": "1R 13:28",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Un león mata en el camino al varón de Dios; su cuerpo queda tendido junto al asno y al león."
+  },
+  {
+   "desde": "1R 14:10",
+   "hasta": "1R 14:11",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Anuncio contra la casa de Jeroboam: será barrida «como es barrido el estiércol» y los perros y las aves comerán a sus muertos."
+  },
+  {
+   "desde": "1R 15:29",
+   "hasta": "1R 15:29",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Baasa hiere toda la casa de Jeroboam «sin dejar alma viviente»; sin detalle."
+  },
+  {
+   "desde": "1R 16:4",
+   "hasta": "1R 16:4",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Anuncio contra Baasa: los perros y las aves comerán a los suyos."
+  },
+  {
+   "desde": "1R 16:10",
+   "hasta": "1R 16:11",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Zimri mata a Ela y a toda la casa de Baasa; sin detalle."
+  },
+  {
+   "desde": "1R 16:18",
+   "hasta": "1R 16:18",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Zimri prende fuego a la casa real consigo dentro y muere."
+  },
+  {
+   "desde": "1R 16:34",
+   "hasta": "1R 16:34",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Hiel reedifica Jericó «en Abiram su primogénito» y «en Segub su [hijo] postrero», conforme a la palabra de Jehová: la pérdida de sus hijos, sin detalle."
+  },
+  {
+   "desde": "1R 18:28",
+   "hasta": "1R 18:28",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Los profetas de Baal se sajan con cuchillos y lancetas «hasta chorrear la sangre sobre ellos»."
+  },
+  {
+   "desde": "1R 18:40",
+   "hasta": "1R 18:40",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Elías hace prender a los profetas de Baal y los degüella junto al arroyo de Cisón (matanza)."
+  },
+  {
+   "desde": "1R 19:17",
+   "hasta": "1R 19:17",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Anuncio: al que escape de la espada de Hazael lo matará Jehú, y al que escape de Jehú, Eliseo."
+  },
+  {
+   "desde": "1R 20:29",
+   "hasta": "1R 20:30",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Israel mata a cien mil sirios en un día y el muro de Afec cae sobre veintisiete mil; sin detalle."
+  },
+  {
+   "desde": "1R 20:35",
+   "hasta": "1R 20:37",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Un león mata al hombre que no quiso herir al profeta; otro lo hiere; sin detalle."
+  },
+  {
+   "desde": "1R 21:10",
+   "hasta": "1R 21:13",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Por orden de Jezabel, dos testigos falsos acusan a Nabot y lo apedrean hasta que muere."
+  },
+  {
+   "desde": "1R 21:19",
+   "hasta": "1R 21:24",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Anuncio de Elías: los perros lamerán la sangre de Acab y comerán a Jezabel; perros y aves comerán a los de Acab."
+  },
+  {
+   "desde": "1R 22:34",
+   "hasta": "1R 22:38",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Una flecha hiere a Acab; muere en su carro a la tarde con la sangre de la herida corriendo por el carro, y los perros lamen su sangre."
   }
  ]
 };

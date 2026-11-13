@@ -111,6 +111,14 @@ HECHOS = {
         # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal)
         "principal": [("Absalom_1", "2S", "2S 13"), ("Nathan_2", "2S", "2S 7")],
     },
+    "1R": {
+        "genealogia": [("1R 4:2", "1R 4:6"), ("1R 4:8", "1R 4:19")],
+        "objeto_en": [("1R 7:23", "mar de fundición"), ("1R 17:14", "tinaja de harina y botija de aceite")],
+        "escenario_lugar": ["carmel"],
+        # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal)
+        "principal": [("Elijah_1", "1R", "1R 17"), ("Jeroboam_1", "1R", "1R 11"), ("Elisha_1", "1R", "1R 19")],
+        "sin_aparicion": [("Moses_1", "1R 8:9")],   # Salomón solo recuerda a Moisés: mención, no aparición
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")
