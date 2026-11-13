@@ -446,5 +446,489 @@
   "holocausto": {
     "veredicto": "OK",
     "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "empero": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "aderezar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "aparejar": {
+    "veredicto": "AJUSTAR",
+    "nota": "«Aparejo» (nombre) no está definido en la fuente; se ajustó el texto para decir que se deduce del contexto (Lv 15:9, Jue 19:10 «asnos aparejados»)."
+  },
+  "allegar": {
+    "veredicto": "OK",
+    "nota": "Cubre acercar, juntar y unirse (Gn 41:35, Nm 25:3)."
+  },
+  "priesa": {
+    "veredicto": "OK",
+    "nota": "«Apriesa» tiene su propia entrada (aprisa, anticuado); coincide."
+  },
+  "aqueste": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "esotro": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario solo trae «esotro = ese otro»; «estotro» no tiene entrada: la forma con «esta» se marcó como analogía."
+  },
+  "tornar": {
+    "veredicto": "OK",
+    "nota": "Cubre volver, volver a hacer y volverse en otra cosa (Ex 4:4, Ex 14:21)."
+  },
+  "tañer": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "desmayar": {
+    "veredicto": "AJUSTAR",
+    "nota": "En Gn 45:26 «su corazón se desmayó» es de impresión o aturdimiento, no de perder el ánimo: excluido el versículo."
+  },
+  "dilatar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "esforzar": {
+    "veredicto": "AJUSTAR",
+    "nota": "La fuente no dice que «esforzado» sea valiente (es solo el participio); además hay usos de «poner empeño» (Dt 12:23, Jos 23:6). Se amplió y se marcó lo deducido."
+  },
+  "confortar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "fenecer": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "menguar": {
+    "veredicto": "OK",
+    "nota": "Fuente solo intransitiva; el uso transitivo de Jos 14:8 («menguaron el corazón») es figurado y coherente."
+  },
+  "cerviz": {
+    "veredicto": "OK",
+    "nota": "Correcto. Posible mejora futura: la locución «dura cerviz» como terquedad (no en la fuente)."
+  },
+  "dadiva": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "anima": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "agorero": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "pelliza": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "pingue": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "postrimeria": {
+    "veredicto": "OK",
+    "nota": "Nota: «postrimero» no está en la entrada; es derivado de postrimería. Aceptable."
+  },
+  "sortilego": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "zurron": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "anublo": {
+    "veredicto": "OK",
+    "nota": "Wikcionario describe el hongo de los cereales; Dt 28:22 es la plaga de cultivos. Coincide."
+  },
+  "aquilon": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "austro": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "vedar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "nombradia": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "enjuto": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "greba": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "aljaba": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "albarda": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "mies": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "bagaje": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "bastimento": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "bocina": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario solo define la bocina moderna; Easton «Cornet» describe el shofar, no la palabra «bocina». Se sustituyó por Wikcionario (etimología «trompeta») y Easton «Trumpets» (de cuerno de carnero o de plata)."
+  },
+  "buril": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "abrojo": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "acaecer": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "acicalador": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "adufe": {
+    "veredicto": "OK",
+    "nota": "Easton «Tabret» (toph) = pandero; coincide con Jue 11:34 y 1S 10:5."
+  },
+  "alhaja": {
+    "veredicto": "AJUSTAR",
+    "nota": "Por contexto (Gn 31:37, Nm 3:8, Ex 22:7) son enseres y utensilios además de joyas; se matizó y se marcó como contexto."
+  },
+  "corchete": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "corcovado": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "denostar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "dintel": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "estambre": {
+    "veredicto": "AJUSTAR",
+    "nota": "«Urdimbre» no está en Wikcionario (hebras largas de lana); se dedujo de que Lv 13 lo contrapone a «trama». Se marcó como contexto."
+  },
+  "frontal": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton dice que el mandato se tomó al pie de la letra (tefilín, tiras de pergamino) tras Babilonia; el texto anterior («cintas o estuches») no se sostenía. Reescrito."
+  },
+  "guarecer": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "guedeja": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "horro": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "lesna": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton no habla de cuero; solo de la oreja del siervo. Se quitó «perforar cuero» y no se cita Dt 15:17 (posterior)."
+  },
+  "lumbrera": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "majano": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "majar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "manteca": {
+    "veredicto": "OK",
+    "nota": "Wikcionario da «mantequilla» como acepción regional; el sentido lácteo se sostiene por contexto (Gn 18:8, Dt 32:14), ya señalado en el texto."
+  },
+  "menester": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "mortecina": {
+    "veredicto": "AJUSTAR",
+    "nota": "La entrada «mortecina» solo remite a «mortecino»; el sentido (animal muerto naturalmente) está en «mortecino», acepción 3. Se cambió la fuente."
+  },
+  "odre": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton no dice «piel de cabra»; se quitó. Sí cita vino, leche (Jue 4:19) y agua (Gn 21:14)."
+  },
+  "pertrecho": {
+    "veredicto": "AJUSTAR",
+    "nota": "La entrada «pertrecho» era la forma verbal de «pertrechar»; la definición de armas y equipo está en «pertrechos». Se cambió la fuente."
+  },
+  "pollino": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "sobrestante": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario solo cubre el encargado de obra (materiales, jornales); «capataz de segadores» (Rt 2:5) se marcó como sentido por contexto."
+  },
+  "terrado": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "tropezadero": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "vitualla": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "yermo": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "zarcillo": {
+    "veredicto": "OK",
+    "nota": "Pendiente (acepción 2) y Easton «Earrings»: coincide en Ex 32:2, Jue 8:24."
+  },
+  "arrebozar": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario «arrebozar» dice solo «rebozar / ocultar con ingenio»; el sentido de cubrir el rostro está en «rebozar» acepción 1. Se añadió esa fuente."
+  },
+  "atalayar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "henchir": {
+    "veredicto": "OK",
+    "nota": "Hay usos de «henchir las manos» (Ex 29:9) con sentido de consagrar; el significado «llenar» sigue valiendo. Nm 5:21 ya está excluido."
+  },
+  "aventar": {
+    "veredicto": "AJUSTAR",
+    "nota": "La fuente habla de bieldo, no de pala; se ajustó."
+  },
+  "heredad": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario: terreno cultivado de un dueño, hacienda y bienes raíces, y «herencia»; se reescribió para ajustarse (Gn 17:8 «heredad perpetua», Gn 23:9 finca)."
+  },
+  "guisar": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "asechanza": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "apercibir": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "atavio": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "canteria": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "sembradura": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "bdelio": {
+    "veredicto": "OK",
+    "nota": "Fuente y contexto coinciden."
+  },
+  "efod": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 25:7 (lista de materiales): se quitó el detalle de colores e hilos de Ex 28 y se dejó lo que dice Easton (lino, dos piezas, distintivo del oficio, el pectoral se fija a él). Se excluyen Nm 34:23 (Ephod es un nombre de persona) y Jue 8:27, 17:5, 18:14-20 (efod hecho como objeto de culto, otro uso que Easton no trata)."
+  },
+  "racional": {
+    "veredicto": "AJUSTAR",
+    "nota": "Se quitó «se ponían el Urim y Thummim» (Ex 28:30, posterior a la primera aparición en Ex 25:7 y que Easton no menciona en la entrada). Easton da unas diez pulgadas por lado y doce piedras, una por tribu."
+  },
+  "propiciatorio": {
+    "veredicto": "OK",
+    "nota": "Easton confirma que es la tapa del arca; `solo` cubre los versículos de la tapa (las demás «cubiertas» son de la tienda y quedan fuera: verificado). La descripción queda dentro de Ex 25:17-22."
+  },
+  "arca-testimonio": {
+    "veredicto": "OK",
+    "nota": "Citas literales; la descripción queda dentro de lo que dicen Ex 25:16-22. Certeza texto correcta (sin fuente externa)."
+  },
+  "ciudades-refugio": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton solo lista las seis ciudades y no explica su propósito; la explicación sale de Nm 35 (texto), así que se quitó Easton de las fuentes para no atribuirle lo que no dice."
+  },
+  "ano-sabatico": {
+    "veredicto": "OK",
+    "nota": "Easton confirma descanso de la tierra y que lo que brota es para pobres, extranjeros y animales. Ex 23:11 es anterior a Lv 25."
+  },
+  "remision": {
+    "veredicto": "AJUSTAR",
+    "nota": "Se quitó la finalidad («proteger a los endeudados de quedar atrapados») porque ni el texto ni Easton la dicen; Easton confirma el perdón de deudas al séptimo año (salvo las de extranjeros)."
+  },
+  "ofrenda-mecida": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 29:24: quien mece allí es Moisés, no «el sacerdote» (eso se dice después). Texto reformulado sin atribuir el gesto al sacerdote."
+  },
+  "ofrenda-elevada": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Lv 7:14: la explicación contaba Nm 18:19 (porción permanente de sacerdotes y familias), posterior. Se limita a Lv 7:14 y se quitó la afirmación sin fuente sobre «otras versiones»."
+  },
+  "primicias": {
+    "veredicto": "AJUSTAR",
+    "nota": "Se quitó «o lo primero que produce un rebaño» (Easton habla de frutos de la tierra, comparados con los primogénitos). Easton confirma el sentido de reconocimiento de que la cosecha viene de Dios."
+  },
+  "gavilla-omer": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton habla de «una gavilla de grano nuevo» pero no dice cebada; se quitó «de cebada» en nino. Identificación como inferida, correcta."
+  },
+  "pascua": {
+    "veredicto": "OK",
+    "nota": "Easton confirma: fiesta mayor que recuerda que el Señor perdonó las casas israelitas; contenido dentro de Ex 12 (primer pasaje con la palabra); citas literales."
+  },
+  "azimos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Gn 19:3 (Lot): la explicación hablaba de «las leyes», «ofrendas» y «fiesta» (posteriores) y de «plano», que el texto no dice. Se reduce a lo que dicen las palabras, con cita Gn 19:3; certeza inferido por la parte «más rápido», señalada como inferencia."
+  },
+  "fiesta-azimos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton dice que la Pascua se llama también fiesta de los ázimos y que no se podía comer ni guardar leudado; se reformuló sin «la tratan como una sola celebración» (exagerado)."
+  },
+  "fiesta-semanas": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 34:22: se quitó el conteo desde la gavilla y la ofrenda nueva (Lv 23, posterior). Easton confirma el nombre Pentecostés («quincuagésimo»; el nombre solo aparece en el NT) y que marca el fin de la cosecha de grano."
+  },
+  "dia-expiaciones": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Scapegoat) no habla de ayuno ni del sumo sacerdote: se quitó «y ayuna» y se atribuye al «sacerdote». Lv 16 es anterior a 23:27, por eso se puede remitir a él."
+  },
+  "ofrenda-culpa": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton: asham = «deuda», siempre un carnero. En Lv 14 aparece un cordero, así que se dice «normalmente» y se atribuye a Easton."
+  },
+  "tabernaculo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 25:9: la descripción (lugar santo y santísimo, atrio con altar, se desmonta y traslada) es de Ex 26-27 y Nm, posterior. Se limita a lo de Ex 25:8-9. Se excluye Ex 33:7-9 (la tienda de Moisés fuera del campamento, otra cosa)."
+  },
+  "velo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Ex 34:33-35 es el velo en el rostro de Moisés (otro sentido): se excluye. El resto es el velo del santuario; la descripción cabe en Ex 26:31-33."
+  },
+  "pan-proposicion": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 25:30: las doce hogazas, el cambio semanal y quién las come son de Lv 24 (posterior). Se limita a Ex 25:30 y a lo que Easton dice sobre el nombre."
+  },
+  "candelero": {
+    "veredicto": "OK",
+    "nota": "Easton confirma candelero de oro fino en el santuario; descripción dentro de Ex 25:31-40."
+  },
+  "incienso": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 25:6 (lista de materiales): se quitó lo de Ex 30 (altar, cada mañana). Easton: mezcla aromática que se quema en el culto; símbolo de la oración."
+  },
+  "fuente-metal": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton habla de cobre/bronce de los espejos (Ex 38:8, posterior); se dice solo «de metal», como el texto."
+  },
+  "libacion": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Gn 35:14: la explicación contaba las leyes de Ex 29 y Nm 28 (cantidades fijas, vino). Se limita a lo de Gn 35:14."
+  },
+  "sabado": {
+    "veredicto": "OK",
+    "nota": "Easton: origen en la creación, vínculo con el maná y Sinaí. Primera aparición Ex 16:22; el vínculo con Gn 2:2-3 es anterior."
+  },
+  "vaca-bermeja": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Nm 19:2 (pasaje Nm 19:1-10): el uso contra el contacto con un muerto es de Nm 19:11 en adelante. Se limita a lo del pasaje."
+  },
+  "aguas-amargas": {
+    "veredicto": "OK",
+    "nota": "Citas literales, contenido dentro de Nm 5:11-31; «lo deja a la decisión de Dios» se apoya en las fórmulas de maldición del texto; nino neutro."
+  },
+  "voto": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Gn 28:20: «la ley manda cumplirlo» es Nm 30 (posterior). Se pasa a Jacob y se cambia la cita a Gn 28:20."
+  },
+  "ungir": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Gn 31:13; se acota a la piedra de Jacob y a lo que dice Easton. Se excluyen Dt 28:40 y Rut 3:3 (untarse aceite como cuidado personal, no consagración)."
+  },
+  "todopoderoso": {
+    "veredicto": "OK",
+    "nota": "Citas literales; Gn 17:1 es la primera aparición y el texto no avanza nada."
+  },
+  "dios-alto": {
+    "veredicto": "OK",
+    "nota": "Citas literales; contenido ajustado a Gn 14:18-22."
+  },
+  "prenda": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Gn 38:17: la explicación contaba Ex 22:26 y Dt 24 (ley sobre el vestido, posterior). Se reescribe con Gn 38:17. Se excluyen Nm 31:20 (prenda de vestir) y 1S 17:18 (señales, otro sentido)."
+  },
+  "espigar": {
+    "veredicto": "AJUSTAR",
+    "nota": "Se excluye Jue 20:45 («rebuscaron» = persiguieron y mataron a rezagados, sentido figurado)."
+  },
+  "zapato": {
+    "veredicto": "OK",
+    "nota": "Cita literal y única aparición; el propio versículo explica el gesto."
+  },
+  "puerta-ciudad": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton confirma solo que en las puertas se celebraban juicios y se reunía la gente; no dice nada de comercio. Se reformula con lo que sí dice y con los casos de Gn 23 y 34."
+  },
+  "ancianos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 3:16: «Moisés los reúne» y «funciones de gobierno y justicia local» eran posteriores. Se limita a lo que Easton dice (autoridad, representan al pueblo, magistrados)."
+  },
+  "hisopo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 12:22 (untar sangre): se quitó «ritos de purificación» (Lv 14, Nm 19, posteriores). Easton no zanja la identidad: recoge mejorana y alcaparra."
+  },
+  "astaroth": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton: diosa lunar fenicia, principio femenino de la naturaleza, emparejada con Baal. «Diosa de la fertilidad» no está en Easton; se corrige."
+  },
+  "dagon": {
+    "veredicto": "OK",
+    "nota": "Easton: nombre ligado a «pez», dios nacional filisteo, cuerpo de pez con cabeza y manos humanas, templos en Gaza y Asdod. Jos 15:41 y 19:27 (Bet-dagón, topónimo) ya estaban excluidos."
+  },
+  "asera": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton: asera = imagen o poste de madera que representaba a Astoret, a menudo en una arboleda; se quitó «junto a los altares» (Dt 16:21 y Jue 6, posteriores a Ex 34:13). La lista `solo` cubre los usos de «bosque» como asera."
+  },
+  "duelo": {
+    "veredicto": "OK",
+    "nota": "Easton: tela áspera de pelo de cabra; señal de duelo y de arrepentimiento. Solo 3 apariciones, todas de duelo."
   }
 }

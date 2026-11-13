@@ -106,7 +106,7 @@
       "aparejo",
       "aparejados"
     ],
-    "adulto": "Preparar o disponer lo necesario. El sustantivo «aparejo» nombra también el arnés o la montura de una cabalgadura.",
+    "adulto": "Preparar, prevenir o disponer lo necesario. «Aparejar» una cabalgadura es ponerle el aparejo (arnés o montura), y de ahí «aparejo»; así se entiende por el contexto en los pasajes de animales de monta.",
     "nino": "Dejar algo preparado.",
     "certeza": "externa",
     "fuentes": [
@@ -215,7 +215,7 @@
       "estotra",
       "esotra"
     ],
-    "adulto": "«Esotra» es «esa otra» y «estotra», por su formación, «esta otra»: contracciones antiguas de demostrativo y «otro».",
+    "adulto": "«Esotra» es «esa otra» (Wikcionario: «ese otro»); «estotra» se forma igual con «esta» (por analogía, no figura en la fuente). En el texto, «de estotra parte del Jordán» quiere decir «del otro lado del Jordán».",
     "nino": "Quiere decir «esa otra» o «esta otra».",
     "certeza": "externa",
     "fuentes": [
@@ -348,7 +348,9 @@
         "idioma": "es"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Gn 45:26"
+    ],
     "solo": null
   },
   "dilatar": {
@@ -389,7 +391,7 @@
       "esforzarán",
       "esfuérzame"
     ],
-    "adulto": "Animar o dar fuerza; «esforzarse» es cobrar ánimo y fortaleza, y «esforzado» es el valiente y fuerte.",
+    "adulto": "Dar fuerza o ánimo; «esforzarse» es cobrar ánimo y fuerza, o poner empeño y hacer esfuerzos por algo; el «esforzado» es quien tiene ese ánimo y fuerza, valiente (el participio no está en la fuente: se deduce del contexto, p. ej. «esforzaos y sed valientes»).",
     "nino": "Tener ánimo y ser valiente.",
     "certeza": "externa",
     "fuentes": [
@@ -1060,16 +1062,23 @@
       "bocinas",
       "bocina"
     ],
-    "adulto": "Instrumento de viento que se tocaba soplando, hecho de cuerno o metal; equivale a «trompeta» o «cuerno». No es la bocina de un auto.",
+    "adulto": "Instrumento de viento que se tocaba soplando; en la RV equivale a «trompeta» (la palabra viene del latín «bucina», trompeta), y las había de cuerno de carnero o de metal. No es la bocina de un auto.",
     "nino": "Un cuerno o trompeta que se sopla.",
     "certeza": "externa",
     "fuentes": [
       {
         "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "bocina",
+        "url": "https://es.wiktionary.org/wiki/bocina",
+        "idioma": "es"
+      },
+      {
+        "tipo": "diccionario",
         "obra": "Easton's Bible Dictionary (1897)",
         "autor": "M. G. Easton",
-        "entrada": "Cornet",
-        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cornet.html",
+        "entrada": "Trumpets",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/trumpets.html",
         "idioma": "en"
       }
     ],
@@ -1193,7 +1202,7 @@
     "formas": [
       "alhajas"
     ],
-    "adulto": "Objeto de valor o cosa muy apreciada; en un sentido antiguo, el conjunto de bienes que alguien posee, sus enseres y pertenencias.",
+    "adulto": "Objeto de valor o cosa muy apreciada, como las joyas; en un sentido antiguo, también el conjunto de bienes que alguien posee. Por el contexto, en la RV puede ser también lo que hay en una casa o lugar: enseres y utensilios.",
     "nino": "Cosas y utensilios de valor.",
     "certeza": "externa",
     "fuentes": [
@@ -1320,7 +1329,7 @@
     "formas": [
       "estambre"
     ],
-    "adulto": "Hilo de lana; en los textos de lepra, el hilo de la urdimbre de una tela.",
+    "adulto": "Hilo de lana (Wikcionario: hebras largas del vellón; hilado de fibras cardadas). En los textos de lepra, puesto junto a «trama», se entiende por contraste el hilo de la urdimbre de la tela; eso último sale del contexto, no de la fuente.",
     "nino": "Hilo de lana.",
     "certeza": "externa",
     "fuentes": [
@@ -1341,7 +1350,7 @@
     "formas": [
       "frontales"
     ],
-    "adulto": "Cintas o estuches que se llevan atados sobre la frente. El mandato también se entendió de forma figurada, como tener siempre presente la ley.",
+    "adulto": "Lo que se lleva atado entre los ojos, sobre la frente, como señal. Según Easton, el mandato significa tener las palabras de la ley siempre a la vista y atenderlas; después del regreso de Babilonia se tomó al pie de la letra y se llevaron pasajes escritos en tiras de pergamino (tefilín).",
     "nino": "Algo que se lleva atado en la frente.",
     "certeza": "externa",
     "fuentes": [
@@ -1426,7 +1435,7 @@
     "formas": [
       "lesna"
     ],
-    "adulto": "Lezna, instrumento punzante para perforar cuero u otras cosas; es la «lesna» de la RV.",
+    "adulto": "Lezna: instrumento punzante para hacer agujeros. Easton señala que en la Biblia aparece solo ligada a la costumbre de horadar la oreja del siervo.",
     "nino": "Una herramienta con punta para hacer agujeros.",
     "certeza": "externa",
     "fuentes": [
@@ -1561,8 +1570,8 @@
       {
         "tipo": "diccionario",
         "obra": "Wikcionario en español (es.wiktionary.org)",
-        "entrada": "mortecina",
-        "url": "https://es.wiktionary.org/wiki/mortecina",
+        "entrada": "mortecino",
+        "url": "https://es.wiktionary.org/wiki/mortecino",
         "idioma": "es"
       }
     ],
@@ -1575,8 +1584,8 @@
     "formas": [
       "odre"
     ],
-    "adulto": "Bolsa de cuero, normalmente de piel de cabra, para llevar líquidos como agua o vino.",
-    "nino": "Una bolsa de cuero para llevar agua o vino.",
+    "adulto": "Bolsa hecha de piel, para llevar líquidos como agua, leche o vino.",
+    "nino": "Una bolsa de piel para llevar agua o vino.",
     "certeza": "externa",
     "fuentes": [
       {
@@ -1604,8 +1613,8 @@
       {
         "tipo": "diccionario",
         "obra": "Wikcionario en español (es.wiktionary.org)",
-        "entrada": "pertrecho",
-        "url": "https://es.wiktionary.org/wiki/pertrecho",
+        "entrada": "pertrechos",
+        "url": "https://es.wiktionary.org/wiki/pertrechos",
         "idioma": "es"
       }
     ],
@@ -1639,7 +1648,7 @@
     "formas": [
       "sobrestante"
     ],
-    "adulto": "Capataz, el que vigila y dirige a los trabajadores.",
+    "adulto": "El que tiene a su cargo vigilar y llevar la cuenta del trabajo en una obra (Wikcionario: materiales y jornales). Aquí, por el contexto, el encargado de los segadores.",
     "nino": "El encargado de los trabajadores.",
     "certeza": "externa",
     "fuentes": [
@@ -1840,7 +1849,7 @@
     "formas": [
       "arrebozóse"
     ],
-    "adulto": "Cubrirse el rostro, tapar la cara con la ropa o con un manto.",
+    "adulto": "Cubrirse el rostro, tapar la cara con la capa o con un manto («rebozar» en el sentido de cubrir casi todo el rostro con la capa; Wikcionario).",
     "nino": "Taparse la cara.",
     "certeza": "externa",
     "fuentes": [
@@ -1849,6 +1858,13 @@
         "obra": "Wikcionario en español (es.wiktionary.org)",
         "entrada": "arrebozar",
         "url": "https://es.wiktionary.org/wiki/arrebozar",
+        "idioma": "es"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "rebozar",
+        "url": "https://es.wiktionary.org/wiki/rebozar",
         "idioma": "es"
       }
     ],
@@ -1937,7 +1953,7 @@
     "formas": [
       "avienta"
     ],
-    "adulto": "Echar el grano al aire con una pala para separar la paja, que se lleva el viento.",
+    "adulto": "Lanzar el grano trillado contra el viento para separarlo de la paja, que se lleva el aire (Wikcionario: con el bieldo).",
     "nino": "Lanzar el grano al viento para limpiarlo.",
     "certeza": "externa",
     "fuentes": [
@@ -1959,7 +1975,7 @@
       "heredad",
       "heredades"
     ],
-    "adulto": "Propiedad, sobre todo la tierra que se recibe en herencia o por reparto. No es sólo lo heredado.",
+    "adulto": "Porción de terreno que pertenece a un dueño, o hacienda de campo y bienes raíces; también «herencia», lo que se recibe como posesión. No es solo lo heredado.",
     "nino": "La tierra que alguien recibe como suya.",
     "certeza": "externa",
     "fuentes": [

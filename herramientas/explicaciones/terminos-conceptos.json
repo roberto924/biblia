@@ -537,7 +537,7 @@
     "formas": [
       "ephod"
     ],
-    "adulto": "El efod (la RV1909 escribe «ephod») es una vestidura sagrada del sacerdote, de lino fino con hilos de oro, azul, púrpura y carmesí, hecha por un bordador. El pectoral o «racional» se fijaba sobre él. Los diccionarios lo describen como una prenda de lino que distinguía al sacerdote.",
+    "adulto": "El efod (la RV1909 escribe «ephod») es una prenda sagrada del sacerdote; en la primera mención solo aparece entre los materiales que se piden para el santuario. Según Easton era de lino, en dos piezas que cubrían pecho y espalda, y distinguía al sacerdote; el pectoral o «racional» se fijaba sobre él. Más adelante la ley precisa cómo se hace.",
     "nino": "Una prenda sagrada muy bordada que usaba el sacerdote.",
     "certeza": "texto",
     "fuentes": [
@@ -554,7 +554,15 @@
         "idioma": "en"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Nm 34:23",
+      "Jue 8:27",
+      "Jue 17:5",
+      "Jue 18:14",
+      "Jue 18:17",
+      "Jue 18:18",
+      "Jue 18:20"
+    ],
     "solo": null
   },
   "racional": {
@@ -563,7 +571,7 @@
     "formas": [
       "racional"
     ],
-    "adulto": "En la RV1909 el «racional del juicio» es el pectoral del sumo sacerdote: una pieza cuadrada, de un palmo, con cuatro órdenes de piedras preciosas, que se sujetaba al efod. En él se ponían el Urim y Thummim. Aquí «racional» no significa «razonable»: es el nombre de la prenda.",
+    "adulto": "En la RV1909 el «racional del juicio» es el pectoral del sacerdote: una pieza cuadrada, labrada con primor, con cuatro órdenes de piedras preciosas (Easton: doce piedras, una por tribu), que se sujetaba al efod. Aquí «racional» no significa «razonable»: es el nombre de la prenda.",
     "nino": "Una pieza cuadrada con piedras de colores que el sacerdote llevaba sobre el pecho.",
     "certeza": "texto",
     "fuentes": [
@@ -864,13 +872,6 @@
         "tipo": "biblia",
         "ref": "Nm 35:13",
         "cita": "tendréis seis ciudades de acogimiento"
-      },
-      {
-        "tipo": "diccionario",
-        "obra": "Easton's Bible Dictionary (1897)",
-        "entrada": "Refuge, Cities of",
-        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/refuge-cities-of.html",
-        "idioma": "en"
       }
     ],
     "excluir": [],
@@ -998,7 +999,7 @@
       "año de la remisión",
       "remisión"
     ],
-    "adulto": "Cada siete años, la ley manda hacer «remisión»: quien prestó a su prójimo no le exige más lo prestado, porque «la remisión de Jehová es pregonada». Es una forma de proteger a los endeudados de quedar atrapados para siempre.",
+    "adulto": "Cada siete años, la ley manda hacer «remisión»: quien prestó a su prójimo no le exige más lo prestado, porque «la remisión de Jehová es pregonada». Easton la trata junto con el año sabático y señala que la deuda de un extranjero quedaba fuera.",
     "nino": "Cada siete años se perdonaban las deudas entre los israelitas.",
     "certeza": "texto",
     "fuentes": [
@@ -1028,7 +1029,7 @@
       "ofrendas agitadas",
       "mecerás"
     ],
-    "adulto": "La ofrenda mecida (o «agitada») es una parte de lo que se ofrece que el sacerdote presenta moviéndola delante de Jehová, como gesto de entrega. El texto describe el gesto («lo mecerás agitándolo») pero no explica su significado; luego la porción pasa a ser de los sacerdotes.",
+    "adulto": "La ofrenda mecida (o «agitada») es una parte de lo que se ofrece que se presenta moviéndola delante de Jehová, como gesto de entrega. El texto describe el gesto («lo mecerás agitándolo») pero no explica su significado; en Ex 29:26 esa parte pasa a ser porción del sacerdote.",
     "nino": "Un gesto en que el sacerdote presentaba una ofrenda moviéndola delante de Dios.",
     "certeza": "texto",
     "fuentes": [
@@ -1048,14 +1049,14 @@
       "ofrenda elevada",
       "ofrendas elevadas"
     ],
-    "adulto": "Es la parte de las ofrendas santas que los israelitas apartan para Dios y que Dios da a los sacerdotes y sus familias como porción permanente. En la RV1909 aparece como «ofrenda elevada»; otras versiones dicen «ofrenda alzada» o «contribución».",
-    "nino": "La parte de lo ofrecido que se apartaba para Dios y era la comida de los sacerdotes.",
+    "adulto": "La «ofrenda elevada» es una parte de lo que se ofrece que se aparta para Jehová. En Lv 7:14 se presenta una parte de la ofrenda así, y esa parte es del sacerdote que rocía la sangre.",
+    "nino": "Una parte de lo ofrecido que se apartaba para Dios y era del sacerdote.",
     "certeza": "texto",
     "fuentes": [
       {
         "tipo": "biblia",
-        "ref": "Nm 18:19",
-        "cita": "Todas las ofrendas elevadas de las cosas santas, que los hijos de Israel ofrecieren á Jehová, helas dado para ti"
+        "ref": "Lv 7:14",
+        "cita": "una parte por ofrenda elevada"
       }
     ],
     "excluir": [],
@@ -1068,7 +1069,7 @@
       "primicias",
       "primicia"
     ],
-    "adulto": "Las primicias son los primeros frutos de la cosecha (o lo primero que produce un rebaño), que se apartan para Dios antes de aprovechar el resto. Expresan que la tierra y su fruto vienen de Él. La ley manda no retrasarlas.",
+    "adulto": "Las primicias son los primeros frutos de la cosecha, que se apartan para Dios antes de aprovechar el resto. Según Easton expresan el reconocimiento de que la cosecha viene del Señor. La ley manda no retrasarlas.",
     "nino": "Lo primero que daba la cosecha, que se entregaba a Dios.",
     "certeza": "texto",
     "fuentes": [
@@ -1096,7 +1097,7 @@
       "el omer"
     ],
     "adulto": "En Levítico 23 la RV1909 usa «omer» para el haz de grano nuevo que se lleva al sacerdote como primicia y que este «mecerá» delante de Jehová. No parece ser la medida pequeña de Éxodo 16: el contexto habla de una gavilla. Es una identificación por el contexto, no una definición del texto.",
-    "nino": "El primer manojo de la cosecha de cebada, que se ofrecía a Dios.",
+    "nino": "El primer manojo de la cosecha, que se ofrecía a Dios.",
     "certeza": "inferido",
     "fuentes": [
       {
@@ -1232,10 +1233,15 @@
       "ázimos",
       "sin levadura"
     ],
-    "adulto": "El pan «sin levadura» (ázimo) es pan hecho sin fermento, plano y que se prepara rápido. Aparece como comida de urgencia y, en las leyes, en las ofrendas y en la fiesta que lleva su nombre. La levadura se asocia con fermentar y avanzar, y su ausencia con prisa o pureza.",
+    "adulto": "El pan «sin levadura» (ázimo) es pan hecho sin fermento. En Gn 19:3 Lot lo cuece para sus huéspedes. Que se prepare más rápido que el pan fermentado es una inferencia, no algo que diga el texto.",
     "nino": "Pan plano, hecho sin levadura, que se prepara rápido.",
     "certeza": "inferido",
     "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 19:3",
+        "cita": "coció panes sin levadura"
+      },
       {
         "tipo": "biblia",
         "ref": "Ex 12:15",
@@ -1251,7 +1257,7 @@
     "formas": [
       "fiesta de los ázimos"
     ],
-    "adulto": "La fiesta de los ázimos dura siete días, en que se come pan sin levadura, y se celebra en el mes de Abib porque en él Israel salió de Egipto. Está unida a la Pascua: los diccionarios la tratan como una sola celebración.",
+    "adulto": "La fiesta de los ázimos dura siete días, en que se come pan sin levadura, y se celebra en el mes de Abib porque en él Israel salió de Egipto. Easton explica que la Pascua se llama también fiesta de los ázimos, porque durante ella no se podía comer ni guardar pan con levadura.",
     "nino": "Una fiesta de siete días en que se comía pan sin levadura para recordar la salida de Egipto.",
     "certeza": "texto",
     "fuentes": [
@@ -1277,7 +1283,7 @@
     "formas": [
       "fiesta de las semanas"
     ],
-    "adulto": "La fiesta de las semanas se celebra al comienzo de la siega del trigo. La ley manda contar siete semanas desde el día de la gavilla, es decir, cincuenta días, y entonces presentar una ofrenda nueva; por eso más tarde se la llamó «Pentecostés» (del griego, «quincuagésimo»).",
+    "adulto": "La fiesta de las semanas se celebra, según la ley, «á los principios de la siega del trigo». Easton explica que más tarde se la llamó «Pentecostés» (del griego, «quincuagésimo»), por caer en el día cincuenta, y que marca el cierre de la cosecha de grano.",
     "nino": "Una fiesta de cosecha que se celebraba cincuenta días después de otra fiesta.",
     "certeza": "externa",
     "fuentes": [
@@ -1285,11 +1291,6 @@
         "tipo": "biblia",
         "ref": "Ex 34:22",
         "cita": "la fiesta de las semanas á los principios de la siega del trigo"
-      },
-      {
-        "tipo": "biblia",
-        "ref": "Lv 23:16",
-        "cita": "contaréis cincuenta días"
       },
       {
         "tipo": "diccionario",
@@ -1343,7 +1344,7 @@
       "día de las expiaciones",
       "día de expiaciones"
     ],
-    "adulto": "Es el día diez del mes séptimo, de «santa convocación», en que el pueblo «aflige sus almas» (se humilla y ayuna) y se ofrecen ofrendas. Ese día el sumo sacerdote hacía la reconciliación por el santuario y por el pueblo, como describe Levítico 16.",
+    "adulto": "Es el día diez del mes séptimo, de «santa convocación», en que el pueblo «aflige sus almas» (se humilla) y se ofrece ofrenda. Según Lv 16, ese día el sacerdote hace la reconciliación; Easton recuerda que el macho cabrío vivo se enviaba al desierto con la culpa de Israel.",
     "nino": "Un día muy solemne del año en que el pueblo pedía perdón a Dios.",
     "certeza": "texto",
     "fuentes": [
@@ -1395,7 +1396,7 @@
     "formas": [
       "por la culpa"
     ],
-    "adulto": "La ofrenda «por la culpa» es un sacrificio para reparar un daño o una falta que se ve como una deuda, sobre todo en ofensas contra algo sagrado o contra el prójimo. Easton señala que era un carnero y que el hebreo (asham) significa «deuda».",
+    "adulto": "La ofrenda «por la culpa» es un sacrificio para reparar un daño o una falta que se ve como una deuda. Según Easton, el hebreo (asham) significa «deuda» y el animal era normalmente un carnero.",
     "nino": "Un sacrificio para reparar una falta, como cuando se arregla algo roto.",
     "certeza": "externa",
     "fuentes": [
@@ -1569,7 +1570,7 @@
       "tabernáculo de la congregación",
       "tabernáculo"
     ],
-    "adulto": "El tabernáculo es la tienda sagrada y portátil que Dios manda hacer para habitar en medio de su pueblo, según el modelo que muestra a Moisés. Es un recinto de tela y madera con un lugar santo y un lugar santísimo, rodeado de un atrio con el altar. Se desmonta y se traslada con el pueblo.",
+    "adulto": "El tabernáculo es la tienda sagrada que Dios manda hacer para habitar en medio de su pueblo, según el modelo («diseño») que muestra a Moisés. Los detalles de su forma se dan en los pasajes siguientes.",
     "nino": "La tienda sagrada donde Dios habitaba entre su pueblo, que se llevaba de viaje.",
     "certeza": "texto",
     "fuentes": [
@@ -1586,7 +1587,9 @@
         "idioma": "en"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Ex 33:7-9"
+    ],
     "solo": null
   },
   "velo": {
@@ -1610,7 +1613,8 @@
       "Gn 24:65",
       "Gn 38:14",
       "Gn 38:19",
-      "1S 21:9"
+      "1S 21:9",
+      "Ex 34:33-35"
     ],
     "solo": null
   },
@@ -1621,8 +1625,8 @@
       "pan de la proposición",
       "panes de la proposición"
     ],
-    "adulto": "Es el pan que se coloca sobre la mesa del santuario «delante de Dios continuamente». Los diccionarios lo describen como doce panes que se renuevan cada sábado y que solo comían los sacerdotes, y los relacionan con las doce tribus.",
-    "nino": "El pan que se ponía siempre en la mesa del santuario.",
+    "adulto": "Es el pan que se pone sobre la mesa del santuario «delante de Dios continuamente». Easton recoge que otras traducciones lo llaman «pan de la presencia» o «pan santo».",
+    "nino": "El pan que se ponía siempre en la mesa del santuario, delante de Dios.",
     "certeza": "externa",
     "fuentes": [
       {
@@ -1674,7 +1678,7 @@
       "sahumerio",
       "incienso"
     ],
-    "adulto": "El sahumerio es una mezcla aromática que se quema como ofrenda, y el incienso es su ingrediente principal. En el santuario se quema cada mañana sobre un altar especial. Los diccionarios lo asocian con la oración que sube hacia Dios.",
+    "adulto": "El sahumerio es una mezcla aromática que se quema en el culto, y el incienso, una sustancia aromática de esa mezcla. Easton recoge que simbolizaba la oración que sube a Dios; la ley detalla su uso más adelante.",
     "nino": "Un perfume que se quemaba en el santuario y que olía muy bien.",
     "certeza": "externa",
     "fuentes": [
@@ -1700,7 +1704,7 @@
     "formas": [
       "fuente de metal"
     ],
-    "adulto": "Es el gran recipiente de bronce del atrio del tabernáculo, entre la tienda y el altar, lleno de agua. Los sacerdotes se lavaban en él antes de acercarse al altar o entrar en la tienda.",
+    "adulto": "Es el gran recipiente de metal del atrio del tabernáculo, entre la tienda y el altar, lleno de agua. Los sacerdotes se lavaban en él antes de entrar en la tienda o acercarse al altar.",
     "nino": "Una gran palangana con agua donde los sacerdotes se lavaban.",
     "certeza": "texto",
     "fuentes": [
@@ -1727,14 +1731,14 @@
       "libación",
       "libaciones"
     ],
-    "adulto": "La libación es un líquido, normalmente vino, que se derrama como ofrenda. En las ofrendas de la ley acompaña a la harina y el aceite en cantidades fijas, y en Génesis aparece ya cuando se derrama sobre una piedra erigida como señal.",
-    "nino": "Vino que se derramaba como ofrenda a Dios.",
+    "adulto": "La libación es un líquido que se derrama como ofrenda. En Gn 35:14 Jacob derrama libación sobre una piedra que erige como señal y echa aceite sobre ella.",
+    "nino": "Un líquido que se derramaba como ofrenda a Dios.",
     "certeza": "texto",
     "fuentes": [
       {
         "tipo": "biblia",
-        "ref": "Ex 29:40",
-        "cita": "y la libación será la cuarta parte de un hin de vino"
+        "ref": "Gn 35:14",
+        "cita": "derramó sobre él libación"
       }
     ],
     "excluir": [],
@@ -1827,7 +1831,7 @@
       "agua de separación",
       "aguas de purificación"
     ],
-    "adulto": "La vaca bermeja es un animal rojizo que se quema, y sus cenizas se guardan fuera del campo y se mezclan con agua para el «agua de separación», con la que se purifica a quien tuvo contacto con un muerto. La propia ley lo llama «expiación».",
+    "adulto": "La vaca bermeja (rojiza) es un animal sin defecto que se quema, y sus cenizas se guardan fuera del campo para el «agua de separación». La propia ley lo llama «expiación». Para qué se usa esa agua se explica en los versículos siguientes.",
     "nino": "Un rito con agua y cenizas para purificar a las personas.",
     "certeza": "texto",
     "fuentes": [
@@ -1955,14 +1959,14 @@
       "voto",
       "votos"
     ],
-    "adulto": "El voto es una promesa solemne hecha a Dios, a veces condicionada a su ayuda. Una vez hecho, la ley manda cumplirlo: no se debe violar la palabra dada.",
+    "adulto": "El voto es una promesa solemne hecha a Dios, a menudo condicionada a su ayuda: Jacob promete algo «si fuere Dios conmigo». Una vez hecho, es un compromiso que se debe cumplir.",
     "nino": "Una promesa muy seria hecha a Dios.",
     "certeza": "texto",
     "fuentes": [
       {
         "tipo": "biblia",
-        "ref": "Nm 30:3",
-        "cita": "no violará su palabra"
+        "ref": "Gn 28:20",
+        "cita": "E hizo Jacob voto, diciendo: Si fuere Dios conmigo"
       }
     ],
     "excluir": [],
@@ -2036,7 +2040,7 @@
       "ungió",
       "ungiólo"
     ],
-    "adulto": "Ungir es derramar o frotar aceite sobre una persona o cosa para consagrarla. Se unge a personas y a objetos, como la piedra que Jacob levanta como señal. El aceite marca que esa persona o cosa queda reservada para Dios. «Ungido» es quien ha recibido esa unción.",
+    "adulto": "Ungir es derramar o frotar aceite sobre una cosa o una persona para apartarla para Dios; en Génesis, Jacob unge la piedra que levanta como señal. «Ungido» es quien ha recibido esa unción. Según Easton, el aceite también se usaba en la vida diaria.",
     "nino": "Derramar aceite sobre alguien o algo para apartarlo para Dios.",
     "certeza": "texto",
     "fuentes": [
@@ -2053,7 +2057,10 @@
         "idioma": "en"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Dt 28:40",
+      "Rut 3:3"
+    ],
     "solo": null
   },
   "hebreo": {
@@ -2247,17 +2254,20 @@
       "prenda",
       "prendas"
     ],
-    "adulto": "La prenda es algo que se entrega o se toma como garantía de una deuda o promesa. La ley protege al deudor: si alguien toma en prenda el vestido del prójimo, debe devolverlo antes de que se ponga el sol, porque es su único abrigo.",
+    "adulto": "La prenda es algo que se entrega como garantía de una promesa o de una deuda, hasta cumplirla. Por ejemplo, en Gn 38 Tamar pide a Judá su anillo, su manto y su bordón como prenda hasta que le envíe el cabrito prometido.",
     "nino": "Algo que se dejaba como garantía hasta cumplir una promesa o pagar.",
     "certeza": "texto",
     "fuentes": [
       {
         "tipo": "biblia",
-        "ref": "Ex 22:26",
-        "cita": "Si tomares en prenda el vestido de tu prójimo"
+        "ref": "Gn 38:17",
+        "cita": "Hasme de dar prenda hasta que lo envíes"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Nm 31:20",
+      "1S 17:18"
+    ],
     "solo": null
   },
   "espigar": {
@@ -2285,7 +2295,9 @@
         "cita": "para el pobre y para el extranjero los dejarás"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Jue 20:45"
+    ],
     "solo": null
   },
   "zapato": {
@@ -2315,7 +2327,7 @@
       "puerta de su ciudad",
       "puerta del lugar"
     ],
-    "adulto": "La puerta de la ciudad no es solo una entrada: es el lugar público donde los vecinos se reúnen, se tratan los asuntos y se celebran los juicios. Por eso el que «entra por la puerta» participa en los acuerdos de la ciudad.",
+    "adulto": "La puerta de la ciudad no es solo una entrada: es un lugar público donde se reúnen los vecinos y se tratan asuntos (Gn 23:10; 34:20). Según Easton, allí solían reunirse también los jueces.",
     "nino": "El lugar de la entrada de la ciudad, donde los vecinos se reunían y decidían asuntos.",
     "certeza": "externa",
     "fuentes": [
@@ -2343,7 +2355,7 @@
       "ancianos del pueblo",
       "ancianos de la ciudad"
     ],
-    "adulto": "Los «ancianos» son hombres de edad y autoridad que representan y dirigen a la comunidad. Moisés los reúne para hablar con el pueblo, y con el tiempo ejercen funciones de gobierno y justicia local.",
+    "adulto": "Los «ancianos» son hombres de edad respetados y con autoridad que representan al pueblo. En Ex 3:16 Dios manda a Moisés reunirlos. Según Easton, a lo largo de la historia de Israel fueron jefes y magistrados locales.",
     "nino": "Los hombres de más edad y respeto que guiaban al pueblo.",
     "certeza": "externa",
     "fuentes": [
@@ -2449,8 +2461,8 @@
     "formas": [
       "hisopo"
     ],
-    "adulto": "El hisopo es una planta de ramas con la que se esparcía sangre o agua en los ritos de purificación. Su identificación exacta es discutida: Easton la considera más probablemente la alcaparra que el mejor.",
-    "nino": "Un manojo de ramitas que se usaba para esparcir sangre o agua en los ritos.",
+    "adulto": "El hisopo es una planta de ramas; en Ex 12:22 se toma un manojo para untar la sangre en el dintel y los postes. Su identificación exacta es incierta: Easton recoge que algunos piensan en una especie de mejorana y otros, con más probabilidad, en la alcaparra.",
+    "nino": "Un manojo de ramitas con que se untaba sangre en las puertas.",
     "certeza": "externa",
     "fuentes": [
       {
@@ -2516,7 +2528,7 @@
     "formas": [
       "Astaroth"
     ],
-    "adulto": "Astaroth (Astoret) es la divinidad femenina principal de los cananeos, que Israel adoraba junto con Baal. Era una diosa de la naturaleza y la fertilidad.",
+    "adulto": "Astaroth (Astoret) es una divinidad femenina que adoraban los pueblos de Canaán junto con Baal. Según Easton, era la diosa lunar fenicia y representaba el principio femenino de la naturaleza.",
     "nino": "Una diosa falsa que adoraban los pueblos vecinos.",
     "certeza": "externa",
     "fuentes": [
@@ -2605,7 +2617,7 @@
       "bosques",
       "bosque"
     ],
-    "adulto": "En varios pasajes la RV1909 manda «talar los bosques» de otros pueblos. Se trata de la asera, un poste o árbol de madera consagrado a una diosa cananea, que solía plantarse junto a los altares. Lo que traduce «bosque» aquí no es una selva sino ese objeto de culto.",
+    "adulto": "En varios pasajes la RV1909 manda «talar los bosques» de otros pueblos. Según Easton, se trata de la asera, un poste o imagen de madera que representaba a una diosa cananea (Astoret). Lo que traduce «bosque» aquí no es una selva sino ese objeto de culto.",
     "nino": "Un poste de madera consagrado a una diosa falsa, que Dios mandó derribar.",
     "certeza": "externa",
     "fuentes": [
