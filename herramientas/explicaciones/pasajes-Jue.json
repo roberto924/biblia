@@ -1,0 +1,24 @@
+{
+  "jue-11-voto-jefte": {
+    "refs": "Jue 11:29-40",
+    "titulo": "El voto de Jefté",
+    "dice": [
+      {"ref": "Jue 11:31", "cita": "será de Jehová, y le ofreceré en holocausto"},
+      {"ref": "Jue 11:37", "cita": "llore mi virginidad"},
+      {"ref": "Jue 11:39", "cita": "hizo de ella conforme á su voto que había hecho. Y ella nunca conoció varón"},
+      {"ref": "Jue 11:40", "cita": "iban las doncellas de Israel á endechar á la hija de Jephté Galaadita"}
+    ],
+    "posturas": [
+      {
+        "resumen": "Jefté la ofreció de verdad en sacrificio: cumplió el voto tal como lo había dicho. Quien lee así añade que el relato no aprueba el hecho; ya Josefo decía que ese sacrificio no lo mandaba la ley de Moisés ni lo aceptaba Dios.",
+        "fuente": {"tipo": "diccionario", "obra": "Smith's Bible Dictionary (1863)", "autor": "William Smith (ed.)", "entrada": "Jephthah", "url": "https://www.biblestudytools.com/dictionaries/smiths-bible-dictionary/jephthah.html", "idioma": "en"}
+      },
+      {
+        "resumen": "Jefté no la mató: la consagró a Dios de por vida, sin casarse, como un holocausto «espiritual». Esta lectura se apoya en que ella llora su virginidad y no su muerte, y en que el texto, justo después de decir que cumplió el voto, añade que «nunca conoció varón»; recuerda además a las mujeres que servían en el tabernáculo.",
+        "fuente": {"tipo": "obra", "obra": "Biblical Commentary on the Old Testament (1857–1878), Jueces 11", "autor": "Carl Friedrich Keil y Franz Delitzsch", "url": "https://biblehub.com/commentaries/kad/judges/11.htm", "idioma": "en"}
+      }
+    ],
+    "nino": null,
+    "certeza": "externa"
+  }
+}

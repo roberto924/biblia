@@ -870,6 +870,17 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 .rec-rotulo.rec-reconstruccion, .rec-rotulo.rec-ilustracion { background: color-mix(in srgb, var(--c-inferido) 14%, var(--hoja)); color: var(--c-inferido); }
 .rec-rotulo.rec-arqueologia, .rec-rotulo.rec-mapa_antiguo { background: color-mix(in srgb, var(--c-texto) 13%, var(--hoja)); color: var(--c-texto); }
 .rec-rotulo.rec-contexto { background: var(--hoja2); color: var(--suave); }
+.rec-rotulo.rec-registro { background: color-mix(in srgb, var(--c-texto) 13%, var(--hoja)); color: var(--c-texto); }
+/* El manuscrito: plegado al final del pasaje (Leer y Comparar); folio de Leningrado y enlaces a rollos y Vaticano. */
+.manuscrito { margin-top: 1.4rem; max-width: 46rem; padding: 0 1rem; background: var(--hoja); border: 1px solid var(--linea); border-radius: var(--r-panel); }
+.manuscrito > summary { gap: .55rem; flex-wrap: wrap; }
+.manuscrito .ms-sub { font-weight: 400; font-size: .84rem; color: var(--suave); }
+.ms-cuerpo { padding-bottom: 1rem; }
+.ms-folio { margin: 0 0 1rem; }
+.ms-marco .rec-img { max-height: min(34rem, 70vh); }
+.ms-sub-t { font-size: 1rem; margin: 1.1rem 0 .3rem; }
+.ms-enlaces { list-style: none; padding: 0; margin: .3rem 0; display: grid; gap: .55rem; }
+.ms-enlaces li { display: grid; gap: .1rem; padding-left: .7rem; border-left: 3px solid var(--linea); overflow-wrap: anywhere; }
 .rec-debatida { background: var(--difiere); color: var(--tinta); }
 .rec-carrusel { display: flex; align-items: center; justify-content: center; gap: .5rem; margin-top: .35rem; }
 .rec-paso { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--linea); border-radius: 50%; background: var(--hoja); color: var(--lapis); cursor: pointer; }
@@ -1333,3 +1344,32 @@ main:has(.tb) { max-width: 96rem; }
 .video-libro-bloq { display: flex; align-items: flex-start; gap: .4rem; }
 .sin-texto-orig { margin: .3rem 0 .8rem; padding-left: 1.1rem; font-size: .88rem; color: var(--suave); line-height: 1.45; }
 .sin-texto-orig strong { color: var(--tinta); font-weight: 600; }
+
+/* ---------- Explicaciones: término subrayado (punteado fino ocre; persona = subrayado continuo, lugar = texto azul punteado) ---------- */
+.termino { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: help; border-radius: .2rem; text-decoration: underline dotted; text-decoration-color: color-mix(in srgb, var(--c-inferido) 75%, transparent); text-decoration-thickness: 1.5px; text-underline-offset: .32em; transition: background var(--t), text-decoration-color var(--t); }
+.termino:hover { text-decoration-color: var(--c-inferido); background: color-mix(in srgb, var(--c-inferido) 12%, transparent); }
+.expl-interruptor span { min-height: 44px; }
+.expl-texto { font-family: var(--serif); font-size: 1.08rem; line-height: 1.55; }
+.expl-fuentes, .dificil-dice, .dificil-posturas, .glosario { list-style: none; padding: 0; margin: .3rem 0; }
+.expl-fuente { margin: .35rem 0; }
+.expl-fuente.bloqueada { color: var(--suave); display: flex; gap: .35rem; align-items: baseline; }
+.expl-calculo .cifra { margin: .2rem 0 .4rem; }
+.expl-calculo details summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; color: var(--lapis); font-weight: 600; }
+.expl-calculo ol, .expl-calculo ul:not(.expl-fuentes) { padding-left: 1.3rem; margin: .3rem 0; }
+.expl-calculo h4 { margin: .6rem 0 .2rem; font-size: .95rem; }
+/* Pasaje difícil: aviso plegable al inicio del pasaje */
+.dificil { margin: .75rem 0; border: 1px solid color-mix(in srgb, var(--c-inferido) 35%, var(--linea)); border-radius: var(--r-tarjeta); background: color-mix(in srgb, var(--c-inferido) 6%, var(--hoja)); }
+.dificil > summary { cursor: pointer; padding: .55rem .9rem; min-height: 44px; display: flex; flex-wrap: wrap; align-items: center; gap: .15rem .7rem; border-radius: var(--r-tarjeta); }
+.dificil-cab { display: inline-flex; align-items: center; gap: .4rem; color: var(--c-inferido); }
+.dificil-cab svg { width: 1.15rem; height: 1.15rem; flex: none; }
+.dificil-ref { color: var(--suave); font-size: .9rem; }
+.dificil-cuerpo { padding: 0 .9rem .8rem; }
+.dificil-cuerpo h3 { font-size: 1rem; margin: .8rem 0 .3rem; }
+.dificil-posturas > li { padding: .5rem 0; border-top: 1px solid var(--linea-suave); }
+.dificil-posturas p { margin: 0 0 .25rem; }
+/* Glosario (vista Fuentes) */
+.gl-buscar { max-width: 26rem; }
+.glosario li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .6rem; border-bottom: 1px solid var(--linea-suave); }
+.glosario .enlace-boton { font-size: 1rem; padding-left: 0; }
+.dificil-dice li { margin: .3rem 0 .6rem; }
+.dificil-dice blockquote { margin: .15rem 0 0; }

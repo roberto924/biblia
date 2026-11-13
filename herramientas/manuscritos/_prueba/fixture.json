@@ -1,0 +1,56 @@
+{
+ "nota": "Fixture de python -I herramientas/manuscritos.py --autoprueba. «salida» debe pasar verificar(); cada alteración debe fallar.",
+ "descripciones": [
+  {"desc": "The first page of the Leningrad Codex containing text from the Tanakh, folio 001b (1v) showing Genesis 1:1–26.", "esperado": [["Genesis", 1, 1], ["Genesis", 1, 26]]},
+  {"desc": "folio 008a (8r) showing Genesis 14:12–15:13.", "esperado": [["Genesis", 14, 12], ["Genesis", 15, 13]]},
+  {"desc": "folio 150a (150r) showing Judges 21:9 to 1 Samuel 1:7.", "esperado": [["Judges", 21, 9], ["1 Samuel", 1, 7]]},
+  {"desc": "folio 423a (423r) showing to Ruth 4:13 to Song of Songs 2:5.", "esperado": [["Ruth", 4, 13], ["Song of Songs", 2, 5]]},
+  {"desc": "folio 120a (120r) showing Deuteronomy 34:1–12 followed by a Masoretic list.", "esperado": [["Deuteronomy", 34, 1], ["Deuteronomy", 34, 12]]},
+  {"desc": "Leningrad Codex cover page E (Folio 474a). [Deuteronomy 26:15]", "esperado": null}
+ ],
+ "etiquetas": [
+  {"etq": "f1", "esperado": [1]},
+  {"etq": "f2_3", "esperado": [2, 3]},
+  {"etq": "f4ii+6", "esperado": [4, 6]},
+  {"etq": "f3ii+5_6i", "esperado": [3, 5, 6]},
+  {"etq": "f1a", "esperado": null},
+  {"etq": "10b_c", "esperado": null},
+  {"etq": "fA", "esperado": null}
+ ],
+ "contexto": {"pasajes": ["gn-01", "gn-02"], "rollos_testigo": ["4Q7", "4Q2"], "muestra": [["4Q7", "f1", "B-1"]]},
+ "salida": {
+  "leningrado": {
+   "folios": {
+    "001b": {"archivo": "File:Leningrad Codex Folio 001b.jpg", "pagina": "https://commons.wikimedia.org/wiki/File:Leningrad_Codex_Folio_001b.jpg",
+             "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Leningrad_Codex_Folio_001b.jpg/1280px-Leningrad_Codex_Folio_001b.jpg",
+             "licencia": "Public domain", "uso": "mostrar", "hebreo": "Gn 1:1-Gn 1:26", "rv": ["Gn 1:1-Gn 1:26"]},
+    "002a": {"archivo": "File:Leningrad Codex Folio 002a.jpg", "pagina": "https://commons.wikimedia.org/wiki/File:Leningrad_Codex_Folio_002a.jpg",
+             "miniatura": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Leningrad_Codex_Folio_002a.jpg/1280px-Leningrad_Codex_Folio_002a.jpg",
+             "licencia": "Some rights reserved", "uso": "solo_enlace", "hebreo": "Gn 1:26-Gn 2:19", "rv": ["Gn 1:26-Gn 2:19"]}
+   },
+   "pasajes": {"gn-01": ["001b"], "gn-02": ["001b", "002a"]}
+  },
+  "rollos": {
+   "4Q7": {"nivel": "fragmento", "laminas": [], "_A": [1], "_L": [1],
+           "fragmentos": [{"abegg": "f1", "versiculos": ["Gn 1:9"], "imagenes": [{"fragmento_ll": "1", "imagen": "B-1", "tipo_foto": "Full Spectrum Color Image"}]}]},
+   "4Q2": {"nivel": "lamina", "_A": [], "_L": [], "fragmentos": [],
+           "laminas": [{"imagen": "B-2", "tipo_foto": "Scanned Infrared Negative"}]}
+  },
+  "vaticano": {"libros": {
+   "Gn": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0005"}, "Ex": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0051"},
+   "Lv": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0103"}, "Nm": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0142"},
+   "Dt": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0195"}, "Jos": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0242"},
+   "Jue": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0275"}, "Rut": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0308"},
+   "1S": {"url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209/0313"}}}
+ },
+ "alteraciones": [
+  {"nombre": "pasaje sin folio", "ruta": ["leningrado", "pasajes", "gn-02"], "valor": []},
+  {"nombre": "se muestra un folio sin licencia abierta", "ruta": ["leningrado", "folios", "002a", "uso"], "valor": "mostrar"},
+  {"nombre": "miniatura fuera de Commons", "ruta": ["leningrado", "folios", "001b", "miniatura"], "valor": "https://example.org/folio.jpg"},
+  {"nombre": "fragmento enlazado sin que coincidan los números", "ruta": ["rollos", "4Q7", "_L"], "valor": [1, 2]},
+  {"nombre": "fragmento con etiqueta de columna", "ruta": ["rollos", "4Q7", "fragmentos", 0, "abegg"], "valor": "1a"},
+  {"nombre": "la muestra verificada ya no enlaza su imagen", "ruta": ["rollos", "4Q7", "fragmentos", 0, "imagenes", 0, "imagen"], "valor": "B-9"},
+  {"nombre": "falta un rollo testigo", "ruta": ["rollos", "4Q2"], "borrar": true},
+  {"nombre": "Vaticano sin 1 Samuel", "ruta": ["vaticano", "libros", "1S"], "borrar": true}
+ ]
+}

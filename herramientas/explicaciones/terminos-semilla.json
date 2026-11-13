@@ -1,0 +1,246 @@
+{
+  "siclo": {
+    "tipo": "medida",
+    "lema": "siclo",
+    "formas": [
+      "siclo",
+      "siclos"
+    ],
+    "adulto": "Unidad de peso para los metales, sobre todo la plata, que servía también para pagar antes de que hubiera monedas acuñadas. La ley dice que el siclo del santuario valía veinte óbolos. El texto no da su peso en unidades de hoy: los gramos son un cálculo a partir de una estimación externa.",
+    "nino": "Un peso que se usaba para pagar con plata. Pesaba entre 11 y 14 gramos, según la época (es un cálculo).",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 30:13",
+        "cita": "El siclo es de veinte óbolos"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Shekel",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/shekel.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "obra",
+        "obra": "Wikipedia (en), «Shekel» (recoge a J. Laden, «Iron Age Weight Found near Temple Mount», Biblical Archaeology Review, 2020)",
+        "autor": "varios; ver las obras que cita el artículo",
+        "url": "https://en.wikipedia.org/wiki/Shekel",
+        "idioma": "en"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 11,5–14,3 g",
+      "pasos": [
+        "Pesa arqueológica del Primer Templo: 23 g por dos siclos; 23 g ÷ 2 = 11,5 g por siclo (Wikipedia, que cita a Laden 2020).",
+        "Easton (1897): 220 granos ingleses; 1 grano inglés = 0,06479891 g (definición de la unidad); 220 × 0,06479891 g = 14,26 g ≈ 14,3 g.",
+        "Jewish Encyclopedia: 11,95 g (siclo «bíblico») y 14,34 g (siclo «del santuario»).",
+        "Rango: de ≈ 11,5 g (pesa arqueológica) a ≈ 14,3 g (Easton y siclo del santuario)."
+      ],
+      "supuestos": [
+        "Hay dos cifras con fuente abierta y no se elige una: la arqueológica (una pesa de dos siclos del período del Primer Templo hallada junto al área del Templo pesa 23 g, de modo que ≈ 11,5 g por siclo; Wikipedia, que cita a Laden 2020) y la tradicional (Easton: 220 granos ingleses ≈ 14,3 g; la Jewish Encyclopedia: 11,95 g el siclo «bíblico» y 14,34 g el «del santuario»).",
+        "El texto bíblico da solo las relaciones (siclo = 20 óbolos, Ex 30:13), no los gramos; los siclos pudieron variar según la época y el lugar."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Shekel",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/shekel.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "codo": {
+    "tipo": "medida",
+    "lema": "codo",
+    "formas": [
+      "codo",
+      "codos"
+    ],
+    "adulto": "Medida de longitud tomada del antebrazo: desde el codo hasta la punta de los dedos (o hasta la muñeca, según cómo se midiera; por eso su largo exacto es incierto). Equivale a unos 50 cm, con un margen de unos 5 cm según la fuente (cálculo).",
+    "nino": "Una medida de largo: lo que mide el brazo desde el codo hasta la punta de los dedos, más o menos medio metro.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Cubit",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cubit.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Dt 3:11",
+        "cita": "al codo de un hombre"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 51 cm (rango ≈ 49,5–55,6 cm)",
+      "pasos": [
+        "Easton recoge el cálculo común: 20,24 pulgadas para el codo ordinario y 21,888 para el «sagrado».",
+        "1 pulgada = 2,54 cm; 20,24 × 2,54 = 51,4 cm ≈ 51 cm; 21,888 × 2,54 = 55,6 cm.",
+        "La Jewish Encyclopedia da para el codo hebreo 495 o 525 mm (49,5 o 52,5 cm).",
+        "Valor de trabajo: ≈ 51 cm, dentro del rango 49,5–55,6 cm."
+      ],
+      "supuestos": [
+        "Se usa el codo ordinario de Easton (1897); él mismo advierte que la longitud exacta es difícil de fijar, porque no se sabe si se medía hasta la punta de los dedos o hasta la muñeca.",
+        "El codo «sagrado» de Easton (55,6 cm) y el talmúdico de la Jewish Encyclopedia (≈ 56 cm) son más largos; no hay una cifra única con fuente."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Cubit",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cubit.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "almete": {
+    "tipo": "palabra",
+    "lema": "almete",
+    "formas": [
+      "almete",
+      "almetes"
+    ],
+    "adulto": "Casco: pieza de la armadura antigua que protegía la cabeza. Hoy diríamos «casco» o «yelmo».",
+    "nino": "Un casco de metal para proteger la cabeza.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Helmet",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/helmet.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "rae",
+        "obra": "Diccionario de la lengua española (RAE)",
+        "entrada": "almete",
+        "url": "https://dle.rae.es/almete"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "1S 17:5",
+        "cita": "almete de acero en su cabeza"
+      }
+    ]
+  },
+  "enjullo": {
+    "tipo": "palabra",
+    "lema": "enjullo",
+    "formas": [
+      "enjullo",
+      "enjullos"
+    ],
+    "adulto": "Madero principal del telar, la máquina de tejer. El texto lo usa como comparación para decir lo grueso que era el asta de una lanza.",
+    "nino": "Un palo grueso de la máquina de tejer.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Beam",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/beam.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "rae",
+        "obra": "Diccionario de la lengua española (RAE)",
+        "entrada": "enjullo",
+        "url": "https://dle.rae.es/enjullo"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "1S 17:7",
+        "cita": "como un enjullo de telar"
+      }
+    ]
+  },
+  "holocausto": {
+    "tipo": "concepto",
+    "lema": "holocausto",
+    "formas": [
+      "holocausto",
+      "holocaustos"
+    ],
+    "adulto": "Sacrificio en que lo ofrecido se quemaba entero sobre el altar, a diferencia de otros sacrificios en los que solo se quemaba una parte. El nombre hebreo (olah) significa «lo que sube»: se entendía que subía hacia Dios mientras el fuego lo consumía.",
+    "nino": "Una ofrenda a Dios en la que se quemaba todo sobre el altar.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 1:9",
+        "cita": "el sacerdote hará arder todo sobre el altar: holocausto es"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Burnt offering",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/burnt-offering.html",
+        "idioma": "en"
+      }
+    ]
+  },
+  "levirato": {
+    "tipo": "concepto",
+    "lema": "levirato",
+    "formas": [
+      "cuñado",
+      "cuñada",
+      "suscita simiente"
+    ],
+    "adulto": "Costumbre antigua que Gn 38:8 muestra en práctica («suscita simiente á tu hermano») y que la ley de Israel recoge después: si un hombre casado moría sin hijos, su hermano debía casarse con la viuda, y el primer hijo que naciera llevaría el nombre del difunto, para que su nombre no se borrara de Israel. Si el hermano se negaba, la viuda podía reclamarlo ante los ancianos de la ciudad. La palabra «levirato» no aparece en la RV1909.",
+    "nino": "Una costumbre antigua: si un hombre moría sin hijos, su hermano se casaba con la viuda para que la familia del que murió no se perdiera.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 38:8",
+        "cita": "suscita simiente á tu hermano"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Dt 25:5-10",
+        "cita": "su cuñado entrará á ella, y la tomará por su mujer"
+      },
+      {
+        "tipo": "rae",
+        "obra": "Diccionario de la lengua española (RAE)",
+        "entrada": "levirato",
+        "url": "https://dle.rae.es/levirato"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Gn 38:8",
+      "Dt 25:5-10"
+    ]
+  }
+}

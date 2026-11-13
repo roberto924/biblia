@@ -109,6 +109,135 @@ Generados por `herramientas/originales.py` (independiente de `construir_datos.py
 - `videos`: 17 videos de Proyecto Biblia (resúmenes de Génesis y Éxodo, partes 1 y 2, de Levítico, de Números, de Deuteronomio, de Rut —`f984fG4-xlE`, hallado en el buscador de YouTube—, de Josué —`49ggVrdBN_Y`, hallado en el buscador del canal; «¿Quiénes son los faraones en Josué y Jueces?» no se incluye por no ser solo de Josué ni solo de Jueces— de Jueces —`bCwaJz4L2nU`, hallado en el buscador de YouTube; el canal no tiene otro video solo de Jueces— y de 1 Samuel —`34biq4ivs5I`, «Resumen del libro de 1 Samuel: un panorama completo animado», hallado en el buscador de YouTube el 2026-11-12—; 6 episodios de la Serie de la Torá, el 5 sobre Levítico, el 6 sobre Números y el 7 sobre Deuteronomio), cada uno comprobado con oEmbed (200, canal «Proyecto Biblia», título exacto). Los rangos de los resúmenes (Gn 1–11 / 12–50, Ex 1–18 / 19–40, Lv 1–27, Nm 1–36, Dt 1–34, Jos 1–24, Jue 1–21, Rut 1–4, 1 S 1–31) son `inferido` (títulos «parte 1/2» o «Resumen del libro» y la página de BibleProject en español). `y2pED55wMM4` era una errata del informe de fuentes (oEmbed 404); el correcto es `y9pED55wMM4`.
 - `window.BIBLIA_GRIEGO` (archivo aparte por licencia **GPL-3.0**; ver `LICENCIA-griego-swete.txt`): `texto["Gn 1:1"]` con la LXX de Swete (1930) vía LXX-Swete-1930. **Swete numera como la LXX, no como la RV**: difiere en Gn 2, Gn 5, Ex 20, 21, 25, 28 y 35–40, Lv 7 (RV 7:1–10 = Swete 6:31–40; RV 7:11–38 = Swete 7:1–28; Lv 6:1–7 coincide con la RV) y Nm 1 (RV 1:24–37 en otro orden: RV 1:24 Gad = Swete 1:36), 13:33 (= Swete 13:33–34) y 30:16 (= Swete 30:16–17); Swete 13:1 = RV 13:1. En Dt: Swete invierte 5:17–18 (RV 5:17 «matarás» = Swete 5:18, columna «Greek*» del TVTMS) y no tiene «todo cuervo» (RV 14:14): el TVTMS une RV 14:15 al 14:14 griego, pero por contenido Swete 14:14 («στρουθὸν καὶ γλαῦκα καὶ λάρον») son las aves de RV 14:15, así que RV 14:14 va a `sin_texto` y RV 14:15 = Swete 14:14 (corrección propia, inferida; `QUITAR_GRIEGO` y `CORRECCIONES_GRIEGO` en el script); RV 14:16–29 = Swete 14:15–28. RV 12:32, 22:30 y 29:1 coinciden con Swete. **Josué**: Swete pone el altar del monte Ebal (RV 8:30-35) tras 9:2 y lo numera 9:3-8, así que Swete 9:9-33 = RV 9:3-27; ninguna columna del TVTMS da esa numeración (da «9:2.1-6» o el orden de Brenton) y va como corrección propia comprobada por contenido (`DESPLAZAMIENTO_GRIEGO`). En 24:29-31 Swete sigue el orden del TM (no el de Brenton): lo confirman las anclas 24:29 «ciento y diez» = ἑκατὸν δέκα y 24:30 «Timnath-sera» = Θαμναθασαχαρὰ. **Jueces**: la LXX de Jueces tiene dos formas textuales (A, la del Códice Alejandrino; B, la del Vaticano). **Regla**: la digitalización de Swete trae una sola forma, la que imprime Swete, que es la del Códice Vaticano («B»): 618 versículos «Jdg», los mismos y con la misma numeración que el TM y la RV (se comprueba al generar); se muestra solo esa y nunca se mezcla con «A», que no está en los datos. Que sea la forma B se comprueba con Jue 18:30, «υἱὸς Μανασσή», la lectura que Wikipedia («Codex Vaticanus», según Rahlfs) da como de B frente a «Μωυσῆ» de A. Las RV 14:18-20 se reparten como en el hebreo: RV 14:18 y 14:19 = las dos partes de Swete 14:18, cortado antes de «καὶ εἶπεν αὐτοῖς Σαμψών» (`ref_griega` «Jue 14:18a»/«Jue 14:18b»), y RV 14:20 = Swete 14:19-20, con nota. Los 618 versículos tienen griego (ninguno en `sin_texto`; la digitalización no trae marcas «[1]» en Jueces). **Rut**: Swete tiene los mismos 85 versículos con la misma numeración (comprobado; el TVTMS no tiene bloques de Rut); los 85 tienen griego (ninguno en `sin_texto`). Versículo a versículo: Elimelec (Ἀβειμέλεχ), Mahlón, Orfa, Obed, Isaí, David y Fares caen en los mismos versículos que en la RV, y la proporción de letras RV/griego está entre 0,5 y 1,7 (Booz y Rut no se comparan: la LXX añade el sujeto «Βόος» o «Ῥούθ» en varios versículos). Anclas: 1:16 «Ruth respondió» = εἶπεν δὲ Ῥούθ, 2:3 «Booz» = Βόος, τοῦ ἐκ συγγενείας Ἀβειμέλεχ, 4:17 «Obed» = Ὠβήδ y 4:22 «David» = Δαυείδ. Anclas: 1:1 «Josué» = Ἰησοῦ, 4:4 «Débora» = Δεββωρὰ, 7:20 «espada» = Ῥομφαία, 14:18 «dulce» = γλυκύτερον, 14:19 «araseis» = ἠροτριάσατε, 14:20 «Ascalón» = Ἀσκάλωνα, 16:30 «Muera yo con los Filisteos» = Ἀποθανέτω ψυχή μου μετὰ ἀλλοφύλων, 18:30 «Manasés» = Μανασσή y 21:25 «no había rey» = οὐκ ἦν βασιλεὺς. **1 Samuel** (1 Reinos en Swete, código «1Sa» en el TVTMS y en la digitalización): 806 marcas de versículo. En 20:42–21:15 Swete numera como la Vulgata (20:42-43; 21:1-15) y no como la columna griega del TVTMS (20:42; 21:1-16, la de Brenton), así que la columna «Latin» se elige a mano (`COLUMNA_FORZADA`, comprobado por contenido): RV 20:42 = Swete 20:42-43 (Swete 20:43 «καὶ Ἰωναθὰν εἰσῆλθεν εἰς τὴν πόλιν») y RV 21:k = Swete 21:k. En 23–24 Swete numera como el hebreo (24 tiene 23): RV 24:22 = Swete 24:22-23. **Sin griego en 1 S (40 versículos, lista exacta comprobada al generar)**: 13:1, 17:12-31, 17:41, 17:50, 18:1-5, 18:10-11, 18:17-19, 20:16 y 23:12 tienen la marca de versículo vacía en la digitalización, y 17:55-58 y 18:30 son «Absent» en el TVTMS (Swete acaba el 17 en 17:54 y el 18 en 18:29); los de 17–18 llevan la nota de la forma breve de la LXX (Swete imprime aquí el Vaticano, inferido); 20:16 lleva además que Swete 20:15 acaba con «καὶ ἐκζητήσαι Κύριος ἐχθροὺς τοῦ Δαυείδ», el final de RV 20:16 (inferido). 769 versículos RV tienen griego. Swete sí tiene 18:9 (a diferencia de Brenton). Versículo a versículo: Dagón, Doeg, Abiatar y Abisai caen en los mismos versículos que en la RV; la proporción de letras RV/griego está entre 0,25 (14:42) y 3,67 (2:9; Swete pone parte del 2:9 al final de su 2:8 y su 2:9 es solo la última frase); y el emparejamiento sin desfase compara mejor que con ±1 en cada capítulo. La adición de Swete en 2:10 va tras «[1]», «[2]» y lleva la nota de las adiciones. Anclas: 1:20 «Samuel» = Σαμουὴλ, 3:10 «Habla, que tu siervo oye» = Λάλει, ὅτι ἀκούει ὁ δοῦλός σου, 16:13 «ungiólo» = ἔχρισεν αὐτὸν, 17:4 «Goliath» = Γολιὰθ, 20:42 «se entró en la ciudad» = εἰσῆλθεν εἰς τὴν πόλιν, 21:1 «Nob» = Νόμβα, 24:1 «Engaddi» = Ἐνγάδδει, 24:22 «David juró» = ὤμοσεν Δαυεὶδ y 31:6 «murió Saúl» = ἀπέθανεν Σαοὺλ. Las adiciones de la LXX en Josué (15:59, 19:47, 19:48, 21:42, 24:30 y 24:33) están dentro del versículo tras las marcas «[1]», «[2]»… de la digitalización (subversículos de Swete, inferido) y llevan nota. Sin griego en Jos (9 versículos): 8:13, 8:26, 10:15, 12:22 y 20:4-6 (marca de versículo vacía en Swete) y 10:43 y 13:33 (ausentes en la LXX según el TVTMS). Jos 21:36-37 sí tienen griego. En Nm 6:24–27 y 10:34–36 Swete no cumple los TEST de la columna griega del TVTMS (orden distinto) pero sí los de la KJV, y sigue ese orden (lo confirman las anclas). La correspondencia sale del TVTMS (columna griega que cumple los TEST de cada bloque; en Ex 28 se acepta la que cumple los de longitud de capítulo y se marca «aproximada»; en Ex 35 la columna Brenton se elige a mano; Ex 40:14–15 es una corrección propia por contenido) y se comprueba con 75 anclas de contenido (p. ej. Ex 20:13 «matarás» = «φονεύσεις»; en Lv: 7:1 «culpa» = πλημμελίας, 7:11 «paces» = σωτηρίου, 7:38 «Sinaí» = Σεινά, 11:7 «puerco» = ὗν, 16:8 «Azazel» = ἀποπομπαίῳ, 19:18 «amarás á tu prójimo» = ἀγαπήσεις τὸν πλησίον; en Nm: 1:24 «Gad» = Γὰδ, 6:24 «Jehová te bendiga» = Εὐλογήσαι σε Κύριος, 10:35 «Levántate» = Ἐξεγέρθητι, 13:1 «Haseroth» = Ἁσηρώθ, 13:33 «gigantes» = γίγαντας, 21:9 «serpiente de metal» = ὄφιν χαλκοῦν, 22:28 «asna» = ὄνου, 30:16 «ordenanzas» = δικαιώματα; en Dt: 5:6, 5:17 «matarás» = φονεύσεις, 5:18 «adulterarás» = μοιχεύσεις, 5:21, 6:4 «Oye, Israel» = Ἄκουε, Ἰσραήλ, 12:32, 14:15 «buho» = στρουθὸν, 14:16, 22:30, 29:1 y 34:7 «ciento y veinte» = ἑκατὸν καὶ εἴκοσι; en Jos: 1:1, 6:20 «muro» = τεῖχος, 8:30 «Ebal» = Γαιβάλ, 8:35, 9:3 «Gabaón» = Γαβαὼν, 9:27 «leñadores» = ξυλοκόπους, 10:13 «el sol se detuvo» = ἔστη ὁ ἥλιος, 21:36, 24:29 y 24:30). Los TEST con sumas («Num.1:32+Num.1:33>…») se evalúan sumando largos. `ref_griega` = referencia de Swete cuando difiere; `notas` = motivo; `sin_texto` = 112 versículos RV (40 de 1 S, ver arriba) sin equivalente completo en la LXX (Gn 2:25 y 5:32 van dentro del versículo siguiente; Ex 36:10–34 y gran parte de Ex 37–40 no existen o están reordenados en la LXX; ninguno en Lv ni en Nm: los 859 y los 1286 versículos con texto tienen griego; en Dt, 14:14 y tres versículos que la digitalización de Swete trae vacíos —marca de versículo sin palabras—: Dt 23:2, 23:12 y 25:16; por la misma regla pasan a `sin_texto` Gn 31:51 y Ex 4:26, que antes quedaban con texto griego vacío); `griego_sin_asignar` = 3 versículos de Swete sin pareja RV (p. ej. Ex 25:35, un doblete). Los corchetes del texto de Swete marcan letras que faltan en el códice. En Gn 1:1–46:28 Swete no puede imprimir el Vaticano (perdido) y lo suple con otro uncial, sobre todo el Alejandrino.
 
+**Manuscritos: el registro real (`manuscritos.js`)**
+Lo genera `herramientas/manuscritos.py`, independiente de los demás scripts. Lee `biblia.js` (pasajes y versículos RV) y `originales.js` (correspondencia hebreo → RV y testigos). De `originales.py` solo importa funciones: el WLC (OSHB) en caché para la lista de versículos hebreos, los datos de Abegg y la tabla `ROLLOS`.
+
+- Regenerar: `python -I herramientas/manuscritos.py`. Con `--sin-red` usa solo la caché, que está en `herramientas/cache/manuscritos/`.
+- `--autoprueba` corre `herramientas/manuscritos/_prueba/fixture.json` y no escribe nada. El fixture base debe pasar y sus 8 alteraciones deben fallar:
+  - pasaje sin folio;
+  - folio sin licencia abierta marcado «mostrar»;
+  - miniatura fuera de Commons;
+  - fragmento enlazado sin que coincidan los números;
+  - etiqueta de columna;
+  - muestra verificada que ya no enlaza su imagen;
+  - falta un rollo testigo;
+  - falta un libro del Vaticano.
+
+  También prueba el lector de descripciones de Commons y el de etiquetas de Abegg.
+- Si una verificación falla, el script sale con código ≠ 0 y no escribe nada. Si escribir da `OSError` 22, reintenta.
+- `--muestra` lista los fragmentos enlazados.
+
+`window.BIBLIA_MANUSCRITOS = {generado, leningrado, rollos, vaticano}`. Se escribe en JSON compacto: 344 KB.
+
+*`leningrado`: registro histórico que se puede mostrar*
+- Campos generales: `testigo: "leningrado"`, `nombre`, `institucion` (Biblioteca Nacional de Rusia), `fecha`, `clase: "registro_historico"`, `fuente` y `nota`.
+- `folios["001b"]`. El número de folio lleva `a` (recto) o `b` (verso). Campos:
+  - `archivo`: título en Commons.
+  - `pagina`: página del archivo en Commons.
+  - `miniatura`: `https://upload.wikimedia.org/wikipedia/commons/thumb/…/1280px-…`, que se carga en línea, sin copia local.
+  - `ancho_miniatura` y `alto_miniatura`.
+  - `licencia`, `licencia_url`, `autor` y `credito`: leídos de la API de Commons para **cada** archivo.
+  - `uso`: `"mostrar"` solo si la licencia es dominio público, CC0, CC BY o CC BY-SA. En cualquier otro caso, `"solo_enlace"`.
+  - `hebreo`: tramo según la descripción, en numeración hebrea.
+  - `rv`: tramos en numeración RV1909.
+- `pasajes["gn-01"] = ["001b"]`: folios de cada uno de los 583 pasajes.
+- Fuente: categorías «Leningrad Codex, color JPG images 001-100», «101-200» y «401-491» de Wikimedia Commons. Según Commons, el escaneo es de USC Dornsife y procede de `manuscripts.sefaria.org`; `credito` lleva la URL de origen de cada folio.
+- Los 338 folios usados dicen «Public domain». Su autor es «Unknown author».
+- **Qué versículos tiene cada folio** sale de la `ImageDescription` de Commons, escrita por voluntarios: «showing Genesis 14:12–15:13». Usa la numeración hebrea. Se pasa a la RV con el campo `r` de `originales.js` (TVTMS).
+  - El script entiende «A c:v–c:v», «A c:v–v», «A c:v to B c:v» y un solo versículo. Acepta además «followed by …» (120a) y la errata «showing to Ruth …» (421b–423a).
+  - Descarta las páginas sin «showing», como la cubierta 474a.
+  - El primer y el último versículo de cada folio pueden estar partidos, así que van en los dos folios.
+- **Folios por libro.** Un folio con dos libros cuenta en los dos.
+
+  | Libro | Folios | Primero–último |
+  |---|---|---|
+  | Gn | 61 | 1b–31b |
+  | Ex | 51 | 31b–56b |
+  | Lv | 35 | 56b–73b |
+  | Nm | 51 | 73b–98b |
+  | Dt | 44 | 98b–120a |
+  | Jos | 29 | 121b–135b |
+  | Jue | 29 | 136a–150a |
+  | 1 S | 38 | 150a–168b |
+  | Rut | 5 | 421a–423a |
+
+  Rut va en otro lugar porque está entre los Escritos.
+- **El script comprueba:**
+  - Que entiende cada descripción.
+  - Que cada folio empieza en el último versículo del anterior del mismo libro o en el siguiente: sin huecos ni saltos.
+  - Que cada versículo RV con texto hebreo tiene folio. Las únicas excepciones son Jos 21:36-37, que no están en el códice (`hebreo_sin_texto`), y los versículos RV vacíos, como Nm 12:16 y 29:40.
+  - Que los 583 pasajes tienen al menos un folio.
+  - La licencia y la forma de cada URL.
+- **Comprobado a mano el 2026-11-13** abriendo la miniatura:
+  - 001b empieza «בראשית ברא אלהים את השמים ואת הארץ» (Gn 1:1) y acaba en «נעשה אדם בצלמנו» (Gn 1:26).
+  - 159a, el folio de 1 S 17, empieza «הנערים ויאמר עוד שאר הקטן» (1 S 16:11). En la columna central se lee «ויאספו פלשתים את מחניהם למלחמה» (1 S 17:1).
+- La API de Commons limita las peticiones y devuelve 429. El script hace pausas y, ante un 429, espera lo que pida `Retry-After` o 20 s × intento.
+- Desde hace poco, Commons devuelve algunas miniaturas en `thumb.wikimedia.org` con parámetros `utm_*`. Se guardan sin parámetros y en `upload.wikimedia.org`, con el mismo camino `/thumb/`. 1280 px es uno de los anchos estándar de Wikimedia.
+
+*`rollos`: Leon Levy (IAA), solo enlace*
+- Campos generales: `fuente`, `uso: "solo_enlace"`, `url_imagen` y `nota`. El enlace de una imagen es `url_imagen + imagen`, p. ej. `…/explore-the-archive/image/B-360503`. Los términos de la IAA no permiten mostrar sus imágenes.
+- `rollos["4Q49"]` tiene estos campos:
+  - `sigla`.
+  - `ficha`: la misma URL del testigo en `originales.js`.
+  - `nivel`: `fragmento`, `lamina` o `ficha`.
+  - `motivo`: por qué no llega a nivel de fragmento.
+  - `laminas[]`: `{imagen, tipo_foto, fecha_foto, lado, laminas}`.
+  - `fragmentos[]`: `{abegg, versiculos (RV), imagenes[{fragmento_ll, imagen, tipo_foto, fecha_foto, lado, laminas}], comprobado?}`.
+- Se incluyen los 94 rollos testigo de `originales.js`.
+- **Una imagen por fragmento, o por lámina y lado:** la «Full Spectrum Color Image» más reciente. Si no hay, la infrarroja más reciente («Infrared Image» o «Scanned Infrared Negative»). Recto antes que verso.
+- `laminas` es la lista `plate_numbers` de la Leon Levy, tal cual. En las fotos antiguas de láminas puede traer muchas láminas.
+- **Criterio para enlazar a nivel de fragmento:**
+  1. Abegg no reparte el rollo en varias claves. Si lo reparte, como 4Q8a/b/c, cada clave numera sus fragmentos desde 1 y no se sabe a cuál corresponde cada número de la Leon Levy. Con solo la igualdad de conjuntos, 4Q8 había pasado.
+  2. Todas las etiquetas de Abegg son de fragmento:
+     - `f1` = 1;
+     - `f2_3` = 2 y 3 (tramo);
+     - `f1i` = columna i del fragmento 1;
+     - `f4ii+6` = 4 y 6.
+
+     Si hay columnas sin «f» (`1`, `10b_c`, como en 4Q22 y 4Q51) o letras (`f1a`, `fA`), no se enlaza.
+  3. Los números de fragmento de la Leon Levy son todos numéricos, y el **conjunto** es igual al de Abegg.
+  4. Ningún número de la Leon Levy aparece en dos láminas distintas.
+
+  Si falla alguna condición, el rollo queda en nivel `lamina` (si hay láminas) o `ficha`.
+- **Resultado:** 8 rollos con fragmento (2Q1, 4Q12, 4Q15, 4Q19, 2Q5, 4Q38c, 4Q49 y 4Q50), 81 con lámina y 5 con ficha (4Q26a, 4Q26b, 4Q26c, 4Q249j y 4Q38a). La Leon Levy no devuelve imágenes de ninguno de los cinco.
+- **Muestra comprobada a mano el 2026-11-13 (5 de 5 cuadran).** Se abrieron la imagen y su página pública, que dice «<rollo> Plate N Frag 1»:
+  - 4Q49 f1 (B-360503): se lee «שה שור».
+  - 4Q19 f1 (B-472329): se leen «מעבידים אותם» y «אתכם מתח».
+  - 2Q1 f1 (B-482966): se lee «ועמרה».
+  - 4Q12 f1 (B-367578): coinciden la escritura paleohebrea, las líneas y el lado conservado.
+  - 2Q5 f1 (B-366043): coinciden la escritura paleohebrea, las líneas y el lado conservado.
+
+  En 4Q12 y 2Q5 no se leyeron palabras. La muestra está en `MUESTRA_VERIFICADA`: el script exige que siga enlazada y escribe la nota en `comprobado`. 4Q15, 4Q38c y 4Q50 pasan el criterio, pero no se abrieron.
+- La API (`/api/search?t=image&q=manuscript_numbers:'4Q51'&p=N`) no está documentada. Se consulta una vez por rollo, con pausas, y se guarda en `cache/manuscritos/ll_<rollo>.json`. 113 de esas cachés salen de la investigación previa (misma consulta, 2026-11-13); el resto se consultó al generar.
+
+*`vaticano`: Biblioteca Apostólica Vaticana, solo enlace*
+- Campos generales: `testigo`, `nombre`, `institucion`, `clase`, `uso: "solo_enlace"` y `fuente`.
+- `libros["Ex"] = {catalogo, pagina, imagen, url, nota}`. `url` es `https://digi.vatlib.it/view/MSS_Vat.gr.1209/<imagen>`. El número de imagen no es el de página: `0051` es la p. 47.
+- Fuente: `structures` del manifiesto IIIF `MSS_Vat.gr.1209`. Se usa la página del rótulo del catálogo («p. 47-99 Exodus») y se busca la imagen con esa etiqueta dentro del tramo. La p. «1» se repite en el manifiesto; se toma la del tramo de Génesis.
+- **Diferencia con el catálogo, revisada a mano:** el tramo de Éxodo empieza en el manifiesto en la p. 43 (`0047`), aunque su rótulo dice p. 47.
+  - En la imagen, la p. 46 (`0050`) acaba Génesis con la suscripción «ΓΕΝΕΣΙΣ».
+  - La p. 47 (`0051`) lleva «ἔξοδος» y empieza «ΤΑΥΤΑ ΤΑ ΟΝΟΜΑΤΑ».
+  - Se enlaza la p. 47.
+
+  Otra discrepancia sin revisión manual (`VAT_REVISADO`) hace fallar el script. Fuera de nuestros libros hay otras dos: «Esdrae III» y «Ecclesiastes».
+- **1 S = «1 Reinos» (Samuelis I).** Revisado a mano: la p. 309 (`0313`) acaba Rut con la suscripción «ΡΟΥΘ» y empieza «ΑΝΘΡΩΠΟΣ ΗΝ ΕΞ ΑΡΜΑΘΑΙΜ».
+- **Rut** empieza en la p. 304, la misma en que acaba Jueces, según el rótulo. No se revisó a mano.
+- **Génesis** p. 1 (`0005`): Gn 1:1–46:28 es una reposición del siglo XV. La nota lo dice.
+
+| Libro | Página | Imagen |
+|---|---|---|
+| Gn | 1 | 0005 |
+| Ex | 47 | 0051 |
+| Lv | 99 | 0103 |
+| Nm | 138 | 0142 |
+| Dt | 191 | 0195 |
+| Jos | 238 | 0242 |
+| Jue | 271 | 0275 |
+| Rut | 304 | 0308 |
+| 1 S | 309 | 0313 |
+
+*En la app* (`app.js`): plegable «El manuscrito» al final de cada pasaje, en Leer y en Comparar, tras el texto y antes de «Lo nuevo en este pasaje». Va plegado para no competir con la lectura; `datos/manuscritos.js` (y `originales.js`, para saber qué rollos contienen el pasaje) se cargan al abrirlo, y la miniatura del folio se pide entonces, con `loading="lazy"`. El folio se rotula «Registro histórico» con la institución y la fecha del códice, dice qué versículos **de este pasaje** trae (nunca los de después: lectura en orden) y la licencia, el origen y el enlace de Commons; al tocarlo se amplía en el visor. Debajo, solo enlaces: rollos (fragmento, láminas o ficha, según `nivel`) y el inicio del libro en el Códice Vaticano. Cuando los manuscritos ya están cargados, la lista «Manuscritos que contienen…» del acompañante («De dónde sale este texto») enlaza también el folio, el rollo o la página del Vaticano. Funciones puras en el núcleo: `foliosDePasaje`, `rollosDePasaje`, `vaticanoDeLibro`, `tramoRefs`, `nombreFolio`.
+
 **Recorridos (`recorridos.js`)**
 Generado por `herramientas/recorridos.py` (independiente; sin red: lee `biblia.js` y la caché de OpenBible `cache/ob_ancient.jsonl` y `ob_modern.jsonl`). Regenerar: `python -I herramientas/recorridos.py`. Si falla una verificación sale con código ≠ 0 y no escribe nada.
 - `window.BIBLIA_RECORRIDOS = {generado, fuentes, recorridos}`. Cada recorrido: `{id, titulo, libro, personas (ids de personas), resumen, hipotesis[{id, nombre, descripcion, defecto, minoritaria?, fuente, url}], etapas[{orden, lugar (id de lugares o null), nombre, ref, cita, tiempo, ubicaciones, nota}]}`.
@@ -150,3 +279,28 @@ Generado por `herramientas/juego.py` (independiente, sin red, solo stdlib; lee `
 - El Pentateuco Samaritano NO está incluido: no hay fuente abierta verificada para sus cifras y no se inventan.
 - BibleData trata como personas a pueblos de Gn 10 (Ludim, Jebuseo…); van marcados con una nota. Elisa en Gn 10:2 solo está en la LXX.
 - Personas sin nombre (`sin_nombre: true`): esposas de Caín, Noé, Sem, Cam y Jafet, grupos «otros hijos e hijas», y las de Gn 12–50 y Éxodo. Sus relaciones llevan una `cita` literal. Se descartan relaciones no genealógicas de BibleData (hermano, homicida, Creador, antepasado…).
+
+## Explicaciones (`explicaciones.js`)
+
+Generado por `herramientas/explicaciones.py`; no editar a mano. Define `window.BIBLIA_EXPLICACIONES` con `terminos` (tal como están en los fuentes, sin los RECHAZADOS), `ocurrencias` y `pasajes`. Diseño: `docs/superpowers/specs/2026-11-13-explicaciones-design.md`.
+
+**Regenerar**: `python -I herramientas/explicaciones.py` (sin red; `--sin-salida` solo verifica; `--autoprueba` corre un fixture interno: el válido debe pasar y once copias alteradas deben fallar). Si al escribir sale `OSError: [Errno 22]`, el script reintenta (bloqueo pasajero de Windows).
+
+**Fuentes** (en `herramientas/explicaciones/`, un solo escritor por archivo):
+- `terminos*.json`: `{id: término}`. Se unen todos; un id repetido entre archivos es error (términos y pasajes comparten el espacio de ids).
+- `pasajes-<Libro>.json`: `{id: pasaje difícil}`.
+- `auditoria.json` (opcional): `{id: {"veredicto": "OK"|"AJUSTAR"|"RECHAZAR", "nota": "…"}}`. Lo RECHAZADO no se publica; AJUSTAR se informa como aviso.
+
+**Esquema**
+- Término: `{tipo: "palabra"|"medida"|"concepto", lema, formas: [..], adulto, nino, certeza: "texto"|"inferido"|"calculo"|"externa", fuentes: [fuente, ..], calculo?, excluir?: [ref|rango], solo?: [ref|rango] | null}`. Una medida lleva `calculo: {resultado, pasos: [..], supuestos: [..], fuente}`.
+- Pasaje difícil: `{refs: "Jue 11:29-40", titulo, dice: [{ref, cita}], posturas: [{resumen, fuente}], nino: texto | null, certeza}`.
+- Fuente: `{tipo: "biblia"|"diccionario"|"rae"|"obra", ref?, cita?, obra?, autor?, entrada?, url?, idioma?}`. `biblia` pide `ref` (versículo o rango de un libro cargado) y su `cita`, si va, es literal de ese versículo (o de uno del rango); `diccionario` pide `obra` y `entrada` (url recomendada); `rae` pide `entrada` y `url` (el DLE solo se enlaza); `obra` pide `obra` y `autor`. `idioma` es el código de la fuente si no es español («en»). Ningún otro campo.
+- `ocurrencias`: `{"Ex 30:13": [{t, i, f}]}`, con `t` el id del término e `i`/`f` offsets UTF-16 como los de `menciones`. La app las indexa por la clave numérica del versículo (así «Rut 1:15» y «Rt 1:15» son el mismo).
+
+**Reglas que comprueba (sale ≠ 0)**: ids únicos; cada término con `adulto`, `nino` y al menos una fuente; certeza `texto` con una fuente bíblica con cita y `externa` con una fuente de fuera; cada `cita` literal; cada `ref` válida y de un libro cargado (en `excluir`/`solo`, una ref de un libro aún no cargado solo avisa); una misma forma (sin distinguir mayúsculas) en dos términos es error; los pasajes con `dice`, al menos una postura con fuente de consulta (no solo la Biblia) y `nino` presente (texto o null); y las ocurrencias no se solapan.
+
+**Búsqueda**: cada forma se busca en el texto RV1909 sin distinguir mayúsculas, como palabra entera (ni letra antes ni después); los acentos cuentan. `excluir` quita versículos y `solo` limita a ellos (para formas con otro sentido). Si dos formas se solapan, gana la más larga. Se avisa (sin fallar) de términos con 0 ocurrencias o con más de 150 versículos (posible ambigüedad).
+
+**En la app**: en Leer se subraya con un punteado ocre solo la primera aparición de cada término por pasaje, contada después de quitar las que pierden ante una persona o un lugar y sin los versículos que el perfil niño pliega. Al tocarla se abre la tarjeta (diálogo «detalle»): explicación (la de niño en ese perfil), certeza, cálculo con pasos y fuentes; una cita bíblica de un versículo aún no accesible sale como «Ex 30:13 · se verá al llegar». El interruptor «Explicaciones» se guarda en `biblia.p.<id>.explicaciones` (sin valor = encendido). Un pasaje difícil se anuncia con un aviso plegable solo si todo su rango es accesible; al niño se le muestra solo `nino`, y nada si es null o si `contenido.js` pliega parte del rango. El glosario está en Fuentes y lista solo términos con alguna aparición accesible.
+
+**Paso fijo por libro**: al ingresar un libro, un agente añade sus términos nuevos (los existentes se aplican solos por sus `formas`), revisa las ocurrencias ambiguas y escribe `pasajes-<Libro>.json`; otro agente audita la tanda en `auditoria.json`.

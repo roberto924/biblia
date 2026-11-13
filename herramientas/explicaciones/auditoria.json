@@ -1,0 +1,450 @@
+{
+  "dt-21-hijo-rebelde": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "dt-34-muerte-moises": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "ex-7-endurecimiento-faraon": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "ex-21-ojo-por-ojo": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "jos-7-acan-y-su-familia": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "jue-4-jael": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "jue-11-voto-jefte": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "jue-21-mujeres-de-silo": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "nm-31-guerra-madian": {
+    "veredicto": "OK",
+    "nota": "Fuentes abiertas y cotejadas; el resumen dice lo que dice la fuente, sin adelantos de lectura; nino coherente con contenido.js."
+  },
+  "1s-17-quien-mato-a-goliat": {
+    "veredicto": "RECHAZAR",
+    "nota": "Todo el contenido (Elhanán, Lahmi, 2 S 21, 1 Cr 20) cuenta sucesos posteriores a 1 S 17: rompe la lectura en orden. Reponer cuando se cargue 2 Samuel. Además, en Wikipedia «Lahmi fue un apodo» estaba invertido (es Goliat el apodo)."
+  },
+  "1s-2-su-ungido": {
+    "veredicto": "AJUSTAR",
+    "nota": "Radak: quitado «no ve un Mesías de los últimos tiempos» (no está en el comentario) y la mención a Samuel ungiendo al rey (adelanto de 1 S 10). K-D y Henry: quitadas David/Hijo de David/Cristo (adelanto)."
+  },
+  "1s-15-anatema-amalec": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikipedia: Crouch dice «componente excepcional», no «irregular»; Klapper es solo fuente de una nota; reescrito."
+  },
+  "1s-15-dios-se-arrepiente": {
+    "veredicto": "AJUSTAR",
+    "nota": "K-D: quitado lo no comprobado (oración de Samuel, v. 35); Henry: citas exactas («dispensación», «Fortaleza de Israel»); Radak: quitada la promesa a David (2 S 7, adelanto)."
+  },
+  "1s-16-espiritu-malo": {
+    "veredicto": "AJUSTAR",
+    "nota": "K-D: «agitando sentimientos y pensamientos» en vez de «locura»; Henry: no reprocha a los siervos, opina que habría sido mejor aconsejar paz con Dios; Wikipedia: Stein habla de manía/trastorno del ánimo."
+  },
+  "1s-18-david-y-jonatan": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikipedia: Nissinen habla de vínculo «homosocial», no «sin contenido sexual»; quitada la mención a 1 S 20:30 (adelanto)."
+  },
+  "1s-28-adivina-de-endor": {
+    "veredicto": "AJUSTAR",
+    "nota": "Jewish Encyclopedia: quitado «importa menos si ocurrió» (no está); reemplazado por lo que sí dice."
+  },
+  "1s-31-muerte-de-saul": {
+    "veredicto": "AJUSTAR",
+    "nota": "Quitada la postura de la Catholic Encyclopedia: no menciona a Saúl ni comenta el pasaje; quedan K-D, Henry y Jewish Encyclopedia."
+  },
+  "dt-7-anatema-naciones": {
+    "veredicto": "AJUSTAR",
+    "nota": "Cogan: «no resuelve la dificultad moral» cambiado por «reconoce una contradicción moral en la ley» (lo que dice el artículo). Solo se pudo leer el subtítulo y un fragmento del artículo de TheTorah."
+  },
+  "jos-2-rahab-miente": {
+    "veredicto": "AJUSTAR",
+    "nota": "K-D: quitadas citas de Heb/Stg (NT); Reimer: quitada Jael (adelanto); Jewish Encyclopedia: no explica la posición de Kimhi."
+  },
+  "jos-6-anatema-jerico": {
+    "veredicto": "AJUSTAR",
+    "nota": "Henry: quitado «en contraste con el Evangelio»; Wikipedia: «exagerados, ficticios o metafóricos» (como dice la fuente)."
+  },
+  "jos-10-sol-detenido": {
+    "veredicto": "AJUSTAR",
+    "nota": "K-D: decían «difícil decidir» entre objetiva y subjetiva, el resumen se contradecía; Mariottini: «minoritaria» no está en la fuente, es su tesis."
+  },
+  "jos-13-tierra-por-conquistar": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikipedia: no dice lo de otros pasajes ni cita Jue 1:1–2:5 (adelanto); reescrito con Brettler, Killebrew, Dever, Collins."
+  },
+  "jue-3-aod-eglon": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi sí dice que por levantarse Rut descendió de Eglón. Eso adelanta Rut (libro siguiente): el resumen conserva la idea (mérito que premió a su descendencia) sin nombrar a Rut. «Gesto de respeto» no es de Rashi (corregido)."
+  },
+  "jue-16-sanson-nazareo": {
+    "veredicto": "AJUSTAR",
+    "nota": "K-D: la miel del león no sale de la URL citada (Jue 14); quitada."
+  },
+  "jue-19-concubina-levita": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi: «coincide con la RV1909» marcado como fuente externa; Sweerts-Vermeulen: «tentativa»; K-D: quitado 1 S 11 (adelanto); Henry: quitada coletilla que no es de la fuente."
+  },
+  "gn-2-dos-relatos-creacion": {
+    "veredicto": "AJUSTAR",
+    "nota": "Henry: dice «apéndice» y «centro y resumen», no «recapitula»; Rashi: quitada una conclusión propia; Schmid: añadido que los compiladores los unieron para leerlos juntos."
+  },
+  "gn-6-hijos-de-dios": {
+    "veredicto": "AJUSTAR",
+    "nota": "Henry y Glaser: quitadas afirmaciones sobre «lectura más extendida/minoritaria» que no están en la fuente; Rashi: quitada la cita de Ex 7:1 (adelanto)."
+  },
+  "gn-9-cam-canaan": {
+    "veredicto": "AJUSTAR",
+    "nota": "Henry: quitado «desplazados de su tierra» (alude a la conquista)."
+  },
+  "gn-12-sara-hermana": {
+    "veredicto": "AJUSTAR",
+    "nota": "Levin: resumen vago y con adelantos (Gn 26, Éxodo); reescrito sin ellos. Rashi: quitado «no discute el problema moral»."
+  },
+  "gn-22-sacrificio-isaac": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi: la acusación de Satán/Ismael está en 22:1, no en 22:12 (obra y url corregidas); Koller: quitado «minoritaria», añadida su conclusión."
+  },
+  "gn-27-bendicion-engano": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi: quitado un motivo que Rashi no declara; Walfish: aclarado el origen (Edom y luego Roma); omitida la mención a la Iglesia (adelanto del NT)."
+  },
+  "gn-38-judah-tamar": {
+    "veredicto": "AJUSTAR",
+    "nota": "Barmash: quitado «sin poder acudir a la ley» (no confirmado)."
+  },
+  "rut-3-la-era": {
+    "veredicto": "AJUSTAR",
+    "nota": "nino: «cumpliera su deber» contradecía a K-D (no era obligación vinculante); reescrito."
+  },
+  "rut-4-rescate-y-zapato": {
+    "veredicto": "AJUSTAR",
+    "nota": "Jewish Encyclopedia «Levirate Marriage»: solo sustenta la primera frase; lo de Barton (otro artículo) quitado."
+  },
+  "rut-4-moabita-en-la-genealogia": {
+    "veredicto": "AJUSTAR",
+    "nota": "Barton: sin nombrar Esdras/Nehemías; Henry: lectura cristiana tipológica rotulada como tal, quitado «anuncio de los gentiles»."
+  },
+  "ex-4-sangre-esposo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi: añadida la salvedad de la misma tradición; Henry: «no puede determinar» en vez de «con injusticia»; Frolov: no deja «sin solución única», propone una lectura que usa pasajes posteriores (Nm 31, 1 S, Gn 32, 34): omitida."
+  },
+  "ex-12-muerte-primogenitos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Frankel: habla de primerizos del ganado y rescate de hijos, no «primeros corderos»; quitada la referencia a Ex 13 (aún no leído)."
+  },
+  "lv-11-animales-impuros": {
+    "veredicto": "AJUSTAR",
+    "nota": "Henry: «algunas carnes» pudieron ser dañinas, no «muchas»."
+  },
+  "lv-16-azazel": {
+    "veredicto": "AJUSTAR",
+    "nota": "Angelini: la figura demoníaca es de tradición posterior; quitado «no hay acuerdo» como afirmación suya."
+  },
+  "nm-5-aguas-amargas": {
+    "veredicto": "AJUSTAR",
+    "nota": "Rashi 5:28 dice «limpia» y libre de los efectos del agua, no «libre de toda sospecha»."
+  },
+  "nm-12-mujer-cusita": {
+    "veredicto": "AJUSTAR",
+    "nota": "Goldenberg: añadida su tesis propia (la queja es porque no es israelita); Ibn Ezra prefiere a Séfora."
+  },
+  "siclo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Resuelto: rango ≈ 11,5–14,3 g. Fuentes abiertas: pesa de 23 g por dos siclos del Primer Templo (Wikipedia «Shekel», cita a Laden 2020 en BAR), Easton (220 granos = 14,26 g) y Jewish Encyclopedia (11,95 g bíblico; 14,34 g del santuario). El 11,4 g no tenía fuente; eliminado."
+  },
+  "codo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Resuelto: ≈ 51 cm (rango 49,5–55,6). Easton: 20,24 pulgadas ordinario (51,4 cm) y 21,888 sagrado (55,6 cm); Jewish Encyclopedia: 495 o 525 mm. El 45 cm del palmo no tenía fuente; eliminado."
+  },
+  "obolo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Recalculado con el rango del siclo: 11,5÷20 = 0,575 g; 14,26÷20 = 0,71 g (JE: gera 0,5975 g). Antes usaba 11,4 g sin fuente."
+  },
+  "talento": {
+    "veredicto": "AJUSTAR",
+    "nota": "Pasos de Ex 38:25-26 correctos (603.550 × ½ = 301.775 siclos; − 1.775 = 300.000 = 100 talentos → 3.000 siclos; Easton también dice 3.000). Recalculado: 34,5–43 kg (Easton: 94 3/7 lb = 42,8 kg)."
+  },
+  "palmo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Recalculado como ½ codo (JE: zeret = ½ codo): 24,75–26,25 cm con codo de JE/Easton común; 27,8–28 cm con codo sagrado/talmúdico. Antes 45 cm sin fuente (22,5 cm). nino: 25 cm."
+  },
+  "pieza-plata": {
+    "veredicto": "AJUSTAR",
+    "nota": "Recalculado con el rango del siclo: 20 × 11,5 = 230 g; 20 × 14,26 = 285 g. Supuesto pieza = siclo sigue como inferencia."
+  },
+  "efa": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton: omer = ½ galón = 1/10 efa (≈ 22 L); pero su entrada «Homer» dice ≈ 8 bushels (≈ 29 L por efa); añadido al margen. Rango 19–36 L (JE 36,44) se mantiene."
+  },
+  "homer": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton «Homer»: «about 8 bushels» = 10 efas, solo cita Lv 27:16 entre paréntesis; la identificación sigue marcada como inferencia. Añadida la discrepancia de Easton."
+  },
+  "gomer": {
+    "veredicto": "OK",
+    "nota": "Ex 16:36 (1/10 de efa) y Easton («omer = half a gallon») verificados."
+  },
+  "hin": {
+    "veredicto": "OK",
+    "nota": "JE: hin 6,074 L = 1/6 de bato 36,44 L: cuadra con el cálculo (3,7–6,1 L); relación rabínica rotulada como externa."
+  },
+  "log": {
+    "veredicto": "OK",
+    "nota": "JE: 1 hin = 12 logs (0,506 L con su hin): cuadra con 0,3–0,5 L."
+  },
+  "pieza-moneda": {
+    "veredicto": "OK",
+    "nota": "Sin equivalencia: correcto, no se inventa."
+  },
+  "seah": {
+    "veredicto": "OK",
+    "nota": "Easton «Ephah»: «three seahs or ten omers» verificado; 3 seah = 1 efa."
+  },
+  "pacto": {
+    "veredicto": "AJUSTAR",
+    "nota": "Quitado Abraham del texto (primera aparición Gn 6:18, Noé)."
+  },
+  "sacerdote": {
+    "veredicto": "AJUSTAR",
+    "nota": "certeza texto -> externa: la definición general viene de Easton (verificado: Gn 14:18 y jefes de familia)."
+  },
+  "levita": {
+    "veredicto": "AJUSTAR",
+    "nota": "Quitada la frase sobre el servicio del santuario (adelanto respecto de Ex 4:14)."
+  },
+  "concubina": {
+    "veredicto": "AJUSTAR",
+    "nota": "Quitado «la ley limita algunos de sus aspectos» (adelanto respecto de Gn 22:24)."
+  },
+  "usura": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Ex 22:25: añadida esa cita y quitado «aumento» (de Lv 25:36)."
+  },
+  "ayuntar": {
+    "veredicto": "AJUSTAR",
+    "nota": "Aclarado que «unión carnal» se deduce del contexto (el Wikcionario consultado solo da «juntar» y «añadir»)."
+  },
+  "profeta": {
+    "veredicto": "AJUSTAR",
+    "nota": "Quitados Moisés y Aarón (Ex 7:1, posterior a Gn 20:7, primera aparición); añadida Gn 20:7 «es profeta»."
+  },
+  "diezmo": {
+    "veredicto": "AJUSTAR",
+    "nota": "Quitada «la ley de Moisés dice después…» (adelanto respecto de Gn 14:20)."
+  },
+  "levirato": {
+    "veredicto": "AJUSTAR",
+    "nota": "Primera aparición Gn 38:8: añadida esa cita; la ley de Dt 25 queda rotulada como posterior. El resumen de Dt 25 se mantiene (es ley, no suceso)."
+  },
+  "nazareo": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "sumo-sacerdote": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "jehova": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "anatema": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "terafines": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "angel-jehova": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "goel": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "pacto-sal": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "lepra": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "expiacion": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "juez": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "belial": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "urim": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "querubines": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "circuncision": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "juramento-muslo": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "dote": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "mandragoras": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "azazel": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "baal": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "impureza": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "celoso": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "hebreo": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "ojo-por-ojo": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "adivinacion": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "vengador-sangre": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "suertes": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "mana": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "moloc": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "primogenitura": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "jubileo": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "tejon": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "unicornio": {
+    "veredicto": "OK",
+    "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
+  },
+  "coger": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "tentar": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "mancebo": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "holgar": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "heder": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "almorranas": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "apostema": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "siniestra": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "cohecho": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "hacienda": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "yacer": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "hollar": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "laganoso": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "almete": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "enjullo": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  },
+  "holocausto": {
+    "veredicto": "OK",
+    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+  }
+}

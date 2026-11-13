@@ -1,0 +1,2728 @@
+{
+  "obolo": {
+    "tipo": "medida",
+    "lema": "óbolo (gera)",
+    "formas": [
+      "óbolos",
+      "óbolo"
+    ],
+    "adulto": "El óbolo (en hebreo, gera) es una pequeña medida de peso de plata: la Biblia dice que el siclo equivale a veinte óbolos, así que cada uno es la veintena parte de un siclo. Hoy pesaría entre medio gramo y tres cuartos de gramo, pero esa cifra es una estimación y no un dato del texto.",
+    "nino": "Un pesito muy pequeño que se usaba para pesar plata; veinte de ellos hacían un siclo.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 30:13",
+        "cita": "El siclo es de veinte óbolos"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Weights",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/weights.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 0,57–0,72 g",
+      "pasos": [
+        "Relación del texto: 1 siclo = 20 óbolos (Ex 30:13).",
+        "1 óbolo = 1 siclo ÷ 20.",
+        "11,5 g ÷ 20 = 0,575 g; 14,26 g ÷ 20 = 0,71 g (la Jewish Encyclopedia da 0,5975 g para el gera del siclo de 11,95 g)."
+      ],
+      "supuestos": [
+        "El peso del siclo es un rango (≈ 11,5–14,3 g; ver «siclo»): arqueológico de ≈ 11,5 g y tradicional de ≈ 14,3 g."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "talento": {
+    "tipo": "medida",
+    "lema": "talento",
+    "formas": [
+      "talento",
+      "talentos"
+    ],
+    "adulto": "El talento es la unidad de peso más grande de la Biblia, usada sobre todo para oro y plata. El propio texto permite calcular su tamaño: en el censo de Éxodo 38 la plata se da como cien talentos más 1.775 siclos, y eso equivale a medio siclo por cada uno de 603.550 hombres, de modo que un talento vale 3.000 siclos. Su equivalencia actual (unos 34 a 43 kg) es una estimación.",
+    "nino": "Una medida de peso enorme, para pesar mucho oro o mucha plata; pesaba más de treinta kilos.",
+    "certeza": "calculo",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 38:25",
+        "cita": "cien talentos, y mil setecientos setenta y cinco siclos"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 38:26",
+        "cita": "seiscientos tres mil quinientos cincuenta"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Talent",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/talent.html",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 34,5–43 kg",
+      "pasos": [
+        "603.550 hombres × ½ siclo = 301.775 siclos (Ex 38:26).",
+        "Ex 38:25 da esa misma plata como 100 talentos + 1.775 siclos.",
+        "301.775 − 1.775 = 300.000 siclos = 100 talentos → 1 talento = 3.000 siclos.",
+        "3.000 × 11,5 g = 34.500 g ≈ 34,5 kg; 3.000 × 14,26 g = 42.780 g ≈ 43 kg (Easton: 94 3/7 libras avoirdupois ≈ 42,8 kg)."
+      ],
+      "supuestos": [
+        "El peso del siclo es un rango (≈ 11,5–14,3 g; ver «siclo»): arqueológico de ≈ 11,5 g y tradicional de ≈ 14,3 g.",
+        "Ex 38 solo prueba la relación del talento de plata (1 talento = 3.000 siclos, que Easton también da); se supone que el talento de oro (p. ej. Ex 25:39) usa la misma unidad."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Talent",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/talent.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "efa": {
+    "tipo": "medida",
+    "lema": "efa",
+    "formas": [
+      "epha"
+    ],
+    "adulto": "El efa es la medida más usada en la Biblia para áridos como harina o cebada; la RV1909 lo escribe «epha». El texto da su relación con otra medida: el gomer es la décima parte del efa. Su capacidad actual se estima en unos 22 litros, con un margen amplio según el autor.",
+    "nino": "Una medida de harina o grano, como un balde grande.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 16:36",
+        "cita": "Y un gomer es la décima parte del epha"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Ephah",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephah.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 22 L (rango ≈ 19–36 L)",
+      "pasos": [
+        "Relación del texto: 1 gomer = 1/10 de efa, es decir 1 efa = 10 gomeres (Ex 16:36).",
+        "Easton: 1 omer ≈ medio galón ≈ 2,2 L.",
+        "10 × 2,2 L ≈ 22 L."
+      ],
+      "supuestos": [
+        "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas.",
+        "Easton, en su entrada «Homer», dice que es «about 8 bushels» (= 10 efas), lo que daría un efa de ≈ 29 L: su propia cifra no coincide del todo con la del omer (≈ 22 L), de ahí el margen."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Omer",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/omer.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [
+      "Gn 25:4"
+    ],
+    "solo": null
+  },
+  "gomer": {
+    "tipo": "medida",
+    "lema": "gomer",
+    "formas": [
+      "gomer",
+      "gomeres"
+    ],
+    "adulto": "El gomer es una medida de capacidad para el alimento diario: en el relato del maná se manda recoger un gomer por persona. La Biblia da su relación exacta con el efa: es su décima parte. En litros se estima en poco más de 2.",
+    "nino": "Una medida pequeña de comida: lo que una persona recogía para un día.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 16:36",
+        "cita": "Y un gomer es la décima parte del epha"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Omer",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/omer.html",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 2,2 L",
+      "pasos": [
+        "1 gomer = 1/10 de efa (Ex 16:36).",
+        "Easton: el omer es «medio galón» ≈ 2,2 L.",
+        "Con el efa ≈ 22 L: 22 L ÷ 10 = 2,2 L."
+      ],
+      "supuestos": [
+        "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Omer",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/omer.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [
+      "Gn 10:2",
+      "Gn 10:3"
+    ],
+    "solo": null
+  },
+  "homer": {
+    "tipo": "medida",
+    "lema": "homer (el «omer» de Lv 27:16)",
+    "formas": [
+      "omer de sembradura"
+    ],
+    "adulto": "En Levítico 27:16 la RV1909 escribe «omer de sembradura de cebada» para medir un campo por la cantidad de grano que se necesita para sembrarlo. Por el contexto y los diccionarios se entiende que es el homer, la medida grande de áridos, igual a diez efas; no es el omer pequeño de Éxodo 16. Su equivalencia en litros es una estimación debatida.",
+    "nino": "Una medida muy grande de grano; se usaba para decir cuánta semilla hacía falta para sembrar un campo.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 27:16",
+        "cita": "un omer de sembradura de cebada se apreciará en cincuenta siclos de plata"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Homer",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/homer.html",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 220 L (rango ≈ 190–360 L)",
+      "pasos": [
+        "Easton: 1 homer = 10 efas.",
+        "10 × 22 L = 220 L.",
+        "La identificación del «omer» de Lv 27:16 con el homer es una inferencia (no lo dice el versículo)."
+      ],
+      "supuestos": [
+        "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas.",
+        "Se supone que «omer de sembradura» traduce la medida grande (homer) y no la décima de efa; si fuera la pequeña, sería ≈ 2,2 L.",
+        "Easton, en su entrada «Homer», dice que es «about 8 bushels» (= 10 efas), lo que daría un efa de ≈ 29 L: su propia cifra no coincide del todo con la del omer (≈ 22 L), de ahí el margen."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Homer",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/homer.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "hin": {
+    "tipo": "medida",
+    "lema": "hin",
+    "formas": [
+      "hin"
+    ],
+    "adulto": "El hin es una medida de líquidos (aceite, vino) usada en las ofrendas del santuario, casi siempre en fracciones como «la cuarta parte de un hin». La Biblia no da su equivalencia; las fuentes antiguas la fijan como un sexto del bato (la medida líquida igual al efa), unos 3,7 litros con las cifras más bajas y hasta 6 con las rabínicas.",
+    "nino": "Una medida de aceite o de vino, más o menos como una jarra grande.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 29:40",
+        "cita": "la cuarta parte de un hin de aceite molido"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 3,7 L (rango ≈ 3,7–6,1 L)",
+      "pasos": [
+        "Jewish Encyclopedia: 1 bato = 6 hines.",
+        "Easton: el efa (áridos) y el bato (líquidos) son la misma capacidad: 1 bato = 1 efa ≈ 22 L.",
+        "22 L ÷ 6 ≈ 3,7 L (la Jewish Encyclopedia, con su bato de 36,4 L, da 6,07 L)."
+      ],
+      "supuestos": [
+        "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas.",
+        "La relación 1 bato = 6 hines viene de una fuente judía posterior, no del texto bíblico."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "log": {
+    "tipo": "medida",
+    "lema": "log",
+    "formas": [
+      "log"
+    ],
+    "adulto": "El log es la medida de líquidos más pequeña que aparece en la Biblia: se usa para el aceite de la purificación. El texto no da su capacidad; según la Jewish Encyclopedia equivale a un doceavo de hin, esto es, alrededor de un tercio de litro con las cifras bajas.",
+    "nino": "Una medida muy pequeña de aceite, como un vasito.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 14:10",
+        "cita": "un log de aceite"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 0,3 L (rango ≈ 0,3–0,5 L)",
+      "pasos": [
+        "Jewish Encyclopedia: 1 hin = 12 logs.",
+        "3,7 L ÷ 12 ≈ 0,31 L (con su hin de 6,07 L: 0,506 L)."
+      ],
+      "supuestos": [
+        "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas.",
+        "La relación 1 hin = 12 logs viene de una fuente judía posterior, no del texto bíblico."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "palmo": {
+    "tipo": "medida",
+    "lema": "palmo",
+    "formas": [
+      "palmo"
+    ],
+    "adulto": "El palmo es una medida de longitud: la distancia entre la punta del pulgar y la del meñique con la mano abierta, que se tomaba como media codo. En Éxodo 28:16 da el tamaño de una pieza cuadrada del sacerdote: un palmo de lado. Hoy equivale a unos 25–28 cm, según el codo que se suponga.",
+    "nino": "Lo que mide tu mano abierta, de la punta del pulgar a la del meñique: unos 25 centímetros.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 28:16",
+        "cita": "de un palmo de largo y un palmo de ancho"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "≈ 25–26 cm (rango ≈ 25–28 cm)",
+      "pasos": [
+        "Jewish Encyclopedia: 1 palmo (zeret, «span») = ½ codo.",
+        "Con el codo de 49,5–52,5 cm (Jewish Encyclopedia) o 51,4 cm (Easton): 49,5 ÷ 2 = 24,75 cm; 51,4 ÷ 2 = 25,7 cm; 52,5 ÷ 2 = 26,25 cm.",
+        "Con el codo «sagrado» de Easton (55,6 cm) o el talmúdico (≈ 56 cm): 27,8–28,0 cm."
+      ],
+      "supuestos": [
+        "El codo es un rango (≈ 49,5–55,6 cm; ver «codo»); la mitad da ≈ 25–28 cm.",
+        "Que el «palmo» de la RV1909 sea la media codo (zeret) viene de la fuente externa, no del versículo."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "The Jewish Encyclopedia (1906)",
+        "entrada": "Weights and Measures",
+        "url": "https://www.jewishencyclopedia.com/articles/14821-weights-and-measures",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "pieza-plata": {
+    "tipo": "medida",
+    "lema": "pieza de plata",
+    "formas": [
+      "piezas de plata"
+    ],
+    "adulto": "«Piezas de plata» es como la RV1909 expresa un precio en plata sin decir la unidad. Por otros pasajes que valoran personas y animales en siclos de plata, se entiende que son siclos; así, veinte piezas serían entre 230 y 285 g de plata. Es una inferencia: el texto no precisa el peso.",
+    "nino": "Un pago en plata; no eran billetes ni monedas como las de hoy, sino trozos de plata que se pesaban.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 37:28",
+        "cita": "veinte piezas de plata"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 27:5",
+        "cita": "veinte siclos"
+      }
+    ],
+    "calculo": {
+      "resultado": "20 piezas ≈ 20 siclos ≈ 230–285 g de plata",
+      "pasos": [
+        "Se supone 1 pieza de plata = 1 siclo de plata.",
+        "20 × 11,5 g = 230 g; 20 × 14,26 g = 285 g."
+      ],
+      "supuestos": [
+        "El peso del siclo es un rango (≈ 11,5–14,3 g; ver «siclo»).",
+        "La equivalencia pieza = siclo es una inferencia: Lv 27:5 valora en «veinte siclos» a un varón joven, pero no dice que las «piezas» de Gn 37:28 sean siclos."
+      ],
+      "fuente": {
+        "tipo": "biblia",
+        "ref": "Lv 27:5",
+        "cita": "veinte siclos"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "pieza-moneda": {
+    "tipo": "medida",
+    "lema": "pieza de moneda",
+    "formas": [
+      "piezas de moneda"
+    ],
+    "adulto": "En la RV1909 «cien piezas de moneda» es el pago por un terreno. El texto no dice cuánto pesaba o valía cada pieza, y no hay una equivalencia segura con los siclos; por eso no se da una cifra actual.",
+    "nino": "Un pago antiguo con piezas de metal; no se sabe con exactitud cuánto valía cada una.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 33:19",
+        "cita": "por cien piezas de moneda"
+      }
+    ],
+    "calculo": {
+      "resultado": "Sin equivalencia segura",
+      "pasos": [
+        "El texto no da el peso ni el valor de la «pieza de moneda».",
+        "No se calcula una cifra para no inventarla."
+      ],
+      "supuestos": [
+        "Ninguno: se deja sin calcular."
+      ],
+      "fuente": {
+        "tipo": "biblia",
+        "ref": "Gn 33:19",
+        "cita": "por cien piezas de moneda"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "seah": {
+    "tipo": "medida",
+    "lema": "medida (seah)",
+    "formas": [
+      "tres medidas"
+    ],
+    "adulto": "En Génesis 18:6 se piden «tres medidas de flor de harina» para hacer pan. La RV1909 no dice la unidad; los diccionarios la identifican con el seah, que es la tercera parte del efa. Serían entonces un efa entero de harina, unos 22 litros: una cantidad grande.",
+    "nino": "Tres medidas grandes de harina, lo suficiente para hacer mucho pan.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 18:6",
+        "cita": "tres medidas de flor de harina"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Ephah",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephah.html",
+        "idioma": "en"
+      }
+    ],
+    "calculo": {
+      "resultado": "3 seahs ≈ 1 efa ≈ 22 L",
+      "pasos": [
+        "Easton: el efa contiene tres seahs.",
+        "3 seahs = 1 efa ≈ 22 L (≈ 7 L cada seah)."
+      ],
+      "supuestos": [
+        "Se toma el efa ≈ 22 L. Easton dice que el omer es «medio galón» y el efa diez omeres (≈ 19–23 L según el galón); la Jewish Encyclopedia da 36,44 L para el efa/bato, medida rabínica posterior. Las estimaciones modernas son debatidas.",
+        "Que la «medida» del texto sea el seah es una identificación de fuentes externas; el versículo solo dice «medidas»."
+      ],
+      "fuente": {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Ephah",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephah.html",
+        "idioma": "en"
+      }
+    },
+    "excluir": [],
+    "solo": null
+  },
+  "primogenitura": {
+    "tipo": "concepto",
+    "lema": "primogénito y primogenitura",
+    "formas": [
+      "primogenitura",
+      "primogénito",
+      "primogénitos"
+    ],
+    "adulto": "El primogénito es el primer hijo varón de una familia (o la primera cría de un animal). La «primogenitura» es el conjunto de derechos del hijo mayor: en el mundo antiguo recibía un lugar de honor y una parte mayor de la herencia (la ley le asigna «dos tantos de todo», Dt 21:17). Por eso la primogenitura podía ser motivo de rivalidad entre hermanos.",
+    "nino": "El primogénito es el hijo mayor, que en aquella época tenía un honor y una herencia especiales.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Dt 21:17",
+        "cita": "el derecho de la primogenitura es suyo"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Birthright",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/birthright.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "efod": {
+    "tipo": "concepto",
+    "lema": "efod",
+    "formas": [
+      "ephod"
+    ],
+    "adulto": "El efod (la RV1909 escribe «ephod») es una vestidura sagrada del sacerdote, de lino fino con hilos de oro, azul, púrpura y carmesí, hecha por un bordador. El pectoral o «racional» se fijaba sobre él. Los diccionarios lo describen como una prenda de lino que distinguía al sacerdote.",
+    "nino": "Una prenda sagrada muy bordada que usaba el sacerdote.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 28:6",
+        "cita": "Y harán el ephod de oro y cárdeno, y púrpura, y carmesí, y lino torcido de obra de bordador"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Ephod",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ephod.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "racional": {
+    "tipo": "concepto",
+    "lema": "racional del juicio (pectoral)",
+    "formas": [
+      "racional"
+    ],
+    "adulto": "En la RV1909 el «racional del juicio» es el pectoral del sumo sacerdote: una pieza cuadrada, de un palmo, con cuatro órdenes de piedras preciosas, que se sujetaba al efod. En él se ponían el Urim y Thummim. Aquí «racional» no significa «razonable»: es el nombre de la prenda.",
+    "nino": "Una pieza cuadrada con piedras de colores que el sacerdote llevaba sobre el pecho.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 28:15",
+        "cita": "Harás asimismo el racional del juicio de primorosa obra"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 28:17",
+        "cita": "Y lo llenarás de pedrería con cuatro órdenes de piedras"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Breastplate",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/breastplate.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "urim": {
+    "tipo": "concepto",
+    "lema": "Urim y Thummim",
+    "formas": [
+      "Urim y Thummim",
+      "Thummim",
+      "Urim"
+    ],
+    "adulto": "El Urim y Thummim son dos objetos que el sacerdote Aarón debía llevar en el racional «sobre su corazón» cuando entrara ante Jehová. Servían para consultar a Dios, pero el texto no dice qué eran ni cómo funcionaban. Los nombres suelen traducirse «luces» y «perfección».",
+    "nino": "Dos objetos sagrados que el sacerdote llevaba para preguntarle cosas a Dios; nadie sabe cómo eran.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 28:30",
+        "cita": "Y pondrás en el racional del juicio Urim y Thummim"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Urim",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/urim.html",
+        "idioma": "en"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Thummim",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/thummim.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [
+      "Gn 25:3"
+    ],
+    "solo": null
+  },
+  "propiciatorio": {
+    "tipo": "concepto",
+    "lema": "propiciatorio (la «cubierta» del arca)",
+    "formas": [
+      "cubierta"
+    ],
+    "adulto": "La «cubierta» de oro fino que se pone sobre el arca es la tapa del arca; las traducciones posteriores la llaman «propiciatorio» (o «asiento de misericordia»). Mide dos codos y medio por codo y medio, y Dios dice que desde allí hablará con Moisés, entre los dos querubines. La RV1909 usa la misma palabra para otras cubiertas, por eso aquí solo se marca donde habla de la tapa del arca.",
+    "nino": "La tapa de oro del arca sagrada, entre dos figuras de querubines.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:17",
+        "cita": "Y harás una cubierta de oro fino"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:21",
+        "cita": "Y pondrás la cubierta encima del arca"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Mercy-seat",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/mercy-seat.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Ex 25:17",
+      "Ex 25:18",
+      "Ex 25:19",
+      "Ex 25:20",
+      "Ex 25:21",
+      "Ex 25:22",
+      "Ex 26:34",
+      "Ex 30:6",
+      "Ex 31:7",
+      "Ex 35:12",
+      "Ex 37:6",
+      "Ex 37:7",
+      "Ex 37:8",
+      "Ex 37:9",
+      "Ex 39:35",
+      "Ex 40:20",
+      "Lv 16:2",
+      "Lv 16:13",
+      "Lv 16:14",
+      "Lv 16:15",
+      "Nm 7:89"
+    ]
+  },
+  "arca-testimonio": {
+    "tipo": "concepto",
+    "lema": "arca del testimonio (arca del pacto)",
+    "formas": [
+      "arca del testimonio",
+      "arca del pacto",
+      "arca de Jehová",
+      "arca de Dios"
+    ],
+    "adulto": "El arca del testimonio (o «del pacto») es el cofre sagrado, de madera revestida de oro, donde se guarda el testimonio (las tablas de la ley). Es el objeto central del santuario, y sobre su tapa Dios dice que hablará. No es la «arca» de Noé, que es una embarcación.",
+    "nino": "El cofre sagrado donde se guardaban las tablas de la ley.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:16",
+        "cita": "Y pondrás en el arca el testimonio que yo te daré"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:22",
+        "cita": "entre los dos querubines que están sobre el arca del testimonio"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "querubines": {
+    "tipo": "concepto",
+    "lema": "querubines",
+    "formas": [
+      "querubines",
+      "querubín"
+    ],
+    "adulto": "Los querubines son seres celestiales vinculados a la presencia de Dios. En Génesis 3:24 Dios los pone, con una espada encendida, al oriente del Edén para guardar el camino del árbol de la vida. El texto no describe aquí su aspecto; los diccionarios los tratan como figuras simbólicas de significado variable.",
+    "nino": "Seres del cielo que Dios puso a vigilar la entrada del jardín del Edén.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 3:24",
+        "cita": "puso al oriente del huerto de Edén querubines"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Cherub",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cherub.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "mana": {
+    "tipo": "concepto",
+    "lema": "maná",
+    "formas": [
+      "maná"
+    ],
+    "adulto": "El maná es el alimento que Dios da a Israel en el desierto cada mañana. El texto lo describe como blanco, parecido a la semilla de culantro, de sabor como hojuelas con miel; el nombre se lo dan los israelitas. Se medía por gomer y el sexto día se recogía doble porción.",
+    "nino": "Un alimento blanco y dulce que Dios daba cada mañana a su pueblo en el desierto.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 16:31",
+        "cita": "y era como simiente de culantro, blanco, y su sabor como de hojuelas con miel"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Manna",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/manna.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pacto-sal": {
+    "tipo": "concepto",
+    "lema": "pacto de sal",
+    "formas": [
+      "pacto de sal"
+    ],
+    "adulto": "«Pacto de sal perpetuo» es una expresión para un compromiso duradero que no se rompe. Se interpreta así porque la sal conserva; otro pasaje manda que a toda ofrenda se le añada «la sal de la alianza de tu Dios». Aquí se dice de las ofrendas elevadas que corresponden a los sacerdotes. Es una interpretación del símbolo, no una definición del texto.",
+    "nino": "Una promesa tan firme que se compara con la sal, que conserva las cosas sin que se echen a perder.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 18:19",
+        "cita": "pacto de sal perpetuo es delante de Jehová"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 2:13",
+        "cita": "la sal de la alianza de tu Dios"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "goel": {
+    "tipo": "concepto",
+    "lema": "pariente redentor (goel)",
+    "formas": [
+      "rescatador",
+      "pariente cercano"
+    ],
+    "adulto": "El «rescatador» (en hebreo, goel) es el pariente cercano al que la ley encarga restituir los derechos de un familiar: recuperar la tierra que este tuvo que vender por pobreza. La RV1909 lo llama «rescatador», «redentor» o «pariente cercano» según el pasaje. Es una figura de solidaridad familiar con obligaciones concretas.",
+    "nino": "Un pariente cercano que ayudaba a su familiar a recuperar lo que había perdido.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 25:25",
+        "cita": "vendrá el rescatador, su cercano, y rescatará lo que su hermano hubiere vendido"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Redeemer",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/redeemer.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [
+      "Lv 21:2"
+    ],
+    "solo": null
+  },
+  "vengador-sangre": {
+    "tipo": "concepto",
+    "lema": "pariente del muerto (vengador de la sangre)",
+    "formas": [
+      "pariente del muerto"
+    ],
+    "adulto": "En la ley, el «pariente del muerto» es el familiar al que corresponde pedir cuentas por la muerte de alguien de su familia; Easton lo llama el «vengador de la sangre». La ley distingue la muerte voluntaria de la sin intención y prevé ciudades de acogimiento para proteger al que mató sin querer hasta que sea juzgado.",
+    "nino": "Un pariente al que la ley daba un papel especial cuando moría alguien de su familia; había ciudades donde protegerse.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 35:19",
+        "cita": "El pariente del muerto"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Nm 35:12",
+        "cita": "hasta que esté á juicio delante de la congregación"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Avenger of blood",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/avenger-of-blood.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ciudades-refugio": {
+    "tipo": "concepto",
+    "lema": "ciudades de refugio (de acogimiento)",
+    "formas": [
+      "ciudades de acogimiento",
+      "ciudad de acogimiento",
+      "ciudades de refugio",
+      "ciudad de refugio"
+    ],
+    "adulto": "Son seis ciudades que Israel debe señalar para que huya a ellas quien hubiera matado a alguien «por yerro», es decir, sin intención. Allí queda protegido del pariente del muerto hasta ser juzgado por la congregación. La RV1909 las llama «ciudades de acogimiento».",
+    "nino": "Ciudades señaladas como refugio para quien había causado un daño sin querer.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 35:11",
+        "cita": "donde huya el homicida que hiriere á alguno de muerte por yerro"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Nm 35:13",
+        "cita": "tendréis seis ciudades de acogimiento"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Refuge, Cities of",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/refuge-cities-of.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "anatema": {
+    "tipo": "concepto",
+    "lema": "anatema (herem)",
+    "formas": [
+      "anatema"
+    ],
+    "adulto": "«Anatema» traduce el hebreo herem: algo dedicado por completo a Dios, sin poder rescatarse ni destinarse a uso común. La propia RV1909 lo glosa como «cosa consagrada».",
+    "nino": "Algo que se entregaba por completo a Dios y ya no se podía recuperar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 27:29",
+        "cita": "Cualquier anatema (cosa consagrada)"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Anathema",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/anathema.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "nazareo": {
+    "tipo": "concepto",
+    "lema": "nazareo (nazareato)",
+    "formas": [
+      "Nazareo",
+      "nazareato"
+    ],
+    "adulto": "Un nazareo es alguien «apartado» para Dios. El hombre o la mujer que hacía el voto de nazareo se abstenía de vino y de uva, no se cortaba el cabello y evitaba el contacto con los muertos durante el tiempo del voto. En Génesis 49:26 la RV1909 usa la palabra con su sentido de «apartado» o «consagrado».",
+    "nino": "Una persona que prometía vivir apartada para Dios, sin cortarse el cabello ni beber vino.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 6:2",
+        "cita": "cuando se apartare haciendo voto de Nazareo"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Nm 6:5",
+        "cita": "no pasará navaja sobre su cabeza"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Nazarite",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/nazarite.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "jubileo": {
+    "tipo": "concepto",
+    "lema": "jubileo",
+    "formas": [
+      "jubileo"
+    ],
+    "adulto": "El jubileo es el año cincuenta, tras siete ciclos de siete años. Según la ley se declara libertad en la tierra y cada uno vuelve a su posesión y a su familia, de modo que la tierra regresa a su dueño original. Era una forma de evitar que la tierra y la pobreza se acumularan para siempre. Los diccionarios señalan que la Biblia no registra que se haya cumplido.",
+    "nino": "Un año especial cada cincuenta años en que cada familia recuperaba su tierra.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 25:10",
+        "cita": "pregonaréis libertad en la tierra á todos sus moradores"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Jubilee",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/jubilee.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ano-sabatico": {
+    "tipo": "concepto",
+    "lema": "año sabático (descanso de la tierra)",
+    "formas": [
+      "sábado de holganza"
+    ],
+    "adulto": "Cada séptimo año la tierra descansa: no se siembra ni se poda la viña. Es un «sábado de holganza» para la tierra, igual que el séptimo día lo es para las personas. Lo que la tierra da por sí sola queda para los pobres y las bestias del campo.",
+    "nino": "Cada siete años la tierra descansaba y no se sembraba.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 25:4",
+        "cita": "la tierra tendrá sábado de holganza"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 23:11",
+        "cita": "para que coman los pobres de tu pueblo"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Sabbatical Year",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/sabbatical-year.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "remision": {
+    "tipo": "concepto",
+    "lema": "año de la remisión (perdón de deudas)",
+    "formas": [
+      "año de la remisión",
+      "remisión"
+    ],
+    "adulto": "Cada siete años, la ley manda hacer «remisión»: quien prestó a su prójimo no le exige más lo prestado, porque «la remisión de Jehová es pregonada». Es una forma de proteger a los endeudados de quedar atrapados para siempre.",
+    "nino": "Cada siete años se perdonaban las deudas entre los israelitas.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Dt 15:2",
+        "cita": "porque la remisión de Jehová es pregonada"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Sabbatical Year",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/sabbatical-year.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ofrenda-mecida": {
+    "tipo": "concepto",
+    "lema": "ofrenda mecida o agitada",
+    "formas": [
+      "ofrenda mecida",
+      "ofrenda agitada",
+      "ofrendas mecidas",
+      "ofrendas agitadas",
+      "mecerás"
+    ],
+    "adulto": "La ofrenda mecida (o «agitada») es una parte de lo que se ofrece que el sacerdote presenta moviéndola delante de Jehová, como gesto de entrega. El texto describe el gesto («lo mecerás agitándolo») pero no explica su significado; luego la porción pasa a ser de los sacerdotes.",
+    "nino": "Un gesto en que el sacerdote presentaba una ofrenda moviéndola delante de Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 29:24",
+        "cita": "lo mecerás agitándolo delante de Jehová"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ofrenda-elevada": {
+    "tipo": "concepto",
+    "lema": "ofrenda elevada",
+    "formas": [
+      "ofrenda elevada",
+      "ofrendas elevadas"
+    ],
+    "adulto": "Es la parte de las ofrendas santas que los israelitas apartan para Dios y que Dios da a los sacerdotes y sus familias como porción permanente. En la RV1909 aparece como «ofrenda elevada»; otras versiones dicen «ofrenda alzada» o «contribución».",
+    "nino": "La parte de lo ofrecido que se apartaba para Dios y era la comida de los sacerdotes.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 18:19",
+        "cita": "Todas las ofrendas elevadas de las cosas santas, que los hijos de Israel ofrecieren á Jehová, helas dado para ti"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "primicias": {
+    "tipo": "concepto",
+    "lema": "primicias",
+    "formas": [
+      "primicias",
+      "primicia"
+    ],
+    "adulto": "Las primicias son los primeros frutos de la cosecha (o lo primero que produce un rebaño), que se apartan para Dios antes de aprovechar el resto. Expresan que la tierra y su fruto vienen de Él. La ley manda no retrasarlas.",
+    "nino": "Lo primero que daba la cosecha, que se entregaba a Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 22:29",
+        "cita": "No dilatarás la primicia de tu cosecha"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "First-fruits",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/first-fruits.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "gavilla-omer": {
+    "tipo": "concepto",
+    "lema": "gavilla de primicias (el «omer» de Lv 23)",
+    "formas": [
+      "un omer por primicia",
+      "el omer"
+    ],
+    "adulto": "En Levítico 23 la RV1909 usa «omer» para el haz de grano nuevo que se lleva al sacerdote como primicia y que este «mecerá» delante de Jehová. No parece ser la medida pequeña de Éxodo 16: el contexto habla de una gavilla. Es una identificación por el contexto, no una definición del texto.",
+    "nino": "El primer manojo de la cosecha de cebada, que se ofrecía a Dios.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 23:10",
+        "cita": "un omer por primicia de los primeros frutos de vuestra siega"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 23:11",
+        "cita": "El cual mecerá el omer delante de Jehová"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "First-fruits",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/first-fruits.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "diezmo": {
+    "tipo": "concepto",
+    "lema": "diezmo",
+    "formas": [
+      "diezmo",
+      "diezmos"
+    ],
+    "adulto": "El diezmo es la décima parte de los frutos o bienes, apartada para Dios. Ya aparece cuando Abram da «los diezmos de todo» a Melquisedec.",
+    "nino": "La décima parte de lo que uno recogía, que se daba a Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 14:20",
+        "cita": "los diezmos de todo"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 27:30",
+        "cita": "Y todas las décimas de la tierra"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Tithe",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tithe.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "circuncision": {
+    "tipo": "concepto",
+    "lema": "circuncisión",
+    "formas": [
+      "circuncidad",
+      "circuncidada",
+      "circuncidado",
+      "circuncidados",
+      "circuncidar",
+      "circuncidare",
+      "circuncidaron",
+      "circuncidaros",
+      "circuncidará",
+      "circuncidaréis",
+      "circuncide",
+      "circuncidó",
+      "circuncisión",
+      "circunciso",
+      "circuncisos"
+    ],
+    "adulto": "La circuncisión es el corte del prepucio. En la Biblia es la señal del pacto de Dios con Abraham y su descendencia: se aplica a los varones de la casa, incluidos los siervos. Los diccionarios añaden que también simbolizaba una purificación interior.",
+    "nino": "Una señal que marcaba que los varones de la familia pertenecían al pueblo de Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 17:11",
+        "cita": "y será por señal del pacto entre mí y vosotros"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Circumcision",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/circumcision.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pascua": {
+    "tipo": "concepto",
+    "lema": "Pascua",
+    "formas": [
+      "Pascua"
+    ],
+    "adulto": "La Pascua es la fiesta que recuerda la salida de Israel de Egipto, cuando el juicio «pasó de largo» sobre las casas marcadas con sangre. Se celebra el día catorce del primer mes con un cordero comido a toda prisa, con panes sin levadura. Dios manda celebrarla cada año como memorial.",
+    "nino": "La gran fiesta que recuerda cuando Dios sacó a su pueblo de Egipto.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 12:11",
+        "cita": "es la Pascua de Jehová"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 12:14",
+        "cita": "y habéis de celebrarlo como solemne á Jehová"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Passover",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/passover.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "azimos": {
+    "tipo": "concepto",
+    "lema": "ázimos (pan sin levadura)",
+    "formas": [
+      "panes sin levadura",
+      "pan sin levadura",
+      "ázimos",
+      "sin levadura"
+    ],
+    "adulto": "El pan «sin levadura» (ázimo) es pan hecho sin fermento, plano y que se prepara rápido. Aparece como comida de urgencia y, en las leyes, en las ofrendas y en la fiesta que lleva su nombre. La levadura se asocia con fermentar y avanzar, y su ausencia con prisa o pureza.",
+    "nino": "Pan plano, hecho sin levadura, que se prepara rápido.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 12:15",
+        "cita": "Siete días comeréis panes sin levadura"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "fiesta-azimos": {
+    "tipo": "concepto",
+    "lema": "fiesta de los ázimos",
+    "formas": [
+      "fiesta de los ázimos"
+    ],
+    "adulto": "La fiesta de los ázimos dura siete días, en que se come pan sin levadura, y se celebra en el mes de Abib porque en él Israel salió de Egipto. Está unida a la Pascua: los diccionarios la tratan como una sola celebración.",
+    "nino": "Una fiesta de siete días en que se comía pan sin levadura para recordar la salida de Egipto.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 23:15",
+        "cita": "La fiesta de los ázimos guardarás"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Passover",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/passover.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "fiesta-semanas": {
+    "tipo": "concepto",
+    "lema": "fiesta de las semanas (Pentecostés)",
+    "formas": [
+      "fiesta de las semanas"
+    ],
+    "adulto": "La fiesta de las semanas se celebra al comienzo de la siega del trigo. La ley manda contar siete semanas desde el día de la gavilla, es decir, cincuenta días, y entonces presentar una ofrenda nueva; por eso más tarde se la llamó «Pentecostés» (del griego, «quincuagésimo»).",
+    "nino": "Una fiesta de cosecha que se celebraba cincuenta días después de otra fiesta.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 34:22",
+        "cita": "la fiesta de las semanas á los principios de la siega del trigo"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 23:16",
+        "cita": "contaréis cincuenta días"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Pentecost",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/pentecost.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "expiacion": {
+    "tipo": "concepto",
+    "lema": "expiación",
+    "formas": [
+      "expiaciones",
+      "expiación",
+      "expiar",
+      "expiarle",
+      "expiarlos",
+      "expiaros",
+      "expiará",
+      "expiarálo",
+      "expiarás"
+    ],
+    "adulto": "Expiar es reparar o «cubrir» una culpa para restablecer la relación con Dios. En la RV1909 «expiación» se usa para la ofrenda por el pecado y para el acto de reconciliación que el sacerdote hace con la sangre y el sacrificio. Easton señala que la expiación es la reconciliación, de modo que sea posible estar en paz con Dios.",
+    "nino": "Una ceremonia para arreglar las cosas con Dios cuando alguien había hecho algo malo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 4:3",
+        "cita": "un becerro sin tacha para expiación"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Atonement",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/atonement.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dia-expiaciones": {
+    "tipo": "concepto",
+    "lema": "día de las expiaciones",
+    "formas": [
+      "día de las expiaciones",
+      "día de expiaciones"
+    ],
+    "adulto": "Es el día diez del mes séptimo, de «santa convocación», en que el pueblo «aflige sus almas» (se humilla y ayuna) y se ofrecen ofrendas. Ese día el sumo sacerdote hacía la reconciliación por el santuario y por el pueblo, como describe Levítico 16.",
+    "nino": "Un día muy solemne del año en que el pueblo pedía perdón a Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 23:27",
+        "cita": "afligiréis vuestras almas"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Scapegoat",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/scapegoat.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "azazel": {
+    "tipo": "concepto",
+    "lema": "Azazel (el chivo expiatorio)",
+    "formas": [
+      "Azazel"
+    ],
+    "adulto": "En el día de las expiaciones Aarón echa suertes sobre dos machos cabríos: uno «por Jehová» y otro «por Azazel». Sobre el segundo se confiesan las iniquidades del pueblo y se lo deja ir al desierto. El texto no dice qué o quién es Azazel; la tradición llama a este animal el «chivo expiatorio».",
+    "nino": "Un animal que se dejaba ir al desierto llevando simbólicamente las faltas del pueblo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 16:22",
+        "cita": "llevará sobre sí todas las iniquidades de ellos á tierra inhabitada"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Scapegoat",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/scapegoat.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ofrenda-culpa": {
+    "tipo": "concepto",
+    "lema": "ofrenda por la culpa",
+    "formas": [
+      "por la culpa"
+    ],
+    "adulto": "La ofrenda «por la culpa» es un sacrificio para reparar un daño o una falta que se ve como una deuda, sobre todo en ofensas contra algo sagrado o contra el prójimo. Easton señala que era un carnero y que el hebreo (asham) significa «deuda».",
+    "nino": "Un sacrificio para reparar una falta, como cuando se arregla algo roto.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 6:17",
+        "cita": "por la culpa"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Trespass-offering",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/trespass-offering.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "levita": {
+    "tipo": "concepto",
+    "lema": "levita",
+    "formas": [
+      "levita",
+      "levitas"
+    ],
+    "adulto": "El levita es un descendiente de Leví, uno de los hijos de Jacob. Moisés y Aarón pertenecen a esta tribu.",
+    "nino": "Alguien de la tribu de Leví, como Moisés y Aarón.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 4:14",
+        "cita": "Aarón, Levita"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Levite",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/levite.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "sacerdote": {
+    "tipo": "concepto",
+    "lema": "sacerdote",
+    "formas": [
+      "sacerdote",
+      "sacerdotes"
+    ],
+    "adulto": "El sacerdote es quien ofrece sacrificios y sirve ante la divinidad en nombre de otros. La Biblia ya presenta a Melquisedec como «sacerdote del Dios alto» y menciona sacerdotes en otros pueblos. Los diccionarios señalan que antes de la ley los jefes de familia ofrecían sacrificios.",
+    "nino": "El que ofrece los sacrificios y sirve en el culto.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 14:18",
+        "cita": "sacerdote del Dios alto"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Priest",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/priest.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "sumo-sacerdote": {
+    "tipo": "concepto",
+    "lema": "sumo sacerdote",
+    "formas": [
+      "sumo sacerdote",
+      "sacerdote ungido"
+    ],
+    "adulto": "El sumo sacerdote es el sacerdote principal «entre sus hermanos». Se le consagra derramando aceite sobre su cabeza y lleva vestiduras especiales: la túnica azul, el efod, el racional y la mitra.",
+    "nino": "El sacerdote principal, con ropas especiales.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 21:10",
+        "cita": "Y el sumo sacerdote entre sus hermanos"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 4:3",
+        "cita": "Si sacerdote ungido pecare"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "High Priest",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/high-priest.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "juez": {
+    "tipo": "concepto",
+    "lema": "juez",
+    "formas": [
+      "juez",
+      "jueces"
+    ],
+    "adulto": "En la Biblia el «juez» (hebreo shofet) es un gobernante o magistrado, más que alguien que solo decide pleitos: ejerce autoridad y hace justicia. Se le recurre para resolver disputas, y la palabra también se usa para quienes dirigían al pueblo.",
+    "nino": "Alguien con autoridad que decide quién tiene razón y ayuda a gobernar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 21:6",
+        "cita": "su amo lo hará llegar á los jueces"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Judge",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/judge.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "profeta": {
+    "tipo": "concepto",
+    "lema": "profeta (vidente)",
+    "formas": [
+      "profeta",
+      "profetas",
+      "vidente"
+    ],
+    "adulto": "El profeta es un portavoz de Dios, «la boca» por la que Él habla. En la Biblia aparece pronto aplicado a Abraham: Dios dice de él «es profeta». La RV1909 también usa «vidente» para el mismo oficio.",
+    "nino": "Alguien que habla de parte de Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 20:7",
+        "cita": "es profeta"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 7:1",
+        "cita": "tu hermano Aarón será tu profeta"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Prophet",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/prophet.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "tabernaculo": {
+    "tipo": "concepto",
+    "lema": "tabernáculo (tienda de reunión)",
+    "formas": [
+      "tabernáculo del testimonio",
+      "tabernáculo de la congregación",
+      "tabernáculo"
+    ],
+    "adulto": "El tabernáculo es la tienda sagrada y portátil que Dios manda hacer para habitar en medio de su pueblo, según el modelo que muestra a Moisés. Es un recinto de tela y madera con un lugar santo y un lugar santísimo, rodeado de un atrio con el altar. Se desmonta y se traslada con el pueblo.",
+    "nino": "La tienda sagrada donde Dios habitaba entre su pueblo, que se llevaba de viaje.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:8",
+        "cita": "Y hacerme han un santuario, y yo habitaré entre ellos"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Tabernacle",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tabernacle.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "velo": {
+    "tipo": "concepto",
+    "lema": "velo del santuario",
+    "formas": [
+      "velo"
+    ],
+    "adulto": "El velo es la gran cortina del tabernáculo que separa el lugar santo del lugar santísimo, donde está el arca. Se hace de azul, púrpura, carmesí y lino torcido, con querubines.",
+    "nino": "La cortina que separaba el lugar santo del lugar más sagrado.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 26:33",
+        "cita": "aquel velo os hará separación entre el lugar santo y el santísimo"
+      }
+    ],
+    "excluir": [
+      "Gn 20:16",
+      "Gn 24:65",
+      "Gn 38:14",
+      "Gn 38:19",
+      "1S 21:9"
+    ],
+    "solo": null
+  },
+  "pan-proposicion": {
+    "tipo": "concepto",
+    "lema": "pan de la proposición",
+    "formas": [
+      "pan de la proposición",
+      "panes de la proposición"
+    ],
+    "adulto": "Es el pan que se coloca sobre la mesa del santuario «delante de Dios continuamente». Los diccionarios lo describen como doce panes que se renuevan cada sábado y que solo comían los sacerdotes, y los relacionan con las doce tribus.",
+    "nino": "El pan que se ponía siempre en la mesa del santuario.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:30",
+        "cita": "Y pondrás sobre la mesa el pan de la proposición"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Shewbread",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/shewbread.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "candelero": {
+    "tipo": "concepto",
+    "lema": "candelero de oro",
+    "formas": [
+      "candelero"
+    ],
+    "adulto": "El candelero es el portalámparas de oro puro, labrado a martillo, que se pone en el santuario. Tiene pie, caña, copas, manzanas y flores del mismo metal. En el santuario daba la luz que iluminaba la tienda.",
+    "nino": "Un gran candelabro de oro que alumbraba el interior de la tienda sagrada.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 25:31",
+        "cita": "Harás además un candelero de oro puro"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Candlestick",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/candlestick.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "incienso": {
+    "tipo": "concepto",
+    "lema": "sahumerio e incienso",
+    "formas": [
+      "sahumerio",
+      "incienso"
+    ],
+    "adulto": "El sahumerio es una mezcla aromática que se quema como ofrenda, y el incienso es su ingrediente principal. En el santuario se quema cada mañana sobre un altar especial. Los diccionarios lo asocian con la oración que sube hacia Dios.",
+    "nino": "Un perfume que se quemaba en el santuario y que olía muy bien.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 30:7",
+        "cita": "Y quemará sobre él Aarón sahumerio de aroma cada mañana"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Incense",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/incense.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "fuente-metal": {
+    "tipo": "concepto",
+    "lema": "fuente de metal (lavatorio)",
+    "formas": [
+      "fuente de metal"
+    ],
+    "adulto": "Es el gran recipiente de bronce del atrio del tabernáculo, entre la tienda y el altar, lleno de agua. Los sacerdotes se lavaban en él antes de acercarse al altar o entrar en la tienda.",
+    "nino": "Una gran palangana con agua donde los sacerdotes se lavaban.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 30:18",
+        "cita": "Harás también una fuente de metal"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Laver",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/laver.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "libacion": {
+    "tipo": "concepto",
+    "lema": "libación",
+    "formas": [
+      "libación",
+      "libaciones"
+    ],
+    "adulto": "La libación es un líquido, normalmente vino, que se derrama como ofrenda. En las ofrendas de la ley acompaña a la harina y el aceite en cantidades fijas, y en Génesis aparece ya cuando se derrama sobre una piedra erigida como señal.",
+    "nino": "Vino que se derramaba como ofrenda a Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 29:40",
+        "cita": "y la libación será la cuarta parte de un hin de vino"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "sabado": {
+    "tipo": "concepto",
+    "lema": "sábado",
+    "formas": [
+      "sábado",
+      "sábados"
+    ],
+    "adulto": "El sábado es el séptimo día, de reposo consagrado a Jehová. En el relato del maná se presenta como el día en que no se recoge alimento. Los diccionarios lo vinculan con el reposo del séptimo día de la creación.",
+    "nino": "El día de descanso de cada semana, dedicado a Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 16:23",
+        "cita": "Mañana es el santo sábado, el reposo de Jehová"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Sabbath",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/sabbath.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "lepra": {
+    "tipo": "concepto",
+    "lema": "lepra (tsaraat)",
+    "formas": [
+      "lepra",
+      "leprosa",
+      "leproso"
+    ],
+    "adulto": "En la RV1909 «lepra» traduce el hebreo tsaraat, una afección de la piel que la ley describe con manchas, hinchazones y postillas. La identificación exacta con una enfermedad actual no la da el texto. Quien la tenía debía ser examinado por el sacerdote y vivir apartado.",
+    "nino": "Una enfermedad de la piel por la que el enfermo vivía apartado hasta que el sacerdote lo declaraba sano.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 13:2",
+        "cita": "como llaga de lepra, será traído á Aarón el sacerdote"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Leprosy",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/leprosy.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "impureza": {
+    "tipo": "concepto",
+    "lema": "limpio e inmundo (impureza ritual)",
+    "formas": [
+      "inmunda",
+      "inmundas",
+      "inmundicia",
+      "inmundicias",
+      "inmundo",
+      "inmundos"
+    ],
+    "adulto": "En la ley, «inmundo» no significa sucio, sino que no puede acercarse a lo sagrado hasta ser purificado. Hay cosas, animales y situaciones que hacen inmundo a alguien. La ley pide distinguir entre lo limpio y lo inmundo, y la impureza se quita con lavados, con espera o con ofrendas.",
+    "nino": "Un estado que impedía acercarse al santuario hasta que se purificaba; no tenía que ver con estar sucio.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 11:47",
+        "cita": "Para hacer diferencia entre inmundo y limpio"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "vaca-bermeja": {
+    "tipo": "concepto",
+    "lema": "vaca bermeja y agua de separación",
+    "formas": [
+      "vaca bermeja",
+      "agua de separación",
+      "aguas de purificación"
+    ],
+    "adulto": "La vaca bermeja es un animal rojizo que se quema, y sus cenizas se guardan fuera del campo y se mezclan con agua para el «agua de separación», con la que se purifica a quien tuvo contacto con un muerto. La propia ley lo llama «expiación».",
+    "nino": "Un rito con agua y cenizas para purificar a las personas.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 19:9",
+        "cita": "para el agua de separación: es una expiación"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aguas-amargas": {
+    "tipo": "concepto",
+    "lema": "aguas amargas",
+    "formas": [
+      "aguas amargas"
+    ],
+    "adulto": "Las «aguas amargas que acarrean maldición» son un rito ante el sacerdote para aclarar una sospecha de infidelidad cuando no hay testigos. El texto describe el procedimiento, pero lo deja a la decisión de Dios.",
+    "nino": "Un rito ante el sacerdote para aclarar una duda entre esposos.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 5:18",
+        "cita": "las aguas amargas que acarrean maldición"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "celoso": {
+    "tipo": "concepto",
+    "lema": "Dios celoso",
+    "formas": [
+      "celoso"
+    ],
+    "adulto": "Decir que Dios es «celoso» expresa que reclama una devoción exclusiva, como en un pacto de fidelidad, no envidia mezquina. Se usa en el contexto de no adorar a otros dioses.",
+    "nino": "Dios quiere que su pueblo le sea fiel solo a Él.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 20:5",
+        "cita": "yo soy Jehová tu Dios, fuerte, celoso"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 34:14",
+        "cita": "cuyo nombre es Celoso, Dios celoso es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "adivinacion": {
+    "tipo": "concepto",
+    "lema": "adivinación y encantamientos",
+    "formas": [
+      "hechiceros",
+      "adivinos",
+      "adivinación",
+      "adivinar",
+      "agoreros",
+      "encantadores",
+      "magos"
+    ],
+    "adulto": "Se llama adivinación a los medios para conocer el futuro o pedir mensajes a los espíritus. La ley los prohíbe, y los diccionarios la distinguen de las formas que presenta como legítimas: los sueños, las suertes y el Urim y Thummim. La RV1909 llama «encantadores» y «magos» a los que practican artes ocultas.",
+    "nino": "Intentar saber el futuro por medios que la ley prohibía.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 7:11",
+        "cita": "Faraón sabios y encantadores"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Divination",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/divination.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "suertes": {
+    "tipo": "concepto",
+    "lema": "echar suertes",
+    "formas": [
+      "echará suertes",
+      "por suerte",
+      "por suertes"
+    ],
+    "adulto": "Echar suertes es un modo de decidir poniendo la decisión en manos de Dios, como hoy se sortea. Sirve para escoger quién hace algo, como en la ceremonia de las expiaciones, o para repartir la tierra entre las tribus.",
+    "nino": "Un sorteo para decidir algo y dejar que Dios elija.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 16:8",
+        "cita": "Y echará suertes Aarón sobre los dos machos de cabrío"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Nm 26:55",
+        "cita": "la tierra será repartida por suerte"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Divination",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/divination.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "voto": {
+    "tipo": "concepto",
+    "lema": "voto",
+    "formas": [
+      "voto",
+      "votos"
+    ],
+    "adulto": "El voto es una promesa solemne hecha a Dios, a veces condicionada a su ayuda. Una vez hecho, la ley manda cumplirlo: no se debe violar la palabra dada.",
+    "nino": "Una promesa muy seria hecha a Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Nm 30:3",
+        "cita": "no violará su palabra"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "juramento-muslo": {
+    "tipo": "concepto",
+    "lema": "poner la mano bajo el muslo",
+    "formas": [
+      "debajo de mi muslo",
+      "debajo del muslo"
+    ],
+    "adulto": "Poner la mano «debajo del muslo» de alguien es un gesto solemne con el que se confirma un juramento. El texto lo describe y a continuación dice que se jura por Jehová, pero no explica el origen del gesto.",
+    "nino": "Un gesto muy solemne para prometer algo.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 24:2",
+        "cita": "Pon ahora tu mano debajo de mi muslo"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Oath",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/oath.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pacto": {
+    "tipo": "concepto",
+    "lema": "pacto o alianza",
+    "formas": [
+      "pacto",
+      "alianza"
+    ],
+    "adulto": "Un pacto (o alianza) es un acuerdo solemne y vinculante. En la Biblia sirve tanto para acuerdos entre personas como para las promesas de Dios, como la que Dios hace a Noé. Suele ir acompañado de una señal.",
+    "nino": "Una promesa muy solemne y obligada, con una señal que la recuerda.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 9:9",
+        "cita": "yo establezco mi pacto con vosotros"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Covenant",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/covenant.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ungir": {
+    "tipo": "concepto",
+    "lema": "ungir (unción)",
+    "formas": [
+      "unción",
+      "ungido",
+      "ungidos",
+      "ungiese",
+      "ungirme",
+      "ungirás",
+      "ungiste",
+      "ungió",
+      "ungiólo"
+    ],
+    "adulto": "Ungir es derramar o frotar aceite sobre una persona o cosa para consagrarla. Se unge a personas y a objetos, como la piedra que Jacob levanta como señal. El aceite marca que esa persona o cosa queda reservada para Dios. «Ungido» es quien ha recibido esa unción.",
+    "nino": "Derramar aceite sobre alguien o algo para apartarlo para Dios.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 28:18",
+        "cita": "derramó aceite encima de ella"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Anoint",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/anoint.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "hebreo": {
+    "tipo": "concepto",
+    "lema": "hebreo",
+    "formas": [
+      "Hebreo",
+      "Hebreos",
+      "Hebrea",
+      "Hebreas"
+    ],
+    "adulto": "«Hebreo» es un nombre para los descendientes de Abraham que, sobre todo, usan los extranjeros o los propios israelitas al hablar con ellos. Su origen es debatido: puede venir de Heber, de un verbo que significa «pasar al otro lado» o de una palabra que designa a quien vive de paso.",
+    "nino": "Un nombre antiguo para el pueblo de Abraham.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 14:13",
+        "cita": "Abram el Hebreo"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Hebrew",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/hebrew.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "jehova": {
+    "tipo": "concepto",
+    "lema": "Jehová (el nombre de Dios)",
+    "formas": [
+      "Jehová"
+    ],
+    "adulto": "«Jehová» es la forma española tradicional del nombre propio de Dios, de cuatro letras en hebreo. La RV1909 lo escribe así; muchas versiones lo traducen «el Señor».",
+    "nino": "El nombre propio de Dios en esta traducción.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 6:3",
+        "cita": "mas en mi nombre JEHOVÁ no me notifiqué á ellos"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Jehovah",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/jehovah.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Gn 2:4",
+      "Ex 3:15",
+      "Ex 6:3"
+    ]
+  },
+  "todopoderoso": {
+    "tipo": "concepto",
+    "lema": "Dios Todopoderoso (Omnipotente)",
+    "formas": [
+      "Todopoderoso",
+      "Omnipotente"
+    ],
+    "adulto": "«Todopoderoso» (u «Omnipotente») es un título de Dios que la RV1909 usa en las promesas a los patriarcas. En Génesis 17:1 Dios se presenta así a Abram.",
+    "nino": "Un título de Dios que significa que tiene todo el poder.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 17:1",
+        "cita": "Yo soy el Dios Todopoderoso"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Ex 6:3",
+        "cita": "[el nombre de] Dios Omnipotente"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dios-alto": {
+    "tipo": "concepto",
+    "lema": "Dios Altísimo (el Dios alto)",
+    "formas": [
+      "Dios alto",
+      "Altísimo"
+    ],
+    "adulto": "«El Dios alto» (o Altísimo) es un título de Dios que usa Melquisedec en Génesis 14, donde lo llama «poseedor de los cielos y de la tierra».",
+    "nino": "Un título de Dios que quiere decir que está por encima de todo.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 14:18",
+        "cita": "sacerdote del Dios alto"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Gn 14:19",
+        "cita": "poseedor de los cielos y de la tierra"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "angel-jehova": {
+    "tipo": "concepto",
+    "lema": "el ángel de Jehová",
+    "formas": [
+      "ángel de Jehová",
+      "ángel de Dios"
+    ],
+    "adulto": "El «ángel de Jehová» es un mensajero de Dios. En varios pasajes el texto lo presenta hablando como Dios y la persona que lo recibe responde a Dios con ese nombre, lo que hace difícil separar al mensajero de quien lo envía. El texto lo narra así sin explicarlo.",
+    "nino": "Un mensajero de Dios que aparece a las personas y les habla.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 16:7",
+        "cita": "el ángel de Jehová"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Gn 16:13",
+        "cita": "Entonces llamó el nombre de Jehová que con ella hablaba"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ojo-por-ojo": {
+    "tipo": "concepto",
+    "lema": "ojo por ojo",
+    "formas": [
+      "ojo por ojo"
+    ],
+    "adulto": "«Ojo por ojo, diente por diente» es una regla de la ley sobre lesiones: la reparación debe corresponder al daño, ni más ni menos. Se entiende como un límite a la venganza y no como una invitación a ella. Es una lectura del texto, no una definición suya.",
+    "nino": "Una regla que decía que el castigo debía ser justo y no mayor que el daño.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 21:24",
+        "cita": "Ojo por ojo, diente por diente"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "usura": {
+    "tipo": "concepto",
+    "lema": "usura",
+    "formas": [
+      "usura"
+    ],
+    "adulto": "La «usura» de la RV1909 es el interés que se cobra por prestar, y no solo el interés excesivo. Ex 22:25 la prohíbe cuando se presta a un pobre del pueblo.",
+    "nino": "Cobrar de más a alguien por prestarle algo; la ley lo prohibía entre hermanos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 22:25",
+        "cita": "ni le impondrás usura"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 25:36",
+        "cita": "No tomarás usura de él, ni aumento"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Usury",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/usury.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "prenda": {
+    "tipo": "concepto",
+    "lema": "prenda (garantía de un préstamo)",
+    "formas": [
+      "prenda",
+      "prendas"
+    ],
+    "adulto": "La prenda es algo que se entrega o se toma como garantía de una deuda o promesa. La ley protege al deudor: si alguien toma en prenda el vestido del prójimo, debe devolverlo antes de que se ponga el sol, porque es su único abrigo.",
+    "nino": "Algo que se dejaba como garantía hasta cumplir una promesa o pagar.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 22:26",
+        "cita": "Si tomares en prenda el vestido de tu prójimo"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "espigar": {
+    "tipo": "concepto",
+    "lema": "espigar y rebuscar",
+    "formas": [
+      "espigarás",
+      "espigar",
+      "rebuscarás",
+      "rebusco",
+      "rebuscaron"
+    ],
+    "adulto": "Espigar o rebuscar es recoger lo que queda tras la siega o la vendimia. La ley manda a los dueños no segar hasta el último rincón del campo ni rebuscar su viña, para que lo que quede sea para el pobre y el extranjero.",
+    "nino": "Recoger las espigas que quedaban en el campo después de cosechar; la ley lo reservaba para los pobres.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 19:9",
+        "cita": "no acabarás de segar el rincón de tu haza, ni espigarás tu tierra segada"
+      },
+      {
+        "tipo": "biblia",
+        "ref": "Lv 19:10",
+        "cita": "para el pobre y para el extranjero los dejarás"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "zapato": {
+    "tipo": "concepto",
+    "lema": "quitarse el zapato (rito de contrato)",
+    "formas": [
+      "se quitaba el zapato"
+    ],
+    "adulto": "En Israel, para confirmar un negocio de redención o de contrato, una de las partes se quitaba el zapato y se lo daba a la otra. El propio texto explica que ese gesto era el testimonio, es decir, la prueba pública del trato.",
+    "nino": "Un gesto antiguo para cerrar un trato: uno daba su zapato al otro.",
+    "certeza": "texto",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Rut 4:7",
+        "cita": "el uno se quitaba el zapato y lo daba á su compañero"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "puerta-ciudad": {
+    "tipo": "concepto",
+    "lema": "la puerta de la ciudad",
+    "formas": [
+      "puerta de la ciudad",
+      "puerta de su ciudad",
+      "puerta del lugar"
+    ],
+    "adulto": "La puerta de la ciudad no es solo una entrada: es el lugar público donde los vecinos se reúnen, se tratan los asuntos y se celebran los juicios. Por eso el que «entra por la puerta» participa en los acuerdos de la ciudad.",
+    "nino": "El lugar de la entrada de la ciudad, donde los vecinos se reunían y decidían asuntos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 23:10",
+        "cita": "todos los que entraban por la puerta de su ciudad"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Gate",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/gate.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ancianos": {
+    "tipo": "concepto",
+    "lema": "ancianos del pueblo",
+    "formas": [
+      "ancianos de Israel",
+      "ancianos del pueblo",
+      "ancianos de la ciudad"
+    ],
+    "adulto": "Los «ancianos» son hombres de edad y autoridad que representan y dirigen a la comunidad. Moisés los reúne para hablar con el pueblo, y con el tiempo ejercen funciones de gobierno y justicia local.",
+    "nino": "Los hombres de más edad y respeto que guiaban al pueblo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 3:16",
+        "cita": "junta los ancianos de Israel"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Elder",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/elder.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "concubina": {
+    "tipo": "concepto",
+    "lema": "concubina",
+    "formas": [
+      "concubina",
+      "concubinas"
+    ],
+    "adulto": "La concubina es una mujer unida a un hombre en una relación conyugal de rango inferior al de la esposa principal. La Biblia la menciona en varias familias.",
+    "nino": "Una esposa de segundo rango en la casa.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 22:24",
+        "cita": "Y su concubina"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Concubine",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/concubine.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dote": {
+    "tipo": "concepto",
+    "lema": "dote (precio de la novia)",
+    "formas": [
+      "dote",
+      "dotes"
+    ],
+    "adulto": "La «dote» en la RV1909 es el regalo o pago que se da por una novia, o su equivalente en trabajo. Se entrega al padre de ella, no se trata de lo que la novia aporta. Se hacía antes de la boda.",
+    "nino": "Un regalo importante que se daba a la familia de la novia antes de casarse.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 34:12",
+        "cita": "Aumentad á cargo mío mucho dote y dones"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Dowry",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/dowry.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "mandragoras": {
+    "tipo": "concepto",
+    "lema": "mandrágoras",
+    "formas": [
+      "mandrágoras"
+    ],
+    "adulto": "Las mandrágoras son una planta con fruto parecido a una manzanita, de la que se creía que favorecía la fertilidad. En Génesis 30 aparecen como algo que una mujer pide a otra; los diccionarios identifican el hebreo dudaim con la mandrágora.",
+    "nino": "Una planta de frutos pequeños y olorosos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 30:14",
+        "cita": "mandrágoras"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Mandrakes",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/mandrakes.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "hisopo": {
+    "tipo": "concepto",
+    "lema": "hisopo",
+    "formas": [
+      "hisopo"
+    ],
+    "adulto": "El hisopo es una planta de ramas con la que se esparcía sangre o agua en los ritos de purificación. Su identificación exacta es discutida: Easton la considera más probablemente la alcaparra que el mejor.",
+    "nino": "Un manojo de ramitas que se usaba para esparcir sangre o agua en los ritos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 12:22",
+        "cita": "Y tomad un manojo de hisopo"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Hyssop",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/hyssop.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "baal": {
+    "tipo": "concepto",
+    "lema": "Baal",
+    "formas": [
+      "Baales",
+      "Baal"
+    ],
+    "adulto": "Baal es el nombre de la divinidad masculina principal de los cananeos; «Baales» designa sus formas locales. La Biblia lo presenta como un dios que Israel no debe adorar.",
+    "nino": "Un dios falso que adoraban los pueblos vecinos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Jue 2:13",
+        "cita": "adoraron á Baal y á Astaroth"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Baal",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/baal.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Jue 2:11",
+      "Jue 2:13",
+      "Jue 3:7",
+      "Jue 6:25",
+      "Jue 6:28",
+      "Jue 6:30",
+      "Jue 6:31",
+      "Jue 6:32",
+      "Jue 8:33",
+      "Jue 10:6",
+      "Jue 10:10",
+      "1S 7:4",
+      "1S 12:10"
+    ]
+  },
+  "astaroth": {
+    "tipo": "concepto",
+    "lema": "Astarté (Astaroth)",
+    "formas": [
+      "Astaroth"
+    ],
+    "adulto": "Astaroth (Astoret) es la divinidad femenina principal de los cananeos, que Israel adoraba junto con Baal. Era una diosa de la naturaleza y la fertilidad.",
+    "nino": "Una diosa falsa que adoraban los pueblos vecinos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Jue 2:13",
+        "cita": "adoraron á Baal y á Astaroth"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Ashtoreth",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ashtoreth.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Jue 2:13",
+      "Jue 10:6",
+      "1S 7:3",
+      "1S 7:4",
+      "1S 12:10",
+      "1S 31:10"
+    ]
+  },
+  "moloc": {
+    "tipo": "concepto",
+    "lema": "Moloc",
+    "formas": [
+      "Moloch"
+    ],
+    "adulto": "Moloc es una divinidad de pueblos vecinos de Israel. La ley prohíbe entregarle descendencia y ordena no contaminar el nombre de Dios con esta práctica.",
+    "nino": "Un dios falso de pueblos vecinos, que la ley prohibía adorar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Lv 18:21",
+        "cita": "no contamines el nombre de tu Dios"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Moloch",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/moloch.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dagon": {
+    "tipo": "concepto",
+    "lema": "Dagón",
+    "formas": [
+      "Dagón"
+    ],
+    "adulto": "Dagón es el dios principal de los filisteos. Su nombre se suele relacionar con una palabra para «pez», y se le representa con cuerpo de pez y cabeza y manos de hombre. Los filisteos le dedicaban templos y sacrificios.",
+    "nino": "El dios falso principal de los filisteos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Jue 16:23",
+        "cita": "ofrecer sacrificio á Dagón su dios"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Dagon",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/dagon.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [
+      "Jos 15:41",
+      "Jos 19:27"
+    ],
+    "solo": null
+  },
+  "asera": {
+    "tipo": "concepto",
+    "lema": "Asera (los «bosques» de la RV1909)",
+    "formas": [
+      "bosques",
+      "bosque"
+    ],
+    "adulto": "En varios pasajes la RV1909 manda «talar los bosques» de otros pueblos. Se trata de la asera, un poste o árbol de madera consagrado a una diosa cananea, que solía plantarse junto a los altares. Lo que traduce «bosque» aquí no es una selva sino ese objeto de culto.",
+    "nino": "Un poste de madera consagrado a una diosa falsa, que Dios mandó derribar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Ex 34:13",
+        "cita": "derribaréis sus altares, y quebraréis sus estatuas, y talaréis sus bosques"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Grove",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/grove.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Ex 34:13",
+      "Dt 7:5",
+      "Dt 12:3",
+      "Dt 16:21",
+      "Jue 3:7",
+      "Jue 6:25",
+      "Jue 6:26",
+      "Jue 6:28",
+      "Jue 6:30"
+    ]
+  },
+  "terafines": {
+    "tipo": "concepto",
+    "lema": "terafines (ídolos del hogar)",
+    "formas": [
+      "teraphim",
+      "ídolos"
+    ],
+    "adulto": "Los terafines (la RV1909 escribe «teraphim») son figuras domésticas de dioses, con forma humana, que se guardaban en la casa y se consultaban. Algunos pasajes de la RV1909 hablan de «ídolos» donde otros dicen «teraphim». La identificación de cada caso es una inferencia.",
+    "nino": "Pequeñas figuras de dioses que se guardaban en casa.",
+    "certeza": "inferido",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 31:19",
+        "cita": "los ídolos de su padre"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Teraphim",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/teraphim.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": [
+      "Gn 31:19",
+      "Gn 31:34",
+      "Gn 31:35",
+      "Jue 17:5",
+      "Jue 18:14",
+      "Jue 18:17",
+      "Jue 18:18",
+      "Jue 18:20"
+    ]
+  },
+  "belial": {
+    "tipo": "concepto",
+    "lema": "hijos de Belial",
+    "formas": [
+      "Belial"
+    ],
+    "adulto": "«Belial» significa «sin valor» o «perversidad». Decir «hijos de Belial» o «hombres de Belial» es una forma de llamar a gente malvada y sin ley.",
+    "nino": "Una expresión para decir «gente muy mala».",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Jue 19:22",
+        "cita": "hombres hijos de Belial"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Belial",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/belial.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "duelo": {
+    "tipo": "concepto",
+    "lema": "rasgar vestidos y vestir de saco (duelo)",
+    "formas": [
+      "rasgó sus vestidos",
+      "rasgaron sus vestidos",
+      "saco sobre sus lomos"
+    ],
+    "adulto": "Rasgarse las vestiduras y vestirse de «saco» son gestos de duelo y de dolor intenso. El saco es una tela áspera, tradicionalmente de pelo de cabra, que se ceñía a la cintura en señal de luto o arrepentimiento.",
+    "nino": "Gestos que mostraban mucha tristeza por una pérdida.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "biblia",
+        "ref": "Gn 37:34",
+        "cita": "Entonces Jacob rasgó sus vestidos, y puso saco sobre sus lomos"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "entrada": "Sackcloth",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/sackcloth.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  }
+}

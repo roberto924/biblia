@@ -1060,6 +1060,61 @@ if (existsSync(real)) {
   }
 }
 
+// ---- Manuscritos (datos/manuscritos.js): folios de Leningrado, rollos y Vaticano por pasaje ----
+{
+  const rm = path.join(aqui, '..', 'datos', 'manuscritos.js'), ro = path.join(aqui, '..', 'datos', 'originales.js');
+  if (existsSync(real)) {
+    const cx = cargar(real, path.join(aqui, '..', 'app.js')), NM = cx.BibliaNucleo, DM = cx.BIBLIA_DATOS;
+    if (['Gn', 'Ex'].every(id => (DM.libros || []).some(l => l.id === id))) {
+      console.log('Manuscritos');
+      const M = { leningrado: { folios: {
+        '031a': { rv: ['Gn 49:26-Gn 50:16'], pagina: 'https://commons.wikimedia.org/wiki/File:A' },
+        '031b': { rv: ['Gn 50:16-Ex 1:18'], pagina: 'https://commons.wikimedia.org/wiki/File:B' },
+        '032a': { rv: ['Ex 1:18-Ex 2:22'], pagina: 'https://commons.wikimedia.org/wiki/File:C' } } },
+        rollos: { url_imagen: 'https://ll/', rollos: {
+          R1: { nivel: 'fragmento', sigla: 'R-1', laminas: [{ imagen: 'B-9' }], ficha: 'https://f/R1', fragmentos: [{ abegg: 'f1', versiculos: ['Ex 1:5-Ex 1:6'], imagenes: [{ imagen: 'B-1' }] }, { abegg: 'f2', versiculos: ['Ex 3:1'], imagenes: [{ imagen: 'B-2' }] }] },
+          R2: { nivel: 'fragmento', laminas: [{ imagen: 'B-8' }], fragmentos: [{ abegg: 'f1', versiculos: ['Ex 9:1'], imagenes: [{ imagen: 'B-3' }] }] },
+          R3: { nivel: 'ficha', laminas: [], fragmentos: [], ficha: 'https://f/R3' } } },
+        vaticano: { libros: { Ex: { url: 'https://digi.vatlib.it/view/MSS_Vat.gr.1209/0051', pagina: '47' } } } };
+      prueba('manuscritos: nombre del folio y tramo de versículos', () => {
+        assert.equal(NM.nombreFolio('001b'), '1v'); assert.equal(NM.nombreFolio('150a'), '150r');
+        assert.equal(NM.tramoRefs('Gn 1:1', 'Gn 1:19'), 'Gn 1:1–19'); assert.equal(NM.tramoRefs('Gn 1:26', 'Gn 2:3'), 'Gn 1:26–2:3'); assert.equal(NM.tramoRefs('Ex 1:1', 'Ex 1:1'), 'Ex 1:1');
+      });
+      prueba('manuscritos: folio que cruza dos libros, con la leyenda solo del pasaje actual', () => {
+        const ex = j(NM.foliosDePasaje(M, DM, { id: 'x', inicio: 'Ex 1:1', fin: 'Ex 1:22' }));
+        assert.deepEqual(ex.map(f => [f.id, f.muestra, f.otros]), [['031b', 'Ex 1:1–18', true], ['032a', 'Ex 1:18–22', true]]);
+        const gn = j(NM.foliosDePasaje(M, DM, { id: 'y', inicio: 'Gn 50:15', fin: 'Gn 50:26' }));
+        assert.deepEqual(gn.map(f => [f.id, f.muestra]), [['031a', 'Gn 50:15–16'], ['031b', 'Gn 50:16–26']], 'el folio 31v no adelanta Éxodo en la leyenda');
+        assert.deepEqual(j(NM.foliosDePasaje(M, DM, { id: 'z', inicio: 'Ex 2:23', fin: 'Ex 2:25' })), []);
+        assert.deepEqual(j(NM.foliosDePasaje(null, DM, { id: 'z', inicio: 'Ex 1:1', fin: 'Ex 1:5' })), []);
+      });
+      prueba('manuscritos: rollos de un pasaje (fragmento si cae dentro; si no, láminas o ficha) y Vaticano del libro', () => {
+        const O = { testigos: [{ id: 'leningrado', tipo: 'codice', contiene: ['Ex 1:1-Ex 40:38'] }, { id: 'R1', tipo: 'rollo', nombre: 'Rollo 1', contiene: ['Ex 1:5-Ex 1:6', 'Ex 3:1'] },
+          { id: 'R2', tipo: 'rollo', nombre: 'Rollo 2', contiene: ['Ex 1:2', 'Ex 9:1'] }, { id: 'R3', tipo: 'rollo', nombre: 'Rollo 3', url: 'https://t/R3', contiene: ['Ex 1:3'] }, { id: 'R4', tipo: 'rollo', contiene: ['Ex 5:1'] }] };
+        const r = j(NM.rollosDePasaje(M, O, DM, { id: 'x', inicio: 'Ex 1:1', fin: 'Ex 1:22' }));
+        assert.deepEqual(r.map(x => [x.id, x.nivel]), [['R1', 'fragmento'], ['R2', 'lamina'], ['R3', 'ficha']]);
+        assert.deepEqual(r[0].fragmentos.map(f => [f.abegg, f.imagenes[0].url]), [['f1', 'https://ll/B-1']], 'solo el fragmento con versículos del pasaje');
+        assert.equal(r[1].laminas[0].url, 'https://ll/B-8'); assert.equal(r[2].ficha, 'https://f/R3');
+        assert.deepEqual(j(NM.rollosDePasaje(null, O, DM, { id: 'x', inicio: 'Ex 1:3', fin: 'Ex 1:3' })).map(x => [x.id, x.nivel, x.ficha]), [['R3', 'ficha', 'https://t/R3']], 'sin manuscritos: la ficha del testigo');
+        assert.equal(NM.vaticanoDeLibro(M, 'Ex').pagina, '47'); assert.equal(NM.vaticanoDeLibro(M, 'Gn'), null);
+      });
+      if (existsSync(rm) && existsSync(ro)) prueba('manuscritos reales: cada pasaje con folio de Leningrado; Gn 1, 1 S 17 y Rut 1; 4Q49 en Jue 6', () => {
+        const cr = cargar(real, ro, rm, path.join(aqui, '..', 'app.js')), NR = cr.BibliaNucleo, DR = cr.BIBLIA_DATOS, MR = cr.BIBLIA_MANUSCRITOS, OR = cr.BIBLIA_ORIGINALES;
+        const ps = NR.pasajes(DR);
+        for (const p of ps) { const fs = NR.foliosDePasaje(MR, DR, p); assert.ok(fs.length, `${p.id} sin folio`); }
+        const de = ref => NR.pasajeDe(DR, ref);
+        assert.deepEqual(j(NR.foliosDePasaje(MR, DR, de('Gn 1:1'))).map(f => f.id), ['001b']);
+        assert.ok(j(NR.foliosDePasaje(MR, DR, de('1S 17:1'))).some(f => f.id === '159a'));
+        assert.equal(j(NR.foliosDePasaje(MR, DR, de('Rut 1:1')))[0].id, '421a');
+        const jue = j(NR.rollosDePasaje(MR, OR, DR, de('Jue 6:2'))).find(x => x.id === '4Q49');
+        assert.ok(jue && jue.nivel === 'fragmento' && jue.fragmentos[0].imagenes[0].imagen === 'B-360503' && jue.fragmentos[0].comprobado);
+        assert.equal(NR.vaticanoDeLibro(MR, NR.libroDe(de('Rut 1:1'))).pagina, '304', 'el libro del pasaje (Rt) encuentra la clave «Rut»');
+        assert.ok(['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rut', '1S'].every(lb => /^https:\/\/digi\.vatlib\.it\/view\/MSS_Vat\.gr\.1209\/\d{4}$/.test(NR.vaticanoDeLibro(MR, lb).url)));
+      });
+    }
+  }
+}
+
 console.log('Recursos (imágenes, objetos, medios)');
 {
   const NR = cargar(path.join(aqui, '..', 'app.js')).BibliaNucleo;
@@ -1554,6 +1609,92 @@ prueba('sin hebreo o sin griego: el motivo de los datos, tal cual, en la alineac
     if ((NR.BIBLIA_ORIGINALES.hebreo_sin_texto || {})['Jos 21:36']) { assert.equal(st.length, 2); assert.match(st[0].nota, /Leningrado/); }
   }
 });
+
+// ---- Explicaciones (datos/explicaciones.js): segmentación, primera aparición, niño, glosario y citas bloqueadas ----
+console.log('Explicaciones');
+{
+  const txt = ref => N.versiculosDe(D, N.pasajeDe(D, ref)).find(v => v.ref === ref).texto;
+  // Ocurrencia con offsets UTF-16 (como las del generador) de la n-ésima aparición de `s` en el versículo.
+  const oc = (t, ref, s, n) => { let i = -1; for (let k = 0; k <= (n || 0); k++) i = txt(ref).indexOf(s, i + 1); assert.ok(i >= 0, `${s} en ${ref}`); return { t, i, f: i + s.length }; };
+  const T = (lema, extra) => Object.assign({ tipo: 'concepto', lema, formas: [lema], adulto: `${lema} (adulto)`, nino: `${lema} (niño)`, certeza: 'externa', fuentes: [{ tipo: 'obra', obra: 'Obra', autor: 'Autor' }] }, extra || {});
+  const E = {
+    terminos: { conocer: T('conoció'), mujer: T('mujer'), parir: T('parió'), diluvio: T('diluvio', { certeza: 'texto', fuentes: [{ tipo: 'biblia', ref: 'Gn 7:6', cita: 'el diluvio de las aguas' }] }), rut: T('cuñada') },
+    ocurrencias: {
+      'Gn 4:1': [oc('conocer', 'Gn 4:1', 'conoció Adam'), oc('mujer', 'Gn 4:1', 'mujer'), oc('parir', 'Gn 4:1', 'parió')],
+      'Gn 4:2': [oc('parir', 'Gn 4:2', 'parió')],
+      'Gn 4:17': [oc('conocer', 'Gn 4:17', 'conoció'), oc('mujer', 'Gn 4:17', 'mujer')],
+      'Gn 7:6': [oc('diluvio', 'Gn 7:6', 'diluvio')],
+      'Rut 1:15': [{ t: 'rut', i: 0, f: 3 }], 'Gn 4:20': [{ t: 'nadie', i: 0, f: 1 }]
+    },
+    pasajes: {
+      'dif-1': { refs: 'Gn 4:1-17', titulo: 'Difícil 1', dice: [], posturas: [], nino: 'Texto corto.', certeza: 'externa' },
+      'dif-2': { refs: 'Gn 4:1-2', titulo: 'Difícil 2', dice: [], posturas: [], nino: null, certeza: 'externa' },
+      'dif-3': { refs: 'Gn 7:6', titulo: 'Difícil 3', dice: [], posturas: [], nino: 'Otro.', certeza: 'externa' }
+    }
+  };
+  const p1 = N.pasajeDe(D, 'Gn 4:1'), p2 = N.pasajeDe(D, 'Gn 7:6'), adulto = { tipo: 'adulto' }, nino = { tipo: 'nino' };
+  prueba('explicaciones: segmentar con términos y personas solapados (gana la persona)', () => {
+    const t = txt('Gn 4:1'), segs = j(N.segmentar(D, 'Gn 4:1', t, N.ocurrenciasDe(E, 'Gn 4:1')));
+    assert.equal(segs.map(s => s.texto).join(''), t, 'el texto no cambia');
+    assert.deepEqual(segs.filter(s => s.persona || s.termino).map(s => s.persona || '#' + s.termino), ['Adam_1', '#mujer', 'Eve_1', '#parir', 'Cain_1']);
+    assert.equal(segs.some(s => s.termino === 'conocer'), false, '«conoció Adam» pierde ante Adán');
+    assert.deepEqual(j(N.segmentar(D, 'Gn 4:1', t)), j(N.segmentar(D, 'Gn 4:1', t, [])), 'sin términos, como antes');
+    assert.deepEqual(j(N.ocurrenciasDe(E, 'Gn 4:20')), [], 'una ocurrencia de un término que no existe se ignora');
+    assert.equal(N.ocurrenciasDe(E, 'Rt 1:15').length, 1, 'clave de la app: «Rut 1:15» y «Rt 1:15» son el mismo versículo');
+  });
+  prueba('explicaciones: primera aparición por pasaje, contada después de los solapes', () => {
+    const m = N.marcadoPasaje(D, E, N.versiculosDe(D, p1));
+    assert.deepEqual(j([...m.keys()]), ['Gn 4:1', 'Gn 4:17']);
+    assert.deepEqual(j(m.get('Gn 4:1').map(x => x.termino)), ['mujer', 'parir'], 'parió de Gn 4:2 no se repite');
+    assert.deepEqual(j(m.get('Gn 4:17').map(x => x.termino)), ['conocer'], 'conocer: la de Gn 4:1 perdió ante Adán, cuenta la de Gn 4:17');
+    assert.equal(N.marcadoPasaje(D, null, N.versiculosDe(D, p1)).size, 0, 'sin explicaciones no se marca nada');
+  });
+  prueba('explicaciones: interruptor encendido por defecto', () => {
+    assert.equal(N.explicacionesActivas(null), true); assert.equal(N.explicacionesActivas(undefined), true);
+    assert.equal(N.explicacionesActivas(true), true); assert.equal(N.explicacionesActivas(false), false);
+  });
+  prueba('explicaciones: filtro del niño (texto, versículos plegados y pasajes difíciles)', () => {
+    assert.equal(N.textoTermino(E.terminos.mujer, nino), 'mujer (niño)'); assert.equal(N.textoTermino(E.terminos.mujer, adulto), 'mujer (adulto)');
+    assert.equal(N.textoTermino({ adulto: 'solo adulto' }, nino), 'solo adulto');
+    const m = N.marcadoPasaje(D, E, N.versiculosDe(D, p1), ref => ref === 'Gn 4:1'); // Gn 4:1 plegado: no se ve ni se cuenta
+    assert.equal(m.has('Gn 4:1'), false);
+    assert.deepEqual(j(m.get('Gn 4:17').map(x => x.termino)), ['conocer', 'mujer']);
+    const A = N.accesibles(D, []), Cg = { marcas: [{ desde: 'Gn 4:8', hasta: 'Gn 4:8', categoria: 'violencia', nivel: 'alto' }] };
+    assert.deepEqual(j(N.dificilesDe(E, p1, A, adulto, Cg).map(x => x.id)), ['dif-1', 'dif-2']);
+    assert.deepEqual(j(N.dificilesDe(E, p1, A, nino, Cg).map(x => x.id)), [], 'al niño: dif-1 toca una parte plegada y dif-2 no tiene texto de niño');
+    assert.deepEqual(j(N.dificilesDe(E, p1, A, nino, { marcas: [] }).map(x => x.id)), ['dif-1']);
+    assert.equal(N.rangoPlegado(Cg, nino, 'Gn 4:1-17'), true); assert.equal(N.rangoPlegado(Cg, adulto, 'Gn 4:1-17'), false);
+  });
+  prueba('explicaciones: glosario solo con términos de lo accesible, con búsqueda sin acentos', () => {
+    const A0 = N.accesibles(D, []), A1 = N.accesibles(D, [p1.id]);
+    assert.deepEqual(j(N.glosario(E, A0, '').map(x => x.id)), ['conocer', 'mujer', 'parir'], 'diluvio (Gn 7:6) aún no');
+    assert.equal(N.terminoAccesible(E, A0, 'diluvio'), false); assert.equal(N.terminoAccesible(E, A1, 'diluvio'), true);
+    assert.deepEqual(j(N.glosario(E, A1, 'CONOCIO').map(x => [x.id, x.primera])), [['conocer', 'Gn 4:1']]);
+    assert.deepEqual(j(N.glosario(E, A0, '', ref => ref === 'Gn 4:1' || ref === 'Gn 4:2' || ref === 'Gn 4:17').map(x => x.id)), [], 'solo en versículos omitidos: no aparece');
+    assert.deepEqual(j(N.glosario(null, A1, '')), []);
+  });
+  prueba('explicaciones: pasaje difícil solo con su rango accesible', () => {
+    assert.deepEqual(j(N.dificilesDe(E, p2, N.accesibles(D, []), adulto, null).map(x => x.id)), [], 'p2 aún bloqueado');
+    assert.deepEqual(j(N.dificilesDe(E, p2, N.accesibles(D, [p1.id]), adulto, null).map(x => x.id)), ['dif-3']);
+  });
+  prueba('explicaciones: cita de un versículo aún no accesible, sin texto («se verá al llegar»)', () => {
+    const f = E.terminos.diluvio.fuentes[0];
+    assert.deepEqual(j(N.citaFuente(N.accesibles(D, []), f)), { ref: 'Gn 7:6', cita: null, bloqueada: true });
+    assert.deepEqual(j(N.citaFuente(N.accesibles(D, [p1.id]), f)), { ref: 'Gn 7:6', cita: 'el diluvio de las aguas', bloqueada: false });
+    assert.deepEqual(j(N.citaFuente(N.accesibles(D, [p1.id]), f, () => true)), { ref: 'Gn 7:6', cita: null, bloqueada: false }, 'plegada para el niño: sin texto');
+    assert.equal(N.citaFuente(N.accesibles(D, []), { tipo: 'obra', obra: 'x' }), null);
+  });
+  const re = path.join(aqui, '..', 'datos', 'explicaciones.js');
+  if (existsSync(re)) prueba('explicaciones: datos/explicaciones.js casa con el texto de biblia.js', () => {
+    const NR = cargar(path.join(aqui, '..', 'datos', 'biblia.js'), re, path.join(aqui, '..', 'app.js')), E2 = NR.BIBLIA_EXPLICACIONES, D2 = NR.BIBLIA_DATOS, N2 = NR.BibliaNucleo;
+    assert.ok(N2.explicacionesValidas(E2));
+    const textos = new Map(); for (const c of D2.capitulos) for (const v of c.versiculos) textos.set(`${c.libro} ${c.cap}:${v.n}`, v.texto);
+    for (const [ref, xs] of Object.entries(E2.ocurrencias)) for (const o of xs) {
+      const t = textos.get(ref); assert.ok(t !== undefined, ref); assert.ok(E2.terminos[o.t], o.t);
+      const s = t.slice(o.i, o.f).toLowerCase(); assert.ok(E2.terminos[o.t].formas.some(f => f.toLowerCase() === s), `${ref}: «${s}» no es forma de ${o.t}`);
+    }
+  });
+}
 
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

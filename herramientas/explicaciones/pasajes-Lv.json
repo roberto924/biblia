@@ -1,0 +1,88 @@
+{
+  "lv-11-animales-impuros": {
+    "refs": "Lv 11:1-8",
+    "titulo": "Animales puros e impuros",
+    "dice": [
+      {
+        "ref": "Lv 11:7",
+        "cita": "También el puerco, porque tiene pezuñas, y es de pezuñas hendidas, mas no rumia, tendréislo por inmundo."
+      },
+      {
+        "ref": "Lv 11:8",
+        "cita": "De la carne de ellos no comeréis, ni tocaréis su cuerpo muerto: tendréislos por inmundos."
+      }
+    ],
+    "posturas": [
+      {
+        "resumen": "Matthew Henry da tres razones: que la voluntad de Dios basta; que algunas de las carnes prohibidas podían ser dañinas, como un padre que cuida a sus hijos de lo que enferma; y que el pueblo debía distinguirse de otros incluso en la mesa. Es una explicación mixta de obediencia, salud y separación.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Matthew Henry, Commentary on the Whole Bible, Leviticus XI",
+          "autor": "Matthew Henry (1706)",
+          "url": "https://www.ccel.org/ccel/henry/mhc1.Lev.xii.html",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Rashi lee el precepto como signo de que Israel está unido a Dios: por eso «merece vivir», y Dios lo separa de lo impuro con mandamientos que no impone a otros pueblos. En 11:8 dice que lo prohibido incluye también otros animales sin señales de pureza.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Rashi on Leviticus 11.2 (Sefaria; Rosenbaum y Silbermann, 1929-1934)",
+          "autor": "Rashi (Shlomo Yitzjaki, s. XI); trad. M. Rosenbaum y A. M. Silbermann",
+          "url": "https://www.sefaria.org/Rashi_on_Leviticus.11.2",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Eve Levavi Feinstein (académica moderna) señala que Levítico no habla de comida «kosher» sino de pureza e impureza («es impuro para vosotros», 11:7). El marco es el de las leyes sacerdotales de pureza, y no solo el de higiene o de dieta.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "The Animal Laws before Kashrut: A System of Purity (TheTorah.com)",
+          "autor": "Dr. Eve Levavi Feinstein",
+          "url": "https://www.thetorah.com/article/the-animal-laws-before-kashrut-a-system-of-purity",
+          "idioma": "en"
+        }
+      }
+    ],
+    "nino": "Estas reglas decían qué animales se podían comer. Los lectores han dado varias razones: obedecer a Dios, la salud o ser un pueblo distinto.",
+    "certeza": "externa"
+  },
+  "lv-16-azazel": {
+    "refs": "Lv 16:7-10",
+    "titulo": "El macho cabrío para Azazel",
+    "dice": [
+      {
+        "ref": "Lv 16:8",
+        "cita": "Y echará suertes Aarón sobre los dos machos de cabrío; la una suerte por Jehová, y la otra suerte por Azazel."
+      },
+      {
+        "ref": "Lv 16:10",
+        "cita": "Mas el macho cabrío, sobre el cual cayere la suerte por Azazel, lo presentará vivo delante de Jehová, para hacer la reconciliación sobre él, para enviarlo á Azazel al desierto."
+      }
+    ],
+    "posturas": [
+      {
+        "resumen": "Rashi lo toma de la tradición rabínica: se echan suertes entre los dos machos cabríos, uno «para el Señor» y otro «para Azazel», que se envía a un lugar escarpado y rocoso del desierto. Azazel sería el nombre de ese peñasco (de «fuerte»).",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Rashi on Leviticus 16.8 (Sefaria; Rosenbaum y Silbermann, 1929-1934)",
+          "autor": "Rashi (Shlomo Yitzjaki, s. XI); trad. M. Rosenbaum y A. M. Silbermann",
+          "url": "https://www.sefaria.org/Rashi_on_Leviticus.16.8",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Anna Angelini (académica moderna) explica que el nombre Azazel puede leerse como el de un ser divino o del desierto, ya subordinado a Dios en el propio ritual. En la tradición posterior se lo entendió de varios modos: como el propio macho cabrío, como un lugar del desierto, o como un ángel o demonio. Las lecturas conviven y ninguna se impone en el texto.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Is Azazel a Goat, Place, Demon, or Deity? (TheTorah.com)",
+          "autor": "Dr. Anna Angelini",
+          "url": "https://www.thetorah.com/article/is-azazel-a-goat-place-demon-or-deity",
+          "idioma": "en"
+        }
+      }
+    ],
+    "nino": "Hay dos machos cabríos: uno se ofrece a Dios y el otro se envía al desierto. No se sabe con certeza quién o qué es Azazel.",
+    "certeza": "externa"
+  }
+}

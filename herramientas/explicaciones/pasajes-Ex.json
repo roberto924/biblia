@@ -1,0 +1,190 @@
+{
+  "ex-4-sangre-esposo": {
+    "refs": "Ex 4:24-26",
+    "titulo": "El «esposo de sangre» y Séfora",
+    "dice": [
+      {
+        "ref": "Ex 4:24",
+        "cita": "Y aconteció en el camino, que en una posada le salió al encuentro Jehová, y quiso matarlo."
+      },
+      {
+        "ref": "Ex 4:25",
+        "cita": "Entonces Séphora cogió un afilado pedernal, y cortó el prepucio de su hijo, y echólo á sus pies, diciendo: A la verdad tú me eres un esposo de sangre."
+      }
+    ],
+    "posturas": [
+      {
+        "resumen": "Rashi dice que el ángel buscó matar a Moisés porque no había circuncidado a su hijo. Recoge la opinión de Rabí José: Moisés no fue negligente, pues temía poner en riesgo al niño si lo circuncidaba y partía de inmediato. Aun así, según esa misma tradición, debió circuncidarlo al llegar al alojamiento antes de ocuparse de sí mismo.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Rashi on Exodus 4.24 (Sefaria; Rosenbaum y Silbermann, 1929-1934)",
+          "autor": "Rashi (Shlomo Yitzjaki, s. XI); trad. M. Rosenbaum y A. M. Silbermann",
+          "url": "https://www.sefaria.org/Rashi_on_Exodus.4.24",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Matthew Henry también lo atribuye a un descuido de Moisés al no circuncidar a su hijo, y lo llama «pasaje muy difícil». Según él, Séfora, asustada, reprocha después a Moisés por haberla obligado a circuncidar al niño; dice que no puede determinar si sus palabras eran apasionadas o justas.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Matthew Henry, Commentary on the Whole Bible, Exodus IV",
+          "autor": "Matthew Henry (1706)",
+          "url": "https://www.ccel.org/ccel/henry/mhc1.Ex.v.html",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Serge Frolov (académico moderno) observa que en solo 29 palabras hebreas quedan abiertas muchas preguntas: a quién ataca Dios, a quién toca Séfora los pies, a quién habla, qué provoca el ataque y qué lo detiene, y por qué actúa ella y no Moisés. Para él es quizá el relato más enigmático de la Biblia hebrea, y propone una lectura propia comparándolo con otros relatos bíblicos.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "A Murderous Bridegroom (TheTorah.com)",
+          "autor": "Prof. Serge Frolov",
+          "url": "https://www.thetorah.com/article/a-murderous-bridegroom",
+          "idioma": "en"
+        }
+      }
+    ],
+    "nino": null,
+    "certeza": "externa"
+  },
+  "ex-7-endurecimiento-faraon": {
+    "refs": "Ex 7:1-5",
+    "titulo": "El endurecimiento del corazón de Faraón",
+    "dice": [
+      {
+        "ref": "Ex 4:21",
+        "cita": "Y dijo Jehová á Moisés: Cuando hubiereis vuelto á Egipto, mira que hagas delante de Faraón todas las maravillas que he puesto en tu mano: yo empero endureceré su corazón, de modo que no dejará ir al pueblo."
+      },
+      {
+        "ref": "Ex 7:3",
+        "cita": "Y yo endureceré el corazón de Faraón, y multiplicaré en la tierra de Egipto mis señales y mis maravillas."
+      }
+    ],
+    "posturas": [
+      {
+        "resumen": "Matthew Henry (sobre Ex 4:21) escribe que Faraón ya había endurecido su propio corazón contra el clamor de los oprimidos, y que Dios, «en juicio justo», lo endurece ahora contra los milagros y las plagas. Es decir, el endurecimiento divino es consecuencia y castigo de una dureza previa.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Matthew Henry, Commentary on the Whole Bible, Exodus IV",
+          "autor": "Matthew Henry (1706)",
+          "url": "https://www.ccel.org/ccel/henry/mhc1.Ex.v.html",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Maimónides sostiene que una persona puede pecar tanto que su castigo sea perder la posibilidad de arrepentirse. Cita Éx 4:21 como ejemplo: Faraón empezó a pecar por su cuenta (Éx 1:10) y por ello se le impidió volverse. Es una defensa del libre albedrío.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Mishneh Torah, Teshuvá (Arrepentimiento) 6:3 (Sefaria; trad. E. Touger)",
+          "autor": "Maimónides (s. XII)",
+          "url": "https://www.sefaria.org/Mishneh_Torah,_Repentance.6.3",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Rashi, sobre Éx 7:3, explica que, como Faraón se resistió con maldad y los paganos no se vuelven de corazón a Dios, convenía endurecer su corazón para multiplicar las señales y que se conozca el poder divino.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Rashi on Exodus 7.3 (Sefaria; Rosenbaum y Silbermann, 1929-1934)",
+          "autor": "Rashi (Shlomo Yitzjaki, s. XI); trad. M. Rosenbaum y A. M. Silbermann",
+          "url": "https://www.sefaria.org/Rashi_on_Exodus.7.3",
+          "idioma": "en"
+        }
+      }
+    ],
+    "nino": "Faraón no quería dejar ir al pueblo. Los lectores han entendido de varias maneras qué significa que Dios endurezca su corazón.",
+    "certeza": "externa"
+  },
+  "ex-12-muerte-primogenitos": {
+    "refs": "Ex 12:29-30",
+    "titulo": "La muerte de los primogénitos de Egipto",
+    "dice": [
+      {
+        "ref": "Ex 12:29",
+        "cita": "Y aconteció que á la medianoche Jehová hirió á todo primogénito en la tierra de Egipto, desde el primogénito de Faraón que se sentaba sobre su trono, hasta el primogénito del cautivo que estaba en la cárcel, y todo primogénito de los animales."
+      },
+      {
+        "ref": "Ex 12:30",
+        "cita": "Y levantóse aquella noche Faraón, él y todos sus siervos, y todos los Egipcios; y había un gran clamor en Egipto, porque no había casa donde no hubiese muerto."
+      }
+    ],
+    "posturas": [
+      {
+        "resumen": "Matthew Henry subraya que, si Faraón hubiera hecho caso del aviso, se habrían salvado muchas vidas, y atribuye el golpe a la «infidelidad obstinada». Pone el foco en la responsabilidad de Faraón.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Matthew Henry, Commentary on the Whole Bible, Exodus XII",
+          "autor": "Matthew Henry (1706)",
+          "url": "https://www.ccel.org/ccel/henry/mhc1.Ex.xiii.html",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Rashi comenta que murieron todos los primogénitos, incluso de otros pueblos que estaban en Egipto; que el primogénito «del cautivo» murió porque se alegraban del mal de Israel, y que Faraón, aun siendo primogénito, quedó con vida.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Rashi on Exodus 12.29 (Sefaria; Rosenbaum y Silbermann, 1929-1934)",
+          "autor": "Rashi (Shlomo Yitzjaki, s. XI); trad. M. Rosenbaum y A. M. Silbermann",
+          "url": "https://www.sefaria.org/Rashi_on_Exodus.12.29",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "David Frankel (académico moderno) propone que la ley de ofrecer los primerizos del ganado y la de rescatar a los primogénitos humanos eran originalmente independientes del relato de Egipto, y que se vincularon a él en etapas. Para encajar ambos ritos con una sola plaga, el texto habría ampliado el relato para que también murieran los primerizos de los animales. Es una lectura crítica sobre cómo se formó el texto.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Laws of the Firstborn: How They Were Connected to the Tenth Plague (TheTorah.com)",
+          "autor": "Prof. Rabbi David Frankel",
+          "url": "https://www.thetorah.com/article/laws-of-the-firstborn-how-they-were-connected-to-the-tenth-plague",
+          "idioma": "en"
+        }
+      }
+    ],
+    "nino": null,
+    "certeza": "externa"
+  },
+  "ex-21-ojo-por-ojo": {
+    "refs": "Ex 21:23-25",
+    "titulo": "«Ojo por ojo»",
+    "dice": [
+      {
+        "ref": "Ex 21:24",
+        "cita": "Ojo por ojo, diente por diente, mano por mano, pie por pie,"
+      }
+    ],
+    "posturas": [
+      {
+        "resumen": "Rashi explica que «ojo por ojo» significa pagar el valor del ojo, es decir, la pérdida de valor que sufriría el herido si se vendiera como esclavo; no se corta el miembro del agresor. Se apoya en la tradición del Talmud (Bava Kamma 84a).",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Rashi on Exodus 21.24 (Sefaria; Rosenbaum y Silbermann, 1929-1934)",
+          "autor": "Rashi (Shlomo Yitzjaki, s. XI); trad. M. Rosenbaum y A. M. Silbermann",
+          "url": "https://www.sefaria.org/Rashi_on_Exodus.21.24",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "Matthew Henry dice que la ley no deja la venganza en manos de particulares, que sería caos, sino de los magistrados, que deben considerar la naturaleza y el grado del daño; el ojo puede «redimirse con una suma de dinero». Ve la ley como regla de justicia, no como venganza privada.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "Matthew Henry, Commentary on the Whole Bible, Exodus XXI",
+          "autor": "Matthew Henry (1706)",
+          "url": "https://www.ccel.org/ccel/henry/mhc1.Ex.xxii.html",
+          "idioma": "en"
+        }
+      },
+      {
+        "resumen": "John J. Collins (académico moderno) presenta la ley del talión como justicia medida: un camino entre la aniquilación del enemigo y la pasividad total. Es decir, un principio de proporcionalidad.",
+        "fuente": {
+          "tipo": "obra",
+          "obra": "An Eye for an Eye: The Biblical Principle of Proportionality (TheTorah.com)",
+          "autor": "Prof. John J. Collins",
+          "url": "https://www.thetorah.com/article/an-eye-for-an-eye-the-biblical-principle-of-proportionality",
+          "idioma": "en"
+        }
+      }
+    ],
+    "nino": "Esta ley dice que el castigo no debe ser mayor que el daño. Muchos creen que en la práctica se pagaba con dinero.",
+    "certeza": "externa"
+  }
+}

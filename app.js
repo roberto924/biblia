@@ -566,17 +566,38 @@ const Nucleo = (() => {
     }
     return out;
   }
-  // Trozos [{texto, persona?|lugar?}] de un versículo; ignora menciones fuera de rango o solapadas.
-  function segmentar(d, ref, texto) {
-    texto = String(texto || '');
+  // Menciones de personas y lugares que se marcan en un versículo, en orden y sin solapes (gana la que empieza antes y,
+  // a igual inicio, la más larga).
+  function mencionesVerso(d, ref, texto) {
     const ms = mencionesDe(d, ref, texto, 'persona').concat(mencionesDe(d, ref, texto, 'lugar'))
       .sort((a, b) => a.inicio - b.inicio || b.fin - a.fin);
     const out = [];
     let pos = 0;
-    for (const m of ms) {
-      if (m.inicio < pos) continue;
+    for (const m of ms) { if (m.inicio < pos) continue; out.push(m); pos = m.fin; }
+    return out;
+  }
+  const solapan = (a, b) => a.inicio < b.fin && b.inicio < a.fin;
+  // Términos ({termino, inicio, fin}) que quedan en un versículo: una persona o un lugar que se solapa gana al término.
+  function terminosVerso(ms, ts, largo) {
+    const out = [];
+    [...(ts || [])].sort((a, b) => a.inicio - b.inicio).forEach(t => {
+      if (!t || !t.termino || !Number.isInteger(t.inicio) || !Number.isInteger(t.fin) || t.inicio < 0 || t.fin <= t.inicio || t.fin > largo) return;
+      if (!ms.some(m => solapan(m, t)) && !out.some(o => solapan(o, t))) out.push(t);
+    });
+    return out;
+  }
+  // Trozos [{texto, persona?|lugar?|termino?}] de un versículo; ignora menciones fuera de rango o solapadas.
+  // `terminos` (opcional): los términos a subrayar en este versículo (ver marcadoPasaje); pierden ante personas y lugares.
+  function segmentar(d, ref, texto, terminos) {
+    texto = String(texto || '');
+    const ms = mencionesVerso(d, ref, texto);
+    const todos = ms.concat(terminos && terminos.length ? terminosVerso(ms, terminos, texto.length) : []).sort((a, b) => a.inicio - b.inicio);
+    const out = [];
+    let pos = 0;
+    for (const m of todos) {
       if (m.inicio > pos) out.push({ texto: texto.slice(pos, m.inicio) });
-      out.push(m.lugar ? { texto: texto.slice(m.inicio, m.fin), lugar: m.lugar } : { texto: texto.slice(m.inicio, m.fin), persona: m.persona });
+      const s = texto.slice(m.inicio, m.fin);
+      out.push(m.lugar ? { texto: s, lugar: m.lugar } : m.persona ? { texto: s, persona: m.persona } : { texto: s, termino: m.termino });
       pos = m.fin;
     }
     if (pos < texto.length) out.push({ texto: texto.slice(pos) });
@@ -1176,6 +1197,58 @@ const Nucleo = (() => {
     const r = extremos(refs); if (!r) return [];
     return ((O && O.testigos) || []).filter(t => (t.contiene || []).some(s => { const c = rangoClaves(s); return c && c.a <= r.b && r.a <= c.b; }));
   }
+  /* ---- Manuscritos (datos/manuscritos.js, bajo demanda): el registro real de donde sale el texto ---- */
+  // "Gn 1:1", "Gn 1:1" → "Gn 1:1"; mismo capítulo → "Gn 1:1–19"; mismo libro → "Gn 1:26–2:3"; libros distintos con guion largo espaciado.
+  function tramoRefs(a, b) {
+    const x = parseRef(a), y = parseRef(b); if (!x || !y) return '';
+    if (x.libro !== y.libro) return `${x.libro} ${x.cap}:${x.v} – ${y.libro} ${y.cap}:${y.v}`;
+    if (x.cap !== y.cap) return `${x.libro} ${x.cap}:${x.v}–${y.cap}:${y.v}`;
+    return x.v === y.v ? `${x.libro} ${x.cap}:${x.v}` : `${x.libro} ${x.cap}:${x.v}–${y.v}`;
+  }
+  // "001b" → "1v" (a = recto, b = verso), como lo numera Commons ("folio 001b (1v)").
+  const nombreFolio = id => { const m = /^0*(\d+)([ab])$/.exec(String(id || '')); return m ? m[1] + (m[2] === 'a' ? 'r' : 'v') : String(id || ''); };
+  const foliosCache = new WeakMap();
+  const foliosRangos = M => {
+    const F = M && M.leningrado && M.leningrado.folios; if (!F) return [];
+    if (!foliosCache.has(F)) foliosCache.set(F, Object.keys(F).sort().map(id => ({ id, f: F[id], rs: (F[id].rv || []).map(rangoClaves).filter(Boolean) })));
+    return foliosCache.get(F);
+  };
+  // Folios del Códice de Leningrado que contienen versículos del pasaje. `muestra` dice solo el tramo de ESTE pasaje
+  // (lectura en orden: nunca adelanta versículos posteriores); `otros` = la página también trae texto de fuera del pasaje.
+  function foliosDePasaje(M, d, p) {
+    if (!p) return [];
+    const vs = versiculosDe(d, p); if (!vs.length) return [];
+    const a = vs[0].clave, b = vs[vs.length - 1].clave;
+    return foliosRangos(M).map(({ id, f, rs }) => {
+      const dentro = vs.filter(v => rs.some(r => v.clave >= r.a && v.clave <= r.b));
+      if (!dentro.length) return null;
+      return Object.assign({}, f, { id, nombre: nombreFolio(id), muestra: tramoRefs(dentro[0].ref, dentro[dentro.length - 1].ref), otros: rs.some(r => r.a < a || r.b > b) });
+    }).filter(Boolean);
+  }
+  // Rollos testigo con versículos del pasaje y a qué se enlaza (Leon Levy: solo enlace). El fragmento solo si alguno de los
+  // suyos cae en el pasaje; si no, las láminas o la ficha. Sin datos de manuscritos, la ficha del testigo.
+  function rollosDePasaje(M, O, d, p) {
+    if (!p) return [];
+    const vs = versiculosDe(d, p); if (!vs.length) return [];
+    const a = vs[0].clave, b = vs[vs.length - 1].clave, R = (M && M.rollos) || {}, base = R.url_imagen || '';
+    const img = x => ({ imagen: x.imagen, url: base + x.imagen, tipo_foto: x.tipo_foto || null, lado: x.lado || null });
+    return testigosDe(O, vs.map(v => v.ref)).filter(t => t.tipo === 'rollo').map(t => {
+      const r = (R.rollos || {})[t.id] || {};
+      const frs = r.nivel === 'fragmento' ? (r.fragmentos || []).filter(f => (f.versiculos || []).some(s => { const c = rangoClaves(s); return c && c.a <= b && a <= c.b; })) : [];
+      const nivel = frs.length ? 'fragmento' : (r.laminas || []).length ? 'lamina' : 'ficha';
+      return { id: t.id, nombre: t.nombre || t.id, sigla: r.sigla || t.sigla || null, institucion: t.institucion || null, fecha: t.fecha || null, nivel,
+        fragmentos: frs.map(f => ({ abegg: f.abegg, imagenes: (f.imagenes || []).map(img), comprobado: f.comprobado || null })),
+        laminas: nivel === 'lamina' ? r.laminas.map(img) : [], ficha: r.ficha || t.url || null };
+    });
+  }
+  // Página donde empieza el libro en el Códice Vaticano (solo enlace).
+  // Las claves del archivo son ids de libro («Rut», «1S»); se comparan por libro canónico («Rt» = «Rut»).
+  function vaticanoDeLibro(M, lb) {
+    const V = (M && M.vaticano && M.vaticano.libros) || {}, o = ordDe(lb);
+    if (V[lb]) return V[lb];
+    const k = o ? Object.keys(V).find(x => ordDe(x) === o) : null;
+    return k ? V[k] : null;
+  }
   // Variantes cuyo versículo (o rango) cae en los versículos dados.
   function variantesDe(O, refs) {
     const ks = new Set((refs || []).map(clave).filter(k => k !== null));
@@ -1268,6 +1341,7 @@ const Nucleo = (() => {
     if (f.tipo === 'reconstruccion') return 'Reconstrucción moderna';
     if (f.tipo === 'ilustracion') return 'Ilustración moderna';
     if (f.tipo === 'mapa_antiguo') return 'Mapa antiguo';
+    if (f.tipo === 'registro') return 'Registro histórico';
     if (f.tipo === 'arqueologia') return f.relacion === 'contexto' ? 'Contexto de la época' : 'Objeto histórico';
     return 'Fuente externa';
   }
@@ -1682,7 +1756,80 @@ const Nucleo = (() => {
     return ok(x.evMuerte) ? x : Object.assign({}, x, { muerte: null, evMuerte: null });
   }
 
-  return { frontera, accesibles, esAccesible, destinoPasaje, contarPalabras, palabrasPasaje, PPM, ppmDe, segundosMinimos, relojTxt, normalizarTiempos, puedeMarcar,
+  /* ---- Explicaciones (datos/explicaciones.js, herramientas/explicaciones.py): términos y pasajes difíciles ----
+     E = { terminos: {id: {tipo, lema, formas, adulto, nino, certeza, fuentes, calculo?}}, ocurrencias: {"Ex 30:13": [{t, i, f}]},
+     pasajes: {id: {refs, titulo, dice, posturas, nino, certeza}} }; i y f son offsets UTF-16 como los de `menciones`. */
+  const explicacionesValidas = E => !!E && typeof E === 'object' && !!E.terminos && typeof E.terminos === 'object' && !!E.ocurrencias && typeof E.ocurrencias === 'object';
+  const termino = (E, id) => explicacionesValidas(E) && Object.prototype.hasOwnProperty.call(E.terminos, id) ? E.terminos[id] : null;
+  const cacheExpl = new WeakMap();
+  // Índice: clave de versículo → ocurrencias válidas; término → claves donde aparece (ordenadas).
+  function indiceExpl(E) {
+    if (!cacheExpl.has(E)) {
+      const porClave = new Map(), claves = new Map();
+      Object.keys(E.ocurrencias).forEach(ref => {
+        const k = clave(ref); if (k === null) return;
+        const xs = (Array.isArray(E.ocurrencias[ref]) ? E.ocurrencias[ref] : []).filter(o => o && termino(E, o.t) && Number.isInteger(o.i) && Number.isInteger(o.f) && o.f > o.i);
+        if (!xs.length) return;
+        porClave.set(k, xs);
+        xs.forEach(o => { if (!claves.has(o.t)) claves.set(o.t, []); claves.get(o.t).push(k); });
+      });
+      claves.forEach(ks => ks.sort((a, b) => a - b));
+      cacheExpl.set(E, { porClave, claves });
+    }
+    return cacheExpl.get(E);
+  }
+  const ocurrenciasDe = (E, ref) => explicacionesValidas(E) ? (indiceExpl(E).porClave.get(clave(ref)) || []).map(o => ({ termino: o.t, inicio: o.i, fin: o.f })) : [];
+  // Términos a subrayar en un pasaje: la primera aparición de cada término, contada después de quitar las que pierden
+  // ante una persona o un lugar. `omitir(ref)` salta versículos que no se ven (plegados para el niño). → Map ref → [{termino, inicio, fin}]
+  function marcadoPasaje(d, E, vs, omitir) {
+    const out = new Map(), vistos = new Set();
+    if (!explicacionesValidas(E)) return out;
+    for (const v of (vs || [])) {
+      if (!v || !v.texto || (omitir && omitir(v.ref))) continue;
+      const ts = ocurrenciasDe(E, v.ref); if (!ts.length) continue;
+      const ok = terminosVerso(mencionesVerso(d, v.ref, v.texto), ts, v.texto.length).filter(t => { if (vistos.has(t.termino)) return false; vistos.add(t.termino); return true; });
+      if (ok.length) out.set(v.ref, ok);
+    }
+    return out;
+  }
+  // Interruptor por perfil: sin valor guardado cuenta como encendido.
+  const explicacionesActivas = guardado => guardado !== false;
+  // Texto de la explicación según el perfil: el del niño en perfil niño.
+  const textoTermino = (t, perfil) => !t ? '' : String((esNino(perfil) ? t.nino : t.adulto) || t.adulto || '');
+  // Un término es accesible si aparece en algún versículo accesible (lectura en orden); `omitir(ref)` descarta versículos.
+  const clavesTermino = (E, id, A, omitir) => explicacionesValidas(E) ? (indiceExpl(E).claves.get(id) || []).filter(k => A.clave(k) && !(omitir && omitir(refDeClave(k)))) : [];
+  const terminoAccesible = (E, A, id, omitir) => clavesTermino(E, id, A, omitir).length > 0;
+  // Glosario: términos accesibles, filtrados por texto (lema o formas, sin acentos) y ordenados por lema.
+  function glosario(E, A, q, omitir) {
+    if (!explicacionesValidas(E)) return [];
+    const nq = norm(q);
+    return Object.keys(E.terminos).map(id => ({ id, termino: E.terminos[id], ks: clavesTermino(E, id, A, omitir) })).filter(x => x.ks.length)
+      .filter(x => !nq || [x.termino.lema].concat(x.termino.formas || []).some(s => norm(s).includes(nq)))
+      .map(x => ({ id: x.id, termino: x.termino, primera: refDeClave(x.ks[0]) }))
+      .sort((a, b) => norm(a.termino.lema).localeCompare(norm(b.termino.lema), 'es'));
+  }
+  // Rango con alguna parte que el perfil niño pliega (contenido alto).
+  const rangoPlegado = (C, perfil, ref) => { if (!esNino(perfil)) return false; const r = rangoClaves(ref); return !!r && marcasContenido(C).some(m => m.nivel === 'alto' && m.a <= r.b && r.a <= m.b); };
+  // Fuente bíblica vista desde la lectura en orden: sin texto si su ref aún no es accesible («se verá al llegar»)
+  // o si `plegada(ref)` (parte plegada para el niño).
+  function citaFuente(A, f, plegada) {
+    if (!f || f.tipo !== 'biblia') return null;
+    const ok = !!A && A.ref(f.ref);
+    return { ref: f.ref, cita: ok && f.cita && !(plegada && plegada(f.ref)) ? f.cita : null, bloqueada: !ok };
+  }
+  // Pasajes difíciles que tocan un pasaje de lectura: solo con todo su rango accesible; al niño, solo con texto `nino`
+  // y sin partes plegadas.
+  function dificilesDe(E, p, A, perfil, C) {
+    if (!explicacionesValidas(E) || !p || !E.pasajes || typeof E.pasajes !== 'object') return [];
+    const a = clave(p.inicio), b = clave(p.fin);
+    return Object.keys(E.pasajes).map(id => Object.assign({ id }, E.pasajes[id])).filter(x => {
+      const r = rangoClaves(x.refs); if (!r || r.b < a || r.a > b || !A.ref(x.refs)) return false;
+      return !esNino(perfil) || (!!x.nino && !rangoPlegado(C, perfil, x.refs));
+    });
+  }
+
+  return { explicacionesValidas, termino, ocurrenciasDe, marcadoPasaje, explicacionesActivas, textoTermino, terminoAccesible, glosario, rangoPlegado, citaFuente, dificilesDe,
+    frontera, accesibles, esAccesible, destinoPasaje, contarPalabras, palabrasPasaje, PPM, ppmDe, segundosMinimos, relojTxt, normalizarTiempos, puedeMarcar,
     personaAccesible, refsLugar, lugarAccesible, buscarAccesible, lugaresAccesibles, curiosidadAccesible, edadAccesible, lineaAccesible, vidaAccesible,
     NOTAS_COLORES, refNota, normalizarNotas, ponerNota, quitarNota, notaDe, listarNotas, fusionarNotas, validarNotas, exportarNotas, refLegible, citaVerso, textoVerso, textoNotas,
     TB_GRUPOS, tbPiezas, tbPieza, tbZona, tbCodos, tbRect, tbCodo, codosAMetros, rangosDe, tbMontaje, tbColocadas, tbPiezasDeRango, tbPiezasDePasaje, tbPiezasDeRefs,
@@ -1691,7 +1838,7 @@ const Nucleo = (() => {
     marcasContenido, marcaDe, decisionVerso, accionVerso, recursoPermitido, curiosidadPermitida, enlaceLibre, tramosContenido,
     listaRecorridos, recorrido, etapasOrdenadas, hipotesisDefecto, ubicacionEtapa, sinPropuesta, etapasDeRefs, etapaActiva, recorridosDeRefs, distanciaKm, tramosRecorrido, duracionTramo, pausaEtapa,
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
-    TRADS, TIPOS, norm, rangoClaves, testigosDe, variantesDe, numeracionHebrea, alinearOriginales, sinTextoDe, sinTextoOriginal, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
+    TRADS, TIPOS, norm, rangoClaves, testigosDe, tramoRefs, nombreFolio, foliosDePasaje, rollosDePasaje, vaticanoDeLibro, variantesDe, numeracionHebrea, alinearOriginales, sinTextoDe, sinTextoOriginal, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona,
     GRUPOS_JUEGO, juegoValido, estadoPersonaje, vistaFichaJuego, estadoCosa, fichasCosas, nuevosAlLeer, genealogiasDe, esGenealogia, datoPlegado, relacionadosJuego, capituloListo, rangosAp, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
@@ -1750,6 +1897,9 @@ if (typeof document !== 'undefined') (function () {
     return x.accion === 'plegar' && desplegados.has(x.marca.desde) ? { accion: 'desplegado', marca: x.marca } : x;
   }
   const plegadoRef = ref => !!ref && accionDe(ref).accion === 'plegar';
+  /* ---------- Explicaciones (datos/explicaciones.js): términos subrayados, tarjeta, pasajes difíciles y glosario ---------- */
+  const EXPL = () => N.explicacionesValidas(window.BIBLIA_EXPLICACIONES) ? window.BIBLIA_EXPLICACIONES : null;
+  const explOn = () => N.explicacionesActivas(store.get('biblia.explicaciones', null)); // clave biblia.p.<id>.explicaciones
   const NOTA_CONT = { violencia: 'Aquí se narra un hecho violento.', crueldad: 'Aquí se narra un hecho cruel.', sexual: 'Aquí se alude a un tema de personas adultas.' };
   const CAT_CONT = { violencia: 'violencia', crueldad: 'crueldad', sexual: 'contenido sexual' };
   // Recurso accesible (lectura en orden): todos sus rangos de versículos ya se pueden leer (un video de «Gn 1-11», al llegar a Gn 11).
@@ -1955,14 +2105,17 @@ if (typeof document !== 'undefined') (function () {
     const fuente = ((D.fuentes || []).find(f => /rv/i.test(f.id)) || {}).id;
     let capPrev = null;
     const NT = notasGuardadas().versos;
+    // Términos con explicación: primera aparición por pasaje, sin los versículos plegados (no se ven).
+    const TM = EXPL() && explOn() && !estado.comparar ? N.marcadoPasaje(D, EXPL(), vs, plegadoRef) : null;
     const texto = tramosVersos(vs, (v, j) => {
       const k = `${v.cap}:${v.n}`, ap = N.tieneApoyo(D, v.ref), nt = NT[v.ref] || null;
       const cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : '';
       capPrev = v.cap;
-      const segs = N.segmentar(D, v.ref, v.texto);
+      const segs = N.segmentar(D, v.ref, v.texto, TM && TM.get(v.ref));
       const partes = !v.texto && v.nota ? `<span class="meta">${esc(v.nota)}</span>` : segs.map((s, si) => {
         if (s.lugar) return `<button type="button" class="mencion-lugar" data-lugar="${esc(s.lugar)}">${esc(s.texto)}</button>`;
         if (s.persona) { const per = N.persona(D, s.persona) || {}; return `<button type="button" class="mencion${per.sexo === 'f' ? ' mujer' : ''}" data-persona="${esc(s.persona)}">${esc(s.texto)}</button>`; }
+        if (s.termino) return `<button type="button" class="termino" data-termino="${esc(s.termino)}" aria-haspopup="dialog" title="Ver la explicación">${esc(s.texto)}</button>`;
         if (j === 0 && si === 0 && s.texto) { const t = s.texto.trimStart(), c = Array.from(t)[0] || ''; return `<span class="capitular" aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c)}</span>${esc(t.slice(c.length))}`; }
         return esc(s.texto);
       }).join('');
@@ -1977,9 +2130,11 @@ if (typeof document !== 'undefined') (function () {
         ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}${genealogiaHTML(p)}</header>
       ${imagenPasajeHTML(p)}
       ${herramientasPasajeHTML()}
+      ${dificilesHTML(p)}
       ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
       <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.${ORIG.o && N.variantesDe(ORIG.o, vs.map(v => v.ref)).length ? ' «var.» señala una variante entre manuscritos.' : ''}</p>
       ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}`}
+      ${manuscritoHTML(p)}
       <section class="nuevo" aria-labelledby="t-nuevo"><h2 id="t-nuevo">Lo nuevo en este pasaje</h2>
         ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section>
       <nav class="pasos-pasaje" aria-label="Pasajes">
@@ -2277,7 +2432,10 @@ if (typeof document !== 'undefined') (function () {
     if (e.target.id === 'nb-connota') { nbF.conNota = e.target.checked; refrescarListaNotas(); }
     else if (e.target.id === 'nb-archivo') importarNotasArchivo(e.target);
   });
-  document.addEventListener('input', e => { if (e.target.id === 'nb-q') { nbF.q = e.target.value; refrescarListaNotas(); } });
+  document.addEventListener('input', e => {
+    if (e.target.id === 'nb-q') { nbF.q = e.target.value; refrescarListaNotas(); }
+    else if (e.target.id === 'gl-q') { estado.glQ = e.target.value; const l = document.getElementById('gl-lista'); if (l) l.innerHTML = glosarioListaHTML(); }
+  });
   document.addEventListener('keydown', e => {
     const barra = e.target.closest && e.target.closest('.nb-barra'); if (!barra) return;
     if (e.key === 'Enter' && (e.ctrlKey || e.metaKey) && e.target.id === 'nb-texto') { e.preventDefault(); e.target.form.requestSubmit(); return; }
@@ -2365,8 +2523,66 @@ if (typeof document !== 'undefined') (function () {
     return `<div class="herr-pasaje">
       <fieldset class="segmentos modo"><legend class="sr">Modo de lectura</legend>${[['leer', 'Leer'], ['comparar', 'Comparar']].map(([v, t]) => `<label><input type="radio" name="modo-pasaje" value="${v}" ${(estado.comparar ? 'comparar' : 'leer') === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
       <button type="button" class="boton secundario btn-escuchar" data-escuchar aria-expanded="${!!estado.escuchar}" aria-controls="reproductor"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5M16 5a7 7 0 010 10"/></svg>Escuchar</button>
+      ${EXPL() && !estado.comparar ? `<label class="chip-check expl-interruptor" title="Subraya con un punteado las palabras, medidas y costumbres que tienen explicación"><input type="checkbox" name="explicaciones" ${explOn() ? 'checked' : ''}><span>Explicaciones</span></label>` : ''}
     </div>${estado.escuchar ? reproductorHTML() : ''}`;
   }
+
+  /* ---------- Explicaciones: tarjeta de un término, aviso de pasaje difícil y glosario ---------- */
+  const TIPO_TERMINO = { palabra: 'Palabra antigua', medida: 'Medida', concepto: 'Costumbre o concepto' };
+  const IDIOMA_TXT = { en: 'en inglés', de: 'en alemán', fr: 'en francés', la: 'en latín', it: 'en italiano', pt: 'en portugués' };
+  const certezaExplHTML = c => c === 'externa' ? '<span class="etiqueta externa">Fuente externa</span>' : insignia(c);
+  // Una fuente de explicación: la cita bíblica respeta la lectura en orden; lo de fuera de la Biblia lleva «Fuente externa».
+  function fuenteExplHTML(f) {
+    if (!f || typeof f !== 'object') return '';
+    if (f.tipo === 'biblia') {
+      const c = N.citaFuente(ACC(), f, ref => N.rangoPlegado(CONT(), perfil(), ref));
+      if (c.bloqueada) return `<li class="expl-fuente bloqueada">${ICO_CANDADO}${esc(f.ref)} · <span class="meta">se verá al llegar</span></li>`;
+      return `<li class="expl-fuente">${refHTML(f.ref)}${c.cita ? `<blockquote>«${esc(c.cita)}»</blockquote>` : ''}</li>`;
+    }
+    const idioma = f.idioma && f.idioma !== 'es' ? ` <span class="meta">(${esc(IDIOMA_TXT[f.idioma] || f.idioma)})</span>` : '';
+    const txt = f.tipo === 'rae' ? `${f.obra || 'Diccionario de la lengua española (RAE)'}, «${f.entrada || ''}»`
+      : f.tipo === 'diccionario' ? `${f.obra || ''}${f.autor ? ` (${f.autor})` : ''}, «${f.entrada || ''}»`
+      : `${f.autor ? f.autor + ', ' : ''}${f.obra || ''}${f.entrada ? `, «${f.entrada}»` : ''}`;
+    return `<li class="expl-fuente">${urlSegura(f.url) ? extLink(f.url, txt) : `${esc(txt)} <span class="etiqueta externa">Fuente externa</span>`}${idioma}</li>`;
+  }
+  function abrirTermino(id) {
+    const E = EXPL(), t = N.termino(E, id); if (!t) return;
+    if (!N.terminoAccesible(E, ACC(), id)) { abrirBloqueada('Término sin descubrir', 'Este término aparece más adelante en la lectura. Su explicación se verá cuando llegues.'); return; }
+    const c = t.calculo;
+    const calc = c ? `<section class="bloque expl-calculo"><h3>Equivalencia actual</h3>
+        <p class="cifra">${esc(c.resultado)} ${insignia('calculo')}</p>
+        <details><summary>Cómo se calcula</summary><ol>${(c.pasos || []).map(x => `<li>${esc(x)}</li>`).join('')}</ol>
+          ${(c.supuestos || []).length ? `<h4>Supuestos</h4><ul>${c.supuestos.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+          ${c.fuente ? `<p class="meta">Fuente del cálculo:</p><ul class="expl-fuentes">${fuenteExplHTML(c.fuente)}</ul>` : ''}</details></section>` : '';
+    abrirDetalle(t.lema || id, `<p class="meta">${esc(TIPO_TERMINO[t.tipo] || 'Explicación')}</p>
+      <p class="expl-texto">${esc(N.textoTermino(t, perfil()))}</p>
+      <p>${certezaExplHTML(t.certeza)}</p>
+      ${calc}
+      <section class="bloque"><h3>Fuentes</h3><ul class="expl-fuentes">${(t.fuentes || []).map(fuenteExplHTML).join('')}</ul></section>
+      <p class="meta">Explicación redactada por el proyecto a partir de estas fuentes; no forma parte del texto bíblico.</p>`);
+  }
+  // Aviso plegable al inicio del pasaje (el niño ve solo el texto `nino`, y nada si su perfil pliega esa parte).
+  function dificilesHTML(p) {
+    const xs = N.dificilesDe(EXPL(), p, ACC(), perfil(), CONT()); if (!xs.length) return '';
+    const nino = esNinoActivo();
+    return xs.map(x => `<details class="dificil" data-dificil="${esc(x.id)}">
+      <summary><span class="dificil-cab">${ICO_CONT}<strong>Pasaje difícil</strong>${nino ? '' : ': qué dice el texto y qué posturas hay'}</span><span class="dificil-ref">${esc(x.titulo)} · ${esc(x.refs)}</span></summary>
+      <div class="dificil-cuerpo">${nino ? `<p>${esc(x.nino)}</p>` : `
+        <h3>Qué dice el texto</h3><ul class="dificil-dice">${(x.dice || []).map(c => `<li>${refHTML(c.ref)}<blockquote>«${esc(c.cita)}»</blockquote></li>`).join('')}</ul>
+        <h3>Posturas</h3><ul class="dificil-posturas">${(x.posturas || []).map(s => `<li><p>${esc(s.resumen)}</p><ul class="expl-fuentes">${fuenteExplHTML(s.fuente)}</ul></li>`).join('')}</ul>
+        <p class="meta">Se presentan las lecturas con su fuente, sin decidir por el lector. ${certezaExplHTML(x.certeza)}</p>`}</div></details>`).join('');
+  }
+  const glosarioListaHTML = () => {
+    const xs = N.glosario(EXPL(), ACC(), estado.glQ || '', plegadoRef);
+    if (!xs.length) return `<p class="vacio-txt">${estado.glQ ? 'Ningún término coincide con la búsqueda.' : 'Aún no aparece ningún término con explicación en lo que leíste.'}</p>`;
+    return `<ul class="glosario">${xs.map(x => `<li><button type="button" class="enlace-boton" data-termino="${esc(x.id)}">${esc(x.termino.lema || x.id)}</button>
+      <span class="meta">${esc(TIPO_TERMINO[x.termino.tipo] || '')} · desde ${esc(x.primera)}</span></li>`).join('')}</ul>`;
+  };
+  // Sección «Glosario» de la vista Fuentes: solo lo que ya apareció en lo accesible.
+  const glosarioHTML = () => EXPL() ? `<section id="glosario" aria-labelledby="t-glosario"><h2 id="t-glosario">Glosario</h2>
+      <p>Palabras antiguas, medidas y costumbres que ya aparecieron en lo que leíste. Toca una para ver su explicación y sus fuentes. Lo que viene más adelante aparecerá al llegar.</p>
+      <p class="gl-buscar"><label for="gl-q" class="sr">Buscar en el glosario</label><input type="search" id="gl-q" placeholder="Buscar en el glosario" value="${esc(estado.glQ || '')}" autocomplete="off"></p>
+      <div id="gl-lista" aria-live="polite">${glosarioListaHTML()}</div></section>` : '';
   function compararHTML(p) {
     const orden = ['rv', 'he', 'gr'], sel = columnas(), vis = orden.filter(c => sel.includes(c));
     const filas = N.alinearOriginales(D, p, ORIG.o, ORIG.g);
@@ -2421,11 +2637,11 @@ if (typeof document !== 'undefined') (function () {
       ${v.nota ? `<p class="meta">${esc(v.nota)}</p>` : ''}
       <p class="meta">Fuente: ${esc(v.fuente || 'sin indicar')} ${extLink(v.url_fuente, 'Ver la fuente')}</p></article>`;
   }
-  function testigoHTML(t) {
+  function testigoHTML(t, p) {
     const datos = [t.idioma, t.fecha ? `${t.fecha}${t.fecha_certeza ? ` (${t.fecha_certeza})` : ''}` : '', t.institucion].filter(Boolean).map(esc).join(' · ');
     return `<li class="testigo"><span class="testigo-cab"><strong>${esc(t.nombre || t.id)}</strong><span class="etiqueta">${esc(TIPO_TESTIGO[t.tipo] || t.tipo || 'Testigo')}</span></span>
       ${datos ? `<span class="meta">${datos}</span>` : ''}${t.nota ? `<span class="meta">${esc(t.nota)}</span>` : ''}
-      ${urlSegura(t.url) ? `<span>${extLink(t.url, 'Ver el manuscrito')}</span>` : ''}</li>`;
+      ${urlSegura(t.url) ? `<span>${extLink(t.url, 'Ver el manuscrito')}</span>` : ''}${p ? enlacesRegistroHTML(t, p) : ''}</li>`;
   }
   const QUE_ES = `<details class="plegable"><summary>Qué son el TM, la LXX y Qumrán</summary><dl class="que-es">
       <dt>TM · Texto Masorético</dt><dd>El texto hebreo que copiaron los masoretas, escribas judíos que le añadieron vocales y acentos. El Códice de Leningrado es su manuscrito completo más usado hoy. La Reina-Valera traduce un texto hebreo de esta tradición.</dd>
@@ -2441,7 +2657,68 @@ if (typeof document !== 'undefined') (function () {
     const st = N.sinTextoOriginal(ORIG.o, ORIG.g, refs);
     const sinTxt = st.length ? `<p class="meta">Sin texto original en ${st.length === 1 ? 'un versículo' : st.length + ' casos'}:</p><ul class="sin-texto-orig">${st.map(x => `<li><strong>${esc(x.ref)} · ${x.idioma === 'he' ? 'hebreo' : 'griego'}</strong>: ${esc(x.nota)}</li>`).join('')}</ul>` : '';
     return `${vs.length ? `<p class="meta">${vs.length === 1 ? 'Una variante' : vs.length + ' variantes'} entre manuscritos:</p>${vs.map(varianteHTML).join('')}` : `<p class="contexto">Los datos no registran variantes en ${estado.activo ? 'este versículo' : 'este pasaje'}.</p>`}
-      ${ts.length ? `<p class="meta">Manuscritos que contienen ${estado.activo ? 'este versículo' : 'parte de este pasaje'}:</p><ul class="testigos">${ts.map(testigoHTML).join('')}</ul>` : '<p class="vacio-txt">Ningún manuscrito de los datos cubre este pasaje.</p>'}${sinTxt}${QUE_ES}`;
+      ${ts.length ? `<p class="meta">Manuscritos que contienen ${estado.activo ? 'este versículo' : 'parte de este pasaje'}:</p><ul class="testigos">${ts.map(t => testigoHTML(t, estado.pasaje)).join('')}</ul>` : '<p class="vacio-txt">Ningún manuscrito de los datos cubre este pasaje.</p>'}${sinTxt}${QUE_ES}`;
+  }
+  /* ---------- El manuscrito: el registro real de donde sale el texto (datos/manuscritos.js, bajo demanda) ---------- */
+  // Plegado al final del pasaje (Leer y Comparar): no compite con la lectura, y la imagen (Wikimedia Commons, en línea)
+  // solo se pide al abrirlo, para no cargar folios que nadie mira. Rollos y Vaticano: solo enlace, por sus condiciones.
+  const MS = { d: null, est: '' };
+  const aExt = (u, t) => urlSegura(u) ? `<a href="${esc(urlSegura(u))}" target="_blank" rel="noopener noreferrer">${esc(t)}</a>` : '';
+  const EXT = ' <span class="etiqueta externa">Fuente externa</span>';
+  function cargarManuscritos() {
+    if (MS.est === 'ok' || MS.est === 'cargando') return;
+    MS.est = 'cargando';
+    cargarScript('datos/manuscritos.js').then(() => { MS.d = window.BIBLIA_MANUSCRITOS || null; MS.est = MS.d ? 'ok' : 'error'; }, () => { MS.est = 'error'; })
+      .then(() => { pintarManuscrito(); const a = $('#acompanante'); if (a && a.querySelector('.testigos')) { a.innerHTML = acompHTML(); montarMapas(a); } });
+  }
+  function pintarManuscrito() { const c = main.querySelector('[data-manuscrito] .ms-cuerpo'); if (c && estado.pasaje) c.innerHTML = manuscritoCuerpoHTML(estado.pasaje); }
+  function abrirManuscrito() {
+    cargarManuscritos();
+    if (ORIG.est.o === '') cargarOriginales('o', '[data-manuscrito] > summary'); // los rollos salen de originales.js; al repintar, el foco vuelve aquí
+    pintarManuscrito();
+  }
+  const enlaceRollo = (r, sinFicha) => r.nivel === 'fragmento'
+    ? r.fragmentos.map(f => f.imagenes.map(x => aExt(x.url, `Ver el fragmento${r.fragmentos.length > 1 || f.imagenes.length > 1 ? ' ' + f.abegg.replace(/^f/, '') : ''} en la Leon Levy (IAA)`)).join(' · ')).join(' · ')
+    : r.nivel === 'lamina' ? `${aExt(r.laminas[0].url, `Ver láminas del rollo${r.laminas.length > 1 ? ` (1 de ${r.laminas.length})` : ''}`)}${r.ficha && !sinFicha ? ' · ' + aExt(r.ficha, 'Ficha del rollo') : ''}`
+    : r.ficha ? aExt(r.ficha, 'Ficha del rollo') : '';
+  // Enlaces al registro de un testigo en la lista «Manuscritos que contienen…» (si ya están cargados los manuscritos).
+  function enlacesRegistroHTML(t, p) {
+    if (MS.est !== 'ok') return '';
+    if (t.id === 'leningrado') { const fs = N.foliosDePasaje(MS.d, D, p); return fs.length ? `<span>${fs.map(f => aExt(f.pagina, `Folio ${f.nombre} en Wikimedia Commons`)).join(' · ')}${EXT}</span>` : ''; }
+    if (t.id === 'vaticano') { const v = N.vaticanoDeLibro(MS.d, N.libroDe(p)); return v ? `<span>${aExt(v.url, `Inicio de ${N.nombreLibro(D, N.libroDe(p))} (BAV)`)}${EXT}</span>` : ''; }
+    if (t.tipo === 'rollo') { const r = N.rollosDePasaje(MS.d, ORIG.o, D, p).find(x => x.id === t.id); return r && r.nivel !== 'ficha' ? `<span>${enlaceRollo(r, true)}${EXT}</span>` : ''; }
+    return '';
+  }
+  function manuscritoHTML(p) {
+    return `<details class="plegable manuscrito" data-manuscrito${estado.msAbierto ? ' open' : ''}><summary>El manuscrito<span class="ms-sub">de dónde sale este texto</span></summary>
+      <div class="ms-cuerpo">${estado.msAbierto ? manuscritoCuerpoHTML(p) : ''}</div></details>`;
+  }
+  function manuscritoCuerpoHTML(p) {
+    if (MS.est !== 'ok') return MS.est === 'error'
+      ? '<p class="vacio-txt">No se pudieron cargar los datos de manuscritos (datos/manuscritos.js). <button type="button" class="enlace-boton" data-ms-reintentar>Reintentar</button></p>'
+      : '<p class="meta">Cargando…</p>';
+    const L = MS.d.leningrado || {}, lb = N.libroDe(p), libro = N.nombreLibro(D, lb);
+    const fs = N.foliosDePasaje(MS.d, D, p);
+    const folio = f => {
+      const img = f.uso === 'mostrar' && urlSegura(f.miniatura)
+        ? `<button type="button" class="rec-marco ms-marco" data-visor="ms:${esc(f.id)}" aria-label="Ampliar el folio ${esc(f.nombre)} del Códice de Leningrado"><img class="rec-img" src="${esc(f.miniatura)}" alt="Folio ${esc(f.nombre)} del Códice de Leningrado, con el texto hebreo de ${esc(f.muestra)}" loading="lazy" decoding="async"${f.ancho_miniatura && f.alto_miniatura ? ` width="${f.ancho_miniatura}" height="${f.alto_miniatura}"` : ''}><span class="rec-ampliar">${ICO_AMPLIAR}</span></button>` : '';
+      return `<figure class="ms-folio">${img}<figcaption class="rec-pie">
+        <span class="rec-datos"><span class="etiqueta rec-rotulo rec-registro">Registro histórico</span> <strong>Códice de Leningrado</strong>, folio ${esc(f.nombre)}${L.fecha ? ` · ${esc(L.fecha)}` : ''}${L.institucion ? ` · ${esc(L.institucion)}` : ''}</span>
+        <span>En este folio: ${esc(f.muestra)}${f.otros ? '; la página trae también texto de otros pasajes' : ''}.</span>
+        <span class="rec-atrib">Imagen: Wikimedia Commons · ${esc(f.licencia || 'licencia sin indicar')}${f.credito ? ` · origen: ${urlSegura(f.credito) ? aExt(f.credito, 'manuscripts.sefaria.org') : esc(f.credito)}` : ''} · ${aExt(f.pagina, 'Ver en Commons')}${EXT}</span></figcaption></figure>`;
+    };
+    const rs = ORIG.est.o === 'ok' ? N.rollosDePasaje(MS.d, ORIG.o, D, p) : [];
+    const rollos = ORIG.est.o === 'ok'
+      ? (rs.length ? `<ul class="ms-enlaces">${rs.map(r => `<li><strong>${esc(r.nombre)}</strong><span class="meta">${[r.fecha, r.institucion].filter(Boolean).map(esc).join(' · ')}</span><span>${enlaceRollo(r)}${EXT}</span></li>`).join('')}</ul>`
+        : '<p class="meta">Ningún rollo de los datos conserva versículos de este pasaje.</p>')
+      : ORIG.est.o === 'error' ? `<p class="vacio-txt">${NO_DISP.o} <button type="button" class="enlace-boton" data-reintentar="o">Reintentar</button></p>` : '<p class="meta">Cargando…</p>';
+    const v = N.vaticanoDeLibro(MS.d, lb), V = MS.d.vaticano || {};
+    return `${fs.length ? fs.map(folio).join('') : '<p class="meta">Los datos no tienen el folio de este pasaje.</p>'}
+      <p class="meta">De este códice sale el texto hebreo de la app. Qué versículos trae cada folio lo dice la descripción de Commons; la imagen es del manuscrito, no una ilustración.</p>
+      <h3 class="ms-sub-t">Rollos del mar Muerto</h3>${rollos}
+      <p class="meta">Imágenes de la Leon Levy Dead Sea Scrolls Digital Library (Autoridad de Antigüedades de Israel): solo enlace, porque sus condiciones no permiten mostrarlas aquí.</p>
+      ${v ? `<h3 class="ms-sub-t">Códice Vaticano</h3><ul class="ms-enlaces"><li><span>${aExt(v.url, `Ver el inicio de ${libro} en el Códice Vaticano (BAV)`)}${EXT}</span>
+        <span class="meta">${esc(V.nombre || 'Códice Vaticano')} · ${esc(V.institucion || 'Biblioteca Apostólica Vaticana')} · p. ${esc(v.pagina)}. Solo enlace: la BAV no permite mostrar sus imágenes.</span>${v.nota ? `<span class="meta">${esc(v.nota)}</span>` : ''}</li></ul>` : ''}`;
   }
   function abrirVariante(ref) {
     const vs = ORIG.o ? N.variantesDe(ORIG.o, [ref]) : [];
@@ -2661,8 +2938,17 @@ if (typeof document !== 'undefined') (function () {
 
   /* ---------- Visor a pantalla completa con zoom ---------- */
   const visorDlg = $('#visor'), VISOR = { z: 1, f: null };
+  // Folio de Leningrado en el visor: mismo pie que un recurso, rotulado «Registro histórico».
+  function folioVisor(id) {
+    const m = /^ms:(.+)$/.exec(String(id || '')); if (!m || MS.est !== 'ok') return null;
+    const L = MS.d.leningrado || {}, f = (L.folios || {})[m[1]];
+    if (!f || f.uso !== 'mostrar' || !urlSegura(f.miniatura)) return null;
+    return { id, tipo: 'registro', titulo: `Códice de Leningrado, folio ${N.nombreFolio(m[1])}`, imagen: f.miniatura, ancho: f.ancho_miniatura, alto: f.alto_miniatura,
+      fecha: L.fecha, licencia: f.licencia, institucion: L.institucion, url_fuente: f.pagina, atribucion: `Imagen: Wikimedia Commons${f.credito ? ' · origen: ' + f.credito : ''}`,
+      descripcion: 'Página del manuscrito hebreo del que sale el texto de la app.' };
+  }
   function abrirVisor(id) {
-    const f = recPorId(id); if (!f || !f.imagen || !visorDlg || (esNinoActivo() && f.sensible)) return;
+    const f = recPorId(id) || folioVisor(id); if (!f || !f.imagen || !visorDlg || (esNinoActivo() && f.sensible)) return;
     VISOR.f = f; VISOR.z = 1;
     visorDlg.querySelector('#visor-titulo').textContent = f.titulo;
     visorDlg.querySelector('#visor-lienzo').innerHTML = `<img src="${esc(f.imagen)}" alt="${esc(altRec(f))}" draggable="false"${f.ancho && f.alto ? ` width="${f.ancho}" height="${f.alto}"` : ''}>`;
@@ -3166,7 +3452,9 @@ if (typeof document !== 'undefined') (function () {
       <section><h2>Etiquetas de certeza</h2><dl class="etiquetas">
         <dt>${insignia('explicito')}</dt><dd>Lo dice el texto bíblico de forma explícita; se indica el versículo.</dd>
         <dt>${insignia('inferido')}</dt><dd>Supuesto razonable que el texto no afirma directamente (p. ej. una madre no nombrada, o un vínculo deducido por el contexto).</dd>
-        <dt>${insignia('calculo')}</dt><dd>Cifra obtenida por operación aritmética a partir del texto (sumas de edades, años desde Adán). No está escrita como tal.</dd></dl></section>
+        <dt>${insignia('calculo')}</dt><dd>Cifra obtenida por operación aritmética a partir del texto (sumas de edades, años desde Adán). No está escrita como tal.</dd>
+        <dt><span class="etiqueta externa">Fuente externa</span></dt><dd>Sale de fuera de la Biblia: un diccionario, una obra de consulta, un museo o un video.</dd></dl></section>
+      ${glosarioHTML()}
       <section><h2>TM y LXX</h2><p><strong>TM — Texto Masorético:</strong> texto hebreo transmitido por los masoretas; base de la mayoría de las Biblias en español (como la Reina-Valera).</p>
         <p><strong>LXX — Septuaginta:</strong> traducción griega antigua del Antiguo Testamento. En Génesis 5 y 11 da a menudo cifras distintas (suele sumar 100 años a la edad al engendrar) e incluye a un Cainán en Gn 11 que el TM no menciona.</p></section>
       ${fuentesOriginalesHTML()}
@@ -4761,6 +5049,7 @@ if (typeof document !== 'undefined') (function () {
     if (s.dataset.sec) estado.secAbiertas.set(s.dataset.sec, s.open);
     if (s.id === 'sin-parentesco') estado.sinParAbierta = s.open;
     if (s.id === 'supuestos') estado.supAbiertos = s.open;
+    if (s.dataset.manuscrito !== undefined) { estado.msAbierto = s.open; if (s.open) abrirManuscrito(); }
   }, true);
   document.addEventListener('keydown', e => {
     if (e.target && e.target.id === 'buscar' && e.key === 'Enter') { const r = N.buscarAccesible(D, ACC(), estado.q, 1)[0]; if (r) { e.preventDefault(); irArbol(r.id); } }
@@ -4791,13 +5080,15 @@ if (typeof document !== 'undefined') (function () {
       return;
     }
     const hb = t.closest('[data-hablar]'); if (hb) { const [id, k] = hb.dataset.hablar.split('|'); habla.idioma = id; if (habla.k === k && habla.estado !== 'parado') parar(); else escucharEn(id, [k]); return; }
-    if (t.closest('[data-cargar-origen]')) { cargarOriginales('o'); return; }
+    if (t.closest('[data-cargar-origen]')) { cargarOriginales('o'); cargarManuscritos(); return; }
+    if (t.closest('[data-ms-reintentar]')) { cargarManuscritos(); pintarManuscrito(); return; }
     const rt = t.closest('[data-reintentar]'); if (rt) { cargarOriginales(rt.dataset.reintentar); return; }
     const vc = t.closest('[data-video-cargar]'); if (vc) { estado.videoPedido = vc.dataset.videoCargar; cargarOriginales('o'); return; }
     const vd = t.closest('[data-video]'); if (vd) { const v = ORIG.o && N.videosDeLibro(ORIG.o, estado.libro).find(x => x.youtube_id === vd.dataset.video); if (v) { estado.videoPedido = estado.libro; vd.outerHTML = iframeVideo(v); } return; }
     const cu = t.closest('[data-curio]'); if (cu) { detalleCurio(cu.dataset.curio); return; }
     const ia = t.closest('[data-ir-arbol]'); if (ia) { irArbol(ia.dataset.irArbol); return; }
     const cs = t.closest('[data-objeto], [data-escenario]'); if (cs) { e.preventDefault(); if (cs.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirCosa(cs.dataset.objeto ? 'objetos' : 'escenarios', cs.dataset.objeto || cs.dataset.escenario); return; }
+    const tm = t.closest('[data-termino]'); if (tm) { e.preventDefault(); abrirTermino(tm.dataset.termino); return; }
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
     const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); if (p.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
@@ -4834,6 +5125,7 @@ if (typeof document !== 'undefined') (function () {
     else if (t.dataset && t.dataset.conf) { t.checked ? estado.mapaConf.add(t.dataset.conf) : estado.mapaConf.delete(t.dataset.conf); rerender(`[data-conf="${t.dataset.conf}"]`); }
     else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
     else if (['col-libro', 'col-sexo', 'col-grupo', 'col-estado'].includes(t.name)) { estado[{ 'col-libro': 'colLibro', 'col-sexo': 'colSexo', 'col-grupo': 'colGrupo', 'col-estado': 'colEstado' }[t.name]] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
+    else if (t.name === 'explicaciones') { store.set('biblia.explicaciones', !!t.checked); rerender('input[name="explicaciones"]'); }
     else if (t.name === 'modo-pasaje') { estado.comparar = t.value === 'comparar'; store.set('biblia.comparar', estado.comparar); rerender(`input[name="modo-pasaje"][value="${t.value}"]`); }
     else if (t.dataset && t.dataset.col) { alternarColumna(t.dataset.col, t.checked); rerender(`input[data-col="${t.dataset.col}"]`); }
     else if (t.name === 'voz-idioma') {

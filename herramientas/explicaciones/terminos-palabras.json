@@ -1,0 +1,2186 @@
+{
+  "empero": {
+    "tipo": "palabra",
+    "lema": "empero",
+    "formas": [
+      "empero"
+    ],
+    "adulto": "Conjunción antigua que equivale a «pero» o «sin embargo»: introduce algo que contrasta con lo que se acaba de decir.",
+    "nino": "Quiere decir «pero» o «sin embargo».",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "empero",
+        "url": "https://es.wiktionary.org/wiki/empero",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "mancebo": {
+    "tipo": "palabra",
+    "lema": "mancebo",
+    "formas": [
+      "mancebos",
+      "mancebo"
+    ],
+    "adulto": "Joven varón, en la edad de la juventud antes de ser adulto. Suele designar también al joven que sirve a alguien.",
+    "nino": "Un muchacho joven.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "mancebo",
+        "url": "https://es.wiktionary.org/wiki/mancebo",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "holgar": {
+    "tipo": "palabra",
+    "lema": "holgar",
+    "formas": [
+      "holgará",
+      "holganza",
+      "holgarás",
+      "holgaréis",
+      "holgó",
+      "holgáronse",
+      "holgaron",
+      "holgaste"
+    ],
+    "adulto": "Descansar, dejar de trabajar («holganza» es el descanso). En algún pasaje tiene el sentido de alegrarse y pasarlo bien.",
+    "nino": "Descansar; también estar contento.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "holgar",
+        "url": "https://es.wiktionary.org/wiki/holgar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aderezar": {
+    "tipo": "palabra",
+    "lema": "aderezar",
+    "formas": [
+      "aderezado",
+      "aderezará",
+      "aderezarlo",
+      "aderezare",
+      "aderezó",
+      "aderezaremos"
+    ],
+    "adulto": "Preparar o disponer algo; hablando de comida, prepararla o guisarla.",
+    "nino": "Preparar algo, por ejemplo la comida.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "aderezar",
+        "url": "https://es.wiktionary.org/wiki/aderezar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aparejar": {
+    "tipo": "palabra",
+    "lema": "aparejar",
+    "formas": [
+      "aparejado",
+      "aparejarán",
+      "aparejará",
+      "aparejo",
+      "aparejados"
+    ],
+    "adulto": "Preparar o disponer lo necesario. El sustantivo «aparejo» nombra también el arnés o la montura de una cabalgadura.",
+    "nino": "Dejar algo preparado.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "aparejar",
+        "url": "https://es.wiktionary.org/wiki/aparejar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "allegar": {
+    "tipo": "palabra",
+    "lema": "allegar",
+    "formas": [
+      "allegará",
+      "allegar",
+      "allegaréis",
+      "allegarás",
+      "allegóse",
+      "allegado",
+      "allegareis",
+      "allegarse",
+      "alleguen",
+      "allega",
+      "allegó",
+      "allegados",
+      "allegue",
+      "allegare",
+      "allegad",
+      "allegasteis",
+      "allegues",
+      "allegaré",
+      "allegaráse",
+      "alleguéis"
+    ],
+    "adulto": "Acercar o juntar; también recoger, reunir o, simplemente, llegar. «Allegarse» es acercarse o unirse a alguien o algo.",
+    "nino": "Acercar o juntar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "allegar",
+        "url": "https://es.wiktionary.org/wiki/allegar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "priesa": {
+    "tipo": "palabra",
+    "lema": "priesa",
+    "formas": [
+      "priesa",
+      "apriesa"
+    ],
+    "adulto": "Forma antigua de «prisa»; «apriesa» es «deprisa».",
+    "nino": "Quiere decir «prisa».",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "priesa",
+        "url": "https://es.wiktionary.org/wiki/priesa",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aqueste": {
+    "tipo": "palabra",
+    "lema": "aqueste",
+    "formas": [
+      "aquesta",
+      "aqueste",
+      "aquestas",
+      "aquestos",
+      "aquesto"
+    ],
+    "adulto": "Forma antigua de «este»: «aquesta», «aquestas», «aquestos», «aquesto» son «esta», «estas», «estos», «esto».",
+    "nino": "Quiere decir «este» o «esta».",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "aqueste",
+        "url": "https://es.wiktionary.org/wiki/aqueste",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "esotro": {
+    "tipo": "palabra",
+    "lema": "estotro y esotro",
+    "formas": [
+      "estotra",
+      "esotra"
+    ],
+    "adulto": "«Esotra» es «esa otra» y «estotra», por su formación, «esta otra»: contracciones antiguas de demostrativo y «otro».",
+    "nino": "Quiere decir «esa otra» o «esta otra».",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "esotro",
+        "url": "https://es.wiktionary.org/wiki/esotro",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "tornar": {
+    "tipo": "palabra",
+    "lema": "tornar",
+    "formas": [
+      "tornó",
+      "tornaron",
+      "torna",
+      "tornando",
+      "tornóse",
+      "tornaré",
+      "tornar",
+      "tornándose",
+      "tornado",
+      "tornáronse",
+      "tornare",
+      "torne",
+      "tornen",
+      "tornará",
+      "tornad",
+      "tornáremos",
+      "tornarán",
+      "tornarnos",
+      "tornaban",
+      "tornóle",
+      "tornamos",
+      "tornase",
+      "tornaba"
+    ],
+    "adulto": "Volver, regresar; también volver a hacer algo o volverse en algo distinto.",
+    "nino": "Volver o regresar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "tornar",
+        "url": "https://es.wiktionary.org/wiki/tornar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "tentar": {
+    "tipo": "palabra",
+    "lema": "tentar",
+    "formas": [
+      "tentó",
+      "tentado",
+      "tentará",
+      "tentáis",
+      "tentaron",
+      "tentaréis",
+      "tentasteis",
+      "tentaste",
+      "tentar"
+    ],
+    "adulto": "Poner a prueba a alguien o algo; en otros pasajes, palpar o tocar para reconocer un objeto. No tiene aquí el sentido actual de provocar un deseo.",
+    "nino": "Poner a prueba; o tocar algo para saber cómo es.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "tentar",
+        "url": "https://es.wiktionary.org/wiki/tentar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "tañer": {
+    "tipo": "palabra",
+    "lema": "tañer",
+    "formas": [
+      "taña",
+      "tañía",
+      "tañían",
+      "tañendo"
+    ],
+    "adulto": "Tocar o hacer sonar un instrumento musical.",
+    "nino": "Hacer sonar un instrumento.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "tañer",
+        "url": "https://es.wiktionary.org/wiki/tañer",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "desmayar": {
+    "tipo": "palabra",
+    "lema": "desmayar",
+    "formas": [
+      "desmayes",
+      "desmayados",
+      "desmayó",
+      "desmayado",
+      "desmaye"
+    ],
+    "adulto": "Perder el ánimo o el valor, desfallecer. No significa aquí perder el conocimiento.",
+    "nino": "Perder el ánimo y rendirse.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "desmayar",
+        "url": "https://es.wiktionary.org/wiki/desmayar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dilatar": {
+    "tipo": "palabra",
+    "lema": "dilatar",
+    "formas": [
+      "dilató",
+      "dilatarás",
+      "dilatará"
+    ],
+    "adulto": "Retrasar o demorar algo.",
+    "nino": "Tardar o dejar para después.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "dilatar",
+        "url": "https://es.wiktionary.org/wiki/dilatar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "esforzar": {
+    "tipo": "palabra",
+    "lema": "esforzar",
+    "formas": [
+      "esforzaos",
+      "esfuerces",
+      "esforzó",
+      "esfuérzate",
+      "esforzándose",
+      "esforzados",
+      "esforzada",
+      "esforzado",
+      "esforzarán",
+      "esfuérzame"
+    ],
+    "adulto": "Animar o dar fuerza; «esforzarse» es cobrar ánimo y fortaleza, y «esforzado» es el valiente y fuerte.",
+    "nino": "Tener ánimo y ser valiente.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "esforzar",
+        "url": "https://es.wiktionary.org/wiki/esforzar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "confortar": {
+    "tipo": "palabra",
+    "lema": "confortar",
+    "formas": [
+      "conforta",
+      "confortó"
+    ],
+    "adulto": "Dar fuerza y ánimo, o consolar. No se refiere a la comodidad actual.",
+    "nino": "Dar ánimo o consolar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "confortar",
+        "url": "https://es.wiktionary.org/wiki/confortar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "fenecer": {
+    "tipo": "palabra",
+    "lema": "fenecer",
+    "formas": [
+      "fenecerá"
+    ],
+    "adulto": "Llegar a su fin, acabarse o morir.",
+    "nino": "Acabarse.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "fenecer",
+        "url": "https://es.wiktionary.org/wiki/fenecer",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "yacer": {
+    "tipo": "palabra",
+    "lema": "yacer",
+    "formas": [
+      "yacían",
+      "yace",
+      "yacía"
+    ],
+    "adulto": "Estar echado o tendido; por extensión, hallarse en un lugar.",
+    "nino": "Estar echado o tumbado.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "yacer",
+        "url": "https://es.wiktionary.org/wiki/yacer",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "menguar": {
+    "tipo": "palabra",
+    "lema": "menguar",
+    "formas": [
+      "menguaron"
+    ],
+    "adulto": "Disminuir. Dicho del corazón o del ánimo, debilitarlo o desalentarlo.",
+    "nino": "Hacer más pequeño o más débil.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "menguar",
+        "url": "https://es.wiktionary.org/wiki/menguar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "hacienda": {
+    "tipo": "palabra",
+    "lema": "hacienda",
+    "formas": [
+      "hacienda"
+    ],
+    "adulto": "Conjunto de bienes que alguien posee: ganado, enseres, riquezas. No es la finca rural.",
+    "nino": "Todo lo que alguien tiene.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "hacienda",
+        "url": "https://es.wiktionary.org/wiki/hacienda",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "cerviz": {
+    "tipo": "palabra",
+    "lema": "cerviz",
+    "formas": [
+      "cerviz"
+    ],
+    "adulto": "La parte posterior del cuello, la nuca.",
+    "nino": "La nuca, la parte de atrás del cuello.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "cerviz",
+        "url": "https://es.wiktionary.org/wiki/cerviz",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "cohecho": {
+    "tipo": "palabra",
+    "lema": "cohecho",
+    "formas": [
+      "cohecho"
+    ],
+    "adulto": "Soborno: dinero o regalo para torcer una decisión a favor de quien lo da.",
+    "nino": "Dar un regalo para que alguien decida a tu favor.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "cohecho",
+        "url": "https://es.wiktionary.org/wiki/cohecho",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dadiva": {
+    "tipo": "palabra",
+    "lema": "dádiva",
+    "formas": [
+      "dádiva",
+      "dádivas"
+    ],
+    "adulto": "Regalo o presente que se da sin pedir nada a cambio.",
+    "nino": "Un regalo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "dádiva",
+        "url": "https://es.wiktionary.org/wiki/dádiva",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "anima": {
+    "tipo": "palabra",
+    "lema": "ánima",
+    "formas": [
+      "ánima"
+    ],
+    "adulto": "Alma, el principio de vida de un ser. En el texto se dice de los animales que tienen vida.",
+    "nino": "Quiere decir «alma» o «vida».",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "ánima",
+        "url": "https://es.wiktionary.org/wiki/ánima",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "agorero": {
+    "tipo": "palabra",
+    "lema": "agorero y agüero",
+    "formas": [
+      "agüero",
+      "agüeros",
+      "agorero"
+    ],
+    "adulto": "El «agüero» es la señal con que se pretende adivinar el futuro, y el «agorero» el que la interpreta. Es práctica de adivinación.",
+    "nino": "Adivinar el futuro con señales.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "agorero",
+        "url": "https://es.wiktionary.org/wiki/agorero",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pelliza": {
+    "tipo": "palabra",
+    "lema": "pelliza",
+    "formas": [
+      "pelliza"
+    ],
+    "adulto": "Prenda de abrigo hecha o forrada de pieles.",
+    "nino": "Un abrigo de pelo o de piel.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "pelliza",
+        "url": "https://es.wiktionary.org/wiki/pelliza",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pingue": {
+    "tipo": "palabra",
+    "lema": "pingüe",
+    "formas": [
+      "pingüe"
+    ],
+    "adulto": "Abundante, fértil, rico; dicho de una tierra, que da buen fruto; dicho de un jugo, abundante o grasa.",
+    "nino": "Muy rico o abundante.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "pingüe",
+        "url": "https://es.wiktionary.org/wiki/pingüe",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "postrimeria": {
+    "tipo": "palabra",
+    "lema": "postrimería",
+    "formas": [
+      "postrimería",
+      "postrimeros"
+    ],
+    "adulto": "El último período o el final de algo o de alguien; «postrimero», el último.",
+    "nino": "El final de algo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "postrimería",
+        "url": "https://es.wiktionary.org/wiki/postrimería",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "sortilego": {
+    "tipo": "palabra",
+    "lema": "sortílego",
+    "formas": [
+      "sortílego"
+    ],
+    "adulto": "Adivino, el que pretende conocer el futuro con suertes o supersticiones.",
+    "nino": "Alguien que dice adivinar el futuro.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "sortílego",
+        "url": "https://es.wiktionary.org/wiki/sortílego",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "zurron": {
+    "tipo": "palabra",
+    "lema": "zurrón",
+    "formas": [
+      "zurrón"
+    ],
+    "adulto": "Bolsa de cuero que usan los pastores para llevar comida y otras cosas.",
+    "nino": "Una bolsa de cuero de pastor.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Scrip",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/scrip.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "anublo": {
+    "tipo": "palabra",
+    "lema": "añublo",
+    "formas": [
+      "añublo"
+    ],
+    "adulto": "Enfermedad de los cereales causada por un hongo que ennegrece espigas y hojas y malogra la cosecha.",
+    "nino": "Una plaga que estropea el trigo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "añublo",
+        "url": "https://es.wiktionary.org/wiki/añublo",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aquilon": {
+    "tipo": "palabra",
+    "lema": "aquilón",
+    "formas": [
+      "aquilón"
+    ],
+    "adulto": "El norte, punto cardinal (palabra literaria antigua).",
+    "nino": "El norte.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "aquilón",
+        "url": "https://es.wiktionary.org/wiki/aquilón",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "austro": {
+    "tipo": "palabra",
+    "lema": "austro",
+    "formas": [
+      "austro"
+    ],
+    "adulto": "El sur, punto cardinal (palabra literaria antigua).",
+    "nino": "El sur.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "austro",
+        "url": "https://es.wiktionary.org/wiki/austro",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "vedar": {
+    "tipo": "palabra",
+    "lema": "vedar",
+    "formas": [
+      "vedó",
+      "vedare",
+      "vedado"
+    ],
+    "adulto": "Prohibir por mandato de una autoridad; también impedir.",
+    "nino": "Prohibir.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "vedar",
+        "url": "https://es.wiktionary.org/wiki/vedar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "nombradia": {
+    "tipo": "palabra",
+    "lema": "nombradía",
+    "formas": [
+      "nombradía"
+    ],
+    "adulto": "Fama o buena reputación.",
+    "nino": "Fama: que todos conozcan tu nombre.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "nombradía",
+        "url": "https://es.wiktionary.org/wiki/nombradía",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "enjuto": {
+    "tipo": "palabra",
+    "lema": "enjuto",
+    "formas": [
+      "enjutos"
+    ],
+    "adulto": "Seco, sin humedad.",
+    "nino": "Seco.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "enjuto",
+        "url": "https://es.wiktionary.org/wiki/enjuto",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "hollar": {
+    "tipo": "palabra",
+    "lema": "hollar",
+    "formas": [
+      "hollareis",
+      "hollarás",
+      "holló",
+      "hollaste",
+      "hollaron",
+      "hollado"
+    ],
+    "adulto": "Pisar; también pisotear o dominar al que está debajo.",
+    "nino": "Pisar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "hollar",
+        "url": "https://es.wiktionary.org/wiki/hollar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "ayuntar": {
+    "tipo": "palabra",
+    "lema": "ayuntar",
+    "formas": [
+      "ayuntamiento",
+      "ayuntarse",
+      "ayuntar"
+    ],
+    "adulto": "Juntar o unir. «Ayuntamiento» significa unión; según el pasaje, designa la unión carnal entre varón y mujer (lo marca el contexto, p. ej. Ex 22:19 y Lv 18) o una asamblea de personas.",
+    "nino": "Juntar; o una reunión de gente.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "ayuntar",
+        "url": "https://es.wiktionary.org/wiki/ayuntar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "siniestra": {
+    "tipo": "palabra",
+    "lema": "siniestra",
+    "formas": [
+      "siniestra"
+    ],
+    "adulto": "La mano o el lado izquierdo (forma antigua; «diestra» es la derecha).",
+    "nino": "La izquierda.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "siniestra",
+        "url": "https://es.wiktionary.org/wiki/siniestra",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "greba": {
+    "tipo": "palabra",
+    "lema": "greba",
+    "formas": [
+      "grebas"
+    ],
+    "adulto": "Pieza de armadura que protegía la parte delantera de la pierna, de la rodilla al tobillo.",
+    "nino": "Una pieza de metal para proteger las piernas.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "greba",
+        "url": "https://es.wiktionary.org/wiki/greba",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aljaba": {
+    "tipo": "palabra",
+    "lema": "aljaba",
+    "formas": [
+      "aljaba"
+    ],
+    "adulto": "Estuche portátil, abierto por arriba, para llevar flechas; se colgaba del hombro.",
+    "nino": "Un estuche para llevar flechas.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "aljaba",
+        "url": "https://es.wiktionary.org/wiki/aljaba",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "albarda": {
+    "tipo": "palabra",
+    "lema": "albarda",
+    "formas": [
+      "albarda"
+    ],
+    "adulto": "Almohadilla o silla que se pone a una bestia de carga para colocarle los bultos.",
+    "nino": "Una silla para poner carga a un animal.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "albarda",
+        "url": "https://es.wiktionary.org/wiki/albarda",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "mies": {
+    "tipo": "palabra",
+    "lema": "mies",
+    "formas": [
+      "mies",
+      "mieses"
+    ],
+    "adulto": "El cereal maduro listo para segar, y por extensión el campo sembrado o la época de la siega.",
+    "nino": "El trigo o la cebada ya maduros.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "mies",
+        "url": "https://es.wiktionary.org/wiki/mies",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "bagaje": {
+    "tipo": "palabra",
+    "lema": "bagaje",
+    "formas": [
+      "bagaje"
+    ],
+    "adulto": "Equipaje y pertenencias que se llevan en un viaje o con un ejército.",
+    "nino": "El equipaje.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "bagaje",
+        "url": "https://es.wiktionary.org/wiki/bagaje",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "bastimento": {
+    "tipo": "palabra",
+    "lema": "bastimento",
+    "formas": [
+      "bastimentos",
+      "bastimento"
+    ],
+    "adulto": "Provisiones o víveres necesarios para sustentar a una población o un ejército.",
+    "nino": "Comida y cosas guardadas para usarlas.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "bastimento",
+        "url": "https://es.wiktionary.org/wiki/bastimento",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "bocina": {
+    "tipo": "palabra",
+    "lema": "bocina",
+    "formas": [
+      "bocinas",
+      "bocina"
+    ],
+    "adulto": "Instrumento de viento que se tocaba soplando, hecho de cuerno o metal; equivale a «trompeta» o «cuerno». No es la bocina de un auto.",
+    "nino": "Un cuerno o trompeta que se sopla.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Cornet",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cornet.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "buril": {
+    "tipo": "palabra",
+    "lema": "buril",
+    "formas": [
+      "buril"
+    ],
+    "adulto": "Herramienta de punta para grabar o cincelar metal.",
+    "nino": "Una herramienta con punta para grabar el metal.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Graving",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/graving.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "abrojo": {
+    "tipo": "palabra",
+    "lema": "abrojo",
+    "formas": [
+      "abrojos"
+    ],
+    "adulto": "Fruto o planta espinosa que se pega y pincha al rozarla o pisarla.",
+    "nino": "Una planta con espinas.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "abrojo",
+        "url": "https://es.wiktionary.org/wiki/abrojo",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "acaecer": {
+    "tipo": "palabra",
+    "lema": "acaecer",
+    "formas": [
+      "acaeció",
+      "acaecido",
+      "acaeciere",
+      "acaecieron"
+    ],
+    "adulto": "Suceder o acontecer.",
+    "nino": "Suceder.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "acaecer",
+        "url": "https://es.wiktionary.org/wiki/acaecer",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "acicalador": {
+    "tipo": "palabra",
+    "lema": "acicalador",
+    "formas": [
+      "acicalador"
+    ],
+    "adulto": "El que pule y afila; aquí, quien trabaja y bruñe los metales.",
+    "nino": "Alguien que pule y deja brillante el metal.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "acicalar",
+        "url": "https://es.wiktionary.org/wiki/acicalar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "adufe": {
+    "tipo": "palabra",
+    "lema": "adufe",
+    "formas": [
+      "adufes",
+      "adufe"
+    ],
+    "adulto": "Pandero, instrumento de percusión de mano.",
+    "nino": "Un pandero.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Tabret",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/tabret.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "alhaja": {
+    "tipo": "palabra",
+    "lema": "alhaja",
+    "formas": [
+      "alhajas"
+    ],
+    "adulto": "Objeto de valor o cosa muy apreciada; en un sentido antiguo, el conjunto de bienes que alguien posee, sus enseres y pertenencias.",
+    "nino": "Cosas y utensilios de valor.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "alhaja",
+        "url": "https://es.wiktionary.org/wiki/alhaja",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "apostema": {
+    "tipo": "palabra",
+    "lema": "apostema",
+    "formas": [
+      "apostema"
+    ],
+    "adulto": "Absceso con pus.",
+    "nino": "Una hinchazón en la piel.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "apostema",
+        "url": "https://es.wiktionary.org/wiki/apostema",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "corchete": {
+    "tipo": "palabra",
+    "lema": "corchete",
+    "formas": [
+      "corchetes"
+    ],
+    "adulto": "Broche o gancho para unir dos piezas; los corchetes de las cortinas del tabernáculo las unían entre sí.",
+    "nino": "Ganchos para unir cortinas.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Taches",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/taches.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "corcovado": {
+    "tipo": "palabra",
+    "lema": "corcovado",
+    "formas": [
+      "corcovado"
+    ],
+    "adulto": "Jorobado, con la espalda encorvada.",
+    "nino": "Con la espalda encorvada.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "corcovado",
+        "url": "https://es.wiktionary.org/wiki/corcovado",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "denostar": {
+    "tipo": "palabra",
+    "lema": "denostar",
+    "formas": [
+      "denostarás"
+    ],
+    "adulto": "Injuriar gravemente, insultar.",
+    "nino": "Insultar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "denostar",
+        "url": "https://es.wiktionary.org/wiki/denostar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "dintel": {
+    "tipo": "palabra",
+    "lema": "dintel",
+    "formas": [
+      "dintel"
+    ],
+    "adulto": "Parte superior de una puerta o ventana, la viga que va encima del hueco.",
+    "nino": "La parte de arriba del marco de la puerta.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "dintel",
+        "url": "https://es.wiktionary.org/wiki/dintel",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "estambre": {
+    "tipo": "palabra",
+    "lema": "estambre",
+    "formas": [
+      "estambre"
+    ],
+    "adulto": "Hilo de lana; en los textos de lepra, el hilo de la urdimbre de una tela.",
+    "nino": "Hilo de lana.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "estambre",
+        "url": "https://es.wiktionary.org/wiki/estambre",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "frontal": {
+    "tipo": "palabra",
+    "lema": "frontal",
+    "formas": [
+      "frontales"
+    ],
+    "adulto": "Cintas o estuches que se llevan atados sobre la frente. El mandato también se entendió de forma figurada, como tener siempre presente la ley.",
+    "nino": "Algo que se lleva atado en la frente.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Frontlets",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/frontlets.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "guarecer": {
+    "tipo": "palabra",
+    "lema": "guarecer",
+    "formas": [
+      "guarecían"
+    ],
+    "adulto": "Refugiarse o ponerse a salvo; buscar abrigo.",
+    "nino": "Refugiarse.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "guarecer",
+        "url": "https://es.wiktionary.org/wiki/guarecer",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "guedeja": {
+    "tipo": "palabra",
+    "lema": "guedeja",
+    "formas": [
+      "guedejas"
+    ],
+    "adulto": "Mechón largo de cabello; cabellera larga.",
+    "nino": "Un mechón largo de pelo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "guedeja",
+        "url": "https://es.wiktionary.org/wiki/guedeja",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "horro": {
+    "tipo": "palabra",
+    "lema": "horro",
+    "formas": [
+      "horro"
+    ],
+    "adulto": "Libre, que ya no es esclavo.",
+    "nino": "Libre.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "horro",
+        "url": "https://es.wiktionary.org/wiki/horro",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "lesna": {
+    "tipo": "palabra",
+    "lema": "lezna",
+    "formas": [
+      "lesna"
+    ],
+    "adulto": "Lezna, instrumento punzante para perforar cuero u otras cosas; es la «lesna» de la RV.",
+    "nino": "Una herramienta con punta para hacer agujeros.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Awl",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/awl.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "lumbrera": {
+    "tipo": "palabra",
+    "lema": "lumbrera",
+    "formas": [
+      "lumbreras",
+      "lumbrera"
+    ],
+    "adulto": "Cuerpo que da luz; aquí, los astros del cielo.",
+    "nino": "Algo que da luz, como el sol o la luna.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "lumbrera",
+        "url": "https://es.wiktionary.org/wiki/lumbrera",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "majano": {
+    "tipo": "palabra",
+    "lema": "majano",
+    "formas": [
+      "majano"
+    ],
+    "adulto": "Montón de piedras sueltas.",
+    "nino": "Un montón de piedras.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "majano",
+        "url": "https://es.wiktionary.org/wiki/majano",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "majar": {
+    "tipo": "palabra",
+    "lema": "majar",
+    "formas": [
+      "majaban"
+    ],
+    "adulto": "Machacar o triturar algo golpeándolo, por ejemplo grano en un mortero.",
+    "nino": "Machacar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "majar",
+        "url": "https://es.wiktionary.org/wiki/majar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "manteca": {
+    "tipo": "palabra",
+    "lema": "manteca",
+    "formas": [
+      "manteca"
+    ],
+    "adulto": "Aquí, por el contexto, un derivado lácteo graso, como la mantequilla, y no la grasa de cerdo que hoy se llama así en muchos lugares.",
+    "nino": "Algo hecho con la grasa de la leche.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "manteca",
+        "url": "https://es.wiktionary.org/wiki/manteca",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "menester": {
+    "tipo": "palabra",
+    "lema": "menester",
+    "formas": [
+      "menester"
+    ],
+    "adulto": "Necesidad, lo necesario. «Es menester» equivale a «es necesario».",
+    "nino": "Algo que hace falta.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "menester",
+        "url": "https://es.wiktionary.org/wiki/menester",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "mortecina": {
+    "tipo": "palabra",
+    "lema": "mortecina",
+    "formas": [
+      "mortecina"
+    ],
+    "adulto": "Animal que muere por sí solo, sin ser sacrificado; también su carne.",
+    "nino": "Un animal que ha muerto solo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "mortecina",
+        "url": "https://es.wiktionary.org/wiki/mortecina",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "odre": {
+    "tipo": "palabra",
+    "lema": "odre",
+    "formas": [
+      "odre"
+    ],
+    "adulto": "Bolsa de cuero, normalmente de piel de cabra, para llevar líquidos como agua o vino.",
+    "nino": "Una bolsa de cuero para llevar agua o vino.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Bottle",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/bottle.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pertrecho": {
+    "tipo": "palabra",
+    "lema": "pertrecho",
+    "formas": [
+      "pertrechos"
+    ],
+    "adulto": "Armas, herramientas y equipo necesarios para un fin; aquí, los de un ejército o de sus carros.",
+    "nino": "El equipo necesario.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "pertrecho",
+        "url": "https://es.wiktionary.org/wiki/pertrecho",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "pollino": {
+    "tipo": "palabra",
+    "lema": "pollino",
+    "formas": [
+      "pollino"
+    ],
+    "adulto": "Asno joven o pequeño.",
+    "nino": "Un burrito joven.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "pollino",
+        "url": "https://es.wiktionary.org/wiki/pollino",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "sobrestante": {
+    "tipo": "palabra",
+    "lema": "sobrestante",
+    "formas": [
+      "sobrestante"
+    ],
+    "adulto": "Capataz, el que vigila y dirige a los trabajadores.",
+    "nino": "El encargado de los trabajadores.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "sobrestante",
+        "url": "https://es.wiktionary.org/wiki/sobrestante",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "tejon": {
+    "tipo": "palabra",
+    "lema": "tejón",
+    "formas": [
+      "tejones"
+    ],
+    "adulto": "Animal; la Biblia de Reina-Valera habla de cueros de tejón, y Easton opina que la palabra hebrea podría referirse a otro animal marino (el dugongo) y que los traductores se confundieron.",
+    "nino": "Un tipo de cuero de animal.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Badger",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/badger.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "terrado": {
+    "tipo": "palabra",
+    "lema": "terrado",
+    "formas": [
+      "terrado"
+    ],
+    "adulto": "Azotea, techo plano de una casa en que se podía estar.",
+    "nino": "El techo plano de la casa.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "terrado",
+        "url": "https://es.wiktionary.org/wiki/terrado",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "tropezadero": {
+    "tipo": "palabra",
+    "lema": "tropezadero",
+    "formas": [
+      "tropezadero"
+    ],
+    "adulto": "Lugar u objeto en que se corre el riesgo de tropezar; aquí se usa en sentido figurado: algo en lo que se puede caer.",
+    "nino": "Algo que hace caer.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "tropezadero",
+        "url": "https://es.wiktionary.org/wiki/tropezadero",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "unicornio": {
+    "tipo": "palabra",
+    "lema": "unicornio",
+    "formas": [
+      "unicornio"
+    ],
+    "adulto": "La palabra hebrea «reem» es de identificación incierta; Easton la ve probablemente como el uro, un toro salvaje extinguido. No es el caballo con un cuerno.",
+    "nino": "Un animal fuerte y salvaje, no el caballo de los cuentos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Unicorn",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/unicorn.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "vitualla": {
+    "tipo": "palabra",
+    "lema": "vitualla",
+    "formas": [
+      "vitualla"
+    ],
+    "adulto": "Víveres o comida.",
+    "nino": "Comida.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "vitualla",
+        "url": "https://es.wiktionary.org/wiki/vitualla",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "yermo": {
+    "tipo": "palabra",
+    "lema": "yermo",
+    "formas": [
+      "yermas",
+      "yerma",
+      "yermo"
+    ],
+    "adulto": "Despoblado, sin cultivar, inhabitado; «yermo» como sustantivo es un lugar desierto.",
+    "nino": "Sin gente ni cultivo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "yermo",
+        "url": "https://es.wiktionary.org/wiki/yermo",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "zarcillo": {
+    "tipo": "palabra",
+    "lema": "zarcillo",
+    "formas": [
+      "zarcillos"
+    ],
+    "adulto": "Pendiente o arete que se lleva en la oreja.",
+    "nino": "Un arete.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "zarcillo",
+        "url": "https://es.wiktionary.org/wiki/zarcillo",
+        "idioma": "es"
+      },
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Earrings",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/earrings.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "almorranas": {
+    "tipo": "palabra",
+    "lema": "almorranas",
+    "formas": [
+      "almorranas"
+    ],
+    "adulto": "Hemorroides, venas hinchadas en la zona anal.",
+    "nino": "Una enfermedad molesta.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "almorrana",
+        "url": "https://es.wiktionary.org/wiki/almorrana",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "arrebozar": {
+    "tipo": "palabra",
+    "lema": "arrebozar",
+    "formas": [
+      "arrebozóse"
+    ],
+    "adulto": "Cubrirse el rostro, tapar la cara con la ropa o con un manto.",
+    "nino": "Taparse la cara.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "arrebozar",
+        "url": "https://es.wiktionary.org/wiki/arrebozar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "atalayar": {
+    "tipo": "palabra",
+    "lema": "atalayar",
+    "formas": [
+      "atalaye",
+      "atalayando"
+    ],
+    "adulto": "Vigilar desde una atalaya o torre alta; observar de lejos.",
+    "nino": "Vigilar desde un lugar alto.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "atalayar",
+        "url": "https://es.wiktionary.org/wiki/atalayar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "henchir": {
+    "tipo": "palabra",
+    "lema": "henchir",
+    "formas": [
+      "hinche",
+      "henchido",
+      "hinchió",
+      "henchid",
+      "henchirás",
+      "henchir",
+      "henchirán",
+      "henchirá",
+      "henchiste",
+      "henchimos"
+    ],
+    "adulto": "Llenar; «henchido» es lleno. No es hinchar.",
+    "nino": "Llenar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "henchir",
+        "url": "https://es.wiktionary.org/wiki/henchir",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [
+      "Nm 5:21"
+    ],
+    "solo": null
+  },
+  "heder": {
+    "tipo": "palabra",
+    "lema": "heder",
+    "formas": [
+      "heder",
+      "hederá"
+    ],
+    "adulto": "Oler muy mal; «hacer heder» a alguien es hacerlo odioso.",
+    "nino": "Oler mal.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "heder",
+        "url": "https://es.wiktionary.org/wiki/heder",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "aventar": {
+    "tipo": "palabra",
+    "lema": "aventar",
+    "formas": [
+      "avienta"
+    ],
+    "adulto": "Echar el grano al aire con una pala para separar la paja, que se lleva el viento.",
+    "nino": "Lanzar el grano al viento para limpiarlo.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "aventar",
+        "url": "https://es.wiktionary.org/wiki/aventar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "heredad": {
+    "tipo": "palabra",
+    "lema": "heredad",
+    "formas": [
+      "heredad",
+      "heredades"
+    ],
+    "adulto": "Propiedad, sobre todo la tierra que se recibe en herencia o por reparto. No es sólo lo heredado.",
+    "nino": "La tierra que alguien recibe como suya.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "heredad",
+        "url": "https://es.wiktionary.org/wiki/heredad",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "laganoso": {
+    "tipo": "palabra",
+    "lema": "lagañoso",
+    "formas": [
+      "lagañoso"
+    ],
+    "adulto": "Con los ojos llenos de legañas o enfermos.",
+    "nino": "Con los ojos enfermos.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "lagañoso",
+        "url": "https://es.wiktionary.org/wiki/lagañoso",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "coger": {
+    "tipo": "palabra",
+    "lema": "coger",
+    "formas": [
+      "coger",
+      "cogió",
+      "cogerás",
+      "cogido",
+      "coged",
+      "cogiéndola",
+      "cogerá",
+      "cogeréis",
+      "cogiere",
+      "cogida",
+      "cogían",
+      "cogeré"
+    ],
+    "adulto": "Tomar, agarrar o recoger. En muchos países hoy tiene otro sentido, por lo que aquí se lee simplemente como «tomar».",
+    "nino": "Tomar o agarrar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "coger",
+        "url": "https://es.wiktionary.org/wiki/coger",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "guisar": {
+    "tipo": "palabra",
+    "lema": "guisar",
+    "formas": [
+      "guisado",
+      "guisados",
+      "guisó",
+      "guisarás",
+      "guisadas"
+    ],
+    "adulto": "Preparar los alimentos cocinándolos.",
+    "nino": "Cocinar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "guisar",
+        "url": "https://es.wiktionary.org/wiki/guisar",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "asechanza": {
+    "tipo": "palabra",
+    "lema": "asechanza",
+    "formas": [
+      "asechanzas",
+      "asechadores"
+    ],
+    "adulto": "Trampa o engaño para perjudicar a alguien; el «asechador» es el que prepara emboscadas.",
+    "nino": "Una trampa preparada.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "asechanza",
+        "url": "https://es.wiktionary.org/wiki/asechanza",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "apercibir": {
+    "tipo": "palabra",
+    "lema": "apercibir",
+    "formas": [
+      "apercibidos",
+      "apercibiereis",
+      "apercibisteis",
+      "apercibid"
+    ],
+    "adulto": "Preparar o disponer; «apercibid» es «preparad».",
+    "nino": "Preparar.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "apercibir",
+        "url": "https://es.wiktionary.org/wiki/apercibir",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "atavio": {
+    "tipo": "palabra",
+    "lema": "atavío",
+    "formas": [
+      "atavíos"
+    ],
+    "adulto": "Adornos y ropa con que alguien se arregla.",
+    "nino": "Los adornos y la ropa.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "atavío",
+        "url": "https://es.wiktionary.org/wiki/atavío",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "canteria": {
+    "tipo": "palabra",
+    "lema": "cantería",
+    "formas": [
+      "cantería"
+    ],
+    "adulto": "Piedra labrada o trabajada para construir.",
+    "nino": "Piedra cortada para construir.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "cantería",
+        "url": "https://es.wiktionary.org/wiki/cantería",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "sembradura": {
+    "tipo": "palabra",
+    "lema": "sembradura",
+    "formas": [
+      "sembradura"
+    ],
+    "adulto": "Terreno sembrado, o la cantidad de semilla con que se siembra.",
+    "nino": "El campo sembrado.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Wikcionario en español (es.wiktionary.org)",
+        "entrada": "sembradura",
+        "url": "https://es.wiktionary.org/wiki/sembradura",
+        "idioma": "es"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  },
+  "bdelio": {
+    "tipo": "palabra",
+    "lema": "bdelio",
+    "formas": [
+      "bdelio"
+    ],
+    "adulto": "Probablemente una goma aromática de un árbol. Algunos piensan que podría ser una perla o una piedra preciosa; su identificación es incierta.",
+    "nino": "Una resina de buen olor.",
+    "certeza": "externa",
+    "fuentes": [
+      {
+        "tipo": "diccionario",
+        "obra": "Easton's Bible Dictionary (1897)",
+        "autor": "M. G. Easton",
+        "entrada": "Bdellium",
+        "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/bdellium.html",
+        "idioma": "en"
+      }
+    ],
+    "excluir": [],
+    "solo": null
+  }
+}

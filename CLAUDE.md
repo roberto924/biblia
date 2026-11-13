@@ -29,6 +29,13 @@ Todo dato dice de dónde sale y su certeza. Se distingue siempre:
 - Un personaje queda listo al terminar el capítulo de su última aparición en la primera historia donde es principal; las menciones posteriores suman a la ficha, no retrasan.
 - Futuro, por partes: prueba de selección con tiempo, dos oportunidades, espera de días; puntos = mejor puntaje por personaje; ranking (primero local, luego servidor con antitrampas); láminas con imagen basada en registros de época («Ilustración moderna»); objetos que potencian; escenarios jugables pocas veces al día; misiones por historia.
 
+## Explicaciones y manuscritos (decisiones del usuario, 2026-11-13; diseño en `docs/superpowers/specs/2026-11-13-explicaciones-design.md`)
+- **Explicaciones al tocar**: palabras antiguas de la RV1909, medidas y monedas (equivalencia como Cálculo con pasos y supuestos), costumbres y conceptos, y **pasajes difíciles** (qué dice el texto + posturas con su fuente, sin decidir por el lector). Punteado suave con interruptor por perfil; versión propia para niño; nada que adelante pasajes no leídos. Fuentes: la Biblia, diccionarios de dominio público (Easton, Smith, Jewish/Catholic Encyclopedia), Wikcionario; redactado con palabras propias. Cada tanda pasa una **auditoría** (todos los pasajes y medidas, ≥20 % del resto) antes de publicarse.
+- **El manuscrito de cada pasaje**: folio del Códice de Leningrado (Wikimedia Commons, dominio público) mostrado como «Registro histórico»; rollos (Leon Levy, IAA) y Códice Vaticano (BAV) **solo como enlace**: sus términos no permiten mostrar las imágenes.
+- **Por cada libro que se ingresa**, además del catálogo de juego:
+  - Explicaciones: términos nuevos en `herramientas/explicaciones/terminos-*.json` (los existentes se aplican solos por sus `formas`; revisar las ambigüedades del libro) y `pasajes-<Libro>.json`, auditoría, y `python -I herramientas/explicaciones.py` → `datos/explicaciones.js`.
+  - Manuscritos: añadir el libro a `herramientas/manuscritos.py` (folios de Leningrado, rollos, página del Vaticano) → `datos/manuscritos.js`; todo pasaje debe tener folio.
+
 ## Archivos
 - Datos: `herramientas/*.py` → `datos/biblia.js` (`window.BIBLIA_DATOS`) y `datos/mapa-base.js`. Regenerar: `python -I herramientas/construir_datos.py --sin-red`. Detalle en `datos/LEEME.md`.
 - Interfaz: `index.html`, `app.js` (núcleo puro `globalThis.BibliaNucleo`), `estilos.css`, `sw.js`. Pruebas: `node pruebas/probar.mjs`.
