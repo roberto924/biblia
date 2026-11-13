@@ -64,7 +64,57 @@ NOTAS = ["Cainán, hijo de Arfaxad (Gn 11:12-13), solo existe en la Septuaginta:
          "1 Samuel da duraciones sueltas (Elí: 98 años y cuarenta de juez; el arca, siete meses entre los filisteos y "
          "veinte años en Quiriat-jearim; David, cuatro meses y algunos días en tierra filistea), pero ningún enlace con "
          "los libros anteriores: no se fecha desde Adán (sus hechos van sin fecha, con las cifras citadas). 1 S 13:1 no "
-         "se usa para la edad de Saúl ni para la duración de su reinado, ni tampoco Hch 13:21 (libro posterior)."]
+         "se usa para la edad de Saúl ni para la duración de su reinado, ni tampoco Hch 13:21 (libro posterior).",
+         "2 Samuel da duraciones con cita (David siete años y seis meses en Hebrón y treinta y tres en Jerusalén, "
+         "cuarenta en total; Is-boset, dos años; Absalón, tres años en Gesur…), pero ninguna une el reinado de David con "
+         "los libros anteriores ni con un año desde Adán: sus hechos van sin fecha, con las cifras citadas y, donde se "
+         "suman, el cálculo con sus pasos. No se usan libros posteriores (Reyes, Crónicas)."]
+# 2 Samuel: (título, ref, nota, [(ref, tradición, cita literal)]). Sin año: las citas se comprueban contra el texto.
+HITOS_2S = [
+    ("David, rey de Judá en Hebrón", "2S 2:1-11",
+     "Texto: «siete años y seis meses» (2 S 2:11; Brenton, LXX: «seven years and six months»), repetido en 2 S 5:5.",
+     [("2S 2:11", "TM", "siete años y seis meses"), ("2S 2:11", "LXX", "seven years and six months")]),
+    ("Is-boset, rey de Israel", "2S 2:8-10",
+     "Texto: «De cuarenta años era Is-boseth… y reinó dos años» (2 S 2:10; Brenton: «forty years old… he reigned two "
+     "years»). El texto no dice cómo encajan sus dos años en los siete y medio de David en Hebrón.",
+     [("2S 2:10", "TM", "De cuarenta años era Is-boseth"), ("2S 2:10", "TM", "reinó dos años"),
+      ("2S 2:10", "LXX", "forty years old"), ("2S 2:10", "LXX", "he reigned two years")]),
+    ("David, rey de todo Israel en Jerusalén", "2S 5:1-5",
+     "Texto: «Era David de treinta años cuando comenzó á reinar, y reinó cuarenta años» (2 S 5:4) y «En Hebrón reinó "
+     "sobre Judá siete años y seis meses: y en Jerusalem reinó treinta y tres años» (2 S 5:5); Brenton dice lo mismo. "
+     "Cálculo: 7 años y 6 meses + 33 años = 40 años y 6 meses; 2 S 5:4 dice «cuarenta años» (no se armoniza). Cálculo: "
+     "30 + 40 = 70 años al acabar su reinado (70 y 6 meses con la suma de 5:5); 2 Samuel no narra su muerte.",
+     [("2S 5:4", "TM", "Era David de treinta años cuando comenzó á reinar, y reinó cuarenta años"),
+      ("2S 5:5", "TM", "siete años y seis meses"), ("2S 5:5", "TM", "treinta y tres años"),
+      ("2S 5:4", "LXX", "thirty years old"), ("2S 5:4", "LXX", "he reigned forty years"),
+      ("2S 5:5", "LXX", "Seven years and six months"), ("2S 5:5", "LXX", "thirty-three years")]),
+    ("El arca en casa de Obed-edom", "2S 6:10-12",
+     "Texto: «tres meses» (2 S 6:11; Brenton: «three months»).",
+     [("2S 6:11", "TM", "tres meses"), ("2S 6:11", "LXX", "three months")]),
+    ("Absalón mata a Amnón y huye a Gesur", "2S 13:23-39",
+     "Texto: «pasados dos años» (2 S 13:23, tras lo de Tamar en 13:1-22; Brenton: «two whole years») y Absalón «estuvo allá tres "
+     "años» en Gesur (2 S 13:38; Brenton: «three years»).",
+     [("2S 13:23", "TM", "pasados dos años"), ("2S 13:23", "LXX", "two whole years"),
+      ("2S 13:38", "TM", "estuvo allá tres años"), ("2S 13:38", "LXX", "three years")]),
+    ("Absalón en Jerusalén sin ver al rey", "2S 14:28",
+     "Texto: «por espacio de dos años» (2 S 14:28; Brenton: «two full years»).",
+     [("2S 14:28", "TM", "por espacio de dos años"), ("2S 14:28", "LXX", "two full years")]),
+    ("La rebelión de Absalón", "2S 15:7",
+     "Texto: «al cabo de cuarenta años» (2 S 15:7; Brenton: «after forty years»). El texto no dice desde cuándo se "
+     "cuentan: no se usa para fechar.",
+     [("2S 15:7", "TM", "al cabo de cuarenta años"), ("2S 15:7", "LXX", "after forty years")]),
+    ("Hambre de tres años; los gabaonitas", "2S 21:1-14",
+     "Texto: «hambre por tres años consecutivos» «en los días de David» (2 S 21:1; Brenton: «three years, year after "
+     "year»), sin decir en qué momento del reinado.",
+     [("2S 21:1", "TM", "hubo hambre por tres años consecutivos"), ("2S 21:1", "LXX", "three years, year after year")]),
+    ("El censo y la peste", "2S 24:1-25",
+     "Texto: el censo dura «nueve meses y veinte días» (2 S 24:8; Brenton: «nine months and twenty days»). Gad ofrece "
+     "«siete años de hambre» en la RV1909 (TM, 2 S 24:13) y «three years famine» en Brenton (LXX); la peste va «desde la "
+     "mañana hasta el tiempo señalado» (2 S 24:15).",
+     [("2S 24:8", "TM", "nueve meses y veinte días"), ("2S 24:8", "LXX", "nine months and twenty days"),
+      ("2S 24:13", "TM", "siete años de hambre"), ("2S 24:13", "LXX", "three years famine"),
+      ("2S 24:15", "TM", "desde la mañana hasta el tiempo señalado")]),
+]
 # 1 Samuel: (título, ref, nota, [(ref, tradición, cita literal)]). Sin año: las citas se comprueban contra el texto.
 HITOS_1S = [
     ("Nace Samuel", "1S 1:19-20", "Sin cifra de tiempo: Elcana subía a Silo «todos los años» (1 S 1:3), sin año.",
@@ -662,4 +712,14 @@ def construir(edades, nombre, textos, numeral, parse_gn, pasaje_de, errores):
                 if cita not in textos[trad].get(rc, ""):
                     errores.append(f"Hito de 1 S: «{cita}» no está en {rc} ({trad})")
             cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
+    if any(r.startswith("2S ") for r in textos["TM"]):
+        for t, r, n, citas in HITOS_2S:
+            for rc, trad, cita in citas:
+                if cita not in textos[trad].get(rc, ""):
+                    errores.append(f"Hito de 2 S: «{cita}» no está en {rc} ({trad})")
+            cron["hitos_sin_fecha"].append({"titulo": t, "ref": r, "nota": n})
+        # Cálculo de 2 S 5:4-5: 7 años y 6 meses (Hebrón) + 33 años (Jerusalén), comparado con «cuarenta años».
+        hebron, jerus, total = (numeral(x, "es") for x in ("siete", "treinta y tres", "cuarenta"))
+        if (hebron, jerus, total) != (7, 33, 40) or hebron + jerus != total:
+            errores.append(f"Cálculo de 2 S 5:4-5: {hebron} + {jerus} ≠ {total} (más seis meses)")
     return cron, vivos, usadas

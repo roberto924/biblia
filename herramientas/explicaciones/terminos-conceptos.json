@@ -2038,7 +2038,10 @@
       "ungirás",
       "ungiste",
       "ungió",
-      "ungiólo"
+      "ungiólo",
+      "ungieron",
+      "ungí",
+      "ungídolo"
     ],
     "adulto": "Ungir es derramar o frotar aceite sobre una cosa o una persona para apartarla para Dios; en Génesis, Jacob unge la piedra que levanta como señal. «Ungido» es quien ha recibido esa unción. Según Easton, el aceite también se usaba en la vida diaria.",
     "nino": "Derramar aceite sobre alguien o algo para apartarlo para Dios.",
@@ -2194,7 +2197,13 @@
         "cita": "Entonces llamó el nombre de Jehová que con ella hablaba"
       }
     ],
-    "excluir": [],
+    "excluir": [
+      "Jue 13:6",
+      "1S 29:9",
+      "2S 14:17",
+      "2S 14:20",
+      "2S 19:27"
+    ],
     "solo": null
   },
   "ojo-por-ojo": {

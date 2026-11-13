@@ -65,7 +65,7 @@ h1:focus, main:focus { outline: none; }
 .marca-icono .nudo { fill: #e0566c; stroke: none; }
 .marca-texto { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
 .marca-nombre { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; letter-spacing: -.005em; }
-.marca-libro { font-size: .78rem; color: var(--suave); }
+.marca-libro { font-size: .78rem; color: var(--suave); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; } /* el alcance crece con cada libro: dos líneas y el resto en el title */
 main { padding: .5rem 1rem calc(var(--nav-h) + 2rem + env(safe-area-inset-bottom)); max-width: 78rem; margin: 0 auto; overflow-wrap: anywhere; }
 
 .nav-principal { position: fixed; inset: auto 0 0 0; z-index: 30; display: flex; gap: .15rem; padding: .3rem .4rem calc(.3rem + env(safe-area-inset-bottom));

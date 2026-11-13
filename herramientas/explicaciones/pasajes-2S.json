@@ -1,0 +1,402 @@
+{
+ "2s-6-uza-arca": {
+  "refs": "2S 6:3-8",
+  "titulo": "Uza muere por tocar el arca",
+  "dice": [
+   {
+    "ref": "2S 6:3",
+    "cita": "Y pusieron el arca de Dios sobre un carro nuevo"
+   },
+   {
+    "ref": "2S 6:6",
+    "cita": "Uzza extendió [la mano] al arca de Dios, y túvola; porque los bueyes daban sacudidas"
+   },
+   {
+    "ref": "2S 6:7",
+    "cita": "é hiriólo allí Dios por aquella temeridad, y cayó allí muerto junto al arca de Dios"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Radak (en hebreo), sobre 6:6-7: Israel sabía por la Torá que el arca se llevaba a hombros de los hijos de Coat, de modo que su falta fue mayor que la de los filisteos, que no conocían la costumbre y la llevaron como pudieron. Dice que David se equivocó: pensó que no era pecado llevarla en carro, porque el mandato de llevarla a hombros se dio cuando el tabernáculo iba en carretas, para mostrar que el arca era más santa, y entonces no había tabernáculo; además, el arca había venido en carro desde el campo filisteo. Sobre Uza, dice que erró al sujetarla, porque solo se encomendó a los hijos de Leví, y recoge la lectura de los sabios: pensó que el arca caería y así disminuyó su santidad.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Radak sobre 2 Samuel 6:6 y 6:7 (Sefaria)",
+     "autor": "David Kimhi (Radak)",
+     "url": "https://www.sefaria.org/Radak_on_II_Samuel.6.6",
+     "idioma": "he"
+    }
+   },
+   {
+    "resumen": "Rashi lee «por aquella temeridad» como un error de razonamiento: Uza debió deducir que, si el arca había llevado a sus propios portadores al cruzar el Jordán, con más razón podía sostenerse a sí misma.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Rashi sobre 2 Samuel 6:7 (Sefaria, ed. Metsudah)",
+     "autor": "Rashi (según Sefaria)",
+     "url": "https://www.sefaria.org/Rashi_on_II_Samuel.6.7",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch sostienen que la falta de Uza fue tocar el arca con un ánimo profano, aunque con buena intención (evitar que cayera del carro). Tocarla violaba la majestad del Dios santo. Opinan que el enojo de David iba dirigido a la desgracia y a su propio plan, no a Dios.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 6",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/6.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Matthew Henry reconoce que el castigo parece muy grande. Explica que Uza era levita, pero que la ley prohibía tocar las cosas santas bajo pena de muerte (Nm 4:15), y ve en el golpe una muestra de la presunción e irreverencia de Uza y del celo de Dios por las cosas sagradas.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Matthew Henry's Complete Commentary, 2 Samuel 6",
+     "autor": "Matthew Henry",
+     "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/2-samuel/6.html",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": "Llevaban el arca de Dios en un carro. Los bueyes la sacudieron, Uza la tocó para que no cayera y murió allí. Hay distintas explicaciones: algunos dicen que el arca debía llevarse sobre los hombros de ciertos levitas, y otros que nadie podía tocar una cosa tan santa.",
+  "certeza": "externa"
+ },
+ "2s-11-betsabe-urias": {
+  "refs": "2S 11:2-27",
+  "titulo": "David, Betsabé y Urías",
+  "dice": [
+   {
+    "ref": "2S 11:4",
+    "cita": "Y envió David mensajeros, y tomóla"
+   },
+   {
+    "ref": "2S 11:15",
+    "cita": "Poned á Uría delante de la fuerza de la batalla, y desamparadle, para que sea herido y muera"
+   },
+   {
+    "ref": "2S 11:27",
+    "cita": "Mas esto que David había hecho, fué desagradable á los ojos de Jehová"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Radak (en hebreo) observa que 11:4 aclara que ella ya se había purificado, de modo que David no la tocó en estado de impureza menstrual; la falta fue haberla tomado siendo casada. Recoge un dicho de los sabios: los soldados dejaban a sus mujeres una carta de divorcio por si morían en la guerra, y por eso David habría hecho morir a Urías, para que ella quedara divorciada con efecto retroactivo. Es una lectura rabínica; el texto de 11:15 solo dice que manda dejar solo a Urías para que muera.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Radak sobre 2 Samuel 11:4 (Sefaria)",
+     "autor": "David Kimhi (Radak)",
+     "url": "https://www.sefaria.org/Radak_on_II_Samuel.11.4",
+     "idioma": "he"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch ven en este episodio la gran caída de David y un punto de giro en su vida y en su reinado: hasta entonces, dicen, solo había mostrado flaquezas menores (disimulo, evasivas). Relacionan la poligamia, tolerada en aquel tiempo, con la tendencia a los excesos sensuales.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 11",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/11.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Matthew Henry enumera los pecados con severidad: adulterio con la mujer de Urías, el intento de atribuirle el hijo, el plan para que muriera por la espada de los amonitas y luego el matrimonio con ella. Lo toma como muestra de lo que son los mejores hombres cuando Dios los deja a su suerte.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Matthew Henry's Complete Commentary, 2 Samuel 11",
+     "autor": "Matthew Henry",
+     "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/2-samuel/11.html",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": null,
+  "certeza": "externa"
+ },
+ "2s-12-nino-muere": {
+  "refs": "2S 12:13-23",
+  "titulo": "La muerte del hijo de David",
+  "dice": [
+   {
+    "ref": "2S 12:13",
+    "cita": "También Jehová ha remitido tu pecado: no morirás"
+   },
+   {
+    "ref": "2S 12:14",
+    "cita": "el hijo que te ha nacido morirá ciertamente"
+   },
+   {
+    "ref": "2S 12:22",
+    "cita": "¿Quién sabe si Dios tendrá compasión de mí, por manera que viva el niño?"
+   },
+   {
+    "ref": "2S 12:23",
+    "cita": "Yo voy á él, mas él no volverá á mí"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Radak (en hebreo) entiende «los enemigos de Jehová» como un modo respetuoso de hablar de Jehová mismo. Recuerda que el Targum de Jonatán lo toma al pie de la letra: David dio ocasión a quienes odian a Israel de hablar mal, porque se había hecho algo así en Israel.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Radak sobre 2 Samuel 12:14 (Sefaria)",
+     "autor": "David Kimhi (Radak)",
+     "url": "https://www.sefaria.org/Radak_on_II_Samuel.12.14",
+     "idioma": "he"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch ven en la muerte del niño un castigo, acompañado de una señal clara de la gracia de Dios, y lo relacionan con que David diera ocasión de blasfemar a los enemigos de Jehová. Citan a Gerlach: David rogó por el niño para apartar el golpe como señal de la ira de Dios y buscar en su vida una prueba de su favor; cuando murió, se humilló bajo la mano de Dios.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 12",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/12.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Matthew Henry lee la oración de David como razonable: Natán había dicho que el niño moriría, pero David, según Henry, podía pensar que la amenaza fuese condicional, y por eso rogó mientras vivía. Muerto el niño, no había más que pedir: ya no puede traerlo de vuelta.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Matthew Henry's Complete Commentary, 2 Samuel 12",
+     "autor": "Matthew Henry",
+     "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/2-samuel/12.html",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": "El profeta Natán le dice a David que su hijo recién nacido morirá. David ayuna y ruega a Dios mientras el niño está enfermo. Cuando muere, David se levanta y come, porque sabe que ya no puede traerlo de vuelta. Es un pasaje triste, y se entiende de distintas maneras.",
+  "certeza": "externa"
+ },
+ "2s-13-tamar-amnon": {
+  "refs": "2S 13:1-22",
+  "titulo": "Tamar pide que Amnón hable al rey",
+  "dice": [
+   {
+    "ref": "2S 13:12",
+    "cita": "No, hermano mío, no me hagas fuerza"
+   },
+   {
+    "ref": "2S 13:13",
+    "cita": "Ruégote pues ahora que hables al rey, que no me negará á ti"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Rashi explica que Tamar podía decir que el rey no se la negaría porque, según él, su madre había sido una cautiva gentil que David tomó en guerra y concibió a Tamar siendo todavía gentil; el hijo de una mujer gentil no cuenta como hijo para efectos legales. Es la lectura de Rashi.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Rashi sobre 2 Samuel 13:13 (Sefaria, ed. Metsudah)",
+     "autor": "Rashi (según Sefaria)",
+     "url": "https://www.sefaria.org/Rashi_on_II_Samuel.13.13",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch admiten que las palabras de Tamar chocan con la ley que prohíbe el matrimonio entre hermanastros (Lv 18:9, 11; 20:17), pero no ven en ellas que esas leyes no existieran ni que ella las ignorara. Piensan que lo dijo para escapar como pudiera y para no empujarlo más al pecado negándole toda esperanza de casarse.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 13",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/13.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Matthew Henry no discute el argumento de Tamar: llama abominable lo hecho por Amnón, impropio de un hijo de David, y piensa que su carácter ya era malo en otras cosas.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Matthew Henry's Complete Commentary, 2 Samuel 13",
+     "autor": "Matthew Henry",
+     "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/2-samuel/13.html",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": null,
+  "certeza": "externa"
+ },
+ "2s-21-gabaonitas": {
+  "refs": "2S 21:1-14",
+  "titulo": "El hambre y los descendientes de Saúl",
+  "dice": [
+   {
+    "ref": "2S 21:1",
+    "cita": "Es por Saúl, y por aquella casa de sangre; porque mató á los Gabaonitas"
+   },
+   {
+    "ref": "2S 21:6",
+    "cita": "Dénsenos siete varones de sus hijos, para que los ahorquemos á Jehová en Gabaa de Saúl"
+   },
+   {
+    "ref": "2S 21:9",
+    "cita": "y ellos los ahorcaron en el monte delante de Jehová"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Rashi busca en qué consistió la culpa de Saúl: no haber sido sepultado con el honor debido (los de Jabes lo enterraron en secreto) y haber matado a Nob, la ciudad de los sacerdotes. Según él, al matarla mató a siete gabaonitas que estaban allí (leñadores, aguadores y otros servidores), y recoge un dicho de los sabios: matar a los sacerdotes que les daban comida es como matarlos a ellos.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Rashi sobre 2 Samuel 21:1 (Sefaria, ed. Metsudah)",
+     "autor": "Rashi (según Sefaria)",
+     "url": "https://www.sefaria.org/Rashi_on_II_Samuel.21.1",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Radak (en hebreo) cuenta que en Nob estaban con los sacerdotes los gabaonitas, como leñadores y aguadores, y que Saúl los mató. Recoge de Saadia Gaón por qué David no buscó la causa hasta el tercer año: el primero pensó en un suceso natural, el segundo en un pecado idolátrico, y ante la tercera hambruna supo que era otra culpa. Explica que los cuerpos no se bajaron enseguida de los maderos, como pide la ley, porque el rey había mandado colgarlos y debía mandar bajarlos; se bajaron cuando llegaron las lluvias, en mérito de Rizpa, que los guardaba.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Radak sobre 2 Samuel 21:1 (Sefaria)",
+     "autor": "David Kimhi (Radak)",
+     "url": "https://www.sefaria.org/Radak_on_II_Samuel.21.1",
+     "idioma": "he"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch lo entienden como sangre por sangre (Nm 35:31): los gabaonitas piden ejecutar a siete hijos de Saúl para expiar la matanza, y que los cuerpos queden expuestos delante de Jehová como satisfacción pública. Notan una ironía en llamar a Saúl «el escogido de Jehová».",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 21",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/21.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Matthew Henry ve a los siete como sacrificios por el pecado de la nación (la violación de la palabra dada), y concilia el trato con la ley que mandaba sepultar al colgado el mismo día (Dt 21:23) diciendo que fue un caso extraordinario, no cubierto por esa ley.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Matthew Henry's Complete Commentary, 2 Samuel 21",
+     "autor": "Matthew Henry",
+     "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/2-samuel/21.html",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": null,
+  "certeza": "externa"
+ },
+ "2s-21-elhanan-goliat": {
+  "refs": "2S 21:19",
+  "titulo": "¿Quién mató a Goliat?",
+  "dice": [
+   {
+    "ref": "2S 21:19",
+    "cita": "Elhanan, hijo de Jaare-oregim de Beth-lehem, hirió á Goliath Getheo"
+   },
+   {
+    "ref": "1S 17:50",
+    "cita": "Así venció David al Filisteo con honda y piedra"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Rashi dice que este Elhanán es David: como sabemos que David mató a Goliat, el nombre sería otro de David.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Rashi sobre 2 Samuel 21:19 (Sefaria, ed. Metsudah)",
+     "autor": "Rashi (según Sefaria)",
+     "url": "https://www.sefaria.org/Rashi_on_II_Samuel.21.19",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Radak (en hebreo) ofrece dos salidas. Una: «a Goliat» se entiende como alguien emparentado con Goliat (su hermano), a quien mató Elhanán de Belén, mientras a Goliat lo mató David. Otra: la del Targum de Jonatán, donde Elhanán es David. De por qué a David se le llamaría Elhanán, dice que no conoce la razón.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Radak sobre 2 Samuel 21:19 (Sefaria)",
+     "autor": "David Kimhi (Radak)",
+     "url": "https://www.sefaria.org/Radak_on_II_Samuel.21.19",
+     "idioma": "he"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch ven un error de copista en este versículo y concluyen que el original decía «hirió al hermano de Goliat»; rechazan que hubiera dos Goliat por improbable, y mencionan que otros comentaristas (Bertheau, Böttcher) defienden lo contrario.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 21",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/21.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Wikipedia dice que, para el consenso académico, el texto más antiguo es el de este versículo, donde Elhanán mató a Goliat, y que el relato de David lo atribuye a un redactor posterior de la historia deuteronomista. No cita aquí a un autor concreto.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Wikipedia (en), «Goliath» (recoge lo que dicen sus fuentes)",
+     "autor": "varios; ver las obras que cita el artículo",
+     "url": "https://en.wikipedia.org/wiki/Goliath",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": "Aquí dice que un guerrero llamado Elhanán hirió a Goliat. Pero en el relato de David se dice que David lo venció. Hay varias explicaciones: que Elhanán sea otro nombre de David, que haya matado a un hermano de Goliat, o que un copista se equivocara.",
+  "certeza": "externa"
+ },
+ "2s-24-censo": {
+  "refs": "2S 24:1-17",
+  "titulo": "El censo de David y la peste",
+  "dice": [
+   {
+    "ref": "2S 24:1",
+    "cita": "é incitó á David contra ellos á que dijese: Ve, cuenta á Israel y á Judá"
+   },
+   {
+    "ref": "2S 24:10",
+    "cita": "Yo he pecado gravemente por haber hecho [esto]"
+   },
+   {
+    "ref": "2S 24:15",
+    "cita": "Y envió Jehová pestilencia á Israel"
+   }
+  ],
+  "posturas": [
+   {
+    "resumen": "Radak (en hebreo) dice que no se sabe por qué estaba airado Jehová; propone una culpa oculta en el pueblo. Entiende que Dios puso en el corazón de David la idea de contar al pueblo, sin una profecía que se lo ordenara (si no, no habría dicho «pequé»). Recoge que el Targum de Jonatán traduce «lo incitó» y cita lo que los sabios dicen de contar a Israel sin necesidad.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Radak sobre 2 Samuel 24:1 (Sefaria)",
+     "autor": "David Kimhi (Radak)",
+     "url": "https://www.sefaria.org/Radak_on_II_Samuel.24.1",
+     "idioma": "he"
+    }
+   },
+   {
+    "resumen": "Rashi dice solo que no sabe qué hizo Israel para que se encendiera esa ira; entiende «incitó» como «lo movió».",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Rashi sobre 2 Samuel 24:1 (Sefaria, ed. Metsudah)",
+     "autor": "Rashi (según Sefaria)",
+     "url": "https://www.sefaria.org/Rashi_on_II_Samuel.24.1",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Keil y Delitzsch entienden que quien incita a David es Jehová; ven un pecado del pueblo (las rebeliones de Absalón y de Seba) detrás de la ira, y remiten a lo dicho en el libro anterior sobre la idea de que Dios incite al pecado.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Commentary on the Old Testament (Keil y Delitzsch), 2 Samuel 24",
+     "autor": "C. F. Keil y F. Delitzsch",
+     "url": "https://biblehub.com/commentaries/kad/2_samuel/24.htm",
+     "idioma": "en"
+    }
+   },
+   {
+    "resumen": "Matthew Henry dice que es cierto que fue pecado, pero que no es seguro en qué consistió. Lista propuestas: contar a menores de veinte años, no cobrar el medio siclo del rescate (Éx 30:12), buscar un tributo, hacerlo sin orden de Dios, desconfiar de la promesa a Abraham y, sobre todo, el orgullo de David por su pueblo.",
+    "fuente": {
+     "tipo": "obra",
+     "obra": "Matthew Henry's Complete Commentary, 2 Samuel 24",
+     "autor": "Matthew Henry",
+     "url": "https://www.biblestudytools.com/commentaries/matthew-henry-complete/2-samuel/24.html",
+     "idioma": "en"
+    }
+   }
+  ],
+  "nino": "David manda contar a todos los hombres de Israel y Judá. Después reconoce que hizo mal. La Biblia dice que Jehová envió una peste. Hay varias opiniones sobre por qué estaba mal contar al pueblo y sobre cómo entender que fuera Jehová quien lo incitara.",
+  "certeza": "externa"
+ }
+}

@@ -104,6 +104,13 @@ HECHOS = {
                       ("Jonathan_2", "1S", "1S 14"), ("Hannah_1", "1S", "1S 1")],
         "sin_aparicion": [("Moses_1", "1S 12:6")],   # Samuel solo lo recuerda: mención, no aparición
     },
+    "2S": {
+        "genealogia": [("2S 3:2", "2S 3:5"), ("2S 23:24", "2S 23:39")],
+        "objeto_en": [("2S 6:3", "carro nuevo del arca")],
+        "escenario_lugar": ["hebron"],
+        # listo.capitulo dado por la regla (última aparición en la primera historia donde es principal)
+        "principal": [("Absalom_1", "2S", "2S 13"), ("Nathan_2", "2S", "2S 7")],
+    },
 }
 
 REF_RE = re.compile(r"^([1-3]?[A-Za-z]+) (\d+):(\d+)$")

@@ -1,5 +1,5 @@
 window.BIBLIA_CONTENIDO = {
- "generado": "2026-11-12T22:23:12+00:00",
+ "generado": "2026-11-13T16:44:56+00:00",
  "origen": "clasificación editorial del proyecto, no del texto bíblico",
  "criterio": "Clasificación editorial del proyecto para el perfil niño (7-12 años, leyendo con la familia): se pliega (alto) lo sexual explícito o insinuado con detalle, la violación, el incesto, la matanza descrita y el infanticidio; se anota (medio) lo breve o legal. No se marcan menciones sin detalle ni muerte natural. El texto nunca se borra.",
  "marcas": [
@@ -1024,6 +1024,209 @@ window.BIBLIA_CONTENIDO = {
    "categoria": "crueldad",
    "nivel": "alto",
    "motivo": "Los filisteos cortan la cabeza a Saúl y cuelgan su cuerpo y los de sus hijos en el muro de Bet-san; los de Jabes los descuelgan y los queman."
+  },
+  {
+   "desde": "2S 1:9",
+   "hasta": "2S 1:10",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "El amalecita cuenta que, a petición de Saúl herido, se puso sobre él y lo mató; sin detalle."
+  },
+  {
+   "desde": "2S 1:15",
+   "hasta": "2S 1:15",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David manda matar al amalecita; sin detalle."
+  },
+  {
+   "desde": "2S 2:16",
+   "hasta": "2S 2:16",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "En Gabaón los doce de cada bando se meten la espada por el costado y caen juntos."
+  },
+  {
+   "desde": "2S 2:23",
+   "hasta": "2S 2:23",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Abner hiere a Asael con el regatón de la lanza, que le sale por la espalda, y muere allí."
+  },
+  {
+   "desde": "2S 3:7",
+   "hasta": "2S 3:7",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Is-boset reprocha a Abner haber entrado a la concubina de Saúl; sin detalle."
+  },
+  {
+   "desde": "2S 3:27",
+   "hasta": "2S 3:27",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Joab hiere a Abner en la puerta de Hebrón y muere; sin más detalle."
+  },
+  {
+   "desde": "2S 4:5",
+   "hasta": "2S 4:12",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Recab y Baana matan a Is-boset en su cama y le cortan la cabeza; David los manda matar, cortarles manos y pies y colgarlos."
+  },
+  {
+   "desde": "2S 6:7",
+   "hasta": "2S 6:7",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehová hiere a Uza, que cae muerto junto al arca; sin detalle."
+  },
+  {
+   "desde": "2S 6:20",
+   "hasta": "2S 6:22",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Mical reprocha a David haberse desnudado delante de las criadas al danzar ante el arca; sin detalle."
+  },
+  {
+   "desde": "2S 8:2",
+   "hasta": "2S 8:2",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "David mide a los moabitas vencidos con cordeles: dos para muerte y uno para vida."
+  },
+  {
+   "desde": "2S 10:4",
+   "hasta": "2S 10:4",
+   "categoria": "crueldad",
+   "nivel": "medio",
+   "motivo": "Hanún humilla a los enviados de David: les rapa media barba y les corta los vestidos hasta las nalgas."
+  },
+  {
+   "desde": "2S 10:18",
+   "hasta": "2S 10:18",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David hiere a los sirios: setecientos carros y cuarenta mil de a caballo; muere Sobac."
+  },
+  {
+   "desde": "2S 11:2",
+   "hasta": "2S 11:5",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "David ve a una mujer bañándose, la hace traer, se acuesta con ella y ella concibe; es mujer de otro."
+  },
+  {
+   "desde": "2S 11:14",
+   "hasta": "2S 11:17",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "David ordena poner a Urías donde la batalla es más recia para que muera; muere."
+  },
+  {
+   "desde": "2S 12:11",
+   "hasta": "2S 12:12",
+   "categoria": "sexual",
+   "nivel": "medio",
+   "motivo": "Natán anuncia que otro yacerá con las mujeres de David a la vista de todos; sin detalle."
+  },
+  {
+   "desde": "2S 12:31",
+   "hasta": "2S 12:31",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "David pone al pueblo de Rabá bajo sierras, trillos y hachas de hierro y lo hace pasar por hornos de ladrillos."
+  },
+  {
+   "desde": "2S 13:1",
+   "hasta": "2S 13:22",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Amnón se finge enfermo, fuerza a su hermana Tamar y luego la echa (violación)."
+  },
+  {
+   "desde": "2S 13:28",
+   "hasta": "2S 13:29",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Por orden de Absalón, sus criados matan a Amnón en el banquete; sin detalle."
+  },
+  {
+   "desde": "2S 16:21",
+   "hasta": "2S 16:22",
+   "categoria": "sexual",
+   "nivel": "alto",
+   "motivo": "Por consejo de Ahitofel, Absalón entra a las concubinas de su padre en una tienda sobre el terrado, a la vista de todo Israel."
+  },
+  {
+   "desde": "2S 17:23",
+   "hasta": "2S 17:23",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Ahitofel se ahorca; sin detalle."
+  },
+  {
+   "desde": "2S 18:7",
+   "hasta": "2S 18:8",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Derrota de Israel en el bosque de Efraín: mueren veinte mil; sin detalle."
+  },
+  {
+   "desde": "2S 18:9",
+   "hasta": "2S 18:17",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Absalón queda colgado de un alcornoque; Joab le clava tres dardos en el corazón, sus escuderos lo rematan y lo echan en un hoyo."
+  },
+  {
+   "desde": "2S 20:8",
+   "hasta": "2S 20:12",
+   "categoria": "violencia",
+   "nivel": "alto",
+   "motivo": "Joab hiere a Amasa con una daga y derrama sus entrañas por tierra; queda revolcado en su sangre en el camino."
+  },
+  {
+   "desde": "2S 20:22",
+   "hasta": "2S 20:22",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Los de Abel cortan la cabeza a Seba y se la echan a Joab."
+  },
+  {
+   "desde": "2S 21:6",
+   "hasta": "2S 21:10",
+   "categoria": "crueldad",
+   "nivel": "alto",
+   "motivo": "Los gabaonitas ahorcan a siete descendientes de Saúl; Rizpa guarda sus cuerpos de las aves y las fieras durante la siega."
+  },
+  {
+   "desde": "2S 21:17",
+   "hasta": "2S 21:21",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Abisai, Sibecai, Elhanán y Jonatán matan a guerreros filisteos; sin detalle."
+  },
+  {
+   "desde": "2S 23:8",
+   "hasta": "2S 23:12",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Hazañas de los valientes de David: matan a cientos de filisteos; sin detalle."
+  },
+  {
+   "desde": "2S 23:18",
+   "hasta": "2S 23:21",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Abisai mata a trescientos; Benaía hiere a «dos leones de Moab», a un león en un foso y a un egipcio con su propia lanza."
+  },
+  {
+   "desde": "2S 24:15",
+   "hasta": "2S 24:15",
+   "categoria": "violencia",
+   "nivel": "medio",
+   "motivo": "Jehová envía pestilencia y mueren setenta mil hombres; sin detalle."
   }
  ]
 };

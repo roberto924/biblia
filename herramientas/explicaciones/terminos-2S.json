@@ -1,0 +1,737 @@
+{
+ "desjarretar": {
+  "tipo": "palabra",
+  "lema": "desjarretar",
+  "formas": [
+   "desjarretó",
+   "desjarretarás"
+  ],
+  "adulto": "Cortar los tendones de las patas traseras de un caballo para dejarlo inútil. Según Easton, se hacía con caballos capturados.",
+  "nino": "Dejar a los caballos sin poder correr, para que ya no sirvieran en la guerra.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Hough",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/hough.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "endecha": {
+  "tipo": "palabra",
+  "lema": "endecha",
+  "formas": [
+   "endecha",
+   "endechó",
+   "endechando",
+   "endechar",
+   "endecharon"
+  ],
+  "adulto": "Canción triste de duelo. «Endechar» es cantar o hacer una endecha por un muerto.",
+  "nino": "Una canción triste que se canta por alguien que murió.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "endecha",
+    "url": "https://es.wiktionary.org/wiki/endecha",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "ajorca": {
+  "tipo": "palabra",
+  "lema": "ajorca",
+  "formas": [
+   "ajorca"
+  ],
+  "adulto": "Argolla de metal que se lleva como adorno en la muñeca, el brazo o el tobillo. Easton incluye este versículo entre las «ajorcas» (en inglés «anklets», con Nm 31:50) de su entrada «Bracelet», y dice que los brazaletes los llevaban tanto hombres como mujeres.",
+  "nino": "Una pulsera de metal que se ponía en el brazo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "ajorca",
+    "url": "https://es.wiktionary.org/wiki/ajorca",
+    "idioma": "es"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Bracelet",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/bracelet.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "regaton": {
+  "tipo": "palabra",
+  "lema": "regatón",
+  "formas": [
+   "regatón"
+  ],
+  "adulto": "Pieza de metal que protege el extremo inferior de una lanza o bastón; es la punta del lado opuesto al filo.",
+  "nino": "El extremo de abajo de una lanza, hecho de metal.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "regatón",
+    "url": "https://es.wiktionary.org/wiki/regatón",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "feretro": {
+  "tipo": "palabra",
+  "lema": "féretro",
+  "formas": [
+   "féretro"
+  ],
+  "adulto": "Caja o armazón (andas) en que se lleva a un difunto a enterrar. Easton lo describe como el armazón sobre el que se llevaba el cadáver a la sepultura.",
+  "nino": "La camilla o caja donde llevaban a un muerto para enterrarlo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "féretro",
+    "url": "https://es.wiktionary.org/wiki/féretro",
+    "idioma": "es"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Bier",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/bier.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "villano": {
+  "tipo": "palabra",
+  "lema": "villano",
+  "formas": [
+   "villano"
+  ],
+  "adulto": "«Villano» es quien vive en una villa o aldea, por oposición al noble; de ahí pasó a significar ruin o indigno. En este versículo se pregunta si Abner murió «como muere un villano», es decir, como alguien ruin o de poco valor (inferido por el contexto).",
+  "nino": "Alguien al que se trata como de poco valor.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "villano",
+    "url": "https://es.wiktionary.org/wiki/villano",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "2S 3:33",
+    "cita": "¿Murió Abner como muere un villano?"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "alcornoque": {
+  "tipo": "palabra",
+  "lema": "alcornoque",
+  "formas": [
+   "alcornoque"
+  ],
+  "adulto": "Árbol grande. Según Easton, el hebreo usa seis palabras que se traducen «roble», y en algún pasaje la RSV pone «terebinto» al margen; no se sabe con seguridad cuál especie era.",
+  "nino": "Un árbol grande.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Oak",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/oak.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "atalaya": {
+  "tipo": "palabra",
+  "lema": "atalaya",
+  "formas": [
+   "atalaya"
+  ],
+  "adulto": "Torre o lugar alto desde el que se vigila. En la RV1909 «el atalaya» o «estar en atalaya» es también el vigía que se coloca allí para avisar de lo que ve venir.",
+  "nino": "El que vigila desde un lugar alto y avisa de lo que ve.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "atalaya",
+    "url": "https://es.wiktionary.org/wiki/atalaya",
+    "idioma": "es"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "2S 13:34",
+    "cita": "el mozo que estaba en atalaya"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "escudero": {
+  "tipo": "palabra",
+  "lema": "escudero",
+  "formas": [
+   "escudero",
+   "escuderos"
+  ],
+  "adulto": "El que lleva las armas de un jefe de guerra. Según Easton, reyes y generales lo escogían por su valentía: llevaba sus armas y se quedaba a su lado en el peligro.",
+  "nino": "El ayudante que llevaba las armas de un guerrero y lo acompañaba en la batalla.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Armour-bearer",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/armour-bearer.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "majada": {
+  "tipo": "palabra",
+  "lema": "majada",
+  "formas": [
+   "majada",
+   "majadas"
+  ],
+  "adulto": "Lugar donde se recoge de noche el ganado, junto con los pastores; el corral o aprisco del rebaño.",
+  "nino": "El corral donde duermen las ovejas.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "majada",
+    "url": "https://es.wiktionary.org/wiki/majada",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "pleito": {
+  "tipo": "palabra",
+  "lema": "pleito",
+  "formas": [
+   "pleito",
+   "pleitos"
+  ],
+  "adulto": "Disputa que se presenta ante una autoridad para que juzgue; un caso o litigio.",
+  "nino": "Una disputa que se lleva ante un juez.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Wikcionario en español (es.wiktionary.org)",
+    "entrada": "pleito",
+    "url": "https://es.wiktionary.org/wiki/pleito",
+    "idioma": "es"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "canciller": {
+  "tipo": "concepto",
+  "lema": "canciller (el que recuerda)",
+  "formas": [
+   "canciller"
+  ],
+  "adulto": "Alto oficial de la corte, en hebreo «mazkir» («el que hace recordar»). Según Easton, era el canciller o visir del reino: ponía los asuntos importantes ante el rey (quejas, peticiones), redactaba documentos y cuidaba los archivos. El texto nombra a Josafat en este cargo en la corte de David.",
+  "nino": "Un alto ayudante del rey que le recordaba los asuntos y cuidaba los documentos del reino.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Recorder",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/recorder.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "ayuno": {
+  "tipo": "concepto",
+  "lema": "ayuno",
+  "formas": [
+   "ayunó",
+   "ayunaron",
+   "ayunaba",
+   "ayunabas",
+   "ayunar"
+  ],
+  "adulto": "Pasar un tiempo sin comer como gesto religioso. Easton recoge ayunos públicos por el pecado o para pedir el favor de Dios, ayunos locales y ayunos privados ocasionales. En Jue 20:26 el texto lo une al llanto y a los sacrificios delante de Jehová.",
+  "nino": "Pasar un tiempo sin comer, por tristeza o para pedirle algo a Dios.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Fast",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/fast.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Jue 20:26",
+    "cita": "y ayunaron aquel día hasta la tarde"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "casa-cedro": {
+  "tipo": "concepto",
+  "lema": "madera y casa de cedro",
+  "formas": [
+   "edificios de cedro",
+   "casa de cedros",
+   "madera de cedro"
+  ],
+  "adulto": "El cedro del Líbano era una madera muy apreciada. Easton la describe como majestuosa, olorosa y duradera, y por eso muy usada para tablas, columnas y techos.",
+  "nino": "Una madera muy buena y duradera que venía del Líbano.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Cedar",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cedar.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "2S 5:11",
+    "cita": "madera de cedro"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "2S 5:11",
+   "2S 7:2",
+   "2S 7:7"
+  ]
+ },
+ "ceretheos": {
+  "tipo": "concepto",
+  "lema": "ceretheos y peletheos",
+  "formas": [
+   "Ceretheos y Peletheos"
+  ],
+  "adulto": "Cuerpo de soldados al servicio de David; Easton dice que se nombran solo en su tiempo. El significado es incierto: Smith traduce «ceretheos» como «verdugos» o ejecutores, y Easton traduce «peletheos» como «corredores» o mensajeros. Ambos dicen que podrían ser también extranjeros, quizá filisteos.",
+  "nino": "Un grupo de soldados que cuidaba al rey David.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Smith's Bible Dictionary",
+    "autor": "William Smith",
+    "entrada": "Cherethites",
+    "url": "https://www.biblestudytools.com/dictionaries/smiths-bible-dictionary/cherethites.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Pelethites",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/pelethites.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "mesa-rey": {
+  "tipo": "concepto",
+  "lema": "comer a la mesa del rey",
+  "formas": [
+   "á mi mesa",
+   "á la mesa del rey",
+   "de tu mesa"
+  ],
+  "adulto": "Comer a la mesa del rey es un honor: el rey sostiene al invitado y lo trata como de la casa. En 2S 9:11 el propio texto lo dice: Mefi-boset comerá «como uno de los hijos del rey». Que sea señal de honor y sustento es una lectura del contexto.",
+  "nino": "Sentarse a comer con el rey como si fuera de la familia.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "2S 9:11",
+    "cita": "comerá á mi mesa, como uno de los hijos del rey"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "2S 9:7-13",
+   "2S 19:28"
+  ]
+ },
+ "instrumentos": {
+  "tipo": "concepto",
+  "lema": "arpa, salterio y címbalos",
+  "formas": [
+   "arpas",
+   "arpa",
+   "salterios",
+   "salterio",
+   "címbalos"
+  ],
+  "adulto": "Instrumentos de música. La arpa (hebreo «kinnor») es el instrumento nacional de los hebreos, para cantos de alegría y de alabanza. El salterio sería una especie de lira o de arpa de varias cuerdas. Los címbalos son dos platos de bronce que se entrechocan para hacer un sonido fuerte. Su forma exacta no se conoce con seguridad.",
+  "nino": "Instrumentos de música: de cuerdas (arpa, salterio) y de platos de metal (címbalos).",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Harp",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/harp.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Psaltery",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/psaltery.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Cymbals",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/cymbals.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "tierra-cabeza": {
+  "tipo": "concepto",
+  "lema": "tierra o ceniza sobre la cabeza",
+  "formas": [
+   "tierra sobre su cabeza",
+   "tomó ceniza"
+  ],
+  "adulto": "Echarse tierra o ceniza en la cabeza es un gesto de dolor y humillación. Easton lo dice de la ceniza («señal de aborrecimiento de sí mismo y de humillación»); que la tierra se lea igual es una inferencia por el contexto, porque el gesto va con los vestidos rotos.",
+  "nino": "Un gesto de mucha tristeza o vergüenza.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Ashes",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/ashes.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "descalzo-luto": {
+  "tipo": "concepto",
+  "lema": "ir descalzo y con la cabeza cubierta",
+  "formas": [
+   "la cabeza cubierta, y los pies descalzos"
+  ],
+  "adulto": "Andar descalzo era, según Easton, señal de gran angustia o de una calamidad que había caído sobre alguien. Llevar la cabeza cubierta no lo explica Easton; el texto lo une al llanto, y se lee como otro gesto de dolor (inferido).",
+  "nino": "Gestos de mucha tristeza: ir sin zapatos y con la cabeza tapada.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Barefoot",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/barefoot.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "2S 15:30",
+    "cita": "subió[la] llorando, llevando la cabeza cubierta, y los pies descalzos"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "seol": {
+  "tipo": "concepto",
+  "lema": "«infierno» (el seol)",
+  "formas": [
+   "infierno"
+  ],
+  "adulto": "En el Antiguo Testamento la RV1909 traduce a veces con «infierno» la palabra hebrea «seol». Según Easton, «seol» es el mundo invisible de los espíritus de los muertos, de los buenos y de los malos, y la misma palabra se traduce también «sepulcro». Easton no lo limita a un lugar de castigo.",
+  "nino": "La palabra antigua para el lugar adonde van los muertos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Hell",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/hell.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Sheol",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/sheol.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "cuerno-salud": {
+  "tipo": "concepto",
+  "lema": "«cuerno de mi salud»",
+  "formas": [
+   "cuerno de mi salud"
+  ],
+  "adulto": "En la Biblia el cuerno es una imagen de fuerza y de poder (Easton), y Easton explica «cuerno de salvación» como una salvación de fuerza, o un salvador fuerte. «Cuerno de mi salud» se lee aquí como una manera poética de llamar a Dios fuerza que salva; es una inferencia por el contexto («mi escudo… mi salvador»).",
+  "nino": "Una forma de decir que Dios es su fuerza para salvarlo.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Horn",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/horn.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "lampara-israel": {
+  "tipo": "concepto",
+  "lema": "la lámpara de Israel",
+  "formas": [
+   "lámpara de Israel"
+  ],
+  "adulto": "La lámpara se usa como imagen de la vida, el bienestar o la guía (Easton, que cita este versículo). «La lámpara de Israel» es David, de cuya vida depende la luz del pueblo; esta lectura es una inferencia del contexto, porque sus hombres no quieren que muera en batalla.",
+  "nino": "Una forma de decir que David era la luz del pueblo.",
+  "certeza": "inferido",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Lamp",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/lamp.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "2S 21:17",
+    "cita": "no apagues la lámpara de Israel"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "pacificos": {
+  "tipo": "concepto",
+  "lema": "sacrificios pacíficos",
+  "formas": [
+   "pacíficos"
+  ],
+  "adulto": "Los «pacíficos» son los sacrificios de paz (en hebreo «shelamim»). Easton distingue tres clases: de acción de gracias, en cumplimiento de un voto y voluntarios. En los textos se nombran a menudo junto con los holocaustos (p. ej. Ex 20:24).",
+  "nino": "Una ofrenda de gracias que se ofrecía a Dios junto con otras.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Peace offerings",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/peace-offerings.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Ex 20:24",
+    "cita": "tus holocaustos y tus pacíficos"
+   }
+  ],
+  "excluir": [
+   "Gn 34:21"
+  ],
+  "solo": null
+ },
+ "era": {
+  "tipo": "concepto",
+  "lema": "la era (donde se trilla)",
+  "formas": [
+   "era de Nachôn",
+   "era de Arauna",
+   "la era"
+  ],
+  "adulto": "La era es un terreno llano y duro donde se trillaba el grano: se extendían las gavillas y los bueyes las pisaban hasta separarlo. Es un lugar abierto y a la intemperie.",
+  "nino": "Un terreno plano donde separaban el grano de la paja.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Agriculture",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/agriculture.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "barba-humillacion": {
+  "tipo": "concepto",
+  "lema": "cortar la barba",
+  "formas": [
+   "la mitad de la barba"
+  ],
+  "adulto": "Easton dice que la barba se cuidaba con esmero y que descuidarla era señal de dolor; sobre este caso, la barba de los enviados de David que cortó Hanún, lo llama señal de afrenta.",
+  "nino": "Una burla muy fea: dejarlos con media barba.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Beard",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/beard.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "perro-muerto": {
+  "tipo": "concepto",
+  "lema": "«perro muerto»",
+  "formas": [
+   "perro muerto",
+   "cabeza de perros"
+  ],
+  "adulto": "En la Biblia «perro», «cabeza de perro» o «perro muerto» eran maneras de insultarse o de humillarse. Easton explica que el perro era un animal impuro, y que por eso estas expresiones se usaban como reproche o como humildad.",
+  "nino": "Una forma de decirse a sí mismo, o a otro, que vale muy poco.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Dog",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/dog.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": null
+ },
+ "prepucios": {
+  "tipo": "concepto",
+  "lema": "los prepucios como dote",
+  "formas": [
+   "prepucios"
+  ],
+  "adulto": "El prepucio es la piel del extremo del miembro del varón, que se corta en la circuncisión (Gn 17:11). En 1S 18:25 Saúl pide cien prepucios de filisteos como dote por su hija.",
+  "nino": "La piel que se cortaba en la circuncisión. Saúl pidió cien de ellas como «pago» para que David se casara con su hija.",
+  "certeza": "texto",
+  "fuentes": [
+   {
+    "tipo": "biblia",
+    "ref": "1S 18:25",
+    "cita": "cien prepucios de Filisteos"
+   },
+   {
+    "tipo": "biblia",
+    "ref": "Gn 17:11",
+    "cita": "la carne de vuestro prepucio"
+   }
+  ],
+  "excluir": [
+   "Jos 5:3"
+  ],
+  "solo": null
+ },
+ "gigante": {
+  "tipo": "concepto",
+  "lema": "«el gigante» (los refaítas)",
+  "formas": [
+   "gigante"
+  ],
+  "adulto": "En 2S 21:16-22 «los hijos del gigante» son guerreros filisteos de gran estatura. Easton registra en el margen de esos versículos el nombre «Rapha» (los refaítas, «hombres altos»), una raza de gigantes que habitaba Palestina antes de los cananeos; dice que algunos se refugiaron entre los filisteos y seguían existiendo en tiempos de David, y que no se sabe nada de su origen.",
+  "nino": "Hombres muy altos y fuertes que vivían entre los filisteos.",
+  "certeza": "externa",
+  "fuentes": [
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Rephaim",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/rephaim.html",
+    "idioma": "en"
+   },
+   {
+    "tipo": "diccionario",
+    "obra": "Easton's Bible Dictionary (1897)",
+    "autor": "M. G. Easton",
+    "entrada": "Giants",
+    "url": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/giants.html",
+    "idioma": "en"
+   }
+  ],
+  "excluir": [],
+  "solo": [
+   "2S 21:16-22"
+  ]
+ }
+}

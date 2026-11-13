@@ -13,7 +13,7 @@ const Nucleo = (() => {
   const CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal', 'Pr', 'Ec', 'Cnt',
     'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal',
     'Mt', 'Mr', 'Lc', 'Jn', 'Hch', 'Ro', '1Co', '2Co', 'Ga', 'Ef', 'Fil', 'Col', '1Ts', '2Ts', '1Ti', '2Ti', 'Tit', 'Flm', 'He', 'Stg', '1P', '2P', '1Jn', '2Jn', '3Jn', 'Jud', 'Ap'];
-  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel' };
+  const NOMBRES_LIBRO = { Gn: 'Génesis', Ex: 'Éxodo', Lv: 'Levítico', Nm: 'Números', Dt: 'Deuteronomio', Jos: 'Josué', Jue: 'Jueces', Rt: 'Rut', '1S': '1 Samuel', '2S': '2 Samuel' };
   const ordLibro = new Map(), idPorOrd = new Map(), idCanon = new Map();
   CANON.forEach((id, i) => { ordLibro.set(norm(id), i + 1); idPorOrd.set(i + 1, id); idCanon.set(norm(id), id); });
   Object.entries(NOMBRES_LIBRO).forEach(([id, n]) => { idCanon.set(norm(n), id); idCanon.set(norm(n).replace(/\s+/g, ''), id); }); // «1 Samuel» y «1Samuel»
@@ -606,21 +606,23 @@ const Nucleo = (() => {
 
   const unir = xs => xs.length < 2 ? (xs[0] || '') : xs.slice(0, -1).join(', ') + ' y ' + xs[xs.length - 1];
   const unicos = xs => xs.filter((x, i) => xs.indexOf(x) === i);
-  // "hijo de Adán y Eva; esposo de …", calculado de las relaciones.
-  function contextoPersona(d, id) {
+  // "hijo de Adán y Eva; esposo de …", calculado de las relaciones. `refOk(ref)` (opcional) deja solo las
+  // relaciones cuya cita ya es accesible (lectura en orden): sin él, «esposo de Betsabé» saldría antes de 2 S 11.
+  function contextoPersona(d, id, refOk) {
     const I = indice(d), p = I.personas.get(id);
     if (!p) return '';
     const nom = x => (I.personas.get(x) || {}).nombre || x;
+    const ok = r => !refOk || refOk(r.ref);
     const partes = [];
-    const pad = unicos((I.padres.get(id) || []).map(r => r.de));
+    const pad = unicos((I.padres.get(id) || []).filter(ok).map(r => r.de));
     if (pad.length) partes.push(`${p.sexo === 'f' ? 'hija' : p.sexo === 'm' ? 'hijo' : p.sin_nombre ? 'descendencia' : 'hijo o hija'} de ${unir(pad.map(nom))}`);
-    const cs = unicos((I.conyuges.get(id) || []).map(r => r.otro));
+    const cs = unicos((I.conyuges.get(id) || []).filter(ok).map(r => r.otro));
     if (cs.length) partes.push(`${p.sexo === 'f' ? 'esposa' : p.sexo === 'm' ? 'esposo' : 'cónyuge'} de ${unir(cs.map(nom))}`);
     return partes.join('; ');
   }
 
   // Contenido del acompañante para uno o varios versículos.
-  function acompanante(d, refs) {
+  function acompanante(d, refs, refOk) {
     d = d || {};
     const I = indice(d), ks = new Set([].concat(refs || []).map(clave).filter(k => k !== null));
     const orden = [...ks].sort((a, b) => a - b);
@@ -641,7 +643,7 @@ const Nucleo = (() => {
       difiere: !!(g.TM && g.LXX && g.TM.valor !== g.LXX.valor), solo: g.TM && !g.LXX ? 'TM' : !g.TM && g.LXX ? 'LXX' : null }));
     const lugs = [];
     orden.forEach(k => (I.lugaresPorRef.get(k) || []).forEach(id => { if (!lugs.includes(id) && I.lugares.has(id)) lugs.push(id); }));
-    return { personas: ids.map(id => ({ id, contexto: contextoPersona(d, id) })), vinculos, edades: edadesV,
+    return { personas: ids.map(id => ({ id, contexto: contextoPersona(d, id, refOk) })), vinculos, edades: edadesV,
       eventos: edadesEnEvento(d, orden.map(refDeClave)),
       sinNombre: ids.filter(id => (I.personas.get(id) || {}).sin_nombre), lugares: lugs };
   }
@@ -2192,7 +2194,7 @@ if (typeof document !== 'undefined') (function () {
     if (!p) return '';
     const lb = N.libroDe(p);
     const refs = estado.activo ? [`${lb} ${estado.activo}`] : N.versiculosDe(D, p).map(v => v.ref).filter(r => !plegadoRef(r)); // lo plegado no alimenta el acompañante
-    const A = N.acompanante(D, refs);
+    const A = N.acompanante(D, refs, refOk);
     const n = A.vinculos.length + A.edades.length + A.eventos.length + A.sinNombre.length + A.lugares.length;
     const ambito = estado.activo ? `${lb} ${estado.activo}` : 'Todo el pasaje';
     const sec = (t, cuerpo, icono) => `<section class="acomp-sec"><h3>${icono}${t}</h3>${cuerpo}</section>`;
@@ -5186,7 +5188,7 @@ if (typeof document !== 'undefined') (function () {
   }
 
   function iniciar() {
-    const ml = document.querySelector('.marca-libro'); if (ml && D) ml.textContent = N.alcance(D).texto; // alcance de los datos, no fijo
+    const ml = document.querySelector('.marca-libro'); if (ml && D) { ml.textContent = N.alcance(D).texto; ml.title = ml.textContent; } // alcance de los datos, no fijo
     pintarBotonPerfil();
     render(false); registrarSW();
     if (PERF.nuevo) abrirPerfiles('bienvenida', PERF.r.lista[0].id);

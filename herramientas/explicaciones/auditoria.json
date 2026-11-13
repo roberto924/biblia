@@ -272,8 +272,8 @@
     "nota": "Muestra: cotejado con su fuente (Easton abierto en nazarite, high priest, jehovah, covenant, belial, leprosy, anathema, teraphim, unicorn, badger, priest); nino sin violencia ni sexo; certeza cuadra."
   },
   "angel-jehova": {
-    "veredicto": "OK",
-    "nota": "Muestra: contenido revisado contra los versículos de su primera aparición; nino sin violencia ni sexo; certeza cuadra. Fuente externa no reabierta."
+    "veredicto": "AJUSTAR",
+    "nota": "Muestra anterior: OK. 2S: «ángel de Dios» es un símil («como un ángel de Dios») en 2S 14:17, 14:20 y 19:27, y también en 1S 29:9 y Jue 13:6 («aspecto de un ángel de Dios»); se excluyen los cinco. 2S 24:16 sí es el ángel de Jehová."
   },
   "goel": {
     "veredicto": "OK",
@@ -453,7 +453,7 @@
   },
   "aderezar": {
     "veredicto": "OK",
-    "nota": "Fuente y contexto coinciden."
+    "nota": "Fuente y contexto coinciden. 2S: se añaden «aderece» (2S 13:5), «aderecéis» (Ex 12:16), «aderezóla» (2S 12:4) y «aderezólas» (2S 13:8); todas son preparar comida."
   },
   "aparejar": {
     "veredicto": "AJUSTAR",
@@ -881,7 +881,7 @@
   },
   "ungir": {
     "veredicto": "AJUSTAR",
-    "nota": "Primera aparición Gn 31:13; se acota a la piedra de Jacob y a lo que dice Easton. Se excluyen Dt 28:40 y Rut 3:3 (untarse aceite como cuidado personal, no consagración)."
+    "nota": "Primera aparición Gn 31:13; se acota a la piedra de Jacob y a lo que dice Easton. Se excluyen Dt 28:40 y Rut 3:3 (untarse aceite como cuidado personal, no consagración). 2S: se añaden «ungieron» (2S 2:4, 5:3), «ungí» (2S 12:7) y «ungídolo» (Nm 7:1). «ungióse» (2S 12:20, aceite como aseo tras el duelo) no se añade."
   },
   "todopoderoso": {
     "veredicto": "OK",
@@ -930,5 +930,145 @@
   "duelo": {
     "veredicto": "OK",
     "nota": "Easton: tela áspera de pelo de cabra; señal de duelo y de arrepentimiento. Solo 3 apariciones, todas de duelo."
+  },
+  "desjarretar": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Hough) abierto: «captured horses… render them useless»; se quitó «en guerra» (no lo dice) y del nino el detalle de los tendones. Primera aparición Jos 11:6, sin adelantos."
+  },
+  "endecha": {
+    "veredicto": "OK",
+    "nota": "Wikcionario (endecha: canción triste y lamentable; composición de asunto luctuoso) abierto. «Endechar» por un muerto es lectura del contexto (Gn 50:10, 2S 1:17). Formas cubren las 4 apariciones."
+  },
+  "ajorca": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario OK. Easton (Bracelet) lista 2S 1:10 entre «anklets» y dice que los brazaletes los usaban hombres y mujeres; no dice que la palabra de este versículo se traduzca «brazalete o pulsera». Reescrito."
+  },
+  "regaton": {
+    "veredicto": "OK",
+    "nota": "Wikcionario (regatón: protección de metal que cubre la parte inferior de lanzas y bastones) abierto. nino sin violencia."
+  },
+  "feretro": {
+    "veredicto": "OK",
+    "nota": "Wikcionario (féretro: caja o andas en que se lleva a enterrar a los difuntos) y Easton (Bier: armazón en que se llevaba a los muertos) abiertos."
+  },
+  "villano": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario abierto (vecino de villa, vs. noble; ruin, indigno). Se quitó «castellano antiguo» y «sin derechos» (no están en la fuente); queda «ruin o de poco valor» como inferido."
+  },
+  "alcornoque": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Oak) abierto: seis palabras hebreas traducidas «roble»; 2S 18:9 con margen RSV «terebinth». La primera aparición es Jos 24:26: se quitó la cita de 2S 18:9 (adelanto) y «frondoso» (no está en la fuente). Las apariciones como lugar («valle del Alcornoque», 1S 17) las resuelve la app."
+  },
+  "atalaya": {
+    "veredicto": "AJUSTAR",
+    "nota": "Wikcionario abierto (torre de vigilancia; posición elevada de la que se vigila). Primera aparición 2S 13:34: la cita bíblica pasó de 2S 18:25 (posterior) a 13:34."
+  },
+  "escudero": {
+    "veredicto": "OK",
+    "nota": "Easton (Armour-bearer) abierto: oficial escogido por su valentía, lleva armas y armadura y se queda al lado en el peligro. Primera aparición Jue 9:54."
+  },
+  "majada": {
+    "veredicto": "OK",
+    "nota": "Wikcionario (majada: lugar donde se recogen por la noche el ganado y los pastores) abierto. Cubre Nm 32 a 2S 7:8."
+  },
+  "pleito": {
+    "veredicto": "OK",
+    "nota": "Wikcionario (pleito: enfrentamiento ante autoridades entre partes en disputa) abierto."
+  },
+  "canciller": {
+    "veredicto": "OK",
+    "nota": "Easton (Recorder) abierto: mazkir, «mentioner/rememberancer», canciller o visir; presenta quejas y peticiones, redacta papeles, cuida los archivos. Solo 2S 8:16 y 20:24."
+  },
+  "ayuno": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Fast) abierto: ayunos públicos, locales y privados por pecado o para pedir el favor de Dios. Se quitó «duelo, arrepentimiento y súplica» (de 1S 7:6, 1S 31:13, 2S 12, posteriores a la primera aparición Jue 20:26); se ancla en Jue 20:26 con cita."
+  },
+  "casa-cedro": {
+    "veredicto": "OK",
+    "nota": "Easton (Cedar) abierto: apreciado por altura, olor y durabilidad; tablas, columnas y techos. `solo` correcto: sin apariciones anteriores de esas formas."
+  },
+  "ceretheos": {
+    "veredicto": "OK",
+    "nota": "Smith (Cherethites: «executioners», posibles mercenarios filisteos) y Easton (Pelethites: «runners/couriers»; solo en tiempo de David; quizá tribus filisteas) abiertos. Duda: 1S 30:14 «Cerethi» (el pueblo del sur) no se explica; es lugar, no el cuerpo de David."
+  },
+  "mesa-rey": {
+    "veredicto": "AJUSTAR",
+    "nota": "Texto 2S 9:7-13 y 19:28 revisado. «Aquí el propio texto» pasó a «En 2S 9:11» (en 19:28 no era «aquí»). `solo` deja fuera 1S 20:29 («la mesa del rey» de Saúl, otra cosa): correcto."
+  },
+  "instrumentos": {
+    "veredicto": "OK",
+    "nota": "Easton abierto en Harp (kinnor, instrumento nacional; alegría y alabanza), Psaltery (lira o arpa de doce cuerdas) y Cymbals (dos piezas convexas de bronce; cita 2S 6:5). Primera aparición Gn 4:21 (arpa), sin adelantos en el texto."
+  },
+  "tierra-cabeza": {
+    "veredicto": "OK",
+    "nota": "Easton (Ashes) abierto: cubrirse la cabeza de ceniza, señal de aborrecimiento de sí mismo y humillación (cita 2S 13:19). Lo de la tierra va marcado como inferencia. Primera aparición 1S 4:12."
+  },
+  "descalzo-luto": {
+    "veredicto": "OK",
+    "nota": "Easton (Barefoot) abierto: gran angustia o calamidad (cita 2S 15:30). La cabeza cubierta se declara no cubierta por Easton (inferido)."
+  },
+  "seol": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Hell, Sheol) abiertos: sheol «invisible world of departed souls», 31 veces «grave» y 31 «hell»; morada de malos y buenos. Se cambió «no significa el lugar de castigo» (no lo dice Easton) por lo que Easton sí dice."
+  },
+  "cuerno-salud": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Horn) abierto: cuerno = fuerza, poder; «horn of salvation» = salvación de fuerza. Easton lo dice de Cristo (Lc 1:69, NT): se omite la referencia (adelanto) y la aplicación a Dios en 2S 22:3 va como inferencia."
+  },
+  "lampara-israel": {
+    "veredicto": "OK",
+    "nota": "Easton (Lamp) abierto: lámpara como imagen de vida, bienestar o guía, y cita 2S 21:17. La identificación con David va como inferido."
+  },
+  "pacificos": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Peace offerings) abierto: tres clases (acción de gracias, voto, voluntarios). `solo` dejaba sin explicar 14 apariciones anteriores (Ex 20:24 en adelante): ahora se aplica a todas menos Gn 34:21 («pacíficos con nosotros», adjetivo). Se quitó «se ofrecían junto con los holocaustos» como dato de Easton: queda como observación con cita Ex 20:24."
+  },
+  "era": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Agriculture) abierto: las gavillas se extendían en la era y los bueyes las pisaban. `solo` dejaba sin explicar Rut 3, Jue 6:37, Nm 15/18 y Gn 50:10-11; la explicación es general y no adelanta nada: se quitó `solo`."
+  },
+  "barba-humillacion": {
+    "veredicto": "OK",
+    "nota": "Easton (Beard) abierto: descuidarla indicaba dolor; cortársela a los enviados de David (2S 10:4), señal de afrenta. nino sin violencia."
+  },
+  "perro-muerto": {
+    "veredicto": "AJUSTAR",
+    "nota": "Easton (Dog) abierto: perro animal impuro; «perro», «cabeza de perro», «perro muerto» como reproche o humildad (cita 1S 24:14 inglés = 24:15, 2S 3:8, 9:8, 16:9). `solo` dejaba fuera 1S 24:15, primera aparición y mismo sentido: se quitó."
+  },
+  "prepucios": {
+    "veredicto": "AJUSTAR",
+    "nota": "Texto 1S 18:25, 18:27, 2S 3:14 y Gn 17:11 revisado. La primera aparición (sin Jos 5:3, nombre de lugar) es 1S 18:25: la explicación contaba 2S 3:14 (posterior) y `solo` la dejaba fuera. Se reescribe con 1S 18:25 y se excluye Jos 5:3. 1S 18:25-27 está plegado para niño. Duda leve: nino habla de «la piel que se cortaba en la circuncisión»."
+  },
+  "gigante": {
+    "veredicto": "OK",
+    "nota": "Easton (Rephaim, Giants) abiertos: «Rapha» en el margen de 2S 21:16, 18; raza de «hombres altos» refugiada entre los filisteos en tiempo de David; origen desconocido. `solo` deja sin esta explicación Dt 9:2 y 1S 17:51 («su gigante»), que no son de ese caso: aceptado."
+  },
+  "2s-6-uza-arca": {
+    "veredicto": "AJUSTAR",
+    "nota": "Radak (hebreo, Sefaria) cotejado: el resumen mezclaba 6:6 y 6:7 y decía «Coat» para lo de Uza (Radak dice Leví) y «como los filisteos» como razón de David (Radak da otra: no había tabernáculo y el arca vino en carro). Reescrito. Rashi 6:7, Keil y Delitzsch, Matthew Henry abiertos; de MH se quitó «falta parece pequeña» (dice que el castigo parece muy grande). nino coherente (6:7 es medio, no se pliega). Sin adelantos."
+  },
+  "2s-11-betsabe-urias": {
+    "veredicto": "OK",
+    "nota": "Radak 11:4 (hebreo), Keil y Delitzsch y Matthew Henry abiertos: coinciden con el resumen. nino null correcto (11:2-5 alto). Sin adelantos."
+  },
+  "2s-12-nino-muere": {
+    "veredicto": "OK",
+    "nota": "Radak 12:14 (hebreo; Targum de Jonatán), Keil y Delitzsch (con Gerlach) y Matthew Henry abiertos: coinciden. nino sin sexo ni violencia; 12:13-23 sin marca. Sin adelantos (no cita a Salomón)."
+  },
+  "2s-13-tamar-amnon": {
+    "veredicto": "OK",
+    "nota": "Rashi 13:13 (Metsudah), Keil y Delitzsch y Matthew Henry abiertos: coinciden. nino null correcto (13:1-22 alto)."
+  },
+  "2s-21-gabaonitas": {
+    "veredicto": "AJUSTAR",
+    "nota": "Radak 21:1 (hebreo; Saadia Gaón), Rashi 21:1, Matthew Henry (Dt 21:23, caso extraordinario) abiertos: coinciden. Keil y Delitzsch citan Nm 35:31 y no 35:33: corregido. nino null correcto (21:6-10 alto)."
+  },
+  "2s-21-elhanan-goliat": {
+    "veredicto": "OK",
+    "nota": "Radak 21:19 (hebreo), Rashi 21:19, Keil y Delitzsch (copista; rechazan dos Goliat; Bertheau y Böttcher lo contrario) y Wikipedia (en, «Goliath») abiertos: coinciden. Cita 1S 17:50 sin contradecir datos/LEEME (Goliath_1, sin unir ni armonizar). No cita 1 Cr ni 1 Re. Repone el tema rechazado `1s-17-quien-mato-a-goliat`, que se deja como está. nino coherente (21:17-21 medio)."
+  },
+  "2s-24-censo": {
+    "veredicto": "OK",
+    "nota": "Radak 24:1 (hebreo; Targum), Rashi 24:1, Keil y Delitzsch (remite a 1 S 26:19) y Matthew Henry abiertos: coinciden. Los comentarios citan 1 Cr (Satán): el texto no. nino coherente (24:15 medio)."
   }
 }

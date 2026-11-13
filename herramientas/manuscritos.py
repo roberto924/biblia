@@ -1,4 +1,4 @@
-"""Manuscritos: el registro real de donde sale el texto de cada pasaje (Gn, Ex, Lv, Nm, Dt, Jos, Jue, Rut, 1 S).
+"""Manuscritos: el registro real de donde sale el texto de cada pasaje (Gn, Ex, Lv, Nm, Dt, Jos, Jue, Rut, 1 S, 2 S).
 
 Genera:
   datos/manuscritos.js     window.BIBLIA_MANUSCRITOS
@@ -37,13 +37,13 @@ FIXTURE = HERR / "manuscritos" / "_prueba" / "fixture.json"
 UA = {"User-Agent": "biblia-datos/1.0 (lectura de metadatos, uso no comercial)"}
 HOY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S")
+LIBROS = ("Gn", "Ex", "Lv", "Nm", "Dt", "Jos", "Jue", "Rut", "1S", "2S")
 
 # ------------------------------------------------------------------ Leningrado (Commons)
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
-CATEGORIAS = ("001-100", "101-200", "401-491")        # Gn–1 S en 1b–168b; Rut en 421a–423a
+CATEGORIAS = ("001-100", "101-200", "401-491")        # Gn–2 S en 1b–184a; Rut en 421a–423a
 LIBRO_EN = {"Genesis": "Gn", "Exodus": "Ex", "Leviticus": "Lv", "Numbers": "Nm", "Deuteronomy": "Dt",
-            "Joshua": "Jos", "Judges": "Jue", "Ruth": "Rut", "1 Samuel": "1S"}
+            "Joshua": "Jos", "Judges": "Jue", "Ruth": "Rut", "1 Samuel": "1S", "2 Samuel": "2S"}
 LICENCIA_ABIERTA = re.compile(r"^(Public domain|PD\b|CC0|CC BY(-SA)? \d)")
 ANCHO_MINIATURA = 1280
 
@@ -68,7 +68,7 @@ MUESTRA_VERIFICADA = {   # (rollo, fragmento de Abegg): (imagen LL, qué se comp
 VAT_MANIFIESTO = "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json"
 VAT_VISOR = "https://digi.vatlib.it/view/MSS_Vat.gr.1209/"
 VAT_LIBRO = {"Genesis": "Gn", "Exodus": "Ex", "Leviticus": "Lv", "Numeri": "Nm", "Deuteronomium": "Dt",
-             "Iosue": "Jos", "Iudicum": "Jue", "Ruth": "Rut", "Samuelis I": "1S"}
+             "Iosue": "Jos", "Iudicum": "Jue", "Ruth": "Rut", "Samuelis I": "1S", "Samuelis II": "2S"}
 # Diferencias entre el rótulo del catálogo («p. 47-99 Exodus») y la primera imagen que el manifiesto
 # pone en ese tramo, revisadas a mano. Se usa la página del rótulo solo si está aquí.
 VAT_REVISADO = {
@@ -82,6 +82,11 @@ VAT_NOTA = {
     "Rut": "Rut empieza en la misma página en que acaba Jueces (p. 304, según el rótulo del catálogo; no revisado a mano).",
     "1S": ("En la Septuaginta, 1 Samuel es «1 Reinos» (Βασιλειῶν Α). Revisado a mano el 2026-11-13: la p. 309 (0313) acaba Rut "
            "(genealogía y suscripción «ΡΟΥΘ») y empieza «ΑΝΘΡΩΠΟΣ ΗΝ ΕΞ ΑΡΜΑΘΑΙΜ» (1 S 1:1) bajo el título «Βασιλειῶν α»."),
+    "2S": ("En la Septuaginta, 2 Samuel es «2 Reinos» (Βασιλειῶν Β). Revisado a mano el 2026-11-13: la p. 353 (0357) acaba 1 Reinos "
+           "con «ΚΑΙ ΕΓΕΝΕΤΟ ΜΕΤΑ ΤΟ ΑΠΟΘΑΝΕΙΝ ΣΑΟΥΛ … ΕΝ ΣΕΚΕΛΑΚ ΗΜΕΡΑΣ ΔΥΟ» (el texto de 2 S 1:1) y la suscripción «ΒΑΣΙΛΕΙΩΝ Α»; "
+           "la p. 354 (0358) lleva arriba «Βασιλειῶν β» y empieza, con inicial grande, «ΚΑΙ ΕΓΕΝΕΤΟ ΜΕΤΑ ΤΟ ΑΠΟΘΑΝΕΙΝ ΣΑΟΥΛ» (2 S 1:1, "
+           "que así sale dos veces). Se enlaza la p. 354, la del rótulo. Este códice perdió 2 S 2:5-7 y 2:10-13 (hoja 178 rota, según la "
+           "Introducción de Swete; ver el testigo «vaticano»)."),
 }
 
 FALLOS = []
@@ -193,7 +198,7 @@ def contexto_textos(orig, sin_red):
     norm = lambda s: re.sub(r"^Rt ", "Rut ", s)
     heb_orden = {}
     claves_oshb = {"Gn": "oshb_gen", "Ex": "oshb_exo", "Lv": "oshb_lev", "Nm": "oshb_num", "Dt": "oshb_deu",
-                   "Jos": "oshb_jos", "Jue": "oshb_jue", "Rut": "oshb_rut", "1S": "oshb_1s"}
+                   "Jos": "oshb_jos", "Jue": "oshb_jue", "Rut": "oshb_rut", "1S": "oshb_1s", "2S": "oshb_2s"}
     for lib, clave in claves_oshb.items():
         heb_orden[lib] = list(orig.leer_oshb(orig.obtener(clave, sin_red), lib))
     heb_idx = {k: (lib, i) for lib, l in heb_orden.items() for i, k in enumerate(l)}

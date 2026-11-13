@@ -1,0 +1,7619 @@
+{
+ "libro": "2S",
+ "genealogias": [
+  {
+   "id": "2s-hijos-de-david-en-hebron",
+   "inicio": "2S 3:2",
+   "fin": "2S 3:5",
+   "titulo": "Los hijos de David nacidos en Hebrón: Amnón, Quileab, Absalón, Adonías, Sefatías e Itream",
+   "cita": "Y nacieron hijos á David en Hebrón"
+  },
+  {
+   "id": "2s-hijos-de-david-en-jerusalen",
+   "inicio": "2S 5:13",
+   "fin": "2S 5:16",
+   "titulo": "Los hijos de David nacidos en Jerusalén: Samúa, Sobab, Natán, Salomón, Ibhar, Elisúa, Nefeg, Jafía, Elisama, Eliada y Elifelet",
+   "cita": "naciéronle más hijos é hijas"
+  },
+  {
+   "id": "2s-oficiales-de-david-1",
+   "inicio": "2S 8:16",
+   "fin": "2S 8:18",
+   "titulo": "Los oficiales de David: Joab, Josafat, Sadoc, Ahimelec, Seraías y Benaía",
+   "cita": "Josaphat hijo de Ahilud, canciller"
+  },
+  {
+   "id": "2s-oficiales-de-david-2",
+   "inicio": "2S 20:23",
+   "fin": "2S 20:26",
+   "titulo": "Los oficiales de David después de la rebelión de Seba: Joab, Benaía, Adoram, Josafat, Seba, Sadoc, Abiatar e Ira",
+   "cita": "Benaía hijo de Joiada sobre los Ceretheos y Peletheos"
+  },
+  {
+   "id": "2s-los-treinta",
+   "inicio": "2S 23:24",
+   "fin": "2S 23:39",
+   "titulo": "Los treinta de David, con su patria o su padre: de Asael a Uría heteo («entre todos treinta y siete»)",
+   "cita": "Elhaanan hijo de Dodo de Beth-lehem"
+  }
+ ],
+ "historias": [
+  {
+   "id": "amalecita-trae-las-nuevas-de-gilboa",
+   "titulo": "El amalecita trae las nuevas de Gilboa",
+   "inicio": "2S 1:1",
+   "fin": "2S 1:16",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "lamento-por-saul-y-jonatan",
+   "titulo": "El lamento de David por Saúl y Jonatán",
+   "inicio": "2S 1:17",
+   "fin": "2S 1:27",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "david-ungido-en-hebron",
+   "titulo": "David sube a Hebrón y es ungido rey de Judá",
+   "inicio": "2S 2:1",
+   "fin": "2S 2:7",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "abner-hace-rey-a-is-boset",
+   "titulo": "Abner hace rey a Is-boset",
+   "inicio": "2S 2:8",
+   "fin": "2S 2:11",
+   "principales": [
+    "Abner_1"
+   ]
+  },
+  {
+   "id": "asael-y-abner",
+   "titulo": "Gabaón: Asael y Abner",
+   "inicio": "2S 2:12",
+   "fin": "2S 2:32",
+   "principales": [
+    "Abner_1",
+    "Joab_1",
+    "Asahel_1"
+   ]
+  },
+  {
+   "id": "abner-se-pasa-a-david",
+   "titulo": "Abner se pasa a David",
+   "inicio": "2S 3:1",
+   "fin": "2S 3:21",
+   "principales": [
+    "Abner_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "muerte-de-abner",
+   "titulo": "Joab mata a Abner",
+   "inicio": "2S 3:22",
+   "fin": "2S 3:39",
+   "principales": [
+    "Joab_1",
+    "Abner_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "muerte-de-is-boset",
+   "titulo": "Muerte de Is-boset",
+   "inicio": "2S 4:1",
+   "fin": "2S 4:12",
+   "principales": [
+    "Ish-bosheth_1",
+    "Baanah_1",
+    "Rechab_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "david-rey-de-todo-israel",
+   "titulo": "Las tribus ungen a David rey de todo Israel",
+   "inicio": "2S 5:1",
+   "fin": "2S 5:5",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "jerusalen-tomada",
+   "titulo": "David toma Jerusalén",
+   "inicio": "2S 5:6",
+   "fin": "2S 5:16",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "victorias-sobre-los-filisteos",
+   "titulo": "Victorias sobre los filisteos en el valle de Refaim",
+   "inicio": "2S 5:17",
+   "fin": "2S 5:25",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "el-arca-y-uza",
+   "titulo": "El arca en el carro nuevo y la muerte de Uza",
+   "inicio": "2S 6:1",
+   "fin": "2S 6:11",
+   "principales": [
+    "David_1",
+    "Uzzah_1",
+    "Obed-edom_1"
+   ]
+  },
+  {
+   "id": "el-arca-entra-en-la-ciudad-de-david",
+   "titulo": "El arca entra en la Ciudad de David; Mical",
+   "inicio": "2S 6:12",
+   "fin": "2S 6:23",
+   "principales": [
+    "David_1",
+    "Michal_1"
+   ]
+  },
+  {
+   "id": "promesa-a-david",
+   "titulo": "La promesa de Natán a David",
+   "inicio": "2S 7:1",
+   "fin": "2S 7:17",
+   "principales": [
+    "David_1",
+    "Nathan_2"
+   ]
+  },
+  {
+   "id": "oracion-de-david",
+   "titulo": "La oración de David",
+   "inicio": "2S 7:18",
+   "fin": "2S 7:29",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "victorias-de-david",
+   "titulo": "Las victorias de David y sus oficiales",
+   "inicio": "2S 8:1",
+   "fin": "2S 8:18",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "mefi-boset-a-la-mesa-del-rey",
+   "titulo": "Mefi-boset a la mesa del rey",
+   "inicio": "2S 9:1",
+   "fin": "2S 9:13",
+   "principales": [
+    "Mephibosheth_1",
+    "Ziba_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "embajadores-afrentados",
+   "titulo": "Los embajadores afrentados y la guerra con Ammón y Siria",
+   "inicio": "2S 10:1",
+   "fin": "2S 10:19",
+   "principales": [
+    "Hanun_1",
+    "David_1",
+    "Joab_1"
+   ]
+  },
+  {
+   "id": "david-y-betsabe",
+   "titulo": "David y Betsabé",
+   "inicio": "2S 11:1",
+   "fin": "2S 11:13",
+   "principales": [
+    "David_1",
+    "Bathsheba_1",
+    "Uriah_1"
+   ]
+  },
+  {
+   "id": "muerte-de-urias",
+   "titulo": "Muerte de Urías",
+   "inicio": "2S 11:14",
+   "fin": "2S 11:27",
+   "principales": [
+    "David_1",
+    "Uriah_1",
+    "Joab_1"
+   ]
+  },
+  {
+   "id": "parabola-de-natan",
+   "titulo": "La parábola de Natán: «Tú eres aquel hombre»",
+   "inicio": "2S 12:1",
+   "fin": "2S 12:14",
+   "principales": [
+    "Nathan_2",
+    "David_1"
+   ]
+  },
+  {
+   "id": "muere-el-nino-y-nace-salomon",
+   "titulo": "Muere el niño y nace Salomón",
+   "inicio": "2S 12:15",
+   "fin": "2S 12:25",
+   "principales": [
+    "David_1",
+    "Bathsheba_1"
+   ]
+  },
+  {
+   "id": "rabba-tomada",
+   "titulo": "Rabá tomada",
+   "inicio": "2S 12:26",
+   "fin": "2S 12:31",
+   "principales": [
+    "Joab_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "amnon-y-tamar",
+   "titulo": "Amnón y Tamar",
+   "inicio": "2S 13:1",
+   "fin": "2S 13:22",
+   "principales": [
+    "Amnon_1",
+    "Tamar_2",
+    "Jonadab_1"
+   ]
+  },
+  {
+   "id": "absalom-mata-a-amnon",
+   "titulo": "Absalón mata a Amnón y huye a Gesur",
+   "inicio": "2S 13:23",
+   "fin": "2S 13:39",
+   "principales": [
+    "Absalom_1",
+    "Amnon_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "mujer-de-tecoa",
+   "titulo": "La mujer de Tecoa",
+   "inicio": "2S 14:1",
+   "fin": "2S 14:24",
+   "principales": [
+    "Joab_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "absalom-ve-al-rey",
+   "titulo": "Absalón ve al rey",
+   "inicio": "2S 14:25",
+   "fin": "2S 14:33",
+   "principales": [
+    "Absalom_1",
+    "Joab_1"
+   ]
+  },
+  {
+   "id": "absalom-se-gana-a-israel",
+   "titulo": "Absalón se gana a Israel",
+   "inicio": "2S 15:1",
+   "fin": "2S 15:12",
+   "principales": [
+    "Absalom_1"
+   ]
+  },
+  {
+   "id": "david-huye-de-jerusalen",
+   "titulo": "David huye de Jerusalén",
+   "inicio": "2S 15:13",
+   "fin": "2S 15:37",
+   "principales": [
+    "David_1",
+    "Ittai_1",
+    "Zadok_1",
+    "Hushai_1"
+   ]
+  },
+  {
+   "id": "siba-y-simei",
+   "titulo": "Siba y Simei",
+   "inicio": "2S 16:1",
+   "fin": "2S 16:14",
+   "principales": [
+    "Ziba_1",
+    "Shimei_2",
+    "David_1"
+   ]
+  },
+  {
+   "id": "ahitofel-y-husai",
+   "titulo": "Los consejos de Ahitofel y de Husai",
+   "inicio": "2S 16:15",
+   "fin": "2S 17:14",
+   "principales": [
+    "Ahithophel_1",
+    "Hushai_1",
+    "Absalom_1"
+   ]
+  },
+  {
+   "id": "aviso-a-david-y-mahanaim",
+   "titulo": "El aviso a David y la llegada a Mahanaim",
+   "inicio": "2S 17:15",
+   "fin": "2S 17:29",
+   "principales": [
+    "Jonathan_3",
+    "Ahimaaz_2"
+   ]
+  },
+  {
+   "id": "muerte-de-absalom",
+   "titulo": "La batalla del bosque de Efraín y la muerte de Absalón",
+   "inicio": "2S 18:1",
+   "fin": "2S 18:18",
+   "principales": [
+    "Absalom_1",
+    "Joab_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "hijo-mio-absalom",
+   "titulo": "«Hijo mío Absalom»: las nuevas y el duelo del rey",
+   "inicio": "2S 18:19",
+   "fin": "2S 19:8",
+   "principales": [
+    "David_1",
+    "Joab_1",
+    "Ahimaaz_2"
+   ]
+  },
+  {
+   "id": "regreso-del-rey",
+   "titulo": "El regreso del rey y el perdón de Simei",
+   "inicio": "2S 19:9",
+   "fin": "2S 19:23",
+   "principales": [
+    "David_1",
+    "Shimei_2"
+   ]
+  },
+  {
+   "id": "mefi-boset-barzilai-y-disputa",
+   "titulo": "Mefi-boset, Barzilai y la disputa por el rey",
+   "inicio": "2S 19:24",
+   "fin": "2S 19:43",
+   "principales": [
+    "Mephibosheth_1",
+    "Barzillai_1"
+   ]
+  },
+  {
+   "id": "seba-y-amasa",
+   "titulo": "Seba se rebela y Joab mata a Amasa",
+   "inicio": "2S 20:1",
+   "fin": "2S 20:13",
+   "principales": [
+    "Sheba_4",
+    "Amasa_1",
+    "Joab_1"
+   ]
+  },
+  {
+   "id": "mujer-sabia-de-abel",
+   "titulo": "La mujer sabia de Abel de Bet-maaca",
+   "inicio": "2S 20:14",
+   "fin": "2S 20:26",
+   "principales": [
+    "Joab_1",
+    "Sheba_4"
+   ]
+  },
+  {
+   "id": "gabaonitas-y-rizpa",
+   "titulo": "Los gabaonitas y Rizpa",
+   "inicio": "2S 21:1",
+   "fin": "2S 21:14",
+   "principales": [
+    "Rizpah_1",
+    "David_1"
+   ]
+  },
+  {
+   "id": "guerras-con-los-filisteos",
+   "titulo": "Guerras con los filisteos y los hijos del gigante",
+   "inicio": "2S 21:15",
+   "fin": "2S 21:22",
+   "principales": [
+    "Abishai_1",
+    "Sibbecai_1",
+    "Elhanan_1",
+    "Jonathan_4"
+   ]
+  },
+  {
+   "id": "cantico-de-david",
+   "titulo": "El cántico de David",
+   "inicio": "2S 22:1",
+   "fin": "2S 22:51",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "ultimas-palabras-de-david",
+   "titulo": "Las postreras palabras de David",
+   "inicio": "2S 23:1",
+   "fin": "2S 23:7",
+   "principales": [
+    "David_1"
+   ]
+  },
+  {
+   "id": "los-tres-valientes",
+   "titulo": "Los tres valientes de David",
+   "inicio": "2S 23:8",
+   "fin": "2S 23:17",
+   "principales": [
+    "Josheb-basshebeth_1",
+    "Eleazar_3",
+    "Shammah_3"
+   ]
+  },
+  {
+   "id": "abisai-benaia-y-los-treinta",
+   "titulo": "Abisai, Benaía y los treinta",
+   "inicio": "2S 23:18",
+   "fin": "2S 23:39",
+   "principales": [
+    "Abishai_1",
+    "Benaiah_1"
+   ]
+  },
+  {
+   "id": "censo-de-david",
+   "titulo": "El censo de David",
+   "inicio": "2S 24:1",
+   "fin": "2S 24:14",
+   "principales": [
+    "David_1",
+    "Joab_1",
+    "Gad_2"
+   ]
+  },
+  {
+   "id": "peste-y-era-de-arauna",
+   "titulo": "La peste y la era de Arauna",
+   "inicio": "2S 24:15",
+   "fin": "2S 24:25",
+   "principales": [
+    "David_1",
+    "Araunah_1",
+    "Gad_2"
+   ]
+  }
+ ],
+ "personajes": {
+  "David_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 1:1",
+     "fin": "2S 1:27"
+    },
+    {
+     "inicio": "2S 2:1",
+     "fin": "2S 2:7"
+    },
+    {
+     "inicio": "2S 3:12",
+     "fin": "2S 3:21"
+    },
+    {
+     "inicio": "2S 3:28",
+     "fin": "2S 3:39"
+    },
+    {
+     "inicio": "2S 4:8",
+     "fin": "2S 4:12"
+    },
+    {
+     "inicio": "2S 5:1",
+     "fin": "2S 5:12"
+    },
+    {
+     "inicio": "2S 5:17",
+     "fin": "2S 5:25"
+    },
+    {
+     "inicio": "2S 6:1",
+     "fin": "2S 6:23"
+    },
+    {
+     "inicio": "2S 7:1",
+     "fin": "2S 7:29"
+    },
+    {
+     "inicio": "2S 8:1",
+     "fin": "2S 8:15"
+    },
+    {
+     "inicio": "2S 9:1",
+     "fin": "2S 9:13"
+    },
+    {
+     "inicio": "2S 10:2",
+     "fin": "2S 10:5"
+    },
+    {
+     "inicio": "2S 10:7",
+     "fin": "2S 10:7"
+    },
+    {
+     "inicio": "2S 10:17",
+     "fin": "2S 10:18"
+    },
+    {
+     "inicio": "2S 11:1",
+     "fin": "2S 11:27"
+    },
+    {
+     "inicio": "2S 12:1",
+     "fin": "2S 12:25"
+    },
+    {
+     "inicio": "2S 12:27",
+     "fin": "2S 12:31"
+    },
+    {
+     "inicio": "2S 13:7",
+     "fin": "2S 13:7"
+    },
+    {
+     "inicio": "2S 13:21",
+     "fin": "2S 13:21"
+    },
+    {
+     "inicio": "2S 13:30",
+     "fin": "2S 13:39"
+    },
+    {
+     "inicio": "2S 14:4",
+     "fin": "2S 14:24"
+    },
+    {
+     "inicio": "2S 14:33",
+     "fin": "2S 14:33"
+    },
+    {
+     "inicio": "2S 15:13",
+     "fin": "2S 15:37"
+    },
+    {
+     "inicio": "2S 16:1",
+     "fin": "2S 16:14"
+    },
+    {
+     "inicio": "2S 17:21",
+     "fin": "2S 17:22"
+    },
+    {
+     "inicio": "2S 17:24",
+     "fin": "2S 17:29"
+    },
+    {
+     "inicio": "2S 18:1",
+     "fin": "2S 18:5"
+    },
+    {
+     "inicio": "2S 18:24",
+     "fin": "2S 18:33"
+    },
+    {
+     "inicio": "2S 19:1",
+     "fin": "2S 19:8"
+    },
+    {
+     "inicio": "2S 19:11",
+     "fin": "2S 19:43"
+    },
+    {
+     "inicio": "2S 20:3",
+     "fin": "2S 20:6"
+    },
+    {
+     "inicio": "2S 21:1",
+     "fin": "2S 21:17"
+    },
+    {
+     "inicio": "2S 22:1",
+     "fin": "2S 22:51"
+    },
+    {
+     "inicio": "2S 23:1",
+     "fin": "2S 23:7"
+    },
+    {
+     "inicio": "2S 23:13",
+     "fin": "2S 23:17"
+    },
+    {
+     "inicio": "2S 24:1",
+     "fin": "2S 24:25"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:10"
+    },
+    {
+     "ref": "2S 2:11"
+    },
+    {
+     "ref": "2S 2:13"
+    },
+    {
+     "ref": "2S 2:15"
+    },
+    {
+     "ref": "2S 2:17"
+    },
+    {
+     "ref": "2S 2:30"
+    },
+    {
+     "ref": "2S 2:31"
+    },
+    {
+     "ref": "2S 3:1"
+    },
+    {
+     "ref": "2S 3:6"
+    },
+    {
+     "ref": "2S 3:8"
+    },
+    {
+     "ref": "2S 3:9"
+    },
+    {
+     "ref": "2S 3:10"
+    },
+    {
+     "ref": "2S 3:22"
+    },
+    {
+     "ref": "2S 3:26"
+    },
+    {
+     "ref": "2S 10:6"
+    },
+    {
+     "ref": "2S 13:1"
+    },
+    {
+     "ref": "2S 13:3"
+    },
+    {
+     "ref": "2S 15:12"
+    },
+    {
+     "ref": "2S 16:16"
+    },
+    {
+     "ref": "2S 16:23"
+    },
+    {
+     "ref": "2S 17:1"
+    },
+    {
+     "ref": "2S 17:16"
+    },
+    {
+     "ref": "2S 17:17"
+    },
+    {
+     "ref": "2S 18:7"
+    },
+    {
+     "ref": "2S 18:9"
+    },
+    {
+     "ref": "2S 20:1"
+    },
+    {
+     "ref": "2S 20:2"
+    },
+    {
+     "ref": "2S 20:11"
+    },
+    {
+     "ref": "2S 20:21"
+    },
+    {
+     "ref": "2S 21:21"
+    },
+    {
+     "ref": "2S 21:22"
+    },
+    {
+     "ref": "2S 23:8"
+    },
+    {
+     "ref": "2S 23:9"
+    },
+    {
+     "ref": "2S 23:23"
+    }
+   ],
+   "resumen": "Hijo de Isaí; en 2 S es ungido rey de Judá y de todo Israel, toma Jerusalén, trae el arca, recibe la promesa de Natán, peca con Betsabé, huye de Absalón y cuenta al pueblo.",
+   "datos": [
+    {
+     "texto": "Llora y ayuna por Saúl y Jonatán",
+     "certeza": "texto",
+     "ref": "2S 1:12",
+     "cita": "lloraron y lamentaron, y ayunaron hasta la tarde"
+    },
+    {
+     "texto": "Los varones de Judá lo ungen rey en Hebrón",
+     "certeza": "texto",
+     "ref": "2S 2:4",
+     "cita": "ungieron allí á David por rey sobre la casa de Judá"
+    },
+    {
+     "texto": "Reina siete años y seis meses en Hebrón sobre Judá",
+     "certeza": "texto",
+     "ref": "2S 2:11",
+     "cita": "siete años y seis meses"
+    },
+    {
+     "texto": "Todas las tribus lo ungen rey sobre Israel",
+     "certeza": "texto",
+     "ref": "2S 5:3",
+     "cita": "ungieron á David por rey sobre Israel"
+    },
+    {
+     "texto": "Tenía treinta años al comenzar a reinar y reinó cuarenta",
+     "certeza": "texto",
+     "ref": "2S 5:4",
+     "cita": "Era David de treinta años cuando comenzó á reinar, y reinó cuarenta años"
+    },
+    {
+     "texto": "Toma la fortaleza de Sión, la Ciudad de David",
+     "certeza": "texto",
+     "ref": "2S 5:7",
+     "cita": "David tomó la fortaleza de Sión, la cual es la ciudad de David"
+    },
+    {
+     "texto": "Consulta a Jehová antes de pelear con los filisteos",
+     "certeza": "texto",
+     "ref": "2S 5:19",
+     "cita": "consultó David á Jehová, diciendo: ¿Iré contra los Filisteos?"
+    },
+    {
+     "texto": "Danza con toda su fuerza ante el arca vestido de efod de lino",
+     "certeza": "texto",
+     "ref": "2S 6:14",
+     "cita": "David saltaba con toda su fuerza delante de Jehová"
+    },
+    {
+     "texto": "Jehová le promete afirmar su casa y su reino para siempre",
+     "certeza": "texto",
+     "ref": "2S 7:16",
+     "cita": "será afirmada tu casa y tu reino para siempre"
+    },
+    {
+     "texto": "Manda que Mefi-boset coma siempre a su mesa",
+     "certeza": "texto",
+     "ref": "2S 9:7",
+     "cita": "tú comerás siempre pan á mi mesa"
+    },
+    {
+     "texto": "Manda a Joab poner a Urías donde la batalla sea más fuerte",
+     "certeza": "texto",
+     "ref": "2S 11:15",
+     "cita": "Poned á Uría delante de la fuerza de la batalla"
+    },
+    {
+     "texto": "Reconoce su pecado ante Natán",
+     "certeza": "texto",
+     "ref": "2S 12:13",
+     "cita": "Pequé contra Jehová"
+    },
+    {
+     "texto": "Huye de Jerusalén descalzo y con la cabeza cubierta",
+     "certeza": "texto",
+     "ref": "2S 15:30",
+     "cita": "llevando la cabeza cubierta, y los pies descalzos"
+    },
+    {
+     "texto": "Llora a Absalón: «Hijo mío Absalom, hijo mío, hijo mío Absalom»",
+     "certeza": "texto",
+     "ref": "2S 18:33",
+     "cita": "Hijo mío Absalom, hijo mío, hijo mío Absalom"
+    },
+    {
+     "texto": "Jura a Simei que no morirá",
+     "certeza": "texto",
+     "ref": "2S 19:23",
+     "cita": "No morirás. Y el rey se lo juró"
+    },
+    {
+     "texto": "Sus hombres le piden no salir más a la batalla",
+     "certeza": "texto",
+     "ref": "2S 21:17",
+     "cita": "no apagues la lámpara de Israel"
+    },
+    {
+     "texto": "Canta: «Jehová es mi roca, y mi fortaleza, y mi libertador»",
+     "certeza": "texto",
+     "ref": "2S 22:2",
+     "cita": "Jehová es mi roca, y mi fortaleza, y mi libertador"
+    },
+    {
+     "texto": "Se llama «el suave en cánticos de Israel»",
+     "certeza": "texto",
+     "ref": "2S 23:1",
+     "cita": "el suave en cánticos de Israel"
+    },
+    {
+     "texto": "Derrama a Jehová el agua de la cisterna de Belén que le trajeron",
+     "certeza": "texto",
+     "ref": "2S 23:16",
+     "cita": "mas él no la quiso beber, sino derramóla á Jehová"
+    },
+    {
+     "texto": "Tras contar al pueblo reconoce: «Yo he pecado gravemente»",
+     "certeza": "texto",
+     "ref": "2S 24:10",
+     "cita": "Yo he pecado gravemente por haber hecho [esto]"
+    },
+    {
+     "texto": "Compra la era de Arauna y los bueyes por cincuenta siclos de plata",
+     "certeza": "texto",
+     "ref": "2S 24:24",
+     "cita": "David compró la era y los bueyes por cincuenta siclos de plata"
+    }
+   ],
+   "externo": [
+    {
+     "texto": "La estela de Tel Dan (Israel Museum, siglo IX a. C. en la datación general) contiene la frase aramea bytdwd, leída por la mayoría como «casa de David»; algunos discuten la lectura. Sirve de contexto a «la casa de David» de 2 S 7:11-16.",
+     "fuente": "Wikipedia (fuente secundaria): Tel Dan Stele",
+     "url": "https://en.wikipedia.org/wiki/Tel_Dan_Stele"
+    }
+   ]
+  },
+  "Saul_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 1:1"
+    },
+    {
+     "ref": "2S 1:2"
+    },
+    {
+     "ref": "2S 1:4"
+    },
+    {
+     "ref": "2S 1:5"
+    },
+    {
+     "ref": "2S 1:6"
+    },
+    {
+     "ref": "2S 1:12"
+    },
+    {
+     "ref": "2S 1:14"
+    },
+    {
+     "ref": "2S 1:16"
+    },
+    {
+     "ref": "2S 1:17"
+    },
+    {
+     "ref": "2S 1:21"
+    },
+    {
+     "ref": "2S 1:22"
+    },
+    {
+     "ref": "2S 1:23"
+    },
+    {
+     "ref": "2S 1:24"
+    },
+    {
+     "ref": "2S 2:4"
+    },
+    {
+     "ref": "2S 2:5"
+    },
+    {
+     "ref": "2S 2:7"
+    },
+    {
+     "ref": "2S 2:8"
+    },
+    {
+     "ref": "2S 2:10"
+    },
+    {
+     "ref": "2S 2:12"
+    },
+    {
+     "ref": "2S 2:15"
+    },
+    {
+     "ref": "2S 3:1"
+    },
+    {
+     "ref": "2S 3:6"
+    },
+    {
+     "ref": "2S 3:7"
+    },
+    {
+     "ref": "2S 3:8"
+    },
+    {
+     "ref": "2S 3:10"
+    },
+    {
+     "ref": "2S 3:13"
+    },
+    {
+     "ref": "2S 3:14"
+    },
+    {
+     "ref": "2S 4:1"
+    },
+    {
+     "ref": "2S 4:2"
+    },
+    {
+     "ref": "2S 4:4"
+    },
+    {
+     "ref": "2S 4:8"
+    },
+    {
+     "ref": "2S 4:10"
+    },
+    {
+     "ref": "2S 5:2"
+    },
+    {
+     "ref": "2S 6:16"
+    },
+    {
+     "ref": "2S 6:20"
+    },
+    {
+     "ref": "2S 6:23"
+    },
+    {
+     "ref": "2S 7:15"
+    },
+    {
+     "ref": "2S 9:1"
+    },
+    {
+     "ref": "2S 9:2"
+    },
+    {
+     "ref": "2S 9:3"
+    },
+    {
+     "ref": "2S 9:6"
+    },
+    {
+     "ref": "2S 9:7"
+    },
+    {
+     "ref": "2S 9:9"
+    },
+    {
+     "ref": "2S 12:7"
+    },
+    {
+     "ref": "2S 16:5"
+    },
+    {
+     "ref": "2S 16:8"
+    },
+    {
+     "ref": "2S 19:17"
+    },
+    {
+     "ref": "2S 19:24"
+    },
+    {
+     "ref": "2S 21:1"
+    },
+    {
+     "ref": "2S 21:2"
+    },
+    {
+     "ref": "2S 21:4"
+    },
+    {
+     "ref": "2S 21:6"
+    },
+    {
+     "ref": "2S 21:7"
+    },
+    {
+     "ref": "2S 21:8"
+    },
+    {
+     "ref": "2S 21:11"
+    },
+    {
+     "ref": "2S 21:12"
+    },
+    {
+     "ref": "2S 21:13"
+    },
+    {
+     "ref": "2S 21:14"
+    },
+    {
+     "ref": "2S 22:1"
+    }
+   ],
+   "resumen": "Ya muerto (1 S 31), en 2 S solo se lo recuerda: el amalecita dice haberlo rematado, David lo llora y su casa sigue en juego (Abner, Is-boset, Mefi-boset, los gabaonitas).",
+   "datos": [
+    {
+     "texto": "El amalecita dice haberlo hallado recostado sobre su lanza",
+     "certeza": "texto",
+     "ref": "2S 1:6",
+     "cita": "hallé á Saúl que estaba recostado sobre su lanza"
+    },
+    {
+     "texto": "David lo llama «el ungido de Jehová»",
+     "certeza": "texto",
+     "ref": "2S 1:14",
+     "cita": "extender tu mano para matar al ungido de Jehová"
+    },
+    {
+     "texto": "Mató a los gabaonitas, causa del hambre de tres años",
+     "certeza": "texto",
+     "ref": "2S 21:1",
+     "cita": "Es por Saúl, y por aquella casa de sangre; porque mató á los Gabaonitas"
+    },
+    {
+     "texto": "Sus huesos y los de Jonatán se sepultan en el sepulcro de Cis, en Sela",
+     "certeza": "texto",
+     "ref": "2S 21:14",
+     "cita": "sepultaron los huesos de Saúl y los de su hijo Jonathán en tierra de Benjamín, en Sela"
+    }
+   ],
+   "externo": []
+  },
+  "Jonathan_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 1:4"
+    },
+    {
+     "ref": "2S 1:5"
+    },
+    {
+     "ref": "2S 1:12"
+    },
+    {
+     "ref": "2S 1:17"
+    },
+    {
+     "ref": "2S 1:22"
+    },
+    {
+     "ref": "2S 1:23"
+    },
+    {
+     "ref": "2S 1:25"
+    },
+    {
+     "ref": "2S 1:26"
+    },
+    {
+     "ref": "2S 4:4"
+    },
+    {
+     "ref": "2S 9:1"
+    },
+    {
+     "ref": "2S 9:3"
+    },
+    {
+     "ref": "2S 9:6"
+    },
+    {
+     "ref": "2S 9:7"
+    },
+    {
+     "ref": "2S 21:7"
+    },
+    {
+     "ref": "2S 21:12"
+    },
+    {
+     "ref": "2S 21:13"
+    },
+    {
+     "ref": "2S 21:14"
+    }
+   ],
+   "resumen": "Hijo de Saúl; ya muerto, David lo llora y hace misericordia a su hijo Mefi-boset por amor de él.",
+   "datos": [
+    {
+     "texto": "David lo llama «hermano mío»",
+     "certeza": "texto",
+     "ref": "2S 1:26",
+     "cita": "Angustia tengo por ti, hermano mío Jonathán"
+    },
+    {
+     "texto": "Tiene un hijo lisiado de los pies, Mefi-boset",
+     "certeza": "texto",
+     "ref": "2S 4:4",
+     "cita": "Jonathán, hijo de Saúl, tenía un hijo lisiado de los pies"
+    },
+    {
+     "texto": "David hace misericordia a la casa de Saúl «por amor de Jonatán»",
+     "certeza": "texto",
+     "ref": "2S 9:1",
+     "cita": "¿Ha quedado alguno de la casa de Saúl, á quien haga yo misericordia por amor de Jonathán?"
+    }
+   ],
+   "externo": []
+  },
+  "Abner_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:8",
+     "fin": "2S 2:9"
+    },
+    {
+     "inicio": "2S 2:12",
+     "fin": "2S 2:29"
+    },
+    {
+     "inicio": "2S 3:6",
+     "fin": "2S 3:21"
+    },
+    {
+     "inicio": "2S 3:23",
+     "fin": "2S 3:27"
+    },
+    {
+     "inicio": "2S 3:31",
+     "fin": "2S 3:34"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:30"
+    },
+    {
+     "ref": "2S 2:31"
+    },
+    {
+     "ref": "2S 3:22"
+    },
+    {
+     "ref": "2S 3:28"
+    },
+    {
+     "ref": "2S 3:30"
+    },
+    {
+     "ref": "2S 3:37"
+    },
+    {
+     "ref": "2S 4:1"
+    },
+    {
+     "ref": "2S 4:12"
+    }
+   ],
+   "resumen": "General de Saúl; hace rey a Is-boset, mata a Asael en Gabaón, se pasa a David y Joab lo mata en Hebrón.",
+   "datos": [
+    {
+     "texto": "Hijo de Ner, general del ejército de Saúl; lleva a Is-boset al real",
+     "certeza": "texto",
+     "ref": "2S 2:8",
+     "cita": "Abner hijo de Ner, general de ejército de Saúl, tomó á Is-boseth hijo de Saúl"
+    },
+    {
+     "texto": "Propone el combate de los doce contra doce junto al estanque de Gabaón",
+     "certeza": "texto",
+     "ref": "2S 2:14",
+     "cita": "Levántense ahora los mancebos, y maniobren delante de nosotros"
+    },
+    {
+     "texto": "Hiere a Asael con el regatón de la lanza",
+     "certeza": "texto",
+     "ref": "2S 2:23",
+     "cita": "hiriólo Abner con el regatón de la lanza por la quinta [costilla]"
+    },
+    {
+     "texto": "Pide a Joab que pare: «¿Consumirá la espada perpetuamente?»",
+     "certeza": "texto",
+     "ref": "2S 2:26",
+     "cita": "¿Consumirá la espada perpetuamente?"
+    },
+    {
+     "texto": "Se enoja con Is-boset y promete trasladar el reino a David",
+     "certeza": "texto",
+     "ref": "2S 3:10",
+     "cita": "Trasladando el reino de la casa de Saúl, y confirmando el trono de David sobre Israel y sobre Judá"
+    },
+    {
+     "texto": "Pide a David una alianza para volver a él a todo Israel",
+     "certeza": "texto",
+     "ref": "2S 3:12",
+     "cita": "Haz alianza conmigo, y he aquí que mi mano será contigo para volver á ti á todo Israel"
+    },
+    {
+     "texto": "Habla con los ancianos de Israel y con los de Benjamín",
+     "certeza": "texto",
+     "ref": "2S 3:17",
+     "cita": "habló Abner con los ancianos de Israel"
+    },
+    {
+     "texto": "Joab lo hiere en la puerta de Hebrón por la muerte de Asael",
+     "certeza": "texto",
+     "ref": "2S 3:27",
+     "cita": "apartólo Joab al medio de la puerta, hablando con él blandamente, y allí le hirió por la quinta [costilla]"
+    },
+    {
+     "texto": "David lo llora: «¿Murió Abner como muere un villano?»",
+     "certeza": "texto",
+     "ref": "2S 3:33",
+     "cita": "¿Murió Abner como muere un villano?"
+    }
+   ],
+   "externo": []
+  },
+  "Michal_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 3:15",
+     "fin": "2S 3:16"
+    },
+    {
+     "inicio": "2S 6:16",
+     "fin": "2S 6:23"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 3:13"
+    },
+    {
+     "ref": "2S 3:14"
+    }
+   ],
+   "resumen": "Hija de Saúl y mujer de David; Is-boset se la quita a Paltiel y se la devuelve a David; más tarde desprecia a David que danza ante el arca y «nunca tuvo hijos».",
+   "datos": [
+    {
+     "texto": "David exige que Abner le traiga a Mical antes de verlo",
+     "certeza": "texto",
+     "ref": "2S 3:13",
+     "cita": "no me vengas á ver sin que primero traigas á Michâl la hija de Saúl"
+    },
+    {
+     "texto": "Is-boset se la quita a su marido Paltiel",
+     "certeza": "texto",
+     "ref": "2S 3:15",
+     "cita": "quitóla á su marido Paltiel, hijo de Lais"
+    },
+    {
+     "texto": "Mira desde una ventana a David saltar ante el arca y lo menosprecia",
+     "certeza": "texto",
+     "ref": "2S 6:16",
+     "cita": "Michâl hija de Saúl miró desde una ventana, y vió al rey David que saltaba con toda su fuerza delante de Jehová: y menosprecióle en su corazón"
+    },
+    {
+     "texto": "Reprocha a David haberse desnudado delante de las criadas",
+     "certeza": "texto",
+     "ref": "2S 6:20",
+     "cita": "¡Cuán honrado ha sido hoy el rey de Israel, desnudándose hoy delante de las criadas de sus siervos"
+    },
+    {
+     "texto": "Nunca tuvo hijos hasta el día de su muerte",
+     "certeza": "texto",
+     "ref": "2S 6:23",
+     "cita": "Michâl hija de Saúl nunca tuvo hijos hasta el día de su muerte"
+    }
+   ],
+   "externo": []
+  },
+  "Joab_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:13",
+     "fin": "2S 2:32"
+    },
+    {
+     "inicio": "2S 3:22",
+     "fin": "2S 3:27"
+    },
+    {
+     "inicio": "2S 3:29",
+     "fin": "2S 3:31"
+    },
+    {
+     "inicio": "2S 10:7",
+     "fin": "2S 10:14"
+    },
+    {
+     "inicio": "2S 11:1",
+     "fin": "2S 11:1"
+    },
+    {
+     "inicio": "2S 11:6",
+     "fin": "2S 11:7"
+    },
+    {
+     "inicio": "2S 11:11",
+     "fin": "2S 11:11"
+    },
+    {
+     "inicio": "2S 11:14",
+     "fin": "2S 11:25"
+    },
+    {
+     "inicio": "2S 12:26",
+     "fin": "2S 12:29"
+    },
+    {
+     "inicio": "2S 14:1",
+     "fin": "2S 14:33"
+    },
+    {
+     "inicio": "2S 18:1",
+     "fin": "2S 18:5"
+    },
+    {
+     "inicio": "2S 18:10",
+     "fin": "2S 18:16"
+    },
+    {
+     "inicio": "2S 18:20",
+     "fin": "2S 18:22"
+    },
+    {
+     "inicio": "2S 19:5",
+     "fin": "2S 19:7"
+    },
+    {
+     "inicio": "2S 20:7",
+     "fin": "2S 20:13"
+    },
+    {
+     "inicio": "2S 20:15",
+     "fin": "2S 20:22"
+    },
+    {
+     "inicio": "2S 24:2",
+     "fin": "2S 24:4"
+    },
+    {
+     "inicio": "2S 24:9",
+     "fin": "2S 24:9"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 17:25"
+    },
+    {
+     "ref": "2S 18:29"
+    },
+    {
+     "ref": "2S 19:1"
+    },
+    {
+     "ref": "2S 19:13"
+    },
+    {
+     "ref": "2S 23:18"
+    }
+   ],
+   "resumen": "Hijo de Sarvia, jefe del ejército de David: vence en Gabaón, mata a Abner y a Amasa, sitia Rabá, hace volver a Absalón, lo mata y cuenta al pueblo.",
+   "datos": [
+    {
+     "texto": "Toca el cuerno y el pueblo deja de perseguir a Israel",
+     "certeza": "texto",
+     "ref": "2S 2:28",
+     "cita": "Joab tocó el cuerno, y todo el pueblo se detuvo"
+    },
+    {
+     "texto": "Mata a Abner por la muerte de su hermano Asael",
+     "certeza": "texto",
+     "ref": "2S 3:30",
+     "cita": "Joab pues y Abisai su hermano mataron á Abner, porque él había muerto á Asael"
+    },
+    {
+     "texto": "David maldice su casa por la muerte de Abner",
+     "certeza": "texto",
+     "ref": "2S 3:29",
+     "cita": "Caiga sobre la cabeza de Joab, y sobre toda la casa de su padre"
+    },
+    {
+     "texto": "Entrega a Urías donde están los hombres más valientes",
+     "certeza": "texto",
+     "ref": "2S 11:16",
+     "cita": "puso á Uría en el lugar donde sabía que estaban los hombres más valientes"
+    },
+    {
+     "texto": "Toma «la ciudad de las aguas» de Rabá y llama a David para rendirla",
+     "certeza": "texto",
+     "ref": "2S 12:27",
+     "cita": "he tomado la ciudad de las aguas"
+    },
+    {
+     "texto": "Envía a una mujer de Tecoa a hablar con el rey",
+     "certeza": "texto",
+     "ref": "2S 14:2",
+     "cita": "Envió Joab á Tecoa, y tomó de allá una mujer astuta"
+    },
+    {
+     "texto": "Clava tres dardos en el corazón de Absalón",
+     "certeza": "texto",
+     "ref": "2S 18:14",
+     "cita": "tomando tres dardos en sus manos, hincólos en el corazón de Absalom"
+    },
+    {
+     "texto": "Reprende a David por su duelo: «Hoy has avergonzado el rostro de todos tus siervos»",
+     "certeza": "texto",
+     "ref": "2S 19:5",
+     "cita": "Hoy has avergonzado el rostro de todos tus siervos"
+    },
+    {
+     "texto": "Hiere a Amasa con la daga mientras lo saluda",
+     "certeza": "texto",
+     "ref": "2S 20:10",
+     "cita": "hirióle éste con ella en la quinta [costilla]"
+    },
+    {
+     "texto": "Se opone al censo, pero obedece al rey",
+     "certeza": "texto",
+     "ref": "2S 24:3",
+     "cita": "Añada Jehová tu Dios al pueblo cien veces tanto como son"
+    }
+   ],
+   "externo": []
+  },
+  "Abishai_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:24",
+     "fin": "2S 2:28"
+    },
+    {
+     "inicio": "2S 10:10",
+     "fin": "2S 10:14"
+    },
+    {
+     "inicio": "2S 16:9",
+     "fin": "2S 16:11"
+    },
+    {
+     "inicio": "2S 18:1",
+     "fin": "2S 18:5"
+    },
+    {
+     "inicio": "2S 19:21",
+     "fin": "2S 19:22"
+    },
+    {
+     "inicio": "2S 20:6",
+     "fin": "2S 20:10"
+    },
+    {
+     "inicio": "2S 21:16",
+     "fin": "2S 21:17"
+    },
+    {
+     "inicio": "2S 23:18",
+     "fin": "2S 23:19"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:18"
+    },
+    {
+     "ref": "2S 3:30"
+    },
+    {
+     "ref": "2S 18:12"
+    }
+   ],
+   "resumen": "Hermano de Joab, hijo de Sarvia; pide cortar la cabeza a Simei, salva a David de Isbi-benob y es el principal de los tres.",
+   "datos": [
+    {
+     "texto": "Se ofrece a quitar la cabeza a Simei, a quien llama «perro muerto»",
+     "certeza": "texto",
+     "ref": "2S 16:9",
+     "cita": "¿Por qué maldice este perro muerto á mi señor el rey? Yo te ruego que me dejes pasar, y quitaréle la cabeza"
+    },
+    {
+     "texto": "David lo manda con el ejército en pos de Seba",
+     "certeza": "texto",
+     "ref": "2S 20:6",
+     "cita": "toma pues tú los siervos de tu señor, y ve tras él"
+    },
+    {
+     "texto": "Socorre a David e hiere al filisteo Isbi-benob",
+     "certeza": "texto",
+     "ref": "2S 21:17",
+     "cita": "Abisai hijo de Sarvia le socorrió, é hirió al Filisteo, y matólo"
+    },
+    {
+     "texto": "Alza su lanza contra trescientos y es el principal de los tres",
+     "certeza": "texto",
+     "ref": "2S 23:18",
+     "cita": "Abisai hermano de Joab, hijo de Sarvia, fué el principal de los tres"
+    }
+   ],
+   "externo": []
+  },
+  "Abiathar_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:24",
+     "fin": "2S 15:29"
+    },
+    {
+     "inicio": "2S 17:15",
+     "fin": "2S 17:16"
+    },
+    {
+     "inicio": "2S 19:11",
+     "fin": "2S 19:14"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 15:35"
+    },
+    {
+     "ref": "2S 15:36"
+    }
+   ],
+   "resumen": "Sacerdote que huyó de Nob con David; en la huida lleva con Sadoc el arca y después sirve de enlace por medio de su hijo Jonatán.",
+   "datos": [
+    {
+     "texto": "Sube tras salir todo el pueblo, con Sadoc y los levitas que llevan el arca",
+     "certeza": "texto",
+     "ref": "2S 15:24",
+     "cita": "Y subió Abiathar después que hubo acabado de salir de la ciudad todo el pueblo"
+    },
+    {
+     "texto": "Vuelve con Sadoc el arca de Dios a Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 15:29",
+     "cita": "Sadoc y Abiathar volvieron el arca de Dios á Jerusalem"
+    }
+   ],
+   "externo": []
+  },
+  "Abigail_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:2",
+     "fin": "2S 2:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de David, viuda de Nabal del Carmelo; sube con él a Hebrón.",
+   "datos": [
+    {
+     "texto": "Sube con David a Hebrón",
+     "certeza": "texto",
+     "ref": "2S 2:2",
+     "cita": "Ahinoam Jezreelita y Abigail, la [que fué] mujer de Nabal del Carmelo"
+    },
+    {
+     "texto": "Madre de Quileab, segundo hijo de David en Hebrón",
+     "certeza": "texto",
+     "ref": "2S 3:3",
+     "cita": "Su segundo Chileab, de Abigail la mujer de Nabal"
+    }
+   ],
+   "externo": []
+  },
+  "Ahinoam_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:2",
+     "fin": "2S 2:2"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de David, de Jezreel; sube con él a Hebrón y es madre de Amnón.",
+   "datos": [
+    {
+     "texto": "Sube con David a Hebrón",
+     "certeza": "texto",
+     "ref": "2S 2:2",
+     "cita": "Ahinoam Jezreelita"
+    },
+    {
+     "texto": "Madre de Amnón, primogénito de David",
+     "certeza": "texto",
+     "ref": "2S 3:2",
+     "cita": "su primogénito fué Ammón, de Ahinoam Jezreelita"
+    }
+   ],
+   "externo": []
+  },
+  "Nabal_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:2"
+    }
+   ],
+   "resumen": "Del Carmelo; solo se lo recuerda como marido de Abigail.",
+   "datos": [
+    {
+     "texto": "Abigail es «la mujer de Nabal del Carmelo»",
+     "certeza": "texto",
+     "ref": "2S 2:2",
+     "cita": "Abigail, la [que fué] mujer de Nabal del Carmelo"
+    }
+   ],
+   "externo": []
+  },
+  "Palti_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 3:15",
+     "fin": "2S 3:16"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Marido de Mical (RV1909: Paltiel); la sigue llorando hasta Bahurim cuando Is-boset se la quita.",
+   "datos": [
+    {
+     "texto": "Su marido la sigue llorando hasta Bahurim y Abner lo hace volver",
+     "certeza": "texto",
+     "ref": "2S 3:16",
+     "cita": "su marido fué con ella, siguiéndola y llorando hasta Bahurim. Y díjole Abner: Anda, vuélvete"
+    }
+   ],
+   "externo": []
+  },
+  "Laish_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 3:15"
+    }
+   ],
+   "resumen": "Padre de Palti; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Paltiel es «hijo de Lais»",
+     "certeza": "texto",
+     "ref": "2S 3:15",
+     "cita": "su marido Paltiel, hijo de Lais"
+    }
+   ],
+   "externo": []
+  },
+  "Ner_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:8"
+    },
+    {
+     "ref": "2S 2:12"
+    },
+    {
+     "ref": "2S 3:23"
+    },
+    {
+     "ref": "2S 3:25"
+    },
+    {
+     "ref": "2S 3:28"
+    },
+    {
+     "ref": "2S 3:37"
+    }
+   ],
+   "resumen": "Padre de Abner; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Abner es «hijo de Ner»",
+     "certeza": "texto",
+     "ref": "2S 2:8",
+     "cita": "Abner hijo de Ner"
+    }
+   ],
+   "externo": []
+  },
+  "Zeruiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:13"
+    },
+    {
+     "ref": "2S 2:18"
+    },
+    {
+     "ref": "2S 3:39"
+    },
+    {
+     "ref": "2S 14:1"
+    },
+    {
+     "ref": "2S 16:9"
+    },
+    {
+     "ref": "2S 16:10"
+    },
+    {
+     "ref": "2S 17:25"
+    },
+    {
+     "ref": "2S 18:2"
+    },
+    {
+     "ref": "2S 19:21"
+    },
+    {
+     "ref": "2S 19:22"
+    },
+    {
+     "ref": "2S 21:17"
+    },
+    {
+     "ref": "2S 23:18"
+    }
+   ],
+   "resumen": "Madre de Joab, Abisai y Asael (RV1909: «Sarvia»); solo se nombra como madre.",
+   "datos": [
+    {
+     "texto": "Joab, Abisai y Asael son «los tres hijos de Sarvia»",
+     "certeza": "texto",
+     "ref": "2S 2:18",
+     "cita": "los tres hijos de Sarvia: Joab, y Abisai, y Asael"
+    },
+    {
+     "texto": "Su hermana es Abigail, madre de Amasa",
+     "certeza": "texto",
+     "ref": "2S 17:25",
+     "cita": "Abigail hija de Naas, hermana de Sarvia, madre de Joab"
+    }
+   ],
+   "externo": []
+  },
+  "Nahash_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 10:2"
+    },
+    {
+     "ref": "2S 17:27"
+    }
+   ],
+   "resumen": "Rey de Ammón; David recuerda la misericordia que le hizo a Hanún su hijo.",
+   "datos": [
+    {
+     "texto": "David quiere hacer misericordia a Hanún, hijo de Naas",
+     "certeza": "texto",
+     "ref": "2S 10:2",
+     "cita": "Yo haré misericordia con Hanún hijo de Naas, como su padre la hizo conmigo"
+    },
+    {
+     "texto": "Sobi es «hijo de Naas de Rabá» (17:27); BibleData lo une con este Naas, el texto no lo dice",
+     "certeza": "inferido",
+     "ref": "2S 17:27",
+     "cita": "Sobi hijo de Naas de Rabba de los hijos de Ammon"
+    }
+   ],
+   "externo": []
+  },
+  "Abinadab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 6:3"
+    },
+    {
+     "ref": "2S 6:4"
+    }
+   ],
+   "resumen": "Dueño de la casa de Gabaa de donde sale el arca; sus hijos Uza y Ahío guían el carro.",
+   "datos": [
+    {
+     "texto": "El arca sale de su casa en un carro nuevo",
+     "certeza": "texto",
+     "ref": "2S 6:3",
+     "cita": "lleváronla de la casa de Abinadab, que estaba en Gabaa"
+    },
+    {
+     "texto": "Uza y Ahío son sus hijos",
+     "certeza": "texto",
+     "ref": "2S 6:3",
+     "cita": "Uzza y Ahio, hijos de Abinadab"
+    }
+   ],
+   "externo": []
+  },
+  "Kish_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 21:14"
+    }
+   ],
+   "resumen": "Padre de Saúl; sus huesos reposan en Sela, donde sepultan a Saúl y Jonatán.",
+   "datos": [
+    {
+     "texto": "Saúl y Jonatán se sepultan «en el sepulcro de Cis su padre»",
+     "certeza": "texto",
+     "ref": "2S 21:14",
+     "cita": "en el sepulcro de Cis su padre"
+    }
+   ],
+   "externo": []
+  },
+  "Jesse_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 20:1"
+    },
+    {
+     "ref": "2S 23:1"
+    }
+   ],
+   "resumen": "Padre de David; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Seba dice: «ni heredad en el hijo de Isaí»",
+     "certeza": "texto",
+     "ref": "2S 20:1",
+     "cita": "ni heredad en el hijo de Isaí"
+    }
+   ],
+   "externo": []
+  },
+  "Merab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 21:8"
+    }
+   ],
+   "resumen": "Hija mayor de Saúl; la RV1909 (21:8) escribe «Michâl», pero Mical «nunca tuvo hijos» (6:23) y Adriel es marido de Merab (1 S 18:19): sus cinco hijos son ahorcados.",
+   "datos": [
+    {
+     "texto": "«Cinco hijos de Michâl hija de Saúl, los cuales ella había parido á Adriel»: la identidad con Merab es inferida",
+     "certeza": "inferido",
+     "ref": "2S 21:8",
+     "cita": "cinco hijos de Michâl hija de Saúl, los cuales ella había parido á Adriel"
+    },
+    {
+     "texto": "Mical, la mujer de David, nunca tuvo hijos",
+     "certeza": "texto",
+     "ref": "2S 6:23",
+     "cita": "Michâl hija de Saúl nunca tuvo hijos hasta el día de su muerte"
+    }
+   ],
+   "externo": []
+  },
+  "Adriel_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 21:8"
+    }
+   ],
+   "resumen": "Marido de Merab, hijo de Barzilai el meholatita; solo se nombra como padre de los cinco ahorcados.",
+   "datos": [
+    {
+     "texto": "Los cinco hijos «los cuales ella había parido á Adriel»",
+     "certeza": "texto",
+     "ref": "2S 21:8",
+     "cita": "los cuales ella había parido á Adriel, hijo de Barzillai Molathita"
+    }
+   ],
+   "externo": []
+  },
+  "Goliath_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 21:19"
+    }
+   ],
+   "resumen": "Gigante filisteo de Gat. 2 S 21:19 dice que Elhanán «hirió á Goliath Getheo», y 1 S 17:50-51 que lo mató David: el catálogo registra ambos textos sin decidir ni armonizar.",
+   "datos": [
+    {
+     "texto": "La RV1909 dice que Elhanán, hijo de Jaare-oregim de Belén, «hirió á Goliath Getheo»",
+     "certeza": "texto",
+     "ref": "2S 21:19",
+     "cita": "Elhanan, hijo de Jaare-oregim de Beth-lehem, hirió á Goliath Getheo"
+    },
+    {
+     "texto": "Su asta era «como un enjullo de telar»",
+     "certeza": "texto",
+     "ref": "2S 21:19",
+     "cita": "el asta de cuya lanza era como un enjullo de telar"
+    },
+    {
+     "texto": "1 S 17:50-51 cuenta que David lo mató con honda y piedra y con su propia espada",
+     "certeza": "texto",
+     "ref": "1S 17:50",
+     "cita": "Así venció David al Filisteo con honda y piedra"
+    }
+   ],
+   "externo": []
+  },
+  "Gad_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 24:11",
+     "fin": "2S 24:14"
+    },
+    {
+     "inicio": "2S 24:18",
+     "fin": "2S 24:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Profeta y «vidente de David»; le ofrece tres castigos por el censo y le manda levantar un altar en la era de Arauna.",
+   "datos": [
+    {
+     "texto": "Es «Gad profeta, vidente de David»",
+     "certeza": "texto",
+     "ref": "2S 24:11",
+     "cita": "Gad profeta, vidente de David"
+    },
+    {
+     "texto": "Ofrece a David siete años de hambre, tres meses de huida o tres días de pestilencia",
+     "certeza": "texto",
+     "ref": "2S 24:13",
+     "cita": "¿Quieres que te vengan siete años de hambre en tu tierra? ¿ó que huyas tres meses delante de tus enemigos"
+    },
+    {
+     "texto": "Le dice que suba y haga un altar a Jehová en la era de Arauna",
+     "certeza": "texto",
+     "ref": "2S 24:18",
+     "cita": "Sube, y haz un altar á Jehová en la era de Arauna Jebuseo"
+    }
+   ],
+   "externo": []
+  },
+  "Shammah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 13:3"
+    },
+    {
+     "ref": "2S 13:32"
+    },
+    {
+     "ref": "2S 21:21"
+    }
+   ],
+   "resumen": "Hermano de David (RV1909: Samma, Simea, Sima); su hijo Jonadab aconseja a Amnón y su hijo Jonatán mata a un gigante de Gat.",
+   "datos": [
+    {
+     "texto": "Jonadab es «hijo de Simea, hermano de David» (identidad con el hijo de Isaí: inferida)",
+     "certeza": "inferido",
+     "ref": "2S 13:3",
+     "cita": "Jonadab, hijo de Simea, hermano de David"
+    },
+    {
+     "texto": "Jonatán, hijo de Sima, hermano de David, mata al gigante de Gat",
+     "certeza": "inferido",
+     "ref": "2S 21:21",
+     "cita": "matólo Jonathán, hijo de Sima hermano de David"
+    }
+   ],
+   "externo": []
+  },
+  "Gideon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 11:21"
+    }
+   ],
+   "resumen": "Juez de Israel; Joab recuerda cómo murió su hijo Abimelec («Jerobaal» es Gedeón por Jue 6:32).",
+   "datos": [
+    {
+     "texto": "Abimelec es «hijo de Jerobaal»; Jue 6:32 dice que a Gedeón lo llamaron Jerobaal",
+     "certeza": "inferido",
+     "ref": "2S 11:21",
+     "cita": "¿Quién hirió á Abimelech hijo de Jerobaal?"
+    }
+   ],
+   "externo": []
+  },
+  "Abimelech_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 11:21"
+    }
+   ],
+   "resumen": "Hijo de Gedeón; Joab recuerda que una mujer le echó un pedazo de rueda de molino y murió en Tebes.",
+   "datos": [
+    {
+     "texto": "Una mujer echó del muro un pedazo de rueda de molino y murió en Tebes",
+     "certeza": "texto",
+     "ref": "2S 11:21",
+     "cita": "¿no echó una mujer del muro un pedazo de una rueda de molino, y murió en Thebes?"
+    }
+   ],
+   "externo": []
+  },
+  "Asahel_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:18",
+     "fin": "2S 2:23"
+    },
+    {
+     "inicio": "2S 2:31",
+     "fin": "2S 2:31"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:30"
+    },
+    {
+     "ref": "2S 2:32"
+    },
+    {
+     "ref": "2S 3:27"
+    },
+    {
+     "ref": "2S 3:30"
+    }
+   ],
+   "resumen": "Hermano de Joab y de Abisai, veloz como un corzo; sigue a Abner y muere por su lanza en Gabaón.",
+   "datos": [
+    {
+     "texto": "Era «suelto de pies como un corzo del campo»",
+     "certeza": "texto",
+     "ref": "2S 2:18",
+     "cita": "Asael era suelto de pies como un corzo del campo"
+    },
+    {
+     "texto": "Sigue a Abner sin apartarse a derecha ni a izquierda",
+     "certeza": "texto",
+     "ref": "2S 2:19",
+     "cita": "siguió á Abner, yendo tras de él sin apartarse á diestra ni á siniestra"
+    },
+    {
+     "texto": "Abner lo hiere con el regatón de la lanza y muere allí",
+     "certeza": "texto",
+     "ref": "2S 2:23",
+     "cita": "cayó allí, y murió en aquel mismo sitio"
+    },
+    {
+     "texto": "Lo sepultan en el sepulcro de su padre en Belén",
+     "certeza": "texto",
+     "ref": "2S 2:31",
+     "cita": "sepultáronlo en el sepulcro de su padre en Beth-lehem"
+    },
+    {
+     "texto": "Figura entre los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:24",
+     "cita": "Asael hermano de Joab fué de los treinta"
+    }
+   ],
+   "externo": []
+  },
+  "Ish-bosheth_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 2:8",
+     "fin": "2S 2:10"
+    },
+    {
+     "inicio": "2S 3:7",
+     "fin": "2S 3:15"
+    },
+    {
+     "inicio": "2S 4:1",
+     "fin": "2S 4:12"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 2:12"
+    },
+    {
+     "ref": "2S 2:15"
+    }
+   ],
+   "resumen": "Hijo de Saúl, hecho rey sobre Israel por Abner; reina dos años y lo asesinan Recab y Baana en su cama.",
+   "datos": [
+    {
+     "texto": "Tenía cuarenta años al empezar a reinar y reinó dos años",
+     "certeza": "texto",
+     "ref": "2S 2:10",
+     "cita": "De cuarenta años era Is-boseth hijo de Saúl, cuando comenzó á reinar sobre Israel; y reinó dos años"
+    },
+    {
+     "texto": "Reprocha a Abner haber entrado a la concubina de su padre",
+     "certeza": "texto",
+     "ref": "2S 3:7",
+     "cita": "¿Por qué has entrado á la concubina de mi padre?"
+    },
+    {
+     "texto": "No pudo responder a Abner porque le temía",
+     "certeza": "texto",
+     "ref": "2S 3:11",
+     "cita": "no pudo responder palabra á Abner, porque le temía"
+    },
+    {
+     "texto": "Manda quitar a Mical a su marido Paltiel",
+     "certeza": "texto",
+     "ref": "2S 3:15",
+     "cita": "Is-boseth envió, y quitóla á su marido Paltiel, hijo de Lais"
+    },
+    {
+     "texto": "Lo matan en su cámara a la hora de la siesta",
+     "certeza": "texto",
+     "ref": "2S 4:5",
+     "cita": "entraron en el mayor calor del día en casa de Is-boseth, el cual estaba durmiendo en su cámara la siesta"
+    },
+    {
+     "texto": "Su cabeza se entierra en el sepulcro de Abner en Hebrón",
+     "certeza": "texto",
+     "ref": "2S 4:12",
+     "cita": "tomaron la cabeza de Is-boseth, y enterráronla en el sepulcro de Abner en Hebrón"
+    }
+   ],
+   "externo": []
+  },
+  "Amnon_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 13:1",
+     "fin": "2S 13:29"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 13:32"
+    },
+    {
+     "ref": "2S 13:33"
+    },
+    {
+     "ref": "2S 13:39"
+    }
+   ],
+   "resumen": "Primogénito de David; se finge enfermo, fuerza a su media hermana Tamar y la echa; Absalón lo manda matar dos años después.",
+   "datos": [
+    {
+     "texto": "Se enamora de Tamar, hermana de Absalón",
+     "certeza": "texto",
+     "ref": "2S 13:1",
+     "cita": "enamoróse de ella Amnón hijo de David"
+    },
+    {
+     "texto": "Se finge enfermo por consejo de Jonadab para que Tamar le cocine",
+     "certeza": "texto",
+     "ref": "2S 13:5",
+     "cita": "Acuéstate en tu cama, y finge que estás enfermo"
+    },
+    {
+     "texto": "No oyó a Tamar, la forzó y se echó con ella",
+     "certeza": "texto",
+     "ref": "2S 13:14",
+     "cita": "pudiendo más que ella la forzó, y echóse con ella"
+    },
+    {
+     "texto": "Luego la aborrece más de lo que la había amado y la echa",
+     "certeza": "texto",
+     "ref": "2S 13:15",
+     "cita": "el odio con que la aborreció fué mayor que el amor con que la había amado"
+    },
+    {
+     "texto": "Absalón ordena herirlo cuando su corazón esté alegre del vino",
+     "certeza": "texto",
+     "ref": "2S 13:28",
+     "cita": "en diciéndoos yo, Herid á Amnón, entonces matadle"
+    }
+   ],
+   "externo": []
+  },
+  "Absalom_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 13:20",
+     "fin": "2S 13:29"
+    },
+    {
+     "inicio": "2S 13:34",
+     "fin": "2S 13:34"
+    },
+    {
+     "inicio": "2S 13:37",
+     "fin": "2S 13:38"
+    },
+    {
+     "inicio": "2S 14:23",
+     "fin": "2S 14:33"
+    },
+    {
+     "inicio": "2S 15:1",
+     "fin": "2S 15:12"
+    },
+    {
+     "inicio": "2S 15:37",
+     "fin": "2S 15:37"
+    },
+    {
+     "inicio": "2S 16:15",
+     "fin": "2S 17:14"
+    },
+    {
+     "inicio": "2S 17:24",
+     "fin": "2S 17:26"
+    },
+    {
+     "inicio": "2S 18:9",
+     "fin": "2S 18:18"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 13:1"
+    },
+    {
+     "ref": "2S 13:4"
+    },
+    {
+     "ref": "2S 13:30"
+    },
+    {
+     "ref": "2S 13:32"
+    },
+    {
+     "ref": "2S 13:39"
+    },
+    {
+     "ref": "2S 14:1"
+    },
+    {
+     "ref": "2S 14:21"
+    },
+    {
+     "ref": "2S 15:13"
+    },
+    {
+     "ref": "2S 15:14"
+    },
+    {
+     "ref": "2S 15:31"
+    },
+    {
+     "ref": "2S 15:34"
+    },
+    {
+     "ref": "2S 16:8"
+    },
+    {
+     "ref": "2S 17:15"
+    },
+    {
+     "ref": "2S 17:18"
+    },
+    {
+     "ref": "2S 17:20"
+    },
+    {
+     "ref": "2S 18:5"
+    },
+    {
+     "ref": "2S 18:29"
+    },
+    {
+     "ref": "2S 18:32"
+    },
+    {
+     "ref": "2S 18:33"
+    },
+    {
+     "ref": "2S 19:1"
+    },
+    {
+     "ref": "2S 19:4"
+    },
+    {
+     "ref": "2S 19:6"
+    },
+    {
+     "ref": "2S 19:9"
+    },
+    {
+     "ref": "2S 19:10"
+    },
+    {
+     "ref": "2S 20:6"
+    }
+   ],
+   "resumen": "Hijo de David y Maaca, muy hermoso; mata a Amnón, huye a Gesur, vuelve, se gana a Israel, se rebela en Hebrón y muere colgado de un alcornoque en el bosque de Efraín.",
+   "datos": [
+    {
+     "texto": "Su hermana Tamar vive desconsolada en su casa",
+     "certeza": "texto",
+     "ref": "2S 13:20",
+     "cita": "quedóse Thamar desconsolada en casa de Absalom su hermano"
+    },
+    {
+     "texto": "Aborrecía a Amnón porque había forzado a Tamar",
+     "certeza": "texto",
+     "ref": "2S 13:22",
+     "cita": "Absalom aborrecía á Amnón, porque había forzado á Thamar su hermana"
+    },
+    {
+     "texto": "Hace matar a Amnón en la fiesta de los esquiladores",
+     "certeza": "texto",
+     "ref": "2S 13:29",
+     "cita": "los criados de Absalom hicieron con Amnón como Absalom lo había mandado"
+    },
+    {
+     "texto": "Estuvo tres años en Gesur",
+     "certeza": "texto",
+     "ref": "2S 13:38",
+     "cita": "estuvo allá tres años"
+    },
+    {
+     "texto": "Nadie en Israel era tan hermoso: sin defecto de la planta del pie a la mollera",
+     "certeza": "texto",
+     "ref": "2S 14:25",
+     "cita": "no había en todo Israel hombre tan hermoso como Absalom"
+    },
+    {
+     "texto": "Cada fin de año su cabello pesaba doscientos siclos de peso real",
+     "certeza": "texto",
+     "ref": "2S 14:26",
+     "cita": "pesaba el cabello de su cabeza doscientos siclos de peso real"
+    },
+    {
+     "texto": "Tuvo tres hijos y una hija, Tamar",
+     "certeza": "texto",
+     "ref": "2S 14:27",
+     "cita": "Naciéronle á Absalom tres hijos, y una hija que se llamó Thamar"
+    },
+    {
+     "texto": "Manda incendiar las cebadas de Joab para que venga",
+     "certeza": "texto",
+     "ref": "2S 14:30",
+     "cita": "id, y pegadles fuego; y los siervos de Absalom pegaron fuego á las tierras"
+    },
+    {
+     "texto": "Se hace de carros, caballos y cincuenta hombres que corran delante de él",
+     "certeza": "texto",
+     "ref": "2S 15:1",
+     "cita": "Absalom se hizo de carros y caballos, y cincuenta hombres que corriesen delante de él"
+    },
+    {
+     "texto": "«Robaba el corazón de los de Israel» en la puerta",
+     "certeza": "texto",
+     "ref": "2S 15:6",
+     "cita": "así robaba Absalom el corazón de los de Israel"
+    },
+    {
+     "texto": "Manda espías: «Absalom reina en Hebrón»",
+     "certeza": "texto",
+     "ref": "2S 15:10",
+     "cita": "diréis: Absalom reina en Hebrón"
+    },
+    {
+     "texto": "Por consejo de Ahitofel entra a las concubinas de su padre",
+     "certeza": "texto",
+     "ref": "2S 16:22",
+     "cita": "entró Absalom á las concubinas de su padre, en ojos de todo Israel"
+    },
+    {
+     "texto": "Prefiere el consejo de Husai al de Ahitofel",
+     "certeza": "texto",
+     "ref": "2S 17:14",
+     "cita": "El consejo de Husai Arachîta es mejor que el consejo de Achitophel"
+    },
+    {
+     "texto": "Su cabeza queda presa en un alcornoque y el mulo sigue",
+     "certeza": "texto",
+     "ref": "2S 18:9",
+     "cita": "asiósele la cabeza al alcornoque, y quedó entre el cielo y la tierra"
+    },
+    {
+     "texto": "Lo echan en un hoyo del bosque bajo un gran montón de piedras",
+     "certeza": "texto",
+     "ref": "2S 18:17",
+     "cita": "echáronle en un gran hoyo en el bosque, y levantaron sobre él un muy grande montón de piedras"
+    },
+    {
+     "texto": "Se levantó en vida una columna: «Yo no tengo hijo que conserve la memoria de mi nombre»",
+     "certeza": "texto",
+     "ref": "2S 18:18",
+     "cita": "Yo no tengo hijo que conserve la memoria de mi nombre"
+    }
+   ],
+   "externo": []
+  },
+  "Tamar_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 13:6",
+     "fin": "2S 13:20"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 13:1"
+    },
+    {
+     "ref": "2S 13:2"
+    },
+    {
+     "ref": "2S 13:4"
+    },
+    {
+     "ref": "2S 13:5"
+    },
+    {
+     "ref": "2S 13:22"
+    },
+    {
+     "ref": "2S 13:32"
+    }
+   ],
+   "resumen": "Hermana hermosa de Absalón y media hermana de Amnón; hace hojuelas para Amnón, él la fuerza y la echa; rasga su ropa de colores y se queda en casa de Absalón.",
+   "datos": [
+    {
+     "texto": "David la envía a casa de Amnón para que le haga de comer",
+     "certeza": "texto",
+     "ref": "2S 13:7",
+     "cita": "Ve ahora á casa de Amnón tu hermano, y hazle de comer"
+    },
+    {
+     "texto": "Hace hojuelas delante de él",
+     "certeza": "texto",
+     "ref": "2S 13:8",
+     "cita": "tomó harina, y amasó é hizo hojuelas delante de él"
+    },
+    {
+     "texto": "Le ruega: «no me hagas fuerza; porque no se ha de hacer así en Israel»",
+     "certeza": "texto",
+     "ref": "2S 13:12",
+     "cita": "No, hermano mío, no me hagas fuerza"
+    },
+    {
+     "texto": "Lleva la ropa de colores de las hijas vírgenes de los reyes",
+     "certeza": "texto",
+     "ref": "2S 13:18",
+     "cita": "una ropa de colores, traje que las hijas vírgenes de los reyes vestían"
+    },
+    {
+     "texto": "Esparce ceniza sobre su cabeza, rasga su ropa y sale gritando",
+     "certeza": "texto",
+     "ref": "2S 13:19",
+     "cita": "tomó ceniza, y [esparcióla] sobre su cabeza, y rasgó la ropa de colores"
+    }
+   ],
+   "externo": []
+  },
+  "Jonadab_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 13:3",
+     "fin": "2S 13:5"
+    },
+    {
+     "inicio": "2S 13:32",
+     "fin": "2S 13:35"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Amigo de Amnón e hijo de Simea, hermano de David; «hombre muy astuto»; le aconseja fingirse enfermo y luego consuela a David diciendo que solo Amnón ha muerto.",
+   "datos": [
+    {
+     "texto": "Es hijo de Simea, hermano de David, y «hombre muy astuto»",
+     "certeza": "texto",
+     "ref": "2S 13:3",
+     "cita": "era Jonadab hombre muy astuto"
+    },
+    {
+     "texto": "Dice a David que solo Amnón ha muerto, pues Absalón lo tenía decidido desde la violación de Tamar",
+     "certeza": "texto",
+     "ref": "2S 13:32",
+     "cita": "sólo Amnón es muerto: porque en boca de Absalom estaba puesto desde el día que Amnón forzó á Thamar su hermana"
+    }
+   ],
+   "externo": []
+  },
+  "Baanah_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 4:2",
+     "fin": "2S 4:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Capitán de compañía de Is-boset, de Beerot; con su hermano Recab mata a Is-boset y David lo manda ejecutar.",
+   "datos": [
+    {
+     "texto": "Capitán, hijo de Rimón de Beerot, de Benjamín",
+     "certeza": "texto",
+     "ref": "2S 4:2",
+     "cita": "el nombre de uno era Baana, y el del otro Rechâb, hijos de Rimmón Beerothita"
+    },
+    {
+     "texto": "Entran como mercaderes de grano y hieren a Is-boset",
+     "certeza": "texto",
+     "ref": "2S 4:6",
+     "cita": "entraron ellos en medio de la casa [en hábito de] mercaderes de grano, y le hirieron en la quinta [costilla]"
+    },
+    {
+     "texto": "David manda matarlos y colgar sus manos y pies sobre el estanque de Hebrón",
+     "certeza": "texto",
+     "ref": "2S 4:12",
+     "cita": "colgáronlos sobre el estanque, en Hebrón"
+    }
+   ],
+   "externo": []
+  },
+  "Rechab_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 4:2",
+     "fin": "2S 4:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hermano de Baana y capitán de Is-boset; lo asesinan juntos y David los hace ejecutar.",
+   "datos": [
+    {
+     "texto": "Hijo de Rimón de Beerot",
+     "certeza": "texto",
+     "ref": "2S 4:2",
+     "cita": "Rechâb, hijos de Rimmón Beerothita"
+    },
+    {
+     "texto": "Llevan la cabeza de Is-boset a David en Hebrón",
+     "certeza": "texto",
+     "ref": "2S 4:8",
+     "cita": "trajeron la cabeza de Is-boseth á David en Hebrón"
+    }
+   ],
+   "externo": []
+  },
+  "Mephibosheth_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 4:4",
+     "fin": "2S 4:4"
+    },
+    {
+     "inicio": "2S 9:5",
+     "fin": "2S 9:13"
+    },
+    {
+     "inicio": "2S 19:24",
+     "fin": "2S 19:30"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 16:1"
+    },
+    {
+     "ref": "2S 16:4"
+    },
+    {
+     "ref": "2S 21:7"
+    }
+   ],
+   "resumen": "Hijo de Jonatán, lisiado de los pies; David lo toma de Lodebar y lo hace comer siempre a su mesa; Siba lo acusa y él recibe a David en su regreso.",
+   "datos": [
+    {
+     "texto": "Tenía cinco años y quedó cojo cuando su ama huyó con él",
+     "certeza": "texto",
+     "ref": "2S 4:4",
+     "cita": "tomóle su ama y huyó; y como iba huyendo con celeridad, cayó el [niño] y quedó cojo"
+    },
+    {
+     "texto": "Se postra y se llama a sí mismo «perro muerto»",
+     "certeza": "texto",
+     "ref": "2S 9:8",
+     "cita": "¿Quién es tu siervo, para que mires á un perro muerto como yo?"
+    },
+    {
+     "texto": "David le devuelve las tierras de Saúl y lo hace comer a su mesa",
+     "certeza": "texto",
+     "ref": "2S 9:7",
+     "cita": "te haré volver todas las tierras de Saúl tu padre; y tú comerás siempre pan á mi mesa"
+    },
+    {
+     "texto": "Vivía en Jerusalén, cojo de ambos pies",
+     "certeza": "texto",
+     "ref": "2S 9:13",
+     "cita": "era cojo de ambos pies"
+    },
+    {
+     "texto": "Recibe a David sin haber lavado sus pies ni sus vestidos desde su salida",
+     "certeza": "texto",
+     "ref": "2S 19:24",
+     "cita": "no había lavado sus pies, ni había cortado su barba, ni tampoco había lavado sus vestidos"
+    },
+    {
+     "texto": "Dice que Siba lo engañó; David decide que partan las tierras",
+     "certeza": "texto",
+     "ref": "2S 19:26",
+     "cita": "mi siervo me ha engañado"
+    },
+    {
+     "texto": "David lo perdona al entregar a los gabaonitas a los hijos de Saúl",
+     "certeza": "texto",
+     "ref": "2S 21:7",
+     "cita": "perdonó el rey á Mephi-boseth, hijo de Jonathán, hijo de Saúl"
+    }
+   ],
+   "externo": []
+  },
+  "Hiram_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 5:11",
+     "fin": "2S 5:11"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Tiro; envía a David embajadores, madera de cedro, carpinteros y canteros para su casa.",
+   "datos": [
+    {
+     "texto": "Envía madera de cedro, carpinteros y canteros",
+     "certeza": "texto",
+     "ref": "2S 5:11",
+     "cita": "Hiram rey de Tiro envió también embajadores á David, y madera de cedro, y carpinteros, y canteros para los muros"
+    }
+   ],
+   "externo": []
+  },
+  "Solomon_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 12:24",
+     "fin": "2S 12:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David y Betsabé, nacido tras la muerte del primer niño; Jehová lo ama y Natán lo llama Jedidías.",
+   "datos": [
+    {
+     "texto": "Nace, lo llaman Salomón y Jehová lo ama",
+     "certeza": "texto",
+     "ref": "2S 12:24",
+     "cita": "llamó su nombre Salomón, al cual amó Jehová"
+    },
+    {
+     "texto": "Natán lo llama Jedidías «á causa de Jehová»",
+     "certeza": "texto",
+     "ref": "2S 12:25",
+     "cita": "llamó su nombre Jedidiah, á causa de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Ahio_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 6:3",
+     "fin": "2S 6:4"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Abinadab; guía el carro nuevo del arca e iba delante del arca.",
+   "datos": [
+    {
+     "texto": "Va delante del arca",
+     "certeza": "texto",
+     "ref": "2S 6:4",
+     "cita": "Ahio iba delante del arca"
+    }
+   ],
+   "externo": []
+  },
+  "Uzzah_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 6:3",
+     "fin": "2S 6:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Abinadab; guía el carro, extiende la mano al arca cuando los bueyes sacuden y Dios lo hiere.",
+   "datos": [
+    {
+     "texto": "Extiende la mano al arca porque los bueyes daban sacudidas",
+     "certeza": "texto",
+     "ref": "2S 6:6",
+     "cita": "Uzza extendió [la mano] al arca de Dios, y túvola; porque los bueyes daban sacudidas"
+    },
+    {
+     "texto": "El furor de Jehová se enciende y cae muerto junto al arca",
+     "certeza": "texto",
+     "ref": "2S 6:7",
+     "cita": "hiriólo allí Dios por aquella temeridad, y cayó allí muerto junto al arca de Dios"
+    },
+    {
+     "texto": "El lugar se llamó Pérez-uza",
+     "certeza": "texto",
+     "ref": "2S 6:8",
+     "cita": "fué llamado aquel lugar Pérez-uzza"
+    }
+   ],
+   "externo": []
+  },
+  "Obed-edom_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 6:10",
+     "fin": "2S 6:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Geteo en cuya casa David deja el arca tres meses; Jehová bendice su casa.",
+   "datos": [
+    {
+     "texto": "El arca queda en su casa tres meses",
+     "certeza": "texto",
+     "ref": "2S 6:11",
+     "cita": "estuvo el arca de Jehová en casa de Obed-edom Getheo tres meses"
+    },
+    {
+     "texto": "Jehová bendice su casa y todo lo que tiene",
+     "certeza": "texto",
+     "ref": "2S 6:12",
+     "cita": "Jehová ha bendecido la casa de Obed-edom, y todo lo que tiene, á causa del arca de Dios"
+    }
+   ],
+   "externo": []
+  },
+  "Nathan_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 7:2",
+     "fin": "2S 7:17"
+    },
+    {
+     "inicio": "2S 12:1",
+     "fin": "2S 12:15"
+    },
+    {
+     "inicio": "2S 12:25",
+     "fin": "2S 12:25"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Profeta de David: primero lo anima a edificar casa, luego le transmite la promesa de Jehová, lo reprende con la parábola de la cordera y llama Jedidías a Salomón.",
+   "datos": [
+    {
+     "texto": "Dice a David «Anda, y haz todo lo que está en tu corazón»",
+     "certeza": "texto",
+     "ref": "2S 7:3",
+     "cita": "Anda, y haz todo lo que está en tu corazón, que Jehová es contigo"
+    },
+    {
+     "texto": "Esa noche viene a él la palabra de Jehová",
+     "certeza": "texto",
+     "ref": "2S 7:4",
+     "cita": "fué palabra de Jehová á Nathán"
+    },
+    {
+     "texto": "Cuenta a David la parábola del rico y el pobre",
+     "certeza": "texto",
+     "ref": "2S 12:1",
+     "cita": "Había dos hombres en una ciudad, el uno rico, y el otro pobre"
+    },
+    {
+     "texto": "«Tú eres aquel hombre»",
+     "certeza": "texto",
+     "ref": "2S 12:7",
+     "cita": "Tú eres aquel hombre"
+    },
+    {
+     "texto": "Dice a David que Jehová ha remitido su pecado, pero morirá el niño",
+     "certeza": "texto",
+     "ref": "2S 12:13",
+     "cita": "También Jehová ha remitido tu pecado: no morirás"
+    }
+   ],
+   "externo": []
+  },
+  "Hadadezer_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 8:3",
+     "fin": "2S 8:5"
+    },
+    {
+     "inicio": "2S 10:16",
+     "fin": "2S 10:19"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 8:7"
+    },
+    {
+     "ref": "2S 8:9"
+    },
+    {
+     "ref": "2S 8:10"
+    },
+    {
+     "ref": "2S 8:12"
+    }
+   ],
+   "resumen": "Rey de Soba, hijo de Rehob; David lo vence y los sirios de Damasco que lo ayudan; después reúne de nuevo a los sirios.",
+   "datos": [
+    {
+     "texto": "David lo hiere cuando iba a extender su término hasta el Éufrates",
+     "certeza": "texto",
+     "ref": "2S 8:3",
+     "cita": "hirió David á Hadad-ezer hijo de Rehob, rey de Soba"
+    },
+    {
+     "texto": "Hace salir a los sirios del otro lado del río, con Sobac por jefe",
+     "certeza": "texto",
+     "ref": "2S 10:16",
+     "cita": "envió Hadad-ezer, y sacó los Siros que estaban de la otra parte del río"
+    }
+   ],
+   "externo": []
+  },
+  "Toi_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 8:9",
+     "fin": "2S 8:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Hamat, enemigo de Hadad-ezer; manda a su hijo Joram con vasos de plata, oro y metal.",
+   "datos": [
+    {
+     "texto": "Era enemigo de Hadad-ezer",
+     "certeza": "texto",
+     "ref": "2S 8:10",
+     "cita": "Toi era enemigo de Hadad-ezer"
+    }
+   ],
+   "externo": []
+  },
+  "Joram_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 8:10",
+     "fin": "2S 8:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Toi; lleva a David vasos de plata, oro y metal.",
+   "datos": [
+    {
+     "texto": "Lleva vasos de plata, de oro y de metal",
+     "certeza": "texto",
+     "ref": "2S 8:10",
+     "cita": "llevaba en su mano vasos de plata, y vasos de oro, y de metal"
+    }
+   ],
+   "externo": []
+  },
+  "Zadok_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:24",
+     "fin": "2S 15:29"
+    },
+    {
+     "inicio": "2S 17:15",
+     "fin": "2S 17:16"
+    },
+    {
+     "inicio": "2S 19:11",
+     "fin": "2S 19:14"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 15:35"
+    },
+    {
+     "ref": "2S 15:36"
+    },
+    {
+     "ref": "2S 18:19"
+    },
+    {
+     "ref": "2S 18:22"
+    },
+    {
+     "ref": "2S 18:27"
+    }
+   ],
+   "resumen": "Sacerdote de David; lleva el arca en la huida, David lo manda volver con ella y con su hijo Ahimaas lo sirve de enlace.",
+   "datos": [
+    {
+     "texto": "Va con los levitas que llevan el arca del pacto",
+     "certeza": "texto",
+     "ref": "2S 15:24",
+     "cita": "Sadoc, y con él todos los Levitas que llevaban el arca del pacto de Dios"
+    },
+    {
+     "texto": "David le pide volver el arca a la ciudad",
+     "certeza": "texto",
+     "ref": "2S 15:25",
+     "cita": "Vuelve el arca de Dios á la ciudad"
+    },
+    {
+     "texto": "David lo llama «el vidente»",
+     "certeza": "texto",
+     "ref": "2S 15:27",
+     "cita": "¿No eres tú el vidente?"
+    }
+   ],
+   "externo": []
+  },
+  "Benaiah_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 23:20",
+     "fin": "2S 23:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Joiada, jefe de los cereteos y peleteos; mata a dos leones de Moab, a un león en un foso y a un egipcio con su propia lanza.",
+   "datos": [
+    {
+     "texto": "Hirió dos leones de Moab y un león en un foso en tiempo de nieve",
+     "certeza": "texto",
+     "ref": "2S 23:20",
+     "cita": "Este hirió dos leones de Moab: y él mismo descendió, é hirió un león en medio de un foso en el tiempo de la nieve"
+    },
+    {
+     "texto": "Mató a un egipcio con su propia lanza",
+     "certeza": "texto",
+     "ref": "2S 23:21",
+     "cita": "arrebató al Egipcio la lanza de la mano, y matólo con su propia lanza"
+    },
+    {
+     "texto": "Es el más aventajado de los treinta; David lo pone en su consejo",
+     "certeza": "texto",
+     "ref": "2S 23:23",
+     "cita": "Y púsolo David en su consejo"
+    }
+   ],
+   "externo": []
+  },
+  "Ziba_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 9:2",
+     "fin": "2S 9:12"
+    },
+    {
+     "inicio": "2S 16:1",
+     "fin": "2S 16:4"
+    },
+    {
+     "inicio": "2S 19:17",
+     "fin": "2S 19:17"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 19:29"
+    }
+   ],
+   "resumen": "Siervo de la casa de Saúl con quince hijos y veinte siervos; revela a Mefi-boset, lleva provisiones a David en su huida y acusa a su amo.",
+   "datos": [
+    {
+     "texto": "David lo llama y le pregunta por la casa de Saúl",
+     "certeza": "texto",
+     "ref": "2S 9:2",
+     "cita": "¿Eres tú Siba? Y él respondió: Tu siervo"
+    },
+    {
+     "texto": "Tenía quince hijos y veinte siervos",
+     "certeza": "texto",
+     "ref": "2S 9:10",
+     "cita": "Y tenía Siba quince hijos y veinte siervos"
+    },
+    {
+     "texto": "Sale a David con un par de asnos, doscientos panes, cien hilos de pasas, cien panes de higos y un cuero de vino",
+     "certeza": "texto",
+     "ref": "2S 16:1",
+     "cita": "Siba, el criado de Mephi-boseth, que lo salía á recibir con un par de asnos enalbardados"
+    },
+    {
+     "texto": "David le da todo lo de Mefi-boset",
+     "certeza": "texto",
+     "ref": "2S 16:4",
+     "cita": "sea tuyo todo lo que tiene Mephi-boseth"
+    },
+    {
+     "texto": "Cruza el Jordán antes que el rey con sus quince hijos",
+     "certeza": "texto",
+     "ref": "2S 19:17",
+     "cita": "Siba criado de la casa de Saúl, con sus quince hijos y sus veinte siervos"
+    }
+   ],
+   "externo": []
+  },
+  "Machir_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 17:27",
+     "fin": "2S 17:29"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 9:4"
+    },
+    {
+     "ref": "2S 9:5"
+    }
+   ],
+   "resumen": "De Lodebar, hijo de Amiel; en su casa vive Mefi-boset y luego trae provisiones a David en Mahanaim.",
+   "datos": [
+    {
+     "texto": "En su casa, en Lodebar, estaba Mefi-boset",
+     "certeza": "texto",
+     "ref": "2S 9:4",
+     "cita": "está en casa de Machîr hijo de Amiel, en Lodebar"
+    },
+    {
+     "texto": "Trae a David camas, tazas, vasijas, trigo, cebada, miel y quesos",
+     "certeza": "texto",
+     "ref": "2S 17:27",
+     "cita": "Machîr hijo de Ammiel de Lodebar"
+    }
+   ],
+   "externo": []
+  },
+  "Hanun_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 10:1",
+     "fin": "2S 10:4"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Rey de Ammón tras Nahas; humilla a los enviados de David y provoca la guerra.",
+   "datos": [
+    {
+     "texto": "Sus príncipes lo convencen de que David manda espías",
+     "certeza": "texto",
+     "ref": "2S 10:3",
+     "cita": "¿no ha enviado David sus siervos á ti por reconocer é inspeccionar la ciudad, para destruirla?"
+    },
+    {
+     "texto": "Rapa la mitad de la barba a los enviados y les corta los vestidos por la mitad",
+     "certeza": "texto",
+     "ref": "2S 10:4",
+     "cita": "rapóles la mitad de la barba, y cortóles los vestidos por la mitad hasta las nalgas"
+    }
+   ],
+   "externo": []
+  },
+  "Shobach_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 10:16",
+     "fin": "2S 10:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "General del ejército de Hadad-ezer; muere en la batalla de Helam.",
+   "datos": [
+    {
+     "texto": "Muere en Helam",
+     "certeza": "texto",
+     "ref": "2S 10:18",
+     "cita": "hirió también á Sobach general del ejército, y murió allí"
+    }
+   ],
+   "externo": []
+  },
+  "Bathsheba_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 11:2",
+     "fin": "2S 11:5"
+    },
+    {
+     "inicio": "2S 11:26",
+     "fin": "2S 11:27"
+    },
+    {
+     "inicio": "2S 12:24",
+     "fin": "2S 12:24"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hija de Eliam, mujer de Urías; David la manda traer, queda embarazada, hace duelo por Urías y luego es mujer de David y madre de Salomón.",
+   "datos": [
+    {
+     "texto": "David la ve lavándose desde el terrado; «era muy hermosa»",
+     "certeza": "texto",
+     "ref": "2S 11:2",
+     "cita": "vió desde el terrado una mujer que se estaba lavando, la cual era muy hermosa"
+    },
+    {
+     "texto": "Es «Bath-sheba hija de Eliam, mujer de Uría Hetheo»",
+     "certeza": "texto",
+     "ref": "2S 11:3",
+     "cita": "Aquella es Bath-sheba hija de Eliam, mujer de Uría Hetheo"
+    },
+    {
+     "texto": "Envía a decir a David: «Yo estoy embarazada»",
+     "certeza": "texto",
+     "ref": "2S 11:5",
+     "cita": "Yo estoy embarazada"
+    },
+    {
+     "texto": "Hace duelo por su marido y después David la recoge en su casa",
+     "certeza": "texto",
+     "ref": "2S 11:26",
+     "cita": "hizo duelo por su marido"
+    },
+    {
+     "texto": "David la consuela y nace Salomón",
+     "certeza": "texto",
+     "ref": "2S 12:24",
+     "cita": "consoló David á Bath-sheba su mujer"
+    }
+   ],
+   "externo": []
+  },
+  "Uriah_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 11:6",
+     "fin": "2S 11:17"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 11:3"
+    },
+    {
+     "ref": "2S 11:21"
+    },
+    {
+     "ref": "2S 11:24"
+    },
+    {
+     "ref": "2S 11:26"
+    },
+    {
+     "ref": "2S 12:9"
+    },
+    {
+     "ref": "2S 12:10"
+    },
+    {
+     "ref": "2S 12:15"
+    }
+   ],
+   "resumen": "Heteo, marido de Betsabé y soldado de David; no baja a su casa mientras el arca y Joab están en el campo, y David hace que lo maten en el asedio de Rabá.",
+   "datos": [
+    {
+     "texto": "Duerme a la puerta de la casa del rey con los siervos de su señor",
+     "certeza": "texto",
+     "ref": "2S 11:9",
+     "cita": "Uría durmió á la puerta de la casa del rey con todos los siervos de su señor"
+    },
+    {
+     "texto": "«El arca, é Israel y Judá, están debajo de tiendas»",
+     "certeza": "texto",
+     "ref": "2S 11:11",
+     "cita": "El arca, é Israel y Judá, están debajo de tiendas"
+    },
+    {
+     "texto": "David lo emborracha y aun así no baja a su casa",
+     "certeza": "texto",
+     "ref": "2S 11:13",
+     "cita": "hízole comer y beber delante de sí, hasta embriagarlo"
+    },
+    {
+     "texto": "Lleva en la carta su propia sentencia",
+     "certeza": "texto",
+     "ref": "2S 11:14",
+     "cita": "escribió David á Joab una carta, la cual envió por mano de Uría"
+    },
+    {
+     "texto": "Muere en el asedio de Rabá",
+     "certeza": "texto",
+     "ref": "2S 11:17",
+     "cita": "murió también Uría Hetheo"
+    },
+    {
+     "texto": "Figura entre los treinta valientes",
+     "certeza": "texto",
+     "ref": "2S 23:39",
+     "cita": "Uría Hetheo. Entre todos treinta y siete"
+    }
+   ],
+   "externo": []
+  },
+  "Ahithophel_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:12",
+     "fin": "2S 15:12"
+    },
+    {
+     "inicio": "2S 16:15",
+     "fin": "2S 16:15"
+    },
+    {
+     "inicio": "2S 16:20",
+     "fin": "2S 16:23"
+    },
+    {
+     "inicio": "2S 17:1",
+     "fin": "2S 17:7"
+    },
+    {
+     "inicio": "2S 17:23",
+     "fin": "2S 17:23"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 15:31"
+    },
+    {
+     "ref": "2S 15:34"
+    },
+    {
+     "ref": "2S 17:14"
+    },
+    {
+     "ref": "2S 17:15"
+    },
+    {
+     "ref": "2S 17:21"
+    }
+   ],
+   "resumen": "Gilonita, consejero de David que se une a Absalón; aconseja entrar a las concubinas y perseguir a David esa noche; al fracasar su consejo se ahorca.",
+   "datos": [
+    {
+     "texto": "Del consejo de David, de Gilo; Absalón lo manda llamar",
+     "certeza": "texto",
+     "ref": "2S 15:12",
+     "cita": "Achitophel Gilonita, del consejo de David, á Gilo su ciudad"
+    },
+    {
+     "texto": "Su consejo «era como si consultaran la palabra de Dios»",
+     "certeza": "texto",
+     "ref": "2S 16:23",
+     "cita": "era como si consultaran la palabra de Dios"
+    },
+    {
+     "texto": "Propone escoger doce mil hombres y seguir a David esa noche",
+     "certeza": "texto",
+     "ref": "2S 17:1",
+     "cita": "Yo escogeré ahora doce mil hombres, y me levantaré, y seguiré á David esta noche"
+    },
+    {
+     "texto": "Al ver que no se cumple su consejo se ahorca y lo sepultan en el sepulcro de su padre",
+     "certeza": "texto",
+     "ref": "2S 17:23",
+     "cita": "ahorcóse y murió, y fué sepultado en el sepulcro de su padre"
+    },
+    {
+     "texto": "Jehová había ordenado que se frustrara su consejo acertado",
+     "certeza": "texto",
+     "ref": "2S 17:14",
+     "cita": "había Jehová ordenado que el acertado consejo de Achitophel se frustrara"
+    }
+   ],
+   "externo": []
+  },
+  "Ittai_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:19",
+     "fin": "2S 15:22"
+    },
+    {
+     "inicio": "2S 18:2",
+     "fin": "2S 18:5"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 18:12"
+    }
+   ],
+   "resumen": "Geteo extranjero con seiscientos hombres; jura seguir a David «para muerte ó para vida» y manda un tercio del ejército.",
+   "datos": [
+    {
+     "texto": "David le dice que es extranjero y desterrado",
+     "certeza": "texto",
+     "ref": "2S 15:19",
+     "cita": "tú eres extranjero, y desterrado también de tu lugar"
+    },
+    {
+     "texto": "«Donde mi señor el rey estuviere, allí estará también tu siervo»",
+     "certeza": "texto",
+     "ref": "2S 15:21",
+     "cita": "ó para muerte ó para vida, donde mi señor el rey estuviere, allí estará también tu siervo"
+    },
+    {
+     "texto": "Manda la tercera parte del pueblo",
+     "certeza": "texto",
+     "ref": "2S 18:2",
+     "cita": "la otra tercera parte al mando de Ittai Getheo"
+    }
+   ],
+   "externo": []
+  },
+  "Ahimaaz_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:27",
+     "fin": "2S 15:27"
+    },
+    {
+     "inicio": "2S 17:17",
+     "fin": "2S 17:21"
+    },
+    {
+     "inicio": "2S 18:19",
+     "fin": "2S 18:30"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 15:36"
+    }
+   ],
+   "resumen": "Hijo de Sadoc; corredor y enlace de David; insiste en llevar las nuevas de la batalla y llega antes que Cusi.",
+   "datos": [
+    {
+     "texto": "Espera junto a la fuente de Rogel con Jonatán",
+     "certeza": "texto",
+     "ref": "2S 17:17",
+     "cita": "Jonathán y Ahimaas estaban junto á la fuente de Rogel"
+    },
+    {
+     "texto": "Pide correr a dar las nuevas al rey",
+     "certeza": "texto",
+     "ref": "2S 18:19",
+     "cita": "¿Correré ahora, y daré las nuevas al rey"
+    },
+    {
+     "texto": "Corre por el camino de la llanura y pasa delante de Cusi",
+     "certeza": "texto",
+     "ref": "2S 18:23",
+     "cita": "Corrió pues Ahimaas por el camino de la llanura, y pasó delante de Cusi"
+    },
+    {
+     "texto": "El atalaya lo reconoce por su correr y David dice «Ese es hombre de bien»",
+     "certeza": "texto",
+     "ref": "2S 18:27",
+     "cita": "Ese es hombre de bien, y viene con buena nueva"
+    }
+   ],
+   "externo": []
+  },
+  "Jonathan_3": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:27",
+     "fin": "2S 15:27"
+    },
+    {
+     "inicio": "2S 17:17",
+     "fin": "2S 17:21"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 15:36"
+    }
+   ],
+   "resumen": "Hijo del sacerdote Abiatar; con Ahimaas lleva el aviso a David y se esconde en un pozo de Bahurim.",
+   "datos": [
+    {
+     "texto": "Con Ahimaas espera junto a la fuente de Rogel",
+     "certeza": "texto",
+     "ref": "2S 17:17",
+     "cita": "Jonathán y Ahimaas estaban junto á la fuente de Rogel"
+    },
+    {
+     "texto": "Se esconden en un pozo en Bahurim",
+     "certeza": "texto",
+     "ref": "2S 17:18",
+     "cita": "llegaron á casa de un hombre en Bahurim, que tenía un pozo en su patio, dentro del cual se metieron"
+    }
+   ],
+   "externo": []
+  },
+  "Hushai_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 15:32",
+     "fin": "2S 15:37"
+    },
+    {
+     "inicio": "2S 16:16",
+     "fin": "2S 16:19"
+    },
+    {
+     "inicio": "2S 17:5",
+     "fin": "2S 17:16"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Arquita, amigo de David; vuelve a Jerusalén fingiéndose siervo de Absalón, frustra el consejo de Ahitofel y avisa por los sacerdotes.",
+   "datos": [
+    {
+     "texto": "Sale a David con la ropa rota y tierra sobre la cabeza",
+     "certeza": "texto",
+     "ref": "2S 15:32",
+     "cita": "Husai Arachîta que le salió al encuentro, trayendo rota su ropa, y tierra sobre su cabeza"
+    },
+    {
+     "texto": "David le pide frustrar el consejo de Ahitofel",
+     "certeza": "texto",
+     "ref": "2S 15:34",
+     "cita": "tú me disiparás el consejo de Achitophel"
+    },
+    {
+     "texto": "Dice a Absalón: «Viva el rey, viva el rey»",
+     "certeza": "texto",
+     "ref": "2S 16:16",
+     "cita": "Viva el rey, viva el rey"
+    },
+    {
+     "texto": "Dice que el consejo de Ahitofel «no es bueno» y aconseja juntar a todo Israel",
+     "certeza": "texto",
+     "ref": "2S 17:7",
+     "cita": "El consejo que ha dado esta vez Achitophel no es bueno"
+    },
+    {
+     "texto": "Avisa a Sadoc y Abiatar para que envíen a David",
+     "certeza": "texto",
+     "ref": "2S 17:15",
+     "cita": "Dijo luego Husai á Sadoc y á Abiathar sacerdotes"
+    }
+   ],
+   "externo": []
+  },
+  "Shimei_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 16:5",
+     "fin": "2S 16:13"
+    },
+    {
+     "inicio": "2S 19:16",
+     "fin": "2S 19:23"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Benjamita de la familia de Saúl, hijo de Gera, de Bahurim; maldice y apedrea a David en su huida y luego le pide perdón al volver.",
+   "datos": [
+    {
+     "texto": "Sale de Bahurim maldiciendo y echando piedras",
+     "certeza": "texto",
+     "ref": "2S 16:5",
+     "cita": "salía uno de la familia de la casa de Saúl, el cual se llamaba Semei, hijo de Gera; y salía maldiciendo"
+    },
+    {
+     "texto": "Lo llama «varón de sangres, y hombre de Belial»",
+     "certeza": "texto",
+     "ref": "2S 16:7",
+     "cita": "Sal, sal, varón de sangres, y hombre de Belial"
+    },
+    {
+     "texto": "Se postra ante el rey: «No me impute mi señor iniquidad»",
+     "certeza": "texto",
+     "ref": "2S 19:19",
+     "cita": "No me impute mi señor iniquidad"
+    },
+    {
+     "texto": "David le jura que no morirá",
+     "certeza": "texto",
+     "ref": "2S 19:23",
+     "cita": "No morirás. Y el rey se lo juró"
+    }
+   ],
+   "externo": []
+  },
+  "Amasa_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 17:25",
+     "fin": "2S 17:25"
+    },
+    {
+     "inicio": "2S 20:4",
+     "fin": "2S 20:12"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 19:13"
+    }
+   ],
+   "resumen": "Primo de Joab (hijo de Itra y de Abigail, hermana de Sarvia); Absalón lo pone sobre el ejército, David le ofrece el puesto de Joab y Joab lo mata junto a la peña de Gabaón.",
+   "datos": [
+    {
+     "texto": "Absalón lo constituye sobre el ejército en lugar de Joab",
+     "certeza": "texto",
+     "ref": "2S 17:25",
+     "cita": "Absalom constituyó á Amasa sobre el ejército en lugar de Joab"
+    },
+    {
+     "texto": "Se tarda más de lo señalado al reunir a Judá",
+     "certeza": "texto",
+     "ref": "2S 20:5",
+     "cita": "detúvose más del tiempo que le había sido señalado"
+    },
+    {
+     "texto": "Joab lo hiere con la daga mientras le toma la barba para besarlo",
+     "certeza": "texto",
+     "ref": "2S 20:9",
+     "cita": "tomó Joab con la diestra la barba de Amasa, para besarlo"
+    }
+   ],
+   "externo": []
+  },
+  "Shobi_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 17:27",
+     "fin": "2S 17:29"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Naas de Rabá de Ammón; trae provisiones a David en Mahanaim.",
+   "datos": [
+    {
+     "texto": "Es «hijo de Naas de Rabba de los hijos de Ammon»",
+     "certeza": "texto",
+     "ref": "2S 17:27",
+     "cita": "Sobi hijo de Naas de Rabba de los hijos de Ammon"
+    }
+   ],
+   "externo": []
+  },
+  "Barzillai_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 17:27",
+     "fin": "2S 17:29"
+    },
+    {
+     "inicio": "2S 19:31",
+     "fin": "2S 19:39"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Galaadita de Rogelim, muy rico; da provisión a David en Mahanaim y a sus ochenta años declina ir a Jerusalén y envía a Quimam.",
+   "datos": [
+    {
+     "texto": "Era muy viejo, de ochenta años, y rico",
+     "certeza": "texto",
+     "ref": "2S 19:32",
+     "cita": "era Barzillai muy viejo, de ochenta años"
+    },
+    {
+     "texto": "Pide morir en su ciudad junto al sepulcro de su padre y su madre",
+     "certeza": "texto",
+     "ref": "2S 19:37",
+     "cita": "muera en mi ciudad, junto al sepulcro de mi padre y de mi madre"
+    },
+    {
+     "texto": "El rey lo besa y lo bendice",
+     "certeza": "texto",
+     "ref": "2S 19:39",
+     "cita": "el rey besó á Barzillai, y bendíjolo"
+    }
+   ],
+   "externo": []
+  },
+  "Chimham_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 19:38",
+     "fin": "2S 19:40"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 19:37"
+    }
+   ],
+   "resumen": "Siervo de Barzilai; cruza el Jordán con el rey en lugar de su señor.",
+   "datos": [
+    {
+     "texto": "Barzilai lo propone «en lugar» suyo: «pase él con mi señor el rey»",
+     "certeza": "texto",
+     "ref": "2S 19:37",
+     "cita": "He aquí tu siervo Chimham; que pase él con mi señor el rey"
+    }
+   ],
+   "externo": []
+  },
+  "Sheba_4": {
+   "apariciones": [
+    {
+     "inicio": "2S 20:1",
+     "fin": "2S 20:2"
+    },
+    {
+     "inicio": "2S 20:14",
+     "fin": "2S 20:15"
+    },
+    {
+     "inicio": "2S 20:21",
+     "fin": "2S 20:22"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 20:6"
+    },
+    {
+     "ref": "2S 20:7"
+    },
+    {
+     "ref": "2S 20:10"
+    },
+    {
+     "ref": "2S 20:13"
+    }
+   ],
+   "resumen": "Benjamita, hijo de Bicri, «hombre perverso»; toca la corneta y arrastra a Israel lejos de David hasta que lo cercan en Abel y los de la ciudad le cortan la cabeza.",
+   "datos": [
+    {
+     "texto": "Toca la corneta: «No tenemos nosotros parte en David»",
+     "certeza": "texto",
+     "ref": "2S 20:1",
+     "cita": "No tenemos nosotros parte en David, ni heredad en el hijo de Isaí"
+    },
+    {
+     "texto": "Todos los hombres de Israel lo siguen; Judá sigue a David",
+     "certeza": "texto",
+     "ref": "2S 20:2",
+     "cita": "se fueron de en pos de David todos los hombres de Israel, y seguían á Seba hijo de Bichri"
+    },
+    {
+     "texto": "Pasa por todas las tribus hasta Abel de Bet-maaca",
+     "certeza": "texto",
+     "ref": "2S 20:14",
+     "cita": "pasó por todas las tribus de Israel hasta Abel y Beth-maachâ"
+    },
+    {
+     "texto": "Le cortan la cabeza y se la echan a Joab",
+     "certeza": "texto",
+     "ref": "2S 20:22",
+     "cita": "cortaron la cabeza á Seba hijo de Bichri, y echáronla á Joab"
+    }
+   ],
+   "externo": []
+  },
+  "Rizpah_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:10",
+     "fin": "2S 21:11"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 3:7"
+    },
+    {
+     "ref": "2S 21:8"
+    }
+   ],
+   "resumen": "Concubina de Saúl, hija de Aja: Is-boset reprocha a Abner haberla tomado (3:7); más tarde guarda los cuerpos de sus dos hijos y los cinco ahorcados sobre un saco hasta que llueve.",
+   "datos": [
+    {
+     "texto": "Concubina de Saúl, hija de Aja",
+     "certeza": "texto",
+     "ref": "2S 3:7",
+     "cita": "Y había Saúl tenido una concubina que se llamaba Rispa, hija de Aja"
+    },
+    {
+     "texto": "Tiende un saco sobre un peñasco desde la siega hasta que llueve",
+     "certeza": "texto",
+     "ref": "2S 21:10",
+     "cita": "Rispa hija de Aja un saco, tendióselo sobre un peñasco, desde el principio de la siega hasta que llovió sobre ellos agua del cielo"
+    },
+    {
+     "texto": "No deja que se asiente ave de día ni bestia de noche",
+     "certeza": "texto",
+     "ref": "2S 21:10",
+     "cita": "no dejó á ninguna ave del cielo asentarse sobre ellos de día, ni bestias del campo de noche"
+    },
+    {
+     "texto": "Sus hijos son Armoni y Mefi-boset, hijos de Saúl",
+     "certeza": "texto",
+     "ref": "2S 21:8",
+     "cita": "dos hijos de Rispa hija de Aja, los cuales ella había parido á Saúl"
+    }
+   ],
+   "externo": []
+  },
+  "Armoni_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:8",
+     "fin": "2S 21:9"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Rizpa y de Saúl; los gabaonitas lo ahorcan con seis más.",
+   "datos": [
+    {
+     "texto": "Hijo de Rizpa y de Saúl",
+     "certeza": "texto",
+     "ref": "2S 21:8",
+     "cita": "á Armoni y á Mephi-boseth"
+    },
+    {
+     "texto": "Lo ahorcan los gabaonitas en el monte delante de Jehová",
+     "certeza": "texto",
+     "ref": "2S 21:9",
+     "cita": "los ahorcaron en el monte delante de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "Mephibosheth_2": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:8",
+     "fin": "2S 21:9"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Rizpa y de Saúl, distinto del hijo de Jonatán; los gabaonitas lo ahorcan.",
+   "datos": [
+    {
+     "texto": "Hijo de Rizpa y de Saúl; no es el hijo de Jonatán, a quien el rey perdona",
+     "certeza": "texto",
+     "ref": "2S 21:8",
+     "cita": "á Armoni y á Mephi-boseth"
+    },
+    {
+     "texto": "Murieron juntos los siete al comienzo de la siega de las cebadas",
+     "certeza": "texto",
+     "ref": "2S 21:9",
+     "cita": "murieron juntos aquellos siete"
+    }
+   ],
+   "externo": []
+  },
+  "Ishbi-benob_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:16",
+     "fin": "2S 21:17"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Filisteo de los hijos del gigante, con una lanza de trescientos siclos; intenta herir a David y lo mata Abisai.",
+   "datos": [
+    {
+     "texto": "Su lanza pesaba trescientos siclos de metal",
+     "certeza": "texto",
+     "ref": "2S 21:16",
+     "cita": "el peso de cuya lanza era [de] trescientos siclos de metal"
+    }
+   ],
+   "externo": []
+  },
+  "Saph_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:18",
+     "fin": "2S 21:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "De los hijos del gigante; lo hiere Sibecai en Gob.",
+   "datos": [
+    {
+     "texto": "Sibecai lo hiere en Gob",
+     "certeza": "texto",
+     "ref": "2S 21:18",
+     "cita": "Sibechâi Husathita hirió á Saph, que era de los hijos del gigante"
+    }
+   ],
+   "externo": []
+  },
+  "Sibbecai_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:18",
+     "fin": "2S 21:18"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Husatita; mata a Saf en la guerra de Gob (la lista de 23:27 trae «Mebunai de Husa», identificado con él por la fuente).",
+   "datos": [
+    {
+     "texto": "Hiere a Saf, de los hijos del gigante",
+     "certeza": "texto",
+     "ref": "2S 21:18",
+     "cita": "Sibechâi Husathita hirió á Saph"
+    },
+    {
+     "texto": "«Mebunai de Husa» (23:27) sería él: identidad inferida",
+     "certeza": "inferido",
+     "ref": "2S 23:27",
+     "cita": "Mebunnai de Husa"
+    }
+   ],
+   "externo": []
+  },
+  "Elhanan_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:19",
+     "fin": "2S 21:19"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "De Belén, hijo de Jaare-oregim; en 21:19 la RV1909 dice que hirió a «Goliath Getheo» (Goliat: ver su nota); entre los treinta es «hijo de Dodo» (identidad inferida).",
+   "datos": [
+    {
+     "texto": "«Elhanan, hijo de Jaare-oregim de Beth-lehem, hirió á Goliath Getheo»",
+     "certeza": "texto",
+     "ref": "2S 21:19",
+     "cita": "Elhanan, hijo de Jaare-oregim de Beth-lehem, hirió á Goliath Getheo"
+    },
+    {
+     "texto": "Entre los treinta: «Elhaanan hijo de Dodo de Beth-lehem» (se identifica con él por la fuente)",
+     "certeza": "inferido",
+     "ref": "2S 23:24",
+     "cita": "Elhaanan hijo de Dodo de Beth-lehem"
+    }
+   ],
+   "externo": []
+  },
+  "Jonathan_4": {
+   "apariciones": [
+    {
+     "inicio": "2S 21:20",
+     "fin": "2S 21:21"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Sima, hermano de David; mata al gigante de seis dedos por mano de Gat.",
+   "datos": [
+    {
+     "texto": "Mata al gigante de veinticuatro dedos que desafió a Israel",
+     "certeza": "texto",
+     "ref": "2S 21:21",
+     "cita": "Este desafió á Israel, y matólo Jonathán, hijo de Sima hermano de David"
+    }
+   ],
+   "externo": []
+  },
+  "Josheb-basshebeth_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 23:8",
+     "fin": "2S 23:8"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "«El Tacmonita», principal de los capitanes, Adino el eznita; mató a ochocientos en una ocasión.",
+   "datos": [
+    {
+     "texto": "Principal de los capitanes; mató sobre ochocientos hombres",
+     "certeza": "texto",
+     "ref": "2S 23:8",
+     "cita": "Adino el Eznita, que mató en una ocasión sobre ochocientos hombres"
+    }
+   ],
+   "externo": []
+  },
+  "Eleazar_3": {
+   "apariciones": [
+    {
+     "inicio": "2S 23:9",
+     "fin": "2S 23:10"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Dodo de Ahohi; uno de los tres valientes: hiere filisteos hasta que su mano se contrae a la espada.",
+   "datos": [
+    {
+     "texto": "Hiere a los filisteos hasta que su mano queda contraída a la espada",
+     "certeza": "texto",
+     "ref": "2S 23:10",
+     "cita": "hirió á los Filisteos hasta que su mano se cansó, y quedósele contraída á la espada"
+    },
+    {
+     "texto": "Jehová hace «gran salud» ese día",
+     "certeza": "texto",
+     "ref": "2S 23:10",
+     "cita": "Aquel día Jehová hizo gran salud"
+    }
+   ],
+   "externo": []
+  },
+  "Shammah_3": {
+   "apariciones": [
+    {
+     "inicio": "2S 23:11",
+     "fin": "2S 23:12"
+    }
+   ],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Age, ararita; defiende un campo de lentejas contra los filisteos y es uno de los tres.",
+   "datos": [
+    {
+     "texto": "Se para en medio del campo de lentejas y lo defiende",
+     "certeza": "texto",
+     "ref": "2S 23:12",
+     "cita": "se paró en medio de la suerte de tierra, y defendióla, é hirió á los Filisteos"
+    }
+   ],
+   "externo": []
+  },
+  "Araunah_1": {
+   "apariciones": [
+    {
+     "inicio": "2S 24:20",
+     "fin": "2S 24:24"
+    }
+   ],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 24:16"
+    },
+    {
+     "ref": "2S 24:18"
+    }
+   ],
+   "resumen": "Jebuseo dueño de la era junto a la que se detiene el ángel; ofrece gratis la era, los bueyes y la leña, pero David la compra.",
+   "datos": [
+    {
+     "texto": "Se inclina ante el rey con la cara a tierra",
+     "certeza": "texto",
+     "ref": "2S 24:20",
+     "cita": "inclinóse delante del rey hacia tierra"
+    },
+    {
+     "texto": "Ofrece bueyes para el holocausto y trillos y pertrechos para leña",
+     "certeza": "texto",
+     "ref": "2S 24:22",
+     "cita": "he aquí bueyes para el holocausto; y trillos y otros pertrechos de bueyes para leña"
+    },
+    {
+     "texto": "David se la compra: «no ofreceré á Jehová mi Dios holocaustos por nada»",
+     "certeza": "texto",
+     "ref": "2S 24:24",
+     "cita": "no ofreceré á Jehová mi Dios holocaustos por nada"
+    }
+   ],
+   "externo": []
+  },
+  "Chileab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Segundo hijo de David, nacido en Hebrón de Abigail; solo sale en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Segundo hijo de David, nacido en Hebrón de Abigail",
+     "certeza": "texto",
+     "ref": "2S 3:3",
+     "cita": "Su segundo Chileab, de Abigail la mujer de Nabal"
+    }
+   ],
+   "externo": []
+  },
+  "Maacah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hija de Talmai, rey de Gesur; madre de Absalón en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Hija de Talmai, rey de Gesur",
+     "certeza": "texto",
+     "ref": "2S 3:3",
+     "cita": "Absalóm, hijo de Maachâ, hija de Talmai rey de Gessur"
+    }
+   ],
+   "externo": []
+  },
+  "Talmai_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 13:37"
+    }
+   ],
+   "resumen": "Rey de Gesur, abuelo de Absalón; Absalón huye a él, pero el texto no cuenta nada de él.",
+   "datos": [
+    {
+     "texto": "Rey de Gesur, abuelo de Absalón",
+     "certeza": "texto",
+     "ref": "2S 13:37",
+     "cita": "fuése á Talmai hijo de Amiud, rey de Gessur"
+    }
+   ],
+   "externo": []
+  },
+  "Abital_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Madre de Sefatías, quinto hijo de David en Hebrón; solo en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Madre de Sefatías, quinto hijo de David en Hebrón",
+     "certeza": "texto",
+     "ref": "2S 3:4",
+     "cita": "el quinto, Saphatías hijo de Abital"
+    }
+   ],
+   "externo": []
+  },
+  "Adonijah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Cuarto hijo de David en Hebrón, hijo de Haguit; en 2 S solo sale en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Cuarto hijo de David en Hebrón, hijo de Haguit",
+     "certeza": "texto",
+     "ref": "2S 3:4",
+     "cita": "El cuarto, Adonías hijo de Haggith"
+    }
+   ],
+   "externo": []
+  },
+  "Haggith_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Madre de Adonías; solo en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Madre de Adonías",
+     "certeza": "texto",
+     "ref": "2S 3:4",
+     "cita": "El cuarto, Adonías hijo de Haggith"
+    }
+   ],
+   "externo": []
+  },
+  "Shephatiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Quinto hijo de David en Hebrón, de Abital; solo en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Quinto hijo de David en Hebrón, de Abital",
+     "certeza": "texto",
+     "ref": "2S 3:4",
+     "cita": "el quinto, Saphatías hijo de Abital"
+    }
+   ],
+   "externo": []
+  },
+  "Eglah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Mujer de David y madre de Itream; solo en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Mujer de David y madre de Itream",
+     "certeza": "texto",
+     "ref": "2S 3:5",
+     "cita": "de Egla mujer de David"
+    }
+   ],
+   "externo": []
+  },
+  "Ithream_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Sexto hijo de David en Hebrón, de Egla; solo en la lista de 3:2-5.",
+   "datos": [
+    {
+     "texto": "Sexto hijo de David en Hebrón, de Egla",
+     "certeza": "texto",
+     "ref": "2S 3:5",
+     "cita": "El sexto, Jetream, de Egla mujer de David"
+    }
+   ],
+   "externo": []
+  },
+  "Aiah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 3:7"
+    },
+    {
+     "ref": "2S 21:8"
+    },
+    {
+     "ref": "2S 21:10"
+    },
+    {
+     "ref": "2S 21:11"
+    }
+   ],
+   "resumen": "Padre de Rizpa; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Rizpa",
+     "certeza": "texto",
+     "ref": "2S 3:7",
+     "cita": "Rispa, hija de Aja"
+    }
+   ],
+   "externo": []
+  },
+  "Rimmon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 4:2"
+    },
+    {
+     "ref": "2S 4:5"
+    },
+    {
+     "ref": "2S 4:9"
+    }
+   ],
+   "resumen": "De Beerot, padre de Baana y Recab; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "De Beerot, padre de Baana y Recab",
+     "certeza": "texto",
+     "ref": "2S 4:2",
+     "cita": "hijos de Rimmón Beerothita"
+    }
+   ],
+   "externo": []
+  },
+  "Nathan_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén (distinto del profeta); solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén (distinto del profeta)",
+     "certeza": "texto",
+     "ref": "2S 5:14",
+     "cita": "Sammua, y Sobab, y Nathán, y Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Shammua_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:14",
+     "cita": "Sammua, y Sobab, y Nathán, y Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Shobab_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:14",
+     "cita": "Sammua, y Sobab, y Nathán, y Salomón"
+    }
+   ],
+   "externo": []
+  },
+  "Elishua_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:15",
+     "cita": "E Ibhar, y Elisua, y Nepheg"
+    }
+   ],
+   "externo": []
+  },
+  "Ibhar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:15",
+     "cita": "E Ibhar, y Elisua, y Nepheg"
+    }
+   ],
+   "externo": []
+  },
+  "Nepheg_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:15",
+     "cita": "E Ibhar, y Elisua, y Nepheg"
+    }
+   ],
+   "externo": []
+  },
+  "Japhia_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:16",
+     "cita": "Y Japhia, y Elisama, y Eliada, y Eliphelet"
+    }
+   ],
+   "externo": []
+  },
+  "Elishama_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:16",
+     "cita": "Y Japhia, y Elisama, y Eliada, y Eliphelet"
+    }
+   ],
+   "externo": []
+  },
+  "Eliada_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:16",
+     "cita": "Y Japhia, y Elisama, y Eliada, y Eliphelet"
+    }
+   ],
+   "externo": []
+  },
+  "Eliphelet_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de David nacido en Jerusalén; solo en la lista de 5:13-16.",
+   "datos": [
+    {
+     "texto": "Hijo de David nacido en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 5:16",
+     "cita": "Y Japhia, y Elisama, y Eliada, y Eliphelet"
+    }
+   ],
+   "externo": []
+  },
+  "Rehob_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 8:3"
+    },
+    {
+     "ref": "2S 8:12"
+    }
+   ],
+   "resumen": "Padre de Hadad-ezer, rey de Soba; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Hadad-ezer, rey de Soba",
+     "certeza": "texto",
+     "ref": "2S 8:3",
+     "cita": "Hadad-ezer hijo de Rehob, rey de Soba"
+    }
+   ],
+   "externo": []
+  },
+  "Ahilud_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Josafat el canciller; solo en las listas de oficiales.",
+   "datos": [
+    {
+     "texto": "Padre de Josafat el canciller",
+     "certeza": "texto",
+     "ref": "2S 8:16",
+     "cita": "Josaphat hijo de Ahilud, canciller"
+    }
+   ],
+   "externo": []
+  },
+  "Jehoshaphat_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Canciller de David; solo en las listas de oficiales (8:16; 20:24).",
+   "datos": [
+    {
+     "texto": "Canciller de David",
+     "certeza": "texto",
+     "ref": "2S 8:16",
+     "cita": "Josaphat hijo de Ahilud, canciller"
+    }
+   ],
+   "externo": []
+  },
+  "Ahimelech_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Sacerdote, hijo de Abiatar según 8:17; solo en la lista de oficiales (1 S 22:20 da otra relación; no se armoniza).",
+   "datos": [
+    {
+     "texto": "Sacerdote, hijo de Abiatar según 8:17",
+     "certeza": "texto",
+     "ref": "2S 8:17",
+     "cita": "Ahimelech hijo de Abiathar, eran sacerdotes"
+    }
+   ],
+   "externo": []
+  },
+  "Ahitub_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Sadoc («Ahitud» en la RV1909); solo en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Padre de Sadoc («Ahitud» en la RV1909)",
+     "certeza": "texto",
+     "ref": "2S 8:17",
+     "cita": "Sadoc hijo de Ahitud"
+    }
+   ],
+   "externo": []
+  },
+  "Seraiah_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Escriba de David; solo en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Escriba de David",
+     "certeza": "texto",
+     "ref": "2S 8:17",
+     "cita": "Seraía era escriba"
+    }
+   ],
+   "externo": []
+  },
+  "Jehoiada_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 23:20"
+    },
+    {
+     "ref": "2S 23:22"
+    }
+   ],
+   "resumen": "Padre de Benaía, el de los cereteos y peleteos; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Benaía, el de los cereteos y peleteos",
+     "certeza": "texto",
+     "ref": "2S 23:20",
+     "cita": "Benaía hijo de Joiada, hijo de un varón esforzado"
+    }
+   ],
+   "externo": []
+  },
+  "Ammiel_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 9:4"
+    },
+    {
+     "ref": "2S 9:5"
+    },
+    {
+     "ref": "2S 17:27"
+    }
+   ],
+   "resumen": "Padre de Maquir de Lodebar; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Maquir de Lodebar",
+     "certeza": "texto",
+     "ref": "2S 9:4",
+     "cita": "Machîr hijo de Amiel, en Lodebar"
+    }
+   ],
+   "externo": []
+  },
+  "Mica_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 9:12"
+    }
+   ],
+   "resumen": "Hijo pequeño de Mefi-boset; solo se nombra su existencia.",
+   "datos": [
+    {
+     "texto": "Hijo pequeño de Mefi-boset",
+     "certeza": "texto",
+     "ref": "2S 9:12",
+     "cita": "un hijo pequeño, que se llamaba Michâ"
+    }
+   ],
+   "externo": []
+  },
+  "Eliam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 11:3"
+    }
+   ],
+   "resumen": "Padre de Betsabé; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Betsabé",
+     "certeza": "texto",
+     "ref": "2S 11:3",
+     "cita": "Aquella es Bath-sheba hija de Eliam"
+    }
+   ],
+   "externo": []
+  },
+  "Ammihud_4": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 13:37"
+    }
+   ],
+   "resumen": "Padre de Talmai, rey de Gesur (RV1909: Amiud); solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Talmai, rey de Gesur (RV1909: Amiud)",
+     "certeza": "texto",
+     "ref": "2S 13:37",
+     "cita": "Talmai hijo de Amiud, rey de Gessur"
+    }
+   ],
+   "externo": []
+  },
+  "Tamar_3": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 14:27"
+    }
+   ],
+   "resumen": "Hija de Absalón, «hermosa de ver»; solo se nombra su nacimiento.",
+   "datos": [
+    {
+     "texto": "Hija de Absalón, «hermosa de ver»",
+     "certeza": "texto",
+     "ref": "2S 14:27",
+     "cita": "una hija que se llamó Thamar, la cual era hermosa de ver"
+    }
+   ],
+   "externo": []
+  },
+  "Gera_3": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 16:5"
+    },
+    {
+     "ref": "2S 19:16"
+    },
+    {
+     "ref": "2S 19:18"
+    }
+   ],
+   "resumen": "Padre de Simei; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Simei",
+     "certeza": "texto",
+     "ref": "2S 16:5",
+     "cita": "Semei, hijo de Gera"
+    }
+   ],
+   "externo": []
+  },
+  "Abigail_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 17:25"
+    }
+   ],
+   "resumen": "Hermana de Sarvia y madre de Amasa; solo se nombra en 17:25 (distinta de la mujer de Nabal).",
+   "datos": [
+    {
+     "texto": "Hermana de Sarvia y madre de Amasa",
+     "certeza": "texto",
+     "ref": "2S 17:25",
+     "cita": "Abigail hija de Naas, hermana de Sarvia, madre de Joab"
+    }
+   ],
+   "externo": []
+  },
+  "Ithra_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 17:25"
+    }
+   ],
+   "resumen": "Israelita, padre de Amasa y marido de Abigail; solo se nombra en 17:25.",
+   "datos": [
+    {
+     "texto": "Israelita, padre de Amasa y marido de Abigail",
+     "certeza": "texto",
+     "ref": "2S 17:25",
+     "cita": "llamado Itra, el cual había entrado á Abigail"
+    }
+   ],
+   "externo": []
+  },
+  "Nahash_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 17:25"
+    }
+   ],
+   "resumen": "Padre de Abigail (17:25); el texto no dice nada más (BibleData lo registra como mujer, pero 17:25 no lo dice).",
+   "datos": [
+    {
+     "texto": "Padre de Abigail (17:25)",
+     "certeza": "texto",
+     "ref": "2S 17:25",
+     "cita": "Abigail hija de Naas"
+    }
+   ],
+   "externo": []
+  },
+  "Bichri_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 20:1"
+    },
+    {
+     "ref": "2S 20:2"
+    },
+    {
+     "ref": "2S 20:6"
+    },
+    {
+     "ref": "2S 20:7"
+    },
+    {
+     "ref": "2S 20:10"
+    },
+    {
+     "ref": "2S 20:13"
+    },
+    {
+     "ref": "2S 20:21"
+    },
+    {
+     "ref": "2S 20:22"
+    }
+   ],
+   "resumen": "Padre de Seba; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Seba",
+     "certeza": "texto",
+     "ref": "2S 20:1",
+     "cita": "Seba, hijo de Bichri"
+    }
+   ],
+   "externo": []
+  },
+  "Adoram_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Encargado de los tributos; solo en la lista de oficiales de 20:23-26.",
+   "datos": [
+    {
+     "texto": "Encargado de los tributos",
+     "certeza": "texto",
+     "ref": "2S 20:24",
+     "cita": "Adoram sobre los tributos"
+    }
+   ],
+   "externo": []
+  },
+  "Ira_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Jaireo, jefe principal cerca de David; solo en la lista de oficiales de 20:23-26.",
+   "datos": [
+    {
+     "texto": "Jaireo, jefe principal cerca de David",
+     "certeza": "texto",
+     "ref": "2S 20:25",
+     "cita": "é Ira Jaireo fué un jefe principal cerca de David"
+    }
+   ],
+   "externo": []
+  },
+  "Sheva_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Escriba de David (20:25), distinto de Seba hijo de Bichri; solo en la lista de oficiales.",
+   "datos": [
+    {
+     "texto": "Escriba de David (20:25), distinto de Seba hijo de Bichri",
+     "certeza": "texto",
+     "ref": "2S 20:25",
+     "cita": "Seba, escriba"
+    }
+   ],
+   "externo": []
+  },
+  "Barzillai_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 21:8"
+    }
+   ],
+   "resumen": "Molatita, padre de Adriel; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Molatita, padre de Adriel",
+     "certeza": "texto",
+     "ref": "2S 21:8",
+     "cita": "Adriel, hijo de Barzillai Molathita"
+    }
+   ],
+   "externo": []
+  },
+  "Jaare-oregim_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 21:19"
+    }
+   ],
+   "resumen": "Padre de Elhanán de Belén (RV1909: «Jaare-oregim»); se lo identifica con Dodo por la fuente (inferido); solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Elhanán de Belén (RV1909: «Jaare-oregim»)",
+     "certeza": "texto",
+     "ref": "2S 21:19",
+     "cita": "hijo de Jaare-oregim de Beth-lehem"
+    }
+   ],
+   "externo": []
+  },
+  "Dodo_2": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 23:9"
+    }
+   ],
+   "resumen": "Padre de Eleazar, de Ahohi; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Padre de Eleazar, de Ahohi",
+     "certeza": "texto",
+     "ref": "2S 23:9",
+     "cita": "Eleazar, hijo de Dodo de Ahohi"
+    }
+   ],
+   "externo": []
+  },
+  "Agee_1": {
+   "apariciones": [],
+   "menciones_posteriores": [
+    {
+     "ref": "2S 23:11"
+    }
+   ],
+   "resumen": "Ararita, padre de Sama; solo se nombra como padre.",
+   "datos": [
+    {
+     "texto": "Ararita, padre de Sama",
+     "certeza": "texto",
+     "ref": "2S 23:11",
+     "cita": "Samma, hijo de Age Araita"
+    }
+   ],
+   "externo": []
+  },
+  "Elika_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Harod, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Harod, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:25",
+     "cita": "Elica de Harodi"
+    }
+   ],
+   "externo": []
+  },
+  "Shammah_4": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Harod, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Harod, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:25",
+     "cita": "Samma de Harodi"
+    }
+   ],
+   "externo": []
+  },
+  "Helez_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:26",
+     "cita": "Heles de Palti"
+    }
+   ],
+   "externo": []
+  },
+  "Ikkesh_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Ira de Tecoa; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre de Ira de Tecoa",
+     "certeza": "texto",
+     "ref": "2S 23:26",
+     "cita": "Hira, hijo de Jecces, de Tecoa"
+    }
+   ],
+   "externo": []
+  },
+  "Ira_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Tecoa, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Tecoa, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:26",
+     "cita": "Hira, hijo de Jecces, de Tecoa"
+    }
+   ],
+   "externo": []
+  },
+  "Abiezer_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Anatot, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Anatot, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:27",
+     "cita": "Abiezer de Anathoth"
+    }
+   ],
+   "externo": []
+  },
+  "Maharai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Netofa, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Netofa, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:28",
+     "cita": "Maharai de Netophath"
+    }
+   ],
+   "externo": []
+  },
+  "Zalmon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:28",
+     "cita": "Selmo de Hahoh"
+    }
+   ],
+   "externo": []
+  },
+  "Baanah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Heleb de Netofa; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre de Heleb de Netofa",
+     "certeza": "texto",
+     "ref": "2S 23:29",
+     "cita": "Helec hijo de Baana de Netophath"
+    }
+   ],
+   "externo": []
+  },
+  "Heleb_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Netofa, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Netofa, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:29",
+     "cita": "Helec hijo de Baana de Netophath"
+    }
+   ],
+   "externo": []
+  },
+  "Ittai_2S23": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Itai hijo de Ribai, benjamita de Gabaa, de los treinta; distinto de Itai el geteo (15:19); solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Itai hijo de Ribai, benjamita de Gabaa, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:29",
+     "cita": "Ittai hijo de Ribai de Gabaa de los hijos de Benjamín"
+    }
+   ],
+   "externo": []
+  },
+  "Ribai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Itai de Gabaa; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre de Itai de Gabaa",
+     "certeza": "texto",
+     "ref": "2S 23:29",
+     "cita": "Ittai hijo de Ribai de Gabaa de los hijos de Benjamín"
+    }
+   ],
+   "externo": []
+  },
+  "Benaiah_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Piratonita, de los treinta (distinto de Benaía hijo de Joiada); solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Piratonita, de los treinta (distinto de Benaía hijo de Joiada)",
+     "certeza": "texto",
+     "ref": "2S 23:30",
+     "cita": "Benaía Pirathonita"
+    }
+   ],
+   "externo": []
+  },
+  "Hiddai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Del arroyo de Gaas, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Del arroyo de Gaas, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:30",
+     "cita": "Hiddai del arroyo de Gaas"
+    }
+   ],
+   "externo": []
+  },
+  "Abi-albon_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Arbat, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Arbat, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:31",
+     "cita": "Abi-albon de Arbath"
+    }
+   ],
+   "externo": []
+  },
+  "Azmaveth_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Barhum, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Barhum, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:31",
+     "cita": "Asmaveth de Barhum"
+    }
+   ],
+   "externo": []
+  },
+  "Eliahba_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Saalbón, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Saalbón, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:32",
+     "cita": "Elihaba de Saalbón"
+    }
+   ],
+   "externo": []
+  },
+  "Jashen_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre (o clan) de Jonatán de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre (o clan) de Jonatán de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:32",
+     "cita": "Jonathán de los hijos de Jassén"
+    }
+   ],
+   "externo": []
+  },
+  "Jonathan_5": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De los hijos de Jasén, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De los hijos de Jasén, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:32",
+     "cita": "Jonathán de los hijos de Jassén"
+    }
+   ],
+   "externo": []
+  },
+  "Shammah_5": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Arar, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Arar, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:33",
+     "cita": "Samma de Arar"
+    }
+   ],
+   "externo": []
+  },
+  "Ahiam_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Sarar, de Arar, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Hijo de Sarar, de Arar, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:33",
+     "cita": "Ahiam hijo de Sarar de Arar"
+    }
+   ],
+   "externo": []
+  },
+  "Sharar_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Ahíam; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre de Ahíam",
+     "certeza": "texto",
+     "ref": "2S 23:33",
+     "cita": "Ahiam hijo de Sarar de Arar"
+    }
+   ],
+   "externo": []
+  },
+  "Ahasbai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Elifelet; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre de Elifelet",
+     "certeza": "texto",
+     "ref": "2S 23:34",
+     "cita": "Elipheleth hijo de Asbai hijo de Maachâti"
+    }
+   ],
+   "externo": []
+  },
+  "Eliphelet_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Asbai, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Hijo de Asbai, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:34",
+     "cita": "Elipheleth hijo de Asbai hijo de Maachâti"
+    }
+   ],
+   "externo": []
+  },
+  "Eliam_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Ahitofel de Gelón, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Hijo de Ahitofel de Gelón, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:34",
+     "cita": "Eliam hijo de Achîtophel de Gelón"
+    }
+   ],
+   "externo": []
+  },
+  "Hezro_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Del Carmelo, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Del Carmelo, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:35",
+     "cita": "Hesrai del Carmelo"
+    }
+   ],
+   "externo": []
+  },
+  "Paarai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Arbi, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Arbi, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:35",
+     "cita": "Pharai de Arbi"
+    }
+   ],
+   "externo": []
+  },
+  "Igal_2": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Hijo de Natán de Soba, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Hijo de Natán de Soba, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:36",
+     "cita": "Igheal hijo de Nathán de Soba"
+    }
+   ],
+   "externo": []
+  },
+  "Nathan_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Padre de Igal, de Soba; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Padre de Igal, de Soba",
+     "certeza": "texto",
+     "ref": "2S 23:36",
+     "cita": "Igheal hijo de Nathán de Soba"
+    }
+   ],
+   "externo": []
+  },
+  "Bani_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Gad, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Gad, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:36",
+     "cita": "Bani de Gadi"
+    }
+   ],
+   "externo": []
+  },
+  "Zelek_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Amonita, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Amonita, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:37",
+     "cita": "Selec de Ammón"
+    }
+   ],
+   "externo": []
+  },
+  "Naharai_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "De Beerot, escudero de Joab, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "De Beerot, escudero de Joab, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:37",
+     "cita": "Naharai de Beeroth, escudero de Joab hijo de Sarvia"
+    }
+   ],
+   "externo": []
+  },
+  "Gareb_1": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Itrita, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Itrita, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:38",
+     "cita": "Gareb de Ithri"
+    }
+   ],
+   "externo": []
+  },
+  "Ira_3": {
+   "apariciones": [],
+   "menciones_posteriores": [],
+   "resumen": "Itrita, de los treinta; solo en la lista de 23:24-39.",
+   "datos": [
+    {
+     "texto": "Itrita, de los treinta",
+     "certeza": "texto",
+     "ref": "2S 23:38",
+     "cita": "Ira de Ithri"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "objetos": {
+  "corona-y-ajorca-de-saul": {
+   "nombre": "Corona y ajorca de Saúl",
+   "tipo": "insignia real",
+   "apariciones": [
+    {
+     "inicio": "2S 1:10",
+     "fin": "2S 1:10"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "David_1"
+   ],
+   "lugares": [
+    "monte-gilboa"
+   ],
+   "resumen": "El amalecita dice que se las quitó a Saúl muerto y se las trae a David; el relato de 1 S 31 es distinto.",
+   "datos": [
+    {
+     "texto": "Dice haber tomado la corona de la cabeza de Saúl y la ajorca de su brazo",
+     "certeza": "texto",
+     "ref": "2S 1:10",
+     "cita": "tomé la corona que tenía en su cabeza, y la ajorca que traía en su brazo"
+    },
+    {
+     "texto": "Se las trae a David",
+     "certeza": "texto",
+     "ref": "2S 1:10",
+     "cita": "helas traído acá á mi señor"
+    },
+    {
+     "texto": "1 S 31:4 cuenta que Saúl se echó sobre su propia espada; el catálogo registra ambos relatos sin decidir",
+     "certeza": "texto",
+     "ref": "1S 31:4",
+     "cita": "tomó Saúl la espada, y echóse sobre ella"
+    }
+   ],
+   "externo": []
+  },
+  "libro-de-jaser": {
+   "nombre": "Libro de Jaser",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "2S 1:18",
+     "fin": "2S 1:18"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David manda enseñar el arco a los hijos de Judá, como «está escrito en el libro del derecho»",
+     "certeza": "texto",
+     "ref": "2S 1:18",
+     "cita": "He aquí que está escrito en el libro del derecho"
+    },
+    {
+     "texto": "Se lo identifica con el «libro de Jasher» de Jos 10:13 (la RV1909 traduce el nombre de otro modo): inferido",
+     "certeza": "inferido",
+     "ref": "2S 1:18",
+     "cita": "libro del derecho"
+    }
+   ],
+   "externo": []
+  },
+  "lanza-de-abner": {
+   "nombre": "Lanza de Abner",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "2S 2:23",
+     "fin": "2S 2:23"
+    }
+   ],
+   "personas": [
+    "Abner_1",
+    "Asahel_1"
+   ],
+   "lugares": [
+    "gabaon"
+   ],
+   "resumen": "Con el regatón de esta lanza Abner hiere a Asael en Gabaón.",
+   "datos": [
+    {
+     "texto": "Abner hiere a Asael con el regatón de la lanza por la quinta costilla",
+     "certeza": "texto",
+     "ref": "2S 2:23",
+     "cita": "hiriólo Abner con el regatón de la lanza por la quinta [costilla]"
+    },
+    {
+     "texto": "La lanza le sale por las espaldas",
+     "certeza": "texto",
+     "ref": "2S 2:23",
+     "cita": "salióle la lanza por las espaldas"
+    }
+   ],
+   "externo": []
+  },
+  "corneta-de-guerra": {
+   "nombre": "Corneta de guerra (Joab y Seba)",
+   "tipo": "instrumento",
+   "apariciones": [
+    {
+     "inicio": "2S 2:28",
+     "fin": "2S 2:28"
+    },
+    {
+     "inicio": "2S 18:16",
+     "fin": "2S 18:16"
+    },
+    {
+     "inicio": "2S 20:1",
+     "fin": "2S 20:1"
+    },
+    {
+     "inicio": "2S 20:22",
+     "fin": "2S 20:22"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "Sheba_4"
+   ],
+   "lugares": [
+    "abel-bet-maaca"
+   ],
+   "resumen": "Con ella Joab detiene la persecución (en Gabaón, en el bosque de Efraín y en Abel) y Seba llama a Israel a dejar a David.",
+   "datos": [
+    {
+     "texto": "Joab toca el cuerno y el pueblo deja de seguir a Israel",
+     "certeza": "texto",
+     "ref": "2S 2:28",
+     "cita": "Joab tocó el cuerno, y todo el pueblo se detuvo"
+    },
+    {
+     "texto": "Joab toca la corneta y el pueblo se vuelve de seguir a Israel",
+     "certeza": "texto",
+     "ref": "2S 18:16",
+     "cita": "Joab tocó la corneta, y el pueblo se volvió de seguir á Israel"
+    },
+    {
+     "texto": "Seba toca la corneta y dice «No tenemos nosotros parte en David»",
+     "certeza": "texto",
+     "ref": "2S 20:1",
+     "cita": "el cual tocó la corneta"
+    },
+    {
+     "texto": "Joab la toca y los suyos se dispersan de Abel",
+     "certeza": "texto",
+     "ref": "2S 20:22",
+     "cita": "Y él tocó la corneta, y esparciéronse de la ciudad"
+    }
+   ],
+   "externo": []
+  },
+  "carro-nuevo-del-arca": {
+   "nombre": "Carro nuevo del arca",
+   "tipo": "vehículo",
+   "apariciones": [
+    {
+     "inicio": "2S 6:3",
+     "fin": "2S 6:7"
+    }
+   ],
+   "personas": [
+    "Uzzah_1",
+    "Ahio_1",
+    "Abinadab_1",
+    "David_1"
+   ],
+   "lugares": [
+    "gabaa",
+    "perez-uza"
+   ],
+   "resumen": "Carro en que se lleva el arca desde la casa de Abinadab; no es el carro nuevo de los filisteos de 1 S 6.",
+   "datos": [
+    {
+     "texto": "Ponen el arca de Dios sobre un carro nuevo",
+     "certeza": "texto",
+     "ref": "2S 6:3",
+     "cita": "pusieron el arca de Dios sobre un carro nuevo"
+    },
+    {
+     "texto": "Uza y Ahío guían el carro",
+     "certeza": "texto",
+     "ref": "2S 6:3",
+     "cita": "guiaban el carro nuevo"
+    },
+    {
+     "texto": "Los bueyes dan sacudidas",
+     "certeza": "texto",
+     "ref": "2S 6:6",
+     "cita": "los bueyes daban sacudidas"
+    }
+   ],
+   "externo": []
+  },
+  "instrumentos-ante-el-arca": {
+   "nombre": "Instrumentos ante el arca",
+   "tipo": "instrumentos",
+   "apariciones": [
+    {
+     "inicio": "2S 6:5",
+     "fin": "2S 6:5"
+    },
+    {
+     "inicio": "2S 6:15",
+     "fin": "2S 6:15"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "lugares": [
+    "ciudad-de-david"
+   ],
+   "resumen": "Instrumentos con que David y toda la casa de Israel acompañan el arca.",
+   "datos": [
+    {
+     "texto": "Danzan con instrumentos de madera de haya, arpas, salterios, adufes, flautas y címbalos",
+     "certeza": "texto",
+     "ref": "2S 6:5",
+     "cita": "con toda suerte de [instrumentos de] madera de haya; con arpas, salterios, adufes, flautas y címbalos"
+    },
+    {
+     "texto": "Llevan el arca con júbilo y sonido de trompeta",
+     "certeza": "texto",
+     "ref": "2S 6:15",
+     "cita": "con júbilo y sonido de trompeta"
+    }
+   ],
+   "externo": []
+  },
+  "efod-de-lino-de-david": {
+   "nombre": "Efod de lino de David",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "2S 6:14",
+     "fin": "2S 6:14"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Michal_1"
+   ],
+   "lugares": [
+    "ciudad-de-david"
+   ],
+   "resumen": "David lo viste al saltar ante el arca; el texto no lo relaciona con el efod del sacerdote.",
+   "datos": [
+    {
+     "texto": "David viste un efod de lino mientras salta ante Jehová",
+     "certeza": "texto",
+     "ref": "2S 6:14",
+     "cita": "tenía vestido David un ephod de lino"
+    }
+   ],
+   "externo": []
+  },
+  "escudos-de-oro-de-hadad-ezer": {
+   "nombre": "Escudos de oro y metal de Hadad-ezer",
+   "tipo": "botín",
+   "apariciones": [
+    {
+     "inicio": "2S 8:7",
+     "fin": "2S 8:8"
+    },
+    {
+     "inicio": "2S 8:10",
+     "fin": "2S 8:12"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Hadadezer_1",
+    "Toi_1",
+    "Joram_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Escudos de oro y metal tomados a Hadad-ezer, más los vasos de Toi; David los dedica a Jehová.",
+   "datos": [
+    {
+     "texto": "David toma los escudos de oro y los lleva a Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 8:7",
+     "cita": "tomó David los escudos de oro que traían los siervos de Hadad-ezer, y llevólos á Jerusalem"
+    },
+    {
+     "texto": "De Beta y Beerot toma gran copia de metal",
+     "certeza": "texto",
+     "ref": "2S 8:8",
+     "cita": "tomó el rey David gran copia de metal"
+    },
+    {
+     "texto": "El rey los dedica a Jehová",
+     "certeza": "texto",
+     "ref": "2S 8:11",
+     "cita": "Los cuales el rey David dedicó á Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "mesa-del-rey": {
+   "nombre": "La mesa del rey",
+   "tipo": "mesa",
+   "apariciones": [
+    {
+     "inicio": "2S 9:7",
+     "fin": "2S 9:7"
+    },
+    {
+     "inicio": "2S 9:10",
+     "fin": "2S 9:13"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Mephibosheth_1"
+   ],
+   "lugares": [
+    "jerusalen"
+   ],
+   "resumen": "Mefi-boset come siempre a la mesa del rey, «como uno de los hijos del rey».",
+   "datos": [
+    {
+     "texto": "«Tú comerás siempre pan á mi mesa»",
+     "certeza": "texto",
+     "ref": "2S 9:7",
+     "cita": "tú comerás siempre pan á mi mesa"
+    },
+    {
+     "texto": "Come como uno de los hijos del rey",
+     "certeza": "texto",
+     "ref": "2S 9:11",
+     "cita": "comerá á mi mesa, como uno de los hijos del rey"
+    },
+    {
+     "texto": "Mefi-boset recuerda que lo puso entre los convidados de su mesa",
+     "certeza": "texto",
+     "ref": "2S 19:28",
+     "cita": "tú pusiste á tu siervo entre los convidados de tu mesa"
+    }
+   ],
+   "externo": []
+  },
+  "carta-de-david-a-joab": {
+   "nombre": "Carta de David a Joab",
+   "tipo": "escrito",
+   "apariciones": [
+    {
+     "inicio": "2S 11:14",
+     "fin": "2S 11:17"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Joab_1",
+    "Uriah_1"
+   ],
+   "lugares": [
+    "raba-amon"
+   ],
+   "resumen": "Carta que Urías mismo lleva a Joab con la orden de que lo dejen sin apoyo en la batalla.",
+   "datos": [
+    {
+     "texto": "David la escribe y la envía por mano de Urías",
+     "certeza": "texto",
+     "ref": "2S 11:14",
+     "cita": "escribió David á Joab una carta, la cual envió por mano de Uría"
+    },
+    {
+     "texto": "Ordena ponerlo delante de la fuerza de la batalla y desampararlo",
+     "certeza": "texto",
+     "ref": "2S 11:15",
+     "cita": "Poned á Uría delante de la fuerza de la batalla, y desamparadle, para que sea herido y muera"
+    }
+   ],
+   "externo": []
+  },
+  "corona-de-raba": {
+   "nombre": "Corona del rey de Rabá",
+   "tipo": "insignia real",
+   "apariciones": [
+    {
+     "inicio": "2S 12:30",
+     "fin": "2S 12:30"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Joab_1"
+   ],
+   "lugares": [
+    "raba-amon"
+   ],
+   "resumen": "Corona de un talento de oro con piedras preciosas que David toma al conquistar Rabá.",
+   "datos": [
+    {
+     "texto": "Pesaba un talento de oro y tenía piedras preciosas",
+     "certeza": "texto",
+     "ref": "2S 12:30",
+     "cita": "la cual pesaba un talento de oro, y [tenía] piedras preciosas"
+    },
+    {
+     "texto": "Se pone sobre la cabeza de David",
+     "certeza": "texto",
+     "ref": "2S 12:30",
+     "cita": "fué puesta sobre la cabeza de David"
+    }
+   ],
+   "externo": []
+  },
+  "cordera-del-pobre": {
+   "nombre": "La cordera del pobre",
+   "tipo": "parábola",
+   "apariciones": [
+    {
+     "inicio": "2S 12:3",
+     "fin": "2S 12:6"
+    }
+   ],
+   "personas": [
+    "Nathan_2",
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "Cordera de la parábola de Natán: no es un objeto real, sino el centro del relato con que Natán lleva a David a juzgarse.",
+   "datos": [
+    {
+     "texto": "El pobre no tenía más que una cordera, que había comprado y criado",
+     "certeza": "texto",
+     "ref": "2S 12:3",
+     "cita": "no tenía más que una sola cordera, que él había comprado y criado"
+    },
+    {
+     "texto": "La tenía como a una hija",
+     "certeza": "texto",
+     "ref": "2S 12:3",
+     "cita": "teníala como á una hija"
+    },
+    {
+     "texto": "David sentencia que se pague con cuatro tantos",
+     "certeza": "texto",
+     "ref": "2S 12:6",
+     "cita": "debe pagar la cordera con cuatro tantos"
+    }
+   ],
+   "externo": []
+  },
+  "hojuelas-de-tamar": {
+   "nombre": "Las hojuelas de Tamar",
+   "tipo": "comida",
+   "apariciones": [
+    {
+     "inicio": "2S 13:6",
+     "fin": "2S 13:10"
+    }
+   ],
+   "personas": [
+    "Tamar_2",
+    "Amnon_1"
+   ],
+   "lugares": [],
+   "resumen": "Hojuelas que Tamar amasa y cocina en la casa de Amnón.",
+   "datos": [
+    {
+     "texto": "Tamar toma harina, amasa y hace hojuelas delante de él",
+     "certeza": "texto",
+     "ref": "2S 13:8",
+     "cita": "tomó harina, y amasó é hizo hojuelas delante de él"
+    },
+    {
+     "texto": "Amnón no quiere comer y manda salir a todos",
+     "certeza": "texto",
+     "ref": "2S 13:9",
+     "cita": "mas él no quiso comer. Y dijo Amnón: Echad fuera de aquí á todos"
+    }
+   ],
+   "externo": []
+  },
+  "ropa-de-colores-de-tamar": {
+   "nombre": "Ropa de colores de Tamar",
+   "tipo": "vestidura",
+   "apariciones": [
+    {
+     "inicio": "2S 13:18",
+     "fin": "2S 13:19"
+    }
+   ],
+   "personas": [
+    "Tamar_2"
+   ],
+   "lugares": [],
+   "resumen": "Traje de las hijas vírgenes de los reyes; Tamar lo rasga en señal de duelo.",
+   "datos": [
+    {
+     "texto": "Era traje que vestían las hijas vírgenes de los reyes",
+     "certeza": "texto",
+     "ref": "2S 13:18",
+     "cita": "una ropa de colores, traje que las hijas vírgenes de los reyes vestían"
+    },
+    {
+     "texto": "Tamar la rasga y se echa ceniza en la cabeza",
+     "certeza": "texto",
+     "ref": "2S 13:19",
+     "cita": "rasgó la ropa de colores de que estaba vestida"
+    }
+   ],
+   "externo": []
+  },
+  "cabellera-de-absalom": {
+   "nombre": "La cabellera de Absalón",
+   "tipo": "rasgo personal",
+   "apariciones": [
+    {
+     "inicio": "2S 14:26",
+     "fin": "2S 14:26"
+    }
+   ],
+   "personas": [
+    "Absalom_1"
+   ],
+   "lugares": [],
+   "resumen": "Cabello que Absalón se cortaba cada fin de año y pesaba doscientos siclos de peso real; 18:9 dice que se le prendió la cabeza, sin nombrar el cabello.",
+   "datos": [
+    {
+     "texto": "Se lo cortaba al fin de cada año porque le causaba molestia",
+     "certeza": "texto",
+     "ref": "2S 14:26",
+     "cita": "lo cual hacía al fin de cada año, pues le causaba molestia"
+    },
+    {
+     "texto": "Pesaba doscientos siclos de peso real",
+     "certeza": "texto",
+     "ref": "2S 14:26",
+     "cita": "pesaba el cabello de su cabeza doscientos siclos de peso real"
+    },
+    {
+     "texto": "En 18:9 «se le prendió la cabeza» al alcornoque",
+     "certeza": "texto",
+     "ref": "2S 18:9",
+     "cita": "asiósele la cabeza al alcornoque"
+    }
+   ],
+   "externo": []
+  },
+  "provisiones-de-siba": {
+   "nombre": "Provisiones de Siba",
+   "tipo": "provisiones",
+   "apariciones": [
+    {
+     "inicio": "2S 16:1",
+     "fin": "2S 16:4"
+    }
+   ],
+   "personas": [
+    "Ziba_1",
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "Asnos, panes, pasas, higos secos y vino con que Siba sale al encuentro de David.",
+   "datos": [
+    {
+     "texto": "Un par de asnos, doscientos panes, cien hilos de pasas, cien panes de higos y un cuero de vino",
+     "certeza": "texto",
+     "ref": "2S 16:1",
+     "cita": "un par de asnos enalbardados, y sobre ellos doscientos panes, y cien hilos de pasas, y cien [panes de higos] secos, y un cuero de vino"
+    },
+    {
+     "texto": "Los asnos son para que suba la familia del rey",
+     "certeza": "texto",
+     "ref": "2S 16:2",
+     "cita": "Los asnos son para la familia del rey, en que suban"
+    }
+   ],
+   "externo": []
+  },
+  "pozo-de-bahurim": {
+   "nombre": "El pozo de Bahurim",
+   "tipo": "escondite",
+   "apariciones": [
+    {
+     "inicio": "2S 17:18",
+     "fin": "2S 17:21"
+    }
+   ],
+   "personas": [
+    "Jonathan_3",
+    "Ahimaaz_2"
+   ],
+   "lugares": [
+    "bahurim"
+   ],
+   "resumen": "Pozo en el patio de una casa de Bahurim donde se esconden los dos mensajeros; la mujer lo cubre con una manta y grano.",
+   "datos": [
+    {
+     "texto": "Se meten dentro de un pozo en el patio de un hombre de Bahurim",
+     "certeza": "texto",
+     "ref": "2S 17:18",
+     "cita": "tenía un pozo en su patio, dentro del cual se metieron"
+    },
+    {
+     "texto": "La mujer extiende una manta sobre la boca y grano trillado encima",
+     "certeza": "texto",
+     "ref": "2S 17:19",
+     "cita": "extendióla sobre la boca del pozo, y tendió sobre ella el grano trillado"
+    }
+   ],
+   "externo": []
+  },
+  "provisiones-de-mahanaim": {
+   "nombre": "Provisiones de Mahanaim",
+   "tipo": "provisiones",
+   "apariciones": [
+    {
+     "inicio": "2S 17:27",
+     "fin": "2S 17:29"
+    }
+   ],
+   "personas": [
+    "Shobi_1",
+    "Machir_2",
+    "Barzillai_1",
+    "David_1"
+   ],
+   "lugares": [
+    "mahanaim",
+    "lodebar",
+    "rogelim",
+    "raba-amon"
+   ],
+   "resumen": "Camas, vasijas, grano, miel, ovejas y quesos que tres hombres traen a David y su gente.",
+   "datos": [
+    {
+     "texto": "Camas, tazas, vasijas de barro, trigo, cebada y harina",
+     "certeza": "texto",
+     "ref": "2S 17:28",
+     "cita": "camas, y tazas, y vasijas de barro, y trigo, y cebada, y harina"
+    },
+    {
+     "texto": "Miel, manteca, ovejas y quesos de vacas",
+     "certeza": "texto",
+     "ref": "2S 17:29",
+     "cita": "Miel, manteca, ovejas, y quesos de vacas"
+    }
+   ],
+   "externo": []
+  },
+  "tres-dardos-de-joab": {
+   "nombre": "Los tres dardos de Joab",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "2S 18:14",
+     "fin": "2S 18:14"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "Absalom_1"
+   ],
+   "lugares": [
+    "bosque-de-efrain"
+   ],
+   "resumen": "Dardos que Joab clava en Absalón, aún vivo en el alcornoque, pese a la orden del rey.",
+   "datos": [
+    {
+     "texto": "Toma tres dardos y los hinca en el corazón de Absalón",
+     "certeza": "texto",
+     "ref": "2S 18:14",
+     "cita": "tomando tres dardos en sus manos, hincólos en el corazón de Absalom"
+    },
+    {
+     "texto": "Diez escuderos de Joab lo acaban",
+     "certeza": "texto",
+     "ref": "2S 18:15",
+     "cita": "diez mancebos escuderos de Joab, hirieron á Absalom"
+    }
+   ],
+   "externo": []
+  },
+  "monton-de-piedras-de-absalom": {
+   "nombre": "Montón de piedras sobre Absalón",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "2S 18:17",
+     "fin": "2S 18:17"
+    }
+   ],
+   "personas": [
+    "Absalom_1",
+    "Joab_1"
+   ],
+   "lugares": [
+    "bosque-de-efrain"
+   ],
+   "resumen": "Gran hoyo en el bosque con un montón muy grande de piedras encima.",
+   "datos": [
+    {
+     "texto": "Lo echan en un gran hoyo en el bosque y levantan sobre él un montón de piedras",
+     "certeza": "texto",
+     "ref": "2S 18:17",
+     "cita": "echáronle en un gran hoyo en el bosque, y levantaron sobre él un muy grande montón de piedras"
+    }
+   ],
+   "externo": []
+  },
+  "columna-de-absalom": {
+   "nombre": "La columna de Absalón",
+   "tipo": "monumento",
+   "apariciones": [
+    {
+     "inicio": "2S 18:18",
+     "fin": "2S 18:18"
+    }
+   ],
+   "personas": [
+    "Absalom_1"
+   ],
+   "lugares": [],
+   "resumen": "Columna que Absalón se levantó en vida en el valle del rey para conservar su nombre; «el Lugar de Absalom».",
+   "datos": [
+    {
+     "texto": "La levantó en vida, en el valle del rey",
+     "certeza": "texto",
+     "ref": "2S 18:18",
+     "cita": "una columna, la cual está en el valle del rey"
+    },
+    {
+     "texto": "La llamó de su nombre porque no tenía hijo que conservara su memoria",
+     "certeza": "texto",
+     "ref": "2S 18:18",
+     "cita": "Yo no tengo hijo que conserve la memoria de mi nombre"
+    },
+    {
+     "texto": "Se llamó «el Lugar de Absalom, hasta hoy»",
+     "certeza": "texto",
+     "ref": "2S 18:18",
+     "cita": "así se llamó el Lugar de Absalom, hasta hoy"
+    }
+   ],
+   "externo": []
+  },
+  "daga-de-joab": {
+   "nombre": "La daga de Joab",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "2S 20:8",
+     "fin": "2S 20:10"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "Amasa_1"
+   ],
+   "lugares": [
+    "gabaon"
+   ],
+   "resumen": "Daga que se le cae de la vaina a Joab; con ella hiere a Amasa mientras lo saluda.",
+   "datos": [
+    {
+     "texto": "Su cinto llevaba una daga en la vaina, que se cayó al avanzar",
+     "certeza": "texto",
+     "ref": "2S 20:8",
+     "cita": "el cinto de una daga pegada á sus lomos en su vaina"
+    },
+    {
+     "texto": "Amasa no se cuidó de la daga que tenía en la mano",
+     "certeza": "texto",
+     "ref": "2S 20:10",
+     "cita": "Amasa no se cuidó de la daga que Joab en la mano tenía"
+    }
+   ],
+   "externo": []
+  },
+  "saco-de-rizpa": {
+   "nombre": "El saco de Rizpa",
+   "tipo": "vigilia",
+   "apariciones": [
+    {
+     "inicio": "2S 21:10",
+     "fin": "2S 21:10"
+    }
+   ],
+   "personas": [
+    "Rizpah_1"
+   ],
+   "lugares": [],
+   "resumen": "Saco que Rizpa tiende sobre un peñasco para velar a los ahorcados desde la siega hasta que llueve.",
+   "datos": [
+    {
+     "texto": "Lo tiende sobre un peñasco desde el comienzo de la siega hasta que llovió",
+     "certeza": "texto",
+     "ref": "2S 21:10",
+     "cita": "un saco, tendióselo sobre un peñasco"
+    }
+   ],
+   "externo": []
+  },
+  "huesos-de-saul-y-jonatan": {
+   "nombre": "Los huesos de Saúl y Jonatán",
+   "tipo": "reliquia funeraria",
+   "apariciones": [
+    {
+     "inicio": "2S 21:12",
+     "fin": "2S 21:14"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Saul_1",
+    "Jonathan_2",
+    "Kish_1"
+   ],
+   "lugares": [
+    "jabes-de-galaad",
+    "bet-san",
+    "sela"
+   ],
+   "resumen": "David recoge los huesos que los de Jabes habían hurtado de Bet-san y los sepulta en Sela.",
+   "datos": [
+    {
+     "texto": "Los habían hurtado de la plaza de Bet-san, donde los filisteos los colgaron",
+     "certeza": "texto",
+     "ref": "2S 21:12",
+     "cita": "los habían hurtado de la plaza de Beth-san, donde los habían colgado los Filisteos"
+    },
+    {
+     "texto": "Se juntan también los huesos de los ahorcados",
+     "certeza": "texto",
+     "ref": "2S 21:13",
+     "cita": "juntaron también los huesos de los ahorcados"
+    },
+    {
+     "texto": "Los sepultan en Sela, en el sepulcro de Cis",
+     "certeza": "texto",
+     "ref": "2S 21:14",
+     "cita": "en Sela, en el sepulcro de Cis su padre"
+    }
+   ],
+   "externo": []
+  },
+  "lanza-de-isbi-benob": {
+   "nombre": "Lanza de Isbi-benob",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "2S 21:16",
+     "fin": "2S 21:16"
+    }
+   ],
+   "personas": [
+    "Ishbi-benob_1",
+    "Abishai_1",
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "Lanza de trescientos siclos con que el filisteo intenta herir a David.",
+   "datos": [
+    {
+     "texto": "Pesaba trescientos siclos de metal y llevaba una espada nueva",
+     "certeza": "texto",
+     "ref": "2S 21:16",
+     "cita": "el peso de cuya lanza era [de] trescientos siclos de metal, y tenía él ceñida una nueva [espada]"
+    }
+   ],
+   "externo": []
+  },
+  "agua-de-la-cisterna-de-belen": {
+   "nombre": "Agua de la cisterna de Belén",
+   "tipo": "ofrenda",
+   "apariciones": [
+    {
+     "inicio": "2S 23:15",
+     "fin": "2S 23:17"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "lugares": [
+    "belen",
+    "adulam",
+    "valle-de-refaim"
+   ],
+   "resumen": "Agua que tres valientes traen arriesgando la vida; David no la bebe y la derrama a Jehová.",
+   "datos": [
+    {
+     "texto": "David desea beber del agua de la cisterna de Belén, junto a la puerta",
+     "certeza": "texto",
+     "ref": "2S 23:15",
+     "cita": "¡Quién me diera á beber del agua de la cisterna de Beth-lehem, que está á la puerta!"
+    },
+    {
+     "texto": "Los tres rompen el campo filisteo y la traen",
+     "certeza": "texto",
+     "ref": "2S 23:16",
+     "cita": "los tres valientes rompieron por el campo de los Filisteos, y sacaron agua de la cisterna de Beth-lehem"
+    },
+    {
+     "texto": "David no la bebe: «¿[He de beber yo] la sangre de los varones...?»",
+     "certeza": "texto",
+     "ref": "2S 23:17",
+     "cita": "¿[He de beber yo] la sangre de los varones que fueron con peligro de su vida?"
+    }
+   ],
+   "externo": []
+  },
+  "lanza-del-egipcio": {
+   "nombre": "Lanza del egipcio",
+   "tipo": "arma",
+   "apariciones": [
+    {
+     "inicio": "2S 23:21",
+     "fin": "2S 23:21"
+    }
+   ],
+   "personas": [
+    "Benaiah_1"
+   ],
+   "lugares": [],
+   "resumen": "Lanza que Benaía arrebata a un egipcio de gran estatura y usa contra él.",
+   "datos": [
+    {
+     "texto": "Benaía baja a él con un palo y le quita la lanza",
+     "certeza": "texto",
+     "ref": "2S 23:21",
+     "cita": "descendió á él con un palo, y arrebató al Egipcio la lanza de la mano"
+    },
+    {
+     "texto": "Lo mata con su propia lanza",
+     "certeza": "texto",
+     "ref": "2S 23:21",
+     "cita": "matólo con su propia lanza"
+    }
+   ],
+   "externo": []
+  },
+  "bueyes-y-trillos-de-arauna": {
+   "nombre": "Bueyes y trillos de Arauna",
+   "tipo": "compra",
+   "apariciones": [
+    {
+     "inicio": "2S 24:22",
+     "fin": "2S 24:24"
+    }
+   ],
+   "personas": [
+    "Araunah_1",
+    "David_1"
+   ],
+   "lugares": [],
+   "resumen": "Bueyes para el holocausto y trillos para leña, que Arauna ofrece y David compra con la era por cincuenta siclos de plata.",
+   "datos": [
+    {
+     "texto": "Arauna ofrece bueyes para el holocausto y trillos para leña",
+     "certeza": "texto",
+     "ref": "2S 24:22",
+     "cita": "he aquí bueyes para el holocausto; y trillos y otros pertrechos de bueyes para leña"
+    },
+    {
+     "texto": "David paga cincuenta siclos de plata por la era y los bueyes",
+     "certeza": "texto",
+     "ref": "2S 24:24",
+     "cita": "David compró la era y los bueyes por cincuenta siclos de plata"
+    }
+   ],
+   "externo": []
+  },
+  "altar-de-david-en-la-era-de-arauna": {
+   "nombre": "Altar de David en la era de Arauna",
+   "tipo": "altar",
+   "apariciones": [
+    {
+     "inicio": "2S 24:18",
+     "fin": "2S 24:25"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Gad_2",
+    "Araunah_1"
+   ],
+   "lugares": [],
+   "resumen": "Altar que David edifica donde se detuvo el ángel; sacrifica holocaustos y pacíficos y cesa la plaga.",
+   "datos": [
+    {
+     "texto": "Gad le manda hacerlo en la era de Arauna",
+     "certeza": "texto",
+     "ref": "2S 24:18",
+     "cita": "haz un altar á Jehová en la era de Arauna Jebuseo"
+    },
+    {
+     "texto": "David lo edifica y ofrece holocaustos y pacíficos",
+     "certeza": "texto",
+     "ref": "2S 24:25",
+     "cita": "edificó allí David un altar á Jehová, y sacrificó holocaustos y pacíficos"
+    },
+    {
+     "texto": "Cesa la plaga de Israel",
+     "certeza": "texto",
+     "ref": "2S 24:25",
+     "cita": "cesó la plaga de Israel"
+    }
+   ],
+   "externo": []
+  },
+  "arca-del-testimonio": {
+   "nombre": "Arca del testimonio",
+   "tipo": "mobiliario sagrado",
+   "apariciones": [
+    {
+     "inicio": "2S 6:2",
+     "fin": "2S 6:17"
+    },
+    {
+     "inicio": "2S 7:2",
+     "fin": "2S 7:2"
+    },
+    {
+     "inicio": "2S 11:11",
+     "fin": "2S 11:11"
+    },
+    {
+     "inicio": "2S 15:24",
+     "fin": "2S 15:29"
+    }
+   ],
+   "personas": [
+    "Uzzah_1",
+    "Ahio_1",
+    "Abinadab_1",
+    "Obed-edom_1",
+    "Zadok_1",
+    "Abiathar_1",
+    "David_1",
+    "Uriah_1"
+   ],
+   "lugares": [
+    "gabaa",
+    "perez-uza",
+    "ciudad-de-david",
+    "jerusalen"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "El arca es «invocada» con el nombre de Jehová de los ejércitos, que mora entre los querubines",
+     "certeza": "texto",
+     "ref": "2S 6:2",
+     "cita": "que mora en ella entre los querubines"
+    },
+    {
+     "texto": "Estuvo tres meses en casa de Obed-edom",
+     "certeza": "texto",
+     "ref": "2S 6:11",
+     "cita": "estuvo el arca de Jehová en casa de Obed-edom Getheo tres meses"
+    },
+    {
+     "texto": "La ponen en una tienda que David le había tendido",
+     "certeza": "texto",
+     "ref": "2S 6:17",
+     "cita": "pusiéronla en su lugar en medio de una tienda que David le había tendido"
+    },
+    {
+     "texto": "David dice que el arca «está entre cortinas»",
+     "certeza": "texto",
+     "ref": "2S 7:2",
+     "cita": "el arca de Dios está entre cortinas"
+    },
+    {
+     "texto": "Urías no baja a su casa porque el arca está bajo tiendas",
+     "certeza": "texto",
+     "ref": "2S 11:11",
+     "cita": "El arca, é Israel y Judá, están debajo de tiendas"
+    },
+    {
+     "texto": "David manda volverla a la ciudad",
+     "certeza": "texto",
+     "ref": "2S 15:25",
+     "cita": "Vuelve el arca de Dios á la ciudad"
+    }
+   ],
+   "externo": []
+  }
+ },
+ "escenarios": {
+  "siclag": {
+   "nombre": "Siclag",
+   "apariciones": [
+    {
+     "inicio": "2S 1:1",
+     "fin": "2S 1:16"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David estuvo dos días en Siclag tras la derrota de los amalecitas",
+     "certeza": "texto",
+     "ref": "2S 1:1",
+     "cita": "estuvo dos días en Siclag"
+    }
+   ],
+   "externo": []
+  },
+  "monte-gilboa": {
+   "nombre": "Monte Gilboa",
+   "apariciones": [
+    {
+     "inicio": "2S 1:21",
+     "fin": "2S 1:21"
+    }
+   ],
+   "personas": [
+    "Saul_1",
+    "Jonathan_2"
+   ],
+   "objetos": [
+    "corona-y-ajorca-de-saul"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David pide que no caiga rocío ni lluvia sobre los montes de Gilboa",
+     "certeza": "texto",
+     "ref": "2S 1:21",
+     "cita": "Montes de Gilboa, ni rocío ni lluvia [caiga] sobre vosotros"
+    },
+    {
+     "texto": "El amalecita dice haber llegado «casualmente» al monte de Gilboa",
+     "certeza": "texto",
+     "ref": "2S 1:6",
+     "cita": "Casualmente vine al monte de Gilboa"
+    }
+   ],
+   "externo": []
+  },
+  "hebron": {
+   "nombre": "Hebrón",
+   "apariciones": [
+    {
+     "inicio": "2S 2:1",
+     "fin": "2S 2:7"
+    },
+    {
+     "inicio": "2S 3:19",
+     "fin": "2S 3:21"
+    },
+    {
+     "inicio": "2S 3:27",
+     "fin": "2S 3:32"
+    },
+    {
+     "inicio": "2S 4:8",
+     "fin": "2S 4:12"
+    },
+    {
+     "inicio": "2S 5:1",
+     "fin": "2S 5:5"
+    },
+    {
+     "inicio": "2S 15:7",
+     "fin": "2S 15:12"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Abner_1",
+    "Joab_1",
+    "Absalom_1",
+    "Ish-bosheth_1",
+    "Baanah_1",
+    "Rechab_1"
+   ],
+   "objetos": [],
+   "resumen": "Ciudad de Judá donde David es ungido rey, donde mueren y se entierran Abner e Is-boset y donde Absalón se hace proclamar rey.",
+   "datos": [
+    {
+     "texto": "Jehová manda a David subir a Hebrón",
+     "certeza": "texto",
+     "ref": "2S 2:1",
+     "cita": "Y él le dijo: A Hebrón"
+    },
+    {
+     "texto": "Reina allí siete años y seis meses sobre Judá",
+     "certeza": "texto",
+     "ref": "2S 2:11",
+     "cita": "siete años y seis meses"
+    },
+    {
+     "texto": "Sepultan a Abner en Hebrón",
+     "certeza": "texto",
+     "ref": "2S 3:32",
+     "cita": "sepultaron á Abner en Hebrón"
+    },
+    {
+     "texto": "Las tribus de Israel hacen allí alianza con David",
+     "certeza": "texto",
+     "ref": "2S 5:3",
+     "cita": "el rey David hizo con ellos alianza en Hebrón delante de Jehová"
+    },
+    {
+     "texto": "Absalón manda decir: «Absalom reina en Hebrón»",
+     "certeza": "texto",
+     "ref": "2S 15:10",
+     "cita": "diréis: Absalom reina en Hebrón"
+    }
+   ],
+   "externo": [],
+   "lugar": "hebron"
+  },
+  "estanque-de-gabaon": {
+   "nombre": "El estanque de Gabaón",
+   "apariciones": [
+    {
+     "inicio": "2S 2:12",
+     "fin": "2S 2:17"
+    }
+   ],
+   "personas": [
+    "Abner_1",
+    "Joab_1",
+    "Asahel_1"
+   ],
+   "objetos": [],
+   "resumen": "Allí se encuentran los siervos de Is-boset y los de David y se juega el combate de los doce contra doce.",
+   "datos": [
+    {
+     "texto": "Los dos bandos se paran a cada lado del estanque",
+     "certeza": "texto",
+     "ref": "2S 2:13",
+     "cita": "encontráronlos junto al estanque de Gabaón"
+    },
+    {
+     "texto": "El lugar se llamó Helcat-hazurim",
+     "certeza": "texto",
+     "ref": "2S 2:16",
+     "cita": "fué llamado aquel lugar, Helcath-assurim, el cual está en Gabaón"
+    }
+   ],
+   "externo": [],
+   "lugar": "gabaon"
+  },
+  "collado-de-amma": {
+   "nombre": "El collado de Amma",
+   "apariciones": [
+    {
+     "inicio": "2S 2:24",
+     "fin": "2S 2:29"
+    }
+   ],
+   "personas": [
+    "Abner_1",
+    "Joab_1",
+    "Abishai_1"
+   ],
+   "objetos": [
+    "corneta-de-guerra"
+   ],
+   "resumen": "Al ponerse el sol, Joab y Abisai alcanzan a Abner; Abner pide parar y Joab toca el cuerno.",
+   "datos": [
+    {
+     "texto": "Se les pone el sol al llegar al collado de Amma",
+     "certeza": "texto",
+     "ref": "2S 2:24",
+     "cita": "púsoseles el sol cuando llegaron al collado de Amma"
+    },
+    {
+     "texto": "Abner y los suyos cruzan el Jordán de noche y llegan a Mahanaim",
+     "certeza": "texto",
+     "ref": "2S 2:29",
+     "cita": "llegaron á Mahanaim"
+    }
+   ],
+   "externo": [],
+   "lugar": "ama"
+  },
+  "bahurim": {
+   "nombre": "Bahurim",
+   "apariciones": [
+    {
+     "inicio": "2S 3:16",
+     "fin": "2S 3:16"
+    },
+    {
+     "inicio": "2S 16:5",
+     "fin": "2S 16:14"
+    },
+    {
+     "inicio": "2S 17:18",
+     "fin": "2S 17:21"
+    }
+   ],
+   "personas": [
+    "Palti_2",
+    "Shimei_2",
+    "David_1",
+    "Abishai_1",
+    "Jonathan_3",
+    "Ahimaaz_2"
+   ],
+   "objetos": [
+    "pozo-de-bahurim"
+   ],
+   "resumen": "Aldea benjamita: allí Paltiel vuelve atrás, Simei maldice a David y se esconden los dos mensajeros.",
+   "datos": [
+    {
+     "texto": "Paltiel sigue a Mical llorando hasta Bahurim",
+     "certeza": "texto",
+     "ref": "2S 3:16",
+     "cita": "siguiéndola y llorando hasta Bahurim"
+    },
+    {
+     "texto": "David llega a Bahurim y Simei sale maldiciendo",
+     "certeza": "texto",
+     "ref": "2S 16:5",
+     "cita": "vino el rey David hasta Bahurim"
+    }
+   ],
+   "externo": [],
+   "lugar": "bahurim"
+  },
+  "fortaleza-de-sion": {
+   "nombre": "La fortaleza de Sión",
+   "apariciones": [
+    {
+     "inicio": "2S 5:6",
+     "fin": "2S 5:10"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [],
+   "resumen": "Fortaleza jebusea de Jerusalén que David toma y llama Ciudad de David.",
+   "datos": [
+    {
+     "texto": "Los jebuseos le dicen que no entrará si no echa a los ciegos y los cojos",
+     "certeza": "texto",
+     "ref": "2S 5:6",
+     "cita": "Tú no entrarás acá, si no echares los ciegos y los cojos"
+    },
+    {
+     "texto": "David toma la fortaleza de Sión, que es la Ciudad de David",
+     "certeza": "texto",
+     "ref": "2S 5:7",
+     "cita": "David tomó la fortaleza de Sión, la cual es la ciudad de David"
+    },
+    {
+     "texto": "Edifica alrededor, desde Milo hacia adentro",
+     "certeza": "texto",
+     "ref": "2S 5:9",
+     "cita": "edificó alrededor, desde Millo para adentro"
+    }
+   ],
+   "externo": [],
+   "lugar": "sion"
+  },
+  "ciudad-de-david": {
+   "nombre": "La Ciudad de David",
+   "apariciones": [
+    {
+     "inicio": "2S 6:10",
+     "fin": "2S 6:17"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Michal_1",
+    "Obed-edom_1"
+   ],
+   "objetos": [
+    "arca-del-testimonio",
+    "efod-de-lino-de-david",
+    "instrumentos-ante-el-arca"
+   ],
+   "resumen": "Donde David instala el arca en una tienda que le había tendido.",
+   "datos": [
+    {
+     "texto": "David trae el arca de casa de Obed-edom con alegría",
+     "certeza": "texto",
+     "ref": "2S 6:12",
+     "cita": "trajo el arca de Dios de casa de Obed-edom á la ciudad de David con alegría"
+    },
+    {
+     "texto": "A los seis pasos sacrifican un buey y un carnero grueso",
+     "certeza": "texto",
+     "ref": "2S 6:13",
+     "cita": "habían andado seis pasos, sacrificaban un buey y [un carnero] grueso"
+    },
+    {
+     "texto": "La ponen en una tienda y David ofrece holocaustos y pacíficos",
+     "certeza": "texto",
+     "ref": "2S 6:17",
+     "cita": "sacrificó David holocaustos y pacíficos delante de Jehová"
+    }
+   ],
+   "externo": [],
+   "lugar": "ciudad-de-david"
+  },
+  "baal-perazim": {
+   "nombre": "Baal-perazim y el valle de Refaim",
+   "apariciones": [
+    {
+     "inicio": "2S 5:17",
+     "fin": "2S 5:25"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [],
+   "resumen": "Dos victorias de David sobre los filisteos, tras consultar a Jehová; en la segunda espera el estruendo en las copas de los morales.",
+   "datos": [
+    {
+     "texto": "Los filisteos se extienden por el valle de Refaim",
+     "certeza": "texto",
+     "ref": "2S 5:18",
+     "cita": "extendiéronse por el valle de Raphaim"
+    },
+    {
+     "texto": "«Rompió Jehová mis enemigos delante de mí, como quien rompe aguas»",
+     "certeza": "texto",
+     "ref": "2S 5:20",
+     "cita": "Rompió Jehová mis enemigos delante de mí, como quien rompe aguas"
+    },
+    {
+     "texto": "David quema los ídolos que dejaron los filisteos",
+     "certeza": "texto",
+     "ref": "2S 5:21",
+     "cita": "Y dejaron allí sus ídolos, los cuales quemó David y los suyos"
+    },
+    {
+     "texto": "Debe moverse al oír un estruendo en las copas de los morales",
+     "certeza": "texto",
+     "ref": "2S 5:24",
+     "cita": "cuando oyeres un estruendo que irá por las copas de los morales, entonces te moverás"
+    }
+   ],
+   "externo": [],
+   "lugar": "baal-perazim"
+  },
+  "era-de-nacon-y-perez-uza": {
+   "nombre": "La era de Nacón (Pérez-uza)",
+   "apariciones": [
+    {
+     "inicio": "2S 6:6",
+     "fin": "2S 6:8"
+    }
+   ],
+   "personas": [
+    "Uzzah_1",
+    "David_1",
+    "Ahio_1"
+   ],
+   "objetos": [
+    "carro-nuevo-del-arca",
+    "arca-del-testimonio"
+   ],
+   "resumen": "Donde cae muerto Uza; la era de Nacón no tiene lugar propio en el catálogo, se usa el de Pérez-uza, nombre que 6:8 da a «aquel lugar».",
+   "datos": [
+    {
+     "texto": "Uza extiende la mano al arca al llegar a la era de Nacón",
+     "certeza": "texto",
+     "ref": "2S 6:6",
+     "cita": "cuando llegaron á la era de Nachôn"
+    },
+    {
+     "texto": "El lugar se llamó Pérez-uza",
+     "certeza": "texto",
+     "ref": "2S 6:8",
+     "cita": "fué llamado aquel lugar Pérez-uzza, hasta hoy"
+    }
+   ],
+   "externo": [],
+   "lugar": "perez-uza"
+  },
+  "casa-de-obed-edom": {
+   "nombre": "La casa de Obed-edom",
+   "apariciones": [
+    {
+     "inicio": "2S 6:10",
+     "fin": "2S 6:12"
+    }
+   ],
+   "personas": [
+    "Obed-edom_1",
+    "David_1"
+   ],
+   "objetos": [
+    "arca-del-testimonio"
+   ],
+   "resumen": "David no se atreve a llevar el arca a la Ciudad de David y la deja tres meses aquí; Jehová bendice la casa.",
+   "datos": [
+    {
+     "texto": "David no quiso llevar el arca a la ciudad de David y la llevó a casa de Obed-edom",
+     "certeza": "texto",
+     "ref": "2S 6:10",
+     "cita": "llevóla David á casa de Obed-edom Getheo"
+    },
+    {
+     "texto": "Jehová bendice su casa y todo lo que tiene",
+     "certeza": "texto",
+     "ref": "2S 6:12",
+     "cita": "Jehová ha bendecido la casa de Obed-edom, y todo lo que tiene"
+    }
+   ],
+   "externo": []
+  },
+  "casa-de-maquir-en-lodebar": {
+   "nombre": "La casa de Maquir en Lodebar",
+   "apariciones": [
+    {
+     "inicio": "2S 9:4",
+     "fin": "2S 9:5"
+    }
+   ],
+   "personas": [
+    "Machir_2",
+    "Mephibosheth_1"
+   ],
+   "objetos": [],
+   "resumen": "Donde vivía Mefi-boset hasta que David lo manda traer.",
+   "datos": [
+    {
+     "texto": "Mefi-boset está en casa de Maquir hijo de Amiel, en Lodebar",
+     "certeza": "texto",
+     "ref": "2S 9:4",
+     "cita": "está en casa de Machîr hijo de Amiel, en Lodebar"
+    },
+    {
+     "texto": "David lo toma de allí",
+     "certeza": "texto",
+     "ref": "2S 9:5",
+     "cita": "tomólo de casa de Machîr hijo de Amiel, de Lodebar"
+    }
+   ],
+   "externo": [],
+   "lugar": "lodebar"
+  },
+  "jerico": {
+   "nombre": "Jericó",
+   "apariciones": [
+    {
+     "inicio": "2S 10:5",
+     "fin": "2S 10:5"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David manda a los enviados humillados esperar en Jericó hasta que les crezca la barba",
+     "certeza": "texto",
+     "ref": "2S 10:5",
+     "cita": "Estaos en Jericó hasta que os vuelva á nacer la barba"
+    }
+   ],
+   "externo": []
+  },
+  "terrado-del-palacio": {
+   "nombre": "El terrado de la casa real",
+   "apariciones": [
+    {
+     "inicio": "2S 11:2",
+     "fin": "2S 11:5"
+    },
+    {
+     "inicio": "2S 16:22",
+     "fin": "2S 16:22"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Bathsheba_1",
+    "Absalom_1"
+   ],
+   "objetos": [],
+   "resumen": "Azotea del palacio de David en Jerusalén, desde la que ve a Betsabé; después Absalón pone allí su tienda.",
+   "datos": [
+    {
+     "texto": "David se pasea por el terrado y ve a una mujer lavándose",
+     "certeza": "texto",
+     "ref": "2S 11:2",
+     "cita": "paseábase por el terrado de la casa real, cuando vió desde el terrado una mujer que se estaba lavando"
+    },
+    {
+     "texto": "Ponen una tienda a Absalón sobre el terrado",
+     "certeza": "texto",
+     "ref": "2S 16:22",
+     "cita": "pusieron una tienda á Absalom sobre el terrado"
+    }
+   ],
+   "externo": [],
+   "lugar": "jerusalen"
+  },
+  "raba-de-amon": {
+   "nombre": "Rabá de los hijos de Ammón",
+   "apariciones": [
+    {
+     "inicio": "2S 11:1",
+     "fin": "2S 11:1"
+    },
+    {
+     "inicio": "2S 11:15",
+     "fin": "2S 11:17"
+    },
+    {
+     "inicio": "2S 12:26",
+     "fin": "2S 12:31"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "David_1",
+    "Uriah_1"
+   ],
+   "objetos": [
+    "corona-de-raba",
+    "carta-de-david-a-joab"
+   ],
+   "resumen": "Ciudad amonita cercada por Joab; allí muere Urías y David toma finalmente la ciudad y la corona de su rey.",
+   "datos": [
+    {
+     "texto": "Joab cerca Rabá mientras David se queda en Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 11:1",
+     "cita": "pusieron cerco á Rabba: mas David se quedó en Jerusalem"
+    },
+    {
+     "texto": "Joab toma «la ciudad de las aguas» y pide a David que venga a rendirla",
+     "certeza": "texto",
+     "ref": "2S 12:27",
+     "cita": "he tomado la ciudad de las aguas"
+    },
+    {
+     "texto": "David toma la ciudad y la corona de su rey",
+     "certeza": "texto",
+     "ref": "2S 12:29",
+     "cita": "fué contra Rabba, y combatióla, y tomóla"
+    }
+   ],
+   "externo": [],
+   "lugar": "raba-amon"
+  },
+  "baal-hazor-esquileo": {
+   "nombre": "El esquileo de Baal-hazor",
+   "apariciones": [
+    {
+     "inicio": "2S 13:23",
+     "fin": "2S 13:29"
+    }
+   ],
+   "personas": [
+    "Absalom_1",
+    "Amnon_1"
+   ],
+   "objetos": [],
+   "resumen": "Donde Absalón invita a los hijos del rey y manda matar a Amnón cuando su corazón esté alegre del vino.",
+   "datos": [
+    {
+     "texto": "Absalón tenía esquiladores en Baal-hazor, junto a Efraín",
+     "certeza": "texto",
+     "ref": "2S 13:23",
+     "cita": "Absalom tenía esquiladores en Bala-hasor, que está junto á Ephraim"
+    },
+    {
+     "texto": "Los hijos del rey huyen en sus mulos",
+     "certeza": "texto",
+     "ref": "2S 13:29",
+     "cita": "subieron todos en sus mulos, y huyeron"
+    }
+   ],
+   "externo": [],
+   "lugar": "baal-hazor"
+  },
+  "gesur": {
+   "nombre": "Gesur",
+   "apariciones": [
+    {
+     "inicio": "2S 13:37",
+     "fin": "2S 13:38"
+    },
+    {
+     "inicio": "2S 14:23",
+     "fin": "2S 14:23"
+    },
+    {
+     "inicio": "2S 14:32",
+     "fin": "2S 14:32"
+    }
+   ],
+   "personas": [
+    "Absalom_1",
+    "Talmai_2",
+    "Joab_1"
+   ],
+   "objetos": [],
+   "resumen": "Reino de Talmai, abuelo de Absalón, donde este pasa tres años exiliado.",
+   "datos": [
+    {
+     "texto": "Absalón huye a Talmai, rey de Gesur",
+     "certeza": "texto",
+     "ref": "2S 13:37",
+     "cita": "fuése á Talmai hijo de Amiud, rey de Gessur"
+    },
+    {
+     "texto": "Estuvo allá tres años",
+     "certeza": "texto",
+     "ref": "2S 13:38",
+     "cita": "estuvo allá tres años"
+    },
+    {
+     "texto": "Joab va a Gesur y trae a Absalón a Jerusalén",
+     "certeza": "texto",
+     "ref": "2S 14:23",
+     "cita": "fué á Gessur, y volvió á Absalom á Jerusalem"
+    }
+   ],
+   "externo": [],
+   "lugar": "gesur"
+  },
+  "tecoa": {
+   "nombre": "Tecoa",
+   "apariciones": [
+    {
+     "inicio": "2S 14:2",
+     "fin": "2S 14:4"
+    }
+   ],
+   "personas": [
+    "Joab_1"
+   ],
+   "objetos": [],
+   "resumen": "De donde Joab trae a la mujer astuta que hablará al rey.",
+   "datos": [
+    {
+     "texto": "Joab manda a Tecoa y toma de allá una mujer astuta",
+     "certeza": "texto",
+     "ref": "2S 14:2",
+     "cita": "Envió Joab á Tecoa, y tomó de allá una mujer astuta"
+    }
+   ],
+   "externo": [],
+   "lugar": "tecoa"
+  },
+  "cuesta-de-las-olivas": {
+   "nombre": "La cuesta de las olivas",
+   "apariciones": [
+    {
+     "inicio": "2S 15:30",
+     "fin": "2S 15:37"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Hushai_1"
+   ],
+   "objetos": [],
+   "resumen": "David sube llorando, descalzo y con la cabeza cubierta; en la cumbre adora y se le une Husai.",
+   "datos": [
+    {
+     "texto": "David sube llorando, con la cabeza cubierta y los pies descalzos",
+     "certeza": "texto",
+     "ref": "2S 15:30",
+     "cita": "subió la cuesta de las olivas; y subió[la] llorando"
+    },
+    {
+     "texto": "En la cumbre adora a Dios y le sale al encuentro Husai",
+     "certeza": "texto",
+     "ref": "2S 15:32",
+     "cita": "llegó á la cumbre [del monte] para adorar allí á Dios"
+    }
+   ],
+   "externo": [],
+   "lugar": "monte-de-los-olivos"
+  },
+  "fuente-de-rogel": {
+   "nombre": "La fuente de Rogel",
+   "apariciones": [
+    {
+     "inicio": "2S 17:17",
+     "fin": "2S 17:17"
+    }
+   ],
+   "personas": [
+    "Jonathan_3",
+    "Ahimaaz_2"
+   ],
+   "objetos": [],
+   "resumen": "Donde esperan los dos mensajeros porque no pueden mostrarse en la ciudad.",
+   "datos": [
+    {
+     "texto": "Jonatán y Ahimaas esperan allí; una criada les da el aviso",
+     "certeza": "texto",
+     "ref": "2S 17:17",
+     "cita": "Jonathán y Ahimaas estaban junto á la fuente de Rogel"
+    }
+   ],
+   "externo": [],
+   "lugar": "en-rogel"
+  },
+  "paso-del-jordan": {
+   "nombre": "El paso del Jordán",
+   "apariciones": [
+    {
+     "inicio": "2S 17:22",
+     "fin": "2S 17:22"
+    },
+    {
+     "inicio": "2S 19:15",
+     "fin": "2S 19:18"
+    },
+    {
+     "inicio": "2S 19:31",
+     "fin": "2S 19:40"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Shimei_2",
+    "Ziba_1",
+    "Barzillai_1",
+    "Chimham_1"
+   ],
+   "objetos": [],
+   "resumen": "David lo cruza de noche huyendo y lo vuelve a cruzar al regresar, recibido por Simei, Siba y Barzilai.",
+   "datos": [
+    {
+     "texto": "Cruzan el Jordán antes del amanecer y no falta nadie",
+     "certeza": "texto",
+     "ref": "2S 17:22",
+     "cita": "ni siquiera faltó uno que no pasase el Jordán"
+    },
+    {
+     "texto": "Una barca pasa a la familia del rey al regreso",
+     "certeza": "texto",
+     "ref": "2S 19:18",
+     "cita": "Atravesó después la barca para pasar la familia del rey"
+    },
+    {
+     "texto": "Barzillai pasa un poco con el rey",
+     "certeza": "texto",
+     "ref": "2S 19:36",
+     "cita": "Pasará tu siervo un poco el Jordán con el rey"
+    }
+   ],
+   "externo": [],
+   "lugar": "jordan"
+  },
+  "mahanaim": {
+   "nombre": "Mahanaim",
+   "apariciones": [
+    {
+     "inicio": "2S 2:29",
+     "fin": "2S 2:29"
+    },
+    {
+     "inicio": "2S 17:24",
+     "fin": "2S 17:29"
+    },
+    {
+     "inicio": "2S 18:24",
+     "fin": "2S 18:33"
+    }
+   ],
+   "personas": [
+    "Abner_1",
+    "David_1",
+    "Machir_2",
+    "Shobi_1",
+    "Barzillai_1"
+   ],
+   "objetos": [
+    "provisiones-de-mahanaim"
+   ],
+   "resumen": "Ciudad de Galaad: capital de Is-boset y refugio de David durante la rebelión de Absalón.",
+   "datos": [
+    {
+     "texto": "Abner llega a Mahanaim tras Gabaón",
+     "certeza": "texto",
+     "ref": "2S 2:29",
+     "cita": "llegaron á Mahanaim"
+    },
+    {
+     "texto": "David llega a Mahanaim y le traen provisiones",
+     "certeza": "texto",
+     "ref": "2S 17:24",
+     "cita": "David llegó á Mahanaim"
+    },
+    {
+     "texto": "Barzillai le había dado provisión «cuando estaba en Mahanaim»",
+     "certeza": "texto",
+     "ref": "2S 19:32",
+     "cita": "había dado provisión al rey cuando estaba en Mahanaim"
+    },
+    {
+     "texto": "David espera sentado entre las dos puertas; el texto no nombra la ciudad, pero estaba en Mahanaim",
+     "certeza": "inferido",
+     "ref": "2S 18:24",
+     "cita": "Estaba David á la sazón sentado entre las dos puertas"
+    }
+   ],
+   "externo": [],
+   "lugar": "mahanaim"
+  },
+  "bosque-de-efrain": {
+   "nombre": "El bosque de Efraín",
+   "apariciones": [
+    {
+     "inicio": "2S 18:6",
+     "fin": "2S 18:17"
+    }
+   ],
+   "personas": [
+    "Absalom_1",
+    "Joab_1",
+    "Abishai_1",
+    "Ittai_1"
+   ],
+   "objetos": [
+    "tres-dardos-de-joab",
+    "monton-de-piedras-de-absalom"
+   ],
+   "resumen": "Donde se da la batalla; mueren más por el bosque que por la espada y Absalón queda colgado de un alcornoque.",
+   "datos": [
+    {
+     "texto": "Se da la batalla en el bosque de Efraín",
+     "certeza": "texto",
+     "ref": "2S 18:6",
+     "cita": "dióse la batalla en el bosque de Ephraim"
+    },
+    {
+     "texto": "Mueren más del pueblo por el bosque que por el cuchillo",
+     "certeza": "texto",
+     "ref": "2S 18:8",
+     "cita": "fueron más los que consumió el bosque de los del pueblo, que los que consumió el cuchillo aquel día"
+    },
+    {
+     "texto": "Absalón monta un mulo que pasa bajo un gran alcornoque",
+     "certeza": "texto",
+     "ref": "2S 18:9",
+     "cita": "el mulo se entró debajo de un espeso y grande alcornoque"
+    }
+   ],
+   "externo": [],
+   "lugar": "bosque-de-efrain"
+  },
+  "gran-pena-de-gabaon": {
+   "nombre": "La gran peña de Gabaón",
+   "apariciones": [
+    {
+     "inicio": "2S 20:8",
+     "fin": "2S 20:13"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "Amasa_1"
+   ],
+   "objetos": [
+    "daga-de-joab"
+   ],
+   "resumen": "Junto a ella sale Amasa al encuentro de Joab, que lo mata.",
+   "datos": [
+    {
+     "texto": "Amasa sale al encuentro de Joab junto a la grande peña de Gabaón",
+     "certeza": "texto",
+     "ref": "2S 20:8",
+     "cita": "cerca de la grande peña que está en Gabaón, salióles Amasa al encuentro"
+    }
+   ],
+   "externo": [],
+   "lugar": "gabaon"
+  },
+  "abel-bet-maaca": {
+   "nombre": "Abel de Bet-maaca",
+   "apariciones": [
+    {
+     "inicio": "2S 20:14",
+     "fin": "2S 20:22"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "Sheba_4"
+   ],
+   "objetos": [
+    "corneta-de-guerra"
+   ],
+   "resumen": "Ciudad donde se refugia Seba y que Joab cerca; una mujer sabia la salva entregando a Seba.",
+   "datos": [
+    {
+     "texto": "Lo cercan en Abel de Bet-maaca y levantan baluarte",
+     "certeza": "texto",
+     "ref": "2S 20:15",
+     "cita": "cercáronlo en Abel de Beth-maachâ, y pusieron baluarte contra la ciudad"
+    },
+    {
+     "texto": "La mujer la llama «una ciudad que es madre de Israel»",
+     "certeza": "texto",
+     "ref": "2S 20:19",
+     "cita": "una ciudad que es madre de Israel"
+    },
+    {
+     "texto": "Los de la ciudad entregan la cabeza de Seba y Joab se retira",
+     "certeza": "texto",
+     "ref": "2S 20:22",
+     "cita": "y esparciéronse de la ciudad, cada uno á su estancia"
+    }
+   ],
+   "externo": [],
+   "lugar": "abel-bet-maaca"
+  },
+  "jabes-de-galaad": {
+   "nombre": "Jabes de Galaad",
+   "apariciones": [
+    {
+     "inicio": "2S 2:4",
+     "fin": "2S 2:7"
+    },
+    {
+     "inicio": "2S 21:12",
+     "fin": "2S 21:12"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [
+    "huesos-de-saul-y-jonatan"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "David los bendice por haber sepultado a Saúl",
+     "certeza": "texto",
+     "ref": "2S 2:5",
+     "cita": "Benditos seáis vosotros de Jehová, que habéis hecho esta misericordia con vuestro señor Saúl en haberle dado sepultura"
+    },
+    {
+     "texto": "Los hombres de Jabes habían hurtado los huesos de Saúl y Jonatán",
+     "certeza": "texto",
+     "ref": "2S 21:12",
+     "cita": "de los hombres de Jabes de Galaad, que los habían hurtado"
+    }
+   ],
+   "externo": []
+  },
+  "gabaa-de-benjamin": {
+   "nombre": "Gabaa de Benjamín",
+   "apariciones": [
+    {
+     "inicio": "2S 21:6",
+     "fin": "2S 21:6"
+    },
+    {
+     "inicio": "2S 21:9",
+     "fin": "2S 21:9"
+    }
+   ],
+   "personas": [
+    "Rizpah_1"
+   ],
+   "objetos": [],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Los gabaonitas piden ahorcar a siete hijos de Saúl «en Gabaa de Saúl»",
+     "certeza": "texto",
+     "ref": "2S 21:6",
+     "cita": "para que los ahorquemos á Jehová en Gabaa de Saúl, el escogido de Jehová"
+    }
+   ],
+   "externo": []
+  },
+  "sepulcro-de-cis-en-sela": {
+   "nombre": "El sepulcro de Cis en Sela",
+   "apariciones": [
+    {
+     "inicio": "2S 21:14",
+     "fin": "2S 21:14"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Saul_1",
+    "Jonathan_2",
+    "Kish_1"
+   ],
+   "objetos": [
+    "huesos-de-saul-y-jonatan"
+   ],
+   "resumen": "Sepulcro familiar en tierra de Benjamín donde David sepulta los huesos de Saúl y Jonatán.",
+   "datos": [
+    {
+     "texto": "Sepultan los huesos de Saúl y Jonatán en Sela, en el sepulcro de Cis",
+     "certeza": "texto",
+     "ref": "2S 21:14",
+     "cita": "en tierra de Benjamín, en Sela, en el sepulcro de Cis su padre"
+    },
+    {
+     "texto": "«Después se aplacó Dios con la tierra»",
+     "certeza": "texto",
+     "ref": "2S 21:14",
+     "cita": "Después se aplacó Dios con la tierra"
+    }
+   ],
+   "externo": [],
+   "lugar": "sela"
+  },
+  "gob": {
+   "nombre": "Gob",
+   "apariciones": [
+    {
+     "inicio": "2S 21:18",
+     "fin": "2S 21:19"
+    }
+   ],
+   "personas": [
+    "Sibbecai_1",
+    "Elhanan_1",
+    "Saph_1"
+   ],
+   "objetos": [],
+   "resumen": "Lugar de dos guerras con los filisteos: Sibecai hiere a Saf y Elhanán a «Goliath Getheo» (ver la nota de Goliat).",
+   "datos": [
+    {
+     "texto": "Sibecai hiere a Saf, de los hijos del gigante",
+     "certeza": "texto",
+     "ref": "2S 21:18",
+     "cita": "hubo después en Gob contra los Filisteos"
+    },
+    {
+     "texto": "Elhanán hiere a Goliat geteo, según la RV1909",
+     "certeza": "texto",
+     "ref": "2S 21:19",
+     "cita": "Otra guerra hubo en Gob contra los Filisteos"
+    }
+   ],
+   "externo": [],
+   "lugar": "gob"
+  },
+  "gat-de-los-gigantes": {
+   "nombre": "Gat y los hijos del gigante",
+   "apariciones": [
+    {
+     "inicio": "2S 21:20",
+     "fin": "2S 21:22"
+    }
+   ],
+   "personas": [
+    "Jonathan_4"
+   ],
+   "objetos": [],
+   "resumen": "Allí un gigante de seis dedos en cada mano y pie desafía a Israel y lo mata Jonatán, sobrino de David.",
+   "datos": [
+    {
+     "texto": "Un hombre de gran altura con veinticuatro dedos",
+     "certeza": "texto",
+     "ref": "2S 21:20",
+     "cita": "el cual tenía doce dedos en las manos, y otros doce en los pies, veinticuatro en todos"
+    },
+    {
+     "texto": "Los cuatro le habían nacido al gigante en Gat y cayeron por mano de David y de sus siervos",
+     "certeza": "texto",
+     "ref": "2S 21:22",
+     "cita": "Estos cuatro le habían nacido al gigante en Gath"
+    }
+   ],
+   "externo": [],
+   "lugar": "gat"
+  },
+  "cueva-de-adulam": {
+   "nombre": "Cueva de Adulam",
+   "apariciones": [
+    {
+     "inicio": "2S 23:13",
+     "fin": "2S 23:17"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [
+    "agua-de-la-cisterna-de-belen"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "Tres de los treinta bajan a David a la cueva de Adulam en tiempo de la siega",
+     "certeza": "texto",
+     "ref": "2S 23:13",
+     "cita": "á la cueva de Adullam"
+    },
+    {
+     "texto": "El campo filisteo estaba en el valle de Refaim",
+     "certeza": "texto",
+     "ref": "2S 23:13",
+     "cita": "el campo de los Filisteos estaba en el valle de Raphaim"
+    }
+   ],
+   "externo": []
+  },
+  "belen-de-isai": {
+   "nombre": "Belén, casa de Isaí",
+   "apariciones": [
+    {
+     "inicio": "2S 23:14",
+     "fin": "2S 23:17"
+    }
+   ],
+   "personas": [
+    "David_1"
+   ],
+   "objetos": [
+    "agua-de-la-cisterna-de-belen"
+   ],
+   "resumen": "",
+   "datos": [
+    {
+     "texto": "La guarnición de los filisteos estaba en Belén",
+     "certeza": "texto",
+     "ref": "2S 23:14",
+     "cita": "la guarnición de los Filisteos estaba en Beth-lehem"
+    },
+    {
+     "texto": "La cisterna de Belén estaba «á la puerta»",
+     "certeza": "texto",
+     "ref": "2S 23:15",
+     "cita": "la cisterna de Beth-lehem, que está á la puerta"
+    }
+   ],
+   "externo": []
+  },
+  "recorrido-del-censo": {
+   "nombre": "El recorrido del censo",
+   "apariciones": [
+    {
+     "inicio": "2S 24:4",
+     "fin": "2S 24:9"
+    }
+   ],
+   "personas": [
+    "Joab_1",
+    "David_1"
+   ],
+   "objetos": [],
+   "resumen": "Joab y los capitanes rodean el país de Aroer a Dan, Sidón, Tiro y Beerseba y vuelven en nueve meses y veinte días; no tiene un solo lugar.",
+   "datos": [
+    {
+     "texto": "Cruzan el Jordán y asientan en Aroer",
+     "certeza": "texto",
+     "ref": "2S 24:5",
+     "cita": "pasando el Jordán asentaron en Aroer"
+    },
+    {
+     "texto": "Vuelven a Jerusalén al cabo de nueve meses y veinte días",
+     "certeza": "texto",
+     "ref": "2S 24:8",
+     "cita": "volvieron á Jerusalem al cabo de nueve meses y veinte días"
+    },
+    {
+     "texto": "Dan ochocientos mil hombres en Israel y quinientos mil en Judá",
+     "certeza": "texto",
+     "ref": "2S 24:9",
+     "cita": "ochocientos mil hombres fuertes que sacaban espada; y de los de Judá quinientos mil hombres"
+    }
+   ],
+   "externo": []
+  },
+  "era-de-arauna": {
+   "nombre": "La era de Arauna",
+   "apariciones": [
+    {
+     "inicio": "2S 24:16",
+     "fin": "2S 24:25"
+    }
+   ],
+   "personas": [
+    "David_1",
+    "Gad_2",
+    "Araunah_1"
+   ],
+   "objetos": [
+    "bueyes-y-trillos-de-arauna",
+    "altar-de-david-en-la-era-de-arauna"
+   ],
+   "resumen": "Era de un jebuseo junto a Jerusalén donde se detiene el ángel y David levanta un altar; no es un lugar de la lista de lugares, por eso no lleva lugar.",
+   "datos": [
+    {
+     "texto": "El ángel de Jehová estaba junto a la era de Arauna jebuseo",
+     "certeza": "texto",
+     "ref": "2S 24:16",
+     "cita": "el ángel de Jehová estaba junto á la era de Arauna Jebuseo"
+    },
+    {
+     "texto": "David compra la era y los bueyes",
+     "certeza": "texto",
+     "ref": "2S 24:24",
+     "cita": "por precio te lo compraré"
+    },
+    {
+     "texto": "Edifica un altar y cesa la plaga",
+     "certeza": "texto",
+     "ref": "2S 24:25",
+     "cita": "cesó la plaga de Israel"
+    }
+   ],
+   "externo": []
+  }
+ }
+}
