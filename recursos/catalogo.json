@@ -2096,15 +2096,37 @@
     "fecha_obra": null,
     "institucion": "Proyecto Biblia (bibleproject.com/es; canal de YouTube «Proyecto Biblia»)",
     "url_fuente": "https://bibleproject.com/es/videos/salmo-8/",
-    "url_archivo": null,
+    "url_archivo": "https://www.youtube.com/watch?v=wtrUhJIX0Fc",
     "archivo_local": null,
     "licencia": "Derechos reservados",
     "atribucion": "Proyecto Biblia es el autor y propietario de este video. Para encontrar más recursos de Proyecto Biblia, visita proyectobiblia.com (texto sugerido en su Centro de ayuda).",
-    "uso": "solo_enlace",
+    "uso": "incrustable",
     "certeza": "arte (interpretación)",
-    "nota_certeza": "video explicativo moderno sobre un texto antiguo (interpretación, no el texto)",
+    "nota_certeza": "video explicativo moderno sobre un texto antiguo (interpretación, no el texto). La página de bibleproject.com sirve el video desde su propio servidor; se incrusta la copia del canal oficial: oEmbed (2026-11-17) devolvió «Salmo 8», canal @ProyectoBibliaOficial. Es el episodio 2 de la serie «Creación» (6:55 en la web, 7:00 en YouTube). No se descarga.",
     "idioma": "es",
-    "duracion": null
+    "duracion": "00:06:55"
+  },
+  {
+    "id": "video-bp-proverbios-8",
+    "tipo": "video",
+    "titulo": "Comentario bíblico visual: Serie Creación - Proverbios 8",
+    "descripcion": "Comentario visual de Proyecto Biblia sobre Proverbios 8: la sabiduría de Dios, retratada como una mujer que invita a volver al buen camino, estaba presente en la creación.",
+    "refs": [
+      "Pr 8"
+    ],
+    "autor": "Proyecto Biblia (BibleProject)",
+    "fecha_obra": null,
+    "institucion": "Proyecto Biblia (bibleproject.com/es; canal de YouTube «Proyecto Biblia»)",
+    "url_fuente": "https://bibleproject.com/es/videos/proverbios-8/",
+    "url_archivo": "https://www.youtube.com/watch?v=xOtwUgUil1I",
+    "archivo_local": null,
+    "licencia": "Derechos reservados",
+    "atribucion": "Proyecto Biblia es el autor y propietario de este video. Para encontrar más recursos de Proyecto Biblia, visita proyectobiblia.com (texto sugerido en su Centro de ayuda).",
+    "uso": "incrustable",
+    "certeza": "arte (interpretación)",
+    "nota_certeza": "video explicativo moderno sobre un texto antiguo (interpretación, no el texto). La página de bibleproject.com sirve el video desde su propio servidor; se incrusta la copia del canal oficial: oEmbed (2026-11-17) devolvió «Estudia Proverbios 8 versículo por versículo con este video», canal @ProyectoBibliaOficial. Es el episodio 3 de la serie «Creación» (7:58 en la web y en YouTube). No se descarga.",
+    "idioma": "es",
+    "duracion": "00:07:58"
   },
   {
     "id": "video-bp-salmo-148",

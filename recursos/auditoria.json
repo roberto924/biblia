@@ -454,7 +454,11 @@
   },
   "video-bp-salmo-8": {
    "veredicto": "OK",
-   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+   "motivo": "oEmbed 200 (2026-11-17): «Salmo 8», canal @ProyectoBibliaOficial; episodio 2 de la serie «Creación», como la página de bibleproject.com (6:55 / 7:00). Coincide con Sal 8."
+  },
+  "video-bp-proverbios-8": {
+   "veredicto": "OK",
+   "motivo": "oEmbed 200 (2026-11-17): «Estudia Proverbios 8 versículo por versículo con este video», canal @ProyectoBibliaOficial; episodio 3 de la serie «Creación», misma duración (7:58) que la página de bibleproject.com. Coincide con Pr 8."
   },
   "video-bp-salmo-148": {
    "veredicto": "OK",
