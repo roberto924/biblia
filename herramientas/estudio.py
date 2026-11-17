@@ -491,6 +491,12 @@ def autoprueba():
 
         s, b, r = pedir("GET", "/")
         comprobar(s == 200 and r.getheader("Content-Type", "").startswith("text/html"), "GET / → 200 html")
+        comprobar(isinstance(b, bytes) and b"/estudio/estudio.js" in b and b"/estudio/estudio.css" in b,
+                  "GET / sirve la página del Estudio (index.html con su JS y su CSS)")
+        for ruta, tipo in (("/estudio/estudio.js", "text/javascript"), ("/estudio/estudio.css", "text/css")):
+            s, b, r = pedir("GET", ruta)
+            comprobar(s == 200 and r.getheader("Content-Type", "").startswith(tipo) and len(b) > 1000,
+                      f"GET {ruta} → 200 {tipo}")
         for ruta in ("/img/../CLAUDE.md", "/img/%2e%2e/CLAUDE.md", "/img/..%5C..%5CCLAUDE.md", "/img/C:/Windows/win.ini",
                      "/img/C%3A/Windows/win.ini", "/img//etc/passwd", "/estudio/../estudio.py", "/img/personajes/jose.json",
                      "/estudio/%2e%2e/imagenes.py"):
