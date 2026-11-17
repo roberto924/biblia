@@ -17,17 +17,18 @@ El Estudio (`python -I herramientas/estudio.py`) usa este mismo módulo.
 """
 import argparse, hashlib, json, os, pathlib, re, shutil, sys, tempfile, zlib
 
-RAIZ = G = F = IMG = REGISTRO_VIEJO = None
+RAIZ = G = F = IMG = REGISTRO_VIEJO = PROMPTS_V1 = None
 
 
 def fijar_raiz(raiz):
     """Apunta el módulo a otra raíz de repositorio (las autopruebas usan una copia temporal)."""
-    global RAIZ, G, F, IMG, REGISTRO_VIEJO
+    global RAIZ, G, F, IMG, REGISTRO_VIEJO, PROMPTS_V1
     RAIZ = pathlib.Path(raiz).resolve()
     G = RAIZ / "guiones"
     F = G / "fuentes"
     IMG = G / "imagenes"
     REGISTRO_VIEJO = G / "registro" / "imagenes.jsonl"
+    PROMPTS_V1 = G / "registro" / "imagenes-prompts-v1.json"
 
 
 fijar_raiz(pathlib.Path(__file__).resolve().parent.parent)
@@ -171,38 +172,100 @@ Save the result as a PNG at exactly: {rel(t['destino'])}
 Do not create, modify or delete any other file in the repository. Reply with the saved path and pixel size, or with the exact error if the image could not be made."""
 
 
-def historial_viejo():
-    """Las filas de guiones/registro/imagenes.jsonl (Codex directo, 16-nov) con la forma del registro de capa-ia.
+def _sha16(texto):
+    return hashlib.sha256(texto.encode()).hexdigest()[:16]
 
-    El prompt se reconstruye con `pedido_v1` sobre las fuentes actuales y las referencias y el archivo de la fila;
-    solo se da si su sha256[:16] coincide con el guardado. No se escribe nada en el registro de capa-ia.
-    """
+
+def _clave(f):
+    """Clave de una fila del registro viejo en imagenes-prompts-v1.json: «fecha id»."""
+    return f"{f.get('fecha')} {f.get('id')}"
+
+
+def _filas_viejas():
     if not REGISTRO_VIEJO.exists():
         return []
+    filas = []
+    for linea in REGISTRO_VIEJO.read_text(encoding="utf-8").splitlines():
+        try:
+            filas.append(json.loads(linea)) if linea.strip() else None
+        except ValueError:
+            continue
+    return filas
+
+
+def _congelados():
+    """{clave: {prompt_sha256, prompt}} de imagenes-prompts-v1.json ({} si no está o no se lee)."""
+    try:
+        d = json.loads(PROMPTS_V1.read_text(encoding="utf-8")).get("prompts")
+        return d if isinstance(d, dict) else {}
+    except (OSError, ValueError, AttributeError):
+        return {}
+
+
+def _reconstruir(filas):
+    """{clave: prompt} de las filas cuyo `pedido_v1` sobre las fuentes actuales da su sha256[:16]."""
     try:
         E = leer(F / "estilo.json")
         T = {t["id"]: t for t in pendientes(E)}
         instr = instrucciones()
     except (OSError, ValueError, KeyError, AttributeError):
-        T, instr = {}, None
-    filas = []
-    for linea in REGISTRO_VIEJO.read_text(encoding="utf-8").splitlines():
-        if not linea.strip():
+        return {}
+    out = {}
+    for f in filas:
+        t = T.get(f.get("id"))
+        if not t:
             continue
+        # las referencias y el archivo, los de la fila (la lámina 2 se renombra al aprobarla)
+        t = dict(t, refs=[RAIZ / r for r in f.get("refs", [])], destino=RAIZ / f.get("archivo", ""))
         try:
-            f = json.loads(linea)
+            texto = pedido_v1(t, instr)
         except ValueError:
             continue
-        prompt = None
-        t = T.get(f.get("id"))
-        if t and instr is not None:
-            t = dict(t, refs=[RAIZ / r for r in f.get("refs", [])], destino=RAIZ / f.get("archivo", ""))
-            try:
-                texto = pedido_v1(t, instr)
-            except ValueError:
-                texto = None
-            if texto and hashlib.sha256(texto.encode()).hexdigest()[:16] == f.get("prompt_sha256"):
-                prompt = texto
+        if _sha16(texto) == f.get("prompt_sha256"):
+            out[_clave(f)] = texto
+    return out
+
+
+def congelar_prompts_v1():
+    """Guarda (una vez) en imagenes-prompts-v1.json los prompts del 16-nov que hoy se reconstruyen con sha coincidente.
+
+    Conserva lo ya congelado; devuelve (total congelados, nuevos). Así editar las fuentes no borra el historial.
+    """
+    filas = _filas_viejas()
+    previos = _congelados()
+    nuevos = {k: {"id": k.split(" ", 1)[1], "prompt_sha256": _sha16(p), "prompt": p}
+              for k, p in _reconstruir(filas).items() if k not in previos}
+    todos = dict(previos, **nuevos)
+    orden = [_clave(f) for f in filas if _clave(f) in todos]
+    doc = {"_nota": ("Prompts que mandó imagenes_codex.py el 2026-11-16 (Codex directo), reconstruidos con la misma "
+                     "función (pedido_v1) y aceptados solo si su sha256[:16] coincide con el de "
+                     "guiones/registro/imagenes.jsonl. Se congelan para que editar las fuentes no los borre del "
+                     "historial del Estudio. No se edita a mano."),
+           "prompts": {k: todos[k] for k in orden}}
+    PROMPTS_V1.parent.mkdir(parents=True, exist_ok=True)
+    PROMPTS_V1.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return len(doc["prompts"]), len(nuevos)
+
+
+def historial_viejo():
+    """Las filas de guiones/registro/imagenes.jsonl (Codex directo, 16-nov) con la forma del registro de capa-ia.
+
+    El prompt sale primero de imagenes-prompts-v1.json (congelado) y, si no está, se reconstruye con `pedido_v1`
+    sobre las fuentes actuales y las referencias y el archivo de la fila; en los dos casos solo se da si su
+    sha256[:16] coincide con el guardado. No se escribe nada en el registro de capa-ia.
+    """
+    filas_v = _filas_viejas()
+    congelados = _congelados()
+    reconstruidos = None
+    filas = []
+    for f in filas_v:
+        c = congelados.get(_clave(f)) or {}
+        prompt = c.get("prompt") if isinstance(c.get("prompt"), str) and _sha16(c["prompt"]) == f.get(
+            "prompt_sha256") else None
+        if prompt is None:
+            if reconstruidos is None:
+                reconstruidos = _reconstruir(filas_v)
+            prompt = reconstruidos.get(_clave(f))
         filas.append({"fecha": f.get("fecha"), "id": None, "app": APP, "etiqueta": f.get("id"), "tipo": "imagen",
                       "proveedor": "codex", "modelo": None, "prompt": prompt,
                       "prompt_nota": None if prompt else "no se pudo reconstruir",
@@ -297,16 +360,42 @@ def _png_falso(ancho=16, alto=9):
             + trozo(b"IEND", b""))
 
 
-def copia_temporal(prefijo="imagenes prueba é "):
-    """Raíz temporal con guiones/fuentes, guiones/imagenes y guiones/estilo.md copiados del repo real."""
-    real = pathlib.Path(__file__).resolve().parent.parent
+TAM_FIXTURE = (32, 18)
+
+
+def copia_temporal(prefijo="imagenes prueba é ", origen=None):
+    """Raíz temporal para las autopruebas, independiente de las imágenes reales.
+
+    Copia de `origen` (el repo por defecto) solo lo que es texto versionado: guiones/fuentes, guiones/estilo.md, el
+    registro viejo y sus prompts congelados. Las imágenes NO se copian: se escriben PNG falsos de TAM_FIXTURE para
+    cada lámina (la 2 siempre como `-codex`, la provisional), cada hoja de personaje y de escenario; ninguna toma ni
+    `_anteriores`. Así aprobar la lámina 2, generar tomas o regenerar hojas en el repo no cambia el fixture.
+    """
+    origen = pathlib.Path(origen) if origen else pathlib.Path(__file__).resolve().parent.parent
     tmp = pathlib.Path(tempfile.mkdtemp(prefix=prefijo))
-    shutil.copytree(real / "guiones" / "fuentes", tmp / "guiones" / "fuentes")
-    shutil.copytree(real / "guiones" / "imagenes", tmp / "guiones" / "imagenes",
-                    ignore=shutil.ignore_patterns("_anteriores"))
-    shutil.copy2(real / "guiones" / "estilo.md", tmp / "guiones" / "estilo.md")
-    (tmp / "guiones" / "registro").mkdir()
+    g, go = tmp / "guiones", origen / "guiones"
+    shutil.copytree(go / "fuentes", g / "fuentes")
+    shutil.copy2(go / "estilo.md", g / "estilo.md")
+    (g / "registro").mkdir()
+    for nombre in ("imagenes.jsonl", "imagenes-prompts-v1.json"):
+        if (go / "registro" / nombre).exists():
+            shutil.copy2(go / "registro" / nombre, g / "registro" / nombre)
+    falso = _png_falso(*TAM_FIXTURE)
+    E = leer(g / "fuentes" / "estilo.json")
+    destinos = [g / "imagenes" / "estilo" / (L["archivo"][:-4] + "-codex.png" if i == 1 else L["archivo"])
+                for i, L in enumerate(E["laminas_patron"])]
+    for carpeta in ("personajes", "escenarios"):
+        destinos += [g / "imagenes" / carpeta / f"{leer(f)['id']}.png"
+                     for f in sorted((g / "fuentes" / carpeta).glob("*.json"))]
+    for p in destinos:
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_bytes(falso)
     return tmp
+
+
+def _listado(raiz):
+    """[(ruta relativa, bytes)] de todos los archivos bajo `raiz`, ordenado."""
+    return sorted((p.relative_to(raiz).as_posix(), p.read_bytes()) for p in raiz.rglob("*") if p.is_file())
 
 
 def ejecutar_falso(llamadas, estados=None):
@@ -361,21 +450,52 @@ def autoprueba():
     con_prompt = [f for f in filas if f["prompt"]]
     comprobar(len(filas) >= 1 and all(f["origen"] == ORIGEN_VIEJO for f in filas),
               f"historial_viejo lee {len(filas)} filas con origen «{ORIGEN_VIEJO}»")
-    comprobar(len(con_prompt) >= 1,
-              f"historial_viejo reconstruye {len(con_prompt)} de {len(filas)} prompts con sha coincidente"
-              + ("" if con_prompt else " (ninguno: los prompts de las fuentes cambiaron desde el 16-nov)"))
-    comprobar(all(f["prompt_nota"] == "no se pudo reconstruir" for f in filas if not f["prompt"]),
-              "las filas sin reconstruir lo dicen")
+    comprobar(len(con_prompt) == len(filas) and PROMPTS_V1.exists(),
+              f"historial_viejo trae {len(con_prompt)} de {len(filas)} prompts (congelados en "
+              f"{PROMPTS_V1.name}: {PROMPTS_V1.exists()})")
+    comprobar(all(_sha16(f["prompt"]) == v["prompt_sha256"] for f in con_prompt
+                  for v in [next(x for x in _filas_viejas() if x["fecha"] == f["fecha"] and x["id"] == f["etiqueta"])]),
+              "cada prompt del historial viejo tiene el sha256[:16] de su fila")
 
     tmp = copia_temporal()
+    post = otra = None
     try:
+        # el fixture no depende de las imágenes del repo: un repo «después de la tarea 5» (lámina 2 aprobada y
+        # renombrada, hojas regeneradas de otro tamaño, tomas generadas, versiones anteriores) da la misma copia
+        post = pathlib.Path(tempfile.mkdtemp(prefix="imagenes post é "))
+        for x in ("fuentes", "estilo.md", "registro"):
+            (shutil.copytree if (tmp / "guiones" / x).is_dir() else shutil.copy2)(tmp / "guiones" / x, post / "guiones" / x)
+        E0 = leer(tmp / "guiones" / "fuentes" / "estilo.json")
+        for i, L in enumerate(E0["laminas_patron"]):
+            p = post / "guiones" / "imagenes" / "estilo" / L["archivo"]  # la 2 ya aprobada: sin -codex
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_bytes(_png_falso(1672, 9 + i))
+        for rel in ("personajes/jose.png", "escenarios/casa-jose-sala.png", "Gn/gn-01-t1.png", "Gn/gn-98-t4.png",
+                    "_anteriores/personajes__jose-20261120-101010.png"):
+            p = post / "guiones" / "imagenes" / rel
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_bytes(_png_falso(1672, 941))
+        otra = copia_temporal("imagenes otra é ", origen=post)
+        comprobar(_listado(otra / "guiones" / "imagenes") == _listado(tmp / "guiones" / "imagenes"),
+                  "fixture independiente de las imágenes: con la lámina 2 aprobada y tomas generadas sale igual")
+        comprobar((tmp / "guiones" / "imagenes" / "estilo" / "patron-2-interior-codex.png").exists()
+                  and not (tmp / "guiones" / "imagenes" / "Gn").exists()
+                  and not (tmp / "guiones" / "imagenes" / "_anteriores").exists(),
+                  "fixture: lámina 2 como -codex, sin tomas ni _anteriores")
+
         fijar_raiz(tmp)
-        hoja = IMG / "escenarios" / "creacion-abismo.png"
-        hoja.unlink()
         E = leer(F / "estilo.json")
         T = pendientes(E)
-        toma = next(t for t in T if t["id"].startswith("Gn/") and hoja in t["refs"])
-        comprobar(toma["bloqueo"] is not None, f"{toma['id']} está bloqueada sin la hoja creacion-abismo")
+        tomas = [t for t in T if not t["id"].startswith(("estilo/", "personajes/", "escenarios/"))]
+        comprobar(tomas and all(png(t["destino"]) == TAM_FIXTURE for t in T if t["destino"].exists())
+                  and not any(t["destino"].exists() for t in tomas), "fixture: PNG falsos de tamaño conocido")
+        # se quita la hoja de escenario de la primera toma: esa toma queda bloqueada hasta que se genere
+        hoja = tomas[0]["refs"][-1]
+        esc = f"escenarios/{hoja.stem}"
+        hoja.unlink()
+        T = pendientes(E)
+        toma = next(t for t in T if t["id"] == tomas[0]["id"])
+        comprobar(toma["bloqueo"] is not None, f"{toma['id']} está bloqueada sin la hoja {esc}")
         instr = instrucciones()
 
         # el trabajo que se manda a capa-ia
@@ -398,20 +518,21 @@ def autoprueba():
         llamadas, progreso = [], []
         res = generar_lote(2, ejecutar=ejecutar_falso(llamadas), al_progreso=lambda t, r: progreso.append(t["id"]))
         hechos = [x["etiqueta"] for x in llamadas]
-        comprobar(hechos == ["escenarios/creacion-abismo", toma["id"]],
+        comprobar(hechos == [esc, toma["id"]],
                   f"generar_lote(2) recalcula: {hechos}")
         comprobar(len(res) == 2 and all(r["estado"] == "ok" for r in res) and progreso == hechos,
                   "generar_lote devuelve 2 Resultados ok y avisa el progreso")
         comprobar(png(hoja) == (16, 9), "la hoja quedó escrita por el falso (16×9)")
 
         # solo por prefijo e ids exactos
+        pref = tomas[-1]["id"].rsplit("-", 1)[0]  # el último pasaje, p. ej. Gn/gn-98
+        g2 = [t["id"] for t in tomas if t["id"].startswith(pref + "-")]
         llamadas = []
-        generar_lote(1, solo="Gn/gn-98", ejecutar=ejecutar_falso(llamadas))
-        comprobar([x["etiqueta"] for x in llamadas] == ["Gn/gn-98-t1"], "solo = prefijo")
+        generar_lote(1, solo=pref, ejecutar=ejecutar_falso(llamadas))
+        comprobar([x["etiqueta"] for x in llamadas] == [g2[0]], f"solo = prefijo ({pref})")
         llamadas = []
-        res = generar_lote(5, ids=["Gn/gn-98-t3", "Gn/gn-98-t2", "Gn/gn-98-t1", "no/existe"],
-                           ejecutar=ejecutar_falso(llamadas))
-        comprobar([x["etiqueta"] for x in llamadas] == ["Gn/gn-98-t3", "Gn/gn-98-t2"],
+        res = generar_lote(5, ids=[g2[2], g2[1], g2[0], "no/existe"], ejecutar=ejecutar_falso(llamadas))
+        comprobar([x["etiqueta"] for x in llamadas] == [g2[2], g2[1]],
                   "ids exactos en su orden; los que ya existen o no existen se saltan")
         comprobar([r["estado"] for r in res] == ["ok", "ok", "saltado", "saltado"], "saltados con motivo")
 
@@ -441,9 +562,30 @@ def autoprueba():
         res = generar_lote(3, ejecutar=lanza)
         comprobar(len(llamadas) == 1 and res[0]["estado"] == "bloqueado_coste" and codigo(res) == 3,
                   "CapaIAError (bloqueado_coste) → Resultado, para, código 3")
+
+        # prompts congelados: editar una fuente no borra el prompt del 16-nov del historial (Ruling R4)
+        viejos = {f.get("id") for f in _filas_viejas()}
+        objetivo = next(i for i in ("personajes/jose", *sorted(viejos))
+                        if i in viejos and i.startswith(("personajes/", "escenarios/")))
+        carpeta, nombre = objetivo.split("/")
+        fj = F / carpeta / f"{nombre}.json"
+        x = leer(fj)
+        x["hoja_referencia"]["prompt_en"] += " Edited after the sixteenth of November."
+        fj.write_text(json.dumps(x, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        h = [f for f in historial_viejo() if f["etiqueta"] == objetivo]
+        comprobar(h and all(f["prompt"] for f in h), f"{objetivo} editado: el historial viejo sigue con su prompt")
+        PROMPTS_V1.unlink(missing_ok=True)
+        h = [f for f in historial_viejo() if f["etiqueta"] == objetivo]
+        comprobar(h and all(f["prompt"] is None and f["prompt_nota"] == "no se pudo reconstruir" for f in h),
+                  "sin el archivo congelado ya no se podría reconstruir (lo dice)")
+        n, nuevos = congelar_prompts_v1()
+        comprobar(n == len(_filas_viejas()) - len(h) and nuevos == n,
+                  f"congelar_prompts_v1 en la copia: {n} congelados (el editado no)")
     finally:
         fijar_raiz(real)
-        shutil.rmtree(tmp, ignore_errors=True)
+        for d in (tmp, post, otra):
+            if d:
+                shutil.rmtree(d, ignore_errors=True)
 
     print("AUTOPRUEBA:", "OK" if not fallos else f"{len(fallos)} FALLOS")
     return 1 if fallos else 0
@@ -455,9 +597,16 @@ def main(argv=None):
     ap.add_argument("--generar", type=int, default=0, help="cuántas imágenes generar (0 = solo listar)")
     ap.add_argument("--solo", help="prefijo de id (estilo/, personajes/, escenarios/, Gn/…)")
     ap.add_argument("--autoprueba", action="store_true")
+    ap.add_argument("--congelar-prompts-v1", action="store_true",
+                    help="guarda en guiones/registro/imagenes-prompts-v1.json los prompts del 16-nov reconstruibles")
     a = ap.parse_args(argv)
     if a.autoprueba:
         return autoprueba()
+    if a.congelar_prompts_v1:
+        n, nuevos = congelar_prompts_v1()
+        print(f"{PROMPTS_V1.relative_to(RAIZ).as_posix()}: {n} prompts congelados ({nuevos} nuevos) de "
+              f"{len(_filas_viejas())} filas.")
+        return 0
     E = leer(F / "estilo.json")
     T = [t for t in pendientes(E) if not t["destino"].exists() and not (a.solo and not t["id"].startswith(a.solo))]
     listas = [t for t in T if not t["bloqueo"]]

@@ -531,7 +531,11 @@ def autoprueba():
         comprobar(s == 400 and not b["ok"] and any("halo" in x for x in b["errores"]), "POST /api/prompt inválido → 400")
         s, b, r = pedir("POST", "/api/revision", {"id": "personajes/jose", "estado": "rechazada", "nota": "toga"})
         comprobar(s == 200 and b["ok"], "POST /api/revision → 200")
-        s, b, r = pedir("POST", "/api/revision", {"id": "Gn/gn-01-t1", "estado": "aprobada"})
+        # el fixture no tiene tomas (imágenes falsas de tamaño fijo): los ids esperados salen de las fuentes
+        pend = I.pendientes(I.leer(I.F / "estilo.json"))
+        tomas = [t["id"] for t in pend if not t["id"].startswith(("estilo/", "personajes/", "escenarios/"))]
+        con_hermanos = next(t["id"] for t in pend if D.IMG / "personajes" / "hermanos.png" in t["refs"])
+        s, b, r = pedir("POST", "/api/revision", {"id": tomas[0], "estado": "aprobada"})
         comprobar(s == 400, "revisar sin imagen → 400")
 
         # lote de 2
@@ -539,8 +543,8 @@ def autoprueba():
         comprobar(s == 202, "POST /api/generar {n: 2} → 202")
         L = esperar_lote()
         comprobar([h["estado"] for h in L["hechas"]] == ["ok", "ok"] and L["parado_por"] == "terminado"
-                  and [h["id"] for h in L["hechas"]] == ["Gn/gn-01-t1", "Gn/gn-01-t2"], f"lote de 2 → 2 ok ({L})")
-        comprobar((D.IMG / "Gn" / "gn-01-t2.png").exists(), "las imágenes quedan en su sitio")
+                  and [h["id"] for h in L["hechas"]] == tomas[:2], f"lote de 2 → 2 ok ({L})")
+        comprobar(all(D.imagen_actual(i) for i in tomas[:2]), "las imágenes quedan en su sitio")
 
         # esperando cuota (foco 4)
         falso.llamadas.clear()
@@ -569,14 +573,14 @@ def autoprueba():
         falso.conducta["falla"] = set()
 
         # regenerar bien: ids exactos en su orden; uno bloqueado se salta con motivo
-        s, b, r = pedir("POST", "/api/generar", {"ids": ["Gn/gn-01-t1", "personajes/benjamin"], "regenerar": True})
+        s, b, r = pedir("POST", "/api/generar", {"ids": [tomas[0], "personajes/benjamin"], "regenerar": True})
         L = esperar_lote()
-        comprobar([(x["id"], x["estado"]) for x in L["hechas"]] == [("Gn/gn-01-t1", "ok"), ("personajes/benjamin", "ok")]
+        comprobar([(x["id"], x["estado"]) for x in L["hechas"]] == [(tomas[0], "ok"), ("personajes/benjamin", "ok")]
                   and L["parado_por"] == "terminado", "regenerar 2 ids en su orden")
-        s, b, r = pedir("POST", "/api/generar", {"ids": ["Gn/gn-98-t1"], "regenerar": True})
+        s, b, r = pedir("POST", "/api/generar", {"ids": [con_hermanos], "regenerar": True})
         L = esperar_lote()
         comprobar(L["hechas"][0]["estado"] == "saltado" and "hermanos" in L["hechas"][0]["motivo"]
-                  and not any(p.name.startswith("Gn__gn-98-t1") for p in D.ANTERIORES.iterdir()),
+                  and not any(p.name.startswith(con_hermanos.replace("/", "__") + "-") for p in D.ANTERIORES.iterdir()),
                   f"id bloqueado → saltado con motivo y sin apartar ({L['hechas'][0]['motivo']})")
 
         # lote en curso: 409 al generar y al editar el prompt de la imagen actual; detener tras la actual

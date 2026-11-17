@@ -356,10 +356,7 @@ def datos(registro_capa=None):
 # --------------------------------------------------------------------------- autoprueba
 def copia_temporal(prefijo="estudio prueba é "):
     """Repo mínimo en una carpeta con espacios y «é»: fuentes, imágenes, estilo.md, registro viejo y una revisión."""
-    tmp = I.copia_temporal(prefijo)
-    real = CODIGO.parent / "guiones" / "registro" / "imagenes.jsonl"
-    if real.exists():
-        shutil.copy2(real, tmp / "guiones" / "registro" / "imagenes.jsonl")
+    tmp = I.copia_temporal(prefijo)  # imágenes falsas de tamaño fijo: no depende de guiones/imagenes del repo
     (tmp / "guiones" / "registro" / "revision.json").write_text(json.dumps(
         {"personajes/benjamin": {"estado": "aprobada", "nota": "", "fecha": "2026-11-16T21:00:00",
                                  "archivo": "guiones/imagenes/personajes/benjamin.png", "archivo_sha256": "0" * 64}},
@@ -396,12 +393,17 @@ def autoprueba():
         d = datos([fila_capa, dict(fila_capa, etiqueta="otra/cosa")])
         comprobar(d["estilo"]["rotulo_ia"] == "Ilustración moderna (generada con IA)" and d["estilo"]["nombre"],
                   "estilo: nombre y rótulo de la IA")
-        comprobar((len(d["laminas"]), len(d["personajes"]), len(d["escenarios"])) == (3, 3, 6),
+        esperado = (len(I.leer(F / "estilo.json")["laminas_patron"]), len(list((F / "personajes").glob("*.json"))),
+                    len(list((F / "escenarios").glob("*.json"))))
+        comprobar((len(d["laminas"]), len(d["personajes"]), len(d["escenarios"])) == esperado == (3, 3, 6),
                   f"3 láminas, 3 personajes, 6 escenarios: {len(d['laminas'])}, {len(d['personajes'])}, "
                   f"{len(d['escenarios'])}")
         pas = {p["id"]: p for p in d["pasajes"]}
         ntomas = {k: sum(len(e["tomas"]) for e in p["escenas"]) for k, p in pas.items()}
-        comprobar(ntomas == {"gn-01": 11, "gn-98": 9}, f"tomas de gn-01 y gn-98: {ntomas}")
+        guiones_ = {g["id"]: sum(len(e["tomas"]) for e in g["escenas"])
+                    for g in (I.leer(f) for f in sorted(F.glob("*/*.json"))
+                              if f.parent.name not in ("personajes", "escenarios"))}
+        comprobar(ntomas == guiones_ and {"gn-01", "gn-98"} <= set(ntomas), f"tomas de gn-01 y gn-98: {ntomas}")
         L2 = d["laminas"][1]
         comprobar(L2["id"] == "estilo/patron-2-interior" and L2["campo"] == "laminas_patron[1].prompt_en"
                   and L2["fuente"] == "guiones/fuentes/estilo.json" and L2["grupo"] == "estilo",
@@ -411,7 +413,7 @@ def autoprueba():
         jose = next(x for x in d["personajes"] if x["id"] == "personajes/jose")
         comprobar(jose["campo"] == "hoja_referencia.prompt_en" and jose["fuente"] == "guiones/fuentes/personajes/jose.json"
                   and jose["titulo"] == "José", "hoja de José: campo, fuente y título")
-        comprobar(jose["imagen"] == "/img/personajes/jose.png" and (jose["ancho"], jose["alto"]) == (1672, 941),
+        comprobar(jose["imagen"] == "/img/personajes/jose.png" and (jose["ancho"], jose["alto"]) == I.TAM_FIXTURE,
                   "hoja de José: imagen y tamaño")
         comprobar(jose["prompt_enviado"].startswith(I.leer(F / "estilo.json")["base_imagen_en"])
                   and jose["prompt_en"] in jose["prompt_enviado"] and jose["negativo_en"] in jose["prompt_enviado"],
@@ -426,7 +428,7 @@ def autoprueba():
                   and t1["fuente"] == "guiones/fuentes/Gn/gn-01.json" and t1["grupo"] == "tomas",
                   "toma gn-01 t1: id, campo y fuente")
         comprobar(t1["imagen"] is None and t1["movimiento_en"] and t1["bloqueo"] is None
-                  and "escenarios/creacion-abismo" in t1["refs"], "toma: sin imagen, movimiento, refs y bloqueo")
+                  and f"escenarios/{t1['ficha']['escenario']}" in t1["refs"], "toma: sin imagen, movimiento, refs y bloqueo")
         g98 = pas["gn-98"]["escenas"][-1]["tomas"][-1]
         comprobar(re.fullmatch(r"escenas\[\d+\]\.tomas\[\d+\]\.imagen\.prompt_en", g98["campo"]) is not None
                   and g98["fuente"] == "guiones/fuentes/Gn/gn-98.json", "toma de gn-98: campo y fuente")
@@ -489,7 +491,7 @@ def autoprueba():
         f_est = F / "estilo.json"
         e0 = json.loads(f_est.read_text(encoding="utf-8"))
         crlf0 = f_est.read_bytes().count(b"\r\n")
-        nuevo_l = e0["laminas_patron"][0]["prompt_en"].replace("in the morning", "in the early morning")
+        nuevo_l = e0["laminas_patron"][0]["prompt_en"] + " The light is soft and even."
         r = editar_prompt("estilo/patron-1-paisaje", "prompt_en", nuevo_l)
         b1 = f_est.read_bytes()
         e1 = json.loads(b1.decode("utf-8"))
@@ -505,13 +507,17 @@ def autoprueba():
         comprobar(not r["ok"] and f_est.read_bytes() == antes_b, "lámina con «halo» → error y archivo idéntico")
 
         # dos ediciones seguidas y dos a la vez (foco 2)
-        p1 = jose["prompt_en"].replace("about thirty-nine", "about forty")
+        p1 = jose["prompt_en"] + " He looks about forty."
         n1 = "Do not give him a crown, a beard or a draped Greek or Roman toga, and keep the background plain."
         r1 = editar_prompt("personajes/jose", "prompt_en", p1)
         r2 = editar_prompt("personajes/jose", "negativo_en", n1)
         h = json.loads(f_jose.read_text(encoding="utf-8"))["hoja_referencia"]
         comprobar(r1["ok"] and r2["ok"] and h["prompt_en"] == p1 and h["negativo_en"] == n1,
                   "dos ediciones seguidas: la segunda ve la primera")
+        hv = [x for x in next(x for x in datos()["personajes"] if x["id"] == "personajes/jose")["historial"]
+              if x.get("origen") == I.ORIGEN_VIEJO]
+        comprobar(hv and all(x["prompt"] and h["prompt_en"] not in x["prompt"] for x in hv),
+                  "tras editar el prompt de José, su historial viejo sigue trayendo el prompt del 16-nov")
         f98 = F / "Gn" / "gn-98.json"
         g0 = json.loads(f98.read_text(encoding="utf-8"))
         res = {}
