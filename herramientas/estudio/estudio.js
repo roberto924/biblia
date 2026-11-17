@@ -144,8 +144,13 @@
   }
 
   async function recargarDatos() {
+    const antes = new Map(todos().map((it) => [it.id, it.imagen]));
     const d = await api('/api/datos');
-    if (d.ok) { datos = d.datos; errorCarga = null; } else mensaje(`No se pudieron recargar los datos: ${errorDe(d).join(' ')}`, 'error');
+    if (d.ok) {
+      datos = d.datos; errorCarga = null;
+      // el error de una tarjeta deja de valer cuando cambia su imagen (apartada al regenerar, o la nueva)
+      for (const it of todos()) if (errorTarjeta.has(it.id) && antes.has(it.id) && antes.get(it.id) !== it.imagen) errorTarjeta.delete(it.id);
+    } else mensaje(`No se pudieron recargar los datos: ${errorDe(d).join(' ')}`, 'error');
     pintar();
   }
 
@@ -158,6 +163,7 @@
   function empezarSondeo() {
     if (sondeo) return;
     let hechas = lote?.hechas?.length || 0;
+    let actualId = lote?.actual?.id || null;
     sondeo = setInterval(async () => {
       const r = await api('/api/lote');
       if (!r.ok) return;
@@ -165,7 +171,9 @@
       const cambio = JSON.stringify(r.datos) !== JSON.stringify(lote);
       lote = r.datos;
       const n = lote.hechas?.length || 0;
-      if (n !== hechas) { hechas = n; await recargarDatos(); }
+      // al empezar cada imagen (al regenerar, la anterior ya está apartada) y al terminar cada una
+      const id = lote.actual?.id || null;
+      if (n !== hechas || (id && id !== actualId)) { hechas = n; actualId = id; await recargarDatos(); } else actualId = id;
       // solo se vuelve a pintar si el lote cambió: no se pierde la selección ni el puntero cada 2 s
       if (cambio) { pintarCabecera(); if (vista === 'cola' || vista === 'resumen') pintar(); }
       if (antes && !lote.en_curso) {
@@ -430,9 +438,10 @@
     const r = await api('/api/generar', cuerpo);
     if (r.status !== 202) return errorDe(r);
     lote = r.datos.lote || { en_curso: true, hechas: [] };
+    for (const id of cuerpo.ids || []) errorTarjeta.delete(id); // un error de antes ya no aplica a la imagen que viene
     mensaje('Lote iniciado: se genera de una en una. Puedes seguir revisando mientras tanto.');
     pintarCabecera();
-    pintar();
+    await recargarDatos(); // la tarjeta deja de mostrar la imagen ya apartada (vuelve a pintar)
     empezarSondeo();
     return null;
   }
