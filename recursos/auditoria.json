@@ -462,7 +462,11 @@
   },
   "video-bp-salmo-148": {
    "veredicto": "OK",
-   "motivo": "Sin imagen local: refs coherentes con título y descripción."
+   "motivo": "oEmbed 200 (2026-11-17): «Salmo 148», canal @ProyectoBibliaOficial; episodio 4 de la serie «Creación», como la página de bibleproject.com (7:50 / 7:56). Coincide con Sal 148."
+  },
+  "video-bp-juan-1": {
+   "veredicto": "OK",
+   "motivo": "oEmbed 200 (2026-11-17): «Lo que significa que Jesús sea la \"Palabra de Dios\"», canal @ProyectoBibliaOficial; episodio 5 de la serie «Creación»; la descripción (Jesús como la Palabra, eco de Génesis) y la duración (7:12 / 7:18) casan con la página de bibleproject.com. Coincide con Jn 1."
   },
   "dore-gn-2-creacion-eva": {
    "veredicto": "OK",

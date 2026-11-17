@@ -2140,15 +2140,37 @@
     "fecha_obra": null,
     "institucion": "Proyecto Biblia (bibleproject.com/es; canal de YouTube «Proyecto Biblia»)",
     "url_fuente": "https://bibleproject.com/es/videos/salmo-148/",
-    "url_archivo": null,
+    "url_archivo": "https://www.youtube.com/watch?v=LAhwgVeizHg",
     "archivo_local": null,
     "licencia": "Derechos reservados",
     "atribucion": "BibleProject es el autor y propietario de este contenido. Para encontrar más recursos, visita bibleproject.com.",
     "uso": "incrustable",
     "certeza": "arte (interpretación)",
-    "nota_certeza": "Video explicativo moderno. Los términos de BibleProject permiten incrustar el enlace oficial, no descargar ni reeditar el archivo.",
+    "nota_certeza": "Video explicativo moderno. Los términos de BibleProject permiten incrustar el enlace oficial, no descargar ni reeditar el archivo. La página de bibleproject.com sirve el video desde su propio servidor; se incrusta la copia del canal oficial: oEmbed (2026-11-17) devolvió «Salmo 148», canal @ProyectoBibliaOficial. Es el episodio 4 de la serie «Creación» (7:50 en la web, 7:56 en YouTube).",
     "idioma": "es",
-    "duracion": null
+    "duracion": "00:07:50"
+  },
+  {
+    "id": "video-bp-juan-1",
+    "tipo": "video",
+    "titulo": "Comentario bíblico visual - Serie creación - Juan 1",
+    "descripcion": "Comentario visual de Proyecto Biblia sobre el comienzo del Evangelio de Juan: qué significa que Jesús sea llamado «la Palabra», con eco de los primeros capítulos de Génesis.",
+    "refs": [
+      "Jn 1"
+    ],
+    "autor": "Proyecto Biblia (BibleProject)",
+    "fecha_obra": null,
+    "institucion": "Proyecto Biblia (bibleproject.com/es; canal de YouTube «Proyecto Biblia»)",
+    "url_fuente": "https://bibleproject.com/es/videos/juan-1/",
+    "url_archivo": "https://www.youtube.com/watch?v=rkSRDC49Dtc",
+    "archivo_local": null,
+    "licencia": "Derechos reservados",
+    "atribucion": "Proyecto Biblia es el autor y propietario de este video. Para encontrar más recursos de Proyecto Biblia, visita proyectobiblia.com (texto sugerido en su Centro de ayuda).",
+    "uso": "incrustable",
+    "certeza": "arte (interpretación)",
+    "nota_certeza": "video explicativo moderno sobre un texto antiguo (interpretación, no el texto). La página de bibleproject.com sirve el video desde su propio servidor; se incrusta la copia del canal oficial: oEmbed (2026-11-17) devolvió «Lo que significa que Jesús sea la \"Palabra de Dios\"», canal @ProyectoBibliaOficial. Es el episodio 5 de la serie «Creación» (7:12 en la web, 7:18 en YouTube). No se descarga.",
+    "idioma": "es",
+    "duracion": "00:07:12"
   },
   {
     "id": "dore-gn-2-creacion-eva",

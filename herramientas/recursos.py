@@ -34,7 +34,10 @@ SALIDA = os.path.join(RAIZ, 'datos', 'recursos.js')
 
 # Mismo orden que CANON en app.js (la clave depende de él).
 CANON = ['Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S', '2S', '1R', '2R', '1Cr', '2Cr', 'Esd', 'Neh', 'Est', 'Job', 'Sal',
-         'Pr', 'Ec', 'Cnt', 'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal']
+         'Pr', 'Ec', 'Cnt', 'Is', 'Jer', 'Lm', 'Ez', 'Dn', 'Os', 'Jl', 'Am', 'Abd', 'Jon', 'Mi', 'Nah', 'Hab', 'Sof', 'Hag', 'Zac', 'Mal',
+         # Nuevo Testamento, con las abreviaturas de app.js.
+         'Mt', 'Mr', 'Lc', 'Jn', 'Hch', 'Ro', '1Co', '2Co', 'Ga', 'Ef', 'Fil', 'Col', '1Ts', '2Ts', '1Ti', '2Ti', 'Tit', 'Flm', 'He', 'Stg',
+         '1P', '2P', '1Jn', '2Jn', '3Jn', 'Jud', 'Ap']
 ORD = {b: i + 1 for i, b in enumerate(CANON)}
 ENLAZABLES = ('Gn', 'Ex', 'Lv', 'Nm', 'Dt', 'Jos', 'Jue', 'Rt', '1S')
 # biblia.js usa «Rut»; app.js y la clave usan el id canónico «Rt».
