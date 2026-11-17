@@ -18,6 +18,7 @@
   let verTrabajos = PAGINA;
   let sondeo = null;
   const plegado = new Map(); // clave de <details> → abierto (true/false) elegido por el usuario
+  const errorTarjeta = new Map(); // id → errores de la última acción hecha desde la tarjeta (se ven en ella)
 
   const $ = (sel) => document.querySelector(sel);
   const main = $('#principal');
@@ -494,7 +495,7 @@
 
     const acciones = [
       h('button', { type: 'button', class: 'boton chico', 'data-k': k('aprobar'), disabled: !it.imagen,
-        title: it.imagen ? null : 'No hay imagen que revisar', onclick: () => revisar(it, 'aprobada') }, 'Aprobar'),
+        title: it.imagen ? null : 'No hay imagen que revisar', onclick: (ev) => aprobar(it, ev.currentTarget) }, 'Aprobar'),
       h('button', { type: 'button', class: 'boton secundario chico', 'data-k': k('rechazar'), disabled: !it.imagen,
         title: it.imagen ? null : 'No hay imagen que revisar', onclick: () => rechazar(it) }, 'Rechazar con nota'),
       h('button', { type: 'button', class: 'boton secundario chico', 'data-k': k('editar'), onclick: () => abrirEditar(it) }, 'Editar prompt'),
@@ -527,6 +528,8 @@
         h('p', { class: 'tarjeta-id' }, it.id, ' · ', h('code', null, it.fuente),
           esToma && it.ficha?.versiculos ? ` · ${it.ficha.versiculos}` : ''),
         notaRev,
+        errorTarjeta.has(it.id) ? h('div', { class: 'errores', role: 'alert' }, h('strong', null, 'No se pudo hacer:'),
+          h('ul', null, errorTarjeta.get(it.id).map((e) => h('li', null, e)))) : null,
         it.bloqueo ? h('p', { class: 'bloqueo' }, `Bloqueada: ${it.bloqueo}`) : null,
         refs,
         h('div', { class: 'acciones' }, acciones),
@@ -577,9 +580,20 @@
   async function revisar(it, estadoNuevo, nota = '') {
     const r = await api('/api/revision', { id: it.id, estado: estadoNuevo, nota });
     if (!r.ok) return errorDe(r);
+    errorTarjeta.delete(it.id);
     mensaje(r.datos.mensaje || `${it.titulo}: ${estadoNuevo === 'aprobada' ? 'aprobada' : 'rechazada'}.`);
     await recargarDatos();
     return null;
+  }
+
+  /** Aprobar no pasa por un diálogo: si falla, el error queda escrito en la tarjeta (y en un aviso). */
+  async function aprobar(it, boton) {
+    if (boton) { boton.disabled = true; boton.textContent = 'Aprobando…'; }
+    const errores = await revisar(it, 'aprobada');
+    if (!errores) return;
+    errorTarjeta.set(it.id, errores.map((e) => `Aprobar: ${e}`));
+    mensaje(`No se pudo aprobar ${it.titulo}: ${errores.join(' ')}`, 'error');
+    await recargarDatos(); // la tarjeta se vuelve a pintar con el estado actual y el error
   }
 
   function rechazar(it) {
