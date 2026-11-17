@@ -133,10 +133,14 @@
   const loteEnCurso = () => Boolean(lote && lote.en_curso);
 
   // ------------------------------------------------------------------ carga y sondeo
+  /** Pinta en cuanto llegan los datos; la cuota (/api/estado consulta capa-ia y tarda) rellena la cabecera después. */
   async function cargar() {
-    const [d, e, l] = await Promise.all([api('/api/datos'), api('/api/estado'), api('/api/lote')]);
+    api('/api/estado').then((e) => { // sin await: la página no lo espera
+      estado = e.ok ? e.datos : { aviso: `No se pudo leer el estado: ${errorDe(e).join(' ')}` };
+      pintarCabecera();
+    });
+    const [d, l] = await Promise.all([api('/api/datos'), api('/api/lote')]);
     if (d.ok) { datos = d.datos; errorCarga = null; } else errorCarga = errorDe(d).join(' ');
-    if (e.ok) estado = e.datos; else estado = { aviso: `No se pudo leer el estado: ${errorDe(e).join(' ')}` };
     if (l.ok) lote = l.datos;
     pintarCabecera();
     pintar();
@@ -617,9 +621,10 @@
     if (boton) { boton.disabled = true; boton.textContent = 'Aprobando…'; }
     const errores = await revisar(it, 'aprobada');
     if (!errores) return;
-    errorTarjeta.set(it.id, errores.map((e) => `Aprobar: ${e}`));
     mensaje(`No se pudo aprobar ${it.titulo}: ${errores.join(' ')}`, 'error');
-    await recargarDatos(); // la tarjeta se vuelve a pintar con el estado actual y el error
+    await recargarDatos(); // el estado actual (la recarga borra errores de imágenes que cambiaron: se pone después)
+    errorTarjeta.set(it.id, errores.map((e) => `Aprobar: ${e}`));
+    pintar(); // la tarjeta, con el error
   }
 
   function rechazar(it) {
