@@ -20,6 +20,10 @@ se repite para todo Génesis y luego libro a libro.
 | `Gn/gn-01.md`, `Gn/gn-98.md` | **Hoja de rodaje** generada: montaje, rótulos, continuidad, y por toma qué adjuntar, prompts y fidelidad. |
 | `Gn/*.narracion.txt` | Guion de audio (narrador / personaje), sin corchetes. |
 | `personajes/*.md`, `escenarios/*.md` | Fichas legibles con la hoja de referencia de cada Element. |
+| `imagenes/estilo/`, `imagenes/personajes/`, `imagenes/escenarios/`, `imagenes/Gn/` | Láminas patrón, hojas de referencia e imágenes iniciales de cada toma. |
+| `imagenes/_anteriores/` | Versiones reemplazadas al regenerar desde el Estudio (`<id con / → __>-<fecha>.png`). |
+| `registro/revision.json` | Revisión de cada imagen en el Estudio: aprobada o rechazada, nota, fecha y `sha256` del archivo. |
+| `registro/imagenes.jsonl` | Registro viejo del lote con Codex directo (16-nov); el Estudio lo muestra como historial. Lo nuevo va al registro de capa-ia. |
 
 Los `.md` y `.txt` se generan; se editan las fuentes JSON y se regenera:
 
@@ -39,9 +43,44 @@ contienen términos prohibidos (halo, «God», sol antes del día cuarto…); y 
 Niveles de toma: **A** = clip de video (unos 3 por pasaje, en los momentos clave); **B** = imagen con movimiento
 leve (y lipsync si habla alguien); **C** = narración sobre imagen fija.
 
+## Imágenes con capa-ia y el Estudio
+
+Las láminas patrón, las hojas de referencia y las imágenes iniciales de las tomas se generan con Codex (su
+herramienta de imágenes integrada, sesión de ChatGPT) **a través de capa-ia** (`C:\PROYECTOS IA\capa-ia`), nunca
+llamando a `codex` directamente. capa-ia elige el proveedor, aplica las reglas de «sin gasto adicional» (sin claves
+de API ni créditos, tope del equipo) y el tope de la Biblia (`capa-ia.json` en la raíz: 30 % de la semana), y anota
+cada trabajo con su prompt completo en su registro (`capa-ia registro --app biblia`).
+
+```text
+python -I herramientas/estudio.py              el Estudio: http://127.0.0.1:8766 (local, no se publica)
+python -I herramientas/imagenes.py             lista lo pendiente (no genera nada)
+python -I herramientas/imagenes.py --generar N genera N vía capa-ia, de una en una [--solo Gn/]
+```
+
+El orden es láminas → hojas → tomas (una toma espera a las hojas que usa). Se manda una imagen a la vez y el lote se
+para en el primer fallo, al llegar a la cuota (`esperando_cuota`, con la hora de reinicio) o al tope de coste
+(`bloqueado_coste`); nunca se reintenta solo.
+
+En el **Estudio** se ve cada lámina, hoja y toma con su imagen («Ilustración moderna (generada con IA)»), el prompt
+exacto que se envía, su ficha y su historial, y se puede:
+
+- **Aprobar** o **rechazar con nota** (se guarda en `registro/revision.json` con el `sha256` de la imagen: si el
+  archivo cambia, vuelve a «pendiente de revisar»). Aprobar la lámina 2 renombra `patron-2-interior-codex.png` a
+  `patron-2-interior.png`.
+- **Editar el prompt** (`prompt_en` y `negativo_en` de la ficha, de la toma o de la lámina): antes de guardar se
+  valida con `herramientas/guiones.py` y, si hay errores (p. ej. una palabra prohibida de `estilo.json`), no se
+  escribe nada; si pasa, se guarda el JSON y se regeneran las fichas `.md`. La base de imagen, el negativo general
+  y la base de movimiento de `estilo.json` no se editan desde el Estudio (cambian el estilo de todo).
+- **Regenerar**: la imagen actual pasa a `imagenes/_anteriores/` y se pide otra; si la nueva falla, la anterior
+  sigue ahí.
+- **Generar pendientes** y ver la cola y el registro.
+
+ChatGPT Images a mano sigue siendo la alternativa (pasos 1 y 3 de abajo): la imagen se guarda en su ruta y el
+Estudio la revisa igual.
+
 ## Flujo para el usuario
 
-Herramientas: **imágenes en ChatGPT Images** (suscripción, a mano) y **video y voz en Higgsfield** (web, modo
+Herramientas: **imágenes con capa-ia y el Estudio** (arriba) **o en ChatGPT Images** (suscripción, a mano) y **video y voz en Higgsfield** (web, modo
 ilimitado, a mano: las generaciones ilimitadas solo valen usadas por una persona en la web; automatizarlas está
 prohibido y el MCP o la CLI siempre gastan créditos). Lo marcado *(no verificado)* no consta en la investigación
 de Higgsfield del 16-nov-2026: comprobarlo en la interfaz la primera vez y anotarlo.

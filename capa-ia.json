@@ -1,0 +1,8 @@
+{
+  "app": "biblia",
+  "permitidos": {
+    "imagen": ["codex"],
+    "texto": ["codex", "claude", "lmstudio"]
+  },
+  "tope_semanal_pct": 30
+}
