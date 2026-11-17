@@ -1712,11 +1712,13 @@ const Nucleo = (() => {
     const m = new Map(); todosLosVersiculos(d).forEach(v => m.set(v.libro + '|' + v.cap, v.clave)); return m;
   });
   // Objeto de acceso: { frontera, todo, ids, rangos, pasaje(id), clave(k), ref(ref), refs(refs) }.
-  function accesibles(d, leidos) {
+  // `soloLeidos`: sin el pasaje en curso (la frontera). Lo usan los videos y audios externos, que comentan
+  // o resumen el texto: no se ven hasta terminar de leer todo lo que cubren.
+  function accesibles(d, leidos, soloLeidos) {
     const L = conjunto(leidos), ps = pasajes(d), f = ps.findIndex(p => !L.has(p.id));
     const ids = new Set(), rangos = [];
     ps.forEach((p, i) => {
-      if (f >= 0 && i > f && !L.has(p.id)) return;
+      if ((soloLeidos || (f >= 0 && i > f)) && !L.has(p.id)) return;
       ids.add(p.id);
       const a = clave(p.inicio), b = clave(p.fin), u = rangos[rangos.length - 1];
       if (u && u.i === i - 1) { u.b = Math.max(u.b, b); u.i = i; } else rangos.push({ a, b, i });
@@ -1935,6 +1937,10 @@ if (typeof document !== 'undefined') (function () {
   const rangosRec = f => Array.isArray(f.rangos) && f.rangos.length ? f.rangos.filter(r => Array.isArray(r) && r.length === 2) : null;
   const recOk = f => { const A = ACC(); if (A.todo) return true; const rs = rangosRec(f); return rs ? rs.every(([a, b]) => A.clave(a) && A.clave(b)) : (f.refs || []).length > 0 && f.refs.every(A.ref); };
   const permitidos = (fs, claves) => (fs || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), claves) && recOk(f));
+  // Videos y audio externos: comentan o resumen, así que esperan a que esté LEÍDO todo lo que cubren
+  // (el pasaje en curso no basta). Cada rango tiene que caer entero en un tramo seguido de pasajes leídos.
+  const medioLeido = f => { const A = LEI(); if (A.todo) return true; const rs = rangosRec(f); return rs ? rs.every(([a, b]) => A.rangos.some(r => r.a <= a && b <= r.b)) : (f.refs || []).length > 0 && f.refs.every(A.ref); };
+  const mediosPermitidos = (fs, claves) => (fs || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), claves) && medioLeido(f));
   const TIPO_TXT = { al_engendrar: 'Al engendrar', restantes: 'Años restantes', total: 'Total' };
   const CERT_TXT = { texto: 'Texto', inferido: 'Inferido', calculo: 'Cálculo' };
   const CERT_DESC = { texto: 'Lo dice el texto', inferido: 'Supuesto: no lo dice el texto de forma explícita', calculo: 'Cálculo hecho a partir del texto' };
@@ -1964,6 +1970,12 @@ if (typeof document !== 'undefined') (function () {
     const g = store.get('biblia.pasajesLeidos', []), L = Array.isArray(g) ? g : [], k = PERF.r.activo + '|' + L.join(',');
     if (accCache.k !== k) accCache = { k, A: N.accesibles(D, L) };
     return accCache.A;
+  };
+  let leiCache = { k: null, A: null };
+  const LEI = () => { // solo lo marcado como leído, sin el pasaje en curso
+    const g = store.get('biblia.pasajesLeidos', []), L = Array.isArray(g) ? g : [], k = PERF.r.activo + '|' + L.join(',');
+    if (leiCache.k !== k) leiCache = { k, A: N.accesibles(D, L, true) };
+    return leiCache.A;
   };
   const refOk = ref => ACC().ref(ref);
   const personaOk = id => N.personaAccesible(D, ACC(), id);
@@ -2099,7 +2111,7 @@ if (typeof document !== 'undefined') (function () {
       <div class="plan">
       <h2 class="titulo-seccion">Plan de lectura${varios && libroSel ? `<span class="sr">: ${esc(libroSel.nombre)}</span>` : ''}</h2>
       ${selector}
-      ${elegido && libroSel && libroSel.entero ? videoLibroHTML(elegido) : elegido && libroSel ? `<p class="meta video-libro-bloq">${ICO_CANDADO} El video sobre ${esc(libroSel.nombre)} resume todo el libro: se podrá ver cuando llegues a su último pasaje.</p>` : ''}
+      ${elegido && libroSel && libroSel.leidos === libroSel.pasajes ? videoLibroHTML(elegido) : elegido && libroSel ? `<p class="meta video-libro-bloq">${ICO_CANDADO} El video sobre ${esc(libroSel.nombre)} resume todo el libro: se podrá ver cuando termines de leerlo.</p>` : ''}
       ${elegido === 'Ex' && libroSel && !libroSel.bloqueado ? entradaTBHTML() : ''}
       ${plan}
       ${editorial ? `<p class="meta">Los títulos${secs.some(g => g.titulo) ? ', secciones' : ''} y resúmenes de los pasajes son editoriales: no forman parte del texto bíblico.</p>` : ''}</div></div>`;
@@ -2937,10 +2949,29 @@ if (typeof document !== 'undefined') (function () {
     let html = '';
     const ksP = N.versiculosDe(D, p).map(v => v.clave); // el permiso se mira en todo el pasaje, como en el carrusel
     const objs = permitidos(A.objetos.concat(A.imagenes), ksP);
-    A.medios = permitidos(A.medios, ksP);
+    const relac = (A.medios || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), ksP) && recOk(f));
+    A.medios = mediosPermitidos(A.medios, ksP);
+    // Los que tocan este pasaje pero aún cubren algo sin leer: solo se avisa de que existen y de cuándo se verán.
+    const espera = relac.filter(f => !A.medios.includes(f));
+    // Repaso: los que se acaban de desbloquear al marcar el pasaje anterior (terminan en él).
+    const ps = N.pasajes(D), ip = ps.findIndex(x => x.id === p.id), prev = ip > 0 ? ps[ip - 1] : null;
+    const repaso = prev ? mediosPermitidos(N.recursos(R).filter(f => (f.tipo === 'video' || f.tipo === 'audio') && !A.medios.includes(f) && finMedio(f) === prev.id)) : [];
     if (objs.length) html += sec('Imágenes y objetos', `<ul class="rec-lista">${objs.map(recItemHTML).join('')}</ul>`, I('M3 5h14v10H3zM3 13l4-4 3 3 2-2 5 5'));
-    if (A.medios.length) html += sec('Videos y audio', `<ul class="rec-lista medios">${A.medios.map(medioHTML).join('')}</ul>`, I('M7 5v10l8-5z'));
+    if (A.medios.length || espera.length) html += sec('Videos y audio', (A.medios.length ? `<ul class="rec-lista medios">${A.medios.map(medioHTML).join('')}</ul>` : '')
+      + (espera.length ? `<p class="meta video-libro-bloq">${ICO_CANDADO} ${espera.length === 1 ? 'Hay un video' : `Hay ${espera.length} videos o audios`} sobre este texto: ${espera.length === 1 ? 'comenta' : 'comentan'} más de lo que llevas leído, así que se ${espera.length === 1 ? 'podrá' : 'podrán'} ver cuando termines de leer ${esc(hastaMedios(espera))}.</p>` : ''), I('M7 5v10l8-5z'));
+    if (repaso.length) html += sec(`Repaso de lo leído: ${esc(prev.titulo || prev.id)}`, `<p class="meta">Ya terminaste de leer lo que ${repaso.length === 1 ? 'comenta este video' : 'comentan estos videos'}.</p><ul class="rec-lista medios">${repaso.map(medioHTML).join('')}</ul>`, I('M7 5v10l8-5z'));
     return html;
+  }
+  // Pasaje donde termina lo que cubre un video o audio (el de su último versículo), o null.
+  function finMedio(f) {
+    const rs = rangosRec(f); if (!rs) return null;
+    const b = Math.max(...rs.map(r => r[1])), p = N.pasajes(D).find(x => N.clave(x.inicio) <= b && b <= N.clave(x.fin));
+    return p ? p.id : null;
+  }
+  // «Gn 2:3» (fin del pasaje donde termina el último de ellos): hasta dónde hay que leer para verlos.
+  function hastaMedios(fs) {
+    const ps = N.pasajes(D), ix = fs.map(f => ps.findIndex(x => x.id === finMedio(f))).filter(i => i >= 0);
+    return ix.length ? ps[Math.max(...ix)].fin : 'todo lo que cubren';
   }
   function mapasAntiguosHTML() {
     // Mapas antiguos: cuando su primer tramo de referencia (p. ej. «Ex 12-19») ya es accesible entero.

@@ -1782,6 +1782,17 @@ console.log('Lectura en orden');
     assert.equal(N.accesibles(D, ids).todo, true);
     assert.equal(N.accesibles(D, ids).ref('Ap 22:21'), true, 'con todo leído no se oculta nada');
   });
+  prueba('solo leídos (videos y audio externos): el pasaje en curso no cuenta', () => {
+    const A = N.accesibles(D, [ids[0], ids[3]], true);
+    assert.equal(A.pasaje(ids[0]), true, 'leído');
+    assert.equal(A.pasaje(ids[1]), false, 'la frontera no está leída');
+    assert.equal(A.pasaje(ids[3]), true, 'leído fuera de orden: cuenta');
+    assert.equal(A.ref(ps[1].fin), false, 'el final del pasaje en curso sigue oculto');
+    assert.equal(A.ref(ps[0].fin), true);
+    assert.equal(N.accesibles(D, [], true).ref(ps[0].inicio), false, 'sin nada leído, ni el primer pasaje');
+    assert.deepEqual(A.rangos.length, 2, 'lo leído fuera de orden queda en un tramo aparte (sin hueco)');
+    assert.equal(N.accesibles(D, ids, true).todo, true);
+  });
   prueba('refs de rango y de capítulo: accesibles solo si lo son su principio y su final', () => {
     const A = N.accesibles(D, []), p0 = ps[0], a = N.parseRef(p0.inicio), b = N.parseRef(p0.fin);
     assert.equal(A.ref(`${a.libro} ${a.cap}:${a.v}-${b.v}`), a.cap === b.cap);

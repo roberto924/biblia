@@ -21,6 +21,8 @@ Todo dato dice de dónde sale y su certeza. Se distingue siempre:
 - La Biblia se **desbloquea leyendo en orden** (orden de los pasajes, Gn → Ap). Todo lo posterior al primer pasaje sin leer queda bloqueado: texto, búsqueda, mapa, línea de tiempo, fichas, recursos, comparar y juego muestran solo lo leído (más el pasaje actual).
 - **Tiempo mínimo** antes de poder marcar un pasaje como leído: palabras ÷ 250 por minuto (adulto) o ÷ 150 (niño); solo cuenta el tiempo con el pasaje abierto y visible.
 - Lo ya marcado fuera de orden se conserva; desde ahora solo se avanza desde el primer pasaje sin leer.
+- **Videos y audios externos** (Proyecto Biblia, Superbook… y el video de cada libro) comentan o resumen: solo se ven cuando está **leído** todo lo que cubren; el pasaje en curso no cuenta (2026-11-17). Mientras tanto el acompañante avisa con candado y hasta dónde hay que leer; al terminar, salen en «Repaso de lo leído» del pasaje siguiente y en el acompañante de los pasajes que cubren.
+- El **video narrado** de un pasaje (Higgsfield) es el propio pasaje: se ve en el pasaje en curso, y verlo entero contará como leerlo (desbloquea igual que el tiempo mínimo). Se implementa cuando ese video entre en la app.
 
 ## Juego (decisiones del usuario, 2026-11-11; diseño en `docs/superpowers/specs/2026-11-11-catalogo-juego-design.md`)
 - Se coleccionan **personajes, objetos y escenarios**; fichas con todo lo que se sabe (con certeza y fuente). Las habilidades y poderes son invención del juego, nunca dato bíblico.
