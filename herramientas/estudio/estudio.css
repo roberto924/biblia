@@ -134,6 +134,7 @@ tfoot td { font-weight: 600; }
 .estado.e-bloqueada { color: var(--mal); border-style: dashed; }
 .nota { margin: .35rem 0; padding: .35rem .6rem; border-left: 3px solid var(--mal); background: color-mix(in srgb, var(--mal) 7%, var(--hoja)); font-size: .92rem; }
 .nota.aprobada { border-left-color: var(--ok); background: color-mix(in srgb, var(--ok) 7%, var(--hoja)); }
+.nota.cambiada { border-left-style: dashed; border-left-color: var(--ojo); background: color-mix(in srgb, var(--ojo) 9%, var(--hoja)); }
 .bloqueo { margin: .35rem 0; color: var(--mal); font-weight: 600; font-size: .92rem; }
 
 .desplegable { margin: .35rem 0; border: 1px solid var(--linea-suave); border-radius: var(--r-ctrl); background: var(--hoja); min-width: 0; }

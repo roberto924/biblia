@@ -536,7 +536,12 @@
         return h('li', { class: falta ? 'falta' : null }, falta ? `falta: ${r.split('/').pop()}` : h('a', { href: `#ver=${r}` }, r.split('/').pop()));
       }))] : null;
 
-    const notaRev = rev.nota ? h('p', { class: `nota ${est}` }, h('strong', null, 'Nota: '), `«${rev.nota}»`, rev.fecha ? h('span', { class: 'meta' }, ` · ${fecha(rev.fecha)}`) : '') : null;
+    const cuandoRev = rev.fecha ? h('span', { class: 'meta' }, ` · ${fecha(rev.fecha)}`) : '';
+    // «cambiada»: la nota es de la imagen anterior, no un rechazo de la actual (aspecto de aviso, no carmín)
+    const notaRev = est === 'cambiada'
+      ? h('p', { class: 'nota cambiada' }, h('strong', null, 'La imagen cambió desde la revisión.'),
+        rev.nota ? [' Nota de la versión anterior: ', `«${rev.nota}»`] : '', cuandoRev)
+      : rev.nota ? h('p', { class: `nota ${est}` }, h('strong', null, 'Nota: '), `«${rev.nota}»`, cuandoRev) : null;
     const sinNegativo = !it.editables?.includes('negativo_en')
       ? 'Las láminas patrón usan el negativo general de estilo.json (no se edita desde el Estudio).' : 'Sin negativo propio.';
 
