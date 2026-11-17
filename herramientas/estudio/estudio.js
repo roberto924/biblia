@@ -57,6 +57,11 @@
     return d.toLocaleString('es', op);
   }
   const hora = (s) => { const d = new Date(s); return Number.isNaN(d.getTime()) ? '—' : d.toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' }); };
+  /** Hora sola si es hoy; con día si no («vie 21 nov, 18:49»). */
+  const cuando = (s) => { const d = new Date(s); return !Number.isNaN(d.getTime()) && d.toDateString() === new Date().toDateString() ? hora(s) : fecha(s); };
+  /** Rótulo de una ventana de cuota de Codex por su duración en minutos. */
+  const nombreVentana = (min) => (min === 300 ? '5 h' : min === 10080 ? 'semana'
+    : typeof min === 'number' && min > 0 ? `ventana de ${num(min / 60, 1)} h` : 'ventana más llena');
   /** «codex directo (2026-11-16)» → «codex directo (16-nov)». */
   const origen = (s) => String(s).replace(/\((\d{4})-(\d{2})-(\d{2})\)/, (_, a, m, d) => `(${Number(d)}-${MESES[Number(m) - 1]})`);
 
@@ -179,10 +184,17 @@
     const partes = [];
     const e = estado || {};
     const c = e.cuota;
-    if (c) {
-      partes.push(h('span', null, 'Codex: semana ', h('b', null, pct(c.semanal_pct)),
-        c.semanal_reinicio_en ? ` (reinicia ${fecha(c.semanal_reinicio_en)})` : ''));
-      partes.push(h('span', null, '5 h: ', h('b', null, pct(c.usado_pct)), c.reinicio_en ? ` (reinicia ${hora(c.reinicio_en)})` : ''));
+    if (estado === null) partes.push(h('span', null, 'Codex: leyendo la cuota…'));
+    else if (c) {
+      // usado_pct/reinicio_en son de la ventana MÁS LLENA (la que mira el tope del equipo); ventana_min dice cuál
+      const llenaEsSemanal = c.ventana_min === 10080;
+      partes.push(h('span', { title: llenaEsSemanal ? 'Es la ventana más llena: la que mira el tope del equipo.' : null },
+        'Codex: semana ', h('b', null, pct(c.semanal_pct)),
+        c.semanal_reinicio_en ? ` (reinicia ${cuando(c.semanal_reinicio_en)})` : '', llenaEsSemanal ? ' · la más llena' : ''));
+      if (!llenaEsSemanal) {
+        partes.push(h('span', { title: 'Es la ventana más llena: la que mira el tope del equipo.' },
+          `${nombreVentana(c.ventana_min)}: `, h('b', null, pct(c.usado_pct)), c.reinicio_en ? ` (reinicia ${cuando(c.reinicio_en)})` : ''));
+      }
     } else partes.push(h('span', null, 'Codex: cuota sin leer'));
     const tope = e.tope_biblia_pct ?? 30;
     const gasto = e.gasto_biblia_semana_pct;

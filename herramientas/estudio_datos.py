@@ -107,6 +107,18 @@ def _sha(p):
     return h.hexdigest()
 
 
+def _reemplazar(origen, destino):
+    """`os.replace` con reintento corto: en Windows, un lector puede tener el archivo abierto un instante."""
+    for intento in range(20):
+        try:
+            os.replace(origen, destino)
+            return
+        except PermissionError:
+            if intento == 19:
+                raise
+            time.sleep(0.05)
+
+
 def _escribir_atomico(p, texto):
     """Escribe en un temporal de la misma carpeta y lo cambia por el original: nunca queda a medio escribir."""
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -114,14 +126,7 @@ def _escribir_atomico(p, texto):
     try:
         with os.fdopen(fd, "wb") as fh:
             fh.write(texto.encode("utf-8"))
-        for intento in range(20):  # en Windows, un lector puede tener el archivo abierto un instante
-            try:
-                os.replace(tmp, p)
-                return
-            except PermissionError:
-                if intento == 19:
-                    raise
-                time.sleep(0.05)
+        _reemplazar(tmp, p)
     finally:
         if os.path.exists(tmp):
             os.unlink(tmp)
@@ -149,6 +154,19 @@ def estado_revision(id_):
     return _estado(_revisiones().get(id_), imagen_actual(id_))
 
 
+LAMINA2, LAMINA2_PROVISIONAL = "estilo/patron-2-interior", "patron-2-interior-codex.png"
+MOTIVO_NO_RENOMBRAR = ("La lámina 2 no se puede aprobar mientras hay un lote en curso: aprobarla renombra "
+                       "patron-2-interior-codex.png, que cada imagen del lote lleva adjunta. Apruébala cuando termine.")
+
+
+def renombraria(id_, estado):
+    """True si aprobar `id_` ahora renombraría la lámina 2 provisional (lo que hace `marcar`)."""
+    if id_ != LAMINA2 or estado != "aprobada":
+        return False
+    img = imagen_actual(id_)
+    return img is not None and img.name == LAMINA2_PROVISIONAL and not img.with_name("patron-2-interior.png").exists()
+
+
 def marcar(id_, estado, nota=""):
     """Aprueba o rechaza la imagen actual de `id_` (con su sha256). Aprobar la lámina 2 provisional la renombra."""
     if estado not in ESTADOS:
@@ -159,11 +177,10 @@ def marcar(id_, estado, nota=""):
         if img is None:
             raise ValueError(f"{id_}: no hay imagen que revisar")
         renombrada = None
-        if id_ == "estilo/patron-2-interior" and estado == "aprobada" and img.name == "patron-2-interior-codex.png":
+        if renombraria(id_, estado):
             final = img.with_name("patron-2-interior.png")
-            if not final.exists():
-                os.replace(img, final)
-                img, renombrada = final, _rel(final)
+            _reemplazar(img, final)
+            img, renombrada = final, _rel(final)
         rev = _revisiones()
         rev[id_] = {"estado": estado, "nota": nota, "fecha": datetime.datetime.now().isoformat(timespec="seconds"),
                     "archivo": _rel(img), "archivo_sha256": _sha(img)}
@@ -543,8 +560,23 @@ def autoprueba():
                   "la imagen vieja queda accesible por anteriores")
         comprobar(apartar_para_regenerar("personajes/benjamin") is None, "apartar sin imagen → None")
 
-        # aprobar la lámina 2 la renombra
-        r = marcar("estilo/patron-2-interior", "aprobada")
+        # aprobar la lámina 2 la renombra (con el archivo «abierto» las dos primeras veces: se reintenta)
+        comprobar(renombraria("estilo/patron-2-interior", "aprobada")
+                  and not renombraria("estilo/patron-2-interior", "rechazada")
+                  and not renombraria("personajes/jose", "aprobada"), "renombraria: solo aprobar la lámina 2 provisional")
+        replace_real, ocupado = os.replace, [2]
+
+        def replace_ocupado(a, b):
+            if ocupado[0]:
+                ocupado[0] -= 1
+                raise PermissionError(32, "El proceso no tiene acceso al archivo (prueba)")
+            return replace_real(a, b)
+        os.replace = replace_ocupado
+        try:
+            r = marcar("estilo/patron-2-interior", "aprobada")
+        finally:
+            os.replace = replace_real
+        comprobar(ocupado[0] == 0, "el renombrado de la lámina 2 se reintenta tras PermissionError")
         comprobar(r["ok"] and r.get("renombrada") == "guiones/imagenes/estilo/patron-2-interior.png"
                   and (IMG / "estilo" / "patron-2-interior.png").exists()
                   and not (IMG / "estilo" / "patron-2-interior-codex.png").exists(), "aprobar la lámina 2 la renombra")

@@ -172,9 +172,10 @@ class Estudio:
             avisos.append(f"No se pudo leer el estado de capa-ia: {e}")
         if cx:
             sem = cx.get("semanal") or {}
+            # usado_pct/reinicio_en son de la ventana MÁS LLENA (5 h o semanal): ventana_min dice cuál es
             cuota = {"usado_pct": cx.get("usado_pct"), "semanal_pct": sem.get("pct"),
-                     "reinicio_en": cx.get("reinicio_en"), "semanal_reinicio_en": sem.get("reinicio_en"),
-                     "leida": cx.get("at")}
+                     "reinicio_en": cx.get("reinicio_en"), "ventana_min": cx.get("ventana_min"),
+                     "semanal_reinicio_en": sem.get("reinicio_en"), "leida": cx.get("at")}
             fin = _fecha(sem.get("reinicio_en")) if sem.get("reinicio_en") else None
             inicio = fin - datetime.timedelta(minutes=sem.get("ventana_min") or 10080) if fin else None
         elif not avisos:
@@ -319,10 +320,16 @@ class Manejador(BaseHTTPRequestHandler):
         est = self.server.estudio
         try:
             if ruta == "/api/revision":
-                try:
-                    return self._json(200, D.marcar(c.get("id"), c.get("estado"), c.get("nota") or ""))
-                except ValueError as e:
-                    return self._json(400, {"ok": False, "error": str(e)})
+                # Aprobar la lámina 2 provisional la renombra, y todo trabajo del lote la lleva adjunta por su
+                # ruta: con un lote en curso no se renombra (409). El cerrojo del lote impide que uno empiece
+                # entre la comprobación y el renombrado.
+                with est.lote.cerrojo:
+                    if est.lote.en_curso and D.renombraria(c.get("id"), c.get("estado")):
+                        return self._json(409, {"ok": False, "error": D.MOTIVO_NO_RENOMBRAR})
+                    try:
+                        return self._json(200, D.marcar(c.get("id"), c.get("estado"), c.get("nota") or ""))
+                    except ValueError as e:
+                        return self._json(400, {"ok": False, "error": str(e)})
             if ruta == "/api/prompt":
                 if est.lote.actual_id() and est.lote.actual_id() == c.get("id"):
                     return self._json(409, {"ok": False, "errores": [
@@ -529,6 +536,17 @@ def autoprueba():
         s, e, r = pedir("GET", "/api/estado")
         comprobar(s == 200 and e["capa"] == "http" and e["cuota"]["usado_pct"] == 12 and e["cuota"]["semanal_pct"] == 5
                   and e["cuota"]["reinicio_en"] and e["cuota"]["leida"], f"/api/estado: cuota de Codex ({e.get('cuota')})")
+        comprobar(e["cuota"]["ventana_min"] == 300, "I1: la cuota dice de qué ventana es la más llena (300 = 5 h)")
+        estado_falso = falso.estado
+        falso.estado = lambda: {"cuotas": {"codex": {
+            "proveedor": "codex", "usado_pct": 40, "reinicio_en": "2026-11-21T10:00:00.000Z", "ventana_min": 10080,
+            "semanal": {"pct": 40, "reinicio_en": "2026-11-21T10:00:00.000Z", "ventana_min": 10080},
+            "at": "2026-11-17T12:00:00Z"}}}
+        s, e2, r = pedir("GET", "/api/estado")
+        comprobar(s == 200 and e2["cuota"]["usado_pct"] == 40 and e2["cuota"]["ventana_min"] == 10080
+                  and e2["cuota"]["reinicio_en"] == "2026-11-21T10:00:00.000Z",
+                  "I1: si la semanal es la más llena, ventana_min = 10080 (no se rotula «5 h»)")
+        falso.estado = estado_falso
         comprobar(e["gasto_biblia_semana_pct"] == 0.4 and e["tope_biblia_pct"] == 30, "gasto de la Biblia ≈ 0,4 % de 30 %")
         comprobar("token" not in json.dumps(e).lower(), "el estado no lleva el token")
 
@@ -604,12 +622,25 @@ def autoprueba():
         s, b, r = pedir("POST", "/api/prompt", {"id": L["actual"]["id"], "campo": "negativo_en",
                                                  "valor": "Do not show any bird."})
         comprobar(s == 409, "editar el prompt de la imagen en curso → 409")
+        provisional = D.IMG / "estilo" / "patron-2-interior-codex.png"
+        comprobar(provisional.is_file(), "el fixture tiene la lámina 2 provisional")
+        s, b, r = pedir("POST", "/api/revision", {"id": "estilo/patron-2-interior", "estado": "aprobada"})
+        comprobar(s == 409 and not b["ok"] and "lote en curso" in b["error"] and provisional.is_file()
+                  and not (D.IMG / "estilo" / "patron-2-interior.png").exists()
+                  and D.estado_revision("estilo/patron-2-interior") != "aprobada",
+                  "M2: aprobar la lámina 2 con un lote en curso → 409, sin renombrar ni aprobar")
+        s, b, r = pedir("POST", "/api/revision", {"id": "estilo/patron-2-interior", "estado": "rechazada",
+                                                   "nota": "prueba"})
+        comprobar(s == 200 and b["ok"] and provisional.is_file(), "M2: rechazarla con el lote en curso sí se puede")
         s, b, r = pedir("POST", "/api/lote/detener", {})
         comprobar(s == 200, "POST /api/lote/detener → 200")
         falso.conducta["espera"].set()
         L = esperar_lote()
         comprobar(L["parado_por"] == "detenido" and len(falso.llamadas) == 1, "detener: termina tras la actual")
         falso.conducta["espera"] = None
+        s, b, r = pedir("POST", "/api/revision", {"id": "estilo/patron-2-interior", "estado": "aprobada"})
+        comprobar(s == 200 and b.get("renombrada") == "guiones/imagenes/estilo/patron-2-interior.png"
+                  and not provisional.exists(), "M2: sin lote en curso, aprobar la lámina 2 la renombra")
 
         s, b, r = pedir("POST", "/api/generar", {})
         comprobar(s == 400, "generar sin n ni ids → 400")
