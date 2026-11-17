@@ -1,0 +1,54 @@
+{
+  "id": "casa-jose-patio",
+  "nombre": "Pórtico y patio de la casa de José",
+  "pasajes": [
+    "gn-98"
+  ],
+  "element": {
+    "nombre": "PATIO_CASA_JOSE",
+    "tipo": "lugar"
+  },
+  "texto": [
+    {
+      "dato": "El llanto de José lo oyen los egipcios y la casa de Faraón",
+      "certeza": "texto",
+      "ref": "Gn 45:2",
+      "cita": "oyeron los Egipcios, y oyó también la casa de Faraón"
+    },
+    {
+      "dato": "Los que estaban con José salieron de la sala",
+      "certeza": "texto",
+      "ref": "Gn 45:1",
+      "cita": "no quedó nadie con él"
+    },
+    {
+      "dato": "Los egipcios que oyen están fuera de la sala, cerca",
+      "certeza": "inferido",
+      "nota": "Si salieron todos (45:1) y oyeron el llanto (45:2), se infiere que estaban fuera, al alcance de la voz. Cómo lo supo la casa de Faraón no se dice aquí."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Pórtico de columnas de madera pintadas que da a un jardín con estanque y árboles; sirvientes egipcios esperando a la sombra",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. De C1 solo consta, por su ficha, un modelo de jardín de un alto funcionario; pórtico, columnas, estanque y árboles (sicómoros, palmeras) no se atribuyen a C1: ver su imagen antes de usarlos.",
+      "referencias": [
+        "C1"
+      ]
+    }
+  ],
+  "epoca": {
+    "dato": "Egipto del Reino Medio",
+    "certeza": "supuesto",
+    "nota": "Mismo supuesto por defecto que la sala (decisión pendiente del usuario)."
+  },
+  "referencias": [
+    "C1"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an establishing view of the shaded porch and garden of a high official's house in ancient Egypt, around 1900 BC. A row of slender wooden columns painted with plant motifs supports a flat roof that casts deep shade. Beyond the porch lies a walled garden with a rectangular pool and a few sycamore fig and date palm trees in bright daylight. A wooden doorway in the back wall leads into the house.",
+    "prompt_es": "Vista general del pórtico en sombra y el jardín de la casa de un alto funcionario del antiguo Egipto, hacia 1900 a. C.: columnas esbeltas de madera pintadas con motivos vegetales, techo plano, jardín cercado con estanque rectangular, sicómoros y palmeras a la luz clara del día; una puerta de madera en el muro del fondo da a la casa.",
+    "negativo_en": "Do not show temples, pyramids, sphinxes, colossal statues or a royal palace. There are no people in this view.",
+    "negativo_es": "Sin templos, pirámides, esfinges, estatuas colosales ni palacio real; sin personas."
+  }
+}

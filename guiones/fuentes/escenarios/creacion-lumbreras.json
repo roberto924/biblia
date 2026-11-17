@@ -1,0 +1,20 @@
+{
+  "id": "creacion-lumbreras",
+  "nombre": "Las lumbreras en la expansión (Gn 1:14-19)",
+  "pasajes": ["gn-01"],
+  "element": {"nombre": "LUMBRERAS_CIELO", "tipo": "lugar"},
+  "texto": [
+    {"dato": "Lumbreras para apartar el día y la noche y para señales, estaciones, días y años", "certeza": "texto", "ref": "Gn 1:14", "cita": "Sean lumbreras en la expansión de los cielos para apartar el día y la noche: y sean por señales, y para las estaciones, y para días y años"},
+    {"dato": "La lumbrera mayor para el día, la menor para la noche, y las estrellas", "certeza": "texto", "ref": "Gn 1:16", "cita": "la lumbrera mayor para que señorease en el día, y la lumbrera menor para que señorease en la noche: [hizo] también las estrellas"},
+    {"dato": "La lumbrera mayor se muestra como el sol y la menor como la luna", "certeza": "inferido", "nota": "El texto no las nombra; se infiere por su función (señorear en el día y en la noche).", "base": [{"ref": "Gn 1:16", "cita": "la lumbrera mayor para que señorease en el día"}]}
+  ],
+  "rasgos": [
+    {"dato": "La misma costa con hierba y árboles del día tercero, ahora bajo un cielo con sol, luna y estrellas; primer atardecer y primera noche con luz de fuente visible", "certeza": "interpretacion", "nota": "Interpretación del ilustrador: se reutiliza el paisaje del día tercero para dar continuidad."}
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Paint the same grassy coast with fruit trees beside a calm sea, now under a sky that has lights of its own. In one version a warm sun shines low in the daytime sky, and in another a pale moon and a field of stars shine over the sea at night.",
+    "prompt_es": "La misma costa con hierba y árboles frutales junto a un mar en calma, ahora bajo un cielo con luces propias: en una versión, un sol cálido bajo en el cielo de día; en otra, una luna pálida y un campo de estrellas sobre el mar de noche.",
+    "negativo_en": "Do not show any animals, birds, fish, people, buildings or figures in the sky, and no comets, eclipses or planets with rings.",
+    "negativo_es": "Sin animales, aves, peces, personas, edificios ni figuras en el cielo; sin cometas, eclipses ni planetas con anillos."
+  }
+}

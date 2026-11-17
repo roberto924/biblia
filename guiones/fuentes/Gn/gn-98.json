@@ -1,0 +1,761 @@
+{
+  "id": "gn-98",
+  "libro": "Gn",
+  "inicio": "Gn 45:1",
+  "fin": "Gn 45:15",
+  "montaje": {
+    "archivo": "gn-98.mp4",
+    "titulo": "José se da a conocer",
+    "musica": {
+      "usar": false,
+      "nota": "Sin música en el piloto: el llanto y las voces llevan la escena. Más adelante, opcional, con Suno (no verificado; decisión pendiente del usuario)."
+    },
+    "notas": "Solo habla José (Lipsync Studio con su voz); los hermanos y Benjamín no tienen líneas. Desde 45:1 no hay egipcios en la sala. El llanto de 45:2 se oye fuera de cuadro desde el patio. Apto para perfil niño."
+  },
+  "continuidad": {
+    "empieza_con": "La sala de la casa de José en la tensión del final de gn-97: José de pie con egipcios a su lado; Judá delante, cerca de él; los demás hermanos detrás, con los vestidos rasgados.",
+    "termina_con": "José rodeado por sus hermanos, que hablan con él en la sala ya sin egipcios (45:15).",
+    "enlace_anterior": "gn-97 (La súplica de Judá, Gn 44:18-34) termina con Judá ofreciéndose como siervo en lugar de Benjamín: el primer plano de gn-98 retoma a Judá cerca de José.",
+    "enlace_siguiente": "gn-99 (Faraón invita a la familia de Jacob, Gn 45:16-28) empieza con la noticia que llega a la casa de Faraón: puede abrir en el patio de la toma t2 (mismo Element PATIO_CASA_JOSE) para encadenar."
+  },
+  "decisiones_pendientes": [
+    "Época visual del Egipto de José: supuesto por defecto Reino Medio (Beni Hasan, Meketre), con Rekhmire (Reino Nuevo) como contraste; posturas en guiones/escenarios/casa-jose-sala.md.",
+    "Voz de José (Eleven v3 o MiniMax Speech 2.8 HD en Higgsfield, u otra).",
+    "¿Se muestra la salida de los egipcios en 45:1 (propuesta) o se empieza ya con la sala vacía?",
+    "Música: ninguna en el piloto; Suno más adelante, opcional.",
+    "Rótulo «Antes:» con el resumen editorial de gn-97: incluirlo o no."
+  ],
+  "discursos": [
+    {
+      "id": "d1",
+      "persona": "Joseph_1",
+      "ref": "Gn 45:1",
+      "introduccion": "y clamó:",
+      "fin_ref": "Gn 45:1",
+      "fin_cita": "Haced salir de conmigo á todos."
+    },
+    {
+      "id": "d2",
+      "persona": "Joseph_1",
+      "ref": "Gn 45:3",
+      "introduccion": "Y dijo José á sus hermanos:",
+      "fin_ref": "Gn 45:3",
+      "fin_cita": "¿vive aún mi padre?"
+    },
+    {
+      "id": "d3",
+      "persona": "Joseph_1",
+      "ref": "Gn 45:4",
+      "introduccion": "Entonces dijo José á sus hermanos:",
+      "fin_ref": "Gn 45:4",
+      "fin_cita": "Llegaos ahora á mí."
+    },
+    {
+      "id": "d4",
+      "persona": "Joseph_1",
+      "ref": "Gn 45:4",
+      "introduccion": "Y él dijo:",
+      "fin_ref": "Gn 45:13",
+      "fin_cita": "traed á mi padre acá."
+    }
+  ],
+  "escenas": [
+    {
+      "id": "e1",
+      "titulo": "Tensión contenida",
+      "proposito": "José ya no puede contenerse: vacía la sala y rompe a llorar tan fuerte que lo oyen fuera.",
+      "versiculos": "Gn 45:1-2",
+      "progresion_visual": "Sala llena y tensa; salen los egipcios; corte al patio, donde los que salieron oyen el llanto tras la puerta.",
+      "tomas": [
+        {
+          "id": "t1",
+          "titulo": "Haced salir de conmigo á todos",
+          "nivel": "A",
+          "perfil": "todos",
+          "transicion": "fundido",
+          "versiculos": "Gn 45:1",
+          "personajes": [
+            "jose",
+            "hermanos",
+            "benjamin"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "figurantes": "sirvientes egipcios y el intérprete (inferido de Gn 42:23)",
+          "imagen": {
+            "prompt_en": "Paint a reception hall in the house of a high official in ancient Egypt, lit by daylight from small high windows. The official, a man of about thirty-nine in fine white linen with a broad gold collar, stands near the center with his jaw clenched and his eyes wet, struggling to hold back tears. Before him stand eleven bearded men from western Asia in striped wool tunics and cloaks, several of them torn at the neck, with their heads lowered; a tall man in a reddish cloak stands closest to him, and a young man with a short dark beard stands among them. Egyptian servants in white kilts and an Egyptian interpreter in a white kilt stand along the walls.",
+            "descripcion_es": "Sala de la casa de José a la luz de ventanas altas: José, de lino blanco y collar de oro, conteniendo el llanto; ante él, once hombres de Asia occidental con túnicas de lana de colores, algunas rasgadas al cuello, cabizbajos; Judá (manto rojizo) el más cercano; Benjamín entre ellos; sirvientes egipcios y un intérprete egipcio junto a los muros.",
+            "referencias": [
+              "C1",
+              "A1"
+            ]
+          },
+          "movimiento": {
+            "prompt_en": "The official lifts one hand and calls out; the Egyptian servants and the interpreter bow and leave through the doorway one after another until only the official and the eleven men remain, and the camera pushes in slowly on his face.",
+            "descripcion_es": "José alza la mano y clama; los sirvientes y el intérprete se inclinan y salen uno tras otro hasta que solo quedan él y los once; la cámara se acerca despacio a su rostro.",
+            "camara": [
+              "static",
+              "slow-push-in"
+            ]
+          },
+          "lipsync": "José: «Haced salir de conmigo á todos.» Generar el audio con la voz de José (ver personajes/jose.md) y aplicar Lipsync Studio sobre el plano en que clama.",
+          "fidelidad": [
+            {
+              "dato": "José ya no puede contenerse delante de los presentes",
+              "certeza": "texto",
+              "ref": "Gn 45:1",
+              "cita": "NO podía ya José contenerse delante de todos los que estaban al lado suyo"
+            },
+            {
+              "dato": "Manda salir a todos y no queda nadie con él",
+              "certeza": "texto",
+              "ref": "Gn 45:1",
+              "cita": "Y no quedó nadie con él, al darse á conocer José á sus hermanos"
+            },
+            {
+              "dato": "Los que salen son egipcios de su casa (y quizá el intérprete)",
+              "certeza": "inferido",
+              "nota": "En esa casa comían egipcios con José y había intérprete; quienes oyen el llanto en 45:2 son «los Egipcios».",
+              "base": [
+                {
+                  "ref": "Gn 43:32",
+                  "cita": "aparte para los Egipcios que con él comían"
+                },
+                {
+                  "ref": "Gn 42:23",
+                  "cita": "había intérprete entre ellos"
+                }
+              ]
+            },
+            {
+              "dato": "Judá es el más cercano a José",
+              "certeza": "inferido",
+              "nota": "Es quien acaba de suplicarle en gn-97.",
+              "base": [
+                {
+                  "ref": "Gn 44:18",
+                  "cita": "Entonces Judá se llegó á él"
+                }
+              ]
+            },
+            {
+              "dato": "Vestidos rasgados de los hermanos",
+              "certeza": "inferido",
+              "nota": "Los rasgaron al hallarse la copa y el texto no dice que se cambiaran.",
+              "base": [
+                {
+                  "ref": "Gn 44:13",
+                  "cita": "Entonces ellos rasgaron sus vestidos"
+                }
+              ]
+            },
+            {
+              "dato": "Gestos, rostro y disposición de la sala; altura y color del manto de Judá, y aspecto de Benjamín",
+              "certeza": "interpretacion",
+              "nota": "Interpretación del ilustrador sobre el supuesto de época Reino Medio (decisión pendiente)."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:1",
+              "voz": "narrador",
+              "texto": "NO podía ya José contenerse delante de todos los que estaban al lado suyo, y clamó:"
+            },
+            {
+              "ref": "Gn 45:1",
+              "voz": "Joseph_1",
+              "discurso": "d1",
+              "texto": "Haced salir de conmigo á todos."
+            },
+            {
+              "ref": "Gn 45:1",
+              "voz": "narrador",
+              "texto": "Y no quedó nadie con él, al darse á conocer José á sus hermanos."
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "titulo": "Lo oyen los egipcios",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 45:2",
+          "personajes": [],
+          "escenario": "casa-jose-patio",
+          "clips_8s": 1,
+          "figurantes": "los sirvientes egipcios y el intérprete que salieron de la sala",
+          "imagen": {
+            "prompt_en": "Paint the shaded porch outside the hall of an Egyptian official's house. Egyptian servants in white kilts and an Egyptian interpreter in a white kilt have just come out and stand still between the painted wooden columns, turning their heads back toward the closed wooden door, startled and listening. Beyond them, a garden pool lies in bright daylight.",
+            "descripcion_es": "El pórtico en sombra ante la sala: los sirvientes egipcios y el intérprete que acaban de salir se quedan quietos entre las columnas, vueltos hacia la puerta cerrada, sobresaltados, escuchando; al fondo el estanque a la luz clara del día.",
+            "referencias": [
+              "C1"
+            ]
+          },
+          "movimiento": {
+            "prompt_en": "The servants freeze and turn toward the closed door as loud weeping is heard from inside, and the camera moves slowly toward the door.",
+            "descripcion_es": "Los sirvientes se quedan inmóviles y se vuelven hacia la puerta mientras se oye un llanto fuerte dentro; la cámara avanza despacio hacia la puerta.",
+            "camara": [
+              "slow-push-in"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "José llora a voz en grito",
+              "certeza": "texto",
+              "ref": "Gn 45:2",
+              "cita": "Entonces se dió á llorar á voz en grito"
+            },
+            {
+              "dato": "Lo oyen los egipcios y la casa de Faraón",
+              "certeza": "texto",
+              "ref": "Gn 45:2",
+              "cita": "oyeron los Egipcios, y oyó también la casa de Faraón"
+            },
+            {
+              "dato": "Los egipcios lo oyen desde fuera de la sala",
+              "certeza": "inferido",
+              "nota": "Salieron todos (45:1) y lo oyeron (45:2)."
+            },
+            {
+              "dato": "No se muestra a Faraón ni su palacio",
+              "certeza": "interpretacion",
+              "nota": "Cómo lo oyó la casa de Faraón no se dice aquí; el llanto se oye fuera de cuadro y la noticia se deja para gn-99."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:2",
+              "voz": "narrador",
+              "texto": "Entonces se dió á llorar á voz en grito; y oyeron los Egipcios, y oyó también la casa de Faraón."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "titulo": "«Yo soy José»",
+      "proposito": "La revelación: José dice quién es y pregunta por su padre; los hermanos se quedan sin habla.",
+      "versiculos": "Gn 45:3",
+      "progresion_visual": "Primer plano de José con lágrimas; la cámara gira hacia los hermanos paralizados.",
+      "tomas": [
+        {
+          "id": "t3",
+          "titulo": "Yo soy José",
+          "nivel": "A",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 45:3",
+          "personajes": [
+            "jose",
+            "hermanos",
+            "benjamin"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint a close view of the Egyptian official, now alone in the hall with the eleven men from western Asia. His face is wet with tears, and his gold collar catches the light from a high window. Behind him, softly out of focus, the bearded men in striped wool clothes stand frozen, staring at him in shock.",
+            "descripcion_es": "Primer plano de José, ya solo con los once: lágrimas en el rostro, el collar de oro a la luz de una ventana alta; detrás, desenfocados, los hermanos paralizados mirándolo.",
+            "referencias": [
+              "A1"
+            ]
+          },
+          "movimiento": {
+            "prompt_en": "He speaks with a breaking voice; then the camera turns slowly toward the brothers, who step back in fear and cannot answer.",
+            "descripcion_es": "Habla con la voz quebrada; la cámara gira despacio hacia los hermanos, que retroceden asustados y no pueden responder.",
+            "camara": [
+              "close-up",
+              "pan-left"
+            ]
+          },
+          "lipsync": "José: «Yo soy José: ¿vive aún mi padre?» La pregunta casi en un susurro.",
+          "fidelidad": [
+            {
+              "dato": "José dice quién es y pregunta por su padre",
+              "certeza": "texto",
+              "ref": "Gn 45:3",
+              "cita": "Yo soy José: ¿vive aún mi padre?"
+            },
+            {
+              "dato": "Los hermanos no pueden responder: están turbados",
+              "certeza": "texto",
+              "ref": "Gn 45:3",
+              "cita": "no pudieron responderle, porque estaban turbados delante de él"
+            },
+            {
+              "dato": "Retroceden con miedo",
+              "certeza": "interpretacion",
+              "nota": "Interpretación de «turbados»; el texto no describe el gesto."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:3",
+              "voz": "narrador",
+              "texto": "Y dijo José á sus hermanos:"
+            },
+            {
+              "ref": "Gn 45:3",
+              "voz": "Joseph_1",
+              "discurso": "d2",
+              "texto": "Yo soy José: ¿vive aún mi padre?"
+            },
+            {
+              "ref": "Gn 45:3",
+              "voz": "narrador",
+              "texto": "Y sus hermanos no pudieron responderle, porque estaban turbados delante de él."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "titulo": "El miedo de los hermanos",
+      "proposito": "José los acerca, nombra lo que hicieron y responde a su miedo y su culpa.",
+      "versiculos": "Gn 45:4-5",
+      "progresion_visual": "Plano medio: la distancia entre José y los hermanos se acorta; José pone la mano en el hombro de Judá.",
+      "tomas": [
+        {
+          "id": "t4",
+          "titulo": "Llegaos ahora á mí",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 45:4",
+          "personajes": [
+            "jose",
+            "hermanos",
+            "benjamin"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the official in white linen stretching out both hands toward the eleven bearded men in the hall, inviting them closer. Hesitantly, the men take their first steps toward him: the tall man in the reddish cloak and the young man with the short beard come first, while the oldest, with grey in his beard, follows behind.",
+            "descripcion_es": "José extiende las manos hacia los once invitándolos a acercarse; ellos dan los primeros pasos con duda: Judá y Benjamín delante, Rubén (canas en la barba) detrás."
+          },
+          "movimiento": {
+            "prompt_en": "The brothers slowly come closer as he beckons, and he speaks to them face to face.",
+            "descripcion_es": "Los hermanos se acercan despacio mientras él los llama; luego les habla cara a cara.",
+            "camara": [
+              "medium-shot",
+              "static"
+            ]
+          },
+          "lipsync": "José: «Llegaos ahora á mí.» y, tras acercarse ellos, «Yo soy José vuestro hermano el que vendisteis para Egipto.»",
+          "fidelidad": [
+            {
+              "dato": "Les pide que se acerquen y se acercan",
+              "certeza": "texto",
+              "ref": "Gn 45:4",
+              "cita": "Llegaos ahora á mí. Y ellos se llegaron."
+            },
+            {
+              "dato": "Nombra la venta",
+              "certeza": "texto",
+              "ref": "Gn 45:4",
+              "cita": "Yo soy José vuestro hermano el que vendisteis para Egipto"
+            },
+            {
+              "dato": "Orden en que se acercan",
+              "certeza": "interpretacion",
+              "nota": "El texto no lo dice."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:4",
+              "voz": "narrador",
+              "texto": "Entonces dijo José á sus hermanos:"
+            },
+            {
+              "ref": "Gn 45:4",
+              "voz": "Joseph_1",
+              "discurso": "d3",
+              "texto": "Llegaos ahora á mí."
+            },
+            {
+              "ref": "Gn 45:4",
+              "voz": "narrador",
+              "texto": "Y ellos se llegaron. Y él dijo:"
+            },
+            {
+              "ref": "Gn 45:4",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Yo soy José vuestro hermano el que vendisteis para Egipto."
+            }
+          ]
+        },
+        {
+          "id": "t5",
+          "titulo": "No os entristezcáis",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 45:5",
+          "personajes": [
+            "jose",
+            "hermanos",
+            "benjamin"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the official standing close to the brothers now, eleven men in all, one hand resting gently on the shoulder of the tall man in the reddish cloak as he speaks softly. On the men's faces, shame and fear are beginning to give way to astonishment.",
+            "descripcion_es": "José ya cerca de los once hermanos, con la mano en el hombro de Judá, habla en voz baja; en los rostros, la vergüenza y el miedo empiezan a dar paso al asombro."
+          },
+          "movimiento": {
+            "prompt_en": "He speaks gently while the men slowly raise their eyes to him.",
+            "descripcion_es": "Habla con suavidad mientras ellos levantan poco a poco la mirada.",
+            "camara": [
+              "medium-close-up",
+              "static"
+            ]
+          },
+          "lipsync": "José: 45:5 completo, en tono afectuoso, sin reproche.",
+          "fidelidad": [
+            {
+              "dato": "Les pide que no se entristezcan ni les pese",
+              "certeza": "texto",
+              "ref": "Gn 45:5",
+              "cita": "no os entristezcáis, ni os pese de haberme vendido acá"
+            },
+            {
+              "dato": "Dios lo envió para preservar vida",
+              "certeza": "texto",
+              "ref": "Gn 45:5",
+              "cita": "para preservación de vida me envió Dios delante de vosotros"
+            },
+            {
+              "dato": "La mano en el hombro de Judá",
+              "certeza": "interpretacion",
+              "nota": "Gesto del ilustrador; el texto no lo describe."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:5",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Ahora pues, no os entristezcáis, ni os pese de haberme vendido acá; que para preservación de vida me envió Dios delante de vosotros:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "titulo": "La explicación: Dios me envió",
+      "proposito": "José explica el sentido de lo ocurrido: el hambre, el salvamento y que fue Dios quien lo envió.",
+      "versiculos": "Gn 45:6-8",
+      "progresion_visual": "José junto a una ventana alta: fuera, la tierra seca del hambre que menciona; vuelve la mirada a sus hermanos al decir «sino Dios».",
+      "tomas": [
+        {
+          "id": "t6",
+          "titulo": "No me enviasteis vosotros acá, sino Dios",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 45:6-8",
+          "personajes": [
+            "jose",
+            "hermanos",
+            "benjamin"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the official standing by a high window in the hall, speaking to the brothers, eleven men in all, gathered before him. Through the window, beyond the courtyard wall, the land lies dusty and dry under a hazy sky.",
+            "descripcion_es": "José junto a una ventana alta, hablando a los hermanos reunidos; por la ventana, más allá del muro del patio, la tierra seca y polvorienta bajo un cielo brumoso."
+          },
+          "movimiento": {
+            "prompt_en": "He looks out over the dry land as he speaks, then turns back to his brothers; the camera drifts slowly from the window to the faces of the men.",
+            "descripcion_es": "Mira la tierra seca mientras habla y se vuelve hacia sus hermanos; la cámara pasa despacio de la ventana a sus rostros.",
+            "camara": [
+              "slow-pan",
+              "medium-shot"
+            ]
+          },
+          "lipsync": "José: 45:6-8. Si Lipsync Studio no admite tanta duración, partir por versículos (duración máxima no publicada).",
+          "fidelidad": [
+            {
+              "dato": "Dos años de hambre y quedan cinco",
+              "certeza": "texto",
+              "ref": "Gn 45:6",
+              "cita": "ya ha habido dos años de hambre en medio de la tierra, y aun quedan cinco años"
+            },
+            {
+              "dato": "Dios lo envió para daros vida",
+              "certeza": "texto",
+              "ref": "Gn 45:7",
+              "cita": "para daros vida por medio de grande salvamento"
+            },
+            {
+              "dato": "No lo enviaron ellos, sino Dios, que lo puso por señor de Egipto",
+              "certeza": "texto",
+              "ref": "Gn 45:8",
+              "cita": "no me enviasteis vosotros acá, sino Dios"
+            },
+            {
+              "dato": "Vista por la ventana (tierra seca) y muro del patio",
+              "certeza": "interpretacion",
+              "nota": "Interpretación del ilustrador: ilustra el hambre que José menciona (45:6); el texto no describe la vista ni los muros."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:6",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Que ya ha habido dos años de hambre en medio de la tierra, y aun quedan cinco años en que ni habrá arada ni siega."
+            },
+            {
+              "ref": "Gn 45:7",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Y Dios me envió delante de vosotros, para que vosotros quedaseis en la tierra, y para daros vida por medio de grande salvamento."
+            },
+            {
+              "ref": "Gn 45:8",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Así pues, no me enviasteis vosotros acá, sino Dios, que me ha puesto por padre de Faraón, y por señor de toda su casa, y por gobernador en toda la tierra de Egipto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "titulo": "El encargo para Jacob",
+      "proposito": "José manda a sus hermanos a traer a su padre: Gosén, el sustento y la prueba de que es él quien habla.",
+      "versiculos": "Gn 45:9-13",
+      "progresion_visual": "José, urgente, señala la puerta y el camino; luego se vuelve hacia Benjamín y lo mira de frente.",
+      "tomas": [
+        {
+          "id": "t7",
+          "titulo": "Daos priesa, id á mi padre",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 45:9-11",
+          "personajes": [
+            "jose",
+            "hermanos",
+            "benjamin"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the official speaking urgently to the brothers, eleven men in all, in the hall and pointing toward the open doorway and the bright road beyond, as if sending them at once on a long journey. The men turn to look where he points.",
+            "descripcion_es": "José habla con urgencia y señala la puerta abierta y el camino luminoso, como si los mandara ya de viaje; los hermanos se vuelven a mirar."
+          },
+          "movimiento": {
+            "prompt_en": "He points toward the doorway as he speaks; the brothers follow his gesture and then look back at him.",
+            "descripcion_es": "Señala la puerta mientras habla; los hermanos siguen el gesto y vuelven a mirarlo.",
+            "camara": [
+              "medium-shot",
+              "static"
+            ]
+          },
+          "lipsync": "José: 45:9-11, urgente en «Daos priesa». Partir por versículos si hace falta.",
+          "fidelidad": [
+            {
+              "dato": "Que se den prisa y vayan a su padre",
+              "certeza": "texto",
+              "ref": "Gn 45:9",
+              "cita": "Daos priesa, id á mi padre y decidle"
+            },
+            {
+              "dato": "Habitarán en Gosén, cerca de él",
+              "certeza": "texto",
+              "ref": "Gn 45:10",
+              "cita": "habitarás en la tierra de Gosén, y estarás cerca de mí"
+            },
+            {
+              "dato": "Allí los alimentará: quedan cinco años de hambre",
+              "certeza": "texto",
+              "ref": "Gn 45:11",
+              "cita": "allí te alimentaré, pues aun quedan cinco años de hambre"
+            },
+            {
+              "dato": "No se muestran Jacob ni Gosén",
+              "certeza": "interpretacion",
+              "nota": "José los nombra pero la escena sigue en la sala; mostrarlos adelantaría pasajes no leídos."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:9",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Daos priesa, id á mi padre y decidle: Así dice tu hijo José: Dios me ha puesto por señor de todo Egipto; ven á mí, no te detengas:"
+            },
+            {
+              "ref": "Gn 45:10",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Y habitarás en la tierra de Gosén, y estarás cerca de mí, tú y tus hijos, y los hijos de tus hijos, tus ganados y tus vacas, y todo lo que tienes."
+            },
+            {
+              "ref": "Gn 45:11",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Y allí te alimentaré, pues aun quedan cinco años de hambre, porque no perezcas de pobreza tú y tu casa, y todo lo que tienes:"
+            }
+          ]
+        },
+        {
+          "id": "t8",
+          "titulo": "Los ojos de mi hermano Benjamín",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 45:12-13",
+          "personajes": [
+            "jose",
+            "benjamin",
+            "hermanos"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the official turning toward the youngest of the brothers, a young man with a short dark beard and striped wool clothes, and looking straight into his eyes as he speaks, while the other men watch them both in silence.",
+            "descripcion_es": "José se vuelve hacia el menor, Benjamín, y lo mira a los ojos mientras habla; los demás los observan en silencio.",
+            "referencias": [
+              "A2"
+            ]
+          },
+          "movimiento": {
+            "prompt_en": "He speaks looking straight at the young man; the young man's eyes fill with tears.",
+            "descripcion_es": "Habla mirando de frente a Benjamín, que se emociona.",
+            "camara": [
+              "over-the-shoulder",
+              "static"
+            ]
+          },
+          "lipsync": "José: 45:12-13; termina con urgencia en «daos priesa, y traed á mi padre acá».",
+          "fidelidad": [
+            {
+              "dato": "Los ojos de Benjamín ven que es José quien les habla",
+              "certeza": "texto",
+              "ref": "Gn 45:12",
+              "cita": "los ojos de mi hermano Benjamín, que mi boca os habla"
+            },
+            {
+              "dato": "Les habla ya sin intérprete",
+              "certeza": "inferido",
+              "nota": "«mi boca os habla» frente a Gn 42:23; el texto no menciona al intérprete aquí.",
+              "base": [
+                {
+                  "ref": "Gn 42:23",
+                  "cita": "había intérprete entre ellos"
+                }
+              ]
+            },
+            {
+              "dato": "Que cuenten a su padre su gloria en Egipto y lo traigan",
+              "certeza": "texto",
+              "ref": "Gn 45:13",
+              "cita": "Haréis pues saber á mi padre toda mi gloria en Egipto"
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:12",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Y he aquí, vuestros ojos ven, y los ojos de mi hermano Benjamín, que mi boca os habla."
+            },
+            {
+              "ref": "Gn 45:13",
+              "voz": "Joseph_1",
+              "discurso": "d4",
+              "texto": "Haréis pues saber á mi padre toda mi gloria en Egipto, y todo lo que habéis visto: y daos priesa, y traed á mi padre acá."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "titulo": "El abrazo con Benjamín y el llanto",
+      "proposito": "La reconciliación sin palabras: el abrazo de los dos hijos de Raquel, los besos a todos y la conversación que el texto no reproduce.",
+      "versiculos": "Gn 45:14-15",
+      "progresion_visual": "Plano medio del abrazo; José pasa de hermano en hermano; la cámara se aleja y los deja hablando, sin oír sus palabras.",
+      "tomas": [
+        {
+          "id": "t9",
+          "titulo": "Lloró sobre el cuello de Benjamín",
+          "nivel": "A",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 45:14-15",
+          "personajes": [
+            "jose",
+            "benjamin",
+            "hermanos"
+          ],
+          "escenario": "casa-jose-sala",
+          "clips_8s": 3,
+          "imagen": {
+            "prompt_en": "Paint the official in white linen embracing the youngest brother, his arms around the young man's neck, both of them weeping, while the other ten bearded men in striped wool clothes gather close around them, some already reaching out toward him.",
+            "descripcion_es": "José abraza a Benjamín rodeándole el cuello; los dos lloran; los otros diez se acercan alrededor, algunos ya tienden la mano hacia él."
+          },
+          "movimiento": {
+            "prompt_en": "The two brothers hold each other and weep; the official then turns to the others and greets each one with a kiss on the cheek, still weeping; finally the brothers gather round him and talk with him quietly, their words not heard, as the camera slowly pulls back.",
+            "descripcion_es": "Los dos se abrazan y lloran; José pasa a los demás y besa a cada uno en la mejilla, llorando; al final los hermanos lo rodean y hablan con él en voz baja, sin que se oigan sus palabras, mientras la cámara se aleja.",
+            "camara": [
+              "medium-shot",
+              "slow-dolly-out"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "José se echa sobre el cuello de Benjamín y llora; Benjamín también",
+              "certeza": "texto",
+              "ref": "Gn 45:14",
+              "cita": "Y echóse sobre el cuello de Benjamín su hermano, y lloró; y también Benjamín lloró sobre su cuello."
+            },
+            {
+              "dato": "Besa a todos sus hermanos y llora sobre ellos",
+              "certeza": "texto",
+              "ref": "Gn 45:15",
+              "cita": "Y besó á todos sus hermanos, y lloró sobre ellos"
+            },
+            {
+              "dato": "Después sus hermanos hablan con él: se ve que hablan, sin audio",
+              "certeza": "texto",
+              "ref": "Gn 45:15",
+              "cita": "después sus hermanos hablaron con él"
+            },
+            {
+              "dato": "Sus palabras no se oyen ni se inventan",
+              "certeza": "interpretacion",
+              "nota": "El texto no da lo que dijeron: lo lee el narrador y no hay diálogo."
+            },
+            {
+              "dato": "Beso en la mejilla",
+              "certeza": "interpretacion",
+              "nota": "El texto dice «besó»; la forma es del ilustrador."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 45:14",
+              "voz": "narrador",
+              "texto": "Y echóse sobre el cuello de Benjamín su hermano, y lloró; y también Benjamín lloró sobre su cuello."
+            },
+            {
+              "ref": "Gn 45:15",
+              "voz": "narrador",
+              "texto": "Y besó á todos sus hermanos, y lloró sobre ellos: y después sus hermanos hablaron con él."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

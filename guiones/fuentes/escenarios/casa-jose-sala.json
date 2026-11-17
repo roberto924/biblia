@@ -1,0 +1,96 @@
+{
+  "id": "casa-jose-sala",
+  "nombre": "Sala de la casa de José",
+  "pasajes": [
+    "gn-98"
+  ],
+  "element": {
+    "nombre": "SALA_CASA_JOSE",
+    "tipo": "lugar"
+  },
+  "texto": [
+    {
+      "dato": "Los hermanos son llevados a casa de José",
+      "certeza": "texto",
+      "ref": "Gn 43:17",
+      "cita": "metió aquel hombre á los hombres en casa de José"
+    },
+    {
+      "dato": "José tiene allí una cámara aparte donde llora",
+      "certeza": "texto",
+      "ref": "Gn 43:30",
+      "cita": "entróse en su cámara, y lloró allí"
+    },
+    {
+      "dato": "Comen en mesas separadas: José, los hermanos y los egipcios",
+      "certeza": "texto",
+      "ref": "Gn 43:32",
+      "cita": "Y pusieron para él aparte, y separadamente para ellos, y aparte para los Egipcios que con él comían"
+    },
+    {
+      "dato": "Tras hallarse la copa vuelven a casa de José, que aún estaba allí",
+      "certeza": "texto",
+      "ref": "Gn 44:14",
+      "cita": "llegó Judá con sus hermanos á casa de José, que aun estaba allí"
+    },
+    {
+      "dato": "Hay gente al lado de José cuando ya no puede contenerse",
+      "certeza": "texto",
+      "ref": "Gn 45:1",
+      "cita": "delante de todos los que estaban al lado suyo"
+    },
+    {
+      "dato": "La escena de Gn 45:1-15 ocurre en esta casa",
+      "certeza": "inferido",
+      "nota": "Gn 45 sigue sin cambio de lugar a Gn 44:14-34; el texto no vuelve a nombrar el sitio.",
+      "base": [
+        {
+          "ref": "Gn 44:14",
+          "cita": "casa de José, que aun estaba allí"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Sala de recepción con columnas de madera pintadas, muros enlucidos con friso de color, suelo de yeso, luz por ventanas altas con celosía, esteras, mesas bajas y tinajas de barro",
+      "certeza": "interpretacion",
+      "nota": "De C1 solo consta, por su ficha, un modelo de jardín de un alto funcionario; columnas, celosías y friso son interpretación del ilustrador.",
+      "referencias": [
+        "C1"
+      ]
+    }
+  ],
+  "epoca": {
+    "dato": "Egipto del Reino Medio (Dinastía XII, hacia 1900 a. C.)",
+    "certeza": "supuesto",
+    "nota": "Supuesto por defecto del proyecto, decisión pendiente del usuario: el texto no fecha la historia de José. Modelos: Beni Hasan (A1, A2) y Meketre (C1). Contraste Reino Nuevo: tumba de Rekhmire (A3, B1). Las posturas y su atribución vienen de resúmenes secundarios reunidos por el investigador (16-nov-2026); las páginas no se leyeron en detalle: verificar antes de citarlas en la app.",
+    "posturas": [
+      {
+        "resumen": "Reino Medio (K. Kitchen; C. Aling)",
+        "fuente": "https://www.logos.com/grow/bsm-was-joseph-in-egypt-when-archaeology-and-the-bible-converge/"
+      },
+      {
+        "resumen": "Época hicsa / Segundo Período Intermedio (algunos estudiosos)",
+        "fuente": "https://www.thetorah.com/article/we-were-slaves-to-the-hyksos-in-egypt"
+      },
+      {
+        "resumen": "Período saíta: el relato refleja detalles de muchas épocas (D. Redford)",
+        "fuente": "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-egypt/imagining-joseph-in-egypt/"
+      },
+      {
+        "resumen": "Sin anclaje histórico verificable",
+        "fuente": "https://www.biblicalarchaeology.org/daily/ancient-cultures/ancient-egypt/imagining-joseph-in-egypt/"
+      }
+    ]
+  },
+  "referencias": [
+    "C1"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an establishing view of an empty reception hall in the house of a high official in ancient Egypt, around 1900 BC. Wooden columns painted to look like bundles of papyrus stems hold up a flat ceiling with painted beams. The walls are smoothly plastered and bordered with a simple colored frieze, and the floor is pale plaster partly covered with reed mats. Daylight falls in from small high windows with wooden grilles. Low wooden tables, stools and large clay storage jars stand along the walls, and a doorway at the back opens onto a sunlit porch.",
+    "prompt_es": "Vista general de una sala de recepción vacía en la casa de un alto funcionario del antiguo Egipto, hacia 1900 a. C.: columnas de madera pintadas como haces de papiro, techo plano con vigas pintadas, muros enlucidos con friso de color, suelo de yeso claro con esteras de junco, luz por ventanas altas con celosía, mesas bajas, taburetes y tinajas de barro; al fondo, una puerta a un pórtico soleado.",
+    "negativo_en": "Do not show giant stone temple columns, colossal statues, hieroglyph-covered palace walls, gold everywhere or pyramids through the windows. There are no people in this view.",
+    "negativo_es": "Sin columnas colosales de templo, estatuas gigantes, muros de palacio llenos de jeroglíficos, oro por todas partes ni pirámides por la ventana; sin personas."
+  }
+}

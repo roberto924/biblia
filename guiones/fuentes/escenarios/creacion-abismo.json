@@ -1,0 +1,22 @@
+{
+  "id": "creacion-abismo",
+  "nombre": "El abismo y las aguas en tinieblas (Gn 1:2-5)",
+  "pasajes": ["gn-01"],
+  "element": {"nombre": "ABISMO_AGUAS", "tipo": "lugar"},
+  "texto": [
+    {"dato": "La tierra desordenada y vacía", "certeza": "texto", "ref": "Gn 1:2", "cita": "la tierra estaba desordenada y vacía"},
+    {"dato": "Tinieblas sobre la superficie del abismo", "certeza": "texto", "ref": "Gn 1:2", "cita": "las tinieblas estaban sobre la haz del abismo"},
+    {"dato": "El Espíritu de Dios se movía sobre la superficie de las aguas", "certeza": "texto", "ref": "Gn 1:2", "cita": "el Espíritu de Dios se movía sobre la haz de las aguas"},
+    {"dato": "Luego la luz, separada de las tinieblas", "certeza": "texto", "ref": "Gn 1:4", "cita": "apartó Dios la luz de las tinieblas"},
+    {"dato": "No hay sol, luna ni estrellas hasta el día cuarto", "certeza": "inferido", "nota": "Las lumbreras se hacen en el día cuarto; antes la luz no tiene fuente visible.", "base": [{"ref": "Gn 1:16", "cita": "E hizo Dios las dos grandes lumbreras"}]}
+  ],
+  "rasgos": [
+    {"dato": "Superficie de agua oscura e infinita, sin orillas ni horizonte claro; el movimiento del Espíritu se ve solo como ondas y rizos que avanzan sobre el agua", "certeza": "interpretacion", "nota": "Interpretación del ilustrador. Regla del proyecto (decisión pendiente): Dios sin rostro ni figura; sin paloma."}
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Paint a vast, dark expanse of deep water that stretches in every direction, with no shore, no land and no clear horizon. Near-total darkness lies over the surface, and only the faintest grey sheen shows the slow swell of the water.",
+    "prompt_es": "Una inmensa extensión de agua profunda y oscura en todas direcciones, sin orilla, sin tierra y sin horizonte claro; oscuridad casi total; solo un brillo gris muy tenue deja ver el lento oleaje.",
+    "negativo_en": "Do not show any figure, face, hand, dove, bird or living creature. Do not show any sun, moon, stars, planets, galaxies, lightning or fire.",
+    "negativo_es": "Sin figura, rostro, mano, paloma, ave ni ser vivo; sin sol, luna, estrellas, planetas, galaxias, rayos ni fuego."
+  }
+}

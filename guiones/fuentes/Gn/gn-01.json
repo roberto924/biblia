@@ -1,0 +1,735 @@
+{
+  "id": "gn-01",
+  "libro": "Gn",
+  "inicio": "Gn 1:1",
+  "fin": "Gn 1:19",
+  "montaje": {
+    "archivo": "gn-01.mp4",
+    "titulo": "La creación: días primero a cuarto",
+    "musica": {
+      "usar": false,
+      "nota": "Sin música en el piloto. Más adelante, opcional, con Suno (no verificado; decisión pendiente del usuario)."
+    },
+    "notas": "Sin personajes. La voz de Dios la lee el narrador, sin eco ni efectos (decisión pendiente). Cada estribillo («y fué la tarde y la mañana…», «y vió Dios que era bueno») cierra su escena con un plano distinto: nunca el mismo encuadre dos veces."
+  },
+  "continuidad": {
+    "empieza_con": "Negro que se abre a la oscuridad casi total sobre aguas sin orilla (Gn 1:1-2).",
+    "termina_con": "La primera mañana con sol visible sobre la costa con hierba y árboles frutales, junto al mar en calma y sin animales (Gn 1:19).",
+    "enlace_siguiente": "gn-02 (La creación: días quinto a séptimo) empieza con las aguas y la expansión de los cielos del día quinto (Gn 1:20): abrir desde el mismo mar y la misma costa a la luz de la mañana del último plano de gn-01 (Element LUMBRERAS_CIELO)."
+  },
+  "decisiones_pendientes": [
+    "Dios nunca con rostro ni figura humana: solo luz, viento sobre el agua y la voz (propuesta por defecto).",
+    "La voz de Dios («Sea la luz», etc.) la lee el narrador, sin voz aparte (propuesta por defecto).",
+    "La lumbrera mayor se muestra como el sol y la menor como la luna (inferido por su función; el texto no las nombra).",
+    "Música: ninguna en el piloto; Suno más adelante, opcional."
+  ],
+  "prohibido_hasta": [
+    {
+      "hasta": "Gn 1:7",
+      "terminos": [
+        "sky",
+        "skies",
+        "heaven",
+        "heavens"
+      ]
+    },
+    {
+      "hasta": "Gn 1:15",
+      "terminos": [
+        "sun",
+        "suns",
+        "sunlight",
+        "sunrise",
+        "sunset",
+        "sunbeam",
+        "sunbeams",
+        "moon",
+        "moonlight",
+        "moonrise",
+        "star",
+        "stars",
+        "starry",
+        "starlight",
+        "planet",
+        "planets"
+      ]
+    },
+    {
+      "hasta": "Gn 1:19",
+      "terminos": [
+        "dove",
+        "bird",
+        "birds",
+        "fish",
+        "animal",
+        "animals",
+        "person",
+        "people",
+        "human",
+        "figure",
+        "face",
+        "hand",
+        "hands",
+        "beard",
+        "man",
+        "woman"
+      ]
+    }
+  ],
+  "escenas": [
+    {
+      "id": "e1",
+      "titulo": "El principio",
+      "proposito": "Situar al espectador antes de todo: tinieblas, abismo y el Espíritu que se mueve sobre las aguas.",
+      "versiculos": "Gn 1:1-2",
+      "progresion_visual": "De negro a una oscuridad apenas legible; el único movimiento es el del aire sobre el agua.",
+      "tomas": [
+        {
+          "id": "t1",
+          "titulo": "Tinieblas sobre el abismo",
+          "nivel": "A",
+          "perfil": "todos",
+          "transicion": "fundido",
+          "versiculos": "Gn 1:1-2",
+          "personajes": [],
+          "escenario": "creacion-abismo",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint near-total darkness over a boundless deep ocean with no shore and no horizon. Only a faint grey sheen reveals the slow swell of the water. Across the surface, a long line of ripples and fine spray moves steadily, as if a strong breath of wind were passing over the water, though nothing that causes it can be seen.",
+            "descripcion_es": "Oscuridad casi total sobre un océano sin orillas ni horizonte; un brillo gris deja ver el oleaje; una franja de ondas y rocío avanza como empujada por un aliento invisible.",
+            "negativo_en": "Do not show any figure, face, hand, dove or bird, and no sun, moon, stars, lightning or fire."
+          },
+          "movimiento": {
+            "prompt_en": "The camera glides low over the dark water while a band of ripples and spray travels across the surface from left to right, driven by an unseen wind; the darkness stays deep.",
+            "descripcion_es": "La cámara se desliza a ras del agua oscura; una franja de ondas cruza la superficie como empujada por un viento que no se ve.",
+            "camara": [
+              "low-angle",
+              "slow-tracking-shot"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Al principio Dios crea los cielos y la tierra",
+              "certeza": "texto",
+              "ref": "Gn 1:1",
+              "cita": "EN el principio crió Dios los cielos y la tierra"
+            },
+            {
+              "dato": "La tierra desordenada y vacía, tinieblas sobre el abismo",
+              "certeza": "texto",
+              "ref": "Gn 1:2",
+              "cita": "la tierra estaba desordenada y vacía, y las tinieblas estaban sobre la haz del abismo"
+            },
+            {
+              "dato": "El Espíritu de Dios se movía sobre la superficie de las aguas",
+              "certeza": "texto",
+              "ref": "Gn 1:2",
+              "cita": "el Espíritu de Dios se movía sobre la haz de las aguas"
+            },
+            {
+              "dato": "Todavía no hay luz",
+              "certeza": "inferido",
+              "nota": "La luz se hace en el versículo siguiente.",
+              "base": [
+                {
+                  "ref": "Gn 1:3",
+                  "cita": "Sea la luz"
+                }
+              ]
+            },
+            {
+              "dato": "El Espíritu se muestra solo como movimiento del aire y del agua, sin figura ni paloma",
+              "certeza": "interpretacion",
+              "nota": "Interpretación del ilustrador que sigue la regla del proyecto (Dios sin rostro ni figura, decisión pendiente) y el verbo del texto («se movía»)."
+            },
+            {
+              "dato": "1:1 no se ilustra con un acto visible de crear: se muestra lo que el 1:2 describe",
+              "certeza": "interpretacion",
+              "nota": "El texto no describe cómo se ve el crear; mostrarlo sería inventar."
+            },
+            {
+              "dato": "Tenue brillo gris para que el agua sea visible",
+              "certeza": "interpretacion",
+              "nota": "Interpretación del ilustrador: el texto solo dice tinieblas."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:1",
+              "voz": "narrador",
+              "texto": "EN el principio crió Dios los cielos y la tierra."
+            },
+            {
+              "ref": "Gn 1:2",
+              "voz": "narrador",
+              "texto": "Y la tierra estaba desordenada y vacía, y las tinieblas estaban sobre la haz del abismo, y el Espíritu de Dios se movía sobre la haz de las aguas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "titulo": "Día primero: la luz",
+      "proposito": "El primer cambio del relato: la palabra hace la luz, que se separa de las tinieblas y da el primer día.",
+      "versiculos": "Gn 1:3-5",
+      "progresion_visual": "La luz llena todo de golpe y sin fuente; luego se divide en dos regiones; al final se apaga y vuelve.",
+      "cierre": "«y fué la tarde y la mañana un día»: plano general del mar; la luz sin fuente se apaga hasta el azul de la tarde y vuelve como mañana.",
+      "tomas": [
+        {
+          "id": "t2",
+          "titulo": "Sea la luz",
+          "nivel": "A",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 1:3",
+          "personajes": [],
+          "escenario": "creacion-abismo",
+          "clips_8s": 1,
+          "imagen": {
+            "prompt_en": "Paint the same dark ocean at the very moment light appears. A soft, pale light spreads evenly through the air and over the water, as if the air itself were beginning to glow, with no single bright point anywhere above. For the first time the swell of the water can be clearly seen.",
+            "descripcion_es": "El mismo océano en el instante en que aparece la luz: una luz pálida y pareja llena el aire y el agua, sin ningún punto brillante; por primera vez se ve bien el oleaje.",
+            "negativo_en": "Do not show any figure, face, hand or bird, and no sun, moon, stars, rays from a single point or lightning."
+          },
+          "movimiento": {
+            "prompt_en": "The darkness lifts evenly as a soft light fills the whole scene at once, with no point of origin; the camera holds still on the water.",
+            "descripcion_es": "La oscuridad se levanta pareja y una luz suave lo llena todo a la vez, sin punto de origen; cámara quieta.",
+            "camara": [
+              "static"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Dios dice «Sea la luz» y la luz es",
+              "certeza": "texto",
+              "ref": "Gn 1:3",
+              "cita": "Y dijo Dios: Sea la luz: y fué la luz."
+            },
+            {
+              "dato": "La luz no viene del sol: las lumbreras se hacen en el día cuarto",
+              "certeza": "inferido",
+              "nota": "El orden del texto pone la luz (1:3) antes que las lumbreras (1:16).",
+              "base": [
+                {
+                  "ref": "Gn 1:16",
+                  "cita": "E hizo Dios las dos grandes lumbreras"
+                }
+              ]
+            },
+            {
+              "dato": "Las palabras de Dios las lee el narrador, sin eco ni voz aparte",
+              "certeza": "interpretacion",
+              "nota": "Decisión pendiente del usuario (propuesta por defecto)."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:3",
+              "voz": "narrador",
+              "texto": "Y dijo Dios: Sea la luz: y fué la luz."
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "titulo": "La luz y las tinieblas apartadas; el primer día",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 1:4-5",
+          "personajes": [],
+          "escenario": "creacion-abismo",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the open ocean, with the air above it divided into two great regions. On one side the water lies in calm, pale light, and on the other it lies in deep darkness, with a soft, wide boundary between them. No point of light can be seen anywhere above.",
+            "descripcion_es": "El océano con el aire sobre él dividido en dos grandes regiones: luz pálida a un lado, oscuridad profunda al otro, con un límite ancho y suave; ningún punto de luz.",
+            "negativo_en": "Do not show any sun, moon or stars, and no land, plants or figures."
+          },
+          "movimiento": {
+            "prompt_en": "The camera pans slowly from the darkness into the light; then the whole scene dims to the deep blue of evening and slowly brightens again into the pale light of morning, still with no visible source.",
+            "descripcion_es": "Paneo lento de la oscuridad a la luz; después todo se apaga hasta el azul de la tarde y vuelve a aclarar como mañana, siempre sin fuente visible.",
+            "camara": [
+              "pan-right",
+              "static"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Dios ve que la luz es buena y la aparta de las tinieblas",
+              "certeza": "texto",
+              "ref": "Gn 1:4",
+              "cita": "Y vió Dios que la luz era buena: y apartó Dios la luz de las tinieblas."
+            },
+            {
+              "dato": "Nombra Día y Noche; tarde y mañana, un día",
+              "certeza": "texto",
+              "ref": "Gn 1:5",
+              "cita": "y fué la tarde y la mañana un día"
+            },
+            {
+              "dato": "La separación se muestra como dos regiones y la tarde y la mañana como un apagarse y volver de la luz",
+              "certeza": "interpretacion",
+              "nota": "Interpretación del ilustrador; el texto no describe cómo se veía."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:4",
+              "voz": "narrador",
+              "texto": "Y vió Dios que la luz era buena: y apartó Dios la luz de las tinieblas."
+            },
+            {
+              "ref": "Gn 1:5",
+              "voz": "narrador",
+              "texto": "Y llamó Dios á la luz Día, y á las tinieblas llamó Noche: y fué la tarde y la mañana un día."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "titulo": "Día segundo: la expansión",
+      "proposito": "Se abre espacio en medio de las aguas: aparece el cielo.",
+      "versiculos": "Gn 1:6-8",
+      "progresion_visual": "De aguas arriba y abajo casi juntas a una franja de aire que se ensancha; la cámara sube por ella.",
+      "cierre": "«el día segundo»: contrapicado desde el agua hacia los cielos que oscurecen (no repite el plano general del día primero).",
+      "tomas": [
+        {
+          "id": "t4",
+          "titulo": "Aguas apartadas de aguas",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "fundido a negro",
+          "versiculos": "Gn 1:6-7",
+          "personajes": [],
+          "escenario": "creacion-expansion",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint a boundless sea below and a heavy layer of water and cloud pressing low above it. Between the two, a band of clear, luminous air is opening and widening, as if the waters were being gently pushed apart. The light is soft and even and does not come from any visible point.",
+            "descripcion_es": "Un mar sin límites abajo y una capa pesada de agua y nubes muy baja arriba; entre ambos se abre y ensancha una franja de aire claro; luz pareja sin origen visible."
+          },
+          "movimiento": {
+            "prompt_en": "The band of clear air between the lower and the upper waters widens steadily, and the camera rises slowly from just above the sea into the open space.",
+            "descripcion_es": "La franja de aire entre las aguas de abajo y las de arriba se ensancha; la cámara sube despacio desde el mar hacia el espacio abierto.",
+            "camara": [
+              "crane-up"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Una expansión en medio de las aguas",
+              "certeza": "texto",
+              "ref": "Gn 1:6",
+              "cita": "Haya expansión en medio de las aguas, y separe las aguas de las aguas"
+            },
+            {
+              "dato": "Aguas debajo y aguas sobre la expansión; y fue así",
+              "certeza": "texto",
+              "ref": "Gn 1:7",
+              "cita": "apartó las aguas que estaban debajo de la expansión, de las aguas que estaban sobre la expansión: y fué así"
+            },
+            {
+              "dato": "Forma de la expansión y de las aguas de arriba",
+              "certeza": "interpretacion",
+              "nota": "Hay varias lecturas de qué son la «expansión» y las «aguas sobre la expansión»; el video muestra solo la separación y no decide."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:6",
+              "voz": "narrador",
+              "texto": "Y dijo Dios: Haya expansión en medio de las aguas, y separe las aguas de las aguas."
+            },
+            {
+              "ref": "Gn 1:7",
+              "voz": "narrador",
+              "texto": "E hizo Dios la expansión, y apartó las aguas que estaban debajo de la expansión, de las aguas que estaban sobre la expansión: y fué así."
+            }
+          ]
+        },
+        {
+          "id": "t5",
+          "titulo": "Cielos; el día segundo",
+          "nivel": "C",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 1:8",
+          "personajes": [],
+          "escenario": "creacion-expansion",
+          "clips_8s": 0,
+          "imagen": {
+            "prompt_en": "Paint a view from just above the surface of the sea, looking up into a high, wide open sky beneath a distant ceiling of cloud and water. The light is fading into a deep evening blue, and there is no point of light anywhere above.",
+            "descripcion_es": "Desde casi la superficie del mar, mirando hacia arriba a un cielo alto y abierto bajo un techo lejano de nubes y agua; la luz se apaga en azul de tarde; ningún punto de luz."
+          },
+          "movimiento": null,
+          "fidelidad": [
+            {
+              "dato": "La expansión se llama Cielos; tarde y mañana, el día segundo",
+              "certeza": "texto",
+              "ref": "Gn 1:8",
+              "cita": "Y llamó Dios á la expansión Cielos: y fué la tarde y la mañana el día segundo."
+            },
+            {
+              "dato": "Contrapicado al anochecer para cerrar el día sin repetir el plano del día primero",
+              "certeza": "interpretacion",
+              "nota": "Decisión de montaje del ilustrador."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:8",
+              "voz": "narrador",
+              "texto": "Y llamó Dios á la expansión Cielos: y fué la tarde y la mañana el día segundo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "titulo": "Día tercero: la seca y las plantas",
+      "proposito": "Aparece la tierra firme y se cubre de vida vegetal: dos obras en un mismo día.",
+      "versiculos": "Gn 1:9-13",
+      "progresion_visual": "El agua se retira y deja tierra desnuda; la misma tierra se vuelve verde; plano cercano de la hierba al anochecer.",
+      "cierre": "«vió Dios que era bueno» (1:10 y 1:12): la cámara se detiene sobre cada obra terminada. «el día tercero»: plano cercano de la hierba con espigas mientras la luz se apaga.",
+      "tomas": [
+        {
+          "id": "t6",
+          "titulo": "Júntense las aguas; descúbrase la seca",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "fundido",
+          "versiculos": "Gn 1:9-10",
+          "personajes": [],
+          "escenario": "creacion-tierra-seca",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the sea drawing back from a wide coast. Water streams off rising rocks and bare, dark brown land as it emerges, while the sea gathers into a broad, calm body of water beside it. The scene is lit by soft, even light that does not come from any visible point.",
+            "descripcion_es": "El mar se retira de una costa amplia; el agua escurre de rocas y tierra parda desnuda que emerge; el mar se reúne en una gran masa en calma; luz pareja sin origen visible.",
+            "negativo_en": "Do not show any sun, moon or stars, and no plants, animals, buildings or figures yet."
+          },
+          "movimiento": {
+            "prompt_en": "The water drains away from the rising land, revealing rocky shores and bare hills, and the camera pulls back to show land and sea side by side.",
+            "descripcion_es": "El agua se retira de la tierra que sube y deja ver costas rocosas y colinas desnudas; la cámara se aleja hasta ver tierra y mar juntos.",
+            "camara": [
+              "pull-back"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Las aguas se juntan y aparece la seca",
+              "certeza": "texto",
+              "ref": "Gn 1:9",
+              "cita": "Júntense las aguas que [están] debajo de los cielos en un lugar, y descúbrase la seca: y fué así."
+            },
+            {
+              "dato": "Tierra y Mares; era bueno",
+              "certeza": "texto",
+              "ref": "Gn 1:10",
+              "cita": "llamó Dios á la seca Tierra, y á la reunión de las aguas llamó Mares: y vió Dios que era bueno."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:9",
+              "voz": "narrador",
+              "texto": "Y dijo Dios: Júntense las aguas que [están] debajo de los cielos en un lugar, y descúbrase la seca: y fué así."
+            },
+            {
+              "ref": "Gn 1:10",
+              "voz": "narrador",
+              "texto": "Y llamó Dios á la seca Tierra, y á la reunión de las aguas llamó Mares: y vió Dios que era bueno."
+            }
+          ]
+        },
+        {
+          "id": "t7",
+          "titulo": "Produzca la tierra hierba verde",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 1:11-12",
+          "personajes": [],
+          "escenario": "creacion-tierra-seca",
+          "clips_8s": 3,
+          "imagen": {
+            "prompt_en": "Paint the same bare hills beside the sea as the first green grass spreads across them. Grasses carry heavy seed heads, and young fruit trees with small fruit stand here and there on the slopes. Everything is lit by soft, even light that does not come from any visible point.",
+            "descripcion_es": "Las mismas colinas junto al mar mientras se cubren de la primera hierba verde; hierbas con espigas llenas y árboles jóvenes con frutos pequeños en las laderas; luz pareja sin origen visible.",
+            "negativo_en": "Do not show any sun, moon or stars, and no animals, insects, flowers in cultivated rows, buildings or figures."
+          },
+          "movimiento": {
+            "prompt_en": "Close on the bare earth, green shoots break through and spread; the grass grows tall and forms seed heads, and small trees rise and bear fruit while the camera drifts slowly along the slope.",
+            "descripcion_es": "En plano cercano brotan tallos verdes de la tierra desnuda; la hierba crece y echa espiga; árboles pequeños se alzan y dan fruto; la cámara avanza despacio por la ladera.",
+            "camara": [
+              "close-up",
+              "slow-tracking-shot"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Hierba que da simiente y árboles con fruto según su género",
+              "certeza": "texto",
+              "ref": "Gn 1:11",
+              "cita": "Produzca la tierra hierba verde, hierba que dé simiente; árbol de fruto que dé fruto según su género"
+            },
+            {
+              "dato": "La tierra lo produce; era bueno",
+              "certeza": "texto",
+              "ref": "Gn 1:12",
+              "cita": "Y produjo la tierra hierba verde"
+            },
+            {
+              "dato": "Las plantas crecen bajo la luz del día primero, sin sol",
+              "certeza": "inferido",
+              "nota": "El sol (lumbrera mayor) se hace en el día cuarto.",
+              "base": [
+                {
+                  "ref": "Gn 1:16",
+                  "cita": "la lumbrera mayor para que señorease en el día"
+                }
+              ]
+            },
+            {
+              "dato": "Especies sin identificar",
+              "certeza": "interpretacion",
+              "nota": "El texto no nombra especies: se pintan hierbas con espiga y frutales genéricos."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:11",
+              "voz": "narrador",
+              "texto": "Y dijo Dios: Produzca la tierra hierba verde, hierba que dé simiente; árbol de fruto que dé fruto según su género, que su simiente esté en él, sobre la tierra: y fué así."
+            },
+            {
+              "ref": "Gn 1:12",
+              "voz": "narrador",
+              "texto": "Y produjo la tierra hierba verde, hierba que da simiente según su naturaleza, y árbol que da fruto, cuya simiente está en él, según su género: y vió Dios que era bueno."
+            }
+          ]
+        },
+        {
+          "id": "t8",
+          "titulo": "El día tercero",
+          "nivel": "C",
+          "perfil": "todos",
+          "transicion": "corte",
+          "versiculos": "Gn 1:13",
+          "personajes": [],
+          "escenario": "creacion-tierra-seca",
+          "clips_8s": 0,
+          "imagen": {
+            "prompt_en": "Paint a close view of the new grass and its seed heads as evening falls, with the blades bending slightly and the soft, sourceless light fading to a deep evening blue. Fruit trees stand as dark shapes on the slope behind.",
+            "descripcion_es": "Plano cercano de la hierba nueva con sus espigas al caer la tarde; la luz sin fuente se apaga a azul; los frutales, siluetas oscuras detrás."
+          },
+          "movimiento": null,
+          "fidelidad": [
+            {
+              "dato": "Tarde y mañana, el día tercero",
+              "certeza": "texto",
+              "ref": "Gn 1:13",
+              "cita": "Y fué la tarde y la mañana el día tercero."
+            },
+            {
+              "dato": "Plano cercano para no repetir los cierres anteriores",
+              "certeza": "interpretacion",
+              "nota": "Decisión de montaje del ilustrador."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:13",
+              "voz": "narrador",
+              "texto": "Y fué la tarde y la mañana el día tercero."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "titulo": "Día cuarto: las lumbreras",
+      "proposito": "Por primera vez la luz tiene fuente: el cielo recibe sus lumbreras para el día, la noche, las señales y los tiempos.",
+      "versiculos": "Gn 1:14-19",
+      "progresion_visual": "Cielo luminoso y vacío; amanece el primer sol; recorre el día; atardece y salen la luna y las estrellas; vuelve la mañana.",
+      "cierre": "«el día cuarto»: por primera vez la tarde y la mañana las marcan el sol, la luna y las estrellas; es el cierre del video.",
+      "tomas": [
+        {
+          "id": "t9",
+          "titulo": "Sean lumbreras",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "fundido",
+          "versiculos": "Gn 1:14-15",
+          "personajes": [],
+          "escenario": "creacion-lumbreras",
+          "clips_8s": 2,
+          "imagen": {
+            "prompt_en": "Paint the coast with its grass and fruit trees beside the calm sea under a vast, empty sky. The sky is bright with soft, even light, yet there is no point of light in it at all, as if it were waiting.",
+            "descripcion_es": "La costa con hierba y frutales junto al mar en calma bajo un cielo inmenso y vacío, claro de luz pareja pero sin ningún punto de luz, como a la espera."
+          },
+          "movimiento": {
+            "prompt_en": "The camera holds on the bright, empty expanse above the coast while the even light shifts very slightly, as if waiting; nothing appears in it yet.",
+            "descripcion_es": "La cámara se sostiene sobre la extensión clara y vacía sobre la costa mientras la luz pareja cambia apenas, como a la espera; todavía no aparece nada.",
+            "camara": [
+              "static",
+              "slow-tilt-up"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Lumbreras para apartar día y noche, señales, estaciones, días y años",
+              "certeza": "texto",
+              "ref": "Gn 1:14",
+              "cita": "Sean lumbreras en la expansión de los cielos para apartar el día y la noche"
+            },
+            {
+              "dato": "Para alumbrar sobre la tierra; y fue así",
+              "certeza": "texto",
+              "ref": "Gn 1:15",
+              "cita": "para alumbrar sobre la tierra: y fué así"
+            },
+            {
+              "dato": "Las lumbreras se ven a partir de la toma siguiente",
+              "certeza": "interpretacion",
+              "nota": "1:15 dice «y fué así», pero el relato describe su hechura en 1:16: el video las muestra con ese versículo para seguir el orden de la narración."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:14",
+              "voz": "narrador",
+              "texto": "Y dijo Dios: Sean lumbreras en la expansión de los cielos para apartar el día y la noche: y sean por señales, y para las estaciones, y para días y años;"
+            },
+            {
+              "ref": "Gn 1:15",
+              "voz": "narrador",
+              "texto": "Y sean por lumbreras en la expansión de los cielos para alumbrar sobre la tierra: y fué así."
+            }
+          ]
+        },
+        {
+          "id": "t10",
+          "titulo": "Las dos grandes lumbreras y las estrellas",
+          "nivel": "A",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 1:16-18",
+          "personajes": [],
+          "escenario": "creacion-lumbreras",
+          "clips_8s": 4,
+          "imagen": {
+            "prompt_en": "Paint the same coast at the moment a warm sun rises for the first time above the sea, throwing long shadows from the fruit trees across the grass. The sky glows gold near the horizon and deep blue above.",
+            "descripcion_es": "La misma costa en el momento en que un sol cálido sale por primera vez sobre el mar y las sombras de los frutales se alargan sobre la hierba; cielo dorado en el horizonte y azul arriba.",
+            "negativo_en": "Do not show any animals, birds, fish, people or figures in the sky, and no comets or eclipses."
+          },
+          "movimiento": {
+            "prompt_en": "A warm sun rises above the sea and crosses the sky as the tree shadows turn; at sunset it sinks, a pale moon rises and the stars appear one by one over the water.",
+            "descripcion_es": "Sale el sol, cruza el cielo y giran las sombras; al ponerse, sale una luna pálida y las estrellas aparecen una a una sobre el agua.",
+            "camara": [
+              "static",
+              "time-lapse"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Dios hace la lumbrera mayor, la menor y las estrellas",
+              "certeza": "texto",
+              "ref": "Gn 1:16",
+              "cita": "E hizo Dios las dos grandes lumbreras; la lumbrera mayor para que señorease en el día, y la lumbrera menor para que señorease en la noche: [hizo] también las estrellas."
+            },
+            {
+              "dato": "Las pone en la expansión para alumbrar",
+              "certeza": "texto",
+              "ref": "Gn 1:17",
+              "cita": "Y púsolas Dios en la expansión de los cielos, para alumbrar sobre la tierra"
+            },
+            {
+              "dato": "Para señorear el día y la noche y apartar la luz y las tinieblas; era bueno",
+              "certeza": "texto",
+              "ref": "Gn 1:18",
+              "cita": "y para apartar la luz y las tinieblas: y vió Dios que era bueno."
+            },
+            {
+              "dato": "La lumbrera mayor como sol y la menor como luna",
+              "certeza": "inferido",
+              "nota": "El texto no las nombra; se infiere por su función.",
+              "base": [
+                {
+                  "ref": "Gn 1:16",
+                  "cita": "la lumbrera menor para que señorease en la noche"
+                }
+              ]
+            },
+            {
+              "dato": "Ciclo de un día con amanecer, ocaso, luna y estrellas",
+              "certeza": "interpretacion",
+              "nota": "Interpretación del ilustrador: el texto dice qué hacen las lumbreras, no muestra un día concreto."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:16",
+              "voz": "narrador",
+              "texto": "E hizo Dios las dos grandes lumbreras; la lumbrera mayor para que señorease en el día, y la lumbrera menor para que señorease en la noche: [hizo] también las estrellas."
+            },
+            {
+              "ref": "Gn 1:17",
+              "voz": "narrador",
+              "texto": "Y púsolas Dios en la expansión de los cielos, para alumbrar sobre la tierra,"
+            },
+            {
+              "ref": "Gn 1:18",
+              "voz": "narrador",
+              "texto": "Y para señorear en el día y en la noche, y para apartar la luz y las tinieblas: y vió Dios que era bueno."
+            }
+          ]
+        },
+        {
+          "id": "t11",
+          "titulo": "El día cuarto",
+          "nivel": "B",
+          "perfil": "todos",
+          "transicion": "encadenado",
+          "versiculos": "Gn 1:19",
+          "personajes": [],
+          "escenario": "creacion-lumbreras",
+          "clips_8s": 1,
+          "imagen": {
+            "prompt_en": "Paint the calm sea at night under a pale moon and a sky full of stars, with the dark shapes of the fruit trees standing on the quiet shore.",
+            "descripcion_es": "El mar en calma de noche bajo una luna pálida y un cielo lleno de estrellas; los frutales, siluetas oscuras en la costa tranquila."
+          },
+          "movimiento": {
+            "prompt_en": "Night passes over the sea: the stars fade, the horizon pales, and the sun rises again over the coast in the clear light of morning.",
+            "descripcion_es": "Pasa la noche: se apagan las estrellas, clarea el horizonte y el sol vuelve a salir sobre la costa con la luz limpia de la mañana.",
+            "camara": [
+              "static",
+              "time-lapse"
+            ]
+          },
+          "fidelidad": [
+            {
+              "dato": "Tarde y mañana, el día cuarto",
+              "certeza": "texto",
+              "ref": "Gn 1:19",
+              "cita": "Y fué la tarde y la mañana el día cuarto."
+            },
+            {
+              "dato": "Último plano: mañana con sol sobre la costa, para encadenar con gn-02",
+              "certeza": "interpretacion",
+              "nota": "Decisión de montaje del ilustrador (continuidad entre videos)."
+            }
+          ],
+          "partes": [
+            {
+              "ref": "Gn 1:19",
+              "voz": "narrador",
+              "texto": "Y fué la tarde y la mañana el día cuarto."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

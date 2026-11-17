@@ -1,0 +1,184 @@
+{
+  "id": "jose",
+  "nombre": "José",
+  "personas": [
+    "Joseph_1"
+  ],
+  "pasajes": [
+    "gn-98"
+  ],
+  "element": {
+    "nombre": "JOSE_GOBERNADOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 42–45: gobernador en Egipto. Si se usa en pasajes anteriores (Gn 37–41) hace falta otra hoja (joven de 17 años, con su ropa de diversos colores, Gn 37:3).",
+  "edades": [
+    {
+      "dato": "Edad en Gn 45 (gn-98): unos 39 años",
+      "certeza": "calculo",
+      "valor": 39,
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 39,
+        "pasos": [
+          {
+            "texto": "Edad al presentarse ante Faraón",
+            "valor": 30,
+            "ref": "Gn 41:46",
+            "cita": "Y era José de edad de treinta años cuando fué presentado delante de Faraón"
+          },
+          {
+            "texto": "Los siete años de hartura, ya cumplidos",
+            "valor": 7,
+            "ref": "Gn 41:53",
+            "cita": "cumpliéronse los siete años de la hartura"
+          },
+          {
+            "texto": "Años de hambre ya pasados cuando habla José",
+            "valor": 2,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre"
+          }
+        ],
+        "supuestos": [
+          "La hartura empieza justo después de que José se presenta ante Faraón: Gn 41:46-47 los cuenta seguidos («E hizo la tierra en aquellos siete años de hartura á montones»), sin decir el intervalo",
+          "Se cuentan años completos; si el segundo año de hambre no ha terminado, 38–39. Rango razonable 38–40; el video usa «unos 39»"
+        ]
+      }
+    },
+    {
+      "dato": "Unos 22 años desde que lo vendieron sus hermanos",
+      "certeza": "calculo",
+      "valor": 22,
+      "nota": "Sirve para dirigir: sus hermanos ya no lo reconocen (Gn 42:8, «pero ellos no le conocieron»).",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 22,
+        "pasos": [
+          {
+            "texto": "Edad en Gn 45 (cálculo anterior: 30 + 7 + 2)",
+            "valor": 39,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre"
+          },
+          {
+            "texto": "Edad cuando apacentaba las ovejas con sus hermanos",
+            "valor": 17,
+            "ref": "Gn 37:2",
+            "cita": "siendo de edad de diez y siete años apacentaba las ovejas con sus hermanos"
+          }
+        ],
+        "supuestos": [
+          "Fue vendido el mismo año en que tenía 17: Gn 37:2 y 37:28 están en el mismo relato, pero el texto no lo precisa",
+          "Hereda el rango del cálculo anterior (38–40): entre 21 y 23 años"
+        ]
+      }
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hermoso de semblante y de bella presencia",
+      "certeza": "texto",
+      "ref": "Gn 39:6",
+      "cita": "Y era José de hermoso semblante y bella presencia"
+    },
+    {
+      "rasgo": "Al salir de la cárcel le cortaron el pelo y le cambiaron la ropa",
+      "certeza": "texto",
+      "ref": "Gn 41:14",
+      "cita": "le cortaron el pelo, y mudaron sus vestidos"
+    },
+    {
+      "rasgo": "Faraón le dio un nombre egipcio",
+      "certeza": "texto",
+      "ref": "Gn 41:45",
+      "cita": "Zaphnath-paaneah"
+    },
+    {
+      "rasgo": "Señor de la tierra, vendía el grano",
+      "certeza": "texto",
+      "ref": "Gn 42:6",
+      "cita": "José era el señor de la tierra"
+    },
+    {
+      "rasgo": "Hablaba con sus hermanos por medio de un intérprete",
+      "certeza": "texto",
+      "ref": "Gn 42:23",
+      "cita": "había intérprete entre ellos"
+    },
+    {
+      "rasgo": "Ya había llorado a escondidas al ver a Benjamín",
+      "certeza": "texto",
+      "ref": "Gn 43:30",
+      "cita": "entróse en su cámara, y lloró allí"
+    },
+    {
+      "rasgo": "Sus hermanos no lo reconocían: aspecto, ropa e idioma egipcios",
+      "certeza": "inferido",
+      "nota": "El texto dice que no le conocieron y que había intérprete; no dice por qué. Se infiere que su aspecto egipcio y los años lo hacían irreconocible.",
+      "base": [
+        {
+          "ref": "Gn 42:8",
+          "cita": "pero ellos no le conocieron"
+        }
+      ]
+    },
+    {
+      "rasgo": "Cara afeitada y pelo corto y oscuro, sin peluca",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, coherente con Gn 41:14 (le cortaron el pelo). Cómo llevaba el pelo en Gn 45 no se dice. La peluca de los funcionarios del Reino Medio queda pendiente de una referencia verificada (B2 sin comprobar)."
+    },
+    {
+      "rasgo": "Rostro: piel morena oliva, ojos oscuros, rasgos de Asia occidental",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su cara ni su color. Se toma como guía cómo pintó Egipto a la gente de Asia occidental (A1, A2).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Ropas de lino finísimo",
+      "certeza": "texto",
+      "ref": "Gn 41:42",
+      "cita": "hízole vestir de ropas de lino finísimo"
+    },
+    {
+      "rasgo": "Collar de oro al cuello",
+      "certeza": "texto",
+      "ref": "Gn 41:42",
+      "cita": "puso un collar de oro en su cuello"
+    },
+    {
+      "rasgo": "El anillo de Faraón en la mano",
+      "certeza": "texto",
+      "ref": "Gn 41:42",
+      "cita": "Faraón quitó su anillo de su mano, y púsolo en la mano de José"
+    },
+    {
+      "rasgo": "Lleva en Gn 45 las insignias que recibió en Gn 41",
+      "certeza": "inferido",
+      "nota": "El texto no describe su ropa en Gn 45; se supone que sigue vistiendo como gobernador."
+    },
+    {
+      "rasgo": "Vestido largo de lino blanco fino; collar ancho de cuentas de oro; sandalias",
+      "certeza": "supuesto",
+      "nota": "Forma del vestido sin referencia verificada del Reino Medio: supuesto por defecto de época, decisión pendiente del usuario. Rekhmire (B1) es Reino Nuevo y no se usa como base."
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre de unos 39 años (Cálculo). Voz media-grave, cálida, español neutro. Gn 45:1: clama con la emoción que ya no puede contener. Gn 45:3: «Yo soy José» con la voz quebrada, y la pregunta por su padre casi en un susurro. Gn 45:4-13: firme y afectuoso, sin reproche; urgente en «Daos priesa» (45:9 y 45:13). Pronuncia tal cual las formas antiguas («á», «priesa», «Gosén»). Voz candidata en Higgsfield: Eleven v3 o MiniMax Speech 2.8 HD (decisión pendiente del usuario)."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view, and a full-body view. He is a man of about thirty-nine from western Asia who now serves as a high official in ancient Egypt. He has a calm, intelligent and kind face, olive-brown skin, dark eyes, short dark hair and a clean-shaven face. He wears a long garment of fine white linen, a broad collar of gold beads around his neck, and a signet ring on his right hand. He stands upright in simple leather sandals with a composed, dignified posture.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, tres cuartos, cuerpo entero). Hombre de unos 39 años de Asia occidental, alto funcionario en el antiguo Egipto; rostro sereno, inteligente y amable, piel morena oliva, ojos oscuros, pelo corto oscuro, afeitado; vestido largo de lino blanco fino, collar ancho de cuentas de oro, anillo de sello en la mano derecha, sandalias de cuero.",
+    "negativo_en": "Do not give him a crown, a pharaoh's striped headdress, a royal cobra, a beard or a colorful striped robe. Do not add jewelry beyond the gold collar and the ring, and keep the background plain.",
+    "negativo_es": "Sin corona, sin tocado rayado de faraón, sin cobra real, sin barba ni túnica de colores; ninguna joya aparte del collar y el anillo; fondo liso."
+  }
+}

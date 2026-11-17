@@ -1,0 +1,21 @@
+{
+  "id": "creacion-tierra-seca",
+  "nombre": "La seca, los mares y las plantas (Gn 1:9-13)",
+  "pasajes": ["gn-01"],
+  "element": {"nombre": "TIERRA_SECA", "tipo": "lugar"},
+  "texto": [
+    {"dato": "Las aguas se juntan en un lugar y aparece la seca", "certeza": "texto", "ref": "Gn 1:9", "cita": "Júntense las aguas que [están] debajo de los cielos en un lugar, y descúbrase la seca"},
+    {"dato": "La seca se llama Tierra; las aguas reunidas, Mares", "certeza": "texto", "ref": "Gn 1:10", "cita": "llamó Dios á la seca Tierra, y á la reunión de las aguas llamó Mares"},
+    {"dato": "Hierba verde que da simiente y árboles que dan fruto", "certeza": "texto", "ref": "Gn 1:12", "cita": "produjo la tierra hierba verde, hierba que da simiente según su naturaleza, y árbol que da fruto"},
+    {"dato": "Todavía sin animales ni personas", "certeza": "inferido", "nota": "Los animales y el ser humano se crean después (días quinto y sexto, gn-02).", "base": [{"ref": "Gn 1:13", "cita": "el día tercero"}]}
+  ],
+  "rasgos": [
+    {"dato": "Costa de roca y tierra desnuda que emerge del agua; luego praderas de hierba con espiga y árboles frutales sin especie reconocible moderna", "certeza": "interpretacion", "nota": "Interpretación del ilustrador. Luz sin fuente visible (antes del día cuarto)."}
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Paint wide land rising out of a calm sea, with rocky shores and gentle hills that are bare at first. Later the same hills are covered with green grasses carrying seed heads and with scattered fruit trees. Everything is lit by a soft, even light that does not come from any visible point in the sky.",
+    "prompt_es": "Tierra amplia que emerge de un mar en calma, con costas rocosas y colinas suaves, desnudas al principio; luego las mismas colinas cubiertas de hierba verde con espigas y árboles frutales dispersos; luz suave y pareja sin punto de origen visible.",
+    "negativo_en": "Do not show any sun, moon, stars or planets, and no animals, birds, fish, people, buildings, roads or fields under cultivation.",
+    "negativo_es": "Sin sol, luna, estrellas ni planetas; sin animales, aves, peces, personas, edificios, caminos ni campos cultivados."
+  }
+}

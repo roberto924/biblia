@@ -2,3 +2,6 @@ herramientas/cache/
 .claude/
 __pycache__/
 recursos/_trabajo/
+
+# respuestas y registros temporales de Codex
+guiones/registro/codex/

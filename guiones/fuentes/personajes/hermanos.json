@@ -1,0 +1,189 @@
+{
+  "id": "hermanos",
+  "nombre": "Los hermanos de José (los diez)",
+  "personas": [
+    "Reuben_1",
+    "Simeon_1",
+    "Levi_1",
+    "Judah_1",
+    "Issachar_1",
+    "Zebulun_1",
+    "Dan_1",
+    "Naphtali_1",
+    "Gad_1",
+    "Asher_1"
+  ],
+  "pasajes": [
+    "gn-98"
+  ],
+  "element": {
+    "nombre": "HERMANOS_GRUPO",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo de diez hombres; Rubén y Judá deben reconocerse. No hablan en gn-98: «sus hermanos no pudieron responderle» (45:3) y «después sus hermanos hablaron con él» (45:15) no dan sus palabras. Si Cinema Studio no mantiene diez caras en un solo Element, crear Elements aparte para Rubén y Judá (no verificado).",
+  "miembros": [
+    {
+      "persona": "Reuben_1",
+      "nombre": "Rubén",
+      "rol_visual": "El mayor: el de más edad, barba con canas; reconocible por la edad (interpretación del ilustrador)"
+    },
+    {
+      "persona": "Judah_1",
+      "nombre": "Judá",
+      "rol_visual": "El que habló por todos en Gn 44: delante del grupo, más cerca de José; manto rojizo distintivo (interpretación del ilustrador)"
+    },
+    {
+      "persona": "Simeon_1",
+      "nombre": "Simeón",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Levi_1",
+      "nombre": "Leví",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Issachar_1",
+      "nombre": "Isacar (Issachâr)",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Zebulun_1",
+      "nombre": "Zabulón",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Dan_1",
+      "nombre": "Dan",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Naphtali_1",
+      "nombre": "Neftalí (Nephtalí)",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Gad_1",
+      "nombre": "Gad",
+      "rol_visual": "Sin rasgos en el texto"
+    },
+    {
+      "persona": "Asher_1",
+      "nombre": "Aser",
+      "rol_visual": "Sin rasgos en el texto"
+    }
+  ],
+  "edades": [
+    {
+      "dato": "Todos mayores que José: unos cuarenta a cuarenta y cinco años en Gn 45; Rubén el mayor",
+      "certeza": "inferido",
+      "nota": "Unos cuarenta a cuarenta y cinco (Inferido de Gn 29:18–30:24 y 31:41): Jacob sirve siete años antes de casarse con Lea, y José nace cuando Jacob pide irse al cumplir los catorce años de servicio por sus dos hijas; los diez nacen en ese intervalo, así que Rubén le lleva a José como mucho unos 7 años. Con José en unos 39 (Cálculo), los diez rondan 39–46. El texto no da sus edades; las canas de Rubén son interpretación del ilustrador.",
+      "base": [
+        {
+          "ref": "Gn 29:20",
+          "cita": "Así sirvió Jacob por Rachêl siete años"
+        },
+        {
+          "ref": "Gn 29:32",
+          "cita": "Y concibió Lea, y parió un hijo, y llamó su nombre Rubén"
+        },
+        {
+          "ref": "Gn 30:25",
+          "cita": "cuando Rachêl hubo parido á José"
+        },
+        {
+          "ref": "Gn 31:41",
+          "cita": "catorce años te serví por tus dos hijas"
+        },
+        {
+          "ref": "Gn 35:23",
+          "cita": "Rubén el primogénito de Jacob"
+        },
+        {
+          "ref": "Gn 43:33",
+          "cita": "el mayor conforme á su mayoría, y el menor conforme á su menoría"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Diez hermanos bajaron a Egipto la primera vez",
+      "certeza": "texto",
+      "ref": "Gn 42:3",
+      "cita": "descendieron los diez hermanos de José"
+    },
+    {
+      "rasgo": "Se presentan como doce hermanos, hijos de un varón de Canaán",
+      "certeza": "texto",
+      "ref": "Gn 42:13",
+      "cita": "Tus siervos somos doce hermanos, hijos de un varón en la tierra de Canaán"
+    },
+    {
+      "rasgo": "Judá encabeza el grupo y habla por todos ante José",
+      "certeza": "texto",
+      "ref": "Gn 44:14",
+      "cita": "llegó Judá con sus hermanos á casa de José"
+    },
+    {
+      "rasgo": "Judá se acerca a José a suplicar",
+      "certeza": "texto",
+      "ref": "Gn 44:18",
+      "cita": "Entonces Judá se llegó á él"
+    },
+    {
+      "rasgo": "En Gn 45 quedan turbados y sin poder responder",
+      "certeza": "texto",
+      "ref": "Gn 45:3",
+      "cita": "no pudieron responderle, porque estaban turbados delante de él"
+    },
+    {
+      "rasgo": "Pelo oscuro abundante, barbas puntiagudas o recortadas, piel morena oliva",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador guiada por los Aamu de Beni Hasan (A1, A2).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas o mantos de lana con franjas y dibujos de colores, algunos con un hombro descubierto; sandalias",
+      "certeza": "supuesto",
+      "nota": "Supuesto por defecto de época (Reino Medio), decisión pendiente. Contraste Reino Nuevo: los sirios de Rekhmire (A3).",
+      "referencias": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "rasgo": "Rasgaron sus vestidos al hallarse la copa y volvieron a la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 44:13",
+      "cita": "Entonces ellos rasgaron sus vestidos"
+    },
+    {
+      "rasgo": "En Gn 45 siguen con los vestidos rasgados y la ropa de viaje",
+      "certeza": "inferido",
+      "nota": "Del rasgado (44:13) a la escena en casa de José (44:14; 45:1) el texto no menciona cambio de ropa. Rasgado discreto en el borde del cuello o del manto (forma: interpretación del ilustrador).",
+      "base": [
+        {
+          "ref": "Gn 44:14",
+          "cita": "llegó Judá con sus hermanos á casa de José"
+        }
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing ten bearded men from western Asia standing in a single row, each one fully visible from head to feet. They are brothers between about forty and forty-six years old, herdsmen from Canaan in worn travelling clothes. They have olive-brown skin, dark thick hair and pointed or trimmed dark beards, and they wear knee-length wool tunics and wrapped cloaks woven with colored stripes and simple patterns, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, with leather sandals. The oldest, at the far left, has grey in his beard. The man in the center front is tall and steady and wears a reddish cloak. The other eight have clearly different faces, heights and builds.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: diez hombres barbudos de Asia occidental en una fila, de cuerpo entero. Hermanos de unos cuarenta a cuarenta y seis años, pastores de Canaán con ropa de viaje gastada; piel morena oliva, pelo oscuro abundante, barbas oscuras; túnicas hasta la rodilla y mantos de lana con franjas y dibujos de colores al modo de los asiáticos de las tumbas egipcias del Reino Medio; sandalias. El mayor (Rubén), a la izquierda, con canas en la barba; el del centro delante (Judá), alto y firme, con manto rojizo; los otros ocho con caras, estaturas y complexiones distintas.",
+    "negativo_en": "Do not make the men identical. Do not dress them in Egyptian white linen, armor or turbans, and keep the background plain.",
+    "negativo_es": "Que no sean idénticos; sin lino blanco egipcio, armaduras ni turbantes; fondo liso."
+  }
+}

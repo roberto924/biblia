@@ -1,0 +1,20 @@
+{
+  "id": "creacion-expansion",
+  "nombre": "La expansión entre las aguas (Gn 1:6-8)",
+  "pasajes": ["gn-01"],
+  "element": {"nombre": "EXPANSION_AGUAS", "tipo": "lugar"},
+  "texto": [
+    {"dato": "Una expansión en medio de las aguas que separa aguas de aguas", "certeza": "texto", "ref": "Gn 1:6", "cita": "Haya expansión en medio de las aguas, y separe las aguas de las aguas"},
+    {"dato": "Aguas debajo y aguas sobre la expansión", "certeza": "texto", "ref": "Gn 1:7", "cita": "las aguas que estaban debajo de la expansión, de las aguas que estaban sobre la expansión"},
+    {"dato": "La expansión se llama Cielos", "certeza": "texto", "ref": "Gn 1:8", "cita": "llamó Dios á la expansión Cielos"}
+  ],
+  "rasgos": [
+    {"dato": "Un mar sin orillas abajo y, arriba, una masa de agua y nubes; entre ambos se abre un espacio claro y luminoso que se ensancha", "certeza": "interpretacion", "nota": "Interpretación del ilustrador. Cómo era la «expansión» y las «aguas sobre la expansión» tiene varias lecturas; el video no decide entre ellas y muestra solo la separación. Sin fuente de luz visible (antes del día cuarto)."}
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Paint a boundless sea with no shore below and, high above, a heavy layer of water and cloud. Between them opens a wide band of clear, luminous air, as if the waters had been gently pushed apart. The light is soft and even, and it does not come from any visible point in the sky.",
+    "prompt_es": "Un mar sin orillas abajo y, muy arriba, una capa pesada de agua y nubes; entre ambos se abre una franja ancha de aire claro y luminoso, como si las aguas se hubieran separado; luz suave y pareja sin punto de origen visible.",
+    "negativo_en": "Do not show any sun, moon, stars or planets, and no land, plants, animals or figures.",
+    "negativo_es": "Sin sol, luna, estrellas ni planetas; sin tierra, plantas, animales ni figuras."
+  }
+}
