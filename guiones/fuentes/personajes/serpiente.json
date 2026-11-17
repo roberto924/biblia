@@ -1,0 +1,66 @@
+{
+  "id": "serpiente",
+  "nombre": "La serpiente",
+  "personas": [],
+  "sin_persona": "No es una persona de datos/biblia.js: el texto la presenta como un animal del campo. Para que hable en gn-05 (Gn 3:1 y 3:4-5), el guion necesitará admitir una voz que no es persona; hoy guiones.py solo da voz a personas.",
+  "pasajes": [
+    "gn-05",
+    "gn-06"
+  ],
+  "element": {
+    "nombre": "SERPIENTE",
+    "tipo": "personaje (animal)"
+  },
+  "nota": "Génesis la cuenta entre los animales del campo (Gn 3:1, 3:14) y nada más: no la identifica con nadie. La hoja no añade nada a eso (ni rasgos humanos, ni alas, ni cuernos). La fruta no aparece en la hoja.",
+  "rasgos": [
+    {
+      "rasgo": "Hecha por Dios; más astuta que todos los animales del campo",
+      "certeza": "texto",
+      "ref": "Gn 3:1",
+      "cita": "la serpiente era astuta, más que todos los animales del campo que Jehová Dios había hecho"
+    },
+    {
+      "rasgo": "Habla con la mujer",
+      "certeza": "texto",
+      "ref": "Gn 3:4",
+      "cita": "Entonces la serpiente dijo á la mujer: No moriréis"
+    },
+    {
+      "rasgo": "La mujer dice que la engañó",
+      "certeza": "texto",
+      "ref": "Gn 3:13",
+      "cita": "La serpiente me engañó, y comí"
+    },
+    {
+      "rasgo": "La sentencia la cuenta entre las bestias y los animales del campo",
+      "certeza": "texto",
+      "ref": "Gn 3:14",
+      "cita": "maldita serás entre todas las bestias y entre todos los animales del campo"
+    },
+    {
+      "rasgo": "Sentencia: andará sobre su pecho y comerá polvo",
+      "certeza": "texto",
+      "ref": "Gn 3:14",
+      "cita": "sobre tu pecho andarás, y polvo comerás todos los días de tu vida"
+    },
+    {
+      "rasgo": "Forma antes de la sentencia: serpiente común, sin patas, con la parte delantera del cuerpo erguida",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto no dice qué forma tenía antes de Gn 3:14 ni si la sentencia la cambió. No se le dibujan patas: sería añadir lo que el texto no dice. Erguirla al hablar es un recurso de puesta en escena."
+    },
+    {
+      "rasgo": "Especie, tamaño y color: ninguna especie reconocible; unos dos metros; escamas verde oliva con el vientre ocre",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da especie, tamaño ni color. Se evita la cobra con capucha para no sugerir Egipto."
+    }
+  ],
+  "voz": {
+    "descripcion": "Voz suave, tranquila y amable, sin siseo ni tono de villano: es astuta (Gn 3:1), y la astucia no se anuncia. Gn 3:1: pregunta con aparente curiosidad. Gn 3:4-5: afirma con seguridad. Decisión pendiente del usuario (n.º 13 de guiones/LEEME.md): voz propia o leída por el narrador, como la voz de Dios."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make an animal reference sheet on a plain light grey background, showing the same snake three times side by side: a close view of its head and neck, a view of its whole body resting in loose coils, and a view with the front third of its body raised upright from the coils as if listening. It is a slender snake about two meters long of no recognizable modern species, with smooth olive-green scales, a pale ochre belly, a narrow head, round dark watchful eyes and a closed mouth. It looks like a real animal, alert and intelligent, drawn in the same house style as the people.",
+    "prompt_es": "Hoja de referencia de un animal sobre fondo gris claro liso: la misma serpiente tres veces (cabeza y cuello de cerca, cuerpo entero enroscado sin apretar, y el tercio delantero erguido sobre los anillos como si escuchara). Serpiente esbelta de unos dos metros, de ninguna especie moderna reconocible, escamas lisas verde oliva, vientre ocre claro, cabeza estrecha, ojos redondos oscuros y atentos, boca cerrada. Parece un animal real, despierto e inteligente, en el mismo estilo que las personas.",
+    "negativo_en": "Do not give the snake a human face, arms, legs, horns, a crown or a cobra hood, and do not make it a dragon. Do not show fangs, an open mouth or a forked tongue flicking out, and do not make it look like a cartoon villain. Do not paint a tree, a branch, fruit or any person, and keep the background plain.",
+    "negativo_es": "Sin rostro humano, brazos, patas, cuernos, corona ni capucha de cobra; que no sea un dragón; sin colmillos, boca abierta ni lengua fuera; que no parezca villano de dibujos; sin árbol, rama, fruta ni personas; fondo liso."
+  }
+}

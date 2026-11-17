@@ -1,0 +1,164 @@
+{
+  "id": "familia-noe",
+  "nombre": "La familia de Noé (su mujer, sus tres hijos y las mujeres de sus hijos)",
+  "personas": [
+    "Esposa_de_Noe",
+    "Shem_1",
+    "Ham_1",
+    "Japheth_1",
+    "Esposa_de_Sem",
+    "Esposa_de_Cam",
+    "Esposa_de_Jafet"
+  ],
+  "pasajes": [
+    "gn-12",
+    "gn-14",
+    "gn-15",
+    "gn-17",
+    "gn-18",
+    "gn-19",
+    "gn-20"
+  ],
+  "element": {
+    "nombre": "FAMILIA_NOE",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo de siete; Noé tiene su propia hoja (NOE). Ninguno tiene palabras propias en Gn 6–9: Cam se lo cuenta a sus hermanos (Gn 9:22), pero el texto no da lo que dijo, así que se le ve hablar sin audio. El texto no nombra a las cuatro mujeres ni dice nada de su aspecto. Si Cinema Studio no mantiene siete caras en un solo Element, crear Elements aparte para Sem, Cam y Jafet (no verificado).",
+  "miembros": [
+    {
+      "persona": "Esposa_de_Noe",
+      "nombre": "La mujer de Noé",
+      "rol_visual": "Mujer mayor, de pelo cano recogido; el texto no da su nombre ni su aspecto (interpretación del ilustrador)"
+    },
+    {
+      "persona": "Shem_1",
+      "nombre": "Sem",
+      "rol_visual": "Manto de color ocre; sin rasgos en el texto (interpretación del ilustrador)"
+    },
+    {
+      "persona": "Ham_1",
+      "nombre": "Cam (Châm)",
+      "rol_visual": "Manto de color oliva; el de aspecto más joven de los tres (inferido de Gn 9:22-24); sin más rasgos en el texto"
+    },
+    {
+      "persona": "Japheth_1",
+      "nombre": "Jafet (Japhet)",
+      "rol_visual": "Manto de color terracota; sin rasgos en el texto (interpretación del ilustrador)"
+    },
+    {
+      "persona": "Esposa_de_Sem",
+      "nombre": "La mujer de Sem",
+      "rol_visual": "Sin nombre ni rasgos en el texto"
+    },
+    {
+      "persona": "Esposa_de_Cam",
+      "nombre": "La mujer de Cam",
+      "rol_visual": "Sin nombre ni rasgos en el texto"
+    },
+    {
+      "persona": "Esposa_de_Jafet",
+      "nombre": "La mujer de Jafet",
+      "rol_visual": "Sin nombre ni rasgos en el texto"
+    }
+  ],
+  "edades": [
+    {
+      "dato": "Sem tenía unos 98 años cuando vino el diluvio",
+      "certeza": "calculo",
+      "valor": 98,
+      "nota": "Gn 11:10 es posterior a estos pasajes (gn-25): sirve para dirigir, no se cita en el video.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 98,
+        "pasos": [
+          {
+            "texto": "Edad de Sem cuando engendró a Arfaxad",
+            "valor": 100,
+            "ref": "Gn 11:10",
+            "cita": "Sem, de edad de cien años, engendró á Arphaxad"
+          },
+          {
+            "texto": "Años que habían pasado desde el diluvio",
+            "valor": 2,
+            "ref": "Gn 11:10",
+            "cita": "dos años después del diluvio"
+          }
+        ],
+        "supuestos": [
+          "«Después del diluvio» se cuenta desde que empezó (año seiscientos de Noé, Gn 7:11); si se cuenta desde que se secó la tierra (año seiscientos uno, Gn 8:13-14), Sem tenía unos 97 al empezar",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Cam es «el más joven» de los tres",
+      "certeza": "inferido",
+      "nota": "Gn 9:24 habla de «su hijo el más joven» sin nombrarlo; quien había visto a su padre era Cam (9:22), y por eso se entiende que es él. La hoja lo dibuja como el de aspecto más joven.",
+      "base": [
+        {
+          "ref": "Gn 9:22",
+          "cita": "Châm, padre de Canaán, vió la desnudez de su padre"
+        },
+        {
+          "ref": "Gn 9:24",
+          "cita": "lo que había hecho con él su hijo el más joven"
+        }
+      ]
+    },
+    {
+      "dato": "Edad visual de los tres hijos: hombres adultos en plenitud, de unos treinta y cinco a cuarenta y cinco años de aspecto; sus mujeres, algo más jóvenes",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. Nacen después de que Noé cumple quinientos años (Gn 5:32), así que rondan el siglo cuando viene el diluvio; el texto no dice qué aspecto tenía alguien de esa edad, y ellos tienen hijos después (Gn 10:1). De las mujeres el texto no da edad."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Tres hijos: Sem, Cam y Jafet",
+      "certeza": "texto",
+      "ref": "Gn 6:10",
+      "cita": "engendró Noé tres hijos: á Sem, á Châm, y á Japhet"
+    },
+    {
+      "rasgo": "Entran juntos en el arca Noé, sus tres hijos, su mujer y las tres mujeres de sus hijos",
+      "certeza": "texto",
+      "ref": "Gn 7:13",
+      "cita": "entró Noé, y Sem y Châm y Japhet, hijos de Noé, la mujer de Noé, y las tres mujeres de sus hijos con él en el arca"
+    },
+    {
+      "rasgo": "Salen del arca todos juntos",
+      "certeza": "texto",
+      "ref": "Gn 8:18",
+      "cita": "salió Noé, y sus hijos, y su mujer, y las mujeres de sus hijos con él"
+    },
+    {
+      "rasgo": "De los tres hijos se pobló toda la tierra",
+      "certeza": "texto",
+      "ref": "Gn 9:19",
+      "cita": "de ellos fué llena toda la tierra"
+    },
+    {
+      "rasgo": "Parecido de familia entre los tres hermanos y con Noé; piel morena, pelo y barbas oscuros",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: son hijos de Noé (Gn 6:10); el texto no describe a ninguno. Se distinguen por la estatura, la barba y el color del manto, que no significan nada; solo la edad de Cam tiene base en el texto (Gn 9:24)."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Existe ropa: Sem y Jafet toman «la ropa» y la llevan sobre los hombros",
+      "certeza": "texto",
+      "ref": "Gn 9:23",
+      "cita": "Sem y Japhet tomaron la ropa, y la pusieron sobre sus propios hombros"
+    },
+    {
+      "rasgo": "Túnicas de lana lisa sin teñir y mantos lisos de color apagado; las mujeres, vestido largo y velo sencillo sobre el pelo; sandalias",
+      "certeza": "supuesto",
+      "nota": "Supuesto: el texto no describe la ropa de ninguno ni fecha el diluvio, así que no hay referencia de época comprobada que aplicar. Que la ropa sea de lana tejida es parte del supuesto: el texto solo dice «la ropa». Lana lisa, sin las franjas de colores de Beni Hasan, que el proyecto usa para la gente de Asia occidental en la historia de José (gn-98)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing seven people standing in a single row, each one fully visible from head to feet: one older woman, three men and three younger women. The older woman, at the far left, has grey hair gathered under a plain cream head cloth and a kind, lined face. The three men are brothers in their prime with a clear family resemblance, brown skin, dark hair and dark beards, and clearly different heights and builds; the first wears an ochre cloak, the second, who is visibly the youngest of the three, an olive-green cloak, and the third a terracotta cloak over plain tunics of undyed wool that reach below the knee. The three younger women have brown skin and dark hair under simple head cloths, clearly different faces, and long plain wool dresses in muted cream, sand and brown. Everyone wears simple leather sandals and stands calmly with empty hands.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: siete personas en una fila, de cuerpo entero: una mujer mayor, tres hombres y tres mujeres más jóvenes. La mujer mayor, a la izquierda, con pelo cano recogido bajo un paño crudo y rostro bondadoso con arrugas. Los tres hombres son hermanos en plenitud, con aire de familia, piel morena, pelo y barbas oscuros, y estaturas y complexiones distintas; el primero con manto ocre, el segundo, que se ve el más joven de los tres, con manto oliva, y el tercero con manto terracota sobre túnicas lisas de lana sin teñir por debajo de la rodilla. Las tres mujeres jóvenes, de piel morena y pelo oscuro bajo paños sencillos, con caras distintas y vestidos largos lisos de lana en crudo, arena y pardo. Todos con sandalias de cuero sencillas, tranquilos y con las manos vacías.",
+    "negativo_en": "Do not make the three men identical, and do not make any of them look old or like a boy. Do not give anyone striped or brightly dyed cloth, jewelry, a turban, armor or tools. Do not paint a boat or animals, and keep the background plain.",
+    "negativo_es": "Los tres hombres no son idénticos, ni viejos ni niños; sin telas de franjas ni colores vivos, joyas, turbantes, armaduras ni herramientas; sin barco ni animales; fondo liso."
+  }
+}

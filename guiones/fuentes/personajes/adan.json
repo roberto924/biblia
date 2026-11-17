@@ -1,0 +1,117 @@
+{
+  "id": "adan",
+  "nombre": "Adán (Adam)",
+  "personas": [
+    "Adam_1"
+  ],
+  "pasajes": [
+    "gn-02",
+    "gn-03",
+    "gn-04",
+    "gn-05",
+    "gn-06",
+    "gn-07",
+    "gn-09",
+    "gn-10"
+  ],
+  "element": {
+    "nombre": "ADAN",
+    "tipo": "personaje"
+  },
+  "nota": "Una sola hoja para todo Gn 1–4: fija el rostro y la complexión, y lo viste con la túnica de pieles de Gn 3:21, que es la única ropa que el texto le da. Antes de 3:21 (de gn-02 a gn-06, hasta Gn 3:20) la desnudez de Gn 2:25 no se muestra nunca: la toma lo encuadra de hombros arriba o lo cubre con la vegetación del huerto, y desde 3:7 con el delantal de hojas de higuera (decisión pendiente del usuario, n.º 12 de guiones/LEEME.md; es la propuesta por defecto y vale igual para el perfil niño). La RV1909 escribe «Adam».",
+  "edades": [
+    {
+      "dato": "Adulto desde que es formado: el texto no cuenta infancia",
+      "certeza": "inferido",
+      "nota": "Recién formado ya recibe un trabajo y pone nombre a los animales. El texto no da su edad en el huerto; la edad visual (unos treinta años) es interpretación del ilustrador.",
+      "base": [
+        {
+          "ref": "Gn 2:15",
+          "cita": "le puso en el huerto de Edén, para que lo labrara y lo guardase"
+        },
+        {
+          "ref": "Gn 2:20",
+          "cita": "puso Adam nombres á toda bestia y ave de los cielos"
+        }
+      ]
+    },
+    {
+      "dato": "Tenía ciento treinta años cuando nació Set",
+      "certeza": "texto",
+      "ref": "Gn 5:3",
+      "cita": "Y vivió Adam ciento y treinta años, y engendró [un hijo] á su semejanza, conforme á su imagen, y llamó su nombre Seth"
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Formado del polvo de la tierra",
+      "certeza": "texto",
+      "ref": "Gn 2:7",
+      "cita": "Formó, pues, Jehová Dios al hombre del polvo de la tierra"
+    },
+    {
+      "rasgo": "El ser humano, varón y hembra, es criado a imagen de Dios",
+      "certeza": "texto",
+      "ref": "Gn 1:27",
+      "cita": "á imagen de Dios lo crió; varón y hembra los crió",
+      "nota": "Gn 1:27 habla del «hombre» como varón y hembra, sin nombre propio. Que ese varón es Adán se infiere de Gn 5:1-2, que repite la frase y da el nombre."
+    },
+    {
+      "rasgo": "Puesto en el huerto para labrarlo y guardarlo",
+      "certeza": "texto",
+      "ref": "Gn 2:15",
+      "cita": "le puso en el huerto de Edén, para que lo labrara y lo guardase"
+    },
+    {
+      "rasgo": "Tras la sentencia, trabaja la tierra con esfuerzo",
+      "certeza": "texto",
+      "ref": "Gn 3:19",
+      "cita": "En el sudor de tu rostro comerás el pan"
+    },
+    {
+      "rasgo": "Sacado del huerto para labrar la tierra",
+      "certeza": "texto",
+      "ref": "Gn 3:23",
+      "cita": "para que labrase la tierra de que fué tomado"
+    },
+    {
+      "rasgo": "Rostro, color de piel, pelo y barba",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Se dibuja con piel morena, ojos y pelo oscuros y barba corta, como la gente del Próximo Oriente antiguo que pide el estilo; complexión fuerte, de quien trabaja la tierra."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "En el huerto, desnudo y sin vergüenza (no se muestra: ver la nota de la ficha)",
+      "certeza": "texto",
+      "ref": "Gn 2:25",
+      "cita": "estaban ambos desnudos, Adam y su mujer, y no se avergonzaban"
+    },
+    {
+      "rasgo": "Después de comer, delantal de hojas de higuera cosidas",
+      "certeza": "texto",
+      "ref": "Gn 3:7",
+      "cita": "cosieron hojas de higuera, y se hicieron delantales"
+    },
+    {
+      "rasgo": "Túnica de pieles, hecha por Dios",
+      "certeza": "texto",
+      "ref": "Gn 3:21",
+      "cita": "hizo al hombre y á su mujer túnicas de pieles, y vistiólos"
+    },
+    {
+      "rasgo": "Forma de la túnica: piel curtida de color pardo, sin mangas, hasta la rodilla, ceñida con una tira de cuero; descalzo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo dice «túnicas de pieles»; no dice de qué animal, su largo ni su forma, ni nombra calzado."
+    }
+  ],
+  "voz": {
+    "descripcion": "Hombre adulto, voz media y clara, español neutro. Gn 2:23: asombro y alegría al ver a la mujer. Gn 3:10: miedo, casi en voz baja. Gn 3:12: a la defensiva, sin gritar. Pronuncia tal cual las formas antiguas («Varona», «escondíme»). Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a strong, healthy adult man of about thirty, the first man, who works the soil with his hands. He has brown skin, dark eyes, thick dark hair that reaches the nape of his neck and a short dark beard, and an open, thoughtful face. In all three views he wears the same plain sleeveless tunic made of tanned brown animal hide that covers his chest and shoulders, reaches his knees and is tied at the waist with a strip of leather. He stands barefoot with a calm, upright posture and empty hands.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre adulto, fuerte y sano, de unos treinta años, el primer hombre, que trabaja la tierra con las manos; piel morena, ojos oscuros, pelo oscuro abundante hasta la nuca y barba corta; rostro abierto y pensativo. En las tres vistas lleva la misma túnica sencilla sin mangas de piel curtida parda, que le cubre pecho y hombros, llega a la rodilla y se ciñe con una tira de cuero. Descalzo, postura serena, manos vacías.",
+    "negativo_en": "Do not show him unclothed or bare-chested in any view. Do not give him woven cloth, sandals, jewelry, tools, weapons or a fig leaf. Do not make him look like a caveman with a club or wild matted hair, and keep the background plain.",
+    "negativo_es": "Nunca desnudo ni con el torso descubierto; sin tela tejida, sandalias, joyas, herramientas, armas ni hoja de higuera; que no parezca un cavernícola con garrote ni pelo enmarañado; fondo liso."
+  }
+}

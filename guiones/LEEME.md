@@ -223,6 +223,18 @@ registro esté completo; y propone cambios en las fuentes JSON.
 9. **ChatGPT Images o GPT Image en Higgsfield** para las imágenes: comparar en el piloto.
 10. Si los videos y las imágenes se guardan en git o fuera del repositorio.
 11. Cómo se integra el video en la app (no implementado).
+12. **Desnudez de Gn 2:25** (Adán y Eva antes de 3:21): propuesta por defecto, nunca explícita en ningún perfil. Las
+    hojas fijan el rostro y los visten con la túnica de pieles de 3:21; las tomas anteriores encuadran de hombros
+    arriba o cubren con la vegetación, y desde 3:7 con el delantal de hojas de higuera.
+13. **Voz de la serpiente** (Gn 3:1, 3:4-5): voz propia o leída por el narrador. Para darle voz propia, `guiones.py`
+    tiene que admitir una voz que no es persona de `datos/biblia.js`.
+14. **Querubines y espada encendida** (Gn 3:24): sin hoja todavía. El texto no describe a los querubines y el
+    negativo general del estilo prohíbe alas; darles forma pide una decisión y, si llevan alas, una versión nueva
+    del estilo.
+15. **Ropa de Gn 4–9**: supuesto por defecto sin referencia de época (el texto no fecha estos relatos): pieles para
+    Caín y Abel, como sus padres; lana lisa sin teñir para Noé y su familia.
+16. **Altar de Noé en el catálogo de juego**: tiene hoja (`objetos/altar-noe`) pero no es objeto en
+    `herramientas/juego/Gn.json`, donde el primer altar es el de Abram.
 
 ## Pendiente del proyecto (fuera de los guiones)
 
