@@ -35,6 +35,7 @@ fijar_raiz(pathlib.Path(__file__).resolve().parent.parent)
 
 APP = "biblia"
 ORIGEN_VIEJO = "codex directo (2026-11-16)"
+HOJAS = ("personajes", "objetos", "escenarios")  # carpetas de fichas con hoja de referencia, en este orden
 NO_REPETIR = ("Use the attached style reference panels only for line work, cel shading and palette: do not reuse "
               "their composition, objects, trees, buildings or layout.")
 
@@ -73,6 +74,7 @@ def lamina(nombre):
 
 def sin_laminas(esc_id):
     """Archivos de lámina patrón que el escenario `esc_id` no adjunta (`sin_laminas`), ni sus tomas.
+    Un objeto también puede apartar láminas en su propia hoja; en las tomas manda el escenario.
 
     Un paisaje que copia la composición de la lámina 1 se genera solo con las demás (2026-11-17)."""
     try:
@@ -103,23 +105,24 @@ def pendientes(E):
                       bloqueo=None if all(refs) else "faltan láminas anteriores"))
     estilo = [lamina(x["archivo"]) for x in lams]
     est_ok = all(estilo)
-    for carpeta in ("personajes", "escenarios"):
+    for carpeta in HOJAS:
         for f in sorted((F / carpeta).glob("*.json")):
             x = leer(f)
             h = x["hoja_referencia"]
-            fuera = set(x.get("sin_laminas") or []) if carpeta == "escenarios" else set()
+            fuera = set(x.get("sin_laminas") or []) if carpeta != "personajes" else set()
             T.append(dict(id=f"{carpeta}/{x['id']}", destino=IMG / carpeta / f"{x['id']}.png", hoja=True,
                           prompt=prompt_imagen(E, h["prompt_en"], h.get("negativo_en", "")),
                           refs=[p for p, L in zip(estilo, lams) if L["archivo"] not in fuera],
                           bloqueo=None if est_ok else "faltan láminas patrón"))
     for f in sorted(F.glob("*/*.json")):
-        if f.parent.name in ("personajes", "escenarios"):
+        if f.parent.name in HOJAS:
             continue
         g = leer(f)
         for es in g["escenas"]:
             for t in es["tomas"]:
                 hojas = [IMG / "personajes" / f"{p}.png" for p in t.get("personajes", [])]
-                hojas.append(IMG / "escenarios" / f"{t['escenario']}.png")
+                hojas += [IMG / "objetos" / f"{o}.png" for o in t.get("objetos", [])]
+                hojas.append(IMG / "escenarios" / f"{t['escenario']}.png")  # la del escenario, siempre la última
                 falta = [h.stem for h in hojas if not h.exists()]
                 fuera = sin_laminas(t["escenario"])
                 T.append(dict(id=f"{g['libro']}/{g['id']}-{t['id']}", hoja=False,
@@ -133,10 +136,11 @@ def pendientes(E):
 # --------------------------------------------------------------------------- el pedido
 def texto_pedido(t, instr):
     """Instrucciones de dirección de arte + NO_REPETIR + el prompt de `t`. Lo propio de Codex lo pone capa-ia."""
-    formato = ("a character or place reference sheet on a plain light grey background, landscape 16:9"
+    formato = ("a character, object or place reference sheet on a plain light grey background, landscape 16:9"
                if t["hoja"] else "landscape 16:9, the widest landscape size available")
     hojas = ("" if t["hoja"] or t["id"].startswith("estilo/") else
-             "\nThe attached character and place reference sheets fix identity, dress and architecture.")
+             "\nThe attached character, object and place reference sheets fix identity, dress, props and "
+             "architecture.")
     return f"""Standing art-direction instructions:
 <<<
 {instr}
@@ -381,7 +385,7 @@ def copia_temporal(prefijo="imagenes prueba é ", origen=None):
 
     Copia de `origen` (el repo por defecto) solo lo que es texto versionado: guiones/fuentes, guiones/estilo.md, el
     registro viejo y sus prompts congelados. Las imágenes NO se copian: se escriben PNG falsos de TAM_FIXTURE para
-    cada lámina (la 2 siempre como `-codex`, la provisional), cada hoja de personaje y de escenario; ninguna toma ni
+    cada lámina (la 2 siempre como `-codex`, la provisional), cada hoja de personaje, objeto y escenario; ninguna toma ni
     `_anteriores`. Así aprobar la lámina 2, generar tomas o regenerar hojas en el repo no cambia el fixture.
     """
     origen = pathlib.Path(origen) if origen else pathlib.Path(__file__).resolve().parent.parent
@@ -397,7 +401,7 @@ def copia_temporal(prefijo="imagenes prueba é ", origen=None):
     E = leer(g / "fuentes" / "estilo.json")
     destinos = [g / "imagenes" / "estilo" / (L["archivo"][:-4] + "-codex.png" if i == 1 else L["archivo"])
                 for i, L in enumerate(E["laminas_patron"])]
-    for carpeta in ("personajes", "escenarios"):
+    for carpeta in HOJAS:
         destinos += [g / "imagenes" / carpeta / f"{leer(f)['id']}.png"
                      for f in sorted((g / "fuentes" / carpeta).glob("*.json"))]
     for p in destinos:
@@ -499,7 +503,7 @@ def autoprueba():
         fijar_raiz(tmp)
         E = leer(F / "estilo.json")
         T = pendientes(E)
-        tomas = [t for t in T if not t["id"].startswith(("estilo/", "personajes/", "escenarios/"))]
+        tomas = [t for t in T if not t["id"].startswith(("estilo/",) + tuple(c + "/" for c in HOJAS))]
         comprobar(tomas and all(png(t["destino"]) == TAM_FIXTURE for t in T if t["destino"].exists())
                   and not any(t["destino"].exists() for t in tomas), "fixture: PNG falsos de tamaño conocido")
         # se quita la hoja de escenario de la primera toma: esa toma queda bloqueada hasta que se genere
@@ -602,7 +606,7 @@ def autoprueba():
         antes = list(_reconstruir(_filas_viejas()))
         viejos = {k.split(" ", 1)[1] for k in antes}
         objetivo = next(i for i in ("personajes/jose", *sorted(viejos))
-                        if i in viejos and i.startswith(("personajes/", "escenarios/")))
+                        if i in viejos and i.startswith(tuple(c + "/" for c in HOJAS)))
         carpeta, nombre = objetivo.split("/")
         fj = F / carpeta / f"{nombre}.json"
         x = leer(fj)
@@ -631,7 +635,7 @@ def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("--generar", type=int, default=0, help="cuántas imágenes generar (0 = solo listar)")
-    ap.add_argument("--solo", help="prefijo de id (estilo/, personajes/, escenarios/, Gn/…)")
+    ap.add_argument("--solo", help="prefijo de id (estilo/, personajes/, objetos/, escenarios/, Gn/…)")
     ap.add_argument("--autoprueba", action="store_true")
     ap.add_argument("--congelar-prompts-v1", action="store_true",
                     help="guarda en guiones/registro/imagenes-prompts-v1.json los prompts del 16-nov reconstruibles")

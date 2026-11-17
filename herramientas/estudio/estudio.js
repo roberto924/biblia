@@ -5,8 +5,8 @@
 (() => {
   // Estimación del lote del 16-nov (≈ 0,2 % de la semana de Codex por imagen); capa-ia mide el gasto real.
   const COSTO_IMAGEN = 0.2;
-  const VISTAS = { resumen: 'Resumen', estilo: 'Estilo', personajes: 'Personajes', escenarios: 'Escenarios', tomas: 'Tomas', cola: 'Cola y registro' };
-  const GRUPOS = [['estilo', 'Estilo (láminas patrón)'], ['personajes', 'Personajes'], ['escenarios', 'Escenarios'], ['tomas', 'Tomas']];
+  const VISTAS = { resumen: 'Resumen', estilo: 'Estilo', personajes: 'Personajes', objetos: 'Objetos', escenarios: 'Escenarios', tomas: 'Tomas', cola: 'Cola y registro' };
+  const GRUPOS = [['estilo', 'Estilo (láminas patrón)'], ['personajes', 'Personajes'], ['objetos', 'Objetos'], ['escenarios', 'Escenarios'], ['tomas', 'Tomas']];
   const PAGINA = 50;
 
   let datos = null;      // /api/datos
@@ -96,7 +96,7 @@
     if (!datos) return [];
     const tomas = [];
     for (const p of datos.pasajes || []) for (const e of p.escenas) for (const t of e.tomas) tomas.push(t);
-    return [...(datos.laminas || []), ...(datos.personajes || []), ...(datos.escenarios || []), ...tomas];
+    return [...(datos.laminas || []), ...(datos.personajes || []), ...(datos.objetos || []), ...(datos.escenarios || []), ...tomas];
   }
   const porId = () => new Map(todos().map((x) => [x.id, x]));
   const delGrupo = (g) => todos().filter((x) => x.grupo === g);
@@ -247,7 +247,7 @@
         h('button', { type: 'button', class: 'boton', onclick: cargar }, 'Reintentar')];
     } else if (!datos) contenido = [h('p', { class: 'vacio-txt' }, 'Cargando los datos del Estudio…')];
     else contenido = ({ resumen: vResumen, estilo: () => vGrupo('estilo'), personajes: () => vGrupo('personajes'),
-      escenarios: () => vGrupo('escenarios'), tomas: vTomas, cola: vCola })[vista]();
+      objetos: () => vGrupo('objetos'), escenarios: () => vGrupo('escenarios'), tomas: vTomas, cola: vCola })[vista]();
     main.replaceChildren(...[contenido].flat(Infinity).filter((x) => x != null && x !== false));
     if (clave) {
       const el = main.querySelector(`[data-k="${CSS.escape(clave)}"]`);
@@ -346,7 +346,7 @@
     const nCon = (p) => p.escenas.reduce((s, e) => s + e.tomas.filter((t) => t.imagen).length, 0);
     return [
       h('div', { class: 'barra' }, h('h2', null, 'Tomas'), botonesGenerar(lista)),
-      h('p', { class: 'meta' }, 'Por libro → pasaje → escena → toma. Una toma queda bloqueada hasta que existen las hojas de sus personajes y su escenario.'),
+      h('p', { class: 'meta' }, 'Por libro → pasaje → escena → toma. Una toma queda bloqueada hasta que existen las hojas de sus personajes, sus objetos y su escenario.'),
       libros.size ? [...libros].map(([libro, pasajes]) => desplegable(`libro-${libro}`,
         [libro, h('span', { class: 'meta' }, `${pasajes.length} pasaje${pasajes.length === 1 ? '' : 's'}`)],
         pasajes.map((p) => desplegable(`pasaje-${p.id}`,

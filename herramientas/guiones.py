@@ -12,6 +12,7 @@ Fuentes (en DIR):
   referencias.json            {id: referencia de época}; solo las de «comprobado: true» pueden usarse
   personajes/<id>.json        ficha de personaje (Element de Cinema Studio); id = nombre del archivo
   escenarios/<id>.json        ficha de escenario (Element); id = nombre del archivo
+  objetos/<id>.json           ficha de objeto (Element); id = nombre del archivo (el del catálogo de juego, si está)
   <Libro>/<pasaje>.json       guion = un video completo del pasaje (<pasaje>.mp4); id = id del pasaje en biblia.js
 
 Un guion cubre su pasaje entero: inicio y fin iguales a los de `pasajes` en datos/biblia.js; cada versículo se
@@ -22,7 +23,7 @@ nombrada en ese versículo o en el pasaje, y fin literal del discurso. Toda `cit
 exacta del versículo. Toda `certeza` es una de CERTEZAS, con sus campos obligatorios.
 
 Salidas (en DIR de salida): <Libro>/<pasaje>.md (hoja de rodaje y montaje), <Libro>/<pasaje>.narracion.txt,
-personajes/<id>.md, escenarios/<id>.md. Si hay errores los imprime (archivo · id · campo) y sale con código 1
+personajes/<id>.md, escenarios/<id>.md, objetos/<id>.md. Si hay errores los imprime (archivo · id · campo) y sale con código 1
 sin escribir nada.
 """
 import copy
@@ -265,8 +266,10 @@ def validar(F, biblia, estilo_md=None):
         if p.get("id") != pid or not ID_RE.match(pid):
             err(arch, pid, "id", "debe coincidir con el nombre del archivo (minúsculas, cifras, guiones)")
         for k in ("nombre", "personas", "element", "hoja_referencia", "rasgos"):
-            if not p.get(k):
-                err(arch, pid, k, "falta")
+            # quien no es persona en biblia.js (la serpiente) declara «sin_persona» con el motivo
+            if not p.get(k) and not (k == "personas" and p.get("sin_persona")):
+                err(arch, pid, k, "falta" + (" (o «sin_persona» con el motivo, si no está en biblia.js)"
+                                             if k == "personas" else ""))
         for per in p.get("personas") or []:
             if per not in T.personas:
                 err(arch, pid, "personas", f"persona inexistente en biblia.js: {per!r}")
@@ -282,8 +285,9 @@ def validar(F, biblia, estilo_md=None):
             elementos[el] = pid
         recorrer({k: v for k, v in p.items() if k != "hoja_referencia"}, arch, pid, "")
     S = F.get("escenarios") or {}
-    for sid, s in S.items():
-        arch = A.get(("escenario", sid), f"escenarios/{sid}.json")
+    O = F.get("objetos") or {}
+    for sid, s, tipo in [(i, x, "escenario") for i, x in S.items()] + [(i, x, "objeto") for i, x in O.items()]:
+        arch = A.get((tipo, sid), f"{tipo}s/{sid}.json")
         if s.get("id") != sid or not ID_RE.match(sid):
             err(arch, sid, "id", "debe coincidir con el nombre del archivo")
         for k in ("nombre", "element", "hoja_referencia", "texto"):
@@ -445,6 +449,9 @@ def validar(F, biblia, estilo_md=None):
                     err(arch, gid, campo + ".personajes", f"personaje inexistente {pj!r}")
             if t.get("escenario") not in S:
                 err(arch, gid, campo + ".escenario", f"escenario inexistente {t.get('escenario')!r}")
+            for ob in t.get("objetos") or []:
+                if ob not in O:
+                    err(arch, gid, campo + ".objetos", f"objeto inexistente {ob!r}")
             im = t.get("imagen") or {}
             for k in ("prompt_en", "descripcion_es"):
                 if not im.get(k):
@@ -629,16 +636,18 @@ def rotulo_ref(k):
 
 
 def creditos_guion(g, F):
-    R, P, S = F["referencias"], F["personajes"], F["escenarios"]
+    R, P, S, O = F["referencias"], F["personajes"], F["escenarios"], F.get("objetos") or {}
     ts = [t for es in g["escenas"] for t in es["tomas"]]
     usadas = sorted({r for t in ts for r in (t.get("imagen") or {}).get("referencias", [])}
                     | {r for pj in {p for t in ts for p in t.get("personajes", [])} for r in P[pj].get("referencias", [])}
+                    | {r for ob in {o for t in ts for o in t.get("objetos", [])} for r in O[ob].get("referencias", [])}
                     | {r for t in ts for r in S[t["escenario"]].get("referencias", [])})
     return [credito(rid, R[rid]) for rid in usadas]
 
 
 def hoja_guion(g, c, F):
     E, R, P, S = F["estilo"], F["referencias"], F["personajes"], F["escenarios"]
+    O = F.get("objetos") or {}
     k = c[g["id"]]
     m = g["montaje"]
     filas = {f["toma"]: f for f in k["filas"]}
@@ -707,7 +716,8 @@ def hoja_guion(g, c, F):
             n += 1
             f = filas[t["id"]]
             esc = S[t["escenario"]]
-            elems = [P[p]["element"]["nombre"] for p in t.get("personajes", [])] + [esc["element"]["nombre"]]
+            elems = ([P[p]["element"]["nombre"] for p in t.get("personajes", [])]
+                     + [O[o]["element"]["nombre"] for o in t.get("objetos", [])] + [esc["element"]["nombre"]])
             L += [f"### Toma {n} · {t['id']} · {t.get('titulo', '')} · {t['versiculos']}", "",
                   f"- **Nivel**: {t['nivel']} ({NIVELES[t['nivel']]}) · **perfil**: {t['perfil']} · "
                   f"**clips de 8 s**: {t['clips_8s']} declarados, {f['clips_necesarios']} para cubrir la voz",
@@ -716,8 +726,10 @@ def hoja_guion(g, c, F):
                             f"{w * 60 / k['ppm']:.1f} s" for v, w in f["por_voz"].items()),
                   "- **Personajes en cuadro**: "
                   + (", ".join(P[p]["nombre"] for p in t.get("personajes", [])) or "ninguno")
-                  + (f" · figurantes: {t['figurantes']}" if t.get("figurantes") else ""),
-                  f"- **Escenario**: {esc['nombre']}",
+                  + (f" · figurantes: {t['figurantes']}" if t.get("figurantes") else "")]
+            if t.get("objetos"):
+                L.append("- **Objetos en cuadro**: " + ", ".join(O[o]["nombre"] for o in t["objetos"]))
+            L += [f"- **Escenario**: {esc['nombre']}",
                   f"- **Elements a usar**: {', '.join('`' + e + '`' for e in elems)}",
                   f"- **Transición de entrada**: {t['transicion']}", "", "**Voz y texto**", ""]
             for pa in t["partes"]:
@@ -729,6 +741,8 @@ def hoja_guion(g, c, F):
                   "- Láminas patrón de estilo: " + laminas_md(E, esc)]
             for pj in t.get("personajes", []):
                 L.append(f"- Hoja: {P[pj]['nombre']}: `{IMAGENES}/personajes/{pj}.png`")
+            for ob in t.get("objetos", []):
+                L.append(f"- Hoja del objeto: {O[ob]['nombre']}: `{IMAGENES}/objetos/{ob}.png`")
             L.append(f"- Hoja del escenario: {esc['nombre']}: `{IMAGENES}/escenarios/{t['escenario']}.png`")
             for r in im.get("referencias", []):
                 L.append(f"- Referencia de época {r}: {R[r]['titulo']} ({R[r]['institucion']}) — {R[r]['url_imagen']}")
@@ -810,7 +824,7 @@ def hoja_ficha(x, tipo, F):
         L += ["## Voz", "", x["voz"]["descripcion"], ""]
     if x.get("referencias"):
         L += ["## Referencias de época", ""] + [credito(r, R[r]) for r in x["referencias"]] + [""]
-    carpeta = "personajes" if tipo == "personaje" else "escenarios"
+    carpeta = tipo + "s"  # personajes, escenarios, objetos
     L += ["## Hoja de referencia del Element", "",
           f"Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `{IMAGENES}/{carpeta}/{x['id']}.png`; "
           f"luego subirla a Cinema Studio como Element `{x['element']['nombre']}`.", ""]
@@ -832,7 +846,10 @@ def escribir(F, calc, salida):
             (d / nombre).write_text(txt, encoding="utf-8")
             escritos.append(d / nombre)
     for carpeta, fichas, tipo in (("personajes", F["personajes"], "personaje"),
-                                  ("escenarios", F["escenarios"], "escenario")):
+                                  ("escenarios", F["escenarios"], "escenario"),
+                                  ("objetos", F.get("objetos") or {}, "objeto")):
+        if not fichas:
+            continue
         d = salida / carpeta
         d.mkdir(parents=True, exist_ok=True)
         for i, x in fichas.items():
@@ -843,15 +860,15 @@ def escribir(F, calc, salida):
 
 # --------------------------------------------------------------------------- carga
 def cargar_fuentes(d):
-    F = {"personajes": {}, "escenarios": {}, "guiones": {}, "archivos": {}}
+    F = {"personajes": {}, "escenarios": {}, "objetos": {}, "guiones": {}, "archivos": {}}
     F["estilo"] = json.loads((d / "estilo.json").read_text(encoding="utf-8"))
     F["referencias"] = json.loads((d / "referencias.json").read_text(encoding="utf-8"))
-    for tipo, carpeta in (("personaje", "personajes"), ("escenario", "escenarios")):
+    for tipo, carpeta in (("personaje", "personajes"), ("escenario", "escenarios"), ("objeto", "objetos")):
         for a in sorted((d / carpeta).glob("*.json")):
             F[carpeta][a.stem] = json.loads(a.read_text(encoding="utf-8"))
             F["archivos"][(tipo, a.stem)] = f"{carpeta}/{a.name}"
     for a in sorted(d.glob("*/*.json")):
-        if a.parent.name in ("personajes", "escenarios"):
+        if a.parent.name in ("personajes", "escenarios", "objetos"):
             continue
         F["guiones"][a.stem] = json.loads(a.read_text(encoding="utf-8"))
         F["archivos"][("guion", a.stem)] = f"{a.parent.name}/{a.name}"
@@ -894,6 +911,9 @@ def fixture():
         "escenarios": {"sala": {"id": "sala", "nombre": "Sala", "element": {"nombre": "SALA"},
                                 "hoja_referencia": hoja, "sin_laminas": ["a.png"],
                                 "texto": [{"dato": "d", "certeza": "texto", "ref": "Gn 45:1", "cita": "Haced salir"}]}},
+        "objetos": {"anillo": {"id": "anillo", "nombre": "Anillo", "element": {"nombre": "ANILLO", "tipo": "objeto"},
+                               "hoja_referencia": hoja, "referencias": ["R1"],
+                               "texto": [{"dato": "d", "certeza": "texto", "ref": "Gn 45:1", "cita": "clamó"}]}},
         "guiones": {"gn-98": {
             "id": "gn-98", "libro": "Gn", "inicio": "Gn 45:1", "fin": "Gn 45:3",
             "montaje": {"archivo": "gn-98.mp4", "titulo": "José se da a conocer", "musica": {"usar": False}},
@@ -907,7 +927,7 @@ def fixture():
             "escenas": [{"id": "e1", "titulo": "a", "proposito": "p", "versiculos": "Gn 45:1",
                          "progresion_visual": "v", "tomas": [
                 {"id": "t1", "nivel": "A", "perfil": "todos", "transicion": "fundido", "versiculos": "Gn 45:1",
-                 "personajes": ["jose"], "escenario": "sala", "clips_8s": 1,
+                 "personajes": ["jose"], "objetos": ["anillo"], "escenario": "sala", "clips_8s": 1,
                  "imagen": {"prompt_en": "A hall.", "descripcion_es": "sala", "referencias": ["R1"]},
                  "movimiento": {"prompt_en": "slow", "camara": ["static"]},
                  "fidelidad": [{"dato": "x", "certeza": "interpretacion", "nota": "n"}],
@@ -1002,6 +1022,11 @@ def autoprueba():
         "transición desconocida": lambda F: T(F, 0).__setitem__("transicion", "barrido"),
         "sin_laminas desconocida": lambda F: F["escenarios"]["sala"].__setitem__("sin_laminas", ["c.png"]),
         "sin_laminas aparta todas": lambda F: F["escenarios"]["sala"].__setitem__("sin_laminas", ["a.png", "b.png"]),
+        "objeto inexistente": lambda F: T(F, 0)["objetos"].append("copa"),
+        "objeto sin texto": lambda F: F["objetos"]["anillo"].pop("texto"),
+        "objeto con cita no literal": lambda F: F["objetos"]["anillo"]["texto"][0].__setitem__("cita", "gritó"),
+        "objeto con el Element de otro": lambda F: F["objetos"]["anillo"]["element"].__setitem__("nombre", "SALA"),
+        "personaje sin personas ni sin_persona": lambda F: F["personajes"]["jose"].__setitem__("personas", []),
         "estilo.md desalineado": None,
     }
     for nombre, mut in casos.items():
@@ -1025,7 +1050,20 @@ def autoprueba():
     e, a, _ = validar(F, biblia2)
     if e or not any("necesita" in x for x in a):
         fallos.append(f"debía avisar de clips insuficientes: {e or a}")
-    print(f"autoprueba: {len(casos) + 2} casos, {len(fallos)} fallos")
+    # quien no es persona en biblia.js (la serpiente): sin «personas», con «sin_persona», y sin voz propia
+    F = copy.deepcopy(F0)
+    F["personajes"]["serpiente"] = {"id": "serpiente", "nombre": "La serpiente", "personas": [],
+                                    "sin_persona": "no es una persona de biblia.js", "element": {"nombre": "SERPIENTE"},
+                                    "hoja_referencia": F0["personajes"]["jose"]["hoja_referencia"],
+                                    "rasgos": [{"rasgo": "r", "certeza": "texto", "ref": "Gn 45:1", "cita": "clamó"}]}
+    e, _, _ = validar(F, biblia)
+    if e:
+        fallos.append(f"un personaje con sin_persona debía pasar: {e}")
+    # la hoja de rodaje nombra el objeto de la toma y su hoja
+    md = hoja_guion(F0["guiones"]["gn-98"], c, F0)
+    if "Objetos en cuadro**: Anillo" not in md or "objetos/anillo.png" not in md or "`ANILLO`" not in md:
+        fallos.append("la hoja de rodaje no lista el objeto de la toma")
+    print(f"autoprueba: {len(casos) + 4} casos, {len(fallos)} fallos")
     for f in fallos:
         print("  FALLO:", f)
     return 1 if fallos else 0

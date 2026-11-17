@@ -60,7 +60,7 @@ def _indice():
         out.append(dict(id=lam_ids[i], grupo="estilo", titulo=f"Lámina patrón {i + 1}", fuente=F / "estilo.json",
                         ruta=["laminas_patron", i], x=L, base=L, refs=lam_ids[:i], editables=("prompt_en",),
                         ficha={"archivo": L["archivo"]}))
-    for carpeta in ("personajes", "escenarios"):
+    for carpeta in I.HOJAS:
         for f in sorted((F / carpeta).glob("*.json")):
             x = I.leer(f)
             h = x.get("hoja_referencia") or {}
@@ -69,22 +69,23 @@ def _indice():
             out.append(dict(id=f"{carpeta}/{x['id']}", grupo=carpeta, titulo=x.get("nombre") or x["id"], fuente=f,
                             ruta=["hoja_referencia"], x=x, base=h, editables=EDITABLES,
                             refs=[i for i, L in zip(lam_ids, lams)
-                                  if carpeta != "escenarios" or L["archivo"] not in (x.get("sin_laminas") or [])],
+                                  if carpeta == "personajes" or L["archivo"] not in (x.get("sin_laminas") or [])],
                             ficha=ficha))
     for f in sorted(F.glob("*/*.json")):
-        if f.parent.name in ("personajes", "escenarios"):
+        if f.parent.name in I.HOJAS:
             continue
         g = I.leer(f)
         for a, es in enumerate(g["escenas"]):
             for b, t in enumerate(es["tomas"]):
                 im, mov = t.get("imagen") or {}, t.get("movimiento") or {}
-                ficha = {k: t[k] for k in ("versiculos", "nivel", "perfil", "transicion", "personajes", "escenario",
+                ficha = {k: t[k] for k in ("versiculos", "nivel", "perfil", "transicion", "personajes", "objetos", "escenario",
                                            "clips_8s", "fidelidad") if k in t}
                 ficha.update({"escena": es.get("titulo"), "descripcion_es": im.get("descripcion_es"),
                               "movimiento_es": mov.get("descripcion_es"), "camara": mov.get("camara")})
                 fuera = I.sin_laminas(t["escenario"])
                 refs = [i for i, L in zip(lam_ids, lams) if L["archivo"] not in fuera]
                 refs += [f"personajes/{p}" for p in t.get("personajes", [])]
+                refs += [f"objetos/{o}" for o in t.get("objetos", [])]
                 refs.append(f"escenarios/{t['escenario']}")
                 out.append(dict(id=f"{g['libro']}/{g['id']}-{t['id']}", grupo="tomas", titulo=t.get("titulo") or t["id"],
                                 fuente=f, ruta=["escenas", a, "tomas", b, "imagen"], x=t, base=im, refs=refs,
@@ -356,7 +357,7 @@ def datos(registro_capa=None):
             it["movimiento_en"] = e["movimiento_en"]
         return it
 
-    grupos = {"estilo": [], "personajes": [], "escenarios": []}
+    grupos = {"estilo": [], **{c: [] for c in I.HOJAS}}
     pasajes, por_guion = [], {}
     for e in indice:
         if e["grupo"] != "tomas":
@@ -372,7 +373,7 @@ def datos(registro_capa=None):
             p["escenas"].append({"id": es["id"], "titulo": es.get("titulo", ""), "tomas": []})
         p["escenas"][-1]["tomas"].append(item(e))
     return {"estilo": {"nombre": E.get("nombre_estilo"), "rotulo_ia": E.get("rotulo_ia")},
-            "laminas": grupos["estilo"], "personajes": grupos["personajes"], "escenarios": grupos["escenarios"],
+            "laminas": grupos["estilo"], **{c: grupos[c] for c in I.HOJAS},
             "pasajes": pasajes}
 
 
@@ -416,16 +417,16 @@ def autoprueba():
         d = datos([fila_capa, dict(fila_capa, etiqueta="otra/cosa")])
         comprobar(d["estilo"]["rotulo_ia"] == "Ilustración moderna (generada con IA)" and d["estilo"]["nombre"],
                   "estilo: nombre y rótulo de la IA")
-        esperado = (len(I.leer(F / "estilo.json")["laminas_patron"]), len(list((F / "personajes").glob("*.json"))),
-                    len(list((F / "escenarios").glob("*.json"))))
-        comprobar((len(d["laminas"]), len(d["personajes"]), len(d["escenarios"])) == esperado == (3, 3, 6),
-                  f"3 láminas, 3 personajes, 6 escenarios: {len(d['laminas'])}, {len(d['personajes'])}, "
-                  f"{len(d['escenarios'])}")
+        esperado = (len(I.leer(F / "estilo.json")["laminas_patron"]),
+                    *(len(list((F / c).glob("*.json"))) for c in I.HOJAS))
+        hay = (len(d["laminas"]), *(len(d[c]) for c in I.HOJAS))
+        comprobar(hay == esperado and hay[0] == 3 and hay[1] >= 3 and hay[3] >= 6,
+                  f"láminas, personajes, objetos y escenarios como en las fuentes: {hay}")
         pas = {p["id"]: p for p in d["pasajes"]}
         ntomas = {k: sum(len(e["tomas"]) for e in p["escenas"]) for k, p in pas.items()}
         guiones_ = {g["id"]: sum(len(e["tomas"]) for e in g["escenas"])
                     for g in (I.leer(f) for f in sorted(F.glob("*/*.json"))
-                              if f.parent.name not in ("personajes", "escenarios"))}
+                              if f.parent.name not in I.HOJAS)}
         comprobar(ntomas == guiones_ and {"gn-01", "gn-98"} <= set(ntomas), f"tomas de gn-01 y gn-98: {ntomas}")
         L2 = d["laminas"][1]
         comprobar(L2["id"] == "estilo/patron-2-interior" and L2["campo"] == "laminas_patron[1].prompt_en"

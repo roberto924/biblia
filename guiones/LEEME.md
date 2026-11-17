@@ -15,12 +15,12 @@ se repite para todo Génesis y luego libro a libro.
 | `estilo.md` | Guía única de estilo, reglas fijas, voz del narrador e **instrucciones del Proyecto de ChatGPT**. |
 | `fuentes/estilo.json` | Los mismos valores de estilo en formato que lee el script. |
 | `fuentes/referencias.json` | Referencias de época (museo, inventario, datación, licencia, URL). Solo se usan las `comprobado: true`. |
-| `fuentes/personajes/*.json`, `fuentes/escenarios/*.json` | Fichas de personajes y escenarios (Elements). |
+| `fuentes/personajes/*.json`, `fuentes/objetos/*.json`, `fuentes/escenarios/*.json` | Fichas de personajes, objetos y escenarios (Elements). |
 | `fuentes/Gn/gn-01.json`, `fuentes/Gn/gn-98.json` | Guion de cada video: escenas → tomas → partes (voz + texto exacto). |
 | `Gn/gn-01.md`, `Gn/gn-98.md` | **Hoja de rodaje** generada: montaje, rótulos, continuidad, y por toma qué adjuntar, prompts y fidelidad. |
 | `Gn/*.narracion.txt` | Guion de audio (narrador / personaje), sin corchetes. |
-| `personajes/*.md`, `escenarios/*.md` | Fichas legibles con la hoja de referencia de cada Element. |
-| `imagenes/estilo/`, `imagenes/personajes/`, `imagenes/escenarios/`, `imagenes/Gn/` | Láminas patrón, hojas de referencia e imágenes iniciales de cada toma. |
+| `personajes/*.md`, `objetos/*.md`, `escenarios/*.md` | Fichas legibles con la hoja de referencia de cada Element. |
+| `imagenes/estilo/`, `imagenes/personajes/`, `imagenes/objetos/`, `imagenes/escenarios/`, `imagenes/Gn/` | Láminas patrón, hojas de referencia e imágenes iniciales de cada toma. |
 | `imagenes/_anteriores/` | Versiones reemplazadas al regenerar desde el Estudio (`<id con / → __>-<fecha>.png`). |
 | `registro/revision.json` | Revisión de cada imagen en el Estudio: aprobada o rechazada, nota, fecha y `sha256` del archivo. |
 | `registro/imagenes.jsonl` | Registro viejo del lote con Codex directo (16-nov); el Estudio lo muestra como historial. Lo nuevo va al registro de capa-ia. |
@@ -40,6 +40,16 @@ existen; que no se usa una referencia sin comprobar; que los prompts de imagen e
 contienen términos prohibidos (halo, «God», sol antes del día cuarto…); y calcula la duración de cada toma
 (palabras ÷ 150 por minuto) avisando si una toma de nivel A declara menos clips de 8 s de los necesarios.
 
+**Objetos** (desde Gn 2–9, 2026-11-17): un objeto que se repite entre tomas (el arca, los dos árboles del huerto, la
+paloma) tiene ficha propia en `fuentes/objetos/<id>.json`, con la misma forma que un escenario (`texto` con lo que
+dice el versículo, `rasgos` con la interpretación del ilustrador, `hoja_referencia`, y `sin_laminas` si hace falta).
+El id es el del catálogo de juego (`herramientas/juego/<Libro>.json`) cuando el objeto está allí, para que la lámina
+del juego pueda salir de la misma hoja. Una toma los nombra en `"objetos": ["arca-noe"]`: su hoja se adjunta y la toma
+espera a que exista. Lo que el texto no describe no se dibuja: no hay ficha de la señal de Caín (Gn 4:15).
+
+Un personaje que no es persona en `datos/biblia.js` (la serpiente) deja `personas` vacío y explica por qué en
+`sin_persona`. Todavía no puede tener voz propia en un guion: las voces van por persona.
+
 Niveles de toma: **A** = clip de video (unos 3 por pasaje, en los momentos clave); **B** = imagen con movimiento
 leve (y lipsync si habla alguien); **C** = narración sobre imagen fija.
 
@@ -57,7 +67,7 @@ python -I herramientas/imagenes.py             lista lo pendiente (no genera nad
 python -I herramientas/imagenes.py --generar N genera N vía capa-ia, de una en una [--solo Gn/]
 ```
 
-El orden es láminas → hojas → tomas (una toma espera a las hojas que usa). Se manda una imagen a la vez y el lote se
+El orden es láminas → hojas (personajes, objetos, escenarios) → tomas (una toma espera a las hojas que usa). Se manda una imagen a la vez y el lote se
 para en el primer fallo, al llegar a la cuota (`esperando_cuota`, con la hora de reinicio) o al tope de coste
 (`bloqueado_coste`); nunca se reintenta solo.
 
