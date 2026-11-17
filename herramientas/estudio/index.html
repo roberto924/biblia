@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Estudio · Biblia narrada</title>
+<link rel="stylesheet" href="/estudio/estudio.css">
+</head>
+<body>
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <div class="cabecera-fila">
+    <h1 class="marca">Estudio · Biblia narrada</h1>
+    <p class="estado-capa" id="estado-capa" aria-live="polite">Leyendo el estado de capa-ia…</p>
+  </div>
+  <p class="aviso-capa" id="aviso-capa" hidden></p>
+  <nav class="pestanas" aria-label="Vistas del Estudio">
+    <a href="#resumen" data-vista="resumen">Resumen</a>
+    <a href="#estilo" data-vista="estilo">Estilo</a>
+    <a href="#personajes" data-vista="personajes">Personajes</a>
+    <a href="#escenarios" data-vista="escenarios">Escenarios</a>
+    <a href="#tomas" data-vista="tomas">Tomas</a>
+    <a href="#cola" data-vista="cola">Cola y registro</a>
+  </nav>
+</header>
+
+<div class="mensajes" id="mensajes" role="status" aria-live="polite"></div>
+
+<main id="principal" tabindex="-1">
+  <p class="vacio-txt">Cargando los datos del Estudio…</p>
+</main>
+
+<dialog id="dlg-editar" class="dialogo dialogo-ancho" aria-labelledby="dlg-editar-titulo">
+  <form method="dialog" class="dialogo-cuerpo" id="form-editar">
+    <h2 id="dlg-editar-titulo">Editar prompt</h2>
+    <p class="meta" id="dlg-editar-donde"></p>
+    <label class="campo">
+      <span>Prompt (inglés) · <code id="dlg-editar-campo-p"></code></span>
+      <textarea id="ed-prompt" rows="8" spellcheck="true" lang="en"></textarea>
+    </label>
+    <label class="campo">
+      <span>Negativo (inglés) · <code id="dlg-editar-campo-n"></code></span>
+      <textarea id="ed-negativo" rows="4" spellcheck="true" lang="en"></textarea>
+    </label>
+    <p class="meta" id="ed-negativo-nota" hidden>Las láminas patrón no tienen negativo propio: usan el general de
+      <code>estilo.json</code>, que no se edita desde el Estudio.</p>
+    <details class="desplegable" open>
+      <summary>Cambio (antes → después, por palabras)</summary>
+      <div id="ed-diff" class="diff"></div>
+    </details>
+    <div class="errores" id="ed-errores" role="alert" hidden></div>
+    <div class="acciones">
+      <button type="button" class="boton" id="ed-guardar">Guardar</button>
+      <button type="button" class="boton secundario" id="ed-cancelar">Cancelar</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="dlg-confirmar" class="dialogo" aria-labelledby="dlg-confirmar-titulo">
+  <form method="dialog" class="dialogo-cuerpo">
+    <h2 id="dlg-confirmar-titulo">Confirmar</h2>
+    <div id="dlg-confirmar-texto"></div>
+    <label class="campo" id="dlg-confirmar-campo" hidden>
+      <span id="dlg-confirmar-etiqueta">Nota</span>
+      <textarea id="dlg-confirmar-nota" rows="3"></textarea>
+    </label>
+    <div class="errores" id="dlg-confirmar-errores" role="alert" hidden></div>
+    <div class="acciones">
+      <button type="button" class="boton" id="dlg-confirmar-si">Confirmar</button>
+      <button type="button" class="boton secundario" id="dlg-confirmar-no">Cancelar</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/estudio/estudio.js"></script>
+</body>
+</html>

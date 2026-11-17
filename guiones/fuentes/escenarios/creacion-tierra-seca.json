@@ -13,9 +13,9 @@
     {"dato": "Costa de roca y tierra desnuda que emerge del agua; luego praderas de hierba con espiga y árboles frutales sin especie reconocible moderna", "certeza": "interpretacion", "nota": "Interpretación del ilustrador. Luz sin fuente visible (antes del día cuarto)."}
   ],
   "hoja_referencia": {
-    "prompt_en": "Paint wide land rising out of a calm sea, with rocky shores and gentle hills that are bare at first. Later the same hills are covered with green grasses carrying seed heads and with scattered fruit trees. Everything is lit by a soft, even light that does not come from any visible point in the sky.",
+    "prompt_en": "Paint one single scene: wide land newly risen out of a calm sea, with rocky shores and gentle hills covered with green grasses carrying seed heads and with scattered fruit trees of no recognizable modern kind. Everything is lit by a soft, even light that does not come from any visible point in the sky.",
     "prompt_es": "Tierra amplia que emerge de un mar en calma, con costas rocosas y colinas suaves, desnudas al principio; luego las mismas colinas cubiertas de hierba verde con espigas y árboles frutales dispersos; luz suave y pareja sin punto de origen visible.",
-    "negativo_en": "Do not show any sun, moon, stars or planets, and no animals, birds, fish, people, buildings, roads or fields under cultivation.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not show any sun, moon, stars or planets, and no animals, birds, fish, people, buildings, roads or fields under cultivation.",
     "negativo_es": "Sin sol, luna, estrellas ni planetas; sin animales, aves, peces, personas, edificios, caminos ni campos cultivados."
   }
 }

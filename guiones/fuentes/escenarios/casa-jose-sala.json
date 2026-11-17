@@ -88,9 +88,9 @@
     "C1"
   ],
   "hoja_referencia": {
-    "prompt_en": "Make an establishing view of an empty reception hall in the house of a high official in ancient Egypt, around 1900 BC. Wooden columns painted to look like bundles of papyrus stems hold up a flat ceiling with painted beams. The walls are smoothly plastered and bordered with a simple colored frieze, and the floor is pale plaster partly covered with reed mats. Daylight falls in from small high windows with wooden grilles. Low wooden tables, stools and large clay storage jars stand along the walls, and a doorway at the back opens onto a sunlit porch.",
+    "prompt_en": "Make an establishing view of an empty reception hall in the house of a high official in ancient Egypt, around 1900 BC. Wooden columns painted to look like bundles of papyrus stems hold up a flat ceiling with painted beams. The walls are smoothly plastered and bordered with a simple colored frieze, and the floor is pale plaster partly covered with reed mats. Daylight falls in from small high windows with wooden grilles. Low wooden tables, stools and large clay storage jars stand along the walls, and a doorway at the back opens onto a sunlit porch, beyond which the flat green floor of the Nile valley stretches to the horizon.",
     "prompt_es": "Vista general de una sala de recepción vacía en la casa de un alto funcionario del antiguo Egipto, hacia 1900 a. C.: columnas de madera pintadas como haces de papiro, techo plano con vigas pintadas, muros enlucidos con friso de color, suelo de yeso claro con esteras de junco, luz por ventanas altas con celosía, mesas bajas, taburetes y tinajas de barro; al fondo, una puerta a un pórtico soleado.",
-    "negativo_en": "Do not show giant stone temple columns, colossal statues, hieroglyph-covered palace walls, gold everywhere or pyramids through the windows. There are no people in this view.",
+    "negativo_en": "Do not show hills, mountains or olive trees through the doorway. Do not show giant stone temple columns, colossal statues, hieroglyph-covered palace walls, gold everywhere or pyramids through the windows. There are no people in this view.",
     "negativo_es": "Sin columnas colosales de templo, estatuas gigantes, muros de palacio llenos de jeroglíficos, oro por todas partes ni pirámides por la ventana; sin personas."
   }
 }

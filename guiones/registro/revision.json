@@ -1,0 +1,37 @@
+{
+  "personajes/jose": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-17T12:28:44",
+    "archivo": "guiones/imagenes/personajes/jose.png",
+    "archivo_sha256": "acd699d83dd4264fb16173f2597fbefd6bd270d480c7cd35a2ebdc09eef1136b"
+  },
+  "personajes/hermanos": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-17T12:28:44",
+    "archivo": "guiones/imagenes/personajes/hermanos.png",
+    "archivo_sha256": "b3667d0e823caf34cad670999586434f64621d9899b1dd41745e5f6e335514be"
+  },
+  "escenarios/casa-jose-sala": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-17T12:28:44",
+    "archivo": "guiones/imagenes/escenarios/casa-jose-sala.png",
+    "archivo_sha256": "1756b9c199a1355b7ce65718f8e19c8f0d9972658cd04e5f3590e414e00ef7f4"
+  },
+  "escenarios/creacion-tierra-seca": {
+    "estado": "rechazada",
+    "nota": "Repite la composición de la lámina 1: árbol grande a la izquierda en primer plano, rocas abajo a la izquierda, mismas colinas al fondo. Además, granadas y peras reconocibles.",
+    "fecha": "2026-11-17T12:28:44",
+    "archivo": "guiones/imagenes/escenarios/creacion-tierra-seca.png",
+    "archivo_sha256": "5b7bb241a36a58c6699d2b1e2118da085fe3ea87eb28d68cb8f5fc2cc5366194"
+  },
+  "escenarios/creacion-lumbreras": {
+    "estado": "rechazada",
+    "nota": "Repite la composición de la lámina 1: árbol grande a la izquierda en primer plano, rocas abajo a la izquierda, mismas colinas al fondo.",
+    "fecha": "2026-11-17T12:28:44",
+    "archivo": "guiones/imagenes/escenarios/creacion-lumbreras.png",
+    "archivo_sha256": "8b08ad0681e3e4a0b9c4bf4dc08d4fa96eff3372a31d028ae7af0551f90a2682"
+  }
+}
