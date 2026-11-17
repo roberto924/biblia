@@ -564,7 +564,9 @@ def autoprueba():
                   "CapaIAError (bloqueado_coste) → Resultado, para, código 3")
 
         # prompts congelados: editar una fuente no borra el prompt del 16-nov del historial (Ruling R4)
-        viejos = {f.get("id") for f in _filas_viejas()}
+        # el objetivo y la cuenta salen de lo que HOY se reconstruye: las fuentes reales ya se editaron (T5)
+        antes = list(_reconstruir(_filas_viejas()))
+        viejos = {k.split(" ", 1)[1] for k in antes}
         objetivo = next(i for i in ("personajes/jose", *sorted(viejos))
                         if i in viejos and i.startswith(("personajes/", "escenarios/")))
         carpeta, nombre = objetivo.split("/")
@@ -579,7 +581,7 @@ def autoprueba():
         comprobar(h and all(f["prompt"] is None and f["prompt_nota"] == "no se pudo reconstruir" for f in h),
                   "sin el archivo congelado ya no se podría reconstruir (lo dice)")
         n, nuevos = congelar_prompts_v1()
-        comprobar(n == len(_filas_viejas()) - len(h) and nuevos == n,
+        comprobar(n == sum(1 for k in antes if k.split(" ", 1)[1] != objetivo) and nuevos == n,
                   f"congelar_prompts_v1 en la copia: {n} congelados (el editado no)")
     finally:
         fijar_raiz(real)

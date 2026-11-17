@@ -12,9 +12,9 @@
     {"dato": "La misma costa con hierba y árboles del día tercero, ahora bajo un cielo con sol, luna y estrellas; primer atardecer y primera noche con luz de fuente visible", "certeza": "interpretacion", "nota": "Interpretación del ilustrador: se reutiliza el paisaje del día tercero para dar continuidad."}
   ],
   "hoja_referencia": {
-    "prompt_en": "Paint the same grassy coast with fruit trees beside a calm sea, now under a sky that has lights of its own. In one version a warm sun shines low in the daytime sky, and in another a pale moon and a field of stars shine over the sea at night.",
+    "prompt_en": "Paint one single scene of the same grassy coast with fruit trees beside a calm sea at dusk, under a sky that now has lights of its own: a warm sun sits low over the sea on one side, while a pale moon and the first stars appear in the darkening sky above.",
     "prompt_es": "La misma costa con hierba y árboles frutales junto a un mar en calma, ahora bajo un cielo con luces propias: en una versión, un sol cálido bajo en el cielo de día; en otra, una luna pálida y un campo de estrellas sobre el mar de noche.",
-    "negativo_en": "Do not show any animals, birds, fish, people, buildings or figures in the sky, and no comets, eclipses or planets with rings.",
+    "negativo_en": "Do not split the picture into panels or show day and night side by side. Do not show any animals, birds, fish, people, buildings or figures in the sky, and no comets, eclipses or planets with rings.",
     "negativo_es": "Sin animales, aves, peces, personas, edificios ni figuras en el cielo; sin cometas, eclipses ni planetas con anillos."
   }
 }
