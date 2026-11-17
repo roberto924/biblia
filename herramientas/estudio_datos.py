@@ -37,7 +37,9 @@ def _rel(p):
 
 
 def _url(p):
-    return "/img/" + urllib.parse.quote(p.relative_to(IMG).as_posix())
+    """URL de una imagen con su versión (`?v=` mtime en ns): al regenerarla cambia y el navegador no reutiliza la vieja.
+    El servidor ignora la query. Las de `_anteriores/` no la llevan: su nombre ya es único y no se reescriben."""
+    return "/img/" + urllib.parse.quote(p.relative_to(IMG).as_posix()) + f"?v={p.stat().st_mtime_ns}"
 
 
 def _campo(ruta, campo):
@@ -425,13 +427,21 @@ def autoprueba():
         comprobar(L2["id"] == "estilo/patron-2-interior" and L2["campo"] == "laminas_patron[1].prompt_en"
                   and L2["fuente"] == "guiones/fuentes/estilo.json" and L2["grupo"] == "estilo",
                   "lámina 2: id, campo y fuente")
-        comprobar(L2["imagen"] == "/img/estilo/patron-2-interior-codex.png" and L2["refs"] == ["estilo/patron-1-paisaje"],
+        comprobar(L2["imagen"].startswith("/img/estilo/patron-2-interior-codex.png?v=") and L2["refs"] == ["estilo/patron-1-paisaje"],
                   "lámina 2: imagen provisional de Codex y refs")
         jose = next(x for x in d["personajes"] if x["id"] == "personajes/jose")
         comprobar(jose["campo"] == "hoja_referencia.prompt_en" and jose["fuente"] == "guiones/fuentes/personajes/jose.json"
                   and jose["titulo"] == "José", "hoja de José: campo, fuente y título")
-        comprobar(jose["imagen"] == "/img/personajes/jose.png" and (jose["ancho"], jose["alto"]) == I.TAM_FIXTURE,
-                  "hoja de José: imagen y tamaño")
+        comprobar(jose["imagen"] == "/img/personajes/jose.png?v=" + str((IMG / "personajes" / "jose.png").stat().st_mtime_ns)
+                  and (jose["ancho"], jose["alto"]) == I.TAM_FIXTURE, "hoja de José: imagen (con ?v=mtime) y tamaño")
+        # caché: al reescribir la imagen, su URL cambia (el navegador no puede reutilizar la vieja)
+        pj = IMG / "personajes" / "jose.png"
+        st = pj.stat()
+        pj.write_bytes(pj.read_bytes())
+        os.utime(pj, ns=(st.st_atime_ns, st.st_mtime_ns + 1_000_000_000))  # como una regeneración un segundo después
+        jose2 = next(x for x in datos()["personajes"] if x["id"] == "personajes/jose")
+        comprobar(jose2["imagen"] != jose["imagen"] and jose2["imagen"].split("?")[0] == "/img/personajes/jose.png",
+                  f"reescribir la imagen cambia su URL ({jose['imagen']} → {jose2['imagen']})")
         comprobar(jose["prompt_enviado"].startswith(I.leer(F / "estilo.json")["base_imagen_en"])
                   and jose["prompt_en"] in jose["prompt_enviado"] and jose["negativo_en"] in jose["prompt_enviado"],
                   "prompt_enviado = base + prompt + negativos")
@@ -581,7 +591,7 @@ def autoprueba():
                   and (IMG / "estilo" / "patron-2-interior.png").exists()
                   and not (IMG / "estilo" / "patron-2-interior-codex.png").exists(), "aprobar la lámina 2 la renombra")
         L2 = datos()["laminas"][1]
-        comprobar(L2["imagen"] == "/img/estilo/patron-2-interior.png" and L2["revision"]["estado"] == "aprobada",
+        comprobar(L2["imagen"].startswith("/img/estilo/patron-2-interior.png?v=") and L2["revision"]["estado"] == "aprobada",
                   "la lámina 2 renombrada sigue aprobada")
     finally:
         fijar_raiz(real)

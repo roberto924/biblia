@@ -512,6 +512,10 @@ def autoprueba():
         s, b, r = pedir("GET", "/img/personajes/jose.png")
         comprobar(s == 200 and r.getheader("Content-Type") == "image/png" and b[:8] == b"\x89PNG\r\n\x1a\n",
                   "imagen servida desde una raíz con espacios y «é»")
+        for ruta in ("/img/../CLAUDE.md?v=1", "/img/%2e%2e/CLAUDE.md?v=1", "/img/C:/Windows/win.ini?v=1",
+                     "/img/personajes/jose.json?v=1", "/img/personajes/jose.png%3Fv=1"):
+            s, b, r = pedir("GET", ruta)
+            comprobar(s == 404, f"con versión: {ruta} → 404 ({s})")
         s, b, r = pedir("GET", "/api/datos", host="evil.com")
         comprobar(s == 403, "Host: evil.com → 403")
         s, b, r = pedir("GET", "/api/datos", host=f"localhost:{puerto}")
@@ -533,6 +537,18 @@ def autoprueba():
         comprobar(sum(1 for h in jose["historial"] if h.get("id") in ("r1", "r2")) == 2
                   and any(h.get("origen") == I.ORIGEN_VIEJO for h in jose["historial"]),
                   "historial: filas de capa-ia y la vieja")
+        s, b, r = pedir("GET", jose["imagen"])
+        comprobar("?v=" in jose["imagen"] and s == 200 and b[:4] == b"\x89PNG",
+                  f"la URL versionada de /api/datos se sirve ({jose['imagen']} → {s})")
+        pj = D.IMG / "personajes" / "jose.png"
+        st = pj.stat()
+        pj.write_bytes(pj.read_bytes())
+        os.utime(pj, ns=(st.st_atime_ns, st.st_mtime_ns + 1_000_000_000))  # como una regeneración
+        s, d2, r = pedir("GET", "/api/datos")
+        url2 = next(x for x in d2["personajes"] if x["id"] == "personajes/jose")["imagen"]
+        s, b, r = pedir("GET", url2)
+        comprobar(url2 != jose["imagen"] and s == 200 and b[:4] == b"\x89PNG",
+                  f"tras reescribir la imagen, su URL cambia y /img/…?v=… da 200 ({url2})")
         s, e, r = pedir("GET", "/api/estado")
         comprobar(s == 200 and e["capa"] == "http" and e["cuota"]["usado_pct"] == 12 and e["cuota"]["semanal_pct"] == 5
                   and e["cuota"]["reinicio_en"] and e["cuota"]["leida"], f"/api/estado: cuota de Codex ({e.get('cuota')})")
