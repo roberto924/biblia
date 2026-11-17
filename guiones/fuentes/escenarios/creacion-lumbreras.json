@@ -3,6 +3,7 @@
   "nombre": "Las lumbreras en la expansión (Gn 1:14-19)",
   "pasajes": ["gn-01"],
   "element": {"nombre": "LUMBRERAS_CIELO", "tipo": "lugar"},
+  "sin_laminas": ["patron-1-paisaje.png"],
   "texto": [
     {"dato": "Lumbreras para apartar el día y la noche y para señales, estaciones, días y años", "certeza": "texto", "ref": "Gn 1:14", "cita": "Sean lumbreras en la expansión de los cielos para apartar el día y la noche: y sean por señales, y para las estaciones, y para días y años"},
     {"dato": "La lumbrera mayor para el día, la menor para la noche, y las estrellas", "certeza": "texto", "ref": "Gn 1:16", "cita": "la lumbrera mayor para que señorease en el día, y la lumbrera menor para que señorease en la noche: [hizo] también las estrellas"},
@@ -13,8 +14,8 @@
   ],
   "hoja_referencia": {
     "prompt_en": "Paint one single scene of the same grassy coast with fruit trees beside a calm sea at dusk, under a sky that now has lights of its own: a warm sun sits low over the sea on one side, while a pale moon and the first stars appear in the darkening sky above.",
-    "prompt_es": "La misma costa con hierba y árboles frutales junto a un mar en calma, ahora bajo un cielo con luces propias: en una versión, un sol cálido bajo en el cielo de día; en otra, una luna pálida y un campo de estrellas sobre el mar de noche.",
+    "prompt_es": "Una sola escena: la misma costa con hierba y árboles frutales junto a un mar en calma al atardecer, bajo un cielo que ya tiene luces propias: un sol cálido bajo sobre el mar a un lado, y una luna pálida y las primeras estrellas en el cielo que oscurece.",
     "negativo_en": "Do not split the picture into panels or show day and night side by side. Do not show any animals, birds, fish, people, buildings or figures in the sky, and no comets, eclipses or planets with rings.",
-    "negativo_es": "Sin animales, aves, peces, personas, edificios ni figuras en el cielo; sin cometas, eclipses ni planetas con anillos."
+    "negativo_es": "Sin paneles ni el día y la noche lado a lado. Sin animales, aves, peces, personas, edificios ni figuras en el cielo; sin cometas, eclipses ni planetas con anillos."
   }
 }

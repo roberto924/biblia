@@ -67,7 +67,9 @@ def _indice():
             ficha = {k: v for k, v in x.items() if k not in ("id", "nombre", "hoja_referencia")}
             ficha.update({k: h[k] for k in ("prompt_es", "negativo_es") if h.get(k)})
             out.append(dict(id=f"{carpeta}/{x['id']}", grupo=carpeta, titulo=x.get("nombre") or x["id"], fuente=f,
-                            ruta=["hoja_referencia"], x=x, base=h, refs=list(lam_ids), editables=EDITABLES,
+                            ruta=["hoja_referencia"], x=x, base=h, editables=EDITABLES,
+                            refs=[i for i, L in zip(lam_ids, lams)
+                                  if carpeta != "escenarios" or L["archivo"] not in (x.get("sin_laminas") or [])],
                             ficha=ficha))
     for f in sorted(F.glob("*/*.json")):
         if f.parent.name in ("personajes", "escenarios"):
@@ -80,7 +82,9 @@ def _indice():
                                            "clips_8s", "fidelidad") if k in t}
                 ficha.update({"escena": es.get("titulo"), "descripcion_es": im.get("descripcion_es"),
                               "movimiento_es": mov.get("descripcion_es"), "camara": mov.get("camara")})
-                refs = list(lam_ids) + [f"personajes/{p}" for p in t.get("personajes", [])]
+                fuera = I.sin_laminas(t["escenario"])
+                refs = [i for i, L in zip(lam_ids, lams) if L["archivo"] not in fuera]
+                refs += [f"personajes/{p}" for p in t.get("personajes", [])]
                 refs.append(f"escenarios/{t['escenario']}")
                 out.append(dict(id=f"{g['libro']}/{g['id']}-{t['id']}", grupo="tomas", titulo=t.get("titulo") or t["id"],
                                 fuente=f, ruta=["escenas", a, "tomas", b, "imagen"], x=t, base=im, refs=refs,

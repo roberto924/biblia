@@ -3,6 +3,7 @@
   "nombre": "La seca, los mares y las plantas (Gn 1:9-13)",
   "pasajes": ["gn-01"],
   "element": {"nombre": "TIERRA_SECA", "tipo": "lugar"},
+  "sin_laminas": ["patron-1-paisaje.png"],
   "texto": [
     {"dato": "Las aguas se juntan en un lugar y aparece la seca", "certeza": "texto", "ref": "Gn 1:9", "cita": "Júntense las aguas que [están] debajo de los cielos en un lugar, y descúbrase la seca"},
     {"dato": "La seca se llama Tierra; las aguas reunidas, Mares", "certeza": "texto", "ref": "Gn 1:10", "cita": "llamó Dios á la seca Tierra, y á la reunión de las aguas llamó Mares"},
@@ -14,8 +15,8 @@
   ],
   "hoja_referencia": {
     "prompt_en": "Paint one single scene: wide land newly risen out of a calm sea, with rocky shores and gentle hills covered with green grasses carrying seed heads and with scattered fruit trees of no recognizable modern kind. Everything is lit by a soft, even light that does not come from any visible point in the sky.",
-    "prompt_es": "Tierra amplia que emerge de un mar en calma, con costas rocosas y colinas suaves, desnudas al principio; luego las mismas colinas cubiertas de hierba verde con espigas y árboles frutales dispersos; luz suave y pareja sin punto de origen visible.",
-    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not show any sun, moon, stars or planets, and no animals, birds, fish, people, buildings, roads or fields under cultivation.",
-    "negativo_es": "Sin sol, luna, estrellas ni planetas; sin animales, aves, peces, personas, edificios, caminos ni campos cultivados."
+    "prompt_es": "Una sola escena: tierra amplia recién salida de un mar en calma, con costas rocosas y colinas suaves cubiertas de hierba verde con espigas y árboles frutales dispersos de ninguna especie moderna reconocible; luz suave y pareja que no sale de ningún punto visible del cielo.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not show any sun, moon, stars or planets, and no animals, birds, fish, people, buildings, roads or fields under cultivation. Do not paint pomegranates, pears, apples, grapes or any other fruit that can be recognized.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin sol, luna, estrellas ni planetas; sin animales, aves, peces, personas, edificios, caminos ni campos cultivados; sin granadas, peras, manzanas, uvas ni otra fruta reconocible."
   }
 }

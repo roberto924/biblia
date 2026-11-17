@@ -71,6 +71,16 @@ def lamina(nombre):
     return alt if alt.exists() else None
 
 
+def sin_laminas(esc_id):
+    """Archivos de lámina patrón que el escenario `esc_id` no adjunta (`sin_laminas`), ni sus tomas.
+
+    Un paisaje que copia la composición de la lámina 1 se genera solo con las demás (2026-11-17)."""
+    try:
+        return set(leer(F / "escenarios" / f"{esc_id}.json").get("sin_laminas") or [])
+    except (OSError, ValueError):
+        return set()
+
+
 def prompt_imagen(E, prompt_en, negativo_en=""):
     return " ".join(x for x in (E["base_imagen_en"], prompt_en, E["negativo_en"], negativo_en) if x)
 
@@ -97,8 +107,10 @@ def pendientes(E):
         for f in sorted((F / carpeta).glob("*.json")):
             x = leer(f)
             h = x["hoja_referencia"]
+            fuera = set(x.get("sin_laminas") or []) if carpeta == "escenarios" else set()
             T.append(dict(id=f"{carpeta}/{x['id']}", destino=IMG / carpeta / f"{x['id']}.png", hoja=True,
-                          prompt=prompt_imagen(E, h["prompt_en"], h.get("negativo_en", "")), refs=estilo,
+                          prompt=prompt_imagen(E, h["prompt_en"], h.get("negativo_en", "")),
+                          refs=[p for p, L in zip(estilo, lams) if L["archivo"] not in fuera],
                           bloqueo=None if est_ok else "faltan láminas patrón"))
     for f in sorted(F.glob("*/*.json")):
         if f.parent.name in ("personajes", "escenarios"):
@@ -109,10 +121,11 @@ def pendientes(E):
                 hojas = [IMG / "personajes" / f"{p}.png" for p in t.get("personajes", [])]
                 hojas.append(IMG / "escenarios" / f"{t['escenario']}.png")
                 falta = [h.stem for h in hojas if not h.exists()]
+                fuera = sin_laminas(t["escenario"])
                 T.append(dict(id=f"{g['libro']}/{g['id']}-{t['id']}", hoja=False,
                               destino=IMG / g["libro"] / f"{g['id']}-{t['id']}.png",
                               prompt=prompt_imagen(E, t["imagen"]["prompt_en"], t["imagen"].get("negativo_en", "")),
-                              refs=estilo + hojas,
+                              refs=[p for p, L in zip(estilo, lams) if L["archivo"] not in fuera] + hojas,
                               bloqueo=None if est_ok and not falta else "faltan hojas: " + ", ".join(falta or ["estilo"])))
     return T
 
@@ -497,6 +510,27 @@ def autoprueba():
         toma = next(t for t in T if t["id"] == tomas[0]["id"])
         comprobar(toma["bloqueo"] is not None, f"{toma['id']} está bloqueada sin la hoja {esc}")
         instr = instrucciones()
+
+        # sin_laminas: el escenario y sus tomas no llevan esa lámina; el resto, las tres
+        sl = tomas[-1]["refs"][-1].stem
+        fj = F / "escenarios" / f"{sl}.json"
+        x = leer(fj)
+        x["sin_laminas"] = ["patron-1-paisaje.png"]
+        fj.write_text(json.dumps(x, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        T2 = {t["id"]: t for t in pendientes(E)}
+        nombres = lambda t: [r.name for r in t["refs"]]
+        con_sl = [t for t in T2.values() if t["refs"] and t["refs"][-1].stem == sl and not t["hoja"]]
+        comprobar("patron-1-paisaje.png" not in nombres(T2[f"escenarios/{sl}"])
+                  and len(T2[f"escenarios/{sl}"]["refs"]) == len(E["laminas_patron"]) - 1
+                  and con_sl and all("patron-1-paisaje.png" not in nombres(t) for t in con_sl),
+                  f"sin_laminas: escenarios/{sl} y sus {len(con_sl)} tomas van sin la lámina 1")
+        otras = [t for t in T2.values() if not t["hoja"] and not t["id"].startswith("estilo/")
+                 and not sin_laminas(t["refs"][-1].stem)]
+        comprobar("patron-1-paisaje.png" in nombres(T2["personajes/jose"]) and otras
+                  and all("patron-1-paisaje.png" in nombres(t) for t in otras),
+                  f"sin_laminas: los personajes y las otras {len(otras)} tomas siguen con la lámina 1")
+        del x["sin_laminas"]
+        fj.write_text(json.dumps(x, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
         # el trabajo que se manda a capa-ia
         t0 = next(t for t in T if t["id"] == "personajes/jose")

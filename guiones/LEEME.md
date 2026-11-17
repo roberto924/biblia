@@ -61,6 +61,11 @@ El orden es láminas → hojas → tomas (una toma espera a las hojas que usa). 
 para en el primer fallo, al llegar a la cuota (`esperando_cuota`, con la hora de reinicio) o al tope de coste
 (`bloqueado_coste`); nunca se reintenta solo.
 
+Cada imagen lleva adjuntas las tres láminas patrón. Un escenario puede apartar alguna con
+`"sin_laminas": ["patron-1-paisaje.png"]`, y entonces tampoco la llevan sus tomas. Sirve cuando el paisaje copia la
+composición de la lámina en vez de solo su estilo, como pasó con la tierra seca y las lumbreras de la creación.
+Siempre se adjunta al menos una lámina.
+
 En el **Estudio** se ve cada lámina, hoja y toma con su imagen («Ilustración moderna (generada con IA)»), el prompt
 exacto que se envía, su ficha y su historial, y se puede:
 

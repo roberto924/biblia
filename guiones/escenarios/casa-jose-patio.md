@@ -27,7 +27,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/casa-jose-patio.png`; luego subirla a Cinema Studio como Element `PATIO_CASA_JOSE`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
 
 _Vista general del pórtico en sombra y el jardín de la casa de un alto funcionario del antiguo Egipto, hacia 1900 a. C.: columnas esbeltas de madera pintadas con motivos vegetales, techo plano, jardín cercado con estanque rectangular, sicómoros y palmeras a la luz clara del día; una puerta de madera en el muro del fondo da a la casa._ Evitar: _Sin templos, pirámides, esfinges, estatuas colosales ni palacio real; sin personas._
 

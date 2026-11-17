@@ -48,7 +48,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/hermanos.png`; luego subirla a Cinema Studio como Element `HERMANOS_GRUPO`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
 
 _Hoja de referencia de grupo sobre fondo gris claro liso: diez hombres barbudos de Asia occidental en una fila, de cuerpo entero. Hermanos de unos cuarenta a cuarenta y seis años, pastores de Canaán con ropa de viaje gastada; piel morena oliva, pelo oscuro abundante, barbas oscuras; túnicas hasta la rodilla y mantos de lana con franjas y dibujos de colores al modo de los asiáticos de las tumbas egipcias del Reino Medio; sandalias. El mayor (Rubén), a la izquierda, con canas en la barba; el del centro delante (Judá), alto y firme, con manto rojizo; los otros ocho con caras, estaturas y complexiones distintas._ Evitar: _Que no sean idénticos; sin lino blanco egipcio, armaduras ni turbantes; fondo liso._
 

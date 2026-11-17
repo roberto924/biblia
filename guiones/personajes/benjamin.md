@@ -35,7 +35,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/benjamin.png`; luego subirla a Cinema Studio como Element `BENJAMIN`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
 
 _Hoja de referencia sobre fondo gris claro liso: el mismo joven tres veces (rostro y hombros de frente, tres cuartos, cuerpo entero). Hombre de unos veinte años y pico de Asia occidental, hijo de pastores que viene de Canaán, el menor de varios hermanos; piel morena oliva, ojos oscuros, pelo oscuro abundante y barba corta; rostro amable con aire de familia con un hermano mayor; túnica de lana hasta la rodilla con franjas y dibujos de colores al modo de los asiáticos pintados en tumbas egipcias del Reino Medio; sandalias de cuero._ Evitar: _Que no parezca niño ni adolescente; sin lino egipcio, collar de oro, armadura ni turbante; fondo liso._
 

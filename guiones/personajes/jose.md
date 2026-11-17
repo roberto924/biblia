@@ -52,7 +52,7 @@ Hombre de unos 39 años (Cálculo). Voz media-grave, cálida, español neutro. G
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/jose.png`; luego subirla a Cinema Studio como Element `JOSE_GOBERNADOR`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
 
 _Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, tres cuartos, cuerpo entero). Hombre de unos 39 años de Asia occidental, alto funcionario en el antiguo Egipto; rostro sereno, inteligente y amable, piel morena oliva, ojos oscuros, pelo corto oscuro, afeitado; vestido largo de lino blanco fino, collar ancho de cuentas de oro, anillo de sello en la mano derecha, sandalias de cuero._ Evitar: _Sin corona, sin tocado rayado de faraón, sin cobra real, sin barba ni túnica de colores; ninguna joya aparte del collar y el anillo; fondo liso._
 

@@ -290,6 +290,11 @@ def validar(F, biblia, estilo_md=None):
             if not s.get(k):
                 err(arch, sid, k, "falta")
         hoja_ok(s.get("hoja_referencia"), arch, sid)
+        if "sin_laminas" in s:
+            todas = [L.get("archivo") for L in E.get("laminas_patron") or []]
+            sl = s["sin_laminas"]
+            if not (isinstance(sl, list) and sl and all(a in todas for a in sl) and len(set(sl)) < len(todas)):
+                err(arch, sid, "sin_laminas", f"lista no vacía de láminas de {todas}; al menos una se adjunta")
         el = (s.get("element") or {}).get("nombre")
         if el:
             if el in elementos:
@@ -721,8 +726,7 @@ def hoja_guion(g, c, F):
             im = t["imagen"]
             L += ["", f"**Imagen inicial** → guardar como `{IMAGENES}/{g['libro']}/{g['id']}-{t['id']}.png`", "",
                   f"_{im['descripcion_es']}_", "", "Adjuntar en ChatGPT (en este orden):", "",
-                  f"- Láminas patrón de estilo: `{IMAGENES}/estilo/patron-1-paisaje.png`, `patron-2-interior.png`, "
-                  "`patron-3-grupo.png` (siempre)"]
+                  "- Láminas patrón de estilo: " + laminas_md(E, esc)]
             for pj in t.get("personajes", []):
                 L.append(f"- Hoja: {P[pj]['nombre']}: `{IMAGENES}/personajes/{pj}.png`")
             L.append(f"- Hoja del escenario: {esc['nombre']}: `{IMAGENES}/escenarios/{t['escenario']}.png`")
@@ -767,6 +771,14 @@ def prompt_imagen(E, im):
                     if x)
 
 
+def laminas_md(E, esc=None):
+    """Las láminas patrón que se adjuntan, en orden; un escenario puede apartar alguna con `sin_laminas`."""
+    fuera = (esc or {}).get("sin_laminas") or []
+    usa = [f"`{IMAGENES}/estilo/{L['archivo']}`" for L in E["laminas_patron"] if L["archivo"] not in fuera]
+    return ", ".join(usa) + (f" (no {', '.join('`' + a + '`' for a in fuera)}: copiaba su composición)." if fuera
+                             else " (siempre).")
+
+
 def hoja_ficha(x, tipo, F):
     R = F["referencias"]
     h = x["hoja_referencia"]
@@ -802,7 +814,8 @@ def hoja_ficha(x, tipo, F):
     L += ["## Hoja de referencia del Element", "",
           f"Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `{IMAGENES}/{carpeta}/{x['id']}.png`; "
           f"luego subirla a Cinema Studio como Element `{x['element']['nombre']}`.", ""]
-    L += [f"Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`{IMAGENES}/estilo/`, ver `estilo.md`)."
+    L += ["Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): "
+          + laminas_md(F["estilo"], x if tipo != "personaje" else None)
           + (" Además, las referencias de época de arriba (descargadas de su URL de Commons)." if x.get("referencias") else ""),
           ""]
     L += [f"_{h['prompt_es']}_ Evitar: _{h['negativo_es']}_", "", "```text",
@@ -863,7 +876,8 @@ def fixture():
                    "negativo_es": "sin halo", "base_movimiento_en": "Slow.", "base_movimiento_es": "Lento.",
                    "rotulo_ia": "Ilustración moderna (generada con IA)", "rotulo_texto": "Texto: Reina-Valera 1909",
                    "palabras_por_minuto": 150, "segundos_clip": 8, "prohibidos_prompt": ["halo", "god"],
-                   "nombre_estilo": "Estilo de prueba"},
+                   "nombre_estilo": "Estilo de prueba",
+                   "laminas_patron": [{"archivo": "a.png"}, {"archivo": "b.png"}]},
         "referencias": {"R1": {"titulo": "t", "institucion": "Met", "datacion": "ca. 1900 a. C.", "url_ficha": "u",
                                "url_imagen": "u", "licencia": "CC0", "inventario": "1", "comprobado": True},
                         "R2": {"titulo": "t", "institucion": "Met", "datacion": "d", "url_ficha": "u",
@@ -878,7 +892,7 @@ def fixture():
                                 "rasgos": [{"rasgo": "habla", "certeza": "texto", "ref": "Gn 45:2",
                                             "cita": "Yo soy José"}]}},
         "escenarios": {"sala": {"id": "sala", "nombre": "Sala", "element": {"nombre": "SALA"},
-                                "hoja_referencia": hoja,
+                                "hoja_referencia": hoja, "sin_laminas": ["a.png"],
                                 "texto": [{"dato": "d", "certeza": "texto", "ref": "Gn 45:1", "cita": "Haced salir"}]}},
         "guiones": {"gn-98": {
             "id": "gn-98", "libro": "Gn", "inicio": "Gn 45:1", "fin": "Gn 45:3",
@@ -986,6 +1000,8 @@ def autoprueba():
         "etiqueta # en prompt de imagen": lambda F: T(F, 0)["imagen"].__setitem__("prompt_en", "A hall #static."),
         "prompt de imagen como lista": lambda F: T(F, 0)["imagen"].__setitem__("prompt_en", "hall, columns, lamps"),
         "transición desconocida": lambda F: T(F, 0).__setitem__("transicion", "barrido"),
+        "sin_laminas desconocida": lambda F: F["escenarios"]["sala"].__setitem__("sin_laminas", ["c.png"]),
+        "sin_laminas aparta todas": lambda F: F["escenarios"]["sala"].__setitem__("sin_laminas", ["a.png", "b.png"]),
         "estilo.md desalineado": None,
     }
     for nombre, mut in casos.items():

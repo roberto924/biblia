@@ -19,7 +19,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/creacion-expansion.png`; luego subirla a Cinema Studio como Element `EXPANSION_AGUAS`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
 
 _Un mar sin orillas abajo y, muy arriba, una capa pesada de agua y nubes; entre ambos se abre una franja ancha de aire claro y luminoso, como si las aguas se hubieran separado; luz suave y pareja sin punto de origen visible._ Evitar: _Sin sol, luna, estrellas ni planetas; sin tierra, plantas, animales ni figuras._
 

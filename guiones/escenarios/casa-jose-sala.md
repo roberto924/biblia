@@ -34,7 +34,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/casa-jose-sala.png`; luego subirla a Cinema Studio como Element `SALA_CASA_JOSE`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
 
 _Vista general de una sala de recepción vacía en la casa de un alto funcionario del antiguo Egipto, hacia 1900 a. C.: columnas de madera pintadas como haces de papiro, techo plano con vigas pintadas, muros enlucidos con friso de color, suelo de yeso claro con esteras de junco, luz por ventanas altas con celosía, mesas bajas, taburetes y tinajas de barro; al fondo, una puerta a un pórtico soleado._ Evitar: _Sin columnas colosales de templo, estatuas gigantes, muros de palacio llenos de jeroglíficos, oro por todas partes ni pirámides por la ventana; sin personas._
 

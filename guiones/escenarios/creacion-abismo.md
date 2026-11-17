@@ -21,7 +21,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/creacion-abismo.png`; luego subirla a Cinema Studio como Element `ABISMO_AGUAS`.
 
-Adjuntar en ChatGPT, siempre, las tres láminas patrón de estilo (`guiones/imagenes/estilo/`, ver `estilo.md`).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
 
 _Una inmensa extensión de agua profunda y oscura en todas direcciones, sin orilla, sin tierra y sin horizonte claro; oscuridad casi total; solo un brillo gris muy tenue deja ver el lento oleaje._ Evitar: _Sin figura, rostro, mano, paloma, ave ni ser vivo; sin sol, luna, estrellas, planetas, galaxias, rayos ni fuego._
 
