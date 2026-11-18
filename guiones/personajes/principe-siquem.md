@@ -20,7 +20,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Pide a su padre que se la tome por mujer — Gn 34:4: «Tómame por mujer esta moza»
 - **Texto**: Ofrece la dote y los dones que le pidan — Gn 34:12: «Aumentad á cargo mío mucho dote y dones»
 - **Texto**: Es el más honrado de la casa de su padre — Gn 34:19: «él era el más honrado de toda la casa de su padre»
-- **Texto**: Habla con su padre a los varones en la puerta de la ciudad — Gn 34:20: «Hamor y Sichêm su hijo vinieron á la puerta de su ciudad»
+- **Texto**: Habla con su padre a los varones en la puerta de la ciudad — Gn 34:20: «Hamor y Sichêm su hijo vinieron á la puerta de su ciudad, y hablaron á los varones de su ciudad»
 - **Texto**: Muere con su padre a filo de espada (no se muestra) — Gn 34:26: «á Hamor y á Sichêm su hijo los mataron á filo de espada»
 - **Interpretación del ilustrador**: Piel morena oliva, ojos oscuros, rostro de rasgos finos; pelo oscuro abundante y natural hasta la nuca; barba oscura corta y cuidada, recortada en punta; porte seguro de hijo de casa principal — Interpretación del ilustrador: el texto no lo describe. El porte sale de Gn 34:19; la barba en punta sigue a los hombres del mural de Beni Hasan (A2). — referencias: A2
 

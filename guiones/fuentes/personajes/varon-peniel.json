@@ -29,7 +29,7 @@
       "rasgo": "Como no puede con Jacob, le toca el encaje del muslo y se lo descoyunta",
       "certeza": "texto",
       "ref": "Gn 32:25",
-      "cita": "como vió que no podía con él, tocó en el sitio del encaje de su muslo"
+      "cita": "como vió que no podía con él, tocó en el sitio del encaje de su muslo, y descoyuntóse el muslo de Jacob"
     },
     {
       "rasgo": "Pide que lo deje porque raya el alba",
@@ -77,9 +77,9 @@
       ]
     },
     {
-      "rasgo": "Oseas 12:3-4 llama «ángel» a aquel con quien luchó Jacob",
+      "rasgo": "Oseas 12:3-4 dice que Jacob «venció al ángel»",
       "certeza": "externa",
-      "fuente": "Oseas 12:3-4 (Reina-Valera 1909); el libro aún no está en datos/biblia.js. Sirve para dirigir; no se cita en el video de Génesis.",
+      "fuente": "Oseas 12:3-4, Reina-Valera 1909: «con su fortaleza venció al ángel» (12:3) y «Venció al ángel, y prevaleció» (12:4). El libro aún no está en datos/biblia.js: el texto se comprobó el 18-nov-2026 en Bible Gateway, versión «Reina-Valera Antigua» (RVA, la de 1909), https://www.biblegateway.com/passage/?search=Oseas+12%3A3-4&version=RVA. Sirve para dirigir; no se cita en el video de Génesis.",
       "nota": "Es otra parte de la Biblia, muy posterior al relato; no cambia lo que dice Gn 32."
     },
     {

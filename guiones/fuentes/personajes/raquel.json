@@ -20,7 +20,7 @@
     "nombre": "RAQUEL",
     "tipo": "personaje"
   },
-  "nota": "Aspecto para Gn 29–31, de pastora soltera (Gn 29:9) a madre de José (Gn 30:24). Una sola hoja para los veinte años en casa de Labán (Gn 31:41): se la dibuja joven, como en el pozo y en la boda; en gn-64 a gn-68 (de unos catorce a unos veinte años después) las tomas la hacen algo más madura sin cambiarle la cara, la ropa ni el pelo, y si no basta se hará otra hoja (decisión pendiente n.º 51 de guiones/LEEME.md). Es la hermana menor de Lea (hoja LEA): parecido de familia, distinta ropa. En gn-65 solo se la nombra (Gn 30:25); sale si el guion la muestra con José recién nacido, que no lleva hoja (como Isaac en gn-42). Los ídolos que hurta (Gn 31:19) y esconde (Gn 31:34) tienen hoja propia (objetos/idolos-laban); la albarda donde se sienta está en el escenario TIENDA_RAQUEL. «Estoy con la costumbre de las mujeres» (Gn 31:35) se lee y no se muestra (decisión pendiente n.º 54). En Gn 31:14-16 habla a la vez que Lea (decisión pendiente n.º 53).",
+  "nota": "Aspecto de Gn 29 a Gn 35, de pastora soltera (Gn 29:9) a su muerte en el camino de Efrata (Gn 35:19). Una sola hoja: se la dibuja joven, como en el pozo y en la boda; en gn-64 a gn-68 (de unos catorce a unos veinte años después) y en gn-71 y gn-75 (más de veinte años después, junto a JACOB_MAYOR, que aparenta unos sesenta) las tomas la hacen más madura sin cambiarle la cara, la ropa ni el pelo, y si no basta se hará otra hoja (decisión pendiente n.º 51 de guiones/LEEME.md). En gn-71 va la última, con José niño (Gn 33:2, 33:7), que no lleva hoja. Su parto y su muerte (Gn 35:16-19) no se muestran de forma gráfica en ningún perfil (decisión pendiente n.º 65); la partera tiene hoja propia (personajes/partera-efrata) y el título de su sepultura también (objetos/titulo-raquel). Es la hermana menor de Lea (hoja LEA): parecido de familia, distinta ropa. En gn-65 solo se la nombra (Gn 30:25); sale si el guion la muestra con José recién nacido, que no lleva hoja (como Isaac en gn-42). Los ídolos que hurta (Gn 31:19) y esconde (Gn 31:34) tienen hoja propia (objetos/idolos-laban); la albarda donde se sienta está en el escenario TIENDA_RAQUEL. «Estoy con la costumbre de las mujeres» (Gn 31:35) se lee y no se muestra (decisión pendiente n.º 54). En Gn 31:14-16 habla a la vez que Lea (decisión pendiente n.º 53).",
   "edades": [
     {
       "dato": "Es la hija menor de Labán",
@@ -135,7 +135,7 @@
       "cita": "Ruégote que me des de las mandrágoras de tu hijo"
     },
     {
-      "rasgo": "Dios se acuerda de ella y da a luz a José",
+      "rasgo": "Dios se acuerda de ella y abre su matriz",
       "certeza": "texto",
       "ref": "Gn 30:22",
       "cita": "acordóse Dios de Rachêl, y oyóla Dios, y abrió su matriz"

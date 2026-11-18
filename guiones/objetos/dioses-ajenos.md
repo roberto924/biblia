@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `DIOSES_AJENOS` (objeto)
 - **Pasajes**: gn-74
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). El texto no describe ni los dioses ni los zarcillos, ni dice de quién eran: la hoja propone figurillas toscas sin rasgos de ninguna divinidad conocida y aretes lisos, sobre un paño (decisión pendiente n.º 67). El texto tampoco dice si entre ellos van los ídolos que Raquel hurtó a Labán (Gn 31:19, objeto idolos-laban del redactor de Gn 29–31): si su hoja existe, puede mezclarse una de esas figuras, pero no se presenta como dato. La RV1909 dice «encina» (Gn 35:4), no alcornoque. La encina es del escenario siquem.
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). El texto no describe ni los dioses ni los zarcillos, ni dice de quién eran: la hoja propone figurillas toscas sin rasgos de ninguna divinidad conocida y aretes lisos, sobre un paño (decisión pendiente n.º 67). El texto tampoco dice si entre ellos van los ídolos que Raquel hurtó a Labán (Gn 31:19; objetos/idolos-laban, tres figurillas de barro pardo rojizo): puede mezclarse una de esas figuras, pero no se presenta como dato. La RV1909 dice «encina» (Gn 35:4), no alcornoque. La encina es del escenario siquem.
 
 ## Lo que dice el texto
 
