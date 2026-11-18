@@ -1,0 +1,101 @@
+{
+  "id": "beerseba",
+  "nombre": "Beerseba: el pozo y el campamento de Abraham (Gn 21–22)",
+  "pasajes": [
+    "gn-44",
+    "gn-45",
+    "gn-46"
+  ],
+  "element": {
+    "nombre": "BEERSEBA",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego. El pozo tiene hoja propia (objetos/pozo-beerseba) y manda sobre su forma; la tienda también (objetos/tienda-abram); las siete corderas (Gn 21:28-30) entran en sus tomas con la hoja del pozo. La hoja muestra el lugar antes de Gn 21:33: el bosque que Abraham planta allí sale en un solo versículo y se resuelve en su toma. Gn 22 empieza y acaba aquí por inferencia (abajo); la noticia de Gn 22:20 (gn-46) puede ir sobre esta vista o sin escenario, como decida el guion. Si el campamento de Gn 21:1-14 (gn-42 y gn-43) es este mismo, el texto no lo dice: lo decide el guion. El desierto adonde va Agar es el escenario desierto-beerseba. Sin la lámina 1, como los demás paisajes abiertos (decisión pendiente n.º 37 de guiones/LEEME.md).",
+  "texto": [
+    {
+      "dato": "Los siervos de Abimelec le habían quitado a Abraham un pozo",
+      "certeza": "texto",
+      "ref": "Gn 21:25",
+      "cita": "un pozo de agua, que los siervos de Abimelech le habían quitado"
+    },
+    {
+      "dato": "Abraham cavó ese pozo",
+      "certeza": "texto",
+      "ref": "Gn 21:30",
+      "cita": "para que me sean en testimonio de que yo cavé este pozo"
+    },
+    {
+      "dato": "El lugar se llama Beer-seba porque allí juraron ambos",
+      "certeza": "texto",
+      "ref": "Gn 21:31",
+      "cita": "llamó á aquel lugar Beer-seba; porque allí juraron ambos"
+    },
+    {
+      "dato": "Abraham planta allí un bosque e invoca a Jehová",
+      "certeza": "texto",
+      "ref": "Gn 21:33",
+      "cita": "plantó [Abraham] un bosque en Beer-seba, é invocó allí el nombre de Jehová Dios eterno"
+    },
+    {
+      "dato": "Abraham mora muchos días en tierra de los Filisteos",
+      "certeza": "texto",
+      "ref": "Gn 21:34",
+      "cita": "moró Abraham en tierra de los Filisteos muchos días"
+    },
+    {
+      "dato": "Después de Moriah vuelven a Beer-seba, y Abraham habita allí",
+      "certeza": "texto",
+      "ref": "Gn 22:19",
+      "cita": "se fueron juntos á Beer-seba; y habitó Abraham en Beer-seba"
+    },
+    {
+      "dato": "Está en la tierra del Mediodía",
+      "certeza": "inferido",
+      "nota": "Gn 20:1 lleva a Abraham a la tierra del Mediodía, y desde entonces el texto no lo saca de ella hasta Moriah: mora en tierra de los Filisteos (Gn 21:34) y vuelve a Beer-seba (Gn 22:19).",
+      "base": [
+        {
+          "ref": "Gn 20:1",
+          "cita": "partió Abraham á la tierra del Mediodía"
+        }
+      ]
+    },
+    {
+      "dato": "El trato de Gn 21:22-32 se hace junto al pozo",
+      "certeza": "inferido",
+      "nota": "Abraham dice «este pozo» (Gn 21:30): se entiende que hablan junto a él.",
+      "base": [
+        {
+          "ref": "Gn 21:30",
+          "cita": "yo cavé este pozo"
+        }
+      ]
+    },
+    {
+      "dato": "Abraham sale de aquí hacia Moriah",
+      "certeza": "inferido",
+      "nota": "Gn 22:1-3 no dice dónde está Abraham. Planta allí un bosque (Gn 21:33), mora muchos días en esa tierra (Gn 21:34) y después de Moriah vuelve y habita en Beer-seba (Gn 22:19). Lo decide el guion.",
+      "base": [
+        {
+          "ref": "Gn 22:19",
+          "cita": "habitó Abraham en Beer-seba"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Tierra abierta, llana y seca, de color arena, con matas bajas y colinas suaves y peladas en el horizonte; en primer término, el pozo de boca redonda forrada de piedras de campo, con su brocal bajo y una pila tosca de piedra al lado (hoja POZO_BEERSEBA); a cierta distancia, dos o tres tiendas bajas de pelo de cabra (hoja TIENDA_ABRAM); luz clara de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe el lugar. Lo seco sale de que es tierra del Mediodía (Gn 20:1) y de que el desierto lleva su nombre (Gn 21:14); las tiendas, de que Abraham mora allí (Gn 21:34, 22:19). Sin árboles: el bosque llega en Gn 21:33."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of open, dry, flat country in the far south of Canaan in the ancient Near East, by day, with no people and no animals in it. The ground is sandy and pale, with low scrub, and bare, gentle hills line the horizon. In the foreground is a well dug into the earth: a round opening lined with rough, uncut field stones, with a low ring of the same stones about knee high, and beside it a rough stone trough for watering animals. Some distance behind it stand two or three low, wide tents of dark brown-black goat-hair cloth on wooden poles, each with one long side open.",
+    "prompt_es": "Una sola vista general de tierra abierta, seca y llana en el extremo sur de Canaán, en el antiguo Oriente Próximo, de día y sin personas ni animales. El suelo es arenoso y claro, con matas bajas, y colinas suaves y peladas bordean el horizonte. En primer término, un pozo cavado en la tierra: una boca redonda forrada de piedras de campo toscas, sin labrar, con un brocal bajo de las mismas piedras a la altura de la rodilla, y a su lado una pila tosca de piedra para abrevar. A cierta distancia, detrás, dos o tres tiendas bajas y anchas de paño de pelo de cabra pardo oscuro casi negro sobre postes de madera, cada una con un lado largo abierto.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not add a pulley, a winch, a roof or a bucket on a chain to the well. Do not paint trees, a grove, an altar, a town, people or animals, and do not make the land a sea of sand dunes.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin polea, torno, tejadillo ni cubo con cadena en el pozo. Sin árboles, bosque, altar, ciudad, personas ni animales; que la tierra no sea un mar de dunas."
+  }
+}

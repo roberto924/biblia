@@ -300,6 +300,31 @@ registro esté completo; y propone cambios en las fuentes JSON.
 32. **Los hijos de Het y la persona Heth_1**: la hoja de grupo `hijos-het` usa la persona Heth_1 (Het, hijo de
     Canaán, Gn 10:15), como el catálogo de juego, para que el grupo pueda hablar en Gn 23:5-6. Confirmarlo, o pasar a
     una voz que no es persona (n.º 13, 20 y 26) o al narrador.
+33. **Ismael anciano** (gn-52, hoja `personajes/ismael-mayor`): propuesta por defecto, el mismo rostro y la misma
+    túnica corta de franjas rojas y blancas de la hoja de muchacho, para que se le reconozca, aparentando unos sesenta y
+    cinco años: por cálculo tiene unos ochenta y nueve (Gn 25:7 y 16:16) y vive hasta los ciento treinta y siete
+    (Gn 25:17), y tiene que verse mayor que Isaac en la misma toma. Alternativa: vestirlo como hombre del desierto de
+    Parán (Gn 21:21), que el texto no describe. No habla, así que no lleva voz. Con esta hoja, de la falta de hojas por
+    edad en gn-52 que señala la n.º 27 queda solo la de Isaac.
+34. **Ciudades sin referencia de época** (Sodoma y Zoar, Gerar, la ciudad de los hijos de Het y la de Nacor; escenarios
+    `sodoma`, `casa-lot-puerta`, `casa-lot-sala`, `llanura-zoar`, `gerar`, `puerta-het`, `pozo-nacor`, `casa-betuel`):
+    supuesto por defecto, adobe sobre zócalo de piedra, techos planos, puertas de ciudad entre dos torres bajas con
+    bancos, sin palacios, templos, zigurats ni almenas; la puerta de Het, con más piedra, para que no se confunda con la
+    de Sodoma. `referencias.json` no tiene ninguna referencia comprobada de arquitectura de Canaán ni de Mesopotamia.
+35. **Moriah sin identificar**: la hoja `escenarios/moriah` es un monte pelado, sin ciudad ni templo. 2 Crónicas 3:1
+    llama Moriah al monte donde Salomón edificó el templo, y la tradición los identifica (Fuente externa; el libro aún no
+    está en `datos/biblia.js`), pero Gn 22 no lo dice. Alternativa: sugerir el lugar sin nombrarlo.
+36. **Escenarios que no están en el catálogo de juego** (como la n.º 16 y la n.º 30): `vista-sodoma`,
+    `casa-lot-puerta`, `casa-lot-sala`, `llanura-zoar`, `cueva-lot`, `desierto-beerseba`, `puerta-het`, `pozo-nacor`,
+    `casa-betuel` y `campo-isaac`. Los que sí están usan su id (`mamre`, `sodoma`, `gerar`, `beerseba`, `moriah`,
+    `macpela`), aunque la hoja muestre una parte del lugar (la puerta de Sodoma, la sala del rey de Gerar). Además, el
+    catálogo pone Gn 24:62-63 en `pozo-viviente`, pero el texto no dice que el campo donde Isaac sale a orar esté junto
+    al pozo: `campo-isaac` no lo dibuja.
+37. **Paisajes sin la lámina 1 desde el principio**: `mamre`, `vista-sodoma`, `llanura-zoar`, `beerseba`,
+    `desierto-beerseba`, `moriah`, `macpela` y `campo-isaac` llevan `sin_laminas: ["patron-1-paisaje.png"]` antes de
+    generarse, porque su paisaje de colinas secas es casi el de la lámina 1 y la creación ya copió su composición. Las
+    fichas generadas dicen «copiaba su composición», que es la frase de `guiones.py` para el caso de la creación: aquí
+    es preventivo. Alternativa: generarlos con las tres láminas y apartarla solo si copian.
 
 ## Pendiente del proyecto (fuera de los guiones)
 

@@ -1,0 +1,34 @@
+# Casa de Betuel en la ciudad de Nacor (Gn 24:28-61) (escenario)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `CASA_BETUEL` (lugar)
+- **Pasajes**: gn-50, gn-51
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 36 de guiones/LEEME.md); el catálogo tiene «padan-aram» para la casa de Labán en Gn 28–31: si es la misma casa, Gn 24 no lo dice, y se verá al llegar a esos pasajes. El texto la llama casa del padre de Rebeca (Gn 24:23), «nuestra casa» (Gn 24:25) y casa de su madre (Gn 24:28). La hoja muestra el patio, donde se desatan los camellos y se lavan los pies (Gn 24:32), con la habitación donde se come (Gn 24:33, 24:54) abierta a él; el largo relato del criado (Gn 24:34-49) se rueda aquí. Los camellos (objetos/camellos-siervo) y los regalos (Gn 24:53) entran en sus tomas. Quién está en cada toma lo explican las notas de las hojas BETUEL y MADRE_REBECA. Sin referencia de época comprobada (supuesto, n.º 34).
+
+## Lo que dice el texto
+
+- **Texto**: El criado pregunta si hay lugar en casa del padre de Rebeca — Gn 24:23: «¿hay lugar en casa de tu padre donde posemos?»
+- **Texto**: En la casa hay paja, mucho forraje y lugar para posar — Gn 24:25: «También hay en nuestra casa paja y mucho forraje, y lugar para posar»
+- **Texto**: Rebeca corre a contarlo en casa de su madre — Gn 24:28: «hizo saber en casa de su madre estas cosas»
+- **Texto**: Labán ha limpiado la casa y el lugar para los camellos — Gn 24:31: «yo he limpiado la casa, y el lugar para los camellos»
+- **Texto**: Desatan los camellos, les dan paja y forraje, y traen agua para lavar los pies — Gn 24:32: «desató los camellos; y dióles paja y forraje, y agua para lavar los piés de él»
+- **Texto**: Le ponen delante de comer — Gn 24:33: «pusiéronle delante qué comer»
+- **Texto**: Comen, beben y duermen allí; a la mañana el criado pide irse — Gn 24:54: «comieron y bebieron él y los varones que venían con él, y durmieron; y levantándose de mañana, dijo: Enviadme á mi señor»
+- **Inferido**: Hay sitio para diez camellos — El criado llega con diez camellos (Gn 24:10) y Labán ha preparado un lugar para ellos (Gn 24:31): un patio o corral amplio. — base: Gn 24:10 «tomó diez camellos» — base: Gn 24:31 «el lugar para los camellos»
+
+## Rasgos
+
+- **Interpretación del ilustrador**: Patio amplio de tierra apisonada rodeado de muros de adobe enlucido; a un lado, un cobertizo abierto de ramas y cañas sobre postes, con paja y forraje amontonados; un abrevadero de adobe, unas tinajas grandes de agua y una jofaina ancha de barro para lavar los pies; al fondo, una habitación de techo plano abierta al patio, con esteras, una mesa baja y lamparillas de aceite; una escalera de adobe sube al tejado; luz cálida y baja de la tarde — Interpretación del ilustrador: la paja, el forraje, el agua y el lugar para los camellos salen del texto (Gn 24:25, 24:31-32); su forma, el cobertizo, la habitación y la escalera son elección. La tarde, de que el criado llega a la ciudad «á la hora de la tarde» (Gn 24:11).
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/casa-betuel.png`; luego subirla a Cinema Studio como Element `CASA_BETUEL`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+
+_Una sola vista general del patio de una casa de familia en una ciudad pequeña del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. El patio, ancho y de tierra apisonada, está cerrado por muros de adobe enlucido. A lo largo de un lado hay un cobertizo abierto de ramas y cañas sobre postes de madera, con montones de paja y forraje debajo, y cerca un abrevadero de adobe, unas tinajas grandes de agua y una jofaina ancha de barro para lavar los pies. Al fondo, una habitación de techo plano se abre al patio y deja ver esteras de junco, una mesa baja de madera y lamparillas de aceite, y una escalera de adobe sube al tejado. Una luz cálida y baja de la tarde cruza el patio._ Evitar: _Sin paneles ni dos momentos lado a lado. Sin personas, camellos, oro, joyas, cofres de tesoro ni alfombras lujosas. Que no sea un palacio, una villa romana ni un palacio con cúpulas y arcos apuntados._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make one single establishing view of the courtyard of a family house in a small town in the ancient Near East, in the late afternoon, with no people and no animals in it. The wide courtyard of beaten earth is enclosed by plastered mud-brick walls. Along one side runs an open shelter of branches and reeds on wooden posts, with heaps of straw and fodder under it, and nearby there is a mud-brick water trough, a few large clay water jars and a wide clay basin for washing feet. At the back, a room with a flat roof opens onto the courtyard, showing reed mats, a low wooden table and small oil lamps inside, and a mud-brick stair climbs to the roof. Warm, low evening light falls across the yard. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not split the picture into panels or show two moments side by side. Do not paint people, camels, gold, jewelry, chests of treasure or rich carpets. Do not make it a palace, a Roman villa or a palace with domes and pointed arches.
+```

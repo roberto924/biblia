@@ -1,0 +1,51 @@
+{
+  "id": "sodoma",
+  "nombre": "Sodoma: la puerta de la ciudad (Gn 19:1-2)",
+  "pasajes": [
+    "gn-38"
+  ],
+  "element": {
+    "nombre": "PUERTA_SODOMA",
+    "tipo": "lugar"
+  },
+  "nota": "El id es el del catálogo de juego («Sodoma y la llanura»): la lámina del juego puede salir de esta hoja, que muestra la ciudad sin violencia ni fuego. Gn 19 no describe la ciudad: dice que tiene una puerta donde Lot está sentado, una plaza donde los dos ángeles pensaban pasar la noche y la casa de Lot (escenarios casa-lot-puerta y casa-lot-sala). La destrucción (Gn 19:24-25) se ve de lejos (escenarios llanura-zoar y vista-sodoma), sin cuerpos (decisión pendiente n.º 25 de guiones/LEEME.md). No se dibuja una ciudad de aspecto malvado: el texto juzga a sus hombres (Gn 13:13), no su arquitectura. Sin referencia de época comprobada (supuesto, n.º 34).",
+  "texto": [
+    {
+      "dato": "Los dos ángeles llegan a Sodoma a la caída de la tarde; Lot está sentado a la puerta de la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 19:1",
+      "cita": "LLEGARON, pues, los dos ángeles á Sodoma á la caída de la tarde: y Lot estaba sentado á la puerta de Sodoma"
+    },
+    {
+      "dato": "La ciudad tiene una plaza",
+      "certeza": "texto",
+      "ref": "Gn 19:2",
+      "cita": "en la plaza nos quedaremos esta noche"
+    },
+    {
+      "dato": "Está en la llanura, que era toda de riego",
+      "certeza": "texto",
+      "ref": "Gn 13:10",
+      "cita": "toda la llanura del Jordán, que toda ella era de riego"
+    },
+    {
+      "dato": "Lot fue poniendo sus tiendas hasta Sodoma, entre las ciudades de la llanura",
+      "certeza": "texto",
+      "ref": "Gn 13:12",
+      "cita": "Lot asentó en las ciudades de la llanura, y fué poniendo sus tiendas hasta Sodoma"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Puerta en una muralla de adobe sobre zócalo de piedra: un paso hondo entre dos torres bajas y cuadradas, con batientes de madera abiertos y bancos de piedra a los lados del paso; por la puerta se ven una plaza pequeña y casas de adobe de techo plano; fuera de la muralla, campos verdes de riego; luz anaranjada de la caída de la tarde y sombras largas",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que hay puerta, que Lot está sentado en ella (Gn 19:1) y que hay plaza (Gn 19:2), nada de su forma. Los bancos son elección para que Lot pueda estar sentado; las torres, la muralla y las casas, supuesto de época sin referencia comprobada (n.º 34); los campos, de Gn 13:10."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the gateway of a walled town on a fertile plain in the ancient Near East at dusk, with no people in it. A mud-brick wall on a base of rough stones runs to both sides, and the gate is a deep passage between two low, square towers, with heavy wooden doors standing open and plain stone benches along the inner walls of the passage. Through the gateway can be seen a small open square and flat-roofed mud-brick houses. Green irrigated fields lie outside the wall, and the light is the warm orange of late evening, with long shadows.",
+    "prompt_es": "Una sola vista general de la puerta de una ciudad amurallada en una llanura fértil del antiguo Oriente Próximo, a la caída de la tarde y sin personas. Una muralla de adobe sobre un zócalo de piedra tosca se extiende a los dos lados, y la puerta es un paso hondo entre dos torres bajas y cuadradas, con batientes de madera pesados abiertos y bancos sencillos de piedra a lo largo de las paredes del paso. Por la puerta se ven una plaza pequeña y casas de adobe de techo plano. Fuera de la muralla hay campos verdes de riego, y la luz es el naranja cálido del atardecer, con sombras largas.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint fire, smoke, ruins, a palace, temples, idols, statues, soldiers, banners or any person. Do not make the town look evil or monstrous, and do not add carved monsters, skulls or a dark, stormy sky.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin fuego, humo, ruinas, palacio, templos, ídolos, estatuas, soldados, estandartes ni personas. Que la ciudad no parezca malvada ni monstruosa; sin monstruos tallados, calaveras ni cielo oscuro de tormenta."
+  }
+}
