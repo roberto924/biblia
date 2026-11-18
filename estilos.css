@@ -93,7 +93,7 @@ main { padding: .5rem 1rem calc(var(--nav-h) + 2rem + env(safe-area-inset-bottom
   main { --ancho: 88rem; margin-left: var(--lateral); max-width: none;
     padding: 2.25rem max(clamp(1.5rem, 3vw, 3.25rem), calc((100% - var(--lateral) - var(--ancho)) / 2)) 3.5rem; }
   /* Ancho por pantalla: columna de lectura para las de texto, más sitio para las visuales. */
-  main[data-vista="notas"], main[data-vista="fuentes"], main[data-vista="tiempo"]:has(.tl-sec) { --ancho: 46rem; }
+  main[data-vista="notas"], main[data-vista="fuentes"], main[data-vista="tiempo"]:has(.subvistas [href="#tiempo/linea"][aria-current="page"]) { --ancho: 46rem; }
   main[data-vista="leer"]:has(.inicio) { --ancho: 84rem; }
   main[data-vista="personajes"], main[data-vista="mapa"] { --ancho: 108rem; }
   main:has(.herr-arbol) { --ancho: 140rem; }
