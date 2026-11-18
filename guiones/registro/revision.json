@@ -2,14 +2,14 @@
   "personajes/jose": {
     "estado": "aprobada",
     "nota": "",
-    "fecha": "2026-11-17T12:28:44",
+    "fecha": "2026-11-18T00:25:04",
     "archivo": "guiones/imagenes/personajes/jose.png",
     "archivo_sha256": "acd699d83dd4264fb16173f2597fbefd6bd270d480c7cd35a2ebdc09eef1136b"
   },
   "personajes/hermanos": {
     "estado": "aprobada",
     "nota": "",
-    "fecha": "2026-11-17T12:28:44",
+    "fecha": "2026-11-18T00:25:09",
     "archivo": "guiones/imagenes/personajes/hermanos.png",
     "archivo_sha256": "b3667d0e823caf34cad670999586434f64621d9899b1dd41745e5f6e335514be"
   },
@@ -33,5 +33,47 @@
     "fecha": "2026-11-17T12:28:44",
     "archivo": "guiones/imagenes/escenarios/creacion-lumbreras.png",
     "archivo_sha256": "8b08ad0681e3e4a0b9c4bf4dc08d4fa96eff3372a31d028ae7af0551f90a2682"
+  },
+  "personajes/serpiente": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-18T00:24:33",
+    "archivo": "guiones/imagenes/personajes/serpiente.png",
+    "archivo_sha256": "ec5510881d0669f5f483cb90e97db670f0ba38038cef5a76bca7405fe3b6d601"
+  },
+  "personajes/sarai": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-18T00:24:36",
+    "archivo": "guiones/imagenes/personajes/sarai.png",
+    "archivo_sha256": "6ec331874c5c6fb288a60041449c3d1e1057fdcc4cdbd893bbf0e2070623a569"
+  },
+  "personajes/rey-sodoma": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-18T00:24:38",
+    "archivo": "guiones/imagenes/personajes/rey-sodoma.png",
+    "archivo_sha256": "ae3838e5a02eefc1ce9264438007c3360616a90244c0a58c217257b76aef02db"
+  },
+  "personajes/noe": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-18T00:24:50",
+    "archivo": "guiones/imagenes/personajes/noe.png",
+    "archivo_sha256": "0319be0fb8b21a20967b1327b223a2af936fdf4686f4a51def500d1be6cd43b4"
+  },
+  "personajes/melquisedec": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-18T00:24:57",
+    "archivo": "guiones/imagenes/personajes/melquisedec.png",
+    "archivo_sha256": "1088138320f31f94ebd597e721b25df0d66c3dc04c0961169db7d19fad83437d"
+  },
+  "personajes/lot": {
+    "estado": "aprobada",
+    "nota": "",
+    "fecha": "2026-11-18T00:24:59",
+    "archivo": "guiones/imagenes/personajes/lot.png",
+    "archivo_sha256": "d70194e03a97ac3832ed3542eed7bb62f9b4c469cf4eed556cee707581ea7279"
   }
 }
