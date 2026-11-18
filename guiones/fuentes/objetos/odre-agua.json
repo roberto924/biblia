@@ -1,0 +1,72 @@
+{
+  "id": "odre-agua",
+  "nombre": "El odre de agua y el pan de Agar",
+  "pasajes": [
+    "gn-43"
+  ],
+  "element": {
+    "nombre": "ODRE_AGUA",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego («El odre de agua y la fuente»). La fuente de Gn 21:19 es parte del paisaje y no va en esta hoja: le toca al escenario del desierto de Beerseba. La hoja muestra el odre lleno, el mismo odre vacío y el pan, para seguirlos de una toma a otra.",
+  "texto": [
+    {
+      "dato": "Abraham toma pan y un odre de agua y se los da a Agar",
+      "certeza": "texto",
+      "ref": "Gn 21:14",
+      "cita": "tomó pan, y un odre de agua, y diólo á Agar"
+    },
+    {
+      "dato": "Se los pone sobre el hombro",
+      "certeza": "texto",
+      "ref": "Gn 21:14",
+      "cita": "poniéndolo sobre su hombro"
+    },
+    {
+      "dato": "Lo que va sobre el hombro es el pan y el odre, no el muchacho",
+      "certeza": "inferido",
+      "nota": "En la RV1909 «poniéndolo sobre su hombro» sigue a «pan, y un odre de agua»; el muchacho se le entrega aparte, con una palabra que añadieron los traductores entre corchetes. Además Ismael tiene ya catorce años o más (Gn 17:25, 21:5): no se le dibuja a cuestas.",
+      "base": [
+        {
+          "ref": "Gn 21:14",
+          "cita": "poniéndolo sobre su hombro, y [entrególe] el muchacho"
+        }
+      ]
+    },
+    {
+      "dato": "Se acaba el agua del odre",
+      "certeza": "texto",
+      "ref": "Gn 21:15",
+      "cita": "faltó el agua del odre"
+    },
+    {
+      "dato": "Agar lo llena en la fuente y da de beber al muchacho",
+      "certeza": "texto",
+      "ref": "Gn 21:19",
+      "cita": "llenó el odre de agua, y dió de beber al muchacho"
+    },
+    {
+      "dato": "Un odre es una bolsa hecha de piel para llevar líquidos",
+      "certeza": "externa",
+      "fuente": "Explicación «odre» de datos/explicaciones.js, que cita el Easton's Bible Dictionary (1897), entrada «Bottle»."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Odre: piel entera de cabra, parda, con el pelo recortado por fuera, las patas atadas con cordel y la boca en el cuello cerrada con un cordón; una correa de cuero para colgarlo del hombro. Lleno, abultado y tenso; vacío, flácido y arrugado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no dice de qué animal es la piel ni cómo se cierra; la explicación del proyecto solo dice que es de piel. La piel de cabra y la correa son elección del ilustrador."
+    },
+    {
+      "dato": "Pan: unas tortas redondas y planas, envueltas en un paño de lana cruda atado en hatillo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «pan» y nada más. Las tortas planas y el paño son elección del ilustrador."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left is a full water skin made from a whole brown goatskin with the hair clipped short, its leg openings tied off with cord and its neck closed with a leather thong, plump and taut with water, with a leather strap for carrying it over the shoulder. In the center is the same water skin empty, limp and wrinkled. On the right is a small bundle of a few round, flat loaves of bread wrapped in a cloth of undyed cream wool and tied with a knot.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con tres cosas una al lado de otra. A la izquierda, un odre lleno: una piel entera de cabra parda, con el pelo recortado, las patas atadas con cordel y el cuello cerrado con una tira de cuero, abultado y tenso de agua, con una correa de cuero para llevarlo al hombro. En el centro, el mismo odre vacío, flácido y arrugado. A la derecha, un hatillo pequeño con unas tortas de pan redondas y planas envueltas en un paño de lana cruda atado con un nudo.",
+    "negativo_en": "Do not paint a clay jar, a metal flask, a glass bottle, a gourd or a modern canteen. Do not show the animal's head, blood or raw flesh. Do not paint people, hands, a desert, a tree or a well, and keep the background plain.",
+    "negativo_es": "Sin cántaro de barro, cantimplora de metal, botella de vidrio, calabaza ni cantimplora moderna; sin cabeza del animal, sangre ni carne cruda; sin personas, manos, desierto, árbol ni pozo; fondo liso."
+  }
+}

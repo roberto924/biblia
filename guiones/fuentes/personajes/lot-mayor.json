@@ -1,0 +1,189 @@
+{
+  "id": "lot-mayor",
+  "nombre": "Lot (Gn 19)",
+  "personas": [
+    "Lot_1"
+  ],
+  "pasajes": [
+    "gn-38",
+    "gn-39",
+    "gn-40"
+  ],
+  "element": {
+    "nombre": "LOT_MAYOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 19, al menos catorce años después de Gn 14 (cálculo de abajo). Hoja nueva porque la de LOT lo dibuja de unos cuarenta y con el negativo «que no sea viejo ni canoso», y en Gn 19:31 su hija dice que es viejo. Es el mismo hombre: mismo rostro, misma ropa y la cabeza descubierta de LOT, mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de LOT). Lot habla por primera vez en Gn 19, y la hoja LOT no lleva voz: la voz de Lot va en esta ficha. Sus yernos (Gn 19:14) no llevan hoja: salen una vez y se resuelven en la toma. No se le dibuja como villano ni como héroe: el texto cuenta lo que hace sin juzgarlo.",
+  "edades": [
+    {
+      "dato": "Al menos catorce años después de la guerra de los reyes (Gn 14), la última vez que se le vio con la hoja LOT",
+      "certeza": "calculo",
+      "valor": 14,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 14,
+        "pasos": [
+          {
+            "texto": "Edad de Abraham en Gn 17, poco antes de Gn 19",
+            "valor": 99,
+            "ref": "Gn 17:24",
+            "cita": "Era Abraham de edad de noventa y nueve años"
+          },
+          {
+            "texto": "Edad de Abram al salir de Harán",
+            "valor": 75,
+            "ref": "Gn 12:4",
+            "cita": "era Abram de edad de setenta y cinco años cuando salió de Harán"
+          },
+          {
+            "texto": "Años en Canaán cuando Sarai le da a Agar, después de Gn 14",
+            "valor": 10,
+            "ref": "Gn 16:3",
+            "cita": "al cabo de diez años que había habitado Abram en la tierra de Canaán"
+          }
+        ],
+        "supuestos": [
+          "Gn 14 ocurre antes de Gn 16:3, como en el orden del relato; si ocurrió antes, pasaron más años (hasta unos veinticuatro, si fue nada más llegar a Canaán)",
+          "Gn 19 ocurre en el año en que Abraham tiene noventa y nueve, entre Gn 17:1 y el nacimiento de Isaac a los cien (Gn 21:5)",
+          "Abram llega a Canaán el mismo año en que sale de Harán; se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Su hija mayor dice que es viejo",
+      "certeza": "texto",
+      "ref": "Gn 19:31",
+      "cita": "Nuestro padre es viejo"
+    },
+    {
+      "dato": "Edad visual: un hombre de unos sesenta años, con canas en el pelo y en la barba",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da la edad de Lot. La hoja LOT lo dibujó de unos cuarenta (interpretación); con el cálculo de arriba y con Gn 19:31, aquí ronda los sesenta. Sigue siendo una generación más joven que ABRAHAM."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Está sentado a la puerta de Sodoma cuando llegan los dos ángeles",
+      "certeza": "texto",
+      "ref": "Gn 19:1",
+      "cita": "Lot estaba sentado á la puerta de Sodoma"
+    },
+    {
+      "rasgo": "Se levanta a recibirlos y se inclina",
+      "certeza": "texto",
+      "ref": "Gn 19:1",
+      "cita": "levantóse á recibirlos, é inclinóse hacia el suelo"
+    },
+    {
+      "rasgo": "Insiste mucho en hospedarlos en su casa",
+      "certeza": "texto",
+      "ref": "Gn 19:3",
+      "cita": "él porfió con ellos mucho, y se vinieron con él, y entraron en su casa"
+    },
+    {
+      "rasgo": "Les hace banquete y cuece panes sin levadura",
+      "certeza": "texto",
+      "ref": "Gn 19:3",
+      "cita": "hízoles banquete, y coció panes sin levadura"
+    },
+    {
+      "rasgo": "Sale a la puerta y la cierra tras sí",
+      "certeza": "texto",
+      "ref": "Gn 19:6",
+      "cita": "Lot salió á ellos á la puerta, y cerró las puertas tras sí"
+    },
+    {
+      "rasgo": "Ofrece a sus dos hijas a los de la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 19:8",
+      "cita": "yo tengo dos hijas que no han conocido varón; os las sacaré afuera"
+    },
+    {
+      "rasgo": "Para proteger a sus huéspedes",
+      "certeza": "texto",
+      "ref": "Gn 19:8",
+      "cita": "solamente á estos varones no hagáis nada, pues que vinieron á la sombra de mi tejado"
+    },
+    {
+      "rasgo": "Los de Sodoma lo tienen por extranjero",
+      "certeza": "texto",
+      "ref": "Gn 19:9",
+      "cita": "Vino éste aquí para habitar como un extraño"
+    },
+    {
+      "rasgo": "A sus yernos les parece que se burla",
+      "certeza": "texto",
+      "ref": "Gn 19:14",
+      "cita": "pareció á sus yernos como que se burlaba"
+    },
+    {
+      "rasgo": "Se detiene, y los varones lo sacan de la mano",
+      "certeza": "texto",
+      "ref": "Gn 19:16",
+      "cita": "deteniéndose él, los varones asieron de su mano"
+    },
+    {
+      "rasgo": "Teme no poder escapar al monte",
+      "certeza": "texto",
+      "ref": "Gn 19:19",
+      "cita": "yo no podré escapar al monte, no sea caso que me alcance el mal, y muera"
+    },
+    {
+      "rasgo": "Pide huir a una ciudad cercana y pequeña",
+      "certeza": "texto",
+      "ref": "Gn 19:20",
+      "cita": "esta ciudad está cerca para huir allá, la cual es pequeña"
+    },
+    {
+      "rasgo": "Llega a Zoar al salir el sol",
+      "certeza": "texto",
+      "ref": "Gn 19:23",
+      "cita": "El sol salía sobre la tierra, cuando Lot llegó á Zoar"
+    },
+    {
+      "rasgo": "Por miedo se va al monte y vive en una cueva con sus dos hijas",
+      "certeza": "texto",
+      "ref": "Gn 19:30",
+      "cita": "tuvo miedo de quedar en Zoar, y se alojó en una cueva él y sus dos hijas"
+    },
+    {
+      "rasgo": "Sus hijas le dan a beber vino dos noches seguidas",
+      "certeza": "texto",
+      "ref": "Gn 19:35",
+      "cita": "dieron á beber vino á su padre también aquella noche"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja LOT, mayor: enjuto, piel morena oliva, ojos oscuros con arrugas, pelo abundante hasta la nuca y barba cerrada en punta, los dos con muchas canas; rostro gastado, inquieto y vacilante",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Se conservan los rasgos de la hoja LOT, que siguen a los hombres del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026); las canas, a Gn 19:31; lo vacilante, a que «se detiene» en Gn 19:16.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en la hoja LOT: túnica de lana hasta la rodilla, de franjas rojas y blancas, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón de cuerda; sandalias; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de la hoja LOT (hombres de Asia occidental del mural de Beni Hasan, A1, A2) para que se le reconozca, también en la cueva de Gn 19:30.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre mayor, voz tensa y algo quebrada, español neutro. Gn 19:2: hospitalario e insistente. Gn 19:7-8: suplica, desesperado, a los de la ciudad. Gn 19:14: urgente con sus yernos. Gn 19:18-20: ruega con miedo. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a lean herdsman from western Asia of about sixty, with olive-brown skin, dark eyes with lines around them, thick hair that reaches the nape of his neck and a full beard trimmed to a clear point below the chin, both dark but heavily streaked with grey. His head is bare, with nothing tied around it. His face is worn, uneasy and hesitant. He wears a knee-length wool tunic woven with narrow red and white stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, fastened over the left shoulder so that the right shoulder is bare, with a cord belt and leather sandals. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Pastor enjuto de Asia occidental de unos sesenta años; piel morena oliva, ojos oscuros con arrugas alrededor, pelo abundante hasta la nuca y barba cerrada acabada en punta bajo el mentón, los dos oscuros pero con muchas canas. Cabeza descubierta, sin nada atado. Rostro gastado, inquieto y vacilante. Túnica de lana hasta la rodilla con franjas estrechas rojas y blancas, al modo de los asiáticos de las tumbas egipcias del Reino Medio, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón de cuerda y sandalias. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him look young, and do not make him frail, bald or white-haired like a very old man. Do not make him sneer, look greedy or look like a villain or a hero. Do not dress him in Egyptian white linen, a turban, a crown, armor, bracelets or other jewelry. Do not paint a city, a house, a door, a cave or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no parezca joven, ni frágil, calvo o de pelo blanco como un anciano; sin mueca, aire codicioso, de villano ni de héroe; sin lino blanco egipcio, turbante, corona, armadura, brazaletes ni otras joyas; sin ciudad, casa, puerta, cueva ni otras personas; fondo liso."
+  }
+}

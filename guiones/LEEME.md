@@ -249,6 +249,25 @@ registro esté completo; y propone cambios en las fuentes JSON.
     lleve.
 20. **Voces a coro de Babel** (Gn 11:3-4): los constructores no son personas de `datos/biblia.js`; mismo caso que
     la serpiente (n.º 13).
+21. **Los tres varones de Mamre y Jehová** (Gn 18): el texto dice que Abraham ve «tres varones» (18:2) que comen
+    (18:8), y después que habla Jehová (18:13, 18:17-33) sin decir si es uno de ellos; dos llegan a Sodoma como
+    «ángeles» (19:1). Propuesta por defecto (hoja `personajes/varones-mamre`): tres hombres iguales, sin alas, halo ni
+    luz propia, ninguno marcado como Dios (n.º 1); las palabras de Jehová no se ponen en la boca de ninguno, y desde
+    18:22 Abraham queda solo «delante de Jehová», sin figura. Quién habla en 18:10 y 18:15 («dijo») y en 19:17 y
+    19:21-22 queda para el guion. Alternativa: mostrar al tercero hablando con Abraham hasta 18:33.
+22. **Voces sin persona en Gn 18–19**: los varones y ángeles (18:5, 18:9; 19:2, 19:12-13, 19:15) y el coro de los
+    hombres de Sodoma (19:5, 19:9) no son personas de `datos/biblia.js`; mismo caso que la serpiente (n.º 13) y
+    Babel (n.º 20): voces propias o leídas por el narrador.
+23. **Ropa de Gerar** (Abimelec y Ficol, Gn 20–21, «tierra de los Filisteos»): no hay referencia comprobada.
+    Supuesto por defecto, el mismo de los reyes de Canaán (n.º 17): sin corona ni casco, tejido rico de Beni Hasan
+    (A1, A2); Ficol con una lanza en reposo para que se lea su cargo.
+24. **Circuncisión** (Gn 17:10-14, 17:23-27; 21:4): propuesta por defecto, nunca se muestra en ningún perfil; se
+    entiende por la narración (los varones de la casa reunidos, la tienda cerrada).
+25. **Gn 19 en los perfiles**: el cerco de la casa de Lot (19:4-11), la lluvia de azufre y fuego (19:24-25), la
+    mujer de Lot hecha sal (19:26) y las hijas en la cueva (19:32-35). Propuesta por defecto, nada explícito en
+    ningún perfil: puertas, gritos y sombras en la noche; ciudades ardiendo a lo lejos, sin cuerpos; la estatua sin
+    rostro de espanto y sin transformación paso a paso (`objetos/estatua-sal`); en la cueva, solo el vino y Lot
+    dormido, con fundido. La narración se lee entera en los dos perfiles salvo que el usuario decida otra cosa.
 
 ## Pendiente del proyecto (fuera de los guiones)
 
