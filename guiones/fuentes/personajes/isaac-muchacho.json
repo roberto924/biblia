@@ -1,0 +1,163 @@
+{
+  "id": "isaac-muchacho",
+  "nombre": "Isaac muchacho (Gn 22)",
+  "personas": [
+    "Isaac_1"
+  ],
+  "pasajes": [
+    "gn-45"
+  ],
+  "element": {
+    "nombre": "ISAAC_MUCHACHO",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 22. En gn-42 (Gn 21:1-8) es un recién nacido y, al final, un niño recién destetado (Gn 21:8): no lleva hoja, como Ismael en Gn 16. Isaac de adulto (Gn 24:62 en adelante) tiene su propia hoja, isaac-adulto, con la misma cara. Que lo aten y lo pongan sobre la leña (Gn 22:9) y el cuchillo (Gn 22:10) no se muestran de forma gráfica en ningún perfil, como los animales de Gn 15 (decisión n.º 19 de guiones/LEEME.md): la hoja lo muestra de pie, libre y sin heridas. El ángel de Jehová que llama desde el cielo (Gn 22:11, 22:15) no tiene figura (decisión n.º 1). Gn 22:19 dice que Abraham volvió a sus mozos y que «se fueron juntos á Beer-seba» sin nombrar a Isaac: la ficha no decide si va con ellos; lo resuelve el guion. La voz de Isaac_1 está en esta ficha porque solo habla aquí (Gn 22:7); su voz de adulto es la decisión pendiente n.º 27.",
+  "edades": [
+    {
+      "dato": "El texto lo llama «el muchacho»",
+      "certeza": "texto",
+      "ref": "Gn 22:5",
+      "cita": "yo y el muchacho iremos hasta allí"
+    },
+    {
+      "dato": "El ángel lo llama también «el muchacho»",
+      "certeza": "texto",
+      "ref": "Gn 22:11-12",
+      "cita": "No extiendas tu mano sobre el muchacho"
+    },
+    {
+      "dato": "Ya había crecido y sido destetado antes de este relato",
+      "certeza": "texto",
+      "ref": "Gn 21:8",
+      "cita": "creció el niño, y fué destetado"
+    },
+    {
+      "dato": "Como mucho unos treinta y siete años en Gn 22",
+      "certeza": "calculo",
+      "valor": 37,
+      "nota": "Es un tope, no su edad: Gn 22 no da cuántos años tiene. Gn 23:1 es posterior a este pasaje (gn-47): sirve para dirigir, no se cita en el video.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 37,
+        "pasos": [
+          {
+            "texto": "Años que vivió Sara",
+            "valor": 127,
+            "ref": "Gn 23:1",
+            "cita": "Y FUÉ la vida de Sara ciento veintisiete años"
+          },
+          {
+            "texto": "Edad de Sara al nacer Isaac",
+            "valor": 90,
+            "ref": "Gn 17:17",
+            "cita": "¿y Sara, ya de noventa años, ha de parir?"
+          }
+        ],
+        "supuestos": [
+          "Los noventa años de Gn 17:17 son la edad de Sara al parir, la misma lectura que la ficha de Sarai (Abraham tiene cien al nacer Isaac, Gn 21:5); con la otra lectura, Isaac tendría como mucho treinta y seis",
+          "Los hechos de Gn 22 ocurren antes de la muerte de Sara (Gn 23): se sigue el orden del relato, que no da el tiempo entre los dos capítulos",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Tiene fuerza para cargar la leña del holocausto hasta el lugar",
+      "certeza": "inferido",
+      "nota": "Abraham le pone encima la leña al dejar a los mozos, cuando ya ven el lugar de lejos, y suben juntos: no es un niño pequeño.",
+      "base": [
+        {
+          "ref": "Gn 22:4",
+          "cita": "vió el lugar de lejos"
+        },
+        {
+          "ref": "Gn 22:6",
+          "cita": "púsola sobre Isaac su hijo"
+        }
+      ]
+    },
+    {
+      "dato": "Edad visual: un muchacho de unos dieciséis años, alto ya pero sin barba",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 28 de guiones/LEEME.md): el texto no da su edad. Entre lo que dice el texto (muchacho, carga la leña, pregunta por el cordero) y el tope del cálculo (treinta y siete), se le dibuja adolescente, nunca niño pequeño."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo único de Abraham, al que su padre ama",
+      "certeza": "texto",
+      "ref": "Gn 22:2",
+      "cita": "Toma ahora tu hijo, tu único, Isaac, á quien amas"
+    },
+    {
+      "rasgo": "Sale con su padre y con dos mozos",
+      "certeza": "texto",
+      "ref": "Gn 22:3",
+      "cita": "tomó consigo dos mozos suyos, y á Isaac su hijo"
+    },
+    {
+      "rasgo": "Carga la leña del holocausto y sube junto a su padre",
+      "certeza": "texto",
+      "ref": "Gn 22:6",
+      "cita": "púsola sobre Isaac su hijo: y él tomó en su mano el fuego y el cuchillo; y fueron ambos juntos"
+    },
+    {
+      "rasgo": "Llama a su padre y le pregunta por el cordero",
+      "certeza": "texto",
+      "ref": "Gn 22:7",
+      "cita": "Padre mío. Y él respondió: Heme aquí, mi hijo. Y él dijo: He aquí el fuego y la leña; mas ¿dónde está el cordero para el holocausto?"
+    },
+    {
+      "rasgo": "Su padre lo ata y lo pone en el altar, sobre la leña",
+      "certeza": "texto",
+      "ref": "Gn 22:9",
+      "cita": "ató á Isaac su hijo, y púsole en el altar sobre la leña"
+    },
+    {
+      "rasgo": "Un carnero se ofrece en su lugar",
+      "certeza": "texto",
+      "ref": "Gn 22:13",
+      "cita": "ofrecióle en holocausto en lugar de su hijo"
+    },
+    {
+      "rasgo": "El texto no le da más palabras que las de Gn 22:7 ni dice qué sintió",
+      "certeza": "inferido",
+      "nota": "Después de su pregunta (Gn 22:7) y de la respuesta de su padre (Gn 22:8), el texto solo cuenta lo que hace Abraham. No dice si Isaac tuvo miedo ni si se resistió: la hoja no le pone miedo ni calma heroica, y las tomas no le inventan gestos que el texto no da.",
+      "base": [
+        {
+          "ref": "Gn 22:8",
+          "cita": "E iban juntos."
+        }
+      ]
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros, pelo oscuro abundante y natural hasta la nuca, sin barba, con apenas una sombra de bozo; delgado pero fuerte; rostro abierto, serio y confiado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El pelo abundante hasta la nuca sigue a los hombres de Asia occidental del mural de Beni Hasan (A2), como su padre; sin barba, por su edad visual. Los ojos y la forma de la cara se repiten en la hoja de Isaac adulto para que se reconozca.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta la rodilla, color crema, con franjas estrechas rojas y azul oscuro, que le cubre los dos hombros; cinturón de cuerda; sandalias de correas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, como la ropa de Abram (decisión pendiente n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Las túnicas de franjas de los hombres de Asia occidental siguen el mural de Beni Hasan (A2); el fondo crema, el azul oscuro y que cubra los dos hombros son elección del ilustrador, para distinguirlo de Lot y para que la hoja sirva en las tomas del altar sin enseñar más de lo necesario.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Muchacho, voz clara de adolescente que ya empieza a cambiar, español neutro. Solo habla en Gn 22:7: «Padre mío», con confianza, y la pregunta por el cordero, con curiosidad sencilla, sin miedo teatral ni sospecha. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same boy three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a teenage boy from western Asia of about sixteen, already tall but slim and wiry, with olive-brown skin, dark eyes and thick, natural dark hair that reaches the nape of his neck. He has no beard, only a faint shadow of down on the upper lip. His head is bare, with nothing tied around it. His face is open, serious and trusting. He wears a knee-length tunic of cream wool woven with narrow red and dark blue stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, covering both shoulders, a cord belt and leather sandals with straps. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo muchacho tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Muchacho de Asia occidental de unos dieciséis años, ya alto pero delgado y fibroso; piel morena oliva, ojos oscuros, pelo oscuro abundante y natural hasta la nuca. Sin barba, apenas una sombra de bozo. Cabeza descubierta, sin nada atado. Rostro abierto, serio y confiado. Túnica de lana color crema hasta la rodilla con franjas estrechas rojas y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio, que le cubre los dos hombros; cinturón de cuerda y sandalias de correas. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him a small child, and do not give him a full beard or make him look like a grown man. Do not show ropes, firewood, a knife, fire, an altar, wounds or tears. Do not dress him in Egyptian white linen, a turban, a crown, armor or jewelry. Do not paint any other person or any animal, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no sea un niño pequeño, ni tenga barba cerrada ni parezca un hombre hecho; sin cuerdas, leña, cuchillo, fuego, altar, heridas ni lágrimas; sin lino blanco egipcio, turbante, corona, armadura ni joyas; sin otras personas ni animales; fondo liso."
+  }
+}

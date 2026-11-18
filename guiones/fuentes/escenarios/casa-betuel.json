@@ -1,0 +1,88 @@
+{
+  "id": "casa-betuel",
+  "nombre": "Casa de Betuel en la ciudad de Nacor (Gn 24:28-61)",
+  "pasajes": [
+    "gn-50",
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "CASA_BETUEL",
+    "tipo": "lugar"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 36 de guiones/LEEME.md); el catálogo tiene «padan-aram» para la casa de Labán en Gn 28–31: si es la misma casa, Gn 24 no lo dice, y se verá al llegar a esos pasajes. El texto la llama casa del padre de Rebeca (Gn 24:23), «nuestra casa» (Gn 24:25) y casa de su madre (Gn 24:28). La hoja muestra el patio, donde se desatan los camellos y se lavan los pies (Gn 24:32), con la habitación donde se come (Gn 24:33, 24:54) abierta a él; el largo relato del criado (Gn 24:34-49) se rueda aquí. Los camellos (objetos/camellos-siervo) y los regalos (Gn 24:53) entran en sus tomas. Quién está en cada toma lo explican las notas de las hojas BETUEL y MADRE_REBECA. Sin referencia de época comprobada (supuesto, n.º 34).",
+  "texto": [
+    {
+      "dato": "El criado pregunta si hay lugar en casa del padre de Rebeca",
+      "certeza": "texto",
+      "ref": "Gn 24:23",
+      "cita": "¿hay lugar en casa de tu padre donde posemos?"
+    },
+    {
+      "dato": "En la casa hay paja, mucho forraje y lugar para posar",
+      "certeza": "texto",
+      "ref": "Gn 24:25",
+      "cita": "También hay en nuestra casa paja y mucho forraje, y lugar para posar"
+    },
+    {
+      "dato": "Rebeca corre a contarlo en casa de su madre",
+      "certeza": "texto",
+      "ref": "Gn 24:28",
+      "cita": "hizo saber en casa de su madre estas cosas"
+    },
+    {
+      "dato": "Labán ha limpiado la casa y el lugar para los camellos",
+      "certeza": "texto",
+      "ref": "Gn 24:31",
+      "cita": "yo he limpiado la casa, y el lugar para los camellos"
+    },
+    {
+      "dato": "Desatan los camellos y les dan paja y forraje; dan agua para lavar los pies del criado y de los hombres que vienen con él",
+      "certeza": "texto",
+      "ref": "Gn 24:32",
+      "cita": "desató los camellos; y dióles paja y forraje, y agua para lavar los piés de él, y los piés de los hombres que con él venían"
+    },
+    {
+      "dato": "Le ponen delante de comer",
+      "certeza": "texto",
+      "ref": "Gn 24:33",
+      "cita": "pusiéronle delante qué comer"
+    },
+    {
+      "dato": "Comen, beben y duermen allí; a la mañana el criado pide irse",
+      "certeza": "texto",
+      "ref": "Gn 24:54",
+      "cita": "comieron y bebieron él y los varones que venían con él, y durmieron; y levantándose de mañana, dijo: Enviadme á mi señor"
+    },
+    {
+      "dato": "Hay sitio para diez camellos",
+      "certeza": "inferido",
+      "nota": "El criado llega con diez camellos (Gn 24:10) y Labán ha preparado un lugar para ellos (Gn 24:31): un patio o corral amplio.",
+      "base": [
+        {
+          "ref": "Gn 24:10",
+          "cita": "tomó diez camellos"
+        },
+        {
+          "ref": "Gn 24:31",
+          "cita": "el lugar para los camellos"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Patio amplio de tierra apisonada rodeado de muros de adobe enlucido; a un lado, un cobertizo abierto de ramas y cañas sobre postes, con paja y forraje amontonados; un abrevadero de adobe, unas tinajas grandes de agua y una jofaina ancha de barro para lavar los pies; al fondo, una habitación de techo plano abierta al patio, con esteras, una mesa baja y lamparillas de aceite; una escalera de adobe sube al tejado; luz cálida y baja de la tarde",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: la paja, el forraje, el agua y el lugar para los camellos salen del texto (Gn 24:25, 24:31-32); su forma, el cobertizo, la habitación y la escalera son elección. La tarde, de que el criado llega a la ciudad «á la hora de la tarde» (Gn 24:11)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the courtyard of a family house in a small town in the ancient Near East, in the late afternoon, with no people and no animals in it. The wide courtyard of beaten earth is enclosed by plastered mud-brick walls. Along one side runs an open shelter of branches and reeds on wooden posts, with heaps of straw and fodder under it, and nearby there is a mud-brick water trough, a few large clay water jars and a wide clay basin for washing feet. At the back, a room with a flat roof opens onto the courtyard, showing reed mats, a low wooden table and small oil lamps inside, and a mud-brick stair climbs to the roof. Warm, low evening light falls across the yard.",
+    "prompt_es": "Una sola vista general del patio de una casa de familia en una ciudad pequeña del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. El patio, ancho y de tierra apisonada, está cerrado por muros de adobe enlucido. A lo largo de un lado hay un cobertizo abierto de ramas y cañas sobre postes de madera, con montones de paja y forraje debajo, y cerca un abrevadero de adobe, unas tinajas grandes de agua y una jofaina ancha de barro para lavar los pies. Al fondo, una habitación de techo plano se abre al patio y deja ver esteras de junco, una mesa baja de madera y lamparillas de aceite, y una escalera de adobe sube al tejado. Una luz cálida y baja de la tarde cruza el patio.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the walls are plain mud plaster. Do not split the picture into panels or show two moments side by side. Do not paint people, camels, gold, jewelry, chests of treasure or rich carpets. Do not make it a palace, a Roman villa or a building with domes and pointed arches.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en las paredes: las paredes son de barro enlucido liso. Sin paneles ni dos momentos lado a lado. Sin personas, camellos, oro, joyas, cofres de tesoro ni alfombras lujosas. Que no sea un palacio, una villa romana ni un edificio con cúpulas y arcos apuntados."
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
+}

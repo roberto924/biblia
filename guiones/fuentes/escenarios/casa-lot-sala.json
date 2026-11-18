@@ -1,0 +1,57 @@
+{
+  "id": "casa-lot-sala",
+  "nombre": "Dentro de la casa de Lot (Gn 19:3, 19:10-16)",
+  "pasajes": [
+    "gn-38",
+    "gn-39"
+  ],
+  "element": {
+    "nombre": "SALA_CASA_LOT",
+    "tipo": "lugar"
+  },
+  "nota": "No está en el catálogo de juego, que la junta en «sodoma» (decisión pendiente n.º 36 de guiones/LEEME.md). Es donde Lot da el banquete a los dos huéspedes (Gn 19:3), adonde lo meten los varones (Gn 19:10), donde le avisan de la destrucción (Gn 19:12-13) y donde le dan prisa al alba (Gn 19:15). Dónde ocurren Gn 19:12-13 y 19:15 no se dice: se infiere (abajo) y lo decide el guion. La comida, la mujer de Lot (MUJER_LOT) y las hijas (HIJAS_LOT) entran en sus tomas. La calle y la puerta por fuera son el escenario casa-lot-puerta. Sin referencia de época comprobada (supuesto, n.º 34).",
+  "texto": [
+    {
+      "dato": "Los huéspedes entran en casa de Lot; él les hace banquete y cuece panes sin levadura",
+      "certeza": "texto",
+      "ref": "Gn 19:3",
+      "cita": "entraron en su casa; é hízoles banquete, y coció panes sin levadura, y comieron"
+    },
+    {
+      "dato": "Los varones meten a Lot en casa y cierran las puertas",
+      "certeza": "texto",
+      "ref": "Gn 19:10",
+      "cita": "metieron á Lot en casa con ellos, y cerraron las puertas"
+    },
+    {
+      "dato": "Al rayar el alba los ángeles le dan prisa",
+      "certeza": "texto",
+      "ref": "Gn 19:15",
+      "cita": "al rayar el alba, los ángeles daban prisa á Lot"
+    },
+    {
+      "dato": "Gn 19:12-15 ocurre dentro de la casa",
+      "certeza": "inferido",
+      "nota": "Después de meter a Lot en casa (Gn 19:10) el texto no cambia de lugar hasta que lo sacan fuera de la ciudad (Gn 19:16). Lot sale a hablar con sus yernos (Gn 19:14): esa toma no va aquí.",
+      "base": [
+        {
+          "ref": "Gn 19:16",
+          "cita": "le sacaron, y le pusieron fuera de la ciudad"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Sala de adobe enlucido con suelo de tierra apisonada cubierto de esteras; una mesa baja de madera y unos cojines; tinajas de barro junto a una pared y un hogar bajo de barro en un rincón; lamparillas de aceite en hornacinas; en la pared del fondo, la puerta de dos hojas de la casa, cerrada y atrancada por dentro con una viga",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El hogar sale de que Lot cuece panes (Gn 19:3); la puerta de dos hojas atrancada, de «cerraron las puertas» (Gn 19:10) y de la hoja PUERTA_CASA_LOT. Lo demás es elección."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the main room of a town house in the ancient Near East at night, with no people in it. The walls are plastered mud brick and the floor is beaten earth covered with plain reed mats. There is a low wooden table, a few cushions on the mats, clay storage jars along one wall and a low clay hearth in a corner. Small oil lamps in wall niches give a warm glow. In the far wall, the heavy two-leaf wooden door of the house is closed and barred from the inside with a wooden beam.",
+    "prompt_es": "Una sola vista general de la sala principal de una casa de ciudad del antiguo Oriente Próximo, de noche y sin personas. Las paredes son de adobe enlucido y el suelo de tierra apisonada, cubierto de esteras sencillas de junco. Hay una mesa baja de madera, unos cojines sobre las esteras, tinajas de barro a lo largo de una pared y un hogar bajo de barro en un rincón. Lamparillas de aceite en hornacinas dan una luz cálida. En la pared del fondo, la puerta pesada de madera de dos hojas de la casa, cerrada y atrancada por dentro con una viga.",
+    "negativo_en": "Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the walls are plain mud plaster. Do not split the picture into panels or show two moments side by side. Do not paint people, food, wine, weapons, beds, rich furniture or any fire other than the small lamp flames and the hearth. Do not make it a palace hall, and do not add bright light coming through windows.",
+    "negativo_es": "Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en las paredes: las paredes son de barro enlucido liso. Sin paneles ni dos momentos lado a lado. Sin personas, comida, vino, armas, camas, muebles lujosos ni más fuego que las llamitas de las lámparas y el hogar. Que no sea la sala de un palacio; sin luz fuerte que entre por ventanas."
+  }
+}

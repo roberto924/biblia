@@ -1,0 +1,42 @@
+# Los hombres de Sodoma (personaje)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `HOMBRES_SODOMA` (personaje (grupo))
+- **Pasajes**: gn-38
+- **Nota**: Grupo anónimo de seis figuras para representar a muchos. El texto dice «desde el más joven hasta el más viejo» (Gn 19:4); el más joven de la hoja es un hombre joven, no un niño, por lo que piden en la puerta (Gn 19:5). No se les dibuja como monstruos ni con rasgos deformes: son gente de la ciudad, y lo que se muestra es su hostilidad. Lo que piden y la violencia contra Lot (Gn 19:5-9) se cuentan en las tomas sin nada explícito en ningún perfil (decisión pendiente n.º 25 de guiones/LEEME.md). El rey de Sodoma tiene su hoja (REY_SODOMA) y no sale en Gn 19.
+
+## Rasgos
+
+- **Texto**: Ya antes el texto los llama malos y pecadores — Gn 13:13: «los hombres de Sodoma eran malos y pecadores para con Jehová en gran manera»
+- **Texto**: Cercan la casa de Lot, de todas las edades — Gn 19:4: «cercaron la casa los hombres de la ciudad, los varones de Sodoma, todo el pueblo junto, desde el más joven hasta el más viejo»
+- **Texto**: Exigen que Lot les saque a sus huéspedes — Gn 19:5: «¿Dónde están los varones que vinieron á ti esta noche? sácanoslos»
+- **Texto**: Tratan a Lot de extranjero que se hace juez — Gn 19:9: «Vino éste aquí para habitar como un extraño, ¿y habrá de erigirse en juez?»
+- **Texto**: Hacen violencia a Lot y se acercan a romper las puertas — Gn 19:9: «hacían gran violencia al varón, á Lot, y se acercaron para romper las puertas»
+- **Texto**: Heridos de ceguera, se cansan buscando la puerta — Gn 19:11: «hirieron con ceguera; mas ellos se fatigaban por hallar la puerta»
+- **Interpretación del ilustrador**: Seis hombres de edades claramente distintas, del más joven, un hombre de unos veinte años, al más viejo, de barba blanca; piel morena, pelo y ojos oscuros, barbas de distintos largos; gesto hostil, airado y amenazante, sin caricatura — Interpretación del ilustrador: el texto solo da las edades extremas (Gn 19:4) y lo que hacen. El gesto sale de Gn 19:9. El más joven se dibuja adulto por criterio del proyecto, no por el texto.
+
+## Vestuario
+
+- **Supuesto**: Vestidos y túnicas de lana de dibujos variados en rojo oscuro, ocre, blanco y azul oscuro, unos hasta la rodilla y sujetos sobre un hombro, otros más largos; fajas de tela; sandalias; cabezas descubiertas — Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Gente de una ciudad de la llanura de riego (Gn 13:10) y rica (Gn 14:11: «toda la riqueza de Sodoma»), vestida como su rey en la hoja REY_SODOMA: los asiáticos del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026). La variedad de colores y largos es elección del ilustrador. — referencias: A1, A2
+
+## Voz
+
+Coro de voces de hombre de varias edades, ásperas y amenazantes, español neutro. Gn 19:5: exigen, a gritos. Gn 19:9: desprecio y amenaza («Quita allá»). Decisión pendiente del usuario (n.º 22 de guiones/LEEME.md, como la n.º 20 de Babel): voces propias o leídas por el narrador.
+
+## Referencias de época
+
+- Leaders of the Aamu of Shu (facsímil de la pintura de la tumba de Jnumhotep II, Beni Hasan 3) — The Metropolitan Museum of Art (Nueva York), inv. 33.8.17 (Rogers Fund, 1933) — Original: Reino Medio, Dinastía XII (Senwosret II), 1878 a. C. según Commons; facsímil de N. de Garis Davies (1931 según el Met; Commons dice circa 1887, discrepancia sin resolver) — licencia: CC0 (Met Open Access) — imagen: https://commons.wikimedia.org/wiki/File:Leaders_of_the_Aamu_of_Shu_MET_DT272586.jpg [A1]
+- Procession of the Aamu (mural original de la tumba de Jnumhotep II, compuesto fotográfico) — In situ, Beni Hasan (Egipto); fotos de A. D. Riddle, Brown University y Macquarie University (vía Wikimedia Commons), inv. Beni Hasan, tumba BH3 (in situ) — ca. 1900 a. C., según Commons (Reino Medio, Dinastía XII) — licencia: Dominio público en EE. UU. (reproducción fiel de obra anterior a 1931; Public Domain Mark 1.0 según Commons; el reuso fuera de EE. UU. puede tener restricciones) — imagen: https://commons.wikimedia.org/wiki/File:Procession_of_the_Aamu,_Tomb_of_Khnumhotep_II_(composite).jpg [A2]
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/hombres-sodoma.png`; luego subirla a Cinema Studio como Element `HOMBRES_SODOMA`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+
+_Hoja de referencia de grupo sobre fondo gris claro liso: seis hombres de pie en fila, de cuerpo entero: gente de una ciudad rica de la llanura del Jordán, de edades claramente distintas, de un hombre joven de unos veinte años a un viejo de barba blanca. Piel morena, pelo y ojos oscuros, barbas de distintos largos. Ropa de lana con dibujos variados en rojo oscuro, ocre, blanco y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio: unas hasta la rodilla y sujetas sobre un hombro, otras más largas; fajas de tela y sandalias. Cabezas descubiertas y manos vacías. Gesto hostil, airado y amenazante, pero gente corriente, no monstruos; cada uno distinto en cara, estatura y complexión._ Evitar: _Sin niños ni muchachos; que no sean monstruosos, deformes ni grotescos, ni idénticos; sin armas, garrotes, antorchas, coronas, turbantes, cintas en la cabeza, brazaletes ni otras joyas; todos vestidos, sin gestos indecentes; sin casa, puerta, ciudad, cielo de noche ni otras personas; fondo liso._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make a group reference sheet on a plain light grey background, showing six men standing in a single row, each one fully visible from head to feet: townsmen of a rich city in the Jordan plain, of clearly different ages, from a young man of about twenty to an old man with a white beard. They have brown skin, dark hair and dark eyes, and beards of different lengths. They wear wool garments woven with varied patterns in dark red, ochre, white and dark blue in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some knee-length and fastened over one shoulder, some longer, with cloth sashes and leather sandals. Their heads are bare and their hands are empty. Their expressions are hostile, angry and threatening, but they are ordinary people, not monsters, and each one clearly differs from the others in face, height and build. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not include children or boys. Do not make them monstrous, deformed or grotesque, and do not make them identical. Do not give them weapons, clubs, torches, crowns, turbans, headbands, bracelets or other jewelry. Keep them fully clothed, with no indecent gestures. Do not paint a house, a door, a city, night sky or any other person, and keep the background plain.
+```

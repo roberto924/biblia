@@ -1,0 +1,134 @@
+{
+  "id": "varones-mamre",
+  "nombre": "Los tres varones de Mamre (dos de ellos, los ángeles de Sodoma)",
+  "personas": [],
+  "sin_persona": "El texto no los nombra: son «tres varones» (Gn 18:2) y después «los dos ángeles» (Gn 19:1), a los que la gente y el narrador siguen llamando «varones» (Gn 19:5, 19:10, 19:16). No son personas de datos/biblia.js. Hablan (Gn 18:5, 18:9; Gn 19:2, 19:12-13, 19:15): como la serpiente y los constructores de Babel, el guion necesitará admitir una voz que no es persona (decisión pendiente n.º 22 de guiones/LEEME.md).",
+  "pasajes": [
+    "gn-36",
+    "gn-37",
+    "gn-38",
+    "gn-39"
+  ],
+  "element": {
+    "nombre": "VARONES_MAMRE",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo de tres hombres iguales en rango, sin nada que distinga a uno sobre los otros: el texto no dice quién es cada uno. Propuesta por defecto (decisión pendiente n.º 21 de guiones/LEEME.md): se dibujan como hombres, sin alas, sin halo ni luz propia (negativo general del estilo; la n.º 18, pendiente, plantea lo mismo para el ángel de Gn 16), y ninguno se marca como Dios (decisión n.º 1). Las palabras que el texto pone en boca de Jehová (Gn 18:13-14, 18:17-33) no se ponen en la boca de ninguno de los tres. En Gn 19 van dos: por defecto el varón A y el varón B de la hoja; el texto no dice cuáles. Lo que no se ve en la hoja: la ceguera con que hieren a los de la puerta (Gn 19:11) es cosa de la toma, sin rayos ni destellos.",
+  "edades": [
+    {
+      "dato": "Edad visual: hombres adultos de unos treinta y cinco a cuarenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad ni su aspecto. Se les dibuja adultos en plena fuerza, ni muchachos ni viejos."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Abraham ve tres varones junto a él",
+      "certeza": "texto",
+      "ref": "Gn 18:2",
+      "cita": "he aquí tres varones que estaban junto á él"
+    },
+    {
+      "rasgo": "Abraham les ofrece agua para lavarse los pies y la sombra de un árbol",
+      "certeza": "texto",
+      "ref": "Gn 18:4",
+      "cita": "lavad vuestros pies; y recostaos debajo de un árbol"
+    },
+    {
+      "rasgo": "Aceptan",
+      "certeza": "texto",
+      "ref": "Gn 18:5",
+      "cita": "Y ellos dijeron: Haz así como has dicho"
+    },
+    {
+      "rasgo": "Comen lo que Abraham les sirve",
+      "certeza": "texto",
+      "ref": "Gn 18:8",
+      "cita": "púsolo delante de ellos; y él estaba junto á ellos debajo del árbol; y comieron"
+    },
+    {
+      "rasgo": "Preguntan por Sara",
+      "certeza": "texto",
+      "ref": "Gn 18:9",
+      "cita": "Y le dijeron: ¿Dónde está Sara tu mujer?"
+    },
+    {
+      "rasgo": "Se levantan y miran hacia Sodoma; Abraham los acompaña",
+      "certeza": "texto",
+      "ref": "Gn 18:16",
+      "cita": "los varones se levantaron de allí, y miraron hacia Sodoma: y Abraham iba con ellos acompañándolos"
+    },
+    {
+      "rasgo": "Se apartan y van hacia Sodoma",
+      "certeza": "texto",
+      "ref": "Gn 18:22",
+      "cita": "apartáronse de allí los varones, y fueron hacia Sodoma"
+    },
+    {
+      "rasgo": "Llegan dos ángeles a Sodoma al caer la tarde",
+      "certeza": "texto",
+      "ref": "Gn 19:1",
+      "cita": "LLEGARON, pues, los dos ángeles á Sodoma á la caída de la tarde"
+    },
+    {
+      "rasgo": "Los dos ángeles de Gn 19 son dos de los tres varones de Gn 18",
+      "certeza": "inferido",
+      "nota": "El texto no lo dice con esas palabras: los varones salen de Mamre hacia Sodoma (Gn 18:22) y a Sodoma llegan dos ángeles (Gn 19:1), a los que el texto vuelve a llamar varones (Gn 19:10, 19:16). Por eso una sola hoja sirve para los dos relatos.",
+      "base": [
+        {
+          "ref": "Gn 18:22",
+          "cita": "fueron hacia Sodoma"
+        },
+        {
+          "ref": "Gn 19:10",
+          "cita": "los varones alargaron la mano, y metieron á Lot en casa con ellos"
+        }
+      ]
+    },
+    {
+      "rasgo": "Primero quieren pasar la noche en la plaza",
+      "certeza": "texto",
+      "ref": "Gn 19:2",
+      "cita": "No, que en la plaza nos quedaremos esta noche"
+    },
+    {
+      "rasgo": "Hieren con ceguera a los hombres de la puerta",
+      "certeza": "texto",
+      "ref": "Gn 19:10-11",
+      "cita": "hirieron con ceguera"
+    },
+    {
+      "rasgo": "Dicen que Jehová los ha enviado a destruir el lugar",
+      "certeza": "texto",
+      "ref": "Gn 19:12-13",
+      "cita": "Jehová nos ha enviado para destruirlo"
+    },
+    {
+      "rasgo": "Al alba sacan de la mano a Lot, a su mujer y a sus hijas",
+      "certeza": "texto",
+      "ref": "Gn 19:16",
+      "cita": "los varones asieron de su mano, y de la mano de su mujer, y de las manos de sus dos hijas"
+    },
+    {
+      "rasgo": "Tres hombres de Asia occidental de aspecto sereno y grave, distintos entre sí: el varón A, alto, de barba oscura corta; el varón B, ancho de hombros, de barba oscura algo más larga y entrecana; el varón C, más delgado, de barba oscura recortada en punta. Piel morena, ojos oscuros, pelo oscuro hasta la nuca; pies con polvo del camino",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe a ninguno. Que sean distintos sirve para seguirlos de una toma a otra; el polvo de los pies sale de que Abraham les ofrece agua para lavarlos (Gn 18:4) y Lot también (Gn 19:2). Sin alas, halo ni luz propia: el texto los llama varones."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas lisas de lana sin teñir hasta debajo de la rodilla, en tonos claros y apagados distintos (crudo, arena y gris pardo), con un manto liso del mismo tejido; cinturón de cuerda; sandalias; cabeza descubierta",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su ropa ni de dónde vienen. Se elige ropa lisa de caminante, sin las franjas de la casa de Abraham ni los dibujos de Sodoma, para que no se confundan con nadie; tonos apagados, no blanco brillante, para no sugerir una luz o una pureza que el texto no menciona."
+    }
+  ],
+  "voz": {
+    "descripcion": "Voces de hombre adultas, serenas y firmes, sin eco ni efecto, español neutro. Gn 18:5 y 18:9: breves y corteses (a coro o uno por todos: decide el guion). Gn 19:2: rehúsan con calma. Gn 19:12-13: graves, urgentes. Gn 19:15: apremian. Quién dice Gn 19:17 y 19:21-22, donde el texto pasa a un solo «dijo», queda para el guion. Decisiones pendientes n.º 21 y n.º 22 de guiones/LEEME.md."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing three men standing in a single row, each one fully visible from head to feet, with a close-up of each face in a clear row of its own along the top of the sheet, well separated from the standing figures so that no close-up touches or covers any head. They are travelers from western Asia, grown men of about thirty-five to forty, equal in rank and calm, grave and quiet in expression, with brown skin, dark eyes and dark hair that reaches the nape of the neck. The man on the left is tall, with a short dark beard; the man in the middle is broad-shouldered, with a slightly longer dark beard touched with grey; the man on the right is slimmer, with a dark beard trimmed to a point. Each wears a plain tunic of undyed wool that reaches below the knee, with a plain cloak of the same cloth: cream for the first, sand for the second and grey-brown for the third, all in muted, matte tones. They wear cord belts and simple sandals, their feet are dusty from the road, their heads are bare, and their hands are empty. They are ordinary men lit only by the same soft daylight as the background.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: tres hombres de pie en fila, de cuerpo entero, con un primer plano de cada rostro en una fila propia arriba, bien separada de las figuras, sin tocar ni tapar ninguna cabeza. Caminantes de Asia occidental, hombres hechos de unos treinta y cinco a cuarenta años, iguales en rango, de gesto sereno, grave y callado; piel morena, ojos oscuros, pelo oscuro hasta la nuca. El de la izquierda, alto, con barba oscura corta; el del centro, ancho de hombros, con barba oscura algo más larga y entrecana; el de la derecha, más delgado, con barba oscura recortada en punta. Cada uno con túnica lisa de lana sin teñir hasta debajo de la rodilla y manto liso del mismo tejido: crudo el primero, arena el segundo y gris pardo el tercero, todos en tonos apagados y mates. Cinturón de cuerda y sandalias sencillas; pies con polvo del camino; cabeza descubierta y manos vacías. Hombres corrientes, con la misma luz suave de día que el fondo.",
+    "negativo_en": "Do not give them wings, glowing light, rays, sparkles, a radiant or shining look, or bright white robes. Do not let a close-up overlap a head, and do not draw any white outline, arc, rim or ring around a head. Do not make one of them larger, more prominent or more important than the others. Do not give them staffs, swords, crowns, turbans, head cloths, jewelry or striped or patterned cloth. Do not make them young boys or old men. Do not paint a tree, a tent, food, a city or any other person, and keep the background plain.",
+    "negativo_es": "Que ningún primer plano tape una cabeza; ningún contorno, arco, borde ni aro blanco alrededor de una cabeza. Sin alas, luz propia, rayos, destellos, aire radiante ni túnicas blancas brillantes; que ninguno sea más grande, destacado ni importante que los otros; sin cayados, espadas, coronas, turbantes, paños en la cabeza, joyas ni telas de franjas o dibujos; ni muchachos ni viejos; sin árbol, tienda, comida, ciudad ni otras personas; fondo liso."
+  }
+}

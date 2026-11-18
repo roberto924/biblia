@@ -1,0 +1,71 @@
+{
+  "id": "carnero-zarzal",
+  "nombre": "El carnero trabado en el zarzal",
+  "pasajes": [
+    "gn-45"
+  ],
+  "element": {
+    "nombre": "CARNERO_ZARZAL",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. La hoja muestra el carnero vivo, con los cuernos enredados en el zarzal, como lo ve Abraham (Gn 22:13). El holocausto no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 29 de guiones/LEEME.md, como la n.º 19): sin sangre ni cuchillo.",
+  "texto": [
+    {
+      "dato": "Abraham responde a Isaac que Dios se proveerá de cordero",
+      "certeza": "texto",
+      "ref": "Gn 22:8",
+      "cita": "Dios se proveerá de cordero para el holocausto, hijo mío"
+    },
+    {
+      "dato": "Abraham ve a sus espaldas un carnero trabado en un zarzal por los cuernos",
+      "certeza": "texto",
+      "ref": "Gn 22:13",
+      "cita": "he aquí un carnero á sus espaldas trabado en un zarzal por sus cuernos"
+    },
+    {
+      "dato": "Lo toma y lo ofrece en lugar de su hijo",
+      "certeza": "texto",
+      "ref": "Gn 22:13",
+      "cita": "fué Abraham, y tomó el carnero, y ofrecióle en holocausto en lugar de su hijo"
+    },
+    {
+      "dato": "Abraham llama al lugar «Jehová proveerá»",
+      "certeza": "texto",
+      "ref": "Gn 22:14",
+      "cita": "Jehová proveerá"
+    },
+    {
+      "dato": "Es un carnero con cuernos, no un cordero",
+      "certeza": "inferido",
+      "nota": "Isaac pregunta por un cordero (Gn 22:7) y Abraham habla de cordero (Gn 22:8), pero lo que aparece es un carnero, el macho adulto de la oveja, y el texto dice que tiene cuernos. Se dibuja adulto y con cuernos grandes, no una cría.",
+      "base": [
+        {
+          "ref": "Gn 22:7",
+          "cita": "¿dónde está el cordero para el holocausto?"
+        },
+        {
+          "ref": "Gn 22:13",
+          "cita": "trabado en un zarzal por sus cuernos"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Carnero robusto de lana espesa color crema sucio y pardo, cara y patas pardo oscuro, con cuernos gruesos y estriados enroscados en espiral a los lados de la cabeza",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe la raza ni el color. Sin referencia de época comprobada para las ovejas de la región."
+    },
+    {
+      "dato": "Zarzal: matorral bajo y espeso de ramas secas con espinas, del alto de un hombre por la cintura, en el que se enredan los cuernos",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «zarzal» y nada más. Se elige un matorral espinoso y seco, propio de un monte pedregoso."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same ram twice: on the left a side view, and on the right a three-quarter view from the front. It is a sturdy adult ram with thick, dull cream and brown wool, a dark brown face and legs, and heavy ridged horns that curl in a spiral on each side of its head. In both views its horns are caught in a low, dense thicket of dry, thorny branches about waist high, and the ram stands alive and unhurt, pulling back a little with its legs braced.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo carnero dos veces: a la izquierda, de lado; a la derecha, en tres cuartos de frente. Carnero adulto y robusto, de lana espesa color crema sucio y pardo, cara y patas pardo oscuro, con cuernos gruesos y estriados enroscados en espiral a cada lado de la cabeza. En las dos vistas tiene los cuernos enredados en un matorral bajo y espeso de ramas secas con espinas, a la altura de la cintura, y está vivo y sin heridas, tirando un poco hacia atrás con las patas firmes.",
+    "negativo_en": "Do not show blood, wounds, a knife, ropes, fire, an altar or any person. Do not make it a lamb, a goat or a wild animal, and do not give it a golden fleece or glowing light. Do not paint a mountain or a landscape, and keep the background plain.",
+    "negativo_es": "Sin sangre, heridas, cuchillo, cuerdas, fuego, altar ni personas; que no sea cordero, cabra ni animal salvaje; sin vellón dorado ni luz que brille; sin monte ni paisaje; fondo liso."
+  }
+}

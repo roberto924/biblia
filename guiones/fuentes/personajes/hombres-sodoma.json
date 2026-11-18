@@ -1,0 +1,81 @@
+{
+  "id": "hombres-sodoma",
+  "nombre": "Los hombres de Sodoma",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son «los hombres de la ciudad, los varones de Sodoma, todo el pueblo junto» (Gn 19:4). No son personas de datos/biblia.js. Hablan a coro (Gn 19:5, 19:9): como los constructores de Babel, el guion necesitará admitir una voz que no es persona (decisión pendiente n.º 22 de guiones/LEEME.md).",
+  "pasajes": [
+    "gn-38"
+  ],
+  "element": {
+    "nombre": "HOMBRES_SODOMA",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo anónimo de seis figuras para representar a muchos. El texto dice «desde el más joven hasta el más viejo» (Gn 19:4); el más joven de la hoja es un hombre joven, no un niño, por lo que piden en la puerta (Gn 19:5). No se les dibuja como monstruos ni con rasgos deformes: son gente de la ciudad, y lo que se muestra es su hostilidad. Lo que piden y la violencia contra Lot (Gn 19:5-9) se cuentan en las tomas sin nada explícito en ningún perfil (decisión pendiente n.º 25 de guiones/LEEME.md). El rey de Sodoma tiene su hoja (REY_SODOMA) y no sale en Gn 19.",
+  "rasgos": [
+    {
+      "rasgo": "Ya antes el texto los llama malos y pecadores",
+      "certeza": "texto",
+      "ref": "Gn 13:13",
+      "cita": "los hombres de Sodoma eran malos y pecadores para con Jehová en gran manera"
+    },
+    {
+      "rasgo": "Cercan la casa de Lot, de todas las edades",
+      "certeza": "texto",
+      "ref": "Gn 19:4",
+      "cita": "cercaron la casa los hombres de la ciudad, los varones de Sodoma, todo el pueblo junto, desde el más joven hasta el más viejo"
+    },
+    {
+      "rasgo": "Exigen que Lot les saque a sus huéspedes",
+      "certeza": "texto",
+      "ref": "Gn 19:5",
+      "cita": "¿Dónde están los varones que vinieron á ti esta noche? sácanoslos"
+    },
+    {
+      "rasgo": "Tratan a Lot de extranjero que se hace juez",
+      "certeza": "texto",
+      "ref": "Gn 19:9",
+      "cita": "Vino éste aquí para habitar como un extraño, ¿y habrá de erigirse en juez?"
+    },
+    {
+      "rasgo": "Hacen violencia a Lot y se acercan a romper las puertas",
+      "certeza": "texto",
+      "ref": "Gn 19:9",
+      "cita": "hacían gran violencia al varón, á Lot, y se acercaron para romper las puertas"
+    },
+    {
+      "rasgo": "Heridos de ceguera, se cansan buscando la puerta",
+      "certeza": "texto",
+      "ref": "Gn 19:11",
+      "cita": "hirieron con ceguera; mas ellos se fatigaban por hallar la puerta"
+    },
+    {
+      "rasgo": "Seis hombres de edades claramente distintas, del más joven, un hombre de unos veinte años, al más viejo, de barba blanca; piel morena, pelo y ojos oscuros, barbas de distintos largos; gesto hostil, airado y amenazante, sin caricatura",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo da las edades extremas (Gn 19:4) y lo que hacen. El gesto sale de Gn 19:9. El más joven se dibuja adulto por criterio del proyecto, no por el texto."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestidos y túnicas de lana de dibujos variados en rojo oscuro, ocre, blanco y azul oscuro, unos hasta la rodilla y sujetos sobre un hombro, otros más largos; fajas de tela; sandalias; cabezas descubiertas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Gente de una ciudad de la llanura de riego (Gn 13:10) y rica (Gn 14:11: «toda la riqueza de Sodoma»), vestida como su rey en la hoja REY_SODOMA: los asiáticos del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026). La variedad de colores y largos es elección del ilustrador.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Coro de voces de hombre de varias edades, ásperas y amenazantes, español neutro. Gn 19:5: exigen, a gritos. Gn 19:9: desprecio y amenaza («Quita allá»). Decisión pendiente del usuario (n.º 22 de guiones/LEEME.md, como la n.º 20 de Babel): voces propias o leídas por el narrador."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing six men standing in a single row, each one fully visible from head to feet: townsmen of a rich city in the Jordan plain, of clearly different ages, from a young man of about twenty to an old man with a white beard. They have brown skin, dark hair and dark eyes, and beards of different lengths. They wear wool garments woven with varied patterns in dark red, ochre, white and dark blue in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some knee-length and fastened over one shoulder, some longer, with cloth sashes and leather sandals. Their heads are bare and their hands are empty. Their expressions are hostile, angry and threatening, but they are ordinary people, not monsters, and each one clearly differs from the others in face, height and build.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: seis hombres de pie en fila, de cuerpo entero: gente de una ciudad rica de la llanura del Jordán, de edades claramente distintas, de un hombre joven de unos veinte años a un viejo de barba blanca. Piel morena, pelo y ojos oscuros, barbas de distintos largos. Ropa de lana con dibujos variados en rojo oscuro, ocre, blanco y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio: unas hasta la rodilla y sujetas sobre un hombro, otras más largas; fajas de tela y sandalias. Cabezas descubiertas y manos vacías. Gesto hostil, airado y amenazante, pero gente corriente, no monstruos; cada uno distinto en cara, estatura y complexión.",
+    "negativo_en": "Do not include children or boys. Do not make them monstrous, deformed or grotesque, and do not make them identical. Do not give them weapons, clubs, torches, crowns, turbans, headbands, bracelets or other jewelry. Keep them fully clothed, with no indecent gestures. Do not paint a house, a door, a city, night sky or any other person, and keep the background plain.",
+    "negativo_es": "Sin niños ni muchachos; que no sean monstruosos, deformes ni grotescos, ni idénticos; sin armas, garrotes, antorchas, coronas, turbantes, cintas en la cabeza, brazaletes ni otras joyas; todos vestidos, sin gestos indecentes; sin casa, puerta, ciudad, cielo de noche ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "hijas-lot",
+  "nombre": "Las dos hijas de Lot",
+  "personas": [
+    "Firstborn of Lot_1",
+    "Younger of Lot_1"
+  ],
+  "pasajes": [
+    "gn-39",
+    "gn-40"
+  ],
+  "element": {
+    "nombre": "HIJAS_LOT",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo de dos; el texto no da sus nombres. En Gn 19:1-14 se habla de ellas, pero no salen en escena. Se las dibuja siempre como mujeres jóvenes y adultas, nunca como niñas: están prometidas (Gn 19:14) y tienen hijos (Gn 19:36-38). Lo que pasa en la cueva (Gn 19:32-35) no se muestra en ningún perfil: decisión pendiente n.º 25 de guiones/LEEME.md. Solo habla la mayor (Gn 19:31-32 y 19:34); la menor no tiene palabras. Moab y Ben-ammi solo se nombran al nacer (Gn 19:37-38) y no llevan hoja.",
+  "miembros": [
+    {
+      "persona": "Firstborn of Lot_1",
+      "nombre": "La hija mayor",
+      "rol_visual": "La más alta, de rostro alargado y gesto resuelto; vestido de franjas rojas y blancas; ella es la que habla (interpretación del ilustrador a partir de Gn 19:31-34)"
+    },
+    {
+      "persona": "Younger of Lot_1",
+      "nombre": "La hija menor",
+      "rol_visual": "Algo más baja, de rostro más redondo y gesto más callado; vestido de franjas azul oscuro y blancas (interpretación del ilustrador)"
+    }
+  ],
+  "edades": [
+    {
+      "dato": "Doncellas prometidas: mujeres jóvenes en edad de casarse",
+      "certeza": "inferido",
+      "nota": "El texto no da su edad. Lot dice que no han conocido varón y el texto habla de los yernos que iban a tomarlas: se infiere que son jóvenes casaderas.",
+      "base": [
+        {
+          "ref": "Gn 19:8",
+          "cita": "yo tengo dos hijas que no han conocido varón"
+        },
+        {
+          "ref": "Gn 19:14",
+          "cita": "sus yernos, los que habían de tomar sus hijas"
+        }
+      ]
+    },
+    {
+      "dato": "Edad visual: la mayor, unos veinte años; la menor, unos dieciocho",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo dice cuál es la mayor y cuál la menor (Gn 19:31). Se las dibuja adultas."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Lot y sus dos hijas son sacados de la mano fuera de la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 19:16",
+      "cita": "de las manos de sus dos hijas"
+    },
+    {
+      "rasgo": "Viven con su padre en una cueva del monte",
+      "certeza": "texto",
+      "ref": "Gn 19:30",
+      "cita": "se alojó en una cueva él y sus dos hijas"
+    },
+    {
+      "rasgo": "La mayor habla a la menor: no queda varón en la tierra",
+      "certeza": "texto",
+      "ref": "Gn 19:31",
+      "cita": "la mayor dijo á la menor: Nuestro padre es viejo, y no queda varón en la tierra"
+    },
+    {
+      "rasgo": "Planean darle vino a su padre para tener descendencia de él",
+      "certeza": "texto",
+      "ref": "Gn 19:32",
+      "cita": "demos á beber vino á nuestro padre, y durmamos con él, y conservaremos de nuestro padre generación"
+    },
+    {
+      "rasgo": "Las dos conciben de su padre",
+      "certeza": "texto",
+      "ref": "Gn 19:36",
+      "cita": "concibieron las dos hijas de Lot, de su padre"
+    },
+    {
+      "rasgo": "La mayor da a luz a Moab",
+      "certeza": "texto",
+      "ref": "Gn 19:37",
+      "cita": "parió la mayor un hijo, y llamó su nombre Moab"
+    },
+    {
+      "rasgo": "La menor da a luz a Ben-ammi",
+      "certeza": "texto",
+      "ref": "Gn 19:38",
+      "cita": "La menor también parió un hijo, y llamó su nombre Ben-ammí"
+    },
+    {
+      "rasgo": "Hermanas con parecido de familia: piel morena oliva, ojos oscuros, pelo oscuro largo suelto a la espalda con una cinta blanca estrecha en la frente; la mayor, alta y resuelta; la menor, más baja y callada",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no las describe. El pelo largo con cinta sigue a las mujeres del mural de Beni Hasan (A2; mirado el 17-nov-2026); que la mayor sea la resuelta sale de que es ella la que propone (Gn 19:31-34).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestidos largos de lana hasta media pierna, que cubren los dos hombros: el de la mayor con franjas y zigzag rojos y blancos, el de la menor con franjas y zigzag azul oscuro y blancos; botines bajos de cuero",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Siguen a las mujeres del cortejo de Beni Hasan (A2: vestidos largos de dibujos en rojo, blanco y azul grisáceo, uno con zigzag). Un color distinto para cada una, para distinguirlas, es elección del ilustrador.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Solo habla la mayor: mujer joven, voz baja y decidida, español neutro. Gn 19:31-32 y 19:34: propone a su hermana, en voz baja, sin dramatizar. La menor no tiene palabras. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing two young women standing side by side, each one fully visible from head to feet, with a close-up of each face above. They are sisters from western Asia, both clearly adult women of about twenty and eighteen, with a family likeness: olive-brown skin, dark eyes and long dark hair falling down their backs, held by a narrow white band around the forehead. The older sister, on the left, is taller, with a longer face and a determined expression; she wears a long wool dress covering both shoulders and reaching her lower calves, woven with red and white stripes and zigzags. The younger sister, on the right, is a little shorter, with a rounder face and a quieter expression; she wears the same kind of dress woven with dark blue and white stripes and zigzags. Both dresses are in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and both wear low leather ankle boots. Their hands are empty.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: dos mujeres jóvenes de pie, una junto a otra, de cuerpo entero, con un primer plano de cada rostro encima. Hermanas de Asia occidental, las dos claramente adultas, de unos veinte y dieciocho años, con parecido de familia: piel morena oliva, ojos oscuros y pelo oscuro largo suelto a la espalda, sujeto con una cinta blanca estrecha en la frente. La mayor, a la izquierda, más alta, de rostro alargado y gesto resuelto; vestido largo de lana que cubre los dos hombros y llega a media pierna, con franjas y zigzag rojos y blancos. La menor, a la derecha, algo más baja, de rostro más redondo y gesto más callado; el mismo tipo de vestido con franjas y zigzag azul oscuro y blancos. Vestidos al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio; botines bajos de cuero. Manos vacías.",
+    "negativo_en": "Do not make them look like children or girls, and do not make them look identical. Do not make them seductive, and do not show bare shoulders, low necklines or tight clothes. Do not give them veils, crowns, bracelets or gold jewelry. Do not paint wine, cups, a cave, a city or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezcan niñas ni muchachas, ni idénticas; nada seductor: sin hombros descubiertos, escotes ni ropa ceñida; sin velos, coronas, brazaletes ni joyas de oro; sin vino, copas, cueva, ciudad ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "ismael-mayor",
+  "nombre": "Ismael (Gn 25)",
+  "personas": [
+    "Ishmael_1"
+  ],
+  "pasajes": [
+    "gn-52"
+  ],
+  "element": {
+    "nombre": "ISMAEL_MAYOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para gn-52, cuando entierra a Abraham con unos ochenta y nueve años (Gn 25:9; cálculo de abajo), unos setenta y cinco años después de la última vez que se le vio con la hoja ISMAEL, de muchacho. Hoja nueva porque la de ISMAEL lo dibuja de unos catorce años, sin barba y con el negativo «que no sea un hombre hecho». Es el mismo hombre: mismo rostro, mismos ojos almendrados, el mismo pelo hasta la nuca, la misma ropa y la cabeza descubierta de ISMAEL, mayor, ahora con barba y canas (si se genera a mano en ChatGPT, adjuntar también la imagen de ISMAEL). Junto a Isaac (hoja ISAAC_ADULTO, con canas en gn-52) debe verse claramente mayor: le lleva unos catorce años (cálculo en ismael.json). No habla en Gn 25 ni tiene palabras en ningún pasaje anterior: la ficha no lleva voz, como la de ISMAEL (decisión pendiente n.º 27 de guiones/LEEME.md). Su muerte a los ciento treinta y siete (Gn 25:17) se cuenta en una genealogía: si el guion la muestra, es con esta hoja y sin nada gráfico. Sus doce hijos (Gn 25:13-16) solo se nombran y no llevan hoja. El arco (Gn 21:20) no va en la hoja: en un entierro lleva las manos vacías. Edad visual y ropa: decisión pendiente n.º 33.",
+  "edades": [
+    {
+      "dato": "Unos ochenta y nueve años cuando entierra a Abraham",
+      "certeza": "calculo",
+      "valor": 89,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 89,
+        "pasos": [
+          {
+            "texto": "Años que vivió Abraham",
+            "valor": 175,
+            "ref": "Gn 25:7",
+            "cita": "Y estos fueron los días de vida que vivió Abraham: ciento setenta y cinco años"
+          },
+          {
+            "texto": "Edad de Abram cuando nace Ismael",
+            "valor": 86,
+            "ref": "Gn 16:16",
+            "cita": "era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael"
+          }
+        ],
+        "supuestos": [
+          "Ismael entierra a su padre poco después de su muerte (Gn 25:8-9 lo cuenta seguido)",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Unos setenta y cinco años desde el nacimiento de Isaac; Gn 21:9-21, la última vez que se le vio con la hoja ISMAEL, ocurre algo después",
+      "certeza": "calculo",
+      "valor": 75,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 75,
+        "pasos": [
+          {
+            "texto": "Años que vivió Abraham",
+            "valor": 175,
+            "ref": "Gn 25:7",
+            "cita": "Y estos fueron los días de vida que vivió Abraham: ciento setenta y cinco años"
+          },
+          {
+            "texto": "Edad de Abraham cuando nace Isaac",
+            "valor": 100,
+            "ref": "Gn 21:5",
+            "cita": "era Abraham de cien años, cuando le nació Isaac su hijo"
+          }
+        ],
+        "supuestos": [
+          "Gn 21:9-21 ocurre el día del destete de Isaac (Gn 21:8), algo después de su nacimiento: el texto no dice cuánto, así que pasan algo menos de setenta y cinco años",
+          "Ismael entierra a Abraham poco después de su muerte; se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Muere a los ciento treinta y siete años",
+      "certeza": "texto",
+      "ref": "Gn 25:17",
+      "cita": "estos fueron los años de la vida de Ismael, ciento treinta y siete años"
+    },
+    {
+      "dato": "Edad visual: un hombre que aparenta unos sesenta y cinco años, curtido y todavía fuerte, con muchas canas en el pelo y en la barba",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. A los ochenta y nueve le quedan unos cuarenta y ocho años de vida (137 − 89, Gn 25:17), así que no se le dibuja decrépito; la hoja ABRAHAM pone a Abraham de noventa y nueve como de unos setenta y cinco. Tiene que verse mayor que Isaac en la misma toma y de la generación siguiente a la de Abraham."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo de Abraham y de Agar la egipcia",
+      "certeza": "texto",
+      "ref": "Gn 25:12",
+      "cita": "Ismael, hijo de Abraham, que le parió Agar Egipcia, sierva de Sara"
+    },
+    {
+      "rasgo": "Creció en el desierto y fue tirador de arco",
+      "certeza": "texto",
+      "ref": "Gn 21:20",
+      "cita": "creció, y habitó en el desierto, y fué tirador de arco"
+    },
+    {
+      "rasgo": "Habitó en el desierto de Parán",
+      "certeza": "texto",
+      "ref": "Gn 21:21",
+      "cita": "habitó en el desierto de Parán"
+    },
+    {
+      "rasgo": "Entierra a Abraham con Isaac en la cueva de Macpela",
+      "certeza": "texto",
+      "ref": "Gn 25:9",
+      "cita": "sepultáronlo Isaac é Ismael sus hijos en la cueva de Macpela"
+    },
+    {
+      "rasgo": "Tiene doce hijos, príncipes de sus familias",
+      "certeza": "texto",
+      "ref": "Gn 25:16",
+      "cita": "doce príncipes por sus familias"
+    },
+    {
+      "rasgo": "Muere y es unido a su pueblo",
+      "certeza": "texto",
+      "ref": "Gn 25:17",
+      "cita": "exhaló el espíritu Ismael, y murió; y fué unido á su pueblo"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja ISMAEL, mayor: enjuto y fibroso, de piernas largas, piel morena cálida curtida por el sol, ojos oscuros almendrados con arrugas alrededor, pelo natural algo ondulado hasta la nuca y barba cerrada acabada en punta bajo el mentón, los dos negros con muchas canas; gesto grave y sereno",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Se conservan los rasgos de la hoja ISMAEL; la barba en punta es la de los hombres del mural de Beni Hasan (A1, A2) y de las hojas ABRAM y LOT; la piel curtida, a que vive en el desierto (Gn 21:20-21); el gesto grave, al entierro de su padre.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en la hoja ISMAEL: túnica corta de lana hasta la rodilla, con franjas sencillas rojas y blancas; cinturón de cuerda; sandalias; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 y n.º 33 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de la hoja ISMAEL (hombres de Asia occidental del mural de Beni Hasan, A1, A2) para que se le reconozca, aunque vive lejos, en el desierto de Parán (Gn 21:21); vestirlo de otro modo sería otra decisión.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a lean, wiry herdsman from western Asia who looks about sixty-five, long-legged and still strong, with warm brown skin weathered by the sun, dark almond-shaped eyes with lines around them, natural, slightly wavy hair that reaches the nape of his neck and a full beard trimmed to a clear point below the chin, both black but heavily streaked with grey. His head is bare, with nothing tied around it. His face is grave and calm. He wears a short wool tunic that reaches his knees, woven with simple red and white stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a cord belt and leather sandals. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Pastor enjuto y fibroso de Asia occidental que aparenta unos sesenta y cinco años, de piernas largas y todavía fuerte; piel morena cálida curtida por el sol, ojos oscuros almendrados con arrugas alrededor, pelo natural algo ondulado hasta la nuca y barba cerrada acabada en punta bajo el mentón, los dos negros pero con muchas canas. Cabeza descubierta, sin nada atado. Rostro grave y sereno. Túnica corta de lana hasta la rodilla con franjas sencillas rojas y blancas, al modo de los asiáticos de las tumbas egipcias del Reino Medio; cinturón de cuerda y sandalias. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him look young, and do not make him frail, bald or white-haired like a very old man. Do not give him a bow, arrows, a weapon, a staff, bracelets or other jewelry. Do not dress him in a turban, a hooded desert robe, a crown or Egyptian white linen. Do not make him sneer or look cruel. Do not paint a desert, a cave, a tent or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no parezca joven, ni frágil, calvo o de pelo blanco como un anciano; sin arco, flechas, armas, cayado, brazaletes ni otras joyas; sin turbante, túnica de desierto con capucha, corona ni lino blanco egipcio; sin mueca ni aire cruel; sin desierto, cueva, tienda ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "agar-mayor",
+  "nombre": "Agar (Gn 21)",
+  "personas": [
+    "Hagar_1"
+  ],
+  "pasajes": [
+    "gn-43"
+  ],
+  "element": {
+    "nombre": "AGAR_MAYOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 21, unos catorce años después de Gn 16. Hoja nueva porque la de AGAR muestra a una mujer de unos veinticinco años y aquí es madre de un muchacho de catorce o más (cálculo de abajo): con la hoja vieja parecería su hermana. Es la misma mujer: mismo rostro, mismo pelo y la misma ropa de sierva que AGAR, mayor y gastada por el camino (si se genera a mano en ChatGPT, adjuntar también la imagen de AGAR). El odre y el pan tienen su hoja (ODRE_AGUA). El ángel de Dios la llama «desde el cielo» (Gn 21:17): no tiene figura, solo voz (decisiones n.º 1 y n.º 18 de guiones/LEEME.md). Su voz es la de agar.json (guiones.py admite una sola voz por persona; decisión pendiente n.º 27 de guiones/LEEME.md); en Gn 21:16 («No veré cuando el muchacho morirá»), voz rota, casi para sí.",
+  "edades": [
+    {
+      "dato": "Unos catorce años más que en Gn 16, cuando nació Ismael",
+      "certeza": "calculo",
+      "valor": 14,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 14,
+        "pasos": [
+          {
+            "texto": "Edad de Abraham cuando nace Isaac",
+            "valor": 100,
+            "ref": "Gn 21:5",
+            "cita": "era Abraham de cien años, cuando le nació Isaac su hijo"
+          },
+          {
+            "texto": "Edad de Abram cuando Agar da a luz a Ismael",
+            "valor": 86,
+            "ref": "Gn 16:16",
+            "cita": "era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael"
+          }
+        ],
+        "supuestos": [
+          "Se cuentan años completos",
+          "A los catorce años se suma lo que tardó Isaac en ser destetado (Gn 21:8-9), que el texto no dice"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: una mujer de unos cuarenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto nunca da su edad. La hoja AGAR la dibujó de unos veinticinco en Gn 16 (interpretación); con el cálculo de arriba, aquí rondaría los cuarenta."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "El texto la llama «Agar la Egipcia»",
+      "certeza": "texto",
+      "ref": "Gn 21:9",
+      "cita": "al hijo de Agar la Egipcia"
+    },
+    {
+      "rasgo": "Sara la llama «esta sierva»",
+      "certeza": "texto",
+      "ref": "Gn 21:10",
+      "cita": "Echa á esta sierva y á su hijo"
+    },
+    {
+      "rasgo": "Abraham le pone el pan y el odre sobre el hombro y la despide",
+      "certeza": "texto",
+      "ref": "Gn 21:14",
+      "cita": "diólo á Agar, poniéndolo sobre su hombro, y [entrególe] el muchacho, y despidióla"
+    },
+    {
+      "rasgo": "Anda errante por el desierto de Beerseba",
+      "certeza": "texto",
+      "ref": "Gn 21:14",
+      "cita": "andaba errante por el desierto de Beer-seba"
+    },
+    {
+      "rasgo": "Se sienta lejos del muchacho, a un tiro de arco",
+      "certeza": "texto",
+      "ref": "Gn 21:16",
+      "cita": "sentóse enfrente, alejándose como un tiro de arco"
+    },
+    {
+      "rasgo": "Alza la voz y llora",
+      "certeza": "texto",
+      "ref": "Gn 21:16",
+      "cita": "alzó su voz y lloró"
+    },
+    {
+      "rasgo": "No quiere ver morir al muchacho",
+      "certeza": "texto",
+      "ref": "Gn 21:16",
+      "cita": "No veré cuando el muchacho morirá"
+    },
+    {
+      "rasgo": "El ángel de Dios la llama desde el cielo",
+      "certeza": "texto",
+      "ref": "Gn 21:17",
+      "cita": "el ángel de Dios llamó á Agar desde el cielo"
+    },
+    {
+      "rasgo": "Dios le abre los ojos y ve una fuente de agua",
+      "certeza": "texto",
+      "ref": "Gn 21:19",
+      "cita": "abrió Dios sus ojos, y vió una fuente de agua"
+    },
+    {
+      "rasgo": "Llena el odre y da de beber al muchacho",
+      "certeza": "texto",
+      "ref": "Gn 21:19",
+      "cita": "llenó el odre de agua, y dió de beber al muchacho"
+    },
+    {
+      "rasgo": "Toma para Ismael una mujer de Egipto",
+      "certeza": "texto",
+      "ref": "Gn 21:21",
+      "cita": "su madre le tomó mujer de la tierra de Egipto"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja AGAR, mayor: esbelta, piel morena cálida, ojos oscuros almendrados con líneas finas en las comisuras y una arruga entre las cejas; pelo negro liso y natural, suelto hasta los hombros, con flequillo corto y algún hilo cano; gesto cansado, angustiado y protector",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Se conservan los rasgos de la hoja AGAR (pelo natural, sin peluca: corrección de su hoja); las líneas y el hilo cano, a su edad; el gesto, del llanto de Gn 21:16."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en la hoja AGAR, gastada: vestido largo y liso de lana cruda sin teñir, ceñido con un cordón, con el borde deshilachado y polvo del camino; sandalias sencillas; sin joyas",
+      "certeza": "supuesto",
+      "nota": "Supuesto: el texto no describe su ropa. Sigue siendo sierva (Gn 21:10), así que se repite la ropa lisa de la hoja AGAR para que se la reconozca; lo gastado y el polvo, del camino errante por el desierto (Gn 21:14), son elección del ilustrador."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a slender Egyptian servant woman of about forty, with warm brown skin and dark almond-shaped eyes, fine lines at the corners of her eyes and a small crease between her brows, and natural, straight black hair with a few grey threads that falls loosely to her shoulders, with a short fringe over the forehead. Her expression is tired, anxious and protective. She wears a plain, long dress of undyed cream wool that covers both shoulders and reaches her ankles, tied at the waist with a cord, worn and frayed at the hem and dusty from the road, and simple leather sandals. She wears no jewelry, and her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Sierva egipcia esbelta de unos cuarenta años; piel morena cálida, ojos oscuros almendrados con líneas finas en las comisuras y una arruga pequeña entre las cejas; pelo negro liso y natural, con algún hilo cano, suelto hasta los hombros, con flequillo corto sobre la frente. Gesto cansado, angustiado y protector. Vestido largo y liso de lana cruda sin teñir que cubre los dos hombros y llega a los tobillos, ceñido con un cordón, gastado y deshilachado en el borde y con polvo del camino; sandalias sencillas. Sin joyas, manos vacías.",
+    "negativo_en": "Do not make her look young or elderly. Do not give her a stiff, blocky wig or a heavy geometric haircut, and do not put a band or a cloth on her head. Do not dress her in striped or patterned cloth, sheer linen, a broad collar or jewelry. Do not paint a water skin, bread, a boy, a desert, a tree, a well or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca joven ni anciana; sin peluca rígida ni corte geométrico pesado; sin cinta ni paño en la cabeza; sin telas de franjas ni dibujos, lino transparente, collar ancho ni joyas; sin odre, pan, muchacho, desierto, árbol, pozo ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "estatua-sal",
+  "nombre": "La estatua de sal",
+  "pasajes": [
+    "gn-39"
+  ],
+  "element": {
+    "nombre": "ESTATUA_SAL",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego. Es la mujer de Lot (hoja MUJER_LOT) después de mirar atrás. Propuesta por defecto (decisión pendiente n.º 25 de guiones/LEEME.md): sin horror en ningún perfil: una figura de sal que conserva la silueta de la mujer con su manto, medio vuelta hacia atrás, con el rostro sin rasgos marcados; la transformación no se muestra paso a paso.",
+  "texto": [
+    {
+      "dato": "La mujer de Lot mira atrás, a espaldas de él, y se vuelve estatua de sal",
+      "certeza": "texto",
+      "ref": "Gn 19:26",
+      "cita": "la mujer de Lot miró atrás, [á espaldas] de él, y se volvió estatua de sal"
+    },
+    {
+      "dato": "Ocurre mientras llueve azufre y fuego sobre las ciudades",
+      "certeza": "inferido",
+      "nota": "Gn 19:26 empieza con «Entonces», justo después de la lluvia de azufre y fuego (Gn 19:24-25): se infiere que pasa en ese momento, ya fuera de la ciudad.",
+      "base": [
+        {
+          "ref": "Gn 19:24",
+          "cita": "llovió Jehová sobre Sodoma y sobre Gomorra azufre y fuego"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Figura de tamaño natural con la silueta de la mujer de Lot: vestido largo y manto sobre los hombros, la cabeza y los hombros medio vueltos hacia atrás; toda de sal áspera, blanca grisácea, con textura de cristales y costra, sin color ni rasgos del rostro; de pie sobre tierra desnuda con ceniza",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «estatua de sal» y nada más. La postura sale de que miró atrás (Gn 19:26); la ceniza, del azufre y el fuego (Gn 19:24). Sin rostro de espanto, para que sirva en todos los perfiles (decisión n.º 25)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same figure twice: on the left a front view and on the right a side view. It is a life-size standing figure made entirely of rough, greyish-white salt, with a crusty, crystalline texture, keeping only the outline of a woman in a long dress with a cloak over her shoulders, her head and shoulders half turned to look back. The face is smooth and featureless, with no expression. It stands on a patch of bare earth dusted with grey ash.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: la misma figura dos veces: a la izquierda de frente y a la derecha de perfil. Figura de pie de tamaño natural, toda de sal áspera blanca grisácea, con textura de costra y cristales, que solo conserva la silueta de una mujer con vestido largo y manto sobre los hombros, con la cabeza y los hombros medio vueltos para mirar atrás. Rostro liso, sin rasgos ni expresión. Sobre un trozo de tierra desnuda con ceniza gris.",
+    "negativo_en": "Do not make it a carved marble or stone statue, and do not put it on a pedestal. Do not paint a frightened or screaming face, a skull, bones, body parts, blood or anything gruesome. Do not add color, glow, sparkles, fire, a city or any person, and keep the background plain.",
+    "negativo_es": "Que no sea una estatua tallada de mármol o piedra ni esté sobre un pedestal; sin rostro de miedo o de grito, calavera, huesos, partes del cuerpo, sangre ni nada truculento; sin color, brillo, destellos, fuego, ciudad ni personas; fondo liso."
+  }
+}

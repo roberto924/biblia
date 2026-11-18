@@ -1,0 +1,69 @@
+{
+  "id": "madre-rebeca",
+  "nombre": "La madre de Rebeca",
+  "personas": [],
+  "sin_persona": "El texto no la nombra: es «su madre» (Gn 24:28, 24:53, 24:55), y no es persona en datos/biblia.js. Solo habla en Gn 24:55, a la vez que Labán: el guion puede dar esas palabras a Labán y mostrarla a su lado.",
+  "pasajes": [
+    "gn-50",
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "MADRE_REBECA",
+    "tipo": "personaje"
+  },
+  "nota": "Rebeca corre a contar lo del pozo «en casa de su madre» (Gn 24:28); el texto no dice que la madre esté en las tomas del relato del criado (Gn 24:33-49): lo decide el guion. Sí está en Gn 24:53 (recibe regalos) y en Gn 24:55 (responde con Labán). Sin voz propia por ahora (como la decisión pendiente n.º 26 de guiones/LEEME.md).",
+  "edades": [
+    {
+      "dato": "Edad visual: una mujer madura, de unos cincuenta años, con algunas canas",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Es madre de una moza (Gn 24:16) y de un hijo adulto (Gn 24:29)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Rebeca corre a contarlo en casa de su madre",
+      "certeza": "texto",
+      "ref": "Gn 24:28",
+      "cita": "hizo saber en casa de su madre estas cosas"
+    },
+    {
+      "rasgo": "Recibe cosas preciosas del criado",
+      "certeza": "texto",
+      "ref": "Gn 24:53",
+      "cita": "dió cosas preciosas á su hermano y á su madre"
+    },
+    {
+      "rasgo": "Pide con Labán que Rebeca se quede al menos diez días",
+      "certeza": "texto",
+      "ref": "Gn 24:55",
+      "cita": "respondió su hermano y su madre: Espere la moza con nosotros á lo menos diez días"
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros grandes como los de su hija, rostro cálido con líneas finas; pelo oscuro largo, con algunas canas, recogido en la nuca y sujeto con una cinta blanca estrecha en la frente; gesto afectuoso y preocupado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no la describe. La cinta blanca en el pelo sigue a las mujeres de Asia occidental del mural de Beni Hasan (A2); el pelo recogido, y no suelto como el de Rebeca, es elección para que se distingan madre e hija. Lo preocupado sale de que pide que su hija se quede unos días más (Gn 24:55).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestido largo de lana hasta los tobillos que cubre los dos hombros, de franjas anchas rojo oscuro y blanco con dibujos menudos; calzado bajo cerrado de cuero rojizo",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los vestidos largos de dibujos en rojo y blanco y el calzado bajo cerrado siguen a las mujeres del cortejo de Beni Hasan (A2). El largo hasta los tobillos y las franjas anchas son elección del ilustrador para distinguirla de su hija.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a mature townswoman from western Asia of about fifty, with olive-brown skin, large dark eyes and a warm face with fine lines. Her long, natural dark hair, with some grey strands, is gathered at the nape of her neck and held by a narrow white band around her forehead. Her expression is affectionate and a little worried. She wears a long wool dress that covers both shoulders and reaches her ankles, woven with broad dark red and white stripes and small patterns in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and low closed shoes of reddish leather. She wears no jewelry, and her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Mujer madura de ciudad de Asia occidental, de unos cincuenta años; piel morena oliva, ojos oscuros grandes, rostro cálido con líneas finas. Pelo oscuro largo y natural, con algunas canas, recogido en la nuca y sujeto con una cinta blanca estrecha en la frente. Gesto afectuoso y algo preocupado. Vestido largo de lana que cubre los dos hombros y llega a los tobillos, con franjas anchas rojo oscuro y blancas y dibujos menudos, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio; calzado bajo cerrado de cuero rojizo. Sin joyas, manos vacías.",
+    "negativo_en": "Do not make her look elderly or frail, and do not make her look young. Do not give her a stiff, blocky wig or a heavy geometric haircut. Do not give her a veil, a crown, Egyptian white linen or any jewelry. Do not paint a house, gifts, vessels or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca anciana ni frágil, ni joven; sin peluca rígida ni corte geométrico pesado; sin velo, corona, lino blanco egipcio ni joyas; sin casa, regalos, vasijas ni otras personas; fondo liso."
+  }
+}

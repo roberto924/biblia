@@ -3,7 +3,7 @@
 Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `TIENDA_ABRAM` (objeto)
-- **Pasajes**: gn-27, gn-29
+- **Pasajes**: gn-27, gn-29, gn-36
 - **Nota**: No está en el catálogo de juego. Es la casa de Abram en Canaán: la tiende y la remueve (Gn 12:8; 13:18), y vuelve en Gn 18 (la puerta de la tienda). El texto habla de «su tienda», en singular; Lot tiene las suyas (Gn 13:5).
 
 ## Lo que dice el texto
