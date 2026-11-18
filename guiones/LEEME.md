@@ -334,7 +334,11 @@ registro esté completo; y propone cambios en las fuentes JSON.
     noventa y siete al dejar a Labán y ciento veinte al enterrar a Isaac (Gn 35:28 y 25:26): se les dibuja más jóvenes
     porque viven hasta los ciento cuarenta y siete (Gn 47:28) y en esos años remueven piedras, sirven veinte años de
     pastores y corren al encuentro (Gn 29:10, 31:40, 33:4). Alternativa: dibujarlos con la edad del cálculo, canosos
-    desde Gn 27, como la hoja ABRAM.
+    desde Gn 27, como la hoja ABRAM. Con Labán: en Harán `laban-mayor` (unos sesenta y cinco, casi blanco) se ve
+    claramente mayor que `jacob-adulto` (unos cuarenta y cinco, sin canas); en Galaad (gn-66 a gn-68), frente a
+    `jacob-mayor` (unos sesenta, muy canoso), solo los separan cinco años aparentes y el pelo casi blanco, aunque por
+    Cálculo Labán le lleva a Jacob veinte años más la edad que tenía en Gn 24 (117 − 97, `personajes/laban-mayor`). Si
+    en esas tomas no se lee, envejecer más a Labán (n.º 50), no a Jacob.
 39. **Jacob «lampiño»** (Gn 27:11): propuesta por defecto, brazos, manos y cuello lisos y una barba corta y rala, para
     que se lea frente a Esaú y siga pareciéndose a los demás hombres de las hojas. Alternativa: sin barba.
 40. **Esaú «rubio» y «velludo como una pelliza»** (Gn 25:25): propuesta por defecto, pelo y barba cobrizos y tez rojiza
@@ -342,7 +346,7 @@ registro esté completo; y propone cambios en las fuentes JSON.
     pecho, que es lo que imitan las pieles de Gn 27:16. Nunca se le viste de pieles, para no confundirlo con el
     disfraz de Jacob. Alternativa: rubio dorado. Lleva arco y aljaba (Gn 27:3) en sus tres hojas.
 41. **Isaac mayor y anciano**: `isaac-adulto` hasta Gn 25:26 (con canas a los sesenta); `isaac-mayor` (Gn 25:27–26:35)
-    aparenta unos sesenta y cinco (tiene entre setenta y cinco y cien: Gn 26:18 y el Cálculo 60 + 40); `isaac-anciano`
+    aparenta unos sesenta y cinco (en Gn 26 tiene entre setenta y cinco y cien: Gn 26:18 y el Cálculo 60 + 40); `isaac-anciano`
     (Gn 27:1 hasta su muerte, Gn 35:29) aparenta unos ochenta y cinco, ciego, y por Cálculo tiene unos ciento treinta y
     siete al bendecir. La ceguera (Gn 27:1) se muestra con ojos velados por una nube pálida y la mirada perdida, nada
     que impresione.
@@ -367,13 +371,19 @@ registro esté completo; y propone cambios en las fuentes JSON.
     `siervos-isaac` y `pastores-gerar`.
 46. **«Jugaba con Rebeca su mujer»** (Gn 26:8): propuesta por defecto, un gesto de cariño entre esposos (ríen juntos,
     él le toma la mano), visto de lejos desde la ventana, igual en todos los perfiles.
-47. **Rebeca mayor** (`rebeca-mayor`, Gn 26–28): aparenta unos cincuenta y cinco, todavía hermosa (Gn 26:7). Sin el
-    pendiente, los brazaletes ni el velo de Gn 24 desde Gn 25: el texto no vuelve a nombrarlos. Alternativa: llevar
-    las joyas siempre, porque se las dieron.
+47. **Rebeca mayor** (`rebeca-mayor`, Gn 25:27–28:9, como Isaac pasa a `isaac-mayor`): aparenta unos sesenta, todavía
+    hermosa (Gn 26:7), para que se lea como madre de Jacob y Esaú adultos (unos cuarenta y cinco, n.º 38) sin parecer
+    mucho más joven que `isaac-mayor` (unos sesenta y cinco); la hoja `rebeca` sirve en gn-53 hasta el parto
+    (Gn 25:26). Alternativa: dos hojas, una de unos cincuenta y cinco para Gn 25:27–26:35 y otra de unos setenta para
+    Gn 27–28. Sin el pendiente, los brazaletes ni el velo de Gn 24 desde Gn 25: el texto no vuelve a nombrarlos.
+    Alternativa: llevar las joyas siempre, porque se las dieron.
 48. **Mujeres de Esaú**: Judit y Basemat (Gn 26:34) en una hoja de grupo, `mujeres-heteas`, vestidas como los hijos de
     Het (n.º 31: mujeres de Beni Hasan, A2, sin referencia propia de los heteos) y nunca como villanas. Mahalat (Gn 28:9)
-    sale en un solo versículo y no lleva hoja; por las edades del texto, Ismael podía haber muerto ya cuando Esaú va
-    «á Ismael» (Gn 25:17 y los cálculos de Jacob), así que el guion no debería mostrar a Ismael sin decidirlo.
+    sale en un solo versículo y no lleva hoja. Por Cálculo, Ismael había muerto unos catorce años antes de que Esaú vaya
+    «á Ismael» (Gn 28:9): era catorce años mayor que Isaac (Gn 16:16, 21:5) y murió a los ciento treinta y siete
+    (Gn 25:17), cuando Isaac tenía unos ciento veintitrés y los mellizos unos sesenta y tres (Gn 25:26), y Jacob sale
+    hacia Harán con unos setenta y siete (`personajes/jacob-adulto`). Se infiere que Esaú va a la familia de Ismael;
+    el guion no debería mostrar a Ismael.
 49. **La casa de Labán en Gn 29–31 es la de la hoja `casa-betuel`** (propuesta por defecto; no hay hoja nueva). Isaac
     manda a Jacob «á Padan-aram, á casa de Bethuel» (Gn 28:2), Betuel es «de Padan-aram» (Gn 25:20) y Labán lo lleva
     «á su casa» (Gn 29:13): se infiere que es la misma casa de la familia. El texto no dice que sea el mismo edificio ni

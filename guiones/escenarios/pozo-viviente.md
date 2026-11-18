@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `POZO_VIVIENTE` (lugar)
 - **Pasajes**: gn-53
-- **Nota**: El id es el del catálogo de juego. Gn 25:19-34 no dice dónde ocurre: se usa este lugar por inferencia (abajo). Es el campamento de Isaac, donde Rebeca da a luz y donde Jacob guisa el potaje y Esaú llega del campo (Gn 25:27-34). El pozo es el mismo que Agar nombró (Gn 16:14), pero Gn 16 no tiene hoja de lugar: esta lo fija. Las tiendas copian la forma de la hoja TIENDA_ABRAM (objetos/tienda-abram); el potaje tiene hoja propia (objetos/potaje-lentejas). El campo donde Isaac salía a orar (escenarios/campo-isaac) no está junto al pozo según el texto. Dónde consulta Rebeca a Jehová (Gn 25:22) no se dice: lo decide el guion, y Jehová no tiene figura (decisión n.º 1 de guiones/LEEME.md). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
+- **Nota**: El id es el del catálogo de juego. Gn 25:19-34 no dice dónde ocurre: se usa este lugar por inferencia (abajo). Es el campamento de Isaac donde, por inferencia, Jacob guisa el potaje y Esaú llega del campo (Gn 25:27-34); si el parto (Gn 25:24-26) también es aquí, lo decide el guion (abajo). El pozo es el mismo que Agar nombró (Gn 16:14), pero Gn 16 no tiene hoja de lugar: esta lo fija. Las tiendas copian la forma de la hoja TIENDA_ABRAM (objetos/tienda-abram); el potaje tiene hoja propia (objetos/potaje-lentejas). El campo donde Isaac salía a orar (escenarios/campo-isaac) no está junto al pozo según el texto. Dónde consulta Rebeca a Jehová (Gn 25:22) no se dice: lo decide el guion, y Jehová no tiene figura (decisión n.º 1 de guiones/LEEME.md). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
 
 ## Lo que dice el texto
 

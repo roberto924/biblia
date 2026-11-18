@@ -95,7 +95,7 @@
     {
       "dato": "Edad visual: un hombre maduro que aparenta unos cuarenta y cinco años, en plena fuerza",
       "certeza": "interpretacion",
-      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md). Por cálculo tiene unos setenta y siete, pero vive hasta los ciento cuarenta y siete (Gn 47:28) y después de esta hoja remueve él solo la piedra del pozo (Gn 29:10), sirve veinte años de pastor (Gn 31:38-40) y tiene once hijos (Gn 29–30): se le dibuja maduro y fuerte, sin canas, para que JACOB_MAYOR pueda envejecerlo. Alternativa: dibujarlo con la edad del cálculo, canoso como la hoja ABRAM."
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md). Por cálculo tiene unos setenta y siete, pero vive hasta los ciento cuarenta y siete (Gn 47:28) y en esta hoja remueve la piedra del pozo (Gn 29:10), sirve veinte años de pastor (Gn 31:38-40) y tiene once hijos (Gn 29–30): se le dibuja maduro y fuerte, sin canas, para que JACOB_MAYOR pueda envejecerlo. Alternativa: dibujarlo con la edad del cálculo, canoso como la hoja ABRAM."
     }
   ],
   "rasgos": [
@@ -154,9 +154,9 @@
       "cita": "Jacob había obedecido á su padre y á su madre, y se había ido á Padan-aram"
     },
     {
-      "rasgo": "Sale de Beer-seba y duerme al raso con una piedra por cabecera",
+      "rasgo": "Sale de Beer-seba; al ponerse el sol duerme en un lugar del camino, con piedras de aquel paraje por cabecera",
       "certeza": "texto",
-      "ref": "Gn 28:11",
+      "ref": "Gn 28:10-11",
       "cita": "tomó de las piedras de aquel paraje y puso á su cabecera, y acostóse en aquel lugar"
     },
     {
@@ -172,7 +172,7 @@
       "cita": "E hizo Jacob voto"
     },
     {
-      "rasgo": "Pasa el Jordán solo con su bordón",
+      "rasgo": "Pasó el Jordán con su bordón",
       "certeza": "texto",
       "ref": "Gn 32:10",
       "cita": "con mi bordón pasé este Jordán",

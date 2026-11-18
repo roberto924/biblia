@@ -3,15 +3,15 @@
 Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `PIEDRA_BETEL` (objeto)
-- **Pasajes**: gn-60
-- **Nota**: El id es el del catálogo de juego. La hoja muestra la misma piedra dos veces: tumbada, como cabecera para dormir (Gn 28:11), y de pie, alzada por título y con el aceite derramado encima (Gn 28:18). Gn 28:11 dice que tomó «de las piedras» del lugar y Gn 28:18 habla de «la piedra» que había puesto de cabecera: la hoja dibuja una sola. El texto no dice de dónde sacó el aceite: el frasco es interpretación del ilustrador. Vuelve en Gn 35:14 (otro pasaje, otro redactor), donde Jacob erige un título en el mismo lugar: si es la misma piedra, el texto no lo dice.
+- **Pasajes**: gn-60, gn-74
+- **Nota**: El id es el del catálogo de juego. La hoja muestra la misma piedra dos veces: tumbada, como cabecera para dormir (Gn 28:11), y de pie, alzada por título y con el aceite derramado encima (Gn 28:18). Gn 28:11 dice que tomó «de las piedras» del lugar y Gn 28:18 habla de «la piedra» que había puesto de cabecera: la hoja dibuja una sola. El texto no dice de dónde sacó el aceite: el frasco es interpretación del ilustrador. Vuelve en Gn 35:14 (gn-74), donde Jacob erige «un título de piedra» en el lugar donde Dios había hablado con él: si es la misma piedra, el texto no lo dice. Propuesta por defecto del redactor de Gn 32–36 (decisión pendiente n.º 62 de guiones/LEEME.md): usar esta hoja también en gn-74, con la libación y el aceite en la toma; el catálogo de juego pone Gn 35:14 en este mismo objeto.
 
 ## Lo que dice el texto
 
 - **Texto**: Toma de las piedras del lugar y las pone de cabecera — Gn 28:11: «tomó de las piedras de aquel paraje y puso á su cabecera, y acostóse en aquel lugar»
 - **Texto**: De mañana la alza por título y derrama aceite encima — Gn 28:18: «tomó la piedra que había puesto de cabecera, y alzóla por título, y derramó aceite encima de ella»
 - **Texto**: Dice que esa piedra será casa de Dios — Gn 28:22: «esta piedra que he puesto por título, será casa de Dios»
-- **Inferido**: Un hombre solo puede alzarla — Jacob viaja solo y la alza él mismo (Gn 28:18): es una piedra grande para cabecera pero que un hombre puede poner de pie. — base: Gn 28:18 «alzóla por título»
+- **Inferido**: Un hombre solo puede alzarla — Jacob la alza él mismo (Gn 28:18) y el texto no nombra a nadie con él en Gn 28:10-22: es una piedra grande para cabecera pero que un hombre puede poner de pie. — base: Gn 28:18 «alzóla por título»
 
 ## Rasgos
 

@@ -4,19 +4,19 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `TIENDA_ISAAC` (lugar)
 - **Pasajes**: gn-56, gn-57, gn-58, gn-59
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 45 de guiones/LEEME.md). Es el interior donde Isaac, viejo y ciego, está acostado (Gn 27:19, 27:31) y donde llama a Esaú, recibe a Jacob disfrazado y bendice (Gn 27:1-40), y donde después bendice y envía a Jacob (Gn 28:1-5), si el guion lo pone aquí. El texto no dice que sea una tienda ni cómo es: se infiere (abajo). Una cortina de pelo de cabra parte el interior, para que Rebeca pueda oír sin estar a la vista (Gn 27:5): es interpretación del ilustrador. Rebeca guisa y viste a Jacob (Gn 27:9-17) en otro lugar del campamento que el texto no describe: lo decide el guion (exterior: escenarios/beerseba). La forma de la tienda copia la hoja TIENDA_ABRAM (objetos/tienda-abram).
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 45 de guiones/LEEME.md). Es el interior donde Isaac, viejo y ciego, está acostado (se infiere porque le piden que se levante, Gn 27:19, 27:31) y donde llama a Esaú, recibe a Jacob disfrazado y bendice (Gn 27:1-40), y donde después bendice y envía a Jacob (Gn 28:1-5), si el guion lo pone aquí. El texto no dice que sea una tienda ni cómo es: se infiere (abajo). Una cortina de pelo de cabra parte el interior, para que Rebeca pueda oír sin estar a la vista (Gn 27:5): es interpretación del ilustrador. Rebeca guisa y viste a Jacob (Gn 27:9-17) en otro lugar del campamento que el texto no describe: lo decide el guion (exterior: escenarios/beerseba). La forma de la tienda copia la hoja TIENDA_ABRAM (objetos/tienda-abram).
 
 ## Lo que dice el texto
 
 - **Texto**: Isaac tiende su tienda en Beer-seba — Gn 26:25: «tendió allí su tienda»
-- **Texto**: Isaac está acostado: Jacob le pide que se levante y se siente a comer — Gn 27:19: «levántate ahora, y siéntate, y come de mi caza»
+- **Texto**: Jacob le pide que se levante y se siente a comer (de ahí se infiere que está acostado) — Gn 27:19: «levántate ahora, y siéntate, y come de mi caza»
 - **Texto**: Rebeca oye lo que Isaac dice a Esaú — Gn 27:5: «Rebeca estaba oyendo, cuando hablaba Isaac á Esaú su hijo»
 - **Texto**: Rebeca guarda en casa los vestidos de Esaú — Gn 27:15: «los preciosos, que ella tenía en casa»
 - **Inferido**: Gn 27 ocurre en la tienda de Isaac, en Beer-seba — Gn 27 no dice dónde. La última morada de Isaac que da el texto es su tienda en Beer-seba (Gn 26:25), y Jacob sale de Beer-seba hacia Harán (Gn 28:10). «Casa» (Gn 27:15) es la casa de la familia, no dice que sea un edificio. — base: Gn 26:25 «tendió allí su tienda» — base: Gn 28:10 «salió Jacob de Beer-seba»
 
 ## Rasgos
 
-- **Interpretación del ilustrador**: Interior amplio y bajo de una tienda de paños oscuros de pelo de cabra sobre postes de madera, con el techo algo combado entre ellos; un lado largo abierto por donde entra la luz del día; en el suelo, esteras tejidas; al fondo, un lecho bajo de mantas de lana dobladas y un cojín, vacío; tinajas de barro y una lamparilla de aceite apagada sobre una piedra; a un lado, una cortina de pelo de cabra que cuelga de una cuerda y parte el interior — Interpretación del ilustrador: el texto no describe dónde está Isaac. El lecho sale de que está acostado (Gn 27:19); la cortina, de que Rebeca oye sin que se diga que está delante (Gn 27:5); la forma de la tienda, de la hoja TIENDA_ABRAM, que es supuesto.
+- **Interpretación del ilustrador**: Interior amplio y bajo de una tienda de paños oscuros de pelo de cabra sobre postes de madera, con el techo algo combado entre ellos; un lado largo abierto por donde entra la luz del día; en el suelo, esteras tejidas; al fondo, un lecho bajo de mantas de lana dobladas y un cojín, vacío; tinajas de barro y una lamparilla de aceite apagada sobre una piedra; a un lado, una cortina de pelo de cabra que cuelga de una cuerda y parte el interior — Interpretación del ilustrador: el texto no describe dónde está Isaac. El lecho sale de que se infiere que está acostado (Gn 27:19); la cortina, de que Rebeca oye sin que se diga que está delante (Gn 27:5); la forma de la tienda, de la hoja TIENDA_ABRAM, que es supuesto.
 
 ## Hoja de referencia del Element
 

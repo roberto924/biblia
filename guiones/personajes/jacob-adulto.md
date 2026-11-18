@@ -18,7 +18,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
   4. − Los dos años de hambre ya pasados cuando José manda llamar a su padre: 2 (Gn 45:6: «ya ha habido dos años de hambre en medio de la tierra»)
   5. − Los catorce años que Jacob sirvió por Lea y Raquel antes de nacer José: 14 (Gn 31:41: «catorce años te serví por tus dos hijas»)
   = 77. Supuestos: Los siete años de hartura empiezan cuando José tiene treinta (Gn 41:46-47); Jacob baja a Egipto y habla con Faraón el mismo año en que José dice que van dos años de hambre (Gn 45:6, 45:9-11, 47:7-9); José nace al cumplirse los catorce años por las dos hijas: en cuanto nace, Jacob pide irse (Gn 30:25) y empiezan los seis años por el ganado (Gn 31:41); Jacob empieza a servir a Labán poco después de salir de Beer-seba (Gn 28:10–29:20): el texto no da cuánto duró el viaje; Se cuentan años completos
-- **Interpretación del ilustrador**: Edad visual: un hombre maduro que aparenta unos cuarenta y cinco años, en plena fuerza — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md). Por cálculo tiene unos setenta y siete, pero vive hasta los ciento cuarenta y siete (Gn 47:28) y después de esta hoja remueve él solo la piedra del pozo (Gn 29:10), sirve veinte años de pastor (Gn 31:38-40) y tiene once hijos (Gn 29–30): se le dibuja maduro y fuerte, sin canas, para que JACOB_MAYOR pueda envejecerlo. Alternativa: dibujarlo con la edad del cálculo, canoso como la hoja ABRAM.
+- **Interpretación del ilustrador**: Edad visual: un hombre maduro que aparenta unos cuarenta y cinco años, en plena fuerza — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md). Por cálculo tiene unos setenta y siete, pero vive hasta los ciento cuarenta y siete (Gn 47:28) y en esta hoja remueve la piedra del pozo (Gn 29:10), sirve veinte años de pastor (Gn 31:38-40) y tiene once hijos (Gn 29–30): se le dibuja maduro y fuerte, sin canas, para que JACOB_MAYOR pueda envejecerlo. Alternativa: dibujarlo con la edad del cálculo, canoso como la hoja ABRAM.
 
 ## Rasgos
 
@@ -31,10 +31,10 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Su madre lo manda huir a Labán, a Harán — Gn 27:43: «levántate, y húyete á Labán mi hermano, á Harán»
 - **Texto**: Isaac lo bendice y lo envía a Padan-aram a tomar mujer — Gn 28:1-2: «Levántate, ve á Padan-aram»
 - **Texto**: Obedece a su padre y a su madre — Gn 28:7: «Jacob había obedecido á su padre y á su madre, y se había ido á Padan-aram»
-- **Texto**: Sale de Beer-seba y duerme al raso con una piedra por cabecera — Gn 28:11: «tomó de las piedras de aquel paraje y puso á su cabecera, y acostóse en aquel lugar»
+- **Texto**: Sale de Beer-seba; al ponerse el sol duerme en un lugar del camino, con piedras de aquel paraje por cabecera — Gn 28:10-11: «tomó de las piedras de aquel paraje y puso á su cabecera, y acostóse en aquel lugar»
 - **Texto**: Despierta con miedo de lo que ha soñado — Gn 28:17: «tuvo miedo, y dijo: ¡Cuán terrible es este lugar!»
 - **Texto**: Hace voto — Gn 28:20: «E hizo Jacob voto»
-- **Texto**: Pasa el Jordán solo con su bordón — Gn 32:10: «con mi bordón pasé este Jordán» — Gn 32:10 es posterior a estos pasajes: sirve para dirigir. El bordón se le da desde que sale de Beer-seba (Gn 28:10).
+- **Texto**: Pasó el Jordán con su bordón — Gn 32:10: «con mi bordón pasé este Jordán» — Gn 32:10 es posterior a estos pasajes: sirve para dirigir. El bordón se le da desde que sale de Beer-seba (Gn 28:10).
 - **Interpretación del ilustrador**: El mismo rostro que en la hoja JACOB_JOVEN, maduro: delgado y fibroso, de estatura media; piel morena oliva lisa, curtida en la frente y junto a los ojos; brazos y manos sin vello; ojos oscuros tranquilos y atentos; pelo oscuro abundante y natural hasta la nuca y barba corta y rala, oscuros y sin canas; gesto reservado y despierto — Interpretación del ilustrador: el texto no describe su cara. Se conservan los rasgos de la hoja JACOB_JOVEN; lo liso, de «lampiño» (Gn 27:11), y la barba corta y rala es la propuesta por defecto (decisión pendiente n.º 39). El pelo hasta la nuca sigue al mural de Beni Hasan (A2). — referencias: A2
 
 ## Vestuario
