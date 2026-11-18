@@ -2310,7 +2310,7 @@ if (typeof document !== 'undefined') (function () {
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4h12v9H8l-4 3z"/></svg>
           <span class="acomp-titulo">Acompañante</span><span class="acomp-ambito">${esc(ambito)}${n ? ` · ${n} ${n === 1 ? 'dato' : 'datos'}` : ''}</span></button>
         ${estado.activo ? '<button type="button" class="boton mini-boton secundario" data-activar="">Todo el pasaje</button>' : ''}</div>
-      <div class="acomp-cuerpo" id="acomp-cuerpo">${html}</div>`;
+      <div class="acomp-cuerpo" id="acomp-cuerpo"><div class="acomp-columnas">${html}</div></div>`;
   }
   function activar(k) {
     estado.activo = k && k !== estado.activo ? k : null;

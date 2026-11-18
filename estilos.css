@@ -256,14 +256,23 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
 .cony-mini { color: var(--suave); }
 .enlace-arbol { justify-self: center; display: inline-flex; align-items: center; min-height: 44px; font-size: .9rem; font-weight: 500; }
 @media (min-width: 900px) and (max-width: 1099px) { .acompanante { left: var(--lateral); bottom: 0; padding-bottom: env(safe-area-inset-bottom); } }
+/* Pantalla ancha: el texto con su ancho de lectura (44rem, todos sus bloques al mismo borde), el acompañante
+   llena el resto hasta 56rem y el conjunto se centra en el espacio libre. El texto tiene prioridad: su pista
+   crece primero y el acompañante (fr) se queda con lo que sobra, nunca menos de 19rem. */
 @media (min-width: 1100px) {
-  .pasaje-vista { display: grid; grid-template-columns: minmax(0, 1fr) minmax(19rem, 24rem); gap: clamp(2rem, 3.5vw, 3.5rem); align-items: start; }
-  .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; }
+  main:has(.pasaje-vista) { max-width: none; }
+  .pasaje-vista { display: grid; grid-template-columns: minmax(0, 44rem) minmax(19rem, 1fr); gap: clamp(2rem, 3vw, 3rem); align-items: start; max-width: calc(44rem + 3rem + 56rem); margin-inline: auto; }
+  .pasaje-vista > .lectura > :not(.cab-pasaje) { max-width: none; }
+  .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; container: acomp / inline-size; }
   .acomp-cab::before { display: none; }
   .acomp-asa { cursor: default; pointer-events: none; }
   .acomp-asa::after { display: none; }
+  /* Con sitio para dos, las secciones se reparten en dos columnas equilibradas (menos desplazamiento). */
+  @container acomp (min-width: 42rem) {
+    .acomp-columnas { columns: 2; column-gap: 2rem; column-rule: 1px solid var(--linea-suave); }
+    .acomp-columnas > * { break-inside: avoid; }
+  }
 }
-@media (min-width: 1400px) { .pasaje-vista { grid-template-columns: minmax(0, 1fr) 26rem; } }
 @media (max-width: 1099px) { .pasaje-vista ~ *, main:has(.pasaje-vista) { padding-bottom: calc(var(--nav-h) + var(--asa-h) + 2rem + env(safe-area-inset-bottom)); } }
 @media (min-width: 900px) and (max-width: 1099px) { main:has(.pasaje-vista) { padding-bottom: calc(var(--asa-h) + 2.5rem); } }
 
