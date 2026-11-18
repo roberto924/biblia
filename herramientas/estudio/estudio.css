@@ -205,3 +205,18 @@ textarea:disabled { opacity: .6; }
 .errores strong { color: var(--mal); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- Qué estás aprobando (hojas de personajes, objetos y escenarios) ---------- */
+.tarjeta-pasajes { margin: .1rem 0 0; font-weight: 600; color: var(--lapis); }
+.desplegable.destacado { border: 1px solid var(--lapis); background: color-mix(in srgb, var(--lapis-tinte) 55%, var(--hoja)); border-radius: var(--r-ctrl); }
+.que-aprobar { padding: 0 .2rem .3rem; }
+.que-aprobar p { margin: .35rem 0; }
+.que-aprobar ul.debe { margin: .2rem 0 .5rem; padding-left: 1.2rem; }
+.que-aprobar ul.debe li { margin: .15rem 0; }
+.que-aprobar .no-debe { color: var(--suave); }
+.misma-persona { display: flex; flex-wrap: wrap; gap: .6rem; margin: .3rem 0 .4rem; }
+.otra-hoja { display: flex; flex-direction: column; gap: .15rem; width: 11rem; max-width: 100%; text-decoration: none; color: var(--tinta); }
+.otra-hoja img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--r-ctrl); border: 1px solid var(--linea); }
+.otra-hoja:hover img { border-color: var(--lapis); }
+.otra-titulo { font-weight: 600; font-size: .9rem; }
+.sin-imagen.mini { display: grid; place-items: center; aspect-ratio: 16 / 9; font-size: .8rem; }

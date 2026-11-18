@@ -67,7 +67,7 @@ def _indice():
             ficha = {k: v for k, v in x.items() if k not in ("id", "nombre", "hoja_referencia")}
             ficha.update({k: h[k] for k in ("prompt_es", "negativo_es") if h.get(k)})
             out.append(dict(id=f"{carpeta}/{x['id']}", grupo=carpeta, titulo=x.get("nombre") or x["id"], fuente=f,
-                            ruta=["hoja_referencia"], x=x, base=h, editables=EDITABLES,
+                            ruta=["hoja_referencia"], x=x, base=h, editables=EDITABLES, resumen=_resumen(x, carpeta),
                             refs=[i for i, L in zip(lam_ids, lams)
                                   if carpeta == "personajes" or L["archivo"] not in (x.get("sin_laminas") or [])],
                             ficha=ficha))
@@ -96,6 +96,79 @@ def _indice():
 
 def _pendientes():
     return {t["id"]: t for t in I.pendientes(I.leer(F / "estilo.json"))}
+
+
+# --------------------------------------------------------------------------- qué se aprueba (resumen de cada hoja)
+_PASAJES = {"mtime": None, "datos": {}}
+
+
+def _pasajes_biblia():
+    """{id: {inicio, fin, titulo}} de datos/biblia.js; vacío si no está (copias de prueba)."""
+    p = RAIZ / "datos" / "biblia.js"
+    if not p.is_file():
+        return {}
+    m = p.stat().st_mtime_ns
+    if _PASAJES["mtime"] != m:
+        s = p.read_text(encoding="utf-8")
+        b = json.loads(s[s.index("{"):s.rindex("}") + 1])
+        _PASAJES.update(mtime=m, datos={x["id"]: x for x in b.get("pasajes", [])})
+    return _PASAJES["datos"]
+
+
+def _num_pasaje(pid):
+    m = re.fullmatch(r"(.+)-(\d+)", pid)
+    return (m.group(1), int(m.group(2))) if m else (pid, -1)
+
+
+def texto_pasajes(ids, P=None):
+    """['gn-21', …, 'gn-33', 'gn-36'] → 'Gn 12:1–16:16 · Gn 18:1–18:15': tramos seguidos con sus versículos."""
+    P = _pasajes_biblia() if P is None else P
+    orden = sorted(dict.fromkeys(ids), key=_num_pasaje)
+    tramos = []
+    for pid in orden:
+        lib, n = _num_pasaje(pid)
+        if tramos and tramos[-1][0] == lib and tramos[-1][2] + 1 == n and n >= 0:
+            tramos[-1][2], tramos[-1][4] = n, pid
+        else:
+            tramos.append([lib, n, n, pid, pid])
+    partes = []
+    for _lib, _a, _b, pa, pb in tramos:
+        ia, fb = (P.get(pa) or {}).get("inicio"), (P.get(pb) or {}).get("fin")
+        if not (ia and fb):
+            partes.append(pa if pa == pb else f"{pa} a {pb}")
+            continue
+        la, _, ca = ia.partition(" ")
+        lb, _, cb = fb.partition(" ")
+        if la != lb:
+            partes.append(f"{ia}–{fb}")
+        elif ca.split(":")[0] == cb.split(":")[0]:
+            partes.append(f"{ia}-{cb.split(':')[1]}")   # mismo capítulo: Gn 45:1-15
+        else:
+            partes.append(f"{ia}–{cb}")
+    return " · ".join(partes)
+
+
+def _resumen(x, carpeta):
+    """Lo que una persona necesita para aprobar la hoja: para qué pasajes es, qué edad aparenta, qué debe verse
+    (rasgos y vestuario que fija el ilustrador o el supuesto de época) y qué no debe aparecer."""
+    ids = list(x.get("pasajes") or [])
+    edad = next((e.get("dato") for e in x.get("edades") or [] if e.get("certeza") == "interpretacion"), None)
+    if edad:
+        edad = re.sub(r"^Edad visual:\s*", "", edad)
+        edad = edad[:1].upper() + edad[1:]
+    debe = []
+    for lista in (x.get("rasgos") or [], x.get("vestuario") or []):
+        for r in lista:
+            if isinstance(r, dict) and r.get("certeza") in ("interpretacion", "supuesto"):
+                t = r.get("rasgo") or r.get("dato")
+                if t:
+                    debe.append(t)
+    texto = [r for r in (x.get("rasgos") or []) + (x.get("texto") or [])
+             if isinstance(r, dict) and r.get("certeza") == "texto"]
+    h = x.get("hoja_referencia") or {}
+    return {"element": (x.get("element") or {}).get("nombre"), "pasajes": ids, "pasajes_txt": texto_pasajes(ids),
+            "edad": edad, "debe": debe, "no_debe": h.get("negativo_es") or "", "datos_texto": len(texto),
+            "personas": list(x.get("personas") or [])}
 
 
 def imagen_actual(id_):
@@ -355,6 +428,14 @@ def datos(registro_capa=None):
               "anteriores": _anteriores(e["id"], nombres)}
         if e["grupo"] == "tomas":
             it["movimiento_en"] = e["movimiento_en"]
+        if e.get("resumen"):
+            res = dict(e["resumen"])
+            # otras hojas de la misma persona (Abram → Abraham, Jacob joven → adulto → mayor), por orden de pasajes
+            mias = set(res.pop("personas"))
+            res["misma_persona"] = [o["id"] for o in sorted(
+                (o for o in indice if o is not e and o.get("resumen") and mias & set(o["resumen"]["personas"])),
+                key=lambda o: [_num_pasaje(p) for p in sorted(o["resumen"]["pasajes"], key=_num_pasaje)[:1]] or [("", 0)])]
+            it["resumen"] = res
         return it
 
     grupos = {"estilo": [], **{c: [] for c in I.HOJAS}}
@@ -397,6 +478,19 @@ def autoprueba():
         print(("  ✓ " if cond else "  ✗ ") + msg)
         if not cond:
             fallos.append(msg)
+
+    P = {"gn-1": {"inicio": "Gn 1:1", "fin": "Gn 1:19"}, "gn-2": {"inicio": "Gn 1:20", "fin": "Gn 2:3"},
+         "gn-4": {"inicio": "Gn 3:1", "fin": "Gn 3:24"}}
+    comprobar(texto_pasajes(["gn-2", "gn-1", "gn-4"], P) == "Gn 1:1–2:3 · Gn 3:1-24",
+              "texto_pasajes: tramos seguidos unidos, mismo capítulo con guion")
+    comprobar(texto_pasajes(["gn-9"], P) == "gn-9", "texto_pasajes: pasaje desconocido queda como id")
+    r = _resumen({"pasajes": ["gn-1"], "element": {"nombre": "X"}, "personas": ["P_1"],
+                  "edades": [{"dato": "Edad visual: unos treinta", "certeza": "interpretacion"}],
+                  "rasgos": [{"rasgo": "barba corta", "certeza": "interpretacion"}, {"rasgo": "dice", "certeza": "texto"}],
+                  "vestuario": [{"rasgo": "túnica parda", "certeza": "supuesto"}],
+                  "hoja_referencia": {"negativo_es": "Sin corona."}}, "personajes")
+    comprobar(r["edad"] == "Unos treinta" and r["debe"] == ["barba corta", "túnica parda"] and r["no_debe"] == "Sin corona."
+              and r["datos_texto"] == 1, "resumen: edad visual, lo que debe verse, lo que no y datos del texto")
 
     def sin(d, ruta):
         """Copia de d sin la clave al final de `ruta` (para comparar que solo cambió ese campo)."""

@@ -540,6 +540,8 @@
         return h('li', { class: falta ? 'falta' : null }, falta ? `falta: ${r.split('/').pop()}` : h('a', { href: `#ver=${r}` }, r.split('/').pop()));
       }))] : null;
 
+    const queAprobar = it.resumen ? bloqueQueAprobar(it, mapa) : null;
+
     const cuandoRev = rev.fecha ? h('span', { class: 'meta' }, ` · ${fecha(rev.fecha)}`) : '';
     // «cambiada»: la nota es de la imagen anterior, no un rechazo de la actual (aspecto de aviso, no carmín)
     const notaRev = est === 'cambiada'
@@ -555,9 +557,11 @@
         h('div', { class: 'tarjeta-cab' },
           h('h3', { id: `t-${it.id}`, tabindex: '-1' }, it.titulo),
           h('span', { class: `estado e-${est}` }, generandoEsta ? 'Generando ahora' : TEXTO_ESTADO[est])),
+        it.resumen?.pasajes_txt ? h('p', { class: 'tarjeta-pasajes' }, `Para ${it.resumen.pasajes_txt}`) : null,
         h('p', { class: 'tarjeta-id' }, it.id, ' · ', h('code', null, it.fuente),
           esToma && it.ficha?.versiculos ? ` · ${it.ficha.versiculos}` : ''),
         notaRev,
+        queAprobar,
         errorTarjeta.has(it.id) ? h('div', { class: 'errores', role: 'alert' }, h('strong', null, 'No se pudo hacer:'),
           h('ul', null, errorTarjeta.get(it.id).map((e) => h('li', null, e)))) : null,
         it.bloqueo ? h('p', { class: 'bloqueo' }, `Bloqueada: ${it.bloqueo}`) : null,
@@ -580,6 +584,36 @@
             const cuando = m ? `apartada ${Number(m[3])}-${MESES[Number(m[2]) - 1]} ${m[4]}:${m[5]}` : 'versión anterior';
             return figura(u, null, null, `Versión anterior de ${it.titulo} (${cuando})`, cuando);
           }))) : null));
+  }
+
+  /** «Qué estás aprobando»: para qué pasajes sirve la hoja, la edad, lo que debe verse y lo que no, y las otras
+   *  hojas de la misma persona para comparar la cara (Abram → Abraham, Jacob joven → adulto → mayor). */
+  function bloqueQueAprobar(it, mapa) {
+    const r = it.resumen;
+    const k = (s) => `${it.id}|${s}`;
+    const tipo = { personajes: 'este personaje', objetos: 'este objeto', escenarios: 'este lugar' }[it.grupo] || 'esto';
+    const otras = (r.misma_persona || []).map((id) => mapa.get(id)).filter(Boolean);
+    const filas = [
+      h('p', null, 'Es la imagen de referencia ', r.element ? h('strong', null, r.element) : '', ': con ella se dibuja a ', tipo,
+        r.pasajes_txt ? [' en todas las tomas de ', h('strong', null, r.pasajes_txt)] : ' en sus tomas', '. ',
+        'Apruébala si la imagen cumple lo de abajo; si algo falla, «Rechazar con nota» diciendo qué.'),
+    ];
+    if (r.edad) filas.push(h('p', null, h('strong', null, 'Edad que debe aparentar: '), r.edad));
+    if (r.debe.length) {
+      filas.push(h('p', { class: 'etiqueta-campo' }, 'Debe verse así'),
+        h('ul', { class: 'debe' }, r.debe.map((t) => h('li', null, t))));
+    }
+    if (r.no_debe) filas.push(h('p', { class: 'etiqueta-campo' }, 'No debe aparecer'), h('p', { class: 'no-debe' }, r.no_debe));
+    if (otras.length) {
+      filas.push(h('p', { class: 'etiqueta-campo' }, 'La misma persona en otras hojas (compara la cara y la ropa)'),
+        h('div', { class: 'misma-persona' }, otras.map((o) => h('a', { href: `#ver=${o.id}`, class: 'otra-hoja' },
+          o.imagen ? h('img', { src: o.imagen, alt: o.titulo, loading: 'lazy', decoding: 'async' }) : h('span', { class: 'sin-imagen mini' }, 'sin imagen'),
+          h('span', { class: 'otra-titulo' }, o.titulo),
+          o.resumen?.pasajes_txt ? h('span', { class: 'meta' }, o.resumen.pasajes_txt) : null,
+          o.resumen?.edad ? h('span', { class: 'meta' }, o.resumen.edad) : null))));
+    }
+    if (r.datos_texto) filas.push(h('p', { class: 'meta' }, `La ficha trae además ${r.datos_texto} datos del texto bíblico con su cita (en «Ficha»); esos no se juzgan en la imagen.`));
+    return desplegable(k('aprobar-que'), 'Qué estás aprobando', h('div', { class: 'que-aprobar' }, filas), { abierto: true, clase: 'desplegable destacado' });
   }
 
   // ------------------------------------------------------------------ ficha legible
