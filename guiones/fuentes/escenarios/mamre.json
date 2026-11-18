@@ -41,13 +41,13 @@
       "cita": "corrió Abraham á las vacas"
     },
     {
-      "dato": "Comen debajo del árbol, y Abraham está de pie junto a ellos",
+      "dato": "Comen debajo del árbol, y Abraham está junto a ellos",
       "certeza": "texto",
       "ref": "Gn 18:8",
       "cita": "él estaba junto á ellos debajo del árbol; y comieron"
     },
     {
-      "dato": "La puerta de la tienda queda detrás de quien habla con Abraham",
+      "dato": "Sara escucha a la puerta de la tienda, que estaba «detrás de él»: el texto no aclara si de Abraham o de quien le habla",
       "certeza": "texto",
       "ref": "Gn 18:10",
       "cita": "Sara escuchaba á la puerta de la tienda, que estaba detrás de él"
@@ -55,7 +55,7 @@
     {
       "dato": "Gn 17 ocurre también en Mamre",
       "certeza": "inferido",
-      "nota": "Gn 17 no nombra el lugar. Abram mora en Mamre desde Gn 13:18 y el texto no cuenta que se vaya hasta Gn 20:1 («De allí partió Abraham»), después de Gn 18–19, que sí son en Mamre. Lo decide el guion.",
+      "nota": "Gn 17 no nombra el lugar. Abram mora en Mamre desde Gn 13:18 y el texto no cuenta que se vaya hasta Gn 20:1 («De allí partió Abraham»), después de Gn 18, que sí es en Mamre (Gn 18:1). Lo decide el guion.",
       "base": [
         {
           "ref": "Gn 13:18",

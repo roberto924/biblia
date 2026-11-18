@@ -19,7 +19,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 ## Rasgos
 
 - **Interpretación del ilustrador**: Campo de tierra parda con hierba seca y varios árboles de copa ancha dispersos, sin especie reconocible; al fondo, una ladera baja de roca clara con la boca oscura y abierta de una cueva, algo más alta que un hombre; colinas suaves a lo lejos y luz de día — Interpretación del ilustrador: el texto dice heredad, árboles, término y cueva (Gn 23:17), nada de su forma ni de la especie de los árboles.
-- **Fuente externa**: La tradición sitúa la cueva en Hebrón, bajo un recinto de época de Herodes (la Tumba de los Patriarcas), que después fue mezquita; la hoja no lo dibuja porque es muy posterior al relato — fuente: Catálogo de juego (herramientas/juego/Gn.json, escenario macpela): https://en.wikipedia.org/wiki/Cave_of_the_Patriarchs
+- **Fuente externa**: Que está en Hebrón lo dice el texto (Gn 23:19); la tradición la identifica con la cueva que hay bajo un recinto de época de Herodes en Hebrón (la Tumba de los Patriarcas), que después fue mezquita; la hoja no dibuja el recinto porque es muy posterior al relato — fuente: Catálogo de juego (herramientas/juego/Gn.json, escenario macpela): https://en.wikipedia.org/wiki/Cave_of_the_Patriarchs
 
 ## Hoja de referencia del Element
 

@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `PUERTA_HET` (lugar)
 - **Pasajes**: gn-47
-- **Nota**: No está en el catálogo de juego, que junta Gn 23 en «macpela» (decisión pendiente n.º 36 de guiones/LEEME.md). Es Kiriath-arba, que es Hebrón (Gn 23:2): Abraham trata con los hijos de Het y con Efrón «en oídos» y «á vista» de todos los que entraban por la puerta de la ciudad (Gn 23:10, 23:18); por eso se infiere que el trato se hace en la puerta o junto a ella. Los hijos de Het y Efrón tienen hoja propia (hijos-het, efron). La plata pesada (Gn 23:16) se resuelve en su toma. El duelo por Sara (Gn 23:2) no dice dónde es: lo decide el guion. Sin referencia de época comprobada (supuesto, n.º 34).
+- **Nota**: No está en el catálogo de juego, que junta Gn 23 en «macpela» (decisión pendiente n.º 36 de guiones/LEEME.md). Se infiere que es Kiriath-arba, que es Hebrón, donde muere Sara (abajo). Abraham trata con los hijos de Het y con Efrón «en oídos» y «á vista» de todos los que entraban por la puerta de la ciudad (Gn 23:10, 23:18); por eso se infiere que el trato se hace en la puerta o junto a ella. Los hijos de Het y Efrón tienen hoja propia (hijos-het, efron). La plata pesada (Gn 23:16) se resuelve en su toma. El duelo por Sara (Gn 23:2) no dice dónde es: lo decide el guion. Sin referencia de época comprobada (supuesto, n.º 34).
 
 ## Lo que dice el texto
 
@@ -13,6 +13,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Efrón responde delante de todos los que entraban por la puerta de su ciudad — Gn 23:10: «en oídos de los hijos de Heth, de todos los que entraban por la puerta de su ciudad»
 - **Texto**: Abraham pesa la plata mientras lo oyen los hijos de Het — Gn 23:16: «pesó Abraham á Ephrón el dinero que dijo, oyéndolo los hijos de Heth»
 - **Texto**: La heredad queda de Abraham a vista de todos los que entraban por la puerta — Gn 23:18: «á vista de los hijos de Heth, y de todos los que entraban por la puerta de la ciudad»
+- **Inferido**: La ciudad es Kiriath-arba, que es Hebrón — Sara muere en Kiriath-arba (Gn 23:2) y Abraham se levanta «de delante de su muerto» para hablar a los hijos de Het (Gn 23:3): se entiende que trata con ellos en esa ciudad. El texto no lo dice; la ficha hijos-het infiere lo mismo («viven en Hebrón»). — base: Gn 23:3 «levantóse Abraham de delante de su muerto, y habló á los hijos de Heth»
 - **Inferido**: El trato se hace en la puerta de la ciudad o junto a ella — Los testigos son «todos los que entraban por la puerta» (Gn 23:10, 23:18); el texto no dice en qué lado de la puerta están. — base: Gn 23:10 «todos los que entraban por la puerta de su ciudad» — base: Gn 23:18 «todos los que entraban por la puerta de la ciudad»
 
 ## Rasgos

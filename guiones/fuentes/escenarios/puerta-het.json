@@ -8,7 +8,7 @@
     "nombre": "PUERTA_HET",
     "tipo": "lugar"
   },
-  "nota": "No está en el catálogo de juego, que junta Gn 23 en «macpela» (decisión pendiente n.º 36 de guiones/LEEME.md). Es Kiriath-arba, que es Hebrón (Gn 23:2): Abraham trata con los hijos de Het y con Efrón «en oídos» y «á vista» de todos los que entraban por la puerta de la ciudad (Gn 23:10, 23:18); por eso se infiere que el trato se hace en la puerta o junto a ella. Los hijos de Het y Efrón tienen hoja propia (hijos-het, efron). La plata pesada (Gn 23:16) se resuelve en su toma. El duelo por Sara (Gn 23:2) no dice dónde es: lo decide el guion. Sin referencia de época comprobada (supuesto, n.º 34).",
+  "nota": "No está en el catálogo de juego, que junta Gn 23 en «macpela» (decisión pendiente n.º 36 de guiones/LEEME.md). Se infiere que es Kiriath-arba, que es Hebrón, donde muere Sara (abajo). Abraham trata con los hijos de Het y con Efrón «en oídos» y «á vista» de todos los que entraban por la puerta de la ciudad (Gn 23:10, 23:18); por eso se infiere que el trato se hace en la puerta o junto a ella. Los hijos de Het y Efrón tienen hoja propia (hijos-het, efron). La plata pesada (Gn 23:16) se resuelve en su toma. El duelo por Sara (Gn 23:2) no dice dónde es: lo decide el guion. Sin referencia de época comprobada (supuesto, n.º 34).",
   "texto": [
     {
       "dato": "Sara muere en Kiriath-arba, que es Hebrón",
@@ -39,6 +39,17 @@
       "certeza": "texto",
       "ref": "Gn 23:18",
       "cita": "á vista de los hijos de Heth, y de todos los que entraban por la puerta de la ciudad"
+    },
+    {
+      "dato": "La ciudad es Kiriath-arba, que es Hebrón",
+      "certeza": "inferido",
+      "nota": "Sara muere en Kiriath-arba (Gn 23:2) y Abraham se levanta «de delante de su muerto» para hablar a los hijos de Het (Gn 23:3): se entiende que trata con ellos en esa ciudad. El texto no lo dice; la ficha hijos-het infiere lo mismo («viven en Hebrón»).",
+      "base": [
+        {
+          "ref": "Gn 23:3",
+          "cita": "levantóse Abraham de delante de su muerto, y habló á los hijos de Heth"
+        }
+      ]
     },
     {
       "dato": "El trato se hace en la puerta de la ciudad o junto a ella",

@@ -49,7 +49,13 @@
       "cita": "vació su cántaro en la pila, y corrió otra vez al pozo para sacar agua"
     },
     {
-      "dato": "Labán corre afuera, a la fuente, y halla al criado junto a los camellos",
+      "dato": "Labán corre afuera, a la fuente",
+      "certeza": "texto",
+      "ref": "Gn 24:29",
+      "cita": "corrió afuera al hombre, á la fuente"
+    },
+    {
+      "dato": "Halla al criado junto a los camellos, a la fuente",
       "certeza": "texto",
       "ref": "Gn 24:30",
       "cita": "he aquí que estaba junto á los camellos á la fuente"

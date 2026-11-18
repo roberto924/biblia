@@ -14,7 +14,8 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: El criado lo llama fuente; las hijas de la ciudad salen a ella — Gn 24:13: «He aquí yo estoy junto á la fuente de agua, y las hijas de los varones de esta ciudad salen por agua»
 - **Texto**: Rebeca baja a la fuente y llena su cántaro — Gn 24:16: «descendió á la fuente, y llenó su cántaro, y se volvía»
 - **Texto**: Hay una pila donde Rebeca vacía el cántaro para los camellos, y vuelve al pozo — Gn 24:20: «vació su cántaro en la pila, y corrió otra vez al pozo para sacar agua»
-- **Texto**: Labán corre afuera, a la fuente, y halla al criado junto a los camellos — Gn 24:30: «he aquí que estaba junto á los camellos á la fuente»
+- **Texto**: Labán corre afuera, a la fuente — Gn 24:29: «corrió afuera al hombre, á la fuente»
+- **Texto**: Halla al criado junto a los camellos, a la fuente — Gn 24:30: «he aquí que estaba junto á los camellos á la fuente»
 - **Inferido**: Para llegar al agua hay que bajar — Rebeca «descendió á la fuente» (Gn 24:16; lo repite el criado en Gn 24:45). Si se baja por escalones, por una rampa o por la ladera no se dice: los escalones son elección del ilustrador. — base: Gn 24:16 «descendió á la fuente»
 - **Inferido**: La pila está apartada del agua, donde beben los camellos — Rebeca vacía el cántaro en la pila y corre otra vez al pozo (Gn 24:20): la pila no está junto al agua, sino arriba, al alcance de los camellos. — base: Gn 24:20 «corrió otra vez al pozo para sacar agua»
 

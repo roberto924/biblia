@@ -10,7 +10,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Texto**: Lot sube de Zoar y se asienta en el monte con sus dos hijas — Gn 19:30: «Lot subió de Zoar, y asentó en el monte, y sus dos hijas con él»
 - **Texto**: Por miedo a quedarse en Zoar, se aloja en una cueva — Gn 19:30: «tuvo miedo de quedar en Zoar, y se alojó en una cueva él y sus dos hijas»
-- **Texto**: Allí hay vino, y pasan las noches — Gn 19:33: «dieron á beber vino á su padre aquella noche»
+- **Texto**: Esa noche las hijas dan a beber vino a su padre — Gn 19:33: «dieron á beber vino á su padre aquella noche»
 
 ## Rasgos
 

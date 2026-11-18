@@ -1,10 +1,10 @@
-# Beerseba: el pozo y el campamento de Abraham (Gn 21–22) (escenario)
+# Beerseba: el pozo y el campamento de Abraham (Gn 21–22; 24:1-9) (escenario)
 
 Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `BEERSEBA` (lugar)
-- **Pasajes**: gn-44, gn-45, gn-46
-- **Nota**: El id es el del catálogo de juego. El pozo tiene hoja propia (objetos/pozo-beerseba) y manda sobre su forma; la tienda también (objetos/tienda-abram); las siete corderas (Gn 21:28-30) entran en sus tomas con la hoja del pozo. La hoja muestra el lugar antes de Gn 21:33: el bosque que Abraham planta allí sale en un solo versículo y se resuelve en su toma. Gn 22 empieza y acaba aquí por inferencia (abajo); la noticia de Gn 22:20 (gn-46) puede ir sobre esta vista o sin escenario, como decida el guion. Si el campamento de Gn 21:1-14 (gn-42 y gn-43) es este mismo, el texto no lo dice: lo decide el guion. El desierto adonde va Agar es el escenario desierto-beerseba. Sin la lámina 1, como los demás paisajes abiertos (decisión pendiente n.º 37 de guiones/LEEME.md).
+- **Pasajes**: gn-42, gn-43, gn-44, gn-45, gn-46, gn-48
+- **Nota**: El id es el del catálogo de juego. El pozo tiene hoja propia (objetos/pozo-beerseba) y manda sobre su forma; la tienda también (objetos/tienda-abram); las siete corderas (Gn 21:28-30) entran en sus tomas con la hoja del pozo. La hoja muestra el lugar antes de Gn 21:33: el bosque que Abraham planta allí sale en un solo versículo y se resuelve en su toma; desde entonces (gn-45, gn-46 y gn-48) ya está plantado y lo añade cada toma que muestre el lugar. Gn 22 empieza y acaba aquí por inferencia (abajo); la noticia de Gn 22:20 (gn-46) puede ir sobre esta vista o sin escenario, como decida el guion. El campamento de Gn 21:1-14 (gn-42 y el principio de gn-43) y la casa de Abraham de Gn 24:1-9 (gn-48) usan esta hoja también por inferencia (abajo), encuadrando las tiendas; si están junto a este mismo pozo, el texto no lo dice: lo decide el guion. El desierto adonde va Agar es el escenario desierto-beerseba. Sin la lámina 1, como los demás paisajes abiertos (decisión pendiente n.º 37 de guiones/LEEME.md).
 
 ## Lo que dice el texto
 
@@ -15,6 +15,8 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Abraham mora muchos días en tierra de los Filisteos — Gn 21:34: «moró Abraham en tierra de los Filisteos muchos días»
 - **Texto**: Después de Moriah vuelven a Beer-seba, y Abraham habita allí — Gn 22:19: «se fueron juntos á Beer-seba; y habitó Abraham en Beer-seba»
 - **Inferido**: Está en la tierra del Mediodía — Gn 20:1 lleva a Abraham a la tierra del Mediodía, y desde entonces el texto no lo saca de ella hasta Moriah: mora en tierra de los Filisteos (Gn 21:34) y vuelve a Beer-seba (Gn 22:19). — base: Gn 20:1 «partió Abraham á la tierra del Mediodía»
+- **Inferido**: El campamento de Gn 21:1-14 está en esta tierra — Gn 21:1-14 no dice dónde está Abraham. Viene de habitar como forastero en Gerar, en la tierra del Mediodía (Gn 20:1), y Agar sale del campamento y anda errante por el desierto de Beer-seba (Gn 21:14): se entiende que el campamento está en esta tierra, no que esté junto a este pozo. Lo decide el guion. — base: Gn 21:14 «andaba errante por el desierto de Beer-seba»
+- **Inferido**: Gn 24:1-9 ocurre en casa de Abraham, aquí — Gn 24 no dice dónde vive Abraham. La última morada que da el texto es Beer-seba (Gn 22:19); Gn 23:2 dice que «vino» a hacer el duelo por Sara en Hebrón, sin decir de dónde ni si se quedó allí. Alternativa: el campo de Mamre y Hebrón (escenarios mamre o macpela). Lo decide el guion. — base: Gn 22:19 «habitó Abraham en Beer-seba» — base: Gn 23:2 «vino Abraham á hacer el duelo á Sara»
 - **Inferido**: El trato de Gn 21:22-32 se hace junto al pozo — Abraham dice «este pozo» (Gn 21:30): se entiende que hablan junto a él. — base: Gn 21:30 «yo cavé este pozo»
 - **Inferido**: Abraham sale de aquí hacia Moriah — Gn 22:1-3 no dice dónde está Abraham. Planta allí un bosque (Gn 21:33), mora muchos días en esa tierra (Gn 21:34) y después de Moriah vuelve y habita en Beer-seba (Gn 22:19). Lo decide el guion. — base: Gn 22:19 «habitó Abraham en Beer-seba»
 

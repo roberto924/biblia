@@ -47,10 +47,25 @@
       "cita": "Abimelech tomó ovejas y vacas, y siervos y siervas, y diólo á Abraham"
     },
     {
-      "dato": "El texto llama a esa región tierra de los Filisteos",
+      "dato": "Después del pacto de Beer-seba, Abimelec y Ficol se vuelven a tierra de los Filisteos",
       "certeza": "texto",
       "ref": "Gn 21:32",
-      "cita": "se volvieron á tierra de los Filisteos"
+      "cita": "levantóse Abimelech, y Phicol, príncipe de su ejército, y se volvieron á tierra de los Filisteos"
+    },
+    {
+      "dato": "Gerar está en tierra de los Filisteos",
+      "certeza": "inferido",
+      "nota": "Gn 20–21 no lo dice con esas palabras: se entiende porque su rey, Abimelec, vuelve a tierra de los Filisteos (Gn 21:32).",
+      "base": [
+        {
+          "ref": "Gn 20:2",
+          "cita": "Abimelech, rey de Gerar"
+        },
+        {
+          "ref": "Gn 21:32",
+          "cita": "se volvieron á tierra de los Filisteos"
+        }
+      ]
     },
     {
       "dato": "Gn 20:8-16 ocurre en la casa del rey",

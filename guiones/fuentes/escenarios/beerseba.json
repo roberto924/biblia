@@ -1,10 +1,13 @@
 {
   "id": "beerseba",
-  "nombre": "Beerseba: el pozo y el campamento de Abraham (Gn 21–22)",
+  "nombre": "Beerseba: el pozo y el campamento de Abraham (Gn 21–22; 24:1-9)",
   "pasajes": [
+    "gn-42",
+    "gn-43",
     "gn-44",
     "gn-45",
-    "gn-46"
+    "gn-46",
+    "gn-48"
   ],
   "element": {
     "nombre": "BEERSEBA",
@@ -13,7 +16,7 @@
   "sin_laminas": [
     "patron-1-paisaje.png"
   ],
-  "nota": "El id es el del catálogo de juego. El pozo tiene hoja propia (objetos/pozo-beerseba) y manda sobre su forma; la tienda también (objetos/tienda-abram); las siete corderas (Gn 21:28-30) entran en sus tomas con la hoja del pozo. La hoja muestra el lugar antes de Gn 21:33: el bosque que Abraham planta allí sale en un solo versículo y se resuelve en su toma. Gn 22 empieza y acaba aquí por inferencia (abajo); la noticia de Gn 22:20 (gn-46) puede ir sobre esta vista o sin escenario, como decida el guion. Si el campamento de Gn 21:1-14 (gn-42 y gn-43) es este mismo, el texto no lo dice: lo decide el guion. El desierto adonde va Agar es el escenario desierto-beerseba. Sin la lámina 1, como los demás paisajes abiertos (decisión pendiente n.º 37 de guiones/LEEME.md).",
+  "nota": "El id es el del catálogo de juego. El pozo tiene hoja propia (objetos/pozo-beerseba) y manda sobre su forma; la tienda también (objetos/tienda-abram); las siete corderas (Gn 21:28-30) entran en sus tomas con la hoja del pozo. La hoja muestra el lugar antes de Gn 21:33: el bosque que Abraham planta allí sale en un solo versículo y se resuelve en su toma; desde entonces (gn-45, gn-46 y gn-48) ya está plantado y lo añade cada toma que muestre el lugar. Gn 22 empieza y acaba aquí por inferencia (abajo); la noticia de Gn 22:20 (gn-46) puede ir sobre esta vista o sin escenario, como decida el guion. El campamento de Gn 21:1-14 (gn-42 y el principio de gn-43) y la casa de Abraham de Gn 24:1-9 (gn-48) usan esta hoja también por inferencia (abajo), encuadrando las tiendas; si están junto a este mismo pozo, el texto no lo dice: lo decide el guion. El desierto adonde va Agar es el escenario desierto-beerseba. Sin la lámina 1, como los demás paisajes abiertos (decisión pendiente n.º 37 de guiones/LEEME.md).",
   "texto": [
     {
       "dato": "Los siervos de Abimelec le habían quitado a Abraham un pozo",
@@ -59,6 +62,32 @@
         {
           "ref": "Gn 20:1",
           "cita": "partió Abraham á la tierra del Mediodía"
+        }
+      ]
+    },
+    {
+      "dato": "El campamento de Gn 21:1-14 está en esta tierra",
+      "certeza": "inferido",
+      "nota": "Gn 21:1-14 no dice dónde está Abraham. Viene de habitar como forastero en Gerar, en la tierra del Mediodía (Gn 20:1), y Agar sale del campamento y anda errante por el desierto de Beer-seba (Gn 21:14): se entiende que el campamento está en esta tierra, no que esté junto a este pozo. Lo decide el guion.",
+      "base": [
+        {
+          "ref": "Gn 21:14",
+          "cita": "andaba errante por el desierto de Beer-seba"
+        }
+      ]
+    },
+    {
+      "dato": "Gn 24:1-9 ocurre en casa de Abraham, aquí",
+      "certeza": "inferido",
+      "nota": "Gn 24 no dice dónde vive Abraham. La última morada que da el texto es Beer-seba (Gn 22:19); Gn 23:2 dice que «vino» a hacer el duelo por Sara en Hebrón, sin decir de dónde ni si se quedó allí. Alternativa: el campo de Mamre y Hebrón (escenarios mamre o macpela). Lo decide el guion.",
+      "base": [
+        {
+          "ref": "Gn 22:19",
+          "cita": "habitó Abraham en Beer-seba"
+        },
+        {
+          "ref": "Gn 23:2",
+          "cita": "vino Abraham á hacer el duelo á Sara"
         }
       ]
     },

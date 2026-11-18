@@ -10,7 +10,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Texto**: Los varones miran hacia Sodoma y Abraham va con ellos acompañándolos — Gn 18:16: «los varones se levantaron de allí, y miraron hacia Sodoma: y Abraham iba con ellos acompañándolos»
 - **Texto**: Los varones siguen hacia Sodoma; Abraham se queda delante de Jehová — Gn 18:22: «apartáronse de allí los varones, y fueron hacia Sodoma: mas Abraham estaba aún delante de Jehová»
-- **Texto**: A la mañana siguiente Abraham sube al mismo lugar — Gn 19:27: «subió Abraham por la mañana al lugar donde había estado delante de Jehová»
+- **Texto**: Por la mañana Abraham sube al lugar donde había estado delante de Jehová — Gn 19:27: «subió Abraham por la mañana al lugar donde había estado delante de Jehová»
 - **Texto**: Desde allí mira hacia la llanura y ve subir el humo — Gn 19:28: «hacia toda la tierra de aquella llanura miró; y he aquí que el humo subía de la tierra como el humo de un horno»
 - **Texto**: Antes de la destrucción, la llanura era toda de riego — Gn 13:10: «toda la llanura del Jordán, que toda ella era de riego, antes que destruyese Jehová á Sodoma y á Gomorra»
 - **Inferido**: Es un lugar alto — Abraham «subió» a él (Gn 19:27), y desde allí se mira hacia Sodoma (Gn 18:16, 19:28). — base: Gn 19:27 «subió Abraham por la mañana al lugar»

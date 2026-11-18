@@ -12,9 +12,9 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Abraham está sentado a la puerta de su tienda en el calor del día, en el valle de Mamre — Gn 18:1: «en el valle de Mamre, estando él sentado á la puerta de su tienda en el calor del día»
 - **Texto**: Hay un árbol donde invita a recostarse a los huéspedes — Gn 18:4: «recostaos debajo de un árbol»
 - **Texto**: Las vacas están a mano — Gn 18:7: «corrió Abraham á las vacas»
-- **Texto**: Comen debajo del árbol, y Abraham está de pie junto a ellos — Gn 18:8: «él estaba junto á ellos debajo del árbol; y comieron»
-- **Texto**: La puerta de la tienda queda detrás de quien habla con Abraham — Gn 18:10: «Sara escuchaba á la puerta de la tienda, que estaba detrás de él»
-- **Inferido**: Gn 17 ocurre también en Mamre — Gn 17 no nombra el lugar. Abram mora en Mamre desde Gn 13:18 y el texto no cuenta que se vaya hasta Gn 20:1 («De allí partió Abraham»), después de Gn 18–19, que sí son en Mamre. Lo decide el guion. — base: Gn 13:18 «moró en el alcornocal de Mamre» — base: Gn 20:1 «DE allí partió Abraham á la tierra del Mediodía»
+- **Texto**: Comen debajo del árbol, y Abraham está junto a ellos — Gn 18:8: «él estaba junto á ellos debajo del árbol; y comieron»
+- **Texto**: Sara escucha a la puerta de la tienda, que estaba «detrás de él»: el texto no aclara si de Abraham o de quien le habla — Gn 18:10: «Sara escuchaba á la puerta de la tienda, que estaba detrás de él»
+- **Inferido**: Gn 17 ocurre también en Mamre — Gn 17 no nombra el lugar. Abram mora en Mamre desde Gn 13:18 y el texto no cuenta que se vaya hasta Gn 20:1 («De allí partió Abraham»), después de Gn 18, que sí es en Mamre (Gn 18:1). Lo decide el guion. — base: Gn 13:18 «moró en el alcornocal de Mamre» — base: Gn 20:1 «DE allí partió Abraham á la tierra del Mediodía»
 - **Inferido**: Al final de Gn 18 Abraham vuelve aquí — «Su lugar» se entiende su tienda en Mamre, de donde había salido acompañando a los varones (Gn 18:16). — base: Gn 18:33 «Abraham se volvió á su lugar»
 
 ## Rasgos

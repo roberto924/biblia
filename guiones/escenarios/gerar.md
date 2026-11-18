@@ -14,7 +14,8 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Después llama a Abraham — Gn 20:9: «Después llamó Abimelech á Abraham»
 - **Texto**: Tiene un reino — Gn 20:9: «sobre mí y sobre mi reino»
 - **Texto**: Da a Abraham ovejas, vacas, siervos y siervas — Gn 20:14: «Abimelech tomó ovejas y vacas, y siervos y siervas, y diólo á Abraham»
-- **Texto**: El texto llama a esa región tierra de los Filisteos — Gn 21:32: «se volvieron á tierra de los Filisteos»
+- **Texto**: Después del pacto de Beer-seba, Abimelec y Ficol se vuelven a tierra de los Filisteos — Gn 21:32: «levantóse Abimelech, y Phicol, príncipe de su ejército, y se volvieron á tierra de los Filisteos»
+- **Inferido**: Gerar está en tierra de los Filisteos — Gn 20–21 no lo dice con esas palabras: se entiende porque su rey, Abimelec, vuelve a tierra de los Filisteos (Gn 21:32). — base: Gn 20:2 «Abimelech, rey de Gerar» — base: Gn 21:32 «se volvieron á tierra de los Filisteos»
 - **Inferido**: Gn 20:8-16 ocurre en la casa del rey — El texto no dice dónde: se infiere que en casa de Abimelec, que llama a sus siervos y después a Abraham. — base: Gn 20:8 «llamó á todos sus siervos»
 
 ## Rasgos

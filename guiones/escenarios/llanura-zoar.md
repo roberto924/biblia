@@ -16,7 +16,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Lot llega a Zoar cuando sale el sol — Gn 19:23: «El sol salía sobre la tierra, cuando Lot llegó á Zoar»
 - **Texto**: Llueve azufre y fuego sobre Sodoma y Gomorra — Gn 19:24: «llovió Jehová sobre Sodoma y sobre Gomorra azufre y fuego de parte de Jehová desde los cielos»
 - **Texto**: Se destruyen las ciudades, toda la llanura y el fruto de la tierra — Gn 19:25: «destruyó las ciudades, y toda aquella llanura, con todos los moradores de aquellas ciudades, y el fruto de la tierra»
-- **Texto**: La llanura era de riego y llegaba hasta Zoar — Gn 13:10: «toda ella era de riego, antes que destruyese Jehová á Sodoma y á Gomorra, como el huerto de Jehová, como la tierra de Egipto entrando en Zoar»
+- **Texto**: Antes de la destrucción la llanura era toda de riego, «como la tierra de Egipto entrando en Zoar» — Gn 13:10: «toda ella era de riego, antes que destruyese Jehová á Sodoma y á Gomorra, como el huerto de Jehová, como la tierra de Egipto entrando en Zoar»
 - **Inferido**: Hay montes junto a la llanura, por encima de Zoar — Le mandan escapar «al monte» (Gn 19:17) y después sube de Zoar al monte (Gn 19:30). — base: Gn 19:30 «Lot subió de Zoar, y asentó en el monte»
 
 ## Rasgos
