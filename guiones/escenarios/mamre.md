@@ -3,7 +3,7 @@
 Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `MAMRE` (lugar)
-- **Pasajes**: gn-34, gn-35, gn-36, gn-37
+- **Pasajes**: gn-34, gn-35, gn-36, gn-37, gn-75
 - **Nota**: El id es el del catálogo de juego. La RV1909 dice «alcornocal de Mamre» (Gn 13:18) y «valle de Mamre» (Gn 14:13, 18:1), y en Gn 18 nombra «un árbol» (Gn 18:4, 18:8) sin decir cuál. La hoja muestra un árbol grande y viejo, sin especie reconocible, y junto a él la tienda de Abraham, cuya forma manda la hoja TIENDA_ABRAM (objetos/tienda-abram). Gn 17 no nombra el lugar: se usa aquí por inferencia (abajo). Las vacas (Gn 18:7) y la comida (objetos/comida-mamre) entran en sus tomas. Desde Gn 18:16 los varones y Abraham se van hacia Sodoma: esas tomas van en el escenario vista-sodoma, y la vuelta de Abraham «á su lugar» (Gn 18:33) vuelve aquí. Jehová no tiene figura (decisión n.º 1 de guiones/LEEME.md). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
 
 ## Lo que dice el texto

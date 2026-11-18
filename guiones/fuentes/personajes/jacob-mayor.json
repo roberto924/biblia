@@ -4,7 +4,18 @@
   "personas": [
     "Jacob_1"
   ],
-  "pasajes": [],
+  "pasajes": [
+    "gn-66",
+    "gn-67",
+    "gn-68",
+    "gn-69",
+    "gn-70",
+    "gn-71",
+    "gn-72",
+    "gn-73",
+    "gn-74",
+    "gn-75"
+  ],
   "element": {
     "nombre": "JACOB_MAYOR",
     "tipo": "personaje"

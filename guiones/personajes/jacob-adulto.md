@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `JACOB_ADULTO` (personaje)
 - **Personas (datos/biblia.js)**: Jacob_1
-- **Pasajes**: gn-56, gn-57, gn-58, gn-59, gn-60
+- **Pasajes**: gn-56, gn-57, gn-58, gn-59, gn-60, gn-61, gn-62, gn-63, gn-64, gn-65
 - **Nota**: Aspecto desde Gn 27 hasta el final de sus veinte años con Labán: sirve de gn-56 a gn-65 (Gn 27:1–30:43); desde gn-66 (Gn 31:1), cuando ya han pasado los veinte años (Gn 31:38, 31:41), la hoja JACOB_MAYOR. En esta ficha solo se anotan los pasajes de Gn 27–28. Es el mismo hombre de la hoja JACOB_JOVEN, mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de JACOB_JOVEN). Hoja nueva porque entre Gn 25:34 y Gn 27 pasan años: Esaú se casa a los cuarenta (Gn 26:34) antes de Gn 27, y por cálculo Jacob tiene unos setenta y siete al salir hacia Harán (abajo). Cuando Rebeca lo viste para engañar a Isaac (Gn 27:15-16) lleva encima la ropa de la hoja DISFRAZ_JACOB (objetos/disfraz-jacob): los vestidos de Esaú y las pieles en las manos y la cerviz. El bordón con que pasa el Jordán (Gn 32:10) se le da desde que sale de Beer-seba (Gn 28:10); en las tomas de Gn 27, dentro de la tienda, no lo lleva. Su voz es la de jacob-joven (decisión pendiente n.º 27 de guiones/LEEME.md); tonos en estos pasajes: Gn 27:11-12, inquieto; Gn 27:18-24, finge con la voz tensa, sin imitar la de Esaú (Gn 27:22); Gn 28:16-17, asombro y temor; Gn 28:20-22, voto solemne. Edad visual: decisión pendiente n.º 38.
 
 ## Edad

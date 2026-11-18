@@ -4,6 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `JACOB_MAYOR` (personaje)
 - **Personas (datos/biblia.js)**: Jacob_1
+- **Pasajes**: gn-66, gn-67, gn-68, gn-69, gn-70, gn-71, gn-72, gn-73, gn-74, gn-75
 - **Nota**: Aspecto para cuando Jacob deja a Labán después de veinte años (Gn 31:38, 31:41) y vuelve a Canaán: sirve desde gn-66 (Gn 31:1) hasta el final de Gn 36, también para el entierro de Isaac (Gn 35:29). Sus pasajes los anotan los redactores de Gn 29–31 y Gn 32–36: esta hoja se hace aquí para que el aspecto de Jacob tenga un solo dueño (decisión pendiente n.º 38 de guiones/LEEME.md). Es el mismo hombre de las hojas JACOB_JOVEN y JACOB_ADULTO, con unos veinte años más que al salir de Beer-seba (si se genera a mano en ChatGPT, adjuntar también la imagen de JACOB_ADULTO): mismo rostro, misma túnica, mismo manto verde oliva y el bordón. Ahora tiene canas. Al entrar en Canaán es rico (Gn 32:10, «estoy sobre dos cuadrillas»), pero se le deja la misma ropa para que se le reconozca. La lucha de Peniel le deja cojo (Gn 32:25, 32:31): desde ahí cojea en las tomas, y la hoja lo muestra de pie y sin cojera para que sirva antes y después. Su voz es la de jacob-joven (decisión pendiente n.º 27). Lo que pasa en Gn 32–36 (Peniel, el encuentro con Esaú, Siquem) no se decide aquí.
 
 ## Edad

@@ -4,7 +4,12 @@
   "personas": [
     "Esau_1"
   ],
-  "pasajes": [],
+  "pasajes": [
+    "gn-69",
+    "gn-71",
+    "gn-75",
+    "gn-76"
+  ],
   "element": {
     "nombre": "ESAU_MAYOR",
     "tipo": "personaje"

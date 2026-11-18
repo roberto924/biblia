@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `LEA` (personaje)
 - **Personas (datos/biblia.js)**: Leah_1
-- **Pasajes**: gn-62, gn-63, gn-64, gn-66, gn-67, gn-68
+- **Pasajes**: gn-62, gn-63, gn-64, gn-66, gn-67, gn-68, gn-70, gn-71
 - **Nota**: Aspecto para Gn 29–31, de la boda (Gn 29:23) a la despedida en Galaad (Gn 31:55). Una sola hoja para esos años, como la de Raquel (decisión pendiente n.º 51 de guiones/LEEME.md): en gn-64 a gn-68 las tomas la hacen algo más madura sin cambiarle la cara, la ropa ni el pelo. Es la hermana mayor de Raquel (hoja RAQUEL): parecido de familia, distinta ropa. «Los ojos de Lea eran tiernos» (Gn 29:17) se lee tal cual: el texto lo contrapone a la belleza de Raquel («pero»), pero no dice si es un defecto ni en qué consiste; la hoja le da una mirada suave, sin ojos enfermos ni rasgos feos. El texto no dice cómo Jacob no la reconoce la noche de la boda (Gn 29:23-25): la hoja no le pone velo. La noche de bodas y la noche de las mandrágoras (Gn 30:16) no se muestran (decisión pendiente n.º 54). Sus hijos recién nacidos no llevan hoja; Rubén niño sí (personajes/ruben-nino). En Gn 31:14-16 habla a la vez que Raquel (decisión pendiente n.º 53).
 
 ## Edad

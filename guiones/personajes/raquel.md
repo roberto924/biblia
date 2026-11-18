@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `RAQUEL` (personaje)
 - **Personas (datos/biblia.js)**: Rachel_1
-- **Pasajes**: gn-61, gn-62, gn-63, gn-64, gn-65, gn-66, gn-67, gn-68
+- **Pasajes**: gn-61, gn-62, gn-63, gn-64, gn-65, gn-66, gn-67, gn-68, gn-71, gn-75
 - **Nota**: Aspecto para Gn 29–31, de pastora soltera (Gn 29:9) a madre de José (Gn 30:24). Una sola hoja para los veinte años en casa de Labán (Gn 31:41): se la dibuja joven, como en el pozo y en la boda; en gn-64 a gn-68 (de unos catorce a unos veinte años después) las tomas la hacen algo más madura sin cambiarle la cara, la ropa ni el pelo, y si no basta se hará otra hoja (decisión pendiente n.º 51 de guiones/LEEME.md). Es la hermana menor de Lea (hoja LEA): parecido de familia, distinta ropa. En gn-65 solo se la nombra (Gn 30:25); sale si el guion la muestra con José recién nacido, que no lleva hoja (como Isaac en gn-42). Los ídolos que hurta (Gn 31:19) y esconde (Gn 31:34) tienen hoja propia (objetos/idolos-laban); la albarda donde se sienta está en el escenario TIENDA_RAQUEL. «Estoy con la costumbre de las mujeres» (Gn 31:35) se lee y no se muestra (decisión pendiente n.º 54). En Gn 31:14-16 habla a la vez que Lea (decisión pendiente n.º 53).
 
 ## Edad

@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `ISAAC_ANCIANO` (personaje)
 - **Personas (datos/biblia.js)**: Isaac_1
-- **Pasajes**: gn-56, gn-57, gn-58, gn-59
+- **Pasajes**: gn-56, gn-57, gn-58, gn-59, gn-75
 - **Nota**: Aspecto desde Gn 27:1, cuando ya es viejo y no ve, hasta su muerte a los ciento ochenta años (Gn 35:27-29): esta hoja sirve también para gn-75, cuyos pasajes anota el redactor de Gn 32–36. Es el mismo hombre de ISAAC_ADULTO e ISAAC_MAYOR, muy viejo (si se genera a mano en ChatGPT, adjuntar también la imagen de ISAAC_MAYOR): misma cara, misma túnica crema de franjas rojas y azul oscuro y el mismo manto azul grisáceo. La ceguera se muestra con respeto: ojos velados y una mirada que no se fija, nada que impresione (decisión pendiente n.º 41 de guiones/LEEME.md). En Gn 27 está acostado o sentado en su tienda (escenarios/tienda-isaac): Jacob y Esaú le piden que se levante y se siente (Gn 27:19, 27:31); por eso la vista de cuerpo entero lo muestra sentado. Palpa a Jacob (Gn 27:21-23), lo besa y huele sus vestidos (Gn 27:26-27): las tomas lo muestran tanteando con las manos. Habla mucho en Gn 27 y en Gn 28:1-4, pero su voz está en isaac-muchacho (decisión pendiente n.º 27); tonos: Gn 27:1-4, cansado y afectuoso; Gn 27:18-27, receloso, tantea, y luego se rinde; Gn 27:33, estremecido; Gn 27:35-40, grave y dolido; Gn 28:1-4, solemne. Jehová y Dios, a quien nombra al bendecir, no tienen figura (decisión n.º 1).
 
 ## Edad

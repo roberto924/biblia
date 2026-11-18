@@ -3,7 +3,7 @@
 Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `BETEL` (lugar)
-- **Pasajes**: gn-60
+- **Pasajes**: gn-60, gn-74
 - **Nota**: El id es el del catálogo de juego, que junta en «betel» también Gn 12:8, 13:3-4 y 35:1-15. Esta hoja muestra el lugar de Gn 28: un paraje pedregoso y sin nadie donde Jacob duerme al ponerse el sol, con una piedra por cabecera (objetos/piedra-betel), y donde de mañana alza la piedra por título. La hoja es a la caída de la tarde; la noche del sueño y la mañana se resuelven en sus tomas. La escala del sueño tiene hoja propia (objetos/escala-jacob). El texto dice que antes la ciudad se llamaba Luz (Gn 28:19), pero no dónde estaba respecto del lugar donde durmió: la hoja no dibuja ciudad. En Gn 35 vuelve aquí otro redactor: si sirve esta hoja, lo decide él. Sin la lámina 1, como los demás paisajes abiertos (n.º 37 de guiones/LEEME.md).
 
 ## Lo que dice el texto
