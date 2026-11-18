@@ -88,7 +88,17 @@ main { padding: .5rem 1rem calc(var(--nav-h) + 2rem + env(safe-area-inset-bottom
   .nav-principal a[aria-current="page"]:hover::before { opacity: 1; background: var(--lapis-tinte); }
   .nav-principal a[aria-current="page"]::after { content: ""; position: absolute; left: -.85rem; top: 25%; bottom: 25%; width: 3px; border-radius: 0 3px 3px 0; background: var(--lapis); }
   .nav-principal svg { width: 1.3rem; height: 1.3rem; margin: 0; }
-  main { margin-left: var(--lateral); padding: 2.25rem clamp(1.5rem, 3vw, 3.25rem) 3.5rem; max-width: calc(80rem + var(--lateral)); }
+  /* El contenido mide como mucho --ancho y se centra en el espacio que deja el menú (el relleno crece a los lados).
+     100% es el ancho de body, del que se resta el menú. */
+  main { --ancho: 88rem; margin-left: var(--lateral); max-width: none;
+    padding: 2.25rem max(clamp(1.5rem, 3vw, 3.25rem), calc((100% - var(--lateral) - var(--ancho)) / 2)) 3.5rem; }
+  /* Ancho por pantalla: columna de lectura para las de texto, más sitio para las visuales. */
+  main[data-vista="notas"], main[data-vista="fuentes"], main[data-vista="tiempo"]:has(.tl-sec) { --ancho: 46rem; }
+  main[data-vista="leer"]:has(.inicio) { --ancho: 84rem; }
+  main[data-vista="personajes"], main[data-vista="mapa"] { --ancho: 108rem; }
+  main:has(.herr-arbol) { --ancho: 140rem; }
+  main:has(.rc-completo) { --ancho: 92rem; }
+  main:has(.tb) { --ancho: 96rem; }
 }
 
 /* ---------- Controles ---------- */
@@ -260,8 +270,11 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
    llena el resto hasta 56rem y el conjunto se centra en el espacio libre. El texto tiene prioridad: su pista
    crece primero y el acompañante (fr) se queda con lo que sobra, nunca menos de 19rem. */
 @media (min-width: 1100px) {
-  main:has(.pasaje-vista) { max-width: none; }
-  .pasaje-vista { display: grid; grid-template-columns: minmax(0, 44rem) minmax(19rem, 1fr); gap: clamp(2rem, 3vw, 3rem); align-items: start; max-width: calc(44rem + 3rem + 56rem); margin-inline: auto; }
+  main:has(.pasaje-vista) { --ancho: calc(44rem + 3rem + 56rem); }
+  .pasaje-vista { display: grid; grid-template-columns: minmax(0, 44rem) minmax(19rem, 1fr); gap: clamp(2rem, 3vw, 3rem); align-items: start; }
+  /* Comparar pone varios textos lado a lado: ahí el texto se queda con el sitio y el acompañante con 19–28rem. */
+  main:has(.pasaje-vista .comparar) { --ancho: 124rem; }
+  .pasaje-vista:has(.comparar) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
   .pasaje-vista > .lectura > :not(.cab-pasaje) { max-width: none; }
   .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; container: acomp / inline-size; }
   .acomp-cab::before { display: none; }
@@ -585,8 +598,6 @@ blockquote { margin: .45rem 0; padding: .5rem .9rem; border-left: 3px solid var(
 .parejas-varias { display: inline-flex; flex-wrap: wrap; align-items: center; }
 .grupo-txt .insignia { white-space: normal; }
 /* Árbol: más ancho y etiquetas más juntas para que cada pareja quepa en su línea. */
-main:has(.herr-arbol) { max-width: 100rem; }
-@media (min-width: 900px) { main:has(.herr-arbol) { max-width: calc(100rem + var(--lateral)); } }
 .fila .insignia, .grupo-txt .insignia { margin: .1rem .15rem; }
 .fila .persona-btn { padding: .25rem .7rem .25rem .55rem; }
 .fila-cont > .pareja + .pareja, .fila-cont > .pareja + .parejas-varias { margin-left: .35rem; }
@@ -1028,7 +1039,6 @@ dialog.visor[open] { display: flex; }
 .rc-mini-txt { margin: .2rem 0; }
 .rc-mini p { margin: .25rem 0; }
 @media (min-width: 1000px) {
-  main:has(.rc-completo) { max-width: 92rem; }
   .rc-completo { grid-template-columns: minmax(0, 1fr) minmax(19rem, 23rem); column-gap: 1.4rem; }
   .rc-escena { grid-column: 1; grid-row: 1; }
   .rc-tarjeta { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; }
@@ -1113,7 +1123,6 @@ dialog.visor[open] { display: flex; }
 /* ---------- Tabernáculo: plano, relieve, tarjeta y montaje ---------- */
 :root { --tb-oro: #a87a06; --tb-oro-t: #f1dc9a; --tb-madera: #8a5a2b; --tb-madera-t: #e6cfae; --tb-tela: #5b3f9e; --tb-tela-t: #d9cff2; --tb-lino: #6f7c6a; --tb-lino-t: #eceee4; --tb-suelo: #efe6d2; --tb-santo: #e9dcc0; --tb-santisimo: #e2d0ad; }
 @media (prefers-color-scheme: dark) { :root { --tb-oro: #e3b84a; --tb-oro-t: #5a4614; --tb-madera: #d1a066; --tb-madera-t: #4a3420; --tb-tela: #b9a3f5; --tb-tela-t: #33285a; --tb-lino: #b7c2ae; --tb-lino-t: #2d3329; --tb-suelo: #262a33; --tb-santo: #343126; --tb-santisimo: #403823; } }
-main:has(.tb) { max-width: 96rem; }
 .tb-volver { margin: 0 0 .1rem; }
 .tb { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; margin-top: .4rem; }
 .tb-escena { min-width: 0; }

@@ -5070,6 +5070,7 @@ if (typeof document !== 'undefined') (function () {
     const { vista, args } = ruta();
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
+    main.dataset.vista = VISTAS[vista] ? vista : 'leer'; // el ancho de cada pantalla sale de aquí (estilos.css, «Ancho por pantalla»)
     trasPintar(vista);
     montarMapas(main);
     conectoresTodos();
