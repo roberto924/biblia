@@ -1,0 +1,60 @@
+{
+  "id": "puerta-siquem",
+  "nombre": "Siquem: la puerta de la ciudad, por dentro (Gn 34:20-29)",
+  "pasajes": [
+    "gn-73"
+  ],
+  "element": {
+    "nombre": "PUERTA_SIQUEM",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "No está en el catálogo de juego, que junta Siquem en un solo escenario (decisión pendiente n.º 68 de guiones/LEEME.md). Es donde Hamor y su hijo hablan a los varones (Gn 34:20-24) y la calle por la que Simeón y Leví sacan a Dina (Gn 34:26) y se llevan el ganado (Gn 34:28). La hoja la muestra de día y en paz. El ataque, las muertes y el saqueo (Gn 34:25-29) no se muestran de forma gráfica en ningún perfil (decisión pendiente n.º 64): puertas, gritos, ganado sacado por la puerta, sin cuerpos, sangre ni fuego (el texto no dice que la quemaran). La misma muralla de piedras grandes que el escenario siquem (Fuente externa allí), para que no se confunda con la puerta de Sodoma ni con la de Het.",
+  "texto": [
+    {
+      "dato": "Hamor y Siquem hablan a los varones en la puerta de su ciudad",
+      "certeza": "texto",
+      "ref": "Gn 34:20",
+      "cita": "Hamor y Sichêm su hijo vinieron á la puerta de su ciudad, y hablaron á los varones de su ciudad"
+    },
+    {
+      "dato": "Los que salen por la puerta les obedecen",
+      "certeza": "texto",
+      "ref": "Gn 34:24",
+      "cita": "todos los que salían por la puerta de la ciudad"
+    },
+    {
+      "dato": "Al tercer día Simeón y Leví entran contra la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 34:25",
+      "cita": "vinieron contra la ciudad animosamente"
+    },
+    {
+      "dato": "Sacan a Dina de casa de Siquem",
+      "certeza": "texto",
+      "ref": "Gn 34:26",
+      "cita": "tomaron á Dina de casa de Sichêm, y saliéronse"
+    },
+    {
+      "dato": "Los hijos de Jacob saquean la ciudad y se llevan el ganado",
+      "certeza": "texto",
+      "ref": "Gn 34:27-28",
+      "cita": "Tomaron sus ovejas y vacas y sus asnos"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Vista desde dentro de la ciudad: un paso hondo de puerta en una muralla de enormes piedras toscas con adobe encima, entre dos torres bajas, con cámaras abiertas a los lados del paso y bancos de piedra; batientes de madera abiertos; delante, una plaza pequeña de tierra apisonada donde puede reunirse la gente; casas de adobe de techo plano alrededor, una de ellas más grande, de dos alturas; luz de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice puerta (Gn 34:20, 34:24) y casa de Siquem (Gn 34:26), nada de su forma. Las cámaras del paso y las piedras grandes siguen la Fuente externa del escenario siquem; la plaza es elección, para la reunión de Gn 34:20-24; la casa mayor puede servir de casa de Siquem, que el texto no describe."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the inside of the gateway of a walled hill town of Canaan in the ancient Near East by day, with no people and no animals in it. Seen from inside the town, the gate is a deep passage through a wall of huge rough stones topped with mud brick, between two low towers, with small open chambers and plain stone benches along both sides of the passage and heavy wooden doors standing open. In front of the gate lies a small open square of beaten earth where people could gather, surrounded by flat-roofed mud-brick houses, one of them larger and two storeys high.",
+    "prompt_es": "Una sola vista general del lado de dentro de la puerta de una ciudad amurallada de las colinas de Canaán, en el antiguo Oriente Próximo, de día, sin personas ni animales. Vista desde dentro de la ciudad, la puerta es un paso hondo a través de una muralla de enormes piedras toscas coronada de adobe, entre dos torres bajas, con pequeñas cámaras abiertas y bancos sencillos de piedra a los dos lados del paso y batientes de madera pesados abiertos. Delante de la puerta, una plaza pequeña de tierra apisonada donde puede reunirse la gente, rodeada de casas de adobe de techo plano, una de ellas más grande y de dos alturas.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls or towers; the walls are plain stone and mud plaster. Do not split the picture into panels or show two moments side by side. Do not make it a medieval castle gate with battlements and a portcullis. Do not paint a temple, a palace, statues, soldiers, banners, fire, smoke, ruins, bodies, people or animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en muros o torres: piedra y barro enlucido lisos. Sin paneles ni dos momentos lado a lado. Que no sea una puerta de castillo medieval con almenas y rastrillo. Sin templo, palacio, estatuas, soldados, estandartes, fuego, humo, ruinas, cuerpos, personas ni animales."
+  }
+}

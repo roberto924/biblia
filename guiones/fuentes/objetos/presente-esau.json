@@ -1,0 +1,139 @@
+{
+  "id": "presente-esau",
+  "nombre": "El presente de Jacob para Esaú: las manadas",
+  "pasajes": [
+    "gn-69",
+    "gn-71"
+  ],
+  "element": {
+    "nombre": "PRESENTE_ESAU",
+    "tipo": "objeto (manadas)"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 68 de guiones/LEEME.md). Son cinco clases de ganado, cada manada aparte y con espacio entre una y otra (Gn 32:16): la hoja fija una muestra de cada manada, y las tomas la repiten para dar la cantidad. Los siervos que las llevan tienen hoja propia (personajes/siervos-jacob). En gn-71 son «estas cuadrillas» que Esaú ha encontrado (Gn 33:8) y que al final acepta (Gn 33:11). El texto no dice en cuántas manadas las reparte: cinco, una por clase, es elección del ilustrador.",
+  "texto": [
+    {
+      "dato": "Jacob toma de lo que tiene a mano un presente para Esaú",
+      "certeza": "texto",
+      "ref": "Gn 32:13",
+      "cita": "tomó de lo que le vino á la mano un presente para su hermano Esaú"
+    },
+    {
+      "dato": "Cabras, machos cabríos, ovejas y carneros",
+      "certeza": "texto",
+      "ref": "Gn 32:14",
+      "cita": "Doscientas cabras y veinte machos de cabrío, doscientas ovejas y veinte carneros"
+    },
+    {
+      "dato": "Camellas con sus crías, vacas, novillos, asnas y borricos",
+      "certeza": "texto",
+      "ref": "Gn 32:15",
+      "cita": "Treinta camellas paridas, con sus hijos, cuarenta vacas y diez novillos, veinte asnas y diez borricos"
+    },
+    {
+      "dato": "Cada manada va aparte, con espacio entre una y otra",
+      "certeza": "texto",
+      "ref": "Gn 32:16",
+      "cita": "Pasad delante de mí, y poned espacio entre manada y manada"
+    },
+    {
+      "dato": "Lo envía delante para aplacar a Esaú",
+      "certeza": "texto",
+      "ref": "Gn 32:20",
+      "cita": "Apaciguaré su ira con el presente que va delante de mí"
+    },
+    {
+      "dato": "Esaú pregunta por las cuadrillas que ha encontrado",
+      "certeza": "texto",
+      "ref": "Gn 33:8",
+      "cita": "¿Qué te propones con todas estas cuadrillas que he encontrado?"
+    },
+    {
+      "dato": "Jacob insiste y Esaú lo acepta",
+      "certeza": "texto",
+      "ref": "Gn 33:11",
+      "cita": "Y porfió con él, y tomóla"
+    },
+    {
+      "dato": "Quinientos cincuenta animales, sin contar las crías de las camellas",
+      "certeza": "calculo",
+      "valor": 550,
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 550,
+        "pasos": [
+          {
+            "texto": "Cabras",
+            "valor": 200,
+            "ref": "Gn 32:14",
+            "cita": "Doscientas cabras"
+          },
+          {
+            "texto": "Machos cabríos",
+            "valor": 20,
+            "ref": "Gn 32:14",
+            "cita": "veinte machos de cabrío"
+          },
+          {
+            "texto": "Ovejas",
+            "valor": 200,
+            "ref": "Gn 32:14",
+            "cita": "doscientas ovejas"
+          },
+          {
+            "texto": "Carneros",
+            "valor": 20,
+            "ref": "Gn 32:14",
+            "cita": "veinte carneros"
+          },
+          {
+            "texto": "Camellas paridas",
+            "valor": 30,
+            "ref": "Gn 32:15",
+            "cita": "Treinta camellas paridas"
+          },
+          {
+            "texto": "Vacas",
+            "valor": 40,
+            "ref": "Gn 32:15",
+            "cita": "cuarenta vacas"
+          },
+          {
+            "texto": "Novillos",
+            "valor": 10,
+            "ref": "Gn 32:15",
+            "cita": "diez novillos"
+          },
+          {
+            "texto": "Asnas",
+            "valor": 20,
+            "ref": "Gn 32:15",
+            "cita": "veinte asnas"
+          },
+          {
+            "texto": "Borricos",
+            "valor": 10,
+            "ref": "Gn 32:15",
+            "cita": "diez borricos"
+          }
+        ],
+        "supuestos": [
+          "No se cuentan las crías de las camellas: el texto dice «con sus hijos» sin dar cuántos",
+          "Se suman las cifras tal como las da la RV1909"
+        ]
+      }
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Cinco manadas separadas: cabras de pelo oscuro con algunos machos barbudos de cuernos largos; ovejas de lana parda y crema con algunos carneros de cuernos curvos; camellas de una joroba, cada una con su cría; vacas pardas y rojizas con algunos novillos; asnas grises con sus borricos",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto da las clases y las cifras, no el aspecto. Los colores son los del ganado de las otras hojas (camellos de una joroba como en camellos-siervo); sin cargas ni sillas: son regalo, no transporte."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing five small, separate herds of animals standing in a single row with clear open space between each herd, every animal fully visible. From left to right: a few dark-haired goats with one bearded he-goat with long horns; a few brown and cream sheep with one ram with curled horns; two one-humped she-camels, each with a young camel beside her, wearing only simple rope halters; a few brown and reddish cows with one young bull; and two grey she-donkeys, each with a young donkey beside her. The animals carry no loads and no saddles, and there are no people.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: cinco manadas pequeñas y separadas en fila, con espacio libre entre una y otra, cada animal entero a la vista. De izquierda a derecha: unas pocas cabras de pelo oscuro con un macho barbudo de cuernos largos; unas pocas ovejas pardas y crema con un carnero de cuernos curvos; dos camellas de una joroba, cada una con su cría al lado, solo con un ronzal de cuerda; unas pocas vacas pardas y rojizas con un novillo; y dos asnas grises, cada una con su borrico al lado. Sin cargas ni sillas y sin personas.",
+    "negativo_en": "Do not make the camels two-humped, and do not paint horses, pigs, dogs or any other animal. Do not add loads, saddles, bells, tassels, colorful blankets or decorations. Do not paint people, riders, shepherds, a landscape, a camp or a road, and keep the background plain.",
+    "negativo_es": "Camellos de una joroba; sin caballos, cerdos, perros ni otros animales. Sin cargas, sillas, cencerros, borlas, mantas de colores ni adornos. Sin personas, jinetes, pastores, paisaje, campamento ni camino; fondo liso."
+  }
+}
