@@ -1,0 +1,82 @@
+{
+  "id": "moriah",
+  "nombre": "Monte en la tierra de Moriah (Gn 22)",
+  "pasajes": [
+    "gn-45"
+  ],
+  "element": {
+    "nombre": "MONTE_MORIAH",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego. El texto no describe el monte: dice que está en la tierra de Moriah, que es uno de los montes que Dios le dirá a Abraham, que se ve de lejos al tercer día y que allí hay un zarzal. La hoja muestra la cumbre vacía, sin altar: el altar (objetos/altar-moriah), la leña y el cuchillo (objetos/lena-cuchillo) y el carnero en el zarzal (objetos/carnero-zarzal) tienen hoja propia y entran en sus tomas. La vista de lejos (Gn 22:4) y el sitio donde esperan los mozos con el asno (Gn 22:5) se resuelven en sus tomas con esta misma silueta. No se identifica con ningún lugar actual ni se dibuja una ciudad (decisión pendiente n.º 35 de guiones/LEEME.md). Sin la lámina 1: su paisaje de colinas secas es casi el de este monte y la composición se copiaría, como pasó en la creación (n.º 37).",
+  "texto": [
+    {
+      "dato": "Dios manda a Abraham a la tierra de Moriah, a uno de los montes que le dirá",
+      "certeza": "texto",
+      "ref": "Gn 22:2",
+      "cita": "vete á tierra de Moriah, y ofrécelo allí en holocausto sobre uno de los montes que yo te diré"
+    },
+    {
+      "dato": "Al tercer día Abraham ve el lugar de lejos",
+      "certeza": "texto",
+      "ref": "Gn 22:4",
+      "cita": "Al tercer día alzó Abraham sus ojos, y vió el lugar de lejos"
+    },
+    {
+      "dato": "Los mozos esperan con el asno; Abraham y el muchacho siguen hasta allí",
+      "certeza": "texto",
+      "ref": "Gn 22:5",
+      "cita": "Esperaos aquí con el asno, y yo y el muchacho iremos hasta allí"
+    },
+    {
+      "dato": "Abraham edifica allí un altar",
+      "certeza": "texto",
+      "ref": "Gn 22:9",
+      "cita": "edificó allí Abraham un altar"
+    },
+    {
+      "dato": "Detrás de Abraham hay un zarzal, donde está trabado un carnero",
+      "certeza": "texto",
+      "ref": "Gn 22:13",
+      "cita": "he aquí un carnero á sus espaldas trabado en un zarzal por sus cuernos"
+    },
+    {
+      "dato": "Abraham llama al lugar «Jehová proveerá», y se dice «el monte de Jehová»",
+      "certeza": "texto",
+      "ref": "Gn 22:14",
+      "cita": "llamó Abraham el nombre de aquel lugar, Jehová proveerá. Por tanto se dice hoy: En el monte de Jehová será provisto"
+    },
+    {
+      "dato": "Hay otros montes alrededor",
+      "certeza": "inferido",
+      "nota": "Dios lo manda a «uno de los montes» de esa tierra (Gn 22:2): se entiende que hay varios.",
+      "base": [
+        {
+          "ref": "Gn 22:2",
+          "cita": "uno de los montes"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Cumbre redondeada de roca clara y tierra seca y pedregosa, con pocas matas bajas; en el centro, un rellano llano de roca sin nada encima; a un lado, un zarzal bajo y espeso de ramas secas con espinas, a la altura de la cintura; alrededor, otros montes pelados que se pierden en la bruma, de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe el monte. El zarzal repite el de la hoja CARNERO_ZARZAL; el rellano vacío deja sitio al altar de la hoja ALTAR_MORIAH. La roca clara y la luz de día son elección."
+    },
+    {
+      "dato": "La tradición identifica este monte con el del templo de Jerusalén, porque 2 Crónicas 3:1 llama Moriah al monte donde Salomón edificó la casa de Jehová; Gn 22 no lo dice, y la hoja no dibuja ninguna ciudad",
+      "certeza": "externa",
+      "fuente": "2 Crónicas 3:1 (libro todavía no cargado en datos/biblia.js: comprobar la cita literal al cargarlo)"
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the bare, rounded summit of a mountain among other hills in the dry hill country of the ancient Near East, by day, with no people in it. The top is pale rock and dry, stony earth with a few low, tough shrubs, and in the middle there is a flat ledge of rock with nothing on it. On one side grows a low, dense thicket of dry, thorny branches about waist high. All around, other bare hills and mountains fall away into a light haze under a clear sky.",
+    "prompt_es": "Una sola vista general de la cumbre pelada y redondeada de un monte entre otros, en la tierra seca de colinas del antiguo Oriente Próximo, de día y sin personas. Arriba, roca clara y tierra seca y pedregosa con unas pocas matas bajas y duras; en el centro, un rellano llano de roca sin nada encima. A un lado, un zarzal bajo y espeso de ramas secas con espinas, a la altura de la cintura. Alrededor, otros montes y colinas peladas que se pierden en una bruma ligera bajo un cielo despejado.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint an altar, firewood, fire, smoke, a knife, an animal or any person. Do not paint a city, walls, buildings, a temple, roads, terraces, olive trees or cultivated fields, and do not add rays of light coming down from the sky.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin altar, leña, fuego, humo, cuchillo, animales ni personas. Sin ciudad, murallas, edificios, templo, caminos, terrazas, olivos ni campos cultivados; sin rayos de luz que bajen del cielo."
+  }
+}

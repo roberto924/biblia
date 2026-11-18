@@ -1,0 +1,80 @@
+{
+  "id": "betuel",
+  "nombre": "Betuel (Bethuel)",
+  "personas": [
+    "Bethuel_1"
+  ],
+  "pasajes": [
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "BETUEL",
+    "tipo": "personaje"
+  },
+  "nota": "Padre de Rebeca y de Labán. En gn-46 (Gn 22:22-23) solo se le nombra en una genealogía: no se le muestra. Solo se le nombra presente en Gn 24:50, cuando responde junto a Labán; después el texto no vuelve a nombrarlo: los regalos van a «su hermano y á su madre» (Gn 24:53) y responden ellos dos (Gn 24:55). El texto no explica por qué; la ficha no lo decide. Si sale en otras tomas de la casa (Gn 24:31-49) lo decide el guion: el texto no dice que esté.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre mayor, de unos sesenta años, con canas",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Es padre de una moza (Gn 24:16) y de un hijo ya adulto que habla por la casa (Gn 24:29-31): se le dibuja mayor que Labán, sin parecer tan viejo como Abraham."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo de Nacor y Milca, padre de Rebeca",
+      "certeza": "texto",
+      "ref": "Gn 22:23",
+      "cita": "Bethuel engendró á Rebeca. Estos ocho parió Milca á Nachôr, hermano de Abraham"
+    },
+    {
+      "rasgo": "Rebeca se presenta como su hija",
+      "certeza": "texto",
+      "ref": "Gn 24:24",
+      "cita": "Soy hija de Bethuel, hijo de Milca, el cual parió ella á Nachôr"
+    },
+    {
+      "rasgo": "Responde con Labán: viene de Jehová, no pueden decir ni malo ni bueno",
+      "certeza": "texto",
+      "ref": "Gn 24:50",
+      "cita": "Labán y Bethuel respondieron y dijeron: De Jehová ha salido esto; no podemos hablarte malo ni bueno"
+    },
+    {
+      "rasgo": "Es arameo de Padan-aram",
+      "certeza": "texto",
+      "ref": "Gn 25:20",
+      "cita": "hija de Bethuel Arameo de Padan-aram",
+      "nota": "Gn 25:20 es posterior a estos pasajes (gn-52 acaba en Gn 25:18): sirve para dirigir, no se cita en el video.",
+      "nota": "Gn 25:20 es posterior a estos pasajes (gn-53): sirve para dirigir, no se cita en el video."
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros algo cansados, pelo entrecano hasta la nuca, más ralo en la frente, y barba entrecana en punta; gesto grave y reservado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El pelo y la barba en punta siguen a los hombres de Asia occidental del mural de Beni Hasan (A2). Lo reservado sale de que solo habla una vez, y junto a su hijo (Gn 24:50).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica larga de lana hasta los tobillos, de dibujos en rojo, blanco y azul grisáceo, que le cubre los dos hombros; manto liso de lana color vino; sandalias de correas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los colores siguen el cortejo de Beni Hasan (A2). El largo hasta los tobillos y el manto color vino son elección del ilustrador para que se lea como el cabeza de la casa y para distinguirlo de Labán.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre mayor, voz grave y pausada, algo cansada, español neutro. Solo habla en Gn 24:50-51, a la vez que Labán: solemne y resignado ante lo que ve como cosa de Jehová. Si el guion da esas palabras solo a Labán, Betuel no dice nada. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is an older townsman from western Asia of about sixty, the head of his household, with olive-brown skin, slightly tired dark eyes and fine lines on his face, greying hair that reaches the nape of his neck and is thinner at the forehead, and a greying beard trimmed to a point. His head is bare, with nothing tied around it. His expression is grave and reserved. He wears a long wool tunic that reaches his ankles and covers both shoulders, woven with red, white and blue-grey patterns in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain wine-red wool cloak and leather sandals with straps. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre mayor de ciudad de Asia occidental, de unos sesenta años, cabeza de su casa; piel morena oliva, ojos oscuros algo cansados y líneas finas en el rostro, pelo entrecano hasta la nuca, más ralo en la frente, y barba entrecana en punta. Cabeza descubierta, sin nada atado. Gesto grave y reservado. Túnica larga de lana hasta los tobillos que le cubre los dos hombros, con dibujos en rojo, blanco y azul grisáceo, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto liso de lana color vino y sandalias de correas. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him frail, bent or white-haired, and do not make him look younger than fifty. Do not give him a staff, bracelets, rings or any jewelry. Do not dress him in Egyptian white linen, a turban, a crown or armor. Do not paint a house, camels or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no sea frágil, encorvado ni de pelo blanco, ni parezca menor de cincuenta años; sin cayado, brazaletes, anillos ni joyas; sin lino blanco egipcio, turbante, corona ni armadura; sin casa, camellos ni otras personas; fondo liso."
+  }
+}

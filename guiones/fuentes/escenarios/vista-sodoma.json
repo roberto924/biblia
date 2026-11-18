@@ -1,0 +1,72 @@
+{
+  "id": "vista-sodoma",
+  "nombre": "Altura desde donde se mira hacia Sodoma (Gn 18:16-33; 19:27-28)",
+  "pasajes": [
+    "gn-37",
+    "gn-39"
+  ],
+  "element": {
+    "nombre": "VISTA_SODOMA",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 36 de guiones/LEEME.md). Es el lugar adonde Abraham acompaña a los varones, donde se queda «delante de Jehová» (Gn 18:22) y adonde vuelve a subir la mañana siguiente para mirar hacia la llanura (Gn 19:27-28). El texto no dice cuán lejos está ni si desde allí se ven las ciudades: la hoja muestra una altura y, muy abajo y lejos, una llanura brumosa sin ciudades que se distingan. Jehová no tiene figura (decisión n.º 1): en Gn 18:22-33 se ve a Abraham solo, de pie en este lugar. En gn-37 la llanura está intacta, como en la hoja; el humo de Gn 19:28 lo añade su toma sobre esta misma vista, sin fuego cercano ni cuerpos (decisión pendiente n.º 25). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Los varones miran hacia Sodoma y Abraham va con ellos acompañándolos",
+      "certeza": "texto",
+      "ref": "Gn 18:16",
+      "cita": "los varones se levantaron de allí, y miraron hacia Sodoma: y Abraham iba con ellos acompañándolos"
+    },
+    {
+      "dato": "Los varones siguen hacia Sodoma; Abraham se queda delante de Jehová",
+      "certeza": "texto",
+      "ref": "Gn 18:22",
+      "cita": "apartáronse de allí los varones, y fueron hacia Sodoma: mas Abraham estaba aún delante de Jehová"
+    },
+    {
+      "dato": "Por la mañana Abraham sube al lugar donde había estado delante de Jehová",
+      "certeza": "texto",
+      "ref": "Gn 19:27",
+      "cita": "subió Abraham por la mañana al lugar donde había estado delante de Jehová"
+    },
+    {
+      "dato": "Desde allí mira hacia la llanura y ve subir el humo",
+      "certeza": "texto",
+      "ref": "Gn 19:28",
+      "cita": "hacia toda la tierra de aquella llanura miró; y he aquí que el humo subía de la tierra como el humo de un horno"
+    },
+    {
+      "dato": "Antes de la destrucción, la llanura era toda de riego",
+      "certeza": "texto",
+      "ref": "Gn 13:10",
+      "cita": "toda la llanura del Jordán, que toda ella era de riego, antes que destruyese Jehová á Sodoma y á Gomorra"
+    },
+    {
+      "dato": "Es un lugar alto",
+      "certeza": "inferido",
+      "nota": "Abraham «subió» a él (Gn 19:27), y desde allí se mira hacia Sodoma (Gn 18:16, 19:28).",
+      "base": [
+        {
+          "ref": "Gn 19:27",
+          "cita": "subió Abraham por la mañana al lugar"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Un espolón alto y pelado de roca y tierra seca con unas matas bajas, al borde de una larga bajada; muy abajo y muy lejos, una llanura ancha, verdosa y de riego, borrosa por la bruma, sin ciudades ni edificios que se distingan; cielo despejado de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. Lo verde de la llanura sale de Gn 13:10; la distancia y la bruma, de que el texto no dice que desde allí se vieran las ciudades."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view from a high, bare spur of rock and dry earth with a few low shrubs, at the edge of a long descent in the hill country of the ancient Near East, by day, with no people in it. Far below and far away stretches a wide, flat plain, greenish and well watered, softened by haze, with no towns or buildings that can be made out. The sky is clear.",
+    "prompt_es": "Una sola vista general desde un espolón alto y pelado de roca y tierra seca con unas matas bajas, al borde de una larga bajada en la tierra de colinas del antiguo Oriente Próximo, de día y sin personas. Muy abajo y muy lejos se extiende una llanura ancha y plana, verdosa y de riego, suavizada por la bruma, sin ciudades ni edificios que se distingan. El cielo está despejado.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint fire, smoke, lightning, ruins, towns, walls, roads, tents, animals or any person. Do not add rays of light, glowing clouds or any figure in the sky.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin fuego, humo, rayos, ruinas, ciudades, murallas, caminos, tiendas, animales ni personas. Sin haces de luz, nubes luminosas ni figuras en el cielo."
+  }
+}

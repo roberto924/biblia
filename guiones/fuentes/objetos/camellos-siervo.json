@@ -1,0 +1,99 @@
+{
+  "id": "camellos-siervo",
+  "nombre": "Los camellos del criado de Abraham",
+  "pasajes": [
+    "gn-48",
+    "gn-49",
+    "gn-50",
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "CAMELLOS_SIERVO",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 30 de guiones/LEEME.md). Son diez (Gn 24:10): la hoja fija tres, uno arrodillado, uno de carga y uno con silla para montar, y las tomas repiten esos tipos. Los hombres que viajan con el criado (Gn 24:32, 24:54, 24:59) no tienen hoja.",
+  "texto": [
+    {
+      "dato": "Diez camellos de los de Abraham, con los bienes de su señor",
+      "certeza": "texto",
+      "ref": "Gn 24:10",
+      "cita": "tomó diez camellos de los camellos de su señor, y fuése, pues tenía á su disposición todos los bienes de su señor"
+    },
+    {
+      "dato": "Abraham tiene camellos entre sus bienes",
+      "certeza": "texto",
+      "ref": "Gn 24:35",
+      "cita": "camellos y asnos"
+    },
+    {
+      "dato": "El criado los hace arrodillar junto al pozo, fuera de la ciudad, por la tarde",
+      "certeza": "texto",
+      "ref": "Gn 24:11",
+      "cita": "hizo arrodillar los camellos fuera de la ciudad, junto á un pozo de agua, á la hora de la tarde"
+    },
+    {
+      "dato": "Rebeca saca agua para todos",
+      "certeza": "texto",
+      "ref": "Gn 24:20",
+      "cita": "sacó para todos sus camellos"
+    },
+    {
+      "dato": "Acaban de beber",
+      "certeza": "texto",
+      "ref": "Gn 24:22",
+      "cita": "como los camellos acabaron de beber"
+    },
+    {
+      "dato": "Labán los desata y les da paja y forraje",
+      "certeza": "texto",
+      "ref": "Gn 24:32",
+      "cita": "[Labán] desató los camellos; y dióles paja y forraje"
+    },
+    {
+      "dato": "Rebeca y sus mozas suben sobre ellos",
+      "certeza": "texto",
+      "ref": "Gn 24:61",
+      "cita": "subieron sobre los camellos"
+    },
+    {
+      "dato": "Isaac los ve venir por el campo",
+      "certeza": "texto",
+      "ref": "Gn 24:63",
+      "cita": "he aquí los camellos que venían"
+    },
+    {
+      "dato": "Rebeca baja del camello",
+      "certeza": "texto",
+      "ref": "Gn 24:64",
+      "cita": "descendió del camello"
+    },
+    {
+      "dato": "Llevan carga y gente",
+      "certeza": "inferido",
+      "nota": "Van con los bienes de Abraham (Gn 24:10), de los que salen los regalos (Gn 24:22, 24:53); llegan atados o cargados, porque Labán los desata (Gn 24:32), y a la vuelta llevan a Rebeca y a sus mozas (Gn 24:61).",
+      "base": [
+        {
+          "ref": "Gn 24:32",
+          "cita": "desató los camellos"
+        },
+        {
+          "ref": "Gn 24:61",
+          "cita": "subieron sobre los camellos"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Camellos de una joroba, de pelo corto color arena y pardo claro; el de carga con albarda de madera y mantas de lana, sacos de cuero y fardos atados con cuerdas; el de montar con una silla sencilla de madera cubierta con una manta de lana a franjas rojas y crema; cabezadas de cuerda",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «camellos» y no los describe. La joroba única, los colores, las albardas y las mantas son elección, sin referencia de época comprobada. Sin cascabeles, borlas ni adornos de lujo."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three one-humped camels side by side, each fully visible, with short sand-colored and light brown coats and simple rope halters. On the left a camel kneels on the ground with its legs folded under it and no load. In the center a camel stands carrying a wooden pack saddle padded with wool blankets, with leather bags and bundles tied on with ropes. On the right a camel stands with a simple wooden riding saddle covered by a wool blanket with red and cream stripes. There are no riders and no people.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: tres camellos de una joroba uno al lado de otro, de cuerpo entero, de pelo corto color arena y pardo claro y cabezadas sencillas de cuerda. A la izquierda, uno arrodillado en el suelo con las patas plegadas y sin carga. En el centro, uno de pie con una albarda de madera acolchada con mantas de lana y sacos de cuero y fardos atados con cuerdas. A la derecha, uno de pie con una silla de montar sencilla de madera cubierta con una manta de lana a franjas rojas y crema. Sin jinetes ni personas.",
+    "negativo_en": "Do not make them two-humped camels, horses or llamas. Do not add bells, tassels, rich fringes, colorful pompoms, metal fittings, a canopy or a carriage. Do not show riders, people, a well, a city or a desert landscape, and keep the background plain.",
+    "negativo_es": "Que no sean camellos de dos jorobas, caballos ni llamas; sin cascabeles, borlas, flecos ricos, pompones de colores, herrajes, toldo ni litera; sin jinetes, personas, pozo, ciudad ni paisaje de desierto; fondo liso."
+  }
+}

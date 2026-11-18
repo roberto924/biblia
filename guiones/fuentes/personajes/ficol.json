@@ -1,0 +1,66 @@
+{
+  "id": "ficol",
+  "nombre": "Ficol, príncipe del ejército de Abimelec",
+  "personas": [
+    "Phicol_1"
+  ],
+  "pasajes": [
+    "gn-44"
+  ],
+  "element": {
+    "nombre": "FICOL",
+    "tipo": "personaje"
+  },
+  "nota": "Sale al principio y al final del pacto de Beerseba (Gn 21:22, 21:32), al lado de Abimelec; se infiere que está presente en todo el relato. No tiene palabras propias: Gn 21:22 dice que hablaron Abimelec y Ficol, pero lo que sigue habla en primera persona de «mi hijo» y «mi nieto» (Gn 21:23), que son de Abimelec. La ficha no lleva voz: el guion decide si Gn 21:22-23 lo dice Abimelec solo. Gn 26:26 vuelve a nombrar a un Ficol con Isaac, muchos años después: se decidirá en su momento si sirve esta hoja.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre de unos cuarenta y cinco años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Manda el ejército de un rey: se le dibuja en plena fuerza, algo más joven que Abimelec."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Príncipe del ejército de Abimelec; va con él a hablar con Abraham",
+      "certeza": "texto",
+      "ref": "Gn 21:22",
+      "cita": "habló Abimelech, y Phicol, príncipe de su ejército, á Abraham"
+    },
+    {
+      "rasgo": "Hecha la alianza, se vuelve con Abimelec a tierra de los Filisteos",
+      "certeza": "texto",
+      "ref": "Gn 21:32",
+      "cita": "levantóse Abimelech, y Phicol, príncipe de su ejército, y se volvieron á tierra de los Filisteos"
+    },
+    {
+      "rasgo": "Alto y fornido, piel morena oliva, ojos oscuros, mandíbula marcada; pelo negro hasta la nuca y barba negra corta y cerrada; gesto serio, vigilante y callado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo da su cargo. El porte vigilante y callado sale de que acompaña al rey sin que el texto le dé palabras propias. El pelo sigue a los hombres del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta la rodilla con franjas anchas en ocre, rojo oscuro y blanco; cinturón ancho de cuero; sandalias; en la mano una lanza alta con punta de metal lisa en forma de hoja; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 23 de guiones/LEEME.md): el texto no describe su ropa ni sus armas. La túnica sigue a los hombres de Asia occidental del mural de Beni Hasan (A1, A2), como la de su rey. La lanza es elección del ilustrador para que se lea su cargo (Gn 21:22); no hay referencia comprobada de sus armas. Viene a un pacto, no a pelear: la lleva en reposo.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is the commander of a small king's army in the dry south of Canaan, about forty-five, tall and powerfully built, with olive-brown skin, dark eyes, a strong jaw, black hair cropped short and close to the head, and a short black beard trimmed square along the jaw. His expression is serious, watchful and silent. He wears a richly woven wool tunic that reaches below the knee, in broad horizontal bands of ochre yellow and dark brown edged with thin blue lines, in the style of the richer western Asian visitors painted in Middle Kingdom Egyptian tombs, a short dark brown wool cloak fastened over the left shoulder, a wide leather belt and leather sandals. Nothing in his clothing is red and white striped, so that he reads clearly apart from the herdsmen. His head is bare, with nothing tied around it. In the full-body view he holds upright, at rest, a tall wooden spear with a plain leaf-shaped metal point.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Jefe del ejército de un rey pequeño del sur seco de Canaán, de unos cuarenta y cinco años, alto y fornido; piel morena oliva, ojos oscuros, mandíbula marcada, pelo negro corto, pegado a la cabeza, y barba negra corta recortada en cuadro. Gesto serio, vigilante y callado. Túnica de lana rica, por debajo de la rodilla, en bandas horizontales anchas de ocre amarillo y pardo oscuro con filetes azules, al modo de los asiáticos más ricos de las tumbas egipcias del Reino Medio; manto corto de lana parda sujeto al hombro izquierdo, cinturón ancho de cuero y sandalias. Nada de franjas rojas y blancas, para que no se confunda con los pastores. Cabeza descubierta, sin nada atado. De cuerpo entero sostiene derecha, en reposo, una lanza alta de madera con punta de metal lisa en forma de hoja.",
+    "negativo_en": "Do not give him a helmet, a feathered headdress, a crown, a turban, a headband, armor, a shield, a sword, bracelets or other jewelry. Do not make him look aggressive or like a villain. Do not dress him in red and white stripes, and do not give him long or shoulder-length hair. Do not dress him in Egyptian white linen or Greek or Roman clothing. Do not paint soldiers, horses, chariots or any other person, and keep the background plain.",
+    "negativo_es": "Sin casco, tocado de plumas, corona, turbante, cinta en la cabeza, armadura, escudo, espada, brazaletes ni otras joyas; que no parezca agresivo ni villano; sin franjas rojas y blancas, ni pelo largo hasta los hombros; ni lino blanco egipcio ni ropa griega o romana; sin soldados, caballos, carros ni otras personas; fondo liso."
+  }
+}

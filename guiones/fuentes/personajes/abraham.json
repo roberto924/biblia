@@ -1,0 +1,238 @@
+{
+  "id": "abraham",
+  "nombre": "Abraham (antes Abram)",
+  "personas": [
+    "Abram_1"
+  ],
+  "pasajes": [
+    "gn-34",
+    "gn-35",
+    "gn-36",
+    "gn-37",
+    "gn-39",
+    "gn-41",
+    "gn-42",
+    "gn-43",
+    "gn-44",
+    "gn-45",
+    "gn-46",
+    "gn-47",
+    "gn-48",
+    "gn-52"
+  ],
+  "element": {
+    "nombre": "ABRAHAM",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto desde Gn 17, cuando se llama Abraham. Hoja nueva y no la de ABRAM porque han pasado trece años desde Gn 16 y el texto lo llama viejo (Gn 18:11-12), mientras que la hoja ABRAM, de los setenta y cinco a los ochenta y seis, muestra a un hombre mayor pero fuerte, de pelo y barba canos; con Sara, que también cambia de hoja, la pareja envejece a la vez. Es el mismo hombre: mismo rostro, misma ropa y mismo cayado que ABRAM, solo mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de ABRAM). Sirve también para Gn 22–25. Su voz es la de abram.json (guiones.py admite una sola voz por persona; decisión pendiente n.º 27 de guiones/LEEME.md); tonos en estos pasajes: Gn 17:17-18, asombro y ruego; Gn 18:3-6, hospitalario y con prisa; Gn 18:23-32, humilde pero insistente; Gn 20:11-13, se explica sin altivez; Gn 21:24 y 21:30, firme. Jehová, que le habla en Gn 17 y en Gn 18:17-33, no tiene figura (decisión n.º 1 de guiones/LEEME.md); los tres varones de Gn 18 tienen su hoja (VARONES_MAMRE) y una decisión pendiente (n.º 21).",
+  "edades": [
+    {
+      "dato": "Noventa y nueve años cuando Jehová le cambia el nombre",
+      "certeza": "texto",
+      "ref": "Gn 17:1",
+      "cita": "SIENDO Abram de edad de noventa y nueve años"
+    },
+    {
+      "dato": "Noventa y nueve años también cuando se circuncida",
+      "certeza": "texto",
+      "ref": "Gn 17:24",
+      "cita": "Era Abraham de edad de noventa y nueve años"
+    },
+    {
+      "dato": "Cien años cuando nace Isaac",
+      "certeza": "texto",
+      "ref": "Gn 21:5",
+      "cita": "era Abraham de cien años, cuando le nació Isaac su hijo"
+    },
+    {
+      "dato": "Trece años mayor que en el nacimiento de Ismael (Gn 16), la última vez que se le vio con la hoja ABRAM",
+      "certeza": "calculo",
+      "valor": 13,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 13,
+        "pasos": [
+          {
+            "texto": "Edad de Abraham en Gn 17",
+            "valor": 99,
+            "ref": "Gn 17:1",
+            "cita": "SIENDO Abram de edad de noventa y nueve años"
+          },
+          {
+            "texto": "Edad de Abram cuando nace Ismael",
+            "valor": 86,
+            "ref": "Gn 16:16",
+            "cita": "era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael"
+          }
+        ],
+        "supuestos": [
+          "Se cuentan años completos",
+          "Gn 18–20 ocurren entre los noventa y nueve años de Gn 17:1 y los cien de Gn 21:5: el texto anuncia el hijo «por este tiempo el año siguiente» (Gn 17:21) y lo cuenta nacido en Gn 21:2"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un anciano que aparenta unos setenta y cinco años, de pelo y barba blancos, enjuto pero erguido y todavía ágil",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto lo llama viejo (Gn 18:11) y Sara dice «mi señor [ya] viejo» (Gn 18:12), pero en Gn 18:2 sale corriendo y en Gn 18:7 corre a las vacas, y vive hasta los ciento setenta y cinco (Gn 25:7, muy posterior: sirve para dirigir). Se le dibuja claramente más viejo que en la hoja ABRAM, no decrépito."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Jehová le cambia el nombre: de Abram a Abraham",
+      "certeza": "texto",
+      "ref": "Gn 17:5",
+      "cita": "será tu nombre Abraham, porque te he puesto por padre de muchedumbre de gentes"
+    },
+    {
+      "rasgo": "Cae sobre su rostro cuando Dios le habla",
+      "certeza": "texto",
+      "ref": "Gn 17:3",
+      "cita": "Abram cayó sobre su rostro"
+    },
+    {
+      "rasgo": "Se ríe al oír que Sara le dará un hijo",
+      "certeza": "texto",
+      "ref": "Gn 17:17",
+      "cita": "Abraham cayó sobre su rostro, y rióse, y dijo en su corazón: ¿A hombre de cien años ha de nacer hijo? ¿y Sara, ya de noventa años, ha de parir?"
+    },
+    {
+      "rasgo": "Pide por Ismael",
+      "certeza": "texto",
+      "ref": "Gn 17:18",
+      "cita": "Ojalá Ismael viva delante de ti"
+    },
+    {
+      "rasgo": "Ese mismo día circuncida a Ismael y a todos los varones de su casa",
+      "certeza": "texto",
+      "ref": "Gn 17:23",
+      "cita": "circuncidó la carne del prepucio de ellos en aquel mismo día, como Dios le había dicho"
+    },
+    {
+      "rasgo": "Está sentado a la puerta de su tienda en el calor del día, en el valle de Mamre",
+      "certeza": "texto",
+      "ref": "Gn 18:1",
+      "cita": "APARECIÓLE Jehová en el valle de Mamre, estando él sentado á la puerta de su tienda en el calor del día"
+    },
+    {
+      "rasgo": "Sale corriendo a recibir a tres varones y se inclina hasta la tierra",
+      "certeza": "texto",
+      "ref": "Gn 18:2",
+      "cita": "salió corriendo de la puerta de su tienda á recibirlos, é inclinóse hacia la tierra"
+    },
+    {
+      "rasgo": "Corre a las vacas",
+      "certeza": "texto",
+      "ref": "Gn 18:7",
+      "cita": "corrió Abraham á las vacas"
+    },
+    {
+      "rasgo": "Se queda de pie junto a ellos debajo del árbol mientras comen",
+      "certeza": "texto",
+      "ref": "Gn 18:8",
+      "cita": "él estaba junto á ellos debajo del árbol; y comieron"
+    },
+    {
+      "rasgo": "Viejo, entrado en días, como Sara",
+      "certeza": "texto",
+      "ref": "Gn 18:11",
+      "cita": "Abraham y Sara eran viejos, entrados en días"
+    },
+    {
+      "rasgo": "Intercede por Sodoma",
+      "certeza": "texto",
+      "ref": "Gn 18:23",
+      "cita": "¿Destruirás también al justo con el impío?"
+    },
+    {
+      "rasgo": "Se llama a sí mismo polvo y ceniza",
+      "certeza": "texto",
+      "ref": "Gn 18:27",
+      "cita": "aunque soy polvo y ceniza"
+    },
+    {
+      "rasgo": "Mira hacia la llanura y ve subir el humo",
+      "certeza": "texto",
+      "ref": "Gn 19:28",
+      "cita": "el humo subía de la tierra como el humo de un horno"
+    },
+    {
+      "rasgo": "En Gerar dice de Sara que es su hermana",
+      "certeza": "texto",
+      "ref": "Gn 20:2",
+      "cita": "dijo Abraham de Sara su mujer: Mi hermana es"
+    },
+    {
+      "rasgo": "Dios lo llama profeta ante Abimelec",
+      "certeza": "texto",
+      "ref": "Gn 20:7",
+      "cita": "es profeta, y orará por ti"
+    },
+    {
+      "rasgo": "Ora por Abimelec",
+      "certeza": "texto",
+      "ref": "Gn 20:17",
+      "cita": "Abraham oró á Dios"
+    },
+    {
+      "rasgo": "Hace un gran banquete el día que Isaac es destetado",
+      "certeza": "texto",
+      "ref": "Gn 21:8",
+      "cita": "hizo Abraham gran banquete el día que fué destetado Isaac"
+    },
+    {
+      "rasgo": "Le pesa lo que pide Sara, por causa de su hijo Ismael",
+      "certeza": "texto",
+      "ref": "Gn 21:11",
+      "cita": "Este dicho pareció grave en gran manera á Abraham á causa de su hijo"
+    },
+    {
+      "rasgo": "Se levanta muy de mañana y da a Agar pan y un odre de agua",
+      "certeza": "texto",
+      "ref": "Gn 21:14",
+      "cita": "Abraham se levantó muy de mañana, y tomó pan, y un odre de agua, y diólo á Agar"
+    },
+    {
+      "rasgo": "Cavó el pozo de Beerseba",
+      "certeza": "texto",
+      "ref": "Gn 21:30",
+      "cita": "yo cavé este pozo"
+    },
+    {
+      "rasgo": "Planta un bosque en Beerseba e invoca allí a Jehová",
+      "certeza": "texto",
+      "ref": "Gn 21:33",
+      "cita": "plantó [Abraham] un bosque en Beer-seba, é invocó allí el nombre de Jehová Dios eterno"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja ABRAM, más viejo: piel morena oliva curtida, ojos oscuros; pelo blanco, algo más ralo, hasta la nuca; barba blanca larga y en punta hasta el pecho; arrugas hondas en la frente y junto a los ojos; enjuto y erguido; rostro grave, bondadoso y hospitalario",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Se conservan los rasgos de la hoja ABRAM, que siguen a los hombres de Asia occidental del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026); el pelo y la barba blancos y las arrugas, a su edad (Gn 18:11).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en la hoja ABRAM: túnica de lana hasta debajo de la rodilla con franjas estrechas y dibujos sencillos en rojo, blanco y azul oscuro; manto liso pardo; cinturón de cuerda; sandalias de correas; cayado de pastor; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de la hoja ABRAM (gente de Asia occidental del mural de Beni Hasan, A1, A2) para que se le reconozca. Que la cabeza vaya descubierta es elección del ilustrador: el generador tendía a añadir cintas en la cabeza (corregido en la hoja LOT).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a very old herdsman chief from western Asia who looks about seventy-five, lean but upright and still able to walk fast, with weathered olive-brown skin, dark eyes, deep lines across his forehead and around his eyes, white hair that is a little thinner and reaches the nape of his neck, and a long, pointed white beard that reaches his upper chest. His head is bare, with nothing tied around it. His face is grave, kind and welcoming. He wears a wool tunic that reaches below his knees, woven with narrow red, white and dark blue stripes and simple patterns in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain brown wool cloak over his shoulders, a cord belt and leather sandals with straps. In the full-body view he holds a tall, plain wooden shepherd's staff.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Jefe de pastores de Asia occidental muy viejo, que aparenta unos setenta y cinco años, enjuto pero erguido y aún capaz de andar deprisa; piel morena oliva curtida, ojos oscuros, arrugas hondas en la frente y junto a los ojos; pelo blanco, algo más ralo, hasta la nuca, y barba blanca larga y en punta hasta el pecho. Cabeza descubierta, sin nada atado. Rostro grave, bondadoso y acogedor. Túnica de lana hasta debajo de la rodilla con franjas estrechas y dibujos sencillos en rojo, blanco y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto liso pardo sobre los hombros, cinturón de cuerda y sandalias de correas. De cuerpo entero lleva un cayado alto y liso de pastor.",
+    "negativo_en": "Do not make him frail, bent, bald or sickly, and do not make him look younger than seventy. Do not put a headband, a cord or a cloth on his head. Do not dress him in Egyptian white linen, a turban, a crown, armor, bracelets or other jewelry, and do not give him a sword. Do not paint tents, animals, an altar, trees or any other person, and keep the background plain.",
+    "negativo_es": "Que no sea frágil, encorvado, calvo ni enfermizo, ni parezca menor de setenta años; sin cinta, cordón ni paño en la cabeza; sin lino blanco egipcio, turbante, corona, armadura, brazaletes ni otras joyas; sin espada; sin tiendas, animales, altar, árboles ni otras personas; fondo liso."
+  }
+}

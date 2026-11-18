@@ -1,0 +1,95 @@
+{
+  "id": "mamre",
+  "nombre": "Mamre: el árbol y la tienda de Abraham (Gn 17–18)",
+  "pasajes": [
+    "gn-34",
+    "gn-35",
+    "gn-36",
+    "gn-37"
+  ],
+  "element": {
+    "nombre": "MAMRE",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego. La RV1909 dice «alcornocal de Mamre» (Gn 13:18) y «valle de Mamre» (Gn 14:13, 18:1), y en Gn 18 nombra «un árbol» (Gn 18:4, 18:8) sin decir cuál. La hoja muestra un árbol grande y viejo, sin especie reconocible, y junto a él la tienda de Abraham, cuya forma manda la hoja TIENDA_ABRAM (objetos/tienda-abram). Gn 17 no nombra el lugar: se usa aquí por inferencia (abajo). Las vacas (Gn 18:7) y la comida (objetos/comida-mamre) entran en sus tomas. Desde Gn 18:16 los varones y Abraham se van hacia Sodoma: esas tomas van en el escenario vista-sodoma, y la vuelta de Abraham «á su lugar» (Gn 18:33) vuelve aquí. Jehová no tiene figura (decisión n.º 1 de guiones/LEEME.md). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Abram remueve su tienda y mora en el alcornocal de Mamre, en Hebrón",
+      "certeza": "texto",
+      "ref": "Gn 13:18",
+      "cita": "Abram, pues, removiendo su tienda, vino y moró en el alcornocal de Mamre, que es en Hebrón"
+    },
+    {
+      "dato": "Abraham está sentado a la puerta de su tienda en el calor del día, en el valle de Mamre",
+      "certeza": "texto",
+      "ref": "Gn 18:1",
+      "cita": "en el valle de Mamre, estando él sentado á la puerta de su tienda en el calor del día"
+    },
+    {
+      "dato": "Hay un árbol donde invita a recostarse a los huéspedes",
+      "certeza": "texto",
+      "ref": "Gn 18:4",
+      "cita": "recostaos debajo de un árbol"
+    },
+    {
+      "dato": "Las vacas están a mano",
+      "certeza": "texto",
+      "ref": "Gn 18:7",
+      "cita": "corrió Abraham á las vacas"
+    },
+    {
+      "dato": "Comen debajo del árbol, y Abraham está junto a ellos",
+      "certeza": "texto",
+      "ref": "Gn 18:8",
+      "cita": "él estaba junto á ellos debajo del árbol; y comieron"
+    },
+    {
+      "dato": "Sara escucha a la puerta de la tienda, que estaba «detrás de él»: el texto no aclara si de Abraham o de quien le habla",
+      "certeza": "texto",
+      "ref": "Gn 18:10",
+      "cita": "Sara escuchaba á la puerta de la tienda, que estaba detrás de él"
+    },
+    {
+      "dato": "Gn 17 ocurre también en Mamre",
+      "certeza": "inferido",
+      "nota": "Gn 17 no nombra el lugar. Abram mora en Mamre desde Gn 13:18 y el texto no cuenta que se vaya hasta Gn 20:1 («De allí partió Abraham»), después de Gn 18, que sí es en Mamre (Gn 18:1). Lo decide el guion.",
+      "base": [
+        {
+          "ref": "Gn 13:18",
+          "cita": "moró en el alcornocal de Mamre"
+        },
+        {
+          "ref": "Gn 20:1",
+          "cita": "DE allí partió Abraham á la tierra del Mediodía"
+        }
+      ]
+    },
+    {
+      "dato": "Al final de Gn 18 Abraham vuelve aquí",
+      "certeza": "inferido",
+      "nota": "«Su lugar» se entiende su tienda en Mamre, de donde había salido acompañando a los varones (Gn 18:16).",
+      "base": [
+        {
+          "ref": "Gn 18:33",
+          "cita": "Abraham se volvió á su lugar"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Un árbol grande y viejo, de tronco grueso y copa ancha que da mucha sombra, sin especie reconocible; junto a él, la tienda baja y ancha de paños oscuros de pelo de cabra con el lado largo abierto (hoja TIENDA_ABRAM); tierra seca y pisada con unas pocas matas, colinas suaves alrededor y más árboles a lo lejos; luz fuerte y calima de mediodía",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «un árbol» y «el calor del día» (Gn 18:1, 18:4). Un alcornocal es un lugar de muchos árboles (Gn 13:18): por eso hay más a lo lejos. La especie no se dibuja reconocible; la tienda copia la hoja TIENDA_ABRAM."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a herdsman's camp in the hill country of Canaan in the ancient Near East at midday in the heat, with no people and no animals in it. In the middle stands one big, old tree of no recognizable modern kind, with a thick trunk and a wide, spreading crown that casts deep shade. Beside it stands a low, wide tent of long dark brown-black strips of woven goat-hair cloth on rows of plain wooden poles, held by ropes and pegs, with one long side open and raised on poles to make a shaded entrance. The ground is dry, trodden earth with a few shrubs, gentle hills rise around, and more trees stand far off under a hot, hazy sky.",
+    "prompt_es": "Una sola vista general de un campamento de pastores en la tierra de colinas de Canaán, en el antiguo Oriente Próximo, a mediodía y con calor, sin personas ni animales. En el centro, un árbol grande y viejo de ninguna especie moderna reconocible, de tronco grueso y copa ancha y extendida que da mucha sombra. Junto a él, una tienda baja y ancha de largas tiras de paño tejido de pelo de cabra, pardo oscuro casi negro, sobre hileras de postes de madera sencillos, sujeta con cuerdas y estacas, con un lado largo abierto y levantado sobre postes como entrada a la sombra. El suelo es tierra seca y pisada con unas pocas matas, alrededor se alzan colinas suaves y a lo lejos hay más árboles bajo un cielo caluroso y con calima.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not make the tent round, pointed, white or brightly colored, and do not add flags or carpets. Do not paint a table, a meal, an altar, a town, people or animals, and do not put any light or glow in the tree.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin tienda redonda, puntiaguda, blanca ni de colores vivos; sin banderas ni alfombras. Sin mesa, comida, altar, ciudad, personas ni animales; sin luz ni resplandor en el árbol."
+  }
+}

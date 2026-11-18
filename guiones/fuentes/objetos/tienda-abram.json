@@ -3,7 +3,8 @@
   "nombre": "La tienda de Abram",
   "pasajes": [
     "gn-27",
-    "gn-29"
+    "gn-29",
+    "gn-36"
   ],
   "element": {
     "nombre": "TIENDA_ABRAM",

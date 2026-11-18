@@ -1,0 +1,56 @@
+{
+  "id": "comida-mamre",
+  "nombre": "La comida de Mamre",
+  "pasajes": [
+    "gn-36"
+  ],
+  "element": {
+    "nombre": "COMIDA_MAMRE",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego. Lo que Abraham sirve a los tres varones bajo el árbol (Gn 18:6-8): sale al prepararlo y al servirlo, y la hoja lo fija para las dos cosas. El becerro se muestra ya guisado: el texto dice que el mozo lo «aderezó», y no se muestra cómo (regla de estilo: sin sangre). Comen al aire libre, «recostados» bajo un árbol (Gn 18:4), sin mesa.",
+  "texto": [
+    {
+      "dato": "Abraham ofrece un bocado de pan",
+      "certeza": "texto",
+      "ref": "Gn 18:5",
+      "cita": "traeré un bocado de pan"
+    },
+    {
+      "dato": "Panes de flor de harina cocidos bajo el rescoldo",
+      "certeza": "texto",
+      "ref": "Gn 18:6",
+      "cita": "tres medidas de flor de harina, amasa y haz panes cocidos debajo del rescoldo"
+    },
+    {
+      "dato": "Un becerro tierno y bueno, que el mozo adereza de prisa",
+      "certeza": "texto",
+      "ref": "Gn 18:7",
+      "cita": "tomó un becerro tierno y bueno, y diólo al mozo, y dióse éste priesa á aderezarlo"
+    },
+    {
+      "dato": "Manteca, leche y el becerro, puestos delante de ellos",
+      "certeza": "texto",
+      "ref": "Gn 18:8",
+      "cita": "Tomó también manteca y leche, y el becerro que había aderezado, y púsolo delante de ellos"
+    },
+    {
+      "dato": "La «manteca» de aquí es un derivado de la leche, como la mantequilla, no grasa de cerdo",
+      "certeza": "externa",
+      "fuente": "Explicación «manteca» de datos/explicaciones.js, que cita el Wikcionario en español, entrada «manteca»."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Panes: tortas redondas y planas, doradas, con manchas de ceniza del rescoldo, apiladas sobre un paño; manteca: un cuenco de barro con manteca espesa y blanquecina; leche: una jarra y unos cuencos de barro lisos; becerro: trozos de carne guisada, dorada, en una fuente ancha de barro, sin cabeza ni forma de animal",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto nombra lo que se sirve, no su forma ni sus vasijas. Las tortas planas y con ceniza salen de «cocidos debajo del rescoldo» (Gn 18:6); el barro sin adornos y la carne en trozos son elección del ilustrador."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing one simple meal laid out on a woven mat on the ground, seen from slightly above. There is a stack of round, flat loaves of bread, golden with dark ash marks from being baked in embers, on a cloth; a plain clay bowl of thick, pale butter; a plain clay jug of milk with three plain clay drinking bowls; and a wide plain clay dish holding pieces of browned stewed meat. All the vessels are undecorated, earthy and handmade.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: una comida sencilla sobre una estera tejida en el suelo, vista un poco desde arriba. Una pila de tortas de pan redondas y planas, doradas, con manchas oscuras de ceniza del rescoldo, sobre un paño; un cuenco de barro liso con manteca espesa y blanquecina; una jarra de barro lisa con leche y tres cuencos de barro lisos para beber; y una fuente ancha de barro lisa con trozos de carne guisada y dorada. Todas las vasijas sin adornos, de barro y hechas a mano.",
+    "negativo_en": "Do not paint a whole roasted animal, an animal's head, bones, blood or raw meat. Do not paint a table, chairs, metal plates, cutlery, glasses, wine, fruit platters or candles. Do not paint people, hands, a tree or a tent, and keep the background plain.",
+    "negativo_es": "Sin animal asado entero, cabeza de animal, huesos, sangre ni carne cruda; sin mesa, sillas, platos de metal, cubiertos, vasos, vino, fuentes de fruta ni velas; sin personas, manos, árbol ni tienda; fondo liso."
+  }
+}

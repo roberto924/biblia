@@ -249,6 +249,83 @@ registro esté completo; y propone cambios en las fuentes JSON.
     lleve.
 20. **Voces a coro de Babel** (Gn 11:3-4): los constructores no son personas de `datos/biblia.js`; mismo caso que
     la serpiente (n.º 13).
+21. **Los tres varones de Mamre y Jehová** (Gn 18): el texto dice que Abraham ve «tres varones» (18:2) que comen
+    (18:8), y después que habla Jehová (18:13, 18:17-33) sin decir si es uno de ellos; dos llegan a Sodoma como
+    «ángeles» (19:1). Propuesta por defecto (hoja `personajes/varones-mamre`): tres hombres iguales, sin alas, halo ni
+    luz propia, ninguno marcado como Dios (n.º 1); las palabras de Jehová no se ponen en la boca de ninguno, y desde
+    18:22 Abraham queda solo «delante de Jehová», sin figura. Quién habla en 18:10 y 18:15 («dijo») y en 19:17 y
+    19:21-22 queda para el guion. Alternativa: mostrar al tercero hablando con Abraham hasta 18:33.
+22. **Voces sin persona en Gn 18–19**: los varones y ángeles (18:5, 18:9; 19:2, 19:12-13, 19:15) y el coro de los
+    hombres de Sodoma (19:5, 19:9) no son personas de `datos/biblia.js`; mismo caso que la serpiente (n.º 13) y
+    Babel (n.º 20): voces propias o leídas por el narrador.
+23. **Ropa de Gerar** (Abimelec y Ficol, Gn 20–21, «tierra de los Filisteos»): no hay referencia comprobada.
+    Supuesto por defecto, el mismo de los reyes de Canaán (n.º 17): sin corona ni casco, tejido rico de Beni Hasan
+    (A1, A2); Ficol con una lanza en reposo para que se lea su cargo.
+24. **Circuncisión** (Gn 17:10-14, 17:23-27; 21:4): propuesta por defecto, nunca se muestra en ningún perfil; se
+    entiende por la narración (los varones de la casa reunidos, la tienda cerrada).
+25. **Gn 19 en los perfiles**: el cerco de la casa de Lot (19:4-11), la lluvia de azufre y fuego (19:24-25), la
+    mujer de Lot hecha sal (19:26) y las hijas en la cueva (19:32-35). Propuesta por defecto, nada explícito en
+    ningún perfil: puertas, gritos y sombras en la noche; ciudades ardiendo a lo lejos, sin cuerpos; la estatua sin
+    rostro de espanto y sin transformación paso a paso (`objetos/estatua-sal`); en la cueva, solo el vino y Lot
+    dormido, con fundido. La narración se lee entera en los dos perfiles salvo que el usuario decida otra cosa.
+26. **Voz del criado de Abraham** (Gn 24): no es persona de `datos/biblia.js` (el texto no lo nombra) y habla en buena
+    parte de gn-48 a gn-51. Opciones: añadirlo a `datos/biblia.js` como persona sin nombre (como la mujer de Lot),
+    admitir en `guiones.py` una voz que no es persona (como la n.º 13 y la n.º 20) o que lo lea el narrador. Lo mismo,
+    en menor medida, para la madre de Rebeca (Gn 24:55, a la vez que Labán). No se le llama Eliezer: Gn 24 no lo
+    nombra y no dice que sea el mayordomo de Gn 15:2.
+27. **Una persona con varias hojas por edad**: `guiones.py` admite una sola ficha con «voz» por persona y exige que
+    esa ficha esté en la toma donde habla. Desde Gn 17 ya choca: Abraham, Sara y Agar hablan con las hojas `abraham`,
+    `sara` y `agar-mayor`, pero su voz está en `abram`, `sarai` y `agar` (Lot no: su voz está en `lot-mayor`, porque
+    antes no habla). Isaac tiene dos hojas: `isaac-muchacho` (Gn 22, con la voz) e `isaac-adulto` (Gn 24–25, sin voz
+    porque ahí no habla); cuando hable de adulto (Gn 26–27) chocará igual. Opciones: llevar la voz a la persona y no a
+    la ficha, admitir la misma voz en varias fichas de una persona, o una ficha por persona con varias hojas por edad.
+    Ismael tiene dos hojas: `ismael` (Gn 17 y 21) e `ismael-mayor` (gn-52, n.º 33), ninguna con voz porque no habla.
+    En gn-52 (Gn 25:9) Isaac tiene unos setenta y cinco años y usa la hoja de los cuarenta con canas añadidas en la
+    toma (cálculo en su ficha); si no basta, hará falta otra hoja.
+28. **Edad visual de Isaac en Gn 22**: propuesta por defecto, un muchacho de unos dieciséis años, nunca un niño
+    pequeño. El texto lo llama «muchacho» (Gn 22:5, 22:12) y le hace cargar la leña (Gn 22:6); por cálculo tiene como
+    mucho unos treinta y siete años (Gn 23:1 y 17:17). Su edad no consta.
+29. **Isaac atado, el cuchillo y el holocausto del carnero (Gn 22:9-13)**: propuesta por defecto, como la n.º 19,
+    nada gráfico en ningún perfil. Las hojas muestran a Isaac de pie y libre, el cuchillo limpio junto a su funda, el
+    carnero vivo en el zarzal y el altar con la leña sin encender; en el perfil niño, la mano con el cuchillo queda
+    fuera de cuadro. La narración no cambia.
+30. **Objetos con hoja que no están en el catálogo de juego** (como la n.º 16): el altar de Moriah
+    (`objetos/altar-moriah`; el catálogo lo deja dentro del escenario «moriah» y de `lena-cuchillo`), el cántaro de
+    Rebeca (`objetos/cantaro-rebeca`) y los camellos del criado (`objetos/camellos-siervo`); y, de Gn 18–21, la comida
+    de Mamre (`objetos/comida-mamre`), la estatua de sal (`objetos/estatua-sal`) y el pozo de Beerseba con las siete
+    corderas (`objetos/pozo-beerseba`; el catálogo tiene `pozos-isaac`, de Gn 26).
+31. **Ropa de la familia de Nacor y de los hijos de Het**: supuesto por defecto, la gente de Asia occidental de Beni
+    Hasan (A2) de la n.º 17, para Betuel, Labán, Rebeca y su madre (ciudad de Nacor, en Mesopotamia, Gn 24:10) y para
+    Efrón y los hijos de Het (Hebrón, Gn 23:2). No hay referencia comprobada propia de ninguno de los dos lugares. El
+    dueño de tierras (Efrón) y el cabeza de casa (Betuel) llevan tejidos más ricos, sin corona.
+32. **Los hijos de Het y la persona Heth_1**: la hoja de grupo `hijos-het` usa la persona Heth_1 (Het, hijo de
+    Canaán, Gn 10:15), como el catálogo de juego, para que el grupo pueda hablar en Gn 23:5-6. Confirmarlo, o pasar a
+    una voz que no es persona (n.º 13, 20 y 26) o al narrador.
+33. **Ismael anciano** (gn-52, hoja `personajes/ismael-mayor`): propuesta por defecto, el mismo rostro y la misma
+    túnica corta de franjas rojas y blancas de la hoja de muchacho, para que se le reconozca, aparentando unos sesenta y
+    cinco años: por cálculo tiene unos ochenta y nueve (Gn 25:7 y 16:16) y vive hasta los ciento treinta y siete
+    (Gn 25:17), y tiene que verse mayor que Isaac en la misma toma. Alternativa: vestirlo como hombre del desierto de
+    Parán (Gn 21:21), que el texto no describe. No habla, así que no lleva voz.
+34. **Ciudades sin referencia de época** (Sodoma y Zoar, Gerar, la ciudad de los hijos de Het y la de Nacor; escenarios
+    `sodoma`, `casa-lot-puerta`, `casa-lot-sala`, `llanura-zoar`, `gerar`, `puerta-het`, `pozo-nacor`, `casa-betuel`):
+    supuesto por defecto, adobe sobre zócalo de piedra, techos planos, puertas de ciudad entre dos torres bajas con
+    bancos, sin palacios, templos, zigurats ni almenas; la puerta de Het, con más piedra, para que no se confunda con la
+    de Sodoma. `referencias.json` no tiene ninguna referencia comprobada de arquitectura de Canaán ni de Mesopotamia.
+35. **Moriah sin identificar**: la hoja `escenarios/moriah` es un monte pelado, sin ciudad ni templo. 2 Crónicas 3:1
+    llama Moriah al monte donde Salomón edificó el templo, y la tradición los identifica (Fuente externa; el libro aún no
+    está en `datos/biblia.js`), pero Gn 22 no lo dice. Alternativa: que el cierre del video lo mencione como Fuente
+    externa, sin dibujar nada de Jerusalén.
+36. **Escenarios que no están en el catálogo de juego** (como la n.º 16 y la n.º 30): `vista-sodoma`,
+    `casa-lot-puerta`, `casa-lot-sala`, `llanura-zoar`, `cueva-lot`, `desierto-beerseba`, `puerta-het`, `pozo-nacor`,
+    `casa-betuel` y `campo-isaac`. Los que sí están usan su id (`mamre`, `sodoma`, `gerar`, `beerseba`, `moriah`,
+    `macpela`), aunque la hoja muestre una parte del lugar (la puerta de Sodoma, la sala del rey de Gerar). Además, el
+    catálogo pone Gn 24:62-63 en `pozo-viviente`, pero el texto no dice que el campo donde Isaac sale a orar esté junto
+    al pozo: `campo-isaac` no lo dibuja.
+37. **Paisajes sin la lámina 1 desde el principio**: `mamre`, `vista-sodoma`, `llanura-zoar`, `beerseba`,
+    `desierto-beerseba`, `moriah`, `macpela` y `campo-isaac` llevan `sin_laminas: ["patron-1-paisaje.png"]` antes de
+    generarse, porque su paisaje de colinas secas es casi el de la lámina 1 y la creación ya copió su composición. Las
+    fichas generadas dicen «copiaba su composición», que es la frase de `guiones.py` para el caso de la creación: aquí
+    es preventivo. Alternativa: generarlos con las tres láminas y apartarla solo si copian.
 
 ## Pendiente del proyecto (fuera de los guiones)
 
