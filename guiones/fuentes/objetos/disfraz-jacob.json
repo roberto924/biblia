@@ -1,0 +1,65 @@
+{
+  "id": "disfraz-jacob",
+  "nombre": "Los vestidos de Esaú y las pieles de cabrito",
+  "pasajes": [
+    "gn-56",
+    "gn-57"
+  ],
+  "element": {
+    "nombre": "DISFRAZ_JACOB",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. La hoja fija las dos cosas con que Rebeca disfraza a Jacob: los vestidos preciosos de Esaú, que ella guarda en casa (Gn 27:15), y las pieles de los cabritos para las manos y la cerviz (Gn 27:16). En las tomas Jacob (hoja JACOB_ADULTO) los lleva puestos: la túnica de fiesta en lugar de la suya y las pieles cubriendo el dorso de las manos, los antebrazos y la nuca. Los vestidos preciosos no son la ropa de cazar de Esaú (hojas ESAU_JOVEN y ESAU_ADULTO). Las pieles se muestran limpias, ya curtidas, sin cabezas ni sangre, en todos los perfiles.",
+  "texto": [
+    {
+      "dato": "Rebeca toma los vestidos preciosos de Esaú, que tiene en casa, y viste a Jacob",
+      "certeza": "texto",
+      "ref": "Gn 27:15",
+      "cita": "tomó Rebeca los vestidos de Esaú su hijo mayor, los preciosos, que ella tenía en casa, y vistió á Jacob su hijo menor"
+    },
+    {
+      "dato": "Le pone las pieles de los cabritos en las manos y en la cerviz, donde no tenía vello",
+      "certeza": "texto",
+      "ref": "Gn 27:16",
+      "cita": "hízole vestir sobre sus manos, y sobre la cerviz donde no tenía vello, las pieles de los cabritos de las cabras"
+    },
+    {
+      "dato": "Isaac palpa las manos y las cree de Esaú",
+      "certeza": "texto",
+      "ref": "Gn 27:23",
+      "cita": "no le conoció, porque sus manos eran vellosas como las manos de Esaú"
+    },
+    {
+      "dato": "Isaac huele los vestidos: huelen a campo",
+      "certeza": "texto",
+      "ref": "Gn 27:27",
+      "cita": "olió Isaac el olor de sus vestidos, y le bendijo, y dijo: Mira, el olor de mi hijo como el olor del campo"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Vestidos: una túnica larga de fiesta de lana fina, tejida con dibujos ricos en rojo oscuro, ocre y azul oscuro, y un manto doblado de lana pardo rojizo con flecos en los bordes",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «los preciosos» (Gn 27:15), no cómo eran. Los tonos rojizos los emparentan con la ropa de Esaú; lo rico del tejido, con que son los buenos y se guardan en casa. Los dibujos siguen el tejido rico de los jefes del cortejo de Beni Hasan (A1, A2).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "dato": "Pieles: dos piezas de piel de cabrito con pelo corto y espeso pardo oscuro, cortadas para cubrir el dorso de una mano y el antebrazo, con tiras de cuero para atarlas, y una tira más larga para la nuca y el cuello",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice dónde se pusieron (manos y cerviz, Gn 27:16), no cómo se sujetaban ni de qué color eran. El pardo oscuro es elección; no hace falta que imiten el color del vello de Esaú, porque Isaac no ve (Gn 27:1)."
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing two groups of things side by side. On the left, laid out flat, is a long festive tunic of fine wool, richly woven with patterns in dark red, ochre and dark blue in the style of the richer western Asian visitors painted in Middle Kingdom Egyptian tombs, and beside it a folded reddish-brown wool cloak with fringed edges. On the right are three pieces of tanned young goat skin covered in short, thick, dark brown hair: two pieces cut to cover the back of a hand and the forearm, each with thin leather ties, and one longer strip to wrap around the back of the neck. Nobody is wearing or holding any of them.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con dos grupos de cosas uno al lado del otro. A la izquierda, extendida, una túnica larga de fiesta de lana fina, tejida con dibujos ricos en rojo oscuro, ocre y azul oscuro, al modo de los asiáticos más ricos de las tumbas egipcias del Reino Medio, y a su lado un manto doblado de lana pardo rojizo con flecos en los bordes. A la derecha, tres piezas de piel curtida de cabrito con pelo corto y espeso pardo oscuro: dos cortadas para cubrir el dorso de una mano y el antebrazo, cada una con tiras finas de cuero, y una tira más larga para rodear la nuca. Nadie las lleva ni las sostiene.",
+    "negativo_en": "Do not show animal heads, hooves, tails, blood or raw hides. Do not show gold, jewelry, crowns, armor or weapons. Do not show people, hands, mannequins, animals or a tent. Keep the background plain.",
+    "negativo_es": "Sin cabezas, pezuñas ni colas de animal, sangre ni pieles en crudo; sin oro, joyas, coronas, armaduras ni armas; sin personas, manos, maniquíes, animales ni tienda; fondo liso."
+  }
+}

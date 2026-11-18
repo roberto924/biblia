@@ -1,0 +1,60 @@
+{
+  "id": "valle-gerar",
+  "nombre": "El valle de Gerar: las tiendas de Isaac y los pozos (Gn 26:17-22)",
+  "pasajes": [
+    "gn-55"
+  ],
+  "element": {
+    "nombre": "VALLE_GERAR",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "No está en el catálogo de juego, que pone estos pozos en el objeto «pozos-isaac» y en los lugares «gerar» y «beerseba» (decisión pendiente n.º 45 de guiones/LEEME.md). Es el valle donde Isaac asienta sus tiendas (Gn 26:17) y donde sus siervos cavan Esek y Sitna (Gn 26:19-21). Rehobot está en otro sitio, «de allí» apartado (Gn 26:22): el texto no lo describe, y la toma usa esta misma hoja con un encuadre más abierto o lo decide el guion. Los pozos tienen hoja propia (objetos/pozos-isaac); los siervos y los pastores de Gerar también (personajes/siervos-isaac y personajes/pastores-gerar). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Isaac asienta sus tiendas en el valle de Gerar",
+      "certeza": "texto",
+      "ref": "Gn 26:17",
+      "cita": "asentó sus tiendas en el valle de Gerar, y habitó allí"
+    },
+    {
+      "dato": "Sus siervos cavan en el valle y hallan aguas vivas",
+      "certeza": "texto",
+      "ref": "Gn 26:19",
+      "cita": "los siervos de Isaac cavaron en el valle, y hallaron allí un pozo de aguas vivas"
+    },
+    {
+      "dato": "Los pastores de Gerar riñen por el agua",
+      "certeza": "texto",
+      "ref": "Gn 26:20",
+      "cita": "los pastores de Gerar riñeron con los pastores de Isaac, diciendo: El agua es nuestra"
+    },
+    {
+      "dato": "Abren otro pozo y también riñen",
+      "certeza": "texto",
+      "ref": "Gn 26:21",
+      "cita": "abrieron otro pozo, y también riñeron sobre él"
+    },
+    {
+      "dato": "Se aparta de allí y abre otro pozo sin riña",
+      "certeza": "texto",
+      "ref": "Gn 26:22",
+      "cita": "apartóse de allí, y abrió otro pozo, y no riñeron sobre él"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Valle ancho y seco entre lomas suaves y pardas; por el fondo, el cauce seco y pedregoso de un torrente con algunas matas verdes en sus orillas; en la tierra del valle, junto al cauce, un pozo recién abierto con su montón de tierra al lado (hoja POZOS_ISAAC); más allá, en una ladera baja, las tiendas oscuras de pelo de cabra de Isaac (hoja TIENDA_ABRAM); luz fuerte de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice valle y aguas vivas (Gn 26:17, 26:19), no cómo es. El cauce seco con matas verdes es la elección para que se entienda que hay agua bajo tierra."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a wide, dry valley between gentle brown slopes in the dry south of Canaan in the ancient Near East, in strong daylight, with no people and no animals in it. Along the valley floor runs the dry, stony bed of a seasonal stream, with a few green shrubs along its banks. Near the streambed, on the valley floor, there is a newly opened well: a round opening lined with rough, uncut field stones and a low ring of the same stones, with a heap of freshly dug pale earth beside it. Farther off, on a low slope, stand a few low, wide tents of dark brown-black goat-hair cloth on wooden poles, each with one long side open.",
+    "prompt_es": "Una sola vista general de un valle ancho y seco entre laderas suaves y pardas del sur seco de Canaán, en el antiguo Oriente Próximo, con luz fuerte de día y sin personas ni animales. Por el fondo del valle corre el cauce seco y pedregoso de un torrente, con unas matas verdes en sus orillas. Cerca del cauce, en el fondo del valle, hay un pozo recién abierto: boca redonda forrada de piedras de campo toscas sin labrar y un brocal bajo de las mismas piedras, con un montón de tierra clara recién sacada al lado. Más lejos, en una ladera baja, unas tiendas bajas y anchas de paño de pelo de cabra pardo oscuro casi negro sobre postes de madera, cada una con un lado largo abierto.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint a flowing river, a lake, palm trees or a green meadow. Do not add a pulley, a winch, a roof or a bucket on a chain to the well. Do not paint a town, an altar, people or animals, and do not add rays of light or any figure in the sky.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin río con agua, lago, palmeras ni prado verde. Sin polea, torno, tejadillo ni cubo con cadena en el pozo. Sin ciudad, altar, personas ni animales; sin rayos de luz ni figuras en el cielo."
+  }
+}

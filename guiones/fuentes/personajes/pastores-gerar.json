@@ -1,0 +1,71 @@
+{
+  "id": "pastores-gerar",
+  "nombre": "Los pastores de Gerar (Gn 26:20-21)",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son «los pastores de Gerar» (Gn 26:20). No son personas en datos/biblia.js. Hablan a coro (Gn 26:20: «El agua es nuestra»): el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 44 de guiones/LEEME.md).",
+  "pasajes": [
+    "gn-55"
+  ],
+  "element": {
+    "nombre": "PASTORES_GERAR",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo anónimo de tres hombres para representar a los pastores que disputan los pozos de Esek y Sitna (Gn 26:20-21). El texto dice que riñen, no que peleen con armas: las tomas muestran discusión, gestos y empujones como mucho, nada de violencia en ningún perfil. No se les dibuja como villanos: reclaman el agua de su tierra. Sus colores (ocre y azul oscuro) recuerdan los de la casa del rey de Gerar para que se lea de qué lado está cada grupo frente a los siervos de Isaac (hoja SIERVOS_ISAAC, lana sin teñir).",
+  "edades": [
+    {
+      "dato": "Edad visual: hombres de unos veinticinco a unos cincuenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Riñen con los pastores de Isaac y reclaman el agua",
+      "certeza": "texto",
+      "ref": "Gn 26:20",
+      "cita": "los pastores de Gerar riñeron con los pastores de Isaac, diciendo: El agua es nuestra"
+    },
+    {
+      "rasgo": "Riñen también por el segundo pozo",
+      "certeza": "texto",
+      "ref": "Gn 26:21",
+      "cita": "abrieron otro pozo, y también riñeron sobre él"
+    },
+    {
+      "rasgo": "No riñen por el tercero",
+      "certeza": "texto",
+      "ref": "Gn 26:22",
+      "cita": "abrió otro pozo, y no riñeron sobre él"
+    },
+    {
+      "rasgo": "Tres hombres claramente distintos: uno mayor y canoso de barba redonda, uno alto de barba negra en punta, uno joven y nervudo de barba rala; piel morena oliva, ojos oscuros, pelo natural hasta la nuca; gesto enfadado y desafiante, sin crueldad",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. Lo enfadado sale de que riñen (Gn 26:20-21). El pelo y las barbas siguen a los hombres del mural de Beni Hasan (A1, A2).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas de lana hasta la rodilla sujetas sobre un hombro, con franjas anchas ocres y azul oscuro sobre fondo pardo claro, cada una distinta; cinturones de cuero; sandalias; dos llevan cayados de pastor; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 23 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de Gerar. Las túnicas sujetas sobre un hombro y de franjas siguen al mural de Beni Hasan (A1, A2); el ocre y el azul oscuro, a la casa del rey de Gerar (hoja ABIMELEC), elección del ilustrador. Los cayados, porque son pastores.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing three men standing in a single row, each one fully visible from head to feet, with no figure overlapping or hiding another one's head. They are herdsmen of a small town in the dry south of Canaan in the ancient Near East, between about twenty-five and fifty years old, and each clearly differs from the others: an older man with greying hair and a rounded grey beard, a tall man with a pointed black beard, and a young, wiry man with a sparse beard. They have olive-brown skin, dark eyes and natural hair that reaches the nape of the neck. Their heads are bare, with nothing tied around them. Their expressions are angry and defiant, but they are ordinary herdsmen, not villains. They wear knee-length wool tunics fastened over one shoulder, each woven differently with broad ochre and dark blue stripes on a light brown ground, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, with leather belts and sandals. The older man and the tall man each hold a plain wooden shepherd's staff upright; the young man's hands are empty.",
+    "prompt_es": "Hoja de grupo sobre fondo gris claro liso: tres hombres de pie en una sola fila, cada uno de cuerpo entero, sin que ninguna figura se superponga ni tape la cabeza de otra. Son pastores de una ciudad pequeña del sur seco de Canaán, en el antiguo Oriente Próximo, de entre unos veinticinco y unos cincuenta años, y cada uno es claramente distinto: uno mayor, de pelo canoso y barba gris redondeada; uno alto, de barba negra en punta; uno joven y nervudo, de barba rala. Piel morena oliva, ojos oscuros y pelo natural hasta la nuca. Cabezas descubiertas, sin nada atado. Gesto enfadado y desafiante, pero son pastores corrientes, no villanos. Túnicas de lana hasta la rodilla sujetas sobre un hombro, cada una distinta, con franjas anchas ocres y azul oscuro sobre fondo pardo claro, al modo de los asiáticos de las tumbas egipcias del Reino Medio, con cinturones de cuero y sandalias. El mayor y el alto sostienen derecho un cayado liso de pastor; el joven tiene las manos vacías.",
+    "negativo_en": "Do not make the three men look alike. Do not give them swords, spears, knives, clubs, slings, helmets, armor, crowns, turbans, headbands or jewelry, and do not raise the staffs to strike. Do not make them monstrous or grotesque. Do not dress them in undyed plain wool or in red and white stripes. Do not paint a well, water, animals or any other person, and keep the background plain.",
+    "negativo_es": "Que los tres no se parezcan; sin espadas, lanzas, cuchillos, garrotes, hondas, cascos, armaduras, coronas, turbantes, cintas ni joyas, y sin alzar los cayados para golpear; que no parezcan monstruos ni grotescos; sin lana lisa sin teñir ni franjas rojas y blancas; sin pozo, agua, animales ni otras personas; fondo liso."
+  }
+}

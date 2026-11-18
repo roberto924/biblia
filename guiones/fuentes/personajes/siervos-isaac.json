@@ -1,0 +1,74 @@
+{
+  "id": "siervos-isaac",
+  "nombre": "Los siervos y pastores de Isaac (Gn 26)",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son «los siervos de Isaac» (Gn 26:19, 26:25), «los pastores de Isaac» (Gn 26:20) y «los criados de Isaac» (Gn 26:32). No son personas en datos/biblia.js. Hablan a coro en Gn 26:32 («Agua hemos hallado»): como los constructores de Babel y los hombres de Sodoma, el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 44 de guiones/LEEME.md).",
+  "pasajes": [
+    "gn-55"
+  ],
+  "element": {
+    "nombre": "SIERVOS_ISAAC",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo anónimo de tres hombres para representar a los muchos siervos de Isaac (Gn 26:14: «grande apero»). Cavan los pozos del valle de Gerar (Gn 26:19-22), riñen sin armas con los pastores de Gerar (hoja PASTORES_GERAR) y abren el pozo de Beer-seba (Gn 26:25, 26:32). Que los que cavan y los que pastorean sean los mismos hombres es elección para no multiplicar hojas: el texto usa las tres palabras sin decir si son los mismos. Las herramientas no las describe el texto: interpretación del ilustrador. Los pozos tienen hoja (objetos/pozos-isaac).",
+  "edades": [
+    {
+      "dato": "Edad visual: hombres jóvenes y maduros, de unos veinte a unos cuarenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Cavan pozos: se les dibuja fuertes."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Cavan en el valle y hallan un pozo de aguas vivas",
+      "certeza": "texto",
+      "ref": "Gn 26:19",
+      "cita": "los siervos de Isaac cavaron en el valle, y hallaron allí un pozo de aguas vivas"
+    },
+    {
+      "rasgo": "Los pastores de Gerar riñen con ellos",
+      "certeza": "texto",
+      "ref": "Gn 26:20",
+      "cita": "los pastores de Gerar riñeron con los pastores de Isaac"
+    },
+    {
+      "rasgo": "Abren un pozo en Beer-seba",
+      "certeza": "texto",
+      "ref": "Gn 26:25",
+      "cita": "abrieron allí los siervos de Isaac un pozo"
+    },
+    {
+      "rasgo": "Traen la noticia del agua",
+      "certeza": "texto",
+      "ref": "Gn 26:32",
+      "cita": "vinieron los criados de Isaac, y diéronle nuevas acerca del pozo que habían abierto, y le dijeron: Agua hemos hallado"
+    },
+    {
+      "rasgo": "Tres hombres claramente distintos: uno alto y flaco, uno bajo y fornido, uno de complexión media y más joven; piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca y barbas cortas; gesto trabajador y franco",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. El pelo sigue a los hombres del mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas cortas y lisas de lana sin teñir hasta la rodilla, sujetas sobre un hombro, una crema, una parda clara y una gris; cinturones de cuerda; sandalias sencillas; uno lleva una azada sencilla de madera, otro un capazo de mimbre para sacar tierra, el tercero las manos vacías; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Lana sin teñir y lisa, como los mozos de Abraham, para que no se confundan con su amo; las túnicas sujetas sobre un hombro siguen al mural de Beni Hasan (A2). La azada y el capazo son interpretación del ilustrador, para las tomas de cavar.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing three men standing in a single row, each one fully visible from head to feet, with no figure overlapping or hiding another one's head. They are herdsmen and well-diggers serving a rich herdsman chief in the dry south of Canaan in the ancient Near East, between about twenty and forty years old, and each clearly differs from the others: one is tall and thin, one is short and sturdy, and one is younger and of medium build. They have olive-brown skin, dark eyes, natural dark hair that reaches the nape of the neck and short beards. Their heads are bare, with nothing tied around them. Their expressions are hard-working and frank. They wear short, plain knee-length tunics of undyed wool, one cream, one light brown and one grey, each fastened over one shoulder, with cord belts and simple leather sandals. The tall one holds a plain wooden hoe, the short one carries an empty woven wicker basket for earth, and the young one has empty hands.",
+    "prompt_es": "Hoja de grupo sobre fondo gris claro liso: tres hombres de pie en una sola fila, cada uno de cuerpo entero, sin que ninguna figura se superponga ni tape la cabeza de otra. Son pastores y cavadores de pozos al servicio de un jefe de pastores rico del sur seco de Canaán, en el antiguo Oriente Próximo, de entre unos veinte y unos cuarenta años, y cada uno es claramente distinto: uno alto y flaco, uno bajo y fornido, uno más joven y de complexión media. Piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca y barbas cortas. Cabezas descubiertas, sin nada atado. Gesto trabajador y franco. Túnicas cortas y lisas de lana sin teñir hasta la rodilla, una crema, una parda clara y una gris, sujetas sobre un hombro, con cinturones de cuerda y sandalias sencillas. El alto lleva una azada sencilla de madera; el bajo, un capazo de mimbre vacío para la tierra; el joven, las manos vacías.",
+    "negativo_en": "Do not make the three men look alike. Do not put headbands, cords or cloths on their heads. Do not give them striped or brightly colored cloth, weapons, metal tools, staffs or jewelry. Do not make them look like slaves in chains or like soldiers. Do not paint a well, water, tents, animals or any other person, and keep the background plain.",
+    "negativo_es": "Que los tres no se parezcan; sin cintas, cordones ni paños en la cabeza; sin telas de franjas o de colores vivos, armas, herramientas de metal, cayados ni joyas; que no parezcan esclavos encadenados ni soldados; sin pozo, agua, tiendas, animales ni otras personas; fondo liso."
+  }
+}

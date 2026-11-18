@@ -1,0 +1,75 @@
+{
+  "id": "guisado-isaac",
+  "nombre": "Los guisados, el pan y el vino de Isaac (Gn 27)",
+  "pasajes": [
+    "gn-56",
+    "gn-57",
+    "gn-58"
+  ],
+  "element": {
+    "nombre": "GUISADO_ISAAC",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 45 de guiones/LEEME.md). La hoja fija lo que Rebeca prepara con los dos cabritos y entrega a Jacob (Gn 27:9, 27:14, 27:17) y lo que Isaac come y bebe (Gn 27:25). El guisado de Esaú (Gn 27:31) se hace con la caza, que el texto no dice cuál es: la toma usa este mismo plato. Los cabritos no se muestran muertos ni desollados en ningún perfil; sus pieles tienen hoja (objetos/disfraz-jacob).",
+  "texto": [
+    {
+      "dato": "Isaac pide caza y un guisado como a él le gusta",
+      "certeza": "texto",
+      "ref": "Gn 27:4",
+      "cita": "hazme un guisado, como yo gusto"
+    },
+    {
+      "dato": "Rebeca hace viandas con dos cabritos",
+      "certeza": "texto",
+      "ref": "Gn 27:9",
+      "cita": "tráeme de allí dos buenos cabritos de las cabras, y haré de ellos viandas para tu padre, como él gusta"
+    },
+    {
+      "dato": "Hace guisados como a Isaac le gustan",
+      "certeza": "texto",
+      "ref": "Gn 27:14",
+      "cita": "su madre hizo guisados, como su padre gustaba"
+    },
+    {
+      "dato": "Entrega a Jacob los guisados y el pan",
+      "certeza": "texto",
+      "ref": "Gn 27:17",
+      "cita": "entregó los guisados y el pan que había aderezado, en mano de Jacob su hijo"
+    },
+    {
+      "dato": "Isaac come, y Jacob le trae también vino",
+      "certeza": "texto",
+      "ref": "Gn 27:25",
+      "cita": "él se [la] acercó, y comió: trájole también vino, y bebió"
+    },
+    {
+      "dato": "Esaú hace también guisados con su caza",
+      "certeza": "texto",
+      "ref": "Gn 27:31",
+      "cita": "E hizo él también guisados, y trajo á su padre"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Guisado: una fuente honda y ancha de barro liso con trozos de carne guisada en su caldo espeso, de color pardo dorado, que humea",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que es guisado de cabrito (Gn 27:9, 27:14), no cómo se servía. Que se vea distinto del potaje de lentejas (rojizo) es elección para no confundirlos."
+    },
+    {
+      "dato": "Pan: tres tortas redondas y planas de pan",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «el pan que había aderezado» (Gn 27:17). La forma es la misma del pan de la hoja POTAJE_LENTEJAS."
+    },
+    {
+      "dato": "Vino: una jarra pequeña y lisa de barro con asa y un cuenco bajo de barro para beber, con vino oscuro",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que Jacob le trajo vino (Gn 27:25), no en qué."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left is a wide, deep serving dish of plain fired clay holding pieces of stewed meat in a thick, golden-brown broth, giving off a little steam. In the center are three round, flat loaves of bread stacked loosely. On the right are a small, plain clay jug with one handle and a shallow clay drinking bowl holding dark red wine. Nobody is holding any of them.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con tres cosas una al lado de otra. A la izquierda, una fuente ancha y honda de barro cocido liso con trozos de carne guisada en un caldo espeso pardo dorado, que humea un poco. En el centro, tres tortas redondas y planas de pan, apiladas sin orden. A la derecha, una jarra pequeña y lisa de barro con un asa y un cuenco bajo de barro para beber con vino tinto oscuro. Nadie sostiene nada.",
+    "negativo_en": "Do not show whole animals, heads, bones sticking out, skins, blood or raw meat. Do not show metal or glass vessels, goblets, decorated pottery, cutlery or a table. Do not make the stew look like reddish lentils. Do not show people, hands or animals. Keep the background plain.",
+    "negativo_es": "Sin animales enteros, cabezas, huesos a la vista, pieles, sangre ni carne cruda; sin vasijas de metal o vidrio, copas, cerámica decorada, cubiertos ni mesa; que el guiso no parezca de lentejas rojizas; sin personas, manos ni animales; fondo liso."
+  }
+}
