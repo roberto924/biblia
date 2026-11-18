@@ -10,7 +10,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Texto**: Van con Labán siete días tras Jacob hasta el monte de Galaad — Gn 31:23: «tomó á sus hermanos consigo, y fué tras él camino de siete días, y alcanzóle en el monte de Galaad»
 - **Texto**: Acampan con él en el monte — Gn 31:25: «Labán plantó[la] con sus hermanos en el monte de Galaad»
-- **Texto**: Jacob los pone por testigos — Gn 31:37: «Ponlo aquí delante de mis hermanos y tuyos, y juzguen entre nosotros ambos»
+- **Texto**: Jacob pide que juzguen entre él y Labán, delante de los hermanos de los dos — Gn 31:37: «Ponlo aquí delante de mis hermanos y tuyos, y juzguen entre nosotros ambos»
 - **Interpretación del ilustrador**: Cinco hombres de edades distintas, de unos treinta a unos sesenta años, con aire de familia con Labán: piel morena oliva curtida, ojos y pelo oscuros, natural, corto o hasta la nuca, algunos entrecanos; barbas de distintos largos, varias acabadas en punta; gesto serio y cansado del viaje — Interpretación del ilustrador: el texto no los describe. El aire de familia sigue a la hoja LABAN_MAYOR; lo cansado, a los siete días de camino (Gn 31:23). Ninguno es tan viejo como Labán, para que él se distinga.
 
 ## Vestuario

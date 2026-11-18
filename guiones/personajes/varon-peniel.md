@@ -13,14 +13,14 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 ## Rasgos
 
 - **Texto**: Jacob se queda solo y un varón lucha con él hasta el alba — Gn 32:24: «quedóse Jacob solo, y luchó con él un varón hasta que rayaba el alba»
-- **Texto**: Como no puede con Jacob, le toca el encaje del muslo y se lo descoyunta — Gn 32:25: «como vió que no podía con él, tocó en el sitio del encaje de su muslo»
+- **Texto**: Como no puede con Jacob, le toca el encaje del muslo y se lo descoyunta — Gn 32:25: «como vió que no podía con él, tocó en el sitio del encaje de su muslo, y descoyuntóse el muslo de Jacob»
 - **Texto**: Pide que lo deje porque raya el alba — Gn 32:26: «Déjame, que raya el alba»
 - **Texto**: Pregunta a Jacob su nombre — Gn 32:27: «¿Cuál es tu nombre?»
 - **Texto**: Le cambia el nombre por Israel — Gn 32:28: «No se dirá más tu nombre Jacob, sino Israel: porque has peleado con Dios y con los hombres, y has vencido»
 - **Texto**: No dice su nombre y bendice a Jacob — Gn 32:29: «¿Por qué preguntas por mi nombre? Y bendíjolo allí»
 - **Texto**: Jacob llama al lugar Peniel porque dice haber visto a Dios cara a cara — Gn 32:30: «vi á Dios cara á cara, y fué librada mi alma»
 - **Inferido**: El texto no dice quién es: lo llama varón y deja que Jacob hable de Dios — El narrador solo dice «un varón» (Gn 32:24); quien habla de Dios es el propio varón (Gn 32:28) y luego Jacob (Gn 32:30). La hoja no lo marca ni como hombre corriente ni como Dios. — base: Gn 32:24 «luchó con él un varón» — base: Gn 32:28 «has peleado con Dios y con los hombres»
-- **Fuente externa**: Oseas 12:3-4 llama «ángel» a aquel con quien luchó Jacob — Es otra parte de la Biblia, muy posterior al relato; no cambia lo que dice Gn 32. — fuente: Oseas 12:3-4 (Reina-Valera 1909); el libro aún no está en datos/biblia.js. Sirve para dirigir; no se cita en el video de Génesis.
+- **Fuente externa**: Oseas 12:3-4 dice que Jacob «venció al ángel» — Es otra parte de la Biblia, muy posterior al relato; no cambia lo que dice Gn 32. — fuente: Oseas 12:3-4, Reina-Valera 1909: «con su fortaleza venció al ángel» (12:3) y «Venció al ángel, y prevaleció» (12:4). El libro aún no está en datos/biblia.js: el texto se comprobó el 18-nov-2026 en Bible Gateway, versión «Reina-Valera Antigua» (RVA, la de 1909), https://www.biblegateway.com/passage/?search=Oseas+12%3A3-4&version=RVA. Sirve para dirigir; no se cita en el video de Génesis.
 - **Interpretación del ilustrador**: Hombre alto y fuerte de Asia occidental, de piel morena, pelo oscuro y abundante hasta la nuca, natural, y barba oscura corta; espalda ancha; nunca se le ve la cara — Interpretación del ilustrador: el texto no lo describe. El rostro oculto es la propuesta por defecto de la decisión pendiente n.º 57.
 
 ## Vestuario

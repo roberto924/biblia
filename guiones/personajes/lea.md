@@ -5,12 +5,12 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `LEA` (personaje)
 - **Personas (datos/biblia.js)**: Leah_1
 - **Pasajes**: gn-62, gn-63, gn-64, gn-66, gn-67, gn-68, gn-70, gn-71
-- **Nota**: Aspecto para Gn 29–31, de la boda (Gn 29:23) a la despedida en Galaad (Gn 31:55). Una sola hoja para esos años, como la de Raquel (decisión pendiente n.º 51 de guiones/LEEME.md): en gn-64 a gn-68 las tomas la hacen algo más madura sin cambiarle la cara, la ropa ni el pelo. Es la hermana mayor de Raquel (hoja RAQUEL): parecido de familia, distinta ropa. «Los ojos de Lea eran tiernos» (Gn 29:17) se lee tal cual: el texto lo contrapone a la belleza de Raquel («pero»), pero no dice si es un defecto ni en qué consiste; la hoja le da una mirada suave, sin ojos enfermos ni rasgos feos. El texto no dice cómo Jacob no la reconoce la noche de la boda (Gn 29:23-25): la hoja no le pone velo. La noche de bodas y la noche de las mandrágoras (Gn 30:16) no se muestran (decisión pendiente n.º 54). Sus hijos recién nacidos no llevan hoja; Rubén niño sí (personajes/ruben-nino). En Gn 31:14-16 habla a la vez que Raquel (decisión pendiente n.º 53).
+- **Nota**: Aspecto de Gn 29 a Gn 33, de la boda (Gn 29:23) al encuentro con Esaú (Gn 33:1-7). Una sola hoja para esos años, como la de Raquel (decisión pendiente n.º 51 de guiones/LEEME.md): en gn-64 a gn-68, gn-70 y gn-71 las tomas la hacen más madura sin cambiarle la cara, la ropa ni el pelo. Es la hermana mayor de Raquel (hoja RAQUEL): parecido de familia, distinta ropa. «Los ojos de Lea eran tiernos» (Gn 29:17) se lee tal cual: el texto lo contrapone a la belleza de Raquel («pero»), pero no dice si es un defecto ni en qué consiste; la hoja le da una mirada suave, sin ojos enfermos ni rasgos feos. El texto no dice cómo Jacob no la reconoce la noche de la boda (Gn 29:23-25): la hoja no le pone velo. La noche de bodas y la noche de las mandrágoras (Gn 30:16) no se muestran (decisión pendiente n.º 54). Sus hijos recién nacidos no llevan hoja; Rubén niño sí (personajes/ruben-nino). En Gn 31:14-16 habla a la vez que Raquel (decisión pendiente n.º 53).
 
 ## Edad
 
 - **Texto**: Es la hija mayor de Labán — Gn 29:16: «el nombre de la mayor era Lea»
-- **Texto**: La dan por mujer antes que a la menor, al cumplirse los siete años de Jacob — Gn 29:26: «No se hace así en nuestro lugar, que se dé la menor antes de la mayor»
+- **Texto**: Labán la da por mujer a Jacob antes que a la menor, por ser la mayor — Gn 29:26: «No se hace así en nuestro lugar, que se dé la menor antes de la mayor»
 - **Interpretación del ilustrador**: Edad visual: una mujer joven, de unos veintitrés años, algo mayor que Raquel — Interpretación del ilustrador: el texto solo dice que es la mayor (Gn 29:16) y no da su edad ni la de Raquel. Se la dibuja unos pocos años mayor que su hermana.
 
 ## Rasgos

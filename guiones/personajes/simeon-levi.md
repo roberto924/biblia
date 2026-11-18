@@ -23,7 +23,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Texto**: Simeón, segundo hijo de Lea — Gn 29:33: «Y llamó su nombre Simeón»
 - **Texto**: Leví, tercer hijo de Lea — Gn 29:34: «llamó su nombre Leví»
-- **Texto**: Los hijos de Jacob vuelven del campo entristecidos y llenos de ira — Gn 34:7: «se entristecieron los varones, y se ensañaron mucho»
+- **Texto**: Los hijos de Jacob vuelven del campo entristecidos y llenos de ira — Gn 34:7: «los hijos de Jacob vinieron del campo cuando lo supieron; y se entristecieron los varones, y se ensañaron mucho»
 - **Texto**: Los hijos de Jacob responden con engaño a Siquem y a Hamor — Gn 34:13: «respondieron los hijos de Jacob á Sichêm y á Hamor su padre con engaño»
 - **Texto**: Simeón y Leví toman cada uno su espada y van contra la ciudad — Gn 34:25: «Simeón y Leví, hermanos de Dina, tomaron cada uno su espada»
 - **Texto**: Sacan a Dina de casa de Siquem — Gn 34:26: «tomaron á Dina de casa de Sichêm, y saliéronse»

@@ -110,9 +110,9 @@
       "cita": "tomaron á Dina de casa de Sichêm, y saliéronse"
     },
     {
-      "rasgo": "Piel morena oliva, ojos oscuros grandes, rostro joven y redondeado; pelo oscuro largo, natural, suelto a la espalda y sujeto con una cinta estrecha azul grisácea en la frente; gesto sereno y curioso",
+      "rasgo": "Piel morena oliva, ojos oscuros grandes, rostro joven y redondeado; pelo oscuro largo, natural, suelto a la espalda y sujeto con una cinta estrecha rojo rosado desvaído en la frente; gesto sereno y curioso",
       "certeza": "interpretacion",
-      "nota": "Interpretación del ilustrador: el texto no la describe. El pelo largo con cinta sigue a las mujeres del mural de Beni Hasan (A2); el azul grisáceo la distingue de Sara (blanco) y de la mujer de Lot (ocre). La curiosidad sale de que sale «á ver las hijas del país» (Gn 34:1).",
+      "nota": "Interpretación del ilustrador: el texto no la describe. El pelo largo con cinta sigue a las mujeres del mural de Beni Hasan (A2); el rojo rosado de la cinta y del vestido es elección del ilustrador para distinguirla de su abuela Rebeca (azul grisáceo), de Raquel (ocre) y de su madre Lea (oliva y crema). La curiosidad sale de que sale «á ver las hijas del país» (Gn 34:1).",
       "referencias": [
         "A2"
       ]
@@ -120,7 +120,7 @@
   ],
   "vestuario": [
     {
-      "rasgo": "Vestido largo de lana hasta media pierna, que cubre los dos hombros, con dibujos menudos en zigzag en azul grisáceo, blanco y rojo; calzado bajo cerrado de cuero; sin joyas",
+      "rasgo": "Vestido largo de lana hasta media pierna, que cubre los dos hombros, con dibujos menudos en zigzag rojo rosado desvaído y crema y una cenefa verde oliva (el color de su madre) en el borde; calzado bajo cerrado de cuero; sin joyas",
       "certeza": "supuesto",
       "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Sigue a las mujeres del cortejo de Beni Hasan (A2), con los dos hombros cubiertos por recato. Sin joyas: el texto no le da ninguna (los zarcillos de Gn 35:4 son de la casa, sin decir de quién).",
       "referencias": [
@@ -132,8 +132,8 @@
     "A2"
   ],
   "hoja_referencia": {
-    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same young woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a young woman from western Asia of about seventeen, clearly no longer a child, with olive-brown skin, large dark eyes and a young, rounded face. Her long dark hair is natural and falls down her back, held by a narrow blue-grey band around her forehead. Her expression is calm and curious. She is dressed modestly in a long wool dress that covers both shoulders and reaches her lower calves, woven with small zigzag patterns in blue-grey, white and red in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and low closed leather shoes. Her hands are empty.",
-    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma joven tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Joven de Asia occidental de unos diecisiete años, ya no una niña; piel morena oliva, ojos oscuros grandes, rostro joven y redondeado. Pelo oscuro largo y natural, suelto a la espalda y sujeto con una cinta estrecha azul grisácea en la frente. Gesto sereno y curioso. Vestida con recato: vestido largo de lana que cubre los dos hombros y llega a media pierna, con dibujos menudos en zigzag en azul grisáceo, blanco y rojo, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio, y calzado bajo cerrado de cuero. Manos vacías.",
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same young woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a young woman from western Asia of about seventeen, clearly no longer a child, with olive-brown skin, large dark eyes and a young, rounded face. Her long dark hair is natural and falls down her back, held by a narrow faded rose-red band around her forehead. Her expression is calm and curious. She is dressed modestly in a long wool dress that covers both shoulders and reaches her lower calves, woven with small zigzag patterns in faded rose-red and cream with an olive-green border at the hem, in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and low closed leather shoes. Her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma joven tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Joven de Asia occidental de unos diecisiete años, ya no una niña; piel morena oliva, ojos oscuros grandes, rostro joven y redondeado. Pelo oscuro largo y natural, suelto a la espalda y sujeto con una cinta estrecha rojo rosado desvaído en la frente. Gesto sereno y curioso. Vestida con recato: vestido largo de lana que cubre los dos hombros y llega a media pierna, con dibujos menudos en zigzag rojo rosado desvaído y crema y una cenefa verde oliva en el borde, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio, y calzado bajo cerrado de cuero. Manos vacías.",
     "negativo_en": "Do not make her look like a little girl, and do not make her look older than about twenty. Do not bare her shoulders or make her look seductive, and do not give her heavy makeup. Do not give her earrings, bracelets, necklaces, a veil, a crown or Egyptian white linen. Do not show tears, wounds or any other person, and keep the background plain.",
     "negativo_es": "Que no parezca una niña pequeña ni mayor de unos veinte años. Sin hombros al aire ni aire seductor, sin maquillaje marcado. Sin pendientes, brazaletes, collares, velo, corona ni lino blanco egipcio. Sin lágrimas, heridas ni otras personas; fondo liso."
   }

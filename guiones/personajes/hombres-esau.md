@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `HOMBRES_ESAU` (personaje (grupo))
 - **Pasajes**: gn-71
-- **Nota**: Grupo de seis figuras para representar a cuatrocientos. En gn-69 solo se habla de ellos (Gn 32:6): si el guion los muestra allí, usa esta hoja. Esaú tiene su hoja aparte, del redactor de Gn 25–28; este grupo no lo incluye. El texto no dice que vengan armados ni a qué vienen: el temor es de Jacob (Gn 32:7, 32:11). Propuesta por defecto (decisión pendiente n.º 60 de guiones/LEEME.md): sin armas, con cayados de caminante, para no presentar como dato una amenaza que el texto deja en el miedo de Jacob. Gn 33:15 dice «la gente que viene conmigo»: es la misma compañía.
+- **Nota**: Grupo de seis figuras para representar a cuatrocientos. En gn-69 solo se habla de ellos (Gn 32:6): si el guion los muestra allí, usa esta hoja. Esaú tiene su hoja aparte (personajes/esau-mayor, el único con arco y aljaba, n.º 40); este grupo no lo incluye. El texto no dice que vengan armados ni a qué vienen: el temor es de Jacob (Gn 32:7, 32:11). Propuesta por defecto (decisión pendiente n.º 60 de guiones/LEEME.md): sin armas, con cayados de caminante, para no presentar como dato una amenaza que el texto deja en el miedo de Jacob. Gn 33:15 dice «la gente que viene conmigo»: es la misma compañía.
 
 ## Rasgos
 
