@@ -267,42 +267,51 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
 .enlace-arbol { justify-self: center; display: inline-flex; align-items: center; min-height: 44px; font-size: .9rem; font-weight: 500; }
 @media (min-width: 900px) and (max-width: 1099px) { .acompanante { left: var(--lateral); bottom: 0; padding-bottom: env(safe-area-inset-bottom); } }
 /* Pantalla ancha: la lectura manda (como el texto en el centro de las Biblias glosadas) y el acompañante va al
-   margen, 19–24rem. El conjunto se centra en el espacio libre. */
+   margen, en una sola columna, 19–24rem. El conjunto se centra en el espacio libre. */
 @media (min-width: 1100px) {
   main:has(.pasaje-vista) { --ancho: 124rem; }
   .pasaje-vista { display: grid; grid-template-columns: minmax(0, 1fr) clamp(19rem, 25vw - 8rem, 24rem); gap: clamp(2rem, 3vw, 3rem); align-items: start; }
   /* Comparar y Original ponen varias columnas lado a lado: algo más de margen para el acompañante. */
   .pasaje-vista:has(.comparar, .original) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
-  .pv-portada > :not(.cab-pasaje), .pv-texto > * { max-width: none; }
-  .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; container: acomp / inline-size; }
+  .pv-portada > :not(.cab-pasaje), .pv-texto > *, .pv-extra > * { max-width: none; }
+  .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; }
   .acomp-cab::before { display: none; }
   .acomp-asa { cursor: default; pointer-events: none; }
   .acomp-asa::after { display: none; }
-  /* Con sitio para dos, las secciones se reparten en dos columnas equilibradas (menos desplazamiento). */
-  @container acomp (min-width: 42rem) {
-    .acomp-columnas { columns: 2; column-gap: 2rem; column-rule: 1px solid var(--linea-suave); }
-    .acomp-columnas > * { break-inside: avoid; }
-  }
 }
-/* Pantalla muy ancha: tres columnas. 1) título y galería, 2) la lectura, 3) el acompañante (referencias y lo
-   adicional). Portada y acompañante se quedan a la vista mientras se lee. La lectura crece primero (hasta 84rem:
-   dos páginas de línea cómoda); el acompañante se queda con lo que sobra, nunca menos de 19rem. Sin tope total. */
+/* Pantalla muy ancha: tres columnas que caben en la ventana, sin desplazarla. 1) título y galería, con lo
+   adicional debajo (pista, fuente, manuscrito, lo nuevo); 2) herramientas, libro y pasos; 3) el acompañante.
+   Cada columna se desplaza por dentro si no le basta el alto. El libro ocupa todo el alto que queda. */
 @media (min-width: 1800px) {
-  main:has(.pasaje-vista) { --portada: 18rem; --ancho: 400rem; }
-  .pasaje-vista { gap: 3rem; grid-template-columns: minmax(0, calc(var(--portada) + 3rem + 84rem)) minmax(19rem, 1fr); }
-  .lectura { display: grid; grid-template-columns: var(--portada) minmax(0, 84rem); gap: 3rem; align-items: start; }
-  .pv-portada { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow-y: auto; scrollbar-width: thin; padding: 3px; margin: -3px; }
-  .pv-portada .medios-pasaje { margin-top: 1.5rem; }
+  main:has(.pasaje-vista) { --portada: 19rem; --centro: 84rem; --margen: 30rem; --alto-vista: calc(100dvh - 2.5rem);
+    --ancho: calc(var(--portada) + var(--centro) + var(--margen) + 6rem); padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .pasaje-vista { gap: 3rem; height: var(--alto-vista); grid-template-columns: minmax(0, calc(var(--portada) + 3rem + var(--centro))) minmax(19rem, 1fr); }
+  .lectura { display: grid; height: 100%; min-height: 0; grid-template-columns: var(--portada) minmax(0, var(--centro)); grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas: "portada texto" "extra texto"; column-gap: 3rem; }
+  .pv-portada { grid-area: portada; max-height: calc(var(--alto-vista) * .72); overflow-y: auto; scrollbar-width: thin; padding: 3px; margin: -3px; }
+  .pv-extra { grid-area: extra; min-height: 0; overflow-y: auto; scrollbar-width: thin; padding: 3px; margin: -3px; }
+  .pv-extra > :first-child { margin-top: 1rem; }
+  .pv-extra .nuevo { margin-top: 1rem; }
+  .pv-portada .medios-pasaje { margin-top: 1.25rem; margin-bottom: 0; }
   .pv-portada h1 { font-size: clamp(1.7rem, 1rem + 1vw, 2.4rem); }
+  .pv-texto { grid-area: texto; min-height: 0; display: flex; flex-direction: column; overflow-y: auto; scrollbar-width: thin; }
+  .pv-texto > * { flex: none; }
   .pv-texto > .herr-pasaje:first-child { margin-top: 0; }
+  .pv-texto > .pasos-pasaje { margin: .6rem 0 0; }
+  .pv-texto > .regla-lectura { margin: .4rem 0 0; }
+  /* El libro se estira hasta llenar la columna: su página mide lo que queda tras herramientas y pasos. */
+  .pv-texto > .libro { flex: 1 1 auto; min-height: 18rem; display: flex; flex-direction: column; margin: .75rem 0 0; }
+  .libro-pliego { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+  .libro-recorte { flex: 1 1 auto; min-height: 0; }
+  .biblia.libro-texto, .biblia.libro-texto.equilibrado { height: 100%; }
+  .libro-nav { margin-top: .6rem; }
+  .acompanante, .acompanante.abierta { position: static; max-height: var(--alto-vista); }
   .pasaje-vista:has(.comparar, .original) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
   .pasaje-vista:has(.comparar, .original) .lectura { grid-template-columns: var(--portada) minmax(0, 1fr); }
+  main:has(.pasaje-vista .comparar), main:has(.pasaje-vista .original) { --ancho: 400rem; }
 }
-@media (min-width: 2200px) {
-  main:has(.pasaje-vista) { --portada: 22rem; }
-  @container acomp (min-width: 66rem) { .acomp-columnas { columns: 3; } }
-}
-@media (min-width: 2800px) { main:has(.pasaje-vista) { --portada: 26rem; } }
+@media (min-width: 2200px) { main:has(.pasaje-vista) { --portada: 22rem; } }
+@media (min-width: 2800px) { main:has(.pasaje-vista) { --portada: 26rem; --centro: 92rem; --margen: 34rem; } }
 @media (max-width: 1099px) { .pasaje-vista ~ *, main:has(.pasaje-vista) { padding-bottom: calc(var(--nav-h) + var(--asa-h) + 2rem + env(safe-area-inset-bottom)); } }
 @media (min-width: 900px) and (max-width: 1099px) { main:has(.pasaje-vista) { padding-bottom: calc(var(--asa-h) + 2.5rem); } }
 

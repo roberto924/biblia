@@ -2165,7 +2165,9 @@ if (typeof document !== 'undefined') (function () {
       return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}${nbClases(nt)}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${nbSrHTML(nt)}${marcaVariante(v.ref, v.n)}${partes}${nbIndHTML(nt, k, v.n)} </span>`;
     }, (vsP, j) => { const v = vsP[0], cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : ''; capPrev = vsP[vsP.length - 1].cap; return cab; });
     const nuevos = N.primerasApariciones(D, p);
-    // Tres bloques: portada (título y galería), texto y acompañante; en pantalla muy ancha son tres columnas (estilos.css).
+    // Bloques: portada (título y galería), texto (herramientas, libro y pasos) y lo adicional (pista, fuente, manuscrito,
+    // lo nuevo), más el acompañante. En pantalla muy ancha la vista cabe en la ventana: lo adicional va bajo la portada.
+    const leerAqui = !estado.comparar && !estado.original;
     return `<div class="pasaje-vista"><article class="lectura"><div class="pv-portada">${aviso ? `<div role="status">${aviso}</div>` : ''}
       <header class="cab-pasaje"><a class="volver" href="#leer/${esc(lb)}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
         <p class="pasaje-libro">${esc(N.nombreLibro(D, lb))}</p>
@@ -2175,17 +2177,17 @@ if (typeof document !== 'undefined') (function () {
       ${mediosPasajeHTML(p)}</div><div class="pv-texto">
       ${herramientasPasajeHTML()}
       ${dificilesHTML(p)}
-      ${estado.comparar ? compararHTML(p) : estado.original ? originalHTML(p) : `${texto ? libroHTML(texto) : '<div class="biblia"><p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p></div>'}
-      <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.${ORIG.o && N.variantesDe(ORIG.o, vs.map(v => v.ref)).length ? ' «var.» señala una variante entre manuscritos.' : ''}</p>
-      ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}`}
-      ${estado.original ? '' : manuscritoHTML(p)}
-      <section class="nuevo" aria-labelledby="t-nuevo"><h2 id="t-nuevo">Lo nuevo en este pasaje</h2>
-        ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section>
+      ${estado.comparar ? compararHTML(p) : estado.original ? originalHTML(p) : texto ? libroHTML(texto) : '<div class="biblia"><p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p></div>'}
       <nav class="pasos-pasaje" aria-label="Pasajes">
         ${prev ? `<a class="boton secundario" href="#leer/p/${esc(prev.id)}" title="${esc(prev.titulo)}">Anterior</a>` : '<span></span>'}
         ${marcarHTML(p, next)}
         ${nextOk ? `<a class="boton secundario" href="#leer/p/${esc(next.id)}" title="${esc(next.titulo)}">Siguiente</a>` : next ? `<span class="boton secundario siguiente-bloq" aria-disabled="true" title="Se desbloquea al marcar como leído este pasaje">${ICO_CANDADO}Siguiente</span>` : '<span></span>'}
-      </nav>${reglaHTML()}</div></article>
+      </nav>${reglaHTML()}</div><div class="pv-extra">
+      ${leerAqui ? `<p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.${ORIG.o && N.variantesDe(ORIG.o, vs.map(v => v.ref)).length ? ' «var.» señala una variante entre manuscritos.' : ''}</p>
+      ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}` : ''}
+      ${estado.original ? '' : manuscritoHTML(p)}
+      <section class="nuevo" aria-labelledby="t-nuevo"><h2 id="t-nuevo">Lo nuevo en este pasaje</h2>
+        ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section></div></article>
       <aside class="acompanante${estado.hoja ? ' abierta' : ''}" id="acompanante" aria-label="Acompañante de lectura">${acompHTML()}</aside></div>`;
   }
 
