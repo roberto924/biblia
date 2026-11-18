@@ -1,0 +1,104 @@
+{
+  "id": "laban",
+  "nombre": "Labán",
+  "personas": [
+    "Laban_1"
+  ],
+  "pasajes": [
+    "gn-50",
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "LABAN",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 24, de joven, cuando recibe al criado de Abraham. Vuelve en Gn 29–31, muchos años después y ya padre de Lea y Raquel: entonces hará falta otra hoja. Gn 24:30 dice que vino al criado al ver las joyas en las manos de su hermana; si lo movió la codicia o la hospitalidad es una lectura que el texto no decide: la hoja no le pone gesto codicioso.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre joven, de unos treinta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Es hermano de Rebeca, que es moza (Gn 24:16), y habla por la casa junto a su padre y su madre (Gn 24:50, 24:55): se le dibuja algo mayor que ella."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hermano de Rebeca; corre a la fuente al encuentro del criado",
+      "certeza": "texto",
+      "ref": "Gn 24:29",
+      "cita": "Rebeca tenía un hermano que se llamaba Labán, el cual corrió afuera al hombre, á la fuente"
+    },
+    {
+      "rasgo": "Va al criado después de ver las joyas en las manos de su hermana",
+      "certeza": "texto",
+      "ref": "Gn 24:30",
+      "cita": "como vió el pendiente y los brazaletes en las manos de su hermana"
+    },
+    {
+      "rasgo": "Lo invita a entrar con palabras de bendición",
+      "certeza": "texto",
+      "ref": "Gn 24:31",
+      "cita": "Ven, bendito de Jehová; ¿por qué estás fuera? yo he limpiado la casa, y el lugar para los camellos"
+    },
+    {
+      "rasgo": "Desata los camellos y les da paja y forraje",
+      "certeza": "texto",
+      "ref": "Gn 24:32",
+      "cita": "[Labán] desató los camellos; y dióles paja y forraje"
+    },
+    {
+      "rasgo": "Responde con Betuel que la cosa viene de Jehová",
+      "certeza": "texto",
+      "ref": "Gn 24:50",
+      "cita": "Labán y Bethuel respondieron y dijeron: De Jehová ha salido esto"
+    },
+    {
+      "rasgo": "Recibe cosas preciosas del criado",
+      "certeza": "texto",
+      "ref": "Gn 24:53",
+      "cita": "también dió cosas preciosas á su hermano y á su madre"
+    },
+    {
+      "rasgo": "Con su madre, pide que Rebeca se quede al menos diez días",
+      "certeza": "texto",
+      "ref": "Gn 24:55",
+      "cita": "Espere la moza con nosotros á lo menos diez días"
+    },
+    {
+      "rasgo": "Es arameo",
+      "certeza": "texto",
+      "ref": "Gn 25:20",
+      "cita": "hermana de Labán Arameo",
+      "nota": "Gn 25:20 es posterior a estos pasajes (gn-53): sirve para dirigir, no se cita en el video."
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros rápidos, pelo oscuro abundante y natural hasta la nuca y barba oscura corta, acabada en punta bajo el mentón; gesto despierto, expansivo y hospitalario",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El pelo y la barba en punta siguen a los hombres de Asia occidental del mural de Beni Hasan (A2). Lo despierto sale de que corre (Gn 24:29); lo hospitalario, de su invitación (Gn 24:31-32). Los ojos oscuros y las cejas se parecen a los de Rebeca: son hermanos.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta la rodilla, de dibujos en zigzag rojos y blancos, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón ancho de tela azul oscuro; sandalias de correas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los hombres del cortejo de Beni Hasan (A2) llevan faldellines o túnicas de franjas rojas y blancas sujetas sobre un hombro. El dibujo en zigzag (que en A2 se ve en un vestido de mujer), el cinturón azul y que vaya sin manto, por estar en su casa, son elección del ilustrador para distinguirlo de Lot y de los de la casa de Abraham.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre joven, voz sonora y abierta, español neutro. Gn 24:31 (al criado): efusivo y acogedor. Gn 24:50-51 (con Betuel): solemne, cede ante lo que ve como cosa de Jehová. Gn 24:55 (con su madre): pide tiempo, afectuoso. Gn 24:57 y 24:60: familiar. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a young townsman from western Asia of about thirty, with olive-brown skin, quick dark eyes, thick natural dark hair that reaches the nape of his neck and a short dark beard trimmed to a point below the chin. His head is bare, with nothing tied around it. His expression is lively, open and welcoming. He wears a knee-length wool tunic woven with red and white zigzag patterns in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, fastened over the left shoulder so that the right shoulder is bare, a broad dark blue cloth sash at the waist and leather sandals with straps. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre joven de ciudad de Asia occidental, de unos treinta años; piel morena oliva, ojos oscuros rápidos, pelo oscuro abundante y natural hasta la nuca y barba oscura corta, acabada en punta bajo el mentón. Cabeza descubierta, sin nada atado. Gesto vivo, abierto y acogedor. Túnica de lana hasta la rodilla con dibujos en zigzag rojos y blancos, al modo de los asiáticos de las tumbas egipcias del Reino Medio, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón ancho de tela azul oscuro y sandalias de correas. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him sneer, smirk or look greedy or sly. Do not give him bracelets, rings, earrings or any jewelry, and do not show gold. Do not make him old or grey-haired. Do not dress him in Egyptian white linen, a turban, a crown or armor. Do not paint a house, camels, a well or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; sin mueca ni aire codicioso o astuto; sin brazaletes, anillos, aretes ni joyas; sin oro a la vista; que no sea viejo ni canoso; sin lino blanco egipcio, turbante, corona ni armadura; sin casa, camellos, pozo ni otras personas; fondo liso."
+  }
+}

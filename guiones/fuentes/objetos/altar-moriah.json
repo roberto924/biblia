@@ -1,0 +1,78 @@
+{
+  "id": "altar-moriah",
+  "nombre": "El altar de Moriah",
+  "pasajes": [
+    "gn-45"
+  ],
+  "element": {
+    "nombre": "ALTAR_MORIAH",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego, donde el altar de Gn 22:9 entra en el escenario «moriah» y en el objeto lena-cuchillo (decisión pendiente n.º 35 de guiones/LEEME.md). Es otro altar que los de Siquem, Betel y Mamre (hoja altares-abraham): este lleva la leña compuesta encima. La hoja no muestra fuego ni a nadie sobre la leña: Isaac atado (Gn 22:9) y el holocausto del carnero (Gn 22:13) se resuelven en sus tomas sin nada gráfico (decisión pendiente n.º 34).",
+  "texto": [
+    {
+      "dato": "Dios le dice a Abraham que ofrezca a Isaac sobre uno de los montes que le dirá",
+      "certeza": "texto",
+      "ref": "Gn 22:2",
+      "cita": "ofrécelo allí en holocausto sobre uno de los montes que yo te diré"
+    },
+    {
+      "dato": "Abraham edifica el altar y compone la leña",
+      "certeza": "texto",
+      "ref": "Gn 22:9",
+      "cita": "edificó allí Abraham un altar, y compuso la leña"
+    },
+    {
+      "dato": "Pone a Isaac atado sobre la leña",
+      "certeza": "texto",
+      "ref": "Gn 22:9",
+      "cita": "púsole en el altar sobre la leña"
+    },
+    {
+      "dato": "Ofrece el carnero en holocausto en lugar de su hijo",
+      "certeza": "texto",
+      "ref": "Gn 22:13",
+      "cita": "ofrecióle en holocausto en lugar de su hijo"
+    },
+    {
+      "dato": "Abraham llama al lugar «Jehová proveerá»",
+      "certeza": "texto",
+      "ref": "Gn 22:14",
+      "cita": "llamó Abraham el nombre de aquel lugar, Jehová proveerá"
+    },
+    {
+      "dato": "El carnero se ofrece en este mismo altar",
+      "certeza": "inferido",
+      "nota": "Gn 22:13 no nombra el altar: dice que lo ofreció en holocausto en lugar de su hijo, al que había puesto en el altar sobre la leña (Gn 22:9).",
+      "base": [
+        {
+          "ref": "Gn 22:9",
+          "cita": "púsole en el altar sobre la leña"
+        },
+        {
+          "ref": "Gn 22:13",
+          "cita": "en lugar de su hijo"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Altar bajo, alto hasta la cintura de un hombre, de piedras de campo pardas y ocres, sin labrar, apiladas en seco; encima, la leña compuesta en capas cruzadas, sin encender; roca y tierra seca del monte alrededor",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «edificó» y «compuso la leña», nada más. Piedras de campo sin labrar, como en las otras hojas de altar; la regla de no labrarlas (Ex 20:25) es muy posterior: sirve para dirigir, no se cita en el video. El tono pardo y ocre lo distingue de los altares claros de Abram (altares-abraham). Sin gradas, cuernos ni metal.",
+      "base": [
+        {
+          "ref": "Ex 20:25",
+          "cita": "si me hicieres altar de piedras, no las labres de cantería"
+        }
+      ]
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same altar twice: on the left a front view, and on the right a three-quarter view from slightly above. It is a low, roughly rectangular altar about as high as a man's waist, built of rough, uncut brown and ochre field stones of different sizes stacked without mortar. On its flat top lies a neat pile of split firewood laid in crossing layers, unlit. It stands on a patch of bare rock and dry, stony hilltop earth.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo altar dos veces: a la izquierda, de frente; a la derecha, en tres cuartos, algo desde arriba. Altar bajo, más o menos rectangular, alto hasta la cintura de un hombre, hecho de piedras de campo pardas y ocres, sin labrar, de distintos tamaños, apiladas sin argamasa. Sobre la parte de arriba, llana, una pila ordenada de leña partida en capas cruzadas, sin encender. Sobre un trozo de roca desnuda y tierra seca y pedregosa de lo alto de un monte.",
+    "negativo_en": "Do not carve or square the stones, and do not add steps, horns at the corners, metal, inscriptions or decoration. Do not paint fire, smoke, ashes, blood, ropes, a knife, an animal or any person lying on or standing near the altar. Do not paint trees, a city or a wide landscape, and keep the background plain.",
+    "negativo_es": "Piedras sin labrar ni escuadrar; sin gradas, cuernos en las esquinas, metal, inscripciones ni adornos; sin fuego, humo, ceniza, sangre, cuerdas, cuchillo, animales ni personas tendidas sobre el altar o junto a él; sin árboles, ciudad ni paisaje amplio; fondo liso."
+  }
+}

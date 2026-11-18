@@ -1,0 +1,134 @@
+{
+  "id": "isaac-adulto",
+  "nombre": "Isaac adulto (Gn 24–25)",
+  "personas": [
+    "Isaac_1"
+  ],
+  "pasajes": [
+    "gn-51",
+    "gn-52"
+  ],
+  "element": {
+    "nombre": "ISAAC_ADULTO",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 24:62-67, cuando toma a Rebeca por mujer a los cuarenta años. Es el mismo Isaac de la hoja isaac-muchacho (Gn 22): misma cara, ya hombre. En gn-52 (Gn 25:9) entierra a su padre con unos setenta y cinco años (cálculo): en esas tomas se le añaden canas en el pelo y en la barba; si no basta, se hará otra hoja. No habla en estos pasajes, así que esta ficha no lleva voz; la voz de Isaac_1 está en isaac-muchacho (decisión pendiente n.º 32 de guiones/LEEME.md).",
+  "edades": [
+    {
+      "dato": "Cuarenta años cuando toma a Rebeca por mujer",
+      "certeza": "texto",
+      "ref": "Gn 25:20",
+      "cita": "era Isaac de cuarenta años cuando tomó por mujer á Rebeca",
+      "nota": "Gn 25:20 es posterior a estos pasajes (gn-53): sirve para dirigir, no se cita en el video de gn-51."
+    },
+    {
+      "dato": "Unos setenta y cinco años cuando muere Abraham",
+      "certeza": "calculo",
+      "valor": 75,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 75,
+        "pasos": [
+          {
+            "texto": "Años que vivió Abraham",
+            "valor": 175,
+            "ref": "Gn 25:7",
+            "cita": "Y estos fueron los días de vida que vivió Abraham: ciento setenta y cinco años"
+          },
+          {
+            "texto": "Edad de Abraham al nacer Isaac",
+            "valor": 100,
+            "ref": "Gn 21:5",
+            "cita": "era Abraham de cien años, cuando le nació Isaac su hijo"
+          }
+        ],
+        "supuestos": [
+          "Isaac entierra a su padre poco después de su muerte (Gn 25:8-9 lo cuenta seguido)",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un hombre de unos cuarenta años, en plena fuerza",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: sigue la edad que da el texto (Gn 25:20). El texto no dice qué aspecto tenía alguien de esa edad en una familia que vivía tanto (Isaac llega a los ciento ochenta, Gn 35:28): se le dibuja adulto, ni joven ni viejo."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Vive en la tierra del Mediodía y viene del pozo del Viviente que me ve",
+      "certeza": "texto",
+      "ref": "Gn 24:62",
+      "cita": "venía Isaac del pozo del Viviente que me ve; porque él habitaba en la tierra del Mediodía"
+    },
+    {
+      "rasgo": "Sale al campo a orar al atardecer y ve venir los camellos",
+      "certeza": "texto",
+      "ref": "Gn 24:63",
+      "cita": "había salido Isaac á orar al campo, á la hora de la tarde; y alzando sus ojos miró, y he aquí los camellos que venían"
+    },
+    {
+      "rasgo": "El criado le cuenta todo lo que ha hecho",
+      "certeza": "texto",
+      "ref": "Gn 24:66",
+      "cita": "el criado contó á Isaac todo lo que había hecho"
+    },
+    {
+      "rasgo": "Lleva a Rebeca a la tienda de su madre, la toma por mujer y la ama",
+      "certeza": "texto",
+      "ref": "Gn 24:67",
+      "cita": "introdújola Isaac á la tienda de su madre Sara, y tomó á Rebeca por mujer; y amóla"
+    },
+    {
+      "rasgo": "Se consuela de la muerte de su madre",
+      "certeza": "texto",
+      "ref": "Gn 24:67",
+      "cita": "consolóse Isaac después de la muerte de su madre"
+    },
+    {
+      "rasgo": "Abraham le da todo lo que tiene",
+      "certeza": "texto",
+      "ref": "Gn 25:5",
+      "cita": "Abraham dió todo cuanto tenía á Isaac"
+    },
+    {
+      "rasgo": "Entierra a su padre con Ismael en la cueva de Macpela",
+      "certeza": "texto",
+      "ref": "Gn 25:9",
+      "cita": "sepultáronlo Isaac é Ismael sus hijos en la cueva de Macpela"
+    },
+    {
+      "rasgo": "Dios lo bendice y vive junto al pozo del Viviente que me ve",
+      "certeza": "texto",
+      "ref": "Gn 25:11",
+      "cita": "Dios bendijo á Isaac su hijo: y habitó Isaac junto al pozo del Viviente que me ve"
+    },
+    {
+      "rasgo": "Piel morena oliva, los mismos ojos oscuros y la misma cara que de muchacho, pelo oscuro abundante y natural hasta la nuca y barba oscura cerrada, acabada en punta bajo el mentón; rostro sereno, recogido y algo melancólico",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El pelo y la barba en punta siguen a los hombres de Asia occidental del mural de Beni Hasan (A2), como su padre. Lo recogido sale de que ora en el campo (Gn 24:63); lo melancólico, de que se consuela de la muerte de su madre (Gn 24:67).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana color crema hasta debajo de la rodilla, con franjas estrechas rojas y azul oscuro, que le cubre los dos hombros; manto liso azul grisáceo; cinturón de cuerda; sandalias de correas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, como la ropa de Abram (decisión pendiente n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Repite los colores de su túnica de muchacho para que se le reconozca; el manto azul grisáceo es elección del ilustrador para distinguirlo de su padre, que lleva manto pardo. Las túnicas de franjas siguen el mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a herdsman from western Asia of about forty, in his full strength, with olive-brown skin, dark eyes, thick natural dark hair that reaches the nape of his neck and a full dark beard trimmed to a clear point below the chin. His head is bare, with nothing tied around it. His face is calm, thoughtful and a little sad. He wears a tunic of cream wool that reaches below his knees, woven with narrow red and dark blue stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs and covering both shoulders, a plain blue-grey wool cloak over his shoulders, a cord belt and leather sandals with straps. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Pastor de Asia occidental de unos cuarenta años, en plena fuerza; piel morena oliva, ojos oscuros, pelo oscuro abundante y natural hasta la nuca y barba oscura cerrada, acabada en punta bajo el mentón. Cabeza descubierta, sin nada atado. Rostro sereno, recogido y algo triste. Túnica de lana color crema hasta debajo de la rodilla con franjas estrechas rojas y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio, que le cubre los dos hombros; manto liso de lana azul grisáceo sobre los hombros, cinturón de cuerda y sandalias de correas. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him old or grey-haired, and do not make him look like a youth. Do not give him a staff, a weapon, bracelets, rings or any jewelry. Do not dress him in Egyptian white linen, a turban or a crown. Do not paint tents, camels, a well or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no sea viejo ni canoso, ni parezca un muchacho; sin cayado, armas, brazaletes, anillos ni joyas; sin lino blanco egipcio, turbante ni corona; sin tiendas, camellos, pozo ni otras personas; fondo liso."
+  }
+}

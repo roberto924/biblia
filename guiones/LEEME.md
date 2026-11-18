@@ -268,6 +268,33 @@ registro esté completo; y propone cambios en las fuentes JSON.
     ningún perfil: puertas, gritos y sombras en la noche; ciudades ardiendo a lo lejos, sin cuerpos; la estatua sin
     rostro de espanto y sin transformación paso a paso (`objetos/estatua-sal`); en la cueva, solo el vino y Lot
     dormido, con fundido. La narración se lee entera en los dos perfiles salvo que el usuario decida otra cosa.
+26. **Voz del criado de Abraham** (Gn 24): no es persona de `datos/biblia.js` (el texto no lo nombra) y habla en buena
+    parte de gn-48 a gn-51. Opciones: añadirlo a `datos/biblia.js` como persona sin nombre (como la mujer de Lot),
+    admitir en `guiones.py` una voz que no es persona (como la n.º 13 y la n.º 20) o que lo lea el narrador. Lo mismo,
+    en menor medida, para la madre de Rebeca (Gn 24:55, a la vez que Labán). No se le llama Eliezer: Gn 24 no lo
+    nombra y no dice que sea el mayordomo de Gn 15:2.
+27. **Una persona con varias hojas por edad**: `guiones.py` admite una sola ficha con «voz» por persona y exige que
+    esa ficha esté en la toma donde habla. Isaac tiene dos hojas: `isaac-muchacho` (Gn 22, con la voz) e
+    `isaac-adulto` (Gn 24–25, sin voz porque ahí no habla). Cuando hable de adulto (Gn 26–27), o cuando Abraham
+    anciano hable con una hoja distinta de `abram`, choca con la regla. Opciones: llevar la voz a la persona y no a la
+    ficha, admitir la misma voz en varias fichas de una persona, o una ficha por persona con varias hojas por edad.
+28. **Edad visual de Isaac en Gn 22**: propuesta por defecto, un muchacho de unos dieciséis años, nunca un niño
+    pequeño. El texto lo llama «muchacho» (Gn 22:5, 22:12) y le hace cargar la leña (Gn 22:6); por cálculo tiene como
+    mucho unos treinta y siete años (Gn 23:1 y 17:17). Su edad no consta.
+29. **Isaac atado, el cuchillo y el holocausto del carnero (Gn 22:9-13)**: propuesta por defecto, como la n.º 19,
+    nada gráfico en ningún perfil. Las hojas muestran a Isaac de pie y libre, el cuchillo limpio junto a su funda, el
+    carnero vivo en el zarzal y el altar con la leña sin encender; en el perfil niño, la mano con el cuchillo queda
+    fuera de cuadro. La narración no cambia.
+30. **Objetos con hoja que no están en el catálogo de juego** (como la n.º 16): el altar de Moriah
+    (`objetos/altar-moriah`; el catálogo lo deja dentro del escenario «moriah» y de `lena-cuchillo`), el cántaro de
+    Rebeca (`objetos/cantaro-rebeca`) y los camellos del criado (`objetos/camellos-siervo`).
+31. **Ropa de la familia de Nacor y de los hijos de Het**: supuesto por defecto, la gente de Asia occidental de Beni
+    Hasan (A2) de la n.º 17, para Betuel, Labán, Rebeca y su madre (ciudad de Nacor, en Mesopotamia, Gn 24:10) y para
+    Efrón y los hijos de Het (Hebrón, Gn 23:2). No hay referencia comprobada propia de ninguno de los dos lugares. El
+    dueño de tierras (Efrón) y el cabeza de casa (Betuel) llevan tejidos más ricos, sin corona.
+32. **Los hijos de Het y la persona Heth_1**: la hoja de grupo `hijos-het` usa la persona Heth_1 (Het, hijo de
+    Canaán, Gn 10:15), como el catálogo de juego, para que el grupo pueda hablar en Gn 23:5-6. Confirmarlo, o pasar a
+    una voz que no es persona (n.º 13, 20 y 26) o al narrador.
 
 ## Pendiente del proyecto (fuera de los guiones)
 

@@ -1,0 +1,155 @@
+{
+  "id": "siervo-abraham",
+  "nombre": "El criado de Abraham (Gn 24)",
+  "personas": [],
+  "sin_persona": "El texto no lo nombra en Gn 24: es «un criado suyo, el [más] viejo de su casa» (Gn 24:2), y no es persona en datos/biblia.js. Habla mucho (Gn 24:5, 24:12-14, 24:17, 24:23, 24:27, 24:33-49, 24:54, 24:56, 24:65): para darle voz propia hace falta una de las salidas de la decisión pendiente n.º 31 de guiones/LEEME.md.",
+  "pasajes": [
+    "gn-48",
+    "gn-49",
+    "gn-50",
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "SIERVO_ABRAHAM",
+    "tipo": "personaje"
+  },
+  "nota": "Protagonista de Gn 24. Gn 15:2 nombra a un mayordomo de Abram, «ese Damasceno Eliezer», y Gn 24:2 a un criado que gobernaba en todo lo que tenía Abraham; el texto no dice que sean el mismo hombre. Identificarlos es una lectura, no un dato: la ficha no le pone nombre y ningún rótulo lo llama Eliezer. Viaja con otros hombres (Gn 24:32, 24:54, 24:59) que el texto no cuenta ni describe: no tienen hoja. Cuando reza o habla en su corazón (Gn 24:12-14, 24:45) se le ve con los labios quietos o moviéndose en silencio, como decida el guion.",
+  "edades": [
+    {
+      "dato": "Es el criado más viejo de la casa de Abraham",
+      "certeza": "texto",
+      "ref": "Gn 24:2",
+      "cita": "el [más] viejo de su casa"
+    },
+    {
+      "dato": "Edad visual: un hombre mayor, de pelo y barba grises, aún vigoroso",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que es el más viejo de la casa (Gn 24:2), no cuántos años tiene. Hace un viaje largo hasta Mesopotamia y vuelve (Gn 24:10, 24:61): se le dibuja mayor pero no frágil, y más joven que Abraham, que en este pasaje es «viejo, y bien entrado en días» (Gn 24:1), para que no se confundan."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Gobierna todo lo que tiene Abraham",
+      "certeza": "texto",
+      "ref": "Gn 24:2",
+      "cita": "que era el que gobernaba en todo lo que tenía"
+    },
+    {
+      "rasgo": "Jura poniendo la mano debajo del muslo de Abraham",
+      "certeza": "texto",
+      "ref": "Gn 24:9",
+      "cita": "puso su mano debajo del muslo de Abraham su señor, y juróle sobre este negocio"
+    },
+    {
+      "rasgo": "Toma diez camellos y tiene a su disposición los bienes de su señor",
+      "certeza": "texto",
+      "ref": "Gn 24:10",
+      "cita": "tomó diez camellos de los camellos de su señor, y fuése, pues tenía á su disposición todos los bienes de su señor"
+    },
+    {
+      "rasgo": "Llega a la ciudad de Nacor, en Mesopotamia",
+      "certeza": "texto",
+      "ref": "Gn 24:10",
+      "cita": "llegó á Mesopotamia, á la ciudad de Nachôr"
+    },
+    {
+      "rasgo": "Pide a Jehová un buen encuentro",
+      "certeza": "texto",
+      "ref": "Gn 24:12",
+      "cita": "Jehová, Dios de mi señor Abraham, dame, te ruego, el tener hoy buen encuentro"
+    },
+    {
+      "rasgo": "Corre hacia Rebeca para pedirle agua",
+      "certeza": "texto",
+      "ref": "Gn 24:17",
+      "cita": "el criado corrió hacia ella"
+    },
+    {
+      "rasgo": "La mira maravillado y en silencio",
+      "certeza": "texto",
+      "ref": "Gn 24:21",
+      "cita": "el hombre estaba maravillado de ella, callando"
+    },
+    {
+      "rasgo": "Se inclina y adora a Jehová",
+      "certeza": "texto",
+      "ref": "Gn 24:26",
+      "cita": "El hombre entonces se inclinó, y adoró á Jehová"
+    },
+    {
+      "rasgo": "No come hasta haber dicho su mensaje",
+      "certeza": "texto",
+      "ref": "Gn 24:33",
+      "cita": "No comeré hasta que haya dicho mi mensaje"
+    },
+    {
+      "rasgo": "Se presenta como criado de Abraham",
+      "certeza": "texto",
+      "ref": "Gn 24:34",
+      "cita": "Yo soy criado de Abraham"
+    },
+    {
+      "rasgo": "Se inclina a tierra al oír la respuesta",
+      "certeza": "texto",
+      "ref": "Gn 24:52",
+      "cita": "inclinóse á tierra á Jehová"
+    },
+    {
+      "rasgo": "Tiene prisa por volver",
+      "certeza": "texto",
+      "ref": "Gn 24:56",
+      "cita": "No me detengáis"
+    },
+    {
+      "rasgo": "Le dice a Rebeca quién es Isaac",
+      "certeza": "texto",
+      "ref": "Gn 24:65",
+      "cita": "Este es mi señor"
+    },
+    {
+      "rasgo": "El texto de Gn 24 no lo llama Eliezer",
+      "certeza": "inferido",
+      "nota": "Gn 24 lo llama siempre «criado», «siervo» u «hombre». El mayordomo de Gn 15:2 se llama Eliezer, pero el texto no dice que sea el mismo: no se le pone nombre.",
+      "base": [
+        {
+          "ref": "Gn 15:2",
+          "cita": "el mayordomo de mi casa es ese Damasceno Eliezer"
+        },
+        {
+          "ref": "Gn 24:2",
+          "cita": "Y dijo Abraham á un criado suyo"
+        }
+      ]
+    },
+    {
+      "rasgo": "Piel morena oliva curtida, ojos oscuros atentos, pelo gris corto hasta la nuca y barba gris cuidada y en punta; rostro grave, prudente y leal, con arrugas de sol junto a los ojos",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El pelo y la barba en punta siguen a los hombres de Asia occidental del mural de Beni Hasan (A2). Lo prudente sale de que pide una señal antes de hablar (Gn 24:14) y calla para saber si Jehová ha prosperado su viaje (Gn 24:21); lo leal, de su juramento (Gn 24:9) y de su prisa por volver (Gn 24:56).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta media pierna, color arena, con franjas anchas ocres y rojo oscuro, que le cubre los dos hombros; manto de viaje liso gris pardo; cinturón de cuero con una bolsa de cuero cerrada; sandalias de correas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, como la ropa de Abram (decisión pendiente n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Las túnicas de franjas siguen el mural de Beni Hasan (A2). Los colores son elección del ilustrador para distinguirlo de Abraham y de Isaac; la bolsa, de que lleva los regalos que da a Rebeca y a su familia (Gn 24:22, 24:53), aunque el texto no dice dónde los llevaba.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre mayor, voz grave, mesurada y cálida, español neutro. Gn 24:5 (a Abraham): prudente. Gn 24:12-14 (oración junto a la fuente): humilde y concreta. Gn 24:17 y 24:23 (a Rebeca): cortés. Gn 24:27: gratitud contenida. Gn 24:33-49 (el relato en casa de Labán): ordenado, sin prisa pero con urgencia por terminar. Gn 24:56: firme. Decisión pendiente del usuario (n.º 31 de guiones/LEEME.md): voz propia o leída por el narrador."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is the old, trusted steward of a herdsman chief from western Asia, a man of about sixty who is still vigorous, with weathered olive-brown skin, attentive dark eyes with sun lines at their corners, short grey hair that reaches the nape of his neck and a neat grey beard trimmed to a point. His head is bare, with nothing tied around it. His face is grave, careful and loyal. He wears a sand-colored wool tunic that reaches his mid-calf, woven with broad ochre and dark red stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs and covering both shoulders, a plain grey-brown travelling cloak, a leather belt with a small closed leather pouch hanging from it, and leather sandals with straps. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). El viejo criado de confianza de un jefe de pastores de Asia occidental, de unos sesenta años y aún vigoroso; piel morena oliva curtida, ojos oscuros atentos con arrugas de sol en las comisuras, pelo gris corto hasta la nuca y barba gris cuidada y en punta. Cabeza descubierta, sin nada atado. Rostro grave, prudente y leal. Túnica de lana color arena hasta media pierna con franjas anchas ocres y rojo oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio, que le cubre los dos hombros; manto de viaje liso gris pardo, cinturón de cuero con una bolsa de cuero pequeña y cerrada, y sandalias de correas. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him frail, bent or bald, and do not make him look as old as a white-haired patriarch. Do not give him a staff, a sword, bracelets, rings or any jewelry, and do not show gold or coins. Do not dress him in Egyptian white linen, a turban or a crown. Do not paint camels, a well, a jar or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no sea frágil, encorvado ni calvo, ni tan viejo como un patriarca de pelo blanco; sin cayado, espada, brazaletes, anillos ni joyas; sin oro ni monedas a la vista; sin lino blanco egipcio, turbante ni corona; sin camellos, pozo, cántaro ni otras personas; fondo liso."
+  }
+}

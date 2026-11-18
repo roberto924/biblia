@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `ABRAHAM` (personaje)
 - **Personas (datos/biblia.js)**: Abram_1
-- **Pasajes**: gn-34, gn-35, gn-36, gn-37, gn-39, gn-41, gn-42, gn-43, gn-44
+- **Pasajes**: gn-34, gn-35, gn-36, gn-37, gn-39, gn-41, gn-42, gn-43, gn-44, gn-45, gn-46, gn-47, gn-48, gn-52
 - **Nota**: Aspecto desde Gn 17, cuando se llama Abraham. Hoja nueva y no la de ABRAM porque han pasado trece años desde Gn 16 y el texto lo llama viejo (Gn 18:11-12), mientras que la hoja ABRAM, de los setenta y cinco a los ochenta y seis, muestra a un hombre canoso pero de unos sesenta; con Sara, que también cambia de hoja, la pareja envejece a la vez. Es el mismo hombre: mismo rostro, misma ropa y mismo cayado que ABRAM, solo mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de ABRAM). Sirve también para Gn 22–25. Su voz es la de abram.json (guiones.py admite una sola voz por persona); tonos en estos pasajes: Gn 17:17-18, asombro y ruego; Gn 18:3-6, hospitalario y con prisa; Gn 18:23-32, humilde pero insistente; Gn 20:11-13, se explica sin altivez; Gn 21:24 y 21:30, firme. Jehová, que le habla en Gn 17 y en Gn 18:17-33, no tiene figura (decisión n.º 1 de guiones/LEEME.md); los tres varones de Gn 18 tienen su hoja (VARONES_MAMRE) y una decisión pendiente (n.º 21).
 
 ## Edad

@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `ISMAEL` (personaje)
 - **Personas (datos/biblia.js)**: Ishmael_1
-- **Pasajes**: gn-35, gn-43
+- **Pasajes**: gn-35, gn-43, gn-52
 - **Nota**: Aspecto de muchacho para Gn 17 (trece años) y Gn 21 (unos años más: el texto no dice cuántos). Una sola hoja para los dos pasajes: la diferencia es pequeña y se ajusta en cada toma. En Gn 16 es un recién nacido y no lleva hoja. No tiene palabras propias: Gn 21:17 dice que Dios oyó su voz, pero no lo que dijo; por eso la ficha no lleva voz y en la toma se le oye llorar o quejarse sin palabras. El arco llega cuando ya ha crecido (Gn 21:20): la hoja no lo lleva. «Se burlaba» (Gn 21:9) se lee tal cual; el texto no dice de quién ni cómo, y la hoja no le pone gesto de burla.
 
 ## Edad
