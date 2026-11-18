@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `PRESENTE_ESAU` (objeto (manadas))
 - **Pasajes**: gn-69, gn-71
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 68 de guiones/LEEME.md). Son cinco clases de ganado, cada manada aparte y con espacio entre una y otra (Gn 32:16): la hoja fija una muestra de cada manada, y las tomas la repiten para dar la cantidad. Los siervos que las llevan tienen hoja propia (personajes/siervos-jacob). En gn-71 son «estas cuadrillas» que Esaú ha encontrado (Gn 33:8) y que al final acepta (Gn 33:11). El texto no dice en cuántas manadas las reparte: cinco, una por clase, es elección del ilustrador.
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). Son cinco clases de ganado, cada manada aparte y con espacio entre una y otra (Gn 32:16): la hoja fija una muestra de cada manada, y las tomas la repiten para dar la cantidad. Los siervos que las llevan tienen hoja propia (personajes/siervos-jacob). En gn-71 son «estas cuadrillas» que Esaú ha encontrado (Gn 33:8) y que al final acepta (Gn 33:11). El texto no dice en cuántas manadas las reparte: cinco, una por clase, es elección del ilustrador.
 
 ## Lo que dice el texto
 

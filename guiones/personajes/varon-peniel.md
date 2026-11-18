@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `VARON_PENIEL` (personaje)
 - **Pasajes**: gn-70
-- **Nota**: Propuesta por defecto (decisión pendiente n.º 62 de guiones/LEEME.md): un hombre, sin alas, halo ni luz propia, como los varones de Mamre (n.º 21) y lo planteado para el ángel de Agar (n.º 18), y con el rostro siempre oculto: de espaldas, en perfil perdido o en la sombra de la noche. El texto lo llama «un varón» (Gn 32:24), pero Jacob dice que vio a Dios cara a cara (Gn 32:30), y la n.º 1 no da rostro a Dios: así no se decide por el lector quién es. La hoja lo muestra de espaldas, en perfil perdido y de lado con la cara vuelta. La lucha (Gn 32:24-25) se cuenta sin golpes ni heridas; el toque en el muslo, sin dolor exagerado. Se va antes de que salga el sol (Gn 32:26, 32:31): no se le ve con luz de día.
+- **Nota**: Propuesta por defecto (decisión pendiente n.º 57 de guiones/LEEME.md): un hombre, sin alas, halo ni luz propia, como los varones de Mamre (n.º 21) y lo planteado para el ángel de Agar (n.º 18), y con el rostro siempre oculto: de espaldas, en perfil perdido o en la sombra de la noche. El texto lo llama «un varón» (Gn 32:24), pero Jacob dice que vio a Dios cara a cara (Gn 32:30), y la n.º 1 no da rostro a Dios: así no se decide por el lector quién es. La hoja lo muestra de espaldas, en perfil perdido y de lado con la cara vuelta. La lucha (Gn 32:24-25) se cuenta sin golpes ni heridas; el toque en el muslo, sin dolor exagerado. Se va antes de que salga el sol (Gn 32:26, 32:31): no se le ve con luz de día.
 
 ## Edad
 
@@ -21,7 +21,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Jacob llama al lugar Peniel porque dice haber visto a Dios cara a cara — Gn 32:30: «vi á Dios cara á cara, y fué librada mi alma»
 - **Inferido**: El texto no dice quién es: lo llama varón y deja que Jacob hable de Dios — El narrador solo dice «un varón» (Gn 32:24); quien habla de Dios es el propio varón (Gn 32:28) y luego Jacob (Gn 32:30). La hoja no lo marca ni como hombre corriente ni como Dios. — base: Gn 32:24 «luchó con él un varón» — base: Gn 32:28 «has peleado con Dios y con los hombres»
 - **Fuente externa**: Oseas 12:3-4 llama «ángel» a aquel con quien luchó Jacob — Es otra parte de la Biblia, muy posterior al relato; no cambia lo que dice Gn 32. — fuente: Oseas 12:3-4 (Reina-Valera 1909); el libro aún no está en datos/biblia.js. Sirve para dirigir; no se cita en el video de Génesis.
-- **Interpretación del ilustrador**: Hombre alto y fuerte de Asia occidental, de piel morena, pelo oscuro y abundante hasta la nuca, natural, y barba oscura corta; espalda ancha; nunca se le ve la cara — Interpretación del ilustrador: el texto no lo describe. El rostro oculto es la propuesta por defecto de la decisión pendiente n.º 62.
+- **Interpretación del ilustrador**: Hombre alto y fuerte de Asia occidental, de piel morena, pelo oscuro y abundante hasta la nuca, natural, y barba oscura corta; espalda ancha; nunca se le ve la cara — Interpretación del ilustrador: el texto no lo describe. El rostro oculto es la propuesta por defecto de la decisión pendiente n.º 57.
 
 ## Vestuario
 
@@ -29,7 +29,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Voz
 
-Voz de hombre adulta, grave, serena y firme, sin eco ni efecto, español neutro. Gn 32:26: urgente pero sin alzar la voz («Déjame, que raya el alba»). Gn 32:27: pregunta sencilla. Gn 32:28: solemne, sin énfasis teatral. Gn 32:29: pregunta sin enfado. Voz propia o leída por el narrador: decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md.
+Voz de hombre adulta, grave, serena y firme, sin eco ni efecto, español neutro. Gn 32:26: urgente pero sin alzar la voz («Déjame, que raya el alba»). Gn 32:27: pregunta sencilla. Gn 32:28: solemne, sin énfasis teatral. Gn 32:29: pregunta sin enfado. Voz propia o leída por el narrador: decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md.
 
 ## Hoja de referencia del Element
 

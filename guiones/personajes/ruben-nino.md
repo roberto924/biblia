@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `RUBEN_NINO` (personaje)
 - **Personas (datos/biblia.js)**: Reuben_1
 - **Pasajes**: gn-64
-- **Nota**: Aspecto para Gn 30:14, cuando halla las mandrágoras. En gn-63 (Gn 29:32) es un recién nacido y no lleva hoja, como Isaac en gn-42. De adulto está en la hoja de grupo HERMANOS (personajes/hermanos, gn-98); entre una y otra, la hoja de Rubén muchacho o adulto en Gn 35–37 la decide quien escriba esos pasajes. No tiene palabras, así que la ficha no lleva voz. Las mandrágoras tienen hoja propia (objetos/mandragoras). Sus hermanos pequeños no llevan hoja (decisión pendiente n.º 56 de guiones/LEEME.md).
+- **Nota**: Aspecto para Gn 30:14, cuando halla las mandrágoras. En gn-63 (Gn 29:32) es un recién nacido y no lleva hoja, como Isaac en gn-42. De adulto está en la hoja de grupo HERMANOS (personajes/hermanos, gn-98); entre una y otra, la hoja de Rubén muchacho o adulto en Gn 35–37 la decide quien escriba esos pasajes. No tiene palabras, así que la ficha no lleva voz. Las mandrágoras tienen hoja propia (objetos/mandragoras). Sus hermanos pequeños no llevan hoja (decisión pendiente n.º 55 de guiones/LEEME.md).
 
 ## Edad
 
@@ -23,7 +23,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnica corta de lana crema hasta la rodilla, con franjas estrechas verde oliva, sin mangas y que cubre los dos hombros; descalzo — Supuesto (decisión pendiente n.º 53 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de niños. Las franjas oliva repiten el color de su madre, Lea; ir descalzo es elección del ilustrador.
+- **Supuesto**: Túnica corta de lana crema hasta la rodilla, con franjas estrechas verde oliva, sin mangas y que cubre los dos hombros; descalzo — Supuesto (decisión pendiente n.º 52 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de niños. Las franjas oliva repiten el color de su madre, Lea; ir descalzo es elección del ilustrador.
 
 ## Hoja de referencia del Element
 

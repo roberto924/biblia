@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `CAMINO_EFRATA` (lugar)
 - **Pasajes**: gn-75
-- **Nota**: El id es el del catálogo de juego («Camino de Efrata (tumba de Raquel)»). La hoja muestra el camino antes de la muerte de Raquel, sin sepultura ni piedra: el título sobre la sepultura (Gn 35:20) tiene hoja propia (objetos/titulo-raquel) y entra desde su toma. El parto y la muerte de Raquel (Gn 35:16-19) sin nada gráfico en ningún perfil (decisión pendiente n.º 70 de guiones/LEEME.md). La hoja no fija la distancia: «como media legua» es la medida de la RV1909 y aquí no se convierte (datos/explicaciones.js no tiene «legua»). El pueblo del fondo es Efrata, que el texto identifica con Belén, sin rotular. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
+- **Nota**: El id es el del catálogo de juego («Camino de Efrata (tumba de Raquel)»). La hoja muestra el camino antes de la muerte de Raquel, sin sepultura ni piedra: el título sobre la sepultura (Gn 35:20) tiene hoja propia (objetos/titulo-raquel) y entra desde su toma. El parto y la muerte de Raquel (Gn 35:16-19) sin nada gráfico en ningún perfil (decisión pendiente n.º 65 de guiones/LEEME.md). La hoja no fija la distancia: «como media legua» es la medida de la RV1909 y aquí no se convierte (datos/explicaciones.js no tiene «legua»). El pueblo del fondo es Efrata, que el texto identifica con Belén, sin rotular. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
 
 ## Lo que dice el texto
 

@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `PARTERA_EFRATA` (personaje)
 - **Pasajes**: gn-75
-- **Nota**: El parto y la muerte de Raquel (Gn 35:16-19) en los perfiles: decisión pendiente n.º 70 de guiones/LEEME.md. Propuesta por defecto, nada gráfico en ningún perfil: rostros, manos y mantos junto al camino, sin sangre ni cuerpo expuesto; el niño se ve ya envuelto. El aspecto de Raquel es de la hoja de su redactor (Gn 29–31), no de esta. Benjamín recién nacido no lleva hoja. El texto no dice de dónde es la partera: viajan entre Betel y Efrata (Gn 35:16), así que se la dibuja de la casa de Jacob.
+- **Nota**: El parto y la muerte de Raquel (Gn 35:16-19) en los perfiles: decisión pendiente n.º 65 de guiones/LEEME.md. Propuesta por defecto, nada gráfico en ningún perfil: rostros, manos y mantos junto al camino, sin sangre ni cuerpo expuesto; el niño se ve ya envuelto. El aspecto de Raquel es de la hoja de su redactor (Gn 29–31), no de esta. Benjamín recién nacido no lleva hoja. El texto no dice de dónde es la partera: viajan entre Betel y Efrata (Gn 35:16), así que se la dibuja de la casa de Jacob.
 
 ## Edad
 
@@ -23,7 +23,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Voz
 
-Mujer madura, de unos cincuenta años, voz cálida, baja y firme, español neutro. Solo Gn 35:17: «No temas, que también tendrás este hijo», con calma, para dar ánimo, sin dramatizar. Decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md.
+Mujer madura, de unos cincuenta años, voz cálida, baja y firme, español neutro. Solo Gn 35:17: «No temas, que también tendrás este hijo», con calma, para dar ánimo, sin dramatizar. Decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md.
 
 ## Referencias de época
 

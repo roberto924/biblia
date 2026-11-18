@@ -2,7 +2,7 @@
   "id": "siervos-jacob",
   "nombre": "Los siervos de Jacob (mensajeros y pastores de las manadas)",
   "personas": [],
-  "sin_persona": "El texto no nombra a ninguno: son «mensajeros» (Gn 32:3) y «siervos» (Gn 32:16). No son personas de datos/biblia.js. Los mensajeros hablan (Gn 32:6): el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md).",
+  "sin_persona": "El texto no nombra a ninguno: son «mensajeros» (Gn 32:3) y «siervos» (Gn 32:16). No son personas de datos/biblia.js. Los mensajeros hablan (Gn 32:6): el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md).",
   "pasajes": [
     "gn-69"
   ],
@@ -62,7 +62,7 @@
     "A2"
   ],
   "voz": {
-    "descripcion": "Voz de hombre adulta, de mensajero que vuelve de prisa, español neutro, solo en Gn 32:6 (uno por todos o a coro: decide el guion): sencilla y con inquietud contenida al decir «y cuatrocientos hombres con él». Lo que Jacob les manda decir (Gn 32:17-20) lo dice Jacob, no ellos. Decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md."
+    "descripcion": "Voz de hombre adulta, de mensajero que vuelve de prisa, español neutro, solo en Gn 32:6 (uno por todos o a coro: decide el guion): sencilla y con inquietud contenida al decir «y cuatrocientos hombres con él». Lo que Jacob les manda decir (Gn 32:17-20) lo dice Jacob, no ellos. Decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md."
   },
   "hoja_referencia": {
     "prompt_en": "Make a group reference sheet on a plain light grey background, showing five men standing in a single row, each one fully visible from head to feet: herdsmen and servants of a herding family from western Asia, of clearly different ages from a youth of about eighteen with almost no beard to a man of about fifty-five with grey in his hair and beard. They have olive-brown skin, dark eyes and natural dark hair that reaches the nape of the neck, with short or pointed beards. Their heads are bare, with nothing tied around them. They wear knee-length wool tunics with simple stripes in cream, brown and faded red, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some fastened over one shoulder and some covering both shoulders, with cord belts and leather sandals. Each one holds a plain wooden shepherd's staff. Their expressions are attentive and obedient, and each man clearly differs from the others in face, height and build.",

@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `BILHA` (personaje)
 - **Personas (datos/biblia.js)**: Bilhah_1
 - **Pasajes**: gn-62, gn-63, gn-67
-- **Nota**: Aspecto para Gn 29–31. No tiene palabras, así que la ficha no lleva voz. Lo que pasa entre ella y Jacob (Gn 30:4) y los partos (Gn 30:3, «parirá sobre mis rodillas») no se muestran en ningún perfil (decisión pendiente n.º 55 de guiones/LEEME.md); Dan y Neftalí recién nacidos no llevan hoja. En gn-66 puede ir entre «sus mujeres» que suben a los camellos (Gn 31:17), porque Raquel se la da a Jacob «por mujer» (Gn 30:4): es una inferencia, y lo decide el guion. En Gn 31:33 tiene tienda con Zilpa. Comparte su color ocre con la ropa de su señora Raquel para que se lea de quién es sierva; su compañera Zilpa tiene hoja propia (ZILPA). La reutiliza el redactor de Gn 32–36 (Gn 32:22-23; 33:1-7; 35:22).
+- **Nota**: Aspecto para Gn 29–31. No tiene palabras, así que la ficha no lleva voz. Lo que pasa entre ella y Jacob (Gn 30:4) y los partos (Gn 30:3, «parirá sobre mis rodillas») no se muestran en ningún perfil (decisión pendiente n.º 54 de guiones/LEEME.md); Dan y Neftalí recién nacidos no llevan hoja. En gn-66 puede ir entre «sus mujeres» que suben a los camellos (Gn 31:17), porque Raquel se la da a Jacob «por mujer» (Gn 30:4): es una inferencia, y lo decide el guion. En Gn 31:33 tiene tienda con Zilpa. Comparte su color ocre con la ropa de su señora Raquel para que se lea de quién es sierva; su compañera Zilpa tiene hoja propia (ZILPA). La reutiliza el redactor de Gn 32–36 (Gn 32:22-23; 33:1-7; 35:22).
 
 ## Edad
 
@@ -23,7 +23,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Vestido largo y sencillo de lana color crema sin teñir, hasta media pierna y que cubre los dos hombros, con una sola franja ocre en el borde; descalza — Supuesto, decisión pendiente (n.º 53 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de siervas. El corte sigue a los vestidos de las mujeres de Beni Hasan (A2), más llano que el de su señora; la franja ocre (el color de Raquel) y que vaya descalza son elección del ilustrador para que se lea su condición de sierva. — referencias: A2
+- **Supuesto**: Vestido largo y sencillo de lana color crema sin teñir, hasta media pierna y que cubre los dos hombros, con una sola franja ocre en el borde; descalza — Supuesto, decisión pendiente (n.º 52 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de siervas. El corte sigue a los vestidos de las mujeres de Beni Hasan (A2), más llano que el de su señora; la franja ocre (el color de Raquel) y que vaya descalza son elección del ilustrador para que se lea su condición de sierva. — referencias: A2
 
 ## Referencias de época
 

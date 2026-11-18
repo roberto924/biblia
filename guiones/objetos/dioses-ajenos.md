@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `DIOSES_AJENOS` (objeto)
 - **Pasajes**: gn-74
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 68 de guiones/LEEME.md). El texto no describe ni los dioses ni los zarcillos, ni dice de quién eran: la hoja propone figurillas toscas sin rasgos de ninguna divinidad conocida y aretes lisos, sobre un paño (decisión pendiente n.º 72). El texto tampoco dice si entre ellos van los ídolos que Raquel hurtó a Labán (Gn 31:19, objeto idolos-laban del redactor de Gn 29–31): si su hoja existe, puede mezclarse una de esas figuras, pero no se presenta como dato. La RV1909 dice «encina» (Gn 35:4), no alcornoque. La encina es del escenario siquem.
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). El texto no describe ni los dioses ni los zarcillos, ni dice de quién eran: la hoja propone figurillas toscas sin rasgos de ninguna divinidad conocida y aretes lisos, sobre un paño (decisión pendiente n.º 67). El texto tampoco dice si entre ellos van los ídolos que Raquel hurtó a Labán (Gn 31:19, objeto idolos-laban del redactor de Gn 29–31): si su hoja existe, puede mezclarse una de esas figuras, pero no se presenta como dato. La RV1909 dice «encina» (Gn 35:4), no alcornoque. La encina es del escenario siquem.
 
 ## Lo que dice el texto
 
@@ -15,7 +15,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Rasgos
 
-- **Interpretación del ilustrador**: Un montón pequeño sobre un paño de lana sin teñir extendido en el suelo: seis o siete figurillas toscas de barro cocido y dos de bronce, del largo de una mano, de forma humana simple, sin rasgos de ninguna divinidad conocida; y una docena de zarcillos, aretes lisos de bronce, plata y oro — Interpretación del ilustrador (decisión pendiente n.º 72): el texto solo dice «dioses ajenos» y «zarzillos». Figurillas pequeñas porque se pueden llevar encima y esconder bajo un árbol (Gn 35:4); sin forma de dios egipcio, cananeo ni de ninguna religión concreta, para no fijar lo que el texto no dice. Los aretes de metales distintos porque vienen de muchas personas.
+- **Interpretación del ilustrador**: Un montón pequeño sobre un paño de lana sin teñir extendido en el suelo: seis o siete figurillas toscas de barro cocido y dos de bronce, del largo de una mano, de forma humana simple, sin rasgos de ninguna divinidad conocida; y una docena de zarcillos, aretes lisos de bronce, plata y oro — Interpretación del ilustrador (decisión pendiente n.º 67): el texto solo dice «dioses ajenos» y «zarzillos». Figurillas pequeñas porque se pueden llevar encima y esconder bajo un árbol (Gn 35:4); sin forma de dios egipcio, cananeo ni de ninguna religión concreta, para no fijar lo que el texto no dice. Los aretes de metales distintos porque vienen de muchas personas.
 
 ## Hoja de referencia del Element
 

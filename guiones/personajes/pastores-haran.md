@@ -17,11 +17,11 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnicas cortas de lana sin teñir, parda, crema y gris, hasta la rodilla y sujetas sobre un hombro, con una sola franja de color apagado; cinturones de cuerda; sandalias gastadas; cayados de madera lisos; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 53 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. El corte sigue a los hombres del cortejo de Beni Hasan (A2), más llano; los cayados y la lana sin teñir son elección del ilustrador, por su oficio. — referencias: A2
+- **Supuesto**: Túnicas cortas de lana sin teñir, parda, crema y gris, hasta la rodilla y sujetas sobre un hombro, con una sola franja de color apagado; cinturones de cuerda; sandalias gastadas; cayados de madera lisos; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. El corte sigue a los hombres del cortejo de Beni Hasan (A2), más llano; los cayados y la lana sin teñir son elección del ilustrador, por su oficio. — referencias: A2
 
 ## Voz
 
-Coro de voces de hombre, sencillas y algo secas, español neutro. Gn 29:4-6: respuestas breves al forastero. Gn 29:8: explican la costumbre del pozo, sin enfado. Decisión pendiente del usuario (n.º 54 de guiones/LEEME.md): voces propias o leídas por el narrador.
+Coro de voces de hombre, sencillas y algo secas, español neutro. Gn 29:4-6: respuestas breves al forastero. Gn 29:8: explican la costumbre del pozo, sin enfado. Decisión pendiente del usuario (n.º 53 de guiones/LEEME.md): voces propias o leídas por el narrador.
 
 ## Referencias de época
 

@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `SIMEON_LEVI` (personaje (pareja))
 - **Personas (datos/biblia.js)**: Simeon_1, Levi_1
 - **Pasajes**: gn-72, gn-73
-- **Nota**: Hoja propia y no la de los hermanos (personajes/hermanos, decisión pendiente n.º 66 de guiones/LEEME.md): aquella fija a los diez hermanos de Gn 42–45, de cuarenta a cuarenta y seis años, y en Gn 34 Simeón y Leví son mozos (cálculo abajo); además actúan solos, el texto los nombra (Gn 34:25, 34:30) y hablan (Gn 34:31), así que necesitan rostro propio. Al rehacer la hoja de los hermanos, conviene que dos de los diez tengan los rasgos de estos, más viejos. Los demás hijos de Jacob de Gn 34 (Gn 34:7, 34:13-17, 34:27) no tienen hoja de mozos: n.º 66. La voz de Simeón y Leví queda en esta ficha; cuando hablen en Gn 42 con la hoja de los hermanos chocará como la n.º 27. Las espadas (Gn 34:25) entran en su toma, no en la hoja; el ataque, la muerte de los varones y el saqueo (Gn 34:25-29) no se muestran de forma gráfica en ningún perfil (n.º 64).
+- **Nota**: Hoja propia y no la de los hermanos (personajes/hermanos, decisión pendiente n.º 61 de guiones/LEEME.md): aquella fija a los diez hermanos de Gn 42–45, de cuarenta a cuarenta y seis años, y en Gn 34 Simeón y Leví son mozos (cálculo abajo); además actúan solos, el texto los nombra (Gn 34:25, 34:30) y hablan (Gn 34:31), así que necesitan rostro propio. Al rehacer la hoja de los hermanos, conviene que dos de los diez tengan los rasgos de estos, más viejos. Los demás hijos de Jacob de Gn 34 (Gn 34:7, 34:13-17, 34:27) no tienen hoja de mozos: n.º 61. La voz de Simeón y Leví queda en esta ficha; cuando hablen en Gn 42 con la hoja de los hermanos chocará como la n.º 27. Las espadas (Gn 34:25) entran en su toma, no en la hoja; el ataque, la muerte de los varones y el saqueo (Gn 34:25-29) no se muestran de forma gráfica en ningún perfil (n.º 59).
 
 ## Edad
 
@@ -37,7 +37,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Voz
 
-Dos voces de hombre joven, de unos veinte años, duras y con ira contenida, español neutro. Solo Gn 34:31, la respuesta a su padre: a coro o uno por los dos (decide el guion), cortante, sin gritar. Lo que dicen «los hijos de Jacob» en Gn 34:14-17 puede ir en estas voces o en otra del grupo de hermanos: decisión pendiente n.º 66 de guiones/LEEME.md.
+Dos voces de hombre joven, de unos veinte años, duras y con ira contenida, español neutro. Solo Gn 34:31, la respuesta a su padre: a coro o uno por los dos (decide el guion), cortante, sin gritar. Lo que dicen «los hijos de Jacob» en Gn 34:14-17 puede ir en estas voces o en otra del grupo de hermanos: decisión pendiente n.º 61 de guiones/LEEME.md.
 
 ## Referencias de época
 

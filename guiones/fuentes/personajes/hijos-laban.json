@@ -2,7 +2,7 @@
   "id": "hijos-laban",
   "nombre": "Los hijos de Labán",
   "personas": [],
-  "sin_persona": "El texto no nombra a ninguno ni dice cuántos son: «sus hijos» (Gn 30:35), «los hijos de Labán» (Gn 31:1). No son personas de datos/biblia.js. Hablan a coro en Gn 31:1: el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 54 de guiones/LEEME.md).",
+  "sin_persona": "El texto no nombra a ninguno ni dice cuántos son: «sus hijos» (Gn 30:35), «los hijos de Labán» (Gn 31:1). No son personas de datos/biblia.js. Hablan a coro en Gn 31:1: el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 53 de guiones/LEEME.md).",
   "pasajes": [
     "gn-65",
     "gn-66"
@@ -35,7 +35,7 @@
     {
       "rasgo": "Túnicas de lana hasta la rodilla sujetas sobre un hombro, de dibujos en zigzag o franjas: una roja y blanca, una azul oscuro y blanca, una ocre y blanca; fajas de tela; sandalias de correas; cabezas descubiertas",
       "certeza": "supuesto",
-      "nota": "Supuesto de época (decisión pendiente n.º 53 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2) y a la túnica de su padre en la hoja LABAN; un color para cada uno es elección del ilustrador.",
+      "nota": "Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2) y a la túnica de su padre en la hoja LABAN; un color para cada uno es elección del ilustrador.",
       "referencias": [
         "A2"
       ]
@@ -45,7 +45,7 @@
     "A2"
   ],
   "voz": {
-    "descripcion": "Coro de voces de hombre joven, español neutro. Gn 31:1: murmuración resentida, a media voz, como algo que Jacob oye sin que se lo digan a la cara. Decisión pendiente del usuario (n.º 54 de guiones/LEEME.md): voces propias o leídas por el narrador."
+    "descripcion": "Coro de voces de hombre joven, español neutro. Gn 31:1: murmuración resentida, a media voz, como algo que Jacob oye sin que se lo digan a la cara. Decisión pendiente del usuario (n.º 53 de guiones/LEEME.md): voces propias o leídas por el narrador."
   },
   "hoja_referencia": {
     "prompt_en": "Make a group reference sheet on a plain light grey background, showing three young men standing side by side in a single row, each one fully visible from head to feet and clearly apart from the others. They are brothers from western Asia between about eighteen and twenty-five, with a clear family likeness: olive-brown skin, quick dark eyes, thick brows and thick natural dark hair reaching the nape of the neck. The eldest, on the left, has a short dark beard trimmed to a point; the middle one has a shorter pointed beard; the youngest, on the right, has barely any beard. Their heads are bare, with nothing tied around them. Their expressions are suspicious and resentful, but they are ordinary young men, not villains. They wear knee-length wool tunics fastened over one shoulder, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs: the eldest red and white zigzags, the middle one dark blue and white stripes, the youngest ochre and white zigzags, with cloth sashes and leather sandals with straps. Their hands are empty. Above the row, in a separate band of the sheet with clear empty space between, there is a close-up of each face in the same order; the close-ups never cover or overlap any head or body below.",

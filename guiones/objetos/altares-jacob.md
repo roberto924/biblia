@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `ALTARES_JACOB` (objeto)
 - **Pasajes**: gn-71, gn-74
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 68 de guiones/LEEME.md). Jacob levanta dos altares en estos pasajes: en el campo comprado delante de Siquem (Gn 33:20) y en Luz, que es Betel (Gn 35:6-7). El texto no describe ninguno: una sola hoja sirve para los dos, como la de Abram (altares-abraham). El texto no dice que Jacob use el altar que Abram hizo en Siquem (Gn 12:6-7). El título de piedra de Betel (Gn 35:14) no es este altar: ver objetos/piedra-betel del redactor de Gn 28 (n.º 67).
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). Jacob levanta dos altares en estos pasajes: en el campo comprado delante de Siquem (Gn 33:20) y en Luz, que es Betel (Gn 35:6-7). El texto no describe ninguno: una sola hoja sirve para los dos, como la de Abram (altares-abraham). El texto no dice que Jacob use el altar que Abram hizo en Siquem (Gn 12:6-7). El título de piedra de Betel (Gn 35:14) no es este altar: ver objetos/piedra-betel del redactor de Gn 28 (n.º 62).
 
 ## Lo que dice el texto
 

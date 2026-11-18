@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `SIQUEM_HIJO_HAMOR` (personaje)
 - **Personas (datos/biblia.js)**: Shechem_1
 - **Pasajes**: gn-72, gn-73
-- **Nota**: El id evita confundirlo con el escenario «siquem» (la ciudad); el texto no dice si la ciudad lleva su nombre por él. Gn 34 en los perfiles (decisión pendiente n.º 64 de guiones/LEEME.md): lo de Gn 34:2 no se muestra, y su muerte (Gn 34:26) tampoco, sin cuerpos ni sangre en ningún perfil. No se le dibuja como villano de rasgos marcados: el texto juzga lo que hace (Gn 34:7), y lo describe también enamorado y honrado en la casa de su padre (Gn 34:3, 34:19). Jacob compra el campo «de mano de los hijos de Hamor» (Gn 33:19): si el guion de gn-71 los muestra, Siquem puede ser uno de ellos, pero el texto no lo dice.
+- **Nota**: El id evita confundirlo con el escenario «siquem» (la ciudad); el texto no dice si la ciudad lleva su nombre por él. Gn 34 en los perfiles (decisión pendiente n.º 59 de guiones/LEEME.md): lo de Gn 34:2 no se muestra, y su muerte (Gn 34:26) tampoco, sin cuerpos ni sangre en ningún perfil. No se le dibuja como villano de rasgos marcados: el texto juzga lo que hace (Gn 34:7), y lo describe también enamorado y honrado en la casa de su padre (Gn 34:3, 34:19). Jacob compra el campo «de mano de los hijos de Hamor» (Gn 33:19): si el guion de gn-71 los muestra, Siquem puede ser uno de ellos, pero el texto no lo dice.
 
 ## Edad
 

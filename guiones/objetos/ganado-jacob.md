@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `GANADO_JACOB` (objeto)
 - **Pasajes**: gn-65, gn-66
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 57 de guiones/LEEME.md). Es el salario de Jacob (Gn 30:32) y se distingue del de Labán por el color: la hoja fija los tipos de res y las tomas los repiten en número. El ganado de Labán es el resto, ovejas blancas y cabras de un solo color (inferido, abajo): no lleva hoja. El sueño de Gn 31:10-12, con «el ángel de Dios», se cuenta por boca de Jacob; el ángel no tiene figura (decisiones n.º 1 y n.º 18). Los camellos y asnos de Gn 30:43 no tienen hoja. Ni el celo ni la monta (Gn 30:38-41, 31:10) se muestran.
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 56 de guiones/LEEME.md). Es el salario de Jacob (Gn 30:32) y se distingue del de Labán por el color: la hoja fija los tipos de res y las tomas los repiten en número. El ganado de Labán es el resto, ovejas blancas y cabras de un solo color (inferido, abajo): no lleva hoja. El sueño de Gn 31:10-12, con «el ángel de Dios», se cuenta por boca de Jacob; el ángel no tiene figura (decisiones n.º 1 y n.º 18). Los camellos y asnos de Gn 30:43 no tienen hoja. Ni el celo ni la monta (Gn 30:38-41, 31:10) se muestran.
 
 ## Lo que dice el texto
 

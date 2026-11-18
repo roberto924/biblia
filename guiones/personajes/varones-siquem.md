@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `VARONES_SIQUEM` (personaje (grupo))
 - **Pasajes**: gn-73
-- **Nota**: Grupo anónimo de cinco hombres para la reunión en la puerta (Gn 34:20-24; escenario puerta-siquem). La circuncisión (Gn 34:24) no se muestra en ningún perfil, como la n.º 24 de guiones/LEEME.md, y tampoco su dolor ni su muerte (Gn 34:25): decisión pendiente n.º 64 (puertas, gritos, ganado sacado de la ciudad; sin cuerpos ni sangre). Las mujeres y los niños que se llevan cautivos (Gn 34:29) no tienen hoja. Hamor y su hijo tienen hojas propias (hamor, principe-siquem).
+- **Nota**: Grupo anónimo de cinco hombres para la reunión en la puerta (Gn 34:20-24; escenario puerta-siquem). La circuncisión (Gn 34:24) no se muestra en ningún perfil, como la n.º 24 de guiones/LEEME.md, y tampoco su dolor ni su muerte (Gn 34:25): decisión pendiente n.º 59 (puertas, gritos, ganado sacado de la ciudad; sin cuerpos ni sangre). Las mujeres y los niños que se llevan cautivos (Gn 34:29) no tienen hoja. Hamor y su hijo tienen hojas propias (hamor, principe-siquem).
 
 ## Rasgos
 

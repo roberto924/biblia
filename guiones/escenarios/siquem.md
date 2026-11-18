@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `SIQUEM` (lugar)
 - **Pasajes**: gn-71, gn-72, gn-73, gn-74
-- **Nota**: El id es el del catálogo de juego. Vista desde el campo que Jacob compra delante de la ciudad (Gn 33:18-19), con sus tiendas, la ciudad amurallada detrás y una encina grande al borde del campo, la de Gn 35:4. El altar (Gn 33:20) es de objetos/altares-jacob y no se pinta aquí; la puerta, de escenarios/puerta-siquem. Abram ya pasó por «el lugar de Sichêm» (Gn 12:6-7) sin que el texto hable de ciudad. Lo que pasa en la ciudad en Gn 34:25-29 no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 64 de guiones/LEEME.md): esta hoja no tiene fuego, ruinas ni cuerpos. El supuesto de ciudad de adobe (n.º 34) se ajusta aquí con una Fuente externa: muralla de grandes piedras y montes a los dos lados. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
+- **Nota**: El id es el del catálogo de juego. Vista desde el campo que Jacob compra delante de la ciudad (Gn 33:18-19), con sus tiendas, la ciudad amurallada detrás y una encina grande al borde del campo, la de Gn 35:4. El altar (Gn 33:20) es de objetos/altares-jacob y no se pinta aquí; la puerta, de escenarios/puerta-siquem. Abram ya pasó por «el lugar de Sichêm» (Gn 12:6-7) sin que el texto hable de ciudad. Lo que pasa en la ciudad en Gn 34:25-29 no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 59 de guiones/LEEME.md): esta hoja no tiene fuego, ruinas ni cuerpos. El supuesto de ciudad de adobe (n.º 34) se ajusta aquí con una Fuente externa: muralla de grandes piedras y montes a los dos lados. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
 
 ## Lo que dice el texto
 

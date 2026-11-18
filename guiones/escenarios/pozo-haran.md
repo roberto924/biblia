@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `POZO_HARAN` (lugar)
 - **Pasajes**: gn-61
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 57 de guiones/LEEME.md); el catálogo pone Gn 29–31 en el escenario «padan-aram», que es toda la región. No es el pozo de Gn 24 (escenario pozo-nacor): aquel estaba «fuera de la ciudad», se bajaba a la fuente y tenía una pila; este está «en el campo» y tiene una gran piedra sobre la boca, y el texto no dice que sean el mismo. La piedra es parte de la hoja: se dibuja cubriendo la boca, y la toma de Gn 29:10 la muestra apartada. Los rebaños y los pastores (personajes/pastores-haran) entran en sus tomas. Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 56 de guiones/LEEME.md); el catálogo pone Gn 29–31 en el escenario «padan-aram», que es toda la región. No es el pozo de Gn 24 (escenario pozo-nacor): aquel estaba «fuera de la ciudad», se bajaba a la fuente y tenía una pila; este está «en el campo» y tiene una gran piedra sobre la boca, y el texto no dice que sean el mismo. La piedra es parte de la hoja: se dibuja cubriendo la boca, y la toma de Gn 29:10 la muestra apartada. Los rebaños y los pastores (personajes/pastores-haran) entran en sus tomas. Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
 
 ## Lo que dice el texto
 

@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `DINA` (personaje)
 - **Personas (datos/biblia.js)**: Dinah_1
 - **Pasajes**: gn-72, gn-73
-- **Nota**: No habla en todo el relato. Gn 34 en los perfiles (decisión pendiente n.º 64 de guiones/LEEME.md): propuesta por defecto, nada gráfico en ningún perfil. Lo de Gn 34:2 no se muestra: se la ve salir a ver a las hijas del país (Gn 34:1) y, al final, sus hermanos la sacan de la casa de Siquem (Gn 34:26), vestida y sin heridas; la narración se lee entera. Nunca se la dibuja niña. Gn 33 no la nombra: si va entre «los niños» de Lea (Gn 33:1-7), eso es de la hoja de los hijos pequeños de Jacob, no de esta.
+- **Nota**: No habla en todo el relato. Gn 34 en los perfiles (decisión pendiente n.º 59 de guiones/LEEME.md): propuesta por defecto, nada gráfico en ningún perfil. Lo de Gn 34:2 no se muestra: se la ve salir a ver a las hijas del país (Gn 34:1) y, al final, sus hermanos la sacan de la casa de Siquem (Gn 34:26), vestida y sin heridas; la narración se lee entera. Nunca se la dibuja niña. Gn 33 no la nombra: si va entre «los niños» de Lea (Gn 33:1-7), eso es de la hoja de los hijos pequeños de Jacob, no de esta.
 
 ## Edad
 
@@ -18,7 +18,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
   1. Edad de José en Gn 37:2: 17 (Gn 37:2: «José, siendo de edad de diez y siete años»)
   2. − Años que Jacob sirvió por el ganado después de nacer José: 6 (Gn 31:41: «seis años por tu ganado»)
   = 11. Supuestos: José nace al cumplirse los catorce años de servicio por las dos hijas: Jacob pide irse cuando Raquel pare a José (Gn 30:25), y Gn 31:41 da catorce años por las hijas y seis por el ganado; Gn 34 ocurre antes de Gn 37: se sigue el orden del relato; Se cuentan años completos
-- **Interpretación del ilustrador**: Edad visual: una muchacha de unos diecisiete años, joven pero ya mujer, nunca una niña — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 64): el texto la llama moza y joven (Gn 34:3) y los cálculos solo dan topes (como mucho trece años al salir de Padan-aram, y unos once años hasta Gn 37:2).
+- **Interpretación del ilustrador**: Edad visual: una muchacha de unos diecisiete años, joven pero ya mujer, nunca una niña — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 59): el texto la llama moza y joven (Gn 34:3) y los cálculos solo dan topes (como mucho trece años al salir de Padan-aram, y unos once años hasta Gn 37:2).
 
 ## Rasgos
 

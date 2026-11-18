@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `CAMPO_LABAN` (lugar)
 - **Pasajes**: gn-65, gn-66
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 57 de guiones/LEEME.md); el catálogo lo incluye en «padan-aram». Es el campo donde Jacob apacienta las ovejas de Labán, con las pilas donde pone las varas (objetos/varas-jacob, gn-65), y donde llama a Raquel y a Lea (Gn 31:4, gn-66). El texto no dice si es el mismo campo del pozo de Gn 29 (escenario pozo-haran): esta hoja no tiene pozo con piedra, sino un abrevadero con varias pilas, para no confundirlos. También vale para Gn 30:16 (Jacob vuelve del campo a la tarde, gn-64) si el guion lo muestra. Los rebaños entran en sus tomas (objetos/ganado-jacob). Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 56 de guiones/LEEME.md); el catálogo lo incluye en «padan-aram». Es el campo donde Jacob apacienta las ovejas de Labán, con las pilas donde pone las varas (objetos/varas-jacob, gn-65), y donde llama a Raquel y a Lea (Gn 31:4, gn-66). El texto no dice si es el mismo campo del pozo de Gn 29 (escenario pozo-haran): esta hoja no tiene pozo con piedra, sino un abrevadero con varias pilas, para no confundirlos. También vale para Gn 30:16 (Jacob vuelve del campo a la tarde, gn-64) si el guion lo muestra. Los rebaños entran en sus tomas (objetos/ganado-jacob). Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
 
 ## Lo que dice el texto
 

@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `PUERTA_SIQUEM` (lugar)
 - **Pasajes**: gn-73
-- **Nota**: No está en el catálogo de juego, que junta Siquem en un solo escenario (decisión pendiente n.º 68 de guiones/LEEME.md). Es donde Hamor y su hijo hablan a los varones (Gn 34:20-24) y la calle por la que Simeón y Leví sacan a Dina (Gn 34:26) y se llevan el ganado (Gn 34:28). La hoja la muestra de día y en paz. El ataque, las muertes y el saqueo (Gn 34:25-29) no se muestran de forma gráfica en ningún perfil (decisión pendiente n.º 64): puertas, gritos, ganado sacado por la puerta, sin cuerpos, sangre ni fuego (el texto no dice que la quemaran). La misma muralla de piedras grandes que el escenario siquem (Fuente externa allí), para que no se confunda con la puerta de Sodoma ni con la de Het.
+- **Nota**: No está en el catálogo de juego, que junta Siquem en un solo escenario (decisión pendiente n.º 63 de guiones/LEEME.md). Es donde Hamor y su hijo hablan a los varones (Gn 34:20-24) y la calle por la que Simeón y Leví sacan a Dina (Gn 34:26) y se llevan el ganado (Gn 34:28). La hoja la muestra de día y en paz. El ataque, las muertes y el saqueo (Gn 34:25-29) no se muestran de forma gráfica en ningún perfil (decisión pendiente n.º 59): puertas, gritos, ganado sacado por la puerta, sin cuerpos, sangre ni fuego (el texto no dice que la quemaran). La misma muralla de piedras grandes que el escenario siquem (Fuente externa allí), para que no se confunda con la puerta de Sodoma ni con la de Het.
 
 ## Lo que dice el texto
 

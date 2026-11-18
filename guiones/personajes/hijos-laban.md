@@ -14,11 +14,11 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnicas de lana hasta la rodilla sujetas sobre un hombro, de dibujos en zigzag o franjas: una roja y blanca, una azul oscuro y blanca, una ocre y blanca; fajas de tela; sandalias de correas; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 53 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2) y a la túnica de su padre en la hoja LABAN; un color para cada uno es elección del ilustrador. — referencias: A2
+- **Supuesto**: Túnicas de lana hasta la rodilla sujetas sobre un hombro, de dibujos en zigzag o franjas: una roja y blanca, una azul oscuro y blanca, una ocre y blanca; fajas de tela; sandalias de correas; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2) y a la túnica de su padre en la hoja LABAN; un color para cada uno es elección del ilustrador. — referencias: A2
 
 ## Voz
 
-Coro de voces de hombre joven, español neutro. Gn 31:1: murmuración resentida, a media voz, como algo que Jacob oye sin que se lo digan a la cara. Decisión pendiente del usuario (n.º 54 de guiones/LEEME.md): voces propias o leídas por el narrador.
+Coro de voces de hombre joven, español neutro. Gn 31:1: murmuración resentida, a media voz, como algo que Jacob oye sin que se lo digan a la cara. Decisión pendiente del usuario (n.º 53 de guiones/LEEME.md): voces propias o leídas por el narrador.
 
 ## Referencias de época
 

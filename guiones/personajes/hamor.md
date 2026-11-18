@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `HAMOR` (personaje)
 - **Personas (datos/biblia.js)**: Hamor_1
 - **Pasajes**: gn-72, gn-73
-- **Nota**: Habla dos veces: a Jacob y a sus hijos (Gn 34:8-10) y, con su hijo, a los varones de su ciudad en la puerta (Gn 34:21-23). En gn-71 el texto dice que Jacob compra el campo «de mano de los hijos de Hamor» (Gn 33:19), sin que Hamor aparezca: no hace falta mostrarlo allí. Su muerte (Gn 34:26) no se muestra en ningún perfil (decisión pendiente n.º 64 de guiones/LEEME.md).
+- **Nota**: Habla dos veces: a Jacob y a sus hijos (Gn 34:8-10) y, con su hijo, a los varones de su ciudad en la puerta (Gn 34:21-23). En gn-71 el texto dice que Jacob compra el campo «de mano de los hijos de Hamor» (Gn 33:19), sin que Hamor aparezca: no hace falta mostrarlo allí. Su muerte (Gn 34:26) no se muestra en ningún perfil (decisión pendiente n.º 59 de guiones/LEEME.md).
 
 ## Edad
 

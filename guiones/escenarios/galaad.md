@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `GALAAD` (lugar)
 - **Pasajes**: gn-66, gn-67, gn-68
-- **Nota**: El id es el del catálogo de juego. En gn-66 solo es la meta de la huida (Gn 31:21): sale de lejos, si el guion lo muestra. Las tiendas siguen la forma de la hoja TIENDA_ABRAM (paños oscuros de pelo de cabra; supuesto, ver esa ficha). El interior de la tienda de Raquel tiene su propia hoja (escenarios/tienda-raquel); el majano y el título de Gn 31:45-52, la suya (objetos/majano-galaad), y no salen en esta hoja porque se levantan al final. El río de Gn 31:21 no tiene hoja. Los sacrificios de Gn 31:54 no se muestran de forma gráfica (decisión pendiente n.º 55 de guiones/LEEME.md). Dios habla a Labán en sueños (Gn 31:24) sin figura (decisión n.º 1). Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
+- **Nota**: El id es el del catálogo de juego. En gn-66 solo es la meta de la huida (Gn 31:21): sale de lejos, si el guion lo muestra. Las tiendas siguen la forma de la hoja TIENDA_ABRAM (paños oscuros de pelo de cabra; supuesto, ver esa ficha). El interior de la tienda de Raquel tiene su propia hoja (escenarios/tienda-raquel); el majano y el título de Gn 31:45-52, la suya (objetos/majano-galaad), y no salen en esta hoja porque se levantan al final. El río de Gn 31:21 no tiene hoja. Los sacrificios de Gn 31:54 no se muestran de forma gráfica (decisión pendiente n.º 54 de guiones/LEEME.md). Dios habla a Labán en sueños (Gn 31:24) sin figura (decisión n.º 1). Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
 
 ## Lo que dice el texto
 

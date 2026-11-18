@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `ENCINA_DEBORA` (lugar)
 - **Pasajes**: gn-74
-- **Nota**: No está en el catálogo de juego, que lo junta en «betel» (decisión pendiente n.º 68 de guiones/LEEME.md). Es otro lugar que Betel en lo alto: Débora se entierra «á las raíces de Beth-el, debajo de una encina» (Gn 35:8). La hoja muestra la encina y, arriba en la loma, unas casas pequeñas de Luz, que es Betel (Gn 35:6), sin detalle para no contradecir la hoja de Betel del redactor de Gn 28. No hay sepultura en la hoja: el montón de piedras lo añade su toma, sin cuerpo ni mortaja. Débora no tiene hoja: el texto solo da su muerte y su entierro, y no la describe viva en estos pasajes. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
+- **Nota**: No está en el catálogo de juego, que lo junta en «betel» (decisión pendiente n.º 63 de guiones/LEEME.md). Es otro lugar que Betel en lo alto: Débora se entierra «á las raíces de Beth-el, debajo de una encina» (Gn 35:8). La hoja muestra la encina y, arriba en la loma, unas casas pequeñas de Luz, que es Betel (Gn 35:6), sin detalle para no contradecir la hoja de Betel del redactor de Gn 28. No hay sepultura en la hoja: el montón de piedras lo añade su toma, sin cuerpo ni mortaja. Débora no tiene hoja: el texto solo da su muerte y su entierro, y no la describe viva en estos pasajes. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
 
 ## Lo que dice el texto
 

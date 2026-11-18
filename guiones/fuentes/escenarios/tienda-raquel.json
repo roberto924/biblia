@@ -8,7 +8,7 @@
     "nombre": "TIENDA_RAQUEL",
     "tipo": "lugar"
   },
-  "nota": "No está en el catálogo de juego (decisión pendiente n.º 57 de guiones/LEEME.md). Es el interior de una de las tiendas del escenario GALAAD, de la misma forma que la hoja TIENDA_ABRAM. La albarda donde Raquel esconde los ídolos y se sienta (Gn 31:34) es parte de esta hoja, no un objeto aparte: solo sale aquí; se dibuja como la albarda de la hoja CAMELLOS_SIERVO para que se lea como silla de camello. Los ídolos (objetos/idolos-laban) no se ven en la hoja: están escondidos. «Estoy con la costumbre de las mujeres» (Gn 31:35) no se muestra (decisión pendiente n.º 55).",
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 56 de guiones/LEEME.md). Es el interior de una de las tiendas del escenario GALAAD, de la misma forma que la hoja TIENDA_ABRAM. La albarda donde Raquel esconde los ídolos y se sienta (Gn 31:34) es parte de esta hoja, no un objeto aparte: solo sale aquí; se dibuja como la albarda de la hoja CAMELLOS_SIERVO para que se lea como silla de camello. Los ídolos (objetos/idolos-laban) no se ven en la hoja: están escondidos. «Estoy con la costumbre de las mujeres» (Gn 31:35) no se muestra (decisión pendiente n.º 54).",
   "texto": [
     {
       "dato": "Labán entra en la tienda de Raquel después de registrar las demás",

@@ -15,7 +15,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnicas de lana hasta la rodilla o hasta media pierna, de franjas y zigzag en rojo, blanco, azul oscuro y ocre, con mantos lisos de lana parda o gris para el camino; fajas de tela; sandalias de correas; bastones de camino lisos; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 53 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2); los mantos y los bastones son elección del ilustrador, por el viaje. — referencias: A2
+- **Supuesto**: Túnicas de lana hasta la rodilla o hasta media pierna, de franjas y zigzag en rojo, blanco, azul oscuro y ocre, con mantos lisos de lana parda o gris para el camino; fajas de tela; sandalias de correas; bastones de camino lisos; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2); los mantos y los bastones son elección del ilustrador, por el viaje. — referencias: A2
 
 ## Referencias de época
 

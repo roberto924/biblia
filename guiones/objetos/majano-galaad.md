@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `MAJANO_GALAAD` (objeto)
 - **Pasajes**: gn-68
-- **Nota**: El id es el del catálogo de juego. Son dos cosas que el texto nombra juntas: el título, una piedra que Jacob levanta (Gn 31:45), y el majano, un montón de piedras que hacen entre todos (Gn 31:46); se dibujan juntos, sobre el monte del escenario GALAAD. El título de Betel (Gn 28:18) es otra piedra, de otro pasaje: esta hoja no la copia. Los sacrificios de Gn 31:54 no son parte de la hoja y no se muestran de forma gráfica (decisión pendiente n.º 55 de guiones/LEEME.md).
+- **Nota**: El id es el del catálogo de juego. Son dos cosas que el texto nombra juntas: el título, una piedra que Jacob levanta (Gn 31:45), y el majano, un montón de piedras que hacen entre todos (Gn 31:46); se dibujan juntos, sobre el monte del escenario GALAAD. El título de Betel (Gn 28:18) es otra piedra, de otro pasaje: esta hoja no la copia. Los sacrificios de Gn 31:54 no son parte de la hoja y no se muestran de forma gráfica (decisión pendiente n.º 54 de guiones/LEEME.md).
 
 ## Lo que dice el texto
 

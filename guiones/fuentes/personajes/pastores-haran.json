@@ -2,7 +2,7 @@
   "id": "pastores-haran",
   "nombre": "Los pastores del pozo de Harán",
   "personas": [],
-  "sin_persona": "El texto no nombra a ninguno: son los que esperan con sus rebaños junto al pozo y responden «De Harán somos» (Gn 29:4). No son personas de datos/biblia.js. Hablan a coro (Gn 29:4-6, 29:8): como los constructores de Babel y los hombres de Sodoma, el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 54 de guiones/LEEME.md).",
+  "sin_persona": "El texto no nombra a ninguno: son los que esperan con sus rebaños junto al pozo y responden «De Harán somos» (Gn 29:4). No son personas de datos/biblia.js. Hablan a coro (Gn 29:4-6, 29:8): como los constructores de Babel y los hombres de Sodoma, el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 53 de guiones/LEEME.md).",
   "pasajes": [
     "gn-61"
   ],
@@ -52,7 +52,7 @@
     {
       "rasgo": "Túnicas cortas de lana sin teñir, parda, crema y gris, hasta la rodilla y sujetas sobre un hombro, con una sola franja de color apagado; cinturones de cuerda; sandalias gastadas; cayados de madera lisos; cabezas descubiertas",
       "certeza": "supuesto",
-      "nota": "Supuesto de época (decisión pendiente n.º 53 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. El corte sigue a los hombres del cortejo de Beni Hasan (A2), más llano; los cayados y la lana sin teñir son elección del ilustrador, por su oficio.",
+      "nota": "Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. El corte sigue a los hombres del cortejo de Beni Hasan (A2), más llano; los cayados y la lana sin teñir son elección del ilustrador, por su oficio.",
       "referencias": [
         "A2"
       ]
@@ -62,7 +62,7 @@
     "A2"
   ],
   "voz": {
-    "descripcion": "Coro de voces de hombre, sencillas y algo secas, español neutro. Gn 29:4-6: respuestas breves al forastero. Gn 29:8: explican la costumbre del pozo, sin enfado. Decisión pendiente del usuario (n.º 54 de guiones/LEEME.md): voces propias o leídas por el narrador."
+    "descripcion": "Coro de voces de hombre, sencillas y algo secas, español neutro. Gn 29:4-6: respuestas breves al forastero. Gn 29:8: explican la costumbre del pozo, sin enfado. Decisión pendiente del usuario (n.º 53 de guiones/LEEME.md): voces propias o leídas por el narrador."
   },
   "hoja_referencia": {
     "prompt_en": "Make a group reference sheet on a plain light grey background, showing three shepherds standing side by side in a single row, each one fully visible from head to feet and clearly apart from the others. They are herdsmen from western Asia of clearly different ages: on the left a young man of about twenty with a short dark beard, in the middle a sturdy man of about thirty-five with a full dark beard, and on the right a lean man of about fifty with a greying beard. They have sun-weathered brown skin and natural dark hair cut short or reaching the nape of the neck. Their heads are bare, with nothing tied around them. Their expressions are calm and a little wary. They wear plain knee-length tunics of undyed brown, cream and grey wool, each with one muted stripe, fastened over one shoulder, cut like the garments of the western Asian visitors painted in Middle Kingdom Egyptian tombs but plainer, with cord belts and worn leather sandals, and each holds a plain wooden shepherd's staff. Above the row, in a separate band of the sheet with clear empty space between, there is a close-up of each face in the same order; the close-ups never cover or overlap any head or body below.",

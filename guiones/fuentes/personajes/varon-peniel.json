@@ -2,7 +2,7 @@
   "id": "varon-peniel",
   "nombre": "El varón que lucha con Jacob en Peniel",
   "personas": [],
-  "sin_persona": "El texto no lo nombra: es «un varón» (Gn 32:24) que no dice su nombre cuando Jacob se lo pide (Gn 32:29). No es persona de datos/biblia.js. Habla (Gn 32:26-29): como los varones de Mamre, el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md).",
+  "sin_persona": "El texto no lo nombra: es «un varón» (Gn 32:24) que no dice su nombre cuando Jacob se lo pide (Gn 32:29). No es persona de datos/biblia.js. Habla (Gn 32:26-29): como los varones de Mamre, el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md).",
   "pasajes": [
     "gn-70"
   ],
@@ -10,7 +10,7 @@
     "nombre": "VARON_PENIEL",
     "tipo": "personaje"
   },
-  "nota": "Propuesta por defecto (decisión pendiente n.º 62 de guiones/LEEME.md): un hombre, sin alas, halo ni luz propia, como los varones de Mamre (n.º 21) y lo planteado para el ángel de Agar (n.º 18), y con el rostro siempre oculto: de espaldas, en perfil perdido o en la sombra de la noche. El texto lo llama «un varón» (Gn 32:24), pero Jacob dice que vio a Dios cara a cara (Gn 32:30), y la n.º 1 no da rostro a Dios: así no se decide por el lector quién es. La hoja lo muestra de espaldas, en perfil perdido y de lado con la cara vuelta. La lucha (Gn 32:24-25) se cuenta sin golpes ni heridas; el toque en el muslo, sin dolor exagerado. Se va antes de que salga el sol (Gn 32:26, 32:31): no se le ve con luz de día.",
+  "nota": "Propuesta por defecto (decisión pendiente n.º 57 de guiones/LEEME.md): un hombre, sin alas, halo ni luz propia, como los varones de Mamre (n.º 21) y lo planteado para el ángel de Agar (n.º 18), y con el rostro siempre oculto: de espaldas, en perfil perdido o en la sombra de la noche. El texto lo llama «un varón» (Gn 32:24), pero Jacob dice que vio a Dios cara a cara (Gn 32:30), y la n.º 1 no da rostro a Dios: así no se decide por el lector quién es. La hoja lo muestra de espaldas, en perfil perdido y de lado con la cara vuelta. La lucha (Gn 32:24-25) se cuenta sin golpes ni heridas; el toque en el muslo, sin dolor exagerado. Se va antes de que salga el sol (Gn 32:26, 32:31): no se le ve con luz de día.",
   "edades": [
     {
       "dato": "Edad visual: un hombre adulto en plena fuerza, de unos treinta y cinco a cuarenta años",
@@ -85,7 +85,7 @@
     {
       "rasgo": "Hombre alto y fuerte de Asia occidental, de piel morena, pelo oscuro y abundante hasta la nuca, natural, y barba oscura corta; espalda ancha; nunca se le ve la cara",
       "certeza": "interpretacion",
-      "nota": "Interpretación del ilustrador: el texto no lo describe. El rostro oculto es la propuesta por defecto de la decisión pendiente n.º 62."
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El rostro oculto es la propuesta por defecto de la decisión pendiente n.º 57."
     }
   ],
   "vestuario": [
@@ -96,7 +96,7 @@
     }
   ],
   "voz": {
-    "descripcion": "Voz de hombre adulta, grave, serena y firme, sin eco ni efecto, español neutro. Gn 32:26: urgente pero sin alzar la voz («Déjame, que raya el alba»). Gn 32:27: pregunta sencilla. Gn 32:28: solemne, sin énfasis teatral. Gn 32:29: pregunta sin enfado. Voz propia o leída por el narrador: decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md."
+    "descripcion": "Voz de hombre adulta, grave, serena y firme, sin eco ni efecto, español neutro. Gn 32:26: urgente pero sin alzar la voz («Déjame, que raya el alba»). Gn 32:27: pregunta sencilla. Gn 32:28: solemne, sin énfasis teatral. Gn 32:29: pregunta sin enfado. Voz propia o leída por el narrador: decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md."
   },
   "hoja_referencia": {
     "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side, always with his face turned away from the viewer: a full-body view from behind, a full-body view from the side in lost profile, with his head turned away so that only the edge of his cheek, his beard and his ear can be seen, and a three-quarter view from behind of his head and shoulders. He is a tall, strong man from western Asia of about thirty-five to forty, with brown skin, broad shoulders, thick natural dark hair that reaches the nape of his neck and a short dark beard. He wears a plain knee-length tunic of undyed dark grey wool with a simple cord belt, and plain leather sandals. His head is bare, with nothing tied around it, and his hands are empty. He is an ordinary man, lit only by the same soft, even light as the background.",

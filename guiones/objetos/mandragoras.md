@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `MANDRAGORAS` (objeto)
 - **Pasajes**: gn-64
-- **Nota**: El id es el del catálogo de juego. Rubén las halla y se las lleva a Lea (Gn 30:14); Raquel las pide y las cambia por una noche de Jacob con Lea (Gn 30:14-16). Esa noche no se muestra (decisión pendiente n.º 55 de guiones/LEEME.md). El texto no dice para qué las quería Raquel: la ficha no lo explica. La hoja no da a las raíces forma ni cara humana.
+- **Nota**: El id es el del catálogo de juego. Rubén las halla y se las lleva a Lea (Gn 30:14); Raquel las pide y las cambia por una noche de Jacob con Lea (Gn 30:14-16). Esa noche no se muestra (decisión pendiente n.º 54 de guiones/LEEME.md). El texto no dice para qué las quería Raquel: la ficha no lo explica. La hoja no da a las raíces forma ni cara humana.
 
 ## Lo que dice el texto
 

@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `TITULO_RAQUEL` (objeto)
 - **Pasajes**: gn-75
-- **Nota**: No está en el catálogo de juego, que lo deja dentro del escenario «efrata» (decisión pendiente n.º 68 de guiones/LEEME.md). Va en hoja aparte para que el camino (escenarios/efrata) pueda verse antes de la muerte de Raquel sin la piedra, que no aparece hasta Gn 35:20. La hoja muestra la piedra sobre un montón bajo de piedras, sin cuerpo, huesos ni inscripción. No se dibuja ningún edificio ni cúpula: el texto solo da el título.
+- **Nota**: No está en el catálogo de juego, que lo deja dentro del escenario «efrata» (decisión pendiente n.º 63 de guiones/LEEME.md). Va en hoja aparte para que el camino (escenarios/efrata) pueda verse antes de la muerte de Raquel sin la piedra, que no aparece hasta Gn 35:20. La hoja muestra la piedra sobre un montón bajo de piedras, sin cuerpo, huesos ni inscripción. No se dibuja ningún edificio ni cúpula: el texto solo da el título.
 
 ## Lo que dice el texto
 

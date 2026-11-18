@@ -21,7 +21,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Voz
 
-Voz de hombre adulta, de mensajero que vuelve de prisa, español neutro, solo en Gn 32:6 (uno por todos o a coro: decide el guion): sencilla y con inquietud contenida al decir «y cuatrocientos hombres con él». Lo que Jacob les manda decir (Gn 32:17-20) lo dice Jacob, no ellos. Decisiones pendientes n.º 22 y n.º 69 de guiones/LEEME.md.
+Voz de hombre adulta, de mensajero que vuelve de prisa, español neutro, solo en Gn 32:6 (uno por todos o a coro: decide el guion): sencilla y con inquietud contenida al decir «y cuatrocientos hombres con él». Lo que Jacob les manda decir (Gn 32:17-20) lo dice Jacob, no ellos. Decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md.
 
 ## Referencias de época
 
