@@ -1,0 +1,162 @@
+{
+  "id": "sarai",
+  "nombre": "Sarai (después Sara)",
+  "personas": [
+    "Sarai_1"
+  ],
+  "pasajes": [
+    "gn-26",
+    "gn-27",
+    "gn-28",
+    "gn-29",
+    "gn-33"
+  ],
+  "element": {
+    "nombre": "SARAI",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 11:29–16:16, cuando se llama Sarai. En Gn 12 el texto no le da ninguna palabra: ni cuando Abram le pide que diga que es su hermana ni en casa de Faraón. Lo que pasó en casa de Faraón no se muestra: el texto no lo cuenta.",
+  "edades": [
+    {
+      "dato": "Es diez años menor que Abram",
+      "certeza": "calculo",
+      "valor": 10,
+      "nota": "Gn 17:17 es posterior a estos pasajes (gn-35): sirve para dirigir, no se cita en el video.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 10,
+        "pasos": [
+          {
+            "texto": "Edad que Abraham se da a sí mismo",
+            "valor": 100,
+            "ref": "Gn 17:17",
+            "cita": "¿A hombre de cien años ha de nacer hijo?"
+          },
+          {
+            "texto": "Edad que le da a Sara en la misma frase",
+            "valor": 90,
+            "ref": "Gn 17:17",
+            "cita": "¿y Sara, ya de noventa años, ha de parir?"
+          }
+        ],
+        "supuestos": [
+          "Las dos cifras se toman como las edades que tendrán al nacer el hijo: Abraham tiene entonces noventa y nueve (Gn 17:1), y Gn 21:5 le da cien cuando nace Isaac",
+          "Si «ya de noventa años» es la edad de Sara en ese momento y no al nacer el hijo, la diferencia es de nueve años",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Unos sesenta y cinco años cuando sale de Harán",
+      "certeza": "calculo",
+      "valor": 65,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 65,
+        "pasos": [
+          {
+            "texto": "Edad de Abram al salir de Harán",
+            "valor": 75,
+            "ref": "Gn 12:4",
+            "cita": "era Abram de edad de setenta y cinco años cuando salió de Harán"
+          },
+          {
+            "texto": "Años que Abram le lleva a Sarai (cálculo anterior)",
+            "valor": 10,
+            "ref": "Gn 17:17",
+            "cita": "¿A hombre de cien años ha de nacer hijo? ¿y Sara, ya de noventa años, ha de parir?"
+          }
+        ],
+        "supuestos": [
+          "La diferencia de diez años sale del cálculo anterior, con sus mismos supuestos; con la otra lectura de Gn 17:17 (nueve años), tendría unos sesenta y seis",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: una mujer madura de belleza serena, que aparenta unos cuarenta y cinco años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto la llama hermosa (Gn 12:11, 12:14) cuando el cálculo le da unos sesenta y cinco años, y vive hasta los ciento veintisiete (Gn 23:1, muy posterior: sirve para dirigir). El texto no dice qué aspecto tenía alguien de esa edad: se la dibuja madura, no anciana ni muchacha."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Mujer de Abram",
+      "certeza": "texto",
+      "ref": "Gn 11:29",
+      "cita": "el nombre de la mujer de Abram fué Sarai"
+    },
+    {
+      "rasgo": "Estéril, sin hijo",
+      "certeza": "texto",
+      "ref": "Gn 11:30",
+      "cita": "Sarai fué estéril, y no tenía hijo"
+    },
+    {
+      "rasgo": "Hermosa, según Abram",
+      "certeza": "texto",
+      "ref": "Gn 12:11",
+      "cita": "eres mujer hermosa de vista"
+    },
+    {
+      "rasgo": "Hermosa en gran manera, según los egipcios",
+      "certeza": "texto",
+      "ref": "Gn 12:14",
+      "cita": "los Egipcios vieron la mujer que era hermosa en gran manera"
+    },
+    {
+      "rasgo": "Es llevada a casa de Faraón",
+      "certeza": "texto",
+      "ref": "Gn 12:15",
+      "cita": "fué llevada la mujer á casa de Faraón"
+    },
+    {
+      "rasgo": "Tiene una sierva egipcia, Agar",
+      "certeza": "texto",
+      "ref": "Gn 16:1",
+      "cita": "ella tenía una sierva egipcia, que se llamaba Agar"
+    },
+    {
+      "rasgo": "Da su sierva a Abram para tener hijos de ella",
+      "certeza": "texto",
+      "ref": "Gn 16:2",
+      "cita": "ruégote que entres á mi sierva; quizá tendré hijos de ella"
+    },
+    {
+      "rasgo": "Aflige a Agar hasta que huye",
+      "certeza": "texto",
+      "ref": "Gn 16:6",
+      "cita": "como Sarai la afligiese, huyóse de su presencia"
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros grandes, rostro sereno y digno; pelo oscuro largo, con algunas canas, suelto a la espalda y sujeto con una cinta blanca estrecha en la frente",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que es hermosa, no cómo. El pelo largo a la espalda con una cinta blanca sigue a las mujeres de Asia occidental del mural de Beni Hasan (A2; mirado el 17-nov-2026); las canas, a su edad.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestido largo de lana hasta media pierna, con franjas estrechas y dibujos menudos en rojo, blanco y azul oscuro; botines bajos de cuero rojizo",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se toman las cuatro mujeres del cortejo de Beni Hasan (A2; mirado el 17-nov-2026): vestidos largos de dibujos hasta media pierna, en rojo, blanco y azul grisáceo, uno con dibujo en zigzag, varios con un hombro descubierto, y calzado bajo cerrado. Que el vestido cubra los dos hombros y el cuero rojizo de los botines son elección del ilustrador.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Mujer madura, voz clara y firme, español neutro. Solo habla en Gn 16:2 (propone, resignada) y en Gn 16:5 (dolida y airada: «Mi afrenta sea sobre ti»). En Gn 12 no se le inventa ninguna palabra. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a mature, strikingly beautiful woman from western Asia who looks about forty-five, with olive-brown skin, large dark eyes and a calm, dignified face. Her long dark hair, with a few grey strands, falls down her back and is held by a narrow white band around her forehead. She wears a long wool dress that covers both shoulders and reaches her lower calves, woven with narrow red, white and dark blue stripes and small zigzag patterns in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and low reddish leather ankle boots. Her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Mujer madura de Asia occidental, de gran belleza, que aparenta unos cuarenta y cinco años; piel morena oliva, ojos oscuros grandes, rostro sereno y digno. Pelo oscuro largo, con algunas canas, suelto a la espalda y sujeto con una cinta blanca estrecha en la frente. Vestido largo de lana que cubre los dos hombros y llega a media pierna, con franjas estrechas y dibujos menudos en zigzag en rojo, blanco y azul oscuro, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio; botines bajos de cuero rojizo. Manos vacías.",
+    "negativo_en": "Do not make her look elderly or frail, and do not make her look like a young girl. Do not give her a veil, a crown, Egyptian white linen or gold jewelry. Do not paint a tent, a child or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca anciana ni frágil, ni una muchacha; sin velo, corona, lino blanco egipcio ni joyas de oro; sin tienda, niño ni otras personas; fondo liso."
+  }
+}

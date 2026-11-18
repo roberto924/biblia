@@ -1,0 +1,69 @@
+{
+  "id": "tienda-abram",
+  "nombre": "La tienda de Abram",
+  "pasajes": [
+    "gn-27",
+    "gn-29"
+  ],
+  "element": {
+    "nombre": "TIENDA_ABRAM",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego. Es la casa de Abram en Canaán: la tiende y la remueve (Gn 12:8; 13:18), y vuelve en Gn 18 (la puerta de la tienda). El texto habla de «su tienda», en singular; Lot tiene las suyas (Gn 13:5).",
+  "texto": [
+    {
+      "dato": "Abram la tiende en un monte, entre Betel y Hai",
+      "certeza": "texto",
+      "ref": "Gn 12:8",
+      "cita": "tendió su tienda, teniendo á Bethel al occidente y Hai al oriente"
+    },
+    {
+      "dato": "Vuelve al lugar donde había estado",
+      "certeza": "texto",
+      "ref": "Gn 13:3",
+      "cita": "el lugar donde había estado antes su tienda entre Bethel y Hai"
+    },
+    {
+      "dato": "La remueve y va a morar a Mamre",
+      "certeza": "texto",
+      "ref": "Gn 13:18",
+      "cita": "removiendo su tienda, vino y moró en el alcornocal de Mamre"
+    },
+    {
+      "dato": "Lot tiene tiendas propias",
+      "certeza": "texto",
+      "ref": "Gn 13:5",
+      "cita": "tenía ovejas, y vacas, y tiendas"
+    },
+    {
+      "dato": "Tiene una puerta donde uno se sienta a la sombra",
+      "certeza": "inferido",
+      "nota": "Gn 18:1 es posterior a estos pasajes (gn-36): sirve para dirigir, no se cita en el video.",
+      "base": [
+        {
+          "ref": "Gn 18:1",
+          "cita": "sentado á la puerta de su tienda en el calor del día"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Tienda baja y alargada de paños oscuros de pelo de cabra cosidos, sobre tres hileras de postes de madera, tensada con cuerdas y estacas; un lado largo abierto, levantado sobre postes para dar sombra; dentro, solo esteras y unas tinajas",
+      "certeza": "supuesto",
+      "nota": "Supuesto: Génesis no dice de qué es la tienda ni qué forma tiene. El pelo de cabra sale de un paño de tienda que el texto sí describe, la cubierta del tabernáculo (Ex 26:7), muy posterior a este relato: sirve para dirigir, no se cita en el video. La forma baja y alargada, los postes, las cuerdas, las esteras y las tinajas son interpretación del ilustrador.",
+      "base": [
+        {
+          "ref": "Ex 26:7",
+          "cita": "cortinas de [pelo] de cabras para una cubierta sobre el tabernáculo"
+        }
+      ]
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same tent twice: on the left a front view of its open long side, and on the right a three-quarter view from slightly above. It is a low, wide herdsman's tent made of long strips of dark brown-black woven goat-hair cloth sewn together, stretched over three rows of plain wooden poles so that the roof sags gently between them, and held by taut ropes tied to wooden pegs driven into the ground. One long side is open, with the edge of the cloth raised on poles to make a shaded entrance, and inside there are only plain woven mats and a few clay jars. It stands on a patch of bare, dry earth.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: la misma tienda dos veces: a la izquierda, de frente por su lado largo abierto; a la derecha, en tres cuartos, algo desde arriba. Tienda de pastor baja y ancha, de tiras largas de paño oscuro, pardo casi negro, de pelo de cabra tejido y cosido, tendida sobre tres hileras de postes de madera lisos, con el techo algo colgante entre ellos, y sujeta con cuerdas tensas atadas a estacas de madera clavadas en el suelo. Un lado largo está abierto, con el borde del paño levantado sobre postes para dar sombra a la entrada; dentro, solo esteras lisas y unas tinajas de barro. Sobre un trozo de tierra desnuda y seca.",
+    "negativo_en": "Do not make it a round or pointed tent, a pavilion with flags, or a tent of white or brightly colored cloth. Do not add metal fittings, furniture, richly patterned carpets or lamps. Do not paint people, animals, trees, an altar or a landscape, and keep the background plain.",
+    "negativo_es": "Que no sea redonda ni puntiaguda, ni un pabellón con banderas, ni de tela blanca o de colores vivos; sin herrajes, muebles, alfombras de dibujos ricos ni lámparas; sin personas, animales, árboles, altar ni paisaje; fondo liso."
+  }
+}

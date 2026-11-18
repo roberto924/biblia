@@ -25,7 +25,7 @@
     "url_imagen": "https://commons.wikimedia.org/wiki/File:Procession_of_the_Aamu,_Tomb_of_Khnumhotep_II_(composite).jpg",
     "licencia": "Dominio público en EE. UU. (reproducción fiel de obra anterior a 1931; Public Domain Mark 1.0 según Commons; el reuso fuera de EE. UU. puede tener restricciones)",
     "comprobado": true,
-    "nota": "Comprobado en Commons el 16-nov-2026. Es un compuesto de tres fotografías (A. D. Riddle, Brown University y Macquarie University): antes de publicar, confirmar en Commons la licencia de cada una de las tres fotos además de la de la pintura."
+    "nota": "Comprobado en Commons el 16-nov-2026. Es un compuesto de tres fotografías (A. D. Riddle, Brown University y Macquarie University): antes de publicar, confirmar en Commons la licencia de cada una de las tres fotos además de la de la pintura. Mirada la imagen el 17-nov-2026: hombres de pelo abundante hasta la nuca y barba en punta, con faldellines o túnicas de franjas rojas y blancas sujetas sobre un hombro, y sandalias; cuatro mujeres con vestidos largos de dibujos hasta media pierna, en rojo, blanco y azul grisáceo, uno con dibujo en zigzag, varios con un hombro descubierto, cinta blanca en el pelo largo y calzado bajo cerrado; los dos jefes que encabezan el cortejo, con un vestido hasta la rodilla de dibujos más ricos y de más colores, sin corona; a la derecha, egipcios con faldellín blanco y el torso descubierto."
   },
   "A3": {
     "titulo": "Syrians Bringing Vessels and Weapons, Tomb of Rekhmire (facsímil)",
@@ -101,5 +101,19 @@
     "licencia": "CC BY-SA 4.0 (foto de Osama Shukir Muhammed Amin): exige atribución y compartir igual",
     "comprobado": true,
     "nota": "Comprobado en Commons el 16-nov-2026. Solo contexto (Fuente externa) para la idea antigua de aguas que rodean la tierra; no es modelo visual del relato."
+  },
+  "F1": {
+    "titulo": "Senwosret III as a Sphinx (esfinge de Senusret III)",
+    "tipo": "registro histórico (escultura)",
+    "institucion": "The Metropolitan Museum of Art (Nueva York)",
+    "inventario": "17.9.2 (Gift of Edward S. Harkness, 1917)",
+    "datacion": "ca. 1878–1840 a. C., Reino Medio, Dinastía XII, reinado de Senwosret III, según el Met (vía Commons)",
+    "lugar_original": "Egipto; posiblemente Karnak (Tebas), según Commons",
+    "muestra": "La cabeza de un rey del Reino Medio: tocado de tela a rayas ceñido a la frente, con caídas a los lados del rostro hasta el pecho, rostro afeitado y barba ceremonial larga y recta. El cuerpo es de león: no sirve para el vestido",
+    "url_ficha": "https://commons.wikimedia.org/wiki/File:Senwosret_III_as_a_Sphinx_MET_DP247658.jpg",
+    "url_imagen": "https://commons.wikimedia.org/wiki/File:Senwosret_III_as_a_Sphinx_MET_DP247658.jpg",
+    "licencia": "CC0 (Met Open Access)",
+    "comprobado": true,
+    "nota": "Comprobado en Wikimedia Commons el 17-nov-2026 y mirada la imagen con la cabeza ampliada. La ficha del Met (objeto 544186) no se abrió. La parte alta del tocado, sobre la frente, está dañada: la cobra no se confirma en esta pieza, y la piedra (gneis) no tiene color. Referencia de época para el faraón de Gn 12, sin identificarlo con este rey."
   }
 }

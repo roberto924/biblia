@@ -231,10 +231,24 @@ registro esté completo; y propone cambios en las fuentes JSON.
 14. **Querubines y espada encendida** (Gn 3:24): sin hoja todavía. El texto no describe a los querubines y el
     negativo general del estilo prohíbe alas; darles forma pide una decisión y, si llevan alas, una versión nueva
     del estilo.
-15. **Ropa de Gn 4–9**: supuesto por defecto sin referencia de época (el texto no fecha estos relatos): pieles para
-    Caín y Abel, como sus padres; lana lisa sin teñir para Noé y su familia.
+15. **Ropa de Gn 4–11:26**: supuesto por defecto sin referencia de época (el texto no fecha estos relatos): pieles
+    para Caín y Abel, como sus padres; lana lisa sin teñir para Noé y su familia y para los constructores de Babel,
+    que descienden de ellos.
 16. **Altar de Noé en el catálogo de juego**: tiene hoja (`objetos/altar-noe`) pero no es objeto en
-    `herramientas/juego/Gn.json`, donde el primer altar es el de Abram.
+    `herramientas/juego/Gn.json`, donde el primer altar es el de Abram. Lo mismo pasa con los ladrillos y el betún de
+    Babel (`objetos/ladrillos-betun`) y con la tienda de Abram (`objetos/tienda-abram`).
+17. **Ropa de Abram y los suyos (Gn 11:27 en adelante)**: supuesto por defecto, la gente de Asia occidental del mural
+    de Beni Hasan (A1, A2), la misma referencia de los hermanos de José: lana de franjas y dibujos, cinta en el pelo
+    de las mujeres. Los reyes de Canaán (Melquisedec, el rey de Sodoma) van sin corona y se distinguen por un tejido
+    más rico, como los jefes de ese cortejo. El faraón de Gn 12 sigue la época supuesta del Egipto de José (n.º 3),
+    con la esfinge de Senusret III del Met (F1) para el tocado y la barba.
+18. **El ángel de Jehová** (Gn 16:7-12, ante Agar): sin hoja todavía. El texto no lo describe y el negativo general
+    del estilo prohíbe alas. Opciones: sin figura, solo voz y luz, como Dios (n.º 1), o un varón sin alas.
+19. **Animales partidos de Gn 15:9-17**: propuesta por defecto, nunca gráficos en ningún perfil: bultos en penumbra
+    en dos hileras, sin sangre ni entrañas; el horno se deja ver y la antorcha pasa entre ellos, sin nadie que los
+    lleve.
+20. **Voces a coro de Babel** (Gn 11:3-4): los constructores no son personas de `datos/biblia.js`; mismo caso que
+    la serpiente (n.º 13).
 
 ## Pendiente del proyecto (fuera de los guiones)
 

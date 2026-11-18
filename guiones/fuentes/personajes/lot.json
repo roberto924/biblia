@@ -1,0 +1,105 @@
+{
+  "id": "lot",
+  "nombre": "Lot",
+  "personas": [
+    "Lot_1"
+  ],
+  "pasajes": [
+    "gn-26",
+    "gn-27",
+    "gn-29",
+    "gn-30"
+  ],
+  "element": {
+    "nombre": "LOT",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 11:27–14:16. En estos pasajes Lot no dice nada: el texto no le da ninguna palabra hasta Gn 19, y por eso la ficha no lleva voz. No se le dibuja como villano por escoger la llanura: el texto cuenta lo que vio y lo que escogió, sin juzgarlo.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre adulto de unos cuarenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da la edad de Lot. Es hijo de Harán, hermano de Abram (Gn 11:27), y tiene hacienda propia (Gn 13:5): se le dibuja adulto y una generación más joven que su tío."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo de Harán",
+      "certeza": "texto",
+      "ref": "Gn 11:27",
+      "cita": "Harán engendró á Lot"
+    },
+    {
+      "rasgo": "Su padre murió en Ur antes de que la familia saliera",
+      "certeza": "texto",
+      "ref": "Gn 11:28",
+      "cita": "murió Harán antes que su padre Thare en la tierra de su naturaleza, en Ur de los Caldeos"
+    },
+    {
+      "rasgo": "Sobrino de Abram; va con él",
+      "certeza": "texto",
+      "ref": "Gn 12:5",
+      "cita": "Lot hijo de su hermano"
+    },
+    {
+      "rasgo": "Tiene ovejas, vacas y tiendas",
+      "certeza": "texto",
+      "ref": "Gn 13:5",
+      "cita": "Lot, que andaba con Abram, tenía ovejas, y vacas, y tiendas"
+    },
+    {
+      "rasgo": "Mira la llanura del Jordán, toda de riego, y la escoge",
+      "certeza": "texto",
+      "ref": "Gn 13:11",
+      "cita": "Lot escogió para sí toda la llanura del Jordán"
+    },
+    {
+      "rasgo": "Va poniendo sus tiendas hasta Sodoma",
+      "certeza": "texto",
+      "ref": "Gn 13:12",
+      "cita": "fué poniendo sus tiendas hasta Sodoma"
+    },
+    {
+      "rasgo": "Se lo llevan prisionero cuando ya mora en Sodoma",
+      "certeza": "texto",
+      "ref": "Gn 14:12",
+      "cita": "Tomaron también á Lot, hijo del hermano de Abram, que moraba en Sodoma"
+    },
+    {
+      "rasgo": "Abram lo recobra con su hacienda",
+      "certeza": "texto",
+      "ref": "Gn 14:16",
+      "cita": "también á Lot su hermano y su hacienda"
+    },
+    {
+      "rasgo": "Parecido de familia con Abram; enjuto y enérgico, piel morena oliva, ojos oscuros, pelo oscuro abundante hasta la nuca y barba oscura en punta; rostro despierto y resuelto",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. El parecido sale del parentesco (Gn 12:5); el pelo y la barba siguen a los hombres del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta la rodilla, de franjas rojas y blancas, sujeta sobre un hombro y con el otro descubierto; cinturón de cuerda; sandalias",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Sigue a los hombres de Asia occidental del mural de Beni Hasan (A1, A2), varios con la túnica de franjas rojas y blancas sujeta sobre un hombro (mirado en A2 el 17-nov-2026). Cuál de los dos hombros y el cinturón de cuerda los elige el ilustrador.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a herdsman from western Asia of about forty, lean and energetic, with olive-brown skin, dark eyes, thick dark hair that reaches the nape of his neck and a full dark beard trimmed to a clear point below the chin. His head is bare, with nothing tied around it. His face is alert and decisive. He wears a knee-length wool tunic woven with narrow red and white stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, fastened over the left shoulder so that the right shoulder is bare, with a cord belt and leather sandals. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Pastor de Asia occidental de unos cuarenta años, enjuto y enérgico; piel morena oliva, ojos oscuros, pelo oscuro abundante hasta la nuca y barba oscura cerrada, acabada en punta bajo el mentón; cabeza descubierta, sin nada atado; rostro despierto y resuelto. Túnica de lana hasta la rodilla con franjas estrechas rojas y blancas, al modo de los asiáticos de las tumbas egipcias del Reino Medio, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón de cuerda y sandalias. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him old or grey-haired, and do not make him sneer or look greedy. Do not dress him in Egyptian white linen, a turban, a crown, armor or jewelry. Do not paint tents, animals, a city or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no sea viejo ni canoso; sin mueca ni aire codicioso; sin lino blanco egipcio, turbante, corona, armadura ni joyas; sin tiendas, animales, ciudad ni otras personas; fondo liso."
+  }
+}

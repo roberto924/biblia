@@ -1,0 +1,103 @@
+{
+  "id": "rey-sodoma",
+  "nombre": "El rey de Sodoma (Bera)",
+  "personas": [
+    "Bera_1"
+  ],
+  "pasajes": [
+    "gn-30",
+    "gn-31"
+  ],
+  "element": {
+    "nombre": "REY_SODOMA",
+    "tipo": "personaje"
+  },
+  "nota": "No se le dibuja como villano: Gn 13:13 habla de «los hombres de Sodoma», no del rey en particular, y en Gn 14 lo que hace es perder una batalla y proponer un reparto. Los otros ocho reyes de la guerra (Gn 14:1-9) no hablan y no tienen hoja.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre de unos cincuenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad ni dice desde cuándo reina; solo que los reyes de la llanura llevaban doce años sometidos (Gn 14:4). Se le dibuja maduro."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Bera, rey de Sodoma",
+      "certeza": "texto",
+      "ref": "Gn 14:2",
+      "cita": "Bera, rey de Sodoma"
+    },
+    {
+      "rasgo": "Con los otros reyes de la llanura sirvió doce años a Quedorlaomer y se rebeló",
+      "certeza": "texto",
+      "ref": "Gn 14:4",
+      "cita": "Doce años habían servido á Chêdorlaomer, y al décimotercio año se rebelaron"
+    },
+    {
+      "rasgo": "Huye de la batalla del valle de Siddim, lleno de pozos de betún",
+      "certeza": "texto",
+      "ref": "Gn 14:10",
+      "cita": "huyeron el rey de Sodoma y el de Gomorra, y cayeron allí"
+    },
+    {
+      "rasgo": "Sale a recibir a Abram cuando vuelve",
+      "certeza": "texto",
+      "ref": "Gn 14:17",
+      "cita": "salió el rey de Sodoma á recibirlo"
+    },
+    {
+      "rasgo": "Pide las personas y ofrece la hacienda",
+      "certeza": "texto",
+      "ref": "Gn 14:21",
+      "cita": "Dame las personas, y toma para ti la hacienda"
+    },
+    {
+      "rasgo": "El rey de Sodoma de Gn 14:17 y 14:21 es el mismo Bera de 14:2",
+      "certeza": "inferido",
+      "nota": "El texto solo da el nombre en 14:2; después dice «el rey de Sodoma». «Cayeron allí» (14:10) deja la duda de si cayó él o cayeron los suyos, pero el texto no nombra a otro rey y en 14:17 sale a recibir a Abram. La hoja vale en los dos casos: es «el rey de Sodoma».",
+      "base": [
+        {
+          "ref": "Gn 14:2",
+          "cita": "Bera, rey de Sodoma"
+        },
+        {
+          "ref": "Gn 14:17",
+          "cita": "salió el rey de Sodoma á recibirlo"
+        }
+      ]
+    },
+    {
+      "rasgo": "Hombre robusto, piel morena oliva, ojos oscuros, pelo oscuro abundante hasta la nuca y barba oscura en punta con algunas canas; gesto cansado y receloso",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. El cansancio sale de que acaba de perder la batalla y la ciudad ha sido saqueada (Gn 14:10-11); el pelo y la barba siguen a los hombres del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestido envolvente de lana hasta la rodilla, sujeto sobre un hombro, con dibujos ricos en rojo oscuro, ocre y blanco; faja ancha de tela; sandalias; sin corona; ropa y piernas con polvo del camino",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Como en Melquisedec, se distingue por la riqueza del tejido y no por una corona, según los dos jefes del cortejo de Beni Hasan (A1, A2), que llevan un vestido de dibujos más ricos hasta la rodilla (mirado en A2 el 17-nov-2026). El rojo oscuro, el ocre y el blanco, la faja y el polvo son elección del ilustrador.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre adulto, voz áspera y directa, español neutro. Solo habla en Gn 14:21: una propuesta corta, de quien negocia desde la derrota. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is the sturdy king of a city in the Jordan plain, about fifty years old, with olive-brown skin, dark eyes, thick dark hair that reaches the nape of his neck and a pointed dark beard with a little grey. His expression is tired and wary. He wears a knee-length wrapped wool garment fastened over one shoulder, richly woven with patterns in dark red, ochre and white, in the style of the leaders of the western Asian visitors painted in Middle Kingdom Egyptian tombs, with a wide cloth sash at the waist and leather sandals. His head is bare, his hands are empty, and his clothes and legs are dusty from the road.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Rey robusto de una ciudad de la llanura del Jordán, de unos cincuenta años; piel morena oliva, ojos oscuros, pelo oscuro abundante hasta la nuca y barba oscura en punta con algunas canas; gesto cansado y receloso. Vestido envolvente de lana hasta la rodilla, sujeto sobre un hombro, con dibujos ricos en rojo oscuro, ocre y blanco, al modo de los jefes asiáticos de las tumbas egipcias del Reino Medio; faja ancha de tela y sandalias. Cabeza descubierta, manos vacías, ropa y piernas con polvo del camino.",
+    "negativo_en": "Do not give him a crown, a turban, armor, a sword or jewelry, and do not make him sneer or look like a cartoon villain. Do not paint a city, soldiers, tar pits or any other person, and keep the background plain.",
+    "negativo_es": "Sin corona, turbante, armadura, espada ni joyas; sin mueca ni aire de villano de dibujos; sin ciudad, soldados, pozos de betún ni otras personas; fondo liso."
+  }
+}
