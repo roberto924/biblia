@@ -48,7 +48,7 @@
   ],
   "rasgos": [
     {
-      "dato": "Ofrenda de Caín: gavillas de cereal, legumbres y frutos de la tierra de ninguna especie reconocible, en un cesto de juncos sobre una piedra llana",
+      "dato": "Ofrenda de Caín: gavillas de cereal, legumbres, hojas verdes y calabazas de ninguna especie reconocible, en un cesto de juncos sobre una piedra llana",
       "certeza": "interpretacion",
       "nota": "Interpretación del ilustrador: el texto dice «del fruto de la tierra» sin más. No se dibuja peor ni estropeada: el texto no dice que lo fuera."
     },
@@ -59,9 +59,9 @@
     }
   ],
   "hoja_referencia": {
-    "prompt_en": "Make an object reference sheet on a plain light grey background, showing two separate offerings side by side with a clear space between them. On the left, a flat grey field stone holds a round woven reed basket filled with sheaves of ripe grain, pods of pulses and plain round and oval produce of the ground of no recognizable modern kind, all fresh and good. On the right, beside another flat grey field stone, a healthy young lamb with pale wool stands quietly on its four legs. Both are lit by soft, even daylight.",
-    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: dos ofrendas separadas, una junto a otra con espacio entre ellas. A la izquierda, sobre una piedra de campo gris y llana, un cesto redondo de juncos lleno de gavillas de cereal maduro, vainas de legumbres y frutos de la tierra redondos y ovalados de ninguna especie moderna reconocible, todo fresco y bueno. A la derecha, junto a otra piedra de campo llana, un cordero joven y sano de lana clara, de pie y tranquilo. Luz de día suave y pareja.",
-    "negativo_en": "Do not paint a built altar, fire, smoke, flames or light from the sky. Do not show a knife, a slaughtered animal or any people. Do not make the basket of produce look rotten, withered or poor, and keep the background plain.",
-    "negativo_es": "Sin altar construido, fuego, humo, llamas ni luz del cielo; sin cuchillo, animal sacrificado ni personas; el cesto no está podrido, marchito ni pobre; fondo liso."
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing two separate offerings side by side with a clear space between them. On the left, a flat grey field stone holds a round woven reed basket filled with bundles of ripe grain, pods of pulses, leafy greens and plain smooth gourds in dull green and tan of no recognizable modern kind, all fresh and good. On the right, a healthy young lamb with pale wool stands quietly on its four legs on the bare ground, next to another flat grey field stone and not on top of it. Both are lit by soft, even daylight.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: dos ofrendas separadas, una junto a otra con espacio entre ellas. A la izquierda, sobre una piedra de campo gris y llana, un cesto redondo de juncos lleno de gavillas de cereal maduro, vainas de legumbres, hojas verdes y calabazas lisas de color verde apagado y tostado de ninguna especie moderna reconocible, todo fresco y bueno. A la derecha, un cordero joven y sano de lana clara, de pie y tranquilo sobre el suelo desnudo, junto a otra piedra de campo llana y no encima de ella. Luz de día suave y pareja.",
+    "negativo_en": "Do not paint pomegranates, onions, citrus fruit, apples, grapes, figs or any fruit that can be recognized. Do not paint a built altar, fire, smoke, flames or light from the sky. Do not show a knife, a slaughtered animal or any people. Do not make the basket of produce look rotten, withered or poor, and keep the background plain.",
+    "negativo_es": "Sin granadas, cebollas, cítricos, manzanas, uvas, higos ni fruta reconocible; sin altar construido, fuego, humo, llamas ni luz del cielo; sin cuchillo, animal sacrificado ni personas; el cesto no está podrido, marchito ni pobre; fondo liso."
   }
 }
