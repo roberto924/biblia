@@ -2169,7 +2169,7 @@ if (typeof document !== 'undefined') (function () {
         <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
         <h1 tabindex="-1">${esc(p.titulo)}</h1>
         ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}${genealogiaHTML(p)}</header>
-      ${imagenPasajeHTML(p)}
+      ${mediosPasajeHTML(p)}
       ${herramientasPasajeHTML()}
       ${dificilesHTML(p)}
       ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
@@ -2898,27 +2898,77 @@ if (typeof document !== 'undefined') (function () {
   const imgRec = (f, cls) => `<img class="${cls}" src="${esc(f.imagen)}" alt="${esc(altRec(f))}" loading="lazy" decoding="async"${f.ancho && f.alto ? ` width="${f.ancho}" height="${f.alto}"` : ''}>`;
   const ICO_AMPLIAR = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 3h5v5M8 17H3v-5M17 3l-6 6M3 17l6-6"/></svg>';
   const imagenesPasaje = p => { if (!p) return []; const ks = N.versiculosDe(D, p).map(v => v.clave); return permitidos(N.imagenesDe(R, ks), ks); };
-  // Imagen principal del pasaje: solo si alguna obra se solapa con él; si hay varias, carrusel discreto.
-  function imagenPasajeHTML(p) {
-    const imgs = imagenesPasaje(p);
-    if (!imgs.length) return '';
-    if (!estado.recIdx || estado.recIdx.id !== p.id) estado.recIdx = { id: p.id, i: 0 };
-    const i = Math.min(estado.recIdx.i, imgs.length - 1), f = imgs[i];
-    return `<figure class="rec-principal" id="rec-principal">
-      <button type="button" class="rec-marco" data-visor="${esc(f.id)}" aria-label="Ampliar: ${esc(f.titulo)}">${imgRec(f, 'rec-img')}<span class="rec-ampliar">${ICO_AMPLIAR}</span></button>
-      <figcaption class="rec-pie">${pieRec(f, true)}</figcaption>
-      ${imgs.length > 1 ? `<div class="rec-carrusel" role="group" aria-label="Imágenes del pasaje">
-        <button type="button" class="rec-paso" data-rec-paso="-1" aria-label="Imagen anterior"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>
-        <span class="rec-cuenta" aria-live="polite">${i + 1} de ${imgs.length}</span>
-        <button type="button" class="rec-paso" data-rec-paso="1" aria-label="Imagen siguiente"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button></div>` : ''}
-    </figure>`;
+  /* ---------- Videos e imágenes del pasaje: dos pestañas bajo el título, uno en grande y el resto en miniatura ---------- */
+  // Videos del pasaje: los propios (el video narrado es el pasaje mismo: se ve en el pasaje en curso) van primero;
+  // los externos solo cuando está LEÍDO todo lo que cubren. «Repaso»: los que se acaban de desbloquear al leer el anterior.
+  const ICO_REPROD = '<span class="video-play" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M7 5v10l8-5z"/></svg></span>';
+  function videosPasaje(p) {
+    if (!R || !p) return { ver: [], espera: [], repaso: [], prev: null };
+    const ks = N.versiculosDe(D, p).map(v => v.clave);
+    const vale = N.recursosDe(R, ks, ['video']).filter(f => N.recursoPermitido(f, perfil(), CONT(), ks));
+    const propios = vale.filter(f => f.propio && recOk(f));
+    const externos = mediosPermitidos(vale.filter(f => !f.propio), ks);
+    const espera = vale.filter(f => !f.propio && !externos.includes(f));
+    const ps = N.pasajes(D), ip = ps.findIndex(x => x.id === p.id), prev = ip > 0 ? ps[ip - 1] : null;
+    const repaso = prev ? mediosPermitidos(N.recursos(R).filter(f => f.tipo === 'video' && !f.propio && !vale.includes(f) && finMedio(f) === prev.id)) : [];
+    const jugable = f => f.modo === 'incrustable' && N.esIdYoutube(f.youtube) ? 0 : 1; // lo que se reproduce aquí, antes que los enlaces
+    const ext = externos.slice().sort((a, b) => jugable(a) - jugable(b)).concat(repaso.slice().sort((a, b) => jugable(a) - jugable(b)));
+    return { ver: propios.concat(ext), espera, repaso, prev };
   }
-  function pasoImagen(d) {
-    const imgs = imagenesPasaje(estado.pasaje), el = $('#rec-principal');
-    if (!el || imgs.length < 2) return;
-    estado.recIdx = { id: estado.pasaje.id, i: (estado.recIdx.i + d + imgs.length) % imgs.length };
-    el.outerHTML = imagenPasajeHTML(estado.pasaje);
-    const b = main.querySelector(`[data-rec-paso="${d}"]`); if (b) b.focus();
+  // Estado de la galería, por pasaje: pestaña y elegido de cada una. Por defecto, videos si hay alguno que ver.
+  function galeriaDe(p, V, imgs) {
+    // `eligio`: la pestaña que la persona tocó (si no, manda la regla: videos si hay alguno que ver, si no imágenes).
+    const g = estado.galeria && estado.galeria.id === p.id ? estado.galeria : { id: p.id, eligio: null, sel: {} };
+    const hayV = V.ver.length || V.espera.length;
+    g.pestana = g.eligio === 'videos' && hayV ? 'videos' : g.eligio === 'imagenes' && imgs.length ? 'imagenes'
+      : V.ver.length || !imgs.length ? 'videos' : 'imagenes';
+    if (!V.ver.some(f => f.id === g.sel.videos)) g.sel.videos = V.ver.length ? V.ver[0].id : null;
+    if (!imgs.some(f => f.id === g.sel.imagenes)) g.sel.imagenes = imgs.length ? imgs[0].id : null;
+    return (estado.galeria = g);
+  }
+  const creadorDe = f => String(f.institucion || '').split(/[(,]/)[0].trim() || 'la fuente';
+  function videoGrandeHTML(f, V) {
+    const det = [creadorDe(f), f.idioma === 'es' ? 'en español' : IDIOMA_TXT[f.idioma] || f.idioma, f.duracion].filter(Boolean).map(esc).join(' · ');
+    const cuerpo = f.modo === 'incrustable' && N.esIdYoutube(f.youtube)
+      ? `<button type="button" class="video-fachada" data-medio-play="${esc(f.id)}" aria-label="Reproducir el video: ${esc(f.titulo)}"><img src="https://i.ytimg.com/vi/${esc(f.youtube)}/hqdefault.jpg" alt="" onerror="this.remove()">${ICO_REPROD}</button>`
+      : `<a class="video-fachada vacia" href="${esc(urlRec(f.url_fuente))}" target="_blank" rel="noopener noreferrer">${ICO_REPROD}<span class="video-invita">Este video no se puede mostrar aquí: verlo en ${esc(creadorDe(f))}<span class="meta"> (se abre aparte)</span></span></a>`;
+    const repaso = V.repaso.includes(f) && V.prev ? `<span class="rec-nota">Repaso de lo leído: ${esc(V.prev.titulo || V.prev.id)}. Ya terminaste de leer lo que comenta.</span>` : '';
+    return `<figure class="medio-grande">${cuerpo}
+      <figcaption class="rec-pie"><strong class="rec-titulo">${esc(f.titulo)}</strong>
+        <span class="rec-datos">${f.propio ? '<span class="etiqueta rec-rotulo rec-ilustracion">Ilustración moderna (generada con IA)</span>' : '<span class="etiqueta externa">Fuente externa</span>'} Video${det ? ' · ' + det : ''}${(f.refs || []).length ? ' · ' + f.refs.map(esc).join(', ') : ''}</span>${repaso}
+        ${f.nota_certeza ? `<details class="plegable medio-nota"><summary>Sobre este video</summary><p class="rec-nota">${esc(f.nota_certeza)}</p></details>` : ''}
+        <span class="rec-datos">${licRec(f)}${urlRec(f.url_fuente) ? ' · ' + linkRec(f.url_fuente, `Ver en ${esc(creadorDe(f))}`) : ''}</span>
+        <span class="rec-atrib">${esc(f.atribucion)}</span></figcaption></figure>`;
+  }
+  function imagenGrandeHTML(f) {
+    return `<figure class="medio-grande"><button type="button" class="rec-marco" data-visor="${esc(f.id)}" aria-label="Ampliar: ${esc(f.titulo)}">${imgRec(f, 'rec-img')}<span class="rec-ampliar">${ICO_AMPLIAR}</span></button>
+      <figcaption class="rec-pie">${pieRec(f, true)}</figcaption></figure>`;
+  }
+  // Miniatura: al pulsarla pasa al lugar grande.
+  function miniHTML(f, pestana) {
+    const yt = f.tipo === 'video' && N.esIdYoutube(f.youtube);
+    const img = f.tipo === 'video' ? (yt ? `<img src="https://i.ytimg.com/vi/${esc(f.youtube)}/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">` : '') : imgRec(f, '');
+    return `<li><button type="button" class="medio-mini${f.tipo === 'video' ? ' es-video' : ''}" data-medio-sel="${esc(pestana)}|${esc(f.id)}" aria-label="${f.tipo === 'video' ? 'Poner en grande el video' : 'Poner en grande la imagen'}: ${esc(f.titulo)}">
+      <span class="medio-mini-img">${img}${f.tipo === 'video' ? ICO_REPROD : ''}</span>
+      <span class="medio-mini-txt">${f.tipo === 'video' ? `${f.propio ? 'Narrado' : esc(creadorDe(f))}${(f.refs || []).length ? ` · ${esc(f.refs.join(', '))}` : ''}` : esc([f.autor, f.fecha].filter(Boolean).join(', ') || N.rotuloRecurso(f))}</span></button></li>`;
+  }
+  function mediosPasajeHTML(p) {
+    const V = videosPasaje(p), imgs = imagenesPasaje(p);
+    if (!V.ver.length && !V.espera.length && !imgs.length) return '';
+    const g = galeriaDe(p, V, imgs), enVideos = g.pestana === 'videos';
+    const tabs = (V.ver.length || V.espera.length) && imgs.length
+      ? `<fieldset class="segmentos medios-tabs"><legend class="sr">Qué ver del pasaje</legend>${[['videos', `Videos (${V.ver.length})`], ['imagenes', `Imágenes (${imgs.length})`]].map(([v, t]) => `<label><input type="radio" name="medio-pestana" value="${v}" ${g.pestana === v ? 'checked' : ''}><span>${v === 'videos' && !V.ver.length ? ICO_CANDADO : ''}${t}</span></label>`).join('')}</fieldset>` : '';
+    const lista = enVideos ? V.ver : imgs, sel = lista.find(f => f.id === g.sel[g.pestana]) || null;
+    const grande = sel ? (enVideos ? videoGrandeHTML(sel, V) : imagenGrandeHTML(sel)) : '';
+    const resto = lista.filter(f => f !== sel);
+    const minis = resto.length ? `<ul class="medio-minis" aria-label="${enVideos ? 'Otros videos' : 'Otras imágenes'} del pasaje">${resto.map(f => miniHTML(f, g.pestana)).join('')}</ul>` : '';
+    const espera = enVideos && V.espera.length ? `<p class="meta video-libro-bloq">${ICO_CANDADO} ${V.espera.length === 1 ? 'Hay un video' : `Hay ${V.espera.length} videos`} sobre este texto: ${V.espera.length === 1 ? 'comenta' : 'comentan'} más de lo que llevas leído, así que se ${V.espera.length === 1 ? 'podrá' : 'podrán'} ver cuando termines de leer ${esc(hastaMedios(V.espera))}.</p>` : '';
+    return `<section class="medios-pasaje" id="medios-pasaje" aria-label="Videos e imágenes del pasaje">${tabs}${grande}${minis}${espera}</section>`;
+  }
+  function pintarMedios(foco) {
+    const el = $('#medios-pasaje'); if (!el || !estado.pasaje) return;
+    el.outerHTML = mediosPasajeHTML(estado.pasaje);
+    const b = foco && main.querySelector(foco); if (b) b.focus();
   }
   // Ficha compacta de un recurso (acompañante, galería de mapas).
   function recItemHTML(f) {
@@ -2949,17 +2999,19 @@ if (typeof document !== 'undefined') (function () {
     let html = '';
     const ksP = N.versiculosDe(D, p).map(v => v.clave); // el permiso se mira en todo el pasaje, como en el carrusel
     const objs = permitidos(A.objetos.concat(A.imagenes), ksP);
-    const relac = (A.medios || []).filter(f => N.recursoPermitido(f, perfil(), CONT(), ksP) && recOk(f));
-    A.medios = mediosPermitidos(A.medios, ksP);
+    // Los videos van en la galería del pasaje (bajo el título), que no cambia al pulsar versículos; aquí queda el audio.
+    const audios = (A.medios || []).filter(f => f.tipo === 'audio');
+    const relac = audios.filter(f => N.recursoPermitido(f, perfil(), CONT(), ksP) && recOk(f));
+    const oyes = mediosPermitidos(audios, ksP);
     // Los que tocan este pasaje pero aún cubren algo sin leer: solo se avisa de que existen y de cuándo se verán.
-    const espera = relac.filter(f => !A.medios.includes(f));
+    const espera = relac.filter(f => !oyes.includes(f));
     // Repaso: los que se acaban de desbloquear al marcar el pasaje anterior (terminan en él).
     const ps = N.pasajes(D), ip = ps.findIndex(x => x.id === p.id), prev = ip > 0 ? ps[ip - 1] : null;
-    const repaso = prev ? mediosPermitidos(N.recursos(R).filter(f => (f.tipo === 'video' || f.tipo === 'audio') && !A.medios.includes(f) && finMedio(f) === prev.id)) : [];
+    const repaso = prev ? mediosPermitidos(N.recursos(R).filter(f => f.tipo === 'audio' && !oyes.includes(f) && finMedio(f) === prev.id)) : [];
     if (objs.length) html += sec('Imágenes y objetos', `<ul class="rec-lista">${objs.map(recItemHTML).join('')}</ul>`, I('M3 5h14v10H3zM3 13l4-4 3 3 2-2 5 5'));
-    if (A.medios.length || espera.length) html += sec('Videos y audio', (A.medios.length ? `<ul class="rec-lista medios">${A.medios.map(medioHTML).join('')}</ul>` : '')
-      + (espera.length ? `<p class="meta video-libro-bloq">${ICO_CANDADO} ${espera.length === 1 ? 'Hay un video' : `Hay ${espera.length} videos o audios`} sobre este texto: ${espera.length === 1 ? 'comenta' : 'comentan'} más de lo que llevas leído, así que se ${espera.length === 1 ? 'podrá' : 'podrán'} ver cuando termines de leer ${esc(hastaMedios(espera))}.</p>` : ''), I('M7 5v10l8-5z'));
-    if (repaso.length) html += sec(`Repaso de lo leído: ${esc(prev.titulo || prev.id)}`, `<p class="meta">Ya terminaste de leer lo que ${repaso.length === 1 ? 'comenta este video' : 'comentan estos videos'}.</p><ul class="rec-lista medios">${repaso.map(medioHTML).join('')}</ul>`, I('M7 5v10l8-5z'));
+    if (oyes.length || espera.length) html += sec('Audio', (oyes.length ? `<ul class="rec-lista medios">${oyes.map(medioHTML).join('')}</ul>` : '')
+      + (espera.length ? `<p class="meta video-libro-bloq">${ICO_CANDADO} ${espera.length === 1 ? 'Hay un audio' : `Hay ${espera.length} audios`} sobre este texto: ${espera.length === 1 ? 'abarca' : 'abarcan'} más de lo que llevas leído, así que se ${espera.length === 1 ? 'podrá' : 'podrán'} escuchar cuando termines de leer ${esc(hastaMedios(espera))}.</p>` : ''), I('M4 8h3l4-3.5v11L7 12H4z'));
+    if (repaso.length) html += sec(`Repaso de lo leído: ${esc(prev.titulo || prev.id)}`, `<p class="meta">Ya terminaste de leer lo que ${repaso.length === 1 ? 'abarca este audio' : 'abarcan estos audios'}.</p><ul class="rec-lista medios">${repaso.map(medioHTML).join('')}</ul>`, I('M4 8h3l4-3.5v11L7 12H4z'));
     return html;
   }
   // Pasaje donde termina lo que cubre un video o audio (el de su último versículo), o null.
@@ -5123,7 +5175,8 @@ if (typeof document !== 'undefined') (function () {
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
     const vi = t.closest('[data-visor]'); if (vi) { abrirVisor(vi.dataset.visor); return; }
     const vz = t.closest('[data-vzoom]'); if (vz) { zoomVisor(+vz.dataset.vzoom); return; }
-    const rpa = t.closest('[data-rec-paso]'); if (rpa) { pasoImagen(+rpa.dataset.recPaso); return; }
+    const msel = t.closest('[data-medio-sel]'); if (msel && estado.galeria) { const [pe, id] = msel.dataset.medioSel.split('|'); estado.galeria.sel[pe] = id; pintarMedios('#medios-pasaje .medio-grande button, #medios-pasaje .medio-grande a'); return; }
+    const mpl = t.closest('[data-medio-play]'); if (mpl) { const f = recPorId(mpl.dataset.medioPlay); if (f && N.esIdYoutube(f.youtube)) mpl.outerHTML = iframeVideo({ youtube_id: f.youtube, titulo: f.titulo }); return; }
     const rv = t.closest('[data-rec-video]'); if (rv) { const f = recPorId(rv.dataset.recVideo); if (f && N.esIdYoutube(f.youtube)) { estado.recVideo = f.id; rv.outerHTML = iframeVideo({ youtube_id: f.youtube, titulo: f.titulo }); } return; }
     const va = t.closest('[data-variante]'); if (va) { abrirVariante(va.dataset.variante); return; }
     if (t.closest('[data-escuchar]')) {
@@ -5187,6 +5240,7 @@ if (typeof document !== 'undefined') (function () {
     else if (t.dataset && t.dataset.sup) { const g = store.get('biblia.supuestos', {}); g[t.dataset.sup] = t.value; store.set('biblia.supuestos', g); rerender(`input[data-sup="${CSS.escape(t.dataset.sup)}"][value="${CSS.escape(t.value)}"]`); }
     else if (['col-libro', 'col-sexo', 'col-grupo', 'col-estado'].includes(t.name)) { estado[{ 'col-libro': 'colLibro', 'col-sexo': 'colSexo', 'col-grupo': 'colGrupo', 'col-estado': 'colEstado' }[t.name]] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'explicaciones') { store.set('biblia.explicaciones', !!t.checked); rerender('input[name="explicaciones"]'); }
+    else if (t.name === 'medio-pestana') { if (estado.galeria) { estado.galeria.eligio = t.value; pintarMedios(`input[name="medio-pestana"][value="${t.value}"]`); } }
     else if (t.name === 'modo-pasaje') { estado.comparar = t.value === 'comparar'; store.set('biblia.comparar', estado.comparar); rerender(`input[name="modo-pasaje"][value="${t.value}"]`); }
     else if (t.dataset && t.dataset.col) { alternarColumna(t.dataset.col, t.checked); rerender(`input[data-col="${t.dataset.col}"]`); }
     else if (t.name === 'voz-idioma') {

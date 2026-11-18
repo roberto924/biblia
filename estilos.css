@@ -873,7 +873,7 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 
 /* ---------- Imágenes, objetos, mapas antiguos y medios (datos/recursos.js) ----------
    Rótulo siempre visible: Arte (lapislázuli) · Reconstrucción / Ilustración moderna (ocre) · Objeto histórico / Mapa antiguo (verdín) · Contexto (gris). */
-.rec-principal { margin: 0 0 1.4rem; max-width: 46rem; }
+.medios-pasaje { margin: 0 0 1.4rem; max-width: 46rem; }
 .rec-marco { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--linea); border-radius: var(--r-tarjeta); overflow: hidden; background: var(--hoja2); cursor: zoom-in; color: inherit; }
 .rec-img { display: block; width: 100%; height: auto; max-height: min(28rem, 52vh); object-fit: contain; }
 .rec-ampliar { position: absolute; right: .55rem; bottom: .55rem; display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: rgb(15 18 40 / .7); color: #fff; opacity: .85; transition: opacity var(--t); }
@@ -902,11 +902,23 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 .ms-enlaces { list-style: none; padding: 0; margin: .3rem 0; display: grid; gap: .55rem; }
 .ms-enlaces li { display: grid; gap: .1rem; padding-left: .7rem; border-left: 3px solid var(--linea); overflow-wrap: anywhere; }
 .rec-debatida { background: var(--difiere); color: var(--tinta); }
-.rec-carrusel { display: flex; align-items: center; justify-content: center; gap: .5rem; margin-top: .35rem; }
-.rec-paso { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--linea); border-radius: 50%; background: var(--hoja); color: var(--lapis); cursor: pointer; }
-.rec-paso:hover { background: var(--lapis-tinte); }
-.rec-paso svg { width: 1.1rem; height: 1.1rem; stroke-width: 2; }
-.rec-cuenta { min-width: 4.5rem; text-align: center; font-size: .85rem; color: var(--suave); font-variant-numeric: tabular-nums; }
+/* Galería del pasaje: pestañas Videos | Imágenes, uno en grande y el resto en miniaturas que pasan al grande. */
+.medios-tabs { margin: 0 0 .6rem; }
+.medios-tabs span svg { width: .95rem; height: .95rem; margin-right: .35rem; }
+.medio-grande { margin: 0; }
+.medio-grande .video-fachada.vacia { min-height: 7rem; }
+.medio-nota > summary { font-size: .84rem; min-height: 0; padding: .2rem 0; }
+.medio-minis { list-style: none; padding: 0; margin: .7rem 0 0; display: flex; flex-wrap: wrap; gap: .55rem; }
+.medio-mini { display: flex; flex-direction: column; gap: .25rem; width: 8.5rem; padding: 0; border: 0; background: none; color: var(--suave); font: inherit; font-size: .78rem; line-height: 1.25; text-align: left; cursor: pointer; }
+.medio-mini-img { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 4 / 3; border: 1px solid var(--linea); border-radius: .55rem; overflow: hidden; background: var(--hoja2); }
+.medio-mini.es-video .medio-mini-img { aspect-ratio: 16 / 9; background: linear-gradient(145deg, var(--lapis-hondo), #10152e); }
+.medio-mini-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.medio-mini .video-play { width: 2rem; height: 2rem; }
+.medio-mini .video-play svg { width: .95rem; height: .95rem; }
+.medio-mini:hover .medio-mini-img { border-color: var(--lapis); }
+.medio-mini:focus-visible { outline: 3px solid var(--lapis); outline-offset: 2px; border-radius: .55rem; }
+.medio-mini-txt { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.medios-pasaje .video-libro-bloq { margin: .6rem 0 0; }
 .rec-lista { list-style: none; padding: 0; margin: 0; display: grid; gap: .85rem; }
 .rec-item { display: grid; grid-template-columns: 4.75rem minmax(0, 1fr); gap: .7rem; align-items: start; font-size: .86rem; line-height: 1.4; color: var(--suave); }
 .rec-item.sin-imagen { grid-template-columns: minmax(0, 1fr); }
