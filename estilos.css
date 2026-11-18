@@ -275,7 +275,7 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
   /* Comparar pone varios textos lado a lado: ahí el texto se queda con el sitio y el acompañante con 19–28rem. */
   main:has(.pasaje-vista .comparar) { --ancho: 124rem; }
   .pasaje-vista:has(.comparar) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
-  .pasaje-vista > .lectura > :not(.cab-pasaje) { max-width: none; }
+  .pv-portada > :not(.cab-pasaje), .pv-texto > * { max-width: none; }
   .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; container: acomp / inline-size; }
   .acomp-cab::before { display: none; }
   .acomp-asa { cursor: default; pointer-events: none; }
@@ -286,6 +286,27 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
     .acomp-columnas > * { break-inside: avoid; }
   }
 }
+/* Pantalla muy ancha: tres columnas. 1) título y galería, 2) el texto con su ancho de lectura, 3) el acompañante
+   (referencias y lo adicional). La portada y el acompañante se quedan a la vista mientras se lee. El texto sigue
+   con prioridad: su pista crece primero y el acompañante se queda con lo que sobra (19–56rem). */
+@media (min-width: 1800px) {
+  main:has(.pasaje-vista) { --portada: 24rem; --ancho: calc(var(--portada) + 44rem + 56rem + 6rem); }
+  .pasaje-vista { gap: 3rem; grid-template-columns: minmax(0, calc(var(--portada) + 3rem + 44rem)) minmax(19rem, 1fr); }
+  .lectura { display: grid; grid-template-columns: var(--portada) minmax(0, 44rem); gap: 3rem; align-items: start; }
+  .pv-portada { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow-y: auto; scrollbar-width: thin; padding: 3px; margin: -3px; }
+  .pv-portada .medios-pasaje { margin-top: 1.5rem; }
+  .pv-texto > .herr-pasaje:first-child { margin-top: 0; }
+  main:has(.pasaje-vista .comparar) { --ancho: 150rem; }
+  .pasaje-vista:has(.comparar) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
+  .pasaje-vista:has(.comparar) .lectura { grid-template-columns: var(--portada) minmax(0, 1fr); }
+}
+/* Pantalla enorme: sin tope; el texto conserva su ancho de lectura y el acompañante se queda con todo lo demás. */
+@media (min-width: 2200px) {
+  main:has(.pasaje-vista) { --portada: 28rem; }
+  main:has(.pasaje-vista), main:has(.pasaje-vista .comparar) { --ancho: 400rem; }
+  @container acomp (min-width: 66rem) { .acomp-columnas { columns: 3; } }
+}
+@media (min-width: 2800px) { main:has(.pasaje-vista) { --portada: 32rem; } }
 @media (max-width: 1099px) { .pasaje-vista ~ *, main:has(.pasaje-vista) { padding-bottom: calc(var(--nav-h) + var(--asa-h) + 2rem + env(safe-area-inset-bottom)); } }
 @media (min-width: 900px) and (max-width: 1099px) { main:has(.pasaje-vista) { padding-bottom: calc(var(--asa-h) + 2.5rem); } }
 

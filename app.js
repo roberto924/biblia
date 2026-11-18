@@ -2163,13 +2163,14 @@ if (typeof document !== 'undefined') (function () {
       return `${cab}<span class="vers${ap ? ' con-apoyo' : ''}${k === estado.activo ? ' activo' : ''}${habla.k === k ? ' sonando' : ''}${nbClases(nt)}" id="v${v.cap}-${v.n}" data-v="${k}"><button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${v.n}${ap ? ', con datos en el acompañante' : ''}">${v.n}</button>${nbSrHTML(nt)}${marcaVariante(v.ref, v.n)}${partes}${nbIndHTML(nt, k, v.n)} </span>`;
     }, (vsP, j) => { const v = vsP[0], cab = v.cap !== capPrev && j ? `<span class="cap-marca">Capítulo ${v.cap}</span>` : ''; capPrev = vsP[vsP.length - 1].cap; return cab; });
     const nuevos = N.primerasApariciones(D, p);
-    return `<div class="pasaje-vista"><article class="lectura">${aviso ? `<div role="status">${aviso}</div>` : ''}
+    // Tres bloques: portada (título y galería), texto y acompañante; en pantalla muy ancha son tres columnas (estilos.css).
+    return `<div class="pasaje-vista"><article class="lectura"><div class="pv-portada">${aviso ? `<div role="status">${aviso}</div>` : ''}
       <header class="cab-pasaje"><a class="volver" href="#leer/${esc(lb)}"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg>Plan de lectura</a>
         <p class="pasaje-libro">${esc(N.nombreLibro(D, lb))}</p>
         <p class="pasaje-rango">${rango(p)}<span class="pasaje-pos">pasaje ${iL + 1} de ${psL.length}</span></p>
         <h1 tabindex="-1">${esc(p.titulo)}</h1>
         ${p.titulo_origen === 'editorial' ? '<p class="meta">Título editorial, no del texto bíblico.</p>' : ''}${genealogiaHTML(p)}</header>
-      ${mediosPasajeHTML(p)}
+      ${mediosPasajeHTML(p)}</div><div class="pv-texto">
       ${herramientasPasajeHTML()}
       ${dificilesHTML(p)}
       ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
@@ -2182,7 +2183,7 @@ if (typeof document !== 'undefined') (function () {
         ${prev ? `<a class="boton secundario" href="#leer/p/${esc(prev.id)}" title="${esc(prev.titulo)}">Anterior</a>` : '<span></span>'}
         ${marcarHTML(p, next)}
         ${nextOk ? `<a class="boton secundario" href="#leer/p/${esc(next.id)}" title="${esc(next.titulo)}">Siguiente</a>` : next ? `<span class="boton secundario siguiente-bloq" aria-disabled="true" title="Se desbloquea al marcar como leído este pasaje">${ICO_CANDADO}Siguiente</span>` : '<span></span>'}
-      </nav>${reglaHTML()}</article>
+      </nav>${reglaHTML()}</div></article>
       <aside class="acompanante${estado.hoja ? ' abierta' : ''}" id="acompanante" aria-label="Acompañante de lectura">${acompHTML()}</aside></div>`;
   }
 
