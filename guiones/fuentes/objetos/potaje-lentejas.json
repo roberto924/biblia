@@ -1,0 +1,76 @@
+{
+  "id": "potaje-lentejas",
+  "nombre": "El potaje de lentejas y el pan",
+  "pasajes": [
+    "gn-53"
+  ],
+  "element": {
+    "nombre": "POTAJE_LENTEJAS",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. La hoja fija la olla al fuego, el plato servido y el pan, como los ve Esaú al volver cansado del campo (Gn 25:29-30) y como Jacob se los da (Gn 25:34). El texto dice que Esaú «comió y bebió» sin decir qué bebió: la bebida no va en la hoja y se resuelve en la toma.",
+  "texto": [
+    {
+      "dato": "Jacob guisa un potaje",
+      "certeza": "texto",
+      "ref": "Gn 25:29",
+      "cita": "guisó Jacob un potaje"
+    },
+    {
+      "dato": "Es rojizo: Esaú lo llama «eso bermejo»",
+      "certeza": "texto",
+      "ref": "Gn 25:30",
+      "cita": "Ruégote que me des á comer de eso bermejo"
+    },
+    {
+      "dato": "Es un guisado de lentejas, y Jacob lo da con pan",
+      "certeza": "texto",
+      "ref": "Gn 25:34",
+      "cita": "Jacob dió á Esaú pan y del guisado de las lentejas"
+    },
+    {
+      "dato": "Esaú come y bebe, y se va",
+      "certeza": "texto",
+      "ref": "Gn 25:34",
+      "cita": "él comió y bebió, y levantóse, y fuése"
+    },
+    {
+      "dato": "Lo guisa en el campamento, junto a las tiendas",
+      "certeza": "inferido",
+      "nota": "Jacob es el que «habitaba en tiendas» y Esaú llega «del campo»: se entiende que el potaje está al fuego en el campamento. El texto no dice dónde.",
+      "base": [
+        {
+          "ref": "Gn 25:27",
+          "cita": "Jacob empero era varón quieto, que habitaba en tiendas"
+        },
+        {
+          "ref": "Gn 25:29",
+          "cita": "volviendo Esaú del campo cansado"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Olla: panzuda, de barro cocido liso y ennegrecido por el fuego, sobre tres piedras con brasas debajo, llena de un guiso espeso de lentejas de color pardo rojizo que humea",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto da las lentejas y el color «bermejo» (Gn 25:30, 25:34), no la olla ni el fuego."
+    },
+    {
+      "dato": "Plato: un cuenco hondo y liso de barro con el mismo guiso, servido",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que Jacob se lo dio (Gn 25:34), no en qué."
+    },
+    {
+      "dato": "Pan: dos tortas redondas y planas de pan, tostadas por fuera",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «pan» (Gn 25:34), no qué forma tenía. Las tortas planas son la elección por defecto, sin referencia de época comprobada."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left, a round-bellied cooking pot of plain fired clay, blackened by the fire, sits on three stones over glowing embers; it is full of a thick, steaming stew of lentils of a reddish-brown color. In the center is a deep, plain clay bowl filled with the same reddish lentil stew. On the right are two round, flat loaves of bread, toasted on the outside. Nobody is holding any of them.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con tres cosas una al lado de otra. A la izquierda, una olla panzuda de barro cocido liso, ennegrecida por el fuego, sobre tres piedras con brasas encendidas debajo, llena de un guiso espeso de lentejas de color pardo rojizo que humea. En el centro, un cuenco hondo y liso de barro con el mismo guiso rojizo. A la derecha, dos tortas redondas y planas de pan, tostadas por fuera. Nadie sostiene nada.",
+    "negativo_en": "Do not show meat, vegetables other than lentils, spoons, forks, metal pots or decorated pottery. Do not make the stew bright red like tomato or blood. Do not show a cup, a jug, people, hands, tents or animals. Keep the background plain.",
+    "negativo_es": "Sin carne, otras verduras que no sean lentejas, cucharas, tenedores, ollas de metal ni cerámica decorada; que el guiso no sea rojo vivo como tomate o sangre; sin vaso, jarra, personas, manos, tiendas ni animales; fondo liso."
+  }
+}

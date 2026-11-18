@@ -1,0 +1,193 @@
+{
+  "id": "isaac-anciano",
+  "nombre": "Isaac anciano y ciego (Gn 27 – Gn 35)",
+  "personas": [
+    "Isaac_1"
+  ],
+  "pasajes": [
+    "gn-56",
+    "gn-57",
+    "gn-58",
+    "gn-59"
+  ],
+  "element": {
+    "nombre": "ISAAC_ANCIANO",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto desde Gn 27:1, cuando ya es viejo y no ve, hasta su muerte a los ciento ochenta años (Gn 35:27-29): esta hoja sirve también para gn-75, cuyos pasajes anota el redactor de Gn 32–36. Es el mismo hombre de ISAAC_ADULTO e ISAAC_MAYOR, muy viejo (si se genera a mano en ChatGPT, adjuntar también la imagen de ISAAC_MAYOR): misma cara, misma túnica crema de franjas rojas y azul oscuro y el mismo manto azul grisáceo. La ceguera se muestra con respeto: ojos velados y una mirada que no se fija, nada que impresione (decisión pendiente n.º 41 de guiones/LEEME.md). En Gn 27 está acostado o sentado en su tienda (escenarios/tienda-isaac): Jacob y Esaú le piden que se levante y se siente (Gn 27:19, 27:31); por eso la vista de cuerpo entero lo muestra sentado. Palpa a Jacob (Gn 27:21-23), lo besa y huele sus vestidos (Gn 27:26-27): las tomas lo muestran tanteando con las manos. Habla mucho en Gn 27 y en Gn 28:1-4, pero su voz está en isaac-muchacho (decisión pendiente n.º 27); tonos: Gn 27:1-4, cansado y afectuoso; Gn 27:18-27, receloso, tantea, y luego se rinde; Gn 27:33, estremecido; Gn 27:35-40, grave y dolido; Gn 28:1-4, solemne. Jehová y Dios, a quien nombra al bendecir, no tienen figura (decisión n.º 1).",
+  "edades": [
+    {
+      "dato": "Ha envejecido y ya no ve",
+      "certeza": "texto",
+      "ref": "Gn 27:1",
+      "cita": "cuando hubo Isaac envejecido, y sus ojos se ofuscaron quedando sin vista"
+    },
+    {
+      "dato": "Se dice viejo y no sabe el día de su muerte",
+      "certeza": "texto",
+      "ref": "Gn 27:2",
+      "cita": "He aquí ya soy viejo, no sé el día de mi muerte"
+    },
+    {
+      "dato": "Unos ciento treinta y siete años cuando bendice a Jacob",
+      "certeza": "calculo",
+      "valor": 137,
+      "nota": "Los pasos negativos se restan: es su edad al nacer los mellizos más la de Jacob al salir hacia Harán (cálculo de la hoja JACOB_ADULTO). Los pasos de Gn 41–47 son posteriores: sirven para dirigir.",
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 137,
+        "pasos": [
+          {
+            "texto": "Edad de Isaac al nacer los mellizos",
+            "valor": 60,
+            "ref": "Gn 25:26",
+            "cita": "era Isaac de edad de sesenta años cuando ella los parió"
+          },
+          {
+            "texto": "Más la edad de Jacob cuando habla con Faraón",
+            "valor": 130,
+            "ref": "Gn 47:9",
+            "cita": "Los días de los años de mi peregrinación son ciento treinta años"
+          },
+          {
+            "texto": "Menos la edad de José cuando es presentado a Faraón",
+            "valor": -30,
+            "ref": "Gn 41:46",
+            "cita": "era José de edad de treinta años cuando fué presentado delante de Faraón"
+          },
+          {
+            "texto": "Menos los siete años de hartura",
+            "valor": -7,
+            "ref": "Gn 41:53",
+            "cita": "cumpliéronse los siete años de la hartura"
+          },
+          {
+            "texto": "Menos los dos años de hambre ya pasados cuando José manda llamar a su padre",
+            "valor": -2,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre en medio de la tierra"
+          },
+          {
+            "texto": "Menos los catorce años que Jacob sirvió por Lea y Raquel antes de nacer José",
+            "valor": -14,
+            "ref": "Gn 31:41",
+            "cita": "catorce años te serví por tus dos hijas"
+          }
+        ],
+        "supuestos": [
+          "Los supuestos del cálculo de la hoja JACOB_ADULTO (hartura desde los treinta de José; Jacob ante Faraón en el segundo año de hambre; José nace al cumplirse los catorce años)",
+          "La bendición (Gn 27) y la salida de Jacob (Gn 28:5-10) ocurren poco antes de que empiece a servir a Labán",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Vive ciento ochenta años",
+      "certeza": "texto",
+      "ref": "Gn 35:28",
+      "cita": "fueron los días de Isaac ciento ochenta años",
+      "nota": "Gn 35:28 es posterior a estos pasajes (gn-75): sirve para dirigir, no se cita en los videos de Gn 27–28."
+    },
+    {
+      "dato": "Edad visual: un anciano que aparenta unos ochenta y cinco años, enjuto, de pelo y barba blancos, ciego",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 41 de guiones/LEEME.md). El texto lo llama viejo y ciego (Gn 27:1-2) y lo pone acostado (Gn 27:19, 27:31); por cálculo tiene unos ciento treinta y siete y todavía vive unos cuarenta y tres años más (180 − 137, Gn 35:28). Se le dibuja muy viejo y frágil de vista, pero no moribundo: se sienta, come, bebe y besa (Gn 27:25-27)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Llama a Esaú y le pide caza y un guisado para bendecirlo",
+      "certeza": "texto",
+      "ref": "Gn 27:4",
+      "cita": "hazme un guisado, como yo gusto, y tráeme[lo], y comeré; para que te bendiga mi alma antes que muera"
+    },
+    {
+      "rasgo": "Pregunta quién es",
+      "certeza": "texto",
+      "ref": "Gn 27:18",
+      "cita": "¿quién eres, hijo mío?"
+    },
+    {
+      "rasgo": "Le extraña la prisa",
+      "certeza": "texto",
+      "ref": "Gn 27:20",
+      "cita": "¿Cómo es que la hallaste tan presto, hijo mío?"
+    },
+    {
+      "rasgo": "Palpa a Jacob",
+      "certeza": "texto",
+      "ref": "Gn 27:21",
+      "cita": "Acércate ahora, y te palparé, hijo mío"
+    },
+    {
+      "rasgo": "No lo reconoce por las manos vellosas",
+      "certeza": "texto",
+      "ref": "Gn 27:23",
+      "cita": "no le conoció, porque sus manos eran vellosas como las manos de Esaú"
+    },
+    {
+      "rasgo": "Come y bebe vino",
+      "certeza": "texto",
+      "ref": "Gn 27:25",
+      "cita": "trájole también vino, y bebió"
+    },
+    {
+      "rasgo": "Lo besa, huele sus vestidos y lo bendice",
+      "certeza": "texto",
+      "ref": "Gn 27:27",
+      "cita": "él se llegó, y le besó; y olió Isaac el olor de sus vestidos, y le bendijo"
+    },
+    {
+      "rasgo": "Se estremece al saber que llega Esaú",
+      "certeza": "texto",
+      "ref": "Gn 27:33",
+      "cita": "estremecióse Isaac con grande estremecimiento"
+    },
+    {
+      "rasgo": "Mantiene la bendición dada",
+      "certeza": "texto",
+      "ref": "Gn 27:33",
+      "cita": "Yo le bendije, y será bendito"
+    },
+    {
+      "rasgo": "Bendice a Jacob y lo envía a Padan-aram",
+      "certeza": "texto",
+      "ref": "Gn 28:1-5",
+      "cita": "Así envió Isaac á Jacob, el cual fué á Padan-aram"
+    },
+    {
+      "rasgo": "Muere viejo y harto de días; lo entierran Esaú y Jacob",
+      "certeza": "texto",
+      "ref": "Gn 35:29",
+      "cita": "exhaló Isaac el espíritu, y murió, y fué recogido á sus pueblos, viejo y harto de días; y sepultáronlo Esaú y Jacob sus hijos",
+      "nota": "Gn 35:29 es posterior a estos pasajes (gn-75): sirve para dirigir."
+    },
+    {
+      "rasgo": "El mismo rostro que en las hojas ISAAC_ADULTO e ISAAC_MAYOR, muy viejo: enjuto, mejillas hundidas, arrugas hondas; ojos velados por una leve nube gris pálida, con la mirada que no se fija en nada; pelo blanco más ralo hasta la nuca y barba blanca larga acabada en punta; manos huesudas; gesto cansado, afectuoso y receloso",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que sus ojos se ofuscaron hasta quedar sin vista (Gn 27:1), no cómo se veían. La nube pálida y la mirada perdida son la propuesta por defecto para que se entienda sin impresionar (decisión pendiente n.º 41). Lo receloso sale de Gn 27:20-24; lo afectuoso, de Gn 27:26-27. Rasgos de Beni Hasan (A2), como en sus otras hojas.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en ISAAC_ADULTO e ISAAC_MAYOR: túnica de lana color crema hasta debajo de la rodilla con franjas estrechas rojas y azul oscuro, que le cubre los dos hombros; manto liso azul grisáceo; cinturón de cuerda; pies descalzos dentro de la tienda; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de sus otras hojas para que se le reconozca (mural de Beni Hasan, A2). Descalzo y sin cayado porque está en su tienda, acostado o sentado (Gn 27:19): elección del ilustrador.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view in which he sits upright on a plain woven mat with his hands resting on his knees. He is a very old herdsman chief from western Asia who looks about eighty-five, thin, with hollow cheeks, deep lines across his olive-brown face, thinner white hair that reaches the nape of his neck and a long white beard ending in a point. He is blind: his eyes are dimmed by a faint, pale grey film and gaze softly past the viewer without focusing. His hands are bony. His head is bare, with nothing tied around it. His face is weary, affectionate and a little wary. He wears a tunic of cream wool that reaches below his knees and covers both shoulders, woven with narrow red and dark blue stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, and a plain blue-grey wool cloak over his shoulders, with a cord belt; his feet are bare.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos y cuerpo entero sentado erguido sobre una estera lisa, con las manos en las rodillas). Jefe de pastores de Asia occidental muy viejo, que aparenta unos ochenta y cinco años; enjuto, mejillas hundidas, arrugas hondas en el rostro moreno oliva, pelo blanco más ralo hasta la nuca y barba blanca larga acabada en punta. Es ciego: los ojos, velados por una leve nube gris pálida, miran sin fijarse más allá del espectador. Manos huesudas. Cabeza descubierta, sin nada atado. Rostro cansado, afectuoso y algo receloso. Túnica de lana color crema hasta debajo de la rodilla, que le cubre los dos hombros, con franjas estrechas rojas y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio, y manto liso de lana azul grisáceo sobre los hombros, con cinturón de cuerda; pies descalzos.",
+    "negativo_en": "Do not make his eyes empty, pure white, glowing, bandaged or frightening, and do not give him dark glasses or a cloth over the eyes. Do not make him look dying, sick or grotesque. Do not put a headband, a cord or a cloth on his head. Do not give him a staff, a weapon, bracelets or any jewelry. Do not dress him in Egyptian white linen, a turban or a crown. Do not paint a bed, food, a tent or any other person, and keep the background plain.",
+    "negativo_es": "Ojos que no sean vacíos, blancos del todo, luminosos, vendados ni que asusten; sin gafas ni paño sobre los ojos; que no parezca moribundo, enfermo ni grotesco; sin cinta, cordón ni paño en la cabeza; sin cayado, armas, brazaletes ni joyas; sin lino blanco egipcio, turbante ni corona; sin cama, comida, tienda ni otras personas; fondo liso."
+  }
+}

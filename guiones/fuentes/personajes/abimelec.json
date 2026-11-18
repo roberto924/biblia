@@ -12,7 +12,7 @@
     "nombre": "ABIMELEC",
     "tipo": "personaje"
   },
-  "nota": "Aspecto para Gn 20–21. No se le dibuja como villano: el texto dice que obró con sencillez de corazón y que Dios lo sabía (Gn 20:5-6). Dios le habla en sueños (Gn 20:3-7) sin figura, solo voz (decisión n.º 1 de guiones/LEEME.md). Gn 26 vuelve a nombrar a un Abimelec, rey de Gerar, con Isaac, muchos años después: datos/biblia.js los tiene como la misma persona, pero el texto no dice si es el mismo rey; cuando lleguen esos pasajes se decidirá si sirve esta hoja. Su mujer y sus siervas (Gn 20:17) no llevan hoja.",
+  "nota": "Aspecto para Gn 20–21. No se le dibuja como villano: el texto dice que obró con sencillez de corazón y que Dios lo sabía (Gn 20:5-6). Dios le habla en sueños (Gn 20:3-7) sin figura, solo voz (decisión n.º 1 de guiones/LEEME.md). Gn 26 vuelve a nombrar a un Abimelec, rey de Gerar, con Isaac, muchos años después: datos/biblia.js los tiene como la misma persona, pero el texto no dice si es el mismo rey; para Gn 26 se hizo otra hoja, ABIMELEC_ISAAC, con otra cara y la misma ropa de rey de Gerar, porque entre los dos relatos pasan decenas de años (decisión pendiente n.º 42 de guiones/LEEME.md; alternativa: esta hoja envejecida). La voz de Abimelech_1 sigue en esta ficha (decisión pendiente n.º 27). Su mujer y sus siervas (Gn 20:17) no llevan hoja.",
   "edades": [
     {
       "dato": "Edad visual: un hombre de unos cincuenta y cinco años",

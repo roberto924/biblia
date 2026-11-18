@@ -2,13 +2,14 @@
   "id": "gerar",
   "nombre": "Gerar: la sala del rey Abimelec (Gn 20)",
   "pasajes": [
-    "gn-41"
+    "gn-41",
+    "gn-54"
   ],
   "element": {
     "nombre": "SALA_ABIMELEC",
     "tipo": "lugar"
   },
-  "nota": "El id es el del catálogo de juego, que llama «Gerar» a la ciudad de Abimelec (como llama «padan-aram» a la casa de Labán). El texto no describe la ciudad ni la casa: dice que Abimelec es rey de Gerar, que tiene siervos, siervas, mujer y un reino. La hoja es la sala donde, por la mañana, llama a sus siervos (Gn 20:8) y después a Abraham (Gn 20:9-16). El sueño de noche (Gn 20:3-7) es en un cuarto que el texto no nombra: se resuelve en su toma, y Dios no tiene figura (decisión n.º 1 de guiones/LEEME.md). Ropa y lugar sin referencia comprobada (decisiones pendientes n.º 23 y n.º 34). Gn 26 vuelve a Gerar con Isaac: se verá entonces si sirve esta hoja.",
+  "nota": "El id es el del catálogo de juego, que llama «Gerar» a la ciudad de Abimelec (como llama «padan-aram» a la casa de Labán). El texto no describe la ciudad ni la casa: dice que Abimelec es rey de Gerar, que tiene siervos, siervas, mujer y un reino. La hoja es la sala donde, por la mañana, llama a sus siervos (Gn 20:8) y después a Abraham (Gn 20:9-16). El sueño de noche (Gn 20:3-7) es en un cuarto que el texto no nombra: se resuelve en su toma, y Dios no tiene figura (decisión n.º 1 de guiones/LEEME.md). Ropa y lugar sin referencia comprobada (decisiones pendientes n.º 23 y n.º 34). En gn-54 (Gn 26) sirve para cuando Abimelec llama a Isaac (Gn 26:9-11) y lo despide (Gn 26:16), si el guion lo pone en la casa del rey; con el rey de la hoja ABIMELEC_ISAAC (decisión pendiente n.º 42). La ventana por la que mira (Gn 26:8) no está en esta hoja: la toma usa la vista exterior (escenarios/gerar-ciudad), o abre una ventana alta en una pared de esta sala. La ciudad por fuera, los campos que siembra Isaac (Gn 26:12) y el valle donde asienta sus tiendas (escenarios/valle-gerar) tienen hoja propia.",
   "texto": [
     {
       "dato": "Abraham habita como forastero en Gerar",

@@ -1,0 +1,54 @@
+# Isaac mayor (Gn 25:27–26:35) (personaje)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `ISAAC_MAYOR` (personaje)
+- **Personas (datos/biblia.js)**: Isaac_1
+- **Pasajes**: gn-53, gn-54, gn-55
+- **Nota**: Aspecto desde que los mellizos han crecido (Gn 25:27-28) hasta el final de Gn 26: en Gerar, en los pozos y en el pacto de Beer-seba. En gn-53 solo desde Gn 25:27; antes (Gn 25:19-26, de los cuarenta a los sesenta años) sirve la hoja ISAAC_ADULTO. Desde Gn 27, viejo y ciego, la hoja ISAAC_ANCIANO. Es el mismo hombre de ISAAC_MUCHACHO e ISAAC_ADULTO: misma cara, misma túnica crema de franjas rojas y azul oscuro y el mismo manto azul grisáceo, ahora entrecano (si se genera a mano en ChatGPT, adjuntar también la imagen de ISAAC_ADULTO). En Gn 26 tiene que verse un hombre mayor pero todavía vigoroso: siembra, se engrandece y es «muy poderoso» (Gn 26:12-13). Jehová, que se le aparece (Gn 26:2, 26:24), no tiene figura (decisión n.º 1 de guiones/LEEME.md). Lo que hace con Rebeca en Gn 26:8 («jugaba») se muestra como un gesto de cariño entre esposos (decisión pendiente n.º 46). Habla en Gn 26:7, 26:9, 26:22 y 26:27, pero su voz está en isaac-muchacho (decisión pendiente n.º 27); tonos: Gn 26:7 y 26:9, miedo que se excusa; Gn 26:22, alivio y gratitud; Gn 26:27, reproche sereno. Edad visual: decisión pendiente n.º 41.
+
+## Edad
+
+- **Texto**: Sesenta años cuando nacen Esaú y Jacob — Gn 25:26: «era Isaac de edad de sesenta años cuando ella los parió»
+- **Inferido**: En Gn 26 Abraham ya ha muerto: Isaac tiene por lo menos unos setenta y cinco años — Los filisteos ciegan los pozos de Abraham después de su muerte (Gn 26:15, 26:18), y Abraham muere cuando Isaac tiene unos setenta y cinco (cálculo en la hoja ISAAC_ADULTO: 175 − 100). — base: Gn 26:18 «que los Filisteos habían cegado, muerto Abraham»
+- **Cálculo**: Cien años cuando Esaú se casa, al final de Gn 26
+  1. Edad de Isaac al nacer los mellizos: 60 (Gn 25:26: «era Isaac de edad de sesenta años cuando ella los parió»)
+  2. + Edad de Esaú cuando toma mujeres: 40 (Gn 26:34: «cuando Esaú fué de cuarenta años»)
+  = 100. Supuestos: Se cuentan años completos; El texto no da su edad en Gn 26:1-33: queda entre los setenta y cinco de la inferencia de arriba y estos cien
+- **Interpretación del ilustrador**: Edad visual: un hombre que aparenta unos sesenta y cinco años, entrecano, todavía vigoroso — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 41 de guiones/LEEME.md). Tiene entre setenta y cinco y cien años (arriba) y vive hasta los ciento ochenta (Gn 35:28, posterior: sirve para dirigir); en Gn 26 siembra y prospera (Gn 26:12-14) y Rebeca es aún «de hermoso aspecto» (Gn 26:7). Se le dibuja claramente mayor que en ISAAC_ADULTO y mucho más joven que en ISAAC_ANCIANO.
+
+## Rasgos
+
+- **Texto**: Ama a Esaú porque come de su caza — Gn 25:28: «amó Isaac á Esaú, porque comía de su caza»
+- **Texto**: En tiempo de hambre se va a Gerar, a Abimelec — Gn 26:1: «fuése Isaac á Abimelech rey de los Filisteos, en Gerar»
+- **Texto**: Dice que Rebeca es su hermana, por miedo — Gn 26:7: «él respondió: Es mi hermana; porque tuvo miedo de decir: Es mi mujer»
+- **Texto**: Abimelec lo ve desde una ventana con Rebeca — Gn 26:8: «vió á Isaac que jugaba con Rebeca su mujer»
+- **Texto**: Siembra y cosecha ciento por uno — Gn 26:12: «sembró Isaac en aquella tierra, y halló aquel año ciento por uno»
+- **Texto**: Se hace muy poderoso, con hatos de ovejas y de vacas y grande apero — Gn 26:13-14: «tuvo hato de ovejas, y hato de vacas, y grande apero»
+- **Texto**: Asienta sus tiendas en el valle de Gerar y reabre los pozos de su padre — Gn 26:17-18: «asentó sus tiendas en el valle de Gerar»
+- **Texto**: Llama al pozo Rehobot — Gn 26:22: «llamó su nombre Rehoboth, y dijo: Porque ahora nos ha hecho ensanchar Jehová»
+- **Texto**: En Beer-seba edifica un altar, invoca a Jehová y tiende su tienda — Gn 26:25: «edificó allí un altar, é invocó el nombre de Jehová, y tendió allí su tienda»
+- **Texto**: Reprocha a Abimelec y a los suyos que lo echaran — Gn 26:27: «¿Por qué venís á mí, pues que me habéis aborrecido, y me echasteis de entre vosotros?»
+- **Texto**: Hace banquete y los despide en paz — Gn 26:30-31: «é Isaac los despidió, y ellos se partieron de él en paz»
+- **Texto**: Las mujeres de Esaú son amargura para él — Gn 26:35: «fueron amargura de espíritu á Isaac y á Rebeca»
+- **Interpretación del ilustrador**: El mismo rostro que en la hoja ISAAC_ADULTO, mayor: piel morena oliva con arrugas en la frente y junto a los ojos; los mismos ojos oscuros; pelo abundante y natural hasta la nuca y barba cerrada acabada en punta bajo el mentón, los dos entrecanos, más grises que oscuros; recio y erguido; gesto sereno, prudente y algo melancólico — Interpretación del ilustrador: el texto no describe su aspecto. Se conservan los rasgos de ISAAC_ADULTO (mural de Beni Hasan, A2); las canas, a su edad. Lo prudente sale de Gn 26:7 y 26:27-31. — referencias: A2
+
+## Vestuario
+
+- **Supuesto**: La misma ropa que en la hoja ISAAC_ADULTO: túnica de lana color crema hasta debajo de la rodilla con franjas estrechas rojas y azul oscuro, que le cubre los dos hombros; manto liso azul grisáceo; cinturón de cuerda; sandalias de correas; cayado alto y liso de pastor; cabeza descubierta — Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de ISAAC_ADULTO para que se le reconozca (mural de Beni Hasan, A2). El cayado es elección del ilustrador, porque tiene hatos de ovejas y vacas (Gn 26:14) y por su edad; con él se parece a su padre (hojas ABRAM y ABRAHAM). — referencias: A2
+
+## Referencias de época
+
+- Procession of the Aamu (mural original de la tumba de Jnumhotep II, compuesto fotográfico) — In situ, Beni Hasan (Egipto); fotos de A. D. Riddle, Brown University y Macquarie University (vía Wikimedia Commons), inv. Beni Hasan, tumba BH3 (in situ) — ca. 1900 a. C., según Commons (Reino Medio, Dinastía XII) — licencia: Dominio público en EE. UU. (reproducción fiel de obra anterior a 1931; Public Domain Mark 1.0 según Commons; el reuso fuera de EE. UU. puede tener restricciones) — imagen: https://commons.wikimedia.org/wiki/File:Procession_of_the_Aamu,_Tomb_of_Khnumhotep_II_(composite).jpg [A2]
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/isaac-mayor.png`; luego subirla a Cinema Studio como Element `ISAAC_MAYOR`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+
+_Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Jefe de pastores de Asia occidental que aparenta unos sesenta y cinco años, todavía recio y erguido; piel morena oliva, arrugas en la frente y junto a los ojos oscuros, pelo abundante y natural hasta la nuca y barba cerrada acabada en punta bajo el mentón, los dos más grises que oscuros. Cabeza descubierta, sin nada atado. Rostro sereno, prudente y algo triste. Túnica de lana color crema hasta debajo de la rodilla, que le cubre los dos hombros, con franjas estrechas rojas y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto liso de lana azul grisáceo sobre los hombros, cinturón de cuerda y sandalias de correas. De cuerpo entero lleva un cayado alto y liso de pastor._ Evitar: _Sin cinta, cordón ni paño en la cabeza; que no sea joven, de pelo oscuro, frágil, encorvado, calvo ni ciego, ni tenga el pelo blanco del todo; sin armas, brazaletes, anillos ni joyas; sin lino blanco egipcio, turbante ni corona; sin pelo rígido como de peluca; sin tiendas, pozo, animales ni otras personas; fondo liso._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a herdsman chief from western Asia who looks about sixty-five, still sturdy and upright, with olive-brown skin, lines across his forehead and around his dark eyes, thick natural hair that reaches the nape of his neck and a full beard trimmed to a clear point below the chin, both more grey than dark. His head is bare, with nothing tied around it. His face is calm, prudent and a little sad. He wears a tunic of cream wool that reaches below his knees and covers both shoulders, woven with narrow red and dark blue stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain blue-grey wool cloak over his shoulders, a cord belt and leather sandals with straps. In the full-body view he holds a tall, plain wooden shepherd's staff. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not put a headband, a cord or a cloth on his head. Do not make him young, dark-haired, frail, bent, bald or blind, and do not give him pure white hair. Do not give him a weapon, bracelets, rings or any jewelry. Do not dress him in Egyptian white linen, a turban or a crown. Do not give him a stiff wig-like haircut. Do not paint tents, a well, animals or any other person, and keep the background plain.
+```

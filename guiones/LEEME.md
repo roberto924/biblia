@@ -326,6 +326,54 @@ registro esté completo; y propone cambios en las fuentes JSON.
     generarse, porque su paisaje de colinas secas es casi el de la lámina 1 y la creación ya copió su composición. Las
     fichas generadas dicen «copiaba su composición», que es la frase de `guiones.py` para el caso de la creación: aquí
     es preventivo. Alternativa: generarlos con las tres láminas y apartarla solo si copian.
+38. **Edad visual de Jacob y Esaú (Gn 25:27–36:43)**: tres hojas para cada uno, con la misma edad visual para los dos
+    mellizos. `jacob-joven` y `esau-joven` (Gn 25:27-34, edad no dada): unos veinte años. `jacob-adulto` (Gn 27–30,
+    de gn-56 a gn-65) y `esau-adulto` (Gn 26:34–28:9): aparentan unos cuarenta y cinco. `jacob-mayor` (desde gn-66,
+    Gn 31:1, hasta Gn 36) y `esau-mayor` (Gn 32–36): aparentan unos sesenta, con canas. Por Cálculo con pasajes
+    posteriores (Gn 31:41, 41:46, 41:53, 45:6, 47:9) Jacob tiene unos setenta y siete años al salir hacia Harán, unos
+    noventa y siete al dejar a Labán y ciento veinte al enterrar a Isaac (Gn 35:28 y 25:26): se les dibuja más jóvenes
+    porque viven hasta los ciento cuarenta y siete (Gn 47:28) y en esos años remueven piedras, sirven veinte años de
+    pastores y corren al encuentro (Gn 29:10, 31:40, 33:4). Alternativa: dibujarlos con la edad del cálculo, canosos
+    desde Gn 27, como la hoja ABRAM.
+39. **Jacob «lampiño»** (Gn 27:11): propuesta por defecto, brazos, manos y cuello lisos y una barba corta y rala, para
+    que se lea frente a Esaú y siga pareciéndose a los demás hombres de las hojas. Alternativa: sin barba.
+40. **Esaú «rubio» y «velludo como una pelliza»** (Gn 25:25): propuesta por defecto, pelo y barba cobrizos y tez rojiza
+    (juntando «rubio» y el nombre Edom por «eso bermejo», Gn 25:30), y vello espeso en antebrazos, manos, cuello y
+    pecho, que es lo que imitan las pieles de Gn 27:16. Nunca se le viste de pieles, para no confundirlo con el
+    disfraz de Jacob. Alternativa: rubio dorado. Lleva arco y aljaba (Gn 27:3) en sus tres hojas.
+41. **Isaac mayor y anciano**: `isaac-adulto` hasta Gn 25:26 (con canas a los sesenta); `isaac-mayor` (Gn 25:27–26:35)
+    aparenta unos sesenta y cinco (tiene entre setenta y cinco y cien: Gn 26:18 y el Cálculo 60 + 40); `isaac-anciano`
+    (Gn 27:1 hasta su muerte, Gn 35:29) aparenta unos ochenta y cinco, ciego, y por Cálculo tiene unos ciento treinta y
+    siete al bendecir. La ceguera (Gn 27:1) se muestra con ojos velados por una nube pálida y la mirada perdida, nada
+    que impresione.
+42. **Abimelec y Ficol de Gn 26**: el texto no dice si son los de Gn 20–21, y entre los dos relatos pasan decenas de
+    años (en Gn 21 Isaac es un niño; en Gn 26:18 Abraham ya ha muerto). Propuesta por defecto: hojas nuevas
+    (`abimelec-isaac`, `ficol-isaac`) con otra cara y la misma ropa de cargo, para que se lea quiénes son sin afirmar
+    que sean otros ni los mismos. Alternativa: las hojas `abimelec` y `ficol` envejecidas.
+43. **La escala y los ángeles de Betel** (Gn 28:12-13; hoja `objetos/escala-jacob`): propuesta por defecto, la escala
+    como una escalera recta y muy larga de peldaños anchos y lisos, de color claro; los ángeles, cinco figuras pequeñas
+    de hombres con túnicas claras, sin alas, halo ni luz propia, como los varones de Gn 18–19 (n.º 21); Jehová sin
+    figura, solo una claridad suave en lo alto (n.º 1), y sus palabras no se ponen en boca de ninguna figura.
+    Alternativas: una escalinata de piedra; o la escala sin figuras, con luces que suben y bajan.
+44. **Voces en Gn 25–28**: Isaac, Rebeca, Jacob, Esaú y Abimelec hablan con hojas que no llevan voz (`isaac-mayor`,
+    `isaac-anciano`, `rebeca-mayor`, `jacob-adulto`, `esau-adulto`, `abimelec-isaac`), porque su voz está en la primera
+    hoja de cada persona: es el choque de la n.º 27. Además, hablan a coro grupos que no son personas de
+    `datos/biblia.js` —los pastores de Gerar (Gn 26:20) y los criados de Isaac (Gn 26:32)— y en Gn 26:28-29
+    responden «ellos» (Abimelec, Ahuzat y Ficol), como en las n.º 13, 20 y 22: voz propia, una sola voz para el grupo o
+    el narrador.
+45. **Hojas que no están en el catálogo de juego** (como las n.º 16, 30 y 36): los guisados, el pan y el vino de Gn 27
+    (`objetos/guisado-isaac`), la vista exterior de Gerar (`escenarios/gerar-ciudad`), el valle de Gerar
+    (`escenarios/valle-gerar`) y la tienda de Isaac (`escenarios/tienda-isaac`); y los grupos sin persona
+    `siervos-isaac` y `pastores-gerar`.
+46. **«Jugaba con Rebeca su mujer»** (Gn 26:8): propuesta por defecto, un gesto de cariño entre esposos (ríen juntos,
+    él le toma la mano), visto de lejos desde la ventana, igual en todos los perfiles.
+47. **Rebeca mayor** (`rebeca-mayor`, Gn 26–28): aparenta unos cincuenta y cinco, todavía hermosa (Gn 26:7). Sin el
+    pendiente, los brazaletes ni el velo de Gn 24 desde Gn 25: el texto no vuelve a nombrarlos. Alternativa: llevar
+    las joyas siempre, porque se las dieron.
+48. **Mujeres de Esaú**: Judit y Basemat (Gn 26:34) en una hoja de grupo, `mujeres-heteas`, vestidas como los hijos de
+    Het (n.º 31: mujeres de Beni Hasan, A2, sin referencia propia de los heteos) y nunca como villanas. Mahalat (Gn 28:9)
+    sale en un solo versículo y no lleva hoja; por las edades del texto, Ismael podía haber muerto ya cuando Esaú va
+    «á Ismael» (Gn 25:17 y los cálculos de Jacob), así que el guion no debería mostrar a Ismael sin decidirlo.
 
 ## Pendiente del proyecto (fuera de los guiones)
 

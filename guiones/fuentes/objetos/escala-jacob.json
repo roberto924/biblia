@@ -1,0 +1,67 @@
+{
+  "id": "escala-jacob",
+  "nombre": "La escala del sueño de Jacob",
+  "pasajes": [
+    "gn-60"
+  ],
+  "element": {
+    "nombre": "ESCALA_JACOB",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. Es lo que Jacob ve en sueños (Gn 28:12-15): una escala apoyada en tierra que llega al cielo, con ángeles de Dios que suben y bajan, y Jehová en lo alto. Propuesta por defecto (decisión pendiente n.º 43 de guiones/LEEME.md): la escala como una escalera larga de peldaños anchos y lisos; los ángeles, pequeñas figuras de hombres con túnicas claras y lisas, sin alas, halo ni luz propia, como los varones de Gn 18–19 (n.º 21); Jehová sin figura, solo una claridad suave en lo alto, donde la escala se pierde entre las nubes (decisión n.º 1); sus palabras (Gn 28:13-15) no se ponen en boca de ninguna figura. La hoja no lleva a Jacob: duerme en el escenario betel, con la piedra por cabecera (objetos/piedra-betel), y la escala se compone sobre él en la toma, de noche. Las tomas no muestran la escala antes de Gn 28:12 ni después de Gn 28:16, cuando despierta.",
+  "texto": [
+    {
+      "dato": "Una escala apoyada en tierra, cuya cabeza toca el cielo",
+      "certeza": "texto",
+      "ref": "Gn 28:12",
+      "cita": "he aquí una escala que estaba [apoyada] en tierra, y su cabeza tocaba en el cielo"
+    },
+    {
+      "dato": "Ángeles de Dios suben y descienden por ella",
+      "certeza": "texto",
+      "ref": "Gn 28:12",
+      "cita": "he aquí ángeles de Dios que subían y descendían por ella"
+    },
+    {
+      "dato": "Jehová está en lo alto de ella y habla",
+      "certeza": "texto",
+      "ref": "Gn 28:13",
+      "cita": "Jehová estaba en lo alto de ella, el cual dijo"
+    },
+    {
+      "dato": "Es un sueño",
+      "certeza": "texto",
+      "ref": "Gn 28:12",
+      "cita": "Y soñó"
+    },
+    {
+      "dato": "Al despertar, Jacob llama al lugar casa de Dios y puerta del cielo",
+      "certeza": "texto",
+      "ref": "Gn 28:17",
+      "cita": "No es otra cosa que casa de Dios, y puerta del cielo"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Escala: una escalera recta y muy larga, de peldaños anchos y lisos entre dos largueros sencillos, de color claro como madera blanqueada, que sale del suelo pedregoso y sube hasta perderse en las nubes de la noche",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 43 de guiones/LEEME.md): la RV1909 dice «escala» y no la describe. Alternativa: una escalinata de peldaños de piedra."
+    },
+    {
+      "dato": "Ángeles: cinco figuras pequeñas de hombres con túnicas largas, claras y lisas, sin alas, halo ni luz propia; unos suben de espaldas y otros bajan de frente",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 43): el texto no los describe ni dice cuántos son. Sin alas, como pide el estilo, y como los ángeles de Gn 19, que el texto llama también «varones» (Gn 19:1, 19:10). Pequeños y lejanos, para que no se lean como personajes con rostro."
+    },
+    {
+      "dato": "Lo alto: una claridad suave y blanca entre las nubes donde acaba la escala, sin figura",
+      "certeza": "interpretacion",
+      "nota": "Jehová no tiene figura (decisión n.º 1 de guiones/LEEME.md). La claridad es la propuesta por defecto para mostrar que está «en lo alto de ella» (Gn 28:13)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background showing one tall, narrow image from a dream: a very long, straight ladder with broad, flat, plain rungs between two simple side rails, pale like sun-bleached wood, rising from a small patch of stony ground at the bottom up into soft night clouds at the top, where it disappears into a gentle white brightness. On the ladder, five small, distant figures of men in long, plain, light-colored robes are climbing and coming down: some climb with their backs turned, others come down facing forward. The men have no wings, and no light comes from them. There is no figure at the top, only the soft brightness among the clouds.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso con una sola imagen alta y estrecha de un sueño: una escalera recta y muy larga, de peldaños anchos, planos y lisos entre dos largueros sencillos, clara como madera blanqueada por el sol, que sube desde un trozo de suelo pedregoso abajo hasta unas nubes suaves de noche arriba, donde se pierde en una claridad blanca y suave. Por la escalera, cinco figuras pequeñas y lejanas de hombres con túnicas largas, lisas y claras suben y bajan: unos suben de espaldas, otros bajan de frente. Los hombres no tienen alas y no despiden luz. En lo alto no hay ninguna figura, solo la claridad suave entre las nubes.",
+    "negativo_en": "Do not give the figures wings, halos, glowing outlines, harps or trumpets, and do not make them children, women or winged babies. Do not put any person, face, hand, throne, eye or dove at the top of the ladder. Do not make the ladder golden, jeweled, spiral or made of light beams, and do not add rays fanning out of the sky. Do not show a sleeping man, a stone, a city or an altar. Keep the background plain apart from the clouds at the top.",
+    "negativo_es": "Que las figuras no tengan alas, halos, contornos luminosos, arpas ni trompetas, ni sean niños, mujeres o bebés alados; ni persona, rostro, mano, trono, ojo ni paloma en lo alto de la escalera; que la escalera no sea dorada, enjoyada, en espiral ni hecha de rayos de luz, y sin rayos que se abran desde el cielo; sin hombre dormido, piedra, ciudad ni altar; fondo liso salvo las nubes de arriba."
+  }
+}

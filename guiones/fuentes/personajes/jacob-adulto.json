@@ -1,0 +1,204 @@
+{
+  "id": "jacob-adulto",
+  "nombre": "Jacob adulto (Gn 27–30)",
+  "personas": [
+    "Jacob_1"
+  ],
+  "pasajes": [
+    "gn-56",
+    "gn-57",
+    "gn-58",
+    "gn-59",
+    "gn-60"
+  ],
+  "element": {
+    "nombre": "JACOB_ADULTO",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto desde Gn 27 hasta el final de sus veinte años con Labán: sirve de gn-56 a gn-65 (Gn 27:1–30:43); desde gn-66 (Gn 31:1), cuando ya han pasado los veinte años (Gn 31:38, 31:41), la hoja JACOB_MAYOR. En esta ficha solo se anotan los pasajes de Gn 27–28. Es el mismo hombre de la hoja JACOB_JOVEN, mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de JACOB_JOVEN). Hoja nueva porque entre Gn 25:34 y Gn 27 pasan años: Esaú se casa a los cuarenta (Gn 26:34) antes de Gn 27, y por cálculo Jacob tiene unos setenta y siete al salir hacia Harán (abajo). Cuando Rebeca lo viste para engañar a Isaac (Gn 27:15-16) lleva encima la ropa de la hoja DISFRAZ_JACOB (objetos/disfraz-jacob): los vestidos de Esaú y las pieles en las manos y la cerviz. El bordón con que pasa el Jordán (Gn 32:10) se le da desde que sale de Beer-seba (Gn 28:10); en las tomas de Gn 27, dentro de la tienda, no lo lleva. Su voz es la de jacob-joven (decisión pendiente n.º 27 de guiones/LEEME.md); tonos en estos pasajes: Gn 27:11-12, inquieto; Gn 27:18-24, finge con la voz tensa, sin imitar la de Esaú (Gn 27:22); Gn 28:16-17, asombro y temor; Gn 28:20-22, voto solemne. Edad visual: decisión pendiente n.º 38.",
+  "edades": [
+    {
+      "dato": "Su mellizo Esaú tiene cuarenta años cuando se casa, antes de Gn 27",
+      "certeza": "texto",
+      "ref": "Gn 26:34",
+      "cita": "cuando Esaú fué de cuarenta años, tomó por mujer á Judith hija de Beeri Hetheo"
+    },
+    {
+      "dato": "Gn 27 ocurre después de esas bodas",
+      "certeza": "inferido",
+      "nota": "Rebeca habla de las mujeres heteas de Esaú como ya presentes (Gn 27:46), y Esaú toma después a Mahalat «además de sus otras mujeres» (Gn 28:9).",
+      "base": [
+        {
+          "ref": "Gn 27:46",
+          "cita": "Si Jacob toma mujer de las hijas de Heth, como éstas"
+        },
+        {
+          "ref": "Gn 28:9",
+          "cita": "además de sus otras mujeres"
+        }
+      ]
+    },
+    {
+      "dato": "Unos setenta y siete años cuando sale hacia Harán y empieza a servir a Labán",
+      "certeza": "calculo",
+      "valor": 77,
+      "nota": "Todos los pasos son posteriores a estos pasajes (Gn 31–47): sirven para dirigir, no se citan en el video.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 77,
+        "pasos": [
+          {
+            "texto": "Edad de Jacob cuando habla con Faraón",
+            "valor": 130,
+            "ref": "Gn 47:9",
+            "cita": "Los días de los años de mi peregrinación son ciento treinta años"
+          },
+          {
+            "texto": "Edad de José cuando es presentado a Faraón",
+            "valor": 30,
+            "ref": "Gn 41:46",
+            "cita": "era José de edad de treinta años cuando fué presentado delante de Faraón"
+          },
+          {
+            "texto": "Los siete años de hartura",
+            "valor": 7,
+            "ref": "Gn 41:53",
+            "cita": "cumpliéronse los siete años de la hartura"
+          },
+          {
+            "texto": "Los dos años de hambre ya pasados cuando José manda llamar a su padre",
+            "valor": 2,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre en medio de la tierra"
+          },
+          {
+            "texto": "Los catorce años que Jacob sirvió por Lea y Raquel antes de nacer José",
+            "valor": 14,
+            "ref": "Gn 31:41",
+            "cita": "catorce años te serví por tus dos hijas"
+          }
+        ],
+        "supuestos": [
+          "Los siete años de hartura empiezan cuando José tiene treinta (Gn 41:46-47)",
+          "Jacob baja a Egipto y habla con Faraón el mismo año en que José dice que van dos años de hambre (Gn 45:6, 45:9-11, 47:7-9)",
+          "José nace al cumplirse los catorce años por las dos hijas: en cuanto nace, Jacob pide irse (Gn 30:25) y empiezan los seis años por el ganado (Gn 31:41)",
+          "Jacob empieza a servir a Labán poco después de salir de Beer-seba (Gn 28:10–29:20): el texto no da cuánto duró el viaje",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un hombre maduro que aparenta unos cuarenta y cinco años, en plena fuerza",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md). Por cálculo tiene unos setenta y siete, pero vive hasta los ciento cuarenta y siete (Gn 47:28) y después de esta hoja remueve él solo la piedra del pozo (Gn 29:10), sirve veinte años de pastor (Gn 31:38-40) y tiene once hijos (Gn 29–30): se le dibuja maduro y fuerte, sin canas, para que JACOB_MAYOR pueda envejecerlo. Alternativa: dibujarlo con la edad del cálculo, canoso como la hoja ABRAM."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Teme que su padre lo descubra por la piel",
+      "certeza": "texto",
+      "ref": "Gn 27:11-12",
+      "cita": "Quizá me tentará mi padre, y me tendrá por burlador"
+    },
+    {
+      "rasgo": "Obedece a su madre y le trae los cabritos",
+      "certeza": "texto",
+      "ref": "Gn 27:14",
+      "cita": "Entonces él fué, y tomó, y trájolos á su madre"
+    },
+    {
+      "rasgo": "Dice a su padre que es Esaú",
+      "certeza": "texto",
+      "ref": "Gn 27:19",
+      "cita": "Yo soy Esaú tu primogénito"
+    },
+    {
+      "rasgo": "Su voz es la suya: Isaac la reconoce",
+      "certeza": "texto",
+      "ref": "Gn 27:22",
+      "cita": "La voz es la voz de Jacob, mas las manos, las manos de Esaú"
+    },
+    {
+      "rasgo": "Recibe la bendición de Isaac",
+      "certeza": "texto",
+      "ref": "Gn 27:27",
+      "cita": "olió Isaac el olor de sus vestidos, y le bendijo"
+    },
+    {
+      "rasgo": "Sale de delante de Isaac justo antes de que llegue Esaú",
+      "certeza": "texto",
+      "ref": "Gn 27:30",
+      "cita": "apenas había salido Jacob de delante de Isaac su padre, que Esaú su hermano vino de su caza"
+    },
+    {
+      "rasgo": "Su madre lo manda huir a Labán, a Harán",
+      "certeza": "texto",
+      "ref": "Gn 27:43",
+      "cita": "levántate, y húyete á Labán mi hermano, á Harán"
+    },
+    {
+      "rasgo": "Isaac lo bendice y lo envía a Padan-aram a tomar mujer",
+      "certeza": "texto",
+      "ref": "Gn 28:1-2",
+      "cita": "Levántate, ve á Padan-aram"
+    },
+    {
+      "rasgo": "Obedece a su padre y a su madre",
+      "certeza": "texto",
+      "ref": "Gn 28:7",
+      "cita": "Jacob había obedecido á su padre y á su madre, y se había ido á Padan-aram"
+    },
+    {
+      "rasgo": "Sale de Beer-seba y duerme al raso con una piedra por cabecera",
+      "certeza": "texto",
+      "ref": "Gn 28:11",
+      "cita": "tomó de las piedras de aquel paraje y puso á su cabecera, y acostóse en aquel lugar"
+    },
+    {
+      "rasgo": "Despierta con miedo de lo que ha soñado",
+      "certeza": "texto",
+      "ref": "Gn 28:17",
+      "cita": "tuvo miedo, y dijo: ¡Cuán terrible es este lugar!"
+    },
+    {
+      "rasgo": "Hace voto",
+      "certeza": "texto",
+      "ref": "Gn 28:20",
+      "cita": "E hizo Jacob voto"
+    },
+    {
+      "rasgo": "Pasa el Jordán solo con su bordón",
+      "certeza": "texto",
+      "ref": "Gn 32:10",
+      "cita": "con mi bordón pasé este Jordán",
+      "nota": "Gn 32:10 es posterior a estos pasajes: sirve para dirigir. El bordón se le da desde que sale de Beer-seba (Gn 28:10)."
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja JACOB_JOVEN, maduro: delgado y fibroso, de estatura media; piel morena oliva lisa, curtida en la frente y junto a los ojos; brazos y manos sin vello; ojos oscuros tranquilos y atentos; pelo oscuro abundante y natural hasta la nuca y barba corta y rala, oscuros y sin canas; gesto reservado y despierto",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su cara. Se conservan los rasgos de la hoja JACOB_JOVEN; lo liso, de «lampiño» (Gn 27:11), y la barba corta y rala es la propuesta por defecto (decisión pendiente n.º 39). El pelo hasta la nuca sigue al mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma túnica que en la hoja JACOB_JOVEN: lana color avena hasta debajo de la rodilla, con franjas estrechas azul oscuro y blancas, que le cubre los dos hombros; ahora con un manto liso de lana verde oliva; cinturón de cuerda; sandalias de correas; bordón alto y liso de madera; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa salvo el bordón (Gn 32:10). Se repite la túnica de JACOB_JOVEN para que se le reconozca, siguiendo el mural de Beni Hasan (A2). El manto verde oliva es elección del ilustrador para el camino y para no confundirlo con su padre (manto azul grisáceo) ni con su abuelo (manto pardo).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a lean, wiry herdsman from western Asia who looks about forty-five, of medium height and in his full strength, with smooth olive-brown skin with a few lines on the forehead and around the eyes, dark, calm and attentive eyes, thick natural dark hair that reaches the nape of his neck and a short, sparse dark beard, with no grey. His forearms and hands are smooth, with no visible body hair. His head is bare, with nothing tied around it. His face is reserved, thoughtful and alert. He wears a tunic of oatmeal-colored wool that reaches below his knees and covers both shoulders, woven with narrow dark blue and white stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain olive-green wool cloak over his shoulders, a cord belt and leather sandals with straps. In the full-body view he holds a tall, plain wooden walking staff.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Pastor delgado y fibroso de Asia occidental que aparenta unos cuarenta y cinco años, de estatura media y en plena fuerza; piel morena oliva lisa con algunas arrugas en la frente y junto a los ojos, ojos oscuros tranquilos y atentos, pelo oscuro abundante y natural hasta la nuca y barba oscura corta y rala, sin canas. Antebrazos y manos lisos, sin vello visible. Cabeza descubierta, sin nada atado. Rostro reservado, pensativo y despierto. Túnica de lana color avena hasta debajo de la rodilla, que le cubre los dos hombros, con franjas estrechas azul oscuro y blancas, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto liso de lana verde oliva sobre los hombros, cinturón de cuerda y sandalias de correas. De cuerpo entero sostiene un bordón alto y liso de madera.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not give him a full or bushy beard, grey hair, red or fair hair, or hairy arms. Do not make him look young or old. Do not give him a weapon, a bag, bracelets, rings or any jewelry. Do not dress him in animal skins, Egyptian white linen, a turban or a crown. Do not give him a stiff wig-like haircut. Do not paint a stone, a ladder, tents or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; sin barba cerrada o poblada, canas, pelo rojizo o rubio ni brazos velludos; que no parezca joven ni viejo; sin armas, zurrón, brazaletes, anillos ni joyas; sin pieles, lino blanco egipcio, turbante ni corona; sin pelo rígido como de peluca; sin piedra, escalera, tiendas ni otras personas; fondo liso."
+  }
+}

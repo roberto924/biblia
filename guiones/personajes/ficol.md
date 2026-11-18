@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `FICOL` (personaje)
 - **Personas (datos/biblia.js)**: Phicol_1
 - **Pasajes**: gn-44
-- **Nota**: Sale al principio y al final del pacto de Beerseba (Gn 21:22, 21:32), al lado de Abimelec; se infiere que está presente en todo el relato. No tiene palabras propias: Gn 21:22 dice que hablaron Abimelec y Ficol, pero lo que sigue habla en primera persona de «mi hijo» y «mi nieto» (Gn 21:23), que son de Abimelec. La ficha no lleva voz: el guion decide si Gn 21:22-23 lo dice Abimelec solo. Gn 26:26 vuelve a nombrar a un Ficol con Isaac, muchos años después: se decidirá en su momento si sirve esta hoja.
+- **Nota**: Sale al principio y al final del pacto de Beerseba (Gn 21:22, 21:32), al lado de Abimelec; se infiere que está presente en todo el relato. No tiene palabras propias: Gn 21:22 dice que hablaron Abimelec y Ficol, pero lo que sigue habla en primera persona de «mi hijo» y «mi nieto» (Gn 21:23), que son de Abimelec. La ficha no lleva voz: el guion decide si Gn 21:22-23 lo dice Abimelec solo. Gn 26:26 vuelve a nombrar a un Ficol con Isaac, muchos años después: para ese pasaje se hizo otra hoja, FICOL_ISAAC, con otra cara y la misma ropa y lanza, porque entre los dos relatos pasan decenas de años (decisión pendiente n.º 42 de guiones/LEEME.md; alternativa: esta hoja envejecida).
 
 ## Edad
 
