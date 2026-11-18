@@ -1,0 +1,48 @@
+# Los tres varones de Mamre (dos de ellos, los ángeles de Sodoma) (personaje)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `VARONES_MAMRE` (personaje (grupo))
+- **Pasajes**: gn-36, gn-37, gn-38, gn-39
+- **Nota**: Grupo de tres hombres iguales en rango, sin nada que distinga a uno sobre los otros: el texto no dice quién es cada uno. Propuesta por defecto (decisión pendiente n.º 21 de guiones/LEEME.md): se dibujan como hombres, sin alas, sin halo ni luz propia (negativo general del estilo y decisión n.º 18), y ninguno se marca como Dios (decisión n.º 1). Las palabras que el texto pone en boca de Jehová (Gn 18:13-14, 18:17-33) no se ponen en la boca de ninguno de los tres. En Gn 19 van dos: por defecto el varón A y el varón B de la hoja; el texto no dice cuáles. Lo que no se ve en la hoja: la ceguera con que hieren a los de la puerta (Gn 19:11) es cosa de la toma, sin rayos ni destellos.
+
+## Edad
+
+- **Interpretación del ilustrador**: Edad visual: hombres adultos de unos treinta y cinco a cuarenta años — Interpretación del ilustrador: el texto no da su edad ni su aspecto. Se les dibuja adultos en plena fuerza, ni muchachos ni viejos.
+
+## Rasgos
+
+- **Texto**: Abraham ve tres varones junto a él — Gn 18:2: «he aquí tres varones que estaban junto á él»
+- **Texto**: Abraham les ofrece agua para lavarse los pies y la sombra de un árbol — Gn 18:4: «lavad vuestros pies; y recostaos debajo de un árbol»
+- **Texto**: Aceptan — Gn 18:5: «Y ellos dijeron: Haz así como has dicho»
+- **Texto**: Comen lo que Abraham les sirve — Gn 18:8: «púsolo delante de ellos; y él estaba junto á ellos debajo del árbol; y comieron»
+- **Texto**: Preguntan por Sara — Gn 18:9: «Y le dijeron: ¿Dónde está Sara tu mujer?»
+- **Texto**: Se levantan y miran hacia Sodoma; Abraham los acompaña — Gn 18:16: «los varones se levantaron de allí, y miraron hacia Sodoma: y Abraham iba con ellos acompañándolos»
+- **Texto**: Se apartan y van hacia Sodoma — Gn 18:22: «apartáronse de allí los varones, y fueron hacia Sodoma»
+- **Texto**: Llegan dos ángeles a Sodoma al caer la tarde — Gn 19:1: «LLEGARON, pues, los dos ángeles á Sodoma á la caída de la tarde»
+- **Inferido**: Los dos ángeles de Gn 19 son dos de los tres varones de Gn 18 — El texto no lo dice con esas palabras: los varones salen de Mamre hacia Sodoma (Gn 18:22) y a Sodoma llegan dos ángeles (Gn 19:1), a los que el texto vuelve a llamar varones (Gn 19:10, 19:16). Por eso una sola hoja sirve para los dos relatos. — base: Gn 18:22 «fueron hacia Sodoma» — base: Gn 19:10 «los varones alargaron la mano, y metieron á Lot en casa con ellos»
+- **Texto**: Primero quieren pasar la noche en la plaza — Gn 19:2: «No, que en la plaza nos quedaremos esta noche»
+- **Texto**: Hieren con ceguera a los hombres de la puerta — Gn 19:11: «hirieron con ceguera»
+- **Texto**: Dicen que Jehová los ha enviado a destruir el lugar — Gn 19:13: «Jehová nos ha enviado para destruirlo»
+- **Texto**: Al alba sacan de la mano a Lot, a su mujer y a sus hijas — Gn 19:16: «los varones asieron de su mano, y de la mano de su mujer, y de las manos de sus dos hijas»
+- **Interpretación del ilustrador**: Tres hombres de Asia occidental de aspecto sereno y grave, distintos entre sí: el varón A, alto, de barba oscura corta; el varón B, ancho de hombros, de barba oscura algo más larga y entrecana; el varón C, más delgado, de barba oscura recortada en punta. Piel morena, ojos oscuros, pelo oscuro hasta la nuca; pies con polvo del camino — Interpretación del ilustrador: el texto no describe a ninguno. Que sean distintos sirve para seguirlos de una toma a otra; el polvo de los pies sale de que Abraham les ofrece agua para lavarlos (Gn 18:4) y Lot también (Gn 19:2). Sin alas, halo ni luz propia: el texto los llama varones.
+
+## Vestuario
+
+- **Interpretación del ilustrador**: Túnicas lisas de lana sin teñir hasta debajo de la rodilla, en tonos claros y apagados distintos (crudo, arena y gris pardo), con un manto liso del mismo tejido; cinturón de cuerda; sandalias; cabeza descubierta — Interpretación del ilustrador: el texto no describe su ropa ni de dónde vienen. Se elige ropa lisa de caminante, sin las franjas de la casa de Abraham ni los dibujos de Sodoma, para que no se confundan con nadie; tonos apagados, no blanco brillante, para no sugerir una luz o una pureza que el texto no menciona.
+
+## Voz
+
+Voces de hombre adultas, serenas y firmes, sin eco ni efecto, español neutro. Gn 18:5 y 18:9: breves y corteses (a coro o uno por todos: decide el guion). Gn 19:2: rehúsan con calma. Gn 19:12-13: graves, urgentes. Gn 19:15: apremian. Quién dice Gn 19:17 y 19:21-22, donde el texto pasa a un solo «dijo», queda para el guion. Decisiones pendientes n.º 21 y n.º 22 de guiones/LEEME.md.
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/varones-mamre.png`; luego subirla a Cinema Studio como Element `VARONES_MAMRE`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+
+_Hoja de referencia de grupo sobre fondo gris claro liso: tres hombres de pie en fila, de cuerpo entero, con un primer plano de cada rostro encima. Caminantes de Asia occidental, hombres hechos de unos treinta y cinco a cuarenta años, iguales en rango, de gesto sereno, grave y callado; piel morena, ojos oscuros, pelo oscuro hasta la nuca. El de la izquierda, alto, con barba oscura corta; el del centro, ancho de hombros, con barba oscura algo más larga y entrecana; el de la derecha, más delgado, con barba oscura recortada en punta. Cada uno con túnica lisa de lana sin teñir hasta debajo de la rodilla y manto liso del mismo tejido: crudo el primero, arena el segundo y gris pardo el tercero, todos en tonos apagados y mates. Cinturón de cuerda y sandalias sencillas; pies con polvo del camino; cabeza descubierta y manos vacías. Hombres corrientes, con la misma luz suave de día que el fondo._ Evitar: _Sin alas, luz propia, rayos, destellos, aire radiante ni túnicas blancas brillantes; que ninguno sea más grande, destacado ni importante que los otros; sin cayados, espadas, coronas, turbantes, paños en la cabeza, joyas ni telas de franjas o dibujos; ni muchachos ni viejos; sin árbol, tienda, comida, ciudad ni otras personas; fondo liso._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make a group reference sheet on a plain light grey background, showing three men standing in a single row, each one fully visible from head to feet, with a close-up of each face above. They are travelers from western Asia, grown men of about thirty-five to forty, equal in rank and calm, grave and quiet in expression, with brown skin, dark eyes and dark hair that reaches the nape of the neck. The man on the left is tall, with a short dark beard; the man in the middle is broad-shouldered, with a slightly longer dark beard touched with grey; the man on the right is slimmer, with a dark beard trimmed to a point. Each wears a plain tunic of undyed wool that reaches below the knee, with a plain cloak of the same cloth: cream for the first, sand for the second and grey-brown for the third, all in muted, matte tones. They wear cord belts and simple sandals, their feet are dusty from the road, their heads are bare, and their hands are empty. They are ordinary men lit only by the same soft daylight as the background. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not give them wings, glowing light, rays, sparkles, a radiant or shining look, or bright white robes. Do not make one of them larger, more prominent or more important than the others. Do not give them staffs, swords, crowns, turbans, head cloths, jewelry or striped or patterned cloth. Do not make them young boys or old men. Do not paint a tree, a tent, food, a city or any other person, and keep the background plain.
+```

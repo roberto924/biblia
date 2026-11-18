@@ -1,0 +1,138 @@
+{
+  "id": "ismael",
+  "nombre": "Ismael",
+  "personas": [
+    "Ishmael_1"
+  ],
+  "pasajes": [
+    "gn-35",
+    "gn-43"
+  ],
+  "element": {
+    "nombre": "ISMAEL",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto de muchacho para Gn 17 (trece años) y Gn 21 (unos años más: el texto no dice cuántos). Una sola hoja para los dos pasajes: la diferencia es pequeña y se ajusta en cada toma. En Gn 16 es un recién nacido y no lleva hoja. No tiene palabras propias: Gn 21:17 dice que Dios oyó su voz, pero no lo que dijo; por eso la ficha no lleva voz y en la toma se le oye llorar o quejarse sin palabras. El arco llega cuando ya ha crecido (Gn 21:20): la hoja no lo lleva. «Se burlaba» (Gn 21:9) se lee tal cual; el texto no dice de quién ni cómo, y la hoja no le pone gesto de burla.",
+  "edades": [
+    {
+      "dato": "Trece años cuando lo circuncidan",
+      "certeza": "texto",
+      "ref": "Gn 17:25",
+      "cita": "Ismael su hijo era de trece años"
+    },
+    {
+      "dato": "Catorce años cuando nace Isaac; algo más en Gn 21:9-21, que ocurre el día del destete",
+      "certeza": "calculo",
+      "valor": 14,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 14,
+        "pasos": [
+          {
+            "texto": "Edad de Abraham cuando nace Isaac",
+            "valor": 100,
+            "ref": "Gn 21:5",
+            "cita": "era Abraham de cien años, cuando le nació Isaac su hijo"
+          },
+          {
+            "texto": "Edad de Abram cuando nace Ismael",
+            "valor": 86,
+            "ref": "Gn 16:16",
+            "cita": "era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael"
+          }
+        ],
+        "supuestos": [
+          "Se cuentan años completos",
+          "Gn 21:9 sigue al banquete del destete (Gn 21:8): a los catorce años se suma lo que tardó Isaac en ser destetado, que el texto no dice"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un muchacho de unos catorce o quince años, larguirucho, todavía sin barba",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador a partir de las edades de arriba. El texto lo llama «el muchacho» (Gn 21:12, 21:17-20): no se le dibuja niño pequeño ni hombre hecho."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo de Abram y de Agar",
+      "certeza": "texto",
+      "ref": "Gn 16:15",
+      "cita": "llamó Abram el nombre de su hijo que le parió Agar, Ismael"
+    },
+    {
+      "rasgo": "Dios promete bendecirlo y multiplicarlo",
+      "certeza": "texto",
+      "ref": "Gn 17:20",
+      "cita": "he aquí que le bendeciré, y le haré fructificar y multiplicar mucho en gran manera"
+    },
+    {
+      "rasgo": "Es circuncidado el mismo día que Abraham",
+      "certeza": "texto",
+      "ref": "Gn 17:26",
+      "cita": "En el mismo día fué circuncidado Abraham é Ismael su hijo"
+    },
+    {
+      "rasgo": "Sara lo ve burlarse",
+      "certeza": "texto",
+      "ref": "Gn 21:9",
+      "cita": "que se burlaba"
+    },
+    {
+      "rasgo": "El texto lo llama «el muchacho»",
+      "certeza": "texto",
+      "ref": "Gn 21:12",
+      "cita": "No te parezca grave á causa del muchacho"
+    },
+    {
+      "rasgo": "Cuando falta el agua, su madre lo deja debajo de un árbol",
+      "certeza": "texto",
+      "ref": "Gn 21:15",
+      "cita": "faltó el agua del odre, y echó al muchacho debajo de un árbol"
+    },
+    {
+      "rasgo": "Dios oye su voz",
+      "certeza": "texto",
+      "ref": "Gn 21:17",
+      "cita": "oyó Dios la voz del muchacho"
+    },
+    {
+      "rasgo": "Su madre le da de beber",
+      "certeza": "texto",
+      "ref": "Gn 21:19",
+      "cita": "dió de beber al muchacho"
+    },
+    {
+      "rasgo": "Crece en el desierto y es tirador de arco",
+      "certeza": "texto",
+      "ref": "Gn 21:20",
+      "cita": "creció, y habitó en el desierto, y fué tirador de arco"
+    },
+    {
+      "rasgo": "Delgado y fibroso, de piernas largas; piel morena cálida, ojos oscuros almendrados, pelo negro natural y algo ondulado hasta la nuca, sin barba; rostro vivo e inquieto",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Mezcla rasgos de sus padres según sus hojas (los ojos almendrados y la piel de AGAR, el pelo hasta la nuca de ABRAM); lo fibroso anticipa al que vivirá en el desierto (Gn 21:20)."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica corta de lana hasta la rodilla, con franjas sencillas rojas y blancas; cinturón de cuerda; sandalias; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Es hijo de Abraham y vive en su casa (Gn 17:23), así que viste como los suyos: las franjas rojas y blancas de los hombres de Asia occidental del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026). Que la túnica sea más sencilla que la de su padre, y la cabeza descubierta, lo elige el ilustrador.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same boy three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a lanky boy from western Asia of about fourteen, slim and wiry with long legs, warm brown skin, dark almond-shaped eyes and natural, slightly wavy black hair that reaches the nape of his neck. He has no beard yet. His head is bare, with nothing tied around it. His face is lively and restless. He wears a short wool tunic that reaches his knees, woven with simple red and white stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a cord belt and leather sandals. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo muchacho tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Muchacho larguirucho de Asia occidental de unos catorce años, delgado y fibroso, de piernas largas; piel morena cálida, ojos oscuros almendrados y pelo negro natural, algo ondulado, hasta la nuca. Todavía sin barba. Cabeza descubierta, sin nada atado. Rostro vivo e inquieto. Túnica corta de lana hasta la rodilla con franjas sencillas rojas y blancas, al modo de los asiáticos de las tumbas egipcias del Reino Medio; cinturón de cuerda y sandalias. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not make him a small child or a grown man, and do not give him a beard or a mustache. Do not put a headband, a cord or a cloth on his head. Do not give him a bow, arrows, a weapon, a water skin or jewelry. Do not make him sneer or look cruel. Do not paint a desert, a tree, a well or any other person, and keep the background plain.",
+    "negativo_es": "Que no sea un niño pequeño ni un hombre hecho; sin barba ni bigote; sin cinta, cordón ni paño en la cabeza; sin arco, flechas, armas, odre ni joyas; sin mueca ni aire cruel; sin desierto, árbol, pozo ni otras personas; fondo liso."
+  }
+}

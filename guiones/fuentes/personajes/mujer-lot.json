@@ -1,0 +1,84 @@
+{
+  "id": "mujer-lot",
+  "nombre": "La mujer de Lot",
+  "personas": [
+    "Wife of Lot_1"
+  ],
+  "pasajes": [
+    "gn-39"
+  ],
+  "element": {
+    "nombre": "MUJER_LOT",
+    "tipo": "personaje"
+  },
+  "nota": "El texto no da su nombre ni dice nada de ella antes del alba de Gn 19:15; no habla. Lo que queda de ella al mirar atrás tiene su propia hoja (ESTATUA_SAL). La hoja la muestra vestida para salir de prisa, con un manto sobre los hombros; el texto no dice qué llevaba.",
+  "edades": [
+    {
+      "dato": "Edad visual: una mujer de unos cincuenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Es madre de dos hijas casaderas (Gn 19:8, 19:14) y mujer de Lot, que ronda los sesenta en su hoja (LOT_MAYOR): se la dibuja madura, algo más joven que él."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Los ángeles meten prisa a Lot para que la saque",
+      "certeza": "texto",
+      "ref": "Gn 19:15",
+      "cita": "Levántate, toma tu mujer, y tus dos hijas"
+    },
+    {
+      "rasgo": "Los varones la sacan de la mano",
+      "certeza": "texto",
+      "ref": "Gn 19:16",
+      "cita": "los varones asieron de su mano, y de la mano de su mujer"
+    },
+    {
+      "rasgo": "Mira atrás, a espaldas de Lot, y se vuelve estatua de sal",
+      "certeza": "texto",
+      "ref": "Gn 19:26",
+      "cita": "la mujer de Lot miró atrás, [á espaldas] de él, y se volvió estatua de sal"
+    },
+    {
+      "rasgo": "Le habían dicho que no mirara atrás",
+      "certeza": "inferido",
+      "nota": "Gn 19:17 se lo dicen a Lot («no mires tras ti»), en singular. Que la orden valía también para ella se infiere de que van juntos y de lo que le pasa al mirar atrás (Gn 19:26); el texto no lo dice con esas palabras.",
+      "base": [
+        {
+          "ref": "Gn 19:17",
+          "cita": "Escapa por tu vida; no mires tras ti"
+        },
+        {
+          "ref": "Gn 19:26",
+          "cita": "la mujer de Lot miró atrás"
+        }
+      ]
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros, rostro ancho y cansado con arrugas finas; pelo oscuro largo con canas, suelto a la espalda y sujeto con una cinta estrecha de color ocre en la frente; gesto de angustia y de pena",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no la describe. El pelo largo con cinta sigue a las mujeres del mural de Beni Hasan (A2; mirado el 17-nov-2026); el color ocre de la cinta, a diferencia del blanco de Sara, es para distinguirlas. La pena, de que deja atrás su ciudad (Gn 19:16) sin que el texto diga por qué mira.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestido largo de lana hasta media pierna, con dibujos menudos en rojo oscuro, ocre y blanco; manto liso pardo oscuro echado sobre los hombros; botines bajos de cuero",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. El vestido sigue a las mujeres del cortejo de Beni Hasan (A2); los colores, distintos de los de Sara y sus hijas, y el manto para salir de noche son elección del ilustrador.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a mature woman from western Asia of about fifty, with olive-brown skin, dark eyes and a broad, tired face with fine lines. Her long dark hair, streaked with grey, falls down her back and is held by a narrow ochre band around her forehead. Her expression is anxious and sorrowful. She wears a long wool dress that covers both shoulders and reaches her lower calves, woven with small patterns in dark red, ochre and white in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, a plain dark brown wool cloak thrown over her shoulders, and low leather ankle boots. Her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Mujer madura de Asia occidental de unos cincuenta años; piel morena oliva, ojos oscuros, rostro ancho y cansado con arrugas finas. Pelo oscuro largo con canas, suelto a la espalda y sujeto con una cinta estrecha de color ocre en la frente. Gesto de angustia y de pena. Vestido largo de lana que cubre los dos hombros y llega a media pierna, con dibujos menudos en rojo oscuro, ocre y blanco, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio; manto liso pardo oscuro echado sobre los hombros; botines bajos de cuero. Manos vacías.",
+    "negativo_en": "Do not make her look young or elderly. Do not give her a veil, a crown, Egyptian white linen, bracelets or gold jewelry. Do not make her look wicked or like a villain. Do not show salt, a statue, fire, a city or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca joven ni anciana; sin velo, corona, lino blanco egipcio, brazaletes ni joyas de oro; que no parezca malvada ni villana; sin sal, estatua, fuego, ciudad ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "id": "sara",
+  "nombre": "Sara (antes Sarai)",
+  "personas": [
+    "Sarai_1"
+  ],
+  "pasajes": [
+    "gn-36",
+    "gn-41",
+    "gn-42",
+    "gn-43"
+  ],
+  "element": {
+    "nombre": "SARA",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto desde Gn 17, cuando se llama Sara. Hoja nueva porque la de SARAI (de unos sesenta y cinco años, dibujada como de cuarenta y cinco y con el negativo «que no parezca anciana») choca con el texto: ella misma dice que ha envejecido (Gn 18:12) y el narrador la llama vieja (Gn 18:11). Es la misma mujer: mismo rostro, misma ropa y la misma cinta blanca que SARAI, solo mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de SARAI). En gn-35 se habla de ella pero no está en escena. El texto no dice por qué Abimelec la toma (Gn 20:2) ni la llama hermosa en Gn 20: no se le añade nada. Sirve también para Gn 23. Su voz es la de sarai.json (guiones.py admite una sola voz por persona); tonos: Gn 18:12, para sí, risa incrédula; Gn 18:15, niega con miedo; Gn 21:6-7, alegría; Gn 21:10, dura y decidida.",
+  "edades": [
+    {
+      "dato": "Abraham le da noventa años al pensar en el hijo prometido",
+      "certeza": "texto",
+      "ref": "Gn 17:17",
+      "cita": "¿y Sara, ya de noventa años, ha de parir?"
+    },
+    {
+      "dato": "Unos noventa años cuando nace Isaac",
+      "certeza": "calculo",
+      "valor": 90,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 90,
+        "pasos": [
+          {
+            "texto": "Edad de Abraham cuando nace Isaac",
+            "valor": 100,
+            "ref": "Gn 21:5",
+            "cita": "era Abraham de cien años, cuando le nació Isaac su hijo"
+          },
+          {
+            "texto": "Años que Abraham le lleva a Sara (el mismo cálculo de la hoja SARAI)",
+            "valor": 10,
+            "ref": "Gn 17:17",
+            "cita": "¿A hombre de cien años ha de nacer hijo? ¿y Sara, ya de noventa años, ha de parir?"
+          }
+        ],
+        "supuestos": [
+          "La diferencia de diez años sale de Gn 17:17 con los supuestos de la hoja SARAI; con la otra lectura (nueve años) tendría noventa y uno",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: una anciana que aparenta unos setenta años, entera, erguida y digna",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto la llama vieja (Gn 18:11-13), pero da a luz y cría (Gn 21:2, 21:7) y vive hasta los ciento veintisiete (Gn 23:1, posterior: sirve para dirigir). Se la dibuja claramente anciana, para que su risa de Gn 18:12 se entienda, pero no frágil ni enferma; un poco más joven de aspecto que ABRAHAM, como en las hojas anteriores."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Dios le cambia el nombre: de Sarai a Sara",
+      "certeza": "texto",
+      "ref": "Gn 17:15",
+      "cita": "A Sarai tu mujer no la llamarás Sarai, mas Sara será su nombre"
+    },
+    {
+      "rasgo": "Abraham le pide que haga panes para los tres varones",
+      "certeza": "texto",
+      "ref": "Gn 18:6",
+      "cita": "Toma presto tres medidas de flor de harina, amasa y haz panes cocidos debajo del rescoldo"
+    },
+    {
+      "rasgo": "Escucha a la puerta de la tienda, detrás de Abraham",
+      "certeza": "texto",
+      "ref": "Gn 18:10",
+      "cita": "Sara escuchaba á la puerta de la tienda, que estaba detrás de él"
+    },
+    {
+      "rasgo": "Vieja, entrada en días",
+      "certeza": "texto",
+      "ref": "Gn 18:11",
+      "cita": "Abraham y Sara eran viejos, entrados en días"
+    },
+    {
+      "rasgo": "Se ríe para sí y dice que ha envejecido",
+      "certeza": "texto",
+      "ref": "Gn 18:12",
+      "cita": "Rióse, pues, Sara entre sí, diciendo: ¿Después que he envejecido tendré deleite"
+    },
+    {
+      "rasgo": "Niega haberse reído, porque tiene miedo",
+      "certeza": "texto",
+      "ref": "Gn 18:15",
+      "cita": "Entonces Sara negó diciendo: No me reí; porque tuvo miedo"
+    },
+    {
+      "rasgo": "Abimelec, rey de Gerar, la toma",
+      "certeza": "texto",
+      "ref": "Gn 20:2",
+      "cita": "Abimelech, rey de Gerar, envió y tomó á Sara"
+    },
+    {
+      "rasgo": "Ella también dijo que Abraham era su hermano",
+      "certeza": "texto",
+      "ref": "Gn 20:5",
+      "cita": "ella también dijo: Es mi hermano"
+    },
+    {
+      "rasgo": "Es hija del padre de Abraham, no de su madre",
+      "certeza": "texto",
+      "ref": "Gn 20:12",
+      "cita": "hija de mi padre, mas no hija de mi madre"
+    },
+    {
+      "rasgo": "Abimelec se la devuelve a Abraham",
+      "certeza": "texto",
+      "ref": "Gn 20:14",
+      "cita": "devolvióle á Sara su mujer"
+    },
+    {
+      "rasgo": "Concibe y da a luz a Isaac",
+      "certeza": "texto",
+      "ref": "Gn 21:2",
+      "cita": "concibió y parió Sara á Abraham un hijo en su vejez"
+    },
+    {
+      "rasgo": "Dice que Dios la ha hecho reír",
+      "certeza": "texto",
+      "ref": "Gn 21:6",
+      "cita": "Dios me ha hecho reir"
+    },
+    {
+      "rasgo": "Da de mamar",
+      "certeza": "texto",
+      "ref": "Gn 21:7",
+      "cita": "Sara había de dar de mamar á hijos"
+    },
+    {
+      "rasgo": "Ve al hijo de Agar burlarse",
+      "certeza": "texto",
+      "ref": "Gn 21:9",
+      "cita": "vió Sara al hijo de Agar la Egipcia, el cual había [ésta] parido á Abraham, que se burlaba"
+    },
+    {
+      "rasgo": "Pide a Abraham que eche a la sierva y a su hijo",
+      "certeza": "texto",
+      "ref": "Gn 21:10",
+      "cita": "Echa á esta sierva y á su hijo"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja SARAI, más vieja: piel morena oliva, ojos oscuros grandes, rostro sereno y digno con arrugas finas en la frente, junto a los ojos y la boca; pelo largo casi todo blanco, con algún mechón oscuro, suelto a la espalda y sujeto con la misma cinta blanca estrecha en la frente; se adivina que fue muy hermosa",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto en estos pasajes. Se conservan los rasgos de la hoja SARAI, que siguen a las mujeres de Asia occidental del mural de Beni Hasan (A2; mirado el 17-nov-2026); las canas y las arrugas, a su edad (Gn 18:11). La cinta es la de su hoja anterior y de las mujeres de A2: en ella es parte del personaje.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en la hoja SARAI: vestido largo de lana hasta media pierna, que cubre los dos hombros, con franjas estrechas y dibujos menudos en zigzag en rojo, blanco y azul oscuro; botines bajos de cuero rojizo",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de la hoja SARAI (mujeres del cortejo de Beni Hasan, A2) para que se la reconozca.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is an old woman from western Asia who looks about seventy, upright, steady and dignified, not frail, with olive-brown skin, large dark eyes, fine lines across her forehead and around her eyes and mouth, and a calm face that still shows she was once very beautiful. Her long hair is almost all white, with a few dark strands, and falls down her back, held by a narrow white band around her forehead. She wears a long wool dress that covers both shoulders and reaches her lower calves, woven with narrow red, white and dark blue stripes and small zigzag patterns in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and low reddish leather ankle boots. Her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Anciana de Asia occidental que aparenta unos setenta años, erguida, entera y digna, no frágil; piel morena oliva, ojos oscuros grandes, arrugas finas en la frente y junto a los ojos y la boca, y un rostro sereno en el que se adivina que fue muy hermosa. Pelo largo casi todo blanco, con algún mechón oscuro, suelto a la espalda y sujeto con una cinta blanca estrecha en la frente. Vestido largo de lana que cubre los dos hombros y llega a media pierna, con franjas estrechas y dibujos menudos en zigzag en rojo, blanco y azul oscuro, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio; botines bajos de cuero rojizo. Manos vacías.",
+    "negativo_en": "Do not make her look young or middle-aged, and do not make her frail, bent, sickly or toothless. Do not give her a veil, a crown, Egyptian white linen, bracelets or gold jewelry. Do not paint a tent, a baby, a child or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca joven ni de mediana edad, ni frágil, encorvada, enfermiza o desdentada; sin velo, corona, lino blanco egipcio, brazaletes ni joyas de oro; sin tienda, bebé, niño ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "pozo-beerseba",
+  "nombre": "El pozo de Beerseba y las siete corderas",
+  "pasajes": [
+    "gn-44"
+  ],
+  "element": {
+    "nombre": "POZO_BEERSEBA",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego, que tiene los pozos de Abraham que reabre Isaac en Gn 26 (pozos-isaac): esta hoja podrá servir entonces. El texto no describe el pozo. El bosque que Abraham planta en Beerseba (Gn 21:33) sale en un solo versículo y se resuelve en la toma, sin hoja.",
+  "texto": [
+    {
+      "dato": "Los siervos de Abimelec le habían quitado a Abraham un pozo de agua",
+      "certeza": "texto",
+      "ref": "Gn 21:25",
+      "cita": "un pozo de agua, que los siervos de Abimelech le habían quitado"
+    },
+    {
+      "dato": "Abraham aparta siete corderas del rebaño",
+      "certeza": "texto",
+      "ref": "Gn 21:28",
+      "cita": "puso Abraham siete corderas del rebaño aparte"
+    },
+    {
+      "dato": "Las corderas son testimonio de que él cavó el pozo",
+      "certeza": "texto",
+      "ref": "Gn 21:30",
+      "cita": "estas siete corderas tomarás de mi mano, para que me sean en testimonio de que yo cavé este pozo"
+    },
+    {
+      "dato": "Por el juramento el lugar se llama Beerseba",
+      "certeza": "texto",
+      "ref": "Gn 21:31",
+      "cita": "llamó á aquel lugar Beer-seba; porque allí juraron ambos"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Pozo: boca redonda excavada en tierra seca, con el borde forrado de piedras de campo sin labrar y un brocal bajo de las mismas piedras, a la altura de la rodilla; dentro, oscuridad y un reflejo de agua al fondo; junto a él, una pila tosca de piedra para abrevar",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que Abraham lo cavó y que tenía agua (Gn 21:25, 21:30), nada más. El brocal bajo y la pila son elección del ilustrador; sin polea, tejadillo ni piedra labrada."
+    },
+    {
+      "dato": "Siete corderas: ovejas jóvenes de lana clara color crudo, sanas, juntas y apartadas",
+      "certeza": "interpretacion",
+      "nota": "El texto da el número y que son corderas del rebaño (Gn 21:28); el color de la lana y que estén juntas son interpretación del ilustrador. Hay que contar siete."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing two things side by side. On the left is a well dug into dry, pale earth: a round opening lined with rough, uncut field stones, with a low ring of the same stones around it reaching about knee height, dark inside with a faint glint of water far below, and beside it a rough stone trough for watering animals. On the right is a small group of exactly seven young ewe lambs with clean, cream-colored wool, healthy and calm, standing close together on bare ground.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con dos cosas una al lado de otra. A la izquierda, un pozo cavado en tierra seca y clara: una boca redonda forrada de piedras de campo sin labrar, con un brocal bajo de las mismas piedras hasta la rodilla, oscuro por dentro con un reflejo débil de agua muy abajo, y al lado una pila tosca de piedra para abrevar. A la derecha, un grupo pequeño de exactamente siete corderas jóvenes de lana limpia color crudo, sanas y tranquilas, juntas sobre tierra desnuda.",
+    "negativo_en": "Do not add a pulley, a winch, a roof, a bucket on a chain, bricks or carved stone to the well, and do not make it a fountain. Do not paint more or fewer than seven lambs, rams with horns, or black sheep. Do not paint people, trees, tents or buildings, and keep the background plain.",
+    "negativo_es": "Sin polea, torno, tejadillo, cubo con cadena, ladrillos ni piedra labrada en el pozo, y que no sea una fuente; ni más ni menos de siete corderas, sin carneros con cuernos ni ovejas negras; sin personas, árboles, tiendas ni edificios; fondo liso."
+  }
+}
