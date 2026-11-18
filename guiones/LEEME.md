@@ -274,10 +274,13 @@ registro esté completo; y propone cambios en las fuentes JSON.
     en menor medida, para la madre de Rebeca (Gn 24:55, a la vez que Labán). No se le llama Eliezer: Gn 24 no lo
     nombra y no dice que sea el mayordomo de Gn 15:2.
 27. **Una persona con varias hojas por edad**: `guiones.py` admite una sola ficha con «voz» por persona y exige que
-    esa ficha esté en la toma donde habla. Isaac tiene dos hojas: `isaac-muchacho` (Gn 22, con la voz) e
-    `isaac-adulto` (Gn 24–25, sin voz porque ahí no habla). Cuando hable de adulto (Gn 26–27), o cuando Abraham
-    anciano hable con una hoja distinta de `abram`, choca con la regla. Opciones: llevar la voz a la persona y no a la
-    ficha, admitir la misma voz en varias fichas de una persona, o una ficha por persona con varias hojas por edad.
+    esa ficha esté en la toma donde habla. Desde Gn 17 ya choca: Abraham, Sara y Agar hablan con las hojas `abraham`,
+    `sara` y `agar-mayor`, pero su voz está en `abram`, `sarai` y `agar` (Lot no: su voz está en `lot-mayor`, porque
+    antes no habla). Isaac tiene dos hojas: `isaac-muchacho` (Gn 22, con la voz) e `isaac-adulto` (Gn 24–25, sin voz
+    porque ahí no habla); cuando hable de adulto (Gn 26–27) chocará igual. Opciones: llevar la voz a la persona y no a
+    la ficha, admitir la misma voz en varias fichas de una persona, o una ficha por persona con varias hojas por edad.
+    Faltan además hojas por edad en gn-52 (Gn 25:9): Ismael solo tiene la de muchacho y allí tiene unos ochenta y
+    nueve años; Isaac, unos setenta y cinco con la hoja de los cuarenta (cálculos en sus fichas).
 28. **Edad visual de Isaac en Gn 22**: propuesta por defecto, un muchacho de unos dieciséis años, nunca un niño
     pequeño. El texto lo llama «muchacho» (Gn 22:5, 22:12) y le hace cargar la leña (Gn 22:6); por cálculo tiene como
     mucho unos treinta y siete años (Gn 23:1 y 17:17). Su edad no consta.
@@ -287,7 +290,9 @@ registro esté completo; y propone cambios en las fuentes JSON.
     fuera de cuadro. La narración no cambia.
 30. **Objetos con hoja que no están en el catálogo de juego** (como la n.º 16): el altar de Moriah
     (`objetos/altar-moriah`; el catálogo lo deja dentro del escenario «moriah» y de `lena-cuchillo`), el cántaro de
-    Rebeca (`objetos/cantaro-rebeca`) y los camellos del criado (`objetos/camellos-siervo`).
+    Rebeca (`objetos/cantaro-rebeca`) y los camellos del criado (`objetos/camellos-siervo`); y, de Gn 18–21, la comida
+    de Mamre (`objetos/comida-mamre`), la estatua de sal (`objetos/estatua-sal`) y el pozo de Beerseba con las siete
+    corderas (`objetos/pozo-beerseba`; el catálogo tiene `pozos-isaac`, de Gn 26).
 31. **Ropa de la familia de Nacor y de los hijos de Het**: supuesto por defecto, la gente de Asia occidental de Beni
     Hasan (A2) de la n.º 17, para Betuel, Labán, Rebeca y su madre (ciudad de Nacor, en Mesopotamia, Gn 24:10) y para
     Efrón y los hijos de Het (Hebrón, Gn 23:2). No hay referencia comprobada propia de ninguno de los dos lugares. El

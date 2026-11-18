@@ -8,7 +8,7 @@
     "nombre": "LENA_CUCHILLO",
     "tipo": "objeto"
   },
-  "nota": "El id es el del catálogo de juego. La hoja fija las tres cosas sueltas, como se llevan en el camino (Gn 22:6-8); la leña compuesta sobre el altar es la hoja altar-moriah. El cuchillo de Gn 22:10 no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 34 de guiones/LEEME.md, como la n.º 19): en la hoja aparece limpio, junto a su funda, sin nadie que lo empuñe.",
+  "nota": "El id es el del catálogo de juego. La hoja fija las tres cosas sueltas, como se llevan en el camino (Gn 22:6-8); la leña compuesta sobre el altar es la hoja altar-moriah. El cuchillo de Gn 22:10 no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 29 de guiones/LEEME.md, como la n.º 19): en la hoja aparece limpio, junto a su funda, sin nadie que lo empuñe.",
   "texto": [
     {
       "dato": "Abraham corta la leña antes de salir",
@@ -37,7 +37,7 @@
     {
       "dato": "El ángel lo detiene",
       "certeza": "texto",
-      "ref": "Gn 22:12",
+      "ref": "Gn 22:11-12",
       "cita": "No extiendas tu mano sobre el muchacho, ni le hagas nada"
     },
     {
@@ -81,7 +81,7 @@
     }
   ],
   "hoja_referencia": {
-    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left is a bundle of split branches and short logs, each about an arm's length, tied with two ropes and with a third rope looped to carry it on the back. In the center is a small, plain fire pot of fired clay with a rope handle, holding glowing red embers and giving off a thin thread of smoke. On the right is a plain, straight bronze knife with a blade about a hand's span long and a simple wooden handle, lying flat and clean beside its plain leather sheath. Nobody is holding any of them.",
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left is a bundle of split branches and short logs, each about an arm's length, tied with two ropes and with a third rope looped to carry it on the back. In the center is a small, plain fire pot of fired clay with a rope handle, holding red-hot embers and giving off a thin thread of smoke. On the right is a plain, straight bronze knife with a blade about a hand's span long and a simple wooden handle, lying flat and clean beside its plain leather sheath. Nobody is holding any of them.",
     "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con tres cosas una al lado de otra. A la izquierda, un haz de ramas y leños partidos, de un brazo de largo, atado con dos cuerdas y con una tercera en lazo para llevarlo a la espalda. En el centro, una olla pequeña y lisa de barro cocido con asa de cuerda, con brasas rojas encendidas y un hilo de humo. A la derecha, un cuchillo recto y liso de bronce, con hoja de un palmo y mango sencillo de madera, tendido y limpio junto a su funda lisa de cuero. Nadie sostiene nada.",
     "negativo_en": "Do not show blood, wounds, people, hands, an altar or an animal. Do not make the knife a sword, a dagger with a decorated hilt, or a curved or jagged blade, and do not make it shine or glint. Do not decorate the pot, and do not show a large fire, a lamp or a torch. Keep the background plain.",
     "negativo_es": "Sin sangre, heridas, personas, manos, altar ni animales; el cuchillo no es espada, ni puñal de empuñadura adornada, ni de hoja curva o dentada, y no brilla ni destella; olla sin adornos; sin fuego grande, lámpara ni antorcha; fondo liso."

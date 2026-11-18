@@ -11,7 +11,7 @@
     "nombre": "ISAAC_MUCHACHO",
     "tipo": "personaje"
   },
-  "nota": "Aspecto para Gn 22. Isaac de adulto (Gn 24:62 en adelante) tiene su propia hoja, isaac-adulto, con la misma cara. Que lo aten y lo pongan sobre la leña (Gn 22:9) y el cuchillo (Gn 22:10) no se muestran de forma gráfica en ningún perfil, como los animales de Gn 15 (decisión n.º 19 de guiones/LEEME.md): la hoja lo muestra de pie, libre y sin heridas. El ángel de Jehová que llama desde el cielo (Gn 22:11, 22:15) no tiene figura (decisión n.º 1). Gn 22:19 dice que Abraham volvió a sus mozos y que «se fueron juntos á Beer-seba» sin nombrar a Isaac: la ficha no decide si va con ellos; lo resuelve el guion. La voz de Isaac_1 está en esta ficha porque solo habla aquí (Gn 22:7); su voz de adulto es la decisión pendiente n.º 32.",
+  "nota": "Aspecto para Gn 22. En gn-42 (Gn 21:1-8) es un recién nacido y, al final, un niño recién destetado (Gn 21:8): no lleva hoja, como Ismael en Gn 16. Isaac de adulto (Gn 24:62 en adelante) tiene su propia hoja, isaac-adulto, con la misma cara. Que lo aten y lo pongan sobre la leña (Gn 22:9) y el cuchillo (Gn 22:10) no se muestran de forma gráfica en ningún perfil, como los animales de Gn 15 (decisión n.º 19 de guiones/LEEME.md): la hoja lo muestra de pie, libre y sin heridas. El ángel de Jehová que llama desde el cielo (Gn 22:11, 22:15) no tiene figura (decisión n.º 1). Gn 22:19 dice que Abraham volvió a sus mozos y que «se fueron juntos á Beer-seba» sin nombrar a Isaac: la ficha no decide si va con ellos; lo resuelve el guion. La voz de Isaac_1 está en esta ficha porque solo habla aquí (Gn 22:7); su voz de adulto es la decisión pendiente n.º 27.",
   "edades": [
     {
       "dato": "El texto lo llama «el muchacho»",
@@ -22,7 +22,7 @@
     {
       "dato": "El ángel lo llama también «el muchacho»",
       "certeza": "texto",
-      "ref": "Gn 22:12",
+      "ref": "Gn 22:11-12",
       "cita": "No extiendas tu mano sobre el muchacho"
     },
     {
@@ -78,7 +78,7 @@
     {
       "dato": "Edad visual: un muchacho de unos dieciséis años, alto ya pero sin barba",
       "certeza": "interpretacion",
-      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 33 de guiones/LEEME.md): el texto no da su edad. Entre lo que dice el texto (muchacho, carga la leña, pregunta por el cordero) y el tope del cálculo (treinta y siete), se le dibuja adolescente, nunca niño pequeño."
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 28 de guiones/LEEME.md): el texto no da su edad. Entre lo que dice el texto (muchacho, carga la leña, pregunta por el cordero) y el tope del cálculo (treinta y siete), se le dibuja adolescente, nunca niño pequeño."
     }
   ],
   "rasgos": [

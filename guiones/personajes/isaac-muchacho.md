@@ -5,19 +5,19 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `ISAAC_MUCHACHO` (personaje)
 - **Personas (datos/biblia.js)**: Isaac_1
 - **Pasajes**: gn-45
-- **Nota**: Aspecto para Gn 22. Isaac de adulto (Gn 24:62 en adelante) tiene su propia hoja, isaac-adulto, con la misma cara. Que lo aten y lo pongan sobre la leña (Gn 22:9) y el cuchillo (Gn 22:10) no se muestran de forma gráfica en ningún perfil, como los animales de Gn 15 (decisión n.º 19 de guiones/LEEME.md): la hoja lo muestra de pie, libre y sin heridas. El ángel de Jehová que llama desde el cielo (Gn 22:11, 22:15) no tiene figura (decisión n.º 1). Gn 22:19 dice que Abraham volvió a sus mozos y que «se fueron juntos á Beer-seba» sin nombrar a Isaac: la ficha no decide si va con ellos; lo resuelve el guion. La voz de Isaac_1 está en esta ficha porque solo habla aquí (Gn 22:7); su voz de adulto es la decisión pendiente n.º 32.
+- **Nota**: Aspecto para Gn 22. En gn-42 (Gn 21:1-8) es un recién nacido y, al final, un niño recién destetado (Gn 21:8): no lleva hoja, como Ismael en Gn 16. Isaac de adulto (Gn 24:62 en adelante) tiene su propia hoja, isaac-adulto, con la misma cara. Que lo aten y lo pongan sobre la leña (Gn 22:9) y el cuchillo (Gn 22:10) no se muestran de forma gráfica en ningún perfil, como los animales de Gn 15 (decisión n.º 19 de guiones/LEEME.md): la hoja lo muestra de pie, libre y sin heridas. El ángel de Jehová que llama desde el cielo (Gn 22:11, 22:15) no tiene figura (decisión n.º 1). Gn 22:19 dice que Abraham volvió a sus mozos y que «se fueron juntos á Beer-seba» sin nombrar a Isaac: la ficha no decide si va con ellos; lo resuelve el guion. La voz de Isaac_1 está en esta ficha porque solo habla aquí (Gn 22:7); su voz de adulto es la decisión pendiente n.º 27.
 
 ## Edad
 
 - **Texto**: El texto lo llama «el muchacho» — Gn 22:5: «yo y el muchacho iremos hasta allí»
-- **Texto**: El ángel lo llama también «el muchacho» — Gn 22:12: «No extiendas tu mano sobre el muchacho»
+- **Texto**: El ángel lo llama también «el muchacho» — Gn 22:11-12: «No extiendas tu mano sobre el muchacho»
 - **Texto**: Ya había crecido y sido destetado antes de este relato — Gn 21:8: «creció el niño, y fué destetado»
 - **Cálculo**: Como mucho unos treinta y siete años en Gn 22 — Es un tope, no su edad: Gn 22 no da cuántos años tiene. Gn 23:1 es posterior a este pasaje (gn-47): sirve para dirigir, no se cita en el video.
   1. Años que vivió Sara: 127 (Gn 23:1: «Y FUÉ la vida de Sara ciento veintisiete años»)
   2. − Edad de Sara al nacer Isaac: 90 (Gn 17:17: «¿y Sara, ya de noventa años, ha de parir?»)
   = 37. Supuestos: Los noventa años de Gn 17:17 son la edad de Sara al parir, la misma lectura que la ficha de Sarai (Abraham tiene cien al nacer Isaac, Gn 21:5); con la otra lectura, Isaac tendría como mucho treinta y seis; Los hechos de Gn 22 ocurren antes de la muerte de Sara (Gn 23): se sigue el orden del relato, que no da el tiempo entre los dos capítulos; Se cuentan años completos
 - **Inferido**: Tiene fuerza para cargar la leña del holocausto hasta el lugar — Abraham le pone encima la leña al dejar a los mozos, cuando ya ven el lugar de lejos, y suben juntos: no es un niño pequeño. — base: Gn 22:4 «vió el lugar de lejos» — base: Gn 22:6 «púsola sobre Isaac su hijo»
-- **Interpretación del ilustrador**: Edad visual: un muchacho de unos dieciséis años, alto ya pero sin barba — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 33 de guiones/LEEME.md): el texto no da su edad. Entre lo que dice el texto (muchacho, carga la leña, pregunta por el cordero) y el tope del cálculo (treinta y siete), se le dibuja adolescente, nunca niño pequeño.
+- **Interpretación del ilustrador**: Edad visual: un muchacho de unos dieciséis años, alto ya pero sin barba — Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 28 de guiones/LEEME.md): el texto no da su edad. Entre lo que dice el texto (muchacho, carga la leña, pregunta por el cordero) y el tope del cálculo (treinta y siete), se le dibuja adolescente, nunca niño pequeño.
 
 ## Rasgos
 

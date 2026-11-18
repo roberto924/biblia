@@ -4,13 +4,13 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `ALTAR_MORIAH` (objeto)
 - **Pasajes**: gn-45
-- **Nota**: No está en el catálogo de juego, donde el altar de Gn 22:9 entra en el escenario «moriah» y en el objeto lena-cuchillo (decisión pendiente n.º 35 de guiones/LEEME.md). Es otro altar que los de Siquem, Betel y Mamre (hoja altares-abraham): este lleva la leña compuesta encima. La hoja no muestra fuego ni a nadie sobre la leña: Isaac atado (Gn 22:9) y el holocausto del carnero (Gn 22:13) se resuelven en sus tomas sin nada gráfico (decisión pendiente n.º 34).
+- **Nota**: No está en el catálogo de juego, donde el altar de Gn 22:9 entra en el escenario «moriah» y en el objeto lena-cuchillo (decisión pendiente n.º 30 de guiones/LEEME.md). Es otro altar que los de Siquem, Betel y Mamre (hoja altares-abraham): este lleva la leña compuesta encima. La hoja no muestra fuego ni a nadie sobre la leña: Isaac atado (Gn 22:9) y el holocausto del carnero (Gn 22:13) se resuelven en sus tomas sin nada gráfico (decisión pendiente n.º 29).
 
 ## Lo que dice el texto
 
 - **Texto**: Dios le dice a Abraham que ofrezca a Isaac sobre uno de los montes que le dirá — Gn 22:2: «ofrécelo allí en holocausto sobre uno de los montes que yo te diré»
 - **Texto**: Abraham edifica el altar y compone la leña — Gn 22:9: «edificó allí Abraham un altar, y compuso la leña»
-- **Texto**: Pone a Isaac atado sobre la leña — Gn 22:9: «púsole en el altar sobre la leña»
+- **Texto**: Pone a Isaac atado sobre la leña — Gn 22:9: «ató á Isaac su hijo, y púsole en el altar sobre la leña»
 - **Texto**: Ofrece el carnero en holocausto en lugar de su hijo — Gn 22:13: «ofrecióle en holocausto en lugar de su hijo»
 - **Texto**: Abraham llama al lugar «Jehová proveerá» — Gn 22:14: «llamó Abraham el nombre de aquel lugar, Jehová proveerá»
 - **Inferido**: El carnero se ofrece en este mismo altar — Gn 22:13 no nombra el altar: dice que lo ofreció en holocausto en lugar de su hijo, al que había puesto en el altar sobre la leña (Gn 22:9). — base: Gn 22:9 «púsole en el altar sobre la leña» — base: Gn 22:13 «en lugar de su hijo»

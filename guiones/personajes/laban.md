@@ -14,7 +14,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 ## Rasgos
 
 - **Texto**: Hermano de Rebeca; corre a la fuente al encuentro del criado — Gn 24:29: «Rebeca tenía un hermano que se llamaba Labán, el cual corrió afuera al hombre, á la fuente»
-- **Texto**: Va al criado después de ver las joyas en las manos de su hermana — Gn 24:30: «como vió el pendiente y los brazaletes en las manos de su hermana»
+- **Texto**: Va al criado después de ver las joyas en las manos de su hermana — Gn 24:30: «como vió el pendiente y los brazaletes en las manos de su hermana, que decía, Así me habló aquel hombre; vino á él»
 - **Texto**: Lo invita a entrar con palabras de bendición — Gn 24:31: «Ven, bendito de Jehová; ¿por qué estás fuera? yo he limpiado la casa, y el lugar para los camellos»
 - **Texto**: Desata los camellos y les da paja y forraje — Gn 24:32: «[Labán] desató los camellos; y dióles paja y forraje»
 - **Texto**: Responde con Betuel que la cosa viene de Jehová — Gn 24:50: «Labán y Bethuel respondieron y dijeron: De Jehová ha salido esto»
@@ -25,7 +25,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnica de lana hasta la rodilla, de dibujos en zigzag rojos y blancos, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón ancho de tela azul oscuro; sandalias de correas — Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los hombres del cortejo de Beni Hasan (A2) llevan faldellines o túnicas de franjas rojas y blancas sujetas sobre un hombro. El dibujo en zigzag (que en A2 se ve en un vestido de mujer), el cinturón azul y que vaya sin manto, por estar en su casa, son elección del ilustrador para distinguirlo de Lot y de los de la casa de Abraham. — referencias: A2
+- **Supuesto**: Túnica de lana hasta la rodilla, de dibujos en zigzag rojos y blancos, sujeta sobre el hombro izquierdo y con el derecho descubierto; cinturón ancho de tela azul oscuro; sandalias de correas — Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los hombres del cortejo de Beni Hasan (A2) llevan faldellines o túnicas de franjas rojas y blancas sujetas sobre un hombro. El dibujo en zigzag (que en A2 se ve en un vestido de mujer), el cinturón azul y que vaya sin manto, por estar en su casa, son elección del ilustrador para distinguirlo de Lot y de los de la casa de Abraham. — referencias: A2
 
 ## Voz
 

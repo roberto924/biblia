@@ -35,7 +35,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Voz
 
-Hombre mayor, voz grave, mesurada y cálida, español neutro. Gn 24:5 (a Abraham): prudente. Gn 24:12-14 (oración junto a la fuente): humilde y concreta. Gn 24:17 y 24:23 (a Rebeca): cortés. Gn 24:27: gratitud contenida. Gn 24:33-49 (el relato en casa de Labán): ordenado, sin prisa pero con urgencia por terminar. Gn 24:56: firme. Decisión pendiente del usuario (n.º 31 de guiones/LEEME.md): voz propia o leída por el narrador.
+Hombre mayor, voz grave, mesurada y cálida, español neutro. Gn 24:5 (a Abraham): prudente. Gn 24:12-14 (oración junto a la fuente): humilde y concreta. Gn 24:17 y 24:23 (a Rebeca): cortés. Gn 24:27: gratitud contenida. Gn 24:33-49 (el relato en casa de Labán): ordenado, sin prisa pero con urgencia por terminar. Gn 24:56: firme. Decisión pendiente del usuario (n.º 26 de guiones/LEEME.md): voz propia o leída por el narrador.
 
 ## Referencias de época
 

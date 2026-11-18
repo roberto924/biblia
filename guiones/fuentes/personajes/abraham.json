@@ -24,7 +24,7 @@
     "nombre": "ABRAHAM",
     "tipo": "personaje"
   },
-  "nota": "Aspecto desde Gn 17, cuando se llama Abraham. Hoja nueva y no la de ABRAM porque han pasado trece años desde Gn 16 y el texto lo llama viejo (Gn 18:11-12), mientras que la hoja ABRAM, de los setenta y cinco a los ochenta y seis, muestra a un hombre canoso pero de unos sesenta; con Sara, que también cambia de hoja, la pareja envejece a la vez. Es el mismo hombre: mismo rostro, misma ropa y mismo cayado que ABRAM, solo mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de ABRAM). Sirve también para Gn 22–25. Su voz es la de abram.json (guiones.py admite una sola voz por persona); tonos en estos pasajes: Gn 17:17-18, asombro y ruego; Gn 18:3-6, hospitalario y con prisa; Gn 18:23-32, humilde pero insistente; Gn 20:11-13, se explica sin altivez; Gn 21:24 y 21:30, firme. Jehová, que le habla en Gn 17 y en Gn 18:17-33, no tiene figura (decisión n.º 1 de guiones/LEEME.md); los tres varones de Gn 18 tienen su hoja (VARONES_MAMRE) y una decisión pendiente (n.º 21).",
+  "nota": "Aspecto desde Gn 17, cuando se llama Abraham. Hoja nueva y no la de ABRAM porque han pasado trece años desde Gn 16 y el texto lo llama viejo (Gn 18:11-12), mientras que la hoja ABRAM, de los setenta y cinco a los ochenta y seis, muestra a un hombre mayor pero fuerte, de pelo y barba canos; con Sara, que también cambia de hoja, la pareja envejece a la vez. Es el mismo hombre: mismo rostro, misma ropa y mismo cayado que ABRAM, solo mayor (si se genera a mano en ChatGPT, adjuntar también la imagen de ABRAM). Sirve también para Gn 22–25. Su voz es la de abram.json (guiones.py admite una sola voz por persona; decisión pendiente n.º 27 de guiones/LEEME.md); tonos en estos pasajes: Gn 17:17-18, asombro y ruego; Gn 18:3-6, hospitalario y con prisa; Gn 18:23-32, humilde pero insistente; Gn 20:11-13, se explica sin altivez; Gn 21:24 y 21:30, firme. Jehová, que le habla en Gn 17 y en Gn 18:17-33, no tiene figura (decisión n.º 1 de guiones/LEEME.md); los tres varones de Gn 18 tienen su hoja (VARONES_MAMRE) y una decisión pendiente (n.º 21).",
   "edades": [
     {
       "dato": "Noventa y nueve años cuando Jehová le cambia el nombre",
@@ -94,7 +94,7 @@
       "rasgo": "Se ríe al oír que Sara le dará un hijo",
       "certeza": "texto",
       "ref": "Gn 17:17",
-      "cita": "Abraham cayó sobre su rostro, y rióse"
+      "cita": "Abraham cayó sobre su rostro, y rióse, y dijo en su corazón: ¿A hombre de cien años ha de nacer hijo? ¿y Sara, ya de noventa años, ha de parir?"
     },
     {
       "rasgo": "Pide por Ismael",

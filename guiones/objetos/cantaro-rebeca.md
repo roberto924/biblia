@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `CANTARO_REBECA` (objeto)
 - **Pasajes**: gn-48, gn-49, gn-50
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 35 de guiones/LEEME.md). Es la señal que pide el criado (Gn 24:14) y el centro de la escena del pozo (Gn 24:15-20); vuelve en su relato (Gn 24:43-46). En gn-48 solo se nombra en la oración: sale si el guion muestra lo que el criado imagina. La pila donde lo vacía (Gn 24:20) y el pozo son parte del escenario de la fuente, no de esta hoja.
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 30 de guiones/LEEME.md). Es la señal que pide el criado (Gn 24:14) y el centro de la escena del pozo (Gn 24:15-20); vuelve en su relato (Gn 24:43-46). En gn-48 solo se nombra en la oración: sale si el guion muestra lo que el criado imagina. La pila donde lo vacía (Gn 24:20) y el pozo son parte del escenario de la fuente, no de esta hoja.
 
 ## Lo que dice el texto
 

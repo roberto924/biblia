@@ -24,7 +24,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnica de lana hasta media pierna, de dibujos ricos en rojo, blanco, azul y amarillo ocre, que le cubre los dos hombros; manto liso de lana verde oliva oscuro; cinturón de tela; sandalias de correas — Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa ni la de los heteos. Como hombre de Hebrón, en la tierra de Canaán (Gn 23:2), se le viste como la gente de Asia occidental de las otras hojas (A2); el tejido de dibujos más ricos y de más colores sigue a los dos jefes que encabezan el cortejo de Beni Hasan (A2), porque es dueño de tierra. El manto verde oliva es elección del ilustrador para distinguirlo de Abraham y de los demás hijos de Het. No se usan registros de otros pueblos llamados hititas: el texto lo sitúa en Hebrón. — referencias: A2
+- **Supuesto**: Túnica de lana hasta media pierna, de dibujos ricos en rojo, blanco, azul y amarillo ocre, que le cubre los dos hombros; manto liso de lana verde oliva oscuro; cinturón de tela; sandalias de correas — Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa ni la de los heteos. Como hombre de Hebrón, en la tierra de Canaán (Gn 23:2), se le viste como la gente de Asia occidental de las otras hojas (A2); el tejido de dibujos más ricos y de más colores sigue a los dos jefes que encabezan el cortejo de Beni Hasan (A2), porque es dueño de tierra. El manto verde oliva es elección del ilustrador para distinguirlo de Abraham y de los demás hijos de Het. No se usan registros de otros pueblos llamados hititas: el texto lo sitúa en Hebrón. — referencias: A2
 
 ## Voz
 

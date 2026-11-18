@@ -13,7 +13,7 @@
     "nombre": "VARONES_MAMRE",
     "tipo": "personaje (grupo)"
   },
-  "nota": "Grupo de tres hombres iguales en rango, sin nada que distinga a uno sobre los otros: el texto no dice quién es cada uno. Propuesta por defecto (decisión pendiente n.º 21 de guiones/LEEME.md): se dibujan como hombres, sin alas, sin halo ni luz propia (negativo general del estilo y decisión n.º 18), y ninguno se marca como Dios (decisión n.º 1). Las palabras que el texto pone en boca de Jehová (Gn 18:13-14, 18:17-33) no se ponen en la boca de ninguno de los tres. En Gn 19 van dos: por defecto el varón A y el varón B de la hoja; el texto no dice cuáles. Lo que no se ve en la hoja: la ceguera con que hieren a los de la puerta (Gn 19:11) es cosa de la toma, sin rayos ni destellos.",
+  "nota": "Grupo de tres hombres iguales en rango, sin nada que distinga a uno sobre los otros: el texto no dice quién es cada uno. Propuesta por defecto (decisión pendiente n.º 21 de guiones/LEEME.md): se dibujan como hombres, sin alas, sin halo ni luz propia (negativo general del estilo; la n.º 18, pendiente, plantea lo mismo para el ángel de Gn 16), y ninguno se marca como Dios (decisión n.º 1). Las palabras que el texto pone en boca de Jehová (Gn 18:13-14, 18:17-33) no se ponen en la boca de ninguno de los tres. En Gn 19 van dos: por defecto el varón A y el varón B de la hoja; el texto no dice cuáles. Lo que no se ve en la hoja: la ceguera con que hieren a los de la puerta (Gn 19:11) es cosa de la toma, sin rayos ni destellos.",
   "edades": [
     {
       "dato": "Edad visual: hombres adultos de unos treinta y cinco a cuarenta años",
@@ -94,13 +94,13 @@
     {
       "rasgo": "Hieren con ceguera a los hombres de la puerta",
       "certeza": "texto",
-      "ref": "Gn 19:11",
+      "ref": "Gn 19:10-11",
       "cita": "hirieron con ceguera"
     },
     {
       "rasgo": "Dicen que Jehová los ha enviado a destruir el lugar",
       "certeza": "texto",
-      "ref": "Gn 19:13",
+      "ref": "Gn 19:12-13",
       "cita": "Jehová nos ha enviado para destruirlo"
     },
     {

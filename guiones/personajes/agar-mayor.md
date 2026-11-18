@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `AGAR_MAYOR` (personaje)
 - **Personas (datos/biblia.js)**: Hagar_1
 - **Pasajes**: gn-43
-- **Nota**: Aspecto para Gn 21, unos catorce años después de Gn 16. Hoja nueva porque la de AGAR muestra a una mujer de unos veinticinco años y aquí es madre de un muchacho de catorce o más (cálculo de abajo): con la hoja vieja parecería su hermana. Es la misma mujer: mismo rostro, mismo pelo y la misma ropa de sierva que AGAR, mayor y gastada por el camino (si se genera a mano en ChatGPT, adjuntar también la imagen de AGAR). El odre y el pan tienen su hoja (ODRE_AGUA). El ángel de Dios la llama «desde el cielo» (Gn 21:17): no tiene figura, solo voz (decisiones n.º 1 y n.º 18 de guiones/LEEME.md). Su voz es la de agar.json (guiones.py admite una sola voz por persona); en Gn 21:16 («No veré cuando el muchacho morirá»), voz rota, casi para sí.
+- **Nota**: Aspecto para Gn 21, unos catorce años después de Gn 16. Hoja nueva porque la de AGAR muestra a una mujer de unos veinticinco años y aquí es madre de un muchacho de catorce o más (cálculo de abajo): con la hoja vieja parecería su hermana. Es la misma mujer: mismo rostro, mismo pelo y la misma ropa de sierva que AGAR, mayor y gastada por el camino (si se genera a mano en ChatGPT, adjuntar también la imagen de AGAR). El odre y el pan tienen su hoja (ODRE_AGUA). El ángel de Dios la llama «desde el cielo» (Gn 21:17): no tiene figura, solo voz (decisiones n.º 1 y n.º 18 de guiones/LEEME.md). Su voz es la de agar.json (guiones.py admite una sola voz por persona; decisión pendiente n.º 27 de guiones/LEEME.md); en Gn 21:16 («No veré cuando el muchacho morirá»), voz rota, casi para sí.
 
 ## Edad
 

@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `ISMAEL` (personaje)
 - **Personas (datos/biblia.js)**: Ishmael_1
 - **Pasajes**: gn-35, gn-43, gn-52
-- **Nota**: Aspecto de muchacho para Gn 17 (trece años) y Gn 21 (unos años más: el texto no dice cuántos). Una sola hoja para los dos pasajes: la diferencia es pequeña y se ajusta en cada toma. En Gn 16 es un recién nacido y no lleva hoja. No tiene palabras propias: Gn 21:17 dice que Dios oyó su voz, pero no lo que dijo; por eso la ficha no lleva voz y en la toma se le oye llorar o quejarse sin palabras. El arco llega cuando ya ha crecido (Gn 21:20): la hoja no lo lleva. «Se burlaba» (Gn 21:9) se lee tal cual; el texto no dice de quién ni cómo, y la hoja no le pone gesto de burla.
+- **Nota**: Aspecto de muchacho para Gn 17 (trece años) y Gn 21 (unos años más: el texto no dice cuántos). Una sola hoja para los dos pasajes: la diferencia es pequeña y se ajusta en cada toma. En Gn 16 es un recién nacido y no lleva hoja. En gn-52 (Gn 25:9) entierra a Abraham con unos ochenta y nueve años (cálculo de abajo): esta hoja no sirve para esas tomas y hace falta otra (pendiente, n.º 27 de guiones/LEEME.md). No tiene palabras propias: Gn 21:17 dice que Dios oyó su voz, pero no lo que dijo; por eso la ficha no lleva voz y en la toma se le oye llorar o quejarse sin palabras. El arco llega cuando ya ha crecido (Gn 21:20): la hoja no lo lleva. «Se burlaba» (Gn 21:9) se lee tal cual; el texto no dice de quién ni cómo, y la hoja no le pone gesto de burla.
 
 ## Edad
 
@@ -15,6 +15,10 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
   2. − Edad de Abram cuando nace Ismael: 86 (Gn 16:16: «era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael»)
   = 14. Supuestos: Se cuentan años completos; Gn 21:9 sigue al banquete del destete (Gn 21:8): a los catorce años se suma lo que tardó Isaac en ser destetado, que el texto no dice
 - **Interpretación del ilustrador**: Edad visual: un muchacho de unos catorce o quince años, larguirucho, todavía sin barba — Interpretación del ilustrador a partir de las edades de arriba. El texto lo llama «el muchacho» (Gn 21:12, 21:17-20): no se le dibuja niño pequeño ni hombre hecho.
+- **Cálculo**: Unos ochenta y nueve años cuando entierra a Abraham (gn-52)
+  1. Años que vivió Abraham: 175 (Gn 25:7: «Y estos fueron los días de vida que vivió Abraham: ciento setenta y cinco años»)
+  2. − Edad de Abram cuando nace Ismael: 86 (Gn 16:16: «era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael»)
+  = 89. Supuestos: Ismael entierra a su padre poco después de su muerte (Gn 25:8-9 lo cuenta seguido); Se cuentan años completos
 
 ## Rasgos
 

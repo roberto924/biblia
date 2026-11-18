@@ -12,13 +12,14 @@
     "nombre": "ISAAC_ADULTO",
     "tipo": "personaje"
   },
-  "nota": "Aspecto para Gn 24:62-67, cuando toma a Rebeca por mujer a los cuarenta años. Es el mismo Isaac de la hoja isaac-muchacho (Gn 22): misma cara, ya hombre. En gn-52 (Gn 25:9) entierra a su padre con unos setenta y cinco años (cálculo): en esas tomas se le añaden canas en el pelo y en la barba; si no basta, se hará otra hoja. No habla en estos pasajes, así que esta ficha no lleva voz; la voz de Isaac_1 está en isaac-muchacho (decisión pendiente n.º 32 de guiones/LEEME.md).",
+  "nota": "Aspecto para Gn 24:62-67, cuando toma a Rebeca por mujer a los cuarenta años. Es el mismo Isaac de la hoja isaac-muchacho (Gn 22): misma cara, ya hombre. En gn-52 (Gn 25:9) entierra a su padre con unos setenta y cinco años (cálculo): en esas tomas se le añaden canas en el pelo y en la barba; si no basta, se hará otra hoja. No habla en estos pasajes, así que esta ficha no lleva voz; la voz de Isaac_1 está en isaac-muchacho (decisión pendiente n.º 27 de guiones/LEEME.md).",
   "edades": [
     {
       "dato": "Cuarenta años cuando toma a Rebeca por mujer",
       "certeza": "texto",
       "ref": "Gn 25:20",
       "cita": "era Isaac de cuarenta años cuando tomó por mujer á Rebeca",
+      "nota": "Gn 25:20 es posterior a estos pasajes (gn-52 acaba en Gn 25:18): sirve para dirigir, no se cita en el video.",
       "nota": "Gn 25:20 es posterior a estos pasajes (gn-53): sirve para dirigir, no se cita en el video de gn-51."
     },
     {

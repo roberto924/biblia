@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `CARNERO_ZARZAL` (objeto)
 - **Pasajes**: gn-45
-- **Nota**: El id es el del catálogo de juego. La hoja muestra el carnero vivo, con los cuernos enredados en el zarzal, como lo ve Abraham (Gn 22:13). El holocausto no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 34 de guiones/LEEME.md, como la n.º 19): sin sangre ni cuchillo.
+- **Nota**: El id es el del catálogo de juego. La hoja muestra el carnero vivo, con los cuernos enredados en el zarzal, como lo ve Abraham (Gn 22:13). El holocausto no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 29 de guiones/LEEME.md, como la n.º 19): sin sangre ni cuchillo.
 
 ## Lo que dice el texto
 

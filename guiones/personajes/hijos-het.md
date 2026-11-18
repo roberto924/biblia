@@ -5,25 +5,25 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `HIJOS_HET` (personaje (grupo))
 - **Personas (datos/biblia.js)**: Heth_1
 - **Pasajes**: gn-47
-- **Nota**: Grupo anónimo de cinco hombres de la ciudad, para representar a «todos los que entraban por la puerta de la ciudad» (Gn 23:10, 23:18). La persona Heth_1 de datos/biblia.js es Het, hijo de Canaán (Gn 10:15); en Gn 23 el texto habla de «los hijos de Heth», sus descendientes, y ninguno de este grupo es Het en persona. Se enlaza con Heth_1 como hace el catálogo de juego (herramientas/juego/Gn.json: «en Gn 23 salen como los hijos de Het»), para que el grupo pueda tener voz en Gn 23:5-6; confirmarlo es la decisión pendiente n.º 37 de guiones/LEEME.md. Efrón está entre ellos (Gn 23:10) pero tiene su propia hoja (efron).
+- **Nota**: Grupo anónimo de cinco hombres de la ciudad, para representar a «todos los que entraban por la puerta de la ciudad» (Gn 23:10, 23:18). La persona Heth_1 de datos/biblia.js es Het, hijo de Canaán (Gn 10:15); en Gn 23 el texto habla de «los hijos de Heth», sus descendientes, y ninguno de este grupo es Het en persona. Se enlaza con Heth_1 como hace el catálogo de juego (herramientas/juego/Gn.json, ficha Heth_1: «en Gn 23 salen como «los hijos de Het»»), para que el grupo pueda tener voz en Gn 23:5-6; confirmarlo es la decisión pendiente n.º 32 de guiones/LEEME.md. Efrón está entre ellos (Gn 23:10) pero tiene su propia hoja (efron).
 
 ## Rasgos
 
 - **Texto**: Het, de quien llevan el nombre, es hijo de Canaán — Gn 10:15: «Canaán engendró á Sidón, su primogénito, y á Heth»
 - **Inferido**: Viven en Hebrón, en la tierra de Canaán, donde muere Sara — Sara muere en Hebrón (Gn 23:2) y Abraham se levanta de delante de su muerto para hablar con los hijos de Het (Gn 23:3), en la puerta de «su ciudad» (Gn 23:10). — base: Gn 23:2 «Kiriath-arba, que es Hebrón, en la tierra de Canaán» — base: Gn 23:3 «habló á los hijos de Heth»
 - **Texto**: Llaman a Abraham «señor mío» y «príncipe» entre ellos — Gn 23:6: «Oyenos, señor mío, eres un príncipe de Dios entre nosotros»
-- **Texto**: Le ofrecen lo mejor de sus sepulturas — Gn 23:6: «ninguno de nosotros te impedirá su sepultura»
+- **Texto**: Le ofrecen lo mejor de sus sepulturas — Gn 23:6: «en lo mejor de nuestras sepulturas sepulta á tu muerto»
 - **Texto**: Abraham se inclina ante ellos, el pueblo de la tierra — Gn 23:7: «inclinóse al pueblo de aquella tierra, á los hijos de Heth»
 - **Texto**: Son testigos de la compra a la puerta de la ciudad — Gn 23:18: «á vista de los hijos de Heth, y de todos los que entraban por la puerta de la ciudad»
 - **Interpretación del ilustrador**: Cinco hombres de edades distintas, de piel morena oliva, pelo y ojos oscuros, con barbas en punta y los dos mayores con canas; uno de ellos muy anciano; gestos atentos y graves, de quien asiste a un trato público — Interpretación del ilustrador: el texto no dice cuántos eran ni cómo eran. Que sean hombres y de edad sale de que tratan un asunto público a la puerta de la ciudad (Gn 23:10, 23:18). El pelo y las barbas en punta siguen a los hombres de Asia occidental del mural de Beni Hasan (A2). — referencias: A2
 
 ## Vestuario
 
-- **Supuesto**: Túnicas de lana hasta media pierna, de franjas y dibujos sencillos en rojo, blanco, ocre y azul grisáceo, distintas en cada uno; algunos con manto liso pardo o gris; sandalias — Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Se les viste como la gente de Asia occidental de las otras hojas (A2), con tejidos más sencillos que el de Efrón para que él se distinga. No se usan registros de otros pueblos llamados hititas: el texto los sitúa en Hebrón. — referencias: A2
+- **Supuesto**: Túnicas de lana hasta media pierna, de franjas y dibujos sencillos en rojo, blanco, ocre y azul grisáceo, distintas en cada uno; algunos con manto liso pardo o gris; sandalias — Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Se les viste como la gente de Asia occidental de las otras hojas (A2), con tejidos más sencillos que el de Efrón para que él se distinga. No se usan registros de otros pueblos llamados hititas: el texto los sitúa en Hebrón. — referencias: A2
 
 ## Voz
 
-Coro de voces de hombres maduros y viejos, corteses y graves, español neutro. Solo hablan en Gn 23:5-6: respetuosos con Abraham, generosos en público. Si se decide que el grupo no use la persona Heth_1 (n.º 37 de guiones/LEEME.md), su línea la lee el narrador.
+Coro de voces de hombres maduros y viejos, corteses y graves, español neutro. Solo hablan en Gn 23:5-6: respetuosos con Abraham, generosos en público. Si se decide que el grupo no use la persona Heth_1 (n.º 32 de guiones/LEEME.md), su línea la lee el narrador.
 
 ## Referencias de época
 

@@ -21,7 +21,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Vestido largo de lana hasta media pierna, con dibujos menudos en rojo oscuro, ocre y blanco; manto liso pardo oscuro echado sobre los hombros; botines bajos de cuero — Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. El vestido sigue a las mujeres del cortejo de Beni Hasan (A2); los colores, distintos de los de Sara y sus hijas, y el manto para salir de noche son elección del ilustrador. — referencias: A2
+- **Supuesto**: Vestido largo de lana hasta media pierna, con dibujos menudos en rojo oscuro, ocre y blanco; manto liso pardo oscuro echado sobre los hombros; botines bajos de cuero — Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. El vestido sigue a las mujeres del cortejo de Beni Hasan (A2); los colores, distintos de los de Sara y sus hijas, y el manto para salir de prisa al rayar el alba (Gn 19:15) son elección del ilustrador. — referencias: A2
 
 ## Referencias de época
 

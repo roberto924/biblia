@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `ISAAC_ADULTO` (personaje)
 - **Personas (datos/biblia.js)**: Isaac_1
 - **Pasajes**: gn-51, gn-52
-- **Nota**: Aspecto para Gn 24:62-67, cuando toma a Rebeca por mujer a los cuarenta años. Es el mismo Isaac de la hoja isaac-muchacho (Gn 22): misma cara, ya hombre. En gn-52 (Gn 25:9) entierra a su padre con unos setenta y cinco años (cálculo): en esas tomas se le añaden canas en el pelo y en la barba; si no basta, se hará otra hoja. No habla en estos pasajes, así que esta ficha no lleva voz; la voz de Isaac_1 está en isaac-muchacho (decisión pendiente n.º 32 de guiones/LEEME.md).
+- **Nota**: Aspecto para Gn 24:62-67, cuando toma a Rebeca por mujer a los cuarenta años. Es el mismo Isaac de la hoja isaac-muchacho (Gn 22): misma cara, ya hombre. En gn-52 (Gn 25:9) entierra a su padre con unos setenta y cinco años (cálculo): en esas tomas se le añaden canas en el pelo y en la barba; si no basta, se hará otra hoja. No habla en estos pasajes, así que esta ficha no lleva voz; la voz de Isaac_1 está en isaac-muchacho (decisión pendiente n.º 27 de guiones/LEEME.md).
 
 ## Edad
 

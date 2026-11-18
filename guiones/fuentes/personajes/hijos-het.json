@@ -11,7 +11,7 @@
     "nombre": "HIJOS_HET",
     "tipo": "personaje (grupo)"
   },
-  "nota": "Grupo anónimo de cinco hombres de la ciudad, para representar a «todos los que entraban por la puerta de la ciudad» (Gn 23:10, 23:18). La persona Heth_1 de datos/biblia.js es Het, hijo de Canaán (Gn 10:15); en Gn 23 el texto habla de «los hijos de Heth», sus descendientes, y ninguno de este grupo es Het en persona. Se enlaza con Heth_1 como hace el catálogo de juego (herramientas/juego/Gn.json: «en Gn 23 salen como los hijos de Het»), para que el grupo pueda tener voz en Gn 23:5-6; confirmarlo es la decisión pendiente n.º 37 de guiones/LEEME.md. Efrón está entre ellos (Gn 23:10) pero tiene su propia hoja (efron).",
+  "nota": "Grupo anónimo de cinco hombres de la ciudad, para representar a «todos los que entraban por la puerta de la ciudad» (Gn 23:10, 23:18). La persona Heth_1 de datos/biblia.js es Het, hijo de Canaán (Gn 10:15); en Gn 23 el texto habla de «los hijos de Heth», sus descendientes, y ninguno de este grupo es Het en persona. Se enlaza con Heth_1 como hace el catálogo de juego (herramientas/juego/Gn.json, ficha Heth_1: «en Gn 23 salen como «los hijos de Het»»), para que el grupo pueda tener voz en Gn 23:5-6; confirmarlo es la decisión pendiente n.º 32 de guiones/LEEME.md. Efrón está entre ellos (Gn 23:10) pero tiene su propia hoja (efron).",
   "rasgos": [
     {
       "rasgo": "Het, de quien llevan el nombre, es hijo de Canaán",
@@ -44,7 +44,7 @@
       "rasgo": "Le ofrecen lo mejor de sus sepulturas",
       "certeza": "texto",
       "ref": "Gn 23:6",
-      "cita": "ninguno de nosotros te impedirá su sepultura"
+      "cita": "en lo mejor de nuestras sepulturas sepulta á tu muerto"
     },
     {
       "rasgo": "Abraham se inclina ante ellos, el pueblo de la tierra",
@@ -71,7 +71,7 @@
     {
       "rasgo": "Túnicas de lana hasta media pierna, de franjas y dibujos sencillos en rojo, blanco, ocre y azul grisáceo, distintas en cada uno; algunos con manto liso pardo o gris; sandalias",
       "certeza": "supuesto",
-      "nota": "Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Se les viste como la gente de Asia occidental de las otras hojas (A2), con tejidos más sencillos que el de Efrón para que él se distinga. No se usan registros de otros pueblos llamados hititas: el texto los sitúa en Hebrón.",
+      "nota": "Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Se les viste como la gente de Asia occidental de las otras hojas (A2), con tejidos más sencillos que el de Efrón para que él se distinga. No se usan registros de otros pueblos llamados hititas: el texto los sitúa en Hebrón.",
       "referencias": [
         "A2"
       ]
@@ -81,7 +81,7 @@
     "A2"
   ],
   "voz": {
-    "descripcion": "Coro de voces de hombres maduros y viejos, corteses y graves, español neutro. Solo hablan en Gn 23:5-6: respetuosos con Abraham, generosos en público. Si se decide que el grupo no use la persona Heth_1 (n.º 37 de guiones/LEEME.md), su línea la lee el narrador."
+    "descripcion": "Coro de voces de hombres maduros y viejos, corteses y graves, español neutro. Solo hablan en Gn 23:5-6: respetuosos con Abraham, generosos en público. Si se decide que el grupo no use la persona Heth_1 (n.º 32 de guiones/LEEME.md), su línea la lee el narrador."
   },
   "hoja_referencia": {
     "prompt_en": "Make a group reference sheet on a plain light grey background, showing five men standing in a single row, each one fully visible from head to feet: the townsmen of a Canaanite town in the ancient Near East, of clearly different ages, one of them very old. They have olive-brown skin, dark eyes and natural dark hair reaching the nape of the neck, with beards trimmed to a point; the two oldest have grey hair and grey beards. Their heads are bare, with nothing tied around them. They wear wool tunics that reach the mid-calf, each woven with different simple stripes and patterns in red, white, ochre and blue-grey in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some with a plain brown or grey cloak, and leather sandals. Their faces are attentive and grave, and each man clearly differs from the others in face, height and build.",

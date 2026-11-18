@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `MADRE_REBECA` (personaje)
 - **Pasajes**: gn-50, gn-51
-- **Nota**: Rebeca corre a contar lo del pozo «en casa de su madre» (Gn 24:28); el texto no dice que la madre esté en las tomas del relato del criado (Gn 24:33-49): lo decide el guion. Sí está en Gn 24:53 (recibe regalos) y en Gn 24:55 (responde con Labán). Sin voz propia por ahora (como la decisión pendiente n.º 31 de guiones/LEEME.md).
+- **Nota**: Rebeca corre a contar lo del pozo «en casa de su madre» (Gn 24:28); el texto no dice que la madre esté en las tomas del relato del criado (Gn 24:33-49): lo decide el guion. Sí está en Gn 24:53 (recibe regalos) y en Gn 24:55 (responde con Labán). Sin voz propia por ahora (como la decisión pendiente n.º 26 de guiones/LEEME.md).
 
 ## Edad
 
@@ -19,7 +19,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Vestido largo de lana hasta los tobillos que cubre los dos hombros, de franjas anchas rojo oscuro y blanco con dibujos menudos; calzado bajo cerrado de cuero rojizo — Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los vestidos largos de dibujos en rojo y blanco y el calzado bajo cerrado siguen a las mujeres del cortejo de Beni Hasan (A2). El largo hasta los tobillos y las franjas anchas son elección del ilustrador para distinguirla de su hija. — referencias: A2
+- **Supuesto**: Vestido largo de lana hasta los tobillos que cubre los dos hombros, de franjas anchas rojo oscuro y blanco con dibujos menudos; calzado bajo cerrado de cuero rojizo — Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los vestidos largos de dibujos en rojo y blanco y el calzado bajo cerrado siguen a las mujeres del cortejo de Beni Hasan (A2). El largo hasta los tobillos y las franjas anchas son elección del ilustrador para distinguirla de su hija. — referencias: A2
 
 ## Referencias de época
 

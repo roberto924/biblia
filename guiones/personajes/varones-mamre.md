@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `VARONES_MAMRE` (personaje (grupo))
 - **Pasajes**: gn-36, gn-37, gn-38, gn-39
-- **Nota**: Grupo de tres hombres iguales en rango, sin nada que distinga a uno sobre los otros: el texto no dice quién es cada uno. Propuesta por defecto (decisión pendiente n.º 21 de guiones/LEEME.md): se dibujan como hombres, sin alas, sin halo ni luz propia (negativo general del estilo y decisión n.º 18), y ninguno se marca como Dios (decisión n.º 1). Las palabras que el texto pone en boca de Jehová (Gn 18:13-14, 18:17-33) no se ponen en la boca de ninguno de los tres. En Gn 19 van dos: por defecto el varón A y el varón B de la hoja; el texto no dice cuáles. Lo que no se ve en la hoja: la ceguera con que hieren a los de la puerta (Gn 19:11) es cosa de la toma, sin rayos ni destellos.
+- **Nota**: Grupo de tres hombres iguales en rango, sin nada que distinga a uno sobre los otros: el texto no dice quién es cada uno. Propuesta por defecto (decisión pendiente n.º 21 de guiones/LEEME.md): se dibujan como hombres, sin alas, sin halo ni luz propia (negativo general del estilo; la n.º 18, pendiente, plantea lo mismo para el ángel de Gn 16), y ninguno se marca como Dios (decisión n.º 1). Las palabras que el texto pone en boca de Jehová (Gn 18:13-14, 18:17-33) no se ponen en la boca de ninguno de los tres. En Gn 19 van dos: por defecto el varón A y el varón B de la hoja; el texto no dice cuáles. Lo que no se ve en la hoja: la ceguera con que hieren a los de la puerta (Gn 19:11) es cosa de la toma, sin rayos ni destellos.
 
 ## Edad
 
@@ -22,8 +22,8 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Texto**: Llegan dos ángeles a Sodoma al caer la tarde — Gn 19:1: «LLEGARON, pues, los dos ángeles á Sodoma á la caída de la tarde»
 - **Inferido**: Los dos ángeles de Gn 19 son dos de los tres varones de Gn 18 — El texto no lo dice con esas palabras: los varones salen de Mamre hacia Sodoma (Gn 18:22) y a Sodoma llegan dos ángeles (Gn 19:1), a los que el texto vuelve a llamar varones (Gn 19:10, 19:16). Por eso una sola hoja sirve para los dos relatos. — base: Gn 18:22 «fueron hacia Sodoma» — base: Gn 19:10 «los varones alargaron la mano, y metieron á Lot en casa con ellos»
 - **Texto**: Primero quieren pasar la noche en la plaza — Gn 19:2: «No, que en la plaza nos quedaremos esta noche»
-- **Texto**: Hieren con ceguera a los hombres de la puerta — Gn 19:11: «hirieron con ceguera»
-- **Texto**: Dicen que Jehová los ha enviado a destruir el lugar — Gn 19:13: «Jehová nos ha enviado para destruirlo»
+- **Texto**: Hieren con ceguera a los hombres de la puerta — Gn 19:10-11: «hirieron con ceguera»
+- **Texto**: Dicen que Jehová los ha enviado a destruir el lugar — Gn 19:12-13: «Jehová nos ha enviado para destruirlo»
 - **Texto**: Al alba sacan de la mano a Lot, a su mujer y a sus hijas — Gn 19:16: «los varones asieron de su mano, y de la mano de su mujer, y de las manos de sus dos hijas»
 - **Interpretación del ilustrador**: Tres hombres de Asia occidental de aspecto sereno y grave, distintos entre sí: el varón A, alto, de barba oscura corta; el varón B, ancho de hombros, de barba oscura algo más larga y entrecana; el varón C, más delgado, de barba oscura recortada en punta. Piel morena, ojos oscuros, pelo oscuro hasta la nuca; pies con polvo del camino — Interpretación del ilustrador: el texto no describe a ninguno. Que sean distintos sirve para seguirlos de una toma a otra; el polvo de los pies sale de que Abraham les ofrece agua para lavarlos (Gn 18:4) y Lot también (Gn 19:2). Sin alas, halo ni luz propia: el texto los llama varones.
 

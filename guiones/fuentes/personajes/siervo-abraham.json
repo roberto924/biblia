@@ -2,7 +2,7 @@
   "id": "siervo-abraham",
   "nombre": "El criado de Abraham (Gn 24)",
   "personas": [],
-  "sin_persona": "El texto no lo nombra en Gn 24: es «un criado suyo, el [más] viejo de su casa» (Gn 24:2), y no es persona en datos/biblia.js. Habla mucho (Gn 24:5, 24:12-14, 24:17, 24:23, 24:27, 24:33-49, 24:54, 24:56, 24:65): para darle voz propia hace falta una de las salidas de la decisión pendiente n.º 31 de guiones/LEEME.md.",
+  "sin_persona": "El texto no lo nombra en Gn 24: es «un criado suyo, el [más] viejo de su casa» (Gn 24:2), y no es persona en datos/biblia.js. Habla mucho (Gn 24:5, 24:12-14, 24:17, 24:23, 24:27, 24:33-49, 24:54, 24:56, 24:65): para darle voz propia hace falta una de las salidas de la decisión pendiente n.º 26 de guiones/LEEME.md.",
   "pasajes": [
     "gn-48",
     "gn-49",
@@ -144,7 +144,7 @@
     "A2"
   ],
   "voz": {
-    "descripcion": "Hombre mayor, voz grave, mesurada y cálida, español neutro. Gn 24:5 (a Abraham): prudente. Gn 24:12-14 (oración junto a la fuente): humilde y concreta. Gn 24:17 y 24:23 (a Rebeca): cortés. Gn 24:27: gratitud contenida. Gn 24:33-49 (el relato en casa de Labán): ordenado, sin prisa pero con urgencia por terminar. Gn 24:56: firme. Decisión pendiente del usuario (n.º 31 de guiones/LEEME.md): voz propia o leída por el narrador."
+    "descripcion": "Hombre mayor, voz grave, mesurada y cálida, español neutro. Gn 24:5 (a Abraham): prudente. Gn 24:12-14 (oración junto a la fuente): humilde y concreta. Gn 24:17 y 24:23 (a Rebeca): cortés. Gn 24:27: gratitud contenida. Gn 24:33-49 (el relato en casa de Labán): ordenado, sin prisa pero con urgencia por terminar. Gn 24:56: firme. Decisión pendiente del usuario (n.º 26 de guiones/LEEME.md): voz propia o leída por el narrador."
   },
   "hoja_referencia": {
     "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is the old, trusted steward of a herdsman chief from western Asia, a man of about sixty who is still vigorous, with weathered olive-brown skin, attentive dark eyes with sun lines at their corners, short grey hair that reaches the nape of his neck and a neat grey beard trimmed to a point. His head is bare, with nothing tied around it. His face is grave, careful and loyal. He wears a sand-colored wool tunic that reaches his mid-calf, woven with broad ochre and dark red stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs and covering both shoulders, a plain grey-brown travelling cloak, a leather belt with a small closed leather pouch hanging from it, and leather sandals with straps. His arms hang at his sides and his hands are empty.",

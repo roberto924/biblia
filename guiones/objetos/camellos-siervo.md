@@ -4,7 +4,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 - **Element en Cinema Studio**: `CAMELLOS_SIERVO` (objeto)
 - **Pasajes**: gn-48, gn-49, gn-50, gn-51
-- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 35 de guiones/LEEME.md). Son diez (Gn 24:10): la hoja fija tres, uno arrodillado, uno de carga y uno con silla para montar, y las tomas repiten esos tipos. Los hombres que viajan con el criado (Gn 24:32, 24:54, 24:59) no tienen hoja.
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 30 de guiones/LEEME.md). Son diez (Gn 24:10): la hoja fija tres, uno arrodillado, uno de carga y uno con silla para montar, y las tomas repiten esos tipos. Los hombres que viajan con el criado (Gn 24:32, 24:54, 24:59) no tienen hoja.
 
 ## Lo que dice el texto
 

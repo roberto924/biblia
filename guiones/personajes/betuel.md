@@ -21,7 +21,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 ## Vestuario
 
-- **Supuesto**: Túnica larga de lana hasta los tobillos, de dibujos en rojo, blanco y azul grisáceo, que le cubre los dos hombros; manto liso de lana color vino; sandalias de correas — Supuesto de época, decisión pendiente (n.º 36 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los colores siguen el cortejo de Beni Hasan (A2). El largo hasta los tobillos y el manto color vino son elección del ilustrador para que se lea como el cabeza de la casa y para distinguirlo de Labán. — referencias: A2
+- **Supuesto**: Túnica larga de lana hasta los tobillos, de dibujos en rojo, blanco y azul grisáceo, que le cubre los dos hombros; manto liso de lana color vino; sandalias de correas — Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md, como la n.º 17): el texto no describe su ropa. Los colores siguen el cortejo de Beni Hasan (A2). El largo hasta los tobillos y el manto color vino son elección del ilustrador para que se lea como el cabeza de la casa y para distinguirlo de Labán. — referencias: A2
 
 ## Voz
 

@@ -13,7 +13,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
   1. Edad de Abraham en Gn 17, poco antes de Gn 19: 99 (Gn 17:24: «Era Abraham de edad de noventa y nueve años»)
   2. − Edad de Abram al salir de Harán: 75 (Gn 12:4: «era Abram de edad de setenta y cinco años cuando salió de Harán»)
   3. − Años en Canaán cuando Sarai le da a Agar, después de Gn 14: 10 (Gn 16:3: «al cabo de diez años que había habitado Abram en la tierra de Canaán»)
-  = 14. Supuestos: Gn 14 ocurre antes de Gn 16:3, como en el orden del relato; si ocurrió antes, pasaron más años (hasta unos veinticuatro, si fue nada más llegar a Canaán); Gn 19 ocurre en el año en que Abraham tiene noventa y nueve, entre Gn 17:1 y el nacimiento de Isaac a los cien (Gn 21:5); Abram llega a Canaán el mismo año en que sale de Harán; se cuentan años completos
+  = 14. Supuestos: Gn 14 ocurre antes de Gn 16:3, como en el orden del relato; si ocurrió más cerca de la llegada a Canaán, pasaron más años (hasta unos veinticuatro, si fue nada más llegar a Canaán); Gn 19 ocurre en el año en que Abraham tiene noventa y nueve, entre Gn 17:1 y el nacimiento de Isaac a los cien (Gn 21:5); Abram llega a Canaán el mismo año en que sale de Harán; se cuentan años completos
 - **Texto**: Su hija mayor dice que es viejo — Gn 19:31: «Nuestro padre es viejo»
 - **Interpretación del ilustrador**: Edad visual: un hombre de unos sesenta años, con canas en el pelo y en la barba — Interpretación del ilustrador: el texto no da la edad de Lot. La hoja LOT lo dibujó de unos cuarenta (interpretación); con el cálculo de arriba y con Gn 19:31, aquí ronda los sesenta. Sigue siendo una generación más joven que ABRAHAM.
 
