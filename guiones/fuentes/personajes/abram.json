@@ -1,0 +1,181 @@
+{
+  "id": "abram",
+  "nombre": "Abram (después Abraham)",
+  "personas": [
+    "Abram_1"
+  ],
+  "pasajes": [
+    "gn-26",
+    "gn-27",
+    "gn-28",
+    "gn-29",
+    "gn-30",
+    "gn-31",
+    "gn-32",
+    "gn-33"
+  ],
+  "element": {
+    "nombre": "ABRAM",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 11:27–16:16, cuando se llama Abram. De Gn 12:4 a 16:16 tiene entre setenta y cinco y ochenta y seis años; en Gn 11:27-32 es más joven, sin edad dada, y se usa la misma hoja. El nombre Abraham llega en Gn 17, a los noventa y nueve (Gn 17:1): si entonces debe verse más viejo, se hará otra hoja. En la visión de Gn 15 quien le habla es Jehová, que no tiene figura (decisión n.º 1 de guiones/LEEME.md).",
+  "edades": [
+    {
+      "dato": "Setenta y cinco años cuando sale de Harán",
+      "certeza": "texto",
+      "ref": "Gn 12:4",
+      "cita": "era Abram de edad de setenta y cinco años cuando salió de Harán"
+    },
+    {
+      "dato": "Unos ochenta y cinco años cuando Sarai le da a Agar",
+      "certeza": "calculo",
+      "valor": 85,
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 85,
+        "pasos": [
+          {
+            "texto": "Edad de Abram al salir de Harán hacia Canaán",
+            "valor": 75,
+            "ref": "Gn 12:4",
+            "cita": "era Abram de edad de setenta y cinco años cuando salió de Harán"
+          },
+          {
+            "texto": "Años que llevaba habitando en Canaán",
+            "valor": 10,
+            "ref": "Gn 16:3",
+            "cita": "al cabo de diez años que había habitado Abram en la tierra de Canaán"
+          }
+        ],
+        "supuestos": [
+          "Abram llega a Canaán el mismo año en que sale de Harán (Gn 12:4-5 no da el tiempo del viaje)",
+          "Los diez años se cuentan desde esa llegada, con la estancia en Egipto incluida (Gn 12:10-20), y son años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Ochenta y seis años cuando nace Ismael",
+      "certeza": "texto",
+      "ref": "Gn 16:16",
+      "cita": "era Abram de edad de ochenta y seis años, cuando parió Agar á Ismael"
+    },
+    {
+      "dato": "Edad visual: un hombre mayor, de pelo y barba canos, pero fuerte y erguido",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto da su edad, no su aspecto. A esa edad recorre el camino de Harán a Canaán y a Egipto y persigue de noche a cuatro reyes (Gn 14:14-15), y vive hasta los ciento setenta y cinco (Gn 25:7, muy posterior: sirve para dirigir): no se le dibuja decrépito."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo de Taré, hermano de Nacor y de Harán",
+      "certeza": "texto",
+      "ref": "Gn 11:27",
+      "cita": "Thare engendró á Abram, y á Nachôr, y á Harán"
+    },
+    {
+      "rasgo": "Sale de Ur de los Caldeos con su padre, camino de Canaán",
+      "certeza": "texto",
+      "ref": "Gn 11:31",
+      "cita": "salió con ellos de Ur de los Caldeos, para ir á la tierra de Canaán"
+    },
+    {
+      "rasgo": "Se va como Jehová le dice",
+      "certeza": "texto",
+      "ref": "Gn 12:4",
+      "cita": "fuése Abram, como Jehová le dijo"
+    },
+    {
+      "rasgo": "Vive en tienda, edifica altares e invoca el nombre de Jehová",
+      "certeza": "texto",
+      "ref": "Gn 12:8",
+      "cita": "tendió su tienda, teniendo á Bethel al occidente y Hai al oriente: y edificó allí altar á Jehová, é invocó el nombre de Jehová"
+    },
+    {
+      "rasgo": "Teme que los egipcios lo maten por causa de Sarai",
+      "certeza": "texto",
+      "ref": "Gn 12:12",
+      "cita": "me matarán á mí, y á ti te reservarán la vida"
+    },
+    {
+      "rasgo": "Pide a Sarai que diga que es su hermana",
+      "certeza": "texto",
+      "ref": "Gn 12:13",
+      "cita": "di que eres mi hermana, para que yo haya bien por causa tuya"
+    },
+    {
+      "rasgo": "Riquísimo en ganado, plata y oro",
+      "certeza": "texto",
+      "ref": "Gn 13:2",
+      "cita": "Abram era riquísimo en ganado, en plata y oro"
+    },
+    {
+      "rasgo": "Evita la pelea con Lot",
+      "certeza": "texto",
+      "ref": "Gn 13:8",
+      "cita": "No haya ahora altercado entre mí y ti"
+    },
+    {
+      "rasgo": "Le deja escoger la tierra",
+      "certeza": "texto",
+      "ref": "Gn 13:9",
+      "cita": "Si [fueres] á la mano izquierda, yo iré á la derecha"
+    },
+    {
+      "rasgo": "Lo llaman «el Hebreo»",
+      "certeza": "texto",
+      "ref": "Gn 14:13",
+      "cita": "Abram el Hebreo"
+    },
+    {
+      "rasgo": "Arma a los criados de su casa y rescata a Lot",
+      "certeza": "texto",
+      "ref": "Gn 14:14",
+      "cita": "armó sus criados, los criados de su casa, trescientos dieciocho"
+    },
+    {
+      "rasgo": "No tiene hijo",
+      "certeza": "texto",
+      "ref": "Gn 15:2",
+      "cita": "ando sin hijo"
+    },
+    {
+      "rasgo": "Cree a Jehová",
+      "certeza": "texto",
+      "ref": "Gn 15:6",
+      "cita": "creyó á Jehová, y contóselo por justicia"
+    },
+    {
+      "rasgo": "Piel morena oliva curtida por el camino, ojos oscuros, pelo cano abundante hasta la nuca y barba cana en punta; rostro pensativo, firme y bondadoso",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. El pelo abundante hasta la nuca y la barba en punta siguen a los hombres de Asia occidental del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026); las canas, a su edad.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta debajo de la rodilla, con franjas estrechas y dibujos sencillos en rojo, blanco y azul oscuro; manto liso pardo de viaje; cinturón de cuerda; sandalias de correas; cayado de pastor",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa ni fecha el relato. Se toma la gente de Asia occidental del mural de Beni Hasan (A1, A2; Reino Medio, hacia 1900 a. C. según Commons), la misma referencia que el proyecto usa para los hermanos de José: hombres con túnicas de lana de franjas rojas y blancas y sandalias (mirado en A2 el 17-nov-2026). El manto liso, el azul oscuro, el largo de la túnica y el cinturón de cuerda son elección del ilustrador. El cayado sale de que tiene ganado y pastores (Gn 13:2, 13:7). Gn 14:23 nombra un hilo y la correa de un calzado como lo más pequeño de un botín: no describe la ropa de Abram.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre mayor, voz grave, cálida y pausada, español neutro. Gn 12:11-13 (a Sarai): miedo contenido. Gn 13:8-9 (a Lot): conciliador. Gn 14:22-24 (al rey de Sodoma): firme. Gn 15:2-3 y 15:8 (a Jehová): franco, sin queja teatral. Gn 16:6 (a Sarai): cansado, cede. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is an old but strong and upright herdsman chief from western Asia, a man used to walking long roads, with weathered olive-brown skin, dark eyes, thick grey-white hair that reaches the nape of his neck and a pointed grey-white beard. His face is thoughtful, steady and kind. He wears a wool tunic that reaches below his knees, woven with narrow red, white and dark blue stripes and simple patterns in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain brown wool travelling cloak over his shoulders, a cord belt and leather sandals with straps. In the full-body view he holds a tall, plain wooden shepherd's staff.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Jefe de pastores de Asia occidental, mayor pero fuerte y erguido, hecho a los caminos largos; piel morena oliva curtida, ojos oscuros, pelo cano abundante hasta la nuca y barba cana en punta; rostro pensativo, firme y bondadoso. Túnica de lana hasta debajo de la rodilla con franjas estrechas y dibujos sencillos en rojo, blanco y azul oscuro, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto liso pardo de viaje sobre los hombros, cinturón de cuerda y sandalias de correas. De cuerpo entero lleva un cayado alto y liso de pastor.",
+    "negativo_en": "Do not make him frail, bent or bald. Do not dress him in Egyptian white linen, a turban, a head cloth, a crown, armor or jewelry, and do not give him a sword. Do not paint tents, animals, an altar or stars, and keep the background plain.",
+    "negativo_es": "Que no sea frágil, encorvado ni calvo; sin lino blanco egipcio, turbante, paño en la cabeza, corona, armadura ni joyas; sin espada; sin tiendas, animales, altar ni estrellas; fondo liso."
+  }
+}

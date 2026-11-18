@@ -1,0 +1,51 @@
+{
+  "id": "ladrillos-betun",
+  "nombre": "Los ladrillos y el betún de Babel",
+  "pasajes": [
+    "gn-24"
+  ],
+  "element": {
+    "nombre": "LADRILLOS_BETUN",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego (allí «Babel y la torre» es un escenario). La hoja fija el material con que se edifican la ciudad y la torre, que es lo único que el texto describe. La forma de la torre no está en el texto y queda para el escenario.",
+  "texto": [
+    {
+      "dato": "Ladrillo cocido al fuego",
+      "certeza": "texto",
+      "ref": "Gn 11:3",
+      "cita": "hagamos ladrillo y cozámoslo con fuego"
+    },
+    {
+      "dato": "El ladrillo hace de piedra y el betún de mezcla",
+      "certeza": "texto",
+      "ref": "Gn 11:3",
+      "cita": "fuéles el ladrillo en lugar de piedra, y el betún en lugar de mezcla"
+    },
+    {
+      "dato": "Con ellos quieren edificar una ciudad y una torre",
+      "certeza": "texto",
+      "ref": "Gn 11:4",
+      "cita": "edifiquémonos una ciudad y una torre, cuya cúspide [llegue] al cielo"
+    },
+    {
+      "dato": "La obra queda sin terminar",
+      "certeza": "texto",
+      "ref": "Gn 11:8",
+      "cita": "dejaron de edificar la ciudad"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Ladrillos rectangulares de barro cocido, rojizos y pardos, del largo de un antebrazo; betún negro y brillante entre hilada e hilada; un tramo de muro a medio levantar; un molde de madera y una olla de betún",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da la forma, el tamaño ni el color de los ladrillos. El tono rojizo sale de que se cuecen al fuego (Gn 11:3). El molde de madera y la olla son elección del ilustrador para que se vea cómo se hacen y se pegan. El muro a medias recoge que dejaron de edificar (Gn 11:8)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left is a single rectangular brick of fired clay, reddish-brown, about as long as a man's forearm, seen from a three-quarter angle. In the center is a neat stack of the same bricks beside a simple open wooden brick mould and a plain clay pot of glossy black tar with a wooden stick resting in it. On the right is a short section of an unfinished wall four courses high, built of the same bricks with thin black lines of tar between the courses instead of mortar, with a stepped, incomplete top edge.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con tres cosas una al lado de otra. A la izquierda, un solo ladrillo rectangular de barro cocido, rojizo pardo, del largo de un antebrazo, en tres cuartos. En el centro, una pila ordenada de los mismos ladrillos junto a un molde sencillo de madera, abierto, y una olla de barro lisa con betún negro y brillante y un palo dentro. A la derecha, un tramo corto de muro sin terminar, de cuatro hiladas, hecho con los mismos ladrillos y con líneas finas de betún negro entre hilada e hilada en lugar de mezcla, con el borde de arriba escalonado e incompleto.",
+    "negativo_en": "Do not use cut stone, white mortar, glazed or colored tiles, inscriptions or carved decoration. Do not paint a tower, a city, scaffolding, fire, kilns or any people, and keep the background plain.",
+    "negativo_es": "Sin piedra labrada, mezcla blanca, azulejos vidriados o de colores, inscripciones ni adornos tallados; sin torre, ciudad, andamios, fuego, hornos ni personas; fondo liso."
+  }
+}

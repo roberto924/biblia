@@ -1,0 +1,79 @@
+{
+  "id": "pacto-animales",
+  "nombre": "Los animales partidos, el horno y la antorcha",
+  "pasajes": [
+    "gn-32"
+  ],
+  "element": {
+    "nombre": "PACTO_ANIMALES",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. Propuesta por defecto (decisión pendiente n.º 19 de guiones/LEEME.md): las mitades de los animales se ven como bultos en penumbra, en dos hileras, sin sangre ni entrañas, en todos los perfiles. La hoja fija sobre todo lo que se ve entre ellas: el horno humeante y la antorcha de fuego.",
+  "texto": [
+    {
+      "dato": "Tres animales de tres años y dos aves",
+      "certeza": "texto",
+      "ref": "Gn 15:9",
+      "cita": "una becerra de tres años, y una cabra de tres años, y un carnero de tres años, una tórtola también, y un palomino"
+    },
+    {
+      "dato": "Abram los parte por la mitad y pone cada mitad frente a la otra; las aves no",
+      "certeza": "texto",
+      "ref": "Gn 15:10",
+      "cita": "partiólas por la mitad, y puso cada mitad una enfrente de otra; mas no partió las aves"
+    },
+    {
+      "dato": "Bajan aves sobre los cuerpos y Abram las espanta",
+      "certeza": "texto",
+      "ref": "Gn 15:11",
+      "cita": "descendían aves sobre los cuerpos muertos, y ojeábalas Abram"
+    },
+    {
+      "dato": "Al caer el sol Abram se duerme y cae sobre él el pavor de una gran oscuridad",
+      "certeza": "texto",
+      "ref": "Gn 15:12",
+      "cita": "á la caída del sol sobrecogió el sueño á Abram, y he aquí que el pavor de una grande obscuridad cayó sobre él"
+    },
+    {
+      "dato": "Ya de noche se deja ver un horno humeando, y una antorcha de fuego pasa entre los animales divididos",
+      "certeza": "texto",
+      "ref": "Gn 15:17",
+      "cita": "dejóse ver un horno humeando, y una antorcha de fuego que pasó por entre los animales divididos"
+    },
+    {
+      "dato": "Ese día Jehová hace un pacto con Abram",
+      "certeza": "texto",
+      "ref": "Gn 15:18",
+      "cita": "En aquel día hizo Jehová un pacto con Abram"
+    },
+    {
+      "dato": "Nadie lleva el horno ni la antorcha",
+      "certeza": "inferido",
+      "nota": "El texto dice que el horno «dejóse ver» y que la antorcha «pasó»: no nombra a nadie que los lleve, y Abram está dormido (Gn 15:12). En la hoja y en las tomas van solos, sin manos ni figura.",
+      "base": [
+        {
+          "ref": "Gn 15:17",
+          "cita": "dejóse ver un horno humeando, y una antorcha de fuego que pasó"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Horno: una olla ancha de barro cocido, lisa, alta hasta la rodilla, con la boca arriba, brasas dentro y humo espeso; antorcha: un haz de palos secos atado con cuerda, con llama viva",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe la forma del horno ni de la antorcha. Se elige un horno pequeño de barro, sin adornos, y una antorcha de palos, sin metal."
+    },
+    {
+      "dato": "Disposición: dos hileras enfrentadas de tres bultos oscuros cada una, con un pasillo de tierra en medio, y un ave entera al final de cada hilera",
+      "certeza": "interpretacion",
+      "nota": "La becerra, la cabra y el carnero partidos dan tres mitades por lado (Gn 15:9-10). Las aves no se parten: que vaya una a cada lado es interpretación. Los bultos se ven en penumbra, sin detalle: no se muestra sangre (decisión n.º 19)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing three things side by side. On the left is a wide, plain fire pot of fired clay, about as high as a man's knee, with a round open mouth at the top, a dull red glow of embers inside and thick grey smoke rising from it. In the center is a burning torch made of a bundle of dry sticks bound with cord, with a bright orange flame, standing upright in the air with nobody holding it. On the right is a view from above of a strip of bare earth at dusk: two facing rows of three dark, rounded, shadowed shapes lie on either side of an empty path of earth, and one small whole dove lies at the end of each row.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con tres cosas una al lado de otra. A la izquierda, un horno: una olla ancha y lisa de barro cocido, alta hasta la rodilla, con la boca redonda arriba, un resplandor rojo apagado de brasas dentro y humo gris espeso que sube. En el centro, una antorcha encendida: un haz de palos secos atado con cuerda, con llama viva anaranjada, derecha en el aire sin que nadie la sostenga. A la derecha, vista desde arriba, una franja de tierra desnuda al anochecer: dos hileras enfrentadas de tres bultos oscuros, redondeados y en sombra, a los lados de un pasillo de tierra vacío, y una paloma pequeña entera al final de cada hilera.",
+    "negativo_en": "Do not show blood, wounds, bones, entrails or recognizable cut animals, and do not show a knife. Do not paint hands, a person, an angel or any figure carrying the torch or the pot. Do not decorate the pot, do not make the torch a metal lamp, and keep the background plain.",
+    "negativo_es": "Sin sangre, heridas, huesos, entrañas ni animales cortados reconocibles; sin cuchillo; sin manos, personas, ángel ni figura que lleve la antorcha o el horno; olla sin adornos; la antorcha no es una lámpara de metal; fondo liso."
+  }
+}

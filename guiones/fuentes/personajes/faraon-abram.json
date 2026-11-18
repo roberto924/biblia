@@ -1,0 +1,102 @@
+{
+  "id": "faraon-abram",
+  "nombre": "Faraón (el de Abram)",
+  "personas": [
+    "Pharaoh_1"
+  ],
+  "pasajes": [
+    "gn-28"
+  ],
+  "element": {
+    "nombre": "FARAON_ABRAM",
+    "tipo": "personaje"
+  },
+  "nota": "El texto no da su nombre ni fecha el viaje de Abram: no se le identifica con ningún rey conocido. La hoja usa la misma época visual supuesta para el Egipto de José (Reino Medio, decisión pendiente n.º 3 de guiones/LEEME.md). Las «grandes plagas» de Gn 12:17 no se dibujan: el texto no dice cuáles fueron.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre de unos cuarenta años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad ni su aspecto."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Tiene príncipes que le alaban a Sarai",
+      "certeza": "texto",
+      "ref": "Gn 12:15",
+      "cita": "Viéronla también los príncipes de Faraón, y se la alabaron"
+    },
+    {
+      "rasgo": "Sarai es llevada a su casa",
+      "certeza": "texto",
+      "ref": "Gn 12:15",
+      "cita": "fué llevada la mujer á casa de Faraón"
+    },
+    {
+      "rasgo": "Trata bien a Abram por causa de ella",
+      "certeza": "texto",
+      "ref": "Gn 12:16",
+      "cita": "hizo bien á Abram por causa de ella"
+    },
+    {
+      "rasgo": "Jehová lo hiere a él y a su casa con grandes plagas",
+      "certeza": "texto",
+      "ref": "Gn 12:17",
+      "cita": "Jehová hirió á Faraón y á su casa con grandes plagas"
+    },
+    {
+      "rasgo": "Reprocha a Abram el engaño",
+      "certeza": "texto",
+      "ref": "Gn 12:18",
+      "cita": "¿Por qué no me declaraste que era tu mujer?"
+    },
+    {
+      "rasgo": "Le devuelve a su mujer y lo despide",
+      "certeza": "texto",
+      "ref": "Gn 12:19",
+      "cita": "he aquí tu mujer, tómala y vete"
+    },
+    {
+      "rasgo": "Manda a su gente que lo acompañe con todo lo que tiene",
+      "certeza": "texto",
+      "ref": "Gn 12:20",
+      "cita": "le acompañaron, y á su mujer con todo lo que tenía"
+    },
+    {
+      "rasgo": "Piel morena rojiza, rostro afeitado, ojos oscuros; gesto severo y agraviado, porte erguido",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. El gesto agraviado sale de sus preguntas en Gn 12:18-19; no se le dibuja cruel."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Tocado real de tela a rayas ceñido a la frente, con dos caídas sobre el pecho, y barba ceremonial larga y recta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época (Reino Medio, decisiones pendientes n.º 3 y n.º 17). La forma sale de la esfinge de Senusret III del Met (F1, hacia 1878–1840 a. C. según Commons): tocado de tela a rayas ceñido a la frente, con caídas a los lados del rostro hasta el pecho, y barba larga y recta sobre un rostro afeitado (mirado en F1 el 17-nov-2026). No se dice que el faraón de Gn 12 sea ese rey. La cobra sobre la frente y los colores azul y dorado de las rayas son supuesto: en F1 la parte alta del tocado está dañada y la piedra no tiene color.",
+      "referencias": [
+        "F1"
+      ]
+    },
+    {
+      "rasgo": "Faldellín blanco de lino hasta la rodilla, torso descubierto, collar ancho de cuentas y sandalias",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época (decisión pendiente n.º 3). Los egipcios del mural de Beni Hasan (A2) llevan faldellín blanco y el torso descubierto (mirado el 17-nov-2026), pero son funcionarios, no el rey. Que el faldellín sea de lino, el collar ancho y las sandalias no tienen referencia comprobada.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "F1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre adulto, voz firme y autoritaria, español neutro. Solo habla en Gn 12:18-19: indignado y agraviado, no cruel; despide a Abram sin amenazarlo. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is an Egyptian king of about forty, with reddish-brown skin, a clean-shaven face, dark eyes, a stern, offended expression and a proud, upright posture. He wears a royal striped cloth headdress that fits tightly across the forehead, covers the hair completely and falls in two flaps onto the chest, with blue and gold stripes and a small rearing cobra at the brow, and a long, straight, narrow ceremonial beard attached to the chin. His chest is bare under a broad collar of rows of colored beads, and he wears a knee-length white linen kilt with a belt and leather sandals. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Rey egipcio de unos cuarenta años; piel morena rojiza, rostro afeitado, ojos oscuros, gesto severo y agraviado, porte erguido. Tocado real de tela a rayas azules y doradas, ceñido a la frente, que cubre todo el pelo y cae en dos caídas sobre el pecho, con una pequeña cobra erguida en la frente; barba ceremonial larga, recta y estrecha sujeta al mentón. Torso descubierto con collar ancho de hileras de cuentas de colores; faldellín blanco de lino hasta la rodilla con cinturón; sandalias. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not give him a tall crown, a crook, a flail, a sword or a throne. Do not make him look cruel or like a cartoon villain. Do not paint pyramids, temples, columns, servants or any other person, and keep the background plain.",
+    "negativo_es": "Sin corona alta, cayado, flagelo, espada ni trono; que no parezca cruel ni villano de dibujos; sin pirámides, templos, columnas, siervos ni otras personas; fondo liso."
+  }
+}

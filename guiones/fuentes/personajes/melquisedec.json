@@ -1,0 +1,88 @@
+{
+  "id": "melquisedec",
+  "nombre": "Melquisedec",
+  "personas": [
+    "Melchizedek_1"
+  ],
+  "pasajes": [
+    "gn-31"
+  ],
+  "element": {
+    "nombre": "MELQUISEDEC",
+    "tipo": "personaje"
+  },
+  "nota": "Todo lo que Génesis dice de él cabe en tres versículos (Gn 14:18-20): no da su edad, su familia ni su aspecto. La hoja no le pone corona ni las vestiduras de los sacerdotes de Israel, que son de Éxodo, muy posterior: ni una ni otras están en el texto. El pan y el vino que saca no están en la hoja.",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre anciano, de pelo y barba blancos",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Se le dibuja mayor que Abram para que se lea que es él quien bendice (Gn 14:19)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Rey de Salem",
+      "certeza": "texto",
+      "ref": "Gn 14:18",
+      "cita": "Melchîsedec, rey de Salem"
+    },
+    {
+      "rasgo": "Saca pan y vino",
+      "certeza": "texto",
+      "ref": "Gn 14:18",
+      "cita": "sacó pan y vino"
+    },
+    {
+      "rasgo": "Sacerdote del Dios alto",
+      "certeza": "texto",
+      "ref": "Gn 14:18",
+      "cita": "el cual era sacerdote del Dios alto"
+    },
+    {
+      "rasgo": "Bendice a Abram",
+      "certeza": "texto",
+      "ref": "Gn 14:19",
+      "cita": "Bendito sea Abram del Dios alto, poseedor de los cielos y de la tierra"
+    },
+    {
+      "rasgo": "Recibe de Abram los diezmos de todo",
+      "certeza": "texto",
+      "ref": "Gn 14:20",
+      "cita": "dióle [Abram] los diezmos de todo",
+      "nota": "«Abram» lo suple la traducción, entre corchetes: el versículo solo dice «dióle»."
+    },
+    {
+      "rasgo": "Piel morena oliva curtida, ojos oscuros, pelo blanco hasta la nuca y barba blanca en punta; rostro sereno y acogedor",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. El pelo hasta la nuca y la barba en punta siguen a los hombres del mural de Beni Hasan (A1, A2; mirado en A2 el 17-nov-2026).",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica larga hasta los tobillos y manto envolvente sobre un hombro, de lana con franjas estrechas y dibujos finos en blanco, rojo oscuro y azul oscuro; sandalias; sin corona",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. En el mural de Beni Hasan los dos jefes que encabezan el cortejo (A1, A2) no llevan corona: se distinguen por un vestido de dibujos más ricos y de más colores que el de los demás (mirado en A2 el 17-nov-2026). Por eso el rey de Salem se distingue por la riqueza del tejido y no por una corona. El largo hasta los tobillos, el manto sobre un hombro, el fondo blanco, el rojo y el azul oscuros y los rombos menudos son elección del ilustrador, para separarlo del rey de Sodoma.",
+      "referencias": [
+        "A1",
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A1",
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre anciano, voz serena, clara y solemne, español neutro. Solo habla en Gn 14:19-20: una bendición, dicha despacio y sin énfasis teatral. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a dignified old man, the king and priest of an ancient city, with weathered olive-brown skin, dark eyes, white hair that reaches the nape of his neck and a pointed white beard, and a serene, welcoming face. He wears a long wool tunic that reaches his ankles and a cloak wrapped over one shoulder, both woven on a white ground with fine, rich patterns of narrow stripes and small diamonds in deep red and dark blue, in the style of the leaders of the western Asian visitors painted in Middle Kingdom Egyptian tombs, with leather sandals. His head is bare, and his hands are open and empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Anciano digno, rey y sacerdote de una ciudad antigua; piel morena oliva curtida, ojos oscuros, pelo blanco hasta la nuca y barba blanca en punta; rostro sereno y acogedor. Túnica larga de lana hasta los tobillos y manto envolvente sobre un hombro, los dos de fondo blanco con dibujos finos y ricos de franjas estrechas y rombos menudos en rojo oscuro y azul oscuro, al modo de los jefes asiáticos de las tumbas egipcias del Reino Medio; sandalias. Cabeza descubierta, manos abiertas y vacías.",
+    "negativo_en": "Do not give him a crown, a mitre, a turban, a jeweled breastplate, a staff, a censer or jewelry. Do not paint bread, wine, cups, an altar or any other person, and keep the background plain.",
+    "negativo_es": "Sin corona, mitra, turbante, pectoral de piedras, báculo, incensario ni joyas; sin pan, vino, copas, altar ni otras personas; fondo liso."
+  }
+}
