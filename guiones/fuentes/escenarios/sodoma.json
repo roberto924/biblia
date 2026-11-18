@@ -47,5 +47,8 @@
     "prompt_es": "Una sola vista general de la puerta de una ciudad amurallada en una llanura fértil del antiguo Oriente Próximo, a la caída de la tarde y sin personas. Una muralla de adobe sobre un zócalo de piedra tosca se extiende a los dos lados, y la puerta es un paso hondo entre dos torres bajas y cuadradas, con batientes de madera pesados abiertos y bancos sencillos de piedra a lo largo de las paredes del paso. Por la puerta se ven una plaza pequeña y casas de adobe de techo plano. Fuera de la muralla hay campos verdes de riego, y la luz es el naranja cálido del atardecer, con sombras largas.",
     "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint fire, smoke, ruins, a palace, temples, idols, statues, soldiers, banners or any person. Do not make the town look evil or monstrous, and do not add carved monsters, skulls or a dark, stormy sky.",
     "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin fuego, humo, ruinas, palacio, templos, ídolos, estatuas, soldados, estandartes ni personas. Que la ciudad no parezca malvada ni monstruosa; sin monstruos tallados, calaveras ni cielo oscuro de tormenta."
-  }
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
 }

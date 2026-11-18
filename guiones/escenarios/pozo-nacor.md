@@ -31,7 +31,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/pozo-nacor.png`; luego subirla a Cinema Studio como Element `POZO_NACOR`.
 
-Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (no `patron-1-paisaje.png`: copiaba su composición).
 
 _Una sola vista general del lugar del agua fuera de una ciudad pequeña amurallada del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. En primer término, un hueco ancho en la tierra con escalones de piedra tosca que bajan a un pozo o manantial con agua oscura al fondo. Junto al hueco, a ras de suelo, una pila larga y baja de piedra para abrevar, y alrededor tierra apisonada con piedras sueltas. A poca distancia, detrás, los muros de adobe de la ciudad sobre un zócalo de piedra tosca, con una puerta sencilla y casas de techo plano que asoman sobre el muro, todo con luz cálida y baja de la tarde._ Evitar: _Sin paneles ni dos momentos lado a lado. Sin polea, torno, tejadillo sobre el pozo, cubo con cadena ni fuente tallada. Sin zigurats, templos, palacios, torres ni ladrillo vidriado. Sin personas, camellos, cántaros ni otros animales._
 

@@ -100,5 +100,8 @@
     "prompt_es": "Una sola vista general del lugar del agua fuera de una ciudad pequeña amurallada del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. En primer término, un hueco ancho en la tierra con escalones de piedra tosca que bajan a un pozo o manantial con agua oscura al fondo. Junto al hueco, a ras de suelo, una pila larga y baja de piedra para abrevar, y alrededor tierra apisonada con piedras sueltas. A poca distancia, detrás, los muros de adobe de la ciudad sobre un zócalo de piedra tosca, con una puerta sencilla y casas de techo plano que asoman sobre el muro, todo con luz cálida y baja de la tarde.",
     "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not add a pulley, a winch, a roof over the well, a bucket on a chain or a carved fountain. Do not paint ziggurats, temples, palaces, towers or glazed bricks. Do not paint people, camels, jars or any other animals.",
     "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin polea, torno, tejadillo sobre el pozo, cubo con cadena ni fuente tallada. Sin zigurats, templos, palacios, torres ni ladrillo vidriado. Sin personas, camellos, cántaros ni otros animales."
-  }
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
 }

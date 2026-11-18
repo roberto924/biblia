@@ -21,7 +21,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/sodoma.png`; luego subirla a Cinema Studio como Element `PUERTA_SODOMA`.
 
-Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (no `patron-1-paisaje.png`: copiaba su composición).
 
 _Una sola vista general de la puerta de una ciudad amurallada en una llanura fértil del antiguo Oriente Próximo, a la caída de la tarde y sin personas. Una muralla de adobe sobre un zócalo de piedra tosca se extiende a los dos lados, y la puerta es un paso hondo entre dos torres bajas y cuadradas, con batientes de madera pesados abiertos y bancos sencillos de piedra a lo largo de las paredes del paso. Por la puerta se ven una plaza pequeña y casas de adobe de techo plano. Fuera de la muralla hay campos verdes de riego, y la luz es el naranja cálido del atardecer, con sombras largas._ Evitar: _Sin paneles ni dos momentos lado a lado. Sin fuego, humo, ruinas, palacio, templos, ídolos, estatuas, soldados, estandartes ni personas. Que la ciudad no parezca malvada ni monstruosa; sin monstruos tallados, calaveras ni cielo oscuro de tormenta._
 

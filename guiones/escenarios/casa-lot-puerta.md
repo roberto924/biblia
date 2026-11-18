@@ -25,7 +25,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/casa-lot-puerta.png`; luego subirla a Cinema Studio como Element `PUERTA_CASA_LOT`.
 
-Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (no `patron-1-paisaje.png`: copiaba su composición).
 
 _Una sola vista general de la fachada de una casa de ciudad del antiguo Oriente Próximo, de noche, vista desde una calle estrecha y sin personas. La casa tiene muros de adobe enlucido, tejado plano con un pretil bajo y una sola ventana pequeña y alta. En la entrada, una puerta de madera gruesa de dos hojas con travesaños, bien cerrada, bajo un dintel de madera. La calle es de tierra apisonada entre otras casas sencillas de adobe. La única luz es el resplandor cálido de una lamparilla de aceite en una hornacina junto a la puerta, contra el azul profundo de la noche._ Evitar: _Sin paneles ni dos momentos lado a lado. Sin personas, sombras de personas, armas, antorchas, fuego, sangre ni golpes en la puerta. Que la casa no sea un palacio ni un castillo; sin resplandor ni rayos alrededor de la puerta._
 

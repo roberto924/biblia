@@ -71,5 +71,8 @@
     "prompt_es": "Una sola vista general de la fachada de una casa de ciudad del antiguo Oriente Próximo, de noche, vista desde una calle estrecha y sin personas. La casa tiene muros de adobe enlucido, tejado plano con un pretil bajo y una sola ventana pequeña y alta. En la entrada, una puerta de madera gruesa de dos hojas con travesaños, bien cerrada, bajo un dintel de madera. La calle es de tierra apisonada entre otras casas sencillas de adobe. La única luz es el resplandor cálido de una lamparilla de aceite en una hornacina junto a la puerta, contra el azul profundo de la noche.",
     "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint people, shadows of people, weapons, torches, fire, blood or damage to the door. Do not make the house a palace or a castle, and do not add glowing light or rays around the door.",
     "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin personas, sombras de personas, armas, antorchas, fuego, sangre ni golpes en la puerta. Que la casa no sea un palacio ni un castillo; sin resplandor ni rayos alrededor de la puerta."
-  }
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
 }

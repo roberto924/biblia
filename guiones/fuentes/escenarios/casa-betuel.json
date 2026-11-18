@@ -79,7 +79,10 @@
   "hoja_referencia": {
     "prompt_en": "Make one single establishing view of the courtyard of a family house in a small town in the ancient Near East, in the late afternoon, with no people and no animals in it. The wide courtyard of beaten earth is enclosed by plastered mud-brick walls. Along one side runs an open shelter of branches and reeds on wooden posts, with heaps of straw and fodder under it, and nearby there is a mud-brick water trough, a few large clay water jars and a wide clay basin for washing feet. At the back, a room with a flat roof opens onto the courtyard, showing reed mats, a low wooden table and small oil lamps inside, and a mud-brick stair climbs to the roof. Warm, low evening light falls across the yard.",
     "prompt_es": "Una sola vista general del patio de una casa de familia en una ciudad pequeña del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. El patio, ancho y de tierra apisonada, está cerrado por muros de adobe enlucido. A lo largo de un lado hay un cobertizo abierto de ramas y cañas sobre postes de madera, con montones de paja y forraje debajo, y cerca un abrevadero de adobe, unas tinajas grandes de agua y una jofaina ancha de barro para lavar los pies. Al fondo, una habitación de techo plano se abre al patio y deja ver esteras de junco, una mesa baja de madera y lamparillas de aceite, y una escalera de adobe sube al tejado. Una luz cálida y baja de la tarde cruza el patio.",
-    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint people, camels, gold, jewelry, chests of treasure or rich carpets. Do not make it a palace, a Roman villa or a building with domes and pointed arches.",
-    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin personas, camellos, oro, joyas, cofres de tesoro ni alfombras lujosas. Que no sea un palacio, una villa romana ni un edificio con cúpulas y arcos apuntados."
-  }
+    "negativo_en": "Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the walls are plain mud plaster. Do not split the picture into panels or show two moments side by side. Do not paint people, camels, gold, jewelry, chests of treasure or rich carpets. Do not make it a palace, a Roman villa or a building with domes and pointed arches.",
+    "negativo_es": "Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en las paredes: las paredes son de barro enlucido liso. Sin paneles ni dos momentos lado a lado. Sin personas, camellos, oro, joyas, cofres de tesoro ni alfombras lujosas. Que no sea un palacio, una villa romana ni un edificio con cúpulas y arcos apuntados."
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
 }

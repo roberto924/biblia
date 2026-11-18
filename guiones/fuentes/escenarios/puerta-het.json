@@ -79,5 +79,8 @@
     "prompt_es": "Una sola vista general de la puerta de una ciudad pequeña de colina en Canaán, en el antiguo Oriente Próximo, de día y sin personas. La muralla es de piedras toscas sin labrar abajo y de adobe arriba, y la puerta es un paso corto entre dos torres bajas, con batientes de madera pesados abiertos y bancos sencillos de piedra a lo largo de las paredes del paso. Delante de la puerta hay una explanada pequeña de tierra apisonada donde puede reunirse gente. Detrás de la muralla, casas de techo plano suben por la ladera de la colina bajo un cielo despejado.",
     "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint a palace, temples, statues, soldiers, banners, a market, scales, silver or any person. Do not make it a medieval castle gate with battlements and a portcullis.",
     "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin palacio, templos, estatuas, soldados, estandartes, mercado, balanzas, plata ni personas. Que no sea la puerta de un castillo medieval con almenas y rastrillo."
-  }
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
 }

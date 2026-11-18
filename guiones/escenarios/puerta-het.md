@@ -24,7 +24,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 
 Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/puerta-het.png`; luego subirla a Cinema Studio como Element `PUERTA_HET`.
 
-Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (no `patron-1-paisaje.png`: copiaba su composición).
 
 _Una sola vista general de la puerta de una ciudad pequeña de colina en Canaán, en el antiguo Oriente Próximo, de día y sin personas. La muralla es de piedras toscas sin labrar abajo y de adobe arriba, y la puerta es un paso corto entre dos torres bajas, con batientes de madera pesados abiertos y bancos sencillos de piedra a lo largo de las paredes del paso. Delante de la puerta hay una explanada pequeña de tierra apisonada donde puede reunirse gente. Detrás de la muralla, casas de techo plano suben por la ladera de la colina bajo un cielo despejado._ Evitar: _Sin paneles ni dos momentos lado a lado. Sin palacio, templos, estatuas, soldados, estandartes, mercado, balanzas, plata ni personas. Que no sea la puerta de un castillo medieval con almenas y rastrillo._
 
