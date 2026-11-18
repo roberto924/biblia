@@ -1,0 +1,73 @@
+{
+  "id": "pastores-haran",
+  "nombre": "Los pastores del pozo de Harán",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son los que esperan con sus rebaños junto al pozo y responden «De Harán somos» (Gn 29:4). No son personas de datos/biblia.js. Hablan a coro (Gn 29:4-6, 29:8): como los constructores de Babel y los hombres de Sodoma, el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisión pendiente n.º 54 de guiones/LEEME.md).",
+  "pasajes": [
+    "gn-61"
+  ],
+  "element": {
+    "nombre": "PASTORES_HARAN",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo anónimo de tres hombres, uno por cada rebaño que yace junto al pozo (Gn 29:2): el texto no dice cuántos pastores son; tres es elección del ilustrador. Son gente de trabajo, más pobre que la familia de Labán. La piedra del pozo y el pozo están en el escenario POZO_HARAN; las ovejas, en las tomas.",
+  "rasgos": [
+    {
+      "rasgo": "Esperan con tres rebaños de ovejas junto al pozo",
+      "certeza": "texto",
+      "ref": "Gn 29:2",
+      "cita": "he aquí tres rebaños de ovejas que yacían cerca de él"
+    },
+    {
+      "rasgo": "Entre todos ruedan la piedra, abrevan y la vuelven a su sitio",
+      "certeza": "texto",
+      "ref": "Gn 29:3",
+      "cita": "revolvían la piedra de sobre la boca del pozo, y abrevaban las ovejas; y volvían la piedra sobre la boca del pozo á su lugar"
+    },
+    {
+      "rasgo": "Son de Harán",
+      "certeza": "texto",
+      "ref": "Gn 29:4",
+      "cita": "Y ellos respondieron: De Harán somos"
+    },
+    {
+      "rasgo": "Conocen a Labán y a su hija",
+      "certeza": "texto",
+      "ref": "Gn 29:6",
+      "cita": "Paz; y he aquí Rachêl su hija viene con el ganado"
+    },
+    {
+      "rasgo": "No abrevan hasta que se juntan todos los ganados",
+      "certeza": "texto",
+      "ref": "Gn 29:8",
+      "cita": "No podemos, hasta que se junten todos los ganados, y remuevan la piedra de sobre la boca del pozo"
+    },
+    {
+      "rasgo": "Tres hombres de edades distintas, de un mozo de unos veinte años a un hombre maduro de barba entrecana; piel morena curtida por el sol, pelo oscuro natural y corto o hasta la nuca, barbas de distintos largos; gesto tranquilo y algo desconfiado ante el forastero",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. Lo curtido, de su oficio; la cautela, de que contestan solo lo que se les pregunta (Gn 29:4-8)."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas cortas de lana sin teñir, parda, crema y gris, hasta la rodilla y sujetas sobre un hombro, con una sola franja de color apagado; cinturones de cuerda; sandalias gastadas; cayados de madera lisos; cabezas descubiertas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época (decisión pendiente n.º 53 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. El corte sigue a los hombres del cortejo de Beni Hasan (A2), más llano; los cayados y la lana sin teñir son elección del ilustrador, por su oficio.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Coro de voces de hombre, sencillas y algo secas, español neutro. Gn 29:4-6: respuestas breves al forastero. Gn 29:8: explican la costumbre del pozo, sin enfado. Decisión pendiente del usuario (n.º 54 de guiones/LEEME.md): voces propias o leídas por el narrador."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing three shepherds standing side by side in a single row, each one fully visible from head to feet and clearly apart from the others. They are herdsmen from western Asia of clearly different ages: on the left a young man of about twenty with a short dark beard, in the middle a sturdy man of about thirty-five with a full dark beard, and on the right a lean man of about fifty with a greying beard. They have sun-weathered brown skin and natural dark hair cut short or reaching the nape of the neck. Their heads are bare, with nothing tied around them. Their expressions are calm and a little wary. They wear plain knee-length tunics of undyed brown, cream and grey wool, each with one muted stripe, fastened over one shoulder, cut like the garments of the western Asian visitors painted in Middle Kingdom Egyptian tombs but plainer, with cord belts and worn leather sandals, and each holds a plain wooden shepherd's staff. Above the row, in a separate band of the sheet with clear empty space between, there is a close-up of each face in the same order; the close-ups never cover or overlap any head or body below.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: tres pastores de pie en una sola fila, cada uno de cuerpo entero y bien separado de los demás. Pastores de Asia occidental de edades claramente distintas: a la izquierda, un mozo de unos veinte años de barba corta oscura; en el centro, un hombre recio de unos treinta y cinco años de barba oscura cerrada; a la derecha, un hombre enjuto de unos cincuenta años de barba entrecana. Piel morena curtida por el sol y pelo oscuro natural, corto o hasta la nuca. Cabezas descubiertas, sin nada atado. Gesto tranquilo y algo desconfiado. Túnicas lisas hasta la rodilla de lana sin teñir, parda, crema y gris, cada una con una franja apagada, sujetas sobre un hombro, cortadas como la ropa de los asiáticos de las tumbas egipcias del Reino Medio pero más llanas; cinturones de cuerda, sandalias gastadas y un cayado liso de madera cada uno. Encima de la fila, en una franja aparte de la hoja y con espacio vacío entre medias, un primer plano de cada rostro en el mismo orden; los primeros planos no tapan ni rozan ninguna cabeza ni cuerpo de abajo.",
+    "negativo_en": "Do not put headbands, cords or cloths on their heads, and do not give them turbans or hoods. Do not let any close-up cover or overlap a head in the row below. Do not make them identical, and do not include children or very old men. Do not give them weapons, bracelets or any jewelry, and do not dress them in rich patterned clothes or Egyptian white linen. Do not paint sheep, a well, a stone or any other person, and keep the background plain.",
+    "negativo_es": "Sin cintas, cordones ni paños en la cabeza, ni turbantes ni capuchas; que ningún primer plano tape ni roce una cabeza de la fila de abajo; que no sean idénticos, sin niños ni ancianos; sin armas, brazaletes ni joyas, sin ropa rica de dibujos ni lino blanco egipcio; sin ovejas, pozo, piedra ni otras personas; fondo liso."
+  }
+}

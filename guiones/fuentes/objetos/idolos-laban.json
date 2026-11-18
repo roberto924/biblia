@@ -1,0 +1,74 @@
+{
+  "id": "idolos-laban",
+  "nombre": "Los ídolos de Labán",
+  "pasajes": [
+    "gn-66",
+    "gn-67"
+  ],
+  "element": {
+    "nombre": "IDOLOS_LABAN",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. El texto no dice por qué los hurta Raquel: la ficha no lo explica. La albarda donde los esconde es parte del escenario TIENDA_RAQUEL (no está en el catálogo como objeto). El texto no los describe: ni material, ni tamaño, ni forma; lo que muestra la hoja es interpretación, sin referencia de época comprobada. No se dibujan como dioses conocidos ni con rasgos de ninguna religión concreta, y no brillan.",
+  "texto": [
+    {
+      "dato": "Raquel los hurta mientras Labán trasquila sus ovejas",
+      "certeza": "texto",
+      "ref": "Gn 31:19",
+      "cita": "Labán había ido á trasquilar sus ovejas: y Rachêl hurtó los ídolos de su padre"
+    },
+    {
+      "dato": "Labán los llama sus dioses",
+      "certeza": "texto",
+      "ref": "Gn 31:30",
+      "cita": "¿por qué me hurtaste mis dioses?"
+    },
+    {
+      "dato": "Jacob no sabe que los tiene Raquel",
+      "certeza": "texto",
+      "ref": "Gn 31:32",
+      "cita": "Jacob no sabía que Rachêl los había hurtado"
+    },
+    {
+      "dato": "Raquel los mete en una albarda de camello y se sienta encima",
+      "certeza": "texto",
+      "ref": "Gn 31:34",
+      "cita": "tomó Rachêl los ídolos, y púsolos en una albarda de un camello, y sentóse sobre ellos"
+    },
+    {
+      "dato": "Labán no los halla",
+      "certeza": "texto",
+      "ref": "Gn 31:35",
+      "cita": "él buscó, pero no halló los ídolos"
+    },
+    {
+      "dato": "Son varios y pequeños: caben en una albarda y alguien puede sentarse encima sin que se vean",
+      "certeza": "inferido",
+      "nota": "El texto habla de ellos en plural y los esconde en una albarda con Raquel sentada encima mientras Labán registra la tienda (Gn 31:34): no pueden ser grandes.",
+      "base": [
+        {
+          "ref": "Gn 31:34",
+          "cita": "púsolos en una albarda de un camello, y sentóse sobre ellos"
+        }
+      ]
+    },
+    {
+      "dato": "Figuras domésticas de dioses, con forma humana, que se guardaban en casa",
+      "certeza": "externa",
+      "fuente": "Explicación del proyecto «terafines (ídolos del hogar)» (herramientas/explicaciones/terminos-conceptos.json), que cita Easton's Bible Dictionary (1897), entrada «Teraphim», y marca como inferencia que estos «ídolos» sean terafines. No se ha releído el diccionario para esta ficha."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Tres figurillas toscas de barro cocido color pardo rojizo, sin pintar, de un palmo de alto más o menos: figuras humanas de pie, simplificadas, con los brazos pegados al pecho, ojos y nariz marcados con unos pocos trazos y la base plana; una algo más alta que las otras",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el tamaño sale de lo inferido y la forma humana, de la Fuente externa; el barro, el color, el número y los rasgos son elección, sin referencia de época comprobada. Se evitan el oro y las joyas: el texto no los nombra."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same three small household figurines three times side by side. On the left, the three of them standing upright in a row: crude, unpainted figurines of reddish-brown fired clay, each about a hand's span tall, shaped as simplified standing human figures with arms held against the chest, eyes and nose marked with a few strokes, and flat bases, one a little taller than the other two. In the center, the same three lying on their sides on a folded wool cloth, as if just wrapped up to be hidden. On the right, a close view of the face and chest of the tallest one. Nobody is holding them.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: las mismas tres figurillas domésticas tres veces, una al lado de otra. A la izquierda, las tres de pie en fila: figurillas toscas, sin pintar, de barro cocido pardo rojizo, de un palmo de alto más o menos, con forma de figura humana de pie simplificada, los brazos pegados al pecho, ojos y nariz marcados con unos pocos trazos y la base plana; una algo más alta que las otras dos. En el centro, las mismas tres tumbadas sobre un paño de lana doblado, como recién envueltas para esconderlas. A la derecha, de cerca, la cara y el pecho de la más alta. Nadie las sostiene.",
+    "negativo_en": "Do not make them gold, silver, painted, jeweled or shiny, and do not make them glow or look magical. Do not give them animal heads, wings, crowns, horns or the features of any known Egyptian or other deity, and do not make them monsters or demons. Do not make them large statues. Do not show hands, people, a saddle, a tent or an altar, and keep the background plain.",
+    "negativo_es": "Que no sean de oro ni de plata, ni pintadas, enjoyadas o brillantes, ni luminosas ni mágicas; sin cabezas de animal, alas, coronas, cuernos ni rasgos de ninguna divinidad egipcia u otra conocida, ni monstruos ni demonios; que no sean estatuas grandes; sin manos, personas, albarda, tienda ni altar; fondo liso."
+  }
+}

@@ -326,6 +326,44 @@ registro esté completo; y propone cambios en las fuentes JSON.
     generarse, porque su paisaje de colinas secas es casi el de la lámina 1 y la creación ya copió su composición. Las
     fichas generadas dicen «copiaba su composición», que es la frase de `guiones.py` para el caso de la creación: aquí
     es preventivo. Alternativa: generarlos con las tres láminas y apartarla solo si copian.
+50. **La casa de Labán en Gn 29–31 es la de la hoja `casa-betuel`** (propuesta por defecto; no hay hoja nueva). Isaac
+    manda a Jacob «á Padan-aram, á casa de Bethuel» (Gn 28:2), Betuel es «de Padan-aram» (Gn 25:20) y Labán lo lleva
+    «á su casa» (Gn 29:13): se infiere que es la misma casa de la familia. El texto no dice que sea el mismo edificio ni
+    que la ciudad de Nacor (Gn 24:10) sea Harán (Gn 27:43, 29:4), y han pasado unos noventa y siete años (cálculo en
+    `personajes/laban-mayor`). Hay que añadir gn-61, gn-62 y gn-65 a `casa-betuel` (y quizá renombrarla «casa de
+    Betuel y de Labán»). Alternativa: una hoja propia con el id del catálogo, `padan-aram`.
+51. **Labán viejo** (`personajes/laban-mayor`): propuesta por defecto, la misma cara y la misma túnica de la hoja
+    `laban`, con pelo y barba casi blancos, aparentando unos sesenta y cinco años; por cálculo han pasado de noventa y
+    siete a ciento diecisiete años desde Gn 24. Tiene que verse claramente mayor que Jacob en Harán, cuya hoja es del
+    redactor de Gn 25:19–28:22: el cálculo de la ficha da a Jacob unos setenta y siete años al llegar y hay que hacerlo
+    cuadrar con esa hoja. Su voz sigue en `laban.json` (n.º 27).
+52. **Una hoja para veinte años** (Raquel, Lea, Bilha, Zilpa): propuesta por defecto, una hoja de mujer joven para cada
+    una en todo Gn 29–31 (Raquel unos veinte, Lea unos veintitrés); en gn-64 a gn-68, de catorce a veinte años después
+    del pozo (Gn 31:41), las tomas las hacen algo más maduras sin cambiar cara ni ropa. Si no basta, una segunda hoja de
+    cada una para Gn 31–35. La reutiliza el redactor de Gn 32–36.
+53. **Ropa de Gn 29–31**: supuesto por defecto, el de la n.º 31 (Beni Hasan, A2) para Raquel (ocre y blanco), Lea
+    (oliva y crema), los hijos y los hermanos de Labán y los pastores de Harán (lana sin teñir); las siervas Bilha y
+    Zilpa, con vestido llano sin teñir con una franja del color de su señora y descalzas; Rubén niño, túnica corta
+    con franjas oliva. Los colores son elección del ilustrador para distinguirlos; no hay referencia comprobada de
+    siervas ni de niños.
+54. **Voces de Gn 29–31 que el guion no admite todavía**: los pastores de Harán (Gn 29:4-8) y los hijos de Labán
+    (Gn 31:1) hablan a coro y no son personas de `datos/biblia.js` (como la n.º 13, la n.º 20 y la n.º 22); y Raquel y
+    Lea responden a la vez (Gn 31:14-16: «respondió Rachêl y Lea, y dijéronle»). Opciones: voces propias, leerlo el
+    narrador o, en el dúo, repartir las frases entre las dos.
+55. **Gn 29–31 en los perfiles**: la noche de bodas (Gn 29:23), Bilha y Zilpa dadas a Jacob (Gn 30:3-4, 30:9), los
+    partos (Gn 30:3, «parirá sobre mis rodillas»), la noche de las mandrágoras (Gn 30:15-16), el celo del ganado
+    (Gn 30:38-41, 31:10), «la costumbre de las mujeres» (Gn 31:35) y los sacrificios de Gn 31:54. Propuesta por defecto,
+    nada explícito en ningún perfil: la puerta de una tienda de noche y fundido; recién nacidos ya envueltos; animales
+    bebiendo; Raquel sentada sin más; el monte con humo lejano. La narración se lee entera.
+56. **Los hijos de Jacob en gn-66 a gn-68** (Gn 31:17, 31:43, 31:55) y después en Gn 32–33: once niños y Dina, de
+    recién nacidos a unos doce años. Propuesta por defecto: sin hoja de grupo (solo `personajes/ruben-nino`, para
+    Gn 30:14), mostrados de lejos o como unos pocos niños junto a sus madres. Alternativa: una hoja de grupo por madre,
+    que habría que acordar con el redactor de Gn 32–36 (Dina, Simeón y Leví son suyos).
+57. **Fichas de Gn 29–31 que no están en el catálogo de juego** (como la n.º 16, la n.º 30 y la n.º 36):
+    `escenarios/pozo-haran`, `escenarios/campo-laban`, `escenarios/tienda-raquel` (con la albarda de Gn 31:34 dentro,
+    sin hoja de objeto) y `objetos/ganado-jacob`. La piedra del pozo de Gn 29:2-10 va dentro de `pozo-haran`. El
+    catálogo pone todo Gn 28:10–31:21 en el escenario `padan-aram`, que no tiene hoja (n.º 50). `pozo-haran`,
+    `campo-laban` y `galaad` llevan `sin_laminas` desde el principio, como los paisajes de la n.º 37.
 
 ## Pendiente del proyecto (fuera de los guiones)
 

@@ -1,0 +1,67 @@
+{
+  "id": "tienda-raquel",
+  "nombre": "La tienda de Raquel en Galaad, con la albarda (Gn 31:33-35)",
+  "pasajes": [
+    "gn-67"
+  ],
+  "element": {
+    "nombre": "TIENDA_RAQUEL",
+    "tipo": "lugar"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 57 de guiones/LEEME.md). Es el interior de una de las tiendas del escenario GALAAD, de la misma forma que la hoja TIENDA_ABRAM. La albarda donde Raquel esconde los ídolos y se sienta (Gn 31:34) es parte de esta hoja, no un objeto aparte: solo sale aquí; se dibuja como la albarda de la hoja CAMELLOS_SIERVO para que se lea como silla de camello. Los ídolos (objetos/idolos-laban) no se ven en la hoja: están escondidos. «Estoy con la costumbre de las mujeres» (Gn 31:35) no se muestra (decisión pendiente n.º 55).",
+  "texto": [
+    {
+      "dato": "Labán entra en la tienda de Raquel después de registrar las demás",
+      "certeza": "texto",
+      "ref": "Gn 31:33",
+      "cita": "salió de la tienda de Lea, y vino á la tienda de Rachêl"
+    },
+    {
+      "dato": "Dentro hay una albarda de camello, donde Raquel mete los ídolos y se sienta",
+      "certeza": "texto",
+      "ref": "Gn 31:34",
+      "cita": "púsolos en una albarda de un camello, y sentóse sobre ellos"
+    },
+    {
+      "dato": "Labán palpa toda la tienda y no los halla",
+      "certeza": "texto",
+      "ref": "Gn 31:34",
+      "cita": "tentó Labán toda la tienda, y no los halló"
+    },
+    {
+      "dato": "Raquel no se levanta ante su padre",
+      "certeza": "texto",
+      "ref": "Gn 31:35",
+      "cita": "no me puedo levantar delante de ti"
+    },
+    {
+      "dato": "La familia viaja en camellos: hay sillas y cargas de camello en el campamento",
+      "certeza": "inferido",
+      "nota": "Jacob sube a sus hijos y a sus mujeres sobre los camellos al salir (Gn 31:17), y en la tienda hay una albarda (Gn 31:34).",
+      "base": [
+        {
+          "ref": "Gn 31:17",
+          "cita": "subió sus hijos y sus mujeres sobre los camellos"
+        }
+      ]
+    },
+    {
+      "dato": "Albarda: almohadilla o silla que se pone a una bestia de carga para colocarle los bultos",
+      "certeza": "externa",
+      "fuente": "Explicación del proyecto «albarda» (herramientas/explicaciones/terminos-palabras.json), que cita el Wikcionario en español, entrada «albarda»."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Interior de una tienda baja de paños oscuros de pelo de cabra sobre postes de madera, con el lado largo abierto por donde entra la luz del día; suelo de esteras de junco; en el centro, en el suelo, una albarda de camello: un armazón de madera acolchado con mantas de lana dobladas a franjas rojas y crema, con alforjas de cuero colgando a los lados, lo bastante ancho para sentarse encima; alrededor, fardos atados, unas tinajas de barro, un odre de cuero colgado de un poste y mantas enrolladas",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: la tienda y la albarda salen del texto (arriba); la forma de la tienda copia la hoja TIENDA_ABRAM (supuesto) y la albarda, la de la hoja CAMELLOS_SIERVO; los fardos, las tinajas y el odre son elección, por ser un campamento de viaje (Gn 31:17-18). La luz de día es elección: el texto no da la hora."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the inside of a low, wide herdsman's tent in the ancient Near East in daytime, with no people and no animals in it. The roof and back are made of long dark brown-black strips of woven goat-hair cloth on plain wooden poles, and one long side is open, letting in the daylight. The floor is covered with reed mats. In the middle, on the floor, lies a camel's pack saddle: a wooden frame padded with folded wool blankets striped in red and cream, with leather saddle bags hanging at its sides, wide enough for a person to sit on. Around it there are tied bundles, a few clay jars, a leather water skin hanging from a pole and rolled-up blankets.",
+    "prompt_es": "Una sola vista general del interior de una tienda de pastor baja y ancha del antiguo Oriente Próximo, de día, sin personas ni animales. El techo y el fondo son de largas tiras de paño tejido de pelo de cabra, pardo oscuro casi negro, sobre postes de madera sencillos, y un lado largo está abierto y deja entrar la luz del día. El suelo está cubierto de esteras de junco. En el centro, en el suelo, una albarda de camello: un armazón de madera acolchado con mantas de lana dobladas a franjas rojas y crema, con alforjas de cuero colgando a los lados, lo bastante ancho para sentarse encima. Alrededor hay fardos atados, unas tinajas de barro, un odre de cuero colgado de un poste y mantas enrolladas.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the tent cloth is plain. Do not split the picture into panels or show two moments side by side. Do not show figurines, statues, gold, jewelry, chests of treasure or rich carpets. Do not make it a palace, a round white tent or a room with walls of brick. Do not paint people, camels or any other animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en las paredes: el paño de la tienda es liso. Sin paneles ni dos momentos lado a lado. Sin figurillas, estatuas, oro, joyas, cofres de tesoro ni alfombras lujosas. Que no sea un palacio, una tienda blanca redonda ni un cuarto con paredes de ladrillo. Sin personas, camellos ni otros animales."
+  }
+}
