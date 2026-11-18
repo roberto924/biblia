@@ -1,0 +1,159 @@
+{
+  "id": "simeon-levi",
+  "nombre": "Simeón y Leví, hermanos de Dina (Gn 34)",
+  "personas": [
+    "Simeon_1",
+    "Levi_1"
+  ],
+  "pasajes": [
+    "gn-72",
+    "gn-73"
+  ],
+  "element": {
+    "nombre": "SIMEON_LEVI",
+    "tipo": "personaje (pareja)"
+  },
+  "nota": "Hoja propia y no la de los hermanos (personajes/hermanos, decisión pendiente n.º 66 de guiones/LEEME.md): aquella fija a los diez hermanos de Gn 42–45, de cuarenta a cuarenta y seis años, y en Gn 34 Simeón y Leví son mozos (cálculo abajo); además actúan solos, el texto los nombra (Gn 34:25, 34:30) y hablan (Gn 34:31), así que necesitan rostro propio. Al rehacer la hoja de los hermanos, conviene que dos de los diez tengan los rasgos de estos, más viejos. Los demás hijos de Jacob de Gn 34 (Gn 34:7, 34:13-17, 34:27) no tienen hoja de mozos: n.º 66. La voz de Simeón y Leví queda en esta ficha; cuando hablen en Gn 42 con la hoja de los hermanos chocará como la n.º 27. Las espadas (Gn 34:25) entran en su toma, no en la hoja; el ataque, la muerte de los varones y el saqueo (Gn 34:25-29) no se muestran de forma gráfica en ningún perfil (n.º 64).",
+  "edades": [
+    {
+      "dato": "Como mucho unos trece años al salir de Padan-aram",
+      "certeza": "calculo",
+      "valor": 13,
+      "nota": "Es un tope, no su edad: el texto no dice cuántos años tienen en Gn 34.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 13,
+        "pasos": [
+          {
+            "texto": "Años de Jacob en casa de Labán",
+            "valor": 20,
+            "ref": "Gn 31:41",
+            "cita": "Así he estado veinte años en tu casa"
+          },
+          {
+            "texto": "Años que sirvió antes de casarse",
+            "valor": 7,
+            "ref": "Gn 29:20",
+            "cita": "Así sirvió Jacob por Rachêl siete años"
+          }
+        ],
+        "supuestos": [
+          "Jacob se casa con Lea al cumplir esos siete años (Gn 29:21-23) y Simeón y Leví nacen después (Gn 29:33-34), segundo y tercero de sus hijos: el tope vale para los dos",
+          "Los veinte años de Gn 31:41 terminan cuando sale de Padan-aram (Gn 31:17-18)",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Entre la salida de Padan-aram y Gn 37:2 pasan unos once años",
+      "certeza": "calculo",
+      "valor": 11,
+      "nota": "Gn 34 cae en ese tiempo, después de Sucot (Gn 33:17); el texto no dice cuánto. Gn 37:2 es posterior a este pasaje: sirve para dirigir, no se cita en el video.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 11,
+        "pasos": [
+          {
+            "texto": "Edad de José en Gn 37:2",
+            "valor": 17,
+            "ref": "Gn 37:2",
+            "cita": "José, siendo de edad de diez y siete años"
+          },
+          {
+            "texto": "Años que Jacob sirvió por el ganado después de nacer José",
+            "valor": 6,
+            "ref": "Gn 31:41",
+            "cita": "seis años por tu ganado"
+          }
+        ],
+        "supuestos": [
+          "José nace al cumplirse los catorce años de servicio por las dos hijas (Gn 30:25 y Gn 31:41)",
+          "Gn 34 ocurre antes de Gn 37: se sigue el orden del relato",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: dos mozos de unos veinte años (Simeón) y diecinueve (Leví)",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: entre los topes de los cálculos, se les dibuja hombres jóvenes, porque el texto los llama varones (Gn 34:7) y toman la espada (Gn 34:25)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Simeón, segundo hijo de Lea",
+      "certeza": "texto",
+      "ref": "Gn 29:33",
+      "cita": "Y llamó su nombre Simeón"
+    },
+    {
+      "rasgo": "Leví, tercer hijo de Lea",
+      "certeza": "texto",
+      "ref": "Gn 29:34",
+      "cita": "llamó su nombre Leví"
+    },
+    {
+      "rasgo": "Los hijos de Jacob vuelven del campo entristecidos y llenos de ira",
+      "certeza": "texto",
+      "ref": "Gn 34:7",
+      "cita": "se entristecieron los varones, y se ensañaron mucho"
+    },
+    {
+      "rasgo": "Los hijos de Jacob responden con engaño a Siquem y a Hamor",
+      "certeza": "texto",
+      "ref": "Gn 34:13",
+      "cita": "respondieron los hijos de Jacob á Sichêm y á Hamor su padre con engaño"
+    },
+    {
+      "rasgo": "Simeón y Leví toman cada uno su espada y van contra la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 34:25",
+      "cita": "Simeón y Leví, hermanos de Dina, tomaron cada uno su espada"
+    },
+    {
+      "rasgo": "Sacan a Dina de casa de Siquem",
+      "certeza": "texto",
+      "ref": "Gn 34:26",
+      "cita": "tomaron á Dina de casa de Sichêm, y saliéronse"
+    },
+    {
+      "rasgo": "Jacob los reprende",
+      "certeza": "texto",
+      "ref": "Gn 34:30",
+      "cita": "dijo Jacob á Simeón y á Leví: Habéisme turbado"
+    },
+    {
+      "rasgo": "Responden a su padre",
+      "certeza": "texto",
+      "ref": "Gn 34:31",
+      "cita": "¿Había él de tratar á nuestra hermana como á una ramera?"
+    },
+    {
+      "rasgo": "Simeón (a la izquierda de la hoja): alto y enjuto, mandíbula dura, barba negra corta y espesa. Leví (a la derecha): más bajo y ancho de hombros, pelo oscuro rizado y abundante, barba escasa. Los dos de piel morena oliva, ojos oscuros, pelo natural hasta la nuca; gesto serio y duro, de ira contenida",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. Se les hace distintos para que se reconozcan entre tomas; el gesto sale de Gn 34:7 y 34:31, sin caricatura."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas de lana hasta la rodilla con franjas: Simeón, rojas y crudas, sujeta sobre un hombro; Leví, azul grisáceo y ocre, con los dos hombros cubiertos; cinturones de cuero; sandalias; cabezas descubiertas, sin nada atado",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Mozos pastores de la casa de Jacob, como los asiáticos del mural de Beni Hasan (A2). En la toma de Gn 34:25 llevan una espada corta y recta de bronce (interpretación del ilustrador), sin sangre.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Dos voces de hombre joven, de unos veinte años, duras y con ira contenida, español neutro. Solo Gn 34:31, la respuesta a su padre: a coro o uno por los dos (decide el guion), cortante, sin gritar. Lo que dicen «los hijos de Jacob» en Gn 34:14-17 puede ir en estas voces o en otra del grupo de hermanos: decisión pendiente n.º 66 de guiones/LEEME.md."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing two young brothers standing side by side, each one fully visible from head to feet, with a close-up of each face in a clear row of its own along the top of the sheet, well separated from the standing figures so that no close-up touches or covers any head. They are herdsmen's sons from western Asia of about twenty, with olive-brown skin, dark eyes and natural dark hair that reaches the nape of the neck. The brother on the left is tall and lean, with a hard jaw and a short, thick black beard; the brother on the right is shorter and broad-shouldered, with thick curly dark hair and a sparse young beard. Their heads are bare, with nothing tied around them. Their expressions are serious and hard, with restrained anger. The one on the left wears a knee-length wool tunic with red and cream stripes fastened over one shoulder; the one on the right wears a knee-length wool tunic with blue-grey and ochre stripes covering both shoulders, both in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, with leather belts and leather sandals. Their hands are empty.",
+    "prompt_es": "Hoja de referencia de pareja sobre fondo gris claro liso: dos hermanos jóvenes de pie, uno junto a otro, de cuerpo entero, con un primer plano de cada rostro en una fila propia arriba, bien separada de las figuras, sin tocar ni tapar ninguna cabeza. Hijos de pastores de Asia occidental de unos veinte años; piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca. El de la izquierda, alto y enjuto, de mandíbula dura y barba negra corta y espesa; el de la derecha, más bajo y ancho de hombros, de pelo oscuro rizado y abundante y barba joven escasa. Cabezas descubiertas, sin nada atado. Gesto serio y duro, de ira contenida. El de la izquierda, túnica de lana hasta la rodilla con franjas rojas y crudas, sujeta sobre un hombro; el de la derecha, túnica de lana hasta la rodilla con franjas azul grisáceo y ocre, con los dos hombros cubiertos; las dos al modo de los asiáticos de las tumbas egipcias del Reino Medio, con cinturones y sandalias de cuero. Manos vacías.",
+    "negativo_en": "Do not let a close-up overlap a head. Do not give them swords, knives or any other weapon, and do not show blood or wounds. Do not make them look like middle-aged men, boys or cartoon villains. Do not give them crowns, turbans, headbands, jewelry or rich patterned robes. Do not paint a town, a house or any other person, and keep the background plain.",
+    "negativo_es": "Que ningún primer plano tape una cabeza. Sin espadas, cuchillos ni otras armas, sin sangre ni heridas. Que no parezcan hombres maduros, niños ni villanos de dibujo. Sin coronas, turbantes, cintas en la cabeza, joyas ni túnicas ricas de dibujos. Sin ciudad, casa ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "sucot",
+  "nombre": "Sucot: la casa de Jacob y las cabañas del ganado (Gn 33:17)",
+  "pasajes": [
+    "gn-71"
+  ],
+  "element": {
+    "nombre": "SUCOT",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 68 de guiones/LEEME.md). El texto da solo un versículo: Jacob edifica casa para sí y cabañas para su ganado, y por las cabañas llama al lugar Succoth. La hoja muestra la casa ya hecha y las cabañas, sin personas ni ganado. Es la primera casa que el texto le da a Jacob, que antes «habitaba en tiendas» (Gn 25:27). Sin referencia de época de la casa (supuesto, n.º 34). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Jacob parte a Sucot",
+      "certeza": "texto",
+      "ref": "Gn 33:17",
+      "cita": "Y Jacob se partió á Succoth"
+    },
+    {
+      "dato": "Edifica una casa para sí y cabañas para su ganado",
+      "certeza": "texto",
+      "ref": "Gn 33:17",
+      "cita": "edificó allí casa para sí, é hizo cabañas para su ganado"
+    },
+    {
+      "dato": "Por las cabañas llama al lugar Succoth",
+      "certeza": "texto",
+      "ref": "Gn 33:17",
+      "cita": "por tanto llamó el nombre de aquel lugar Succoth"
+    },
+    {
+      "dato": "Es la primera vez que el texto le da casa a Jacob",
+      "certeza": "inferido",
+      "nota": "De mozo habitaba en tiendas (Gn 25:27); en Siquem vuelve a tender su tienda (Gn 33:19). Que la casa signifique que se queda un tiempo es inferencia: el texto no dice cuánto.",
+      "base": [
+        {
+          "ref": "Gn 25:27",
+          "cita": "Jacob empero era varón quieto, que habitaba en tiendas"
+        },
+        {
+          "ref": "Gn 33:17",
+          "cita": "edificó allí casa para sí"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "En un valle ancho y llano con hierba, una casa baja y rectangular de piedra tosca y barro, de techo plano de vigas y tierra, con una puerta sencilla de madera; al lado, varias cabañas abiertas de palos derechos techadas con ramas frondosas, sombra para el ganado, y una cerca baja de ramas; luz de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice casa y cabañas, nada de su forma. Las cabañas de palos y ramas siguen la palabra «cabañas» del texto; la casa, el supuesto de época sin referencia comprobada (n.º 34)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a herdsman's homestead in a wide, flat grassy valley of the ancient Near East by day, with no people and no animals in it. A low, rectangular house of rough stones and mud with a flat roof of beams and packed earth and a plain wooden door stands beside several open shelters for livestock, each made of upright wooden poles roofed with leafy cut branches, and a low fence of piled brushwood encloses a yard. Gentle hills rise on the far side of the valley under a clear sky.",
+    "prompt_es": "Una sola vista general de la casa de un pastor en un valle ancho, llano y con hierba del antiguo Oriente Próximo, de día, sin personas ni animales. Una casa baja y rectangular de piedra tosca y barro, de techo plano de vigas y tierra apisonada y con una puerta sencilla de madera, junto a varias cabañas abiertas para el ganado, cada una de palos derechos techada con ramas cortadas con hojas, y una cerca baja de ramas apiladas que cierra un corral. Colinas suaves al otro lado del valle bajo un cielo despejado.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the walls are plain stone and mud. Do not split the picture into panels or show two moments side by side. Do not paint a town, a wall, tents, a temple, people or animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en los muros: piedra y barro lisos. Sin paneles ni dos momentos lado a lado. Sin ciudad, muralla, tiendas, templo, personas ni animales."
+  }
+}

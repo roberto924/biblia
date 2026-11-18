@@ -326,6 +326,53 @@ registro esté completo; y propone cambios en las fuentes JSON.
     generarse, porque su paisaje de colinas secas es casi el de la lámina 1 y la creación ya copió su composición. Las
     fichas generadas dicen «copiaba su composición», que es la frase de `guiones.py` para el caso de la creación: aquí
     es preventivo. Alternativa: generarlos con las tres láminas y apartarla solo si copian.
+62. **El varón que lucha con Jacob** (Gn 32:24-30, hoja `personajes/varon-peniel`): el texto dice «un varón», que
+    habla de Dios (32:28), y Jacob dice que vio a Dios cara a cara (32:30). Propuesta por defecto: un hombre sin alas,
+    halo ni luz propia (como la n.º 21) y con el rostro siempre oculto (de espaldas, en perfil perdido o en la sombra),
+    para no dar rostro a Dios (n.º 1) ni decidir quién es. Oseas 12:3-4 lo llama ángel (Fuente externa; el libro aún no
+    está en `datos/biblia.js`). Alternativas: mostrarle la cara como a los varones de Mamre, o no darle figura (solo la
+    lucha de Jacob en la oscuridad).
+63. **Los ángeles de Mahanaim** (Gn 32:1-2): sin hoja. El texto dice que salen al encuentro de Jacob y que él «los
+    vió», sin describirlos. Propuesta por defecto, como la n.º 18: sin figura; la toma muestra a Jacob y su campamento
+    (`escenarios/campamento-mahanaim`) mirando el camino. Alternativa: varones sin alas como los de Mamre.
+64. **Gn 34 en los perfiles** (Dina, Siquem, la circuncisión y la venganza): propuesta por defecto, como la n.º 25,
+    nada gráfico en ningún perfil. Gn 34:2 no se muestra; la circuncisión (34:24) tampoco (n.º 24); el ataque, las
+    muertes y el saqueo (34:25-29), con puertas, gritos y ganado sacado por la puerta, sin cuerpos, sangre ni fuego (el
+    texto no dice que quemaran la ciudad). La narración se lee entera. Dina se dibuja de unos diecisiete años, nunca
+    niña: el texto la llama moza y joven (34:3) y su edad solo tiene topes por cálculo (como mucho trece años al salir
+    de Padan-aram, y unos once años de ahí a Gn 37:2).
+65. **Los cuatrocientos hombres de Esaú sin armas** (`personajes/hombres-esau`): el texto no dice que vengan armados ni
+    a qué vienen; el temor es de Jacob (32:7, 32:11). Propuesta por defecto: con cayados de caminante y gesto neutro.
+    Alternativa: una escolta armada, que sería interpretación.
+66. **Simeón y Leví con hoja propia y los demás hijos de Jacob en Gn 34** (`personajes/simeon-levi`): la hoja de los
+    hermanos fija a los diez de Gn 42–45 (40 a 46 años); en Gn 34 son mozos, actúan solos, se les nombra y hablan
+    (34:31). La voz de Simeon_1 y Levi_1 queda en `simeon-levi`; en Gn 42 chocará con la hoja `hermanos` como la n.º 27.
+    Los demás hijos de Jacob de Gn 34 (34:7, 34:13-17, 34:27) no tienen hoja de mozos: o una hoja de grupo de los hijos
+    jóvenes (que también pediría Gn 37), o tomas donde solo se distingan Simeón y Leví. Quién dice 34:14-17 («los hijos
+    de Jacob»), también pendiente.
+67. **El título de piedra de Gn 35:14**: el catálogo de juego lo pone en `piedra-betel` junto con la piedra de Gn 28:18,
+    pero el texto no dice que sea la misma piedra («erigió un título en el lugar donde había hablado con él»). Propuesta
+    por defecto: usar la hoja `piedra-betel` (del redactor de Gn 28) también en gn-74, con la libación y el aceite en la
+    toma; alternativa: una hoja aparte para el título nuevo. Tampoco se ha hecho hoja de Betel en Gn 35: se espera la de
+    `escenarios/betel` del mismo redactor.
+68. **Objetos y escenarios de Gn 32–36 que no están en el catálogo de juego** (como las n.º 16, 30 y 36): el presente de
+    Jacob (`objetos/presente-esau`), los dioses ajenos (`objetos/dioses-ajenos`), los altares de Jacob
+    (`objetos/altares-jacob`), el título de Raquel (`objetos/titulo-raquel`; el catálogo lo deja en `efrata`), y los
+    escenarios `campamento-mahanaim`, `sucot`, `puerta-siquem` (el catálogo junta Siquem en `siquem`), `alon-bacut` (el
+    catálogo lo junta en `betel`) y `monte-seir`. Los que sí están usan su id (`peniel`, `siquem`, `efrata`). Débora
+    (Gn 35:8) no tiene hoja: el texto solo da su muerte y su entierro.
+69. **Voces sin persona en Gn 32–35**: el varón de Peniel (32:26-29), los mensajeros de Jacob (32:6) y la partera
+    (35:17) no son personas de `datos/biblia.js`; mismo caso que la n.º 22: voces propias o leídas por el narrador.
+70. **Parto y muerte de Raquel, y Rubén con Bilha** (Gn 35:16-19, 35:22): propuesta por defecto, nada gráfico en ningún
+    perfil; el parto, con rostros, manos y mantos junto al camino, sin sangre, y el niño ya envuelto; 35:22 no se muestra
+    (narración sobre el campamento junto a Migdaleder). La narración se lee entera.
+71. **Videos de las genealogías de Gn 36** (gn-76 a gn-78): nadie de esas listas lleva hoja (regla del juego). Propuesta
+    por defecto: narración sobre `escenarios/monte-seir`, con la marcha de Esaú, su casa y sus ganados (36:6-7) en gn-76
+    y sin rostros para los duques y reyes. Ropa de Edom y de Seir: sin referencia comprobada; los cuatrocientos hombres
+    siguen el supuesto de la n.º 17.
+72. **Forma de los dioses ajenos** (Gn 35:2-4, `objetos/dioses-ajenos`): el texto no los describe ni dice de quién eran.
+    Propuesta por defecto: figurillas toscas de barro y bronce sin rasgos de ninguna religión conocida, y aretes lisos.
+    Si existe la hoja `idolos-laban` (Gn 31:19), puede mezclarse alguna, sin presentarlo como dato.
 
 ## Pendiente del proyecto (fuera de los guiones)
 

@@ -1,0 +1,54 @@
+{
+  "id": "titulo-raquel",
+  "nombre": "El título de la sepultura de Raquel",
+  "pasajes": [
+    "gn-75"
+  ],
+  "element": {
+    "nombre": "TITULO_RAQUEL",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego, que lo deja dentro del escenario «efrata» (decisión pendiente n.º 68 de guiones/LEEME.md). Va en hoja aparte para que el camino (escenarios/efrata) pueda verse antes de la muerte de Raquel sin la piedra, que no aparece hasta Gn 35:20. La hoja muestra la piedra sobre un montón bajo de piedras, sin cuerpo, huesos ni inscripción. No se dibuja ningún edificio ni cúpula: el texto solo da el título.",
+  "texto": [
+    {
+      "dato": "Raquel muere y es sepultada en el camino de Efrata, que es Belén",
+      "certeza": "texto",
+      "ref": "Gn 35:19",
+      "cita": "Así murió Rachêl, y fué sepultada en el camino de Ephrata, la cual es Beth-lehem"
+    },
+    {
+      "dato": "Jacob pone un título sobre su sepultura, que sigue allí «hasta hoy»",
+      "certeza": "texto",
+      "ref": "Gn 35:20",
+      "cita": "puso Jacob un título sobre su sepultura: este es el título de la sepultura de Rachêl hasta hoy"
+    },
+    {
+      "dato": "El título es una piedra alzada",
+      "certeza": "inferido",
+      "nota": "Gn 35:20 no dice de qué es el título; la RV1909 usa la misma palabra para la piedra que Jacob alza en Betel y para el «título de piedra» de Gn 35:14.",
+      "base": [
+        {
+          "ref": "Gn 28:18",
+          "cita": "tomó la piedra que había puesto de cabecera, y alzóla por título"
+        },
+        {
+          "ref": "Gn 35:14",
+          "cita": "un título de piedra"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Una sola piedra alargada y tosca, sin labrar, algo más alta que un hombre, clavada de pie en un montón bajo y alargado de piedras de campo, al borde de un camino de tierra",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da la forma, el tamaño ni el color. Más alta que un hombre para que se vea desde el camino «hasta hoy» (Gn 35:20); el montón marca la sepultura sin mostrar nada de ella. Distinta de la piedra de Betel (objetos/piedra-betel, del redactor de Gn 28) por estar sobre una tumba."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same grave marker twice: on the left a front view, and on the right a three-quarter view. A single long, rough, uncut standing stone of grey-brown limestone, a little taller than a man, is set upright at one end of a low, long mound of piled field stones, beside a strip of dirt road with a few dry weeds.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo monumento dos veces: a la izquierda, de frente; a la derecha, en tres cuartos. Una sola piedra larga, tosca y sin labrar, de caliza gris parda, algo más alta que un hombre, clavada de pie en un extremo de un montón bajo y alargado de piedras de campo, junto a una franja de camino de tierra con unas hierbas secas.",
+    "negativo_en": "Do not carve, square or polish the stone, and do not add inscriptions, symbols, a dome, a building, a fence or flowers. Do not paint a body, bones, a shroud, an open grave, candles, light or any people. Do not paint a town or a wide landscape, and keep the background plain.",
+    "negativo_es": "Piedra sin labrar, escuadrar ni pulir; sin inscripciones, símbolos, cúpula, edificio, cerca ni flores. Sin cuerpo, huesos, mortaja, fosa abierta, velas, luz ni personas. Sin ciudad ni paisaje amplio; fondo liso."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "principe-siquem",
+  "nombre": "Siquem, hijo de Hamor",
+  "personas": [
+    "Shechem_1"
+  ],
+  "pasajes": [
+    "gn-72",
+    "gn-73"
+  ],
+  "element": {
+    "nombre": "SIQUEM_HIJO_HAMOR",
+    "tipo": "personaje"
+  },
+  "nota": "El id evita confundirlo con el escenario «siquem» (la ciudad); el texto no dice si la ciudad lleva su nombre por él. Gn 34 en los perfiles (decisión pendiente n.º 64 de guiones/LEEME.md): lo de Gn 34:2 no se muestra, y su muerte (Gn 34:26) tampoco, sin cuerpos ni sangre en ningún perfil. No se le dibuja como villano de rasgos marcados: el texto juzga lo que hace (Gn 34:7), y lo describe también enamorado y honrado en la casa de su padre (Gn 34:3, 34:19). Jacob compra el campo «de mano de los hijos de Hamor» (Gn 33:19): si el guion de gn-71 los muestra, Siquem puede ser uno de ellos, pero el texto no lo dice.",
+  "edades": [
+    {
+      "dato": "El texto lo llama «el mozo»",
+      "certeza": "texto",
+      "ref": "Gn 34:19",
+      "cita": "no dilató el mozo hacer aquello"
+    },
+    {
+      "dato": "Edad visual: un hombre joven de unos veinticinco años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Mozo (Gn 34:19), en edad de casarse (Gn 34:4) e hijo de un padre que todavía gobierna (Gn 34:20)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hijo de Hamor el heveo",
+      "certeza": "texto",
+      "ref": "Gn 34:2",
+      "cita": "Sichêm, hijo de Hamor Heveo, príncipe de aquella tierra"
+    },
+    {
+      "rasgo": "No queda claro si «príncipe de aquella tierra» se dice de Hamor o de Siquem",
+      "certeza": "inferido",
+      "nota": "La frase de Gn 34:2 puede leerse de los dos. En los dos casos es de la familia que manda en la ciudad: Hamor y Siquem hablan juntos a los varones en la puerta y los varones les obedecen (Gn 34:20, 34:24). La hoja no lo resuelve: los dos visten como principales.",
+      "base": [
+        {
+          "ref": "Gn 34:24",
+          "cita": "obedecieron á Hamor y á Sichêm su hijo"
+        }
+      ]
+    },
+    {
+      "rasgo": "Se enamora de Dina",
+      "certeza": "texto",
+      "ref": "Gn 34:3",
+      "cita": "su alma se apegó á Dina la hija de Lea, y enamoróse de la moza"
+    },
+    {
+      "rasgo": "Pide a su padre que se la tome por mujer",
+      "certeza": "texto",
+      "ref": "Gn 34:4",
+      "cita": "Tómame por mujer esta moza"
+    },
+    {
+      "rasgo": "Ofrece la dote y los dones que le pidan",
+      "certeza": "texto",
+      "ref": "Gn 34:12",
+      "cita": "Aumentad á cargo mío mucho dote y dones"
+    },
+    {
+      "rasgo": "Es el más honrado de la casa de su padre",
+      "certeza": "texto",
+      "ref": "Gn 34:19",
+      "cita": "él era el más honrado de toda la casa de su padre"
+    },
+    {
+      "rasgo": "Habla con su padre a los varones en la puerta de la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 34:20",
+      "cita": "Hamor y Sichêm su hijo vinieron á la puerta de su ciudad"
+    },
+    {
+      "rasgo": "Muere con su padre a filo de espada (no se muestra)",
+      "certeza": "texto",
+      "ref": "Gn 34:26",
+      "cita": "á Hamor y á Sichêm su hijo los mataron á filo de espada"
+    },
+    {
+      "rasgo": "Piel morena oliva, ojos oscuros, rostro de rasgos finos; pelo oscuro abundante y natural hasta la nuca; barba oscura corta y cuidada, recortada en punta; porte seguro de hijo de casa principal",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El porte sale de Gn 34:19; la barba en punta sigue a los hombres del mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta la rodilla, de dibujos ricos y variados en rojo oscuro, azul y blanco, sujeta sobre el hombro izquierdo; faja ancha de tela ocre; sandalias de cuero con correas; cabeza descubierta, sin nada atado; sin corona ni joyas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Como los jefes que encabezan el cortejo de Beni Hasan (A2), con tejido más rico que el de los varones de su ciudad y sin corona, como los reyes de Canaán de la n.º 17. Sin joyas: el texto no le da ninguna.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre joven, de unos veinticinco años, voz clara y segura, español neutro. Gn 34:4: pide a su padre con ansia. Gn 34:11-12: generoso y urgente, sin regatear. Gn 34:21-23 lo dice con su padre (decide el guion si a dos voces o solo Hamor). Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a young man of a leading family of a Canaanite town in the ancient Near East, about twenty-five years old, with olive-brown skin, dark eyes, fine features, thick natural dark hair that reaches the nape of his neck and a short, well-kept dark beard trimmed to a point. His head is bare, with nothing tied around it. His bearing is confident, like the most honored son of his father's house. He wears a knee-length wool tunic woven with rich, varied patterns in dark red, blue and white in the style of the leaders of the western Asian visitors painted in Middle Kingdom Egyptian tombs, fastened over the left shoulder, a broad ochre cloth sash and leather sandals with straps. His hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre joven de una familia principal de una ciudad cananea del antiguo Oriente Próximo, de unos veinticinco años; piel morena oliva, ojos oscuros, rasgos finos, pelo oscuro abundante y natural hasta la nuca y barba oscura corta y cuidada, recortada en punta. Cabeza descubierta, sin nada atado. Porte seguro, como el hijo más honrado de la casa de su padre. Túnica de lana hasta la rodilla con dibujos ricos y variados en rojo oscuro, azul y blanco, al modo de los jefes asiáticos de las tumbas egipcias del Reino Medio, sujeta sobre el hombro izquierdo; faja ancha de tela ocre y sandalias de cuero con correas. Manos vacías.",
+    "negativo_en": "Do not make him look like a cartoon villain, sneering or menacing. Do not give him a crown, a diadem, a turban, a headband, earrings, bracelets, rings or other jewelry, a weapon or Egyptian white linen. Do not show blood, wounds or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca un villano de dibujo, burlón ni amenazante. Sin corona, diadema, turbante, cinta en la cabeza, pendientes, brazaletes, anillos ni otras joyas, armas ni lino blanco egipcio. Sin sangre, heridas ni otras personas; fondo liso."
+  }
+}
