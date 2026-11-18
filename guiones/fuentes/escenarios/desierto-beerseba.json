@@ -1,0 +1,71 @@
+{
+  "id": "desierto-beerseba",
+  "nombre": "El desierto de Beerseba (Gn 21:14-21)",
+  "pasajes": [
+    "gn-43"
+  ],
+  "element": {
+    "nombre": "DESIERTO_BEERSEBA",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "No está en el catálogo de juego, que junta Beerseba entera en «beerseba» (decisión pendiente n.º 36 de guiones/LEEME.md). Agar anda errante por él (Gn 21:14), deja al muchacho debajo de un árbol (Gn 21:15) y se sienta enfrente, a un tiro de arco (Gn 21:16). La fuente de Gn 21:19 está en la hoja, medio escondida al pie de unas rocas: Agar la ve solo cuando Dios le abre los ojos, así que las tomas anteriores a Gn 21:19 la dejan fuera de cuadro o en sombra. El odre tiene hoja propia (objetos/odre-agua). El ángel de Dios llama «desde el cielo» y no tiene figura (decisiones n.º 1 y n.º 18). El desierto de Parán (Gn 21:21) sale en un versículo y se resuelve en su toma. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Agar anda errante por el desierto de Beer-seba",
+      "certeza": "texto",
+      "ref": "Gn 21:14",
+      "cita": "ella partió, y andaba errante por el desierto de Beer-seba"
+    },
+    {
+      "dato": "Se acaba el agua y deja al muchacho debajo de un árbol",
+      "certeza": "texto",
+      "ref": "Gn 21:15",
+      "cita": "faltó el agua del odre, y echó al muchacho debajo de un árbol"
+    },
+    {
+      "dato": "Se sienta enfrente, a un tiro de arco",
+      "certeza": "texto",
+      "ref": "Gn 21:16",
+      "cita": "sentóse enfrente, alejándose como un tiro de arco"
+    },
+    {
+      "dato": "El ángel de Dios la llama desde el cielo",
+      "certeza": "texto",
+      "ref": "Gn 21:17",
+      "cita": "el ángel de Dios llamó á Agar desde el cielo"
+    },
+    {
+      "dato": "Dios le abre los ojos y ve una fuente de agua",
+      "certeza": "texto",
+      "ref": "Gn 21:19",
+      "cita": "abrió Dios sus ojos, y vió una fuente de agua; y fué, y llenó el odre de agua"
+    },
+    {
+      "dato": "No ve agua hasta Gn 21:19",
+      "certeza": "inferido",
+      "nota": "Se le acaba el agua (Gn 21:15) y no ve la fuente hasta que Dios le abre los ojos (Gn 21:19): las tomas de antes no la muestran a la vista.",
+      "base": [
+        {
+          "ref": "Gn 21:15",
+          "cita": "faltó el agua del odre"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Colinas bajas, pardas y pedregosas, con matas secas dispersas; en el centro, un árbol pequeño, ralo y torcido que apenas da sombra; enfrente, a cierta distancia, unas rocas bajas; a un lado, al pie de unas rocas y medio escondido por ellas, un hilo de agua que forma una poza pequeña; sol alto y calor",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice desierto, un árbol y una fuente (Gn 21:14-19). El árbol se hace pequeño y pobre para que se lea la sed; la fuente, escondida, para que se entienda que no la veía."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a dry, stony wilderness of low brown hills in the far south of Canaan in the ancient Near East, under a high, hot sun, with no people and no animals in it. Sparse, dry shrubs dot the ground. In the middle stands a single small, thin and crooked desert tree that gives very little shade. Some distance across from it there is a low outcrop of rocks. Off to one side, at the foot of a cluster of rocks and half hidden by them, a small trickle of water feeds a little pool.",
+    "prompt_es": "Una sola vista general de un desierto seco y pedregoso de colinas bajas y pardas en el extremo sur de Canaán, en el antiguo Oriente Próximo, bajo un sol alto y caluroso, sin personas ni animales. Matas secas y escasas salpican el suelo. En el centro, un solo árbol de desierto pequeño, ralo y torcido que apenas da sombra. A cierta distancia, enfrente, un afloramiento bajo de rocas. A un lado, al pie de un grupo de rocas y medio escondido por ellas, un hilo de agua que llena una poza pequeña.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not make it a sea of sand dunes, an oasis with palm trees or a green place. Do not paint people, animals, tents, a water skin, bones or a town, and do not add rays of light or any figure in the sky.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Que no sea un mar de dunas, un oasis con palmeras ni un lugar verde. Sin personas, animales, tiendas, odre, huesos ni ciudad; sin haces de luz ni figuras en el cielo."
+  }
+}

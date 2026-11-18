@@ -1,0 +1,40 @@
+# Pozo y fuente de la ciudad de Nacor (Gn 24) (escenario)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `POZO_NACOR` (lugar)
+- **Pasajes**: gn-48, gn-49, gn-50
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 36 de guiones/LEEME.md); el catálogo tiene «padan-aram» para la casa de Labán de Gn 28–31. El texto lo llama «pozo de agua» (Gn 24:11, 24:20) y «fuente» (Gn 24:13, 24:16, 24:29-30, 24:42-45): la hoja muestra un solo lugar de agua, abajo, al que se baja, con una pila arriba. El cántaro (objetos/cantaro-rebeca) y los camellos (objetos/camellos-siervo) tienen hoja propia y entran en sus tomas. La ciudad se ve al fondo: el texto no la describe (supuesto de época, n.º 34). En gn-50 vuelve cuando Labán corre a la fuente (Gn 24:29-30) y en el relato del criado (Gn 24:42-46), si el guion lo muestra.
+
+## Lo que dice el texto
+
+- **Texto**: El criado llega a la ciudad de Nacor, en Mesopotamia — Gn 24:10: «llegó á Mesopotamia, á la ciudad de Nachôr»
+- **Texto**: El pozo está fuera de la ciudad, y allí hace arrodillar a los camellos — Gn 24:11: «hizo arrodillar los camellos fuera de la ciudad, junto á un pozo de agua»
+- **Texto**: Es la tarde, la hora en que las mozas salen por agua — Gn 24:11: «á la hora de la tarde, á la hora en que salen las mozas por agua»
+- **Texto**: El criado lo llama fuente; las hijas de la ciudad salen a ella — Gn 24:13: «He aquí yo estoy junto á la fuente de agua, y las hijas de los varones de esta ciudad salen por agua»
+- **Texto**: Rebeca baja a la fuente y llena su cántaro — Gn 24:16: «descendió á la fuente, y llenó su cántaro, y se volvía»
+- **Texto**: Hay una pila donde Rebeca vacía el cántaro para los camellos, y vuelve al pozo — Gn 24:20: «vació su cántaro en la pila, y corrió otra vez al pozo para sacar agua»
+- **Texto**: Labán corre afuera, a la fuente — Gn 24:29: «corrió afuera al hombre, á la fuente»
+- **Texto**: Halla al criado junto a los camellos, a la fuente — Gn 24:30: «he aquí que estaba junto á los camellos á la fuente»
+- **Inferido**: Para llegar al agua hay que bajar — Rebeca «descendió á la fuente» (Gn 24:16; lo repite el criado en Gn 24:45). Si se baja por escalones, por una rampa o por la ladera no se dice: los escalones son elección del ilustrador. — base: Gn 24:16 «descendió á la fuente»
+- **Inferido**: La pila está apartada del agua, donde beben los camellos — Rebeca vacía el cántaro en la pila y corre otra vez al pozo (Gn 24:20): la pila no está junto al agua, sino arriba, al alcance de los camellos. — base: Gn 24:20 «corrió otra vez al pozo para sacar agua»
+
+## Rasgos
+
+- **Interpretación del ilustrador**: Un hueco abierto en la tierra con escalones de piedra tosca que bajan al agua oscura de un pozo o manantial; arriba, junto al borde, una pila larga y baja de piedra para abrevar; tierra apisonada con piedras sueltas; a poca distancia, la ciudad, con muros de adobe sobre un zócalo de piedra, una puerta sencilla y casas de techo plano; luz cálida y baja de la tarde — Interpretación del ilustrador. Bajar al agua, la pila apartada y la tarde salen del texto (arriba); los escalones, la piedra de la pila y la forma de la ciudad son elección, sin referencia de época comprobada.
+
+## Época visual
+
+- **Supuesto**: Ciudad de adobe del Oriente Próximo antiguo, sin rasgos que fijen una época — Supuesto por defecto (decisión pendiente n.º 34 de guiones/LEEME.md): el texto no fecha el relato ni describe la ciudad, y no hay referencia comprobada de una ciudad de Mesopotamia. Se dibuja con lo mínimo (adobe, techos planos, una puerta) y sin zigurats, palacios ni ladrillo vidriado, que fijarían una época y un lugar.
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/pozo-nacor.png`; luego subirla a Cinema Studio como Element `POZO_NACOR`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre).
+
+_Una sola vista general del lugar del agua fuera de una ciudad pequeña amurallada del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. En primer término, un hueco ancho en la tierra con escalones de piedra tosca que bajan a un pozo o manantial con agua oscura al fondo. Junto al hueco, a ras de suelo, una pila larga y baja de piedra para abrevar, y alrededor tierra apisonada con piedras sueltas. A poca distancia, detrás, los muros de adobe de la ciudad sobre un zócalo de piedra tosca, con una puerta sencilla y casas de techo plano que asoman sobre el muro, todo con luz cálida y baja de la tarde._ Evitar: _Sin paneles ni dos momentos lado a lado. Sin polea, torno, tejadillo sobre el pozo, cubo con cadena ni fuente tallada. Sin zigurats, templos, palacios, torres ni ladrillo vidriado. Sin personas, camellos, cántaros ni otros animales._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make one single establishing view of the water place outside a small walled town in the ancient Near East in the late afternoon, with no people and no animals in it. In the foreground, a wide opening in the ground has rough stone steps leading down to a well-spring with dark water at the bottom. Beside the opening, at ground level, stands a long, low stone trough for watering animals, and the ground around is beaten earth with scattered stones. A short walk behind rise the mud-brick walls of the town on a base of rough stones, with a plain gateway and flat-roofed houses showing above the wall, all in warm, low evening light. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not split the picture into panels or show two moments side by side. Do not add a pulley, a winch, a roof over the well, a bucket on a chain or a carved fountain. Do not paint ziggurats, temples, palaces, towers or glazed bricks. Do not paint people, camels, jars or any other animals.
+```

@@ -279,8 +279,9 @@ registro esté completo; y propone cambios en las fuentes JSON.
     antes no habla). Isaac tiene dos hojas: `isaac-muchacho` (Gn 22, con la voz) e `isaac-adulto` (Gn 24–25, sin voz
     porque ahí no habla); cuando hable de adulto (Gn 26–27) chocará igual. Opciones: llevar la voz a la persona y no a
     la ficha, admitir la misma voz en varias fichas de una persona, o una ficha por persona con varias hojas por edad.
-    Faltan además hojas por edad en gn-52 (Gn 25:9): Ismael solo tiene la de muchacho y allí tiene unos ochenta y
-    nueve años; Isaac, unos setenta y cinco con la hoja de los cuarenta (cálculos en sus fichas).
+    Ismael tiene dos hojas: `ismael` (Gn 17 y 21) e `ismael-mayor` (gn-52, n.º 33), ninguna con voz porque no habla.
+    En gn-52 (Gn 25:9) Isaac tiene unos setenta y cinco años y usa la hoja de los cuarenta con canas añadidas en la
+    toma (cálculo en su ficha); si no basta, hará falta otra hoja.
 28. **Edad visual de Isaac en Gn 22**: propuesta por defecto, un muchacho de unos dieciséis años, nunca un niño
     pequeño. El texto lo llama «muchacho» (Gn 22:5, 22:12) y le hace cargar la leña (Gn 22:6); por cálculo tiene como
     mucho unos treinta y siete años (Gn 23:1 y 17:17). Su edad no consta.
@@ -300,6 +301,31 @@ registro esté completo; y propone cambios en las fuentes JSON.
 32. **Los hijos de Het y la persona Heth_1**: la hoja de grupo `hijos-het` usa la persona Heth_1 (Het, hijo de
     Canaán, Gn 10:15), como el catálogo de juego, para que el grupo pueda hablar en Gn 23:5-6. Confirmarlo, o pasar a
     una voz que no es persona (n.º 13, 20 y 26) o al narrador.
+33. **Ismael anciano** (gn-52, hoja `personajes/ismael-mayor`): propuesta por defecto, el mismo rostro y la misma
+    túnica corta de franjas rojas y blancas de la hoja de muchacho, para que se le reconozca, aparentando unos sesenta y
+    cinco años: por cálculo tiene unos ochenta y nueve (Gn 25:7 y 16:16) y vive hasta los ciento treinta y siete
+    (Gn 25:17), y tiene que verse mayor que Isaac en la misma toma. Alternativa: vestirlo como hombre del desierto de
+    Parán (Gn 21:21), que el texto no describe. No habla, así que no lleva voz.
+34. **Ciudades sin referencia de época** (Sodoma y Zoar, Gerar, la ciudad de los hijos de Het y la de Nacor; escenarios
+    `sodoma`, `casa-lot-puerta`, `casa-lot-sala`, `llanura-zoar`, `gerar`, `puerta-het`, `pozo-nacor`, `casa-betuel`):
+    supuesto por defecto, adobe sobre zócalo de piedra, techos planos, puertas de ciudad entre dos torres bajas con
+    bancos, sin palacios, templos, zigurats ni almenas; la puerta de Het, con más piedra, para que no se confunda con la
+    de Sodoma. `referencias.json` no tiene ninguna referencia comprobada de arquitectura de Canaán ni de Mesopotamia.
+35. **Moriah sin identificar**: la hoja `escenarios/moriah` es un monte pelado, sin ciudad ni templo. 2 Crónicas 3:1
+    llama Moriah al monte donde Salomón edificó el templo, y la tradición los identifica (Fuente externa; el libro aún no
+    está en `datos/biblia.js`), pero Gn 22 no lo dice. Alternativa: que el cierre del video lo mencione como Fuente
+    externa, sin dibujar nada de Jerusalén.
+36. **Escenarios que no están en el catálogo de juego** (como la n.º 16 y la n.º 30): `vista-sodoma`,
+    `casa-lot-puerta`, `casa-lot-sala`, `llanura-zoar`, `cueva-lot`, `desierto-beerseba`, `puerta-het`, `pozo-nacor`,
+    `casa-betuel` y `campo-isaac`. Los que sí están usan su id (`mamre`, `sodoma`, `gerar`, `beerseba`, `moriah`,
+    `macpela`), aunque la hoja muestre una parte del lugar (la puerta de Sodoma, la sala del rey de Gerar). Además, el
+    catálogo pone Gn 24:62-63 en `pozo-viviente`, pero el texto no dice que el campo donde Isaac sale a orar esté junto
+    al pozo: `campo-isaac` no lo dibuja.
+37. **Paisajes sin la lámina 1 desde el principio**: `mamre`, `vista-sodoma`, `llanura-zoar`, `beerseba`,
+    `desierto-beerseba`, `moriah`, `macpela` y `campo-isaac` llevan `sin_laminas: ["patron-1-paisaje.png"]` antes de
+    generarse, porque su paisaje de colinas secas es casi el de la lámina 1 y la creación ya copió su composición. Las
+    fichas generadas dicen «copiaba su composición», que es la frase de `guiones.py` para el caso de la creación: aquí
+    es preventivo. Alternativa: generarlos con las tres láminas y apartarla solo si copian.
 
 ## Pendiente del proyecto (fuera de los guiones)
 

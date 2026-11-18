@@ -1,0 +1,45 @@
+{
+  "id": "cueva-lot",
+  "nombre": "La cueva de Lot en el monte (Gn 19:30-38)",
+  "pasajes": [
+    "gn-40"
+  ],
+  "element": {
+    "nombre": "CUEVA_LOT",
+    "tipo": "lugar"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 36 de guiones/LEEME.md). El texto solo dice que es una cueva en el monte, adonde Lot sube desde Zoar con sus dos hijas. Lo que pasa en ella (Gn 19:32-35) no se muestra en ningún perfil (decisión pendiente n.º 25): en las tomas, el vino y Lot dormido, con fundido. La hoja es el lugar vacío, de día, sin camas ni nada que lo sugiera; la noche de Gn 19:33-35 la pone cada toma. Los nacimientos (Gn 19:36-38) se cuentan sin hoja propia.",
+  "texto": [
+    {
+      "dato": "Lot sube de Zoar y se asienta en el monte con sus dos hijas",
+      "certeza": "texto",
+      "ref": "Gn 19:30",
+      "cita": "Lot subió de Zoar, y asentó en el monte, y sus dos hijas con él"
+    },
+    {
+      "dato": "Por miedo a quedarse en Zoar, se aloja en una cueva",
+      "certeza": "texto",
+      "ref": "Gn 19:30",
+      "cita": "tuvo miedo de quedar en Zoar, y se alojó en una cueva él y sus dos hijas"
+    },
+    {
+      "dato": "Esa noche las hijas dan a beber vino a su padre",
+      "certeza": "texto",
+      "ref": "Gn 19:33",
+      "cita": "dieron á beber vino á su padre aquella noche"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Cueva baja y honda en roca parda, con suelo de tierra y piedras sueltas; junto a la boca, un poco de leña, unas vasijas sencillas de barro y una manta de lana enrollada; por la boca, ancha e irregular, se ven montes escarpados y pelados y el cielo; la luz del día entra por la boca y se apaga hacia el fondo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe la cueva. Las vasijas (el vino de Gn 19:33-35), la leña y la manta son lo mínimo para que se lea que viven allí."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view from inside a low, deep cave in brown rock high on a bare mountain in the ancient Near East, by day, with no people in it. The floor is earth and loose stones. Near the mouth of the cave lie a small pile of firewood, a few plain clay jars and a rolled-up wool blanket. Through the wide, uneven mouth of the cave can be seen steep, bare mountains and the sky, and the daylight coming in fades into darkness toward the back of the cave.",
+    "prompt_es": "Una sola vista general desde dentro de una cueva baja y honda de roca parda, en lo alto de un monte pelado del antiguo Oriente Próximo, de día y sin personas. El suelo es de tierra y piedras sueltas. Junto a la boca de la cueva hay un montoncito de leña, unas pocas vasijas sencillas de barro y una manta de lana enrollada. Por la boca, ancha e irregular, se ven montes escarpados y pelados y el cielo, y la luz del día que entra se apaga hacia el fondo de la cueva.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint beds, people, bodies, bones, skulls, a fire, wine being poured or anything suggestive. Do not paint a town, a plain, smoke or ruins outside the cave.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin camas, personas, cuerpos, huesos, calaveras, hoguera, vino sirviéndose ni nada insinuante. Sin ciudad, llanura, humo ni ruinas fuera de la cueva."
+  }
+}
