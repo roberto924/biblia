@@ -25,6 +25,11 @@ Todo dato dice de dónde sale y su certeza. Se distingue siempre:
 - **Galería del pasaje** (2026-11-18): bajo el título, dos pestañas **Videos | Imágenes** (una a la vez); lo elegido en grande y el resto en miniaturas que pasan al grande al tocarlas. Por defecto, Videos si hay alguno desbloqueado (los narrados propios, `propio: true` en `recursos`, siempre primero), si no Imágenes. Los videos ya no van en el acompañante (allí queda el audio), así que pulsar versículos no los reinicia.
 - El **video narrado** de un pasaje (Higgsfield) es el propio pasaje: se ve en el pasaje en curso, y verlo entero contará como leerlo (desbloquea igual que el tiempo mínimo). Se implementa cuando ese video entre en la app.
 
+## Pantalla de lectura (decisiones del usuario, 2026-11-18)
+- La lectura manda, como el texto en el centro de las Biblias glosadas; lo adicional va al margen. En pantalla muy ancha (≥1800 px), tres columnas: título y galería · libro · acompañante.
+- **Leer = libro abierto**: páginas del alto de la pantalla, dos a la vista (una en estrecho), cabecera con libro y capítulo, número de página, lomo; se pasa con botones, flechas o deslizando. El papel sigue el tema (marfil en claro, carbón en oscuro).
+- **Modo Original**: la foto del folio del Códice de Leningrado junto a su transcripción hebrea y la RV1909, versículo a versículo. Rollos y Códice Vaticano siguen solo como enlace.
+
 ## Juego (decisiones del usuario, 2026-11-11; diseño en `docs/superpowers/specs/2026-11-11-catalogo-juego-design.md`)
 - Se coleccionan **personajes, objetos y escenarios**; fichas con todo lo que se sabe (con certeza y fuente). Las habilidades y poderes son invención del juego, nunca dato bíblico.
 - **Por cada libro que se ingresa**: catálogo (`herramientas/juego/<Libro>.json` → `python -I herramientas/juego.py` → `datos/juego.js`) con genealogías, historias, personajes, objetos y escenarios, más `docs/juego/ideas-<Libro>.md` con minijuegos por historia para que el usuario elija. Al llegar a Apocalipsis se afina el conjunto.

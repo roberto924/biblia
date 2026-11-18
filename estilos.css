@@ -266,15 +266,13 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
 .cony-mini { color: var(--suave); }
 .enlace-arbol { justify-self: center; display: inline-flex; align-items: center; min-height: 44px; font-size: .9rem; font-weight: 500; }
 @media (min-width: 900px) and (max-width: 1099px) { .acompanante { left: var(--lateral); bottom: 0; padding-bottom: env(safe-area-inset-bottom); } }
-/* Pantalla ancha: el texto con su ancho de lectura (44rem, todos sus bloques al mismo borde), el acompañante
-   llena el resto hasta 56rem y el conjunto se centra en el espacio libre. El texto tiene prioridad: su pista
-   crece primero y el acompañante (fr) se queda con lo que sobra, nunca menos de 19rem. */
+/* Pantalla ancha: la lectura manda (como el texto en el centro de las Biblias glosadas) y el acompañante va al
+   margen, 19–24rem. El conjunto se centra en el espacio libre. */
 @media (min-width: 1100px) {
-  main:has(.pasaje-vista) { --ancho: calc(44rem + 3rem + 56rem); }
-  .pasaje-vista { display: grid; grid-template-columns: minmax(0, 44rem) minmax(19rem, 1fr); gap: clamp(2rem, 3vw, 3rem); align-items: start; }
-  /* Comparar pone varios textos lado a lado: ahí el texto se queda con el sitio y el acompañante con 19–28rem. */
-  main:has(.pasaje-vista .comparar) { --ancho: 124rem; }
-  .pasaje-vista:has(.comparar) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
+  main:has(.pasaje-vista) { --ancho: 124rem; }
+  .pasaje-vista { display: grid; grid-template-columns: minmax(0, 1fr) clamp(19rem, 25vw - 8rem, 24rem); gap: clamp(2rem, 3vw, 3rem); align-items: start; }
+  /* Comparar y Original ponen varias columnas lado a lado: algo más de margen para el acompañante. */
+  .pasaje-vista:has(.comparar, .original) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
   .pv-portada > :not(.cab-pasaje), .pv-texto > * { max-width: none; }
   .acompanante, .acompanante.abierta { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); border: 1px solid var(--linea); border-radius: var(--r-panel); box-shadow: var(--sombra); z-index: 1; container: acomp / inline-size; }
   .acomp-cab::before { display: none; }
@@ -286,29 +284,94 @@ progress::-moz-progress-bar { background: var(--c-texto); border-radius: 1rem; }
     .acomp-columnas > * { break-inside: avoid; }
   }
 }
-/* Pantalla muy ancha: tres columnas. 1) título y galería, 2) el texto con su ancho de lectura, 3) el acompañante
-   (referencias y lo adicional). La portada y el acompañante se quedan a la vista mientras se lee. El texto sigue
-   con prioridad: su pista crece primero y el acompañante se queda con lo que sobra (19–56rem). */
+/* Pantalla muy ancha: tres columnas. 1) título y galería, 2) la lectura, 3) el acompañante (referencias y lo
+   adicional). Portada y acompañante se quedan a la vista mientras se lee. La lectura crece primero (hasta 84rem:
+   dos páginas de línea cómoda); el acompañante se queda con lo que sobra, nunca menos de 19rem. Sin tope total. */
 @media (min-width: 1800px) {
-  main:has(.pasaje-vista) { --portada: 24rem; --ancho: calc(var(--portada) + 44rem + 56rem + 6rem); }
-  .pasaje-vista { gap: 3rem; grid-template-columns: minmax(0, calc(var(--portada) + 3rem + 44rem)) minmax(19rem, 1fr); }
-  .lectura { display: grid; grid-template-columns: var(--portada) minmax(0, 44rem); gap: 3rem; align-items: start; }
+  main:has(.pasaje-vista) { --portada: 18rem; --ancho: 400rem; }
+  .pasaje-vista { gap: 3rem; grid-template-columns: minmax(0, calc(var(--portada) + 3rem + 84rem)) minmax(19rem, 1fr); }
+  .lectura { display: grid; grid-template-columns: var(--portada) minmax(0, 84rem); gap: 3rem; align-items: start; }
   .pv-portada { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow-y: auto; scrollbar-width: thin; padding: 3px; margin: -3px; }
   .pv-portada .medios-pasaje { margin-top: 1.5rem; }
+  .pv-portada h1 { font-size: clamp(1.7rem, 1rem + 1vw, 2.4rem); }
   .pv-texto > .herr-pasaje:first-child { margin-top: 0; }
-  main:has(.pasaje-vista .comparar) { --ancho: 150rem; }
-  .pasaje-vista:has(.comparar) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
-  .pasaje-vista:has(.comparar) .lectura { grid-template-columns: var(--portada) minmax(0, 1fr); }
+  .pasaje-vista:has(.comparar, .original) { grid-template-columns: minmax(0, 1fr) minmax(19rem, 28rem); }
+  .pasaje-vista:has(.comparar, .original) .lectura { grid-template-columns: var(--portada) minmax(0, 1fr); }
 }
-/* Pantalla enorme: sin tope; el texto conserva su ancho de lectura y el acompañante se queda con todo lo demás. */
 @media (min-width: 2200px) {
-  main:has(.pasaje-vista) { --portada: 28rem; }
-  main:has(.pasaje-vista), main:has(.pasaje-vista .comparar) { --ancho: 400rem; }
+  main:has(.pasaje-vista) { --portada: 22rem; }
   @container acomp (min-width: 66rem) { .acomp-columnas { columns: 3; } }
 }
-@media (min-width: 2800px) { main:has(.pasaje-vista) { --portada: 32rem; } }
+@media (min-width: 2800px) { main:has(.pasaje-vista) { --portada: 26rem; } }
 @media (max-width: 1099px) { .pasaje-vista ~ *, main:has(.pasaje-vista) { padding-bottom: calc(var(--nav-h) + var(--asa-h) + 2rem + env(safe-area-inset-bottom)); } }
 @media (min-width: 900px) and (max-width: 1099px) { main:has(.pasaje-vista) { padding-bottom: calc(var(--asa-h) + 2.5rem); } }
+
+/* ---------- Leer: libro abierto ---------- */
+/* Como una Biblia impresa (Gutenberg: dos columnas; Leningrado: tres): líneas cortas, cabecera con libro y capítulo,
+   número de página y lomo al centro. Cada página mide lo que cabe en pantalla; se pasa con botones, flechas o
+   deslizando. El papel sigue el tema: marfil en claro, carbón en oscuro. */
+:root { --pagina: #fbf8ef; --pagina-borde: #ddd4bd; --lomo: rgb(92 70 30 / .2); --alto-pag: clamp(18rem, calc(100dvh - 15rem), 60rem); }
+@media (prefers-color-scheme: dark) { :root { --pagina: #1b2033; --pagina-borde: #313a52; --lomo: rgb(0 0 0 / .55); } }
+@media (max-width: 899px) { :root { --alto-pag: clamp(16rem, calc(100dvh - var(--nav-h) - var(--asa-h) - 9rem), 44rem); } }
+.libro { container: libro / inline-size; margin: 1.25rem 0 1.5rem; }
+.libro-pliego { position: relative; padding: 2.7rem 1.4rem 2.5rem; background: var(--pagina); border: 1px solid var(--pagina-borde); border-radius: .4rem;
+  box-shadow: 0 2px 0 -1px var(--pagina), 0 3px 0 -1px var(--pagina-borde), 0 5px 0 -2px var(--pagina), 0 6px 0 -2px var(--pagina-borde), var(--sombra); }
+.libro-recorte { overflow: clip; touch-action: pan-y; }
+.biblia.libro-texto { max-width: none; margin: 0; height: var(--alto-pag); columns: 1; column-gap: 4rem; column-fill: auto; orphans: 2; widows: 2;
+  transition: transform .4s cubic-bezier(.2, .7, .3, 1); }
+.libro-texto.sin-anim { transition: none; }
+.libro-texto.equilibrado { column-fill: balance; height: auto; min-height: 10rem; }
+.libro-texto .cap-marca { break-after: avoid; }
+.libro-texto .nb-barra { break-inside: avoid; text-align: left; }
+.libro-fin { display: inline-block; width: 0; height: 1px; }
+.libro-cabeza, .libro-pie { position: absolute; left: 1.4rem; right: 1.4rem; display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 4rem; pointer-events: none; }
+.libro-cabeza { top: .85rem; font-family: var(--serif); font-variant-caps: all-small-caps; letter-spacing: .12em; font-size: 1rem; font-weight: 600; color: var(--rubrica); }
+.libro-cabeza span { padding-bottom: .2rem; border-bottom: 1px solid color-mix(in srgb, var(--rubrica) 28%, transparent); min-height: 1.4rem; }
+.libro-pie { bottom: .75rem; font-family: var(--serif); font-size: .85rem; color: var(--suave); text-align: center; font-variant-numeric: oldstyle-nums; }
+.libro-cabeza span:nth-child(2), .libro-pie span:nth-child(2) { display: none; }
+.libro-nav { display: flex; align-items: center; justify-content: center; gap: .75rem; margin-top: 1rem; }
+.libro-nav .boton:disabled { opacity: .45; cursor: default; filter: none; }
+.libro-pos { color: var(--suave); font-size: .9rem; min-width: 9.5rem; text-align: center; font-variant-numeric: tabular-nums; }
+.libro.una-pagina .libro-nav { justify-content: space-between; }
+@container libro (min-width: 46rem) {
+  .libro-pliego { padding-inline: 2.6rem; background: linear-gradient(to right, transparent calc(50% - 3rem), var(--lomo) 50%, transparent calc(50% + 3rem)), var(--pagina); }
+  .biblia.libro-texto { columns: 2; column-gap: 5.2rem; }
+  .libro-cabeza, .libro-pie { left: 2.6rem; right: 2.6rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 5.2rem; }
+  .libro-cabeza span:nth-child(2), .libro-pie span:nth-child(2) { display: block; text-align: right; }
+  .libro-pie span:first-child { text-align: left; }
+}
+@container libro (min-width: 30rem) { .biblia.libro-texto { text-align: justify; } } /* justificado como un impreso, salvo en el teléfono */
+@media (prefers-reduced-motion: reduce) { .biblia.libro-texto { transition: none; } }
+
+/* ---------- Original: foto del manuscrito y su transcripción, en paralelo ---------- */
+.original { margin: 1.1rem 0 1.5rem; }
+.org-folios { margin: 0 0 .9rem; flex-wrap: wrap; }
+.org-cuerpo { display: grid; gap: 1.25rem; align-items: start; }
+.org-folio { margin: 0; display: grid; gap: .5rem; }
+.org-folio .rec-marco { display: block; width: 100%; }
+.org-folio .rec-img { display: block; width: 100%; height: auto; }
+.org-texto { border: 1px solid var(--pagina-borde); border-radius: var(--r-tarjeta); background: var(--pagina); overflow: hidden; }
+.org-fila { display: grid; grid-template-columns: 2.6rem minmax(0, 1.15fr) minmax(0, 1fr); border-top: 1px solid var(--linea-suave); transition: background var(--t); }
+.org-texto > .org-fila:first-child { border-top: 0; }
+.org-cabecera { background: var(--hoja2); }
+.org-cabecera .org-celda { display: grid; gap: .1rem; padding-block: .5rem; }
+.org-celda { padding: .65rem .85rem; min-width: 0; }
+.org-he { margin: 0; font-family: "Noto Serif Hebrew", "SBL Hebrew", "Ezra SIL", "Times New Roman", serif; font-size: 1.4rem; line-height: 1.85; text-align: right; }
+.org-rv { margin: 0; font-family: var(--serif); font-size: 1.04rem; line-height: 1.65; }
+.org-num { padding: .7rem 0 0 .35rem; }
+.org-num .vn { font-size: .8rem; vertical-align: baseline; padding: .35rem .45rem; margin: 0; }
+.org-fila.activo, .org-fila:not(.org-cabecera):hover { background: var(--activo); }
+.org-plegada { grid-template-columns: minmax(0, 1fr); }
+.org-fuera { margin: 0; padding: .6rem .85rem; border-top: 1px solid var(--linea-suave); }
+@media (min-width: 1100px) {
+  .org-cuerpo { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
+  .org-folio { position: sticky; top: 1.5rem; }
+}
+@media (max-width: 599px) {
+  .org-fila { grid-template-columns: 2.2rem minmax(0, 1fr); }
+  .org-fila > .org-celda:last-child { grid-column: 2; padding-top: 0; }
+  .org-cabecera > .org-celda:last-child { display: none; }
+}
 
 /* ---------- Árbol ---------- */
 .herr { display: flex; flex-wrap: wrap; gap: .5rem; align-items: flex-end; margin: 1rem 0 .6rem; }

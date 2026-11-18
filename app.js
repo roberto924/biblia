@@ -1227,7 +1227,7 @@ const Nucleo = (() => {
     return foliosRangos(M).map(({ id, f, rs }) => {
       const dentro = vs.filter(v => rs.some(r => v.clave >= r.a && v.clave <= r.b));
       if (!dentro.length) return null;
-      return Object.assign({}, f, { id, nombre: nombreFolio(id), muestra: tramoRefs(dentro[0].ref, dentro[dentro.length - 1].ref), otros: rs.some(r => r.a < a || r.b > b) });
+      return Object.assign({}, f, { id, nombre: nombreFolio(id), muestra: tramoRefs(dentro[0].ref, dentro[dentro.length - 1].ref), otros: rs.some(r => r.a < a || r.b > b), refs: dentro.map(v => v.ref) });
     }).filter(Boolean);
   }
   // Rollos testigo con versículos del pasaje y a qué se enlaza (Leon Levy: solo enlace). El fragmento solo si alguno de los
@@ -1947,7 +1947,9 @@ if (typeof document !== 'undefined') (function () {
   const estado = { trad: store.get('biblia.trad', 'TM'), lineaSolo: false, mujeres: false, hoja: false, pasaje: null, activo: null, foco: null, focoHash: undefined, aviso: '',
     mapaFiltro: '', mapaConf: new Set(['alta', 'media', 'baja']), mapaQ: '', mapaSel: null, abiertos: null, q: '', secAbiertas: new Map(),
     vistaArbol: store.get('biblia.vistaArbol', 'lista') === 'grafico' ? 'grafico' : 'lista', gaZoom: 1, colLibro: '', colSexo: '', colGrupo: 'personajes', colEstado: '',
-    comparar: store.get('biblia.comparar', false) === true, escuchar: false, videoPedido: null, hablarTrasCarga: null };
+    comparar: store.get('biblia.comparar', false) === true, escuchar: false, videoPedido: null, hablarTrasCarga: null,
+    original: store.get('biblia.original', false) === true, folio: null, libroAncla: null };
+  if (estado.comparar && estado.original) estado.original = false; // un solo modo a la vez
 
   const nombre = id => { const p = N.persona(D, id); return p ? (p.nombre || id) : id; };
   // Enlace a un versículo: #leer/Ex/7/7 (los enlaces antiguos #leer/7/7 se leen como Génesis).
@@ -2173,10 +2175,10 @@ if (typeof document !== 'undefined') (function () {
       ${mediosPasajeHTML(p)}</div><div class="pv-texto">
       ${herramientasPasajeHTML()}
       ${dificilesHTML(p)}
-      ${estado.comparar ? compararHTML(p) : `<div class="biblia">${texto || '<p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p>'}</div>
+      ${estado.comparar ? compararHTML(p) : estado.original ? originalHTML(p) : `${texto ? libroHTML(texto) : '<div class="biblia"><p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p></div>'}
       <p class="pista-lectura meta"><span class="marca-apoyo" aria-hidden="true"></span>Pulsa el número de un versículo para ver sus datos. La marca al margen indica vínculos, edades o personas sin nombre.${ORIG.o && N.variantesDe(ORIG.o, vs.map(v => v.ref)).length ? ' «var.» señala una variante entre manuscritos.' : ''}</p>
       ${fuente ? `<p class="meta">Texto: ${esc(fuenteNombre(fuente))}</p>` : ''}`}
-      ${manuscritoHTML(p)}
+      ${estado.original ? '' : manuscritoHTML(p)}
       <section class="nuevo" aria-labelledby="t-nuevo"><h2 id="t-nuevo">Lo nuevo en este pasaje</h2>
         ${nuevos.length ? `<p class="meta">Personas que aparecen por primera vez:</p><ul class="chips">${nuevos.map(id => `<li>${btnPersona(id)}</li>`).join('')}</ul>` : '<p class="vacio-txt">Nadie aparece aquí por primera vez.</p>'}</section>
       <nav class="pasos-pasaje" aria-label="Pasajes">
@@ -2315,12 +2317,13 @@ if (typeof document !== 'undefined') (function () {
   }
   function activar(k) {
     estado.activo = k && k !== estado.activo ? k : null;
-    document.querySelectorAll('.vers').forEach(el => { const on = el.dataset.v === estado.activo; el.classList.toggle('activo', on); el.querySelector('.vn').setAttribute('aria-pressed', on); });
+    document.querySelectorAll('.vers, .org-fila[data-v]').forEach(el => { const on = el.dataset.v === estado.activo; el.classList.toggle('activo', on); const vn = el.querySelector('.vn'); if (vn) vn.setAttribute('aria-pressed', on); });
     const a = $('#acompanante'); if (a) { a.innerHTML = acompHTML(); montarMapas(a); }
     store.set('biblia.pos', { pasaje: estado.pasaje.id, v: estado.activo });
     try { history.replaceState(null, '', `#leer/p/${estado.pasaje.id}${estado.activo ? '/' + estado.activo : ''}`); } catch (e) { /* file:// */ }
     const rv = $('#rep-verso'); if (rv) rv.outerHTML = repVersoHTML();
     const b = ponerBarraNotas(); if (b) b.scrollIntoView({ block: 'nearest' });
+    libroMostrar(b || main.querySelector(`.vers[data-v="${CSS.escape(k || '')}"]`)); // la barra de notas mueve el texto: que siga a la vista
   }
 
   /* ---------- Notas y subrayados del lector (por perfil). Son del usuario: siempre «Tu nota», sin insignias de certeza. ---------- */
@@ -2444,7 +2447,7 @@ if (typeof document !== 'undefined') (function () {
   }
   document.addEventListener('click', e => {
     const t = e.target; if (!t.closest) return;
-    const ab = t.closest('[data-nb-abrir]'); if (ab) { if (estado.activo !== ab.dataset.nbAbrir) activar(ab.dataset.nbAbrir); const b = ponerBarraNotas('.nb-nota, [data-nb-nota]'); if (b) b.scrollIntoView({ block: 'nearest' }); return; }
+    const ab = t.closest('[data-nb-abrir]'); if (ab) { if (estado.activo !== ab.dataset.nbAbrir) activar(ab.dataset.nbAbrir); const b = ponerBarraNotas('.nb-nota, [data-nb-nota]'); if (b) { b.scrollIntoView({ block: 'nearest' }); libroMostrar(b); } return; }
     const barra = t.closest('.nb-barra');
     if (barra) {
       const ref = barra.dataset.nb, prev = N.notaDe(notasGuardadas(), ref);
@@ -2563,9 +2566,9 @@ if (typeof document !== 'undefined') (function () {
   }
   function herramientasPasajeHTML() {
     return `<div class="herr-pasaje">
-      <fieldset class="segmentos modo"><legend class="sr">Modo de lectura</legend>${[['leer', 'Leer'], ['comparar', 'Comparar']].map(([v, t]) => `<label><input type="radio" name="modo-pasaje" value="${v}" ${(estado.comparar ? 'comparar' : 'leer') === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
+      <fieldset class="segmentos modo"><legend class="sr">Modo de lectura</legend>${[['leer', 'Leer', 'El texto como un libro abierto'], ['comparar', 'Comparar', 'Español, hebreo y griego versículo a versículo'], ['original', 'Original', 'La foto del manuscrito junto a su transcripción']].map(([v, t, ti]) => `<label title="${ti}"><input type="radio" name="modo-pasaje" value="${v}" ${(estado.comparar ? 'comparar' : estado.original ? 'original' : 'leer') === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
       <button type="button" class="boton secundario btn-escuchar" data-escuchar aria-expanded="${!!estado.escuchar}" aria-controls="reproductor"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5M16 5a7 7 0 010 10"/></svg>Escuchar</button>
-      ${EXPL() && !estado.comparar ? `<label class="chip-check expl-interruptor" title="Subraya con un punteado las palabras, medidas y costumbres que tienen explicación"><input type="checkbox" name="explicaciones" ${explOn() ? 'checked' : ''}><span>Explicaciones</span></label>` : ''}
+      ${EXPL() && !estado.comparar && !estado.original ? `<label class="chip-check expl-interruptor" title="Subraya con un punteado las palabras, medidas y costumbres que tienen explicación"><input type="checkbox" name="explicaciones" ${explOn() ? 'checked' : ''}><span>Explicaciones</span></label>` : ''}
     </div>${estado.escuchar ? reproductorHTML() : ''}`;
   }
 
@@ -2711,7 +2714,7 @@ if (typeof document !== 'undefined') (function () {
     if (MS.est === 'ok' || MS.est === 'cargando') return;
     MS.est = 'cargando';
     cargarScript('datos/manuscritos.js').then(() => { MS.d = window.BIBLIA_MANUSCRITOS || null; MS.est = MS.d ? 'ok' : 'error'; }, () => { MS.est = 'error'; })
-      .then(() => { pintarManuscrito(); const a = $('#acompanante'); if (a && a.querySelector('.testigos')) { a.innerHTML = acompHTML(); montarMapas(a); } });
+      .then(() => { if (main.querySelector('[data-original]')) rerender(); pintarManuscrito(); const a = $('#acompanante'); if (a && a.querySelector('.testigos')) { a.innerHTML = acompHTML(); montarMapas(a); } });
   }
   function pintarManuscrito() { const c = main.querySelector('[data-manuscrito] .ms-cuerpo'); if (c && estado.pasaje) c.innerHTML = manuscritoCuerpoHTML(estado.pasaje); }
   function abrirManuscrito() {
@@ -2767,6 +2770,124 @@ if (typeof document !== 'undefined') (function () {
     if (vs.length) abrirDetalle(`Variante en ${ref}`, vs.map(varianteHTML).join('') + '<p class="meta">Lecturas lado a lado, cada una con los manuscritos que la traen.</p>');
   }
 
+  /* ---------- Original: la foto del manuscrito junto a su transcripción y la traducción ---------- */
+  // Como las políglotas (lenguas en columnas en la misma página): a un lado el folio del Códice de Leningrado (registro
+  // histórico, Wikimedia Commons), al otro, versículo a versículo, el hebreo que la app transcribe de ese códice y la
+  // Reina-Valera. Solo los versículos del pasaje (la foto trae más texto: es la página tal cual).
+  function originalHTML(p) {
+    const carga = [MS.est !== 'ok' && MS.est !== 'error' ? 'los manuscritos' : '', ORIG.est.o === 'cargando' || ORIG.est.o === '' ? 'el texto hebreo' : ''].filter(Boolean);
+    if (carga.length) return `<section class="original" data-original aria-busy="true"><p class="meta" data-estado-carga>Cargando ${carga.join(' y ')}…</p></section>`;
+    if (MS.est === 'error') return `<section class="original" data-original><p class="vacio-txt">No se pudieron cargar los datos de manuscritos (datos/manuscritos.js). <button type="button" class="enlace-boton" data-ms-reintentar>Reintentar</button></p></section>`;
+    const L = MS.d.leningrado || {}, fs = N.foliosDePasaje(MS.d, D, p).filter(f => f.uso === 'mostrar' && urlSegura(f.miniatura));
+    if (!fs.length) return '<section class="original" data-original><p class="vacio-txt">Los datos no tienen la foto del folio de este pasaje.</p></section>';
+    const f = fs.find(x => x.id === estado.folio) || fs[0];
+    const filas = N.alinearOriginales(D, p, ORIG.o, null), accs = filas.map(x => accionDe(x.ref)), enFolio = new Set(f.refs || []);
+    const fuera = filas.filter(x => !enFolio.has(x.ref));
+    const elegir = fs.length > 1 ? `<fieldset class="segmentos org-folios"><legend class="sr">Folio del manuscrito</legend>${fs.map(x => `<label><input type="radio" name="org-folio" value="${esc(x.id)}" ${x === f ? 'checked' : ''}><span>Folio ${esc(x.nombre)} · ${esc(x.muestra)}</span></label>`).join('')}</fieldset>` : '';
+    const fila = (x, j) => {
+      if (!enFolio.has(x.ref)) return '';
+      const k = `${x.cap}:${x.n}`, a = accs[j];
+      if (a.accion === 'plegar') return `<div class="org-fila org-plegada" data-v="${k}"><div class="org-celda">${plegadoHTML([{ cap: x.cap, n: x.n }], a.marca)}</div></div>`;
+      const num = `<button type="button" class="vn" data-activar="${k}" aria-pressed="${k === estado.activo}" aria-label="Versículo ${x.n}">${x.n}</button>`;
+      const he = x.he ? `<p class="org-he" lang="he" dir="rtl">${x.heNum ? `<span class="num-heb" title="En la Biblia hebrea este versículo lleva otro número">${esc(x.heNum)}</span> ` : ''}${esc(x.he)}</p>` : `<p class="cmp-vacio">${esc(x.heFalta || 'Sin texto hebreo en los datos')}</p>`;
+      return `<div class="org-fila${k === estado.activo ? ' activo' : ''}" data-v="${k}"><div class="org-num">${num}</div><div class="org-celda">${he}</div><div class="org-celda"><p class="org-rv">${x.rv ? esc(x.rv) : esc(x.nota || '')}</p></div></div>`;
+    };
+    const credito = f.credito ? ` · origen: ${urlSegura(f.credito) ? aExt(f.credito, 'manuscripts.sefaria.org') : esc(f.credito)}` : '';
+    return `<section class="original" data-original aria-label="El original en paralelo">
+      ${elegir}
+      <div class="org-cuerpo">
+        <figure class="org-folio"><button type="button" class="rec-marco ms-marco" data-visor="ms:${esc(f.id)}" aria-label="Ampliar el folio ${esc(f.nombre)} del Códice de Leningrado"><img class="rec-img" src="${esc(f.miniatura)}" alt="Folio ${esc(f.nombre)} del Códice de Leningrado, con el texto hebreo de ${esc(f.muestra)}" decoding="async"${f.ancho_miniatura && f.alto_miniatura ? ` width="${f.ancho_miniatura}" height="${f.alto_miniatura}"` : ''}><span class="rec-ampliar">${ICO_AMPLIAR}</span></button>
+          <figcaption class="rec-pie"><span class="rec-datos"><span class="etiqueta rec-rotulo rec-registro">Registro histórico</span> <strong>Códice de Leningrado</strong>, folio ${esc(f.nombre)}${L.fecha ? ` · ${esc(L.fecha)}` : ''}${L.institucion ? ` · ${esc(L.institucion)}` : ''}</span>
+            <span>Es la foto de la página tal cual: el hebreo se lee de derecha a izquierda, en columnas que empiezan por la de la derecha.${f.otros ? ' La página trae también texto de otros pasajes.' : ''}</span>
+            <span class="rec-atrib">Imagen: Wikimedia Commons · ${esc(f.licencia || 'licencia sin indicar')}${credito} · ${aExt(f.pagina, 'Ver en Commons')}${EXT}</span></figcaption></figure>
+        <div class="org-texto" role="group" aria-label="Transcripción y traducción, versículo a versículo">
+          <div class="org-fila org-cabecera"><div class="org-num" aria-hidden="true"></div><div class="org-celda"><span class="cmp-col-t">Hebreo · lo que se transcribió</span><span class="cmp-fuente">${esc(fuenteHebreo())}</span></div><div class="org-celda"><span class="cmp-col-t">Español</span><span class="cmp-fuente">${esc(COLS.rv.fuente())}</span></div></div>
+          ${filas.map(fila).join('')}
+          ${fuera.length ? `<p class="meta org-fuera">${fuera.length === 1 ? 'El versículo' : 'Los versículos'} ${esc(N.tramoRefs(fuera[0].ref, fuera[fuera.length - 1].ref))} ${fuera.length === 1 ? 'está' : 'están'} en otro folio${fs.length > 1 ? ': elígelo arriba' : ''}.</p>` : ''}
+        </div>
+      </div>
+      <p class="meta">De este códice sale el texto hebreo de la app: a la izquierda, la página copiada a mano; a la derecha, su transcripción versículo a versículo y la traducción. El hebreo viene de una fuente externa, con su licencia en <a href="#fuentes">Fuentes</a>. Los rollos del mar Muerto son más antiguos, pero sus condiciones solo permiten enlazarlos: están en «De dónde sale este texto», en el acompañante.</p>
+    </section>`;
+  }
+
+  /* ---------- Leer como un libro abierto ---------- */
+  // El texto se reparte en páginas del alto de la pantalla, dos a la vista (una en pantallas estrechas), como una Biblia
+  // impresa. Las columnas de CSS hacen las páginas; aquí solo se desplaza el pliego y se rotulan cabecera y número de página.
+  const libroHTML = texto => `<div class="libro" data-libro>
+      <div class="libro-pliego">
+        <div class="libro-cabeza" aria-hidden="true"><span data-lc="0"></span><span data-lc="1"></span></div>
+        <div class="libro-recorte"><div class="biblia libro-texto">${texto}<span class="libro-fin" aria-hidden="true"></span></div></div>
+        <div class="libro-pie" aria-hidden="true"><span data-lp="0"></span><span data-lp="1"></span></div>
+      </div>
+      <nav class="libro-nav" aria-label="Páginas del pasaje"><button type="button" class="boton secundario mini-boton" data-pagina="-1" aria-label="Página anterior">‹ Anterior</button><span class="libro-pos" aria-live="polite"></span><button type="button" class="boton secundario mini-boton" data-pagina="1" aria-label="Página siguiente">Siguiente ›</button></nav>
+    </div>`;
+  const LIBRO = { k: 0, ro: null };
+  function libroMedida() {
+    const l = main.querySelector('[data-libro]'), t = l && l.querySelector('.libro-texto'); if (!t) return null;
+    const cs = getComputedStyle(t), cols = Math.max(1, parseInt(cs.columnCount, 10) || 1), gap = parseFloat(cs.columnGap) || 0;
+    const paso = (t.clientWidth + gap) / cols, tb = t.getBoundingClientRect(), fin = t.querySelector('.libro-fin');
+    const colDe = el => { const r = (el.getClientRects && el.getClientRects()[0]) || el.getBoundingClientRect(); return Math.max(0, Math.floor((r.left - tb.left + 2) / paso)); };
+    const nCols = fin ? colDe(fin) + 1 : 1;
+    return { l, t, cols, paso, colDe, nCols, total: Math.max(1, Math.ceil(nCols / cols)) };
+  }
+  function libroIr(k, suave) {
+    let m = libroMedida(); if (!m) return;
+    // Si todo cabe en un pliego, el texto se reparte entre sus dos páginas en vez de dejar la segunda en blanco.
+    if (m.t.classList.contains('equilibrado')) { m.t.classList.remove('equilibrado'); m = libroMedida(); }
+    if (m.cols > 1 && m.nCols <= m.cols) { m.t.classList.add('equilibrado'); m = libroMedida(); }
+    k = Math.max(0, Math.min(m.total - 1, k)); LIBRO.k = k;
+    m.t.classList.toggle('sin-anim', !suave);
+    m.t.style.transform = `translateX(${-k * m.paso * m.cols}px)`;
+    // Cabeceras («GÉNESIS 1») y número de cada página del pliego, según el versículo que empieza o sigue en ella.
+    const vs = [...m.t.querySelectorAll('.vers')].map(el => ({ el, c: m.colDe(el) })), lb = estado.pasaje ? N.nombreLibro(D, N.libroDe(estado.pasaje)) : '';
+    for (let i = 0; i < 2; i++) {
+      const c = k * m.cols + i, hay = i < m.cols && c < m.nCols;
+      const v = hay ? vs.filter(x => x.c <= c).pop() || vs[0] : null, cap = v ? v.el.dataset.v.split(':')[0] : '';
+      const h = m.l.querySelector(`[data-lc="${i}"]`), pg = m.l.querySelector(`[data-lp="${i}"]`);
+      if (h) h.textContent = hay && cap ? `${lb} ${cap}` : '';
+      if (pg) pg.textContent = hay ? String(c + 1) : '';
+    }
+    const primero = vs.find(x => x.c >= k * m.cols); if (primero && estado.pasaje) estado.libroAncla = { pasaje: estado.pasaje.id, v: primero.el.dataset.v };
+    const desde = k * m.cols + 1, hasta = Math.min(m.nCols, desde + m.cols - 1);
+    const pos = m.l.querySelector('.libro-pos'); if (pos) pos.textContent = m.nCols === 1 ? 'Página 1 de 1' : `${desde === hasta ? 'Página ' + desde : `Páginas ${desde}–${hasta}`} de ${m.nCols}`;
+    m.l.querySelectorAll('[data-pagina]').forEach(b => { b.disabled = (+b.dataset.pagina < 0 && k === 0) || (+b.dataset.pagina > 0 && k === m.total - 1); });
+    m.l.classList.toggle('una-pagina', m.cols === 1);
+  }
+  // Lleva el pliego a la página donde está `el` (versículo activo, el que suena, la barra de notas o el foco).
+  function libroMostrar(el) {
+    const m = libroMedida(); if (!m || !el || !m.t.contains(el)) return false;
+    const k = Math.floor(m.colDe(el) / m.cols); if (k !== LIBRO.k || m.t.style.transform === '') libroIr(k, true); return true;
+  }
+  function libroIniciar() {
+    const m = libroMedida(); if (!m) return;
+    const a = estado.libroAncla && estado.pasaje && estado.libroAncla.pasaje === estado.pasaje.id ? m.t.querySelector(`.vers[data-v="${CSS.escape(estado.libroAncla.v)}"]`) : null;
+    const act = m.t.querySelector('.vers.activo'), obj = act || a;
+    libroIr(obj ? Math.floor(m.colDe(obj) / m.cols) : 0, false);
+    if (LIBRO.ro) LIBRO.ro.disconnect();
+    if (window.ResizeObserver) { // al cambiar el ancho o el alto, la misma página sigue a la vista
+      let w = 0, h = 0;
+      LIBRO.ro = new ResizeObserver(([e]) => { const r = e.contentRect; if (Math.abs(r.width - w) < 1 && Math.abs(r.height - h) < 1) return; const nuevo = !w; w = r.width; h = r.height; if (nuevo) return; const x = libroMedida(); const an = x && estado.libroAncla ? x.t.querySelector(`.vers[data-v="${CSS.escape(estado.libroAncla.v)}"]`) : null; libroIr(an ? Math.floor(x.colDe(an) / x.cols) : LIBRO.k, false); });
+      LIBRO.ro.observe(m.l.querySelector('.libro-recorte'));
+    }
+    if (document.fonts && document.fonts.status !== 'loaded') document.fonts.ready.then(() => libroIr(LIBRO.k, false));
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || document.querySelector('dialog[open]')) return;
+    const t = e.target; if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || (t.closest && t.closest('.nb-barra, [role="slider"], svg')))) return;
+    if (!main.querySelector('[data-libro]')) return;
+    e.preventDefault(); libroIr(LIBRO.k + (e.key === 'ArrowRight' ? 1 : -1), true);
+  });
+  // Deslizar para pasar página (pantallas táctiles).
+  let libroToque = null;
+  document.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse' && e.target.closest && e.target.closest('.libro-recorte')) libroToque = { x: e.clientX, y: e.clientY }; });
+  document.addEventListener('pointerup', e => {
+    const s = libroToque; libroToque = null; if (!s) return;
+    const dx = e.clientX - s.x, dy = e.clientY - s.y;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) libroIr(LIBRO.k + (dx < 0 ? 1 : -1), true);
+  });
+  document.addEventListener('focusin', e => { if (e.target.closest && e.target.closest('.libro-texto')) libroMostrar(e.target); });
+
   /* ---------- Escuchar (voz sintética del dispositivo) ---------- */
   const IDIOMAS = { es: { t: 'Español', lang: 'es-ES', region: 'ES', nombre: 'español' }, he: { t: 'Hebreo', lang: 'he-IL', region: 'IL', nombre: 'hebreo' }, el: { t: 'Griego', lang: 'el-GR', region: 'GR', nombre: 'griego' } };
   const SINTESIS = typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined';
@@ -2786,7 +2907,7 @@ if (typeof document !== 'undefined') (function () {
     if (!k) return;
     document.querySelectorAll(`[data-v="${CSS.escape(k)}"]`).forEach(el => el.classList.add('sonando'));
     const el = document.querySelector(`.vers[data-v="${CSS.escape(k)}"], .cmp-fila[data-v="${CSS.escape(k)}"]`);
-    if (el) { const r = el.getBoundingClientRect(); if (r.top < 80 || r.bottom > window.innerHeight - 140) el.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+    if (el) { libroMostrar(el); const r = el.getBoundingClientRect(); if (r.top < 80 || r.bottom > window.innerHeight - 140) el.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
   }
   function pintarRep() {
     const el = $('#rep-ctrl'); if (el) el.innerHTML = repCtrlHTML();
@@ -5126,6 +5247,7 @@ if (typeof document !== 'undefined') (function () {
     main.dataset.vista = VISTAS[vista] ? vista : 'leer'; // el ancho de cada pantalla sale de aquí (estilos.css, «Ancho por pantalla»)
     trasPintar(vista);
     montarMapas(main);
+    if (main.querySelector('[data-libro]')) libroIniciar();
     conectoresTodos();
     document.querySelectorAll('.nav-principal a').forEach(a => { if (a.dataset.vista === (VISTAS[vista] ? PESTANA[vista] || vista : 'leer')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     document.title = (main.querySelector('h1') || {}).textContent + ' · Biblia';
@@ -5151,7 +5273,8 @@ if (typeof document !== 'undefined') (function () {
       if (c.includes('he') && ORIG.est.o === '') cargarOriginales('o');
       if (c.includes('gr') && ORIG.est.g === '') cargarOriginales('g');
     }
-    if (ORIG.est.o === 'ok' && (cmp || main.querySelector('.lv-orig[lang="he"]'))) pedirFuenteHebrea();
+    if (main.querySelector('[data-original]')) { cargarManuscritos(); if (ORIG.est.o === '') cargarOriginales('o'); }
+    if (ORIG.est.o === 'ok' && (cmp || main.querySelector('.lv-orig[lang="he"], .org-he'))) pedirFuenteHebrea();
   }
   function rerender(selectorFoco) { const y = window.scrollY; render(false); window.scrollTo(0, y); if (selectorFoco) { const el = main.querySelector(selectorFoco); if (el) el.focus(); } }
 
@@ -5175,6 +5298,7 @@ if (typeof document !== 'undefined') (function () {
     const cn = t.closest('[data-cerrar-nuevas]'); if (cn) { ocultarNuevas(); if (cn.tagName !== 'A') return; }
     const c = t.closest('[data-cerrar]'); if (c) { cerrar(c.closest('dialog')); return; }
     const vi = t.closest('[data-visor]'); if (vi) { abrirVisor(vi.dataset.visor); return; }
+    const pg = t.closest('[data-pagina]'); if (pg) { libroIr(LIBRO.k + (+pg.dataset.pagina), true); return; }
     const vz = t.closest('[data-vzoom]'); if (vz) { zoomVisor(+vz.dataset.vzoom); return; }
     const msel = t.closest('[data-medio-sel]'); if (msel && estado.galeria) { const [pe, id] = msel.dataset.medioSel.split('|'); estado.galeria.sel[pe] = id; pintarMedios('#medios-pasaje .medio-grande button, #medios-pasaje .medio-grande a'); return; }
     const mpl = t.closest('[data-medio-play]'); if (mpl) { const f = recPorId(mpl.dataset.medioPlay); if (f && N.esIdYoutube(f.youtube)) mpl.outerHTML = iframeVideo({ youtube_id: f.youtube, titulo: f.titulo }); return; }
@@ -5242,7 +5366,8 @@ if (typeof document !== 'undefined') (function () {
     else if (['col-libro', 'col-sexo', 'col-grupo', 'col-estado'].includes(t.name)) { estado[{ 'col-libro': 'colLibro', 'col-sexo': 'colSexo', 'col-grupo': 'colGrupo', 'col-estado': 'colEstado' }[t.name]] = t.value; rerender(`input[name="${t.name}"][value="${CSS.escape(t.value)}"]`); }
     else if (t.name === 'explicaciones') { store.set('biblia.explicaciones', !!t.checked); rerender('input[name="explicaciones"]'); }
     else if (t.name === 'medio-pestana') { if (estado.galeria) { estado.galeria.eligio = t.value; pintarMedios(`input[name="medio-pestana"][value="${t.value}"]`); } }
-    else if (t.name === 'modo-pasaje') { estado.comparar = t.value === 'comparar'; store.set('biblia.comparar', estado.comparar); rerender(`input[name="modo-pasaje"][value="${t.value}"]`); }
+    else if (t.name === 'modo-pasaje') { estado.comparar = t.value === 'comparar'; estado.original = t.value === 'original'; store.set('biblia.comparar', estado.comparar); store.set('biblia.original', estado.original); rerender(`input[name="modo-pasaje"][value="${t.value}"]`); }
+    else if (t.name === 'org-folio') { estado.folio = t.value; rerender(`input[name="org-folio"][value="${CSS.escape(t.value)}"]`); }
     else if (t.dataset && t.dataset.col) { alternarColumna(t.dataset.col, t.checked); rerender(`input[data-col="${t.dataset.col}"]`); }
     else if (t.name === 'voz-idioma') {
       parar(); habla.idioma = t.value; store.set('biblia.vozIdioma', t.value);
