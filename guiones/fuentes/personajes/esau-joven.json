@@ -1,0 +1,114 @@
+{
+  "id": "esau-joven",
+  "nombre": "Esaú joven (Gn 25)",
+  "personas": [
+    "Esau_1"
+  ],
+  "pasajes": [
+    "gn-53"
+  ],
+  "element": {
+    "nombre": "ESAU_JOVEN",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 25:27-34, cuando vuelve cansado del campo y vende la primogenitura. Al nacer (Gn 25:25) es un recién nacido y no lleva hoja: lo que da el texto (rubio y velludo como una pelliza) se resuelve en la toma, sin nada gráfico del parto en ningún perfil. Es el mismo hombre de las hojas ESAU_ADULTO (Gn 26:34–28:9) y ESAU_MAYOR (Gn 32–36): mismo rostro, el mismo pelo y barba cobrizos y el mismo vello en brazos, manos y cuello (decisión pendiente n.º 40 de guiones/LEEME.md); en cada hoja, más años (n.º 38). Tiene que distinguirse a primera vista de su mellizo (hoja JACOB_JOVEN): más ancho y velludo, rojizo frente al moreno liso. Velludo «como una pelliza» describe su cuerpo, no su ropa: no se le viste de pieles, para no confundirlo con el disfraz de Jacob (objetos/disfraz-jacob). El arco y la aljaba salen de Gn 27:3; aquí, de vuelta del campo, los lleva a la espalda. La voz de Esau_1 está en esta ficha porque aquí habla por primera vez (Gn 25:30, 25:32); las hojas de más edad no pueden llevarla (decisión pendiente n.º 27).",
+  "edades": [
+    {
+      "dato": "Mellizo de Jacob; sale primero",
+      "certeza": "texto",
+      "ref": "Gn 25:24-25",
+      "cita": "salió el primero rubio, y todo él velludo como una pelliza; y llamaron su nombre Esaú"
+    },
+    {
+      "dato": "Ya han crecido cuando ocurre lo del potaje; el texto no dice a qué edad",
+      "certeza": "texto",
+      "ref": "Gn 25:27",
+      "cita": "crecieron los niños"
+    },
+    {
+      "dato": "Edad visual: un hombre joven, de unos veinte años, ya adulto",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md): el texto no da su edad en Gn 25:27-34. Ya es cazador y hombre del campo (Gn 25:27) y se casa a los cuarenta (Gn 26:34, posterior: sirve para dirigir). La misma edad visual que JACOB_JOVEN: son mellizos."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Rubio y todo él velludo como una pelliza",
+      "certeza": "texto",
+      "ref": "Gn 25:25",
+      "cita": "salió el primero rubio, y todo él velludo como una pelliza"
+    },
+    {
+      "rasgo": "Diestro en la caza, hombre del campo",
+      "certeza": "texto",
+      "ref": "Gn 25:27",
+      "cita": "Esaú fué diestro en la caza, hombre del campo"
+    },
+    {
+      "rasgo": "Su padre lo ama porque come de su caza",
+      "certeza": "texto",
+      "ref": "Gn 25:28",
+      "cita": "amó Isaac á Esaú, porque comía de su caza"
+    },
+    {
+      "rasgo": "Vuelve del campo cansado",
+      "certeza": "texto",
+      "ref": "Gn 25:29",
+      "cita": "volviendo Esaú del campo cansado"
+    },
+    {
+      "rasgo": "Pide de «eso bermejo»; de ahí su nombre Edom",
+      "certeza": "texto",
+      "ref": "Gn 25:30",
+      "cita": "Ruégote que me des á comer de eso bermejo, pues estoy muy cansado. Por tanto fué llamado su nombre Edom"
+    },
+    {
+      "rasgo": "Dice que se va a morir y que la primogenitura no le sirve",
+      "certeza": "texto",
+      "ref": "Gn 25:32",
+      "cita": "He aquí yo me voy á morir; ¿para qué, pues, me servirá la primogenitura?"
+    },
+    {
+      "rasgo": "Jura y vende la primogenitura",
+      "certeza": "texto",
+      "ref": "Gn 25:33",
+      "cita": "él le juró, y vendió á Jacob su primogenitura"
+    },
+    {
+      "rasgo": "Come, bebe, se levanta y se va",
+      "certeza": "texto",
+      "ref": "Gn 25:34",
+      "cita": "él comió y bebió, y levantóse, y fuése. Así menospreció Esaú la primogenitura"
+    },
+    {
+      "rasgo": "Ancho de hombros y fuerte, curtido por el sol; tez rojiza; pelo cobrizo abundante y natural hasta la nuca y barba cobriza poblada, aún corta; vello espeso y cobrizo en antebrazos, manos, cuello y pecho; ojos castaños vivos; gesto franco e impulsivo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 40 de guiones/LEEME.md). El texto dice «rubio» y «velludo como una pelliza» (Gn 25:25), y que se le llamó Edom por pedir «eso bermejo» (Gn 25:30): el ilustrador junta las dos cosas en un pelo cobrizo y una tez rojiza. El vello en manos y cuello es lo que las pieles imitarán (Gn 27:16, 27:23). Lo franco e impulsivo sale de Gn 25:30-34. El pelo hasta la nuca sigue a los hombres del mural de Beni Hasan (A2), aunque allí son de pelo negro.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica corta de lana color terracota hasta encima de la rodilla, lisa, con una sola banda pardo oscuro en el borde, sujeta sobre el hombro izquierdo y que deja el derecho y el brazo al aire; cinturón ancho de cuero; sandalias de correas; a la espalda, un arco sencillo de madera y una aljaba de cuero con flechas; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. La túnica sujeta sobre un hombro sigue a los hombres del mural de Beni Hasan (A2); corta y lisa, para cazar, y el color terracota son elección del ilustrador, para separarlo de Jacob (azul y avena). El arco y la aljaba salen del texto (Gn 27:3, posterior: sirve para dirigir); su forma es interpretación del ilustrador, sin referencia de época comprobada.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre, voz grave, algo ronca y fuerte, español neutro; la misma voz para Esaú en todas sus edades. Gn 25:30 y 25:32 (a Jacob): agotado, con prisa, despreocupado. Gn 27:1 («Heme aquí»): dispuesto. Gn 27:31-32: animoso, contento de traer la caza. Gn 27:34 y 27:36-38: grito amargo y llanto, sin exagerar (el texto dice «clamó con una muy grande y muy amarga exclamación» y «lloró»). Gn 27:41 lo dice «en su corazón»: si se lee con su voz, en voz baja, o lo lee el narrador; lo decide el guion. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a young hunter from western Asia of about twenty, broad-shouldered and strong but believable, weathered by the sun, with a ruddy, reddish complexion, lively brown eyes, thick natural copper-red hair that reaches the nape of his neck and a full copper-red beard, still short. Thick copper-red hair covers his forearms, the backs of his hands, his neck and the top of his chest. His head is bare, with nothing tied around it. His face is frank, open and impulsive. He wears a short, plain wool tunic of terracotta red that ends above the knees, with a single dark brown band at the hem, fastened over his left shoulder and leaving the right shoulder and arm bare, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a wide leather belt and leather sandals with straps. A plain wooden bow and a leather quiver of arrows hang on his back, and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Cazador joven de Asia occidental de unos veinte años, ancho de hombros y fuerte pero creíble, curtido por el sol; tez rojiza, ojos castaños vivos, pelo cobrizo abundante y natural hasta la nuca y barba cobriza poblada, aún corta. Vello espeso cobrizo en los antebrazos, el dorso de las manos, el cuello y lo alto del pecho. Cabeza descubierta, sin nada atado. Rostro franco, abierto e impulsivo. Túnica corta y lisa de lana color terracota, por encima de la rodilla, con una sola banda pardo oscuro en el borde, sujeta sobre el hombro izquierdo y con el hombro y el brazo derechos al aire, al modo de los asiáticos de las tumbas egipcias del Reino Medio; cinturón ancho de cuero y sandalias de correas. A la espalda, un arco sencillo de madera y una aljaba de cuero con flechas; manos vacías.",
+    "negativo_en": "Do not dress him in fur, animal skins or a pelt cloak: the hair is his own. Do not put a headband, a cord or a cloth on his head. Do not make him a brute, a barbarian, a giant or a cartoon villain, and do not give him exaggerated muscles. Do not make him a boy or a middle-aged man. Do not give him a sword, a spear, dead animals, bracelets or any jewelry. Do not dress him in Egyptian white linen, a turban or a crown. Do not give him a stiff wig-like haircut. Do not paint food, tents, animals or any other person, and keep the background plain.",
+    "negativo_es": "Sin pieles, pelliza ni manto de piel: el vello es suyo. Sin cinta, cordón ni paño en la cabeza; que no sea un bruto, un bárbaro, un gigante ni un villano de dibujos, ni tenga músculos exagerados; que no sea un muchacho ni un hombre de mediana edad; sin espada, lanza, animales muertos, brazaletes ni joyas; sin lino blanco egipcio, turbante ni corona; sin pelo rígido como de peluca; sin comida, tiendas, animales ni otras personas; fondo liso."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "dioses-ajenos",
+  "nombre": "Los dioses ajenos y los zarcillos enterrados junto a Siquem",
+  "pasajes": [
+    "gn-74"
+  ],
+  "element": {
+    "nombre": "DIOSES_AJENOS",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). El texto no describe ni los dioses ni los zarcillos, ni dice de quién eran: la hoja propone figurillas toscas sin rasgos de ninguna divinidad conocida y aretes lisos, sobre un paño (decisión pendiente n.º 67). El texto tampoco dice si entre ellos van los ídolos que Raquel hurtó a Labán (Gn 31:19; objetos/idolos-laban, tres figurillas de barro pardo rojizo): puede mezclarse una de esas figuras, pero no se presenta como dato. La RV1909 dice «encina» (Gn 35:4), no alcornoque. La encina es del escenario siquem.",
+  "texto": [
+    {
+      "dato": "Jacob manda quitar los dioses ajenos, limpiarse y mudar los vestidos",
+      "certeza": "texto",
+      "ref": "Gn 35:2",
+      "cita": "Quitad los dioses ajenos que hay entre vosotros, y limpiaos, y mudad vuestros vestidos"
+    },
+    {
+      "dato": "Le dan los dioses ajenos y los zarcillos de sus orejas",
+      "certeza": "texto",
+      "ref": "Gn 35:4",
+      "cita": "dieron á Jacob todos los dioses ajenos que había en poder de ellos, y los zarzillos que estaban en sus orejas"
+    },
+    {
+      "dato": "Jacob los esconde debajo de una encina junto a Siquem",
+      "certeza": "texto",
+      "ref": "Gn 35:4",
+      "cita": "Jacob los escondió debajo de una encina, que estaba junto á Sichêm"
+    },
+    {
+      "dato": "Los entregan «todos los que con él estaban», no solo su familia",
+      "certeza": "inferido",
+      "nota": "La orden es a su familia y a todos los que estaban con él (Gn 35:2), y entregan lo que había «en poder de ellos» (Gn 35:4): el texto no dice de quién era cada cosa.",
+      "base": [
+        {
+          "ref": "Gn 35:2",
+          "cita": "dijo á su familia y á todos los que con él estaban"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Un montón pequeño sobre un paño de lana sin teñir extendido en el suelo: seis o siete figurillas toscas de barro cocido y dos de bronce, del largo de una mano, de forma humana simple, sin rasgos de ninguna divinidad conocida; y una docena de zarcillos, aretes lisos de bronce, plata y oro",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador (decisión pendiente n.º 67): el texto solo dice «dioses ajenos» y «zarzillos». Figurillas pequeñas porque se pueden llevar encima y esconder bajo un árbol (Gn 35:4); sin forma de dios egipcio, cananeo ni de ninguna religión concreta, para no fijar lo que el texto no dice. Los aretes de metales distintos porque vienen de muchas personas."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same small pile twice: on the left seen from the front at ground level, and on the right seen from above. On a spread cloth of plain undyed wool lie six or seven crude little figurines of baked clay and two of dark bronze, each about the length of a hand, with simple, plain human shapes and no recognizable features of any known religion, together with about a dozen plain earrings, simple rings of bronze, silver and gold.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo montón pequeño dos veces: a la izquierda, de frente a ras de suelo; a la derecha, visto desde arriba. Sobre un paño extendido de lana sin teñir hay seis o siete figurillas toscas de barro cocido y dos de bronce oscuro, del largo de una mano, de forma humana simple y lisa, sin rasgos de ninguna religión conocida, junto a una docena de zarcillos lisos, aretes sencillos de bronce, plata y oro.",
+    "negativo_en": "Do not make the figurines look like Egyptian gods, animal-headed figures, Greek or Roman statues, or any recognizable deity, and do not give them crowns, wings, horns or symbols. Do not add glowing light, gems, coins, necklaces or bracelets. Do not paint hands, people, a tree, a hole in the ground or a landscape, and keep the background plain.",
+    "negativo_es": "Que las figurillas no parezcan dioses egipcios, figuras con cabeza de animal, estatuas griegas o romanas ni ninguna divinidad reconocible; sin coronas, alas, cuernos ni símbolos. Sin luz propia, piedras preciosas, monedas, collares ni brazaletes. Sin manos, personas, árbol, hoyo ni paisaje; fondo liso."
+  }
+}

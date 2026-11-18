@@ -1,0 +1,62 @@
+{
+  "id": "varas-jacob",
+  "nombre": "Las varas descortezadas de Jacob",
+  "pasajes": [
+    "gn-65"
+  ],
+  "element": {
+    "nombre": "VARAS_JACOB",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. Las pilas o abrevaderos donde se ponen son del escenario CAMPO_LABAN; la hoja las muestra también dentro de una pila de piedra igual a las de ese escenario. El texto cuenta lo que hace Jacob con las varas (Gn 30:37-42) y, más adelante, que Jacob atribuye el resultado a Dios, que se lo mostró en sueños (Gn 31:9-12): la ficha no explica cómo; lo que pasa con el ganado está en la hoja GANADO_JACOB. El celo y la monta de las ovejas (Gn 30:38-39, 30:41) se cuentan sin mostrarse.",
+  "texto": [
+    {
+      "dato": "Varas verdes de álamo, de avellano y de castaño, con tiras blancas descortezadas",
+      "certeza": "texto",
+      "ref": "Gn 30:37",
+      "cita": "tomóse Jacob varas de álamo verdes, y de avellano, y de castaño, y descortezó en ellas mondaduras blancas, descubriendo así lo blanco de las varas"
+    },
+    {
+      "dato": "Las pone en las pilas, en los abrevaderos, delante del ganado",
+      "certeza": "texto",
+      "ref": "Gn 30:38",
+      "cita": "puso las varas que había mondado en las pilas, delante del ganado, en los abrevaderos del agua donde venían á beber las ovejas"
+    },
+    {
+      "dato": "Las ovejas conciben delante de las varas",
+      "certeza": "texto",
+      "ref": "Gn 30:39",
+      "cita": "concebían las ovejas delante de las varas"
+    },
+    {
+      "dato": "Solo las pone ante las ovejas tempranas; ante las tardías, no",
+      "certeza": "texto",
+      "ref": "Gn 30:42",
+      "cita": "cuando venían las ovejas tardías, no las ponía"
+    },
+    {
+      "dato": "Las varas se ponen y se quitan: caben en las pilas y las maneja un hombre solo",
+      "certeza": "inferido",
+      "nota": "Jacob las pone «cuantas veces» y no las pone ante las tardías (Gn 30:41-42): son varas sueltas que se meten y se sacan, no postes clavados.",
+      "base": [
+        {
+          "ref": "Gn 30:41",
+          "cita": "Jacob ponía las varas delante de las ovejas en las pilas"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Varas rectas recién cortadas, más o menos de la altura de un hombre y del grueso de un pulgar, de tres clases: una de corteza lisa gris verdosa, otra de corteza parda lisa y otra de corteza parda más oscura; a lo largo, tiras alternas de corteza y de madera blanca al descubierto, como rayas; puestas de pie, apoyadas en el borde de una pila larga y baja de piedra con agua",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto da las tres maderas y las mondaduras blancas (Gn 30:37), no la forma. Las rayas a lo largo, el tamaño y los tonos de corteza son elección; no se intenta que se reconozca cada especie. La pila es la del escenario CAMPO_LABAN."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same set of freshly cut rods three times side by side. On the left, three straight green rods about as tall as a man and as thick as a thumb, still in their bark: one with smooth grey-green bark, one with smooth brown bark and one with darker brown bark. In the center, the same three rods with long strips of bark peeled away along their length, so that bands of bright white wood alternate with bands of bark like stripes. On the right, several of these striped rods stand upright, leaning against the inner edge of a long, low watering trough hollowed out of rough stone and filled with water. Nobody is holding them.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo juego de varas recién cortadas tres veces, una al lado de otra. A la izquierda, tres varas verdes y rectas, más o menos de la altura de un hombre y del grueso de un pulgar, todavía con su corteza: una de corteza lisa gris verdosa, otra de corteza parda lisa y otra de corteza parda más oscura. En el centro, las mismas tres varas con tiras largas de corteza quitadas a lo largo, de modo que bandas de madera blanca alternan con bandas de corteza, como rayas. A la derecha, varias de esas varas rayadas de pie, apoyadas en el borde interior de una pila larga y baja para abrevar, tallada en piedra tosca y llena de agua. Nadie las sostiene.",
+    "negativo_en": "Do not make them carved, painted, polished or decorated staffs, magic wands or spears, and do not make them glow. Do not add leaves, flowers, ribbons or knots. Do not show hands, people, sheep, goats or a landscape, and keep the background plain.",
+    "negativo_es": "Que no sean bastones tallados, pintados, pulidos ni adornados, varitas mágicas ni lanzas, ni brillen; sin hojas, flores, cintas ni nudos; sin manos, personas, ovejas, cabras ni paisaje; fondo liso."
+  }
+}

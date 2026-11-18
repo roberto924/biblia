@@ -1,0 +1,59 @@
+{
+  "id": "hermanos-laban",
+  "nombre": "Los hermanos de Labán (sus parientes en Galaad)",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno ni dice cuántos son: «sus hermanos» (Gn 31:23, 31:25). No son personas de datos/biblia.js. No tienen palabras.",
+  "pasajes": [
+    "gn-67",
+    "gn-68"
+  ],
+  "element": {
+    "nombre": "HERMANOS_LABAN",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo anónimo de cinco hombres de la parentela de Labán que van con él tras Jacob; el número es elección del ilustrador. «Hermanos» se lee como parientes: el texto no dice si son hermanos de sangre, y no consta que sus hijos (personajes/hijos-laban) vayan con ellos. En Gn 31:46 y 31:54 Jacob habla y come con «sus hermanos»: el texto no dice si son los de Labán, los suyos o todos; lo decide el guion. No se les ponen armas: el texto no las nombra, aunque Labán diga «Poder hay en mi mano para haceros mal» (Gn 31:29).",
+  "rasgos": [
+    {
+      "rasgo": "Van con Labán siete días tras Jacob hasta el monte de Galaad",
+      "certeza": "texto",
+      "ref": "Gn 31:23",
+      "cita": "tomó á sus hermanos consigo, y fué tras él camino de siete días, y alcanzóle en el monte de Galaad"
+    },
+    {
+      "rasgo": "Acampan con él en el monte",
+      "certeza": "texto",
+      "ref": "Gn 31:25",
+      "cita": "Labán plantó[la] con sus hermanos en el monte de Galaad"
+    },
+    {
+      "rasgo": "Jacob pide que juzguen entre él y Labán, delante de los hermanos de los dos",
+      "certeza": "texto",
+      "ref": "Gn 31:37",
+      "cita": "Ponlo aquí delante de mis hermanos y tuyos, y juzguen entre nosotros ambos"
+    },
+    {
+      "rasgo": "Cinco hombres de edades distintas, de unos treinta a unos sesenta años, con aire de familia con Labán: piel morena oliva curtida, ojos y pelo oscuros, natural, corto o hasta la nuca, algunos entrecanos; barbas de distintos largos, varias acabadas en punta; gesto serio y cansado del viaje",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. El aire de familia sigue a la hoja LABAN_MAYOR; lo cansado, a los siete días de camino (Gn 31:23). Ninguno es tan viejo como Labán, para que él se distinga."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas de lana hasta la rodilla o hasta media pierna, de franjas y zigzag en rojo, blanco, azul oscuro y ocre, con mantos lisos de lana parda o gris para el camino; fajas de tela; sandalias de correas; bastones de camino lisos; cabezas descubiertas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. Siguen a los hombres del cortejo de Beni Hasan (A2); los mantos y los bastones son elección del ilustrador, por el viaje.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing five men standing side by side in a single row, each one fully visible from head to feet and clearly apart from the others. They are kinsmen from western Asia of clearly different ages, from about thirty to about sixty, with a family likeness: weathered olive-brown skin, dark eyes and natural dark hair cut short or reaching the nape of the neck, some of them greying, and beards of different lengths, several trimmed to a point. Their heads are bare, with nothing tied around them. Their expressions are serious and tired from a long journey. They wear wool tunics reaching the knee or the lower calf, woven with stripes and zigzags in red, white, dark blue and ochre in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, plain brown or grey wool travelling cloaks, cloth sashes and leather sandals with straps, and each holds a plain wooden walking stick. Each man clearly differs from the others in face, height and build.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: cinco hombres de pie en una sola fila, cada uno de cuerpo entero y bien separado de los demás. Parientes de Asia occidental de edades claramente distintas, de unos treinta a unos sesenta años, con aire de familia: piel morena oliva curtida, ojos oscuros y pelo oscuro natural, corto o hasta la nuca, algunos entrecanos, y barbas de distintos largos, varias en punta. Cabezas descubiertas, sin nada atado. Gesto serio y cansado de un largo viaje. Túnicas de lana hasta la rodilla o hasta media pierna, de franjas y zigzag en rojo, blanco, azul oscuro y ocre, al modo de los asiáticos de las tumbas egipcias del Reino Medio; mantos lisos de camino de lana parda o gris, fajas de tela, sandalias de correas y un bastón de camino liso cada uno. Cada uno distinto en cara, estatura y complexión.",
+    "negativo_en": "Do not put headbands, cords or cloths on their heads, and do not give them turbans, hoods or helmets. Do not give them swords, spears, bows, shields, armor or any weapon, and do not give them bracelets or jewelry. Do not make them identical, and do not include children or very old men. Do not dress them in Egyptian white linen. Do not paint tents, camels, a mountain or any other person, and keep the background plain.",
+    "negativo_es": "Sin cintas, cordones ni paños en la cabeza, ni turbantes, capuchas ni cascos; sin espadas, lanzas, arcos, escudos, armaduras ni armas, ni brazaletes ni joyas; que no sean idénticos, sin niños ni ancianos; sin lino blanco egipcio; sin tiendas, camellos, monte ni otras personas; fondo liso."
+  }
+}

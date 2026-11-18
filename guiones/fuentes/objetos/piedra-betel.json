@@ -1,0 +1,62 @@
+{
+  "id": "piedra-betel",
+  "nombre": "La piedra de Betel: cabecera y título",
+  "pasajes": [
+    "gn-60",
+    "gn-74"
+  ],
+  "element": {
+    "nombre": "PIEDRA_BETEL",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. La hoja muestra la misma piedra dos veces: tumbada, como cabecera para dormir (Gn 28:11), y de pie, alzada por título y con el aceite derramado encima (Gn 28:18). Gn 28:11 dice que tomó «de las piedras» del lugar y Gn 28:18 habla de «la piedra» que había puesto de cabecera: la hoja dibuja una sola. El texto no dice de dónde sacó el aceite: el frasco es interpretación del ilustrador. Vuelve en Gn 35:14 (gn-74), donde Jacob erige «un título de piedra» en el lugar donde Dios había hablado con él: si es la misma piedra, el texto no lo dice. Propuesta por defecto del redactor de Gn 32–36 (decisión pendiente n.º 62 de guiones/LEEME.md): usar esta hoja también en gn-74, con la libación y el aceite en la toma; el catálogo de juego pone Gn 35:14 en este mismo objeto.",
+  "texto": [
+    {
+      "dato": "Toma de las piedras del lugar y las pone de cabecera",
+      "certeza": "texto",
+      "ref": "Gn 28:11",
+      "cita": "tomó de las piedras de aquel paraje y puso á su cabecera, y acostóse en aquel lugar"
+    },
+    {
+      "dato": "De mañana la alza por título y derrama aceite encima",
+      "certeza": "texto",
+      "ref": "Gn 28:18",
+      "cita": "tomó la piedra que había puesto de cabecera, y alzóla por título, y derramó aceite encima de ella"
+    },
+    {
+      "dato": "Dice que esa piedra será casa de Dios",
+      "certeza": "texto",
+      "ref": "Gn 28:22",
+      "cita": "esta piedra que he puesto por título, será casa de Dios"
+    },
+    {
+      "dato": "Un hombre solo puede alzarla",
+      "certeza": "inferido",
+      "nota": "Jacob la alza él mismo (Gn 28:18) y el texto no nombra a nadie con él en Gn 28:10-22: es una piedra grande para cabecera pero que un hombre puede poner de pie.",
+      "base": [
+        {
+          "ref": "Gn 28:18",
+          "cita": "alzóla por título"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Piedra de campo sin labrar, alargada y algo aplanada, de caliza gris parda con vetas, de unos dos palmos y medio de largo; tumbada, sirve de almohada; de pie, llega a media pierna; el aceite oscurece y hace brillar su parte de arriba y escurre por un lado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su tamaño, forma ni clase de piedra. Sin labrar, porque la toma del lugar (Gn 28:11)."
+    },
+    {
+      "dato": "Frasco: pequeño, liso, de barro, con tapón de madera",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que derramó aceite (Gn 28:18), no en qué lo llevaba."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same stone twice, side by side. It is a single rough, uncut field stone of grey-brown limestone with faint veins, elongated and slightly flattened, about two and a half hand spans long. On the left it lies on its side on a patch of bare, stony ground, like a hard pillow. On the right the same stone stands upright on the ground, reaching about mid-shin height, and olive oil poured on its top darkens and glistens on the upper part and runs down one side; beside it stands a small, plain clay flask with a wooden stopper. Nobody is touching anything.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con la misma piedra dos veces, una al lado de otra. Es una sola piedra de campo tosca, sin labrar, de caliza gris parda con vetas suaves, alargada y algo aplanada, de unos dos palmos y medio de largo. A la izquierda, tumbada de lado sobre un trozo de suelo pelado y pedregoso, como una almohada dura. A la derecha, la misma piedra de pie en el suelo, a la altura de media pierna, con aceite de oliva derramado encima que oscurece y hace brillar la parte de arriba y escurre por un lado; a su lado, un frasco pequeño y liso de barro con tapón de madera. Nadie toca nada.",
+    "negativo_en": "Do not carve, polish or inscribe the stone, and do not make it a tall standing monolith, an obelisk or an altar. Do not make it glow or shine with light. Do not show a ladder, people, hands, a blanket, a city or a landscape. Keep the background plain.",
+    "negativo_es": "Que la piedra no esté tallada, pulida ni grabada, ni sea un monolito alto, un obelisco ni un altar; que no brille ni emita luz; sin escalera, personas, manos, manta, ciudad ni paisaje; fondo liso."
+  }
+}

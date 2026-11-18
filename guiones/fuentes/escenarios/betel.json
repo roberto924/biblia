@@ -1,0 +1,73 @@
+{
+  "id": "betel",
+  "nombre": "Betel: el lugar donde Jacob duerme (Gn 28:10-22)",
+  "pasajes": [
+    "gn-60",
+    "gn-74"
+  ],
+  "element": {
+    "nombre": "BETEL",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego, que junta en «betel» también Gn 12:8, 13:3-4 y 35:1-15. Esta hoja muestra el lugar de Gn 28: un paraje pedregoso y sin nadie donde Jacob duerme al ponerse el sol, con una piedra por cabecera (objetos/piedra-betel), y donde de mañana alza la piedra por título. La hoja es a la caída de la tarde; la noche del sueño y la mañana se resuelven en sus tomas. La escala del sueño tiene hoja propia (objetos/escala-jacob). El texto dice que antes la ciudad se llamaba Luz (Gn 28:19), pero no dónde estaba respecto del lugar donde durmió: la hoja no dibuja ciudad. En gn-74 (Gn 35:1-15) la usa el redactor de Gn 32–36 (decisión pendiente n.º 62): allí Jacob llega a Luz, «esta es Beth-el» (Gn 35:6), con todo el pueblo, y edifica un altar (Gn 35:7); la ciudad, el campamento y el altar se añaden en esas tomas. Sin la lámina 1, como los demás paisajes abiertos (n.º 37 de guiones/LEEME.md).",
+  "texto": [
+    {
+      "dato": "Jacob sale de Beer-seba hacia Harán",
+      "certeza": "texto",
+      "ref": "Gn 28:10",
+      "cita": "salió Jacob de Beer-seba, y fué á Harán"
+    },
+    {
+      "dato": "Llega a un lugar y duerme allí porque ya se ha puesto el sol",
+      "certeza": "texto",
+      "ref": "Gn 28:11",
+      "cita": "encontró con un lugar, y durmió allí, porque ya el sol se había puesto"
+    },
+    {
+      "dato": "En el lugar hay piedras",
+      "certeza": "texto",
+      "ref": "Gn 28:11",
+      "cita": "tomó de las piedras de aquel paraje"
+    },
+    {
+      "dato": "Despierta y dice que Jehová está en ese lugar",
+      "certeza": "texto",
+      "ref": "Gn 28:16",
+      "cita": "Ciertamente Jehová está en este lugar, y yo no lo sabía"
+    },
+    {
+      "dato": "Lo llama casa de Dios y puerta del cielo",
+      "certeza": "texto",
+      "ref": "Gn 28:17",
+      "cita": "¡Cuán terrible es este lugar! No es otra cosa que casa de Dios, y puerta del cielo"
+    },
+    {
+      "dato": "Se levanta de mañana",
+      "certeza": "texto",
+      "ref": "Gn 28:18",
+      "cita": "levantóse Jacob de mañana"
+    },
+    {
+      "dato": "Llama al lugar Betel; la ciudad se llamaba antes Luz",
+      "certeza": "texto",
+      "ref": "Gn 28:19",
+      "cita": "llamó el nombre de aquel lugar Beth-el, bien que Luz era el nombre de la ciudad primero"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Ladera alta y abierta de monte, de roca caliza gris y tierra parda, sembrada de muchas piedras sueltas de todos los tamaños; un rellano llano entre rocas bajas donde puede tenderse un hombre; matas secas y algún arbusto bajo; montes lejanos en sombra; cielo de la caída de la tarde, con el sol ya puesto, un resto de luz anaranjada en el horizonte y las primeras estrellas",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto da piedras y la puesta de sol (Gn 28:11), nada más. La altura y los montes son elección; sin ciudad, porque el texto no la sitúa."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of an open, high hillside in the hill country of Canaan in the ancient Near East just after sunset, with no people and no animals in it. The ground is grey limestone rock and brown earth strewn with many loose stones of every size, with a level spot between low rocks where a man could lie down. There are dry shrubs and a few low bushes, and distant hills lie in shadow. The sun has already set: a last band of orange light lingers on the horizon, the sky above deepens to dark blue, and the first stars appear.",
+    "prompt_es": "Una sola vista general de una ladera alta y abierta en la tierra de colinas de Canaán, en el antiguo Oriente Próximo, justo después de la puesta del sol, sin personas ni animales. El suelo es roca caliza gris y tierra parda sembrada de muchas piedras sueltas de todos los tamaños, con un rellano llano entre rocas bajas donde podría tenderse un hombre. Hay matas secas y algunos arbustos bajos, y los montes lejanos están en sombra. El sol ya se ha puesto: queda una franja de luz anaranjada en el horizonte, el cielo de arriba se oscurece hacia el azul profundo y aparecen las primeras estrellas.",
+    "negativo_en": "Do not split the picture into panels or show two moments side by side. Do not paint a ladder, a stair, rays of light, glowing clouds or any figure in the sky, and do not paint the sun. Do not paint a town, walls, houses, a temple, an altar, a standing stone, a campfire, tents, people or animals.",
+    "negativo_es": "Sin paneles ni dos momentos lado a lado. Sin escalera, escalinata, rayos de luz, nubes luminosas ni figuras en el cielo, y sin sol. Sin ciudad, murallas, casas, templo, altar, piedra alzada, hoguera, tiendas, personas ni animales."
+  }
+}

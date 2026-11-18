@@ -1,0 +1,32 @@
+# El campamento de Jacob en Mahanaim (Gn 32:1-21) (escenario)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `CAMPAMENTO_MAHANAIM` (lugar)
+- **Pasajes**: gn-69
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 63 de guiones/LEEME.md). Es el campamento de Jacob en el camino de vuelta, donde lo encuentran los ángeles (Gn 32:1-2), de donde salen y adonde vuelven los mensajeros (Gn 32:3-6), donde parte a su gente y su ganado en dos cuadrillas (Gn 32:7-8), ora (Gn 32:9-12) y duerme mientras pasa el presente (Gn 32:13-21). La hoja fija el campamento antes de partirlo: las dos cuadrillas las añade su toma. Los ángeles de Gn 32:1-2 no tienen figura (decisión pendiente n.º 58): la hoja no pinta a nadie ni ninguna luz. Las tiendas siguen la forma de la tienda de Abram (objetos/tienda-abram). Sin la lámina 1, como los demás paisajes abiertos (n.º 37).
+
+## Lo que dice el texto
+
+- **Texto**: En el camino le salen al encuentro ángeles de Dios — Gn 32:1: «Y JACOB se fué su camino, y saliéronle al encuentro ángeles de Dios»
+- **Texto**: Jacob llama al lugar Mahanaim — Gn 32:2: «El campo de Dios es este: y llamó el nombre de aquel lugar Mahanaim»
+- **Texto**: Parte a su gente y su ganado en dos cuadrillas — Gn 32:7: «partió el pueblo que tenía consigo, y las ovejas y las vacas y los camellos, en dos cuadrillas»
+- **Inferido**: Está al otro lado del Jordán, que pasó con su bordón al ir a Padan-aram — Jacob dice «este Jordán» y que lo pasó con su bordón; ahora vuelve con dos cuadrillas. El texto no dice cuándo cruzará el Jordán de vuelta. — base: Gn 32:10 «con mi bordón pasé este Jordán, y ahora estoy sobre dos cuadrillas»
+- **Texto**: Mientras pasa el presente, duerme aquella noche en el campamento — Gn 32:21: «él durmió aquella noche en el campamento»
+- **Inferido**: El campamento de Gn 32:13-21 es el mismo lugar que Mahanaim — Gn 32:13 dice «durmió allí aquella noche» sin nombrar el lugar; se sigue el hilo del relato, que no cuenta ninguna marcha entre Gn 32:2 y Gn 32:13. — base: Gn 32:13 «Y durmió allí aquella noche»
+
+## Rasgos
+
+- **Interpretación del ilustrador**: Campamento de pastores en una ladera suave de pastos verdes y amarillentos, con algunos árboles sueltos: varias tiendas bajas y anchas de tiras de pelo de cabra pardo oscuro sobre palos, algunas majadas de piedra baja y ramas, rescoldos de fuegos apagados, y al fondo colinas boscosas y un valle que baja hacia el oeste; luz baja de la tarde — Interpretación del ilustrador: el texto no describe el lugar. Más verde que las colinas secas de Canaán para que no se confunda con Mamre ni Betel; las tiendas, como la de Abram; las majadas, para el ganado de Gn 32:7. La tarde, porque Jacob duerme allí (Gn 32:13, 32:21).
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/campamento-mahanaim.png`; luego subirla a Cinema Studio como Element `CAMPAMENTO_MAHANAIM`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (no `patron-1-paisaje.png`: copiaba su composición).
+
+_Una sola vista general de un campamento de pastores en una ladera suave del antiguo Oriente Próximo, a última hora de la tarde, sin personas ni animales. Varias tiendas bajas y anchas de tiras largas de tela de pelo de cabra pardo oscuro sobre hileras de palos lisos, sujetas con cuerdas y estacas, repartidas por la ladera. Entre ellas, unas majadas bajas de piedra apilada y ramas y los círculos oscuros de fuegos apagados. La hierba pasa de verde a amarillo paja, hay unos árboles sueltos en la ladera, y detrás del campamento unas colinas boscosas bajan hacia un valle al oeste, con una luz cálida y baja._ Evitar: _Sin rama ni hojas de árbol colgando en una esquina como marco. Sin paneles ni dos momentos lado a lado. Tiendas ni redondas, ni puntiagudas, ni blancas, ni de colores vivos. Sin personas, figuras en el cielo, luces propias, rayos, ciudad, murallas, río en primer término ni animales._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make one single establishing view of a herdsmen's camp on a gentle hillside in the ancient Near East in the late afternoon, with no people and no animals in it. Several low, wide tents made of long dark brown strips of woven goat-hair cloth on rows of plain wooden poles stand scattered on the slope, held by ropes and pegs. Between them are a few low sheepfolds of piled stones and brushwood and the dark rings of cold campfires. The grass is green turning to straw yellow, a few scattered trees stand on the slope, and behind the camp wooded hills fall away into a valley toward the west under a warm, low light. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not split the picture into panels or show two moments side by side. Do not make the tents round, pointed, white or brightly colored. Do not paint people, figures in the sky, glowing lights, rays, a town, walls, a river in the foreground or any animals.
+```

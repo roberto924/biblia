@@ -1,0 +1,79 @@
+{
+  "id": "varones-siquem",
+  "nombre": "Los varones de la ciudad de Siquem",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son «los varones de su ciudad» (Gn 34:20) y «todos los que salían por la puerta de la ciudad» (Gn 34:24). No son personas de datos/biblia.js y no hablan.",
+  "pasajes": [
+    "gn-73"
+  ],
+  "element": {
+    "nombre": "VARONES_SIQUEM",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo anónimo de cinco hombres para la reunión en la puerta (Gn 34:20-24; escenario puerta-siquem). La circuncisión (Gn 34:24) no se muestra en ningún perfil, como la n.º 24 de guiones/LEEME.md, y tampoco su dolor ni su muerte (Gn 34:25): decisión pendiente n.º 59 (puertas, gritos, ganado sacado de la ciudad; sin cuerpos ni sangre). Las mujeres y los niños que se llevan cautivos (Gn 34:29) no tienen hoja. Hamor y su hijo tienen hojas propias (hamor, principe-siquem).",
+  "rasgos": [
+    {
+      "rasgo": "Hamor y su hijo les hablan en la puerta de la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 34:20",
+      "cita": "vinieron á la puerta de su ciudad, y hablaron á los varones de su ciudad"
+    },
+    {
+      "rasgo": "Hamor les presenta a la gente de Jacob como pacífica",
+      "certeza": "texto",
+      "ref": "Gn 34:21",
+      "cita": "Estos varones son pacíficos con nosotros"
+    },
+    {
+      "rasgo": "Obedecen y se circuncida todo varón (no se muestra)",
+      "certeza": "texto",
+      "ref": "Gn 34:24",
+      "cita": "obedecieron á Hamor y á Sichêm su hijo todos los que salían por la puerta de la ciudad"
+    },
+    {
+      "rasgo": "Simeón y Leví los matan al tercer día (no se muestra)",
+      "certeza": "texto",
+      "ref": "Gn 34:25",
+      "cita": "vinieron contra la ciudad animosamente, y mataron á todo varón"
+    },
+    {
+      "rasgo": "Son heveos, como Hamor",
+      "certeza": "inferido",
+      "nota": "El texto llama heveo a Hamor (Gn 34:2) y dice que estos son los varones «de su ciudad» (Gn 34:20); no dice de qué pueblo es cada uno.",
+      "base": [
+        {
+          "ref": "Gn 34:2",
+          "cita": "Hamor Heveo"
+        },
+        {
+          "ref": "Gn 34:20",
+          "cita": "los varones de su ciudad"
+        }
+      ]
+    },
+    {
+      "rasgo": "Cinco hombres de edades claramente distintas, de unos veinte a unos sesenta años; piel morena oliva, pelo oscuro natural hasta la nuca, el mayor con canas; barbas recortadas en punta de distintos largos; gesto atento y pensativo, de gente a la que se le propone un trato",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. El gesto sale de que escuchan y aceptan (Gn 34:20-24); sin caricatura."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas de lana hasta la rodilla o hasta media pierna con dibujos sencillos en verde oliva, crudo, rojo óxido y azul grisáceo, unas sujetas sobre un hombro y otras con los dos hombros cubiertos, alguna con un manto liso pardo; fajas de tela; sandalias; cabezas descubiertas, sin nada atado",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Los asiáticos del mural de Beni Hasan (A2); el verde oliva y el rojo óxido los separan de los hombres de Sodoma y de los hijos de Het.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing five men standing in a single row, each one fully visible from head to feet: townsmen of a Canaanite hill town in the ancient Near East, of clearly different ages from about twenty to about sixty, the oldest with grey hair and a grey beard. They have olive-brown skin, dark eyes and natural dark hair that reaches the nape of the neck, with beards trimmed to a point in different lengths. Their heads are bare, with nothing tied around them. They wear wool tunics that reach the knee or the mid-calf, woven with simple patterns in olive green, cream, rust red and blue-grey in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some fastened over one shoulder and some covering both shoulders, one with a plain brown cloak, with cloth sashes and leather sandals. Their expressions are attentive and thoughtful, like people weighing an offer, and each man clearly differs from the others in face, height and build.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: cinco hombres de pie en fila, de cuerpo entero: gente de una ciudad cananea de las colinas del antiguo Oriente Próximo, de edades claramente distintas, de unos veinte a unos sesenta años; el mayor con pelo y barba grises. Piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca, barbas recortadas en punta de distintos largos. Cabezas descubiertas, sin nada atado. Túnicas de lana hasta la rodilla o hasta media pierna con dibujos sencillos en verde oliva, crudo, rojo óxido y azul grisáceo, al modo de los asiáticos de las tumbas egipcias del Reino Medio, unas sujetas sobre un hombro y otras con los dos hombros cubiertos, uno con manto liso pardo; fajas de tela y sandalias de cuero. Gesto atento y pensativo, de gente que sopesa un trato; cada uno distinto en cara, estatura y complexión.",
+    "negativo_en": "Do not include children, women or any other person. Do not give them weapons, crowns, turbans, headbands or jewelry. Do not make them monstrous, deformed or identical. Do not show blood, wounds or any sign of pain. Keep them fully clothed, do not paint a town, a gate or a house, and keep the background plain.",
+    "negativo_es": "Sin niños, mujeres ni otras personas. Sin armas, coronas, turbantes, cintas en la cabeza ni joyas. Que no sean monstruosos, deformes ni idénticos. Sin sangre, heridas ni señales de dolor. Todos vestidos; sin ciudad, puerta ni casa; fondo liso."
+  }
+}

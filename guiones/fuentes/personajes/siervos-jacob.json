@@ -1,0 +1,73 @@
+{
+  "id": "siervos-jacob",
+  "nombre": "Los siervos de Jacob (mensajeros y pastores de las manadas)",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son «mensajeros» (Gn 32:3) y «siervos» (Gn 32:16). No son personas de datos/biblia.js. Los mensajeros hablan (Gn 32:6): el guion necesitará admitir una voz que no es persona o que lo lea el narrador (decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md).",
+  "pasajes": [
+    "gn-69"
+  ],
+  "element": {
+    "nombre": "SIERVOS_JACOB",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo de cinco hombres de la casa de Jacob para dos papeles: los mensajeros que van a Esaú y vuelven (Gn 32:3-6) y los siervos que llevan las manadas del presente (Gn 32:16-21; objetos/presente-esau). El texto no dice si los mensajeros son de esos siervos: la hoja sirve para los dos porque los dos son gente de Jacob (Gn 32:5). Los hijos de Jacob son todavía niños en Gn 32–33 y no están en esta hoja. Si el guion de gn-74 muestra a «todos los que con él estaban» (Gn 35:2), puede usarla también.",
+  "rasgos": [
+    {
+      "rasgo": "Jacob tiene siervos desde Padan-aram",
+      "certeza": "texto",
+      "ref": "Gn 30:43",
+      "cita": "tuvo muchas ovejas, y siervas y siervos, y camellos y asnos"
+    },
+    {
+      "rasgo": "Jacob envía mensajeros delante de sí a Esaú",
+      "certeza": "texto",
+      "ref": "Gn 32:3",
+      "cita": "envió Jacob mensajeros delante de sí á Esaú su hermano"
+    },
+    {
+      "rasgo": "Los mensajeros vuelven con la noticia",
+      "certeza": "texto",
+      "ref": "Gn 32:6",
+      "cita": "los mensajeros volvieron á Jacob, diciendo: Vinimos á tu hermano Esaú"
+    },
+    {
+      "rasgo": "Jacob entrega cada manada a sus siervos, con espacio entre una y otra",
+      "certeza": "texto",
+      "ref": "Gn 32:16",
+      "cita": "entrególo en mano de sus siervos, cada manada de por sí"
+    },
+    {
+      "rasgo": "Les da lo que han de decir a Esaú, al primero, al segundo, al tercero y a todos",
+      "certeza": "texto",
+      "ref": "Gn 32:19",
+      "cita": "mandó también al segundo, y al tercero, y á todos los que iban tras aquellas manadas"
+    },
+    {
+      "rasgo": "Cinco hombres de edades distintas, de unos dieciocho a unos cincuenta y cinco años; piel morena oliva, pelo oscuro natural hasta la nuca, el mayor con canas; barbas cortas o recortadas en punta, el más joven casi sin barba; gesto atento y obediente",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. Cinco bastan para el primero, el segundo, el tercero y los demás (Gn 32:19); las edades distintas sirven para seguirlos entre tomas."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas de lana hasta la rodilla con franjas sencillas en crudo, pardo y rojo apagado, unas sujetas sobre un hombro y otras con los dos hombros cubiertos; cinturones de cuerda; sandalias; cabezas descubiertas, sin nada atado; cayados de pastor",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Pastores de la casa de Jacob vestidos como los asiáticos del mural de Beni Hasan (A2), más llanos que su amo. Los cayados son elección del ilustrador: llevan ganado (Gn 32:16).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Voz de hombre adulta, de mensajero que vuelve de prisa, español neutro, solo en Gn 32:6 (uno por todos o a coro: decide el guion): sencilla y con inquietud contenida al decir «y cuatrocientos hombres con él». Lo que Jacob les manda decir (Gn 32:17-20) lo dice Jacob, no ellos. Decisiones pendientes n.º 22 y n.º 64 de guiones/LEEME.md."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing five men standing in a single row, each one fully visible from head to feet: herdsmen and servants of a herding family from western Asia, of clearly different ages from a youth of about eighteen with almost no beard to a man of about fifty-five with grey in his hair and beard. They have olive-brown skin, dark eyes and natural dark hair that reaches the nape of the neck, with short or pointed beards. Their heads are bare, with nothing tied around them. They wear knee-length wool tunics with simple stripes in cream, brown and faded red, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some fastened over one shoulder and some covering both shoulders, with cord belts and leather sandals. Each one holds a plain wooden shepherd's staff. Their expressions are attentive and obedient, and each man clearly differs from the others in face, height and build.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: cinco hombres de pie en fila, de cuerpo entero: pastores y siervos de una familia de pastores de Asia occidental, de edades claramente distintas, de un mozo de unos dieciocho años casi sin barba a un hombre de unos cincuenta y cinco con canas en el pelo y la barba. Piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca, barbas cortas o en punta. Cabezas descubiertas, sin nada atado. Túnicas de lana hasta la rodilla con franjas sencillas en crudo, pardo y rojo apagado, al modo de los asiáticos de las tumbas egipcias del Reino Medio, unas sujetas sobre un hombro y otras con los dos hombros cubiertos; cinturones de cuerda y sandalias de cuero. Cada uno con un cayado de pastor de madera liso. Gesto atento y obediente; cada uno distinto en cara, estatura y complexión.",
+    "negativo_en": "Do not give them weapons, crowns, turbans, headbands, jewelry or rich patterned robes. Do not include children, women, animals or any other person. Do not make them identical, and keep the background plain.",
+    "negativo_es": "Sin armas, coronas, turbantes, cintas en la cabeza, joyas ni túnicas ricas de dibujos. Sin niños, mujeres, animales ni otras personas. Que no sean idénticos; fondo liso."
+  }
+}

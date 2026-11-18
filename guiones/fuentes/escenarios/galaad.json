@@ -1,0 +1,73 @@
+{
+  "id": "galaad",
+  "nombre": "El monte de Galaad, con los campamentos de Jacob y de Labán (Gn 31:21-55)",
+  "pasajes": [
+    "gn-66",
+    "gn-67",
+    "gn-68"
+  ],
+  "element": {
+    "nombre": "GALAAD",
+    "tipo": "lugar"
+  },
+  "nota": "El id es el del catálogo de juego. En gn-66 solo es la meta de la huida (Gn 31:21): sale de lejos, si el guion lo muestra. Las tiendas siguen la forma de la hoja TIENDA_ABRAM (paños oscuros de pelo de cabra; supuesto, ver esa ficha). El interior de la tienda de Raquel tiene su propia hoja (escenarios/tienda-raquel); el majano y el título de Gn 31:45-52, la suya (objetos/majano-galaad), y no salen en esta hoja porque se levantan al final. El río de Gn 31:21 no tiene hoja. Los sacrificios de Gn 31:54 no se muestran de forma gráfica (decisión pendiente n.º 54 de guiones/LEEME.md). Dios habla a Labán en sueños (Gn 31:24) sin figura (decisión n.º 1). Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).",
+  "texto": [
+    {
+      "dato": "Jacob cruza el río y se dirige al monte de Galaad",
+      "certeza": "texto",
+      "ref": "Gn 31:21",
+      "cita": "pasó el río, y puso su rostro al monte de Galaad"
+    },
+    {
+      "dato": "Labán lo alcanza allí tras siete días de camino",
+      "certeza": "texto",
+      "ref": "Gn 31:23",
+      "cita": "fué tras él camino de siete días, y alcanzóle en el monte de Galaad"
+    },
+    {
+      "dato": "Los dos acampan en el monte: Jacob con su tienda, Labán con sus hermanos",
+      "certeza": "texto",
+      "ref": "Gn 31:25",
+      "cita": "éste había fijado su tienda en el monte: y Labán plantó[la] con sus hermanos en el monte de Galaad"
+    },
+    {
+      "dato": "En el campamento de Jacob hay tienda de Jacob, de Lea, de las dos siervas y de Raquel",
+      "certeza": "texto",
+      "ref": "Gn 31:33",
+      "cita": "entró Labán en la tienda de Jacob, y en la tienda de Lea, y en la tienda de las dos siervas, y no los halló, y salió de la tienda de Lea, y vino á la tienda de Rachêl"
+    },
+    {
+      "dato": "Duermen esa noche en el monte",
+      "certeza": "texto",
+      "ref": "Gn 31:54",
+      "cita": "durmieron aquella noche en el monte"
+    },
+    {
+      "dato": "Al menos cuatro tiendas en el campamento de Jacob, y otro campamento, el de Labán, en el mismo monte",
+      "certeza": "inferido",
+      "nota": "Se cuentan las tiendas que Labán registra (Gn 31:33). Cuántas tiendas tiene Labán no se dice.",
+      "base": [
+        {
+          "ref": "Gn 31:33",
+          "cita": "en la tienda de las dos siervas"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Lo alto de un monte ancho y redondeado, con hierba, matas y unas pocas encinas dispersas, y montes más verdes y valles que se pierden a lo lejos; en una explanada, cuatro tiendas bajas y anchas de paños oscuros de pelo de cabra, con el lado largo abierto, juntas; a cierta distancia, en el mismo monte, otro grupo de dos tiendas iguales; piedras sueltas por el suelo; luz clara de la mañana",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el monte, los dos campamentos y las tiendas salen del texto (arriba); la vegetación, la explanada y la luz son elección, sin referencia de época comprobada. Las piedras sueltas anuncian el majano sin dibujarlo. Las tiendas, como la hoja TIENDA_ABRAM."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the top of a broad, rounded mountain in the hill country of the ancient Near East in clear morning light, with no people and no animals in it. The slopes are covered with grass, low shrubs and a few scattered oak trees, and greener hills and valleys fade into the distance. On a level stretch of the summit stand four low, wide tents close together, each made of long dark brown-black strips of woven goat-hair cloth on plain wooden poles, held by ropes and pegs, with one long side open. Some distance away on the same summit stands a second, smaller group of two tents of the same kind. Loose field stones lie scattered on the ground.",
+    "prompt_es": "Una sola vista general de lo alto de un monte ancho y redondeado en la tierra de colinas del antiguo Oriente Próximo, con luz clara de la mañana, sin personas ni animales. Las laderas tienen hierba, matas bajas y unas pocas encinas dispersas, y montes más verdes y valles se pierden a lo lejos. En una explanada de la cumbre hay cuatro tiendas bajas y anchas, juntas, de largas tiras de paño tejido de pelo de cabra, pardo oscuro casi negro, sobre postes de madera sencillos, sujetas con cuerdas y estacas y con un lado largo abierto. A cierta distancia, en la misma cumbre, otro grupo más pequeño de dos tiendas iguales. Hay piedras del campo sueltas por el suelo.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not split the picture into panels or show two moments side by side. Do not make the tents round, pointed, white or brightly colored, and do not add flags, banners or carpets. Do not paint a heap of stones, a standing stone, an altar, a fire, a river, a town, people, camels, sheep or any other animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin paneles ni dos momentos lado a lado. Sin tiendas redondas, puntiagudas, blancas ni de colores vivos, ni banderas, estandartes ni alfombras. Sin montón de piedras, piedra de pie, altar, fuego, río, ciudad, personas, camellos, ovejas ni otros animales."
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ]
+}

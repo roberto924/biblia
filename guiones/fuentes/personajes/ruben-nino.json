@@ -1,0 +1,83 @@
+{
+  "id": "ruben-nino",
+  "nombre": "Rubén niño (Gn 30:14)",
+  "personas": [
+    "Reuben_1"
+  ],
+  "pasajes": [
+    "gn-64"
+  ],
+  "element": {
+    "nombre": "RUBEN_NINO",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 30:14, cuando halla las mandrágoras. En gn-63 (Gn 29:32) es un recién nacido y no lleva hoja, como Isaac en gn-42. De adulto está en la hoja de grupo HERMANOS (personajes/hermanos, gn-98); entre una y otra, la hoja de Rubén muchacho o adulto en Gn 35–37 la decide quien escriba esos pasajes. No tiene palabras, así que la ficha no lleva voz. Las mandrágoras tienen hoja propia (objetos/mandragoras). Sus hermanos pequeños no llevan hoja (decisión pendiente n.º 55 de guiones/LEEME.md).",
+  "edades": [
+    {
+      "dato": "Es el primer hijo de Lea, nacido después de la boda",
+      "certeza": "texto",
+      "ref": "Gn 29:32",
+      "cita": "concibió Lea, y parió un hijo, y llamó su nombre Rubén"
+    },
+    {
+      "dato": "Como mucho unos siete años entre la boda de Lea y el nacimiento de José",
+      "certeza": "calculo",
+      "valor": 7,
+      "nota": "Rubén nace después de la boda (Gn 29:23, 29:32) y halla las mandrágoras antes de que nazca José (Gn 30:14, 30:22-24): en Gn 30:14 tiene menos de siete años, y por los partos que se cuentan entre medias (Gn 29:33 a 30:13), probablemente algunos menos.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 7,
+        "pasos": [
+          {
+            "texto": "Años que Jacob sirvió por las dos hijas",
+            "valor": 14,
+            "ref": "Gn 31:41",
+            "cita": "catorce años te serví por tus dos hijas"
+          },
+          {
+            "texto": "Años que sirvió antes de la boda con Lea",
+            "valor": 7,
+            "ref": "Gn 29:20",
+            "cita": "Así sirvió Jacob por Rachêl siete años"
+          }
+        ],
+        "supuestos": [
+          "La boda con Lea es al cumplirse los primeros siete años (Gn 29:21-23)",
+          "José nace al cumplirse los catorce años: Jacob pide irse «cuando Rachêl hubo parido á José» (Gn 30:25)",
+          "Gn 29:31 a 30:24 se cuentan en orden: el texto no da el año de cada parto"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un niño de unos cinco años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el cálculo solo da un tope. Va solo al campo en la siega, halla las plantas y se las lleva a su madre (Gn 30:14): se le dibuja niño, no bebé."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "En la siega de los trigos halla mandrágoras en el campo y se las lleva a su madre",
+      "certeza": "texto",
+      "ref": "Gn 30:14",
+      "cita": "fué Rubén en tiempo de la siega de los trigos, y halló mandrágoras en el campo, y trájolas á Lea su madre"
+    },
+    {
+      "rasgo": "Niño sano y vivo, de piel morena oliva, ojos oscuros grandes y pelo oscuro natural, corto y algo rizado; gesto curioso y contento",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. Lo curioso sale de que halla las plantas por su cuenta (Gn 30:14). Tiene los ojos de su madre (hoja LEA)."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica corta de lana crema hasta la rodilla, con franjas estrechas verde oliva, sin mangas y que cubre los dos hombros; descalzo",
+      "certeza": "supuesto",
+      "nota": "Supuesto (decisión pendiente n.º 52 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de niños. Las franjas oliva repiten el color de su madre, Lea; ir descalzo es elección del ilustrador."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same small boy three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a healthy, lively boy from western Asia of about five, with the proportions of a real five-year-old child, olive-brown skin, large dark eyes and short, slightly curly natural dark hair. His expression is curious and happy. He wears a sleeveless knee-length tunic of cream wool woven with narrow olive-green stripes that covers both shoulders, and he is barefoot. His head is bare and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo niño tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Niño de Asia occidental de unos cinco años, sano y vivo, con las proporciones de un niño real de esa edad; piel morena oliva, ojos oscuros grandes y pelo oscuro natural, corto y algo rizado. Gesto curioso y contento. Túnica sin mangas de lana crema hasta la rodilla, con franjas estrechas verde oliva, que le cubre los dos hombros; descalzo. Cabeza descubierta y manos vacías.",
+    "negativo_en": "Do not give him adult proportions, muscles or a beard, and do not make him a baby or a teenager. Do not make him a chibi or cartoonish caricature. Do not give him a headband, jewelry, toys or a weapon. Do not paint plants, fruit, a field or any other person, and keep the background plain.",
+    "negativo_es": "Sin proporciones de adulto, músculos ni barba; que no sea un bebé ni un adolescente; sin caricatura chibi ni de dibujos infantiles; sin cinta en la cabeza, joyas, juguetes ni armas; sin plantas, frutos, campo ni otras personas; fondo liso."
+  }
+}

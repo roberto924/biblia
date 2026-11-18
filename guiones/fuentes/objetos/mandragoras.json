@@ -1,0 +1,71 @@
+{
+  "id": "mandragoras",
+  "nombre": "Las mandrágoras de Rubén",
+  "pasajes": [
+    "gn-64"
+  ],
+  "element": {
+    "nombre": "MANDRAGORAS",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. Rubén las halla y se las lleva a Lea (Gn 30:14); Raquel las pide y las cambia por una noche de Jacob con Lea (Gn 30:14-16). Esa noche no se muestra (decisión pendiente n.º 54 de guiones/LEEME.md). El texto no dice para qué las quería Raquel: la ficha no lo explica. La hoja no da a las raíces forma ni cara humana.",
+  "texto": [
+    {
+      "dato": "Rubén las halla en el campo, en la siega de los trigos, y se las lleva a su madre",
+      "certeza": "texto",
+      "ref": "Gn 30:14",
+      "cita": "fué Rubén en tiempo de la siega de los trigos, y halló mandrágoras en el campo, y trájolas á Lea su madre"
+    },
+    {
+      "dato": "Raquel le pide a Lea parte de ellas",
+      "certeza": "texto",
+      "ref": "Gn 30:14",
+      "cita": "Ruégote que me des de las mandrágoras de tu hijo"
+    },
+    {
+      "dato": "Raquel las paga con una noche de Jacob",
+      "certeza": "texto",
+      "ref": "Gn 30:15",
+      "cita": "Pues dormirá contigo esta noche por las mandrágoras de tu hijo"
+    },
+    {
+      "dato": "Lea se lo dice a Jacob a la tarde",
+      "certeza": "texto",
+      "ref": "Gn 30:16",
+      "cita": "te he alquilado por las mandrágoras de mi hijo"
+    },
+    {
+      "dato": "Son pocas: las lleva un niño y se pueden repartir",
+      "certeza": "inferido",
+      "nota": "Las lleva Rubén, que es niño (cálculo en personajes/ruben-nino), y Raquel pide «de» ellas, una parte.",
+      "base": [
+        {
+          "ref": "Gn 30:14",
+          "cita": "trájolas á Lea su madre"
+        },
+        {
+          "ref": "Gn 30:14",
+          "cita": "me des de las mandrágoras"
+        }
+      ]
+    },
+    {
+      "dato": "Planta con fruto parecido a una manzanita, de la que se creía que favorecía la fecundidad; los diccionarios identifican con la mandrágora la palabra hebrea",
+      "certeza": "externa",
+      "fuente": "Explicación del proyecto «mandrágoras» (herramientas/explicaciones/terminos-conceptos.json), que cita Easton's Bible Dictionary (1897), entrada «Mandrakes». No se ha releído el diccionario para esta ficha."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Plantas arrancadas enteras: roseta de hojas anchas, arrugadas y verde oscuro que salen del suelo, una raíz gruesa, pálida y algo ahorquillada, y varios frutos redondos amarillo anaranjado del tamaño de una ciruela pequeña, sobre tallos cortos en el centro de la roseta",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador a partir de la identificación de la Fuente externa: el texto dice «mandrágoras» y no las describe. El color maduro del fruto se elige por la siega (Gn 30:14), sin referencia comprobada. La raíz se dibuja como raíz, sin la forma humana de las leyendas."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same kind of wild plant three times side by side. On the left, one whole plant pulled up from the earth: a flat rosette of broad, wrinkled, dark green leaves growing straight from the root, a thick, pale, slightly forked root with a little soil on it, and several round yellow-orange fruits the size of a small plum on short stalks in the middle of the rosette. In the center, a small loose bunch of three such plants lying together, small enough for a child to carry in both arms. On the right, a close view of three of the round yellow-orange fruits. Nobody is holding them.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: la misma planta silvestre tres veces, una al lado de otra. A la izquierda, una planta entera arrancada de la tierra: una roseta plana de hojas anchas, arrugadas y verde oscuro que salen directamente de la raíz, una raíz gruesa, pálida y algo ahorquillada con un poco de tierra, y varios frutos redondos amarillo anaranjado del tamaño de una ciruela pequeña sobre tallos cortos en el centro de la roseta. En el centro, un manojo suelto de tres de esas plantas juntas, lo bastante pequeño para que lo lleve un niño en brazos. A la derecha, de cerca, tres de los frutos redondos amarillo anaranjado. Nadie las sostiene.",
+    "negativo_en": "Do not give the roots a human shape, a face, arms or legs, and do not make the plant look magical, glowing or frightening. Do not make the fruits apples, oranges, tomatoes or lemons, and do not add flowers in bright colors. Do not show hands, people, a basket, a field or wheat, and keep the background plain.",
+    "negativo_es": "Que las raíces no tengan forma humana, cara, brazos ni piernas, y que la planta no parezca mágica, luminosa ni terrible; que los frutos no sean manzanas, naranjas, tomates ni limones, y sin flores de colores vivos; sin manos, personas, cesto, campo ni trigo; fondo liso."
+  }
+}

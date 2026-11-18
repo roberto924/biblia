@@ -1,0 +1,60 @@
+{
+  "id": "peniel",
+  "nombre": "El vado de Jaboc y Peniel, antes del alba (Gn 32:22-32)",
+  "pasajes": [
+    "gn-70"
+  ],
+  "element": {
+    "nombre": "VADO_JABOC",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego («Peniel y el vado del Jaboc»). La hoja fija el vado de noche, en la hora azul antes del alba: la noche cerrada de Gn 32:22-24 y la salida del sol de Gn 32:31 las cambia su toma. El varón que lucha con Jacob tiene hoja propia (personajes/varon-peniel); la familia de Jacob, las de sus redactores. La lucha (Gn 32:24-25) sin golpes ni heridas. Sin la lámina 1, como los demás paisajes abiertos (n.º 37). En gn-71 Jacob ve venir a Esaú «alzando sus ojos» (Gn 33:1) sin que el texto diga dónde: si el guion lo pone aquí, añade el pasaje.",
+  "texto": [
+    {
+      "dato": "Esa noche pasa el vado de Jaboc",
+      "certeza": "texto",
+      "ref": "Gn 32:22",
+      "cita": "levantóse aquella noche, y tomó sus dos mujeres, y sus dos siervas, y sus once hijos, y pasó el vado de Jaboc"
+    },
+    {
+      "dato": "Es un arroyo, y hace pasar todo lo que tiene",
+      "certeza": "texto",
+      "ref": "Gn 32:23",
+      "cita": "pasólos el arroyo, é hizo pasar lo que tenía"
+    },
+    {
+      "dato": "Jacob se queda solo y lucha hasta el alba",
+      "certeza": "texto",
+      "ref": "Gn 32:24",
+      "cita": "quedóse Jacob solo, y luchó con él un varón hasta que rayaba el alba"
+    },
+    {
+      "dato": "Jacob llama al lugar Peniel",
+      "certeza": "texto",
+      "ref": "Gn 32:30",
+      "cita": "llamó Jacob el nombre de aquel lugar, Peniel"
+    },
+    {
+      "dato": "Sale el sol al pasar Peniel, y Jacob cojea",
+      "certeza": "texto",
+      "ref": "Gn 32:31",
+      "cita": "salióle el sol pasado que hubo á Peniel; y cojeaba de su anca"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Un arroyo ancho y poco hondo que corre entre orillas de grava y cantos rodados, con un paso de piedras planas bajo el agua en el vado; matorrales bajos y cañas en las orillas; a los lados, laderas oscuras y empinadas de roca; cielo azul profundo antes del alba, con una franja pálida sobre los montes del este",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice vado y arroyo (Gn 32:22-23), noche y alba (Gn 32:24, 32:31), nada de su forma. Sin luna ni estrellas destacadas: el texto no las nombra, y la luz pálida del este anuncia el alba de Gn 32:26."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a ford across a stream in a rocky valley of the ancient Near East in the deep blue hour just before dawn, with no people and no animals in it. A wide, shallow stream runs between banks of gravel and rounded stones, and at the ford a line of flat stones shows just under the moving water. Low bushes and reeds grow along the banks, and steep, dark rocky slopes rise on both sides. The sky is a deep blue, with a thin pale band of first light above the hills to the east, and the water reflects that faint light.",
+    "prompt_es": "Una sola vista general de un vado en un arroyo de un valle rocoso del antiguo Oriente Próximo, en la hora azul justo antes del alba, sin personas ni animales. Un arroyo ancho y poco hondo corre entre orillas de grava y cantos rodados, y en el vado asoma bajo el agua una hilera de piedras planas. En las orillas, matorrales bajos y cañas; a los dos lados se alzan laderas oscuras y empinadas de roca. El cielo es azul profundo, con una franja estrecha y pálida de primera luz sobre los montes del este, que el agua refleja.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not split the picture into panels or show two moments side by side. Do not paint a bridge, a boat, a waterfall, a town, tents, people, animals or figures in the sky. Do not add a bright moon, glowing rays, lightning or a stormy sky.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin paneles ni dos momentos lado a lado. Sin puente, barca, cascada, ciudad, tiendas, personas, animales ni figuras en el cielo. Sin luna brillante, haces de luz, rayos ni cielo de tormenta."
+  }
+}

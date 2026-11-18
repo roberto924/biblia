@@ -1,0 +1,166 @@
+{
+  "id": "jacob-mayor",
+  "nombre": "Jacob mayor (Gn 31–36)",
+  "personas": [
+    "Jacob_1"
+  ],
+  "pasajes": [
+    "gn-66",
+    "gn-67",
+    "gn-68",
+    "gn-69",
+    "gn-70",
+    "gn-71",
+    "gn-72",
+    "gn-73",
+    "gn-74",
+    "gn-75"
+  ],
+  "element": {
+    "nombre": "JACOB_MAYOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para cuando Jacob deja a Labán después de veinte años (Gn 31:38, 31:41) y vuelve a Canaán: sirve desde gn-66 (Gn 31:1) hasta el final de Gn 36, también para el entierro de Isaac (Gn 35:29). Sus pasajes los anotan los redactores de Gn 29–31 y Gn 32–36: esta hoja se hace aquí para que el aspecto de Jacob tenga un solo dueño (decisión pendiente n.º 38 de guiones/LEEME.md). Es el mismo hombre de las hojas JACOB_JOVEN y JACOB_ADULTO, con unos veinte años más que al salir de Beer-seba (si se genera a mano en ChatGPT, adjuntar también la imagen de JACOB_ADULTO): mismo rostro, misma túnica, mismo manto verde oliva y el bordón. Ahora tiene canas. Al entrar en Canaán es rico (Gn 32:10, «estoy sobre dos cuadrillas»), pero se le deja la misma ropa para que se le reconozca. La lucha de Peniel le deja cojo (Gn 32:25, 32:31): desde ahí cojea en las tomas, y la hoja lo muestra de pie y sin cojera para que sirva antes y después. Su voz es la de jacob-joven (decisión pendiente n.º 27). Lo que pasa en Gn 32–36 (Peniel, el encuentro con Esaú, Siquem) no se decide aquí.",
+  "edades": [
+    {
+      "dato": "Veinte años con Labán",
+      "certeza": "texto",
+      "ref": "Gn 31:41",
+      "cita": "Así he estado veinte años en tu casa: catorce años te serví por tus dos hijas, y seis años por tu ganado"
+    },
+    {
+      "dato": "Unos noventa y siete años cuando deja a Labán",
+      "certeza": "calculo",
+      "valor": 97,
+      "nota": "Los pasos negativos se restan. Es el cálculo de la hoja JACOB_ADULTO (setenta y siete al empezar a servir) más los veinte años de Gn 31:41, contados desde el nacimiento de José.",
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 97,
+        "pasos": [
+          {
+            "texto": "Edad de Jacob cuando habla con Faraón",
+            "valor": 130,
+            "ref": "Gn 47:9",
+            "cita": "Los días de los años de mi peregrinación son ciento treinta años"
+          },
+          {
+            "texto": "Menos la edad de José cuando es presentado a Faraón",
+            "valor": -30,
+            "ref": "Gn 41:46",
+            "cita": "era José de edad de treinta años cuando fué presentado delante de Faraón"
+          },
+          {
+            "texto": "Menos los siete años de hartura",
+            "valor": -7,
+            "ref": "Gn 41:53",
+            "cita": "cumpliéronse los siete años de la hartura"
+          },
+          {
+            "texto": "Menos los dos años de hambre ya pasados cuando José manda llamar a su padre",
+            "valor": -2,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre en medio de la tierra"
+          },
+          {
+            "texto": "Más los seis años que sirve por el ganado después de nacer José",
+            "valor": 6,
+            "ref": "Gn 31:41",
+            "cita": "seis años por tu ganado"
+          }
+        ],
+        "supuestos": [
+          "Los siete años de hartura empiezan cuando José tiene treinta (Gn 41:46-47)",
+          "Jacob habla con Faraón el mismo año en que José dice que van dos años de hambre (Gn 45:6, 47:7-9)",
+          "Los seis años por el ganado empiezan al nacer José, cuando Jacob pide irse (Gn 30:25)",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Ciento veinte años cuando él y Esaú entierran a Isaac",
+      "certeza": "calculo",
+      "valor": 120,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 120,
+        "pasos": [
+          {
+            "texto": "Años que vivió Isaac",
+            "valor": 180,
+            "ref": "Gn 35:28",
+            "cita": "fueron los días de Isaac ciento ochenta años"
+          },
+          {
+            "texto": "Edad de Isaac al nacer los mellizos",
+            "valor": 60,
+            "ref": "Gn 25:26",
+            "cita": "era Isaac de edad de sesenta años cuando ella los parió"
+          }
+        ],
+        "supuestos": [
+          "Jacob y Esaú entierran a su padre poco después de su muerte (Gn 35:29 lo cuenta seguido)",
+          "Se cuentan años completos",
+          "El texto cuenta esta muerte en Gn 35, pero por las edades ocurre después de que venden a José (José tiene diecisiete años en Gn 37:2 y nace cuando Jacob tiene unos noventa y uno): sirve para dirigir"
+        ]
+      }
+    },
+    {
+      "dato": "Vive ciento cuarenta y siete años",
+      "certeza": "texto",
+      "ref": "Gn 47:28",
+      "cita": "fueron los días de Jacob, los años de su vida, ciento cuarenta y siete años"
+    },
+    {
+      "dato": "Edad visual: un hombre que aparenta unos sesenta años, todavía fuerte, con canas en el pelo y la barba",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md). Por cálculo tiene unos noventa y siete al dejar a Labán y ciento veinte al enterrar a Isaac, y vive hasta los ciento cuarenta y siete (Gn 47:28): se le dibuja claramente mayor que en JACOB_ADULTO, sin decrepitud. En el entierro de Isaac (Gn 35:29) la toma puede añadirle más canas."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Ha servido veinte años de pastor, con calor de día y helada de noche",
+      "certeza": "texto",
+      "ref": "Gn 31:40",
+      "cita": "De día me consumía el calor, y de noche la helada"
+    },
+    {
+      "rasgo": "Pasó el Jordán con su bordón y vuelve con dos cuadrillas",
+      "certeza": "texto",
+      "ref": "Gn 32:10",
+      "cita": "con mi bordón pasé este Jordán, y ahora estoy sobre dos cuadrillas"
+    },
+    {
+      "rasgo": "Él y Esaú entierran a su padre",
+      "certeza": "texto",
+      "ref": "Gn 35:29",
+      "cita": "sepultáronlo Esaú y Jacob sus hijos"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja JACOB_ADULTO, mayor: delgado y fibroso, piel morena oliva curtida, con arrugas marcadas en la frente y junto a los ojos; brazos y manos sin vello; ojos oscuros tranquilos; pelo abundante y natural hasta la nuca y barba corta y rala, los dos oscuros con muchas canas; gesto grave, prudente y cansado",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su cara. Se conservan los rasgos de JACOB_JOVEN y JACOB_ADULTO; la piel curtida sale de los veinte años al raso (Gn 31:40); las canas, de su edad. La barba corta y rala es la propuesta por defecto (decisión pendiente n.º 39). El pelo sigue al mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma ropa que en la hoja JACOB_ADULTO: túnica de lana color avena hasta debajo de la rodilla con franjas estrechas azul oscuro y blancas, que le cubre los dos hombros; manto liso verde oliva, más gastado; cinturón de cuerda; sandalias de correas; bordón alto y liso de madera; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa salvo el bordón (Gn 32:10). Se repite la de JACOB_ADULTO para que se le reconozca; lo gastado del manto es elección del ilustrador, por los veinte años de pastor (Gn 31:40).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a lean, wiry herdsman from western Asia who looks about sixty, still strong and upright, with olive-brown skin weathered by sun and frost, deep lines across his forehead and around his eyes, dark, calm eyes, thick natural hair that reaches the nape of his neck and a short, sparse beard, both dark and heavily streaked with grey. His forearms and hands are smooth, with no visible body hair. His head is bare, with nothing tied around it. His face is grave, prudent and a little weary. He wears a tunic of oatmeal-colored wool that reaches below his knees and covers both shoulders, woven with narrow dark blue and white stripes in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain, worn olive-green wool cloak over his shoulders, a cord belt and leather sandals with straps. In the full-body view he stands straight and holds a tall, plain wooden walking staff.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Pastor delgado y fibroso de Asia occidental que aparenta unos sesenta años, todavía fuerte y erguido; piel morena oliva curtida por el sol y la helada, arrugas hondas en la frente y junto a los ojos, ojos oscuros tranquilos, pelo abundante y natural hasta la nuca y barba corta y rala, los dos oscuros con muchas canas. Antebrazos y manos lisos, sin vello visible. Cabeza descubierta, sin nada atado. Rostro grave, prudente y algo cansado. Túnica de lana color avena hasta debajo de la rodilla, que le cubre los dos hombros, con franjas estrechas azul oscuro y blancas, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto liso de lana verde oliva, gastado, sobre los hombros, cinturón de cuerda y sandalias de correas. De cuerpo entero, derecho, con un bordón alto y liso de madera.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not give him a full or bushy beard, red or fair hair, or hairy arms. Do not make him look young, frail, bent or bald, and do not make him limp. Do not give him a weapon, bracelets, rings or any jewelry. Do not dress him in animal skins, Egyptian white linen, a turban or a crown. Do not give him a stiff wig-like haircut. Do not paint tents, animals, a river or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; sin barba cerrada o poblada, pelo rojizo o rubio ni brazos velludos; que no parezca joven, frágil, encorvado ni calvo, ni cojee; sin armas, brazaletes, anillos ni joyas; sin pieles, lino blanco egipcio, turbante ni corona; sin pelo rígido como de peluca; sin tiendas, animales, río ni otras personas; fondo liso."
+  }
+}

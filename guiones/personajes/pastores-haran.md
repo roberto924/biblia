@@ -1,0 +1,40 @@
+# Los pastores del pozo de Harán (personaje)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `PASTORES_HARAN` (personaje (grupo))
+- **Pasajes**: gn-61
+- **Nota**: Grupo anónimo de tres hombres, uno por cada rebaño que yace junto al pozo (Gn 29:2): el texto no dice cuántos pastores son; tres es elección del ilustrador. Son gente de trabajo, más pobre que la familia de Labán. La piedra del pozo y el pozo están en el escenario POZO_HARAN; las ovejas, en las tomas.
+
+## Rasgos
+
+- **Texto**: Esperan con tres rebaños de ovejas junto al pozo — Gn 29:2: «he aquí tres rebaños de ovejas que yacían cerca de él»
+- **Texto**: Entre todos ruedan la piedra, abrevan y la vuelven a su sitio — Gn 29:3: «revolvían la piedra de sobre la boca del pozo, y abrevaban las ovejas; y volvían la piedra sobre la boca del pozo á su lugar»
+- **Texto**: Son de Harán — Gn 29:4: «Y ellos respondieron: De Harán somos»
+- **Texto**: Conocen a Labán y a su hija — Gn 29:6: «Paz; y he aquí Rachêl su hija viene con el ganado»
+- **Texto**: No abrevan hasta que se juntan todos los ganados — Gn 29:8: «No podemos, hasta que se junten todos los ganados, y remuevan la piedra de sobre la boca del pozo»
+- **Interpretación del ilustrador**: Tres hombres de edades distintas, de un mozo de unos veinte años a un hombre maduro de barba entrecana; piel morena curtida por el sol, pelo oscuro natural y corto o hasta la nuca, barbas de distintos largos; gesto tranquilo y algo desconfiado ante el forastero — Interpretación del ilustrador: el texto no los describe. Lo curtido, de su oficio; la cautela, de que contestan solo lo que se les pregunta (Gn 29:4-8).
+
+## Vestuario
+
+- **Supuesto**: Túnicas cortas de lana sin teñir, parda, crema y gris, hasta la rodilla y sujetas sobre un hombro, con una sola franja de color apagado; cinturones de cuerda; sandalias gastadas; cayados de madera lisos; cabezas descubiertas — Supuesto de época (decisión pendiente n.º 52 de guiones/LEEME.md, como la n.º 31): el texto no describe su ropa. El corte sigue a los hombres del cortejo de Beni Hasan (A2), más llano; los cayados y la lana sin teñir son elección del ilustrador, por su oficio. — referencias: A2
+
+## Voz
+
+Coro de voces de hombre, sencillas y algo secas, español neutro. Gn 29:4-6: respuestas breves al forastero. Gn 29:8: explican la costumbre del pozo, sin enfado. Decisión pendiente del usuario (n.º 53 de guiones/LEEME.md): voces propias o leídas por el narrador.
+
+## Referencias de época
+
+- Procession of the Aamu (mural original de la tumba de Jnumhotep II, compuesto fotográfico) — In situ, Beni Hasan (Egipto); fotos de A. D. Riddle, Brown University y Macquarie University (vía Wikimedia Commons), inv. Beni Hasan, tumba BH3 (in situ) — ca. 1900 a. C., según Commons (Reino Medio, Dinastía XII) — licencia: Dominio público en EE. UU. (reproducción fiel de obra anterior a 1931; Public Domain Mark 1.0 según Commons; el reuso fuera de EE. UU. puede tener restricciones) — imagen: https://commons.wikimedia.org/wiki/File:Procession_of_the_Aamu,_Tomb_of_Khnumhotep_II_(composite).jpg [A2]
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/pastores-haran.png`; luego subirla a Cinema Studio como Element `PASTORES_HARAN`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+
+_Hoja de referencia de grupo sobre fondo gris claro liso: tres pastores de pie en una sola fila, cada uno de cuerpo entero y bien separado de los demás. Pastores de Asia occidental de edades claramente distintas: a la izquierda, un mozo de unos veinte años de barba corta oscura; en el centro, un hombre recio de unos treinta y cinco años de barba oscura cerrada; a la derecha, un hombre enjuto de unos cincuenta años de barba entrecana. Piel morena curtida por el sol y pelo oscuro natural, corto o hasta la nuca. Cabezas descubiertas, sin nada atado. Gesto tranquilo y algo desconfiado. Túnicas lisas hasta la rodilla de lana sin teñir, parda, crema y gris, cada una con una franja apagada, sujetas sobre un hombro, cortadas como la ropa de los asiáticos de las tumbas egipcias del Reino Medio pero más llanas; cinturones de cuerda, sandalias gastadas y un cayado liso de madera cada uno. Encima de la fila, en una franja aparte de la hoja y con espacio vacío entre medias, un primer plano de cada rostro en el mismo orden; los primeros planos no tapan ni rozan ninguna cabeza ni cuerpo de abajo._ Evitar: _Sin cintas, cordones ni paños en la cabeza, ni turbantes ni capuchas; que ningún primer plano tape ni roce una cabeza de la fila de abajo; que no sean idénticos, sin niños ni ancianos; sin armas, brazaletes ni joyas, sin ropa rica de dibujos ni lino blanco egipcio; sin ovejas, pozo, piedra ni otras personas; fondo liso._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make a group reference sheet on a plain light grey background, showing three shepherds standing side by side in a single row, each one fully visible from head to feet and clearly apart from the others. They are herdsmen from western Asia of clearly different ages: on the left a young man of about twenty with a short dark beard, in the middle a sturdy man of about thirty-five with a full dark beard, and on the right a lean man of about fifty with a greying beard. They have sun-weathered brown skin and natural dark hair cut short or reaching the nape of the neck. Their heads are bare, with nothing tied around them. Their expressions are calm and a little wary. They wear plain knee-length tunics of undyed brown, cream and grey wool, each with one muted stripe, fastened over one shoulder, cut like the garments of the western Asian visitors painted in Middle Kingdom Egyptian tombs but plainer, with cord belts and worn leather sandals, and each holds a plain wooden shepherd's staff. Above the row, in a separate band of the sheet with clear empty space between, there is a close-up of each face in the same order; the close-ups never cover or overlap any head or body below. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not put headbands, cords or cloths on their heads, and do not give them turbans or hoods. Do not let any close-up cover or overlap a head in the row below. Do not make them identical, and do not include children or very old men. Do not give them weapons, bracelets or any jewelry, and do not dress them in rich patterned clothes or Egyptian white linen. Do not paint sheep, a well, a stone or any other person, and keep the background plain.
+```

@@ -1,0 +1,88 @@
+{
+  "id": "bilha",
+  "nombre": "Bilha, sierva de Raquel",
+  "personas": [
+    "Bilhah_1"
+  ],
+  "pasajes": [
+    "gn-62",
+    "gn-63",
+    "gn-67",
+    "gn-70",
+    "gn-71"
+  ],
+  "element": {
+    "nombre": "BILHA",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 29–33 (en gn-70 y gn-71, veinte años después de Gn 29:29, las tomas la hacen más madura: decisión pendiente n.º 51 de guiones/LEEME.md). No tiene palabras, así que la ficha no lleva voz. Lo que pasa entre ella y Jacob (Gn 30:4) y los partos (Gn 30:3, «parirá sobre mis rodillas») no se muestran en ningún perfil (decisión pendiente n.º 54 de guiones/LEEME.md); Dan y Neftalí recién nacidos no llevan hoja. En gn-66 puede ir entre «sus mujeres» que suben a los camellos (Gn 31:17), porque Raquel se la da a Jacob «por mujer» (Gn 30:4): es una inferencia, y lo decide el guion. En Gn 31:33 tiene tienda con Zilpa. Comparte su color ocre con la ropa de su señora Raquel para que se lea de quién es sierva; su compañera Zilpa tiene hoja propia (ZILPA). Sale también en Gn 32:22-23 y 33:1-7; Gn 35:22 se lee y no se muestra (decisión pendiente n.º 65).",
+  "edades": [
+    {
+      "dato": "Edad visual: una mujer joven, de unos veinte años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Labán la da como criada a la vez que a su hija (Gn 29:29) y tiene dos hijos poco después (Gn 30:5-7): se la dibuja joven y adulta, no niña."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Es sierva de Labán, que se la da a Raquel por criada",
+      "certeza": "texto",
+      "ref": "Gn 29:29",
+      "cita": "dió Labán á Rachêl su hija por criada á su sierva Bilha"
+    },
+    {
+      "rasgo": "Raquel se la da a Jacob para tener hijos de ella",
+      "certeza": "texto",
+      "ref": "Gn 30:3",
+      "cita": "He aquí mi sierva Bilha; entra á ella, y parirá sobre mis rodillas"
+    },
+    {
+      "rasgo": "Pasa a ser mujer de Jacob",
+      "certeza": "texto",
+      "ref": "Gn 30:4",
+      "cita": "le dió á Bilha su sierva por mujer"
+    },
+    {
+      "rasgo": "Da a Jacob un hijo, Dan",
+      "certeza": "texto",
+      "ref": "Gn 30:5",
+      "cita": "concibió Bilha, y parió á Jacob un hijo"
+    },
+    {
+      "rasgo": "Da a Jacob un segundo hijo, Neftalí",
+      "certeza": "texto",
+      "ref": "Gn 30:7",
+      "cita": "concibió otra vez Bilha, la sierva de Rachêl, y parió el hijo segundo á Jacob"
+    },
+    {
+      "rasgo": "En Galaad comparte tienda con la otra sierva",
+      "certeza": "texto",
+      "ref": "Gn 31:33",
+      "cita": "en la tienda de las dos siervas"
+    },
+    {
+      "rasgo": "Menuda y delgada; piel morena oliva; ojos oscuros grandes; pelo oscuro largo y natural, suelto a la espalda y sin cinta; gesto callado, atento y modesto",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no la describe. Lo callado sale de que no tiene palabras; el pelo sin cinta, para distinguirla de su señora Raquel."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestido largo y sencillo de lana color crema sin teñir, hasta media pierna y que cubre los dos hombros, con una sola franja ocre en el borde; descalza",
+      "certeza": "supuesto",
+      "nota": "Supuesto, decisión pendiente (n.º 52 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de siervas. El corte sigue a los vestidos de las mujeres de Beni Hasan (A2), más llano que el de su señora; la franja ocre (el color de Raquel) y que vaya descalza son elección del ilustrador para que se lea su condición de sierva.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a slight, slender young servant woman from western Asia of about twenty, with olive-brown skin, large dark eyes and long, natural dark hair that falls loose down her back, with no band. Her expression is quiet, attentive and modest. She wears a long, simple dress of undyed cream wool that covers both shoulders and reaches her lower calves, with a single ochre stripe at the hem, cut like the dresses of the western Asian women painted in Middle Kingdom Egyptian tombs but plainer, and she is barefoot. She wears no jewelry, and her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Sierva joven de Asia occidental, de unos veinte años, menuda y delgada; piel morena oliva, ojos oscuros grandes y pelo oscuro largo y natural, suelto a la espalda, sin cinta. Gesto callado, atento y modesto. Vestido largo y sencillo de lana color crema sin teñir, que cubre los dos hombros y llega a media pierna, con una sola franja ocre en el borde, cortado como los vestidos de las mujeres asiáticas de las tumbas egipcias del Reino Medio pero más llano; descalza. Sin joyas, manos vacías.",
+    "negativo_en": "Do not make her look like a child or an old woman, and do not make her seductive: no bare shoulders, low neckline or tight clothes. Do not give her chains, a collar, a veil, a head cloth, earrings, bracelets or any jewelry. Do not make her look ragged, dirty or mistreated. Do not dress her in Egyptian white linen. Do not paint a baby, a tent or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca niña ni vieja, y nada seductor: sin hombros descubiertos, escote ni ropa ceñida; sin cadenas, collar, velo, paño en la cabeza, aretes, brazaletes ni joyas; que no parezca harapienta, sucia ni maltratada; sin lino blanco egipcio; sin bebé, tienda ni otras personas; fondo liso."
+  }
+}

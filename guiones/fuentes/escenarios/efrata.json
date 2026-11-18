@@ -1,0 +1,54 @@
+{
+  "id": "efrata",
+  "nombre": "El camino de Efrata (Gn 35:16-20)",
+  "pasajes": [
+    "gn-75"
+  ],
+  "element": {
+    "nombre": "CAMINO_EFRATA",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego («Camino de Efrata (tumba de Raquel)»). La hoja muestra el camino antes de la muerte de Raquel, sin sepultura ni piedra: el título sobre la sepultura (Gn 35:20) tiene hoja propia (objetos/titulo-raquel) y entra desde su toma. El parto y la muerte de Raquel (Gn 35:16-19) sin nada gráfico en ningún perfil (decisión pendiente n.º 65 de guiones/LEEME.md). La hoja no fija la distancia: «como media legua» es la medida de la RV1909 y aquí no se convierte (datos/explicaciones.js no tiene «legua»). El pueblo del fondo es Efrata, que el texto identifica con Belén, sin rotular. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Parten de Betel y, a media legua de Efrata, Raquel da a luz",
+      "certeza": "texto",
+      "ref": "Gn 35:16",
+      "cita": "partieron de Beth-el, y había aún como media legua de tierra para llegar á Ephrata, cuando parió Rachêl"
+    },
+    {
+      "dato": "Raquel es sepultada en el camino de Efrata, que es Belén",
+      "certeza": "texto",
+      "ref": "Gn 35:19",
+      "cita": "fué sepultada en el camino de Ephrata, la cual es Beth-lehem"
+    },
+    {
+      "dato": "Jacob pone un título sobre su sepultura",
+      "certeza": "texto",
+      "ref": "Gn 35:20",
+      "cita": "puso Jacob un título sobre su sepultura"
+    },
+    {
+      "dato": "Después Israel sigue adelante y acampa más allá de Migdaleder",
+      "certeza": "texto",
+      "ref": "Gn 35:21",
+      "cita": "partió Israel, y tendió su tienda de la otra parte de Migdaleder"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Un camino de tierra que baja y sube entre colinas secas de caliza clara, con matorral bajo y algunos olivos dispersos; a lo lejos, sobre una loma, un pueblo pequeño de casas de techo plano; luz de día, algo velada",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice camino y da el nombre del lugar, nada de su forma. El pueblo a lo lejos sale de que aún les falta media legua (Gn 35:16); su aspecto es supuesto de época (n.º 34). Sin terrazas, para no copiar la lámina 1."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a dirt road winding through dry hill country of pale limestone in Canaan in the ancient Near East by day, under a slightly hazy sky, with no people and no animals in it. Low scrub and a few scattered olive trees grow along the road. Far ahead, on a low ridge, stands a small village of flat-roofed houses.",
+    "prompt_es": "Una sola vista general de un camino de tierra que serpentea entre colinas secas de caliza clara en Canaán, en el antiguo Oriente Próximo, de día, bajo un cielo algo velado, sin personas ni animales. Matorral bajo y algunos olivos dispersos junto al camino. Muy adelante, sobre una loma baja, un pueblo pequeño de casas de techo plano.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not split the picture into panels or show two moments side by side. Do not paint terraced slopes. Do not paint a grave, a standing stone, a tomb building, a dome, a church, tents, people or animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin paneles ni dos momentos lado a lado. Sin laderas en terrazas. Sin tumba, piedra alzada, edificio funerario, cúpula, iglesia, tiendas, personas ni animales."
+  }
+}

@@ -2,13 +2,14 @@
   "id": "gerar",
   "nombre": "Gerar: la sala del rey Abimelec (Gn 20)",
   "pasajes": [
-    "gn-41"
+    "gn-41",
+    "gn-54"
   ],
   "element": {
     "nombre": "SALA_ABIMELEC",
     "tipo": "lugar"
   },
-  "nota": "El id es el del catálogo de juego, que llama «Gerar» a la ciudad de Abimelec (como llama «padan-aram» a la casa de Labán). El texto no describe la ciudad ni la casa: dice que Abimelec es rey de Gerar, que tiene siervos, siervas, mujer y un reino. La hoja es la sala donde, por la mañana, llama a sus siervos (Gn 20:8) y después a Abraham (Gn 20:9-16). El sueño de noche (Gn 20:3-7) es en un cuarto que el texto no nombra: se resuelve en su toma, y Dios no tiene figura (decisión n.º 1 de guiones/LEEME.md). Ropa y lugar sin referencia comprobada (decisiones pendientes n.º 23 y n.º 34). Gn 26 vuelve a Gerar con Isaac: se verá entonces si sirve esta hoja.",
+  "nota": "El id es el del catálogo de juego, que llama «Gerar» a la ciudad de Abimelec (como llama «padan-aram» a la casa de Labán). El texto no describe la ciudad ni la casa: dice que Abimelec es rey de Gerar, que tiene siervos, siervas, mujer y un reino. La hoja es la sala donde, por la mañana, llama a sus siervos (Gn 20:8) y después a Abraham (Gn 20:9-16). El sueño de noche (Gn 20:3-7) es en un cuarto que el texto no nombra: se resuelve en su toma, y Dios no tiene figura (decisión n.º 1 de guiones/LEEME.md). Ropa y lugar sin referencia comprobada (decisiones pendientes n.º 23 y n.º 34). En gn-54 (Gn 26) sirve para cuando Abimelec llama a Isaac (Gn 26:9-11) y lo despide (Gn 26:16), si el guion lo pone en la casa del rey; con el rey de la hoja ABIMELEC_ISAAC (decisión pendiente n.º 42). La ventana por la que mira (Gn 26:8) no está en esta hoja: la toma usa la vista exterior (escenarios/gerar-ciudad), o abre una ventana alta en una pared de esta sala. La ciudad por fuera, los campos que siembra Isaac (Gn 26:12) y el valle donde asienta sus tiendas (escenarios/valle-gerar) tienen hoja propia.",
   "texto": [
     {
       "dato": "Abraham habita como forastero en Gerar",
@@ -89,7 +90,7 @@
   "hoja_referencia": {
     "prompt_en": "Make one single establishing view of the main hall in the house of the king of a small town in the dry south of Canaan in the ancient Near East, in the morning, with no people in it. The walls are plastered mud brick, and two plain wooden posts hold up a flat ceiling of beams and reeds. A low built bench runs along one wall, covered with mats and woven blankets with stripes of dark blue, white and ochre, and a slightly higher, plain wooden seat stands against the back wall. Clay storage jars stand in a corner, and morning light comes in through a wide doorway that opens onto a sunlit courtyard.",
     "prompt_es": "Una sola vista general de la sala principal de la casa del rey de una ciudad pequeña del sur seco de Canaán, en el antiguo Oriente Próximo, por la mañana y sin personas. Las paredes son de adobe enlucido, y dos postes sencillos de madera sostienen un techo plano de vigas y cañas. Un banco de obra bajo recorre una pared, cubierto de esteras y mantas tejidas con franjas azul oscuro, blancas y ocres, y contra la pared del fondo hay un asiento de madera sencillo, algo más alto. Unas tinajas de barro en un rincón, y la luz de la mañana entra por una puerta ancha abierta a un patio soleado.",
-    "negativo_en": "Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the walls are plain mud plaster. Do not split the picture into panels or show two moments side by side. Do not paint a throne, a gold or carved royal chair, stone columns, statues, idols, weapons, banners or any person. Do not make it an Egyptian, Greek or Roman palace.",
-    "negativo_es": "Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en las paredes: las paredes son de barro enlucido liso. Sin paneles ni dos momentos lado a lado. Sin trono, silla real dorada o tallada, columnas de piedra, estatuas, ídolos, armas, estandartes ni personas. Que no sea un palacio egipcio, griego ni romano."
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls; the walls are plain mud plaster. Do not split the picture into panels or show two moments side by side. Do not paint a throne, a gold or carved royal chair, stone columns, statues, idols, weapons, banners or any person. Do not make it an Egyptian, Greek or Roman palace.",
+    "negativo_es": "Sin rama de árbol ni hojas colgando en una esquina del cuadro. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en las paredes: las paredes son de barro enlucido liso. Sin paneles ni dos momentos lado a lado. Sin trono, silla real dorada o tallada, columnas de piedra, estatuas, ídolos, armas, estandartes ni personas. Que no sea un palacio egipcio, griego ni romano."
   }
 }

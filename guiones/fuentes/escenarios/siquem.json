@@ -1,0 +1,92 @@
+{
+  "id": "siquem",
+  "nombre": "Siquem: el campo de Jacob delante de la ciudad (Gn 33:18–35:4)",
+  "pasajes": [
+    "gn-71",
+    "gn-72",
+    "gn-73",
+    "gn-74"
+  ],
+  "element": {
+    "nombre": "SIQUEM",
+    "tipo": "lugar"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "El id es el del catálogo de juego. Vista desde el campo que Jacob compra delante de la ciudad (Gn 33:18-19), con sus tiendas, la ciudad amurallada detrás y una encina grande al borde del campo, la de Gn 35:4. El altar (Gn 33:20) es de objetos/altares-jacob y no se pinta aquí; la puerta, de escenarios/puerta-siquem. Abram ya pasó por «el lugar de Sichêm» (Gn 12:6-7) sin que el texto hable de ciudad. Lo que pasa en la ciudad en Gn 34:25-29 no se muestra de forma gráfica en ningún perfil (decisión pendiente n.º 59 de guiones/LEEME.md): esta hoja no tiene fuego, ruinas ni cuerpos. El supuesto de ciudad de adobe (n.º 34) se ajusta aquí con una Fuente externa: muralla de grandes piedras y montes a los dos lados. Sin la lámina 1, como los demás paisajes abiertos (n.º 37).",
+  "texto": [
+    {
+      "dato": "Jacob llega a la ciudad de Siquem y acampa delante de ella",
+      "certeza": "texto",
+      "ref": "Gn 33:18",
+      "cita": "vino Jacob sano á la ciudad de Sichêm, que está en la tierra de Canaán, cuando venía de Padan-aram; y acampó delante de la ciudad"
+    },
+    {
+      "dato": "Compra la parte del campo donde tiende su tienda",
+      "certeza": "texto",
+      "ref": "Gn 33:19",
+      "cita": "compró una parte del campo, donde tendió su tienda"
+    },
+    {
+      "dato": "Paga cien piezas de moneda a los hijos de Hamor",
+      "certeza": "texto",
+      "ref": "Gn 33:19",
+      "cita": "por cien piezas de moneda"
+    },
+    {
+      "dato": "Allí levanta un altar",
+      "certeza": "texto",
+      "ref": "Gn 33:20",
+      "cita": "erigió allí un altar"
+    },
+    {
+      "dato": "La ciudad tiene puerta",
+      "certeza": "texto",
+      "ref": "Gn 34:20",
+      "cita": "vinieron á la puerta de su ciudad"
+    },
+    {
+      "dato": "Hay campo y ganado fuera de la ciudad",
+      "certeza": "texto",
+      "ref": "Gn 34:28",
+      "cita": "Tomaron sus ovejas y vacas y sus asnos, y lo que había en la ciudad y en el campo"
+    },
+    {
+      "dato": "Junto a Siquem hay una encina, donde Jacob esconde los dioses ajenos",
+      "certeza": "texto",
+      "ref": "Gn 35:4",
+      "cita": "los escondió debajo de una encina, que estaba junto á Sichêm"
+    },
+    {
+      "dato": "Hay un monte junto a la ciudad desde el que se habla a los varones de Siquem",
+      "certeza": "inferido",
+      "nota": "Mucho después, Jotam habla a los de Siquem desde la cumbre del monte Gerizim (Jue 9:7): sirve para dirigir, no se cita en el video de Génesis.",
+      "base": [
+        {
+          "ref": "Jue 9:7",
+          "cita": "púsose en la cumbre del monte de Gerizim, y alzando su voz clamó, y díjoles: Oidme, varones de Sichêm"
+        }
+      ]
+    },
+    {
+      "dato": "Siquem se identifica con Tell Balata, en un valle estrecho entre los montes Ebal y Gerizim; en la Edad del Bronce Medio tuvo una muralla ciclópea de grandes piedras y puertas con cámaras",
+      "certeza": "externa",
+      "fuente": "Wikipedia, «Shechem» (https://en.wikipedia.org/wiki/Shechem), y BiblePlaces.com, «Shechem» (https://www.bibleplaces.com/shechem/), consultadas el 18-nov-2026: las dos dan Tell Balata entre el Ebal y el Gerizim y la muralla de piedras ciclópeas; Wikipedia habla de puertas de varias cámaras y BiblePlaces de una puerta del Bronce Medio de tres pilares y dos cámaras. Wikipedia avisa de que le faltan citas y BiblePlaces no da autor: son divulgación, no publicaciones arqueológicas, y hay que contrastarlas con ellas.",
+      "nota": "El texto no fecha el relato (n.º 34): se toma solo la forma general (montes a los lados, muralla de piedras grandes) para que Siquem no se confunda con Sodoma ni con la ciudad de Het, sin copiar ninguna reconstrucción."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "En primer término, un campo de tierra parda con rastrojo y hierba seca, con tres o cuatro tiendas bajas de pelo de cabra pardo oscuro; a un lado, al borde del campo, una encina grande y vieja de copa ancha, entera a la vista; detrás, sobre un montículo, la ciudad: muralla de grandes piedras toscas abajo y adobe arriba, una puerta entre dos torres bajas y casas de techo plano; a los dos lados, laderas de dos montes; luz de día",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El campo, las tiendas, la ciudad y la encina salen del texto (arriba); la muralla de piedras grandes y los montes, de la Fuente externa; la forma de las tiendas, de objetos/tienda-abram. La especie de la encina no se fija más allá de la palabra del texto."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of a walled hill town of Canaan in the ancient Near East, seen by day from the field in front of it, with no people and no animals in it. In the foreground lies a field of brown earth with stubble and dry grass, where three or four low, wide tents of dark brown goat-hair cloth stand on wooden poles. At one side of the field, fully visible in the middle distance, stands one big, old evergreen oak with a broad crown. Behind the field, on a low mound, rises the town: a wall of huge rough stones below and mud brick above, a gateway between two low towers, and flat-roofed houses. The town lies in a narrow valley, with the slopes of two mountains rising on either side under a clear sky.",
+    "prompt_es": "Una sola vista general de una ciudad amurallada de las colinas de Canaán, en el antiguo Oriente Próximo, vista de día desde el campo que tiene delante, sin personas ni animales. En primer término, un campo de tierra parda con rastrojo y hierba seca, con tres o cuatro tiendas bajas y anchas de tela de pelo de cabra pardo oscuro sobre palos. A un lado del campo, entera a media distancia, una encina grande y vieja de copa ancha. Detrás del campo, sobre un montículo, la ciudad: muralla de enormes piedras toscas abajo y adobe arriba, una puerta entre dos torres bajas y casas de techo plano. La ciudad está en un valle estrecho, con las laderas de dos montes a los lados bajo un cielo despejado.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the walls or towers; the walls are plain stone and mud plaster. Do not split the picture into panels or show two moments side by side. Do not paint a temple, a palace, an altar, battlements, banners, soldiers, fire, smoke, ruins, people or animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en muros o torres: piedra y barro enlucido lisos. Sin paneles ni dos momentos lado a lado. Sin templo, palacio, altar, almenas, estandartes, soldados, fuego, humo, ruinas, personas ni animales."
+  }
+}

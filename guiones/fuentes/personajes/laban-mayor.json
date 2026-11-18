@@ -1,0 +1,318 @@
+{
+  "id": "laban-mayor",
+  "nombre": "Labán mayor (Gn 29–31)",
+  "personas": [
+    "Laban_1"
+  ],
+  "pasajes": [
+    "gn-61",
+    "gn-62",
+    "gn-65",
+    "gn-66",
+    "gn-67",
+    "gn-68"
+  ],
+  "element": {
+    "nombre": "LABAN_MAYOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 29–31, cuando recibe a Jacob y durante sus veinte años de servicio. Hoja nueva y no la de LABAN porque, por cálculo, han pasado unos noventa y siete años desde Gn 24, donde se le dibujó de unos treinta (cálculos de abajo). Es el mismo hombre: misma cara, misma túnica en zigzag rojo y blanco y mismo cinturón azul que LABAN, solo viejo (si se genera a mano en ChatGPT, adjuntar también la imagen de LABAN). Tiene que verse claramente mayor que Jacob en la misma toma: JACOB_ADULTO aparenta unos cuarenta y cinco (gn-61 a gn-65) y JACOB_MAYOR unos sesenta (desde gn-66), así que Labán aparenta unos setenta y cinco (decisión pendiente n.º 50 de guiones/LEEME.md). Su voz es la de laban.json (guiones.py admite una sola voz por persona; decisión pendiente n.º 27); tonos en estos pasajes: Gn 29:14, afectuoso; Gn 29:15 y 29:19, cordial y calculador; Gn 29:26-27, tranquilo, como quien explica una costumbre; Gn 30:27-28 y 30:31, conciliador e interesado; Gn 30:34, conforme; Gn 31:26-30, ofendido y dolido, con amenaza contenida; Gn 31:43-44, orgulloso y resignado; Gn 31:48-53, solemne. Dios le habla en sueños (Gn 31:24) sin figura (decisión n.º 1). Sus hijos (personajes/hijos-laban) y los hermanos que lo acompañan (personajes/hermanos-laban) tienen hoja de grupo. La casa donde recibe a Jacob es la de la hoja CASA_BETUEL (decisión pendiente n.º 49).",
+  "edades": [
+    {
+      "dato": "Unos veinte años entre la visita del criado de Abraham (Gn 24) y el nacimiento de Jacob",
+      "certeza": "calculo",
+      "valor": 20,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 20,
+        "pasos": [
+          {
+            "texto": "Edad de Isaac cuando nacen Esaú y Jacob",
+            "valor": 60,
+            "ref": "Gn 25:26",
+            "cita": "era Isaac de edad de sesenta años cuando ella los parió"
+          },
+          {
+            "texto": "Edad de Isaac cuando toma a Rebeca por mujer, al volver el criado de casa de Labán",
+            "valor": 40,
+            "ref": "Gn 25:20",
+            "cita": "era Isaac de cuarenta años cuando tomó por mujer á Rebeca"
+          }
+        ],
+        "supuestos": [
+          "Isaac toma a Rebeca al llegar ella (Gn 24:67), poco después de que el criado sale de casa de Labán (Gn 24:54-61): se cuenta como el mismo año",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Jacob tiene unos setenta y siete años cuando llega a casa de Labán",
+      "certeza": "calculo",
+      "valor": 77,
+      "nota": "Sirve aquí para medir cuánto ha envejecido Labán; es el mismo cálculo de la hoja JACOB_ADULTO (unos setenta y siete al empezar a servir). Gn 41–47 son posteriores a estos pasajes: sirven para dirigir, no se citan en el video.",
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 77,
+        "pasos": [
+          {
+            "texto": "Edad de Jacob ante Faraón",
+            "valor": 130,
+            "ref": "Gn 47:9",
+            "cita": "Los días de los años de mi peregrinación son ciento treinta años"
+          },
+          {
+            "texto": "Edad de José en ese momento (cálculo de la ficha jose: 30 + 7 + 2)",
+            "valor": 39,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre"
+          },
+          {
+            "texto": "Años que Jacob sirvió por las dos hijas, hasta que nace José",
+            "valor": 14,
+            "ref": "Gn 31:41",
+            "cita": "catorce años te serví por tus dos hijas"
+          }
+        ],
+        "supuestos": [
+          "Jacob llega ante Faraón el mismo año en que José dice que van dos años de hambre (Gn 45:6; Gn 46–47 lo cuentan seguido)",
+          "José nace al cumplirse los catorce años de servicio por las hijas: Jacob pide irse «cuando Rachêl hubo parido á José» (Gn 30:25) y luego sirve seis años por el ganado (Gn 31:41)",
+          "El servicio empieza al llegar Jacob; el mes de Gn 29:14 no se cuenta",
+          "Hereda el margen del cálculo de José (38–40): entre 76 y 78"
+        ]
+      }
+    },
+    {
+      "dato": "Unos noventa y siete años desde Gn 24 cuando recibe a Jacob (Gn 29:13)",
+      "certeza": "calculo",
+      "valor": 97,
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 97,
+        "pasos": [
+          {
+            "texto": "De la visita del criado al nacimiento de Jacob (cálculo anterior: 60 − 40)",
+            "valor": 20,
+            "ref": "Gn 25:26",
+            "cita": "era Isaac de edad de sesenta años cuando ella los parió"
+          },
+          {
+            "texto": "Edad de Jacob al llegar a Harán (cálculo anterior: 130 − 39 − 14)",
+            "valor": 77,
+            "ref": "Gn 31:41",
+            "cita": "catorce años te serví por tus dos hijas"
+          }
+        ],
+        "supuestos": [
+          "Hereda los supuestos y el margen de los dos cálculos anteriores: entre unos 95 y 99 años",
+          "Labán es el mismo hombre de Gn 24: el texto lo llama hermano de Rebeca en los dos relatos (Gn 24:29; Gn 29:10)"
+        ]
+      }
+    },
+    {
+      "dato": "Unos ciento diecisiete años desde Gn 24 cuando se despide en Galaad (Gn 31:55)",
+      "certeza": "calculo",
+      "valor": 117,
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 117,
+        "pasos": [
+          {
+            "texto": "Años desde Gn 24 al recibir a Jacob (cálculo anterior: 20 + 77)",
+            "valor": 97,
+            "ref": "Gn 29:13",
+            "cita": "corrió á recibirlo, y abrazólo, y besólo, y trájole á su casa"
+          },
+          {
+            "texto": "Años de Jacob en casa de Labán",
+            "valor": 20,
+            "ref": "Gn 31:41",
+            "cita": "Así he estado veinte años en tu casa"
+          }
+        ],
+        "supuestos": [
+          "La persecución y el pacto de Galaad (Gn 31:22-55) ocurren al acabar los veinte años: se alcanzan en siete días de camino (Gn 31:23)",
+          "Hereda el margen del cálculo anterior"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un hombre mayor que aparenta unos setenta y cinco años, canoso, curtido y todavía fuerte",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto no da su edad: en la hoja LABAN se le dio unos treinta en Gn 24 (interpretación), y por cálculo han pasado de noventa y siete a ciento diecisiete años. El texto no dice qué aspecto tenía alguien de esa edad en una familia que vivía tanto (Abraham llegó a los ciento setenta y cinco, Gn 25:7). Sigue activo: corre a recibir a Jacob (Gn 29:13), va a trasquilar sus ovejas (Gn 31:19) y persigue a Jacob siete días (Gn 31:23). Como Abraham en su hoja, se le dibuja claramente viejo pero no decrépito, y claramente mayor que JACOB_MAYOR, que aparenta unos sesenta en gn-66 a gn-68."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Los pastores de Harán lo conocen",
+      "certeza": "texto",
+      "ref": "Gn 29:5",
+      "cita": "¿Conocéis á Labán, hijo de Nachôr? Y ellos dijeron: Sí, le conocemos",
+      "nota": "Jacob lo llama «hijo de Nachôr»; otros versículos lo hacen hijo de Betuel (Gn 28:5) y, por tanto, nieto de Nacor (Gn 24:15). La ficha no lo resuelve: no cambia su aspecto."
+    },
+    {
+      "rasgo": "Corre a recibir a Jacob, lo abraza, lo besa y lo lleva a su casa",
+      "certeza": "texto",
+      "ref": "Gn 29:13",
+      "cita": "corrió á recibirlo, y abrazólo, y besólo, y trájole á su casa"
+    },
+    {
+      "rasgo": "Lo reconoce como de su sangre",
+      "certeza": "texto",
+      "ref": "Gn 29:14",
+      "cita": "Ciertamente hueso mío y carne mía eres"
+    },
+    {
+      "rasgo": "Le pregunta qué quiere de salario",
+      "certeza": "texto",
+      "ref": "Gn 29:15",
+      "cita": "¿Por ser tú mi hermano, me has de servir de balde? declárame qué será tu salario"
+    },
+    {
+      "rasgo": "Tiene dos hijas, Lea y Raquel",
+      "certeza": "texto",
+      "ref": "Gn 29:16",
+      "cita": "Y Labán tenía dos hijas"
+    },
+    {
+      "rasgo": "Reúne a todos los varones del lugar y hace banquete",
+      "certeza": "texto",
+      "ref": "Gn 29:22",
+      "cita": "Labán juntó á todos los varones de aquel lugar, é hizo banquete"
+    },
+    {
+      "rasgo": "De noche le lleva a Lea en lugar de Raquel",
+      "certeza": "texto",
+      "ref": "Gn 29:23",
+      "cita": "á la noche tomó á Lea su hija, y se la trajo"
+    },
+    {
+      "rasgo": "Se justifica con la costumbre del lugar",
+      "certeza": "texto",
+      "ref": "Gn 29:26",
+      "cita": "No se hace así en nuestro lugar, que se dé la menor antes de la mayor"
+    },
+    {
+      "rasgo": "Reconoce que Jehová lo ha bendecido por causa de Jacob",
+      "certeza": "texto",
+      "ref": "Gn 30:27",
+      "cita": "experimentado he que Jehová me ha bendecido por tu causa"
+    },
+    {
+      "rasgo": "Tenía poco antes de que llegara Jacob",
+      "certeza": "texto",
+      "ref": "Gn 30:30",
+      "cita": "Porque poco tenías antes de mi venida, y ha crecido en gran número"
+    },
+    {
+      "rasgo": "Tras apartar el ganado manchado (Gn 30:35), pone tres días de camino entre él y Jacob",
+      "certeza": "texto",
+      "ref": "Gn 30:36",
+      "cita": "puso tres días de camino entre sí y Jacob"
+    },
+    {
+      "rasgo": "Su semblante cambia con Jacob",
+      "certeza": "texto",
+      "ref": "Gn 31:2",
+      "cita": "Miraba también Jacob el semblante de Labán, y veía que no era para con él como ayer y antes de ayer"
+    },
+    {
+      "rasgo": "Según Jacob, le ha mudado el salario diez veces",
+      "certeza": "texto",
+      "ref": "Gn 31:7",
+      "cita": "me ha mudado el salario diez veces"
+    },
+    {
+      "rasgo": "Está trasquilando sus ovejas cuando Jacob huye",
+      "certeza": "texto",
+      "ref": "Gn 31:19",
+      "cita": "Labán había ido á trasquilar sus ovejas"
+    },
+    {
+      "rasgo": "Es arameo",
+      "certeza": "texto",
+      "ref": "Gn 31:20",
+      "cita": "recató Jacob el corazón de Labán Arameo"
+    },
+    {
+      "rasgo": "Persigue a Jacob siete días con sus hermanos",
+      "certeza": "texto",
+      "ref": "Gn 31:23",
+      "cita": "tomó á sus hermanos consigo, y fué tras él camino de siete días"
+    },
+    {
+      "rasgo": "Dios le advierte en sueños",
+      "certeza": "texto",
+      "ref": "Gn 31:24",
+      "cita": "Guárdate que no hables á Jacob descomedidamente"
+    },
+    {
+      "rasgo": "Se queja de no haber podido despedirlos con música",
+      "certeza": "texto",
+      "ref": "Gn 31:27",
+      "cita": "para que yo te enviara con alegría y con cantares, con tamborín y vihuela"
+    },
+    {
+      "rasgo": "Reclama sus dioses",
+      "certeza": "texto",
+      "ref": "Gn 31:30",
+      "cita": "¿por qué me hurtaste mis dioses?"
+    },
+    {
+      "rasgo": "Registra las tiendas y no halla los ídolos",
+      "certeza": "texto",
+      "ref": "Gn 31:34",
+      "cita": "tentó Labán toda la tienda, y no los halló"
+    },
+    {
+      "rasgo": "Dice que todo lo que ve es suyo",
+      "certeza": "texto",
+      "ref": "Gn 31:43",
+      "cita": "todo lo que tú ves es mío"
+    },
+    {
+      "rasgo": "Propone una alianza",
+      "certeza": "texto",
+      "ref": "Gn 31:44",
+      "cita": "hagamos alianza yo y tú"
+    },
+    {
+      "rasgo": "Llama al majano Jegar Sahadutha",
+      "certeza": "texto",
+      "ref": "Gn 31:47",
+      "cita": "llamólo Labán Jegar Sahadutha"
+    },
+    {
+      "rasgo": "A la mañana besa a sus hijos y a sus hijas, los bendice y vuelve a su lugar",
+      "certeza": "texto",
+      "ref": "Gn 31:55",
+      "cita": "levantóse Labán de mañana, y besó sus hijos y sus hijas, y los bendijo; y retrocedió y volvióse á su lugar"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja LABAN, viejo: piel morena oliva curtida, ojos oscuros rápidos bajo cejas espesas canosas; pelo abundante y natural, gris casi blanco, hasta la nuca; barba gris casi blanca, más larga, acabada en punta bajo el mentón; arrugas marcadas en la frente y junto a los ojos; ancho de hombros y todavía fuerte; gesto expansivo y cordial, con una mirada atenta y calculadora",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. Se conservan los rasgos de la hoja LABAN (hombres de Asia occidental del mural de Beni Hasan, A2) para que se le reconozca; las canas y las arrugas, a su edad (cálculos de arriba). Lo cordial sale de cómo recibe a Jacob (Gn 29:13-14); lo calculador, del cambio de novia y del salario (Gn 29:23-26; Gn 31:7), sin caricatura de villano.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma túnica que en la hoja LABAN: lana hasta la rodilla con dibujos en zigzag rojos y blancos, sujeta sobre el hombro izquierdo; el mismo cinturón ancho de tela azul oscuro; además, un manto liso de lana pardo oscuro sobre los hombros que cubre el hombro derecho; sandalias de correas; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 31 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de la hoja LABAN (Beni Hasan, A2) para que se le reconozca. El manto pardo es elección del ilustrador, por la edad y por los viajes de Gn 31 (trasquila, persigue siete días).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is an old townsman and flock owner from western Asia who looks about seventy-five, broad-shouldered and still strong, with weathered olive-brown skin, quick dark eyes under thick greying brows, deep lines across his forehead and around his eyes, thick natural hair that is grey, almost white, and reaches the nape of his neck, and a longer grey, almost white beard trimmed to a point below the chin. His head is bare, with nothing tied around it. His expression is expansive and cordial, with an attentive, calculating look. He wears a knee-length wool tunic woven with red and white zigzag patterns in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, fastened over the left shoulder, a broad dark blue cloth sash at the waist, a plain dark brown wool cloak over his shoulders and leather sandals with straps. His arms hang at his sides and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre viejo de ciudad de Asia occidental, dueño de ganado, que aparenta unos setenta y cinco años, ancho de hombros y todavía fuerte; piel morena oliva curtida, ojos oscuros rápidos bajo cejas espesas canosas, arrugas marcadas en la frente y junto a los ojos; pelo abundante y natural, gris casi blanco, hasta la nuca, y barba gris casi blanca, más larga, acabada en punta bajo el mentón. Cabeza descubierta, sin nada atado. Gesto expansivo y cordial, con una mirada atenta y calculadora. Túnica de lana hasta la rodilla con dibujos en zigzag rojos y blancos, al modo de los asiáticos de las tumbas egipcias del Reino Medio, sujeta sobre el hombro izquierdo; cinturón ancho de tela azul oscuro, manto liso de lana pardo oscuro sobre los hombros y sandalias de correas. Brazos a los lados, manos vacías.",
+    "negativo_en": "Do not put a headband, a cord or a cloth on his head. Do not make him frail, bent, bald or sickly, and do not make him look younger than seventy. Do not make him sneer or look like a cartoon villain. Do not give him bracelets, rings, earrings or any jewelry, and do not show gold. Do not dress him in Egyptian white linen, a turban, a crown or armor, and do not give him a staff or a weapon. Do not paint a house, sheep, figurines or any other person, and keep the background plain.",
+    "negativo_es": "Sin cinta, cordón ni paño en la cabeza; que no sea frágil, encorvado, calvo ni enfermizo, ni parezca menor de setenta años; sin mueca ni aire de villano de dibujos; sin brazaletes, anillos, aretes ni joyas; sin oro a la vista; sin lino blanco egipcio, turbante, corona ni armadura; sin cayado ni armas; sin casa, ovejas, figurillas ni otras personas; fondo liso."
+  }
+}

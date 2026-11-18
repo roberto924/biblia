@@ -1,0 +1,33 @@
+# El pozo en el campo, cerca de Harán (Gn 29:1-12) (escenario)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `POZO_HARAN` (lugar)
+- **Pasajes**: gn-61
+- **Nota**: No está en el catálogo de juego (decisión pendiente n.º 56 de guiones/LEEME.md); el catálogo pone Gn 29–31 en el escenario «padan-aram», que es toda la región. No es el pozo de Gn 24 (escenario pozo-nacor): aquel estaba «fuera de la ciudad», se bajaba a la fuente y tenía una pila; este está «en el campo» y tiene una gran piedra sobre la boca, y el texto no dice que sean el mismo. La piedra es parte de la hoja: se dibuja cubriendo la boca, y la toma de Gn 29:10 la muestra apartada. Los rebaños y los pastores (personajes/pastores-haran) entran en sus tomas. Sin la lámina 1, como los demás paisajes abiertos (decisión n.º 37).
+
+## Lo que dice el texto
+
+- **Texto**: Jacob llega a la tierra de los orientales — Gn 29:1: «fué á la tierra de los orientales»
+- **Texto**: Un pozo en el campo, con rebaños echados cerca y una gran piedra sobre la boca — Gn 29:2: «vió un pozo en el campo: y he aquí tres rebaños de ovejas que yacían cerca de él; porque de aquel pozo abrevaban los ganados: y había una gran piedra sobre la boca del pozo»
+- **Texto**: Cuando se juntan todos los rebaños, ruedan la piedra, abrevan y la vuelven a su sitio — Gn 29:3: «Y juntábanse allí todos los rebaños; y revolvían la piedra de sobre la boca del pozo, y abrevaban las ovejas; y volvían la piedra sobre la boca del pozo á su lugar»
+- **Texto**: Los pastores son de Harán — Gn 29:4: «De Harán somos»
+- **Texto**: Es todavía pleno día — Gn 29:7: «He aquí el día es aún grande; no es tiempo todavía de recoger el ganado»
+- **Texto**: Jacob aparta la piedra él solo y abreva el ganado de Labán — Gn 29:10: «llegóse Jacob, y removió la piedra de sobre la boca del pozo, y abrevó el ganado de Labán»
+- **Inferido**: La piedra es pesada: de ordinario la mueven entre todos los pastores — Los pastores esperan a que se junten todos los ganados para removerla (Gn 29:3, 29:8). Que se pueda «revolver» sugiere una piedra que se rueda o se arrastra, no que se levanta. — base: Gn 29:8 «No podemos, hasta que se junten todos los ganados, y remuevan la piedra de sobre la boca del pozo»
+
+## Rasgos
+
+- **Interpretación del ilustrador**: Campo abierto de hierba rala y tierra seca, con colinas bajas y lisas a lo lejos y ningún pueblo a la vista; en el centro, la boca redonda de un pozo, rodeada de un brocal bajo de piedras toscas casi a ras de suelo y tapada por una gran piedra redonda, plana y gruesa; al lado, una pila larga y baja de piedra para abrevar; tierra pisada por el ganado alrededor; sol alto y luz clara de pleno día — Interpretación del ilustrador: el campo, la gran piedra sobre la boca y el pleno día salen del texto (arriba); la forma redonda de la piedra, el brocal y la pila son elección, sin referencia de época comprobada. El pueblo no se dibuja porque el texto solo dice «en el campo».
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/escenarios/pozo-haran.png`; luego subirla a Cinema Studio como Element `POZO_HARAN`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (no `patron-1-paisaje.png`: copiaba su composición).
+
+_Una sola vista general de un pozo en campo abierto del antiguo Oriente Próximo a mediodía, sin personas ni animales. El terreno es pasto abierto de hierba rala y tierra seca, con colinas bajas y lisas a lo lejos y ningún pueblo a la vista. En el centro, la boca redonda de un pozo, rodeada de un brocal bajo de piedras toscas casi a ras de suelo, tapada por una sola piedra grande, gruesa, plana y redonda. Junto al pozo hay una pila larga y baja de piedra para abrevar, y la tierra alrededor está pisada por muchas pezuñas. El sol está alto y la luz es clara y viva._ Evitar: _Sin rama ni hojas de árbol colgando en una esquina como marco. Sin paneles ni dos momentos lado a lado. Sin polea, torno, tejadillo sobre el pozo, cubo con cadena, escalones que bajen ni fuente tallada, y que la piedra no sea una muela con agujero. Sin pueblo, murallas, casas, personas, ovejas ni otros animales._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make one single establishing view of a well in the open countryside of the ancient Near East at midday, with no people and no animals in it. The land is open pasture of sparse grass and dry earth, with low, smooth hills far away and no town in sight. In the middle, the round mouth of a well is ringed by a low curb of rough stones almost level with the ground, and it is covered by one big, thick, flat, round stone. Beside the well lies a long, low stone trough for watering animals, and the earth around is trodden by many hooves. The sun is high and the light is clear and bright. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not split the picture into panels or show two moments side by side. Do not add a pulley, a winch, a roof over the well, a bucket on a chain, steps going down or a carved fountain, and do not make the stone a millstone with a hole. Do not paint a town, walls, houses, people, sheep or any other animals.
+```

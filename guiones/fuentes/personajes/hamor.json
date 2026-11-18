@@ -1,0 +1,109 @@
+{
+  "id": "hamor",
+  "nombre": "Hamor el heveo, padre de Siquem",
+  "personas": [
+    "Hamor_1"
+  ],
+  "pasajes": [
+    "gn-72",
+    "gn-73"
+  ],
+  "element": {
+    "nombre": "HAMOR",
+    "tipo": "personaje"
+  },
+  "nota": "Habla dos veces: a Jacob y a sus hijos (Gn 34:8-10) y, con su hijo, a los varones de su ciudad en la puerta (Gn 34:21-23). En gn-71 el texto dice que Jacob compra el campo «de mano de los hijos de Hamor» (Gn 33:19), sin que Hamor aparezca: no hace falta mostrarlo allí. Su muerte (Gn 34:26) no se muestra en ningún perfil (decisión pendiente n.º 59 de guiones/LEEME.md).",
+  "edades": [
+    {
+      "dato": "Edad visual: un hombre de unos cincuenta y cinco años",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da su edad. Padre de un mozo en edad de casarse (Gn 34:4, 34:19) y de otros hijos (Gn 33:19), y todavía al frente de su ciudad (Gn 34:20-24)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Sus hijos venden a Jacob una parte del campo",
+      "certeza": "texto",
+      "ref": "Gn 33:19",
+      "cita": "de mano de los hijos de Hamor, padre de Sichêm, por cien piezas de moneda"
+    },
+    {
+      "rasgo": "Es heveo",
+      "certeza": "texto",
+      "ref": "Gn 34:2",
+      "cita": "hijo de Hamor Heveo"
+    },
+    {
+      "rasgo": "Va a Jacob para hablar con él",
+      "certeza": "texto",
+      "ref": "Gn 34:6",
+      "cita": "dirigióse Hamor padre de Sichêm á Jacob, para hablar con él"
+    },
+    {
+      "rasgo": "Pide a Dina para su hijo",
+      "certeza": "texto",
+      "ref": "Gn 34:8",
+      "cita": "El alma de mi hijo Sichêm se ha apegado á vuestra hija"
+    },
+    {
+      "rasgo": "Propone emparentar, morar y negociar en la tierra",
+      "certeza": "texto",
+      "ref": "Gn 34:9-10",
+      "cita": "morad y negociad en ella, y tomad en ella posesión"
+    },
+    {
+      "rasgo": "Con su hijo, convence a los varones de su ciudad en la puerta",
+      "certeza": "texto",
+      "ref": "Gn 34:20",
+      "cita": "hablaron á los varones de su ciudad"
+    },
+    {
+      "rasgo": "Con su hijo, dice a los suyos que el ganado de Jacob será de ellos (Gn 34:20-23 lo hablan los dos)",
+      "certeza": "texto",
+      "ref": "Gn 34:23",
+      "cita": "Sus ganados, y su hacienda y todas sus bestias, serán nuestras"
+    },
+    {
+      "rasgo": "Le obedecen todos los que salen por la puerta",
+      "certeza": "texto",
+      "ref": "Gn 34:24",
+      "cita": "obedecieron á Hamor y á Sichêm su hijo todos los que salían por la puerta de la ciudad"
+    },
+    {
+      "rasgo": "Muere con su hijo a filo de espada (no se muestra)",
+      "certeza": "texto",
+      "ref": "Gn 34:26",
+      "cita": "á Hamor y á Sichêm su hijo los mataron á filo de espada"
+    },
+    {
+      "rasgo": "Piel morena oliva curtida, ojos oscuros atentos con arrugas en los extremos; pelo oscuro abundante y natural hasta la nuca, muy entrecano; barba recortada en punta, gris con mechones oscuros; gesto cortés y persuasivo, de hombre acostumbrado a negociar",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no lo describe. El gesto sale de cómo habla a Jacob (Gn 34:8-10) y a su ciudad (Gn 34:21-23); las canas lo distinguen de su hijo a primera vista.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de lana hasta media pierna que cubre los dos hombros, de dibujos ricos en rojo oscuro, azul y blanco, a juego con la de su hijo; manto liso azul oscuro; faja de tela ocre; sandalias de cuero con correas; cabeza descubierta, sin nada atado; sin corona ni joyas",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Como los jefes del cortejo de Beni Hasan (A2), más larga y con manto por la edad y el rango, y sin corona, como los reyes de Canaán de la n.º 17. Los mismos colores que su hijo para que se lean como una casa.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Hombre de unos cincuenta y cinco años, voz grave y cálida, cortés, de negociante seguro de sí, español neutro. Gn 34:8-10: conciliador y generoso con Jacob y sus hijos. Gn 34:21-23: convincente con los suyos y, al llegar a «serán nuestras», calculador sin dejar de sonar amable. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is the head of a leading family of a Canaanite town in the ancient Near East, a man of about fifty-five with weathered olive-brown skin, attentive dark eyes with lines at their corners, thick natural hair that reaches the nape of his neck, dark but heavily streaked with grey, and a beard trimmed to a point, grey with dark streaks. His head is bare, with nothing tied around it. His expression is courteous and persuasive, like a man used to bargaining. He wears a wool tunic that reaches his mid-calf and covers both shoulders, woven with rich patterns in dark red, blue and white in the style of the leaders of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a plain dark blue wool cloak, an ochre cloth sash and leather sandals with straps. His hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Cabeza de una familia principal de una ciudad cananea del antiguo Oriente Próximo, de unos cincuenta y cinco años; piel morena oliva curtida, ojos oscuros atentos con arrugas en los extremos, pelo abundante y natural hasta la nuca, oscuro pero muy entrecano, y barba recortada en punta, gris con mechones oscuros. Cabeza descubierta, sin nada atado. Gesto cortés y persuasivo, de hombre acostumbrado a negociar. Túnica de lana hasta media pierna que cubre los dos hombros, con dibujos ricos en rojo oscuro, azul y blanco, al modo de los jefes asiáticos de las tumbas egipcias del Reino Medio; manto liso de lana azul oscuro, faja de tela ocre y sandalias de cuero con correas. Manos vacías.",
+    "negativo_en": "Do not make him look like a cartoon villain, greedy or menacing. Do not give him a crown, a diadem, a turban, a headband, earrings, bracelets, rings or other jewelry, a staff of office, a weapon or Egyptian white linen. Do not show blood, wounds or any other person, and keep the background plain.",
+    "negativo_es": "Que no parezca un villano de dibujo, codicioso ni amenazante. Sin corona, diadema, turbante, cinta en la cabeza, pendientes, brazaletes, anillos ni otras joyas, bastón de mando, armas ni lino blanco egipcio. Sin sangre, heridas ni otras personas; fondo liso."
+  }
+}

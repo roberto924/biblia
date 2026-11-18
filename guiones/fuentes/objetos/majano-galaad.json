@@ -1,0 +1,83 @@
+{
+  "id": "majano-galaad",
+  "nombre": "El majano y el título de Galaad",
+  "pasajes": [
+    "gn-68"
+  ],
+  "element": {
+    "nombre": "MAJANO_GALAAD",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. Son dos cosas que el texto nombra juntas: el título, una piedra que Jacob levanta (Gn 31:45), y el majano, un montón de piedras que hacen entre todos (Gn 31:46); se dibujan juntos, sobre el monte del escenario GALAAD. El título de Betel (Gn 28:18) es otra piedra, de otro pasaje: esta hoja no la copia. Los sacrificios de Gn 31:54 no son parte de la hoja y no se muestran de forma gráfica (decisión pendiente n.º 54 de guiones/LEEME.md).",
+  "texto": [
+    {
+      "dato": "Jacob levanta una piedra por título",
+      "certeza": "texto",
+      "ref": "Gn 31:45",
+      "cita": "Jacob tomó una piedra, y levantóla por título"
+    },
+    {
+      "dato": "Hacen un majano con piedras y comen allí, sobre él",
+      "certeza": "texto",
+      "ref": "Gn 31:46",
+      "cita": "tomaron piedras é hicieron un majano; y comieron allí sobre aquel majano"
+    },
+    {
+      "dato": "Labán lo llama Jegar Sahadutha y Jacob, Galaad",
+      "certeza": "texto",
+      "ref": "Gn 31:47",
+      "cita": "llamólo Labán Jegar Sahadutha: y lo llamó Jacob Galaad"
+    },
+    {
+      "dato": "Es testigo entre los dos",
+      "certeza": "texto",
+      "ref": "Gn 31:48",
+      "cita": "Este majano es testigo hoy entre mí y entre ti"
+    },
+    {
+      "dato": "También se llama Mizpa",
+      "certeza": "texto",
+      "ref": "Gn 31:49",
+      "cita": "Y Mizpa, por cuanto dijo: Atalaye Jehová entre mí y entre ti"
+    },
+    {
+      "dato": "Ninguno pasará el majano ni el título contra el otro",
+      "certeza": "texto",
+      "ref": "Gn 31:52",
+      "cita": "ni yo pasaré contra ti este majano, ni tú pasarás contra mí este majano ni este título, para mal"
+    },
+    {
+      "dato": "El título es una sola piedra puesta de pie; el majano, muchas piedras juntadas por varios",
+      "certeza": "inferido",
+      "nota": "Jacob toma «una piedra» y la levanta (Gn 31:45); el majano lo hacen «tomaron piedras», en plural, a la orden de Jacob (Gn 31:46). Que se coma «sobre» él sugiere un montón ancho y no muy alto.",
+      "base": [
+        {
+          "ref": "Gn 31:45",
+          "cita": "levantóla por título"
+        },
+        {
+          "ref": "Gn 31:46",
+          "cita": "Coged piedras"
+        }
+      ]
+    },
+    {
+      "dato": "Majano: montón de piedras sueltas",
+      "certeza": "externa",
+      "fuente": "Explicación del proyecto «majano» (herramientas/explicaciones/terminos-palabras.json), que cita el Wikcionario en español, entrada «majano»."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Un montón ancho y bajo de piedras del campo sin labrar, grises y ocres, de tamaños distintos, más o menos a la altura de la rodilla y con la parte de arriba bastante plana; junto a él, una sola piedra alargada y tosca, puesta de pie y calzada con piedras pequeñas en la base, algo más alta que un hombre",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no da tamaños. La altura del montón sale de que comen sobre él (inferido); la de la piedra y su forma son elección, sin inscripción ni talla porque el texto no las nombra."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same stone monument twice side by side: on the left a front view, and on the right a three-quarter view from slightly above. It is a wide, low heap of rough, uncut field stones of different sizes in grey and ochre, piled up to about knee height with a fairly flat top, and next to it a single long, rough stone set upright, a little taller than a man, wedged at its base with small stones. The stones are bare, with no carving and no writing. Nobody is near it.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo monumento de piedra dos veces, uno al lado de otro: a la izquierda, de frente; a la derecha, en tres cuartos, algo desde arriba. Un montón ancho y bajo de piedras del campo toscas y sin labrar, de tamaños distintos, grises y ocres, apiladas hasta más o menos la altura de la rodilla, con la parte de arriba bastante plana; junto a él, una sola piedra alargada y tosca puesta de pie, algo más alta que un hombre, calzada en la base con piedras pequeñas. Las piedras están desnudas, sin talla ni escritura. No hay nadie cerca.",
+    "negativo_en": "Do not make it a carved monument, an obelisk, a statue, a tower, a wall or an altar with fire. Do not add writing, symbols, carvings, oil, flowers or offerings. Do not make the stones glow. Do not show people, food, animals, tents or a landscape, and keep the background plain.",
+    "negativo_es": "Que no sea un monumento tallado, un obelisco, una estatua, una torre, un muro ni un altar con fuego; sin escritura, símbolos, tallas, aceite, flores ni ofrendas; que las piedras no brillen; sin personas, comida, animales, tiendas ni paisaje; fondo liso."
+  }
+}

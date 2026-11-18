@@ -1,0 +1,75 @@
+{
+  "id": "pozos-isaac",
+  "nombre": "Los pozos de Isaac: cegados y reabiertos (Gn 26)",
+  "pasajes": [
+    "gn-54",
+    "gn-55"
+  ],
+  "element": {
+    "nombre": "POZOS_ISAAC",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. La hoja fija cómo se ven los pozos de Isaac en sus dos estados: cegado y lleno de tierra (Gn 26:15, 26:18) y abierto, con agua (Gn 26:18-22, 26:25, 26:32). Sirve para los pozos que reabre, para Esek, Sitna y Rehobot (Gn 26:20-22) y para el que abren en Beer-seba (Gn 26:25, 26:32): el texto no describe ninguno, así que se usa la misma forma, la del pozo de Abraham en Beer-seba (objetos/pozo-beerseba) para que se reconozcan como «los pozos de su padre» (Gn 26:18). Los lugares son el valle de Gerar (escenarios/valle-gerar) y Beer-seba (escenarios/beerseba).",
+  "texto": [
+    {
+      "dato": "Los filisteos habían cegado y llenado de tierra los pozos de Abraham",
+      "certeza": "texto",
+      "ref": "Gn 26:15",
+      "cita": "todos los pozos que habían abierto los criados de Abraham su padre en sus días, los Filisteos los habían cegado y llenado de tierra"
+    },
+    {
+      "dato": "Isaac vuelve a abrir los pozos de su padre",
+      "certeza": "texto",
+      "ref": "Gn 26:18",
+      "cita": "volvió á abrir Isaac los pozos de agua que habían abierto en los días de Abraham su padre"
+    },
+    {
+      "dato": "En el valle hallan un pozo de aguas vivas",
+      "certeza": "texto",
+      "ref": "Gn 26:19",
+      "cita": "hallaron allí un pozo de aguas vivas"
+    },
+    {
+      "dato": "Esek: por el altercado",
+      "certeza": "texto",
+      "ref": "Gn 26:20",
+      "cita": "llamó el nombre del pozo Esek, porque habían altercado con él"
+    },
+    {
+      "dato": "Sitna: también riñen por él",
+      "certeza": "texto",
+      "ref": "Gn 26:21",
+      "cita": "llamó su nombre Sitnah"
+    },
+    {
+      "dato": "Rehobot: no riñen por él",
+      "certeza": "texto",
+      "ref": "Gn 26:22",
+      "cita": "abrió otro pozo, y no riñeron sobre él: y llamó su nombre Rehoboth"
+    },
+    {
+      "dato": "En Beer-seba abren otro pozo y hallan agua",
+      "certeza": "texto",
+      "ref": "Gn 26:25-32",
+      "cita": "Agua hemos hallado"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Pozo cegado: el mismo brocal bajo de piedras de campo sin labrar, a la altura de la rodilla, con la boca llena casi hasta arriba de tierra apisonada y piedras",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice cegado y lleno de tierra (Gn 26:15). Se conserva el brocal para que se entienda que ahí había un pozo."
+    },
+    {
+      "dato": "Pozo abierto: boca redonda forrada de piedras de campo sin labrar con brocal bajo; dentro, oscuridad y un reflejo de agua al fondo; al lado, un montón de tierra recién sacada",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: la misma forma que la hoja POZO_BEERSEBA; el montón de tierra, de que lo acaban de abrir (Gn 26:18-19). Sin polea ni tejadillo."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same kind of well twice, side by side. On the left is a stopped-up well: a low ring of rough, uncut field stones about knee high, with its opening filled almost to the top with packed earth and stones. On the right is the same kind of well opened again: a round opening lined with rough, uncut field stones and a low ring of the same stones, dark inside with a faint glint of water far below, and beside it a heap of freshly dug, pale earth. Both stand on dry, pale ground.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso, con el mismo tipo de pozo dos veces, uno al lado del otro. A la izquierda, un pozo cegado: un brocal bajo de piedras de campo toscas sin labrar, a la altura de la rodilla, con la boca llena casi hasta arriba de tierra apisonada y piedras. A la derecha, el mismo tipo de pozo abierto de nuevo: boca redonda forrada de piedras de campo toscas sin labrar y un brocal bajo de las mismas piedras, oscuro por dentro con un leve reflejo de agua al fondo, y a su lado un montón de tierra clara recién sacada. Los dos sobre suelo seco y claro.",
+    "negativo_en": "Do not add a pulley, a winch, a roof, a bucket on a chain, bricks or carved stone, and do not make either well a fountain. Do not paint people, tools, animals, trees, tents or buildings, and keep the background plain.",
+    "negativo_es": "Sin polea, torno, tejadillo, cubo con cadena, ladrillos ni piedra labrada, y que ninguno sea una fuente; sin personas, herramientas, animales, árboles, tiendas ni edificios; fondo liso."
+  }
+}

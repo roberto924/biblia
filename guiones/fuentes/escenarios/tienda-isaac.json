@@ -1,0 +1,69 @@
+{
+  "id": "tienda-isaac",
+  "nombre": "Dentro de la tienda de Isaac (Gn 27)",
+  "pasajes": [
+    "gn-56",
+    "gn-57",
+    "gn-58",
+    "gn-59"
+  ],
+  "element": {
+    "nombre": "TIENDA_ISAAC",
+    "tipo": "lugar"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 45 de guiones/LEEME.md). Es el interior donde Isaac, viejo y ciego, está acostado (se infiere porque le piden que se levante, Gn 27:19, 27:31) y donde llama a Esaú, recibe a Jacob disfrazado y bendice (Gn 27:1-40), y donde después bendice y envía a Jacob (Gn 28:1-5), si el guion lo pone aquí. El texto no dice que sea una tienda ni cómo es: se infiere (abajo). Una cortina de pelo de cabra parte el interior, para que Rebeca pueda oír sin estar a la vista (Gn 27:5): es interpretación del ilustrador. Rebeca guisa y viste a Jacob (Gn 27:9-17) en otro lugar del campamento que el texto no describe: lo decide el guion (exterior: escenarios/beerseba). La forma de la tienda copia la hoja TIENDA_ABRAM (objetos/tienda-abram).",
+  "texto": [
+    {
+      "dato": "Isaac tiende su tienda en Beer-seba",
+      "certeza": "texto",
+      "ref": "Gn 26:25",
+      "cita": "tendió allí su tienda"
+    },
+    {
+      "dato": "Jacob le pide que se levante y se siente a comer (de ahí se infiere que está acostado)",
+      "certeza": "texto",
+      "ref": "Gn 27:19",
+      "cita": "levántate ahora, y siéntate, y come de mi caza"
+    },
+    {
+      "dato": "Rebeca oye lo que Isaac dice a Esaú",
+      "certeza": "texto",
+      "ref": "Gn 27:5",
+      "cita": "Rebeca estaba oyendo, cuando hablaba Isaac á Esaú su hijo"
+    },
+    {
+      "dato": "Rebeca guarda en casa los vestidos de Esaú",
+      "certeza": "texto",
+      "ref": "Gn 27:15",
+      "cita": "los preciosos, que ella tenía en casa"
+    },
+    {
+      "dato": "Gn 27 ocurre en la tienda de Isaac, en Beer-seba",
+      "certeza": "inferido",
+      "nota": "Gn 27 no dice dónde. La última morada de Isaac que da el texto es su tienda en Beer-seba (Gn 26:25), y Jacob sale de Beer-seba hacia Harán (Gn 28:10). «Casa» (Gn 27:15) es la casa de la familia, no dice que sea un edificio.",
+      "base": [
+        {
+          "ref": "Gn 26:25",
+          "cita": "tendió allí su tienda"
+        },
+        {
+          "ref": "Gn 28:10",
+          "cita": "salió Jacob de Beer-seba"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Interior amplio y bajo de una tienda de paños oscuros de pelo de cabra sobre postes de madera, con el techo algo combado entre ellos; un lado largo abierto por donde entra la luz del día; en el suelo, esteras tejidas; al fondo, un lecho bajo de mantas de lana dobladas y un cojín, vacío; tinajas de barro y una lamparilla de aceite apagada sobre una piedra; a un lado, una cortina de pelo de cabra que cuelga de una cuerda y parte el interior",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe dónde está Isaac. El lecho sale de que se infiere que está acostado (Gn 27:19); la cortina, de que Rebeca oye sin que se diga que está delante (Gn 27:5); la forma de la tienda, de la hoja TIENDA_ABRAM, que es supuesto."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make one single establishing view of the inside of a large herdsman's tent in the dry south of Canaan in the ancient Near East, by day, with no people in it. The low roof of long, dark brown-black goat-hair cloth sags gently between rows of plain wooden poles, and one long side is open, letting in warm daylight that falls across the floor. The floor is covered with plain woven mats. At the back there is a low bed of folded wool blankets with a cushion, empty. Clay storage jars stand along one side, and a small unlit clay oil lamp rests on a flat stone. To one side, a curtain of dark goat-hair cloth hangs from a rope and divides the inside of the tent.",
+    "prompt_es": "Una sola vista general del interior de una tienda grande de pastores del sur seco de Canaán, en el antiguo Oriente Próximo, de día y sin personas. El techo bajo de largas tiras de paño de pelo de cabra pardo oscuro casi negro se comba un poco entre hileras de postes sencillos de madera, y un lado largo está abierto y deja entrar la luz cálida del día, que cae sobre el suelo. El suelo está cubierto de esteras tejidas lisas. Al fondo, un lecho bajo de mantas de lana dobladas con un cojín, vacío. Unas tinajas de barro a lo largo de un lado y una lamparilla de aceite de barro, apagada, sobre una piedra plana. A un lado, una cortina de paño oscuro de pelo de cabra cuelga de una cuerda y parte el interior.",
+    "negativo_en": "Do not frame the picture with an overhanging tree branch or leaves in a corner. Do not paint lotus, papyrus or other Egyptian motifs, friezes or painted bands on the cloth or on any wall. Do not split the picture into panels or show two moments side by side. Do not make it a palace, a house of brick, a white pavilion or a tent with rich carpets, cushions piled high, metal lamps or furniture. Do not paint food, clothes, skins, people or animals.",
+    "negativo_es": "Sin rama ni hojas de árbol colgando en una esquina como marco. Sin lotos, papiros ni otros motivos egipcios, ni frisos ni franjas pintadas en los paños ni en ninguna pared. Sin paneles ni dos momentos lado a lado. Que no sea un palacio, una casa de ladrillo, un pabellón blanco ni una tienda con alfombras ricas, montones de cojines, lámparas de metal ni muebles. Sin comida, ropa, pieles, personas ni animales."
+  }
+}

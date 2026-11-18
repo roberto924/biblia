@@ -1,0 +1,165 @@
+{
+  "id": "esau-mayor",
+  "nombre": "Esaú mayor (Gn 32–36)",
+  "personas": [
+    "Esau_1"
+  ],
+  "pasajes": [
+    "gn-69",
+    "gn-71",
+    "gn-75",
+    "gn-76"
+  ],
+  "element": {
+    "nombre": "ESAU_MAYOR",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para cuando Jacob vuelve de Harán y Esaú sale a recibirlo desde Seir con cuatrocientos hombres (Gn 32:3-6, 33:1-16), para el entierro de Isaac (Gn 35:29) y para Gn 36. Sus pasajes los anota el redactor de Gn 32–36: esta hoja se hace aquí para que el aspecto de Esaú tenga un solo dueño (decisión pendiente n.º 38 de guiones/LEEME.md). Es el mismo hombre de ESAU_JOVEN y ESAU_ADULTO, unos veinte años después (si se genera a mano en ChatGPT, adjuntar también la imagen de ESAU_ADULTO), con la misma edad visual que JACOB_MAYOR: son mellizos. Ahora es cabeza de mucha gente (Gn 32:6, 36:6-7): se le añade un manto, y conserva la túnica terracota, el vello, el pelo y la barba cobrizos, ya con canas, y el arco y la aljaba a la espalda para que se le reconozca. En gn-69 no está con Jacob: solo puede verse, si el guion lo pone, cuando los mensajeros llegan a él (Gn 32:3-6). Los cuatrocientos hombres no llevan hoja aquí. Su voz es la de esau-joven (decisión pendiente n.º 27). Lo que pasa en Gn 32–36 no se decide aquí.",
+  "edades": [
+    {
+      "dato": "Unos noventa y siete años cuando sale a recibir a Jacob",
+      "certeza": "calculo",
+      "valor": 97,
+      "nota": "Los pasos negativos se restan. Es mellizo de Jacob (Gn 25:24): el mismo cálculo de la hoja JACOB_MAYOR.",
+      "calculo": {
+        "operacion": "suma",
+        "resultado": 97,
+        "pasos": [
+          {
+            "texto": "Edad de Jacob cuando habla con Faraón",
+            "valor": 130,
+            "ref": "Gn 47:9",
+            "cita": "Los días de los años de mi peregrinación son ciento treinta años"
+          },
+          {
+            "texto": "Menos la edad de José cuando es presentado a Faraón",
+            "valor": -30,
+            "ref": "Gn 41:46",
+            "cita": "era José de edad de treinta años cuando fué presentado delante de Faraón"
+          },
+          {
+            "texto": "Menos los siete años de hartura",
+            "valor": -7,
+            "ref": "Gn 41:53",
+            "cita": "cumpliéronse los siete años de la hartura"
+          },
+          {
+            "texto": "Menos los dos años de hambre ya pasados cuando José manda llamar a su padre",
+            "valor": -2,
+            "ref": "Gn 45:6",
+            "cita": "ya ha habido dos años de hambre en medio de la tierra"
+          },
+          {
+            "texto": "Más los seis años que Jacob sirve por el ganado después de nacer José",
+            "valor": 6,
+            "ref": "Gn 31:41",
+            "cita": "seis años por tu ganado"
+          }
+        ],
+        "supuestos": [
+          "Esaú y Jacob son mellizos (Gn 25:24) y tienen la misma edad",
+          "Los supuestos del cálculo de JACOB_MAYOR (hartura desde los treinta de José, Jacob ante Faraón en el segundo año de hambre, seis años desde el nacimiento de José)",
+          "Esaú lo recibe poco después de que Jacob deje a Labán: el texto lo cuenta seguido (Gn 31–33) sin dar el tiempo",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Ciento veinte años cuando él y Jacob entierran a Isaac",
+      "certeza": "calculo",
+      "valor": 120,
+      "calculo": {
+        "operacion": "resta",
+        "resultado": 120,
+        "pasos": [
+          {
+            "texto": "Años que vivió Isaac",
+            "valor": 180,
+            "ref": "Gn 35:28",
+            "cita": "fueron los días de Isaac ciento ochenta años"
+          },
+          {
+            "texto": "Edad de Isaac al nacer los mellizos",
+            "valor": 60,
+            "ref": "Gn 25:26",
+            "cita": "era Isaac de edad de sesenta años cuando ella los parió"
+          }
+        ],
+        "supuestos": [
+          "Esaú y Jacob entierran a su padre poco después de su muerte (Gn 35:29 lo cuenta seguido)",
+          "Se cuentan años completos"
+        ]
+      }
+    },
+    {
+      "dato": "Edad visual: un hombre que aparenta unos sesenta años, todavía fuerte, con canas en el pelo y en la barba cobrizos",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador, propuesta por defecto (decisión pendiente n.º 38 de guiones/LEEME.md): la misma edad visual que JACOB_MAYOR. En Gn 33:4 corre al encuentro de su hermano: no se le dibuja decrépito."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Vive en la tierra de Seir, campo de Edom",
+      "certeza": "texto",
+      "ref": "Gn 32:3",
+      "cita": "á la tierra de Seir, campo de Edom"
+    },
+    {
+      "rasgo": "Viene a recibir a Jacob con cuatrocientos hombres",
+      "certeza": "texto",
+      "ref": "Gn 32:6",
+      "cita": "él también viene á recibirte, y cuatrocientos hombres con él"
+    },
+    {
+      "rasgo": "Corre a su encuentro, lo abraza y lo besa, y lloran",
+      "certeza": "texto",
+      "ref": "Gn 33:4",
+      "cita": "Esaú corrió á su encuentro, y abrazóle, y echóse sobre su cuello, y le besó; y lloraron"
+    },
+    {
+      "rasgo": "Él y Jacob entierran a su padre",
+      "certeza": "texto",
+      "ref": "Gn 35:29",
+      "cita": "sepultáronlo Esaú y Jacob sus hijos"
+    },
+    {
+      "rasgo": "Esaú es Edom",
+      "certeza": "texto",
+      "ref": "Gn 36:1",
+      "cita": "Y ESTAS son las generaciones de Esaú, el cual es Edom"
+    },
+    {
+      "rasgo": "Su hacienda es grande y se va al monte de Seir",
+      "certeza": "texto",
+      "ref": "Gn 36:7-8",
+      "cita": "Esaú habitó en el monte de Seir"
+    },
+    {
+      "rasgo": "El mismo rostro que en la hoja ESAU_ADULTO, mayor: ancho de hombros y todavía fuerte, curtido, con arrugas junto a los ojos; tez rojiza; pelo abundante y natural hasta la nuca y barba poblada y larga, cobrizos con muchas canas; vello espeso en antebrazos, manos, cuello y pecho, también con canas; ojos castaños vivos; gesto franco y cálido",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: se conservan los rasgos de ESAU_JOVEN y ESAU_ADULTO (decisión pendiente n.º 40 de guiones/LEEME.md); las canas, a su edad. Lo cálido sale del abrazo de Gn 33:4. El pelo sigue al mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "La misma túnica corta de lana terracota de las hojas anteriores, con su banda pardo oscuro, sujeta sobre el hombro izquierdo; encima, un manto largo liso de lana pardo rojizo, echado sobre el hombro izquierdo; cinturón ancho de cuero; sandalias de correas; arco sencillo de madera y aljaba de cuero a la espalda; cabeza descubierta",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa. Se repite la de ESAU_ADULTO para que se le reconozca (mural de Beni Hasan, A2). El manto es elección del ilustrador, porque ahora es cabeza de mucha gente (Gn 32:6, 36:6-7).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a hunter and chief from western Asia who looks about sixty, broad-shouldered and still strong, weathered by the sun, with a ruddy, reddish complexion, lines around his lively brown eyes, thick natural hair that reaches the nape of his neck and a full, long beard, both copper-red and heavily streaked with grey. Thick copper-red hair, also touched with grey, covers his forearms, the backs of his hands, his neck and the top of his chest. His head is bare, with nothing tied around it. His face is frank and warm. He wears a short, plain wool tunic of terracotta red that ends above the knees, with a single dark brown band at the hem, fastened over his left shoulder, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, a long plain reddish-brown wool cloak thrown over the left shoulder, a wide leather belt and leather sandals with straps. A plain wooden bow and a leather quiver of arrows hang on his back, and his hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Cazador y jefe de Asia occidental que aparenta unos sesenta años, ancho de hombros y todavía fuerte, curtido por el sol; tez rojiza, arrugas junto a los ojos castaños vivos, pelo abundante y natural hasta la nuca y barba poblada y larga, cobrizos con muchas canas. Vello espeso cobrizo, también con canas, en los antebrazos, el dorso de las manos, el cuello y lo alto del pecho. Cabeza descubierta, sin nada atado. Rostro franco y cálido. Túnica corta y lisa de lana color terracota, por encima de la rodilla, con una sola banda pardo oscuro en el borde, sujeta sobre el hombro izquierdo, al modo de los asiáticos de las tumbas egipcias del Reino Medio; manto largo y liso de lana pardo rojizo echado sobre el hombro izquierdo, cinturón ancho de cuero y sandalias de correas. A la espalda, un arco sencillo de madera y una aljaba de cuero con flechas; manos vacías.",
+    "negativo_en": "Do not dress him in fur, animal skins or a pelt cloak: the hair is his own. Do not put a headband, a cord or a cloth on his head. Do not make him a brute, a barbarian, a warlord, a giant or a cartoon villain, and do not give him exaggerated muscles. Do not make him look young, frail, bent or bald. Do not give him a sword, a spear, armor, a crown, bracelets or any jewelry. Do not dress him in Egyptian white linen or a turban. Do not give him a stiff wig-like haircut. Do not paint soldiers, horses, camels, tents or any other person, and keep the background plain.",
+    "negativo_es": "Sin pieles, pelliza ni manto de piel: el vello es suyo. Sin cinta, cordón ni paño en la cabeza; que no sea un bruto, un bárbaro, un caudillo guerrero, un gigante ni un villano de dibujos, ni tenga músculos exagerados; que no parezca joven, frágil, encorvado ni calvo; sin espada, lanza, armadura, corona, brazaletes ni joyas; sin lino blanco egipcio ni turbante; sin pelo rígido como de peluca; sin soldados, caballos, camellos, tiendas ni otras personas; fondo liso."
+  }
+}

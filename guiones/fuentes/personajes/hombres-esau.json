@@ -1,0 +1,79 @@
+{
+  "id": "hombres-esau",
+  "nombre": "Los cuatrocientos hombres de Esaú",
+  "personas": [],
+  "sin_persona": "El texto no nombra a ninguno: son «cuatrocientos hombres» que vienen con Esaú (Gn 32:6, 33:1). No son personas de datos/biblia.js y no hablan.",
+  "pasajes": [
+    "gn-71"
+  ],
+  "element": {
+    "nombre": "HOMBRES_ESAU",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Grupo de seis figuras para representar a cuatrocientos. En gn-69 solo se habla de ellos (Gn 32:6): si el guion los muestra allí, usa esta hoja. Esaú tiene su hoja aparte (personajes/esau-mayor, el único con arco y aljaba, n.º 40); este grupo no lo incluye. El texto no dice que vengan armados ni a qué vienen: el temor es de Jacob (Gn 32:7, 32:11). Propuesta por defecto (decisión pendiente n.º 60 de guiones/LEEME.md): sin armas, con cayados de caminante, para no presentar como dato una amenaza que el texto deja en el miedo de Jacob. Gn 33:15 dice «la gente que viene conmigo»: es la misma compañía.",
+  "rasgos": [
+    {
+      "rasgo": "Los mensajeros anuncian que Esaú viene con cuatrocientos hombres",
+      "certeza": "texto",
+      "ref": "Gn 32:6",
+      "cita": "él también viene á recibirte, y cuatrocientos hombres con él"
+    },
+    {
+      "rasgo": "Jacob tiene gran temor",
+      "certeza": "texto",
+      "ref": "Gn 32:7",
+      "cita": "Entonces Jacob tuvo gran temor, y angustióse"
+    },
+    {
+      "rasgo": "Jacob los ve venir con Esaú",
+      "certeza": "texto",
+      "ref": "Gn 33:1",
+      "cita": "he aquí venía Esaú, y los cuatrocientos hombres con él"
+    },
+    {
+      "rasgo": "Esaú ofrece dejar con Jacob a parte de su gente",
+      "certeza": "texto",
+      "ref": "Gn 33:15",
+      "cita": "Dejaré ahora contigo de la gente que viene conmigo"
+    },
+    {
+      "rasgo": "Vuelven con Esaú a Seir",
+      "certeza": "inferido",
+      "nota": "Gn 33:16 solo nombra a Esaú; que su gente vuelve con él se infiere de que Jacob rehúsa que se quede ninguno (Gn 33:15).",
+      "base": [
+        {
+          "ref": "Gn 33:15",
+          "cita": "¿Para qué esto?"
+        },
+        {
+          "ref": "Gn 33:16",
+          "cita": "Así se volvió Esaú aquel día por su camino á Seir"
+        }
+      ]
+    },
+    {
+      "rasgo": "Seis hombres de edades distintas, de unos veinte a unos cincuenta años; piel morena curtida por el sol, pelo oscuro abundante y natural hasta la nuca, barbas oscuras de distintos largos, algunas sin recortar; gesto serio y atento, sin hostilidad marcada",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no los describe. Se les dibuja gente dura del monte de Seir (Gn 32:3, 33:16), sin caricatura; el gesto queda neutro porque el texto no dice qué pretenden."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas de lana gruesa hasta la rodilla en colores de tierra (ocre, pardo rojizo, crudo), algunas con franjas sencillas, sujetas sobre un hombro o con los dos hombros cubiertos; cinturones de cuero; sandalias; cabezas descubiertas, sin nada atado; cayados de caminante",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 17 de guiones/LEEME.md): el texto no describe su ropa y no hay referencia comprobada de Seir ni de Edom. Se parte de los asiáticos del mural de Beni Hasan (A2), con tejidos más llanos y gastados que los de Siquem o la casa de Jacob, para que se distingan. Los cayados son elección del ilustrador (n.º 60).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing six men standing in a single row, each one fully visible from head to feet: hardy men from the dry mountain country of western Asia, of clearly different ages from about twenty to about fifty. They have sun-weathered brown skin, thick natural dark hair that reaches the nape of the neck, and dark beards of different lengths, some of them untrimmed. Their heads are bare, with nothing tied around them. They wear knee-length tunics of coarse wool in earthy colors of ochre, reddish brown and cream, a few with simple stripes, in the style of the western Asian visitors painted in Middle Kingdom Egyptian tombs, some fastened over one shoulder and some covering both shoulders, with leather belts and leather sandals. Each man holds a plain wooden walking staff. Their expressions are serious and watchful but calm, and each man clearly differs from the others in face, height and build.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: seis hombres de pie en fila, de cuerpo entero: gente dura de la tierra de montes secos de Asia occidental, de edades claramente distintas, de unos veinte a unos cincuenta años. Piel morena curtida por el sol, pelo oscuro abundante y natural hasta la nuca, barbas oscuras de distintos largos, algunas sin recortar. Cabezas descubiertas, sin nada atado. Túnicas de lana gruesa hasta la rodilla en colores de tierra (ocre, pardo rojizo y crudo), algunas con franjas sencillas, al modo de los asiáticos de las tumbas egipcias del Reino Medio; unas sujetas sobre un hombro y otras con los dos hombros cubiertos; cinturones y sandalias de cuero. Cada uno con un cayado de madera liso. Gesto serio y atento pero tranquilo; cada uno distinto en cara, estatura y complexión.",
+    "negativo_en": "Do not give them swords, spears, bows, shields, helmets, armor or banners, and do not make them look like an army in uniform. Do not give them crowns, turbans, headbands, jewelry or rich patterned robes. Do not make them monstrous, savage or identical. Do not include children, women, camels, horses or any other person, and keep the background plain.",
+    "negativo_es": "Sin espadas, lanzas, arcos, escudos, cascos, armaduras ni estandartes, y que no parezcan un ejército uniformado. Sin coronas, turbantes, cintas en la cabeza, joyas ni túnicas ricas de dibujos. Que no sean monstruosos, salvajes ni idénticos. Sin niños, mujeres, camellos, caballos ni otras personas; fondo liso."
+  }
+}

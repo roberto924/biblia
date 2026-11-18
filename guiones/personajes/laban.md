@@ -5,7 +5,7 @@ Generado por `python -I herramientas/guiones.py`. No editar a mano.
 - **Element en Cinema Studio**: `LABAN` (personaje)
 - **Personas (datos/biblia.js)**: Laban_1
 - **Pasajes**: gn-50, gn-51
-- **Nota**: Aspecto para Gn 24, de joven, cuando recibe al criado de Abraham. Vuelve en Gn 29–31, muchos años después y ya padre de Lea y Raquel: entonces hará falta otra hoja. Gn 24:30 dice que vino al criado al ver las joyas en las manos de su hermana; si lo movió la codicia o la hospitalidad es una lectura que el texto no decide: la hoja no le pone gesto codicioso.
+- **Nota**: Aspecto para Gn 24, de joven, cuando recibe al criado de Abraham. Vuelve en Gn 29–31, unos noventa y siete años después por cálculo y ya padre de Lea y Raquel: esos pasajes (gn-61 a gn-68) usan la hoja LABAN_MAYOR (personajes/laban-mayor), con la misma cara y la misma túnica. La voz de Laban_1 sigue en esta ficha también para Gn 29–31 (decisión pendiente n.º 27 de guiones/LEEME.md); sus tonos allí están en la nota de laban-mayor. Gn 24:30 dice que vino al criado al ver las joyas en las manos de su hermana; si lo movió la codicia o la hospitalidad es una lectura que el texto no decide: la hoja no le pone gesto codicioso.
 
 ## Edad
 
