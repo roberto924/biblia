@@ -1,0 +1,214 @@
+{
+  "id": "raquel",
+  "nombre": "Raquel",
+  "personas": [
+    "Rachel_1"
+  ],
+  "pasajes": [
+    "gn-61",
+    "gn-62",
+    "gn-63",
+    "gn-64",
+    "gn-65",
+    "gn-66",
+    "gn-67",
+    "gn-68"
+  ],
+  "element": {
+    "nombre": "RAQUEL",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 29–31, de pastora soltera (Gn 29:9) a madre de José (Gn 30:24). Una sola hoja para los veinte años en casa de Labán (Gn 31:41): se la dibuja joven, como en el pozo y en la boda; en gn-64 a gn-68 (de unos catorce a unos veinte años después) las tomas la hacen algo más madura sin cambiarle la cara, la ropa ni el pelo, y si no basta se hará otra hoja (decisión pendiente n.º 52 de guiones/LEEME.md). Es la hermana menor de Lea (hoja LEA): parecido de familia, distinta ropa. En gn-65 solo se la nombra (Gn 30:25); sale si el guion la muestra con José recién nacido, que no lleva hoja (como Isaac en gn-42). Los ídolos que hurta (Gn 31:19) y esconde (Gn 31:34) tienen hoja propia (objetos/idolos-laban); la albarda donde se sienta está en el escenario TIENDA_RAQUEL. «Estoy con la costumbre de las mujeres» (Gn 31:35) se lee y no se muestra (decisión pendiente n.º 55). En Gn 31:14-16 habla a la vez que Lea (decisión pendiente n.º 54).",
+  "edades": [
+    {
+      "dato": "Es la hija menor de Labán",
+      "certeza": "texto",
+      "ref": "Gn 29:16",
+      "cita": "el nombre de la mayor era Lea, y el nombre de la menor, Rachêl"
+    },
+    {
+      "dato": "Jacob sirve siete años por ella antes de la boda",
+      "certeza": "texto",
+      "ref": "Gn 29:20",
+      "cita": "Así sirvió Jacob por Rachêl siete años"
+    },
+    {
+      "dato": "Catorce años de servicio por las dos hijas y seis por el ganado: veinte años en casa de Labán",
+      "certeza": "texto",
+      "ref": "Gn 31:41",
+      "cita": "Así he estado veinte años en tu casa: catorce años te serví por tus dos hijas, y seis años por tu ganado"
+    },
+    {
+      "dato": "En el pozo es soltera y pastorea el ganado de su padre: una muchacha en edad de casarse",
+      "certeza": "inferido",
+      "nota": "El texto no da su edad. Lleva el ganado de su padre (Gn 29:9) y Jacob la pide por mujer (Gn 29:18): se infiere que es joven y está sin casar.",
+      "base": [
+        {
+          "ref": "Gn 29:9",
+          "cita": "Rachêl vino con el ganado de su padre, porque ella era la pastora"
+        },
+        {
+          "ref": "Gn 29:18",
+          "cita": "Yo te serviré siete años por Rachêl tu hija menor"
+        }
+      ]
+    },
+    {
+      "dato": "Edad visual: una mujer joven, de unos veinte años, claramente más joven que Lea",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo dice que es la menor (Gn 29:16). Se la dibuja adulta, no niña, para que valga desde el pozo (Gn 29:9) hasta la boda, siete años después (Gn 29:20)."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hija de Labán; llega al pozo con las ovejas",
+      "certeza": "texto",
+      "ref": "Gn 29:6",
+      "cita": "he aquí Rachêl su hija viene con el ganado"
+    },
+    {
+      "rasgo": "Es la pastora del ganado de su padre",
+      "certeza": "texto",
+      "ref": "Gn 29:9",
+      "cita": "Rachêl vino con el ganado de su padre, porque ella era la pastora"
+    },
+    {
+      "rasgo": "Jacob la besa, alza la voz y llora",
+      "certeza": "texto",
+      "ref": "Gn 29:11",
+      "cita": "Y Jacob besó á Rachêl, y alzó su voz, y lloró"
+    },
+    {
+      "rasgo": "Corre a dar las nuevas a su padre",
+      "certeza": "texto",
+      "ref": "Gn 29:12",
+      "cita": "ella corrió, y dió las nuevas á su padre"
+    },
+    {
+      "rasgo": "De lindo semblante y de hermoso parecer",
+      "certeza": "texto",
+      "ref": "Gn 29:17",
+      "cita": "Rachêl era de lindo semblante y de hermoso parecer"
+    },
+    {
+      "rasgo": "Jacob la ama",
+      "certeza": "texto",
+      "ref": "Gn 29:18",
+      "cita": "Y Jacob amó á Rachêl"
+    },
+    {
+      "rasgo": "Labán le da a su sierva Bilha por criada",
+      "certeza": "texto",
+      "ref": "Gn 29:29",
+      "cita": "dió Labán á Rachêl su hija por criada á su sierva Bilha"
+    },
+    {
+      "rasgo": "Es estéril",
+      "certeza": "texto",
+      "ref": "Gn 29:31",
+      "cita": "pero Rachêl era estéril"
+    },
+    {
+      "rasgo": "Tiene envidia de su hermana y pide hijos a Jacob",
+      "certeza": "texto",
+      "ref": "Gn 30:1",
+      "cita": "tuvo envidia de su hermana, y decía á Jacob: Dame hijos, ó si no, me muero"
+    },
+    {
+      "rasgo": "Da a Jacob a su sierva Bilha para tener hijos de ella",
+      "certeza": "texto",
+      "ref": "Gn 30:3",
+      "cita": "He aquí mi sierva Bilha; entra á ella, y parirá sobre mis rodillas"
+    },
+    {
+      "rasgo": "Pone nombre a los hijos de Bilha: a Dan (Gn 30:6) y a Neftalí",
+      "certeza": "texto",
+      "ref": "Gn 30:8",
+      "cita": "Con luchas de Dios he contendido con mi hermana, y he vencido. Y llamó su nombre Nephtalí"
+    },
+    {
+      "rasgo": "Pide a Lea de las mandrágoras de Rubén",
+      "certeza": "texto",
+      "ref": "Gn 30:14",
+      "cita": "Ruégote que me des de las mandrágoras de tu hijo"
+    },
+    {
+      "rasgo": "Dios se acuerda de ella y da a luz a José",
+      "certeza": "texto",
+      "ref": "Gn 30:22",
+      "cita": "acordóse Dios de Rachêl, y oyóla Dios, y abrió su matriz"
+    },
+    {
+      "rasgo": "Llama a su hijo José",
+      "certeza": "texto",
+      "ref": "Gn 30:24",
+      "cita": "llamó su nombre José, diciendo: Añádame Jehová otro hijo"
+    },
+    {
+      "rasgo": "Jacob la llama al campo, con Lea, junto a sus ovejas",
+      "certeza": "texto",
+      "ref": "Gn 31:4",
+      "cita": "llamó á Rachêl y á Lea al campo á sus ovejas"
+    },
+    {
+      "rasgo": "Con Lea, dice que su padre las tiene por extrañas y las vendió",
+      "certeza": "texto",
+      "ref": "Gn 31:15",
+      "cita": "¿No nos tiene ya como por extrañas, pues que nos vendió"
+    },
+    {
+      "rasgo": "Jacob sube a sus hijos y a sus mujeres sobre los camellos",
+      "certeza": "texto",
+      "ref": "Gn 31:17",
+      "cita": "subió sus hijos y sus mujeres sobre los camellos"
+    },
+    {
+      "rasgo": "Hurta los ídolos de su padre",
+      "certeza": "texto",
+      "ref": "Gn 31:19",
+      "cita": "Rachêl hurtó los ídolos de su padre"
+    },
+    {
+      "rasgo": "Esconde los ídolos en una albarda de camello y se sienta encima",
+      "certeza": "texto",
+      "ref": "Gn 31:34",
+      "cita": "tomó Rachêl los ídolos, y púsolos en una albarda de un camello, y sentóse sobre ellos"
+    },
+    {
+      "rasgo": "Se excusa ante su padre sin levantarse",
+      "certeza": "texto",
+      "ref": "Gn 31:35",
+      "cita": "No se enoje mi señor, porque no me puedo levantar delante de ti"
+    },
+    {
+      "rasgo": "Muy hermosa, esbelta y ágil; piel morena oliva algo tostada por el sol; ojos oscuros grandes y brillantes, cejas definidas; pelo oscuro largo, natural, suelto a la espalda y sujeto con una cinta blanca estrecha en la frente; gesto vivo, cálido y decidido",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que es de lindo semblante y hermoso parecer (Gn 29:17), no cómo. El pelo largo con cinta sigue a las mujeres de Asia occidental del mural de Beni Hasan (A2), como Rebeca, su tía. Lo tostado, de que es pastora (Gn 29:9); lo vivo y decidido, de que corre (Gn 29:12), de sus palabras (Gn 30:1, 30:3) y del hurto (Gn 31:19). Tiene parecido de familia con Lea y con Labán.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Vestido largo de lana hasta media pierna, que cubre los dos hombros, con dibujos menudos en zigzag ocre y blancos y una cenefa rojo oscuro en el borde; calzado bajo cerrado de cuero",
+      "certeza": "supuesto",
+      "nota": "Supuesto de época, decisión pendiente (n.º 53 de guiones/LEEME.md, como la n.º 31 para la familia de Nacor): el texto no describe su ropa. Se toman las mujeres del cortejo de Beni Hasan (A2): vestidos largos de dibujos hasta media pierna y calzado bajo cerrado. El ocre y el rojo oscuro son elección del ilustrador para distinguirla de Lea, de Rebeca (azul grisáceo) y de las hijas de Lot.",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "voz": {
+    "descripcion": "Mujer joven, voz clara, cálida y apasionada, español neutro. Gn 30:1: angustia y reproche («Dame hijos, ó si no, me muero»). Gn 30:3: resuelta. Gn 30:6 y 30:8: alivio y triunfo. Gn 30:14-15: ruego y trato, sin dureza. Gn 30:23-24: gratitud y esperanza. Gn 31:14-16 (con Lea): firme, con resentimiento contenido. Gn 31:35: tranquila y cortés, sin dejar ver el miedo. Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a very beautiful, slender and agile young woman from western Asia of about twenty, a shepherdess, with olive-brown skin lightly tanned by the sun, large bright dark eyes and defined brows. Her long, natural dark hair falls down her back and is held by a narrow white band around her forehead. Her expression is lively, warm and determined. She wears a long wool dress that covers both shoulders and reaches her lower calves, woven with small ochre and white zigzag patterns and a dark red border at the hem, in the style of the western Asian women painted in Middle Kingdom Egyptian tombs, and low closed leather shoes. She wears no jewelry, and her hands are empty.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Mujer joven de Asia occidental, de unos veinte años, pastora, muy hermosa, esbelta y ágil; piel morena oliva algo tostada por el sol, ojos oscuros grandes y brillantes, cejas definidas. Pelo oscuro largo y natural, suelto a la espalda y sujeto con una cinta blanca estrecha en la frente. Gesto vivo, cálido y decidido. Vestido largo de lana que cubre los dos hombros y llega a media pierna, con dibujos menudos en zigzag ocre y blancos y una cenefa rojo oscuro en el borde, al modo de las mujeres asiáticas de las tumbas egipcias del Reino Medio; calzado bajo cerrado de cuero. Sin joyas, manos vacías.",
+    "negativo_en": "Do not give her earrings, a nose ring, bracelets, necklaces or any jewelry, and do not give her a veil or a head cloth. Do not give her a stiff, blocky wig or a heavy geometric haircut. Do not make her look like a child or like a mature woman, and do not make her seductive: no bare shoulders, low neckline or tight clothes. Do not dress her in Egyptian white linen, and do not give her a crown. Do not paint sheep, a staff, a well or any other person, and keep the background plain.",
+    "negativo_es": "Sin aretes, pendiente en la nariz, brazaletes, collares ni joyas; sin velo ni paño en la cabeza; sin peluca rígida ni corte geométrico pesado; que no parezca niña ni mujer madura, y nada seductor: sin hombros descubiertos, escote ni ropa ceñida; sin lino blanco egipcio ni corona; sin ovejas, cayado, pozo ni otras personas; fondo liso."
+  }
+}
