@@ -1,0 +1,60 @@
+{
+  "id": "arbol-vida",
+  "nombre": "El árbol de la vida",
+  "pasajes": [
+    "gn-03",
+    "gn-06"
+  ],
+  "element": {
+    "nombre": "ARBOL_VIDA",
+    "tipo": "objeto"
+  },
+  "sin_laminas": [
+    "patron-1-paisaje.png"
+  ],
+  "nota": "Mismo id que en el catálogo de juego (herramientas/juego/Gn.json). La hoja va sin la lámina 1 para que no copie sus olivos. Tiene que distinguirse a simple vista del árbol de la ciencia, que es otro árbol (Gn 2:9).",
+  "texto": [
+    {
+      "dato": "Está en medio del huerto",
+      "certeza": "texto",
+      "ref": "Gn 2:9",
+      "cita": "también el árbol de vida en medio del huerto"
+    },
+    {
+      "dato": "Quien come de él vive para siempre",
+      "certeza": "texto",
+      "ref": "Gn 3:22",
+      "cita": "tome también del árbol de la vida, y coma, y viva para siempre"
+    },
+    {
+      "dato": "Tras la salida del huerto, su camino queda guardado",
+      "certeza": "texto",
+      "ref": "Gn 3:24",
+      "cita": "para guardar el camino del árbol de la vida"
+    },
+    {
+      "dato": "Da algo que se come",
+      "certeza": "inferido",
+      "nota": "El texto habla de tomar de él y comer, pero no dice qué fruto da ni cómo es.",
+      "base": [
+        {
+          "ref": "Gn 3:22",
+          "cita": "tome también del árbol de la vida, y coma"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Árbol alto y viejo de tronco claro y liso, copa ancha de hojas grandes y anchas de color verde vivo y racimos de frutos pequeños y redondos de color dorado pálido; ninguna especie reconocible",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe el árbol, sus hojas ni su fruto. Los colores claros solo sirven para distinguirlo del árbol de la ciencia; no significan nada."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same tree twice: on the left the whole tree from roots to crown, and on the right a close view of one of its branches. It is a tall, ancient tree of no recognizable modern kind, with a smooth pale trunk, strong spreading roots, a wide rounded crown of large, broad, bright green leaves and hanging clusters of small, round, pale golden fruit. It is lit by soft, even daylight and stands alone.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo árbol dos veces: a la izquierda entero, de las raíces a la copa; a la derecha, una rama de cerca. Árbol alto y antiguo de ninguna especie moderna reconocible, tronco claro y liso, raíces fuertes, copa ancha y redondeada de hojas grandes y anchas de color verde vivo y racimos colgantes de frutos pequeños, redondos, de color dorado pálido. Luz de día suave y pareja; el árbol está solo.",
+    "negativo_en": "Do not paint an olive tree, a palm, a fig tree, an apple tree or any tree or fruit that can be recognized. Do not make the tree or its fruit glow or shine. Do not add people, animals, a snake, a sword, a river or a landscape, and keep the background plain.",
+    "negativo_es": "Sin olivo, palmera, higuera, manzano ni árbol o fruta reconocible; ni el árbol ni su fruto brillan; sin personas, animales, serpiente, espada, río ni paisaje; fondo liso."
+  }
+}

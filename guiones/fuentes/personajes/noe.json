@@ -1,0 +1,101 @@
+{
+  "id": "noe",
+  "nombre": "Noé",
+  "personas": [
+    "Noah_1"
+  ],
+  "pasajes": [
+    "gn-12",
+    "gn-13",
+    "gn-14",
+    "gn-15",
+    "gn-16",
+    "gn-17",
+    "gn-18",
+    "gn-19",
+    "gn-20"
+  ],
+  "element": {
+    "nombre": "NOE",
+    "tipo": "personaje"
+  },
+  "nota": "Aspecto para Gn 6–9. En casi todo el relato Noé escucha y obedece sin hablar («E hízolo así Noé», Gn 6:22): sus únicas palabras están en Gn 9:25-27. El episodio de la viña (Gn 9:20-23) no se muestra de forma explícita en ningún perfil.",
+  "edades": [
+    {
+      "dato": "Quinientos años cuando engendra a sus hijos",
+      "certeza": "texto",
+      "ref": "Gn 5:32",
+      "cita": "siendo Noé de quinientos años, engendró á Sem, Châm, y á Japhet"
+    },
+    {
+      "dato": "Seiscientos años cuando viene el diluvio",
+      "certeza": "texto",
+      "ref": "Gn 7:6",
+      "cita": "siendo Noé de seiscientos años, el diluvio de las aguas fué sobre la tierra"
+    },
+    {
+      "dato": "Vivió novecientos cincuenta años",
+      "certeza": "texto",
+      "ref": "Gn 9:29",
+      "cita": "fueron todos los días de Noé novecientos y cincuenta años"
+    },
+    {
+      "dato": "Edad visual: un hombre mayor, de pelo y barba canos, pero fuerte y erguido",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador. El texto da seiscientos años y no dice qué aspecto tenía alguien de esa edad; para entonces ya ha construido el arca (Gn 6:22; 7:6), y después vive trescientos cincuenta años más (Gn 9:28), así que no se le dibuja decrépito."
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Halló gracia en los ojos de Jehová",
+      "certeza": "texto",
+      "ref": "Gn 6:8",
+      "cita": "Noé halló gracia en los ojos de Jehová"
+    },
+    {
+      "rasgo": "Justo y perfecto en sus generaciones; caminó con Dios",
+      "certeza": "texto",
+      "ref": "Gn 6:9",
+      "cita": "Noé, varón justo, perfecto fué en sus generaciones; con Dios caminó Noé"
+    },
+    {
+      "rasgo": "Hace todo lo que se le manda",
+      "certeza": "texto",
+      "ref": "Gn 6:22",
+      "cita": "hizo conforme á todo lo que Dios le mandó"
+    },
+    {
+      "rasgo": "Después del diluvio labra la tierra y planta una viña",
+      "certeza": "texto",
+      "ref": "Gn 9:20",
+      "cita": "comenzó Noé á labrar la tierra, y plantó una viña"
+    },
+    {
+      "rasgo": "Piel morena curtida, ojos oscuros, pelo cano hasta los hombros y barba cana larga; manos de carpintero; rostro sereno y atento",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Las manos de quien trabaja la madera salen de que hace el arca (Gn 6:14, 6:22)."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Existe ropa: Sem y Jafet toman «la ropa» y la llevan sobre los hombros",
+      "certeza": "texto",
+      "ref": "Gn 9:23",
+      "cita": "Sem y Japhet tomaron la ropa, y la pusieron sobre sus propios hombros"
+    },
+    {
+      "rasgo": "Túnica larga de lana sin teñir, color crudo, con manto pardo sobre los hombros, cinturón de cuerda y sandalias sencillas",
+      "certeza": "supuesto",
+      "nota": "Supuesto: el texto no describe la ropa de Noé ni fecha el diluvio, así que no hay referencia de época comprobada que aplicar. Que la ropa sea de lana tejida es parte del supuesto: el texto solo dice «la ropa». Se usa lana lisa sin teñir y se dejan fuera las franjas de colores de Beni Hasan, que el proyecto usa para la gente de Asia occidental en la historia de José (gn-98)."
+    }
+  ],
+  "voz": {
+    "descripcion": "Hombre mayor, voz grave, pausada y firme, español neutro. Solo habla en Gn 9:25-27: solemne, dolido más que furioso. Pronuncia tal cual las formas antiguas («séale Canaán siervo»). Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is an old but strong and upright man, a builder who works with wood, with weathered brown skin, dark eyes, grey-white hair that reaches his shoulders, a long grey-white beard and large, rough hands. His face is calm, attentive and kind, with deep lines around the eyes. He wears a long, plain tunic of undyed cream wool that reaches his ankles, a brown wool cloak over his shoulders, a rope belt and simple leather sandals.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo hombre tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre mayor pero fuerte y erguido, constructor que trabaja la madera; piel morena curtida, ojos oscuros, pelo cano hasta los hombros, barba cana larga y manos grandes y ásperas; rostro sereno, atento y bondadoso, con arrugas hondas junto a los ojos. Túnica larga y lisa de lana cruda sin teñir hasta los tobillos, manto pardo de lana sobre los hombros, cinturón de cuerda y sandalias de cuero sencillas.",
+    "negativo_en": "Do not make him frail, bent or leaning on a stick. Do not give him striped or brightly dyed cloth, a turban, a crown, jewelry or tools in his hands. Do not paint a boat, animals, a dove or a rainbow, and keep the background plain.",
+    "negativo_es": "Que no sea frágil, encorvado ni apoyado en un bastón; sin telas de franjas ni colores vivos, turbante, corona, joyas ni herramientas en las manos; sin barco, animales, paloma ni arco iris; fondo liso."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "abel",
+  "nombre": "Abel",
+  "personas": [
+    "Abel_1"
+  ],
+  "pasajes": [
+    "gn-07"
+  ],
+  "element": {
+    "nombre": "ABEL",
+    "tipo": "personaje"
+  },
+  "nota": "No habla: el texto no le da palabras. Su muerte (Gn 4:8) no se muestra de forma gráfica en ningún perfil (regla de estilo: sin sangre ni violencia gráfica).",
+  "edades": [
+    {
+      "dato": "Hombre adulto cuando trae su ofrenda, menor que Caín; el texto no da su edad",
+      "certeza": "inferido",
+      "nota": "Nace después de Caín y para el momento de la ofrenda ya pastorea ovejas. La edad visual (unos veintitantos años) es interpretación del ilustrador.",
+      "base": [
+        {
+          "ref": "Gn 4:2",
+          "cita": "Y después parió á su hermano Abel"
+        },
+        {
+          "ref": "Gn 4:3",
+          "cita": "Y aconteció andando el tiempo"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hermano menor de Caín",
+      "certeza": "texto",
+      "ref": "Gn 4:2",
+      "cita": "Y después parió á su hermano Abel"
+    },
+    {
+      "rasgo": "Pastor de ovejas",
+      "certeza": "texto",
+      "ref": "Gn 4:2",
+      "cita": "fué Abel pastor de ovejas"
+    },
+    {
+      "rasgo": "Su ofrenda es mirada con agrado",
+      "certeza": "texto",
+      "ref": "Gn 4:4",
+      "cita": "miró Jehová con agrado á Abel y á su ofrenda"
+    },
+    {
+      "rasgo": "Parecido de familia con Caín, más joven y más delgado; cayado de pastor",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: son hermanos y él es el menor y pastor (Gn 4:2). El cayado no está en el texto: es el atributo habitual de quien pastorea."
+    },
+    {
+      "rasgo": "Piel morena, ojos oscuros, pelo oscuro ondulado hasta las orejas y barba corta y rala; rostro abierto y tranquilo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnica de piel curtida clara hasta la rodilla, ceñida con una cuerda; descalzo",
+      "certeza": "supuesto",
+      "nota": "Supuesto: el texto no describe la ropa de Abel. La única ropa nombrada hasta aquí son las túnicas de pieles de sus padres; se le viste igual para no introducir tejidos que el texto aún no menciona.",
+      "base": [
+        {
+          "ref": "Gn 3:21",
+          "cita": "túnicas de pieles"
+        }
+      ]
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same young man three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. He is a lean man in his middle twenties who herds sheep in open country. He has brown skin, dark eyes, wavy dark hair that reaches his ears and a short, thin dark beard, and an open, calm face. In all three views he wears the same plain sleeveless tunic of light tanned animal hide that covers his chest and shoulders, reaches his knees and is tied at the waist with a cord. In the full-body view he stands barefoot and holds a plain, straight wooden staff as tall as his shoulder.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: el mismo joven tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Hombre delgado de unos veinticinco años que pastorea ovejas en campo abierto; piel morena, ojos oscuros, pelo oscuro ondulado hasta las orejas y barba corta y rala; rostro abierto y tranquilo. En las tres vistas lleva la misma túnica sencilla sin mangas de piel curtida clara, que le cubre pecho y hombros, llega a la rodilla y se ciñe con una cuerda. De cuerpo entero va descalzo y sostiene un cayado de madera liso y recto, alto hasta el hombro.",
+    "negativo_en": "Do not make him look like a child or a teenager. Do not paint any sheep, lamb or altar beside him, and do not show any wound. Do not give him woven cloth, sandals, jewelry or a curved crook with a hook, do not show him bare-chested, and keep the background plain.",
+    "negativo_es": "Que no parezca niño ni adolescente; sin ovejas, cordero ni altar a su lado; sin ninguna herida; sin tela tejida, sandalias, joyas ni cayado curvo con gancho; nunca con el torso descubierto; fondo liso."
+  }
+}

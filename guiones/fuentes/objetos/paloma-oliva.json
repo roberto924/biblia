@@ -1,0 +1,67 @@
+{
+  "id": "paloma-oliva",
+  "nombre": "El cuervo, la paloma y la hoja de oliva",
+  "pasajes": [
+    "gn-17"
+  ],
+  "element": {
+    "nombre": "PALOMA_OLIVA",
+    "tipo": "objeto (aves)"
+  },
+  "nota": "Mismo id que en el catálogo de juego (herramientas/juego/Gn.json). El texto dice «una hoja de oliva», no una rama: se dibuja una sola hoja.",
+  "texto": [
+    {
+      "dato": "Noé envía primero al cuervo, que va y vuelve",
+      "certeza": "texto",
+      "ref": "Gn 8:7",
+      "cita": "envió al cuervo, el cual salió, [y estuvo] yendo y tornando"
+    },
+    {
+      "dato": "Después envía a la paloma",
+      "certeza": "texto",
+      "ref": "Gn 8:8",
+      "cita": "Envió también de sí á la paloma"
+    },
+    {
+      "dato": "La primera vez no halla dónde posarse y vuelve al arca",
+      "certeza": "texto",
+      "ref": "Gn 8:9",
+      "cita": "no halló la paloma donde sentar la planta de su pie, y volvióse á él al arca"
+    },
+    {
+      "dato": "La segunda vez vuelve a la hora de la tarde con una hoja de oliva en el pico",
+      "certeza": "texto",
+      "ref": "Gn 8:11",
+      "cita": "la paloma volvió á él á la hora de la tarde; y he aquí [que traía] una hoja de oliva tomada en su pico"
+    },
+    {
+      "dato": "La tercera vez ya no vuelve",
+      "certeza": "texto",
+      "ref": "Gn 8:12",
+      "cita": "envió la paloma, la cual no volvió ya más á él"
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Paloma de plumaje gris claro y blanco, pico oscuro y patas rosadas",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no dice de qué color era. La paloma del todo blanca es costumbre de la pintura, no dato del texto; se dibuja como una paloma silvestre clara."
+    },
+    {
+      "dato": "Cuervo negro, mayor que la paloma, de pico fuerte",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo lo nombra. El color negro es el del cuervo común."
+    },
+    {
+      "dato": "Hoja de olivo: una sola, estrecha y alargada, verde por arriba y plateada por abajo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador para la forma y el color, que son los de la hoja del olivo. El número (una) sí es del texto (Gn 8:11)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an animal reference sheet on a plain light grey background, showing three separate bird studies side by side. On the left, a dove with pale grey and white feathers, a small dark beak and pink feet stands in side view. In the middle, the same dove flies with its wings spread and carries one single narrow olive leaf in its beak, green above and silvery below. On the right, a black raven with a strong beak, clearly larger than the dove, stands in side view. Both birds have their own natural feathered wings. The birds look like real animals drawn in the same house style as the people.",
+    "prompt_es": "Hoja de referencia de animales sobre fondo gris claro liso: tres estudios de ave separados, uno junto a otro. A la izquierda, una paloma de plumas gris claro y blanco, pico pequeño y oscuro y patas rosadas, de perfil y posada. En el centro, la misma paloma volando con las alas abiertas y una sola hoja de olivo estrecha en el pico, verde por arriba y plateada por abajo. A la derecha, un cuervo negro de pico fuerte, claramente mayor que la paloma, de perfil y posado. Las dos aves tienen sus alas naturales, con plumas. Las aves parecen animales reales, en el mismo estilo que las personas.",
+    "negativo_en": "Do not paint a whole olive branch, a twig with several leaves, olives or a flower: the dove carries one leaf only. Do not make the dove glow or put rays of light around it. Do not paint a boat, water, a rainbow, a hand or any people, and keep the background plain.",
+    "negativo_es": "Sin rama de olivo entera, ramita con varias hojas, aceitunas ni flor: la paloma lleva una sola hoja; la paloma no brilla ni tiene rayos de luz alrededor; sin barco, agua, arco iris, mano ni personas; fondo liso."
+  }
+}

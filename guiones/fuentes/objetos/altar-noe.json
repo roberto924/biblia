@@ -1,0 +1,71 @@
+{
+  "id": "altar-noe",
+  "nombre": "El altar de Noé",
+  "pasajes": [
+    "gn-18"
+  ],
+  "element": {
+    "nombre": "ALTAR_NOE",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego de Génesis (allí el primer altar es el de Abram). El holocausto no se muestra de forma gráfica: la hoja enseña el altar preparado, con la leña, sin animales.",
+  "texto": [
+    {
+      "dato": "Noé lo edifica al salir del arca",
+      "certeza": "texto",
+      "ref": "Gn 8:20",
+      "cita": "edificó Noé un altar á Jehová"
+    },
+    {
+      "dato": "Sobre él ofrece holocausto de animales y aves limpios",
+      "certeza": "texto",
+      "ref": "Gn 8:20",
+      "cita": "tomó de todo animal limpio y de toda ave limpia, y ofreció holocausto en el altar"
+    },
+    {
+      "dato": "Jehová percibe olor de suavidad",
+      "certeza": "texto",
+      "ref": "Gn 8:21",
+      "cita": "percibió Jehová olor de suavidad"
+    },
+    {
+      "dato": "Es el primer altar que nombra el texto",
+      "certeza": "inferido",
+      "nota": "La palabra «altar» no aparece antes de Gn 8:20 en la RV1909: ni en las ofrendas de Caín y Abel (Gn 4:3-4).",
+      "base": [
+        {
+          "ref": "Gn 8:20",
+          "cita": "edificó Noé un altar á Jehová"
+        }
+      ]
+    },
+    {
+      "dato": "Lleva fuego",
+      "certeza": "inferido",
+      "nota": "El holocausto se hace arder entero sobre el altar: lo dice Lv 1:9, que es muy posterior a este pasaje (sirve para dirigir; no se cita en el video). Gn 8:20 no nombra la leña ni el fuego.",
+      "base": [
+        {
+          "ref": "Gn 8:20",
+          "cita": "ofreció holocausto en el altar"
+        },
+        {
+          "ref": "Lv 1:9",
+          "cita": "el sacerdote hará arder todo sobre el altar: holocausto es"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Altar bajo de piedras de campo sin labrar, apiladas en seco, con leña cruzada encima; tierra desnuda y seca alrededor",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que lo «edificó», pero no de qué ni con qué forma. Se elige la piedra de campo porque es lo que hay a mano al salir del arca; la tierra ya está seca (Gn 8:14); no lleva gradas, cuernos, labra ni metal."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same altar twice: on the left a front view, and on the right a three-quarter view from slightly above. It is a low, square altar about as high as a man's waist, built of rough, uncut grey and brown field stones of different sizes stacked without mortar, with a level top on which split logs and dry branches are laid crosswise, ready to be lit. It stands on a patch of bare, dry earth.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo altar dos veces: a la izquierda de frente; a la derecha en tres cuartos, algo desde arriba. Altar bajo y cuadrado, alto hasta la cintura de un hombre, hecho de piedras de campo grises y pardas sin labrar, de distintos tamaños, apiladas sin argamasa, con la parte de arriba llana y sobre ella leños partidos y ramas secas cruzados, listos para encender. Sobre un trozo de tierra desnuda y seca.",
+    "negativo_en": "Do not carve or square the stones, and do not add steps, horns at the corners, metal, a grate, inscriptions or decoration. Do not paint fire, smoke, animals, birds, blood, a knife or any people. Do not paint a boat, a rainbow or a landscape, and keep the background plain.",
+    "negativo_es": "Piedras sin labrar ni escuadrar; sin gradas, cuernos en las esquinas, metal, rejilla, inscripciones ni adornos; sin fuego, humo, animales, aves, sangre, cuchillo ni personas; sin barco, arco iris ni paisaje; fondo liso."
+  }
+}

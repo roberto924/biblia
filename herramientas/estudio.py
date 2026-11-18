@@ -531,8 +531,8 @@ def autoprueba():
         comprobar(s == 413, "cuerpo > 64 KB → 413")
 
         s, d, r = pedir("GET", "/api/datos")
-        comprobar(s == 200 and all(k in d for k in ("estilo", "laminas", "personajes", "escenarios", "pasajes"))
-                  and len(d["personajes"]) == 3, "/api/datos 200 con los grupos")
+        comprobar(s == 200 and all(k in d for k in ("estilo", "laminas", "personajes", "objetos", "escenarios", "pasajes"))
+                  and len(d["personajes"]) == len(list((I.F / "personajes").glob("*.json"))) >= 3, "/api/datos 200 con los grupos")
         jose = next(x for x in d["personajes"] if x["id"] == "personajes/jose")
         comprobar(sum(1 for h in jose["historial"] if h.get("id") in ("r1", "r2")) == 2
                   and any(h.get("origen") == I.ORIGEN_VIEJO for h in jose["historial"]),
@@ -573,7 +573,7 @@ def autoprueba():
         comprobar(s == 200 and b["ok"], "POST /api/revision → 200")
         # el fixture no tiene tomas (imágenes falsas de tamaño fijo): los ids esperados salen de las fuentes
         pend = I.pendientes(I.leer(I.F / "estilo.json"))
-        tomas = [t["id"] for t in pend if not t["id"].startswith(("estilo/", "personajes/", "escenarios/"))]
+        tomas = [t["id"] for t in pend if not t["id"].startswith(("estilo/",) + tuple(c + "/" for c in I.HOJAS))]
         con_hermanos = next(t["id"] for t in pend if D.IMG / "personajes" / "hermanos.png" in t["refs"])
         s, b, r = pedir("POST", "/api/revision", {"id": tomas[0], "estado": "aprobada"})
         comprobar(s == 400, "revisar sin imagen → 400")

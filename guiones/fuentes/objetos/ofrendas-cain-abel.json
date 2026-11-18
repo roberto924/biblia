@@ -1,0 +1,67 @@
+{
+  "id": "ofrendas-cain-abel",
+  "nombre": "Las ofrendas de Caín y Abel",
+  "pasajes": [
+    "gn-07"
+  ],
+  "element": {
+    "nombre": "OFRENDAS_CAIN_ABEL",
+    "tipo": "objeto"
+  },
+  "nota": "Mismo id que en el catálogo de juego (herramientas/juego/Gn.json). El texto no dice cómo se vio que una ofrenda fue mirada con agrado y la otra no: ni fuego del cielo ni humo que sube o baja. La hoja no muestra nada de eso.",
+  "texto": [
+    {
+      "dato": "Caín trae del fruto de la tierra",
+      "certeza": "texto",
+      "ref": "Gn 4:3",
+      "cita": "Caín trajo del fruto de la tierra una ofrenda á Jehová"
+    },
+    {
+      "dato": "Abel trae de los primogénitos de sus ovejas y de su grosura",
+      "certeza": "texto",
+      "ref": "Gn 4:4",
+      "cita": "Abel trajo también de los primogénitos de sus ovejas, y de su grosura"
+    },
+    {
+      "dato": "La ofrenda de Abel es mirada con agrado",
+      "certeza": "texto",
+      "ref": "Gn 4:4",
+      "cita": "miró Jehová con agrado á Abel y á su ofrenda"
+    },
+    {
+      "dato": "La de Caín, no",
+      "certeza": "texto",
+      "ref": "Gn 4:5",
+      "cita": "Mas no miró propicio á Caín y á la ofrenda suya"
+    },
+    {
+      "dato": "El texto no nombra altar ni fuego en esta escena",
+      "certeza": "inferido",
+      "nota": "Ni Gn 4:3 ni 4:4 hablan de altar: el primero que nombra el texto es el de Noé (Gn 8:20). Por eso las ofrendas se dibujan sobre piedras llanas, sin altar construido ni fuego.",
+      "base": [
+        {
+          "ref": "Gn 4:3",
+          "cita": "trajo del fruto de la tierra una ofrenda"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Ofrenda de Caín: gavillas de cereal, legumbres, hojas verdes y calabazas de ninguna especie reconocible, en un cesto de juncos sobre una piedra llana",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «del fruto de la tierra» sin más. No se dibuja peor ni estropeada: el texto no dice que lo fuera."
+    },
+    {
+      "dato": "Ofrenda de Abel: un cordero joven, primogénito del rebaño, sano y de lana clara, junto a una piedra llana",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «de los primogénitos de sus ovejas» (plural) sin decir cuántos; se muestra uno, vivo. El texto añade «y de su grosura»: cómo se presentó no se muestra (regla de estilo: sin sangre)."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing two separate offerings side by side with a clear space between them. On the left, a flat grey field stone holds a round woven reed basket filled with bundles of ripe grain, pods of pulses, leafy greens and plain smooth gourds in dull green and tan of no recognizable modern kind, all fresh and good. On the right, a healthy young lamb with pale wool stands quietly on its four legs on the bare ground, next to another flat grey field stone and not on top of it. Both are lit by soft, even daylight.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: dos ofrendas separadas, una junto a otra con espacio entre ellas. A la izquierda, sobre una piedra de campo gris y llana, un cesto redondo de juncos lleno de gavillas de cereal maduro, vainas de legumbres, hojas verdes y calabazas lisas de color verde apagado y tostado de ninguna especie moderna reconocible, todo fresco y bueno. A la derecha, un cordero joven y sano de lana clara, de pie y tranquilo sobre el suelo desnudo, junto a otra piedra de campo llana y no encima de ella. Luz de día suave y pareja.",
+    "negativo_en": "Do not paint pomegranates, onions, citrus fruit, apples, grapes, figs or any fruit that can be recognized. Do not paint a built altar, fire, smoke, flames or light from the sky. Do not show a knife, a slaughtered animal or any people. Do not make the basket of produce look rotten, withered or poor, and keep the background plain.",
+    "negativo_es": "Sin granadas, cebollas, cítricos, manzanas, uvas, higos ni fruta reconocible; sin altar construido, fuego, humo, llamas ni luz del cielo; sin cuchillo, animal sacrificado ni personas; el cesto no está podrido, marchito ni pobre; fondo liso."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "eva",
+  "nombre": "Eva",
+  "personas": [
+    "Eve_1"
+  ],
+  "pasajes": [
+    "gn-02",
+    "gn-04",
+    "gn-05",
+    "gn-06",
+    "gn-07",
+    "gn-09"
+  ],
+  "element": {
+    "nombre": "EVA",
+    "tipo": "personaje"
+  },
+  "nota": "Una sola hoja para todo Gn 1–4: fija el rostro y la complexión, y la viste con la túnica de pieles de Gn 3:21, que es la única ropa que el texto le da. En los pasajes anteriores a 3:21 la desnudez de Gn 2:25 no se muestra nunca: la toma la encuadra de hombros arriba o la cubre con la vegetación del huerto y con su pelo largo, y desde 3:7 con el delantal de hojas de higuera (decisión pendiente del usuario, n.º 12 de guiones/LEEME.md; es la propuesta por defecto y vale igual para el perfil niño). El texto la llama «la mujer» y «Varona» hasta Gn 3:20, donde recibe el nombre de Eva: los rótulos y la narración no la llaman Eva antes.",
+  "edades": [
+    {
+      "dato": "Adulta desde que es formada: el texto no cuenta infancia",
+      "certeza": "inferido",
+      "nota": "En cuanto es hecha, es llevada al hombre, y el texto la llama su mujer. El texto no da nunca su edad; la edad visual (unos treinta años) es interpretación del ilustrador.",
+      "base": [
+        {
+          "ref": "Gn 2:22",
+          "cita": "hizo una mujer, y trájola al hombre"
+        },
+        {
+          "ref": "Gn 2:25",
+          "cita": "Adam y su mujer"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "rasgo": "Hecha de una costilla del hombre",
+      "certeza": "texto",
+      "ref": "Gn 2:22",
+      "cita": "de la costilla que Jehová Dios tomó del hombre, hizo una mujer"
+    },
+    {
+      "rasgo": "El hombre la llama Varona",
+      "certeza": "texto",
+      "ref": "Gn 2:23",
+      "cita": "ésta será llamada Varona, porque del varón fué tomada"
+    },
+    {
+      "rasgo": "Recibe el nombre de Eva después de las sentencias",
+      "certeza": "texto",
+      "ref": "Gn 3:20",
+      "cita": "llamó el hombre el nombre de su mujer, Eva; por cuanto ella era madre de todos los vivientes"
+    },
+    {
+      "rasgo": "Madre de Caín; después, de Abel (Gn 4:2) y de Set (Gn 4:25)",
+      "certeza": "texto",
+      "ref": "Gn 4:1",
+      "cita": "concibió y parió á Caín"
+    },
+    {
+      "rasgo": "Rostro, color de piel y pelo",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no describe su aspecto. Se dibuja con piel morena, ojos oscuros y pelo oscuro largo y ondulado, como la gente del Próximo Oriente antiguo que pide el estilo."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "En el huerto, desnuda y sin vergüenza (no se muestra: ver la nota de la ficha)",
+      "certeza": "texto",
+      "ref": "Gn 2:25",
+      "cita": "estaban ambos desnudos, Adam y su mujer, y no se avergonzaban"
+    },
+    {
+      "rasgo": "Después de comer, delantal de hojas de higuera cosidas",
+      "certeza": "texto",
+      "ref": "Gn 3:7",
+      "cita": "cosieron hojas de higuera, y se hicieron delantales"
+    },
+    {
+      "rasgo": "Túnica de pieles, hecha por Dios",
+      "certeza": "texto",
+      "ref": "Gn 3:21",
+      "cita": "hizo al hombre y á su mujer túnicas de pieles, y vistiólos"
+    },
+    {
+      "rasgo": "Forma de la túnica: piel curtida de color pardo claro, sin mangas, hasta media pierna, ceñida con una tira de cuero; descalza",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto solo dice «túnicas de pieles»; no dice de qué animal, su largo ni su forma, ni nombra calzado ni adornos."
+    }
+  ],
+  "voz": {
+    "descripcion": "Mujer adulta, voz media y cálida, español neutro. Gn 3:2-3: tranquila, repite el mandato con naturalidad. Gn 3:13: avergonzada, breve. Gn 4:1: alegría al nacer Caín. Gn 4:25: consuelo mezclado con pena por Abel. Pronuncia tal cual las formas antiguas («Adquirido he varón»). Voz candidata en Higgsfield: decisión pendiente del usuario."
+  },
+  "hoja_referencia": {
+    "prompt_en": "Make a character reference sheet on a plain light grey background, showing the same woman three times side by side: a front view of the face and shoulders, a three-quarter view of the face and shoulders, and a full-body view. She is a healthy adult woman of about thirty, the first woman. She has brown skin, dark eyes and long, thick, wavy dark hair that falls loose down her back, and a warm, attentive face with no makeup. In all three views she wears the same plain sleeveless tunic made of light brown tanned animal hide that covers her chest and shoulders, reaches the middle of her calves and is tied at the waist with a strip of leather. She stands barefoot with a calm, upright posture and empty hands.",
+    "prompt_es": "Hoja de referencia sobre fondo gris claro liso: la misma mujer tres veces (rostro y hombros de frente, rostro y hombros en tres cuartos, cuerpo entero). Mujer adulta y sana de unos treinta años, la primera mujer; piel morena, ojos oscuros y pelo oscuro largo, abundante y ondulado, suelto por la espalda; rostro cálido y atento, sin maquillaje. En las tres vistas lleva la misma túnica sencilla sin mangas de piel curtida parda clara, que le cubre pecho y hombros, llega a media pierna y se ciñe con una tira de cuero. Descalza, postura serena, manos vacías.",
+    "negativo_en": "Do not show her unclothed or with her chest or shoulders uncovered in any view. Do not give her woven cloth, sandals, jewelry, flowers in her hair or a fig leaf. Do not make the hide tunic short or close-fitting, and keep the background plain.",
+    "negativo_es": "Nunca desnuda ni con el pecho o los hombros descubiertos; sin tela tejida, sandalias, joyas, flores en el pelo ni hoja de higuera; la túnica no es corta ni ajustada; fondo liso."
+  }
+}
