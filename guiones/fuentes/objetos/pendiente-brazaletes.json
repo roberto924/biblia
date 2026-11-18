@@ -1,0 +1,70 @@
+{
+  "id": "pendiente-brazaletes",
+  "nombre": "El pendiente y los brazaletes de oro",
+  "pasajes": [
+    "gn-49",
+    "gn-50",
+    "gn-51"
+  ],
+  "element": {
+    "nombre": "PENDIENTE_BRAZALETES",
+    "tipo": "objeto"
+  },
+  "nota": "El id es el del catálogo de juego. Desde Gn 24:22 Rebeca los lleva en las tomas: el pendiente en la nariz (Gn 24:47) y un brazalete en cada muñeca. Los vasos de plata y de oro y los vestidos de Gn 24:53 salen en una sola toma: se describen en ella, no en esta hoja.",
+  "texto": [
+    {
+      "dato": "Un pendiente de oro de medio siclo y dos brazaletes que pesan diez",
+      "certeza": "texto",
+      "ref": "Gn 24:22",
+      "cita": "presentóle el hombre un pendiente de oro que pesaba medio siclo, y dos brazaletes que pesaban diez"
+    },
+    {
+      "dato": "Labán los ve en las manos de su hermana",
+      "certeza": "texto",
+      "ref": "Gn 24:30",
+      "cita": "vió el pendiente y los brazaletes en las manos de su hermana"
+    },
+    {
+      "dato": "El pendiente va en la nariz y los brazaletes en las manos",
+      "certeza": "texto",
+      "ref": "Gn 24:47",
+      "cita": "púsele un pendiente sobre su nariz, y brazaletes sobre sus manos"
+    },
+    {
+      "dato": "Después da más regalos: vasos de plata y de oro y vestidos",
+      "certeza": "texto",
+      "ref": "Gn 24:53",
+      "cita": "sacó el criado vasos de plata, y vasos de oro y vestidos, y dió á Rebeca"
+    },
+    {
+      "dato": "Los brazaletes también son de oro, y «diez» son siclos",
+      "certeza": "inferido",
+      "nota": "Gn 24:22 dice «de oro» y «medio siclo» del pendiente y solo «pesaban diez» de los brazaletes; se entiende el mismo metal y la misma unidad por la frase. Tampoco dice si diez es lo que pesa cada brazalete o los dos juntos: la hoja los dibuja macizos, sin fijar el peso.",
+      "base": [
+        {
+          "ref": "Gn 24:22",
+          "cita": "un pendiente de oro que pesaba medio siclo, y dos brazaletes que pesaban diez"
+        }
+      ]
+    },
+    {
+      "dato": "Equivalencia aproximada: medio siclo ≈ 6–7 g; diez siclos ≈ 115–143 g",
+      "certeza": "externa",
+      "fuente": "Explicación «siclo» de la app (datos/explicaciones.js): un siclo ≈ 11,5–14,3 g, cálculo con Easton's Bible Dictionary (1897), The Jewish Encyclopedia (1906) y una pesa del Primer Templo (Laden 2020, vía Wikipedia)",
+      "nota": "Cálculo: 0,5 × 11,5 g ≈ 5,8 g y 0,5 × 14,3 g ≈ 7,2 g; 10 × 11,5 g = 115 g y 10 × 14,3 g = 143 g. Supuesto: el siclo de Gn 24 pesaba lo mismo que esos siclos posteriores, que pudieron variar según la época y el lugar. Sirve para dirigir el tamaño: un aro pequeño y dos brazaletes macizos; no se rotula en el video."
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Pendiente: un aro pequeño y liso de oro macizo, de unos dos centímetros, abierto para pasar por el lado de la nariz; brazaletes: dos aros anchos y lisos de oro macizo, martillados, sin piedras ni grabados",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto da el metal, el peso y dónde se ponen, no la forma. Se eligen formas sencillas, sin referencia de época comprobada; el grosor sale del peso calculado."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing a small set of gold jewelry laid out flat and seen from slightly above. On the left is a small, plain nose ring of solid gold, about two centimeters across, an open ring with slightly tapered ends. On the right are two identical bracelets: broad, smooth bands of solid hammered gold, thick and heavy-looking, with no stones and no engraving. The gold is a warm, matte yellow with soft highlights. Nothing else is on the surface.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: un pequeño juego de joyas de oro tendido y visto algo desde arriba. A la izquierda, un pendiente de nariz pequeño y liso de oro macizo, de unos dos centímetros, un aro abierto con los extremos algo afinados. A la derecha, dos brazaletes iguales: aros anchos y lisos de oro macizo martillado, gruesos y de aspecto pesado, sin piedras ni grabados. El oro es amarillo cálido y mate, con brillos suaves. Nada más sobre la superficie.",
+    "negativo_en": "Do not add gemstones, pearls, engravings, chains, coins or filigree. Do not make the jewelry sparkle, glow or give off light. Do not show a hand, a face, a person, a box or a cloth, and keep the background plain.",
+    "negativo_es": "Sin piedras preciosas, perlas, grabados, cadenas, monedas ni filigrana; que las joyas no destellen, brillen con luz propia ni irradien; sin mano, rostro, persona, caja ni paño; fondo liso."
+  }
+}

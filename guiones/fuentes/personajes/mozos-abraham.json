@@ -1,0 +1,66 @@
+{
+  "id": "mozos-abraham",
+  "nombre": "Los dos mozos de Abraham y el asno (Gn 22)",
+  "personas": [],
+  "sin_persona": "El texto no los nombra: son «dos mozos suyos» (Gn 22:3), y no son personas en datos/biblia.js. No hablan.",
+  "pasajes": [
+    "gn-45"
+  ],
+  "element": {
+    "nombre": "MOZOS_ABRAHAM",
+    "tipo": "personaje (grupo)"
+  },
+  "nota": "Acompañan a Abraham e Isaac con el asno hasta que ven el lugar de lejos (Gn 22:3-5), esperan allí y vuelven con Abraham a Beer-seba (Gn 22:19). El asno va en la misma hoja porque el texto lo deja con ellos: «Esperaos aquí con el asno» (Gn 22:5). No suben al monte: no están en las tomas del altar.",
+  "rasgos": [
+    {
+      "rasgo": "Abraham enalbarda su asno y toma consigo dos mozos",
+      "certeza": "texto",
+      "ref": "Gn 22:3",
+      "cita": "enalbardó su asno, y tomó consigo dos mozos suyos"
+    },
+    {
+      "rasgo": "Esperan con el asno",
+      "certeza": "texto",
+      "ref": "Gn 22:5",
+      "cita": "Esperaos aquí con el asno"
+    },
+    {
+      "rasgo": "Abraham vuelve a ellos y van juntos a Beer-seba",
+      "certeza": "texto",
+      "ref": "Gn 22:19",
+      "cita": "tornóse Abraham á sus mozos, y levantáronse y se fueron juntos á Beer-seba"
+    },
+    {
+      "rasgo": "Dos hombres jóvenes, de unos veinte años y claramente distintos entre sí (uno más alto y enjuto, otro más bajo y fornido), de piel morena oliva, pelo oscuro natural hasta la nuca y barba corta y rala; gesto tranquilo y obediente",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto no dice su edad ni cómo eran. Se les dibuja algo mayores que Isaac y con barba, para que no se confundan con él. El pelo sigue a los hombres de Asia occidental del mural de Beni Hasan (A2).",
+      "referencias": [
+        "A2"
+      ]
+    },
+    {
+      "rasgo": "El asno: un asno gris pardo con el hocico y el vientre claros, con una albarda sencilla de lana tejida sujeta con cuerdas y dos sacos de cuero a los lados",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice que Abraham enalbardó su asno (Gn 22:3), no cómo era ni qué llevaba. Que lleve provisiones para el viaje de tres días (Gn 22:4) es interpretación."
+    }
+  ],
+  "vestuario": [
+    {
+      "rasgo": "Túnicas cortas de lana lisa sin teñir, una crema y otra parda, hasta la rodilla y sujetas sobre un hombro; cinturón de cuerda; sandalias sencillas",
+      "certeza": "supuesto",
+      "nota": "Supuesto: el texto no describe su ropa. La túnica sujeta sobre un hombro sigue a los hombres del cortejo de Beni Hasan (A2); la lana lisa, sin las franjas de la familia de Abraham, es elección del ilustrador para que se lea que son criados (como la hoja de Agar).",
+      "referencias": [
+        "A2"
+      ]
+    }
+  ],
+  "referencias": [
+    "A2"
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make a group reference sheet on a plain light grey background, showing two young men and a donkey side by side, each fully visible from head to feet. The two men are herdsmen's servants from western Asia of about twenty who clearly differ from each other: one is tall and lean, the other shorter and sturdy. They have olive-brown skin, dark eyes, natural dark hair that reaches the nape of the neck and short, sparse beards. Their heads are bare, with nothing tied around them. Their expressions are calm and obedient. They wear short, plain knee-length tunics of undyed wool, one cream and one light brown, each fastened over one shoulder, with cord belts and simple leather sandals. Beside them stands a grey-brown donkey with a pale muzzle and belly, carrying a simple saddle blanket of woven wool tied with ropes and two leather bags hanging at its sides.",
+    "prompt_es": "Hoja de referencia de grupo sobre fondo gris claro liso: dos hombres jóvenes y un asno uno al lado de otro, de cuerpo entero. Dos criados de pastores de Asia occidental, de unos veinte años, claramente distintos: uno alto y enjuto, otro más bajo y fornido. Piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca y barba corta y rala. Cabezas descubiertas, sin nada atado. Gesto tranquilo y obediente. Túnicas cortas y lisas de lana sin teñir hasta la rodilla, una crema y otra parda clara, sujetas sobre un hombro, con cinturón de cuerda y sandalias sencillas. A su lado, un asno gris pardo con el hocico y el vientre claros, con una albarda sencilla de lana tejida sujeta con cuerdas y dos sacos de cuero a los lados.",
+    "negativo_en": "Do not make the two men look alike. Do not put headbands, cords or cloths on their heads. Do not give them striped or brightly colored cloth, weapons, staffs or jewelry. Do not show firewood, a knife, fire or a boy. Do not give the donkey bells, tassels or a rich saddle. Do not paint a mountain, a road or any other person, and keep the background plain.",
+    "negativo_es": "Que los dos hombres no se parezcan; sin cintas, cordones ni paños en la cabeza; sin telas de franjas ni colores vivos, armas, bastones ni joyas; sin leña, cuchillo, fuego ni un muchacho; el asno sin cascabeles, borlas ni silla rica; sin monte, camino ni otras personas; fondo liso."
+  }
+}

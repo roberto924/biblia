@@ -1,0 +1,86 @@
+{
+  "id": "cantaro-rebeca",
+  "nombre": "El cántaro de Rebeca",
+  "pasajes": [
+    "gn-48",
+    "gn-49",
+    "gn-50"
+  ],
+  "element": {
+    "nombre": "CANTARO_REBECA",
+    "tipo": "objeto"
+  },
+  "nota": "No está en el catálogo de juego (decisión pendiente n.º 35 de guiones/LEEME.md). Es la señal que pide el criado (Gn 24:14) y el centro de la escena del pozo (Gn 24:15-20); vuelve en su relato (Gn 24:43-46). En gn-48 solo se nombra en la oración: sale si el guion muestra lo que el criado imagina. La pila donde lo vacía (Gn 24:20) y el pozo son parte del escenario de la fuente, no de esta hoja.",
+  "texto": [
+    {
+      "dato": "La señal que pide el criado: «Baja tu cántaro»",
+      "certeza": "texto",
+      "ref": "Gn 24:14",
+      "cita": "Baja tu cántaro, te ruego, para que yo beba"
+    },
+    {
+      "dato": "Las mozas salen por agua a la hora de la tarde",
+      "certeza": "texto",
+      "ref": "Gn 24:11",
+      "cita": "á la hora en que salen las mozas por agua"
+    },
+    {
+      "dato": "Rebeca lo lleva sobre el hombro",
+      "certeza": "texto",
+      "ref": "Gn 24:15",
+      "cita": "la cual salía con su cántaro sobre su hombro"
+    },
+    {
+      "dato": "Lo llena en la fuente",
+      "certeza": "texto",
+      "ref": "Gn 24:16",
+      "cita": "descendió á la fuente, y llenó su cántaro"
+    },
+    {
+      "dato": "Lo baja sobre la mano para dar de beber al criado",
+      "certeza": "texto",
+      "ref": "Gn 24:18",
+      "cita": "dióse prisa á bajar su cántaro sobre su mano, y le dió á beber"
+    },
+    {
+      "dato": "Lo vacía en la pila y vuelve al pozo para los camellos",
+      "certeza": "texto",
+      "ref": "Gn 24:20",
+      "cita": "vació su cántaro en la pila, y corrió otra vez al pozo para sacar agua"
+    },
+    {
+      "dato": "El criado lo cuenta en casa de Labán",
+      "certeza": "texto",
+      "ref": "Gn 24:46",
+      "cita": "prestamente bajó su cántaro de encima de sí"
+    },
+    {
+      "dato": "Lo lleva una sola persona, lleno, sobre el hombro, y se puede beber de él sostenido en la mano",
+      "certeza": "inferido",
+      "nota": "Lo lleva lleno sobre el hombro (Gn 24:15-16) y lo baja a la mano para que el criado beba (Gn 24:18): es un cántaro mediano, no una tinaja.",
+      "base": [
+        {
+          "ref": "Gn 24:15",
+          "cita": "con su cántaro sobre su hombro"
+        },
+        {
+          "ref": "Gn 24:18",
+          "cita": "bajar su cántaro sobre su mano"
+        }
+      ]
+    }
+  ],
+  "rasgos": [
+    {
+      "dato": "Cántaro de barro cocido color terracota, de unos cuarenta centímetros de alto, con panza redonda, cuello estrecho, boca con borde, dos asas pequeñas y base estrecha; sin pintar, con una banda fina más oscura bajo el cuello",
+      "certeza": "interpretacion",
+      "nota": "Interpretación del ilustrador: el texto dice «cántaro» y nada de su forma. El tamaño sale de lo inferido; la forma y el color son elección, sin referencia de época comprobada."
+    }
+  ],
+  "hoja_referencia": {
+    "prompt_en": "Make an object reference sheet on a plain light grey background, showing the same water jar three times side by side: on the left standing upright, in the center lying on its side as if carried on a shoulder, and on the right tilted forward with a stream of clear water pouring from its mouth. It is a terracotta-colored fired clay jar about forty centimeters tall, with a round belly, a narrow neck, a rim at the mouth, two small handles and a narrow base. It is unpainted except for one thin darker band below the neck. Nobody is holding it.",
+    "prompt_es": "Hoja de referencia de un objeto sobre fondo gris claro liso: el mismo cántaro tres veces, uno al lado de otro: a la izquierda, de pie; en el centro, tumbado como cuando se lleva al hombro; a la derecha, inclinado hacia delante, vertiendo un chorro de agua clara por la boca. Cántaro de barro cocido color terracota, de unos cuarenta centímetros de alto, con panza redonda, cuello estrecho, boca con borde, dos asas pequeñas y base estrecha. Sin pintar, salvo una banda fina más oscura bajo el cuello. Nadie lo sostiene.",
+    "negativo_en": "Do not make it a large storage jar, an amphora with a pointed foot, a metal pitcher or a glazed or painted vase with figures. Do not show hands, people, a well, a trough or camels, and keep the background plain.",
+    "negativo_es": "Que no sea una tinaja grande, un ánfora de pie en punta, una jarra de metal ni un jarrón vidriado o pintado con figuras; sin manos, personas, pozo, pila ni camellos; fondo liso."
+  }
+}

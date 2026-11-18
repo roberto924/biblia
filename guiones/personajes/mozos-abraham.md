@@ -1,0 +1,35 @@
+# Los dos mozos de Abraham y el asno (Gn 22) (personaje)
+
+Generado por `python -I herramientas/guiones.py`. No editar a mano.
+
+- **Element en Cinema Studio**: `MOZOS_ABRAHAM` (personaje (grupo))
+- **Pasajes**: gn-45
+- **Nota**: Acompañan a Abraham e Isaac con el asno hasta que ven el lugar de lejos (Gn 22:3-5), esperan allí y vuelven con Abraham a Beer-seba (Gn 22:19). El asno va en la misma hoja porque el texto lo deja con ellos: «Esperaos aquí con el asno» (Gn 22:5). No suben al monte: no están en las tomas del altar.
+
+## Rasgos
+
+- **Texto**: Abraham enalbarda su asno y toma consigo dos mozos — Gn 22:3: «enalbardó su asno, y tomó consigo dos mozos suyos»
+- **Texto**: Esperan con el asno — Gn 22:5: «Esperaos aquí con el asno»
+- **Texto**: Abraham vuelve a ellos y van juntos a Beer-seba — Gn 22:19: «tornóse Abraham á sus mozos, y levantáronse y se fueron juntos á Beer-seba»
+- **Interpretación del ilustrador**: Dos hombres jóvenes, de unos veinte años y claramente distintos entre sí (uno más alto y enjuto, otro más bajo y fornido), de piel morena oliva, pelo oscuro natural hasta la nuca y barba corta y rala; gesto tranquilo y obediente — Interpretación del ilustrador: el texto no dice su edad ni cómo eran. Se les dibuja algo mayores que Isaac y con barba, para que no se confundan con él. El pelo sigue a los hombres de Asia occidental del mural de Beni Hasan (A2). — referencias: A2
+- **Interpretación del ilustrador**: El asno: un asno gris pardo con el hocico y el vientre claros, con una albarda sencilla de lana tejida sujeta con cuerdas y dos sacos de cuero a los lados — Interpretación del ilustrador: el texto dice que Abraham enalbardó su asno (Gn 22:3), no cómo era ni qué llevaba. Que lleve provisiones para el viaje de tres días (Gn 22:4) es interpretación.
+
+## Vestuario
+
+- **Supuesto**: Túnicas cortas de lana lisa sin teñir, una crema y otra parda, hasta la rodilla y sujetas sobre un hombro; cinturón de cuerda; sandalias sencillas — Supuesto: el texto no describe su ropa. La túnica sujeta sobre un hombro sigue a los hombres del cortejo de Beni Hasan (A2); la lana lisa, sin las franjas de la familia de Abraham, es elección del ilustrador para que se lea que son criados (como la hoja de Agar). — referencias: A2
+
+## Referencias de época
+
+- Procession of the Aamu (mural original de la tumba de Jnumhotep II, compuesto fotográfico) — In situ, Beni Hasan (Egipto); fotos de A. D. Riddle, Brown University y Macquarie University (vía Wikimedia Commons), inv. Beni Hasan, tumba BH3 (in situ) — ca. 1900 a. C., según Commons (Reino Medio, Dinastía XII) — licencia: Dominio público en EE. UU. (reproducción fiel de obra anterior a 1931; Public Domain Mark 1.0 según Commons; el reuso fuera de EE. UU. puede tener restricciones) — imagen: https://commons.wikimedia.org/wiki/File:Procession_of_the_Aamu,_Tomb_of_Khnumhotep_II_(composite).jpg [A2]
+
+## Hoja de referencia del Element
+
+Generar en ChatGPT Images (o GPT Image en Higgsfield) y guardar como `guiones/imagenes/personajes/mozos-abraham.png`; luego subirla a Cinema Studio como Element `MOZOS_ABRAHAM`.
+
+Adjuntar en ChatGPT las láminas patrón de estilo (ver `estilo.md`): `guiones/imagenes/estilo/patron-1-paisaje.png`, `guiones/imagenes/estilo/patron-2-interior.png`, `guiones/imagenes/estilo/patron-3-grupo.png` (siempre). Además, las referencias de época de arriba (descargadas de su URL de Commons).
+
+_Hoja de referencia de grupo sobre fondo gris claro liso: dos hombres jóvenes y un asno uno al lado de otro, de cuerpo entero. Dos criados de pastores de Asia occidental, de unos veinte años, claramente distintos: uno alto y enjuto, otro más bajo y fornido. Piel morena oliva, ojos oscuros, pelo oscuro natural hasta la nuca y barba corta y rala. Cabezas descubiertas, sin nada atado. Gesto tranquilo y obediente. Túnicas cortas y lisas de lana sin teñir hasta la rodilla, una crema y otra parda clara, sujetas sobre un hombro, con cinturón de cuerda y sandalias sencillas. A su lado, un asno gris pardo con el hocico y el vientre claros, con una albarda sencilla de lana tejida sujeta con cuerdas y dos sacos de cuero a los lados._ Evitar: _Que los dos hombres no se parezcan; sin cintas, cordones ni paños en la cabeza; sin telas de franjas ni colores vivos, armas, bastones ni joyas; sin leña, cuchillo, fuego ni un muchacho; el asno sin cascabeles, borlas ni silla rica; sin monte, camino ni otras personas; fondo liso._
+
+```text
+Create a frame from a 2D hand-drawn animated feature film, in a wide 16:9 frame and one consistent house style: clean, bold dark outlines; flat colors with crisp hard-edged cel shadows in one or two tones; simplified, slightly angular faces with strong jawlines, defined brows and expressive eyes; athletic but believable adult proportions. The backgrounds are softly painted, with more texture and atmosphere than the characters. Use a muted earthy palette of ochre, sand, olive, terracotta and deep blue, with natural light only: daylight, dusk or the glow of oil lamps. Base the people, their dress and the architecture on records of the ancient Near East, and keep the composition clear and readable. Match the line work, shading and palette of the attached style reference panels exactly. Make a group reference sheet on a plain light grey background, showing two young men and a donkey side by side, each fully visible from head to feet. The two men are herdsmen's servants from western Asia of about twenty who clearly differ from each other: one is tall and lean, the other shorter and sturdy. They have olive-brown skin, dark eyes, natural dark hair that reaches the nape of the neck and short, sparse beards. Their heads are bare, with nothing tied around them. Their expressions are calm and obedient. They wear short, plain knee-length tunics of undyed wool, one cream and one light brown, each fastened over one shoulder, with cord belts and simple leather sandals. Beside them stands a grey-brown donkey with a pale muzzle and belly, carrying a simple saddle blanket of woven wool tied with ropes and two leather bags hanging at its sides. Do not use photographic realism, 3D or CGI rendering, oil-paint or watercolor texture on the characters, anime or manga features, or chibi or cartoonish caricature. Do not add superhero costumes, capes, masks, emblems or exaggerated muscles. Avoid the look of a glossy video game or a Hollywood blockbuster. Do not add lens flares, neon, halos, glowing auras or wings. Do not include modern clothing or objects, medieval or Renaissance European costume, Roman armor or fantasy costume. Do not write any text, captions, speech balloons, panel borders, watermarks or logos. Show no blood or graphic violence and no heavy makeup. Do not make the two men look alike. Do not put headbands, cords or cloths on their heads. Do not give them striped or brightly colored cloth, weapons, staffs or jewelry. Do not show firewood, a knife, fire or a boy. Do not give the donkey bells, tassels or a rich saddle. Do not paint a mountain, a road or any other person, and keep the background plain.
+```
