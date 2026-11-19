@@ -1038,6 +1038,67 @@ const Nucleo = (() => {
     const s = estadoCosa(d, J, grupo, id, leidos);
     return s && Object.assign(s, { visible: s.estado === 'obtenido' });
   }
+  /* ---- Desafío de la colección (datos/preguntas.js, `P`; diseño 2026-11-18-desafio-coleccion-design.md) ----
+     Un personaje obtenido leyendo queda «listo para el desafío» si tiene preguntas: entra a la colección (con su
+     retrato) al acertar todas. Un intento por día (día local); al fallar, espera hasta la medianoche siguiente.
+     Solo se pregunta lo ya leído; el perfil niño no recibe las marcadas `nino: false`. Sin preguntas suficientes
+     (o sin `P`), el personaje se obtiene como antes. registro: { [id]: { superado, intentos: [{ dia, aciertos, total, ms }] } } */
+  const preguntasValidas = P => !!(P && typeof P === 'object' && P.personajes && typeof P.personajes === 'object' && Array.isArray(P.escala));
+  function preguntasPorNivel(P, nivel) {
+    let n = 0;
+    ((P && P.escala) || []).forEach(x => { if (Array.isArray(x) && (+nivel || 0) >= x[0]) n = x[1]; });
+    return n;
+  }
+  const segundosPregunta = (P, nino) => { const s = (P && P.segundos) || {}; return +(nino ? s.nino : s.adulto) || (nino ? 25 : 15); };
+  const dosCifras = n => String(n).padStart(2, '0');
+  const diaLocal = t => { const x = new Date(t); return `${x.getFullYear()}-${dosCifras(x.getMonth() + 1)}-${dosCifras(x.getDate())}`; };
+  const proximaMedianoche = t => { const x = new Date(t); x.setHours(24, 0, 0, 0); return x.getTime(); };
+  const esperaTxt = ms => { const s = Math.max(0, Math.ceil(ms / 1000)); return `${dosCifras(Math.floor(s / 3600))}:${dosCifras(Math.floor(s / 60) % 60)}:${dosCifras(s % 60)}`; };
+  // Preguntas que ya se pueden hacer: su versículo cae en un pasaje leído (en la app basta { id, ref, nino? }: el texto y
+  // la respuesta están solo en el servidor).
+  function preguntasDisponibles(d, P, id, leidos, nino) {
+    if (!preguntasValidas(P) || !Array.isArray(P.personajes[id])) return [];
+    const L = leidos instanceof Set ? leidos : new Set(leidos || []);
+    const rs = pasajes(d).filter(p => L.has(p.id)).map(rangoPasaje).filter(Boolean);
+    return P.personajes[id].filter(q => {
+      const k = q && clave(q.ref);
+      return k !== null && (!nino || q.nino !== false) && rs.some(r => k >= r.a && k <= r.b);
+    });
+  }
+  // Estado del personaje con el desafío: 'bloqueado' | 'en-curso' | 'desafio' | 'espera' | 'obtenido'.
+  function estadoDesafio(d, J, P, id, leidos, registro, ahora, nino) {
+    const base = estadoPersonaje(d, J, id, leidos);
+    const r = (registro && typeof registro === 'object' && registro[id]) || {};
+    const out = Object.assign({}, base, { superado: !!r.superado, preguntas: 0, hasta: null, intentos: Array.isArray(r.intentos) ? r.intentos : [] });
+    if (base.estado !== 'obtenido' || base.npc || !preguntasValidas(P) || !P.personajes[id] || r.superado) return out;
+    if (nino && Array.isArray(P.sinNino) && P.sinNino.includes(id)) return out; // historia no apta: el niño no tiene su desafío
+    const n = preguntasPorNivel(P, base.nivel), disp = preguntasDisponibles(d, P, id, leidos, nino);
+    if (!n || disp.length < n) return out; // sin preguntas suficientes: se obtiene como antes
+    out.preguntas = n;
+    const ult = out.intentos[out.intentos.length - 1];
+    if (ult && ult.dia === diaLocal(ahora)) { out.estado = 'espera'; out.hasta = proximaMedianoche(ahora); }
+    else out.estado = 'desafio';
+    return out;
+  }
+  // Set del día: n preguntas al azar entre las disponibles, con las opciones barajadas. azar(): [0, 1).
+  function armarDesafio(disp, n, azar) {
+    const rnd = typeof azar === 'function' ? azar : Math.random;
+    const baraja = xs => { const a = xs.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+    return baraja(disp).slice(0, n).map(q => {
+      const orden = baraja([0, 1, 2, 3]);
+      return { p: q.p, o: orden.map(i => q.o[i]), c: orden.indexOf(q.c), ref: q.ref, cita: q.cita };
+    });
+  }
+  // Registro tras un intento (se anota al empezar, con aciertos 0: abandonar o recargar cuenta como fallado).
+  function anotarIntento(registro, id, intento) {
+    const R = Object.assign({}, registro && typeof registro === 'object' ? registro : {});
+    const r = Object.assign({ superado: null, intentos: [] }, R[id] || {});
+    const xs = (r.intentos || []).filter(x => x && x.dia !== intento.dia).concat([intento]).slice(-30);
+    const ok = intento.total > 0 && intento.aciertos === intento.total;
+    R[id] = Object.assign({}, r, { intentos: xs, superado: r.superado || (ok ? intento.fecha || intento.dia : null) });
+    if (ok && (!r.mejor || intento.ms < r.mejor.ms)) R[id].mejor = { aciertos: intento.aciertos, total: intento.total, ms: intento.ms };
+    return R;
+  }
   // Genealogías del catálogo que se solapan con un pasaje (el lector las rotula; nunca cuentan como aparición).
   function genealogiasDe(J, p) {
     const r = rangoPasaje(p);
@@ -1871,6 +1932,7 @@ const Nucleo = (() => {
     recursos, recursoValido, recursosDe, imagenesDe, relacionadosDe, mapasAntiguos, rotuloRecurso,
     TRADS, TIPOS, norm, rangoClaves, testigosDe, tramoRefs, nombreFolio, foliosDePasaje, rollosDePasaje, vaticanoDeLibro, variantesDe, numeracionHebrea, notaGriegoLegible, alinearOriginales, sinTextoDe, sinTextoOriginal, videosDeLibro, esIdYoutube, escritura, textoParaVoz, vozPara, crono, elecciones, combinacion, anioEvento, cadenaEvento, vidasCrono, vivosEn, eventosDeRefs, eventosDePasaje,
     coleccionables, rareza, RAREZAS, personasDePasaje, coleccion, nuevasAlLeer, fichasColeccion, pasajesDePersona,
+    preguntasValidas, preguntasPorNivel, segundosPregunta, diaLocal, proximaMedianoche, esperaTxt, preguntasDisponibles, estadoDesafio, armarDesafio, anotarIntento,
     GRUPOS_JUEGO, juegoValido, estadoPersonaje, vistaFichaJuego, estadoCosa, fichasCosas, nuevosAlLeer, genealogiasDe, esGenealogia, datoPlegado, relacionadosJuego, capituloListo, rangosAp, lugaresDePersona, descendientes,
     curiosidades, curiosidadesDe, sabiasQue, enlacesExternos, tradDeCombo,
     vecinosFechados, despuesDe, contemporaneos, compararEvento, esDiluvio, lineaDeTiempo, parseRef, clave, claseCerteza, pasajes, pasajeDe, versiculosDe, segmentar, contextoPersona,
@@ -3801,6 +3863,7 @@ if (typeof document !== 'undefined') (function () {
   }
   function abrirFicha(id) {
     const p = N.persona(D, id); if (!p) return;
+    if (desDlg && desDlg.open && !DES) cerrar(desDlg);
     if (!personaOk(id)) { abrirBloqueada('Persona sin descubrir', 'Esta persona aparece más adelante en la lectura. Su ficha se verá cuando llegues al pasaje donde se la nombra.'); return; }
     const I = N.indice(D);
     const relOk = (r, otro) => refOk(r.ref) && personaOk(otro); // vínculo y la otra persona, ya accesibles
@@ -3843,24 +3906,27 @@ if (typeof document !== 'undefined') (function () {
     const k1 = N.indice(D).primera.get(id), primera = k1 ? N.refDeClave(k1) : p.primera_ref;
     const JJ = JUEGO(), ej = JJ && JJ.personajes[id], leidosF = [...pasajesLeidos()];
     const est = !p.sin_nombre && ej ? N.vistaFichaJuego(D, JJ, 'personajes', id, leidosF) : null;
-    const oculto = !!est && !est.visible; // no obtenido: sin el contenido del catálogo (como en la colección)
-    const enCol = !p.sin_nombre && N.coleccion(D, leidosF, JJ).has(id), rz = N.rareza(D, id);
-    const estadoTxt = enCol ? 'En tu colección' : est && est.estado === 'en-curso' ? `En curso · ${avanceTxt(est)}` : est && est.capitulo ? `Aún no está en tu colección · se desbloquea al terminar ${esc(capLegible(est.capitulo))}` : 'Aún no está en tu colección';
+    const pend = !p.sin_nombre && ej ? pendienteDesafio(id, leidosF) : null;
+    const oculto = !!est && (!est.visible || !!pend); // no obtenido: sin el contenido del catálogo (como en la colección)
+    const enCol = !p.sin_nombre && !pend && N.coleccion(D, leidosF, JJ).has(id), rz = N.rareza(D, id);
+    const estadoTxt = enCol ? 'En tu colección' : pend ? (pend.estado === 'espera' ? `Bloqueado · nuevo intento en ${relojHTML(pend.hasta)}` : `Bloqueado · supera el desafío de ${pend.preguntas} preguntas`) : est && est.estado === 'en-curso' ? `En curso · ${avanceTxt(est)}` : est && est.capitulo ? `Aún no está en tu colección · se desbloquea al terminar ${esc(capLegible(est.capitulo))}` : 'Aún no está en tu colección';
     const pas = N.pasajesDePersona(D, id).filter(x => ACC().pasaje(x.pasaje.id));
     const pasLi = x => `<li><a href="#leer/p/${esc(x.pasaje.id)}"><span class="pp-rango">${rango(x.pasaje)}</span><span class="pp-titulo">${esc(x.pasaje.titulo)}</span></a><span class="meta">${x.versiculos} ${x.versiculos === 1 ? 'versículo' : 'versículos'}</span></li>`;
     const lugs = N.lugaresDePersona(D, id, 40).filter(x => lugarOk(x.lugar)).slice(0, 10), ext = N.enlacesExternos(D, id);
     fichaDlg.querySelector('h2').textContent = p.nombre || id;
     fichaDlg.querySelector('.dialogo-cuerpo').innerHTML = `
-      <div class="ficha-cab">${retratoHTML(p)}<div class="ficha-datos">
+      <div class="ficha-cab">${pend ? retratoBloqueadoHTML(id) : enCol ? retratoFichaHTML(id, p) : retratoHTML(p)}<div class="ficha-datos">
         ${p.rol ? `<p class="rol">${esc(p.rol)}</p>` : ''}
         ${grafia ? `<p class="grafia">En la Reina-Valera 1909: <strong>${esc(grafia)}</strong></p>` : ''}
         <p class="meta">${p.sexo === 'm' ? 'Varón' : p.sexo === 'f' ? 'Mujer' : 'Sexo no indicado'}${primera ? ' · primera aparición: ' + refHTML(primera) : ''} ${etiquetaTrad(id)}</p>
         ${p.sin_nombre ? '' : `<p class="ficha-estado${enCol ? ' en-col' : est && est.estado === 'en-curso' ? ' en-curso' : ''}">${estadoTxt} · ${est ? nivelHTML(est) : ''}<span class="rareza-muestra r-${rz.id}">${esc(rz.nombre)}</span> <span class="meta">${rz.versiculos} ${rz.versiculos === 1 ? 'versículo' : 'versículos'}</span></p>`}
         ${ej && ej.resumen && !oculto && resumenOk(ej) && todoLeido ? `<p class="resumen-juego">${esc(ej.resumen)}</p>` : ''}
-        ${oculto && est.primeraCap ? `<p class="meta">Aparece en ${esc(capLegible(est.primeraCap))}. Su ficha de la colección se verá cuando la obtengas.</p>` : ''}
+        ${pend ? `<p class="meta">Toca el candado para el desafío: si aciertas todas, entra en tu colección${retratoCarta(id) ? ' con su retrato' : ''} y se abre todo lo que se sabe de ${esc(p.nombre || id)}.</p>` : ''}
+        ${oculto && !pend && est.primeraCap ? `<p class="meta">Aparece en ${esc(capLegible(est.primeraCap))}. Su ficha de la colección se verá cuando la obtengas.</p>` : ''}
       </div></div>
       <p class="acciones-ficha">${(r => r ? `<a class="boton" href="${hrefRef(N.parseRef(r))}">Leer donde aparece</a>` : '')([primera, p.primera_ref, p.ref_mencion].concat(p.refs || []).find(x => N.clave(x)))}
         ${N.enPantallaArbol(D, id) ? `<a class="boton secundario" href="#arbol/${encodeURIComponent(id)}">Ver en el árbol</a>` : ''}</p>
+      ${enCol ? hojasFichaHTML(id) : ''}
       ${ej && !oculto ? bloquesJuegoHTML(ej, 'persona', id) : ''}
       <h3>Padres</h3>${lista(padres, 'No constan.')}
       ${cony.length ? '<h3>Cónyuges</h3>' + lista(cony, '') : ''}
@@ -4958,12 +5024,393 @@ if (typeof document !== 'undefined') (function () {
   }
   const rangoRareza = r => r.max === Infinity ? `${r.min} o más versículos` : r.min === r.max ? `${r.min} versículo` : `${r.min}–${r.max} versículos`;
   const bloqueadaHTML = (f, quien, ico) => `<li class="ficha-col bloqueada"><span class="ficha-retrato">${ico || SILUETA}</span><span class="ficha-nombre"><span aria-hidden="true">Sin descubrir</span><span class="sr">${quien} sin descubrir,</span></span><span class="ficha-pie">Aparece en ${esc(f.primeraCap).replace(' ', '&nbsp;')}</span></li>`;
+  /* ---------- Desafío de la colección, servidor del ranking y retratos ----------
+     Las preguntas y respuestas viven solo en el servidor (Supabase; antitrampas fuerte): la app publicada recibe
+     datos/desafios.js (cuántas preguntas hay y en qué versículo, sin texto) y juega una pregunta a la vez contra la
+     función `desafio`. Contrato: docs/superpowers/specs/2026-11-18-ranking-mundial-design.md. */
+  const PREG = () => N.preguntasValidas(window.BIBLIA_DESAFIOS) ? window.BIBLIA_DESAFIOS : null;
+  const RET = window.BIBLIA_RETRATOS && window.BIBLIA_RETRATOS.personas ? window.BIBLIA_RETRATOS : null;
+  const ROTULO_IA = (RET && RET.rotulo) || 'Ilustración moderna (generada con IA)';
+  const SRV = () => { const s = window.BIBLIA_SERVIDOR; return s && s.url && s.anon ? s : null; };
+  const svPerfil = () => store.get('servidor.perfil', null);
+  const svEstado = () => { const e = store.get('servidor.estado', null); return e && e.personajes ? e : null; };
+  // Registro en el formato del núcleo, a partir del último estado que dio el servidor.
+  function regDesafio() {
+    const e = svEstado(), R = {}; if (!e) return R;
+    const hoy = N.diaLocal(Date.now());
+    Object.entries(e.personajes).forEach(([id, x]) => {
+      R[id] = { superado: x && x.superado ? 'servidor' : null, intentos: x && x.intentadoHoy ? [Object.assign({ dia: hoy }, x.ultimo || { aciertos: 0, total: 0 })] : [] };
+    });
+    return R;
+  }
+  const estadoDes = (id, Ls) => {
+    const e = N.estadoDesafio(D, JUEGO(), PREG(), id, Ls || [...pasajesLeidos()], regDesafio(), Date.now(), esNinoActivo()), sv = svEstado();
+    if (e.estado === 'espera' && sv && sv.hasta && Date.parse(sv.hasta) > Date.now()) e.hasta = Date.parse(sv.hasta); // la medianoche la fija el servidor
+    return e;
+  };
+  // Personaje obtenido leyendo pero con el desafío por superar: { estado: 'desafio'|'espera', preguntas, hasta }; si no, null.
+  const pendienteDesafio = (id, Ls) => { const JJ = JUEGO(); if (!JJ || !JJ.personajes[id] || !PREG()) return null; const e = estadoDes(id, Ls); return e.estado === 'desafio' || e.estado === 'espera' ? e : null; };
+  // Imágenes del personaje ya alcanzadas (el pasaje de su hoja está leído), en orden de lectura.
+  function imagenesPersona(id, Ls) {
+    const xs = (RET && RET.personas[id]) || []; if (!xs.length) return [];
+    const L = Ls instanceof Set ? Ls : new Set(Ls || [...pasajesLeidos()]), orden = new Map(N.pasajes(D).map((p, i) => [p.id, i]));
+    return xs.filter(e => e && e.hoja && (!e.pasaje || L.has(e.pasaje))).sort((a, b) => (orden.get(a.pasaje) || 0) - (orden.get(b.pasaje) || 0));
+  }
+  // Retrato de la carta: el de la última hoja individual ya leída (envejece al avanzar la lectura).
+  const retratoCarta = (id, Ls) => imagenesPersona(id, Ls).filter(e => e.retrato).pop() || null;
+  const relojHTML = hasta => `<span class="reloj" data-hasta="${hasta}">${N.esperaTxt(hasta - Date.now())}</span>`;
+  // Cuenta atrás de las esperas: un solo intervalo; al llegar a cero se pide el estado de nuevo y se repinta.
+  setInterval(() => {
+    const ahora = Date.now(); let cero = false;
+    document.querySelectorAll('[data-hasta]').forEach(el => { const ms = +el.dataset.hasta - ahora; el.textContent = N.esperaTxt(ms); if (ms <= 0) cero = true; });
+    if (cero && !DES) { refrescarEstado(true).then(() => { if (main.dataset.vista === 'personajes') rerender(); if (desDlg && desDlg.open && desDlg.dataset.id && !desDlg.dataset.registro) abrirDesafio(desDlg.dataset.id); }); }
+  }, 1000);
+
+  /* ---- Conexión con el servidor: sesión anónima (REST de Supabase Auth) y función `desafio` ---- */
+  const cabeceras = extra => Object.assign({ apikey: SRV().anon, 'Content-Type': 'application/json' }, extra || {});
+  const lsPerfil = (pid, k) => { const v = LS.get(N.clavePerfil(pid, k)); if (v == null) return null; try { return JSON.parse(v); } catch (e) { return null; } };
+  const guardarSesion = (j, pid) => LS.set(N.clavePerfil(pid || PERF.r.activo, 'servidor.sesion'), JSON.stringify({ access_token: j.access_token, refresh_token: j.refresh_token, expira: Date.now() + (+j.expires_in || 3600) * 1000 }));
+  async function postJSON(url, cuerpo, extra) {
+    try {
+      const r = await fetch(url, { method: 'POST', headers: cabeceras(extra), body: JSON.stringify(cuerpo || {}) });
+      let j = {}; try { j = await r.json(); } catch (e) { /* sin cuerpo */ }
+      if (!r.ok && !(j && j.error)) j = { error: r.status === 401 ? 'sesion' : 'servidor', estado: r.status };
+      return j || {};
+    } catch (e) { return { error: 'red' }; }
+  }
+  // Token del perfil `pid` (por defecto el activo). Sin sesión y `crear` no falso: alta anónima (sin correo ni contraseña).
+  async function tokenServidor(pid, crear) {
+    const id = pid || PERF.r.activo, s = lsPerfil(id, 'servidor.sesion');
+    if (s && s.access_token && s.expira - 60000 > Date.now()) return s.access_token;
+    if (s && s.refresh_token) {
+      const j = await postJSON(`${SRV().url}/auth/v1/token?grant_type=refresh_token`, { refresh_token: s.refresh_token });
+      if (j.access_token) { guardarSesion(j, id); return j.access_token; }
+      if (j.error === 'red') return null;
+    }
+    if (crear === false) return null;
+    const j = await postJSON(`${SRV().url}/auth/v1/signup`, {});
+    if (!j.access_token) return null;
+    guardarSesion(j, id); LS.del(N.clavePerfil(id, 'servidor.perfil')); LS.del(N.clavePerfil(id, 'servidor.estado'));
+    return j.access_token;
+  }
+  async function llamar(accion, datos, pid) {
+    if (!SRV()) return { error: 'sin-servidor' };
+    const id = pid || PERF.r.activo, t = await tokenServidor(id, accion !== 'borrar');
+    if (!t) return { error: accion === 'borrar' ? 'sin-cuenta' : 'red' };
+    const j = await postJSON(`${SRV().url}/functions/v1/desafio`, Object.assign({ accion }, datos || {}), { Authorization: 'Bearer ' + t });
+    if (j.error === 'sesion' || j.error === 'no-autorizado') { const s = lsPerfil(id, 'servidor.sesion'); if (s) LS.set(N.clavePerfil(id, 'servidor.sesion'), JSON.stringify(Object.assign(s, { expira: 0 }))); }
+    return j;
+  }
+  // Borra la cuenta del ranking de un perfil (en cascada, sus intentos) y lo que la app guardaba de ella.
+  async function borrarCuentaServidor(pid) {
+    const id = pid || PERF.r.activo;
+    if (!SRV() || !lsPerfil(id, 'servidor.sesion')) return true;
+    const j = await llamar('borrar', {}, id);
+    if (!j.ok && j.error !== 'sin-cuenta' && j.error !== 'no-autorizado' && j.error !== 'sin-perfil') return false;
+    ['servidor.sesion', 'servidor.perfil', 'servidor.estado'].forEach(k => LS.del(N.clavePerfil(id, k)));
+    return true;
+  }
+  let estadoPedido = 0;
+  // Pide al servidor el estado del perfil (superados, intento de hoy) y lo guarda; sin perfil registrado, nada.
+  async function refrescarEstado(forzar) {
+    if (!SRV() || !svPerfil() || (!forzar && Date.now() - estadoPedido < 30000)) return false;
+    estadoPedido = Date.now();
+    const j = await llamar('estado');
+    if (!j.personajes) return false;
+    const antes = JSON.stringify(svEstado()); store.set('servidor.estado', j);
+    return antes !== JSON.stringify(j);
+  }
+  const ERR_TXT = {
+    red: 'No hay conexión con el servidor del desafío. Revisa tu conexión e inténtalo de nuevo.',
+    'sin-servidor': 'El desafío necesita el servidor del ranking, que todavía no está conectado en esta versión de la app.',
+    servidor: 'El servidor no respondió bien. Inténtalo de nuevo en un rato.', sesion: 'Se venció la sesión. Inténtalo de nuevo.',
+    'nombre-usado': 'Ese nombre ya lo tiene otra persona. Elige otro.', 'nombre-invalido': 'El nombre debe tener de 3 a 20 letras, números o espacios.',
+    'nombre-ofensivo': 'Ese nombre no está permitido. Elige otro.', 'ya-registrado': 'Este perfil ya tiene nombre en el ranking.',
+    'faltan-preguntas': 'Todavía no hay preguntas suficientes de lo que llevas leído.', 'sin-desafio': 'Este personaje no tiene desafío para tu perfil.',
+    'intento-invalido': 'El intento ya no es válido.', 'no-autorizado': 'Se venció la sesión. Inténtalo de nuevo.',
+    'demasiadas-llamadas': 'Demasiados intentos seguidos. Espera un minuto.', 'sin-perfil': 'Este perfil aún no tiene nombre en el ranking.',
+    'solo-adulto': 'Solo un perfil de adulto puede cambiar su nombre.', 'zona-invalida': 'No se reconoció la zona horaria de este equipo.',
+    'datos-invalidos': 'La petición no era válida.', 'falta-consentimiento': 'Falta la autorización de una persona adulta.', 'fuera-de-orden': 'La respuesta llegó fuera de orden.'
+  };
+  const errTxt = j => ERR_TXT[j && j.error] || ERR_TXT.servidor;
+
+  const QUE_SE_GUARDA = `<details class="plegable"><summary>Qué se guarda en el servidor</summary><p class="meta">Un identificador anónimo (sin correo ni contraseña), el nombre del ranking, el tipo de perfil (niño o adulto), la zona horaria del equipo (para saber cuándo empieza tu día), la hora de la autorización del adulto en los perfiles de niño y cada intento (qué preguntas salieron, qué respondiste y cuánto tardaste). Como todo servicio web, Supabase registra la dirección IP y el navegador de cada sesión. No se guarda nombre real, edad ni correo. Puedes borrarlo todo con «Borrar mi cuenta del ranking».</p></details>`;
+  const desDlg = $('#desafio');
+  let DES = null; // desafío en marcha: { id, intento, n, seg, i, pregunta, t, timer, salidas, ocupado }
+  const LETRAS = ['A', 'B', 'C', 'D'];
+  const cuerpoDes = html => { desDlg.querySelector('.dialogo-cuerpo').innerHTML = html; };
+  const reglasDesafio = (n, seg) => `<ul class="des-reglas">
+      <li><strong>${n} preguntas</strong> de selección (A, B, C o D), sobre lo que ya leíste. Salen de una en una.</li>
+      <li><strong>${seg} segundos</strong> por pregunta, medidos por el servidor. Si se acaba el tiempo, cuenta como fallada.</li>
+      <li>Hay que acertar <strong>todas</strong>. Las respuestas no se muestran hasta que lo superes.</li>
+      <li><strong>Un intento al día.</strong> Si sales de esta pantalla, la pregunta en curso se pierde; si la cierras a mitad, se pierde el intento.</li></ul>`;
+  async function abrirDesafio(id) {
+    if (!desDlg || DES) return;
+    const nom = nombre(id);
+    desDlg.dataset.id = id; delete desDlg.dataset.registro; delete desDlg.dataset.consentido;
+    desDlg.querySelector('h2').textContent = `Desafío de ${nom}`;
+    cerrar(fichaDlg); mostrar(desDlg);
+    if (!SRV()) { cuerpoDes(`<p class="aviso-bloqueo">${ICO_CANDADO}<span>${esc(ERR_TXT['sin-servidor'])}</span></p>`); return; }
+    if (!svPerfil()) { abrirRegistro(id); return; }
+    if (await refrescarEstado()) rerender();
+    const e = estadoDes(id), JJ = JUEGO(), cap = e.capitulo || (JJ && JJ.personajes[id] && N.capituloListo(JJ.personajes[id]));
+    const repaso = cap ? `<a class="boton secundario" href="${hrefRef(N.parseRef(cap + ':1'))}" data-cerrar-des>Repasar ${esc(capLegible(cap))}</a>` : '';
+    if (e.estado === 'espera') {
+      const u = e.intentos[e.intentos.length - 1] || {};
+      cuerpoDes(`<div class="des-espera"><p class="des-grande">${ICO_CANDADO} Hoy ya lo intentaste${u.total ? `: ${u.aciertos} de ${u.total}` : ''}</p>
+        <p class="meta">Podrás volver a intentarlo en</p><p class="des-reloj">${relojHTML(e.hasta)}</p>
+        <p class="meta">Mientras tanto, repasa lo que leíste: las preguntas salen de ahí.</p><p class="acciones-ficha">${repaso}</p></div>`);
+    } else if (e.estado === 'desafio') {
+      const seg = N.segundosPregunta(PREG(), esNinoActivo());
+      cuerpoDes(`<div class="des-intro">${retratoBloqueadoHTML(id)}<div><p class="des-grande">Supera el desafío y ${esc(nom)} entra en tu colección${retratoCarta(id) ? ' con su retrato' : ''}.</p>
+        ${reglasDesafio(e.preguntas, seg)}
+        <p class="meta">Sumas puntos en el ranking mundial como <strong>${esc(svPerfil().nombre)}</strong>.</p>
+        <p class="acciones-ficha"><button type="button" class="boton" data-des-empezar="${esc(id)}">Empezar el desafío</button>${repaso}</p>
+        <p class="des-error" role="alert" hidden></p></div></div>`);
+    } else { cerrar(desDlg); abrirFicha(id); }
+  }
+  // Primer desafío del perfil: nombre para el ranking. Niño: elige entre nombres generados (nunca escribe).
+  async function abrirRegistro(id) {
+    desDlg.dataset.registro = '1';
+    const nino = esNinoActivo();
+    const intro = `<p class="des-grande">Antes del primer desafío: tu nombre en el ranking mundial</p>
+      ${nino ? '<p class="meta">Los nombres de los niños no se publican en ninguna lista: cada niño ve solo su propia posición y sus puntos.</p>'
+        : '<p class="meta">En el ranking de adultos se publican tu nombre, tus puntos, cuántos personajes superaste y tu tiempo total. No uses tu nombre real si no quieres que se vea.</p>'}
+      ${QUE_SE_GUARDA}`;
+    if (!nino) {
+      cuerpoDes(`${intro}<form class="des-registro" data-registro-adulto="${esc(id)}"><label>Nombre (de 3 a 20 letras, números o espacios)<input name="nombre" maxlength="20" autocomplete="nickname" required></label>
+        <p class="des-error" role="alert" hidden></p><p class="acciones-ficha"><button type="submit" class="boton">Guardar y seguir</button></p></form>`);
+      const i = desDlg.querySelector('input[name="nombre"]'); if (i) i.focus();
+      return;
+    }
+    // Menores de 14: la Ley 21.719 (art. 16 quáter) pide el consentimiento de madre, padre o representante legal.
+    if (desDlg.dataset.consentido !== id) {
+      cuerpoDes(`${intro}<form class="des-registro" data-consentimiento="${esc(id)}">
+        <p><strong>Para una persona adulta:</strong> la ley chilena de datos personales (Ley 21.719) pide el consentimiento de la madre, el padre o quien tenga la representación legal para tratar datos de menores de 14 años. Aquí solo se guarda un identificador anónimo, el nombre generado y los puntos.</p>
+        <label class="des-check"><input type="checkbox" name="ok"> Soy la madre, el padre o el representante legal y autorizo que este perfil aparezca en el ranking de niños con un nombre generado.</label>
+        <p class="des-error" role="alert" hidden></p>
+        <p class="acciones-ficha"><button type="submit" class="boton">Autorizar con el PIN de adulto</button></p>
+        <p class="meta">Para retirar la autorización en cualquier momento: Colección → Ranking mundial → «Borrar mi cuenta del ranking» (pide el PIN), o borra este perfil en Perfiles.</p></form>`);
+      return;
+    }
+    cuerpoDes(`${intro}<p class="meta">Cargando nombres…</p>`);
+    const j = await llamar('nombres');
+    if (!Array.isArray(j.nombres)) { cuerpoDes(`${intro}<p class="des-error" role="alert">${esc(errTxt(j))}</p>`); return; }
+    cuerpoDes(`${intro}<p>Elige tu nombre:</p><div class="des-nombres">${j.nombres.map(n => `<button type="button" class="des-op" data-registro-nino="${esc(n)}" data-para="${esc(id)}">${esc(n)}</button>`).join('')}</div>
+      <p class="acciones-ficha"><button type="button" class="boton secundario" data-otros-nombres="${esc(id)}">Otros nombres</button></p><p class="des-error" role="alert" hidden></p>`);
+  }
+  async function registrar(id, nombreElegido) {
+    const err = desDlg.querySelector('.des-error');
+    desDlg.querySelectorAll('button').forEach(b => { b.disabled = true; });
+    let zona = 'UTC'; try { zona = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC'; } catch (e) { /* UTC */ }
+    const nino = esNinoActivo();
+    const j = await llamar('registrar', Object.assign({ tipo: nino ? 'nino' : 'adulto', nombre: nombreElegido, zona }, nino ? { consentimiento: desDlg.dataset.consentido === id } : {}));
+    desDlg.querySelectorAll('button').forEach(b => { b.disabled = false; });
+    if (!j.perfil) { if (err) { err.textContent = errTxt(j); err.hidden = false; } return; }
+    store.set('servidor.perfil', j.perfil);
+    await refrescarEstado(true);
+    if (main.dataset.vista === 'personajes' || main.dataset.vista === 'ranking') rerender();
+    abrirDesafio(id);
+  }
+  async function empezarDesafio(id) {
+    const e = estadoDes(id); if (e.estado !== 'desafio') { abrirDesafio(id); return; }
+    const b = desDlg.querySelector('[data-des-empezar]'), err = desDlg.querySelector('.des-error');
+    if (b) b.disabled = true;
+    const j = await llamar('empezar', { personaje: id }); // el servidor elige el set entre todas sus preguntas
+    if (!j.intento || !j.pregunta) {
+      if (j.error === 'ya-intentado-hoy' || j.error === 'superado') { await refrescarEstado(true); rerender(); abrirDesafio(id); return; }
+      if (b) b.disabled = false;
+      if (err) { err.textContent = errTxt(j); err.hidden = false; }
+      return;
+    }
+    marcarIntentoHoy(id, null);
+    DES = { id, intento: String(j.intento), n: Math.min(50, Math.max(1, +j.n || 1)), seg: Math.min(120, +j.seg || N.segundosPregunta(PREG(), esNinoActivo())), i: +j.i || 0, pregunta: j.pregunta, t: 0, timer: 0, salidas: 0, ocupado: false };
+    desDlg.classList.add('en-marcha');
+    pintarPregunta();
+  }
+  // El intento de hoy ya está gastado en el servidor: se refleja enseguida en el estado guardado.
+  function marcarIntentoHoy(id, fin) {
+    const e = svEstado() || { personajes: {} };
+    e.personajes[id] = Object.assign({}, e.personajes[id] || {}, { intentadoHoy: true, ultimo: fin ? { aciertos: fin.aciertos, total: fin.total } : (e.personajes[id] || {}).ultimo || null },
+      fin ? { superado: !!fin.superado, puntos: fin.puntos || 0 } : {});
+    if (fin && fin.hasta) e.hasta = fin.hasta;
+    store.set('servidor.estado', e);
+  }
+  function pintarPregunta() {
+    const q = { p: String((DES.pregunta || {}).p || ''), o: [].concat((DES.pregunta || {}).o || []).slice(0, 4).map(String) };
+    cuerpoDes(`<div class="des-pregunta">
+      <div class="des-cab"><span class="meta">Pregunta ${DES.i + 1} de ${DES.n}</span><span class="des-seg" aria-live="off"><span id="des-seg">${DES.seg}</span> s</span></div>
+      <div class="des-tiempo" aria-hidden="true"><span id="des-barra"></span></div>
+      <p class="des-txt" id="des-txt">${esc(q.p)}</p>
+      <div class="des-ops" role="group" aria-labelledby="des-txt">${q.o.map((o, k) => `<button type="button" class="des-op" data-des-op="${k}"><span class="des-letra">${LETRAS[k]}</span><span>${esc(o)}</span></button>`).join('')}</div>
+      <ol class="des-puntos" aria-label="Avance">${Array.from({ length: DES.n }, (_, k) => `<li class="${k < DES.i ? 'hecha' : k === DES.i ? 'actual' : ''}"></li>`).join('')}</ol></div>`);
+    const b = desDlg.querySelector('.des-op'); if (b) b.focus({ preventScroll: true });
+    DES.t = performance.now(); DES.ocupado = false;
+    clearInterval(DES.timer);
+    DES.timer = setInterval(() => {
+      if (!DES || DES.ocupado) return;
+      const resta = DES.seg - (performance.now() - DES.t) / 1000, s = $('#des-seg'), br = $('#des-barra');
+      if (s) s.textContent = Math.max(0, Math.ceil(resta));
+      if (br) br.style.width = Math.max(0, resta / DES.seg * 100) + '%';
+      if (resta <= 0) responder(-1);
+    }, 100);
+  }
+  async function responder(k, salio) {
+    if (!DES || DES.ocupado) return;
+    clearInterval(DES.timer);
+    DES.ocupado = true;
+    if (salio) DES.salidas++;
+    desDlg.querySelectorAll('[data-des-op]').forEach(b => { b.disabled = true; if (+b.dataset.desOp === k) b.classList.add('elegida'); });
+    const d = DES, j = await llamar('responder', { intento: d.intento, i: d.i, opcion: k });
+    if (DES !== d) return; // se cerró mientras tanto
+    if (j.fin) { terminarDesafio(j); return; }
+    if (j.pregunta && Number.isInteger(j.i)) { d.i = j.i; d.pregunta = j.pregunta; pintarPregunta(); return; }
+    terminarDesafio(null, errTxt(j)); // sin conexión a mitad: el intento de hoy ya se gastó
+  }
+  function terminarDesafio(fin, error) {
+    if (!DES) return;
+    clearInterval(DES.timer);
+    const d = DES; DES = null;
+    desDlg.classList.remove('en-marcha');
+    if (fin) marcarIntentoHoy(d.id, fin);
+    if (main.dataset.vista === 'personajes' || main.dataset.vista === 'ranking') rerender();
+    if (!desDlg.open) return;
+    const nom = nombre(d.id);
+    if (error || !fin) { cuerpoDes(`<div class="des-espera"><p class="des-grande">Se cortó el desafío</p><p class="des-error" role="alert">${esc(error || ERR_TXT.servidor)}</p><p class="meta">El intento de hoy ya se contó.</p></div>`); return; }
+    if (fin.superado) {
+      const r = retratoCarta(d.id);
+      cuerpoDes(`<div class="des-logro">
+        ${r ? `<figure class="des-retrato"><img src="${esc(r.retrato)}" alt="Retrato de ${esc(nom)}"><figcaption><span class="etiqueta img-ilustracion">Ilustración moderna</span> generada con IA</figcaption></figure>` : ''}
+        <div><p class="des-grande">¡${esc(nom)} entra en tu colección!</p><p>${+fin.total} de ${+fin.total} en ${Math.round((+fin.ms || 0) / 1000)} s · <strong>+${+fin.puntos || 0} puntos</strong> en el ranking.</p>
+        <p class="acciones-ficha"><button type="button" class="boton" data-persona="${esc(d.id)}">Ver su ficha</button><a class="boton secundario" href="#ranking" data-cerrar-des>Ver el ranking</a></p></div></div>
+        ${Array.isArray(fin.repaso) && fin.repaso.length ? `<h3>Las preguntas y dónde lo dice el texto</h3>
+        <p class="meta">Cada respuesta está en su versículo: ábrelo para leerla.</p>
+        <ol class="des-repaso">${fin.repaso.map(q => `<li><p>${esc(q.p)}</p><p>${N.clave(q.ref) !== null ? refHTML(q.ref) : ''}</p></li>`).join('')}</ol>` : ''}`);
+    } else {
+      const hasta = Date.parse(fin.hasta) || N.proximaMedianoche(Date.now());
+      cuerpoDes(`<div class="des-espera"><p class="des-grande">No esta vez: ${+fin.aciertos || 0} de ${+fin.total || 0}</p>
+        ${d.salidas ? `<p class="meta">${d.salidas === 1 ? 'Una pregunta se perdió' : d.salidas + ' preguntas se perdieron'} al salir de la pantalla.</p>` : ''}
+        <p class="meta">Podrás volver a intentarlo en</p><p class="des-reloj">${relojHTML(hasta)}</p>
+        <p class="meta">Repasa lo que leíste de ${esc(nom)}: mañana salen otras preguntas, en otro orden.</p></div>`);
+    }
+  }
+  if (desDlg) {
+    desDlg.addEventListener('cancel', e => { if (DES) e.preventDefault(); }); // Esc no cierra a mitad del desafío
+    desDlg.addEventListener('close', () => { if (DES) { clearInterval(DES.timer); DES = null; desDlg.classList.remove('en-marcha'); if (main.dataset.vista === 'personajes') rerender(); } });
+    desDlg.addEventListener('click', e => {
+      const op = e.target.closest('[data-des-op]'); if (op && DES) { responder(+op.dataset.desOp); return; }
+      const em = e.target.closest('[data-des-empezar]'); if (em) { empezarDesafio(em.dataset.desEmpezar); return; }
+      const rn = e.target.closest('[data-registro-nino]'); if (rn) { registrar(rn.dataset.para, rn.dataset.registroNino); return; }
+      const on = e.target.closest('[data-otros-nombres]'); if (on) { abrirRegistro(on.dataset.otrosNombres); return; }
+      if (e.target.closest('[data-cerrar-des]')) cerrar(desDlg);
+    });
+    desDlg.addEventListener('submit', async e => {
+      const fc = e.target.closest('[data-consentimiento]');
+      if (fc) {
+        e.preventDefault();
+        const err = fc.querySelector('.des-error');
+        if (!fc.elements.ok.checked) { err.textContent = 'Marca la casilla para autorizar.'; err.hidden = false; return; }
+        const id = fc.dataset.consentimiento;
+        const ok = await pedirPin(PERF.r.pin ? { titulo: 'PIN de adulto' } : { definir: true, titulo: 'Define el PIN de adulto', texto: 'Para autorizar el ranking hace falta un PIN de adulto. Elige 4 cifras: también se pedirán para pasar a un perfil de adulto y mostrar lo plegado.' });
+        if (!ok) { err.textContent = 'Sin el PIN de adulto no se puede autorizar.'; err.hidden = false; return; }
+        desDlg.dataset.consentido = id; mostrar(desDlg); abrirRegistro(id);
+        return;
+      }
+      const f = e.target.closest('[data-registro-adulto]'); if (!f) return;
+      e.preventDefault(); registrar(f.dataset.registroAdulto, (f.elements.nombre.value || '').trim());
+    });
+    desDlg.addEventListener('keydown', e => {
+      if (!DES || DES.ocupado || e.ctrlKey || e.metaKey || e.altKey) return;
+      const k = '1234'.indexOf(e.key) >= 0 ? '1234'.indexOf(e.key) : 'abcd'.indexOf(e.key.toLowerCase());
+      if (k >= 0 && e.key.length === 1) { e.preventDefault(); responder(k); }
+    });
+    // Salir de la pantalla (otra pestaña, otra ventana) a mitad de una pregunta la da por fallada.
+    const salir = () => { if (DES && desDlg.open) responder(-1, true); };
+    document.addEventListener('visibilitychange', () => { if (document.hidden) salir(); });
+    window.addEventListener('blur', salir);
+  }
+
+  /* ---- Ranking mundial: adultos en lista pública (rpc/ranking); los niños no se publican, cada uno ve su posición ---- */
+  function vistaRanking(args) {
+    const yo = svPerfil(), tipo = args[0] === 'nino' || args[0] === 'adulto' ? args[0] : (yo ? yo.tipo : esNinoActivo() ? 'nino' : 'adulto');
+    const tab = (t, txt) => `<a class="boton ${t === tipo ? '' : 'secundario'}" href="#ranking/${t}"${t === tipo ? ' aria-current="page"' : ''}>${txt}</a>`;
+    return `<p class="meta"><a href="#personajes">← Colección</a></p><h1 tabindex="-1">Ranking mundial</h1>
+      <p class="sub">Puntos de los desafíos de la colección, de todas las personas que usan la app. Niños y adultos van por separado.</p>
+      <div class="ranking-tabs">${tab('adulto', 'Adultos')}${tab('nino', 'Niños')}</div>
+      ${yo ? `<p class="ranking-yo">Juegas como <strong>${esc(yo.nombre)}</strong> (${yo.tipo === 'nino' ? 'niños' : 'adultos'})${yo.tipo === 'adulto' ? ' · <button type="button" class="enlace" data-renombrar>Cambiar nombre</button>' : ''}</p>`
+        : '<p class="meta">Entras al ranking con tu primer desafío: toca un personaje con candado en la colección.</p>'}
+      <div id="ranking-posicion"></div>
+      <div id="ranking-lista" data-tipo="${tipo}">${SRV() ? (tipo === 'nino' ? '' : '<p class="meta">Cargando…</p>') : `<p class="aviso-bloqueo">${ICO_CANDADO}<span>${esc(ERR_TXT['sin-servidor'])}</span></p>`}</div>
+      ${tipo === 'nino' ? '<p class="meta">Para cuidar a los niños, sus nombres no se publican en ninguna lista: cada niño ve solo su posición y sus puntos.</p>' : ''}
+      <details class="plegable"><summary>Cómo se calculan los puntos</summary><p class="meta">${insignia('calculo')} Por cada personaje superado: 10 puntos por pregunta, más hasta 5 por pregunta según el tiempo que te sobró (todo el tiempo sin usar = 5). Noé (10 preguntas): de 100 a 150 puntos. El ranking suma todos los superados; a igualdad de puntos va primero quien tardó menos.</p></details>
+      <details class="plegable"><summary>Qué se publica</summary><p class="meta">Adultos: el nombre del ranking, los puntos, cuántos personajes superaste y el tiempo total. Niños: nada en público; solo cada niño ve su posición.</p></details>
+      ${QUE_SE_GUARDA}
+      ${yo ? '<p class="acciones-ficha"><button type="button" class="boton secundario" data-borrar-cuenta>Borrar mi cuenta del ranking</button></p>' : ''}`;
+  }
+  async function cargarRanking() {
+    const caja = $('#ranking-lista'), pos = $('#ranking-posicion'); if (!caja || !SRV()) return;
+    const tipo = caja.dataset.tipo, yo = svPerfil();
+    if (yo && yo.tipo === tipo && pos) {
+      llamar('posicion').then(j => {
+        if ($('#ranking-posicion') !== pos || !j || j.error) return;
+        pos.innerHTML = j.puesto ? `<p class="ranking-puesto">Vas <strong>${+j.puesto}.º</strong> de ${+j.total} · ${+j.puntos} puntos · ${+j.personajes} ${+j.personajes === 1 ? 'personaje' : 'personajes'}</p>`
+          : '<p class="meta">Aún no tienes puntos: supera un desafío para entrar en el ranking.</p>';
+      });
+    }
+    if (tipo === 'nino') return;
+    try {
+      const r = await fetch(`${SRV().url}/rest/v1/rpc/ranking`, { method: 'POST', headers: cabeceras(), body: JSON.stringify({ tipo: 'adulto', limite: 100 }) });
+      if (!r.ok) throw new Error(r.status);
+      const filas = await r.json();
+      if ($('#ranking-lista') !== caja) return;
+      const fila = f => `<tr${yo && f.nombre === yo.nombre ? ' class="propia"' : ''}><td class="puesto">${+f.puesto}</td><td>${esc(f.nombre)}</td><td class="num">${+f.puntos}</td><td class="num">${+f.personajes}</td><td class="num">${Math.round((+f.ms || 0) / 1000)} s</td></tr>`;
+      caja.innerHTML = Array.isArray(filas) && filas.length ? `<table class="ranking"><thead><tr><th scope="col">#</th><th scope="col">Nombre</th><th scope="col" class="num">Puntos</th><th scope="col" class="num">Personajes</th><th scope="col" class="num">Tiempo</th></tr></thead>
+        <tbody>${filas.slice(0, 100).map(fila).join('')}</tbody></table>`
+        : '<p class="vacio-txt">Todavía nadie ha superado un desafío. ¡Puedes ser el primero!</p>';
+    } catch (e) { if ($('#ranking-lista') === caja) caja.innerHTML = `<p class="des-error" role="alert">${esc(ERR_TXT.red)}</p>`; }
+  }
+  // Retirar la autorización (niño) o salir del ranking (adulto): borra la cuenta del servidor.
+  async function borrarMiCuenta() {
+    const nino = esNinoActivo();
+    if (!confirm(nino ? '¿Retirar la autorización y borrar la cuenta del ranking de este perfil? Se borran sus puntos y sus intentos del servidor; los desafíos superados vuelven a quedar con candado.' : '¿Borrar tu cuenta del ranking? Se borran tu nombre, tus puntos y tus intentos del servidor; los desafíos superados vuelven a quedar con candado.')) return;
+    if (!(await pedirPin({ titulo: 'PIN de adulto', texto: 'Para borrar la cuenta del ranking, escribe el PIN de adulto.' }))) return;
+    if (!(await borrarCuentaServidor())) { window.alert(ERR_TXT.red); return; }
+    rerender();
+  }
+  async function renombrar() {
+    const yo = svPerfil(); if (!yo || yo.tipo !== 'adulto') return;
+    const n = (window.prompt('Nuevo nombre para el ranking (de 3 a 20 letras, números o espacios):', yo.nombre) || '').trim();
+    if (!n || n === yo.nombre) return;
+    const j = await llamar('renombrar', { nombre: n });
+    if (j.perfil) { store.set('servidor.perfil', j.perfil); rerender(); } else window.alert(errTxt(j));
+  }
+  // Retrato con candado (personaje listo para el desafío o en espera): tocarlo abre el desafío.
+  const trasCandado = id => { const r = retratoCarta(id); return r ? `<img class="tras-candado" src="${esc(r.retrato)}" alt="">` : ''; };
+  const retratoBloqueadoHTML = id => `<button type="button" class="retrato candado" data-desafio="${esc(id)}" aria-label="Abrir el desafío de ${esc(nombre(id))}">${trasCandado(id)}${ICO_CANDADO}<span>Bloqueado</span></button>`;
+  // Retrato de la ficha cuando el personaje ya está en la colección: imagen rotulada, o el hueco de siempre.
+  function retratoFichaHTML(id, p) {
+    const r = retratoCarta(id);
+    if (!r) return retratoHTML(p);
+    return `<figure class="retrato con-img"><button type="button" class="retrato-btn" data-hojas="${esc(id)}" aria-label="Ver las ilustraciones de ${esc(p.nombre || id)}"><img src="${esc(r.retrato)}" alt="Retrato de ${esc(p.nombre || id)}"></button>
+      <figcaption><span class="etiqueta img-ilustracion">Ilustración moderna</span> generada con IA</figcaption></figure>`;
+  }
+  // Hojas de personaje (frente, tres cuartos, cuerpo entero) ya alcanzadas, en la ficha.
+  function hojasFichaHTML(id) {
+    const xs = imagenesPersona(id); if (!xs.length) return '';
+    return `<h3>Ilustraciones</h3><p class="meta"><span class="etiqueta img-ilustracion">Ilustración moderna</span> generada con IA (${esc((RET && RET.estilo) || 'Estilo v1')}): interpretación del ilustrador a partir de la ficha del personaje, no un retrato histórico.</p>
+      <ul class="hojas-persona" id="hojas-${esc(id)}">${xs.map(e => `<li><figure><img src="${esc(e.hoja)}" alt="${esc(e.nombre)}: de frente, de tres cuartos y de cuerpo entero" loading="lazy"><figcaption>${esc(e.nombre)}${e.grupo ? ' · ilustración de grupo' : ''}</figcaption></figure></li>`).join('')}</ul>`;
+  }
   function fichaColHTML(f) {
     if (f.estado === 'bloqueado' || (!f.estado && !f.desbloqueada)) return bloqueadaHTML(f, 'Personaje');
-    const curso = f.estado === 'en-curso';
+    const curso = f.estado === 'en-curso', reto = f.estado === 'desafio' || f.estado === 'espera';
     const chip = f.juego ? nivelHTML(f) : `<span class="rareza-muestra r-${f.rareza.id}">${esc(f.rareza.nombre)}</span>`;
-    return `<li><button type="button" class="ficha-col r-${f.rareza.id}${f.sexo === 'f' ? ' mujer' : ''}${curso ? ' en-curso' : ''}" data-persona="${esc(f.id)}">
-      <span class="ficha-retrato"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(f.id))}</span></span>
+    if (reto) return `<li><button type="button" class="ficha-col reto ${f.estado} r-${f.rareza.id}${f.sexo === 'f' ? ' mujer' : ''}" data-desafio="${esc(f.id)}">
+      <span class="ficha-retrato">${trasCandado(f.id)}${ICO_CANDADO}<span class="reto-txt">${f.estado === 'espera' ? 'Vuelve en' : 'Desafío'}</span></span>
+      <span class="ficha-nombre">${esc(nombre(f.id))}</span>${chip}
+      <span class="ficha-pie">${f.estado === 'espera' ? relojHTML(f.hasta) : `${f.preguntas} preguntas · toca para empezar`}</span></button></li>`;
+    const r = f.desbloqueada ? retratoCarta(f.id) : null;
+    return `<li><button type="button" class="ficha-col r-${f.rareza.id}${f.sexo === 'f' ? ' mujer' : ''}${curso ? ' en-curso' : ''}${r ? ' con-retrato' : ''}" data-persona="${esc(f.id)}">
+      <span class="ficha-retrato">${r ? `<img src="${esc(r.retrato)}" alt="" loading="lazy"><span class="ficha-ia" title="${esc(ROTULO_IA)}">IA</span>` : `<span class="ficha-inicial" aria-hidden="true">${esc(inicial(f.id))}</span>`}</span>
       <span class="ficha-nombre">${esc(nombre(f.id))}</span>${chip}
       ${curso ? `<span class="ficha-avance"><progress max="${f.total || 1}" value="${f.leidos}" aria-label="Pasajes leídos donde aparece"></progress><span>${f.leidos}/${f.total}</span></span>
       <span class="ficha-pie">En curso · hasta ${esc(f.capitulo || '').replace(' ', '&nbsp;')}</span>` : `<span class="ficha-pie">${esc(f.primera)}</span>`}</button></li>`;
@@ -4978,19 +5425,23 @@ if (typeof document !== 'undefined') (function () {
   // Colección: personajes y, con el catálogo de juego, objetos y escenarios.
   function vistaPersonajes() {
     const JJ = JUEGO(), Ls = [...pasajesLeidos()];
-    const F = N.fichasColeccion(D, Ls, JJ);
+    const F = N.fichasColeccion(D, Ls, JJ).map(f => {
+      if (f.estado !== 'obtenido') return f;
+      const e = pendienteDesafio(f.id, Ls);
+      return e ? Object.assign({}, f, { estado: e.estado, desbloqueada: false, hasta: e.hasta, preguntas: e.preguntas }) : f;
+    });
     const G = { personajes: F };
     if (JJ) N.GRUPOS_JUEGO.forEach(g => { G[g] = N.fichasCosas(D, JJ, g, Ls); });
     const grupo = G[estado.colGrupo] ? estado.colGrupo : 'personajes';
-    const fe = estado.colEstado === 'obtenidos' || (estado.colEstado === 'en-curso' && grupo === 'personajes') ? estado.colEstado : '';
-    const pasaFE = f => !fe || (fe === 'obtenidos' ? f.desbloqueada : f.estado === 'en-curso');
+    const fe = estado.colEstado === 'obtenidos' || ((estado.colEstado === 'en-curso' || estado.colEstado === 'desafio') && grupo === 'personajes') ? estado.colEstado : '';
+    const pasaFE = f => !fe || (fe === 'obtenidos' ? f.desbloqueada : fe === 'desafio' ? f.estado === 'desafio' || f.estado === 'espera' : f.estado === 'en-curso');
     const NOM_G = { personajes: 'Personajes', objetos: 'Objetos', escenarios: 'Escenarios' };
     const obtDe = xs => xs.filter(f => f.desbloqueada).length;
     const pestanas = JJ ? `<div class="colec-grupos">${segCol('Grupo', 'col-grupo', grupo, Object.keys(G).map(g => [g, `${NOM_G[g]} ${obtDe(G[g])}/${G[g].length}`]))}</div>` : '';
-    const filtroEstado = JJ ? segCol('Estado', 'col-estado', fe, [['', 'Todos'], ['obtenidos', 'Obtenidos']].concat(grupo === 'personajes' ? [['en-curso', 'En curso']] : [])) : '';
-    const sub = JJ ? `<p class="sub">Un personaje se desbloquea al terminar de leer el capítulo donde se cierra la primera historia en la que es protagonista; mientras tanto su ficha está «en curso». Quien solo aparece en genealogías (NPC) entra al leer su primera mención. Objetos y escenarios entran al leer el pasaje donde aparecen por primera vez.</p>`
+    const filtroEstado = JJ ? segCol('Estado', 'col-estado', fe, [['', 'Todos'], ['obtenidos', 'Obtenidos']].concat(grupo === 'personajes' ? [['en-curso', 'En curso']].concat(PREG() ? [['desafio', 'Desafío']] : []) : [])) : '';
+    const sub = JJ ? `<p class="sub">Un personaje queda listo al terminar de leer el capítulo donde se cierra la primera historia en la que es protagonista; mientras tanto su ficha está «en curso».${PREG() ? ' Listo, aparece con candado: tócalo para el desafío (preguntas con tiempo sobre lo que leíste, un intento al día) y, si aciertas todas, entra en tu colección con su retrato.' : ''} Quien solo aparece en genealogías (NPC) entra al leer su primera mención. Objetos y escenarios entran al leer el pasaje donde aparecen por primera vez.</p>`
       : `<p class="sub">Cada persona con nombre entra en tu colección cuando marcas como leído un pasaje donde aparece. Ábrela para ver su ficha.</p>`;
-    const cab = `<h1 tabindex="-1">Colección</h1>${sub}${pestanas}`;
+    const cab = `<h1 tabindex="-1">Colección</h1>${sub}${JJ && PREG() ? '<p class="colec-ranking"><a class="boton secundario" href="#ranking">Ranking mundial</a></p>' : ''}${pestanas}`;
     if (grupo !== 'personajes') {
       const xs = G[grupo], obt = obtDe(xs), vis = xs.filter(pasaFE);
       return `${cab}
@@ -5004,15 +5455,15 @@ if (typeof document !== 'undefined') (function () {
     const lib = LB.some(l => l.id === estado.colLibro) ? estado.colLibro : '';
     const sx = estado.colSexo === 'f' || estado.colSexo === 'm' ? estado.colSexo : '';
     const enLibro = F.filter(f => !lib || f.libros.includes(lib)), obtL = obtDe(enLibro);
-    const conocida = f => f.desbloqueada || f.estado === 'en-curso';
+    const conocida = f => f.desbloqueada || f.estado === 'en-curso' || f.estado === 'desafio' || f.estado === 'espera';
     const vis = enLibro.filter(f => (!sx || (conocida(f) && f.sexo === sx)) && pasaFE(f));
     const sinDesc = sx && !fe ? enLibro.filter(f => !conocida(f)).length : 0;
-    const enCurso = F.filter(f => f.estado === 'en-curso').length;
+    const enCurso = F.filter(f => f.estado === 'en-curso').length, porDesafiar = F.filter(f => f.estado === 'desafio' || f.estado === 'espera').length;
     const nomLib = lib ? (LB.find(l => l.id === lib) || {}).nombre : '';
     return `${cab}
       <div class="colec-resumen"><p class="colec-cuenta"><strong>${obt}</strong> de ${F.length}</p>
         <progress max="${F.length || 1}" value="${obt}" aria-label="Personajes obtenidos"></progress>
-        ${JJ && enCurso ? `<p class="meta">${enCurso} en curso</p>` : ''}
+        ${JJ && (enCurso || porDesafiar) ? `<p class="meta">${[enCurso ? `${enCurso} en curso` : '', porDesafiar ? `${porDesafiar} ${porDesafiar === 1 ? 'espera' : 'esperan'} su desafío` : ''].filter(Boolean).join(' · ')}</p>` : ''}
         ${lib ? `<p class="meta">En ${esc(nomLib)}: ${obtL} de ${enLibro.length}</p>` : ''}</div>
       <div class="colec-filtros">${LB.length > 1 ? segCol('Libro', 'col-libro', lib, [['', 'Todos']].concat(LB.map(l => [l.id, l.nombre]))) : ''}
         ${segCol('Mostrar', 'col-sexo', sx, [['', 'Todos'], ['f', 'Mujeres'], ['m', 'Hombres']])}${filtroEstado}</div>
@@ -5021,9 +5472,9 @@ if (typeof document !== 'undefined') (function () {
       <details class="plegable"><summary>Qué significa la rareza</summary>
         <p class="meta">Sale solo de los datos: en cuántos versículos de ${esc(N.alcance(D).texto)} aparece la persona. No mide su importancia.</p>
         <ul class="rarezas">${N.RAREZAS.map(r => `<li><span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span> ${rangoRareza(r)} <span class="meta">· ${F.filter(f => f.rareza.id === r.id).length} personas</span></li>`).join('')}</ul></details>
-      ${obt || enCurso ? '' : `<p class="colec-vacia">Todavía no tienes fichas. <a href="#leer">Empieza a leer</a> y marca un pasaje como leído.</p>`}
+      ${obt || enCurso || porDesafiar ? '' : `<p class="colec-vacia">Todavía no tienes fichas. <a href="#leer">Empieza a leer</a> y marca un pasaje como leído.</p>`}
       ${sx && sinDesc ? `<p class="meta">Las ${sinDesc} fichas sin descubrir no se filtran por mujeres u hombres, para no adelantar nada.</p>` : ''}
-      ${vis.length ? `<ul class="fichas-col">${vis.map(fichaColHTML).join('')}</ul>` : '<p class="vacio-txt">Aún no tienes fichas con este filtro.</p>'}`;
+      ${vis.length ? `<ul class="fichas-col de-personajes">${vis.map(fichaColHTML).join('')}</ul>` : '<p class="vacio-txt">Aún no tienes fichas con este filtro.</p>'}`;
   }
   // Aviso «Nuevo en tu colección» tras marcar un pasaje como leído. Muchas fichas: se resumen.
   let tNuevas = 0;
@@ -5042,6 +5493,8 @@ if (typeof document !== 'undefined') (function () {
     const soloP = items.every(x => x[0] === 'persona');
     const vis = items.length > 4 ? items.slice(0, 3) : items, resto = items.length - vis.length;
     const liP = (id, i) => { const r = N.rareza(D, id), e = JJ && JJ.personajes[id] ? N.estadoPersonaje(D, JJ, id, Ls) : null;
+      const pd = e ? pendienteDesafio(id, Ls) : null;
+      if (pd) return `<li style="--i:${i}"><button type="button" class="nueva-ficha reto r-${r.id}" data-desafio="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${ICO_CANDADO}</span><span class="nueva-nombre">${esc(nombre(id))}</span><span class="rareza-muestra">Desafío listo</span></button></li>`;
       return `<li style="--i:${i}"><button type="button" class="nueva-ficha r-${r.id}" data-persona="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${esc(inicial(id))}</span><span class="nueva-nombre">${esc(nombre(id))}</span>${e ? nivelHTML(e) : `<span class="rareza-muestra r-${r.id}">${esc(r.nombre)}</span>`}</button></li>`; };
     const liC = (g, id, i) => `<li style="--i:${i}"><button type="button" class="nueva-ficha cosa c-${g}" data-${datoCosa(g)}="${esc(id)}"><span class="ficha-inicial" aria-hidden="true">${ICO_COSA[g]}</span><span class="nueva-nombre">${esc(((JJ || {})[g] || {})[id] ? JJ[g][id].nombre || id : id)}</span><span class="rareza-muestra">${GRUPO_TXT[g]}</span></button></li>`;
     const n = items.length, cuenta = soloP ? (n === 1 ? '1 personaje' : n + ' personajes') : (n === 1 ? '1 ficha' : n + ' fichas');
@@ -5188,9 +5641,10 @@ if (typeof document !== 'undefined') (function () {
     if (modoPerfiles.modo === 'bienvenida' || (previo && previo.id === PERF.r.activo)) { cerrar(perfilesDlg); rerender(); return; }
     abrirPerfiles('lista');
   }
-  function borrarPerfil(id) {
+  async function borrarPerfil(id) {
     const p = N.perfilDe(PERF.r, id); if (!p || id === PERF.r.activo || PERF.r.lista.length < 2) return;
-    if (!confirm(`¿Borrar el perfil «${p.nombre}»? Se borran para siempre su progreso, su colección y sus preferencias en este dispositivo.`)) return;
+    if (!confirm(`¿Borrar el perfil «${p.nombre}»? Se borran para siempre su progreso, su colección y sus preferencias en este dispositivo, y su cuenta del ranking mundial.`)) return;
+    if (!(await borrarCuentaServidor(id)) && !confirm('No se pudo borrar su cuenta del ranking (sin conexión). ¿Borrar igualmente el perfil de este dispositivo? Su nombre y sus puntos seguirían en el servidor.')) return;
     N.clavesDePerfil(LS.claves(), id).forEach(LS.del);
     PERF.r.lista = PERF.r.lista.filter(x => x.id !== id); guardarPerfiles();
     abrirPerfiles('lista');
@@ -5237,8 +5691,8 @@ if (typeof document !== 'undefined') (function () {
 
   /* ---------- Navegación ---------- */
   function ruta() { const h = decodeURIComponent(location.hash.slice(1)) || 'leer'; const [vista, ...args] = h.split('/'); return { vista, args }; }
-  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes, tabernaculo: vistaTabernaculo, notas: vistaNotas };
-  const PESTANA = { edades: 'tiempo', tabernaculo: 'leer' }; // rutas antiguas
+  const VISTAS = { leer: vistaLeer, personajes: vistaPersonajes, arbol: vistaArbol, tiempo: vistaTiempo, edades: () => vistaTiempo(['tabla']), mapa: vistaMapa, fuentes: vistaFuentes, tabernaculo: vistaTabernaculo, notas: vistaNotas, ranking: vistaRanking };
+  const PESTANA = { edades: 'tiempo', tabernaculo: 'leer', ranking: 'personajes' }; // rutas antiguas
   let primera = true;
   function render(foco) {
     if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/biblia.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
@@ -5268,6 +5722,8 @@ if (typeof document !== 'undefined') (function () {
   // Carga bajo demanda lo que pide la vista recién pintada (Fuentes, o la comparación si quedó elegida).
   function trasPintar(vista) {
     ponerBarraNotas();
+    if (vista === 'ranking') cargarRanking();
+    if (vista === 'personajes') refrescarEstado().then(c => { if (c && main.dataset.vista === 'personajes') rerender(); });
     if (vista === 'fuentes') { if (ORIG.est.o === '') cargarOriginales('o'); if (ORIG.est.g === '') cargarOriginales('g'); }
     const cmp = main.querySelector('.comparar');
     if (cmp) {
@@ -5281,7 +5737,7 @@ if (typeof document !== 'undefined') (function () {
   function rerender(selectorFoco) { const y = window.scrollY; render(false); window.scrollTo(0, y); if (selectorFoco) { const el = main.querySelector(selectorFoco); if (el) el.focus(); } }
 
   if (window.matchMedia) { const mq = window.matchMedia('(max-width: 699px)'); if (mq.addEventListener) mq.addEventListener('change', () => { if (main.querySelector('.comparar')) rerender(); }); }
-  window.addEventListener('hashchange', () => { estado.avisoBloq = null; parar(); cerrar(detDlg); cerrar(fichaDlg); if (visorDlg) cerrar(visorDlg); estado.focoHash = undefined; render(); });
+  window.addEventListener('hashchange', () => { estado.avisoBloq = null; parar(); cerrar(detDlg); cerrar(fichaDlg); if (visorDlg) cerrar(visorDlg); if (desDlg) cerrar(desDlg); estado.focoHash = undefined; render(); });
   // Secciones del plan: se recuerda en la sesión cuáles abrió o cerró la persona.
   document.addEventListener('toggle', e => {
     const s = e.target; if (!s || !s.dataset) return;
@@ -5331,6 +5787,10 @@ if (typeof document !== 'undefined') (function () {
     const cs = t.closest('[data-objeto], [data-escenario]'); if (cs) { e.preventDefault(); if (cs.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirCosa(cs.dataset.objeto ? 'objetos' : 'escenarios', cs.dataset.objeto || cs.dataset.escenario); return; }
     const tm = t.closest('[data-termino]'); if (tm) { e.preventDefault(); abrirTermino(tm.dataset.termino); return; }
     const lg = t.closest('[data-lugar]'); if (lg) { e.preventDefault(); cerrar(detDlg); abrirLugar(lg.dataset.lugar); return; }
+    const dz = t.closest('[data-desafio]'); if (dz) { e.preventDefault(); if (dz.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirDesafio(dz.dataset.desafio); return; }
+    if (t.closest('[data-renombrar]')) { renombrar(); return; }
+    if (t.closest('[data-borrar-cuenta]')) { borrarMiCuenta(); return; }
+    const hj = t.closest('[data-hojas]'); if (hj) { const l = document.getElementById('hojas-' + hj.dataset.hojas); if (l) l.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
     const p = t.closest('[data-persona]'); if (p) { e.preventDefault(); if (p.closest('#nuevas')) ocultarNuevas(); cerrar(detDlg); abrirFicha(p.dataset.persona); return; }
     const ed = t.closest('[data-edad]'); if (ed) { const [id, tipo, trad] = ed.dataset.edad.split('|'); detalleEdad(id, tipo, trad); return; }
     const evb = t.closest('[data-ev]'); if (evb) { abrirEvento(evb.dataset.ev); return; }

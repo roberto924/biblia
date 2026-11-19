@@ -798,6 +798,92 @@ button.ficha-col:hover { transform: translateY(-2px); box-shadow: var(--sombra-a
 .pasaje-genealogia { margin: .35rem 0 0; }
 .etiqueta.genealogia { margin-left: 0; font-weight: 600; letter-spacing: .02em; }
 
+/* Colección: retratos (Ilustración moderna, IA) y desafío con candado */
+:root { --reto: #a86b00; --reto-tinte: #fbf0d9; }
+@media (prefers-color-scheme: dark) { :root { --reto: #f0b43c; --reto-tinte: #3a2e14; } }
+.ficha-col.con-retrato .ficha-retrato { position: relative; overflow: hidden; background: #d4d6d3; }
+.fichas-col.de-personajes .ficha-retrato { aspect-ratio: 1 / 1; }
+.ficha-retrato img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+.ficha-ia { position: absolute; right: .35rem; bottom: .35rem; font-size: .62rem; font-weight: 700; letter-spacing: .03em; padding: .05rem .35rem; border-radius: .3rem; background: rgb(15 18 32 / .62); color: #fff; }
+.ficha-col.reto { --rz: var(--reto); border-style: dashed; border-top-style: solid; }
+.ficha-col.reto .ficha-retrato { display: flex; flex-direction: column; justify-content: center; gap: .2rem; color: var(--reto); background: var(--reto-tinte); }
+.ficha-col.reto .ico-candado, .retrato.candado .ico-candado { width: 2rem; height: 2rem; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+.ficha-col.reto .ficha-retrato, .retrato.candado { position: relative; overflow: hidden; }
+.tras-candado { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; filter: blur(7px) grayscale(.5) brightness(.55); transform: scale(1.12); }
+.ficha-col.reto .ficha-retrato:has(.tras-candado), .retrato.candado:has(.tras-candado) { color: #ffd47a; }
+.ficha-col.reto .ficha-retrato > :not(.tras-candado), .retrato.candado > :not(.tras-candado) { position: relative; }
+.reto-txt { font-size: .74rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.ficha-col.reto.espera { --rz: var(--suave); }
+.ficha-col.reto.espera .ficha-retrato { color: var(--suave); background: var(--hoja2); }
+.ficha-col.reto .ficha-pie { color: var(--tinta); }
+.reloj { font-variant-numeric: tabular-nums; font-weight: 600; }
+.retrato.candado { aspect-ratio: 3 / 4; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .3rem; padding: 0; border: 1.5px dashed var(--reto); border-radius: var(--r-ctrl); background: var(--reto-tinte); color: var(--reto); font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
+.retrato.candado:hover { border-style: solid; }
+.retrato.con-img .retrato-btn { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.ficha-cab:has(.retrato.con-img) { grid-template-columns: 8.5rem 1fr; }
+.hojas-persona { list-style: none; padding: 0; margin: .4rem 0; display: grid; gap: .7rem; }
+.hojas-persona figure { margin: 0; }
+.hojas-persona img { display: block; width: 100%; border-radius: var(--r-ctrl); border: 1px solid var(--linea); background: #d4d6d3; }
+.hojas-persona figcaption { font-size: .78rem; color: var(--suave); margin-top: .2rem; }
+.nueva-ficha.reto .ficha-inicial { background: var(--reto); }
+.nueva-ficha.reto .ico-candado { width: 1.3rem; height: 1.3rem; fill: none; stroke: #fff; stroke-width: 1.8; }
+
+/* Diálogo del desafío */
+.des-error { color: var(--rubrica); font-weight: 600; margin: .4rem 0 0; }
+.des-registro label { display: grid; gap: .3rem; font-weight: 600; margin: .6rem 0; }
+.des-registro input { font: inherit; padding: .55rem .7rem; border: 1px solid var(--linea); border-radius: var(--r-ctrl); background: var(--papel); color: var(--tinta); }
+.des-check { display: flex !important; gap: .6rem; align-items: flex-start; font-weight: 400 !important; }
+.des-check input { margin-top: .25rem; width: 1.1rem; height: 1.1rem; }
+.des-nombres { display: grid; gap: .45rem; margin: .4rem 0; }
+.des-op.elegida { border-color: var(--lapis); background: var(--lapis-tinte); }
+.des-op:disabled { cursor: default; opacity: .75; }
+.colec-ranking { margin: .6rem 0 0; }
+.ranking-tabs { display: flex; gap: .5rem; margin: 1rem 0 .6rem; }
+.ranking-yo { margin: .3rem 0 .8rem; }
+.enlace { padding: 0; border: 0; background: none; color: var(--lapis); font: inherit; text-decoration: underline; cursor: pointer; }
+table.ranking { width: 100%; border-collapse: collapse; margin: .4rem 0 1rem; font-variant-numeric: tabular-nums; }
+table.ranking th, table.ranking td { padding: .45rem .6rem; border-bottom: 1px solid var(--linea-suave); text-align: left; }
+table.ranking th { font-size: .8rem; color: var(--suave); font-weight: 600; }
+table.ranking .num { text-align: right; }
+table.ranking .puesto { width: 2.5rem; font-weight: 700; color: var(--suave); }
+table.ranking tr.propia td { background: var(--lapis-tinte); font-weight: 700; }
+table.ranking tr.sep td { text-align: center; color: var(--suave); border-bottom: 0; }
+
+.dlg-desafio { width: min(36rem, calc(100vw - 1rem)); }
+.dlg-desafio.en-marcha .dialogo-cab .cerrar { opacity: .55; }
+.des-grande { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; line-height: 1.3; margin: .2rem 0 .5rem; }
+.des-grande .ico-candado { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-width: 1.8; vertical-align: -.15rem; }
+.des-intro { display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; align-items: start; margin-top: .5rem; }
+.des-reglas { margin: .3rem 0 .6rem; padding-left: 1.1rem; display: grid; gap: .3rem; font-size: .93rem; }
+.des-pregunta { padding: .4rem 0 .2rem; }
+.des-cab { display: flex; justify-content: space-between; align-items: baseline; }
+.des-seg { font-size: 1.15rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--rubrica); }
+.des-tiempo { height: .4rem; margin: .45rem 0 .9rem; border-radius: 999px; background: var(--hoja2); overflow: hidden; }
+.des-tiempo span { display: block; height: 100%; width: 100%; background: var(--rubrica); transition: width .1s linear; }
+.des-txt { font-family: var(--serif); font-size: 1.22rem; line-height: 1.35; margin: 0 0 .8rem; }
+.des-ops { display: grid; gap: .5rem; }
+.des-op { display: flex; align-items: center; gap: .7rem; min-height: 3rem; padding: .5rem .8rem; text-align: left; font: inherit; color: var(--tinta); border: 1px solid var(--linea); border-radius: var(--r-ctrl); background: var(--papel); cursor: pointer; transition: border-color var(--t), background var(--t); }
+.des-op:hover, .des-op:focus-visible { border-color: var(--lapis); background: var(--lapis-tinte); }
+.des-letra { flex: none; display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; font-weight: 700; font-size: .85rem; color: var(--lapis); background: var(--lapis-tinte); border: 1px solid color-mix(in srgb, var(--lapis) 35%, transparent); }
+.des-puntos { list-style: none; display: flex; gap: .3rem; padding: 0; margin: 1rem 0 0; justify-content: center; }
+.des-puntos li { width: .55rem; height: .55rem; border-radius: 50%; background: var(--hoja2); border: 1px solid var(--linea); }
+.des-puntos li.hecha { background: var(--suave); border-color: var(--suave); }
+.des-puntos li.actual { background: var(--lapis); border-color: var(--lapis); }
+.des-espera { text-align: center; padding: .8rem 0 .4rem; }
+.des-espera .acciones-ficha { justify-content: center; }
+.des-reloj { font-size: 2.2rem; margin: .1rem 0 .5rem; }
+.des-logro { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; align-items: center; margin: .5rem 0; }
+.des-logro:not(:has(figure)) { grid-template-columns: 1fr; }
+.des-retrato { margin: 0; animation: des-revela .9s cubic-bezier(.2, .7, .3, 1) both; }
+.des-retrato img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r-ctrl); border: 2px solid var(--reto); }
+.des-retrato figcaption { font-size: .68rem; color: var(--suave); text-align: center; margin-top: .2rem; }
+@keyframes des-revela { from { opacity: 0; transform: scale(.92); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+@media (prefers-reduced-motion: reduce) { .des-retrato { animation: none; } }
+.des-repaso { padding-left: 1.2rem; display: grid; gap: .6rem; font-size: .93rem; }
+.des-repaso p { margin: 0; }
+.des-repaso blockquote { margin: .2rem 0 0; }
+@media (max-width: 480px) { .des-intro, .des-logro { grid-template-columns: 1fr; } .des-intro .retrato.candado, .des-logro .des-retrato { max-width: 8rem; } }
+
 /* Ficha (diálogo) */
 .ficha-cab { display: grid; grid-template-columns: 5.25rem 1fr; gap: .9rem; align-items: start; margin: .6rem 0 .4rem; }
 .ficha-datos > :first-child { margin-top: 0; }
@@ -1496,3 +1582,4 @@ dialog.visor[open] { display: flex; }
 .glosario .enlace-boton { font-size: 1rem; padding-left: 0; }
 .dificil-dice li { margin: .3rem 0 .6rem; }
 .dificil-dice blockquote { margin: .15rem 0 0; }
+.ranking-puesto { font-size: 1.1rem; margin: .2rem 0 .8rem; padding: .6rem .9rem; border-left: 3px solid var(--lapis); background: var(--lapis-tinte); border-radius: 0 var(--r-ctrl) var(--r-ctrl) 0; }

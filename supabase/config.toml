@@ -1,0 +1,37 @@
+# Configuración mínima del proyecto Supabase (CLI) para el desafío y el ranking.
+# Diseño: docs/superpowers/specs/2026-11-18-ranking-mundial-design.md
+#
+# OJO: este archivo solo rige el entorno local de la CLI (y `supabase functions deploy` lee [functions.*]).
+# En el proyecto ALOJADO hay que activar a mano en el panel (Authentication):
+#   1. Sign In / Providers → «Allow anonymous sign-ins»: activado.
+#   2. Rate Limits → «Anonymous users» (altas anónimas por hora y por IP): 30 o menos.
+#   3. Attack Protection → CAPTCHA (hCaptcha o Turnstile): recomendado, frena crear cuentas en masa. Si se activa,
+#      la app debe mandar el token del CAPTCHA en el alta (`gotrue_meta_security.captcha_token`).
+project_id = "biblia"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+max_rows = 1000
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"] # generado por herramientas/subir_preguntas.py; fuera de git
+
+[auth]
+enabled = true
+site_url = "https://roberto924.github.io/biblia/"
+additional_redirect_urls = ["http://localhost:8769", "http://127.0.0.1:8769"]
+enable_signup = true
+# Cada perfil local se registra de forma anónima (sin correo ni contraseña).
+enable_anonymous_sign_ins = true
+
+[auth.rate_limit]
+# Altas anónimas por hora y por IP.
+anonymous_users = 30
+
+[functions.desafio]
+# La función valida el token del usuario con auth.getUser() (sirve con las claves nuevas y las de firma
+# asimétrica); la verificación previa de la pasarela no hace falta.
+verify_jwt = false

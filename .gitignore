@@ -5,3 +5,15 @@ recursos/_trabajo/
 
 # respuestas y registros temporales de Codex
 guiones/registro/codex/
+
+# Banco de preguntas con respuestas: nunca al repositorio público (antitrampas, 2026-11-18)
+herramientas/juego/preguntas/
+datos/preguntas.js
+
+# Servidor del desafío: el seed lleva las respuestas; temporales de la CLI de Supabase
+supabase/seed.sql
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+supabase/functions/.env
+.env*

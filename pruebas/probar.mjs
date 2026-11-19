@@ -1956,6 +1956,80 @@ console.log('Explicaciones');
     assert.deepEqual(j(N.citaFuente(N.accesibles(D, [p1.id]), f, () => true)), { ref: 'Gn 7:6', cita: null, bloqueada: false }, 'plegada para el niño: sin texto');
     assert.equal(N.citaFuente(N.accesibles(D, []), { tipo: 'obra', obra: 'x' }), null);
   });
+  // Desafío de la colección: preguntas por nivel, solo lo leído, perfil niño, un intento al día.
+  const CDz = cargar(real, path.join(aqui, 'juego-ejemplo.js'), path.join(aqui, '..', 'app.js'));
+  const NJ = CDz.BibliaNucleo, DJ = CDz.BIBLIA_DATOS, J = CDz.BIBLIA_JUEGO;
+  const ESC = [[1, 3], [3, 5], [5, 7], [7, 10], [9, 12]];
+  const hastaPasaje = id => { const ps = j(NJ.pasajes(DJ).map(p => p.id)); return ps.slice(0, ps.indexOf(id) + 1); };
+  const Q = (ref, extra) => Object.assign({ p: `¿${ref}?`, o: ['a', 'b', 'c', 'd'], c: 1, ref, cita: 'x' }, extra || {});
+  const PJ = esc => ({ escala: esc, segundos: { adulto: 15, nino: 25 }, personajes: { Abram_1: [Q('Gn 12:1'), Q('Gn 22:2', { nino: false }), Q('Gn 25:8')] } });
+  const MEDIODIA = new Date(2026, 10, 18, 12, 0, 0).getTime();
+  prueba('desafío: preguntas por nivel según la escala', () => {
+    const P = PJ(ESC);
+    assert.deepEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12].map(n => NJ.preguntasPorNivel(P, n)), [0, 3, 3, 5, 5, 7, 7, 10, 10, 12, 12]);
+    assert.equal(NJ.segundosPregunta(P, false), 15); assert.equal(NJ.segundosPregunta(P, true), 25);
+    assert.equal(NJ.esperaTxt(3723000), '01:02:03'); assert.equal(NJ.esperaTxt(-5), '00:00:00');
+  });
+  prueba('desafío: solo se pregunta lo ya leído; el niño no recibe las marcadas nino: false', () => {
+    const P = PJ([[1, 2]]);
+    assert.deepEqual(j(NJ.preguntasDisponibles(DJ, P, 'Abram_1', hastaPasaje('gn-51'), false).map(q => q.ref)), ['Gn 12:1', 'Gn 22:2']);
+    assert.deepEqual(j(NJ.preguntasDisponibles(DJ, P, 'Abram_1', hastaPasaje('gn-53'), true).map(q => q.ref)), ['Gn 12:1', 'Gn 25:8']);
+    assert.deepEqual(j(NJ.preguntasDisponibles(DJ, P, 'Abram_1', [], false)), []);
+  });
+  prueba('desafío: listo al terminar su capítulo; sin preguntas suficientes se obtiene como antes', () => {
+    const L = hastaPasaje('gn-53');
+    assert.equal(NJ.estadoDesafio(DJ, J, PJ([[1, 2]]), 'Abram_1', hastaPasaje('gn-51'), {}, MEDIODIA, false).estado, 'en-curso');
+    const e = j(NJ.estadoDesafio(DJ, J, PJ([[1, 2]]), 'Abram_1', L, {}, MEDIODIA, false));
+    assert.equal(e.estado, 'desafio'); assert.equal(e.preguntas, 2);
+    assert.equal(NJ.estadoDesafio(DJ, J, PJ([[1, 3]]), 'Abram_1', L, {}, MEDIODIA, false).estado, 'desafio');
+    assert.equal(NJ.estadoDesafio(DJ, J, PJ([[1, 3]]), 'Abram_1', L, {}, MEDIODIA, true).estado, 'obtenido', 'al niño le faltan preguntas aptas');
+    assert.equal(NJ.estadoDesafio(DJ, J, null, 'Abram_1', L, {}, MEDIODIA, false).estado, 'obtenido', 'sin datos/preguntas.js');
+    const PS = Object.assign(PJ([[1, 2]]), { sinNino: ['Abram_1'] });
+    assert.equal(NJ.estadoDesafio(DJ, J, PS, 'Abram_1', L, {}, MEDIODIA, true).estado, 'obtenido', 'sin desafío para el niño');
+    assert.equal(NJ.estadoDesafio(DJ, J, PS, 'Abram_1', L, {}, MEDIODIA, false).estado, 'desafio', 'el adulto sí lo tiene');
+    assert.equal(NJ.estadoDesafio(DJ, J, PJ([[1, 2]]), 'Isaac_1', L, {}, MEDIODIA, false).estado, NJ.estadoPersonaje(DJ, J, 'Isaac_1', L).estado, 'sin preguntas propias');
+  });
+  prueba('desafío: un intento al día, espera hasta la medianoche local y superado para siempre', () => {
+    const P = PJ([[1, 2]]), L = hastaPasaje('gn-53'), dia = NJ.diaLocal(MEDIODIA);
+    assert.equal(dia, '2026-11-18');
+    let R = NJ.anotarIntento({}, 'Abram_1', { dia, aciertos: 0, total: 2, ms: 0 });
+    R = NJ.anotarIntento(R, 'Abram_1', { dia, aciertos: 1, total: 2, ms: 9000 });
+    assert.equal(R.Abram_1.intentos.length, 1, 'el intento del día se reemplaza, no se suma');
+    const e = j(NJ.estadoDesafio(DJ, J, P, 'Abram_1', L, R, MEDIODIA, false));
+    assert.equal(e.estado, 'espera'); assert.equal(e.hasta, new Date(2026, 10, 19, 0, 0, 0).getTime());
+    const manana = new Date(2026, 10, 19, 0, 0, 1).getTime();
+    assert.equal(NJ.estadoDesafio(DJ, J, P, 'Abram_1', L, R, manana, false).estado, 'desafio');
+    R = NJ.anotarIntento(R, 'Abram_1', { dia: NJ.diaLocal(manana), aciertos: 2, total: 2, ms: 7000, fecha: '2026-11-19T00:00:01Z' });
+    assert.ok(R.Abram_1.superado); assert.equal(R.Abram_1.mejor.ms, 7000);
+    assert.equal(NJ.estadoDesafio(DJ, J, P, 'Abram_1', L, R, manana, false).estado, 'obtenido');
+    R = NJ.anotarIntento(R, 'Abram_1', { dia: '2026-11-20', aciertos: 0, total: 2, ms: 0 });
+    assert.ok(R.Abram_1.superado, 'superado no se pierde');
+  });
+  prueba('desafío: el set baraja preguntas y opciones sin perder la respuesta correcta', () => {
+    const disp = ['Gn 12:1', 'Gn 12:2', 'Gn 12:3', 'Gn 12:4'].map((r, i) => Q(r, { o: [`a${i}`, `b${i}`, `c${i}`, `d${i}`], c: i }));
+    let s = 7; const azar = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    const qs = j(NJ.armarDesafio(disp, 3, azar));
+    assert.equal(qs.length, 3); assert.equal(new Set(qs.map(q => q.ref)).size, 3);
+    qs.forEach(q => { const o = disp.find(x => x.ref === q.ref); assert.equal(q.o[q.c], o.o[o.c]); assert.deepEqual([...q.o].sort(), [...o.o].sort()); });
+  });
+  const rp = path.join(aqui, '..', 'datos', 'preguntas.js');
+  if (existsSync(rp)) prueba('desafío: datos/preguntas.js alcanza para cada personaje al terminar su capítulo (adulto y niño)', () => {
+    const NP = cargar(real, path.join(aqui, '..', 'datos', 'juego.js'), rp, path.join(aqui, '..', 'app.js'));
+    const N3 = NP.BibliaNucleo, D3 = NP.BIBLIA_DATOS, J3 = NP.BIBLIA_JUEGO, P3 = NP.BIBLIA_PREGUNTAS;
+    assert.ok(N3.preguntasValidas(P3));
+    const ps = j(N3.pasajes(D3).map(p => ({ id: p.id, inicio: p.inicio })));
+    let n = 0;
+    for (const [id, xs] of Object.entries(P3.personajes)) {
+      const e = J3.personajes[id]; assert.ok(e && !e.npc, id);
+      const cap = N3.capituloListo(e), r = N3.rangoClaves(cap);
+      const L = ps.filter(p => N3.clave(p.inicio) <= r.b).map(p => p.id); // hasta el pasaje que cierra su capítulo (puede cruzar al siguiente)
+      const pide = N3.preguntasPorNivel(P3, e.nivel);
+      for (const nino of [false, true]) if (!nino || !(P3.sinNino || []).includes(id)) assert.ok(N3.preguntasDisponibles(D3, P3, id, L, nino).length >= pide, `${id}${nino ? ' (niño)' : ''}: pide ${pide}`);
+      assert.equal(N3.estadoDesafio(D3, J3, P3, id, L, {}, MEDIODIA, false).estado, 'desafio', id);
+      n += xs.length;
+    }
+    console.log(`     ${Object.keys(P3.personajes).length} personajes, ${n} preguntas`);
+  });
   const re = path.join(aqui, '..', 'datos', 'explicaciones.js');
   if (existsSync(re)) prueba('explicaciones: datos/explicaciones.js casa con el texto de biblia.js', () => {
     const NR = cargar(path.join(aqui, '..', 'datos', 'biblia.js'), re, path.join(aqui, '..', 'app.js')), E2 = NR.BIBLIA_EXPLICACIONES, D2 = NR.BIBLIA_DATOS, N2 = NR.BibliaNucleo;
