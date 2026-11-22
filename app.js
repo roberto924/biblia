@@ -1820,6 +1820,40 @@ const Nucleo = (() => {
   const normalizarTiempos = o => { const out = {}; if (o && typeof o === 'object' && !Array.isArray(o)) Object.keys(o).forEach(k => { const v = +o[k]; if (Number.isFinite(v) && v > 0) out[k] = Math.min(v, 864000); }); return out; };
   // Puede marcarse: ya leído (releer no pide tiempo) o acumuló el mínimo.
   const puedeMarcar = (yaLeido, acumulado, minimo) => !!yaLeido || (+acumulado || 0) >= (+minimo || 0);
+  // Cobertura del video propio: los saltos, las pausas y una pestaña oculta no suman.
+  // El pequeño margen absorbe el intervalo entre eventos del reproductor, no escenas omitidas.
+  function tramosVideo(tramos, duracion) {
+    if (!Number.isFinite(duracion) || duracion <= 0) return [];
+    const salida = [];
+    (Array.isArray(tramos) ? tramos : []).filter(t => Array.isArray(t) && t.length === 2 && t.every(Number.isFinite))
+      .map(([a, b]) => [Math.max(0, a), Math.min(duracion, b)]).filter(([a, b]) => b > a)
+      .sort((a, b) => a[0] - b[0]).forEach(t => {
+        const ultimo = salida[salida.length - 1];
+        if (ultimo && t[0] <= ultimo[1] + .35) ultimo[1] = Math.max(ultimo[1], t[1]); else salida.push(t.slice());
+      });
+    return salida;
+  }
+  function seguirVideo(estado, muestra) {
+    const anterior = estado && estado.anterior, d = muestra.duracion;
+    let tramos = tramosVideo(estado && estado.tramos, d);
+    const valido = [muestra.posicion, muestra.reloj, muestra.velocidad].every(Number.isFinite) && muestra.velocidad > 0;
+    if (valido && anterior && anterior.activo && muestra.visible && !muestra.ruptura) {
+      const dt = muestra.reloj - anterior.reloj, avance = muestra.posicion - anterior.posicion;
+      if (dt > 0 && dt <= 5 && avance > 0 && avance <= dt * anterior.velocidad + .4) {
+        tramos = tramosVideo(tramos.concat([[anterior.posicion, muestra.posicion]]), d);
+      }
+    }
+    return { tramos, anterior: valido ? { posicion: muestra.posicion, reloj: muestra.reloj, velocidad: muestra.velocidad,
+      activo: !!muestra.visible && !!muestra.reproduciendo } : null };
+  }
+  const videoEntero = (tramos, duracion) => {
+    const ts = tramosVideo(tramos, duracion);
+    return ts.length === 1 && ts[0][0] <= .5 && ts[0][1] >= duracion - .5;
+  };
+  const videoLocal = f => !!f && f.propio === true && f.tipo === 'video' && /^recursos\/videos\/[a-z0-9-]+\.mp4$/.test(f.video || '') &&
+    /^[a-f0-9]{64}$/.test(f.video_sha256 || '') && (!f.poster || /^recursos\/imagenes\/[a-z0-9-]+\.jpg$/.test(f.poster));
+  const videoDelPasaje = (f, p) => videoLocal(f) && !!p && f.pasaje === p.id &&
+    Array.isArray(f.rangos) && f.rangos.length === 1 && f.rangos[0][0] === clave(p.inicio) && f.rangos[0][1] === clave(p.fin);
   // Filtros reutilizables por las vistas (A = objeto de `accesibles`).
   // Persona accesible: aparece en algún versículo accesible (también en lo leído fuera de orden).
   const clavesPersona = d => memo(d || {}, 'clavesP', () => {
@@ -1922,6 +1956,7 @@ const Nucleo = (() => {
 
   return { explicacionesValidas, termino, ocurrenciasDe, marcadoPasaje, explicacionesActivas, textoTermino, terminoAccesible, glosario, rangoPlegado, citaFuente, dificilesDe,
     frontera, accesibles, esAccesible, destinoPasaje, contarPalabras, palabrasPasaje, PPM, ppmDe, segundosMinimos, relojTxt, normalizarTiempos, puedeMarcar,
+    tramosVideo, seguirVideo, videoEntero, videoLocal, videoDelPasaje,
     personaAccesible, refsLugar, lugarAccesible, buscarAccesible, lugaresAccesibles, curiosidadAccesible, edadAccesible, lineaAccesible, vidaAccesible,
     NOTAS_COLORES, refNota, normalizarNotas, ponerNota, quitarNota, notaDe, listarNotas, fusionarNotas, validarNotas, exportarNotas, refLegible, citaVerso, textoVerso, textoNotas,
     TB_GRUPOS, tbPiezas, tbPieza, tbZona, tbCodos, tbRect, tbCodo, codosAMetros, rangosDe, tbMontaje, tbColocadas, tbPiezasDeRango, tbPiezasDePasaje, tbPiezasDeRefs,
@@ -2095,6 +2130,51 @@ if (typeof document !== 'undefined') (function () {
     const t = `Podrás marcarlo en ${N.relojTxt(LECT.min - LECT.acum)}`;
     if (b.textContent !== t) b.innerHTML = ICO_RELOJ + t;
   }
+  // Una sola operación de progreso para leer el texto o terminar su video narrado.
+  function registrarPasajeLeido(pid) {
+    const L = pasajesLeidos();
+    const nuevas = L.has(pid) ? null : N.nuevosAlLeer(D, JUEGO(), [...L], pid);
+    L.add(pid); store.set('biblia.pasajesLeidos', [...L]);
+    const t = tiemposGuardados();
+    if (pid in t) { delete t[pid]; store.set('biblia.tiemposLectura', t); }
+    if (LECT.id === pid) LECT.leido = true;
+    return nuevas;
+  }
+  const visionVideos = new WeakMap();
+  function seguirVideoPropio(v, evento) {
+    const f = N.recursos(R).find(f => f.id === v.dataset.videoPropio), p = estado.pasaje;
+    if (!N.videoDelPasaje(f, p) || !ACC().pasaje(p.id) || !v.isConnected || !Number.isFinite(v.duration)) return;
+    let s = visionVideos.get(v);
+    const clave = f.id + ':' + f.video_sha256;
+    if (!s) {
+      const guardado = store.get('biblia.videosVistos', {});
+      s = { perfil: PERF.r.activo, clave, tramos: guardado && guardado[clave], anterior: null, guardadoEn: 0 };
+    }
+    if (s.perfil !== PERF.r.activo) return;
+    Object.assign(s, N.seguirVideo(s, { duracion: v.duration, posicion: v.currentTime, reloj: performance.now() / 1000,
+      velocidad: v.playbackRate, visible: document.visibilityState !== 'hidden',
+      reproduciendo: !v.paused && !v.ended && !v.seeking,
+      ruptura: v.seeking || ['seeking', 'seeked', 'ratechange', 'emptied'].includes(evento) }));
+    visionVideos.set(v, s);
+    if (Date.now() - s.guardadoEn > 5000 || ['pause', 'ended', 'pagehide', 'visibilitychange'].includes(evento)) {
+      const guardado = store.get('biblia.videosVistos', {});
+      const tiempos = guardado && typeof guardado === 'object' && !Array.isArray(guardado) ? guardado : {};
+      tiempos[clave] = s.tramos; store.set('biblia.videosVistos', tiempos); s.guardadoEn = Date.now();
+    }
+    if (evento === 'ended' && v.ended && N.videoEntero(s.tramos, v.duration) && !pasajesLeidos().has(p.id)) {
+      const nuevas = registrarPasajeLeido(p.id);
+      rerender(); // permanece en este pasaje; «Siguiente» ya está desbloqueado
+      if (nuevas) mostrarNuevas(nuevas);
+    }
+  }
+  ['play', 'playing', 'pause', 'timeupdate', 'seeking', 'seeked', 'ratechange', 'ended', 'emptied'].forEach(tipo => {
+    document.addEventListener(tipo, e => {
+      if (e.target.matches && e.target.matches('video[data-video-propio]')) seguirVideoPropio(e.target, tipo);
+    }, true);
+  });
+  ['visibilitychange', 'pagehide'].forEach(tipo => (tipo === 'pagehide' ? window : document).addEventListener(tipo, () => {
+    main.querySelectorAll('video[data-video-propio]').forEach(v => seguirVideoPropio(v, tipo));
+  }));
   const rango = p => {
     const a = N.parseRef(p.inicio), b = N.parseRef(p.fin);
     if (a.libro !== b.libro) return `${a.libro} ${a.cap}:${a.v} – ${b.libro} ${b.cap}:${b.v}`;
@@ -3097,7 +3177,7 @@ if (typeof document !== 'undefined') (function () {
     const espera = vale.filter(f => !f.propio && !externos.includes(f));
     const ps = N.pasajes(D), ip = ps.findIndex(x => x.id === p.id), prev = ip > 0 ? ps[ip - 1] : null;
     const repaso = prev ? mediosPermitidos(N.recursos(R).filter(f => f.tipo === 'video' && !f.propio && !vale.includes(f) && finMedio(f) === prev.id)) : [];
-    const jugable = f => f.modo === 'incrustable' && N.esIdYoutube(f.youtube) ? 0 : 1; // lo que se reproduce aquí, antes que los enlaces
+    const jugable = f => N.videoLocal(f) || f.modo === 'incrustable' && N.esIdYoutube(f.youtube) ? 0 : 1; // lo que se reproduce aquí, antes que los enlaces
     const ext = externos.slice().sort((a, b) => jugable(a) - jugable(b)).concat(repaso.slice().sort((a, b) => jugable(a) - jugable(b)));
     return { ver: propios.concat(ext), espera, repaso, prev };
   }
@@ -3115,15 +3195,19 @@ if (typeof document !== 'undefined') (function () {
   const creadorDe = f => String(f.institucion || '').split(/[(,]/)[0].trim() || 'la fuente';
   function videoGrandeHTML(f, V) {
     const det = [creadorDe(f), f.idioma === 'es' ? 'en español' : IDIOMA_TXT[f.idioma] || f.idioma, f.duracion].filter(Boolean).map(esc).join(' · ');
-    const cuerpo = f.modo === 'incrustable' && N.esIdYoutube(f.youtube)
+    const propio = N.videoLocal(f), cuentaLectura = N.videoDelPasaje(f, estado.pasaje);
+    const cuerpo = propio
+      ? `<div class="video-marco"><video controls playsinline preload="none" src="${esc(f.video)}?v=${esc(f.video_sha256)}"${f.poster ? ` poster="${esc(f.poster)}"` : ''}${cuentaLectura ? ` data-video-propio="${esc(f.id)}"` : ''} aria-label="${esc(f.titulo)}">Tu navegador no puede reproducir este video. <a href="${esc(f.video)}">Abrir el video narrado</a>.</video></div>`
+      : f.modo === 'incrustable' && N.esIdYoutube(f.youtube)
       ? `<button type="button" class="video-fachada" data-medio-play="${esc(f.id)}" aria-label="Reproducir el video: ${esc(f.titulo)}"><img src="https://i.ytimg.com/vi/${esc(f.youtube)}/hqdefault.jpg" alt="" onerror="this.remove()">${ICO_REPROD}</button>`
       : `<a class="video-fachada vacia" href="${esc(urlRec(f.url_fuente))}" target="_blank" rel="noopener noreferrer">${ICO_REPROD}<span class="video-invita">Este video no se puede mostrar aquí: verlo en ${esc(creadorDe(f))}<span class="meta"> (se abre aparte)</span></span></a>`;
     const repaso = V.repaso.includes(f) && V.prev ? `<span class="rec-nota">Repaso de lo leído: ${esc(V.prev.titulo || V.prev.id)}. Ya terminaste de leer lo que comenta.</span>` : '';
     return `<figure class="medio-grande">${cuerpo}
+      ${cuentaLectura ? `<p class="meta video-lectura" role="status">${pasajesLeidos().has(f.pasaje) ? 'Pasaje leído. Puedes volver a ver el video o seguir con el siguiente.' : 'Ver este video completo cuenta como leer el pasaje: al terminar se marcará como leído. Puedes verlo en varias sesiones; adelantar no cuenta las partes omitidas.'}</p>` : ''}
       <figcaption class="rec-pie"><strong class="rec-titulo">${esc(f.titulo)}</strong>
         <span class="rec-datos">${f.propio ? '<span class="etiqueta rec-rotulo rec-ilustracion">Ilustración moderna (generada con IA)</span>' : '<span class="etiqueta externa">Fuente externa</span>'} Video${det ? ' · ' + det : ''}${(f.refs || []).length ? ' · ' + f.refs.map(esc).join(', ') : ''}</span>${repaso}
         ${f.nota_certeza ? `<details class="plegable medio-nota"><summary>Sobre este video</summary><p class="rec-nota">${esc(f.nota_certeza)}</p></details>` : ''}
-        <span class="rec-datos">${licRec(f)}${urlRec(f.url_fuente) ? ' · ' + linkRec(f.url_fuente, `Ver en ${esc(creadorDe(f))}`) : ''}</span>
+        <span class="rec-datos">${licRec(f)}${urlRec(f.url_fuente) ? ' · ' + linkRec(f.url_fuente, propio ? 'Cómo se produjo' : `Ver en ${esc(creadorDe(f))}`) : ''}</span>
         <span class="rec-atrib">${esc(f.atribucion)}</span></figcaption></figure>`;
   }
   function imagenGrandeHTML(f) {
@@ -3133,7 +3217,7 @@ if (typeof document !== 'undefined') (function () {
   // Miniatura: al pulsarla pasa al lugar grande.
   function miniHTML(f, pestana) {
     const yt = f.tipo === 'video' && N.esIdYoutube(f.youtube);
-    const img = f.tipo === 'video' ? (yt ? `<img src="https://i.ytimg.com/vi/${esc(f.youtube)}/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">` : '') : imgRec(f, '');
+    const img = f.tipo === 'video' ? (N.videoLocal(f) && f.poster ? `<img src="${esc(f.poster)}" alt="" loading="lazy">` : yt ? `<img src="https://i.ytimg.com/vi/${esc(f.youtube)}/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">` : '') : imgRec(f, '');
     return `<li><button type="button" class="medio-mini${f.tipo === 'video' ? ' es-video' : ''}" data-medio-sel="${esc(pestana)}|${esc(f.id)}" aria-label="${f.tipo === 'video' ? 'Poner en grande el video' : 'Poner en grande la imagen'}: ${esc(f.titulo)}">
       <span class="medio-mini-img">${img}${f.tipo === 'video' ? ICO_REPROD : ''}</span>
       <span class="medio-mini-txt">${f.tipo === 'video' ? `${f.propio ? 'Narrado' : esc(creadorDe(f))}${(f.refs || []).length ? ` · ${esc(f.refs.join(', '))}` : ''}` : esc([f.autor, f.fecha].filter(Boolean).join(', ') || N.rotuloRecurso(f))}</span></button></li>`;
@@ -3153,6 +3237,7 @@ if (typeof document !== 'undefined') (function () {
   }
   function pintarMedios(foco) {
     const el = $('#medios-pasaje'); if (!el || !estado.pasaje) return;
+    el.querySelectorAll('video[data-video-propio]').forEach(v => seguirVideoPropio(v, 'pause'));
     el.outerHTML = mediosPasajeHTML(estado.pasaje);
     const b = foco && main.querySelector(foco); if (b) b.focus();
   }
@@ -5697,6 +5782,7 @@ if (typeof document !== 'undefined') (function () {
   function render(foco) {
     if (!D) { main.innerHTML = '<h1>Sin datos</h1><p>No se encontró <code>datos/biblia.js</code>. Añade <code>?ejemplo</code> a la dirección para ver los datos de prueba.</p>'; return; }
     tickLectura(); // cuenta el tiempo del pasaje que se deja antes de pintar el siguiente
+    main.querySelectorAll('video[data-video-propio]').forEach(v => seguirVideoPropio(v, 'pause'));
     const { vista, args } = ruta();
     const fn = VISTAS[vista] || vistaLeer;
     main.innerHTML = fn(args);
@@ -5805,10 +5891,7 @@ if (typeof document !== 'undefined') (function () {
       const L = pasajesLeidos(), pid = ls.dataset.leidoSeguir;
       // Solo un pasaje accesible, y con el tiempo mínimo cumplido (o ya leído).
       if (ls.disabled || !ACC().pasaje(pid) || (pid === LECT.id && !listoMarcar())) return;
-      const nuevas = L.has(pid) ? null : N.nuevosAlLeer(D, JUEGO(), [...L], pid);
-      L.add(pid); store.set('biblia.pasajesLeidos', [...L]);
-      const t = tiemposGuardados(); if (pid in t) { delete t[pid]; store.set('biblia.tiemposLectura', t); }
-      if (LECT.id === pid) LECT.leido = true;
+      const nuevas = registrarPasajeLeido(pid);
       const ps = N.pasajes(D), i = ps.findIndex(x => x.id === pid), A = ACC(), sig = ps[i + 1] && A.pasaje(ps[i + 1].id) ? ps[i + 1] : A.frontera;
       location.hash = sig ? `#leer/p/${sig.id}` : '#leer';
       if (nuevas) mostrarNuevas(nuevas);

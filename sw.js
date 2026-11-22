@@ -1,5 +1,5 @@
 /* Service worker: red primero, caché de respaldo. Cambia VERSION al publicar para que aparezca el aviso de actualización. */
-const VERSION = '2026-11-19.1';
+const VERSION = '2026-11-22.1';
 const CACHE = 'biblia-' + VERSION;
 const CARCASA = ['./', 'index.html', 'app.js', 'estilos.css', 'manifest.webmanifest', 'datos/biblia.js', 'datos/mapa-base.js', 'datos/recursos.js', 'datos/recorridos.js', 'datos/tabernaculo.js', 'datos/contenido.js', 'datos/juego.js', 'datos/explicaciones.js',
   'iconos/icono.svg', 'iconos/icono-192.png', 'iconos/icono-512.png'];
@@ -21,7 +21,10 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   const req = e.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== self.location.origin) return;
+  // El navegador gestiona peticiones Range de medios; el caché no admite respuestas 206.
+  if (req.headers.has('range') || /\.(?:mp4|webm)$/i.test(url.pathname)) return;
   e.respondWith((async () => {
     try {
       const r = await fetch(req.mode === 'navigate' ? req : new Request(req, { cache: 'no-cache' }));

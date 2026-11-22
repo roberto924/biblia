@@ -1045,6 +1045,8 @@ table.ranking tr.sep td { text-align: center; color: var(--suave); border-bottom
 .video-invita { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; line-height: 1.25; }
 .video-marco { aspect-ratio: 16 / 9; border-radius: var(--r-tarjeta); overflow: hidden; background: #000; }
 .video-marco iframe { width: 100%; height: 100%; border: 0; display: block; }
+.video-marco video { width: 100%; height: 100%; display: block; object-fit: contain; background: #000; }
+.video-lectura { margin: .65rem 0; }
 .video-pie { margin: .45rem 0 0; font-size: .92rem; }
 .video-rotulo { color: var(--suave); font-size: .86rem; }
 .video-rotulo .etiqueta { margin-left: 0; }

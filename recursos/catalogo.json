@@ -1,5 +1,29 @@
 [
   {
+    "id": "biblia-gn-06-narrado",
+    "tipo": "video",
+    "propio": true,
+    "pasaje": "gn-06",
+    "titulo": "Génesis 3:14–24 · La salida del huerto de Edén",
+    "descripcion": "El pasaje narrado completo en la Reina-Valera 1909 y animado en 2D. Ilustración moderna (generada con IA).",
+    "refs": [
+      "Gn 3:14-24"
+    ],
+    "autor": "Biblia · Compañero de lectura",
+    "fecha_obra": "2026",
+    "institucion": "Producción propia",
+    "url_fuente": "https://github.com/roberto924/biblia/blob/main/guiones/LEEME.md",
+    "archivo_video": "recursos/videos/gn-06.mp4",
+    "archivo_cartel": "recursos/imagenes/gn-06-video.jpg",
+    "licencia": "Texto RV1909: dominio público; producción audiovisual propia con IA",
+    "atribucion": "Texto: Reina-Valera 1909, Génesis 3:14–24. Ilustraciones generadas con IA; animación LTX 2.5 local a 24 fps, voces sintéticas originales y montaje con FFmpeg.",
+    "uso": "incrustable",
+    "certeza": "Ilustración moderna (generada con IA)",
+    "nota_certeza": "Texto: Génesis 3:14–24, RV1909. El paisaje, los gestos, la ropa, las voces, los guardianes y la espada se representan como interpretación artística. La voz de Dios se oye fuera de campo y no se muestra una figura divina. No es un registro histórico.",
+    "idioma": "es",
+    "duracion": "1:53"
+  },
+  {
     "id": "dore-gn-1-creacion-luz",
     "tipo": "arte",
     "titulo": "La creación de la luz",

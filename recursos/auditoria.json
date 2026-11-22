@@ -1,6 +1,12 @@
 {
  "revisado": "2026-11-12",
  "fichas": {
+   "biblia-gn-06-narrado": {
+    "veredicto": "OK",
+    "fecha": "2026-11-22",
+    "motivo": "Pasaje cotejado con el texto RV1909. Video completo revisado en 24 fps: cobertura y continuidad del relato, sin representación de Dios, sin rótulos dentro de imagen. Publicación de este pasaje autorizada; la obra visual y sonora es interpretación artística.",
+    "sensible": false
+   },
   "dore-gn-1-creacion-luz": {
    "veredicto": "OK",
    "motivo": "Imagen/ficha coherente con las refs.",

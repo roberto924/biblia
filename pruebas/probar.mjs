@@ -1,5 +1,6 @@
 // Pruebas de las funciones puras de app.js (sin DOM). Uso: node pruebas/probar.mjs
 import { readFileSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import path from 'node:path';
@@ -1435,6 +1436,20 @@ console.log('Recursos (imágenes, objetos, medios)');
         if (f.imagen) assert.ok(!/desconocida|reservados/i.test(f.licencia) && existsSync(path.join(aqui, '..', f.imagen)), f.id);
       }
     });
+    prueba('video narrado de Gn 1:1–19: archivo íntegro, cartel y cobertura exacta; nunca cuenta un resumen externo', () => {
+      const p = N3.pasajeDe(D3, 'Gn 3:14'), f = N3.recursos(R3).find(f => f.id === 'biblia-gn-06-narrado');
+      assert.ok(f && N3.videoDelPasaje(f, p));
+      const previos = N3.pasajes(D3).slice(0, N3.pasajes(D3).findIndex(x => x.id === p.id)).map(x => x.id);
+      assert.equal(N3.accesibles(D3, previos).pasaje(p.id), true, 'disponible en el pasaje en curso');
+      assert.equal(N3.accesibles(D3, []).pasaje(p.id), false, 'no salta la lectura en orden');
+      assert.equal(N3.accesibles(D3, [], true).ref(p.inicio), false, 'aún no está leído');
+      assert.equal(createHash('sha256').update(readFileSync(path.join(aqui, '..', f.video))).digest('hex'), f.video_sha256);
+      assert.ok(existsSync(path.join(aqui, '..', f.poster)));
+      for (const cambio of [{ propio: false }, { pasaje: 'gn-02' }, { rangos: [[1001001, 1001031]] },
+        { video: 'https://ejemplo.test/video.mp4' }, { video: 'recursos/videos/../privado.mp4' }, { video_sha256: 'anterior' }]) {
+        assert.equal(N3.videoDelPasaje({ ...f, ...cambio }, p), false);
+      }
+    });
   }
 }
 
@@ -1819,6 +1834,50 @@ console.log('Lectura en orden');
     assert.deepEqual(j(N.normalizarTiempos({ a: 12, b: -1, c: 'x', d: '7' })), { a: 12, d: 7 });
     assert.deepEqual(j(N.normalizarTiempos(null)), {});
   });
+  prueba('video: reproducción completa, pausas y distintas velocidades sin duplicar lo repetido', () => {
+    const muestra = (posicion, reloj, extra = {}) => ({ posicion, reloj, duracion: 10, visible: true, reproduciendo: true, velocidad: 1, ...extra });
+    let s = N.seguirVideo(null, muestra(0, 0));
+    for (let i = 1; i <= 5; i++) s = N.seguirVideo(s, muestra(i, i));
+    s = N.seguirVideo(s, muestra(5, 5.1, { reproduciendo: false }));
+    s = N.seguirVideo(s, muestra(5, 20, { velocidad: 2 }));
+    for (let i = 6; i <= 10; i++) s = N.seguirVideo(s, muestra(i, 20 + (i - 5) / 2, { velocidad: 2 }));
+    assert.equal(N.videoEntero(s.tramos, 10), true);
+    assert.deepEqual(j(N.tramosVideo(s.tramos.concat([[0, 10]]), 10)), [[0, 10]], 'repetir no suma duración doble');
+    assert.equal(N.videoEntero([[0, 9]], 10), false, 'falta el final');
+    assert.equal(N.videoEntero([[1, 10]], 10), false, 'falta el comienzo');
+  });
+  prueba('video: saltar al final, incluso sin evento seeking, no completa el pasaje', () => {
+    const m = (posicion, reloj, extra = {}) => ({ posicion, reloj, duracion: 100, velocidad: 1, visible: true, reproduciendo: true, ...extra });
+    let s = N.seguirVideo(null, m(0, 0));
+    s = N.seguirVideo(s, m(1, 1));
+    s = N.seguirVideo(s, m(99, 1.2));
+    s = N.seguirVideo(s, m(100, 2.2, { reproduciendo: false }));
+    assert.equal(N.videoEntero(s.tramos, 100), false);
+    assert.deepEqual(j(s.tramos), [[0, 1], [99, 100]]);
+    assert.equal(N.videoEntero([[0, 40], [60, 100]], 100), false, 'un hueco intermedio tampoco vale');
+  });
+  prueba('video: una pestaña oculta, una pausa o la suspensión del equipo no acumulan cobertura', () => {
+    const m = (posicion, reloj, extra = {}) => ({ posicion, reloj, duracion: 10, velocidad: 1, visible: true, reproduciendo: true, ...extra });
+    let s = N.seguirVideo(null, m(0, 0, { visible: false }));
+    s = N.seguirVideo(s, m(5, 5, { visible: false }));
+    s = N.seguirVideo(s, m(5, 6));
+    assert.deepEqual(j(s.tramos), []);
+    s = N.seguirVideo(s, m(6, 7, { reproduciendo: false }));
+    s = N.seguirVideo(s, m(10, 11));
+    assert.deepEqual(j(s.tramos), [[5, 6]], 'la posición que cambia estando pausado no se cuenta');
+    s = N.seguirVideo(N.seguirVideo(null, m(0, 0)), m(10, 100));
+    assert.deepEqual(j(s.tramos), [], 'un intervalo largo sin eventos no acredita visionado');
+  });
+  prueba('video: reanudar otra sesión conserva tramos; buscar hacia atrás permite completar el hueco', () => {
+    const m = (posicion, reloj, extra = {}) => ({ posicion, reloj, duracion: 10, velocidad: 1, visible: true, reproduciendo: true, ...extra });
+    let s = N.seguirVideo({ tramos: [[0, 4], [8, 10]], anterior: null }, m(4, 0, { ruptura: true }));
+    for (let i = 5; i <= 8; i++) s = N.seguirVideo(s, m(i, i - 4));
+    assert.equal(N.videoEntero(s.tramos, 10), true);
+    assert.equal(N.videoEntero([[0, 10]], Infinity), false);
+    assert.equal(N.videoEntero([[0, 10]], NaN), false);
+    assert.equal(N.videoEntero([[0, 10]], 0), false);
+    assert.deepEqual(j(N.tramosVideo([[-4, 2], [NaN, 10], [9, 7], [2, 5]], 10)), [[0, 5]]);
+  });
   prueba('búsqueda y fichas: solo personas que aparecen en algo accesible (también leído fuera de orden)', () => {
     const A0 = N.accesibles(D, []), Atodo = N.accesibles(D, ids), I = N.indice(D);
     const tarde = [...I.primera.keys()].filter(id => ![...I.porRef].some(([k, s]) => s.has(id) && A0.clave(k)));
@@ -2041,6 +2100,19 @@ console.log('Explicaciones');
     }
   });
 }
+
+prueba('service worker: los MP4 y las peticiones parciales llegan a la red sin caché intermedia', () => {
+  const eventos = {}, contexto = { URL, self: { location: { origin: 'https://ejemplo.test' },
+    addEventListener: (tipo, fn) => { eventos[tipo] = fn; } } };
+  vm.createContext(contexto);
+  vm.runInContext(readFileSync(path.join(aqui, '..', 'sw.js'), 'utf8'), contexto);
+  for (const [ruta, parcial] of [['/biblia/recursos/videos/gn-06.mp4?v=123', false], ['/otro', true]]) {
+    let interceptada = false;
+    eventos.fetch({ request: { method: 'GET', url: 'https://ejemplo.test' + ruta, headers: { has: k => k === 'range' && parcial } },
+      respondWith: () => { interceptada = true; } });
+    assert.equal(interceptada, false, ruta);
+  }
+});
 
 console.log(`\n${ok} correctas, ${fallos} fallidas`);
 process.exit(fallos ? 1 : 0);

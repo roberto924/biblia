@@ -20,6 +20,7 @@ Verificación (exit 1 y no escribe nada si falla): cada imagen existe; cada fich
 tiene licencia, atribución, fuente y refs de Gn/Ex válidas.
 """
 import json
+import hashlib
 import os
 import re
 import struct
@@ -141,7 +142,8 @@ def main():
     else:
         aud, auditado = {}, False
         print('AVISO: no existe recursos/auditoria.json; todas las fichas quedan «sin auditar».')
-    vmax = versiculos_por_cap(leer_js(BIBLIA))
+    biblia = leer_js(BIBLIA)
+    vmax = versiculos_por_cap(biblia)
     ruta_orig = os.path.join(RAIZ, 'datos', 'originales.js')
     videos_originales = ({v['youtube_id'] for v in leer_js(ruta_orig).get('videos', [])}
                          if os.path.exists(ruta_orig) else set())
@@ -210,7 +212,28 @@ def main():
         if yt and yt in videos_originales:  # ya se muestra como video del libro (datos/originales.js)
             excluidas.append({'id': fid, 'motivo': f'video {yt} ya está en datos/originales.js'})
             continue
-        modo = 'imagen' if imagen else ('incrustable' if uso == 'incrustable' and yt else 'enlace')
+        video, poster, video_sha256 = None, None, None
+        propio = f.get('propio') is True
+        if propio:
+            if ver != 'OK':
+                errores.append(f'{fid}: el video propio requiere una auditoría completa OK')
+            rel, cartel = f.get('archivo_video') or '', f.get('archivo_cartel') or ''
+            if tipo != 'video' or uso != 'incrustable':
+                errores.append(f'{fid}: el video propio debe ser de tipo video e incrustable')
+            if not re.fullmatch(r'recursos/videos/[a-z0-9-]+\.mp4', rel) or not os.path.isfile(os.path.join(RAIZ, rel)):
+                errores.append(f'{fid}: MP4 propio inexistente o fuera de recursos/videos/')
+            else:
+                video = rel
+                with open(os.path.join(RAIZ, rel), 'rb') as entrada:
+                    video_sha256 = hashlib.file_digest(entrada, 'sha256').hexdigest()
+            if not re.fullmatch(r'recursos/imagenes/[a-z0-9-]+\.jpg', cartel) or not os.path.isfile(os.path.join(RAIZ, cartel)):
+                errores.append(f'{fid}: cartel propio inexistente o fuera de recursos/imagenes/')
+            else:
+                poster = cartel
+            pasaje = next((p for p in biblia.get('pasajes', []) if p['id'] == f.get('pasaje')), None)
+            if not pasaje or rangos != [[rango(pasaje['inicio'], vmax)[1], rango(pasaje['fin'], vmax)[2]]]:
+                errores.append(f'{fid}: el video narrado debe cubrir exactamente su pasaje')
+        modo = 'video' if video else 'imagen' if imagen else ('incrustable' if uso == 'incrustable' and yt else 'enlace')
         caps = {(CANON[ka // 1_000_000 - 1], c) for ka, kb in rangos for c in range((ka // 1000) % 1000, (kb // 1000) % 1000 + 1)}
         sensible = bool(imagen) and tipo != 'mapa_antiguo' and (fid in SENSIBLE_IDS or bool(caps & SENSIBLE_CAPS))
         if imagen and isinstance(a.get('sensible'), bool):  # la auditoría (mirando la imagen) manda
@@ -226,6 +249,7 @@ def main():
             'idioma': f.get('idioma'), 'duracion': f.get('duracion'),
             'refs': refs_ok, 'rangos': rangos, 'sensible': sensible, 'relacion': relacion,
             'auditoria': ver or 'sin auditar', 'motivo_auditoria': (a.get('motivo') or '') if ver == 'AJUSTAR' else '',
+            **({'propio': True, 'pasaje': f.get('pasaje'), 'video': video, 'poster': poster, 'video_sha256': video_sha256} if propio else {}),
         })
 
     for e in errores:
