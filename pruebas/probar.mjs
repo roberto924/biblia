@@ -1436,6 +1436,16 @@ console.log('Recursos (imágenes, objetos, medios)');
         if (f.imagen) assert.ok(!/desconocida|reservados/i.test(f.licencia) && existsSync(path.join(aqui, '..', f.imagen)), f.id);
       }
     });
+    prueba('los dos videos iniciales conservan archivos y cubren su pasaje exacto', () => {
+      for (const [id, inicio] of [['gn-01', 'Gn 1:1'], ['gn-02', 'Gn 1:20']]) {
+        const p = N3.pasajeDe(D3, inicio);
+        const f = N3.recursos(R3).find(f => f.id === 'biblia-' + id + '-narrado');
+        assert.equal(p.id, id);
+        assert.ok(f && N3.videoDelPasaje(f, p));
+        assert.equal(createHash('sha256').update(readFileSync(path.join(aqui, '..', f.video))).digest('hex'), f.video_sha256);
+        assert.ok(readFileSync(path.join(aqui, '..', f.poster)).length > 0);
+      }
+    });
     prueba('video narrado de Gn 1:1–19: archivo íntegro, cartel y cobertura exacta; nunca cuenta un resumen externo', () => {
       const p = N3.pasajeDe(D3, 'Gn 3:14'), f = N3.recursos(R3).find(f => f.id === 'biblia-gn-06-narrado');
       assert.ok(f && N3.videoDelPasaje(f, p));

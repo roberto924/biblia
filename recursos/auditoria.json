@@ -1,6 +1,18 @@
 {
  "revisado": "2026-11-12",
  "fichas": {
+  "biblia-gn-01-narrado": {
+   "veredicto": "OK",
+   "fecha": "2026-11-19",
+   "sensible": false,
+   "motivo": "Revisión del 19-nov-2026: once tomas con el narrador C y la identidad de Dios y matiz pausado/sostenido aprobados por el usuario. Muestra de tratamiento reproducida con SHA idéntico. Comparación automática completa con RV1909 registrada en guiones/registro/auditoria-audio-gn-01-elegidas.json; no sustituye escucha humana de actuación. Imágenes, clips, música y transiciones conservados, sin gasto adicional de Higgsfield. Sin cartelas ni marcas sobre el video; procedencia en la ficha de lectura. Ver guiones/registro/gn-01-montaje.json."
+  },
+  "biblia-gn-02-narrado": {
+   "veredicto": "OK",
+   "fecha": "2026-11-19",
+   "sensible": false,
+   "motivo": "Revisadas las once tomas y todas las imágenes, referencias de rostros y cuatro clips. Guion validado contra RV1909; seis discursos de Dios y narrador C, identidades aprobadas. Comparación automática completa de audio con diferencias y límites del ASR registrados en guiones/registro/auditoria-audio-gn-02.json; no certifica escucha humana de articulación. Sin texto en la imagen ni figura divina, encuadres respetuosos. Montaje local, reutilización sin cobros duplicados, gasto Higgsfield 24 créditos. Ver guiones/registro/gn-02-montaje.json."
+  },
    "biblia-gn-06-narrado": {
     "veredicto": "OK",
     "fecha": "2026-11-22",

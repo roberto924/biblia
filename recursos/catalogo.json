@@ -1,4 +1,52 @@
 [
+    {
+      "id": "biblia-gn-01-narrado",
+      "tipo": "video",
+      "propio": true,
+      "pasaje": "gn-01",
+      "titulo": "Génesis 1:1–19 · La creación: días primero a cuarto",
+      "descripcion": "El pasaje narrado con el texto de la Reina-Valera 1909 y animación 2D. Ilustración moderna (generada con IA).",
+      "refs": [
+        "Gn 1:1-19"
+      ],
+      "autor": "Biblia · Compañero de lectura",
+      "fecha_obra": "2026",
+      "institucion": "Producción propia",
+      "url_fuente": "https://github.com/roberto924/biblia/blob/main/guiones/LEEME.md",
+      "archivo_video": "recursos/videos/gn-01.mp4",
+      "archivo_cartel": "recursos/imagenes/gn-01-video.jpg",
+      "licencia": "Texto RV1909: dominio público; producción audiovisual propia con IA",
+      "atribucion": "Texto: Reina-Valera 1909, Gn 1:1–19. Imágenes generadas con IA, Estilo v1; movimiento: Higgsfield / Seedance 2.0 Mini; voces originales aprobadas: narrador C (narrador-sereno-v2) y Dios (dios-bajo-v3, matiz pausado y sostenido, eco leve y reverberación discreta), Qwen3-TTS VoiceDesign y Base; música instrumental original de síntesis local; montaje: FFmpeg.",
+      "uso": "incrustable",
+      "certeza": "Ilustración moderna (generada con IA)",
+      "nota_certeza": "Texto: Génesis 1:1–19, RV1909. Inferido: la lumbrera mayor se representa como el sol y la menor como la luna (Gn 1:16). Los paisajes, colores, encuadres y el sonido de las voces son interpretaciones artísticas; Dios no se representa con figura. No es un registro histórico. Voces y música: interpretación artística moderna. Presentación sin textos sobre la imagen; procedencia y créditos en esta ficha.",
+      "idioma": "es",
+      "duracion": "2:48"
+    },
+    {
+      "id": "biblia-gn-02-narrado",
+      "tipo": "video",
+      "propio": true,
+      "pasaje": "gn-02",
+      "titulo": "Génesis 1:20–2:3 · La creación: días quinto a séptimo",
+      "descripcion": "El pasaje completo narrado con el texto de la Reina-Valera 1909, voces aprobadas y animación 2D. Ilustración moderna (generada con IA).",
+      "refs": [
+        "Gn 1:20-2:3"
+      ],
+      "autor": "Biblia · Compañero de lectura",
+      "fecha_obra": "2026",
+      "institucion": "Producción propia",
+      "url_fuente": "https://github.com/roberto924/biblia/blob/main/guiones/LEEME.md",
+      "archivo_video": "recursos/videos/gn-02.mp4",
+      "archivo_cartel": "recursos/imagenes/gn-02-video.jpg",
+      "licencia": "Texto RV1909: dominio público; producción audiovisual propia con IA",
+      "atribucion": "Texto: Reina-Valera 1909, Gn 1:20–2:3. Imágenes generadas con IA mediante capa-ia, Estilo v1; movimiento: Higgsfield / Seedance 2.0 Mini, cuatro clips por 24 créditos; voces originales aprobadas: narrador C (narrador-sereno-v2) y Dios (dios-bajo-v3, matiz pausado y sostenido, eco leve y reverberación discreta), Qwen3-TTS VoiceDesign y Base; misma música instrumental original del primer video, de síntesis local; montaje y transiciones: FFmpeg.",
+      "uso": "incrustable",
+      "certeza": "Ilustración moderna (generada con IA)",
+      "nota_certeza": "Texto: Génesis 1:20–2:3, RV1909, narrado completo y sin diálogos añadidos. Interpretación artística: paisajes, especies concretas de animales, formas vegetales, rostros, gestos, colores, encuadres, música y sonido de las voces. La RV1909 dice grandes ballenas (Gn 1:21) y varón y hembra (Gn 1:27); no describe sus rasgos ni una costa concreta. Dios no se representa con figura; el reposo se acompaña con quietud del paisaje. No es un registro histórico. Imagen limpia: fuentes, créditos y rótulo de ilustración moderna en esta ficha.",
+      "idioma": "es",
+      "duracion": "3:00"
+    },
   {
     "id": "biblia-gn-06-narrado",
     "tipo": "video",
