@@ -2320,7 +2320,7 @@ if (typeof document !== 'undefined') (function () {
       ${herramientasPasajeHTML()}
       ${dificilesHTML(p)}
       ${estado.comparar ? compararHTML(p) : estado.original ? originalHTML(p) : texto ? libroHTML(texto) : '<div class="biblia"><p class="vacio-txt">Este pasaje no tiene versículos en los datos.</p></div>'}
-      ${leerAqui && tieneLecturaRelacionada(p) ? `<div id="lecturas-relacionadas-pasaje" data-lecturas-relacionadas aria-live="polite"${relacionadasOn() ? '' : ' hidden'}>${relacionadasOn() ? lecturaRelacionadaHTML() : ''}</div>` : ''}
+      ${leerAqui && lecturaRelacionadaDe(p) ? `<div id="lecturas-relacionadas-pasaje" data-lecturas-relacionadas aria-live="polite"${relacionadasOn() ? '' : ' hidden'}>${relacionadasOn() ? lecturaRelacionadaHTML(p) : ''}</div>` : ''}
       <nav class="pasos-pasaje" aria-label="Pasajes">
         ${prev ? `<a class="boton secundario" href="#leer/p/${esc(prev.id)}" title="${esc(prev.titulo)}">Anterior</a>` : '<span></span>'}
         ${marcarHTML(p, next)}
@@ -2709,24 +2709,39 @@ if (typeof document !== 'undefined') (function () {
     if (estrecho() && c.length > 2) c = c.slice(-2);
     store.set('biblia.cols', c);
   }
-  // La edición piloto solo se asocia con esta lectura. No interviene en texto, audio ni progreso.
+  // Una obra y dos anclas del recorrido ya alcanzado. No intervienen en texto, audio ni progreso.
   const REL_ENOC = Object.freeze({
-    id: '1-enoc', pasaje: 'gn-12', tramo: 'Gn 5:21-24', etiqueta: 'Génesis 5:21–24',
+    id: '1-enoc',
     fragmento: 'https://www.deadseascrolls.org.il/explore-the-archive/manuscript/4Q201-1?locale=en_US',
     fichaFragmento: 'https://www.loc.gov/exhibits/scrolls/scr3.html',
     canon: 'https://www.ethiopianorthodox.org/english/canonical/books.html'
   });
   const relacionadasOn = () => store.get('biblia.lecturasRelacionadas', false) === true;
-  const tieneLecturaRelacionada = p => !!p && p.id === REL_ENOC.pasaje && ACC().pasaje(p.id)
-    && ACC().ref(REL_ENOC.tramo) && !N.rangoPlegado(CONT(), perfil(), REL_ENOC.tramo);
-  function lecturaRelacionadaHTML() {
+  const ANCLAS_ENOC = Object.freeze({
+    'gn-12': Object.freeze({
+      tramo: 'Gn 5:21-24', etiqueta: 'Génesis 5:21–24',
+      resumen: 'En Génesis, Enoc, hijo de Jared, camina con Dios. En 1 Enoc es el protagonista de visiones y enseñanzas. No es el Enoc hijo de Caín.'
+    }),
+    'gn-13': Object.freeze({
+      tramo: 'Gn 6:1-4', etiqueta: 'Génesis 6:1–4', tipo: 'Paralelo temático', capitulos: '1 Enoc 6–11',
+      resumen: '1 Enoc desarrolla el relato con los Vigilantes, seres celestiales que se unen a mujeres humanas, y cuenta las consecuencias de esa decisión. Génesis habla de «hijos de Dios»: no los llama Vigilantes ni identifica explícitamente a unos con otros.',
+      notaFragmento: '4Q201 conserva partes de esta sección, no los capítulos completos'
+    })
+  });
+  function lecturaRelacionadaDe(p) {
+    const a = p && ANCLAS_ENOC[p.id], acc = ACC();
+    return a && acc.pasaje(p.id) && acc.ref(a.tramo) && !N.rangoPlegado(CONT(), perfil(), a.tramo) ? a : null;
+  }
+  function lecturaRelacionadaHTML(p) {
+    const a = lecturaRelacionadaDe(p);
+    if (!a) return '';
     return `<aside class="lectura-relacionada" data-lectura-relacionada="${REL_ENOC.id}" aria-labelledby="lectura-relacionada-titulo">
-      <p class="meta"><span class="etiqueta externa">Fuente externa</span> Lectura opcional · ${REL_ENOC.etiqueta}</p>
+      <p class="meta"><span class="etiqueta externa">Fuente externa</span> Lectura opcional · ${esc(a.etiqueta)}${a.tipo ? ' · ' + esc(a.tipo) : ''}</p>
       <h2 id="lectura-relacionada-titulo">1 Enoc (Libro de Enoc)</h2>
-      <p>En Génesis, Enoc, hijo de Jared, camina con Dios. En 1 Enoc es el protagonista de visiones y enseñanzas. No es el Enoc hijo de Caín.</p>
+      <p>${a.capitulos ? `<strong>${esc(a.capitulos)}.</strong> ` : ''}${esc(a.resumen)}</p>
       <p>No está en la Reina-Valera 1909. Sí es canónico en la Iglesia ortodoxa etíope. Esta ficha es un resumen, no una traducción.</p>
       <ul class="lectura-relacionada-fuentes">
-        <li>${aExt(REL_ENOC.fragmento, 'Fragmento arameo 4Q201 · Rollos del Mar Muerto')} <span class="meta">(no es el libro completo)</span></li>
+        <li>${aExt(REL_ENOC.fragmento, 'Fragmento arameo 4Q201 · Rollos del Mar Muerto')} <span class="meta">(${esc(a.notaFragmento || 'no es el libro completo')})</span></li>
         <li>${aExt(REL_ENOC.fichaFragmento, 'Ficha del 4Q201 · Biblioteca del Congreso de EE. UU.')}</li>
         <li>${aExt(REL_ENOC.canon, 'Canon · Iglesia ortodoxa etíope')}</li>
       </ul>
@@ -2738,7 +2753,7 @@ if (typeof document !== 'undefined') (function () {
       <fieldset class="segmentos modo"><legend class="sr">Modo de lectura</legend>${[['leer', 'Leer', 'El texto como un libro abierto'], ['comparar', 'Comparar', 'Español, hebreo y griego versículo a versículo'], ['original', 'Original', 'La foto del manuscrito junto a su transcripción']].map(([v, t, ti]) => `<label title="${ti}"><input type="radio" name="modo-pasaje" value="${v}" ${(estado.comparar ? 'comparar' : estado.original ? 'original' : 'leer') === v ? 'checked' : ''}><span>${t}</span></label>`).join('')}</fieldset>
       <button type="button" class="boton secundario btn-escuchar" data-escuchar aria-expanded="${!!estado.escuchar}" aria-controls="reproductor"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8h3l4-3.5v11L7 12H4zM14 7.5a3.5 3.5 0 010 5M16 5a7 7 0 010 10"/></svg>Escuchar</button>
       ${EXPL() && !estado.comparar && !estado.original ? `<label class="chip-check expl-interruptor" title="Subraya con un punteado las palabras, medidas y costumbres que tienen explicación"><input type="checkbox" name="explicaciones" ${explOn() ? 'checked' : ''}><span>Explicaciones</span></label>` : ''}
-      ${!estado.comparar && !estado.original ? `<label class="chip-check"><input type="checkbox" name="lecturas-relacionadas"${tieneLecturaRelacionada(estado.pasaje) ? " aria-controls=lecturas-relacionadas-pasaje" : ""} ${relacionadasOn() ? 'checked' : ''}><span>Mostrar lecturas relacionadas</span></label>` : ''}
+      ${!estado.comparar && !estado.original ? `<label class="chip-check"><input type="checkbox" name="lecturas-relacionadas"${lecturaRelacionadaDe(estado.pasaje) ? " aria-controls=lecturas-relacionadas-pasaje" : ""} ${relacionadasOn() ? 'checked' : ''}><span>Mostrar lecturas relacionadas</span></label>` : ''}
     </div>${estado.escuchar ? reproductorHTML() : ''}`;
   }
 
@@ -5941,7 +5956,7 @@ if (typeof document !== 'undefined') (function () {
       const espacio = main.querySelector('[data-lecturas-relacionadas]');
       if (espacio) {
         espacio.hidden = !t.checked;
-        espacio.innerHTML = t.checked ? lecturaRelacionadaHTML() : '';
+        espacio.innerHTML = t.checked ? lecturaRelacionadaHTML(estado.pasaje) : '';
       }
     }
     else if (t.name === 'medio-pestana') { if (estado.galeria) { estado.galeria.eligio = t.value; pintarMedios(`input[name="medio-pestana"][value="${t.value}"]`); } }
