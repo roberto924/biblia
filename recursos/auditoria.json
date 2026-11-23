@@ -13,7 +13,13 @@
    "sensible": false,
    "motivo": "Revisadas las once tomas y todas las imágenes, referencias de rostros y cuatro clips. Guion validado contra RV1909; seis discursos de Dios y narrador C, identidades aprobadas. Comparación automática completa de audio con diferencias y límites del ASR registrados en guiones/registro/auditoria-audio-gn-02.json; no certifica escucha humana de articulación. Sin texto en la imagen ni figura divina, encuadres respetuosos. Montaje local, reutilización sin cobros duplicados, gasto Higgsfield 24 créditos. Ver guiones/registro/gn-02-montaje.json."
   },
-   "biblia-gn-06-narrado": {
+    "biblia-gn-09-narrado": {
+    "veredicto": "OK",
+    "fecha": "2026-11-23",
+    "sensible": false,
+    "motivo": "Revisión visual de cada toma, continuidad con las fichas de Caín, Adán y Eva, encuadres sin recreación de ataque, decodificación completa a 24 fps nativos y comparación automática de voz con RV1909. El cotejo automático no sustituye una escucha humana. Se incorpora el corte autorizado, sin rótulos ni marcas sobre la imagen."
+   },
+  "biblia-gn-06-narrado": {
     "veredicto": "OK",
     "fecha": "2026-11-22",
     "motivo": "Pasaje cotejado con el texto RV1909. Video completo revisado en 24 fps: cobertura y continuidad del relato, sin representación de Dios, sin rótulos dentro de imagen. Publicación de este pasaje autorizada; la obra visual y sonora es interpretación artística.",

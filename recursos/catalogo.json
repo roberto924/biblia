@@ -71,7 +71,31 @@
     "idioma": "es",
     "duracion": "1:53"
   },
+
   {
+    "id": "biblia-gn-09-narrado",
+    "tipo": "video",
+    "propio": true,
+    "pasaje": "gn-09",
+    "titulo": "Génesis 4:17–26 · Los descendientes de Caín y el nacimiento de Set",
+    "descripcion": "El pasaje completo narrado con el texto de la Reina-Valera 1909 y animado en 2D. Ilustración moderna (generada con IA).",
+    "refs": [
+      "Gn 4:17-26"
+    ],
+    "autor": "Biblia · Compañero de lectura",
+    "fecha_obra": "2026",
+    "institucion": "Producción propia",
+    "url_fuente": "https://github.com/roberto924/biblia/blob/main/guiones/LEEME.md",
+    "archivo_video": "recursos/videos/gn-09.mp4",
+    "archivo_cartel": "recursos/imagenes/gn-09-video.jpg",
+    "licencia": "Texto RV1909: dominio público; producción audiovisual propia con IA",
+    "atribucion": "Texto: Reina-Valera 1909, Génesis 4:17–26. Ilustraciones generadas con IA; animación LTX 2.5 local a 24 fps, voces sintéticas originales y montaje con FFmpeg.",
+    "uso": "incrustable",
+    "certeza": "Ilustración moderna (generada con IA)",
+    "nota_certeza": "Texto: Génesis 4:17–26, RV1909. Los escenarios, rostros, vestimentas, gestos, voces e instrumentos son interpretaciones artísticas modernas, no un registro histórico. La alocución de Lamec se narra sin mostrar el ataque. Fuentes y créditos fuera de la imagen.",
+    "idioma": "es",
+    "duracion": "1:21"
+  },  {
     "id": "dore-gn-1-creacion-luz",
     "tipo": "arte",
     "titulo": "La creación de la luz",

@@ -1436,6 +1436,18 @@ console.log('Recursos (imágenes, objetos, medios)');
         if (f.imagen) assert.ok(!/desconocida|reservados/i.test(f.licencia) && existsSync(path.join(aqui, '..', f.imagen)), f.id);
       }
     });
+    prueba('el video narrado de Génesis 4:17–26 conserva el corte autorizado y la cobertura exacta', () => {
+      const p = N3.pasajeDe(D3, 'Gn 4:17'), f = N3.recursos(R3).find(f => f.id === 'biblia-gn-09-narrado');
+      assert.equal(p.id, 'gn-09');
+      assert.ok(f && N3.videoDelPasaje(f, p));
+      assert.equal(f.certeza, 'Ilustración moderna (generada con IA)');
+      assert.equal(f.video_sha256, '1f2b15f6057a156c446066f19bcb671480ef810becb5c5c79ac4e4866a205ad6');
+      assert.equal(createHash('sha256').update(readFileSync(path.join(aqui, '..', f.video))).digest('hex'), f.video_sha256);
+      assert.ok(existsSync(path.join(aqui, '..', f.poster)));
+      const previos = N3.pasajes(D3).slice(0, N3.pasajes(D3).findIndex(x => x.id === p.id)).map(x => x.id);
+      assert.equal(N3.accesibles(D3, previos).pasaje(p.id), true);
+      assert.equal(N3.accesibles(D3, []).pasaje(p.id), false);
+    });
     prueba('los dos videos iniciales conservan archivos y cubren su pasaje exacto', () => {
       for (const [id, inicio] of [['gn-01', 'Gn 1:1'], ['gn-02', 'Gn 1:20']]) {
         const p = N3.pasajeDe(D3, inicio);
